@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,p})=>{let length=1.3*(1-p[0]/100);for(let i=0;i<4;i++){g.box(0,(i-1.5)*.3,0,length,.1,.16,C.pink);for(let j=0;j<12;j++){let x=-length+j*2*length/11;g.line([x,(i-1.5)*.3-.1,0],[x,(i-1.5)*.3+.1,0],C.white)}}g.arrow([-1.6,-.9,0],[-.7,-.9,0],C.gold);g.arrow([1.6,-.9,0],[.7,-.9,0],C.gold);return[read('Contraction setting','संकुचन सेटिंग',p[0],'%'),read('Illustrative remaining length','सांकेतिक शेष लम्बाई',fmt(100-p[0]),'%')];};

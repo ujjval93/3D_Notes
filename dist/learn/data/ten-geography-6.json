@@ -1,0 +1,918 @@
+{
+  "id": "ten-geography-6",
+  "classId": "10",
+  "number": 6,
+  "title": {
+    "en": "Manufacturing Industries",
+    "hi": "विनिर्माण उद्योग"
+  },
+  "engine": "map",
+  "goal": {
+    "en": "Explain geographical relationships through evidence, examples and map locations.",
+    "hi": "प्रमाण, उदाहरण और मानचित्र स्थान से भौगोलिक संबंध समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Manufacturing and value addition",
+        "hi": "विनिर्माण और मूल्य संवर्धन"
+      },
+      "body": {
+        "en": "Manufacturing transforms raw materials into products through organised processing. Cotton becomes yarn and fabric, sugarcane becomes sugar, and iron ore enters a chain leading to steel products. These are secondary activities, while growing cotton is a primary activity and transporting cloth is a service. A product may pass through several factories before reaching a household. Value addition means that processing creates a more useful or valuable product; it does not mean the selling price is pure profit. Wages, energy, machinery, transport and other inputs must be paid for. Manufacturing can support employment, diversify incomes, provide farming equipment and supply exports. Its benefits depend on working conditions, technology, markets and how costs are distributed. Agriculture and industry are connected: farms supply raw materials, while industry supplies tools, fertilisers and processing facilities. In an answer, trace the relationship in both directions. Do not describe the two sectors as completely separate competitors. A local example such as a flour mill helps distinguish the farmer, mill worker, transporter and shopkeeper within one production chain.",
+        "hi": "विनिर्माण (Manufacturing) में कच्चे पदार्थ को संगठित प्रसंस्करण से उपयोगी उत्पाद बनाया जाता है। कपास से धागा और कपड़ा, गन्ने से चीनी तथा लौह अयस्क से इस्पात उत्पाद बनते हैं। ये द्वितीयक गतिविधियाँ हैं। कपास उगाना प्राथमिक गतिविधि और कपड़ा पहुँचाना सेवा है। एक वस्तु घर तक आने से पहले कई कारखानों से गुजर सकती है। मूल्य संवर्धन (Value Addition) का अर्थ प्रसंस्करण से अधिक उपयोगी या मूल्यवान वस्तु बनना है; पूरा बिक्री मूल्य लाभ नहीं होता। मजदूरी, ऊर्जा, मशीन, परिवहन और अन्य लागत भी चुकानी होती है। विनिर्माण रोजगार, आय के विविध साधन, कृषि उपकरण और निर्यात में सहायक हो सकता है। लाभ काम की दशा, तकनीक, बाजार और लागत के बँटवारे पर निर्भर करता है। खेती उद्योग को कच्चा माल देती है, जबकि उद्योग खेती को औजार, उर्वरक और प्रसंस्करण सुविधा देता है। दोनों दिशाओं का संबंध लिखें। कृषि और उद्योग को पूरी तरह अलग प्रतिद्वंद्वी न बताएँ। स्थानीय आटा चक्की के उदाहरण से किसान, मिल श्रमिक, परिवहनकर्ता और दुकानदार की अलग भूमिकाएँ समझी जा सकती हैं।"
+      },
+      "question": {
+        "en": "How do agriculture and manufacturing support each other?",
+        "hi": "कृषि और विनिर्माण एक-दूसरे की सहायता कैसे करते हैं?"
+      }
+    },
+    {
+      "title": {
+        "en": "Location and industrial concentration",
+        "hi": "स्थिति और औद्योगिक संकेंद्रण"
+      },
+      "body": {
+        "en": "Industries choose locations through a combination of raw materials, energy, labour, capital, transport, markets and public facilities. Their importance differs by industry. A heavy input may encourage location near its source, while a perishable input requires quick delivery. A high-value product with low transport weight may depend more on skilled workers and reliable communication. No single factor explains every factory. Several industries can benefit by locating near one another because suppliers, repairs, banking, transport and specialised workers become easier to access. Such shared advantages help explain industrial concentration. However, concentration can also create congestion, expensive land and pollution pressures. A hypothetical factory near a railway junction may reduce freight costs but still need dependable water and electricity. Compare alternatives rather than selecting a place from one attractive feature. A location answer should connect the factor to a cost, production need or market connection. A map of industrial centres records where activity is found; explaining why it developed there requires historical and economic evidence as well as physical geography.",
+        "hi": "उद्योग की स्थिति (Industrial Location) कच्चा माल, ऊर्जा, श्रम, पूँजी, परिवहन, बाजार और सार्वजनिक सुविधाओं के मेल से तय होती है। हर उद्योग में उनका महत्त्व समान नहीं है। भारी कच्चा माल स्रोत के पास स्थिति को प्रोत्साहित कर सकता है, जबकि जल्दी खराब होने वाले पदार्थ को शीघ्र पहुँचाना जरूरी है। कम वजन और अधिक मूल्य वाला उत्पाद कुशल श्रमिक तथा भरोसेमंद संचार पर अधिक निर्भर हो सकता है। हर कारखाने का कारण एक ही नहीं होता। उद्योग पास-पास होने पर आपूर्तिकर्ता, मरम्मत, बैंक, परिवहन और विशेष श्रमिक आसानी से मिल सकते हैं। इससे औद्योगिक संकेंद्रण समझ आता है। लेकिन भीड़, महँगी जमीन और प्रदूषण का दबाव भी बढ़ सकता है। रेल जंक्शन के पास कारखाने का माल भाड़ा घट सकता है, पर उसे पानी और बिजली भी चाहिए। केवल एक अच्छी सुविधा देखकर स्थान न चुनें; विकल्पों की तुलना करें। उत्तर में कारक को लागत, उत्पादन की जरूरत या बाजार संपर्क से जोड़ें। मानचित्र बताता है कि केंद्र कहाँ है; वहाँ क्यों विकसित हुआ, यह जानने के लिए इतिहास तथा अर्थव्यवस्था के प्रमाण भी जरूरी हैं।"
+      },
+      "question": {
+        "en": "Why can nearby industries benefit from one another?",
+        "hi": "पास स्थित उद्योग एक-दूसरे से लाभ कैसे लेते हैं?"
+      }
+    },
+    {
+      "title": {
+        "en": "Classifying industries carefully",
+        "hi": "उद्योगों का सावधानी से वर्गीकरण"
+      },
+      "body": {
+        "en": "Industries can be classified by different bases, and the bases should not be mixed. Raw-material origin distinguishes agro-based and mineral-based industries. Cotton textiles and sugar are agro-based, while iron and steel depend strongly on mineral resources. Their role distinguishes basic industries, which supply inputs for other industries, from consumer-goods industries, which produce for users. Ownership distinguishes public, private, joint and cooperative arrangements. These categories describe control and organisation, not simply the product's colour or size. Scale concerns investment and organisation under the relevant definition; avoid treating an old investment threshold as permanently current. One factory can belong to several categories simultaneously. A cooperative sugar mill can be agro-based by input and cooperative by ownership. A classification table should therefore give a separate column to each basis. Explain the evidence for a label rather than assigning it from the name alone. Basic industries are not necessarily simple industries: they may require complex technology and large networks. Such distinctions help compare production systems without confusing ownership, raw materials and purpose.",
+        "hi": "उद्योगों का वर्गीकरण (Classification) कई आधारों पर होता है। आधारों को मिलाना नहीं चाहिए। कच्चे माल के अनुसार कृषि आधारित और खनिज आधारित उद्योग अलग हैं। सूती वस्त्र तथा चीनी कृषि आधारित, जबकि लौह और इस्पात खनिज संसाधनों से जुड़े हैं। भूमिका के अनुसार आधारभूत उद्योग दूसरे उद्योगों को सामग्री देते हैं और उपभोक्ता उद्योग उपयोगकर्ता के लिए वस्तु बनाते हैं। स्वामित्व के अनुसार सार्वजनिक, निजी, संयुक्त तथा सहकारी व्यवस्था होती है। ये नियंत्रण और संगठन बताते हैं, केवल वस्तु का रंग या आकार नहीं। पैमाना प्रासंगिक परिभाषा के अंतर्गत निवेश तथा संगठन से जुड़ा है; पुरानी निवेश सीमा को हमेशा का वर्तमान नियम न मानें। एक कारखाना कई वर्गों में आ सकता है। सहकारी चीनी मिल कच्चे माल से कृषि आधारित और स्वामित्व से सहकारी है। अभ्यास में हर आधार का अलग स्तंभ बनाएँ। केवल नाम देखकर वर्ग देने के बजाय उसका प्रमाण लिखें। आधारभूत का अर्थ सरल नहीं; ऐसे उद्योग में जटिल तकनीक तथा बड़ा संपर्क तंत्र हो सकता है। इससे स्वामित्व, कच्चे माल और उद्देश्य में भ्रम नहीं होता।"
+      },
+      "question": {
+        "en": "Classify a cooperative sugar mill by two different bases.",
+        "hi": "सहकारी चीनी मिल को 2 अलग आधारों पर वर्गीकृत करें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Textiles and their production links",
+        "hi": "वस्त्र उद्योग और उत्पादन संबंध"
+      },
+      "body": {
+        "en": "Textile production connects fibre, spinning, weaving or knitting, processing and garment making. Cotton textiles developed in centres with access to cotton, humid conditions, labour, ports and markets, but the relative importance of these factors has changed with technology and transport. Mumbai and Ahmedabad are familiar historical examples, while production is distributed across many other places. Spinning yarn and weaving fabric are distinct operations and may occur in different units. Jute textiles are strongly associated with the Hugli basin, where raw jute, water, transport, labour and the Kolkata market and port network helped development. A location near a river does not alone explain the industry. Synthetic fibres and changing packaging demand create competition and adjustment. Quality, design, costs and environmental treatment also matter. In an answer, distinguish a fibre-growing region from a textile-manufacturing centre. A marker for Mumbai does not mean all cotton cloth is made there. Trace a shirt from crop or fibre to yarn, fabric, garment, transport and sale to see how primary, secondary and tertiary activities connect.",
+        "hi": "वस्त्र उत्पादन में रेशा, कताई, बुनाई, प्रसंस्करण और परिधान निर्माण जुड़े हैं। सूती वस्त्र उद्योग के विकास में कपास, आर्द्र दशा, श्रम, पत्तन और बाजार ने भूमिका निभाई, लेकिन तकनीक तथा परिवहन बदलने से कारकों का महत्त्व भी बदला। मुंबई तथा अहमदाबाद ऐतिहासिक उदाहरण हैं; उत्पादन अनेक अन्य स्थानों में भी होता है। धागा कातना और कपड़ा बुनना अलग कार्य हैं तथा अलग इकाइयों में हो सकते हैं। जूट वस्त्र उद्योग हुगली क्षेत्र से जुड़ा है। कच्चा जूट, पानी, परिवहन, श्रमिक और कोलकाता का बाजार तथा पत्तन तंत्र विकास में सहायक रहे। केवल नदी पास होना पूरा कारण नहीं है। कृत्रिम रेशा और पैकिंग की बदलती मांग प्रतिस्पर्धा पैदा करते हैं। गुणवत्ता, डिजाइन, लागत और पर्यावरणीय उपचार भी महत्त्वपूर्ण हैं। रेशा उगाने वाला क्षेत्र और कपड़ा बनाने वाला केंद्र अलग समझें। मुंबई का चिह्न यह नहीं कहता कि पूरा सूती कपड़ा वहीं बनता है। शर्ट की श्रृंखला बनाइए: फसल या रेशा, धागा, कपड़ा, सिलाई, परिवहन और बिक्री। इससे प्राथमिक, द्वितीयक तथा तृतीयक गतिविधियों का संबंध स्पष्ट होता है।"
+      },
+      "question": {
+        "en": "Why are spinning and weaving different stages?",
+        "hi": "कताई और बुनाई अलग चरण क्यों हैं?"
+      }
+    },
+    {
+      "title": {
+        "en": "Sugar and other agro-based links",
+        "hi": "चीनी और अन्य कृषि आधारित संबंध"
+      },
+      "body": {
+        "en": "Sugar mills process sugarcane, which is bulky and loses sucrose after harvesting. This encourages quick delivery and locations near cane-growing areas. The precise supply system depends on roads, harvest timing, mill capacity and arrangements with farmers. Uttar Pradesh is an important textbook example, while Maharashtra and other southern and western regions are also significant. Climatic conditions, crushing seasons and cooperative organisation help explain regional differences. Do not reduce the explanation to a single statement that one state has better soil. By-products can support other activities, such as using bagasse as a fuel or input for paper, and molasses in appropriate industries. These links can reduce waste, but safe processing and pollution control remain necessary. A factory's annual output depends on raw-material supply, recovery and operating time, not simply its building size. Compare a sugar mill with a garment unit: the sugar mill is closely tied to a seasonal, bulky agricultural input, while garment production has a different input and market structure. This comparison demonstrates why industrial-location factors vary.",
+        "hi": "चीनी मिल गन्ने का प्रसंस्करण करती है। गन्ना भारी होता है और कटाई के बाद उसका सुक्रोज घटता है, इसलिए जल्दी पहुँचाना तथा उत्पादन क्षेत्र के पास मिल होना उपयोगी है। वास्तविक आपूर्ति सड़क, कटाई के समय, मिल क्षमता और किसानों के समझौते पर निर्भर करती है। उत्तर प्रदेश पाठ्यपुस्तक का महत्त्वपूर्ण उदाहरण है; महाराष्ट्र तथा अन्य दक्षिणी और पश्चिमी क्षेत्रों की भी भूमिका है। जलवायु, पेराई मौसम तथा सहकारी संगठन से क्षेत्रीय अंतर समझे जाते हैं। केवल किसी राज्य की मिट्टी अच्छी बताकर पूरी व्याख्या न करें। उपोत्पाद (By-products) अन्य गतिविधियों में काम आते हैं। खोई ईंधन या कागज की सामग्री और शीरा उपयुक्त उद्योगों में उपयोग हो सकता है। इससे अपव्यय घट सकता है, पर सुरक्षित प्रसंस्करण और प्रदूषण नियंत्रण फिर भी चाहिए। वार्षिक उत्पादन केवल इमारत के आकार से नहीं निकलता; कच्चे माल, प्राप्ति दर और संचालन अवधि का भी प्रभाव है। चीनी मिल और परिधान इकाई की तुलना करें। चीनी मिल मौसमी तथा भारी कृषि पदार्थ से निकट जुड़ी है, जबकि परिधान की सामग्री और बाजार संरचना अलग है। यही बताता है कि स्थिति के कारक उद्योग के अनुसार बदलते हैं।"
+      },
+      "question": {
+        "en": "Why is timely cane delivery important to a sugar mill?",
+        "hi": "चीनी मिल में समय पर गन्ना पहुँचना क्यों जरूरी है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Mineral-based and modern industries",
+        "hi": "खनिज आधारित और आधुनिक उद्योग"
+      },
+      "body": {
+        "en": "Iron and steel is a basic industry because its products support machinery, construction, transport and many other activities. Ore, coking coal, limestone, water, energy and transport connections influence production. Integrated plants combine several stages, while other units may specialise in particular processes. Aluminium smelting relies on bauxite and a dependable electricity supply. Cement uses materials such as limestone and serves building activity, so raw materials and markets both matter. Chemical industries produce diverse substances and cannot all be explained by one input. Fertilisers support agriculture, while automobile production connects component suppliers, skilled labour and markets. Information technology and electronics require knowledge, communication and reliable infrastructure; they are not determined by mineral deposits alone. Compare Jamshedpur or Bhilai with Bengaluru to see different industrial relationships. A city can host several industries, and one industry can spread across several cities. Avoid presenting a centre as having only one occupation. A useful answer selects the relevant industry, identifies two or three location factors and explains how they support its production rather than merely listing city names.",
+        "hi": "लौह और इस्पात आधारभूत उद्योग है क्योंकि उसके उत्पाद मशीन, निर्माण, परिवहन और कई गतिविधियों में उपयोग होते हैं। अयस्क, कोकिंग कोयला, चूना पत्थर, जल, ऊर्जा और परिवहन उत्पादन प्रभावित करते हैं। एकीकृत संयंत्र कई चरण साथ करते हैं, जबकि दूसरी इकाइयाँ किसी विशेष प्रक्रिया में विशेषज्ञ हो सकती हैं। एल्युमिनियम प्रगलन बॉक्साइट और भरोसेमंद बिजली पर निर्भर है। सीमेंट में चूना पत्थर जैसे पदार्थ लगते हैं और उसका बाजार निर्माण गतिविधि से जुड़ा है। रासायनिक उद्योग बहुत प्रकार के पदार्थ बनाते हैं; सबको एक ही कच्चे माल से नहीं समझा जा सकता। उर्वरक कृषि से और मोटर वाहन उद्योग पुर्जे बनाने वालों, कुशल श्रम तथा बाजार से जुड़ा है। सूचना प्रौद्योगिकी और इलेक्ट्रॉनिक्स में ज्ञान, संचार तथा विश्वसनीय सुविधा जरूरी हैं; केवल खनिज जमाव उन्हें तय नहीं करता। जमशेदपुर या भिलाई की बेंगलुरु से तुलना करके अलग संबंध समझें। शहर में कई उद्योग और एक उद्योग के कई शहर हो सकते हैं। केंद्र को केवल एक काम वाला न बताएँ। अच्छा उत्तर उद्योग चुनकर उसके 2 या 3 कारकों का उत्पादन से संबंध समझाता है।"
+      },
+      "question": {
+        "en": "Why do steel and information technology have different location needs?",
+        "hi": "इस्पात और सूचना प्रौद्योगिकी की स्थिति जरूरतें अलग क्यों हैं?"
+      }
+    },
+    {
+      "title": {
+        "en": "Industrial pollution and control",
+        "hi": "औद्योगिक प्रदूषण और नियंत्रण"
+      },
+      "body": {
+        "en": "Industrial activity can affect air, water, land and the acoustic environment. Smoke and particles can reduce air quality; untreated effluent can pollute rivers; hot water discharges can change aquatic conditions; and machinery can produce harmful noise. The effect depends on the substance, concentration, exposure and receiving environment. A tall chimney can disperse pollutants but does not eliminate their production. Control should reduce pollution at source, treat emissions and effluent, improve processes and monitor compliance. Water can be reused where suitable, with treatment appropriate to its intended use. Segregating waste, maintaining equipment and using cleaner energy can reduce impacts. Workers need safe conditions as well as nearby residents needing a healthy environment. Do not describe pollution as an unavoidable price that removes all responsibility. Conversely, do not assume closing every factory is the only solution. Evaluate how production can deliver useful goods with lower material loss and exposure. In a school example, match each problem to a response: dust to capture and control, wastewater to suitable treatment, and excessive noise to engineering controls and protection.",
+        "hi": "औद्योगिक गतिविधि वायु, जल, भूमि और ध्वनि पर्यावरण को प्रभावित कर सकती है। धुआँ तथा कण वायु गुणवत्ता घटाते हैं; बिना उपचार का बहिःस्राव नदी को प्रदूषित कर सकता है। गर्म पानी छोड़ने से जलीय दशा बदलती है और मशीन से हानिकारक शोर हो सकता है। प्रभाव पदार्थ, सांद्रता, संपर्क तथा प्राप्त करने वाले पर्यावरण पर निर्भर करता है। ऊँची चिमनी प्रदूषक फैला सकती है, लेकिन उनका बनना समाप्त नहीं करती। नियंत्रण में स्रोत पर कमी, उत्सर्जन तथा बहिःस्राव उपचार, बेहतर प्रक्रिया और नियमों की निगरानी चाहिए। उपयुक्त उपचार के बाद पानी का संबंधित उपयोग में पुनः उपयोग किया जा सकता है। कचरा अलग करना, उपकरण रखरखाव और स्वच्छतर ऊर्जा प्रभाव घटा सकते हैं। पास रहने वालों के स्वस्थ पर्यावरण के साथ श्रमिकों की सुरक्षा भी जरूरी है। प्रदूषण को ऐसा अनिवार्य मूल्य न कहें जिससे जिम्मेदारी समाप्त हो जाए। दूसरी ओर हर कारखाना बंद करना ही एकमात्र उपाय न मानें। उपयोगी उत्पादन कम हानि तथा कम संपर्क में कैसे हो, यह जाँचें। धूल के लिए पकड़ और नियंत्रण, गंदे पानी के लिए उपचार तथा अधिक शोर के लिए तकनीकी नियंत्रण और सुरक्षा का मेल बनाएँ।"
+      },
+      "question": {
+        "en": "Why is a tall chimney alone not complete pollution control?",
+        "hi": "केवल ऊँची चिमनी पूरा प्रदूषण नियंत्रण क्यों नहीं है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Map work, evidence and revision",
+        "hi": "मानचित्र कार्य, प्रमाण और पुनरावृत्ति"
+      },
+      "body": {
+        "en": "Locate the selected industrial centres and explain one connection for each. Mumbai and Ahmedabad are textile examples; Jamshedpur, Bhilai and Bokaro illustrate iron and steel; Bengaluru illustrates information technology and electronics; the Hugli area illustrates jute. These are orientation examples, not a complete list or a statement that other industries are absent. Markers do not show factory size, output or municipal boundaries. When comparing industries, organise your answer around input, process, output, location factors and impacts. Use a table with a separate row for each industry and do not mix ownership with raw-material classification. A numerical exercise can compare an illustrative input cost and selling value, but should not call the difference profit unless all relevant costs are included. For revision, explain manufacturing's links with agriculture, the reasons for clustering, major industry examples and pollution responses. Textbook historical shares and rankings must keep their dates. The aim is to connect geographical places with production relationships so that a new case can be explained, rather than memorising a list without reasons.",
+        "hi": "चयनित औद्योगिक केंद्र खोजकर हर एक का एक संबंध समझाएँ। मुंबई और अहमदाबाद वस्त्र, जमशेदपुर, भिलाई तथा बोकारो लौह और इस्पात, बेंगलुरु सूचना प्रौद्योगिकी तथा इलेक्ट्रॉनिक्स और हुगली क्षेत्र जूट के उदाहरण हैं। ये दिशा समझाने वाले चयनित स्थान हैं, पूरी सूची नहीं। इनका अर्थ यह नहीं कि वहाँ अन्य उद्योग नहीं हैं। चिह्न कारखाने का आकार, उत्पादन या नगरपालिका सीमा नहीं बताते। तुलना में कच्चा माल, प्रक्रिया, उत्पाद, स्थिति कारक और प्रभाव का क्रम रखें। अलग उद्योग की अलग पंक्ति बनाएँ तथा स्वामित्व को कच्चे माल के वर्ग से न मिलाएँ। उदाहरण की गणना में सामग्री लागत और बिक्री मूल्य का अंतर निकाला जा सकता है, लेकिन सभी लागतें शामिल किए बिना उसे लाभ न कहें। पुनरावृत्ति में कृषि संबंध, समूह बनने के कारण, प्रमुख उद्योग और प्रदूषण के उपाय समझाएँ। पुराने प्रतिशत तथा रैंक के साथ तिथि रखें। उद्देश्य स्थानों को उत्पादन संबंधों से जोड़ना है ताकि नया उदाहरण भी समझा सकें। बिना कारण केवल नामों की सूची याद करना पर्याप्त नहीं। मानचित्र उत्तर के स्थान निर्धारित एटलस से मिलाएँ।"
+      },
+      "question": {
+        "en": "What should a complete industrial-location answer include?",
+        "hi": "औद्योगिक स्थिति के पूरे उत्तर में क्या होना चाहिए?"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Manufacturing belongs mainly to which sector?",
+        "hi": "विनिर्माण मुख्यतः किस क्षेत्र में?"
+      },
+      "correct": 2,
+      "options": [
+        {
+          "text": {
+            "en": "Transport only",
+            "hi": "केवल परिवहन"
+          },
+          "reason": {
+            "en": "Transport is a service.",
+            "hi": "परिवहन सेवा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "None",
+            "hi": "कोई नहीं"
+          },
+          "reason": {
+            "en": "It is an economic activity.",
+            "hi": "यह आर्थिक गतिविधि है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Secondary",
+            "hi": "द्वितीयक"
+          },
+          "reason": {
+            "en": "It processes materials into products.",
+            "hi": "यह पदार्थ से उत्पाद बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Primary only",
+            "hi": "केवल प्राथमिक"
+          },
+          "reason": {
+            "en": "Primary activities obtain natural resources.",
+            "hi": "प्राथमिक गतिविधि प्राकृतिक संसाधन प्राप्त करती है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which is agro-based?",
+        "hi": "कृषि आधारित कौन?"
+      },
+      "correct": 3,
+      "options": [
+        {
+          "text": {
+            "en": "Iron smelting",
+            "hi": "लौह प्रगलन"
+          },
+          "reason": {
+            "en": "It depends on mineral inputs.",
+            "hi": "यह खनिज पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Aluminium smelting",
+            "hi": "एल्युमिनियम प्रगलन"
+          },
+          "reason": {
+            "en": "It uses bauxite.",
+            "hi": "इसमें बॉक्साइट लगता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cement",
+            "hi": "सीमेंट"
+          },
+          "reason": {
+            "en": "It uses mineral materials such as limestone.",
+            "hi": "इसमें चूना पत्थर जैसे खनिज लगते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sugar",
+            "hi": "चीनी"
+          },
+          "reason": {
+            "en": "Its raw material is sugarcane.",
+            "hi": "इसका कच्चा माल गन्ना है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "A cooperative mill describes which basis?",
+        "hi": "सहकारी मिल किस आधार का वर्णन?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Ownership",
+            "hi": "स्वामित्व"
+          },
+          "reason": {
+            "en": "It describes organisation and control.",
+            "hi": "यह संगठन और नियंत्रण बताता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Climate",
+            "hi": "जलवायु"
+          },
+          "reason": {
+            "en": "Ownership is not climate.",
+            "hi": "स्वामित्व जलवायु नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mineral colour",
+            "hi": "खनिज रंग"
+          },
+          "reason": {
+            "en": "Colour does not define a cooperative.",
+            "hi": "रंग सहकारी व्यवस्था नहीं बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Latitude alone",
+            "hi": "केवल अक्षांश"
+          },
+          "reason": {
+            "en": "Location does not determine ownership.",
+            "hi": "स्थान स्वामित्व तय नहीं करता।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Why locate sugar mills near cane?",
+        "hi": "चीनी मिल गन्ने के पास क्यों?"
+      },
+      "correct": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Transport is always free",
+            "hi": "परिवहन हमेशा मुफ्त है"
+          },
+          "reason": {
+            "en": "Transport has costs.",
+            "hi": "परिवहन की लागत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cane is bulky and loses sucrose",
+            "hi": "गन्ना भारी और सुक्रोज घटने वाला है"
+          },
+          "reason": {
+            "en": "Quick delivery supports processing.",
+            "hi": "शीघ्र पहुँच प्रसंस्करण में सहायक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cane is a metal",
+            "hi": "गन्ना धातु है"
+          },
+          "reason": {
+            "en": "It is a crop.",
+            "hi": "यह फसल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cane never changes",
+            "hi": "गन्ना कभी नहीं बदलता"
+          },
+          "reason": {
+            "en": "Sugar content can decline after harvest.",
+            "hi": "कटाई बाद शर्करा घट सकती है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which is a basic industry?",
+        "hi": "आधारभूत उद्योग कौन?"
+      },
+      "correct": 2,
+      "options": [
+        {
+          "text": {
+            "en": "Only tourism",
+            "hi": "केवल पर्यटन"
+          },
+          "reason": {
+            "en": "Tourism is mainly a service activity.",
+            "hi": "पर्यटन मुख्यतः सेवा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only farming",
+            "hi": "केवल खेती"
+          },
+          "reason": {
+            "en": "Farming is primary activity.",
+            "hi": "खेती प्राथमिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Iron and steel",
+            "hi": "लौह और इस्पात"
+          },
+          "reason": {
+            "en": "It supplies many other industries.",
+            "hi": "यह कई उद्योगों को सामग्री देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only retail",
+            "hi": "केवल खुदरा"
+          },
+          "reason": {
+            "en": "Retail distributes goods.",
+            "hi": "खुदरा वस्तु बेचता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which resource is important for aluminium smelting?",
+        "hi": "एल्युमिनियम प्रगलन में क्या जरूरी?"
+      },
+      "correct": 3,
+      "options": [
+        {
+          "text": {
+            "en": "No energy",
+            "hi": "ऊर्जा नहीं"
+          },
+          "reason": {
+            "en": "The process needs energy.",
+            "hi": "प्रक्रिया को ऊर्जा चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only rainfall",
+            "hi": "केवल वर्षा"
+          },
+          "reason": {
+            "en": "Rainfall alone cannot run smelting.",
+            "hi": "वर्षा अकेली प्रगलन नहीं चलाती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only cotton",
+            "hi": "केवल कपास"
+          },
+          "reason": {
+            "en": "Cotton is for textiles.",
+            "hi": "कपास वस्त्र के लिए है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Reliable electricity",
+            "hi": "भरोसेमंद बिजली"
+          },
+          "reason": {
+            "en": "Smelting is energy intensive.",
+            "hi": "प्रगलन में बहुत ऊर्जा लगती है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Hugli basin is associated with which industry?",
+        "hi": "हुगली क्षेत्र किस उद्योग से जुड़ा?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Jute textiles",
+            "hi": "जूट वस्त्र"
+          },
+          "reason": {
+            "en": "Raw jute and transport links supported it.",
+            "hi": "कच्चे जूट और परिवहन ने सहायता दी।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only coal mining",
+            "hi": "केवल कोयला खनन"
+          },
+          "reason": {
+            "en": "That is not this industrial association.",
+            "hi": "यह संबंधित औद्योगिक उदाहरण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only fishing",
+            "hi": "केवल मत्स्य पालन"
+          },
+          "reason": {
+            "en": "The question concerns manufacturing.",
+            "hi": "प्रश्न विनिर्माण का है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only oil drilling",
+            "hi": "केवल तेल खुदाई"
+          },
+          "reason": {
+            "en": "Jute is the textbook example here.",
+            "hi": "यहाँ पाठ्यपुस्तक उदाहरण जूट है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What is a benefit of clustering?",
+        "hi": "उद्योग समूह का लाभ?"
+      },
+      "correct": 1,
+      "options": [
+        {
+          "text": {
+            "en": "No transport",
+            "hi": "परिवहन नहीं"
+          },
+          "reason": {
+            "en": "Transport remains necessary.",
+            "hi": "परिवहन जरूरी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Shared suppliers and services",
+            "hi": "साझा आपूर्तिकर्ता और सेवाएँ"
+          },
+          "reason": {
+            "en": "Nearby firms can access specialised support.",
+            "hi": "पास की इकाइयों को विशेष सहयोग मिल सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No pollution risk ever",
+            "hi": "कभी प्रदूषण जोखिम नहीं"
+          },
+          "reason": {
+            "en": "Concentration may increase pressures.",
+            "hi": "संकेंद्रण दबाव बढ़ा सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No need for workers",
+            "hi": "श्रमिक की जरूरत नहीं"
+          },
+          "reason": {
+            "en": "Workers remain important.",
+            "hi": "श्रमिक जरूरी रहते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What should untreated effluent receive?",
+        "hi": "बिना उपचार बहिःस्राव को क्या चाहिए?"
+      },
+      "correct": 2,
+      "options": [
+        {
+          "text": {
+            "en": "More dilution everywhere",
+            "hi": "हर जगह अधिक तनुकरण"
+          },
+          "reason": {
+            "en": "Dilution alone is not adequate control.",
+            "hi": "केवल तनुकरण पर्याप्त नियंत्रण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No monitoring",
+            "hi": "निगरानी नहीं"
+          },
+          "reason": {
+            "en": "Monitoring helps verify control.",
+            "hi": "निगरानी नियंत्रण जाँचती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Suitable treatment before discharge",
+            "hi": "छोड़ने से पहले उचित उपचार"
+          },
+          "reason": {
+            "en": "This reduces harmful releases.",
+            "hi": "इससे हानिकारक उत्सर्जन घटते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a new label",
+            "hi": "केवल नया नाम"
+          },
+          "reason": {
+            "en": "A label does not remove pollution.",
+            "hi": "नाम प्रदूषण नहीं हटाता।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Why is sales value not pure profit?",
+        "hi": "बिक्री मूल्य पूरा लाभ क्यों नहीं?"
+      },
+      "correct": 3,
+      "options": [
+        {
+          "text": {
+            "en": "All inputs are free",
+            "hi": "सभी सामग्री मुफ्त है"
+          },
+          "reason": {
+            "en": "Inputs have costs.",
+            "hi": "सामग्री की लागत होती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Workers never earn wages",
+            "hi": "श्रमिक मजदूरी नहीं लेते"
+          },
+          "reason": {
+            "en": "Wages are a cost.",
+            "hi": "मजदूरी लागत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Transport never costs",
+            "hi": "परिवहन की लागत नहीं"
+          },
+          "reason": {
+            "en": "Transport can be significant.",
+            "hi": "परिवहन महत्त्वपूर्ण लागत हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Production and other costs must be paid",
+            "hi": "उत्पादन तथा अन्य लागत चुकानी होती हैं"
+          },
+          "reason": {
+            "en": "Revenue and profit are different.",
+            "hi": "आय और लाभ अलग हैं।"
+          }
+        }
+      ]
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "Explain value addition with cotton.",
+        "hi": "कपास से मूल्य संवर्धन समझाएँ।"
+      },
+      "answer": {
+        "en": "Processing cotton into yarn and fabric creates useful products; sale value also covers production costs.",
+        "hi": "कपास से धागा और कपड़ा उपयोगी उत्पाद बनते हैं; बिक्री मूल्य में उत्पादन लागत भी आती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give three industrial-location factors.",
+        "hi": "औद्योगिक स्थिति के 3 कारक दें।"
+      },
+      "answer": {
+        "en": "Raw materials, energy and transport; their relative importance differs by industry.",
+        "hi": "कच्चा माल, ऊर्जा और परिवहन; महत्त्व उद्योग के अनुसार बदलता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish ownership and input classification.",
+        "hi": "स्वामित्व तथा सामग्री वर्ग में अंतर।"
+      },
+      "answer": {
+        "en": "Cooperative describes ownership; agro-based describes raw-material origin.",
+        "hi": "सहकारी स्वामित्व और कृषि आधारित कच्चे माल की उत्पत्ति बताता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is steel basic?",
+        "hi": "इस्पात आधारभूत क्यों है?"
+      },
+      "answer": {
+        "en": "It supplies machinery, construction and transport industries with important inputs.",
+        "hi": "यह मशीन, निर्माण तथा परिवहन उद्योगों को महत्त्वपूर्ण सामग्री देता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give two pollution-control measures.",
+        "hi": "प्रदूषण नियंत्रण के 2 उपाय दें।"
+      },
+      "answer": {
+        "en": "Treat effluent appropriately and capture dust or emissions at source.",
+        "hi": "बहिःस्राव का उचित उपचार और स्रोत पर धूल या उत्सर्जन नियंत्रण।"
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "mumbai",
+      "title": {
+        "en": "Mumbai · Textiles",
+        "hi": "मुंबई · वस्त्र"
+      },
+      "kind": "place",
+      "location": [
+        72.88,
+        19.08
+      ],
+      "info": {
+        "en": "Historical cotton-textile centre and port network; selected example, not the only industry.",
+        "hi": "ऐतिहासिक सूती वस्त्र तथा पत्तन केंद्र; चयनित उदाहरण, अकेला उद्योग नहीं।"
+      }
+    },
+    {
+      "id": "ahmedabad",
+      "title": {
+        "en": "Ahmedabad · Textiles",
+        "hi": "अहमदाबाद · वस्त्र"
+      },
+      "kind": "place",
+      "location": [
+        72.58,
+        23.03
+      ],
+      "info": {
+        "en": "Textile centre in Gujarat.",
+        "hi": "गुजरात का वस्त्र केंद्र।"
+      }
+    },
+    {
+      "id": "jamshedpur",
+      "title": {
+        "en": "Jamshedpur · Steel",
+        "hi": "जमशेदपुर · इस्पात"
+      },
+      "kind": "place",
+      "location": [
+        86.2,
+        22.8
+      ],
+      "info": {
+        "en": "Iron and steel centre in Jharkhand.",
+        "hi": "झारखंड का लौह और इस्पात केंद्र।"
+      }
+    },
+    {
+      "id": "bhilai",
+      "title": {
+        "en": "Bhilai · Steel",
+        "hi": "भिलाई · इस्पात"
+      },
+      "kind": "place",
+      "location": [
+        81.35,
+        21.19
+      ],
+      "info": {
+        "en": "Iron and steel centre in Chhattisgarh.",
+        "hi": "छत्तीसगढ़ का लौह और इस्पात केंद्र।"
+      }
+    },
+    {
+      "id": "bokaro",
+      "title": {
+        "en": "Bokaro · Steel",
+        "hi": "बोकारो · इस्पात"
+      },
+      "kind": "place",
+      "location": [
+        86.15,
+        23.67
+      ],
+      "info": {
+        "en": "Iron and steel centre in Jharkhand.",
+        "hi": "झारखंड का लौह और इस्पात केंद्र।"
+      }
+    },
+    {
+      "id": "hugli",
+      "title": {
+        "en": "Hugli belt · Jute",
+        "hi": "हुगली क्षेत्र · जूट"
+      },
+      "kind": "place",
+      "location": [
+        88.34,
+        22.9
+      ],
+      "info": {
+        "en": "Approximate Hugli industrial belt near Kolkata; marker is not the belt boundary.",
+        "hi": "कोलकाता के पास हुगली औद्योगिक क्षेत्र का लगभग चिह्न; सीमा नहीं।"
+      }
+    },
+    {
+      "id": "bengaluru",
+      "title": {
+        "en": "Bengaluru · IT and electronics",
+        "hi": "बेंगलुरु · सूचना तकनीक और इलेक्ट्रॉनिक्स"
+      },
+      "kind": "place",
+      "location": [
+        77.59,
+        12.97
+      ],
+      "info": {
+        "en": "Knowledge and electronics example in Karnataka.",
+        "hi": "कर्नाटक में ज्ञान तथा इलेक्ट्रॉनिक्स का उदाहरण।"
+      }
+    }
+  ],
+  "mapQuestions": [
+    {
+      "question": {
+        "en": "Locate Bhilai and Jamshedpur and name the associated industry.",
+        "hi": "भिलाई और जमशेदपुर दिखाकर उद्योग लिखें।"
+      },
+      "answer": {
+        "en": "Both are important iron and steel examples; Bhilai is in Chhattisgarh and Jamshedpur in Jharkhand.",
+        "hi": "दोनों लौह और इस्पात उदाहरण; भिलाई छत्तीसगढ़ तथा जमशेदपुर झारखंड में।"
+      }
+    },
+    {
+      "question": {
+        "en": "Locate Ahmedabad and the Hugli belt; distinguish their textile associations.",
+        "hi": "अहमदाबाद तथा हुगली क्षेत्र दिखाकर वस्त्र संबंध अलग करें।"
+      },
+      "answer": {
+        "en": "Ahmedabad—cotton textiles; Hugli belt—jute textiles.",
+        "hi": "अहमदाबाद—सूती वस्त्र; हुगली क्षेत्र—जूट वस्त्र।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "title": {
+        "en": "Follow a production chain",
+        "hi": "उत्पादन श्रृंखला"
+      },
+      "question": {
+        "en": "Classify growing cotton, weaving and delivery.",
+        "hi": "कपास उगाना, बुनाई और पहुँचाना वर्गीकृत करें।"
+      },
+      "steps": [
+        {
+          "en": "Growing obtains an agricultural product.",
+          "hi": "उगाने से कृषि उत्पाद मिलता है।"
+        },
+        {
+          "en": "Weaving processes it; delivery is a service.",
+          "hi": "बुनाई प्रसंस्करण, पहुँचाना सेवा है।"
+        }
+      ],
+      "answer": {
+        "en": "Primary → secondary → tertiary.",
+        "hi": "प्राथमिक → द्वितीयक → तृतीयक।"
+      }
+    },
+    {
+      "title": {
+        "en": "Explain a location",
+        "hi": "स्थिति समझाएँ"
+      },
+      "question": {
+        "en": "Why might a sugar mill choose a cane district?",
+        "hi": "चीनी मिल गन्ना क्षेत्र क्यों चुने?"
+      },
+      "steps": [
+        {
+          "en": "Cane is bulky.",
+          "hi": "गन्ना भारी है।"
+        },
+        {
+          "en": "Quick processing helps retain sugar recovery.",
+          "hi": "शीघ्र प्रसंस्करण शर्करा प्राप्ति में सहायक है।"
+        }
+      ],
+      "answer": {
+        "en": "Nearness reduces delays and transport burden, alongside other factors.",
+        "hi": "निकटता विलंब और परिवहन भार घटाती है; अन्य कारक भी जरूरी हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Match control to pollution",
+        "hi": "प्रदूषण से उपाय मिलाएँ"
+      },
+      "question": {
+        "en": "A factory releases untreated wastewater. Is a taller chimney enough?",
+        "hi": "कारखाना गंदा पानी छोड़ता है। ऊँची चिमनी पर्याप्त है?"
+      },
+      "steps": [
+        {
+          "en": "Identify water pollution.",
+          "hi": "जल प्रदूषण पहचानें।"
+        },
+        {
+          "en": "A chimney concerns air dispersion.",
+          "hi": "चिमनी वायु प्रसार से जुड़ी है।"
+        }
+      ],
+      "answer": {
+        "en": "No; use appropriate effluent treatment and monitoring.",
+        "hi": "नहीं; उचित बहिःस्राव उपचार और निगरानी चाहिए।"
+      }
+    }
+  ],
+  "why": {
+    "en": "Location is one part of an explanation. Compare physical conditions, technology, economic connections and human decisions. These approximate markers identify study examples, not complete distributions or administrative boundaries.",
+    "hi": "स्थिति व्याख्या का एक भाग है। भौतिक दशा, तकनीक, आर्थिक संपर्क और मानवीय निर्णय की तुलना करें। लगभग स्थित चिह्न अध्ययन उदाहरण हैं, पूरा वितरण या प्रशासनिक सीमा नहीं।"
+  },
+  "missions": [
+    {
+      "label": {
+        "en": "Explore 3 different map features.",
+        "hi": "मानचित्र के 3 अलग स्थल देखें।"
+      },
+      "key": "visited",
+      "min": 3
+    },
+    {
+      "label": {
+        "en": "Zoom to 2× or more.",
+        "hi": "2× या अधिक ज़ूम करें।"
+      },
+      "key": "zoom",
+      "min": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, Chapter 6, 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jess106.pdf"
+    },
+    {
+      "title": "UP Board Social Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/932-Social-Science-Class-10.pdf"
+    }
+  ],
+  "scopeNote": {
+    "en": "Original study companion. Historical textbook figures retain their dates. Map markers are approximate; use the prescribed atlas for assessed map work.",
+    "hi": "मौलिक अध्ययन-सहायक। पाठ्यपुस्तक के पुराने आँकड़ों की तिथि रखें। मानचित्र चिह्न लगभग हैं; परीक्षा के मानचित्र कार्य में निर्धारित एटलस देखें।"
+  }
+}

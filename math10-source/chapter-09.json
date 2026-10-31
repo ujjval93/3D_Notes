@@ -1,0 +1,890 @@
+{
+  "id": 9,
+  "title": {
+    "en": "Some Applications of Trigonometry",
+    "hi": "त्रिकोणमिति के कुछ अनुप्रयोग"
+  },
+  "goal": {
+    "en": "Model heights and distances with correctly labelled right triangles and exact ratios.",
+    "hi": "सही नाम वाले समकोण त्रिभुज और सटीक अनुपात से ऊँचाई तथा दूरी निकालें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Build the right-triangle model",
+        "hi": "समकोण त्रिभुज का मॉडल बनाएँ"
+      },
+      "body": {
+        "en": "Trigonometry lets us connect an inaccessible vertical length with an accessible horizontal distance and a measured angle. Begin with a labelled sketch rather than a formula. A vertical tower and level ground meet at a right angle; a line of sight joins the observer's eye to the point being viewed. Draw a horizontal reference through the eye. The resulting triangle concerns the difference between the target's height and the eye level, which is not always the complete height of the object. State the assumptions: the object is vertical, the ground reference is horizontal, and all relevant points lie in the same vertical plane. An attractive picture on a screen is only a schematic; its apparent proportions are not data. If an observer stands on a platform, mark that elevation separately. Use symbols for the unknown lengths, attach units to the given lengths, and keep the angle at the observer. Identifying these three sides correctly prevents most later algebra errors.",
+        "hi": "त्रिकोणमिति (Trigonometry) से ऐसी ऊँचाई निकाल सकते हैं जहाँ सीधे मापना कठिन हो। इसके लिए क्षैतिज दूरी और दृष्टि कोण की जानकारी चाहिए। सबसे पहले नामों वाला रेखाचित्र बनाएँ, फिर सूत्र चुनें। खड़ी मीनार और समतल भूमि के बीच समकोण बनता है। प्रेक्षक की आँख से देखे जा रहे बिंदु को जोड़ने वाला रेखाखंड दृष्टि रेखा (Line of sight) है। आँख से एक क्षैतिज रेखा खींचें। अब बने समकोण त्रिभुज की ऊर्ध्वाधर भुजा प्रायः वस्तु की पूरी ऊँचाई नहीं, बल्कि वस्तु और आँख के स्तर का अंतर होती है। मान्यताएँ स्पष्ट रखें: मीनार सीधी खड़ी है, आधार क्षैतिज है और आवश्यक बिंदु एक ही ऊर्ध्वाधर तल में हैं। स्क्रीन पर बना चित्र केवल समझाने का साधन है; उसकी दिखाई देने वाली लंबाई को दिया हुआ माप न मानें। मंच पर खड़े व्यक्ति के लिए मंच और आँख की ऊँचाई अलग लिखें। अज्ञात लंबाई को अक्षर से दर्शाएँ और दिए मापों के साथ इकाई लगाएँ। कोण को ठीक स्थान पर रखने से आगे की गणना सरल रहती है।"
+      },
+      "formula": "H = h_eye + h_relative",
+      "question": {
+        "en": "What does the vertical side above eye level represent?",
+        "hi": "आँख के स्तर के ऊपर की ऊर्ध्वाधर भुजा क्या बताती है?"
+      },
+      "answer": {
+        "en": "The target height minus the observer’s eye height above the same ground datum.",
+        "hi": "समान भूमि स्तर से लक्ष्य की ऊँचाई में से आँख की ऊँचाई घटाने पर मिला अंतर।"
+      }
+    },
+    {
+      "title": {
+        "en": "Angle of elevation",
+        "hi": "उन्नयन कोण"
+      },
+      "body": {
+        "en": "An angle of elevation is measured upward from the horizontal through the observer to the line of sight. It is not measured from the vertical tower. In a right triangle, let d be the horizontal distance to the foot of the tower and h the vertical rise from eye level to the top. Then tan θ = h/d, so h = d tan θ. If the eye is at ground level in the mathematical model, h is the complete tower height. Otherwise add the eye height afterward. For a fixed positive distance, a larger acute angle indicates a larger vertical rise. For a fixed tower and unchanged eye level, moving closer makes the angle larger. These are comparisons within the stated model, not instructions to estimate heights from an unmeasured drawing. A 45° angle gives equal opposite and adjacent sides. At 30° the rise is smaller than the horizontal distance; at 60° it is larger. Always identify which distance in the question is horizontal before substituting.",
+        "hi": "क्षैतिज रेखा से ऊपर की ओर दृष्टि रेखा तक बना कोण उन्नयन कोण (Angle of elevation) कहलाता है। इसे मीनार की खड़ी दिशा से नहीं मापते। समकोण त्रिभुज में मीनार के पाद तक क्षैतिज दूरी d और आँख के स्तर से शीर्ष की ऊँचाई h मानें। तब tan θ = h/d, इसलिए h = d tan θ होगा। यदि प्रश्न में आँख को भूमि स्तर पर माना गया है, तो h ही मीनार की पूरी ऊँचाई है। सामान्य व्यक्ति के लिए आँख की ऊँचाई बाद में जोड़नी पड़ सकती है। दूरी निश्चित और धनात्मक हो, तो बड़ा न्यून कोण अधिक ऊर्ध्वाधर बढ़त बताता है। उसी मीनार की ओर पास आने पर, आँख का स्तर समान रहे तो उन्नयन कोण बढ़ता है। ये निष्कर्ष मॉडल की शर्तों पर निर्भर हैं; बिना दिए माप के चित्र देखकर ऊँचाई तय नहीं कर सकते। 45° पर सामने की भुजा और आधार बराबर होते हैं। 30° पर बढ़त क्षैतिज दूरी से कम और 60° पर अधिक होती है। सूत्र में मान रखने से पहले जाँचें कि प्रश्न की दूरी वास्तव में क्षैतिज है या तिरछी दृष्टि रेखा।"
+      },
+      "formula": "h = d tan θ",
+      "question": {
+        "en": "A top is viewed at 45° from 18 m horizontally away, with eye level at the base datum. Find h.",
+        "hi": "आधार स्तर पर आँख मानकर 18 m क्षैतिज दूरी से शीर्ष का उन्नयन 45° है। h निकालें।"
+      },
+      "answer": {
+        "en": "h = 18 tan45° = 18 m.",
+        "hi": "h = 18 tan45° = 18 m।"
+      }
+    },
+    {
+      "title": {
+        "en": "Angle of depression",
+        "hi": "अवनमन कोण"
+      },
+      "body": {
+        "en": "When the target is below the observer's horizontal reference, the downward angle is called the angle of depression. Draw the horizontal through the observer first. A second horizontal through the lower point is parallel to it. The same line of sight cuts these parallel lines, so the angle of depression at the higher point equals the corresponding angle of elevation viewed from the lower point, by alternate interior angles. This equality does not require the two observers to have equal heights; it concerns the same two points and parallel horizontal references. If a lookout is H metres above a boat on a level water surface, tan θ = H/d, where d is horizontal separation. Thus d = H/tan θ. A depression angle is usually not an interior angle at the top between the tower and the sight line; that angle is its complement. Confusing those angles reverses the required ratio. Label the horizontal and the right angle explicitly before forming an equation.",
+        "hi": "जब दिखाई देने वाला लक्ष्य प्रेक्षक की क्षैतिज रेखा से नीचे हो, तब नीचे की ओर बना कोण अवनमन कोण (Angle of depression) कहलाता है। पहले ऊपरी बिंदु से क्षैतिज रेखा बनाएँ। नीचे के लक्ष्य से खींची क्षैतिज रेखा इसके समांतर होगी। दृष्टि रेखा इन दोनों समांतर रेखाओं को काटती है। इसलिए ऊपरी बिंदु का अवनमन कोण नीचे से उसी ऊपरी बिंदु का उन्नयन कोण बराबर होता है; ये एकांतर अंतःकोण हैं। इस बात का अर्थ यह नहीं कि दोनों व्यक्तियों की आँखों की ऊँचाइयाँ बराबर हैं। समान दो बिंदु और समांतर क्षैतिज संदर्भ आवश्यक हैं। यदि नाव के जल स्तर से प्रेक्षक H m ऊपर है और क्षैतिज दूरी d है, तो tan θ = H/d होगा। अतः d = H/tan θ लें। मीनार के शीर्ष पर खड़ी दिशा और दृष्टि रेखा के बीच का आंतरिक कोण प्रायः अवनमन कोण नहीं, उसका पूरक होता है। इन दोनों को बदल देने से अनुपात गलत हो जाता है। सही कोण को चाप से चिह्नित करें, क्षैतिज रेखा पर नाम लिखें और समकोण का स्थान अवश्य दिखाएँ।"
+      },
+      "formula": "θ_depression = θ_elevation; d = H/tan θ",
+      "question": {
+        "en": "Why may a depression angle be transferred to the lower point?",
+        "hi": "अवनमन कोण नीचे के बिंदु पर क्यों रखा जा सकता है?"
+      },
+      "answer": {
+        "en": "The horizontals are parallel and the sight line forms equal alternate interior angles.",
+        "hi": "क्षैतिज रेखाएँ समांतर हैं और दृष्टि रेखा समान एकांतर अंतःकोण बनाती है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Choose a ratio from the known sides",
+        "hi": "ज्ञात भुजाओं से सही अनुपात चुनें"
+      },
+      "body": {
+        "en": "A height-and-distance problem does not always use tangent. Relative to the selected acute angle, name the opposite side, adjacent side, and hypotenuse. The hypotenuse is opposite the right angle and is the longest side; it may represent a stretched rope or a ladder rather than the horizontal ground distance. Use sine when opposite and hypotenuse are involved, cosine for adjacent and hypotenuse, and tangent for opposite and adjacent. For a ladder of length L inclined at θ to level ground, the rise is L sin θ and the foot's horizontal separation from the wall is L cos θ. If the angle is given with the wall, first draw it at the correct vertex; the ground angle is complementary. Writing the ratio in words before symbols is a useful safeguard. Check the result against geometry: neither leg can exceed the hypotenuse, and positive side lengths cannot emerge negative. Keep exact radicals until the last numerical approximation so that repeated rounding does not distort a later equation.",
+        "hi": "हर ऊँचाई-दूरी प्रश्न में केवल tan लगाना सही नहीं है। चुने हुए न्यून कोण के सापेक्ष सामने की भुजा, आसन्न भुजा और कर्ण के नाम लिखें। कर्ण (Hypotenuse) समकोण के सामने और सबसे लंबी भुजा है। प्रश्न में यह तनी हुई रस्सी या सीढ़ी की लंबाई हो सकती है; इसे क्षैतिज दूरी न समझें। सामने की भुजा और कर्ण चाहिए तो sin, आसन्न और कर्ण चाहिए तो cos, तथा सामने और आसन्न चाहिए तो tan लें। लंबाई L की सीढ़ी भूमि से θ कोण बनाए, तो दीवार पर पहुँची ऊँचाई L sin θ और पाद की दीवार से दूरी L cos θ होगी। यदि कोण दीवार के साथ दिया है, तो उसे सही शीर्ष पर बनाएँ; भूमि के साथ कोण उसका पूरक है। पहले अनुपात शब्दों में लिखने से भूल कम होती है। उत्तर की ज्यामितीय जाँच भी करें: कोई लंब भुजा कर्ण से बड़ी नहीं हो सकती और वास्तविक दूरी ऋणात्मक नहीं हो सकती। गणना के बीच √3 जैसे सटीक मान रखें। अंतिम चरण से पहले दशमलव बनाने पर त्रुटि अगले समीकरणों में बढ़ सकती है।"
+      },
+      "formula": "sin θ = opposite/hypotenuse; cos θ = adjacent/hypotenuse; tan θ = opposite/adjacent",
+      "question": {
+        "en": "A 10 m ladder makes 30° with the ground. What is its vertical rise?",
+        "hi": "10 m सीढ़ी भूमि से 30° बनाती है। ऊर्ध्वाधर ऊँचाई क्या है?"
+      },
+      "answer": {
+        "en": "10 sin30° = 5 m.",
+        "hi": "10 sin30° = 5 m।"
+      }
+    },
+    {
+      "title": {
+        "en": "Use exact standard-angle values",
+        "hi": "मानक कोणों के सटीक मान"
+      },
+      "body": {
+        "en": "The standard angles 30°, 45°, and 60° make many school applications exact and manageable. Their tangent values are 1/√3, 1, and √3 respectively. The sine and cosine values follow from a 30°–60°–90° triangle and a 45°–45°–90° triangle. These values are ratios and therefore have no length unit. When multiplying a distance by a ratio, the distance unit remains unchanged. Rationalisation changes the form of an expression, not its magnitude: 12/√3 = 4√3. It is useful to present the exact result first and then an approximation if requested. Choose one declared value of π only in problems that actually involve circular measures; π is not a substitute for √3. A diagram may appear to show a different angle because it is not drawn to scale. The official UP Board applications scope uses 30°, 45°, and 60° and simple configurations requiring no more than two right triangles; study complicated surveying arrangements only as enrichment.",
+        "hi": "विद्यालयी प्रश्नों में 30°, 45° और 60° के मानक कोण (Standard angles) उपयोगी हैं, क्योंकि इनके अनुपात सटीक रूप में मिलते हैं। इनके tan मान क्रमशः 1/√3, 1 और √3 हैं। sin तथा cos के मान 30°–60°–90° और 45°–45°–90° त्रिभुजों से समझे जा सकते हैं। ये अनुपात हैं, इसलिए इनकी लंबाई की कोई इकाई नहीं होती। किसी दूरी को अनुपात से गुणा करने पर दूरी की इकाई बनी रहती है। परिमेयीकरण केवल रूप बदलता है, मान नहीं: 12/√3 = 4√3 होगा। पहले सटीक उत्तर लिखें; माँग होने पर उसका दशमलव सन्निकटन दें। वृत्त वाले प्रश्न में ही π की जरूरत पड़ती है; √3 की जगह π नहीं रख सकते। रेखाचित्र पैमाने पर न हो, तो उसमें दिखाई देने वाला कोण दिए हुए कोण से अलग लग सकता है। प्रश्न के माप और शर्तें ही मान्य हैं। आधिकारिक यूपी बोर्ड अनुप्रयोग भाग में 30°, 45°, 60° और अधिकतम 2 समकोण त्रिभुजों वाले सरल प्रश्न हैं। इससे जटिल सर्वेक्षण विन्यास अतिरिक्त समझ के लिए रखें।"
+      },
+      "formula": " tan30° = 1/√3; tan45° = 1; tan60° = √3",
+      "question": {
+        "en": "Express 18/√3 exactly.",
+        "hi": "18/√3 का सटीक सरल रूप लिखें।"
+      },
+      "answer": {
+        "en": "18/√3 = 6√3.",
+        "hi": "18/√3 = 6√3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Two observations and one common height",
+        "hi": "2 प्रेक्षण और 1 समान ऊँचाई"
+      },
+      "body": {
+        "en": "Two observations often produce two right triangles that share the same unknown height. Translate the location statement carefully before writing equations. Suppose two observation points are on the same straight side of a tower and 20 m apart. Let x be the nearer distance; the farther distance is x + 20, not 20 − x. If the nearer angle is 45° and the farther angle is 30°, the equations are h/x = 1 and h/(x + 20) = 1/√3. Eliminate one unknown to solve for the other. If points are on opposite sides of the tower, their separation is instead the sum of the two positive distances. A moving observer does not change the tower's height, but an uphill path or changed eye level would require extra information. State that the same horizontal datum and eye level are used. After solving, substitute into both original ratios. The nearer point should have the larger elevation angle in this configuration; a reversed result indicates a labelling error.",
+        "hi": "2 प्रेक्षणों से बने समकोण त्रिभुजों में एक ही अज्ञात ऊँचाई हो सकती है। समीकरण बनाने से पहले बिंदुओं की स्थिति समझें। मानें 2 बिंदु मीनार के एक ही ओर सीधी समतल रेखा पर हैं और उनका अंतर 20 m है। पास वाले बिंदु की दूरी x हो, तो दूर वाले की दूरी x + 20 होगी, 20 − x नहीं। पास का कोण 45° और दूर का 30° हो, तो h/x = 1 तथा h/(x + 20) = 1/√3 लिखें। एक अज्ञात हटाकर दूसरा निकालें। यदि बिंदु मीनार के विपरीत ओर हों, तो उनके बीच की दूरी दोनों धनात्मक दूरियों का योग होगी। प्रेक्षक के चलने से मीनार की ऊँचाई नहीं बदलती, लेकिन ढलान पर चलने या आँख का स्तर बदलने पर अतिरिक्त जानकारी चाहिए। इसलिए समान क्षैतिज संदर्भ और समान आँख स्तर की मान्यता लिखें। प्राप्त मान दोनों मूल समीकरणों में रखकर जाँचें। इस विन्यास में पास वाले बिंदु का उन्नयन कोण बड़ा होना चाहिए। उलटा परिणाम आए तो चित्र में नाम, दूरी और कोण दोबारा जाँचें।"
+      },
+      "formula": "h = x tan β = (x + s) tan α",
+      "question": {
+        "en": "For points on opposite sides, is their separation the sum or difference of distances from the tower?",
+        "hi": "मीनार के विपरीत ओर बिंदुओं के बीच दूरी योग होगी या अंतर?"
+      },
+      "answer": {
+        "en": "The sum, provided the tower foot lies between them.",
+        "hi": "योग, यदि मीनार का पाद उनके बीच है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Eye height, platforms and combined rises",
+        "hi": "आँख की ऊँचाई, मंच और कुल बढ़त"
+      },
+      "body": {
+        "en": "A trigonometric triangle measures a vertical difference. To obtain an object's total height above ground, add any known observer elevation that lies below the triangle's horizontal reference. For an eye 1.5 m above level ground, viewed top at angle θ and horizontal distance d, H = 1.5 + d tan θ. A balcony observer looking up to the top and down to the base creates two triangles with a shared horizontal distance. If the balcony is B m above ground, a depression angle α to the base gives d = B/tan α. An elevation angle β to the top then gives H − B = d tan β. Combine them as H = B + d tan β. The rise above the balcony and the drop below it must not be subtracted when finding total building height. Mark the common horizontal segment clearly and use the same ground datum for every stated height. This representation connects geometry with practical measurement while showing why unlabelled sketches often lead to incomplete answers.",
+        "hi": "त्रिकोणमितीय त्रिभुज से ऊँचाइयों का अंतर मिलता है। भूमि से वस्तु की पूरी ऊँचाई निकालने के लिए आँख या मंच की ज्ञात ऊँचाई जोड़नी पड़ती है। समतल भूमि से आँख 1.5 m ऊपर हो, क्षैतिज दूरी d और शीर्ष का उन्नयन θ हो, तो H = 1.5 + d tan θ होगा। बालकनी से शीर्ष को ऊपर और पाद को नीचे देखने पर समान क्षैतिज दूरी वाले 2 त्रिभुज बनते हैं। बालकनी भूमि से B m ऊपर हो तथा आधार का अवनमन α हो, तो d = B/tan α लें। शीर्ष का उन्नयन β हो, तो बालकनी से ऊपर की बढ़त H − B = d tan β मिलेगी। इसलिए H = B + d tan β होगा। पूरी ऊँचाई निकालते समय बालकनी के ऊपर की बढ़त और नीचे की गिरावट को जोड़ते हैं, घटाते नहीं। साझा क्षैतिज रेखाखंड चित्र में स्पष्ट बनाएँ। सभी ऊँचाइयाँ किस भूमि स्तर से मापी गई हैं, यह भी समान रखें। यह तरीका व्यावहारिक मापन को ज्यामिति से जोड़ता है और बताता है कि बिना नाम वाले चित्र से उत्तर अधूरा क्यों रह सकता है।"
+      },
+      "formula": "H = e + d tan θ",
+      "question": {
+        "en": "At eye height 1.5 m, d = 10 m and θ = 45°, find total height.",
+        "hi": "आँख 1.5 m ऊपर, d = 10 m और θ = 45° हो तो कुल ऊँचाई क्या है?"
+      },
+      "answer": {
+        "en": "H = 1.5 + 10 = 11.5 m.",
+        "hi": "H = 1.5 + 10 = 11.5 m।"
+      }
+    },
+    {
+      "title": {
+        "en": "Write a complete, checked solution",
+        "hi": "पूर्ण और जाँचा हुआ हल लिखें"
+      },
+      "body": {
+        "en": "A complete solution explains why the chosen triangle and ratio fit the question. Begin with the given information, declare the unknown, draw a schematic, and state a relevant trigonometric relation. Substitute only after converting all lengths to a common unit. Show the algebra that isolates the unknown, retain exact values where possible, and end with the requested quantity and unit. Check whether you found horizontal distance, line-of-sight length, relative rise, or total height; these are different outputs. Estimate the order of magnitude using standard-angle comparisons. With angle 30°, height above eye level is less than horizontal distance; at 60° it is greater. At 0° there is no vertical rise in the level model, while tangent is undefined at 90°, so the usual finite-distance equation must not be divided through blindly. The learning diagrams are schematic and angular measurement errors affect inferred lengths. Such limits do not invalidate the mathematics; they explain the assumptions under which the mathematical answer represents the real situation.",
+        "hi": "पूरा हल यह भी बताता है कि चुना गया त्रिभुज और अनुपात प्रश्न के अनुकूल क्यों है। पहले दी हुई जानकारी लिखें, अज्ञात घोषित करें, सांकेतिक चित्र बनाएँ और सही त्रिकोणमितीय संबंध दें। सभी लंबाइयों की इकाई समान करने के बाद ही मान रखें। अज्ञात को अलग करने के बीजगणितीय चरण दिखाएँ, जहाँ संभव हो सटीक मान रखें और अंतिम उत्तर माँगी गई राशि तथा इकाई के साथ लिखें। जाँचें कि आपने क्षैतिज दूरी, दृष्टि रेखा की लंबाई, आँख से ऊपर की बढ़त या पूरी ऊँचाई में से क्या निकाला है। ये अलग-अलग उत्तर हैं। मानक कोणों से उत्तर का मोटा अनुमान करें। 30° पर आँख से ऊपर की बढ़त क्षैतिज दूरी से कम, 60° पर अधिक होती है। समतल मॉडल में 0° पर ऊर्ध्वाधर बढ़त नहीं होती। 90° पर tan परिभाषित नहीं है, इसलिए सामान्य समीकरण में अंधाधुंध भाग नहीं दे सकते। अध्ययन चित्र सांकेतिक हैं और वास्तविक कोण मापन की त्रुटि निकाली गई लंबाई को प्रभावित करती है। ये सीमाएँ गणित को गलत नहीं बनातीं; वे गणितीय मॉडल की शर्तें स्पष्ट करती हैं।"
+      },
+      "formula": "Given → diagram → ratio → equation → answer → check",
+      "question": {
+        "en": "Why must 250 cm be converted before combining it with a distance in metres?",
+        "hi": "मीटर वाली दूरी के साथ 250 cm जोड़ने से पहले परिवर्तन क्यों करें?"
+      },
+      "answer": {
+        "en": "Only lengths expressed in the same unit can be directly combined; 250 cm = 2.5 m.",
+        "hi": "एक ही इकाई के माप सीधे जोड़े जा सकते हैं; 250 cm = 2.5 m।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A tower is observed at 45° from a point 20 m from its foot. Ignore eye height. Find its height.",
+        "hi": "मीनार के पाद से 20 m दूर बिंदु से उन्नयन 45° है। आँख की ऊँचाई उपेक्षित कर ऊँचाई निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given: d = 20 m, θ = 45°, eye height = 0.",
+          "hi": "दिया: d = 20 m, θ = 45°, आँख की ऊँचाई = 0।"
+        },
+        {
+          "en": "To find: tower height h. Use tan θ = h/d.",
+          "hi": "ज्ञात करना है: मीनार की ऊँचाई h। tan θ = h/d लें।"
+        },
+        {
+          "en": "h = 20 tan45° = 20 × 1.",
+          "hi": "h = 20 tan45° = 20 × 1।"
+        }
+      ],
+      "answer": {
+        "en": "20 m.",
+        "hi": "20 m।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A 10 m ladder makes 30° with level ground. Find the wall height reached.",
+        "hi": "10 m सीढ़ी समतल भूमि से 30° बनाती है। दीवार पर पहुँची ऊँचाई निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given: hypotenuse L = 10 m and ground angle 30°.",
+          "hi": "दिया: कर्ण L = 10 m और भूमि कोण 30°।"
+        },
+        {
+          "en": "To find opposite side h, use sin30° = h/10.",
+          "hi": "सामने की भुजा h के लिए sin30° = h/10 लें।"
+        },
+        {
+          "en": "h = 10 × 1/2 = 5. The result is less than the ladder length.",
+          "hi": "h = 10 × 1/2 = 5। उत्तर सीढ़ी की लंबाई से कम है।"
+        }
+      ],
+      "answer": {
+        "en": "5 m.",
+        "hi": "5 m।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "An observer’s eye is 1.5 m above ground. A tree 12 m horizontally away has elevation 30°. Find total tree height.",
+        "hi": "प्रेक्षक की आँख भूमि से 1.5 m ऊपर है। 12 m क्षैतिज दूरी पर पेड़ का उन्नयन 30° है। कुल ऊँचाई निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given: e = 1.5 m, d = 12 m, θ = 30°.",
+          "hi": "दिया: e = 1.5 m, d = 12 m, θ = 30°।"
+        },
+        {
+          "en": "Rise above eye level = d tanθ = 12/√3 = 4√3 m.",
+          "hi": "आँख से ऊपर बढ़त = d tanθ = 12/√3 = 4√3 m।"
+        },
+        {
+          "en": "Total H = e + rise = 1.5 + 4√3.",
+          "hi": "कुल H = e + बढ़त = 1.5 + 4√3।"
+        }
+      ],
+      "answer": {
+        "en": "1.5 + 4√3 m, approximately 8.43 m.",
+        "hi": "1.5 + 4√3 m, लगभग 8.43 m।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A lookout 30 m above level water sees a boat at depression 60°. Find horizontal distance.",
+        "hi": "जल स्तर से 30 m ऊँचे प्रेक्षक को नाव 60° अवनमन पर दिखती है। क्षैतिज दूरी निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given: vertical drop H = 30 m; lower elevation angle is also 60°.",
+          "hi": "दिया: ऊर्ध्वाधर गिरावट H = 30 m; नीचे का उन्नयन भी 60°।"
+        },
+        {
+          "en": "To find d, use tan60° = 30/d.",
+          "hi": "d निकालने के लिए tan60° = 30/d लें।"
+        },
+        {
+          "en": "d = 30/√3 = 10√3.",
+          "hi": "d = 30/√3 = 10√3।"
+        }
+      ],
+      "answer": {
+        "en": "10√3 m, approximately 17.32 m.",
+        "hi": "10√3 m, लगभग 17.32 m।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "On level ground, moving 20 m towards a tower changes elevation from 30° to 45°. Ignore eye height. Find tower height.",
+        "hi": "समतल भूमि पर मीनार की ओर 20 m चलने से उन्नयन 30° से 45° हो जाता है। आँख की ऊँचाई उपेक्षित कर ऊँचाई निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Let the nearer distance be x m and height h m. The farther distance is x + 20.",
+          "hi": "पास की दूरी x m और ऊँचाई h m लें। दूर की दूरी x + 20 है।"
+        },
+        {
+          "en": "At 45°: h/x = 1, so x = h. At 30°: h/(x+20) = 1/√3.",
+          "hi": "45° पर h/x = 1, इसलिए x = h। 30° पर h/(x+20) = 1/√3।"
+        },
+        {
+          "en": "Substitute x = h: √3 h = h + 20; h = 20/(√3−1).",
+          "hi": "x = h रखने पर √3 h = h + 20; h = 20/(√3−1)।"
+        },
+        {
+          "en": "Rationalise: h = 10(√3 + 1). Both distances are positive.",
+          "hi": "परिमेयीकरण: h = 10(√3 + 1)। दोनों दूरियाँ धनात्मक हैं।"
+        }
+      ],
+      "answer": {
+        "en": "10(√3 + 1) m, approximately 27.32 m.",
+        "hi": "10(√3 + 1) m, लगभग 27.32 m।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "An angle of elevation is measured from which reference?",
+        "hi": "उन्नयन कोण किस संदर्भ से मापते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The vertical tower",
+            "hi": "खड़ी मीनार"
+          },
+          "reason": {
+            "en": "That angle is usually complementary to the elevation.",
+            "hi": "वह कोण प्रायः उन्नयन का पूरक होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The horizontal through the eye",
+            "hi": "आँख से क्षैतिज रेखा"
+          },
+          "reason": {
+            "en": "Elevation is the upward angle from this horizontal.",
+            "hi": "उन्नयन इसी क्षैतिज से ऊपर का कोण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any sloping road",
+            "hi": "कोई ढलुआ सड़क"
+          },
+          "reason": {
+            "en": "A slope is not the required horizontal reference.",
+            "hi": "ढलान आवश्यक क्षैतिज संदर्भ नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The ground at any unrelated point",
+            "hi": "किसी असंबद्ध बिंदु की भूमि"
+          },
+          "reason": {
+            "en": "The angle belongs at the observer and uses the eye-level horizontal.",
+            "hi": "कोण प्रेक्षक पर आँख की क्षैतिज रेखा से बनता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "At 45°, which relation holds for positive rise h and horizontal distance d?",
+        "hi": "45° पर धनात्मक बढ़त h और क्षैतिज दूरी d में क्या संबंध है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "h = d",
+            "hi": "h = d"
+          },
+          "reason": {
+            "en": "tan45° = 1, hence h/d = 1.",
+            "hi": "tan45° = 1, अतः h/d = 1।"
+          }
+        },
+        {
+          "text": {
+            "en": "h = 2d",
+            "hi": "h = 2d"
+          },
+          "reason": {
+            "en": "This would require tanθ = 2.",
+            "hi": "इसके लिए tanθ = 2 चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "h = d/2",
+            "hi": "h = d/2"
+          },
+          "reason": {
+            "en": "This gives tanθ = 1/2, not 1.",
+            "hi": "यह tanθ = 1/2 देता है, 1 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "h = √3d",
+            "hi": "h = √3d"
+          },
+          "reason": {
+            "en": "This is the 60° relation.",
+            "hi": "यह 60° का संबंध है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which ratio directly relates rise to horizontal distance?",
+        "hi": "बढ़त और क्षैतिज दूरी को सीधे कौन जोड़ता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "sin θ",
+            "hi": "sin θ"
+          },
+          "reason": {
+            "en": "Sine relates opposite to hypotenuse.",
+            "hi": "sin सामने की भुजा को कर्ण से जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cos θ",
+            "hi": "cos θ"
+          },
+          "reason": {
+            "en": "Cosine relates adjacent to hypotenuse.",
+            "hi": "cos आसन्न भुजा को कर्ण से जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "tan θ",
+            "hi": "tan θ"
+          },
+          "reason": {
+            "en": "Tangent equals opposite/adjacent.",
+            "hi": "tan = सामने की भुजा/आसन्न भुजा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sec θ",
+            "hi": "sec θ"
+          },
+          "reason": {
+            "en": "Secant relates hypotenuse to adjacent.",
+            "hi": "sec कर्ण को आसन्न भुजा से जोड़ता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "An eye-level triangle gives rise 8 m and eye height is 1.5 m. Find total height.",
+        "hi": "आँख से ऊपर बढ़त 8 m और आँख की ऊँचाई 1.5 m है। कुल ऊँचाई क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "6.5 m",
+            "hi": "6.5 m"
+          },
+          "reason": {
+            "en": "Subtracting removes rather than includes the lower part.",
+            "hi": "घटाने से नीचे का भाग हट जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "12 m",
+            "hi": "12 m"
+          },
+          "reason": {
+            "en": "Multiplication is not the height combination.",
+            "hi": "ऊँचाइयाँ मिलाने के लिए गुणा नहीं करते।"
+          }
+        },
+        {
+          "text": {
+            "en": "8 m",
+            "hi": "8 m"
+          },
+          "reason": {
+            "en": "This omits eye height.",
+            "hi": "इसमें आँख की ऊँचाई छूटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9.5 m",
+            "hi": "9.5 m"
+          },
+          "reason": {
+            "en": "Total = rise + eye height = 8 + 1.5.",
+            "hi": "कुल = बढ़त + आँख की ऊँचाई = 8 + 1.5।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Why are depression and reverse elevation angles equal?",
+        "hi": "अवनमन और विपरीत दिशा का उन्नयन बराबर क्यों हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Every triangle is isosceles",
+            "hi": "हर त्रिभुज समद्विबाहु है"
+          },
+          "reason": {
+            "en": "The triangles need not be isosceles.",
+            "hi": "त्रिभुज का समद्विबाहु होना जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Horizontals are parallel",
+            "hi": "क्षैतिज रेखाएँ समांतर हैं"
+          },
+          "reason": {
+            "en": "The sight line makes equal alternate interior angles.",
+            "hi": "दृष्टि रेखा समान एकांतर अंतःकोण बनाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All observer heights are equal",
+            "hi": "सबकी आँख की ऊँचाई बराबर है"
+          },
+          "reason": {
+            "en": "Equal eye heights are not the reason.",
+            "hi": "आँख की ऊँचाई बराबर होना कारण नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The angles sum to 90°",
+            "hi": "दोनों का योग 90° है"
+          },
+          "reason": {
+            "en": "They are equal, not generally complementary.",
+            "hi": "वे बराबर हैं, सामान्यतः पूरक नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A 12 m horizontal distance and 30° elevation give which rise?",
+        "hi": "12 m क्षैतिज दूरी और 30° उन्नयन से कितनी बढ़त मिलेगी?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4√3 m",
+            "hi": "4√3 m"
+          },
+          "reason": {
+            "en": "12 tan30° = 12/√3 = 4√3.",
+            "hi": "12 tan30° = 12/√3 = 4√3।"
+          }
+        },
+        {
+          "text": {
+            "en": "12√3 m",
+            "hi": "12√3 m"
+          },
+          "reason": {
+            "en": "This uses tan60° instead.",
+            "hi": "इसमें tan60° लग गया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6 m",
+            "hi": "6 m"
+          },
+          "reason": {
+            "en": "This uses sin30° on a distance that is not the hypotenuse.",
+            "hi": "यह ऐसी दूरी पर sin30° लगाता है जो कर्ण नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "24 m",
+            "hi": "24 m"
+          },
+          "reason": {
+            "en": "This uses the reciprocal of sin30°, which is irrelevant here.",
+            "hi": "यह sin30° का व्युत्क्रम लगाता है, जो यहाँ उपयुक्त नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two points on the same side are s metres apart; nearer distance is x. Farther distance is?",
+        "hi": "एक ही ओर 2 बिंदुओं का अंतर s m तथा पास की दूरी x है। दूर की दूरी क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "s − x",
+            "hi": "s − x"
+          },
+          "reason": {
+            "en": "This can reverse the layout and become negative.",
+            "hi": "इससे विन्यास उलटकर दूरी ऋणात्मक हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "xs",
+            "hi": "xs"
+          },
+          "reason": {
+            "en": "A product has the wrong geometric meaning and units.",
+            "hi": "गुणन का ज्यामितीय अर्थ और इकाई गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x + s",
+            "hi": "x + s"
+          },
+          "reason": {
+            "en": "The farther point adds the separation to the nearer distance.",
+            "hi": "दूर वाले बिंदु की दूरी में अंतर जुड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x/s",
+            "hi": "x/s"
+          },
+          "reason": {
+            "en": "A ratio is not the required length.",
+            "hi": "अनुपात माँगी गई लंबाई नहीं है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "For a fixed height and unchanged eye level, moving closer makes elevation?",
+        "hi": "नियत ऊँचाई और समान आँख स्तर पर पास आने से उन्नयन क्या होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always 0°",
+            "hi": "हमेशा 0°"
+          },
+          "reason": {
+            "en": "A positive rise does not have zero elevation.",
+            "hi": "धनात्मक बढ़त पर उन्नयन शून्य नहीं होता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Smaller",
+            "hi": "छोटा"
+          },
+          "reason": {
+            "en": "Decreasing the denominator raises tanθ.",
+            "hi": "हर घटने पर tanθ बढ़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "The horizontal distance has changed.",
+            "hi": "क्षैतिज दूरी बदल गई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Larger",
+            "hi": "बड़ा"
+          },
+          "reason": {
+            "en": "h/d increases when positive d decreases.",
+            "hi": "धनात्मक d घटे तो h/d बढ़ता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "A 10 m ladder is the hypotenuse and makes 30° with ground. Rise is?",
+        "hi": "10 m सीढ़ी कर्ण है और भूमि से 30° बनाती है। बढ़त क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "10 m",
+            "hi": "10 m"
+          },
+          "reason": {
+            "en": "A leg is smaller than the hypotenuse for this acute angle.",
+            "hi": "इस न्यून कोण पर लंब भुजा कर्ण से छोटी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5 m",
+            "hi": "5 m"
+          },
+          "reason": {
+            "en": "10 sin30° = 5.",
+            "hi": "10 sin30° = 5।"
+          }
+        },
+        {
+          "text": {
+            "en": "10√3 m",
+            "hi": "10√3 m"
+          },
+          "reason": {
+            "en": "This exceeds the hypotenuse and is impossible.",
+            "hi": "यह कर्ण से अधिक है और असंभव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "20 m",
+            "hi": "20 m"
+          },
+          "reason": {
+            "en": "This also exceeds the ladder length.",
+            "hi": "यह भी सीढ़ी की लंबाई से अधिक है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which statement about tan90° is correct?",
+        "hi": "tan90° के बारे में क्या सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It is undefined",
+            "hi": "यह अपरिभाषित है"
+          },
+          "reason": {
+            "en": "cos90° = 0, so sin90°/cos90° is undefined.",
+            "hi": "cos90° = 0, इसलिए sin90°/cos90° अपरिभाषित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It equals 0",
+            "hi": "यह 0 है"
+          },
+          "reason": {
+            "en": "tan0° equals 0, not tan90°.",
+            "hi": "tan0° = 0 है, tan90° नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "It equals 1",
+            "hi": "यह 1 है"
+          },
+          "reason": {
+            "en": "tan45° equals 1.",
+            "hi": "tan45° = 1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It has unit metres",
+            "hi": "इसकी इकाई मीटर है"
+          },
+          "reason": {
+            "en": "Trigonometric ratios are unitless; this one is undefined.",
+            "hi": "त्रिकोणमितीय अनुपात विमाहीन हैं; यह अपरिभाषित है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define angle of elevation with its reference line.",
+        "hi": "उन्नयन कोण की संदर्भ रेखा सहित परिभाषा दें।"
+      },
+      "answer": {
+        "en": "The upward angle between the line of sight and the horizontal through the observer’s eye.",
+        "hi": "प्रेक्षक की आँख से क्षैतिज रेखा और ऊपर जाती दृष्टि रेखा के बीच का कोण।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why depression equals reverse elevation.",
+        "hi": "अवनमन विपरीत उन्नयन के बराबर क्यों है?"
+      },
+      "answer": {
+        "en": "Parallel horizontals are cut by the same sight line; alternate interior angles are equal.",
+        "hi": "एक ही दृष्टि रेखा समांतर क्षैतिजों को काटती है; एकांतर अंतःकोण बराबर होते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "From 15 m away, a top is at 60° elevation. Ignore eye height. Find height.",
+        "hi": "15 m दूरी से शीर्ष का उन्नयन 60° है। आँख की ऊँचाई उपेक्षित कर ऊँचाई निकालें।"
+      },
+      "answer": {
+        "en": "h = 15 tan60° = 15√3 m.",
+        "hi": "h = 15 tan60° = 15√3 m।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is eye height added in a ground-based total-height problem?",
+        "hi": "भूमि से कुल ऊँचाई निकालते समय आँख की ऊँचाई क्यों जोड़ते हैं?"
+      },
+      "answer": {
+        "en": "The tangent triangle measures only the rise above the eye’s horizontal, leaving the part below it.",
+        "hi": "tan वाला त्रिभुज आँख की क्षैतिज रेखा के ऊपर की बढ़त देता है; नीचे का भाग शेष रहता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "An observer 12 m above water sees a boat at depression 45°. Find horizontal distance.",
+        "hi": "जल से 12 m ऊपर व्यक्ति को नाव 45° अवनमन पर दिखती है। क्षैतिज दूरी निकालें।"
+      },
+      "answer": {
+        "en": "tan45° = 12/d = 1, so d = 12 m.",
+        "hi": "tan45° = 12/d = 1, अतः d = 12 m।"
+      }
+    },
+    {
+      "question": {
+        "en": "Same-side observation points are 8 m apart and nearer distance is x. Write distances and a checking rule.",
+        "hi": "एक ही ओर प्रेक्षण बिंदु 8 m अलग हैं और पास की दूरी x है। दोनों दूरियाँ तथा एक जाँच नियम लिखें।"
+      },
+      "answer": {
+        "en": "Distances x and x + 8; with the same positive rise the nearer elevation must be larger.",
+        "hi": "दूरियाँ x तथा x + 8; समान धनात्मक बढ़त पर पास वाला उन्नयन अधिक होना चाहिए।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not measure elevation from the vertical, confuse sight-line length with horizontal distance, or forget eye height. Establish whether observation points are on the same or opposite sides before adding distances.",
+    "hi": "उन्नयन को खड़ी दिशा से न मापें, दृष्टि रेखा को क्षैतिज दूरी न मानें और आँख की ऊँचाई न भूलें। दूरियाँ जोड़ने से पहले बिंदुओं की समान या विपरीत ओर स्थिति जाँचें।"
+  },
+  "revision": [
+    {
+      "en": "Draw a horizontal through the observer’s eye.",
+      "hi": "आँख से क्षैतिज रेखा बनाएँ।"
+    },
+    {
+      "en": "Choose sin, cos or tan from the known and required sides.",
+      "hi": "ज्ञात और आवश्यक भुजाओं से sin, cos या tan चुनें।"
+    },
+    {
+      "en": "Use exact 30°, 45°, 60° values.",
+      "hi": "30°, 45°, 60° के सटीक मान लें।"
+    },
+    {
+      "en": "Add eye or platform height only when the requested datum requires it.",
+      "hi": "माँगा गया संदर्भ आवश्यक करे तभी आँख या मंच की ऊँचाई जोड़ें।"
+    },
+    {
+      "en": "Check both equations, units and the geometric size of the result.",
+      "hi": "दोनों समीकरण, इकाइयाँ और उत्तर का ज्यामितीय आकार जाँचें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Situation → labelled right triangle → horizontal reference → trigonometric ratio → equation → total height / distance → check",
+    "hi": "स्थिति → नाम वाला समकोण त्रिभुज → क्षैतिज संदर्भ → त्रिकोणमितीय अनुपात → समीकरण → कुल ऊँचाई / दूरी → जाँच"
+  },
+  "sources": [
+    {
+      "title": "NCERT Class 10 Mathematics, Chapter 9, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh109.pdf"
+    },
+    {
+      "title": "UP Board Class 10 Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

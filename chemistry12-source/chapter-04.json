@@ -1,0 +1,1045 @@
+{
+  "number": 4,
+  "id": "chemistry12-04",
+  "title": {
+    "en": "The d- and f-Block Elements",
+    "hi": "d- एवं f-ब्लॉक के तत्व"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Position and transition character",
+        "hi": "स्थिति और संक्रमण लक्षण"
+      },
+      "paragraphs": [
+        {
+          "en": "The d block occupies the central region of the periodic table. A transition element has a partially filled d subshell in its atom or in at least one oxidation state. This definition is more precise than simply calling every d-block element a transition element. Scandium qualifies because its atom has 3d1, although Sc3+ is d0. Zinc, cadmium and mercury have d10 arrangements in their common ions and are not typical transition elements. The first series involves 3d filling from scandium to zinc. The two f-block series are usually displayed below the main table for compactness.",
+          "hi": "d-ब्लॉक (d block) आवर्त सारणी के बीच का क्षेत्र है, जहाँ सामान्यतः अंतिम इलेक्ट्रॉन d उपकोश में प्रवेश करता है। संक्रमण तत्व (Transition element) की पहचान केवल स्थान से नहीं होती। उसके परमाणु या कम-से-कम 1 ऑक्सीकरण अवस्था के आयन में d उपकोश अपूर्ण होना चाहिए। स्कैंडियम के परमाणु में 3d1 होने से वह संक्रमण तत्व है, यद्यपि Sc3+ में d0 होता है। जिंक के परमाणु और सामान्य Zn2+ आयन में d10 विन्यास रहता है, इसलिए उसे सामान्य संक्रमण धातु नहीं कहते। इसी सावधानी से कैडमियम और पारा को समझें। प्रथम संक्रमण श्रेणी में 3d कक्षकों का भरना स्कैंडियम से जिंक तक होता है। f-ब्लॉक को नीचे दिखाने का उद्देश्य तालिका को छोटा रखना है; वे अलग नियम वाली कोई दूसरी आवर्त सारणी नहीं हैं। तत्वों की तुलना में पहले परमाणु क्रमांक (Atomic number), फिर विन्यास, उसके बाद संबंधित आयन का विन्यास लिखें। धातु, d-ब्लॉक और संक्रमण तत्व शब्द जुड़े हैं, लेकिन तीनों बिल्कुल समान वर्ग नहीं बनाते। किसी 1 गुण, जैसे रंग, से परिभाषा को बदलना भी ठीक नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A position-based label and an electronic definition need not have identical membership.",
+          "hi": "स्थान पर आधारित समूह और इलेक्ट्रॉनिक परिभाषा के सदस्य हमेशा एक जैसे नहीं होते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does d-block membership alone not prove transition character?",
+          "hi": "केवल d-ब्लॉक में होना संक्रमण लक्षण का प्रमाण क्यों नहीं?"
+        },
+        "answer": {
+          "en": "The atom or a suitable ion must also have a partially filled d subshell.",
+          "hi": "परमाणु या उपयुक्त आयन में अपूर्ण d उपकोश भी होना चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Electronic configurations and ions",
+        "hi": "इलेक्ट्रॉनिक विन्यास और आयन"
+      },
+      "paragraphs": [
+        {
+          "en": "The general outer configuration is (n−1)d1–10 ns0–2. Chromium and copper show familiar exceptions: [Ar]3d5 4s1 and [Ar]3d10 4s1. Close orbital energies and electron interactions matter; a simple half-filled-shell slogan is only a memory aid. When first-series cations form, 4s electrons are removed before 3d electrons. Thus iron [Ar]3d6 4s2 gives Fe2+ as 3d6 and Fe3+ as 3d5. The number of d electrons is essential for later magnetic and bonding reasoning. An oxidation state is formal bookkeeping, not always a literal isolated ionic charge inside a covalent compound.",
+          "hi": "सामान्य बाह्य विन्यास (n−1)d1–10 ns0–2 के रूप में लिखा जाता है। क्रोमियम (Chromium) का [Ar]3d5 4s1 और कॉपर (Copper) का [Ar]3d10 4s1 विन्यास प्रमुख अपवाद हैं। इन विन्यासों को केवल आधा भरा या पूरा भरा स्थिर होता है कहकर समाप्त न करें; पास-पास ऊर्जा वाले कक्षक और इलेक्ट्रॉन अंतःक्रियाएँ वास्तविक आधार हैं। प्रथम श्रेणी की धातु से धनायन बनने पर 4s के इलेक्ट्रॉन पहले निकलते हैं, फिर 3d के। इसलिए Fe का [Ar]3d6 4s2 विन्यास Fe2+ में [Ar]3d6 तथा Fe3+ में [Ar]3d5 बनता है। परमाणु में भरने का क्रम और आयन से निकलने का क्रम एक जैसा मानना सामान्य गलती है। किसी प्रश्न में आयन दिया हो तो तटस्थ परमाणु के अयुग्मित इलेक्ट्रॉन सीधे न गिनें। पहले निकले इलेक्ट्रॉन घटाएँ और नया d विन्यास बनाएं। ऑक्सीकरण अवस्था (Oxidation state) औपचारिक लेखा है; सहसंयोजी पदार्थ में वह हमेशा स्वतंत्र आयन के वास्तविक आवेश के बराबर नहीं होती। यही प्रक्रिया रंग, चुंबकत्व और उपसहसंयोजन के प्रश्नों की शुरुआत है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Remove ns electrons before (n−1)d electrons when forming these cations.",
+          "hi": "इन धनायनों में ns इलेक्ट्रॉन, (n−1)d इलेक्ट्रॉन से पहले हटाएँ।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What are the d counts of Fe2+ and Fe3+?",
+          "hi": "Fe2+ और Fe3+ में d इलेक्ट्रॉन कितने हैं?"
+        },
+        "answer": {
+          "en": "Fe2+ is d6 and Fe3+ is d5.",
+          "hi": "Fe2+ में d6 तथा Fe3+ में d5 हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Oxidation states and periodic trends",
+        "hi": "ऑक्सीकरण अवस्थाएँ और आवर्ती प्रवृत्तियाँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Transition elements often exhibit several oxidation states because ns and (n−1)d electrons can participate in bonding. The maximum common oxidation states rise towards manganese and then generally decline, but stability depends on the chemical environment. Oxygen and fluorine can stabilise high oxidation states. Mn in permanganate is +7, whereas Mn2+ is often stable in aqueous solution. Atomic radii change relatively little across much of a transition series because increasing nuclear charge is partly offset by d-electron shielding. Ionisation enthalpy, melting point and atomisation enthalpy do not follow a perfectly smooth sequence.",
+          "hi": "परिवर्ती ऑक्सीकरण अवस्था (Variable oxidation state) संक्रमण धातुओं की महत्वपूर्ण विशेषता है। ns और (n−1)d इलेक्ट्रॉनों की ऊर्जाएँ पर्याप्त निकट होने के कारण अलग संख्याओं में इलेक्ट्रॉन आबंधन में भाग ले सकते हैं। प्रथम श्रेणी में अधिकतम सामान्य अवस्था मैंगनीज के पास बढ़ती है और फिर घटती दिखाई देती है, लेकिन हर यौगिक की स्थिरता अलग देखनी चाहिए। ऑक्सीजन तथा फ्लोरीन जैसे तत्व उच्च अवस्थाओं को स्थिर कर सकते हैं। परमैंगनेट MnO4− में Mn की अवस्था +7 है, जबकि अनेक जलीय परिस्थितियों में Mn2+ अपेक्षाकृत स्थिर है। समान धातु का अधिक धनात्मक अंक हर परिस्थिति में अधिक स्थिर या अधिक सक्रिय होने का नियम नहीं है। श्रेणी में नाभिकीय आवेश बढ़ता है, पर d इलेक्ट्रॉनों का परिरक्षण कुछ प्रभाव कम कर देता है, इसलिए त्रिज्या में परिवर्तन सामान्य मुख्य समूहों जैसा सरल नहीं रहता। आयनन एन्थैल्पी (Ionisation enthalpy), गलनांक और परमाण्वीकरण एन्थैल्पी में असमानताएँ इलेक्ट्रॉनिक विन्यास और धात्विक आबंधन से जुड़ी हैं। प्रवृत्ति पढ़ते समय सामान्य दिशा, अपवाद और लागू अवस्था तीनों लिखना उपयोगी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Oxidation-state stability depends on ligands, solvent and reaction conditions.",
+          "hi": "ऑक्सीकरण अवस्था की स्थिरता लिगैंड, विलायक और अभिक्रिया की दशाओं पर निर्भर है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Find Mn oxidation state in MnO4−.",
+          "hi": "MnO4− में Mn की ऑक्सीकरण अवस्था निकालें।"
+        },
+        "answer": {
+          "en": "x+4(−2)=−1 gives x=+7.",
+          "hi": "x+4(−2)=−1 से x=+7।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Colour and magnetic behaviour",
+        "hi": "रंग और चुंबकीय व्यवहार"
+      },
+      "paragraphs": [
+        {
+          "en": "Many transition-metal ions absorb visible light when electrons move between split d levels in a ligand field. Observed colour depends on the ion, ligands and coordination geometry. A d0 or d10 ion cannot undergo a simple d–d transition, but charge-transfer processes can still colour compounds such as permanganate. Unpaired electrons cause paramagnetism; species with all electrons paired are diamagnetic in the elementary model. The spin-only estimate μ=√[n(n+2)] BM uses the number n of unpaired electrons and neglects orbital contributions. Electron pairing in complexes depends on ligand field strength, so a d count alone does not always determine n.",
+          "hi": "अनेक संक्रमण धातु आयन रंगीन होते हैं क्योंकि लिगैंड क्षेत्र में अलग हुई d ऊर्जा अवस्थाओं के बीच इलेक्ट्रॉन उपयुक्त दृश्य प्रकाश अवशोषित कर सकता है। दिखने वाला रंग अवशोषित रंग का सरल नाम नहीं; शेष प्रकाश से संबंधित है। धातु की अवस्था, जुड़े लिगैंड और ज्यामिति बदलने से रंग भी बदल सकता है। d0 तथा d10 आयन में साधारण d–d संक्रमण नहीं होता, लेकिन इसका अर्थ सभी संबंधित यौगिक हमेशा रंगहीन हों, ऐसा नहीं है। MnO4− का गहरा रंग आवेश अंतरण (Charge transfer) से जुड़ा है। अयुग्मित इलेक्ट्रॉन (Unpaired electron) अनुचुंबकीय व्यवहार देते हैं; सभी युग्मित होने पर सरल मॉडल में प्रतिचुंबकीय व्यवहार मिलता है। केवल स्पिन का अनुमान μ=√[n(n+2)] BM है, जहाँ n अयुग्मित इलेक्ट्रॉनों की संख्या है। यह सटीक सार्वभौमिक मान नहीं, क्योंकि कक्षकीय योगदान की उपेक्षा होती है। मुक्त आयन का d विन्यास और किसी प्रबल लिगैंड वाले संकुल का युग्मन एक जैसा न मानें। पहले प्रश्न की प्रजाति और परिस्थिति स्पष्ट करें, फिर n चुनें और मात्रक बोर मैग्नेटॉन (Bohr magneton) लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "d0 does not guarantee a colourless compound when charge transfer is possible.",
+          "hi": "आवेश अंतरण संभव हो तो d0 से यौगिक के रंगहीन होने की गारंटी नहीं मिलती।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Estimate the spin-only moment for 3 unpaired electrons.",
+          "hi": "3 अयुग्मित इलेक्ट्रॉनों के लिए स्पिन-मात्र आघूर्ण का अनुमान करें।"
+        },
+        "answer": {
+          "en": "√[3(3+2)]=√15≈3.87 BM.",
+          "hi": "√[3(3+2)]=√15≈3.87 BM।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Catalysts, alloys and interstitial compounds",
+        "hi": "उत्प्रेरक, मिश्रधातु और अंतराकाशी यौगिक"
+      },
+      "paragraphs": [
+        {
+          "en": "Transition metals and their compounds can catalyse reactions through variable oxidation states, surface adsorption and intermediate formation. Iron in ammonia synthesis and V2O5 in sulfuric-acid manufacture are standard examples, but a catalyst does not change equilibrium constant. Similar atomic sizes allow many transition metals to form substitutional alloys. Small atoms such as carbon, hydrogen and nitrogen may occupy interstitial spaces in metal lattices. Such compounds can be hard and have high melting points while retaining metallic conductivity. Their compositions may be non-stoichiometric; this is different from saying conservation laws fail.",
+          "hi": "संक्रमण धातु और उनके यौगिक उत्प्रेरक (Catalyst) के रूप में उपयोगी हैं। बदलती ऑक्सीकरण अवस्था, सतह पर अधिशोषण तथा मध्यवर्ती पदार्थ बनना कम सक्रियण ऊर्जा वाला मार्ग दे सकते हैं। अमोनिया निर्माण में लोहा और सल्फ्यूरिक अम्ल निर्माण की एक अवस्था में V2O5 प्रसिद्ध उदाहरण हैं। उत्प्रेरक साम्य स्थिरांक नहीं बदलता और उत्पाद की अनंत मात्रा नहीं बनाता; वह अग्र और पश्च दोनों की गति प्रभावित कर साम्य जल्दी प्राप्त करा सकता है। अनेक संक्रमण धातुओं की त्रिज्याएँ निकट होने से वे मिश्रधातु (Alloy) बना सकती हैं, जिनके गुण मूल धातुओं से भिन्न होते हैं। कार्बन, नाइट्रोजन या हाइड्रोजन जैसे छोटे परमाणु धातु जालक के खाली स्थानों में आकर अंतराकाशी यौगिक (Interstitial compound) बना सकते हैं। ऐसे पदार्थ कठोर, उच्च गलनांक वाले और फिर भी विद्युत चालक हो सकते हैं। कुछ की संरचना में संघटन अनुपात बदलता है; इसे द्रव्यमान संरक्षण का उल्लंघन न समझें। लोहे में कार्बन की भूमिका समझते समय धातु जालक, कार्बन की स्थिति और अंतिम पदार्थ के गुण अलग-अलग पहचानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A catalyst changes rate, not the equilibrium constant at fixed temperature.",
+          "hi": "निश्चित ताप पर उत्प्रेरक दर बदलता है, साम्य स्थिरांक नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can transition metals form many alloys?",
+          "hi": "संक्रमण धातुएँ अनेक मिश्रधातु क्यों बनाती हैं?"
+        },
+        "answer": {
+          "en": "Similar atomic sizes permit one metal atom to replace another in a lattice.",
+          "hi": "निकट परमाणु आकार के कारण जालक में एक धातु परमाणु दूसरी का स्थान ले सकता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Dichromate chemistry",
+        "hi": "डाइक्रोमेट का रसायन"
+      },
+      "paragraphs": [
+        {
+          "en": "Chromate and dichromate are Cr(VI) oxoanions whose balance depends on acidity. The reaction 2CrO4²−+2H+⇌Cr2O7²−+H2O explains the yellow-to-orange change on acidification. In acidic solution dichromate is reduced to Cr3+ by accepting 6 electrons per Cr2O7²−. Balance oxygen with water, hydrogen with H+ and charge with electrons. Cr(VI) compounds require controlled laboratory handling; colour observation alone is not a safe identification activity. Preparation from chromite involves oxidation to chromate, conversion to dichromate and the appropriate salt isolation.",
+          "hi": "क्रोमेट (Chromate) CrO4²− और डाइक्रोमेट (Dichromate) Cr2O7²− दोनों में क्रोमियम की ऑक्सीकरण अवस्था +6 है। पीले क्रोमेट विलयन को अम्लीय करने पर नारंगी डाइक्रोमेट की ओर साम्य खिसकता है। समीकरण 2CrO4²−+2H+⇌Cr2O7²−+H2O में परमाणु और आवेश दोनों संतुलित हैं। इस परिवर्तन में Cr की अवस्था नहीं बदलती, इसलिए इसे ऑक्सीकरण-अपचयन कहना गलत है। दूसरी ओर अम्लीय माध्यम में डाइक्रोमेट का Cr3+ में अपचयन वास्तविक इलेक्ट्रॉन अंतरण है। अर्ध-अभिक्रिया Cr2O7²−+14H++6e−→2Cr3++7H2O है। पहले Cr के 2 परमाणु रखें, फिर O के लिए जल, H के लिए H+ और अंत में आवेश के लिए इलेक्ट्रॉन जोड़ें। तैयारी में क्रोमाइट से क्षारीय ऑक्सीकरण द्वारा क्रोमेट, अम्लीकरण से डाइक्रोमेट तथा उपयुक्त लवण का पृथक्करण समझें। यह घरेलू प्रयोग नहीं है; क्रोमियम(VI) पदार्थों का उपयोग प्रशिक्षित पर्यवेक्षण और उचित प्रयोगशाला व्यवस्था में ही होता है। परीक्षा में अभिकर्मक, माध्यम और उत्पाद का रंग साथ लिखने से प्रक्रिया अधिक स्पष्ट बनती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Chromate–dichromate conversion changes aggregation and proton balance, not Cr oxidation state.",
+          "hi": "क्रोमेट–डाइक्रोमेट परिवर्तन में Cr की ऑक्सीकरण अवस्था नहीं बदलती।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many electrons does one dichromate ion accept in acid?",
+          "hi": "अम्ल में 1 डाइक्रोमेट आयन कितने इलेक्ट्रॉन ग्रहण करता है?"
+        },
+        "answer": {
+          "en": "6 electrons when both Cr(VI) centres become Cr(III).",
+          "hi": "दोनों Cr(VI) केंद्रों के Cr(III) बनने पर 6 इलेक्ट्रॉन।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Permanganate and reaction medium",
+        "hi": "परमैंगनेट और अभिक्रिया माध्यम"
+      },
+      "paragraphs": [
+        {
+          "en": "Permanganate contains Mn(VII), but its reduction product depends on medium. In acid MnO4−+8H++5e−→Mn2++4H2O; in neutral or weakly alkaline conditions MnO2 is a common reduction product. Strong alkaline conditions can support manganate MnO4²−. The electron requirement is therefore not a fixed number independent of medium. Oxidation of Fe2+ to Fe3+ releases one electron per iron, so acidic permanganate reacts with five Fe2+ per MnO4−. Preparation proceeds through manganate formed by oxidative alkaline fusion of manganese dioxide, followed by oxidation to permanganate.",
+          "hi": "परमैंगनेट (Permanganate) MnO4− में Mn की अवस्था +7 है, लेकिन अपचयन उत्पाद माध्यम पर निर्भर करता है। अम्लीय विलयन में MnO4−+8H++5e−→Mn2++4H2O होता है। उदासीन या कमजोर क्षारीय दशाओं में भूरा MnO2 बनना सामान्य है, जहाँ Mn +4 में होता है। प्रबल क्षारीय दशाओं में हरा मैंगनेट MnO4²− भी प्राप्त हो सकता है, जिसमें Mn +6 है। इसलिए हर प्रश्न में परमैंगनेट के लिए बिना माध्यम देखे 5 इलेक्ट्रॉन लिखना गलत है। Fe2+→Fe3++e− में प्रति आयन 1 इलेक्ट्रॉन निकलता है। अम्लीय परमैंगनेट के 1 आयन की आवश्यकता 5 Fe2+ पूरी करते हैं। पूरा संतुलित समीकरण MnO4−+8H++5Fe2+→Mn2++4H2O+5Fe3+ है। दोनों ओर कुल आवेश +17 आता है। तैयारी में MnO2 का क्षार और ऑक्सीकारक के साथ संगलन पहले मैंगनेट बनाता है, फिर उसका ऑक्सीकरण परमैंगनेट देता है। रंग परिवर्तन को इलेक्ट्रॉन लेखे से जोड़ें और ऑक्सीकारक पदार्थ को स्वयं ऑक्सीकृत मानने की गलती न करें; ऑक्सीकारक इलेक्ट्रॉन ग्रहण करके अपचयित होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Always state the medium before choosing a permanganate half-reaction.",
+          "hi": "परमैंगनेट अर्ध-अभिक्रिया चुनने से पहले माध्यम अवश्य लिखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why do 5 Fe2+ react with 1 MnO4− in acid?",
+          "hi": "अम्ल में 1 MnO4− के साथ 5 Fe2+ क्यों लगते हैं?"
+        },
+        "answer": {
+          "en": "Each Fe2+ gives 1 electron and permanganate requires 5.",
+          "hi": "प्रत्येक Fe2+ 1 इलेक्ट्रॉन देता है और परमैंगनेट को 5 चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Lanthanoids and actinoids",
+        "hi": "लैंथेनॉइड और ऐक्टिनॉइड"
+      },
+      "paragraphs": [
+        {
+          "en": "Lanthanoids involve 4f filling and commonly show +3 oxidation state. Their ionic radii generally decrease with atomic number because f electrons shield increasing nuclear charge poorly: lanthanoid contraction. It helps explain close sizes of some 4d and 5d pairs, such as Zr and Hf, and difficulties in separating lanthanoids. Actinoids involve 5f filling, are radioactive and show a wider range of oxidation states especially early in the series because 5f, 6d and 7s energies are comparable. The trends are general comparisons rather than a statement that every f-block ion has identical chemistry.",
+          "hi": "लैंथेनॉइड (Lanthanoid) श्रेणी में 4f उपकोश का भरना महत्वपूर्ण है और +3 ऑक्सीकरण अवस्था बहुत सामान्य है। परमाणु क्रमांक बढ़ने पर नाभिकीय आवेश बढ़ता है, पर 4f इलेक्ट्रॉन अच्छा परिरक्षण नहीं कर पाते। परिणामस्वरूप विशेषकर समान आवेश वाले आयनों की त्रिज्या सामान्यतः धीरे-धीरे घटती है। इसे लैंथेनॉइड आकुंचन (Lanthanoid contraction) कहते हैं। यह सभी आयनों का अचानक छोटा हो जाना नहीं, श्रेणी की क्रमिक प्रवृत्ति है। इससे Zr और Hf जैसी कुछ 4d तथा 5d धातुओं के आकार बहुत निकट हो जाते हैं और गुणों में समानता मिलती है। निकट आकार और समान +3 अवस्था के कारण लैंथेनॉइडों का पृथक्करण कठिन हो सकता है। ऐक्टिनॉइड (Actinoid) श्रेणी में 5f इलेक्ट्रॉन जुड़ते हैं; सभी सदस्य रेडियोधर्मी हैं। विशेषकर आरंभिक सदस्यों में 5f,6d,7s ऊर्जा निकट होने से अधिक विविध ऑक्सीकरण अवस्थाएँ मिलती हैं। तुलना में विन्यास, रेडियोधर्मिता, अवस्थाएँ और आकुंचन को अलग शीर्षकों में लिखें। केवल दोनों को आंतरिक संक्रमण तत्व कह देने से उनका महत्वपूर्ण अंतर स्पष्ट नहीं होता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Poor f-electron shielding explains a gradual size contraction.",
+          "hi": "f इलेक्ट्रॉनों का कमजोर परिरक्षण क्रमिक आकार आकुंचन समझाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why are Zr and Hf unusually similar in size?",
+          "hi": "Zr और Hf के आकार विशेष रूप से निकट क्यों हैं?"
+        },
+        "answer": {
+          "en": "Lanthanoid contraction offsets the expected size increase before Hf.",
+          "hi": "Hf से पहले का लैंथेनॉइड आकुंचन अपेक्षित आकार वृद्धि को काफी घटाता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "μ=√[n(n+2)] BM",
+      "meaning": {
+        "en": "Spin-only magnetic moment; n is unpaired-electron count.",
+        "hi": "स्पिन-मात्र चुंबकीय आघूर्ण; n अयुग्मित इलेक्ट्रॉन संख्या।"
+      },
+      "units": {
+        "en": "Bohr magneton (BM); orbital contribution neglected.",
+        "hi": "बोर मैग्नेटॉन (BM); कक्षकीय योगदान उपेक्षित।"
+      }
+    },
+    {
+      "expression": "Σ oxidation numbers = total charge",
+      "meaning": {
+        "en": "Formal oxidation-number bookkeeping.",
+        "hi": "औपचारिक ऑक्सीकरण संख्या का लेखा।"
+      },
+      "units": {
+        "en": "Dimensionless signed numbers.",
+        "hi": "चिह्न वाली विमाहीन संख्याएँ।"
+      }
+    },
+    {
+      "expression": "MnO4−+8H++5e−→Mn2++4H2O",
+      "meaning": {
+        "en": "Acidic permanganate reduction half-reaction.",
+        "hi": "अम्लीय परमैंगनेट की अपचयन अर्ध-अभिक्रिया।"
+      },
+      "units": {
+        "en": "Coefficients count particles or molar ratios.",
+        "hi": "गुणांक कण या मोल अनुपात बताते हैं।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find Mn oxidation state in KMnO4.",
+        "hi": "KMnO4 में Mn की अवस्था निकालें।"
+      },
+      "given": {
+        "en": "K=+1,O=−2; neutral formula.",
+        "hi": "K=+1,O=−2; उदासीन सूत्र।"
+      },
+      "find": {
+        "en": "Mn oxidation state.",
+        "hi": "Mn की ऑक्सीकरण अवस्था।"
+      },
+      "formula": {
+        "en": "Sum of oxidation numbers = 0.",
+        "hi": "ऑक्सीकरण संख्याओं का योग = 0।"
+      },
+      "steps": [
+        {
+          "en": "Write 1+x+4(−2)=0.",
+          "hi": "1+x+4(−2)=0 लिखें।"
+        },
+        {
+          "en": "x−7=0.",
+          "hi": "x−7=0।"
+        }
+      ],
+      "answer": {
+        "en": "+7.",
+        "hi": "+7।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Write Fe3+ d configuration from Fe, Z=26.",
+        "hi": "Fe,Z=26 से Fe3+ का d विन्यास लिखें।"
+      },
+      "given": {
+        "en": "Fe=[Ar]3d6 4s2.",
+        "hi": "Fe=[Ar]3d6 4s2।"
+      },
+      "find": {
+        "en": "d-electron count.",
+        "hi": "d इलेक्ट्रॉन संख्या।"
+      },
+      "formula": {
+        "en": "Remove 4s before 3d.",
+        "hi": "3d से पहले 4s हटाएँ।"
+      },
+      "steps": [
+        {
+          "en": "Remove two 4s electrons to make Fe2+.",
+          "hi": "2 4s इलेक्ट्रॉन हटाकर Fe2+ बनता है।"
+        },
+        {
+          "en": "Remove one 3d electron for Fe3+.",
+          "hi": "Fe3+ के लिए 1 3d इलेक्ट्रॉन और हटाएँ।"
+        }
+      ],
+      "answer": {
+        "en": "[Ar]3d5; 5 d electrons.",
+        "hi": "[Ar]3d5;5 d इलेक्ट्रॉन।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Estimate μ for a high-spin d5 ion.",
+        "hi": "उच्च स्पिन d5 आयन के लिए μ का अनुमान करें।"
+      },
+      "given": {
+        "en": "Five singly occupied d orbitals; spin-only approximation.",
+        "hi": "5 एकल-भरे d कक्षक; स्पिन-मात्र सन्निकटन।"
+      },
+      "find": {
+        "en": "Magnetic moment.",
+        "hi": "चुंबकीय आघूर्ण।"
+      },
+      "formula": {
+        "en": "μ=√[n(n+2)] BM.",
+        "hi": "μ=√[n(n+2)] BM।"
+      },
+      "steps": [
+        {
+          "en": "High-spin d5 gives n=5.",
+          "hi": "उच्च स्पिन d5 से n=5।"
+        },
+        {
+          "en": "μ=√(5×7)=√35.",
+          "hi": "μ=√(5×7)=√35।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately 5.92 BM.",
+        "hi": "लगभग 5.92 BM।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "How many moles of Fe2+ are oxidised by 0.020 mol acidic permanganate?",
+        "hi": "0.020 mol अम्लीय परमैंगनेट कितने mol Fe2+ ऑक्सीकृत करेगा?"
+      },
+      "given": {
+        "en": "1 MnO4− accepts 5 electrons; 1 Fe2+ supplies 1.",
+        "hi": "1 MnO4− 5 इलेक्ट्रॉन ग्रहण करता;1 Fe2+ 1 देता है।"
+      },
+      "find": {
+        "en": "Fe2+ amount.",
+        "hi": "Fe2+ की मात्रा।"
+      },
+      "formula": {
+        "en": "n(Fe2+)=5 n(MnO4−).",
+        "hi": "n(Fe2+)=5 n(MnO4−)।"
+      },
+      "steps": [
+        {
+          "en": "Use electron balance to obtain ratio 5:1.",
+          "hi": "इलेक्ट्रॉन संतुलन से 5:1 अनुपात लें।"
+        },
+        {
+          "en": "5×0.020=0.100 mol.",
+          "hi": "5×0.020=0.100 mol।"
+        }
+      ],
+      "answer": {
+        "en": "0.100 mol Fe2+.",
+        "hi": "0.100 mol Fe2+।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Balance acidic dichromate oxidation of Fe2+.",
+        "hi": "अम्लीय डाइक्रोमेट द्वारा Fe2+ ऑक्सीकरण संतुलित करें।"
+      },
+      "given": {
+        "en": "Cr2O7²− becomes Cr3+; Fe2+ becomes Fe3+.",
+        "hi": "Cr2O7²− से Cr3+;Fe2+ से Fe3+।"
+      },
+      "find": {
+        "en": "Balanced ionic equation.",
+        "hi": "संतुलित आयनिक समीकरण।"
+      },
+      "formula": {
+        "en": "Equal electron gain and loss.",
+        "hi": "इलेक्ट्रॉन ग्रहण और त्याग बराबर।"
+      },
+      "steps": [
+        {
+          "en": "Cr2O7²−+14H++6e−→2Cr3++7H2O.",
+          "hi": "Cr2O7²−+14H++6e−→2Cr3++7H2O।"
+        },
+        {
+          "en": "Multiply Fe2+→Fe3++e− by 6 and add.",
+          "hi": "Fe2+→Fe3++e− को 6 से गुणा करके जोड़ें।"
+        },
+        {
+          "en": "Both sides have 2 Cr,7 O,14 H,6 Fe and charge +24.",
+          "hi": "दोनों ओर 2 Cr,7 O,14 H,6 Fe और आवेश +24 है।"
+        }
+      ],
+      "answer": {
+        "en": "Cr2O7²−+14H++6Fe2+→2Cr3++7H2O+6Fe3+.",
+        "hi": "Cr2O7²−+14H++6Fe2+→2Cr3++7H2O+6Fe3+।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which is not a typical transition element?",
+        "hi": "कौन सामान्य संक्रमण तत्व नहीं है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zn",
+            "hi": "Zn"
+          },
+          "reason": {
+            "en": "Its atom and common Zn2+ ion have d10 configurations.",
+            "hi": "परमाणु और सामान्य Zn2+ में d10 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Fe",
+            "hi": "Fe"
+          },
+          "reason": {
+            "en": "Iron has incomplete d subshells in its atom and common ions.",
+            "hi": "Fe परमाणु और सामान्य आयनों में d उपकोश अपूर्ण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mn",
+            "hi": "Mn"
+          },
+          "reason": {
+            "en": "Manganese has partially filled d orbitals.",
+            "hi": "Mn में d कक्षक आंशिक भरे हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cr",
+            "hi": "Cr"
+          },
+          "reason": {
+            "en": "Chromium has a partially filled d subshell.",
+            "hi": "Cr का d उपकोश आंशिक भरा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which electrons leave Fe first during cation formation?",
+        "hi": "Fe से धनायन बनते समय कौन पहले निकलते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4s",
+            "hi": "4s"
+          },
+          "reason": {
+            "en": "4s electrons are removed before 3d in these cations.",
+            "hi": "इन धनायनों में 3d से पहले 4s निकलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3d",
+            "hi": "3d"
+          },
+          "reason": {
+            "en": "This incorrectly treats filling order as removal order.",
+            "hi": "यह भरने के क्रम को हटने का क्रम मानता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3p",
+            "hi": "3p"
+          },
+          "reason": {
+            "en": "Core 3p electrons are not removed for the usual Fe ions.",
+            "hi": "सामान्य Fe आयनों में भीतरी 3p नहीं हटते।"
+          }
+        },
+        {
+          "text": {
+            "en": "All shells equally",
+            "hi": "सभी कोश समान"
+          },
+          "reason": {
+            "en": "Ion formation does not remove electrons uniformly from all shells.",
+            "hi": "सभी कोशों से समान इलेक्ट्रॉन नहीं निकलते।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The d count of Cu2+ is",
+        "hi": "Cu2+ में d इलेक्ट्रॉन संख्या है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "9",
+            "hi": "9"
+          },
+          "reason": {
+            "en": "Cu loses 4s1 and one 3d electron, giving d9.",
+            "hi": "Cu से 4s1 और 1 3d हटकर d9 बनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10",
+            "hi": "10"
+          },
+          "reason": {
+            "en": "d10 applies to Cu+, not Cu2+.",
+            "hi": "d10,Cu+ के लिए है।"
+          }
+        },
+        {
+          "text": {
+            "en": "8",
+            "hi": "8"
+          },
+          "reason": {
+            "en": "One too many d electrons has been removed.",
+            "hi": "1 d इलेक्ट्रॉन अतिरिक्त हटा दिया गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "The 4s occupation of neutral Cu is not the ion d count.",
+            "hi": "तटस्थ Cu का 4s भराव आयन की d संख्या नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Mn oxidation state in MnO4− is",
+        "hi": "MnO4− में Mn की अवस्था है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "+7",
+            "hi": "+7"
+          },
+          "reason": {
+            "en": "x−8=−1 gives +7.",
+            "hi": "x−8=−1 से +7।"
+          }
+        },
+        {
+          "text": {
+            "en": "+6",
+            "hi": "+6"
+          },
+          "reason": {
+            "en": "+6 occurs in manganate MnO4²−.",
+            "hi": "+6 मैंगनेट MnO4²− में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "+2",
+            "hi": "+2"
+          },
+          "reason": {
+            "en": "+2 is an acidic reduction product, not the starting ion.",
+            "hi": "+2 अम्लीय अपचयन उत्पाद की अवस्था है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "−1 is total ion charge, not Mn oxidation state.",
+            "hi": "−1 पूरे आयन का आवेश है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which produces paramagnetism in the elementary model?",
+        "hi": "सरल मॉडल में अनुचुंबकत्व किससे मिलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Unpaired electrons",
+            "hi": "अयुग्मित इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "Their magnetic moments need not cancel.",
+            "hi": "उनके चुंबकीय आघूर्ण पूर्णतः निरस्त नहीं होते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only paired electrons",
+            "hi": "केवल युग्मित इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "Paired spins cancel in the elementary description.",
+            "hi": "सरल वर्णन में युग्मित स्पिन निरस्त होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A high atomic mass alone",
+            "hi": "केवल अधिक परमाणु द्रव्यमान"
+          },
+          "reason": {
+            "en": "Mass alone does not determine electron pairing.",
+            "hi": "द्रव्यमान से इलेक्ट्रॉन युग्मन तय नहीं होता।"
+          }
+        },
+        {
+          "text": {
+            "en": "A colourless appearance",
+            "hi": "रंगहीन दिखना"
+          },
+          "reason": {
+            "en": "Colour and magnetic behaviour are related to different observations.",
+            "hi": "रंग और चुंबकत्व अलग प्रेक्षण हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For n=2, the spin-only moment is closest to",
+        "hi": "n=2 पर स्पिन-मात्र आघूर्ण लगभग है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2.83 BM",
+            "hi": "2.83 BM"
+          },
+          "reason": {
+            "en": "√[2(2+2)]=√8≈2.83.",
+            "hi": "√[2(2+2)]=√8≈2.83।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 BM",
+            "hi": "2 BM"
+          },
+          "reason": {
+            "en": "The formula is not simply n.",
+            "hi": "सूत्र केवल n नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4 BM",
+            "hi": "4 BM"
+          },
+          "reason": {
+            "en": "n+2 is a factor, not the final moment.",
+            "hi": "n+2 गुणक है, अंतिम आघूर्ण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 BM",
+            "hi": "0 BM"
+          },
+          "reason": {
+            "en": "n=2 means unpaired electrons remain.",
+            "hi": "n=2 में अयुग्मित इलेक्ट्रॉन हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Acidification changes chromate mainly towards",
+        "hi": "अम्लीकरण से क्रोमेट मुख्यतः किस ओर जाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Dichromate",
+            "hi": "डाइक्रोमेट"
+          },
+          "reason": {
+            "en": "H+ favours the dichromate side of the balanced equilibrium.",
+            "hi": "H+ संतुलित साम्य के डाइक्रोमेट पक्ष को बढ़ाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Metallic Cr",
+            "hi": "धातु Cr"
+          },
+          "reason": {
+            "en": "Acidification alone is not a six-electron metal reduction.",
+            "hi": "केवल अम्लीकरण धातु में अपचयन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cr with oxidation state +7",
+            "hi": "+7 अवस्था का Cr"
+          },
+          "reason": {
+            "en": "Cr remains +6 in chromate and dichromate.",
+            "hi": "दोनों में Cr +6 रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No chemical equilibrium change",
+            "hi": "साम्य में कोई बदलाव नहीं"
+          },
+          "reason": {
+            "en": "H+ directly participates in this equilibrium.",
+            "hi": "H+ साम्य में सीधे भाग लेता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In acidic reduction to Mn2+, one MnO4− accepts",
+        "hi": "अम्ल में Mn2+ बनने पर 1 MnO4− ग्रहण करता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5 electrons",
+            "hi": "5 इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "Mn changes from +7 to +2.",
+            "hi": "Mn +7 से +2 होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3 electrons",
+            "hi": "3 इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "Three electrons correspond to reduction from +7 to +4.",
+            "hi": "3 इलेक्ट्रॉन +7 से +4 के लिए हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1 electron",
+            "hi": "1 इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "One electron would give Mn(VI).",
+            "hi": "1 इलेक्ट्रॉन से Mn(VI) होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "7 electrons",
+            "hi": "7 इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "That would reduce +7 to zero, not +2.",
+            "hi": "इससे +7 से 0 होगा,+2 नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Lanthanoid contraction is mainly due to",
+        "hi": "लैंथेनॉइड आकुंचन का मुख्य कारण है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Poor shielding by 4f electrons",
+            "hi": "4f इलेक्ट्रॉनों का कमजोर परिरक्षण"
+          },
+          "reason": {
+            "en": "Increasing nuclear charge is inadequately screened.",
+            "hi": "बढ़ता नाभिकीय आवेश पर्याप्त परिरक्षित नहीं होता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Loss of protons",
+            "hi": "प्रोटॉन घटना"
+          },
+          "reason": {
+            "en": "Proton number increases across the series.",
+            "hi": "श्रेणी में प्रोटॉन संख्या बढ़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Perfect shielding by 4f electrons",
+            "hi": "4f का पूर्ण परिरक्षण"
+          },
+          "reason": {
+            "en": "Perfect shielding would oppose the stated explanation.",
+            "hi": "पूर्ण परिरक्षण इस कारण के विपरीत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All ions changing to charge zero",
+            "hi": "सभी आयनों का आवेश 0"
+          },
+          "reason": {
+            "en": "The trend is compared for appropriate fixed ionic charges.",
+            "hi": "प्रवृत्ति उपयुक्त समान आयनिक आवेश पर देखी जाती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A catalyst at fixed temperature changes",
+        "hi": "निश्चित ताप पर उत्प्रेरक बदलता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The rate through a different pathway",
+            "hi": "भिन्न मार्ग से अभिक्रिया दर"
+          },
+          "reason": {
+            "en": "A lower-barrier path can accelerate both directions.",
+            "hi": "कम अवरोध वाला मार्ग दोनों दिशाएँ तेज कर सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The equilibrium constant",
+            "hi": "साम्य स्थिरांक"
+          },
+          "reason": {
+            "en": "The constant depends on temperature, not catalyst addition.",
+            "hi": "स्थिरांक ताप पर निर्भर है,उत्प्रेरक जोड़ने पर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The atom balance",
+            "hi": "परमाणु संतुलन"
+          },
+          "reason": {
+            "en": "Conservation of atoms still applies.",
+            "hi": "परमाणु संरक्षण बना रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The total mass into nothing",
+            "hi": "कुल द्रव्यमान को शून्य"
+          },
+          "reason": {
+            "en": "A catalyst does not destroy matter.",
+            "hi": "उत्प्रेरक पदार्थ नष्ट नहीं करता।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish a d-block element from a transition element.",
+        "hi": "d-ब्लॉक और संक्रमण तत्व में अंतर करें।"
+      },
+      "answer": {
+        "en": "d-block refers to periodic-table position; a transition element must have a partially filled d subshell in its atom or an oxidation-state ion. Zn is a useful distinction.",
+        "hi": "d-ब्लॉक स्थान बताता है; संक्रमण तत्व के परमाणु या ऑक्सीकरण-अवस्था आयन में अपूर्ण d उपकोश चाहिए। Zn से अंतर स्पष्ट होता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why a coloured d0 compound is possible.",
+        "hi": "रंगीन d0 यौगिक कैसे संभव है?"
+      },
+      "answer": {
+        "en": "A d0 centre has no simple d–d transition, but charge-transfer absorption may colour the compound, as in permanganate.",
+        "hi": "d0 केंद्र में साधारण d–d संक्रमण नहीं,पर आवेश अंतरण अवशोषण रंग दे सकता है,जैसे परमैंगनेट।"
+      }
+    },
+    {
+      "question": {
+        "en": "Write and interpret the acidic permanganate half-reaction.",
+        "hi": "अम्लीय परमैंगनेट अर्ध-अभिक्रिया लिखकर समझाएँ।"
+      },
+      "answer": {
+        "en": "MnO4−+8H++5e−→Mn2++4H2O; Mn(VII) accepts 5 electrons to become Mn(II).",
+        "hi": "MnO4−+8H++5e−→Mn2++4H2O;Mn(VII),5 इलेक्ट्रॉन ग्रहण कर Mn(II) बनता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are alloys common among transition metals?",
+        "hi": "संक्रमण धातुओं में मिश्रधातु सामान्य क्यों हैं?"
+      },
+      "answer": {
+        "en": "Comparable atomic sizes permit substitution within metallic lattices, allowing changes in hardness and other properties.",
+        "hi": "निकट परमाणु आकार धातु जालक में प्रतिस्थापन देते हैं;कठोरता जैसे गुण बदलते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give two consequences of lanthanoid contraction.",
+        "hi": "लैंथेनॉइड आकुंचन के 2 परिणाम दें।"
+      },
+      "answer": {
+        "en": "Lanthanoid ions have closely similar sizes and chemistry, complicating separation; corresponding 4d/5d pairs such as Zr/Hf can have very similar radii.",
+        "hi": "लैंथेनॉइड आयनों के निकट आकार-गुण पृथक्करण कठिन करते हैं;Zr/Hf जैसे 4d/5d युग्मों की त्रिज्या बहुत निकट हो सकती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare lanthanoids and actinoids.",
+        "hi": "लैंथेनॉइड और ऐक्टिनॉइड की तुलना करें।"
+      },
+      "answer": {
+        "en": "They involve 4f and 5f filling respectively. Lanthanoids commonly show +3; early actinoids show wider oxidation-state variability and all actinoids are radioactive.",
+        "hi": "क्रमशः4f और5f भरते हैं।लैंथेनॉइड में+3 सामान्य;आरंभिक ऐक्टिनॉइड में अधिक विविध अवस्थाएँ तथा सभी ऐक्टिनॉइड रेडियोधर्मी हैं।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Start with atom and ion configurations.",
+      "hi": "पहले परमाणु और आयन के विन्यास लिखें।"
+    },
+    {
+      "en": "Oxidation states depend on environment.",
+      "hi": "ऑक्सीकरण अवस्था की स्थिरता परिवेश पर निर्भर है।"
+    },
+    {
+      "en": "Unpaired electrons support paramagnetism.",
+      "hi": "अयुग्मित इलेक्ट्रॉन अनुचुंबकत्व देते हैं।"
+    },
+    {
+      "en": "Balance redox reactions with medium stated.",
+      "hi": "माध्यम लिखकर रेडॉक्स अभिक्रिया संतुलित करें।"
+    },
+    {
+      "en": "Poor f shielding causes contraction.",
+      "hi": "कमजोर f परिरक्षण आकुंचन देता है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not remove 3d before 4s, infer every colour from d–d transitions, or use permanganate electron counts without stating medium.",
+    "hi": "4s से पहले3d न हटाएँ;हर रंग को d–d संक्रमण न मानें;माध्यम बिना परमैंगनेट का इलेक्ट्रॉन लेखा न चुनें।"
+  },
+  "goal": {
+    "en": "Relate electron configuration to transition-metal trends and balanced redox chemistry.",
+    "hi": "इलेक्ट्रॉनिक विन्यास से संक्रमण धातु की प्रवृत्तियाँ और संतुलित रेडॉक्स रसायन जोड़ें।"
+  },
+  "conceptMap": "विन्यास → d संख्या → ऑक्सीकरण अवस्थाएँ → रंग और चुंबकत्व → उत्प्रेरक → Cr/Mn रेडॉक्स → f-ब्लॉक आकुंचन",
+  "conceptMapEn": "Configurations → d counts → oxidation states → colour and magnetism → catalysts → Cr/Mn redox → f-block contraction",
+  "editionBasis": {
+    "en": "Original study explanations for NCERT Chemistry Class XII and UP Board 2026–27. Use the prescribed textbook and school practicals alongside.",
+    "hi": "NCERT रसायन विज्ञान कक्षा 12 तथा यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "UPMSP Class 12 Chemistry 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/152-Chemistry-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Chemistry Class XII Chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/lech104.pdf"
+    }
+  ]
+}

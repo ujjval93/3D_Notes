@@ -1,0 +1,894 @@
+{
+  "id": 7,
+  "title": {
+    "en": "Coordinate Geometry",
+    "hi": "निर्देशांक ज्यामिति"
+  },
+  "goal": {
+    "en": "Calculate distances and internal division points, and explain how coordinates describe geometry.",
+    "hi": "दूरी तथा आंतरिक विभाजन बिंदु निकालें और निर्देशांकों से ज्यामिति का अर्थ समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Coordinates describe a position",
+        "hi": "निर्देशांक किसी स्थिति को बताते हैं"
+      },
+      "body": {
+        "en": "A point in a plane is represented by an ordered pair (x,y). The first number measures horizontal displacement from the y-axis, and the second measures vertical displacement from the x-axis. The sign tells direction, not the length of a segment. Thus (−3,2) lies 3 units to the left of the y-axis and 2 units above the x-axis. Reversing the order usually creates a different point. A point on the x-axis has y=0; one on the y-axis has x=0; the origin has both coordinates zero. Coordinate geometry links algebra to shapes: relationships between positions can be tested with equations rather than judged only by a drawing. Use one consistent unit scale on each axis when a diagram represents ordinary Euclidean distances. An app may fit the drawing to its panel; the numerical coordinates, not the apparent screen centimetres, define the mathematical lengths. Label the axes and the chosen points before substituting into a formula. The coordinate pair has a role different from a side length or a ratio.",
+        "hi": "समतल में किसी बिंदु को क्रमित युग्म (Ordered pair) (x,y) से बताते हैं। पहली संख्या y-अक्ष से क्षैतिज विस्थापन और दूसरी x-अक्ष से ऊर्ध्वाधर विस्थापन बताती है। चिह्न दिशा बताता है, रेखाखंड की ऋणात्मक लंबाई नहीं। इसलिए (−3,2), y-अक्ष के 3 इकाई बाएँ और x-अक्ष के 2 इकाई ऊपर है। क्रम बदलने पर सामान्यतः दूसरा बिंदु बनता है। x-अक्ष पर y=0, y-अक्ष पर x=0 और मूलबिंदु पर दोनों निर्देशांक 0 होते हैं। निर्देशांक ज्यामिति (Coordinate geometry) बीजगणित को आकृतियों से जोड़ती है। संबंध केवल चित्र देखकर नहीं, समीकरण से भी जाँचे जा सकते हैं। साधारण दूरी दर्शाने वाले चित्र में दोनों अक्षों पर संगत इकाई पैमाना रखें। ऐप चित्र को पैनल में फिट कर सकता है; वास्तविक गणितीय दूरी निर्देशांकों से तय होगी, स्क्रीन पर दिखते सेंटीमीटर से नहीं। सूत्र में संख्या रखने से पहले अक्ष और बिंदुओं के नाम लिखें। निर्देशांक युग्म, भुजा की लंबाई और अनुपात अलग प्रकार की जानकारी हैं; इन्हें एक ही वस्तु न मानें।"
+      },
+      "formula": "P=(x,y); on x-axis: y=0; on y-axis: x=0",
+      "question": {
+        "en": "Where does (0,−5) lie?",
+        "hi": "(0,−5) कहाँ स्थित है?"
+      },
+      "answer": {
+        "en": "On the negative y-axis, 5 units from the origin.",
+        "hi": "ऋणात्मक y-अक्ष पर, मूलबिंदु से 5 इकाई दूर।"
+      }
+    },
+    {
+      "title": {
+        "en": "Deriving the distance formula",
+        "hi": "दूरी सूत्र की व्युत्पत्ति"
+      },
+      "body": {
+        "en": "Let A=(x_1,y_1) and B=(x_2,y_2). Draw horizontal and vertical segments to form a right triangle whose hypotenuse is AB. Its horizontal leg has length |x_2−x_1| and its vertical leg has length |y_2−y_1|. Pythagoras gives AB²=(x_2−x_1)²+(y_2−y_1)². Taking the nonnegative square root yields the distance formula. The absolute-value signs are unnecessary inside the squares, since squaring removes the sign, but the final distance cannot be negative. If A=(1,2) and B=(5,5), the differences are 4 and 3, so AB=√(16+9)=5 units. Interchanging A and B reverses both differences without changing their squares, which explains why distance is symmetric. Keep the square root until simplification is possible; √50=5√2 is an exact answer, while 7.071 is approximate. This derivation also explains why simply adding the coordinate differences generally gives the wrong straight-line distance. That addition follows a rectangular route rather than the direct segment.",
+        "hi": "A=(x_1,y_1) और B=(x_2,y_2) लें। क्षैतिज और ऊर्ध्वाधर रेखाखंड बनाकर ऐसा समकोण त्रिभुज बनाएँ जिसका कर्ण AB हो। क्षैतिज भुजा की लंबाई |x_2−x_1| और ऊर्ध्वाधर भुजा की लंबाई |y_2−y_1| होगी। पाइथागोरस से AB²=(x_2−x_1)²+(y_2−y_1)² मिलता है। दोनों ओर अऋणात्मक वर्गमूल लेने पर दूरी सूत्र मिलता है। वर्ग के भीतर निरपेक्ष मान लिखना जरूरी नहीं, क्योंकि वर्ग चिह्न हटा देता है; लेकिन अंतिम दूरी ऋणात्मक नहीं हो सकती। A=(1,2), B=(5,5) में अंतर 4 और 3 हैं, अतः AB=√(16+9)=5 इकाई। बिंदुओं का क्रम उलटने पर दोनों अंतर के चिह्न बदलते हैं, पर वर्ग नहीं बदलते। इसलिए AB और BA की दूरियाँ समान हैं। जहाँ संभव हो सही करणी रूप रखें। √50=5√2 सटीक है, जबकि 7.071 सन्निकट है। केवल दोनों निर्देशांक अंतर जोड़ना सीधी दूरी नहीं देता; वह क्षैतिज और ऊर्ध्वाधर रास्तों की संयुक्त लंबाई बताता है।"
+      },
+      "formula": "AB = √[(x_2−x_1)²+(y_2−y_1)²]",
+      "question": {
+        "en": "Find the distance from (2,1) to (5,5).",
+        "hi": "(2,1) और (5,5) की दूरी खोजें।"
+      },
+      "answer": {
+        "en": "√(3²+4²)=5 units.",
+        "hi": "√(3²+4²)=5 इकाई।"
+      }
+    },
+    {
+      "title": {
+        "en": "Special cases and useful distance checks",
+        "hi": "विशेष स्थितियाँ और दूरी की जाँच"
+      },
+      "body": {
+        "en": "When two points have the same y-coordinate, the segment is horizontal and its length is |x_2−x_1|. With equal x-coordinates, its length is |y_2−y_1|. The general formula already includes both cases; no separate rule contradicts it. The distance from the origin to (x,y) is √(x²+y²). Two identical points have distance zero, and distinct points have positive distance. These statements provide quick checks on an answer. For example, the distance between (−4,0) and (3,0) is 7, not 1, because the segment crosses the origin. In a general problem, compute signed differences carefully before squaring: 3−(−4)=7. A distance cannot be smaller than the magnitude of either its horizontal or vertical component. If your result violates that bound, check the subtraction or square root. Squared distances are often enough when comparing lengths, avoiding unnecessary radical calculations. However, a question asking for a length still needs the final square root and a unit. Do not report squared units for the segment length.",
+        "hi": "दोनों बिंदुओं के y-निर्देशांक समान हों, तो रेखाखंड क्षैतिज है और दूरी |x_2−x_1| होगी। दोनों के x समान हों, तो दूरी |y_2−y_1| होगी। सामान्य दूरी सूत्र में दोनों स्थितियाँ पहले से शामिल हैं। मूलबिंदु से (x,y) की दूरी √(x²+y²) है। एक ही बिंदु से उसकी दूरी 0 और अलग बिंदुओं की दूरी धनात्मक होती है। उत्तर की जल्दी जाँच के लिए इन बातों का उपयोग करें। (−4,0) से (3,0) की दूरी 7 है, 1 नहीं, क्योंकि रेखाखंड मूलबिंदु के आर-पार जाता है। ऋणात्मक संख्या घटाते समय कोष्ठक रखें: 3−(−4)=7। सीधी दूरी, उसके क्षैतिज या ऊर्ध्वाधर अंतर के परिमाण से छोटी नहीं हो सकती। ऐसा उत्तर आए, तो घटाव और वर्गमूल की जाँच करें। लंबाइयों की तुलना में कई बार वर्ग दूरियाँ ही पर्याप्त होती हैं; अनावश्यक करणी निकालना जरूरी नहीं है। लेकिन लंबाई माँगी गई हो, तो अंतिम वर्गमूल और इकाई अवश्य लिखें। लंबाई के उत्तर में वर्ग इकाई नहीं लगती; वर्ग दूरी अलग मात्रा है।"
+      },
+      "formula": "OA=√(x²+y²); AB²≥(x_2−x_1)²",
+      "question": {
+        "en": "Find the distance between (−2,4) and (5,4).",
+        "hi": "(−2,4) और (5,4) की दूरी खोजें।"
+      },
+      "answer": {
+        "en": "They have equal y, so distance is |5−(−2)|=7 units.",
+        "hi": "दोनों के y समान हैं; दूरी |5−(−2)|=7 इकाई।"
+      }
+    },
+    {
+      "title": {
+        "en": "Internal division as a weighted position",
+        "hi": "आंतरिक विभाजन एक भारित स्थिति है"
+      },
+      "body": {
+        "en": "Suppose P lies between A=(x_1,y_1) and B=(x_2,y_2), with AP:PB=m:n for positive m,n. The fraction of the whole journey from A to B completed at P is m/(m+n). Therefore P=A+[m/(m+n)](B−A). Applying this separately to horizontal and vertical coordinates gives P=((mx_2+nx_1)/(m+n),(my_2+ny_1)/(m+n)). Notice that A receives the weight n and B receives m. This is not a reversal error: a larger AP compared with PB places P closer to B. For AP:PB=2:1, P is two thirds of the way from A to B. If A=(0,0), B=(9,6), then P=(6,4). The same fraction must be applied to both coordinates; otherwise the resulting point usually leaves the segment. Positive weights keep an internal division point between the corresponding endpoint coordinates. The formula remains valid for horizontal or vertical segments. Equal endpoints do not define a nonzero segment with a meaningful positive length ratio, so distinguish that degenerate case from ordinary internal division.",
+        "hi": "मानें P, A=(x_1,y_1) और B=(x_2,y_2) के बीच है तथा AP:PB=m:n है, जहाँ m,n धनात्मक हैं। A से B की पूरी यात्रा का m/(m+n) भाग चलने पर P मिलेगा। इसलिए P=A+[m/(m+n)](B−A) लिख सकते हैं। क्षैतिज और ऊर्ध्वाधर निर्देशांकों पर यही नियम लगाने से P=((mx_2+nx_1)/(m+n),(my_2+ny_1)/(m+n)) मिलता है। ध्यान दें कि A का भार n और B का भार m है। यह गलती से उलटना नहीं है। AP बड़ा होने पर P, B के अधिक पास होगा। AP:PB=2:1 होने पर P, A से B की ओर दो-तिहाई दूरी पर है। A=(0,0), B=(9,6) हों, तो P=(6,4)। दोनों निर्देशांकों पर एक ही भिन्न लगाना जरूरी है। अलग-अलग भिन्न लगाने से बिंदु सामान्यतः रेखाखंड से हट जाएगा। धनात्मक भार आंतरिक बिंदु के निर्देशांक सिरों के संगत निर्देशांकों के बीच रखते हैं। क्षैतिज और ऊर्ध्वाधर रेखाखंडों में भी सूत्र सही है। एक जैसे सिरों पर शून्य लंबाई बनती है; वहाँ सामान्य धनात्मक लंबाई अनुपात का अर्थ अलग से सोचना होगा।"
+      },
+      "formula": "AP:PB=m:n ⇒ P=((mx_2+nx_1)/(m+n),(my_2+ny_1)/(m+n))",
+      "question": {
+        "en": "Where does the 2:1 internal point lie from A=(0,0) to B=(12,3)?",
+        "hi": "A=(0,0), B=(12,3) का 2:1 आंतरिक बिंदु कहाँ है?"
+      },
+      "answer": {
+        "en": "P=(8,2), two thirds of the way from A.",
+        "hi": "P=(8,2), A से दो-तिहाई रास्ते पर।"
+      }
+    },
+    {
+      "title": {
+        "en": "Reading and recovering a division ratio",
+        "hi": "विभाजन अनुपात पढ़ना और निकालना"
+      },
+      "body": {
+        "en": "The ratio AP:PB must be tied to the endpoint order in the question. If A and B are swapped, the same point has the reciprocal ratio BP:PA=n:m. For an unknown ratio, first check that the proposed point is on the segment. One method is to find t from P=A+t(B−A), using any coordinate whose endpoint values differ, and verify the same t with the other coordinate. For internal division 0<t<1, and AP:PB=t:(1−t). If A=(1,2), B=(7,8) and P=(3,4), then t=(3−1)/(7−1)=1/3; the y-coordinate also gives 1/3, so AP:PB=1:2. If the horizontal and vertical values of t disagree, P is not on AB and no internal ratio applies. A matching x-coordinate alone is not enough. Some textbook questions put an unknown coordinate into the section formula; solve the resulting equation, then check the full point. This avoids treating a convenient algebraic value as valid without testing the geometric condition.",
+        "hi": "AP:PB का अनुपात प्रश्न में दिए सिरों के क्रम से जुड़ा है। A और B बदलने पर उसी बिंदु का अनुपात BP:PA=n:m होगा। अज्ञात अनुपात निकालने से पहले जाँचें कि दिया P वास्तव में रेखाखंड पर है। P=A+t(B−A) में उस निर्देशांक से t निकालें जिसके सिरों के मान अलग हैं, फिर दूसरे निर्देशांक से वही t सत्यापित करें। आंतरिक विभाजन के लिए 0<t<1 और AP:PB=t:(1−t) होगा। A=(1,2), B=(7,8), P=(3,4) में t=(3−1)/(7−1)=1/3 है। y-निर्देशांक भी 1/3 देता है, अतः अनुपात 1:2 है। क्षैतिज और ऊर्ध्वाधर निर्देशांकों से t अलग आए, तो P, AB पर नहीं है और आंतरिक अनुपात लागू नहीं होगा। केवल x का मेल पर्याप्त नहीं है। कई प्रश्नों में किसी निर्देशांक को अज्ञात रखकर विभाजन सूत्र लगाना होता है। उससे बनी समीकरण हल करें, फिर पूरे बिंदु की जाँच करें। इस प्रकार सुविधाजनक बीजीय मान को ज्यामितीय शर्त देखे बिना सही नहीं मानते।"
+      },
+      "formula": "P=A+t(B−A), 0<t<1 ⇒ AP:PB=t:(1−t)",
+      "question": {
+        "en": "A=(0,0),B=(6,6),P=(2,3). Is P an internal division point of AB?",
+        "hi": "A=(0,0),B=(6,6),P=(2,3)। क्या P, AB को भीतर बाँटता है?"
+      },
+      "answer": {
+        "en": "No; x gives t=1/3 but y gives t=1/2.",
+        "hi": "नहीं; x से t=1/3, पर y से t=1/2 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "The midpoint is equal internal division",
+        "hi": "मध्यबिंदु बराबर आंतरिक विभाजन है"
+      },
+      "body": {
+        "en": "The midpoint divides a segment in the ratio 1:1. Substituting equal weights into the section formula gives M=((x_1+x_2)/2,(y_1+y_2)/2). Thus each midpoint coordinate is the average of the corresponding endpoint coordinates. For A=(−2,5) and B=(6,1), M=(2,3). The midpoint need not be an endpoint coordinate or an integer point. A midpoint between (0,0) and (1,1) is (0.5,0.5). If one endpoint and the midpoint are known, rearrange coordinate by coordinate: x_2=2x_M−x_1 and y_2=2y_M−y_1. This is useful for finding a missing opposite vertex when diagonals are known to bisect one another. Do not assume that every quadrilateral has bisecting diagonals; the property must be given or established. For a known parallelogram, however, its two diagonal midpoints coincide. A midpoint can be checked with the distance formula by verifying AM=MB, while also checking that M lies on AB. Equality of distances alone describes many points on a perpendicular bisector, not just the midpoint.",
+        "hi": "मध्यबिंदु (Midpoint) रेखाखंड को 1:1 में बाँटता है। विभाजन सूत्र में दोनों भार बराबर रखने पर M=((x_1+x_2)/2,(y_1+y_2)/2) मिलता है। अर्थात मध्यबिंदु का हर निर्देशांक सिरों के संगत निर्देशांकों का औसत है। A=(−2,5), B=(6,1) में M=(2,3) है। मध्यबिंदु का निर्देशांक जरूरी नहीं कि किसी सिरे जैसा या पूर्णांक हो। (0,0) और (1,1) का मध्यबिंदु (0.5,0.5) है। एक सिरा और मध्यबिंदु ज्ञात हों, तो x_2=2x_M−x_1 और y_2=2y_M−y_1 से दूसरा सिरा निकाल सकते हैं। विकर्णों के परस्पर समद्विभाजित होने की शर्त दी हो, तो इससे विपरीत शीर्ष खोजने में सहायता मिलती है। हर चतुर्भुज के विकर्ण समद्विभाजित होते हैं, ऐसा न मानें; यह गुण दिया या सिद्ध होना चाहिए। ज्ञात समांतर चतुर्भुज में दोनों विकर्णों के मध्यबिंदु मिलते हैं। AM=MB से जाँच कर सकते हैं, लेकिन M का AB पर होना भी देखना चाहिए। केवल बराबर दूरी से लंब समद्विभाजक के कई बिंदु मिलते हैं, अकेला मध्यबिंदु नहीं।"
+      },
+      "formula": "M=((x_1+x_2)/2,(y_1+y_2)/2)",
+      "question": {
+        "en": "Find the midpoint of (−4,2) and (8,6).",
+        "hi": "(−4,2) तथा (8,6) का मध्यबिंदु खोजें।"
+      },
+      "answer": {
+        "en": "M=(2,4).",
+        "hi": "M=(2,4)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Using lengths to study a figure",
+        "hi": "लंबाइयों से आकृति की जाँच"
+      },
+      "body": {
+        "en": "Coordinates can turn a geometric classification into a set of length comparisons. To show a triangle is isosceles, calculate two matching side lengths; for equilateral, all three must agree. A right-triangle check can use the squared lengths and the Pythagoras relation, taking the largest side as the possible hypotenuse. This relation is a previously learned geometric fact used as a checking tool, rather than a new coordinate-area theorem. Three different points that lie in one straight line do not form a nondegenerate triangle. A distance check for collinearity is that the sum of the two shorter consecutive distances equals the endpoint distance, with the correct middle point identified. For a quadrilateral, compute enough properties to justify the claimed type instead of relying on one convenient equality. Equal diagonals alone do not prove a rectangle in an arbitrary quadrilateral. If its diagonals bisect one another, it is a parallelogram; equal diagonals then give the stronger rectangle conclusion. State which prior geometric property is being combined with your coordinate calculations.",
+        "hi": "निर्देशांक किसी आकृति की पहचान को लंबाइयों की तुलना में बदल सकते हैं। समद्विबाहु त्रिभुज सिद्ध करने के लिए 2 भुजाएँ बराबर निकालें; समबाहु के लिए तीनों बराबर चाहिए। समकोण की जाँच में सबसे बड़ी भुजा को संभावित कर्ण लेकर वर्ग दूरियों में पाइथागोरस संबंध देख सकते हैं। यह पहले पढ़े ज्यामितीय तथ्य का उपयोग है; इसे नया निर्देशांक क्षेत्रफल प्रमेय नहीं कहा जा रहा। एक रेखा पर स्थित 3 अलग बिंदु वास्तविक क्षेत्र वाला त्रिभुज नहीं बनाते। दूरी से संरेखता जाँचने के लिए सही बीच वाले बिंदु को पहचानकर 2 छोटे लगातार रेखाखंडों का योग बड़े सिरों की दूरी के बराबर देखें। चतुर्भुज का प्रकार बताने के लिए पर्याप्त गुण सिद्ध करें। केवल एक सुविधाजनक बराबरी देखकर पूरी पहचान न लिखें। सामान्य चतुर्भुज में बराबर विकर्ण अकेले आयत सिद्ध नहीं करते। पहले विकर्ण परस्पर समद्विभाजित हों, तो समांतर चतुर्भुज मिलता है; फिर बराबर विकर्ण से आयत का मजबूत निष्कर्ष मिल सकता है। अपने निर्देशांक परिणाम के साथ इस्तेमाल किया गया पुराना ज्यामितीय गुण भी स्पष्ट लिखें।"
+      },
+      "formula": "Compare squared lengths before simplifying radicals",
+      "question": {
+        "en": "Are (0,0),(3,0),(0,4) vertices of a right triangle?",
+        "hi": "क्या (0,0),(3,0),(0,4) समकोण त्रिभुज के शीर्ष हैं?"
+      },
+      "answer": {
+        "en": "Yes; squared side lengths are 9,16,25 and 9+16=25.",
+        "hi": "हाँ; वर्ग दूरियाँ 9,16,25 हैं और 9+16=25।"
+      }
+    },
+    {
+      "title": {
+        "en": "Exact work, units and a complete solution",
+        "hi": "सटीक गणना, इकाइयाँ और पूरा हल"
+      },
+      "body": {
+        "en": "Start a coordinate solution by naming the given points and the required quantity. A distance problem needs differences and squares, while an internal-division problem needs an endpoint order and a ratio. Mixing those two procedures is a common source of mistakes. Keep fractions and radicals exact until the final answer. If coordinates are in metres, a distance is in metres; a midpoint coordinate is also expressed using the same metre scale. A ratio such as 2:3 has no length unit. On a digital graph, dragging a point changes both its coordinates and related distances. Use that movement to see whether your formula responds as expected: translating both endpoints by the same vector leaves their distance unchanged and translates their midpoint by that vector. Reflecting both points in an axis also preserves distance. These are useful checks because the numerical values change while the underlying geometry remains consistent. If a requested ratio or point fails a segment condition, say so rather than force the formula. A good answer ends by substituting the calculated point back into the defining relationship.",
+        "hi": "निर्देशांक हल की शुरुआत दिए बिंदुओं के नाम और माँगी गई मात्रा से करें। दूरी प्रश्न में अंतर और वर्ग चाहिए, जबकि आंतरिक विभाजन में सिरों का क्रम और अनुपात चाहिए। दोनों प्रक्रियाओं को मिलाना सामान्य गलती है। अंतिम उत्तर तक भिन्न और करणी को सटीक रखें। निर्देशांक मीटर में हों, तो दूरी मीटर में और मध्यबिंदु के निर्देशांक भी उसी मीटर पैमाने में होंगे। 2:3 जैसा अनुपात लंबाई की इकाई नहीं रखता। डिजिटल आलेख पर बिंदु खींचने से उसके निर्देशांक और संबंधित दूरियाँ बदलती हैं। देखें कि सूत्र अपेक्षित ढंग से बदलता है या नहीं। दोनों सिरों को एक ही सदिश से खिसकाने पर उनकी दूरी नहीं बदलेगी, जबकि मध्यबिंदु भी उसी सदिश से खिसकेगा। दोनों बिंदुओं का किसी अक्ष में प्रतिबिंब लेने पर भी दूरी सुरक्षित रहती है। यह उपयोगी जाँच है, क्योंकि संख्याएँ बदलती हैं लेकिन मूल ज्यामिति संगत रहती है। अनुपात या बिंदु रेखाखंड की शर्त पूरी न करे, तो स्पष्ट बताएँ; सूत्र जबरदस्ती न लगाएँ। अंत में निकाले बिंदु को मूल संबंध में रखकर सत्यापित करें।"
+      },
+      "formula": "Distance is translation-invariant; internal ratios are unitless",
+      "question": {
+        "en": "What happens to midpoint (2,3) if both endpoints move by (5,−1)?",
+        "hi": "दोनों सिरे (5,−1) से खिसकें, तो मध्यबिंदु (2,3) कहाँ जाएगा?"
+      },
+      "answer": {
+        "en": "It becomes (7,2); the segment length stays unchanged.",
+        "hi": "यह (7,2) होगा; रेखाखंड की लंबाई नहीं बदलेगी।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find distance between A=(−1,2) and B=(2,6).",
+        "hi": "A=(−1,2) और B=(2,6) की दूरी खोजें।"
+      },
+      "steps": [
+        {
+          "en": "Δx=2−(−1)=3, Δy=6−2=4.",
+          "hi": "Δx=2−(−1)=3, Δy=6−2=4।"
+        },
+        {
+          "en": "AB=√(3²+4²)=√25.",
+          "hi": "AB=√(3²+4²)=√25।"
+        },
+        {
+          "en": "Take the nonnegative root.",
+          "hi": "अऋणात्मक वर्गमूल लें।"
+        }
+      ],
+      "answer": {
+        "en": "5 units.",
+        "hi": "5 इकाई।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find midpoint of (−2,5) and (6,1).",
+        "hi": "(−2,5) और (6,1) का मध्यबिंदु खोजें।"
+      },
+      "steps": [
+        {
+          "en": "Use M=((x_1+x_2)/2,(y_1+y_2)/2).",
+          "hi": "M=((x_1+x_2)/2,(y_1+y_2)/2) लगाएँ।"
+        },
+        {
+          "en": "M=((-2+6)/2,(5+1)/2).",
+          "hi": "M=((-2+6)/2,(5+1)/2)।"
+        }
+      ],
+      "answer": {
+        "en": "M=(2,3).",
+        "hi": "M=(2,3)।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "P divides A=(1,2), B=(7,8) internally in ratio 2:1. Find P.",
+        "hi": "P, A=(1,2), B=(7,8) को भीतर 2:1 में बाँटता है। P खोजें।"
+      },
+      "steps": [
+        {
+          "en": "AP:PB=m:n=2:1.",
+          "hi": "AP:PB=m:n=2:1।"
+        },
+        {
+          "en": "x=(2×7+1×1)/3=5.",
+          "hi": "x=(2×7+1×1)/3=5।"
+        },
+        {
+          "en": "y=(2×8+1×2)/3=6.",
+          "hi": "y=(2×8+1×2)/3=6।"
+        },
+        {
+          "en": "P is two thirds of the way from A to B.",
+          "hi": "P, A से B की ओर दो-तिहाई रास्ते पर है।"
+        }
+      ],
+      "answer": {
+        "en": "P=(5,6).",
+        "hi": "P=(5,6)।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find P on the x-axis equidistant from A=(2,3) and B=(6,1).",
+        "hi": "x-अक्ष पर A=(2,3) और B=(6,1) से समान दूरी वाला P खोजें।"
+      },
+      "steps": [
+        {
+          "en": "Write P=(x,0), since it lies on the x-axis.",
+          "hi": "x-अक्ष पर होने से P=(x,0) लिखें।"
+        },
+        {
+          "en": "PA²=PB² gives (x−2)²+9=(x−6)²+1.",
+          "hi": "PA²=PB² से (x−2)²+9=(x−6)²+1।"
+        },
+        {
+          "en": "Expand: −4x+13=−12x+37, hence 8x=24.",
+          "hi": "विस्तार: −4x+13=−12x+37, अतः 8x=24।"
+        },
+        {
+          "en": "x=3; both squared distances are 10.",
+          "hi": "x=3; दोनों वर्ग दूरियाँ 10 हैं।"
+        }
+      ],
+      "answer": {
+        "en": "P=(3,0).",
+        "hi": "P=(3,0)।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A=(0,0),B=(4,0),C=(6,3),D=(2,3). Show ABCD is a parallelogram using diagonal midpoints.",
+        "hi": "A=(0,0),B=(4,0),C=(6,3),D=(2,3)। विकर्णों के मध्यबिंदु से ABCD को समांतर चतुर्भुज सिद्ध करें।"
+      },
+      "steps": [
+        {
+          "en": "Midpoint of AC is ((0+6)/2,(0+3)/2)=(3,1.5).",
+          "hi": "AC का मध्यबिंदु ((0+6)/2,(0+3)/2)=(3,1.5)।"
+        },
+        {
+          "en": "Midpoint of BD is ((4+2)/2,(0+3)/2)=(3,1.5).",
+          "hi": "BD का मध्यबिंदु ((4+2)/2,(0+3)/2)=(3,1.5)।"
+        },
+        {
+          "en": "The diagonals bisect each other.",
+          "hi": "विकर्ण एक-दूसरे को समद्विभाजित करते हैं।"
+        },
+        {
+          "en": "Use the quadrilateral theorem: diagonals bisecting each other imply a parallelogram.",
+          "hi": "चतुर्भुज प्रमेय से परस्पर समद्विभाजित विकर्ण समांतर चतुर्भुज देते हैं।"
+        }
+      ],
+      "answer": {
+        "en": "ABCD is a parallelogram.",
+        "hi": "ABCD एक समांतर चतुर्भुज है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "The point (5,0) lies on:",
+        "hi": "बिंदु (5,0) स्थित है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "y-axis",
+            "hi": "y-अक्ष पर"
+          },
+          "reason": {
+            "en": "A y-axis point needs x=0.",
+            "hi": "y-अक्ष पर x=0 चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "x-axis",
+            "hi": "x-अक्ष पर"
+          },
+          "reason": {
+            "en": "Its y-coordinate is 0.",
+            "hi": "इसका y-निर्देशांक 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both axes",
+            "hi": "दोनों अक्षों पर"
+          },
+          "reason": {
+            "en": "Only the origin lies on both.",
+            "hi": "केवल मूलबिंदु दोनों पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neither axis",
+            "hi": "किसी अक्ष पर नहीं"
+          },
+          "reason": {
+            "en": "Zero y places it on the x-axis.",
+            "hi": "y=0 इसे x-अक्ष पर रखता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Distance from origin to (3,4) is:",
+        "hi": "मूलबिंदु से (3,4) की दूरी है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "Adding components gives a rectangular route.",
+            "hi": "घटक जोड़ना आयताकार रास्ता देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Subtracting coordinates does not give this distance.",
+            "hi": "निर्देशांक घटाना यह दूरी नहीं देता।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "√(3²+4²)=5.",
+            "hi": "√(3²+4²)=5।"
+          }
+        },
+        {
+          "text": {
+            "en": "25",
+            "hi": "25"
+          },
+          "reason": {
+            "en": "25 is the squared distance.",
+            "hi": "25 वर्ग दूरी है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Distance between (−3,2) and (4,2) is:",
+        "hi": "(−3,2) और (4,2) की दूरी है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "4−3 ignores the negative sign.",
+            "hi": "4−3 ऋण चिह्न छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−7",
+            "hi": "−7"
+          },
+          "reason": {
+            "en": "A distance cannot be negative.",
+            "hi": "दूरी ऋणात्मक नहीं होती।"
+          }
+        },
+        {
+          "text": {
+            "en": "√7",
+            "hi": "√7"
+          },
+          "reason": {
+            "en": "The horizontal difference is already 7.",
+            "hi": "क्षैतिज अंतर ही 7 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "Equal y gives |4−(−3)|=7.",
+            "hi": "समान y से |4−(−3)|=7।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Midpoint of (2,6) and (8,0) is:",
+        "hi": "(2,6) और (8,0) का मध्यबिंदु है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(5,3)",
+            "hi": "(5,3)"
+          },
+          "reason": {
+            "en": "Average each coordinate.",
+            "hi": "हर निर्देशांक का औसत लें।"
+          }
+        },
+        {
+          "text": {
+            "en": "(10,6)",
+            "hi": "(10,6)"
+          },
+          "reason": {
+            "en": "The sums must be divided by 2.",
+            "hi": "योगों को 2 से भाग चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "(3,5)",
+            "hi": "(3,5)"
+          },
+          "reason": {
+            "en": "The coordinate order was reversed.",
+            "hi": "निर्देशांक क्रम उलट गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "(6,−6)",
+            "hi": "(6,−6)"
+          },
+          "reason": {
+            "en": "These are differences, not midpoint averages.",
+            "hi": "ये अंतर हैं, मध्यबिंदु औसत नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If AP:PB=2:1, P is:",
+        "hi": "AP:PB=2:1 में P है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "One third from A to B",
+            "hi": "A से B की ओर एक-तिहाई"
+          },
+          "reason": {
+            "en": "That gives AP:PB=1:2.",
+            "hi": "इससे AP:PB=1:2 मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Two thirds from A to B",
+            "hi": "A से B की ओर दो-तिहाई"
+          },
+          "reason": {
+            "en": "AP occupies 2 of 3 equal parts.",
+            "hi": "AP कुल 3 में से 2 बराबर भाग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Outside AB",
+            "hi": "AB से बाहर"
+          },
+          "reason": {
+            "en": "Positive internal weights place it inside.",
+            "hi": "धनात्मक आंतरिक भार इसे भीतर रखते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always at origin",
+            "hi": "हमेशा मूलबिंदु पर"
+          },
+          "reason": {
+            "en": "The endpoints determine its position.",
+            "hi": "स्थिति सिरों पर निर्भर है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "In the section formula with AP:PB=m:n, x_P is:",
+        "hi": "AP:PB=m:n में विभाजन सूत्र से x_P है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(mx_1+nx_2)/(m+n)",
+            "hi": "(mx_1+nx_2)/(m+n)"
+          },
+          "reason": {
+            "en": "The endpoint weights are reversed for this ratio order.",
+            "hi": "इस अनुपात क्रम में सिरों के भार उलटे हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "(x_1+x_2)/(m+n)",
+            "hi": "(x_1+x_2)/(m+n)"
+          },
+          "reason": {
+            "en": "The ratio weights are missing.",
+            "hi": "अनुपात के भार छूटे हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "(mx_2+nx_1)/(m+n)",
+            "hi": "(mx_2+nx_1)/(m+n)"
+          },
+          "reason": {
+            "en": "P=A+m(B−A)/(m+n).",
+            "hi": "P=A+m(B−A)/(m+n)।"
+          }
+        },
+        {
+          "text": {
+            "en": "(mx_2−nx_1)/(m−n)",
+            "hi": "(mx_2−nx_1)/(m−n)"
+          },
+          "reason": {
+            "en": "That is not the internal-division formula.",
+            "hi": "यह आंतरिक विभाजन का सूत्र नहीं है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "A distance calculated from metre coordinates is measured in:",
+        "hi": "मीटर निर्देशांकों से निकली दूरी की इकाई है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "m²",
+            "hi": "m²"
+          },
+          "reason": {
+            "en": "Squared units describe squared distance or area.",
+            "hi": "वर्ग इकाई वर्ग दूरी या क्षेत्रफल की है।"
+          }
+        },
+        {
+          "text": {
+            "en": "m³",
+            "hi": "m³"
+          },
+          "reason": {
+            "en": "Cubic units describe volume.",
+            "hi": "घन इकाई आयतन की है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No unit",
+            "hi": "कोई इकाई नहीं"
+          },
+          "reason": {
+            "en": "A physical length retains its unit.",
+            "hi": "भौतिक लंबाई की इकाई रहती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "m",
+            "hi": "m"
+          },
+          "reason": {
+            "en": "The square root returns a length.",
+            "hi": "वर्गमूल से लंबाई मिलती है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "The distance between identical points is:",
+        "hi": "एक जैसे बिंदुओं के बीच दूरी है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Both coordinate differences are zero.",
+            "hi": "दोनों निर्देशांक अंतर 0 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "No separation is present.",
+            "hi": "कोई अलगाव नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative",
+            "hi": "ऋणात्मक"
+          },
+          "reason": {
+            "en": "Distances are nonnegative.",
+            "hi": "दूरियाँ अऋणात्मक होती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always undefined",
+            "hi": "हमेशा अपरिभाषित"
+          },
+          "reason": {
+            "en": "The distance formula gives exactly zero.",
+            "hi": "दूरी सूत्र ठीक 0 देता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If both endpoints translate by the same vector, their distance:",
+        "hi": "दोनों सिरे एक ही सदिश से खिसकें, तो दूरी:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always doubles",
+            "hi": "हमेशा दुगुनी"
+          },
+          "reason": {
+            "en": "Coordinate differences do not double.",
+            "hi": "निर्देशांक अंतर दुगुने नहीं होते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Stays the same",
+            "hi": "समान रहती है"
+          },
+          "reason": {
+            "en": "The translation cancels in each difference.",
+            "hi": "हर अंतर में खिसकाव कट जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Becomes zero",
+            "hi": "0 हो जाती है"
+          },
+          "reason": {
+            "en": "Distinct endpoints remain distinct.",
+            "hi": "अलग सिरे अलग ही रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always increases",
+            "hi": "हमेशा बढ़ती"
+          },
+          "reason": {
+            "en": "Rigid translation preserves length.",
+            "hi": "समान खिसकाव लंबाई सुरक्षित रखता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "P=(2,1) lies between A=(0,0) and B=(6,3). AP:PB equals:",
+        "hi": "P=(2,1), A=(0,0) और B=(6,3) के बीच है। AP:PB है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2:1",
+            "hi": "2:1"
+          },
+          "reason": {
+            "en": "This reverses the ratio.",
+            "hi": "इसमें अनुपात उलट है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1:3",
+            "hi": "1:3"
+          },
+          "reason": {
+            "en": "AP is one third of AB, not one third of PB.",
+            "hi": "AP, AB का तिहाई है; PB का तिहाई नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1:2",
+            "hi": "1:2"
+          },
+          "reason": {
+            "en": "P is one third of the whole segment from A.",
+            "hi": "P, A से पूरे रेखाखंड के एक-तिहाई पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3:1",
+            "hi": "3:1"
+          },
+          "reason": {
+            "en": "This places P much closer to B.",
+            "hi": "यह P को B के बहुत पास रखता है।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Derive the distance formula using coordinate differences.",
+        "hi": "निर्देशांक अंतर से दूरी सूत्र समझाएँ।"
+      },
+      "answer": {
+        "en": "Horizontal and vertical differences form right-triangle legs. Pythagoras gives AB²=(Δx)²+(Δy)², so take the nonnegative square root.",
+        "hi": "क्षैतिज और ऊर्ध्वाधर अंतर समकोण त्रिभुज की भुजाएँ हैं। पाइथागोरस से AB²=(Δx)²+(Δy)²; अऋणात्मक वर्गमूल लें।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find distance between (1,−2) and (4,2).",
+        "hi": "(1,−2) और (4,2) की दूरी खोजें।"
+      },
+      "answer": {
+        "en": "√(3²+4²)=5 units.",
+        "hi": "√(3²+4²)=5 इकाई।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find midpoint of (−6,4) and (2,8).",
+        "hi": "(−6,4) और (2,8) का मध्यबिंदु खोजें।"
+      },
+      "answer": {
+        "en": "M=((-6+2)/2,(4+8)/2)=(−4/2,12/2)=(−2,6).",
+        "hi": "M=((-6+2)/2,(4+8)/2)=(−4/2,12/2)=(−2,6)।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the point dividing (0,0),(10,5) internally in ratio 1:4.",
+        "hi": "(0,0),(10,5) को भीतर 1:4 में बाँटने वाला बिंदु खोजें।"
+      },
+      "answer": {
+        "en": "P=((1×10+4×0)/5,(1×5+4×0)/5)=(2,1).",
+        "hi": "P=((1×10+4×0)/5,(1×5+4×0)/5)=(2,1)।"
+      }
+    },
+    {
+      "question": {
+        "en": "A=(2,3) and midpoint M=(5,7). Find B.",
+        "hi": "A=(2,3), मध्यबिंदु M=(5,7) है। B खोजें।"
+      },
+      "answer": {
+        "en": "B=(2×5−2,2×7−3)=(8,11).",
+        "hi": "B=(2×5−2,2×7−3)=(8,11)।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is equality PA=PB alone insufficient to call P the midpoint of AB?",
+        "hi": "केवल PA=PB से P को AB का मध्यबिंदु क्यों नहीं कहते?"
+      },
+      "answer": {
+        "en": "P must also lie on AB; other equidistant points occur on its perpendicular bisector.",
+        "hi": "P को AB पर भी होना चाहिए; लंब समद्विभाजक पर अन्य बिंदु भी समान दूरी पर होते हैं।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Keep endpoint order and ratio weights consistent. Square signed differences, take a nonnegative root, and do not confuse a ratio with a length or squared distance.",
+    "hi": "सिरों का क्रम और अनुपात के भार सही रखें। चिह्न सहित अंतर का वर्ग करें, अऋणात्मक मूल लें और अनुपात को लंबाई या वर्ग दूरी से न मिलाएँ।"
+  },
+  "revision": [
+    {
+      "en": "Coordinates are ordered horizontal and vertical positions.",
+      "hi": "निर्देशांक क्षैतिज और ऊर्ध्वाधर स्थितियों का क्रमित युग्म हैं।"
+    },
+    {
+      "en": "Distance is √[(Δx)²+(Δy)²], with length units.",
+      "hi": "दूरी √[(Δx)²+(Δy)²] है और लंबाई इकाई रखती है।"
+    },
+    {
+      "en": "For AP:PB=m:n, use the weights nA+mB divided by m+n.",
+      "hi": "AP:PB=m:n में (nA+mB)/(m+n) के भार लें।"
+    },
+    {
+      "en": "The midpoint averages corresponding endpoint coordinates.",
+      "hi": "मध्यबिंदु संगत सिरों के निर्देशांकों का औसत है।"
+    },
+    {
+      "en": "Verify segment membership, signs, exact values and units.",
+      "hi": "रेखाखंड पर स्थिति, चिह्न, सटीक मान और इकाई जाँचें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Ordered coordinates → horizontal/vertical differences → distance → internal fraction of a segment → section formula → midpoint → geometric verification",
+    "hi": "क्रमित निर्देशांक → क्षैतिज/ऊर्ध्वाधर अंतर → दूरी → रेखाखंड का आंतरिक अंश → विभाजन सूत्र → मध्यबिंदु → ज्यामितीय सत्यापन"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, Chapter 7, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh107.pdf"
+    },
+    {
+      "title": "UP Board Class 10 Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

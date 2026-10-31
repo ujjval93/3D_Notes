@@ -1,0 +1,1093 @@
+{
+  "number": 7,
+  "id": "physics12-07",
+  "title": {
+    "en": "Alternating Current",
+    "hi": "प्रत्यावर्ती धारा"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Sinusoidal quantities and phase",
+        "hi": "साइनाकार राशियाँ और कला"
+      },
+      "paragraphs": [
+        {
+          "en": "For a sinusoidal supply, Vm is the peak voltage, ω=2πf and f=1/T. A phase difference is not a time interval, although the two can be related at a known frequency. Current can have zero cycle average and still produce heating because resistive power depends on i².",
+          "hi": "प्रत्यावर्ती धारा (Alternating Current) समय के साथ दिशा बदलती है। साइनाकार स्रोत के लिए v=Vm sinωt लिखते हैं, जहाँ Vm शिखर वोल्टता और ω कोणीय आवृत्ति है। आवर्तकाल T, आवृत्ति f=1/T और ω=2πf के संबंध अलग-अलग मात्रकों वाली राशियाँ जोड़ते हैं। पूरा चक्र 2π rad की कला वृद्धि है। धारा i=Im sin(ωt−φ) हो तो φ वोल्टता और धारा का कलांतर है। समय और कला को एक न समझें; समान समय अंतर पर अधिक आवृत्ति वाली तरंग अधिक कला आगे बढ़ती है। धनात्मक और ऋणात्मक भाग चुने परिपथ दिशा के सापेक्ष हैं। ऋणात्मक धारा का अर्थ आवेश की विपरीत दिशा में गति है, धारा का अस्तित्व समाप्त होना नहीं। AC स्रोत का औसत पूरे चक्र में शून्य हो सकता है, जबकि उससे प्रतिरोध गर्म होता है। इसका कारण ऊष्मा का i² पर निर्भर होना है। इसलिए औसत धारा के बजाय प्रभावी मान की जरूरत पड़ती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "State whether a reported value is instantaneous, peak, mean or rms.",
+          "hi": "हर दिए मान के साथ पहचानें कि वह तात्क्षणिक, शिखर, औसत या वर्ग माध्य मूल है। साइन सूत्र में t सेकंड में और ω rad/s में रखने पर कला रेडियन में आती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If frequency doubles, what happens to the period?",
+          "hi": "आवृत्ति दुगुनी हो तो आवर्तकाल क्या होगा?"
+        },
+        "answer": {
+          "en": "It halves because T=1/f.",
+          "hi": "T=1/f से आधा होगा।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Rms and effective heating",
+        "hi": "वर्ग माध्य मूल और प्रभावी ऊष्मन"
+      },
+      "paragraphs": [
+        {
+          "en": "Rms means square, time-average and square-root. The factors 1/√2 apply to sinusoids, not arbitrary waveforms. The rms current produces the same resistive heating as an equal DC current. Zero signed average over a cycle is consistent with a nonzero rms value.",
+          "hi": "वर्ग माध्य मूल (Root Mean Square) मान निकालने के लिए तात्क्षणिक मान का वर्ग, उसका समय औसत और फिर वर्गमूल लिया जाता है। साइनाकार धारा के लिए Irms=Im/√2 और Vrms=Vm/√2 हैं। यह हर तरंग आकार का नियम नहीं; अन्य तरंगों के लिए मूल परिभाषा से औसत निकालना होगा। किसी प्रतिरोध में समान समय में जितनी ऊष्मा AC बनाती है, उतनी बनाने वाली DC धारा उसका प्रभावी rms मान बताती है। उदाहरण के लिए 10 A शिखर साइनाकार धारा का rms लगभग 7.07 A है, 5 A नहीं। सामान्य AC वोल्टता बताने में प्रायः rms प्रयुक्त होता है, पर प्रश्न में दी परिभाषा पढ़ना जरूरी है। पूरे चक्र का सरल औसत शून्य होना rms को शून्य नहीं करता क्योंकि पहले वर्ग लेने पर दोनों अर्धचक्र सकारात्मक योगदान देते हैं। औसत शक्ति निकालते समय केवल शिखर मानों का गुणन नहीं कर सकते; उपयुक्त कलांतर भी चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not average signed values when a heating-equivalent value is required.",
+          "hi": "ऊष्मा के तुल्य मान के लिए चिह्न सहित साधारण औसत न लें। यदि 220 V rms दिया है तो शिखर 220√2 V है; गणना में दोनों को अदलने से शक्ति में 2 का गुणक गलत हो सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is Im/2 the rms of a sine current?",
+          "hi": "क्या साइन धारा का rms, Im/2 है?"
+        },
+        "answer": {
+          "en": "No; it is Im/√2.",
+          "hi": "नहीं; Im/√2 है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Resistor and phasor representation",
+        "hi": "प्रतिरोध और फेजर निरूपण"
+      },
+      "paragraphs": [
+        {
+          "en": "A pure resistor has voltage and current in phase. Phasors represent same-frequency sinusoids with a consistent amplitude convention. They are mathematical rotating vectors, not literal rotating wires. Resistive instantaneous power i²R is nonnegative, so energy is dissipated rather than returned to the source.",
+          "hi": "शुद्ध प्रतिरोधी AC परिपथ में ओम का नियम हर क्षण लागू है: i=v/R। इसलिए वोल्टता और धारा समान कला में होती हैं। जब वोल्टता शून्य होती है तो धारा भी शून्य, और दोनों साथ अधिकतम होते हैं। शिखर धारा Im=Vm/R तथा Irms=Vrms/R है। फेजर (Phasor) समान आवृत्ति वाली साइनाकार राशियों का घूर्णन सदिश निरूपण है। इसका प्रक्षेप तात्क्षणिक मान देता है; सदिश की लंबाई किस प्रथा के अनुसार शिखर या rms ली गई है, यह पूरे आरेख में समान रखें। फेजर कोई वास्तविक तार के घूमने का चित्र नहीं है। यह कलांतर और सदिश योग को सरल बनाता है। अलग आवृत्ति की राशियों को एक स्थिर फेजर त्रिभुज में सामान्यतः नहीं जोड़ सकते। प्रतिरोध में तात्क्षणिक शक्ति p=i²R कभी ऋणात्मक नहीं होती, इसलिए स्रोत से आई ऊर्जा चक्र दर चक्र ऊष्मा में जाती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A phasor diagram must use either peak or rms magnitudes consistently.",
+          "hi": "एक फेजर आरेख में सभी लंबाइयाँ या शिखर अथवा rms के अनुसार लें। प्रतिरोधी अवयव की वोल्टता धारा के साथ रखकर अन्य अवयवों की आगे-पिछे कला की तुलना करना सरल होता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the phase difference for a pure resistor?",
+          "hi": "शुद्ध प्रतिरोध में कलांतर कितना है?"
+        },
+        "answer": {
+          "en": "0.",
+          "hi": "0।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Inductive and capacitive reactance",
+        "hi": "प्रेरकीय और धारितीय प्रतिघात"
+      },
+      "paragraphs": [
+        {
+          "en": "For an ideal inductor, XL=ωL and current lags voltage by π/2. For an ideal capacitor, XC=1/(ωC) and current leads voltage by π/2. Reactance has ohm units but ideal reactive components store and return energy rather than dissipating average power.",
+          "hi": "आदर्श प्रेरक में बदलती धारा के कारण स्वप्रेरित emf आती है। साइनाकार स्थायी अवस्था में प्रेरकीय प्रतिघात (Inductive Reactance) XL=ωL है और धारा वोल्टता से π/2 पीछे रहती है। आवृत्ति बढ़ाने पर XL बढ़ता है। आदर्श संधारित्र में i=C dv/dt होने से धारा वोल्टता से π/2 आगे रहती है। धारितीय प्रतिघात XC=1/(ωC) आवृत्ति बढ़ने पर घटता है। प्रतिघात का मात्रक Ω है, लेकिन इसे प्रतिरोध की तरह औसत ऊर्जा नष्ट करने वाला न समझें। आदर्श L और C ऊर्जा संग्रह कर वापस स्रोत या दूसरे अवयव को दे सकते हैं। DC स्थिर अवस्था की सीमा में आदर्श प्रेरक शून्य वोल्टता वाली चालक कड़ी जैसा और संधारित्र खुला परिपथ जैसा व्यवहार करता है। यह स्थिर अवस्था का कथन है; स्विच लगाने के क्षण के क्षणिक प्रभाव अलग हो सकते हैं। वास्तविक कुंडली में तार का प्रतिरोध भी होता है, इसलिए उसे शुद्ध L मानने की शर्त स्पष्ट करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use capacitance in farads: 10 μF=10×10^-6 F.",
+          "hi": "धारिता फैरड में लें: 10 μF=10×10^-6 F। प्रेरक में पीछे और संधारित्र में आगे रहने वाली धारा को समय आलेख तथा फेजर दोनों से मिलाएँ, केवल याद की हुई पंक्ति पर निर्भर न रहें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which reactance falls as frequency rises?",
+          "hi": "आवृत्ति बढ़ने पर कौन-सा प्रतिघात घटता है?"
+        },
+        "answer": {
+          "en": "Capacitive reactance.",
+          "hi": "धारितीय प्रतिघात।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Series LCR impedance",
+        "hi": "श्रेणी LCR प्रतिबाधा"
+      },
+      "paragraphs": [
+        {
+          "en": "In a series LCR circuit the same current passes through all elements, but element voltages have different phases. Thus Z=√[R²+(XL−XC)²]. With voltage leading current by φ, tanφ=(XL−XC)/R. Individual reactive voltages can exceed the source voltage while cancelling each other in the phasor sum.",
+          "hi": "श्रेणी LCR परिपथ में एक ही धारा R,L और C से गुजरती है। प्रतिरोधी वोल्टता धारा की कला में, प्रेरकीय वोल्टता π/2 आगे और धारितीय वोल्टता π/2 पीछे होती है। इसलिए इन वोल्टताओं के परिमाण सीधे जोड़ना गलत है। परिणामी स्रोत rms वोल्टता V=√[VR²+(VL−VC)²] है और प्रतिबाधा Z=√[R²+(XL−XC)²] मिलती है। धारा I=V/Z तथा tanφ=(XL−XC)/R है, जहाँ स्रोत वोल्टता को धारा से φ आगे मानते हैं। XL>XC पर परिपथ प्रेरकीय और धारा पीछे होगी। XC>XL पर परिपथ धारितीय और धारा आगे होगी। XL=XC पर प्रतिक्रियाशील वोल्टताएँ एक-दूसरे को सदिश रूप से काटती हैं। अलग-अलग L और C पर बड़ी वोल्टता हो सकती है, भले उनका अंतर छोटा हो। इसलिए स्रोत वोल्टता कम होने का मतलब हर अवयव पर कम वोल्टता होना नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Keep the sign of XL−XC for phase even though its square enters Z.",
+          "hi": "Z में वर्ग लेने से चिह्न हट जाता है, लेकिन कला के लिए XL−XC का चिह्न बचाएँ। केवल प्रतिबाधा का परिमाण देखकर यह नहीं पता चलता कि धारा आगे है या पीछे।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is R+XL+XC not the impedance?",
+          "hi": "R+XL+XC प्रतिबाधा क्यों नहीं है?"
+        },
+        "answer": {
+          "en": "The voltage drops have different phases and require a phasor sum.",
+          "hi": "वोल्टता पात अलग कला में हैं, इसलिए फेजर योग चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Resonance and frequency response",
+        "hi": "अनुनाद और आवृत्ति प्रतिक्रिया"
+      },
+      "paragraphs": [
+        {
+          "en": "Series resonance occurs when XL=XC. At fixed source voltage and resistance, impedance is minimum and current maximum. The resonant frequency is f0=1/(2π√LC). Reactive elements still exchange energy at resonance. Real losses prevent treating the zero-resistance idealisation as an actual infinite-current device.",
+          "hi": "श्रेणी LCR में अनुनाद (Resonance) उस आवृत्ति पर होता है जहाँ XL=XC। इससे ω0=1/√(LC) और f0=1/(2π√LC) मिलता है। आदर्श रैखिक मॉडल में R स्थिर और स्रोत वोल्टता स्थिर हो तो इस आवृत्ति पर Z=R न्यूनतम तथा धारा V/R अधिकतम है। वोल्टता और धारा समान कला में होते हैं, पर L और C अनुपस्थित नहीं हो जाते; वे ऊर्जा का आदान-प्रदान करते हैं। आवृत्ति अनुनाद से कम हो तो धारितीय तथा अधिक हो तो प्रेरकीय व्यवहार प्रमुख होता है। शून्य प्रतिरोध के आदर्श गणितीय मॉडल में सीमित स्रोत से अनंत धारा बताना वास्तविक यंत्र का सुरक्षित निष्कर्ष नहीं, क्योंकि हानियाँ और मॉडल सीमाएँ महत्वपूर्ण हो जाती हैं। अनुनाद वक्र की तीक्ष्णता R,L,C पर निर्भर करती है। रेडियो जैसी आवृत्ति चयन प्रणालियाँ इसी विचार का उपयोग करती हैं। प्रश्न में साधारण आवृत्ति f और कोणीय आवृत्ति ω को अलग रखकर 2π का गुणक जाँचें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Changing R changes peak current and sharpness, but not the ideal resonance condition XL=XC.",
+          "hi": "R बदलने से अधिकतम धारा और वक्र की तीक्ष्णता बदलती है, पर आदर्श अनुनाद की शर्त XL=XC रहती है। L या C बदलने पर अनुनादी आवृत्ति बदलती है; इन प्रभावों को अलग प्रयोगों में देखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At series resonance, what is the impedance?",
+          "hi": "श्रेणी अनुनाद पर प्रतिबाधा कितनी है?"
+        },
+        "answer": {
+          "en": "R.",
+          "hi": "R।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Average power and power factor",
+        "hi": "औसत शक्ति और शक्ति गुणांक"
+      },
+      "paragraphs": [
+        {
+          "en": "Average power is VrmsIrmscosφ. For series LCR, cosφ=R/Z and only the resistive part dissipates average power. Ideal pure reactances have zero average power while exchanging energy during each cycle. Power factor is not the same quantity as conversion efficiency.",
+          "hi": "साइनाकार AC में औसत शक्ति P=Vrms Irms cosφ है। शक्ति गुणांक (Power Factor) cosφ बताता है कि वोल्टता-धारा के गुणन का कितना भाग औसत ऊर्जा अंतरण से जुड़ा है। श्रेणी LCR में cosφ=R/Z और P=I²R है। शुद्ध प्रतिरोध के लिए cosφ=1, जबकि आदर्श शुद्ध प्रेरक या संधारित्र के लिए cosφ=0 और औसत शक्ति शून्य है। शून्य औसत का अर्थ हर क्षण शक्ति शून्य नहीं; ऊर्जा कुछ समय अवयव में जमा और कुछ समय वापस जाती है। यही वाटहीन धारा का आदर्श विचार है। यदि 100 V rms और 2 A rms पर शक्ति गुणांक 0.6 है तो औसत शक्ति 120 W होगी, 200 W नहीं। कम शक्ति गुणांक पर समान उपयोगी शक्ति के लिए अधिक धारा चाहिए, जिससे वितरण तारों में I²R हानि बढ़ सकती है। शक्ति गुणांक को ऊर्जा दक्षता के बराबर न समझें; दोनों अलग परिभाषाएँ हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use rms values in the average-power formula unless the factor 1/2 for peak values is included.",
+          "hi": "औसत शक्ति सूत्र में rms मान लें; शिखर मान लेने पर अलग 1/2 गुणक चाहिए। प्रतिरोध के लिए P=V²/R तभी सीधे लागू करें जब वही वोल्टता उस प्रतिरोध पर हो, पूरे LCR स्रोत की नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does zero average reactive power mean zero instantaneous power?",
+          "hi": "क्या शून्य औसत प्रतिक्रियाशील शक्ति का अर्थ हर क्षण शून्य शक्ति है?"
+        },
+        "answer": {
+          "en": "No; energy can flow into and back out of the component.",
+          "hi": "नहीं; ऊर्जा अवयव में जा और वापस आ सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Transformers and transmission",
+        "hi": "ट्रांसफॉर्मर और ऊर्जा प्रेषण"
+      },
+      "paragraphs": [
+        {
+          "en": "An ideal transformer satisfies Vs/Vp=Ns/Np and VpIp=VsIs. A step-up device lowers current for the same power; it does not create extra energy. Real transformers have copper, core and leakage losses. Steady DC does not maintain the changing flux required for normal transformer action.",
+          "hi": "आदर्श ट्रांसफॉर्मर (Transformer) बदलते साझा चुंबकीय फ्लक्स से AC वोल्टता बदलता है। प्राथमिक और द्वितीयक फेरों Np,Ns के लिए Vs/Vp=Ns/Np है। आदर्श ऊर्जा संतुलन VpIp=VsIs से Is/Ip=Np/Ns मिलता है। अधिक वोल्टता का अर्थ समान शक्ति पर कम धारा है, मुफ्त बढ़ी शक्ति नहीं। उच्च वोल्टता पर प्रेषण करने से निश्चित शक्ति हेतु धारा कम होती है और तारों की I²R हानि घटती है। स्थिर DC सीधे आदर्श ट्रांसफॉर्मर में लगातार द्वितीयक emf नहीं बनाती क्योंकि साझा फ्लक्स स्थिर होगा। वास्तविक यंत्र में तांबे की प्रतिरोधी हानि, भंवर धारा, हिस्टेरिसिस और अपूर्ण फ्लक्स संबद्धता होती है। दक्षता आउटपुट शक्ति और इनपुट शक्ति का अनुपात है तथा वास्तविकता में 100% से कम होती है। प्रश्नों में आदर्श तथा वास्तविक शर्त अलग लिखें। AC जनित्र यांत्रिक ऊर्जा को विद्युत ऊर्जा में बदलता है, जबकि ट्रांसफॉर्मर विद्युत ऊर्जा के वोल्टता-धारा स्तर बदलता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Generator, transformer and motor describe different energy roles.",
+          "hi": "जनित्र, ट्रांसफॉर्मर और मोटर की ऊर्जा भूमिकाएँ अलग हैं। ट्रांसफॉर्मर के फेर अनुपात को धारा अनुपात में सीधे लगाने की जगह शक्ति संतुलन से उलटा संबंध जाँचना अधिक विश्वसनीय है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "A step-up transformer doubles voltage ideally. What happens to current?",
+          "hi": "आदर्श ट्रांसफॉर्मर वोल्टता दुगुनी करता है। धारा क्या होगी?"
+        },
+        "answer": {
+          "en": "It halves for the same transferred power.",
+          "hi": "समान अंतरित शक्ति के लिए आधी होगी।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "v=Vm sinωt; ω=2πf",
+      "meaning": {
+        "en": "Sinusoidal voltage and angular frequency.",
+        "hi": "साइनाकार वोल्टता और कोणीय आवृत्ति।"
+      },
+      "units": {
+        "en": "Vm:V, ω:rad/s, f:Hz",
+        "hi": "Vm:V, ω:rad/s, f:Hz"
+      }
+    },
+    {
+      "expression": "Vrms=Vm/√2; Irms=Im/√2",
+      "meaning": {
+        "en": "Effective values for sinusoids.",
+        "hi": "साइनाकार तरंगों के प्रभावी मान।"
+      },
+      "units": {
+        "en": "V and A",
+        "hi": "V और A"
+      }
+    },
+    {
+      "expression": "XL=ωL; XC=1/(ωC)",
+      "meaning": {
+        "en": "Inductive and capacitive reactance.",
+        "hi": "प्रेरकीय और धारितीय प्रतिघात।"
+      },
+      "units": {
+        "en": "Ω; L:H, C:F",
+        "hi": "Ω; L:H, C:F"
+      }
+    },
+    {
+      "expression": "Z=√[R²+(XL−XC)²]",
+      "meaning": {
+        "en": "Series LCR impedance.",
+        "hi": "श्रेणी LCR प्रतिबाधा।"
+      },
+      "units": {
+        "en": "Ω",
+        "hi": "Ω"
+      }
+    },
+    {
+      "expression": "f0=1/(2π√LC)",
+      "meaning": {
+        "en": "Ideal series resonance frequency.",
+        "hi": "आदर्श श्रेणी अनुनादी आवृत्ति।"
+      },
+      "units": {
+        "en": "Hz",
+        "hi": "Hz"
+      }
+    },
+    {
+      "expression": "P=VrmsIrmscosφ=Irms²R",
+      "meaning": {
+        "en": "Average power in series LCR.",
+        "hi": "श्रेणी LCR की औसत शक्ति।"
+      },
+      "units": {
+        "en": "W",
+        "hi": "W"
+      }
+    },
+    {
+      "expression": "Vs/Vp=Ns/Np; VpIp=VsIs",
+      "meaning": {
+        "en": "Ideal transformer relations.",
+        "hi": "आदर्श ट्रांसफॉर्मर संबंध।"
+      },
+      "units": {
+        "en": "V,A; turn ratio dimensionless",
+        "hi": "V,A; फेर अनुपात विमाहीन"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find rms current for a sinusoidal peak current 10 A.",
+        "hi": "10 A शिखर साइनाकार धारा का rms निकालें।"
+      },
+      "given": {
+        "en": "Im=10 A.",
+        "hi": "Im=10 A।"
+      },
+      "find": {
+        "en": "Irms.",
+        "hi": "Irms।"
+      },
+      "formula": {
+        "en": "Irms=Im/√2",
+        "hi": "Irms=Im/√2"
+      },
+      "steps": [
+        {
+          "en": "10/√2≈7.07.",
+          "hi": "10/√2≈7.07।"
+        }
+      ],
+      "answer": {
+        "en": "7.07 A.",
+        "hi": "7.07 A।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "At ω=100 rad/s, find reactances for L=0.2 H and C=100 μF.",
+        "hi": "ω=100 rad/s पर L=0.2 H और C=100 μF के प्रतिघात निकालें।"
+      },
+      "given": {
+        "en": "C=10^-4 F.",
+        "hi": "C=10^-4 F।"
+      },
+      "find": {
+        "en": "XL and XC.",
+        "hi": "XL और XC।"
+      },
+      "formula": {
+        "en": "XL=ωL; XC=1/(ωC)",
+        "hi": "XL=ωL; XC=1/(ωC)"
+      },
+      "steps": [
+        {
+          "en": "XL=100×0.2=20 Ω.",
+          "hi": "XL=100×0.2=20 Ω।"
+        },
+        {
+          "en": "XC=1/(100×10^-4)=100 Ω.",
+          "hi": "XC=1/(100×10^-4)=100 Ω।"
+        }
+      ],
+      "answer": {
+        "en": "XL=20 Ω; XC=100 Ω.",
+        "hi": "XL=20 Ω; XC=100 Ω।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "An LCR circuit has R=30 Ω, XL=50 Ω, XC=10 Ω and 100 V rms supply. Find current and power.",
+        "hi": "LCR में R=30 Ω,XL=50 Ω,XC=10 Ω और स्रोत 100 V rms है। धारा और शक्ति निकालें।"
+      },
+      "given": {
+        "en": "Net reactance=40 Ω.",
+        "hi": "कुल प्रतिघात=40 Ω।"
+      },
+      "find": {
+        "en": "I and P.",
+        "hi": "I और P।"
+      },
+      "formula": {
+        "en": "Z=√[R²+(XL−XC)²]; I=V/Z; P=I²R",
+        "hi": "Z=√[R²+(XL−XC)²]; I=V/Z; P=I²R"
+      },
+      "steps": [
+        {
+          "en": "Z=√(900+1600)=50 Ω.",
+          "hi": "Z=√(900+1600)=50 Ω।"
+        },
+        {
+          "en": "I=100/50=2 A.",
+          "hi": "I=100/50=2 A।"
+        },
+        {
+          "en": "P=4×30=120 W.",
+          "hi": "P=4×30=120 W।"
+        }
+      ],
+      "answer": {
+        "en": "2 A; 120 W; current lags voltage.",
+        "hi": "2 A; 120 W; धारा वोल्टता से पीछे है।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find resonance frequency for L=0.1 H and C=100 μF.",
+        "hi": "L=0.1 H और C=100 μF के लिए अनुनादी आवृत्ति निकालें।"
+      },
+      "given": {
+        "en": "LC=10^-5 H F.",
+        "hi": "LC=10^-5 H F।"
+      },
+      "find": {
+        "en": "f0.",
+        "hi": "f0।"
+      },
+      "formula": {
+        "en": "f0=1/(2π√LC)",
+        "hi": "f0=1/(2π√LC)"
+      },
+      "steps": [
+        {
+          "en": "√LC≈0.003162 s.",
+          "hi": "√LC≈0.003162 s।"
+        },
+        {
+          "en": "ω0≈316.2 rad/s.",
+          "hi": "ω0≈316.2 rad/s।"
+        },
+        {
+          "en": "f0=316.2/(2π).",
+          "hi": "f0=316.2/(2π)।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately 50.3 Hz.",
+        "hi": "लगभग 50.3 Hz।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "An ideal 200-turn primary at 100 V rms feeds a 1000-turn secondary supplying 0.2 A rms. Find secondary voltage and primary current.",
+        "hi": "आदर्श 200 फेरों की प्राथमिक पर 100 V rms है। 1000 फेरों की द्वितीयक 0.2 A rms देती है। द्वितीयक वोल्टता और प्राथमिक धारा निकालें।"
+      },
+      "given": {
+        "en": "Ns/Np=5.",
+        "hi": "Ns/Np=5।"
+      },
+      "find": {
+        "en": "Vs and Ip.",
+        "hi": "Vs और Ip।"
+      },
+      "formula": {
+        "en": "Vs/Vp=Ns/Np; VpIp=VsIs",
+        "hi": "Vs/Vp=Ns/Np; VpIp=VsIs"
+      },
+      "steps": [
+        {
+          "en": "Vs=5×100=500 V.",
+          "hi": "Vs=5×100=500 V।"
+        },
+        {
+          "en": "The ideal apparent-power product is VsIs=500×0.2=100 VA; equal power factor is preserved between sides.",
+          "hi": "आदर्श आभासी शक्ति गुणनफल VsIs=500×0.2=100 VA है; दोनों ओर समान शक्ति गुणांक रहता है।"
+        },
+        {
+          "en": "Ip=(100 VA)/(100 V)=1 A.",
+          "hi": "Ip=(100 VA)/(100 V)=1 A।"
+        }
+      ],
+      "answer": {
+        "en": "500 V rms and 1 A rms for the stated ideal load.",
+        "hi": "बताए आदर्श भार के लिए 500 V rms और 1 A rms।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "The rms of a sinusoidal voltage Vm is",
+        "hi": "साइनाकार शिखर वोल्टता Vm का rms है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Vm/√2",
+            "hi": "Vm/√2"
+          },
+          "reason": {
+            "en": "This follows from mean sin²=1/2.",
+            "hi": "sin² का औसत 1/2 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Vm/2",
+            "hi": "Vm/2"
+          },
+          "reason": {
+            "en": "That is not the square-root factor.",
+            "hi": "यह वर्गमूल गुणक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Vm",
+            "hi": "Vm"
+          },
+          "reason": {
+            "en": "This is the peak, not rms.",
+            "hi": "यह शिखर है, rms नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The signed mean is zero, not rms.",
+            "hi": "चिह्नित औसत शून्य, rms नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For a pure resistor, current and voltage are",
+        "hi": "शुद्ध प्रतिरोध में धारा और वोल्टता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "In phase",
+            "hi": "समान कला में"
+          },
+          "reason": {
+            "en": "i=v/R at every instant.",
+            "hi": "हर क्षण i=v/R।"
+          }
+        },
+        {
+          "text": {
+            "en": "90° apart",
+            "hi": "90° अलग"
+          },
+          "reason": {
+            "en": "That describes a pure reactance.",
+            "hi": "यह शुद्ध प्रतिघात का व्यवहार है।"
+          }
+        },
+        {
+          "text": {
+            "en": "180° apart",
+            "hi": "180° अलग"
+          },
+          "reason": {
+            "en": "A passive positive resistor does not give this phase.",
+            "hi": "धनात्मक निष्क्रिय प्रतिरोध यह कला नहीं देता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Different in frequency",
+            "hi": "अलग आवृत्ति की"
+          },
+          "reason": {
+            "en": "Linear steady response has source frequency.",
+            "hi": "रैखिक स्थायी प्रतिक्रिया स्रोत आवृत्ति की होती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Current through an ideal inductor",
+        "hi": "आदर्श प्रेरक की धारा"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Lags voltage by π/2",
+            "hi": "वोल्टता से π/2 पीछे"
+          },
+          "reason": {
+            "en": "Inductive reactance produces this lag.",
+            "hi": "प्रेरकीय प्रतिघात यह पश्चता देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Leads voltage by π/2",
+            "hi": "वोल्टता से π/2 आगे"
+          },
+          "reason": {
+            "en": "This is capacitive behaviour.",
+            "hi": "यह धारितीय व्यवहार है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Is always in phase",
+            "hi": "हमेशा समान कला"
+          },
+          "reason": {
+            "en": "That is pure resistance.",
+            "hi": "वह शुद्ध प्रतिरोध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Has zero amplitude necessarily",
+            "hi": "आयाम अनिवार्य शून्य"
+          },
+          "reason": {
+            "en": "A finite-frequency supply can drive current.",
+            "hi": "परिमित आवृत्ति स्रोत धारा चला सकता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Increasing frequency at fixed C causes XC to",
+        "hi": "स्थिर C पर आवृत्ति बढ़ने से XC"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Decrease",
+            "hi": "घटता है"
+          },
+          "reason": {
+            "en": "XC=1/(2πfC).",
+            "hi": "XC=1/(2πfC)।"
+          }
+        },
+        {
+          "text": {
+            "en": "Increase",
+            "hi": "बढ़ता है"
+          },
+          "reason": {
+            "en": "This is the trend of XL.",
+            "hi": "यह XL की प्रवृत्ति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Remain unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "XC explicitly depends on f.",
+            "hi": "XC,f पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Become negative resistance",
+            "hi": "ऋणात्मक प्रतिरोध बनता है"
+          },
+          "reason": {
+            "en": "Reactance magnitude is not a dissipative negative resistance.",
+            "hi": "प्रतिघात परिमाण ऋणात्मक अपव्ययी प्रतिरोध नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Series LCR impedance is",
+        "hi": "श्रेणी LCR प्रतिबाधा है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "√[R²+(XL−XC)²]",
+            "hi": "√[R²+(XL−XC)²]"
+          },
+          "reason": {
+            "en": "Reactive voltages oppose in the phasor sum.",
+            "hi": "फेजर योग में प्रतिक्रियाशील वोल्टताएँ विपरीत हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "R+XL+XC",
+            "hi": "R+XL+XC"
+          },
+          "reason": {
+            "en": "Magnitudes cannot be added as if in phase.",
+            "hi": "परिमाण समान कला मानकर नहीं जोड़ सकते।"
+          }
+        },
+        {
+          "text": {
+            "en": "XL−XC only",
+            "hi": "केवल XL−XC"
+          },
+          "reason": {
+            "en": "This omits resistance.",
+            "hi": "इसमें प्रतिरोध छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "R²+XL²+XC²",
+            "hi": "R²+XL²+XC²"
+          },
+          "reason": {
+            "en": "This lacks a square root and correct vector difference.",
+            "hi": "वर्गमूल और सही सदिश अंतर नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At series resonance",
+        "hi": "श्रेणी अनुनाद पर"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "XL=XC",
+            "hi": "XL=XC"
+          },
+          "reason": {
+            "en": "The net reactive part vanishes.",
+            "hi": "कुल प्रतिक्रियाशील भाग शून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "XL=0 always",
+            "hi": "हमेशा XL=0"
+          },
+          "reason": {
+            "en": "Both reactances can be nonzero and equal.",
+            "hi": "दोनों अशून्य और समान हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Current is minimum",
+            "hi": "धारा न्यूनतम"
+          },
+          "reason": {
+            "en": "At fixed R,V it is maximum.",
+            "hi": "स्थिर R,V पर अधिकतम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Z=0 for any R",
+            "hi": "हर R पर Z=0"
+          },
+          "reason": {
+            "en": "Z equals R at resonance.",
+            "hi": "अनुनाद पर Z=R।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A pure ideal capacitor absorbs average power",
+        "hi": "शुद्ध आदर्श संधारित्र की औसत अवशोषित शक्ति"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "It returns stored energy over the cycle.",
+            "hi": "चक्र में संचित ऊर्जा वापस देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "VI",
+            "hi": "VI"
+          },
+          "reason": {
+            "en": "That assumes unit power factor.",
+            "hi": "उसमें शक्ति गुणांक 1 माना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always negative",
+            "hi": "हमेशा ऋणात्मक"
+          },
+          "reason": {
+            "en": "Positive and negative instantaneous contributions average to zero.",
+            "hi": "धन-ऋण तात्क्षणिक योगदान का औसत शून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "I²XC",
+            "hi": "I²XC"
+          },
+          "reason": {
+            "en": "Reactance is not a dissipative resistance.",
+            "hi": "प्रतिघात अपव्ययी प्रतिरोध नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Power factor in series LCR is",
+        "hi": "श्रेणी LCR में शक्ति गुणांक है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "R/Z",
+            "hi": "R/Z"
+          },
+          "reason": {
+            "en": "cosφ=R/Z.",
+            "hi": "cosφ=R/Z।"
+          }
+        },
+        {
+          "text": {
+            "en": "Z/R",
+            "hi": "Z/R"
+          },
+          "reason": {
+            "en": "This can exceed 1 and is the inverse.",
+            "hi": "यह 1 से अधिक हो सकता और उलटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "XL/XC",
+            "hi": "XL/XC"
+          },
+          "reason": {
+            "en": "This does not measure the phase cosine.",
+            "hi": "यह कला की कोज्या नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always 1",
+            "hi": "हमेशा 1"
+          },
+          "reason": {
+            "en": "It equals 1 at net-zero reactance only.",
+            "hi": "कुल शून्य प्रतिघात पर 1 होता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An ideal transformer with Ns/Np=4 gives",
+        "hi": "Ns/Np=4 का आदर्श ट्रांसफॉर्मर देता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Vs=4Vp",
+            "hi": "Vs=4Vp"
+          },
+          "reason": {
+            "en": "Voltage follows turns ratio.",
+            "hi": "वोल्टता फेर अनुपात के अनुसार।"
+          }
+        },
+        {
+          "text": {
+            "en": "Is=4Ip",
+            "hi": "Is=4Ip"
+          },
+          "reason": {
+            "en": "Current ratio is inverse for ideal transfer.",
+            "hi": "आदर्श अंतरण में धारा अनुपात उलटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Four times input power",
+            "hi": "इनपुट से 4 गुनी शक्ति"
+          },
+          "reason": {
+            "en": "That violates ideal power conservation.",
+            "hi": "यह शक्ति संरक्षण का उल्लंघन।"
+          }
+        },
+        {
+          "text": {
+            "en": "Continuous secondary emf from steady DC",
+            "hi": "स्थिर DC से निरंतर द्वितीयक emf"
+          },
+          "reason": {
+            "en": "Changing linked flux is required.",
+            "hi": "बदलता संबद्ध फ्लक्स चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For ω=200 rad/s and L=0.1 H, XL equals",
+        "hi": "ω=200 rad/s और L=0.1 H पर XL है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "20 Ω",
+            "hi": "20 Ω"
+          },
+          "reason": {
+            "en": "ωL=200×0.1=20.",
+            "hi": "ωL=200×0.1=20।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 Ω",
+            "hi": "2 Ω"
+          },
+          "reason": {
+            "en": "A factor 10 was lost.",
+            "hi": "10 का गुणक छूटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "2000 Ω",
+            "hi": "2000 Ω"
+          },
+          "reason": {
+            "en": "Multiplication was replaced incorrectly.",
+            "hi": "गुणन गलत बदला।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.0005 Ω",
+            "hi": "0.0005 Ω"
+          },
+          "reason": {
+            "en": "This resembles reciprocal reactance, not XL.",
+            "hi": "यह उलटे प्रतिघात जैसा है, XL नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define rms current by its heating effect.",
+        "hi": "ऊष्मीय प्रभाव से rms धारा परिभाषित करें।"
+      },
+      "answer": {
+        "en": "It is the DC current producing equal heat in the same resistance over the same time.",
+        "hi": "यह वही DC धारा है जो समान प्रतिरोध में समान समय में बराबर ऊष्मा दे।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are L and C voltage drops subtracted in the phasor triangle?",
+        "hi": "फेजर त्रिभुज में L,C के वोल्टता पात क्यों घटते हैं?"
+      },
+      "answer": {
+        "en": "They are 180° apart relative to the common current, so their vector contributions oppose.",
+        "hi": "समान धारा के सापेक्ष वे 180° अलग हैं, इसलिए सदिश योगदान विपरीत हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the condition and frequency of series resonance.",
+        "hi": "श्रेणी अनुनाद की शर्त और आवृत्ति लिखें।"
+      },
+      "answer": {
+        "en": "XL=XC and f0=1/(2π√LC); Z=R in the ideal model.",
+        "hi": "XL=XC तथा f0=1/(2π√LC); आदर्श मॉडल में Z=R।"
+      }
+    },
+    {
+      "question": {
+        "en": "A load has 200 V rms, 3 A rms and cosφ=0.8. Find power.",
+        "hi": "भार पर 200 V rms,3 A rms,cosφ=0.8 है। शक्ति निकालें।"
+      },
+      "answer": {
+        "en": "P=200×3×0.8=480 W.",
+        "hi": "P=200×3×0.8=480 W।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why high-voltage transmission reduces wire heating for fixed power.",
+        "hi": "स्थिर शक्ति पर उच्च वोल्टता प्रेषण तार की ऊष्मा क्यों घटाता है?"
+      },
+      "answer": {
+        "en": "It lowers current; at the same wire resistance, I²R loss falls.",
+        "hi": "धारा घटती है; समान तार प्रतिरोध पर I²R हानि घटती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish transformer power factor from efficiency.",
+        "hi": "ट्रांसफॉर्मर के शक्ति गुणांक और दक्षता में अंतर करें।"
+      },
+      "answer": {
+        "en": "Power factor concerns phase and average input power; efficiency compares useful output power with input power.",
+        "hi": "शक्ति गुणांक कला और औसत इनपुट शक्ति से, दक्षता उपयोगी आउटपुट/इनपुट शक्ति से संबंधित है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Rms gives an equal-heating DC value.",
+      "hi": "rms समान ऊष्मा वाली DC का मान देता है।"
+    },
+    {
+      "en": "Inductor current lags and capacitor current leads.",
+      "hi": "प्रेरक में धारा पीछे, संधारित्र में आगे।"
+    },
+    {
+      "en": "LCR voltages require a phasor sum.",
+      "hi": "LCR वोल्टताओं का फेजर योग चाहिए।"
+    },
+    {
+      "en": "Resonance occurs at XL=XC.",
+      "hi": "अनुनाद XL=XC पर है।"
+    },
+    {
+      "en": "An ideal transformer conserves transferred power.",
+      "hi": "आदर्श ट्रांसफॉर्मर अंतरित शक्ति संरक्षित रखता है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not mix peak and rms values, add LCR voltage magnitudes directly, or assume a step-up transformer increases power.",
+    "hi": "शिखर और rms मान न मिलाएँ, LCR वोल्टता परिमाण सीधे न जोड़ें और स्टेप-अप ट्रांसफॉर्मर से शक्ति बढ़ी न मानें।"
+  },
+  "goal": {
+    "en": "Connect AC phase, reactance, resonance and power.",
+    "hi": "AC की कला, प्रतिघात, अनुनाद और शक्ति जोड़ें।"
+  },
+  "conceptMap": "साइनाकार तरंग → rms → फेजर → LCR → अनुनाद → शक्ति → ट्रांसफॉर्मर",
+  "conceptMapEn": "Sinusoid → rms → phasors → LCR → resonance → power → transformer",
+  "editionBasis": {
+    "en": "Original study explanations for current NCERT Physics XII and UP Board 2026–27. Use the prescribed text and practical work too. UP Board-specific topics are identified where scope differs.",
+    "hi": "वर्तमान NCERT भौतिकी कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और प्रयोग भी साथ पढ़ें। जहाँ दायरा अलग है, यूपी बोर्ड के अतिरिक्त विषय पहचाने गए हैं।"
+  },
+  "sources": [
+    {
+      "title": "UPMSP Physics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Physics XII Chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/leph107.pdf"
+    }
+  ]
+}

@@ -1,0 +1,1050 @@
+{
+  "number": 5,
+  "id": "biology12-05",
+  "title": {
+    "en": "Molecular Basis of Inheritance",
+    "hi": "वंशागति का आणविक आधार"
+  },
+  "unit": {
+    "en": "Biology",
+    "hi": "जीव विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Evidence for genetic material",
+        "hi": "आनुवंशिक पदार्थ के प्रमाण"
+      },
+      "paragraphs": [
+        {
+          "en": "Transformation and phage experiments established DNA as the genetic material in the studied systems. Some viruses instead have RNA genomes; the evidence must be tied to experimental controls.",
+          "hi": "आनुवंशिक पदार्थ (Genetic material) को सूचना संचित करनी, अपनी प्रतिकृति बनानी, विविधता उत्पन्न होने देना और अभिव्यक्ति निर्देशित करनी चाहिए। ग्रिफिथ के जीवाणु रूपांतरण (Transformation) प्रयोग ने दिखाया कि मृत रोगकारी जीवाणुओं से कोई कारक जीवित गैररोगकारी जीवाणुओं को बदल सकता है; इससे अकेले उस कारक की रासायनिक पहचान नहीं हुई। एवरी, मैकलियोड तथा मैकार्टी ने एंजाइम उपचारों द्वारा DNA की रूपांतरकारी भूमिका स्पष्ट की। प्रोटीएज या RNase से रूपांतरण बना रहा, जबकि DNase से रुक गया। हर्शी और चेज ने जीवाणुभोजी में रेडियोसक्रिय संकेतकों से DNA तथा प्रोटीन का अनुसरण किया; संक्रमण में DNA जीवाणु में प्रवेश करने वाला मुख्य आनुवंशिक घटक पाया गया। इन प्रयोगों के निष्कर्षों को उनके जीव और परिस्थितियों से जोड़कर समझें। अधिकांश जीवों में DNA आनुवंशिक पदार्थ है, जबकि कुछ विषाणुओं में RNA यह भूमिका निभाता है। इसलिए सभी जैविक तंत्रों में केवल DNA ही संभव कहना गलत है। प्रयोग में नियंत्रण, अलग-अलग उपचार और देखे परिणाम को क्रम से लिखना प्रमाण की शक्ति समझाता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Griffith showed transformation, not the chemical identity by itself.",
+          "hi": "ग्रिफिथ ने रूपांतरण दिखाया; DNA की रासायनिक पहचान बाद के अलग प्रयोगों से स्पष्ट हुई।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which enzyme blocked DNA-mediated transformation?",
+          "hi": "DNA आधारित रूपांतरण किस एंजाइम से रुका?"
+        },
+        "answer": {
+          "en": "DNase.",
+          "hi": "DNase से।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "DNA structure and antiparallel strands",
+        "hi": "DNA संरचना और प्रतिसमांतर शृंखलाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "DNA nucleotides form sugar-phosphate backbones and complementary antiparallel strands. A–T has2hydrogen bonds and G–C has3; Chargaff equality applies to ordinary double-stranded DNA, not necessarily one strand.",
+          "hi": "न्यूक्लियोटाइड (Nucleotide) में शर्करा, फॉस्फेट और नाइट्रोजनी क्षारक होते हैं। DNA में डीऑक्सीराइबोज और A,T,G,C क्षारक हैं; RNA में सामान्यतः राइबोज तथा T के स्थान पर U होता है। न्यूक्लियोसाइड में फॉस्फेट नहीं होता। एक शृंखला के न्यूक्लियोटाइड फॉस्फोडाइएस्टर आबंध से जुड़ते हैं। द्विकुंडलित DNA की 2 शृंखलाएँ प्रतिसमांतर (Antiparallel) हैं; एक 5′→3′ तो दूसरी 3′→5′ दिशा में है। पूरक क्षारक युग्मन (Complementary base pairing) में A,T से 2 और G,C से 3 हाइड्रोजन आबंध बनाता है। चारगाफ संबंध A=T और G=C सामान्य द्विशृंखलित DNA पर लागू हैं; एक अलग शृंखला में ये समानताएँ आवश्यक नहीं। DNA के शर्करा-फॉस्फेट ढाँचे और शृंखलाओं के बीच हाइड्रोजन आबंध को अलग पहचानें। यदि दी शृंखला 5′-ATGC-3′ है तो सामने पूरक 3′-TACG-5′ होगा। उसी पूरक को 5′ से लिखने पर 5′-GCAT-3′ मिलता है। दिशा बदलने पर अक्षरों का क्रम भी उलटना जरूरी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Always write both strand ends.",
+          "hi": "पूरक शृंखला लिखते समय दोनों सिरों पर 5′ और 3′ लगाएँ; केवल अक्षरों की अदला-बदली पर्याप्त नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is opposite5′-AT-3′?",
+          "hi": "5′-AT-3′ के सामने क्या होगा?"
+        },
+        "answer": {
+          "en": "3′-TA-5′.",
+          "hi": "3′-TA-5′।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Packaging and semiconservative replication",
+        "hi": "पैकेजिंग और अर्धसंरक्षी प्रतिकृति"
+      },
+      "paragraphs": [
+        {
+          "en": "DNA is packaged around histones in eukaryotes. Semiconservative replication retains one old strand in each daughter duplex; both new strands grow5′→3′, with discontinuous synthesis on the lagging strand.",
+          "hi": "यूकेरियोट में लंबा DNA हिस्टोन प्रोटीनों पर लिपटकर न्यूक्लियोसोम (Nucleosome) और उच्चतर पैकेजिंग बनाता है। केंद्रक में DNA की मात्रा और गुणसूत्र संख्या एक ही बात नहीं हैं। प्रतिकृति (Replication) में प्रत्येक पुरानी शृंखला नई पूरक शृंखला के लिए साँचा बनती है; प्रत्येक नई द्विशृंखला में 1 पुरानी और 1 नई शृंखला रहती है। इसे अर्धसंरक्षी (Semiconservative) कहते हैं। मेसेलसन और स्टाल ने भारी तथा हल्के नाइट्रोजन वाले DNA घनत्वों से जीवाणु में यह मॉडल समर्थित किया। DNA पॉलिमरेज सामान्यतः नई शृंखला को 5′→3′ दिशा में बढ़ाता है और उपलब्ध 3′-OH पर न्यूक्लियोटाइड जोड़ता है। प्रतिसमांतर साँचे के कारण अग्रगामी शृंखला सतत और पश्चगामी शृंखला ओकाजाकी खंडों में बनती है, जिन्हें लाइगेज जोड़ता है। दोनों नई शृंखलाओं की रासायनिक संश्लेषण दिशा फिर भी 5′→3′ है। प्रतिकृति से पहले 1 द्विशृंखलित अणु हो तो 1 पूर्ण चक्र बाद 2 अणु होते हैं। कोशिका विभाजन न होने पर केवल DNA दुगुना होने को कोशिका संख्या दुगुनी होना न समझें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Lagging does not mean3′→5′ synthesis.",
+          "hi": "पश्चगामी शृंखला खंडों में बनती है; इससे न्यूक्लियोटाइड जोड़ने की दिशा 3′→5′ नहीं हो जाती।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many old strands are in one first-generation daughter duplex?",
+          "hi": "पहली पीढ़ी की 1 संतति द्विशृंखला में कितनी पुरानी शृंखला?"
+        },
+        "answer": {
+          "en": "One.",
+          "hi": "1 ।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Transcription and RNA processing",
+        "hi": "अनुलेखन और RNA प्रसंस्करण"
+      },
+      "paragraphs": [
+        {
+          "en": "RNA polymerase reads the template3′→5′ while synthesising RNA5′→3′. Coding DNA matches RNA except T/U; eukaryotic primary transcripts may undergo splicing, capping and tailing.",
+          "hi": "अनुलेखन (Transcription) में DNA के चुने भाग से RNA बनता है। RNA पॉलिमरेज साँचा शृंखला को 3′→5′ पढ़ता और RNA को 5′→3′ बनाता है। कोडिंग शृंखला का क्रम RNA से मिलता है, बस DNA का T, RNA में U होता है। साँचा तथा कोडिंग शब्द किसी जीन के संदर्भ में हैं; पूरे गुणसूत्र के लिए हर स्थान पर एक ही शृंखला अनिवार्यतः साँचा नहीं होती। अनुलेखन इकाई में प्रमोटर, संरचनात्मक जीन और टर्मिनेटर महत्त्वपूर्ण हैं। यूकेरियोट का प्राथमिक RNA अक्सर प्रसंस्करण से गुजरता है: स्प्लाइसिंग में इंट्रॉन हटाकर एक्सॉन जोड़े जाते हैं,5′ कैप और 3′ पॉली-A पुच्छ भी जुड़ सकते हैं। प्रोकैरियोट में केंद्रकीय अलगाव न होने के कारण अनुलेखन तथा अनुवाद का युग्मन संभव है। RNA बनना और DNA प्रतिकृति अलग प्रक्रियाएँ हैं; पहले में चुना जीन और RNA उत्पाद, दूसरे में DNA की प्रतियाँ बनती हैं। लिखित प्रश्न में पहले दी शृंखला की दिशा तथा भूमिका पहचानें, फिर पूरक अक्षर चुनें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Coding DNA is not the strand directly copied.",
+          "hi": "कोडिंग शृंखला का क्रम RNA जैसा है, पर प्रत्यक्ष पढ़ा जाने वाला DNA साँचा उससे पूरक होता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Template3′-TAC-5′ gives which RNA?",
+          "hi": "साँचा 3′-TAC-5′ से कौन सा RNA?"
+        },
+        "answer": {
+          "en": "5′-AUG-3′.",
+          "hi": "5′-AUG-3′।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Genetic code and translation",
+        "hi": "आनुवंशिक कूट और अनुवाद"
+      },
+      "paragraphs": [
+        {
+          "en": "The triplet code has64codons, including3ordinary stop signals. Translation reads mRNA5′→3′; complementary antiparallel tRNA anticodons bring amino acids, and stop codons do not add an amino acid.",
+          "hi": "आनुवंशिक कूट (Genetic code) में mRNA के 3 लगातार क्षारक एक कोडॉन (Codon) बनाते हैं। 4 क्षारकों से 64 संभावित त्रिक हैं; सामान्य कूट में 61 अमीनो अम्ल निर्देशित करते और 3 समाप्ति कोडॉन हैं। UAA,UAG,UGA सामान्यतः समापन बताते हैं, अमीनो अम्ल नहीं। AUG सामान्य आरंभ कोडॉन है और मेथियोनीन भी निर्देशित करता है। कूट अपह्रासित (Degenerate) है क्योंकि कई कोडॉन एक अमीनो अम्ल बता सकते हैं; अस्पष्ट (Ambiguous) नहीं, क्योंकि सामान्य संदर्भ में एक कोडॉन का अर्थ निश्चित होता है। अनुवाद (Translation) में राइबोसोम mRNA को 5′→3′ पढ़ता है। tRNA का प्रतिकोडॉन कोडॉन से पूरक तथा प्रतिसमांतर जुड़ता है और संबंधित अमीनो अम्ल लाता है। अमीनो अम्लों के बीच पेप्टाइड आबंध से पॉलीपेप्टाइड बनता है। सही पठन चौखटा (Reading frame) जरूरी है; शुरू से 1 या 2 क्षारक बदलकर पढ़ने पर पूरा त्रिक विभाजन बदल सकता है। समाप्ति कोडॉन को अमीनो अम्ल संख्या में न गिनें। केवल कुल RNA लंबाई से प्रोटीन की लंबाई निकालना तभी सही है जब अनूदित भाग और समाप्ति की जानकारी स्पष्ट हो।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Degenerate means several codons can specify one amino acid.",
+          "hi": "अपह्रासित का अर्थ कई कोडॉन का 1 अमीनो अम्ल बताना है;1 कोडॉन के अनिश्चित अनेक अर्थ होना नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does UAA add an amino acid?",
+          "hi": "क्या UAA अमीनो अम्ल जोड़ता है?"
+        },
+        "answer": {
+          "en": "Normally no; it is a stop codon.",
+          "hi": "सामान्यतः नहीं; यह समापन कोडॉन है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Regulation through the lac operon",
+        "hi": "लैक प्रचालेक से नियमन"
+      },
+      "paragraphs": [
+        {
+          "en": "The lac operon is an inducible regulatory model. In the absence of inducer, repressor binding to the operator inhibits transcription; inducer reduces effective repression. The operator is DNA, not a protein.",
+          "hi": "जीन अभिव्यक्ति (Gene expression) हर जीन को हर समय समान मात्रा में चलाने का नाम नहीं है। जीवाणु के लैक प्रचालेक (Lac operon) में लैक्टोज उपयोग से जुड़े संरचनात्मक जीन z,y,a का अनुलेखन एक साझा नियामक व्यवस्था से जुड़ा है। नियामक जीन से बना दमनकारी (Repressor) प्रेरक की अनुपस्थिति में ऑपरेटर से जुड़कर अनुलेखन बाधित कर सकता है। लैक्टोज से संबंधित प्रेरक के उपस्थित होने पर दमनकारी का सक्रिय रूप बदलता है, ऑपरेटर से उसका जुड़ाव कम होता और अनुलेखन संभव होता है। इसे प्रेरणीय (Inducible) तंत्र कहते हैं। z से बीटा-गैलेक्टोसिडेज, y से परमीएज और a से ट्रांसएसीटिलेज संबंधित हैं। पाठ्यपुस्तक का यह मॉडल नकारात्मक नियमन का सरल परिचय है; वास्तविक अभिव्यक्ति अन्य पोषक स्थितियों पर भी निर्भर हो सकती है। प्रेरक को सीधे DNA काटने वाला एंजाइम न मानें। ऑपरेटर DNA का नियामक स्थल है, स्वयं दमनकारी प्रोटीन नहीं। जीन, उसके RNA तथा उसके प्रोटीन उत्पाद को अलग शब्दों में लिखना इस अध्याय में विशेष उपयोगी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Induction permits expression; it does not change the structural-gene sequence.",
+          "hi": "प्रेरण अभिव्यक्ति की अनुमति देती है; इससे संरचनात्मक जीनों का DNA क्रम काटकर नहीं बदलता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the operator chemically?",
+          "hi": "ऑपरेटर रासायनिक रूप से क्या है?"
+        },
+        "answer": {
+          "en": "A regulatory DNA region.",
+          "hi": "नियामक DNA क्षेत्र।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Genome information and DNA profiling",
+        "hi": "जीनोम सूचना और DNA प्रोफाइलिंग"
+      },
+      "paragraphs": [
+        {
+          "en": "Genome projects combine sequencing, mapping and bioinformatics. DNA profiling compares selected polymorphic regions rather than every trait; VNTR patterns illustrate inherited repeat variation and require careful controls.",
+          "hi": "जीनोम (Genome) किसी जीव की आनुवंशिक सूचना का समग्र संग्रह है। मानव जीनोम परियोजना ने अनुक्रमण, मानचित्रण और सूचना विश्लेषण को जोड़ा; पुस्तक में दिए आँकड़े उस परियोजना के संदर्भ के हैं, बदलते वर्तमान जीन काउंटर नहीं। मानवों में बहुत बड़ा DNA भाग समान होता है, पर कुछ स्थानों पर विविधता पहचान के अध्ययन में उपयोगी है। DNA फिंगरप्रिंटिंग (DNA fingerprinting) या प्रोफाइलिंग चयनित बहुरूपी क्षेत्रों की तुलना करती है; यह उँगलियों की त्वचा का चित्र नहीं है। पाठ्यपुस्तकीय VNTR आधारित विधि पुनरावृत्त अनुक्रमों की लंबाई में विविधता का उदाहरण देती है। विभिन्न नमूनों में बैंड तुलना करते समय नमूना शुद्धता, नियंत्रण और संदर्भ महत्त्वपूर्ण हैं। संतान को कुछ आनुवंशिक संकेत प्रत्येक जैविक जनक से मिलते हैं, लेकिन केवल कुछ बैंडों का मेल सभी संभावित संबंधों का पूर्ण प्रमाण नहीं। प्रोफाइल को रोग, बुद्धि या व्यक्तित्व की संपूर्ण भविष्यवाणी न समझें। आनुवंशिक सूचना निजी हो सकती है; शैक्षिक नकली डेटा वास्तविक लोगों की पहचान का विकल्प नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use fictional profiles in classroom exercises.",
+          "hi": "कक्षा में काल्पनिक प्रोफाइल उपयोग करें; असली व्यक्ति की पहचान या सभी लक्षण केवल कुछ बैंडों से तय नहीं होते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does DNA profiling photograph a fingertip?",
+          "hi": "क्या DNA प्रोफाइलिंग उँगली की तस्वीर है?"
+        },
+        "answer": {
+          "en": "No; it compares DNA variation.",
+          "hi": "नहीं; यह DNA विविधता मिलाती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Mutation, frame and information flow",
+        "hi": "उत्परिवर्तन, चौखटा और सूचना प्रवाह"
+      },
+      "paragraphs": [
+        {
+          "en": "Mutations can be silent, missense or stop-changing in their effects. Non-triplet insertions or deletions in coding sequence may shift the reading frame. Reverse transcription is RNA→DNA, not protein→DNA.",
+          "hi": "उत्परिवर्तन (Mutation) DNA क्रम में परिवर्तन है। एक क्षारक युग्म का प्रतिस्थापन कभी अमीनो अम्ल बदलता, कभी उसी अमीनो अम्ल का कोडॉन देता और कभी समाप्ति संकेत बना सकता है। इसलिए हर प्रतिस्थापन समान प्रभाव नहीं देता। अनूदित क्षेत्र में 3 के गुणज के अलावा क्षारक जुड़ने या हटने से पठन चौखटा खिसक सकता है; इसे फ्रेमशिफ्ट (Frameshift) कहते हैं। सिकल सेल एनीमिया के पाठ्यपुस्तकीय उदाहरण में बीटा-ग्लोबिन के विशिष्ट कोडॉन परिवर्तन से ग्लूटामिक अम्ल के स्थान पर वैलीन आता है। यह उदाहरण दिखाता है कि आणविक परिवर्तन कोशिकीय और शरीर स्तर के प्रभावों से कैसे जुड़ सकता है। केंद्रीय सिद्धांत (Central dogma) का सामान्य मार्ग DNA→RNA→प्रोटीन है। रेट्रोविषाणुओं में RNA से DNA बनना उत्क्रम अनुलेखन (Reverse transcription) है; इसे प्रोटीन से DNA बनना न समझें। सूचना प्रवाह, अणु संश्लेषण और कोशिका विभाजन अलग प्रक्रियाएँ हैं। अंतिम उत्तर जाँचते समय दिशा, साँचा, त्रिक विभाजन और दिए जैविक संदर्भ चारों को दोबारा पढ़ें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A stop signal changes translation, not necessarily every upstream codon.",
+          "hi": "समापन संकेत अनुवाद रोकता है; इससे उससे पहले के हर कोडॉन का अर्थ स्वतः नहीं बदलता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is reverse transcription?",
+          "hi": "उत्क्रम अनुलेखन क्या है?"
+        },
+        "answer": {
+          "en": "DNA synthesis using RNA as template.",
+          "hi": "RNA साँचे से DNA संश्लेषण।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Double-stranded DNA:A=T,G=C",
+      "meaning": {
+        "en": "Equalities concern total bases across the duplex,not necessarily an isolated strand.",
+        "hi": "समानताएँ पूरी द्विशृंखला के कुल क्षारकों की हैं,अकेली शृंखला की जरूरी नहीं।"
+      },
+      "units": {
+        "en": "Base counts or percentages.",
+        "hi": "क्षारक संख्या या प्रतिशत।"
+      }
+    },
+    {
+      "expression": "64codons=61sense+3stop",
+      "meaning": {
+        "en": "The ordinary genetic-code model;stop signals do not add amino acids.",
+        "hi": "सामान्य आनुवंशिक कूट मॉडल;समापन संकेत अमीनो अम्ल नहीं जोड़ते।"
+      },
+      "units": {
+        "en": "Codon counts.",
+        "hi": "कोडॉन गिनती।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Write an antiparallel complement.",
+        "hi": "प्रतिसमांतर पूरक लिखें।"
+      },
+      "given": {
+        "en": "5′-ATGC-3′ DNA.",
+        "hi": "DNA5′-ATGC-3′।"
+      },
+      "find": {
+        "en": "Opposite strand and its5′ notation.",
+        "hi": "सामने की शृंखला और उसका 5′ रूप।"
+      },
+      "formula": {
+        "en": "A↔T;G↔C; opposite directions.",
+        "hi": "A↔T;G↔C; विपरीत दिशाएँ।"
+      },
+      "steps": [
+        {
+          "en": "Pair each base:ATGC→TACG.",
+          "hi": "हर क्षारक मिलाएँ:ATGC→TACG।"
+        },
+        {
+          "en": "Assign opposite ends3′-TACG-5′.",
+          "hi": "विपरीत सिरे दें:3′-TACG-5′।"
+        },
+        {
+          "en": "Reverse order to write from5′.",
+          "hi": "5′ से लिखने के लिए क्रम उलटें।"
+        }
+      ],
+      "answer": {
+        "en": "3′-TACG-5′; equivalently5′-GCAT-3′.",
+        "hi": "3′-TACG-5′; अर्थात 5′-GCAT-3′।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Transcribe a short template.",
+        "hi": "छोटे साँचे का अनुलेखन करें।"
+      },
+      "given": {
+        "en": "Template3′-TACGGA-5′.",
+        "hi": "साँचा 3′-TACGGA-5′।"
+      },
+      "find": {
+        "en": "mRNA sequence.",
+        "hi": "mRNA क्रम।"
+      },
+      "formula": {
+        "en": "Template read3′→5′; RNA grows5′→3′.",
+        "hi": "साँचा 3′→5′ पढ़ें;RNA5′→3′ बनता है।"
+      },
+      "steps": [
+        {
+          "en": "Identify the given strand as template, not coding.",
+          "hi": "दी शृंखला साँचा है, कोडिंग नहीं।"
+        },
+        {
+          "en": "Use RNA complements A,U,G,C.",
+          "hi": "RNA के पूरक A,U,G,C लगाएँ।"
+        },
+        {
+          "en": "Write product with5′ at the left.",
+          "hi": "उत्पाद में बायाँ सिरा 5′ लिखें।"
+        }
+      ],
+      "answer": {
+        "en": "5′-AUGCCU-3′.",
+        "hi": "5′-AUGCCU-3′।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Count bases in double-stranded DNA.",
+        "hi": "द्विशृंखलित DNA के क्षारक गिनें।"
+      },
+      "given": {
+        "en": "100basepairs; A=30% of total bases.",
+        "hi": "100 क्षारक युग्म;कुल क्षारकों में A=30%।"
+      },
+      "find": {
+        "en": "Counts of A,T,G,C.",
+        "hi": "A,T,G,C की संख्या।"
+      },
+      "formula": {
+        "en": "Total bases=2×basepairs;A=T,G=C.",
+        "hi": "कुल क्षारक=2×युग्म;A=T,G=C।"
+      },
+      "steps": [
+        {
+          "en": "Total nucleotides=200.",
+          "hi": "कुल न्यूक्लियोटाइड=200 ।"
+        },
+        {
+          "en": "A=T=0.30×200=60 each.",
+          "hi": "A=T=0.30×200=60 प्रत्येक।"
+        },
+        {
+          "en": "The remaining80 split equally into G,C.",
+          "hi": "शेष 80 को G,C में बराबर बाँटें।"
+        }
+      ],
+      "answer": {
+        "en": "A60,T60,G40,C40.",
+        "hi": "A60,T60,G40,C40 ।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Translate a defined coding region.",
+        "hi": "निर्धारित कूट भाग का अनुवाद करें।"
+      },
+      "given": {
+        "en": "mRNA5′-AUG GCU UAA-3′; AUG start.",
+        "hi": "mRNA5′-AUG GCU UAA-3′;AUG आरंभ।"
+      },
+      "find": {
+        "en": "Amino-acid count.",
+        "hi": "अमीनो अम्ल संख्या।"
+      },
+      "formula": {
+        "en": "Read triplets; stop adds no amino acid.",
+        "hi": "त्रिक पढ़ें;समापन अमीनो अम्ल नहीं जोड़ता।"
+      },
+      "steps": [
+        {
+          "en": "Split into AUG,GCU,UAA.",
+          "hi": "AUG,GCU,UAA में बाँटें।"
+        },
+        {
+          "en": "AUG and GCU encode Met and Ala.",
+          "hi": "AUG,GCU से Met,Ala मिलते हैं।"
+        },
+        {
+          "en": "Stop at UAA without adding a residue.",
+          "hi": "UAA पर बिना नया अवशेष जोड़े रोकें।"
+        }
+      ],
+      "answer": {
+        "en": "2amino acids before processing:Met–Ala.",
+        "hi": "प्रसंस्करण से पहले 2 अमीनो अम्ल:Met–Ala।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Follow semiconservative isotope bands.",
+        "hi": "अर्धसंरक्षी समस्थानिक बैंड समझें।"
+      },
+      "given": {
+        "en": "Fully heavy DNA shifted to light medium;2complete replication rounds.",
+        "hi": "पूरी भारी DNA को हल्के माध्यम में 2 पूर्ण प्रतिकृति चक्र।"
+      },
+      "find": {
+        "en": "Hybrid and light duplex fractions.",
+        "hi": "संकर तथा हल्की द्विशृंखलाओं का अंश।"
+      },
+      "formula": {
+        "en": "Each daughter duplex keeps one parental strand.",
+        "hi": "हर संतति द्विशृंखला में 1 जनकीय शृंखला रहती है।"
+      },
+      "steps": [
+        {
+          "en": "After round1, both duplexes are heavy-light hybrids.",
+          "hi": "चक्र 1 बाद दोनों द्विशृंखलाएँ भारी-हल्की संकर।"
+        },
+        {
+          "en": "Each hybrid next produces one hybrid and one light duplex.",
+          "hi": "हर संकर अगली बार 1 संकर और 1 हल्की देता है।"
+        },
+        {
+          "en": "Among4duplexes,count2hybrid and2light.",
+          "hi": "4 द्विशृंखलाओं में 2 संकर,2 हल्की गिनें।"
+        }
+      ],
+      "answer": {
+        "en": "1/2hybrid,1/2light; no fully heavy band.",
+        "hi": "1/2 संकर,1/2 हल्की;पूरी भारी बैंड नहीं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "What identifies DNA in transformation experiments?",
+        "hi": "रूपांतरण प्रयोग में DNA की पहचान किससे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "DNase abolishes transformation",
+            "hi": "DNase से रूपांतरण रुकना"
+          },
+          "reason": {
+            "en": "Destroying DNA removes the transforming activity.",
+            "hi": "DNA नष्ट होने पर रूपांतरकारी क्रिया मिटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Protease always destroys transformation",
+            "hi": "प्रोटीएज हमेशा रूपांतरण रोकता है"
+          },
+          "reason": {
+            "en": "This was not the decisive observed result.",
+            "hi": "यह निर्णायक पाया परिणाम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Griffith sequenced DNA",
+            "hi": "ग्रिफिथ ने DNA अनुक्रमित किया"
+          },
+          "reason": {
+            "en": "His experiment showed transformation, not sequencing.",
+            "hi": "उन्होंने रूपांतरण दिखाया,अनुक्रमण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "RNA is never genetic",
+            "hi": "RNA कभी आनुवंशिक नहीं"
+          },
+          "reason": {
+            "en": "Some viruses have RNA genomes.",
+            "hi": "कुछ विषाणुओं का जीनोम RNA है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "DNA strands are normally?",
+        "hi": "DNA शृंखलाएँ सामान्यतः कैसी?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Complementary and antiparallel",
+            "hi": "पूरक तथा प्रतिसमांतर"
+          },
+          "reason": {
+            "en": "Their5′→3′ directions are opposite.",
+            "hi": "दोनों की 5′→3′ दिशाएँ विपरीत हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Identical and parallel",
+            "hi": "समान तथा समांतर"
+          },
+          "reason": {
+            "en": "This conflicts with the standard duplex.",
+            "hi": "यह सामान्य द्विशृंखला से असंगत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Joined only by peptide bonds",
+            "hi": "केवल पेप्टाइड आबंध से जुड़ी"
+          },
+          "reason": {
+            "en": "Peptide bonds join amino acids.",
+            "hi": "पेप्टाइड आबंध अमीनो अम्ल जोड़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always RNA on one side",
+            "hi": "एक तरफ हमेशा RNA"
+          },
+          "reason": {
+            "en": "Ordinary double-stranded DNA has2DNA strands.",
+            "hi": "सामान्य द्विशृंखलित DNA में 2DNA शृंखलाएँ हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A G–C pair has how many hydrogen bonds?",
+        "hi": "G–C युग्म में कितने हाइड्रोजन आबंध?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "G–C forms3in the standard model.",
+            "hi": "सामान्य मॉडल में G–C के 3 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "A–T typically has2.",
+            "hi": "A–T के सामान्यतः 2 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "This does not describe standard G–C.",
+            "hi": "यह सामान्य G–C नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Complementary bases do hydrogen-bond.",
+            "hi": "पूरक क्षारकों में हाइड्रोजन आबंध हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "New DNA synthesis generally proceeds?",
+        "hi": "नया DNA संश्लेषण सामान्यतः किस दिशा में?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5′→3′",
+            "hi": "5′→3′"
+          },
+          "reason": {
+            "en": "Polymerase extends a3′-OH end.",
+            "hi": "पॉलिमरेज 3′-OH सिरे पर बढ़ाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3′→5′ on lagging strands",
+            "hi": "पश्चगामी पर 3′→5′"
+          },
+          "reason": {
+            "en": "Fragments also grow5′→3′.",
+            "hi": "खंड भी 5′→3′ बढ़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Without any template",
+            "hi": "किसी साँचे बिना"
+          },
+          "reason": {
+            "en": "Replication uses parental templates.",
+            "hi": "प्रतिकृति जनकीय साँचे लेती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only protein→DNA",
+            "hi": "केवल प्रोटीन→DNA"
+          },
+          "reason": {
+            "en": "That is not ordinary replication.",
+            "hi": "यह सामान्य प्रतिकृति नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "RNA transcribed from template3′-TAC-5′ is?",
+        "hi": "साँचा 3′-TAC-5′ का RNA?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5′-AUG-3′",
+            "hi": "5′-AUG-3′"
+          },
+          "reason": {
+            "en": "RNA is complementary and antiparallel.",
+            "hi": "RNA पूरक तथा प्रतिसमांतर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5′-TAC-3′",
+            "hi": "5′-TAC-3′"
+          },
+          "reason": {
+            "en": "RNA normally uses U instead of T and complements the template.",
+            "hi": "RNA में Tके स्थान U और साँचे का पूरक चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "3′-AUG-5′",
+            "hi": "3′-AUG-5′"
+          },
+          "reason": {
+            "en": "This reverses product polarity.",
+            "hi": "इसमें उत्पाद दिशा उलटी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5′-UAC-3′",
+            "hi": "5′-UAC-3′"
+          },
+          "reason": {
+            "en": "This copies template letters rather than complementing.",
+            "hi": "यह पूरक बनाने के बजाय साँचा अक्षर लेता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is a normal stop codon?",
+        "hi": "सामान्य समापन कोडॉन कौन?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "UAA",
+            "hi": "UAA"
+          },
+          "reason": {
+            "en": "It signals translation termination.",
+            "hi": "यह अनुवाद समापन बताता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "AUG",
+            "hi": "AUG"
+          },
+          "reason": {
+            "en": "It specifies methionine and often start.",
+            "hi": "यह मेथियोनीन और अक्सर आरंभ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "GCU",
+            "hi": "GCU"
+          },
+          "reason": {
+            "en": "It specifies alanine.",
+            "hi": "यह एलनीन बताता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "UUU",
+            "hi": "UUU"
+          },
+          "reason": {
+            "en": "It specifies phenylalanine.",
+            "hi": "यह फेनिलएलनीन बताता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Degenerate code means?",
+        "hi": "अपह्रासित कूट का अर्थ?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Several codons can specify one amino acid",
+            "hi": "कई कोडॉन 1 अमीनो अम्ल बता सकते हैं"
+          },
+          "reason": {
+            "en": "Synonymous codons share a residue meaning.",
+            "hi": "समानार्थी कोडॉन 1 अवशेष बताते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "One codon randomly means every amino acid",
+            "hi": "1 कोडॉन मनमाने सभी अमीनो अम्ल बताता है"
+          },
+          "reason": {
+            "en": "The ordinary code is unambiguous in context.",
+            "hi": "सामान्य संदर्भ में कूट असंदिग्ध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No triplets exist",
+            "hi": "त्रिक नहीं होते"
+          },
+          "reason": {
+            "en": "Codons are triplets.",
+            "hi": "कोडॉन त्रिक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every codon is a stop",
+            "hi": "हर कोडॉन समापन"
+          },
+          "reason": {
+            "en": "Only3ordinary stop signals are listed.",
+            "hi": "सामान्यतः 3 समापन संकेत हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The lac operator is?",
+        "hi": "लैक ऑपरेटर क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Regulatory DNA region",
+            "hi": "नियामक DNA क्षेत्र"
+          },
+          "reason": {
+            "en": "Repressor binding here influences transcription.",
+            "hi": "यहाँ दमनकारी जुड़ना अनुलेखन प्रभावित करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A ribosomal protein",
+            "hi": "राइबोसोमल प्रोटीन"
+          },
+          "reason": {
+            "en": "Operator refers to a DNA site.",
+            "hi": "ऑपरेटर DNA स्थल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The lactose sugar itself",
+            "hi": "लैक्टोज शर्करा स्वयं"
+          },
+          "reason": {
+            "en": "The inducer and operator are different.",
+            "hi": "प्रेरक और ऑपरेटर अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A stop amino acid",
+            "hi": "समापन अमीनो अम्ल"
+          },
+          "reason": {
+            "en": "Stop signals are codons,not operator amino acids.",
+            "hi": "समापन कोडॉन संकेत है,ऑपरेटर अमीनो अम्ल नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Reverse transcription is?",
+        "hi": "उत्क्रम अनुलेखन क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "RNA→DNA",
+            "hi": "RNA→DNA"
+          },
+          "reason": {
+            "en": "Reverse transcriptase uses RNA to make DNA.",
+            "hi": "उत्क्रम अनुलेखक RNA से DNA बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Protein→DNA",
+            "hi": "प्रोटीन→DNA"
+          },
+          "reason": {
+            "en": "This is not reverse transcription.",
+            "hi": "यह उत्क्रम अनुलेखन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "DNA→protein directly",
+            "hi": "DNA→सीधे प्रोटीन"
+          },
+          "reason": {
+            "en": "Translation uses mRNA.",
+            "hi": "अनुवाद में mRNA है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sugar→RNA without genes",
+            "hi": "जीन बिना शर्करा→RNA"
+          },
+          "reason": {
+            "en": "This is not the information-flow definition.",
+            "hi": "यह सूचना प्रवाह परिभाषा नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "DNA profiling mainly compares?",
+        "hi": "DNA प्रोफाइलिंग मुख्यतः क्या मिलाती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Selected polymorphic DNA regions",
+            "hi": "चुने बहुरूपी DNA क्षेत्र"
+          },
+          "reason": {
+            "en": "Variation at these markers aids comparison.",
+            "hi": "इन चिह्नकों की विविधता तुलना में सहायक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only fingertip photographs",
+            "hi": "केवल उँगली तस्वीरें"
+          },
+          "reason": {
+            "en": "DNA fingerprints are not skin images.",
+            "hi": "DNA फिंगरप्रिंट त्वचा चित्र नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every personality trait directly",
+            "hi": "हर व्यक्तित्व लक्षण सीधे"
+          },
+          "reason": {
+            "en": "A limited profile cannot predict all traits.",
+            "hi": "सीमित प्रोफाइल सभी लक्षण नहीं बताती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only identical protein amounts",
+            "hi": "केवल समान प्रोटीन मात्रा"
+          },
+          "reason": {
+            "en": "The markers concern DNA variation.",
+            "hi": "चिह्नक DNA विविधता के हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Differentiate nucleoside and nucleotide.",
+        "hi": "न्यूक्लियोसाइड और न्यूक्लियोटाइड अलग करें।"
+      },
+      "answer": {
+        "en": "Nucleoside=base+sugar; nucleotide additionally contains phosphate.",
+        "hi": "न्यूक्लियोसाइड=क्षारक+शर्करा;न्यूक्लियोटाइड में फॉस्फेट भी है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain semiconservative replication.",
+        "hi": "अर्धसंरक्षी प्रतिकृति समझाएँ।"
+      },
+      "answer": {
+        "en": "Each parental strand templates a new complement,so each daughter duplex has one old and one new strand.",
+        "hi": "हर जनकीय शृंखला नया पूरक बनाती है;हर संतति द्विशृंखला में 1 पुरानी,1 नई शृंखला।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish template and coding strands.",
+        "hi": "साँचा और कोडिंग शृंखला अलग करें।"
+      },
+      "answer": {
+        "en": "Template is read3′→5′; RNA grows5′→3′. Coding DNA matches RNA sequence except T replaces U.",
+        "hi": "साँचा 3′→5′ पढ़ा जाता है;RNA5′→3′ बनता है।कोडिंग DNA में RNA जैसा क्रम,पर Uके स्थान T।"
+      }
+    },
+    {
+      "question": {
+        "en": "What are RNA processing steps?",
+        "hi": "RNA प्रसंस्करण के चरण क्या हैं?"
+      },
+      "answer": {
+        "en": "For typical eukaryotic primary mRNA:splicing removes introns and joins exons;capping and poly-A tailing modify the ends.",
+        "hi": "सामान्य यूकेरियोट प्राथमिक mRNA में स्प्लाइसिंग से इंट्रॉन हटते,एक्सॉन जुड़ते;कैप तथा पॉली-A पुच्छ सिरों को बदलते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain inducible lac regulation.",
+        "hi": "प्रेरणीय लैक नियमन समझाएँ।"
+      },
+      "answer": {
+        "en": "Without inducer,repressor can bind operator and inhibit transcription;inducer reduces repression,permitting structural-gene expression.",
+        "hi": "प्रेरक बिना दमनकारी ऑपरेटर से जुड़कर अनुलेखन बाधित कर सकता है;प्रेरक दमन घटाकर संरचनात्मक जीन अभिव्यक्ति संभव करता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does a one-base deletion shift the frame?",
+        "hi": "1 क्षारक हटने से चौखटा क्यों खिसकता है?"
+      },
+      "answer": {
+        "en": "Triplets downstream regroup because the missing length is not a multiple of3,if deletion lies inside the translated region.",
+        "hi": "अनूदित भाग में हटाई लंबाई 3 का गुणज नहीं होने पर आगे के त्रिक नए समूहों में बँटते हैं।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "DNA strands are complementary and antiparallel.",
+      "hi": "DNA शृंखलाएँ पूरक तथा प्रतिसमांतर हैं।"
+    },
+    {
+      "en": "Replication is semiconservative.",
+      "hi": "प्रतिकृति अर्धसंरक्षी है।"
+    },
+    {
+      "en": "Transcription produces RNA;translation produces polypeptide.",
+      "hi": "अनुलेखन RNA,अनुवाद पॉलीपेप्टाइड बनाता है।"
+    },
+    {
+      "en": "Write direction and reading frame explicitly.",
+      "hi": "दिशा और पठन चौखटा स्पष्ट लिखें।"
+    },
+    {
+      "en": "Regulation and variation change biological outcomes.",
+      "hi": "नियमन और विविधता जैविक परिणाम बदलते हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not copy a template as coding DNA, reverse strand ends without reversing sequence, or count stop codons as amino acids.",
+    "hi": "साँचे को कोडिंग DNA न मानें,क्रम उलटे बिना सिरे न बदलें और समापन कोडॉन को अमीनो अम्ल न गिनें।"
+  },
+  "goal": {
+    "en": "Track genetic information through DNA replication,RNA and protein.",
+    "hi": "DNA प्रतिकृति,RNA और प्रोटीन में आनुवंशिक सूचना का मार्ग समझें।"
+  },
+  "conceptMap": "DNA संरचना → प्रतिकृति → अनुलेखन → RNA → अनुवाद → प्रोटीन → नियमन और विविधता",
+  "conceptMapEn": "DNA structure → replication → transcription → RNA → translation → protein → regulation and variation",
+  "editionBasis": {
+    "en": "Original study explanations for NCERT Class 12 Biology and UP Board 2026–27; use the prescribed textbook and school practicals too.",
+    "hi": "NCERT कक्षा 12 जीव विज्ञान और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ; निर्धारित पुस्तक और विद्यालयी प्रयोग भी साथ करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Biology XII Chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/lebo105.pdf"
+    },
+    {
+      "title": "UPMSP Biology XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/153-Biology-Class-12.pdf"
+    }
+  ]
+}

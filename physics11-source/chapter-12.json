@@ -1,0 +1,1481 @@
+{
+  "number": 12,
+  "id": "physics11-12",
+  "title": {
+    "en": "Kinetic Theory",
+    "hi": "अणुगति सिद्धांत"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-12-1",
+      "title": {
+        "en": "Ideal gas pressure",
+        "hi": "आदर्श गैस दाब"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 33
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Temperature",
+            "hi": "ताप"
+          },
+          "min": 100,
+          "max": 600,
+          "step": 50,
+          "initial": 300,
+          "unit": "K"
+        }
+      ],
+      "noteIndex": 0,
+      "selectors": [],
+      "goal": {
+        "en": "Compare ideal-gas pressure as temperature changes.",
+        "hi": "ताप बदलने पर आदर्श गैस दाब की तुलना करें।"
+      },
+      "observe": {
+        "en": "Keep n = 1 mol and V = 0.024 m³ fixed; watch p and the symbolic particles.",
+        "hi": "n = 1 mol और V = 0.024 m³ स्थिर हैं; p और सांकेतिक कण देखें।"
+      },
+      "modelNote": {
+        "en": "Idealised teaching model; sizes, particle counts and animation speed are symbolic. Read physical values from the readouts, not screen distances.",
+        "hi": "यह आदर्श शिक्षण मॉडल है; आकार, कण संख्या और एनीमेशन चाल सांकेतिक हैं। भौतिक मान readout से पढ़ें, स्क्रीन की दूरी से नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "p = nRT/V is directly proportional to kelvin temperature when n and V stay fixed.",
+          "hi": "n और V स्थिर होने पर p = nRT/V केल्विन ताप के सीधे अनुपात में है।"
+        }
+      },
+      "realLife": {
+        "en": "A sealed rigid gas vessel needs pressure-aware design when heated.",
+        "hi": "बंद दृढ़ गैस पात्र को गरम करने पर दाब का ध्यान रखना पड़ता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Doubling T at fixed n and V makes p?",
+          "hi": "n तथा V स्थिर रखकर T दोगुना करें तो p?"
+        },
+        "options": [
+          {
+            "en": "Double",
+            "hi": "दोगुना"
+          },
+          {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The ratio p2/p1 equals T2/T1.",
+          "hi": "p2/p1 = T2/T1 है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-12-1-low",
+          "label": {
+            "en": "Set temperature to 100 K.",
+            "hi": "ताप 100 K करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 100
+          }
+        },
+        {
+          "id": "phy11-12-1-high",
+          "label": {
+            "en": "Compare at 600 K.",
+            "hi": "600 K पर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 595.0
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 350.0
+          },
+          "text": {
+            "en": "Lower T means lower pressure at this fixed volume.",
+            "hi": "इस स्थिर आयतन पर कम T से कम दाब है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 350.0
+          },
+          "text": {
+            "en": "Higher T means stronger average momentum transfer and greater pressure.",
+            "hi": "अधिक T से औसत संवेग हस्तांतरण और दाब बढ़ते हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Model object / particles",
+            "hi": "मॉडल वस्तु / कण"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Highlighted quantity / reference",
+            "hi": "प्रमुख राशि / संदर्भ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-12-2",
+      "title": {
+        "en": "Molecular rms speed",
+        "hi": "अणुओं की वर्ग माध्य मूल चाल"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 34
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Temperature",
+            "hi": "ताप"
+          },
+          "min": 100,
+          "max": 600,
+          "step": 50,
+          "initial": 300,
+          "unit": "K"
+        }
+      ],
+      "noteIndex": 2,
+      "selectors": [],
+      "goal": {
+        "en": "Relate nitrogen rms speed to absolute temperature.",
+        "hi": "नाइट्रोजन की वर्ग माध्य मूल चाल को परम ताप से जोड़ें।"
+      },
+      "observe": {
+        "en": "M = 0.028 kg/mol is fixed; the speed follows a square-root relation.",
+        "hi": "M = 0.028 kg/mol स्थिर है; चाल वर्गमूल संबंध से बदलती है।"
+      },
+      "modelNote": {
+        "en": "Idealised teaching model; sizes, particle counts and animation speed are symbolic. Read physical values from the readouts, not screen distances.",
+        "hi": "यह आदर्श शिक्षण मॉडल है; आकार, कण संख्या और एनीमेशन चाल सांकेतिक हैं। भौतिक मान readout से पढ़ें, स्क्रीन की दूरी से नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "vrms = √(3RT/M); four times T gives twice the speed.",
+          "hi": "vrms = √(3RT/M); T के 4 गुना होने पर चाल दोगुनी है।"
+        }
+      },
+      "realLife": {
+        "en": "Random molecular speeds help explain gas mixing, not bulk wind speed.",
+        "hi": "अनियमित आणविक चाल गैस मिश्रण समझाती है, सामूहिक पवन चाल नहीं।"
+      },
+      "quick": {
+        "question": {
+          "en": "If T becomes 4T, vrms becomes?",
+          "hi": "T को 4T करें तो vrms?"
+        },
+        "options": [
+          {
+            "en": "2 times",
+            "hi": "2 गुनी"
+          },
+          {
+            "en": "4 times",
+            "hi": "4 गुनी"
+          },
+          {
+            "en": "Half",
+            "hi": "आधी"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Take the square root of the temperature ratio.",
+          "hi": "ताप अनुपात का वर्गमूल लें।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-12-2-low",
+          "label": {
+            "en": "Set temperature to 100 K.",
+            "hi": "ताप 100 K करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 100
+          }
+        },
+        {
+          "id": "phy11-12-2-high",
+          "label": {
+            "en": "Compare at 600 K.",
+            "hi": "600 K पर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 595.0
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 350.0
+          },
+          "text": {
+            "en": "The cooler gas has a smaller rms speed.",
+            "hi": "ठंडी गैस की वर्ग माध्य मूल चाल कम है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 350.0
+          },
+          "text": {
+            "en": "Rms speed increases less rapidly than temperature.",
+            "hi": "वर्ग माध्य मूल चाल ताप की तुलना में धीमे बढ़ती है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Model object / particles",
+            "hi": "मॉडल वस्तु / कण"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Highlighted quantity / reference",
+            "hi": "प्रमुख राशि / संदर्भ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-12-3",
+      "title": {
+        "en": "Equipartition",
+        "hi": "समविभाजन"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 35
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Degrees of freedom",
+            "hi": "स्वतंत्रता की कोटि"
+          },
+          "min": 3,
+          "max": 5,
+          "step": 2,
+          "initial": 3,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 4,
+      "selectors": [],
+      "goal": {
+        "en": "Compare heat capacities for active f = 3 and f = 5.",
+        "hi": "सक्रिय f = 3 और f = 5 की ऊष्मा धारिताएँ तुलना करें।"
+      },
+      "observe": {
+        "en": "Read CV, CP and γ; the slider changes an ideal active-mode model.",
+        "hi": "CV, CP और γ पढ़ें; स्लाइडर आदर्श सक्रिय-गति मॉडल बदलता है।"
+      },
+      "modelNote": {
+        "en": "Idealised teaching model; sizes, particle counts and animation speed are symbolic. Read physical values from the readouts, not screen distances.",
+        "hi": "यह आदर्श शिक्षण मॉडल है; आकार, कण संख्या और एनीमेशन चाल सांकेतिक हैं। भौतिक मान readout से पढ़ें, स्क्रीन की दूरी से नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "CV = fR/2 and CP = CV + R, so increasing f lowers γ.",
+          "hi": "CV = fR/2 और CP = CV + R; f बढ़ने पर γ घटता है।"
+        }
+      },
+      "realLife": {
+        "en": "Different gases need different heat inputs for the same temperature rise.",
+        "hi": "अलग गैसों को समान ताप वृद्धि के लिए अलग ऊष्मा चाहिए।"
+      },
+      "quick": {
+        "question": {
+          "en": "For f = 5, γ equals?",
+          "hi": "f = 5 के लिए γ कितना?"
+        },
+        "options": [
+          {
+            "en": "7/5",
+            "hi": "7/5"
+          },
+          {
+            "en": "5/3",
+            "hi": "5/3"
+          },
+          {
+            "en": "1/5",
+            "hi": "1/5"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "γ = (f + 2)/f = 7/5.",
+          "hi": "γ = (f + 2)/f = 7/5।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-12-3-low",
+          "label": {
+            "en": "Set degrees of freedom to 3 .",
+            "hi": "स्वतंत्रता की कोटि 3  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3
+          }
+        },
+        {
+          "id": "phy11-12-3-high",
+          "label": {
+            "en": "Compare at 5 .",
+            "hi": "5  पर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4.8
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 4.0
+          },
+          "text": {
+            "en": "f = 3 represents a monatomic translational model.",
+            "hi": "f = 3 एकपरमाणुक स्थानांतरीय मॉडल है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4.0
+          },
+          "text": {
+            "en": "f = 5 adds active rotations in the rigid diatomic model.",
+            "hi": "f = 5 दृढ़ द्विपरमाणुक मॉडल में सक्रिय घूर्णन जोड़ता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Model object / particles",
+            "hi": "मॉडल वस्तु / कण"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Highlighted quantity / reference",
+            "hi": "प्रमुख राशि / संदर्भ"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Connect gas pressure, temperature and heat capacities to molecular motion.",
+    "hi": "गैस दाब, ताप और ऊष्मा धारिता को अणुओं की गति से जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "From bulk gas to molecular motion",
+        "hi": "स्थूल गैस से आणविक गति तक"
+      },
+      "paragraphs": [
+        {
+          "en": "A gas can be described on two levels. Pressure, volume and temperature describe a large sample without following each molecule. The microscopic description treats the same sample as a very large collection of particles moving in many directions. Kinetic theory connects these descriptions using averages, not a claim that every molecule has the same speed. In an ideal gas, molecular size is neglected compared with the occupied volume, and intermolecular forces are neglected except during short collisions. Molecules move in straight lines between collisions and obey Newtonian mechanics. Collisions with each other and with a stationary vessel wall are treated as elastic. This model works best for dilute gases away from condensation. Real gases deviate when density becomes high or attractions become important. A moving dot animation represents a tiny sample of the idea; it cannot display the actual number or size of molecules in a classroom vessel.",
+          "hi": "गैस को समझने के लिए वर्णन के 2 स्तर उपयोगी हैं। स्थूल वर्णन में दाब (Pressure), आयतन (Volume) और ताप (Temperature) मापते हैं; हर अणु का पीछा नहीं करते। सूक्ष्म वर्णन में उसी गैस को अनेक छोटे कणों का समूह मानते हैं जो अलग दिशाओं में चल रहे हैं। अणुगति सिद्धांत (Kinetic theory) इन दोनों वर्णनों को औसत राशियों से जोड़ता है। इसका अर्थ यह नहीं कि सभी अणुओं की चाल समान होती है। आदर्श गैस (Ideal gas) मॉडल में अणुओं का अपना आयतन पात्र के आयतन से बहुत छोटा माना जाता है। छोटी अवधि की टक्करों के अतिरिक्त उनके बीच बल की उपेक्षा की जाती है। अणु टक्करों के बीच सीधी रेखा में चलते हैं और न्यूटन के नियमों का पालन करते हैं। अणुओं की आपसी तथा स्थिर दीवार से टक्कर प्रत्यास्थ मानी जाती है। विरल गैस और द्रवण से दूर परिस्थितियों में यह मॉडल अच्छा है। अधिक घनत्व या कम ताप पर वास्तविक गैस में अंतर बढ़ सकता है। स्क्रीन के कुछ बिंदु वास्तविक अणुओं की संख्या या आकार नहीं दिखाते।"
+        }
+      ],
+      "points": [
+        {
+          "en": "An ideal model is a controlled approximation. Check its assumptions before applying its equations to a dense or cold real gas.",
+          "hi": "आदर्श मॉडल एक नियंत्रित सन्निकटन है। घनी या बहुत ठंडी वास्तविक गैस पर समीकरण लगाने से पहले उसकी मान्यताएँ जाँचें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does an ideal gas require equal molecular speeds?",
+          "hi": "क्या आदर्श गैस में अणुओं की चाल समान होनी चाहिए?"
+        },
+        "answer": {
+          "en": "No. The theory uses averages over a distribution of molecular speeds.",
+          "hi": "नहीं। सिद्धांत अलग चालों वाले अणुओं के वितरण का औसत उपयोग करता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Moles and the gas equation",
+        "hi": "मोल और गैस समीकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "The amount of gas may be counted as molecules or as moles. One mole contains Avogadro constant NA = 6.02214076 × 10²³ entities per mole, so the number of molecules is N = nNA. For an ideal gas, pV = nRT = NkBT, where temperature must be absolute temperature in kelvin. The universal gas constant R is approximately 8.314 J mol⁻¹ K⁻¹, and Boltzmann constant kB is R/NA. Pressure in pascal and volume in cubic metre give pV in joule. The pressure here is absolute pressure, not simply the pressure above the surrounding atmosphere. For a fixed amount at constant volume, increasing temperature raises pressure in direct proportion. At constant temperature, pressure decreases when volume increases. The equation does not describe a change of phase, and it does not mean that temperature alone determines pressure when amount or volume also changes.",
+          "hi": "गैस की मात्रा को अणुओं की संख्या या मोल (Mole) में व्यक्त कर सकते हैं। 1 मोल में आवोगाद्रो नियतांक NA = 6.02214076 × 10²³ प्रति मोल के बराबर कण होते हैं। इसलिए N = nNA है। आदर्श गैस का अवस्था समीकरण (Equation of state) pV = nRT = NkBT है। यहाँ ताप हमेशा केल्विन में परम ताप होता है। सार्वत्रिक गैस नियतांक R लगभग 8.314 J mol⁻¹ K⁻¹ और बोल्ट्जमान नियतांक kB = R/NA है। दाब पास्कल तथा आयतन घन मीटर में रखें तो pV की इकाई जूल आती है। इस समीकरण में निरपेक्ष दाब (Absolute pressure) लेते हैं, केवल वायुमंडल से अधिक दाब नहीं। निश्चित मात्रा और स्थिर आयतन पर ताप बढ़ाने से दाब उसी अनुपात में बढ़ता है। स्थिर ताप पर आयतन बढ़ने से दाब घटता है। पदार्थ की अवस्था बदलने पर इस आदर्श समीकरण को बिना सोचे नहीं लगाना चाहिए। दाब केवल ताप पर निर्भर नहीं है; मात्रा या आयतन बदल रहे हों तो उन्हें भी गणना में शामिल करना आवश्यक है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Convert litres to cubic metres: 1 L = 10⁻³ m³. Convert Celsius using T = θ + 273.15 before using the gas equation.",
+          "hi": "लीटर को घन मीटर में बदलें: 1 L = 10⁻³ m³। गैस समीकरण से पहले सेल्सियस को T = θ + 273.15 से केल्विन में बदलें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At fixed n and V, what happens when kelvin temperature doubles?",
+          "hi": "n और V स्थिर हों तो केल्विन ताप दोगुना होने पर क्या होगा?"
+        },
+        "answer": {
+          "en": "Absolute pressure doubles.",
+          "hi": "निरपेक्ष दाब दोगुना होगा।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Pressure as momentum transfer",
+        "hi": "संवेग हस्तांतरण से दाब"
+      },
+      "paragraphs": [
+        {
+          "en": "Pressure arises because molecules exchange momentum with a wall. For a molecule of mass m whose normal velocity component is vx, an elastic collision reverses that component. Its momentum change has magnitude 2m|vx|. Many such impulses per unit time produce an average force, and force divided by wall area gives pressure. In a gas at equilibrium with no bulk flow, molecular motion is isotropic: the mean squares of the three velocity components are equal. Consequently p = (1/3)ρ〈v²〉, where ρ is gas mass density and 〈v²〉 is the mean squared speed. The factor one third comes from three spatial directions; it is not a reduction in the number of molecules. Pressure is a macroscopic average even though individual impacts are discrete. Elastic wall collisions can transfer momentum without changing a molecule’s kinetic energy when the wall is stationary.",
+          "hi": "गैस के अणु दीवार से संवेग (Momentum) का आदान-प्रदान करते हैं, जिससे दाब उत्पन्न होता है। द्रव्यमान m वाले अणु का दीवार के लंबवत वेग घटक vx मानें। स्थिर दीवार से प्रत्यास्थ टक्कर पर यह घटक उलट जाता है। संवेग परिवर्तन का परिमाण 2m|vx| होता है। बहुत से अणुओं के प्रति सेकंड आने वाले आवेग मिलकर औसत बल देते हैं। बल को दीवार के क्षेत्रफल से भाग देने पर दाब मिलता है। बिना सामूहिक प्रवाह वाली संतुलित गैस में गति समदैशिक (Isotropic) मानी जाती है। इसका अर्थ है कि 3 दिशाओं में वेग घटकों के वर्गों के औसत समान हैं। इससे p = (1/3)ρ〈v²〉 मिलता है। यहाँ ρ गैस का द्रव्यमान घनत्व और 〈v²〉 चाल के वर्ग का औसत है। गुणक 1/3 स्थान की 3 दिशाओं से आता है, अणुओं की संख्या घटाने से नहीं। अलग टक्करें छोटी घटनाएँ हैं, जबकि मापा दाब उनका स्थूल औसत है। स्थिर दीवार वाली प्रत्यास्थ टक्कर में ऊर्जा बदले बिना संवेग बदल सकता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Vector average velocity may be zero while pressure is positive. Squared components do not cancel when opposite velocities are averaged.",
+          "hi": "औसत सदिश वेग शून्य होने पर भी दाब धनात्मक हो सकता है। विपरीत वेगों के वर्गों का औसत लेने पर वे निरस्त नहीं होते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can a gas with zero mean velocity exert pressure?",
+          "hi": "क्या शून्य औसत वेग वाली गैस दाब डाल सकती है?"
+        },
+        "answer": {
+          "en": "Yes. Random molecular motion gives a nonzero mean squared speed.",
+          "hi": "हाँ। अनियमित आणविक गति से चाल के वर्ग का औसत शून्य नहीं होता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Temperature and translational energy",
+        "hi": "ताप और स्थानांतरीय ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "Combining the pressure equation with the ideal-gas equation gives the average translational kinetic energy per molecule as 〈Ktr〉 = (3/2)kBT. For one mole it is (3/2)RT. Temperature therefore measures average translational kinetic energy, not the total energy in a sample. Two ideal gases at the same temperature have equal average translational energy per molecule even if their molecular masses differ. A heavier molecule then has a smaller characteristic speed. The relation does not say that every molecule has the average energy; collisions continuously redistribute energy. Nor does it identify temperature with heat. Heat is energy transferred because of a temperature difference, whereas temperature is a state variable. In a container with twice as many molecules at the same temperature, average molecular energy is unchanged but total translational energy doubles. Keep the distinction between per molecule, per mole and whole sample throughout calculations.",
+          "hi": "दाब समीकरण और आदर्श गैस समीकरण को जोड़ने पर प्रति अणु औसत स्थानांतरीय गतिज ऊर्जा 〈Ktr〉 = (3/2)kBT मिलती है। 1 मोल के लिए यह (3/2)RT है। इसलिए ताप (Temperature) अणुओं की औसत स्थानांतरीय गतिज ऊर्जा का माप है, पूरे नमूने की कुल ऊर्जा का नहीं। एक ही ताप पर 2 आदर्श गैसों की प्रति अणु औसत स्थानांतरीय ऊर्जा समान होती है, भले उनके अणुओं के द्रव्यमान अलग हों। ऐसे में भारी अणु की विशिष्ट चाल कम होगी। यह संबंध नहीं कहता कि प्रत्येक अणु के पास ठीक औसत ऊर्जा ही है। टक्करों से ऊर्जा का बँटवारा लगातार बदलता रहता है। ताप और ऊष्मा भी एक ही राशि नहीं हैं। ताप अवस्था की राशि है, जबकि तापांतर के कारण स्थानांतरित ऊर्जा ऊष्मा (Heat) कहलाती है। समान ताप पर पात्र में अणुओं की संख्या दोगुनी करने से औसत ऊर्जा नहीं बदलती, लेकिन कुल स्थानांतरीय ऊर्जा दोगुनी होती है। गणना में प्रति अणु, प्रति मोल और पूरे नमूने का अंतर स्पष्ट रखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use kelvin ratios. Raising a gas from 300 K to 600 K doubles average translational energy; raising 20°C to 40°C does not double it.",
+          "hi": "अनुपात के लिए केल्विन लें। 300 K से 600 K पर औसत ऊर्जा दोगुनी है; 20°C से 40°C करने पर ऐसा नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which gas has greater average translational energy at the same T?",
+          "hi": "समान T पर किस गैस की औसत स्थानांतरीय ऊर्जा अधिक है?"
+        },
+        "answer": {
+          "en": "Neither; the average per molecule is the same.",
+          "hi": "किसी की नहीं; प्रति अणु औसत समान है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Root mean square speed",
+        "hi": "वर्ग माध्य मूल चाल"
+      },
+      "paragraphs": [
+        {
+          "en": "Root mean square speed is vrms = √〈v²〉, not the arithmetic mean speed. Using kinetic theory gives vrms = √(3kBT/m) = √(3RT/M), where m is mass of one molecule and M is molar mass in kg mol⁻¹. Thus speed grows with the square root of absolute temperature. To double vrms, temperature must become four times as large. At the same temperature, a lighter gas has larger rms speed; a mass ratio of four produces an inverse speed ratio of two. For nitrogen with M = 0.028 kg mol⁻¹ at 300 K, vrms is about 517 m/s. This rapid random motion does not mean a gas sample moves bodily across a room at that speed. Frequent collisions change directions, so diffusion over a room takes much longer than a single unobstructed flight would suggest.",
+          "hi": "वर्ग माध्य मूल चाल (Root mean square speed) का अर्थ vrms = √〈v²〉 है। यह चालों के साधारण अंकगणितीय औसत के बराबर नहीं है। अणुगति सिद्धांत से vrms = √(3kBT/m) = √(3RT/M) मिलता है। m एक अणु का द्रव्यमान और M गैस का मोलर द्रव्यमान है, जिसे kg mol⁻¹ में रखना चाहिए। इस चाल की निर्भरता परम ताप के वर्गमूल पर होती है। इसलिए vrms दोगुनी करने के लिए ताप 4 गुना करना पड़ता है। समान ताप पर हल्की गैस की वर्ग माध्य मूल चाल अधिक होती है। मोलर द्रव्यमान 4 गुना हो तो चाल आधी होती है। नाइट्रोजन के लिए M = 0.028 kg mol⁻¹ और T = 300 K रखने पर लगभग 517 m/s मिलता है। इतनी बड़ी अनियमित चाल का अर्थ यह नहीं कि गैस का पूरा नमूना इसी चाल से कमरे में आगे बढ़ रहा है। टक्करों से अणु बार-बार दिशा बदलते हैं। इसलिए विसरण (Diffusion) में सीधी, बिना रुकावट उड़ान की तुलना में अधिक समय लगता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Never insert 28 as nitrogen molar mass when R is in SI units; use 0.028 kg/mol. Average speed, rms speed and bulk velocity are different quantities.",
+          "hi": "SI में R लेने पर नाइट्रोजन का मोलर द्रव्यमान 28 नहीं, 0.028 kg/mol रखें। औसत चाल, वर्ग माध्य मूल चाल और सामूहिक वेग अलग राशियाँ हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How does vrms change when T becomes 4T?",
+          "hi": "T को 4T करने पर vrms कैसे बदलेगी?"
+        },
+        "answer": {
+          "en": "It becomes twice as large.",
+          "hi": "यह दोगुनी हो जाएगी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Degrees of freedom and equipartition",
+        "hi": "स्वतंत्रता कोटि और ऊर्जा समविभाजन"
+      },
+      "paragraphs": [
+        {
+          "en": "A degree of freedom is an independent way in which a system can store energy. A monatomic ideal gas has three translational degrees of freedom. A rigid diatomic molecule can additionally rotate about two axes perpendicular to its bond, giving five active degrees of freedom over a suitable temperature range. Rotation about the bond contributes negligibly in this elementary model. The equipartition principle assigns average energy (1/2)kBT to each independent quadratic energy term. It predicts U = (f/2)nRT when f active degrees remain constant. Vibrational motion, when excited, contributes both kinetic and potential quadratic terms. At ordinary temperatures some modes are effectively frozen out, so f is not simply a permanent count for every molecule at all temperatures. The slider comparing f = 3 and f = 5 represents these idealised active-mode models; it is not a chemical conversion of one gas into another.",
+          "hi": "स्वतंत्रता की कोटि (Degree of freedom) ऊर्जा रखने के स्वतंत्र तरीके को व्यक्त करती है। एकपरमाणुक आदर्श गैस में स्थानांतरीय गति की 3 कोटियाँ होती हैं। दृढ़ द्विपरमाणुक अणु बंध के लंबवत 2 अक्षों के चारों ओर घूम भी सकता है। उपयुक्त ताप सीमा में उसकी सक्रिय कोटियाँ 5 मानी जाती हैं। इस सरल मॉडल में बंध के अपने अक्ष के चारों ओर घूर्णन का योगदान नगण्य है। ऊर्जा समविभाजन नियम (Equipartition principle) प्रत्येक स्वतंत्र द्विघाती ऊर्जा पद को औसतन (1/2)kBT देता है। जब सक्रिय कोटियों की संख्या f स्थिर हो, तो U = (f/2)nRT मिलता है। कंपन सक्रिय होने पर गतिज और स्थितिज दोनों द्विघाती पद योगदान देते हैं। सामान्य ताप पर कुछ प्रकार की गति प्रभावी रूप से सक्रिय नहीं होते; इसे कभी-कभी कोटि का जमे रहना कहते हैं। इसलिए हर अणु के लिए हर ताप पर f का एक स्थायी मान लेना ठीक नहीं। f = 3 और f = 5 की स्क्रीन तुलना 2 आदर्श सक्रिय-गति मॉडलों की है, किसी गैस को रासायनिक रूप से दूसरी गैस बनाने की प्रक्रिया नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Count energy terms carefully. A vibrational mode contributes two quadratic terms, while each translational direction contributes one. Specify the temperature regime before using f.",
+          "hi": "ऊर्जा पद ध्यान से गिनें। कंपन विधा 2 द्विघाती पद देती है, जबकि स्थानांतरण की हर दिशा 1 पद देती है। f लगाने से पहले ताप सीमा बताएँ।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is f for a monatomic ideal gas?",
+          "hi": "एकपरमाणुक आदर्श गैस के लिए f कितना है?"
+        },
+        "answer": {
+          "en": "f = 3 translational degrees of freedom.",
+          "hi": "f = 3 स्थानांतरीय स्वतंत्रता कोटियाँ।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Heat capacities of ideal gases",
+        "hi": "आदर्श गैसों की ऊष्मा धारिताएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "At constant volume an ideal gas does no expansion work, so supplied heat changes internal energy. With constant f, the molar heat capacity is CV = fR/2. At constant pressure, part of the supplied energy also does expansion work, giving CP = CV + R. Their ratio is γ = CP/CV = (f + 2)/f. A monatomic ideal gas therefore has CV = 3R/2, CP = 5R/2 and γ = 5/3. A rigid diatomic model with f = 5 gives CV = 5R/2, CP = 7R/2 and γ = 7/5. These are molar heat capacities; multiply by n when calculating the heat for a whole sample. Real measured heat capacities can vary with temperature as additional modes become active. Do not assume the same f or the same γ for every gas without checking the model and temperature interval.",
+          "hi": "स्थिर आयतन पर आदर्श गैस प्रसार कार्य नहीं करती, इसलिए दी गई ऊष्मा उसकी आंतरिक ऊर्जा बदलती है। f स्थिर होने पर मोलर ऊष्मा धारिता CV = fR/2 है। स्थिर दाब पर ऊष्मा का कुछ भाग प्रसार कार्य में भी लगता है, इसलिए CP = CV + R मिलता है। इनका अनुपात γ = CP/CV = (f + 2)/f है। एकपरमाणुक आदर्श गैस के लिए CV = 3R/2, CP = 5R/2 और γ = 5/3 होता है। f = 5 वाले दृढ़ द्विपरमाणुक मॉडल में CV = 5R/2, CP = 7R/2 तथा γ = 7/5 है। ये मोलर ऊष्मा धारिताएँ (Molar heat capacities) हैं। पूरे नमूने की ऊष्मा निकालते समय मोल संख्या n से भी गुणा करें। वास्तविक गैस के मापे गए मान ताप के साथ बदल सकते हैं, क्योंकि नई गतियाँ सक्रिय होने लगती हैं। इस कारण बिना मॉडल और ताप सीमा जाँचे हर गैस के लिए एक ही f या एक ही γ नहीं लेना चाहिए। इकाइयों में प्रति मोल का अर्थ भूलना संख्यात्मक उत्तर को गलत कर सकता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For an ideal gas, CP − CV = R for molar capacities. It is not CP − CV = nR unless the symbols refer to whole-sample heat capacities.",
+          "hi": "आदर्श गैस की मोलर धारिताओं के लिए CP − CV = R है। पूरे नमूने की धारिता अलग परिभाषित न हो तो यहाँ nR नहीं लिखते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is CP larger than CV?",
+          "hi": "CP का मान CV से बड़ा क्यों होता है?"
+        },
+        "answer": {
+          "en": "At constant pressure extra heat is needed for expansion work as well as the same temperature rise.",
+          "hi": "स्थिर दाब पर समान ताप वृद्धि के साथ प्रसार कार्य के लिए भी अतिरिक्त ऊष्मा चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Mean free path and useful limits",
+        "hi": "माध्य मुक्त पथ और मॉडल की सीमा"
+      },
+      "paragraphs": [
+        {
+          "en": "The mean free path is the average distance travelled between successive collisions. For identical hard-sphere molecules of diameter d and number density N/V, λ = 1/[√2 πd²(N/V)]. Larger molecular diameter presents a larger collision cross-section and shortens the path. At fixed temperature, increasing pressure increases number density and reduces λ. Mean free path is not the distance from one wall to the opposite wall, nor is it the same for every individual flight. The hard-sphere expression is an elementary approximation; effective collision size may depend on the molecular interaction. The average collision time can be estimated from path divided by a representative molecular speed. Relating these scales explains why gases mix, exert smooth average pressure and transport energy despite being made of separate particles. In revision, connect each macroscopic equation to its microscopic assumptions rather than memorising unrelated formulae.",
+          "hi": "माध्य मुक्त पथ (Mean free path) लगातार 2 टक्करों के बीच चली दूरी का औसत है। समान कठोर गोलक जैसे अणुओं के व्यास d और संख्या घनत्व N/V के लिए λ = 1/[√2 πd²(N/V)] मिलता है। अणु का व्यास बड़ा होने से टक्कर का प्रभावी अनुप्रस्थ क्षेत्रफल बढ़ता है और औसत मुक्त पथ घटता है। निश्चित ताप पर दाब बढ़ाने से संख्या घनत्व बढ़ता है, इसलिए λ कम हो जाता है। माध्य मुक्त पथ पात्र की एक दीवार से दूसरी दीवार की दूरी नहीं है। प्रत्येक अणु की प्रत्येक उड़ान की दूरी भी समान नहीं होती। कठोर गोलक वाला सूत्र एक सरल सन्निकटन है; वास्तविक अंतःक्रियाओं से प्रभावी टक्कर आकार प्रभावित हो सकता है। किसी उपयुक्त आणविक चाल से मुक्त पथ को भाग देकर टक्करों के बीच औसत समय का अनुमान लगाते हैं। ये छोटी दूरियाँ और समय समझाते हैं कि अलग कणों से बनी गैस भी स्थूल स्तर पर लगभग नियमित दाब, मिश्रण और ऊर्जा परिवहन क्यों दिखाती है। पुनरावृत्ति में हर सूत्र को उसकी सूक्ष्म मान्यताओं से जोड़ें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Pressure, density, rms speed and free path answer different questions. Label N/V as number density and ρ as mass density so their units are never confused.",
+          "hi": "दाब, घनत्व, वर्ग माध्य मूल चाल और मुक्त पथ अलग प्रश्नों के उत्तर हैं। N/V को संख्या घनत्व तथा ρ को द्रव्यमान घनत्व लिखें, ताकि इकाइयाँ न मिलें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to λ if number density doubles at fixed d?",
+          "hi": "d स्थिर हो और संख्या घनत्व दोगुना हो तो λ क्या होगा?"
+        },
+        "answer": {
+          "en": "It becomes half as large.",
+          "hi": "यह आधा हो जाएगा।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "pV = nRT = NkBT",
+      "meaning": {
+        "en": "Ideal-gas state equation; p absolute, V volume, n moles, N molecules, T kelvin.",
+        "hi": "आदर्श गैस अवस्था समीकरण; p निरपेक्ष दाब, V आयतन, n मोल, N अणु, T केल्विन।"
+      },
+      "units": {
+        "en": "Pa, m³, mol, K; R in J/(mol K)",
+        "hi": "Pa, m³, mol, K; R की इकाई J/(mol K)"
+      }
+    },
+    {
+      "expression": "p = ρvrms²/3",
+      "meaning": {
+        "en": "ρ is mass density; isotropic equilibrium motion.",
+        "hi": "ρ द्रव्यमान घनत्व है; गति समदैशिक संतुलित है।"
+      },
+      "units": {
+        "en": "ρ: kg/m³; vrms: m/s; p: Pa",
+        "hi": "ρ: kg/m³; vrms: m/s; p: Pa"
+      }
+    },
+    {
+      "expression": "vrms = √(3RT/M)",
+      "meaning": {
+        "en": "M is molar mass, not molecular mass.",
+        "hi": "M मोलर द्रव्यमान है, एक अणु का द्रव्यमान नहीं।"
+      },
+      "units": {
+        "en": "M: kg/mol; speed: m/s",
+        "hi": "M: kg/mol; चाल: m/s"
+      }
+    },
+    {
+      "expression": "U = fnRT/2; CV = fR/2; CP = CV + R",
+      "meaning": {
+        "en": "Constant active f ideal-gas model; capacities are molar.",
+        "hi": "स्थिर सक्रिय f वाला आदर्श गैस मॉडल; धारिताएँ मोलर हैं।"
+      },
+      "units": {
+        "en": "U: J; CV, CP: J/(mol K)",
+        "hi": "U: J; CV, CP: J/(mol K)"
+      }
+    },
+    {
+      "expression": "λ = 1/[√2 πd²(N/V)]",
+      "meaning": {
+        "en": "Hard-sphere mean free path with diameter d.",
+        "hi": "व्यास d के कठोर गोलक मॉडल का माध्य मुक्त पथ।"
+      },
+      "units": {
+        "en": "λ and d: m; N/V: m⁻³",
+        "hi": "λ और d: m; N/V: m⁻³"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Use absolute temperature and SI molar mass; distinguish average velocity from rms speed and molar capacities from total capacities.",
+    "hi": "परम ताप और SI मोलर द्रव्यमान लें; औसत वेग तथा वर्ग माध्य मूल चाल, और मोलर तथा कुल धारिताओं को अलग रखें।"
+  },
+  "summary": [
+    {
+      "en": "Gas pressure is momentum transferred to walls.",
+      "hi": "गैस दाब दीवार को संवेग हस्तांतरण है।"
+    },
+    {
+      "en": "Average translational energy is 3kBT/2 per molecule.",
+      "hi": "प्रति अणु औसत स्थानांतरीय ऊर्जा 3kBT/2 है।"
+    },
+    {
+      "en": "Rms speed varies as √(T/M).",
+      "hi": "वर्ग माध्य मूल चाल √(T/M) पर निर्भर है।"
+    },
+    {
+      "en": "Equipartition links active degrees to heat capacities.",
+      "hi": "समविभाजन सक्रिय कोटियों को ऊष्मा धारिता से जोड़ता है।"
+    },
+    {
+      "en": "Mean free path decreases with number density.",
+      "hi": "संख्या घनत्व बढ़ने से मुक्त पथ घटता है।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find pressure of 1 mol at 300 K in 0.024 m³.",
+        "hi": "0.024 m³ में 300 K पर 1 mol गैस का दाब निकालें।"
+      },
+      "given": {
+        "en": "n = 1 mol, T = 300 K, V = 0.024 m³",
+        "hi": "n = 1 mol, T = 300 K, V = 0.024 m³"
+      },
+      "find": {
+        "en": "Absolute pressure",
+        "hi": "निरपेक्ष दाब"
+      },
+      "formula": {
+        "en": "p = nRT/V",
+        "hi": "p = nRT/V"
+      },
+      "steps": [
+        {
+          "en": "Substitute 1 × 8.314 × 300 / 0.024.",
+          "hi": "1 × 8.314 × 300 / 0.024 रखें।"
+        },
+        {
+          "en": "The result is 103925 Pa.",
+          "hi": "परिणाम 103925 Pa है।"
+        }
+      ],
+      "answer": {
+        "en": "p ≈ 104 kPa",
+        "hi": "p ≈ 104 kPa"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Compare translational energy at 200 K and 400 K.",
+        "hi": "200 K और 400 K पर स्थानांतरीय ऊर्जा की तुलना करें।"
+      },
+      "given": {
+        "en": "Same amount of ideal gas",
+        "hi": "आदर्श गैस की समान मात्रा"
+      },
+      "find": {
+        "en": "Energy ratio",
+        "hi": "ऊर्जा अनुपात"
+      },
+      "formula": {
+        "en": "Ktr ∝ T",
+        "hi": "Ktr ∝ T"
+      },
+      "steps": [
+        {
+          "en": "Use absolute temperatures.",
+          "hi": "परम ताप लें।"
+        },
+        {
+          "en": "Divide 400 by 200.",
+          "hi": "400 को 200 से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "K400/K200 = 2, unitless",
+        "hi": "K400/K200 = 2, इकाईरहित"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find nitrogen rms speed at 300 K.",
+        "hi": "300 K पर नाइट्रोजन की वर्ग माध्य मूल चाल निकालें।"
+      },
+      "given": {
+        "en": "M = 0.028 kg/mol, R = 8.314 J/(mol K)",
+        "hi": "M = 0.028 kg/mol, R = 8.314 J/(mol K)"
+      },
+      "find": {
+        "en": "vrms",
+        "hi": "vrms"
+      },
+      "formula": {
+        "en": "vrms = √(3RT/M)",
+        "hi": "vrms = √(3RT/M)"
+      },
+      "steps": [
+        {
+          "en": "Compute 3 × 8.314 × 300 / 0.028 = 267236 approximately.",
+          "hi": "3 × 8.314 × 300 / 0.028 ≈ 267236 निकालें।"
+        },
+        {
+          "en": "Take the square root.",
+          "hi": "वर्गमूल लें।"
+        }
+      ],
+      "answer": {
+        "en": "vrms ≈ 517 m/s",
+        "hi": "vrms ≈ 517 m/s"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find CV, CP and γ when f = 5.",
+        "hi": "f = 5 होने पर CV, CP और γ निकालें।"
+      },
+      "given": {
+        "en": "Rigid diatomic ideal-gas model",
+        "hi": "दृढ़ द्विपरमाणुक आदर्श गैस मॉडल"
+      },
+      "find": {
+        "en": "Molar capacities and ratio",
+        "hi": "मोलर धारिताएँ और अनुपात"
+      },
+      "formula": {
+        "en": "CV = fR/2; CP = CV + R",
+        "hi": "CV = fR/2; CP = CV + R"
+      },
+      "steps": [
+        {
+          "en": "CV = 2.5 × 8.314.",
+          "hi": "CV = 2.5 × 8.314।"
+        },
+        {
+          "en": "CP = 3.5 × 8.314; divide CP by CV.",
+          "hi": "CP = 3.5 × 8.314; CP को CV से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "CV ≈ 20.79 J/(mol K), CP ≈ 29.10 J/(mol K), γ = 1.4",
+        "hi": "CV ≈ 20.79 J/(mol K), CP ≈ 29.10 J/(mol K), γ = 1.4"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Temperature becomes 4 times and molar mass becomes 4 times. Compare rms speeds.",
+        "hi": "ताप 4 गुना और मोलर द्रव्यमान 4 गुना हो जाए तो वर्ग माध्य मूल चाल की तुलना करें।"
+      },
+      "given": {
+        "en": "T2 = 4T1, M2 = 4M1",
+        "hi": "T2 = 4T1, M2 = 4M1"
+      },
+      "find": {
+        "en": "v2/v1",
+        "hi": "v2/v1"
+      },
+      "formula": {
+        "en": "v2/v1 = √[(T2/T1)(M1/M2)]",
+        "hi": "v2/v1 = √[(T2/T1)(M1/M2)]"
+      },
+      "steps": [
+        {
+          "en": "Substitute √(4 × 1/4).",
+          "hi": "√(4 × 1/4) रखें।"
+        },
+        {
+          "en": "The factors cancel; this compares different gas samples, not a chemical transformation.",
+          "hi": "गुणक कटते हैं; यह अलग गैस नमूनों की तुलना है, रासायनिक परिवर्तन नहीं।"
+        }
+      ],
+      "answer": {
+        "en": "v2/v1 = 1, unitless",
+        "hi": "v2/v1 = 1, इकाईरहित"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which temperature belongs in pV = nRT?",
+        "hi": "pV = nRT में कौन-सा ताप लेते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Kelvin",
+            "hi": "केल्विन"
+          },
+          "reason": {
+            "en": "The equation uses absolute temperature.",
+            "hi": "समीकरण परम ताप लेता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Celsius",
+            "hi": "सेल्सियस"
+          },
+          "reason": {
+            "en": "Celsius must first be converted.",
+            "hi": "पहले सेल्सियस बदलना होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Fahrenheit",
+            "hi": "फारेनहाइट"
+          },
+          "reason": {
+            "en": "Fahrenheit is not the SI absolute scale.",
+            "hi": "फारेनहाइट SI परम पैमाना नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any scale unchanged",
+            "hi": "कोई भी पैमाना"
+          },
+          "reason": {
+            "en": "Changing the zero changes temperature ratios.",
+            "hi": "शून्य बदलने से ताप अनुपात बदलते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What produces gas pressure?",
+        "hi": "गैस दाब किससे बनता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only attraction between molecules",
+            "hi": "केवल आणविक आकर्षण"
+          },
+          "reason": {
+            "en": "Ideal-gas pressure neglects such attractions.",
+            "hi": "आदर्श गैस में ये आकर्षण उपेक्षित हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Momentum transfer to walls",
+            "hi": "दीवार को संवेग हस्तांतरण"
+          },
+          "reason": {
+            "en": "Impacts exert average force.",
+            "hi": "टक्करें औसत बल देती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Molecules becoming stationary",
+            "hi": "अणुओं का रुकना"
+          },
+          "reason": {
+            "en": "Stationary particles do not explain thermal pressure.",
+            "hi": "रुके कण तापीय दाब नहीं समझाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only gravity",
+            "hi": "केवल गुरुत्व"
+          },
+          "reason": {
+            "en": "Gas pressure exists without gravity too.",
+            "hi": "गुरुत्व के बिना भी गैस दाब होता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "At equal T, hydrogen and oxygen have equal what per molecule?",
+        "hi": "समान T पर हाइड्रोजन और ऑक्सीजन के प्रति अणु क्या समान है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Rms speed",
+            "hi": "वर्ग माध्य मूल चाल"
+          },
+          "reason": {
+            "en": "Rms speed depends on mass.",
+            "hi": "चाल द्रव्यमान पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Diameter",
+            "hi": "व्यास"
+          },
+          "reason": {
+            "en": "Temperature does not equate molecular sizes.",
+            "hi": "ताप आणविक आकार समान नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Average translational energy",
+            "hi": "औसत स्थानांतरीय ऊर्जा"
+          },
+          "reason": {
+            "en": "It is 3kBT/2.",
+            "hi": "यह 3kBT/2 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass",
+            "hi": "द्रव्यमान"
+          },
+          "reason": {
+            "en": "Their molecular masses differ.",
+            "hi": "आणविक द्रव्यमान अलग हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "If T becomes 4T, vrms becomes?",
+        "hi": "T को 4T करें तो vrms कितनी होगी?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4v",
+            "hi": "4v"
+          },
+          "reason": {
+            "en": "Linear scaling is incorrect.",
+            "hi": "रैखिक अनुपात गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "v/2",
+            "hi": "v/2"
+          },
+          "reason": {
+            "en": "Heating does not reduce the speed here.",
+            "hi": "यहाँ गरम करने पर चाल घटती नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "v",
+            "hi": "v"
+          },
+          "reason": {
+            "en": "Temperature changed, so speed changes.",
+            "hi": "ताप बदलने से चाल बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2v",
+            "hi": "2v"
+          },
+          "reason": {
+            "en": "Speed varies as √T.",
+            "hi": "चाल √T के अनुसार बदलती है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which is the SI molar mass of nitrogen gas?",
+        "hi": "नाइट्रोजन गैस का SI मोलर द्रव्यमान कौन-सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0.028 kg/mol",
+            "hi": "0.028 kg/mol"
+          },
+          "reason": {
+            "en": "28 g/mol equals 0.028 kg/mol.",
+            "hi": "28 g/mol = 0.028 kg/mol।"
+          }
+        },
+        {
+          "text": {
+            "en": "28 kg/mol",
+            "hi": "28 kg/mol"
+          },
+          "reason": {
+            "en": "This is 1000 times too large.",
+            "hi": "यह 1000 गुना अधिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.028 kg",
+            "hi": "0.028 kg"
+          },
+          "reason": {
+            "en": "Per mole is missing.",
+            "hi": "प्रति मोल नहीं लिखा।"
+          }
+        },
+        {
+          "text": {
+            "en": "28 mol/kg",
+            "hi": "28 mol/kg"
+          },
+          "reason": {
+            "en": "This is an inverse unit.",
+            "hi": "यह व्युत्क्रम इकाई है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For a monatomic ideal gas, f equals?",
+        "hi": "एकपरमाणुक आदर्श गैस के लिए f कितना है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Molecules have translational energy.",
+            "hi": "अणुओं में स्थानांतरीय ऊर्जा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "Three translations contribute.",
+            "hi": "स्थानांतरण की 3 दिशाएँ योगदान देती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "Five describes a rigid diatomic model.",
+            "hi": "5 दृढ़ द्विपरमाणुक मॉडल में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "Space has three translational directions.",
+            "hi": "स्थानांतरण की 3 दिशाएँ हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "For molar ideal-gas capacities, CP − CV is?",
+        "hi": "आदर्श गैस की मोलर धारिताओं में CP − CV क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Expansion requires additional energy.",
+            "hi": "प्रसार के लिए अतिरिक्त ऊर्जा चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "γ",
+            "hi": "γ"
+          },
+          "reason": {
+            "en": "γ is a dimensionless ratio.",
+            "hi": "γ इकाईरहित अनुपात है।"
+          }
+        },
+        {
+          "text": {
+            "en": "R",
+            "hi": "R"
+          },
+          "reason": {
+            "en": "Mayer relation gives R.",
+            "hi": "मेयर संबंध से R मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "nR",
+            "hi": "nR"
+          },
+          "reason": {
+            "en": "nR applies to whole-sample capacity difference.",
+            "hi": "nR पूरे नमूने की धारिताओं के अंतर में है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which quantity is zero for equilibrium random motion with no flow?",
+        "hi": "बिना प्रवाह की संतुलित अनियमित गति में क्या शून्य है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Mean squared speed",
+            "hi": "चाल वर्ग का औसत"
+          },
+          "reason": {
+            "en": "Squares remain positive.",
+            "hi": "वर्ग धनात्मक रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pressure",
+            "hi": "दाब"
+          },
+          "reason": {
+            "en": "Wall impacts give pressure.",
+            "hi": "दीवार की टक्कर दाब देती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Kelvin temperature necessarily",
+            "hi": "अनिवार्यतः केल्विन ताप"
+          },
+          "reason": {
+            "en": "No bulk flow does not require zero T.",
+            "hi": "सामूहिक प्रवाह न होने से T शून्य जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mean velocity",
+            "hi": "औसत वेग"
+          },
+          "reason": {
+            "en": "Opposite velocity components cancel on average.",
+            "hi": "विपरीत वेग घटक औसतन कटते हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Doubling number density at fixed d makes mean free path?",
+        "hi": "d स्थिर रखकर संख्या घनत्व दोगुना करें तो मुक्त पथ?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          "reason": {
+            "en": "λ is inverse to number density.",
+            "hi": "λ संख्या घनत्व के व्युत्क्रम में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Double",
+            "hi": "दोगुना"
+          },
+          "reason": {
+            "en": "More targets shorten flights.",
+            "hi": "अधिक कण उड़ान घटाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Four times",
+            "hi": "4 गुना"
+          },
+          "reason": {
+            "en": "This reverses the relationship.",
+            "hi": "यह संबंध उलट देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Collision frequency changes.",
+            "hi": "टक्कर आवृत्ति बदलती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which ideal-gas assumption is appropriate?",
+        "hi": "आदर्श गैस की कौन-सी मान्यता सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Very large molecular volume",
+            "hi": "बहुत बड़ा आणविक आयतन"
+          },
+          "reason": {
+            "en": "Molecular volume is treated as negligible.",
+            "hi": "आणविक आयतन नगण्य माना जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Elastic collisions",
+            "hi": "प्रत्यास्थ टक्कर"
+          },
+          "reason": {
+            "en": "Kinetic energy is conserved in the model collisions.",
+            "hi": "मॉडल टक्करों में गतिज ऊर्जा संरक्षित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All speeds equal",
+            "hi": "सभी चालें समान"
+          },
+          "reason": {
+            "en": "There is a distribution of speeds.",
+            "hi": "चालों का वितरण होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No motion between collisions",
+            "hi": "टक्करों के बीच गति नहीं"
+          },
+          "reason": {
+            "en": "Molecules travel between collisions.",
+            "hi": "अणु टक्करों के बीच चलते हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State two ideal-gas assumptions.",
+        "hi": "आदर्श गैस की 2 मान्यताएँ बताएँ।"
+      },
+      "answer": {
+        "en": "Molecular volume is negligible and collisions are elastic; forces between collisions are neglected.",
+        "hi": "आणविक आयतन नगण्य और टक्करें प्रत्यास्थ हैं; टक्करों के बीच बल उपेक्षित हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain pressure microscopically.",
+        "hi": "दाब को सूक्ष्म स्तर पर समझाएँ।"
+      },
+      "answer": {
+        "en": "Molecular wall impacts transfer momentum; their average force per area is pressure.",
+        "hi": "दीवार से टक्करों में संवेग बदलता है; क्षेत्रफल पर औसत बल दाब है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can mean velocity be zero but vrms positive?",
+        "hi": "औसत वेग शून्य पर vrms धनात्मक क्यों है?"
+      },
+      "answer": {
+        "en": "Opposite vectors cancel, but their squared speeds do not.",
+        "hi": "विपरीत सदिश कटते हैं, पर चालों के वर्ग नहीं कटते।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare heavy and light molecules at equal T.",
+        "hi": "समान T पर भारी और हल्के अणुओं की तुलना करें।"
+      },
+      "answer": {
+        "en": "Their mean translational energies are equal; lighter molecules have greater rms speed.",
+        "hi": "औसत स्थानांतरीय ऊर्जा समान; हल्के अणुओं की वर्ग माध्य मूल चाल अधिक।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give γ for f = 3 and f = 5.",
+        "hi": "f = 3 तथा f = 5 के लिए γ दें।"
+      },
+      "answer": {
+        "en": "γ = (f + 2)/f, so 5/3 and 7/5 respectively, dimensionless.",
+        "hi": "γ = (f + 2)/f से क्रमशः 5/3 तथा 7/5, इकाईरहित।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does increasing pressure shorten λ at fixed T?",
+        "hi": "स्थिर T पर दाब बढ़ने से λ क्यों घटता है?"
+      },
+      "answer": {
+        "en": "Number density increases, providing more collision targets per path length.",
+        "hi": "संख्या घनत्व बढ़ने से रास्ते में अधिक टक्कर लक्ष्य मिलते हैं।"
+      }
+    }
+  ],
+  "conceptMap": "अणु → टक्कर → दाब → ताप और ऊर्जा → वर्ग माध्य मूल चाल → समविभाजन → ऊष्मा धारिता → माध्य मुक्त पथ",
+  "conceptMapEn": "Molecules → collisions → pressure → temperature and energy → rms speed → equipartition → heat capacities → mean free path",
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Physics Class 11 and UP Board 2026–27. Simulations illustrate ideal models; use the prescribed textbook and supervised laboratory work alongside.",
+    "hi": "NCERT कक्षा 11 भौतिकी तथा यूपी बोर्ड 2026–27 पर आधारित मौलिक अध्ययन व्याख्याएँ। अनुकरण आदर्श मॉडल समझाते हैं; निर्धारित पुस्तक तथा शिक्षक की देखरेख में प्रयोग भी करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 12",
+      "url": "https://ncert.nic.in/textbook/pdf/keph205.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ]
+}

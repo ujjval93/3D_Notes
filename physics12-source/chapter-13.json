@@ -1,0 +1,1048 @@
+{
+  "number": 13,
+  "id": "physics12-13",
+  "title": {
+    "en": "Nuclei",
+    "hi": "नाभिक"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Nuclear notation and related species",
+        "hi": "नाभिक संकेत और संबंधित जातियाँ"
+      },
+      "paragraphs": [
+        {
+          "en": "A nucleus is specified by atomic number Z and mass number A; neutron number is N=A−Z. Isotopes share Z, isobars share A, and isotones share N. Ionisation changes electrons, not the identity of the nucleus.",
+          "hi": "नाभिक (Nucleus) में प्रोटॉन और न्यूट्रॉन होते हैं, जिन्हें सामूहिक रूप से न्यूक्लिऑन (Nucleons) कहते हैं। परमाणु क्रमांक (Atomic number), Z प्रोटॉन संख्या है और द्रव्यमान संख्या (Mass number), A कुल न्यूक्लिऑन संख्या है। इसलिए न्यूट्रॉन संख्या N=A−Z। नाभिक का आवेश +Ze है। उदासीन परमाणु में इलेक्ट्रॉन Z होते हैं, पर आयन बनने पर इलेक्ट्रॉन संख्या बदल सकती है और नाभिक वही रहता है। समस्थानिक (Isotopes) में Z समान और न्यूट्रॉन संख्या अलग होती है। समभारिक (Isobars) में A समान, Z अलग होता है। समन्यूट्रॉनिक (Isotones) में N समान होता है। इन शब्दों को केवल नामों से नहीं, संख्या लिखकर जाँचें। A एक गिनती है; इसे परमाणु का u में सटीक द्रव्यमान नहीं कहते। उदाहरण के लिए A=56 से वास्तविक परमाणु द्रव्यमान ठीक 56 u होना आवश्यक नहीं। इलेक्ट्रॉनों का प्रायः पूरा स्थान नाभिक के बाहर है; β क्षय को नाभिक में पहले से रखे इलेक्ट्रॉन का साधारण बाहर निकलना नहीं समझना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Write A, Z and N in separate columns before comparing two nuclei.",
+          "hi": "2 नाभिक मिलाते समय पहले A,Z,N अलग स्तंभों में लिखें। समान A देखकर समस्थानिक कहना गलत है; समस्थानिक की शर्त समान Z है। आवेशित आयन और अलग नाभिकीय समस्थानिक भी अलग अवधारणाएँ हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What changes when an atom is ionised without a nuclear reaction?",
+          "hi": "बिना नाभिकीय अभिक्रिया परमाणु आयनित हो तो क्या बदलता है?"
+        },
+        "answer": {
+          "en": "Electron number changes; A and Z of the nucleus remain unchanged.",
+          "hi": "इलेक्ट्रॉन संख्या बदलती; नाभिक के A और Z वही रहते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Nuclear size and nearly constant density",
+        "hi": "नाभिकीय आकार और लगभग स्थिर घनत्व"
+      },
+      "paragraphs": [
+        {
+          "en": "The empirical radius law R=R0A^(1/3) means volume scales approximately with A. Since nuclear mass also scales roughly with A, average nuclear density is almost independent of A. The law is an approximate size relation, not a sharp surface boundary for every nucleus.",
+          "hi": "नाभिकीय त्रिज्या (Nuclear radius) के लिए अनुभवजन्य संबंध R=R0 A^(1/3) है, जहाँ R0 लगभग 1.2×10^-15 m अर्थात 1.2 fm लेते हैं। 1 fm=10^-15 m। A बढ़ने पर त्रिज्या बढ़ती है, पर सीधी समानुपाती नहीं है। A को 8 गुना करने पर R केवल 2 गुना होगा। गोल आकार का मोटा अनुमान लें तो आयतन R³ के समानुपाती और इसलिए A के समानुपाती है। नाभिक का द्रव्यमान भी लगभग A न्यूक्लिऑन द्रव्यमान है। इस कारण औसत नाभिकीय घनत्व अलग नाभिकों में लगभग समान रहता है। इसे हर बिंदु पर एकदम समान पदार्थ की ठोस गेंद न मानें। वास्तविक नाभिक क्वांटम तंत्र है और सीमा एक आदर्श धारदार दीवार जैसी नहीं। नाभिक तथा परमाणु की त्रिज्या में कई क्रमों का अंतर है। बहुत बड़ा बना स्क्रीन मॉडल केवल संरचना दिखाता है। चित्र के गोले का आकार देखकर किसी तत्व की मापी त्रिज्या निकालना सही नहीं होगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The density argument uses average mass and volume estimates, not the literal packing shown by coloured balls.",
+          "hi": "घनत्व का तर्क औसत द्रव्यमान और आयतन पर है। चित्र के रंगीन गोले निश्चित कठोर गेंदें नहीं; उनका निकट होना वास्तविक न्यूक्लिऑन के सटीक आकार या सीमा का मापन नहीं देता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If A increases by 8 times, by what factor does R change?",
+          "hi": "A,8 गुना हो तो R कितनी गुनी होगी?"
+        },
+        "answer": {
+          "en": "By 2, because 8^(1/3)=2.",
+          "hi": "2 गुनी, क्योंकि 8^(1/3)=2।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Atomic mass and mass–energy equivalence",
+        "hi": "परमाणु द्रव्यमान और द्रव्यमान–ऊर्जा तुल्यता"
+      },
+      "paragraphs": [
+        {
+          "en": "Atomic masses are commonly expressed in u, defined using carbon-12. Rest mass contributes rest energy mc². A small mass difference can represent substantial energy; use consistent units before comparing nuclear and chemical energy scales.",
+          "hi": "परमाणु और नाभिक के द्रव्यमान बहुत छोटे होते हैं, इसलिए एकीकृत परमाणु द्रव्यमान मात्रक (Atomic mass unit), u उपयोगी है। 1 u, उदासीन कार्बन-12 परमाणु के द्रव्यमान का 1/12 भाग है और लगभग 1.6605×10^-27 kg के बराबर है। द्रव्यमान-ऊर्जा संबंध E=mc² विश्राम द्रव्यमान और विश्राम ऊर्जा जोड़ता है। ऊर्जा निकलने पर बंद तंत्र का कुल द्रव्यमान-ऊर्जा लेखा सही रहना चाहिए। केवल द्रव्यमान नष्ट हो गया कहकर ऊर्जा संरक्षण भूलना गलत है। उपयोगी परिवर्तन 1 u c²≈931.5 MeV है। इसलिए द्रव्यमान अंतर u में हो तो 931.5 से गुणा कर ऊर्जा MeV में निकाल सकते हैं। इसे 931.5 J न लिखें। 1 MeV=10^6 eV≈1.602×10^-13 J। रासायनिक प्रक्रियाओं की प्रति कण ऊर्जा अक्सर eV क्रम की और नाभिकीय प्रक्रियाओं की MeV क्रम की होती है। तुलना में प्रति कण, प्रति मोल या कुल नमूना किस आधार पर है, स्पष्ट करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Converting u to energy does not mean that every process can release the entire rest mass of its material.",
+          "hi": "u को ऊर्जा में बदलने से यह निष्कर्ष नहीं कि हर अभिक्रिया पूरा विश्राम द्रव्यमान मुक्त करती है। वास्तविक निकली ऊर्जा प्रारंभिक और अंतिम कुल द्रव्यमानों के अंतर से तय होती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What energy corresponds to 1 u of mass?",
+          "hi": "1 u द्रव्यमान की ऊर्जा कितनी है?"
+        },
+        "answer": {
+          "en": "About 931.5 MeV of rest energy.",
+          "hi": "लगभग 931.5 MeV विश्राम ऊर्जा।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Mass defect and binding energy",
+        "hi": "द्रव्यमान क्षति और बंधन ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "A bound nucleus weighs less than its separated free nucleons. The mass defect gives the energy required to separate the nucleus. If atomic masses are used, hydrogen-atom masses can be combined with neutron mass so that the electronic masses cancel consistently.",
+          "hi": "बंधा नाभिक अपने अलग-अलग मुक्त प्रोटॉन और न्यूट्रॉन के कुल द्रव्यमान से हल्का होता है। अंतर द्रव्यमान क्षति (Mass defect), Δm कहलाता है। नाभिकीय द्रव्यमान उपयोग करें तो Δm=Zmp+(A−Z)mn−Mnucleus। बंधन ऊर्जा (Binding energy), B=Δm c² वह न्यूनतम ऊर्जा है जो नाभिक को अलग मुक्त न्यूक्लिऑनों में तोड़ने के लिए देनी होगी। नाभिक बनने पर उतनी ऊर्जा उचित रूप में निकल सकती है। कई सारणियों में उदासीन परमाणु द्रव्यमान मिलता है, न कि नाभिक का अकेला द्रव्यमान। तब Δm=Z mH+(A−Z)mn−Matom उपयोग करना सुविधाजनक है; यहाँ mH उदासीन हाइड्रोजन परमाणु का द्रव्यमान है। इलेक्ट्रॉन द्रव्यमान लगभग संगत रूप से कटते हैं और सामान्य स्कूली गणना में इलेक्ट्रॉन बंधन ऊर्जा की छोटी सुधार राशि छोड़ते हैं। एक तरफ प्रोटॉन और दूसरी तरफ परमाणु द्रव्यमान बिना सुधार मिलाना गलत है। बंधन ऊर्जा धनात्मक होती है, जबकि बँधे तंत्र की कुल ऊर्जा मुक्त न्यूक्लिऑनों के संदर्भ से कम है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Check that a proposed bound nucleus has positive binding energy with the stated mass convention.",
+          "hi": "दिए द्रव्यमान की परंपरा से बंधन ऊर्जा धनात्मक जाँचें। ऋणात्मक निकले तो पहले इलेक्ट्रॉन का लेखा, न्यूट्रॉन संख्या और घटाने का क्रम देखें; उसे सामान्य स्थायी नाभिक की बंधन ऊर्जा न मानें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why distinguish atomic and nuclear masses?",
+          "hi": "परमाणु और नाभिकीय द्रव्यमान अलग क्यों रखें?"
+        },
+        "answer": {
+          "en": "Atomic mass includes electrons; mixing conventions produces an incorrect mass defect.",
+          "hi": "परमाणु द्रव्यमान में इलेक्ट्रॉन हैं; मिश्रित परंपरा से द्रव्यमान क्षति गलत होगी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Binding energy per nucleon and stability",
+        "hi": "प्रति न्यूक्लिऑन बंधन ऊर्जा और स्थिरता"
+      },
+      "paragraphs": [
+        {
+          "en": "B/A allows comparison across nuclei of different size. It rises for light nuclei, is largest around the iron–nickel region, and declines for very heavy nuclei. The curve suggests energy release in suitable light-nucleus fusion and heavy-nucleus fission but does not establish every reaction’s rate or feasibility.",
+          "hi": "कुल बंधन ऊर्जा B सामान्यतः बड़े नाभिक के लिए बड़ी हो सकती है क्योंकि उसमें न्यूक्लिऑन अधिक हैं। अलग आकार के नाभिकों की तुलना के लिए प्रति न्यूक्लिऑन बंधन ऊर्जा (Binding energy per nucleon), B/A उपयोगी है। हल्के नाभिकों से मध्यम द्रव्यमान क्षेत्र की ओर इसका औसत मान बढ़ता है, लौह-निकल क्षेत्र के आसपास अधिकतम के निकट पहुँचता है और बहुत भारी नाभिकों के लिए धीरे घटता है। मध्य क्षेत्र में लगभग 8 MeV प्रति न्यूक्लिऑन क्रम का मान मिलता है; इसे हर नाभिक का एकदम सटीक स्थिर मान न लें। अधिक B/A का अर्थ सामान्यतः अलग न्यूक्लिऑनों में बाँटने के विरुद्ध अधिक बंधन है। फिर भी अकेले यही हर रेडियोधर्मी संक्रमण या स्थायित्व का पूर्ण नियम नहीं है। प्रोटॉन-न्यूट्रॉन अनुपात, उपलब्ध अंतिम अवस्थाएँ और ऊर्जा लेखा भी मायने रखते हैं। हल्के नाभिक उपयुक्त संलयन से तथा भारी नाभिक उपयुक्त विखंडन से अधिक कुल बंधन वाले उत्पाद बना सकते हैं, जिससे ऊर्जा निकलती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A higher binding-energy-per-nucleon curve does not by itself specify a reaction mechanism, rate or practical arrangement.",
+          "hi": "B/A वक्र अभिक्रिया की ऊर्जा प्रवृत्ति बताता है। अकेला वक्र अभिक्रिया का पूरा तंत्र, दर या उसे व्यवहार में चलाने की व्यवस्था नहीं बताता; ऊर्जा-संभव और तुरंत होने वाला एक बात नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is total B or B/A better for comparing binding across very different A?",
+          "hi": "अलग A वाले नाभिकों का बंधन मिलाने में B या B/A बेहतर है?"
+        },
+        "answer": {
+          "en": "B/A gives a per-nucleon comparison rather than merely counting more nucleons.",
+          "hi": "B/A प्रति न्यूक्लिऑन तुलना देता है; केवल अधिक न्यूक्लिऑन नहीं गिनता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Nuclear force and saturation",
+        "hi": "नाभिकीय बल और संतृप्ति"
+      },
+      "paragraphs": [
+        {
+          "en": "The nuclear interaction is strong over femtometre distances and short ranged. It is approximately charge independent and has a repulsive core at very short separation. Its limited range leads to saturation: a nucleon mainly interacts with nearby neighbours rather than equally with every nucleon.",
+          "hi": "नाभिकीय बल (Nuclear force) न्यूक्लिऑनों को बाँधने में महत्वपूर्ण है। नाभिकीय दूरी पर यह प्रोटॉनों के विद्युत प्रतिकर्षण की तुलना में बहुत प्रबल हो सकता है। इसकी सीमा छोटी, कुछ fm क्रम की है; बड़ी दूरी पर यह नगण्य हो जाता है। इसे गुरुत्वाकर्षण या कूलॉम बल जैसी लंबी सीमा का सरल व्युत्क्रम वर्ग नियम न दें। प्रोटॉन-प्रोटॉन, प्रोटॉन-न्यूट्रॉन और न्यूट्रॉन-न्यूट्रॉन की नाभिकीय क्रियाएँ उपयुक्त दशाओं में लगभग आवेश-स्वतंत्र होती हैं, हालांकि विद्युत प्रतिकर्षण केवल आवेशित प्रोटॉनों में जुड़ता है। बहुत कम दूरी पर प्रबल प्रतिकर्षी भाग भी होता है; अतः बल को हर दूरी पर आकर्षी न कहें। छोटी सीमा के कारण 1 न्यूक्लिऑन मुख्यतः पास के पड़ोसियों से प्रभावी क्रिया करता है। इसे संतृप्ति (Saturation) कहते हैं। इससे मध्यम और भारी नाभिकों में B/A के लगभग स्थिर होने की प्रवृत्ति समझ आती है। रंगीन गेंदों के बीच खिंची रेखाएँ इस बल का यथार्थ सूत्र या स्थिर रासायनिक आबंध नहीं हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not infer that neutral neutrons have no nuclear interaction because they lack electric charge.",
+          "hi": "उदासीन न्यूट्रॉन का विद्युत आवेश शून्य है, पर नाभिकीय क्रिया शून्य नहीं। विद्युत बल और नाभिकीय बल अलग हैं; एक के न होने से दूसरे को गायब नहीं मान सकते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is nuclear force attractive at every separation?",
+          "hi": "क्या नाभिकीय बल हर दूरी पर आकर्षी है?"
+        },
+        "answer": {
+          "en": "No. It has a strongly repulsive short-distance core and becomes negligible far away.",
+          "hi": "नहीं। बहुत कम दूरी पर प्रबल प्रतिकर्षण और दूर पर नगण्य प्रभाव।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Radioactivity: qualitative nuclear changes",
+        "hi": "रेडियोधर्मिता: गुणात्मक नाभिकीय परिवर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "Unstable nuclei can change by alpha, beta or gamma processes. Alpha emission lowers A by 4 and Z by 2. In beta-minus decay a neutron converts to a proton with an electron and antineutrino emitted; A stays fixed and Z rises by 1. Gamma emission changes excitation, not A or Z. Detailed exponential-decay numericals are not used here.",
+          "hi": "रेडियोधर्मिता (Radioactivity) अस्थिर नाभिक का स्वतः रूपांतरण है। वर्तमान यूपी बोर्ड पाठ्यक्रम में इसका गुणात्मक परिचय है; यहाँ अतिरिक्त घातीय क्षय नियम और अर्धायु के संख्यात्मक प्रश्न नहीं जोड़े गए हैं। अल्फा क्षय में हीलियम नाभिक निकलता है, इसलिए पुत्री नाभिक का A,4 कम और Z,2 कम होता है। बीटा-माइनस क्षय में न्यूट्रॉन प्रोटॉन में बदलता है और इलेक्ट्रॉन तथा प्रतिन्यूट्रिनो निकलते हैं। इसलिए A वही रहता और Z,1 बढ़ता है। उत्सर्जित इलेक्ट्रॉन को नाभिक के अंदर पहले से चक्कर लगाता इलेक्ट्रॉन न मानें। बीटा-प्लस में प्रोटॉन न्यूट्रॉन में बदल सकता है और पॉजिट्रॉन तथा न्यूट्रिनो निकलते हैं, जिससे Z,1 घटता है। गामा उत्सर्जन में उत्तेजित नाभिक ऊर्जा का फोटॉन छोड़ता है; A और Z नहीं बदलते। ये परिवर्तन ऊर्जा, आवेश, संवेग और उपयुक्त कण संख्याओं के संरक्षण से संगत होते हैं। विकिरण की अलग प्रकृतियाँ होने से उनके पदार्थ के साथ प्रभाव भी अलग होते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Balance nuclear notation and charge; A conservation is not a statement that rest mass alone is always conserved separately.",
+          "hi": "नाभिक संकेत और आवेश संतुलित करें। द्रव्यमान संख्या का संरक्षण कुल न्यूक्लिऑन गिनती का लेखा है; यह अलग से विश्राम द्रव्यमान बिल्कुल स्थिर रहने का कथन नहीं। कुल द्रव्यमान-ऊर्जा संरक्षित है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What changes in gamma emission?",
+          "hi": "गामा उत्सर्जन में क्या बदलता है?"
+        },
+        "answer": {
+          "en": "Nuclear excitation energy falls while A and Z remain unchanged.",
+          "hi": "नाभिक की उत्तेजन ऊर्जा घटती; A और Z वही रहते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Fission, fusion and the energy balance",
+        "hi": "विखंडन, संलयन और ऊर्जा संतुलन"
+      },
+      "paragraphs": [
+        {
+          "en": "Fission splits a heavy nucleus into lighter products; fusion combines light nuclei. A positive Q-value means the initial rest mass exceeds the final rest mass. Fusion powers stars through reaction sequences under high-temperature conditions; not every possible combination is exothermic.",
+          "hi": "नाभिकीय विखंडन (Fission) में भारी नाभिक हल्के खंडों में टूट सकता है। नाभिकीय संलयन (Fusion) में हल्के नाभिक मिलकर नया नाभिक बना सकते हैं। उपयुक्त उत्पाद अधिक कुल बंधन वाले हों तो उनका कुल विश्राम द्रव्यमान कम होगा और शेष ऊर्जा गतिज ऊर्जा या विकिरण के रूप में निकल सकती है। अभिक्रिया ऊर्जा Q=(Σminitial−Σmfinal)c² है। Q धनात्मक होने पर ऊर्जा मुक्त होती है और ऋणात्मक होने पर कम-से-कम उतनी ऊर्जा का निवेश आवश्यक होता है। सही तुलना में सभी प्रारंभिक और अंतिम कण शामिल करें; केवल मुख्य नाभिक का द्रव्यमान न लें। तारों की ऊर्जा में हल्के नाभिकों की क्रमिक संलयन प्रक्रियाएँ महत्वपूर्ण हैं। प्रोटॉनों का विद्युत प्रतिकर्षण पास आने में बाधा देता है; अत्यधिक ताप और क्वांटम प्रभाव भूमिका निभाते हैं। हर नाभिक को जोड़ने से ऊर्जा निकलेगी, ऐसा सामान्य नियम गलत है। इसी तरह केवल कुल द्रव्यमान संख्या देखकर ऊर्जा नहीं निकलती; वास्तविक द्रव्यमानों या कुल बंधन ऊर्जा का अंतर चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use full reaction bookkeeping, including emitted neutrons or light particles, before calculating Q.",
+          "hi": "Q निकालने से पहले निकले न्यूट्रॉन और हल्के कणों सहित पूरी अभिक्रिया का लेखा बनाइए। प्रारंभिक या अंतिम 1 कण छोड़ देने पर द्रव्यमान अंतर और ऊर्जा दोनों गलत हो सकते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does positive Q mean?",
+          "hi": "धनात्मक Q का क्या अर्थ है?"
+        },
+        "answer": {
+          "en": "The products have lower total rest mass, allowing energy release.",
+          "hi": "उत्पादों का कुल विश्राम द्रव्यमान कम है, इसलिए ऊर्जा निकल सकती है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "N=A−Z; qnucleus=Ze",
+      "meaning": {
+        "en": "Neutron count and nuclear charge.",
+        "hi": "न्यूट्रॉन संख्या और नाभिक आवेश।"
+      },
+      "units": {
+        "en": "A,Z,N: dimensionless counts; q: C",
+        "hi": "A,Z,N: dimensionless counts; q: C"
+      }
+    },
+    {
+      "expression": "R=R0A^(1/3)",
+      "meaning": {
+        "en": "Approximate nuclear radius, R0≈1.2 fm.",
+        "hi": "लगभग नाभिक त्रिज्या, R0≈1.2 fm।"
+      },
+      "units": {
+        "en": "R: m or fm; 1 fm=10^-15 m",
+        "hi": "R: m or fm; 1 fm=10^-15 m"
+      }
+    },
+    {
+      "expression": "Δm=Zmp+(A−Z)mn−Mnucleus; B=Δm c²",
+      "meaning": {
+        "en": "Use consistent nuclear masses; use mH with atomic masses.",
+        "hi": "संगत नाभिक द्रव्यमान लें; परमाणु द्रव्यमान के साथ mH लें।"
+      },
+      "units": {
+        "en": "Δm: kg or u; B: J or MeV; 1 u c²≈931.5 MeV",
+        "hi": "Δm: kg or u; B: J or MeV; 1 u c²≈931.5 MeV"
+      }
+    },
+    {
+      "expression": "Q=(Σmi−Σmf)c²; binding per nucleon=B/A",
+      "meaning": {
+        "en": "Reaction energy and per-nucleon comparison.",
+        "hi": "अभिक्रिया ऊर्जा और प्रति न्यूक्लिऑन तुलना।"
+      },
+      "units": {
+        "en": "Q,B: MeV; B/A: MeV per nucleon",
+        "hi": "Q,B: MeV; B/A: MeV per nucleon"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find neutron number and nuclear charge for A=56,Z=26.",
+        "hi": "A=56,Z=26 के लिए न्यूट्रॉन संख्या और नाभिक आवेश निकालें।"
+      },
+      "given": {
+        "en": "A=56; Z=26; e=1.602×10^-19 C.",
+        "hi": "A=56; Z=26; e=1.602×10^-19 C।"
+      },
+      "find": {
+        "en": "N and q.",
+        "hi": "N और q।"
+      },
+      "formula": {
+        "en": "N=A−Z; q=Ze",
+        "hi": "N=A−Z; q=Ze"
+      },
+      "steps": [
+        {
+          "en": "N=56−26=30.",
+          "hi": "N=56−26=30।"
+        },
+        {
+          "en": "q=26×1.602×10^-19 C.",
+          "hi": "q=26×1.602×10^-19 C।"
+        }
+      ],
+      "answer": {
+        "en": "N=30; q≈4.17×10^-18 C.",
+        "hi": "N=30; q≈4.17×10^-18 C।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Estimate radius of an A=64 nucleus.",
+        "hi": "A=64 नाभिक की त्रिज्या अनुमानित करें।"
+      },
+      "given": {
+        "en": "R0=1.2 fm; A=64.",
+        "hi": "R0=1.2 fm; A=64।"
+      },
+      "find": {
+        "en": "R.",
+        "hi": "R।"
+      },
+      "formula": {
+        "en": "R=R0A^(1/3)",
+        "hi": "R=R0A^(1/3)"
+      },
+      "steps": [
+        {
+          "en": "64^(1/3)=4.",
+          "hi": "64^(1/3)=4।"
+        },
+        {
+          "en": "R=1.2×4 fm.",
+          "hi": "R=1.2×4 fm।"
+        }
+      ],
+      "answer": {
+        "en": "4.8 fm=4.8×10^-15 m.",
+        "hi": "4.8 fm=4.8×10^-15 m।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A nucleus has mass defect 0.030 u. Find binding energy.",
+        "hi": "नाभिक की द्रव्यमान क्षति 0.030 u है। बंधन ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "1 u c²=931.5 MeV.",
+        "hi": "1 u c²=931.5 MeV।"
+      },
+      "find": {
+        "en": "B.",
+        "hi": "B।"
+      },
+      "formula": {
+        "en": "B=Δm c²",
+        "hi": "B=Δm c²"
+      },
+      "steps": [
+        {
+          "en": "B=0.030×931.5 MeV.",
+          "hi": "B=0.030×931.5 MeV।"
+        }
+      ],
+      "answer": {
+        "en": "27.945 MeV, about 28 MeV to the precision of the given mass defect.",
+        "hi": "27.945 MeV; दिए द्रव्यमान की परिशुद्धता में लगभग 28 MeV।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A=20 nucleus has B/A=8.4 MeV per nucleon. Find total binding energy.",
+        "hi": "A=20 नाभिक का B/A=8.4 MeV प्रति न्यूक्लिऑन है। कुल बंधन ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "A=20; B/A=8.4 MeV.",
+        "hi": "A=20; B/A=8.4 MeV।"
+      },
+      "find": {
+        "en": "B.",
+        "hi": "B।"
+      },
+      "formula": {
+        "en": "B=A(B/A)",
+        "hi": "B=A(B/A)"
+      },
+      "steps": [
+        {
+          "en": "Multiply the per-nucleon value by 20.",
+          "hi": "प्रति न्यूक्लिऑन मान को 20 से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "168 MeV.",
+        "hi": "168 MeV।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "All initial reaction masses total 12.004 u; all final masses total 12.000 u. Find Q in MeV and joules.",
+        "hi": "अभिक्रिया के सभी प्रारंभिक द्रव्यमान 12.004 u और सभी अंतिम 12.000 u हैं। Q,MeV और जूल में निकालें।"
+      },
+      "given": {
+        "en": "1 u c²=931.5 MeV; 1 MeV=1.602×10^-13 J.",
+        "hi": "1 u c²=931.5 MeV; 1 MeV=1.602×10^-13 J।"
+      },
+      "find": {
+        "en": "Signed reaction energy.",
+        "hi": "चिह्न सहित अभिक्रिया ऊर्जा।"
+      },
+      "formula": {
+        "en": "Q=(mi−mf)c²",
+        "hi": "Q=(mi−mf)c²"
+      },
+      "steps": [
+        {
+          "en": "Δm=0.004 u, positive.",
+          "hi": "Δm=0.004 u, धनात्मक।"
+        },
+        {
+          "en": "Q=0.004×931.5=3.726 MeV.",
+          "hi": "Q=0.004×931.5=3.726 MeV।"
+        },
+        {
+          "en": "In joules multiply 3.726 by 1.602×10^-13.",
+          "hi": "जूल में 3.726 को 1.602×10^-13 से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "Q=+3.726 MeV≈+5.97×10^-13 J; energy is released.",
+        "hi": "Q=+3.726 MeV≈+5.97×10^-13 J; ऊर्जा निकलती है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "For A=23,Z=11, neutron number is",
+        "hi": "A=23,Z=11 पर न्यूट्रॉन संख्या है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "N=A−Z=23−11.",
+            "hi": "N=A−Z=23−11।"
+          }
+        },
+        {
+          "text": {
+            "en": "11",
+            "hi": "11"
+          },
+          "reason": {
+            "en": "11 is the proton number.",
+            "hi": "11 प्रोटॉन संख्या है।"
+          }
+        },
+        {
+          "text": {
+            "en": "23",
+            "hi": "23"
+          },
+          "reason": {
+            "en": "23 counts all nucleons.",
+            "hi": "23 सभी न्यूक्लिऑन गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "34",
+            "hi": "34"
+          },
+          "reason": {
+            "en": "Adding A and Z double-counts protons.",
+            "hi": "A और Z जोड़ने से प्रोटॉन दोहरते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Isotopes necessarily share",
+        "hi": "समस्थानिकों में आवश्यकतः समान है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Atomic number Z",
+            "hi": "परमाणु क्रमांक Z"
+          },
+          "reason": {
+            "en": "They are the same element with different neutron numbers.",
+            "hi": "वे अलग न्यूट्रॉन वाले उसी तत्व के रूप हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass number A",
+            "hi": "द्रव्यमान संख्या A"
+          },
+          "reason": {
+            "en": "Their mass numbers differ.",
+            "hi": "द्रव्यमान संख्या अलग होती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neutron number N",
+            "hi": "न्यूट्रॉन संख्या N"
+          },
+          "reason": {
+            "en": "Different N distinguishes isotopes of one element.",
+            "hi": "अलग N उसी तत्व के समस्थानिकों में भेद करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every atomic mass exactly",
+            "hi": "हर परमाणु द्रव्यमान बिल्कुल"
+          },
+          "reason": {
+            "en": "Different isotopes have different masses.",
+            "hi": "अलग समस्थानिकों के द्रव्यमान अलग हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Species with the same A but different Z are",
+        "hi": "समान A और अलग Z वाली जातियाँ हैं"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Isobars",
+            "hi": "समभारिक"
+          },
+          "reason": {
+            "en": "Isobars share mass number.",
+            "hi": "समभारिक की द्रव्यमान संख्या समान।"
+          }
+        },
+        {
+          "text": {
+            "en": "Isotopes",
+            "hi": "समस्थानिक"
+          },
+          "reason": {
+            "en": "Isotopes share Z instead.",
+            "hi": "समस्थानिक में Z समान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Isotones necessarily",
+            "hi": "आवश्यकतः समन्यूट्रॉनिक"
+          },
+          "reason": {
+            "en": "Equal A with different Z gives different N.",
+            "hi": "समान A पर अलग Z से N अलग होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Identical nuclei",
+            "hi": "एक जैसे नाभिक"
+          },
+          "reason": {
+            "en": "Different Z changes nuclear identity.",
+            "hi": "अलग Z नाभिक पहचान बदलता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "If A increases from 8 to 64, radius changes by",
+        "hi": "A,8 से 64 हो तो त्रिज्या बदलती है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Factor 2",
+            "hi": "2 गुने से"
+          },
+          "reason": {
+            "en": "(64/8)^(1/3)=2.",
+            "hi": "(64/8)^(1/3)=2।"
+          }
+        },
+        {
+          "text": {
+            "en": "Factor 8",
+            "hi": "8 गुने से"
+          },
+          "reason": {
+            "en": "Radius scales with cube root, not A directly.",
+            "hi": "त्रिज्या घनमूल से है, सीधे A से नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Factor 64",
+            "hi": "64 गुने से"
+          },
+          "reason": {
+            "en": "This ignores the initial A and cube root.",
+            "hi": "इसमें प्रारंभिक A और घनमूल छूटे हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No change",
+            "hi": "नहीं बदलती"
+          },
+          "reason": {
+            "en": "The radius law predicts a change.",
+            "hi": "त्रिज्या नियम बदलाव बताता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Nuclear average density is roughly independent of A because",
+        "hi": "औसत नाभिकीय घनत्व लगभग A से स्वतंत्र है क्योंकि"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Both nuclear mass and volume scale approximately with A",
+            "hi": "द्रव्यमान और आयतन दोनों लगभग A के अनुसार हैं"
+          },
+          "reason": {
+            "en": "Their ratio is then approximately constant.",
+            "hi": "तब उनका अनुपात लगभग स्थिर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Radius is identical for every nucleus",
+            "hi": "हर नाभिक की त्रिज्या समान"
+          },
+          "reason": {
+            "en": "R grows with A^(1/3).",
+            "hi": "R,A^(1/3) के साथ बढ़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nuclear mass is zero",
+            "hi": "नाभिक द्रव्यमान शून्य"
+          },
+          "reason": {
+            "en": "Nuclei contain massive nucleons.",
+            "hi": "नाभिक में द्रव्यमान वाले न्यूक्लिऑन हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Volume scales as A³",
+            "hi": "आयतन A³ से है"
+          },
+          "reason": {
+            "en": "Using R³ with R∝A^(1/3) gives volume∝A.",
+            "hi": "R³ और R∝A^(1/3) से आयतन∝A।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Mass defect of a bound nucleus is",
+        "hi": "बँधे नाभिक की द्रव्यमान क्षति है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Separated nucleon mass sum minus nuclear mass",
+            "hi": "अलग न्यूक्लिऑन द्रव्यमान योग घटा नाभिक द्रव्यमान"
+          },
+          "reason": {
+            "en": "The difference corresponds to positive binding energy.",
+            "hi": "अंतर धनात्मक बंधन ऊर्जा देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nuclear mass minus nucleon mass sum",
+            "hi": "नाभिक द्रव्यमान घटा न्यूक्लिऑन योग"
+          },
+          "reason": {
+            "en": "This reverses the usual positive mass-defect convention.",
+            "hi": "यह सामान्य धनात्मक द्रव्यमान क्षति का क्रम उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Atomic number times charge",
+            "hi": "परमाणु क्रमांक गुणा आवेश"
+          },
+          "reason": {
+            "en": "That is nuclear charge, not mass defect.",
+            "hi": "वह नाभिक आवेश है, द्रव्यमान क्षति नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only electron mass",
+            "hi": "केवल इलेक्ट्रॉन द्रव्यमान"
+          },
+          "reason": {
+            "en": "Binding concerns the nucleon system.",
+            "hi": "बंधन न्यूक्लिऑन तंत्र का है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "A mass defect 0.010 u corresponds to",
+        "hi": "0.010 u द्रव्यमान क्षति के अनुरूप है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "9.315 MeV",
+            "hi": "9.315 MeV"
+          },
+          "reason": {
+            "en": "0.010×931.5=9.315.",
+            "hi": "0.010×931.5=9.315।"
+          }
+        },
+        {
+          "text": {
+            "en": "931.5 MeV",
+            "hi": "931.5 MeV"
+          },
+          "reason": {
+            "en": "That is for 1 u, not 0.010 u.",
+            "hi": "वह 1 u के लिए है, 0.010 u के लिए नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.010 J",
+            "hi": "0.010 J"
+          },
+          "reason": {
+            "en": "A mass in u is not directly an equal energy in joules.",
+            "hi": "u में द्रव्यमान सीधे उतनी जूल ऊर्जा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "9.315 C",
+            "hi": "9.315 C"
+          },
+          "reason": {
+            "en": "C is charge, not energy.",
+            "hi": "C आवेश है, ऊर्जा नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "In alpha decay the daughter has",
+        "hi": "अल्फा क्षय में पुत्री नाभिक में है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "A−4 and Z−2",
+            "hi": "A−4 और Z−2"
+          },
+          "reason": {
+            "en": "The emitted alpha is a helium-4 nucleus.",
+            "hi": "निकला अल्फा हीलियम-4 नाभिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A unchanged,Z+1",
+            "hi": "A समान,Z+1"
+          },
+          "reason": {
+            "en": "That matches beta-minus bookkeeping, not alpha.",
+            "hi": "यह बीटा-माइनस का लेखा है, अल्फा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A−2,Z−4",
+            "hi": "A−2,Z−4"
+          },
+          "reason": {
+            "en": "The alpha contains 4 nucleons and 2 protons.",
+            "hi": "अल्फा में 4 न्यूक्लिऑन और 2 प्रोटॉन।"
+          }
+        },
+        {
+          "text": {
+            "en": "A and Z unchanged",
+            "hi": "A और Z समान"
+          },
+          "reason": {
+            "en": "That is gamma emission bookkeeping.",
+            "hi": "यह गामा उत्सर्जन का लेखा है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "In gamma emission",
+        "hi": "गामा उत्सर्जन में"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "A and Z stay the same",
+            "hi": "A और Z वही रहते हैं"
+          },
+          "reason": {
+            "en": "Excitation energy is released as a photon.",
+            "hi": "उत्तेजन ऊर्जा फोटॉन में निकलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A falls by 4",
+            "hi": "A,4 घटता है"
+          },
+          "reason": {
+            "en": "That is alpha decay.",
+            "hi": "वह अल्फा क्षय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Z always rises by 1",
+            "hi": "Z हमेशा 1 बढ़ता है"
+          },
+          "reason": {
+            "en": "That is beta-minus bookkeeping.",
+            "hi": "वह बीटा-माइनस का लेखा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All protons disappear",
+            "hi": "सभी प्रोटॉन गायब"
+          },
+          "reason": {
+            "en": "The nuclear species remains the same isotope.",
+            "hi": "नाभिक वही समस्थानिक रहता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "A reaction has positive Q when",
+        "hi": "अभिक्रिया का Q धनात्मक कब है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Initial total rest mass exceeds final total rest mass",
+            "hi": "प्रारंभिक कुल विश्राम द्रव्यमान अंतिम से अधिक"
+          },
+          "reason": {
+            "en": "The rest-mass difference can emerge as energy.",
+            "hi": "विश्राम द्रव्यमान अंतर ऊर्जा के रूप में निकल सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Final mass is always larger",
+            "hi": "अंतिम द्रव्यमान हमेशा अधिक"
+          },
+          "reason": {
+            "en": "That would make Q negative with this convention.",
+            "hi": "इस परंपरा में उससे Q ऋणात्मक होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only A is conserved",
+            "hi": "केवल A संरक्षित है"
+          },
+          "reason": {
+            "en": "A bookkeeping alone does not determine Q.",
+            "hi": "केवल A का लेखा Q नहीं बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "No energy is conserved",
+            "hi": "ऊर्जा संरक्षित नहीं"
+          },
+          "reason": {
+            "en": "Total mass-energy conservation underlies Q.",
+            "hi": "Q का आधार कुल द्रव्यमान-ऊर्जा संरक्षण है।"
+          }
+        }
+      ]
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define isotopes,isobars and isotones.",
+        "hi": "समस्थानिक,समभारिक और समन्यूट्रॉनिक परिभाषित करें।"
+      },
+      "answer": {
+        "en": "They share Z,A and N respectively, while being distinct nuclear species.",
+        "hi": "अलग नाभिकीय जातियों में क्रमशः Z,A,N समान होते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain nearly constant nuclear density.",
+        "hi": "लगभग स्थिर नाभिकीय घनत्व समझाएँ।"
+      },
+      "answer": {
+        "en": "R∝A^(1/3) gives volume∝A, while nuclear mass≈A times nucleon mass; their ratio is nearly constant.",
+        "hi": "R∝A^(1/3) से आयतन∝A, द्रव्यमान≈A गुना न्यूक्लिऑन द्रव्यमान; अनुपात लगभग स्थिर।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is a bound nucleus lighter than its free nucleons?",
+        "hi": "बंधा नाभिक मुक्त न्यूक्लिऑनों से हल्का क्यों?"
+      },
+      "answer": {
+        "en": "Formation releases binding energy, lowering the total rest mass by B/c².",
+        "hi": "निर्माण में बंधन ऊर्जा निकलती है जिससे कुल विश्राम द्रव्यमान B/c² घटता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the atomic-mass form of mass defect.",
+        "hi": "द्रव्यमान क्षति का परमाणु द्रव्यमान वाला रूप दें।"
+      },
+      "answer": {
+        "en": "Δm=Z mH+(A−Z)mn−Matom, with electron binding corrections negligible at this level.",
+        "hi": "Δm=Z mH+(A−Z)mn−Matom; इस स्तर पर इलेक्ट्रॉन बंधन सुधार नगण्य।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare fission and fusion using binding energy.",
+        "hi": "बंधन ऊर्जा से विखंडन और संलयन मिलाएँ।"
+      },
+      "answer": {
+        "en": "Suitable heavy-nucleus fission and light-nucleus fusion form products with greater total binding, reducing rest mass and releasing energy.",
+        "hi": "उपयुक्त भारी विखंडन और हल्के संलयन से अधिक कुल बंधन वाले उत्पाद बनते, विश्राम द्रव्यमान घटता और ऊर्जा निकलती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain beta-minus nuclear bookkeeping.",
+        "hi": "बीटा-माइनस का नाभिकीय लेखा समझाएँ।"
+      },
+      "answer": {
+        "en": "A neutron converts to a proton with an electron and antineutrino emitted; A stays fixed and Z rises by 1.",
+        "hi": "न्यूट्रॉन प्रोटॉन में बदलता, इलेक्ट्रॉन व प्रतिन्यूट्रिनो निकलते; A वही,Z,1 बढ़ता है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "N=A−Z identifies neutron count.",
+      "hi": "N=A−Z न्यूट्रॉन संख्या देता है।"
+    },
+    {
+      "en": "Nuclear radius scales as A^(1/3).",
+      "hi": "नाभिकीय त्रिज्या A^(1/3) से है।"
+    },
+    {
+      "en": "Mass defect corresponds to binding energy.",
+      "hi": "द्रव्यमान क्षति बंधन ऊर्जा के अनुरूप है।"
+    },
+    {
+      "en": "Binding per nucleon supports stability comparisons.",
+      "hi": "प्रति न्यूक्लिऑन बंधन स्थिरता तुलना में सहायक है।"
+    },
+    {
+      "en": "Q follows complete mass–energy bookkeeping.",
+      "hi": "Q पूरे द्रव्यमान-ऊर्जा लेखे से मिलता है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not mix atomic and nuclear mass conventions, confuse A with mass in u, or infer that every fusion reaction releases energy.",
+    "hi": "परमाणु और नाभिक द्रव्यमान की परंपरा न मिलाएँ, A को u में सटीक द्रव्यमान न मानें और हर संलयन से ऊर्जा निकलती है ऐसा न कहें।"
+  },
+  "goal": {
+    "en": "Relate nuclear composition,size,binding and transformations through consistent mass–energy accounting.",
+    "hi": "संगत द्रव्यमान-ऊर्जा लेखे से नाभिक संघटन,आकार,बंधन और परिवर्तन जोड़ें।"
+  },
+  "conceptMap": "नाभिक संकेत और संबंधित जातियाँ → नाभिकीय आकार और लगभग स्थिर घनत्व → परमाणु द्रव्यमान और द्रव्यमान–ऊर्जा तुल्यता → द्रव्यमान क्षति और बंधन ऊर्जा → प्रति न्यूक्लिऑन बंधन ऊर्जा और स्थिरता → नाभिकीय बल और संतृप्ति → रेडियोधर्मिता: गुणात्मक नाभिकीय परिवर्तन → विखंडन, संलयन और ऊर्जा संतुलन",
+  "conceptMapEn": "Nuclear notation and related species → Nuclear size and nearly constant density → Atomic mass and mass–energy equivalence → Mass defect and binding energy → Binding energy per nucleon and stability → Nuclear force and saturation → Radioactivity: qualitative nuclear changes → Fission, fusion and the energy balance",
+  "editionBasis": {
+    "en": "Original study explanations aligned with the current NCERT Class 12 Physics sequence and UP Board 2026–27. Use the prescribed textbook and school practicals alongside.",
+    "hi": "वर्तमान NCERT कक्षा 12 भौतिकी क्रम और यूपी बोर्ड 2026–27 के अनुरूप मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक तथा विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 13",
+      "url": "https://ncert.nic.in/textbook/pdf/leph205.pdf"
+    },
+    {
+      "title": "UPMSP Physics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    }
+  ]
+}

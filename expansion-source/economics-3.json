@@ -1,0 +1,860 @@
+{
+  "id": "economics-3",
+  "number": 3,
+  "title": {
+    "en": "Poverty as a Challenge",
+    "hi": "निर्धनता: एक चुनौती"
+  },
+  "engine": "chart",
+  "goal": {
+    "en": "Distinguish deprivation, vulnerability and the rules used to measure poverty.",
+    "hi": "अभाव, संवेदनशीलता और निर्धनता मापने के नियम का अंतर समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "1. Poverty is more than low income",
+        "hi": "1. निर्धनता केवल कम आय नहीं"
+      },
+      "body": {
+        "en": "Poverty includes difficulty meeting basic needs and taking part in society with dignity. Low income is important, but it may be accompanied by inadequate food, insecure housing, poor health, limited schooling and vulnerability to shocks. A household can face several deprivations at the same time. For example, illness may reduce earnings while raising medical expenses, leading to interrupted education or debt. The chapter therefore asks us to see people and circumstances behind a single monetary number. Do not assume that someone is not poor merely because one visible possession is present. That item may be borrowed, old or essential for work, and it does not reveal all needs or liabilities. An evidence-based description identifies living conditions, employment security and access to services without insulting the people concerned. Poverty is also not a permanent personal identity: households may move into or out of hardship as opportunities and risks change. Explain causes and consequences together, while avoiding the claim that every poor household experiences exactly the same combination of problems.",
+        "hi": "निर्धनता (Poverty) में बुनियादी आवश्यकताएँ पूरी करना और गरिमा के साथ सामाजिक जीवन में भाग लेना कठिन होता है। कम आय महत्त्वपूर्ण है, लेकिन इसके साथ भोजन की कमी, असुरक्षित आवास, खराब स्वास्थ्य, सीमित पढ़ाई और संकट का जोखिम भी हो सकता है। एक परिवार कई अभाव एक साथ झेल सकता है। बीमारी से कमाई घटे और उपचार खर्च बढ़े तो ऋण लेना या पढ़ाई रोकना पड़ सकता है। इसलिए केवल रुपये की संख्या के पीछे मौजूद व्यक्ति तथा परिस्थिति देखें। किसी के पास एक दिखाई देने वाली वस्तु होने से उसे निर्धनता से बाहर मान लेना उचित नहीं। वह वस्तु पुरानी, उधार की या काम के लिए जरूरी हो सकती है; उससे सारे खर्च तथा देनदारियाँ नहीं पता चलतीं। प्रमाण आधारित वर्णन में जीवन दशा, काम की सुरक्षा और सुविधाओं की उपलब्धता बताएँ, अपमानजनक भाषा न प्रयोग करें। निर्धनता व्यक्ति की स्थायी पहचान भी नहीं है। अवसर तथा जोखिम बदलने पर परिवार कठिनाई में आ सकता है या उससे बाहर निकल सकता है। कारण और परिणाम जोड़ें, लेकिन हर निर्धन परिवार के अनुभव समान न मानें।"
+      },
+      "question": {
+        "en": "Why does one possession not give a complete picture of poverty?",
+        "hi": "केवल 1 वस्तु का स्वामित्व निर्धनता की पूरी स्थिति क्यों नहीं बताता?"
+      }
+    },
+    {
+      "title": {
+        "en": "2. What a poverty line does",
+        "hi": "2. निर्धनता रेखा क्या करती है"
+      },
+      "body": {
+        "en": "A poverty line is a benchmark used to identify people below a specified minimum level of consumption or income. Its meaning depends on the method, place and reference year. A monetary threshold must be adjusted when prices or the chosen basket change; a figure from an older textbook cannot be presented as today's official rule. Rural and urban needs or prices may be treated differently in a particular estimation method. Poverty measurement is useful for describing scale and planning responses, but a single line cannot capture every aspect of deprivation. Someone just above it may still be insecure. In this lesson the adjustable line uses invented income points on a scale from 0 to 500, not rupees and not an official poverty estimate. Moving it changes the count classified below the illustrative threshold while leaving the underlying observations unchanged. This separation is the key idea: measurement involves both data and a rule. Always state the rule before interpreting a percentage. Do not mix an income-based classroom example with a historical consumption-based official calculation.",
+        "hi": "निर्धनता रेखा (Poverty Line) आय या उपभोग के निर्धारित न्यूनतम स्तर से नीचे रहने वालों की पहचान का मापदंड है। इसका अर्थ अपनाई गई विधि, स्थान और संदर्भ वर्ष पर निर्भर करता है। कीमतें या चुनी आवश्यक वस्तुओं का समूह बदले तो रुपये की सीमा का अर्थ भी बदलता है। पुरानी पुस्तक का आँकड़ा आज का आधिकारिक नियम बताना गलत है। किसी विधि में ग्रामीण तथा शहरी जरूरतों या कीमतों को अलग माना जा सकता है। रेखा से समस्या का आकार समझने और योजना बनाने में मदद मिलती है, लेकिन वह हर अभाव नहीं मापती। उससे थोड़ा ऊपर परिवार भी असुरक्षित हो सकता है। यहाँ चलायमान सीमा काल्पनिक आय अंकों की 0 से 500 वाली पट्टी पर है। ये रुपये नहीं और आधिकारिक निर्धनता अनुमान भी नहीं हैं। सीमा बदलने से उसके नीचे गिने गए लोगों की संख्या बदलती है; मूल आय अंक नहीं बदलते। यही सीख है कि मापन में आँकड़े तथा वर्गीकरण का नियम दोनों होते हैं। प्रतिशत बताने से पहले नियम बताएँ। आय आधारित कक्षा उदाहरण को ऐतिहासिक उपभोग आधारित आधिकारिक गणना में न मिलाएँ।"
+      },
+      "question": {
+        "en": "Does raising the displayed threshold change the example households’ incomes?",
+        "hi": "दिखाई गई सीमा बढ़ाने से उदाहरण परिवारों की आय बदलती है क्या?"
+      }
+    },
+    {
+      "title": {
+        "en": "3. Social exclusion and vulnerability",
+        "hi": "3. सामाजिक अपवर्जन और असुरक्षा"
+      },
+      "body": {
+        "en": "Social exclusion is a process through which people are denied opportunities or participation available to others. Discrimination can restrict access to education, decent work, housing or public facilities. It can be both a cause and a consequence of poverty. Vulnerability refers to the greater chance of suffering hardship when circumstances change. A casual worker with no savings may face a more severe loss after illness than a household with stable earnings and insurance. Risk depends on assets, support networks, employment and access to protection. These concepts explain why two households with similar present incomes can have different levels of security. Do not confuse vulnerability with a prediction that a particular individual will certainly become poor. It describes exposure and capacity to cope, not destiny. A thoughtful classroom comparison might hold current income constant and change job stability or medical costs. Ask which household can better withstand a shock and why. In exam writing, define each concept separately and then connect it to a clear mechanism rather than using the terms as interchangeable labels.",
+        "hi": "सामाजिक अपवर्जन (Social Exclusion) वह प्रक्रिया है जिसमें कुछ लोगों को वे अवसर या भागीदारी नहीं मिलती जो दूसरों को मिलती है। भेदभाव शिक्षा, सम्मानजनक काम, आवास या सार्वजनिक सुविधाओं तक पहुँच रोक सकता है। यह निर्धनता का कारण भी हो सकता है और परिणाम भी। असुरक्षा या संवेदनशीलता (Vulnerability) परिस्थितियाँ बदलने पर कठिनाई में पड़ने के अधिक जोखिम को बताती है। बचत रहित अस्थायी मजदूर को बीमारी से स्थिर आय तथा सुरक्षा वाले परिवार की तुलना में बड़ा झटका लग सकता है। संपत्ति, सहायक संबंध, रोजगार और सुरक्षा सुविधा से जोखिम बदलता है। इसलिए वर्तमान आय समान होने पर भी 2 परिवारों की सुरक्षा अलग हो सकती है। संवेदनशीलता का अर्थ यह नहीं कि कोई विशेष व्यक्ति निश्चित रूप से निर्धन हो जाएगा। यह संकट के सामने जोखिम और सामना करने की क्षमता बताती है, भाग्य नहीं। कक्षा में आय समान रखकर काम की स्थिरता या उपचार खर्च अलग करके तुलना करें। पूछें कौन परिवार झटका बेहतर सह पाएगा और क्यों। परीक्षा में दोनों शब्दों की अलग परिभाषा लिखें और फिर कारण की स्पष्ट प्रक्रिया से उन्हें जोड़ें।"
+      },
+      "question": {
+        "en": "How can similar incomes coexist with different vulnerability?",
+        "hi": "समान आय होते हुए भी असुरक्षा अलग कैसे हो सकती है?"
+      }
+    },
+    {
+      "title": {
+        "en": "4. Groups and regional differences",
+        "hi": "4. समूहों और क्षेत्रों में अंतर"
+      },
+      "body": {
+        "en": "Poverty is unevenly distributed across occupations, social groups and regions. Limited ownership of productive assets, insecure work and historical discrimination can increase exposure to deprivation. Rural agricultural labourers and some urban casual workers may face unstable employment and low bargaining power. Scheduled Castes and Scheduled Tribes have faced particular disadvantages, but no social group should be treated as uniformly poor or incapable. Within each group, households differ. Regional comparisons also need explanation: opportunities, infrastructure, social services and land relations vary. A poverty percentage and a count answer different questions. A large region can contain more poor people even when its proportion is lower. Use the same year and method before comparing places. The chart's invented groups are not actual caste, state or national statistics. They teach how category totals and denominators affect interpretation. Avoid ranking communities using unsupported numbers. A sound answer recognises unequal outcomes, explains relevant structural conditions and respects the agency of people who work to improve their lives despite difficult circumstances.",
+        "hi": "निर्धनता व्यवसायों, सामाजिक समूहों और क्षेत्रों में समान रूप से नहीं फैली है। उत्पादक संपत्ति का अभाव, असुरक्षित काम तथा ऐतिहासिक भेदभाव अभाव का जोखिम बढ़ाते हैं। ग्रामीण खेतिहर मजदूर और कुछ शहरी अस्थायी कामगार अनियमित रोजगार तथा कमजोर सौदेबाजी का सामना कर सकते हैं। अनुसूचित जातियों और अनुसूचित जनजातियों ने विशेष वंचनाएँ झेली हैं, लेकिन किसी पूरे समूह को समान रूप से निर्धन या अक्षम कहना गलत है। हर समूह के भीतर परिवार अलग स्थितियों में होते हैं। क्षेत्रीय अंतर की भी व्याख्या चाहिए। अवसर, सड़क, सेवाएँ और भूमि संबंध बदलते हैं। निर्धन लोगों का प्रतिशत और उनकी कुल संख्या अलग प्रश्नों का उत्तर देते हैं। बड़े क्षेत्र में कम प्रतिशत के बावजूद कुल निर्धन अधिक हो सकते हैं। तुलना के लिए समान वर्ष और विधि लें। इस पाठ के काल्पनिक समूह वास्तविक जाति, राज्य या राष्ट्रीय सांख्यिकी नहीं हैं। उनसे श्रेणी के कुल और आधार संख्या का प्रभाव समझना है। अप्रमाणित संख्या से समुदायों को क्रम न दें। अच्छे उत्तर में असमान परिणाम, उनके संरचनात्मक कारण और कठिनाई से संघर्ष करते लोगों की क्षमता का सम्मान शामिल होता है।"
+      },
+      "question": {
+        "en": "How can a lower poverty percentage coexist with a larger number of poor people?",
+        "hi": "कम निर्धनता प्रतिशत के साथ निर्धन लोगों की संख्या अधिक कैसे हो सकती है?"
+      }
+    },
+    {
+      "title": {
+        "en": "5. Causes and interlocking barriers",
+        "hi": "5. कारण और जुड़ी बाधाएँ"
+      },
+      "body": {
+        "en": "Poverty can arise from several connected historical and present conditions. Unequal access to land, education and employment can reduce earning opportunities. Low-paid or irregular work makes saving difficult, while limited savings can force costly borrowing after an emergency. Poor health may reduce work and raise expenses, reinforcing the cycle. These links explain persistence without suggesting that escape is impossible. Historical colonial policies damaged many livelihoods, and later economic growth did not automatically distribute opportunities equally. Family responsibilities and discrimination can further restrict choices. Avoid the simplistic claim that population size alone explains every poor household or every regional difference. Ask how resources, institutions and opportunities are distributed. A causal diagram should distinguish an initial barrier from a reinforcing effect. For instance, limited schooling can narrow job options; low earnings then make the next generation's schooling harder. Policy can intervene at several points by improving schools, health, livelihoods or access to assets. A complete answer combines such mechanisms rather than repeating a list of causes without showing their relationships.",
+        "hi": "निर्धनता कई ऐतिहासिक और वर्तमान परिस्थितियों के मेल से बन सकती है। भूमि, शिक्षा तथा रोजगार तक असमान पहुँच कमाई के अवसर घटाती है। कम भुगतान या अनियमित काम से बचत कठिन होती है। बचत न होने पर संकट में महँगा ऋण लेना पड़ सकता है। खराब स्वास्थ्य काम घटाता तथा खर्च बढ़ाता है, जिससे कठिनाई का चक्र मजबूत होता है। ये संबंध समस्या के बने रहने की व्याख्या करते हैं; बाहर निकलना असंभव है, ऐसा नहीं कहते। औपनिवेशिक नीतियों से अनेक आजीविकाएँ प्रभावित हुईं और बाद की आर्थिक वृद्धि ने अवसर अपने आप बराबर नहीं बाँटे। पारिवारिक जिम्मेदारियाँ तथा भेदभाव भी चुनाव सीमित कर सकते हैं। केवल जनसंख्या को हर परिवार की निर्धनता या हर क्षेत्रीय अंतर का कारण कहना अत्यधिक सरल निष्कर्ष है। संसाधन, संस्थाएँ और अवसर कैसे बाँटे हैं, यह पूछें। कारण चित्र में शुरुआती बाधा तथा उसे मजबूत करने वाले प्रभाव अलग करें। सीमित पढ़ाई से काम के विकल्प घटें और कम आय से अगली पीढ़ी की पढ़ाई कठिन हो, यह ऐसी कड़ी है। नीति विद्यालय, स्वास्थ्य, आजीविका या संपत्ति तक पहुँच सुधारकर कई बिंदुओं पर हस्तक्षेप कर सकती है।"
+      },
+      "question": {
+        "en": "Explain one self-reinforcing poverty cycle and one possible intervention.",
+        "hi": "निर्धनता की 1 मजबूत होती कड़ी और उसे तोड़ने वाला 1 उपाय समझाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "6. Growth and targeted programmes",
+        "hi": "6. वृद्धि और लक्षित कार्यक्रम"
+      },
+      "body": {
+        "en": "Economic growth can expand employment and public resources, but its effect on poverty depends on who gains access to those opportunities. Growth with very few secure jobs or weak public services may leave many households behind. Anti-poverty policy therefore combines wider development with targeted measures for disadvantaged groups. Employment support can provide income, while education, health care and infrastructure improve longer-term capabilities. The textbook discusses programmes from particular historical periods; their names, rates and rules should not be assumed unchanged today. This lesson focuses on mechanisms rather than claiming a current entitlement amount. A rural employment guarantee illustrates how paid work and a public asset may be linked, but implementation requires timely access, payment and accountability. Programmes can face problems such as exclusion, weak delivery or poor-quality assets. Criticism should identify the specific failure instead of concluding that assistance is always useless. Compare intended design with actual access. A balanced answer explains both the purpose of a measure and the conditions needed for it to reach the people it is meant to support.",
+        "hi": "आर्थिक वृद्धि (Economic Growth) से रोजगार तथा सार्वजनिक संसाधन बढ़ सकते हैं, लेकिन निर्धनता पर प्रभाव इस बात पर निर्भर है कि अवसर किन लोगों तक पहुँचते हैं। बहुत कम सुरक्षित काम और कमजोर सेवाओं वाली वृद्धि अनेक परिवारों को पीछे छोड़ सकती है। इसलिए निर्धनता विरोधी नीति में व्यापक विकास और वंचित समूहों के लिए लक्षित उपाय दोनों जरूरी हैं। रोजगार सहायता आय देती है; शिक्षा, स्वास्थ्य और आधारभूत सुविधा लंबे समय की क्षमता बढ़ाते हैं। पाठ्यपुस्तक में अलग ऐतिहासिक समय के कार्यक्रम आते हैं। उनके नाम, दर और नियम आज भी बिना बदलाव वही हैं, ऐसा न मानें। यह पाठ उपाय की कार्यप्रणाली समझाता है, वर्तमान भुगतान राशि का दावा नहीं करता। ग्रामीण रोजगार गारंटी में भुगतान वाला काम तथा सार्वजनिक संपत्ति का निर्माण जुड़ सकते हैं। इसके लिए काम तक पहुँच, समय पर मजदूरी और जवाबदेही जरूरी हैं। किसी कार्यक्रम में बाहर रह जाना, कमजोर वितरण या खराब संपत्ति जैसी समस्या हो सकती है। आलोचना में विशेष कमी बताएँ; सारी सहायता को बेकार कहना सही नहीं। योजना का उद्देश्य और वास्तविक पहुँच की तुलना करें।"
+      },
+      "question": {
+        "en": "Why might growth and targeted programmes both be needed?",
+        "hi": "वृद्धि और लक्षित कार्यक्रम दोनों की जरूरत क्यों हो सकती है?"
+      }
+    },
+    {
+      "title": {
+        "en": "7. Calculate and interpret a poverty share",
+        "hi": "7. निर्धनता हिस्सेदारी की गणना"
+      },
+      "body": {
+        "en": "A headcount ratio divides the number classified below a specified poverty line by the population considered, then multiplies by 100. If an invented sample contains 20 people and 5 fall below its stated threshold, the share is 5 ÷ 20 × 100 = 25%. This is not the percentage of national income they receive, nor the depth of their poverty. Two samples can have the same headcount while people below the line have very different shortfalls. When data are grouped, count people rather than merely counting bars. The chart assigns a people value to each income point: a bar can represent several people. Changing which rows are visible changes the displayed sample, so report the denominator used. Equality with the line is treated here as not below because the model uses a strict less-than rule. State that convention before answering borderline cases. Numerical work should finish with a sentence explaining what the result means and what it does not establish about the wider population.",
+        "hi": "व्यक्ति गणना अनुपात (Headcount Ratio) के लिए निर्धारित रेखा से नीचे वर्गीकृत लोगों की संख्या को संबंधित कुल जनसंख्या से भाग देकर 100 से गुणा करते हैं। काल्पनिक नमूने में 20 लोग हों और 5 सीमा से नीचे हों तो हिस्सेदारी 5 ÷ 20 × 100 = 25% होगी। यह राष्ट्रीय आय में उनका हिस्सा नहीं है और न उनकी निर्धनता की गहराई बताती है। समान अनुपात वाले 2 नमूनों में सीमा से नीचे की कमी बहुत अलग हो सकती है। समूहबद्ध आँकड़ों में केवल दंडों की संख्या नहीं, लोगों की संख्या गिनें। यहाँ हर आय बिंदु के साथ लोगों की संख्या है; एक दंड कई व्यक्तियों को दिखा सकता है। कुछ पंक्तियाँ छिपाने से दिखाई देने वाला नमूना बदलता है, इसलिए आधार संख्या स्पष्ट लिखें। इस मॉडल में सीमा के बराबर मान को नीचे नहीं गिना जाता क्योंकि नियम सख्ती से कम होने का है। किनारे वाले मान पर उत्तर से पहले यह शर्त बताएँ। गणना के अंत में अर्थ लिखें और यह भी बताएँ कि छोटा काल्पनिक नमूना पूरे देश का निष्कर्ष नहीं देता।"
+      },
+      "question": {
+        "en": "In a sample of 20 with 5 below the line, what is the headcount ratio?",
+        "hi": "20 के नमूने में 5 रेखा से नीचे हों तो व्यक्ति गणना अनुपात क्या होगा?"
+      }
+    },
+    {
+      "title": {
+        "en": "8. A respectful evidence-based conclusion",
+        "hi": "8. सम्मानपूर्ण और प्रमाण आधारित निष्कर्ष"
+      },
+      "body": {
+        "en": "Reducing poverty involves more than moving a statistical line. People need dependable livelihoods, better capabilities, protection against shocks and fair treatment. Changes in a poverty measure can reflect changes in actual living standards, prices, survey methods or definitions, so compare evidence carefully. A date belongs with every historical estimate. For revision, distinguish deprivation, social exclusion, vulnerability and the monetary line. Then connect causes to responses: insecure employment calls for livelihood opportunities and protection; poor health calls for accessible services; discrimination calls for equal rights and effective implementation. No single measure replaces all the others. In the interactive scene, make a prediction informally, move the threshold freely and read which observations fall below it. The data do not change when the rule changes. This exercise teaches classification, not how to end poverty by adjusting a slider. Finish an exam answer by explaining that sustained improvements in well-being require real changes in resources, opportunities and institutions. Use precise language that recognises people as citizens with rights rather than as numbers or objects of pity.",
+        "hi": "निर्धनता कम करना केवल सांख्यिकीय रेखा बदलना नहीं है। लोगों को भरोसेमंद आजीविका, बेहतर क्षमता, संकट से सुरक्षा और समान व्यवहार चाहिए। किसी माप में बदलाव वास्तविक जीवन स्तर, कीमत, सर्वेक्षण विधि या परिभाषा के बदलाव से भी आ सकता है। इसलिए तुलना सावधानी से करें और हर ऐतिहासिक अनुमान के साथ वर्ष लिखें। पुनरावृत्ति में अभाव, सामाजिक अपवर्जन, संवेदनशीलता और धन आधारित रेखा का अंतर पहचानें। फिर कारण को उपाय से जोड़ें। असुरक्षित काम के लिए आजीविका तथा सुरक्षा, खराब स्वास्थ्य के लिए सुलभ सेवा और भेदभाव के लिए समान अधिकार तथा प्रभावी पालन आवश्यक हैं। कोई एक उपाय बाकी सबका स्थान नहीं लेता। दृश्य में सीमा को स्वतंत्र रूप से खिसकाकर देखें कि कौन-से मान उसके नीचे आते हैं। नियम बदलता है, आँकड़े नहीं। यह वर्गीकरण का अभ्यास है; स्लाइडर घुमाकर वास्तविक निर्धनता समाप्त करने का उपाय नहीं। परीक्षा के निष्कर्ष में लिखें कि टिकाऊ कल्याण के लिए संसाधन, अवसर और संस्थाओं में वास्तविक सुधार जरूरी है। लोगों को केवल संख्या या दया की वस्तु नहीं, अधिकार वाले नागरिक मानकर सटीक भाषा प्रयोग करें।"
+      },
+      "question": {
+        "en": "Why does changing a measuring rule not itself improve living conditions?",
+        "hi": "मापने का नियम बदलना अपने आप जीवन दशा क्यों नहीं सुधारता?"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "title": {
+        "en": "Easy · Headcount share",
+        "hi": "सरल · व्यक्ति अनुपात"
+      },
+      "question": {
+        "en": "In an invented sample of 40 people, 10 are below the stated line. Calculate the ratio.",
+        "hi": "काल्पनिक 40 लोगों में 10 बताई सीमा से नीचे हैं। अनुपात निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Count below the line: 10.",
+          "hi": "सीमा से नीचे संख्या: 10।"
+        },
+        {
+          "en": "Divide by the total: 10 ÷ 40 = 0.25.",
+          "hi": "कुल से भाग: 10 ÷ 40 = 0.25।"
+        },
+        {
+          "en": "Convert to a percentage: 0.25 × 100 = 25%.",
+          "hi": "प्रतिशत: 0.25 × 100 = 25%।"
+        }
+      ],
+      "answer": {
+        "en": "25% of this defined sample, not 25% of national income.",
+        "hi": "इस परिभाषित नमूने के 25%, राष्ट्रीय आय के 25% नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Medium · Strictly below the line",
+        "hi": "मध्यम · रेखा से सख्ती से नीचे"
+      },
+      "question": {
+        "en": "Three illustrative income points are 80, 100 and 140. At a threshold of 100, how many observations are below?",
+        "hi": "3 उदाहरण आय अंक 80, 100 और 140 हैं। सीमा 100 पर कितने मान नीचे हैं?"
+      },
+      "steps": [
+        {
+          "en": "The model uses value < threshold.",
+          "hi": "मॉडल में मान < सीमा नियम है।"
+        },
+        {
+          "en": "80 < 100, but 100 equals rather than falls below the line.",
+          "hi": "80 < 100 है, पर 100 बराबर है, नीचे नहीं।"
+        },
+        {
+          "en": "140 is above it.",
+          "hi": "140 उससे ऊपर है।"
+        }
+      ],
+      "answer": {
+        "en": "1 observation is below. Raising the line above 100 would change classification, not incomes.",
+        "hi": "1 मान नीचे है। सीमा 100 से ऊपर करने पर वर्गीकरण बदलेगा, आय नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Challenge · Count versus percentage",
+        "hi": "चुनौती · संख्या और प्रतिशत"
+      },
+      "question": {
+        "en": "Region A has 100 people with a 20% share below the line; B has 300 with a 10% share. Compare counts. Both are invented.",
+        "hi": "काल्पनिक क्षेत्र A में 100 लोग तथा 20% नीचे हैं; B में 300 लोग तथा 10% नीचे हैं। संख्या तुलना करें।"
+      },
+      "steps": [
+        {
+          "en": "A: 100 × 20 ÷ 100 = 20.",
+          "hi": "A: 100 × 20 ÷ 100 = 20।"
+        },
+        {
+          "en": "B: 300 × 10 ÷ 100 = 30.",
+          "hi": "B: 300 × 10 ÷ 100 = 30।"
+        },
+        {
+          "en": "Compare shares and counts separately.",
+          "hi": "प्रतिशत तथा संख्या अलग तुलना करें।"
+        }
+      ],
+      "answer": {
+        "en": "B has the lower percentage but 10 more people below the line because its population is larger.",
+        "hi": "B का प्रतिशत कम है, लेकिन अधिक जनसंख्या से सीमा के नीचे 10 लोग अधिक हैं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "What does a poverty line provide?",
+        "hi": "निर्धनता रेखा क्या देती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A specified classification benchmark",
+            "hi": "निर्धारित वर्गीकरण मापदंड"
+          },
+          "reason": {
+            "en": "Its meaning depends on method, date and place.",
+            "hi": "इसका अर्थ विधि, समय तथा स्थान पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A complete measure of all human well-being",
+            "hi": "संपूर्ण मानवीय कल्याण का माप"
+          },
+          "reason": {
+            "en": "A single money line misses other dimensions.",
+            "hi": "एक धन रेखा अन्य आयाम छोड़ देती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A permanent unchanging rupee value",
+            "hi": "हमेशा अपरिवर्तित रुपये का मान"
+          },
+          "reason": {
+            "en": "Prices and methods can change.",
+            "hi": "कीमतें तथा विधियाँ बदल सकती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A guarantee nobody above it faces hardship",
+            "hi": "ऊपर वाले को कठिनाई न होने की गारंटी"
+          },
+          "reason": {
+            "en": "Those slightly above can still be vulnerable.",
+            "hi": "थोड़ा ऊपर रहने वाले भी असुरक्षित हो सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What changes when this lesson’s illustrative threshold is raised?",
+        "hi": "इस पाठ की उदाहरण सीमा बढ़ाने पर क्या बदलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Every income automatically rises",
+            "hi": "हर आय अपने आप बढ़ती है"
+          },
+          "reason": {
+            "en": "Moving the line does not alter the data.",
+            "hi": "रेखा खिसकाने से आँकड़े नहीं बदलते।"
+          }
+        },
+        {
+          "text": {
+            "en": "The example becomes official statistics",
+            "hi": "उदाहरण आधिकारिक आँकड़ा बनता है"
+          },
+          "reason": {
+            "en": "Invented data remain illustrative.",
+            "hi": "बनाए आँकड़े उदाहरण ही रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Prices in India are determined",
+            "hi": "भारत की कीमतें तय हो जाती हैं"
+          },
+          "reason": {
+            "en": "A classroom control does not set actual prices.",
+            "hi": "कक्षा नियंत्रण वास्तविक कीमत नहीं तय करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Which observations are classified below it",
+            "hi": "उसके नीचे वर्गीकृत मान"
+          },
+          "reason": {
+            "en": "The rule changes while the income points remain fixed.",
+            "hi": "नियम बदलता है, आय अंक स्थिर रहते हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "What is social exclusion?",
+        "hi": "सामाजिक अपवर्जन क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Equal access for everyone",
+            "hi": "सबके लिए समान पहुँच"
+          },
+          "reason": {
+            "en": "This is the opposite of exclusion.",
+            "hi": "यह अपवर्जन का उलटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The number of notes in a wallet",
+            "hi": "बटुए में नोटों की संख्या"
+          },
+          "reason": {
+            "en": "Exclusion includes social processes beyond cash holdings.",
+            "hi": "अपवर्जन में नकदी से आगे सामाजिक प्रक्रियाएँ हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Being denied opportunities or participation available to others",
+            "hi": "दूसरों को मिले अवसर या भागीदारी से वंचित होना"
+          },
+          "reason": {
+            "en": "It concerns processes of unequal access.",
+            "hi": "यह असमान पहुँच की प्रक्रिया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a low rainfall year",
+            "hi": "केवल कम वर्षा वाला साल"
+          },
+          "reason": {
+            "en": "Rainfall is a natural condition, not the definition.",
+            "hi": "वर्षा प्राकृतिक स्थिति है, परिभाषा नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which household is more vulnerable to an income shock, other things equal?",
+        "hi": "अन्य बातें समान हों तो आय संकट में कौन अधिक असुरक्षित है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Risk cannot depend on circumstances",
+            "hi": "जोखिम परिस्थिति पर निर्भर नहीं"
+          },
+          "reason": {
+            "en": "Circumstances are central to vulnerability.",
+            "hi": "संवेदनशीलता में परिस्थितियाँ मुख्य हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "One with irregular work and no savings",
+            "hi": "अनियमित काम तथा बिना बचत वाला"
+          },
+          "reason": {
+            "en": "It has fewer resources to absorb a loss.",
+            "hi": "उसके पास नुकसान सहने के कम साधन हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "One with secure work and emergency savings",
+            "hi": "सुरक्षित काम तथा आपात बचत वाला"
+          },
+          "reason": {
+            "en": "These resources can help withstand shocks.",
+            "hi": "ये साधन संकट सहने में मदद कर सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both must always have identical risk",
+            "hi": "दोनों का जोखिम हमेशा समान"
+          },
+          "reason": {
+            "en": "Security and savings affect coping capacity.",
+            "hi": "सुरक्षा तथा बचत सामना करने की क्षमता बदलती हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "If 5 of 20 people are below the stated line, what is the headcount ratio?",
+        "hi": "20 में 5 लोग बताई रेखा से नीचे हों तो अनुपात क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "25%",
+            "hi": "25%"
+          },
+          "reason": {
+            "en": "5 ÷ 20 × 100 = 25%.",
+            "hi": "5 ÷ 20 × 100 = 25%।"
+          }
+        },
+        {
+          "text": {
+            "en": "5%",
+            "hi": "5%"
+          },
+          "reason": {
+            "en": "This mistakes a count for a percentage.",
+            "hi": "इसमें संख्या को प्रतिशत मान लिया गया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "20%",
+            "hi": "20%"
+          },
+          "reason": {
+            "en": "20 is the denominator, not the computed share.",
+            "hi": "20 आधार संख्या है, निकाला गया प्रतिशत नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "80%",
+            "hi": "80%"
+          },
+          "reason": {
+            "en": "80% would represent 16 of 20.",
+            "hi": "80% का अर्थ 20 में 16 होगा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why must a historical poverty estimate include a year?",
+        "hi": "ऐतिहासिक निर्धनता अनुमान के साथ वर्ष क्यों चाहिए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "All estimates remain identical forever",
+            "hi": "सारे अनुमान हमेशा समान रहते हैं"
+          },
+          "reason": {
+            "en": "Conditions and measurement can change.",
+            "hi": "परिस्थिति तथा मापन बदल सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Dates replace definitions",
+            "hi": "तिथियाँ परिभाषा की जगह लेती हैं"
+          },
+          "reason": {
+            "en": "Both date and definition are needed.",
+            "hi": "वर्ष और परिभाषा दोनों जरूरी हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A year proves every household is alike",
+            "hi": "वर्ष सभी परिवार समान सिद्ध करता है"
+          },
+          "reason": {
+            "en": "Household circumstances differ within a period.",
+            "hi": "एक समय में भी परिवारों की दशा अलग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Prices, data and methods belong to a reference period",
+            "hi": "कीमत, आँकड़े तथा विधि संदर्भ समय से जुड़े हैं"
+          },
+          "reason": {
+            "en": "An old figure should not be called current without verification.",
+            "hi": "पुराने आँकड़े को जाँच के बिना वर्तमान नहीं कह सकते।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which response addresses multiple barriers to poverty reduction?",
+        "hi": "कौन-सा उपाय निर्धनता की कई बाधाएँ संबोधित करता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Ignore discrimination",
+            "hi": "भेदभाव की उपेक्षा"
+          },
+          "reason": {
+            "en": "Discrimination can restrict opportunities.",
+            "hi": "भेदभाव अवसर रोक सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Assume growth benefits everyone equally automatically",
+            "hi": "मान लें वृद्धि अपने आप सबको समान लाभ देती है"
+          },
+          "reason": {
+            "en": "Distribution and access require attention.",
+            "hi": "वितरण तथा पहुँच पर ध्यान जरूरी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Livelihoods plus health, education and fair access",
+            "hi": "आजीविका के साथ स्वास्थ्य, शिक्षा और समान पहुँच"
+          },
+          "reason": {
+            "en": "Connected problems need complementary responses.",
+            "hi": "जुड़ी समस्याओं के लिए पूरक उपाय चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only redraw a graph’s line",
+            "hi": "केवल आलेख की रेखा बदलना"
+          },
+          "reason": {
+            "en": "That changes classification, not living resources.",
+            "hi": "इससे वर्गीकरण बदलता है, जीवन के साधन नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Can two regions have the same poverty percentage but different poor-person counts?",
+        "hi": "क्या समान निर्धनता प्रतिशत वाले 2 क्षेत्रों में निर्धन संख्या अलग हो सकती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only if the line is absent",
+            "hi": "केवल रेखा न होने पर"
+          },
+          "reason": {
+            "en": "The same defined line can be used in both regions.",
+            "hi": "दोनों में समान परिभाषित रेखा ली जा सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Yes, if populations differ",
+            "hi": "हाँ, यदि जनसंख्या अलग है"
+          },
+          "reason": {
+            "en": "The same share of a larger population gives a larger count.",
+            "hi": "बड़ी जनसंख्या का समान प्रतिशत बड़ी संख्या देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No, percentages always equal counts",
+            "hi": "नहीं, प्रतिशत हमेशा संख्या है"
+          },
+          "reason": {
+            "en": "A share and a count are different measures.",
+            "hi": "हिस्सा तथा संख्या अलग माप हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only when all prices are zero",
+            "hi": "केवल सभी कीमत शून्य होने पर"
+          },
+          "reason": {
+            "en": "Population differences are sufficient for this comparison.",
+            "hi": "इस तुलना में अलग जनसंख्या पर्याप्त है।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "How does poverty go beyond income?",
+        "hi": "निर्धनता आय से आगे कैसे है?"
+      },
+      "answer": {
+        "en": "It can include lack of nutrition, schooling, safe housing, health care and participation with dignity. Income is an important but incomplete indicator.",
+        "hi": "इसमें पोषण, पढ़ाई, सुरक्षित आवास, स्वास्थ्य सेवा और गरिमापूर्ण भागीदारी का अभाव हो सकता है। आय महत्त्वपूर्ण लेकिन अधूरा संकेतक है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish vulnerability and present poverty.",
+        "hi": "संवेदनशीलता और वर्तमान निर्धनता अलग करें।"
+      },
+      "answer": {
+        "en": "Present poverty describes current deprivation under a definition. Vulnerability concerns risk of future hardship and the ability to cope with shocks.",
+        "hi": "वर्तमान निर्धनता परिभाषा के अनुसार अभी का अभाव है। संवेदनशीलता आगे कठिनाई का जोखिम और संकट सहने की क्षमता बताती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are dates and methods necessary for poverty comparisons?",
+        "hi": "निर्धनता तुलना में वर्ष और विधि जरूरी क्यों हैं?"
+      },
+      "answer": {
+        "en": "Prices, baskets, surveys and definitions can differ. A comparison is meaningful only when those differences are stated and addressed.",
+        "hi": "कीमत, वस्तु समूह, सर्वेक्षण और परिभाषा अलग हो सकते हैं। अंतर स्पष्ट कर ध्यान में लेने पर ही तुलना अर्थपूर्ण है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can poverty persist across generations?",
+        "hi": "निर्धनता पीढ़ियों तक कैसे बनी रह सकती है?"
+      },
+      "answer": {
+        "en": "Low income can limit health and schooling, narrowing future earning opportunities. Public services, fair access and stable livelihoods can interrupt this cycle.",
+        "hi": "कम आय स्वास्थ्य तथा पढ़ाई सीमित कर आगे की कमाई के अवसर घटा सकती है। सार्वजनिक सेवा, समान पहुँच और स्थिर आजीविका यह चक्र तोड़ सकते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the role of targeted programmes alongside growth?",
+        "hi": "वृद्धि के साथ लक्षित कार्यक्रम की क्या भूमिका है?"
+      },
+      "answer": {
+        "en": "They address barriers that prevent disadvantaged households from sharing opportunities, while growth can expand jobs and resources. Delivery and accountability are essential.",
+        "hi": "वे वंचित परिवारों को अवसर से दूर रखने वाली बाधाएँ घटाते हैं, जबकि वृद्धि काम तथा संसाधन बढ़ा सकती है। सही वितरण और जवाबदेही जरूरी हैं।"
+      }
+    }
+  ],
+  "chart": {
+    "title": {
+      "en": "Illustrative income distribution",
+      "hi": "उदाहरण आय वितरण"
+    },
+    "unit": {
+      "en": "Income points",
+      "hi": "आय अंक"
+    },
+    "rows": [
+      {
+        "label": {
+          "en": "Group A",
+          "hi": "समूह A"
+        },
+        "value": 60,
+        "people": 2
+      },
+      {
+        "label": {
+          "en": "Group B",
+          "hi": "समूह B"
+        },
+        "value": 120,
+        "people": 4
+      },
+      {
+        "label": {
+          "en": "Group C",
+          "hi": "समूह C"
+        },
+        "value": 220,
+        "people": 6
+      },
+      {
+        "label": {
+          "en": "Group D",
+          "hi": "समूह D"
+        },
+        "value": 320,
+        "people": 5
+      },
+      {
+        "label": {
+          "en": "Group E",
+          "hi": "समूह E"
+        },
+        "value": 440,
+        "people": 3
+      }
+    ],
+    "source": {
+      "en": "Illustrative teaching data, not official statistics.",
+      "hi": "केवल उदाहरण के शिक्षण आँकड़े; आधिकारिक सांख्यिकी नहीं।"
+    },
+    "note": {
+      "en": "Income points are fictional, not rupees. Groups represent 2, 4, 6, 5 and 3 people respectively; below means strictly less than the chosen threshold. The displayed total sums income-point bars, not people.",
+      "hi": "आय अंक काल्पनिक हैं, रुपये नहीं। समूह क्रम से 2, 4, 6, 5 और 3 लोग दिखाते हैं। नीचे का अर्थ चुनी सीमा से सख्ती से कम है। दिखाया कुल आय अंक दंड जोड़ता है, लोगों की संख्या नहीं।"
+    },
+    "threshold": 100
+  },
+  "why": {
+    "en": "The slider changes a classification rule, not the example incomes. Poverty reduction requires real improvements in livelihoods, capabilities and fair access.",
+    "hi": "स्लाइडर वर्गीकरण का नियम बदलता है, उदाहरण आय नहीं। निर्धनता घटाने के लिए आजीविका, क्षमता और समान पहुँच में वास्तविक सुधार चाहिए।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Economics, Class IX — official textbook catalogue",
+      "url": "https://ncert.nic.in/textbook.php?iess2=1-4"
+    },
+    {
+      "title": "NCERT ePathshala — Economics",
+      "url": "https://epathshala.nic.in/topicc.php?id=0970CH01"
+    },
+    {
+      "title": "IIT Kanpur SATHEE — NCERT Poverty as a Challenge",
+      "url": "https://sathee.iitk.ac.in/sathee-railway-exams/student-corner/ncert-books/class-09/social-science/economics/chapter-03-poverty-as-a-challenge/"
+    }
+  ],
+  "missions": [
+    {
+      "label": {
+        "en": "Try 2 chart types.",
+        "hi": "2 प्रकार के आलेख देखें।"
+      },
+      "key": "types",
+      "min": 2
+    },
+    {
+      "label": {
+        "en": "Hide 1 series, then compare.",
+        "hi": "1 श्रेणी छिपाकर तुलना करें।"
+      },
+      "key": "filters",
+      "min": 1
+    }
+  ],
+  "charts": [
+    {
+      "title": {
+        "en": "Illustrative income distribution",
+        "hi": "उदाहरण आय वितरण"
+      },
+      "unit": {
+        "en": "Income points",
+        "hi": "आय अंक"
+      },
+      "rows": [
+        {
+          "label": {
+            "en": "Group A",
+            "hi": "समूह A"
+          },
+          "value": 60,
+          "people": 2
+        },
+        {
+          "label": {
+            "en": "Group B",
+            "hi": "समूह B"
+          },
+          "value": 120,
+          "people": 4
+        },
+        {
+          "label": {
+            "en": "Group C",
+            "hi": "समूह C"
+          },
+          "value": 220,
+          "people": 6
+        },
+        {
+          "label": {
+            "en": "Group D",
+            "hi": "समूह D"
+          },
+          "value": 320,
+          "people": 5
+        },
+        {
+          "label": {
+            "en": "Group E",
+            "hi": "समूह E"
+          },
+          "value": 440,
+          "people": 3
+        }
+      ],
+      "source": {
+        "en": "Illustrative teaching data, not official statistics.",
+        "hi": "केवल उदाहरण के शिक्षण आँकड़े; आधिकारिक सांख्यिकी नहीं।"
+      },
+      "note": {
+        "en": "Income points are fictional, not rupees. Groups represent 2, 4, 6, 5 and 3 people respectively; below means strictly less than the chosen threshold. The displayed total sums income-point bars, not people.",
+        "hi": "आय अंक काल्पनिक हैं, रुपये नहीं। समूह क्रम से 2, 4, 6, 5 और 3 लोग दिखाते हैं। नीचे का अर्थ चुनी सीमा से सख्ती से कम है। दिखाया कुल आय अंक दंड जोड़ता है, लोगों की संख्या नहीं।"
+      },
+      "threshold": 100
+    },
+    {
+      "title": {
+        "en": "Illustrative household insecurity",
+        "hi": "उदाहरण घरेलू असुरक्षा"
+      },
+      "unit": {
+        "en": "Households",
+        "hi": "परिवार"
+      },
+      "rows": [
+        {
+          "label": {
+            "en": "Stable work",
+            "hi": "स्थिर काम"
+          },
+          "value": 12
+        },
+        {
+          "label": {
+            "en": "Casual work",
+            "hi": "अस्थायी काम"
+          },
+          "value": 8
+        },
+        {
+          "label": {
+            "en": "Seasonal work",
+            "hi": "मौसमी काम"
+          },
+          "value": 10
+        }
+      ],
+      "source": {
+        "en": "Illustrative teaching data, not official statistics.",
+        "hi": "केवल उदाहरण के शिक्षण आँकड़े; आधिकारिक सांख्यिकी नहीं।"
+      },
+      "note": {
+        "en": "These invented counts describe employment categories, not official poverty categories or proof all members of a group are poor.",
+        "hi": "बनाई संख्या रोजगार श्रेणियाँ दिखाती है; आधिकारिक निर्धनता वर्ग या पूरे समूह के निर्धन होने का प्रमाण नहीं।"
+      }
+    }
+  ]
+}

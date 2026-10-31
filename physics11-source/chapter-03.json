@@ -1,0 +1,1455 @@
+{
+  "number": 3,
+  "id": "physics11-03",
+  "title": {
+    "en": "Motion in a Plane",
+    "hi": "समतल में गति"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-03-1",
+      "title": {
+        "en": "Projectile motion",
+        "hi": "प्रक्षेप्य गति"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 6
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Launch angle",
+            "hi": "प्रक्षेपण कोण"
+          },
+          "min": 10,
+          "max": 80,
+          "step": 5,
+          "initial": 45,
+          "unit": "°"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Compare projectile range and height as angle changes.",
+        "hi": "कोण बदलकर प्रक्षेप्य परास और ऊँचाई तुलना करें।"
+      },
+      "observe": {
+        "en": "Keep launch speed 10 m/s and compare complementary angles.",
+        "hi": "प्रारंभिक चाल 10 m/s रखकर पूरक कोण तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Ideal same-height launch and landing, g = 9.8 m/s², no drag; path is scaled for the screen.",
+        "hi": "समान स्तर पर आदर्श प्रक्षेपण और अवतरण, g = 9.8 m/s², प्रतिरोध नहीं; पथ स्क्रीन अनुसार पैमाने पर है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Horizontal and vertical components share time; range varies as sin2θ.",
+          "hi": "क्षैतिज तथा ऊर्ध्व घटकों का समय समान है; परास sin2θ के अनुसार बदलता है।"
+        }
+      },
+      "realLife": {
+        "en": "A thrown ball has approximately projectile motion over a short flight.",
+        "hi": "छोटी उड़ान में फेंकी गेंद लगभग प्रक्षेप्य गति करती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which angle maximises ideal range here?",
+          "hi": "यहाँ किस कोण पर आदर्श परास अधिकतम है?"
+        },
+        "options": [
+          {
+            "en": "30°",
+            "hi": "30°"
+          },
+          {
+            "en": "45°",
+            "hi": "45°"
+          },
+          {
+            "en": "60°",
+            "hi": "60°"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "At 45°, sin2θ is 1.",
+          "hi": "45° पर sin2θ का मान 1 है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-03-1-low",
+          "label": {
+            "en": "Explore the lower setting: 10 °",
+            "hi": "निचली सेटिंग देखें: 10 °"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 10
+          }
+        },
+        {
+          "id": "phy11-03-1-high",
+          "label": {
+            "en": "Compare the upper setting: 80 °",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 80 °"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 80
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 45.0
+          },
+          "text": {
+            "en": "Lower launch angles have a smaller vertical component.",
+            "hi": "कम कोण पर ऊर्ध्व घटक छोटा है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 45.0
+          },
+          "text": {
+            "en": "Higher launch angles increase flight time but do not always increase range.",
+            "hi": "अधिक कोण उड़ान समय बढ़ाते हैं, पर परास हमेशा नहीं बढ़ाते।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-03-2",
+      "title": {
+        "en": "Vector addition",
+        "hi": "सदिश योग"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 7
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Angle between vectors",
+            "hi": "सदिशों के बीच कोण"
+          },
+          "min": 0,
+          "max": 180,
+          "step": 10,
+          "initial": 60,
+          "unit": "°"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Add two vectors using their included angle.",
+        "hi": "बीच के कोण से 2 सदिश जोड़ें।"
+      },
+      "observe": {
+        "en": "Keep magnitudes 3 and 4 and rotate the second vector.",
+        "hi": "परिमाण 3 तथा 4 रखकर दूसरा सदिश घुमाएँ।"
+      },
+      "modelNote": {
+        "en": "Arrows represent free vectors with arbitrary common units; shifting a parallel copy does not change it.",
+        "hi": "तीर समान मनमाने मात्रकों के मुक्त सदिश हैं; समांतर प्रति खिसकाने से सदिश नहीं बदलता।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "R² = 3² + 4² + 24 cosθ gives the resultant magnitude.",
+          "hi": "R² = 3² + 4² + 24 cosθ परिणामी परिमाण देता है।"
+        }
+      },
+      "realLife": {
+        "en": "Two people pulling ropes at an angle produce a vector resultant.",
+        "hi": "कोण पर रस्सियाँ खींचते 2 लोगों के बल का सदिश परिणामी होता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At 180°, the resultant magnitude is:",
+          "hi": "180° पर परिणामी परिमाण:"
+        },
+        "options": [
+          {
+            "en": "7",
+            "hi": "7"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "1",
+            "hi": "1"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Opposite vectors subtract in magnitude: 4 − 3 = 1.",
+          "hi": "विपरीत सदिशों में परिमाण घटते हैं: 4 − 3 = 1।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-03-2-low",
+          "label": {
+            "en": "Explore the lower setting: 0 °",
+            "hi": "निचली सेटिंग देखें: 0 °"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "phy11-03-2-high",
+          "label": {
+            "en": "Compare the upper setting: 180 °",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 180 °"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 180
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 90.0
+          },
+          "text": {
+            "en": "More nearly aligned vectors produce a larger resultant.",
+            "hi": "लगभग समान दिशा वाले सदिश अधिक परिणामी देते हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 90.0
+          },
+          "text": {
+            "en": "More nearly opposite vectors partly cancel.",
+            "hi": "लगभग विपरीत सदिश आंशिक रूप से कटते हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-03-3",
+      "title": {
+        "en": "Circular motion",
+        "hi": "वृत्तीय गति"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 8
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Radius",
+            "hi": "त्रिज्या"
+          },
+          "min": 0.5,
+          "max": 3,
+          "step": 0.25,
+          "initial": 1,
+          "unit": "m"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Connect circular radius with inward acceleration.",
+        "hi": "वृत्तीय त्रिज्या को अंदर के त्वरण से जोड़ें।"
+      },
+      "observe": {
+        "en": "Hold speed at 2 m/s and vary radius.",
+        "hi": "चाल 2 m/s रखकर त्रिज्या बदलें।"
+      },
+      "modelNote": {
+        "en": "Uniform circular motion at fixed speed; the required force is not separately modelled.",
+        "hi": "नियत चाल की एकसमान वृत्तीय गति; आवश्यक बल अलग नहीं दिखाया है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "ac = 4/r, while the period is πr seconds.",
+          "hi": "ac = 4/r, जबकि आवर्तकाल πr सेकंड है।"
+        }
+      },
+      "realLife": {
+        "en": "A turn with a smaller radius needs greater inward acceleration at the same speed.",
+        "hi": "समान चाल पर छोटे मोड़ में अधिक अंदर का त्वरण चाहिए।"
+      },
+      "quick": {
+        "question": {
+          "en": "If radius doubles at fixed speed, ac becomes:",
+          "hi": "नियत चाल पर त्रिज्या दोगुनी हो तो ac:"
+        },
+        "options": [
+          {
+            "en": "Double",
+            "hi": "दोगुना"
+          },
+          {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Acceleration is inversely proportional to radius at fixed speed.",
+          "hi": "नियत चाल पर त्वरण त्रिज्या के व्युत्क्रमानुपाती है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-03-3-low",
+          "label": {
+            "en": "Explore the lower setting: 0.5 m",
+            "hi": "निचली सेटिंग देखें: 0.5 m"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.5
+          }
+        },
+        {
+          "id": "phy11-03-3-high",
+          "label": {
+            "en": "Compare the upper setting: 3 m",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 3 m"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 3
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.75
+          },
+          "text": {
+            "en": "Small radius requires stronger inward acceleration.",
+            "hi": "छोटी त्रिज्या में अधिक अंदर का त्वरण चाहिए।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.75
+          },
+          "text": {
+            "en": "Large radius gives a longer period and weaker inward acceleration.",
+            "hi": "बड़ी त्रिज्या पर आवर्तकाल अधिक और अंदर का त्वरण कम है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Scalars, vectors and coordinates",
+        "hi": "अदिश, सदिश और निर्देशांक"
+      },
+      "paragraphs": [
+        {
+          "en": "A scalar is described by a magnitude, while a vector requires magnitude and direction and follows vector addition. Mass, time, distance and temperature are scalars; displacement, velocity and acceleration are vectors. A negative temperature on a chosen scale does not make temperature a vector. An arrow represents a vector: its length shows magnitude on a chosen scale and its arrowhead shows direction. Translating an arrow without changing its length or direction represents an equal vector in the usual free-vector treatment. Position vectors run from the chosen origin to the object, while displacement is the difference between final and initial position vectors. In a plane, select perpendicular x and y axes before assigning components. A component can be negative even though the vector magnitude is nonnegative. Clearly distinguish the vector itself from its magnitude; the symbol |A| denotes the magnitude of vector A. Directions must refer to a stated axis or compass reference.",
+          "hi": "अदिश (Scalar) राशि परिमाण से बताई जाती है, जबकि सदिश (Vector) में परिमाण और दिशा दोनों चाहिए तथा वह सदिश योग के नियम मानता है। द्रव्यमान, समय, दूरी और ताप अदिश हैं; विस्थापन, वेग और त्वरण सदिश हैं। किसी पैमाने पर ताप ऋण होने से ताप सदिश नहीं बन जाता। सदिश को तीर से दिखाते हैं: चुने पैमाने पर लंबाई परिमाण और नोक दिशा बताती है। सामान्य मुक्त सदिश विवेचन में तीर को बिना लंबाई या दिशा बदले खिसकाने पर समान सदिश मिलता है। स्थिति सदिश चुने मूल से वस्तु तक जाता है, जबकि विस्थापन अंतिम और प्रारंभिक स्थिति सदिश का अंतर है। समतल में घटक लिखने से पहले परस्पर लंबवत x तथा y अक्ष चुनें। घटक ऋण हो सकता है, पर सदिश का परिमाण अऋण रहता है। सदिश और उसके परिमाण को अलग पहचानें; |A| सदिश A का परिमाण है। दिशा बताते समय किसी अक्ष या दिशा संदर्भ का उल्लेख आवश्यक है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A direction such as 30° is incomplete unless its reference is stated. “30° north of east” and “30° east of north” describe different directions even when their magnitudes are identical.",
+          "hi": "केवल 30° लिखने से दिशा पूरी नहीं बतती। पूर्व से उत्तर की ओर 30° और उत्तर से पूर्व की ओर 30° अलग दिशाएँ हैं, भले परिमाण समान हो।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is distance a vector because a journey has a direction?",
+          "hi": "यात्रा की दिशा होने से क्या दूरी सदिश है?"
+        },
+        "answer": {
+          "en": "No; distance is path length and is scalar.",
+          "hi": "नहीं; दूरी पथ लंबाई है और अदिश है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Components and unit vectors",
+        "hi": "घटक और एकांक सदिश"
+      },
+      "paragraphs": [
+        {
+          "en": "A vector in a plane can be resolved into components along two perpendicular axes: A = Aₓ i + Aᵧ j. The unit vectors i and j have magnitude 1 and point along the positive x and y directions. If A makes angle θ with positive x, Aₓ = A cosθ and Aᵧ = A sinθ. Its magnitude is √(Aₓ² + Aᵧ²). The ratio Aᵧ/Aₓ helps find direction, but a calculator's inverse tangent alone may not identify the correct quadrant. Inspect the signs of both components. Resolution does not create new physical vectors acting separately; it gives an equivalent mathematical description. A vector along negative x has a negative x component and zero y component. Use sine and cosine according to the angle's reference axis, not by memorising that horizontal always means cosine. If the angle is measured from y instead, the corresponding component expressions interchange.",
+          "hi": "समतल में सदिश को 2 परस्पर लंबवत अक्षों के घटकों में लिखते हैं: A = Aₓ i + Aᵧ j। एकांक सदिश (Unit vectors) i और j का परिमाण 1 है और वे धन x तथा धन y दिशा में हैं। यदि A धन x से θ कोण बनाता है तो Aₓ = A cosθ और Aᵧ = A sinθ है। उसका परिमाण √(Aₓ² + Aᵧ²) है। Aᵧ/Aₓ का अनुपात दिशा निकालने में सहायता देता है, लेकिन कैलकुलेटर का प्रतिलोम स्पर्शज्या अकेले सही चतुर्थांश नहीं बताता। दोनों घटकों के चिह्न देखें। वियोजन से अलग अलग नए भौतिक सदिश पैदा नहीं होते; वही सदिश समतुल्य गणितीय रूप में लिखा जाता है। ऋण x की दिशा में सदिश का x घटक ऋण और y घटक शून्य है। ज्या तथा कोज्या का चुनाव कोण के संदर्भ अक्ष से करें। यह न रटें कि क्षैतिज में हमेशा कोज्या लगेगा। यदि कोण y अक्ष से दिया हो तो संबंधित घटक के सूत्र बदल जाते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For Aₓ = −3 and Aᵧ = 4, magnitude is 5, but the vector lies in the second quadrant. The negative x component must remain in the direction analysis.",
+          "hi": "Aₓ = −3 और Aᵧ = 4 पर परिमाण 5 है, लेकिन सदिश दूसरे चतुर्थांश में है। दिशा निकालते समय ऋण x घटक बनाए रखना होगा।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For a vector measured from positive x, what is its x component?",
+          "hi": "धन x से मापे कोण वाले सदिश का x घटक क्या है?"
+        },
+        "answer": {
+          "en": "A cosθ.",
+          "hi": "A cosθ।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Addition, subtraction and relative velocity",
+        "hi": "योग, घटाव और सापेक्ष वेग"
+      },
+      "paragraphs": [
+        {
+          "en": "Vectors add by the triangle or parallelogram rule, or by adding matching components. For R = A + B, Rₓ = Aₓ + Bₓ and Rᵧ = Aᵧ + Bᵧ. If the angle between A and B is θ, R² = A² + B² + 2AB cosθ. The greatest possible resultant magnitude is A + B and the least is |A − B|. Subtraction A − B means adding the opposite vector −B; it does not mean subtracting magnitudes unless directions justify that step. Relative velocity of A with respect to B is vAB = vA − vB in the same reference frame. For a boat in a river, ground velocity equals boat velocity relative to water plus water velocity relative to ground. Draw arrows with consistent scales and directions. Separate the swimmer's or boat's controllable velocity from the current rather than combining speeds as ordinary positive numbers.",
+          "hi": "सदिशों का योग त्रिभुज या समांतर चतुर्भुज नियम से, अथवा समान अक्षों के घटक जोड़कर करते हैं। R = A + B के लिए Rₓ = Aₓ + Bₓ और Rᵧ = Aᵧ + Bᵧ है। A तथा B के बीच θ कोण हो तो R² = A² + B² + 2AB cosθ है। परिणामी का अधिकतम परिमाण A + B और न्यूनतम |A − B| हो सकता है। A − B का अर्थ विपरीत सदिश −B जोड़ना है। केवल परिमाण घटाना तभी सही है जब दिशाएँ उस कदम को उचित ठहराएँ। एक ही संदर्भ फ्रेम में B के सापेक्ष A का वेग vAB = vA − vB है। नदी में नाव का भूमि के सापेक्ष वेग, नाव का जल के सापेक्ष वेग और जल का भूमि के सापेक्ष वेग जोड़कर मिलता है। तीरों के पैमाने और दिशाएँ समान पद्धति से बनाएँ। तैराक या नाव का नियंत्रित वेग धारा से अलग पहचानें; चालों को साधारण धन संख्याओं की तरह जोड़ना हमेशा सही नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For vectors of magnitudes 3 and 4 at a right angle, the resultant magnitude is 5. This familiar triangle is a check on the general cosine expression.",
+          "hi": "3 और 4 परिमाण के लंबवत सदिशों का परिणामी 5 है। यह परिचित त्रिभुज सामान्य कोज्या सूत्र की जाँच का अच्छा उदाहरण है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What are the largest and smallest resultants of vectors 3 and 4 units?",
+          "hi": "3 तथा 4 इकाई सदिशों का अधिकतम और न्यूनतम परिणामी क्या है?"
+        },
+        "answer": {
+          "en": "7 and 1 units.",
+          "hi": "7 और 1 इकाई।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Products and two-dimensional kinematics",
+        "hi": "गुणनफल और द्विविमीय शुद्ध गतिकी"
+      },
+      "paragraphs": [
+        {
+          "en": "The scalar product A · B equals AB cosθ and is a scalar. The vector product A × B has magnitude AB sinθ and direction perpendicular to their plane, given by the right-hand rule. The two products are not interchangeable. In a fixed Cartesian frame, velocity is the time derivative of position and acceleration the time derivative of velocity, component by component. Thus vx = dx/dt, vy = dy/dt, ax = dvx/dt and ay = dvy/dt. Constant acceleration allows separate equations x = x₀ + uxt + ½axt² and y = y₀ + uyt + ½ayt². Both describe the same object during the same elapsed time. A zero x acceleration does not require zero y acceleration. Independence of perpendicular components means that the component equations can be solved separately, not that the physical object splits into independent objects. Recombine components to obtain the actual velocity direction and speed.",
+          "hi": "अदिश गुणनफल (Scalar product) A · B = AB cosθ एक अदिश है। सदिश गुणनफल (Vector product) A × B का परिमाण AB sinθ और दिशा दोनों के समतल पर लंबवत होती है, जिसे दाएँ हाथ के नियम से तय करते हैं। दोनों गुणनफलों को एक दूसरे के स्थान पर नहीं लगा सकते। नियत कार्तीय फ्रेम में स्थिति का समय अवकलज वेग और वेग का समय अवकलज त्वरण है; यह संबंध हर घटक के लिए लागू है। इसलिए vx = dx/dt, vy = dy/dt, ax = dvx/dt और ay = dvy/dt है। नियत त्वरण में x = x₀ + uxt + ½axt² तथा y = y₀ + uyt + ½ayt² अलग लिखते हैं। दोनों एक ही वस्तु और समान बीते समय का वर्णन करते हैं। x त्वरण शून्य हो तो y त्वरण भी शून्य होना जरूरी नहीं। घटकों की स्वतंत्रता का अर्थ अलग समीकरण हल कर सकना है, वस्तु का अलग वस्तुओं में बँटना नहीं। वास्तविक चाल और वेग दिशा के लिए घटक फिर मिलाएँ।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Parallel vectors have zero vector product but generally nonzero scalar product. Perpendicular vectors have zero scalar product but can have a nonzero vector product. These limits help identify the intended operation.",
+          "hi": "समांतर सदिशों का सदिश गुणनफल शून्य, लेकिन अदिश गुणनफल सामान्यतः अशून्य है। लंबवत सदिशों में अदिश गुणनफल शून्य और सदिश गुणनफल अशून्य हो सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can x acceleration be zero while y acceleration is nonzero?",
+          "hi": "क्या x त्वरण शून्य और y त्वरण अशून्य हो सकते हैं?"
+        },
+        "answer": {
+          "en": "Yes; ideal projectile motion is an example.",
+          "hi": "हाँ; आदर्श प्रक्षेप्य गति इसका उदाहरण है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Projectile motion assumptions",
+        "hi": "प्रक्षेप्य गति की मान्यताएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "A projectile is launched and then moves under gravity alone in the ideal model. Air resistance, Earth's curvature and variation of g are neglected over the chosen range. Taking x horizontal and y upward gives ax = 0 and ay = −g. An initial speed u at angle θ has ux = u cosθ and uy = u sinθ. Therefore x = u cosθ t and y = u sinθ t − ½gt² when launch is the origin. The horizontal velocity remains constant while the vertical velocity decreases, becomes zero at the top, then becomes negative. At the top the projectile still has its horizontal velocity, so total velocity is not zero unless the launch was vertical. Its acceleration remains downward throughout the flight. Eliminating time gives a parabolic path. These conclusions follow from the assumptions; a ball with substantial air resistance or lift need not follow the same parabola.",
+          "hi": "आदर्श मॉडल में प्रक्षेप्य (Projectile) को छोड़ने के बाद उस पर केवल गुरुत्व कार्य करता है। चुनी दूरी में वायु प्रतिरोध, पृथ्वी की वक्रता और g का परिवर्तन उपेक्षित हैं। x क्षैतिज और y ऊपर लें तो ax = 0 तथा ay = −g है। θ कोण पर प्रारंभिक चाल u के घटक ux = u cosθ और uy = u sinθ हैं। प्रक्षेपण बिंदु को मूल मानने पर x = u cosθ t तथा y = u sinθ t − ½gt² मिलता है। क्षैतिज वेग नियत रहता है, जबकि ऊर्ध्व वेग घटकर शिखर पर शून्य और फिर ऋण हो जाता है। शिखर पर क्षैतिज वेग बचा रहता है, इसलिए कुल वेग शून्य नहीं होता, जब तक प्रक्षेपण बिल्कुल ऊर्ध्व न हो। पूरी उड़ान में त्वरण नीचे रहता है। समय हटाने पर पथ परवलय मिलता है। ये निष्कर्ष मान्यताओं से आते हैं; पर्याप्त वायु प्रतिरोध या उत्थापक बल वाली गेंद इसी परवलय पर चले, यह आवश्यक नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Two objects released from the same height at the same instant, one dropped and one projected horizontally, have the same ideal vertical motion if their initial vertical velocities are both zero.",
+          "hi": "एक ही ऊँचाई से एक साथ छोड़ी और क्षैतिज फेंकी वस्तुओं का आदर्श ऊर्ध्व गति भाग समान है, यदि दोनों के प्रारंभिक ऊर्ध्व वेग शून्य हों।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At the top of an oblique projectile, which velocity component is zero?",
+          "hi": "तिरछे प्रक्षेप्य के शिखर पर वेग का कौन सा घटक शून्य है?"
+        },
+        "answer": {
+          "en": "The vertical component only.",
+          "hi": "केवल ऊर्ध्व घटक।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Time of flight, height and range",
+        "hi": "उड्डयन काल, ऊँचाई और परास"
+      },
+      "paragraphs": [
+        {
+          "en": "When launch and landing are at the same height, the nonzero solution of y = 0 gives flight time T = 2u sinθ/g. Maximum height above launch is H = u² sin²θ/(2g), and horizontal range is R = u² sin2θ/g. At fixed u and g, the range is greatest at 45°. Complementary angles have the same ideal range but different heights and flight times. These range and flight-time formulae cannot be used unchanged when the projectile lands at a different height. In that case solve the vertical position equation for the actual landing level, choose the physical positive time and then calculate horizontal displacement. The symbols T and R are results, not independent controls when u and θ are fixed. Check that speed is in m/s and angles are handled consistently by the calculator. A numerical range should be interpreted only within the ideal assumptions rather than as a guaranteed sporting performance.",
+          "hi": "प्रक्षेपण और अवतरण की ऊँचाई समान हो तो y = 0 के अशून्य हल से उड्डयन काल T = 2u sinθ/g मिलता है। प्रक्षेपण स्तर से अधिकतम ऊँचाई H = u² sin²θ/(2g) और क्षैतिज परास R = u² sin2θ/g है। u तथा g नियत हों तो 45° पर परास अधिकतम है। पूरक कोणों का आदर्श परास समान, लेकिन ऊँचाई और उड़ान समय अलग होते हैं। उतरने की ऊँचाई अलग हो तो इन्हीं समय और परास सूत्रों को बिना बदलाव नहीं लगा सकते। ऐसी स्थिति में वास्तविक अवतरण स्तर के लिए ऊर्ध्व स्थिति समीकरण हल करें, भौतिक धन समय चुनें और फिर क्षैतिज विस्थापन निकालें। u और θ नियत होने पर T तथा R स्वतंत्र नियंत्रण नहीं, बल्कि परिणाम हैं। चाल m/s में रखें और कैलकुलेटर में कोण की पद्धति सही जाँचें। प्राप्त परास केवल आदर्श मान्यताओं में समझें; उसे किसी खेल में निश्चित उपलब्धि या वास्तविक दूरी की गारंटी न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A 30° launch and a 60° launch share range under the same-level ideal conditions. The 60° launch reaches a greater height and stays in flight longer.",
+          "hi": "समान स्तर की आदर्श शर्तों में 30° और 60° प्रक्षेपण का परास समान है। 60° प्रक्षेपण अधिक ऊँचाई तक और अधिक समय हवा में रहता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which angle gives maximum same-level ideal range at fixed speed?",
+          "hi": "नियत चाल पर समान स्तर का आदर्श परास किस कोण पर अधिकतम है?"
+        },
+        "answer": {
+          "en": "45°.",
+          "hi": "45°।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Uniform circular motion",
+        "hi": "एकसमान वृत्तीय गति"
+      },
+      "paragraphs": [
+        {
+          "en": "In uniform circular motion the speed is constant, but the velocity changes because its direction changes continuously. The acceleration therefore is not zero. It points toward the centre and has magnitude ac = v²/r = ω²r. Here ω = v/r is angular speed in rad/s, and the period is T = 2πr/v. At a particular point, velocity is tangential to the circle and centripetal acceleration is perpendicular to it. The acceleration changes the velocity direction without changing the speed in this ideal motion. At fixed speed, reducing radius increases acceleration; at fixed angular speed, increasing radius increases acceleration. Always identify which quantity is held constant before comparing. Centripetal acceleration is a kinematic requirement, not an additional type of force. A real force or resultant, such as tension, gravity or friction, must provide it. The displayed object is enlarged and its circle is schematic, so read the numerical quantities rather than measuring screen pixels.",
+          "hi": "एकसमान वृत्तीय गति (Uniform circular motion) में चाल नियत है, पर वेग की दिशा लगातार बदलती है। इसलिए त्वरण शून्य नहीं है। यह केंद्र की ओर होता है और उसका परिमाण ac = v²/r = ω²r है। यहाँ ω = v/r कोणीय चाल है, जिसका मात्रक rad/s है; आवर्तकाल T = 2πr/v है। किसी बिंदु पर वेग वृत्त की स्पर्शरेखा के अनुदिश और अभिकेंद्र त्वरण उस पर लंबवत होता है। आदर्श गति में यह त्वरण चाल बदले बिना वेग की दिशा बदलता है। चाल नियत हो तो त्रिज्या घटाने से त्वरण बढ़ता है; कोणीय चाल नियत हो तो त्रिज्या बढ़ाने से त्वरण बढ़ता है। तुलना से पहले हमेशा पहचानें कि कौन सी राशि नियत रखी गई है। अभिकेंद्र त्वरण शुद्ध गतिकी की आवश्यकता है, कोई अतिरिक्त अलग प्रकार का बल नहीं। तनाव, गुरुत्व या घर्षण जैसा वास्तविक बल या परिणामी इसे प्रदान करता है। स्क्रीन की वस्तु बड़ी और वृत्त सांकेतिक है; पिक्सेल मापने के बजाय संख्यात्मक मान पढ़ें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "At v = 2 m/s and r = 1 m, centripetal acceleration is 4 m/s². Doubling r at the same speed halves this acceleration and doubles the period.",
+          "hi": "v = 2 m/s तथा r = 1 m पर अभिकेंद्र त्वरण 4 m/s² है। समान चाल पर r दोगुना करने से त्वरण आधा और आवर्तकाल दोगुना होता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is acceleration zero when circular speed is constant?",
+          "hi": "वृत्तीय चाल नियत हो तो क्या त्वरण शून्य है?"
+        },
+        "answer": {
+          "en": "No; velocity direction changes and acceleration points inward.",
+          "hi": "नहीं; वेग दिशा बदलती है और त्वरण भीतर की ओर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Solving plane-motion problems",
+        "hi": "समतल गति के प्रश्न हल करना"
+      },
+      "paragraphs": [
+        {
+          "en": "Begin with a labelled diagram and choose axes suited to the question. Resolve the given vectors before combining them, retain signs and units, and state whether gravity or another acceleration is assumed constant. For projectile motion the same time belongs to the horizontal and vertical equations. For relative motion write a relation with explicit reference labels, such as boat relative to water, rather than guessing a resultant direction. When finding a vector magnitude, square its components and add; never add component magnitudes unless the components are parallel in the same direction. After calculating, test extreme cases. Two equal opposite vectors should cancel, a horizontal projectile begins with zero vertical velocity, and a circular acceleration should point toward the centre. Distinguish mathematical solutions from physically relevant ones, especially negative times or positions after impact. A concise final answer includes magnitude, unit and direction whenever the requested quantity is a vector.",
+          "hi": "पहले नामित चित्र बनाएँ और प्रश्न के अनुकूल अक्ष चुनें। दिए सदिशों को मिलाने से पहले घटक निकालें, चिह्न तथा मात्रक बनाए रखें और लिखें कि गुरुत्व या अन्य त्वरण नियत माना है या नहीं। प्रक्षेप्य के क्षैतिज और ऊर्ध्व समीकरण में समान समय होता है। सापेक्ष गति में नाव का जल के सापेक्ष वेग जैसे स्पष्ट संदर्भ लिखकर संबंध बनाएँ; परिणामी दिशा का अनुमान मात्र न लगाएँ। सदिश का परिमाण निकालने में घटकों के वर्ग जोड़कर वर्गमूल लें। घटकों के परिमाण साधारण रूप से केवल तभी जोड़ें जब वे एक दिशा में समांतर हों। गणना के बाद चरम स्थितियाँ जाँचें। समान विपरीत सदिशों का योग शून्य होना चाहिए, क्षैतिज प्रक्षेप्य का प्रारंभिक ऊर्ध्व वेग शून्य है और वृत्तीय त्वरण केंद्र की ओर होना चाहिए। ऋण समय या टक्कर के बाद की स्थिति जैसे गणितीय हलों में भौतिक रूप से प्रासंगिक हल अलग चुनें। सदिश का अंतिम उत्तर पूछे जाने पर परिमाण, मात्रक तथा दिशा तीनों लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A useful final check is whether the answer behaves sensibly when one component becomes zero. The resultant should then lie along the remaining component rather than acquire an unexplained perpendicular direction.",
+          "hi": "अंत में एक घटक शून्य करके परिणाम जाँचें। परिणामी बचा हुआ घटक जिस दिशा में है, उसी में होना चाहिए; बिना कारण लंबवत दिशा नहीं आनी चाहिए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why must the same time be used in both projectile components?",
+          "hi": "प्रक्षेप्य के दोनों घटकों में समान समय क्यों लेते हैं?"
+        },
+        "answer": {
+          "en": "Both components describe one object between the same events.",
+          "hi": "दोनों घटक समान घटनाओं के बीच एक ही वस्तु बताते हैं।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Aₓ = A cosθ; Aᵧ = A sinθ",
+      "meaning": {
+        "en": "Angle is measured from positive x.",
+        "hi": "कोण धन x से मापा है।"
+      },
+      "units": {
+        "en": "Components have the vector unit.",
+        "hi": "घटकों का मात्रक सदिश जैसा है।"
+      }
+    },
+    {
+      "expression": "R = √(A² + B² + 2AB cosθ)",
+      "meaning": {
+        "en": "Resultant magnitude for included angle θ.",
+        "hi": "बीच के θ कोण पर परिणामी परिमाण।"
+      },
+      "units": {
+        "en": "Same unit as A and B",
+        "hi": "A तथा B जैसा मात्रक"
+      }
+    },
+    {
+      "expression": "T = 2u sinθ/g; H = u² sin²θ/(2g); R = u² sin2θ/g",
+      "meaning": {
+        "en": "Ideal same-height projectile.",
+        "hi": "समान ऊँचाई का आदर्श प्रक्षेप्य।"
+      },
+      "units": {
+        "en": "T: s; H,R: m; u: m/s; g: m/s²",
+        "hi": "T: s; H,R: m; u: m/s; g: m/s²"
+      }
+    },
+    {
+      "expression": "ac = v²/r; T = 2πr/v",
+      "meaning": {
+        "en": "Uniform circular motion.",
+        "hi": "एकसमान वृत्तीय गति।"
+      },
+      "units": {
+        "en": "ac: m/s²; T: s",
+        "hi": "ac: m/s²; T: s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the magnitude of components 3 m and 4 m.",
+        "hi": "3 m तथा 4 m घटकों का परिमाण निकालें।"
+      },
+      "given": {
+        "en": "Aₓ = 3 m; Aᵧ = 4 m.",
+        "hi": "Aₓ = 3 m; Aᵧ = 4 m।"
+      },
+      "find": {
+        "en": "|A|.",
+        "hi": "|A|।"
+      },
+      "formula": {
+        "en": "|A| = √(Aₓ² + Aᵧ²)",
+        "hi": "|A| = √(Aₓ² + Aᵧ²)"
+      },
+      "steps": [
+        {
+          "en": "√(9 + 16) = √25.",
+          "hi": "√(9 + 16) = √25।"
+        }
+      ],
+      "answer": {
+        "en": "5 m.",
+        "hi": "5 m।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Two opposite forces 3 N and 4 N act along a line. Find resultant.",
+        "hi": "रेखा पर 3 N तथा 4 N विपरीत बल हैं। परिणामी निकालें।"
+      },
+      "given": {
+        "en": "Take 4 N direction positive.",
+        "hi": "4 N की दिशा धन लें।"
+      },
+      "find": {
+        "en": "Net force.",
+        "hi": "परिणामी बल।"
+      },
+      "formula": {
+        "en": "Fnet = 4 − 3",
+        "hi": "Fnet = 4 − 3"
+      },
+      "steps": [
+        {
+          "en": "Subtract signed components.",
+          "hi": "चिह्न सहित घटक घटाएँ।"
+        }
+      ],
+      "answer": {
+        "en": "1 N toward the 4 N force.",
+        "hi": "4 N बल की ओर 1 N।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Resolve 10 m/s at 30° above horizontal.",
+        "hi": "क्षैतिज से 30° पर 10 m/s के घटक निकालें।"
+      },
+      "given": {
+        "en": "u = 10 m/s; θ = 30°.",
+        "hi": "u = 10 m/s; θ = 30°।"
+      },
+      "find": {
+        "en": "ux and uy.",
+        "hi": "ux और uy।"
+      },
+      "formula": {
+        "en": "ux = u cosθ; uy = u sinθ",
+        "hi": "ux = u cosθ; uy = u sinθ"
+      },
+      "steps": [
+        {
+          "en": "ux = 10 × √3/2.",
+          "hi": "ux = 10 × √3/2।"
+        },
+        {
+          "en": "uy = 10 × 1/2.",
+          "hi": "uy = 10 × 1/2।"
+        }
+      ],
+      "answer": {
+        "en": "ux ≈ 8.66 m/s; uy = 5 m/s.",
+        "hi": "ux ≈ 8.66 m/s; uy = 5 m/s।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find centripetal acceleration for v = 2 m/s and r = 0.5 m.",
+        "hi": "v = 2 m/s और r = 0.5 m पर अभिकेंद्र त्वरण निकालें।"
+      },
+      "given": {
+        "en": "Uniform circular speed 2 m/s.",
+        "hi": "नियत वृत्तीय चाल 2 m/s।"
+      },
+      "find": {
+        "en": "ac.",
+        "hi": "ac।"
+      },
+      "formula": {
+        "en": "ac = v²/r",
+        "hi": "ac = v²/r"
+      },
+      "steps": [
+        {
+          "en": "ac = 4/0.5.",
+          "hi": "ac = 4/0.5।"
+        }
+      ],
+      "answer": {
+        "en": "8 m/s² toward the centre.",
+        "hi": "केंद्र की ओर 8 m/s²।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A projectile launches at 10 m/s and 45°, landing at launch height. Find range and flight time.",
+        "hi": "10 m/s और 45° पर प्रक्षेप्य उसी ऊँचाई पर उतरता है। परास तथा समय निकालें।"
+      },
+      "given": {
+        "en": "g = 9.8 m/s²; ignore air resistance.",
+        "hi": "g = 9.8 m/s²; वायु प्रतिरोध उपेक्षित।"
+      },
+      "find": {
+        "en": "R and T.",
+        "hi": "R तथा T।"
+      },
+      "formula": {
+        "en": "R = u² sin2θ/g; T = 2u sinθ/g",
+        "hi": "R = u² sin2θ/g; T = 2u sinθ/g"
+      },
+      "steps": [
+        {
+          "en": "R = 100/9.8.",
+          "hi": "R = 100/9.8।"
+        },
+        {
+          "en": "T = 20 × (√2/2)/9.8.",
+          "hi": "T = 20 × (√2/2)/9.8।"
+        }
+      ],
+      "answer": {
+        "en": "R ≈ 10.20 m; T ≈ 1.44 s.",
+        "hi": "R ≈ 10.20 m; T ≈ 1.44 s।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which is a vector?",
+        "hi": "कौन सदिश है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Mass",
+            "hi": "द्रव्यमान"
+          },
+          "reason": {
+            "en": "Mass is scalar.",
+            "hi": "द्रव्यमान अदिश है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Distance",
+            "hi": "दूरी"
+          },
+          "reason": {
+            "en": "Path length is scalar.",
+            "hi": "पथ लंबाई अदिश है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Velocity",
+            "hi": "वेग"
+          },
+          "reason": {
+            "en": "Velocity includes direction and follows vector addition.",
+            "hi": "वेग दिशा सहित है और सदिश योग मानता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Temperature",
+            "hi": "ताप"
+          },
+          "reason": {
+            "en": "Temperature is scalar.",
+            "hi": "ताप अदिश है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Perpendicular vectors of magnitudes 3 and 4 have resultant:",
+        "hi": "3 और 4 के लंबवत सदिशों का परिणामी:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "This is the opposite-direction result.",
+            "hi": "यह विपरीत दिशा का परिणाम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "√(9 + 16) = 5.",
+            "hi": "√(9 + 16) = 5।"
+          }
+        },
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "This is the same-direction result.",
+            "hi": "यह समान दिशा का परिणाम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "Multiplying magnitudes does not give the resultant.",
+            "hi": "परिमाणों का गुणन परिणामी नहीं देता।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "For angle θ from positive x, Aₓ is:",
+        "hi": "धन x से θ कोण पर Aₓ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A sinθ",
+            "hi": "A sinθ"
+          },
+          "reason": {
+            "en": "This is the y component.",
+            "hi": "यह y घटक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A cosθ",
+            "hi": "A cosθ"
+          },
+          "reason": {
+            "en": "Cosine gives the adjacent component.",
+            "hi": "सन्निकट घटक कोज्या से मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A tanθ",
+            "hi": "A tanθ"
+          },
+          "reason": {
+            "en": "Tangent gives a component ratio.",
+            "hi": "स्पर्शज्या घटकों का अनुपात है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A²",
+            "hi": "A²"
+          },
+          "reason": {
+            "en": "The unit would be wrong.",
+            "hi": "मात्रक गलत हो जाएगा।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Ideal projectile horizontal acceleration is:",
+        "hi": "आदर्श प्रक्षेप्य का क्षैतिज त्वरण:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "g",
+            "hi": "g"
+          },
+          "reason": {
+            "en": "Gravity is vertical in this frame.",
+            "hi": "इस फ्रेम में गुरुत्व ऊर्ध्व है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−g",
+            "hi": "−g"
+          },
+          "reason": {
+            "en": "−g is the upward-axis vertical component.",
+            "hi": "−g ऊपर धन लेने पर ऊर्ध्व घटक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "No horizontal force acts in the model.",
+            "hi": "मॉडल में क्षैतिज बल नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Increasing with height",
+            "hi": "ऊँचाई के साथ बढ़ता"
+          },
+          "reason": {
+            "en": "The ideal model has constant vertical g.",
+            "hi": "आदर्श मॉडल में ऊर्ध्व g नियत है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "At the top of an oblique projectile:",
+        "hi": "तिरछे प्रक्षेप्य के शिखर पर:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "All velocity vanishes",
+            "hi": "पूरा वेग शून्य"
+          },
+          "reason": {
+            "en": "Horizontal velocity remains.",
+            "hi": "क्षैतिज वेग बचता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only vertical velocity vanishes",
+            "hi": "केवल ऊर्ध्व वेग शून्य"
+          },
+          "reason": {
+            "en": "The horizontal component remains constant.",
+            "hi": "क्षैतिज घटक नियत रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Gravity vanishes",
+            "hi": "गुरुत्व शून्य"
+          },
+          "reason": {
+            "en": "Acceleration remains downward.",
+            "hi": "त्वरण नीचे बना रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Horizontal velocity vanishes",
+            "hi": "क्षैतिज वेग शून्य"
+          },
+          "reason": {
+            "en": "It remains u cosθ.",
+            "hi": "यह u cosθ बना रहता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Maximum ideal same-level range at fixed speed occurs at:",
+        "hi": "नियत चाल पर अधिकतम समान स्तर आदर्श परास:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "15°",
+            "hi": "15°"
+          },
+          "reason": {
+            "en": "sin30° is less than 1.",
+            "hi": "sin30° का मान 1 से कम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "30°",
+            "hi": "30°"
+          },
+          "reason": {
+            "en": "sin60° is less than 1.",
+            "hi": "sin60° का मान 1 से कम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "45°",
+            "hi": "45°"
+          },
+          "reason": {
+            "en": "sin90° = 1 in the range formula.",
+            "hi": "परास सूत्र में sin90° = 1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "90°",
+            "hi": "90°"
+          },
+          "reason": {
+            "en": "Vertical launch has zero horizontal range.",
+            "hi": "ऊर्ध्व प्रक्षेपण का क्षैतिज परास शून्य है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "In uniform circular motion velocity is:",
+        "hi": "एकसमान वृत्तीय गति में वेग:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Constant as a vector",
+            "hi": "सदिश रूप में नियत"
+          },
+          "reason": {
+            "en": "Only speed is constant.",
+            "hi": "केवल चाल नियत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Changing in direction",
+            "hi": "दिशा में बदलता"
+          },
+          "reason": {
+            "en": "The tangent direction changes continuously.",
+            "hi": "स्पर्शरेखा की दिशा लगातार बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always radial",
+            "hi": "हमेशा त्रिज्यीय"
+          },
+          "reason": {
+            "en": "Velocity is tangential, not radial.",
+            "hi": "वेग स्पर्शरेखीय है, त्रिज्यीय नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "The object is moving.",
+            "hi": "वस्तु चल रही है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "At fixed speed, doubling circular radius makes ac:",
+        "hi": "नियत चाल पर वृत्त की त्रिज्या दोगुनी करने से ac:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Double",
+            "hi": "दोगुना"
+          },
+          "reason": {
+            "en": "ac is inversely proportional to r at fixed v.",
+            "hi": "नियत v पर ac त्रिज्या के व्युत्क्रमानुपाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          "reason": {
+            "en": "v²/(2r) = ac/2.",
+            "hi": "v²/(2r) = ac/2।"
+          }
+        },
+        {
+          "text": {
+            "en": "Four times",
+            "hi": "4 गुना"
+          },
+          "reason": {
+            "en": "That is not the radius dependence.",
+            "hi": "त्रिज्या पर ऐसी निर्भरता नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Radius appears in the denominator.",
+            "hi": "त्रिज्या हर में आती है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The scalar product of perpendicular vectors is:",
+        "hi": "लंबवत सदिशों का अदिश गुणनफल:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "AB",
+            "hi": "AB"
+          },
+          "reason": {
+            "en": "cos90° is zero.",
+            "hi": "cos90° शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "A · B = AB cos90° = 0.",
+            "hi": "A · B = AB cos90° = 0।"
+          }
+        },
+        {
+          "text": {
+            "en": "AB sinθ always",
+            "hi": "हमेशा AB sinθ"
+          },
+          "reason": {
+            "en": "Sine belongs to vector-product magnitude.",
+            "hi": "ज्या सदिश गुणनफल के परिमाण में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A + B",
+            "hi": "A + B"
+          },
+          "reason": {
+            "en": "A sum is not a scalar product.",
+            "hi": "योग अदिश गुणनफल नहीं है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "vAB equals:",
+        "hi": "vAB बराबर है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "vA + vB always",
+            "hi": "हमेशा vA + vB"
+          },
+          "reason": {
+            "en": "Relative velocity requires subtraction.",
+            "hi": "सापेक्ष वेग में घटाव चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "vA − vB",
+            "hi": "vA − vB"
+          },
+          "reason": {
+            "en": "Subtract velocities expressed in the same frame.",
+            "hi": "समान फ्रेम के वेग घटाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "vA vB",
+            "hi": "vA vB"
+          },
+          "reason": {
+            "en": "Multiplication has incorrect dimensions.",
+            "hi": "गुणन की विमा गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "|vA| − |vB| always",
+            "hi": "हमेशा |vA| − |vB|"
+          },
+          "reason": {
+            "en": "Direction cannot generally be discarded.",
+            "hi": "दिशा सामान्यतः नहीं हटा सकते।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why can circular motion have constant speed but nonzero acceleration?",
+        "hi": "नियत वृत्तीय चाल पर भी त्वरण अशून्य क्यों है?"
+      },
+      "answer": {
+        "en": "Velocity changes direction continuously, so its time derivative is nonzero.",
+        "hi": "वेग दिशा लगातार बदलती है, इसलिए उसका समय अवकलज अशून्य है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the assumptions of the standard projectile model.",
+        "hi": "सामान्य प्रक्षेप्य मॉडल की मान्यताएँ लिखें।"
+      },
+      "answer": {
+        "en": "Constant downward g, negligible air resistance, and negligible curvature over the flight region.",
+        "hi": "नियत नीचे g, नगण्य वायु प्रतिरोध तथा उड़ान क्षेत्र में नगण्य पृथ्वी वक्रता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why do 30° and 60° launches have equal ideal range?",
+        "hi": "30° और 60° का आदर्श परास समान क्यों है?"
+      },
+      "answer": {
+        "en": "sin60° = sin120° in R = u² sin2θ/g for equal launch and landing heights.",
+        "hi": "समान प्रक्षेपण तथा अवतरण स्तर पर R = u² sin2θ/g में sin60° = sin120° है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find resultant of 3 and 4 units along the same direction.",
+        "hi": "समान दिशा में 3 और 4 इकाई का परिणामी निकालें।"
+      },
+      "answer": {
+        "en": "7 units in their common direction.",
+        "hi": "उनकी साझा दिशा में 7 इकाई।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why inverse tangent needs a quadrant check.",
+        "hi": "प्रतिलोम स्पर्शज्या में चतुर्थांश क्यों जाँचते हैं?"
+      },
+      "answer": {
+        "en": "The ratio of components alone can correspond to more than one quadrant; their signs resolve the direction.",
+        "hi": "केवल घटक अनुपात एक से अधिक चतुर्थांश से मिल सकता है; चिह्न सही दिशा बताते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "A boat moves 3 m/s east relative to water and water moves 4 m/s north. Find ground speed.",
+        "hi": "नाव जल के सापेक्ष 3 m/s पूर्व और जल 4 m/s उत्तर चलता है। भूमि चाल निकालें।"
+      },
+      "answer": {
+        "en": "√(3² + 4²) = 5 m/s, directed northeast with angle tan⁻¹(4/3) north of east.",
+        "hi": "√(3² + 4²) = 5 m/s; पूर्व से उत्तर की ओर tan⁻¹(4/3) कोण पर।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Resolve vectors with a declared axis convention.",
+      "hi": "घोषित अक्ष पद्धति से सदिशों के घटक निकालें।"
+    },
+    {
+      "en": "Add corresponding signed components.",
+      "hi": "संबंधित चिह्न सहित घटक जोड़ें।"
+    },
+    {
+      "en": "Projectile components share one time.",
+      "hi": "प्रक्षेप्य घटकों का समय एक है।"
+    },
+    {
+      "en": "Range formula assumes equal launch and landing heights.",
+      "hi": "परास सूत्र समान प्रक्षेपण तथा अवतरण ऊँचाई मानता है।"
+    },
+    {
+      "en": "Circular acceleration points inward.",
+      "hi": "वृत्तीय त्वरण भीतर की ओर है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not add vector magnitudes blindly or apply the equal-height range formula to unequal landing heights.",
+    "hi": "सदिश परिमाण अंधाधुंध न जोड़ें और अलग अवतरण ऊँचाई पर समान स्तर परास सूत्र न लगाएँ।"
+  },
+  "goal": {
+    "en": "Use vectors to describe projectile and circular motion in a plane.",
+    "hi": "सदिशों से समतल में प्रक्षेप्य तथा वृत्तीय गति समझें।"
+  },
+  "conceptMap": "अदिश, सदिश और निर्देशांक → घटक और एकांक सदिश → योग, घटाव और सापेक्ष वेग → गुणनफल और द्विविमीय शुद्ध गतिकी → प्रक्षेप्य गति की मान्यताएँ → उड्डयन काल, ऊँचाई और परास → एकसमान वृत्तीय गति → समतल गति के प्रश्न हल करना",
+  "conceptMapEn": "Scalars, vectors and coordinates → Components and unit vectors → Addition, subtraction and relative velocity → Products and two-dimensional kinematics → Projectile motion assumptions → Time of flight, height and range → Uniform circular motion → Solving plane-motion problems",
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Class 11 Physics and the UP Board 2026–27 syllabus. Use the prescribed textbook alongside these models.",
+    "hi": "NCERT कक्षा 11 भौतिकी तथा यूपी बोर्ड 2026–27 पाठ्यक्रम पर आधारित मौलिक अध्ययन व्याख्याएँ। इन मॉडलों के साथ निर्धारित पाठ्यपुस्तक भी पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part I · Chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keph103.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ]
+}

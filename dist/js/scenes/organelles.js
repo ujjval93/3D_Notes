@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,p})=>{cell(g,true,p[0]);let roles=[b('Genetic information','आनुवंशिक सूचना'),b('ATP production','ATP निर्माण'),b('Photosynthesis','प्रकाश-संश्लेषण'),b('Storage and turgor','भण्डारण और स्फीति'),b('Modification and packaging','संशोधन और पैकेजिंग'),b('Selective transport','चयनात्मक परिवहन')];return[{label:b('Selected organelle','चुना कोशिकांग'),value:organelles[p[0]]},{label:b('Main role','मुख्य कार्य'),value:roles[p[0]]}];};

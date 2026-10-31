@@ -1,0 +1,872 @@
+{
+  "id": 1,
+  "title": {
+    "en": "Sets",
+    "hi": "समुच्चय"
+  },
+  "goal": {
+    "en": "Describe collections precisely and solve counting problems with set operations.",
+    "hi": "संग्रह सटीक लिखें और समुच्चय संक्रियाओं से गणना समस्याएँ हल करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Well-defined collections",
+        "hi": "सुस्पष्ट संग्रह"
+      },
+      "body": {
+        "en": "A set is a well-defined collection of objects. Well-defined means that membership can be decided without relying on personal taste. The vowels of the English alphabet form a set; the beautiful paintings in a room do not, unless an objective selection rule is specified. Objects belonging to a set are called its elements. Write a ∈ A when a belongs to A, and a ∉ A otherwise. Capital letters usually name sets and lower-case letters their elements. The objects need not be numbers: days, names and ordered pairs can be elements. Repetition does not create a new element, and changing the order does not change a set. Always identify the membership rule before calculating. A collection can be perfectly well-defined even when it has infinitely many elements. A boundary example sharpens a definition: the primes below10 are objectively determined as2,3,5,7, even if a learner does not yet know an efficient test. Well-defined does not mean immediately easy to compute.",
+        "hi": "समुच्चय (Set) वस्तुओं का सुस्पष्ट संग्रह है। सुस्पष्ट का अर्थ है कि कोई वस्तु उसमें है या नहीं, यह निजी पसंद के बिना तय किया जा सके। अंग्रेजी वर्णमाला के स्वर एक समुच्चय बनाते हैं। सुंदर चित्रों का संग्रह सामान्यतः सुस्पष्ट नहीं है, क्योंकि सुंदरता पर लोगों की राय बदलती है। संग्रह की प्रत्येक वस्तु उसका अवयव (Element) कहलाती है। a ∈ A का अर्थ a, A का अवयव है और a ∉ A का अर्थ वह अवयव नहीं है। सामान्यतः बड़े अक्षर समुच्चय और छोटे अक्षर अवयव बताते हैं। अवयव केवल संख्याएँ नहीं होते; नाम, दिन और क्रमित युग्म भी हो सकते हैं। किसी अवयव को बार-बार लिखने से नया अवयव नहीं मिलता। क्रम बदलने से भी समुच्चय नहीं बदलता। इसलिए {1,2,2} तथा {2,1} समान समुच्चय हैं। गणना शुरू करने से पहले सदस्यता का नियम पढ़ें। कोई संग्रह अनंत होते हुए भी सुस्पष्ट हो सकता है; सभी प्राकृतिक संख्याएँ इसका उदाहरण हैं। सीमा वाला उदाहरण परिभाषा स्पष्ट करता है:10 से छोटे अभाज्य2,3,5,7 निश्चित हैं,भले विद्यार्थी को अभी तेज जाँच न आती हो। सुस्पष्ट होने का अर्थ तुरंत आसान गणना होना नहीं है।"
+      },
+      "formula": "a ∈ A; b ∉ A",
+      "question": {
+        "en": "Is the collection of all positive even integers well-defined?",
+        "hi": "क्या सभी धनात्मक सम पूर्णांकों का संग्रह सुस्पष्ट है?"
+      },
+      "answer": {
+        "en": "Yes: membership is decided by positivity, integrality and divisibility by 2.",
+        "hi": "हाँ; धनात्मकता, पूर्णांक होना और 2 से विभाज्यता सदस्यता तय करते हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Roster and set-builder forms",
+        "hi": "सूची और समुच्चय निर्माण रूप"
+      },
+      "body": {
+        "en": "In roster form, list distinct elements inside braces: A={2,4,6,8}. In set-builder form, state a variable, a universe and a defining property: A={x ∈ N : x is even and x<10}. Both forms describe the same set. The colon means such that. State the underlying number system because x²=4 has two real solutions but only one positive natural solution. Dots in a roster must follow an unambiguous pattern. For {1,2,3,...}, the continuation is clear; a few isolated terms without a rule may be ambiguous. In this course N={1,2,3,...} and W={0,1,2,...}. Negative integers belong to Z, rational numbers to Q and real numbers to R. Braces distinguish a set from an ordered pair or an interval.",
+        "hi": "सूची रूप (Roster form) में अलग-अलग अवयवों को मझले कोष्ठकों में लिखते हैं, जैसे A={2,4,6,8}। समुच्चय निर्माण रूप (Set-builder form) में चर और उसका गुण लिखा जाता है: A={x ∈ N : x सम है तथा x<10}। यहाँ दोनों रूप एक ही समुच्चय बताते हैं। चिह्न : का अर्थ ऐसा कि है। चर किस संख्या प्रणाली से लिया गया है, यह लिखना जरूरी है। x²=4 के वास्तविक हल 2 और −2 हैं, पर प्राकृतिक संख्या में केवल 2 मिलता है। सूची में बिंदुओं से छूटा भाग तभी दिखाएँ जब आगे का नियम स्पष्ट हो। {1,2,3,...} का क्रम स्पष्ट है। केवल कुछ असंबंधित संख्याएँ देकर अनंत सूची नहीं बनती। इस पाठ में N={1,2,3,...}, W={0,1,2,...}, Z पूर्णांकों, Q परिमेय और R वास्तविक संख्याओं का समुच्चय है। लिखे हुए नियम को 1 सही तथा 1 गलत उदाहरण पर जाँचें। कोष्ठक बदलने से गणितीय वस्तु बदल सकती है; समुच्चय और क्रमित युग्म को एक जैसा न लिखें।"
+      },
+      "formula": "A={x ∈ N : x<10 and 2 divides x}={2,4,6,8}",
+      "question": {
+        "en": "Write {x ∈ Z : x²=4} in roster form.",
+        "hi": "{x ∈ Z : x²=4} को सूची रूप में लिखें।"
+      },
+      "answer": {
+        "en": "{−2,2}.",
+        "hi": "{−2,2}।"
+      }
+    },
+    {
+      "title": {
+        "en": "Empty, finite and infinite sets",
+        "hi": "रिक्त, परिमित और अनंत समुच्चय"
+      },
+      "body": {
+        "en": "The empty set has no element and is denoted ∅ or {}. The set of natural numbers between 2 and 3 is empty. The set {0} is not empty: it contains the number 0. Likewise {∅} contains one element, namely the empty set. A set is finite if its distinct elements can be counted to a nonnegative integer; its cardinal number is n(A). A set that is not finite is infinite. A={a,e,i,o,u} has n(A)=5. All integers form an infinite set even though any displayed roster is incomplete. An empty set is finite with cardinal number 0. Counting must ignore repetitions. Equal finite sets have the same cardinality, but equal cardinality alone does not make sets equal. For instance {1,2} and {7,8} each contain two elements yet have different membership.",
+        "hi": "रिक्त समुच्चय (Empty set) में कोई अवयव नहीं होता। इसे ∅ या {} लिखते हैं। 2 और 3 के बीच आने वाली प्राकृतिक संख्याओं का समुच्चय रिक्त है। {0} रिक्त नहीं है, क्योंकि उसमें संख्या 0 मौजूद है। इसी प्रकार {∅} में 1 अवयव है और वह अवयव स्वयं रिक्त समुच्चय है। परिमित समुच्चय (Finite set) के अलग-अलग अवयवों को गिनकर कोई गैरऋणात्मक पूर्णांक मिलता है। इसकी अवयव संख्या n(A) कहलाती है। जो समुच्चय परिमित नहीं है, वह अनंत समुच्चय (Infinite set) है। अंग्रेजी स्वरों के समुच्चय की अवयव संख्या 5 है। सभी पूर्णांक अनंत हैं, भले ही कागज पर उनकी सूची पूरी न लिख सकें। रिक्त समुच्चय परिमित है और उसकी अवयव संख्या 0 है। दोहराए अवयव को दूसरी बार नहीं गिनते। समान अवयव संख्या से समुच्चय समान साबित नहीं होते। {1,2} और {7,8} दोनों में 2 अवयव हैं, लेकिन उनके अवयव अलग हैं। पहले सदस्य पहचानें, उसके बाद संख्या लिखें।"
+      },
+      "formula": "n(∅)=0; n({0})=1; n({∅})=1",
+      "question": {
+        "en": "Is {∅} empty?",
+        "hi": "क्या {∅} रिक्त है?"
+      },
+      "answer": {
+        "en": "No. It has the empty set as its one element.",
+        "hi": "नहीं। रिक्त समुच्चय उसका 1 अवयव है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Equality and subsets",
+        "hi": "समानता और उपसमुच्चय"
+      },
+      "body": {
+        "en": "Two sets are equal exactly when they have the same elements. A is a subset of B, written A⊆B, if every element of A belongs to B. Equality allows both A⊆B and B⊆A; a proper subset also requires A≠B. The empty set is a subset of every set, and every set is a subset of itself. To disprove A⊆B, find one element of A that is absent from B. Distinguish membership from inclusion: 2∈{1,2}, whereas {2}⊆{1,2}. The collection of all subsets of A is the power set P(A). For A={a,b}, P(A)={∅,{a},{b},{a,b}}. A finite set with n elements has 2^n subsets because each element independently has two decisions, include or exclude. Nested braces must be read one level at a time.",
+        "hi": "दो समुच्चय समान (Equal sets) तभी हैं जब उनके सभी अवयव समान हों। A उपसमुच्चय (Subset) है B का, यदि A का प्रत्येक अवयव B में भी है; इसे A⊆B लिखते हैं। यदि दोनों दिशाओं में समावेशन हो, तो A=B है। उचित उपसमुच्चय में A⊆B के साथ A≠B भी चाहिए। रिक्त समुच्चय हर समुच्चय का उपसमुच्चय है और हर समुच्चय अपना उपसमुच्चय है। A⊆B को गलत साबित करने के लिए A का ऐसा 1 अवयव पर्याप्त है जो B में नहीं है। सदस्यता और समावेशन अलग संबंध हैं: 2∈{1,2}, जबकि {2}⊆{1,2}। A के सभी उपसमुच्चयों का संग्रह घात समुच्चय (Power set) P(A) है। A={a,b} के लिए P(A)={∅,{a},{b},{a,b}}। n अवयवों के परिमित समुच्चय के 2^n उपसमुच्चय होते हैं। प्रत्येक अवयव को रखने या छोड़ने के 2 स्वतंत्र विकल्प होते हैं। अंदर और बाहर के कोष्ठकों को अलग पढ़ें; इससे अवयव तथा उपसमुच्चय में भ्रम नहीं होगा।"
+      },
+      "formula": "A⊆B ⇔ every x∈A also lies in B; n(P(A))=2^n(A)",
+      "question": {
+        "en": "How many subsets does {1,2,3} have?",
+        "hi": "{1,2,3} के कितने उपसमुच्चय हैं?"
+      },
+      "answer": {
+        "en": "2³=8.",
+        "hi": "2³=8।"
+      }
+    },
+    {
+      "title": {
+        "en": "Intervals and the universal set",
+        "hi": "अंतराल और सार्वत्रिक समुच्चय"
+      },
+      "body": {
+        "en": "A universal set U fixes the collection under discussion. It is chosen for the problem, not a single set containing everything imaginable. If U is a class of students, its subsets may represent students studying different subjects. For real numbers, intervals provide concise set descriptions. The closed interval [a,b] includes both endpoints, while the open interval (a,b) excludes both. Mixed intervals include just one endpoint. Infinity is not a real endpoint and always uses an open parenthesis. The notation [2,5) means 2≤x<5. On a number line, a filled endpoint shows inclusion and an open endpoint exclusion. An interval includes all real numbers satisfying its inequalities, not only integers. If the universe is instead Z, the same inequality gives a different, discrete set. State both the domain and the endpoint conditions.",
+        "hi": "सार्वत्रिक समुच्चय (Universal set) U उस प्रश्न में चर्चा की सभी संभावित वस्तुओं का संग्रह तय करता है। यह प्रसंग के अनुसार चुना जाता है; इसका अर्थ संसार की हर कल्पनीय वस्तु वाला समुच्चय नहीं है। किसी कक्षा के विद्यार्थियों को U लें, तो विषय पढ़ने वाले विद्यार्थी उसके उपसमुच्चय हो सकते हैं। वास्तविक संख्याओं में अंतराल (Interval) संक्षिप्त निरूपण देता है। बंद अंतराल [a,b] दोनों सिरों को शामिल करता है; खुला अंतराल (a,b) दोनों को छोड़ता है। मिश्रित अंतराल में केवल 1 सिरा शामिल होता है। अनंत कोई वास्तविक अंतिम संख्या नहीं है, इसलिए उसके साथ खुला कोष्ठक लगता है। [2,5) का अर्थ 2≤x<5 है। संख्या रेखा पर भरा बिंदु शामिल सिरा और खोखला बिंदु छोड़ा सिरा बताता है। अंतराल में शर्त पूरी करने वाली सभी वास्तविक संख्याएँ होती हैं, केवल पूर्णांक नहीं। यदि क्षेत्र Z हो, तो वही असमिका अलग, असतत समुच्चय देती है। इसलिए संख्या क्षेत्र और अंतिम बिंदुओं की शर्त हमेशा स्पष्ट लिखें।"
+      },
+      "formula": "[a,b)={x∈R : a≤x<b}",
+      "question": {
+        "en": "Does [2,5) contain 5? Does it contain 2.5?",
+        "hi": "क्या [2,5) में 5 है? क्या 2.5 है?"
+      },
+      "answer": {
+        "en": "It excludes 5 and includes 2.5.",
+        "hi": "5 शामिल नहीं है, लेकिन 2.5 शामिल है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Union and intersection",
+        "hi": "सम्मिलन और सर्वनिष्ठ"
+      },
+      "body": {
+        "en": "The union A∪B contains elements in A or B or both. The word or is inclusive. The intersection A∩B contains elements common to both sets. For A={1,2,3} and B={3,4}, the union is {1,2,3,4} and the intersection {3}. Repeated elements are written once. Disjoint sets have empty intersection; they need not themselves be empty. Venn diagrams show U as a rectangle and sets as enclosed regions, helping us distinguish the overlap from the whole shaded area. Union and intersection are commutative and associative. Distribution connects them: A∩(B∪C)=(A∩B)∪(A∩C). A diagram suggests a rule, while an element argument verifies it: check whether an arbitrary element belongs to each side using and and or. Set operations do not depend on the physical size of drawn circles.",
+        "hi": "सम्मिलन (Union) A∪B में वे अवयव हैं जो A में या B में या दोनों में हों। यहाँ या समावेशी है, इसलिए साझा अवयव छूटते नहीं हैं। सर्वनिष्ठ (Intersection) A∩B में दोनों के साझा अवयव आते हैं। A={1,2,3} और B={3,4} के लिए सम्मिलन {1,2,3,4} तथा सर्वनिष्ठ {3} है। साझा अवयव को सम्मिलन में केवल 1 बार लिखते हैं। असंयुक्त समुच्चयों (Disjoint sets) का सर्वनिष्ठ रिक्त होता है; जरूरी नहीं कि वे स्वयं रिक्त हों। वेन आरेख में आयत U तथा बंद क्षेत्र समुच्चय दिखाते हैं। साझा भाग और पूरा मिलाजुला क्षेत्र अलग पहचानें। सम्मिलन और सर्वनिष्ठ क्रमविनिमेय तथा साहचर्य नियम मानते हैं। वितरण नियम A∩(B∪C)=(A∩B)∪(A∩C) भी सही है। चित्र नियम समझने में मदद करता है, पर किसी सामान्य अवयव की सदस्यता दोनों ओर जाँचना तर्क देता है। खींचे वृत्त का भौतिक आकार अवयव संख्या नहीं बताता, जब तक प्रश्न में विशेष पैमाना न दिया हो।"
+      },
+      "formula": "A∪B={x:x∈A or x∈B}; A∩B={x:x∈A and x∈B}",
+      "question": {
+        "en": "Find {1,3}∩{2,4}.",
+        "hi": "{1,3}∩{2,4} निकालें।"
+      },
+      "answer": {
+        "en": "∅; the sets are disjoint.",
+        "hi": "∅; समुच्चय असंयुक्त हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Difference and complement",
+        "hi": "अंतर और पूरक"
+      },
+      "body": {
+        "en": "The difference A−B consists of elements in A but not in B. Unlike union, difference usually changes when the order is reversed. With A={1,2,3} and B={3,4}, A−B={1,2}, whereas B−A={4}. The complement A′ is U−A and therefore depends on the chosen universal set. If U changes, A′ may change even while A stays fixed. De Morgan laws state (A∪B)′=A′∩B′ and (A∩B)′=A′∪B′. To be outside a union one must be outside both sets; to be outside an intersection one must be outside at least one. Complements of ∅ and U are U and ∅ respectively. Also A−B=A∩B′. Shade the relevant region carefully, then check a sample element from the overlap and a sample from outside it.",
+        "hi": "अंतर (Difference) A−B में A के वे अवयव आते हैं जो B में नहीं हैं। सम्मिलन के विपरीत, अंतर में क्रम बदलने से सामान्यतः उत्तर बदलता है। A={1,2,3} और B={3,4} होने पर A−B={1,2}, लेकिन B−A={4} है। पूरक (Complement) A′=U−A है। इसलिए पूरक सार्वत्रिक समुच्चय पर निर्भर करता है। U बदलने पर A स्थिर रहने के बावजूद A′ बदल सकता है। डी मॉर्गन नियम (A∪B)′=A′∩B′ और (A∩B)′=A′∪B′ हैं। सम्मिलन के बाहर होने के लिए दोनों समुच्चयों के बाहर होना होगा। सर्वनिष्ठ के बाहर होने के लिए कम-से-कम 1 समुच्चय के बाहर होना पर्याप्त है। रिक्त समुच्चय का पूरक U है और U का पूरक रिक्त है। A−B को A∩B′ भी लिख सकते हैं। क्षेत्र छायांकित करने के बाद साझा भाग तथा बाहरी भाग से 1-1 उदाहरण लेकर जाँचें। इससे भाषा के नहीं, और तथा या का सही अर्थ स्पष्ट होता है।"
+      },
+      "formula": "A−B=A∩B′; (A∪B)′=A′∩B′",
+      "question": {
+        "en": "If U={1,2,3,4} and A={1,4}, find A′.",
+        "hi": "U={1,2,3,4} तथा A={1,4} हो, तो A′ निकालें।"
+      },
+      "answer": {
+        "en": "{2,3}.",
+        "hi": "{2,3}।"
+      }
+    },
+    {
+      "title": {
+        "en": "Counting with overlapping sets",
+        "hi": "साझा अवयवों वाले समुच्चयों की गणना"
+      },
+      "body": {
+        "en": "For finite sets, n(A∪B)=n(A)+n(B)−n(A∩B). Adding the two separate counts counts every common element twice, so subtract the common count once. In a survey, 18 students like cricket, 12 football and 5 both, so 25 like at least one. Only cricket is 18−5=13; only football 12−5=7. If U has 30 students, neither is 30−25=5. Do not assume everyone chooses a sport unless that is given. For three sets add individual counts, subtract pair intersections, then add the triple intersection once. Every quoted intersection includes the triple overlap unless the word only explicitly changes it. Draw mutually exclusive regions first when the wording is complicated. A count cannot be negative or exceed the universal total. Those checks often reveal a mistaken interpretation before the final answer is written.",
+        "hi": "परिमित समुच्चयों के लिए n(A∪B)=n(A)+n(B)−n(A∩B) है। अलग-अलग अवयव संख्या जोड़ने पर हर साझा अवयव 2 बार गिना जाता है। इसलिए साझा संख्या 1 बार घटाते हैं। किसी सर्वेक्षण में 18 विद्यार्थी क्रिकेट, 12 फुटबॉल और 5 दोनों पसंद करें, तो कम-से-कम 1 खेल पसंद करने वाले 18+12−5=25 हैं। केवल क्रिकेट वाले 18−5=13 और केवल फुटबॉल वाले 12−5=7 हैं। U में 30 विद्यार्थी हों, तो कोई खेल न पसंद करने वाले 30−25=5 होंगे। सभी विद्यार्थी कोई खेल चुनते हैं, ऐसा बिना दिए न मानें। 3 समुच्चयों में व्यक्तिगत संख्याएँ जोड़कर युग्म सर्वनिष्ठ घटाते और तिहरा सर्वनिष्ठ 1 बार जोड़ते हैं। जब केवल शब्द न हो, तो युग्म सर्वनिष्ठ में तिहरा साझा भाग भी शामिल रहता है। जटिल भाषा में पहले अलग-अलग क्षेत्रों की संख्या लिखें। कोई अवयव संख्या ऋणात्मक या सार्वत्रिक कुल से बड़ी नहीं हो सकती; अंतिम उत्तर से पहले यह उपयोगी जाँच है।"
+      },
+      "formula": "n(A∪B)=n(A)+n(B)−n(A∩B)",
+      "question": {
+        "en": "If n(A)=12,n(B)=9,n(A∩B)=4, find n(A∪B).",
+        "hi": "n(A)=12,n(B)=9,n(A∩B)=4 हो, तो n(A∪B) निकालें।"
+      },
+      "answer": {
+        "en": "12+9−4=17.",
+        "hi": "12+9−4=17।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Write positive multiples of 3 below 13 as a set.",
+        "hi": "13 से छोटी 3 की धनात्मक गुणज संख्याओं का समुच्चय लिखें।"
+      },
+      "steps": [
+        {
+          "en": "Given: x∈N, 3 divides x, x<13.",
+          "hi": "दिया: x∈N, 3 से विभाज्य तथा x<13।"
+        },
+        {
+          "en": "The qualifying values are 3,6,9,12. Each appears once.",
+          "hi": "योग्य मान 3,6,9,12 हैं; प्रत्येक 1 बार लें।"
+        }
+      ],
+      "answer": {
+        "en": "{3,6,9,12}.",
+        "hi": "{3,6,9,12}।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find all subsets of {a,b}.",
+        "hi": "{a,b} के सभी उपसमुच्चय निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Include neither element, either one, or both.",
+          "hi": "कोई नहीं, कोई 1 या दोनों अवयव रखें।"
+        },
+        {
+          "en": "The subsets are ∅,{a},{b},{a,b}; count 2²=4.",
+          "hi": "उपसमुच्चय ∅,{a},{b},{a,b} हैं; संख्या 2²=4।"
+        }
+      ],
+      "answer": {
+        "en": "P({a,b})={∅,{a},{b},{a,b}}.",
+        "hi": "P({a,b})={∅,{a},{b},{a,b}}।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "For U={1,2,3,4,5,6}, A={1,2,3}, B={3,4}, find A∪B and (A∪B)′.",
+        "hi": "U={1,2,3,4,5,6}, A={1,2,3}, B={3,4} में A∪B तथा उसका पूरक निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Combine distinct elements: A∪B={1,2,3,4}.",
+          "hi": "अलग अवयव मिलाएँ: A∪B={1,2,3,4}।"
+        },
+        {
+          "en": "Remove this union from U: {5,6}.",
+          "hi": "U से यह सम्मिलन हटाएँ: {5,6}।"
+        }
+      ],
+      "answer": {
+        "en": "Union={1,2,3,4}; complement={5,6}.",
+        "hi": "सम्मिलन={1,2,3,4}; पूरक={5,6}।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "In 40 students, 24 study Hindi, 18 Sanskrit, 8 both. Find neither.",
+        "hi": "40 विद्यार्थियों में 24 हिंदी,18 संस्कृत,8 दोनों पढ़ते हैं। कोई नहीं पढ़ने वाले निकालें।"
+      },
+      "steps": [
+        {
+          "en": "At least one=24+18−8=34.",
+          "hi": "कम-से-कम 1 विषय=24+18−8=34।"
+        },
+        {
+          "en": "Neither=40−34=6; only Hindi=16 and only Sanskrit=10.",
+          "hi": "कोई नहीं=40−34=6; केवल हिंदी=16 और केवल संस्कृत=10।"
+        }
+      ],
+      "answer": {
+        "en": "6 students.",
+        "hi": "6 विद्यार्थी।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Among 60 students, n(A)=30,n(B)=25,n(C)=20, pair intersections are 10,8,7 and triple is 3. Find none.",
+        "hi": "60 विद्यार्थियों में n(A)=30,n(B)=25,n(C)=20, युग्म सर्वनिष्ठ 10,8,7 तथा तिहरा 3 है। कोई नहीं निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Pair counts include the triple overlap.",
+          "hi": "युग्म संख्या में तिहरा साझा भाग शामिल है।"
+        },
+        {
+          "en": "Union=30+25+20−10−8−7+3=53.",
+          "hi": "सम्मिलन=30+25+20−10−8−7+3=53।"
+        },
+        {
+          "en": "None=60−53=7.",
+          "hi": "कोई नहीं=60−53=7।"
+        }
+      ],
+      "answer": {
+        "en": "7 students.",
+        "hi": "7 विद्यार्थी।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which is well-defined?",
+        "hi": "कौन सुस्पष्ट है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Nice songs",
+            "hi": "अच्छे गीत"
+          },
+          "reason": {
+            "en": "Nice depends on personal taste.",
+            "hi": "अच्छा होना निजी पसंद है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Beautiful cities",
+            "hi": "सुंदर शहर"
+          },
+          "reason": {
+            "en": "Beauty has no specified objective rule.",
+            "hi": "सुंदरता का वस्तुनिष्ठ नियम नहीं दिया।"
+          }
+        },
+        {
+          "text": {
+            "en": "Difficult questions",
+            "hi": "कठिन प्रश्न"
+          },
+          "reason": {
+            "en": "Difficulty depends on the learner unless a rule is fixed.",
+            "hi": "नियम बिना कठिनाई विद्यार्थी पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Even integers",
+            "hi": "सम पूर्णांक"
+          },
+          "reason": {
+            "en": "Divisibility by 2 decides membership.",
+            "hi": "2 से विभाज्यता सदस्यता तय करती है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "n({1,1,2}) equals",
+        "hi": "n({1,1,2}) है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Both 1 and 2 are present.",
+            "hi": "1 तथा 2 दोनों हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The set is not empty.",
+            "hi": "समुच्चय रिक्त नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "Distinct elements are 1 and 2.",
+            "hi": "अलग अवयव 1 और 2 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "Repetition is not counted twice.",
+            "hi": "दोहराव को 2 बार नहीं गिनते।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which set is empty?",
+        "hi": "कौन रिक्त है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "{1}",
+            "hi": "{1}"
+          },
+          "reason": {
+            "en": "This contains 1.",
+            "hi": "इसमें 1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "{}",
+            "hi": "{}"
+          },
+          "reason": {
+            "en": "No element is listed.",
+            "hi": "कोई अवयव नहीं लिखा।"
+          }
+        },
+        {
+          "text": {
+            "en": "{0}",
+            "hi": "{0}"
+          },
+          "reason": {
+            "en": "This contains the number 0.",
+            "hi": "इसमें संख्या 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "{∅}",
+            "hi": "{∅}"
+          },
+          "reason": {
+            "en": "This contains one set as an element.",
+            "hi": "इसमें 1 समुच्चय अवयव है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A set with 4 elements has how many subsets?",
+        "hi": "4 अवयवों के समुच्चय के कितने उपसमुच्चय हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "16",
+            "hi": "16"
+          },
+          "reason": {
+            "en": "Each of 4 elements has 2 inclusion choices:2⁴.",
+            "hi": "4 अवयवों के 2-2 विकल्प:2⁴।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "That counts elements, not all subsets.",
+            "hi": "यह अवयव संख्या है।"
+          }
+        },
+        {
+          "text": {
+            "en": "8",
+            "hi": "8"
+          },
+          "reason": {
+            "en": "8=2³ belongs to 3 elements.",
+            "hi": "8=2³,3 अवयवों का परिणाम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "24",
+            "hi": "24"
+          },
+          "reason": {
+            "en": "4! counts arrangements, not subsets.",
+            "hi": "4! व्यवस्थाएँ गिनता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For A={1,2}, B={2,3}, A∩B is",
+        "hi": "A={1,2},B={2,3} का सर्वनिष्ठ है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "{1,2,3}",
+            "hi": "{1,2,3}"
+          },
+          "reason": {
+            "en": "This is the union.",
+            "hi": "यह सम्मिलन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "{1}",
+            "hi": "{1}"
+          },
+          "reason": {
+            "en": "1 is absent from B.",
+            "hi": "1,B में नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "∅",
+            "hi": "∅"
+          },
+          "reason": {
+            "en": "2 is shared.",
+            "hi": "2 साझा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "{2}",
+            "hi": "{2}"
+          },
+          "reason": {
+            "en": "Only 2 belongs to both.",
+            "hi": "केवल 2 दोनों में है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "With A={1,2},B={2,3}, A−B equals",
+        "hi": "A={1,2},B={2,3} में A−B है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "{2}",
+            "hi": "{2}"
+          },
+          "reason": {
+            "en": "This is their intersection.",
+            "hi": "यह सर्वनिष्ठ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "{1,3}",
+            "hi": "{1,3}"
+          },
+          "reason": {
+            "en": "3 does not belong to A.",
+            "hi": "3,A में नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "{1}",
+            "hi": "{1}"
+          },
+          "reason": {
+            "en": "Keep A elements absent from B.",
+            "hi": "A के B में अनुपस्थित अवयव लें।"
+          }
+        },
+        {
+          "text": {
+            "en": "{3}",
+            "hi": "{3}"
+          },
+          "reason": {
+            "en": "This is B−A.",
+            "hi": "यह B−A है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which interval contains 2 but excludes 5?",
+        "hi": "कौन अंतराल 2 शामिल और 5 बाहर रखता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "[2,5]",
+            "hi": "[2,5]"
+          },
+          "reason": {
+            "en": "It includes 5 too.",
+            "hi": "यह 5 भी शामिल करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "[2,5)",
+            "hi": "[2,5)"
+          },
+          "reason": {
+            "en": "Square bracket includes 2; parenthesis excludes 5.",
+            "hi": "वर्ग कोष्ठक 2 शामिल,गोल 5 बाहर।"
+          }
+        },
+        {
+          "text": {
+            "en": "(2,5]",
+            "hi": "(2,5]"
+          },
+          "reason": {
+            "en": "It excludes 2 and includes 5.",
+            "hi": "यह 2 बाहर और 5 शामिल करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(2,5)",
+            "hi": "(2,5)"
+          },
+          "reason": {
+            "en": "It excludes both endpoints.",
+            "hi": "दोनों सिरे बाहर हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "If n(A)=8,n(B)=7,n(A∩B)=3, n(A∪B) is",
+        "hi": "n(A)=8,n(B)=7,n(A∩B)=3 हो, तो n(A∪B) है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "8+7−3=12.",
+            "hi": "8+7−3=12।"
+          }
+        },
+        {
+          "text": {
+            "en": "15",
+            "hi": "15"
+          },
+          "reason": {
+            "en": "This double-counts the common elements.",
+            "hi": "साझा अवयव दोहरे गिने गए।"
+          }
+        },
+        {
+          "text": {
+            "en": "18",
+            "hi": "18"
+          },
+          "reason": {
+            "en": "Intersection must be subtracted, not added.",
+            "hi": "सर्वनिष्ठ घटाना था।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "This is only the intersection.",
+            "hi": "यह केवल सर्वनिष्ठ है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The complement of A∪B equals",
+        "hi": "A∪B का पूरक है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A′∪B′",
+            "hi": "A′∪B′"
+          },
+          "reason": {
+            "en": "This complements the intersection.",
+            "hi": "यह सर्वनिष्ठ का पूरक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A∩B",
+            "hi": "A∩B"
+          },
+          "reason": {
+            "en": "This is inside both.",
+            "hi": "यह दोनों के अंदर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A−B",
+            "hi": "A−B"
+          },
+          "reason": {
+            "en": "This remains inside A.",
+            "hi": "यह A के भीतर रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A′∩B′",
+            "hi": "A′∩B′"
+          },
+          "reason": {
+            "en": "Outside both sets is outside their union.",
+            "hi": "दोनों के बाहर होना सम्मिलन के बाहर है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which statement always holds?",
+        "hi": "कौन कथन हमेशा सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A−B=B−A",
+            "hi": "A−B=B−A"
+          },
+          "reason": {
+            "en": "Difference is not commutative in general.",
+            "hi": "अंतर सामान्यतः क्रमविनिमेय नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A∪B=∅",
+            "hi": "A∪B=∅"
+          },
+          "reason": {
+            "en": "A nonempty A makes this false.",
+            "hi": "अरिक्त A में यह गलत।"
+          }
+        },
+        {
+          "text": {
+            "en": "∅⊆A",
+            "hi": "∅⊆A"
+          },
+          "reason": {
+            "en": "An empty set has no element violating inclusion.",
+            "hi": "रिक्त में समावेशन तोड़ने वाला अवयव नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A∈A",
+            "hi": "A∈A"
+          },
+          "reason": {
+            "en": "A set is not generally an element of itself.",
+            "hi": "समुच्चय सामान्यतः अपना अवयव नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain ∈ and ⊆ using A={1,2}.",
+        "hi": "A={1,2} से ∈ तथा ⊆ समझाएँ।"
+      },
+      "answer": {
+        "en": "1∈A describes an element; {1}⊆A describes a subset.",
+        "hi": "1∈A अवयव और {1}⊆A उपसमुच्चय बताता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "List P({x}).",
+        "hi": "P({x}) लिखें।"
+      },
+      "answer": {
+        "en": "{∅,{x}}; there are 2 subsets.",
+        "hi": "{∅,{x}};2 उपसमुच्चय।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find [1,4]∩(3,6).",
+        "hi": "[1,4]∩(3,6) निकालें।"
+      },
+      "answer": {
+        "en": "(3,4];3 is excluded and 4 included.",
+        "hi": "(3,4];3 बाहर,4 शामिल।"
+      }
+    },
+    {
+      "question": {
+        "en": "State both De Morgan laws.",
+        "hi": "दोनों डी मॉर्गन नियम लिखें।"
+      },
+      "answer": {
+        "en": "(A∪B)′=A′∩B′ and (A∩B)′=A′∪B′.",
+        "hi": "(A∪B)′=A′∩B′ तथा (A∩B)′=A′∪B′।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why subtract the intersection in union counting?",
+        "hi": "सम्मिलन गणना में सर्वनिष्ठ क्यों घटाते हैं?"
+      },
+      "answer": {
+        "en": "The sum of separate counts counts each shared element twice.",
+        "hi": "अलग संख्याओं का योग साझा अवयव 2 बार गिनता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "In U of size 50, n(A)=20,n(B)=18 and union=30. Find both and neither.",
+        "hi": "कुल 50 में n(A)=20,n(B)=18 और सम्मिलन=30 है। दोनों तथा कोई नहीं निकालें।"
+      },
+      "answer": {
+        "en": "Both=20+18−30=8; neither=50−30=20.",
+        "hi": "दोनों=20+18−30=8;कोई नहीं=50−30=20।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not count repeated elements, confuse ∅ with {∅}, replace ∈ with ⊆, reverse difference, or complement without fixing U.",
+    "hi": "दोहराए अवयव न गिनें;∅ और {∅},∈ और ⊆ अलग हैं। अंतर का क्रम तथा पूरक में U जाँचें।"
+  },
+  "revision": [
+    {
+      "en": "Sets have well-defined membership.",
+      "hi": "समुच्चय की सदस्यता सुस्पष्ट होती है।"
+    },
+    {
+      "en": "An n-element set has 2^n subsets.",
+      "hi": "n अवयवों के 2^n उपसमुच्चय होते हैं।"
+    },
+    {
+      "en": "Union means inclusive or; intersection means and.",
+      "hi": "सम्मिलन समावेशी या और सर्वनिष्ठ तथा है।"
+    },
+    {
+      "en": "A′=U−A depends on U.",
+      "hi": "A′=U−A,U पर निर्भर है।"
+    },
+    {
+      "en": "Subtract overlap once when adding two finite set counts.",
+      "hi": "2 परिमित संख्याएँ जोड़ते समय साझा भाग 1 बार घटाएँ।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Membership → subsets → union/intersection → complement → Venn counting.",
+    "hi": "सदस्यता → उपसमुच्चय → सम्मिलन/सर्वनिष्ठ → पूरक → वेन गणना।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class XI, Chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh101.pdf"
+    },
+    {
+      "title": "UPMSP Class11 Mathematics syllabus2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/131-Maths-Class-11.pdf"
+    }
+  ],
+  "engine": "eleven-math",
+  "scenes": []
+}

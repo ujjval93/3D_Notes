@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,p})=>{let data=buoyancy(p[0]);g.box(0,.25,0,1.1,.75,.65,C.blue);for(let z=-.6;z<=.6;z+=.2)g.line([-1.1,-.3,z],[1.1,-.3,z],C.blue);let y=p[0]<=1000?-.3+.52*(data.fraction-.5):.7;g.box(0,y,0,.26,.26,.26,C.gold);g.arrow([.55,y+.2,0],[.55,y-.4,0],C.green);g.arrow([-.55,y-.2,0],[-.55,y+.4,0],C.pink);return[read('Object volume','वस्तु का आयतन',.001,'m³'),read('Weight','भार',fmt(data.weight),'N'),read('Buoyant force','उत्प्लावन बल',fmt(data.upthrust),'N'),read('Displaced volume','विस्थापित आयतन',fmt(data.displaced*1e6,0),'cm³')];};

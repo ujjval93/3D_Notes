@@ -1,0 +1,1071 @@
+{
+  "number": 6,
+  "id": "physics12-06",
+  "title": {
+    "en": "Electromagnetic Induction",
+    "hi": "वैद्युतचुंबकीय प्रेरण"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Induction and experimental evidence",
+        "hi": "प्रेरण और प्रायोगिक प्रमाण"
+      },
+      "paragraphs": [
+        {
+          "en": "Induction is associated with changing linked magnetic flux. A stationary magnet near a stationary coil does not maintain a current when other conditions are constant. Reversing relative motion reverses the galvanometer deflection. Changing a neighbouring coil current also induces an emf. An open circuit can have emf, whereas sustained conduction current requires a closed path.",
+          "hi": "वैद्युतचुंबकीय प्रेरण (Electromagnetic Induction) में परिपथ से संबद्ध चुंबकीय फ्लक्स बदलने पर विद्युत वाहक बल उत्पन्न होता है। किसी कुंडली से जुड़े धारामापी के पास चुंबक को लाएँ तो क्षणिक विक्षेप मिलता है। चुंबक स्थिर रखने पर, अन्य सभी स्थितियाँ स्थिर हों तो, विक्षेप समाप्त होता है। चुंबक वापस खींचने पर विक्षेप उलटता है। इससे पता चलता है कि केवल चुंबकीय क्षेत्र की उपस्थिति पर्याप्त नहीं; फ्लक्स का परिवर्तन आवश्यक है। चुंबक की जगह पास की दूसरी कुंडली में धारा बदलकर भी यही प्रभाव मिलता है। स्विच चालू या बंद करने के क्षण धारा बदलती है, इसलिए दूसरी कुंडली में क्षणिक प्रेरित प्रभाव होता है। विद्युत वाहक बल खुली कुंडली में भी हो सकता है, लेकिन निरंतर धारा के लिए बंद चालक पथ चाहिए। प्रयोग पढ़ते समय यह अलग करें कि संकेत विद्युत वाहक बल का है या बंद परिपथ की धारा का।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Compare moving and stationary cases while keeping coil area, orientation and connections fixed.",
+          "hi": "कुंडली का क्षेत्रफल, अभिविन्यास और संपर्क स्थिर रखकर गतिमान तथा स्थिर अवस्थाओं की तुलना करें। तेज गति प्रायः अधिक फ्लक्स परिवर्तन दर देती है; इसे केवल चुंबक की दूरी का नियम न मानें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can emf exist in an open coil?",
+          "hi": "क्या खुली कुंडली में विद्युत वाहक बल हो सकता है?"
+        },
+        "answer": {
+          "en": "Yes; induced emf does not itself guarantee a closed conduction path.",
+          "hi": "हाँ; प्रेरित विद्युत वाहक बल अपने आप बंद चालक पथ सुनिश्चित नहीं करता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Magnetic flux and area vector",
+        "hi": "चुंबकीय फ्लक्स और क्षेत्रफल सदिश"
+      },
+      "paragraphs": [
+        {
+          "en": "For uniform B through a plane area, ΦB=BA cosθ, with θ measured from the area normal. Reversing the chosen normal reverses the flux sign. A non-uniform field requires the surface integral of B·dA. Zero net flux through a closed surface does not imply zero flux through an open loop surface.",
+          "hi": "चुंबकीय फ्लक्स (Magnetic Flux) किसी चुने पृष्ठ से चुंबकीय क्षेत्र के गुजरने का सदिश आधारित माप है। समान क्षेत्र और समतल पृष्ठ के लिए ΦB=BA cosθ लिखते हैं, जहाँ θ चुंबकीय क्षेत्र और पृष्ठ के अभिलंब क्षेत्रफल सदिश के बीच का कोण है। यह पृष्ठ के तल से बना कोण नहीं है। जब क्षेत्र पृष्ठ के लम्बवत हो, θ=0 होने पर फ्लक्स अधिकतम BA है। जब क्षेत्र पृष्ठ के समानांतर हो, θ=90° और फ्लक्स शून्य है। क्षेत्रफल सदिश की दिशा उलटने पर फ्लक्स का चिह्न उलटता है, यद्यपि वास्तविक क्षेत्र नहीं बदलता। असमान क्षेत्र में पृष्ठ को छोटे भागों में बाँटकर B·dA का समाकलन लेना पड़ता है। बंद पृष्ठ पर कुल चुंबकीय फ्लक्स शून्य होता है, लेकिन किसी खुले कुंडली पृष्ठ से फ्लक्स अशून्य हो सकता है। फ्लक्स का SI मात्रक वेबर है; 1 Wb=1 T m²।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Convert area before substitution: 100 cm²=0.01 m², not 1 m².",
+          "hi": "मान रखने से पहले क्षेत्रफल बदलें: 100 cm²=0.01 m², 1 m² नहीं। कोण और अभिलंब का छोटा चित्र बनाना फ्लक्स के चिह्न तथा ज्यामितीय गुणक को सही रखने में मदद करता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "A field lies in the plane of a loop. What is its flux?",
+          "hi": "क्षेत्र कुंडली के तल में है। फ्लक्स कितना है?"
+        },
+        "answer": {
+          "en": "Zero: the field makes 90° with the area normal.",
+          "hi": "शून्य: क्षेत्र और क्षेत्रफल अभिलंब के बीच 90° है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Faraday law and average emf",
+        "hi": "फैराडे नियम और औसत विद्युत वाहक बल"
+      },
+      "paragraphs": [
+        {
+          "en": "Faraday law relates emf to the rate of flux linkage, ε=−N dΦ/dt for equal flux per turn. A finite difference gives average emf, not automatically the instantaneous emf. Changing field, area or orientation can change flux. The sign is meaningful only after choosing consistent loop and surface orientations.",
+          "hi": "फैराडे का नियम (Faraday Law) कहता है कि प्रेरित विद्युत वाहक बल फ्लक्स संबद्धता की परिवर्तन दर के ऋणात्मक बराबर है। यदि N फेरों से समान फ्लक्स जुड़ा है तो ε=−N dΦB/dt है। किसी सीमित अंतराल के लिए औसत मान εavg=−N ΔΦB/Δt होगा। यह औसत है; हर क्षण का मान तभी समान होगा जब फ्लक्स समय के साथ रैखिक ढंग से बदले। N बढ़ाने से, अन्य स्थितियाँ समान हों तो, विद्युत वाहक बल बढ़ता है। फ्लक्स को B, A या θ बदलकर बदला जा सकता है; हर प्रेरण प्रयोग में चुंबक चलना जरूरी नहीं। सूत्र में ऋण चिह्न दिशा का नियम बताता है, न कि यह कि मापी गई emf हमेशा ऋणात्मक संख्या होगी। परिपथ की चुनी धनात्मक दिशा तथा क्षेत्रफल सदिश का संबंध दाएँ हाथ के नियम से सुसंगत रखना चाहिए। धारा का परिमाण निकालने के लिए परिपथ का कुल प्रतिरोध भी चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use total resistance only after calculating emf; ε and I have different units.",
+          "hi": "पहले emf निकालें, फिर बंद परिपथ में कुल प्रतिरोध से धारा निकालें। ε का मात्रक V और I का A है। प्रति फेरा फ्लक्स तथा कुल फ्लक्स संबद्धता को अलग पहचानें ताकि N दो बार न गिना जाए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If flux changes linearly, how does the induced emf vary?",
+          "hi": "यदि फ्लक्स रैखिक ढंग से बदले तो emf कैसी होगी?"
+        },
+        "answer": {
+          "en": "It is constant during that interval.",
+          "hi": "उस अंतराल में स्थिर होगी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Lenz law and conservation of energy",
+        "hi": "लेंज नियम और ऊर्जा संरक्षण"
+      },
+      "paragraphs": [
+        {
+          "en": "Lenz law opposes the change that produces induction, not always the original field. A decreasing positive flux can induce a field in the original positive direction. External work against magnetic opposition supplies electrical energy. Determine the flux change first, the induced field second and the current direction last.",
+          "hi": "लेंज का नियम (Lenz Law) प्रेरित धारा की दिशा बताता है। धारा ऐसा चुंबकीय प्रभाव पैदा करती है जो उसे उत्पन्न करने वाले फ्लक्स परिवर्तन का विरोध करता है। इसका अर्थ मूल चुंबकीय क्षेत्र का हर परिस्थिति में विरोध करना नहीं है। कुंडली से धनात्मक दिशा में बढ़ते फ्लक्स का विरोध करने वाला प्रेरित क्षेत्र विपरीत दिशा में होगा; उसी धनात्मक फ्लक्स के घटने पर प्रेरित क्षेत्र उसे बनाए रखने की दिशा में होगा। इसलिए पास आते और दूर जाते चुंबक पर धारा की दिशाएँ अलग हैं। विरोध के विरुद्ध चुंबक को चलाने में बाहरी कार्य करना पड़ता है। वह कार्य विद्युत ऊर्जा और प्रतिरोधी परिपथ में ऊष्मा में बदल सकता है। यदि प्रेरित प्रभाव परिवर्तन को बढ़ाता, तो बिना बाहरी ऊर्जा के बढ़ती गति और ऊर्जा मिलती, जो ऊर्जा संरक्षण का उल्लंघन होता। दिशा निकालते समय पहले फ्लक्स बढ़ना या घटना बताइए, फिर प्रेरित क्षेत्र और अंत में दाएँ हाथ से धारा की दिशा तय कीजिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Clockwise and anticlockwise require a stated viewing side.",
+          "hi": "दक्षिणावर्त और वामावर्त कहने से पहले देखने की ओर बताना आवश्यक है। कुंडली को दूसरी तरफ से देखने पर नाम उलट जाएगा, जबकि वास्तविक धारा और चुंबकीय प्रभाव वही रहते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does induced field always oppose the applied field?",
+          "hi": "क्या प्रेरित क्षेत्र हमेशा लगाए क्षेत्र के विपरीत होता है?"
+        },
+        "answer": {
+          "en": "No; it opposes the change of linked flux.",
+          "hi": "नहीं; वह संबद्ध फ्लक्स के परिवर्तन का विरोध करता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Motional emf and the sliding rod",
+        "hi": "गतिक विद्युत वाहक बल और सरकती छड़"
+      },
+      "paragraphs": [
+        {
+          "en": "For a rod, velocity and magnetic field mutually perpendicular to its length, motional emf has magnitude Bℓv. In the simple closed resistive rail circuit, I=Bℓv/R and external mechanical power equals I²R. An isolated moving rod can develop charge separation without maintaining the same closed-circuit current.",
+          "hi": "एक सीधी चालक छड़ चुंबकीय क्षेत्र में गति करती है तो उसके मुक्त आवेशों पर q(v×B) बल लगता है। आवेश अलग होकर सिरों पर विभवांतर बना सकते हैं। जब लंबाई ℓ, वेग v और B एक-दूसरे के लम्बवत हों, प्रेरित emf का परिमाण Bℓv है। सामान्य स्थिति में केवल उपयुक्त लम्बवत घटक योगदान देता है। पटरियों पर सरकती छड़ और प्रतिरोध R से बंद परिपथ बने तो I=Bℓv/R होगा, यदि अन्य विद्युत वाहक बल और स्वप्रेरण प्रभाव उपेक्षित हैं। छड़ पर चुंबकीय बल गति का विरोध करता है। समान चाल रखने के लिए बाहरी बल चाहिए; उसकी शक्ति Fv=εI=I²R होती है। इससे यांत्रिक कार्य से ऊष्मा तक ऊर्जा का हिसाब मिलता है। खुली छड़ में आवेश पृथक्करण के बाद संतुलन विद्युत क्षेत्र बन सकता है और स्थायी बड़ी धारा जरूरी नहीं। इसलिए केवल छड़ के सिरों के विभवांतर को प्रतिरोधी धारा के साथ न मिलाएँ।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Check orientation before applying Bℓv; motion parallel to B gives no magnetic separation by v×B.",
+          "hi": "Bℓv लगाने से पहले दिशाएँ जाँचें; B के समानांतर गति पर v×B से चुंबकीय पृथक्करण नहीं। प्रतिरोध स्थिर हो और चाल दुगुनी हो तो धारा दुगुनी लेकिन जूल ऊष्मा की शक्ति 4 गुनी होगी।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What changes if the rod speed doubles?",
+          "hi": "छड़ की चाल दुगुनी हो तो क्या बदलेगा?"
+        },
+        "answer": {
+          "en": "Emf doubles when B and effective length remain fixed.",
+          "hi": "B और प्रभावी लंबाई स्थिर हों तो emf दुगुनी होगी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Self-induction and inductance",
+        "hi": "स्वप्रेरण और प्रेरकत्व"
+      },
+      "paragraphs": [
+        {
+          "en": "Self-induced emf is −L dI/dt for a fixed linear inductor. L is measured in henry. An ideal inductor opposes changes of current; it does not necessarily oppose a constant current. A long air-core solenoid has approximately L=μ0N²A/ℓ. Geometry and material assumptions must accompany this formula.",
+          "hi": "कुंडली में धारा बदलने से उसका अपना चुंबकीय फ्लक्स भी बदलता है। इससे उत्पन्न emf स्वप्रेरण (Self Induction) है। रैखिक माध्यम और स्थिर ज्यामिति में फ्लक्स संबद्धता NΦ=LI तथा εL=−L dI/dt होती है। प्रेरकत्व L का SI मात्रक हेनरी है। 1 H की कुंडली में धारा की परिवर्तन दर 1 A/s हो तो प्रेरित emf का परिमाण 1 V होता है। यह धारा के मान का नहीं, परिवर्तन दर का विरोध है। स्थिर DC धारा में आदर्श प्रेरक की प्रेरित emf शून्य हो सकती है, फिर भी उसके चुंबकीय क्षेत्र में ऊर्जा रहती है। लंबी वायु-कोर परिनालिका के लिए L≈μ0N²A/ℓ है; यह सिरे के प्रभाव उपेक्षित करने का सूत्र है। लौह-कोर की पारगम्यता बदल सकती है, इसलिए हर परिस्थिति में L स्थिर मानना उचित नहीं। प्रेरक बंद या चालू करते समय क्षणिक बड़ी emf समझने में स्वप्रेरण उपयोगी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Actual coils also have wire resistance, distinct from their inductance.",
+          "hi": "वास्तविक कुंडली में तार का प्रतिरोध भी होता है, जो प्रेरकत्व से अलग गुण है। स्वप्रेरण की emf का कारण L है; स्थिर धारा पर होने वाली वास्तविक जूल ऊष्मा तार के प्रतिरोध से आती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "An ideal inductor carries constant current. What is its induced emf?",
+          "hi": "आदर्श प्रेरक में धारा स्थिर है। प्रेरित emf कितनी है?"
+        },
+        "answer": {
+          "en": "Zero, because dI/dt=0.",
+          "hi": "शून्य, क्योंकि dI/dt=0।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Mutual induction",
+        "hi": "अन्योन्य प्रेरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Mutual inductance links one coil current to another coil flux linkage. For a fixed linear system, ε2=−M dI1/dt. M depends on geometry, coupling and medium. Steady primary DC does not continuously induce a secondary emf. Reciprocity gives equal mutual inductances under the usual linear stationary assumptions.",
+          "hi": "एक कुंडली की बदलती धारा दूसरी कुंडली के पृष्ठ से जुड़ा फ्लक्स बदल सकती है। यह अन्योन्य प्रेरण (Mutual Induction) है। यदि दूसरी कुंडली की फ्लक्स संबद्धता पहली धारा के अनुपात में हो, तो N2Φ21=MI1 तथा ε2=−M dI1/dt लिखा जाता है। M अन्योन्य प्रेरकत्व है और उसका मात्रक भी H है। इसका मान फेरों, आकार, दूरी, सापेक्ष अभिविन्यास और कोर पर निर्भर करता है। केवल दो कुंडलियों का पास होना धारा पैदा नहीं करता; पहली धारा में बदलाव जरूरी है। स्थिर DC स्रोत से जुड़ी प्राथमिक कुंडली स्विच के क्षण द्वितीयक में क्षणिक संकेत दे सकती है, पर लगातार स्थिर emf नहीं देती। रैखिक, स्थिर और पारस्परिक प्रणाली में M12=M21 होता है, हालांकि स्वप्रेरकत्व L1 और L2 अलग हो सकते हैं। आदर्श ट्रांसफॉर्मर इसी बदलते साझा फ्लक्स के विचार पर आधारित है; वास्तविक यंत्र में पूरा फ्लक्स दोनों कुंडलियों से नहीं जुड़ता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not substitute the secondary current into dI1/dt unless the specified cause is actually that current.",
+          "hi": "dI1/dt में उसी प्राथमिक धारा का परिवर्तन रखें जो द्वितीयक फ्लक्स बदल रही है। दोनों कुंडलियों के उपस्क्रिप्ट लिखने से कारण, प्रेरित प्रभाव और फेरों की संख्या का भ्रम कम होता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is secondary emf absent for steady primary current?",
+          "hi": "स्थिर प्राथमिक धारा पर द्वितीयक emf क्यों नहीं है?"
+        },
+        "answer": {
+          "en": "The linked flux is constant.",
+          "hi": "संबद्ध फ्लक्स स्थिर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Magnetic energy and generator connection",
+        "hi": "चुंबकीय ऊर्जा और जनित्र का संबंध"
+      },
+      "paragraphs": [
+        {
+          "en": "Building current stores U=LI²/2 in an ideal linear inductor. A uniformly rotating coil has sinusoidally changing flux and emf amplitude NBAω. Mechanical work drives the generator; induction does not create energy from nothing. Flux and emf differ in phase because emf depends on the flux derivative.",
+          "hi": "प्रेरक में धारा स्थापित करते समय स्रोत को स्वप्रेरण के विरुद्ध कार्य करना पड़ता है। आदर्श रैखिक प्रेरक में यह कार्य चुंबकीय क्षेत्र ऊर्जा U=LI²/2 के रूप में संचित होता है। ऊर्जा धारा के वर्ग पर निर्भर है; धारा की दिशा उलटने मात्र से ऊर्जा ऋणात्मक नहीं होती। AC जनित्र (Generator) में कुंडली को समान चुंबकीय क्षेत्र में घुमाने से फ्लक्स Φ=BA cosωt बदलता है। N फेरों की आदर्श कुंडली में ε=NBAω sinωt और शिखर emf ε0=NBAω मिलता है, जब कोण का शून्य इसी तरह चुना हो। ऊर्जा का स्रोत कुंडली को घुमाने वाला यांत्रिक कार्य है। प्रत्येक चक्र में emf दिशा बदलती है; यह संकेत मोटर और जनित्र में अंतर स्पष्ट करता है। प्रेरण का सूत्र लागू करते समय चित्रों में दिखा चुंबकीय क्षेत्र और क्षेत्रफल वास्तविक पैमाने पर होना जरूरी नहीं, पर दिशा और समय निर्भरता सुसंगत होनी चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "At zero flux the magnitude of sinusoidal generator emf can be maximal; zero flux is not zero flux-change rate.",
+          "hi": "शून्य फ्लक्स पर साइनाकार जनित्र की emf का परिमाण अधिकतम हो सकता है। फ्लक्स का मान और उसकी परिवर्तन दर अलग राशियाँ हैं; चरम तथा शून्य बिंदुओं को आलेख पर अलग-अलग चिह्नित करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "When rotating-coil flux is at an extremum, what is emf?",
+          "hi": "घूर्णन कुंडली का फ्लक्स चरम पर हो तो emf कितनी है?"
+        },
+        "answer": {
+          "en": "Zero instantaneously, because its time derivative is zero.",
+          "hi": "उस क्षण शून्य, क्योंकि फ्लक्स की समय परिवर्तन दर शून्य है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "ΦB = BA cosθ",
+      "meaning": {
+        "en": "Flux for uniform field and a plane area; θ is from the normal.",
+        "hi": "समान क्षेत्र और समतल क्षेत्रफल का फ्लक्स; θ अभिलंब से है।"
+      },
+      "units": {
+        "en": "Wb = T m²",
+        "hi": "Wb = T m²"
+      }
+    },
+    {
+      "expression": "ε = −N dΦB/dt",
+      "meaning": {
+        "en": "Faraday law for equal flux per turn.",
+        "hi": "प्रति फेरा समान फ्लक्स के लिए फैराडे नियम।"
+      },
+      "units": {
+        "en": "V; t in s",
+        "hi": "V; t को s में लें"
+      }
+    },
+    {
+      "expression": "|ε| = Bℓv",
+      "meaning": {
+        "en": "Motional emf for mutually perpendicular rod, velocity and field.",
+        "hi": "परस्पर लम्बवत छड़, वेग और क्षेत्र के लिए गतिक emf।"
+      },
+      "units": {
+        "en": "B:T, ℓ:m, v:m/s",
+        "hi": "B:T, ℓ:m, v:m/s"
+      }
+    },
+    {
+      "expression": "εL = −L dI/dt; U = LI²/2",
+      "meaning": {
+        "en": "Self-induced emf and energy of a linear inductor.",
+        "hi": "रैखिक प्रेरक की स्वप्रेरित emf और ऊर्जा।"
+      },
+      "units": {
+        "en": "L:H, I:A, U:J",
+        "hi": "L:H, I:A, U:J"
+      }
+    },
+    {
+      "expression": "ε2 = −M dI1/dt",
+      "meaning": {
+        "en": "Mutual induction in a fixed linear system.",
+        "hi": "स्थिर रैखिक प्रणाली में अन्योन्य प्रेरण।"
+      },
+      "units": {
+        "en": "M:H",
+        "hi": "M:H"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find flux through 0.02 m² normal to a 0.5 T field.",
+        "hi": "0.5 T क्षेत्र के लम्बवत 0.02 m² पृष्ठ से फ्लक्स निकालें।"
+      },
+      "given": {
+        "en": "B=0.5 T, A=0.02 m², θ=0°.",
+        "hi": "B=0.5 T, A=0.02 m², θ=0°।"
+      },
+      "find": {
+        "en": "Flux.",
+        "hi": "फ्लक्स।"
+      },
+      "formula": {
+        "en": "Φ=BA cosθ",
+        "hi": "Φ=BA cosθ"
+      },
+      "steps": [
+        {
+          "en": "Use cos0°=1.",
+          "hi": "cos0°=1 लें।"
+        },
+        {
+          "en": "Multiply 0.5×0.02.",
+          "hi": "0.5×0.02 करें।"
+        }
+      ],
+      "answer": {
+        "en": "0.01 Wb.",
+        "hi": "0.01 Wb।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A 100-turn coil loses 0.003 Wb per turn in 0.2 s. Find average emf magnitude.",
+        "hi": "100 फेरों की कुंडली में प्रति फेरा फ्लक्स 0.2 s में 0.003 Wb घटता है। औसत emf परिमाण निकालें।"
+      },
+      "given": {
+        "en": "N=100, |ΔΦ|=0.003 Wb, Δt=0.2 s.",
+        "hi": "N=100, |ΔΦ|=0.003 Wb, Δt=0.2 s।"
+      },
+      "find": {
+        "en": "Average emf magnitude.",
+        "hi": "औसत emf परिमाण।"
+      },
+      "formula": {
+        "en": "|εavg|=N|ΔΦ|/Δt",
+        "hi": "|εavg|=N|ΔΦ|/Δt"
+      },
+      "steps": [
+        {
+          "en": "100×0.003=0.3 Wb turn.",
+          "hi": "100×0.003=0.3 Wb turn।"
+        },
+        {
+          "en": "Divide by 0.2 s.",
+          "hi": "0.2 s से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "1.5 V. Direction needs a chosen orientation.",
+        "hi": "1.5 V। दिशा के लिए चुना अभिविन्यास चाहिए।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A 0.4 m rod moves at 3 m/s perpendicular to 0.5 T and closes a 2 Ω rail circuit. Find emf, current and power.",
+        "hi": "0.4 m छड़ 0.5 T के लम्बवत 3 m/s से चलकर 2 Ω रेल परिपथ बंद करती है। emf, धारा, शक्ति निकालें।"
+      },
+      "given": {
+        "en": "ℓ=0.4 m, B=0.5 T, v=3 m/s, R=2 Ω.",
+        "hi": "ℓ=0.4 m, B=0.5 T, v=3 m/s, R=2 Ω।"
+      },
+      "find": {
+        "en": "ε,I,P.",
+        "hi": "ε,I,P।"
+      },
+      "formula": {
+        "en": "ε=Bℓv; I=ε/R; P=εI",
+        "hi": "ε=Bℓv; I=ε/R; P=εI"
+      },
+      "steps": [
+        {
+          "en": "ε=0.5×0.4×3=0.6 V.",
+          "hi": "ε=0.5×0.4×3=0.6 V।"
+        },
+        {
+          "en": "I=0.6/2=0.3 A.",
+          "hi": "I=0.6/2=0.3 A।"
+        },
+        {
+          "en": "P=0.6×0.3=0.18 W.",
+          "hi": "P=0.6×0.3=0.18 W।"
+        }
+      ],
+      "answer": {
+        "en": "0.6 V, 0.3 A, 0.18 W.",
+        "hi": "0.6 V, 0.3 A, 0.18 W।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A 0.5 H inductor carries 2 A. Find stored energy.",
+        "hi": "0.5 H प्रेरक में 2 A धारा है। संचित ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "L=0.5 H, I=2 A.",
+        "hi": "L=0.5 H, I=2 A।"
+      },
+      "find": {
+        "en": "Magnetic energy.",
+        "hi": "चुंबकीय ऊर्जा।"
+      },
+      "formula": {
+        "en": "U=LI²/2",
+        "hi": "U=LI²/2"
+      },
+      "steps": [
+        {
+          "en": "Square current: 2²=4.",
+          "hi": "धारा का वर्ग: 2²=4।"
+        },
+        {
+          "en": "U=0.5×4/2.",
+          "hi": "U=0.5×4/2।"
+        }
+      ],
+      "answer": {
+        "en": "1 J.",
+        "hi": "1 J।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A 50-turn loop of area 0.02 m² has B=0.1t² T normal to it. Find emf at t=2 s and its average magnitude over 0–2 s.",
+        "hi": "50 फेरों और 0.02 m² क्षेत्रफल की कुंडली पर अभिलंब B=0.1t² T है। t=2 s पर emf और 0–2 s में औसत परिमाण निकालें।"
+      },
+      "given": {
+        "en": "N=50,A=0.02 m², B(t)=0.1t² T.",
+        "hi": "N=50,A=0.02 m², B(t)=0.1t² T।"
+      },
+      "find": {
+        "en": "Instantaneous and average emf.",
+        "hi": "तात्क्षणिक और औसत emf।"
+      },
+      "formula": {
+        "en": "ε=−NA dB/dt; εavg=−NA ΔB/Δt",
+        "hi": "ε=−NA dB/dt; εavg=−NA ΔB/Δt"
+      },
+      "steps": [
+        {
+          "en": "dB/dt=0.2t; at 2 s it is 0.4 T/s.",
+          "hi": "dB/dt=0.2t; 2 s पर 0.4 T/s।"
+        },
+        {
+          "en": "ε=−50×0.02×0.4=−0.4 V.",
+          "hi": "ε=−50×0.02×0.4=−0.4 V।"
+        },
+        {
+          "en": "B changes from 0 to 0.4 T in 2 s, giving εavg=−0.2 V.",
+          "hi": "B, 2 s में 0 से 0.4 T होता है; εavg=−0.2 V।"
+        }
+      ],
+      "answer": {
+        "en": "Instantaneous −0.4 V; average magnitude 0.2 V for the stated positive normal.",
+        "hi": "चुने धनात्मक अभिलंब के लिए तात्क्षणिक −0.4 V; औसत परिमाण 0.2 V।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which change can induce emf in a stationary loop?",
+        "hi": "स्थिर कुंडली में किस बदलाव से emf बन सकती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Changing magnetic field",
+            "hi": "चुंबकीय क्षेत्र का बदलना"
+          },
+          "reason": {
+            "en": "Linked flux changes.",
+            "hi": "संबद्ध फ्लक्स बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Constant field and fixed area",
+            "hi": "स्थिर क्षेत्र और स्थिर क्षेत्रफल"
+          },
+          "reason": {
+            "en": "Flux remains fixed.",
+            "hi": "फ्लक्स स्थिर रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Holding the magnet still",
+            "hi": "चुंबक स्थिर रखना"
+          },
+          "reason": {
+            "en": "With all else fixed there is no flux change.",
+            "hi": "अन्य सब स्थिर हों तो फ्लक्स नहीं बदलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only lowering resistance",
+            "hi": "केवल प्रतिरोध घटाना"
+          },
+          "reason": {
+            "en": "Resistance alone does not change flux.",
+            "hi": "केवल प्रतिरोध फ्लक्स नहीं बदलता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In Φ=BA cosθ, θ is measured from what?",
+        "hi": "Φ=BA cosθ में θ किससे मापा जाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Area normal",
+            "hi": "क्षेत्रफल अभिलंब"
+          },
+          "reason": {
+            "en": "The dot product uses the area vector.",
+            "hi": "अदिश गुणनफल क्षेत्रफल सदिश से है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Plane of the loop",
+            "hi": "कुंडली का तल"
+          },
+          "reason": {
+            "en": "That angle is complementary.",
+            "hi": "वह पूरक कोण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Current direction",
+            "hi": "धारा की दिशा"
+          },
+          "reason": {
+            "en": "This is not the flux angle.",
+            "hi": "यह फ्लक्स कोण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Rod length in all cases",
+            "hi": "हर स्थिति में छड़ की लंबाई"
+          },
+          "reason": {
+            "en": "Flux belongs to a surface, not just a rod.",
+            "hi": "फ्लक्स पृष्ठ से जुड़ा है, केवल छड़ से नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The unit of magnetic flux is",
+        "hi": "चुंबकीय फ्लक्स का मात्रक है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "weber",
+            "hi": "वेबर"
+          },
+          "reason": {
+            "en": "1 Wb=1 T m².",
+            "hi": "1 Wb=1 T m²।"
+          }
+        },
+        {
+          "text": {
+            "en": "tesla",
+            "hi": "टेस्ला"
+          },
+          "reason": {
+            "en": "Tesla measures B.",
+            "hi": "टेस्ला B का मात्रक।"
+          }
+        },
+        {
+          "text": {
+            "en": "henry",
+            "hi": "हेनरी"
+          },
+          "reason": {
+            "en": "Henry measures inductance.",
+            "hi": "हेनरी प्रेरकत्व का मात्रक।"
+          }
+        },
+        {
+          "text": {
+            "en": "ampere",
+            "hi": "ऐम्पियर"
+          },
+          "reason": {
+            "en": "Ampere measures current.",
+            "hi": "ऐम्पियर धारा का मात्रक।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Lenz law opposes",
+        "hi": "लेंज नियम में विरोध होता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The change of linked flux",
+            "hi": "संबद्ध फ्लक्स के परिवर्तन का"
+          },
+          "reason": {
+            "en": "This is the cause of induction.",
+            "hi": "यही प्रेरण का कारण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The applied field in every case",
+            "hi": "हर बार लगाए क्षेत्र का"
+          },
+          "reason": {
+            "en": "For decreasing flux the induced field may support it.",
+            "hi": "घटते फ्लक्स पर प्रेरित क्षेत्र उसी दिशा में हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All motion even without a field",
+            "hi": "बिना क्षेत्र हर गति का"
+          },
+          "reason": {
+            "en": "Induction requires appropriate flux change.",
+            "hi": "प्रेरण हेतु उचित फ्लक्स परिवर्तन चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Energy conservation",
+            "hi": "ऊर्जा संरक्षण का"
+          },
+          "reason": {
+            "en": "Lenz law is consistent with energy conservation.",
+            "hi": "लेंज नियम ऊर्जा संरक्षण के अनुरूप है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A 200-turn coil has flux change 0.001 Wb per turn in 0.1 s. Average emf magnitude is",
+        "hi": "200 फेरों में प्रति फेरा फ्लक्स 0.1 s में 0.001 Wb बदलता है। औसत emf परिमाण"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2 V",
+            "hi": "2 V"
+          },
+          "reason": {
+            "en": "200×0.001/0.1=2.",
+            "hi": "200×0.001/0.1=2।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.002 V",
+            "hi": "0.002 V"
+          },
+          "reason": {
+            "en": "This loses the turns factor.",
+            "hi": "फेरों का गुणक खो गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "20 V",
+            "hi": "20 V"
+          },
+          "reason": {
+            "en": "An extra factor 10 was introduced.",
+            "hi": "अतिरिक्त 10 का गुणक आया।"
+          }
+        },
+        {
+          "text": {
+            "en": "200 V",
+            "hi": "200 V"
+          },
+          "reason": {
+            "en": "Flux change was not substituted correctly.",
+            "hi": "फ्लक्स परिवर्तन ठीक नहीं रखा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A rod moving parallel to B has magnetic motional emf from v×B equal to",
+        "hi": "B के समानांतर चलती छड़ में v×B से गतिक emf"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The cross product vanishes.",
+            "hi": "सदिश गुणनफल शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Bℓv",
+            "hi": "Bℓv"
+          },
+          "reason": {
+            "en": "This requires suitable perpendicular geometry.",
+            "hi": "इसके लिए उपयुक्त लम्बवत ज्यामिति चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "B/ℓv",
+            "hi": "B/ℓv"
+          },
+          "reason": {
+            "en": "This is not the motional-emf relation.",
+            "hi": "यह गतिक emf संबंध नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "No divergence follows from parallel motion.",
+            "hi": "समानांतर गति से अनंतता नहीं आती।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The self-induced emf of an ideal inductor carrying constant current is",
+        "hi": "स्थिर धारा वाले आदर्श प्रेरक की स्वप्रेरित emf"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "dI/dt=0.",
+            "hi": "dI/dt=0।"
+          }
+        },
+        {
+          "text": {
+            "en": "LI",
+            "hi": "LI"
+          },
+          "reason": {
+            "en": "LI is flux linkage, not emf.",
+            "hi": "LI फ्लक्स संबद्धता है, emf नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "LI²/2",
+            "hi": "LI²/2"
+          },
+          "reason": {
+            "en": "This is energy.",
+            "hi": "यह ऊर्जा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "L/I",
+            "hi": "L/I"
+          },
+          "reason": {
+            "en": "This is not the emf law.",
+            "hi": "यह emf नियम नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The inductance unit is",
+        "hi": "प्रेरकत्व का मात्रक"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "henry",
+            "hi": "हेनरी"
+          },
+          "reason": {
+            "en": "H=V s/A.",
+            "hi": "H=V s/A।"
+          }
+        },
+        {
+          "text": {
+            "en": "ohm",
+            "hi": "ओम"
+          },
+          "reason": {
+            "en": "Ohm measures resistance.",
+            "hi": "ओम प्रतिरोध का मात्रक।"
+          }
+        },
+        {
+          "text": {
+            "en": "coulomb",
+            "hi": "कूलॉम"
+          },
+          "reason": {
+            "en": "Coulomb measures charge.",
+            "hi": "कूलॉम आवेश का मात्रक।"
+          }
+        },
+        {
+          "text": {
+            "en": "joule",
+            "hi": "जूल"
+          },
+          "reason": {
+            "en": "Joule measures energy.",
+            "hi": "जूल ऊर्जा का मात्रक।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Doubling current in a linear inductor changes its stored energy by",
+        "hi": "रैखिक प्रेरक में धारा दुगुनी करने पर ऊर्जा"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A factor of 4",
+            "hi": "4 गुनी"
+          },
+          "reason": {
+            "en": "U is proportional to I².",
+            "hi": "U,I² के अनुपाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A factor of 2",
+            "hi": "2 गुनी"
+          },
+          "reason": {
+            "en": "That would be linear dependence.",
+            "hi": "वह रैखिक निर्भरता होती।"
+          }
+        },
+        {
+          "text": {
+            "en": "No change",
+            "hi": "नहीं बदलती"
+          },
+          "reason": {
+            "en": "Energy depends on current magnitude.",
+            "hi": "ऊर्जा धारा परिमाण पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A factor of 1/4",
+            "hi": "1/4 गुनी"
+          },
+          "reason": {
+            "en": "That corresponds to halving current.",
+            "hi": "यह धारा आधी करने पर होता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At maximum flux in a uniformly rotating generator coil, emf is",
+        "hi": "समान गति से घूमती जनित्र कुंडली में अधिकतम फ्लक्स पर emf"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Instantaneously zero",
+            "hi": "उस क्षण शून्य"
+          },
+          "reason": {
+            "en": "The sinusoidal flux derivative is zero at an extremum.",
+            "hi": "चरम पर साइनाकार फ्लक्स की अवकलज शून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always maximum",
+            "hi": "हमेशा अधिकतम"
+          },
+          "reason": {
+            "en": "Maximum emf occurs at zero flux in this model.",
+            "hi": "इस मॉडल में शून्य फ्लक्स पर अधिकतम emf।"
+          }
+        },
+        {
+          "text": {
+            "en": "Equal to BA",
+            "hi": "BA के बराबर"
+          },
+          "reason": {
+            "en": "BA is flux, not emf.",
+            "hi": "BA फ्लक्स है, emf नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Independent of rotation",
+            "hi": "घूर्णन से स्वतंत्र"
+          },
+          "reason": {
+            "en": "The emf amplitude depends on angular speed.",
+            "hi": "emf आयाम कोणीय चाल पर निर्भर है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish flux from flux linkage.",
+        "hi": "फ्लक्स और फ्लक्स संबद्धता में अंतर करें।"
+      },
+      "answer": {
+        "en": "Flux Φ is through one chosen surface; for N equally linked turns, flux linkage is NΦ.",
+        "hi": "Φ चुने 1 पृष्ठ से फ्लक्स है; N समान संबद्ध फेरों की फ्लक्स संबद्धता NΦ है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State Faraday law with its sign meaning.",
+        "hi": "फैराडे नियम और चिह्न का अर्थ लिखें।"
+      },
+      "answer": {
+        "en": "ε=−d(NΦ)/dt; the induced circulation opposes the change in linked flux for consistent orientations.",
+        "hi": "ε=−d(NΦ)/dt; सुसंगत दिशाओं के लिए प्रेरित परिसंचरण संबद्ध फ्लक्स परिवर्तन का विरोध करता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does a moving magnet require external work near a closed coil?",
+        "hi": "बंद कुंडली के पास चुंबक चलाने में बाहरी कार्य क्यों चाहिए?"
+      },
+      "answer": {
+        "en": "The induced current produces a force opposing the imposed change; external work supplies electrical energy and heat.",
+        "hi": "प्रेरित धारा आरोपित परिवर्तन का विरोधी बल बनाती है; बाहरी कार्य विद्युत ऊर्जा और ऊष्मा देता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Derive the power balance for a sliding rod in a resistive circuit.",
+        "hi": "प्रतिरोधी परिपथ में सरकती छड़ का शक्ति संतुलन लिखें।"
+      },
+      "answer": {
+        "en": "I=Bℓv/R, F=BIℓ, so Fv=εI=I²R under the perpendicular ideal geometry.",
+        "hi": "लम्बवत आदर्श ज्यामिति में I=Bℓv/R,F=BIℓ, इसलिए Fv=εI=I²R।"
+      }
+    },
+    {
+      "question": {
+        "en": "How are self and mutual induction different?",
+        "hi": "स्वप्रेरण और अन्योन्य प्रेरण कैसे भिन्न हैं?"
+      },
+      "answer": {
+        "en": "Self induction uses changing current in the same coil; mutual induction uses changing current in another coupled circuit.",
+        "hi": "स्वप्रेरण में उसी कुंडली की बदलती धारा; अन्योन्य में दूसरी संबद्ध कुंडली की बदलती धारा कारण है।"
+      }
+    },
+    {
+      "question": {
+        "en": "A 2 H inductor current changes at 3 A/s. Find emf magnitude.",
+        "hi": "2 H प्रेरक में धारा 3 A/s से बदलती है। emf परिमाण निकालें।"
+      },
+      "answer": {
+        "en": "|ε|=L|dI/dt|=2×3=6 V.",
+        "hi": "|ε|=L|dI/dt|=2×3=6 V।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Changing linked flux induces emf.",
+      "hi": "बदलता संबद्ध फ्लक्स emf उत्पन्न करता है।"
+    },
+    {
+      "en": "Flux uses the angle from the area normal.",
+      "hi": "फ्लक्स में कोण क्षेत्रफल अभिलंब से लें।"
+    },
+    {
+      "en": "Lenz law opposes the change.",
+      "hi": "लेंज नियम परिवर्तन का विरोध करता है।"
+    },
+    {
+      "en": "Inductors store magnetic energy.",
+      "hi": "प्रेरक चुंबकीय ऊर्जा संचित करते हैं।"
+    },
+    {
+      "en": "External work powers generator output.",
+      "hi": "बाहरी कार्य जनित्र की ऊर्जा देता है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse flux with its time derivative, oppose the field instead of its change, or use Bℓv without checking geometry.",
+    "hi": "फ्लक्स को उसकी समय परिवर्तन दर न समझें; मूल क्षेत्र के बजाय परिवर्तन का विरोध देखें और दिशाएँ जाँचे बिना Bℓv न लगाएँ।"
+  },
+  "goal": {
+    "en": "Relate changing flux, induced emf and energy conservation.",
+    "hi": "बदलते फ्लक्स, प्रेरित emf और ऊर्जा संरक्षण का संबंध समझें।"
+  },
+  "conceptMap": "फ्लक्स → फैराडे → लेंज → गतिक emf → प्रेरकत्व → ऊर्जा",
+  "conceptMapEn": "Flux → Faraday → Lenz → motional emf → inductance → energy",
+  "editionBasis": {
+    "en": "Original study explanations for current NCERT Physics XII and UP Board 2026–27. Use the prescribed text and practical work too. UP Board-specific topics are identified where scope differs.",
+    "hi": "वर्तमान NCERT भौतिकी कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और प्रयोग भी साथ पढ़ें। जहाँ दायरा अलग है, यूपी बोर्ड के अतिरिक्त विषय पहचाने गए हैं।"
+  },
+  "sources": [
+    {
+      "title": "UPMSP Physics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Physics XII Chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leph106.pdf"
+    }
+  ]
+}

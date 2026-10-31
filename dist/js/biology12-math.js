@@ -1,0 +1,10 @@
+// Quantitative classroom models. Frequencies/probabilities are ideal expectations.
+export const monoCross=i=>{const parents=[['AA','aa'],['Aa','Aa'],['Aa','aa']][i],gametes=parents.map(p=>[p[0],p[1]]),offspring=gametes[0].flatMap(a=>gametes[1].map(b=>[a,b].sort().join('')));return{parents,gametes,offspring,dominant:offspring.filter(g=>g.includes('A')).length/4}};
+const blood=g=>g.includes('A')&&g.includes('B')?'AB':g.includes('A')?'A':g.includes('B')?'B':'O';
+export function aboCross(i){const parents=[[['A','i'],['B','i']],[['A','B'],['i','i']],[['A','i'],['i','i']]][i],offspring=parents[0].flatMap(a=>parents[1].map(b=>[a,b].sort().join(''))),counts={A:0,B:0,AB:0,O:0};offspring.forEach(g=>counts[blood(g)]++);return{parents,offspring,counts,phenotypes:offspring.map(blood)}}
+export const dihybrid=()=>{const gametes=['AB','Ab','aB','ab'],offspring=gametes.flatMap(a=>gametes.map(b=>[a[0],b[0]].sort().join('')+[a[1],b[1]].sort().join(''))),counts=[0,0,0,0];offspring.forEach(g=>counts[(g.includes('A')?0:2)+(g.includes('B')?0:1)]++);return{gametes,offspring,counts}};
+export const complement=sequence=>[...sequence].map(c=>({A:'T',T:'A',G:'C',C:'G'}[c]||c)).join('');
+export const hardy=p=>({p,q:1-p,AA:p*p,Aa:2*p*(1-p),aa:(1-p)**2});
+export const population=t=>({exponential:10*Math.exp(.3*t),logistic:100/(1+9*Math.exp(-.3*t)),K:100});
+export const quadrat=n=>{const counts=[2,4,1,5,3],total=counts.slice(0,n).reduce((a,b)=>a+b,0);return{counts,total,density:total/n,area:n}};
+export function calculate(mode,v){switch(mode){case'mono':return{...monoCross(v),value:monoCross(v).dominant};case'abo':return{...aboCross(v),value:aboCross(v).counts.O/4};case'dihybrid':return{...dihybrid(),value:v};case'hardy':return{...hardy(v),value:hardy(v).Aa};case'drift':return{counts:[5,7,4,10][v],value:[.5,.7,.4,1][v]};case'pcr':return{value:2**v,cycles:v};case'population':return{...population(v),value:population(v).logistic};case'quadrat':return{...quadrat(v),value:quadrat(v).density};case'energy':return{value:10000/10**v};case'productivity':return{GPP:1000,R:v,value:1000-v};case'speciesarea':return{value:10*v**.3,C:10,Z:.3};default:return{value:v}}}

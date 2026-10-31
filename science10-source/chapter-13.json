@@ -1,0 +1,1509 @@
+{
+  "id": "environment",
+  "title": {
+    "en": "Our Environment",
+    "hi": "हमारा पर्यावरण"
+  },
+  "unit": {
+    "en": "Biology",
+    "hi": "जीव विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "ten-energy-flow",
+      "title": {
+        "en": "Energy flow in a food chain",
+        "hi": "खाद्य शृंखला में ऊर्जा प्रवाह"
+      },
+      "kind": "ten-environment",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Producer energy",
+            "hi": "उत्पादक की ऊर्जा"
+          },
+          "min": 1000,
+          "max": 10000,
+          "step": 500,
+          "initial": 5000,
+          "unit": "J"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 3,
+      "goal": {
+        "en": "Trace approximate energy transfer across four trophic levels.",
+        "hi": "4 पोषी स्तरों में लगभग ऊर्जा स्थानांतरण देखें।"
+      },
+      "observe": {
+        "en": "Move producer energy between 1000 J and 10000 J. Compare each consumer level with the level immediately before it.",
+        "hi": "उत्पादक ऊर्जा 1000 J से 10000 J तक बदलें। हर उपभोक्ता की ऊर्जा उसके पिछले स्तर से तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Organisms and bars are schematic. Every transfer uses a fixed 10% only for this classroom model; real efficiencies vary. Energy is not recycled by decomposers.",
+        "hi": "जीव और पट्टियाँ सांकेतिक हैं। हर स्थानांतरण में निश्चित 10% केवल कक्षागत मॉडल के लिए है; वास्तविक दक्षताएँ बदलती हैं। अपघटक ऊर्जा पुनर्चक्रित नहीं करते।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Only part of food energy becomes biomass available to the next consumer. Energy used in life processes is dispersed, mainly as heat, so available energy decreases upward.",
+          "hi": "भोजन ऊर्जा का कुछ भाग ही अगले उपभोक्ता के लिए शरीर पदार्थ बनता है। जीवन क्रियाओं में प्रयुक्त ऊर्जा मुख्यतः ऊष्मा के रूप में फैलती है, इसलिए ऊपर उपलब्ध ऊर्जा घटती है।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "For 5000 J in producers, what is the model estimate at the secondary-consumer level?",
+          "hi": "उत्पादकों के 5000 J से द्वितीयक उपभोक्ता की मॉडल ऊर्जा कितनी है?"
+        },
+        "options": [
+          {
+            "en": "500 J",
+            "hi": "500 J"
+          },
+          {
+            "en": "50 J",
+            "hi": "50 J"
+          },
+          {
+            "en": "5 J",
+            "hi": "5 J"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Two transfers give 5000 × 0.1 × 0.1 = 50 J.",
+          "hi": "2 स्थानांतरण से 5000 × 0.1 × 0.1 = 50 J।"
+        }
+      },
+      "realLife": {
+        "en": "A grassland chain connects grass, grasshoppers, frogs and snakes.",
+        "hi": "घास के मैदान में घास, टिड्डे, मेंढक और साँप भोजन संबंध से जुड़ सकते हैं।"
+      },
+      "legend": [
+        {
+          "color": "#72bc83",
+          "label": {
+            "en": "Producers",
+            "hi": "उत्पादक"
+          }
+        },
+        {
+          "color": "#f6c45c",
+          "label": {
+            "en": "Available energy",
+            "hi": "उपलब्ध ऊर्जा"
+          }
+        },
+        {
+          "color": "#75bdde",
+          "label": {
+            "en": "Consumers",
+            "hi": "उपभोक्ता"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-energy-flow-1",
+          "label": {
+            "en": "Set producer energy to 1000 J.",
+            "hi": "उत्पादक ऊर्जा 1000 J करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 1000
+          }
+        },
+        {
+          "id": "ten-energy-flow-2",
+          "label": {
+            "en": "Set producer energy to 10000 J.",
+            "hi": "उत्पादक ऊर्जा 10000 J करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 10000
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 5000
+          },
+          "text": {
+            "en": "Compare successive values: each consumer receives about one tenth of the preceding level in this model.",
+            "hi": "लगातार मान देखें: मॉडल में हर उपभोक्ता को पिछले स्तर की लगभग दसवीं ऊर्जा मिलती है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 5000
+          },
+          "text": {
+            "en": "Higher producer energy raises all consumer estimates, but the upward decrease remains.",
+            "hi": "उत्पादक ऊर्जा बढ़ने से सभी उपभोक्ताओं के अनुमान बढ़ते हैं, लेकिन ऊपर की ओर कमी बनी रहती है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-biomagnification",
+      "title": {
+        "en": "Biomagnification",
+        "hi": "जैव आवर्धन"
+      },
+      "kind": "ten-environment",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Trophic level",
+            "hi": "पोषी स्तर"
+          },
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "initial": 1,
+          "unit": "level"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Distinguish increasing pollutant concentration from decreasing available energy.",
+        "hi": "बढ़ती प्रदूषक सांद्रता को घटती उपलब्ध ऊर्जा से अलग समझें।"
+      },
+      "observe": {
+        "en": "Choose levels 1 to 4 and follow the same persistent chemical through the chain. Read the relative pollutant index rather than energy.",
+        "hi": "स्तर 1 से 4 चुनकर उसी स्थायी रसायन का मार्ग देखें। सापेक्ष प्रदूषक सूचकांक पढ़ें, ऊर्जा नहीं।"
+      },
+      "modelNote": {
+        "en": "The concentration index is illustrative and has no real pesticide units. Its multiplier is not a universal magnification factor or measured DDT data. Not every chemical biomagnifies.",
+        "hi": "सांद्रता सूचकांक उदाहरण है और वास्तविक कीटनाशक की इकाई नहीं है। उसका गुणक सार्वभौमिक आवर्धन गुणक या मापा DDT आँकड़ा नहीं है। हर रसायन जैव आवर्धन नहीं करता।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "A predator eats many contaminated prey. Certain persistent chemicals are not readily broken down or eliminated, so their concentration can rise at higher trophic levels.",
+          "hi": "शिकारी अनेक दूषित शिकार खाता है। कुछ स्थायी रसायन जल्दी टूटते या बाहर नहीं निकलते, इसलिए उनकी सांद्रता ऊँचे पोषी स्तरों पर बढ़ सकती है।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "What increases during biomagnification?",
+          "hi": "जैव आवर्धन में क्या बढ़ता है?"
+        },
+        "options": [
+          {
+            "en": "Available energy at every level",
+            "hi": "हर स्तर पर उपलब्ध ऊर्जा"
+          },
+          {
+            "en": "Concentration of an appropriate persistent chemical",
+            "hi": "उपयुक्त स्थायी रसायन की सांद्रता"
+          },
+          {
+            "en": "The amount of sunlight returned to the Sun",
+            "hi": "सूर्य को वापस गया प्रकाश"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Biomagnification concerns concentration of a persistent pollutant, not increasing food energy.",
+          "hi": "जैव आवर्धन स्थायी प्रदूषक की सांद्रता से जुड़ा है, बढ़ती भोजन ऊर्जा से नहीं।"
+        }
+      },
+      "realLife": {
+        "en": "Persistent pesticide residues can enter aquatic food relationships after runoff.",
+        "hi": "बहाव से पहुँचे स्थायी कीटनाशक अवशेष जलीय भोजन संबंधों में प्रवेश कर सकते हैं।"
+      },
+      "legend": [
+        {
+          "color": "#eea1af",
+          "label": {
+            "en": "Persistent pollutant: relative index",
+            "hi": "स्थायी प्रदूषक: सापेक्ष सूचकांक"
+          }
+        },
+        {
+          "color": "#72bc83",
+          "label": {
+            "en": "Feeding pathway",
+            "hi": "भोजन मार्ग"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-biomagnification-1",
+          "label": {
+            "en": "Select trophic level 2.",
+            "hi": "पोषी स्तर 2 चुनें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 2
+          }
+        },
+        {
+          "id": "ten-biomagnification-2",
+          "label": {
+            "en": "Select trophic level 4.",
+            "hi": "पोषी स्तर 4 चुनें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2
+          },
+          "text": {
+            "en": "Lower trophic levels introduce the persistent chemical into this illustrative feeding pathway.",
+            "hi": "इस उदाहरणात्मक भोजन मार्ग में निचले पोषी स्तर स्थायी रसायन के प्रवेश का मार्ग दिखाते हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 2
+          },
+          "text": {
+            "en": "Higher relative concentration illustrates biomagnification; it does not imply greater available energy.",
+            "hi": "अधिक सापेक्ष सांद्रता जैव आवर्धन दिखाती है; इसका अर्थ अधिक उपलब्ध ऊर्जा नहीं है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-waste",
+      "title": {
+        "en": "Waste and biodegradation",
+        "hi": "कचरा और जैव निम्नीकरण"
+      },
+      "kind": "ten-environment",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Elapsed time",
+            "hi": "बीता समय"
+          },
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "initial": 0,
+          "unit": "model weeks"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 6,
+      "goal": {
+        "en": "Compare biological breakdown with persistence without assigning universal waste lifetimes.",
+        "hi": "कचरे की सार्वभौमिक आयु तय किए बिना जैविक अपघटन और स्थायित्व की तुलना करें।"
+      },
+      "observe": {
+        "en": "Advance the model time and compare the biodegradable sample with the persistent sample. Look for change, not a promise that all materials disappear on schedule.",
+        "hi": "मॉडल समय बढ़ाकर जैव निम्नीकरणीय और स्थायी नमूने की तुलना करें। बदलाव देखें, सभी पदार्थ निश्चित समय पर गायब होने का दावा नहीं।"
+      },
+      "modelNote": {
+        "en": "Model weeks are illustrative. Actual rates depend on the material, microbes, moisture, oxygen and temperature. The scene is not a real-world disposal timetable or an experiment with mixed waste.",
+        "hi": "मॉडल सप्ताह उदाहरण हैं। वास्तविक गति पदार्थ, सूक्ष्मजीव, नमी, ऑक्सीजन और तापमान पर निर्भर है। यह वास्तविक निपटान समय सारणी या मिश्रित कचरे का प्रयोग नहीं है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Organisms and their enzymes can break down suitable organic materials. Many conventional plastics resist such breakdown under ordinary conditions; physical fragments do not prove biodegradation.",
+          "hi": "जीव और उनके एंजाइम उपयुक्त जैविक पदार्थ तोड़ सकते हैं। कई साधारण प्लास्टिक सामान्य दशाओं में इस अपघटन का प्रतिरोध करते हैं; टुकड़े होना जैव निम्नीकरण का प्रमाण नहीं।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "Does a biodegradable label mean waste is harmless when dumped in any amount?",
+          "hi": "क्या जैव निम्नीकरणीय होने से किसी भी मात्रा में फेंका कचरा हानिरहित होता है?"
+        },
+        "options": [
+          {
+            "en": "Yes, it needs no handling",
+            "hi": "हाँ, किसी प्रबंधन की जरूरत नहीं"
+          },
+          {
+            "en": "No, unmanaged accumulation can still cause problems",
+            "hi": "नहीं, बिना व्यवस्था जमा होने पर समस्या हो सकती है"
+          },
+          {
+            "en": "Yes, every sample disappears in 1 week",
+            "hi": "हाँ, हर नमूना 1 सप्ताह में गायब होता है"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Biological breakdown requires suitable conditions; large unmanaged accumulations can still pollute.",
+          "hi": "जैविक अपघटन को उपयुक्त परिस्थितियाँ चाहिए; बहुत कचरा बिना व्यवस्था जमा होने पर प्रदूषण कर सकता है।"
+        }
+      },
+      "realLife": {
+        "en": "Separate clean vegetable scraps for suitable managed composting; do not burn plastic or handle unknown mixed refuse.",
+        "hi": "साफ सब्जी अवशेष उचित नियंत्रित कंपोस्ट के लिए अलग करें; प्लास्टिक न जलाएँ और अज्ञात मिला कचरा न छुएँ।"
+      },
+      "legend": [
+        {
+          "color": "#72bc83",
+          "label": {
+            "en": "Biodegradable sample",
+            "hi": "जैव निम्नीकरणीय नमूना"
+          }
+        },
+        {
+          "color": "#75bdde",
+          "label": {
+            "en": "Persistent sample",
+            "hi": "स्थायी नमूना"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-waste-1",
+          "label": {
+            "en": "Advance time to 3 model weeks.",
+            "hi": "समय 3 मॉडल सप्ताह करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 3
+          }
+        },
+        {
+          "id": "ten-waste-2",
+          "label": {
+            "en": "Advance time to 10 model weeks.",
+            "hi": "समय 10 मॉडल सप्ताह करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 10
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3
+          },
+          "text": {
+            "en": "Early model time: compare both materials under the same illustrative conditions.",
+            "hi": "शुरुआती मॉडल समय: समान उदाहरणात्मक परिस्थितियों में दोनों पदार्थों की तुलना करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 3
+          },
+          "text": {
+            "en": "The biodegradable sample changes more in this model; real decomposition times vary with conditions.",
+            "hi": "मॉडल में जैव निम्नीकरणीय नमूना अधिक बदलता है; वास्तविक अपघटन समय परिस्थितियों के साथ बदलता है।"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Explain ecosystems, trace energy and persistent pollutants through food chains, and connect ozone protection with responsible waste handling.",
+    "hi": "पारितंत्र (Ecosystem) समझें, खाद्य शृंखला में ऊर्जा और स्थायी प्रदूषकों का मार्ग पहचानें तथा ओजोन संरक्षण और उचित कचरा प्रबंधन का संबंध समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Ecosystems: living and non-living partners",
+        "hi": "पारितंत्र: सजीव और निर्जीव की साझेदारी"
+      },
+      "paragraphs": [
+        {
+          "en": "A pond is more than a container holding water and fish. Plants, tiny organisms, insects, fish and decomposers interact with water, light, temperature and dissolved substances. This interacting system is an ecosystem. Living parts are its biotic components; non-living conditions are its abiotic components. Listing organisms alone therefore does not describe an ecosystem completely. We must also ask what resources are available and how organisms use them.",
+          "hi": "तालाब केवल पानी और मछलियों का बर्तन नहीं है। उसमें पौधे, सूक्ष्मजीव, कीट, मछलियाँ और अपघटक रहते हैं। ये जल, प्रकाश, तापमान और घुले पदार्थों के साथ क्रिया करते हैं। ऐसी परस्पर क्रियाओं वाली व्यवस्था पारितंत्र (Ecosystem) कहलाती है। उसके सजीव भाग जैव घटक (Biotic components) और निर्जीव परिस्थितियाँ अजैव घटक (Abiotic components) हैं। इसलिए केवल जीवों के नाम लिख देना पारितंत्र का पूरा वर्णन नहीं है। यह भी देखना चाहिए कि संसाधन कहाँ से आते हैं और उनका उपयोग कैसे होता है।"
+        },
+        {
+          "en": "A forest and a pond are familiar natural ecosystems. A crop field or garden is an ecosystem influenced and maintained by people. Calling a garden artificial does not mean its plants are unreal: it describes human involvement in arranging and maintaining the system. Boundaries are chosen for study; water, organisms and materials can cross them. A change in one component can affect others. For example, reduced sunlight may decrease plant food production and indirectly change the food available to consumers. When explaining such a change, identify a clear connection rather than assuming every population changes by exactly the same amount.",
+          "hi": "वन और तालाब प्राकृतिक पारितंत्र के परिचित उदाहरण हैं। खेत और बगीचा मनुष्य द्वारा बनाए तथा सँभाले जाने वाले पारितंत्र हैं। बगीचे को कृत्रिम कहने का अर्थ यह नहीं कि उसके पौधे नकली हैं। इसका अर्थ है कि उसकी व्यवस्था में मनुष्य का हस्तक्षेप है। अध्ययन के लिए उसकी सीमा चुनी जाती है; पानी, जीव और अन्य पदार्थ इस सीमा को पार कर सकते हैं। एक घटक में बदलाव दूसरे घटकों पर प्रभाव डाल सकता है। जैसे प्रकाश कम होने से पौधों में भोजन निर्माण घट सकता है और उपभोक्ताओं का भोजन भी प्रभावित हो सकता है। कारण बताते समय यह स्पष्ट संबंध लिखें; सभी जीवों की संख्या समान अनुपात में बदलेगी, ऐसा न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Biotic: grass, insects and fungi; abiotic: sunlight, water and temperature.",
+          "hi": "जैव: घास, कीट और कवक; अजैव: सूर्य का प्रकाश, पानी और तापमान।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why must an ecosystem description include sunlight and water?",
+          "hi": "पारितंत्र के वर्णन में प्रकाश और पानी क्यों शामिल होने चाहिए?"
+        },
+        "answer": {
+          "en": "They are abiotic components that influence living organisms and their interactions.",
+          "hi": "ये अजैव घटक हैं जो जीवों और उनकी परस्पर क्रियाओं को प्रभावित करते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Producers, consumers and decomposers",
+        "hi": "उत्पादक, उपभोक्ता और अपघटक"
+      },
+      "paragraphs": [
+        {
+          "en": "Classifying organisms by their feeding roles helps us understand an ecosystem. Green plants and other photosynthetic producers use light energy to form organic food from simpler inorganic substances. Producers provide the starting food supply for many familiar food chains. Consumers obtain organic food by eating producers or other consumers. A grasshopper eating grass is a primary consumer, while a frog eating that grasshopper is a secondary consumer. These names describe the feeding relationship in the chosen chain, not a permanent rank attached to an animal in every situation.",
+          "hi": "भोजन प्राप्त करने की भूमिका से जीवों को समझना आसान होता है। हरे पौधे और दूसरे प्रकाश संश्लेषी उत्पादक (Producers) प्रकाश ऊर्जा की सहायता से सरल अकार्बनिक पदार्थों से कार्बनिक भोजन बनाते हैं। परिचित खाद्य शृंखलाओं की भोजन आपूर्ति उत्पादकों से शुरू होती है। उपभोक्ता (Consumers) पौधों या दूसरे उपभोक्ताओं को खाकर भोजन प्राप्त करते हैं। घास खाने वाला टिड्डा प्राथमिक उपभोक्ता और टिड्डे को खाने वाला मेंढक द्वितीयक उपभोक्ता है। ये नाम चुनी हुई शृंखला में भोजन संबंध बताते हैं। किसी जीव को हर परिस्थिति में एक ही पोषी स्तर पर रखना आवश्यक नहीं है।"
+        },
+        {
+          "en": "Decomposers, including many bacteria and fungi, act on dead remains and organic wastes. They release simpler substances that can return to the surroundings and be used again by producers. Without decomposition, dead matter would accumulate and nutrient availability would be affected. Decomposers are connected to organisms at many trophic levels; they are not merely the final predator in a chain. An aquarium also requires balanced inputs and maintenance. Adding plants does not guarantee that a small closed container can support unlimited animals. Food, oxygen, space, light and the handling of wastes all matter.",
+          "hi": "कई जीवाणु और कवक अपघटक (Decomposers) हैं। वे मृत अवशेषों और जैविक अपशिष्टों पर क्रिया करके सरल पदार्थ बनाते हैं। ये पदार्थ परिवेश में लौट सकते हैं और उत्पादक फिर उनका उपयोग कर सकते हैं। अपघटन न होने पर मृत पदार्थ जमा होंगे और पौधों को मिलने वाले पोषक पदार्थ प्रभावित होंगे। अपघटक अनेक पोषी स्तरों के जीवों से जुड़े हैं; वे केवल सबसे अंतिम शिकारी नहीं हैं। मछलीघर में भी उचित व्यवस्था आवश्यक है। केवल पौधा रख देने से बंद छोटे पात्र में असीमित मछलियाँ नहीं रह सकतीं। भोजन, ऑक्सीजन, स्थान, प्रकाश और अपशिष्ट का प्रबंधन सभी महत्वपूर्ण हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Producers make food; consumers obtain it; decomposers return nutrients.",
+          "hi": "उत्पादक भोजन बनाते हैं, उपभोक्ता भोजन लेते हैं और अपघटक पोषक पदार्थ लौटाते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why are decomposers essential even when no large predator is present?",
+          "hi": "बड़ा शिकारी न होने पर भी अपघटक आवश्यक क्यों हैं?"
+        },
+        "answer": {
+          "en": "They break down dead organic matter and help return nutrients for reuse by producers.",
+          "hi": "वे मृत जैविक पदार्थों का अपघटन करके पोषक पदार्थ उत्पादकों के पुनः उपयोग के लिए लौटाते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Food chains, food webs and trophic levels",
+        "hi": "खाद्य शृंखला, खाद्य जाल और पोषी स्तर"
+      },
+      "paragraphs": [
+        {
+          "en": "A food chain represents one feeding pathway. In grass → grasshopper → frog → snake, grass occupies trophic level 1, the grasshopper level 2, the frog level 3 and the snake level 4. An arrow points from the organism eaten towards the organism that eats it. It therefore shows the direction in which food and associated energy move. Reversing the arrows changes the meaning of the diagram. A producer belongs at the beginning of this grazing chain, even though it receives energy from the Sun.",
+          "hi": "खाद्य शृंखला (Food chain) भोजन संबंध का एक मार्ग दिखाती है। घास → टिड्डा → मेंढक → साँप में घास पोषी स्तर (Trophic level) 1, टिड्डा स्तर 2, मेंढक स्तर 3 और साँप स्तर 4 पर है। तीर उस जीव से अगले जीव की ओर लगता है जिसे खाया जाता है। इसलिए तीर भोजन और उसमें उपस्थित ऊर्जा के स्थानांतरण की दिशा बताता है। तीर उलटा करने से चित्र का अर्थ बदल जाता है। इस चराई आधारित शृंखला के शुरू में उत्पादक होगा, भले ही उसे ऊर्जा सूर्य से मिलती हो। सूर्य को जीवों के पोषी स्तर की तरह नहीं गिनना चाहिए।"
+        },
+        {
+          "en": "Actual feeding relationships usually branch. A bird may eat several kinds of insects, and one insect may be eaten by several predators. Interconnected chains form a food web. A web is useful when discussing what might happen after one population decreases, because alternative food sources may exist. It does not guarantee that removal of any organism has no effect. Omnivores can feed at different trophic levels through different chains. When counting levels, follow one stated pathway carefully. Do not count sunlight as a living trophic level or count every organism in a whole web as a separate consecutive step.",
+          "hi": "प्रकृति में भोजन संबंध प्रायः कई शाखाओं वाले होते हैं। एक पक्षी कई प्रकार के कीट खा सकता है और एक ही कीट को कई शिकारी खा सकते हैं। जुड़ी हुई शृंखलाएँ खाद्य जाल (Food web) बनाती हैं। किसी जीव की संख्या घटने पर खाद्य जाल देखकर भोजन के दूसरे संभावित स्रोत पहचान सकते हैं। इसका अर्थ यह नहीं कि किसी भी जीव को हटाने का कोई प्रभाव नहीं पड़ेगा। सर्वाहारी अलग शृंखलाओं में अलग पोषी स्तर पर आ सकते हैं। स्तर गिनते समय एक निश्चित मार्ग का पालन करें। पूरे जाल के सभी जीवों को लगातार आने वाले अलग स्तर न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Food-chain arrows show energy transfer from food to consumer.",
+          "hi": "शृंखला में तीर भोजन से उपभोक्ता की ओर ऊर्जा का स्थानांतरण दिखाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "In algae → small aquatic animal → fish, which organism is the primary consumer?",
+          "hi": "शैवाल → छोटा जलीय जंतु → मछली में प्राथमिक उपभोक्ता कौन है?"
+        },
+        "answer": {
+          "en": "The small aquatic animal is the primary consumer and occupies trophic level 2.",
+          "hi": "छोटा जलीय जंतु प्राथमिक उपभोक्ता है और पोषी स्तर 2 पर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Energy flow and the approximate 10% rule",
+        "hi": "ऊर्जा प्रवाह और लगभग 10% का नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "Producers convert a small portion of incoming sunlight into chemical energy stored in food. When a consumer feeds, not all energy in the food becomes new body material available to the next consumer. Organisms use energy in respiration, movement, maintenance and other activities; energy is dispersed as heat, and some material is not consumed or assimilated. The school-level 10% rule estimates the average energy passed onward as about one tenth of that available at the previous trophic level. It is a useful approximation, not an exact value for every species or ecosystem.",
+          "hi": "उत्पादक प्राप्त सूर्य प्रकाश का छोटा भाग भोजन की रासायनिक ऊर्जा में बदलते हैं। उपभोक्ता द्वारा खाए गए भोजन की सारी ऊर्जा अगले उपभोक्ता के लिए नया शरीर पदार्थ नहीं बनती। जीव श्वसन, गति, रखरखाव और दूसरी क्रियाओं में ऊर्जा का उपयोग करते हैं। ऊर्जा ऊष्मा के रूप में परिवेश में फैलती है और कुछ पदार्थ खाया या आत्मसात नहीं होता। स्कूल स्तर का लगभग 10% नियम पिछले पोषी स्तर की उपलब्ध ऊर्जा का करीब दसवाँ भाग अगले स्तर तक पहुँचने का अनुमान देता है। यह उपयोगी औसत है, हर जीव और हर पारितंत्र में बिल्कुल समान परिणाम देने वाला कठोर नियम नहीं है।"
+        },
+        {
+          "en": "For a model chain with 5000 J in producers, use 500 J for primary consumers, 50 J for secondary consumers and 5 J for tertiary consumers. Each multiplication by 0.1 represents one transfer, so moving from level 1 to level 4 requires three multiplications. Energy flows in one direction through an ecosystem and eventually becomes dispersed heat; it is not recycled back into sunlight by decomposers. Nutrients can cycle, but usable energy requires continuing input. Declining energy availability helps explain why familiar food chains have only a few trophic steps. It does not mean energy is destroyed: its availability for further biological transfer changes.",
+          "hi": "मॉडल में उत्पादकों के पास 5000 J हों तो प्राथमिक उपभोक्ताओं को लगभग 500 J, द्वितीयक को 50 J और तृतीयक को 5 J मिलेंगे। हर बार 0.1 से गुणा करना एक स्थानांतरण है। इसलिए स्तर 1 से स्तर 4 तक पहुँचने में 3 बार गुणा होगा। पारितंत्र में ऊर्जा का प्रवाह एकदिशीय (Unidirectional) है। अपघटक ऊष्मा को वापस सूर्य प्रकाश में नहीं बदलते। पोषक पदार्थ चक्र में लौट सकते हैं, लेकिन उपयोग योग्य ऊर्जा के लिए लगातार बाहरी आपूर्ति चाहिए। ऊपरी स्तरों पर कम उपलब्ध ऊर्जा छोटी खाद्य शृंखलाओं का कारण समझने में सहायता करती है। यहाँ ऊर्जा नष्ट नहीं होती; अगले जैविक स्थानांतरण के लिए उसकी उपलब्धता घटती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use joule, J, for energy; 10% = 0.1.",
+          "hi": "ऊर्जा की इकाई जूल, J, है; 10% = 0.1।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If producers contain 2000 J, estimate the energy available to secondary consumers.",
+          "hi": "उत्पादकों में 2000 J हों तो द्वितीयक उपभोक्ताओं की ऊर्जा का अनुमान लगाइए।"
+        },
+        "answer": {
+          "en": "There are two transfers: 2000 × 0.1 × 0.1 = 20 J, using the approximate model.",
+          "hi": "2 स्थानांतरण होंगे: 2000 × 0.1 × 0.1 = 20 J; यह लगभग 10% वाले मॉडल का परिणाम है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Persistent pollutants and biomagnification",
+        "hi": "स्थायी प्रदूषक और जैव आवर्धन"
+      },
+      "paragraphs": [
+        {
+          "en": "Some persistent harmful chemicals can enter soil or water and then enter organisms through food and other uptake pathways. If a chemical resists breakdown and is not readily eliminated, it can remain in organisms. A predator eats many prey during its lifetime. For certain persistent chemicals, their concentration can become greater at successively higher trophic levels. This increase along a food chain is biomagnification. The comparison concerns the same chemical and a comparable measure of concentration, not simply the total mass of chemical in animals of very different sizes.",
+          "hi": "कुछ हानिकारक स्थायी रसायन मिट्टी या जल में पहुँचते हैं और भोजन तथा दूसरे अवशोषण मार्गों से जीवों में प्रवेश कर सकते हैं। यदि कोई रसायन आसानी से विघटित नहीं होता और शरीर से जल्दी नहीं निकलता, तो वह जीव में बना रह सकता है। शिकारी अपने जीवन में बहुत से शिकार खाता है। कुछ ऐसे रसायनों की सांद्रता क्रमशः ऊँचे पोषी स्तरों पर बढ़ सकती है। खाद्य शृंखला में होने वाला यह बढ़ाव जैव आवर्धन (Biomagnification) कहलाता है। तुलना उसी रसायन की सांद्रता की होनी चाहिए। अलग आकार के जीवों में रसायन की कुल मात्रा की तुलना करना अकेले पर्याप्त नहीं है।"
+        },
+        {
+          "en": "Keep this process separate from energy transfer. Energy available to the next trophic level generally decreases, while the concentration of an appropriate persistent pollutant may increase. Not every chemical biomagnifies, and no universal fixed multiplier can be assigned to every step. Our scene therefore uses an illustrative relative pollutant index rather than actual pesticide measurements. The highest consumer in the chosen chain may face the greatest concentration. Humans may occupy different trophic positions depending on diet, so avoid saying that all humans are always the final link of every food chain. Washing food can remove some surface material but cannot be assumed to remove residues already inside tissues.",
+          "hi": "इसे ऊर्जा स्थानांतरण से अलग समझें। अगले पोषी स्तर के लिए उपलब्ध ऊर्जा सामान्यतः घटती है, जबकि उपयुक्त स्थायी प्रदूषक की सांद्रता बढ़ सकती है। हर रसायन जैव आवर्धन नहीं करता और हर स्तर पर बढ़ने का कोई सार्वभौमिक निश्चित गुणक नहीं है। इसलिए दृश्य में सापेक्ष प्रदूषक सूचकांक केवल समझाने के लिए है; वह वास्तविक कीटनाशक माप नहीं है। चुनी हुई शृंखला के सबसे ऊँचे उपभोक्ता में सांद्रता अधिक हो सकती है। भोजन के अनुसार मनुष्य अलग पोषी स्थानों पर आ सकता है। मनुष्य को हर शृंखला की अंतिम कड़ी न मानें। धोने से कुछ सतही पदार्थ हट सकते हैं, लेकिन ऊतकों के भीतर पहुँचे सभी अवशेष हटने की गारंटी नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Compare pollutant concentration; do not apply the energy 10% rule to it.",
+          "hi": "प्रदूषक की सांद्रता की तुलना करें; उस पर ऊर्जा का 10% नियम न लगाएँ।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can a top predator have a higher persistent-pollutant concentration than its prey?",
+          "hi": "शीर्ष शिकारी में स्थायी प्रदूषक की सांद्रता शिकार से अधिक क्यों हो सकती है?"
+        },
+        "answer": {
+          "en": "It consumes many contaminated prey, while the persistent chemical is not readily broken down or eliminated.",
+          "hi": "वह अनेक दूषित शिकार खाता है और स्थायी रसायन आसानी से टूटता या शरीर से बाहर नहीं निकलता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ozone formation and its protective role",
+        "hi": "ओजोन का निर्माण और सुरक्षात्मक भूमिका"
+      },
+      "paragraphs": [
+        {
+          "en": "Ordinary oxygen molecules contain two oxygen atoms and are represented by O2. Ozone contains three and is represented by O3. High in the atmosphere, energetic ultraviolet radiation can split some O2 molecules into oxygen atoms. An oxygen atom can combine with another O2 molecule to form ozone. These simplified equations describe the formation sequence; they do not imply that all sunlight converts all atmospheric oxygen into ozone. The location matters: ozone high in the atmosphere absorbs harmful ultraviolet radiation and helps protect life at the surface.",
+          "hi": "साधारण ऑक्सीजन का अणु 2 ऑक्सीजन परमाणुओं से बना है और O2 लिखा जाता है। ओजोन (Ozone) में 3 परमाणु होते हैं और इसका सूत्र O3 है। ऊपरी वायुमंडल में अधिक ऊर्जा वाली पराबैंगनी विकिरण (Ultraviolet radiation) कुछ O2 अणुओं को ऑक्सीजन परमाणुओं में तोड़ सकती है। एक ऑक्सीजन परमाणु दूसरे O2 अणु से जुड़कर ओजोन बना सकता है। सरल समीकरण इस क्रम को समझाते हैं; उनका अर्थ नहीं कि सूर्य का पूरा प्रकाश सारी ऑक्सीजन को ओजोन में बदल देता है। ऊँचाई महत्वपूर्ण है: ऊपरी वायुमंडल की ओजोन हानिकारक पराबैंगनी विकिरण अवशोषित करके धरातल के जीवन की रक्षा करती है।"
+        },
+        {
+          "en": "Ozone close to the ground can be harmful, so protective upper-atmosphere ozone should not be described as a gas that is beneficial everywhere. Depletion of the protective layer allows more harmful ultraviolet radiation to reach the surface. Certain human-made ozone-depleting substances, including chlorofluorocarbons, were linked with this problem. International cooperation to control these substances is an important example of action beyond individual households. Ozone depletion is also different from global warming: the main mechanisms and gases involved are not identical. In an examination, state the protective role, identify an appropriate cause of depletion and explain its consequence clearly rather than writing only that pollution is bad.",
+          "hi": "धरातल के पास ओजोन हानिकारक हो सकती है। इसलिए उसे हर जगह लाभकारी गैस नहीं कहना चाहिए। सुरक्षात्मक ओजोन परत के क्षय से अधिक हानिकारक पराबैंगनी विकिरण सतह तक पहुँच सकती है। क्लोरोफ्लुओरोकार्बन (CFCs) जैसे कुछ मानव निर्मित ओजोन क्षयकारी पदार्थ इस समस्या से जुड़े हैं। ऐसे पदार्थों पर नियंत्रण के लिए अंतरराष्ट्रीय सहयोग व्यक्तिगत घर से आगे की कार्रवाई का उदाहरण है। ओजोन क्षय और वैश्विक ऊष्मन अलग समस्याएँ हैं; उनकी मुख्य प्रक्रियाएँ और संबंधित गैसें पूरी तरह समान नहीं हैं। परीक्षा में केवल प्रदूषण बुरा है लिखने के बजाय ओजोन की सुरक्षात्मक भूमिका, क्षय का उचित कारण और उसका परिणाम स्पष्ट लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "O2 + UV → O + O; O + O2 → O3: a simplified formation sequence.",
+          "hi": "O2 + UV → O + O; O + O2 → O3: निर्माण का सरल क्रम।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is the altitude of ozone important when discussing its effects?",
+          "hi": "ओजोन के प्रभाव बताते समय उसकी ऊँचाई महत्वपूर्ण क्यों है?"
+        },
+        "answer": {
+          "en": "Upper-atmosphere ozone shields us from harmful UV, while ozone near the ground can harm living organisms.",
+          "hi": "ऊपरी वायुमंडल की ओजोन हानिकारक UV से बचाती है, जबकि धरातल के पास ओजोन जीवों को हानि पहुँचा सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Biodegradable and non-biodegradable materials",
+        "hi": "जैव निम्नीकरणीय और अजैव निम्नीकरणीय पदार्थ"
+      },
+      "paragraphs": [
+        {
+          "en": "Biodegradable materials can be broken down through biological processes under suitable conditions. Vegetable peels and many untreated plant remains are common examples. Non-biodegradable materials are not readily broken down by such processes under ordinary environmental conditions; many conventional plastics illustrate this category. The distinction depends on the material and the conditions, not only on whether humans made the object. Microorganisms act through particular enzymes and cannot rapidly digest every substance placed beside them. Breaking a plastic item into smaller pieces is not the same as completely converting it through biological decomposition.",
+          "hi": "जैव निम्नीकरणीय पदार्थ (Biodegradable materials) उपयुक्त परिस्थितियों में जैविक प्रक्रियाओं द्वारा टूट सकते हैं। सब्जियों के छिलके और बहुत से अनुपचारित पादप अवशेष इसके उदाहरण हैं। अजैव निम्नीकरणीय पदार्थ (Non-biodegradable materials) सामान्य पर्यावरणीय परिस्थितियों में इन प्रक्रियाओं से आसानी से नहीं टूटते; कई साधारण प्लास्टिक इस वर्ग के उदाहरण हैं। पदार्थ मनुष्य ने बनाया है या नहीं, केवल इससे वर्ग तय नहीं होता। सूक्ष्मजीव विशिष्ट एंजाइमों की सहायता से कार्य करते हैं। वे पास रखे हर पदार्थ को जल्दी नहीं पचा सकते। प्लास्टिक का छोटे टुकड़ों में टूटना उसका पूर्ण जैविक अपघटन नहीं है।"
+        },
+        {
+          "en": "Decomposition speed depends on moisture, temperature, oxygen supply, the organism community and the material itself. A fixed number of days cannot describe every leaf, cloth or wrapper in every place. Our time slider compares an illustrative biodegradable sample with a persistent sample; its model weeks are not a universal disposal timetable. Biodegradable waste can still cause problems when it accumulates without proper handling, including unpleasant conditions and pollution. Non-biodegradable waste can persist and physically harm organisms or obstruct drains. Safe observation means studying provided photographs or a supervised clean plant-material sample, not handling mixed rubbish, opening discarded containers or burning plastic.",
+          "hi": "अपघटन की गति नमी, तापमान, ऑक्सीजन, उपस्थित जीवों और पदार्थ के स्वभाव पर निर्भर है। हर जगह हर पत्ती, कपड़े या रैपर के लिए दिनों की एक निश्चित संख्या नहीं बताई जा सकती। समय स्लाइडर एक जैव निम्नीकरणीय नमूने और एक स्थायी नमूने की केवल उदाहरणात्मक तुलना करता है। उसके मॉडल सप्ताह सार्वभौमिक निपटान समय नहीं हैं। जैव निम्नीकरणीय कचरा भी बिना व्यवस्था जमा होने पर दुर्गंधपूर्ण स्थिति और प्रदूषण पैदा कर सकता है। स्थायी कचरा जीवों को चोट पहुँचा सकता है और नालियाँ रोक सकता है। सुरक्षित अध्ययन में दिए चित्र या शिक्षक की देखरेख में स्वच्छ पादप नमूने देखें; मिश्रित कचरे को छूना, फेंके डिब्बे खोलना या प्लास्टिक जलाना नहीं चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Biodegradable does not mean harmless in any quantity or condition.",
+          "hi": "जैव निम्नीकरणीय का अर्थ हर मात्रा और परिस्थिति में हानिरहित नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a plastic bag breaking into visible fragments prove biodegradation?",
+          "hi": "प्लास्टिक थैली का दिखने वाले टुकड़ों में टूटना क्या जैव निम्नीकरण का प्रमाण है?"
+        },
+        "answer": {
+          "en": "No. Physical fragmentation alone does not show biological conversion into simpler substances.",
+          "hi": "नहीं। केवल भौतिक टूटन से सरल पदार्थों में जैविक परिवर्तन सिद्ध नहीं होता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Waste management and connected environmental choices",
+        "hi": "कचरा प्रबंधन और पर्यावरण से जुड़े निर्णय"
+      },
+      "paragraphs": [
+        {
+          "en": "A useful waste-management explanation begins before disposal. Avoiding unnecessary packaging and using durable objects can reduce the amount discarded. Reusing an appropriate item extends its useful life; recycling needs suitable separate collection and processing. Mixing food scraps with clean recyclable materials can make later sorting harder. Separating waste at its source therefore supports better handling. Organic waste may be treated by a suitable managed composting system, while other materials need the appropriate collection stream. Calling an object recyclable does not guarantee that it will actually be recycled after being thrown anywhere.",
+          "hi": "कचरा प्रबंधन (Waste management) का विचार फेंकने से पहले शुरू होना चाहिए। अनावश्यक पैकिंग से बचना और टिकाऊ वस्तुएँ लेना कचरे की मात्रा घटा सकता है। उपयुक्त वस्तु का पुनः उपयोग (Reuse) उसका उपयोगी जीवन बढ़ाता है। पुनर्चक्रण (Recycling) के लिए अलग संग्रह और सही प्रसंस्करण चाहिए। भोजन के गीले अवशेष साफ पुनर्चक्रण योग्य वस्तुओं से मिलाने पर बाद की छँटाई कठिन हो सकती है। इसलिए स्रोत पर पृथक्करण उपयोगी है। जैविक कचरा उपयुक्त नियंत्रित कंपोस्ट व्यवस्था में जा सकता है; अन्य पदार्थों के लिए उचित संग्रह मार्ग चाहिए। वस्तु को पुनर्चक्रण योग्य कहने भर से कहीं भी फेंकने के बाद उसका पुनर्चक्रण निश्चित नहीं हो जाता।"
+        },
+        {
+          "en": "A school can study its waste with a record of categories and quantities collected by responsible adults. The aim is to identify where waste arises and what changes could prevent it, not to ask children to sort dangerous mixed refuse. Environmental reasoning also connects different scales: decomposers act locally, pollutants move through food relationships, and protection of the ozone layer requires wider cooperation. A strong answer links an action with its reason. For example, separating clean paper can support recovery, whereas open burning merely transfers some waste into air pollution. No single bin or slogan solves every material problem; thoughtful reduction and suitable handling work together.",
+          "hi": "विद्यालय जिम्मेदार वयस्कों द्वारा एकत्र श्रेणियों और मात्रा के रिकॉर्ड से कचरे का अध्ययन कर सकता है। उद्देश्य यह पहचानना है कि कचरा कहाँ बनता है और उसे कैसे घटाएँ; बच्चों से खतरनाक मिला कचरा छँटवाना उद्देश्य नहीं है। पर्यावरण के प्रश्न अलग स्तरों को जोड़ते हैं: अपघटक स्थानीय रूप से कार्य करते हैं, प्रदूषक भोजन संबंधों से बढ़ सकते हैं और ओजोन परत की रक्षा में व्यापक सहयोग चाहिए। अच्छे उत्तर में कार्रवाई के साथ कारण लिखें। साफ कागज अलग रखने से उसकी पुनर्प्राप्ति में मदद मिलती है, जबकि खुले में जलाने से कचरे का कुछ भाग वायु प्रदूषण बनता है। एक डिब्बा या नारा हर पदार्थ की समस्या नहीं हल करता; कम उत्पादन और उपयुक्त निपटान मिलकर काम करते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Reduce unnecessary waste, reuse suitable items, separate materials and support proper recovery.",
+          "hi": "अनावश्यक कचरा घटाएँ, उपयुक्त वस्तु पुनः उपयोग करें, पदार्थ अलग रखें और सही पुनर्प्राप्ति में सहयोग दें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is separating clean paper from food waste helpful?",
+          "hi": "साफ कागज को भोजन के कचरे से अलग रखना उपयोगी क्यों है?"
+        },
+        "answer": {
+          "en": "It reduces contamination and makes suitable collection and recovery easier.",
+          "hi": "इससे कागज कम दूषित होता है और उसका उचित संग्रह तथा पुनर्प्राप्ति आसान होती है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "E(next) ≈ 0.1 × E(previous)",
+      "meaning": {
+        "en": "Approximate classroom 10% transfer between successive trophic levels; not an exact universal efficiency.",
+        "hi": "लगातार पोषी स्तरों के बीच लगभग 10% ऊर्जा स्थानांतरण का कक्षागत अनुमान; हर जगह की बिल्कुल निश्चित दक्षता नहीं।"
+      },
+      "units": {
+        "en": "Energy in joules (J); 0.1 is dimensionless.",
+        "hi": "ऊर्जा जूल (J) में; 0.1 की कोई इकाई नहीं।"
+      }
+    },
+    {
+      "expression": "E(n) ≈ E0 × (0.1)^n",
+      "meaning": {
+        "en": "E0 is producer energy; n counts transfers from producers, so a tertiary consumer has n = 3.",
+        "hi": "E0 उत्पादक की ऊर्जा और n उत्पादक से हुए स्थानांतरणों की संख्या है; तृतीयक उपभोक्ता के लिए n = 3।"
+      },
+      "units": {
+        "en": "E(n) and E0: J; n: no unit.",
+        "hi": "E(n) और E0: J; n की कोई इकाई नहीं।"
+      }
+    },
+    {
+      "expression": "O2 + UV → O + O; O + O2 → O3",
+      "meaning": {
+        "en": "Simplified ozone formation sequence high in the atmosphere.",
+        "hi": "ऊपरी वायुमंडल में ओजोन बनने का सरल क्रम।"
+      },
+      "units": {
+        "en": "Chemical formulae, not numerical quantities of energy.",
+        "hi": "रासायनिक सूत्र हैं, ऊर्जा की संख्यात्मक राशियाँ नहीं।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse nutrient cycling with energy recycling, decreasing energy with increasing pollutant concentration, or ozone depletion with global warming. The 10% rule is approximate; our pollutant index and model weeks are illustrative.",
+    "hi": "पोषक पदार्थों के चक्र को ऊर्जा का पुनर्चक्रण न कहें। घटती ऊर्जा को बढ़ती प्रदूषक सांद्रता से और ओजोन क्षय को वैश्विक ऊष्मन से अलग रखें। 10% नियम लगभग अनुमान है; प्रदूषक सूचकांक और मॉडल सप्ताह केवल उदाहरण हैं।"
+  },
+  "summary": [
+    {
+      "en": "An ecosystem includes interacting biotic and abiotic components.",
+      "hi": "पारितंत्र में परस्पर क्रिया करने वाले जैव और अजैव घटक होते हैं।"
+    },
+    {
+      "en": "Producers, consumers and decomposers have connected but different feeding roles.",
+      "hi": "उत्पादक, उपभोक्ता और अपघटक की भोजन संबंधी भूमिकाएँ अलग तथा जुड़ी हुई हैं।"
+    },
+    {
+      "en": "Food-chain energy moves one way; about 10% transfer is a useful school approximation.",
+      "hi": "खाद्य शृंखला में ऊर्जा एक दिशा में बहती है; लगभग 10% स्थानांतरण एक उपयोगी कक्षागत अनुमान है।"
+    },
+    {
+      "en": "Certain persistent pollutants can show increasing concentration at higher trophic levels.",
+      "hi": "कुछ स्थायी प्रदूषकों की सांद्रता ऊँचे पोषी स्तरों पर बढ़ सकती है।"
+    },
+    {
+      "en": "Upper-atmosphere ozone protects against harmful UV; reducing and separating waste supports responsible handling.",
+      "hi": "ऊपरी वायुमंडल की ओजोन हानिकारक UV से बचाती है; कचरा घटाना और अलग रखना उचित प्रबंधन में सहायक है।"
+    }
+  ],
+  "conceptMap": "पर्यावरण → जैव + अजैव घटक → पारितंत्र → उत्पादक → उपभोक्ता → खाद्य शृंखला/जाल; अपघटक → पोषक पुनर्चक्रण; ऊर्जा → एकदिशीय प्रवाह → लगभग 10% स्थानांतरण; स्थायी प्रदूषक → जैव आवर्धन; मानव गतिविधियाँ → ओजोन क्षय + कचरा → रोकथाम और उचित प्रबंधन",
+  "conceptMapEn": "Environment → biotic + abiotic components → ecosystem → producers → consumers → food chain/web; decomposers → nutrient cycling; energy → one-way flow → approximate 10% transfer; persistent pollutants → biomagnification; human activities → ozone depletion + waste → prevention and suitable handling",
+  "editionBasis": {
+    "en": "NCERT Science Class 10, Reprint 2026–27, Chapter 13; UPMSP Science Class 10 syllabus, session 2026–27. Original explanatory notes and questions.",
+    "hi": "NCERT विज्ञान कक्षा 10, पुनर्मुद्रण 2026–27, अध्याय 13 तथा UPMSP विज्ञान कक्षा 10 पाठ्यक्रम, सत्र 2026–27 पर आधारित। व्याख्यात्मक नोट्स और प्रश्न मौलिक हैं।"
+  },
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Identify the trophic levels in grass → rabbit → fox.",
+        "hi": "घास → खरगोश → लोमड़ी के पोषी स्तर पहचानें।"
+      },
+      "given": {
+        "en": "The stated three-organism chain.",
+        "hi": "3 जीवों की दी हुई शृंखला।"
+      },
+      "find": {
+        "en": "Producer and consumer levels.",
+        "hi": "उत्पादक और उपभोक्ताओं के स्तर।"
+      },
+      "formula": {
+        "en": "Producers = level 1; count feeding transfers.",
+        "hi": "उत्पादक = स्तर 1; भोजन स्थानांतरण गिनें।"
+      },
+      "steps": [
+        {
+          "en": "Grass makes food and is the producer.",
+          "hi": "घास भोजन बनाती है, इसलिए उत्पादक है।"
+        },
+        {
+          "en": "Rabbit eats grass; fox eats rabbit.",
+          "hi": "खरगोश घास खाता है और लोमड़ी खरगोश खाती है।"
+        }
+      ],
+      "answer": {
+        "en": "Grass: level 1; rabbit: primary consumer, level 2; fox: secondary consumer, level 3.",
+        "hi": "घास: स्तर 1; खरगोश: प्राथमिक उपभोक्ता, स्तर 2; लोमड़ी: द्वितीयक उपभोक्ता, स्तर 3।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Producers have 3000 J. Estimate primary-consumer energy.",
+        "hi": "उत्पादकों में 3000 J हैं। प्राथमिक उपभोक्ता की ऊर्जा का अनुमान लगाएँ।"
+      },
+      "given": {
+        "en": "E0 = 3000 J; approximate transfer = 10%.",
+        "hi": "E0 = 3000 J; लगभग स्थानांतरण = 10%।"
+      },
+      "find": {
+        "en": "Energy after one transfer.",
+        "hi": "1 स्थानांतरण के बाद ऊर्जा।"
+      },
+      "formula": {
+        "en": "E1 ≈ 0.1 × E0",
+        "hi": "E1 ≈ 0.1 × E0"
+      },
+      "steps": [
+        {
+          "en": "Convert 10% to 0.1.",
+          "hi": "10% को 0.1 लिखें।"
+        },
+        {
+          "en": "E1 ≈ 0.1 × 3000 = 300 J.",
+          "hi": "E1 ≈ 0.1 × 3000 = 300 J।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately 300 J, using the classroom model.",
+        "hi": "कक्षागत मॉडल से लगभग 300 J।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A chain has 8000 J in producers. Estimate energy at level 4.",
+        "hi": "एक शृंखला के उत्पादकों में 8000 J हैं। स्तर 4 की ऊर्जा का अनुमान लगाएँ।"
+      },
+      "given": {
+        "en": "Level 1 energy = 8000 J; each transfer ≈ 10%.",
+        "hi": "स्तर 1 की ऊर्जा = 8000 J; हर स्थानांतरण लगभग 10%।"
+      },
+      "find": {
+        "en": "Tertiary-consumer energy.",
+        "hi": "तृतीयक उपभोक्ता की ऊर्जा।"
+      },
+      "formula": {
+        "en": "E3 ≈ E0 × (0.1)^3",
+        "hi": "E3 ≈ E0 × (0.1)^3"
+      },
+      "steps": [
+        {
+          "en": "There are 3 transfers, not 4.",
+          "hi": "3 स्थानांतरण हैं, 4 नहीं।"
+        },
+        {
+          "en": "Level 2: 800 J; level 3: 80 J.",
+          "hi": "स्तर 2: 800 J; स्तर 3: 80 J।"
+        },
+        {
+          "en": "Level 4: 80 × 0.1 = 8 J.",
+          "hi": "स्तर 4: 80 × 0.1 = 8 J।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately 8 J at level 4.",
+        "hi": "स्तर 4 पर लगभग 8 J।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A pond predator shows more of the same persistent pollutant per gram than its prey. Explain why this is not the 10% energy rule.",
+        "hi": "तालाब के शिकारी के प्रति ग्राम में उसी स्थायी प्रदूषक की मात्रा शिकार से अधिक है। यह ऊर्जा का 10% नियम क्यों नहीं है?"
+      },
+      "given": {
+        "en": "Comparable concentration measurements for one persistent chemical.",
+        "hi": "एक स्थायी रसायन की तुलना योग्य सांद्रता माप।"
+      },
+      "find": {
+        "en": "The process and the distinction from energy flow.",
+        "hi": "प्रक्रिया और ऊर्जा प्रवाह से उसका अंतर।"
+      },
+      "formula": {
+        "en": "Biomagnification describes concentration increase along feeding links.",
+        "hi": "जैव आवर्धन भोजन कड़ियों में सांद्रता बढ़ने को बताता है।"
+      },
+      "steps": [
+        {
+          "en": "The predator consumes many prey containing the chemical.",
+          "hi": "शिकारी रसायन वाले अनेक शिकार खाता है।"
+        },
+        {
+          "en": "Persistence and limited elimination can raise its tissue concentration.",
+          "hi": "रसायन के बने रहने और कम निष्कासन से ऊतक में सांद्रता बढ़ सकती है।"
+        },
+        {
+          "en": "Energy transfer instead concerns decreasing usable energy, measured in J.",
+          "hi": "ऊर्जा स्थानांतरण में उपलब्ध ऊर्जा घटती है और उसे J में मापते हैं।"
+        }
+      ],
+      "answer": {
+        "en": "It is biomagnification of a persistent pollutant, not a transfer of extra energy. No fixed magnification factor follows from the information.",
+        "hi": "यह स्थायी प्रदूषक का जैव आवर्धन है, अतिरिक्त ऊर्जा का स्थानांतरण नहीं। दी सूचना से बढ़ाव का निश्चित गुणक नहीं मिलता।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Secondary consumers need 60 J in a model chain. Estimate required producer energy and explain the limits of the answer.",
+        "hi": "मॉडल शृंखला में द्वितीयक उपभोक्ताओं को 60 J चाहिए। आवश्यक उत्पादक ऊर्जा और उत्तर की सीमा बताएँ।"
+      },
+      "given": {
+        "en": "E2 = 60 J; 2 transfers; approximate efficiency per transfer = 0.1.",
+        "hi": "E2 = 60 J; 2 स्थानांतरण; हर स्थानांतरण की लगभग दक्षता = 0.1।"
+      },
+      "find": {
+        "en": "E0 and its interpretation.",
+        "hi": "E0 और उसका अर्थ।"
+      },
+      "formula": {
+        "en": "E0 ≈ E2 / (0.1)^2",
+        "hi": "E0 ≈ E2 / (0.1)^2"
+      },
+      "steps": [
+        {
+          "en": "Reverse one transfer: 60 / 0.1 = 600 J in primary consumers.",
+          "hi": "1 स्थानांतरण पीछे जाएँ: 60 / 0.1 = 600 J प्राथमिक उपभोक्ताओं में।"
+        },
+        {
+          "en": "Reverse the next: 600 / 0.1 = 6000 J in producers.",
+          "hi": "अगला पीछे जाएँ: 600 / 0.1 = 6000 J उत्पादकों में।"
+        },
+        {
+          "en": "Real transfer efficiencies vary, so this is an estimate rather than an exact ecosystem measurement.",
+          "hi": "वास्तविक दक्षताएँ बदलती हैं, इसलिए यह अनुमान है, पारितंत्र का सटीक माप नहीं।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately 6000 J in producers under the stated model.",
+        "hi": "दी हुई मॉडल मान्यता में उत्पादकों के पास लगभग 6000 J।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which pair contains only abiotic components?",
+        "hi": "किस जोड़े में केवल अजैव घटक हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Grass and fungi",
+            "hi": "घास और कवक"
+          },
+          "reason": {
+            "en": "Both are living organisms.",
+            "hi": "दोनों सजीव हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Water and temperature",
+            "hi": "पानी और तापमान"
+          },
+          "reason": {
+            "en": "Both are non-living environmental components.",
+            "hi": "दोनों पर्यावरण के निर्जीव घटक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Fish and light",
+            "hi": "मछली और प्रकाश"
+          },
+          "reason": {
+            "en": "Fish is biotic, although light is abiotic.",
+            "hi": "मछली जैव है, जबकि प्रकाश अजैव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Bacteria and insects",
+            "hi": "जीवाणु और कीट"
+          },
+          "reason": {
+            "en": "Both are biotic components.",
+            "hi": "दोनों जैव घटक हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "What is a major ecological role of decomposers?",
+        "hi": "अपघटकों की प्रमुख पारिस्थितिक भूमिका क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Return nutrients by breaking down dead organic matter",
+            "hi": "मृत जैविक पदार्थ तोड़कर पोषक पदार्थ लौटाना"
+          },
+          "reason": {
+            "en": "This makes simpler substances available for reuse.",
+            "hi": "इससे सरल पदार्थ फिर उपयोग के लिए उपलब्ध होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Create sunlight from heat",
+            "hi": "ऊष्मा से सूर्य प्रकाश बनाना"
+          },
+          "reason": {
+            "en": "Decomposers do not reverse ecosystem energy flow.",
+            "hi": "अपघटक पारितंत्र का ऊर्जा प्रवाह उलटते नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Act only on living predators",
+            "hi": "केवल जीवित शिकारियों पर कार्य करना"
+          },
+          "reason": {
+            "en": "Their decomposition role concerns dead remains and wastes.",
+            "hi": "उनकी अपघटन भूमिका मृत अवशेषों और अपशिष्ट से जुड़ी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Remove the need for producers",
+            "hi": "उत्पादकों की आवश्यकता समाप्त करना"
+          },
+          "reason": {
+            "en": "Nutrient recycling does not replace food production.",
+            "hi": "पोषक पुनर्चक्रण भोजन निर्माण का विकल्प नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In grass → grasshopper → frog → snake, which trophic level does the frog occupy?",
+        "hi": "घास → टिड्डा → मेंढक → साँप में मेंढक किस पोषी स्तर पर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Level 1 belongs to the grass producer.",
+            "hi": "स्तर 1 उत्पादक घास का है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "Level 2 belongs to the grasshopper.",
+            "hi": "स्तर 2 टिड्डे का है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "The snake occupies level 4 in this chain.",
+            "hi": "इस शृंखला में साँप स्तर 4 पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "The frog eats the primary consumer and is a secondary consumer.",
+            "hi": "मेंढक प्राथमिक उपभोक्ता को खाता है, इसलिए द्वितीयक उपभोक्ता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "With 4000 J in producers, what is the estimated secondary-consumer energy using the 10% model?",
+        "hi": "10% मॉडल में उत्पादकों के 4000 J से द्वितीयक उपभोक्ता को लगभग कितनी ऊर्जा मिलेगी?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "400 J",
+            "hi": "400 J"
+          },
+          "reason": {
+            "en": "This is the primary-consumer estimate after one transfer.",
+            "hi": "यह 1 स्थानांतरण के बाद प्राथमिक उपभोक्ता का अनुमान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4 J",
+            "hi": "4 J"
+          },
+          "reason": {
+            "en": "This would be the estimate after three transfers.",
+            "hi": "यह 3 स्थानांतरण के बाद का अनुमान होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "40 J",
+            "hi": "40 J"
+          },
+          "reason": {
+            "en": "Two transfers give 4000 × 0.1 × 0.1 = 40 J.",
+            "hi": "2 स्थानांतरण से 4000 × 0.1 × 0.1 = 40 J।"
+          }
+        },
+        {
+          "text": {
+            "en": "40000 J",
+            "hi": "40000 J"
+          },
+          "reason": {
+            "en": "Multiplying upward would incorrectly increase the available energy.",
+            "hi": "ऊपर की ओर बढ़ाकर गुणा करने से उपलब्ध ऊर्जा गलत रूप से बढ़ेगी।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which statement about the 10% rule is most accurate?",
+        "hi": "10% नियम के बारे में सबसे सही कथन क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It is an approximate school-level transfer estimate",
+            "hi": "यह कक्षागत ऊर्जा स्थानांतरण का लगभग अनुमान है"
+          },
+          "reason": {
+            "en": "Actual transfer efficiency varies between organisms and ecosystems.",
+            "hi": "वास्तविक दक्षता जीवों और पारितंत्रों में बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every ecosystem transfers exactly 10%",
+            "hi": "हर पारितंत्र में बिल्कुल 10% स्थानांतरण होता है"
+          },
+          "reason": {
+            "en": "The rule is an average approximation, not an exact universal efficiency.",
+            "hi": "यह औसत अनुमान है, बिल्कुल निश्चित सार्वभौमिक दक्षता नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "It specifies pollutant concentration",
+            "hi": "यह प्रदूषक की सांद्रता बताता है"
+          },
+          "reason": {
+            "en": "Biomagnification is a different process.",
+            "hi": "जैव आवर्धन अलग प्रक्रिया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It shows energy returning to the Sun",
+            "hi": "यह ऊर्जा को सूर्य में वापस दिखाता है"
+          },
+          "reason": {
+            "en": "Ecosystem energy flow is unidirectional.",
+            "hi": "पारितंत्र में ऊर्जा प्रवाह एकदिशीय है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which observation indicates biomagnification?",
+        "hi": "कौन-सा अवलोकन जैव आवर्धन दिखाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Energy in joules increases at every level",
+            "hi": "हर स्तर पर जूल में ऊर्जा बढ़ती है"
+          },
+          "reason": {
+            "en": "Available energy generally decreases along a food chain.",
+            "hi": "खाद्य शृंखला में उपलब्ध ऊर्जा सामान्यतः घटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Water evaporates from a pond",
+            "hi": "तालाब से पानी का वाष्पीकरण होता है"
+          },
+          "reason": {
+            "en": "Evaporation does not describe pollutant concentration through feeding links.",
+            "hi": "वाष्पीकरण भोजन कड़ियों में प्रदूषक सांद्रता नहीं बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "All animals contain the same amount of oxygen",
+            "hi": "सभी जंतुओं में ऑक्सीजन की समान मात्रा है"
+          },
+          "reason": {
+            "en": "This is not a definition or measurement of biomagnification.",
+            "hi": "यह जैव आवर्धन की परिभाषा या माप नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The same persistent chemical has greater concentration in higher consumers",
+            "hi": "उसी स्थायी रसायन की सांद्रता ऊँचे उपभोक्ताओं में अधिक है"
+          },
+          "reason": {
+            "en": "Increasing concentration across trophic levels is the relevant comparison.",
+            "hi": "पोषी स्तरों में बढ़ती सांद्रता ही संबंधित तुलना है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "What is the main protective role of ozone high in the atmosphere?",
+        "hi": "ऊपरी वायुमंडल की ओजोन की मुख्य सुरक्षात्मक भूमिका क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It produces all atmospheric oxygen",
+            "hi": "वह वायुमंडल की सारी ऑक्सीजन बनाती है"
+          },
+          "reason": {
+            "en": "That is not the protective role of the ozone layer.",
+            "hi": "यह ओजोन परत की सुरक्षात्मक भूमिका नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It absorbs harmful ultraviolet radiation",
+            "hi": "वह हानिकारक पराबैंगनी विकिरण अवशोषित करती है"
+          },
+          "reason": {
+            "en": "This reduces exposure of surface life to damaging UV.",
+            "hi": "इससे धरातल के जीवन पर हानिकारक UV का प्रभाव कम होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It makes all ground-level ozone harmless",
+            "hi": "वह धरातल की सारी ओजोन हानिरहित बनाती है"
+          },
+          "reason": {
+            "en": "Ground-level ozone can be harmful.",
+            "hi": "धरातल के पास ओजोन हानिकारक हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It recycles all ecosystem heat",
+            "hi": "वह पारितंत्र की सारी ऊष्मा पुनर्चक्रित करती है"
+          },
+          "reason": {
+            "en": "Ozone protection is unrelated to recycling ecosystem heat.",
+            "hi": "ओजोन की सुरक्षा भूमिका पारितंत्र की ऊष्मा पुनर्चक्रित करना नहीं है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which material is commonly biodegradable under suitable conditions?",
+        "hi": "उपयुक्त परिस्थितियों में सामान्यतः कौन-सा पदार्थ जैव निम्नीकरणीय है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A conventional plastic wrapper",
+            "hi": "साधारण प्लास्टिक रैपर"
+          },
+          "reason": {
+            "en": "Many conventional plastics persist under ordinary biological conditions.",
+            "hi": "कई साधारण प्लास्टिक सामान्य जैविक परिस्थितियों में बने रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A glass bottle",
+            "hi": "काँच की बोतल"
+          },
+          "reason": {
+            "en": "It is not readily broken down through ordinary biological decomposition.",
+            "hi": "यह सामान्य जैविक अपघटन से आसानी से नहीं टूटती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Vegetable peels",
+            "hi": "सब्जियों के छिलके"
+          },
+          "reason": {
+            "en": "Microorganisms can break down their organic material under suitable conditions.",
+            "hi": "उपयुक्त परिस्थितियों में सूक्ष्मजीव इनके जैविक पदार्थ का अपघटन कर सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "An aluminium can",
+            "hi": "एल्युमिनियम कैन"
+          },
+          "reason": {
+            "en": "It does not behave like decomposable food scraps.",
+            "hi": "यह अपघटित होने वाले भोजन अवशेषों जैसा व्यवहार नहीं करता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Why does the waste scene label its time as model weeks?",
+        "hi": "कचरा दृश्य में समय को मॉडल सप्ताह क्यों कहा गया है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Decomposition rates depend on material and conditions",
+            "hi": "अपघटन की गति पदार्थ और परिस्थितियों पर निर्भर है"
+          },
+          "reason": {
+            "en": "The slider illustrates a trend, not a universal lifespan for waste.",
+            "hi": "स्लाइडर प्रवृत्ति समझाता है, हर कचरे की सार्वभौमिक आयु नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All waste disappears after 10 weeks",
+            "hi": "हर कचरा 10 सप्ताह में गायब होता है"
+          },
+          "reason": {
+            "en": "Persistent materials may remain much longer, and no universal duration is implied.",
+            "hi": "स्थायी पदार्थ बहुत अधिक समय रह सकते हैं; कोई सार्वभौमिक अवधि नहीं दी गई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Plastic always becomes harmless when fragmented",
+            "hi": "टुकड़े होते ही प्लास्टिक हमेशा हानिरहित हो जाता है"
+          },
+          "reason": {
+            "en": "Fragmentation is not proof of biological breakdown or harmlessness.",
+            "hi": "टुकड़े होना जैविक अपघटन या हानिरहित होने का प्रमाण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Microorganisms digest every substance equally",
+            "hi": "सूक्ष्मजीव हर पदार्थ समान रूप से पचाते हैं"
+          },
+          "reason": {
+            "en": "Biological breakdown depends on particular organisms, enzymes and materials.",
+            "hi": "जैविक अपघटन विशिष्ट जीवों, एंजाइमों और पदार्थों पर निर्भर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which school action best supports suitable waste recovery?",
+        "hi": "विद्यालय का कौन-सा कार्य उचित कचरा पुनर्प्राप्ति में सहायक है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Burn mixed plastic and food waste",
+            "hi": "मिला प्लास्टिक और भोजन कचरा जलाना"
+          },
+          "reason": {
+            "en": "Open burning can cause air pollution and is not appropriate recovery.",
+            "hi": "खुला जलाना वायु प्रदूषण कर सकता है और उचित पुनर्प्राप्ति नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ask children to sort unknown hazardous refuse",
+            "hi": "बच्चों से अज्ञात खतरनाक कचरा छँटवाना"
+          },
+          "reason": {
+            "en": "Children should not handle dangerous mixed waste.",
+            "hi": "बच्चों को खतरनाक मिला कचरा नहीं छूना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mix clean paper into wet food scraps",
+            "hi": "साफ कागज गीले भोजन अवशेषों में मिलाना"
+          },
+          "reason": {
+            "en": "Contamination can make recovery harder.",
+            "hi": "दूषित होने से पुनर्प्राप्ति कठिन हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Keep clean paper separate for an appropriate collection stream",
+            "hi": "उचित संग्रह के लिए साफ कागज अलग रखना"
+          },
+          "reason": {
+            "en": "Source separation reduces contamination and helps suitable processing.",
+            "hi": "स्रोत पर पृथक्करण दूषण घटाता है और सही प्रसंस्करण में सहायता करता है।"
+          }
+        }
+      ],
+      "correct": 3
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Name the two main types of ecosystem components and give one example of each.",
+        "hi": "पारितंत्र के घटकों के 2 मुख्य प्रकार और प्रत्येक का 1 उदाहरण लिखिए।"
+      },
+      "answer": {
+        "en": "Biotic components are living, such as grass. Abiotic components are non-living conditions or materials, such as sunlight or water.",
+        "hi": "जैव घटक सजीव होते हैं, जैसे घास। अजैव घटक निर्जीव परिस्थितियाँ या पदार्थ हैं, जैसे प्रकाश या पानी।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish a food chain from a food web.",
+        "hi": "खाद्य शृंखला और खाद्य जाल में अंतर बताइए।"
+      },
+      "answer": {
+        "en": "A food chain shows one feeding pathway. A food web contains interconnected feeding pathways, reflecting alternative food relationships.",
+        "hi": "खाद्य शृंखला भोजन संबंध का एक मार्ग दिखाती है। खाद्य जाल में कई जुड़े मार्ग होते हैं जो वैकल्पिक भोजन संबंध दिखाते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Estimate secondary-consumer energy when producers have 6000 J, using approximate 10% transfer.",
+        "hi": "लगभग 10% स्थानांतरण के अनुसार उत्पादकों में 6000 J हों तो द्वितीयक उपभोक्ता की ऊर्जा निकालिए।"
+      },
+      "answer": {
+        "en": "There are two transfers: 6000 × 0.1 = 600 J, then 600 × 0.1 = 60 J. The estimated answer is 60 J.",
+        "hi": "2 स्थानांतरण: 6000 × 0.1 = 600 J, फिर 600 × 0.1 = 60 J। अनुमानित उत्तर 60 J है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Define biomagnification and state why energy flow is different.",
+        "hi": "जैव आवर्धन की परिभाषा और ऊर्जा प्रवाह से उसका अंतर लिखिए।"
+      },
+      "answer": {
+        "en": "Biomagnification is an increase in concentration of certain persistent pollutants at higher trophic levels. Available food energy generally decreases at successive levels; pollutant concentration and energy are different quantities.",
+        "hi": "कुछ स्थायी प्रदूषकों की सांद्रता ऊँचे पोषी स्तरों पर बढ़ना जैव आवर्धन है। लगातार स्तरों पर उपलब्ध भोजन ऊर्जा सामान्यतः घटती है। प्रदूषक सांद्रता और ऊर्जा अलग राशियाँ हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "State one role of the ozone layer and one cause of its depletion.",
+        "hi": "ओजोन परत का 1 कार्य और उसके क्षय का 1 कारण लिखिए।"
+      },
+      "answer": {
+        "en": "Upper-atmosphere ozone absorbs harmful ultraviolet radiation. Ozone-depleting substances such as CFCs can damage this protective layer.",
+        "hi": "ऊपरी वायुमंडल की ओजोन हानिकारक पराबैंगनी विकिरण अवशोषित करती है। CFCs जैसे ओजोन क्षयकारी पदार्थ इस सुरक्षात्मक परत को हानि पहुँचाते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can biodegradable waste still be an environmental problem? Give a suitable handling measure.",
+        "hi": "जैव निम्नीकरणीय कचरा भी पर्यावरणीय समस्या क्यों हो सकता है? प्रबंधन का 1 उपाय लिखिए।"
+      },
+      "answer": {
+        "en": "Large unmanaged accumulations can cause unpleasant conditions and pollution. Separate suitable organic waste and send it to an appropriate managed composting or treatment system.",
+        "hi": "बहुत अधिक कचरा बिना व्यवस्था जमा होने से दुर्गंधपूर्ण स्थिति और प्रदूषण हो सकता है। उपयुक्त जैविक कचरा अलग करके नियंत्रित कंपोस्ट या सही उपचार व्यवस्था में भेजें।"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT Science Class 10, Chapter 13: Our Environment, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc113.pdf"
+    },
+    {
+      "title": "UPMSP Science Class 10 syllabus, session 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ]
+}

@@ -1,0 +1,1474 @@
+{
+  "number": 8,
+  "id": "chemistry11-08",
+  "title": {
+    "en": "Organic Chemistry – Some Basic Principles and Techniques",
+    "hi": "कार्बनिक रसायन: कुछ आधारभूत सिद्धांत तथा तकनीकें"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "chem11-08-1",
+      "title": {
+        "en": "Hybridisation and bonding",
+        "hi": "संकरण और आबंधन"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 21
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Carbon hybridisation index",
+            "hi": "कार्बन संकरण क्रम"
+          },
+          "min": 0,
+          "max": 2,
+          "step": 1,
+          "initial": 0,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Connect hybridisation with ideal local bond directions.",
+        "hi": "संकरण को आदर्श स्थानीय आबंध दिशाओं से जोड़ें।"
+      },
+      "observe": {
+        "en": "Compare sp3, sp2 and sp models at 109.5°,120° and180°.",
+        "hi": "sp3, sp2 और sp को 109.5°,120° तथा180° पर तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Orbital mixing and drawn lobes are bonding models, not literal moving electron paths; real angles may deviate.",
+        "hi": "कक्षक मिश्रण और पालियाँ आबंधन मॉडल हैं, इलेक्ट्रॉनों के वास्तविक चलते पथ नहीं; वास्तविक कोण बदल सकते हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Four,three or two directed hybrid orbitals give tetrahedral,planar or linear arrangements.",
+          "hi": "4,3 या2 दिशायुक्त संकर कक्षक चतुष्फलकीय,समतलीय या रैखिक व्यवस्था देते हैं।"
+        }
+      },
+      "realLife": {
+        "en": "Local carbon geometry helps interpret organic structures.",
+        "hi": "स्थानीय कार्बन ज्यामिति कार्बनिक संरचना समझने में मदद करती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which model is linear?",
+          "hi": "कौन-सा मॉडल रैखिक है?"
+        },
+        "options": [
+          {
+            "en": "sp3",
+            "hi": "sp3"
+          },
+          {
+            "en": "sp2",
+            "hi": "sp2"
+          },
+          {
+            "en": "sp",
+            "hi": "sp"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "sp has two opposite hybrid directions at180°.",
+          "hi": "sp की2 दिशाएँ180° पर विपरीत हैं।"
+        }
+      },
+      "selectors": [],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected species or electron count",
+            "hi": "चुनी स्पीशीज़ या इलेक्ट्रॉन संख्या"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Comparison or conserved amount",
+            "hi": "तुलना या संरक्षित मात्रा"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "chem11-08-1-low",
+          "label": {
+            "en": "Set the lower value 0 .",
+            "hi": "निचला मान 0  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "chem11-08-1-high",
+          "label": {
+            "en": "Compare the upper value 2 .",
+            "hi": "ऊपरी मान 2  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 1.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.0
+          },
+          "text": {
+            "en": "The first models distribute bonds over four or three directions.",
+            "hi": "शुरुआती मॉडल आबंधों को4 या3 दिशाओं में बाँटते हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.0
+          },
+          "text": {
+            "en": "The sp model leaves two unhybridised p orbitals.",
+            "hi": "sp मॉडल में2 असंकरित p कक्षक बचते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chem11-08-2",
+      "title": {
+        "en": "Inductive effect model",
+        "hi": "प्रेरणिक प्रभाव मॉडल"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 22
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Sigma bonds from substituent",
+            "hi": "प्रतिस्थापी से सिग्मा आबंध"
+          },
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "initial": 2,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Observe a qualitative weakening of induction with distance.",
+        "hi": "दूरी के साथ प्रेरणिक प्रभाव का गुणात्मक क्षय देखें।"
+      },
+      "observe": {
+        "en": "Increase the number of sigma bonds from a substituent.",
+        "hi": "प्रतिस्थापी से सिग्मा आबंधों की संख्या बढ़ाएँ।"
+      },
+      "modelNote": {
+        "en": "Strength index 1/2^(bonds−1) is an invented visual scale, not a universal measured law or a real charge calculation.",
+        "hi": "बल सूचकांक 1/2^(आबंध−1) केवल दृश्य पैमाना है, सार्वभौमिक मापा नियम या वास्तविक आवेश गणना नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Sigma polarisation is generally less influential farther from the substituent.",
+          "hi": "सिग्मा ध्रुवण का असर प्रतिस्थापी से दूर सामान्यतः घटता है।"
+        }
+      },
+      "realLife": {
+        "en": "Distance helps compare inductive contributions to organic acidity.",
+        "hi": "दूरी से कार्बनिक अम्लता में प्रेरणिक योगदान तुलना कर सकते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "What happens to the shown index at larger distance?",
+          "hi": "अधिक दूरी पर दिखा सूचकांक क्या करता है?"
+        },
+        "options": [
+          {
+            "en": "Decreases",
+            "hi": "घटता है"
+          },
+          {
+            "en": "Always doubles",
+            "hi": "हमेशा दुगुना होता है"
+          },
+          {
+            "en": "Changes nuclear mass",
+            "hi": "नाभिक द्रव्यमान बदलता है"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The symbolic index decreases as sigma-bond distance increases.",
+          "hi": "सिग्मा दूरी बढ़ने पर सांकेतिक सूचकांक घटता है।"
+        }
+      },
+      "selectors": [],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected species or electron count",
+            "hi": "चुनी स्पीशीज़ या इलेक्ट्रॉन संख्या"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Comparison or conserved amount",
+            "hi": "तुलना या संरक्षित मात्रा"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "chem11-08-2-low",
+          "label": {
+            "en": "Set the lower value 1 .",
+            "hi": "निचला मान 1  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "chem11-08-2-high",
+          "label": {
+            "en": "Compare the upper value 5 .",
+            "hi": "ऊपरी मान 5  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Nearby bonds carry the larger symbolic polarisation.",
+            "hi": "पास के आबंधों में सांकेतिक ध्रुवण अधिक है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Farther bonds show weaker influence, without claiming an exact molecular value.",
+            "hi": "दूर के आबंध कम असर दिखाते हैं; यह सटीक आण्विक मान का दावा नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chem11-08-3",
+      "title": {
+        "en": "Chromatography",
+        "hi": "वर्णलेखिकी"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 23
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Solute travel distance",
+            "hi": "विलेय के चलने की दूरी"
+          },
+          "min": 1,
+          "max": 8,
+          "step": 1,
+          "initial": 4,
+          "unit": "cm"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Calculate Rf from two distances measured from one origin.",
+        "hi": "एक आरंभ से मापी2 दूरियों से Rf निकालें।"
+      },
+      "observe": {
+        "en": "The solvent front stays at8cm while the spot moves.",
+        "hi": "विलायक अग्रभाग8cm पर है; धब्बा बदलता है।"
+      },
+      "modelNote": {
+        "en": "This is a distance-ratio diagram, not a prediction of a real chromatogram or an identification by Rf alone.",
+        "hi": "यह दूरी अनुपात चित्र है, वास्तविक वर्णलेख या केवल Rf से पहचान का अनुमान नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Rf equals spot distance divided by front distance.",
+          "hi": "Rf धब्बे की दूरी को अग्रभाग की दूरी से भाग देने पर मिलता है।"
+        }
+      },
+      "realLife": {
+        "en": "Chromatography can separate components with different phase interactions.",
+        "hi": "अलग प्रावस्था अंतःक्रियाओं वाले घटक वर्णलेखिकी से अलग हो सकते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Rf when spot=4cm and front=8cm?",
+          "hi": "धब्बा4cm तथा अग्रभाग8cm पर Rf?"
+        },
+        "options": [
+          {
+            "en": "0.5",
+            "hi": "0.5"
+          },
+          {
+            "en": "2cm",
+            "hi": "2cm"
+          },
+          {
+            "en": "12",
+            "hi": "12"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "4/8=0.5 and units cancel.",
+          "hi": "4/8=0.5 और इकाइयाँ कटती हैं।"
+        }
+      },
+      "selectors": [],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected species or electron count",
+            "hi": "चुनी स्पीशीज़ या इलेक्ट्रॉन संख्या"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Comparison or conserved amount",
+            "hi": "तुलना या संरक्षित मात्रा"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "chem11-08-3-low",
+          "label": {
+            "en": "Set the lower value 1 cm.",
+            "hi": "निचला मान 1 cm करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "chem11-08-3-high",
+          "label": {
+            "en": "Compare the upper value 8 cm.",
+            "hi": "ऊपरी मान 8 cm से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 7.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 4.5
+          },
+          "text": {
+            "en": "A shorter travel gives a smaller Rf.",
+            "hi": "कम दूरी पर Rf छोटा है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 4.5
+          },
+          "text": {
+            "en": "Approaching the front brings Rf toward1 in this diagram.",
+            "hi": "अग्रभाग के पास आने पर चित्र में Rf,1 की ओर जाता है।"
+          }
+        }
+      ]
+    }
+  ],
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Chemistry Class 11 and UP Board 2026–27; consult the prescribed text and teacher-led practical work.",
+    "hi": "NCERT कक्षा 11 रसायन विज्ञान तथा यूपी बोर्ड 2026–27 पर आधारित मौलिक अध्ययन व्याख्याएँ; निर्धारित पुस्तक और शिक्षक के निर्देशन वाले प्रयोग भी पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry Part II, Chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/kech202.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Chemistry 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/152-Chemistry-Class-11.pdf"
+    }
+  ],
+  "goal": {
+    "en": "Read organic structures, explain electronic effects and connect purification with composition.",
+    "hi": "कार्बनिक संरचनाएँ पढ़ें, इलेक्ट्रॉनिक प्रभाव समझें तथा शोधन को संघटन से जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Carbon bonding and hybridisation",
+        "hi": "कार्बन आबंधन और संकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Carbon forms a wide range of compounds because it makes strong covalent bonds with itself and many other elements. Catenation means linking carbon atoms into chains, branches or rings. Carbon usually completes four covalent bonds in familiar neutral organic structures, but intermediate ions and radicals require separate electron accounting. Hybridisation is a model for forming directed orbitals, not a motion in which an atom physically changes shape on command. An sp3 carbon has four approximately tetrahedral bond directions, with an ideal angle near 109.5°. An sp2 carbon has three coplanar directions near 120° and an unhybridised p orbital. An sp carbon has two opposite directions at 180° and two unhybridised p orbitals. A sigma bond results from head-on overlap; a pi bond from suitable lateral overlap. A double bond contains one sigma and one pi bond, while a triple bond contains one sigma and two pi bonds. These descriptions help predict geometry and restricted rotation.",
+          "hi": "कार्बन अपने तथा अनेक दूसरे तत्वों के साथ मजबूत सहसंयोजक आबंध बनाता है, इसलिए उसके यौगिक बहुत विविध हैं। कार्बन परमाणुओं का शृंखला, शाखा या वलय में जुड़ना शृंखलन (Catenation) है। परिचित उदासीन कार्बनिक संरचनाओं में कार्बन सामान्यतः 4 सहसंयोजक आबंध पूरे करता है। लेकिन मध्यवर्ती आयन और मुक्त मूलक के लिए इलेक्ट्रॉन का अलग हिसाब रखना पड़ता है। संकरण (Hybridisation) दिशायुक्त कक्षकों का एक मॉडल है; यह आदेश मिलते ही किसी परमाणु के वास्तविक आकार बदलने की फिल्म नहीं है। sp3 कार्बन की 4 दिशाएँ लगभग चतुष्फलकीय तथा आदर्श कोण 109.5° होता है। sp2 की 3 दिशाएँ एक समतल में 120° पर और एक असंकरित p कक्षक होता है। sp की 2 विपरीत दिशाएँ 180° पर तथा 2 असंकरित p कक्षक होते हैं। सामने से अतिव्यापन से सिग्मा (Sigma) और उपयुक्त पार्श्व अतिव्यापन से पाई (Pi) आबंध बनता है। द्वि-आबंध में 1 सिग्मा और 1 पाई, त्रि-आबंध में 1 सिग्मा और 2 पाई होते हैं। इससे ज्यामिति और घूर्णन की सीमाएँ समझने में मदद मिलती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Count electron regions around the selected carbon, then identify local geometry; different carbons in one molecule can have different hybridisations.",
+          "hi": "चुने कार्बन के इलेक्ट्रॉन क्षेत्रों को गिनकर स्थानीय ज्यामिति पहचानें; एक ही अणु के अलग कार्बनों का संकरण अलग हो सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many pi bonds are in a carbon–carbon triple bond?",
+          "hi": "कार्बन–कार्बन त्रि-आबंध में कितने पाई आबंध हैं?"
+        },
+        "answer": {
+          "en": "Two pi bonds and one sigma bond.",
+          "hi": "2 पाई तथा 1 सिग्मा आबंध।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Representing and classifying molecules",
+        "hi": "अणुओं का निरूपण और वर्गीकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "A molecular formula gives atom numbers but not the complete arrangement. Expanded, condensed and bond-line formulae show increasing levels of structural abbreviation. In a bond-line drawing, an unlabelled line end or corner represents carbon; hydrogens attached to carbon are usually omitted and inferred from normal valency. Heteroatoms such as oxygen and nitrogen must be shown, and hydrogens on them are generally written when needed to remove ambiguity. A single line represents a bond, not an entire molecule or a fixed length measurement. Open-chain compounds may be straight or branched; cyclic compounds contain rings. A ring containing only carbon is homocyclic, while one containing a heteroatom is heterocyclic. Functional groups such as alcohol, aldehyde, ketone and carboxylic acid help organise compounds by characteristic chemistry. Do not call every ring aromatic: aromaticity requires electronic conditions considered with suitable examples. Convert each shorthand representation back to a clear connectivity picture before counting atoms or comparing possible isomers.",
+          "hi": "आण्विक सूत्र (Molecular formula) परमाणुओं की संख्या बताता है, पूरा जुड़ाव नहीं। विस्तृत, संघनित और आबंध-रेखा सूत्र संरचना को अलग स्तर पर संक्षिप्त करते हैं। आबंध-रेखा चित्र में बिना नाम वाला रेखा सिरा या कोना कार्बन को दर्शाता है। कार्बन से जुड़े हाइड्रोजन सामान्यतः नहीं लिखे जाते; उन्हें सामान्य संयोजकता से पूरा करते हैं। ऑक्सीजन और नाइट्रोजन जैसे विषम परमाणु जरूर दिखाए जाते हैं। उन पर जुड़े हाइड्रोजन भी अस्पष्टता हटाने के लिए आवश्यक होने पर लिखते हैं। एक रेखा एक आबंध का संकेत है, कोई पूरा अणु या मापी हुई निश्चित लंबाई नहीं। खुली शृंखला सीधी या शाखित हो सकती है और चक्रीय यौगिक में वलय होता है। केवल कार्बन वाला वलय समचक्रीय तथा विषम परमाणु वाला विषमचक्रीय है। ऐल्कोहॉल, ऐल्डिहाइड, कीटोन और कार्बोक्सिलिक अम्ल जैसे क्रियात्मक समूह (Functional groups) विशिष्ट रासायनिक व्यवहार के आधार पर वर्गीकरण में मदद करते हैं। हर वलय को ऐरोमैटिक न कहें; उसके लिए उचित इलेक्ट्रॉनिक शर्तें चाहिए। किसी भी संक्षिप्त चित्र में परमाणु गिनने या समावयव तुलना करने से पहले उसका स्पष्ट जुड़ाव समझें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A formula can be abbreviated without changing connectivity; missing carbon-bound hydrogens must still be included when finding the molecular formula.",
+          "hi": "सूत्र छोटा लिखने से जुड़ाव नहीं बदलता; आण्विक सूत्र निकालते समय छिपे कार्बन-संबद्ध हाइड्रोजन भी गिनें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does an unlabelled corner in a bond-line formula usually mean?",
+          "hi": "आबंध-रेखा सूत्र का बिना नाम वाला कोना सामान्यतः क्या है?"
+        },
+        "answer": {
+          "en": "A carbon atom, with enough implied hydrogens to satisfy the shown valency.",
+          "hi": "कार्बन परमाणु; दिखे आबंधों के अनुसार जरूरी हाइड्रोजन माने जाते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Systematic nomenclature",
+        "hi": "व्यवस्थित नामकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "An IUPAC name communicates a structure through a parent, numbers, substituent prefixes and an appropriate suffix. Identify the principal functional group and choose a suitable parent containing it and the relevant multiple bonds. Number the parent to give the required priority to the principal group and then apply the proper lowest-locant comparisons. A longest chain chosen while excluding the principal group is not automatically a correct parent. Identify substituents with their positions, repeat them with suitable multiplicative prefixes, and arrange simple substituent names alphabetically, ignoring di, tri and similar multiplicative prefixes in this ordering. For example, CH3CH(CH3)CH2CH3 is 2-methylbutane. The position 3 describes the same connectivity from the opposite direction but is not the preferred numbering. Punctuation matters: commas separate numbers and hyphens separate numbers from words. A naming answer should be checked by redrawing it. If the reconstructed structure differs in carbon count, functional group or bond position, revisit the parent selection rather than merely changing spelling.",
+          "hi": "IUPAC नाम में मूल शृंखला या वलय, स्थान संख्याएँ, प्रतिस्थापी उपसर्ग और उचित प्रत्यय मिलकर संरचना बताते हैं। पहले प्रमुख क्रियात्मक समूह पहचानें। फिर ऐसा उपयुक्त मूल चुनें जिसमें वह समूह तथा संबंधित बहु-आबंध शामिल हों। क्रमांकन में प्रमुख समूह को नियमानुसार प्राथमिकता दें और उसके बाद सही न्यूनतम स्थान संख्याओं की तुलना करें। सबसे लंबी शृंखला यदि प्रमुख समूह को छोड़ देती है तो केवल लंबाई से वह सही मूल नहीं बन जाती। प्रतिस्थापियों के नाम और स्थान लिखें, दोहराव के लिए उचित बहुगुणक उपसर्ग लें तथा सरल प्रतिस्थापी नाम वर्णक्रम में रखें। इस वर्णक्रम में di, tri जैसे बहुगुणक उपसर्गों को नहीं गिनते। उदाहरण CH3CH(CH3)CH2CH3 का नाम 2-methylbutane है। उलटी दिशा से 3 लिखने पर जुड़ाव वही दिख सकता है, लेकिन वह पसंदीदा क्रमांकन नहीं है। विराम-चिह्न भी अर्थ रखते हैं: संख्याओं के बीच अल्पविराम और संख्या तथा शब्द के बीच हाइफन लगता है। नाम की जाँच उसके आधार पर चित्र फिर बनाकर करें। कार्बन गिनती, समूह या आबंध का स्थान बदल जाए तो केवल वर्तनी नहीं, मूल चयन और क्रमांकन दोबारा देखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Parent selection, numbering and substituent ordering are separate decisions; solve them in that order and verify the finished name structurally.",
+          "hi": "मूल चयन, क्रमांकन और प्रतिस्थापी क्रम अलग निर्णय हैं; इसी क्रम में हल करके अंतिम नाम का संरचनात्मक सत्यापन करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Name CH3CH(CH3)CH3.",
+          "hi": "CH3CH(CH3)CH3 का नाम दें।"
+        },
+        "answer": {
+          "en": "2-methylpropane.",
+          "hi": "2-methylpropane।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Isomerism and structural comparison",
+        "hi": "समावयवता और संरचनात्मक तुलना"
+      },
+      "paragraphs": [
+        {
+          "en": "Isomers have the same molecular formula but differ in arrangement. Structural isomers differ in connectivity. Chain isomerism changes the carbon skeleton, position isomerism changes the position of a group or multiple bond, and functional isomerism changes the functional-group type. Butane and 2-methylpropane illustrate chain isomerism; propan-1-ol and propan-2-ol illustrate position isomerism. Ethanol and methoxymethane share C2H6O but contain different functional arrangements. Different drawings obtained merely by turning a paper or rotating an allowed single bond are not necessarily different structural isomers. Compare which atom is bonded to which, not the drawing's left and right positions. Stereoisomers share connectivity but differ in spatial arrangement; geometric isomerism is explored further with alkenes. When enumerating structures, preserve the molecular formula and normal valencies, then remove duplicates by systematic naming or a connectivity check. Adding a branch without shortening another part of a fixed-carbon skeleton would create a different formula, not an isomer.",
+          "hi": "समावयव (Isomers) का आण्विक सूत्र समान होता है, लेकिन व्यवस्था अलग होती है। संरचनात्मक समावयवों में परमाणुओं का जुड़ाव अलग है। शृंखला समावयवता में कार्बन कंकाल, स्थिति समावयवता में समूह या बहु-आबंध का स्थान और क्रियात्मक समावयवता में समूह का प्रकार बदलता है। butane तथा 2-methylpropane शृंखला समावयवता के उदाहरण हैं। propan-1-ol तथा propan-2-ol में समूह की स्थिति अलग है। ethanol और methoxymethane दोनों C2H6O रखते हैं, पर उनके क्रियात्मक जुड़ाव अलग हैं। केवल कागज घुमाने या अनुमति वाले एकल आबंध को घुमाने से बने हर अलग चित्र को नया संरचनात्मक समावयव न मानें। देखें कि कौन-सा परमाणु किससे जुड़ा है; केवल चित्र में बाएँ-दाएँ स्थान न देखें। त्रिविम समावयवों में जुड़ाव समान, स्थानिक व्यवस्था अलग होती है; ऐल्कीन में ज्यामितीय समावयवता आगे पढ़ते हैं। सभी संरचनाएँ बनाते समय आण्विक सूत्र और सामान्य संयोजकताएँ सुरक्षित रखें। व्यवस्थित नाम या जुड़ाव जाँच से दोहराव हटाएँ। निश्चित कार्बन संख्या वाले ढाँचे में दूसरी जगह कम किए बिना नई शाखा जोड़ना सूत्र बदल देगा; वह उसी सूत्र का समावयव नहीं होगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Confirm an identical molecular formula before naming an isomeric relationship, and distinguish a changed formula from a changed arrangement.",
+          "hi": "समावयवता बताने से पहले समान आण्विक सूत्र की पुष्टि करें और सूत्र बदलने तथा व्यवस्था बदलने में अंतर रखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Are two rotated drawings automatically distinct isomers?",
+          "hi": "क्या घुमाए हुए 2 चित्र हमेशा अलग समावयव हैं?"
+        },
+        "answer": {
+          "en": "No; connectivity and relevant spatial relationships must actually differ.",
+          "hi": "नहीं; जुड़ाव या संबंधित स्थानिक संबंध वास्तव में अलग होने चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Electronic displacement effects",
+        "hi": "इलेक्ट्रॉनिक विस्थापन प्रभाव"
+      },
+      "paragraphs": [
+        {
+          "en": "Electron density is not distributed equally across every bond. An inductive effect describes permanent polarisation transmitted through sigma bonds because attached groups differ in their tendency to withdraw or donate electron density. Its influence generally weakens with increasing distance. The scene uses a halving index only to visualise this qualitative decrease; it is not an experimental equation for every molecule. Resonance describes delocalisation represented by multiple contributing structures with the same atom framework but different electron placement. The actual molecule is a resonance hybrid, not a system rapidly jumping between independent drawings. Hyperconjugation involves interaction of suitable sigma electrons with an adjacent p or pi system and can help explain stability trends. The electromeric effect describes a complete temporary displacement of a pi-electron pair during an appropriate reagent interaction in this syllabus treatment. Assess a reaction site using the entire structure and the relevant effect rather than assuming that every electron-withdrawing group acts identically in every position.",
+          "hi": "हर आबंध में इलेक्ट्रॉन घनत्व बराबर नहीं बँटा होता। प्रेरणिक प्रभाव (Inductive effect) अलग समूहों की इलेक्ट्रॉन खींचने या देने की प्रवृत्ति से सिग्मा आबंधों में फैलने वाला स्थायी ध्रुवण है। दूरी बढ़ने पर इसका असर सामान्यतः घटता है। दृश्य में आधा होता सूचकांक केवल यह गुणात्मक कमी दिखाता है; वह सभी अणुओं के लिए मापा हुआ प्रायोगिक नियम नहीं है। अनुनाद (Resonance) में वही परमाणु ढाँचा रखते हुए इलेक्ट्रॉनों की अलग संभावित स्थितियों वाले योगदानकारी चित्र बनाते हैं। वास्तविक अणु अनुनाद संकर है; वह अलग चित्रों के बीच बार-बार कूदता नहीं है। अतिसंयुग्मन (Hyperconjugation) में उपयुक्त सिग्मा इलेक्ट्रॉन पास के p या पाई तंत्र से अंतःक्रिया करते हैं और स्थायित्व की प्रवृत्ति समझाने में मदद करते हैं। पाठ्यक्रम में इलेक्ट्रोमेरिक प्रभाव उपयुक्त अभिकर्मक के आने पर पाई इलेक्ट्रॉन युग्म के अस्थायी पूर्ण विस्थापन का वर्णन है। किसी अभिक्रिया स्थल का निर्णय पूरे ढाँचे तथा संबंधित प्रभाव से करें। यह न मानें कि हर इलेक्ट्रॉन खींचने वाला समूह सभी स्थानों और परिस्थितियों में बिल्कुल एक जैसा व्यवहार करता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Induction passes through sigma bonds, while resonance requires suitable connected orbitals; these ideas describe different kinds of electron redistribution.",
+          "hi": "प्रेरणिक प्रभाव सिग्मा आबंधों से चलता है, जबकि अनुनाद के लिए उचित जुड़े कक्षक चाहिए; दोनों इलेक्ट्रॉन वितरण के अलग पहलू हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Are resonance contributors separate substances in equilibrium?",
+          "hi": "क्या अनुनाद योगदानकारी चित्र साम्य में अलग पदार्थ हैं?"
+        },
+        "answer": {
+          "en": "No; they are representations of one delocalised structure.",
+          "hi": "नहीं; वे एक विस्थानीकृत संरचना के निरूपण हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Bond cleavage and reaction partners",
+        "hi": "आबंध विदलन और अभिक्रिया सहभागी"
+      },
+      "paragraphs": [
+        {
+          "en": "A covalent bond may break homolytically or heterolytically. In homolytic cleavage each fragment receives one bonding electron, commonly producing radicals. In heterolytic cleavage both bonding electrons go to one fragment, producing an electron-rich and an electron-deficient partner where appropriate. A curved single-headed arrow tracks one electron; a double-headed curved arrow tracks an electron pair. These arrows describe electron movement and are different from the straight arrow between reactants and products. A carbocation has a positively charged carbon centre and an incomplete octet in familiar simple examples; a carbanion has a negatively charged carbon centre with a lone pair. A free radical has an unpaired electron. Nucleophiles donate an electron pair and electrophiles accept one. Charge can guide recognition but is not the only criterion: neutral water can act as a nucleophile and electron-deficient neutral species can be electrophiles. Substitution, addition, elimination and rearrangement classify common organic reaction patterns, while a mechanism explains the sequence of electron changes.",
+          "hi": "सहसंयोजक आबंध का समांश या विषमांश विदलन हो सकता है। समांश विदलन (Homolytic cleavage) में हर खंड को आबंध का 1 इलेक्ट्रॉन मिलता है और प्रायः मुक्त मूलक बनते हैं। विषमांश विदलन (Heterolytic cleavage) में दोनों आबंध इलेक्ट्रॉन एक ही खंड को मिलते हैं; उपयुक्त स्थिति में इलेक्ट्रॉन समृद्ध और इलेक्ट्रॉन न्यून खंड बनते हैं। वक्र एक-सिरा तीर 1 इलेक्ट्रॉन और वक्र दो-सिरा तीर इलेक्ट्रॉन युग्म की गति बताता है। ये अभिकारक तथा उत्पाद के बीच वाले सीधे अभिक्रिया तीर से अलग हैं। सरल उदाहरणों में कार्बधनायन (Carbocation) धनावेशित कार्बन केंद्र तथा अधूरा अष्टक रखता है। कार्बऋणायन (Carbanion) ऋणावेशित कार्बन पर एकाकी युग्म रखता है। मुक्त मूलक में अयुग्मित इलेक्ट्रॉन है। नाभिकस्नेही (Nucleophile) इलेक्ट्रॉन युग्म देता और इलेक्ट्रॉनस्नेही (Electrophile) उसे स्वीकारता है। आवेश पहचान में मदद करता है, लेकिन अकेली कसौटी नहीं; उदासीन जल नाभिकस्नेही और इलेक्ट्रॉन न्यून उदासीन स्पीशीज़ इलेक्ट्रॉनस्नेही हो सकती है। प्रतिस्थापन, संकलन, विलोपन और पुनर्विन्यास सामान्य ढाँचे बताते हैं; क्रियाविधि इलेक्ट्रॉन परिवर्तनों का क्रम समझाती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Distinguish a radical from an ion by electron occupancy and charge, and identify arrow meanings before interpreting any proposed mechanism.",
+          "hi": "इलेक्ट्रॉन भराव और आवेश से मूलक तथा आयन में अंतर करें और क्रियाविधि पढ़ने से पहले हर तीर का अर्थ समझें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does a nucleophile donate?",
+          "hi": "नाभिकस्नेही क्या देता है?"
+        },
+        "answer": {
+          "en": "An electron pair to an electron-deficient site.",
+          "hi": "इलेक्ट्रॉन न्यून स्थल को इलेक्ट्रॉन युग्म।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Purification and chromatography",
+        "hi": "शोधन और वर्णलेखिकी"
+      },
+      "paragraphs": [
+        {
+          "en": "Purification separates a desired compound from impurities by using differences in physical properties. Crystallisation exploits differences in solubility with conditions; sublimation is useful when a suitable solid sublimes while other components do not. Distillation uses volatility differences, with method choice depending on boiling behaviour and stability. Reduced-pressure distillation can lower the temperature needed for boiling, and steam distillation is appropriate for certain steam-volatile, water-immiscible substances. These are selection principles, not instructions to perform unsupervised chemical work. Chromatography separates components because they interact differently with a stationary phase and a mobile phase. A spot travels a distance measured from the same starting line as the solvent front. The retention factor Rf is the spot distance divided by solvent-front distance, so it is dimensionless. If the spot travels 4 cm and the front 8 cm, Rf is 0.5. Rf values depend on the system and conditions and are not universal identifiers independent of solvent, stationary phase and temperature.",
+          "hi": "शोधन (Purification) भौतिक गुणों के अंतर का उपयोग करके वांछित यौगिक को अशुद्धियों से अलग करता है। क्रिस्टलीकरण में परिस्थितियों के साथ विलेयता का अंतर उपयोगी है। उर्ध्वपातन तब उपयुक्त है जब इच्छित ठोस उर्ध्वपातित हो और अन्य घटक न हों। आसवन में वाष्पशीलता का अंतर काम आता है; विधि चुनने में क्वथन व्यवहार और पदार्थ का स्थायित्व देखते हैं। कम दाब पर आसवन से उबलने के लिए जरूरी ताप कम किया जा सकता है। कुछ जल से अमिश्रणीय और भाप के साथ उड़ने वाले पदार्थों के लिए भाप आसवन उचित है। ये विधि चयन के सिद्धांत हैं, बिना शिक्षक के रासायनिक काम करने के निर्देश नहीं। वर्णलेखिकी (Chromatography) में घटक स्थिर प्रावस्था और गतिशील प्रावस्था से अलग-अलग अंतःक्रिया करते हैं, इसलिए अलग दूरी चलते हैं। धब्बे और विलायक अग्रभाग दोनों की दूरी उसी आरंभ रेखा से मापी जाती है। Rf धब्बे की दूरी और विलायक अग्रभाग की दूरी का अनुपात है, इसलिए विमाहीन है। 4 cm और 8 cm पर Rf = 0.5 है। Rf प्रणाली तथा परिस्थितियों पर निर्भर है; इसे विलायक, स्थिर प्रावस्था और ताप से स्वतंत्र सार्वभौमिक पहचान न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Measure both distances along the movement direction from one origin; a spot beyond the solvent front signals a measurement or interpretation error.",
+          "hi": "दोनों दूरियाँ गति की दिशा में एक ही आरंभ से लें; विलायक अग्रभाग से आगे धब्बा मिलने पर मापन या व्याख्या जाँचें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is Rf for a 2 cm spot and 8 cm front?",
+          "hi": "2 cm धब्बे और 8 cm अग्रभाग पर Rf क्या है?"
+        },
+        "answer": {
+          "en": "Rf = 2/8 = 0.25, with no unit.",
+          "hi": "Rf = 2/8 = 0.25, बिना इकाई।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Elemental analysis and composition",
+        "hi": "तत्वीय विश्लेषण और संघटन"
+      },
+      "paragraphs": [
+        {
+          "en": "Qualitative analysis asks which elements are present, while quantitative analysis asks how much of each is present. Carbon and hydrogen can be estimated from the carbon dioxide and water formed during complete combustion of a known sample, provided products are collected appropriately in a supervised analytical method. Carbon contributes 12 g per 44 g CO2; hydrogen contributes 2 g per 18 g H2O. These ratios convert product mass to element mass before dividing by sample mass and multiplying by 100. Oxygen is sometimes calculated by difference only when other possible elements and impurities have been accounted for. Nitrogen estimation includes Dumas and Kjeldahl methods, with applicability limitations; not every nitrogen-containing functional arrangement is correctly estimated by a simple Kjeldahl treatment. Qualitative sodium-fusion analysis converts suitable covalently bound elements into detectable ionic forms, but its reagents and heating require trained supervision. A percentage result should be checked against 100%, the sample identity and the possibility of incomplete collection rather than accepted because the arithmetic alone is neat.",
+          "hi": "गुणात्मक विश्लेषण (Qualitative analysis) बताता है कि कौन-से तत्व हैं, जबकि मात्रात्मक विश्लेषण (Quantitative analysis) उनकी मात्रा बताता है। ज्ञात नमूने के पूर्ण दहन से बने कार्बन डाइऑक्साइड तथा जल का उचित संग्रह करके कार्बन और हाइड्रोजन का आकलन किया जा सकता है। यह नियंत्रित, शिक्षक-निर्देशित विश्लेषण की बात है। 44 g CO2 में 12 g कार्बन और 18 g H2O में 2 g हाइड्रोजन का योगदान है। पहले इन अनुपातों से तत्व का द्रव्यमान निकालते हैं, फिर नमूने के द्रव्यमान से भाग देकर 100 से गुणा करते हैं। अंतर से ऑक्सीजन केवल तब निकालें जब बाकी संभावित तत्वों और अशुद्धियों का हिसाब हो। नाइट्रोजन के आकलन में Dumas और Kjeldahl विधियाँ हैं, लेकिन उनकी सीमाएँ भी हैं। हर प्रकार के नाइट्रोजन युक्त समूह के लिए साधारण Kjeldahl उपचार सही नहीं होता। गुणात्मक सोडियम-संगलन विश्लेषण उपयुक्त सहसंयोजक तत्वों को पहचान योग्य आयनिक रूपों में बदलता है, पर उसके अभिकर्मक और गरम करना प्रशिक्षित निगरानी चाहते हैं। प्रतिशत उत्तर को कुल 100%, नमूने की पहचान तथा अपूर्ण संग्रह की संभावना से जाँचें; केवल सुंदर गणना होने से उत्तर सही नहीं मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Element mass equals collected product mass times the correct elemental fraction; percentage uses the original sample mass as the denominator.",
+          "hi": "तत्व द्रव्यमान = एकत्र उत्पाद द्रव्यमान × सही तत्व अंश; प्रतिशत में हर के रूप में मूल नमूना द्रव्यमान आता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How much carbon is contained in 0.44 g CO2?",
+          "hi": "0.44 g CO2 में कितना कार्बन है?"
+        },
+        "answer": {
+          "en": "0.44 × 12/44 = 0.12 g carbon.",
+          "hi": "0.44 × 12/44 = 0.12 g कार्बन।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Rf = distance of solute spot / distance of solvent front",
+      "meaning": {
+        "en": "Both distances are measured from the same origin along the movement direction.",
+        "hi": "दोनों दूरियाँ गति दिशा में उसी आरंभ से मापते हैं।"
+      },
+      "units": {
+        "en": "Dimensionless ratio; distances must use the same length unit.",
+        "hi": "विमाहीन अनुपात; दोनों दूरियों की लंबाई इकाई समान हो।"
+      }
+    },
+    {
+      "expression": "%C = (12/44) × m(CO2)/m(sample) × 100",
+      "meaning": {
+        "en": "The 12/44 mass fraction converts carbon dioxide mass to carbon mass.",
+        "hi": "12/44 द्रव्यमान अंश CO2 को कार्बन द्रव्यमान में बदलता है।"
+      },
+      "units": {
+        "en": "Masses in the same unit; result is percent.",
+        "hi": "द्रव्यमान समान इकाई में; परिणाम प्रतिशत।"
+      }
+    },
+    {
+      "expression": "%H = (2/18) × m(H2O)/m(sample) × 100",
+      "meaning": {
+        "en": "The 2/18 fraction gives hydrogen contained in collected water.",
+        "hi": "2/18 अंश एकत्र जल में हाइड्रोजन का द्रव्यमान देता है।"
+      },
+      "units": {
+        "en": "Masses in the same unit; result is percent.",
+        "hi": "द्रव्यमान समान इकाई में; परिणाम प्रतिशत।"
+      }
+    },
+    {
+      "expression": "sp3: 109.5°; sp2: 120°; sp: 180°",
+      "meaning": {
+        "en": "Ideal bond directions for the stated local carbon models.",
+        "hi": "दिए स्थानीय कार्बन मॉडलों की आदर्श आबंध दिशाएँ।"
+      },
+      "units": {
+        "en": "Angles in degrees; real molecules can deviate.",
+        "hi": "कोण डिग्री में; वास्तविक अणुओं में विचलन संभव है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Count sigma and pi bonds in ethene, H2C=CH2.",
+        "hi": "एथीन H2C=CH2 में सिग्मा और पाई आबंध गिनें।"
+      },
+      "given": {
+        "en": "Four C–H single bonds and one C=C double bond.",
+        "hi": "4 C–H एकल और 1 C=C द्वि-आबंध।"
+      },
+      "find": {
+        "en": "Total sigma and pi counts.",
+        "hi": "कुल सिग्मा तथा पाई गिनती।"
+      },
+      "formula": {
+        "en": "A double bond = 1 sigma + 1 pi.",
+        "hi": "द्वि-आबंध = 1 सिग्मा + 1 पाई।"
+      },
+      "steps": [
+        {
+          "en": "The four C–H bonds contribute 4 sigma bonds.",
+          "hi": "4 C–H से 4 सिग्मा मिलते हैं।"
+        },
+        {
+          "en": "The C=C contributes 1 sigma and 1 pi.",
+          "hi": "C=C से 1 सिग्मा और 1 पाई मिलता है।"
+        }
+      ],
+      "answer": {
+        "en": "5 sigma bonds and 1 pi bond, dimensionless counts.",
+        "hi": "5 सिग्मा तथा 1 पाई आबंध, विमाहीन गिनती।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Name CH3CH(CH3)CH2CH3.",
+        "hi": "CH3CH(CH3)CH2CH3 का नाम दें।"
+      },
+      "given": {
+        "en": "A four-carbon parent containing a methyl branch.",
+        "hi": "4 कार्बन के मूल पर मेथिल शाखा।"
+      },
+      "find": {
+        "en": "Preferred systematic name.",
+        "hi": "पसंदीदा व्यवस्थित नाम।"
+      },
+      "formula": {
+        "en": "Use the lowest branch locant.",
+        "hi": "शाखा का न्यूनतम स्थानांक लें।"
+      },
+      "steps": [
+        {
+          "en": "Choose butane as the longest chain.",
+          "hi": "सबसे लंबी शृंखला butane चुनें।"
+        },
+        {
+          "en": "Number so the methyl branch is at 2, not 3.",
+          "hi": "क्रमांकन में methyl को 3 के बजाय 2 दें।"
+        }
+      ],
+      "answer": {
+        "en": "2-methylbutane.",
+        "hi": "2-methylbutane।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find Rf when a spot travels 3 cm and the solvent front 8 cm.",
+        "hi": "धब्बा 3 cm और विलायक अग्रभाग 8 cm चले तो Rf निकालें।"
+      },
+      "given": {
+        "en": "Distances from the same starting line: 3 cm and 8 cm.",
+        "hi": "एक ही आरंभ रेखा से दूरियाँ: 3 cm तथा 8 cm।"
+      },
+      "find": {
+        "en": "Retention factor.",
+        "hi": "धारण गुणक।"
+      },
+      "formula": {
+        "en": "Rf = dspot/dfront",
+        "hi": "Rf = dspot/dfront"
+      },
+      "steps": [
+        {
+          "en": "Divide 3 by 8.",
+          "hi": "3 को 8 से भाग दें।"
+        },
+        {
+          "en": "The centimetre units cancel.",
+          "hi": "cm की इकाइयाँ कटती हैं।"
+        }
+      ],
+      "answer": {
+        "en": "Rf = 0.375, dimensionless.",
+        "hi": "Rf = 0.375, विमाहीन।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A 0.30 g sample gives 0.44 g CO2. Find carbon percentage.",
+        "hi": "0.30 g नमूने से 0.44 g CO2 मिले। कार्बन प्रतिशत निकालें।"
+      },
+      "given": {
+        "en": "m(sample)=0.30 g; m(CO2)=0.44 g.",
+        "hi": "m(नमूना)=0.30 g; m(CO2)=0.44 g।"
+      },
+      "find": {
+        "en": "Mass percentage carbon.",
+        "hi": "कार्बन द्रव्यमान प्रतिशत।"
+      },
+      "formula": {
+        "en": "%C = (12/44) × m(CO2)/m(sample) ×100",
+        "hi": "%C = (12/44) × m(CO2)/m(नमूना) ×100"
+      },
+      "steps": [
+        {
+          "en": "Carbon mass = 0.44 ×12/44 = 0.12 g.",
+          "hi": "कार्बन द्रव्यमान = 0.44 ×12/44 = 0.12 g।"
+        },
+        {
+          "en": "Percentage = 0.12/0.30 ×100.",
+          "hi": "प्रतिशत = 0.12/0.30 ×100।"
+        }
+      ],
+      "answer": {
+        "en": "40% carbon.",
+        "hi": "40% कार्बन।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A 0.30 g C,H,O sample gives 0.44 g CO2 and 0.18 g H2O. Find its empirical formula.",
+        "hi": "0.30 g C,H,O नमूने से 0.44 g CO2 और 0.18 g H2O मिले। मूलानुपाती सूत्र निकालें।"
+      },
+      "given": {
+        "en": "Only C,H,O are present; complete collection is assumed.",
+        "hi": "केवल C,H,O हैं; पूरा संग्रह मानें।"
+      },
+      "find": {
+        "en": "Simplest whole-number atom ratio.",
+        "hi": "न्यूनतम पूर्णांक परमाणु अनुपात।"
+      },
+      "formula": {
+        "en": "n = m/M; oxygen mass by difference.",
+        "hi": "n = m/M; ऑक्सीजन द्रव्यमान अंतर से।"
+      },
+      "steps": [
+        {
+          "en": "C = 0.12 g; H = 0.18 ×2/18 = 0.02 g.",
+          "hi": "C = 0.12 g; H = 0.18 ×2/18 = 0.02 g।"
+        },
+        {
+          "en": "O = 0.30 −0.12 −0.02 = 0.16 g.",
+          "hi": "O = 0.30 −0.12 −0.02 = 0.16 g।"
+        },
+        {
+          "en": "Moles C,H,O = 0.01,0.02,0.01; divide by 0.01.",
+          "hi": "C,H,O के mol = 0.01,0.02,0.01; 0.01 से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "C:H:O = 1:2:1, empirical formula CH2O; a molar mass is needed for the molecular formula.",
+        "hi": "C:H:O = 1:2:1, मूलानुपाती सूत्र CH2O; आण्विक सूत्र के लिए मोलर द्रव्यमान चाहिए।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Ideal geometry at an sp3 carbon?",
+        "hi": "sp3 कार्बन की आदर्श ज्यामिति?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Tetrahedral",
+            "hi": "चतुष्फलकीय"
+          },
+          "reason": {
+            "en": "Four local directions are approximately tetrahedral.",
+            "hi": "4 स्थानीय दिशाएँ लगभग चतुष्फलकीय होती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Linear",
+            "hi": "रैखिक"
+          },
+          "reason": {
+            "en": "Linear geometry corresponds to sp carbon.",
+            "hi": "रैखिक ज्यामिति sp कार्बन की है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Trigonal planar",
+            "hi": "त्रिकोणीय समतलीय"
+          },
+          "reason": {
+            "en": "This corresponds to sp2 carbon.",
+            "hi": "यह sp2 कार्बन की है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always square planar",
+            "hi": "हमेशा वर्ग समतलीय"
+          },
+          "reason": {
+            "en": "That is not the ordinary sp3 carbon model.",
+            "hi": "यह सामान्य sp3 कार्बन मॉडल नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Pi bonds in a carbon–carbon triple bond?",
+        "hi": "कार्बन–कार्बन त्रि-आबंध में पाई आबंध?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "A triple bond has 1 sigma and 2 pi bonds.",
+            "hi": "त्रि-आबंध में 1 सिग्मा और 2 पाई हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "One pi bond belongs to a double bond.",
+            "hi": "1 पाई द्वि-आबंध में होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "One of the three bonds is sigma.",
+            "hi": "3 में से 1 आबंध सिग्मा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "A triple bond requires pi overlap.",
+            "hi": "त्रि-आबंध में पाई अतिव्यापन है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A nucleophile donates:",
+        "hi": "नाभिकस्नेही देता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "An electron pair",
+            "hi": "इलेक्ट्रॉन युग्म"
+          },
+          "reason": {
+            "en": "It supplies a pair to an electrophilic centre.",
+            "hi": "यह इलेक्ट्रॉनस्नेही केंद्र को युग्म देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a proton",
+            "hi": "केवल प्रोटॉन"
+          },
+          "reason": {
+            "en": "Proton donation defines an acid in another description.",
+            "hi": "प्रोटॉन दान दूसरे संदर्भ में अम्ल का गुण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A neutron",
+            "hi": "न्यूट्रॉन"
+          },
+          "reason": {
+            "en": "Organic bond mechanisms track electrons.",
+            "hi": "कार्बनिक आबंध क्रियाविधि इलेक्ट्रॉन देखती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No electron density",
+            "hi": "कोई इलेक्ट्रॉन घनत्व नहीं"
+          },
+          "reason": {
+            "en": "Pair donation is central to this definition.",
+            "hi": "इस परिभाषा में युग्म दान जरूरी है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Homolytic cleavage usually produces:",
+        "hi": "समांश विदलन सामान्यतः देता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Radicals",
+            "hi": "मुक्त मूलक"
+          },
+          "reason": {
+            "en": "Each fragment takes one bonding electron.",
+            "hi": "हर खंड 1 आबंध इलेक्ट्रॉन लेता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only two positive ions",
+            "hi": "केवल 2 धनायन"
+          },
+          "reason": {
+            "en": "That would not conserve the original electron balance.",
+            "hi": "इससे मूल इलेक्ट्रॉन लेखा सही नहीं होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only water",
+            "hi": "केवल जल"
+          },
+          "reason": {
+            "en": "The products depend on the cleaved bond.",
+            "hi": "उत्पाद टूटे आबंध पर निर्भर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only electron-pair donation",
+            "hi": "केवल युग्म दान"
+          },
+          "reason": {
+            "en": "Homolysis splits the pair between fragments.",
+            "hi": "समांश विदलन युग्म को खंडों में बाँटता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Inductive effect is transmitted mainly through:",
+        "hi": "प्रेरणिक प्रभाव मुख्यतः किससे चलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Sigma bonds",
+            "hi": "सिग्मा आबंध"
+          },
+          "reason": {
+            "en": "It describes sigma-bond polarisation.",
+            "hi": "यह सिग्मा आबंध का ध्रुवण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A rapidly switching resonance equilibrium",
+            "hi": "तेजी से बदलता अनुनाद साम्य"
+          },
+          "reason": {
+            "en": "Resonance contributors are not separate equilibrium species.",
+            "hi": "अनुनाद चित्र अलग साम्य स्पीशीज़ नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only nuclear reactions",
+            "hi": "केवल नाभिकीय अभिक्रिया"
+          },
+          "reason": {
+            "en": "This is an electronic bonding effect.",
+            "hi": "यह इलेक्ट्रॉनिक आबंधन प्रभाव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only free protons",
+            "hi": "केवल मुक्त प्रोटॉन"
+          },
+          "reason": {
+            "en": "The effect is not proton flow.",
+            "hi": "यह प्रोटॉन प्रवाह नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A 4 cm spot and 8 cm solvent front give Rf:",
+        "hi": "4 cm धब्बा तथा 8 cm अग्रभाग दें तो Rf:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0.5",
+            "hi": "0.5"
+          },
+          "reason": {
+            "en": "4/8 = 0.5.",
+            "hi": "4/8 = 0.5।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "That reverses the required ratio.",
+            "hi": "यह अनुपात उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4 cm",
+            "hi": "4 cm"
+          },
+          "reason": {
+            "en": "Rf is a ratio, not a distance.",
+            "hi": "Rf अनुपात है, दूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "Distances must be divided, not added.",
+            "hi": "दूरियाँ जोड़नी नहीं, भाग देनी हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two structures with the same formula but different connectivity are:",
+        "hi": "समान सूत्र पर अलग जुड़ाव वाली संरचनाएँ:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Structural isomers",
+            "hi": "संरचनात्मक समावयव"
+          },
+          "reason": {
+            "en": "Connectivity differs while atom counts agree.",
+            "hi": "परमाणु गिनती समान और जुड़ाव अलग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always identical",
+            "hi": "हमेशा एक जैसी"
+          },
+          "reason": {
+            "en": "Different connectivity can define different substances.",
+            "hi": "अलग जुड़ाव अलग पदार्थ दे सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Different isotopes only",
+            "hi": "केवल अलग समस्थानिक"
+          },
+          "reason": {
+            "en": "Isotopes differ in nuclear neutron count.",
+            "hi": "समस्थानिकों में न्यूट्रॉन गिनती अलग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always different molecular formulae",
+            "hi": "हमेशा अलग आण्विक सूत्र"
+          },
+          "reason": {
+            "en": "Identical formula is part of the definition.",
+            "hi": "समान सूत्र परिभाषा का हिस्सा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Correct name of CH3CH(CH3)CH3?",
+        "hi": "CH3CH(CH3)CH3 का सही नाम?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2-methylpropane",
+            "hi": "2-methylpropane"
+          },
+          "reason": {
+            "en": "The longest parent has 3 carbons and a methyl branch at 2.",
+            "hi": "मूल में 3 कार्बन और 2 पर methyl शाखा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "But-1-ene",
+            "hi": "But-1-ene"
+          },
+          "reason": {
+            "en": "The shown molecule has no C=C double bond.",
+            "hi": "दिए अणु में C=C नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2-methylbutane",
+            "hi": "2-methylbutane"
+          },
+          "reason": {
+            "en": "That name contains 5 carbons, not 4.",
+            "hi": "उस नाम में 5 कार्बन हैं, यहाँ 4 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Methanol",
+            "hi": "Methanol"
+          },
+          "reason": {
+            "en": "The shown formula contains no oxygen.",
+            "hi": "दिए सूत्र में ऑक्सीजन नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Carbon mass in 44 g CO2 is:",
+        "hi": "44 g CO2 में कार्बन द्रव्यमान:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12 g",
+            "hi": "12 g"
+          },
+          "reason": {
+            "en": "Carbon contributes 12 out of the 44 mass units.",
+            "hi": "44 द्रव्यमान में 12 का योगदान कार्बन का है।"
+          }
+        },
+        {
+          "text": {
+            "en": "44 g",
+            "hi": "44 g"
+          },
+          "reason": {
+            "en": "The total includes oxygen as well.",
+            "hi": "कुल में ऑक्सीजन भी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "32 g",
+            "hi": "32 g"
+          },
+          "reason": {
+            "en": "32 g is the oxygen contribution.",
+            "hi": "32 g ऑक्सीजन का योगदान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6 g",
+            "hi": "6 g"
+          },
+          "reason": {
+            "en": "This is half the correct carbon mass.",
+            "hi": "यह सही कार्बन द्रव्यमान का आधा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Resonance contributors differ in:",
+        "hi": "अनुनाद योगदानकारी चित्रों में क्या अलग है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Electron placement with the same atom framework",
+            "hi": "समान परमाणु ढाँचे में इलेक्ट्रॉन की स्थिति"
+          },
+          "reason": {
+            "en": "They represent delocalisation in one structure.",
+            "hi": "वे एक संरचना का विस्थानीकरण दर्शाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The positions of nuclei freely exchanged",
+            "hi": "नाभिकों का मनमाना आदान-प्रदान"
+          },
+          "reason": {
+            "en": "The atom framework is retained.",
+            "hi": "परमाणु ढाँचा वही रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Total number of atoms",
+            "hi": "कुल परमाणु संख्या"
+          },
+          "reason": {
+            "en": "Changing atom count changes the species.",
+            "hi": "परमाणु गिनती बदलने से स्पीशीज़ बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Different equilibrium concentrations",
+            "hi": "अलग साम्य सांद्रताएँ"
+          },
+          "reason": {
+            "en": "They are not separate substances in equilibrium.",
+            "hi": "वे साम्य में अलग पदार्थ नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish sigma and pi bonds.",
+        "hi": "सिग्मा और पाई आबंध में अंतर बताएँ।"
+      },
+      "answer": {
+        "en": "Sigma bonding uses head-on overlap along the internuclear axis; pi bonding uses suitable lateral overlap with electron density on either side.",
+        "hi": "सिग्मा में अंतरानाभिकीय अक्ष पर सामने का अतिव्यापन और पाई में उपयुक्त पार्श्व अतिव्यापन होता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain bond-line notation.",
+        "hi": "आबंध-रेखा निरूपण समझाएँ।"
+      },
+      "answer": {
+        "en": "Unlabelled corners and ends indicate carbon, carbon-bound hydrogens are implied from valency, and heteroatoms are written explicitly.",
+        "hi": "बिना नाम के कोने और सिरे कार्बन हैं; कार्बन से जुड़े H संयोजकता से मानते और विषम परमाणु साफ लिखते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish induction from resonance.",
+        "hi": "प्रेरणिक प्रभाव और अनुनाद में अंतर दें।"
+      },
+      "answer": {
+        "en": "Induction is sigma-bond polarisation weakening with distance; resonance represents delocalisation through suitable connected orbitals and contributors.",
+        "hi": "प्रेरणिक प्रभाव दूरी से घटता सिग्मा ध्रुवण है; अनुनाद उपयुक्त जुड़े कक्षकों में इलेक्ट्रॉन विस्थानीकरण का निरूपण है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Define electrophile and nucleophile.",
+        "hi": "इलेक्ट्रॉनस्नेही और नाभिकस्नेही परिभाषित करें।"
+      },
+      "answer": {
+        "en": "An electrophile accepts an electron pair; a nucleophile donates one. Either may be neutral if its electron structure supports that role.",
+        "hi": "इलेक्ट्रॉनस्नेही युग्म ग्रहण तथा नाभिकस्नेही युग्म दान करता है। इलेक्ट्रॉन संरचना के अनुसार उदासीन स्पीशीज़ भी ये भूमिकाएँ निभा सकती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is Rf dimensionless?",
+        "hi": "Rf विमाहीन क्यों है?"
+      },
+      "answer": {
+        "en": "It divides two lengths measured in the same unit from the same origin, so their units cancel.",
+        "hi": "यह एक ही आरंभ से समान इकाई की 2 लंबाइयों का अनुपात है; इकाइयाँ कट जाती हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is oxygen by difference conditional?",
+        "hi": "अंतर से ऑक्सीजन निकालना शर्त के साथ सही क्यों है?"
+      },
+      "answer": {
+        "en": "The remaining mass is oxygen only if other elements, impurities and measurement losses have been accounted for.",
+        "hi": "बचा द्रव्यमान तभी ऑक्सीजन है जब अन्य तत्व, अशुद्धियाँ और मापन हानि का हिसाब हो।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Read connectivity before naming or counting atoms.",
+      "hi": "नाम या गिनती से पहले जुड़ाव समझें।"
+    },
+    {
+      "en": "sp3, sp2 and sp describe different local geometries.",
+      "hi": "sp3, sp2 तथा sp अलग स्थानीय ज्यामिति बताते हैं।"
+    },
+    {
+      "en": "Induction and resonance are different electronic effects.",
+      "hi": "प्रेरणिक प्रभाव और अनुनाद अलग इलेक्ट्रॉनिक प्रभाव हैं।"
+    },
+    {
+      "en": "Nucleophiles donate electron pairs; electrophiles accept them.",
+      "hi": "नाभिकस्नेही युग्म देते और इलेक्ट्रॉनस्नेही लेते हैं।"
+    },
+    {
+      "en": "Purification separates; elemental analysis identifies and quantifies composition.",
+      "hi": "शोधन अलग करता है; तत्वीय विश्लेषण पहचान और मात्रा देता है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not count rotated copies as new structural isomers, treat resonance contributors as independent molecules, call every neutral species inert, or assign units to Rf.",
+    "hi": "घुमाए चित्रों को नए संरचनात्मक समावयव, अनुनाद चित्रों को अलग अणु या हर उदासीन स्पीशीज़ को निष्क्रिय न मानें; Rf को इकाई न दें।"
+  },
+  "conceptMap": "कार्बन आबंधन → संरचना और नामकरण → समावयवता → इलेक्ट्रॉनिक प्रभाव → विदलन और अभिक्रिया → शोधन → तत्वीय संघटन",
+  "conceptMapEn": "Carbon bonding → representation and names → isomerism → electronic effects → cleavage and reaction → purification → elemental composition"
+}

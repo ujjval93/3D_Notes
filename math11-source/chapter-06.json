@@ -1,0 +1,876 @@
+{
+  "id": 6,
+  "title": {
+    "en": "Permutations and Combinations",
+    "hi": "क्रमचय और संचय"
+  },
+  "goal": {
+    "en": "Choose a counting model by deciding order, repetition and restrictions before using a formula.",
+    "hi": "सूत्र से पहले क्रम,दोहराव और प्रतिबंध तय करके गणना मॉडल चुनें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "The multiplication principle",
+        "hi": "गुणन का आधारभूत सिद्धांत"
+      },
+      "body": {
+        "en": "If a task has two successive stages, with m choices at the first and n choices at the second for every first-stage choice, there are mn complete outcomes. Choosing one of3 shirts and one of2 trousers gives6 outfits. A tree diagram shows every complete path once. If later choices depend on earlier ones, the branch counts may change; count valid branches rather than multiplying irrelevant totals. For disjoint alternative cases, add counts instead. The product principle is the foundation of permutation and combination formulas. First identify what a complete outcome contains and whether order, repetition and restrictions matter. A numerical formula without an outcome description is easy to misuse. A complete path through a choice tree is one outcome; counting intermediate branches alone does not count complete outcomes.",
+        "hi": "गुणन का आधारभूत सिद्धांत (Multiplication principle) कहता है कि 2 क्रमिक चरणों वाले काम में पहले चरण के m और हर पहले चुनाव के बाद दूसरे चरण के n विकल्प हों, तो पूरे काम के mn तरीके हैं। 3 कमीजों में से 1 और 2 पतलूनों में से 1 चुनने पर 6 पोशाकें बनती हैं। वृक्ष आरेख में हर पूरा रास्ता 1 परिणाम है। यदि आगे के विकल्प पहले चुनाव पर निर्भर हों, तो शाखाओं की संख्या बदल सकती है। ऐसे में वास्तविक मान्य शाखाएँ गिनें, असंबंधित कुल संख्याएँ न गुणा करें। अलग और असंयुक्त वैकल्पिक स्थितियों की संख्या जोड़ते हैं। क्रमचय और संचय के सूत्र इसी आधार से बनते हैं। पहले लिखें कि पूरा परिणाम किन वस्तुओं से बनेगा, क्रम महत्त्वपूर्ण है या नहीं, दोहराव अनुमत है या नहीं और कौन प्रतिबंध हैं। केवल संख्याएँ देखकर सूत्र चुनना जोखिमपूर्ण है। छोटी समस्या में सभी परिणाम सूचीबद्ध करके सिद्धांत जाँचें; बड़ी समस्या में वही संरचना व्यवस्थित गणना देती है। चयन वृक्ष का पूरा रास्ता1 परिणाम है;केवल बीच की शाखाएँ गिनना पूरे परिणामों की गणना नहीं है।"
+      },
+      "formula": "Successive choices: m×n; disjoint alternatives: m+n",
+      "question": {
+        "en": "A café has4 drinks and3 snacks. How many drink-snack pairs?",
+        "hi": "कैफे में4 पेय और3 नाश्ते हैं। पेय-नाश्ता युग्म कितने?"
+      },
+      "answer": {
+        "en": "4×3=12.",
+        "hi": "4×3=12।"
+      }
+    },
+    {
+      "title": {
+        "en": "Factorials and their meaning",
+        "hi": "क्रमगुणित और उसका अर्थ"
+      },
+      "body": {
+        "en": "For positive integer n, n!=n(n−1)...2·1. Define0!=1 so counting formulas include empty arrangements consistently. Factorials grow quickly: 5!=120 and6!=720. Cancel common factors before multiplying large values. For n≥r≥0, n!/(n−r)! equals a product of r descending factors. For example8!/5!=8·7·6, not8/5. Factorial notation here applies to nonnegative integers; (−1)! is not defined in this elementary setting. The recurrence n!=n(n−1)! explains cancellation. An empty selection or empty arrangement has one way, which is why0! is1 rather than0. Distinguish n! from n^n; they count different choice structures.",
+        "hi": "धनात्मक पूर्णांक n के लिए क्रमगुणित (Factorial) n!=n(n−1)...2·1 है। 0!=1 परिभाषित करते हैं, ताकि रिक्त व्यवस्था सहित गणना सूत्र संगत रहें। 5!=120 और 6!=720 हैं। बड़े मान सीधे गुणा करने के बजाय साझा गुणनखंड पहले काटें। n≥r≥0 में n!/(n−r)! के अंदर r घटते गुणनखंड बचते हैं। उदाहरणतः 8!/5!=8×7×6 है, न कि 8/5। इस प्रारंभिक प्रसंग में क्रमगुणित केवल गैरऋणात्मक पूर्णांकों का है; (−1)! परिभाषित नहीं है। संबंध n!=n(n−1)! से कटौती स्पष्ट होती है। कोई वस्तु न चुनने या कुछ न सजाने का ठीक 1 तरीका है: रिक्त परिणाम। यही 0!=1 का गणनात्मक अर्थ है। n! और n^n को समान न मानें। पहले में बिना दोहराव विकल्प घटते हैं; दूसरे में हर स्थान के लिए n विकल्प बने रहते हैं। कोष्ठक का ध्यान दें: (n−1)! तथा n!−1 बिल्कुल अलग व्यंजक हैं। छोटा संख्यात्मक उदाहरण इस अंतर की जाँच कर सकता है।"
+      },
+      "formula": "n!=n(n−1)!; 0!=1",
+      "question": {
+        "en": "Simplify 7!/5!.",
+        "hi": "7!/5! सरल करें।"
+      },
+      "answer": {
+        "en": "7×6=42.",
+        "hi": "7×6=42।"
+      }
+    },
+    {
+      "title": {
+        "en": "Permutations of distinct objects",
+        "hi": "भिन्न वस्तुओं के क्रमचय"
+      },
+      "body": {
+        "en": "A permutation is an ordered arrangement. Arrange r of n distinct objects without repetition: n choices for the first position, n−1 for the next, down to n−r+1. Thus ⁿPᵣ=n!/(n−r)! for0≤r≤n. Arranging all n gives n!. For a president and secretary chosen from5 students, positions are different roles, so there are5·4=20 outcomes. Choosing the same two students with roles swapped creates another outcome. State whether roles or positions are distinguishable. Repetition is not allowed unless explicitly specified. A straight-line arrangement of n distinct books is n!; extra constraints need an additional argument rather than automatic use of the unrestricted formula.",
+        "hi": "क्रमचय (Permutation) वस्तुओं की क्रमबद्ध व्यवस्था है। n भिन्न वस्तुओं में से बिना दोहराव r को सजाने में पहले स्थान के n, दूसरे के n−1 और आगे n−r+1 तक विकल्प हैं। इसलिए ⁿPᵣ=n!/(n−r)! है, जहाँ 0≤r≤n। सभी n को सजाने में n! तरीके हैं। 5 विद्यार्थियों से अध्यक्ष और सचिव चुनने में पद अलग हैं, इसलिए 5×4=20 परिणाम हैं। उन्हीं 2 विद्यार्थियों के पद बदलने पर नई व्यवस्था बनती है। प्रश्न में भूमिका और स्थान अलग पहचाने जाते हैं या नहीं, यह पहले तय करें। दोहराव तभी लें जब स्पष्ट अनुमति हो। n अलग पुस्तकों को सीधी पंक्ति में सजाने का उत्तर n! है। विशेष प्रतिबंध हों, तो अप्रतिबंधित सूत्र के साथ अलग तर्क चाहिए। क्रमचय में चयन और क्रम दोनों शामिल होते हैं। किसी जोड़ी को केवल चुनना और उसे 2 अलग पद देना अलग काम हैं। छोटा उदाहरण AB और BA लिखकर क्रम के महत्त्व की पुष्टि कर सकते हैं।"
+      },
+      "formula": "ⁿPᵣ=n!/(n−r)!; 0≤r≤n",
+      "question": {
+        "en": "How many ordered2-letter arrangements use distinct letters from A,B,C,D?",
+        "hi": "A,B,C,D से बिना दोहराव2-अक्षरी क्रमबद्ध व्यवस्थाएँ कितनी?"
+      },
+      "answer": {
+        "en": "⁴P₂=4×3=12.",
+        "hi": "⁴P₂=4×3=12।"
+      }
+    },
+    {
+      "title": {
+        "en": "Repetition and leading-zero restrictions",
+        "hi": "दोहराव और प्रारंभिक शून्य का प्रतिबंध"
+      },
+      "body": {
+        "en": "If n symbols may be repeated independently in r positions, there are n^r sequences. With digits0–9, four-character codes have10⁴ possibilities if initial zero is allowed. A four-digit number has a nonzero first digit, so with repetition allowed the count is9·10³. Without repetition it is9·9·8·7: after a nonzero first digit, zero remains available among the nine remaining digits. Codes and numbers are different objects. If the last digit must be even, handling the zero-ending case separately may prevent overcounting. Count the most restricted positions first when that makes the choices uniform. State whether identical-looking outcomes are considered the same.",
+        "hi": "n प्रतीक r स्थानों में स्वतंत्र रूप से दोहराए जा सकें, तो n^r अनुक्रम बनते हैं। 0 से 9 तक अंकों वाले 4-अक्षरी कोड में प्रारंभिक 0 मान्य हो, तो 10⁴ परिणाम हैं। लेकिन 4-अंकीय संख्या का पहला अंक 0 नहीं हो सकता। दोहराव अनुमत हो, तो संख्या 9×10³ है। बिना दोहराव 9×9×8×7 है। पहला अशून्य अंक लेने के बाद बचे 9 अंकों में 0 अभी भी उपलब्ध है; इसलिए दूसरा गुणनखंड 9 है,8 नहीं। कोड और संख्या को अलग गणितीय वस्तु समझें। अंतिम अंक सम चाहिए हो, तो 0 पर समाप्त होने और अन्य सम अंक पर समाप्त होने की स्थितियाँ अलग गिनना उपयोगी हो सकता है। सबसे प्रतिबंधित स्थान पहले भरने से विकल्प समान रखने में मदद मिलती है। हर स्थान पर लिखें कि कौन प्रतीक पहले ही इस्तेमाल हुए हैं। समान दिखने वाले परिणाम अलग माने जाएँगे या नहीं, यह भी नियम में स्पष्ट होना चाहिए।"
+      },
+      "formula": "Repetition allowed:n^r; four-digit numbers:9×10³",
+      "question": {
+        "en": "How many3-digit numbers can use digits1,2,3 with repetition allowed?",
+        "hi": "1,2,3 से दोहराव सहित3-अंकीय संख्याएँ कितनी?"
+      },
+      "answer": {
+        "en": "3³=27.",
+        "hi": "3³=27।"
+      }
+    },
+    {
+      "title": {
+        "en": "Permutations with identical objects",
+        "hi": "एकसमान वस्तुओं के क्रमचय"
+      },
+      "body": {
+        "en": "If n objects include groups of p,q,... identical objects, the number of distinct linear arrangements is n!/(p!q!...); the group sizes sum to n. Labelling identical objects temporarily produces n! arrangements, but each visible arrangement is counted p!q!... times through invisible swaps. For the letters of LEVEL, L occurs twice, E twice and V once, giving5!/(2!2!)=30. Do not divide by the number of repeated groups; divide by the factorial of each multiplicity. If all objects are identical, the answer is1. Restrictions involving repeated objects may need casework before this formula is used. Clearly distinguish physically different objects from identical symbols.",
+        "hi": "n वस्तुओं में p,q,... वस्तुओं के समूह एकसमान हों, तो अलग सीधी व्यवस्थाएँ n!/(p!q!...) हैं। सभी समूहों की संख्याओं का योग n होना चाहिए। एकसमान वस्तुओं को थोड़ी देर अलग नाम देकर गिनें, तो n! मिलता है। लेकिन हर दिखने वाली व्यवस्था अदृश्य अदला-बदली से p!q!... बार गिनी जाती है, इसलिए उतने से भाग देते हैं। LEVEL में L 2 बार, E 2 बार और V 1 बार है; संख्या 5!/(2!2!)=30 है। केवल दोहराए समूहों की संख्या से भाग नहीं देना है। हर आवृत्ति का क्रमगुणित हर में आता है। सभी वस्तुएँ एक जैसी हों, तो n!/n!=1 व्यवस्था है। समान रंग की गेंदें वास्तव में अलग पहचान वाली हों या सिर्फ रंग का अनुक्रम गिनना हो, दोनों स्थितियों के उत्तर बदल सकते हैं। इसलिए वस्तुओं की पहचान का स्तर पहले तय करें। दोहराव के साथ अतिरिक्त प्रतिबंध हों, तो कभी अलग स्थितियाँ गिननी पड़ेंगी। अंतिम सूत्र लगाने से पहले कुल वस्तुएँ और प्रत्येक आवृत्ति की सूची बनाना उपयोगी है।"
+      },
+      "formula": "Distinct arrangements=n!/(p!q!...)",
+      "question": {
+        "en": "How many distinct arrangements of the letters of NOON exist?",
+        "hi": "NOON के अक्षरों की अलग व्यवस्थाएँ कितनी?"
+      },
+      "answer": {
+        "en": "4!/(2!2!)=6.",
+        "hi": "4!/(2!2!)=6।"
+      }
+    },
+    {
+      "title": {
+        "en": "Combinations: selection without order",
+        "hi": "संचय: क्रम के बिना चयन"
+      },
+      "body": {
+        "en": "A combination selects r of n distinct objects without order. Every r-element selection has r! ordered arrangements, so ⁿCᵣ=ⁿPᵣ/r!=n!/[r!(n−r)!]. Choosing2 students from5 gives10 committees, not20 ordered roles. The chosen subset has no first or second member. The formula requires0≤r≤n for nonnegative integers. In particular ⁿC₀=ⁿCₙ=1. A zero-member committee corresponds to the empty selection, not no possible outcome. Use combinations when changing order does not create a new outcome. If a committee later receives distinct roles, multiply by the number of role assignments separately. This two-stage description explains when both selection and arrangement appear in one problem.",
+        "hi": "संचय (Combination) n भिन्न वस्तुओं में से r का ऐसा चयन है जिसमें क्रम महत्त्वपूर्ण नहीं है। प्रत्येक r-अवयवी चयन की r! क्रमबद्ध व्यवस्थाएँ होती हैं। इसलिए ⁿCᵣ=ⁿPᵣ/r!=n!/[r!(n−r)!] है। 5 विद्यार्थियों से 2 की समिति चुनने पर 10 समितियाँ हैं,20 पद व्यवस्थाएँ नहीं। चुने उपसमुच्चय में पहला और दूसरा सदस्य तय नहीं होता। सूत्र में n तथा r गैरऋणात्मक पूर्णांक और 0≤r≤n चाहिए। विशेषतः ⁿC₀=ⁿCₙ=1 है। शून्य सदस्य वाला चयन रिक्त चयन है, जिसकी ठीक 1 संभावना है। क्रम बदलने पर नया परिणाम न बने, तभी संचय चुनें। समिति चुनने के बाद अलग पद बाँटने हों, तो पद व्यवस्थाओं की संख्या से अलग गुणा करें। यह 2 चरणों वाली व्याख्या चयन और व्यवस्था का संबंध स्पष्ट करती है। प्रश्न में चुनना शब्द अकेले पर्याप्त संकेत नहीं; अध्यक्ष चुनना और समिति चुनना अलग हैं। पूरा परिणाम किस रूप में दर्ज होगा, यह सोचकर विधि तय करें।"
+      },
+      "formula": "ⁿCᵣ=n!/[r!(n−r)!]; ⁿPᵣ=r!ⁿCᵣ",
+      "question": {
+        "en": "How many3-person committees can be chosen from6 students?",
+        "hi": "6 विद्यार्थियों से3-सदस्यीय समितियाँ कितनी?"
+      },
+      "answer": {
+        "en": "⁶C₃=20.",
+        "hi": "⁶C₃=20।"
+      }
+    },
+    {
+      "title": {
+        "en": "Symmetry and Pascal identity",
+        "hi": "सममिति और पास्कल संबंध"
+      },
+      "body": {
+        "en": "The identity ⁿCᵣ=ⁿCₙ₋ᵣ follows because choosing r objects also determines the n−r objects excluded. It often shortens a calculation: ¹⁰C₈=¹⁰C₂=45. Pascal identity ⁿCᵣ+ⁿCᵣ₋₁=ⁿ⁺¹Cᵣ can be justified by distinguishing one special object among n+1. A size-r selection either excludes it, giving ⁿCᵣ, or includes it, giving ⁿCᵣ₋₁ for the remaining members. The two cases are disjoint and exhaustive. These identities connect counting arguments with algebra. Use valid index ranges and handle edge cases with the defined values ⁿC₀=ⁿCₙ=1. A proof by classifying outcomes is often clearer than manipulating large factorials.",
+        "hi": "सममिति संबंध ⁿCᵣ=ⁿCₙ₋ᵣ इसलिए है कि r वस्तुओं को चुनने से बची n−r वस्तुएँ भी निश्चित हो जाती हैं। 10 में से 8 चुनने की जगह 2 छोड़ना गिन सकते हैं; ¹⁰C₈=¹⁰C₂=45। पास्कल संबंध ⁿCᵣ+ⁿCᵣ₋₁=ⁿ⁺¹Cᵣ है। n+1 में 1 विशेष वस्तु तय करें। r-अवयवी चयन या तो उसे नहीं लेता, जिससे ⁿCᵣ तरीके हैं, या उसे लेता है, जिससे बाकी r−1 वस्तुओं के ⁿCᵣ₋₁ तरीके हैं। दोनों स्थितियाँ असंयुक्त हैं और हर चयन उनमें ठीक 1 में आता है। इसलिए उनकी संख्याएँ जोड़ते हैं। यह तर्क गणना और बीजगणित को जोड़ता है। सूचकांक की वैध सीमा जाँचें और किनारे पर ⁿC₀=ⁿCₙ=1 उपयोग करें। हर प्रश्न में बड़े क्रमगुणित खोलना जरूरी नहीं। परिणामों को सही समूहों में बाँटकर दिया प्रमाण अक्सर अधिक छोटा और समझने योग्य होता है। यही संबंध अगले अध्याय के द्विपद गुणांकों में भी दिखाई देगा।"
+      },
+      "formula": "ⁿCᵣ=ⁿCₙ₋ᵣ; ⁿCᵣ+ⁿCᵣ₋₁=ⁿ⁺¹Cᵣ",
+      "question": {
+        "en": "Evaluate ⁹C₇ without expanding9!.",
+        "hi": "9! खोले बिना ⁹C₇ निकालें।"
+      },
+      "answer": {
+        "en": "⁹C₇=⁹C₂=9×8/2=36.",
+        "hi": "⁹C₇=⁹C₂=9×8/2=36।"
+      }
+    },
+    {
+      "title": {
+        "en": "Restrictions, blocks and case counting",
+        "hi": "प्रतिबंध, समूह और स्थितियों की गणना"
+      },
+      "body": {
+        "en": "For distinct objects required together in a line, treat the group as one block, arrange blocks, then arrange objects inside it. If A and B must be adjacent among5 distinct letters, there are4!·2!=48 arrangements. If two objects must be apart, subtract the together count from the unrestricted total. For selection constraints, split into mutually exclusive cases: choosing3 people from4 girls and3 boys with at least2 girls gives ⁴C₂·³C₁+⁴C₃·³C₀. Multiplication joins independent stages; addition joins disjoint alternatives. Verify cases cover all allowed outcomes without overlap. These methods concern linear arrangements; circular seating needs a separate equivalence convention and is not assumed by the linear formula.",
+        "hi": "अलग वस्तुएँ सीधी पंक्ति में साथ रहनी हों, तो उन्हें 1 समूह मानें। पहले समूहों की व्यवस्था, फिर समूह के अंदर की व्यवस्था गिनें। 5 अलग अक्षरों में A तथा B साथ चाहिए हों, तो 4!×2!=48 तरीके हैं। A और B अलग रहने हों, तो कुल 5! से साथ वाली संख्या घटाएँ। चयन प्रतिबंध में असंयुक्त स्थितियाँ बनाएँ। 4 लड़कियों और 3 लड़कों से 3 सदस्य चुनते समय कम-से-कम 2 लड़कियाँ चाहिए हों, तो 2 लड़की+1 लड़का या 3 लड़की+0 लड़का होगा। संख्या ⁴C₂×³C₁+⁴C₃×³C₀=22 है। एक स्थिति के क्रमिक चरण गुणा और अलग वैकल्पिक स्थितियाँ जोड़ते हैं। सभी अनुमत परिणाम गिने हैं और कोई 2 बार नहीं आया, यह जाँचें। यहाँ व्यवस्था सीधी पंक्ति की है। वृत्ताकार बैठने में घुमाव को समान मानने का अलग नियम चाहिए; सीधा सूत्र स्वतः लागू नहीं है। पहले छोटा चित्र या स्थिति सूची बनाना अक्सर सही मॉडल तय कर देता है।"
+      },
+      "formula": "At least2 girls: ⁴C₂·³C₁+⁴C₃·³C₀=22",
+      "question": {
+        "en": "Among4 distinct books, two specified books must be together. How many linear arrangements?",
+        "hi": "4 अलग पुस्तकों में2 निश्चित साथ चाहिए। सीधी व्यवस्थाएँ कितनी?"
+      },
+      "answer": {
+        "en": "3!·2!=12.",
+        "hi": "3!×2!=12।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "How many outfits from5 shirts and4 trousers?",
+        "hi": "5 कमीज और4 पतलून से कितनी पोशाकें?"
+      },
+      "steps": [
+        {
+          "en": "Choose1 shirt in5 ways.",
+          "hi": "1 कमीज के5 तरीके।"
+        },
+        {
+          "en": "For each, choose1 trouser in4 ways.",
+          "hi": "हर चुनाव के बाद1 पतलून के4 तरीके।"
+        }
+      ],
+      "answer": {
+        "en": "5×4=20.",
+        "hi": "5×4=20।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Arrange3 of6 distinct books in a row.",
+        "hi": "6 अलग पुस्तकों में से3 को पंक्ति में सजाएँ;तरीके निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Positions are ordered and repetition is forbidden.",
+          "hi": "स्थान क्रमबद्ध हैं और दोहराव निषिद्ध।"
+        },
+        {
+          "en": "⁶P₃=6×5×4.",
+          "hi": "⁶P₃=6×5×4।"
+        }
+      ],
+      "answer": {
+        "en": "120 arrangements.",
+        "hi": "120 व्यवस्थाएँ।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Count distinct arrangements of BANANA.",
+        "hi": "BANANA के अक्षरों की अलग व्यवस्थाएँ गिनें।"
+      },
+      "steps": [
+        {
+          "en": "There are6 letters: A3,N2,B1.",
+          "hi": "कुल6 अक्षर:A3,N2,B1।"
+        },
+        {
+          "en": "Divide6! by3!2! to remove identical swaps.",
+          "hi": "समान अदला-बदली हटाने के लिए6! को3!2! से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "6!/(3!2!)=60.",
+        "hi": "6!/(3!2!)=60।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Choose3 people from5 girls and4 boys with exactly2 girls.",
+        "hi": "5 लड़कियों और4 लड़कों से ठीक2 लड़कियों सहित3 सदस्य चुनें।"
+      },
+      "steps": [
+        {
+          "en": "Choose2 girls:⁵C₂=10.",
+          "hi": "2 लड़कियाँ:⁵C₂=10।"
+        },
+        {
+          "en": "Choose1 boy:⁴C₁=4.",
+          "hi": "1 लड़का:⁴C₁=4।"
+        },
+        {
+          "en": "Multiply the independent group selections.",
+          "hi": "दोनों समूह चयन गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "10×4=40 committees.",
+        "hi": "10×4=40 समितियाँ।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "How many4-digit numbers without repeated digits use0,1,2,3,4 and are even?",
+        "hi": "0,1,2,3,4 से बिना दोहराव4-अंकीय सम संख्याएँ कितनी?"
+      },
+      "steps": [
+        {
+          "en": "Last digit0: first4 choices, middle3×2; count24.",
+          "hi": "अंतिम अंक0:पहले4 विकल्प,बीच3×2;कुल24।"
+        },
+        {
+          "en": "Last digit2 or4:2 choices; first3 nonzero choices; middle3×2; count36.",
+          "hi": "अंतिम2 या4:2 विकल्प;पहला3 अशून्य;बीच3×2;कुल36।"
+        },
+        {
+          "en": "The two cases are disjoint; add24+36.",
+          "hi": "दोनों स्थितियाँ असंयुक्त हैं;24+36 जोड़ें।"
+        }
+      ],
+      "answer": {
+        "en": "60 numbers.",
+        "hi": "60 संख्याएँ।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Choose a drink in3 ways and snack in5 ways. Total pairs?",
+        "hi": "3 पेय और5 नाश्तों से कुल युग्म?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "This ignores drink choices.",
+            "hi": "यह पेय विकल्प छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "This ignores snack choices.",
+            "hi": "यह नाश्ता विकल्प छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "15",
+            "hi": "15"
+          },
+          "reason": {
+            "en": "Successive choices multiply:3×5.",
+            "hi": "क्रमिक विकल्प गुणा:3×5।"
+          }
+        },
+        {
+          "text": {
+            "en": "8",
+            "hi": "8"
+          },
+          "reason": {
+            "en": "Addition is for disjoint alternatives, not pairs.",
+            "hi": "योग वैकल्पिक स्थितियों के लिए है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "0! is",
+        "hi": "0! है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "Factorial values here are positive.",
+            "hi": "यहाँ क्रमगुणित धनात्मक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "There is one empty arrangement.",
+            "hi": "रिक्त व्यवस्था1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "This would break the recurrence1!=1·0!.",
+            "hi": "यह1!=1·0! को तोड़ेगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined here",
+            "hi": "यहाँ अपरिभाषित"
+          },
+          "reason": {
+            "en": "0! is defined as1.",
+            "hi": "0!=1 परिभाषित है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "⁶P₂ equals",
+        "hi": "⁶P₂ है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "30",
+            "hi": "30"
+          },
+          "reason": {
+            "en": "6×5=30.",
+            "hi": "6×5=30।"
+          }
+        },
+        {
+          "text": {
+            "en": "15",
+            "hi": "15"
+          },
+          "reason": {
+            "en": "15=⁶C₂, the unordered count.",
+            "hi": "15=⁶C₂,बिना क्रम का चयन।"
+          }
+        },
+        {
+          "text": {
+            "en": "36",
+            "hi": "36"
+          },
+          "reason": {
+            "en": "That permits repeating the first choice.",
+            "hi": "इसमें दोहराव शामिल।"
+          }
+        },
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "Multiply descending choices, not6×2.",
+            "hi": "6×2 नहीं,घटते विकल्प गुणा करें।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "⁶C₂ equals",
+        "hi": "⁶C₂ है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "30",
+            "hi": "30"
+          },
+          "reason": {
+            "en": "This counts the two orders separately.",
+            "hi": "यह दोनों क्रम अलग गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "6×2 is not the combination formula.",
+            "hi": "6×2 संचय सूत्र नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "36",
+            "hi": "36"
+          },
+          "reason": {
+            "en": "This counts ordered repetition.",
+            "hi": "यह क्रमबद्ध दोहराव गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "15",
+            "hi": "15"
+          },
+          "reason": {
+            "en": "6×5/2!=15.",
+            "hi": "6×5/2!=15।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Distinct arrangements of AAB are",
+        "hi": "AAB की अलग व्यवस्थाएँ हैं"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "AAB,ABA,BAA give3.",
+            "hi": "AAB,ABA,BAA से3।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "B can occupy3 positions.",
+            "hi": "B के3 स्थान हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "3!/2!=3.",
+            "hi": "3!/2!=3।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "This labels the two identical As separately.",
+            "hi": "यह समान A अलग गिनता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "A4-digit code may start0 and repeat digits. Number of codes?",
+        "hi": "4-अंकीय कोड में शुरू0 और दोहराव मान्य है। कितने कोड?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "40",
+            "hi": "40"
+          },
+          "reason": {
+            "en": "Choices multiply rather than add.",
+            "hi": "विकल्प गुणा होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "10000",
+            "hi": "10000"
+          },
+          "reason": {
+            "en": "10 choices at each of4 positions.",
+            "hi": "4 स्थानों में10-10 विकल्प।"
+          }
+        },
+        {
+          "text": {
+            "en": "9000",
+            "hi": "9000"
+          },
+          "reason": {
+            "en": "This forbids initial0, appropriate for numbers.",
+            "hi": "यह शुरू0 रोकता है,संख्याओं के लिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "5040",
+            "hi": "5040"
+          },
+          "reason": {
+            "en": "This forbids repetition.",
+            "hi": "यह दोहराव रोकता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "⁸C₆ equals",
+        "hi": "⁸C₆ है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "⁸C₂",
+            "hi": "⁸C₂"
+          },
+          "reason": {
+            "en": "Selecting6 is equivalent to excluding2.",
+            "hi": "6 चुनना2 छोड़ने के बराबर।"
+          }
+        },
+        {
+          "text": {
+            "en": "⁸P₂",
+            "hi": "⁸P₂"
+          },
+          "reason": {
+            "en": "Ordering excluded objects overcounts.",
+            "hi": "छोड़ी वस्तुओं का क्रम अधिक गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "⁶C₈",
+            "hi": "⁶C₈"
+          },
+          "reason": {
+            "en": "Cannot select8 from6 in this scope.",
+            "hi": "6 में से8 नहीं चुन सकते।"
+          }
+        },
+        {
+          "text": {
+            "en": "8!/6!",
+            "hi": "8!/6!"
+          },
+          "reason": {
+            "en": "The factor2! is missing.",
+            "hi": "हर में2! छूटा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two specified books must be adjacent among5 distinct books. Count?",
+        "hi": "5 अलग पुस्तकों में2 निश्चित साथ हों। कितनी व्यवस्थाएँ?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "24",
+            "hi": "24"
+          },
+          "reason": {
+            "en": "This misses the internal order reversal.",
+            "hi": "भीतरी उलटा क्रम छूटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "120",
+            "hi": "120"
+          },
+          "reason": {
+            "en": "This is unrestricted5!.",
+            "hi": "यह अप्रतिबंधित5! है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10",
+            "hi": "10"
+          },
+          "reason": {
+            "en": "This is a selection count, not arrangement.",
+            "hi": "यह चयन है,व्यवस्था नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "48",
+            "hi": "48"
+          },
+          "reason": {
+            "en": "Treat as4 units, then2 internal orders:4!×2.",
+            "hi": "4 इकाइयाँ और2 भीतरी क्रम:4!×2।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Choosing captain and vice-captain from8 players uses",
+        "hi": "8 खिलाड़ियों से कप्तान और उपकप्तान चुनने में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "8²",
+            "hi": "8²"
+          },
+          "reason": {
+            "en": "One player cannot hold both distinct selections here.",
+            "hi": "यहाँ1 खिलाड़ी दोनों चयन नहीं लेता।"
+          }
+        },
+        {
+          "text": {
+            "en": "2⁸",
+            "hi": "2⁸"
+          },
+          "reason": {
+            "en": "That counts all subsets, not two roles.",
+            "hi": "यह सभी उपसमुच्चय गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "⁸P₂",
+            "hi": "⁸P₂"
+          },
+          "reason": {
+            "en": "Different roles make order significant.",
+            "hi": "अलग पद क्रम महत्त्वपूर्ण बनाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "⁸C₂",
+            "hi": "⁸C₂"
+          },
+          "reason": {
+            "en": "This ignores which player holds which role.",
+            "hi": "यह पदों का अंतर छोड़ता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "From4 girls and3 boys,3-person committees with at least2 girls number",
+        "hi": "4 लड़कियों,3 लड़कों से कम-से-कम2 लड़कियों वाली3-सदस्यीय समितियाँ"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "This counts only all-girl committees.",
+            "hi": "यह केवल3 लड़कियों वाली गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "22",
+            "hi": "22"
+          },
+          "reason": {
+            "en": "⁴C₂·³C₁+⁴C₃=18+4.",
+            "hi": "⁴C₂×³C₁+⁴C₃=18+4।"
+          }
+        },
+        {
+          "text": {
+            "en": "18",
+            "hi": "18"
+          },
+          "reason": {
+            "en": "This counts exactly2 girls but misses3 girls.",
+            "hi": "यह3 लड़कियों की स्थिति छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "35",
+            "hi": "35"
+          },
+          "reason": {
+            "en": "This counts all3-person committees without restriction.",
+            "hi": "यह बिना प्रतिबंध सभी समितियाँ गिनता है।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain why ⁿPᵣ=r!ⁿCᵣ.",
+        "hi": "ⁿPᵣ=r!ⁿCᵣ क्यों है?"
+      },
+      "answer": {
+        "en": "Each unordered r-selection has exactly r! orders.",
+        "hi": "हर बिना क्रम के r-चयन के ठीक r! क्रम हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Evaluate8!/6!.",
+        "hi": "8!/6! निकालें।"
+      },
+      "answer": {
+        "en": "8×7=56.",
+        "hi": "8×7=56।"
+      }
+    },
+    {
+      "question": {
+        "en": "Choose4 students from7. How many committees?",
+        "hi": "7 में से4 विद्यार्थी चुनने की समितियाँ कितनी?"
+      },
+      "answer": {
+        "en": "⁷C₄=⁷C₃=35.",
+        "hi": "⁷C₄=⁷C₃=35।"
+      }
+    },
+    {
+      "question": {
+        "en": "Count arrangements of MISSISSIPPI.",
+        "hi": "MISSISSIPPI की व्यवस्थाएँ गिनें।"
+      },
+      "answer": {
+        "en": "11 letters: I4,S4,P2,M1;11!/(4!4!2!)=34650.",
+        "hi": "11 अक्षर:I4,S4,P2,M1;11!/(4!4!2!)=34650।"
+      }
+    },
+    {
+      "question": {
+        "en": "How many3-digit numbers use0–9 without repetition?",
+        "hi": "0–9 से बिना दोहराव3-अंकीय संख्याएँ कितनी?"
+      },
+      "answer": {
+        "en": "9×9×8=648; first digit excludes0, second has9 remaining choices.",
+        "hi": "9×9×8=648;पहला0 नहीं,दूसरे के9 बचे विकल्प।"
+      }
+    },
+    {
+      "question": {
+        "en": "Prove ⁿCᵣ=ⁿCₙ₋ᵣ by counting.",
+        "hi": "गणना से ⁿCᵣ=ⁿCₙ₋ᵣ सिद्ध करें।"
+      },
+      "answer": {
+        "en": "Every chosen r-subset corresponds uniquely to its excluded (n−r)-subset.",
+        "hi": "हर चुना r-उपसमुच्चय अपनी छोड़ी(n−r)-उपसमुच्चय से अद्वितीय जुड़ता है।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not use permutation for an unordered committee, allow initial zero in a number, forget internal block orders, or double-count overlapping cases.",
+    "hi": "बिना क्रम की समिति में क्रमचय न लें;संख्या में प्रारंभिक0 न लें;समूह के भीतर के क्रम न भूलें;साझा स्थितियाँ दोहरी न गिनें।"
+  },
+  "revision": [
+    {
+      "en": "Multiply successive choices; add disjoint alternatives.",
+      "hi": "क्रमिक विकल्प गुणा,असंयुक्त विकल्प जोड़ें।"
+    },
+    {
+      "en": "n!=n(n−1)! and0!=1.",
+      "hi": "n!=n(n−1)! और0!=1 है।"
+    },
+    {
+      "en": "ⁿPᵣ counts ordered arrangements without repetition.",
+      "hi": "ⁿPᵣ बिना दोहराव क्रमबद्ध व्यवस्थाएँ गिनता है।"
+    },
+    {
+      "en": "ⁿCᵣ counts unordered r-subsets.",
+      "hi": "ⁿCᵣ बिना क्रम r-उपसमुच्चय गिनता है।"
+    },
+    {
+      "en": "State restrictions before counting.",
+      "hi": "गिनने से पहले प्रतिबंध लिखें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Choice stages → multiplication → factorial → ordered permutations → unordered combinations → restricted cases.",
+    "hi": "चयन चरण → गुणन → क्रमगुणित → क्रमबद्ध क्रमचय → बिना क्रम संचय → प्रतिबंधित स्थितियाँ।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class XI, Chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh106.pdf"
+    },
+    {
+      "title": "UPMSP Class11 Mathematics syllabus2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/131-Maths-Class-11.pdf"
+    }
+  ],
+  "engine": "eleven-math",
+  "scenes": []
+}

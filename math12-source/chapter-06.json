@@ -1,0 +1,896 @@
+{
+  "id": 6,
+  "title": {
+    "en": "Applications of Derivatives",
+    "hi": "अवकलज के अनुप्रयोग"
+  },
+  "goal": {
+    "en": "Use derivative signs, rates and constraints to explain change and solve optimisation problems.",
+    "hi": "अवकलज के चिह्न, दर और शर्तों से परिवर्तन समझें तथा इष्टतमीकरण हल करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Rates of change and units",
+        "hi": "परिवर्तन की दर और मात्रक"
+      },
+      "body": {
+        "en": "A derivative measures the rate at which one quantity changes with another. If displacement s(t) is in metres and time t in seconds, velocity s′ has units m/s and acceleration s″ has units m/s². The rate may be negative, meaning the measured quantity decreases. For A=πr², dA/dt=2πr dr/dt. Related-rate calculations require all quantities to refer to the same instant.",
+        "hi": "परिवर्तन की दर (Rate of change) समझने के लिए पहले पहचानें कि कौन सी राशि किसके साथ बदल रही है। यदि विस्थापन s मीटर में और समय t सेकंड में है, तो ds/dt का मात्रक m/s है। यही वेग (Velocity) है। वेग का समय के सापेक्ष अवकलज त्वरण (Acceleration) है, जिसका मात्रक m/s² है। दर ऋणात्मक होने का अर्थ है कि चुनी राशि घट रही है; उसे अपने आप दूरी या चाल न मानें। संबंधित दर (Related rate) के प्रश्नों में 2 या अधिक बदलती राशियाँ किसी समीकरण से जुड़ी होती हैं। वृत्त के लिए A=πr² है। समय के सापेक्ष अवकलन करने पर dA/dt=2πr dr/dt मिलता है। यदि r=3 cm और dr/dt=2 cm/s उसी क्षण हो, तो क्षेत्रफल की दर 12π cm²/s है। यहाँ स्थिर π का अवकलज नहीं लेते, लेकिन बदलते r पर श्रृंखला नियम लगता है। पहले संबंध लिखें, फिर अवकलन करें, अंत में दिए क्षण के मान रखें। अलग-अलग क्षणों के आँकड़े मिलाने से परिणाम का अर्थ खो जाता है।"
+      },
+      "formula": "dA/dt=2πr(dr/dt); v=ds/dt; a=dv/dt",
+      "question": {
+        "en": "If r=3 cm and dr/dt=2 cm/s, find dA/dt.",
+        "hi": "r=3 cm तथा dr/dt=2 cm/s हो तो dA/dt निकालें।"
+      },
+      "answer": {
+        "en": "12π cm²/s.",
+        "hi": "12π cm²/s।"
+      }
+    },
+    {
+      "title": {
+        "en": "Increasing and decreasing functions",
+        "hi": "वर्धमान और ह्रासमान फलन"
+      },
+      "body": {
+        "en": "A function increases on an interval if a larger input gives a larger output. When f′>0 throughout an interval, f is strictly increasing there; f′<0 gives strict decrease. Derivative zero at one point alone does not decide either behaviour. Solve f′=0, include points where the derivative is undefined but the function exists, and split the domain into intervals. Test the sign on each open interval.",
+        "hi": "वर्धमान फलन (Increasing function) में बड़े निवेश का निर्गत भी बड़ा होता है। किसी अंतराल के हर आंतरिक बिंदु पर f′(x)>0 हो, तो फलन उस अंतराल पर कड़ाई से बढ़ता है। f′(x)<0 होने पर वह घटता है। बराबरी सहित परिभाषाओं में गैरह्रासमान और गैरवर्धमान शब्द भी उपयोग होते हैं; प्रश्न में दी परिभाषा पढ़ें। किसी 1 बिंदु पर अवकलज 0 मिलने से पूरे अंतराल पर स्थिर फलन नहीं मिलता। f(x)=x³ में f′(0)=0 है, फिर भी फलन वास्तविक रेखा पर कड़ाई से वर्धमान है। व्यवहार खोजने के लिए पहले प्रांत लिखें और f′ निकालें। जहाँ f′=0 हो या मूल फलन मौजूद हो पर अवकलज न हो, उन बिंदुओं से अंतराल बाँटें। हर खुले अंतराल में कोई सुविधाजनक परीक्षण मान रखें और अवकलज का चिह्न देखें। सूत्र के हर में शून्य होने वाले बिंदु भी प्रांत बाँट सकते हैं, लेकिन वे अपने आप फलन के बिंदु नहीं बन जाते। चिह्न सारणी (Sign chart) अनुमान के बजाय व्यवस्थित निर्णय देती है।"
+      },
+      "formula": "f′>0 ⇒ increasing; f′<0 ⇒ decreasing",
+      "question": {
+        "en": "Where does x² decrease?",
+        "hi": "x² कहाँ घटता है?"
+      },
+      "answer": {
+        "en": "On (−∞,0), since 2x<0 there.",
+        "hi": "(−∞,0) पर, क्योंकि वहाँ 2x<0 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Critical points and stationary points",
+        "hi": "क्रांतिक और स्थिर बिंदु"
+      },
+      "body": {
+        "en": "An interior point in the domain is critical when f′=0 or f′ does not exist. A stationary point specifically has derivative zero. For x² the origin is stationary and a minimum; for x³ it is stationary but not an extremum; for |x| it is a critical minimum without a derivative. Thus solving f′=0 only produces candidates. Domain endpoints are considered separately in an absolute-extrema problem.",
+        "hi": "क्रांतिक बिंदु (Critical point) मूल फलन के प्रांत का ऐसा आंतरिक बिंदु है जहाँ अवकलज 0 हो या मौजूद न हो। स्थिर बिंदु (Stationary point) विशेष रूप से वह है जहाँ अवकलज 0 है। दोनों शब्दों को हमेशा समान न मानें। f(x)=x² में 0 पर अवकलज 0 और न्यूनतम मिलता है। f(x)=x³ में भी 0 पर अवकलज 0 है, लेकिन उसके दोनों ओर मान लगातार बढ़ते हैं; इसलिए वहाँ न उच्चतम है, न न्यूनतम। f(x)=|x| में 0 पर अवकलज नहीं, फिर भी स्थानीय न्यूनतम है। अतः f′(x)=0 के हल केवल संभावित बिंदु हैं, अंतिम उत्तर नहीं। बंद अंतराल में सबसे बड़ा या सबसे छोटा मान चाहिए तो अंतिम बिंदु भी अलग जाँचें। यदि फलन किसी बिंदु पर परिभाषित नहीं है, तो उसे क्रांतिक बिंदु की सूची में न रखें। प्रश्न हल करते समय एक सारणी में बिंदु, अवकलज की स्थिति और आसपास का चिह्न लिखें। इससे केवल क्षैतिज स्पर्शरेखा देखकर चरम मान मान लेने की सामान्य भूल दूर होती है।"
+      },
+      "formula": "Critical: c∈domain, with f′(c)=0 or f′(c) undefined",
+      "question": {
+        "en": "Does f′(c)=0 guarantee a maximum or minimum?",
+        "hi": "क्या f′(c)=0 उच्चतम या न्यूनतम सुनिश्चित करता है?"
+      },
+      "answer": {
+        "en": "No; x³ at 0 is a counterexample.",
+        "hi": "नहीं; 0 पर x³ प्रति-उदाहरण है।"
+      }
+    },
+    {
+      "title": {
+        "en": "First derivative test",
+        "hi": "प्रथम अवकलज परीक्षण"
+      },
+      "body": {
+        "en": "At a critical point, a derivative sign change from + to − gives a local maximum; − to + gives a local minimum. No sign change means no extremum by this test. For f=x³−3x, f′=3(x−1)(x+1). The signs are +,−,+ across −1 and 1. Therefore the local maximum is f(−1)=2 and local minimum is f(1)=−2. Distinguish the input from the function value.",
+        "hi": "प्रथम अवकलज परीक्षण (First derivative test) आसपास बढ़ने और घटने से चरम मान पहचानता है। यदि किसी क्रांतिक बिंदु के बाएँ f′ धनात्मक और दाएँ ऋणात्मक हो, तो फलन पहले बढ़ता और फिर घटता है; वहाँ स्थानीय उच्चतम (Local maximum) है। ऋणात्मक से धनात्मक परिवर्तन पर स्थानीय न्यूनतम (Local minimum) मिलता है। चिह्न न बदले, तो इस परीक्षण से उस बिंदु पर चरम मान नहीं मिलता। उदाहरण f(x)=x³−3x लें। अवकलज 3x²−3=3(x−1)(x+1) है। बिंदु −1 और 1 वास्तविक रेखा को 3 अंतरालों में बाँटते हैं। अवकलज के चिह्न क्रमशः धनात्मक, ऋणात्मक और धनात्मक हैं। इसलिए x=−1 पर स्थानीय उच्चतम मान 2 तथा x=1 पर स्थानीय न्यूनतम मान −2 है। बिंदु का x-निर्देशांक और फलन का मान अलग लिखें। स्थानीय का अर्थ आसपास के मानों से तुलना है, पूरी वास्तविक रेखा का सबसे बड़ा मान नहीं। बहुपद x³−3x का संपूर्ण वास्तविक प्रांत पर कोई परम उच्चतम या परम न्यूनतम नहीं है।"
+      },
+      "formula": "+→−: local maximum; −→+: local minimum",
+      "question": {
+        "en": "For x³−3x, what is the local maximum value?",
+        "hi": "x³−3x का स्थानीय उच्चतम मान क्या है?"
+      },
+      "answer": {
+        "en": "2 at x=−1.",
+        "hi": "x=−1 पर 2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Second derivative test",
+        "hi": "द्वितीय अवकलज परीक्षण"
+      },
+      "body": {
+        "en": "If f′(c)=0 and f″(c)>0, c is a local minimum; f″(c)<0 gives a local maximum, under the usual differentiability conditions near c. If f″(c)=0, the test is inconclusive. It does not prove the absence of an extremum: x⁴ has a minimum at 0 despite zero second derivative. Use the first derivative or direct comparison when the second derivative test fails.",
+        "hi": "द्वितीय अवकलज परीक्षण (Second derivative test) कई चिकने फलनों में जल्दी निष्कर्ष देता है। पहले f′(c)=0 होना चाहिए। यदि आसपास आवश्यक अवकलनीयता हो और f″(c)>0 मिले, तो x=c पर स्थानीय न्यूनतम है। f″(c)<0 मिलने पर स्थानीय उच्चतम है। इसका ज्यामितीय विचार है कि पहली ढाल क्रमशः बढ़ती या घटती दिशा में 0 पार करती है। केवल f″ धनात्मक देखकर हर बिंदु को न्यूनतम न कहें; पहले स्थिर बिंदु की शर्त जाँचना जरूरी है। यदि f″(c)=0 हो, तो परीक्षण अनिर्णायक (Inconclusive) है। इसका अर्थ यह नहीं कि वहाँ चरम मान नहीं हो सकता। f(x)=x⁴ में f′(0)=0 और f″(0)=0 हैं, फिर भी f(x)≥0 होने से 0 पर न्यूनतम है। दूसरी ओर x³ में उसी बिंदु पर चरम मान नहीं है। ऐसी स्थिति में प्रथम अवकलज की चिह्न सारणी या सीधी तुलना उपयोग करें। प्रत्येक परीक्षण की शर्त लिखने से हम सही नियम को गलत परिस्थिति में लगाने से बचते हैं।"
+      },
+      "formula": "f′(c)=0: f″(c)>0 ⇒ min; f″(c)<0 ⇒ max; f″(c)=0 ⇒ inconclusive",
+      "question": {
+        "en": "What does f″(c)=0 imply in this test?",
+        "hi": "इस परीक्षण में f″(c)=0 का क्या निष्कर्ष है?"
+      },
+      "answer": {
+        "en": "The test is inconclusive.",
+        "hi": "परीक्षण अनिर्णायक है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Absolute extrema on a closed interval",
+        "hi": "बंद अंतराल पर परम चरम मान"
+      },
+      "body": {
+        "en": "A continuous function on a closed bounded interval has an absolute maximum and minimum. Evaluate it at interior critical points and both endpoints, then compare all candidate values. For x² on [−1,2], the minimum is 0 at 0 and maximum is 4 at 2. An open interval need not contain its bounds, so a largest or smallest value may not be attained. Do not substitute an excluded endpoint as an actual answer.",
+        "hi": "परम उच्चतम (Absolute maximum) और परम न्यूनतम (Absolute minimum) पूरे दिए प्रांत में सबसे बड़े और सबसे छोटे प्राप्त मान हैं। किसी बंद और परिबद्ध अंतराल [a,b] पर संतत फलन दोनों मान प्राप्त करता है। इन्हें खोजने की प्रक्रिया व्यवस्थित है: पहले अंतराल के भीतर क्रांतिक बिंदु निकालें, फिर उन बिंदुओं तथा दोनों सिरों a,b पर फलन मान लिखें और तुलना करें। f(x)=x² को [−1,2] पर देखें। भीतर स्थिर बिंदु 0 है। प्रत्याशी मान f(−1)=1, f(0)=0 और f(2)=4 हैं। इसलिए परम न्यूनतम 0 तथा परम उच्चतम 4 है। सिर्फ f′=0 हल करने से सिरों का उच्चतम छूट जाता। खुले अंतराल में सिरे शामिल नहीं होते; वहाँ सीमा होना प्राप्त चरम मान होने से अलग है। उदाहरण x पर (0,1) में मान 0 और 1 के पास जा सकते हैं, पर दोनों मिलते नहीं। इसलिए न न्यूनतम है, न उच्चतम। प्रश्न में बंद कोष्ठक और खुला कोष्ठक ध्यान से पढ़ना गणना जितना ही जरूरी है।"
+      },
+      "formula": "Candidates on [a,b]: interior critical points, a and b",
+      "question": {
+        "en": "Find extrema of x² on [−1,2].",
+        "hi": "[−1,2] पर x² के परम चरम मान निकालें।"
+      },
+      "answer": {
+        "en": "Minimum 0 at 0; maximum 4 at 2.",
+        "hi": "0 पर न्यूनतम 0; 2 पर उच्चतम 4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Building an optimisation model",
+        "hi": "इष्टतमीकरण का गणितीय मॉडल"
+      },
+      "body": {
+        "en": "Optimisation converts a verbal situation into an objective function with a feasible domain. A rectangle of perimeter 20 has sides x and 10−x, where 0<x<10. Its area A=x(10−x), derivative 10−2x and second derivative −2. The stationary point x=5 is a maximum and the area is 25 square units. The modelling constraints are essential; a mathematical critical point outside the allowed domain is not a physical solution.",
+        "hi": "इष्टतमीकरण (Optimisation) में उपलब्ध शर्तों के भीतर किसी राशि को सबसे बड़ा या सबसे छोटा बनाना होता है। पहले उद्देश्य राशि (Objective quantity) पहचानें, जैसे क्षेत्रफल, आयतन या लागत। फिर सभी राशियों को संभव हो तो 1 स्वतंत्र चर में लिखें और उसका व्यवहार्य प्रांत (Feasible domain) तय करें। परिमाप 20 इकाई के आयत में लंबाई x हो, तो चौड़ाई 10−x है। दोनों धनात्मक होने से 0<x<10 चाहिए। क्षेत्रफल A=x(10−x) है। अवकलज A′=10−2x को 0 रखने से x=5 मिलता है। A″=−2<0 होने से यह उच्चतम है; क्षेत्रफल 25 वर्ग इकाई है। मूल प्रश्न में लौटकर चौड़ाई भी 5 लिखें, केवल x न छोड़ें। यदि कोई प्रत्याशी ऋणात्मक लंबाई देता, तो उसे अस्वीकार करना पड़ता। मॉडल की शर्तें गणना से पहले लिखना जरूरी है। जहाँ बंद सीमाएँ हों, वहाँ सिरों की तुलना भी करें। उत्तर के साथ उपयुक्त मात्रक लिखें; लंबाई की इकाई और क्षेत्रफल की वर्ग इकाई एक नहीं हैं।"
+      },
+      "formula": "P=20 ⇒ A=x(10−x); A′=10−2x; Amax=25 at x=5",
+      "question": {
+        "en": "What rectangle maximises area with perimeter 20?",
+        "hi": "परिमाप 20 में कौन सा आयत अधिकतम क्षेत्रफल देता है?"
+      },
+      "answer": {
+        "en": "A square of side 5, area 25 square units.",
+        "hi": "भुजा 5 का वर्ग; क्षेत्रफल 25 वर्ग इकाई।"
+      }
+    },
+    {
+      "title": {
+        "en": "Interpreting signs and checking answers",
+        "hi": "चिह्नों का अर्थ और उत्तर की जाँच"
+      },
+      "body": {
+        "en": "A derivative is a rate, not the value of the original quantity. A positive derivative means increase, not necessarily a positive function. A negative value may be increasing. After optimisation, check the candidate against the domain, classify it, and report the actual objective value with units. A local maximum need not be the largest value on an unbounded domain. Compare numerical and graphical evidence, but give the sign test or inequality that supports the result.",
+        "hi": "अवकलज और फलन मान में अंतर रखना पूरे अध्याय की मुख्य आदत है। f′(x)>0 का अर्थ फलन बढ़ रहा है, यह नहीं कि f(x)>0 है। उदाहरण f(x)=x−100, x=1 पर ऋणात्मक है, पर उसकी ढाल 1 होने से बढ़ता है। इसी प्रकार धनात्मक ऊँचाई घट सकती है और उसकी दर ऋणात्मक हो सकती है। अनुप्रयोग में पहले संकेत की दिशा तय करें: जलस्तर नीचे जा रहा हो तो बढ़ते समय में ऊँचाई की दर ऋणात्मक होगी। अंतिम उत्तर की 4 जाँच करें: प्रांत, प्रत्याशी बिंदु, उच्चतम या न्यूनतम का प्रमाण और मूल राशि का मान। संख्यात्मक ग्राफ यह जाँचने में मदद करता है कि समीकरण का व्यवहार ठीक दिख रहा है, लेकिन स्क्रीन की सीमा के बाहर भी फलन का प्रांत हो सकता है। इसलिए किसी खिड़की में दिखा सबसे ऊँचा बिंदु परम उच्चतम होने का प्रमाण नहीं। दर में मात्रक का अनुपात और क्षेत्रफल या आयतन में उचित घात लिखें। अर्थ सहित उत्तर देने से केवल अवकलन की तकनीक वास्तविक समस्या के समाधान में बदलती है।"
+      },
+      "formula": "f′(x)>0 does not imply f(x)>0",
+      "question": {
+        "en": "Can a negative-valued function be increasing?",
+        "hi": "क्या ऋणात्मक मान वाला फलन बढ़ सकता है?"
+      },
+      "answer": {
+        "en": "Yes; x−100 increases even where it is negative.",
+        "hi": "हाँ; x−100 ऋणात्मक मानों पर भी बढ़ता है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "For s=t³−3t metres, find velocity at t=2 s.",
+        "hi": "s=t³−3t m में t=2 s पर वेग निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given displacement s(t); find v=ds/dt.",
+          "hi": "दिया विस्थापन s(t); ज्ञात करें v=ds/dt।"
+        },
+        {
+          "en": "v=3t²−3; at t=2, v=12−3.",
+          "hi": "v=3t²−3; t=2 पर v=12−3।"
+        },
+        {
+          "en": "Keep the velocity unit m/s because displacement is differentiated with respect to seconds.",
+          "hi": "विस्थापन का सेकंड के सापेक्ष अवकलन है, इसलिए वेग का मात्रक m/s रखें।"
+        }
+      ],
+      "answer": {
+        "en": "9 m/s.",
+        "hi": "9 m/s।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find intervals of increase and decrease of x²−4x.",
+        "hi": "x²−4x के बढ़ने और घटने के अंतराल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "f′=2x−4=2(x−2).",
+          "hi": "f′=2x−4=2(x−2)।"
+        },
+        {
+          "en": "It is negative for x<2 and positive for x>2.",
+          "hi": "यह x<2 पर ऋणात्मक और x>2 पर धनात्मक है।"
+        },
+        {
+          "en": "The derivative changes sign at x=2, giving a minimum f(2)=−4 and confirming the two intervals.",
+          "hi": "x=2 पर अवकलज का चिह्न बदलता है और f(2)=−4 न्यूनतम मिलता है; इससे दोनों अंतरालों की पुष्टि होती है।"
+        }
+      ],
+      "answer": {
+        "en": "Decreasing on (−∞,2); increasing on (2,∞).",
+        "hi": "(−∞,2) पर ह्रासमान; (2,∞) पर वर्धमान।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A circle has radius 4 cm increasing at 0.5 cm/s. Find its area rate.",
+        "hi": "वृत्त की त्रिज्या 4 cm है और 0.5 cm/s से बढ़ती है। क्षेत्रफल की दर निकालें।"
+      },
+      "steps": [
+        {
+          "en": "A=πr²; differentiate with respect to time.",
+          "hi": "A=πr²; समय के सापेक्ष अवकलन करें।"
+        },
+        {
+          "en": "dA/dt=2πr dr/dt.",
+          "hi": "dA/dt=2πr dr/dt।"
+        },
+        {
+          "en": "Substitute the simultaneous values:2π(4)(0.5).",
+          "hi": "एक ही क्षण के मान रखें:2π(4)(0.5)।"
+        }
+      ],
+      "answer": {
+        "en": "4π cm²/s.",
+        "hi": "4π cm²/s।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the local extrema of f=x³−3x.",
+        "hi": "f=x³−3x के स्थानीय चरम मान निकालें।"
+      },
+      "steps": [
+        {
+          "en": "f′=3(x−1)(x+1); candidates −1,1.",
+          "hi": "f′=3(x−1)(x+1); प्रत्याशी −1,1।"
+        },
+        {
+          "en": "Signs across them are +,−,+.",
+          "hi": "इनके आसपास चिह्न +,−,+ हैं।"
+        },
+        {
+          "en": "f(−1)=2; f(1)=−2.",
+          "hi": "f(−1)=2; f(1)=−2।"
+        }
+      ],
+      "answer": {
+        "en": "Local maximum 2 at −1; local minimum −2 at 1.",
+        "hi": "−1 पर स्थानीय उच्चतम 2; 1 पर स्थानीय न्यूनतम −2।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "An open-top box with square base has volume 32 cm³. Minimise its material area.",
+        "hi": "वर्गाकार आधार वाले खुले डिब्बे का आयतन 32 cm³ है। पृष्ठ क्षेत्रफल न्यूनतम करें।"
+      },
+      "steps": [
+        {
+          "en": "Let base side x>0 and height h=32/x².",
+          "hi": "आधार भुजा x>0 तथा ऊँचाई h=32/x² लें।"
+        },
+        {
+          "en": "Area A=x²+4xh=x²+128/x.",
+          "hi": "क्षेत्रफल A=x²+4xh=x²+128/x।"
+        },
+        {
+          "en": "A′=2x−128/x²=0 ⇒ x³=64 ⇒ x=4.",
+          "hi": "A′=2x−128/x²=0 ⇒ x³=64 ⇒ x=4।"
+        },
+        {
+          "en": "A″=2+256/x³>0 for x>0, so the unique stationary point is the global minimum.",
+          "hi": "x>0 पर A″=2+256/x³>0; अतः एकमात्र स्थिर बिंदु परम न्यूनतम है।"
+        },
+        {
+          "en": "h=2; A=16+32=48.",
+          "hi": "h=2; A=16+32=48।"
+        }
+      ],
+      "answer": {
+        "en": "Base side 4 cm, height 2 cm; minimum area 48 cm².",
+        "hi": "आधार भुजा 4 cm, ऊँचाई 2 cm; न्यूनतम क्षेत्रफल 48 cm²।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "If f′>0 on an interval, f is",
+        "hi": "किसी अंतराल पर f′>0 हो तो f है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Strictly increasing",
+            "hi": "कड़ाई से वर्धमान"
+          },
+          "reason": {
+            "en": "Positive slopes give increasing values.",
+            "hi": "धनात्मक ढाल से मान बढ़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Strictly decreasing",
+            "hi": "कड़ाई से ह्रासमान"
+          },
+          "reason": {
+            "en": "Decrease corresponds to negative derivative.",
+            "hi": "ह्रास ऋणात्मक अवकलज से होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Necessarily positive",
+            "hi": "अवश्य धनात्मक"
+          },
+          "reason": {
+            "en": "The sign of f′ does not fix the sign of f.",
+            "hi": "f′ का चिह्न f का चिह्न नहीं तय करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Constant",
+            "hi": "स्थिर"
+          },
+          "reason": {
+            "en": "A constant function has zero derivative.",
+            "hi": "स्थिर फलन का अवकलज 0 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At a critical point, f′ changes + to −. This gives",
+        "hi": "क्रांतिक बिंदु पर f′ धनात्मक से ऋणात्मक हो तो मिलता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Local maximum",
+            "hi": "स्थानीय उच्चतम"
+          },
+          "reason": {
+            "en": "The function changes from increasing to decreasing.",
+            "hi": "फलन बढ़ने से घटने लगता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Local minimum",
+            "hi": "स्थानीय न्यूनतम"
+          },
+          "reason": {
+            "en": "A minimum uses − to +.",
+            "hi": "न्यूनतम में ऋणात्मक से धनात्मक परिवर्तन होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No extremum",
+            "hi": "कोई चरम मान नहीं"
+          },
+          "reason": {
+            "en": "The sign change proves a local maximum.",
+            "hi": "चिह्न परिवर्तन स्थानीय उच्चतम सिद्ध करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A zero function value",
+            "hi": "फलन मान 0"
+          },
+          "reason": {
+            "en": "The derivative sign does not set the height.",
+            "hi": "अवकलज का चिह्न ऊँचाई तय नहीं करता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If f′(c)=0 and f″(c)=0, the second derivative test is",
+        "hi": "f′(c)=0 तथा f″(c)=0 हो तो द्वितीय अवकलज परीक्षण है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Inconclusive",
+            "hi": "अनिर्णायक"
+          },
+          "reason": {
+            "en": "Use a sign test or direct comparison.",
+            "hi": "चिह्न परीक्षण या सीधी तुलना करें।"
+          }
+        },
+        {
+          "text": {
+            "en": "A proof of maximum",
+            "hi": "उच्चतम का प्रमाण"
+          },
+          "reason": {
+            "en": "A negative second derivative would give maximum.",
+            "hi": "ऋणात्मक द्वितीय अवकलज उच्चतम बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "A proof of minimum",
+            "hi": "न्यूनतम का प्रमाण"
+          },
+          "reason": {
+            "en": "A positive second derivative would give minimum.",
+            "hi": "धनात्मक द्वितीय अवकलज न्यूनतम बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "A proof of no extremum",
+            "hi": "चरम मान न होने का प्रमाण"
+          },
+          "reason": {
+            "en": "x⁴ at 0 disproves this claim.",
+            "hi": "0 पर x⁴ इस कथन का प्रति-उदाहरण है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Minimum of x²−4x+7 is",
+        "hi": "x²−4x+7 का न्यूनतम है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "Complete the square: (x−2)²+3.",
+            "hi": "वर्ग पूरा करें: (x−2)²+3।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "2 is the input attaining the minimum.",
+            "hi": "2 न्यूनतम देने वाला निवेश है।"
+          }
+        },
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "7 is f(0), not the least value.",
+            "hi": "7, f(0) है, न्यूनतम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−4",
+            "hi": "−4"
+          },
+          "reason": {
+            "en": "The completed square is nonnegative.",
+            "hi": "पूरा वर्ग गैरऋणात्मक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For displacement in m and time in s, ds/dt has units",
+        "hi": "विस्थापन m और समय s में हो तो ds/dt का मात्रक है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "m/s",
+            "hi": "m/s"
+          },
+          "reason": {
+            "en": "A derivative divides displacement units by time units.",
+            "hi": "अवकलज में विस्थापन मात्रक को समय मात्रक से भाग देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "m/s²",
+            "hi": "m/s²"
+          },
+          "reason": {
+            "en": "That is acceleration.",
+            "hi": "यह त्वरण का मात्रक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "m²",
+            "hi": "m²"
+          },
+          "reason": {
+            "en": "That is area.",
+            "hi": "यह क्षेत्रफल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "s/m",
+            "hi": "s/m"
+          },
+          "reason": {
+            "en": "This reverses the rate.",
+            "hi": "यह दर को उलटता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For A=πr², r=2 cm and dr/dt=3 cm/s, dA/dt is",
+        "hi": "A=πr² में r=2 cm, dr/dt=3 cm/s हो तो dA/dt है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12π cm²/s",
+            "hi": "12π cm²/s"
+          },
+          "reason": {
+            "en": "2πr dr/dt=2π(2)(3).",
+            "hi": "2πr dr/dt=2π(2)(3)।"
+          }
+        },
+        {
+          "text": {
+            "en": "6π cm²/s",
+            "hi": "6π cm²/s"
+          },
+          "reason": {
+            "en": "The radius derivative formula has a factor 2.",
+            "hi": "त्रिज्या अवकलन में गुणक 2 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4π cm²",
+            "hi": "4π cm²"
+          },
+          "reason": {
+            "en": "4π cm² is area, not its time rate.",
+            "hi": "4π cm² क्षेत्रफल है, समय दर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3 cm/s",
+            "hi": "3 cm/s"
+          },
+          "reason": {
+            "en": "3 cm/s is the radius rate.",
+            "hi": "3 cm/s त्रिज्या की दर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A candidate outside the feasible domain must be",
+        "hi": "व्यवहार्य प्रांत से बाहर के प्रत्याशी को"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Rejected for the model",
+            "hi": "मॉडल के लिए अस्वीकार करें"
+          },
+          "reason": {
+            "en": "It violates the original constraints.",
+            "hi": "वह मूल शर्तें तोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always selected",
+            "hi": "हमेशा चुनें"
+          },
+          "reason": {
+            "en": "An algebraic root need not be physically allowed.",
+            "hi": "बीजीय मूल भौतिक रूप से संभव होना जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Made positive automatically",
+            "hi": "अपने आप धनात्मक करें"
+          },
+          "reason": {
+            "en": "Changing a root changes the equation.",
+            "hi": "मूल बदलने से समीकरण बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Called a maximum",
+            "hi": "उच्चतम कहें"
+          },
+          "reason": {
+            "en": "Classification comes after domain checks.",
+            "hi": "प्रांत जाँच के बाद वर्गीकरण होता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The absolute maximum of x² on [−1,2] is",
+        "hi": "[−1,2] पर x² का परम उच्चतम है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "Compare f(−1)=1,f(0)=0,f(2)=4.",
+            "hi": "f(−1)=1,f(0)=0,f(2)=4 की तुलना करें।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "0 is the minimum.",
+            "hi": "0 न्यूनतम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "The other endpoint gives 4.",
+            "hi": "दूसरा सिरा 4 देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "2 is an input, not the maximum value.",
+            "hi": "2 निवेश है, उच्चतम मान नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At x=0, x³ has",
+        "hi": "x=0 पर x³ का है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A stationary point but no extremum",
+            "hi": "स्थिर बिंदु, पर चरम मान नहीं"
+          },
+          "reason": {
+            "en": "3x² is positive on both sides.",
+            "hi": "दोनों ओर 3x² धनात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A local maximum",
+            "hi": "स्थानीय उच्चतम"
+          },
+          "reason": {
+            "en": "It continues increasing to the right.",
+            "hi": "यह दाईं ओर भी बढ़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A local minimum",
+            "hi": "स्थानीय न्यूनतम"
+          },
+          "reason": {
+            "en": "Values to the left are negative.",
+            "hi": "बाईं ओर मान ऋणात्मक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No derivative",
+            "hi": "अवकलज नहीं"
+          },
+          "reason": {
+            "en": "Its derivative at 0 exists and equals 0.",
+            "hi": "0 पर अवकलज मौजूद है और 0 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A rectangle of perimeter 20 has maximum area",
+        "hi": "परिमाप 20 के आयत का अधिकतम क्षेत्रफल है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "25 square units",
+            "hi": "25 square units"
+          },
+          "reason": {
+            "en": "A=x(10−x) is maximised at x=5.",
+            "hi": "A=x(10−x), x=5 पर उच्चतम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "20 square units",
+            "hi": "20 square units"
+          },
+          "reason": {
+            "en": "20 is perimeter, not area.",
+            "hi": "20 परिमाप है, क्षेत्रफल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "100 square units",
+            "hi": "100 square units"
+          },
+          "reason": {
+            "en": "Side 10 would leave the other side 0.",
+            "hi": "भुजा 10 से दूसरी भुजा 0 होगी।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 square units",
+            "hi": "10 square units"
+          },
+          "reason": {
+            "en": "Substitute both sides 5: area 25.",
+            "hi": "दोनों भुजाएँ 5 रखें: क्षेत्रफल 25।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain why f′>0 does not imply f>0.",
+        "hi": "f′>0 से f>0 क्यों नहीं मिलता?"
+      },
+      "answer": {
+        "en": "x−100 has derivative 1 but is negative for x<100.",
+        "hi": "x−100 का अवकलज 1 है, लेकिन x<100 पर वह ऋणात्मक है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the first derivative test for a minimum.",
+        "hi": "न्यूनतम का प्रथम अवकलज परीक्षण लिखें।"
+      },
+      "answer": {
+        "en": "The derivative changes from negative to positive across the critical point.",
+        "hi": "क्रांतिक बिंदु के आर-पार अवकलज ऋणात्मक से धनात्मक हो।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find intervals of increase of x³−3x.",
+        "hi": "x³−3x के बढ़ने के अंतराल निकालें।"
+      },
+      "answer": {
+        "en": "f′=3(x²−1)>0 for x<−1 or x>1: intervals (−∞,−1),(1,∞).",
+        "hi": "f′=3(x²−1)>0 जब x<−1 या x>1; अंतराल (−∞,−1),(1,∞)।"
+      }
+    },
+    {
+      "question": {
+        "en": "What candidates are checked for absolute extrema on [a,b]?",
+        "hi": "[a,b] पर परम चरम मान हेतु कौन से प्रत्याशी जाँचते हैं?"
+      },
+      "answer": {
+        "en": "All interior critical points and endpoints a,b, provided f is continuous on the interval.",
+        "hi": "अंतराल पर संतत f के लिए सभी भीतरी क्रांतिक बिंदु तथा सिरे a,b।"
+      }
+    },
+    {
+      "question": {
+        "en": "A sphere radius grows at 2 cm/s. Find volume rate when r=3 cm.",
+        "hi": "गोले की त्रिज्या 2 cm/s से बढ़ती है। r=3 cm पर आयतन की दर निकालें।"
+      },
+      "answer": {
+        "en": "V=4πr³/3 ⇒ dV/dt=4πr² dr/dt=72π cm³/s.",
+        "hi": "V=4πr³/3 ⇒ dV/dt=4πr² dr/dt=72π cm³/s।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the least value of x²+16/x for x>0.",
+        "hi": "x>0 में x²+16/x का न्यूनतम निकालें।"
+      },
+      "answer": {
+        "en": "f′=2x−16/x²=0 ⇒ x=2; f″=2+32/x³>0, so minimum=4+8=12.",
+        "hi": "f′=2x−16/x²=0 ⇒ x=2; f″=2+32/x³>0, अतः न्यूनतम=4+8=12।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "A stationary point need not be an extremum. Do not omit endpoints or feasible-domain checks; report the objective value and units.",
+    "hi": "स्थिर बिंदु जरूरी नहीं कि चरम मान हो। अंतिम बिंदु और व्यवहार्य प्रांत जाँचें; मूल राशि का मान और मात्रक लिखें।"
+  },
+  "revision": [
+    {
+      "en": "A derivative is a rate with units.",
+      "hi": "अवकलज मात्रक वाली दर है।"
+    },
+    {
+      "en": "Use derivative signs to find increasing intervals.",
+      "hi": "बढ़ने के अंतराल अवकलज के चिह्न से निकालें।"
+    },
+    {
+      "en": "Sign changes classify critical points.",
+      "hi": "चिह्न परिवर्तन से क्रांतिक बिंदु का वर्गीकरण करें।"
+    },
+    {
+      "en": "A zero second derivative is inconclusive.",
+      "hi": "शून्य द्वितीय अवकलज अनिर्णायक है।"
+    },
+    {
+      "en": "Check constraints and endpoints for absolute extrema.",
+      "hi": "परम चरम मान में शर्तें और सिरे जाँचें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Rate → derivative sign → critical points → local extrema → endpoint comparison → constrained optimisation.",
+    "hi": "दर → अवकलज का चिह्न → क्रांतिक बिंदु → स्थानीय चरम मान → सिरों की तुलना → शर्तों में इष्टतमीकरण।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics XII Chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh106.pdf"
+    },
+    {
+      "title": "UPMSP Mathematics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    }
+  ],
+  "engine": "twelve-math",
+  "scenes": []
+}

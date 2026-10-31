@@ -1,0 +1,1459 @@
+{
+  "number": 4,
+  "id": "physics11-04",
+  "title": {
+    "en": "Laws of Motion",
+    "hi": "गति के नियम"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-04-1",
+      "title": {
+        "en": "Net force and acceleration",
+        "hi": "परिणामी बल और त्वरण"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 9
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Net force",
+            "hi": "परिणामी बल"
+          },
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "initial": 10,
+          "unit": "N"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Compare net force and acceleration at fixed mass.",
+        "hi": "नियत द्रव्यमान पर परिणामी बल तथा त्वरण तुलना करें।"
+      },
+      "observe": {
+        "en": "Keep mass 2 kg and vary the net force.",
+        "hi": "द्रव्यमान 2 kg रखकर परिणामी बल बदलें।"
+      },
+      "modelNote": {
+        "en": "The slider is net force, so all other forces are assumed already combined; the path is schematic.",
+        "hi": "स्लाइडर परिणामी बल है, इसलिए अन्य बल पहले ही जोड़े माने हैं; पथ सांकेतिक है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "For constant mass a = Fnet/2.",
+          "hi": "नियत द्रव्यमान में a = Fnet/2 है।"
+        }
+      },
+      "realLife": {
+        "en": "A larger resultant push produces greater acceleration of the same trolley.",
+        "hi": "समान गाड़ी पर अधिक परिणामी धक्का अधिक त्वरण देता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "For 10 N net force on 2 kg, a is:",
+          "hi": "2 kg पर 10 N परिणामी बल से a है:"
+        },
+        "options": [
+          {
+            "en": "5 m/s²",
+            "hi": "5 m/s²"
+          },
+          {
+            "en": "20 m/s²",
+            "hi": "20 m/s²"
+          },
+          {
+            "en": "0.2 m/s²",
+            "hi": "0.2 m/s²"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "a = 10/2 = 5 m/s².",
+          "hi": "a = 10/2 = 5 m/s²।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-04-1-low",
+          "label": {
+            "en": "Explore the lower setting: 0 N",
+            "hi": "निचली सेटिंग देखें: 0 N"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "phy11-04-1-high",
+          "label": {
+            "en": "Compare the upper setting: 20 N",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 20 N"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 20
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 10.0
+          },
+          "text": {
+            "en": "A smaller net force gives a smaller acceleration.",
+            "hi": "कम परिणामी बल से कम त्वरण है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 10.0
+          },
+          "text": {
+            "en": "A larger net force increases acceleration proportionally.",
+            "hi": "अधिक परिणामी बल से त्वरण समानुपाती बढ़ता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-04-2",
+      "title": {
+        "en": "Static and kinetic friction",
+        "hi": "स्थैतिक और गतिज घर्षण"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 10
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Applied force",
+            "hi": "लगाया बल"
+          },
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "initial": 5,
+          "unit": "N"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Distinguish static balance from sliding friction.",
+        "hi": "स्थैतिक संतुलन और फिसलन घर्षण में अंतर देखें।"
+      },
+      "observe": {
+        "en": "Increase horizontal pull from rest past the static limit.",
+        "hi": "विराम से क्षैतिज खिंचाव को स्थैतिक सीमा से आगे बढ़ाएँ।"
+      },
+      "modelNote": {
+        "en": "Each setting is a fresh test from rest: m = 2 kg, g = 9.8 m/s², μs = 0.4, μk = 0.3; no history-dependent motion is simulated.",
+        "hi": "हर सेटिंग विराम से नया परीक्षण है: m = 2 kg, g = 9.8 m/s², μs = 0.4, μk = 0.3; पिछली गति का इतिहास मॉडल में नहीं है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Static friction balances up to 7.84 N; after sliding the model uses 5.88 N kinetic friction.",
+          "hi": "स्थैतिक घर्षण 7.84 N तक संतुलित करता है; फिसलने पर मॉडल 5.88 N गतिज घर्षण लेता है।"
+        }
+      },
+      "realLife": {
+        "en": "A crate needs a larger initial push to start than to keep sliding in this simple comparison.",
+        "hi": "इस सरल तुलना में पेटी शुरू करने के लिए चलते रहने से अधिक धक्का चाहिए।"
+      },
+      "quick": {
+        "question": {
+          "en": "At a 5 N pull from rest, friction is:",
+          "hi": "विराम से 5 N खिंचाव पर घर्षण:"
+        },
+        "options": [
+          {
+            "en": "0 N",
+            "hi": "0 N"
+          },
+          {
+            "en": "5 N",
+            "hi": "5 N"
+          },
+          {
+            "en": "7.84 N",
+            "hi": "7.84 N"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Static friction matches 5 N because this is below the limit.",
+          "hi": "5 N सीमा से कम है, इसलिए स्थैतिक घर्षण 5 N है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-04-2-low",
+          "label": {
+            "en": "Explore the lower setting: 0 N",
+            "hi": "निचली सेटिंग देखें: 0 N"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "phy11-04-2-high",
+          "label": {
+            "en": "Compare the upper setting: 20 N",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 20 N"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 20
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 10.0
+          },
+          "text": {
+            "en": "Below the static limit the block can remain at rest.",
+            "hi": "स्थैतिक सीमा के नीचे गुटका विराम में रह सकता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 10.0
+          },
+          "text": {
+            "en": "Above the static limit sliding begins and net force accelerates the block.",
+            "hi": "स्थैतिक सीमा से ऊपर फिसलन शुरू और परिणामी बल से त्वरण है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-04-3",
+      "title": {
+        "en": "Banked road",
+        "hi": "ढलवाँ सड़क"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 11
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Bank angle",
+            "hi": "ढाल कोण"
+          },
+          "min": 5,
+          "max": 45,
+          "step": 5,
+          "initial": 20,
+          "unit": "°"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Relate banking angle to ideal design speed.",
+        "hi": "ढाल कोण को आदर्श डिजाइन चाल से जोड़ें।"
+      },
+      "observe": {
+        "en": "Keep road radius 20 m and increase the banking angle.",
+        "hi": "सड़क त्रिज्या 20 m रखकर ढाल कोण बढ़ाएँ।"
+      },
+      "modelNote": {
+        "en": "Frictionless ideal road, g = 9.8 m/s²; this is not a real driving-safety calculator.",
+        "hi": "घर्षणरहित आदर्श सड़क, g = 9.8 m/s²; यह वास्तविक वाहन सुरक्षा कैलकुलेटर नहीं है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Normal-force components give v = √(20 × 9.8 × tanθ).",
+          "hi": "अभिलंब के घटकों से v = √(20 × 9.8 × tanθ) मिलता है।"
+        }
+      },
+      "realLife": {
+        "en": "Road banking helps provide inward force while turning.",
+        "hi": "सड़क का ढाल मुड़ते समय अंदर का बल देने में सहायता करता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "The inward force is supplied by:",
+          "hi": "अंदर का बल मिलता है:"
+        },
+        "options": [
+          {
+            "en": "A horizontal normal component",
+            "hi": "अभिलंब के क्षैतिज घटक से"
+          },
+          {
+            "en": "An extra mysterious force",
+            "hi": "अलग रहस्यमय बल से"
+          },
+          {
+            "en": "Weight pointing horizontally",
+            "hi": "क्षैतिज भार से"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The normal is inclined; its horizontal component provides mv²/r.",
+          "hi": "अभिलंब झुका है; क्षैतिज घटक mv²/r देता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-04-3-low",
+          "label": {
+            "en": "Explore the lower setting: 5 °",
+            "hi": "निचली सेटिंग देखें: 5 °"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 5
+          }
+        },
+        {
+          "id": "phy11-04-3-high",
+          "label": {
+            "en": "Compare the upper setting: 45 °",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 45 °"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 45
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 25.0
+          },
+          "text": {
+            "en": "A smaller bank angle has a lower ideal design speed.",
+            "hi": "कम ढाल कोण पर आदर्श डिजाइन चाल कम है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 25.0
+          },
+          "text": {
+            "en": "A larger bank angle supports a higher ideal design speed.",
+            "hi": "अधिक ढाल कोण पर आदर्श डिजाइन चाल अधिक है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Inertia and Newton’s first law",
+        "hi": "जड़त्व और न्यूटन का पहला नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "Newton's first law states that a body remains at rest or moves with constant velocity unless acted on by a nonzero net external force. The law refers to velocity, including direction, rather than speed alone. A body moving in a circle at constant speed does not satisfy the force-free condition because its direction changes. Inertia is the resistance to a change of the state of motion; mass measures translational inertia. It is not a separate force that pushes a body forward. An inertial frame is one in which the first law holds. A bus passenger who leans forward when the bus brakes illustrates the tendency to retain the previous motion, while the seat and restraints exert forces that change it. Friction makes everyday objects stop, so their stopping does not contradict the law. The useful question is which external interactions act and what their vector sum is, not whether the object is visibly moving.",
+          "hi": "न्यूटन का पहला नियम बताता है कि परिणामी बाह्य बल अशून्य न हो तो वस्तु विराम में रहती है या नियत वेग से चलती रहती है। नियम वेग के बारे में है, जिसमें दिशा भी शामिल है; केवल चाल के बारे में नहीं। वृत्त में नियत चाल से चलती वस्तु बल मुक्त नहीं है, क्योंकि उसकी दिशा बदलती है। जड़त्व (Inertia) गति की अवस्था बदलने के विरोध की प्रवृत्ति है; द्रव्यमान स्थानांतरीय जड़त्व का माप है। जड़त्व आगे धकेलने वाला कोई अलग बल नहीं है। जिस संदर्भ फ्रेम में पहला नियम लागू हो, वह जड़त्वीय फ्रेम है। बस के ब्रेक लगाने पर यात्री का आगे झुकना पिछली गति बनाए रखने की प्रवृत्ति दिखाता है; सीट और सुरक्षा पट्टी उस गति को बदलने वाले बल लगाते हैं। रोजमर्रा की वस्तु घर्षण से रुकती है, इसलिए उसका रुकना नियम का विरोध नहीं है। असली प्रश्न है कि कौन से बाह्य संपर्क हैं और उनका सदिश योग क्या है, न कि केवल वस्तु चलती दिखाई देती है या नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A freely coasting spacecraft far from significant interactions does not need a continuing forward push to keep its velocity. The absence of everyday rubbing contacts makes the first-law idea easier to recognise.",
+          "hi": "महत्त्वपूर्ण संपर्कों से दूर चलता अंतरिक्ष यान वेग बनाए रखने के लिए लगातार आगे धक्का नहीं माँगता। रोजमर्रा के रगड़ संपर्क न होने से पहला नियम अधिक स्पष्ट दिखता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does steady straight-line motion require a nonzero net force?",
+          "hi": "नियत सरल रेखीय गति के लिए अशून्य परिणामी बल चाहिए?"
+        },
+        "answer": {
+          "en": "No; constant velocity is compatible with zero net external force.",
+          "hi": "नहीं; नियत वेग शून्य परिणामी बाह्य बल के साथ संभव है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Momentum and Newton’s second law",
+        "hi": "संवेग और न्यूटन का दूसरा नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "Linear momentum is the vector p = mv. Newton's second law relates the net external force to its time rate of change: Fnet = dp/dt. For a constant-mass body in an inertial frame this becomes Fnet = ma. The acceleration points along the net force, not necessarily along velocity. A force can speed up, slow down or turn a body depending on their relative directions. The SI force unit is the newton, equal to kg m/s². A 2 kg block under a 10 N net force has acceleration 5 m/s². The word net matters: applied force alone is not the net force if friction, tension or other interactions also act. Mass does not determine acceleration without force information. For a given force, doubling mass halves acceleration; for a fixed mass, doubling net force doubles acceleration. Write the vector equation first and then its components along chosen axes, retaining the signs.",
+          "hi": "रेखीय संवेग (Linear momentum) सदिश p = mv है। न्यूटन का दूसरा नियम परिणामी बाह्य बल को संवेग परिवर्तन की समय दर से जोड़ता है: Fnet = dp/dt। जड़त्वीय फ्रेम में नियत द्रव्यमान के लिए यह Fnet = ma बनता है। त्वरण परिणामी बल की दिशा में होता है, जरूरी नहीं कि वेग की दिशा में हो। बल वेग के सापेक्ष दिशा के अनुसार चाल बढ़ा, घटा या दिशा बदल सकता है। SI में बल का मात्रक न्यूटन है, जो kg m/s² के बराबर है। 2 kg के गुटके पर 10 N परिणामी बल हो तो त्वरण 5 m/s² है। परिणामी शब्द महत्त्वपूर्ण है; घर्षण, तनाव या अन्य संपर्क भी हों तो लगाया बल अकेला परिणामी नहीं है। केवल द्रव्यमान जानकर त्वरण नहीं निकाल सकते। समान बल पर द्रव्यमान दोगुना करने से त्वरण आधा और समान द्रव्यमान पर बल दोगुना करने से त्वरण दोगुना होता है। पहले सदिश समीकरण लिखें, फिर चुने अक्षों पर चिह्न सहित घटक लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "If a block moves right while the net force points left, its acceleration is leftward. It may continue moving right for some time while its speed decreases, rather than instantly reversing direction.",
+          "hi": "गुटका दाएँ चले और परिणामी बल बाएँ हो तो त्वरण बाएँ है। वह तुरंत दिशा बदलने के बजाय कुछ समय दाएँ चलते हुए चाल घटा सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which force belongs in F = ma?",
+          "hi": "F = ma में कौन सा बल लेते हैं?"
+        },
+        "answer": {
+          "en": "The net external force on the selected body.",
+          "hi": "चुनी वस्तु पर परिणामी बाह्य बल।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Impulse and change of momentum",
+        "hi": "आवेग और संवेग परिवर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "Impulse is the time integral of force and equals the change in momentum: J = ∫F dt = Δp. For a constant force it is FΔt, and for a varying force the area under the force-time graph gives impulse. Its SI unit N s is equivalent to kg m/s. A large force over a short time and a smaller force over a longer time may produce the same momentum change. The average force is Δp/Δt, but the instantaneous force need not remain at that average. When a ball rebounds, account for the reversal of velocity when calculating Δp; subtract vectors rather than speed magnitudes. If a ball returns with the same speed in the opposite direction, its momentum change has magnitude 2mv. Catching with yielding hands increases stopping time for a given change of momentum and reduces average force. This comparison assumes the same initial and final velocities and should not be read as a complete injury model.",
+          "hi": "आवेग (Impulse) बल का समय समाकलन है और संवेग परिवर्तन के बराबर होता है: J = ∫F dt = Δp। नियत बल में यह FΔt है; बदलते बल के लिए बल समय आलेख के नीचे क्षेत्रफल आवेग देता है। इसका SI मात्रक N s है, जो kg m/s के बराबर है। थोड़े समय का बड़ा बल और अधिक समय का छोटा बल समान संवेग परिवर्तन कर सकते हैं। औसत बल Δp/Δt है, लेकिन तात्क्षणिक बल हर क्षण इस औसत के बराबर होना जरूरी नहीं। गेंद लौटकर उछले तो Δp निकालते समय वेग की दिशा का उलटना शामिल करें। चालों के परिमाण नहीं, सदिश घटाएँ। समान चाल से विपरीत दिशा में लौटने पर संवेग परिवर्तन का परिमाण 2mv है। गेंद पकड़ते समय हाथ पीछे ले जाने से समान संवेग परिवर्तन के लिए रोक समय बढ़ता और औसत बल घटता है। इस तुलना में प्रारंभिक तथा अंतिम वेग समान माने हैं; इसे चोट की पूरी जैविक व्याख्या न समझें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For a 0.2 kg ball changing from +5 to −5 m/s, momentum change is −2 kg m/s. Treating both velocities as positive would incorrectly predict zero impulse.",
+          "hi": "0.2 kg गेंद का वेग +5 से −5 m/s हो तो संवेग परिवर्तन −2 kg m/s है। दोनों वेग धन लेने से गलत शून्य आवेग मिलेगा।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does force-time area represent?",
+          "hi": "बल समय क्षेत्रफल क्या दर्शाता है?"
+        },
+        "answer": {
+          "en": "Impulse, equal to momentum change.",
+          "hi": "आवेग, जो संवेग परिवर्तन के बराबर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Third law and momentum conservation",
+        "hi": "तीसरा नियम और संवेग संरक्षण"
+      },
+      "paragraphs": [
+        {
+          "en": "Newton's third law states that interacting bodies exert equal-magnitude opposite forces on each other at the same instant. The pair acts on different bodies, so it does not cancel within the free-body diagram of either body alone. A book's weight and the table's normal force are not a third-law pair: both act on the book. The partner of Earth's gravitational force on the book is the book's gravitational force on Earth. For a system of interacting particles, internal force pairs cancel in the total momentum balance. If net external force is zero, total momentum is conserved; for a short collision it may be approximately conserved when external impulse is negligible. The system boundary matters. Two colliding carts may form an isolated horizontal system even though each cart individually experiences a large force from the other. Conservation applies to the total vector momentum, not necessarily to each body's speed or to the kinetic energy.",
+          "hi": "न्यूटन का तीसरा नियम कहता है कि परस्पर संपर्क में वस्तुएँ एक ही क्षण एक दूसरे पर बराबर परिमाण के विपरीत बल लगाती हैं। यह जोड़ी अलग वस्तुओं पर लगती है, इसलिए अकेली किसी एक वस्तु के मुक्त पिंड चित्र में आपस में नहीं कटती। पुस्तक का भार और मेज का अभिलंब बल तीसरे नियम की जोड़ी नहीं हैं, क्योंकि दोनों पुस्तक पर लगते हैं। पृथ्वी द्वारा पुस्तक पर गुरुत्व बल का साथी पुस्तक द्वारा पृथ्वी पर गुरुत्व बल है। कई कणों के निकाय के कुल संवेग में आंतरिक बलों की जोड़ियाँ कटती हैं। परिणामी बाह्य बल शून्य हो तो कुल संवेग संरक्षित है। छोटी टक्कर में बाह्य आवेग नगण्य हो तो यह लगभग संरक्षित माना जा सकता है। निकाय की सीमा महत्त्वपूर्ण है। टकराती 2 गाड़ियाँ क्षैतिज दिशा में लगभग पृथक निकाय हो सकती हैं, भले प्रत्येक पर दूसरी से बड़ा बल लगे। संरक्षण कुल सदिश संवेग पर लागू है, हर वस्तु की चाल या गतिज ऊर्जा पर अनिवार्यतः नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Earth and a falling ball feel equal interaction forces but have enormously different accelerations because their masses differ. Equal forces do not imply equal accelerations.",
+          "hi": "पृथ्वी और गिरती गेंद के पारस्परिक बल बराबर हैं, लेकिन द्रव्यमान अलग होने से त्वरण अत्यधिक अलग हैं। बराबर बल का अर्थ बराबर त्वरण नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why do action and reaction not cancel on one body?",
+          "hi": "क्रिया तथा प्रतिक्रिया एक वस्तु पर क्यों नहीं कटतीं?"
+        },
+        "answer": {
+          "en": "They act on two different bodies.",
+          "hi": "वे 2 अलग वस्तुओं पर लगती हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Free-body diagrams and equilibrium",
+        "hi": "मुक्त पिंड चित्र और संतुलन"
+      },
+      "paragraphs": [
+        {
+          "en": "A free-body diagram isolates one chosen body and displays only the external forces acting on it. Replace each contact by its force: a smooth surface supplies a normal reaction, a taut ideal string supplies tension along itself, and Earth supplies weight downward near its surface. Do not draw the force that the body exerts on another object as an additional force on the same diagram. For translational equilibrium, the vector sum is zero, so ΣFx = 0 and ΣFy = 0 in a plane. Zero net force means zero acceleration; it permits both rest and constant velocity. Normal reaction is not always mg: an additional vertical pull, an incline or vertical acceleration changes it. Tension is not automatically equal to weight either. Choose axes to simplify components and solve simultaneous equations where forces are coupled. In multi-body problems, draw a separate diagram for each body before deciding whether a combined-system equation is helpful.",
+          "hi": "मुक्त पिंड चित्र (Free-body diagram) में एक चुनी वस्तु अलग करके केवल उस पर लगने वाले बाह्य बल दिखाते हैं। प्रत्येक संपर्क को उसके बल से बदलें। चिकनी सतह अभिलंब प्रतिक्रिया, तनी आदर्श डोरी अपनी दिशा में तनाव और पृथ्वी सतह के पास नीचे की ओर भार देती है। वस्तु किसी दूसरी वस्तु पर जो बल लगाती है, उसे उसी चित्र में अतिरिक्त बल की तरह न बनाएँ। स्थानांतरीय संतुलन में सदिश योग शून्य है, इसलिए समतल में ΣFx = 0 तथा ΣFy = 0 होता है। शून्य परिणामी बल का अर्थ शून्य त्वरण है; वस्तु विराम में या नियत वेग से चल सकती है। अभिलंब बल हमेशा mg नहीं है। अतिरिक्त ऊर्ध्व खिंचाव, ढाल या ऊर्ध्व त्वरण उसे बदलता है। तनाव भी अपने आप भार के बराबर नहीं होता। घटक सरल करने वाले अक्ष चुनें और जुड़े बलों में युगपत समीकरण हल करें। कई वस्तुओं वाले प्रश्न में पहले हर वस्तु का अलग चित्र बनाएँ, फिर देखें कि संयुक्त निकाय समीकरण कहाँ उपयोगी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For a block on a horizontal surface with no vertical acceleration and no other vertical force, N = mg. State these conditions instead of using that equality as an unconditional rule.",
+          "hi": "क्षैतिज सतह पर गुटके में ऊर्ध्व त्वरण और अन्य ऊर्ध्व बल न हों तो N = mg है। इसे बिना शर्त नियम मानने के बजाय ये शर्तें लिखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does zero net force mean zero velocity?",
+          "hi": "शून्य परिणामी बल का अर्थ शून्य वेग है?"
+        },
+        "answer": {
+          "en": "No; it means zero acceleration in an inertial frame.",
+          "hi": "नहीं; जड़त्वीय फ्रेम में इसका अर्थ शून्य त्वरण है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Static, kinetic and rolling friction",
+        "hi": "स्थैतिक, गतिज और लोटनिक घर्षण"
+      },
+      "paragraphs": [
+        {
+          "en": "Friction is a contact interaction opposing relative sliding or its tendency between surfaces. Static friction adjusts to the required value up to a limiting magnitude fs,max = μsN; it is not always equal to μsN. Once sliding occurs, the simple kinetic model gives fk = μkN, approximately opposite relative sliding. Usually μk is smaller than μs for the same pair under comparable conditions. Friction need not oppose the body's velocity relative to the ground: it can accelerate a walking person or a driven wheel forward. Distinguish the tendency of contact surfaces to slip from the motion of the whole body. Rolling resistance is generally much smaller than sliding friction in common situations, which helps explain wheels and bearings. The coefficient is dimensionless and depends on the contacting surfaces and conditions. These are empirical approximate models, not exact universal laws valid for every speed, material or surface treatment. Lubrication can reduce sliding resistance by changing contact.",
+          "hi": "घर्षण (Friction) संपर्क की ऐसी क्रिया है जो सतहों के बीच सापेक्ष फिसलन या उसकी प्रवृत्ति का विरोध करती है। स्थैतिक घर्षण आवश्यकता के अनुसार बदलता है, लेकिन अधिकतम परिमाण fs,max = μsN तक ही हो सकता है। यह हमेशा μsN के बराबर नहीं है। फिसलन होने पर सरल गतिज मॉडल fk = μkN देता है, जिसकी दिशा सापेक्ष फिसलन के लगभग विपरीत है। समान सतह और तुलनीय परिस्थितियों में सामान्यतः μk, μs से कम होता है। घर्षण हमेशा वस्तु के भूमि सापेक्ष वेग का विरोध नहीं करता; वह चलते व्यक्ति या चालित पहिए को आगे त्वरित कर सकता है। संपर्क सतह की फिसलने की प्रवृत्ति और पूरी वस्तु की गति अलग पहचानें। सामान्य परिस्थितियों में लोटनिक प्रतिरोध फिसलन घर्षण से काफी कम है; इससे पहियों और बेयरिंग की उपयोगिता समझते हैं। घर्षण गुणांक विमाहीन है और सतह तथा परिस्थितियों पर निर्भर है। ये अनुभवजन्य लगभग मॉडल हैं, हर चाल और पदार्थ में लागू ठीक सार्वत्रिक नियम नहीं। स्नेहन संपर्क बदलकर फिसलन प्रतिरोध घटा सकता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "In the scene, m = 2 kg and g = 9.8 m/s² give N = 19.6 N. With μs = 0.4, the limiting static friction is 7.84 N; below it friction balances the applied pull.",
+          "hi": "दृश्य में m = 2 kg और g = 9.8 m/s² से N = 19.6 N है। μs = 0.4 पर सीमांत स्थैतिक घर्षण 7.84 N है; इसके नीचे घर्षण खिंचाव संतुलित करता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is static friction always μsN?",
+          "hi": "क्या स्थैतिक घर्षण हमेशा μsN है?"
+        },
+        "answer": {
+          "en": "No; μsN is its limiting value in the simple model.",
+          "hi": "नहीं; सरल मॉडल में μsN उसका सीमांत मान है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Centripetal force and banked roads",
+        "hi": "अभिकेंद्र बल और ढलवाँ सड़क"
+      },
+      "paragraphs": [
+        {
+          "en": "Circular motion requires an inward acceleration v²/r, so the inward resultant force must be mv²/r. “Centripetal force” names this role of the resultant; do not add it as a separate force to tension or friction already supplying it. On a level road, static friction can provide the horizontal inward force for a turning vehicle. On an ideally banked frictionless road, the normal reaction has a vertical component balancing weight and a horizontal component providing the centripetal requirement. Thus N cosθ = mg and N sinθ = mv²/r, giving v² = rg tanθ. This is the ideal design speed for the given bank angle and radius, not a universal safe speed for every real vehicle. If speed differs, friction may be required. Identify the radial direction in the free-body diagram and use actual force components. The normal points perpendicular to the road surface, not automatically vertically upward.",
+          "hi": "वृत्तीय गति में अंदर की ओर v²/r त्वरण चाहिए, इसलिए अंदर का परिणामी बल mv²/r होना चाहिए। अभिकेंद्र बल नाम परिणामी की इसी भूमिका को बताता है। जो तनाव या घर्षण इसे पहले ही दे रहे हैं, उनके साथ इसे अलग अतिरिक्त बल न जोड़ें। समतल सड़क पर मुड़ते वाहन को स्थैतिक घर्षण क्षैतिज अंदर का बल दे सकता है। आदर्श घर्षणरहित ढलवाँ सड़क पर अभिलंब प्रतिक्रिया का ऊर्ध्व घटक भार संतुलित करता है और क्षैतिज घटक अभिकेंद्र आवश्यकता पूरी करता है। इसलिए N cosθ = mg तथा N sinθ = mv²/r है; इनसे v² = rg tanθ मिलता है। यह दिए ढाल कोण और त्रिज्या की आदर्श डिजाइन चाल है, हर वास्तविक वाहन के लिए सार्वत्रिक सुरक्षित चाल नहीं। चाल अलग हो तो घर्षण जरूरी हो सकता है। मुक्त पिंड चित्र में त्रिज्यीय दिशा पहचानें और वास्तविक बलों के घटक लें। अभिलंब सड़क की सतह पर लंबवत है, अपने आप ऊर्ध्व ऊपर नहीं होता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The banked-road scene fixes r = 20 m and g = 9.8 m/s². Increasing θ increases the ideal design speed, but the model omits tyre condition, traffic and other real-road constraints.",
+          "hi": "ढलवाँ सड़क दृश्य में r = 20 m तथा g = 9.8 m/s² नियत हैं। θ बढ़ने से आदर्श डिजाइन चाल बढ़ती है, पर टायर, यातायात तथा वास्तविक सीमाएँ मॉडल में नहीं हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What supplies inward force on an ideal frictionless banked road?",
+          "hi": "आदर्श घर्षणरहित ढलवाँ सड़क पर अंदर का बल कौन देता है?"
+        },
+        "answer": {
+          "en": "The horizontal component of the normal reaction.",
+          "hi": "अभिलंब प्रतिक्रिया का क्षैतिज घटक।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "A systematic method for dynamics",
+        "hi": "गतिकी हल करने की क्रमबद्ध विधि"
+      },
+      "paragraphs": [
+        {
+          "en": "Read the situation and define the object or system first. Choose an inertial frame, mark directions, draw a free-body diagram, and write Newton's law component by component. Separate kinematic information from force information: velocity and position describe motion, while forces determine acceleration through the mass. If contact is about to slip, use limiting static friction; if it is already sliding, use the specified kinetic model. Check whether a proposed static solution exceeds μsN before accepting it. For a collision use momentum conservation only after examining external impulse. Solve symbolically when possible, then substitute compatible SI units. A negative acceleration is a direction result, not automatically a mistake. Verify limiting cases: zero net force should yield zero acceleration, removing a horizontal pull should not leave an unexplained force, and a heavier body at fixed force should accelerate less. Finish by stating magnitude, unit, direction and the relevant assumptions.",
+          "hi": "पहले परिस्थिति पढ़कर वस्तु या निकाय तय करें। जड़त्वीय फ्रेम चुनें, दिशाएँ चिह्नित करें, मुक्त पिंड चित्र बनाएँ और न्यूटन का नियम घटकवार लिखें। शुद्ध गतिकी की जानकारी को बल की जानकारी से अलग रखें। वेग और स्थिति गति का वर्णन करते हैं, जबकि बल द्रव्यमान के माध्यम से त्वरण तय करते हैं। सतह फिसलने के कगार पर हो तो सीमांत स्थैतिक घर्षण लें; पहले से फिसल रही हो तो बताई गतिज विधि अपनाएँ। स्थिर संतुलन का प्रस्तावित घर्षण μsN से अधिक तो नहीं, यह जाँचे बिना उत्तर स्वीकार न करें। टक्कर में बाह्य आवेग देखने के बाद ही संवेग संरक्षण लगाएँ। संभव हो तो पहले प्रतीकों में हल करें, फिर संगत SI मान रखें। ऋण त्वरण दिशा का परिणाम हो सकता है, अपने आप गलती नहीं। सीमांत स्थितियाँ जाँचें: परिणामी बल शून्य हो तो त्वरण शून्य, क्षैतिज खिंचाव हटाने पर कोई अस्पष्ट बल न बचे और समान बल में भारी वस्तु कम त्वरित हो। अंत में परिमाण, मात्रक, दिशा और लागू मान्यताएँ स्पष्ट लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Rechecking the selected system often resolves a seeming contradiction. A force internal to a two-body system is external when just one body is isolated, so the appropriate momentum balance changes with the boundary.",
+          "hi": "चुना निकाय फिर जाँचने से कई विरोधाभास हटते हैं। 2 वस्तुओं के निकाय का आंतरिक बल अकेली वस्तु के लिए बाह्य है; सीमा बदलने पर उचित संवेग संतुलन बदलता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What must be checked before accepting a static-friction solution?",
+          "hi": "स्थैतिक घर्षण का हल मानने से पहले क्या जाँचें?"
+        },
+        "answer": {
+          "en": "The required friction must not exceed μsN.",
+          "hi": "आवश्यक घर्षण μsN से अधिक नहीं होना चाहिए।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Fnet = dp/dt = ma (constant m)",
+      "meaning": {
+        "en": "Net external force determines acceleration in an inertial frame.",
+        "hi": "जड़त्वीय फ्रेम में परिणामी बाह्य बल त्वरण तय करता है।"
+      },
+      "units": {
+        "en": "F: N; p: kg m/s; a: m/s²",
+        "hi": "F: N; p: kg m/s; a: m/s²"
+      }
+    },
+    {
+      "expression": "J = ∫F dt = Δp",
+      "meaning": {
+        "en": "Impulse is the momentum change.",
+        "hi": "आवेग संवेग परिवर्तन है।"
+      },
+      "units": {
+        "en": "N s = kg m/s",
+        "hi": "N s = kg m/s"
+      }
+    },
+    {
+      "expression": "fs ≤ μsN; fk ≈ μkN",
+      "meaning": {
+        "en": "Static-friction limit and simple sliding model.",
+        "hi": "स्थैतिक घर्षण सीमा तथा सरल फिसलन मॉडल।"
+      },
+      "units": {
+        "en": "Friction,N: N; μ: dimensionless",
+        "hi": "घर्षण,N: N; μ: विमाहीन"
+      }
+    },
+    {
+      "expression": "v = √(rg tanθ)",
+      "meaning": {
+        "en": "Design speed for a frictionless banked road.",
+        "hi": "घर्षणरहित ढलवाँ सड़क की डिजाइन चाल।"
+      },
+      "units": {
+        "en": "v: m/s; r: m; g: m/s²",
+        "hi": "v: m/s; r: m; g: m/s²"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A 2 kg body experiences net force 10 N. Find acceleration.",
+        "hi": "2 kg वस्तु पर 10 N परिणामी बल है। त्वरण निकालें।"
+      },
+      "given": {
+        "en": "m = 2 kg; Fnet = 10 N.",
+        "hi": "m = 2 kg; Fnet = 10 N।"
+      },
+      "find": {
+        "en": "a.",
+        "hi": "a।"
+      },
+      "formula": {
+        "en": "a = Fnet/m",
+        "hi": "a = Fnet/m"
+      },
+      "steps": [
+        {
+          "en": "a = 10/2.",
+          "hi": "a = 10/2।"
+        }
+      ],
+      "answer": {
+        "en": "5 m/s² along the net force.",
+        "hi": "परिणामी बल की दिशा में 5 m/s²।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A constant 4 N force acts for 3 s. Find impulse.",
+        "hi": "4 N नियत बल 3 s लगता है। आवेग निकालें।"
+      },
+      "given": {
+        "en": "F = 4 N; Δt = 3 s.",
+        "hi": "F = 4 N; Δt = 3 s।"
+      },
+      "find": {
+        "en": "J.",
+        "hi": "J।"
+      },
+      "formula": {
+        "en": "J = FΔt",
+        "hi": "J = FΔt"
+      },
+      "steps": [
+        {
+          "en": "Multiply 4 by 3.",
+          "hi": "4 को 3 से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "12 N s along the force.",
+        "hi": "बल की दिशा में 12 N s।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find static friction for a 2 kg block pulled with 5 N on a level surface.",
+        "hi": "समतल सतह पर 2 kg गुटके को 5 N से खींचें। स्थैतिक घर्षण निकालें।"
+      },
+      "given": {
+        "en": "μs = 0.4; g = 9.8 m/s²; starts at rest.",
+        "hi": "μs = 0.4; g = 9.8 m/s²; शुरू में विराम।"
+      },
+      "find": {
+        "en": "Friction and acceleration.",
+        "hi": "घर्षण तथा त्वरण।"
+      },
+      "formula": {
+        "en": "fs,max = μs mg",
+        "hi": "fs,max = μs mg"
+      },
+      "steps": [
+        {
+          "en": "Maximum static friction = 0.4 × 2 × 9.8 = 7.84 N.",
+          "hi": "अधिकतम स्थैतिक घर्षण = 0.4 × 2 × 9.8 = 7.84 N।"
+        },
+        {
+          "en": "5 N is below this limit; static friction balances it.",
+          "hi": "5 N सीमा से कम है; स्थैतिक घर्षण इसे संतुलित करता है।"
+        }
+      ],
+      "answer": {
+        "en": "Friction 5 N opposite the pull; a = 0.",
+        "hi": "खींचाव के विपरीत 5 N घर्षण; a = 0।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A sliding 2 kg block is pulled by 10 N; μk = 0.3. Find acceleration.",
+        "hi": "फिसलते 2 kg गुटके को 10 N से खींचते हैं; μk = 0.3। त्वरण निकालें।"
+      },
+      "given": {
+        "en": "g = 9.8 m/s²; horizontal pull along sliding.",
+        "hi": "g = 9.8 m/s²; क्षैतिज खिंचाव फिसलन दिशा में।"
+      },
+      "find": {
+        "en": "a.",
+        "hi": "a।"
+      },
+      "formula": {
+        "en": "fk = μkmg; a = (F − fk)/m",
+        "hi": "fk = μkmg; a = (F − fk)/m"
+      },
+      "steps": [
+        {
+          "en": "fk = 0.3 × 2 × 9.8 = 5.88 N.",
+          "hi": "fk = 0.3 × 2 × 9.8 = 5.88 N।"
+        },
+        {
+          "en": "a = (10 − 5.88)/2.",
+          "hi": "a = (10 − 5.88)/2।"
+        }
+      ],
+      "answer": {
+        "en": "2.06 m/s² along the pull.",
+        "hi": "खींचाव की दिशा में 2.06 m/s²।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A frictionless banked road has r = 20 m and θ = 45°. Find design speed.",
+        "hi": "घर्षणरहित ढलवाँ सड़क में r = 20 m तथा θ = 45° है। डिजाइन चाल निकालें।"
+      },
+      "given": {
+        "en": "g = 9.8 m/s²; ideal model.",
+        "hi": "g = 9.8 m/s²; आदर्श मॉडल।"
+      },
+      "find": {
+        "en": "v.",
+        "hi": "v।"
+      },
+      "formula": {
+        "en": "v = √(rg tanθ)",
+        "hi": "v = √(rg tanθ)"
+      },
+      "steps": [
+        {
+          "en": "tan45° = 1.",
+          "hi": "tan45° = 1।"
+        },
+        {
+          "en": "v = √(20 × 9.8) = √196.",
+          "hi": "v = √(20 × 9.8) = √196।"
+        }
+      ],
+      "answer": {
+        "en": "14 m/s; ideal design result, not a real-road safety guarantee.",
+        "hi": "14 m/s; आदर्श डिजाइन परिणाम, वास्तविक सड़क की सुरक्षा गारंटी नहीं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Zero net force in an inertial frame implies:",
+        "hi": "जड़त्वीय फ्रेम में शून्य परिणामी बल का अर्थ:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero acceleration",
+            "hi": "शून्य त्वरण"
+          },
+          "reason": {
+            "en": "Newton’s second law gives a = 0 for nonzero constant mass.",
+            "hi": "अशून्य नियत द्रव्यमान में दूसरे नियम से a = 0।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero velocity always",
+            "hi": "हमेशा शून्य वेग"
+          },
+          "reason": {
+            "en": "Constant nonzero velocity is possible.",
+            "hi": "नियत अशून्य वेग संभव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Increasing speed always",
+            "hi": "हमेशा बढ़ती चाल"
+          },
+          "reason": {
+            "en": "Speed remains constant.",
+            "hi": "चाल नियत रहती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero mass",
+            "hi": "शून्य द्रव्यमान"
+          },
+          "reason": {
+            "en": "Mass need not vanish.",
+            "hi": "द्रव्यमान शून्य होना जरूरी नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A 2 kg body under 10 N net force has acceleration:",
+        "hi": "2 kg वस्तु पर 10 N परिणामी बल से त्वरण:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "20 m/s²",
+            "hi": "20 m/s²"
+          },
+          "reason": {
+            "en": "Multiply is not the required operation.",
+            "hi": "गुणा करना सही क्रिया नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5 m/s²",
+            "hi": "5 m/s²"
+          },
+          "reason": {
+            "en": "10/2 = 5.",
+            "hi": "10/2 = 5।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.2 m/s²",
+            "hi": "0.2 m/s²"
+          },
+          "reason": {
+            "en": "This divides in the wrong order.",
+            "hi": "यह गलत क्रम का भाग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 m/s²",
+            "hi": "10 m/s²"
+          },
+          "reason": {
+            "en": "Mass must be included.",
+            "hi": "द्रव्यमान भी लेना होगा।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Action and reaction forces act on:",
+        "hi": "क्रिया तथा प्रतिक्रिया बल लगते हैं:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The same body",
+            "hi": "एक ही वस्तु"
+          },
+          "reason": {
+            "en": "Each partner acts on the other object.",
+            "hi": "हर साथी दूसरी वस्तु पर लगता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Different bodies",
+            "hi": "अलग वस्तुएँ"
+          },
+          "reason": {
+            "en": "This is why they do not cancel on one free-body diagram.",
+            "hi": "इसीलिए एक मुक्त पिंड चित्र में नहीं कटते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the heavier body",
+            "hi": "केवल भारी वस्तु"
+          },
+          "reason": {
+            "en": "Both bodies experience interaction.",
+            "hi": "दोनों वस्तुएँ संपर्क अनुभव करती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only moving bodies",
+            "hi": "केवल चलती वस्तुएँ"
+          },
+          "reason": {
+            "en": "The law also applies at rest.",
+            "hi": "विराम में भी नियम लागू है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Impulse has SI unit:",
+        "hi": "आवेग का SI मात्रक:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "N/s",
+            "hi": "N/s"
+          },
+          "reason": {
+            "en": "Impulse multiplies force by time.",
+            "hi": "आवेग बल को समय से गुणा करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "N s",
+            "hi": "N s"
+          },
+          "reason": {
+            "en": "N s equals kg m/s.",
+            "hi": "N s बराबर kg m/s है।"
+          }
+        },
+        {
+          "text": {
+            "en": "N/m",
+            "hi": "N/m"
+          },
+          "reason": {
+            "en": "This is not momentum change.",
+            "hi": "यह संवेग परिवर्तन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "kg/s",
+            "hi": "kg/s"
+          },
+          "reason": {
+            "en": "A length factor is missing.",
+            "hi": "लंबाई का गुणक गायब है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Static friction is:",
+        "hi": "स्थैतिक घर्षण:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always μsN",
+            "hi": "हमेशा μsN"
+          },
+          "reason": {
+            "en": "μsN is the limiting value.",
+            "hi": "μsN सीमांत मान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Adjustable up to μsN",
+            "hi": "μsN तक आवश्यकता अनुसार"
+          },
+          "reason": {
+            "en": "It balances the tendency to slip within its limit.",
+            "hi": "सीमा के भीतर फिसलन की प्रवृत्ति संतुलित करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "हमेशा शून्य"
+          },
+          "reason": {
+            "en": "A resting pulled block may need friction.",
+            "hi": "खींचे विराम गुटके में घर्षण हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always opposite ground velocity",
+            "hi": "हमेशा भूमि वेग के विपरीत"
+          },
+          "reason": {
+            "en": "It opposes relative slip tendency, not necessarily ground motion.",
+            "hi": "यह सापेक्ष फिसलन प्रवृत्ति का विरोध करता है, अनिवार्यतः भूमि गति का नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "For m = 2 kg, μs = 0.4 and g = 9.8 m/s² on a level surface, static limit is:",
+        "hi": "समतल सतह पर m = 2 kg, μs = 0.4 तथा g = 9.8 m/s² में स्थैतिक सीमा:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0.8 N",
+            "hi": "0.8 N"
+          },
+          "reason": {
+            "en": "This omits g.",
+            "hi": "इसमें g छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "7.84 N",
+            "hi": "7.84 N"
+          },
+          "reason": {
+            "en": "0.4 × 2 × 9.8 = 7.84.",
+            "hi": "0.4 × 2 × 9.8 = 7.84।"
+          }
+        },
+        {
+          "text": {
+            "en": "19.6 N",
+            "hi": "19.6 N"
+          },
+          "reason": {
+            "en": "This is the normal force.",
+            "hi": "यह अभिलंब बल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5.88 N",
+            "hi": "5.88 N"
+          },
+          "reason": {
+            "en": "This would use μk = 0.3.",
+            "hi": "यह μk = 0.3 से मिलेगा।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Centripetal force is:",
+        "hi": "अभिकेंद्र बल है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "An extra force added to all real forces",
+            "hi": "सभी वास्तविक बलों के अलावा अतिरिक्त बल"
+          },
+          "reason": {
+            "en": "Adding it separately double-counts the role.",
+            "hi": "अलग जोड़ने से एक भूमिका दो बार गिनते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The inward resultant required for circular motion",
+            "hi": "वृत्तीय गति का आवश्यक अंदर का परिणामी"
+          },
+          "reason": {
+            "en": "Actual forces supply mv²/r inward.",
+            "hi": "वास्तविक बल अंदर mv²/r देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always gravity",
+            "hi": "हमेशा गुरुत्व"
+          },
+          "reason": {
+            "en": "Tension or friction can supply it too.",
+            "hi": "तनाव या घर्षण भी दे सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always opposite velocity",
+            "hi": "हमेशा वेग के विपरीत"
+          },
+          "reason": {
+            "en": "It is perpendicular to velocity in uniform circular motion.",
+            "hi": "एकसमान वृत्तीय गति में यह वेग पर लंबवत है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The normal reaction on an inclined road is:",
+        "hi": "ढलवाँ सड़क पर अभिलंब प्रतिक्रिया:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always vertical",
+            "hi": "हमेशा ऊर्ध्व"
+          },
+          "reason": {
+            "en": "It follows the contact normal.",
+            "hi": "यह संपर्क के अभिलंब में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Perpendicular to the road",
+            "hi": "सड़क पर लंबवत"
+          },
+          "reason": {
+            "en": "That defines its direction.",
+            "hi": "यही इसकी दिशा की परिभाषा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always parallel to road",
+            "hi": "हमेशा सड़क के समांतर"
+          },
+          "reason": {
+            "en": "A normal is not tangential.",
+            "hi": "अभिलंब स्पर्शरेखीय नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "हमेशा शून्य"
+          },
+          "reason": {
+            "en": "Contact generally supplies a reaction.",
+            "hi": "संपर्क में सामान्यतः प्रतिक्रिया है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Total momentum is conserved when:",
+        "hi": "कुल संवेग संरक्षित होता है जब:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Net external impulse is zero",
+            "hi": "परिणामी बाह्य आवेग शून्य है"
+          },
+          "reason": {
+            "en": "The system momentum change then vanishes.",
+            "hi": "तब निकाय का संवेग परिवर्तन शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Each body has zero speed",
+            "hi": "हर वस्तु की चाल शून्य है"
+          },
+          "reason": {
+            "en": "Bodies may move and exchange momentum.",
+            "hi": "वस्तुएँ चलकर संवेग बाँट सकती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Internal forces are absent",
+            "hi": "आंतरिक बल नहीं हैं"
+          },
+          "reason": {
+            "en": "Internal forces can exchange momentum.",
+            "hi": "आंतरिक बल संवेग बदल सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Kinetic energy must always increase",
+            "hi": "गतिज ऊर्जा हमेशा बढ़े"
+          },
+          "reason": {
+            "en": "Momentum conservation does not require kinetic-energy increase.",
+            "hi": "संवेग संरक्षण में गतिज ऊर्जा बढ़ना जरूरी नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A fixed momentum change over a longer stopping time gives:",
+        "hi": "समान संवेग परिवर्तन अधिक रोक समय में हो तो:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Greater average force",
+            "hi": "अधिक औसत बल"
+          },
+          "reason": {
+            "en": "Average force is inversely related to time for fixed impulse.",
+            "hi": "नियत आवेग में औसत बल समय के व्युत्क्रमानुपाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Smaller average force",
+            "hi": "कम औसत बल"
+          },
+          "reason": {
+            "en": "Favg = Δp/Δt.",
+            "hi": "Favg = Δp/Δt।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged force necessarily",
+            "hi": "अनिवार्यतः समान बल"
+          },
+          "reason": {
+            "en": "Time appears in the denominator.",
+            "hi": "समय हर में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero impulse",
+            "hi": "शून्य आवेग"
+          },
+          "reason": {
+            "en": "Impulse remains the same momentum change.",
+            "hi": "आवेग वही संवेग परिवर्तन है।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why are weight and normal reaction not a third-law pair?",
+        "hi": "भार और अभिलंब तीसरे नियम की जोड़ी क्यों नहीं?"
+      },
+      "answer": {
+        "en": "Both act on the same body; a third-law pair acts on different bodies.",
+        "hi": "दोनों समान वस्तु पर हैं; तीसरे नियम की जोड़ी अलग वस्तुओं पर लगती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the condition for momentum conservation of a system.",
+        "hi": "निकाय के संवेग संरक्षण की शर्त लिखें।"
+      },
+      "answer": {
+        "en": "Net external force is zero throughout the interval, or net external impulse is zero for the momentum comparison.",
+        "hi": "अंतराल में परिणामी बाह्य बल शून्य हो, या संवेग तुलना में कुल बाह्य आवेग शून्य हो।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why friction can help walking forward.",
+        "hi": "घर्षण आगे चलने में कैसे सहायता करता है?"
+      },
+      "answer": {
+        "en": "The foot tends to push the ground backward; static friction from the ground can act forward on the foot.",
+        "hi": "पैर जमीन को पीछे धकेलता है; जमीन का स्थैतिक घर्षण पैर पर आगे लग सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "A force of 6 N acts on 3 kg. Find acceleration.",
+        "hi": "3 kg पर 6 N परिणामी बल है। त्वरण निकालें।"
+      },
+      "answer": {
+        "en": "a = 6/3 = 2 m/s² along the resultant.",
+        "hi": "a = 6/3 = 2 m/s² परिणामी की दिशा में।"
+      }
+    },
+    {
+      "question": {
+        "en": "Derive ideal banked-road design speed.",
+        "hi": "आदर्श ढलवाँ सड़क की डिजाइन चाल निकालें।"
+      },
+      "answer": {
+        "en": "N sinθ = mv²/r and N cosθ = mg; dividing gives tanθ = v²/(rg), hence v = √(rg tanθ).",
+        "hi": "N sinθ = mv²/r तथा N cosθ = mg; भाग देने से tanθ = v²/(rg), इसलिए v = √(rg tanθ)।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is wrong with setting fs = μsN in every resting case?",
+        "hi": "हर विराम स्थिति में fs = μsN रखना गलत क्यों?"
+      },
+      "answer": {
+        "en": "Static friction adjusts below its limiting value; equality is appropriate only at impending sliding in this simple model.",
+        "hi": "स्थैतिक घर्षण सीमा से नीचे आवश्यकता अनुसार है; सरल मॉडल में बराबरी फिसलने के कगार पर ही सही है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Inertia is not an extra force.",
+      "hi": "जड़त्व अतिरिक्त बल नहीं है।"
+    },
+    {
+      "en": "Use net external force in Newton’s second law.",
+      "hi": "दूसरे नियम में परिणामी बाह्य बल लें।"
+    },
+    {
+      "en": "Third-law partners act on different bodies.",
+      "hi": "तीसरे नियम के साथी अलग वस्तुओं पर हैं।"
+    },
+    {
+      "en": "Static friction adjusts up to a limit.",
+      "hi": "स्थैतिक घर्षण सीमा तक बदलता है।"
+    },
+    {
+      "en": "Actual inward force provides circular acceleration.",
+      "hi": "वास्तविक अंदर का बल वृत्तीय त्वरण देता है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not add centripetal force twice, assume static friction is always limiting, or put third-law partners on one free-body diagram.",
+    "hi": "अभिकेंद्र बल दो बार न जोड़ें, स्थैतिक घर्षण हमेशा सीमांत न मानें और तीसरे नियम के साथी एक मुक्त पिंड चित्र पर न रखें।"
+  },
+  "goal": {
+    "en": "Use Newton’s laws, impulse and contact forces to explain changes of motion.",
+    "hi": "न्यूटन के नियम, आवेग तथा संपर्क बल से गति परिवर्तन समझें।"
+  },
+  "conceptMap": "जड़त्व और न्यूटन का पहला नियम → संवेग और न्यूटन का दूसरा नियम → आवेग और संवेग परिवर्तन → तीसरा नियम और संवेग संरक्षण → मुक्त पिंड चित्र और संतुलन → स्थैतिक, गतिज और लोटनिक घर्षण → अभिकेंद्र बल और ढलवाँ सड़क → गतिकी हल करने की क्रमबद्ध विधि",
+  "conceptMapEn": "Inertia and Newton’s first law → Momentum and Newton’s second law → Impulse and change of momentum → Third law and momentum conservation → Free-body diagrams and equilibrium → Static, kinetic and rolling friction → Centripetal force and banked roads → A systematic method for dynamics",
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Class 11 Physics and the UP Board 2026–27 syllabus. Use the prescribed textbook alongside these models.",
+    "hi": "NCERT कक्षा 11 भौतिकी तथा यूपी बोर्ड 2026–27 पाठ्यक्रम पर आधारित मौलिक अध्ययन व्याख्याएँ। इन मॉडलों के साथ निर्धारित पाठ्यपुस्तक भी पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part I · Chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keph104.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ]
+}

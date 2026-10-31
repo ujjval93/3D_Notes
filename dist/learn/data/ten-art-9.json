@@ -1,0 +1,419 @@
+{
+  "id": "ten-art-9",
+  "number": 9,
+  "classId": "10",
+  "title": {
+    "en": "Plain and Diagonal Scales",
+    "hi": "साधारण और कर्णवत मापनियाँ"
+  },
+  "engine": "step",
+  "drawingKind": "ten-scales",
+  "artTopic": 9,
+  "goal": {
+    "en": "Construct and explain plain and diagonal scales with accurate relationships.",
+    "hi": "सटीक संबंधों से साधारण और कर्णवत मापनियाँ की रचना और व्याख्या करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Meaning of a Scale",
+        "hi": "मापनी का अर्थ"
+      },
+      "body": {
+        "en": "A scale represents a real length by a shorter or longer drawing length. The representative fraction RF is drawing length divided by actual length in the same units. For RF = 1:100, 1 cm on paper represents 100 cm, or 1 m, in reality. The screen is not a physical ruler: its display size changes between devices. The diagram explains division and reading, while the paper construction must use measured centimetres. Label the unit and RF so that a reader knows what the marks mean.",
+        "hi": "मापनी वास्तविक लंबाई को छोटी या बड़ी चित्र लंबाई से दिखाती है। निरूपक भिन्न (RF) समान इकाइयों में चित्र लंबाई को वास्तविक लंबाई से भाग देने पर मिलता है। RF = 1:100 में कागज का 1 cm वास्तविक 100 cm अर्थात 1 m दिखाता है। स्क्रीन वास्तविक पैमाना नहीं है; अलग उपकरण पर उसका आकार बदलता है। चित्र विभाजन और पढ़ना समझाता है, जबकि कागज की रचना मापे सेंटीमीटर से बनेगी। इकाई और RF लिखें ताकि निशान का अर्थ स्पष्ट हो।"
+      },
+      "question": {
+        "en": "Which geometric relationship justifies this stage?",
+        "hi": "कौन सा ज्यामितीय संबंध इस चरण को सही ठहराता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Plain Scale Divisions",
+        "hi": "साधारण मापनी के विभाजन"
+      },
+      "body": {
+        "en": "Mark equal main divisions and place zero after the first division from the left. Divide that left-hand unit into ten equal parts. Read whole units to the right of zero and fractional units to the left. This arrangement lets one measured span combine the two parts without estimating a fraction beyond a whole-unit mark. Do not label both sides as increasing whole units. A plain scale with metre main divisions and ten subdivisions reads metres and decimetres.",
+        "hi": "बराबर मुख्य विभाजन करें और बाएँ से पहले विभाजन के बाद शून्य रखें। बाईं ओर की इकाई को 10 बराबर भागों में बाँटें। शून्य के दाएँ पूर्ण इकाई और बाएँ छोटी इकाई पढ़ें। इस व्यवस्था में एक मापा खंड दोनों भाग जोड़ देता है; पूर्ण इकाई के आगे छोटे भाग का अनुमान नहीं लगाना पड़ता। दोनों ओर बढ़ती पूर्ण इकाइयाँ न लिखें। मीटर के मुख्य और 10 छोटे विभाजन वाली साधारण मापनी मीटर तथा डेसीमीटर पढ़ती है।"
+      },
+      "question": {
+        "en": "Which geometric relationship justifies this stage?",
+        "hi": "कौन सा ज्यामितीय संबंध इस चरण को सही ठहराता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Why Diagonals Work",
+        "hi": "कर्णवत रेखाएँ क्यों काम करती हैं"
+      },
+      "body": {
+        "en": "Raise a rectangle above the plain scale and divide its height into ten equal horizontal levels. Across each small subdivision in the left-hand unit draw the appropriate diagonal. Similar triangles make the horizontal shift at each successive level one tenth of that small subdivision. If a small subdivision represents 0.1 m, each level adds 0.01 m of precision. The diagonal does not change the RF; it allows a finer fractional reading using proportional geometry.",
+        "hi": "साधारण मापनी के ऊपर आयत बनाकर उसकी ऊँचाई 10 बराबर क्षैतिज स्तरों में बाँटें। बाईं इकाई के हर छोटे विभाजन पर उचित कर्णवत रेखा बनाएँ। समरूप त्रिभुजों के कारण हर अगले स्तर पर क्षैतिज खिसकाव उस छोटे विभाजन का दसवाँ भाग होता है। छोटा विभाजन 0.1 m दिखाए तो हर स्तर 0.01 m का सूक्ष्म भाग देता है। कर्णवत रेखा RF नहीं बदलती; वह आनुपातिक ज्यामिति से छोटा अंश अधिक स्पष्ट पढ़ने देती है।"
+      },
+      "question": {
+        "en": "Which geometric relationship justifies this stage?",
+        "hi": "कौन सा ज्यामितीय संबंध इस चरण को सही ठहराता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Read the Worked Example",
+        "hi": "हल किया पाठन उदाहरण"
+      },
+      "body": {
+        "en": "The illustrated span reads 2 m + 0.3 m + 0.04 m = 2.34 m. Identify the whole-unit endpoint on the right, then the fractional endpoint on the correct diagonal and fourth horizontal level. Keep both endpoints on one horizontal reading line. Measure the horizontal span, not the sloping length of the diagonal. At RF 1:100, 2.34 m corresponds to 2.34 cm on the properly constructed paper scale. Check the conversion before transferring a real project dimension.",
+        "hi": "दिखाया खंड 2 m + 0.3 m + 0.04 m = 2.34 m पढ़ता है। दाएँ पूर्ण इकाई वाला सिरा और फिर सही कर्णवत रेखा तथा चौथे क्षैतिज स्तर पर भिन्न वाला सिरा पहचानें। दोनों सिरे एक क्षैतिज पाठन रेखा पर रखें। क्षैतिज खंड मापें, कर्णवत रेखा की तिरछी लंबाई नहीं। RF 1:100 पर 2.34 m सही बनी कागजी मापनी में 2.34 cm है। वास्तविक परियोजना का माप उतारने से पहले इकाई परिवर्तन जाँचें।"
+      },
+      "question": {
+        "en": "Which geometric relationship justifies this stage?",
+        "hi": "कौन सा ज्यामितीय संबंध इस चरण को सही ठहराता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Tools, Accuracy and Line Convention",
+        "hi": "साधन, सटीकता और रेखा परंपरा"
+      },
+      "body": {
+        "en": "Use a sharp pencil, a ruler and a compass with a firm hinge. Draw construction lines lightly so that the required final shape can be distinguished from its supporting work. Keep the compass opening fixed whenever equal radii are required. Mark points with small clear intersections rather than large dark blobs. A ruler can measure the given data, while a straightedge connects established points. In a compass-and-straightedge explanation, state how each point is found instead of relying only on its appearance. Label the main points outside crowded intersections. Avoid tracing a line repeatedly: a broad uncertain stroke makes the measured relationship less clear. Keep the paper still while measuring and compare the result before darkening it. Screen coordinates are schematic and cannot be treated as physical centimetres. For the paper version use the dimensions assigned by your teacher and keep all units consistent. If a construction fails to meet its expected point, find the earlier measurement or compass error rather than bending the final line. Retain enough auxiliary work to explain the method. A technically correct drawing combines the required geometry with clear communication of how it was obtained.",
+        "hi": "नुकीली पेंसिल, पैमाना और मजबूत जोड़ वाला परकार लें। निर्माण रेखाएँ हल्की बनाएँ ताकि माँगी गई अंतिम आकृति उसके सहायक कार्य से अलग दिखे। जहाँ समान त्रिज्या चाहिए वहाँ परकार का खुलाव स्थिर रखें। बड़े गहरे धब्बे के बजाय छोटे स्पष्ट प्रतिच्छेद से बिंदु चिह्नित करें। पैमाना दिए माप ले सकता है और सीधी धार स्थापित बिंदुओं को जोड़ती है। परकार तथा सीधी धार की व्याख्या में बताएँ कि हर बिंदु कैसे मिला; केवल दिखने पर भरोसा न करें। प्रमुख बिंदुओं के नाम भीड़ वाले प्रतिच्छेद से बाहर लिखें। एक रेखा बार बार न खींचें क्योंकि चौड़ा अनिश्चित निशान मापा हुआ संबंध अस्पष्ट करता है। मापते समय कागज स्थिर रखें और गहरा करने से पहले परिणाम मिलाएँ। स्क्रीन के निर्देशांक सांकेतिक हैं; उन्हें वास्तविक सेंटीमीटर न मानें। कागज पर शिक्षक के दिए माप लें और सभी इकाइयाँ समान रखें। अपेक्षित बिंदु न मिले तो अंतिम रेखा मोड़ने के बजाय पहले के माप या परकार की गलती खोजें। विधि समझाने लायक सहायक कार्य रखें। सटीक प्राविधिक चित्र में सही ज्यामिति और उसे प्राप्त करने की स्पष्ट जानकारी दोनों चाहिए।"
+      },
+      "question": {
+        "en": "Which lines are construction guides and which form the required answer?",
+        "hi": "कौन सी रेखाएँ सहायक हैं और कौन माँगा गया उत्तर बनाती हैं?"
+      }
+    },
+    {
+      "title": {
+        "en": "Review, Practice and Self-assessment",
+        "hi": "समीक्षा, अभ्यास और स्वमूल्यांकन"
+      },
+      "body": {
+        "en": "Pause after the outline, the main construction and the final treatment. At each pause compare the actual result with the purpose of this particular study. Identify one measurable relationship rather than saying only that the drawing looks nice. It may be a width-to-height ratio, a repeated interval, the position of a light area or a required perpendicular. Turn the paper slightly or view it from farther away to notice an imbalance, then return to the intended viewpoint for corrections. Keep early lines light enough to revise. Make one deliberate correction before adding decoration. In your notebook record the material, the main decision, the error you found and the correction you made. For a second attempt keep the central principle but change one condition, such as scale, placement or the selected colour. Compare the two versions and explain why one communicates the idea more clearly. A finished drawing should show purposeful choices, not merely a greater number of details. Use the observation questions to describe visible evidence. Use the reference sheet as a reminder of order rather than a substitute for practice. In the final five-line description mention the subject, structure, important contrast, technique and one improvement. Respect the teacher’s assigned dimensions and medium when adapting this screen study to an assessed drawing.",
+        "hi": "रूपरेखा, मुख्य निर्माण और अंतिम उपचार के बाद थोड़ी देर रुकें। हर बार बने परिणाम को इसी अध्ययन के उद्देश्य से मिलाएँ। केवल चित्र अच्छा है कहने के बजाय कोई जाँचने योग्य संबंध बताएँ। वह चौड़ाई और ऊँचाई का अनुपात, दोहराई दूरी, हल्के भाग की जगह या आवश्यक समकोण हो सकता है। चित्र को कुछ दूर से देखकर असंतुलन पहचानें, फिर सुधार के लिए निर्धारित देखने की स्थिति पर लौटें। आरंभिक रेखाएँ इतनी हल्की रखें कि संशोधन संभव हो। सजावट बढ़ाने से पहले एक स्पष्ट गलती सुधारें। अभ्यास कॉपी में सामग्री, मुख्य निर्णय, मिली गलती और किए सुधार को अलग लिखें। दूसरे प्रयास में मूल सिद्धांत समान रखें, पर आकार, स्थान या रंग में से एक बात बदलें। दोनों परिणामों की तुलना करके समझाएँ कि कौन विचार अधिक स्पष्ट दिखाता है। पूरा चित्र केवल अधिक विवरण वाला नहीं, सोचकर लिए निर्णयों वाला होना चाहिए। अवलोकन प्रश्नों के उत्तर में दिखाई देने वाला प्रमाण दें। संदर्भ पत्रक क्रम याद रखने में मदद करता है; वह हाथ से अभ्यास का विकल्प नहीं है। अंतिम 5 पंक्तियों में विषय, संरचना, प्रमुख अंतर, तकनीक और एक सुधार लिखें। मूल्यांकन के लिए स्क्रीन के चित्र को कागज पर बनाते समय शिक्षक द्वारा दिए माप और माध्यम का पालन करें।"
+      },
+      "question": {
+        "en": "Name one specific correction and explain what it improves.",
+        "hi": "एक निश्चित सुधार बताएँ और समझाएँ कि उससे क्या बेहतर होता है।"
+      }
+    }
+  ],
+  "artStepTips": [
+    {
+      "title": {
+        "en": "Baseline",
+        "hi": "आधार रेखा"
+      },
+      "tip": {
+        "en": "Draw a straight baseline.",
+        "hi": "सीधी आधार रेखा बनाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Main divisions",
+        "hi": "मुख्य विभाजन"
+      },
+      "tip": {
+        "en": "Mark equal main units.",
+        "hi": "बराबर मुख्य इकाइयाँ चिह्नित करें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Left subdivisions",
+        "hi": "बाएँ छोटे भाग"
+      },
+      "tip": {
+        "en": "Divide the left unit into 10.",
+        "hi": "बाईं इकाई को 10 भागों में बाँटें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Labels",
+        "hi": "नामांकन"
+      },
+      "tip": {
+        "en": "Read zero and metre labels.",
+        "hi": "शून्य और मीटर के नाम पढ़ें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Scale rectangle",
+        "hi": "मापनी आयत"
+      },
+      "tip": {
+        "en": "Raise a rectangle above the baseline.",
+        "hi": "आधार के ऊपर आयत बनाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Horizontal levels",
+        "hi": "क्षैतिज स्तर"
+      },
+      "tip": {
+        "en": "Use 10 equal height divisions.",
+        "hi": "ऊँचाई के 10 बराबर भाग लें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Diagonals",
+        "hi": "कर्णवत रेखाएँ"
+      },
+      "tip": {
+        "en": "Join offset subdivision points.",
+        "hi": "खिसके हुए विभाजन बिंदु जोड़ें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Reading guide",
+        "hi": "पाठन सहायक"
+      },
+      "tip": {
+        "en": "Follow one horizontal measured span.",
+        "hi": "एक क्षैतिज माप खंड का अनुसरण करें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Worked reading",
+        "hi": "हल किया पाठन"
+      },
+      "tip": {
+        "en": "Read 2.34 m from the marked points.",
+        "hi": "चिह्नित बिंदुओं से 2.34 m पढ़ें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Final review",
+        "hi": "अंतिम समीक्षा"
+      },
+      "tip": {
+        "en": "Check RF 1:100; screen size is schematic.",
+        "hi": "RF 1:100 जाँचें; स्क्रीन आकार सांकेतिक है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Beginner",
+      "title": {
+        "en": "Beginner study",
+        "hi": "प्रारंभिक अध्ययन"
+      },
+      "well": {
+        "en": "The baseline separates the main metre units from the left subdivisions.",
+        "hi": "आधार रेखा मुख्य मीटर इकाइयों और बाएँ उपविभाजनों को अलग करती है।"
+      },
+      "improve": {
+        "en": "Keep ticks and labels distinct when you reproduce the scale on paper.",
+        "hi": "कागज पर मापनी बनाते समय निशान और नामांकन अलग रखें।"
+      }
+    },
+    {
+      "level": "Intermediate",
+      "title": {
+        "en": "Intermediate study",
+        "hi": "मध्यम अध्ययन"
+      },
+      "well": {
+        "en": "Equal horizontal levels and diagonals support smaller subdivisions.",
+        "hi": "समान क्षैतिज स्तर और कर्णवत रेखाएँ छोटे उपविभाजन देते हैं।"
+      },
+      "improve": {
+        "en": "Check all ten subdivisions before reading the diagonal intersection.",
+        "hi": "कर्णवत प्रतिच्छेद पढ़ने से पहले सभी 10 उपविभाजन जाँचें।"
+      }
+    },
+    {
+      "level": "Good",
+      "title": {
+        "en": "Good study",
+        "hi": "अच्छा अध्ययन"
+      },
+      "well": {
+        "en": "The marked span is decomposed into 2 m + 0.3 m + 0.04 m.",
+        "hi": "चिह्नित दूरी 2 m + 0.3 m + 0.04 m में बाँटी गई है।"
+      },
+      "improve": {
+        "en": "Construct the RF 1:100 scale at measured size on paper; screen size is schematic.",
+        "hi": "कागज पर RF 1:100 मापनी मापकर बनाएँ; स्क्रीन का आकार सांकेतिक है।"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "question": {
+        "en": "Where is the fractional unit?",
+        "hi": "भिन्न वाली इकाई कहाँ है?"
+      },
+      "answer": {
+        "en": "To the left of zero.",
+        "hi": "शून्य के बाएँ।"
+      }
+    },
+    {
+      "question": {
+        "en": "How many horizontal levels divide the height?",
+        "hi": "ऊँचाई में कितने बराबर स्तर हैं?"
+      },
+      "answer": {
+        "en": "10 equal intervals.",
+        "hi": "10 बराबर अंतराल।"
+      }
+    },
+    {
+      "question": {
+        "en": "What does each small diagonal level add here?",
+        "hi": "यहाँ हर छोटा कर्णवत स्तर कितना जोड़ता है?"
+      },
+      "answer": {
+        "en": "0.01 m.",
+        "hi": "0.01 m।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the marked reading?",
+        "hi": "चिह्नित पाठन कितना है?"
+      },
+      "answer": {
+        "en": "2.34 m.",
+        "hi": "2.34 m।"
+      }
+    },
+    {
+      "question": {
+        "en": "Can a screen centimetre be trusted as paper scale?",
+        "hi": "क्या स्क्रीन का सेंटीमीटर कागजी मापनी मान सकते हैं?"
+      },
+      "answer": {
+        "en": "No; screen size varies and the illustration is schematic.",
+        "hi": "नहीं; स्क्रीन आकार बदलता है और चित्र सांकेतिक है।"
+      }
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "Why is the order of construction important in this study?",
+        "hi": "इस अध्ययन में निर्माण का क्रम महत्त्वपूर्ण क्यों है?"
+      },
+      "answer": {
+        "en": "Large reference relationships support later details. If the underlying structure is wrong, adding finish hides the error without correcting it. Establish and check the foundation first.",
+        "hi": "बड़े संदर्भ संबंध आगे के विवरण का आधार हैं। मूल संरचना गलत हो तो अंतिम उपचार गलती सुधारने के बजाय उसे छिपाता है। पहले आधार बनाकर उसकी जाँच करें।"
+      }
+    },
+    {
+      "question": {
+        "en": "How would you improve a second attempt?",
+        "hi": "दूसरे प्रयास को कैसे सुधारेंगे?"
+      },
+      "answer": {
+        "en": "Identify a specific problem using the observation questions, practise that relationship on scrap paper, then repeat the study while changing only one chosen variable. Compare visible evidence.",
+        "hi": "अवलोकन प्रश्नों से एक निश्चित समस्या पहचानें, अलग कागज पर उस संबंध का अभ्यास करें और केवल एक चुनी बात बदलकर अध्ययन दोहराएँ। दिखाई देने वाले प्रमाण की तुलना करें।"
+      }
+    }
+  ],
+  "description": {
+    "question": {
+      "en": "Describe this study in 5 lines: subject, structure, method, emphasis and one improvement.",
+      "hi": "इस अध्ययन को 5 पंक्तियों में लिखें: विषय, संरचना, विधि, प्रमुखता और एक सुधार।"
+    },
+    "answer": {
+      "en": "1. The subject is Plain and Diagonal Scales.\n2. The given reference geometry is established first.\n3. Light auxiliary lines locate the required points.\n4. The final relationships are checked mathematically.\n5. Clear labels distinguish the result from the construction.",
+      "hi": "1. विषय साधारण और कर्णवत मापनियाँ है।\n2. पहले दिया संदर्भ ज्यामितीय ढाँचा बनाया गया है।\n3. हल्की सहायक रेखाएँ आवश्यक बिंदु खोजती हैं।\n4. अंतिम संबंधों की गणितीय जाँच होती है।\n5. साफ नामांकन परिणाम को निर्माण से अलग करता है।"
+    }
+  },
+  "why": {
+    "en": "Similar triangles divide a small unit proportionally, allowing a hundredth-of-metre reading.",
+    "hi": "समरूप त्रिभुज छोटी इकाई को अनुपात में बाँटकर मीटर के सौवें भाग का पाठन देते हैं।"
+  },
+  "palette": [
+    {
+      "name": {
+        "en": "Paper",
+        "hi": "कागज"
+      },
+      "color": "#F6EBD6"
+    },
+    {
+      "name": {
+        "en": "Warm ochre",
+        "hi": "गेरुआ पीला"
+      },
+      "color": "#CDA45F"
+    },
+    {
+      "name": {
+        "en": "Blue green",
+        "hi": "नील हरित"
+      },
+      "color": "#4B8583"
+    },
+    {
+      "name": {
+        "en": "Muted red",
+        "hi": "मद्धिम लाल"
+      },
+      "color": "#B86658"
+    },
+    {
+      "name": {
+        "en": "Graphite",
+        "hi": "ग्रेफाइट"
+      },
+      "color": "#344E58"
+    }
+  ],
+  "commonMistakes": {
+    "en": "Avoid pressing the first lines too hard, adding details before checking the main relationships, and copying the screen without understanding each step. Use the topic-specific checks in the notes.",
+    "hi": "शुरू की रेखाओं पर अधिक दबाव, मुख्य संबंध जाँचे बिना विवरण और चरण समझे बिना स्क्रीन की नकल से बचें। नोट्स में दिए इस विषय के विशेष परीक्षण करें।"
+  },
+  "spotStep": {
+    "question": {
+      "en": "Which step adds the diagonal subdivision lines?",
+      "hi": "कर्णवत विभाजन रेखाएँ किस चरण में जुड़ती हैं?"
+    },
+    "correct": 6,
+    "reason": {
+      "en": "Step 7: Join offset subdivision points.",
+      "hi": "चरण 7: खिसके हुए विभाजन बिंदु जोड़ें।"
+    }
+  },
+  "missions": [
+    {
+      "label": {
+        "en": "Complete all 10 drawing stages.",
+        "hi": "चित्रण के सभी 10 चरण पूरे करें।"
+      },
+      "key": "step",
+      "min": 9
+    },
+    {
+      "label": {
+        "en": "Find the step: Diagonals.",
+        "hi": "चरण खोजें: कर्णवत रेखाएँ।"
+      },
+      "key": "spot",
+      "min": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "UPMSP: Class 10 Art (Drawing), 2026–27 official syllabus",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/936-Art(drawing)-Class-10.pdf"
+    }
+  ],
+  "scopeNote": {
+    "en": "These 12 teaching topics organise skills from the UP Board Art syllabus; they are not official textbook chapter numbers. Screen examples are original demonstrations. Practice here uses observation and description; the official examination also includes an objective section.",
+    "hi": "ये 12 शिक्षण विषय यूपी बोर्ड कला पाठ्यक्रम के कौशल व्यवस्थित करते हैं; ये आधिकारिक पाठ्यपुस्तक अध्याय संख्याएँ नहीं हैं। स्क्रीन के उदाहरण मौलिक प्रदर्शन हैं। यहाँ अभ्यास अवलोकन और वर्णन पर आधारित है; आधिकारिक परीक्षा में वस्तुनिष्ठ खंड भी होता है।"
+  }
+}

@@ -1,0 +1,3747 @@
+[
+  {
+    "id": "lkg-math-01",
+    "classId": "LKG",
+    "subject": "math",
+    "title": {
+      "en": "Count 1 to 5",
+      "hi": "1 से 5 तक गिनें"
+    },
+    "goal": {
+      "en": "Touch each object once and match a small group to its number.",
+      "hi": "हर वस्तु को 1 बार छूकर छोटे समूह को सही संख्या से मिलाएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "One touch, one count",
+          "hi": "1 स्पर्श, 1 गिनती"
+        },
+        "body": {
+          "en": "Point to each dot once. Say one number for each dot. The last number tells how many dots are in the group.",
+          "hi": "हर बिंदु पर उँगली रखें और उसके लिए 1 संख्या बोलें। फिर अगले बिंदु पर जाएँ। एक ही बिंदु को दोबारा गिनने से बचें। आखिरी बोली संख्या बताती है कि पूरे समूह में कितने बिंदु हैं। पहले 1 से 3 बिंदु लें। आसानी होने पर 4 और 5 बिंदु गिनें।"
+        }
+      },
+      {
+        "title": {
+          "en": "A number names a group",
+          "hi": "संख्या समूह की गिनती बताती है"
+        },
+        "body": {
+          "en": "Five dots remain five when their spacing changes. The numeral 5 is a written sign for that amount.",
+          "hi": "5 बिंदु पास रखें या दूर रखें, उनकी गिनती 5 ही है। जब कोई बिंदु जोड़ा या हटाया नहीं गया, तो समूह की संख्या नहीं बदलती। संख्या का चिह्न 5 उस गिनती को लिखने का तरीका है। कार्ड की संख्या देखकर उतने बिंदु गिनें और बोलें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Empty and full fingers",
+          "hi": "खाली हाथ और खुली उँगलियाँ"
+        },
+        "body": {
+          "en": "Use fingers to show small amounts. An empty group has 0 objects; this helps compare nothing with one or more.",
+          "hi": "हाथ की उँगलियों से छोटी गिनती दिखाएँ। 1 उँगली, फिर 2 और फिर 5 उँगलियाँ खोलें। खाली समूह में कोई वस्तु नहीं होती। उसे 0 से दिखाते हैं। खाली हाथ और 1 खुली उँगली का अंतर देखें। जल्दी करने के बजाय गिनते समय ध्यान दें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "0",
+        "label": {
+          "en": "Zero",
+          "hi": "शून्य"
+        },
+        "picture": "●",
+        "count": 0,
+        "say": {
+          "en": "Zero. Count 0 dots.",
+          "hi": "शून्य। 0 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "1",
+        "label": {
+          "en": "One",
+          "hi": "एक"
+        },
+        "picture": "●",
+        "count": 1,
+        "say": {
+          "en": "One. Count 1 dots.",
+          "hi": "एक। 1 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "2",
+        "label": {
+          "en": "Two",
+          "hi": "दो"
+        },
+        "picture": "●",
+        "count": 2,
+        "say": {
+          "en": "Two. Count 2 dots.",
+          "hi": "दो। 2 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "3",
+        "label": {
+          "en": "Three",
+          "hi": "तीन"
+        },
+        "picture": "●",
+        "count": 3,
+        "say": {
+          "en": "Three. Count 3 dots.",
+          "hi": "तीन। 3 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "4",
+        "label": {
+          "en": "Four",
+          "hi": "चार"
+        },
+        "picture": "●",
+        "count": 4,
+        "say": {
+          "en": "Four. Count 4 dots.",
+          "hi": "चार। 4 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "5",
+        "label": {
+          "en": "Five",
+          "hi": "पाँच"
+        },
+        "picture": "●",
+        "count": 5,
+        "say": {
+          "en": "Five. Count 5 dots.",
+          "hi": "पाँच। 5 बिंदु गिनें।"
+        }
+      }
+    ],
+    "trace": "1",
+    "play": [
+      {
+        "en": "Show 3 fingers and count them slowly.",
+        "hi": "3 उँगलियाँ दिखाकर धीरे गिनें।"
+      },
+      {
+        "en": "Point to 5 dots, touching each only once.",
+        "hi": "5 बिंदुओं को हर बार अलग छूकर गिनें।"
+      },
+      {
+        "en": "Make a group of 2 fingers, then a group of 4.",
+        "hi": "पहले 2 और फिर 4 उँगलियों का समूह बनाएँ।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "How many dots: ● ●?",
+          "hi": "कितने बिंदु हैं: ● ●?"
+        },
+        "options": [
+          {
+            "en": "1",
+            "hi": "1"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "There are 2 dots.",
+          "hi": "2 बिंदु हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "How many dots: ● ● ●?",
+          "hi": "कितने बिंदु हैं: ● ● ●?"
+        },
+        "options": [
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Touching each dot gives 3.",
+          "hi": "हर बिंदु छूने पर गिनती 3 होती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What comes after 4?",
+          "hi": "4 के बाद क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "The order is 3, 4, 5.",
+          "hi": "क्रम 3, 4, 5 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which numeral means one?",
+          "hi": "एक के लिए कौन-सा अंक है?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "1",
+            "hi": "1"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "1 means one.",
+          "hi": "1 का अर्थ एक है।"
+        }
+      },
+      {
+        "question": {
+          "en": "How many objects are in an empty group?",
+          "hi": "खाली समूह में कितनी वस्तुएँ हैं?"
+        },
+        "options": [
+          {
+            "en": "0",
+            "hi": "0"
+          },
+          {
+            "en": "1",
+            "hi": "1"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Empty means no objects, or 0.",
+          "hi": "खाली का अर्थ कोई वस्तु नहीं, यानी 0 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is more: 2 dots or 5 dots?",
+          "hi": "2 बिंदु और 5 बिंदु में कौन अधिक है?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "1",
+            "hi": "1"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "5 is more than 2.",
+          "hi": "5, 2 से अधिक है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What comes before 3?",
+          "hi": "3 से पहले क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The order is 1, 2, 3.",
+          "hi": "क्रम 1, 2, 3 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "How many dots: ● ● ● ●?",
+          "hi": "कितने बिंदु हैं: ● ● ● ●?"
+        },
+        "options": [
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Count 1, 2, 3, 4.",
+          "hi": "गिनें: 1, 2, 3, 4।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which group has exactly 1 dot?",
+          "hi": "किस समूह में ठीक 1 बिंदु है?"
+        },
+        "options": [
+          {
+            "en": "● ●",
+            "hi": "● ●"
+          },
+          {
+            "en": "● ● ●",
+            "hi": "● ● ●"
+          },
+          {
+            "en": "●",
+            "hi": "●"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "The last group has one dot.",
+          "hi": "अंतिम समूह में 1 बिंदु है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Five dots are spread farther apart. How many are there now?",
+          "hi": "5 बिंदु दूर-दूर रखे गए। अब कितने हैं?"
+        },
+        "options": [
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Moving dots does not add or remove any.",
+          "hi": "बिंदु खिसकाने से कोई जुड़ता या हटता नहीं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-math-02",
+    "classId": "LKG",
+    "subject": "math",
+    "title": {
+      "en": "Count 6 to 10",
+      "hi": "6 से 10 तक गिनें"
+    },
+    "goal": {
+      "en": "Continue counting to 10 and compare groups made in different ways.",
+      "hi": "10 तक गिनती जारी रखें और अलग तरह से बने समूह मिलाएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Keep the counting order",
+          "hi": "गिनती का क्रम रखें"
+        },
+        "body": {
+          "en": "After 5 come 6, 7, 8, 9 and 10. Count each dot once, even when a group has two rows.",
+          "hi": "5 के बाद 6, 7, 8, 9 और 10 आते हैं। बोलते समय क्रम को न छोड़ें। बिंदु 2 पंक्तियों में दिखें तो ऊपर की पंक्ति गिनकर नीचे की ओर बढ़ें। उँगली से बताने पर कोई बिंदु छूटने की संभावना कम होती है। आखिरी संख्या पूरे समूह की गिनती बताती है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Make a group of 10",
+          "hi": "10 का समूह बनाएँ"
+        },
+        "body": {
+          "en": "Two hands can show 10 fingers. A group of 5 and another group of 5 together also make 10.",
+          "hi": "दोनों हाथों की खुली उँगलियाँ गिनें। पहले हाथ में 5 और दूसरे हाथ में 5 उँगलियाँ हैं। दोनों को साथ गिनने पर 10 मिलते हैं। बिंदुओं की 2 बराबर पंक्तियाँ बनाकर भी यही गिनती देख सकते हैं। पंक्ति की लंबाई से पहले बिंदुओं की संख्या पर ध्यान दें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Match a numeral to its amount",
+          "hi": "अंक को मात्रा से मिलाएँ"
+        },
+        "body": {
+          "en": "Read 8 and find a group of eight dots. If unsure, count from 1 again; taking time is useful.",
+          "hi": "8 का कार्ड देखकर 8 बिंदुओं वाला समूह खोजें। अनुमान के बाद गिनकर जाँचें। 6 और 9 जैसे चिह्नों को ध्यान से देखें। गलती हो तो धीरे फिर गिनें। समझने के लिए समय लेना ठीक है। किसी वयस्क के साथ बारी-बारी संख्या बोलकर भी खेल सकते हैं।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "6",
+        "label": {
+          "en": "Six",
+          "hi": "छह"
+        },
+        "picture": "●",
+        "count": 6,
+        "say": {
+          "en": "Six. Count 6 dots.",
+          "hi": "छह। 6 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "7",
+        "label": {
+          "en": "Seven",
+          "hi": "सात"
+        },
+        "picture": "●",
+        "count": 7,
+        "say": {
+          "en": "Seven. Count 7 dots.",
+          "hi": "सात। 7 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "8",
+        "label": {
+          "en": "Eight",
+          "hi": "आठ"
+        },
+        "picture": "●",
+        "count": 8,
+        "say": {
+          "en": "Eight. Count 8 dots.",
+          "hi": "आठ। 8 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "9",
+        "label": {
+          "en": "Nine",
+          "hi": "नौ"
+        },
+        "picture": "●",
+        "count": 9,
+        "say": {
+          "en": "Nine. Count 9 dots.",
+          "hi": "नौ। 9 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "10",
+        "label": {
+          "en": "Ten",
+          "hi": "दस"
+        },
+        "picture": "●",
+        "count": 10,
+        "say": {
+          "en": "Ten. Count 10 dots.",
+          "hi": "दस। 10 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "5 + 5",
+        "label": {
+          "en": "Ten",
+          "hi": "दस"
+        },
+        "picture": "●",
+        "count": 10,
+        "say": {
+          "en": "Ten. Count 10 dots.",
+          "hi": "दस। 10 बिंदु गिनें।"
+        }
+      }
+    ],
+    "trace": "6",
+    "play": [
+      {
+        "en": "Count the fingers on both hands.",
+        "hi": "दोनों हाथों की उँगलियाँ गिनें।"
+      },
+      {
+        "en": "Find the 8 card and count its dots.",
+        "hi": "8 का कार्ड खोजकर उसके बिंदु गिनें।"
+      },
+      {
+        "en": "Say 5, 6, 7, 8, 9, 10 together.",
+        "hi": "मिलकर 5, 6, 7, 8, 9, 10 बोलें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "What comes after 5?",
+          "hi": "5 के बाद क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "6",
+            "hi": "6"
+          },
+          {
+            "en": "7",
+            "hi": "7"
+          },
+          {
+            "en": "8",
+            "hi": "8"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "6 follows 5.",
+          "hi": "5 के बाद 6 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What comes after 8?",
+          "hi": "8 के बाद क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "7",
+            "hi": "7"
+          },
+          {
+            "en": "10",
+            "hi": "10"
+          },
+          {
+            "en": "9",
+            "hi": "9"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "The order is 7, 8, 9.",
+          "hi": "क्रम 7, 8, 9 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What comes before 10?",
+          "hi": "10 से पहले क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "8",
+            "hi": "8"
+          },
+          {
+            "en": "9",
+            "hi": "9"
+          },
+          {
+            "en": "7",
+            "hi": "7"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "9 comes just before 10.",
+          "hi": "10 के ठीक पहले 9 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is the numeral for seven?",
+          "hi": "सात का अंक कौन है?"
+        },
+        "options": [
+          {
+            "en": "7",
+            "hi": "7"
+          },
+          {
+            "en": "6",
+            "hi": "6"
+          },
+          {
+            "en": "9",
+            "hi": "9"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "7 names seven.",
+          "hi": "7 सात को दिखाता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is more: 6 or 9?",
+          "hi": "6 और 9 में कौन अधिक है?"
+        },
+        "options": [
+          {
+            "en": "6",
+            "hi": "6"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "9",
+            "hi": "9"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "9 is more than 6.",
+          "hi": "9, 6 से अधिक है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is less: 10 or 8?",
+          "hi": "10 और 8 में कौन कम है?"
+        },
+        "options": [
+          {
+            "en": "10",
+            "hi": "10"
+          },
+          {
+            "en": "8",
+            "hi": "8"
+          },
+          {
+            "en": "9",
+            "hi": "9"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "8 is less than 10.",
+          "hi": "8, 10 से कम है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which number is between 6 and 8?",
+          "hi": "6 और 8 के बीच कौन-सी संख्या है?"
+        },
+        "options": [
+          {
+            "en": "7",
+            "hi": "7"
+          },
+          {
+            "en": "9",
+            "hi": "9"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The sequence is 6, 7, 8.",
+          "hi": "क्रम 6, 7, 8 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "One hand has 5 fingers and the other has 5. How many altogether?",
+          "hi": "1 हाथ में 5 और दूसरे में 5 उँगलियाँ हैं। कुल कितनी?"
+        },
+        "options": [
+          {
+            "en": "8",
+            "hi": "8"
+          },
+          {
+            "en": "9",
+            "hi": "9"
+          },
+          {
+            "en": "10",
+            "hi": "10"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "5 and 5 together make 10.",
+          "hi": "5 और 5 मिलकर 10 होते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which number comes just after 9?",
+          "hi": "9 के ठीक बाद कौन-सी संख्या है?"
+        },
+        "options": [
+          {
+            "en": "8",
+            "hi": "8"
+          },
+          {
+            "en": "10",
+            "hi": "10"
+          },
+          {
+            "en": "7",
+            "hi": "7"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "10 follows 9.",
+          "hi": "9 के बाद 10 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which counting order is correct?",
+          "hi": "गिनती का सही क्रम कौन है?"
+        },
+        "options": [
+          {
+            "en": "6, 7, 8",
+            "hi": "6, 7, 8"
+          },
+          {
+            "en": "6, 8, 7",
+            "hi": "6, 8, 7"
+          },
+          {
+            "en": "8, 7, 6",
+            "hi": "8, 7, 6"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Forward counting increases by 1.",
+          "hi": "आगे गिनने पर हर बार 1 बढ़ता है।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-math-03",
+    "classId": "LKG",
+    "subject": "math",
+    "title": {
+      "en": "Shapes and Colours",
+      "hi": "आकृतियाँ और रंग"
+    },
+    "goal": {
+      "en": "Recognise circles, triangles, squares and rectangles, and name familiar colours.",
+      "hi": "वृत्त, त्रिभुज, वर्ग और आयत पहचानें तथा परिचित रंग बताएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Look at edges and corners",
+          "hi": "किनारे और कोने देखें"
+        },
+        "body": {
+          "en": "A circle has a curved boundary and no corners. A triangle has 3 straight sides and 3 corners.",
+          "hi": "वृत्त की सीमा मुड़ी हुई है। उसमें कोना नहीं है। त्रिभुज के 3 सीधे किनारे और 3 कोने होते हैं। उँगली से आकृति के चारों ओर धीरे चलें। जहाँ सीधा किनारा मुड़ता है, वहाँ कोना पहचानें। आकृति बड़ी या छोटी होने पर भी उसका नाम वही रह सकता है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Compare square and rectangle",
+          "hi": "वर्ग और आयत मिलाएँ"
+        },
+        "body": {
+          "en": "A square has 4 equal sides. The rectangle shown here has two long sides and two short sides; both have 4 corners.",
+          "hi": "वर्ग के 4 किनारे बराबर होते हैं। यहाँ दिखे आयत के 2 किनारे लंबे और 2 छोटे हैं। दोनों के 4 कोने हैं। केवल रंग देखकर आकृति का नाम न बदलें। नीला वर्ग और लाल वर्ग, दोनों वर्ग हैं। आकृति का नाम उसकी बनावट से पहचानें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Colours are another feature",
+          "hi": "रंग एक अलग विशेषता है"
+        },
+        "body": {
+          "en": "Name red, blue and yellow. Objects with the same shape can have different colours. Name the shape and then the colour.",
+          "hi": "लाल, नीला और पीला रंग बोलें। 1 ही तरह की आकृति अलग-अलग रंगों की हो सकती है। पहले आकृति का नाम और फिर रंग बताएँ। किसी वस्तु को रंग से अलग समूह में और आकृति से अलग समूह में रख सकते हैं। अपने आसपास किताब या खिड़की में आयत जैसी आकृति खोजें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "○",
+        "label": {
+          "en": "Circle",
+          "hi": "वृत्त"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Circle",
+          "hi": "वृत्त"
+        },
+        "shape": "circle",
+        "color": "#e24b45"
+      },
+      {
+        "symbol": "△",
+        "label": {
+          "en": "Triangle",
+          "hi": "त्रिभुज"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Triangle",
+          "hi": "त्रिभुज"
+        },
+        "shape": "triangle",
+        "color": "#d7a915"
+      },
+      {
+        "symbol": "□",
+        "label": {
+          "en": "Square",
+          "hi": "वर्ग"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Square",
+          "hi": "वर्ग"
+        },
+        "shape": "square",
+        "color": "#348fc4"
+      },
+      {
+        "symbol": "▭",
+        "label": {
+          "en": "Rectangle",
+          "hi": "आयत"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Rectangle",
+          "hi": "आयत"
+        },
+        "shape": "rectangle",
+        "color": "#398f63"
+      },
+      {
+        "symbol": "★",
+        "label": {
+          "en": "Star",
+          "hi": "तारा"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Star",
+          "hi": "तारा"
+        },
+        "shape": "star",
+        "color": "#a36fc7"
+      },
+      {
+        "symbol": "Red",
+        "label": {
+          "en": "Red",
+          "hi": "लाल"
+        },
+        "picture": "🔴",
+        "say": {
+          "en": "Red",
+          "hi": "लाल"
+        },
+        "color": "#e24b45"
+      },
+      {
+        "symbol": "Blue",
+        "label": {
+          "en": "Blue",
+          "hi": "नीला"
+        },
+        "picture": "🔵",
+        "say": {
+          "en": "Blue",
+          "hi": "नीला"
+        },
+        "color": "#348fc4"
+      },
+      {
+        "symbol": "Yellow",
+        "label": {
+          "en": "Yellow",
+          "hi": "पीला"
+        },
+        "picture": "🟡",
+        "say": {
+          "en": "Yellow",
+          "hi": "पीला"
+        },
+        "color": "#d7a915"
+      }
+    ],
+    "trace": "○",
+    "play": [
+      {
+        "en": "Draw a circle in the air with one finger.",
+        "hi": "1 उँगली से हवा में वृत्त बनाएँ।"
+      },
+      {
+        "en": "Find something red and name its shape.",
+        "hi": "कोई लाल वस्तु खोजकर उसकी आकृति बताएँ।"
+      },
+      {
+        "en": "Count the corners of a triangle.",
+        "hi": "त्रिभुज के कोने गिनें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which shape has no corners?",
+          "hi": "किस आकृति में कोने नहीं हैं?"
+        },
+        "options": [
+          {
+            "en": "Circle",
+            "hi": "वृत्त"
+          },
+          {
+            "en": "Triangle",
+            "hi": "त्रिभुज"
+          },
+          {
+            "en": "Square",
+            "hi": "वर्ग"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A circle has a curved boundary without corners.",
+          "hi": "वृत्त की सीमा मुड़ी हुई और कोने रहित होती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "How many corners does a triangle have?",
+          "hi": "त्रिभुज के कितने कोने हैं?"
+        },
+        "options": [
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A triangle has 3 corners.",
+          "hi": "त्रिभुज के 3 कोने होते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which shape has 4 equal sides?",
+          "hi": "किस आकृति के 4 किनारे बराबर हैं?"
+        },
+        "options": [
+          {
+            "en": "Circle",
+            "hi": "वृत्त"
+          },
+          {
+            "en": "Square",
+            "hi": "वर्ग"
+          },
+          {
+            "en": "Triangle",
+            "hi": "त्रिभुज"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "A square has 4 equal sides.",
+          "hi": "वर्ग के 4 किनारे बराबर होते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "How many corners does a square have?",
+          "hi": "वर्ग के कितने कोने होते हैं?"
+        },
+        "options": [
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "0",
+            "hi": "0"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "There are 4 corners on a square.",
+          "hi": "वर्ग में 4 कोने होते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which colour is shown by 🔵?",
+          "hi": "🔵 कौन-सा रंग दिखाता है?"
+        },
+        "options": [
+          {
+            "en": "Red",
+            "hi": "लाल"
+          },
+          {
+            "en": "Yellow",
+            "hi": "पीला"
+          },
+          {
+            "en": "Blue",
+            "hi": "नीला"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "The circle is blue.",
+          "hi": "यह वृत्त नीला है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which colour is shown by 🔴?",
+          "hi": "🔴 कौन-सा रंग दिखाता है?"
+        },
+        "options": [
+          {
+            "en": "Yellow",
+            "hi": "पीला"
+          },
+          {
+            "en": "Red",
+            "hi": "लाल"
+          },
+          {
+            "en": "Blue",
+            "hi": "नीला"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The circle is red.",
+          "hi": "यह वृत्त लाल है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which colour is shown by 🟡?",
+          "hi": "🟡 कौन-सा रंग दिखाता है?"
+        },
+        "options": [
+          {
+            "en": "Yellow",
+            "hi": "पीला"
+          },
+          {
+            "en": "Blue",
+            "hi": "नीला"
+          },
+          {
+            "en": "Red",
+            "hi": "लाल"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The circle is yellow.",
+          "hi": "यह वृत्त पीला है।"
+        }
+      },
+      {
+        "question": {
+          "en": "A triangle is turned around. How many sides does it still have?",
+          "hi": "त्रिभुज को घुमाया गया। उसके अब भी कितने किनारे हैं?"
+        },
+        "options": [
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Turning does not change its 3 sides.",
+          "hi": "घुमाने पर उसके 3 किनारे नहीं बदलते।"
+        }
+      },
+      {
+        "question": {
+          "en": "A blue square is coloured red. What is its shape now?",
+          "hi": "नीले वर्ग को लाल रंग दिया। अब उसकी आकृति क्या है?"
+        },
+        "options": [
+          {
+            "en": "Circle",
+            "hi": "वृत्त"
+          },
+          {
+            "en": "Square",
+            "hi": "वर्ग"
+          },
+          {
+            "en": "Triangle",
+            "hi": "त्रिभुज"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Colour changes, but shape stays a square.",
+          "hi": "रंग बदला है, आकृति वर्ग ही है।"
+        }
+      },
+      {
+        "question": {
+          "en": "How many corners does a rectangle have?",
+          "hi": "आयत के कितने कोने होते हैं?"
+        },
+        "options": [
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "1",
+            "hi": "1"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A rectangle has 4 corners.",
+          "hi": "आयत के 4 कोने होते हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-math-04",
+    "classId": "LKG",
+    "subject": "math",
+    "title": {
+      "en": "More, Less and Position",
+      "hi": "अधिक, कम और स्थान"
+    },
+    "goal": {
+      "en": "Compare small amounts and use inside, outside, above and below in a clear picture.",
+      "hi": "छोटी मात्राएँ मिलाएँ और स्पष्ट चित्र में अंदर, बाहर, ऊपर तथा नीचे समझें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Compare by matching",
+          "hi": "मिलाकर तुलना करें"
+        },
+        "body": {
+          "en": "Match one item from each group. If one group has items left, it has more. If nothing is left in either group, the groups are equal in number.",
+          "hi": "दो समूहों से 1-1 वस्तु मिलाएँ। किसी समूह में वस्तु बच जाए, तो उसमें अधिक वस्तुएँ हैं। दोनों समूह पूरे मिल जाएँ, तो उनकी गिनती बराबर है। बड़ा आकार हमेशा अधिक गिनती नहीं बताता। 2 बड़े गोले और 3 छोटे गोले में छोटे गोलों की संख्या अधिक है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Use clear position words",
+          "hi": "स्थान के साफ शब्द बोलें"
+        },
+        "body": {
+          "en": "A dot can be inside or outside a drawn box. A dot directly above a box is higher on the page; below means lower.",
+          "hi": "कागज पर 1 डिब्बा बनाएँ। उसकी सीमा के भीतर बिंदु अंदर है। सीमा से दूर बाहर रखा बिंदु बाहर है। डिब्बे से ऊँचा बिंदु ऊपर और उससे नीचा बिंदु नीचे है। स्थान बताने से पहले यह जरूर बताएँ कि किस वस्तु की तुलना कर रहे हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Make the same amount",
+          "hi": "बराबर मात्रा बनाएँ"
+        },
+        "body": {
+          "en": "Count both groups to check. Moving a group farther away does not change its amount. Make another group with the same number of fingers.",
+          "hi": "दोनों समूह गिनकर अपना उत्तर जाँचें। समूह को दूर खिसकाने से उसकी संख्या नहीं बदलती। पहले 3 उँगलियाँ दिखाएँ और फिर दूसरे हाथ से उतनी ही उँगलियाँ दिखाएँ। साथ गिनकर बराबरी देखें। गलत अनुमान भी सीखने का मौका है; वस्तुएँ जोड़कर मिलान फिर करें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "2 < 4",
+        "label": {
+          "en": "2 is less than 4",
+          "hi": "2, 4 से कम है"
+        },
+        "picture": "●",
+        "say": {
+          "en": "2 is less than 4",
+          "hi": "2, 4 से कम है"
+        },
+        "groups": [
+          2,
+          4
+        ]
+      },
+      {
+        "symbol": "5 > 3",
+        "label": {
+          "en": "5 is more than 3",
+          "hi": "5, 3 से अधिक है"
+        },
+        "picture": "●",
+        "say": {
+          "en": "5 is more than 3",
+          "hi": "5, 3 से अधिक है"
+        },
+        "groups": [
+          5,
+          3
+        ]
+      },
+      {
+        "symbol": "3 = 3",
+        "label": {
+          "en": "Equal groups",
+          "hi": "बराबर समूह"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Equal groups",
+          "hi": "बराबर समूह"
+        },
+        "groups": [
+          3,
+          3
+        ]
+      },
+      {
+        "symbol": "Inside",
+        "label": {
+          "en": "Inside the box",
+          "hi": "डिब्बे के अंदर"
+        },
+        "picture": "📦",
+        "say": {
+          "en": "Inside the box",
+          "hi": "डिब्बे के अंदर"
+        },
+        "position": "inside"
+      },
+      {
+        "symbol": "Outside",
+        "label": {
+          "en": "Outside the box",
+          "hi": "डिब्बे के बाहर"
+        },
+        "picture": "📦",
+        "say": {
+          "en": "Outside the box",
+          "hi": "डिब्बे के बाहर"
+        },
+        "position": "outside"
+      },
+      {
+        "symbol": "Above",
+        "label": {
+          "en": "Above the box",
+          "hi": "डिब्बे के ऊपर"
+        },
+        "picture": "⬆️",
+        "say": {
+          "en": "Above the box",
+          "hi": "डिब्बे के ऊपर"
+        },
+        "position": "above"
+      },
+      {
+        "symbol": "Below",
+        "label": {
+          "en": "Below the box",
+          "hi": "डिब्बे के नीचे"
+        },
+        "picture": "⬇️",
+        "say": {
+          "en": "Below the box",
+          "hi": "डिब्बे के नीचे"
+        },
+        "position": "below"
+      }
+    ],
+    "trace": "3",
+    "play": [
+      {
+        "en": "Show 2 fingers on one hand and 4 on the other. Which is more?",
+        "hi": "1 हाथ में 2 और दूसरे में 4 उँगलियाँ दिखाएँ। कौन अधिक है?"
+      },
+      {
+        "en": "Point above your book, then below it.",
+        "hi": "अपनी किताब के ऊपर और फिर नीचे इशारा करें।"
+      },
+      {
+        "en": "Make two equal groups of 3 fingers.",
+        "hi": "3 उँगलियों के 2 बराबर समूह बनाएँ।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which is more: 3 or 5?",
+          "hi": "3 और 5 में कौन अधिक है?"
+        },
+        "options": [
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "5 is more than 3.",
+          "hi": "5, 3 से अधिक है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is less: 4 or 2?",
+          "hi": "4 और 2 में कौन कम है?"
+        },
+        "options": [
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "2 is less than 4.",
+          "hi": "2, 4 से कम है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which pair has equal numbers?",
+          "hi": "किस जोड़ी में बराबर संख्याएँ हैं?"
+        },
+        "options": [
+          {
+            "en": "3 and 3",
+            "hi": "3 और 3"
+          },
+          {
+            "en": "2 and 4",
+            "hi": "2 और 4"
+          },
+          {
+            "en": "1 and 5",
+            "hi": "1 और 5"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Both groups have 3.",
+          "hi": "दोनों समूहों में 3 हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "A dot is within the boundary of a box. Where is it?",
+          "hi": "बिंदु डिब्बे की सीमा के भीतर है। वह कहाँ है?"
+        },
+        "options": [
+          {
+            "en": "Outside",
+            "hi": "बाहर"
+          },
+          {
+            "en": "Inside",
+            "hi": "अंदर"
+          },
+          {
+            "en": "Above",
+            "hi": "ऊपर"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Within the boundary means inside.",
+          "hi": "सीमा के भीतर का अर्थ अंदर है।"
+        }
+      },
+      {
+        "question": {
+          "en": "A dot is lower on the page than a box. Where is it relative to the box?",
+          "hi": "बिंदु पन्ने पर डिब्बे से नीचा है। वह डिब्बे के कहाँ है?"
+        },
+        "options": [
+          {
+            "en": "Above",
+            "hi": "ऊपर"
+          },
+          {
+            "en": "Inside",
+            "hi": "अंदर"
+          },
+          {
+            "en": "Below",
+            "hi": "नीचे"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Lower means below.",
+          "hi": "नीचा होने का अर्थ नीचे है।"
+        }
+      },
+      {
+        "question": {
+          "en": "A dot is higher on the page than a box. Where is it?",
+          "hi": "बिंदु पन्ने पर डिब्बे से ऊँचा है। वह कहाँ है?"
+        },
+        "options": [
+          {
+            "en": "Above the box",
+            "hi": "डिब्बे के ऊपर"
+          },
+          {
+            "en": "Below the box",
+            "hi": "डिब्बे के नीचे"
+          },
+          {
+            "en": "Inside the box",
+            "hi": "डिब्बे के अंदर"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Higher means above.",
+          "hi": "ऊँचा होने का अर्थ ऊपर है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is equal to 4?",
+          "hi": "4 के बराबर कौन है?"
+        },
+        "options": [
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "4 and 4 are equal.",
+          "hi": "4 और 4 बराबर हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "A dot is beyond the box boundary, not touching it. Where is it?",
+          "hi": "बिंदु डिब्बे की सीमा के पार है और उसे छू नहीं रहा। वह कहाँ है?"
+        },
+        "options": [
+          {
+            "en": "Inside",
+            "hi": "अंदर"
+          },
+          {
+            "en": "On the boundary",
+            "hi": "सीमा पर"
+          },
+          {
+            "en": "Outside",
+            "hi": "बाहर"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Beyond the boundary is outside.",
+          "hi": "सीमा के पार का अर्थ बाहर है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Two big circles and three small circles: which group has more circles?",
+          "hi": "2 बड़े और 3 छोटे वृत्त हैं। किस समूह में अधिक वृत्त हैं?"
+        },
+        "options": [
+          {
+            "en": "The 3 small circles",
+            "hi": "3 छोटे वृत्त"
+          },
+          {
+            "en": "The 2 big circles",
+            "hi": "2 बड़े वृत्त"
+          },
+          {
+            "en": "Both equal",
+            "hi": "दोनों बराबर"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Compare the count: 3 is more than 2.",
+          "hi": "गिनती मिलाएँ: 3, 2 से अधिक है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Four dots are moved apart. Is their count still 4?",
+          "hi": "4 बिंदु दूर कर दिए गए। क्या उनकी गिनती अब भी 4 है?"
+        },
+        "options": [
+          {
+            "en": "No, it is 5",
+            "hi": "नहीं, 5 है"
+          },
+          {
+            "en": "Yes, still 4",
+            "hi": "हाँ, अब भी 4"
+          },
+          {
+            "en": "No, it is 0",
+            "hi": "नहीं, 0 है"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "No dots were added or removed.",
+          "hi": "कोई बिंदु जोड़ा या हटाया नहीं गया।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-math-01",
+    "classId": "UKG",
+    "subject": "math",
+    "title": {
+      "en": "Numbers 0 to 20",
+      "hi": "0 से 20 तक संख्याएँ"
+    },
+    "goal": {
+      "en": "Read small numbers, recognise an empty group and count up to 20.",
+      "hi": "छोटी संख्याएँ पढ़ें, खाली समूह पहचानें और 20 तक गिनें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Start with what is there",
+          "hi": "जो है, उसे गिनें"
+        },
+        "body": {
+          "en": "Zero means an empty group. Count visible dots once each. Read a number and build the same amount with fingers or a spoken count.",
+          "hi": "खाली समूह की गिनती 0 है। 1 बिंदु जोड़ें तो गिनती 1 हो जाती है। हर दिखाई बिंदु को केवल 1 बार गिनें। संख्या का कार्ड देखकर उसका नाम बोलें। फिर बिंदु गिनकर संख्या से मिलाएँ। जरूरत होने पर 1 से दोबारा शुरू करना ठीक है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Continue past 10",
+          "hi": "10 से आगे बढ़ें"
+        },
+        "body": {
+          "en": "After 10 come 11 through 20. The number 14 names fourteen items, not a group of one item and a separate group of four items.",
+          "hi": "10 के बाद 11, 12, 13, 14 और आगे की संख्याएँ आती हैं। 14 कुल चौदह वस्तुओं को दिखाता है। 10 बिंदुओं का समूह और 4 अलग बिंदु मिलकर 14 होते हैं। कार्ड पर 1 और 4 साथ पढ़ने से चौदह बनता है। दोनों अंकों का स्थान ध्यान से देखें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Order and neighbours",
+          "hi": "क्रम और पड़ोसी संख्याएँ"
+        },
+        "body": {
+          "en": "Forward counting adds one each time. The number just before 16 is 15; just after it is 17. Compare neighbouring cards with a number line.",
+          "hi": "आगे गिनने पर हर बार 1 बढ़ता है। 16 से ठीक पहले 15 और ठीक बाद 17 आता है। 20 तक धीरे क्रम बोलें। फिर किसी संख्या पर रुककर उसके पहले और बाद की संख्या बताएँ। गिनती और लिखे चिह्न को मिलाकर सीखने से संख्या की पहचान मजबूत होती है।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "0",
+        "label": {
+          "en": "Zero",
+          "hi": "शून्य"
+        },
+        "picture": "●",
+        "count": 0,
+        "say": {
+          "en": "Zero. Count 0 dots.",
+          "hi": "शून्य। 0 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "1",
+        "label": {
+          "en": "One",
+          "hi": "एक"
+        },
+        "picture": "●",
+        "count": 1,
+        "say": {
+          "en": "One. Count 1 dots.",
+          "hi": "एक। 1 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "2",
+        "label": {
+          "en": "Two",
+          "hi": "दो"
+        },
+        "picture": "●",
+        "count": 2,
+        "say": {
+          "en": "Two. Count 2 dots.",
+          "hi": "दो। 2 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "3",
+        "label": {
+          "en": "Three",
+          "hi": "तीन"
+        },
+        "picture": "●",
+        "count": 3,
+        "say": {
+          "en": "Three. Count 3 dots.",
+          "hi": "तीन। 3 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "4",
+        "label": {
+          "en": "Four",
+          "hi": "चार"
+        },
+        "picture": "●",
+        "count": 4,
+        "say": {
+          "en": "Four. Count 4 dots.",
+          "hi": "चार। 4 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "5",
+        "label": {
+          "en": "Five",
+          "hi": "पाँच"
+        },
+        "picture": "●",
+        "count": 5,
+        "say": {
+          "en": "Five. Count 5 dots.",
+          "hi": "पाँच। 5 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "6",
+        "label": {
+          "en": "Six",
+          "hi": "छह"
+        },
+        "picture": "●",
+        "count": 6,
+        "say": {
+          "en": "Six. Count 6 dots.",
+          "hi": "छह। 6 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "7",
+        "label": {
+          "en": "Seven",
+          "hi": "सात"
+        },
+        "picture": "●",
+        "count": 7,
+        "say": {
+          "en": "Seven. Count 7 dots.",
+          "hi": "सात। 7 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "8",
+        "label": {
+          "en": "Eight",
+          "hi": "आठ"
+        },
+        "picture": "●",
+        "count": 8,
+        "say": {
+          "en": "Eight. Count 8 dots.",
+          "hi": "आठ। 8 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "9",
+        "label": {
+          "en": "Nine",
+          "hi": "नौ"
+        },
+        "picture": "●",
+        "count": 9,
+        "say": {
+          "en": "Nine. Count 9 dots.",
+          "hi": "नौ। 9 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "10",
+        "label": {
+          "en": "Ten",
+          "hi": "दस"
+        },
+        "picture": "●",
+        "count": 10,
+        "say": {
+          "en": "Ten. Count 10 dots.",
+          "hi": "दस। 10 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "11",
+        "label": {
+          "en": "Eleven",
+          "hi": "ग्यारह"
+        },
+        "picture": "●",
+        "count": 11,
+        "say": {
+          "en": "Eleven. Count 11 dots.",
+          "hi": "ग्यारह। 11 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "12",
+        "label": {
+          "en": "Twelve",
+          "hi": "बारह"
+        },
+        "picture": "●",
+        "count": 12,
+        "say": {
+          "en": "Twelve. Count 12 dots.",
+          "hi": "बारह। 12 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "13",
+        "label": {
+          "en": "Thirteen",
+          "hi": "तेरह"
+        },
+        "picture": "●",
+        "count": 13,
+        "say": {
+          "en": "Thirteen. Count 13 dots.",
+          "hi": "तेरह। 13 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "14",
+        "label": {
+          "en": "Fourteen",
+          "hi": "चौदह"
+        },
+        "picture": "●",
+        "count": 14,
+        "say": {
+          "en": "Fourteen. Count 14 dots.",
+          "hi": "चौदह। 14 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "15",
+        "label": {
+          "en": "Fifteen",
+          "hi": "पंद्रह"
+        },
+        "picture": "●",
+        "count": 15,
+        "say": {
+          "en": "Fifteen. Count 15 dots.",
+          "hi": "पंद्रह। 15 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "16",
+        "label": {
+          "en": "Sixteen",
+          "hi": "सोलह"
+        },
+        "picture": "●",
+        "count": 16,
+        "say": {
+          "en": "Sixteen. Count 16 dots.",
+          "hi": "सोलह। 16 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "17",
+        "label": {
+          "en": "Seventeen",
+          "hi": "सत्रह"
+        },
+        "picture": "●",
+        "count": 17,
+        "say": {
+          "en": "Seventeen. Count 17 dots.",
+          "hi": "सत्रह। 17 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "18",
+        "label": {
+          "en": "Eighteen",
+          "hi": "अठारह"
+        },
+        "picture": "●",
+        "count": 18,
+        "say": {
+          "en": "Eighteen. Count 18 dots.",
+          "hi": "अठारह। 18 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "19",
+        "label": {
+          "en": "Nineteen",
+          "hi": "उन्नीस"
+        },
+        "picture": "●",
+        "count": 19,
+        "say": {
+          "en": "Nineteen. Count 19 dots.",
+          "hi": "उन्नीस। 19 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "20",
+        "label": {
+          "en": "Twenty",
+          "hi": "बीस"
+        },
+        "picture": "●",
+        "count": 20,
+        "say": {
+          "en": "Twenty. Count 20 dots.",
+          "hi": "बीस। 20 बिंदु गिनें।"
+        }
+      }
+    ],
+    "trace": "0",
+    "play": [
+      {
+        "en": "Show an empty palm and say zero.",
+        "hi": "खाली हथेली दिखाकर शून्य कहें।"
+      },
+      {
+        "en": "Count aloud from 10 to 20.",
+        "hi": "10 से 20 तक बोलकर गिनें।"
+      },
+      {
+        "en": "Choose 15 and say its neighbours.",
+        "hi": "15 चुनकर उसके पड़ोसी अंक बोलें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "What number shows an empty group?",
+          "hi": "खाली समूह कौन-सी संख्या दिखाता है?"
+        },
+        "options": [
+          {
+            "en": "0",
+            "hi": "0"
+          },
+          {
+            "en": "1",
+            "hi": "1"
+          },
+          {
+            "en": "10",
+            "hi": "10"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "0 means no objects in the group.",
+          "hi": "0 का अर्थ समूह में कोई वस्तु नहीं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What comes after 10?",
+          "hi": "10 के बाद क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "9",
+            "hi": "9"
+          },
+          {
+            "en": "12",
+            "hi": "12"
+          },
+          {
+            "en": "11",
+            "hi": "11"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "11 follows 10.",
+          "hi": "10 के बाद 11 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What comes before 16?",
+          "hi": "16 से पहले क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "17",
+            "hi": "17"
+          },
+          {
+            "en": "15",
+            "hi": "15"
+          },
+          {
+            "en": "14",
+            "hi": "14"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "15 comes just before 16.",
+          "hi": "16 के ठीक पहले 15 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is 10 dots and 4 dots altogether?",
+          "hi": "10 और 4 बिंदु मिलकर कितने हैं?"
+        },
+        "options": [
+          {
+            "en": "14",
+            "hi": "14"
+          },
+          {
+            "en": "11",
+            "hi": "11"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "10 + 4 = 14.",
+          "hi": "10 + 4 = 14।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which number is greater: 12 or 18?",
+          "hi": "12 और 18 में कौन अधिक है?"
+        },
+        "options": [
+          {
+            "en": "12",
+            "hi": "12"
+          },
+          {
+            "en": "10",
+            "hi": "10"
+          },
+          {
+            "en": "18",
+            "hi": "18"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "18 is greater than 12.",
+          "hi": "18, 12 से अधिक है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is between 18 and 20?",
+          "hi": "18 और 20 के बीच कौन है?"
+        },
+        "options": [
+          {
+            "en": "17",
+            "hi": "17"
+          },
+          {
+            "en": "19",
+            "hi": "19"
+          },
+          {
+            "en": "16",
+            "hi": "16"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The order is 18, 19, 20.",
+          "hi": "क्रम 18, 19, 20 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is the numeral for seventeen?",
+          "hi": "सत्रह का अंक कौन है?"
+        },
+        "options": [
+          {
+            "en": "17",
+            "hi": "17"
+          },
+          {
+            "en": "7",
+            "hi": "7"
+          },
+          {
+            "en": "19",
+            "hi": "19"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "17 means seventeen.",
+          "hi": "17 का अर्थ सत्रह है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What comes just after 19?",
+          "hi": "19 के ठीक बाद क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "18",
+            "hi": "18"
+          },
+          {
+            "en": "10",
+            "hi": "10"
+          },
+          {
+            "en": "20",
+            "hi": "20"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "20 follows 19.",
+          "hi": "19 के बाद 20 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which number has 1 ten and 3 ones?",
+          "hi": "किस संख्या में 1 दहाई और 3 इकाइयाँ हैं?"
+        },
+        "options": [
+          {
+            "en": "31",
+            "hi": "31"
+          },
+          {
+            "en": "13",
+            "hi": "13"
+          },
+          {
+            "en": "10",
+            "hi": "10"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "10 + 3 = 13.",
+          "hi": "10 + 3 = 13।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which number is smaller: 11 or 14?",
+          "hi": "11 और 14 में कौन छोटा है?"
+        },
+        "options": [
+          {
+            "en": "11",
+            "hi": "11"
+          },
+          {
+            "en": "14",
+            "hi": "14"
+          },
+          {
+            "en": "15",
+            "hi": "15"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "11 is smaller than 14.",
+          "hi": "11, 14 से छोटा है।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-math-02",
+    "classId": "UKG",
+    "subject": "math",
+    "title": {
+      "en": "Numbers 21 to 50",
+      "hi": "21 से 50 तक संख्याएँ"
+    },
+    "goal": {
+      "en": "Count in order and use groups of 10 to read numbers up to 50.",
+      "hi": "क्रम से गिनें और 10 के समूह से 50 तक संख्याएँ पढ़ें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Tens make counting easier",
+          "hi": "दहाइयाँ गिनती आसान बनाती हैं"
+        },
+        "body": {
+          "en": "A complete group of 10 dots is one ten. Two tens and one extra dot make 21. Count the full tens first and then the remaining ones.",
+          "hi": "10 बिंदुओं का पूरा समूह 1 दहाई है। 2 दहाइयाँ 20 हैं। इनमें 1 और बिंदु मिलाने पर 21 बनता है। पहले पूरी दहाइयाँ गिनें और फिर बचे हुए बिंदु गिनें। 23 में 2 दहाई और 3 इकाइयाँ हैं। समूह बनाने से गिनती को जाँचना आसान होता है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Cross the next ten",
+          "hi": "अगली दहाई तक जाएँ"
+        },
+        "body": {
+          "en": "After 29 comes 30. After 39 comes 40, and after 49 comes 50. Say the whole number as you point to its card.",
+          "hi": "29 के बाद 30, 39 के बाद 40 और 49 के बाद 50 आता है। पूरी दहाई बन जाने पर इकाई की गिनती फिर 0 होती है। 30 में 3 दहाइयाँ हैं। 40 में 4 दहाइयाँ और 50 में 5 दहाइयाँ हैं। संख्या बोलते समय उसके कार्ड की ओर इशारा करें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Read both places",
+          "hi": "दोनों स्थान पढ़ें"
+        },
+        "body": {
+          "en": "In 42, 4 tells the number of tens and 2 tells the extra ones. 24 and 42 are different because the places have changed.",
+          "hi": "42 में 4 दहाइयाँ और 2 इकाइयाँ हैं। 24 में 2 दहाइयाँ और 4 इकाइयाँ हैं। इसलिए 24 और 42 बराबर नहीं हैं। पहले बाएँ अंक का स्थान समझें। फिर दाएँ अंक को देखें। कोई संख्या कठिन लगे तो दहाइयों के समूह बनाकर धीरे गिनें और उत्तर मिलाएँ।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "21",
+        "label": {
+          "en": "Twenty-one",
+          "hi": "इक्कीस"
+        },
+        "picture": "●",
+        "count": 21,
+        "say": {
+          "en": "Twenty-one. Count 21 dots.",
+          "hi": "इक्कीस। 21 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "22",
+        "label": {
+          "en": "Twenty-two",
+          "hi": "बाईस"
+        },
+        "picture": "●",
+        "count": 22,
+        "say": {
+          "en": "Twenty-two. Count 22 dots.",
+          "hi": "बाईस। 22 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "23",
+        "label": {
+          "en": "Twenty-three",
+          "hi": "तेईस"
+        },
+        "picture": "●",
+        "count": 23,
+        "say": {
+          "en": "Twenty-three. Count 23 dots.",
+          "hi": "तेईस। 23 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "24",
+        "label": {
+          "en": "Twenty-four",
+          "hi": "चौबीस"
+        },
+        "picture": "●",
+        "count": 24,
+        "say": {
+          "en": "Twenty-four. Count 24 dots.",
+          "hi": "चौबीस। 24 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "25",
+        "label": {
+          "en": "Twenty-five",
+          "hi": "पच्चीस"
+        },
+        "picture": "●",
+        "count": 25,
+        "say": {
+          "en": "Twenty-five. Count 25 dots.",
+          "hi": "पच्चीस। 25 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "26",
+        "label": {
+          "en": "Twenty-six",
+          "hi": "छब्बीस"
+        },
+        "picture": "●",
+        "count": 26,
+        "say": {
+          "en": "Twenty-six. Count 26 dots.",
+          "hi": "छब्बीस। 26 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "27",
+        "label": {
+          "en": "Twenty-seven",
+          "hi": "सत्ताईस"
+        },
+        "picture": "●",
+        "count": 27,
+        "say": {
+          "en": "Twenty-seven. Count 27 dots.",
+          "hi": "सत्ताईस। 27 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "28",
+        "label": {
+          "en": "Twenty-eight",
+          "hi": "अट्ठाईस"
+        },
+        "picture": "●",
+        "count": 28,
+        "say": {
+          "en": "Twenty-eight. Count 28 dots.",
+          "hi": "अट्ठाईस। 28 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "29",
+        "label": {
+          "en": "Twenty-nine",
+          "hi": "उनतीस"
+        },
+        "picture": "●",
+        "count": 29,
+        "say": {
+          "en": "Twenty-nine. Count 29 dots.",
+          "hi": "उनतीस। 29 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "30",
+        "label": {
+          "en": "Thirty",
+          "hi": "तीस"
+        },
+        "picture": "●",
+        "count": 30,
+        "say": {
+          "en": "Thirty. Count 30 dots.",
+          "hi": "तीस। 30 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "31",
+        "label": {
+          "en": "Thirty-one",
+          "hi": "इकतीस"
+        },
+        "picture": "●",
+        "count": 31,
+        "say": {
+          "en": "Thirty-one. Count 31 dots.",
+          "hi": "इकतीस। 31 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "32",
+        "label": {
+          "en": "Thirty-two",
+          "hi": "बत्तीस"
+        },
+        "picture": "●",
+        "count": 32,
+        "say": {
+          "en": "Thirty-two. Count 32 dots.",
+          "hi": "बत्तीस। 32 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "33",
+        "label": {
+          "en": "Thirty-three",
+          "hi": "तैंतीस"
+        },
+        "picture": "●",
+        "count": 33,
+        "say": {
+          "en": "Thirty-three. Count 33 dots.",
+          "hi": "तैंतीस। 33 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "34",
+        "label": {
+          "en": "Thirty-four",
+          "hi": "चौंतीस"
+        },
+        "picture": "●",
+        "count": 34,
+        "say": {
+          "en": "Thirty-four. Count 34 dots.",
+          "hi": "चौंतीस। 34 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "35",
+        "label": {
+          "en": "Thirty-five",
+          "hi": "पैंतीस"
+        },
+        "picture": "●",
+        "count": 35,
+        "say": {
+          "en": "Thirty-five. Count 35 dots.",
+          "hi": "पैंतीस। 35 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "36",
+        "label": {
+          "en": "Thirty-six",
+          "hi": "छत्तीस"
+        },
+        "picture": "●",
+        "count": 36,
+        "say": {
+          "en": "Thirty-six. Count 36 dots.",
+          "hi": "छत्तीस। 36 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "37",
+        "label": {
+          "en": "Thirty-seven",
+          "hi": "सैंतीस"
+        },
+        "picture": "●",
+        "count": 37,
+        "say": {
+          "en": "Thirty-seven. Count 37 dots.",
+          "hi": "सैंतीस। 37 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "38",
+        "label": {
+          "en": "Thirty-eight",
+          "hi": "अड़तीस"
+        },
+        "picture": "●",
+        "count": 38,
+        "say": {
+          "en": "Thirty-eight. Count 38 dots.",
+          "hi": "अड़तीस। 38 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "39",
+        "label": {
+          "en": "Thirty-nine",
+          "hi": "उनतालीस"
+        },
+        "picture": "●",
+        "count": 39,
+        "say": {
+          "en": "Thirty-nine. Count 39 dots.",
+          "hi": "उनतालीस। 39 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "40",
+        "label": {
+          "en": "Forty",
+          "hi": "चालीस"
+        },
+        "picture": "●",
+        "count": 40,
+        "say": {
+          "en": "Forty. Count 40 dots.",
+          "hi": "चालीस। 40 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "41",
+        "label": {
+          "en": "Forty-one",
+          "hi": "इकतालीस"
+        },
+        "picture": "●",
+        "count": 41,
+        "say": {
+          "en": "Forty-one. Count 41 dots.",
+          "hi": "इकतालीस। 41 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "42",
+        "label": {
+          "en": "Forty-two",
+          "hi": "बयालीस"
+        },
+        "picture": "●",
+        "count": 42,
+        "say": {
+          "en": "Forty-two. Count 42 dots.",
+          "hi": "बयालीस। 42 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "43",
+        "label": {
+          "en": "Forty-three",
+          "hi": "तैंतालीस"
+        },
+        "picture": "●",
+        "count": 43,
+        "say": {
+          "en": "Forty-three. Count 43 dots.",
+          "hi": "तैंतालीस। 43 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "44",
+        "label": {
+          "en": "Forty-four",
+          "hi": "चवालीस"
+        },
+        "picture": "●",
+        "count": 44,
+        "say": {
+          "en": "Forty-four. Count 44 dots.",
+          "hi": "चवालीस। 44 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "45",
+        "label": {
+          "en": "Forty-five",
+          "hi": "पैंतालीस"
+        },
+        "picture": "●",
+        "count": 45,
+        "say": {
+          "en": "Forty-five. Count 45 dots.",
+          "hi": "पैंतालीस। 45 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "46",
+        "label": {
+          "en": "Forty-six",
+          "hi": "छियालीस"
+        },
+        "picture": "●",
+        "count": 46,
+        "say": {
+          "en": "Forty-six. Count 46 dots.",
+          "hi": "छियालीस। 46 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "47",
+        "label": {
+          "en": "Forty-seven",
+          "hi": "सैंतालीस"
+        },
+        "picture": "●",
+        "count": 47,
+        "say": {
+          "en": "Forty-seven. Count 47 dots.",
+          "hi": "सैंतालीस। 47 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "48",
+        "label": {
+          "en": "Forty-eight",
+          "hi": "अड़तालीस"
+        },
+        "picture": "●",
+        "count": 48,
+        "say": {
+          "en": "Forty-eight. Count 48 dots.",
+          "hi": "अड़तालीस। 48 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "49",
+        "label": {
+          "en": "Forty-nine",
+          "hi": "उनचास"
+        },
+        "picture": "●",
+        "count": 49,
+        "say": {
+          "en": "Forty-nine. Count 49 dots.",
+          "hi": "उनचास। 49 बिंदु गिनें।"
+        }
+      },
+      {
+        "symbol": "50",
+        "label": {
+          "en": "Fifty",
+          "hi": "पचास"
+        },
+        "picture": "●",
+        "count": 50,
+        "say": {
+          "en": "Fifty. Count 50 dots.",
+          "hi": "पचास। 50 बिंदु गिनें।"
+        }
+      }
+    ],
+    "trace": "2",
+    "play": [
+      {
+        "en": "Count from 21 to 30 without skipping a number.",
+        "hi": "कोई संख्या छोड़े बिना 21 से 30 तक गिनें।"
+      },
+      {
+        "en": "Show 3 groups of 10 by pointing to the dot rows.",
+        "hi": "बिंदुओं की पंक्तियों पर 10 के 3 समूह दिखाएँ।"
+      },
+      {
+        "en": "Find 42 and say 4 tens and 2 ones.",
+        "hi": "42 खोजकर 4 दहाई और 2 इकाई बोलें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "What comes after 29?",
+          "hi": "29 के बाद क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "30",
+            "hi": "30"
+          },
+          {
+            "en": "28",
+            "hi": "28"
+          },
+          {
+            "en": "31",
+            "hi": "31"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A new ten is completed: 30.",
+          "hi": "अगली दहाई पूरी होती है: 30।"
+        }
+      },
+      {
+        "question": {
+          "en": "What comes after 39?",
+          "hi": "39 के बाद क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "38",
+            "hi": "38"
+          },
+          {
+            "en": "41",
+            "hi": "41"
+          },
+          {
+            "en": "40",
+            "hi": "40"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "40 follows 39.",
+          "hi": "39 के बाद 40 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What comes before 50?",
+          "hi": "50 से पहले क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "48",
+            "hi": "48"
+          },
+          {
+            "en": "49",
+            "hi": "49"
+          },
+          {
+            "en": "51",
+            "hi": "51"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "49 is just before 50.",
+          "hi": "50 के ठीक पहले 49 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which number is 3 tens and 2 ones?",
+          "hi": "3 दहाई और 2 इकाई कौन-सी संख्या है?"
+        },
+        "options": [
+          {
+            "en": "32",
+            "hi": "32"
+          },
+          {
+            "en": "23",
+            "hi": "23"
+          },
+          {
+            "en": "30",
+            "hi": "30"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "30 + 2 = 32.",
+          "hi": "30 + 2 = 32।"
+        }
+      },
+      {
+        "question": {
+          "en": "How many tens are in 40?",
+          "hi": "40 में कितनी दहाइयाँ हैं?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "4 groups of 10 make 40.",
+          "hi": "10 के 4 समूह 40 बनाते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is between 34 and 36?",
+          "hi": "34 और 36 के बीच कौन है?"
+        },
+        "options": [
+          {
+            "en": "33",
+            "hi": "33"
+          },
+          {
+            "en": "35",
+            "hi": "35"
+          },
+          {
+            "en": "37",
+            "hi": "37"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The order is 34, 35, 36.",
+          "hi": "क्रम 34, 35, 36 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which number is more: 24 or 42?",
+          "hi": "24 और 42 में कौन अधिक है?"
+        },
+        "options": [
+          {
+            "en": "42",
+            "hi": "42"
+          },
+          {
+            "en": "24",
+            "hi": "24"
+          },
+          {
+            "en": "22",
+            "hi": "22"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "42 has more tens than 24.",
+          "hi": "42 में 24 से अधिक दहाइयाँ हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What comes after 47?",
+          "hi": "47 के बाद क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "46",
+            "hi": "46"
+          },
+          {
+            "en": "49",
+            "hi": "49"
+          },
+          {
+            "en": "48",
+            "hi": "48"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "48 follows 47.",
+          "hi": "47 के बाद 48 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "How many ones are in 25 after its 2 full tens?",
+          "hi": "25 की 2 पूरी दहाइयों के बाद कितनी इकाइयाँ बचती हैं?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "0",
+            "hi": "0"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "25 = 20 + 5.",
+          "hi": "25 = 20 + 5।"
+        }
+      },
+      {
+        "question": {
+          "en": "What number is 5 tens?",
+          "hi": "5 दहाई कौन-सी संख्या है?"
+        },
+        "options": [
+          {
+            "en": "50",
+            "hi": "50"
+          },
+          {
+            "en": "15",
+            "hi": "15"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "5 groups of 10 make 50.",
+          "hi": "10 के 5 समूह 50 बनाते हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-math-03",
+    "classId": "UKG",
+    "subject": "math",
+    "title": {
+      "en": "Join and Take Away",
+      "hi": "जोड़ें और हटाएँ"
+    },
+    "goal": {
+      "en": "Use pictured groups to add and subtract within 10.",
+      "hi": "चित्रित समूहों से 10 तक जोड़ना और घटाना समझें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Join two groups",
+          "hi": "2 समूह जोड़ें"
+        },
+        "body": {
+          "en": "Addition joins amounts. If 2 dots are joined by 3 more dots, count all of them to find 5. The sign + tells us to add.",
+          "hi": "जोड़ने में 2 समूह साथ आते हैं। पहले 2 बिंदु हैं और फिर 3 बिंदु मिलते हैं। सबको गिनें: कुल 5 बिंदु हैं। इसे 2 + 3 = 5 लिखते हैं। + का अर्थ जोड़ना है। जोड़ने के बाद दोनों समूह की वस्तुएँ मौजूद रहती हैं; किसी को छोड़कर न गिनें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Take some away",
+          "hi": "कुछ हटाएँ"
+        },
+        "body": {
+          "en": "Subtraction tells what remains after taking away. From 5 dots, remove 2; 3 dots remain. The sign − tells us to subtract.",
+          "hi": "घटाने में कुछ वस्तुएँ हटाई जाती हैं। 5 बिंदुओं में से 2 हटा दें। जो बचे हैं, वे 3 हैं। इसे 5 − 2 = 3 लिखते हैं। − का अर्थ घटाना है। हटे और बचे बिंदु अलग पहचानें। उत्तर में केवल बचे हुए बिंदुओं की संख्या लिखें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Check with small groups",
+          "hi": "छोटे समूह से जाँचें"
+        },
+        "body": {
+          "en": "Zero adds no new object. Taking away every object leaves zero. Use fingers or drawings to check a result rather than guessing quickly.",
+          "hi": "0 जोड़ने पर कोई नई वस्तु नहीं आती। 4 + 0 फिर 4 है। सभी वस्तुएँ हटा देने पर कुछ नहीं बचता, इसलिए 4 − 4 = 0 है। उत्तर जल्दी बोलने के बजाय उँगलियाँ या छोटे चित्र इस्तेमाल करें। एक ही उदाहरण को जोड़कर और हटाकर देखने से दोनों क्रियाओं का अर्थ समझ आता है।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "2 + 3 = 5",
+        "label": {
+          "en": "Join 2 and 3",
+          "hi": "2 और 3 जोड़ें"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Join 2 and 3",
+          "hi": "2 और 3 जोड़ें"
+        },
+        "count": 5
+      },
+      {
+        "symbol": "1 + 4 = 5",
+        "label": {
+          "en": "Join 1 and 4",
+          "hi": "1 और 4 जोड़ें"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Join 1 and 4",
+          "hi": "1 और 4 जोड़ें"
+        },
+        "count": 5
+      },
+      {
+        "symbol": "3 + 3 = 6",
+        "label": {
+          "en": "Join 3 and 3",
+          "hi": "3 और 3 जोड़ें"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Join 3 and 3",
+          "hi": "3 और 3 जोड़ें"
+        },
+        "count": 6
+      },
+      {
+        "symbol": "5 − 2 = 3",
+        "label": {
+          "en": "Take 2 from 5",
+          "hi": "5 में से 2 हटाएँ"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Take 2 from 5",
+          "hi": "5 में से 2 हटाएँ"
+        },
+        "count": 3
+      },
+      {
+        "symbol": "7 − 3 = 4",
+        "label": {
+          "en": "Take 3 from 7",
+          "hi": "7 में से 3 हटाएँ"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Take 3 from 7",
+          "hi": "7 में से 3 हटाएँ"
+        },
+        "count": 4
+      },
+      {
+        "symbol": "4 − 4 = 0",
+        "label": {
+          "en": "Nothing remains",
+          "hi": "कुछ नहीं बचता"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Nothing remains",
+          "hi": "कुछ नहीं बचता"
+        },
+        "count": 0
+      },
+      {
+        "symbol": "4 + 0 = 4",
+        "label": {
+          "en": "Adding zero",
+          "hi": "शून्य जोड़ना"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Adding zero",
+          "hi": "शून्य जोड़ना"
+        },
+        "count": 4
+      },
+      {
+        "symbol": "5 + 5 = 10",
+        "label": {
+          "en": "Two groups of 5",
+          "hi": "5 के 2 समूह"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Two groups of 5",
+          "hi": "5 के 2 समूह"
+        },
+        "count": 10
+      }
+    ],
+    "trace": "+",
+    "play": [
+      {
+        "en": "Show 2 fingers, then 3 more. Count all 5.",
+        "hi": "2 उँगलियाँ और फिर 3 और दिखाएँ। सभी 5 गिनें।"
+      },
+      {
+        "en": "Show 6 fingers and close 2. How many stay open?",
+        "hi": "6 उँगलियाँ दिखाकर 2 बंद करें। कितनी खुली हैं?"
+      },
+      {
+        "en": "Draw 4 dots and cross out all 4. Say zero.",
+        "hi": "4 बिंदु बनाकर सभी 4 काटें। शून्य बोलें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "What is 2 + 3?",
+          "hi": "2 + 3 कितना है?"
+        },
+        "options": [
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "6",
+            "hi": "6"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "2 dots and 3 dots make 5.",
+          "hi": "2 और 3 बिंदु मिलकर 5 होते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is 5 − 2?",
+          "hi": "5 − 2 कितना है?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Taking 2 from 5 leaves 3.",
+          "hi": "5 से 2 हटाने पर 3 बचते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is 4 + 0?",
+          "hi": "4 + 0 कितना है?"
+        },
+        "options": [
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "0",
+            "hi": "0"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Zero adds no new object.",
+          "hi": "0 से कोई नई वस्तु नहीं जुड़ती।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is 6 − 1?",
+          "hi": "6 − 1 कितना है?"
+        },
+        "options": [
+          {
+            "en": "7",
+            "hi": "7"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "One less than 6 is 5.",
+          "hi": "6 से 1 कम 5 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is 3 + 3?",
+          "hi": "3 + 3 कितना है?"
+        },
+        "options": [
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "6",
+            "hi": "6"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Two groups of 3 make 6.",
+          "hi": "3 के 2 समूह 6 बनाते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is 4 − 4?",
+          "hi": "4 − 4 कितना है?"
+        },
+        "options": [
+          {
+            "en": "0",
+            "hi": "0"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "8",
+            "hi": "8"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Taking all 4 away leaves 0.",
+          "hi": "सभी 4 हटाने पर 0 बचता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is 1 + 7?",
+          "hi": "1 + 7 कितना है?"
+        },
+        "options": [
+          {
+            "en": "7",
+            "hi": "7"
+          },
+          {
+            "en": "8",
+            "hi": "8"
+          },
+          {
+            "en": "9",
+            "hi": "9"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "One more than 7 is 8.",
+          "hi": "7 से 1 अधिक 8 है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is 10 − 5?",
+          "hi": "10 − 5 कितना है?"
+        },
+        "options": [
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "6",
+            "hi": "6"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Removing 5 from 10 leaves 5.",
+          "hi": "10 से 5 हटाने पर 5 बचते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which sign means join or add?",
+          "hi": "कौन-सा चिह्न जोड़ना बताता है?"
+        },
+        "options": [
+          {
+            "en": "+",
+            "hi": "+"
+          },
+          {
+            "en": "−",
+            "hi": "−"
+          },
+          {
+            "en": "=",
+            "hi": "="
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The plus sign means add.",
+          "hi": "+ का अर्थ जोड़ना है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is 2 + 2 + 1?",
+          "hi": "2 + 2 + 1 कितना है?"
+        },
+        "options": [
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "6",
+            "hi": "6"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "2 + 2 is 4; one more makes 5.",
+          "hi": "2 + 2 से 4; 1 और जोड़ने पर 5 है।"
+        }
+      }
+    ],
+    "activity": {
+      "type": "arithmetic"
+    }
+  },
+  {
+    "id": "ukg-math-04",
+    "classId": "UKG",
+    "subject": "math",
+    "title": {
+      "en": "Patterns, Position and Our Day",
+      "hi": "पैटर्न, स्थान और हमारा दिन"
+    },
+    "goal": {
+      "en": "Continue a simple repeating pattern and describe a clear order or position.",
+      "hi": "सरल दोहराता पैटर्न आगे बढ़ाएँ और स्पष्ट क्रम या स्थान बताएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Find what repeats",
+          "hi": "दोहराता हिस्सा खोजें"
+        },
+        "body": {
+          "en": "In red, blue, red, blue, the repeating part is red then blue. Say that part again to continue the pattern. A pattern may use shapes instead of colours.",
+          "hi": "लाल, नीला, लाल, नीला में लाल और फिर नीला दोहरता है। इसी हिस्से को फिर बोलने से पैटर्न आगे बढ़ता है। आकृतियाँ भी पैटर्न बना सकती हैं, जैसे वृत्त, वर्ग, वृत्त, वर्ग। पहले दोहराता हिस्सा खोजें। केवल आखिरी आकृति देखकर जल्दी अनुमान न लगाएँ; शुरू से क्रम को मिलाएँ।"
+        }
+      },
+      {
+        "title": {
+          "en": "Describe a position",
+          "hi": "स्थान बताएँ"
+        },
+        "body": {
+          "en": "Between means in the middle of two named things. First and last depend on an agreed direction, such as reading a displayed row from left to right.",
+          "hi": "बीच का अर्थ 2 बताई वस्तुओं के मध्य है। A, B, C की पंक्ति में B, A और C के बीच है। पहला और अंतिम बोलने से पहले दिशा तय करें। यहाँ पंक्ति को बाएँ से दाएँ पढ़ते हैं। उसी दिशा में A पहला और C अंतिम है। ऊपर और नीचे का संदर्भ भी साफ बताएँ।"
+        }
+      },
+      {
+        "title": {
+          "en": "Tell the order of a day",
+          "hi": "दिन का क्रम बताएँ"
+        },
+        "body": {
+          "en": "Morning, afternoon and night name parts of a day. Talk about a familiar sequence, such as washing hands before eating. Different families may follow different daily routines.",
+          "hi": "सुबह, दोपहर और रात दिन के अलग भाग हैं। सामान्य दिन में सुबह के बाद दोपहर और फिर शाम तथा रात आती है। रोज की 2 घटनाओं का क्रम बोलें। खाने से पहले हाथ धोना अच्छी आदत है। हर परिवार की दिनचर्या एक जैसी नहीं होती, इसलिए किसी खास समय को सभी के लिए अनिवार्य न मानें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "🔴 🔵 🔴 🔵",
+        "label": {
+          "en": "Red-blue pattern",
+          "hi": "लाल-नीला पैटर्न"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Red-blue pattern",
+          "hi": "लाल-नीला पैटर्न"
+        }
+      },
+      {
+        "symbol": "○ □ ○ □",
+        "label": {
+          "en": "Circle-square pattern",
+          "hi": "वृत्त-वर्ग पैटर्न"
+        },
+        "picture": "●",
+        "say": {
+          "en": "Circle-square pattern",
+          "hi": "वृत्त-वर्ग पैटर्न"
+        }
+      },
+      {
+        "symbol": "A B C",
+        "label": {
+          "en": "B is between A and C",
+          "hi": "B, A और C के बीच है"
+        },
+        "picture": "●",
+        "say": {
+          "en": "B is between A and C",
+          "hi": "B, A और C के बीच है"
+        }
+      },
+      {
+        "symbol": "↑",
+        "label": {
+          "en": "Above",
+          "hi": "ऊपर"
+        },
+        "picture": "⬆️",
+        "say": {
+          "en": "Above",
+          "hi": "ऊपर"
+        },
+        "position": "above"
+      },
+      {
+        "symbol": "↓",
+        "label": {
+          "en": "Below",
+          "hi": "नीचे"
+        },
+        "picture": "⬇️",
+        "say": {
+          "en": "Below",
+          "hi": "नीचे"
+        },
+        "position": "below"
+      },
+      {
+        "symbol": "☀️",
+        "label": {
+          "en": "Morning",
+          "hi": "सुबह"
+        },
+        "picture": "☀️",
+        "say": {
+          "en": "Morning",
+          "hi": "सुबह"
+        }
+      },
+      {
+        "symbol": "🌤️",
+        "label": {
+          "en": "Afternoon",
+          "hi": "दोपहर"
+        },
+        "picture": "🌤️",
+        "say": {
+          "en": "Afternoon",
+          "hi": "दोपहर"
+        }
+      },
+      {
+        "symbol": "🌙",
+        "label": {
+          "en": "Night",
+          "hi": "रात"
+        },
+        "picture": "🌙",
+        "say": {
+          "en": "Night",
+          "hi": "रात"
+        }
+      }
+    ],
+    "trace": "○",
+    "play": [
+      {
+        "en": "Continue red, blue, red, blue with your voice.",
+        "hi": "लाल, नीला, लाल, नीला बोलकर क्रम बढ़ाएँ।"
+      },
+      {
+        "en": "Read A, B, C from left to right and name the middle letter.",
+        "hi": "A, B, C बाएँ से दाएँ पढ़कर बीच का अक्षर बोलें।"
+      },
+      {
+        "en": "Name something you do before eating.",
+        "hi": "खाने से पहले किया जाने वाला 1 काम बताएँ।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Red, blue, red, blue: what comes next?",
+          "hi": "लाल, नीला, लाल, नीला: आगे क्या आएगा?"
+        },
+        "options": [
+          {
+            "en": "Red",
+            "hi": "लाल"
+          },
+          {
+            "en": "Blue",
+            "hi": "नीला"
+          },
+          {
+            "en": "Yellow",
+            "hi": "पीला"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The repeating pair begins again with red.",
+          "hi": "दोहराती जोड़ी फिर लाल से शुरू होती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Circle, square, circle, square: what comes next?",
+          "hi": "वृत्त, वर्ग, वृत्त, वर्ग: आगे क्या आएगा?"
+        },
+        "options": [
+          {
+            "en": "Triangle",
+            "hi": "त्रिभुज"
+          },
+          {
+            "en": "Square",
+            "hi": "वर्ग"
+          },
+          {
+            "en": "Circle",
+            "hi": "वृत्त"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "The repeating pair starts with a circle.",
+          "hi": "दोहराती जोड़ी वृत्त से शुरू होती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "In the row A, B, C, which letter is between A and C?",
+          "hi": "A, B, C में A और C के बीच कौन है?"
+        },
+        "options": [
+          {
+            "en": "A",
+            "hi": "A"
+          },
+          {
+            "en": "B",
+            "hi": "B"
+          },
+          {
+            "en": "C",
+            "hi": "C"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "B is the middle letter.",
+          "hi": "B बीच का अक्षर है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Read left to right: A, B, C. Which is first?",
+          "hi": "बाएँ से दाएँ पढ़ें: A, B, C। पहला कौन है?"
+        },
+        "options": [
+          {
+            "en": "A",
+            "hi": "A"
+          },
+          {
+            "en": "B",
+            "hi": "B"
+          },
+          {
+            "en": "C",
+            "hi": "C"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A is at the left start of the row.",
+          "hi": "पंक्ति के बाएँ आरंभ पर A है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Read left to right: A, B, C. Which is last?",
+          "hi": "बाएँ से दाएँ पढ़ें: A, B, C। अंतिम कौन है?"
+        },
+        "options": [
+          {
+            "en": "A",
+            "hi": "A"
+          },
+          {
+            "en": "B",
+            "hi": "B"
+          },
+          {
+            "en": "C",
+            "hi": "C"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "C is at the right end of the row.",
+          "hi": "पंक्ति के दाएँ अंत पर C है।"
+        }
+      },
+      {
+        "question": {
+          "en": "A star is directly above a box. Which word gives its position?",
+          "hi": "तारा डिब्बे से ठीक ऊपर है। उसका स्थान कौन-सा शब्द बताता है?"
+        },
+        "options": [
+          {
+            "en": "Below",
+            "hi": "नीचे"
+          },
+          {
+            "en": "Above",
+            "hi": "ऊपर"
+          },
+          {
+            "en": "Inside",
+            "hi": "अंदर"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The star is higher than the box.",
+          "hi": "तारा डिब्बे से ऊँचा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What usually comes after morning in the same day?",
+          "hi": "उसी दिन सुबह के बाद सामान्यतः क्या आता है?"
+        },
+        "options": [
+          {
+            "en": "Afternoon",
+            "hi": "दोपहर"
+          },
+          {
+            "en": "Yesterday",
+            "hi": "बीता दिन"
+          },
+          {
+            "en": "Last night",
+            "hi": "पिछली रात"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Afternoon comes after morning.",
+          "hi": "सुबह के बाद दोपहर आती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What should we do before eating?",
+          "hi": "खाने से पहले क्या करना चाहिए?"
+        },
+        "options": [
+          {
+            "en": "Play with mud",
+            "hi": "मिट्टी में खेलना"
+          },
+          {
+            "en": "Go to sleep",
+            "hi": "सो जाना"
+          },
+          {
+            "en": "Wash our hands",
+            "hi": "हाथ धोना"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Washing hands before food helps keep them clean.",
+          "hi": "खाने से पहले हाथ धोने से वे साफ रहते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "1, 2, 1, 2: what comes next in this repeating pattern?",
+          "hi": "1, 2, 1, 2: इस दोहराते पैटर्न में आगे क्या है?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "1",
+            "hi": "1"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The pair 1, 2 repeats.",
+          "hi": "1, 2 की जोड़ी दोहरती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which part repeats in star, star, circle, star, star, circle?",
+          "hi": "तारा, तारा, वृत्त, तारा, तारा, वृत्त में कौन-सा हिस्सा दोहरता है?"
+        },
+        "options": [
+          {
+            "en": "Star, star, circle",
+            "hi": "तारा, तारा, वृत्त"
+          },
+          {
+            "en": "Circle, circle",
+            "hi": "वृत्त, वृत्त"
+          },
+          {
+            "en": "Star only",
+            "hi": "केवल तारा"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Each repeated unit has 2 stars followed by 1 circle.",
+          "hi": "हर दोहरते हिस्से में 2 तारे और फिर 1 वृत्त है।"
+        }
+      }
+    ]
+  }
+]

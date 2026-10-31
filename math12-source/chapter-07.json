@@ -1,0 +1,892 @@
+{
+  "id": 7,
+  "title": {
+    "en": "Integrals",
+    "hi": "समाकलन"
+  },
+  "goal": {
+    "en": "Reverse differentiation, choose substitution, partial fractions or parts, and evaluate definite integrals with correct limits.",
+    "hi": "अवकलन उलटें, प्रतिस्थापन, आंशिक भिन्न या खंडशः विधि चुनें और सही सीमाओं से निश्चित समाकल निकालें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Integration as reverse differentiation",
+        "hi": "अवकलन की प्रतिलोम प्रक्रिया के रूप में समाकलन"
+      },
+      "body": {
+        "en": "An antiderivative F of f satisfies F′=f on an interval. All antiderivatives on that interval differ by a constant, so ∫f(x)dx=F(x)+C. For example, ∫2x dx=x²+C. The integration variable and dx are part of the notation. A definite integral is a number; an indefinite integral describes a family of functions. Verify a proposed answer by differentiation, including all chain-rule factors.",
+        "hi": "समाकलन (Integration) को अवकलन की प्रतिलोम प्रक्रिया की तरह शुरू करते हैं। यदि किसी अंतराल पर F′(x)=f(x), तो F को f का प्रतिअवकलज (Antiderivative) कहते हैं। उदाहरण के लिए x² का अवकलज 2x है, इसलिए 2x का एक प्रतिअवकलज x² है। लेकिन x²+5 और x²−7 का अवकलज भी 2x ही है। इसलिए अनिश्चित समाकलन (Indefinite integral) ∫2x dx=x²+C लिखा जाता है, जहाँ C मनमाना स्थिरांक है। 1 जुड़े अंतराल पर सभी प्रतिअवकलज केवल स्थिरांक से अलग होते हैं। समाकल चिह्न, समाकल्य f(x) और dx मिलकर पूरा संकेत बनाते हैं; dx बताता है कि किस चर के सापेक्ष प्रक्रिया हो रही है। उत्तर की सबसे अच्छी जाँच उसे अवकलित करना है। यदि अवकलज मूल समाकल्य नहीं देता, तो गुणक, चिह्न या सूत्र गलत है। निश्चित समाकलन (Definite integral) इसके विपरीत सीमाओं से जुड़ी 1 संख्या देता है। अनिश्चित और निश्चित उत्तर में स्थिरांक की भूमिका अलग है, इसलिए दोनों को एक ही तरह न लिखें।"
+      },
+      "formula": "∫f(x) dx=F(x)+C ⇔ F′(x)=f(x)",
+      "question": {
+        "en": "Why is C added to an indefinite integral?",
+        "hi": "अनिश्चित समाकलन में C क्यों जोड़ते हैं?"
+      },
+      "answer": {
+        "en": "Every constant differentiates to 0, so a whole family has the same derivative.",
+        "hi": "हर स्थिरांक का अवकलज 0 है; पूरा परिवार वही अवकलज देता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Standard integrals and domain restrictions",
+        "hi": "मानक समाकलन और प्रांत की शर्तें"
+      },
+      "body": {
+        "en": "The power rule gives ∫x^n dx=x^(n+1)/(n+1)+C for n≠−1 on an appropriate real interval. The exception is ∫dx/x=ln|x|+C for x≠0. Also ∫e^x dx=e^x+C, ∫cos x dx=sin x+C, ∫sin x dx=−cos x+C, and ∫dx/(1+x²)=arctan x+C. Use radians for trigonometric expressions and check the real domain before manipulating radicals or logarithms.",
+        "hi": "मानक समाकलन (Standard integral) अवकलजों के ज्ञात सूत्रों को उलटकर मिलते हैं। घात नियम ∫x^n dx=x^(n+1)/(n+1)+C है, पर n≠−1 होना चाहिए और वास्तविक व्यंजक जिस अंतराल पर परिभाषित है, वहीं उपयोग करें। n=−1 रखने पर हर 0 होगा; इस विशेष स्थिति में ∫dx/x=ln|x|+C, x≠0 है। निरपेक्ष मान (Absolute value) ऋणात्मक x वाले अंतराल पर भी वास्तविक लघुगणक उपलब्ध कराता है। इसका अर्थ 0 पार करके एक ही संतत प्रतिअवकलज बनाना नहीं है। e^x का समाकल e^x+C, cos x का sin x+C और sin x का −cos x+C है। अंतिम सूत्र में ऋण चिह्न भूलना सामान्य त्रुटि है। ∫dx/(1+x²)=arctan x+C भी महत्त्वपूर्ण है। जोड़ और स्थिर गुणक को अलग कर सकते हैं, लेकिन गुणनफल का समाकल सामान्यतः दोनों अलग समाकलों का गुणनफल नहीं होता। पहले समाकल्य का आकार पहचानें, फिर सूत्र चुनें और अवकलन से जाँचें। त्रिकोणमितीय सूत्रों में रेडियन मान्यता बनी रहती है।"
+      },
+      "formula": "∫x^n dx=x^(n+1)/(n+1)+C (n≠−1); ∫dx/x=ln|x|+C",
+      "question": {
+        "en": "Integrate 1/x on an interval not containing 0.",
+        "hi": "0 रहित अंतराल पर 1/x का समाकलन करें।"
+      },
+      "answer": {
+        "en": "ln|x|+C.",
+        "hi": "ln|x|+C।"
+      }
+    },
+    {
+      "title": {
+        "en": "Substitution and the differential factor",
+        "hi": "प्रतिस्थापन और अवकल गुणक"
+      },
+      "body": {
+        "en": "Substitution reverses the chain rule. In ∫2x cos(x²)dx, set u=x², so du=2x dx. The integral becomes ∫cos u du=sin u+C, hence sin(x²)+C. Match the entire differential factor rather than replacing x² alone. In a definite integral either change both limits to u-values or return to x before applying the original limits; never mix the two variables.",
+        "hi": "प्रतिस्थापन विधि (Substitution method) श्रृंखला नियम को उलटती है। जब किसी संयुक्त फलन के साथ भीतर के व्यंजक का अवकलज भी गुणक में मिले, तो नया चर उपयोगी होता है। उदाहरण ∫2x cos(x²) dx में u=x² रखने पर du=2x dx है। पूरा 2x dx एक साथ du बनता है और समाकल ∫cos u du=sin u+C मिलता है। वापस रखने पर sin(x²)+C उत्तर है। केवल x² को u लिखकर dx को बिना बदले छोड़ना वैध परिवर्तन नहीं। यदि आवश्यक गुणक से कोई स्थिर संख्या अलग हो, तो उसे समाकल के बाहर समायोजित करें। ∫x/(1+x²) dx में du=2x dx है, इसलिए उत्तर (1/2)ln(1+x²)+C है। निश्चित समाकल में 2 सही विकल्प हैं: नई सीमाएँ u(a),u(b) लिखें और पूरा उत्तर u में रखें, या पहले x में वापस आकर मूल सीमाएँ लगाएँ। नई चर राशि के साथ पुरानी सीमाएँ मिलाने से गलत उत्तर आता है। हर परिवर्तन के बाद प्रांत और हर के शून्य की जाँच करें।"
+      },
+      "formula": "u=g(x), du=g′(x)dx ⇒ ∫f(g(x))g′(x)dx=∫f(u)du",
+      "question": {
+        "en": "Integrate 2x cos(x²).",
+        "hi": "2x cos(x²) का समाकलन करें।"
+      },
+      "answer": {
+        "en": "sin(x²)+C.",
+        "hi": "sin(x²)+C।"
+      }
+    },
+    {
+      "title": {
+        "en": "Partial fractions for rational functions",
+        "hi": "परिमेय फलनों के आंशिक भिन्न"
+      },
+      "body": {
+        "en": "For a proper rational function, factor the denominator and split into simpler fractions. In 1/[(x+1)(x+2)]=A/(x+1)+B/(x+2), multiplying by the denominator gives 1=A(x+2)+B(x+1), hence A=1,B=−1. Integrate to ln|x+1|−ln|x+2|+C. First perform polynomial division if the numerator degree is not smaller. Repeated linear factors and irreducible quadratics need the appropriate full numerator pattern.",
+        "hi": "आंशिक भिन्न (Partial fractions) विधि परिमेय फलनों को सरल भागों में बाँटती है। पहले अंश और हर की घात तुलना करें। यदि अंश की घात हर से छोटी नहीं है, तो बहुपद भाग करके उचित भिन्न बनाएँ। फिर हर के गुणनखंड देखें। उदाहरण 1/[(x+1)(x+2)] को A/(x+1)+B/(x+2) मानते हैं। दोनों ओर हर से गुणा करने पर 1=A(x+2)+B(x+1) है। x=−1 रखने पर A=1 और x=−2 पर B=−1 मिलता है। यह गुणांक निकालने की बीजीय पहचान है; मूल भिन्न इन मानों पर अपरिभाषित ही रहता है। समाकलन से ln|x+1|−ln|x+2|+C मिलता है, जहाँ मूल हर शून्य न हो। दोहराए रैखिक गुणनखंड (x−a)² के लिए A/(x−a)+B/(x−a)² दोनों पद चाहिए। वास्तविक रूप से अविभाज्य द्विघात हर के ऊपर सामान्यतः रैखिक अंश Ax+B रखें। अधूरी भिन्न संरचना से गुणांक नहीं मिलेंगे। अंत में भागों को जोड़कर मूल भिन्न बनाना और उत्तर का अवकलन करना दोनों अच्छी जाँचें हैं।"
+      },
+      "formula": "1/[(x+1)(x+2)]=1/(x+1)−1/(x+2)",
+      "question": {
+        "en": "Integrate 1/[(x+1)(x+2)].",
+        "hi": "1/[(x+1)(x+2)] का समाकलन करें।"
+      },
+      "answer": {
+        "en": "ln|x+1|−ln|x+2|+C, away from −1 and −2.",
+        "hi": "ln|x+1|−ln|x+2|+C, −1 और −2 से दूर।"
+      }
+    },
+    {
+      "title": {
+        "en": "Integration by parts",
+        "hi": "खंडशः समाकलन"
+      },
+      "body": {
+        "en": "The product differentiation rule leads to ∫u dv=uv−∫v du. Choose u so differentiating simplifies it and choose dv so it can be integrated. For ∫x e^x dx, set u=x,dv=e^x dx. Then du=dx,v=e^x and the result is x e^x−e^x+C. Do not split a product into a product of integrals. Some problems need repeated application; a choice rule is guidance, not a theorem.",
+        "hi": "खंडशः समाकलन (Integration by parts) गुणनफल के अवकलन नियम से मिलता है। यदि u और v उपयुक्त अवकलनीय फलन हों, तो ∫u dv=uv−∫v du है। इसमें एक भाग को अवकलित करने और दूसरे को समाकलित करने का चुनाव होता है। चुनाव ऐसा करें कि बचा समाकल पहले से आसान हो। ∫x e^x dx में u=x और dv=e^x dx लें। तब du=dx, v=e^x हैं। सूत्र से x e^x−∫e^x dx=x e^x−e^x+C मिलता है। बीच का ऋण चिह्न आवश्यक है। ∫ln x dx में छिपा दूसरा गुणक 1 है; u=ln x तथा dv=dx से x ln x−x+C, x>0 मिलता है। कौन सा फलन पहले चुनें, इसके स्मृति नियम मदद करते हैं, लेकिन हर प्रश्न में वही चुनाव सर्वोत्तम हो यह जरूरी नहीं। कभी 2 बार प्रक्रिया दोहरानी पड़ती है या वही समाकल वापस आता है। हर पंक्ति में u,du,v,dv साफ लिखने से चिह्न और अवकल गुणक की गलतियाँ कम होती हैं।"
+      },
+      "formula": "∫u dv=uv−∫v du",
+      "question": {
+        "en": "Integrate x e^x.",
+        "hi": "x e^x का समाकलन करें।"
+      },
+      "answer": {
+        "en": "e^x(x−1)+C.",
+        "hi": "e^x(x−1)+C।"
+      }
+    },
+    {
+      "title": {
+        "en": "Definite integrals and the fundamental theorem",
+        "hi": "निश्चित समाकलन और मूल प्रमेय"
+      },
+      "body": {
+        "en": "For continuous f on [a,b] and an antiderivative F, the fundamental theorem gives ∫a^b f(x)dx=F(b)−F(a). No arbitrary C remains. A definite integral is signed accumulation: regions below the x-axis contribute negatively. Geometric area requires splitting at sign changes and using absolute values. For continuous f, d/dx[∫a^x f(t)dt]=f(x); the letter t is a dummy integration variable.",
+        "hi": "निश्चित समाकलन (Definite integral) ∫a^b f(x) dx में निचली सीमा a और ऊपरी सीमा b दी जाती हैं। यदि f, [a,b] पर संतत हो और F उसका प्रतिअवकलज हो, तो कलन का मूल प्रमेय (Fundamental theorem of calculus) ∫a^b f(x) dx=F(b)−F(a) देता है। पहले ऊपरी सीमा, फिर निचली सीमा का मान घटाएँ। अनिश्चित समाकलन का स्थिरांक दोनों ओर कट जाता है, इसलिए अंतिम निश्चित उत्तर में +C नहीं जोड़ते। यह चिह्न सहित संचय (Signed accumulation) है। x-अक्ष के नीचे वाला भाग ऋणात्मक योगदान करता है। इसलिए निश्चित समाकल और ज्यामितीय क्षेत्रफल हमेशा बराबर नहीं होते। क्षेत्रफल चाहिए तो चिह्न बदलने वाले बिंदुओं पर अंतराल बाँटकर प्रत्येक भाग का धनात्मक मान लें। मूल प्रमेय का दूसरा उपयोग d/dx[∫a^x f(t) dt]=f(x) है, जब f संतत हो। यहाँ t मूक चर (Dummy variable) है और x बदलती ऊपरी सीमा। f(x) के स्थान पर गलत तरह से f(t) लिखकर उत्तर न छोड़ें।"
+      },
+      "formula": "∫a^b f(x)dx=F(b)−F(a); d/dx[∫a^x f(t)dt]=f(x)",
+      "question": {
+        "en": "Evaluate ∫0^2 x dx.",
+        "hi": "∫0^2 x dx निकालें।"
+      },
+      "answer": {
+        "en": "2.",
+        "hi": "2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Useful properties and symmetry",
+        "hi": "उपयोगी गुणधर्म और सममिति"
+      },
+      "body": {
+        "en": "Reversing limits changes sign; splitting an interval adds integrals. Reflection gives ∫a^b f(x)dx=∫a^b f(a+b−x)dx when defined. On [−a,a], an odd continuous function integrates to 0, while an even one gives twice the integral on [0,a]. Odd cancellation concerns signed integrals, not zero geometric area. Verify parity by calculating f(−x), not by judging the appearance of a graph.",
+        "hi": "निश्चित समाकलों के गुणधर्म कई लंबे प्रश्न सरल करते हैं। सीमाएँ उलटने पर चिह्न बदलता है: ∫a^b f=−∫b^a f। समान सीमाओं का समाकल 0 है। बीच के किसी c पर अंतराल बाँटने से ∫a^b f=∫a^c f+∫c^b f मिलता है, जब समाकल मौजूद हों। प्रतिस्थापन x=a+b−t से परावर्तन गुण ∫a^b f(x)dx=∫a^b f(a+b−x)dx मिलता है। सममित अंतराल [−a,a] पर सम फलन (Even function), जिसमें f(−x)=f(x), का समाकल 2∫0^a f(x)dx है। विषम फलन (Odd function), जिसमें f(−x)=−f(x), का समाकल 0 है, यदि वह समाकलनीय हो। उदाहरण x³ का [−1,1] पर समाकल 0 है; दोनों ओर के क्षेत्रफल फिर भी धनात्मक हैं और उनका योग 1/2 है। सममिति का प्रयोग करने से पहले बीजगणित से f(−x) जाँचें। केवल ग्राफ की बनावट या फलन में x दिखने से सम या विषम तय नहीं होता। हर में शून्य या प्रांत का अंतराल टूटना हो तो सामान्य सूत्र बिना जाँच लागू न करें।"
+      },
+      "formula": "∫(−a)^a odd f=0; ∫(−a)^a even f=2∫0^a f",
+      "question": {
+        "en": "Evaluate ∫−1^1 x³ dx.",
+        "hi": "∫−1^1 x³ dx निकालें।"
+      },
+      "answer": {
+        "en": "0, because x³ is odd.",
+        "hi": "0, क्योंकि x³ विषम है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Choosing a method and verifying the result",
+        "hi": "विधि का चुनाव और परिणाम की जाँच"
+      },
+      "body": {
+        "en": "Before integrating, simplify algebraically, inspect the domain, and look for a standard form. Use substitution for an inner derivative, partial fractions for a factorable rational function, and parts when differentiating one factor simplifies a product. For definite integrals inspect symmetry before calculation. Differentiation verifies an indefinite answer; bounds and units verify interpretation. Do not cancel across a singularity or apply the elementary fundamental theorem to a discontinuous integrand without additional analysis.",
+        "hi": "समाकलन की विधि चुनने का कोई 1 नियम हर प्रश्न पर लागू नहीं होता, पर एक क्रम उपयोगी है। पहले बीजगणित सरल करें: बहुपद विभाजन, त्रिकोणमितीय पहचान या स्थिर गुणक अलग करने से मानक रूप मिल सकता है। फिर प्रांत और संभावित अवकल गुणक देखें। भीतर का अवकलज साथ हो तो प्रतिस्थापन, उचित परिमेय भिन्न हो तो आंशिक भिन्न, और सरल होता गुणनफल हो तो खंडशः विधि सोचें। निश्चित सीमाएँ सममित हों तो पहले सम या विषम प्रकृति जाँचें। उत्तर मिलने पर उसका अवकलन करके मूल समाकल्य वापस प्राप्त करें। निश्चित उत्तर में सीमा का क्रम, अनुमानित चिह्न और मात्रक भी जाँचें। उदाहरण f≥0 और a<b हो तो समाकल ऋणात्मक नहीं होना चाहिए। हर में 0 वाला बिंदु अंतराल के भीतर हो, तो सामान्य संतत फलन वाला मूल प्रमेय सीधे लागू नहीं किया जा सकता। ∫−1^1 1/x dx को केवल ln|x| की सीमाएँ रखकर 0 कहना गलत है। दोनों ओर अलग अनंत व्यवहार आता है। ऐसी सावधानी सूत्र याद करने से आगे सही गणितीय अर्थ तक पहुँचाती है। समाकलन का चिह्न और अनुमानित आकार साथ जाँचना अंतिम उत्तर में हुई साधारण अंकगणित की भूल भी पकड़ सकता है।"
+      },
+      "formula": "Check: d[proposed antiderivative]/dx = original integrand",
+      "question": {
+        "en": "Can ∫−1^1 1/x dx be evaluated by simply substituting ln|x| at the endpoints?",
+        "hi": "क्या ∫−1^1 1/x dx में केवल ln|x| पर सिरे रख सकते हैं?"
+      },
+      "answer": {
+        "en": "No; the integrand is undefined at 0, and the ordinary improper integral does not converge.",
+        "hi": "नहीं; समाकल्य 0 पर अपरिभाषित है और सामान्य अनुचित समाकल अभिसरित नहीं होता।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Integrate 3x²−4 sin x.",
+        "hi": "3x²−4 sin x का समाकलन करें।"
+      },
+      "steps": [
+        {
+          "en": "Use linearity to integrate each term.",
+          "hi": "रैखिकता से प्रत्येक पद का समाकलन करें।"
+        },
+        {
+          "en": "∫3x² dx=x³; ∫−4 sin x dx=4 cos x.",
+          "hi": "∫3x² dx=x³; ∫−4 sin x dx=4 cos x।"
+        },
+        {
+          "en": "Differentiate x³+4 cos x to check.",
+          "hi": "जाँच हेतु x³+4 cos x का अवकलन करें।"
+        }
+      ],
+      "answer": {
+        "en": "x³+4 cos x+C.",
+        "hi": "x³+4 cos x+C।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Evaluate ∫0^1 (2x+1)dx.",
+        "hi": "∫0^1 (2x+1)dx निकालें।"
+      },
+      "steps": [
+        {
+          "en": "An antiderivative is x²+x.",
+          "hi": "एक प्रतिअवकलज x²+x है।"
+        },
+        {
+          "en": "Apply upper minus lower: (1+1)−(0+0).",
+          "hi": "ऊपरी से निचला मान घटाएँ: (1+1)−(0+0)।"
+        },
+        {
+          "en": "The integrand is continuous on [0,1], so the fundamental theorem applies; the constant cancels.",
+          "hi": "समाकल्य [0,1] पर संतत है, इसलिए मूल प्रमेय लागू है; स्थिरांक अंतर में कट जाता है।"
+        }
+      ],
+      "answer": {
+        "en": "2.",
+        "hi": "2।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Integrate x/(1+x²).",
+        "hi": "x/(1+x²) का समाकलन करें।"
+      },
+      "steps": [
+        {
+          "en": "Set u=1+x², so du=2x dx.",
+          "hi": "u=1+x² लें, तब du=2x dx।"
+        },
+        {
+          "en": "The integral is (1/2)∫du/u.",
+          "hi": "समाकल (1/2)∫du/u है।"
+        },
+        {
+          "en": "u is positive for all real x.",
+          "hi": "हर वास्तविक x पर u धनात्मक है।"
+        }
+      ],
+      "answer": {
+        "en": "(1/2)ln(1+x²)+C.",
+        "hi": "(1/2)ln(1+x²)+C।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Integrate x ln x for x>0.",
+        "hi": "x>0 पर x ln x का समाकलन करें।"
+      },
+      "steps": [
+        {
+          "en": "Choose u=ln x, dv=x dx.",
+          "hi": "u=ln x, dv=x dx चुनें।"
+        },
+        {
+          "en": "Then du=dx/x and v=x²/2.",
+          "hi": "तब du=dx/x और v=x²/2।"
+        },
+        {
+          "en": "By parts: (x²/2)ln x−(1/2)∫x dx.",
+          "hi": "खंडशः: (x²/2)ln x−(1/2)∫x dx।"
+        }
+      ],
+      "answer": {
+        "en": "(x²/2)ln x−x²/4+C.",
+        "hi": "(x²/2)ln x−x²/4+C।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Evaluate ∫0^1 1/[(x+1)(x+2)]dx.",
+        "hi": "∫0^1 1/[(x+1)(x+2)]dx निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Write 1/[(x+1)(x+2)]=1/(x+1)−1/(x+2).",
+          "hi": "लिखें:1/[(x+1)(x+2)]=1/(x+1)−1/(x+2)।"
+        },
+        {
+          "en": "An antiderivative on [0,1] is ln(x+1)−ln(x+2).",
+          "hi": "[0,1] पर प्रतिअवकलज ln(x+1)−ln(x+2) है।"
+        },
+        {
+          "en": "Upper minus lower=(ln2−ln3)−(ln1−ln2).",
+          "hi": "ऊपरी से निचला=(ln2−ln3)−(ln1−ln2)।"
+        },
+        {
+          "en": "Simplify to ln4−ln3.",
+          "hi": "सरल करें: ln4−ln3।"
+        }
+      ],
+      "answer": {
+        "en": "ln(4/3).",
+        "hi": "ln(4/3)।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "An indefinite integral represents",
+        "hi": "अनिश्चित समाकलन बताता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A family of antiderivatives",
+            "hi": "प्रतिअवकलजों का परिवार"
+          },
+          "reason": {
+            "en": "Adding any constant preserves the derivative.",
+            "hi": "स्थिरांक जोड़ने से अवकलज वही रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always one number",
+            "hi": "हमेशा 1 संख्या"
+          },
+          "reason": {
+            "en": "A definite integral with bounds gives a number.",
+            "hi": "सीमा वाला निश्चित समाकल संख्या देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the original function",
+            "hi": "केवल मूल फलन"
+          },
+          "reason": {
+            "en": "Integration reverses differentiation.",
+            "hi": "समाकलन अवकलन को उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A product of derivatives",
+            "hi": "अवकलजों का गुणनफल"
+          },
+          "reason": {
+            "en": "No such definition applies.",
+            "hi": "यह परिभाषा नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "∫dx/x equals",
+        "hi": "∫dx/x है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ln|x|+C",
+            "hi": "ln|x|+C"
+          },
+          "reason": {
+            "en": "Its derivative is 1/x on intervals not containing 0.",
+            "hi": "0 रहित अंतराल पर इसका अवकलज 1/x है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x⁰/0+C",
+            "hi": "x⁰/0+C"
+          },
+          "reason": {
+            "en": "The power rule excludes n=−1.",
+            "hi": "घात नियम में n=−1 निषिद्ध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/x²+C",
+            "hi": "1/x²+C"
+          },
+          "reason": {
+            "en": "Its derivative is −2/x³.",
+            "hi": "इसका अवकलज −2/x³ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "ln x on all R",
+            "hi": "सभी R पर ln x"
+          },
+          "reason": {
+            "en": "ln x needs x>0 and a constant is required.",
+            "hi": "ln x को x>0 और स्थिरांक चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "∫sin x dx is",
+        "hi": "∫sin x dx है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−cos x+C",
+            "hi": "−cos x+C"
+          },
+          "reason": {
+            "en": "The derivative of −cos x is sin x.",
+            "hi": "−cos x का अवकलज sin x है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cos x+C",
+            "hi": "cos x+C"
+          },
+          "reason": {
+            "en": "Its derivative is −sin x.",
+            "hi": "इसका अवकलज −sin x है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−sin x+C",
+            "hi": "−sin x+C"
+          },
+          "reason": {
+            "en": "Its derivative is −cos x.",
+            "hi": "इसका अवकलज −cos x है।"
+          }
+        },
+        {
+          "text": {
+            "en": "tan x+C",
+            "hi": "tan x+C"
+          },
+          "reason": {
+            "en": "Its derivative is sec²x.",
+            "hi": "इसका अवकलज sec²x है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For ∫2x cos(x²)dx, a useful substitution is",
+        "hi": "∫2x cos(x²)dx में उपयोगी प्रतिस्थापन है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "u=x², du=2x dx",
+            "hi": "u=x², du=2x dx"
+          },
+          "reason": {
+            "en": "It replaces both the inner expression and its differential.",
+            "hi": "यह भीतर का व्यंजक और पूरा अवकल बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "u=2x, du=x² dx",
+            "hi": "u=2x, du=x² dx"
+          },
+          "reason": {
+            "en": "The stated differential is incorrect.",
+            "hi": "लिखा अवकल गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "u=x², du=dx",
+            "hi": "u=x², du=dx"
+          },
+          "reason": {
+            "en": "The chain-rule factor 2x is missing.",
+            "hi": "श्रृंखला गुणक 2x छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "u=cos x, du=2x dx",
+            "hi": "u=cos x, du=2x dx"
+          },
+          "reason": {
+            "en": "d(cos x)=−sin x dx.",
+            "hi": "d(cos x)=−sin x dx।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The integration by parts formula is",
+        "hi": "खंडशः समाकलन का सूत्र है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "∫u dv=uv−∫v du",
+            "hi": "∫u dv=uv−∫v du"
+          },
+          "reason": {
+            "en": "It follows by integrating d(uv)=u dv+v du.",
+            "hi": "यह d(uv)=u dv+v du के समाकल से मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "∫u dv=uv+∫v du",
+            "hi": "∫u dv=uv+∫v du"
+          },
+          "reason": {
+            "en": "The rearranged term has a minus sign.",
+            "hi": "दूसरी ओर गया पद ऋणात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "∫uv dx=(∫u dx)(∫v dx)",
+            "hi": "∫uv dx=(∫u dx)(∫v dx)"
+          },
+          "reason": {
+            "en": "A product does not split into separate integrals.",
+            "hi": "गुणनफल अलग समाकलों में नहीं टूटता।"
+          }
+        },
+        {
+          "text": {
+            "en": "∫u dv=du/dv",
+            "hi": "∫u dv=du/dv"
+          },
+          "reason": {
+            "en": "An integral is not a derivative quotient.",
+            "hi": "समाकल अवकल भागफल नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "∫0^2 x dx equals",
+        "hi": "∫0^2 x dx है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "Evaluate x²/2 at 2 and 0.",
+            "hi": "2 और 0 पर x²/2 का अंतर लें।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "The antiderivative includes division by 2.",
+            "hi": "प्रतिअवकलज में 2 से भाग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The positive integrand gives positive accumulation.",
+            "hi": "धनात्मक समाकल्य धनात्मक संचय देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2+C",
+            "hi": "2+C"
+          },
+          "reason": {
+            "en": "No arbitrary constant remains in a definite integral.",
+            "hi": "निश्चित समाकल में मनमाना स्थिरांक नहीं रहता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For an odd continuous f on [−a,a], its integral is",
+        "hi": "[−a,a] पर विषम संतत f का समाकल है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Opposite signed contributions cancel.",
+            "hi": "विपरीत चिह्न वाले योगदान कटते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always positive",
+            "hi": "हमेशा धनात्मक"
+          },
+          "reason": {
+            "en": "The two sides cancel.",
+            "hi": "दोनों ओर के योगदान कटते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2∫0^a f",
+            "hi": "2∫0^a f"
+          },
+          "reason": {
+            "en": "That formula applies to even functions.",
+            "hi": "यह सम फलन का सूत्र है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Equal to geometric area",
+            "hi": "ज्यामितीय क्षेत्रफल के बराबर"
+          },
+          "reason": {
+            "en": "Signed cancellation does not cancel geometric area.",
+            "hi": "चिह्न कटने से ज्यामितीय क्षेत्रफल नहीं मिटता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Reversing definite-integral limits",
+        "hi": "निश्चित समाकल की सीमाएँ उलटने पर"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Changes the sign",
+            "hi": "चिह्न बदलता है"
+          },
+          "reason": {
+            "en": "∫a^b f=−∫b^a f.",
+            "hi": "∫a^b f=−∫b^a f।"
+          }
+        },
+        {
+          "text": {
+            "en": "Leaves every integral unchanged",
+            "hi": "हर समाकल वही रहता है"
+          },
+          "reason": {
+            "en": "Only a zero integral remains numerically equal.",
+            "hi": "केवल शून्य समाकल संख्यात्मक रूप से वही रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always makes the answer 0",
+            "hi": "उत्तर हमेशा 0 होता है"
+          },
+          "reason": {
+            "en": "Reversal changes orientation, not the whole magnitude.",
+            "hi": "उलटने से दिशा बदलती है, पूरा परिमाण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Adds C",
+            "hi": "C जोड़ता है"
+          },
+          "reason": {
+            "en": "Definite integrals have no arbitrary constant.",
+            "hi": "निश्चित समाकल में मनमाना स्थिरांक नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Before partial fractions, an improper rational expression needs",
+        "hi": "आंशिक भिन्न से पहले अनुचित परिमेय व्यंजक में चाहिए"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Polynomial division",
+            "hi": "बहुपद भाग"
+          },
+          "reason": {
+            "en": "Reduce it to a polynomial plus a proper rational part.",
+            "hi": "इसे बहुपद और उचित भिन्न में बदलें।"
+          }
+        },
+        {
+          "text": {
+            "en": "Squaring the denominator",
+            "hi": "हर का वर्ग"
+          },
+          "reason": {
+            "en": "That changes the function.",
+            "hi": "इससे फलन बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Dropping the numerator",
+            "hi": "अंश हटाना"
+          },
+          "reason": {
+            "en": "That changes the function.",
+            "hi": "इससे फलन बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Replacing dx by 1",
+            "hi": "dx को 1 करना"
+          },
+          "reason": {
+            "en": "The integration variable remains part of the notation.",
+            "hi": "समाकल चर संकेत का हिस्सा रहता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For continuous f, d/dx[∫a^x f(t)dt] equals",
+        "hi": "संतत f हेतु d/dx[∫a^x f(t)dt] है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "f(x)",
+            "hi": "f(x)"
+          },
+          "reason": {
+            "en": "The fundamental theorem differentiates accumulation to the integrand at the upper limit.",
+            "hi": "मूल प्रमेय से संचय का अवकलज ऊपरी सीमा पर समाकल्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "f(a)",
+            "hi": "f(a)"
+          },
+          "reason": {
+            "en": "a is a fixed lower limit.",
+            "hi": "a स्थिर निचली सीमा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "f′(x)",
+            "hi": "f′(x)"
+          },
+          "reason": {
+            "en": "One differentiation undoes the integration.",
+            "hi": "1 अवकलन समाकलन को उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The upper limit changes with x.",
+            "hi": "ऊपरी सीमा x के साथ बदलती है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Integrate 5x⁴.",
+        "hi": "5x⁴ का समाकलन करें।"
+      },
+      "answer": {
+        "en": "x⁵+C, checked by differentiating.",
+        "hi": "x⁵+C; अवकलन करके जाँचें।"
+      }
+    },
+    {
+      "question": {
+        "en": "Integrate 1/(1+x²).",
+        "hi": "1/(1+x²) का समाकलन करें।"
+      },
+      "answer": {
+        "en": "arctan x+C on R.",
+        "hi": "R पर arctan x+C।"
+      }
+    },
+    {
+      "question": {
+        "en": "Evaluate ∫0^1 2x/(1+x²)dx by substitution.",
+        "hi": "प्रतिस्थापन से ∫0^1 2x/(1+x²)dx निकालें।"
+      },
+      "answer": {
+        "en": "u=1+x² changes limits 1 to 2; ∫1^2 du/u=ln2.",
+        "hi": "u=1+x² से सीमाएँ 1 और 2; ∫1^2 du/u=ln2।"
+      }
+    },
+    {
+      "question": {
+        "en": "Integrate ln x for x>0.",
+        "hi": "x>0 पर ln x का समाकलन करें।"
+      },
+      "answer": {
+        "en": "Use parts with u=ln x,dv=dx: x ln x−x+C.",
+        "hi": "u=ln x,dv=dx से खंडशः विधि: x ln x−x+C।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish ∫−1^1 x dx from its geometric area.",
+        "hi": "∫−1^1 x dx और उसके ज्यामितीय क्षेत्रफल में अंतर बताएँ।"
+      },
+      "answer": {
+        "en": "The signed integral is 0; the total area is 2∫0^1 x dx=1 square unit.",
+        "hi": "चिह्न सहित समाकल 0; कुल क्षेत्रफल 2∫0^1 x dx=1 वर्ग इकाई।"
+      }
+    },
+    {
+      "question": {
+        "en": "Evaluate ∫0^1 (x²+1)dx.",
+        "hi": "∫0^1 (x²+1)dx निकालें।"
+      },
+      "answer": {
+        "en": "[x³/3+x]0^1=1/3+1=4/3.",
+        "hi": "[x³/3+x]0^1=1/3+1=4/3।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Keep +C in indefinite answers, ln|x| for 1/x, correct transformed limits and the minus sign in parts. Signed integral is not always geometric area.",
+    "hi": "अनिश्चित उत्तर में +C, 1/x में ln|x|, बदली सीमाएँ तथा खंडशः विधि का ऋण चिह्न रखें। चिह्न सहित समाकल हमेशा ज्यामितीय क्षेत्रफल नहीं।"
+  },
+  "revision": [
+    {
+      "en": "Antiderivatives differ by a constant.",
+      "hi": "प्रतिअवकलज स्थिरांक से अलग होते हैं।"
+    },
+    {
+      "en": "The power rule excludes exponent −1.",
+      "hi": "घात नियम में घात −1 अलग है।"
+    },
+    {
+      "en": "Substitution reverses the chain rule.",
+      "hi": "प्रतिस्थापन श्रृंखला नियम को उलटता है।"
+    },
+    {
+      "en": "Parts reverses the product rule.",
+      "hi": "खंडशः विधि गुणनफल नियम को उलटती है।"
+    },
+    {
+      "en": "Definite integrals use upper minus lower and no +C.",
+      "hi": "निश्चित समाकल में ऊपरी से निचला मान घटाएँ; +C नहीं।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Antiderivative → standard forms → substitution/partial fractions/parts → fundamental theorem → symmetry → signed accumulation.",
+    "hi": "प्रतिअवकलज → मानक रूप → प्रतिस्थापन/आंशिक भिन्न/खंडशः → मूल प्रमेय → सममिति → चिह्न सहित संचय।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics XII Chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh201.pdf"
+    },
+    {
+      "title": "UPMSP Mathematics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    }
+  ],
+  "engine": "twelve-math",
+  "scenes": []
+}

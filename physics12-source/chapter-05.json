@@ -1,0 +1,996 @@
+{
+  "number": 5,
+  "id": "physics12-05",
+  "title": {
+    "en": "Magnetism and Matter",
+    "hi": "चुंबकत्व एवं द्रव्य"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Bar magnet and closed field lines",
+        "hi": "छड़ चुंबक और बंद क्षेत्र रेखाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "A bar magnet has north and south poles, and cutting it produces smaller dipoles rather than isolated poles. Field lines close through the magnet. Filings and compasses reveal aspects of the field but do not constitute literal field tubes. Local fields add vectorially and depend on material and magnetic history.",
+          "hi": "छड़ चुंबक (Bar magnet) का स्वतंत्र लटकाया उत्तरी सिरा भौगोलिक उत्तर की ओर लगभग संकेत करता है; उसे उत्तर-ध्रुव कहते हैं। दूसरा सिरा दक्षिण-ध्रुव है। समान चुंबकीय ध्रुव प्रतिकर्षित और विपरीत ध्रुव आकर्षित होते हैं। छड़ को 2 भागों में तोड़ने पर अलग अकेले उत्तर और दक्षिण ध्रुव नहीं मिलते, बल्कि प्रत्येक टुकड़ा फिर दोनों ध्रुवों वाला छोटा चुंबक बनता है। चुंबकीय क्षेत्र रेखाएँ बाहर उत्तर से दक्षिण और चुंबक के भीतर दक्षिण से उत्तर होकर बंद चक्र बनाती हैं। उन्हें केवल बाहरी दिशा देखकर शुरू और समाप्त मान लेना सही नहीं। लोहे का बुरादा रेखा पैटर्न का संकेत देता है, पर बुरादे के टुकड़े मूल क्षेत्र की वास्तविक अदृश्य नलिकाएँ नहीं हैं। स्थानीय सुई जिस दिशा में टिकती है वह आसपास के सभी क्षेत्रों का परिणामी है। किसी क्षेत्र के बिंदु पर अलग स्रोतों का B सदिश योग से जोड़ते हैं। चुंबक का आकार, पदार्थ और पूर्व चुंबकीय इतिहास उसके क्षेत्र को प्रभावित कर सकते हैं; समान आकृति की 2 छड़ें आवश्यक रूप से समान शक्ति की नहीं होंगी।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What poles result when a bar magnet is cut in half?",
+          "hi": "छड़ चुंबक को आधा काटने पर कितने ध्रुव मिलेंगे?"
+        },
+        "answer": {
+          "en": "Each half has both north and south poles.",
+          "hi": "हर आधे में उत्तर और दक्षिण, कुल 2 नए द्विध्रुव।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "A magnet as a dipole",
+        "hi": "चुंबक का द्विध्रुव निरूपण"
+      },
+      "paragraphs": [
+        {
+          "en": "A small magnet’s distant field is dipolar. Moment points from south to north inside the bar. Far axial and equatorial magnitudes scale as 2m/r³ and m/r³ respectively, with opposite relative directions to m. These approximations require distance large compared with magnet size and differ from the long-wire field law.",
+          "hi": "छोटी छड़ का दूरस्थ चुंबकीय प्रभाव चुंबकीय द्विध्रुव (Magnetic dipole) से निरूपित कर सकते हैं। चुंबकीय आघूर्ण m की दिशा छड़ के भीतर दक्षिण से उत्तर की ओर मानी जाती है। इसका मात्रक A m² है। धारा लूप से तुलना में m=IA या NIA मिलता है; यह तुलना चुंबक के द्विध्रुव क्षेत्र को समझाती है, ऐसा दावा नहीं करती कि उसके सिरों पर वास्तविक पृथक चुंबकीय आवेश हैं। छड़ के आकार से बहुत दूर r पर अक्षीय क्षेत्र का परिमाण लगभग (μ0/4π)2m/r³ और निरक्षीय क्षेत्र का (μ0/4π)m/r³ है। अक्षीय क्षेत्र m की दिशा में और निरक्षीय क्षेत्र उसके विपरीत होता है। समान बड़ी दूरी पर अक्षीय परिमाण निरक्षीय का 2 गुना है। ये लघु द्विध्रुव परिणाम हैं; छड़ की सतह के बहुत पास इन्हें सीधे न लगाएँ। दूरी की r^-3 निर्भरता को लंबे सीधे धारा तार के r^-1 क्षेत्र से न मिलाएँ। दोनों चुंबकीय क्षेत्र हैं, लेकिन स्रोत ज्यामिति और अवलोकन क्षेत्र अलग हैं। वैज्ञानिक मॉडल की उपयोगिता उसकी शर्तों को पहचानने में है, केवल दिखते सूत्र को याद रखने में नहीं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the far axial-to-equatorial field magnitude ratio at equal r?",
+          "hi": "समान दूरस्थ r पर अक्षीय और निरक्षीय B के परिमाण का अनुपात क्या है?"
+        },
+        "answer": {
+          "en": "2:1.",
+          "hi": "2:1।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Torque, energy and orientation",
+        "hi": "बल आघूर्ण, ऊर्जा और अभिविन्यास"
+      },
+      "paragraphs": [
+        {
+          "en": "Torque is mB sinθ and potential energy is −mB cosθ. Both parallel and antiparallel alignments have zero torque, but only parallel alignment is a stable minimum. Quasistatic work is ΔU. A zero energy value at 90° does not mean zero torque. Nonuniform fields can add translational force.",
+          "hi": "एकसमान बाहरी B में चुंबकीय द्विध्रुव पर आघूर्ण τ=m×B होता है; इसका परिमाण mB sinθ है। θ, चुंबकीय आघूर्ण और बाहरी क्षेत्र के बीच कोण है। समानांतर और प्रतिसमानांतर दोनों स्थितियों में आघूर्ण शून्य होता है, पर दोनों संतुलन समान प्रकार के नहीं। स्थितिज ऊर्जा U=−mB cosθ से समानांतर स्थिति न्यूनतम ऊर्जा की स्थायी संतुलन और प्रतिसमानांतर अधिकतम ऊर्जा की अस्थायी संतुलन है। थोड़ा घुमाने पर पहले में लौटाने और दूसरे में और दूर घुमाने की प्रवृत्ति होती है। बाहरी एजेंट धीरे दिशा बदलता हो तो उसका कार्य ऊर्जा परिवर्तन है। अधिकतम आघूर्ण θ=90° पर है, लेकिन ऊर्जा वहाँ शून्य है; ऊर्जा शून्य होने से आघूर्ण शून्य नहीं होता। एकसमान क्षेत्र में कुल बल शून्य हो सकता है। असमान क्षेत्र में चुंबक पर कुल बल भी लगता है, इसलिए वास्तविक लोहे के टुकड़े का पास के चुंबक की ओर खिंचना केवल आघूर्ण से नहीं समझाया जा सकता। घर्षण और अवमंदन वास्तविक सुई को अंततः स्थिर करते हैं; आदर्श मॉडल में ऊर्जा संरक्षण अलग व्यवहार दे सकता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is the zero-torque antiparallel state unstable?",
+          "hi": "θ=180° पर शून्य आघूर्ण होने के बावजूद संतुलन अस्थायी क्यों है?"
+        },
+        "answer": {
+          "en": "It is an energy maximum; a small disturbance tends to grow.",
+          "hi": "यह ऊर्जा का अधिकतम है; छोटा विचलन वापस लाने के बजाय बढ़ता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Gauss law for magnetism",
+        "hi": "चुंबकत्व का गाउस नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "Net magnetic flux through every closed surface is zero, while local B may be nonzero. Open-surface flux can be BA cosθ and need not vanish. Contrast with electric Gauss law, whose closed flux may be nonzero when net electric charge is enclosed. Zero integral flux is not zero local field.",
+          "hi": "चुंबकत्व का गाउस नियम (Gauss law for magnetism) किसी भी बंद पृष्ठ पर कुल चुंबकीय फ्लक्स शून्य बताता है: ∮B·dA=0। जितनी क्षेत्र रेखाएँ भीतर जाती हैं उतनी ही कुल अर्थ में बाहर आती हैं। यह चुंबकीय एकध्रुव के न मिलने और क्षेत्र रेखाओं के बंद स्वरूप से संगत है। इसका अर्थ यह नहीं कि चुने पृष्ठ के हर बिंदु पर B शून्य है। एकसमान चुंबकीय क्षेत्र से घन को रखें तो एक ओर प्रवेश और दूसरी ओर निर्गम फ्लक्स बराबर विपरीत होंगे। खुले पृष्ठ, जैसे किसी कुंडली के क्षेत्रफल, से चुंबकीय फ्लक्स शून्य होना आवश्यक नहीं; वहाँ Φ=BA cosθ हो सकता है। बंद और खुले पृष्ठ का अंतर पहले पहचानें। विद्युत गाउस नियम में बंद फ्लक्स qenc/ε0 है, जो भीतर शुद्ध विद्युत आवेश होने पर अशून्य हो सकता है। दोनों नियमों की तुलना से विद्युत आवेश और चुंबकीय ध्रुव के वर्णन में भेद समझ आता है। 'कुल शून्य' एक समाकलित कथन है, स्थानीय क्षेत्र को मिटा देने वाला कथन नहीं। यह सावधानी विद्युत और चुंबकीय दोनों फ्लक्स प्रश्नों में जरूरी है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the total magnetic flux through a closed cube in uniform B?",
+          "hi": "एकसमान B में बंद घन का कुल चुंबकीय फ्लक्स क्या है?"
+        },
+        "answer": {
+          "en": "Zero, despite a nonzero field inside.",
+          "hi": "0, चाहे घन के भीतर B अशून्य हो।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Magnetisation, H and susceptibility",
+        "hi": "चुंबकन, H और सुग्राहिता"
+      },
+      "paragraphs": [
+        {
+          "en": "M is magnetic moment per volume, measured in A/m. B=μ0(H+M). A linear isotropic material has M=χmH and μr=1+χm. Susceptibility is dimensionless; B is measured in tesla. Ferromagnets do not generally obey a single history-independent linear susceptibility over all fields.",
+          "hi": "किसी पदार्थ का चुंबकन (Magnetisation) M प्रति इकाई आयतन कुल चुंबकीय आघूर्ण है। इसकी इकाई A/m है। बाहरी प्रभाव से पदार्थ के परमाणवीय या सूक्ष्म चुंबकीय आघूर्णों का परिणामी बदल सकता है। सहायक क्षेत्र H के लिए सरल संबंध B=μ0(H+M) लिखते हैं। रैखिक समदैशिक पदार्थ में M=χmH है, जहाँ चुंबकीय सुग्राहिता (Magnetic susceptibility) χm विमाहीन है। इसलिए B=μ0(1+χm)H=μH तथा सापेक्ष पारगम्यता μr=1+χm मिलती है। यह समानुपाती रैखिक संबंध हर पदार्थ और हर क्षेत्र के लिए नहीं; लौहचुंबकीय पदार्थों में इतिहास और संतृप्ति महत्वपूर्ण हो सकते हैं। H और M का मात्रक समान होने पर भी उनका भौतिक अर्थ अलग है। B का मात्रक T है, इसलिए तीनों के संख्यात्मक मान समान मान लेना गलत है। किसी सामग्री की छोटी ऋणात्मक χm उसके चुंबकन के H के विपरीत होने का संकेत है, जबकि धनात्मक χm समान दिशा का। मानों की तुलना करते समय SI परंपरा रखें; अलग मात्रक प्रणालियों के सूत्रों में संख्यात्मक गुणक बदल सकते हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "For χm=0.002 in the linear SI model, find μr.",
+          "hi": "χm=0.002 हो तो रैखिक SI मॉडल में μr क्या है?"
+        },
+        "answer": {
+          "en": "1.002.",
+          "hi": "1.002।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Diamagnetic and paramagnetic response",
+        "hi": "प्रतिचुंबकीय और अनुचुंबकीय प्रतिक्रिया"
+      },
+      "paragraphs": [
+        {
+          "en": "Diamagnets develop weak opposing magnetisation and have negative susceptibility. Paramagnets show weak parallel response and positive susceptibility. In nonuniform fields diamagnets favour weaker-field regions and paramagnets stronger ones. Thermal disorder reduces many paramagnetic responses; Curie’s inverse-temperature law has limited applicability.",
+          "hi": "प्रतिचुंबकीय (Diamagnetic) पदार्थ में लगाए क्षेत्र के विरोध में छोटा प्रेरित चुंबकन बनता है। इसकी χm छोटी ऋणात्मक और μr,1 से थोड़ा कम होती है। असमान क्षेत्र में ऐसा पदार्थ अपेक्षाकृत कमजोर क्षेत्र की ओर खिंचने की प्रवृत्ति दिखाता है। बिस्मथ, ताँबा और जल सामान्य उदाहरण हैं। अनुचुंबकीय (Paramagnetic) पदार्थ में स्थायी सूक्ष्म आघूर्णों का बाहरी क्षेत्र में आंशिक अभिविन्यास छोटा समानांतर चुंबकन देता है; χm छोटी धनात्मक और μr,1 से थोड़ा अधिक होती है। एल्युमिनियम और ऑक्सीजन इसके उदाहरण हैं। ऊष्मीय अनियमितता अभिविन्यास का विरोध करती है, इसलिए उपयुक्त परिस्थितियों में अनुचुंबकीय सुग्राहिता ताप बढ़ने पर घटती है। क्यूरी नियम χm=C/T इसी सीमित सामान्य प्रवृत्ति का मॉडल है, सार्वत्रिक हर पदार्थ का नियम नहीं। प्रतिचुंबकत्व में प्रेरित प्रतिक्रिया और अनुचुंबकत्व में पहले से मौजूद सूक्ष्म आघूर्णों के अभिविन्यास का अंतर ध्यान रखें। केवल 'आकर्षण' देखकर लोहे जैसी प्रबल प्रतिक्रिया और कमजोर अनुचुंबकत्व को एक वर्ग नहीं मानें; प्रभाव की शक्ति और उसका क्षेत्र हटने पर व्यवहार भी महत्वपूर्ण हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does a small negative susceptibility indicate?",
+          "hi": "छोटी ऋणात्मक χm किस प्रकार के व्यवहार का संकेत है?"
+        },
+        "answer": {
+          "en": "Diamagnetism.",
+          "hi": "प्रतिचुंबकीय व्यवहार।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ferromagnetism and domains",
+        "hi": "लौहचुंबकत्व और डोमेन"
+      },
+      "paragraphs": [
+        {
+          "en": "Ferromagnetism is collective ordering. Domains can be strongly magnetised internally while cancelling in an unmagnetised specimen. Applied field changes domain configuration and can produce saturation. Above a characteristic Curie temperature, ferromagnetic order is lost and paramagnetic behaviour can occur. A single constant susceptibility is generally inadequate.",
+          "hi": "लौहचुंबकीय (Ferromagnetic) पदार्थों में पड़ोसी सूक्ष्म आघूर्णों के बीच अंतःक्रिया मजबूत सामूहिक अभिविन्यास देती है। लोहे, कोबाल्ट और निकेल जैसे पदार्थों में चुंबकीय डोमेन (Domain) उपयोगी वर्णन है। हर डोमेन के भीतर परिणामी आघूर्ण बड़ा हो सकता है, पर बिना बाहरी चुंबकन की नमूना अवस्था में अलग डोमेनों की दिशाएँ कुल मिलाकर लगभग रद्द हो सकती हैं। बाहरी क्षेत्र डोमेन दीवारों की गति और आघूर्ण दिशाओं के बदलने से बड़ा कुल चुंबकन देता है। इसलिए 'अचुंबकित लोहे में कोई सूक्ष्म चुंबकीय आघूर्ण नहीं' गलत कथन है। प्रबल क्षेत्र पर आगे अभिविन्यास की सीमा आने से संतृप्ति हो सकती है। क्षेत्र हटने पर कुछ पदार्थ पर्याप्त चुंबकन बनाए रखते हैं; कुछ आसानी से बदल जाते हैं। उपयुक्त क्यूरी ताप के ऊपर लौहचुंबकीय क्रम नष्ट होकर पदार्थ अनुचुंबकीय व्यवहार दिखा सकता है। यह परिवर्तन किसी यांत्रिक टुकड़े का उत्तर और दक्षिण ध्रुव अलग कर देना नहीं है। सभी चुंबकीय पदार्थों के लिए एक ही स्थिर χm लगाना इसी कारण अनुचित है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can an unmagnetised ferromagnetic specimen have small net M?",
+          "hi": "अचुंबकित लौहचुंबकीय नमूने में कुल M छोटा होने का क्या कारण हो सकता है?"
+        },
+        "answer": {
+          "en": "Different domain orientations approximately cancel.",
+          "hi": "अलग डोमेनों की दिशाओं का लगभग रद्द होना।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Comparing materials and model limits",
+        "hi": "पदार्थ तुलना और मॉडल की सीमाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Material choice depends on retaining or easily reversing magnetisation, not merely strong attraction. Detailed hysteresis or Earth-field elements, if taught beyond the current core, should be labelled enrichment. Symbolic arrows represent sampled moments, not literal atom counts or a complete microscopic simulation. State field and temperature conditions in comparisons.",
+          "hi": "चुंबकीय पदार्थ चुनते समय केवल सबसे बड़ा आकर्षण देखना पर्याप्त नहीं। स्थायी चुंबक के लिए क्षेत्र हटने पर चुंबकन बनाए रखने की क्षमता चाहिए, जबकि ऐसे कोर जिनका चुंबकन बार-बार बदलना है, उनमें आसानी से चुंबकित और विचुंबकित होना उपयोगी है। इस गुणात्मक विचार को पदार्थ के व्यवहार, ताप और बाहरी क्षेत्र के इतिहास से जोड़कर समझें। विस्तृत हिस्टैरिसिस वक्र या पृथ्वी के चुंबकीय तत्व यदि विद्यालय अतिरिक्त रूप में पढ़ाए तो उन्हें वर्तमान निर्धारित मूल सूची से अलग अतिरिक्त समझ के रूप में लें। इस अध्याय का मुख्य ढाँचा छड़ चुंबक, द्विध्रुव, शून्य बंद चुंबकीय फ्लक्स और पदार्थों की प्रतिचुंबकीय, अनुचुंबकीय तथा लौहचुंबकीय तुलना है। किसी दृश्य में छोटे तीर सूक्ष्म आघूर्ण का सांकेतिक नमूना हैं; उनकी संख्या वास्तविक परमाणु संख्या नहीं और उनका एक साथ घूमना पूर्ण सूक्ष्म गतिकी नहीं। प्रयोग में चुंबकीय पदार्थ को केवल क्षेत्र के पास लाकर देखना उपयोगी प्रारंभ है, पर वर्गीकरण के लिए क्षेत्र की असमानता और ताप जैसी शर्तें भी बतानी चाहिए। वैज्ञानिक निष्कर्ष प्रेक्षण और उपयुक्त मॉडल दोनों से बनता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why do a reversing-field core and permanent magnet require different properties?",
+          "hi": "आसानी से उलटते चुंबकन वाले कोर और स्थायी चुंबक में एक ही गुण क्यों जरूरी नहीं?"
+        },
+        "answer": {
+          "en": "The first favours easy reversal, whereas the second favours retained magnetisation.",
+          "hi": "पहले में आसान परिवर्तन, दूसरे में क्षेत्र हटने पर चुंबकन का टिकना महत्वपूर्ण है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Bax≈(μ0/4π)(2m/r³); Beq≈(μ0/4π)(m/r³)",
+      "meaning": {
+        "en": "Far-field dipole magnitudes; r much larger than magnet size.",
+        "hi": "दूरस्थ द्विध्रुव क्षेत्र परिमाण; r चुंबक आकार से बहुत बड़ा।"
+      },
+      "units": {
+        "en": "B: T; m: A m²",
+        "hi": "B: T; m: A m²"
+      }
+    },
+    {
+      "expression": "τ=mB sinθ; U=−mB cosθ",
+      "meaning": {
+        "en": "Torque magnitude and dipole potential energy.",
+        "hi": "बल आघूर्ण परिमाण और द्विध्रुव स्थितिज ऊर्जा।"
+      },
+      "units": {
+        "en": "τ: N m; U: J",
+        "hi": "τ: N m; U: J"
+      }
+    },
+    {
+      "expression": "∮B·dA=0",
+      "meaning": {
+        "en": "Net flux through every closed surface.",
+        "hi": "हर बंद पृष्ठ का कुल चुंबकीय फ्लक्स।"
+      },
+      "units": {
+        "en": "Wb",
+        "hi": "Wb"
+      }
+    },
+    {
+      "expression": "M=χmH; B=μ0(H+M); μr=1+χm",
+      "meaning": {
+        "en": "Linear isotropic material relations where applicable.",
+        "hi": "लागू सीमा में रैखिक समदैशिक पदार्थ संबंध।"
+      },
+      "units": {
+        "en": "M,H: A/m; χm,μr dimensionless",
+        "hi": "M,H: A/m; χm,μr dimensionless"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A magnet has moment 0.20 A m² in 0.50 T at 90°. Find torque.",
+        "hi": "0.20 A m² चुंबकीय आघूर्ण पर 0.50 T क्षेत्र 90° पर है। आघूर्ण निकालें।"
+      },
+      "given": {
+        "en": "m=0.20 A m²;B=0.50 T;θ=90°.",
+        "hi": "m=0.20 A m²;B=0.50 T;θ=90°।"
+      },
+      "find": {
+        "en": "τ.",
+        "hi": "τ।"
+      },
+      "formula": {
+        "en": "τ=mB sinθ",
+        "hi": "τ=mB sinθ"
+      },
+      "steps": [
+        {
+          "en": "τ=0.20×0.50=0.10 N m.",
+          "hi": "τ=0.20×0.50=0.10 N m।"
+        }
+      ],
+      "answer": {
+        "en": "0.10 N m.",
+        "hi": "0.10 N m।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find relative permeability for χm=−2×10^-5.",
+        "hi": "χm=−2×10^-5 के लिए सापेक्ष पारगम्यता निकालें।"
+      },
+      "given": {
+        "en": "Linear isotropic SI relation applies.",
+        "hi": "रैखिक समदैशिक SI संबंध लागू।"
+      },
+      "find": {
+        "en": "μr and response type.",
+        "hi": "μr और प्रतिक्रिया प्रकार।"
+      },
+      "formula": {
+        "en": "μr=1+χm",
+        "hi": "μr=1+χm"
+      },
+      "steps": [
+        {
+          "en": "μr=1−0.00002=0.99998.",
+          "hi": "μr=1−0.00002=0.99998।"
+        }
+      ],
+      "answer": {
+        "en": "0.99998; diamagnetic.",
+        "hi": "0.99998; प्रतिचुंबकीय।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A dipole’s far equatorial field is 6 μT. Find axial magnitude at the same r.",
+        "hi": "द्विध्रुव का दूरस्थ निरक्षीय क्षेत्र 6 μT है। उसी r पर अक्षीय परिमाण निकालें।"
+      },
+      "given": {
+        "en": "Same large distance r; small-dipole approximation.",
+        "hi": "समान बड़ी दूरी r; लघु द्विध्रुव सन्निकटन।"
+      },
+      "find": {
+        "en": "Bax.",
+        "hi": "Bax।"
+      },
+      "formula": {
+        "en": "Bax=2Beq",
+        "hi": "Bax=2Beq"
+      },
+      "steps": [
+        {
+          "en": "Bax=2×6=12 μT.",
+          "hi": "Bax=2×6=12 μT।"
+        }
+      ],
+      "answer": {
+        "en": "12 μT; the directions relative to m differ.",
+        "hi": "12 μT; m के सापेक्ष दिशाएँ अलग हैं।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "For H=1000 A/m and χm=0.002, find M.",
+        "hi": "H=1000 A/m और χm=0.002 पर M निकालें।"
+      },
+      "given": {
+        "en": "H=1000 A/m;χm=0.002;linear material.",
+        "hi": "H=1000 A/m;χm=0.002;रैखिक पदार्थ।"
+      },
+      "find": {
+        "en": "Magnetisation M.",
+        "hi": "चुंबकन M।"
+      },
+      "formula": {
+        "en": "M=χmH",
+        "hi": "M=χmH"
+      },
+      "steps": [
+        {
+          "en": "M=0.002×1000=2 A/m.",
+          "hi": "M=0.002×1000=2 A/m।"
+        }
+      ],
+      "answer": {
+        "en": "2 A/m parallel to H.",
+        "hi": "H के समानांतर 2 A/m।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find quasistatic work to turn m=0.50 A m² from parallel to antiparallel in B=0.20 T.",
+        "hi": "m=0.50 A m² को B=0.20 T में समानांतर से प्रतिसमानांतर धीरे घुमाने का बाहरी कार्य निकालें।"
+      },
+      "given": {
+        "en": "m=0.50 A m²;B=0.20 T;θi=0°,θf=180°.",
+        "hi": "m=0.50 A m²;B=0.20 T;θi=0°,θf=180°।"
+      },
+      "find": {
+        "en": "External work.",
+        "hi": "बाहरी कार्य।"
+      },
+      "formula": {
+        "en": "Wext=ΔU=−mB cosθf+mB cosθi",
+        "hi": "Wext=ΔU=−mB cosθf+mB cosθi"
+      },
+      "steps": [
+        {
+          "en": "Ui=−0.10 J;Uf=+0.10 J.",
+          "hi": "Ui=−0.10 J;Uf=+0.10 J।"
+        },
+        {
+          "en": "Wext=0.10−(−0.10)=0.20 J.",
+          "hi": "Wext=0.10−(−0.10)=0.20 J।"
+        }
+      ],
+      "answer": {
+        "en": "+0.20 J.",
+        "hi": "+0.20 J।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Cutting a bar magnet gives",
+        "hi": "छड़ चुंबक काटने पर मिलता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Smaller magnets with both poles",
+            "hi": "दोनों ध्रुवों वाले छोटे चुंबक"
+          },
+          "reason": {
+            "en": "Cutting does not isolate magnetic poles.",
+            "hi": "काटने से अकेले ध्रुव अलग नहीं होते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a north pole in one piece",
+            "hi": "1 टुकड़े में केवल उत्तर ध्रुव"
+          },
+          "reason": {
+            "en": "Each ordinary piece still has both poles.",
+            "hi": "हर साधारण टुकड़े में दोनों ध्रुव।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a south pole in each piece",
+            "hi": "हर टुकड़े में केवल दक्षिण ध्रुव"
+          },
+          "reason": {
+            "en": "This would require isolated poles.",
+            "hi": "इसके लिए अकेले ध्रुव चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "No magnetic field necessarily",
+            "hi": "अनिवार्यतः कोई चुंबकीय क्षेत्र नहीं"
+          },
+          "reason": {
+            "en": "Pieces can remain magnetised.",
+            "hi": "टुकड़े चुंबकित रह सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Magnetic field lines",
+        "hi": "चुंबकीय क्षेत्र रेखाएँ"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Form closed loops",
+            "hi": "बंद चक्र बनाती हैं"
+          },
+          "reason": {
+            "en": "They continue through and outside the magnet.",
+            "hi": "वे चुंबक के भीतर और बाहर जारी रहती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Start only at N and stop at S",
+            "hi": "केवल N से शुरू S पर समाप्त"
+          },
+          "reason": {
+            "en": "That ignores the internal continuation.",
+            "hi": "भीतरी निरंतरता छूटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always intersect",
+            "hi": "सदा काटती हैं"
+          },
+          "reason": {
+            "en": "A unique field direction prevents intersections.",
+            "hi": "एक क्षेत्र दिशा होने से कटान नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Are literal particle trajectories",
+            "hi": "वास्तविक कण पथ हैं"
+          },
+          "reason": {
+            "en": "They indicate field direction rather than paths.",
+            "hi": "वे क्षेत्र दिशा दिखाती हैं, पथ नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Far dipole field varies with distance as",
+        "hi": "दूरस्थ द्विध्रुव क्षेत्र दूरी पर"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "r^-3",
+            "hi": "r^-3"
+          },
+          "reason": {
+            "en": "Small-dipole far fields have inverse-cube scaling.",
+            "hi": "लघु द्विध्रुव दूरस्थ क्षेत्र व्युत्क्रम घन।"
+          }
+        },
+        {
+          "text": {
+            "en": "r^-1",
+            "hi": "r^-1"
+          },
+          "reason": {
+            "en": "That is the infinite straight-wire scaling.",
+            "hi": "यह अनंत सीधे तार की निर्भरता।"
+          }
+        },
+        {
+          "text": {
+            "en": "r²",
+            "hi": "r²"
+          },
+          "reason": {
+            "en": "A far dipole field decreases with distance.",
+            "hi": "द्विध्रुव क्षेत्र दूरी से घटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "r^0 always",
+            "hi": "सदा r^0"
+          },
+          "reason": {
+            "en": "A dipole is not a uniform field source at all distances.",
+            "hi": "द्विध्रुव हर दूरी पर एकसमान क्षेत्र स्रोत नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Stable orientation of a magnetic dipole in uniform B is",
+        "hi": "एकसमान B में चुंबकीय द्विध्रुव का स्थायी अभिविन्यास"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "m parallel to B",
+            "hi": "m,B के समानांतर"
+          },
+          "reason": {
+            "en": "U=−mB is minimum.",
+            "hi": "U=−mB न्यूनतम।"
+          }
+        },
+        {
+          "text": {
+            "en": "m antiparallel to B",
+            "hi": "m,B के प्रतिसमानांतर"
+          },
+          "reason": {
+            "en": "This is an unstable energy maximum.",
+            "hi": "यह अस्थायी ऊर्जा अधिकतम।"
+          }
+        },
+        {
+          "text": {
+            "en": "m perpendicular to B",
+            "hi": "m,B के लंबवत"
+          },
+          "reason": {
+            "en": "Torque is maximum rather than zero.",
+            "hi": "आघूर्ण शून्य नहीं, अधिकतम।"
+          }
+        },
+        {
+          "text": {
+            "en": "Independent of angle",
+            "hi": "कोण से स्वतंत्र"
+          },
+          "reason": {
+            "en": "Energy depends on cosθ.",
+            "hi": "ऊर्जा cosθ पर निर्भर।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Total B flux through any closed surface is",
+        "hi": "किसी भी बंद पृष्ठ का कुल B फ्लक्स"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "Gauss law for magnetism.",
+            "hi": "चुंबकत्व का गाउस नियम।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always BA",
+            "hi": "सदा BA"
+          },
+          "reason": {
+            "en": "BA is an open-plane special case.",
+            "hi": "BA खुला समतल विशेष स्थिति।"
+          }
+        },
+        {
+          "text": {
+            "en": "μ0 times enclosed electric charge",
+            "hi": "μ0 गुना भीतर विद्युत आवेश"
+          },
+          "reason": {
+            "en": "Electric charge belongs to electric Gauss law.",
+            "hi": "विद्युत आवेश विद्युत गाउस नियम में।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always positive",
+            "hi": "सदा धनात्मक"
+          },
+          "reason": {
+            "en": "Entering and leaving contributions cancel.",
+            "hi": "प्रवेश-निर्गम योगदान रद्द।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Susceptibility in SI is",
+        "hi": "SI में सुग्राहिता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Dimensionless",
+            "hi": "विमाहीन"
+          },
+          "reason": {
+            "en": "M and H both have A/m units.",
+            "hi": "M,H दोनों A/m में।"
+          }
+        },
+        {
+          "text": {
+            "en": "Measured in tesla",
+            "hi": "टेस्ला में"
+          },
+          "reason": {
+            "en": "Tesla measures B.",
+            "hi": "टेस्ला B का मात्रक।"
+          }
+        },
+        {
+          "text": {
+            "en": "Measured in A m²",
+            "hi": "A m² में"
+          },
+          "reason": {
+            "en": "That is magnetic moment.",
+            "hi": "यह चुंबकीय आघूर्ण।"
+          }
+        },
+        {
+          "text": {
+            "en": "Measured in joules",
+            "hi": "जूल में"
+          },
+          "reason": {
+            "en": "That is energy.",
+            "hi": "यह ऊर्जा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Diamagnetic susceptibility is typically",
+        "hi": "प्रतिचुंबकीय सुग्राहिता सामान्यतः"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Small and negative",
+            "hi": "छोटी ऋणात्मक"
+          },
+          "reason": {
+            "en": "Induced magnetisation opposes H.",
+            "hi": "प्रेरित चुंबकन H का विरोध।"
+          }
+        },
+        {
+          "text": {
+            "en": "Large and positive",
+            "hi": "बड़ी धनात्मक"
+          },
+          "reason": {
+            "en": "That suggests a different magnetic response.",
+            "hi": "यह भिन्न चुंबकीय प्रतिक्रिया।"
+          }
+        },
+        {
+          "text": {
+            "en": "Exactly infinite",
+            "hi": "ठीक अनंत"
+          },
+          "reason": {
+            "en": "Ordinary diamagnetism is weak.",
+            "hi": "साधारण प्रतिचुंबकत्व कमजोर।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always +1",
+            "hi": "सदा +1"
+          },
+          "reason": {
+            "en": "No such universal positive value applies.",
+            "hi": "ऐसा सार्वत्रिक धन मान नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Paramagnetic materials in a nonuniform field tend towards",
+        "hi": "असमान क्षेत्र में अनुचुंबकीय पदार्थ की प्रवृत्ति"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Stronger-field regions",
+            "hi": "अधिक प्रबल क्षेत्र"
+          },
+          "reason": {
+            "en": "Weak parallel magnetisation favours stronger field.",
+            "hi": "कमजोर समानांतर चुंबकन प्रबल क्षेत्र की ओर।"
+          }
+        },
+        {
+          "text": {
+            "en": "Weaker-field regions",
+            "hi": "कमजोर क्षेत्र"
+          },
+          "reason": {
+            "en": "This is the ordinary diamagnetic tendency.",
+            "hi": "यह सामान्य प्रतिचुंबकीय प्रवृत्ति।"
+          }
+        },
+        {
+          "text": {
+            "en": "No response at any temperature",
+            "hi": "किसी ताप पर प्रतिक्रिया नहीं"
+          },
+          "reason": {
+            "en": "Paramagnetic response is weak but present.",
+            "hi": "अनुचुंबकीय प्रतिक्रिया कमजोर पर मौजूद।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only zero field",
+            "hi": "केवल शून्य क्षेत्र"
+          },
+          "reason": {
+            "en": "That is not the attraction condition.",
+            "hi": "यह आकर्षण शर्त नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An unmagnetised ferromagnet may have",
+        "hi": "अचुंबकित लौहचुंबक में हो सकते हैं"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Domains whose moments cancel overall",
+            "hi": "कुल मिलाकर रद्द होते डोमेन आघूर्ण"
+          },
+          "reason": {
+            "en": "Internal order can exist without net sample magnetisation.",
+            "hi": "कुल नमूना चुंबकन बिना भी भीतर क्रम हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No microscopic magnetic moments",
+            "hi": "कोई सूक्ष्म चुंबकीय आघूर्ण नहीं"
+          },
+          "reason": {
+            "en": "Domain moments can still be strong.",
+            "hi": "डोमेन आघूर्ण प्रबल रह सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Isolated magnetic monopoles only",
+            "hi": "केवल अलग एकध्रुव"
+          },
+          "reason": {
+            "en": "That is not the domain model.",
+            "hi": "यह डोमेन मॉडल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite net M",
+            "hi": "अनंत कुल M"
+          },
+          "reason": {
+            "en": "Unmagnetised means small net magnetisation here.",
+            "hi": "यहाँ अचुंबकित में कुल चुंबकन छोटा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Above the Curie temperature a ferromagnet can become",
+        "hi": "क्यूरी ताप के ऊपर लौहचुंबक बन सकता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Paramagnetic",
+            "hi": "अनुचुंबकीय"
+          },
+          "reason": {
+            "en": "Thermal disorder destroys ferromagnetic order.",
+            "hi": "ऊष्मीय अव्यवस्था लौहचुंबकीय क्रम नष्ट करती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A single north pole",
+            "hi": "अकेला उत्तर ध्रुव"
+          },
+          "reason": {
+            "en": "Heating does not isolate one pole.",
+            "hi": "गरम करने से अकेला ध्रुव नहीं बनता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always a perfect diamagnet",
+            "hi": "सदा पूर्ण प्रतिचुंबक"
+          },
+          "reason": {
+            "en": "That is not the usual Curie transition.",
+            "hi": "यह सामान्य क्यूरी परिवर्तन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A source of net magnetic flux",
+            "hi": "शुद्ध चुंबकीय फ्लक्स का स्रोत"
+          },
+          "reason": {
+            "en": "Closed magnetic flux remains zero.",
+            "hi": "बंद चुंबकीय फ्लक्स शून्य ही।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain why zero closed magnetic flux does not mean B=0.",
+        "hi": "शून्य बंद चुंबकीय फ्लक्स से B=0 क्यों नहीं?"
+      },
+      "answer": {
+        "en": "The integral can cancel entering and leaving flux even with a nonzero local field.",
+        "hi": "अशून्य स्थानीय क्षेत्र में भी प्रवेश-निर्गम फ्लक्स कुल रद्द हो सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare axial and equatorial far fields of a magnet.",
+        "hi": "चुंबक के दूरस्थ अक्षीय-निरक्षीय क्षेत्र मिलाएँ।"
+      },
+      "answer": {
+        "en": "At equal large r, axial magnitude is twice equatorial; axial follows m while equatorial opposes m.",
+        "hi": "समान बड़ी r पर अक्षीय परिमाण 2 गुना; अक्षीय m की ओर, निरक्षीय m के विपरीत।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish B,H and M.",
+        "hi": "B,H,M में भेद करें।"
+      },
+      "answer": {
+        "en": "B is magnetic flux density in T; H is auxiliary magnetic field and M is moment per volume, both in A/m.",
+        "hi": "B चुंबकीय क्षेत्र T में; H सहायक क्षेत्र और M प्रति आयतन आघूर्ण, दोनों A/m में।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare dia- and paramagnetic susceptibility signs.",
+        "hi": "प्रतिचुंबकीय-अनुचुंबकीय सुग्राहिता चिह्न मिलाएँ।"
+      },
+      "answer": {
+        "en": "Diamagnetic χ is small negative; paramagnetic χ is small positive.",
+        "hi": "प्रतिचुंबकीय χ छोटी ऋणात्मक; अनुचुंबकीय χ छोटी धनात्मक।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is a magnetic domain?",
+        "hi": "चुंबकीय डोमेन क्या है?"
+      },
+      "answer": {
+        "en": "A region of a ferromagnet with collective aligned microscopic moments; different domains can cancel overall.",
+        "hi": "लौहचुंबक का सामूहिक अभिविन्यस्त सूक्ष्म आघूर्ण वाला भाग; अलग डोमेन कुल रद्द हो सकते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can a constant χ model fail for ferromagnets?",
+        "hi": "लौहचुंबक में स्थिर χ मॉडल क्यों विफल हो सकता है?"
+      },
+      "answer": {
+        "en": "Response can be nonlinear, saturating and history dependent.",
+        "hi": "प्रतिक्रिया अरैखिक, संतृप्त और इतिहास निर्भर हो सकती है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "A bar magnet is a dipole, not isolated poles.",
+      "hi": "छड़ चुंबक द्विध्रुव है, अलग एकध्रुव नहीं।"
+    },
+    {
+      "en": "Far dipole fields fall as r^-3.",
+      "hi": "दूरस्थ द्विध्रुव क्षेत्र r^-3 से घटते हैं।"
+    },
+    {
+      "en": "Parallel alignment minimises dipole energy.",
+      "hi": "समानांतर अभिविन्यास द्विध्रुव ऊर्जा न्यूनतम करता है।"
+    },
+    {
+      "en": "Closed magnetic flux is always zero.",
+      "hi": "बंद चुंबकीय फ्लक्स सदा शून्य।"
+    },
+    {
+      "en": "Material response depends on microscopic ordering and conditions.",
+      "hi": "पदार्थ प्रतिक्रिया सूक्ष्म क्रम और परिस्थितियों पर निर्भर।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not infer zero local B from zero closed flux, use a constant χ for every ferromagnetic state, or confuse T with A/m.",
+    "hi": "शून्य बंद फ्लक्स से स्थानीय B शून्य न मानें; हर लौहचुंबकीय अवस्था में स्थिर χ न लगाएँ; T और A/m न मिलाएँ।"
+  },
+  "goal": {
+    "en": "Interpret magnets as dipoles and compare material response using field, moment and susceptibility.",
+    "hi": "चुंबक को द्विध्रुव समझें और क्षेत्र, आघूर्ण, सुग्राहिता से पदार्थ प्रतिक्रिया मिलाएँ।"
+  },
+  "conceptMap": "छड़ चुंबक → द्विध्रुव आघूर्ण → बल आघूर्ण व ऊर्जा → शून्य बंद फ्लक्स → चुंबकन → प्रति/अनु/लौहचुंबकत्व",
+  "conceptMapEn": "Bar magnet → dipole moment → torque and energy → zero closed flux → magnetisation → dia/para/ferromagnetism",
+  "editionBasis": {
+    "en": "Original study explanations for current NCERT Physics Class XII and UP Board 2026–27; use the prescribed textbook and practical work alongside.",
+    "hi": "वर्तमान NCERT भौतिकी कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ; निर्धारित पुस्तक और प्रयोगात्मक कार्य भी साथ करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics XII Part I Chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leph105.pdf"
+    },
+    {
+      "title": "UPMSP Physics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    }
+  ]
+}

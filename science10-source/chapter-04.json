@@ -1,0 +1,1502 @@
+{
+  "number": 4,
+  "id": "carbon",
+  "title": {
+    "en": "Carbon and its Compounds",
+    "hi": "कार्बन एवं उसके यौगिक"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "ten-chains",
+      "title": {
+        "en": "Homologous carbon chains",
+        "hi": "समजातीय कार्बन शृंखला"
+      },
+      "kind": "ten-carbon",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Carbon atoms",
+            "hi": "कार्बन परमाणु"
+          },
+          "min": 1,
+          "max": 6,
+          "step": 1,
+          "initial": 2,
+          "unit": "atoms"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Find alkane formulae as the carbon chain grows.",
+        "hi": "कार्बन शृंखला बढ़ाकर ऐल्केन सूत्र खोजें।"
+      },
+      "observe": {
+        "en": "Count carbon and hydrogen while n changes from 1 to 6.",
+        "hi": "n को 1 से 6 बदलते हुए कार्बन और हाइड्रोजन गिनें।"
+      },
+      "modelNote": {
+        "en": "Only open-chain saturated alkanes are shown; ball sizes and bond lengths are symbolic.",
+        "hi": "केवल खुली शृंखला संतृप्त ऐल्केन हैं; गोलों का आकार और बंध लंबाई प्रतीकात्मक है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Every carbon has four valencies; a single open chain follows CnH2n+2 and each next member adds CH2.",
+          "hi": "हर कार्बन की 4 संयोजकता है; खुली एकल शृंखला CnH2n+2 मानती है और अगला सदस्य CH2 जोड़ता है।"
+        }
+      },
+      "realLife": {
+        "en": "Natural gas and many fuels contain members of the alkane family.",
+        "hi": "प्राकृतिक गैस और अनेक ईंधनों में ऐल्केन परिवार के सदस्य हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "For n = 3, the alkane formula is:",
+          "hi": "n = 3 पर ऐल्केन सूत्र है:"
+        },
+        "options": [
+          {
+            "en": "C3H6",
+            "hi": "C3H6"
+          },
+          {
+            "en": "C3H8",
+            "hi": "C3H8"
+          },
+          {
+            "en": "C3H4",
+            "hi": "C3H4"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Every carbon has four valencies; a single open chain follows CnH2n+2 and each next member adds CH2.",
+          "hi": "हर कार्बन की 4 संयोजकता है; खुली एकल शृंखला CnH2n+2 मानती है और अगला सदस्य CH2 जोड़ता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-chains-1",
+          "label": {
+            "en": "Set Carbon atoms to 1 atoms.",
+            "hi": "कार्बन परमाणु को 1 atoms करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 1
+          }
+        },
+        {
+          "id": "ten-chains-2",
+          "label": {
+            "en": "Reach 6 atoms and compare.",
+            "hi": "6 atoms तक जाकर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 6
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 4
+          },
+          "text": {
+            "en": "Shorter chain: count four total bonds around each carbon.",
+            "hi": "छोटी शृंखला: प्रत्येक कार्बन के कुल 4 बंध गिनें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4
+          },
+          "text": {
+            "en": "Longer chain: each added carbon adds CH2; the alkane formula remains CnH2n+2.",
+            "hi": "लंबी शृंखला: हर नया कार्बन CH2 बढ़ाता है; ऐल्केन सूत्र CnH2n+2 रहता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-bonds",
+      "title": {
+        "en": "Single, double and triple bonds",
+        "hi": "एकल, द्वि और त्रि बंध"
+      },
+      "kind": "ten-carbon",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Bond order",
+            "hi": "बंध क्रम"
+          },
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "initial": 1,
+          "unit": ""
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 1,
+      "goal": {
+        "en": "Relate carbon–carbon bond order to hydrogen count.",
+        "hi": "कार्बन-कार्बन बंध क्रम को हाइड्रोजन संख्या से जोड़ें।"
+      },
+      "observe": {
+        "en": "Compare ethane, ethene and ethyne with two carbon atoms.",
+        "hi": "2 कार्बन वाले एथेन, एथीन तथा एथाइन तुलना करें।"
+      },
+      "modelNote": {
+        "en": "The slider selects three structures; it is not a continuous physical stretching experiment.",
+        "hi": "नियंत्रण तीन संरचनाएँ चुनता है; यह लगातार वास्तविक बंध खींचने का प्रयोग नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "A double or triple carbon–carbon bond uses more valency, so fewer hydrogens fit while each carbon still totals four bonds.",
+          "hi": "द्वि या त्रि कार्बन बंध अधिक संयोजकता लेता है; कम हाइड्रोजन जुड़ते हैं और हर कार्बन का कुल बंध क्रम 4 रहता है।"
+        }
+      },
+      "realLife": {
+        "en": "Unsaturated compounds can undergo addition, including hydrogenation of oils.",
+        "hi": "असंतृप्त यौगिक संकलन करते हैं, जैसे तेलों का हाइड्रोजनीकरण।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which molecule contains the fewest hydrogen atoms?",
+          "hi": "किस अणु में सबसे कम हाइड्रोजन हैं?"
+        },
+        "options": [
+          {
+            "en": "C2H6",
+            "hi": "C2H6"
+          },
+          {
+            "en": "C2H4",
+            "hi": "C2H4"
+          },
+          {
+            "en": "C2H2",
+            "hi": "C2H2"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A double or triple carbon–carbon bond uses more valency, so fewer hydrogens fit while each carbon still totals four bonds.",
+          "hi": "द्वि या त्रि कार्बन बंध अधिक संयोजकता लेता है; कम हाइड्रोजन जुड़ते हैं और हर कार्बन का कुल बंध क्रम 4 रहता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-bonds-1",
+          "label": {
+            "en": "Set Bond order to 1 .",
+            "hi": "बंध क्रम को 1  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 1
+          }
+        },
+        {
+          "id": "ten-bonds-2",
+          "label": {
+            "en": "Reach 3  and compare.",
+            "hi": "3  तक जाकर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 3
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 2
+          },
+          "text": {
+            "en": "Single bond: ethane is C2H6 and saturated.",
+            "hi": "एकल बंध: एथेन C2H6 संतृप्त है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 2
+          },
+          "text": {
+            "en": "Double gives C2H4; triple gives C2H2. Both are unsaturated.",
+            "hi": "द्वि से C2H4; त्रि से C2H2। दोनों असंतृप्त हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-soap",
+      "title": {
+        "en": "Soap micelles and hard water",
+        "hi": "साबुन मिसेल और कठोर जल"
+      },
+      "kind": "ten-carbon",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Hard-water ions",
+            "hi": "कठोर जल के आयन"
+          },
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "initial": 0,
+          "unit": "relative units"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 7,
+      "goal": {
+        "en": "Explain how calcium ions reduce soap effectiveness.",
+        "hi": "कैल्सियम आयन से साबुन क्षमता घटना समझें।"
+      },
+      "observe": {
+        "en": "Watch tails face grease and heads face water; then raise relative hard-water ions.",
+        "hi": "पूँछ चिकनाई और सिरे जल की ओर देखें; फिर सापेक्ष कठोर जल आयन बढ़ाएं।"
+      },
+      "modelNote": {
+        "en": "Micelles, ion counts and scum are qualitative symbols, not a calibrated cleaning-performance measurement.",
+        "hi": "मिसेल, आयन संख्या तथा अवक्षेप गुणात्मक प्रतीक हैं, मापी सफाई क्षमता नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Calcium forms insoluble salts with soap, removing available soap ions and producing scum.",
+          "hi": "कैल्सियम साबुन से अविलेय लवण बनाकर उपलब्ध आयन घटाता और अवक्षेप बनाता है।"
+        }
+      },
+      "realLife": {
+        "en": "Soap lathers poorly and may leave scum in hard water.",
+        "hi": "कठोर जल में साबुन का झाग कम और अवक्षेप अधिक हो सकता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which part faces greasy dirt in a micelle?",
+          "hi": "मिसेल में चिकनाई की ओर कौन-सा भाग है?"
+        },
+        "options": [
+          {
+            "en": "Hydrocarbon tails",
+            "hi": "हाइड्रोकार्बन पूँछ"
+          },
+          {
+            "en": "Ionic heads only",
+            "hi": "केवल आयनिक सिरे"
+          },
+          {
+            "en": "No soap part",
+            "hi": "साबुन का कोई भाग नहीं"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Calcium forms insoluble salts with soap, removing available soap ions and producing scum.",
+          "hi": "कैल्सियम साबुन से अविलेय लवण बनाकर उपलब्ध आयन घटाता और अवक्षेप बनाता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-soap-1",
+          "label": {
+            "en": "Set Hard-water ions to 0 relative units.",
+            "hi": "कठोर जल के आयन को 0 relative units करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-soap-2",
+          "label": {
+            "en": "Reach 10 relative units and compare.",
+            "hi": "10 relative units तक जाकर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 10
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 5
+          },
+          "text": {
+            "en": "Fewer hardness ions: less soap is removed as scum in the model.",
+            "hi": "कम कठोरता आयन: मॉडल में कम साबुन अवक्षेप बनता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 5
+          },
+          "text": {
+            "en": "More hardness ions: more relative scum and less soap available for micelles.",
+            "hi": "अधिक कठोरता आयन: अधिक सापेक्ष अवक्षेप और मिसेल के लिए कम साबुन।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Read carbon structures and connect bonds, functional groups and everyday cleaning.",
+    "hi": "कार्बन संरचनाएँ पढ़कर बंध, क्रियात्मक समूह और दैनिक सफाई को जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Carbon bonds and versatility",
+        "hi": "कार्बन बंध और विविधता"
+      },
+      "paragraphs": [
+        {
+          "en": "Carbon has atomic number 6 and electron arrangement 2,4. Losing four electrons or gaining four would be energetically difficult, so carbon usually shares electrons and forms covalent bonds. Its valency is four, called tetravalency. Carbon also bonds strongly with other carbon atoms, a property called catenation. These two features allow chains, branches and rings with many different arrangements. Covalent compounds generally have lower melting and boiling points than ionic compounds and usually do not conduct electricity, because they do not provide freely moving ions. These are general properties, not a claim that every carbon material is soft or insulating: diamond and graphite have extended structures and distinctive properties. A bond line represents a shared electron pair, not a physical stick between spherical atoms.",
+          "hi": "कार्बन का परमाणु क्रमांक (Atomic number) 6 और इलेक्ट्रॉन विन्यास 2,4 है। चार इलेक्ट्रॉन खोना या चार पाना ऊर्जा की दृष्टि से कठिन है, इसलिए कार्बन सामान्यतः इलेक्ट्रॉन साझा करके सहसंयोजक बंध (Covalent bond) बनाता है। उसकी संयोजकता 4 है, जिसे चतुःसंयोजकता कहते हैं। कार्बन अपने ही परमाणुओं से मजबूत बंध बनाता है; यह शृंखलन (Catenation) है। इन दोनों गुणों से लंबी शृंखलाएँ, शाखाएँ और वलय अनेक व्यवस्थाओं में बन सकते हैं। सहसंयोजक यौगिकों के गलनांक तथा क्वथनांक सामान्यतः आयनिक यौगिकों से कम होते हैं और स्वतंत्र गतिशील आयन न होने से वे प्रायः विद्युत नहीं चलाते। यह सामान्य प्रवृत्ति है, हर कार्बन पदार्थ के मुलायम या विद्युतरोधी होने का दावा नहीं। हीरे और ग्रेफाइट की विस्तृत संरचनाएँ हैं तथा उनके विशेष गुण हैं। बंध की रेखा साझा इलेक्ट्रॉन युग्म दिखाती है, परमाणुओं के बीच लगी वास्तविक छड़ी नहीं। चित्र से बंधों की गिनती और इलेक्ट्रॉन साझेदारी समझनी चाहिए।"
+        },
+        {
+          "en": "In methane, one carbon shares one electron pair with each of four hydrogen atoms. Carbon thereby has an octet in the shared-electron description and each hydrogen has a duet. No full electron transfer to make C4+ and four H− ions is required in this model. Count four bond lines around carbon. A larger drawn sphere does not mean the atom contributes more electrons; electron counting follows the valence arrangement, not picture size.",
+          "hi": "मीथेन में कार्बन हाइड्रोजन के 4 परमाणुओं के साथ अलग-अलग एक इलेक्ट्रॉन युग्म साझा करता है। साझा इलेक्ट्रॉनों की गणना में कार्बन का अष्टक और प्रत्येक हाइड्रोजन का द्विक पूरा होता है। इस मॉडल में C4+ और 4 H− बनाने जैसा पूर्ण स्थानांतरण नहीं होता। कार्बन के चारों ओर 4 बंध रेखाएँ गिनें। बड़ा बना गोला अधिक इलेक्ट्रॉन देने का संकेत नहीं है। इलेक्ट्रॉन की गिनती संयोजकता विन्यास से होती है, चित्र में गोले के आकार से नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Tetravalency and catenation allow carbon to form many stable bonded arrangements.",
+          "hi": "चतुःसंयोजकता तथा शृंखलन से कार्बन कई स्थिर बंधित संरचनाएँ बनाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which two features explain carbon’s large variety of compounds?",
+          "hi": "कार्बन यौगिकों की विशाल विविधता के मुख्य दो कारण क्या हैं?"
+        },
+        "answer": {
+          "en": "Tetravalency and catenation allow carbon to form many stable bonded arrangements.",
+          "hi": "चतुःसंयोजकता तथा शृंखलन से कार्बन कई स्थिर बंधित संरचनाएँ बनाता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Saturated and unsaturated compounds",
+        "hi": "संतृप्त और असंतृप्त यौगिक"
+      },
+      "paragraphs": [
+        {
+          "en": "Hydrocarbons contain only carbon and hydrogen. Saturated hydrocarbons have only single carbon–carbon bonds; unsaturated hydrocarbons contain at least one double or triple carbon–carbon bond. Ethane, C2H6, has a single bond; ethene, C2H4, a double bond; ethyne, C2H2, a triple bond. Each carbon still has total bond order four, so increasing the carbon–carbon bond order leaves fewer bonds available for hydrogen. The general formula CnH2n+2 applies to open-chain saturated alkanes, not to every carbon compound. Cycloalkanes have rings and do not follow that same formula. Unsaturation concerns carbon–carbon bonding; the presence of a carbon–oxygen double bond alone is not the hydrocarbon classification being compared in this scene. Read the whole structure rather than one familiar suffix.",
+          "hi": "हाइड्रोकार्बन (Hydrocarbons) में केवल कार्बन और हाइड्रोजन होते हैं। संतृप्त हाइड्रोकार्बन में कार्बन-कार्बन के केवल एकल बंध, जबकि असंतृप्त में कम से कम एक द्वि या त्रि बंध होता है। एथेन C2H6 में एकल, एथीन C2H4 में द्वि और एथाइन C2H2 में त्रि बंध है। हर कार्बन का कुल बंध क्रम फिर भी 4 रहता है, इसलिए कार्बन-कार्बन बंध क्रम बढ़ने पर हाइड्रोजन के लिए कम बंध बचते हैं। सामान्य सूत्र CnH2n+2 खुली शृंखला वाले संतृप्त ऐल्केन पर लागू है, हर कार्बन यौगिक पर नहीं। चक्रीय ऐल्केन में वलय होने से यही सूत्र लागू नहीं होता। इस तुलना में असंतृप्तता कार्बन-कार्बन बंधों से संबंधित है। केवल कार्बन-ऑक्सीजन द्वि बंध देखकर उसे वही हाइड्रोकार्बन वर्ग नहीं घोषित करते। पूरा संरचनात्मक सूत्र पढ़ें और प्रत्येक कार्बन के बंध गिनें। एक परिचित नामांत या रंग के आधार पर निर्णय लेना पर्याप्त नहीं है।"
+        },
+        {
+          "en": "For n = 4, the open-chain alkane formula gives C4H10. This establishes a molecular formula but not a unique structure: straight and branched butane arrangements exist. In the bond-order scene, comparing ethane, ethene and ethyne changes the hydrogen count while keeping two carbon atoms. The slider chooses three named structures, not a continuously stretched chemical bond whose order can take every fractional intermediate value.",
+          "hi": "n = 4 रखने पर खुली शृंखला के ऐल्केन का सूत्र C4H10 मिलता है। इससे अणुसूत्र मिलता है, पर केवल एक संरचना निश्चित नहीं होती; सीधी और शाखित व्यवस्थाएँ सम्भव हैं। बंध क्रम दृश्य में एथेन, एथीन और एथाइन की तुलना में कार्बन 2 ही रहते हैं और हाइड्रोजन बदलते हैं। नियंत्रण तीन नामित संरचनाएँ चुनता है। यह किसी वास्तविक बंध को लगातार खींचकर हर बीच का भिन्नात्मक बंध क्रम बनाने का प्रयोग नहीं है। मॉडल के चयन और वास्तविक बंध परिवर्तन में अंतर रखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The carbon–carbon double bond uses more of each carbon’s valency, leaving fewer bonds for hydrogen.",
+          "hi": "कार्बन-कार्बन द्वि बंध अधिक संयोजकता उपयोग करता है, इसलिए हाइड्रोजन के लिए कम बंध बचते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does ethene have fewer hydrogens than ethane?",
+          "hi": "एथीन में एथेन से कम हाइड्रोजन क्यों होते हैं?"
+        },
+        "answer": {
+          "en": "The carbon–carbon double bond uses more of each carbon’s valency, leaving fewer bonds for hydrogen.",
+          "hi": "कार्बन-कार्बन द्वि बंध अधिक संयोजकता उपयोग करता है, इसलिए हाइड्रोजन के लिए कम बंध बचते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Homologous series and structure",
+        "hi": "समजातीय श्रेणी और संरचना"
+      },
+      "paragraphs": [
+        {
+          "en": "A homologous series groups compounds with the same functional group and similar chemical properties, where successive members differ by CH2. Their molecular masses differ by 14 u, while physical properties such as boiling point tend to change gradually. Methane, ethane and propane begin the alkane series. Isomers have the same molecular formula but different structural arrangements; they are not successive homologues. Carbon skeletons can be straight, branched or cyclic, so a molecular formula alone may not show connectivity. A functional group is the reactive atom or group replacing hydrogen in a carbon framework. Chlorine, alcohol, aldehyde, ketone and carboxylic acid groups give different chemical families. Naming must recognise both the carbon skeleton and the relevant group rather than counting all atoms as if they were identical.",
+          "hi": "समजातीय श्रेणी (Homologous series) में समान क्रियात्मक समूह और मिलते-जुलते रासायनिक गुण वाले यौगिक आते हैं। क्रमिक सदस्यों में CH2 का अंतर तथा आणविक द्रव्यमान में 14 u का अंतर होता है। क्वथनांक जैसे भौतिक गुण सामान्यतः धीरे-धीरे बदलते हैं। मीथेन, एथेन और प्रोपेन ऐल्केन श्रेणी के शुरुआती सदस्य हैं। समावयवी (Isomers) का अणुसूत्र समान पर संरचना अलग होती है; वे क्रमिक समजात सदस्य नहीं हैं। कार्बन ढाँचा सीधा, शाखित या चक्रीय हो सकता है, इसलिए केवल अणुसूत्र से जुड़ने का क्रम हमेशा नहीं मिलता। क्रियात्मक समूह (Functional group) कार्बन ढाँचे में हाइड्रोजन की जगह आने वाला सक्रिय परमाणु या समूह है। क्लोरीन, ऐल्कोहॉल, ऐल्डिहाइड, कीटोन और कार्बोक्सिलिक अम्ल समूह अलग रासायनिक परिवार बनाते हैं। नामकरण में कार्बन शृंखला और संबंधित समूह दोनों पहचानते हैं। सभी परमाणु एक जैसे मानकर केवल कुल संख्या गिनना पर्याप्त नहीं है। संरचनात्मक सूत्र संबंधों को स्पष्ट करता है।"
+        },
+        {
+          "en": "Compare ethanol, C2H5OH, with the next alcohol propanol, C3H7OH. Their common OH group helps explain related chemical behaviour, while the added CH2 changes mass and physical properties. By contrast, two structures with formula C4H10 demonstrate isomerism. When answering, say what remains the same and what changes. This is clearer than calling every similar-looking carbon structure a homologue or assuming a change in shape must mean a different molecular formula.",
+          "hi": "एथेनॉल C2H5OH और अगले ऐल्कोहॉल प्रोपेनॉल C3H7OH की तुलना करें। समान OH समूह संबंधित रासायनिक व्यवहार समझाता है, जबकि अतिरिक्त CH2 द्रव्यमान तथा भौतिक गुण बदलता है। इसके विपरीत C4H10 की दो अलग संरचनाएँ समावयवता बताती हैं। उत्तर में स्पष्ट करें कि क्या समान है और क्या बदला है। हर मिलती-जुलती संरचना को समजात कहना या केवल आकार बदलने से अणुसूत्र अवश्य बदल गया मानना गलत है। संरचना और सूत्र की अलग भूमिकाएँ याद रखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Homologues differ by CH2; isomers have the same molecular formula but different structures.",
+          "hi": "समजात सदस्यों में CH2 का अंतर है; समावयवियों का अणुसूत्र समान पर संरचना अलग है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the difference between successive homologues and isomers?",
+          "hi": "क्रमिक समजात सदस्यों और समावयवियों में क्या अंतर है?"
+        },
+        "answer": {
+          "en": "Homologues differ by CH2; isomers have the same molecular formula but different structures.",
+          "hi": "समजात सदस्यों में CH2 का अंतर है; समावयवियों का अणुसूत्र समान पर संरचना अलग है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Reading and naming functional groups",
+        "hi": "क्रियात्मक समूह पढ़ना और नाम देना"
+      },
+      "paragraphs": [
+        {
+          "en": "The carbon count supplies a root such as meth-, eth-, prop- or but-. The nature of bonding and the functional group guide the suffix at this level. An alcohol contains an OH group attached to carbon, while a carboxylic acid contains COOH. Ethanol and ethanoic acid both have two carbon atoms but differ strongly in properties because their functional groups differ. Do not identify the OH inside COOH as making the whole compound an ordinary alcohol. An aldehyde has a terminal CHO group, while a ketone has a carbonyl group within a chain. Structural formulae show which atom is bonded to which; condensed formulae must be read in groups. Count the carbon in COOH as part of the main carbon skeleton.",
+          "hi": "कार्बन संख्या से meth-, eth-, prop- और but- जैसे मूल नाम मिलते हैं। इस स्तर पर बंध की प्रकृति तथा क्रियात्मक समूह नामांत चुनने में सहायता करते हैं। ऐल्कोहॉल में कार्बन से जुड़ा OH समूह और कार्बोक्सिलिक अम्ल में COOH समूह होता है। एथेनॉल तथा एथेनोइक अम्ल दोनों में 2 कार्बन हैं, फिर भी समूह अलग होने से गुण बहुत अलग होते हैं। COOH के अंदर OH देखकर पूरे यौगिक को सामान्य ऐल्कोहॉल नहीं कह सकते। ऐल्डिहाइड में अंतिम CHO और कीटोन में शृंखला के भीतर कार्बोनिल समूह होता है। संरचनात्मक सूत्र बताता है कि कौन-सा परमाणु किससे जुड़ा है। संक्षिप्त सूत्र को समूहों में पढ़ना चाहिए। COOH का कार्बन भी मुख्य कार्बन ढाँचे में गिना जाता है। केवल दिखाई देने वाले CH समूह गिनकर अम्ल का नाम चुनना गलत होगा। नामकरण का लक्ष्य संरचना को व्यवस्थित ढंग से पहचानना है, शब्द रटकर हर सूत्र पर लगाना नहीं।"
+        },
+        {
+          "en": "Write CH3CH2OH and CH3COOH next to each other. Both contain oxygen and hydrogen, but only the second has the entire COOH group. Their reactions with carbonates differ because one is an alcohol and the other an acid. Functional-group recognition therefore predicts chemistry, not merely spelling. A diagram may colour the group to make it easy to locate; the colour itself is a teaching choice, not an actual glowing region of a molecule.",
+          "hi": "CH3CH2OH तथा CH3COOH साथ लिखें। दोनों में ऑक्सीजन और हाइड्रोजन हैं, पर केवल दूसरे में पूरा COOH समूह है। कार्बोनेट के साथ व्यवहार अलग होगा क्योंकि एक ऐल्कोहॉल और दूसरा अम्ल है। इसलिए क्रियात्मक समूह की पहचान केवल नाम की वर्तनी नहीं, रासायनिक व्यवहार भी समझाती है। चित्र में समूह को अलग रंग देकर पहचान सरल कर सकते हैं। वह रंग शिक्षण के लिए चुना गया है, अणु का कोई वास्तविक चमकता हुआ भाग नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Two: one in CH3 and one in COOH; it is ethanoic acid.",
+          "hi": "2: एक CH3 में और एक COOH में; यह एथेनोइक अम्ल है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many carbon atoms are present in CH3COOH?",
+          "hi": "CH3COOH में कितने कार्बन परमाणु हैं?"
+        },
+        "answer": {
+          "en": "Two: one in CH3 and one in COOH; it is ethanoic acid.",
+          "hi": "2: एक CH3 में और एक COOH में; यह एथेनोइक अम्ल है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Combustion, oxidation, addition and substitution",
+        "hi": "दहन, ऑक्सीकरण, संकलन और प्रतिस्थापन"
+      },
+      "paragraphs": [
+        {
+          "en": "Complete combustion of a hydrocarbon in sufficient oxygen produces carbon dioxide and water with energy release. Inadequate oxygen can cause incomplete combustion, soot and dangerous carbon monoxide. Oxidising agents such as alkaline potassium permanganate can convert ethanol to ethanoic acid under suitable conditions. Addition joins atoms across a double or triple bond; hydrogenation of unsaturated vegetable oils uses a catalyst such as nickel. Substitution replaces an atom in a saturated compound, as chlorine replaces hydrogen in methane under sunlight. The light condition matters. Do not confuse addition with substitution: addition reduces unsaturation, whereas substitution replaces an existing atom or group. Balanced equations describe overall changes and do not show every intermediate step of these reactions.",
+          "hi": "पर्याप्त ऑक्सीजन में हाइड्रोकार्बन के पूर्ण दहन से ऊर्जा के साथ कार्बन डाइऑक्साइड और जल बनते हैं। कम ऑक्सीजन में अपूर्ण दहन, कालिख और खतरनाक कार्बन मोनोऑक्साइड बन सकती है। क्षारीय पोटैशियम परमैंगनेट जैसे ऑक्सीकारक उपयुक्त दशाओं में एथेनॉल को एथेनोइक अम्ल में बदलते हैं। संकलन अभिक्रिया (Addition) में द्वि या त्रि बंध पर परमाणु जुड़ते हैं। असंतृप्त वनस्पति तेलों के हाइड्रोजनीकरण में निकेल जैसा उत्प्रेरक उपयोग होता है। प्रतिस्थापन (Substitution) में संतृप्त यौगिक का कोई परमाणु दूसरे से बदलता है; सूर्यप्रकाश में मीथेन के हाइड्रोजन को क्लोरीन प्रतिस्थापित कर सकती है। प्रकाश की दशा महत्वपूर्ण है। संकलन और प्रतिस्थापन को एक न मानें। संकलन असंतृप्तता घटाता है जबकि प्रतिस्थापन उपस्थित परमाणु या समूह बदलता है। संतुलित समीकरण समग्र परिवर्तन दिखाता है, अभिक्रिया के प्रत्येक मध्यवर्ती चरण को नहीं। उत्पादों के साथ दशाएँ तथा उत्प्रेरक पढ़ना भी आवश्यक है। सभी कार्बनिक अभिक्रियाएँ एक जैसी चाल से नहीं होतीं।"
+        },
+        {
+          "en": "Balance methane combustion: CH4 + 2O2 → CO2 + 2H2O. Four hydrogen atoms require two water molecules, and the products then contain four oxygen atoms. Contrast this with CH4 + Cl2 → CH3Cl + HCl in sunlight: one hydrogen is replaced by chlorine. Counting atoms gives the correct ratio, while examining the structural change tells you which reaction type applies. Both steps are needed for a fully reasoned answer.",
+          "hi": "मीथेन दहन को संतुलित करें: CH4 + 2O2 → CO2 + 2H2O। हाइड्रोजन के 4 परमाणुओं के लिए जल के 2 अणु चाहिए और उत्पादों में ऑक्सीजन के कुल 4 परमाणु हैं। सूर्यप्रकाश में CH4 + Cl2 → CH3Cl + HCl इससे अलग है; एक हाइड्रोजन की जगह क्लोरीन आई है। परमाणु गिनने से अनुपात मिलता है, जबकि संरचना में परिवर्तन देखने से अभिक्रिया का प्रकार पता चलता है। कारण सहित पूरा उत्तर देने के लिए दोनों चरण आवश्यक हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Hydrogen adds across the double bond to form ethane without replacing another atom.",
+          "hi": "हाइड्रोजन द्वि बंध पर जुड़कर एथेन बनाती है; दूसरा परमाणु प्रतिस्थापित नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is ethene hydrogenation an addition reaction?",
+          "hi": "एथीन का हाइड्रोजनीकरण संकलन अभिक्रिया क्यों है?"
+        },
+        "answer": {
+          "en": "Hydrogen adds across the double bond to form ethane without replacing another atom.",
+          "hi": "हाइड्रोजन द्वि बंध पर जुड़कर एथेन बनाती है; दूसरा परमाणु प्रतिस्थापित नहीं होता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ethanol and its transformations",
+        "hi": "एथेनॉल और उसके परिवर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "Ethanol, C2H5OH, is a liquid alcohol used as a solvent and in several industrial applications. It reacts with sodium to form sodium ethoxide and hydrogen: 2C2H5OH + 2Na → 2C2H5ONa + H2. Heating ethanol with excess concentrated sulphuric acid at about 443 K removes water and forms ethene. The acid acts as a dehydrating agent in this transformation. Oxidation gives ethanoic acid with a suitable oxidising agent. These reactions show different chemical changes from simple evaporation of ethanol. Methanol is a different, highly toxic alcohol; similarity of names does not imply similar safety. Industrial alcohol may be denatured to make it unsuitable for drinking. The chapter explains chemistry and properties, not a procedure for consuming or preparing alcoholic drinks.",
+          "hi": "एथेनॉल C2H5OH एक द्रव ऐल्कोहॉल है, जिसका प्रयोग विलायक तथा कई औद्योगिक कामों में होता है। सोडियम से सोडियम एथॉक्साइड और हाइड्रोजन बनते हैं: 2C2H5OH + 2Na → 2C2H5ONa + H2। एथेनॉल को अधिक सांद्र सल्फ्यूरिक अम्ल के साथ लगभग 443 K पर गर्म करने से जल निकलकर एथीन बनती है। इस परिवर्तन में अम्ल निर्जलीकारक की भूमिका निभाता है। उपयुक्त ऑक्सीकारक से ऑक्सीकरण करने पर एथेनोइक अम्ल बनता है। ये परिवर्तन एथेनॉल के केवल वाष्पित होने से अलग हैं, क्योंकि नए पदार्थ बनते हैं। मेथेनॉल अलग और अत्यधिक विषैला ऐल्कोहॉल है; नाम मिलते-जुलते होने से सुरक्षा समान नहीं होती। औद्योगिक ऐल्कोहॉल को पीने योग्य न रहने देने के लिए विकृत किया जा सकता है। इस अध्याय का उद्देश्य रासायनिक गुण और परिवर्तन समझना है, पेय बनाना या उनका सेवन सिखाना नहीं। अभिक्रिया लिखते समय ताप और अभिकर्मक की भूमिका को उत्पाद के साथ जोड़ें।"
+        },
+        {
+          "en": "Compare oxidation and dehydration of the same starting compound. Oxidation of ethanol adds oxygen in the overall school representation and gives an acid; dehydration removes the elements of water and gives an alkene. It is therefore insufficient to say “ethanol is heated” without naming the reagent and temperature. Chemical conditions guide the pathway. The formula of ethanol alone cannot tell you which of several possible products will form.",
+          "hi": "एक ही प्रारम्भिक पदार्थ के ऑक्सीकरण और निर्जलीकरण की तुलना करें। विद्यालयी समग्र निरूपण में एथेनॉल का ऑक्सीकरण ऑक्सीजन बढ़ाकर अम्ल देता है, जबकि निर्जलीकरण जल के तत्व हटाकर ऐल्कीन देता है। इसलिए केवल एथेनॉल गर्म किया गया कहना पर्याप्त नहीं है; अभिकर्मक और ताप बताना चाहिए। रासायनिक दशाएँ परिवर्तन का रास्ता तय करती हैं। अकेले एथेनॉल का सूत्र देखकर उसके कई सम्भव उत्पादों में से एक निश्चित नहीं चुन सकते। प्रश्न में दी सभी दशाएँ ध्यान से पढ़ें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Ethene and water form in the presence of excess concentrated sulphuric acid.",
+          "hi": "अधिक सांद्र सल्फ्यूरिक अम्ल की उपस्थिति में एथीन और जल बनते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens when ethanol is dehydrated at about 443 K?",
+          "hi": "लगभग 443 K पर एथेनॉल के निर्जलीकरण से क्या बनता है?"
+        },
+        "answer": {
+          "en": "Ethene and water form in the presence of excess concentrated sulphuric acid.",
+          "hi": "अधिक सांद्र सल्फ्यूरिक अम्ल की उपस्थिति में एथीन और जल बनते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ethanoic acid, esters and salts",
+        "hi": "एथेनोइक अम्ल, एस्टर और लवण"
+      },
+      "paragraphs": [
+        {
+          "en": "Ethanoic acid, CH3COOH, is a weak acid; its dilute solution is the main acid component of vinegar. Weak means partial ionisation in water, not that any concentration is harmless. It reacts with sodium hydroxide to form sodium ethanoate and water, and with carbonates to release carbon dioxide. With ethanol and an acid catalyst, it forms the ester ethyl ethanoate and water. This esterification is reversible, so the arrow may be shown as an equilibrium arrow. Esters often have pleasant smells but smell alone is not a reliable chemical identification. Heating an ester with a base produces an alcohol and the salt of the acid. For suitable fat or oil esters, alkaline hydrolysis is the basis of soap making, called saponification.",
+          "hi": "एथेनोइक अम्ल CH3COOH एक दुर्बल अम्ल है और सिरके का मुख्य अम्लीय घटक है। दुर्बल का अर्थ जल में आंशिक आयनीकरण है; इसका अर्थ हर सांद्रता पर हानिरहित होना नहीं। सोडियम हाइड्रॉक्साइड से सोडियम एथेनोएट तथा जल और कार्बोनेट से कार्बन डाइऑक्साइड बनती है। एथेनॉल और अम्ल उत्प्रेरक के साथ एथिल एथेनोएट एस्टर तथा जल बनते हैं। एस्टरीकरण (Esterification) उत्क्रमणीय है, इसलिए संतुलन तीर दिखाया जा सकता है। कई एस्टरों की गंध सुखद होती है, लेकिन केवल गंध विश्वसनीय रासायनिक पहचान नहीं है। एस्टर को क्षारक के साथ गर्म करने पर ऐल्कोहॉल और अम्ल का लवण बनते हैं। उपयुक्त वसा या तेल के एस्टरों के क्षारीय जलअपघटन से साबुन बनता है; यह साबुनीकरण (Saponification) है। अम्ल, ऐल्कोहॉल, एस्टर और लवण को अलग परिवार की तरह पहचानें। नाम में समान कार्बन संख्या होने पर भी उनके समूह तथा अभिक्रियाएँ अलग रहती हैं।"
+        },
+        {
+          "en": "In CH3COOH + C2H5OH ⇌ CH3COOC2H5 + H2O, identify the acid, alcohol and ester before counting atoms. The acid contributes the ethanoate part of the ester name, while the alcohol contributes ethyl. The catalyst helps the reaction but is not written as an extra atom-containing product. Compare this process with acid–base neutralisation: both can form water, yet the organic product and reaction pattern are different.",
+          "hi": "CH3COOH + C2H5OH ⇌ CH3COOC2H5 + H2O में परमाणु गिनने से पहले अम्ल, ऐल्कोहॉल और एस्टर पहचानें। एस्टर नाम का एथेनोएट भाग अम्ल से और एथिल भाग ऐल्कोहॉल से संबंधित है। उत्प्रेरक अभिक्रिया में सहायता करता है; उसे अतिरिक्त परमाणु वाले उत्पाद की तरह नहीं जोड़ते। इस परिवर्तन की अम्ल-क्षारक उदासीनीकरण से तुलना करें। दोनों में जल बन सकता है, फिर भी कार्बनिक उत्पाद और अभिक्रिया का ढाँचा अलग हैं। केवल जल बनने से दो अभिक्रियाएँ समान प्रकार की नहीं हो जातीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Ethyl ethanoate forms along with water in acid-catalysed esterification.",
+          "hi": "अम्ल उत्प्रेरित एस्टरीकरण में जल के साथ एथिल एथेनोएट बनता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Name the ester formed from ethanol and ethanoic acid.",
+          "hi": "एथेनॉल और एथेनोइक अम्ल से बनने वाले एस्टर का नाम लिखें।"
+        },
+        "answer": {
+          "en": "Ethyl ethanoate forms along with water in acid-catalysed esterification.",
+          "hi": "अम्ल उत्प्रेरित एस्टरीकरण में जल के साथ एथिल एथेनोएट बनता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Soap micelles, hard water and detergents",
+        "hi": "साबुन मिसेल, कठोर जल और अपमार्जक"
+      },
+      "paragraphs": [
+        {
+          "en": "Soaps are sodium or potassium salts of long-chain carboxylic acids. Each soap ion has a water-attracting ionic head and an oil-attracting hydrocarbon tail. In water, many ions can arrange into micelles with tails toward greasy dirt and heads toward water. Agitation helps disperse the trapped grease so it can be rinsed away. This is a collective arrangement, not a tiny organism eating dirt. Calcium and magnesium ions in hard water form insoluble salts with soap, producing scum and reducing cleaning efficiency. Detergents have different head groups and many remain effective in hard water. More foam does not necessarily prove better cleaning. The calcium-ion slider represents a relative hardness trend, not a calibrated concentration or a complete prediction of washing performance.",
+          "hi": "साबुन लंबी शृंखला वाले कार्बोक्सिलिक अम्लों के सोडियम या पोटैशियम लवण हैं। प्रत्येक साबुन आयन में जल को आकर्षित करने वाला आयनिक सिरा और तेल को आकर्षित करने वाली हाइड्रोकार्बन पूँछ होती है। जल में अनेक आयन मिसेल (Micelle) बनाते हैं, जिनकी पूँछ चिकनाई की ओर और सिरा जल की ओर रहता है। हिलाने से फँसी चिकनाई छोटे समूहों में फैलकर धोने में निकलती है। यह सामूहिक संरचना है, गंदगी खाने वाला कोई जीव नहीं। कठोर जल के कैल्सियम और मैग्नीशियम आयन साबुन के साथ अविलेय लवण बनाकर मैल जैसा अवक्षेप देते हैं और सफाई घटती है। अपमार्जकों (Detergents) के सिरों की संरचना अलग होती है तथा अनेक कठोर जल में भी प्रभावी रहते हैं। अधिक झाग हमेशा अधिक सफाई का प्रमाण नहीं है। दृश्य का कैल्सियम आयन नियंत्रण केवल सापेक्ष कठोरता दिखाता है, मापी सांद्रता या धुलाई के हर परिणाम की भविष्यवाणी नहीं। मात्रा, वस्त्र और हिलाने जैसे अन्य कारक भी महत्वपूर्ण हैं।"
+        },
+        {
+          "en": "Draw one grease droplet with several soap tails pointing inward and ionic heads outward. This orientation explains how grease can be dispersed in water despite being insoluble by itself. Then add calcium ions and indicate some soap ions removed as scum. Less available soap means fewer effective cleaning assemblies. A ring of a dozen drawn ions is symbolic: actual micelles are dynamic, contain variable numbers of molecules and are far smaller than the screen picture.",
+          "hi": "चिकनाई की बूंद बनाकर उसके भीतर की ओर कई साबुन पूँछें और बाहर जल की ओर आयनिक सिरे दिखाएं। यह दिशा समझाती है कि अकेले जल में न घुलने वाली चिकनाई कैसे फैल सकती है। फिर कैल्सियम आयन जोड़कर कुछ साबुन को अवक्षेप के रूप में अलग दिखाएं। उपलब्ध साबुन कम होने से सफाई करने वाले समूह कम प्रभावी होते हैं। चित्र में कुछ आयनों का घेरा प्रतीकात्मक है। वास्तविक मिसेल गतिशील होते हैं, उनमें अणुओं की संख्या बदलती है और आकार पर्दे के चित्र से बहुत छोटा होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Calcium and magnesium ions form insoluble salts of the long-chain acids in soap.",
+          "hi": "कैल्सियम और मैग्नीशियम आयन साबुन के लंबी शृंखला अम्लों के अविलेय लवण बनाते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does soap form scum in hard water?",
+          "hi": "कठोर जल में साबुन अवक्षेप क्यों बनाता है?"
+        },
+        "answer": {
+          "en": "Calcium and magnesium ions form insoluble salts of the long-chain acids in soap.",
+          "hi": "कैल्सियम और मैग्नीशियम आयन साबुन के लंबी शृंखला अम्लों के अविलेय लवण बनाते हैं।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "CnH2n+2",
+      "meaning": {
+        "en": "n is the carbon count for acyclic saturated alkanes; n ≥ 1.",
+        "hi": "n अचक्रीय संतृप्त ऐल्केन में कार्बन संख्या है; n ≥ 1।"
+      },
+      "units": {
+        "en": "n and atom counts are dimensionless.",
+        "hi": "n तथा परमाणु संख्या इकाईरहित हैं।"
+      }
+    },
+    {
+      "expression": "CH4 + 2O2 → CO2 + 2H2O",
+      "meaning": {
+        "en": "Complete methane combustion requires sufficient oxygen.",
+        "hi": "मीथेन के पूर्ण दहन में पर्याप्त ऑक्सीजन चाहिए।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    },
+    {
+      "expression": "C2H4 + H2 → C2H6",
+      "meaning": {
+        "en": "Hydrogenation adds hydrogen across a double bond with a suitable catalyst.",
+        "hi": "उपयुक्त उत्प्रेरक से हाइड्रोजन द्वि बंध पर जुड़ती है।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    },
+    {
+      "expression": "CH3COOH + C2H5OH ⇌ CH3COOC2H5 + H2O",
+      "meaning": {
+        "en": "Acid-catalysed esterification makes ethyl ethanoate.",
+        "hi": "अम्ल उत्प्रेरित एस्टरीकरण एथिल एथेनोएट बनाता है।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "CnH2n+2 is not universal for carbon compounds; OH inside COOH does not classify an acid as an alcohol.",
+    "hi": "CnH2n+2 हर कार्बन यौगिक का सूत्र नहीं; COOH के अंदर OH होने से अम्ल ऐल्कोहॉल नहीं बनता।"
+  },
+  "summary": [
+    {
+      "en": "Carbon shares electrons and forms four bonds.",
+      "hi": "कार्बन इलेक्ट्रॉन साझा करके 4 बंध बनाता है।"
+    },
+    {
+      "en": "Catenation supports chains, branches and rings.",
+      "hi": "शृंखलन से शृंखला, शाखा तथा वलय बनते हैं।"
+    },
+    {
+      "en": "Bond order determines the available hydrogen valencies.",
+      "hi": "बंध क्रम हाइड्रोजन के लिए बची संयोजकता तय करता है।"
+    },
+    {
+      "en": "Functional groups guide characteristic reactions.",
+      "hi": "क्रियात्मक समूह विशिष्ट अभिक्रियाएँ बताते हैं।"
+    },
+    {
+      "en": "Soap micelles disperse grease; hard-water ions form scum.",
+      "hi": "साबुन मिसेल चिकनाई फैलाती हैं; कठोर जल आयन अवक्षेप बनाते हैं।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the formula of the open-chain alkane with 5 carbons.",
+        "hi": "5 कार्बन वाले खुली शृंखला ऐल्केन का सूत्र ज्ञात करें।"
+      },
+      "given": {
+        "en": "n = 5; saturated and acyclic.",
+        "hi": "n = 5; संतृप्त और अचक्रीय।"
+      },
+      "find": {
+        "en": "Molecular formula.",
+        "hi": "अणुसूत्र।"
+      },
+      "formula": {
+        "en": "CnH2n+2",
+        "hi": "CnH2n+2"
+      },
+      "steps": [
+        {
+          "en": "H = 2 × 5 + 2.",
+          "hi": "H = 2 × 5 + 2।"
+        },
+        {
+          "en": "H = 12.",
+          "hi": "H = 12।"
+        }
+      ],
+      "answer": {
+        "en": "C5H12, pentane; atom counts have no physical unit.",
+        "hi": "C5H12, पेन्टेन; परमाणु गिनती की भौतिक इकाई नहीं।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "How many carbon atoms are present in CH3COOH?",
+        "hi": "CH3COOH में कितने कार्बन परमाणु हैं?"
+      },
+      "given": {
+        "en": "Read CH3COOH as a condensed structural formula.",
+        "hi": "CH3COOH को संक्षिप्त संरचनात्मक सूत्र की तरह पढ़ें।"
+      },
+      "find": {
+        "en": "A justified explanation using the stated conditions.",
+        "hi": "दी गई दशाओं पर आधारित कारण सहित व्याख्या।"
+      },
+      "formula": {
+        "en": "Reading and naming functional groups: apply the definitions and identify the relevant species.",
+        "hi": "क्रियात्मक समूह पढ़ना और नाम देना: परिभाषा लगाएं और संबंधित पदार्थ पहचानें।"
+      },
+      "steps": [
+        {
+          "en": "Write CH3CH2OH and CH3COOH next to each other. Both contain oxygen and hydrogen, but only the second has the entire COOH group. Their reactions with carbonates differ because one is an alcohol and the other an acid. Functional-group recognition therefore predicts chemistry, not merely spelling. A diagram may colour the group to make it easy to locate; the colour itself is a teaching choice, not an actual glowing region of a molecule.",
+          "hi": "CH3CH2OH तथा CH3COOH साथ लिखें। दोनों में ऑक्सीजन और हाइड्रोजन हैं, पर केवल दूसरे में पूरा COOH समूह है। कार्बोनेट के साथ व्यवहार अलग होगा क्योंकि एक ऐल्कोहॉल और दूसरा अम्ल है। इसलिए क्रियात्मक समूह की पहचान केवल नाम की वर्तनी नहीं, रासायनिक व्यवहार भी समझाती है। चित्र में समूह को अलग रंग देकर पहचान सरल कर सकते हैं। वह रंग शिक्षण के लिए चुना गया है, अणु का कोई वास्तविक चमकता हुआ भाग नहीं है।"
+        },
+        {
+          "en": "Two: one in CH3 and one in COOH; it is ethanoic acid.",
+          "hi": "2: एक CH3 में और एक COOH में; यह एथेनोइक अम्ल है।"
+        }
+      ],
+      "answer": {
+        "en": "Two: one in CH3 and one in COOH; it is ethanoic acid.",
+        "hi": "2: एक CH3 में और एक COOH में; यह एथेनोइक अम्ल है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Explain the hydrogen count in ethane, ethene and ethyne.",
+        "hi": "एथेन, एथीन तथा एथाइन में हाइड्रोजन संख्या समझाएं।"
+      },
+      "given": {
+        "en": "Two carbons; carbon–carbon bond orders 1, 2 and 3.",
+        "hi": "2 कार्बन; कार्बन-कार्बन बंध क्रम 1, 2 तथा 3।"
+      },
+      "find": {
+        "en": "Hydrogen count for each structure.",
+        "hi": "हर संरचना की हाइड्रोजन संख्या।"
+      },
+      "formula": {
+        "en": "Each carbon has total bond order 4.",
+        "hi": "हर कार्बन का कुल बंध क्रम 4 है।"
+      },
+      "steps": [
+        {
+          "en": "Single bond leaves 3 H per C: C2H6.",
+          "hi": "एकल बंध प्रति C पर 3 H छोड़ता है: C2H6।"
+        },
+        {
+          "en": "Double leaves 2 H per C: C2H4; triple leaves 1: C2H2.",
+          "hi": "द्वि प्रति C पर 2 H: C2H4; त्रि पर 1: C2H2।"
+        }
+      ],
+      "answer": {
+        "en": "Ethane 6 H, ethene 4 H, ethyne 2 H atoms per molecule.",
+        "hi": "प्रति अणु एथेन में 6 H, एथीन में 4 H, एथाइन में 2 H।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Name the ester formed from ethanol and ethanoic acid.",
+        "hi": "एथेनॉल और एथेनोइक अम्ल से बनने वाले एस्टर का नाम लिखें।"
+      },
+      "given": {
+        "en": "Ethanol reacts with ethanoic acid in acid-catalysed esterification.",
+        "hi": "एथेनॉल और एथेनोइक अम्ल अम्ल उत्प्रेरित एस्टरीकरण करते हैं।"
+      },
+      "find": {
+        "en": "A justified explanation using the stated conditions.",
+        "hi": "दी गई दशाओं पर आधारित कारण सहित व्याख्या।"
+      },
+      "formula": {
+        "en": "Ethanoic acid, esters and salts: apply the definitions and identify the relevant species.",
+        "hi": "एथेनोइक अम्ल, एस्टर और लवण: परिभाषा लगाएं और संबंधित पदार्थ पहचानें।"
+      },
+      "steps": [
+        {
+          "en": "In CH3COOH + C2H5OH ⇌ CH3COOC2H5 + H2O, identify the acid, alcohol and ester before counting atoms. The acid contributes the ethanoate part of the ester name, while the alcohol contributes ethyl. The catalyst helps the reaction but is not written as an extra atom-containing product. Compare this process with acid–base neutralisation: both can form water, yet the organic product and reaction pattern are different.",
+          "hi": "CH3COOH + C2H5OH ⇌ CH3COOC2H5 + H2O में परमाणु गिनने से पहले अम्ल, ऐल्कोहॉल और एस्टर पहचानें। एस्टर नाम का एथेनोएट भाग अम्ल से और एथिल भाग ऐल्कोहॉल से संबंधित है। उत्प्रेरक अभिक्रिया में सहायता करता है; उसे अतिरिक्त परमाणु वाले उत्पाद की तरह नहीं जोड़ते। इस परिवर्तन की अम्ल-क्षारक उदासीनीकरण से तुलना करें। दोनों में जल बन सकता है, फिर भी कार्बनिक उत्पाद और अभिक्रिया का ढाँचा अलग हैं। केवल जल बनने से दो अभिक्रियाएँ समान प्रकार की नहीं हो जातीं।"
+        },
+        {
+          "en": "Ethyl ethanoate forms along with water in acid-catalysed esterification.",
+          "hi": "अम्ल उत्प्रेरित एस्टरीकरण में जल के साथ एथिल एथेनोएट बनता है।"
+        }
+      ],
+      "answer": {
+        "en": "Ethyl ethanoate forms along with water in acid-catalysed esterification.",
+        "hi": "अम्ल उत्प्रेरित एस्टरीकरण में जल के साथ एथिल एथेनोएट बनता है।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Balance complete combustion of propane.",
+        "hi": "प्रोपेन का पूर्ण दहन संतुलित करें।"
+      },
+      "given": {
+        "en": "C3H8 + O2 → CO2 + H2O; sufficient oxygen.",
+        "hi": "C3H8 + O2 → CO2 + H2O; पर्याप्त ऑक्सीजन।"
+      },
+      "find": {
+        "en": "Smallest whole-number coefficients.",
+        "hi": "न्यूनतम पूर्णांक गुणांक।"
+      },
+      "formula": {
+        "en": "Conserve C, then H, then O.",
+        "hi": "पहले C, फिर H, फिर O संरक्षित करें।"
+      },
+      "steps": [
+        {
+          "en": "3 C require 3CO2; 8 H require 4H2O.",
+          "hi": "3 C के लिए 3CO2; 8 H के लिए 4H2O।"
+        },
+        {
+          "en": "Products have 6 + 4 = 10 O atoms, requiring 5O2.",
+          "hi": "उत्पाद में 6 + 4 = 10 O हैं, इसलिए 5O2 चाहिए।"
+        }
+      ],
+      "answer": {
+        "en": "C3H8 + 5O2 → 3CO2 + 4H2O; coefficients 1:5:3:4.",
+        "hi": "C3H8 + 5O2 → 3CO2 + 4H2O; गुणांक 1:5:3:4।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Carbon usually forms bonds by:",
+        "hi": "कार्बन सामान्यतः बंध कैसे बनाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Sharing electrons",
+            "hi": "इलेक्ट्रॉन साझा करके"
+          },
+          "reason": {
+            "en": "Correct. Sharing forms covalent bonds.",
+            "hi": "सही। साझेदारी सहसंयोजक बंध बनाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always losing 4 protons",
+            "hi": "हमेशा 4 प्रोटॉन खोकर"
+          },
+          "reason": {
+            "en": "Incorrect. Bonding does not remove protons.",
+            "hi": "गलत। बंध बनने में प्रोटॉन नहीं निकलते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Turning into oxygen",
+            "hi": "ऑक्सीजन बनकर"
+          },
+          "reason": {
+            "en": "Incorrect. Chemical bonding does not change the element.",
+            "hi": "गलत। रासायनिक बंध तत्व नहीं बदलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Losing its whole nucleus",
+            "hi": "पूरा नाभिक खोकर"
+          },
+          "reason": {
+            "en": "Incorrect. The nucleus remains in chemical bonding.",
+            "hi": "गलत। रासायनिक बंध में नाभिक बना रहता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The open-chain saturated alkane formula is:",
+        "hi": "खुली शृंखला संतृप्त ऐल्केन का सूत्र है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "CnH2n",
+            "hi": "CnH2n"
+          },
+          "reason": {
+            "en": "Incorrect. This is not the open-chain alkane formula.",
+            "hi": "गलत। यह खुली शृंखला ऐल्केन का सूत्र नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "CnH2n+2",
+            "hi": "CnH2n+2"
+          },
+          "reason": {
+            "en": "Correct. Four valencies per carbon yield this alkane formula.",
+            "hi": "सही। कार्बन की 4 संयोजकता से यह ऐल्केन सूत्र मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CnH2n−2",
+            "hi": "CnH2n−2"
+          },
+          "reason": {
+            "en": "Incorrect. This has fewer H than the corresponding alkane.",
+            "hi": "गलत। इसमें संबंधित ऐल्केन से कम H हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "CnHn",
+            "hi": "CnHn"
+          },
+          "reason": {
+            "en": "Incorrect. This does not generally satisfy alkane valency.",
+            "hi": "गलत। यह सामान्य ऐल्केन संयोजकता पूरी नहीं करता।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which contains a carbon–carbon triple bond?",
+        "hi": "कार्बन-कार्बन त्रि बंध किसमें है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Ethane",
+            "hi": "एथेन"
+          },
+          "reason": {
+            "en": "Incorrect. Ethane has a single carbon–carbon bond.",
+            "hi": "गलत। एथेन में एकल कार्बन-कार्बन बंध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Methane",
+            "hi": "मीथेन"
+          },
+          "reason": {
+            "en": "Incorrect. Methane has only one carbon atom.",
+            "hi": "गलत। मीथेन में केवल एक कार्बन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ethyne",
+            "hi": "एथाइन"
+          },
+          "reason": {
+            "en": "Correct. Ethyne contains C≡C.",
+            "hi": "सही। एथाइन में C≡C है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ethanol",
+            "hi": "एथेनॉल"
+          },
+          "reason": {
+            "en": "Incorrect. Ethanol has no carbon–carbon triple bond.",
+            "hi": "गलत। एथेनॉल में कार्बन-कार्बन त्रि बंध नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Successive homologues differ by:",
+        "hi": "क्रमिक समजात सदस्यों में अंतर है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "O2",
+            "hi": "O2"
+          },
+          "reason": {
+            "en": "Incorrect. O2 is not the series increment.",
+            "hi": "गलत। O2 श्रेणी का अंतर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "NaCl",
+            "hi": "NaCl"
+          },
+          "reason": {
+            "en": "Incorrect. An ionic salt is not the increment.",
+            "hi": "गलत। आयनिक लवण अंतर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "COOH always",
+            "hi": "हमेशा COOH"
+          },
+          "reason": {
+            "en": "Incorrect. The functional group stays the same.",
+            "hi": "गलत। क्रियात्मक समूह समान रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CH2",
+            "hi": "CH2"
+          },
+          "reason": {
+            "en": "Correct. CH2 gives a mass difference of 14 u.",
+            "hi": "सही। CH2 से द्रव्यमान में 14 u का अंतर है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "The functional group of ethanoic acid is:",
+        "hi": "एथेनोइक अम्ल का क्रियात्मक समूह है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "COOH",
+            "hi": "COOH"
+          },
+          "reason": {
+            "en": "Correct. The complete carboxyl group identifies the acid.",
+            "hi": "सही। पूरा कार्बोक्सिल समूह अम्ल बताता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only OH as an alcohol",
+            "hi": "केवल ऐल्कोहॉल वाला OH"
+          },
+          "reason": {
+            "en": "Incorrect. OH within COOH does not make it an alcohol.",
+            "hi": "गलत। COOH के भीतर OH उसे ऐल्कोहॉल नहीं बनाता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cl",
+            "hi": "Cl"
+          },
+          "reason": {
+            "en": "Incorrect. Chlorine is a halo substituent.",
+            "hi": "गलत। क्लोरीन हैलो प्रतिस्थापी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CHO",
+            "hi": "CHO"
+          },
+          "reason": {
+            "en": "Incorrect. CHO is an aldehyde group.",
+            "hi": "गलत। CHO ऐल्डिहाइड समूह है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Hydrogenation of ethene is:",
+        "hi": "एथीन का हाइड्रोजनीकरण है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Substitution",
+            "hi": "प्रतिस्थापन"
+          },
+          "reason": {
+            "en": "Incorrect. No existing atom is replaced here.",
+            "hi": "गलत। यहाँ उपस्थित परमाणु बदला नहीं जाता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Addition",
+            "hi": "संकलन"
+          },
+          "reason": {
+            "en": "Correct. Hydrogen adds across the double bond.",
+            "hi": "सही। हाइड्रोजन द्वि बंध पर जुड़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neutralisation",
+            "hi": "उदासीनीकरण"
+          },
+          "reason": {
+            "en": "Incorrect. No acid–base salt/water reaction is involved.",
+            "hi": "गलत। यह अम्ल-क्षारक लवण/जल अभिक्रिया नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sublimation",
+            "hi": "ऊर्ध्वपातन"
+          },
+          "reason": {
+            "en": "Incorrect. Sublimation is a state change.",
+            "hi": "गलत। ऊर्ध्वपातन अवस्था परिवर्तन है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Ethanol with ethanoic acid under suitable acid catalysis forms:",
+        "hi": "उपयुक्त अम्ल उत्प्रेरण में एथेनॉल और एथेनोइक अम्ल बनाते हैं:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only methane",
+            "hi": "केवल मीथेन"
+          },
+          "reason": {
+            "en": "Incorrect. Methane is not the esterification product.",
+            "hi": "गलत। मीथेन एस्टरीकरण उत्पाद नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sodium chloride",
+            "hi": "सोडियम क्लोराइड"
+          },
+          "reason": {
+            "en": "Incorrect. No sodium or chlorine source is given.",
+            "hi": "गलत। सोडियम या क्लोरीन स्रोत नहीं दिया।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ethyl ethanoate and water",
+            "hi": "एथिल एथेनोएट और जल"
+          },
+          "reason": {
+            "en": "Correct. An ester and water form reversibly.",
+            "hi": "सही। उत्क्रमणीय रूप से एस्टर और जल बनते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Copper oxide",
+            "hi": "कॉपर ऑक्साइड"
+          },
+          "reason": {
+            "en": "Incorrect. No copper reactant is present.",
+            "hi": "गलत। कॉपर अभिकारक उपस्थित नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "In a soap micelle around grease, the tails point:",
+        "hi": "चिकनाई के चारों ओर साबुन मिसेल में पूँछ होती हैं:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only into the air",
+            "hi": "केवल वायु में"
+          },
+          "reason": {
+            "en": "Incorrect. The scene concerns dispersion in water.",
+            "hi": "गलत। दृश्य जल में फैलाव का है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Away from all grease",
+            "hi": "सारी चिकनाई से दूर"
+          },
+          "reason": {
+            "en": "Incorrect. Hydrocarbon tails associate with grease.",
+            "hi": "गलत। हाइड्रोकार्बन पूँछ चिकनाई से जुड़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "At random with no relation to water",
+            "hi": "जल से असंबंधित अनियमित"
+          },
+          "reason": {
+            "en": "Incorrect. The head/tail affinity guides arrangement.",
+            "hi": "गलत। सिरा और पूँछ की प्रकृति दिशा तय करती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Towards the grease",
+            "hi": "चिकनाई की ओर"
+          },
+          "reason": {
+            "en": "Correct. Oil-attracting tails face inward and ionic heads face water.",
+            "hi": "सही। तेल आकर्षित पूँछ भीतर और आयनिक सिरे जल की ओर हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Hard water reduces soap efficiency mainly because:",
+        "hi": "कठोर जल में साबुन की क्षमता मुख्यतः क्यों घटती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Ca2+/Mg2+ form insoluble soap salts",
+            "hi": "Ca2+/Mg2+ अविलेय साबुन लवण बनाते हैं"
+          },
+          "reason": {
+            "en": "Correct. Scum removes soap ions from useful cleaning action.",
+            "hi": "सही। अवक्षेप साबुन आयन सफाई से अलग करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Water becomes pure ethanol",
+            "hi": "जल शुद्ध एथेनॉल बनता है"
+          },
+          "reason": {
+            "en": "Incorrect. Hardness does not turn water into ethanol.",
+            "hi": "गलत। कठोरता जल को एथेनॉल नहीं बनाती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Soap becomes a metal",
+            "hi": "साबुन धातु बनता है"
+          },
+          "reason": {
+            "en": "Incorrect. No metallic soap transformation occurs.",
+            "hi": "गलत। साबुन का धातु में परिवर्तन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every detergent must stop working",
+            "hi": "हर अपमार्जक निष्क्रिय होता है"
+          },
+          "reason": {
+            "en": "Incorrect. Many detergents remain effective in hard water.",
+            "hi": "गलत। कई अपमार्जक कठोर जल में प्रभावी हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two compounds with the same molecular formula but different structures are:",
+        "hi": "समान अणुसूत्र और अलग संरचना वाले यौगिक हैं:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Different elements",
+            "hi": "अलग तत्व"
+          },
+          "reason": {
+            "en": "Incorrect. They are compounds, not elemental identities.",
+            "hi": "गलत। वे यौगिक हैं, अलग तत्व पहचान नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always successive homologues",
+            "hi": "हमेशा क्रमिक समजात"
+          },
+          "reason": {
+            "en": "Incorrect. Successive homologues differ in formula by CH2.",
+            "hi": "गलत। क्रमिक समजात के सूत्र में CH2 अंतर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Isomers",
+            "hi": "समावयवी"
+          },
+          "reason": {
+            "en": "Correct. Structural arrangement differs while formula is unchanged.",
+            "hi": "सही। अणुसूत्र समान और संरचना अलग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only isotopes",
+            "hi": "केवल समस्थानिक"
+          },
+          "reason": {
+            "en": "Incorrect. Isotopes concern nuclei of the same element.",
+            "hi": "गलत। समस्थानिक एक तत्व के नाभिकों से संबंधित हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Which two features explain carbon’s large variety of compounds?",
+        "hi": "कार्बन यौगिकों की विशाल विविधता के मुख्य दो कारण क्या हैं?"
+      },
+      "answer": {
+        "en": "Tetravalency and catenation allow carbon to form many stable bonded arrangements.",
+        "hi": "चतुःसंयोजकता तथा शृंखलन से कार्बन कई स्थिर बंधित संरचनाएँ बनाता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does ethene have fewer hydrogens than ethane?",
+        "hi": "एथीन में एथेन से कम हाइड्रोजन क्यों होते हैं?"
+      },
+      "answer": {
+        "en": "The carbon–carbon double bond uses more of each carbon’s valency, leaving fewer bonds for hydrogen.",
+        "hi": "कार्बन-कार्बन द्वि बंध अधिक संयोजकता उपयोग करता है, इसलिए हाइड्रोजन के लिए कम बंध बचते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the difference between successive homologues and isomers?",
+        "hi": "क्रमिक समजात सदस्यों और समावयवियों में क्या अंतर है?"
+      },
+      "answer": {
+        "en": "Homologues differ by CH2; isomers have the same molecular formula but different structures.",
+        "hi": "समजात सदस्यों में CH2 का अंतर है; समावयवियों का अणुसूत्र समान पर संरचना अलग है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is ethene hydrogenation an addition reaction?",
+        "hi": "एथीन का हाइड्रोजनीकरण संकलन अभिक्रिया क्यों है?"
+      },
+      "answer": {
+        "en": "Hydrogen adds across the double bond to form ethane without replacing another atom.",
+        "hi": "हाइड्रोजन द्वि बंध पर जुड़कर एथेन बनाती है; दूसरा परमाणु प्रतिस्थापित नहीं होता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Name the ester formed from ethanol and ethanoic acid.",
+        "hi": "एथेनॉल और एथेनोइक अम्ल से बनने वाले एस्टर का नाम लिखें।"
+      },
+      "answer": {
+        "en": "Ethyl ethanoate forms along with water in acid-catalysed esterification.",
+        "hi": "अम्ल उत्प्रेरित एस्टरीकरण में जल के साथ एथिल एथेनोएट बनता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does soap form scum in hard water?",
+        "hi": "कठोर जल में साबुन अवक्षेप क्यों बनाता है?"
+      },
+      "answer": {
+        "en": "Calcium and magnesium ions form insoluble salts of the long-chain acids in soap.",
+        "hi": "कैल्सियम और मैग्नीशियम आयन साबुन के लंबी शृंखला अम्लों के अविलेय लवण बनाते हैं।"
+      }
+    }
+  ],
+  "conceptMap": "चतुःसंयोजकता व शृंखलन → बंध व संरचना → समजातीय श्रेणी → क्रियात्मक समूह → दहन / संकलन / प्रतिस्थापन → एथेनॉल व एथेनोइक अम्ल → एस्टर व साबुन",
+  "conceptMapEn": "Tetravalency and catenation → bonds and structure → homologous series → functional groups → combustion / addition / substitution → ethanol and ethanoic acid → esters and soap",
+  "editionBasis": {
+    "en": "Original study companion aligned to the NCERT Science Class 10, reprint 2026–27, and UP Board syllabus. Diagrams are explanatory models, not experimental data.",
+    "hi": "NCERT विज्ञान कक्षा 10, पुनर्मुद्रण 2026–27 तथा UP बोर्ड पाठ्यक्रम पर आधारित मौलिक अध्ययन सहायक। चित्र समझाने वाले मॉडल हैं, प्रयोग के मापे हुए आँकड़े नहीं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Science Class 10, Chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc104.pdf"
+    },
+    {
+      "title": "UP Board Class 10 Science syllabus",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ]
+}

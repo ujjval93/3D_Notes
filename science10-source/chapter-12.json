@@ -1,0 +1,1511 @@
+{
+  "id": "magnetism",
+  "number": 12,
+  "title": {
+    "en": "Magnetic Effects of Electric Current",
+    "hi": "विद्युत धारा के चुंबकीय प्रभाव"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "goal": {
+    "en": "Explain current-produced fields, force direction, solenoids and domestic circuit protection.",
+    "hi": "धारा के क्षेत्र, बल दिशा, परिनालिका तथा घरेलू परिपथ सुरक्षा समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Magnetic fields and compass evidence",
+        "hi": "चुंबकीय क्षेत्र और दिक्सूचक का प्रमाण"
+      },
+      "paragraphs": [
+        {
+          "en": "A compass needle is a small magnet that can turn. Near a bar magnet it changes direction because the surrounding magnetic field exerts a turning effect on it. The north-seeking end of the needle defines the local field direction. Field lines are a representation of this directional pattern, not visible strings or channels that contain a special fluid. Outside a bar magnet they are drawn from north pole to south pole, and inside from south to north, making closed continuous curves. Closer lines indicate a stronger field in the chosen representation. Two field lines do not intersect: an intersection would assign two different directions to the field at a single point. Iron filings align approximately along the field and help reveal a pattern, but a compass is needed to assign direction. A current-carrying wire can also deflect a nearby compass, showing that electric current has a magnetic effect. Remove the current and its contribution to the field disappears, although Earth's field remains.",
+          "hi": "दिक्सूचक (Compass) की सूई घूम सकने वाला छोटा चुंबक है। दंड चुंबक के पास वह दिशा बदलती है क्योंकि आसपास का चुंबकीय क्षेत्र (Magnetic field) उस पर घुमाने वाला प्रभाव डालता है। सूई का उत्तर खोजी सिरा स्थानीय क्षेत्र की दिशा बताता है। क्षेत्र रेखाएँ (Field lines) दिशा व्यवस्था का निरूपण हैं; वे वास्तविक धागे या किसी विशेष द्रव की नालियाँ नहीं हैं। दंड चुंबक के बाहर उन्हें उत्तर ध्रुव से दक्षिण और भीतर दक्षिण से उत्तर खींचते हैं। इस तरह बंद सतत वक्र बनते हैं। चुने चित्र में पास-पास रेखाएँ अधिक प्रबल क्षेत्र दर्शाती हैं। 2 क्षेत्र रेखाएँ नहीं काटतीं; काटने पर एक ही बिंदु पर क्षेत्र की 2 दिशाएँ हो जाएँगी। लोहे का बुरादा क्षेत्र के अनुसार व्यवस्थित होकर पैटर्न दिखाता है, लेकिन दिशा बताने के लिए दिक्सूचक चाहिए। धारावाही तार भी पास की सूई को मोड़ता है; इससे विद्युत धारा का चुंबकीय प्रभाव पता चलता है। धारा बंद करने पर तार का योगदान हटता है, यद्यपि पृथ्वी का चुंबकीय क्षेत्र उपस्थित रहता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use arrowheads for field direction; line density is symbolic unless a scale is specified.",
+          "hi": "क्षेत्र दिशा के लिए तीर दें; पैमाना न हो तो रेखा घनत्व सांकेतिक है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why cannot magnetic field lines cross?",
+          "hi": "चुंबकीय क्षेत्र रेखाएँ एक-दूसरे को क्यों नहीं काटतीं?"
+        },
+        "answer": {
+          "en": "At an intersection the field would need two different directions at one point.",
+          "hi": "काटने पर एक बिंदु पर क्षेत्र की 2 अलग दिशाएँ चाहिए होंगी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "A straight wire and the right-hand thumb rule",
+        "hi": "सीधा तार और दक्षिण-हस्त अंगुष्ठ नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "The magnetic field around a long straight current-carrying wire forms circles in planes perpendicular to the wire. Centre each circle on the wire rather than drawing lines that run radially outward. The right-hand thumb rule gives direction: imagine holding the conductor with the right hand, thumb pointing along conventional current; curled fingers show the field around it. Looking from opposite ends changes whether the same circle appears clockwise or anticlockwise, so always state the viewing direction. Reversing current reverses the field direction. Increasing current increases field strength, while moving farther from the wire weakens it. At zero model current, the wire's magnetic contribution is zero; this does not erase all background fields. The scene lets current take positive and negative values to represent opposite directions, not negative numbers of electrons. Compare equal magnitudes such as +3 A and -3 A to isolate direction from strength. A compass close to the wire responds to the combination of its field and Earth's field.",
+          "hi": "लंबे सीधे धारावाही तार के चारों ओर चुंबकीय क्षेत्र तार के लंबवत तलों में वृत्त बनाता है। हर वृत्त का केंद्र तार पर रखें; रेखाओं को त्रिज्या की तरह बाहर जाती न बनाएँ। दक्षिण-हस्त अंगुष्ठ नियम (Right-hand thumb rule) दिशा बताता है। दाएँ हाथ से तार पकड़ने की कल्पना करें; अंगूठा परंपरागत धारा की दिशा में हो तो मुड़ी उँगलियाँ क्षेत्र की दिशा बताती हैं। विपरीत सिरों से देखने पर एक ही वृत्त दक्षिणावर्त या वामावर्त लगता है, इसलिए देखने की दिशा लिखें। धारा उलटने पर क्षेत्र दिशा उलटती है। धारा बढ़ाने पर क्षेत्र अधिक प्रबल और तार से दूर जाने पर कमजोर होता है। मॉडल धारा शून्य होने पर तार का चुंबकीय योगदान शून्य है; सभी पृष्ठभूमि क्षेत्र मिट नहीं जाते। दृश्य में धन और ऋण धारा विपरीत दिशा दर्शाती है, इलेक्ट्रॉन की ऋण संख्या नहीं। दिशा को प्रबलता से अलग जाँचने के लिए +3 A और -3 A जैसे समान परिमाण तुलना करें। तार के पास दिक्सूचक तार तथा पृथ्वी के संयुक्त क्षेत्र को मानता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Right hand: current gives field direction. Do not use the left-hand force rule for this task.",
+          "hi": "दायाँ हाथ: धारा से क्षेत्र दिशा। इस काम में बाएँ हाथ का बल नियम न लगाएँ।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What changes when +2 A becomes -2 A in the same straight wire?",
+          "hi": "उसी सीधे तार में +2 A से -2 A करने पर क्या बदलता है?"
+        },
+        "answer": {
+          "en": "The field direction reverses while its strength at a fixed distance is unchanged in the ideal model.",
+          "hi": "आदर्श मॉडल में क्षेत्र दिशा उलटती है, लेकिन समान दूरी पर प्रबलता समान रहती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Circular loops and adding field contributions",
+        "hi": "वृत्ताकार पाश और क्षेत्र योगदानों का योग"
+      },
+      "paragraphs": [
+        {
+          "en": "A circular current loop has a magnetic field made from contributions of all small wire segments. Near each segment the pattern resembles that around a straight wire. At the centre, those contributions point in the same axial direction and reinforce one another. Applying the right-hand rule consistently around the loop helps determine that direction. If current looks anticlockwise when the loop is viewed from one side, the field at its centre points towards that observer; clockwise current gives the opposite direction. The viewing side must be included with such a statement. For a coil with several similar close turns carrying the same current, their central fields add, so more turns generally give a stronger central field when size and arrangement remain the same. Changing the loop radius or spreading the turns changes the geometry and prevents a simple comparison based only on turn count. The diagram is a field pattern rather than a prediction of how iron filings would remain suspended in empty space without support.",
+          "hi": "वृत्ताकार धारावाही पाश (Circular current loop) का क्षेत्र तार के हर छोटे भाग के योगदान से बनता है। प्रत्येक भाग के पास पैटर्न सीधे तार जैसा होता है। केंद्र पर योगदान एक ही अक्षीय दिशा में होते हैं और जुड़ते हैं। पाश के चारों ओर दक्षिण-हस्त नियम लगातार लगाने से यह दिशा मिलती है। एक ओर से देखने पर धारा वामावर्त हो तो केंद्र का क्षेत्र उस देखने वाले की ओर है; दक्षिणावर्त धारा में विपरीत है। ऐसे कथन में देखने वाली ओर लिखना आवश्यक है। समान आकार के पास-पास फेरों वाली कुंडली में एक ही धारा हो तो केंद्रीय क्षेत्र जुड़ते हैं। इसलिए आकार तथा व्यवस्था समान रखते अधिक फेरे सामान्यतः अधिक केंद्रीय क्षेत्र देते हैं। पाश की त्रिज्या बदलने या फेरों को दूर फैलाने से ज्यामिति बदलती है; तब केवल फेरे गिनकर तुलना सही नहीं होगी। चित्र क्षेत्र का पैटर्न है। इसका अर्थ यह नहीं कि सहारे के बिना लोहे का बुरादा खाली स्थान में अपने आप तैरता रहेगा। बुरादा और दिक्सूचक अलग प्रकार के निरीक्षण प्रमाण देते हैं, उन्हें मॉडल रेखाओं से पूरी तरह समान न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "State which face you observe before calling a current clockwise or anticlockwise.",
+          "hi": "धारा को दक्षिणावर्त या वामावर्त कहने से पहले देखने वाली सतह बताएँ।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why do identical coil turns reinforce the central field?",
+          "hi": "समान कुंडली फेरे केंद्रीय क्षेत्र को क्यों बढ़ाते हैं?"
+        },
+        "answer": {
+          "en": "Their field contributions at the centre have the same direction and add.",
+          "hi": "केंद्र पर उनके क्षेत्र योगदान समान दिशा में होते हैं और जुड़ते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Solenoids and electromagnets",
+        "hi": "परिनालिका और विद्युत चुंबक"
+      },
+      "paragraphs": [
+        {
+          "en": "A solenoid is a coil with many turns of insulated wire wound in a cylinder. Its field resembles a bar magnet: one end acts as north and the other as south. Inside a long solenoid, away from the ends, field lines are nearly parallel and equally spaced, indicating a nearly uniform field. Reversing current swaps the ends' magnetic roles. A soft-iron core can make an electromagnet much stronger; its magnetisation changes substantially when current is switched. In the scene the current is fixed at 1 A and the geometry is idealised while turn count changes from 4 to 20. The relative strength is taken proportional to turns only for a fixed-length ideal comparison. It is not a universal formula independent of length, core or shape. At 16 turns the indicated strength is twice that at 8 turns under these assumptions. An electromagnet is useful because its magnetic action can be controlled electrically. Heating and wire ratings limit real coils, so the virtual slider does not define a construction specification.",
+          "hi": "परिनालिका (Solenoid) बेलन पर लिपटे विद्युतरोधी तार के अनेक फेरों की कुंडली है। इसका क्षेत्र दंड चुंबक जैसा है; 1 सिरा उत्तर और दूसरा दक्षिण ध्रुव जैसा कार्य करता है। लंबी परिनालिका के भीतर, सिरों से दूर, रेखाएँ लगभग समांतर और बराबर दूरी पर होती हैं। यह लगभग एकसमान क्षेत्र दर्शाता है। धारा उलटने पर सिरों की चुंबकीय भूमिका बदलती है। नर्म लोहे का क्रोड (Soft-iron core) विद्युत चुंबक अधिक प्रबल कर सकता है; धारा चालू-बंद करने पर उसका चुंबकन काफी बदलता है। दृश्य में धारा 1 A स्थिर और ज्यामिति आदर्श है, जबकि फेरे 4 से 20 बदलते हैं। केवल निश्चित लंबाई की आदर्श तुलना में सापेक्ष प्रबलता को फेरों के समानुपाती लिया गया है। यह लंबाई, क्रोड या आकार से स्वतंत्र सार्वभौमिक सूत्र नहीं। इन्हीं मान्यताओं में 16 फेरों का संकेत 8 फेरों से दोगुना है। विद्युत चुंबक उपयोगी है क्योंकि उसका चुंबकीय प्रभाव विद्युत से नियंत्रित किया जा सकता है। वास्तविक कुंडली में गरमी और तार की क्षमता सीमाएँ लगाती हैं; आभासी स्लाइडर निर्माण विनिर्देश नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Uniform means nearly the same field direction and strength in the specified interior region.",
+          "hi": "एकसमान का अर्थ बताए भीतरी भाग में लगभग समान दिशा और प्रबलता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "In the fixed-geometry scene, how does 12 turns compare with 6 turns?",
+          "hi": "स्थिर ज्यामिति दृश्य में 12 फेरे, 6 फेरों से कैसे तुलना करते हैं?"
+        },
+        "answer": {
+          "en": "The relative interior field is twice as large at the same 1 A current in the ideal model.",
+          "hi": "आदर्श मॉडल में समान 1 A धारा पर सापेक्ष भीतरी क्षेत्र दोगुना है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Force on a conductor in a magnetic field",
+        "hi": "चुंबकीय क्षेत्र में चालक पर बल"
+      },
+      "paragraphs": [
+        {
+          "en": "A current-carrying conductor placed in an external magnetic field can experience a force. This is a different question from finding the field created by that conductor. Force is greatest when current is perpendicular to the external field and zero in the ideal straight-wire case when they are parallel. Reversing current while keeping the field fixed reverses force; reversing the field alone also reverses force. Reversing both together restores the original force direction. Fleming’s left-hand rule relates the three perpendicular directions: first finger along magnetic field, second finger along conventional current, and thumb along force or motion. Keep the fingers mutually perpendicular rather than bending them to fit an expected answer. In the scene the external field direction stays fixed while signed current changes. The force arrow is relative, not a measured load or a guarantee of a real device's motion. The supplementary relation F = BIl sin θ can describe the trend, but a numerical derivation of it is not required for this chapter's stated board coverage.",
+          "hi": "बाहरी चुंबकीय क्षेत्र में रखा धारावाही चालक बल अनुभव कर सकता है। यह प्रश्न चालक द्वारा बनाए क्षेत्र की दिशा निकालने से अलग है। धारा और बाहरी क्षेत्र लंबवत होने पर बल अधिकतम है; आदर्श सीधे तार में दोनों समांतर हों तो बल शून्य है। क्षेत्र स्थिर रख धारा उलटने पर बल उलटता है। केवल क्षेत्र उलटने पर भी बल उलटता है। दोनों को साथ उलटने पर मूल बल दिशा लौटती है। फ्लेमिंग का वामहस्त नियम (Fleming’s left-hand rule) 3 लंबवत दिशाएँ जोड़ता है। प्रथम उँगली चुंबकीय क्षेत्र में, दूसरी परंपरागत धारा में और अंगूठा बल या गति की दिशा में रखें। उँगलियाँ परस्पर लंबवत रखें; अपेक्षित उत्तर के अनुसार उन्हें मनमाना न मोड़ें। दृश्य में बाहरी क्षेत्र स्थिर रहता है और चिह्न वाली धारा बदलती है। बल का तीर सापेक्ष है; वह मापा भार या वास्तविक युक्ति की गति की गारंटी नहीं है। पूरक संबंध F = BIl sin θ प्रवृत्ति बता सकता है, लेकिन उसकी संख्यात्मक व्युत्पत्ति इस अध्याय के बताए बोर्ड विषयों के लिए आवश्यक नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Left hand: field + current → force. Right thumb: current → surrounding field.",
+          "hi": "बायाँ हाथ: क्षेत्र + धारा → बल। दायाँ अंगूठा: धारा → आसपास का क्षेत्र।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to force if only current reverses?",
+          "hi": "केवल धारा उलटने पर बल का क्या होता है?"
+        },
+        "answer": {
+          "en": "Its direction reverses when the same non-parallel external field is retained.",
+          "hi": "समान असमांतर बाहरी क्षेत्र बनाए रखने पर बल दिशा उलटती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Domestic circuits and independent branches",
+        "hi": "घरेलू परिपथ और स्वतंत्र शाखाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "A domestic circuit supplies appliances in parallel so each branch receives the supply potential difference and can be switched independently. A live conductor provides the supply connection, and neutral completes the return path in the usual schematic. An earth conductor has a protective role rather than serving as the normal load-current path. In textbook diagrams switches and protective devices are placed in the live line so opening it disconnects the appliance from that supply side. The total current demanded from the supply is the sum of active branch currents. Connecting many high-power appliances can exceed a circuit's rating even though each appliance works normally by itself. Do not infer safety from a device still operating or from an apparently small voltage drop. Wiring colours, connectors and protective arrangements can vary, and an educational diagram cannot identify an unknown real wire. The interactive models use low-voltage-style symbols only. Actual household wiring, faults and protective-device selection should be dealt with by a qualified electrician, not tested by a student.",
+          "hi": "घरेलू परिपथ (Domestic circuit) में युक्तियाँ पार्श्वक्रम में होती हैं, जिससे हर शाखा को आपूर्ति विभवांतर मिले और उसका स्वतंत्र स्विच हो। सामान्य आरेख में विद्युतमय तार (Live conductor) आपूर्ति जोड़ तथा उदासीन तार (Neutral conductor) वापसी पथ देता है। भू-संपर्क तार (Earth conductor) सुरक्षा के लिए है, सामान्य भार धारा के पथ के लिए नहीं। पाठ्यपुस्तक चित्र में स्विच और सुरक्षा उपकरण विद्युतमय लाइन में होते हैं, ताकि खोलने पर युक्ति आपूर्ति की उस ओर से अलग हो। स्रोत से माँगी कुल धारा चालू शाखाओं की धाराओं का योग है। अनेक अधिक शक्ति की युक्तियाँ जोड़ने पर परिपथ सीमा पार हो सकती है, भले हर युक्ति अकेले सामान्य चले। युक्ति के चलते रहने या छोटे विभव पतन से सुरक्षा का निष्कर्ष न निकालें। तार के रंग, जोड़ तथा सुरक्षा व्यवस्था अलग हो सकते हैं; पढ़ाई का आरेख किसी अज्ञात वास्तविक तार की पहचान नहीं कर सकता। संवादात्मक मॉडल केवल कम-विभव जैसे सांकेतिक चित्र हैं। घरेलू वायरिंग, दोष और सुरक्षा उपकरण चयन योग्य विद्युतकर्मी का कार्य है, छात्र का परीक्षण नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Parallel branches share voltage, but their currents add at the supply.",
+          "hi": "पार्श्व शाखाओं पर विभवांतर समान है, लेकिन स्रोत पर धाराएँ जुड़ती हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why do domestic appliances use parallel rather than one series chain?",
+          "hi": "घरेलू युक्तियाँ एक श्रेणी शृंखला की जगह पार्श्वक्रम में क्यों हैं?"
+        },
+        "answer": {
+          "en": "Each receives the supply voltage and can operate independently of the other branches.",
+          "hi": "हर युक्ति को आपूर्ति विभवांतर मिलता है और दूसरी शाखाओं से स्वतंत्र चल सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Overload, short circuit, fuse and earthing",
+        "hi": "अतिभारण, लघुपथन, फ्यूज और भू-संपर्क"
+      },
+      "paragraphs": [
+        {
+          "en": "Overloading means current demand exceeds the safe rating of a circuit, often because too many high-power loads are used together. A short circuit is an unintended low-resistance path, for example when damaged insulation allows live and neutral conductors to contact. Both can produce excessive current and heating, but they are different causes. A fuse is a protective element connected in series; sufficient excess current heats it until it melts and opens the circuit. It must be of the appropriate rating, not replaced by arbitrary thick wire. A circuit breaker also interrupts unsafe current according to its design. Earthing connects an exposed metal body to a protective low-resistance path, helping protective devices operate during certain faults. It does not make careless contact with live wiring harmless. State the function of each safety measure rather than treating fuse, switch and earth as interchangeable. This lesson asks students to interpret diagrams and explain principles; it does not ask them to open appliances, make faults or touch supply wiring.",
+          "hi": "अतिभारण (Overloading) में परिपथ से माँगी धारा उसकी सुरक्षित सीमा से अधिक होती है; अक्सर अनेक अधिक शक्ति भार साथ चलने से ऐसा होता है। लघुपथन (Short circuit) अनचाहा कम-प्रतिरोध पथ है, जैसे क्षतिग्रस्त विद्युतरोधन से विद्युतमय तथा उदासीन तार का संपर्क। दोनों में अधिक धारा और गरमी हो सकती है, लेकिन कारण अलग हैं। फ्यूज (Fuse) श्रेणीक्रम में लगा सुरक्षा अवयव है। पर्याप्त अधिक धारा उसे गरम करके पिघलाती है और परिपथ खुल जाता है। उसका उचित निर्धारित मान चाहिए; मनमाने मोटे तार से बदलना गलत है। परिपथ-विच्छेदक (Circuit breaker) भी अपने डिजाइन के अनुसार असुरक्षित धारा रोकता है। भू-संपर्क (Earthing) खुले धातु शरीर को सुरक्षात्मक कम-प्रतिरोध पथ से जोड़ता है, जिससे कुछ दोषों में सुरक्षा उपकरण काम कर सकें। इससे विद्युतमय तार छूना हानिरहित नहीं बनता। फ्यूज, स्विच और भू-संपर्क को एक जैसा न लिखें; हर उपाय का अलग काम बताएँ। पाठ का उद्देश्य चित्र पढ़ना और सिद्धांत समझना है। इसमें युक्ति खोलना, जानबूझकर दोष बनाना या आपूर्ति तार छूना शामिल नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Protection reduces risk under specified conditions; it is not permission to experiment with mains.",
+          "hi": "सुरक्षा उपाय निश्चित दशाओं में जोखिम घटाते हैं; मेन पर प्रयोग की अनुमति नहीं देते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Give one difference between overload and short circuit.",
+          "hi": "अतिभारण और लघुपथन में 1 अंतर लिखें।"
+        },
+        "answer": {
+          "en": "Overload is excessive demand through loads; a short circuit creates an unintended low-resistance route.",
+          "hi": "अतिभारण में भारों की माँग अधिक है; लघुपथन में अनचाहा कम-प्रतिरोध रास्ता बनता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Model comparisons and choosing the correct rule",
+        "hi": "मॉडल तुलना और सही नियम का चयन"
+      },
+      "paragraphs": [
+        {
+          "en": "Before using a hand rule, identify the question. If current in a wire is given and the surrounding field is requested, use the right-hand thumb rule. If an external field and current are given and force is requested, use Fleming’s left-hand rule. Label the observer's viewpoint and use conventional current throughout. In a fair virtual investigation change one factor while holding others fixed: reverse current at equal magnitude, change solenoid turns at fixed current and geometry, or compare force directions in the same external field. Record both a qualitative conclusion and the condition under which it holds. Field lines, moving markers and force arrows are symbolic. The model does not calculate microscopic charge motion, core saturation, temperature rise or a real electromagnet's lifting capacity. The selected current board coverage centres on fields, current-produced magnetism, force direction and domestic circuits. Additional device topics from other editions should not be assumed to be examinable merely because they use magnetism; check the official syllabus separately.",
+          "hi": "हाथ का नियम लगाने से पहले प्रश्न पहचानें। तार की धारा देकर आसपास का क्षेत्र पूछा हो तो दक्षिण-हस्त अंगुष्ठ नियम लगाएँ। बाहरी क्षेत्र और धारा देकर बल पूछा हो तो फ्लेमिंग का वामहस्त नियम लें। देखने का दृष्टिकोण लिखें और पूरे उत्तर में परंपरागत धारा रखें। निष्पक्ष आभासी जाँच में बाकी कारक स्थिर रख 1 बदलें। समान परिमाण पर धारा उलटें, स्थिर धारा तथा ज्यामिति में परिनालिका फेरे बदलें, या उसी बाहरी क्षेत्र में बल दिशाएँ तुलना करें। गुणात्मक निष्कर्ष के साथ उसकी शर्त भी लिखें। क्षेत्र रेखाएँ, चलते संकेत और बल तीर सांकेतिक हैं। मॉडल सूक्ष्म आवेश गति, क्रोड संतृप्ति, ताप वृद्धि या वास्तविक विद्युत चुंबक की भार उठाने की क्षमता नहीं निकालता। वर्तमान चुने बोर्ड विषय क्षेत्र, धारा का चुंबकत्व, बल दिशा तथा घरेलू परिपथ हैं। अन्य संस्करणों के अतिरिक्त युक्ति विषय केवल चुंबकत्व उपयोग करने से स्वतः परीक्षा विषय नहीं बन जाते। उनके लिए आधिकारिक पाठ्यक्रम अलग जाँचें। व्याख्या में दृश्य से मिले प्रमाण और मॉडल की मान्यता दोनों स्पष्ट रखने पर अनावश्यक सामान्यीकरण से बचते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Change one factor at a time and state the conditions that support your conclusion.",
+          "hi": "एक समय में 1 कारक बदलें और अपने निष्कर्ष की शर्तें लिखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which hand rule finds the magnetic field around a straight wire?",
+          "hi": "सीधे तार के आसपास चुंबकीय क्षेत्र कौन सा हाथ नियम बताता है?"
+        },
+        "answer": {
+          "en": "The right-hand thumb rule, with the thumb along conventional current.",
+          "hi": "दक्षिण-हस्त अंगुष्ठ नियम; अंगूठा परंपरागत धारा की दिशा में।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "B_relative ∝ N (fixed geometry and current)",
+      "meaning": {
+        "en": "Supplementary qualitative solenoid comparison only: N is turn count; not an absolute field calculation.",
+        "hi": "केवल पूरक गुणात्मक परिनालिका तुलना: N फेरे हैं; निरपेक्ष क्षेत्र गणना नहीं।"
+      },
+      "units": {
+        "en": "N is a count; B_relative is dimensionless.",
+        "hi": "N गिनती है; B_relative इकाई रहित है।"
+      }
+    },
+    {
+      "expression": "F = BIl sin θ",
+      "meaning": {
+        "en": "Supplementary relation for a straight conductor of length l in a uniform external field; not required derivation. θ is between current and field.",
+        "hi": "एकसमान बाहरी क्षेत्र में l लंबाई के सीधे चालक का पूरक संबंध; आवश्यक व्युत्पत्ति नहीं। θ धारा और क्षेत्र के बीच कोण है।"
+      },
+      "units": {
+        "en": "F: N; B: T; I: A; l: m. Scene shows relative force only.",
+        "hi": "F: N; B: T; I: A; l: m। दृश्य केवल सापेक्ष बल दिखाता है।"
+      }
+    },
+    {
+      "expression": "I_total = I1 + I2 + …; P = VI",
+      "meaning": {
+        "en": "Parallel branch currents add; power relation helps compare load demand.",
+        "hi": "पार्श्व शाखा धाराएँ जुड़ती हैं; शक्ति संबंध भार माँग की तुलना करता है।"
+      },
+      "units": {
+        "en": "I: A; P: W; V: V.",
+        "hi": "I: A; P: W; V: V।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not interchange the right-hand field rule and Fleming’s left-hand force rule. A negative current reverses direction, not the amount of matter. Field-line density and force arrows are symbolic.",
+    "hi": "दक्षिण-हस्त क्षेत्र नियम और फ्लेमिंग का वामहस्त बल नियम न बदलें। ऋण धारा दिशा उलटती है, पदार्थ की मात्रा नहीं। रेखा घनत्व और बल तीर सांकेतिक हैं।"
+  },
+  "summary": [
+    {
+      "en": "Magnetic field lines are closed curves and never intersect.",
+      "hi": "चुंबकीय क्षेत्र रेखाएँ बंद वक्र हैं और नहीं काटतीं।"
+    },
+    {
+      "en": "Current produces magnetic field; reversing it reverses field direction.",
+      "hi": "धारा चुंबकीय क्षेत्र बनाती है; धारा उलटे तो क्षेत्र दिशा उलटती है।"
+    },
+    {
+      "en": "A long solenoid has a nearly uniform interior field.",
+      "hi": "लंबी परिनालिका का भीतरी क्षेत्र लगभग एकसमान है।"
+    },
+    {
+      "en": "Fleming’s left-hand rule finds force from field and current.",
+      "hi": "फ्लेमिंग का वामहस्त नियम क्षेत्र तथा धारा से बल बताता है।"
+    },
+    {
+      "en": "Parallel domestic branches need suitable overload, short-circuit and earth protection.",
+      "hi": "पार्श्व घरेलू शाखाओं में उचित अतिभारण, लघुपथन और भू-संपर्क सुरक्षा चाहिए।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A straight vertical wire carries current upward. How do you determine its field direction?",
+        "hi": "ऊर्ध्व सीधे तार में धारा ऊपर है। क्षेत्र दिशा कैसे तय करेंगे?"
+      },
+      "given": {
+        "en": "Upward conventional current; straight wire.",
+        "hi": "परंपरागत धारा ऊपर; सीधा तार।"
+      },
+      "find": {
+        "en": "Direction around the wire",
+        "hi": "तार के चारों ओर दिशा"
+      },
+      "formula": {
+        "en": "Right-hand thumb rule",
+        "hi": "Right-hand thumb rule"
+      },
+      "steps": [
+        {
+          "en": "Point the right thumb upward.",
+          "hi": "दायाँ अंगूठा ऊपर रखें।"
+        },
+        {
+          "en": "Curl the fingers around the wire.",
+          "hi": "उँगलियाँ तार के चारों ओर मोड़ें।"
+        },
+        {
+          "en": "The curled direction gives circular field lines, with viewpoint stated.",
+          "hi": "मुड़ी दिशा वृत्ताकार क्षेत्र बताती है; देखने की दिशा लिखें।"
+        }
+      ],
+      "answer": {
+        "en": "Circular field direction follows the curled right-hand fingers.",
+        "hi": "वृत्ताकार क्षेत्र दिशा दाएँ हाथ की मुड़ी उँगलियों में है।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "What changes when the same wire current reverses from +3 A to -3 A?",
+        "hi": "उसी तार की धारा +3 A से -3 A हो तो क्या बदलता है?"
+      },
+      "given": {
+        "en": "Same geometry, equal current magnitude, reversed direction.",
+        "hi": "समान ज्यामिति, धारा का समान परिमाण, उलटी दिशा।"
+      },
+      "find": {
+        "en": "Change in field direction and strength",
+        "hi": "क्षेत्र दिशा और प्रबलता का परिवर्तन"
+      },
+      "formula": {
+        "en": "Field direction follows current by the right-hand rule",
+        "hi": "Field direction follows current by the right-hand rule"
+      },
+      "steps": [
+        {
+          "en": "Reverse the thumb direction.",
+          "hi": "अंगूठे की दिशा उलटें।"
+        },
+        {
+          "en": "The curled finger direction reverses.",
+          "hi": "उँगलियों की मुड़ी दिशा उलटती है।"
+        },
+        {
+          "en": "Equal magnitude at equal distance gives equal strength in the ideal model.",
+          "hi": "आदर्श मॉडल में समान दूरी पर समान परिमाण से समान प्रबलता है।"
+        }
+      ],
+      "answer": {
+        "en": "Field direction reverses; ideal strength stays the same.",
+        "hi": "क्षेत्र दिशा उलटती है; आदर्श प्रबलता समान रहती है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Compare 8 and 20 solenoid turns in the fixed-geometry 1 A scene.",
+        "hi": "स्थिर ज्यामिति और 1 A दृश्य में 8 तथा 20 फेरों की तुलना करें।"
+      },
+      "given": {
+        "en": "N1 = 8; N2 = 20; same current, length and core assumptions.",
+        "hi": "N1 = 8; N2 = 20; समान धारा, लंबाई और क्रोड मान्यताएँ।"
+      },
+      "find": {
+        "en": "Relative field ratio",
+        "hi": "सापेक्ष क्षेत्र अनुपात"
+      },
+      "formula": {
+        "en": "B2/B1 = N2/N1 (ideal comparison)",
+        "hi": "B2/B1 = N2/N1 (ideal comparison)"
+      },
+      "steps": [
+        {
+          "en": "Hold the geometry and current fixed.",
+          "hi": "ज्यामिति तथा धारा स्थिर रखें।"
+        },
+        {
+          "en": "B2/B1 = 20/8.",
+          "hi": "B2/B1 = 20/8।"
+        },
+        {
+          "en": "The ratio is 2.5, not an absolute field in tesla.",
+          "hi": "अनुपात 2.5 है, टेस्ला में निरपेक्ष क्षेत्र नहीं।"
+        }
+      ],
+      "answer": {
+        "en": "2.5 times the relative field under the stated ideal assumptions.",
+        "hi": "बताई आदर्श मान्यताओं में 2.5 गुना सापेक्ष क्षेत्र।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A wire current is eastward and external field is northward. Determine force direction.",
+        "hi": "तार में धारा पूर्व तथा बाहरी क्षेत्र उत्तर है। बल दिशा निकालें।"
+      },
+      "given": {
+        "en": "East, north and upward form a right-handed geographic frame; current perpendicular to field.",
+        "hi": "पूर्व, उत्तर और ऊपर दिशाएँ दक्षिणावर्ती स्थानिक तंत्र हैं; धारा क्षेत्र के लंबवत।"
+      },
+      "find": {
+        "en": "Force direction",
+        "hi": "बल दिशा"
+      },
+      "formula": {
+        "en": "Fleming’s left-hand rule",
+        "hi": "Fleming’s left-hand rule"
+      },
+      "steps": [
+        {
+          "en": "Point first finger north along the magnetic field.",
+          "hi": "पहली उँगली क्षेत्र के साथ उत्तर रखें।"
+        },
+        {
+          "en": "Point second finger east along conventional current.",
+          "hi": "दूसरी उँगली परंपरागत धारा के साथ पूर्व रखें।"
+        },
+        {
+          "en": "The thumb points upward; reversing current would reverse it.",
+          "hi": "अंगूठा ऊपर है; धारा उलटने पर बल नीचे होगा।"
+        }
+      ],
+      "answer": {
+        "en": "Upward. The force is perpendicular to both current and field.",
+        "hi": "ऊपर। बल धारा और क्षेत्र दोनों के लंबवत है।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Two parallel loads on an ideal 200 V source have powers 600 W and 1000 W. Find total current and explain overload risk for a 6 A rated branch circuit.",
+        "hi": "आदर्श 200 V स्रोत की 2 पार्श्व युक्तियों की शक्तियाँ 600 W और 1000 W हैं। कुल धारा और 6 A सीमा के परिपथ में अतिभारण समझाएँ।"
+      },
+      "given": {
+        "en": "V = 200 V; P1 = 600 W; P2 = 1000 W; circuit rating 6 A. Hypothetical arithmetic example.",
+        "hi": "V = 200 V; P1 = 600 W; P2 = 1000 W; सीमा 6 A। काल्पनिक गणना उदाहरण।"
+      },
+      "find": {
+        "en": "Total current and comparison with rating",
+        "hi": "कुल धारा और सीमा से तुलना"
+      },
+      "formula": {
+        "en": "I = P/V; I_total = I1 + I2",
+        "hi": "I = P/V; I_total = I1 + I2"
+      },
+      "steps": [
+        {
+          "en": "I1 = 600/200 = 3 A.",
+          "hi": "I1 = 600/200 = 3 A।"
+        },
+        {
+          "en": "I2 = 1000/200 = 5 A.",
+          "hi": "I2 = 1000/200 = 5 A।"
+        },
+        {
+          "en": "Total = 8 A, exceeding 6 A.",
+          "hi": "कुल = 8 A, जो 6 A से अधिक है।"
+        },
+        {
+          "en": "This is overload demand, not necessarily a short circuit; do not test it physically.",
+          "hi": "यह अतिभारण माँग है, जरूरी नहीं लघुपथन; वास्तविक परीक्षण न करें।"
+        }
+      ],
+      "answer": {
+        "en": "8 A; exceeds the stated rating by 2 A.",
+        "hi": "8 A; बताई सीमा से 2 A अधिक।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A compass near a current-carrying wire can deflect because current produces:",
+        "hi": "धारावाही तार के पास दिक्सूचक मुड़ता है क्योंकि धारा बनाती है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A second gravity field only",
+            "hi": "केवल दूसरा गुरुत्व क्षेत्र"
+          },
+          "reason": {
+            "en": "The observed directional effect is magnetic.",
+            "hi": "देखा गया दिशात्मक प्रभाव चुंबकीय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A magnetic field",
+            "hi": "चुंबकीय क्षेत्र"
+          },
+          "reason": {
+            "en": "The compass responds to the combined magnetic field.",
+            "hi": "दिक्सूचक संयुक्त चुंबकीय क्षेत्र को मानता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No external effect",
+            "hi": "कोई बाहरी प्रभाव नहीं"
+          },
+          "reason": {
+            "en": "Deflection is evidence of an external effect.",
+            "hi": "मुड़ना बाहरी प्रभाव का प्रमाण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Permanent north poles only",
+            "hi": "केवल स्थायी उत्तर ध्रुव"
+          },
+          "reason": {
+            "en": "The wire field is not a collection of isolated north poles.",
+            "hi": "तार का क्षेत्र अलग उत्तर ध्रुवों का समूह नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Outside a bar magnet field lines run:",
+        "hi": "दंड चुंबक के बाहर क्षेत्र रेखाएँ जाती हैं:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "North to south",
+            "hi": "उत्तर से दक्षिण"
+          },
+          "reason": {
+            "en": "This is the defined external direction.",
+            "hi": "यह बाहर की निर्धारित दिशा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "South to north only",
+            "hi": "केवल दक्षिण से उत्तर"
+          },
+          "reason": {
+            "en": "South to north describes the internal continuation.",
+            "hi": "दक्षिण से उत्तर भीतर की निरंतरता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Without direction",
+            "hi": "बिना दिशा"
+          },
+          "reason": {
+            "en": "Compass north end defines a direction.",
+            "hi": "दिक्सूचक उत्तर सिरा दिशा बताता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Across each other at every point",
+            "hi": "हर बिंदु पर एक-दूसरे को काटती"
+          },
+          "reason": {
+            "en": "Field lines do not intersect.",
+            "hi": "क्षेत्र रेखाएँ नहीं काटतीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which rule gives field direction around a straight current-carrying wire?",
+        "hi": "सीधे धारावाही तार के आसपास क्षेत्र दिशा का नियम है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Ohm’s law",
+            "hi": "ओम का नियम"
+          },
+          "reason": {
+            "en": "Ohm’s law connects V, I and R.",
+            "hi": "ओम का नियम V, I और R जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Fleming’s left-hand rule",
+            "hi": "फ्लेमिंग का वामहस्त नियम"
+          },
+          "reason": {
+            "en": "The left-hand rule gives force from field and current.",
+            "hi": "वामहस्त नियम क्षेत्र और धारा से बल देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Right-hand thumb rule",
+            "hi": "दक्षिण-हस्त अंगुष्ठ नियम"
+          },
+          "reason": {
+            "en": "Thumb follows current and fingers give field direction.",
+            "hi": "अंगूठा धारा तथा उँगलियाँ क्षेत्र दिशा बताती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Lens formula",
+            "hi": "लेंस सूत्र"
+          },
+          "reason": {
+            "en": "Lens formula concerns optical imaging.",
+            "hi": "लेंस सूत्र प्रकाशीय चित्र का है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "At fixed distance, reversing +2 A to -2 A ideally makes the wire field:",
+        "hi": "निश्चित दूरी पर +2 A से -2 A करने से आदर्श तार क्षेत्र:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Twice as strong",
+            "hi": "दोगुना प्रबल"
+          },
+          "reason": {
+            "en": "Magnitude is unchanged.",
+            "hi": "परिमाण नहीं बदला है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero always",
+            "hi": "हमेशा शून्य"
+          },
+          "reason": {
+            "en": "Only zero current gives zero wire contribution.",
+            "hi": "केवल शून्य धारा पर तार योगदान शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged in direction",
+            "hi": "दिशा में समान"
+          },
+          "reason": {
+            "en": "The field follows current direction.",
+            "hi": "क्षेत्र धारा दिशा का अनुसरण करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Opposite in direction, same strength",
+            "hi": "विपरीत दिशा, समान प्रबलता"
+          },
+          "reason": {
+            "en": "Equal magnitude preserves strength while sign reverses direction.",
+            "hi": "समान परिमाण प्रबलता रखता और चिह्न दिशा उलटता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Inside a long ideal solenoid away from the ends, the field is approximately:",
+        "hi": "लंबी आदर्श परिनालिका में सिरों से दूर क्षेत्र लगभग है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Uniform",
+            "hi": "एकसमान"
+          },
+          "reason": {
+            "en": "Near-parallel equally spaced lines represent nearly uniform field.",
+            "hi": "लगभग समांतर समान दूरी रेखाएँ लगभग एकसमान क्षेत्र बताती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero for every current",
+            "hi": "हर धारा पर शून्य"
+          },
+          "reason": {
+            "en": "Current creates an interior field.",
+            "hi": "धारा भीतरी क्षेत्र बनाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Radially outward only",
+            "hi": "केवल त्रिज्य दिशा में बाहर"
+          },
+          "reason": {
+            "en": "The principal interior direction is along the axis.",
+            "hi": "भीतर की मुख्य दिशा अक्ष के साथ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Without any direction",
+            "hi": "दिशा रहित"
+          },
+          "reason": {
+            "en": "The field has a defined direction.",
+            "hi": "क्षेत्र की निश्चित दिशा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In the fixed-geometry 1 A solenoid model, doubling turns gives:",
+        "hi": "स्थिर ज्यामिति के 1 A परिनालिका मॉडल में फेरे दोगुने करने पर:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Half relative field",
+            "hi": "आधा सापेक्ष क्षेत्र"
+          },
+          "reason": {
+            "en": "The ideal comparison increases with turns.",
+            "hi": "आदर्श तुलना में फेरों से क्षेत्र बढ़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Double relative field",
+            "hi": "दोगुना सापेक्ष क्षेत्र"
+          },
+          "reason": {
+            "en": "Relative field is proportional to turns under the stated assumptions.",
+            "hi": "बताई शर्तों में सापेक्ष क्षेत्र फेरों के समानुपाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero field",
+            "hi": "शून्य क्षेत्र"
+          },
+          "reason": {
+            "en": "Current and coil remain present.",
+            "hi": "धारा तथा कुंडली उपस्थित हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A universal absolute field of 2 T",
+            "hi": "सार्वभौमिक 2 T निरपेक्ष क्षेत्र"
+          },
+          "reason": {
+            "en": "No absolute field calibration is supplied.",
+            "hi": "निरपेक्ष क्षेत्र का अंशांकन नहीं दिया है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "With a fixed perpendicular external field, reversing only current reverses:",
+        "hi": "स्थिर लंबवत बाहरी क्षेत्र में केवल धारा उलटने पर उलटता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Wire length",
+            "hi": "तार की लंबाई"
+          },
+          "reason": {
+            "en": "Changing current sign does not alter length.",
+            "hi": "धारा चिह्न बदलने से लंबाई नहीं बदलती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Its material",
+            "hi": "उसका पदार्थ"
+          },
+          "reason": {
+            "en": "The conductor remains the same material.",
+            "hi": "चालक का पदार्थ वही रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Force direction",
+            "hi": "बल दिशा"
+          },
+          "reason": {
+            "en": "Fleming’s rule gives the opposite force.",
+            "hi": "फ्लेमिंग का नियम विपरीत बल देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Earth’s rotation",
+            "hi": "पृथ्वी का घूर्णन"
+          },
+          "reason": {
+            "en": "This local circuit does not reverse Earth’s rotation.",
+            "hi": "यह स्थानीय परिपथ पृथ्वी का घूर्णन नहीं उलटता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "A fuse protects mainly by:",
+        "hi": "फ्यूज मुख्यतः सुरक्षा देता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Increasing all currents",
+            "hi": "सभी धाराएँ बढ़ाकर"
+          },
+          "reason": {
+            "en": "Increased current can increase heating risk.",
+            "hi": "अधिक धारा गरमी जोखिम बढ़ा सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Acting as the normal earth return",
+            "hi": "सामान्य भू-वापसी बनकर"
+          },
+          "reason": {
+            "en": "Earth and fuse have different roles.",
+            "hi": "भू-संपर्क और फ्यूज के अलग कार्य हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Removing all resistance",
+            "hi": "पूरा प्रतिरोध हटाकर"
+          },
+          "reason": {
+            "en": "A fuse interrupts a path; it does not remove all resistance.",
+            "hi": "फ्यूज पथ खोलता है, सारा प्रतिरोध नहीं हटाता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Melting and opening the circuit under sufficient excess current",
+            "hi": "पर्याप्त अधिक धारा पर पिघलकर परिपथ खोलकर"
+          },
+          "reason": {
+            "en": "Its heating response interrupts excessive current.",
+            "hi": "गरमी से वह अत्यधिक धारा का पथ तोड़ता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "An unintended low-resistance live-neutral connection is called:",
+        "hi": "विद्युतमय-उदासीन का अनचाहा कम-प्रतिरोध जोड़ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Short circuit",
+            "hi": "लघुपथन"
+          },
+          "reason": {
+            "en": "It can cause a very large current.",
+            "hi": "इससे बहुत अधिक धारा हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Normal accommodation",
+            "hi": "सामान्य समंजन"
+          },
+          "reason": {
+            "en": "Accommodation concerns the eye lens.",
+            "hi": "समंजन नेत्र लेंस का विषय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Dispersion",
+            "hi": "विक्षेपण"
+          },
+          "reason": {
+            "en": "Dispersion is colour separation.",
+            "hi": "विक्षेपण रंग विभाजन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A safe extra branch automatically",
+            "hi": "अपने आप सुरक्षित अतिरिक्त शाखा"
+          },
+          "reason": {
+            "en": "An unintended bypass can be dangerous.",
+            "hi": "अनचाहा बाइपास खतरनाक हो सकता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why are home appliances connected in parallel?",
+        "hi": "घरेलू युक्तियाँ पार्श्वक्रम में क्यों हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "So every branch carries the same current",
+            "hi": "ताकि हर शाखा की धारा समान हो"
+          },
+          "reason": {
+            "en": "Different powers generally require different currents.",
+            "hi": "अलग शक्तियों में सामान्यतः अलग धारा चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "For common supply voltage and independent operation",
+            "hi": "समान आपूर्ति विभवांतर और स्वतंत्र संचालन के लिए"
+          },
+          "reason": {
+            "en": "Each branch gets supply voltage and its own path.",
+            "hi": "हर शाखा को आपूर्ति विभवांतर तथा अलग पथ मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "To make total current always zero",
+            "hi": "कुल धारा हमेशा शून्य करने के लिए"
+          },
+          "reason": {
+            "en": "Active branch currents add.",
+            "hi": "चालू शाखा धाराएँ जुड़ती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "To remove the need for protection",
+            "hi": "सुरक्षा की आवश्यकता हटाने के लिए"
+          },
+          "reason": {
+            "en": "Protection is still required.",
+            "hi": "सुरक्षा फिर भी जरूरी है।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State two properties of magnetic field lines.",
+        "hi": "चुंबकीय क्षेत्र रेखाओं के 2 गुण लिखें।"
+      },
+      "answer": {
+        "en": "They form closed continuous curves and never intersect. Outside a magnet they point north to south.",
+        "hi": "वे बंद सतत वक्र हैं और एक-दूसरे को नहीं काटतीं। चुंबक के बाहर उत्तर से दक्षिण जाती हैं।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "State the right-hand thumb rule.",
+        "hi": "दक्षिण-हस्त अंगुष्ठ नियम लिखें।"
+      },
+      "answer": {
+        "en": "Hold the wire with the right thumb along conventional current; curled fingers give the circular magnetic field direction.",
+        "hi": "दाएँ अंगूठे को परंपरागत धारा में रख तार पकड़ें; मुड़ी उँगलियाँ वृत्ताकार क्षेत्र दिशा बताती हैं।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "What is a solenoid and what is its central interior field like?",
+        "hi": "परिनालिका क्या है और केंद्र के भीतर क्षेत्र कैसा है?"
+      },
+      "answer": {
+        "en": "A cylindrical coil of many insulated-wire turns. Inside a long solenoid away from ends the field is nearly uniform and axial.",
+        "hi": "विद्युतरोधी तार के अनेक फेरों की बेलनाकार कुंडली। लंबी परिनालिका में सिरों से दूर क्षेत्र लगभग एकसमान और अक्षीय है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "State Fleming’s left-hand rule.",
+        "hi": "फ्लेमिंग का वामहस्त नियम लिखें।"
+      },
+      "answer": {
+        "en": "With left-hand fingers mutually perpendicular, first finger points along field, second along conventional current and thumb along force.",
+        "hi": "बाएँ हाथ की उँगलियाँ परस्पर लंबवत हों; पहली क्षेत्र, दूसरी परंपरागत धारा और अंगूठा बल की दिशा में है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Differentiate overloading and short circuit.",
+        "hi": "अतिभारण तथा लघुपथन में अंतर करें।"
+      },
+      "answer": {
+        "en": "Overloading is excess demand from connected loads. A short circuit is an unintended low-resistance path, often due to insulation damage. Both can cause excessive current.",
+        "hi": "अतिभारण जुड़े भारों की अधिक माँग है। लघुपथन अनचाहा कम-प्रतिरोध पथ है, अक्सर विद्युतरोधन खराब होने से। दोनों में अत्यधिक धारा हो सकती है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Explain the separate roles of fuse and earth conductor.",
+        "hi": "फ्यूज तथा भू-संपर्क तार के अलग कार्य समझाएँ।"
+      },
+      "answer": {
+        "en": "A fuse opens the circuit on sufficient excess current. Protective earth provides a fault-current path from exposed metal to help protective devices operate; it is not the normal load return.",
+        "hi": "फ्यूज पर्याप्त अधिक धारा पर परिपथ खोलता है। भू-संपर्क खुले धातु भाग से दोष धारा का सुरक्षात्मक पथ देता है ताकि सुरक्षा उपकरण काम करें; यह सामान्य भार वापसी नहीं है।"
+      },
+      "marks": 2
+    }
+  ],
+  "conceptMap": "धारा → चुंबकीय क्षेत्र → सीधा तार / पाश / परिनालिका; बाहरी क्षेत्र + धारा → बल → वामहस्त नियम; घरेलू पार्श्व भार → कुल धारा → फ्यूज और भू-संपर्क।",
+  "conceptMapEn": "Current → magnetic field → straight wire / loop / solenoid; external field + current → force → left-hand rule; domestic parallel loads → total current → fuse and earthing.",
+  "editionBasis": {
+    "en": "NCERT Science Class 10, reprint 2026–27; UPMSP Science syllabus 2026–27. Original explanations; supplementary model relations are identified.",
+    "hi": "NCERT कक्षा 10 विज्ञान, पुनर्मुद्रण 2026–27; UPMSP विज्ञान पाठ्यक्रम 2026–27। व्याख्याएँ मौलिक हैं; पूरक मॉडल संबंध अलग बताए गए हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Science Class 10, Chapter 12",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc112.pdf"
+    },
+    {
+      "title": "UPMSP Class 10 Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "ten-wire-field",
+      "title": {
+        "en": "Field around a straight wire",
+        "hi": "सीधे तार के चारों ओर क्षेत्र"
+      },
+      "kind": "ten-magnetism",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Current",
+            "hi": "विद्युत धारा"
+          },
+          "min": -5,
+          "max": 5,
+          "step": 1,
+          "initial": 2,
+          "unit": "A"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 1,
+      "goal": {
+        "en": "Apply the right-hand thumb rule and reverse current.",
+        "hi": "दक्षिण-हस्त अंगुष्ठ नियम लगाएँ तथा धारा उलटें।"
+      },
+      "observe": {
+        "en": "Compare +3 A with -3 A at the same distance; direction changes while magnitude matches.",
+        "hi": "समान दूरी पर +3 A और -3 A तुलना करें; दिशा बदलती है, परिमाण समान है।"
+      },
+      "modelNote": {
+        "en": "Ideal straight wire; circular lines and density are symbolic. At 0 A only this wire contribution vanishes.",
+        "hi": "आदर्श सीधा तार; वृत्त और घनत्व सांकेतिक। 0 A पर केवल इस तार का योगदान हटता है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The right thumb follows conventional current and curled fingers give the field; reversing current reverses the field.",
+          "hi": "दायाँ अंगूठा परंपरागत धारा में और मुड़ी उँगलियाँ क्षेत्र में हैं; धारा उलटने पर क्षेत्र उलटता है।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "If current reverses, its field direction:",
+          "hi": "धारा उलटे तो उसका क्षेत्र:"
+        },
+        "options": [
+          {
+            "en": "Reverses",
+            "hi": "उलटता है"
+          },
+          {
+            "en": "Stays fixed always",
+            "hi": "हमेशा समान रहता है"
+          },
+          {
+            "en": "Becomes gravity",
+            "hi": "गुरुत्व बनता है"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The circular field direction follows current by the right-hand rule.",
+          "hi": "दक्षिण-हस्त नियम में वृत्ताकार क्षेत्र दिशा धारा पर निर्भर है।"
+        }
+      },
+      "realLife": {
+        "en": "A nearby compass reveals a current-produced magnetic contribution.",
+        "hi": "पास का दिक्सूचक धारा का चुंबकीय योगदान दिखाता है।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-wire-field-0",
+          "label": {
+            "en": "Set current to +3 A",
+            "hi": "धारा +3 A करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 3
+          }
+        },
+        {
+          "id": "ten-wire-field-1",
+          "label": {
+            "en": "Reverse it to -3 A",
+            "hi": "इसे उलटकर -3 A करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": -3
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 0
+          },
+          "text": {
+            "en": "Reversed current: field circles reverse direction.",
+            "hi": "उलटी धारा: क्षेत्र वृत्त दिशा उलटते हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          },
+          "text": {
+            "en": "Zero wire current: no field contribution from this wire.",
+            "hi": "शून्य तार धारा: इस तार का क्षेत्र योगदान नहीं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0
+          },
+          "text": {
+            "en": "Positive reference current: apply the right-hand thumb rule.",
+            "hi": "धन संदर्भ धारा: दक्षिण-हस्त अंगुष्ठ नियम लगाएँ।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-solenoid",
+      "title": {
+        "en": "Solenoid and electromagnet",
+        "hi": "परिनालिका और विद्युत चुंबक"
+      },
+      "kind": "ten-magnetism",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Number of turns",
+            "hi": "फेरों की संख्या"
+          },
+          "min": 4,
+          "max": 20,
+          "step": 1,
+          "initial": 8,
+          "unit": "turns"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 3,
+      "goal": {
+        "en": "Compare turn count at fixed current and coil geometry.",
+        "hi": "स्थिर धारा तथा कुंडली ज्यामिति पर फेरे तुलना करें।"
+      },
+      "observe": {
+        "en": "Increase turns at 1 A; interior relative field grows in the ideal comparison.",
+        "hi": "1 A पर फेरे बढ़ाएँ; आदर्श तुलना में भीतरी सापेक्ष क्षेत्र बढ़ता है।"
+      },
+      "modelNote": {
+        "en": "Fixed-length ideal solenoid, current 1 A; B proportional to N is qualitative here, not calibrated T.",
+        "hi": "निश्चित लंबाई की आदर्श परिनालिका, धारा 1 A; यहाँ B, N के समानुपाती गुणात्मक है, अंशांकित T नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Same-direction contributions of turns add; this comparison holds current, geometry and core assumptions fixed.",
+          "hi": "फेरों के समान दिशा योगदान जुड़ते हैं; तुलना में धारा, ज्यामिति और क्रोड मान्यताएँ स्थिर हैं।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "From 8 to 16 turns, relative ideal field becomes:",
+          "hi": "8 से 16 फेरों पर आदर्श सापेक्ष क्षेत्र होता है:"
+        },
+        "options": [
+          {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          {
+            "en": "Double",
+            "hi": "दोगुना"
+          },
+          {
+            "en": "Always exactly 16 T",
+            "hi": "हमेशा ठीक 16 T"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "With the stated fixed conditions, field ratio is 16/8 = 2.",
+          "hi": "बताई स्थिर शर्तों में अनुपात 16/8 = 2 है।"
+        }
+      },
+      "realLife": {
+        "en": "A switched electromagnet can magnetically attract suitable iron objects.",
+        "hi": "चालू विद्युत चुंबक उपयुक्त लोहे की वस्तुओं को आकर्षित कर सकता है।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-solenoid-0",
+          "label": {
+            "en": "Set 8 turns as a reference",
+            "hi": "संदर्भ के लिए 8 फेरे करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 8
+          }
+        },
+        {
+          "id": "ten-solenoid-1",
+          "label": {
+            "en": "Double to 16 turns",
+            "hi": "दोगुने 16 फेरे करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 16
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 8
+          },
+          "text": {
+            "en": "At most 8 turns: compare with the 8-turn reference at the same 1 A.",
+            "hi": "अधिकतम 8 फेरे: समान 1 A पर 8-फेरा संदर्भ से तुलना करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 8
+          },
+          "text": {
+            "en": "More than 8 turns: stronger relative field with fixed geometry and current.",
+            "hi": "8 से अधिक फेरे: स्थिर ज्यामिति और धारा में अधिक सापेक्ष क्षेत्र।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-force",
+      "title": {
+        "en": "Force on a current-carrying wire",
+        "hi": "धारावाही तार पर बल"
+      },
+      "kind": "ten-magnetism",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Current",
+            "hi": "विद्युत धारा"
+          },
+          "min": -5,
+          "max": 5,
+          "step": 1,
+          "initial": 2,
+          "unit": "A"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Find how current direction changes force in a fixed external field.",
+        "hi": "स्थिर बाहरी क्षेत्र में धारा दिशा से बल बदलना देखें।"
+      },
+      "observe": {
+        "en": "Keep field fixed and compare equal positive and negative currents; the force arrow reverses.",
+        "hi": "क्षेत्र स्थिर रख समान धन और ऋण धाराएँ तुलना करें; बल तीर उलटता है।"
+      },
+      "modelNote": {
+        "en": "Uniform external field and perpendicular straight conductor; force is relative. F = BIl sinθ is supplementary.",
+        "hi": "एकसमान बाहरी क्षेत्र और लंबवत सीधा चालक; बल सापेक्ष है। F = BIl sinθ पूरक है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Fleming’s left-hand rule connects field, conventional current and force; reversing only current reverses force.",
+          "hi": "फ्लेमिंग का वामहस्त नियम क्षेत्र, परंपरागत धारा और बल जोड़ता है; केवल धारा उलटने पर बल उलटता है।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "When only current reverses, force direction:",
+          "hi": "केवल धारा उलटे तो बल दिशा:"
+        },
+        "options": [
+          {
+            "en": "Stays unchanged",
+            "hi": "समान रहती है"
+          },
+          {
+            "en": "Always disappears",
+            "hi": "हमेशा गायब होती है"
+          },
+          {
+            "en": "Reverses",
+            "hi": "उलटती है"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "With external field fixed, the left-hand rule gives the opposite thumb direction.",
+          "hi": "बाहरी क्षेत्र स्थिर हो तो वामहस्त नियम अंगूठे की विपरीत दिशा देता है।"
+        }
+      },
+      "realLife": {
+        "en": "A current-carrying conductor can be deflected in a magnet gap in a supervised low-voltage demonstration.",
+        "hi": "निगरानी वाले कम-विभव प्रदर्शन में चुंबक अंतराल में धारावाही चालक विचलित होता है।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-force-0",
+          "label": {
+            "en": "Set current to +4 A",
+            "hi": "धारा +4 A करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 4
+          }
+        },
+        {
+          "id": "ten-force-1",
+          "label": {
+            "en": "Reverse current to -4 A",
+            "hi": "धारा उलटकर -4 A करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": -4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 0
+          },
+          "text": {
+            "en": "Negative current reverses the relative force arrow.",
+            "hi": "ऋण धारा सापेक्ष बल तीर उलटती है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          },
+          "text": {
+            "en": "No current: this magnetic force is zero.",
+            "hi": "धारा नहीं: यह चुंबकीय बल शून्य है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0
+          },
+          "text": {
+            "en": "Positive current gives the reference force direction.",
+            "hi": "धन धारा संदर्भ बल दिशा देती है।"
+          }
+        }
+      ]
+    }
+  ]
+}

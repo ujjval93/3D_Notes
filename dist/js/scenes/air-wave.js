@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p,low})=>{let f=p[0],amp=p[1]??.5,k=f/100*2,n=low?35:70;for(let row=0;row<3;row++)for(let i=0;i<n;i++){let base=-1.5+i*3/(n-1),x=base+amp*.06*Math.sin(base*k-t*k*.55);g.sphere(x,(row-1)*.25,0,.02,i===Math.floor(n/2)?C.gold:C.green)}g.arrow([-1,.85,0],[1,.85,0],C.blue);return[read('Frequency','आवृत्ति',f,'Hz'),read('Relative amplitude','सापेक्ष आयाम',fmt(amp),'×'),read('Wavelength at 340 m/s','340 m/s पर तरंगदैर्ध्य',fmt(340/f),'m')];};

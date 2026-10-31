@@ -1,0 +1,1495 @@
+{
+  "number": 2,
+  "id": "acids",
+  "title": {
+    "en": "Acids, Bases and Salts",
+    "hi": "अम्ल, क्षारक एवं लवण"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "ten-ph",
+      "title": {
+        "en": "Explore the pH scale",
+        "hi": "pH पैमाना देखें"
+      },
+      "kind": "ten-acids",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "pH",
+            "hi": "pH"
+          },
+          "min": 0,
+          "max": 14,
+          "step": 1,
+          "initial": 7,
+          "unit": ""
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 3,
+      "goal": {
+        "en": "Compare acidic, neutral and basic pH values.",
+        "hi": "अम्लीय, उदासीन तथा क्षारकीय pH तुलना करें।"
+      },
+      "observe": {
+        "en": "Move below and above pH 7; compare H+ concentration qualitatively.",
+        "hi": "pH 7 के नीचे और ऊपर जाकर H+ सांद्रता गुणात्मक तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Ion counts and colours are symbolic. Neutral pH 7 is the school reference; the pH scale is logarithmic.",
+        "hi": "आयन संख्या तथा रंग प्रतीकात्मक हैं। उदासीन pH 7 विद्यालयी संदर्भ है; पैमाना लघुगणकीय है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Lower pH means more H+; one downward pH unit corresponds to tenfold H+ concentration.",
+          "hi": "कम pH में H+ अधिक; एक नीचे चरण पर H+ सांद्रता 10 गुना होती है।"
+        }
+      },
+      "realLife": {
+        "en": "Mouth and soil chemistry depend on suitable pH ranges.",
+        "hi": "मुँह और मिट्टी की प्रक्रियाएँ उपयुक्त pH सीमा पर निर्भर हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which pH is acidic?",
+          "hi": "कौन-सा pH अम्लीय है?"
+        },
+        "options": [
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "7",
+            "hi": "7"
+          },
+          {
+            "en": "11",
+            "hi": "11"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Lower pH means more H+; one downward pH unit corresponds to tenfold H+ concentration.",
+          "hi": "कम pH में H+ अधिक; एक नीचे चरण पर H+ सांद्रता 10 गुना होती है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-ph-1",
+          "label": {
+            "en": "Set pH to 0 .",
+            "hi": "pH को 0  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-ph-2",
+          "label": {
+            "en": "Reach 14  and compare.",
+            "hi": "14  तक जाकर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 14
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 7
+          },
+          "text": {
+            "en": "Below pH 7: acidic in the school reference conditions.",
+            "hi": "pH 7 से नीचे: विद्यालयी संदर्भ में अम्लीय।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 7
+          },
+          "text": {
+            "en": "pH 7 is neutral; values above 7 are basic.",
+            "hi": "pH 7 उदासीन; ऊपर के मान क्षारकीय हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-neutralisation",
+      "title": {
+        "en": "Neutralisation",
+        "hi": "उदासीनीकरण"
+      },
+      "kind": "ten-acids",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Base added",
+            "hi": "मिलाया क्षारक"
+          },
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "initial": 5,
+          "unit": "mL"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Find equivalence for 10 mL acid and an equal-concentration base.",
+        "hi": "10 mL अम्ल और समान सांद्रता क्षारक का तुल्यांक खोजें।"
+      },
+      "observe": {
+        "en": "Observe remaining acid below 10 mL and excess base above 10 mL.",
+        "hi": "10 mL से नीचे शेष अम्ल और ऊपर अतिरिक्त क्षारक देखें।"
+      },
+      "modelNote": {
+        "en": "Volume is linear; real pH is not. HCl and NaOH concentrations are equal and temperature effects are omitted.",
+        "hi": "आयतन रैखिक है, वास्तविक pH नहीं। HCl तथा NaOH सांद्रता समान है; ताप प्रभाव छोड़े गए हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "HCl and NaOH react 1:1. Equal concentration makes 10 mL base equivalent to the fixed 10 mL acid.",
+          "hi": "HCl और NaOH 1:1 में अभिक्रिया करते हैं। समान सांद्रता में 10 mL क्षारक निश्चित 10 mL अम्ल के तुल्य है।"
+        }
+      },
+      "realLife": {
+        "en": "Neutralisation underlies the use of mild bases to counter excess acid.",
+        "hi": "उदासीनीकरण अतिरिक्त अम्ल के विरुद्ध हल्के क्षारक का उपयोग समझाता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At what added volume is the model at equivalence?",
+          "hi": "कितना आयतन जोड़ने पर मॉडल तुल्यांक पर है?"
+        },
+        "options": [
+          {
+            "en": "5 mL",
+            "hi": "5 mL"
+          },
+          {
+            "en": "10 mL",
+            "hi": "10 mL"
+          },
+          {
+            "en": "20 mL",
+            "hi": "20 mL"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "HCl and NaOH react 1:1. Equal concentration makes 10 mL base equivalent to the fixed 10 mL acid.",
+          "hi": "HCl और NaOH 1:1 में अभिक्रिया करते हैं। समान सांद्रता में 10 mL क्षारक निश्चित 10 mL अम्ल के तुल्य है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-neutralisation-1",
+          "label": {
+            "en": "Set Base added to 0 mL.",
+            "hi": "मिलाया क्षारक को 0 mL करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-neutralisation-2",
+          "label": {
+            "en": "Reach 20 mL and compare.",
+            "hi": "20 mL तक जाकर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 20
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 10
+          },
+          "text": {
+            "en": "Less than 10 mL: some acid remains.",
+            "hi": "10 mL से कम: कुछ अम्ल शेष है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 10
+          },
+          "text": {
+            "en": "At 10 mL: equivalence; above 10 mL: excess base.",
+            "hi": "10 mL पर तुल्यांक; उससे ऊपर क्षारक अधिक।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-salts",
+      "title": {
+        "en": "Water of crystallisation",
+        "hi": "क्रिस्टलन का जल"
+      },
+      "kind": "ten-acids",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Hydrated particles",
+            "hi": "जलयोजित कण"
+          },
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "initial": 6,
+          "unit": "units"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 6,
+      "goal": {
+        "en": "Connect hydration with the colour of copper sulphate.",
+        "hi": "जलयोजन को कॉपर सल्फेट के रंग से जोड़ें।"
+      },
+      "observe": {
+        "en": "Raise the relative hydrated-unit count and watch the blue fraction grow.",
+        "hi": "सापेक्ष जलयोजित इकाइयाँ बढ़ाकर नीला भाग देखें।"
+      },
+      "modelNote": {
+        "en": "This is qualitative: the slider is not the number of waters per CuSO4. The hydrate formula stays CuSO4·5H2O.",
+        "hi": "यह गुणात्मक है: नियंत्रण प्रति CuSO4 जल संख्या नहीं। हाइड्रेट सूत्र CuSO4·5H2O ही है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Hydrated copper sulphate is blue; anhydrous copper sulphate is white. Crystal water is part of the hydrate composition.",
+          "hi": "जलयोजित कॉपर सल्फेट नीला और निर्जल सफेद है। क्रिस्टलन जल हाइड्रेट संरचना का भाग है।"
+        }
+      },
+      "realLife": {
+        "en": "Crystal water explains why some salts change appearance on heating.",
+        "hi": "क्रिस्टलन जल कुछ लवणों का गर्म करने पर रूप बदलना समझाता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "The blue hydrate formula is:",
+          "hi": "नीले हाइड्रेट का सूत्र है:"
+        },
+        "options": [
+          {
+            "en": "CuSO4·5H2O",
+            "hi": "CuSO4·5H2O"
+          },
+          {
+            "en": "CuSO4·10H2O",
+            "hi": "CuSO4·10H2O"
+          },
+          {
+            "en": "CuO",
+            "hi": "CuO"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Hydrated copper sulphate is blue; anhydrous copper sulphate is white. Crystal water is part of the hydrate composition.",
+          "hi": "जलयोजित कॉपर सल्फेट नीला और निर्जल सफेद है। क्रिस्टलन जल हाइड्रेट संरचना का भाग है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-salts-1",
+          "label": {
+            "en": "Set Hydrated particles to 0 units.",
+            "hi": "जलयोजित कण को 0 units करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-salts-2",
+          "label": {
+            "en": "Reach 10 units and compare.",
+            "hi": "10 units तक जाकर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 10
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 5
+          },
+          "text": {
+            "en": "Fewer visual hydrated units: a larger white anhydrous fraction.",
+            "hi": "कम दृश्य जलयोजित इकाइयाँ: निर्जल सफेद भाग अधिक।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 5
+          },
+          "text": {
+            "en": "More visual hydrated units: a larger blue fraction, without changing the hydrate formula.",
+            "hi": "अधिक दृश्य जलयोजित इकाइयाँ: नीला भाग अधिक, हाइड्रेट सूत्र वही।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Connect aqueous ions, pH and useful salts through evidence and balanced reactions.",
+    "hi": "जलीय आयन, pH तथा उपयोगी लवणों को प्रमाण और संतुलित अभिक्रियाओं से जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Indicators and aqueous ions",
+        "hi": "सूचक और जलीय आयन"
+      },
+      "paragraphs": [
+        {
+          "en": "An indicator changes colour in an acidic or basic medium; it helps classify a sample without tasting it. Acids turn blue litmus red, while bases turn red litmus blue. A neutral sample does not reverse either litmus colour. Turmeric and other natural indicators respond differently, so the indicator must be named before interpreting a colour. Acids produce hydrogen ions in aqueous solution, which associate with water as hydronium ions. Bases produce hydroxide ions in aqueous solution; water-soluble bases are called alkalis. Dry hydrogen chloride does not show its usual acidic action on dry litmus because water is needed for ions responsible for that response. The presence of hydrogen in a formula alone does not make every compound an acid.",
+          "hi": "सूचक (Indicator) अम्लीय या क्षारकीय माध्यम में रंग बदलता है और बिना चखे नमूने की प्रकृति पहचानने में सहायता करता है। अम्ल नीले लिटमस को लाल तथा क्षारक लाल लिटमस को नीला करते हैं। उदासीन नमूना इनमें से किसी लिटमस का रंग उलटता नहीं है। हल्दी जैसे प्राकृतिक सूचकों का रंग व्यवहार अलग होता है, इसलिए केवल रंग बताने से पहले सूचक का नाम लिखना जरूरी है। अम्ल जलीय विलयन में हाइड्रोजन आयन देते हैं, जो जल के साथ हाइड्रोनियम आयन बनाते हैं। क्षारक जलीय विलयन में हाइड्रॉक्साइड आयन देते हैं। जल में घुलने वाले क्षारक क्षार (Alkalis) कहलाते हैं। शुष्क हाइड्रोजन क्लोराइड शुष्क लिटमस पर सामान्य अम्लीय व्यवहार नहीं दिखाती क्योंकि संबंधित आयन बनने के लिए जल चाहिए। किसी सूत्र में हाइड्रोजन होना ही पदार्थ को अम्ल घोषित करने के लिए पर्याप्त नहीं है। ग्लूकोज और ऐल्कोहॉल में हाइड्रोजन होता है, पर वे अम्ल की तरह ऐसे आयन नहीं देते।"
+        },
+        {
+          "en": "Consider three unlabelled solutions tested with red and blue litmus. If only blue litmus turns red, identify an acid. If only red litmus turns blue, identify a base. If neither changes, report a neutral response to this test rather than guessing a precise pH. Indicator evidence classifies the medium within its limits; it does not reveal every dissolved chemical or establish whether a sample is safe to drink.",
+          "hi": "तीन अज्ञात विलयनों पर लाल और नीला लिटमस लगाने की कल्पना करें। केवल नीला लाल हो तो अम्लीय और केवल लाल नीला हो तो क्षारकीय माध्यम पहचानें। कोई रंग परिवर्तन न हो तो इस परीक्षण में उदासीन व्यवहार लिखें; कोई निश्चित pH न गढ़ें। सूचक अपने परीक्षण की सीमा में माध्यम की प्रकृति बताता है। वह घुले हुए प्रत्येक रसायन की पहचान नहीं करता और न ही नमूने को पीने योग्य घोषित करता है। पदार्थों को स्वाद से जाँचना वैज्ञानिक परीक्षण की उचित विधि नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "In water it forms ions responsible for acidic behaviour; dry gas on dry litmus lacks this aqueous ion formation.",
+          "hi": "जल में अम्लीय व्यवहार के लिए आवश्यक आयन बनते हैं; शुष्क गैस और शुष्क लिटमस में यह जलीय आयनीकरण नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is water important for the acidic action of hydrogen chloride?",
+          "hi": "हाइड्रोजन क्लोराइड के अम्लीय व्यवहार में जल क्यों महत्वपूर्ण है?"
+        },
+        "answer": {
+          "en": "In water it forms ions responsible for acidic behaviour; dry gas on dry litmus lacks this aqueous ion formation.",
+          "hi": "जल में अम्लीय व्यवहार के लिए आवश्यक आयन बनते हैं; शुष्क गैस और शुष्क लिटमस में यह जलीय आयनीकरण नहीं होता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Reactions of acids",
+        "hi": "अम्लों की अभिक्रियाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Many reactive metals react with dilute acids to form a salt and hydrogen. For zinc and hydrochloric acid, Zn + 2HCl → ZnCl2 + H2. This statement needs exceptions: copper does not displace hydrogen from dilute hydrochloric acid, and nitric acid usually behaves differently because it is an oxidising agent. Metal carbonates and hydrogencarbonates react with acids to produce salt, carbon dioxide and water. Carbon dioxide turns limewater milky through formation of calcium carbonate; excess carbon dioxide can remove this milkiness. Acids also react with many metal oxides to give salt and water. Connect each equation to its reactant family rather than assuming every gas from an acid reaction must be hydrogen. The identity of the second reactant determines the product pattern.",
+          "hi": "अनेक सक्रिय धातुएँ तनु अम्ल से अभिक्रिया करके लवण और हाइड्रोजन देती हैं। जिंक के लिए Zn + 2HCl → ZnCl2 + H2 लिखते हैं। नियम के साथ उसकी सीमा भी समझें। कॉपर तनु हाइड्रोक्लोरिक अम्ल से हाइड्रोजन विस्थापित नहीं करता और नाइट्रिक अम्ल सामान्यतः ऑक्सीकारक होने के कारण अलग व्यवहार करता है। धातु कार्बोनेट तथा हाइड्रोजनकार्बोनेट अम्ल से लवण, कार्बन डाइऑक्साइड और जल बनाते हैं। कार्बन डाइऑक्साइड चूने के पानी में कैल्सियम कार्बोनेट बनाकर उसे दूधिया करती है; अधिक गैस प्रवाहित करने पर दूधियापन हट सकता है। अम्ल अनेक धातु ऑक्साइड से भी लवण और जल बनाते हैं। प्रत्येक समीकरण को उसके अभिकारक परिवार से जोड़ना चाहिए। अम्ल की हर अभिक्रिया में निकली गैस को हाइड्रोजन नहीं कह सकते। दूसरे अभिकारक की प्रकृति उत्पाद तय करती है। गैस पहचानने के संकेत और संतुलित समीकरण को साथ लिखने से कारण स्पष्ट होता है, केवल याद किया हुआ उत्पाद लिखने से नहीं।"
+        },
+        {
+          "en": "Compare Zn + 2HCl → ZnCl2 + H2 with Na2CO3 + 2HCl → 2NaCl + CO2 + H2O. Both consume hydrochloric acid, yet the gases differ because zinc and carbonate have different chemical roles. Count chlorine and hydrogen after balancing; the coefficient 2 belongs before HCl, not inside its formula. State the relevant observation, such as gas evolution, separately from the inference about which gas it is.",
+          "hi": "Zn + 2HCl → ZnCl2 + H2 की तुलना Na2CO3 + 2HCl → 2NaCl + CO2 + H2O से करें। दोनों में हाइड्रोक्लोरिक अम्ल लगता है, पर दूसरे अभिकारक अलग होने से गैस अलग बनती है। संतुलन के बाद क्लोरीन और हाइड्रोजन गिनें। HCl के आगे 2 गुणांक लिखना है, उसके सूत्र के अंदर संख्या बदलना नहीं है। गैस निकलना प्रत्यक्ष प्रेक्षण है; कौन-सी गैस है, यह परीक्षण तथा अभिक्रिया की जानकारी से निकला निष्कर्ष है। दोनों को उत्तर में अलग रखना उपयोगी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Carbon dioxide forms, along with sodium chloride and water.",
+          "hi": "सोडियम क्लोराइड तथा जल के साथ कार्बन डाइऑक्साइड बनती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which gas forms when sodium carbonate reacts with dilute hydrochloric acid?",
+          "hi": "सोडियम कार्बोनेट की तनु हाइड्रोक्लोरिक अम्ल से अभिक्रिया में कौन-सी गैस बनती है?"
+        },
+        "answer": {
+          "en": "Carbon dioxide forms, along with sodium chloride and water.",
+          "hi": "सोडियम क्लोराइड तथा जल के साथ कार्बन डाइऑक्साइड बनती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Bases and neutralisation",
+        "hi": "क्षारक और उदासीनीकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Neutralisation is the reaction of an acid with a base to form salt and water. For hydrochloric acid and sodium hydroxide, HCl + NaOH → NaCl + H2O. Hydrogen ions and hydroxide ions combine to form water, and the remaining ions constitute the salt solution. The amount required depends on concentration as well as volume. Equal volumes do not neutralise in every case. In this model, both solutions have equal concentration, and 10 mL hydrochloric acid is fixed; therefore 10 mL sodium hydroxide gives the equivalence point. With less base, acid remains; with excess base, hydroxide remains. Actual pH changes nonlinearly near equivalence. A linear slider for added volume must not be interpreted as a linear pH scale or a real measured titration curve.",
+          "hi": "उदासीनीकरण (Neutralisation) में अम्ल और क्षारक से लवण तथा जल बनते हैं। हाइड्रोक्लोरिक अम्ल तथा सोडियम हाइड्रॉक्साइड के लिए HCl + NaOH → NaCl + H2O लिखते हैं। हाइड्रोजन और हाइड्रॉक्साइड आयन मिलकर जल बनाते हैं; बचे आयन लवण विलयन में रहते हैं। उदासीनीकरण के लिए आवश्यक मात्रा आयतन के साथ सांद्रता पर भी निर्भर करती है। इसलिए हर स्थिति में बराबर आयतन मिलाने से उदासीन विलयन नहीं बनता। इस दृश्य में दोनों विलयनों की सांद्रता बराबर और अम्ल का आयतन निश्चित 10 mL है। इसलिए 10 mL सोडियम हाइड्रॉक्साइड पर तुल्यांक बिंदु आता है। उससे कम क्षारक पर अम्ल अधिक और उससे अधिक पर क्षारक अधिक रहता है। वास्तविक pH विशेषकर तुल्यांक के पास रैखिक ढंग से नहीं बदलता। आयतन वाला सरल नियंत्रण pH का रैखिक पैमाना या प्रयोग से मापा अनुमापन वक्र नहीं है। समीकरण के अनुपात और मॉडल की मान्यताओं को साथ पढ़ना चाहिए।"
+        },
+        {
+          "en": "If the same 10 mL acid were more concentrated, the required base volume would change. Thus the scene result is conditional, not a universal recipe. When explaining a slider position of 6 mL, say that some acid remains; do not invent an exact pH unless concentration and a suitable calculation are supplied. Near 10 mL, very small changes in added base can produce much larger changes in pH than the same volume change far from equivalence.",
+          "hi": "यदि वही 10 mL अम्ल अधिक सांद्र हो, तो आवश्यक क्षारक का आयतन बदल जाएगा। इसलिए दृश्य का परिणाम उसकी निश्चित मान्यताओं पर आधारित है, हर विलयन के लिए नुस्खा नहीं है। नियंत्रण 6 mL पर हो तो लिखें कि अम्ल शेष है। सांद्रता तथा उचित गणना दिए बिना निश्चित pH नहीं निकालें। 10 mL के पास क्षारक की बहुत छोटी मात्रा जोड़ने से भी pH में बड़ा परिवर्तन हो सकता है। इसीलिए आयतन के बराबर अंतराल को pH के बराबर अंतराल नहीं माना जाता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The fixed acid is 10 mL and both HCl and NaOH have equal concentration with a 1:1 reaction ratio.",
+          "hi": "अम्ल 10 mL है, दोनों की सांद्रता बराबर है और HCl तथा NaOH का अभिक्रिया अनुपात 1:1 है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does 10 mL base neutralise the model acid?",
+          "hi": "मॉडल में 10 mL क्षारक ही अम्ल को उदासीन क्यों करता है?"
+        },
+        "answer": {
+          "en": "The fixed acid is 10 mL and both HCl and NaOH have equal concentration with a 1:1 reaction ratio.",
+          "hi": "अम्ल 10 mL है, दोनों की सांद्रता बराबर है और HCl तथा NaOH का अभिक्रिया अनुपात 1:1 है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "The pH scale and everyday importance",
+        "hi": "pH पैमाना और दैनिक महत्व"
+      },
+      "paragraphs": [
+        {
+          "en": "The pH scale expresses acidity or basicity of aqueous solutions. At ordinary school reference conditions, pH 7 is neutral, values below 7 acidic and values above 7 basic. A lower pH means a higher hydrogen-ion concentration. The scale is logarithmic: moving down by one pH unit corresponds to ten times the hydrogen-ion concentration, not merely one extra particle. Indicator colours are approximate and depend on the indicator. Our bodies and plants function within suitable pH ranges. Tooth decay becomes a concern when mouth pH falls below about 5.5. Antacids contain mild bases that neutralise excess stomach acid; they are not an invitation for self-medication. Soil treatment also depends on whether the soil is too acidic or too basic.",
+          "hi": "pH पैमाना जलीय विलयन की अम्लीयता या क्षारकीयता व्यक्त करता है। सामान्य विद्यालयी संदर्भ दशाओं में pH 7 उदासीन, उससे कम अम्लीय और उससे अधिक क्षारकीय होता है। कम pH का अर्थ हाइड्रोजन आयन की अधिक सांद्रता है। यह लघुगणकीय पैमाना है: pH में 1 की कमी का अर्थ हाइड्रोजन आयन सांद्रता में 10 गुना वृद्धि है, केवल एक अतिरिक्त कण नहीं। सूचक के रंग अनुमानित सीमा बताते हैं और चुने गए सूचक पर निर्भर करते हैं। शरीर तथा पौधों की प्रक्रियाएँ उपयुक्त pH सीमा में अच्छी चलती हैं। मुँह का pH लगभग 5.5 से कम होने पर दाँतों का क्षय बढ़ सकता है। प्रतिअम्ल में हल्के क्षारक अतिरिक्त आमाशय अम्ल को उदासीन करने में सहायता करते हैं, लेकिन यह अपने आप दवा लेने का निर्देश नहीं है। मिट्टी में उपचार भी उसकी अम्लीय या क्षारकीय प्रकृति के अनुसार चुनते हैं। अधिक मजबूत पदार्थ जोड़ना हर समस्या का सही समाधान नहीं होता।"
+        },
+        {
+          "en": "Use the scale as an ordered comparison before doing ratios. A solution at pH 2 is acidic, not twice as acidic as one at pH 4. Two downward steps correspond to 10 × 10, or 100 times hydrogen-ion concentration. This compares the stated ion concentration, not every possible meaning of chemical strength. Concentration, acid strength and the amount of solution are related ideas but must not be used as interchangeable words.",
+          "hi": "अनुपात निकालने से पहले पैमाने पर क्रम पहचानें। pH 2 का विलयन अम्लीय है; वह pH 4 वाले से केवल 2 गुना अम्लीय नहीं कहा जाता। नीचे की ओर 2 चरणों का अर्थ 10 × 10 यानी हाइड्रोजन आयन की 100 गुना सांद्रता है। यह तुलना उसी आयन सांद्रता की है, रासायनिक प्रबलता के प्रत्येक अर्थ की नहीं। सांद्रता, अम्ल की प्रबलता और विलयन की कुल मात्रा संबंधित लेकिन अलग धारणाएँ हैं। उत्तर में इन शब्दों को एक-दूसरे के स्थान पर प्रयोग नहीं करना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "pH 3 is more acidic; its hydrogen-ion concentration is 100 times that at pH 5.",
+          "hi": "pH 3 अधिक अम्लीय है; उसमें हाइड्रोजन आयन सांद्रता pH 5 की तुलना में 100 गुना है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which is more acidic, pH 3 or pH 5?",
+          "hi": "pH 3 और pH 5 में कौन अधिक अम्लीय है?"
+        },
+        "answer": {
+          "en": "pH 3 is more acidic; its hydrogen-ion concentration is 100 times that at pH 5.",
+          "hi": "pH 3 अधिक अम्लीय है; उसमें हाइड्रोजन आयन सांद्रता pH 5 की तुलना में 100 गुना है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Common salt and the chlor-alkali process",
+        "hi": "साधारण नमक और क्लोर-क्षार प्रक्रिया"
+      },
+      "paragraphs": [
+        {
+          "en": "Sodium chloride is a useful starting material for several chemicals. Electrolysis of brine, a concentrated aqueous sodium chloride solution, yields sodium hydroxide, hydrogen and chlorine. The process is called chlor-alkali because chlorine and an alkali are produced. Chlorine forms at the anode, hydrogen at the cathode and sodium hydroxide remains near the cathode region. The overall equation is 2NaCl + 2H2O → 2NaOH + H2 + Cl2. These products have different industrial uses and must not be confused with the products of molten sodium chloride electrolysis. Chlorine reacts with dry slaked lime to make bleaching powder, represented at this level as CaOCl2. Bleaching powder is used in bleaching and disinfection; its classroom formula is a conventional simplified representation.",
+          "hi": "सोडियम क्लोराइड कई उपयोगी रसायनों का प्रारम्भिक पदार्थ है। ब्राइन (Brine), अर्थात सांद्र जलीय सोडियम क्लोराइड विलयन, के विद्युत अपघटन से सोडियम हाइड्रॉक्साइड, हाइड्रोजन और क्लोरीन मिलते हैं। क्लोरीन तथा क्षार बनने के कारण इसे क्लोर-क्षार प्रक्रिया कहते हैं। क्लोरीन ऐनोड पर और हाइड्रोजन कैथोड पर बनती है; कैथोड के निकट सोडियम हाइड्रॉक्साइड मिलता है। समग्र समीकरण 2NaCl + 2H2O → 2NaOH + H2 + Cl2 है। इन उत्पादों के उपयोग अलग हैं। जलीय ब्राइन के उत्पादों को पिघले सोडियम क्लोराइड के विद्युत अपघटन से भ्रमित नहीं करना चाहिए क्योंकि दोनों माध्यम अलग हैं। क्लोरीन शुष्क बुझे चूने से अभिक्रिया करके विरंजक चूर्ण बनाती है, जिसे इस स्तर पर CaOCl2 से दर्शाते हैं। उसका प्रयोग विरंजन तथा कीटाणुशोधन में होता है। विद्यालयी सूत्र उपयोगी सरलीकृत निरूपण है, वास्तविक व्यावसायिक पदार्थ की पूरी जटिल संरचना का दावा नहीं। औद्योगिक प्रक्रियाओं को समझें, घरेलू प्रयोग का निर्देश न मानें।"
+        },
+        {
+          "en": "Trace atoms in the overall equation: two sodium atoms end in two sodium hydroxide units, two chlorine atoms form one Cl2 molecule, and water supplies hydrogen and oxygen. This atom check is independent of where electrodes are placed in a drawing. A diagram may separate products to explain collection, but it must not imply that chlorine and hydrogen are harmless gases to mix or handle outside a supervised laboratory.",
+          "hi": "समग्र समीकरण में परमाणुओं का रास्ता देखें। सोडियम के 2 परमाणु 2 सोडियम हाइड्रॉक्साइड इकाइयों में, क्लोरीन के 2 परमाणु एक Cl2 अणु में जाते हैं। जल हाइड्रोजन और ऑक्सीजन देता है। परमाणु जाँच चित्र में इलेक्ट्रोड किस ओर बने हैं, उससे स्वतंत्र है। चित्र उत्पादों को अलग दिखाकर संग्रह समझा सकता है, पर इससे यह निष्कर्ष नहीं निकालना चाहिए कि क्लोरीन और हाइड्रोजन को घर पर मिलाना या संभालना सुरक्षित है। यह औद्योगिक और नियंत्रित प्रयोगशाला प्रक्रिया का अध्ययन है।"
+        },
+        {
+          "en": "The school representation for bleaching powder preparation is Ca(OH)2 + Cl2 → CaOCl2 + H2O, using dry slaked lime. Sodium hydrogencarbonate can be prepared from brine, ammonia, carbon dioxide and water: NaCl + NH3 + CO2 + H2O → NaHCO3 + NH4Cl. Recognise ammonia as a reactant in this preparation, not a constituent that changes the formula of the baking soda product.",
+          "hi": "विरंजक चूर्ण की तैयारी का विद्यालयी समीकरण Ca(OH)2 + Cl2 → CaOCl2 + H2O है, जिसमें शुष्क बुझा चूना लेते हैं। ब्राइन, अमोनिया, कार्बन डाइऑक्साइड तथा जल से सोडियम हाइड्रोजनकार्बोनेट तैयार किया जा सकता है: NaCl + NH3 + CO2 + H2O → NaHCO3 + NH4Cl। यहाँ अमोनिया तैयारी का अभिकारक है, बेकिंग सोडा के सूत्र को बदल देने वाला घटक नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Electrolysis of brine produces chlorine and sodium hydroxide, an alkali.",
+          "hi": "ब्राइन के विद्युत अपघटन से क्लोरीन और क्षार सोडियम हाइड्रॉक्साइड बनते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does chlor-alkali refer to?",
+          "hi": "क्लोर-क्षार नाम किसे बताता है?"
+        },
+        "answer": {
+          "en": "Electrolysis of brine produces chlorine and sodium hydroxide, an alkali.",
+          "hi": "ब्राइन के विद्युत अपघटन से क्लोरीन और क्षार सोडियम हाइड्रॉक्साइड बनते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Baking soda and washing soda",
+        "hi": "बेकिंग सोडा और धोने का सोडा"
+      },
+      "paragraphs": [
+        {
+          "en": "Baking soda is sodium hydrogencarbonate, NaHCO3, a mild basic salt. Heating it releases carbon dioxide and water while sodium carbonate remains: 2NaHCO3 → Na2CO3 + CO2 + H2O. Baking powder contains baking soda with an appropriate mild edible acid. The acid helps produce gas and prevents an unpleasant taste caused by residual carbonate. Washing soda is sodium carbonate decahydrate, Na2CO3·10H2O. It is used in cleaning and in removing permanent hardness of water. The dot indicates water of crystallisation, not a multiplication instruction that changes the carbonate ion. The two sodium salts differ in formula, properties and uses. A familiar household name is therefore not enough to decide which chemical equation applies to a question.",
+          "hi": "बेकिंग सोडा सोडियम हाइड्रोजनकार्बोनेट NaHCO3 है और हल्का क्षारकीय लवण है। गर्म करने पर कार्बन डाइऑक्साइड तथा जल निकलते हैं और सोडियम कार्बोनेट बचता है: 2NaHCO3 → Na2CO3 + CO2 + H2O। बेकिंग पाउडर में बेकिंग सोडा के साथ उपयुक्त हल्का खाद्य अम्ल होता है। अम्ल गैस बनने में सहायता करता है और बचे कार्बोनेट के कारण अप्रिय स्वाद बनने को रोकता है। धोने का सोडा सोडियम कार्बोनेट डेकाहाइड्रेट Na2CO3·10H2O है। उसका प्रयोग सफाई तथा जल की स्थायी कठोरता हटाने में होता है। सूत्र में बिंदु क्रिस्टलन का जल बताता है; उसका अर्थ कार्बोनेट आयन को किसी नई पहचान में बदलना नहीं है। दोनों सोडियम लवणों के सूत्र, गुण तथा उपयोग अलग हैं। इसलिए केवल प्रचलित घरेलू नाम देखकर समीकरण नहीं चुन सकते। किसी प्रश्न में पदार्थ का सही रासायनिक नाम पहचानें, फिर उपयुक्त अभिक्रिया और उसका कारण लिखें। गर्म करने से सभी लवणों में एक जैसे उत्पाद नहीं बनते।"
+        },
+        {
+          "en": "Imagine two labels with the names covered but formulae visible. The formula containing HCO3 identifies hydrogencarbonate; the one with CO3 and 10H2O identifies the hydrated carbonate. Read all parts before counting atoms. In one washing-soda formula unit, the crystal water contributes twenty hydrogen atoms and ten oxygen atoms in addition to the carbonate oxygen. Those water molecules are part of the crystal composition, not simply a puddle wetting the powder.",
+          "hi": "नाम ढके हुए दो लेबलों पर केवल सूत्र पढ़ें। HCO3 वाला सूत्र हाइड्रोजनकार्बोनेट का और CO3 के साथ 10H2O वाला जलयोजित कार्बोनेट का है। परमाणु गिनने से पहले पूरे सूत्र को पढ़ें। धोने के सोडे की एक सूत्र इकाई में क्रिस्टलन का जल हाइड्रोजन के 20 और ऑक्सीजन के 10 परमाणु देता है; कार्बोनेट की ऑक्सीजन इसके अतिरिक्त है। ये जल अणु क्रिस्टल की संरचना का भाग हैं। इन्हें केवल पाउडर की सतह पर लगा सामान्य गीलापन नहीं मानते।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Baking soda is NaHCO3; washing soda is Na2CO3·10H2O.",
+          "hi": "बेकिंग सोडा NaHCO3 और धोने का सोडा Na2CO3·10H2O है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How do baking soda and washing soda differ in formula?",
+          "hi": "बेकिंग सोडा और धोने के सोडे के सूत्र में क्या अंतर है?"
+        },
+        "answer": {
+          "en": "Baking soda is NaHCO3; washing soda is Na2CO3·10H2O.",
+          "hi": "बेकिंग सोडा NaHCO3 और धोने का सोडा Na2CO3·10H2O है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Crystal water, gypsum and plaster",
+        "hi": "क्रिस्टलन का जल, जिप्सम और प्लास्टर"
+      },
+      "paragraphs": [
+        {
+          "en": "Water of crystallisation is a fixed number of water molecules present in a formula unit of a crystalline salt. Hydrated copper sulphate, CuSO4·5H2O, is blue; removing crystal water by heating gives the white anhydrous form. Water can restore the blue hydrated form. The animation represents hydration qualitatively, not an exact equilibrium or a measured temperature experiment. Gypsum is CaSO4·2H2O. Controlled heating around 373 K gives plaster of Paris, CaSO4·0.5H2O. The fraction expresses one water molecule per two calcium sulphate units; it does not describe half an isolated molecule. Adding water to plaster produces gypsum as it sets. This explains casts and decorative moulds without implying that all wet powders harden by the same chemical process.",
+          "hi": "क्रिस्टलन का जल (Water of crystallisation) किसी क्रिस्टलीय लवण की सूत्र इकाई में उपस्थित जल अणुओं की निश्चित संख्या है। जलयोजित कॉपर सल्फेट CuSO4·5H2O नीला होता है। गर्म करने पर क्रिस्टलन का जल हटने से सफेद निर्जल रूप मिल सकता है। जल देने पर फिर नीला जलयोजित रूप बनता है। दृश्य में रंग परिवर्तन केवल गुणात्मक जलयोजन दिखाता है, निश्चित ताप पर मापा संतुलन नहीं। जिप्सम का सूत्र CaSO4·2H2O है। लगभग 373 K पर नियंत्रित गर्म करने से प्लास्टर ऑफ पेरिस CaSO4·0.5H2O बनता है। दशमलव का अर्थ कैल्सियम सल्फेट की 2 इकाइयों पर जल का 1 अणु है; किसी स्वतंत्र अणु को आधा काटना नहीं। प्लास्टर में जल मिलाने पर जमने के साथ फिर जिप्सम बनता है। इससे साँचे और सजावटी वस्तुएँ बनाना समझ आता है। इसका अर्थ यह नहीं कि हर गीला पाउडर इसी रासायनिक प्रक्रिया से कठोर होगा। अधिक गर्म करना नियंत्रित तैयारी की निर्धारित दशा से अलग परिणाम दे सकता है।"
+        },
+        {
+          "en": "Compare crystal water with water used as a solvent. A hydrated crystal has a definite composition represented in its formula. A beaker of salt solution can have many concentrations, so its entire water content is not written as a fixed hydrate. Similarly, the scene slider called hydrated particles counts relative visual units only. Ten displayed units do not establish ten water molecules per copper sulphate unit; the chemical hydrate formula remains CuSO4·5H2O.",
+          "hi": "क्रिस्टलन के जल की तुलना विलायक जल से करें। जलयोजित क्रिस्टल की निश्चित संरचना उसके सूत्र में आती है। लवण के विलयन की सांद्रता अलग-अलग हो सकती है, इसलिए बीकर के पूरे जल को निश्चित हाइड्रेट सूत्र नहीं लिखते। इसी तरह दृश्य का जलयोजित कण नियंत्रण केवल सापेक्ष दृश्य इकाइयाँ गिनता है। पर्दे पर 10 इकाइयों का अर्थ प्रति कॉपर सल्फेट इकाई जल के 10 अणु नहीं है। पदार्थ का रासायनिक सूत्र CuSO4·5H2O ही रहता है। चित्र और सूत्र की भूमिकाएँ अलग समझना जरूरी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "There is one water molecule for every two CaSO4 formula units.",
+          "hi": "CaSO4 की प्रत्येक 2 सूत्र इकाइयों के लिए जल का 1 अणु है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does 0.5H2O mean in plaster of Paris?",
+          "hi": "प्लास्टर ऑफ पेरिस में 0.5H2O का क्या अर्थ है?"
+        },
+        "answer": {
+          "en": "There is one water molecule for every two CaSO4 formula units.",
+          "hi": "CaSO4 की प्रत्येक 2 सूत्र इकाइयों के लिए जल का 1 अणु है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Salt solutions and careful comparisons",
+        "hi": "लवण विलयन और सावधान तुलना"
+      },
+      "paragraphs": [
+        {
+          "en": "Salts are ionic substances formed in many reactions, including neutralisation. A salt solution is not necessarily neutral. Sodium chloride from a strong acid and a strong base is approximately neutral in the school model; sodium carbonate solution is basic, while ammonium chloride solution is acidic. The nature depends on the acid and base associated with the salt, not on whether the dry solid looks white or tastes salty. Diluting an acid or a base with water reduces the concentration of its characteristic ions; it does not automatically produce the same chemical change as neutralisation. Dissolution of strong acids can release much heat. In supervised preparation, acid is added slowly to water with stirring rather than water poured into concentrated acid.",
+          "hi": "लवण (Salts) कई अभिक्रियाओं में बनने वाले आयनिक पदार्थ हैं, जिनमें उदासीनीकरण भी शामिल है। हर लवण विलयन उदासीन नहीं होता। प्रबल अम्ल और प्रबल क्षारक से बना सोडियम क्लोराइड विद्यालयी मॉडल में लगभग उदासीन है। सोडियम कार्बोनेट का विलयन क्षारकीय और अमोनियम क्लोराइड का विलयन अम्लीय होता है। प्रकृति संबंधित अम्ल तथा क्षारक पर निर्भर है, सूखे ठोस के सफेद दिखने या नमकीन नाम से तय नहीं होती। अम्ल या क्षारक में जल मिलाने से संबंधित आयनों की सांद्रता घटती है। यह तनुकरण है और उदासीनीकरण जैसी रासायनिक प्रक्रिया अपने आप नहीं बन जाता। सांद्र अम्ल का जल में घुलना बहुत ऊष्मा निकाल सकता है। नियंत्रित प्रयोगशाला तैयारी में अम्ल को धीरे-धीरे जल में हिलाते हुए जोड़ते हैं, जल को सांद्र अम्ल में नहीं डालते। यह क्रम ऊष्मा फैलने में सहायता करता है। पढ़े हुए नियम को किसी अज्ञात घरेलू रसायन मिलाने की अनुमति नहीं समझना चाहिए।"
+        },
+        {
+          "en": "If an acid is diluted, its pH generally moves towards the neutral value under the stated conditions, but the remaining solution is still acidic. If a suitable amount of base reacts with it, new water forms through neutralisation. Describe which operation has occurred before predicting the outcome. This distinction connects concentration, chemical reaction and indicator evidence while preventing the common mistake that any addition of a liquid automatically neutralises an acid.",
+          "hi": "अम्ल को तनु करने पर दी गई दशाओं में pH सामान्यतः उदासीन मान की ओर जाता है, पर शेष विलयन अभी भी अम्लीय हो सकता है। उपयुक्त मात्रा में क्षारक उससे अभिक्रिया करे तो उदासीनीकरण द्वारा जल बनता है। परिणाम बताने से पहले पहचानें कि कौन-सी क्रिया हुई है। इससे सांद्रता, रासायनिक अभिक्रिया और सूचक के प्रमाण जुड़ते हैं। किसी भी द्रव को जोड़ देना अम्ल का उदासीनीकरण नहीं है। तनुकरण और उदासीनीकरण का अंतर दैनिक उदाहरणों तथा समीकरण, दोनों में लागू करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "No. Salt solutions can be acidic, basic or neutral depending on their constituent acid and base.",
+          "hi": "नहीं। संबंधित अम्ल और क्षारक के अनुसार लवण विलयन अम्लीय, क्षारकीय या उदासीन हो सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does the word salt guarantee a neutral aqueous solution?",
+          "hi": "क्या लवण शब्द से उसका जलीय विलयन उदासीन होना निश्चित है?"
+        },
+        "answer": {
+          "en": "No. Salt solutions can be acidic, basic or neutral depending on their constituent acid and base.",
+          "hi": "नहीं। संबंधित अम्ल और क्षारक के अनुसार लवण विलयन अम्लीय, क्षारकीय या उदासीन हो सकता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "HCl + NaOH → NaCl + H2O",
+      "meaning": {
+        "en": "Neutralisation with a 1:1 reactant ratio.",
+        "hi": "1:1 अभिकारक अनुपात में उदासीनीकरण।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    },
+    {
+      "expression": "2NaHCO3 → Na2CO3 + CO2 + H2O",
+      "meaning": {
+        "en": "Thermal decomposition of baking soda.",
+        "hi": "बेकिंग सोडा का ऊष्मीय वियोजन।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    },
+    {
+      "expression": "CaSO4·2H2O → CaSO4·0.5H2O + 1.5H2O",
+      "meaning": {
+        "en": "Controlled gypsum heating around 373 K produces plaster.",
+        "hi": "लगभग 373 K पर नियंत्रित जिप्सम गर्म करने से प्लास्टर बनता है।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Dilution is not neutralisation, equal volumes need not neutralise, and every salt is not neutral.",
+    "hi": "तनुकरण उदासीनीकरण नहीं; समान आयतन हमेशा उदासीन नहीं करते और हर लवण उदासीन नहीं।"
+  },
+  "summary": [
+    {
+      "en": "Indicators classify a medium through colour changes.",
+      "hi": "सूचक रंग परिवर्तन से माध्यम पहचानते हैं।"
+    },
+    {
+      "en": "Water allows the ions responsible for acid/base behaviour.",
+      "hi": "जल अम्ल-क्षारक व्यवहार के आयन बनने देता है।"
+    },
+    {
+      "en": "Lower pH means higher H+ concentration.",
+      "hi": "कम pH में H+ सांद्रता अधिक है।"
+    },
+    {
+      "en": "Neutralisation depends on amount and concentration.",
+      "hi": "उदासीनीकरण मात्रा तथा सांद्रता पर निर्भर है।"
+    },
+    {
+      "en": "Salt formulae identify distinct compounds and crystal water.",
+      "hi": "लवण सूत्र अलग पदार्थ तथा क्रिस्टलन जल पहचानते हैं।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Why is water important for the acidic action of hydrogen chloride?",
+        "hi": "हाइड्रोजन क्लोराइड के अम्लीय व्यवहार में जल क्यों महत्वपूर्ण है?"
+      },
+      "given": {
+        "en": "Dry HCl and dry litmus are compared with aqueous HCl.",
+        "hi": "शुष्क HCl तथा शुष्क लिटमस की जलीय HCl से तुलना है।"
+      },
+      "find": {
+        "en": "A justified explanation using the stated conditions.",
+        "hi": "दी गई दशाओं पर आधारित कारण सहित व्याख्या।"
+      },
+      "formula": {
+        "en": "Indicators and aqueous ions: apply the definitions and identify the relevant species.",
+        "hi": "सूचक और जलीय आयन: परिभाषा लगाएं और संबंधित पदार्थ पहचानें।"
+      },
+      "steps": [
+        {
+          "en": "Consider three unlabelled solutions tested with red and blue litmus. If only blue litmus turns red, identify an acid. If only red litmus turns blue, identify a base. If neither changes, report a neutral response to this test rather than guessing a precise pH. Indicator evidence classifies the medium within its limits; it does not reveal every dissolved chemical or establish whether a sample is safe to drink.",
+          "hi": "तीन अज्ञात विलयनों पर लाल और नीला लिटमस लगाने की कल्पना करें। केवल नीला लाल हो तो अम्लीय और केवल लाल नीला हो तो क्षारकीय माध्यम पहचानें। कोई रंग परिवर्तन न हो तो इस परीक्षण में उदासीन व्यवहार लिखें; कोई निश्चित pH न गढ़ें। सूचक अपने परीक्षण की सीमा में माध्यम की प्रकृति बताता है। वह घुले हुए प्रत्येक रसायन की पहचान नहीं करता और न ही नमूने को पीने योग्य घोषित करता है। पदार्थों को स्वाद से जाँचना वैज्ञानिक परीक्षण की उचित विधि नहीं है।"
+        },
+        {
+          "en": "In water it forms ions responsible for acidic behaviour; dry gas on dry litmus lacks this aqueous ion formation.",
+          "hi": "जल में अम्लीय व्यवहार के लिए आवश्यक आयन बनते हैं; शुष्क गैस और शुष्क लिटमस में यह जलीय आयनीकरण नहीं होता।"
+        }
+      ],
+      "answer": {
+        "en": "In water it forms ions responsible for acidic behaviour; dry gas on dry litmus lacks this aqueous ion formation.",
+        "hi": "जल में अम्लीय व्यवहार के लिए आवश्यक आयन बनते हैं; शुष्क गैस और शुष्क लिटमस में यह जलीय आयनीकरण नहीं होता।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Which gas forms when sodium carbonate reacts with dilute hydrochloric acid?",
+        "hi": "सोडियम कार्बोनेट की तनु हाइड्रोक्लोरिक अम्ल से अभिक्रिया में कौन-सी गैस बनती है?"
+      },
+      "given": {
+        "en": "Sodium carbonate reacts with dilute hydrochloric acid.",
+        "hi": "सोडियम कार्बोनेट की तनु हाइड्रोक्लोरिक अम्ल से अभिक्रिया है।"
+      },
+      "find": {
+        "en": "A justified explanation using the stated conditions.",
+        "hi": "दी गई दशाओं पर आधारित कारण सहित व्याख्या।"
+      },
+      "formula": {
+        "en": "Reactions of acids: apply the definitions and identify the relevant species.",
+        "hi": "अम्लों की अभिक्रियाएँ: परिभाषा लगाएं और संबंधित पदार्थ पहचानें।"
+      },
+      "steps": [
+        {
+          "en": "Compare Zn + 2HCl → ZnCl2 + H2 with Na2CO3 + 2HCl → 2NaCl + CO2 + H2O. Both consume hydrochloric acid, yet the gases differ because zinc and carbonate have different chemical roles. Count chlorine and hydrogen after balancing; the coefficient 2 belongs before HCl, not inside its formula. State the relevant observation, such as gas evolution, separately from the inference about which gas it is.",
+          "hi": "Zn + 2HCl → ZnCl2 + H2 की तुलना Na2CO3 + 2HCl → 2NaCl + CO2 + H2O से करें। दोनों में हाइड्रोक्लोरिक अम्ल लगता है, पर दूसरे अभिकारक अलग होने से गैस अलग बनती है। संतुलन के बाद क्लोरीन और हाइड्रोजन गिनें। HCl के आगे 2 गुणांक लिखना है, उसके सूत्र के अंदर संख्या बदलना नहीं है। गैस निकलना प्रत्यक्ष प्रेक्षण है; कौन-सी गैस है, यह परीक्षण तथा अभिक्रिया की जानकारी से निकला निष्कर्ष है। दोनों को उत्तर में अलग रखना उपयोगी है।"
+        },
+        {
+          "en": "Carbon dioxide forms, along with sodium chloride and water.",
+          "hi": "सोडियम क्लोराइड तथा जल के साथ कार्बन डाइऑक्साइड बनती है।"
+        }
+      ],
+      "answer": {
+        "en": "Carbon dioxide forms, along with sodium chloride and water.",
+        "hi": "सोडियम क्लोराइड तथा जल के साथ कार्बन डाइऑक्साइड बनती है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Compare H+ concentration at pH 3 and pH 6.",
+        "hi": "pH 3 तथा pH 6 पर H+ सांद्रता की तुलना करें।"
+      },
+      "given": {
+        "en": "pH values 3 and 6.",
+        "hi": "pH मान 3 तथा 6।"
+      },
+      "find": {
+        "en": "Concentration ratio.",
+        "hi": "सांद्रता अनुपात।"
+      },
+      "formula": {
+        "en": "Ratio = 10 raised to pH difference.",
+        "hi": "अनुपात = 10 की घात pH अंतर।"
+      },
+      "steps": [
+        {
+          "en": "Difference = 6 − 3 = 3.",
+          "hi": "अंतर = 6 − 3 = 3।"
+        },
+        {
+          "en": "10 × 10 × 10 = 1000.",
+          "hi": "10 × 10 × 10 = 1000।"
+        }
+      ],
+      "answer": {
+        "en": "pH 3 has 1000 times the H+ concentration; ratio is unitless.",
+        "hi": "pH 3 में H+ सांद्रता 1000 गुना है; अनुपात इकाईरहित है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "At 6 mL added base, does the neutralisation model still contain excess acid?",
+        "hi": "6 mL क्षारक जोड़ने पर क्या उदासीनीकरण मॉडल में अम्ल अधिक बचता है?"
+      },
+      "given": {
+        "en": "10 mL HCl and same-concentration NaOH; choose 6 mL base.",
+        "hi": "10 mL HCl तथा समान सांद्रता NaOH; 6 mL क्षारक चुनें।"
+      },
+      "find": {
+        "en": "A justified explanation using the stated conditions.",
+        "hi": "दी गई दशाओं पर आधारित कारण सहित व्याख्या।"
+      },
+      "formula": {
+        "en": "Bases and neutralisation: apply the definitions and identify the relevant species.",
+        "hi": "क्षारक और उदासीनीकरण: परिभाषा लगाएं और संबंधित पदार्थ पहचानें।"
+      },
+      "steps": [
+        {
+          "en": "The fixed HCl volume is 10 mL; HCl and NaOH react 1:1.",
+          "hi": "HCl का निश्चित आयतन 10 mL है और HCl तथा NaOH 1:1 में अभिक्रिया करते हैं।"
+        },
+        {
+          "en": "Since 6 mL is below 10 mL at equal concentration, the added base is insufficient.",
+          "hi": "समान सांद्रता पर 6 mL, 10 mL से कम है, इसलिए क्षारक अपर्याप्त है।"
+        }
+      ],
+      "answer": {
+        "en": "Yes. With equal concentration, 10 mL is required; 6 mL leaves excess acid. An exact pH cannot be inferred from volume alone.",
+        "hi": "हाँ। समान सांद्रता पर 10 mL चाहिए; 6 mL पर अम्ल शेष है। केवल आयतन से निश्चित pH नहीं मिलता।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Count crystal-water atoms in 2 formula units of washing soda.",
+        "hi": "धोने के सोडे की 2 सूत्र इकाइयों के क्रिस्टलन जल में परमाणु गिनें।"
+      },
+      "given": {
+        "en": "Na2CO3·10H2O; only crystal water is counted.",
+        "hi": "Na2CO3·10H2O; केवल क्रिस्टलन का जल गिनना है।"
+      },
+      "find": {
+        "en": "Water molecules, H atoms and O atoms.",
+        "hi": "जल अणु, H परमाणु तथा O परमाणु।"
+      },
+      "formula": {
+        "en": "Water units = 2 × 10; each H2O has 2 H and 1 O.",
+        "hi": "जल इकाइयाँ = 2 × 10; प्रत्येक H2O में 2 H तथा 1 O।"
+      },
+      "steps": [
+        {
+          "en": "20 water molecules contain 20 × 2 = 40 H atoms.",
+          "hi": "20 जल अणुओं में 20 × 2 = 40 H हैं।"
+        },
+        {
+          "en": "They contain 20 O atoms; carbonate O is excluded.",
+          "hi": "उनमें 20 O हैं; कार्बोनेट O नहीं गिने गए।"
+        }
+      ],
+      "answer": {
+        "en": "20 H2O molecules, 40 H atoms and 20 O atoms in crystal water.",
+        "hi": "क्रिस्टलन जल में 20 H2O अणु, 40 H तथा 20 O परमाणु।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "An acid changes which litmus colour?",
+        "hi": "अम्ल कौन-सा लिटमस परिवर्तन करता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Blue to red",
+            "hi": "नीला से लाल"
+          },
+          "reason": {
+            "en": "Correct. Acids turn blue litmus red.",
+            "hi": "सही। अम्ल नीला लिटमस लाल करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Red to blue",
+            "hi": "लाल से नीला"
+          },
+          "reason": {
+            "en": "Incorrect. This is the basic response.",
+            "hi": "गलत। यह क्षारकीय व्यवहार है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue to green",
+            "hi": "नीला से हरा"
+          },
+          "reason": {
+            "en": "Incorrect. Green is not this litmus response.",
+            "hi": "गलत। हरा इस लिटमस परीक्षण का रंग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Red to yellow",
+            "hi": "लाल से पीला"
+          },
+          "reason": {
+            "en": "Incorrect. Yellow is not this litmus response.",
+            "hi": "गलत। पीला इस लिटमस परीक्षण का रंग नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which has the highest hydrogen-ion concentration?",
+        "hi": "सबसे अधिक हाइड्रोजन आयन सांद्रता किसमें है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "pH 7",
+            "hi": "pH 7"
+          },
+          "reason": {
+            "en": "Incorrect. Neutral pH has fewer H+ than pH 2.",
+            "hi": "गलत। उदासीन pH में pH 2 से कम H+ हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "pH 10",
+            "hi": "pH 10"
+          },
+          "reason": {
+            "en": "Incorrect. This is basic, not most acidic.",
+            "hi": "गलत। यह क्षारकीय है, सर्वाधिक अम्लीय नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "pH 2",
+            "hi": "pH 2"
+          },
+          "reason": {
+            "en": "Correct. Lowest pH here means highest H+ concentration.",
+            "hi": "सही। यहाँ न्यूनतम pH का अर्थ अधिकतम H+ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "pH 5",
+            "hi": "pH 5"
+          },
+          "reason": {
+            "en": "Incorrect. Its H+ concentration is lower than pH 2.",
+            "hi": "गलत। इसकी H+ सांद्रता pH 2 से कम है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "The gas from acid plus carbonate is:",
+        "hi": "अम्ल और कार्बोनेट से गैस है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "O2",
+            "hi": "O2"
+          },
+          "reason": {
+            "en": "Incorrect. Oxygen is not the carbonate-reaction gas.",
+            "hi": "गलत। कार्बोनेट अभिक्रिया की गैस ऑक्सीजन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "CO2",
+            "hi": "CO2"
+          },
+          "reason": {
+            "en": "Correct. Carbonate gives carbon dioxide with acid.",
+            "hi": "सही। कार्बोनेट अम्ल से कार्बन डाइऑक्साइड देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "N2",
+            "hi": "N2"
+          },
+          "reason": {
+            "en": "Incorrect. Nitrogen is not produced in this pattern.",
+            "hi": "गलत। इस ढाँचे में नाइट्रोजन नहीं बनती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cl2",
+            "hi": "Cl2"
+          },
+          "reason": {
+            "en": "Incorrect. Chlorine is not the expected product.",
+            "hi": "गलत। क्लोरीन अपेक्षित उत्पाद नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "In the model, 10 mL HCl has the same concentration as NaOH. Equivalence requires:",
+        "hi": "मॉडल में 10 mL HCl तथा NaOH की सांद्रता समान है। तुल्यांक के लिए चाहिए:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2 mL NaOH",
+            "hi": "2 mL NaOH"
+          },
+          "reason": {
+            "en": "Incorrect. There is insufficient base.",
+            "hi": "गलत। क्षारक पर्याप्त नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "5 mL NaOH",
+            "hi": "5 mL NaOH"
+          },
+          "reason": {
+            "en": "Incorrect. Half the required base leaves acid.",
+            "hi": "गलत। आधा क्षारक अम्ल शेष छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "20 mL NaOH",
+            "hi": "20 mL NaOH"
+          },
+          "reason": {
+            "en": "Incorrect. This leaves excess base.",
+            "hi": "गलत। इससे क्षारक अधिक बचता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 mL NaOH",
+            "hi": "10 mL NaOH"
+          },
+          "reason": {
+            "en": "Correct. Equal concentration and 1:1 reaction require equal volumes.",
+            "hi": "सही। समान सांद्रता और 1:1 अनुपात में समान आयतन चाहिए।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which is baking soda?",
+        "hi": "बेकिंग सोडा कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "NaHCO3",
+            "hi": "NaHCO3"
+          },
+          "reason": {
+            "en": "Correct. It is sodium hydrogencarbonate.",
+            "hi": "सही। यह सोडियम हाइड्रोजनकार्बोनेट है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Na2CO3·10H2O",
+            "hi": "Na2CO3·10H2O"
+          },
+          "reason": {
+            "en": "Incorrect. This is washing soda.",
+            "hi": "गलत। यह धोने का सोडा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CaCO3",
+            "hi": "CaCO3"
+          },
+          "reason": {
+            "en": "Incorrect. This is calcium carbonate.",
+            "hi": "गलत। यह कैल्सियम कार्बोनेट है।"
+          }
+        },
+        {
+          "text": {
+            "en": "NaCl",
+            "hi": "NaCl"
+          },
+          "reason": {
+            "en": "Incorrect. This is common salt.",
+            "hi": "गलत। यह साधारण नमक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At the brine electrolysis anode, the gas is:",
+        "hi": "ब्राइन विद्युत अपघटन के ऐनोड पर गैस है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Hydrogen",
+            "hi": "हाइड्रोजन"
+          },
+          "reason": {
+            "en": "Incorrect. Hydrogen forms at the cathode.",
+            "hi": "गलत। हाइड्रोजन कैथोड पर बनती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Oxygen only",
+            "hi": "केवल ऑक्सीजन"
+          },
+          "reason": {
+            "en": "Incorrect. This is not the stated brine product.",
+            "hi": "गलत। यह ब्राइन का बताया उत्पाद नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Chlorine",
+            "hi": "क्लोरीन"
+          },
+          "reason": {
+            "en": "Correct. Chloride gives chlorine at the anode.",
+            "hi": "सही। ऐनोड पर क्लोराइड से क्लोरीन मिलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Carbon dioxide",
+            "hi": "कार्बन डाइऑक्साइड"
+          },
+          "reason": {
+            "en": "Incorrect. Brine has no carbonate source in this process.",
+            "hi": "गलत। इस प्रक्रिया में ब्राइन का कार्बोनेट स्रोत नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Blue copper sulphate crystals contain:",
+        "hi": "नीले कॉपर सल्फेट क्रिस्टल में है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "CuSO4·10H2O",
+            "hi": "CuSO4·10H2O"
+          },
+          "reason": {
+            "en": "Incorrect. Ten waters is not this hydrate.",
+            "hi": "गलत। इस हाइड्रेट में 10 जल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "CuSO4·5H2O",
+            "hi": "CuSO4·5H2O"
+          },
+          "reason": {
+            "en": "Correct. Five waters are in the hydrate formula.",
+            "hi": "सही। हाइड्रेट सूत्र में 5 जल हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "CuO",
+            "hi": "CuO"
+          },
+          "reason": {
+            "en": "Incorrect. Copper oxide is a different compound.",
+            "hi": "गलत। कॉपर ऑक्साइड अलग यौगिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CuCl2 only",
+            "hi": "केवल CuCl2"
+          },
+          "reason": {
+            "en": "Incorrect. Copper chloride is not sulphate.",
+            "hi": "गलत। कॉपर क्लोराइड सल्फेट नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Plaster of Paris is:",
+        "hi": "प्लास्टर ऑफ पेरिस है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "CaSO4·2H2O",
+            "hi": "CaSO4·2H2O"
+          },
+          "reason": {
+            "en": "Incorrect. This is gypsum.",
+            "hi": "गलत। यह जिप्सम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CaCO3",
+            "hi": "CaCO3"
+          },
+          "reason": {
+            "en": "Incorrect. This is calcium carbonate.",
+            "hi": "गलत। यह कैल्सियम कार्बोनेट है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CaO",
+            "hi": "CaO"
+          },
+          "reason": {
+            "en": "Incorrect. This is quicklime.",
+            "hi": "गलत। यह बिना बुझा चूना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CaSO4·0.5H2O",
+            "hi": "CaSO4·0.5H2O"
+          },
+          "reason": {
+            "en": "Correct. This is calcium sulphate hemihydrate.",
+            "hi": "सही। यह कैल्सियम सल्फेट हेमीहाइड्रेट है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which salt solution is basic in the school comparison?",
+        "hi": "विद्यालयी तुलना में कौन-सा लवण विलयन क्षारकीय है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Na2CO3",
+            "hi": "Na2CO3"
+          },
+          "reason": {
+            "en": "Correct. Sodium carbonate solution is basic.",
+            "hi": "सही। सोडियम कार्बोनेट विलयन क्षारकीय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "NaCl",
+            "hi": "NaCl"
+          },
+          "reason": {
+            "en": "Incorrect. Sodium chloride is approximately neutral.",
+            "hi": "गलत। सोडियम क्लोराइड लगभग उदासीन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "NH4Cl",
+            "hi": "NH4Cl"
+          },
+          "reason": {
+            "en": "Incorrect. Ammonium chloride solution is acidic.",
+            "hi": "गलत। अमोनियम क्लोराइड विलयन अम्लीय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All salts must be neutral",
+            "hi": "सभी लवण उदासीन होते हैं"
+          },
+          "reason": {
+            "en": "Incorrect. Salt solutions need not all be neutral.",
+            "hi": "गलत। हर लवण विलयन उदासीन नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A one-unit decrease in pH means H+ concentration changes by:",
+        "hi": "pH में 1 की कमी पर H+ सांद्रता बदलती है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1 times",
+            "hi": "1 गुना"
+          },
+          "reason": {
+            "en": "Incorrect. The scale is not a simple unit count.",
+            "hi": "गलत। पैमाना साधारण इकाई गिनती नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 times",
+            "hi": "2 गुना"
+          },
+          "reason": {
+            "en": "Incorrect. The logarithmic factor is ten, not two.",
+            "hi": "गलत। लघुगणकीय गुणक 10 है, 2 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 times higher",
+            "hi": "10 गुना अधिक"
+          },
+          "reason": {
+            "en": "Correct. One downward pH unit gives tenfold H+.",
+            "hi": "सही। pH का एक नीचे चरण H+ को 10 गुना करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 times lower",
+            "hi": "10 गुना कम"
+          },
+          "reason": {
+            "en": "Incorrect. Lower pH means more, not less H+.",
+            "hi": "गलत। कम pH में H+ अधिक होते हैं, कम नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why is water important for the acidic action of hydrogen chloride?",
+        "hi": "हाइड्रोजन क्लोराइड के अम्लीय व्यवहार में जल क्यों महत्वपूर्ण है?"
+      },
+      "answer": {
+        "en": "In water it forms ions responsible for acidic behaviour; dry gas on dry litmus lacks this aqueous ion formation.",
+        "hi": "जल में अम्लीय व्यवहार के लिए आवश्यक आयन बनते हैं; शुष्क गैस और शुष्क लिटमस में यह जलीय आयनीकरण नहीं होता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which gas forms when sodium carbonate reacts with dilute hydrochloric acid?",
+        "hi": "सोडियम कार्बोनेट की तनु हाइड्रोक्लोरिक अम्ल से अभिक्रिया में कौन-सी गैस बनती है?"
+      },
+      "answer": {
+        "en": "Carbon dioxide forms, along with sodium chloride and water.",
+        "hi": "सोडियम क्लोराइड तथा जल के साथ कार्बन डाइऑक्साइड बनती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does 10 mL base neutralise the model acid?",
+        "hi": "मॉडल में 10 mL क्षारक ही अम्ल को उदासीन क्यों करता है?"
+      },
+      "answer": {
+        "en": "The fixed acid is 10 mL and both HCl and NaOH have equal concentration with a 1:1 reaction ratio.",
+        "hi": "अम्ल 10 mL है, दोनों की सांद्रता बराबर है और HCl तथा NaOH का अभिक्रिया अनुपात 1:1 है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which is more acidic, pH 3 or pH 5?",
+        "hi": "pH 3 और pH 5 में कौन अधिक अम्लीय है?"
+      },
+      "answer": {
+        "en": "pH 3 is more acidic; its hydrogen-ion concentration is 100 times that at pH 5.",
+        "hi": "pH 3 अधिक अम्लीय है; उसमें हाइड्रोजन आयन सांद्रता pH 5 की तुलना में 100 गुना है।"
+      }
+    },
+    {
+      "question": {
+        "en": "What does 0.5H2O mean in plaster of Paris?",
+        "hi": "प्लास्टर ऑफ पेरिस में 0.5H2O का क्या अर्थ है?"
+      },
+      "answer": {
+        "en": "There is one water molecule for every two CaSO4 formula units.",
+        "hi": "CaSO4 की प्रत्येक 2 सूत्र इकाइयों के लिए जल का 1 अणु है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Does the word salt guarantee a neutral aqueous solution?",
+        "hi": "क्या लवण शब्द से उसका जलीय विलयन उदासीन होना निश्चित है?"
+      },
+      "answer": {
+        "en": "No. Salt solutions can be acidic, basic or neutral depending on their constituent acid and base.",
+        "hi": "नहीं। संबंधित अम्ल और क्षारक के अनुसार लवण विलयन अम्लीय, क्षारकीय या उदासीन हो सकता है।"
+      }
+    }
+  ],
+  "conceptMap": "सूचक → जलीय आयन → अम्ल व क्षारक → pH → उदासीनीकरण → लवण → ब्राइन के उत्पाद व क्रिस्टलन जल",
+  "conceptMapEn": "Indicators → aqueous ions → acids and bases → pH → neutralisation → salts → brine products and crystal water",
+  "editionBasis": {
+    "en": "Original study companion aligned to the NCERT Science Class 10, reprint 2026–27, and UP Board syllabus. Diagrams are explanatory models, not experimental data.",
+    "hi": "NCERT विज्ञान कक्षा 10, पुनर्मुद्रण 2026–27 तथा UP बोर्ड पाठ्यक्रम पर आधारित मौलिक अध्ययन सहायक। चित्र समझाने वाले मॉडल हैं, प्रयोग के मापे हुए आँकड़े नहीं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Science Class 10, Chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc102.pdf"
+    },
+    {
+      "title": "UP Board Class 10 Science syllabus",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ]
+}

@@ -1,0 +1,896 @@
+{
+  "title": {
+    "en": "Probability",
+    "hi": "प्रायिकता"
+  },
+  "goal": {
+    "en": "Update probabilities with given information and distinguish independence, total probability and Bayes reasoning.",
+    "hi": "दी सूचना से प्रायिकता बदलें और स्वतंत्रता, कुल प्रायिकता तथा बेज़ के तर्क अलग समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Events and the sample space",
+        "hi": "घटनाएँ और प्रतिदर्श समष्टि"
+      },
+      "body": {
+        "en": "A random experiment has a sample space S of possible outcomes. An event is a subset of S. The union A∪B means at least one event occurs; intersection A∩B means both; complement A′ means A does not occur. Probabilities lie between 0 and 1 and P(S)=1. For equally likely finite outcomes, P(A)=n(A)/n(S). Equal likelihood is an assumption that must be justified, not inferred merely because outcomes can be listed. Addition gives P(A∪B)=P(A)+P(B)−P(A∩B). In two dice, ordered pairs are equally likely; sums are not. Explicitly define events before calculating conditional or joint probabilities.",
+        "hi": "यादृच्छिक प्रयोग (Random experiment) के सभी संभावित परिणामों का संग्रह प्रतिदर्श समष्टि (Sample space) S है। घटना (Event) S का उपसमुच्चय है। A∪B का अर्थ कम से कम 1 घटना होना और A∩B का अर्थ दोनों का साथ होना है। A का पूरक A′ घटना के न होने को बताता है। प्रायिकता हमेशा 0 और 1 के बीच है तथा P(S)=1 होता है। परिमित समसंभाव्य परिणामों में P(A)=n(A)/n(S) उपयोग कर सकते हैं। केवल परिणामों की सूची बनाने से वे समसंभाव्य नहीं हो जाते; प्रयोग की समान संभावना जरूरी है। 2 निष्पक्ष पासों में क्रमित युग्म समसंभाव्य हैं, पर योग 2 और योग 7 की संभावना समान नहीं है। जोड़ नियम P(A∪B)=P(A)+P(B)−P(A∩B) है; साझा भाग दोबारा गिनने से रोकने के लिए घटाते हैं। आगे सशर्त प्रश्न में घटनाओं की स्पष्ट परिभाषा सबसे जरूरी कदम है। जैसे कार्ड लाल है तथा कार्ड राजा है अलग शर्तें हैं; उनके साझा भाग में केवल लाल राजा आएँगे। प्रश्न की भाषा को पहले समुच्चय संबंध में लिखें, फिर संख्याएँ रखें। गणना के बाद उत्तर की सीमा जाँचें; 1 से बड़ा मान त्रुटि का संकेत है।"
+      },
+      "formula": "0≤P(A)≤1; P(A′)=1−P(A); P(A∪B)=P(A)+P(B)−P(A∩B)",
+      "question": {
+        "en": "Why are the sums of two fair dice not equally likely?",
+        "hi": "2 निष्पक्ष पासों के योग समसंभाव्य क्यों नहीं?"
+      },
+      "answer": {
+        "en": "Different sums have different counts of equally likely ordered pairs.",
+        "hi": "अलग योगों के लिए समसंभाव्य क्रमित युग्मों की संख्या अलग है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Conditional probability as a restricted universe",
+        "hi": "सशर्त प्रायिकता: सीमित प्रतिदर्श"
+      },
+      "body": {
+        "en": "Given that B has occurred, only outcomes in B remain possible. Conditional probability is P(A|B)=P(A∩B)/P(B), provided P(B)>0. The denominator is the probability of the given information, not of the requested event. For equally likely outcomes, count A∩B out of B. On a die, given an even outcome, the reduced universe is {2,4,6}; the probability of a number above 3 is 2/3. Reversing the condition generally changes the answer. P(A|B) and P(B|A) use different denominators. Conditional probabilities form a probability measure on the reduced universe, so P(A′|B)=1−P(A|B). Conditioning on a zero-probability event is not defined by this elementary ratio.",
+        "hi": "सशर्त प्रायिकता (Conditional probability) नई दी सूचना के अनुसार संभावना है। यदि B हो चुका है, तो विचार का सीमित ब्रह्मांड B होगा। इसलिए P(A|B)=P(A∩B)/P(B), बशर्ते P(B)>0। हर में दी हुई शर्त की प्रायिकता आती है, पूछी गई घटना की नहीं। समसंभाव्य परिणामों में B के अंदर कुल परिणाम गिनें और उनमें A को भी मानने वाले परिणाम चुनें। निष्पक्ष पासे पर सम अंक आने की सूचना मिले, तो शेष समष्टि {2,4,6} है। 3 से बड़ा अंक इनमें {4,6} है, इसलिए संभावना 2/3 होगी। मूल 6 परिणामों से भाग देना नई सूचना को अनदेखा करेगा। शर्त उलटने पर सामान्यतः उत्तर बदलता है; P(A|B) तथा P(B|A) अलग हर लेते हैं। संकेत की खड़ी रेखा का अर्थ B दिया है पढ़ें, विभाजन नहीं। पूरक के लिए P(A′|B)=1−P(A|B) है, क्योंकि B के अंदर A और उसका पूरक सभी परिणाम बाँटते हैं। यदि P(B)=0 हो तो यह प्राथमिक अनुपात परिभाषित नहीं है। हर प्रश्न में पहले लिखें कि निश्चित सूचना कौन सी है और पूछा क्या गया है। इससे उलटे सशर्त मान रखने की सामान्य गलती घटती है।"
+      },
+      "formula": "P(A|B)=P(A∩B)/P(B), P(B)>0",
+      "question": {
+        "en": "Given an even die result, what is the chance it exceeds 3?",
+        "hi": "पासे पर सम अंक दिया हो तो 3 से बड़ा होने की संभावना?"
+      },
+      "answer": {
+        "en": "2/3: favourable outcomes 4,6 within {2,4,6}.",
+        "hi": "2/3: {2,4,6} में अनुकूल 4,6 हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Multiplication rule and sequential experiments",
+        "hi": "गुणन नियम और क्रमिक प्रयोग"
+      },
+      "body": {
+        "en": "Rearranging conditional probability gives P(A∩B)=P(A)P(B|A), provided P(A)>0. Equally, use P(B)P(A|B). For three events, P(A∩B∩C)=P(A)P(B|A)P(C|A∩B) when the conditional probabilities are defined. A probability tree follows the chronological choices: multiply along a branch, then add probabilities of mutually exclusive successful branches. In sampling without replacement, both the remaining total and the relevant count change. From a bag with 3 red and 2 blue balls, the probability of two reds is (3/5)(2/4)=3/10. With replacement and thorough mixing it is (3/5)(3/5)=9/25. Describe the sampling rule before applying a formula.",
+        "hi": "गुणन नियम (Multiplication rule) सशर्त परिभाषा से मिलता है: P(A∩B)=P(A)P(B|A)। इसी संयुक्त घटना को P(B)P(A|B) भी लिख सकते हैं, जहाँ संबंधित शर्तें परिभाषित हों। 3 घटनाओं में P(A∩B∩C)=P(A)P(B|A)P(C|A∩B) है। यहाँ अंतिम शर्त में पिछली दोनों घटनाएँ शामिल हैं। प्रायिकता वृक्ष (Probability tree) क्रमिक प्रयोग समझाता है। 1 शाखा के साथ प्रायिकताएँ गुणा करें; अलग और परस्पर अपवर्जी सफल शाखाओं को जोड़ें। बिना पुनःस्थापन (Without replacement) नमूने में कुल वस्तुओं की संख्या और संबंधित रंग की संख्या बदलती है। थैले में 3 लाल, 2 नीली गेंदें हों तो लगातार 2 लाल की संभावना (3/5)(2/4)=3/10 है। पहली लाल निकलने के बाद 2 लाल और कुल 4 बचती हैं। पुनःस्थापन (With replacement) और अच्छी तरह मिलाने पर दूसरी बार फिर 3 लाल, कुल 5 होंगे; तब उत्तर (3/5)(3/5)=9/25 है। केवल 2 चरण हैं इसलिए स्वतंत्र मान लेना गलत है। वृक्ष की प्रत्येक अवस्था पर निकलती सभी संभावित शाखाओं का योग 1 होना चाहिए; यह मॉडल जाँच का अच्छा तरीका है।"
+      },
+      "formula": "P(A∩B)=P(A)P(B|A)=P(B)P(A|B)",
+      "question": {
+        "en": "A bag has 3 red and 2 blue balls. Find two-red probability without replacement.",
+        "hi": "थैले में 3 लाल, 2 नीली हैं। बिना पुनःस्थापन 2 लाल की संभावना?"
+      },
+      "answer": {
+        "en": "(3/5)(2/4)=3/10.",
+        "hi": "(3/5)(2/4)=3/10।"
+      }
+    },
+    {
+      "title": {
+        "en": "Independence is not mutual exclusion",
+        "hi": "स्वतंत्रता और अपवर्जन अलग हैं"
+      },
+      "body": {
+        "en": "Events A and B are independent if P(A∩B)=P(A)P(B). If P(B)>0, this is equivalent to P(A|B)=P(A). Independence means information about one event does not alter the probability of the other. Mutually exclusive events cannot occur together; they have P(A∩B)=0. Two mutually exclusive events with positive probabilities cannot be independent, since their product is positive. Conversely, independent events may occur together. For a fair die, even and greater-than-4 have probabilities 1/2 and 1/3, and intersection {6} has probability 1/6; these events are independent. Independence is a statement about the probability model, so it should be checked rather than guessed from everyday language.",
+        "hi": "घटनाएँ स्वतंत्र (Independent) हैं यदि P(A∩B)=P(A)P(B)। P(B)>0 होने पर यही शर्त P(A|B)=P(A) बनती है। इसका अर्थ B की जानकारी A की संभावना नहीं बदलती। स्वतंत्रता को परस्पर अपवर्जी (Mutually exclusive) होने से अलग समझें। अपवर्जी घटनाएँ एक साथ नहीं होतीं, इसलिए साझा प्रायिकता 0 है। यदि दोनों की अलग प्रायिकताएँ धनात्मक हैं, तो उनका गुणनफल धनात्मक होगा; इसीलिए वे स्वतंत्र नहीं हो सकतीं। दूसरी ओर स्वतंत्र घटनाएँ साथ हो सकती हैं। निष्पक्ष पासे में A सम अंक और B अंक 4 से बड़ा लें। P(A)=1/2, P(B)=1/3 तथा साझा घटना {6} से P(A∩B)=1/6 है। यह गुणनफल के बराबर है, इसलिए घटनाएँ स्वतंत्र हैं, भले वे एक ही पासे से परिभाषित हैं। अलग वस्तुओं या अलग समय के प्रयोग हमेशा स्वतंत्र हों, ऐसा भी जरूरी नहीं। स्वतंत्रता प्रयोग के मॉडल का गुण है; दिए मान से जाँच करें। कोई घटना निश्चित हो या प्रायिकता 0 हो तो विशेष स्थितियाँ परिभाषा से सँभलती हैं। सामान्य कथन में धनात्मक प्रायिकता की शर्त भूलकर अपवर्जन और स्वतंत्रता को एक मानना बड़ी वैचारिक त्रुटि है।"
+      },
+      "formula": "Independent ⇔ P(A∩B)=P(A)P(B); exclusive ⇔ A∩B=∅",
+      "question": {
+        "en": "Can two disjoint events with positive probabilities be independent?",
+        "hi": "धनात्मक प्रायिकता की 2 अपवर्जी घटनाएँ स्वतंत्र हो सकती हैं?"
+      },
+      "answer": {
+        "en": "No: their joint probability is 0 but the product is positive.",
+        "hi": "नहीं; संयुक्त प्रायिकता 0, पर गुणनफल धनात्मक है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Complements and more than two events",
+        "hi": "पूरक और अनेक घटनाएँ"
+      },
+      "body": {
+        "en": "If A and B are independent, their complements are also independent in the appropriate combinations. For example, P(A∩B′)=P(A)−P(A∩B)=P(A)[1−P(B)]. At least one occurrence is often easiest through the complement of none. For independent events with probabilities p and q, at least one has probability 1−(1−p)(1−q). For three events, pairwise independence checks the three pairs; mutual independence additionally requires the triple intersection to equal the product of all three probabilities. Pairwise independence alone is not enough. When conditions imply a dependence, calculate branch probabilities rather than multiplying unconditional probabilities. Always translate words such as both, none, exactly one and at least one into events before choosing operations.",
+        "hi": "यदि A और B स्वतंत्र हैं, तो उनके पूरकों के उचित युग्म भी स्वतंत्र होते हैं। उदाहरण P(A∩B′)=P(A)−P(A∩B)=P(A)[1−P(B)] है। इससे A तथा B′ की स्वतंत्रता मिलती है। कम से कम 1 घटना होने की संभावना अक्सर कोई भी न होने के पूरक से सरल निकलती है। स्वतंत्र घटनाओं की संभावनाएँ p,q हों तो कम से कम 1 की संभावना 1−(1−p)(1−q) है। इसे p+q लिखना गलत होगा, क्योंकि दोनों साथ होने का साझा भाग दो बार गिना जाएगा। ठीक 1 घटना के लिए A∩B′ और A′∩B जोड़ते हैं; ये शाखाएँ अपवर्जी हैं। 3 घटनाओं में युग्मतः स्वतंत्रता (Pairwise independence) हर जोड़े के गुणन नियम को मानती है। पारस्परिक स्वतंत्रता (Mutual independence) के लिए साथ ही P(A∩B∩C)=P(A)P(B)P(C) भी चाहिए। केवल जोड़ों की जाँच पर्याप्त नहीं। निर्भर प्रयोग में बिना शर्त संभावनाएँ सीधे गुणा न करें; सशर्त शाखाएँ लें। दोनों, कोई नहीं, ठीक 1 और कम से कम 1 जैसे शब्द पहले घटना संकेत में बदलें। इसी अनुवाद से सही जोड़, घटाव या गुणन का निर्णय मिलता है। अंतिम उत्तर को 0 और 1 की सीमा में जाँचना उपयोगी है।"
+      },
+      "formula": "P(at least one)=1−P(none); for independent A,B: 1−(1−p)(1−q)",
+      "question": {
+        "en": "Independent events each have probability 1/2. Find the chance at least one occurs.",
+        "hi": "स्वतंत्र घटनाओं की संभावना 1/2,1/2 है। कम से कम 1 की संभावना?"
+      },
+      "answer": {
+        "en": "1−(1/2)(1/2)=3/4.",
+        "hi": "1−(1/2)(1/2)=3/4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Partitions and total probability",
+        "hi": "विभाजन और कुल प्रायिकता"
+      },
+      "body": {
+        "en": "A partition E1,...,En of S consists of mutually exclusive events whose union is S. Assume each P(Ei)>0 when using conditional branch probabilities. Any event A splits into disjoint pieces A∩Ei. Adding these pieces and applying multiplication gives P(A)=ΣP(Ei)P(A|Ei). This is the total-probability theorem. The weights P(Ei) must sum to 1. It is not generally correct to average the conditional probabilities equally. If machines supply 60% and 40% of production with defect rates 2% and 5%, the overall defect probability is .6×.02+.4×.05=.032. Production shares are the weights; defect rates are the probabilities conditional on the source. A tree or two-way table makes the distinction clear.",
+        "hi": "प्रतिदर्श समष्टि का विभाजन (Partition) E1,...,En ऐसा हो कि घटनाएँ परस्पर अपवर्जी हों और उनका सम्मिलन पूरा S हो। प्रत्येक शाखा की सशर्त संभावना उपयोग करते समय P(Ei)>0 मानते हैं। किसी घटना A को A∩E1, A∩E2,... में बाँटा जा सकता है। ये टुकड़े अपवर्जी हैं, इसलिए उनकी प्रायिकताएँ जुड़ती हैं। गुणन नियम लगाने से कुल प्रायिकता प्रमेय (Total probability theorem) P(A)=ΣP(Ei)P(A|Ei) मिलता है। भार P(Ei) का योग 1 होना चाहिए। सशर्त दरों का साधारण औसत तभी उचित होगा जब सभी स्रोतों के भार समान हों। 2 मशीनें उत्पादन का 60% और 40% देती हों तथा उनकी खराब दरें 2% और 5% हों तो कुल खराब संभावना .6×.02+.4×.05=.032 अर्थात 3.2% है। उत्पादन का हिस्सा और खराब होने की दर अलग सूचनाएँ हैं। पहली स्रोत चुनने की संभावना, दूसरी चुने स्रोत के अंदर खराब होने की संभावना है। वृक्ष में पहले स्रोत की शाखाएँ बनाकर फिर खराब और ठीक के उपभाग बनाएँ। प्रत्येक स्रोत के संयुक्त खराब भागों को जोड़ने से पूरे उत्पादन की दर मिलती है। प्रतिशत को दशमलव में बदलकर गुणा करें और अंत में प्रतिशत चाहें तो 100 से गुणा करें।"
+      },
+      "formula": "P(A)=Σ P(Ei)P(A|Ei), where {Ei} partitions S",
+      "question": {
+        "en": "Two equally likely bags give red with probabilities 1/3 and 2/3. Find P(red).",
+        "hi": "समान चुने 2 थैलों में लाल की संभावना 1/3,2/3 है। P(लाल)?"
+      },
+      "answer": {
+        "en": "(1/2)(1/3)+(1/2)(2/3)=1/2.",
+        "hi": "(1/2)(1/3)+(1/2)(2/3)=1/2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Bayes theorem reverses the condition",
+        "hi": "बेज़ प्रमेय से शर्त उलटना"
+      },
+      "body": {
+        "en": "Bayes theorem finds the probability of a source after observing an outcome: P(Ei|A)=P(Ei)P(A|Ei)/ΣP(Ej)P(A|Ej), with P(A)>0. The numerator is the joint probability of that source and observation; the denominator is the total probability of the observation. Prior source shares and likelihoods both matter. A high defect rate does not by itself make a machine the most likely source of a defective item if that machine produces very few items. In the 60%/40% example with defect rates 2%/5%, a defective item came from the second machine with probability .020/.032=5/8. Posterior source probabilities sum to one, giving a useful verification.",
+        "hi": "बेज़ प्रमेय (Bayes theorem) परिणाम की जानकारी मिलने के बाद स्रोत की संभावना देता है। कुल प्रायिकता में स्रोत से परिणाम की ओर चलते हैं; बेज़ में परिणाम से संभावित स्रोत की ओर लौटते हैं। सूत्र P(Ei|A)=P(Ei)P(A|Ei)/ΣP(Ej)P(A|Ej) है, जहाँ P(A)>0। अंश चुने स्रोत और देखे परिणाम की संयुक्त संभावना है। हर सभी स्रोतों से वही परिणाम आने की कुल संभावना है। पूर्व प्रायिकता (Prior probability) P(Ei) तथा स्रोत के अंदर परिणाम की संभावना दोनों जरूरी हैं। केवल खराब दर अधिक होने से वह मशीन खराब वस्तु का सबसे संभावित स्रोत होगी, ऐसा तय नहीं है; उसका उत्पादन हिस्सा बहुत छोटा हो सकता है। 60% और 40% उत्पादन, 2% तथा 5% खराब दर वाले उदाहरण में दूसरी मशीन का संयुक्त खराब भाग .4×.05=.020 है। कुल .032 से भाग देने पर .020/.032=5/8 मिलता है। सभी स्रोतों की पश्च प्रायिकताएँ (Posterior probabilities) जोड़ने पर 1 आना चाहिए। इसे जाँच के रूप में लें। P(A|Ei) को बिना भार लगाए P(Ei|A) मान लेना उलटी शर्त की गलती है। प्रश्न में दी सूचना और खोजे स्रोत को अलग वाक्य में लिखना मदद करता है।"
+      },
+      "formula": "P(Ei|A)=P(Ei)P(A|Ei)/Σ P(Ej)P(A|Ej), P(A)>0",
+      "question": {
+        "en": "Machines M1,M2 supply 60%,40% with defect rates 2%,5%. Given a defect, find P(M2|defect).",
+        "hi": "M1,M2 का उत्पादन 60%,40%, खराब दर 2%,5% है। खराब वस्तु दी हो तो P(M2|खराब)?"
+      },
+      "answer": {
+        "en": "(.4×.05)/(.6×.02+.4×.05)=5/8.",
+        "hi": "(.4×.05)/(.6×.02+.4×.05)=5/8।"
+      }
+    },
+    {
+      "title": {
+        "en": "Reading tables and checking the model",
+        "hi": "तालिकाएँ पढ़ना और मॉडल जाँचना"
+      },
+      "body": {
+        "en": "A two-way frequency table distinguishes joint counts, marginal totals and conditional ratios. If a table has 100 students, 40 in a music group and 10 of those also in sport, P(sport|music)=10/40, not 10/100. A conditional denominator is the selected row or column total. Keep whether sampling is with replacement explicit. For a Bayes problem, define source events forming a partition, calculate each joint branch, add for the observation, and divide the required branch by that total. Do not infer causation from a conditional probability. A zero count in a finite observed table is not a universal scientific proof that an event is impossible. This chapter focuses on conditional probability through Bayes; distributions of random variables are outside the prescribed core here.",
+        "hi": "द्विमार्गी सारणी (Two-way table) संयुक्त संख्या, सीमांत योग और सशर्त अनुपात अलग दिखाती है। 100 विद्यार्थियों में 40 संगीत समूह में हों और उनमें 10 खेल भी खेलते हों तो P(खेल|संगीत)=10/40 है, 10/100 नहीं। हर संगीत की सूचना से चुनी पंक्ति या स्तंभ का योग है। संयुक्त संभावना P(खेल∩संगीत)=10/100 अलग प्रश्न है। तालिका से मिले अनुपात को प्रयोग के नमूना चयन के अनुसार पढ़ें। गेंदें चुनते समय पुनःस्थापन है या नहीं, यह साफ लिखें। बेज़ प्रश्न में पहले स्रोत घटनाएँ पूर्ण विभाजन बनाती हैं या नहीं देखें; फिर हर स्रोत का संयुक्त परिणाम भाग निकालें, उन्हें जोड़ें और माँगे स्रोत का भाग कुल से बाँटें। हर शाखा की संभावना 0 से 1 तथा स्रोत भारों का योग 1 होना चाहिए। सशर्त संबंध अपने आप कारण संबंध सिद्ध नहीं करता। किसी छोटे देखे नमूने में 0 संख्या मिलना हर स्थिति में घटना असंभव होने का सार्वभौम प्रमाण नहीं है। यहाँ निर्धारित मुख्य अध्ययन सशर्त प्रायिकता से बेज़ तक है; यादृच्छिक चरों के वितरण जोड़ना आवश्यक नहीं। प्रश्न हल करते समय गिनती, प्रयोग की धारणाएँ और गणितीय निष्कर्ष अलग स्पष्ट करें।"
+      },
+      "formula": "Conditional table ratio = joint count / total count satisfying the given condition",
+      "question": {
+        "en": "Among 40 music students, 10 play sport. Find P(sport|music).",
+        "hi": "40 संगीत विद्यार्थियों में 10 खेल खेलते हैं। P(खेल|संगीत)?"
+      },
+      "answer": {
+        "en": "10/40=1/4.",
+        "hi": "10/40=1/4।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A fair die result is known to be even. Find the probability it is greater than 3.",
+        "hi": "निष्पक्ष पासे पर सम अंक दिया है। 3 से बड़ा होने की संभावना निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given B={2,4,6}; required event A={4,5,6}.",
+          "hi": "दिया B={2,4,6}; माँगी घटना A={4,5,6}।"
+        },
+        {
+          "en": "A∩B={4,6}; P(B)=3/6 and P(A∩B)=2/6.",
+          "hi": "A∩B={4,6}; P(B)=3/6, P(A∩B)=2/6।"
+        },
+        {
+          "en": "P(A|B)=(2/6)/(3/6)=2/3.",
+          "hi": "P(A|B)=(2/6)/(3/6)=2/3।"
+        }
+      ],
+      "answer": {
+        "en": "2/3.",
+        "hi": "2/3।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "P(A)=.4,P(B)=.5,P(A∩B)=.2. Are A and B independent?",
+        "hi": "P(A)=.4,P(B)=.5,P(A∩B)=.2 है। क्या A,B स्वतंत्र हैं?"
+      },
+      "steps": [
+        {
+          "en": "Given marginal and joint probabilities; compare the joint with the product.",
+          "hi": "अलग और संयुक्त प्रायिकताएँ दी हैं; संयुक्त को गुणनफल से तुलना करें।"
+        },
+        {
+          "en": "P(A)P(B)=.4×.5=.2=P(A∩B).",
+          "hi": "P(A)P(B)=.4×.5=.2=P(A∩B)।"
+        },
+        {
+          "en": "They are not mutually exclusive, because the joint probability is positive.",
+          "hi": "वे अपवर्जी नहीं हैं, क्योंकि संयुक्त प्रायिकता धनात्मक है।"
+        }
+      ],
+      "answer": {
+        "en": "Yes, independent; not mutually exclusive.",
+        "hi": "हाँ, स्वतंत्र; पर अपवर्जी नहीं।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A bag has 3 red and 2 blue balls. Two are drawn without replacement. Find the probability of exactly one red.",
+        "hi": "थैले में 3 लाल, 2 नीली गेंदें हैं। बिना पुनःस्थापन 2 निकालने पर ठीक 1 लाल की संभावना?"
+      },
+      "steps": [
+        {
+          "en": "Exactly one red consists of disjoint branches RB and BR.",
+          "hi": "ठीक 1 लाल की अपवर्जी शाखाएँ लाल-नीली और नीली-लाल हैं।"
+        },
+        {
+          "en": "P(RB)=(3/5)(2/4)=3/10.",
+          "hi": "P(लाल-नीली)=(3/5)(2/4)=3/10।"
+        },
+        {
+          "en": "P(BR)=(2/5)(3/4)=3/10.",
+          "hi": "P(नीली-लाल)=(2/5)(3/4)=3/10।"
+        },
+        {
+          "en": "Add the branches: 3/10+3/10=3/5.",
+          "hi": "शाखाएँ जोड़ें: 3/10+3/10=3/5।"
+        }
+      ],
+      "answer": {
+        "en": "3/5.",
+        "hi": "3/5।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Machines M1,M2 make 60%,40% of items with defect probabilities .02,.05. Find the overall defect probability.",
+        "hi": "M1,M2 का उत्पादन 60%,40%, खराब संभावनाएँ .02,.05 हैं। कुल खराब संभावना निकालें।"
+      },
+      "steps": [
+        {
+          "en": "The source events partition all production. Let D be defective.",
+          "hi": "स्रोत घटनाएँ पूरे उत्पादन का विभाजन हैं। D खराब घटना है।"
+        },
+        {
+          "en": "P(D)=P(M1)P(D|M1)+P(M2)P(D|M2).",
+          "hi": "P(D)=P(M1)P(D|M1)+P(M2)P(D|M2)।"
+        },
+        {
+          "en": "=.6×.02+.4×.05=.012+.020=.032.",
+          "hi": "= .6×.02+.4×.05=.012+.020=.032।"
+        }
+      ],
+      "answer": {
+        "en": ".032=3.2%.",
+        "hi": ".032=3.2%।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Bag I has 2 red,1 blue; Bag II has 1 red,3 blue. Choose I with probability 1/3 and II with 2/3, then draw one red ball. Find the probability it came from I.",
+        "hi": "थैला I में 2 लाल,1 नीली; II में 1 लाल,3 नीली है। I को 1/3, II को 2/3 संभावना से चुनकर 1 गेंद निकाली और वह लाल मिली। उसके I से होने की संभावना?"
+      },
+      "steps": [
+        {
+          "en": "Given P(I)=1/3,P(II)=2/3; P(R|I)=2/3,P(R|II)=1/4.",
+          "hi": "दिया P(I)=1/3,P(II)=2/3; P(R|I)=2/3,P(R|II)=1/4।"
+        },
+        {
+          "en": "Joint red probabilities are (1/3)(2/3)=2/9 and (2/3)(1/4)=1/6.",
+          "hi": "संयुक्त लाल प्रायिकताएँ (1/3)(2/3)=2/9 तथा (2/3)(1/4)=1/6 हैं।"
+        },
+        {
+          "en": "Total P(R)=2/9+1/6=7/18.",
+          "hi": "कुल P(R)=2/9+1/6=7/18।"
+        },
+        {
+          "en": "Bayes: P(I|R)=(2/9)/(7/18)=4/7. The other posterior is 3/7.",
+          "hi": "बेज़: P(I|R)=(2/9)/(7/18)=4/7। दूसरे की पश्च संभावना 3/7 है।"
+        }
+      ],
+      "answer": {
+        "en": "4/7.",
+        "hi": "4/7।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which denominator defines P(A|B)?",
+        "hi": "P(A|B) का हर कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "P(B), with P(B)>0",
+            "hi": "P(B), जहाँ P(B)>0"
+          },
+          "reason": {
+            "en": "B is the given information and reduced universe.",
+            "hi": "B दी सूचना और सीमित समष्टि है।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(A) always",
+            "hi": "हमेशा P(A)"
+          },
+          "reason": {
+            "en": "That denominator belongs to the reverse condition.",
+            "hi": "वह उलटी शर्त का हर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(A∪B)",
+            "hi": "P(A∪B)"
+          },
+          "reason": {
+            "en": "The union is not the conditioning event.",
+            "hi": "सम्मिलन दी हुई शर्त नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(A∩B)",
+            "hi": "P(A∩B)"
+          },
+          "reason": {
+            "en": "The intersection is the numerator.",
+            "hi": "साझा भाग अंश है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For a fair die, given an even result, P(result=6) is…",
+        "hi": "निष्पक्ष पासे पर सम अंक दिया हो तो P(अंक=6)…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/3",
+            "hi": "1/3"
+          },
+          "reason": {
+            "en": "The possible results are 2,4,6.",
+            "hi": "संभव अंक 2,4,6 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/6",
+            "hi": "1/6"
+          },
+          "reason": {
+            "en": "That ignores the given information.",
+            "hi": "यह दी सूचना छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          "reason": {
+            "en": "Only one of three remaining outcomes is 6.",
+            "hi": "शेष 3 में केवल 1 अंक 6 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "An even result need not be 6.",
+            "hi": "सम अंक जरूरी नहीं 6 हो।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The multiplication rule is…",
+        "hi": "गुणन नियम है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "P(A∩B)=P(A)P(B|A)",
+            "hi": "P(A∩B)=P(A)P(B|A)"
+          },
+          "reason": {
+            "en": "This follows from the definition of conditional probability.",
+            "hi": "यह सशर्त प्रायिकता की परिभाषा से है।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(A∩B)=P(A)+P(B)",
+            "hi": "P(A∩B)=P(A)+P(B)"
+          },
+          "reason": {
+            "en": "Adding marginals is not the joint probability rule.",
+            "hi": "अलग संभावनाएँ जोड़ना संयुक्त नियम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(A∩B)=P(A)P(B) for every pair",
+            "hi": "हर युग्म के लिए P(A∩B)=P(A)P(B)"
+          },
+          "reason": {
+            "en": "That product requires independence.",
+            "hi": "उस गुणनफल के लिए स्वतंत्रता चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(A∩B)=P(A)/P(B)",
+            "hi": "P(A∩B)=P(A)/P(B)"
+          },
+          "reason": {
+            "en": "This is not the joint probability relation.",
+            "hi": "यह संयुक्त प्रायिकता संबंध नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Positive-probability disjoint events are…",
+        "hi": "धनात्मक प्रायिकता की अपवर्जी घटनाएँ…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Dependent",
+            "hi": "निर्भर"
+          },
+          "reason": {
+            "en": "Their joint is 0 but their probability product is positive.",
+            "hi": "संयुक्त 0, पर संभावनाओं का गुणनफल धनात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always independent",
+            "hi": "हमेशा स्वतंत्र"
+          },
+          "reason": {
+            "en": "Disjointness prevents one when the other occurs.",
+            "hi": "एक होने पर अपवर्जन दूसरे को रोकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The same event",
+            "hi": "समान घटना"
+          },
+          "reason": {
+            "en": "Two positive disjoint events cannot coincide.",
+            "hi": "2 धनात्मक अपवर्जी घटनाएँ समान नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Certain events",
+            "hi": "निश्चित घटनाएँ"
+          },
+          "reason": {
+            "en": "Disjointness does not make each probability 1.",
+            "hi": "अपवर्जन प्रत्येक संभावना 1 नहीं करता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A bag has 3 red,2 blue. After a red is removed without replacement, P(next red) is…",
+        "hi": "3 लाल,2 नीली में 1 लाल बिना पुनःस्थापन निकली। अगली लाल की संभावना…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2/4",
+            "hi": "2/4"
+          },
+          "reason": {
+            "en": "Two reds remain among four balls.",
+            "hi": "4 गेंदों में 2 लाल बचती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3/5",
+            "hi": "3/5"
+          },
+          "reason": {
+            "en": "That is the original probability before removal.",
+            "hi": "वह निकालने से पहले की संभावना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3/4",
+            "hi": "3/4"
+          },
+          "reason": {
+            "en": "The red count also decreases.",
+            "hi": "लाल संख्या भी घटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2/5",
+            "hi": "2/5"
+          },
+          "reason": {
+            "en": "The total count also decreases.",
+            "hi": "कुल संख्या भी घटती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Independent A,B have P(A)=.4,P(B)=.5. Find P(A∩B).",
+        "hi": "स्वतंत्र A,B में P(A)=.4,P(B)=.5 है। P(A∩B)?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": ".2",
+            "hi": ".2"
+          },
+          "reason": {
+            "en": "Independence gives .4×.5=.2.",
+            "hi": "स्वतंत्रता से .4×.5=.2।"
+          }
+        },
+        {
+          "text": {
+            "en": ".9",
+            "hi": ".9"
+          },
+          "reason": {
+            "en": "That is the sum, not the intersection.",
+            "hi": "वह योग है, साझा भाग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Independence does not mean mutual exclusion.",
+            "hi": "स्वतंत्रता अपवर्जन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": ".4",
+            "hi": ".4"
+          },
+          "reason": {
+            "en": "The second event has probability .5, not 1.",
+            "hi": "दूसरी घटना की संभावना .5 है, 1 नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For independent events of probabilities .2 and .3, P(at least one) is…",
+        "hi": "स्वतंत्र घटनाओं की संभावना .2,.3 हो तो कम से कम 1 की संभावना…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": ".44",
+            "hi": ".44"
+          },
+          "reason": {
+            "en": "1−(.8)(.7)=.44.",
+            "hi": "1−(.8)(.7)=.44।"
+          }
+        },
+        {
+          "text": {
+            "en": ".5",
+            "hi": ".5"
+          },
+          "reason": {
+            "en": "The sum double-counts the intersection .06.",
+            "hi": "योग साझा .06 दो बार गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": ".06",
+            "hi": ".06"
+          },
+          "reason": {
+            "en": "This is the probability of both.",
+            "hi": "यह दोनों की संभावना है।"
+          }
+        },
+        {
+          "text": {
+            "en": ".56",
+            "hi": ".56"
+          },
+          "reason": {
+            "en": "This is the probability of neither.",
+            "hi": "यह कोई नहीं की संभावना है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is required for a source partition in total probability?",
+        "hi": "कुल प्रायिकता में स्रोत विभाजन की क्या शर्त है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Disjoint sources covering the whole sample space",
+            "hi": "अपवर्जी स्रोत जो पूरी समष्टि ढकें"
+          },
+          "reason": {
+            "en": "Every outcome belongs to exactly one source.",
+            "hi": "हर परिणाम ठीक 1 स्रोत में आता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Overlapping sources only",
+            "hi": "केवल साझा स्रोत"
+          },
+          "reason": {
+            "en": "Overlaps would double-count outcomes.",
+            "hi": "साझा भाग परिणाम दो बार गिनेगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Equal source probabilities always",
+            "hi": "हमेशा समान स्रोत संभावना"
+          },
+          "reason": {
+            "en": "Unequal positive weights are allowed.",
+            "hi": "असमान धनात्मक भार मान्य हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Source probabilities need not sum to 1",
+            "hi": "स्रोत संभावनाओं का योग 1 जरूरी नहीं"
+          },
+          "reason": {
+            "en": "A full partition has total probability 1.",
+            "hi": "पूर्ण विभाजन की कुल प्रायिकता 1 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Bayes theorem principally finds…",
+        "hi": "बेज़ प्रमेय मुख्यतः निकालता है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A source probability given an observed outcome",
+            "hi": "देखे परिणाम पर स्रोत की संभावना"
+          },
+          "reason": {
+            "en": "It reverses the conditional using priors and likelihoods.",
+            "hi": "यह पूर्व संभावनाओं और दरों से शर्त उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A conditional probability without any source shares",
+            "hi": "बिना स्रोत भार की सशर्त संभावना"
+          },
+          "reason": {
+            "en": "Prior source probabilities are generally essential.",
+            "hi": "पूर्व स्रोत संभावना सामान्यतः जरूरी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A value always larger than 1",
+            "hi": "हमेशा 1 से बड़ा मान"
+          },
+          "reason": {
+            "en": "All resulting probabilities must stay between 0 and 1.",
+            "hi": "सभी संभावनाएँ 0 और 1 के बीच होंगी।"
+          }
+        },
+        {
+          "text": {
+            "en": "Proof that the outcome caused the source",
+            "hi": "परिणाम ने स्रोत बनाया इसका प्रमाण"
+          },
+          "reason": {
+            "en": "Conditional inference is not causal proof.",
+            "hi": "सशर्त अनुमान कारण का प्रमाण नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Sources have equal weights and P(A|E1)=.2,P(A|E2)=.6. Find P(E2|A).",
+        "hi": "स्रोत भार समान, P(A|E1)=.2,P(A|E2)=.6 हैं। P(E2|A)?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": ".75",
+            "hi": ".75"
+          },
+          "reason": {
+            "en": "(.5×.6)/(.5×.2+.5×.6)=.3/.4=.75.",
+            "hi": "(.5×.6)/(.5×.2+.5×.6)=.3/.4=.75।"
+          }
+        },
+        {
+          "text": {
+            "en": ".6",
+            "hi": ".6"
+          },
+          "reason": {
+            "en": "That is P(A|E2), the opposite conditional.",
+            "hi": "वह उलटी शर्त P(A|E2) है।"
+          }
+        },
+        {
+          "text": {
+            "en": ".5",
+            "hi": ".5"
+          },
+          "reason": {
+            "en": "The observation changes the equal prior weights.",
+            "hi": "परिणाम समान पूर्व भार बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": ".3",
+            "hi": ".3"
+          },
+          "reason": {
+            "en": "That is the joint P(E2∩A), before normalization.",
+            "hi": "वह सामान्यीकरण से पहले संयुक्त P(E2∩A) है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define P(A|B) and state its condition.",
+        "hi": "P(A|B) परिभाषित करें और शर्त लिखें।"
+      },
+      "answer": {
+        "en": "P(A|B)=P(A∩B)/P(B), requiring P(B)>0. It restricts possible outcomes to B.",
+        "hi": "P(A|B)=P(A∩B)/P(B), जहाँ P(B)>0। संभावित परिणाम B में सीमित होते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "P(A)=.6,P(B)=.5,P(A∩B)=.3. Find P(A|B) and test independence.",
+        "hi": "P(A)=.6,P(B)=.5,P(A∩B)=.3 है। P(A|B) और स्वतंत्रता जाँचें।"
+      },
+      "answer": {
+        "en": "P(A|B)=.3/.5=.6=P(A), and .6×.5=.3; they are independent.",
+        "hi": "P(A|B)=.3/.5=.6=P(A), तथा .6×.5=.3; वे स्वतंत्र हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "A bag has 4 red and 2 blue balls. Find two-red probability without replacement.",
+        "hi": "थैले में 4 लाल,2 नीली गेंदें हैं। बिना पुनःस्थापन 2 लाल की संभावना?"
+      },
+      "answer": {
+        "en": "(4/6)(3/5)=2/5. The second total and red count are both reduced.",
+        "hi": "(4/6)(3/5)=2/5। दूसरे चरण में कुल और लाल संख्या दोनों घटती हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "State and explain the total-probability theorem.",
+        "hi": "कुल प्रायिकता प्रमेय लिखकर समझाएँ।"
+      },
+      "answer": {
+        "en": "If {Ei} is a disjoint exhaustive partition with positive probabilities, P(A)=ΣP(Ei)P(A|Ei). Add the joint probabilities from every possible source.",
+        "hi": "धनात्मक प्रायिकता का अपवर्जी पूर्ण विभाजन {Ei} हो तो P(A)=ΣP(Ei)P(A|Ei)। हर संभव स्रोत की संयुक्त संभावना जोड़ते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is P(A|B) generally different from P(B|A)?",
+        "hi": "P(A|B), P(B|A) सामान्यतः अलग क्यों हैं?"
+      },
+      "answer": {
+        "en": "The joint numerator is the same, but the reduced-universe denominators P(B) and P(A) differ. They coincide only under suitable values, not as a rule.",
+        "hi": "साझा अंश समान है, पर सीमित समष्टि के हर P(B),P(A) अलग हैं। उपयुक्त मानों पर बराबर हो सकते हैं, सामान्य नियम से नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "M1 supplies 3/4 and M2 1/4; defect rates are .02 and .06. Given a defect, find P(M2|D).",
+        "hi": "M1 का हिस्सा 3/4, M2 का 1/4, खराब दर .02,.06 है। खराब मिलने पर P(M2|D)?"
+      },
+      "answer": {
+        "en": "Joint defects: .75×.02=.015 and .25×.06=.015; total=.03. Thus P(M2|D)=.015/.03=1/2.",
+        "hi": "संयुक्त खराब भाग .75×.02=.015, .25×.06=.015; कुल .03। इसलिए P(M2|D)=.015/.03=1/2।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not reverse the condition, use the original denominator after information, assume without-replacement draws are independent, confuse exclusivity with independence, or ignore source weights in Bayes.",
+    "hi": "शर्त न उलटें; सूचना के बाद पुराना हर न लें; बिना पुनःस्थापन को स्वतंत्र न मानें; अपवर्जन और स्वतंत्रता अलग रखें; बेज़ में स्रोत भार न छोड़ें।"
+  },
+  "revision": [
+    {
+      "en": "A condition restricts the sample space.",
+      "hi": "शर्त प्रतिदर्श समष्टि सीमित करती है।"
+    },
+    {
+      "en": "Multiply conditional probabilities along a tree branch.",
+      "hi": "वृक्ष शाखा पर सशर्त संभावनाएँ गुणा करें।"
+    },
+    {
+      "en": "Independence requires a joint-product equality.",
+      "hi": "स्वतंत्रता में संयुक्त और गुणनफल बराबर हों।"
+    },
+    {
+      "en": "Total probability weights every source.",
+      "hi": "कुल प्रायिकता हर स्रोत को भार देती है।"
+    },
+    {
+      "en": "Bayes updates source probabilities after observation.",
+      "hi": "बेज़ परिणाम के बाद स्रोत संभावना बदलता है।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Events → restricted sample space → conditional probability → multiplication and independence → source partition → total probability → Bayes update.",
+    "hi": "घटनाएँ → सीमित प्रतिदर्श → सशर्त प्रायिकता → गुणन और स्वतंत्रता → स्रोत विभाजन → कुल प्रायिकता → बेज़ अद्यतन।"
+  },
+  "id": 13,
+  "engine": "twelve-math",
+  "scenes": [],
+  "sources": [
+    {
+      "title": "UPMSP Mathematics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Mathematics Class XII, Chapter 13",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh207.pdf"
+    }
+  ]
+}

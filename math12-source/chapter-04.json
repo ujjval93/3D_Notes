@@ -1,0 +1,892 @@
+{
+  "id": 4,
+  "title": {
+    "en": "Determinants",
+    "hi": "सारणिक"
+  },
+  "goal": {
+    "en": "Evaluate determinants, obtain inverse matrices and solve area and linear-system problems.",
+    "hi": "सारणिक निकालें, प्रतिलोम आव्यूह बनाएँ और क्षेत्रफल व रैखिक निकाय के प्रश्न हल करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Determinant as a scalar",
+        "hi": "सारणिक एक अदिश संख्या"
+      },
+      "body": {
+        "en": "A determinant assigns a scalar to a square matrix. For a 2×2 matrix it is ad−bc. Vertical bars differ from matrix brackets; determinants of rectangular matrices are not defined here.",
+        "hi": "सारणिक (Determinant) किसी वर्ग आव्यूह से जुड़ी एक संख्या या बीजगणितीय व्यंजक है। 2×2 आव्यूह A=[[a,b],[c,d]] का सारणिक |A|=ad−bc है। पहले मुख्य विकर्ण का गुणनफल और फिर दूसरे विकर्ण का गुणनफल घटाते हैं। [[2,3],[1,4]] के लिए |A|=2×4−3×1=5 है। आव्यूह 4 अवयवों वाला विन्यास है, जबकि उसका सारणिक 1 अदिश मान है; दोनों को एक वस्तु न मानें। लंबवत रेखाएँ सारणिक और वर्ग कोष्ठक आव्यूह दर्शाते हैं। 1×1 आव्यूह [a] का सारणिक a है। इस अध्याय में सारणिक केवल वर्ग आव्यूहों के लिए परिभाषित है; 2×3 की कोई ऐसी सारणिक गणना नहीं है। मान ऋणात्मक, शून्य या धनात्मक हो सकता है। ऋणात्मक सारणिक को गलत गणना न मानें; ज्यामितीय अर्थ में दिशा का संकेत भी है। किसी संख्यात्मक प्रश्न में ऋण चिह्न और गुणन का क्रम साफ लिखें। चर वाले सारणिक में भी वही सूत्र लागू है। पहले प्रत्येक विकर्ण गुणन अलग लिखकर फिर घटाने से चिह्न की भूल कम होती है।"
+      },
+      "formula": "|[[a,b],[c,d]]|=ad−bc",
+      "question": {
+        "en": "Find |[[3,1],[2,4]]|.",
+        "hi": "|[[3,1],[2,4]]| निकालें।"
+      },
+      "answer": {
+        "en": "3×4−1×2=10.",
+        "hi": "3×4−1×2=10।"
+      }
+    },
+    {
+      "title": {
+        "en": "Minors and cofactors",
+        "hi": "उपसारणिक और सहखंड"
+      },
+      "body": {
+        "en": "Delete row i and column j to obtain minor Mij. The cofactor Cij=(−1)^(i+j)Mij applies a checkerboard sign. A minor and a cofactor are not generally equal.",
+        "hi": "उपसारणिक (Minor) Mᵢⱼ निकालने के लिए मूल सारणिक की iवीं पंक्ति और jवाँ स्तंभ हटाते हैं। बचा हुआ सारणिक उसका मान देता है। 3×3 में हर उपसारणिक 2×2 होगा। सहखंड (Cofactor) Cᵢⱼ=(−1)^(i+j)Mᵢⱼ है। इसलिए चिह्नों का विन्यास पहली पंक्ति में +,−,+; दूसरी में −,+,−; तीसरी में +,−,+ है। चिह्न स्थान से तय होता है, मूल अवयव के धनात्मक या ऋणात्मक होने से नहीं। उदाहरणतः A=[[1,2,3],[4,5,6],[7,8,9]] में M₁₂=|[[4,6],[7,9]]|=36−42=−6, पर C₁₂=−M₁₂=6 है। उपसारणिक स्वयं ऋणात्मक हो सकता है; सहखंड का अतिरिक्त चिह्न उसके बाद लगाएँ। पंक्ति हटाने तथा स्तंभ हटाने का एक दृश्य निशान बनाना सहायक है। हटे अवयव को बचे 2×2 में दोबारा न शामिल करें। C₂₃ में i+j=5 है, अतः ऋण चिह्न लगेगा। आगे सहखंड विस्तार और सहखंडज दोनों में यही मान उपयोग होगा, इसलिए सारणी बनाते समय हर स्थान और उसके चिह्न की दोहरी जाँच करें।"
+      },
+      "formula": "Cᵢⱼ=(−1)^(i+j)Mᵢⱼ; sign grid [[+,−,+],[−,+,−],[+,−,+]]",
+      "question": {
+        "en": "What is the sign multiplying M₂₃?",
+        "hi": "M₂₃ पर कौन-सा चिह्न गुणा होगा?"
+      },
+      "answer": {
+        "en": "Negative, because 2+3 is odd.",
+        "hi": "ऋणात्मक, क्योंकि 2+3 विषम है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Expanding a 3×3 determinant",
+        "hi": "3×3 सारणिक का प्रसार"
+      },
+      "body": {
+        "en": "Expand along any row or column by summing entries times their cofactors. Choosing a line containing zeros reduces arithmetic. Never multiply all nine entries or omit cofactor signs.",
+        "hi": "3×3 सारणिक का प्रसार (Expansion) किसी भी 1 पंक्ति या स्तंभ से कर सकते हैं। पहली पंक्ति से |A|=a₁₁C₁₁+a₁₂C₁₂+a₁₃C₁₃ है। हर पद में मूल अवयव और उसी स्थान का सहखंड गुणा होता है। सहखंड के चिह्न पहले से लगे हों तो फिर अलग से +,−,+ न लगाएँ, अन्यथा चिह्न दो बार लग जाएगा। उपसारणिक से लिखें तो पहली पंक्ति का सूत्र a₁₁M₁₁−a₁₂M₁₂+a₁₃M₁₃ होगा। अधिक शून्य वाली पंक्ति या स्तंभ चुनने से गणना कम होती है। शून्य अवयव का सहखंड अशून्य हो सकता है, फिर भी उसके साथ पूरा पद 0 होगा। प्रसार में सिर्फ 1 पंक्ति चुनना है; सभी पंक्तियों के विस्तार जोड़ना मूल मान को कई बार गिन देगा। किसी दूसरी पंक्ति से दोबारा निकालकर उत्तर की जाँच कर सकते हैं। 3×3 में चक्राकार विकर्ण विधि संभव है, पर उसे बड़ी कोटि पर नहीं बढ़ा सकते। सहखंड विधि कारण स्पष्ट रखती है और आगे प्रतिलोम बनाने में भी उपयोगी है। गणना के बाद परिणाम एक संख्या है, आव्यूह नहीं।"
+      },
+      "formula": "|A|=Σⱼ₌₁³aᵢⱼCᵢⱼ for any fixed row i",
+      "question": {
+        "en": "Which row is convenient for [[2,0,0],[1,3,4],[5,6,7]]?",
+        "hi": "[[2,0,0],[1,3,4],[5,6,7]] में कौन-सी पंक्ति सुविधाजनक है?"
+      },
+      "answer": {
+        "en": "The first row, with two zeros.",
+        "hi": "पहली पंक्ति, जिसमें 2 शून्य हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Useful determinant properties",
+        "hi": "सारणिक के उपयोगी गुणधर्म"
+      },
+      "body": {
+        "en": "Transposition preserves a determinant, swapping two rows changes its sign, and adding a multiple of one row to another preserves it. A common row factor comes out once; scaling an n×n matrix scales its determinant by k^n.",
+        "hi": "सारणिक के गुणधर्म (Properties) लंबी गणना को सरल करते हैं। परिवर्त लेने पर |Aᵀ|=|A| है। दो पंक्तियाँ या दो स्तंभ बदलने पर चिह्न बदलता है। दो समान या समानुपाती पंक्तियाँ होने पर सारणिक 0 है; स्तंभों के लिए भी यही बात सही है। किसी 1 पंक्ति के सभी अवयवों का समान गुणक k बाहर लेने से सारणिक k गुना होता है। पूरे n×n आव्यूह को k से गुणा करने पर हर पंक्ति में k लगता है, इसलिए |kA|=kⁿ|A|। इसे k|A| समझना सामान्य भूल है। किसी पंक्ति में दूसरी पंक्ति का k गुना जोड़ने से सारणिक नहीं बदलता। लेकिन एक साथ सभी पंक्तियाँ बदलने के लिए हर परिवर्तन क्रम से लागू करें, ताकि नया और पुराना विन्यास न मिल जाए। पूरी शून्य पंक्ति होने पर मान 0 है। त्रिकोणीय आव्यूह का सारणिक विकर्ण अवयवों का गुणनफल है। गुणधर्म का नाम और किए गए परिवर्तन को लिखें। ये परिणाम सहखंड विस्तार से जाँचे जा सकते हैं और यूपी बोर्ड के प्रश्नों में गणना का सहायक साधन हैं।"
+      },
+      "formula": "|Aᵀ|=|A|; |kA|=kⁿ|A|; Rᵢ→Rᵢ+kRⱼ preserves determinant (i≠j)",
+      "question": {
+        "en": "If |A|=3 for a 2×2 matrix, what is |2A|?",
+        "hi": "2×2 A के लिए |A|=3 हो तो |2A| क्या है?"
+      },
+      "answer": {
+        "en": "2²×3=12.",
+        "hi": "2²×3=12।"
+      }
+    },
+    {
+      "title": {
+        "en": "Area of a triangle",
+        "hi": "त्रिभुज का क्षेत्रफल"
+      },
+      "body": {
+        "en": "A coordinate triangle has area one half of the absolute value of a 3×3 determinant with last column 1. A zero determinant means the three points are collinear. Physical area cannot be negative.",
+        "hi": "निर्देशांक ज्यामिति में 3 बिंदुओं (x₁,y₁),(x₂,y₂),(x₃,y₃) से बने त्रिभुज का क्षेत्रफल सारणिक से निकाला जाता है। सूत्र Δ=(1/2)|x₁(y₂−y₃)+x₂(y₃−y₁)+x₃(y₁−y₂)| है। अंदर का व्यंजक उस 3×3 सारणिक के बराबर है जिसकी प्रत्येक पंक्ति में x,y,1 हैं। सबसे बाहर परिमाण (Absolute value) इसलिए है कि क्षेत्रफल गैरऋणात्मक होना चाहिए। 2 बिंदुओं का क्रम बदलने से सारणिक का चिह्न बदलेगा पर वास्तविक क्षेत्रफल नहीं बदलेगा। यदि सारणिक 0 है, तो क्षेत्रफल 0 और तीनों बिंदु संरेख (Collinear) हैं। एक बिंदु 2 बार आने पर भी यही स्थिति है। निर्देशांक cm में हों तो क्षेत्रफल cm² में होगा; बिना इकाई के निर्देशांक में वर्ग इकाई लिखें। सूत्र लगाने से पहले तीनों बिंदुओं को अलग पंक्तियों में सही क्रम से रखें। अंतिम चरण में आधा करना न भूलें। सरल उदाहरण में आधार और ऊँचाई से मिले क्षेत्रफल की तुलना करें। चित्र खिसकाने पर आकार या दिशा बदल सकती है; सटीक क्षेत्रफल गणना से तय करें, स्क्रीन की अनुमानित लंबाई से नहीं।"
+      },
+      "formula": "Δ=½|det[[x₁,y₁,1],[x₂,y₂,1],[x₃,y₃,1]]|",
+      "question": {
+        "en": "Are (0,0),(1,1),(2,2) collinear?",
+        "hi": "क्या (0,0),(1,1),(2,2) संरेख हैं?"
+      },
+      "answer": {
+        "en": "Yes; their area determinant is 0.",
+        "hi": "हाँ; क्षेत्रफल वाला सारणिक 0 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Adjugate and inverse",
+        "hi": "सहखंडज और प्रतिलोम"
+      },
+      "body": {
+        "en": "The adjugate is the transpose of the cofactor matrix, not the cofactor matrix itself. A adj(A)=det(A)I gives the inverse when the determinant is nonzero.",
+        "hi": "सहखंडज आव्यूह (Adjugate) adj A बनाने के लिए पहले सभी सहखंड Cᵢⱼ सही स्थानों पर लिखकर सहखंड आव्यूह C बनाएँ, फिर उसका परिवर्त लें: adj A=Cᵀ। परिवर्त का चरण छोड़ देना बहुत सामान्य त्रुटि है। मूल संबंध A(adj A)=(adj A)A=|A|I है। यदि |A|≠0, तो A⁻¹=(adj A)/|A| मिलता है। यदि |A|=0, तो A अव्युत्क्रमणीय या एकल (Singular) है और उसका प्रतिलोम नहीं है। 2×2 में A=[[a,b],[c,d]] के लिए adj A=[[d,−b],[−c,a]] है। मुख्य विकर्ण के a,d स्थान बदलते हैं; बाहरी b,c का चिह्न बदलता है। इसे सूत्र से याद करने के साथ सहखंडज की परिभाषा से जाँचें। 3×3 में सभी 9 सहखंड लेकर परिवर्त आवश्यक है। प्रतिलोम मिलने के बाद A से गुणा करके I जाँचना उपयोगी है। उत्तर के किसी 1 अवयव की भूल पूरे हल को बदल सकती है। A/|A| सामान्यतः प्रतिलोम नहीं है; numerator में सहखंडज चाहिए। सारणिक अदिश है, इसलिए उससे भाग देना हर अवयव पर समान अदिश गुणन है।"
+      },
+      "formula": "A adj A=|A|I; A⁻¹=(adj A)/|A| if |A|≠0",
+      "question": {
+        "en": "When does a square real matrix have an inverse?",
+        "hi": "वास्तविक वर्ग आव्यूह का प्रतिलोम कब होता है?"
+      },
+      "answer": {
+        "en": "Exactly when its determinant is nonzero.",
+        "hi": "तभी जब उसका सारणिक अशून्य हो।"
+      }
+    },
+    {
+      "title": {
+        "en": "Linear systems and consistency",
+        "hi": "रैखिक निकाय और संगति"
+      },
+      "body": {
+        "en": "Write the coefficient matrix A, unknown column X and constant column B as AX=B. Nonzero determinant gives a unique solution. Zero determinant alone cannot distinguish no solution from infinitely many solutions.",
+        "hi": "रैखिक समीकरण निकाय (System of linear equations) में गुणांकों का आव्यूह A, अज्ञातों का स्तंभ X तथा स्थिर पदों का स्तंभ B बनाकर AX=B लिखते हैं। सभी समीकरणों में चरों का क्रम एक जैसा रखें। किसी चर का पद न हो तो उसका गुणांक 0 लिखें। वर्ग A का |A|≠0 हो तो निकाय का एकमात्र हल X=A⁻¹B है। निकाय संगत (Consistent) है क्योंकि कम से कम 1 हल है। |A|=0 होने पर इस प्रतिलोम विधि से हल नहीं निकाल सकते; लेकिन इससे तुरंत असंगत कहना गलत है। x+y=2 तथा 2x+2y=4 एक ही रेखा बताते हैं, इसलिए अनंत हल हैं। x+y=2 तथा 2x+2y=5 समांतर अलग रेखाएँ हैं और कोई हल नहीं। दोनों में गुणांक सारणिक 0 है। ऐसे प्रश्न में मूल समीकरणों के अनुपात, विलोपन या विरोधाभास से सही स्थिति पहचानें। प्रतिलोम विधि विशेष रूप से अद्वितीय हल वाले 2 या 3 चर निकायों के लिए उपयोगी है। अंतिम x,y,z मूल सभी समीकरणों में रखने से गणना और स्थिर पदों का क्रम जाँच सकते हैं।"
+      },
+      "formula": "AX=B; |A|≠0 ⇒ X=A⁻¹B (unique)",
+      "question": {
+        "en": "Does |A|=0 always mean no solution?",
+        "hi": "क्या |A|=0 का अर्थ हमेशा कोई हल नहीं है?"
+      },
+      "answer": {
+        "en": "No; there may be no solution or infinitely many solutions.",
+        "hi": "नहीं; कोई हल नहीं या अनंत हल, दोनों संभव हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "A reliable solution workflow",
+        "hi": "हल निकालने की भरोसेमंद विधि"
+      },
+      "body": {
+        "en": "Separate the matrix, scalar determinant, cofactor matrix and adjugate. Check dimensions, signs and original equations. For a 3-variable problem all three equations must be satisfied, not just a convenient pair.",
+        "hi": "सारणिक के प्रश्न में व्यवस्थित कार्यविधि (Workflow) छोटी भूलों को रोकती है। पहले दी गई वस्तु आव्यूह है या सारणिक, यह पहचानें। फिर कोटि और अपेक्षित उत्तर का प्रकार लिखें: संख्या, क्षेत्रफल, प्रतिलोम या चर का मान। 3×3 विस्तार में शून्य वाली पंक्ति चुनें और उपसारणिक की 2×2 गणना साफ करें। सहखंड आव्यूह बनाने पर +,−,+ का विन्यास अलग जाँचें; फिर सहखंडज के लिए परिवर्त लें। |A|=0 पर भाग देना बंद करें और प्रश्न की संगति अलग समझें। रैखिक निकाय हल करते समय X की चर सूची और B के स्थिर पद उसी पंक्ति क्रम में रखें। क्षेत्रफल में बाहर परिमाण और 1/2 दोनों लगें। संख्यात्मक दशमलव बहुत जल्दी लेने से सटीक रद्दीकरण छिप सकता है; संभव हो तो भिन्न में काम करें। अंतिम जाँच में निकाय के सभी मूल समीकरणों को संतुष्ट करें। केवल पहले 2 समीकरण मिलना 3 चर वाले निकाय में पर्याप्त नहीं है। किसी गुणधर्म से उत्तर निकाला हो तो साधारण विस्तार से छोटा उदाहरण मिलाएँ। इंटरैक्टिव दृश्य पैटर्न दिखाता है; गणना का कारण सहखंड और दिए संबंधों से लिखना ही पूरा गणितीय समाधान है।"
+      },
+      "formula": "Check: AA⁻¹=I; AX=B; area≥0",
+      "question": {
+        "en": "Why must an inverse answer be checked by multiplication?",
+        "hi": "प्रतिलोम के उत्तर को गुणन से क्यों जाँचना चाहिए?"
+      },
+      "answer": {
+        "en": "To catch sign, transpose and arithmetic errors: the product must be I.",
+        "hi": "चिह्न, परिवर्त और गणना की भूल पकड़ने के लिए; गुणन I होना चाहिए।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Evaluate |[[2,3],[1,4]]|.",
+        "hi": "|[[2,3],[1,4]]| निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given a 2×2 determinant; use ad−bc.",
+          "hi": "दिया 2×2 सारणिक; ad−bc लगाएँ।"
+        },
+        {
+          "en": "ad=2×4=8; bc=3×1=3.",
+          "hi": "ad=2×4=8; bc=3×1=3।"
+        },
+        {
+          "en": "Subtract: 8−3=5. The answer is a scalar.",
+          "hi": "घटाएँ: 8−3=5। उत्तर अदिश है।"
+        }
+      ],
+      "answer": {
+        "en": "5.",
+        "hi": "5।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the area of triangle (0,0),(4,0),(0,3).",
+        "hi": "(0,0),(4,0),(0,3) वाले त्रिभुज का क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Use Δ=½|x₁(y₂−y₃)+x₂(y₃−y₁)+x₃(y₁−y₂)|.",
+          "hi": "Δ=½|x₁(y₂−y₃)+x₂(y₃−y₁)+x₃(y₁−y₂)| लें।"
+        },
+        {
+          "en": "The inner expression is 0+4(3−0)+0=12.",
+          "hi": "भीतरी व्यंजक 0+4(3−0)+0=12 है।"
+        },
+        {
+          "en": "Δ=½|12|=6. Check: base 4, height 3 gives ½×4×3.",
+          "hi": "Δ=½|12|=6। जाँच: आधार 4, ऊँचाई 3 से ½×4×3।"
+        }
+      ],
+      "answer": {
+        "en": "6 square units.",
+        "hi": "6 वर्ग इकाई।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the inverse of A=[[2,1],[1,1]].",
+        "hi": "A=[[2,1],[1,1]] का प्रतिलोम निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given A. Find determinant: |A|=2×1−1×1=1≠0.",
+          "hi": "दिया A। |A|=2×1−1×1=1≠0 निकालें।"
+        },
+        {
+          "en": "adj A=[[1,−1],[−1,2]]. Formula A⁻¹=adj A/|A|.",
+          "hi": "adj A=[[1,−1],[−1,2]]। सूत्र A⁻¹=adj A/|A|।"
+        },
+        {
+          "en": "Divide by 1 and verify A[[1,−1],[−1,2]]=[[1,0],[0,1]].",
+          "hi": "1 से भाग दें और A[[1,−1],[−1,2]]=[[1,0],[0,1]] जाँचें।"
+        }
+      ],
+      "answer": {
+        "en": "A⁻¹=[[1,−1],[−1,2]].",
+        "hi": "A⁻¹=[[1,−1],[−1,2]]।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Evaluate |[[1,2,3],[0,1,4],[5,6,0]]|.",
+        "hi": "|[[1,2,3],[0,1,4],[5,6,0]]| निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Expand along row 1, using signs +,−,+.",
+          "hi": "पहली पंक्ति में +,−,+ से प्रसार करें।"
+        },
+        {
+          "en": "Minors are 1×0−4×6=−24; 0×0−4×5=−20; 0×6−1×5=−5.",
+          "hi": "उपसारणिक: 1×0−4×6=−24; 0×0−4×5=−20; 0×6−1×5=−5।"
+        },
+        {
+          "en": "1(−24)−2(−20)+3(−5)=−24+40−15=1.",
+          "hi": "1(−24)−2(−20)+3(−5)=−24+40−15=1।"
+        }
+      ],
+      "answer": {
+        "en": "1.",
+        "hi": "1।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Solve x+y+z=6, x−y+z=2, 2x+y−z=1 by the inverse-matrix method.",
+        "hi": "प्रतिलोम आव्यूह से x+y+z=6, x−y+z=2, 2x+y−z=1 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "A=[[1,1,1],[1,−1,1],[2,1,−1]], B=[[6],[2],[1]], X=[[x],[y],[z]]. Write AX=B.",
+          "hi": "A=[[1,1,1],[1,−1,1],[2,1,−1]], B=[[6],[2],[1]], X=[[x],[y],[z]]। AX=B लिखें।"
+        },
+        {
+          "en": "Expand: |A|=1(1−1)−1(−1−2)+1(1+2)=6≠0.",
+          "hi": "प्रसार: |A|=1(1−1)−1(−1−2)+1(1+2)=6≠0।"
+        },
+        {
+          "en": "The cofactor transpose is adj A=[[0,2,2],[3,−3,0],[3,1,−2]]. Thus A⁻¹=(1/6)adj A.",
+          "hi": "सहखंडों का परिवर्त adj A=[[0,2,2],[3,−3,0],[3,1,−2]]। अतः A⁻¹=(1/6)adj A।"
+        },
+        {
+          "en": "X=A⁻¹B=(1/6)[[6],[12],[18]]=[[1],[2],[3]]. Check: 1+2+3=6; 1−2+3=2; 2+2−3=1.",
+          "hi": "X=A⁻¹B=(1/6)[[6],[12],[18]]=[[1],[2],[3]]। जाँच: 1+2+3=6; 1−2+3=2; 2+2−3=1।"
+        }
+      ],
+      "answer": {
+        "en": "x=1, y=2, z=3.",
+        "hi": "x=1, y=2, z=3।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "The determinant of [[a,b],[c,d]] is:",
+        "hi": "[[a,b],[c,d]] का सारणिक है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ad−bc",
+            "hi": "ad−bc"
+          },
+          "reason": {
+            "en": "Subtract the off-diagonal product from the main-diagonal product.",
+            "hi": "मुख्य विकर्ण के गुणन से दूसरा गुणन घटाएँ।"
+          }
+        },
+        {
+          "text": {
+            "en": "ad+bc",
+            "hi": "ad+bc"
+          },
+          "reason": {
+            "en": "The second product has a minus sign.",
+            "hi": "दूसरे गुणन के पहले ऋण चिह्न है।"
+          }
+        },
+        {
+          "text": {
+            "en": "ab−cd",
+            "hi": "ab−cd"
+          },
+          "reason": {
+            "en": "These are row products, not the determinant formula.",
+            "hi": "ये पंक्ति गुणन हैं, सारणिक सूत्र नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "a+b+c+d",
+            "hi": "a+b+c+d"
+          },
+          "reason": {
+            "en": "A sum of entries is not the determinant.",
+            "hi": "अवयवों का योग सारणिक नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The cofactor sign at position (2,3) is:",
+        "hi": "स्थान (2,3) पर सहखंड का चिह्न है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−",
+            "hi": "−"
+          },
+          "reason": {
+            "en": "(−1)^(2+3)=−1.",
+            "hi": "(−1)^(2+3)=−1।"
+          }
+        },
+        {
+          "text": {
+            "en": "+",
+            "hi": "+"
+          },
+          "reason": {
+            "en": "The sum of indices is odd.",
+            "hi": "सूचकों का योग विषम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always 0",
+            "hi": "हमेशा 0"
+          },
+          "reason": {
+            "en": "The sign is ±1; a minor may or may not vanish.",
+            "hi": "चिह्न ±1 है; उपसारणिक शून्य हो भी सकता है, नहीं भी।"
+          }
+        },
+        {
+          "text": {
+            "en": "Depends on a₂₃",
+            "hi": "a₂₃ पर निर्भर"
+          },
+          "reason": {
+            "en": "The sign depends on position, not entry value.",
+            "hi": "चिह्न स्थान पर निर्भर है, अवयव पर नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Interchanging two rows changes a determinant to:",
+        "hi": "2 पंक्तियाँ बदलने पर सारणिक होता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Its negative",
+            "hi": "उसका ऋणात्मक"
+          },
+          "reason": {
+            "en": "One row swap reverses orientation and sign.",
+            "hi": "1 अदला-बदली चिह्न उलटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The same value always",
+            "hi": "हमेशा वही"
+          },
+          "reason": {
+            "en": "It stays the same only in special cases such as zero.",
+            "hi": "0 जैसी विशेष स्थिति में ही वही रह सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Twice its value",
+            "hi": "उसका दुगुना"
+          },
+          "reason": {
+            "en": "Swapping is not row scaling.",
+            "hi": "अदला-बदली पंक्ति को गुणा करना नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Its reciprocal",
+            "hi": "उसका reciprocal"
+          },
+          "reason": {
+            "en": "No inversion operation occurs.",
+            "hi": "यह प्रतिलोम संक्रिया नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If |A|=5 for a 3×3 A, then |2A| is:",
+        "hi": "3×3 A के लिए |A|=5 हो तो |2A| है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "40",
+            "hi": "40"
+          },
+          "reason": {
+            "en": "2³×5=40, one factor 2 per row.",
+            "hi": "हर पंक्ति से 2; 2³×5=40।"
+          }
+        },
+        {
+          "text": {
+            "en": "10",
+            "hi": "10"
+          },
+          "reason": {
+            "en": "This incorrectly uses only one factor 2.",
+            "hi": "केवल 1 गुणक 2 लिया गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "20",
+            "hi": "20"
+          },
+          "reason": {
+            "en": "There are 3 rows, not 2.",
+            "hi": "3 पंक्तियाँ हैं, 2 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "Scaling all rows changes a nonzero determinant.",
+            "hi": "सभी पंक्तियाँ गुणा करने से अशून्य सारणिक बदलता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The adjugate is:",
+        "hi": "सहखंडज क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Transpose of the cofactor matrix",
+            "hi": "सहखंड आव्यूह का परिवर्त"
+          },
+          "reason": {
+            "en": "Cofactors are formed first, then transposed.",
+            "hi": "पहले सहखंड, फिर परिवर्त।"
+          }
+        },
+        {
+          "text": {
+            "en": "The cofactor matrix always unchanged",
+            "hi": "हमेशा वही सहखंड आव्यूह"
+          },
+          "reason": {
+            "en": "A transpose is necessary in general.",
+            "hi": "सामान्यतः परिवर्त जरूरी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Aᵀ",
+            "hi": "Aᵀ"
+          },
+          "reason": {
+            "en": "Transpose of A is not generally the adjugate.",
+            "hi": "A का परिवर्त सामान्यतः सहखंडज नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/A entrywise",
+            "hi": "A के स्थानवार reciprocal"
+          },
+          "reason": {
+            "en": "This does not define an adjugate.",
+            "hi": "इससे सहखंडज परिभाषित नहीं होता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A square matrix is invertible if:",
+        "hi": "वर्ग आव्यूह व्युत्क्रमणीय है यदि:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "|A|≠0",
+            "hi": "|A|≠0"
+          },
+          "reason": {
+            "en": "The inverse is adj A divided by a nonzero determinant.",
+            "hi": "प्रतिलोम adj A को अशून्य सारणिक से भाग देकर मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "|A|=0",
+            "hi": "|A|=0"
+          },
+          "reason": {
+            "en": "This is the singular case.",
+            "hi": "यह एकल स्थिति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It has one nonzero entry",
+            "hi": "उसमें 1 अशून्य अवयव हो"
+          },
+          "reason": {
+            "en": "A nonzero matrix may still be singular.",
+            "hi": "अशून्य आव्यूह भी एकल हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It has positive entries",
+            "hi": "उसके अवयव धनात्मक हों"
+          },
+          "reason": {
+            "en": "[[1,1],[1,1]] is positive-entry but singular.",
+            "hi": "[[1,1],[1,1]] धनात्मक अवयव वाला पर एकल है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If three coordinate points have area determinant 0, they are:",
+        "hi": "3 निर्देशांक बिंदुओं का क्षेत्रफल सारणिक 0 हो तो वे हैं:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Collinear",
+            "hi": "संरेख"
+          },
+          "reason": {
+            "en": "Their triangle area is zero.",
+            "hi": "उनके त्रिभुज का क्षेत्रफल 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always distinct",
+            "hi": "हमेशा अलग"
+          },
+          "reason": {
+            "en": "Coincident points can also give zero area.",
+            "hi": "संपाती बिंदु भी शून्य क्षेत्रफल दे सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Vertices of a nondegenerate triangle",
+            "hi": "अविकृत त्रिभुज के शीर्ष"
+          },
+          "reason": {
+            "en": "Such a triangle has positive area.",
+            "hi": "ऐसे त्रिभुज का क्षेत्रफल धनात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Necessarily at the origin",
+            "hi": "आवश्यक रूप से मूल पर"
+          },
+          "reason": {
+            "en": "Any straight line can contain them.",
+            "hi": "वे किसी भी सीधी रेखा पर हो सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If |A|=0 in AX=B, which is correct?",
+        "hi": "AX=B में |A|=0 हो तो कौन सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No solution or infinitely many solutions may occur",
+            "hi": "कोई हल नहीं या अनंत हल संभव"
+          },
+          "reason": {
+            "en": "The constant vector must also be examined.",
+            "hi": "स्थिर पदों का स्तंभ भी जाँचना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always no solution",
+            "hi": "हमेशा कोई हल नहीं"
+          },
+          "reason": {
+            "en": "Dependent consistent equations have infinitely many solutions.",
+            "hi": "आश्रित संगत समीकरणों के अनंत हल हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always exactly one solution",
+            "hi": "हमेशा ठीक 1 हल"
+          },
+          "reason": {
+            "en": "A singular square coefficient matrix cannot give a unique solution.",
+            "hi": "एकल वर्ग गुणांक आव्यूह एकमात्र हल नहीं देता।"
+          }
+        },
+        {
+          "text": {
+            "en": "The inverse is zero",
+            "hi": "प्रतिलोम शून्य है"
+          },
+          "reason": {
+            "en": "The inverse does not exist.",
+            "hi": "प्रतिलोम मौजूद नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A adj A equals:",
+        "hi": "A adj A है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "|A|I",
+            "hi": "|A|I"
+          },
+          "reason": {
+            "en": "This is the adjugate identity for square matrices.",
+            "hi": "यह वर्ग आव्यूह की सहखंडज सर्वसमिका है।"
+          }
+        },
+        {
+          "text": {
+            "en": "I for every A",
+            "hi": "हर A के लिए I"
+          },
+          "reason": {
+            "en": "That only follows when |A|=1.",
+            "hi": "यह |A|=1 पर मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Aᵀ",
+            "hi": "Aᵀ"
+          },
+          "reason": {
+            "en": "The adjugate product is a scalar identity matrix.",
+            "hi": "सहखंडज गुणन अदिश तत्समक आव्यूह है।"
+          }
+        },
+        {
+          "text": {
+            "en": "|A| alone",
+            "hi": "केवल |A|"
+          },
+          "reason": {
+            "en": "The product is a matrix, so I is required.",
+            "hi": "गुणन आव्यूह है, इसलिए I जरूरी है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Replacing R₁ by R₁+3R₂ changes the determinant by:",
+        "hi": "R₁ की जगह R₁+3R₂ रखने से सारणिक:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No change",
+            "hi": "नहीं बदलता"
+          },
+          "reason": {
+            "en": "Adding a multiple of another row preserves the determinant.",
+            "hi": "दूसरी पंक्ति का गुणज जोड़ने से सारणिक सुरक्षित रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A factor of 3",
+            "hi": "3 गुना होता है"
+          },
+          "reason": {
+            "en": "That would be scaling an entire row, not adding.",
+            "hi": "वह पूरी पंक्ति का गुणन होता, जोड़ना नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A minus sign",
+            "hi": "ऋण चिह्न लेता है"
+          },
+          "reason": {
+            "en": "A swap, not this addition, reverses sign.",
+            "hi": "अदला-बदली से चिह्न बदलता है, इस योग से नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always becomes zero",
+            "hi": "हमेशा 0 होता है"
+          },
+          "reason": {
+            "en": "This invertible row operation does not force dependence.",
+            "hi": "यह उत्क्रमणीय पंक्ति संक्रिया आश्रितता नहीं बनाती।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define minor and cofactor.",
+        "hi": "उपसारणिक और सहखंड परिभाषित करें।"
+      },
+      "answer": {
+        "en": "Mᵢⱼ deletes row i and column j; Cᵢⱼ=(−1)^(i+j)Mᵢⱼ.",
+        "hi": "Mᵢⱼ के लिए iवीं पंक्ति तथा jवाँ स्तंभ हटाएँ; Cᵢⱼ=(−1)^(i+j)Mᵢⱼ।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find adj A and A⁻¹ for A=[[3,1],[2,1]].",
+        "hi": "A=[[3,1],[2,1]] का adj A और A⁻¹ निकालें।"
+      },
+      "answer": {
+        "en": "|A|=1, adj A=[[1,−1],[−2,3]], so A⁻¹ equals that adjugate.",
+        "hi": "|A|=1, adj A=[[1,−1],[−2,3]], अतः A⁻¹ वही सहखंडज है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the area of (1,1),(5,1),(1,4).",
+        "hi": "(1,1),(5,1),(1,4) का क्षेत्रफल निकालें।"
+      },
+      "answer": {
+        "en": "½|1(1−4)+5(4−1)+1(1−1)|=½|12|=6 square units.",
+        "hi": "½|1(1−4)+5(4−1)+1(1−1)|=½|12|=6 वर्ग इकाई।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give two systems with determinant 0 but different consistency.",
+        "hi": "सारणिक 0 वाले पर अलग संगति वाले 2 निकाय दें।"
+      },
+      "answer": {
+        "en": "x+y=2, 2x+2y=4 has infinitely many solutions; x+y=2, 2x+2y=5 has none.",
+        "hi": "x+y=2, 2x+2y=4 के अनंत हल; x+y=2, 2x+2y=5 का कोई हल नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve 2x+y=5, x+y=3 by inverse matrix.",
+        "hi": "प्रतिलोम आव्यूह से 2x+y=5, x+y=3 हल करें।"
+      },
+      "answer": {
+        "en": "A⁻¹=[[1,−1],[−1,2]]; multiplying [[5],[3]] gives [[2],[1]], so x=2,y=1.",
+        "hi": "A⁻¹=[[1,−1],[−1,2]]; [[5],[3]] से गुणन पर [[2],[1]], अतः x=2,y=1।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why |3A|=27|A| for 3×3 A.",
+        "hi": "3×3 A के लिए |3A|=27|A| क्यों है?"
+      },
+      "answer": {
+        "en": "Each of the three rows has been multiplied by 3; taking one factor from every row gives 3³=27.",
+        "hi": "तीनों पंक्तियों को 3 से गुणा किया है; हर पंक्ति से 1 गुणक बाहर लेने पर 3³=27।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Cofactor signs depend on position; adjugate includes a transpose. Zero determinant does not alone mean inconsistency. Triangle area needs absolute value and one half.",
+    "hi": "सहखंड चिह्न स्थान से तय है; सहखंडज में परिवर्त जरूरी है। शून्य सारणिक अकेले असंगति नहीं बताता। क्षेत्रफल में परिमाण और आधा दोनों लें।"
+  },
+  "revision": [
+    {
+      "en": "A determinant is a scalar attached to a square matrix.",
+      "hi": "सारणिक वर्ग आव्यूह से जुड़ा अदिश है।"
+    },
+    {
+      "en": "Cofactors include alternating signs.",
+      "hi": "सहखंडों में एकांतर चिह्न हैं।"
+    },
+    {
+      "en": "Triangle area is half an absolute determinant.",
+      "hi": "क्षेत्रफल सारणिक के परिमाण का आधा है।"
+    },
+    {
+      "en": "An inverse exists exactly when the determinant is nonzero.",
+      "hi": "प्रतिलोम तभी है जब सारणिक अशून्य है।"
+    },
+    {
+      "en": "Verify a solution in every original equation.",
+      "hi": "हर मूल समीकरण में हल की जाँच करें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "2×2 values → minors and cofactors → 3×3 expansion → area → adjugate → inverse → linear systems.",
+    "hi": "2×2 मान → उपसारणिक और सहखंड → 3×3 प्रसार → क्षेत्रफल → सहखंडज → प्रतिलोम → रैखिक निकाय।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics XII, Chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh104.pdf"
+    },
+    {
+      "title": "UPMSP Mathematics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    }
+  ],
+  "engine": "twelve-math",
+  "scenes": []
+}

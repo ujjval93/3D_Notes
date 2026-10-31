@@ -1,0 +1,1004 @@
+{
+  "number": 1,
+  "id": "physics12-01",
+  "title": {
+    "en": "Electric Charges and Fields",
+    "hi": "वैद्युत आवेश तथा क्षेत्र"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Charge and electrification",
+        "hi": "आवेश और विद्युतीकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Charge has two signs. Electron transfer usually explains rubbing electrification; it does not create net charge. Conductors allow mobile charges, whereas insulators tend to retain charge locally. Attraction alone is inconclusive because a charged body can polarise a neutral object. Humidity can promote charge leakage.",
+          "hi": "वैद्युत आवेश (Electric charge) पदार्थ का वह गुण है जिसके कारण विद्युत अंतःक्रिया होती है। धन और ऋण 2 प्रकार के आवेश हैं। समान चिह्न वाले आवेश प्रतिकर्षित और विपरीत चिह्न वाले आकर्षित होते हैं। साधारण पदार्थ में धनात्मक नाभिक और ऋणात्मक इलेक्ट्रॉन होते हैं; उनकी कुल मात्राएँ बराबर होने पर वस्तु उदासीन होती है। रगड़ने पर प्रायः इलेक्ट्रॉन एक वस्तु से दूसरी में जाते हैं। जो वस्तु इलेक्ट्रॉन खोती है वह धनावेशित और जो पाती है वह ऋणावेशित होती है। रगड़ने से आवेश शून्य से पैदा नहीं होता। काँच, प्लास्टिक और कपड़े के उदाहरण में अंतिम चिह्न सामग्री के जोड़े पर निर्भर करता है। चालक (Conductor) में कुछ आवेश चल सकते हैं, जबकि कुचालक में आवेश अपेक्षाकृत स्थानीय रहता है। आर्द्र हवा और सतह की नमी आवेश के रिसाव को बढ़ाती हैं, इसलिए शुष्क मौसम में स्थिर विद्युत का प्रभाव अधिक आसानी से दिखता है। किसी आकर्षण को देखकर अकेले यह नहीं कह सकते कि दोनों वस्तुएँ विपरीत आवेशित हैं; उदासीन वस्तु भी ध्रुवण से आकर्षित हो सकती है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does attraction of paper prove that it was already oppositely charged?",
+          "hi": "क्या आवेशित छड़ द्वारा कागज का आकर्षण सिद्ध करता है कि कागज पहले से विपरीत आवेशित था?"
+        },
+        "answer": {
+          "en": "No. Polarisation of initially neutral paper can also cause attraction.",
+          "hi": "नहीं। उदासीन कागज में प्रेरित आवेश पृथक्करण भी आकर्षण दे सकता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Additivity, conservation and quantisation",
+        "hi": "योगात्मकता, संरक्षण और क्वांटीकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Net charge is an algebraic scalar sum. An isolated system conserves total charge even while its parts exchange charge. Ordinary body charge is quantised in integer multiples of e. When counting gained electrons use |q|/e; electron count is non-negative although their charge is negative.",
+          "hi": "आवेश अदिश राशि (Scalar quantity) है, इसलिए कुल आवेश चिह्नों सहित बीजीय योग से निकालते हैं। यदि किसी निकाय में +3 μC और −1 μC हैं, तो कुल +2 μC है; आवेशों की स्थिति बदलने से यह योग नहीं बदलता। आवेश संरक्षण (Conservation of charge) कहता है कि पृथक निकाय का कुल आवेश स्थिर रहता है। दो वस्तुओं में आवेश का स्थानांतरण हो सकता है, लेकिन उनके संयुक्त पृथक निकाय में कुल नहीं बदलता। क्वांटीकरण (Quantisation) का अर्थ है q=ne, जहाँ n पूर्णांक और e लगभग 1.602×10^-19 C है। इलेक्ट्रॉन का आवेश −e और प्रोटॉन का +e है। स्थूल माप में e अत्यंत छोटा होने से आवेश लगभग सतत दिखाई दे सकता है। q=ne लगाते समय चिह्न और इलेक्ट्रॉनों की संख्या के बीच अंतर रखें: इलेक्ट्रॉन पाने वाली वस्तु का q ऋणात्मक है, पर प्राप्त इलेक्ट्रॉनों की गिनती धनात्मक संख्या है। संरक्षण ऊर्जा या द्रव्यमान की तरह अलग भौतिक सिद्धांत है; इसे केवल किसी विशेष घर्षण प्रयोग तक सीमित न मानें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many excess electrons give −3.204×10^-19 C?",
+          "hi": "−3.204×10^-19 C आवेश किस न्यूनतम पूर्णांक इलेक्ट्रॉन स्थानांतरण से बन सकता है?"
+        },
+        "answer": {
+          "en": "Two excess electrons: q=−2e.",
+          "hi": "2 अतिरिक्त इलेक्ट्रॉन; q=−2e।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Coulomb force and its conditions",
+        "hi": "कूलॉम बल और उसकी शर्तें"
+      },
+      "paragraphs": [
+        {
+          "en": "For stationary point charges in vacuum, F=k|q1q2|/r². Direction lies along the joining line and depends on signs. Newton’s third law gives equal opposite pair forces, not forces proportional to the charge of the receiving body. Convert all inputs to SI before squaring distance. Extended distributions require justified symmetry or integration.",
+          "hi": "कूलॉम का नियम (Coulomb law) विराम अवस्था में बिंदु आवेशों के बीच बल बताता है। निर्वात में परिमाण F=k|q1q2|/r² है, जहाँ k=1/(4πε0) लगभग 9×10^9 N m²/C² है। r आवेशों के केंद्रों के बीच दूरी है, किसी चित्र में मनमाने चुने किनारों की दूरी नहीं। बल दोनों आवेशों को जोड़ने वाली रेखा पर लगता है। समान चिह्न पर दिशा दूर और विपरीत चिह्न पर पास की ओर होती है। दोनों आवेश एक-दूसरे पर बराबर परिमाण के विपरीत बल लगाते हैं, भले उनके आवेश अलग हों। बिंदु आवेश आदर्शीकरण तब उपयोगी है जब वस्तु का आकार दूरी की तुलना में छोटा हो। विस्तृत असमान आवेश वितरण के लिए सीधे कुल आवेश रखकर यही सूत्र लगाना सामान्यतः सही नहीं। दूरी दुगुनी करने पर बल चौथाई और केवल एक आवेश दुगुना करने पर बल दुगुना होता है। μC को C और cm को m में बदलकर ही SI मान रखें; दूरी का वर्ग लेने से पहले परिवर्तन करना विशेष रूप से आवश्यक है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to force if separation triples?",
+          "hi": "दूरी 3 गुनी करने और दोनों आवेश स्थिर रखने पर बल कितना होगा?"
+        },
+        "answer": {
+          "en": "It becomes one ninth of the original force.",
+          "hi": "मूल बल का 1/9।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Superposition and continuous charge",
+        "hi": "अध्यारोपण और सतत आवेश"
+      },
+      "paragraphs": [
+        {
+          "en": "Calculate individual forces or fields and add vectors. A continuous distribution uses line, surface or volume charge density, with units C/m, C/m² and C/m³. Uniform-density multiplication is valid only when density is constant. The continuous approximation describes macroscopic averages without denying microscopic charge quantisation.",
+          "hi": "अध्यारोपण सिद्धांत (Superposition principle) में किसी चुने आवेश पर प्रत्येक अन्य आवेश का बल अलग निकालते हैं और फिर सदिश योग करते हैं। केवल परिमाण जोड़ना तभी उचित है जब सभी बल एक दिशा में हों। सीधी रेखा पर बलों के चिह्न चुनी दिशा से तय करें; समतल में x और y घटक उपयोगी हैं। दो बराबर धनावेशों के मध्य बिंदु पर परीक्षण धनावेश के बल रद्द हो सकते हैं, जबकि अन्य स्थान पर ऐसा नहीं होता। किसी विस्तृत वस्तु में आवेश इतना अधिक हो सकता है कि प्रत्येक कण का अलग हिसाब अव्यावहारिक हो। तब रेखीय घनत्व λ=dq/dl, पृष्ठीय घनत्व σ=dq/dA और आयतन घनत्व ρ=dq/dV लेते हैं। समान घनत्व के लिए q=λl, q=σA या q=ρV हो सकता है। असमान वितरण में छोटे dq के योगदान जोड़ना पड़ता है। घनत्व का मात्रक बताता है कि आवेश किस ज्यामिति में फैला है। वितरण को सतत मानना बड़े पैमाने का सन्निकटन है; इससे मूल आवेश क्वांटीकरण का सिद्धांत गलत नहीं होता।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is the resultant of perpendicular equal forces not 2F?",
+          "hi": "दो परस्पर लंबवत बराबर बल F का परिणामी परिमाण 2F क्यों नहीं?"
+        },
+        "answer": {
+          "en": "Vector addition gives √2F.",
+          "hi": "सदिश योग से √(F²+F²)=√2F मिलता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Electric field and field lines",
+        "hi": "वैद्युत क्षेत्र और क्षेत्र रेखाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "E is force per infinitesimal positive test charge. Field direction belongs to the source distribution and is opposite the force on a negative charge. Field-line tangents indicate direction; density indicates relative strength. Lines are visual aids rather than particle tracks, and electrostatic lines do not form closed loops.",
+          "hi": "वैद्युत क्षेत्र (Electric field) स्रोत आवेशों के कारण किसी स्थान का गुण है। बहुत छोटे धनात्मक परीक्षण आवेश q0 पर लगने वाले बल की सीमा से E=F/q0 परिभाषित करते हैं, ताकि परीक्षण आवेश स्रोत वितरण को महत्वपूर्ण रूप से न बदले। इसका मात्रक N/C है। एक बिंदु स्रोत के लिए परिमाण E=k|q|/r² होता है। धन स्रोत का क्षेत्र बाहर और ऋण स्रोत का भीतर की ओर होता है। किसी ऋण परीक्षण आवेश पर बल qE क्षेत्र के विपरीत होगा, फिर भी क्षेत्र की परिभाषित दिशा नहीं बदलती। क्षेत्र रेखा (Field line) पर स्पर्शरेखा स्थानीय क्षेत्र की दिशा बताती है। अधिक रेखा घनत्व अपेक्षाकृत प्रबल क्षेत्र का संकेत है, लेकिन रेखाओं की चित्रित संख्या वास्तविक कण संख्या नहीं। रेखाएँ एक बिंदु पर नहीं काटतीं, क्योंकि वहाँ क्षेत्र की 2 अलग दिशाएँ नहीं हो सकतीं। स्थिरवैद्युत क्षेत्र रेखाएँ बंद चक्र नहीं बनातीं। इन्हें आवेशित कण का वास्तविक पथ भी न मानें; कण का पथ प्रारंभिक वेग और बल दोनों से निर्धारित होता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which way does a negative charge accelerate under an eastward electric force field alone?",
+          "hi": "ऋण आवेश को पूर्व दिशा का क्षेत्र मिले तो विद्युत बल किस दिशा में होगा?"
+        },
+        "answer": {
+          "en": "Westward, because qE points opposite E.",
+          "hi": "पश्चिम की ओर, क्योंकि F=qE और q ऋणात्मक है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Electric dipole and torque",
+        "hi": "वैद्युत द्विध्रुव और बल आघूर्ण"
+      },
+      "paragraphs": [
+        {
+          "en": "A dipole moment points from negative to positive charge. Its far field decays as r^-3, and axial/equatorial strengths differ by a factor of two at equal large r. A uniform field gives zero net force but torque pE sinθ. A non-uniform field can additionally produce a net force.",
+          "hi": "वैद्युत द्विध्रुव (Electric dipole) में समान परिमाण के विपरीत आवेश −q और +q छोटी दूरी 2a पर होते हैं। द्विध्रुव आघूर्ण p=q(2a) है और उसकी दिशा ऋण से धन आवेश की ओर है। कुल आवेश शून्य होने का अर्थ हर स्थान पर क्षेत्र शून्य नहीं होता। दूरस्थ अक्षीय बिंदु पर क्षेत्र का परिमाण लगभग 2kp/r³ और निरक्षीय बिंदु पर kp/r³ है; ये r बहुत बड़ा होने पर 2a की तुलना में लघु द्विध्रुव सूत्र हैं। निरक्षीय क्षेत्र p के विपरीत और अक्षीय क्षेत्र p की दिशा में होता है। एकसमान बाहरी क्षेत्र में दोनों आवेशों पर बराबर विपरीत बल होने से कुल बल शून्य, पर सामान्यतः बल आघूर्ण τ=pE sinθ हो सकता है। θ, p और E के बीच कोण है। यह आघूर्ण द्विध्रुव को क्षेत्र के समानांतर लाने की प्रवृत्ति देता है। असमान क्षेत्र में कुल बल भी संभव है। इसी अंतर के कारण केवल शून्य कुल आवेश देखकर किसी बाहरी विद्युत प्रभाव को असंभव नहीं कहना चाहिए।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "At what angle is dipole torque maximum?",
+          "hi": "एकसमान क्षेत्र में द्विध्रुव पर अधिकतम आघूर्ण किस कोण पर होता है?"
+        },
+        "answer": {
+          "en": "At 90° between p and E.",
+          "hi": "θ=90° पर।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Electric flux and Gauss law",
+        "hi": "वैद्युत फ्लक्स और गाउस नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "Flux uses the angle to the surface normal. Gauss’s law concerns a closed surface and enclosed net charge only. External charges can change the local field without changing total enclosed flux. A Gaussian surface is imaginary; using Gauss’s law to obtain E simply requires adequate symmetry, not merely a convenient-looking drawing.",
+          "hi": "वैद्युत फ्लक्स (Electric flux) किसी पृष्ठ के आर-पार क्षेत्र के अभिविन्यास का माप है। एकसमान क्षेत्र और समतल क्षेत्रफल A के लिए Φ=EA cosθ, जहाँ θ क्षेत्र और पृष्ठ के अभिलंब के बीच कोण है। यदि प्रश्न कोण पृष्ठ के साथ देता है तो उसे अभिलंब के कोण में बदलें। बंद पृष्ठ के लिए बाहर की ओर अभिलंब धन दिशा लेते हैं। बाहर निकलता क्षेत्र धन और भीतर आता क्षेत्र ऋण योगदान देता है। गाउस नियम (Gauss law) कहता है कि किसी भी बंद पृष्ठ का कुल फ्लक्स qenc/ε0 है। इसमें केवल भीतर का शुद्ध आवेश qenc आता है। बाहर के आवेश पृष्ठ पर क्षेत्र बदल सकते हैं, पर उनका कुल बंद-पृष्ठ फ्लक्स योगदान शून्य है। शून्य कुल फ्लक्स से यह निष्कर्ष नहीं निकलता कि हर जगह E शून्य है। गाउसीय पृष्ठ गणना के लिए कल्पित सीमा है; वह वास्तविक धातु की सतह होना आवश्यक नहीं। क्षेत्र को फ्लक्स समाकलन से बाहर निकालने के लिए उपयुक्त सममिति और दिशा की शर्तें अलग से जाँचनी पड़ती हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is total closed-surface flux for enclosed +q and −q?",
+          "hi": "किसी बंद पृष्ठ के भीतर बराबर +q और −q हों तो कुल फ्लक्स क्या होगा?"
+        },
+        "answer": {
+          "en": "Zero, although the local field need not vanish.",
+          "hi": "0; फिर भी स्थानीय क्षेत्र सामान्यतः शून्य नहीं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Symmetric applications of Gauss law",
+        "hi": "गाउस नियम के सममित अनुप्रयोग"
+      },
+      "paragraphs": [
+        {
+          "en": "A coaxial cylinder gives E=λ/(2πε0r) for an infinite uniform line. A pillbox gives σ/(2ε0) for an infinite sheet. A uniform thin spherical shell has zero field inside and point-charge-like field outside. These depend on their respective symmetry and ideal-size assumptions; they are not interchangeable formulas.",
+          "hi": "अनंत समान रेखीय आवेश के लिए सह-अक्षीय बेलन गाउसीय पृष्ठ लेते हैं। सममिति से क्षेत्र वक्र पृष्ठ पर बराबर और लंबवत है तथा सिरों पर स्पर्शीय, इसलिए E=λ/(2πε0r) मिलता है। अनंत समान समतल चादर के लिए दोनों ओर बराबर परिमाण का क्षेत्र σ/(2ε0) है, जो दूरी से स्वतंत्र है; यह अनंत चादर का आदर्श परिणाम है, छोटी वास्तविक प्लेट के किनारों तक सामान्यतः नहीं चलता। समान आवेशित पतले गोलीय खोल के बाहर क्षेत्र केंद्र पर रखे कुल आवेश जैसा kq/r² और भीतर शून्य है। खोल की सतह पर एकतरफा सीमाएँ अलग हो सकती हैं। इन परिणामों के घात ध्यान रखें: बिंदु या बाहरी गोलकीय वितरण में r^-2, अनंत रेखा में r^-1 और अनंत चादर में दूरी की शून्य घात है। तीनों को एक ही सूत्र से बदलना गंभीर गलती है। उत्तर में दिशा भी बताएँ: धन वितरण से बाहर और ऋण वितरण की ओर। सममिति टूटने पर इन सरल सूत्रों की जगह मूल क्षेत्र योग की आवश्यकता पड़ सकती है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "How does E vary inside a uniformly charged thin spherical shell?",
+          "hi": "समान आवेशित पतले गोलीय खोल के भीतर क्षेत्र r के साथ कैसे बदलता है?"
+        },
+        "answer": {
+          "en": "It is zero throughout the interior.",
+          "hi": "आदर्श समान खोल के भीतर हर स्थान पर E=0।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "F = k|q1q2|/r²",
+      "meaning": {
+        "en": "Point-charge force magnitude in vacuum.",
+        "hi": "निर्वात में बिंदु आवेश बल का परिमाण।"
+      },
+      "units": {
+        "en": "N; k in N m²/C²",
+        "hi": "N; k in N m²/C²"
+      }
+    },
+    {
+      "expression": "E = F/q0; F = qE",
+      "meaning": {
+        "en": "Field uses a positive test charge; force includes charge sign.",
+        "hi": "क्षेत्र धन परीक्षण आवेश से; बल में आवेश का चिह्न।"
+      },
+      "units": {
+        "en": "E: N/C; F: N",
+        "hi": "E: N/C; F: N"
+      }
+    },
+    {
+      "expression": "p = q(2a); τ = pE sinθ",
+      "meaning": {
+        "en": "Dipole moment and torque in uniform field.",
+        "hi": "द्विध्रुव आघूर्ण और एकसमान क्षेत्र में बल आघूर्ण।"
+      },
+      "units": {
+        "en": "p: C m; τ: N m",
+        "hi": "p: C m; τ: N m"
+      }
+    },
+    {
+      "expression": "∮E·dA = qenc/ε0",
+      "meaning": {
+        "en": "Gauss law for a closed surface.",
+        "hi": "बंद पृष्ठ के लिए गाउस नियम।"
+      },
+      "units": {
+        "en": "N m²/C",
+        "hi": "N m²/C"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the force between +1 μC and +2 μC at 0.30 m.",
+        "hi": "+1 μC और +2 μC में 0.30 m दूरी पर बल निकालें।"
+      },
+      "given": {
+        "en": "q1=1×10^-6 C,q2=2×10^-6 C,r=0.30 m;k=9×10^9.",
+        "hi": "q1=1×10^-6 C,q2=2×10^-6 C,r=0.30 m;k=9×10^9।"
+      },
+      "find": {
+        "en": "Force magnitude and direction.",
+        "hi": "बल परिमाण और दिशा।"
+      },
+      "formula": {
+        "en": "F=k|q1q2|/r²",
+        "hi": "F=k|q1q2|/r²"
+      },
+      "steps": [
+        {
+          "en": "F=(9×10^9)(2×10^-12)/0.09=0.20 N.",
+          "hi": "F=(9×10^9)(2×10^-12)/0.09=0.20 N।"
+        }
+      ],
+      "answer": {
+        "en": "0.20 N, repulsive.",
+        "hi": "0.20 N, प्रतिकर्षी।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find E at 0.20 m from +4 nC.",
+        "hi": "+4 nC से 0.20 m पर E निकालें।"
+      },
+      "given": {
+        "en": "q=4×10^-9 C;r=0.20 m.",
+        "hi": "q=4×10^-9 C;r=0.20 m।"
+      },
+      "find": {
+        "en": "Electric field.",
+        "hi": "वैद्युत क्षेत्र।"
+      },
+      "formula": {
+        "en": "E=kq/r²",
+        "hi": "E=kq/r²"
+      },
+      "steps": [
+        {
+          "en": "E=36/0.04=900 N/C.",
+          "hi": "E=36/0.04=900 N/C।"
+        }
+      ],
+      "answer": {
+        "en": "900 N/C radially outward.",
+        "hi": "900 N/C त्रिज्यीय बाहर।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Fields 300 N/C east and 400 N/C north act at a point. Find resultant.",
+        "hi": "1 बिंदु पर 300 N/C पूर्व और 400 N/C उत्तर क्षेत्र हैं। परिणामी निकालें।"
+      },
+      "given": {
+        "en": "Perpendicular field components 300 and 400 N/C.",
+        "hi": "लंबवत घटक 300 और 400 N/C।"
+      },
+      "find": {
+        "en": "Magnitude and direction.",
+        "hi": "परिमाण और दिशा।"
+      },
+      "formula": {
+        "en": "E=√(Ex²+Ey²);tanθ=Ey/Ex",
+        "hi": "E=√(Ex²+Ey²);tanθ=Ey/Ex"
+      },
+      "steps": [
+        {
+          "en": "E=√250000=500 N/C.",
+          "hi": "E=√250000=500 N/C।"
+        },
+        {
+          "en": "θ=tan^-1(4/3)=53.1° north of east.",
+          "hi": "θ=tan^-1(4/3)=53.1° पूर्व से उत्तर।"
+        }
+      ],
+      "answer": {
+        "en": "500 N/C at 53.1° north of east.",
+        "hi": "500 N/C, पूर्व से 53.1° उत्तर।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A dipole has charges ±2 μC separated by 1 cm. Find maximum torque in E=1000 N/C.",
+        "hi": "±2 μC के द्विध्रुव में दूरी 1 cm है। E=1000 N/C में अधिकतम आघूर्ण निकालें।"
+      },
+      "given": {
+        "en": "q=2×10^-6 C;2a=0.01 m;E=1000 N/C.",
+        "hi": "q=2×10^-6 C;2a=0.01 m;E=1000 N/C।"
+      },
+      "find": {
+        "en": "Maximum torque.",
+        "hi": "अधिकतम बल आघूर्ण।"
+      },
+      "formula": {
+        "en": "p=q(2a);τmax=pE",
+        "hi": "p=q(2a);τmax=pE"
+      },
+      "steps": [
+        {
+          "en": "p=2×10^-8 C m.",
+          "hi": "p=2×10^-8 C m।"
+        },
+        {
+          "en": "τmax=2×10^-8×1000=2×10^-5 N m.",
+          "hi": "τmax=2×10^-8×1000=2×10^-5 N m।"
+        }
+      ],
+      "answer": {
+        "en": "2×10^-5 N m at 90°.",
+        "hi": "90° पर 2×10^-5 N m।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A charge 8 nC lies at the centre of a cube. Find flux through one face.",
+        "hi": "घन के केंद्र पर 8 nC आवेश है। 1 फलक का फ्लक्स निकालें।"
+      },
+      "given": {
+        "en": "q=8×10^-9 C;ε0=8.854×10^-12 C²/(N m²).",
+        "hi": "q=8×10^-9 C;ε0=8.854×10^-12 C²/(N m²)।"
+      },
+      "find": {
+        "en": "Flux through a face.",
+        "hi": "1 फलक का फ्लक्स।"
+      },
+      "formula": {
+        "en": "Φtotal=q/ε0;Φface=q/(6ε0)",
+        "hi": "Φtotal=q/ε0;Φface=q/(6ε0)"
+      },
+      "steps": [
+        {
+          "en": "All six faces are equivalent by symmetry.",
+          "hi": "सममिति से सभी 6 फलक समान हैं।"
+        },
+        {
+          "en": "Φface=8×10^-9/(6×8.854×10^-12)≈150.6 N m²/C.",
+          "hi": "Φface=8×10^-9/(6×8.854×10^-12)≈150.6 N m²/C।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately 151 N m²/C outward through each face.",
+        "hi": "प्रत्येक फलक से बाहर लगभग 151 N m²/C।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which charge is possible for an ordinary isolated body?",
+        "hi": "साधारण पृथक वस्तु का कौन-सा आवेश संभव है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−2e",
+            "hi": "−2e"
+          },
+          "reason": {
+            "en": "An integer multiple of e is allowed.",
+            "hi": "e का पूर्णांक गुणज अनुमत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.3e",
+            "hi": "0.3e"
+          },
+          "reason": {
+            "en": "This is not an integer multiple for ordinary body charge.",
+            "hi": "साधारण वस्तु आवेश का पूर्णांक गुणज नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1.5e",
+            "hi": "1.5e"
+          },
+          "reason": {
+            "en": "Half-integer body charge violates this quantisation model.",
+            "hi": "यह वस्तु आवेश के क्वांटीकरण से नहीं मिलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "e/4",
+            "hi": "e/4"
+          },
+          "reason": {
+            "en": "A quarter of e is not an ordinary isolated-body charge increment.",
+            "hi": "e/4 साधारण पृथक वस्तु की आवेश वृद्धि नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If separation doubles, Coulomb force becomes",
+        "hi": "दूरी दुगुनी हो तो कूलॉम बल"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "F/4",
+            "hi": "F/4"
+          },
+          "reason": {
+            "en": "Inverse-square dependence gives 1/4.",
+            "hi": "व्युत्क्रम वर्ग से 1/4।"
+          }
+        },
+        {
+          "text": {
+            "en": "F/2",
+            "hi": "F/2"
+          },
+          "reason": {
+            "en": "This would be inverse-first-power scaling.",
+            "hi": "यह व्युत्क्रम प्रथम घात का परिणाम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2F",
+            "hi": "2F"
+          },
+          "reason": {
+            "en": "Force falls rather than rises.",
+            "hi": "बल बढ़ने के बजाय घटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4F",
+            "hi": "4F"
+          },
+          "reason": {
+            "en": "That occurs when separation halves.",
+            "hi": "यह दूरी आधी करने पर होगा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Field direction is defined by the force on",
+        "hi": "क्षेत्र की दिशा किस पर बल से परिभाषित है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A positive test charge",
+            "hi": "धन परीक्षण आवेश"
+          },
+          "reason": {
+            "en": "A positive test charge fixes the conventional direction.",
+            "hi": "धन परीक्षण आवेश से परंपरागत दिशा तय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A negative test charge",
+            "hi": "ऋण परीक्षण आवेश"
+          },
+          "reason": {
+            "en": "Its force points opposite to E.",
+            "hi": "उसका बल E के विपरीत।"
+          }
+        },
+        {
+          "text": {
+            "en": "A neutral body only",
+            "hi": "केवल उदासीन वस्तु"
+          },
+          "reason": {
+            "en": "A neutral body is not the defining test charge.",
+            "hi": "यह परिभाषा का परीक्षण आवेश नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The source charge itself",
+            "hi": "स्वयं स्रोत आवेश"
+          },
+          "reason": {
+            "en": "Self-force is not this field definition.",
+            "hi": "स्वबल यह परिभाषा नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two equal positive charges have field at their midpoint",
+        "hi": "2 बराबर धनावेशों के मध्य पर क्षेत्र"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "Equal opposite field vectors cancel.",
+            "hi": "बराबर विपरीत क्षेत्र सदिश रद्द होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always east",
+            "hi": "सदा पूर्व"
+          },
+          "reason": {
+            "en": "No east direction is selected by the symmetric pair.",
+            "hi": "सममित युग्म में पूर्व विशेष नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "The midpoint is a finite distance from both sources.",
+            "hi": "मध्य दोनों स्रोतों से परिमित दूरी पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The sum of magnitudes",
+            "hi": "परिमाणों का योग"
+          },
+          "reason": {
+            "en": "Directions must be included.",
+            "hi": "दिशाएँ शामिल करना आवश्यक।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Electric dipole moment points",
+        "hi": "वैद्युत द्विध्रुव आघूर्ण की दिशा"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "From −q to +q",
+            "hi": "−q से +q"
+          },
+          "reason": {
+            "en": "This is the definition of p.",
+            "hi": "यही p की परिभाषित दिशा।"
+          }
+        },
+        {
+          "text": {
+            "en": "From +q to −q",
+            "hi": "+q से −q"
+          },
+          "reason": {
+            "en": "This reverses the moment direction.",
+            "hi": "यह आघूर्ण दिशा उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always north",
+            "hi": "सदा उत्तर"
+          },
+          "reason": {
+            "en": "Orientation depends on the dipole.",
+            "hi": "दिशा द्विध्रुव पर निर्भर।"
+          }
+        },
+        {
+          "text": {
+            "en": "Perpendicular to the dipole axis",
+            "hi": "द्विध्रुव अक्ष के लंबवत"
+          },
+          "reason": {
+            "en": "p lies along the charge-separation axis.",
+            "hi": "p आवेश पृथक्करण अक्ष पर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A dipole in a uniform field generally has",
+        "hi": "एकसमान क्षेत्र में द्विध्रुव पर सामान्यतः"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero net force but possible torque",
+            "hi": "शून्य कुल बल, पर संभव आघूर्ण"
+          },
+          "reason": {
+            "en": "Equal opposite forces can form a couple.",
+            "hi": "बराबर विपरीत बल बलयुग्म बना सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a net force",
+            "hi": "केवल कुल बल"
+          },
+          "reason": {
+            "en": "Uniform field pair forces cancel.",
+            "hi": "एकसमान क्षेत्र में युग्म बल रद्द होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neither force nor torque at every angle",
+            "hi": "हर कोण पर न बल न आघूर्ण"
+          },
+          "reason": {
+            "en": "Torque is nonzero at most angles.",
+            "hi": "अधिकांश कोण पर आघूर्ण अशून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite torque",
+            "hi": "अनंत आघूर्ण"
+          },
+          "reason": {
+            "en": "Finite p and E give finite torque.",
+            "hi": "परिमित p,E से परिमित आघूर्ण।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Flux EA cosθ uses θ between E and",
+        "hi": "EA cosθ में θ किसके बीच है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The surface normal",
+            "hi": "पृष्ठ का अभिलंब"
+          },
+          "reason": {
+            "en": "Area vector follows the normal.",
+            "hi": "क्षेत्रफल सदिश अभिलंब की ओर।"
+          }
+        },
+        {
+          "text": {
+            "en": "The surface plane",
+            "hi": "पृष्ठ का तल"
+          },
+          "reason": {
+            "en": "Then the corresponding factor would be sine.",
+            "hi": "तब उपयुक्त गुणक sine होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any edge of the surface",
+            "hi": "पृष्ठ की कोई भुजा"
+          },
+          "reason": {
+            "en": "An edge does not define the area-vector angle.",
+            "hi": "भुजा क्षेत्रफल सदिश कोण तय नहीं करती।"
+          }
+        },
+        {
+          "text": {
+            "en": "A charge velocity",
+            "hi": "आवेश का वेग"
+          },
+          "reason": {
+            "en": "Electrostatic flux does not use that angle.",
+            "hi": "स्थिरवैद्युत फ्लक्स में यह कोण नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A closed surface encloses no net charge. Its flux is",
+        "hi": "बंद पृष्ठ में शुद्ध आवेश नहीं। कुल फ्लक्स"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "Gauss law uses enclosed net charge.",
+            "hi": "गाउस नियम भीतर का शुद्ध आवेश लेता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always positive",
+            "hi": "सदा धनात्मक"
+          },
+          "reason": {
+            "en": "Entering contributions may cancel outgoing ones.",
+            "hi": "प्रवेश और निर्गम योगदान रद्द हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Equal to E everywhere",
+            "hi": "हर जगह E के बराबर"
+          },
+          "reason": {
+            "en": "Flux and field have different units.",
+            "hi": "फ्लक्स और क्षेत्र के मात्रक अलग।"
+          }
+        },
+        {
+          "text": {
+            "en": "Necessarily infinite",
+            "hi": "अनिवार्यतः अनंत"
+          },
+          "reason": {
+            "en": "No such conclusion follows.",
+            "hi": "ऐसा निष्कर्ष नहीं निकलता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Inside a uniform thin charged spherical shell, E is",
+        "hi": "समान आवेशित पतले गोलीय खोल के भीतर E"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "Spherical symmetry and Gauss law give zero interior field.",
+            "hi": "गोलीय सममिति और गाउस नियम से भीतर शून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "kq/r²",
+            "hi": "kq/r²"
+          },
+          "reason": {
+            "en": "That is the exterior result.",
+            "hi": "यह बाहरी क्षेत्र का परिणाम।"
+          }
+        },
+        {
+          "text": {
+            "en": "Proportional to r",
+            "hi": "r के समानुपाती"
+          },
+          "reason": {
+            "en": "That describes a uniformly charged solid sphere interior.",
+            "hi": "यह समान आवेशित ठोस गोले के भीतर लागू होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Independent of sign and nonzero",
+            "hi": "चिह्न से स्वतंत्र अशून्य"
+          },
+          "reason": {
+            "en": "The ideal shell interior field is zero.",
+            "hi": "आदर्श खोल के भीतर क्षेत्र शून्य।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Unit of line charge density is",
+        "hi": "रेखीय आवेश घनत्व का मात्रक"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "C/m",
+            "hi": "C/m"
+          },
+          "reason": {
+            "en": "Charge per length.",
+            "hi": "आवेश प्रति लंबाई।"
+          }
+        },
+        {
+          "text": {
+            "en": "C/m²",
+            "hi": "C/m²"
+          },
+          "reason": {
+            "en": "This is surface charge density.",
+            "hi": "यह पृष्ठीय घनत्व।"
+          }
+        },
+        {
+          "text": {
+            "en": "C/m³",
+            "hi": "C/m³"
+          },
+          "reason": {
+            "en": "This is volume charge density.",
+            "hi": "यह आयतन घनत्व।"
+          }
+        },
+        {
+          "text": {
+            "en": "N/C",
+            "hi": "N/C"
+          },
+          "reason": {
+            "en": "This is electric field.",
+            "hi": "यह वैद्युत क्षेत्र।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain charge conservation in rubbing.",
+        "hi": "रगड़ने में आवेश संरक्षण समझाएँ।"
+      },
+      "answer": {
+        "en": "Electrons transfer between bodies, changing their individual charges while total charge of the isolated pair remains unchanged.",
+        "hi": "इलेक्ट्रॉन वस्तुओं के बीच जाते हैं; अलग आवेश बदलते हैं, पर पृथक युग्म का कुल स्थिर।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can field lines not intersect?",
+        "hi": "क्षेत्र रेखाएँ क्यों नहीं काटतीं?"
+      },
+      "answer": {
+        "en": "Intersection would assign two field directions to the same point.",
+        "hi": "काटने पर 1 बिंदु की 2 क्षेत्र दिशाएँ हो जाएँगी।"
+      }
+    },
+    {
+      "question": {
+        "en": "State conditions for Coulomb point-charge formula.",
+        "hi": "कूलॉम बिंदु आवेश सूत्र की शर्तें लिखें।"
+      },
+      "answer": {
+        "en": "Stationary point charges or suitably justified point approximations; stated medium and separation.",
+        "hi": "स्थिर बिंदु आवेश या उचित बिंदु सन्निकटन; माध्यम और दूरी स्पष्ट।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish zero flux and zero field.",
+        "hi": "शून्य फ्लक्स और शून्य क्षेत्र में भेद करें।"
+      },
+      "answer": {
+        "en": "Zero flux is an integral cancellation over a closed surface; field can still be nonzero locally.",
+        "hi": "शून्य फ्लक्स बंद पृष्ठ पर कुल रद्दीकरण है; स्थानीय क्षेत्र अशून्य हो सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does a uniform field exert torque on a dipole?",
+        "hi": "एकसमान क्षेत्र में द्विध्रुव पर आघूर्ण क्यों?"
+      },
+      "answer": {
+        "en": "Equal opposite forces act at separated positions and form a couple unless p is parallel or antiparallel to E.",
+        "hi": "अलग स्थानों के बराबर विपरीत बल बलयुग्म बनाते हैं; समानांतर या प्रतिसमानांतर पर आघूर्ण शून्य।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare distance dependence for point, line and sheet fields.",
+        "hi": "बिंदु, अनंत रेखा और चादर के क्षेत्र की दूरी निर्भरता मिलाएँ।"
+      },
+      "answer": {
+        "en": "Point: r^-2; infinite uniform line: r^-1; infinite uniform sheet: constant.",
+        "hi": "बिंदु r^-2; अनंत समान रेखा r^-1; अनंत समान चादर स्थिर।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Charge is conserved and quantised.",
+      "hi": "आवेश संरक्षित और क्वांटित है।"
+    },
+    {
+      "en": "Coulomb force and electric field are vectors.",
+      "hi": "कूलॉम बल और क्षेत्र सदिश हैं।"
+    },
+    {
+      "en": "Add contributions by superposition.",
+      "hi": "योग अध्यारोपण से करें।"
+    },
+    {
+      "en": "A dipole can have zero net force and nonzero torque.",
+      "hi": "द्विध्रुव पर शून्य कुल बल पर अशून्य आघूर्ण संभव।"
+    },
+    {
+      "en": "Gauss law uses enclosed net charge and a closed surface.",
+      "hi": "गाउस नियम बंद पृष्ठ के भीतर शुद्ध आवेश लेता है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not add force magnitudes without directions, use degrees to the plane in EA cosθ, or apply exterior shell field inside.",
+    "hi": "बल परिमाण बिना दिशा न जोड़ें; EA cosθ में तल का कोण न रखें; खोल का बाहरी सूत्र भीतर न लगाएँ।"
+  },
+  "goal": {
+    "en": "Connect charge, force, field, dipoles and flux through vector reasoning.",
+    "hi": "आवेश, बल, क्षेत्र, द्विध्रुव और फ्लक्स को सदिश तर्क से जोड़ें।"
+  },
+  "conceptMap": "आवेश → कूलॉम बल → क्षेत्र अध्यारोपण → द्विध्रुव → फ्लक्स → गाउस नियम",
+  "conceptMapEn": "Charge → Coulomb force → field superposition → dipole → flux → Gauss law",
+  "editionBasis": {
+    "en": "Original study explanations for current NCERT Physics Class XII and UP Board 2026–27; use the prescribed textbook and practical work alongside.",
+    "hi": "वर्तमान NCERT भौतिकी कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ; निर्धारित पुस्तक और प्रयोगात्मक कार्य भी साथ करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics XII Part I Chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leph101.pdf"
+    },
+    {
+      "title": "UPMSP Physics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    }
+  ]
+}

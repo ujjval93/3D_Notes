@@ -1,0 +1,886 @@
+{
+  "id": 2,
+  "title": {
+    "en": "Polynomials",
+    "hi": "बहुपद"
+  },
+  "goal": {
+    "en": "Read zeroes from a graph and connect quadratic zeroes with coefficients, factors and reconstructed polynomials.",
+    "hi": "ग्राफ से शून्यक पढ़ें तथा द्विघात शून्यकों को गुणांक, गुणनखंड और बने हुए बहुपद से जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Expressions, coefficients and degree",
+        "hi": "व्यंजक, गुणांक और घात"
+      },
+      "body": {
+        "en": "A polynomial in one variable is a finite sum of terms whose variable exponents are nonnegative integers and whose coefficients are real numbers. Examples include 5x − 2, x² + 3 and −2x³ + x. A fraction such as x/3 is allowed because it is (1/3)x, but 3/x is not a polynomial in x. Similarly √x has exponent 1/2 and is not a polynomial in x, whereas √3 x has a real constant coefficient and is allowed. Simplify before identifying the degree: x³ + 2x² − x³ becomes 2x² and has degree 2. The degree is the greatest exponent with nonzero coefficient. A nonzero constant polynomial has degree 0. The zero polynomial has no defined degree in this course. A quadratic polynomial has form ax² + bx + c with a ≠ 0; b and c may be zero. Writing terms in descending powers makes coefficient comparisons reliable. Always include a missing term as coefficient 0 when applying a formula, rather than shifting the remaining coefficients into the wrong positions.",
+        "hi": "एक चर का बहुपद (Polynomial) सीमित पदों का योग होता है। चर की घातें ऋणेतर पूर्णांक होती हैं और गुणांक वास्तविक संख्याएँ होते हैं। 5x − 2, x² + 3 तथा −2x³ + x उदाहरण हैं। x/3 स्वीकार्य है, क्योंकि यह (1/3)x है। लेकिन 3/x में चर हर में है और उसकी घात −1 है, इसलिए यह x का बहुपद नहीं है। √x की घात 1/2 है, जबकि √3 x में √3 अचर गुणांक है और व्यंजक बहुपद है। घात पहचानने से पहले समान पद जोड़ें। x³ + 2x² − x³ सरल करने पर 2x² मिलता है, इसलिए घात 2 है। घात वह सबसे बड़ी चर-घात है जिसका गुणांक अशून्य हो। अशून्य अचर बहुपद की घात 0 है। शून्य बहुपद की घात इस पाठ्यक्रम में परिभाषित नहीं है। द्विघात बहुपद ax² + bx + c में a ≠ 0 जरूरी है, लेकिन b तथा c शून्य हो सकते हैं। पदों को घटती घातों में लिखने से गुणांक सही पहचानते हैं। अनुपस्थित पद का गुणांक 0 लिखें। उसकी जगह अगले गुणांक को खिसकाने से शून्यक संबंध गलत हो जाएंगे।"
+      },
+      "formula": "p(x) = ax² + bx + c, a ≠ 0",
+      "question": {
+        "en": "Is x/5 a polynomial?",
+        "hi": "क्या x/5 बहुपद है?"
+      },
+      "answer": {
+        "en": "Yes. It is (1/5)x and has degree 1.",
+        "hi": "हाँ। यह (1/5)x है तथा इसकी घात 1 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Value and zero of a polynomial",
+        "hi": "बहुपद का मान और शून्यक"
+      },
+      "body": {
+        "en": "The value p(k) is obtained by substituting k everywhere that x occurs. Keep negative substitutions inside brackets, especially in squared terms. For p(x) = x² − 2x − 3, p(−1) = 1 + 2 − 3 = 0. Thus −1 is a zero of this polynomial. A zero is an input giving output 0; it is not the same as the constant term, nor is it the point where x happens to be 0. In the same example p(0) = −3, so 0 is not a zero. For a linear polynomial ax + b with a ≠ 0, solving ak + b = 0 gives k = −b/a. A proposed zero should always be checked by direct substitution. Fractions, negative numbers and irrational numbers can all be zeroes of polynomials with real coefficients. For example x² − 2 has zeroes ±√2. If a polynomial is identically zero, every real input is a zero; this special polynomial is not covered by the usual bound for a nonzero polynomial of degree n.",
+        "hi": "बहुपद का मान p(k) पाने के लिए जहाँ-जहाँ x है, वहाँ k रखें। ऋणात्मक संख्या रखने पर कोष्ठक लगाएँ, विशेषकर वर्ग वाले पद में। p(x) = x² − 2x − 3 के लिए p(−1) = 1 + 2 − 3 = 0 है। इसलिए −1 इसका शून्यक (Zero) है। शून्यक ऐसा निवेश है जिससे बहुपद का निर्गम 0 हो। इसे अचर पद से न मिलाएँ और यह भी न मानें कि x = 0 हमेशा शून्यक होगा। इसी उदाहरण में p(0) = −3 है, इसलिए 0 शून्यक नहीं है। रैखिक बहुपद ax + b में a ≠ 0 हो, तो ak + b = 0 से k = −b/a मिलता है। किसी सुझाए शून्यक को सीधे रखकर जरूर जाँचें। शून्यक धनात्मक, ऋणात्मक, भिन्न या अपरिमेय भी हो सकता है। x² − 2 के शून्यक ±√2 हैं। शून्य बहुपद एक विशेष स्थिति है: हर वास्तविक मान पर उसका मान 0 होता है। इसलिए उसके हर वास्तविक निवेश को शून्यक कह सकते हैं। अशून्य बहुपद की घात n होने पर अधिकतम n शून्यकों वाला कथन इस विशेष शून्य बहुपद पर लागू नहीं करते।"
+      },
+      "formula": "k is a zero ⇔ p(k) = 0",
+      "question": {
+        "en": "Is 0 a zero of x² − 4?",
+        "hi": "क्या x² − 4 का शून्यक 0 है?"
+      },
+      "answer": {
+        "en": "No. p(0) = −4, while p(2) = p(−2) = 0.",
+        "hi": "नहीं। p(0) = −4 है, जबकि p(2) = p(−2) = 0।"
+      }
+    },
+    {
+      "title": {
+        "en": "Geometrical meaning of zeroes",
+        "hi": "शून्यकों का ज्यामितीय अर्थ"
+      },
+      "body": {
+        "en": "On the graph y = p(x), a zero occurs where the graph meets the x-axis, because every point on that axis has y = 0. The zero is the x-coordinate, whereas the corresponding graph point is (k,0). An intersection with the y-axis instead shows p(0). A linear nonconstant graph meets the x-axis once. A quadratic graph is a parabola that may cut the x-axis at two different points, touch it at one point, or not meet it at all. These cases mean two distinct real zeroes, one distinct repeated zero, or no real zeroes. The curve need not cross from one side of the axis to the other at a repeated zero; touching counts. In a graphing tool, a limited viewing window can hide an intercept far away, and numerical rounding can make two close intercepts look identical. Therefore combine visual evidence with exact substitution or algebra. Changing the vertical scale changes appearance but not the zeroes. A gold marker is a display convention, not a mathematical reason that the point is a zero.",
+        "hi": "ग्राफ y = p(x) जहाँ x-अक्ष से मिलता है, वहाँ शून्यक मिलता है, क्योंकि उस अक्ष के हर बिंदु पर y = 0 होता है। शून्यक उस बिंदु का x-निर्देशांक है; पूरा बिंदु (k,0) है। y-अक्ष से मिलने वाला बिंदु अलग जानकारी, अर्थात p(0), देता है। अशून्य रैखिक गुणांक वाले बहुपद का सीधी रेखा ग्राफ x-अक्ष से 1 बार मिलता है। द्विघात ग्राफ परवलय (Parabola) होता है। वह अक्ष को 2 अलग बिंदुओं पर काट सकता है, 1 बिंदु पर स्पर्श कर सकता है या बिल्कुल नहीं मिल सकता। इन स्थितियों में क्रमशः 2 भिन्न वास्तविक शून्यक, 1 भिन्न दोहराया शून्यक या कोई वास्तविक शून्यक नहीं होता। दोहराए शून्यक पर ग्राफ का अक्ष के पार जाना जरूरी नहीं; स्पर्श भी मिलने में गिना जाएगा। स्क्रीन की सीमित खिड़की में दूर का प्रतिच्छेद छिप सकता है। पूर्णांकित दशमलव 2 पास के शून्यकों को एक जैसा दिखा सकते हैं। इसलिए चित्र के साथ सटीक प्रतिस्थापन और बीजगणित भी करें। लंबवत पैमाना बदलने से चित्र बदलता है, शून्यक नहीं। सुनहरा चिह्न केवल प्रदर्शन संकेत है, गणितीय प्रमाण नहीं।"
+      },
+      "formula": "p(k) = 0 ⇔ graph contains (k,0)",
+      "question": {
+        "en": "Does touching the x-axis count as a zero?",
+        "hi": "क्या x-अक्ष का स्पर्श भी शून्यक देता है?"
+      },
+      "answer": {
+        "en": "Yes. The y-coordinate is 0 even without crossing.",
+        "hi": "हाँ। अक्ष पार न करने पर भी y-निर्देशांक 0 होता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Factor form and quadratic zeroes",
+        "hi": "गुणनखंड रूप और द्विघात शून्यक"
+      },
+      "body": {
+        "en": "When a quadratic polynomial has real zeroes α and β, its factor form is a(x − α)(x − β), where a is the nonzero leading coefficient. Setting the product equal to zero shows why x = α or x = β makes the value vanish. The zero-product principle applies to a product equal to 0, not to an arbitrary sum. Expanding carefully gives ax² − a(α + β)x + aαβ. Comparing with ax² + bx + c links the sum and product of the zeroes to the coefficients. A repeated zero is allowed: x² − 6x + 9 = (x − 3)² has zero 3 repeated twice. A negative zero appears with a plus sign in its factor, since x − (−2) = x + 2. Do not drop the leading multiplier: 2(x − 1)(x − 4) and (x − 1)(x − 4) share zeroes but have different values away from them. Factoring and expanding in reverse are useful mutual checks before using the zero relationships.",
+        "hi": "यदि किसी द्विघात बहुपद के वास्तविक शून्यक α तथा β हैं, तो उसका गुणनखंड रूप a(x − α)(x − β) है। यहाँ a अशून्य अग्र गुणांक है। गुणनफल को 0 करने के लिए x = α या x = β रखने का कारण इसी रूप से दिखता है। शून्य गुणनफल नियम (Zero-product principle) केवल 0 के बराबर गुणनफल पर लागू होता है, किसी मनमाने योग पर नहीं। विस्तार करने पर ax² − a(α + β)x + aαβ मिलता है। इसे ax² + bx + c से तुलना करने पर शून्यकों के योग और गुणनफल का गुणांकों से संबंध मिलता है। दोहराया शून्यक भी मान्य है। x² − 6x + 9 = (x − 3)² में 3 दोहरा शून्यक है। ऋणात्मक शून्यक के गुणनखंड में धन चिह्न आता है, क्योंकि x − (−2) = x + 2 होता है। अग्र गुणक न हटाएँ। 2(x − 1)(x − 4) तथा (x − 1)(x − 4) के शून्यक समान हैं, पर दूसरे निवेशों पर उनके मान अलग हैं। गुणनखंडन के बाद विस्तार करके मूल बहुपद मिलाना अच्छा सत्यापन है। इससे चिह्न, गुणांक और अचर पद की गलतियाँ जल्दी पकड़ में आती हैं।"
+      },
+      "formula": "p(x) = a(x − α)(x − β)",
+      "question": {
+        "en": "What factor corresponds to zero −4?",
+        "hi": "शून्यक −4 के संगत गुणनखंड क्या है?"
+      },
+      "answer": {
+        "en": "x + 4, because x − (−4) = x + 4.",
+        "hi": "x + 4, क्योंकि x − (−4) = x + 4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Sum and product relationships",
+        "hi": "योग और गुणनफल संबंध"
+      },
+      "body": {
+        "en": "For ax² + bx + c, a ≠ 0, and real zeroes α, β counted with repetition, α + β = −b/a and αβ = c/a. The minus sign belongs to the sum formula, not automatically to the product. With 2x² − 7x + 3, the sum is 7/2 and the product is 3/2; its zeroes 3 and 1/2 verify both. If c = 0, one zero is 0 and the other is −b/a, since x(ax + b) is the factorisation. If b = 0 and real zeroes exist, their sum is 0, so they are opposites. These relationships can determine an unknown coefficient without separately solving for each zero. Substitute the conditions before multiplying or dividing, and retain exact fractions. The relationships also let us calculate expressions such as α² + β² = (α + β)² − 2αβ. A quadratic need not have real zeroes, so when this course asks for real zeroes, first ensure they exist rather than assuming every quadratic crosses the axis.",
+        "hi": "ax² + bx + c में a ≠ 0 हो और वास्तविक शून्यक α तथा β हों, तो दोहराव सहित α + β = −b/a तथा αβ = c/a होता है। ऋण चिह्न योग के सूत्र में है; गुणनफल में हमेशा ऋण चिह्न नहीं लगाते। 2x² − 7x + 3 के लिए योग 7/2 और गुणनफल 3/2 है। इसके शून्यक 3 तथा 1/2 दोनों संबंध जाँचते हैं। यदि c = 0 है, तो x(ax + b) रूप से 1 शून्यक 0 तथा दूसरा −b/a मिलता है। यदि b = 0 और वास्तविक शून्यक हैं, तो उनका योग 0 होगा; इसलिए वे एक-दूसरे के विपरीत होंगे। इन संबंधों से हर शून्यक अलग निकालने के बिना अज्ञात गुणांक ज्ञात कर सकते हैं। पहले शर्त सही रखें, फिर गुणा या भाग करें। भिन्नों को सटीक रूप में रहने दें। α² + β² जैसी राशि भी (α + β)² − 2αβ से मिलती है। हर द्विघात के वास्तविक शून्यक नहीं होते। इसलिए वास्तविक शून्यक की बात करते समय उनका अस्तित्व जाँचें। केवल घात 2 देखकर यह न मानें कि ग्राफ अवश्य x-अक्ष काटेगा।"
+      },
+      "formula": "α + β = −b/a; αβ = c/a",
+      "question": {
+        "en": "Find sum and product of zeroes of 3x² + 5x − 2.",
+        "hi": "3x² + 5x − 2 के शून्यकों का योग और गुणनफल निकालें।"
+      },
+      "answer": {
+        "en": "Sum = −5/3; product = −2/3.",
+        "hi": "योग = −5/3; गुणनफल = −2/3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Build a polynomial from zeroes",
+        "hi": "शून्यकों से बहुपद बनाना"
+      },
+      "body": {
+        "en": "Given two real numbers α and β, a quadratic with those zeroes is x² − (α + β)x + αβ. Multiplying the entire expression by any nonzero real constant produces another quadratic with exactly the same zeroes. Therefore zeroes alone do not determine a unique polynomial unless a leading coefficient or another normalisation is supplied. For zeroes 2 and −3, the monic polynomial is x² + x − 6. If its leading coefficient must be 4, use 4x² + 4x − 24. A monic polynomial has leading coefficient 1; that word does not mean all coefficients equal 1. With fractional zeroes, first construct the monic expression and then clear denominators by a common nonzero multiplier if integer coefficients are desired. For zeroes 1/2 and 3, the monic form is x² − (7/2)x + 3/2, and multiplying by 2 gives 2x² − 7x + 3. Verify the result by substitution of both zeroes. If the two supplied zeroes coincide, the result is a nonzero multiple of (x − α)².",
+        "hi": "2 वास्तविक संख्याएँ α तथा β शून्यक दी हों, तो x² − (α + β)x + αβ एक संगत द्विघात बहुपद है। पूरे व्यंजक को किसी भी अशून्य वास्तविक अचर से गुणा करने पर उन्हीं शून्यकों वाला दूसरा द्विघात मिलेगा। इसलिए केवल शून्यक देने से एक अद्वितीय बहुपद नहीं बनता, जब तक अग्र गुणांक या अन्य सामान्यीकरण न दिया हो। 2 तथा −3 शून्यकों वाला अग्र गुणांक 1 का बहुपद x² + x − 6 है। यदि अग्र गुणांक 4 चाहिए, तो 4x² + 4x − 24 लें। एकक बहुपद (Monic polynomial) का अग्र गुणांक 1 होता है; इसका अर्थ सभी गुणांक 1 होना नहीं है। भिन्न शून्यक हों, तो पहले एकक रूप बनाएँ। पूर्णांक गुणांक चाहिए तो पूरे बहुपद को उचित अशून्य साझा गुणक से गुणा कर हर हटाएँ। 1/2 तथा 3 के लिए एकक रूप x² − (7/2)x + 3/2 है। इसे 2 से गुणा करने पर 2x² − 7x + 3 मिलता है। दोनों शून्यक रखकर परिणाम जाँचें। यदि दोनों दिए शून्यक समान हों, तो बहुपद (x − α)² का अशून्य गुणज होगा।"
+      },
+      "formula": "p(x) = k[x² − (α + β)x + αβ], k ≠ 0",
+      "question": {
+        "en": "Are x² − 4 and 5x² − 20 allowed to share zeroes?",
+        "hi": "क्या x² − 4 तथा 5x² − 20 के शून्यक समान हो सकते हैं?"
+      },
+      "answer": {
+        "en": "Yes. The second is a nonzero constant multiple of the first.",
+        "hi": "हाँ। दूसरा पहले का अशून्य अचर गुणज है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Special cases and interpreting a graphing tool",
+        "hi": "विशेष स्थितियाँ और ग्राफ उपकरण"
+      },
+      "body": {
+        "en": "The condition on the leading coefficient determines which formulas can be used. If a in ax² + bx + c becomes 0, the expression is no longer quadratic. When b ≠ 0 it is linear, and when a = b = 0 it is constant. A nonzero constant such as 5 has no zeroes, because its value never becomes 0. The zero polynomial has every real number as a zero; a graphing tool may omit infinitely many markers, which must not be interpreted as no solutions. A nonzero cubic has at most three real zeroes, but can have fewer distinct ones. For example x³ has only the distinct zero 0, repeated three times. In an interactive curve plotter, changing coefficients can change degree, orientation, intercepts and whether real zeroes exist. To compare two settings, record the expression as well as the visible picture. A screen can suggest a conjecture, but checking an algebraic condition supplies the explanation. Treat rounded marker coordinates as estimates unless an exact form has also been established.",
+        "hi": "अग्र गुणांक की शर्त तय करती है कि कौन-सा सूत्र लगा सकते हैं। ax² + bx + c में a = 0 कर दें, तो व्यंजक द्विघात नहीं रहेगा। b ≠ 0 हो, तो रैखिक होगा। a = b = 0 हो, तो अचर होगा। 5 जैसा अशून्य अचर कोई शून्यक नहीं रखता, क्योंकि उसका मान कभी 0 नहीं होता। शून्य बहुपद में हर वास्तविक संख्या शून्यक है। ग्राफ उपकरण अनंत चिह्न नहीं दिखा सकता; चिह्न न दिखने को कोई हल न होना न मानें। अशून्य त्रिघात बहुपद के अधिकतम 3 वास्तविक शून्यक हो सकते हैं, लेकिन भिन्न शून्यक कम भी हो सकते हैं। x³ का अकेला भिन्न शून्यक 0 है, जो 3 बार दोहराया है। इंटरैक्टिव ग्राफ में गुणांक बदलने से घात, खुलने की दिशा, अक्ष प्रतिच्छेद और वास्तविक शून्यकों का अस्तित्व बदल सकते हैं। 2 सेटिंग की तुलना करते समय चित्र के साथ पूरा व्यंजक भी लिखें। स्क्रीन किसी अनुमान का संकेत देती है; बीजगणितीय शर्त उसकी व्याख्या करती है। पूर्णांकित निर्देशांक अनुमान हैं, जब तक सटीक रूप से मान सिद्ध न किया गया हो।"
+      },
+      "formula": "a = 0 ⇒ not quadratic; p(x) ≡ 0 ⇒ every real x is a zero",
+      "question": {
+        "en": "How many real zeroes does p(x) = 7 have?",
+        "hi": "p(x) = 7 के कितने वास्तविक शून्यक हैं?"
+      },
+      "answer": {
+        "en": "None. Its output is always 7.",
+        "hi": "कोई नहीं। इसका निर्गम हमेशा 7 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Write and verify a complete solution",
+        "hi": "पूरा हल लिखना और सत्यापन"
+      },
+      "body": {
+        "en": "Begin by identifying what is given: the polynomial, its coefficients, its zeroes, or a relation between the zeroes. Rewrite the polynomial in standard descending order and check that it has the required degree. If asked for zeroes, factor where convenient and then substitute the resulting values. If asked to verify a relationship, calculate the zeroes' sum and product independently, calculate −b/a and c/a, and compare the two sides explicitly. If asked to construct a polynomial, find the sum and product first, choose the requested leading coefficient, and expand the factors. Keep signs attached to coefficients; for −2x² + 7x + 4, a = −2 rather than 2. Do not confuse a zero with its square when evaluating a term. When a graph has no real intercepts, state no real zeroes rather than reporting imaginary values outside this course's scope. A short check line often detects arithmetic errors that a clean-looking graph hides. The purpose is to connect shape, value and algebra, not to memorise isolated formulas without the conditions that justify them.",
+        "hi": "हल शुरू करते समय पहचानें कि क्या दिया है: बहुपद, गुणांक, शून्यक या शून्यकों के बीच कोई संबंध। बहुपद को घात के घटते क्रम में लिखें और जरूरी घात की शर्त जाँचें। शून्यक पूछे हों तो सुविधानुसार गुणनखंडन करें, फिर प्राप्त मान सीधे रखकर जाँचें। संबंध सत्यापित करना हो, तो पहले शून्यकों का योग तथा गुणनफल स्वतंत्र रूप से निकालें। फिर −b/a तथा c/a निकालकर दोनों पक्ष स्पष्ट मिलाएँ। बहुपद बनाना हो तो पहले योग और गुणनफल लें, माँगा हुआ अग्र गुणांक चुनें और गुणनखंडों का विस्तार करें। गुणांक के साथ उसका चिह्न रखें। −2x² + 7x + 4 में a = −2 है, 2 नहीं। किसी मान को वर्ग वाले पद में रखते समय उसका वर्ग लें; शून्यक और उसके वर्ग को न मिलाएँ। ग्राफ का वास्तविक अक्ष प्रतिच्छेद न हो, तो कोई वास्तविक शून्यक नहीं लिखें। इस पाठ्यक्रम की सीमा से बाहर काल्पनिक संख्याएँ देना जरूरी नहीं है। छोटी सत्यापन पंक्ति बहुत-सी अंकगणितीय गलतियाँ पकड़ लेती है। उद्देश्य आकार, मान और बीजगणित को जोड़ना है, केवल शर्तों से अलग सूत्र याद करना नहीं।"
+      },
+      "formula": "Check: p(α) = p(β) = 0; α + β = −b/a; αβ = c/a",
+      "question": {
+        "en": "For −2x² + 7x + 4, what is the sum of zeroes?",
+        "hi": "−2x² + 7x + 4 के शून्यकों का योग क्या है?"
+      },
+      "answer": {
+        "en": "−7/(−2) = 7/2.",
+        "hi": "−7/(−2) = 7/2।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the zero of 5x − 15.",
+        "hi": "5x − 15 का शून्यक निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given p(x) = 5x − 15; require p(k) = 0.",
+          "hi": "दिया p(x) = 5x − 15; p(k) = 0 चाहिए।"
+        },
+        {
+          "en": "5k − 15 = 0 gives k = 3.",
+          "hi": "5k − 15 = 0 से k = 3।"
+        },
+        {
+          "en": "Check p(3) = 15 − 15 = 0.",
+          "hi": "जाँच: p(3) = 15 − 15 = 0।"
+        }
+      ],
+      "answer": {
+        "en": "The zero is 3.",
+        "hi": "शून्यक 3 है।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the zeroes of x² − x − 12.",
+        "hi": "x² − x − 12 के शून्यक निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Seek factors with product −12 and sum −1: −4 and 3.",
+          "hi": "गुणनफल −12 और योग −1 वाले मान लें: −4 तथा 3।"
+        },
+        {
+          "en": "x² − x − 12 = (x − 4)(x + 3).",
+          "hi": "x² − x − 12 = (x − 4)(x + 3)।"
+        },
+        {
+          "en": "Set each factor equal to 0 and verify both substitutions.",
+          "hi": "हर गुणनखंड को 0 रखें और दोनों मानों का प्रतिस्थापन जाँचें।"
+        }
+      ],
+      "answer": {
+        "en": "Zeroes: 4 and −3.",
+        "hi": "शून्यक: 4 तथा −3।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Verify the sum/product relationships for 2x² − 7x + 3.",
+        "hi": "2x² − 7x + 3 के शून्यकों के योग/गुणनफल संबंध सत्यापित करें।"
+      },
+      "steps": [
+        {
+          "en": "Factor: 2x² − 6x − x + 3 = (2x − 1)(x − 3).",
+          "hi": "गुणनखंड: 2x² − 6x − x + 3 = (2x − 1)(x − 3)।"
+        },
+        {
+          "en": "The zeroes are 1/2 and 3.",
+          "hi": "शून्यक 1/2 तथा 3 हैं।"
+        },
+        {
+          "en": "Their sum is 7/2 = −(−7)/2 and product 3/2 = 3/2.",
+          "hi": "योग 7/2 = −(−7)/2 तथा गुणनफल 3/2 = 3/2 है।"
+        }
+      ],
+      "answer": {
+        "en": "Both relationships are verified.",
+        "hi": "दोनों संबंध सत्यापित हैं।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Construct a quadratic with zeroes −2 and 5 and leading coefficient 3.",
+        "hi": "−2 तथा 5 शून्यकों और अग्र गुणांक 3 वाला द्विघात बनाएँ।"
+      },
+      "steps": [
+        {
+          "en": "Use p(x) = 3(x + 2)(x − 5).",
+          "hi": "p(x) = 3(x + 2)(x − 5) लें।"
+        },
+        {
+          "en": "Expand: (x + 2)(x − 5) = x² − 3x − 10.",
+          "hi": "विस्तार: (x + 2)(x − 5) = x² − 3x − 10।"
+        },
+        {
+          "en": "Multiply all coefficients by 3; substituting either zero gives 0.",
+          "hi": "सभी गुणांक 3 से गुणा करें; दोनों शून्यक रखने पर 0 मिलता है।"
+        }
+      ],
+      "answer": {
+        "en": "p(x) = 3x² − 9x − 30.",
+        "hi": "p(x) = 3x² − 9x − 30।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "If the zeroes α, β of x² − 5x + 3 are real, find α² + β² without finding them individually.",
+        "hi": "x² − 5x + 3 के वास्तविक शून्यक α, β हों, तो उन्हें अलग निकाले बिना α² + β² ज्ञात करें।"
+      },
+      "steps": [
+        {
+          "en": "Sum α + β = 5 and product αβ = 3.",
+          "hi": "योग α + β = 5 और गुणनफल αβ = 3।"
+        },
+        {
+          "en": "Use α² + β² = (α + β)² − 2αβ.",
+          "hi": "α² + β² = (α + β)² − 2αβ लें।"
+        },
+        {
+          "en": "Substitute: 25 − 6 = 19. The discriminant 25 − 12 = 13 is positive, confirming real zeroes.",
+          "hi": "रखें: 25 − 6 = 19। विविक्तकर 25 − 12 = 13 धनात्मक है, इसलिए वास्तविक शून्यक हैं।"
+        }
+      ],
+      "answer": {
+        "en": "α² + β² = 19.",
+        "hi": "α² + β² = 19।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which expression is not a polynomial in x?",
+        "hi": "कौन-सा व्यंजक x का बहुपद नहीं है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x/2",
+            "hi": "x/2"
+          },
+          "reason": {
+            "en": "Its coefficient 1/2 is a real constant.",
+            "hi": "इसका गुणांक 1/2 वास्तविक अचर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2/x",
+            "hi": "2/x"
+          },
+          "reason": {
+            "en": "Its variable exponent is −1.",
+            "hi": "इसमें चर की घात −1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "√2 x",
+            "hi": "√2 x"
+          },
+          "reason": {
+            "en": "The coefficient √2 is real, and the exponent of x is 1.",
+            "hi": "गुणांक √2 वास्तविक है तथा x की घात 1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x² + 1",
+            "hi": "x² + 1"
+          },
+          "reason": {
+            "en": "The exponents are nonnegative integers.",
+            "hi": "घातें ऋणेतर पूर्णांक हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A number k is a zero of p(x) when",
+        "hi": "संख्या k, p(x) का शून्यक होती है जब"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "k = 0 always",
+            "hi": "k हमेशा 0 हो"
+          },
+          "reason": {
+            "en": "The zero may be nonzero, as for x − 3.",
+            "hi": "x − 3 जैसे बहुपद का शून्यक अशून्य हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "p(k) = k",
+            "hi": "p(k) = k"
+          },
+          "reason": {
+            "en": "That condition describes equality with the input, not necessarily zero output.",
+            "hi": "यह निवेश से बराबरी है, जरूरी नहीं निर्गम 0 हो।"
+          }
+        },
+        {
+          "text": {
+            "en": "p(k) = 0",
+            "hi": "p(k) = 0"
+          },
+          "reason": {
+            "en": "This is exactly the definition of a zero.",
+            "hi": "यही शून्यक की परिभाषा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "p(0) = k",
+            "hi": "p(0) = k"
+          },
+          "reason": {
+            "en": "This describes a constant output at input 0.",
+            "hi": "यह निवेश 0 पर निर्गम बताता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "The zero of 3x + 6 is",
+        "hi": "3x + 6 का शून्यक है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "p(2) = 12, not 0.",
+            "hi": "p(2) = 12 है, 0 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "The constant term need not be a zero.",
+            "hi": "अचर पद शून्यक होना जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−6",
+            "hi": "−6"
+          },
+          "reason": {
+            "en": "p(−6) = −12.",
+            "hi": "p(−6) = −12।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2",
+            "hi": "−2"
+          },
+          "reason": {
+            "en": "3(−2) + 6 = 0.",
+            "hi": "3(−2) + 6 = 0।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Where are real zeroes read on y = p(x)?",
+        "hi": "y = p(x) में वास्तविक शून्यक कहाँ पढ़ते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x-coordinates where the graph meets the x-axis",
+            "hi": "x-अक्ष से मिलने पर x-निर्देशांक"
+          },
+          "reason": {
+            "en": "At those points p(x) = y = 0.",
+            "hi": "उन बिंदुओं पर p(x) = y = 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the y-axis intercept",
+            "hi": "केवल y-अक्ष प्रतिच्छेद"
+          },
+          "reason": {
+            "en": "That gives p(0), not all zeroes.",
+            "hi": "यह p(0) देता है, सभी शून्यक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The highest visible y-value",
+            "hi": "सबसे बड़ा दिखता y-मान"
+          },
+          "reason": {
+            "en": "A maximum is not the definition of a zero.",
+            "hi": "अधिकतम मान शून्यक की परिभाषा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every marked point",
+            "hi": "हर चिह्नित बिंदु"
+          },
+          "reason": {
+            "en": "Only points with output 0 correspond to zeroes.",
+            "hi": "केवल निर्गम 0 वाले बिंदु शून्यक के संगत हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Sum of zeroes of 2x² + 3x − 5 is",
+        "hi": "2x² + 3x − 5 के शून्यकों का योग है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3/2",
+            "hi": "3/2"
+          },
+          "reason": {
+            "en": "The sum formula requires the negative of b/a.",
+            "hi": "योग में b/a का ऋणात्मक लेना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−3/2",
+            "hi": "−3/2"
+          },
+          "reason": {
+            "en": "−b/a = −3/2.",
+            "hi": "−b/a = −3/2।"
+          }
+        },
+        {
+          "text": {
+            "en": "−5/2",
+            "hi": "−5/2"
+          },
+          "reason": {
+            "en": "That is the product c/a.",
+            "hi": "यह गुणनफल c/a है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5/2",
+            "hi": "5/2"
+          },
+          "reason": {
+            "en": "It is neither the required sum nor the correct product.",
+            "hi": "यह न माँगा योग है, न सही गुणनफल।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Product of zeroes of 3x² − 7x − 6 is",
+        "hi": "3x² − 7x − 6 के शून्यकों का गुणनफल है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "7/3",
+            "hi": "7/3"
+          },
+          "reason": {
+            "en": "That is their sum −b/a.",
+            "hi": "यह उनका योग −b/a है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "The sign of c is negative.",
+            "hi": "c का चिह्न ऋणात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2",
+            "hi": "−2"
+          },
+          "reason": {
+            "en": "c/a = −6/3 = −2.",
+            "hi": "c/a = −6/3 = −2।"
+          }
+        },
+        {
+          "text": {
+            "en": "−7/3",
+            "hi": "−7/3"
+          },
+          "reason": {
+            "en": "This is b/a, not c/a.",
+            "hi": "यह b/a है, c/a नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which monic quadratic has zeroes 2 and 3?",
+        "hi": "2 तथा 3 शून्यकों वाला एकक द्विघात कौन-सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x² + 5x + 6",
+            "hi": "x² + 5x + 6"
+          },
+          "reason": {
+            "en": "Its zeroes are −2 and −3.",
+            "hi": "इसके शून्यक −2 तथा −3 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "x² − 6x + 5",
+            "hi": "x² − 6x + 5"
+          },
+          "reason": {
+            "en": "This has zeroes 1 and 5.",
+            "hi": "इसके शून्यक 1 तथा 5 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "x² + x − 6",
+            "hi": "x² + x − 6"
+          },
+          "reason": {
+            "en": "This has zeroes 2 and −3.",
+            "hi": "इसके शून्यक 2 तथा −3 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "x² − 5x + 6",
+            "hi": "x² − 5x + 6"
+          },
+          "reason": {
+            "en": "It equals (x − 2)(x − 3).",
+            "hi": "यह (x − 2)(x − 3) है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "How many distinct real zeroes does (x − 4)² have?",
+        "hi": "(x − 4)² के कितने भिन्न वास्तविक शून्यक हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Only x = 4 gives 0; it is a repeated zero.",
+            "hi": "केवल x = 4 पर 0 मिलता है; यह दोहरा शून्यक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 different zeroes",
+            "hi": "2 अलग शून्यक"
+          },
+          "reason": {
+            "en": "The two factor values coincide.",
+            "hi": "दोनों गुणनखंडों से एक ही मान मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Substitution of 4 gives 0.",
+            "hi": "4 रखने पर 0 मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinitely many",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "That applies to the zero polynomial, not this quadratic.",
+            "hi": "यह शून्य बहुपद पर लागू है, इस द्विघात पर नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If a in ax² + bx + c is 0, which statement is correct?",
+        "hi": "ax² + bx + c में a = 0 हो, तो कौन-सा कथन सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It must still be quadratic",
+            "hi": "यह फिर भी द्विघात होगा"
+          },
+          "reason": {
+            "en": "A quadratic requires a nonzero x² coefficient.",
+            "hi": "द्विघात में x² का गुणांक अशून्य चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "It is no longer quadratic",
+            "hi": "यह अब द्विघात नहीं है"
+          },
+          "reason": {
+            "en": "It becomes linear, constant or zero according to b and c.",
+            "hi": "b और c के अनुसार यह रैखिक, अचर या शून्य होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "It has exactly two real zeroes",
+            "hi": "इसके ठीक 2 वास्तविक शून्यक होंगे"
+          },
+          "reason": {
+            "en": "The degree changed; the conclusion does not follow.",
+            "hi": "घात बदल गई; यह निष्कर्ष नहीं निकलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "It has no coefficients",
+            "hi": "इसके कोई गुणांक नहीं"
+          },
+          "reason": {
+            "en": "b and c remain coefficients even when a is 0.",
+            "hi": "a = 0 पर भी b और c गुणांक रहते हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which statement about the zero polynomial is correct?",
+        "hi": "शून्य बहुपद के बारे में कौन-सा कथन सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It has no zeroes",
+            "hi": "इसके कोई शून्यक नहीं"
+          },
+          "reason": {
+            "en": "Its value is 0 for every input.",
+            "hi": "हर निवेश पर इसका मान 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Its degree is always 1",
+            "hi": "इसकी घात हमेशा 1 है"
+          },
+          "reason": {
+            "en": "Its degree is not defined in this course.",
+            "hi": "इस पाठ्यक्रम में इसकी घात परिभाषित नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every real number is a zero",
+            "hi": "हर वास्तविक संख्या शून्यक है"
+          },
+          "reason": {
+            "en": "p(k) = 0 holds for every real k.",
+            "hi": "हर वास्तविक k के लिए p(k) = 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only 0 is a zero",
+            "hi": "केवल 0 शून्यक है"
+          },
+          "reason": {
+            "en": "Nonzero inputs also give output 0.",
+            "hi": "अशून्य निवेश भी निर्गम 0 देते हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define a zero and test whether −2 is a zero of x² + x − 2.",
+        "hi": "शून्यक की परिभाषा दें तथा x² + x − 2 में −2 जाँचें।"
+      },
+      "answer": {
+        "en": "k is a zero when p(k) = 0. p(−2) = 4 − 2 − 2 = 0, so yes.",
+        "hi": "p(k) = 0 होने पर k शून्यक है। p(−2) = 4 − 2 − 2 = 0, इसलिए हाँ।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find zeroes of x² − 7x + 10.",
+        "hi": "x² − 7x + 10 के शून्यक निकालें।"
+      },
+      "answer": {
+        "en": "(x − 5)(x − 2) gives zeroes 5 and 2.",
+        "hi": "(x − 5)(x − 2) से शून्यक 5 तथा 2 मिलते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "State and apply the sum/product formulas to 4x² − 3x − 1.",
+        "hi": "4x² − 3x − 1 में योग/गुणनफल सूत्र लिखकर लगाएँ।"
+      },
+      "answer": {
+        "en": "Sum = −b/a = 3/4; product = c/a = −1/4.",
+        "hi": "योग = −b/a = 3/4; गुणनफल = c/a = −1/4।"
+      }
+    },
+    {
+      "question": {
+        "en": "Construct a monic polynomial with zeroes −1 and 6.",
+        "hi": "−1 तथा 6 शून्यकों वाला एकक बहुपद बनाएँ।"
+      },
+      "answer": {
+        "en": "Sum 5, product −6; x² − 5x − 6.",
+        "hi": "योग 5, गुणनफल −6; x² − 5x − 6।"
+      }
+    },
+    {
+      "question": {
+        "en": "A parabola touches the x-axis at (3,0). Explain its distinct real zeroes.",
+        "hi": "परवलय x-अक्ष को (3,0) पर स्पर्श करता है। उसके भिन्न वास्तविक शून्यक समझाएँ।"
+      },
+      "answer": {
+        "en": "It has one distinct real zero, 3, repeated twice. Touching still has y = 0.",
+        "hi": "इसका 1 भिन्न वास्तविक शून्यक 3 है, जो 2 बार दोहराया है। स्पर्श पर भी y = 0 है।"
+      }
+    },
+    {
+      "question": {
+        "en": "If α + β = 4 and αβ = −1, find α² + β².",
+        "hi": "यदि α + β = 4 तथा αβ = −1 है, तो α² + β² निकालें।"
+      },
+      "answer": {
+        "en": "(α + β)² − 2αβ = 16 + 2 = 18.",
+        "hi": "(α + β)² − 2αβ = 16 + 2 = 18।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Simplify before choosing the degree; keep a ≠ 0 for quadratic formulas. A zero is an x-value giving output 0, not a y-intercept. Use −b/a for the sum and c/a for the product. A touch counts as a zero. Zeroes alone specify a family of nonzero constant multiples, not a unique polynomial.",
+    "hi": "घात चुनने से पहले सरल करें; द्विघात सूत्रों में a ≠ 0 रखें। शून्यक वह x-मान है जो निर्गम 0 दे, y-अक्ष प्रतिच्छेद नहीं। योग में −b/a तथा गुणनफल में c/a लें। स्पर्श भी शून्यक देता है। केवल शून्यक मिलने से अशून्य अचर गुणजों का परिवार बनता है, अद्वितीय बहुपद नहीं।"
+  },
+  "revision": [
+    {
+      "en": "A zero k satisfies p(k) = 0.",
+      "hi": "शून्यक k के लिए p(k) = 0 है।"
+    },
+    {
+      "en": "Real zeroes are x-coordinates of x-axis contacts.",
+      "hi": "वास्तविक शून्यक x-अक्ष से मिलने वाले बिंदुओं के x-निर्देशांक हैं।"
+    },
+    {
+      "en": "For a quadratic, α + β = −b/a and αβ = c/a.",
+      "hi": "द्विघात में α + β = −b/a तथा αβ = c/a है।"
+    },
+    {
+      "en": "Zeroes α, β give p(x) = a(x − α)(x − β).",
+      "hi": "शून्यक α, β से p(x) = a(x − α)(x − β) है।"
+    },
+    {
+      "en": "Check degree, leading coefficient, signs and exact substitution.",
+      "hi": "घात, अग्र गुणांक, चिह्न तथा सटीक प्रतिस्थापन जाँचें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Polynomial → value p(k) → p(k)=0 → x-axis contact → zeroes → factor form → sum/product coefficients → reconstruct and verify.",
+    "hi": "बहुपद → मान p(k) → p(k)=0 → x-अक्ष से मिलन → शून्यक → गुणनखंड रूप → योग/गुणनफल तथा गुणांक → पुनर्निर्माण और जाँच।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, chapter 2, Reprint 2026–27",
+      "url": "https://www.ncert.nic.in/textbook/pdf/jemh102.pdf"
+    },
+    {
+      "title": "UP Board Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

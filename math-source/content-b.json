@@ -1,0 +1,4793 @@
+[
+  {
+    "id": 9,
+    "title": {
+      "en": "Areas of Parallelograms and Triangles",
+      "hi": "समांतर चतुर्भुजों और त्रिभुजों के क्षेत्रफल"
+    },
+    "engine": "geometry",
+    "goal": {
+      "en": "Explain equal-area relationships using a common base and perpendicular height.",
+      "hi": "समान आधार और लंबवत ऊँचाई से बराबर क्षेत्रफल के संबंध समझें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Base, height and area",
+          "hi": "आधार, ऊँचाई और क्षेत्रफल"
+        },
+        "body": {
+          "en": "Area measures the region enclosed by a plane figure. A height is a perpendicular distance, not necessarily a side of the figure. Choose a base first, then measure the distance to the opposite parallel side. Sliding a top side along a parallel line changes slanting sides but keeps this distance fixed.",
+          "hi": "क्षेत्रफल (Area) किसी समतल आकृति के भीतर का माप है। ऊँचाई (Height) चुने गए आधार से लंबवत दूरी होती है; तिरछी भुजा को ऊँचाई नहीं मानते। आधार चुनने के बाद उसके समानांतर सामने वाली भुजा तक की दूरी लें। ऊपर की भुजा को उसी समानांतर रेखा पर खिसकाने से आकृति का झुकाव बदलता है, पर लंबवत ऊँचाई स्थिर रहती है। लंबाई की इकाई cm हो तो क्षेत्रफल की इकाई cm² होगी।"
+        },
+        "formula": "A = b × h",
+        "question": {
+          "en": "A parallelogram has base 8 cm and height 3 cm. Find its area.",
+          "hi": "एक समांतर चतुर्भुज का आधार 8 cm और ऊँचाई 3 cm है। क्षेत्रफल निकालें।"
+        },
+        "answer": {
+          "en": "24 cm².",
+          "hi": "8 × 3 = 24 cm²।"
+        }
+      },
+      {
+        "title": {
+          "en": "Parallelograms between the same parallels",
+          "hi": "समान समांतर रेखाओं के बीच समांतर चतुर्भुज"
+        },
+        "body": {
+          "en": "Parallelograms on the same base and between the same parallels have equal areas. They share the base length and the perpendicular separation of the parallels. Equal area does not imply equal perimeter or congruence. A long sloping side can increase the perimeter while leaving the area unchanged.",
+          "hi": "एक ही आधार पर और उन्हीं समांतर रेखाओं के बीच बने समांतर चतुर्भुजों के क्षेत्रफल बराबर होते हैं। दोनों का आधार समान है और समांतर रेखाओं की लंबवत दूरी भी समान है, इसलिए b × h बराबर है। बराबर क्षेत्रफल का अर्थ सर्वांगसम (Congruent) आकृतियाँ या बराबर परिमाप नहीं है। तिरछी भुजा की लंबाई बढ़ने पर परिमाप बदल सकता है, जबकि क्षेत्रफल वही रहता है।"
+        },
+        "formula": "A₁ = A₂ when base and perpendicular height agree",
+        "question": {
+          "en": "Does equal area guarantee equal perimeter?",
+          "hi": "क्या बराबर क्षेत्रफल से बराबर परिमाप निश्चित होता है?"
+        },
+        "answer": {
+          "en": "No; shapes can have equal area but different side lengths.",
+          "hi": "नहीं। बराबर क्षेत्रफल वाली आकृतियों की भुजाएँ और परिमाप अलग हो सकते हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Triangle and parallelogram relationship",
+          "hi": "त्रिभुज और समांतर चतुर्भुज का संबंध"
+        },
+        "body": {
+          "en": "A diagonal divides a parallelogram into two congruent triangles. Each triangle occupies half its area. A triangle and a parallelogram on the same base and between the same parallels therefore have areas in the ratio 1:2. A triangle height may lie outside an obtuse triangle; the perpendicular distance still determines its area.",
+          "hi": "समांतर चतुर्भुज का विकर्ण (Diagonal) उसे 2 सर्वांगसम त्रिभुजों में बाँटता है। प्रत्येक का क्षेत्रफल पूरे समांतर चतुर्भुज का आधा होता है। इसलिए समान आधार और समान समांतर रेखाओं के बीच त्रिभुज का क्षेत्रफल समांतर चतुर्भुज का आधा है। अधिककोण त्रिभुज में ऊँचाई बाहर भी गिर सकती है। बाहर होने पर भी आधार की रेखा तक की लंबवत दूरी ही ऊँचाई है।"
+        },
+        "formula": "A(triangle) = 1/2 × b × h",
+        "question": {
+          "en": "A matching parallelogram has area 40 cm². What is the triangle area?",
+          "hi": "उसी आधार और ऊँचाई वाले समांतर चतुर्भुज का क्षेत्रफल 40 cm² है। त्रिभुज का क्षेत्रफल?"
+        },
+        "answer": {
+          "en": "20 cm².",
+          "hi": "40/2 = 20 cm²।"
+        }
+      },
+      {
+        "title": {
+          "en": "Equal-area triangles and a median",
+          "hi": "समान क्षेत्रफल वाले त्रिभुज और माध्यिका"
+        },
+        "body": {
+          "en": "Triangles on the same base and between the same parallels have equal areas. For triangles sharing a height, area ratios equal base ratios. A median joins a vertex to the midpoint of the opposite side, so it divides a triangle into two equal-area triangles. The two smaller triangles need not be congruent.",
+          "hi": "समान आधार और समान समांतर रेखाओं के बीच बने त्रिभुजों का क्षेत्रफल बराबर होता है। ऊँचाई समान हो तो क्षेत्रफलों का अनुपात आधारों के अनुपात के बराबर होता है। माध्यिका (Median) शीर्ष को सामने की भुजा के मध्यबिंदु से मिलाती है। उसके दोनों ओर आधार बराबर और ऊँचाई समान होती है, इसलिए 2 छोटे त्रिभुजों के क्षेत्रफल बराबर होते हैं। उनका सर्वांगसम होना आवश्यक नहीं है।"
+        },
+        "formula": "A₁/A₂ = b₁/b₂ for a common height",
+        "question": {
+          "en": "A median divides a triangle of area 30 cm². Find each part.",
+          "hi": "30 cm² क्षेत्रफल वाले त्रिभुज को एक माध्यिका बाँटती है। प्रत्येक भाग का क्षेत्रफल?"
+        },
+        "answer": {
+          "en": "15 cm².",
+          "hi": "प्रत्येक भाग 30/2 = 15 cm²।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Find the area of a triangle with base 12 cm and perpendicular height 5 cm.",
+          "hi": "12 cm आधार और 5 cm लंबवत ऊँचाई वाले त्रिभुज का क्षेत्रफल निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Given: b = 12 cm, h = 5 cm.",
+            "hi": "दिया है: b = 12 cm, h = 5 cm।"
+          },
+          {
+            "en": "Use A = 1/2 × b × h.",
+            "hi": "सूत्र A = 1/2 × b × h लें।"
+          },
+          {
+            "en": "A = 1/2 × 12 × 5 = 30.",
+            "hi": "A = 1/2 × 12 × 5 = 30।"
+          }
+        ],
+        "answer": {
+          "en": "30 cm².",
+          "hi": "30 cm²।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "A parallelogram has area 72 cm² and base 9 cm. Find its height.",
+          "hi": "एक समांतर चतुर्भुज का क्षेत्रफल 72 cm² और आधार 9 cm है। ऊँचाई निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Given: A = 72 cm² and b = 9 cm.",
+            "hi": "दिया है: A = 72 cm² और b = 9 cm।"
+          },
+          {
+            "en": "Rearrange A = bh to h = A/b.",
+            "hi": "A = bh से h = A/b लें।"
+          },
+          {
+            "en": "h = 72/9 = 8.",
+            "hi": "h = 72/9 = 8।"
+          }
+        ],
+        "answer": {
+          "en": "8 cm.",
+          "hi": "8 cm।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "In triangle ABC, D lies on BC with BD:DC = 2:3. If the area of ABC is 50 cm², find the areas of ABD and ADC.",
+          "hi": "त्रिभुज ABC में BC पर D है और BD:DC = 2:3 है। ABC का क्षेत्रफल 50 cm² हो तो ABD और ADC के क्षेत्रफल निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Both smaller triangles have the same altitude from A to BC.",
+            "hi": "दोनों छोटे त्रिभुजों की A से BC तक ऊँचाई समान है।"
+          },
+          {
+            "en": "Their areas are in the ratio BD:DC = 2:3.",
+            "hi": "क्षेत्रफलों का अनुपात BD:DC = 2:3 है।"
+          },
+          {
+            "en": "One share = 50/(2+3) = 10 cm²; areas = 2 × 10 and 3 × 10.",
+            "hi": "1 भाग = 50/(2+3) = 10 cm²; क्षेत्रफल 2 × 10 और 3 × 10 हैं।"
+          }
+        ],
+        "answer": {
+          "en": "20 cm² and 30 cm².",
+          "hi": "20 cm² और 30 cm²।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which length is the height of a parallelogram for a chosen base?",
+          "hi": "चुने आधार के लिए समांतर चतुर्भुज की ऊँचाई कौन-सी है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Any diagonal",
+              "hi": "कोई भी विकर्ण"
+            },
+            "reason": {
+              "en": "A diagonal is generally not perpendicular to the base.",
+              "hi": "विकर्ण सामान्यतः आधार पर लंब नहीं होता।"
+            }
+          },
+          {
+            "text": {
+              "en": "The perpendicular separation of the parallel sides",
+              "hi": "समांतर भुजाओं की लंबवत दूरी"
+            },
+            "reason": {
+              "en": "Height is measured perpendicular to the base.",
+              "hi": "ऊँचाई आधार पर लंबवत मापी जाती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "The perimeter",
+              "hi": "परिमाप"
+            },
+            "reason": {
+              "en": "Perimeter is total boundary length.",
+              "hi": "परिमाप सीमा की कुल लंबाई है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always the sloping side",
+              "hi": "हमेशा तिरछी भुजा"
+            },
+            "reason": {
+              "en": "A sloping side equals height only in a special right-angled case.",
+              "hi": "तिरछी भुजा विशेष समकोण स्थिति में ही ऊँचाई होती है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Find the area of a parallelogram with b = 7 cm, h = 4 cm.",
+          "hi": "b = 7 cm, h = 4 cm वाले समांतर चतुर्भुज का क्षेत्रफल?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "11 cm²",
+              "hi": "11 cm²"
+            },
+            "reason": {
+              "en": "Adding base and height does not give area.",
+              "hi": "आधार और ऊँचाई जोड़ने से क्षेत्रफल नहीं मिलता।"
+            }
+          },
+          {
+            "text": {
+              "en": "14 cm²",
+              "hi": "14 cm²"
+            },
+            "reason": {
+              "en": "This uses the triangle factor 1/2 incorrectly.",
+              "hi": "यहाँ त्रिभुज का 1/2 गुणक गलत लगा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "28 cm²",
+              "hi": "28 cm²"
+            },
+            "reason": {
+              "en": "A = bh = 7 × 4 = 28 cm².",
+              "hi": "A = bh = 7 × 4 = 28 cm²।"
+            }
+          },
+          {
+            "text": {
+              "en": "22 cm²",
+              "hi": "22 cm²"
+            },
+            "reason": {
+              "en": "2(b+h) would be a rectangle perimeter, not this area.",
+              "hi": "2(b+h) आयत का परिमाप होगा, यह क्षेत्रफल नहीं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Find a triangle area when b = 10 cm and h = 6 cm.",
+          "hi": "b = 10 cm और h = 6 cm पर त्रिभुज का क्षेत्रफल?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "30 cm²",
+              "hi": "30 cm²"
+            },
+            "reason": {
+              "en": "A = 1/2 × 10 × 6 = 30 cm².",
+              "hi": "A = 1/2 × 10 × 6 = 30 cm²।"
+            }
+          },
+          {
+            "text": {
+              "en": "60 cm²",
+              "hi": "60 cm²"
+            },
+            "reason": {
+              "en": "This omits the factor 1/2.",
+              "hi": "इसमें 1/2 का गुणक छूट गया है।"
+            }
+          },
+          {
+            "text": {
+              "en": "16 cm²",
+              "hi": "16 cm²"
+            },
+            "reason": {
+              "en": "Adding lengths does not produce area.",
+              "hi": "लंबाइयाँ जोड़ने से क्षेत्रफल नहीं मिलता।"
+            }
+          },
+          {
+            "text": {
+              "en": "120 cm²",
+              "hi": "120 cm²"
+            },
+            "reason": {
+              "en": "Doubling bh is not the triangle formula.",
+              "hi": "bh को दोगुना करना त्रिभुज का सूत्र नहीं।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "A parallelogram top side slides along the same parallel line. Its base stays fixed. What happens to its area?",
+          "hi": "समांतर चतुर्भुज की ऊपर वाली भुजा उसी समांतर रेखा पर खिसकती है और आधार स्थिर है। क्षेत्रफल?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Always doubles",
+              "hi": "हमेशा दोगुना"
+            },
+            "reason": {
+              "en": "Base and height do not double.",
+              "hi": "आधार और ऊँचाई दोगुने नहीं होते।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always halves",
+              "hi": "हमेशा आधा"
+            },
+            "reason": {
+              "en": "Neither base nor height is halved.",
+              "hi": "न आधार आधा होता है, न ऊँचाई।"
+            }
+          },
+          {
+            "text": {
+              "en": "Becomes zero",
+              "hi": "शून्य हो जाता है"
+            },
+            "reason": {
+              "en": "Positive height and base give positive area.",
+              "hi": "धनात्मक आधार और ऊँचाई से क्षेत्रफल धनात्मक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Stays the same",
+              "hi": "समान रहता है"
+            },
+            "reason": {
+              "en": "The perpendicular height and base remain fixed.",
+              "hi": "लंबवत ऊँचाई और आधार स्थिर रहते हैं।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "A triangle and a parallelogram share a base and height. Their area ratio is:",
+          "hi": "समान आधार और ऊँचाई वाले त्रिभुज और समांतर चतुर्भुज के क्षेत्रफलों का अनुपात?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "2:1",
+              "hi": "2:1"
+            },
+            "reason": {
+              "en": "This reverses the requested order.",
+              "hi": "यह माँगे गए क्रम का उलटा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1:2",
+              "hi": "1:2"
+            },
+            "reason": {
+              "en": "Triangle area is half of bh.",
+              "hi": "त्रिभुज का क्षेत्रफल bh का आधा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1:1",
+              "hi": "1:1"
+            },
+            "reason": {
+              "en": "The triangle has the additional factor 1/2.",
+              "hi": "त्रिभुज में अतिरिक्त गुणक 1/2 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "3:1",
+              "hi": "3:1"
+            },
+            "reason": {
+              "en": "No factor of 3 appears in these formulas.",
+              "hi": "इन सूत्रों में 3 का गुणक नहीं है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "A diagonal divides a parallelogram into triangles of:",
+          "hi": "विकर्ण समांतर चतुर्भुज को किन त्रिभुजों में बाँटता है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Equal areas",
+              "hi": "बराबर क्षेत्रफल"
+            },
+            "reason": {
+              "en": "The two triangles are congruent and have equal areas.",
+              "hi": "दोनों त्रिभुज सर्वांगसम और समान क्षेत्रफल वाले हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always unequal areas",
+              "hi": "हमेशा असमान क्षेत्रफल"
+            },
+            "reason": {
+              "en": "A parallelogram diagonal gives equal halves.",
+              "hi": "समांतर चतुर्भुज का विकर्ण बराबर आधे भाग देता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Zero area",
+              "hi": "शून्य क्षेत्रफल"
+            },
+            "reason": {
+              "en": "A nondegenerate parallelogram has positive-area halves.",
+              "hi": "सामान्य समांतर चतुर्भुज के आधे भागों का क्षेत्रफल धनात्मक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Area equal to the whole figure each",
+              "hi": "प्रत्येक का क्षेत्रफल पूरी आकृति जितना"
+            },
+            "reason": {
+              "en": "Each is half, not all, of the parallelogram.",
+              "hi": "प्रत्येक आधा है, पूरा नहीं।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "A median divides a triangle of area 42 cm². Each part has area:",
+          "hi": "माध्यिका 42 cm² वाले त्रिभुज को बाँटती है। प्रत्येक भाग का क्षेत्रफल?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "42 cm²",
+              "hi": "42 cm²"
+            },
+            "reason": {
+              "en": "42 cm² is the total area.",
+              "hi": "42 cm² कुल क्षेत्रफल है।"
+            }
+          },
+          {
+            "text": {
+              "en": "84 cm²",
+              "hi": "84 cm²"
+            },
+            "reason": {
+              "en": "A part cannot be twice the whole here.",
+              "hi": "यहाँ भाग पूरे से दोगुना नहीं हो सकता।"
+            }
+          },
+          {
+            "text": {
+              "en": "21 cm²",
+              "hi": "21 cm²"
+            },
+            "reason": {
+              "en": "Equal bases with a common height give 42/2 = 21 cm².",
+              "hi": "बराबर आधार और समान ऊँचाई से 42/2 = 21 cm²।"
+            }
+          },
+          {
+            "text": {
+              "en": "14 cm²",
+              "hi": "14 cm²"
+            },
+            "reason": {
+              "en": "A single median gives 2 equal areas, not 3.",
+              "hi": "1 माध्यिका 2 बराबर क्षेत्रफल देती है, 3 नहीं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Triangles have the same height and bases 3 cm and 5 cm. Their area ratio is:",
+          "hi": "समान ऊँचाई और 3 cm, 5 cm आधार वाले त्रिभुजों के क्षेत्रफलों का अनुपात?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "5:3",
+              "hi": "5:3"
+            },
+            "reason": {
+              "en": "This reverses the base order.",
+              "hi": "यह आधारों के क्रम का उलटा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "9:25",
+              "hi": "9:25"
+            },
+            "reason": {
+              "en": "With a common height, bases are not squared.",
+              "hi": "ऊँचाई समान होने पर आधारों का वर्ग नहीं लेते।"
+            }
+          },
+          {
+            "text": {
+              "en": "1:1",
+              "hi": "1:1"
+            },
+            "reason": {
+              "en": "Unequal bases at the same height give unequal areas.",
+              "hi": "समान ऊँचाई पर अलग आधारों से क्षेत्रफल अलग होंगे।"
+            }
+          },
+          {
+            "text": {
+              "en": "3:5",
+              "hi": "3:5"
+            },
+            "reason": {
+              "en": "The common factor h/2 cancels.",
+              "hi": "समान गुणक h/2 कट जाता है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "Which statement follows from equal areas alone?",
+          "hi": "केवल बराबर क्षेत्रफल से कौन-सा कथन निश्चित है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "The shapes are congruent",
+              "hi": "आकृतियाँ सर्वांगसम हैं"
+            },
+            "reason": {
+              "en": "Equal area is weaker than congruence.",
+              "hi": "बराबर क्षेत्रफल सर्वांगसमता सिद्ध नहीं करता।"
+            }
+          },
+          {
+            "text": {
+              "en": "They occupy equal amounts of plane region",
+              "hi": "वे समतल में बराबर क्षेत्र घेरती हैं"
+            },
+            "reason": {
+              "en": "This is the meaning of equal area.",
+              "hi": "बराबर क्षेत्रफल का यही अर्थ है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Their perimeters are equal",
+              "hi": "उनके परिमाप बराबर हैं"
+            },
+            "reason": {
+              "en": "Different shapes may have different perimeters.",
+              "hi": "अलग आकृतियों के परिमाप अलग हो सकते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Their all sides are equal",
+              "hi": "उनकी सभी भुजाएँ बराबर हैं"
+            },
+            "reason": {
+              "en": "Area does not determine every side length.",
+              "hi": "क्षेत्रफल हर भुजा की लंबाई निश्चित नहीं करता।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "For A = 45 cm² and b = 9 cm, the parallelogram height is:",
+          "hi": "A = 45 cm² और b = 9 cm पर समांतर चतुर्भुज की ऊँचाई?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "5 cm",
+              "hi": "5 cm"
+            },
+            "reason": {
+              "en": "h = A/b = 45/9 = 5 cm.",
+              "hi": "h = A/b = 45/9 = 5 cm।"
+            }
+          },
+          {
+            "text": {
+              "en": "10 cm",
+              "hi": "10 cm"
+            },
+            "reason": {
+              "en": "This incorrectly uses the triangle relation.",
+              "hi": "इसमें त्रिभुज वाला संबंध गलत लगा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "405 cm",
+              "hi": "405 cm"
+            },
+            "reason": {
+              "en": "Multiply only when finding area from base and height.",
+              "hi": "आधार और ऊँचाई से क्षेत्रफल निकालते समय गुणा करते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "36 cm",
+              "hi": "36 cm"
+            },
+            "reason": {
+              "en": "Subtracting base from area also mixes units.",
+              "hi": "क्षेत्रफल से आधार घटाने में इकाइयाँ भी नहीं मिलतीं।"
+            }
+          }
+        ],
+        "correct": 0
+      }
+    ],
+    "revision": [
+      {
+        "en": "Measure height perpendicular to the selected base.",
+        "hi": "ऊँचाई चुने आधार पर लंबवत मापें।"
+      },
+      {
+        "en": "Parallelogram area is base × height.",
+        "hi": "समांतर चतुर्भुज का क्षेत्रफल आधार × ऊँचाई है।"
+      },
+      {
+        "en": "Triangle area is half of base × height.",
+        "hi": "त्रिभुज का क्षेत्रफल आधार × ऊँचाई का आधा है।"
+      },
+      {
+        "en": "Same base and same parallels imply equal areas for the same kind of figure.",
+        "hi": "एक ही आधार और समान समांतर रेखाओं के बीच एक प्रकार की आकृतियों के क्षेत्रफल बराबर हैं।"
+      },
+      {
+        "en": "A median gives equal areas, not necessarily congruent triangles.",
+        "hi": "माध्यिका बराबर क्षेत्रफल देती है, आवश्यक नहीं कि त्रिभुज सर्वांगसम हों।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Perpendicular height → base × height → parallelogram → diagonal halves → triangle → equal-area theorems",
+      "hi": "लंबवत ऊँचाई → आधार × ऊँचाई → समांतर चतुर्भुज → विकर्ण से आधे भाग → त्रिभुज → समान क्षेत्रफल के प्रमेय"
+    }
+  },
+  {
+    "id": 10,
+    "title": {
+      "en": "Circles",
+      "hi": "वृत्त"
+    },
+    "engine": "geometry",
+    "goal": {
+      "en": "Relate chords, central angles and inscribed angles by dragging points on a circle.",
+      "hi": "वृत्त पर बिंदु खिसकाकर जीवा, केंद्रीय कोण और परिधि कोण का संबंध समझें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Circle, radius and chord",
+          "hi": "वृत्त, त्रिज्या और जीवा"
+        },
+        "body": {
+          "en": "A circle is the set of points in a plane at a fixed distance from a fixed centre. A radius joins the centre to the circle. A chord joins two points on the circle. A diameter is a chord through the centre and has length twice the radius. Distinguish the circular boundary from the disc it encloses.",
+          "hi": "वृत्त (Circle) समतल के उन बिंदुओं का समूह है जो एक निश्चित केंद्र (Centre) से समान दूरी पर हैं। यह दूरी त्रिज्या (Radius) है। वृत्त के 2 बिंदुओं को मिलाने वाला रेखाखंड जीवा (Chord) है। केंद्र से गुजरने वाली जीवा व्यास (Diameter) है और उसकी लंबाई त्रिज्या की दोगुनी होती है। वृत्त की सीमा और उसके भीतर का क्षेत्र अलग बातें हैं।"
+        },
+        "formula": "d = 2r",
+        "question": {
+          "en": "If a radius is 6 cm, what is the diameter?",
+          "hi": "त्रिज्या 6 cm हो तो व्यास कितना है?"
+        },
+        "answer": {
+          "en": "12 cm.",
+          "hi": "2 × 6 = 12 cm।"
+        }
+      },
+      {
+        "title": {
+          "en": "Chords and their distance from the centre",
+          "hi": "जीवाएँ और केंद्र से उनकी दूरी"
+        },
+        "body": {
+          "en": "Equal chords of the same circle subtend equal angles at the centre. Equal central angles subtend equal chords. A perpendicular from the centre to a chord bisects the chord, and a line joining the centre to a chord midpoint is perpendicular to that chord. Equal chords are equidistant from the centre.",
+          "hi": "एक ही वृत्त की बराबर जीवाएँ केंद्र पर बराबर कोण बनाती हैं और इसका विलोम भी सही है। केंद्र से जीवा पर डाला गया लंब जीवा को समद्विभाजित (Bisect) करता है। केंद्र और जीवा के मध्यबिंदु को मिलाने वाली रेखा जीवा पर लंब होती है। बराबर जीवाओं की केंद्र से लंबवत दूरियाँ बराबर होती हैं। जीवा की लंबाई मापते समय पूरे रेखाखंड और उसके आधे भाग को अलग रखें।"
+        },
+        "formula": "OM ⟂ AB ⇒ AM = MB",
+        "question": {
+          "en": "A chord is 10 cm long. A central perpendicular meets it at M. Find AM.",
+          "hi": "जीवा AB = 10 cm है। केंद्र का लंब उसे M पर मिलता है। AM कितना?"
+        },
+        "answer": {
+          "en": "5 cm.",
+          "hi": "10/2 = 5 cm।"
+        }
+      },
+      {
+        "title": {
+          "en": "Central and inscribed angles",
+          "hi": "केंद्रीय और परिधि कोण"
+        },
+        "body": {
+          "en": "For the same arc, the angle subtended at the centre is twice the angle subtended at any point on the remaining circumference. The phrase same arc matters: choose the central angle that corresponds to the arc not containing the inscribed-angle vertex; it can be reflex. Angles in the same segment are equal. An angle in a semicircle is a right angle.",
+          "hi": "एक ही चाप (Arc) द्वारा केंद्र पर बनाया कोण, वृत्त के शेष भाग के किसी बिंदु पर बने कोण का दोगुना होता है। सही चाप चुनना जरूरी है: वह चाप लें जिसमें परिधि कोण का शीर्ष नहीं है। उसके अनुरूप केंद्रीय कोण प्रतिवर्ती भी हो सकता है। एक ही वृत्तखंड में बने कोण बराबर होते हैं। अर्धवृत्त में बना परिधि कोण 90° है। चित्र में बिंदु खिसकाने से यह संबंध देखें, पर मापन को प्रमाण न मानें।"
+        },
+        "formula": "Central angle = 2 × inscribed angle on the same arc",
+        "question": {
+          "en": "An inscribed angle is 35°. Find its corresponding central angle.",
+          "hi": "परिधि कोण 35° है। उसी चाप का केंद्रीय कोण कितना?"
+        },
+        "answer": {
+          "en": "70°.",
+          "hi": "2 × 35° = 70°।"
+        }
+      },
+      {
+        "title": {
+          "en": "Cyclic quadrilaterals",
+          "hi": "चक्रीय चतुर्भुज"
+        },
+        "body": {
+          "en": "A quadrilateral is cyclic when all four vertices lie on a circle. Its opposite angles are supplementary. Conversely, if a pair of opposite angles of a quadrilateral sums to 180°, it is cyclic. An exterior angle of a cyclic quadrilateral equals the interior opposite angle. Keep adjacent and opposite angles distinct.",
+          "hi": "जिस चतुर्भुज के चारों शीर्ष एक वृत्त पर हों वह चक्रीय चतुर्भुज (Cyclic quadrilateral) है। इसके सम्मुख कोणों का योग 180° होता है। विलोम के अनुसार किसी चतुर्भुज के एक जोड़े सम्मुख कोणों का योग 180° हो तो वह चक्रीय है। चक्रीय चतुर्भुज का एक बाह्य कोण सामने वाले अंतःकोण के बराबर होता है। सम्मुख कोणों को आसन्न कोणों से न मिलाएँ।"
+        },
+        "formula": "∠A + ∠C = 180°; ∠B + ∠D = 180°",
+        "question": {
+          "en": "A cyclic quadrilateral has ∠A = 105°. Find ∠C.",
+          "hi": "चक्रीय चतुर्भुज में ∠A = 105° है। ∠C निकालें।"
+        },
+        "answer": {
+          "en": "75°.",
+          "hi": "180° − 105° = 75°।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "An inscribed angle on a given arc is 42°. Find the central angle on that arc.",
+          "hi": "एक चाप पर परिधि कोण 42° है। उसी चाप पर केंद्रीय कोण निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Use the same arc for both angles.",
+            "hi": "दोनों कोणों के लिए वही चाप लें।"
+          },
+          {
+            "en": "Central angle = 2 × inscribed angle.",
+            "hi": "केंद्रीय कोण = 2 × परिधि कोण।"
+          },
+          {
+            "en": "2 × 42° = 84°.",
+            "hi": "2 × 42° = 84°।"
+          }
+        ],
+        "answer": {
+          "en": "84°.",
+          "hi": "84°।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "A chord is 16 cm long in a circle of radius 10 cm. Find its distance from the centre.",
+          "hi": "10 cm त्रिज्या के वृत्त में जीवा 16 cm है। केंद्र से उसकी दूरी निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Let OM be the perpendicular from centre O to chord AB. Then AM = 8 cm.",
+            "hi": "केंद्र O से जीवा AB पर लंब OM लें। AM = 8 cm।"
+          },
+          {
+            "en": "In right triangle OMA, OM² = OA² − AM².",
+            "hi": "समकोण त्रिभुज OMA में OM² = OA² − AM²।"
+          },
+          {
+            "en": "OM = √(100 − 64) = √36.",
+            "hi": "OM = √(100 − 64) = √36।"
+          }
+        ],
+        "answer": {
+          "en": "6 cm.",
+          "hi": "6 cm।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "In cyclic ABCD, ∠A = (2x + 10)° and ∠C = (3x − 5)°. Find x and both angles.",
+          "hi": "चक्रीय ABCD में ∠A = (2x + 10)° और ∠C = (3x − 5)° हैं। x और दोनों कोण निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Opposite angles sum to 180°.",
+            "hi": "सम्मुख कोणों का योग 180° है।"
+          },
+          {
+            "en": "2x + 10 + 3x − 5 = 180, so 5x = 175.",
+            "hi": "2x + 10 + 3x − 5 = 180, अतः 5x = 175।"
+          },
+          {
+            "en": "x = 35; A = 80° and C = 100°.",
+            "hi": "x = 35; A = 80° और C = 100°।"
+          }
+        ],
+        "answer": {
+          "en": "x = 35; ∠A = 80°, ∠C = 100°.",
+          "hi": "x = 35; ∠A = 80°, ∠C = 100°।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "A circle radius is 7 cm. Its diameter is:",
+          "hi": "वृत्त की त्रिज्या 7 cm है। व्यास?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "7 cm",
+              "hi": "7 cm"
+            },
+            "reason": {
+              "en": "This is the radius itself.",
+              "hi": "यह स्वयं त्रिज्या है।"
+            }
+          },
+          {
+            "text": {
+              "en": "14 cm",
+              "hi": "14 cm"
+            },
+            "reason": {
+              "en": "Diameter = 2 × 7 = 14 cm.",
+              "hi": "व्यास = 2 × 7 = 14 cm।"
+            }
+          },
+          {
+            "text": {
+              "en": "49 cm",
+              "hi": "49 cm"
+            },
+            "reason": {
+              "en": "Squaring the radius does not give a diameter.",
+              "hi": "त्रिज्या का वर्ग व्यास नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "3.5 cm",
+              "hi": "3.5 cm"
+            },
+            "reason": {
+              "en": "A diameter is double, not half, the radius.",
+              "hi": "व्यास त्रिज्या का दोगुना है, आधा नहीं।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "The perpendicular from a circle centre to a chord:",
+          "hi": "वृत्त के केंद्र से जीवा पर खींचा लंब:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Always doubles the chord",
+              "hi": "हमेशा जीवा दोगुनी करता है"
+            },
+            "reason": {
+              "en": "The construction does not change the chord length.",
+              "hi": "रचना जीवा की लंबाई नहीं बदलती।"
+            }
+          },
+          {
+            "text": {
+              "en": "Never meets the chord",
+              "hi": "जीवा को कभी नहीं मिलता"
+            },
+            "reason": {
+              "en": "The perpendicular is drawn to meet the chord line.",
+              "hi": "लंब जीवा की रेखा को मिलने के लिए खींचा जाता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Bisects the chord",
+              "hi": "जीवा को समद्विभाजित करता है"
+            },
+            "reason": {
+              "en": "It meets the chord at its midpoint.",
+              "hi": "वह जीवा के मध्यबिंदु पर मिलता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Is always a diameter segment",
+              "hi": "हमेशा व्यास जितना होता है"
+            },
+            "reason": {
+              "en": "Its length depends on the chord position.",
+              "hi": "उसकी लंबाई जीवा की स्थिति पर निर्भर है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "An angle in a semicircle is:",
+          "hi": "अर्धवृत्त में बना कोण:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "90°",
+              "hi": "90°"
+            },
+            "reason": {
+              "en": "It is half the 180° central angle.",
+              "hi": "यह 180° केंद्रीय कोण का आधा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "45°",
+              "hi": "45°"
+            },
+            "reason": {
+              "en": "A semicircle does not subtend 45° at its remaining circumference.",
+              "hi": "अर्धवृत्त शेष परिधि पर 45° नहीं बनाता।"
+            }
+          },
+          {
+            "text": {
+              "en": "180°",
+              "hi": "180°"
+            },
+            "reason": {
+              "en": "180° is the corresponding central angle.",
+              "hi": "180° उसका केंद्रीय कोण है।"
+            }
+          },
+          {
+            "text": {
+              "en": "360°",
+              "hi": "360°"
+            },
+            "reason": {
+              "en": "360° is a full turn, not this angle.",
+              "hi": "360° पूरा चक्कर है, यह कोण नहीं।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "A central angle on an arc is 100°. The inscribed angle on that arc is:",
+          "hi": "एक चाप का केंद्रीय कोण 100° है। उसी चाप का परिधि कोण?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "200°",
+              "hi": "200°"
+            },
+            "reason": {
+              "en": "This doubles in the wrong direction.",
+              "hi": "यह गलत दिशा में दोगुना करता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "100°",
+              "hi": "100°"
+            },
+            "reason": {
+              "en": "Central and inscribed angles are not equal here.",
+              "hi": "यहाँ केंद्रीय और परिधि कोण बराबर नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "25°",
+              "hi": "25°"
+            },
+            "reason": {
+              "en": "The central angle is halved once, not twice.",
+              "hi": "केंद्रीय कोण को 1 बार आधा करते हैं, 2 बार नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "50°",
+              "hi": "50°"
+            },
+            "reason": {
+              "en": "Inscribed angle = 100°/2 = 50°.",
+              "hi": "परिधि कोण = 100°/2 = 50°।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "Angles in the same segment of a circle are:",
+          "hi": "वृत्त के एक ही वृत्तखंड के कोण:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Always supplementary",
+              "hi": "हमेशा संपूरक"
+            },
+            "reason": {
+              "en": "Supplementary is the cyclic opposite-angle rule.",
+              "hi": "संपूरक वाला नियम चक्रीय सम्मुख कोणों का है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Equal",
+              "hi": "बराबर"
+            },
+            "reason": {
+              "en": "They stand on the same chord and arc.",
+              "hi": "वे एक ही जीवा और चाप पर बने हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always 90°",
+              "hi": "हमेशा 90°"
+            },
+            "reason": {
+              "en": "Only a semicircle guarantees 90°.",
+              "hi": "केवल अर्धवृत्त में 90° निश्चित है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always unequal",
+              "hi": "हमेशा असमान"
+            },
+            "reason": {
+              "en": "The same-segment theorem gives equality.",
+              "hi": "एक ही वृत्तखंड का प्रमेय बराबरी देता है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "In a cyclic quadrilateral, opposite angles have sum:",
+          "hi": "चक्रीय चतुर्भुज के सम्मुख कोणों का योग:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "180°",
+              "hi": "180°"
+            },
+            "reason": {
+              "en": "Opposite angles are supplementary.",
+              "hi": "सम्मुख कोण संपूरक होते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "90°",
+              "hi": "90°"
+            },
+            "reason": {
+              "en": "90° would mean complementary.",
+              "hi": "90° पूरक कोणों का योग है।"
+            }
+          },
+          {
+            "text": {
+              "en": "270°",
+              "hi": "270°"
+            },
+            "reason": {
+              "en": "This is not the cyclic opposite-angle rule.",
+              "hi": "यह चक्रीय सम्मुख कोणों का नियम नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "360°",
+              "hi": "360°"
+            },
+            "reason": {
+              "en": "360° is the sum of all four interior angles.",
+              "hi": "360° चारों अंतःकोणों का योग है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "One cyclic quadrilateral angle is 112°. Its opposite angle is:",
+          "hi": "चक्रीय चतुर्भुज का एक कोण 112° है। सामने वाला कोण?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "112°",
+              "hi": "112°"
+            },
+            "reason": {
+              "en": "Opposite angles need not be equal.",
+              "hi": "सम्मुख कोण आवश्यक नहीं कि बराबर हों।"
+            }
+          },
+          {
+            "text": {
+              "en": "78°",
+              "hi": "78°"
+            },
+            "reason": {
+              "en": "180 − 112 is 68, not 78.",
+              "hi": "180 − 112 का मान 68 है, 78 नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "68°",
+              "hi": "68°"
+            },
+            "reason": {
+              "en": "180° − 112° = 68°.",
+              "hi": "180° − 112° = 68°।"
+            }
+          },
+          {
+            "text": {
+              "en": "248°",
+              "hi": "248°"
+            },
+            "reason": {
+              "en": "Subtract from 180°, not 360°.",
+              "hi": "180° में से घटाएँ, 360° में से नहीं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Equal chords in the same circle are:",
+          "hi": "एक ही वृत्त की बराबर जीवाएँ:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Always diameters",
+              "hi": "हमेशा व्यास"
+            },
+            "reason": {
+              "en": "Equal chords can be shorter than a diameter.",
+              "hi": "बराबर जीवाएँ व्यास से छोटी हो सकती हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "At different perpendicular distances from the centre",
+              "hi": "केंद्र से अलग लंबवत दूरियों पर"
+            },
+            "reason": {
+              "en": "The equal-chord theorem gives equal distances.",
+              "hi": "बराबर जीवा का प्रमेय बराबर दूरी देता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always perpendicular to each other",
+              "hi": "हमेशा एक-दूसरे पर लंब"
+            },
+            "reason": {
+              "en": "Equality does not force a right angle between them.",
+              "hi": "बराबरी उनके बीच समकोण अनिवार्य नहीं बनाती।"
+            }
+          },
+          {
+            "text": {
+              "en": "Equidistant from the centre",
+              "hi": "केंद्र से समान दूरी पर"
+            },
+            "reason": {
+              "en": "Their perpendicular distances from the centre are equal.",
+              "hi": "केंद्र से उनकी लंबवत दूरियाँ बराबर हैं।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "A chord of length 12 cm is bisected at M. One half has length:",
+          "hi": "12 cm जीवा M पर समद्विभाजित होती है। 1 भाग की लंबाई?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "24 cm",
+              "hi": "24 cm"
+            },
+            "reason": {
+              "en": "Bisecting halves rather than doubles.",
+              "hi": "समद्विभाजन आधा करता है, दोगुना नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "6 cm",
+              "hi": "6 cm"
+            },
+            "reason": {
+              "en": "12/2 = 6 cm.",
+              "hi": "12/2 = 6 cm।"
+            }
+          },
+          {
+            "text": {
+              "en": "12 cm",
+              "hi": "12 cm"
+            },
+            "reason": {
+              "en": "12 cm is the full chord.",
+              "hi": "12 cm पूरी जीवा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "3 cm",
+              "hi": "3 cm"
+            },
+            "reason": {
+              "en": "This divides into 4 parts instead of 2.",
+              "hi": "यह 2 की जगह 4 भाग करता है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Which chord must pass through the centre?",
+          "hi": "कौन-सी जीवा केंद्र से गुजरती है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Diameter",
+              "hi": "व्यास"
+            },
+            "reason": {
+              "en": "A diameter is defined as a chord through the centre.",
+              "hi": "केंद्र से गुजरने वाली जीवा व्यास है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Every chord",
+              "hi": "हर जीवा"
+            },
+            "reason": {
+              "en": "Most chords do not pass through the centre.",
+              "hi": "अधिकांश जीवाएँ केंद्र से नहीं गुजरतीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Every radius",
+              "hi": "हर त्रिज्या"
+            },
+            "reason": {
+              "en": "A radius has only one endpoint on the circle, so is not a chord.",
+              "hi": "त्रिज्या का केवल 1 सिरा वृत्त पर होता है; वह जीवा नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "A tangent",
+              "hi": "स्पर्श रेखा"
+            },
+            "reason": {
+              "en": "A tangent is not a chord.",
+              "hi": "स्पर्श रेखा जीवा नहीं है।"
+            }
+          }
+        ],
+        "correct": 0
+      }
+    ],
+    "revision": [
+      {
+        "en": "A diameter is twice a radius.",
+        "hi": "व्यास त्रिज्या का दोगुना है।"
+      },
+      {
+        "en": "A central perpendicular bisects a chord.",
+        "hi": "केंद्र का लंब जीवा को समद्विभाजित करता है।"
+      },
+      {
+        "en": "Equal chords are equidistant from the centre.",
+        "hi": "बराबर जीवाएँ केंद्र से समान दूरी पर हैं।"
+      },
+      {
+        "en": "On the same arc, central angle is twice the inscribed angle.",
+        "hi": "एक ही चाप पर केंद्रीय कोण परिधि कोण का दोगुना है।"
+      },
+      {
+        "en": "Opposite angles of a cyclic quadrilateral sum to 180°.",
+        "hi": "चक्रीय चतुर्भुज के सम्मुख कोणों का योग 180° है।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Centre and radius → chord → perpendicular bisection → arcs and angles → cyclic quadrilaterals",
+      "hi": "केंद्र और त्रिज्या → जीवा → लंबवत समद्विभाजन → चाप और कोण → चक्रीय चतुर्भुज"
+    }
+  },
+  {
+    "id": 11,
+    "title": {
+      "en": "Constructions",
+      "hi": "रचनाएँ"
+    },
+    "engine": "geometry",
+    "goal": {
+      "en": "Follow compass-and-straightedge steps and justify why each construction works.",
+      "hi": "परकार और बिना माप वाले रूलर की रचना के चरण समझें और उनका कारण बताएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Tools and exact construction",
+          "hi": "औजार और शुद्ध रचना"
+        },
+        "body": {
+          "en": "A geometric construction uses an unmarked straightedge to draw lines and a compass to draw circles or transfer lengths. A diagram can look accurate without satisfying the exact conditions. Keep compass width fixed when a step requires equal arcs. Label points as they are created and retain construction arcs so the method can be checked.",
+          "hi": "ज्यामितीय रचना (Construction) में बिना माप वाला रूलर सीधी रेखाएँ खींचता है और परकार (Compass) वृत्त बनाने या लंबाई स्थानांतरित करने में काम आता है। केवल देखने में सही चित्र होना पर्याप्त नहीं है। बराबर चाप चाहिए तो परकार का फैलाव न बदलें। बनते हुए बिंदुओं के नाम लिखें और सहायक चाप हल्के रखें, जिससे रचना का तरीका जाँचा जा सके। डिजिटल दृश्य क्रम दिखाता है; कॉपी पर औजार से अभ्यास भी करें।"
+        },
+        "formula": "Equal compass opening ⇒ equal radii",
+        "question": {
+          "en": "Which tool transfers a length without reading a scale?",
+          "hi": "बिना पैमाना पढ़े लंबाई कौन-सा औजार स्थानांतरित करता है?"
+        },
+        "answer": {
+          "en": "A compass.",
+          "hi": "परकार।"
+        }
+      },
+      {
+        "title": {
+          "en": "Perpendicular bisector",
+          "hi": "लंब समद्विभाजक"
+        },
+        "body": {
+          "en": "For segment AB, draw arcs of equal radius centred at A and B, using a radius greater than half AB. Let the two arc intersections be P and Q. Join PQ. Each of P and Q is equally distant from A and B, so PQ is the perpendicular bisector of AB. A radius smaller than half AB will not create two arc intersections.",
+          "hi": "रेखाखंड AB का लंब समद्विभाजक (Perpendicular bisector) बनाने के लिए A और B केंद्रों से बराबर त्रिज्या के चाप खींचें। त्रिज्या AB के आधे से अधिक लें, ताकि चाप ऊपर और नीचे 2 बिंदुओं P तथा Q पर मिलें। PQ मिलाएँ। P और Q दोनों A तथा B से बराबर दूरी पर हैं, इसलिए PQ, AB को समकोण पर बराबर भागों में बाँटता है। बहुत छोटी त्रिज्या लेने पर चाप नहीं मिलेंगे।"
+        },
+        "formula": "PA = PB, QA = QB ⇒ PQ ⟂ AB and AM = MB",
+        "question": {
+          "en": "Why must the compass radius exceed half AB?",
+          "hi": "परकार की त्रिज्या AB के आधे से अधिक क्यों होनी चाहिए?"
+        },
+        "answer": {
+          "en": "To obtain two distinct arc intersections.",
+          "hi": "ताकि चापों के 2 अलग प्रतिच्छेद बिंदु मिलें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Angle bisector and 60° angle",
+          "hi": "कोण समद्विभाजक और 60° कोण"
+        },
+        "body": {
+          "en": "To bisect an angle, draw an arc from its vertex cutting the arms at P and Q. Use equal radii from P and Q to obtain an interior intersection R. Join the vertex to R. The two resulting triangles are congruent by SSS, which gives equal angles. To construct 60°, use equal-radius circles to form an equilateral triangle.",
+          "hi": "कोण समद्विभाजक (Angle bisector) के लिए शीर्ष O से चाप खींचकर भुजाओं पर P और Q लें। P और Q से बराबर त्रिज्या के चाप अंदर R पर मिलाएँ और OR जोड़ें। OP = OQ, PR = QR और OR साझा है, इसलिए SSS से दोनों त्रिभुज सर्वांगसम हैं और कोण बराबर हैं। 60° बनाने के लिए बराबर त्रिज्याओं से समबाहु त्रिभुज बनाएँ। 60° का समद्विभाजन 30° देता है।"
+        },
+        "formula": "∠POR = ∠ROQ; equilateral triangle angles = 60°",
+        "question": {
+          "en": "What angle results from bisecting 60°?",
+          "hi": "60° का समद्विभाजन करने पर कितना कोण मिलता है?"
+        },
+        "answer": {
+          "en": "30°.",
+          "hi": "30°।"
+        }
+      },
+      {
+        "title": {
+          "en": "Triangles with combined length conditions",
+          "hi": "संयुक्त लंबाई की शर्तों वाले त्रिभुज"
+        },
+        "body": {
+          "en": "A triangle can be constructed from a base, a base angle and the sum or difference of its other sides when the data are feasible. For a side sum, mark the sum length along the angle ray, then intersect its perpendicular bisector with the required ray or line to force an equal-distance relation. For a given perimeter and base angles, use a reference segment equal to the perimeter and half-angle rays. Every construction needs a reason, not just steps.",
+          "hi": "आधार, आधार कोण और अन्य 2 भुजाओं का योग या अंतर मिलने पर, संगत आँकड़ों से त्रिभुज बनाया जा सकता है। योग वाली रचना में कोण की किरण पर योग के बराबर रेखाखंड लें। उचित लंब समद्विभाजक का प्रतिच्छेद बराबर दूरियों की शर्त पूरी कराता है। दिए परिमाप और आधार कोणों वाली रचना में परिमाप का सहायक रेखाखंड तथा आधे कोणों की किरणें उपयोगी हैं। केवल चरण याद न करें; बने त्रिभुज में दी गई लंबाई की शर्त क्यों पूरी हुई, यह भी जाँचें।"
+        },
+        "formula": "Triangle inequality: a + b > c for each side c",
+        "question": {
+          "en": "Can sides 2 cm, 3 cm and 6 cm form a triangle?",
+          "hi": "क्या 2 cm, 3 cm और 6 cm की भुजाओं से त्रिभुज बनेगा?"
+        },
+        "answer": {
+          "en": "No; 2 + 3 < 6.",
+          "hi": "नहीं; 2 + 3 < 6 है।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Construct the perpendicular bisector of AB = 6 cm.",
+          "hi": "AB = 6 cm का लंब समद्विभाजक बनाएँ।"
+        },
+        "steps": [
+          {
+            "en": "Draw AB. Use equal compass radius greater than 3 cm from A and B.",
+            "hi": "AB खींचें। A और B से 3 cm से अधिक बराबर त्रिज्या लें।"
+          },
+          {
+            "en": "Mark arc intersections P and Q on opposite sides of AB.",
+            "hi": "AB के दोनों ओर चापों के प्रतिच्छेद P और Q लें।"
+          },
+          {
+            "en": "Join PQ; it crosses AB at midpoint M with AM = MB = 3 cm.",
+            "hi": "PQ मिलाएँ; वह मध्यबिंदु M पर AB को काटता है, जहाँ AM = MB = 3 cm।"
+          }
+        ],
+        "answer": {
+          "en": "PQ is the required perpendicular bisector.",
+          "hi": "PQ वांछित लंब समद्विभाजक है।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "Construct 30° using compass and straightedge.",
+          "hi": "परकार और रूलर से 30° बनाएँ।"
+        },
+        "steps": [
+          {
+            "en": "Construct an equilateral triangle on a ray to obtain a 60° angle.",
+            "hi": "किरण पर समबाहु त्रिभुज बनाकर 60° कोण लें।"
+          },
+          {
+            "en": "Draw an arc from the vertex to cut both arms at equal distance.",
+            "hi": "शीर्ष से चाप खींचकर दोनों भुजाओं पर समान दूरी के बिंदु लें।"
+          },
+          {
+            "en": "From those points draw equal-radius arcs and join their interior intersection to the vertex.",
+            "hi": "उन बिंदुओं से समान त्रिज्या के चाप खींचें और अंदर के प्रतिच्छेद को शीर्ष से जोड़ें।"
+          }
+        ],
+        "answer": {
+          "en": "The new ray bisects 60°, giving 30°.",
+          "hi": "नई किरण 60° को बाँटकर 30° देती है।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "Construct triangle ABC with BC = 5 cm, ∠B = 60°, AB + AC = 8 cm.",
+          "hi": "BC = 5 cm, ∠B = 60°, AB + AC = 8 cm वाला त्रिभुज ABC बनाएँ।"
+        },
+        "steps": [
+          {
+            "en": "Draw BC = 5 cm and ray BX making 60° with BC. Mark D on BX with BD = 8 cm.",
+            "hi": "BC = 5 cm और BC से 60° की किरण BX खींचें। BX पर BD = 8 cm लें।"
+          },
+          {
+            "en": "Draw the perpendicular bisector of CD; let it meet BD at A. Join AC.",
+            "hi": "CD का लंब समद्विभाजक बनाएँ; वह BD को A पर काटे। AC जोड़ें।"
+          },
+          {
+            "en": "Since AC = AD, AB + AC = AB + AD = BD = 8 cm; the base and angle are already fixed.",
+            "hi": "AC = AD होने से AB + AC = AB + AD = BD = 8 cm; आधार और कोण पहले से निश्चित हैं।"
+          }
+        ],
+        "answer": {
+          "en": "Triangle ABC satisfies all three conditions.",
+          "hi": "त्रिभुज ABC तीनों शर्तें पूरी करता है।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which pair is used for an exact compass-and-straightedge construction?",
+          "hi": "शुद्ध ज्यामितीय रचना में कौन-सी जोड़ी प्रयोग होती है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Compass and unmarked straightedge",
+              "hi": "परकार और बिना माप वाला रूलर"
+            },
+            "reason": {
+              "en": "These transfer lengths and draw straight lines without measuring angles numerically.",
+              "hi": "इनसे लंबाई स्थानांतरित और सीधी रेखाएँ बनाई जाती हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only a protractor",
+              "hi": "केवल चाँदा"
+            },
+            "reason": {
+              "en": "A protractor measures angles but is not this construction method.",
+              "hi": "चाँदा कोण मापता है, यह रचना विधि नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only freehand drawing",
+              "hi": "केवल हाथ से अनुमानित चित्र"
+            },
+            "reason": {
+              "en": "Freehand appearance does not ensure exact relationships.",
+              "hi": "अनुमानित चित्र सटीक संबंध निश्चित नहीं करता।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only a calculator",
+              "hi": "केवल कैलकुलेटर"
+            },
+            "reason": {
+              "en": "A calculator cannot draw the required loci.",
+              "hi": "कैलकुलेटर आवश्यक बिंदुपथ नहीं बनाता।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "For two equal-radius arcs from the endpoints of AB to cross twice, choose radius:",
+          "hi": "AB के सिरों से बराबर त्रिज्या के चाप 2 बार मिलें, तो त्रिज्या लें:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Less than AB/2",
+              "hi": "AB/2 से कम"
+            },
+            "reason": {
+              "en": "Then the circles do not reach each other.",
+              "hi": "तब वृत्त एक-दूसरे तक नहीं पहुँचते।"
+            }
+          },
+          {
+            "text": {
+              "en": "Greater than AB/2",
+              "hi": "AB/2 से अधिक"
+            },
+            "reason": {
+              "en": "A radius above half the separation gives two intersections.",
+              "hi": "दूरी के आधे से अधिक त्रिज्या पर 2 प्रतिच्छेद मिलते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Zero",
+              "hi": "शून्य"
+            },
+            "reason": {
+              "en": "Zero radius gives no useful arcs.",
+              "hi": "शून्य त्रिज्या उपयोगी चाप नहीं देती।"
+            }
+          },
+          {
+            "text": {
+              "en": "Exactly AB/2 for two crossings",
+              "hi": "2 प्रतिच्छेदों के लिए ठीक AB/2"
+            },
+            "reason": {
+              "en": "At exactly half, the circles only touch once.",
+              "hi": "ठीक आधे पर वृत्त केवल 1 बिंदु पर छूते हैं।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Every point on the perpendicular bisector of AB is:",
+          "hi": "AB के लंब समद्विभाजक का हर बिंदु:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Closer to A always",
+              "hi": "हमेशा A के निकट"
+            },
+            "reason": {
+              "en": "The defining property gives equal distances.",
+              "hi": "मुख्य गुण बराबर दूरियाँ देता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Closer to B always",
+              "hi": "हमेशा B के निकट"
+            },
+            "reason": {
+              "en": "Neither endpoint is preferred.",
+              "hi": "किसी एक सिरे की दूरी कम नहीं होती।"
+            }
+          },
+          {
+            "text": {
+              "en": "Equidistant from A and B",
+              "hi": "A और B से समान दूरी पर"
+            },
+            "reason": {
+              "en": "This equal-distance locus justifies the construction.",
+              "hi": "बराबर दूरी का यह बिंदुपथ रचना का कारण है।"
+            }
+          },
+          {
+            "text": {
+              "en": "On AB itself",
+              "hi": "स्वयं AB पर"
+            },
+            "reason": {
+              "en": "Only the midpoint lies on both lines.",
+              "hi": "केवल मध्यबिंदु दोनों रेखाओं पर है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Bisecting 90° produces:",
+          "hi": "90° के समद्विभाजन से मिलता है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "30°",
+              "hi": "30°"
+            },
+            "reason": {
+              "en": "30° is half of 60°.",
+              "hi": "30°, 60° का आधा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "60°",
+              "hi": "60°"
+            },
+            "reason": {
+              "en": "60° is not half of 90°.",
+              "hi": "60°, 90° का आधा नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "180°",
+              "hi": "180°"
+            },
+            "reason": {
+              "en": "This doubles rather than bisects.",
+              "hi": "यह दोगुना करता है, समद्विभाजन नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "45°",
+              "hi": "45°"
+            },
+            "reason": {
+              "en": "90°/2 = 45°.",
+              "hi": "90°/2 = 45°।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "Constructing an equilateral triangle gives a vertex angle of:",
+          "hi": "समबाहु त्रिभुज की रचना से शीर्ष का कौन-सा कोण मिलता है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "60°",
+              "hi": "60°"
+            },
+            "reason": {
+              "en": "All three equal angles sum to 180°, so each is 60°.",
+              "hi": "3 बराबर कोणों का योग 180° है, इसलिए प्रत्येक 60° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "45°",
+              "hi": "45°"
+            },
+            "reason": {
+              "en": "Equal sides do not give 45° here.",
+              "hi": "यहाँ बराबर भुजाएँ 45° नहीं देतीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "90°",
+              "hi": "90°"
+            },
+            "reason": {
+              "en": "An equilateral triangle is not right-angled.",
+              "hi": "समबाहु त्रिभुज समकोण नहीं होता।"
+            }
+          },
+          {
+            "text": {
+              "en": "120°",
+              "hi": "120°"
+            },
+            "reason": {
+              "en": "120° is an exterior angle of an equilateral triangle.",
+              "hi": "120° समबाहु त्रिभुज का बाह्य कोण है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "The standard angle-bisector construction is justified by which triangle congruence rule?",
+          "hi": "सामान्य कोण समद्विभाजक रचना में कौन-सा सर्वांगसमता नियम कारण है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "AAA only",
+              "hi": "केवल AAA"
+            },
+            "reason": {
+              "en": "AAA ensures similarity, not generally congruence.",
+              "hi": "AAA समरूपता देता है, सामान्यतः सर्वांगसमता नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "SSS",
+              "hi": "SSS"
+            },
+            "reason": {
+              "en": "Equal radii and a shared side give three equal side pairs.",
+              "hi": "बराबर त्रिज्याएँ और साझा भुजा 3 बराबर भुजा-जोड़े देते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "SSA always",
+              "hi": "हमेशा SSA"
+            },
+            "reason": {
+              "en": "SSA is not a general congruence rule.",
+              "hi": "SSA सामान्य सर्वांगसमता नियम नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Area equality only",
+              "hi": "केवल क्षेत्रफल की बराबरी"
+            },
+            "reason": {
+              "en": "Equal areas alone do not fix the angles.",
+              "hi": "केवल बराबर क्षेत्रफल कोण निश्चित नहीं करता।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Can sides 3 cm, 4 cm and 8 cm form a triangle?",
+          "hi": "क्या 3 cm, 4 cm और 8 cm की भुजाओं से त्रिभुज बनेगा?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Yes, always",
+              "hi": "हाँ, हमेशा"
+            },
+            "reason": {
+              "en": "The triangle inequality must hold first.",
+              "hi": "पहले त्रिभुज असमिका पूरी होनी चाहिए।"
+            }
+          },
+          {
+            "text": {
+              "en": "Yes, because all are positive",
+              "hi": "हाँ, क्योंकि सभी धनात्मक हैं"
+            },
+            "reason": {
+              "en": "Positive lengths alone are insufficient.",
+              "hi": "केवल धनात्मक लंबाइयाँ पर्याप्त नहीं हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "No, because 3 + 4 < 8",
+              "hi": "नहीं, क्योंकि 3 + 4 < 8"
+            },
+            "reason": {
+              "en": "Two shorter sides cannot reach across the longest side.",
+              "hi": "2 छोटी भुजाएँ सबसे बड़ी भुजा तक नहीं पहुँचतीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only if it is equilateral",
+              "hi": "केवल समबाहु होने पर"
+            },
+            "reason": {
+              "en": "The lengths are unequal and not feasible.",
+              "hi": "लंबाइयाँ असमान और असंगत हैं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Why should construction arcs be retained lightly?",
+          "hi": "रचना के चाप हल्के क्यों रखने चाहिए?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "To hide the method",
+              "hi": "तरीका छिपाने के लिए"
+            },
+            "reason": {
+              "en": "The arcs show rather than hide the method.",
+              "hi": "चाप विधि दिखाते हैं, छिपाते नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "To change the required lengths",
+              "hi": "चाही लंबाइयाँ बदलने के लिए"
+            },
+            "reason": {
+              "en": "Drawing arcs does not alter the prescribed data.",
+              "hi": "चाप बनाने से दिए आँकड़े नहीं बदलते।"
+            }
+          },
+          {
+            "text": {
+              "en": "Because all arcs are final sides",
+              "hi": "क्योंकि सभी चाप अंतिम भुजाएँ हैं"
+            },
+            "reason": {
+              "en": "Most arcs are auxiliary, not final sides.",
+              "hi": "अधिकांश चाप सहायक हैं, अंतिम भुजाएँ नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "To make the method and intersections checkable",
+              "hi": "विधि और प्रतिच्छेद जाँचने के लिए"
+            },
+            "reason": {
+              "en": "Visible arcs explain how the new points were obtained.",
+              "hi": "दिखते चाप बताते हैं कि नए बिंदु कैसे मिले।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "If A lies on the perpendicular bisector of CD, then:",
+          "hi": "यदि A, CD के लंब समद्विभाजक पर है, तो:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "AC = AD",
+              "hi": "AC = AD"
+            },
+            "reason": {
+              "en": "Points on the bisector are equally distant from the segment endpoints.",
+              "hi": "समद्विभाजक के बिंदु रेखाखंड के सिरों से समान दूरी पर हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "AC = CD always",
+              "hi": "हमेशा AC = CD"
+            },
+            "reason": {
+              "en": "The equal-distance property compares AC and AD.",
+              "hi": "बराबर दूरी का गुण AC और AD की तुलना करता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "AD = 0",
+              "hi": "AD = 0"
+            },
+            "reason": {
+              "en": "A need not coincide with D.",
+              "hi": "A का D पर होना जरूरी नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "C, A, D must be collinear",
+              "hi": "C, A, D अवश्य संरेख हैं"
+            },
+            "reason": {
+              "en": "Except the midpoint, these points do not lie on CD.",
+              "hi": "मध्यबिंदु को छोड़कर ये बिंदु CD पर नहीं होते।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "In a side-sum construction, A lies between B and D, BD = 8 cm and AC = AD. Then AB + AC equals:",
+          "hi": "भुजा-योग रचना में A, B और D के बीच है, BD = 8 cm और AC = AD है। AB + AC का मान?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "4 cm",
+              "hi": "4 cm"
+            },
+            "reason": {
+              "en": "There is no instruction to halve BD.",
+              "hi": "BD को आधा करने की शर्त नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "8 cm",
+              "hi": "8 cm"
+            },
+            "reason": {
+              "en": "AB + AC = AB + AD = BD = 8 cm.",
+              "hi": "AB + AC = AB + AD = BD = 8 cm।"
+            }
+          },
+          {
+            "text": {
+              "en": "16 cm",
+              "hi": "16 cm"
+            },
+            "reason": {
+              "en": "The two parts add to BD, not twice BD.",
+              "hi": "दोनों भागों का योग BD है, उसका दोगुना नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Cannot ever be related to BD",
+              "hi": "BD से संबंध हो ही नहीं सकता"
+            },
+            "reason": {
+              "en": "The equal-distance construction gives exactly this relation.",
+              "hi": "बराबर दूरी की रचना यही संबंध देती है।"
+            }
+          }
+        ],
+        "correct": 1
+      }
+    ],
+    "revision": [
+      {
+        "en": "Use equal compass openings for equal radii.",
+        "hi": "बराबर त्रिज्याओं के लिए परकार का फैलाव समान रखें।"
+      },
+      {
+        "en": "Perpendicular-bisector arcs need radius greater than half the segment.",
+        "hi": "लंब समद्विभाजक के चापों की त्रिज्या रेखाखंड के आधे से अधिक लें।"
+      },
+      {
+        "en": "Angle bisection uses equal distances and SSS congruence.",
+        "hi": "कोण समद्विभाजन में बराबर दूरियाँ और SSS काम आते हैं।"
+      },
+      {
+        "en": "An equilateral triangle constructs 60°; bisect it for 30°.",
+        "hi": "समबाहु त्रिभुज से 60° बनाएँ; आधा करने से 30° मिलता है।"
+      },
+      {
+        "en": "Check feasibility and justify the final triangle conditions.",
+        "hi": "रचना की संगति जाँचें और अंतिम त्रिभुज की शर्तों का कारण दें।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Compass radii → equal distances → perpendicular bisector / angle bisector → standard angles → triangle constructions",
+      "hi": "परकार की त्रिज्याएँ → बराबर दूरियाँ → लंब समद्विभाजक / कोण समद्विभाजक → मानक कोण → त्रिभुज की रचनाएँ"
+    }
+  },
+  {
+    "id": 12,
+    "title": {
+      "en": "Heron's Formula",
+      "hi": "हीरोन का सूत्र"
+    },
+    "engine": "geometry",
+    "goal": {
+      "en": "Calculate a triangle area from its three sides, checking validity before using Heron’s formula.",
+      "hi": "3 भुजाओं से क्षेत्रफल निकालें और हीरोन का सूत्र लगाने से पहले त्रिभुज की संगति जाँचें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "When the height is unknown",
+          "hi": "जब ऊँचाई नहीं दी हो"
+        },
+        "body": {
+          "en": "The familiar formula A = 1/2 × base × height needs a perpendicular height. If all three side lengths are known, Heron’s formula computes area without first finding a height. Side lengths must use the same unit. The result has the square of that length unit. A long side drawn diagonally is not automatically a height.",
+          "hi": "त्रिभुज का परिचित सूत्र A = 1/2 × आधार × ऊँचाई लंबवत ऊँचाई माँगता है। जब केवल 3 भुजाएँ दी हों, तब हीरोन का सूत्र (Heron’s formula) सीधे क्षेत्रफल देता है। सभी भुजाओं को एक ही इकाई में बदलें। cm की भुजाओं से cm² में क्षेत्रफल मिलेगा। चित्र में तिरछी भुजा को बिना जाँच ऊँचाई न मानें। भुजाओं से क्षेत्रफल निकालने के बाद आधार चुनकर ऊँचाई भी निकाली जा सकती है।"
+        },
+        "formula": "A = 1/2 × b × h",
+        "question": {
+          "en": "Which additional measurement is needed in A = 1/2 × b × h besides the base?",
+          "hi": "A = 1/2 × b × h में आधार के अलावा कौन-सा माप चाहिए?"
+        },
+        "answer": {
+          "en": "The perpendicular height.",
+          "hi": "लंबवत ऊँचाई।"
+        }
+      },
+      {
+        "title": {
+          "en": "Triangle validity and semiperimeter",
+          "hi": "त्रिभुज की संगति और अर्धपरिमाप"
+        },
+        "body": {
+          "en": "For a nondegenerate triangle, all sides are positive and the sum of any two sides exceeds the third. After checking this, compute the semiperimeter s = (a+b+c)/2. This is half the perimeter, not one third. Equality such as a+b=c produces collinear points with zero area, not a proper triangle.",
+          "hi": "सामान्य त्रिभुज की सभी भुजाएँ धनात्मक हों और किसी भी 2 भुजाओं का योग तीसरी से अधिक हो। पहले यह त्रिभुज असमिका (Triangle inequality) जाँचें। फिर अर्धपरिमाप (Semiperimeter) s = (a+b+c)/2 निकालें। अर्धपरिमाप पूरे परिमाप का आधा है, 3 भुजाओं का औसत नहीं। a+b=c होने पर बिंदु सीधी रेखा में होते हैं और क्षेत्रफल शून्य है; ऐसी आकृति सामान्य त्रिभुज नहीं है।"
+        },
+        "formula": "s = (a + b + c)/2; a + b > c",
+        "question": {
+          "en": "For sides 5 cm, 6 cm, 7 cm, find s.",
+          "hi": "5 cm, 6 cm, 7 cm भुजाओं के लिए s निकालें।"
+        },
+        "answer": {
+          "en": "9 cm.",
+          "hi": "s = (5+6+7)/2 = 9 cm।"
+        }
+      },
+      {
+        "title": {
+          "en": "Apply Heron’s formula carefully",
+          "hi": "हीरोन का सूत्र सावधानी से लगाएँ"
+        },
+        "body": {
+          "en": "For a valid triangle with semiperimeter s, area is √[s(s−a)(s−b)(s−c)]. Compute each difference separately before multiplying. Do not omit the outside square root. If exact simplification produces a surd, keep the exact form unless a decimal is requested. Small rounding errors in side lengths can matter for nearly flat triangles.",
+          "hi": "संगत त्रिभुज का क्षेत्रफल √[s(s−a)(s−b)(s−c)] है। पहले s निकालें, फिर s−a, s−b, s−c अलग लिखें। चारों गुणनखंडों का गुणा करके उसका वर्गमूल लें। अंतिम वर्गमूल भूलने से उत्तर गलत और इकाई असंगत हो जाती है। करणी (Surd) रूप में सही उत्तर मिले तो अनावश्यक दशमलव न बनाएँ। लगभग सपाट त्रिभुज में माप का छोटा अंतर भी क्षेत्रफल पर असर डाल सकता है।"
+        },
+        "formula": "A = √[s(s − a)(s − b)(s − c)]",
+        "question": {
+          "en": "Find the area for sides 3 cm, 4 cm, 5 cm.",
+          "hi": "3 cm, 4 cm, 5 cm भुजाओं का क्षेत्रफल निकालें।"
+        },
+        "answer": {
+          "en": "6 cm².",
+          "hi": "s = 6; A = √(6 × 3 × 2 × 1) = 6 cm²।"
+        }
+      },
+      {
+        "title": {
+          "en": "Composite figures and cost",
+          "hi": "संयुक्त आकृतियाँ और लागत"
+        },
+        "body": {
+          "en": "A quadrilateral with a known diagonal can be split into two triangles when the diagonal lies inside the figure. Apply Heron’s formula to each triangle if its three sides are known, then add the areas. For a region with a hole, subtract the hole area instead. A cost rate per square metre must multiply an area in square metres; convert units before calculating cost.",
+          "hi": "किसी चतुर्भुज का अंदर स्थित विकर्ण उसे 2 त्रिभुजों में बाँट सकता है। हर त्रिभुज की 3 भुजाएँ ज्ञात हों तो दोनों पर अलग हीरोन का सूत्र लगाकर क्षेत्रफल जोड़ें। आकृति में खाली छेद हो तो उसका क्षेत्रफल घटाएँ। प्रति m² की दर से लागत निकालते समय क्षेत्रफल m² में होना चाहिए। लंबाई का रूपांतरण और क्षेत्रफल का रूपांतरण अलग है: 1 m = 100 cm, पर 1 m² = 10000 cm²।"
+        },
+        "formula": "Total area = A₁ + A₂; cost = area × rate",
+        "question": {
+          "en": "A field area is 60 m² and a treatment costs ₹5 per m². Find the cost.",
+          "hi": "खेत का क्षेत्रफल 60 m² और उपचार की दर ₹5 प्रति m² है। लागत निकालें।"
+        },
+        "answer": {
+          "en": "₹300.",
+          "hi": "60 × 5 = ₹300।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Find the area of a triangle with sides 3 cm, 4 cm and 5 cm using Heron’s formula.",
+          "hi": "हीरोन के सूत्र से 3 cm, 4 cm, 5 cm भुजाओं वाले त्रिभुज का क्षेत्रफल निकालें।"
+        },
+        "steps": [
+          {
+            "en": "The sides are positive and 3 + 4 > 5.",
+            "hi": "भुजाएँ धनात्मक हैं और 3 + 4 > 5 है।"
+          },
+          {
+            "en": "s = (3+4+5)/2 = 6 cm.",
+            "hi": "s = (3+4+5)/2 = 6 cm।"
+          },
+          {
+            "en": "A = √[6(6−3)(6−4)(6−5)] = √36.",
+            "hi": "A = √[6(6−3)(6−4)(6−5)] = √36।"
+          }
+        ],
+        "answer": {
+          "en": "6 cm².",
+          "hi": "6 cm²।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "Find the area of a triangle with sides 13 cm, 14 cm and 15 cm.",
+          "hi": "13 cm, 14 cm और 15 cm भुजाओं वाले त्रिभुज का क्षेत्रफल निकालें।"
+        },
+        "steps": [
+          {
+            "en": "13 + 14 > 15, so the triangle is valid.",
+            "hi": "13 + 14 > 15 है, इसलिए त्रिभुज संगत है।"
+          },
+          {
+            "en": "s = (13+14+15)/2 = 21 cm.",
+            "hi": "s = (13+14+15)/2 = 21 cm।"
+          },
+          {
+            "en": "A = √(21 × 8 × 7 × 6) = √7056.",
+            "hi": "A = √(21 × 8 × 7 × 6) = √7056।"
+          }
+        ],
+        "answer": {
+          "en": "84 cm².",
+          "hi": "84 cm²।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "A quadrilateral is divided by an interior diagonal of 13 m into triangles with sides (5,12,13) m and (13,14,15) m. Find total area and cost at ₹20/m².",
+          "hi": "अंदर का 13 m विकर्ण चतुर्भुज को (5,12,13) m और (13,14,15) m भुजाओं वाले त्रिभुजों में बाँटता है। कुल क्षेत्रफल और ₹20/m² पर लागत निकालें।"
+        },
+        "steps": [
+          {
+            "en": "For the first triangle, s₁ = 15 m and A₁ = √(15 × 10 × 3 × 2) = 30 m².",
+            "hi": "पहले त्रिभुज में s₁ = 15 m, A₁ = √(15 × 10 × 3 × 2) = 30 m²।"
+          },
+          {
+            "en": "For the second, s₂ = 21 m and A₂ = √(21 × 8 × 7 × 6) = 84 m².",
+            "hi": "दूसरे में s₂ = 21 m, A₂ = √(21 × 8 × 7 × 6) = 84 m²।"
+          },
+          {
+            "en": "Add areas: 114 m². Multiply by rate: 114 × 20.",
+            "hi": "क्षेत्रफल जोड़ें: 114 m²। दर से गुणा करें: 114 × 20।"
+          }
+        ],
+        "answer": {
+          "en": "114 m²; ₹2280.",
+          "hi": "114 m²; ₹2280।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "For sides a, b, c, the semiperimeter is:",
+          "hi": "a, b, c भुजाओं का अर्धपरिमाप है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "(a+b+c)/3",
+              "hi": "(a+b+c)/3"
+            },
+            "reason": {
+              "en": "Dividing by 3 gives the mean side length.",
+              "hi": "3 से भाग देने पर औसत भुजा मिलती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "(a+b+c)/2",
+              "hi": "(a+b+c)/2"
+            },
+            "reason": {
+              "en": "Semiperimeter means half the perimeter.",
+              "hi": "अर्धपरिमाप का अर्थ परिमाप का आधा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "a+b+c",
+              "hi": "a+b+c"
+            },
+            "reason": {
+              "en": "This is the full perimeter.",
+              "hi": "यह पूरा परिमाप है।"
+            }
+          },
+          {
+            "text": {
+              "en": "abc",
+              "hi": "abc"
+            },
+            "reason": {
+              "en": "A product of lengths is not the semiperimeter.",
+              "hi": "लंबाइयों का गुणनफल अर्धपरिमाप नहीं है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Which is Heron’s area formula?",
+          "hi": "हीरोन का क्षेत्रफल सूत्र कौन-सा है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "s(s−a)(s−b)(s−c)",
+              "hi": "s(s−a)(s−b)(s−c)"
+            },
+            "reason": {
+              "en": "The square root is missing.",
+              "hi": "वर्गमूल छूट गया है।"
+            }
+          },
+          {
+            "text": {
+              "en": "√(abc)",
+              "hi": "√(abc)"
+            },
+            "reason": {
+              "en": "The semiperimeter differences are required.",
+              "hi": "अर्धपरिमाप के अंतरों की जरूरत है।"
+            }
+          },
+          {
+            "text": {
+              "en": "√[s(s−a)(s−b)(s−c)]",
+              "hi": "√[s(s−a)(s−b)(s−c)]"
+            },
+            "reason": {
+              "en": "This uses all four required factors under the square root.",
+              "hi": "इसमें वर्गमूल के भीतर चारों जरूरी गुणनखंड हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "a+b+c",
+              "hi": "a+b+c"
+            },
+            "reason": {
+              "en": "This is a perimeter, not area.",
+              "hi": "यह परिमाप है, क्षेत्रफल नहीं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Can sides 2 cm, 3 cm and 5 cm form a nondegenerate triangle?",
+          "hi": "क्या 2 cm, 3 cm, 5 cm से सामान्य त्रिभुज बनेगा?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "No, since 2+3=5",
+              "hi": "नहीं, क्योंकि 2+3=5"
+            },
+            "reason": {
+              "en": "Strict inequality is needed; equality is a flat configuration.",
+              "hi": "सख्त असमिका चाहिए; बराबरी सपाट स्थिति है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Yes, because the sides are positive",
+              "hi": "हाँ, क्योंकि भुजाएँ धनात्मक हैं"
+            },
+            "reason": {
+              "en": "Positive sides are necessary but not sufficient.",
+              "hi": "धनात्मक भुजाएँ जरूरी हैं पर पर्याप्त नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Yes, and it is equilateral",
+              "hi": "हाँ, और वह समबाहु है"
+            },
+            "reason": {
+              "en": "The lengths are not equal.",
+              "hi": "लंबाइयाँ बराबर नहीं हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Yes, with positive area",
+              "hi": "हाँ, धनात्मक क्षेत्रफल के साथ"
+            },
+            "reason": {
+              "en": "The collinear configuration has zero area.",
+              "hi": "संरेख स्थिति का क्षेत्रफल शून्य है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "For sides 5 cm, 6 cm, 7 cm, s equals:",
+          "hi": "5 cm, 6 cm, 7 cm के लिए s का मान?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "18 cm",
+              "hi": "18 cm"
+            },
+            "reason": {
+              "en": "18 cm is the full perimeter.",
+              "hi": "18 cm पूरा परिमाप है।"
+            }
+          },
+          {
+            "text": {
+              "en": "6 cm",
+              "hi": "6 cm"
+            },
+            "reason": {
+              "en": "6 cm is the arithmetic mean.",
+              "hi": "6 cm अंकगणितीय माध्य है।"
+            }
+          },
+          {
+            "text": {
+              "en": "12 cm",
+              "hi": "12 cm"
+            },
+            "reason": {
+              "en": "Half of 18 is 9, not 12.",
+              "hi": "18 का आधा 9 है, 12 नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "9 cm",
+              "hi": "9 cm"
+            },
+            "reason": {
+              "en": "s = (5+6+7)/2 = 9 cm.",
+              "hi": "s = (5+6+7)/2 = 9 cm।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "The area of a 3–4–5 cm triangle is:",
+          "hi": "3–4–5 cm त्रिभुज का क्षेत्रफल है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "12 cm²",
+              "hi": "12 cm²"
+            },
+            "reason": {
+              "en": "12 is the perimeter value, not area.",
+              "hi": "12 परिमाप का संख्यात्मक मान है, क्षेत्रफल नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "6 cm²",
+              "hi": "6 cm²"
+            },
+            "reason": {
+              "en": "s = 6; A = √(6 × 3 × 2 × 1) = 6 cm².",
+              "hi": "s = 6; A = √(6 × 3 × 2 × 1) = 6 cm²।"
+            }
+          },
+          {
+            "text": {
+              "en": "36 cm²",
+              "hi": "36 cm²"
+            },
+            "reason": {
+              "en": "36 is the product before taking the square root.",
+              "hi": "36 वर्गमूल लेने से पहले का गुणनफल है।"
+            }
+          },
+          {
+            "text": {
+              "en": "24 cm²",
+              "hi": "24 cm²"
+            },
+            "reason": {
+              "en": "The required square root does not give 24.",
+              "hi": "जरूरी वर्गमूल का मान 24 नहीं है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "If side lengths are in metres, Heron’s area is in:",
+          "hi": "भुजाएँ मीटर में हों तो हीरोन से क्षेत्रफल की इकाई:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "m²",
+              "hi": "m²"
+            },
+            "reason": {
+              "en": "Area has square length units.",
+              "hi": "क्षेत्रफल की इकाई लंबाई का वर्ग है।"
+            }
+          },
+          {
+            "text": {
+              "en": "m",
+              "hi": "m"
+            },
+            "reason": {
+              "en": "Metres alone measure length.",
+              "hi": "केवल मीटर लंबाई मापते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "m³",
+              "hi": "m³"
+            },
+            "reason": {
+              "en": "Cubic metres measure volume.",
+              "hi": "घन मीटर आयतन मापते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "No unit",
+              "hi": "कोई इकाई नहीं"
+            },
+            "reason": {
+              "en": "An area measurement requires a unit.",
+              "hi": "क्षेत्रफल के माप की इकाई जरूरी है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "For sides 13 cm, 14 cm, 15 cm, the semiperimeter is:",
+          "hi": "13 cm, 14 cm, 15 cm भुजाओं का अर्धपरिमाप:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "42 cm",
+              "hi": "42 cm"
+            },
+            "reason": {
+              "en": "42 cm is the perimeter.",
+              "hi": "42 cm परिमाप है।"
+            }
+          },
+          {
+            "text": {
+              "en": "14 cm",
+              "hi": "14 cm"
+            },
+            "reason": {
+              "en": "14 cm is the mean side.",
+              "hi": "14 cm औसत भुजा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "21 cm",
+              "hi": "21 cm"
+            },
+            "reason": {
+              "en": "s = 42/2 = 21 cm.",
+              "hi": "s = 42/2 = 21 cm।"
+            }
+          },
+          {
+            "text": {
+              "en": "7 cm",
+              "hi": "7 cm"
+            },
+            "reason": {
+              "en": "The sum must be halved, not divided by 6.",
+              "hi": "योग का आधा चाहिए, 6 से भाग नहीं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "A valid triangle has area A and base b. Its corresponding height is:",
+          "hi": "संगत त्रिभुज का क्षेत्रफल A और आधार b है। संगत ऊँचाई:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "A/b",
+              "hi": "A/b"
+            },
+            "reason": {
+              "en": "This misses the factor 2 from A = bh/2.",
+              "hi": "A = bh/2 के कारण 2 का गुणक जरूरी है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Ab",
+              "hi": "Ab"
+            },
+            "reason": {
+              "en": "Multiplying area by base does not give a length.",
+              "hi": "क्षेत्रफल और आधार का गुणनफल लंबाई नहीं देता।"
+            }
+          },
+          {
+            "text": {
+              "en": "b/(2A)",
+              "hi": "b/(2A)"
+            },
+            "reason": {
+              "en": "This reverses the required ratio.",
+              "hi": "यह जरूरी अनुपात का उलटा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2A/b",
+              "hi": "2A/b"
+            },
+            "reason": {
+              "en": "Rearranging A = bh/2 gives h = 2A/b.",
+              "hi": "A = bh/2 से h = 2A/b मिलता है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "A 20 m² region costs ₹8 per m² to treat. Total cost is:",
+          "hi": "20 m² क्षेत्र पर ₹8 प्रति m² की दर से कुल लागत:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "₹28",
+              "hi": "₹28"
+            },
+            "reason": {
+              "en": "Area and rate must be multiplied, not added.",
+              "hi": "क्षेत्रफल और दर का गुणा करना है, जोड़ नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "₹160",
+              "hi": "₹160"
+            },
+            "reason": {
+              "en": "Cost = 20 × 8 = ₹160.",
+              "hi": "लागत = 20 × 8 = ₹160।"
+            }
+          },
+          {
+            "text": {
+              "en": "₹2.50",
+              "hi": "₹2.50"
+            },
+            "reason": {
+              "en": "Dividing area by rate does not give cost.",
+              "hi": "क्षेत्रफल को दर से भाग देने से लागत नहीं मिलती।"
+            }
+          },
+          {
+            "text": {
+              "en": "₹320",
+              "hi": "₹320"
+            },
+            "reason": {
+              "en": "There is no extra doubling factor.",
+              "hi": "अतिरिक्त दोगुना करने का गुणक नहीं है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "To find the area of a quadrilateral split by an interior diagonal into two triangles, one should:",
+          "hi": "अंदर के विकर्ण से 2 त्रिभुजों में बँटे चतुर्भुज का क्षेत्रफल निकालने के लिए:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Add the two triangle areas",
+              "hi": "दोनों त्रिभुजों के क्षेत्रफल जोड़ें"
+            },
+            "reason": {
+              "en": "The two non-overlapping triangular regions cover the quadrilateral.",
+              "hi": "दो बिना अतिव्यापन के त्रिभुज मिलकर चतुर्भुज भरते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Add only their perimeters",
+              "hi": "केवल परिमाप जोड़ें"
+            },
+            "reason": {
+              "en": "Perimeters do not measure enclosed area.",
+              "hi": "परिमाप घिरे क्षेत्र का माप नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Multiply their areas",
+              "hi": "क्षेत्रफलों का गुणा करें"
+            },
+            "reason": {
+              "en": "Multiplying areas gives the wrong dimension.",
+              "hi": "क्षेत्रफलों के गुणनफल की विमा गलत है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always subtract the smaller area",
+              "hi": "हमेशा छोटा क्षेत्रफल घटाएँ"
+            },
+            "reason": {
+              "en": "Subtract only for a removed region or hole.",
+              "hi": "केवल हटे भाग या छेद के लिए घटाएँ।"
+            }
+          }
+        ],
+        "correct": 0
+      }
+    ],
+    "revision": [
+      {
+        "en": "Check positive lengths and strict triangle inequalities first.",
+        "hi": "पहले धनात्मक भुजाएँ और सख्त त्रिभुज असमिकाएँ जाँचें।"
+      },
+      {
+        "en": "Semiperimeter s is half the perimeter.",
+        "hi": "अर्धपरिमाप s पूरे परिमाप का आधा है।"
+      },
+      {
+        "en": "Keep all four factors inside the square root.",
+        "hi": "चारों गुणनखंड वर्गमूल के अंदर रखें।"
+      },
+      {
+        "en": "Write area in square units and preserve exact surds when useful.",
+        "hi": "क्षेत्रफल वर्ग इकाइयों में लिखें और जरूरत पर सही करणी रूप रखें।"
+      },
+      {
+        "en": "Split composite figures carefully and add or subtract the correct regions.",
+        "hi": "संयुक्त आकृति को ध्यान से बाँटें और सही क्षेत्रों को जोड़ें या घटाएँ।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Three side lengths → triangle inequality → semiperimeter → Heron’s formula → composite area → cost",
+      "hi": "3 भुजाएँ → त्रिभुज असमिका → अर्धपरिमाप → हीरोन का सूत्र → संयुक्त क्षेत्रफल → लागत"
+    }
+  },
+  {
+    "id": 13,
+    "title": {
+      "en": "Surface Areas and Volumes",
+      "hi": "पृष्ठीय क्षेत्रफल और आयतन"
+    },
+    "engine": "solid",
+    "goal": {
+      "en": "Connect a solid’s dimensions to its total surface area and volume.",
+      "hi": "ठोस की विमाओं को उसके कुल पृष्ठीय क्षेत्रफल और आयतन से जोड़ें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Cuboid and cube",
+          "hi": "घनाभ और घन"
+        },
+        "body": {
+          "en": "A cuboid has six rectangular faces. Its total surface area adds the areas of all six faces; its volume counts unit cubes filling its interior. A cube is a cuboid with three equal dimensions. Surface area uses square units and volume uses cubic units. For an open box, subtract the missing face from the closed-solid formula.",
+          "hi": "घनाभ (Cuboid) के 6 आयताकार फलक होते हैं। कुल पृष्ठीय क्षेत्रफल (Total surface area) सभी फलकों के क्षेत्रफलों का योग है। आयतन (Volume) उसके भीतर समाने वाले इकाई घनों का माप है। घन (Cube) में लंबाई, चौड़ाई और ऊँचाई बराबर होती हैं। क्षेत्रफल वर्ग इकाइयों में और आयतन घन इकाइयों में लिखें। खुले डिब्बे में बंद घनाभ का पूरा सूत्र सीधे न लगाएँ; अनुपस्थित फलक का क्षेत्रफल घटाएँ।"
+        },
+        "formula": "Cuboid: TSA = 2(lb + bh + hl), V = lbh; cube: TSA = 6a², V = a³",
+        "question": {
+          "en": "A cube side is 3 cm. Find its volume.",
+          "hi": "घन की भुजा 3 cm है। आयतन निकालें।"
+        },
+        "answer": {
+          "en": "27 cm³.",
+          "hi": "3³ = 27 cm³।"
+        }
+      },
+      {
+        "title": {
+          "en": "Right circular cylinder",
+          "hi": "लंब वृत्तीय बेलन"
+        },
+        "body": {
+          "en": "A right circular cylinder has two circular bases and a curved surface. Unrolling the curved surface gives a rectangle of length 2πr and height h. Thus the curved area is 2πrh and the total area includes two bases. Volume equals base area times height. A radius is half the diameter; check which measurement is given.",
+          "hi": "लंब वृत्तीय बेलन (Right circular cylinder) के 2 वृत्ताकार आधार और 1 वक्र पृष्ठ होते हैं। वक्र पृष्ठ खोलने पर 2πr लंबाई और h ऊँचाई का आयत मिलता है। इसलिए वक्र पृष्ठीय क्षेत्रफल 2πrh है। कुल पृष्ठीय क्षेत्रफल में दोनों वृत्ताकार आधार जोड़ते हैं। आयतन आधार के क्षेत्रफल और ऊँचाई का गुणनफल है। प्रश्न में व्यास दिया हो तो पहले उसका आधा लेकर त्रिज्या बनाएँ।"
+        },
+        "formula": "CSA = 2πrh; TSA = 2πr(h+r); V = πr²h",
+        "question": {
+          "en": "A cylinder diameter is 10 cm. Which radius should be used?",
+          "hi": "बेलन का व्यास 10 cm है। सूत्र में कितनी त्रिज्या लें?"
+        },
+        "answer": {
+          "en": "5 cm.",
+          "hi": "10/2 = 5 cm।"
+        }
+      },
+      {
+        "title": {
+          "en": "Right circular cone",
+          "hi": "लंब वृत्तीय शंकु"
+        },
+        "body": {
+          "en": "A right circular cone has one circular base and a curved surface. Its vertical height h and slant height l are different. With radius r, Pythagoras gives l² = r² + h². Curved area is πrl and total area adds πr². For a cone and cylinder with the same base radius and height, the cone volume is one third of the cylinder volume.",
+          "hi": "लंब वृत्तीय शंकु (Right circular cone) का 1 वृत्ताकार आधार और 1 वक्र पृष्ठ है। लंबवत ऊँचाई h और तिर्यक ऊँचाई (Slant height) l अलग हैं। समकोण त्रिभुज से l² = r²+h² मिलता है। वक्र क्षेत्रफल में l लगता है, आयतन में h। कुल क्षेत्रफल में आधार का πr² जोड़ें। समान त्रिज्या और ऊँचाई वाले बेलन की तुलना में शंकु का आयतन 1/3 होता है।"
+        },
+        "formula": "l = √(r²+h²); CSA = πrl; TSA = πr(l+r); V = πr²h/3",
+        "question": {
+          "en": "For r = 3 cm and h = 4 cm, find slant height.",
+          "hi": "r = 3 cm और h = 4 cm पर तिर्यक ऊँचाई निकालें।"
+        },
+        "answer": {
+          "en": "5 cm.",
+          "hi": "l = √(9+16) = 5 cm।"
+        }
+      },
+      {
+        "title": {
+          "en": "Sphere, hemisphere and units",
+          "hi": "गोला, अर्धगोला और इकाइयाँ"
+        },
+        "body": {
+          "en": "A sphere has no flat base. Its surface area is 4πr² and its volume is 4πr³/3. A hemisphere has a curved surface of area 2πr²; including its circular base gives 3πr². Its volume is half a sphere’s volume. Use the π value specified in a question or leave π exact. Remember 1 litre = 1000 cm³ and 1 m³ = 1000 litres.",
+          "hi": "गोले (Sphere) का कोई सपाट आधार नहीं होता। उसका पृष्ठीय क्षेत्रफल 4πr² और आयतन 4πr³/3 है। अर्धगोले (Hemisphere) का वक्र क्षेत्रफल 2πr² है; वृत्ताकार आधार सहित कुल क्षेत्रफल 3πr² है। उसका आयतन गोले का आधा है। प्रश्न में π का जो मान दिया हो वही लें, या उत्तर में π बनाए रखें। क्षमता बदलते समय 1 litre = 1000 cm³ तथा 1 m³ = 1000 litres याद रखें।"
+        },
+        "formula": "Sphere: A = 4πr², V = 4πr³/3; hemisphere: TSA = 3πr², V = 2πr³/3",
+        "question": {
+          "en": "Is the hemisphere total area the same as its curved area?",
+          "hi": "क्या अर्धगोले का कुल क्षेत्रफल उसके वक्र क्षेत्रफल के बराबर है?"
+        },
+        "answer": {
+          "en": "No. Total area also includes the circular base πr².",
+          "hi": "नहीं। कुल क्षेत्रफल में वृत्ताकार आधार πr² भी जुड़ता है।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Find the total surface area and volume of a cuboid 4 cm × 3 cm × 2 cm.",
+          "hi": "4 cm × 3 cm × 2 cm घनाभ का कुल पृष्ठीय क्षेत्रफल और आयतन निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Given l = 4, b = 3, h = 2 cm.",
+            "hi": "दिया है l = 4, b = 3, h = 2 cm।"
+          },
+          {
+            "en": "TSA = 2(4×3 + 3×2 + 2×4) = 2(12+6+8).",
+            "hi": "TSA = 2(4×3 + 3×2 + 2×4) = 2(12+6+8)।"
+          },
+          {
+            "en": "V = 4×3×2.",
+            "hi": "V = 4×3×2।"
+          }
+        ],
+        "answer": {
+          "en": "TSA = 52 cm²; V = 24 cm³.",
+          "hi": "TSA = 52 cm²; V = 24 cm³।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "Find the volume and total surface area of a cylinder with r = 7 cm and h = 10 cm. Use π = 22/7.",
+          "hi": "r = 7 cm, h = 10 cm वाले बेलन का आयतन और कुल क्षेत्रफल निकालें। π = 22/7 लें।"
+        },
+        "steps": [
+          {
+            "en": "V = πr²h = (22/7)×49×10.",
+            "hi": "V = πr²h = (22/7)×49×10।"
+          },
+          {
+            "en": "TSA = 2πr(h+r) = 2×(22/7)×7×17.",
+            "hi": "TSA = 2πr(h+r) = 2×(22/7)×7×17।"
+          },
+          {
+            "en": "Keep square units for area and cubic units for volume.",
+            "hi": "क्षेत्रफल की वर्ग और आयतन की घन इकाइयाँ रखें।"
+          }
+        ],
+        "answer": {
+          "en": "V = 1540 cm³; TSA = 748 cm².",
+          "hi": "V = 1540 cm³; TSA = 748 cm²।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "A cone has r = 3 cm and h = 4 cm. Find slant height, total area and volume in exact π form.",
+          "hi": "शंकु में r = 3 cm और h = 4 cm है। तिर्यक ऊँचाई, कुल क्षेत्रफल और आयतन सही π रूप में निकालें।"
+        },
+        "steps": [
+          {
+            "en": "l = √(3²+4²) = 5 cm.",
+            "hi": "l = √(3²+4²) = 5 cm।"
+          },
+          {
+            "en": "TSA = πr(l+r) = π×3×(5+3) = 24π cm².",
+            "hi": "TSA = πr(l+r) = π×3×(5+3) = 24π cm²।"
+          },
+          {
+            "en": "V = πr²h/3 = π×9×4/3 = 12π cm³.",
+            "hi": "V = πr²h/3 = π×9×4/3 = 12π cm³।"
+          }
+        ],
+        "answer": {
+          "en": "l = 5 cm; TSA = 24π cm²; V = 12π cm³.",
+          "hi": "l = 5 cm; TSA = 24π cm²; V = 12π cm³।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "A cuboid volume is:",
+          "hi": "घनाभ का आयतन है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "l+b+h",
+              "hi": "l+b+h"
+            },
+            "reason": {
+              "en": "Adding dimensions does not give volume.",
+              "hi": "विमाएँ जोड़ने से आयतन नहीं मिलता।"
+            }
+          },
+          {
+            "text": {
+              "en": "lbh",
+              "hi": "lbh"
+            },
+            "reason": {
+              "en": "Volume is the product of the three perpendicular dimensions.",
+              "hi": "आयतन 3 लंबवत विमाओं का गुणनफल है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2(lb+bh+hl)",
+              "hi": "2(lb+bh+hl)"
+            },
+            "reason": {
+              "en": "This is total surface area.",
+              "hi": "यह कुल पृष्ठीय क्षेत्रफल है।"
+            }
+          },
+          {
+            "text": {
+              "en": "4(l+b+h)",
+              "hi": "4(l+b+h)"
+            },
+            "reason": {
+              "en": "This is the total length of all edges.",
+              "hi": "यह सभी किनारों की कुल लंबाई है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "A cube of side 2 cm has total surface area:",
+          "hi": "2 cm भुजा वाले घन का कुल क्षेत्रफल:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "8 cm²",
+              "hi": "8 cm²"
+            },
+            "reason": {
+              "en": "8 is its volume in cm³, not its area.",
+              "hi": "8 उसका cm³ में आयतन है, क्षेत्रफल नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "12 cm²",
+              "hi": "12 cm²"
+            },
+            "reason": {
+              "en": "There are 6 square faces, each of area 4 cm².",
+              "hi": "6 वर्गाकार फलक हैं, प्रत्येक का क्षेत्रफल 4 cm² है।"
+            }
+          },
+          {
+            "text": {
+              "en": "24 cm²",
+              "hi": "24 cm²"
+            },
+            "reason": {
+              "en": "TSA = 6×2² = 24 cm².",
+              "hi": "TSA = 6×2² = 24 cm²।"
+            }
+          },
+          {
+            "text": {
+              "en": "4 cm²",
+              "hi": "4 cm²"
+            },
+            "reason": {
+              "en": "4 cm² is the area of one face.",
+              "hi": "4 cm² केवल 1 फलक का क्षेत्रफल है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "The curved surface area of a cylinder is:",
+          "hi": "बेलन का वक्र पृष्ठीय क्षेत्रफल:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "2πrh",
+              "hi": "2πrh"
+            },
+            "reason": {
+              "en": "Unrolling gives a rectangle of sides 2πr and h.",
+              "hi": "खोलने पर 2πr और h भुजाओं का आयत मिलता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "πr²h",
+              "hi": "πr²h"
+            },
+            "reason": {
+              "en": "This is cylinder volume.",
+              "hi": "यह बेलन का आयतन है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2πr²",
+              "hi": "2πr²"
+            },
+            "reason": {
+              "en": "This is the combined area of the two bases only.",
+              "hi": "यह केवल 2 आधारों का संयुक्त क्षेत्रफल है।"
+            }
+          },
+          {
+            "text": {
+              "en": "4πr²",
+              "hi": "4πr²"
+            },
+            "reason": {
+              "en": "This is sphere surface area.",
+              "hi": "यह गोले का पृष्ठीय क्षेत्रफल है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "A cone and cylinder have the same base and height. Cone volume is:",
+          "hi": "शंकु और बेलन का आधार तथा ऊँचाई समान है। शंकु का आयतन:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Equal to the cylinder",
+              "hi": "बेलन के बराबर"
+            },
+            "reason": {
+              "en": "The cone volume includes a factor 1/3.",
+              "hi": "शंकु के आयतन में 1/3 गुणक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Twice the cylinder",
+              "hi": "बेलन का दोगुना"
+            },
+            "reason": {
+              "en": "A cone fills less than this matching cylinder.",
+              "hi": "शंकु इस संगत बेलन से कम जगह घेरता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Half the cylinder",
+              "hi": "बेलन का आधा"
+            },
+            "reason": {
+              "en": "The factor is 1/3, not 1/2.",
+              "hi": "गुणक 1/3 है, 1/2 नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "One third of the cylinder",
+              "hi": "बेलन का 1/3"
+            },
+            "reason": {
+              "en": "V(cone) = πr²h/3.",
+              "hi": "V(शंकु) = πr²h/3।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "A right cone has r = 6 cm, h = 8 cm. Its slant height is:",
+          "hi": "लंब शंकु में r = 6 cm, h = 8 cm है। तिर्यक ऊँचाई:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "14 cm",
+              "hi": "14 cm"
+            },
+            "reason": {
+              "en": "Use Pythagoras rather than adding r and h.",
+              "hi": "r और h जोड़ने के बजाय पाइथागोरस लें।"
+            }
+          },
+          {
+            "text": {
+              "en": "10 cm",
+              "hi": "10 cm"
+            },
+            "reason": {
+              "en": "l = √(36+64) = 10 cm.",
+              "hi": "l = √(36+64) = 10 cm।"
+            }
+          },
+          {
+            "text": {
+              "en": "2 cm",
+              "hi": "2 cm"
+            },
+            "reason": {
+              "en": "Subtracting height and radius is not this relation.",
+              "hi": "ऊँचाई और त्रिज्या का अंतर यह संबंध नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "48 cm",
+              "hi": "48 cm"
+            },
+            "reason": {
+              "en": "The product rh is not the slant height.",
+              "hi": "rh का गुणनफल तिर्यक ऊँचाई नहीं है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "A sphere surface area is:",
+          "hi": "गोले का पृष्ठीय क्षेत्रफल:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "4πr²",
+              "hi": "4πr²"
+            },
+            "reason": {
+              "en": "This is the sphere area formula.",
+              "hi": "यह गोले के क्षेत्रफल का सूत्र है।"
+            }
+          },
+          {
+            "text": {
+              "en": "πr²",
+              "hi": "πr²"
+            },
+            "reason": {
+              "en": "This is a circular disc area.",
+              "hi": "यह वृत्ताकार चकती का क्षेत्रफल है।"
+            }
+          },
+          {
+            "text": {
+              "en": "4πr³/3",
+              "hi": "4πr³/3"
+            },
+            "reason": {
+              "en": "This is sphere volume.",
+              "hi": "यह गोले का आयतन है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2πrh",
+              "hi": "2πrh"
+            },
+            "reason": {
+              "en": "This is cylinder curved area.",
+              "hi": "यह बेलन का वक्र क्षेत्रफल है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "The total area of a hemisphere including its base is:",
+          "hi": "आधार सहित अर्धगोले का कुल क्षेत्रफल:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "2πr²",
+              "hi": "2πr²"
+            },
+            "reason": {
+              "en": "2πr² excludes the flat base.",
+              "hi": "2πr² में सपाट आधार शामिल नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "4πr²",
+              "hi": "4πr²"
+            },
+            "reason": {
+              "en": "4πr² is the full sphere surface.",
+              "hi": "4πr² पूरे गोले का क्षेत्रफल है।"
+            }
+          },
+          {
+            "text": {
+              "en": "3πr²",
+              "hi": "3πr²"
+            },
+            "reason": {
+              "en": "Curved area 2πr² plus base πr² gives 3πr².",
+              "hi": "वक्र क्षेत्रफल 2πr² और आधार πr² जोड़ने पर 3πr²।"
+            }
+          },
+          {
+            "text": {
+              "en": "πr³",
+              "hi": "πr³"
+            },
+            "reason": {
+              "en": "A cubic-length expression cannot be an area.",
+              "hi": "घन लंबाई वाला व्यंजक क्षेत्रफल नहीं हो सकता।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "1 litre equals:",
+          "hi": "1 litre बराबर है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "100 cm³",
+              "hi": "100 cm³"
+            },
+            "reason": {
+              "en": "This is one tenth of a litre.",
+              "hi": "यह litre का 1/10 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "10000 cm³",
+              "hi": "10000 cm³"
+            },
+            "reason": {
+              "en": "10000 cm³ is 10 litres.",
+              "hi": "10000 cm³ का अर्थ 10 litres है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1 cm³",
+              "hi": "1 cm³"
+            },
+            "reason": {
+              "en": "1 cm³ is 1 millilitre.",
+              "hi": "1 cm³ का अर्थ 1 millilitre है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1000 cm³",
+              "hi": "1000 cm³"
+            },
+            "reason": {
+              "en": "A litre is 1000 cubic centimetres.",
+              "hi": "1 litre में 1000 घन सेंटीमीटर होते हैं।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "A cylinder has diameter 8 cm. Its radius is:",
+          "hi": "बेलन का व्यास 8 cm है। त्रिज्या:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "16 cm",
+              "hi": "16 cm"
+            },
+            "reason": {
+              "en": "The radius is half, not twice, the diameter.",
+              "hi": "त्रिज्या व्यास की आधी है, दोगुनी नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "4 cm",
+              "hi": "4 cm"
+            },
+            "reason": {
+              "en": "r = d/2 = 8/2 = 4 cm.",
+              "hi": "r = d/2 = 8/2 = 4 cm।"
+            }
+          },
+          {
+            "text": {
+              "en": "8 cm",
+              "hi": "8 cm"
+            },
+            "reason": {
+              "en": "8 cm is the given diameter.",
+              "hi": "8 cm दिया हुआ व्यास है।"
+            }
+          },
+          {
+            "text": {
+              "en": "64 cm",
+              "hi": "64 cm"
+            },
+            "reason": {
+              "en": "Squaring a diameter does not find radius.",
+              "hi": "व्यास का वर्ग त्रिज्या नहीं देता।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "If every dimension of a solid is doubled, its volume becomes:",
+          "hi": "ठोस की हर विमा दोगुनी हो तो आयतन हो जाता है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "8 times",
+              "hi": "8 गुना"
+            },
+            "reason": {
+              "en": "Volume scales as the cube of the scale factor: 2³ = 8.",
+              "hi": "आयतन पैमाने के घन से बदलता है: 2³ = 8।"
+            }
+          },
+          {
+            "text": {
+              "en": "2 times",
+              "hi": "2 गुना"
+            },
+            "reason": {
+              "en": "That is the length scale, not the volume scale.",
+              "hi": "यह लंबाई का पैमाना है, आयतन का नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "4 times",
+              "hi": "4 गुना"
+            },
+            "reason": {
+              "en": "4 is the surface-area scale factor.",
+              "hi": "4 पृष्ठीय क्षेत्रफल का पैमाना है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Unchanged",
+              "hi": "अपरिवर्तित"
+            },
+            "reason": {
+              "en": "Larger dimensions change the volume.",
+              "hi": "बड़ी विमाओं से आयतन बदलता है।"
+            }
+          }
+        ],
+        "correct": 0
+      }
+    ],
+    "revision": [
+      {
+        "en": "Area uses square units; volume uses cubic units.",
+        "hi": "क्षेत्रफल में वर्ग और आयतन में घन इकाइयाँ लगती हैं।"
+      },
+      {
+        "en": "Cuboid volume is lbh.",
+        "hi": "घनाभ का आयतन lbh है।"
+      },
+      {
+        "en": "Cylinder volume is πr²h and cone volume is πr²h/3.",
+        "hi": "बेलन का आयतन πr²h और शंकु का πr²h/3 है।"
+      },
+      {
+        "en": "Cone slant height differs from vertical height.",
+        "hi": "शंकु की तिर्यक ऊँचाई और लंबवत ऊँचाई अलग हैं।"
+      },
+      {
+        "en": "Add flat bases for total area; match the π value and units to the question.",
+        "hi": "कुल क्षेत्रफल में सपाट आधार जोड़ें; π का मान और इकाइयाँ प्रश्न के अनुसार लें।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Dimensions → face / curved areas → total area; base area × height → cylinder → one-third cone; radius → sphere area and volume",
+      "hi": "विमाएँ → फलक / वक्र क्षेत्रफल → कुल क्षेत्रफल; आधार क्षेत्रफल × ऊँचाई → बेलन → 1/3 शंकु; त्रिज्या → गोले का क्षेत्रफल और आयतन"
+    }
+  },
+  {
+    "id": 14,
+    "title": {
+      "en": "Statistics",
+      "hi": "सांख्यिकी"
+    },
+    "engine": "graph",
+    "goal": {
+      "en": "Turn frequency data into graphs and interpret mean, median and mode correctly.",
+      "hi": "बारंबारता के आँकड़ों से आलेख बनाएँ और माध्य, माध्यक तथा बहुलक समझें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Data and frequency tables",
+          "hi": "आँकड़े और बारंबारता सारणी"
+        },
+        "body": {
+          "en": "Data are recorded observations. A frequency counts how often a value or class occurs. For discrete data, list distinct numerical values and their nonnegative integer frequencies. Total frequency N is the number of observations, not the sum of the values. Check entries for missing values and distinguish a zero frequency from a missing record.",
+          "hi": "आँकड़े (Data) लिखे गए प्रेक्षण हैं। बारंबारता (Frequency) बताती है कि कोई मान या वर्ग कितनी बार आया। असतत आँकड़ों (Discrete data) में अलग संख्यात्मक मान और उनकी शून्य या धनात्मक पूर्णांक बारंबारताएँ लिखें। कुल बारंबारता N प्रेक्षणों की संख्या है, मानों का योग नहीं। 0 बारंबारता का अर्थ वह मान आया ही नहीं; यह गायब प्रविष्टि से अलग है। तालिका बनाते समय इकाई और शीर्षक भी लिखें।"
+        },
+        "formula": "N = Σf",
+        "question": {
+          "en": "Values have frequencies 2, 3 and 5. How many observations are there?",
+          "hi": "मानों की बारंबारताएँ 2, 3 और 5 हैं। कुल प्रेक्षण कितने?"
+        },
+        "answer": {
+          "en": "10 observations.",
+          "hi": "N = 2+3+5 = 10 प्रेक्षण।"
+        }
+      },
+      {
+        "title": {
+          "en": "Bar charts and histograms",
+          "hi": "दंड आलेख और आयतचित्र"
+        },
+        "body": {
+          "en": "A bar chart represents categories or discrete values with separated bars of equal width. A histogram represents continuous class intervals with touching rectangles. For equal class widths, heights may show frequency. For unequal widths, rectangle area must represent frequency, so use frequency density f/class width or an equivalent adjusted frequency scale. Do not treat isolated discrete values as continuous classes without defining intervals.",
+          "hi": "दंड आलेख (Bar chart) में श्रेणियों या असतत मानों के अलग-अलग, समान चौड़ाई वाले दंड बनते हैं। आयतचित्र (Histogram) में सतत वर्ग-अंतरालों के आयत सटे होते हैं। बराबर वर्ग-चौड़ाई पर ऊँचाई बारंबारता दिखा सकती है। असमान चौड़ाई पर आयत का क्षेत्रफल बारंबारता के अनुपात में चाहिए, इसलिए ऊँचाई के लिए बारंबारता घनत्व f/वर्ग-चौड़ाई या समतुल्य समायोजित बारंबारता लें। स्पष्ट वर्ग-अंतराल दिए बिना असतत मानों को सतत वर्ग न मानें।"
+        },
+        "formula": "Frequency density = frequency / class width",
+        "question": {
+          "en": "Why do unequal-width histogram classes need adjusted heights?",
+          "hi": "असमान चौड़ाई के आयतचित्र वर्गों में समायोजित ऊँचाई क्यों चाहिए?"
+        },
+        "answer": {
+          "en": "So that rectangle area, rather than height alone, represents frequency.",
+          "hi": "ताकि केवल ऊँचाई नहीं, आयत का क्षेत्रफल बारंबारता दिखाए।"
+        }
+      },
+      {
+        "title": {
+          "en": "Arithmetic mean and median",
+          "hi": "अंकगणितीय माध्य और माध्यक"
+        },
+        "body": {
+          "en": "The arithmetic mean is the sum of observations divided by their count. For a discrete frequency table, use Σfx/Σf. The median is the central observation after sorting: for odd N take position (N+1)/2; for even N average positions N/2 and N/2+1. The mean can be strongly affected by an extreme value. A grouped-table midpoint mean is an estimate, not an exact recovery of original data.",
+          "hi": "अंकगणितीय माध्य (Arithmetic mean) प्रेक्षणों का योग उनकी संख्या से भाग देने पर मिलता है। असतत बारंबारता सारणी में Σfx/Σf लें। माध्यक (Median) के लिए आँकड़ों को क्रम में रखें। विषम N में (N+1)/2वाँ मान और सम N में N/2वें तथा अगले मान का औसत लें। बहुत बड़ा या छोटा मान माध्य को अधिक बदल सकता है। समूहित सारणी में वर्ग-मध्यबिंदु से निकला माध्य अनुमान है; मूल मानों का सटीक पुनर्निर्माण नहीं।"
+        },
+        "formula": "Mean = Σfx/Σf; median uses ordered positions",
+        "question": {
+          "en": "Find the median of 2, 5, 9.",
+          "hi": "2, 5, 9 का माध्यक निकालें।"
+        },
+        "answer": {
+          "en": "5.",
+          "hi": "बीच का क्रमित मान 5 है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Mode and honest interpretation",
+          "hi": "बहुलक और सही व्याख्या"
+        },
+        "body": {
+          "en": "The mode is the value with highest frequency. Data may have no unique mode or may have several equally most frequent values; do not force a single result. Mean, median and mode describe different features. A graph should show a title, units and labelled axes, with a scale that does not mislead. Frequency tables must contain at least one observation before numerical summaries can be computed.",
+          "hi": "बहुलक (Mode) सबसे अधिक बार आने वाला मान है। कई मानों की सबसे अधिक बारंबारता बराबर हो सकती है, या कोई अनूठा बहुलक नहीं हो सकता; जबरन 1 मान न चुनें। माध्य, माध्यक और बहुलक अलग विशेषताएँ बताते हैं। आलेख का शीर्षक, इकाइयाँ और अक्षों के नाम लिखें। पैमाना भ्रामक न हो। कुल बारंबारता 0 हो तो माध्य या माध्यक नहीं निकाल सकते। तालिका बदलते समय पहले उसकी संगति और फिर सारांश देखें।"
+        },
+        "formula": "Mode = value(s) with maximum frequency",
+        "question": {
+          "en": "For 1, 2, 2, 3, what is the mode?",
+          "hi": "1, 2, 2, 3 का बहुलक क्या है?"
+        },
+        "answer": {
+          "en": "2.",
+          "hi": "2 सबसे अधिक 2 बार आया है।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Find the mean of 4, 6 and 8.",
+          "hi": "4, 6 और 8 का माध्य निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Count N = 3 and add the values: 4+6+8 = 18.",
+            "hi": "N = 3 है और योग 4+6+8 = 18 है।"
+          },
+          {
+            "en": "Mean = sum/N = 18/3.",
+            "hi": "माध्य = योग/N = 18/3।"
+          }
+        ],
+        "answer": {
+          "en": "6.",
+          "hi": "6।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "Values 1, 2, 3 have frequencies 2, 3, 1. Find mean, median and mode.",
+          "hi": "मान 1, 2, 3 की बारंबारताएँ 2, 3, 1 हैं। माध्य, माध्यक और बहुलक निकालें।"
+        },
+        "steps": [
+          {
+            "en": "N = 2+3+1 = 6; Σfx = 1×2 + 2×3 + 3×1 = 11.",
+            "hi": "N = 2+3+1 = 6; Σfx = 1×2 + 2×3 + 3×1 = 11।"
+          },
+          {
+            "en": "Mean = 11/6. Ordered values are 1,1,2,2,2,3.",
+            "hi": "माध्य = 11/6। क्रमित मान 1,1,2,2,2,3 हैं।"
+          },
+          {
+            "en": "Median = average of positions 3 and 4 = 2. The highest frequency is 3 at value 2.",
+            "hi": "माध्यक = 3वें और 4थे मान का औसत = 2। सबसे अधिक बारंबारता 3, मान 2 पर है।"
+          }
+        ],
+        "answer": {
+          "en": "Mean = 11/6 ≈ 1.833; median = 2; mode = 2.",
+          "hi": "माध्य = 11/6 ≈ 1.833; माध्यक = 2; बहुलक = 2।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "Continuous classes 0–10 and 10–30 have frequencies 20 and 30. What histogram heights represent frequency density?",
+          "hi": "सतत वर्ग 0–10 और 10–30 की बारंबारताएँ 20 और 30 हैं। बारंबारता घनत्व की आयतचित्र ऊँचाइयाँ निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Class widths are 10 and 20.",
+            "hi": "वर्ग-चौड़ाइयाँ 10 और 20 हैं।"
+          },
+          {
+            "en": "Density heights = 20/10 = 2 and 30/20 = 1.5.",
+            "hi": "घनत्व ऊँचाइयाँ = 20/10 = 2 तथा 30/20 = 1.5।"
+          },
+          {
+            "en": "The rectangle areas are 10×2 = 20 and 20×1.5 = 30, matching frequencies.",
+            "hi": "आयतों के क्षेत्रफल 10×2 = 20 तथा 20×1.5 = 30 हैं, जो बारंबारताओं के बराबर हैं।"
+          }
+        ],
+        "answer": {
+          "en": "Heights: 2 and 1.5 observations per unit interval.",
+          "hi": "ऊँचाइयाँ: 2 और 1.5 प्रेक्षण प्रति इकाई अंतराल।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "A frequency records:",
+          "hi": "बारंबारता बताती है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "The value divided by 2",
+              "hi": "मान का आधा"
+            },
+            "reason": {
+              "en": "Halving a value is not counting occurrences.",
+              "hi": "मान का आधा करना प्रेक्षण गिनना नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "How often a value or class occurs",
+              "hi": "कोई मान या वर्ग कितनी बार आया"
+            },
+            "reason": {
+              "en": "Frequency is an occurrence count.",
+              "hi": "बारंबारता आने की संख्या है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always the largest data value",
+              "hi": "हमेशा सबसे बड़ा मान"
+            },
+            "reason": {
+              "en": "A maximum value and its frequency are different.",
+              "hi": "अधिकतम मान और उसकी बारंबारता अलग हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "The graph colour",
+              "hi": "आलेख का रंग"
+            },
+            "reason": {
+              "en": "Colour is a display choice, not a frequency.",
+              "hi": "रंग प्रस्तुति का चुनाव है, बारंबारता नहीं।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "The mean of 2, 4, 6 is:",
+          "hi": "2, 4, 6 का माध्य:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "12",
+              "hi": "12"
+            },
+            "reason": {
+              "en": "12 is the sum before division.",
+              "hi": "12 भाग देने से पहले का योग है।"
+            }
+          },
+          {
+            "text": {
+              "en": "6",
+              "hi": "6"
+            },
+            "reason": {
+              "en": "6 is the maximum observation.",
+              "hi": "6 अधिकतम प्रेक्षण है।"
+            }
+          },
+          {
+            "text": {
+              "en": "4",
+              "hi": "4"
+            },
+            "reason": {
+              "en": "(2+4+6)/3 = 4.",
+              "hi": "(2+4+6)/3 = 4।"
+            }
+          },
+          {
+            "text": {
+              "en": "3",
+              "hi": "3"
+            },
+            "reason": {
+              "en": "3 is the observation count.",
+              "hi": "3 प्रेक्षणों की संख्या है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Before finding a median, data should be:",
+          "hi": "माध्यक निकालने से पहले आँकड़े:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Ordered by value",
+              "hi": "मान के क्रम में रखें"
+            },
+            "reason": {
+              "en": "Median depends on middle position in ordered data.",
+              "hi": "माध्यक क्रमित आँकड़ों की बीच वाली स्थिति से मिलता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Multiplied together",
+              "hi": "आपस में गुणा करें"
+            },
+            "reason": {
+              "en": "A product does not locate the central observation.",
+              "hi": "गुणनफल केंद्रीय प्रेक्षण नहीं बताता।"
+            }
+          },
+          {
+            "text": {
+              "en": "All squared",
+              "hi": "सभी का वर्ग लें"
+            },
+            "reason": {
+              "en": "Squaring changes the data.",
+              "hi": "वर्ग लेने से आँकड़े बदल जाते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Replaced by their frequencies",
+              "hi": "केवल बारंबारताओं से बदलें"
+            },
+            "reason": {
+              "en": "Values must remain associated with their counts.",
+              "hi": "मान और उनकी गिनती का संबंध बना रहना चाहिए।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Find the median of 1, 3, 7, 9.",
+          "hi": "1, 3, 7, 9 का माध्यक:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "3",
+              "hi": "3"
+            },
+            "reason": {
+              "en": "For even N, use both central values.",
+              "hi": "सम N में दोनों केंद्रीय मान लेते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "7",
+              "hi": "7"
+            },
+            "reason": {
+              "en": "7 is only one of the two middle values.",
+              "hi": "7 केवल 2 मध्य मानों में से 1 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "4",
+              "hi": "4"
+            },
+            "reason": {
+              "en": "Averaging 3 and 7 gives 5.",
+              "hi": "3 और 7 का औसत 5 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "5",
+              "hi": "5"
+            },
+            "reason": {
+              "en": "Median = (3+7)/2 = 5.",
+              "hi": "माध्यक = (3+7)/2 = 5।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "The mode of 2, 3, 3, 5, 5, 5 is:",
+          "hi": "2, 3, 3, 5, 5, 5 का बहुलक:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "3",
+              "hi": "3"
+            },
+            "reason": {
+              "en": "3 occurs twice, fewer than 5.",
+              "hi": "3 केवल 2 बार आता है, 5 से कम।"
+            }
+          },
+          {
+            "text": {
+              "en": "5",
+              "hi": "5"
+            },
+            "reason": {
+              "en": "5 occurs most often, 3 times.",
+              "hi": "5 सबसे अधिक 3 बार आता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2",
+              "hi": "2"
+            },
+            "reason": {
+              "en": "2 occurs only once.",
+              "hi": "2 केवल 1 बार आता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "23",
+              "hi": "23"
+            },
+            "reason": {
+              "en": "23 is the sum, not the most frequent value.",
+              "hi": "23 योग है, सबसे अधिक आने वाला मान नहीं।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "For a discrete table, the arithmetic mean is:",
+          "hi": "असतत बारंबारता सारणी का माध्य:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Σfx/Σf",
+              "hi": "Σfx/Σf"
+            },
+            "reason": {
+              "en": "Weight each value by its frequency, then divide by the total count.",
+              "hi": "हर मान को बारंबारता से गुणा करके कुल गिनती से भाग दें।"
+            }
+          },
+          {
+            "text": {
+              "en": "Σf/Σfx",
+              "hi": "Σf/Σfx"
+            },
+            "reason": {
+              "en": "This reverses the required ratio.",
+              "hi": "यह जरूरी अनुपात का उलटा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Σx without division",
+              "hi": "बिना भाग दिए Σx"
+            },
+            "reason": {
+              "en": "The count must be included in the calculation.",
+              "hi": "गणना में प्रेक्षणों की संख्या भी जरूरी है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Largest frequency",
+              "hi": "सबसे अधिक बारंबारता"
+            },
+            "reason": {
+              "en": "This helps identify a mode, not a mean.",
+              "hi": "इससे बहुलक पहचानते हैं, माध्य नहीं।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Which graph is suited to continuous class intervals?",
+          "hi": "सतत वर्ग-अंतरालों के लिए कौन-सा आलेख उपयुक्त है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Only a pie chart",
+              "hi": "केवल वृत्त आलेख"
+            },
+            "reason": {
+              "en": "A pie chart is not the interval-based graph requested.",
+              "hi": "वृत्त आलेख यहाँ माँगा वर्ग-अंतराल वाला आलेख नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "A number line with no bars",
+              "hi": "बिना दंड की संख्या रेखा"
+            },
+            "reason": {
+              "en": "A bare number line does not show interval frequencies.",
+              "hi": "केवल संख्या रेखा अंतराल की बारंबारता नहीं दिखाती।"
+            }
+          },
+          {
+            "text": {
+              "en": "Histogram",
+              "hi": "आयतचित्र"
+            },
+            "reason": {
+              "en": "Touching rectangles represent continuous class intervals.",
+              "hi": "सटे आयत सतत वर्ग-अंतराल दिखाते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "A compass diagram",
+              "hi": "परकार का चित्र"
+            },
+            "reason": {
+              "en": "Compass diagrams construct geometry rather than frequency graphs.",
+              "hi": "परकार के चित्र ज्यामितीय रचना हैं, बारंबारता आलेख नहीं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "For unequal-width histogram bins, which quantity should be proportional to frequency?",
+          "hi": "असमान चौड़ाई के आयतचित्र वर्गों में कौन-सी मात्रा बारंबारता के अनुपात में हो?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Width alone",
+              "hi": "केवल चौड़ाई"
+            },
+            "reason": {
+              "en": "Width describes the class interval.",
+              "hi": "चौड़ाई वर्ग-अंतराल बताती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Height alone always",
+              "hi": "हमेशा केवल ऊँचाई"
+            },
+            "reason": {
+              "en": "Height must be adjusted for unequal widths.",
+              "hi": "असमान चौड़ाई पर ऊँचाई समायोजित करनी होती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Bar colour",
+              "hi": "दंड का रंग"
+            },
+            "reason": {
+              "en": "Colour has no numerical proportionality.",
+              "hi": "रंग का ऐसा संख्यात्मक अनुपात नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Rectangle area",
+              "hi": "आयत का क्षेत्रफल"
+            },
+            "reason": {
+              "en": "Using height f/width makes area equal to frequency.",
+              "hi": "ऊँचाई f/चौड़ाई लेने पर क्षेत्रफल बारंबारता के बराबर होता है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "A dataset has total frequency zero. Its mean is:",
+          "hi": "आँकड़ों की कुल बारंबारता 0 है। उसका माध्य:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "0 automatically",
+              "hi": "अपने आप 0"
+            },
+            "reason": {
+              "en": "With no observations, dividing by N = 0 is not valid.",
+              "hi": "प्रेक्षण न होने पर N = 0 से भाग देना मान्य नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Undefined",
+              "hi": "अपरिभाषित"
+            },
+            "reason": {
+              "en": "At least one observation is required.",
+              "hi": "कम से कम 1 प्रेक्षण चाहिए।"
+            }
+          },
+          {
+            "text": {
+              "en": "1 automatically",
+              "hi": "अपने आप 1"
+            },
+            "reason": {
+              "en": "No observation implies no such numerical mean.",
+              "hi": "प्रेक्षण न होने पर ऐसा संख्यात्मक माध्य नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "The largest entered value",
+              "hi": "सबसे बड़ा दर्ज मान"
+            },
+            "reason": {
+              "en": "A value with zero frequency is not an observed value.",
+              "hi": "शून्य बारंबारता वाला मान प्रेक्षित मान नहीं है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Which summary is usually most affected by one extremely large observation?",
+          "hi": "1 अत्यधिक बड़े प्रेक्षण से सामान्यतः कौन-सा सारांश सबसे अधिक प्रभावित होता है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Mean",
+              "hi": "माध्य"
+            },
+            "reason": {
+              "en": "The mean includes the full numerical size of every observation.",
+              "hi": "माध्य हर प्रेक्षण के पूरे संख्यात्मक मान को शामिल करता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Median position alone",
+              "hi": "केवल माध्यक की स्थिति"
+            },
+            "reason": {
+              "en": "Median uses central ordered values and is generally less sensitive.",
+              "hi": "माध्यक मध्य क्रमित मान लेता है और सामान्यतः कम प्रभावित होता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Mode count always unchanged to the same extent",
+              "hi": "बहुलक की गिनती उसी तरह"
+            },
+            "reason": {
+              "en": "Mode depends on repetition, not magnitude alone.",
+              "hi": "बहुलक दोहराव पर निर्भर है, केवल परिमाण पर नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Number of axis labels",
+              "hi": "अक्ष के नामों की संख्या"
+            },
+            "reason": {
+              "en": "Axis labels are presentation choices, not data summaries.",
+              "hi": "अक्ष के नाम प्रस्तुति हैं, आँकड़ों का सारांश नहीं।"
+            }
+          }
+        ],
+        "correct": 0
+      }
+    ],
+    "revision": [
+      {
+        "en": "Total frequency counts observations.",
+        "hi": "कुल बारंबारता प्रेक्षणों की संख्या है।"
+      },
+      {
+        "en": "Discrete mean is Σfx/Σf.",
+        "hi": "असतत माध्य Σfx/Σf है।"
+      },
+      {
+        "en": "Sort data before finding median; use two middle values for even N.",
+        "hi": "माध्यक से पहले क्रम दें; सम N पर बीच के 2 मान लें।"
+      },
+      {
+        "en": "Mode may be tied or not unique.",
+        "hi": "बहुलक बराबर बारंबारता वाले कई मान हो सकते हैं।"
+      },
+      {
+        "en": "In unequal-width histograms, area represents frequency.",
+        "hi": "असमान चौड़ाई के आयतचित्र में क्षेत्रफल बारंबारता दिखाता है।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Observations → frequency table → bar chart / histogram → mean, median, mode → interpretation",
+      "hi": "प्रेक्षण → बारंबारता सारणी → दंड आलेख / आयतचित्र → माध्य, माध्यक, बहुलक → व्याख्या"
+    }
+  },
+  {
+    "id": 15,
+    "title": {
+      "en": "Probability",
+      "hi": "प्रायिकता"
+    },
+    "engine": "graph",
+    "goal": {
+      "en": "Compare observed relative frequency with a fair coin or die’s theoretical probability.",
+      "hi": "प्रेक्षित सापेक्ष बारंबारता की तुलना निष्पक्ष सिक्के या पासे की सैद्धांतिक प्रायिकता से करें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Experiments, outcomes and events",
+          "hi": "प्रयोग, परिणाम और घटनाएँ"
+        },
+        "body": {
+          "en": "A random experiment has an uncertain individual result even though possible outcomes are known. Tossing a coin or rolling a die are examples. An event is a specified collection of outcomes, such as an even number on a die. A trial is one performance of the experiment. Define the event before counting its occurrence; changing the event after seeing data changes the question.",
+          "hi": "यादृच्छिक प्रयोग (Random experiment) में संभावित परिणाम ज्ञात होते हैं, पर किसी एक प्रयास का परिणाम पहले से निश्चित नहीं होता। सिक्का उछालना और पासा फेंकना उदाहरण हैं। घटना (Event) चुने हुए परिणामों का समूह है, जैसे पासे पर सम संख्या आना। प्रयोग को 1 बार करना प्रयास (Trial) है। गिनती से पहले घटना तय करें। परिणाम देखने के बाद घटना बदलने से प्रश्न बदल जाता है। निष्पक्षता किसी छोटे नमूने में बराबर गिनती की गारंटी नहीं है।"
+        },
+        "formula": "One trial → one recorded outcome",
+        "question": {
+          "en": "For a die, which outcomes make the event “even number”?",
+          "hi": "पासे पर “सम संख्या” घटना के परिणाम कौन-से हैं?"
+        },
+        "answer": {
+          "en": "2, 4 and 6.",
+          "hi": "2, 4 और 6।"
+        }
+      },
+      {
+        "title": {
+          "en": "Experimental probability",
+          "hi": "प्रायोगिक प्रायिकता"
+        },
+        "body": {
+          "en": "In this legacy Class 9 chapter, probability is introduced through experiments. After N trials, the experimental probability of E is the number of occurrences of E divided by N, provided N > 0. It lies from 0 to 1 inclusive. An event not observed in a small sample is not necessarily impossible; it may simply not have occurred yet.",
+          "hi": "इस पुराने 15-अध्याय क्रम में प्रायिकता (Probability) का परिचय प्रयोगों से है। N प्रयासों के बाद घटना E की प्रायोगिक प्रायिकता (Experimental probability), E के आने की संख्या को N से भाग देने पर मिलती है, जहाँ N > 0 हो। मान 0 और 1 के बीच, दोनों सहित, रहता है। छोटे नमूने में घटना न दिखने से वह असंभव सिद्ध नहीं होती। 0 प्रयास पर यह अनुपात नहीं निकाल सकते क्योंकि हर में 0 आएगा।"
+        },
+        "formula": "P_exp(E) = occurrences of E / total trials",
+        "question": {
+          "en": "Heads occurs 18 times in 30 tosses. Find experimental probability.",
+          "hi": "30 उछालों में चित 18 बार आया। प्रायोगिक प्रायिकता निकालें।"
+        },
+        "answer": {
+          "en": "18/30 = 0.6.",
+          "hi": "18/30 = 0.6।"
+        }
+      },
+      {
+        "title": {
+          "en": "Fair models: theoretical comparison",
+          "hi": "निष्पक्ष मॉडल: सैद्धांतिक तुलना"
+        },
+        "body": {
+          "en": "As an enrichment comparison, equally likely outcomes allow theoretical probability = favourable outcomes / total outcomes. A fair coin gives P(heads)=1/2. A fair six-sided die gives each face probability 1/6. The word fair is an assumption of the model. A simulator uses pseudorandom numbers to model independent trials; its output illustrates a model, not a proof of physical fairness.",
+          "hi": "पूरक समझ के लिए, समान संभावित परिणामों वाले निष्पक्ष मॉडल में सैद्धांतिक प्रायिकता (Theoretical probability) = अनुकूल परिणाम/कुल परिणाम है। निष्पक्ष सिक्के पर P(चित)=1/2 और निष्पक्ष 6-फलक पासे के हर अंक पर 1/6 है। निष्पक्षता मॉडल की धारणा है। सिमुलेटर छद्मयादृच्छिक संख्याओं से स्वतंत्र प्रयासों का मॉडल बनाता है। उसका आलेख भौतिक सिक्के की निष्पक्षता का प्रमाण नहीं है; वह तुलना में मदद करता है।"
+        },
+        "formula": "Fair coin: P(H) = 1/2; fair die: P(each face) = 1/6",
+        "question": {
+          "en": "For a fair die, what is P(number greater than 4)?",
+          "hi": "निष्पक्ष पासे पर 4 से बड़ी संख्या की प्रायिकता क्या है?"
+        },
+        "answer": {
+          "en": "2/6 = 1/3.",
+          "hi": "अनुकूल परिणाम 5, 6 हैं; 2/6 = 1/3।"
+        }
+      },
+      {
+        "title": {
+          "en": "Large samples and independence",
+          "hi": "बड़े नमूने और स्वतंत्रता"
+        },
+        "body": {
+          "en": "With many independent trials of an unchanged fair model, relative frequencies tend to settle near theoretical values. This is a tendency, not a promise of exact equality after any chosen N. A run of heads does not force tails next; each fair independent toss still has probability 1/2 for tails. When combining experiments, add occurrence counts and trial totals before forming the ratio.",
+          "hi": "एक ही निष्पक्ष मॉडल के बहुत से स्वतंत्र प्रयासों में सापेक्ष बारंबारता प्रायः सैद्धांतिक मान के आसपास स्थिर होती है। किसी निश्चित N के बाद ठीक बराबरी की गारंटी नहीं है। कई बार लगातार चित आने से अगली बार पट आना जरूरी नहीं; स्वतंत्र निष्पक्ष उछाल में पट की प्रायिकता फिर भी 1/2 रहती है। 2 प्रयोगों को मिलाते समय पहले घटना की गिनती और कुल प्रयास जोड़ें, फिर अनुपात बनाएँ। अलग आकार के नमूनों की प्रायिकताओं का साधारण औसत हमेशा सही संयुक्त अनुपात नहीं होता।"
+        },
+        "formula": "Combined P_exp = (k₁+k₂)/(N₁+N₂)",
+        "question": {
+          "en": "Do 10 fair tosses guarantee exactly 5 heads?",
+          "hi": "क्या निष्पक्ष सिक्के के 10 उछालों में ठीक 5 चित निश्चित हैं?"
+        },
+        "answer": {
+          "en": "No. Equal theoretical probabilities do not force equal finite counts.",
+          "hi": "नहीं। बराबर सैद्धांतिक प्रायिकताएँ सीमित प्रयासों में बराबर गिनती निश्चित नहीं करतीं।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "A coin shows heads 24 times in 40 tosses. Find its experimental probability of heads.",
+          "hi": "40 उछालों में चित 24 बार आया। चित की प्रायोगिक प्रायिकता निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Occurrences of heads k = 24; total trials N = 40.",
+            "hi": "चित की गिनती k = 24; कुल प्रयास N = 40।"
+          },
+          {
+            "en": "P_exp = k/N = 24/40.",
+            "hi": "P_exp = k/N = 24/40।"
+          },
+          {
+            "en": "Simplify to 3/5 = 0.6.",
+            "hi": "सरल करें: 3/5 = 0.6।"
+          }
+        ],
+        "answer": {
+          "en": "0.6, or 60%.",
+          "hi": "0.6, अर्थात 60%।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "A die is rolled 60 times with counts 8, 12, 9, 11, 10, 10 for faces 1–6. Find the experimental probability of an even face.",
+          "hi": "पासा 60 बार फेंका गया। 1–6 की गिनतियाँ 8, 12, 9, 11, 10, 10 हैं। सम अंक की प्रायोगिक प्रायिकता निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Even faces are 2, 4 and 6.",
+            "hi": "सम अंक 2, 4 और 6 हैं।"
+          },
+          {
+            "en": "Favourable count = 12+11+10 = 33.",
+            "hi": "अनुकूल गिनती = 12+11+10 = 33।"
+          },
+          {
+            "en": "P_exp = 33/60 = 11/20.",
+            "hi": "P_exp = 33/60 = 11/20।"
+          }
+        ],
+        "answer": {
+          "en": "0.55.",
+          "hi": "0.55।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "Experiment A gives 12 heads in 20 tosses; B gives 18 heads in 40 tosses. Find the combined experimental probability.",
+          "hi": "प्रयोग A में 20 में 12 चित और B में 40 में 18 चित आए। संयुक्त प्रायोगिक प्रायिकता निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Combine counts: 12+18 = 30 heads.",
+            "hi": "गिनतियाँ जोड़ें: 12+18 = 30 चित।"
+          },
+          {
+            "en": "Combine trials: 20+40 = 60 tosses.",
+            "hi": "प्रयास जोड़ें: 20+40 = 60 उछाल।"
+          },
+          {
+            "en": "P_exp = 30/60 = 1/2; do not simply average 0.6 and 0.45.",
+            "hi": "P_exp = 30/60 = 1/2; 0.6 और 0.45 का केवल साधारण औसत न लें।"
+          }
+        ],
+        "answer": {
+          "en": "0.5.",
+          "hi": "0.5।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "An experimental probability is:",
+          "hi": "प्रायोगिक प्रायिकता है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Total trials / favourable occurrences",
+              "hi": "कुल प्रयास / अनुकूल बार आए"
+            },
+            "reason": {
+              "en": "This reverses the required ratio.",
+              "hi": "यह जरूरी अनुपात का उलटा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Favourable occurrences / total trials",
+              "hi": "अनुकूल बार आए / कुल प्रयास"
+            },
+            "reason": {
+              "en": "Divide the event count by all trials, with N > 0.",
+              "hi": "N > 0 पर घटना की गिनती को कुल प्रयासों से भाग दें।"
+            }
+          },
+          {
+            "text": {
+              "en": "Favourable occurrences + total trials",
+              "hi": "अनुकूल गिनती + कुल प्रयास"
+            },
+            "reason": {
+              "en": "Adding counts does not produce a relative frequency.",
+              "hi": "गिनतियाँ जोड़ने से सापेक्ष बारंबारता नहीं मिलती।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always exactly 1/2",
+              "hi": "हमेशा ठीक 1/2"
+            },
+            "reason": {
+              "en": "The value depends on the event and observations.",
+              "hi": "मान घटना और प्रेक्षणों पर निर्भर है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Heads occurs 7 times in 10 tosses. P_exp(heads) is:",
+          "hi": "10 उछालों में चित 7 बार आया। P_exp(चित) है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "7",
+              "hi": "7"
+            },
+            "reason": {
+              "en": "An occurrence count alone is not a probability.",
+              "hi": "केवल घटना की गिनती प्रायिकता नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "10/7",
+              "hi": "10/7"
+            },
+            "reason": {
+              "en": "This exceeds 1 and reverses the ratio.",
+              "hi": "यह 1 से अधिक है और अनुपात उलटा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "0.7",
+              "hi": "0.7"
+            },
+            "reason": {
+              "en": "7/10 = 0.7.",
+              "hi": "7/10 = 0.7।"
+            }
+          },
+          {
+            "text": {
+              "en": "0.3",
+              "hi": "0.3"
+            },
+            "reason": {
+              "en": "0.3 is the observed fraction of tails.",
+              "hi": "0.3 देखे गए पट का अनुपात है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "For a fair six-sided die, the theoretical probability of 6 is:",
+          "hi": "निष्पक्ष 6-फलक पासे पर सैद्धांतिक P(6) है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "1/6",
+              "hi": "1/6"
+            },
+            "reason": {
+              "en": "One favourable face among 6 equally likely faces gives 1/6.",
+              "hi": "6 समान संभावित फलकों में 1 अनुकूल फलक है, इसलिए 1/6।"
+            }
+          },
+          {
+            "text": {
+              "en": "1/2",
+              "hi": "1/2"
+            },
+            "reason": {
+              "en": "1/2 describes three favourable die faces.",
+              "hi": "1/2 का अर्थ पासे पर 3 अनुकूल फलक होगा।"
+            }
+          },
+          {
+            "text": {
+              "en": "6",
+              "hi": "6"
+            },
+            "reason": {
+              "en": "6 is an outcome value, not its probability.",
+              "hi": "6 परिणाम का मान है, उसकी प्रायिकता नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "0",
+              "hi": "0"
+            },
+            "reason": {
+              "en": "A face labelled 6 is possible.",
+              "hi": "6 लिखा फलक संभव है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Which value cannot be a probability?",
+          "hi": "कौन-सा मान प्रायिकता नहीं हो सकता?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "0",
+              "hi": "0"
+            },
+            "reason": {
+              "en": "0 is allowed.",
+              "hi": "0 मान्य है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1",
+              "hi": "1"
+            },
+            "reason": {
+              "en": "1 is allowed.",
+              "hi": "1 मान्य है।"
+            }
+          },
+          {
+            "text": {
+              "en": "0.25",
+              "hi": "0.25"
+            },
+            "reason": {
+              "en": "0.25 lies between 0 and 1.",
+              "hi": "0.25, 0 और 1 के बीच है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1.2",
+              "hi": "1.2"
+            },
+            "reason": {
+              "en": "A probability cannot exceed 1.",
+              "hi": "प्रायिकता 1 से अधिक नहीं हो सकती।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "After 5 heads in a row, a fair independent coin has probability of tails on the next toss:",
+          "hi": "लगातार 5 चित के बाद स्वतंत्र निष्पक्ष सिक्के पर अगले उछाल में पट की प्रायिकता:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "1",
+              "hi": "1"
+            },
+            "reason": {
+              "en": "A previous run does not force the next result.",
+              "hi": "पिछले परिणाम अगला परिणाम अनिवार्य नहीं करते।"
+            }
+          },
+          {
+            "text": {
+              "en": "1/2",
+              "hi": "1/2"
+            },
+            "reason": {
+              "en": "Independence preserves the fair probability 1/2.",
+              "hi": "स्वतंत्रता के कारण निष्पक्ष प्रायिकता 1/2 रहती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "0",
+              "hi": "0"
+            },
+            "reason": {
+              "en": "Tails remains possible.",
+              "hi": "पट आना संभव रहता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "5/6",
+              "hi": "5/6"
+            },
+            "reason": {
+              "en": "Past heads do not change the next-toss model.",
+              "hi": "पिछले चित अगले उछाल का मॉडल नहीं बदलते।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "On a fair die, the theoretical probability of an even number is:",
+          "hi": "निष्पक्ष पासे पर सम संख्या की सैद्धांतिक प्रायिकता:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "1/2",
+              "hi": "1/2"
+            },
+            "reason": {
+              "en": "Even faces 2,4,6 give 3/6 = 1/2.",
+              "hi": "सम फलक 2,4,6 से 3/6 = 1/2 मिलता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1/6",
+              "hi": "1/6"
+            },
+            "reason": {
+              "en": "There are 3 even faces, not 1.",
+              "hi": "सम फलक 3 हैं, 1 नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "2/3",
+              "hi": "2/3"
+            },
+            "reason": {
+              "en": "Only half the faces are even.",
+              "hi": "केवल आधे फलक सम हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "1",
+              "hi": "1"
+            },
+            "reason": {
+              "en": "Odd faces are also possible.",
+              "hi": "विषम फलक भी संभव हैं।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "A fair coin is tossed 20 times. Which claim is correct?",
+          "hi": "निष्पक्ष सिक्का 20 बार उछाला गया। कौन-सा कथन सही है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Exactly 10 heads is guaranteed",
+              "hi": "ठीक 10 चित निश्चित हैं"
+            },
+            "reason": {
+              "en": "Fairness does not force exact finite counts.",
+              "hi": "निष्पक्षता सीमित प्रयासों में ठीक गिनती तय नहीं करती।"
+            }
+          },
+          {
+            "text": {
+              "en": "Heads cannot exceed 10",
+              "hi": "चित 10 से अधिक नहीं हो सकते"
+            },
+            "reason": {
+              "en": "More than 10 heads is possible.",
+              "hi": "10 से अधिक चित संभव हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "The head count can differ from 10",
+              "hi": "चित की गिनती 10 से अलग हो सकती है"
+            },
+            "reason": {
+              "en": "Random finite samples may be unbalanced.",
+              "hi": "यादृच्छिक सीमित नमूने असंतुलित हो सकते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Every second toss must be tails",
+              "hi": "हर दूसरा उछाल पट होगा"
+            },
+            "reason": {
+              "en": "Independent tosses do not alternate by a rule.",
+              "hi": "स्वतंत्र उछाल नियम से बारी-बारी नहीं आते।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "An event does not occur in 8 trials. What follows?",
+          "hi": "8 प्रयासों में घटना नहीं आई। क्या निष्कर्ष सही है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "It is proved impossible",
+              "hi": "वह असंभव सिद्ध हुई"
+            },
+            "reason": {
+              "en": "A small sample cannot establish impossibility by non-occurrence.",
+              "hi": "छोटे नमूने में न आना असंभवता सिद्ध नहीं करता।"
+            }
+          },
+          {
+            "text": {
+              "en": "Its theoretical probability is certainly 0",
+              "hi": "उसकी सैद्धांतिक प्रायिकता निश्चित 0 है"
+            },
+            "reason": {
+              "en": "The model probability need not equal a short sample frequency.",
+              "hi": "मॉडल प्रायिकता छोटे नमूने की बारंबारता के बराबर जरूरी नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "It must occur next",
+              "hi": "वह अगले प्रयास में जरूर आएगी"
+            },
+            "reason": {
+              "en": "No future occurrence is forced.",
+              "hi": "अगला परिणाम अनिवार्य नहीं होता।"
+            }
+          },
+          {
+            "text": {
+              "en": "Its experimental probability in that sample is 0",
+              "hi": "उस नमूने में उसकी प्रायोगिक प्रायिकता 0 है"
+            },
+            "reason": {
+              "en": "Observed count 0 divided by 8 equals 0.",
+              "hi": "प्रेक्षित गिनती 0 को 8 से भाग देने पर 0 है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "With zero trials, experimental probability is:",
+          "hi": "0 प्रयासों पर प्रायोगिक प्रायिकता:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Automatically 0",
+              "hi": "अपने आप 0"
+            },
+            "reason": {
+              "en": "The denominator is zero, so 0 is not a valid computed ratio.",
+              "hi": "हर 0 है, इसलिए 0 सही गणितीय अनुपात नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Undefined",
+              "hi": "अपरिभाषित"
+            },
+            "reason": {
+              "en": "At least one trial is needed before dividing the event count by N.",
+              "hi": "घटना की गिनती को N से भाग देने से पहले कम से कम 1 प्रयास चाहिए।"
+            }
+          },
+          {
+            "text": {
+              "en": "Automatically 1",
+              "hi": "अपने आप 1"
+            },
+            "reason": {
+              "en": "No trial does not mean certainty.",
+              "hi": "कोई प्रयास न होना निश्चितता नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always 1/2",
+              "hi": "हमेशा 1/2"
+            },
+            "reason": {
+              "en": "A theoretical coin value is not a computed experimental result.",
+              "hi": "सिक्के का सैद्धांतिक मान निकला हुआ प्रायोगिक परिणाम नहीं है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Two samples give 4 successes in 10 trials and 6 in 30 trials. The combined experimental probability is:",
+          "hi": "2 नमूनों में 10 में 4 और 30 में 6 सफलताएँ हैं। संयुक्त प्रायोगिक प्रायिकता:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "1/4",
+              "hi": "1/4"
+            },
+            "reason": {
+              "en": "Combined count = 10 and total trials = 40, so 10/40 = 1/4.",
+              "hi": "संयुक्त गिनती 10 और कुल प्रयास 40 हैं; 10/40 = 1/4।"
+            }
+          },
+          {
+            "text": {
+              "en": "3/10",
+              "hi": "3/10"
+            },
+            "reason": {
+              "en": "0.3 is the unweighted mean of 0.4 and 0.2, not the combined ratio.",
+              "hi": "0.3, 0.4 और 0.2 का साधारण औसत है, संयुक्त अनुपात नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "1/2",
+              "hi": "1/2"
+            },
+            "reason": {
+              "en": "There are 10 successes out of 40, not 20.",
+              "hi": "40 में 10 सफलताएँ हैं, 20 नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "2/3",
+              "hi": "2/3"
+            },
+            "reason": {
+              "en": "The combined count does not support 2/3.",
+              "hi": "संयुक्त गिनती से 2/3 नहीं मिलता।"
+            }
+          }
+        ],
+        "correct": 0
+      }
+    ],
+    "revision": [
+      {
+        "en": "Define the experiment and event before counting.",
+        "hi": "गिनती से पहले प्रयोग और घटना तय करें।"
+      },
+      {
+        "en": "Experimental probability is event count divided by total trials.",
+        "hi": "प्रायोगिक प्रायिकता घटना की गिनती/कुल प्रयास है।"
+      },
+      {
+        "en": "A probability lies in [0,1]; zero trials give no experimental ratio.",
+        "hi": "प्रायिकता [0,1] में है; 0 प्रयास पर प्रायोगिक अनुपात नहीं मिलता।"
+      },
+      {
+        "en": "Theoretical fair-model values are comparisons, not guarantees of finite counts.",
+        "hi": "निष्पक्ष मॉडल के सैद्धांतिक मान तुलना हैं, सीमित गिनती की गारंटी नहीं।"
+      },
+      {
+        "en": "Independent trials do not compensate for earlier streaks.",
+        "hi": "स्वतंत्र प्रयास पिछले लगातार परिणामों की भरपाई नहीं करते।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Random experiment → outcomes → event → repeated trials → relative frequency → comparison with a fair theoretical model",
+      "hi": "यादृच्छिक प्रयोग → परिणाम → घटना → दोहराए प्रयास → सापेक्ष बारंबारता → निष्पक्ष सैद्धांतिक मॉडल से तुलना"
+    }
+  }
+]

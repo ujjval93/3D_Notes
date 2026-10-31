@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,p,extra})=>{let F=p[0],s=p[1]??3,angle=Number(extra.angle??0),x=-1.2+s/10*2.4;g.line([-1.4,.5,0],[1.4,.5,0]);g.box(x,.15,0,.18,.18,.2,C.gold);let a=angle*Math.PI/180;g.arrow([x,-.12,0],[x+Math.cos(a)*F/20,-.12-Math.sin(a)*F/20,0],C.green);g.arrow([-1.2,.9,0],[x,.9,0],C.blue);return[read('Displacement','विस्थापन',s,'m'),read('Angle','कोण',angle,'°'),read('Work = Fs cosθ','कार्य = Fs cosθ',fmt(work(F,s,angle)),'J')];};

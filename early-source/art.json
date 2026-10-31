@@ -1,0 +1,1339 @@
+[
+  {
+    "id": "lkg-art-01",
+    "classId": "LKG",
+    "subject": "art",
+    "title": {
+      "en": "Lines and Little Marks",
+      "hi": "रेखाएँ और छोटे निशान"
+    },
+    "goal": {
+      "en": "Explore dots and different directions of line.",
+      "hi": "बिंदु और अलग दिशाओं की रेखाएँ बनाएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "A mark begins a picture",
+          "hi": "निशान से चित्र का आरंभ"
+        },
+        "body": {
+          "en": "A dot is a small mark. A line can grow when your hand moves. Look at a few dots and leave space around them. Your marks do not have to match another child’s marks.",
+          "hi": "बिंदु एक छोटा निशान है। हाथ चलाने पर रेखा बन सकती है। पहले कुछ बिंदु बनाएँ और उनके आसपास खाली जगह छोड़ें। सभी बिंदु एक ही आकार के होना जरूरी नहीं। अपने निशान देखें और उनके लिए कोई नाम सोचें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Move in different directions",
+          "hi": "अलग दिशाओं में चलें"
+        },
+        "body": {
+          "en": "Try a standing line, a sleeping line and a sloping line. These are friendly classroom names for directions. Move slowly, lift your hand, and begin a new line wherever you choose.",
+          "hi": "पहले खड़ी रेखा बनाएँ, फिर लेटी और तिरछी रेखा आजमाएँ। ये दिशाएँ पहचानने के आसान नाम हैं। धीरे हाथ चलाएँ, हाथ उठाएँ और नई जगह से शुरू करें। छोटी और लंबी रेखाओं को पास रखकर उनका अंतर देखें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Make your own arrangement",
+          "hi": "अपना सजाव बनाइए"
+        },
+        "body": {
+          "en": "Arrange dots and lines like rain, grass or a little road. Tell an adult what your picture might be. On paper, try a comfortable crayon; on the board, use a finger or the drawing controls.",
+          "hi": "बिंदु और रेखाएँ मिलाकर बारिश, घास या छोटा रास्ता सोचें। किसी बड़े को बताएँ कि आपके चित्र में क्या हो सकता है। कागज पर आराम से पकड़ा जाने वाला क्रेयॉन लें। स्क्रीन पर उँगली या चित्र बनाने के बटन इस्तेमाल करें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "•",
+        "label": {
+          "en": "Dot",
+          "hi": "बिंदु"
+        },
+        "picture": "⚫",
+        "say": {
+          "en": "Dot.",
+          "hi": "बिंदु।"
+        }
+      },
+      {
+        "symbol": "│",
+        "label": {
+          "en": "Standing line",
+          "hi": "खड़ी रेखा"
+        },
+        "picture": "↕️",
+        "say": {
+          "en": "Standing line.",
+          "hi": "खड़ी रेखा।"
+        }
+      },
+      {
+        "symbol": "—",
+        "label": {
+          "en": "Sleeping line",
+          "hi": "लेटी रेखा"
+        },
+        "picture": "↔️",
+        "say": {
+          "en": "Sleeping line.",
+          "hi": "लेटी रेखा।"
+        }
+      },
+      {
+        "symbol": "╱",
+        "label": {
+          "en": "Sloping line",
+          "hi": "तिरछी रेखा"
+        },
+        "picture": "↗️",
+        "say": {
+          "en": "Sloping line.",
+          "hi": "तिरछी रेखा।"
+        }
+      }
+    ],
+    "trace": "",
+    "guide": "lines",
+    "play": [
+      {
+        "en": "Make 3 dots, then draw a path beside them.",
+        "hi": "3 बिंदु बनाएँ, फिर उनके पास रास्ता खींचें।"
+      },
+      {
+        "en": "Find a standing and a sleeping line in the room.",
+        "hi": "कमरे में खड़ी और लेटी रेखा खोजें।"
+      },
+      {
+        "en": "Draw rain with short lines and tell a tiny story.",
+        "hi": "छोटी रेखाओं से बारिश बनाएँ और छोटी कहानी सुनाएँ।"
+      }
+    ],
+    "observations": [
+      {
+        "question": {
+          "en": "Which mark is the smallest in your picture?",
+          "hi": "आपके चित्र में सबसे छोटा निशान कौन है?"
+        },
+        "answer": {
+          "en": "Point to a small mark; different drawings can have different answers.",
+          "hi": "किसी छोटे निशान की ओर इशारा करें; अलग चित्रों में उत्तर अलग हो सकते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which line looks like a standing tree trunk?",
+          "hi": "कौन-सी रेखा खड़े पेड़ के तने जैसी है?"
+        },
+        "answer": {
+          "en": "A standing line can suggest a tree trunk.",
+          "hi": "खड़ी रेखा पेड़ के तने जैसी लग सकती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "How is a dot different from your long line?",
+          "hi": "बिंदु आपकी लंबी रेखा से कैसे अलग है?"
+        },
+        "answer": {
+          "en": "The dot is a small mark; the line stretches along a path.",
+          "hi": "बिंदु छोटा निशान है; रेखा एक रास्ते में फैली है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Where did you leave empty space?",
+          "hi": "आपने खाली जगह कहाँ छोड़ी?"
+        },
+        "answer": {
+          "en": "Show an unmarked part of your picture.",
+          "hi": "चित्र का कोई बिना निशान वाला भाग दिखाएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "What could your marks become?",
+          "hi": "आपके निशानों से क्या बन सकता है?"
+        },
+        "answer": {
+          "en": "They might become rain, a road or another idea of your own.",
+          "hi": "वे बारिश, रास्ता या आपका कोई नया विचार बन सकते हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-art-02",
+    "classId": "LKG",
+    "subject": "art",
+    "title": {
+      "en": "Round and Straight Shapes",
+      "hi": "गोल और सीधी आकृतियाँ"
+    },
+    "goal": {
+      "en": "Notice curved edges, straight sides and corners.",
+      "hi": "घुमावदार किनारे, सीधी भुजाएँ और कोने पहचानें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Follow a round edge",
+          "hi": "गोल किनारा देखिए"
+        },
+        "body": {
+          "en": "A circle has a curved boundary and no corners. Trace a round path in the air. A drawing can look round even when the line is not perfect. Compare your round shape with a ball shown in a picture.",
+          "hi": "वृत्त का किनारा घुमावदार होता है और उसमें कोने नहीं होते। हवा में गोल रास्ता बनाएँ। आपकी रेखा पूरी तरह एक जैसी न हो, तब भी आकृति गोल लग सकती है। चित्र में दिखाई गेंद और अपने गोल आकार की तुलना करें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Find sides and corners",
+          "hi": "भुजाएँ और कोने खोजिए"
+        },
+        "body": {
+          "en": "A triangle has 3 straight sides. A square has 4 equal straight sides. Look for corners where sides meet. Rotate a shape and notice that turning it does not change how many sides it has.",
+          "hi": "त्रिभुज में 3 सीधी भुजाएँ और वर्ग में 4 बराबर सीधी भुजाएँ होती हैं। जहाँ भुजाएँ मिलती हैं, वहाँ कोने देखें। आकृति को घुमाकर भी देख सकते हैं। घुमाने से उसकी भुजाओं की संख्या नहीं बदलती। उँगली से एक-एक भुजा गिनें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Build with shapes",
+          "hi": "आकृतियों से बनाइए"
+        },
+        "body": {
+          "en": "Put shapes beside or above each other to imagine a house, face or toy. Use a large shape for the main part and smaller shapes for details. There is more than one way to make a picture.",
+          "hi": "आकृतियों को पास या ऊपर रखकर घर, चेहरा या खिलौना सोचें। मुख्य भाग के लिए बड़ी और छोटी बातों के लिए छोटी आकृति चुनें। एक ही चित्र बनाने के कई तरीके हो सकते हैं। अपना तरीका समझाएँ और दूसरे बच्चे का तरीका भी देखें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "○",
+        "label": {
+          "en": "Circle",
+          "hi": "वृत्त"
+        },
+        "picture": "🔵",
+        "say": {
+          "en": "Circle.",
+          "hi": "वृत्त।"
+        },
+        "shape": "circle",
+        "color": "#3578b8"
+      },
+      {
+        "symbol": "△",
+        "label": {
+          "en": "Triangle",
+          "hi": "त्रिभुज"
+        },
+        "picture": "🔺",
+        "say": {
+          "en": "Triangle.",
+          "hi": "त्रिभुज।"
+        },
+        "shape": "triangle",
+        "color": "#be4c43"
+      },
+      {
+        "symbol": "□",
+        "label": {
+          "en": "Square",
+          "hi": "वर्ग"
+        },
+        "picture": "🟨",
+        "say": {
+          "en": "Square.",
+          "hi": "वर्ग।"
+        },
+        "shape": "square",
+        "color": "#d7ab35"
+      },
+      {
+        "symbol": "▭",
+        "label": {
+          "en": "Rectangle",
+          "hi": "आयत"
+        },
+        "picture": "🟩",
+        "say": {
+          "en": "Rectangle.",
+          "hi": "आयत।"
+        },
+        "shape": "rectangle",
+        "color": "#39856b"
+      }
+    ],
+    "trace": "",
+    "guide": "circle",
+    "play": [
+      {
+        "en": "Draw a round face and add your own expression.",
+        "hi": "गोल चेहरा बनाकर अपनी पसंद के भाव जोड़ें।"
+      },
+      {
+        "en": "Use a triangle and square to imagine a house.",
+        "hi": "त्रिभुज और वर्ग से घर सोचें।"
+      },
+      {
+        "en": "Point to 3 corners on a triangle.",
+        "hi": "त्रिभुज के 3 कोनों की ओर इशारा करें।"
+      }
+    ],
+    "observations": [
+      {
+        "question": {
+          "en": "Which shown shape has no corners?",
+          "hi": "दिखी किस आकृति में कोने नहीं हैं?"
+        },
+        "answer": {
+          "en": "The circle has no corners.",
+          "hi": "वृत्त में कोने नहीं होते।"
+        }
+      },
+      {
+        "question": {
+          "en": "How many straight sides does the triangle have?",
+          "hi": "त्रिभुज की कितनी सीधी भुजाएँ हैं?"
+        },
+        "answer": {
+          "en": "It has 3 straight sides.",
+          "hi": "उसकी 3 सीधी भुजाएँ हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What stays the same when a square turns?",
+          "hi": "वर्ग घुमाने पर क्या समान रहता है?"
+        },
+        "answer": {
+          "en": "It still has 4 equal sides and 4 corners.",
+          "hi": "उसमें 4 बराबर भुजाएँ और 4 कोने ही रहते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Where did you use a small shape?",
+          "hi": "आपने छोटी आकृति कहाँ लगाई?"
+        },
+        "answer": {
+          "en": "Point to a small detail, such as an eye or window.",
+          "hi": "आँख या खिड़की जैसा कोई छोटा भाग दिखाएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "What object does your round shape suggest?",
+          "hi": "आपकी गोल आकृति से कौन-सी वस्तु याद आती है?"
+        },
+        "answer": {
+          "en": "A face, plate, ball or another suitable idea is possible.",
+          "hi": "चेहरा, थाली, गेंद या कोई और उचित विचार हो सकता है।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-art-03",
+    "classId": "LKG",
+    "subject": "art",
+    "title": {
+      "en": "Meet the Colours",
+      "hi": "रंगों से परिचय"
+    },
+    "goal": {
+      "en": "Name colours and use them freely in a picture.",
+      "hi": "रंगों के नाम जानें और चित्र में अपनी पसंद से लगाएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Look and name",
+          "hi": "देखिए और नाम बताइए"
+        },
+        "body": {
+          "en": "Look at red, yellow, blue and green patches. Say a colour name with an adult. Colours can appear lighter or darker on different screens or papers, so also use the written colour names.",
+          "hi": "लाल, पीले, नीले और हरे रंग के नमूने देखें। किसी बड़े के साथ रंग का नाम बोलें। अलग स्क्रीन या कागज पर रंग थोड़ा हल्का या गहरा दिख सकता है। इसलिए लिखे नाम और आसपास की चीजों से भी रंग पहचानें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Choose a colour",
+          "hi": "अपनी पसंद का रंग चुनिए"
+        },
+        "body": {
+          "en": "You can choose a colour for a flower, a shape or a whole background. A made-up flower does not need to match a real flower. Leave some space uncoloured if you like that effect.",
+          "hi": "फूल, आकृति या पूरी पृष्ठभूमि के लिए अपनी पसंद का रंग चुनें। कल्पना का फूल असली फूल जैसा होना जरूरी नहीं। कुछ जगह बिना रंग की भी छोड़ सकते हैं। देखें कि पास रखे अलग रंग चित्र को कैसे बदलते हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Try colours gently",
+          "hi": "धीरे रंग आजमाइए"
+        },
+        "body": {
+          "en": "On paper, try a light crayon mark and a firmer mark. The appearance may change with the material. Use one drawing to explore rather than looking for a single correct colour choice. Tell someone about your choices.",
+          "hi": "कागज पर क्रेयॉन हल्के हाथ से चलाएँ, फिर थोड़ा गहरा निशान आजमाएँ। इस्तेमाल की चीज से रंग का रूप बदल सकता है। केवल एक सही रंग खोजने के बजाय अलग रंगों को देखें। किसी को बताएँ कि आपने अपना रंग क्यों चुना।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "●",
+        "label": {
+          "en": "Red",
+          "hi": "लाल"
+        },
+        "picture": "🔴",
+        "say": {
+          "en": "Red.",
+          "hi": "लाल।"
+        },
+        "shape": "circle",
+        "color": "#bf443e"
+      },
+      {
+        "symbol": "●",
+        "label": {
+          "en": "Yellow",
+          "hi": "पीला"
+        },
+        "picture": "🟡",
+        "say": {
+          "en": "Yellow.",
+          "hi": "पीला।"
+        },
+        "shape": "circle",
+        "color": "#d9ad2b"
+      },
+      {
+        "symbol": "●",
+        "label": {
+          "en": "Blue",
+          "hi": "नीला"
+        },
+        "picture": "🔵",
+        "say": {
+          "en": "Blue.",
+          "hi": "नीला।"
+        },
+        "shape": "circle",
+        "color": "#347ab7"
+      },
+      {
+        "symbol": "●",
+        "label": {
+          "en": "Green",
+          "hi": "हरा"
+        },
+        "picture": "🟢",
+        "say": {
+          "en": "Green.",
+          "hi": "हरा।"
+        },
+        "shape": "circle",
+        "color": "#398365"
+      }
+    ],
+    "trace": "",
+    "guide": "flower",
+    "play": [
+      {
+        "en": "Choose 2 colours for an imaginary flower.",
+        "hi": "कल्पना के फूल के लिए 2 रंग चुनें।"
+      },
+      {
+        "en": "Find something blue near you without moving unsafe objects.",
+        "hi": "किसी वस्तु को खिसकाए बिना पास की नीली चीज खोजें।"
+      },
+      {
+        "en": "Leave one part blank and compare it with a coloured part.",
+        "hi": "एक भाग खाली छोड़कर रंगे भाग से मिलाएँ।"
+      }
+    ],
+    "observations": [
+      {
+        "question": {
+          "en": "Which colour did you choose first?",
+          "hi": "आपने पहले कौन-सा रंग चुना?"
+        },
+        "answer": {
+          "en": "Name your first choice; any available colour can be used.",
+          "hi": "अपनी पहली पसंद का नाम बताएँ; उपलब्ध कोई भी रंग चुन सकते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which patch is labelled yellow?",
+          "hi": "किस नमूने पर पीला लिखा है?"
+        },
+        "answer": {
+          "en": "Point to the yellow patch and its label.",
+          "hi": "पीले नमूने और उसके नाम की ओर इशारा करें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Where is a light mark in your picture?",
+          "hi": "आपके चित्र में हल्का निशान कहाँ है?"
+        },
+        "answer": {
+          "en": "Show a lighter-looking part, if you made one.",
+          "hi": "यदि बनाया हो तो हल्का दिखने वाला भाग दिखाएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "Must every imaginary flower be red?",
+          "hi": "क्या कल्पना का हर फूल लाल होना चाहिए?"
+        },
+        "answer": {
+          "en": "No. You may choose different colours for an imaginary flower.",
+          "hi": "नहीं। कल्पना के फूल के लिए अलग रंग चुन सकते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What changed when you added a second colour?",
+          "hi": "दूसरा रंग लगाने पर क्या बदला?"
+        },
+        "answer": {
+          "en": "Describe the new part or the contrast you notice.",
+          "hi": "नया भाग या रंगों का दिखा अंतर बताएँ।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-art-04",
+    "classId": "LKG",
+    "subject": "art",
+    "title": {
+      "en": "My Shape House",
+      "hi": "आकृतियों वाला मेरा घर"
+    },
+    "goal": {
+      "en": "Combine simple shapes and describe a drawing.",
+      "hi": "सरल आकृतियाँ मिलाकर चित्र के बारे में बताएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Start with a big shape",
+          "hi": "बड़ी आकृति से शुरू करें"
+        },
+        "body": {
+          "en": "A square or rectangle can suggest the front of a house. Give this main shape enough room on your page. The example is just one kind of house; real homes have many different forms.",
+          "hi": "वर्ग या आयत से घर का सामने वाला भाग सोच सकते हैं। इस बड़ी आकृति के लिए पन्ने पर पर्याप्त जगह रखें। दिखा नमूना घर का केवल एक रूप है। असली घरों के आकार अलग होते हैं और हर घर की अपनी बातें होती हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Add a roof and openings",
+          "hi": "छत और दरवाजे जोड़ें"
+        },
+        "body": {
+          "en": "Try a triangle for a roof, a rectangle for a door and small squares for windows. You can choose different shapes too. Look at what is above, below and beside another part while you draw.",
+          "hi": "छत के लिए त्रिभुज, दरवाजे के लिए आयत और खिड़की के लिए छोटे वर्ग आजमाएँ। चाहें तो दूसरी आकृतियाँ भी चुनें। बनाते समय देखें कि कौन-सा भाग ऊपर, नीचे या पास है। केवल आकार नहीं, उनकी जगह भी चित्र बदलती है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Tell the picture story",
+          "hi": "चित्र की कहानी बताइए"
+        },
+        "body": {
+          "en": "Add a tree, a path or a sun if you want. Explain who might use the door or look from a window. Different families and homes can be shown in art without one model being the only right one.",
+          "hi": "चाहें तो पेड़, रास्ता या सूरज जोड़ें। बताएँ कि दरवाजे से कौन आ सकता है या खिड़की से क्या दिख सकता है। चित्र में अलग तरह के परिवार और घर दिख सकते हैं। किसी एक नमूने को ही सही मानना जरूरी नहीं है।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "□",
+        "label": {
+          "en": "House front",
+          "hi": "घर का सामने वाला भाग"
+        },
+        "picture": "🏠",
+        "say": {
+          "en": "House front.",
+          "hi": "घर का सामने वाला भाग।"
+        },
+        "shape": "square",
+        "color": "#b46746"
+      },
+      {
+        "symbol": "△",
+        "label": {
+          "en": "Roof",
+          "hi": "छत"
+        },
+        "picture": "🔺",
+        "say": {
+          "en": "Roof.",
+          "hi": "छत।"
+        },
+        "shape": "triangle",
+        "color": "#a94c44"
+      },
+      {
+        "symbol": "▭",
+        "label": {
+          "en": "Door",
+          "hi": "दरवाजा"
+        },
+        "picture": "🚪",
+        "say": {
+          "en": "Door.",
+          "hi": "दरवाजा।"
+        },
+        "shape": "rectangle",
+        "color": "#77563f"
+      },
+      {
+        "symbol": "□",
+        "label": {
+          "en": "Window",
+          "hi": "खिड़की"
+        },
+        "picture": "🪟",
+        "say": {
+          "en": "Window.",
+          "hi": "खिड़की।"
+        },
+        "shape": "square",
+        "color": "#5b94ac"
+      }
+    ],
+    "trace": "",
+    "guide": "house",
+    "play": [
+      {
+        "en": "Build a house from 3 or more shapes.",
+        "hi": "3 या अधिक आकृतियों से घर बनाएँ।"
+      },
+      {
+        "en": "Add a path leading towards the door.",
+        "hi": "दरवाजे की ओर जाता रास्ता जोड़ें।"
+      },
+      {
+        "en": "Tell a short story about your picture.",
+        "hi": "अपने चित्र पर छोटी कहानी सुनाएँ।"
+      }
+    ],
+    "observations": [
+      {
+        "question": {
+          "en": "Which shape did you use for the main wall?",
+          "hi": "मुख्य दीवार के लिए कौन-सी आकृति चुनी?"
+        },
+        "answer": {
+          "en": "A square, rectangle or another planned shape can work.",
+          "hi": "वर्ग, आयत या सोचकर चुनी दूसरी आकृति हो सकती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is above the door?",
+          "hi": "दरवाजे के ऊपर क्या है?"
+        },
+        "answer": {
+          "en": "Describe your own drawing; a roof or window may be above it.",
+          "hi": "अपना चित्र देखकर बताएँ; ऊपर छत या खिड़की हो सकती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which part is smaller than the house front?",
+          "hi": "कौन-सा भाग घर के सामने वाले भाग से छोटा है?"
+        },
+        "answer": {
+          "en": "A window or door is often smaller in this drawing.",
+          "hi": "इस चित्र में खिड़की या दरवाजा प्रायः छोटा होगा।"
+        }
+      },
+      {
+        "question": {
+          "en": "Are all real houses shaped like this example?",
+          "hi": "क्या सभी असली घर इस नमूने जैसे होते हैं?"
+        },
+        "answer": {
+          "en": "No. Real homes have many forms.",
+          "hi": "नहीं। असली घरों के रूप अलग होते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What could you add to tell more of the story?",
+          "hi": "कहानी बढ़ाने के लिए क्या जोड़ सकते हैं?"
+        },
+        "answer": {
+          "en": "A person, tree, path or another relevant detail could help.",
+          "hi": "व्यक्ति, पेड़, रास्ता या कोई संबंधित बात जोड़ सकते हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-art-01",
+    "classId": "UKG",
+    "subject": "art",
+    "title": {
+      "en": "Curves and Repeating Patterns",
+      "hi": "वक्र और दोहराते पैटर्न"
+    },
+    "goal": {
+      "en": "Combine curves and repeat a chosen visual rule.",
+      "hi": "वक्र मिलाएँ और चुना हुआ दृश्य नियम दोहराएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Follow a gentle curve",
+          "hi": "नरम घुमाव देखिए"
+        },
+        "body": {
+          "en": "A curve changes direction smoothly. Draw a hill, a rainbow-like arc or a winding path. You can practise a large movement in the air before making a smaller mark on paper or the board.",
+          "hi": "वक्र धीरे-धीरे दिशा बदलता है। पहाड़ी, मेहराब या घूमता रास्ता बनाएँ। कागज या चित्रपट पर छोटा निशान बनाने से पहले हवा में बड़ा घुमाव आजमा सकते हैं। हर घुमाव एक जैसा होना जरूरी नहीं; पहले हाथ की सहज गति पहचानें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Choose the repeating unit",
+          "hi": "दोहराने वाला भाग चुनें"
+        },
+        "body": {
+          "en": "A pattern repeats a rule. Try circle, line, circle, line. The repeating unit is circle then line. Say the rule aloud and decide what should come next without changing the rule halfway.",
+          "hi": "पैटर्न में एक नियम दोहरता है। वृत्त, रेखा, वृत्त, रेखा बनाएँ। इसमें वृत्त के बाद रेखा दोहराने वाला भाग है। नियम बोलकर अगला निशान सोचें। यदि नया नियम बनाना चाहें, तो उसे अलग पंक्ति में शुरू करें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Decorate with a clear rhythm",
+          "hi": "स्पष्ट क्रम से सजाइए"
+        },
+        "body": {
+          "en": "Use a pattern along an edge or beside a path. Leave space between repeated marks so the rule can be seen. Art can also use irregular marks; call something a repeating pattern only when you have a repeating rule.",
+          "hi": "किनारे या रास्ते के पास पैटर्न लगाएँ। दोहराए निशानों के बीच जगह रखें, ताकि नियम दिखाई दे। कला में अनियमित निशान भी सुंदर हो सकते हैं। किसी सजावट को दोहराता पैटर्न तभी कहें जब उसमें कोई चुना नियम दोहर रहा हो।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "∿",
+        "label": {
+          "en": "Wavy line",
+          "hi": "लहरदार रेखा"
+        },
+        "picture": "🌊",
+        "say": {
+          "en": "Wavy line.",
+          "hi": "लहरदार रेखा।"
+        }
+      },
+      {
+        "symbol": "⌒",
+        "label": {
+          "en": "Arc",
+          "hi": "चाप"
+        },
+        "picture": "🌈",
+        "say": {
+          "en": "Arc.",
+          "hi": "चाप।"
+        }
+      },
+      {
+        "symbol": "○│",
+        "label": {
+          "en": "Circle then line",
+          "hi": "वृत्त फिर रेखा"
+        },
+        "picture": "🔵",
+        "say": {
+          "en": "Circle then line.",
+          "hi": "वृत्त फिर रेखा।"
+        }
+      },
+      {
+        "symbol": "△□",
+        "label": {
+          "en": "Triangle then square",
+          "hi": "त्रिभुज फिर वर्ग"
+        },
+        "picture": "🔺",
+        "say": {
+          "en": "Triangle then square.",
+          "hi": "त्रिभुज फिर वर्ग।"
+        }
+      }
+    ],
+    "trace": "",
+    "guide": "pattern",
+    "play": [
+      {
+        "en": "Repeat circle, line 3 times.",
+        "hi": "वृत्त, रेखा का क्रम 3 बार दोहराएँ।"
+      },
+      {
+        "en": "Make a winding path with a gentle curve.",
+        "hi": "नरम वक्र से घूमता रास्ता बनाएँ।"
+      },
+      {
+        "en": "Invent a 2-shape border and explain its rule.",
+        "hi": "2 आकृतियों का किनारा बनाएँ और नियम समझाएँ।"
+      }
+    ],
+    "observations": [
+      {
+        "question": {
+          "en": "What comes next in circle, line, circle, line?",
+          "hi": "वृत्त, रेखा, वृत्त, रेखा के बाद क्या आएगा?"
+        },
+        "answer": {
+          "en": "A circle comes next if the same rule continues.",
+          "hi": "समान नियम चले तो अगला वृत्त होगा।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which part is repeated in your border?",
+          "hi": "आपके किनारे में कौन-सा भाग दोहरता है?"
+        },
+        "answer": {
+          "en": "Point to and name the repeating unit.",
+          "hi": "दोहराने वाला भाग दिखाएँ और उसका नाम बताएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "How is a curve different from one straight line?",
+          "hi": "वक्र एक सीधी रेखा से कैसे अलग है?"
+        },
+        "answer": {
+          "en": "A curve bends; a straight line keeps one direction.",
+          "hi": "वक्र मुड़ता है; सीधी रेखा एक दिशा में रहती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Where is there enough space to see the pattern?",
+          "hi": "पैटर्न देखने लायक खाली जगह कहाँ है?"
+        },
+        "answer": {
+          "en": "Show a gap between repeated marks.",
+          "hi": "दोहराए निशानों के बीच की जगह दिखाएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "Could you make a different rule on another row?",
+          "hi": "क्या दूसरी पंक्ति में नया नियम बना सकते हैं?"
+        },
+        "answer": {
+          "en": "Yes. Start a new row and explain the new repeating unit.",
+          "hi": "हाँ। नई पंक्ति में नया दोहराने वाला भाग बताएँ।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-art-02",
+    "classId": "UKG",
+    "subject": "art",
+    "title": {
+      "en": "Flowers and Trees",
+      "hi": "फूल और पेड़"
+    },
+    "goal": {
+      "en": "Observe plant forms and arrange a simple nature picture.",
+      "hi": "पौधों के रूप देखें और सरल प्रकृति चित्र बनाएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Look before drawing",
+          "hi": "बनाने से पहले देखिए"
+        },
+        "body": {
+          "en": "Look at the main parts of a tree or flower. A tree may have a trunk, branches and many leaves. A flower may have a centre and petals. Real plants differ, so a simple drawing is not a complete scientific diagram.",
+          "hi": "पेड़ या फूल के मुख्य भाग देखें। पेड़ में तना, शाखाएँ और पत्तियाँ दिखाई दे सकती हैं। फूल में बीच का भाग और पंखुड़ियाँ दिख सकती हैं। असली पौधे अलग होते हैं; यह सरल चित्र पूरे वैज्ञानिक चित्र का स्थान नहीं लेता।"
+        }
+      },
+      {
+        "title": {
+          "en": "Build large parts first",
+          "hi": "पहले बड़े भाग बनाएँ"
+        },
+        "body": {
+          "en": "Begin with the trunk or a flower stem, then add a leafy shape or petals. Compare long and short parts. Use a circle, oval or free curve when it helps you show the form you noticed.",
+          "hi": "पहले तना या फूल की डंडी बनाएँ, फिर पत्तियों वाला भाग या पंखुड़ियाँ जोड़ें। लंबे और छोटे भाग मिलाएँ। देखा रूप दिखाने के लिए वृत्त, अंडाकार या अपनी बनाई वक्र रेखा ले सकते हैं। मुख्य भाग पहचान में आने दें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Add small details thoughtfully",
+          "hi": "सोचकर छोटी बातें जोड़ें"
+        },
+        "body": {
+          "en": "Try a leaf vein, a branch or a patch of ground. You do not need to draw every leaf. Choose a few details that help tell what is happening, and describe which part you observed and which part you imagined.",
+          "hi": "पत्ती की रेखा, शाखा या जमीन का भाग जोड़ें। हर पत्ती बनाना जरूरी नहीं है। कुछ ऐसी बातें चुनें जिनसे चित्र समझ आए। बताएँ कि कौन-सा भाग देखकर बनाया और कौन-सा कल्पना से जोड़ा। प्रकृति के प्रति ध्यान भी चित्र बनाना सिखाता है।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "│",
+        "label": {
+          "en": "Trunk",
+          "hi": "तना"
+        },
+        "picture": "🌳",
+        "say": {
+          "en": "Trunk.",
+          "hi": "तना।"
+        }
+      },
+      {
+        "symbol": "❀",
+        "label": {
+          "en": "Flower",
+          "hi": "फूल"
+        },
+        "picture": "🌼",
+        "say": {
+          "en": "Flower.",
+          "hi": "फूल।"
+        },
+        "shape": "flower"
+      },
+      {
+        "symbol": "◯",
+        "label": {
+          "en": "Leafy crown",
+          "hi": "पत्तियों वाला ऊपरी भाग"
+        },
+        "picture": "🌳",
+        "say": {
+          "en": "Leafy crown.",
+          "hi": "पत्तियों वाला ऊपरी भाग।"
+        },
+        "shape": "circle",
+        "color": "#3d8866"
+      },
+      {
+        "symbol": "🍃",
+        "label": {
+          "en": "Leaf",
+          "hi": "पत्ती"
+        },
+        "picture": "🍃",
+        "say": {
+          "en": "Leaf.",
+          "hi": "पत्ती।"
+        }
+      }
+    ],
+    "trace": "",
+    "guide": "tree",
+    "play": [
+      {
+        "en": "Draw a tall tree and a shorter flower beside it.",
+        "hi": "लंबा पेड़ और उसके पास छोटा फूल बनाएँ।"
+      },
+      {
+        "en": "Add 3 leaves in different directions.",
+        "hi": "अलग दिशाओं में 3 पत्तियाँ जोड़ें।"
+      },
+      {
+        "en": "Describe one observed part and one imagined detail.",
+        "hi": "एक देखा भाग और एक कल्पना की बात बताएँ।"
+      }
+    ],
+    "observations": [
+      {
+        "question": {
+          "en": "Which part makes your tree look tall?",
+          "hi": "किस भाग से आपका पेड़ लंबा लगता है?"
+        },
+        "answer": {
+          "en": "A long trunk and the overall height can make it look tall.",
+          "hi": "लंबे तने और कुल ऊँचाई से पेड़ लंबा लग सकता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What details help someone recognise the flower?",
+          "hi": "कौन-सी बातें फूल पहचानने में सहायक हैं?"
+        },
+        "answer": {
+          "en": "The centre, petals or stem may help.",
+          "hi": "बीच का भाग, पंखुड़ियाँ या डंडी सहायक हो सकती हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Must every leaf be drawn separately?",
+          "hi": "क्या हर पत्ती अलग बनानी जरूरी है?"
+        },
+        "answer": {
+          "en": "No. A few leaves or a leafy shape can suggest many leaves.",
+          "hi": "नहीं। कुछ पत्तियाँ या पत्तियों वाला आकार भी संकेत दे सकता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is shorter in your picture?",
+          "hi": "आपके चित्र में कौन छोटा है?"
+        },
+        "answer": {
+          "en": "Compare the actual heights you drew.",
+          "hi": "बनाए हुए भागों की वास्तविक ऊँचाई मिलाएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which part came from your imagination?",
+          "hi": "कौन-सा भाग आपकी कल्पना से आया?"
+        },
+        "answer": {
+          "en": "Name any detail you invented.",
+          "hi": "अपनी जोड़ी हुई कोई बात बताएँ।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-art-03",
+    "classId": "UKG",
+    "subject": "art",
+    "title": {
+      "en": "A Butterfly with Two Sides",
+      "hi": "तितली के दो पक्ष"
+    },
+    "goal": {
+      "en": "Explore approximate mirror symmetry in a simple butterfly.",
+      "hi": "सरल तितली में दर्पण जैसी लगभग समानता देखें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Begin with the middle",
+          "hi": "बीच से शुरू करें"
+        },
+        "body": {
+          "en": "Draw a body down the middle of the page. Think of a line through its centre. Place a wing on each side. The example shows a simplified butterfly, so its decoration can come from your imagination.",
+          "hi": "पन्ने के बीच में तितली का शरीर बनाएँ। उसके केंद्र से जाती रेखा सोचें। दोनों ओर एक-एक पंख का भाग रखें। नमूना सरल तितली है; उसकी सजावट कल्पना से कर सकते हैं। पहले बीच और दोनों पक्षों की जगह पहचानें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Compare the two sides",
+          "hi": "दोनों पक्षों को मिलाएँ"
+        },
+        "body": {
+          "en": "In a mirror-like arrangement, a mark on one side has a partner on the other side at a similar distance from the middle. Compare sizes and positions. Hand-drawn sides may be only approximately alike, and that is useful for exploring.",
+          "hi": "दर्पण जैसे सजाव में एक ओर के निशान का साथी दूसरी ओर बीच से लगभग उतनी ही दूरी पर होता है। आकार और जगह की तुलना करें। हाथ से बने दोनों पक्ष पूरी तरह समान न भी हों, तो तुलना से समझ बढ़ती है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Choose a repeating decoration",
+          "hi": "दोहराती सजावट चुनें"
+        },
+        "body": {
+          "en": "Try one large spot or a few small spots on each wing. Explain which marks are partners. You may also draw a butterfly without matching decoration; simply describe whether you chose a mirror-like rule or a free design.",
+          "hi": "हर पंख पर एक बड़ा या कुछ छोटे धब्बे आजमाएँ। बताएँ कि कौन-से निशान एक-दूसरे के साथी हैं। बिना मिलती सजावट वाली तितली भी बना सकते हैं। केवल यह बताएँ कि आपने दर्पण जैसा नियम चुना या स्वतंत्र सजाव।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "│",
+        "label": {
+          "en": "Middle line",
+          "hi": "बीच की रेखा"
+        },
+        "picture": "↕️",
+        "say": {
+          "en": "Middle line.",
+          "hi": "बीच की रेखा।"
+        }
+      },
+      {
+        "symbol": "◖",
+        "label": {
+          "en": "Left wing",
+          "hi": "बायाँ पंख"
+        },
+        "picture": "🦋",
+        "say": {
+          "en": "Left wing.",
+          "hi": "बायाँ पंख।"
+        }
+      },
+      {
+        "symbol": "◗",
+        "label": {
+          "en": "Right wing",
+          "hi": "दायाँ पंख"
+        },
+        "picture": "🦋",
+        "say": {
+          "en": "Right wing.",
+          "hi": "दायाँ पंख।"
+        }
+      },
+      {
+        "symbol": "●",
+        "label": {
+          "en": "Wing spot",
+          "hi": "पंख का धब्बा"
+        },
+        "picture": "🟣",
+        "say": {
+          "en": "Wing spot.",
+          "hi": "पंख का धब्बा।"
+        },
+        "shape": "circle",
+        "color": "#8b5ba4"
+      }
+    ],
+    "trace": "",
+    "guide": "butterfly",
+    "play": [
+      {
+        "en": "Draw a body and a wing on each side.",
+        "hi": "शरीर और दोनों ओर पंख बनाएँ।"
+      },
+      {
+        "en": "Place one matching spot on each side of the middle.",
+        "hi": "बीच के दोनों ओर एक-एक मिलता धब्बा लगाएँ।"
+      },
+      {
+        "en": "Explain one pair of marks that you matched.",
+        "hi": "निशानों का एक मिलाया जोड़ा समझाएँ।"
+      }
+    ],
+    "observations": [
+      {
+        "question": {
+          "en": "Where is the middle of your butterfly?",
+          "hi": "आपकी तितली का बीच कहाँ है?"
+        },
+        "answer": {
+          "en": "Point to the body or the imagined middle line.",
+          "hi": "शरीर या सोची हुई बीच की रेखा दिखाएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which 2 spots are partners?",
+          "hi": "कौन-से 2 धब्बे साथी हैं?"
+        },
+        "answer": {
+          "en": "Show spots on opposite sides at similar distances from the middle.",
+          "hi": "बीच से लगभग समान दूरी पर विपरीत ओर के धब्बे दिखाएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "Are your wings approximately the same size?",
+          "hi": "क्या आपके पंख लगभग एक आकार के हैं?"
+        },
+        "answer": {
+          "en": "Compare them; describe any difference you see.",
+          "hi": "उन्हें मिलाएँ और दिखा अंतर बताएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "Does art always need matching sides?",
+          "hi": "क्या कला में दोनों पक्ष हमेशा मिलने चाहिए?"
+        },
+        "answer": {
+          "en": "No. Matching and free arrangements are both possible choices.",
+          "hi": "नहीं। मिलता सजाव और स्वतंत्र सजाव दोनों चुन सकते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What would you change to make the sides more alike?",
+          "hi": "दोनों पक्ष अधिक मिलाने के लिए क्या बदलेंगे?"
+        },
+        "answer": {
+          "en": "You might adjust a wing size, a spot position or a colour.",
+          "hi": "पंख का आकार, धब्बे की जगह या रंग बदल सकते हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-art-04",
+    "classId": "UKG",
+    "subject": "art",
+    "title": {
+      "en": "My Kite-Day Picture",
+      "hi": "पतंग वाले दिन का मेरा चित्र"
+    },
+    "goal": {
+      "en": "Create a scene with shapes, lines and a short description.",
+      "hi": "आकृतियों, रेखाओं और छोटे वर्णन से दृश्य बनाएँ।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Plan a few main parts",
+          "hi": "कुछ मुख्य भाग सोचें"
+        },
+        "body": {
+          "en": "Imagine a kite in the sky. Choose where its main shape will go and leave room for a string. You can add a sun, cloud, tree or a person. The picture is an imagined scene, not instructions for flying a kite.",
+          "hi": "आकाश में पतंग की कल्पना करें। मुख्य आकृति कहाँ होगी, सोचें और डोर के लिए जगह छोड़ें। सूरज, बादल, पेड़ या व्यक्ति जोड़ सकते हैं। यह कल्पना का चित्र है, पतंग उड़ाने का निर्देश नहीं। पहले कुछ मुख्य भाग चुनना मदद करता है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Use shape and direction",
+          "hi": "आकृति और दिशा का उपयोग करें"
+        },
+        "body": {
+          "en": "A diamond-like quadrilateral can suggest a kite. Add crossing support lines and a curved string. Try small repeated shapes on a tail. Notice how sloping lines can make the kite look as if it is leaning in the breeze.",
+          "hi": "हीरे जैसी चतुर्भुज आकृति से पतंग का संकेत दे सकते हैं। भीतर मिलती रेखाएँ और घुमावदार डोर जोड़ें। पूँछ में छोटी दोहराती आकृतियाँ आजमाएँ। देखें कि तिरछी रेखाओं से पतंग हवा में झुकी हुई कैसे लग सकती है। अपना झुकाव चुनें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Describe what you made",
+          "hi": "बने चित्र के बारे में बताएँ"
+        },
+        "body": {
+          "en": "Name a colour, a shape and a place in your scene. Tell what is high, low or beside something else. A short description helps another person follow your idea; they may notice a new detail when you show it to them.",
+          "hi": "अपने दृश्य का एक रंग, एक आकृति और एक जगह बताएँ। कौन ऊपर, नीचे या किसी चीज के पास है, कहें। छोटा वर्णन दूसरे को आपका विचार समझाता है। चित्र दिखाने पर वे कोई नई बात भी देख सकते हैं, जिसे आप आगे जोड़ना चाहें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "◇",
+        "label": {
+          "en": "Kite",
+          "hi": "पतंग"
+        },
+        "picture": "🪁",
+        "say": {
+          "en": "Kite.",
+          "hi": "पतंग।"
+        }
+      },
+      {
+        "symbol": "∿",
+        "label": {
+          "en": "String",
+          "hi": "डोर"
+        },
+        "picture": "〰️",
+        "say": {
+          "en": "String.",
+          "hi": "डोर।"
+        }
+      },
+      {
+        "symbol": "☀",
+        "label": {
+          "en": "Sun",
+          "hi": "सूरज"
+        },
+        "picture": "☀️",
+        "say": {
+          "en": "Sun.",
+          "hi": "सूरज।"
+        },
+        "shape": "circle",
+        "color": "#d9ad2b"
+      },
+      {
+        "symbol": "△",
+        "label": {
+          "en": "Tail decoration",
+          "hi": "पूँछ की सजावट"
+        },
+        "picture": "🔺",
+        "say": {
+          "en": "Tail decoration.",
+          "hi": "पूँछ की सजावट।"
+        },
+        "shape": "triangle",
+        "color": "#b94b43"
+      }
+    ],
+    "trace": "",
+    "guide": "kite",
+    "play": [
+      {
+        "en": "Draw a kite with a curved string.",
+        "hi": "घुमावदार डोर वाली पतंग बनाएँ।"
+      },
+      {
+        "en": "Choose a repeating pattern for the tail.",
+        "hi": "पूँछ के लिए दोहराता पैटर्न चुनें।"
+      },
+      {
+        "en": "Describe your picture in 3 short spoken sentences.",
+        "hi": "अपने चित्र पर 3 छोटे वाक्य बोलें।"
+      }
+    ],
+    "observations": [
+      {
+        "question": {
+          "en": "Which shape suggests the body of your kite?",
+          "hi": "कौन-सी आकृति पतंग का मुख्य भाग दिखाती है?"
+        },
+        "answer": {
+          "en": "A diamond-like quadrilateral is one possible choice.",
+          "hi": "हीरे जैसी चतुर्भुज आकृति एक संभव चुनाव है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which line shows the string?",
+          "hi": "कौन-सी रेखा डोर दिखाती है?"
+        },
+        "answer": {
+          "en": "Point to the line you used for the string.",
+          "hi": "डोर के लिए बनाई रेखा दिखाएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "Is anything repeated in the tail?",
+          "hi": "क्या पूँछ में कुछ दोहराया है?"
+        },
+        "answer": {
+          "en": "Name the repeating unit, or say that you chose a free design.",
+          "hi": "दोहराने वाला भाग बताएँ या कहें कि स्वतंत्र सजाव चुना है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is above the tree or ground in your scene?",
+          "hi": "आपके दृश्य में पेड़ या जमीन के ऊपर क्या है?"
+        },
+        "answer": {
+          "en": "Describe the positions in your own drawing.",
+          "hi": "अपने चित्र में बनी जगहों के अनुसार बताएँ।"
+        }
+      },
+      {
+        "question": {
+          "en": "What 3 things would you mention in your description?",
+          "hi": "वर्णन में कौन-सी 3 बातें कहेंगे?"
+        },
+        "answer": {
+          "en": "You could mention a colour, a shape and where a part is placed.",
+          "hi": "एक रंग, एक आकृति और किसी भाग की जगह बता सकते हैं।"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p})=>{let season=p[0],legume=season%2===0;plants(g,t,legume?1:0,3);return[read('Season','ऋतु क्रम',season),{label:b('Example crop','उदाहरण फसल'),value:legume?b('Legume','दलहन'):season===1?b('Rice','धान'):b('Wheat','गेहूँ')},{label:b('Rotation principle','चक्र का सिद्धान्त'),value:legume?b('Legume–bacteria symbiosis can fix nitrogen','दलहन-जीवाणु सहजीवन नाइट्रोजन स्थिरीकरण कर सकता है'):b('Different crops use resources differently','अलग फसलें संसाधन अलग ढंग से उपयोग करती हैं')}];};

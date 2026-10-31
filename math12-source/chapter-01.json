@@ -1,0 +1,888 @@
+{
+  "id": 1,
+  "title": {
+    "en": "Relations and Functions",
+    "hi": "संबंध एवं फलन"
+  },
+  "goal": {
+    "en": "Classify relations, test bijections and use composition and inverse functions.",
+    "hi": "संबंधों के गुण जाँचें, द्विएकीपन पहचानें और संयोजन व प्रतिलोम समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Relations and ordered pairs",
+        "hi": "संबंध और क्रमित युग्म"
+      },
+      "body": {
+        "en": "A relation from A to B is a subset of A×B. A relation on A is a subset of A×A. Ordered pairs retain order; domains and codomains must be specified.",
+        "hi": "संबंध (Relation) दो समुच्चयों के अवयवों को किसी नियम से जोड़ता है। A से B में संबंध R, कार्तीय गुणन A×B का कोई उपसमुच्चय है। यदि A={1,2} और B={3,4}, तो A×B={(1,3),(1,4),(2,3),(2,4)} है। इनमें से चुने गए युग्म R बनाते हैं। क्रमित युग्म (Ordered pair) में स्थान महत्वपूर्ण है; सामान्यतः (1,3) और (3,1) अलग हैं। A पर संबंध का अर्थ R⊆A×A है। संबंध की परिभाषा में A लिखना आवश्यक है, क्योंकि गुणों की जाँच उसी समुच्चय के सभी अवयवों पर होगी। रिक्त संबंध में कोई युग्म नहीं और सार्वत्रिक संबंध में A×A के सभी युग्म होते हैं। तीर चित्र में बाएँ अवयव से दाएँ अवयव तक तीर संबंधित युग्म दिखाता है। संबंध में किसी निवेश के कई निर्गत या कोई निर्गत नहीं हो सकता; फलन के लिए आगे अलग शर्त लगेगी। किसी मौखिक नियम को जाँचने के लिए पहले संभावित युग्म लिखें, फिर नियम पूरा करने वाले युग्म चुनें। इससे छूटे हुए युग्म तथा क्रम उलटने की भूल पकड़ी जाती है।"
+      },
+      "formula": "R⊆A×B; relation on A: R⊆A×A",
+      "question": {
+        "en": "How many ordered pairs are in {1,2}×{a,b,c}?",
+        "hi": "{1,2}×{a,b,c} में कितने क्रमित युग्म हैं?"
+      },
+      "answer": {
+        "en": "2×3=6.",
+        "hi": "2×3=6।"
+      }
+    },
+    {
+      "title": {
+        "en": "Reflexive and symmetric relations",
+        "hi": "स्वतुल्य और सममित संबंध"
+      },
+      "body": {
+        "en": "Reflexivity requires every diagonal pair. Symmetry requires the reverse of each existing pair. These are independent conditions, including their universal quantifiers.",
+        "hi": "स्वतुल्य संबंध (Reflexive relation) में A के प्रत्येक a के लिए (a,a)∈R होना चाहिए। केवल कुछ विकर्ण युग्मों का होना पर्याप्त नहीं है। A={1,2,3} हो तो (1,1),(2,2),(3,3) तीनों आवश्यक हैं। सममित संबंध (Symmetric relation) में यदि (a,b)∈R हो, तो (b,a) भी R में होना चाहिए। यहाँ शर्त पहले मौजूद युग्म पर लागू होती है। किसी तीर का उलटा तीर न मिले तो संबंध सममित नहीं है। स्वतुल्यता और सममिति अलग गुण हैं। R={(1,1),(2,2),(1,2)} स्वतुल्य है, पर सममित नहीं, क्योंकि (2,1) अनुपस्थित है। R={(1,2),(2,1)} सममित है, पर उसी A पर स्वतुल्य नहीं है। असत्य सिद्ध करने के लिए 1 प्रति-उदाहरण पर्याप्त है; सत्य सिद्ध करने के लिए सभी आवश्यक युग्म या सामान्य तर्क चाहिए। गैररिक्त समुच्चय पर रिक्त संबंध सममित है क्योंकि कोई ऐसा मौजूद युग्म नहीं जिसका उलटा छूटा हो; वह स्वतुल्य नहीं है। सार्वत्रिक संबंध दोनों गुण रखता है। तीर चित्र सहायक है, पर उत्तर में जाँची गई शर्त स्पष्ट लिखें।"
+      },
+      "formula": "Reflexive: ∀a∈A, aRa; symmetric: aRb ⇒ bRa",
+      "question": {
+        "en": "Is ≤ on R symmetric?",
+        "hi": "R पर ≤ क्या सममित है?"
+      },
+      "answer": {
+        "en": "No: 1≤2 but 2≤1 is false.",
+        "hi": "नहीं: 1≤2 है, पर 2≤1 असत्य है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Transitivity",
+        "hi": "संक्रामकता"
+      },
+      "body": {
+        "en": "A relation is transitive when every composable pair of links has the required direct link. A chain test includes repeated and equal elements; symmetry alone does not imply transitivity.",
+        "hi": "संक्रामक संबंध (Transitive relation) में aRb तथा bRc दोनों होने पर aRc भी होना चाहिए। दो तीरों की श्रृंखला से सीधे तीर की आवश्यकता समझें। A={1,2,3} पर (1,2),(2,3) हों, तो संक्रामकता के लिए (1,3) चाहिए। केवल युग्मों की संख्या देखकर यह गुण तय नहीं होता। हर ऐसे मध्य अवयव b को देखें जहाँ 1 तीर समाप्त और दूसरा शुरू होता है। तीन अक्षर a,b,c आवश्यक रूप से अलग नहीं हैं। उदाहरणतः (1,2) और (2,1) मौजूद हों, तो संक्रामकता (1,1) माँगती है। इसी कारण सममित संबंध स्वतः संक्रामक नहीं होता। वास्तविक संख्याओं पर ≤ संक्रामक है: a≤b और b≤c से a≤c मिलता है। बराबरी का संबंध भी संक्रामक है। ‘मित्र है’ जैसा दैनिक संबंध प्रायः संक्रामक नहीं होता; मित्र का मित्र आवश्यक नहीं अपना मित्र हो। किसी सीमित समुच्चय में युग्म सूची से सभी संभव श्रृंखलाएँ जाँच सकते हैं। सामान्य संख्या समुच्चय में बीजगणितीय तर्क अधिक प्रभावी है। यदि कोई श्रृंखला ही नहीं बनती, तो उससे संक्रामकता की शर्त का उल्लंघन नहीं होता।"
+      },
+      "formula": "aRb and bRc ⇒ aRc",
+      "question": {
+        "en": "Does {(1,2),(2,3)} on {1,2,3} satisfy transitivity?",
+        "hi": "{1,2,3} पर {(1,2),(2,3)} संक्रामक है?"
+      },
+      "answer": {
+        "en": "No; (1,3) is missing.",
+        "hi": "नहीं; आवश्यक युग्म (1,3) नहीं है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Equivalence relations and classes",
+        "hi": "तुल्यता संबंध और वर्ग"
+      },
+      "body": {
+        "en": "An equivalence relation is reflexive, symmetric and transitive. Its classes partition the set. Congruence modulo 3 gives three disjoint classes of integers.",
+        "hi": "तुल्यता संबंध (Equivalence relation) वह संबंध है जो स्वतुल्य, सममित और संक्रामक तीनों हो। केवल 2 गुण मिलने पर तुल्यता घोषित नहीं कर सकते। पूर्णांकों पर aRb यदि a−b, 3 से विभाज्य हो, एक महत्वपूर्ण उदाहरण है। a−a=0, इसलिए स्वतुल्यता मिलती है। यदि a−b=3k, तो b−a=−3k, इसलिए सममिति है। a−b=3k और b−c=3m जोड़ने पर a−c=3(k+m), इसलिए संक्रामकता है। एक अवयव a का तुल्यता वर्ग (Equivalence class) उससे संबंधित सभी अवयवों का समुच्चय है। इस उदाहरण में शेषफल 0,1,2 के अनुसार 3 वर्ग हैं। हर पूर्णांक ठीक 1 वर्ग में आता है। अलग वर्गों का सर्वनिष्ठ रिक्त होता है, और उनका सम्मिलन पूरा Z है। वर्ग की पहचान के लिए प्रतिनिधि बदल सकते हैं; 1 और 4 एक ही वर्ग देते हैं। चित्र में अलग रंग केवल समूह पहचानने का साधन हैं, संख्याओं का नया गुण नहीं। पहले संबंध सिद्ध करें, फिर वर्ग लिखें; कुछ उदाहरण मिल जाने को सामान्य प्रमाण न मानें।"
+      },
+      "formula": "a~b ⇔ 3|(a−b); [a]={x∈Z:x~a}",
+      "question": {
+        "en": "Are 2 and 8 in the same class modulo 3?",
+        "hi": "मापांक 3 के अनुसार 2 और 8 एक वर्ग में हैं?"
+      },
+      "answer": {
+        "en": "Yes, because 8−2=6 is divisible by 3.",
+        "hi": "हाँ; 8−2=6, 3 से विभाज्य है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Functions: domain, codomain and range",
+        "hi": "फलन: प्रांत, सहप्रांत और परास"
+      },
+      "body": {
+        "en": "A function assigns exactly one output in B to every input in A. The range is the set of attained outputs and may be smaller than the codomain. Domain restrictions are part of the function.",
+        "hi": "फलन (Function) f:A→B में A के प्रत्येक अवयव को B का ठीक 1 अवयव मिलता है। A प्रांत (Domain), B सहप्रांत (Codomain) और वास्तव में प्राप्त निर्गतों का समुच्चय परास (Range) है। हर निवेश का निर्गत होना तथा उसका एकमात्र होना, दोनों जरूरी हैं। अलग निवेशों का समान निर्गत होना फलन की शर्त नहीं तोड़ता। f:R→R, f(x)=x² में सहप्रांत R है, पर परास [0,∞) है। f(x)=1/x लिखते समय वास्तविक प्रांत से 0 हटाना होगा। केवल सूत्र फलन को पूरी तरह नहीं बताता; प्रांत और सहप्रांत बदलने से उसकी एकैकी या आच्छादक स्थिति बदल सकती है। तीर चित्र में हर बाएँ बिंदु से ठीक 1 तीर होना चाहिए। वक्र के लिए ऊर्ध्वाधर रेखा परीक्षण बताता है कि किसी x पर 1 से अधिक y तो नहीं हैं। यह परीक्षण आच्छादकता नहीं जाँचता। शब्द प्रश्न में पहले स्वीकार्य निवेश तय करें, फिर गणना करें। प्राप्त उत्तर स्वीकार्य सहप्रांत में भी होना चाहिए। किसी प्रतिबंधित प्रांत में मिले उत्तर को बिना जाँच पूरे R का परिणाम न बताएँ।"
+      },
+      "formula": "f:A→B; Range(f)={f(x):x∈A}⊆B",
+      "question": {
+        "en": "What is the range of f:R→R, f(x)=x²?",
+        "hi": "f:R→R, f(x)=x² का परास क्या है?"
+      },
+      "answer": {
+        "en": "[0,∞).",
+        "hi": "[0,∞)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Injective and surjective functions",
+        "hi": "एकैकी और आच्छादक फलन"
+      },
+      "body": {
+        "en": "Injectivity forbids distinct inputs sharing an output. Surjectivity requires every codomain element to be attained. A bijection has both properties; prove them separately.",
+        "hi": "एकैकी फलन (Injective function) में अलग निवेशों के अलग निर्गत होते हैं। प्रमाण में f(a)=f(b) मानकर a=b निकालना उपयोगी है। एकैकी न होने के लिए a≠b तथा f(a)=f(b) वाला 1 उदाहरण दें। आच्छादक फलन (Surjective function) में सहप्रांत B का प्रत्येक y किसी x∈A से मिलता है। इसके लिए y=f(x) हल करें और जाँचें कि मिला x प्रांत में है। f:R→R, f(x)=2x+1 एकैकी है और y के लिए x=(y−1)/2 वास्तविक है, इसलिए आच्छादक भी है। दोनों गुण वाला फलन द्विएकी (Bijective) है। f:R→R, x² न एकैकी है न आच्छादक; −1 और 1 का निर्गत समान है तथा ऋणात्मक सहप्रांतीय मान नहीं मिलते। यही नियम [0,∞) से [0,∞) में लें तो दोनों गुण मिलते हैं। क्षैतिज रेखा परीक्षण एकैकीपन समझाता है, पर सहप्रांत देखे बिना आच्छादकता तय नहीं करता। सीमित समुच्चयों में तीरों की जाँच करें: दो तीर एक निर्गत पर मिलें तो एकैकीपन नहीं; कोई दायाँ बिंदु खाली रहे तो आच्छादकता नहीं।"
+      },
+      "formula": "Injective: f(a)=f(b)⇒a=b; surjective: ∀y∈B ∃x∈A, f(x)=y",
+      "question": {
+        "en": "Is f:N→N, f(x)=x+1 onto, with N={1,2,...}?",
+        "hi": "N={1,2,...} पर f(x)=x+1 आच्छादक है?"
+      },
+      "answer": {
+        "en": "No; 1 has no preimage in N.",
+        "hi": "नहीं; 1 का कोई पूर्वप्रतिबिंब N में नहीं है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Composition of functions",
+        "hi": "फलनों का संयोजन"
+      },
+      "body": {
+        "en": "For f:A→B and g:B→C, g∘f applies f first and then g. Composition is associative but generally not commutative. This is included in the prescribed UP Board syllabus.",
+        "hi": "फलनों का संयोजन (Composition) यूपी बोर्ड के निर्धारित पाठ्यक्रम में है। f:A→B तथा g:B→C हों, तो (g∘f)(x)=g(f(x)) है। दाएँ लिखा f पहले लगता है और उसका निर्गत g का निवेश बनता है। उदाहरणतः f(x)=x+1 और g(x)=x² हों, तो g∘f=(x+1)², जबकि f∘g=x²+1 है। इसलिए संयोजन सामान्यतः क्रमविनिमेय नहीं है। संयोजन का प्रांत निकालते समय x का f के प्रांत में होना तथा f(x) का g के प्रांत में होना दोनों जाँचें। यदि g(t)=√t और f(x)=x−2 है, तो g∘f के लिए x≥2 चाहिए। संयोजन साहचर्य होता है: h∘(g∘f)=(h∘g)∘f, जब सभी संयोजन परिभाषित हों। इसका अर्थ काम का क्रम बदलना नहीं, समूह बनाने का तरीका बदलना है। तत्समक फलन I_A(x)=x लगाने से उपयुक्त तरफ मूल फलन ही रहता है। सूत्र निकालने के बाद कोई सरल निवेश रखकर क्रम जाँचें। मशीनों की श्रृंखला उपयोगी मॉडल है, पर हर मशीन की स्वीकार्य निवेश सीमा को भी मॉडल में समझें।"
+      },
+      "formula": "(g∘f)(x)=g(f(x)); h∘(g∘f)=(h∘g)∘f",
+      "question": {
+        "en": "For f(x)=x+1 and g(x)=2x, find (g∘f)(3).",
+        "hi": "f(x)=x+1, g(x)=2x के लिए (g∘f)(3) निकालें।"
+      },
+      "answer": {
+        "en": "g(f(3))=g(4)=8.",
+        "hi": "g(f(3))=g(4)=8।"
+      }
+    },
+    {
+      "title": {
+        "en": "Inverse functions",
+        "hi": "प्रतिलोम फलन"
+      },
+      "body": {
+        "en": "A function has a two-sided inverse precisely when it is bijective. Find an inverse by solving y=f(x), then exchange the roles of input and output, retaining the correct domains.",
+        "hi": "प्रतिलोम फलन (Inverse function) f की प्रक्रिया उलटता है। f:A→B द्विएकी हो तभी B→A का फलन f⁻¹ ऐसा मिलता है कि f⁻¹∘f=I_A और f∘f⁻¹=I_B हों। एकैकीपन से उलटी दिशा का निर्गत एकमात्र रहता है और आच्छादकता से B का हर निवेश ढकता है। f⁻¹(x) का अर्थ 1/f(x) नहीं है। f(x)=3x−2 के लिए y=3x−2 से x=(y+2)/3; इसलिए f⁻¹(x)=(x+2)/3 है। प्रांत और सहप्रांत प्रतिलोम में अदलते हैं। f:R→R, x² का प्रतिलोम फलन नहीं है, लेकिन [0,∞) पर प्रतिबंध करने से √x मिलता है। शाखा चुनना इसलिए आवश्यक है कि 1 निर्गत के लिए 2 संभव पूर्वप्रतिबिंब न रहें। जाँच में दोनों संयोजन लिखें और पहचान फलन प्राप्त करें। प्रतिलोम का आलेख मूल आलेख का y=x में प्रतिबिंब है। केवल चित्र की समानता प्रमाण नहीं; सूत्र, प्रांत तथा दोनों संयोजन उत्तर को पूरा बनाते हैं। अनुप्रयोग में इकाइयाँ भी उलटती भूमिका निभाती हैं, जैसे तापमान रूपांतरण का वापस रूपांतरण।"
+      },
+      "formula": "f⁻¹∘f=I_A; f∘f⁻¹=I_B",
+      "question": {
+        "en": "Find the inverse of f:R→R, f(x)=2x+5.",
+        "hi": "f:R→R, f(x)=2x+5 का प्रतिलोम निकालें।"
+      },
+      "answer": {
+        "en": "f⁻¹(x)=(x−5)/2.",
+        "hi": "f⁻¹(x)=(x−5)/2।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Test equality on A={1,2,3} for equivalence.",
+        "hi": "A={1,2,3} पर बराबरी के संबंध की तुल्यता जाँचें।"
+      },
+      "steps": [
+        {
+          "en": "Given: R={(1,1),(2,2),(3,3)}. To find: its three properties.",
+          "hi": "दिया: R={(1,1),(2,2),(3,3)}। ज्ञात करें: तीनों गुण।"
+        },
+        {
+          "en": "Each a equals itself; reversing an equal pair leaves it equal.",
+          "hi": "हर a स्वयं के बराबर है; समान युग्म उलटने पर भी समान है।"
+        },
+        {
+          "en": "If a=b and b=c, then a=c. All three tests hold.",
+          "hi": "a=b तथा b=c से a=c। तीनों जाँच सही हैं।"
+        }
+      ],
+      "answer": {
+        "en": "R is an equivalence relation.",
+        "hi": "R तुल्यता संबंध है।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Is f:R→R, f(x)=x² injective?",
+        "hi": "f:R→R, f(x)=x² एकैकी है?"
+      },
+      "steps": [
+        {
+          "en": "To disprove injectivity, find distinct inputs sharing one output.",
+          "hi": "एकैकीपन गलत सिद्ध करने के लिए समान निर्गत वाले अलग निवेश खोजें।"
+        },
+        {
+          "en": "Take a=1, b=−1: f(1)=f(−1)=1.",
+          "hi": "a=1, b=−1 लें: f(1)=f(−1)=1।"
+        },
+        {
+          "en": "Since 1≠−1, the equality of outputs is a valid counterexample.",
+          "hi": "1≠−1, इसलिए समान निर्गत वाला यह उचित प्रति-उदाहरण है।"
+        }
+      ],
+      "answer": {
+        "en": "Not injective.",
+        "hi": "एकैकी नहीं है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Show f:R→R, f(x)=3x−2 is bijective.",
+        "hi": "f:R→R, f(x)=3x−2 को द्विएकी सिद्ध करें।"
+      },
+      "steps": [
+        {
+          "en": "Given f(a)=f(b). Then 3a−2=3b−2 implies a=b.",
+          "hi": "दिया f(a)=f(b)। 3a−2=3b−2 से a=b; अतः एकैकी।"
+        },
+        {
+          "en": "For arbitrary y∈R, solve y=3x−2: x=(y+2)/3∈R.",
+          "hi": "हर y∈R के लिए y=3x−2 हल करें: x=(y+2)/3∈R।"
+        },
+        {
+          "en": "Every codomain value is attained, so the function is onto.",
+          "hi": "हर सहप्रांतीय मान मिलता है, इसलिए आच्छादक है।"
+        }
+      ],
+      "answer": {
+        "en": "Both injective and onto; hence bijective.",
+        "hi": "एकैकी तथा आच्छादक दोनों, इसलिए द्विएकी।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "For f(x)=x−2 and g(x)=√x, find g∘f and its real domain.",
+        "hi": "f(x)=x−2 तथा g(x)=√x के लिए g∘f और उसका वास्तविक प्रांत निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Apply f first: (g∘f)(x)=√(x−2).",
+          "hi": "पहले f लगाएँ: (g∘f)(x)=√(x−2)।"
+        },
+        {
+          "en": "A real square root needs x−2≥0.",
+          "hi": "वास्तविक वर्गमूल के लिए x−2≥0।"
+        },
+        {
+          "en": "Solve the inequality: x≥2.",
+          "hi": "असमानता हल करें: x≥2।"
+        }
+      ],
+      "answer": {
+        "en": "√(x−2), domain [2,∞).",
+        "hi": "√(x−2), प्रांत [2,∞)।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "For f:(0,∞)→(0,∞), f(x)=1/x, find the inverse and verify both compositions.",
+        "hi": "f:(0,∞)→(0,∞), f(x)=1/x का प्रतिलोम तथा दोनों संयोजन जाँचें।"
+      },
+      "steps": [
+        {
+          "en": "1/a=1/b implies a=b; for y>0, x=1/y>0 gives f(x)=y.",
+          "hi": "1/a=1/b से a=b; y>0 के लिए x=1/y>0 लेने पर f(x)=y।"
+        },
+        {
+          "en": "The function is bijective. Solving y=1/x gives x=1/y.",
+          "hi": "फलन द्विएकी है। y=1/x से x=1/y मिलता है।"
+        },
+        {
+          "en": "f⁻¹(f(x))=1/(1/x)=x and f(f⁻¹(y))=y, on the stated positive domains.",
+          "hi": "दिए धनात्मक प्रांतों पर f⁻¹(f(x))=1/(1/x)=x और f(f⁻¹(y))=y।"
+        }
+      ],
+      "answer": {
+        "en": "f⁻¹(x)=1/x; f is its own inverse.",
+        "hi": "f⁻¹(x)=1/x; फलन स्वयं अपना प्रतिलोम है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A relation on A is a subset of:",
+        "hi": "A पर संबंध किसका उपसमुच्चय है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A×A",
+            "hi": "A×A"
+          },
+          "reason": {
+            "en": "Both entries lie in A.",
+            "hi": "दोनों स्थानों के अवयव A में हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A only",
+            "hi": "केवल A"
+          },
+          "reason": {
+            "en": "Elements of a relation are ordered pairs.",
+            "hi": "संबंध के अवयव क्रमित युग्म हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(A) only",
+            "hi": "केवल P(A)"
+          },
+          "reason": {
+            "en": "This is the set of subsets, not the required Cartesian square.",
+            "hi": "यह उपसमुच्चयों का संग्रह है, कार्तीय वर्ग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "R only",
+            "hi": "केवल R"
+          },
+          "reason": {
+            "en": "A need not consist of real numbers.",
+            "hi": "A में वास्तविक संख्याएँ ही हों, आवश्यक नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which condition means reflexive?",
+        "hi": "स्वतुल्य होने की शर्त कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "aRa for every a∈A",
+            "hi": "हर a∈A के लिए aRa"
+          },
+          "reason": {
+            "en": "All diagonal pairs are required.",
+            "hi": "सभी विकर्ण युग्म जरूरी हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "aRb ⇒ bRa only",
+            "hi": "केवल aRb ⇒ bRa"
+          },
+          "reason": {
+            "en": "That defines symmetry.",
+            "hi": "यह सममिति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Some aRa",
+            "hi": "कुछ aRa"
+          },
+          "reason": {
+            "en": "Every element is required.",
+            "hi": "हर अवयव जरूरी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "aRb and bRc ⇒ aRc",
+            "hi": "aRb और bRc ⇒ aRc"
+          },
+          "reason": {
+            "en": "That defines transitivity.",
+            "hi": "यह संक्रामकता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "On {1,2}, which relation is symmetric but not reflexive?",
+        "hi": "{1,2} पर कौन सममित है, स्वतुल्य नहीं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "{(1,2),(2,1)}",
+            "hi": "{(1,2),(2,1)}"
+          },
+          "reason": {
+            "en": "Reverse pairs exist but both diagonal pairs are absent.",
+            "hi": "उलटे युग्म हैं, दोनों विकर्ण युग्म नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "{(1,1),(2,2)}",
+            "hi": "{(1,1),(2,2)}"
+          },
+          "reason": {
+            "en": "It is reflexive too.",
+            "hi": "यह स्वतुल्य भी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "{(1,1),(2,2),(1,2)}",
+            "hi": "{(1,1),(2,2),(1,2)}"
+          },
+          "reason": {
+            "en": "It is reflexive but lacks (2,1).",
+            "hi": "यह स्वतुल्य है, पर (2,1) नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "{(1,2)}",
+            "hi": "{(1,2)}"
+          },
+          "reason": {
+            "en": "The reverse pair is missing.",
+            "hi": "उलटा युग्म अनुपस्थित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which extra pair is required by (1,2),(2,3) for transitivity?",
+        "hi": "संक्रामकता के लिए (1,2),(2,3) के साथ कौन-सा युग्म चाहिए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(1,3)",
+            "hi": "(1,3)"
+          },
+          "reason": {
+            "en": "It directly joins the chain endpoints.",
+            "hi": "यह श्रृंखला के सिरों को जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(3,1)",
+            "hi": "(3,1)"
+          },
+          "reason": {
+            "en": "That reverses the required direction.",
+            "hi": "दिशा उलट गई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(2,2)",
+            "hi": "(2,2)"
+          },
+          "reason": {
+            "en": "It does not close this chain.",
+            "hi": "इससे यह श्रृंखला पूरी नहीं होती।"
+          }
+        },
+        {
+          "text": {
+            "en": "(3,3)",
+            "hi": "(3,3)"
+          },
+          "reason": {
+            "en": "It does not supply the missing endpoint pair.",
+            "hi": "सिरों का आवश्यक युग्म नहीं मिलता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A bijection is:",
+        "hi": "द्विएकी फलन क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Injective and onto",
+            "hi": "एकैकी और आच्छादक"
+          },
+          "reason": {
+            "en": "Both properties are needed.",
+            "hi": "दोनों गुण जरूरी हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Injective only",
+            "hi": "केवल एकैकी"
+          },
+          "reason": {
+            "en": "It can miss codomain values.",
+            "hi": "सहप्रांत के मान छूट सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Onto only",
+            "hi": "केवल आच्छादक"
+          },
+          "reason": {
+            "en": "Different inputs can still share outputs.",
+            "hi": "अलग निवेशों का निर्गत समान हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A constant function on R",
+            "hi": "R पर अचर फलन"
+          },
+          "reason": {
+            "en": "It is neither injective nor onto R.",
+            "hi": "यह न एकैकी है न R पर आच्छादक।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Range of x² as a real function is:",
+        "hi": "वास्तविक फलन x² का परास है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "[0,∞)",
+            "hi": "[0,∞)"
+          },
+          "reason": {
+            "en": "Squares are nonnegative and every nonnegative number has a square root.",
+            "hi": "वर्ग गैरऋणात्मक है; हर गैरऋणात्मक संख्या का वर्गमूल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "R",
+            "hi": "R"
+          },
+          "reason": {
+            "en": "Negative outputs cannot occur.",
+            "hi": "ऋणात्मक निर्गत नहीं मिलते।"
+          }
+        },
+        {
+          "text": {
+            "en": "(0,∞)",
+            "hi": "(0,∞)"
+          },
+          "reason": {
+            "en": "Zero is also attained.",
+            "hi": "0 भी मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Z",
+            "hi": "Z"
+          },
+          "reason": {
+            "en": "Noninteger outputs occur too.",
+            "hi": "गैरपूर्णांक निर्गत भी हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For f(x)=x+1 and g(x)=2x, (f∘g)(2)=",
+        "hi": "f(x)=x+1 और g(x)=2x के लिए (f∘g)(2)="
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "g(2)=4, then f(4)=5.",
+            "hi": "g(2)=4, फिर f(4)=5।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "This is (g∘f)(2).",
+            "hi": "यह (g∘f)(2) है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "The second function f has not been applied.",
+            "hi": "दूसरा फलन f नहीं लगाया।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "This is f(2), not the composition.",
+            "hi": "यह f(2) है, संयोजन नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The inverse of f(x)=2x−3 on R is:",
+        "hi": "R पर f(x)=2x−3 का प्रतिलोम है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(x+3)/2",
+            "hi": "(x+3)/2"
+          },
+          "reason": {
+            "en": "Solve y=2x−3 for x.",
+            "hi": "y=2x−3 में x अलग करें।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/(2x−3)",
+            "hi": "1/(2x−3)"
+          },
+          "reason": {
+            "en": "This is a reciprocal, not an inverse function.",
+            "hi": "यह व्युत्क्रम संख्या है, प्रतिलोम फलन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2x+3",
+            "hi": "2x+3"
+          },
+          "reason": {
+            "en": "Division by 2 is also needed.",
+            "hi": "2 से भाग भी देना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(x−3)/2",
+            "hi": "(x−3)/2"
+          },
+          "reason": {
+            "en": "The sign reverses incorrectly.",
+            "hi": "चिह्न गलत लिया गया।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which map is bijective?",
+        "hi": "कौन-सा फलन द्विएकी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x²:[0,∞)→[0,∞)",
+            "hi": "x²:[0,∞)→[0,∞)"
+          },
+          "reason": {
+            "en": "It is strictly increasing and reaches every nonnegative value.",
+            "hi": "यह वृद्धि करता है और हर गैरऋणात्मक मान देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x²:R→R",
+            "hi": "x²:R→R"
+          },
+          "reason": {
+            "en": "It repeats outputs and misses negatives.",
+            "hi": "निर्गत दोहरते और ऋणात्मक मान छूटते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "x+1:N→N, N starts at 1",
+            "hi": "x+1:N→N, N का आरंभ 1"
+          },
+          "reason": {
+            "en": "The codomain value 1 is missed.",
+            "hi": "सहप्रांतीय मान 1 नहीं मिलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "0:R→R",
+            "hi": "0:R→R"
+          },
+          "reason": {
+            "en": "Only zero is attained.",
+            "hi": "केवल 0 मिलता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For integers, a~b iff 3 divides a−b. Which is in [1]?",
+        "hi": "पूर्णांकों पर a~b यदि 3|(a−b)। [1] में कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "7−1=6 is divisible by 3.",
+            "hi": "7−1=6, 3 से विभाज्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "6−1=5 is not divisible by 3.",
+            "hi": "6−1=5, 3 से विभाज्य नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "2−1=1 is not divisible by 3.",
+            "hi": "2−1=1, 3 से विभाज्य नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "0−1=−1 is not divisible by 3.",
+            "hi": "0−1=−1, 3 से विभाज्य नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define a relation and a function.",
+        "hi": "संबंध और फलन परिभाषित करें।"
+      },
+      "answer": {
+        "en": "A relation is any subset of A×B; a function gives exactly one output in B to every input in A.",
+        "hi": "संबंध A×B का कोई उपसमुच्चय है; फलन A के हर निवेश को B का ठीक 1 निर्गत देता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Prove congruence modulo 2 is an equivalence relation on Z.",
+        "hi": "Z पर मापांक 2 की सर्वांगसमता को तुल्यता संबंध सिद्ध करें।"
+      },
+      "answer": {
+        "en": "a−a=0; reversing a difference changes its sign; adding two even differences gives an even difference. Thus reflexive, symmetric and transitive.",
+        "hi": "a−a=0; अंतर उलटने से चिह्न बदलता है; दो सम अंतर जोड़ने पर सम अंतर मिलता है। अतः स्वतुल्य, सममित और संक्रामक।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish codomain and range for x²:R→R.",
+        "hi": "x²:R→R में सहप्रांत और परास अलग बताएँ।"
+      },
+      "answer": {
+        "en": "Codomain is R by declaration; range is [0,∞) because squares are nonnegative and all nonnegative values are attained.",
+        "hi": "घोषित सहप्रांत R है; वर्ग गैरऋणात्मक हैं और सभी गैरऋणात्मक मान मिलते हैं, इसलिए परास [0,∞) है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give an injective map N→N that is not onto.",
+        "hi": "N→N का एकैकी पर अनाच्छादक फलन दें।"
+      },
+      "answer": {
+        "en": "f(x)=x+1 is injective but misses 1 when N starts at 1.",
+        "hi": "f(x)=x+1 एकैकी है; N का आरंभ 1 हो तो सहप्रांत का 1 नहीं मिलता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Show composition need not commute.",
+        "hi": "दिखाएँ कि संयोजन क्रमविनिमेय होना जरूरी नहीं।"
+      },
+      "answer": {
+        "en": "For f(x)=x+1, g(x)=x²: g∘f=(x+1)² but f∘g=x²+1. They differ, e.g. at x=1.",
+        "hi": "f(x)=x+1, g(x)=x² लें। g∘f=(x+1)², पर f∘g=x²+1; x=1 पर मान अलग हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find and check inverse of x↦5x+4 on R.",
+        "hi": "R पर x↦5x+4 का प्रतिलोम निकालकर जाँचें।"
+      },
+      "answer": {
+        "en": "f⁻¹(x)=(x−4)/5. Both compositions simplify to x.",
+        "hi": "f⁻¹(x)=(x−4)/5। दोनों दिशाओं का संयोजन सरल करने पर x मिलता है।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not confuse symmetry with transitivity, range with codomain, g∘f with f∘g, or f⁻¹ with 1/f.",
+    "hi": "सममिति को संक्रामकता, परास को सहप्रांत, g∘f को f∘g या f⁻¹ को 1/f न मानें।"
+  },
+  "revision": [
+    {
+      "en": "A relation is a subset of a Cartesian product.",
+      "hi": "संबंध कार्तीय गुणन का उपसमुच्चय है।"
+    },
+    {
+      "en": "Equivalence needs all three properties.",
+      "hi": "तुल्यता के लिए तीनों गुण चाहिए।"
+    },
+    {
+      "en": "Bijection means one-one and onto.",
+      "hi": "द्विएकी का अर्थ एकैकी और आच्छादक है।"
+    },
+    {
+      "en": "Apply the rightmost function first.",
+      "hi": "संयोजन में सबसे दायाँ फलन पहले लगाएँ।"
+    },
+    {
+      "en": "A two-sided inverse exists for a bijection.",
+      "hi": "द्विएकी फलन का दोनों दिशाओं वाला प्रतिलोम होता है।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Ordered pairs → relation properties → equivalence classes → functions → bijections → composition → inverse.",
+    "hi": "क्रमित युग्म → संबंध के गुण → तुल्यता वर्ग → फलन → द्विएकीपन → संयोजन → प्रतिलोम।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics XII, Chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh101.pdf"
+    },
+    {
+      "title": "UPMSP Mathematics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    }
+  ],
+  "engine": "twelve-math",
+  "scenes": []
+}

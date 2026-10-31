@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p,low})=>{let width=.5+p[0]*.15;g.box(0,.5,0,width,.36,.6);for(let i=0;i<(low?20:40);i++){let x=Math.sin(i*7)*width*.9,z=Math.cos(i*3)*.5;g.sphere(x,.65+Math.sin(i)*.13,z,.045,C.blue)}for(let i=0;i<Math.round(p[0]*4);i++){let phase=(t*.4+i*.37)%2;g.sphere(Math.sin(i*8)*width*.8,.1-phase*.65,Math.cos(i*3)*.4,.04,C.gold)}g.arrow([width+.15,.4,0],[width+.15,-.6,0],C.gold);return[read('Surface area factor','सतह क्षेत्रफल गुणक',fmt(p[0]),'×'),read('Illustrative escape-rate factor','सांकेतिक निकलने की दर',fmt(p[0]),'×')];};

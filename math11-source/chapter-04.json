@@ -1,0 +1,880 @@
+{
+  "id": 4,
+  "title": {
+    "en": "Complex Numbers and Quadratic Equations",
+    "hi": "सम्मिश्र संख्याएँ और द्विघात समीकरण"
+  },
+  "goal": {
+    "en": "Calculate with a+ib, interpret the complex plane and solve real quadratics with nonreal roots.",
+    "hi": "a+ib में गणना करें,सम्मिश्र तल समझें और अवास्तविक मूल वाले वास्तविक द्विघात हल करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Why complex numbers are needed",
+        "hi": "सम्मिश्र संख्याओं की आवश्यकता"
+      },
+      "body": {
+        "en": "No real number has square −1 because every real square is nonnegative. Introduce i with i²=−1. A complex number has the form z=a+ib with real a,b; a is its real part and b its imaginary part. The imaginary part is the real coefficient b, not ib. Every real number is complex with b=0. Purely imaginary numbers have a=0. Two complex numbers are equal when their real parts and imaginary parts match separately. Powers of i repeat with cycle i,−1,−i,1; reduce exponents modulo 4. The extension preserves the usual addition and multiplication laws. Avoid applying real ordering symbols such as > to arbitrary complex numbers. Read each definition carefully.",
+        "hi": "किसी वास्तविक संख्या का वर्ग −1 नहीं हो सकता, क्योंकि वास्तविक वर्ग गैरऋणात्मक है। इसलिए i²=−1 वाली संख्या i परिभाषित करते हैं। सम्मिश्र संख्या (Complex number) z=a+ib में a और b वास्तविक हैं। a वास्तविक भाग (Real part) और b काल्पनिक भाग (Imaginary part) है। ध्यान दें कि काल्पनिक भाग b है, पूरा ib नहीं। प्रत्येक वास्तविक संख्या b=0 लेकर सम्मिश्र भी है। a=0 वाली संख्या शुद्ध काल्पनिक होती है। दो सम्मिश्र संख्याएँ तभी समान हैं जब उनके वास्तविक तथा काल्पनिक भाग अलग-अलग समान हों। i की घातें i,−1,−i,1 के चक्र में दोहरती हैं। घात को 4 से भाग देकर शेष के अनुसार मान निकालें। यह विस्तार सामान्य जोड़ तथा गुणा के नियम बनाए रखता है। लेकिन वास्तविक संख्याओं की क्रम व्यवस्था सीधे सम्मिश्रों पर लागू नहीं होती। किसी भी z के लिए z>0 लिखना सामान्यतः अर्थपूर्ण नहीं है। परिभाषा, घटक और संक्रिया को अलग पहचानना आगे द्विघात के अवास्तविक मूल समझने का आधार है। परिभाषाएँ ध्यानपूर्वक पढ़ें।"
+      },
+      "formula": "i²=−1; z=a+ib; Re(z)=a, Im(z)=b",
+      "question": {
+        "en": "Find i^15.",
+        "hi": "i^15 निकालें।"
+      },
+      "answer": {
+        "en": "15 leaves remainder 3 modulo 4, so i^15=−i.",
+        "hi": "15 का 4 से शेष 3 है,इसलिए i^15=−i।"
+      }
+    },
+    {
+      "title": {
+        "en": "Addition, subtraction and multiplication",
+        "hi": "जोड़, घटाव और गुणा"
+      },
+      "body": {
+        "en": "Add or subtract real and imaginary parts separately. Thus (2+3i)+(4−i)=6+2i. Multiply by distribution and then replace i² by −1: (a+ib)(c+id)=(ac−bd)+i(ad+bc). For example (1+2i)(3−i)=5+5i. Brackets are essential when subtracting a complex number because both component signs change. The additive identity is 0 and multiplicative identity 1; addition and multiplication are commutative and associative, with multiplication distributing over addition. Complex numbers are not vectors under multiplication: a product combines both coordinates. Check calculations by separately collecting terms with and without i after expanding.",
+        "hi": "सम्मिश्र संख्याएँ जोड़ते या घटाते समय वास्तविक और काल्पनिक भाग अलग-अलग मिलाते हैं। (2+3i)+(4−i)=6+2i है। गुणा में वितरण नियम लगाएँ और अंत में i² के स्थान पर −1 रखें। इससे (a+ib)(c+id)=(ac−bd)+i(ad+bc) मिलता है। उदाहरणतः (1+2i)(3−i)=3−i+6i−2i²=5+5i है। ऋण चिह्न के बाद पूरी संख्या को कोष्ठक में रखें, क्योंकि घटाने पर दोनों भागों के चिह्न बदलते हैं। योग का तत्समक 0 और गुणा का तत्समक 1 है। जोड़ और गुणा क्रमविनिमेय तथा साहचर्य हैं और गुणा योग पर वितरित होता है। फिर भी गुणन को केवल दोनों निर्देशांकों का अलग-अलग गुणन न समझें; मिश्रित पद जरूरी हैं। पहले विस्तृत गुणनफल लिखना, फिर i² बदलना और अंत में मानक रूप a+ib बनाना सुरक्षित क्रम है। अंतिम उत्तर में i² बचा हो, तो सरलीकरण अधूरा है। बराबरी जाँचने के लिए दोनों भागों की स्वतंत्र तुलना करें।"
+      },
+      "formula": "(a+ib)(c+id)=(ac−bd)+i(ad+bc)",
+      "question": {
+        "en": "Find (2+i)(2−i).",
+        "hi": "(2+i)(2−i) निकालें।"
+      },
+      "answer": {
+        "en": "4−i²=5.",
+        "hi": "4−i²=5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Conjugate, modulus and division",
+        "hi": "संयुग्मी, मापांक और भाग"
+      },
+      "body": {
+        "en": "The conjugate of z=a+ib is z̄=a−ib. Its modulus |z|=√(a²+b²) is a nonnegative real number. Their product zz̄=a²+b²=|z|². To divide by nonzero c+id, multiply numerator and denominator by c−id. The denominator becomes c²+d²>0. A complex number has a multiplicative inverse exactly when it is nonzero. For z=3−4i, |z|=5 and z̄=3+4i. Conjugation reverses the imaginary sign but not the modulus. The identity |zw|=|z||w| helps check multiplication. Distinguish z² from |z|²: the first is generally complex, while the second is real. For example z=1+i has z²=2i but |z|²=2. This explicit comparison prevents the common mistake of dropping a conjugate mark. Also z+z̄=2a and z−z̄=2ib, so the two coordinates can be recovered from a number and its conjugate.",
+        "hi": "z=a+ib का संयुग्मी (Conjugate) z̄=a−ib है। उसका मापांक (Modulus) |z|=√(a²+b²) गैरऋणात्मक वास्तविक संख्या है। गुणन zz̄=a²+b²=|z|² मिलता है। अशून्य c+id से भाग देने के लिए अंश और हर को c−id से गुणा करें। हर c²+d² बनता है, जो c+id≠0 होने पर धनात्मक है। इसलिए हर अशून्य सम्मिश्र संख्या का गुणात्मक प्रतिलोम मौजूद है। z=3−4i के लिए z̄=3+4i तथा |z|=5 है। संयुग्मी में केवल काल्पनिक भाग का चिह्न बदलता है; मापांक नहीं बदलता। |zw|=|z||w| गुणन की उपयोगी जाँच है। z² तथा |z|² को न मिलाएँ। पहला सामान्यतः सम्मिश्र हो सकता है, जबकि दूसरा हमेशा गैरऋणात्मक वास्तविक है। भागफल सरल करने के बाद उत्तर को a+ib रूप में लिखें। यदि हर में i बचा है, तो संयुग्मी विधि अभी पूरी नहीं हुई। मूल भाजक शून्य है या नहीं, यह जाँचना गणना से पहले आवश्यक है। उदाहरणतः z=1+i में z²=2i,लेकिन |z|²=2 है। यह सीधी तुलना संयुग्मी चिह्न छोड़ने की सामान्य गलती रोकती है। साथ ही z+z̄=2a और z−z̄=2ib हैं। इसलिए संख्या तथा उसके संयुग्मी से दोनों घटक वापस निकाले जा सकते हैं।"
+      },
+      "formula": "|z|=√(a²+b²); zz̄=|z|²; 1/z=z̄/|z|² for z≠0",
+      "question": {
+        "en": "Find 1/(1+i).",
+        "hi": "1/(1+i) निकालें।"
+      },
+      "answer": {
+        "en": "(1−i)/2.",
+        "hi": "(1−i)/2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Argand plane and distance",
+        "hi": "आर्गंड तल और दूरी"
+      },
+      "body": {
+        "en": "The Argand plane represents z=a+ib by point (a,b). The horizontal axis is the real axis and the vertical axis imaginary. The origin represents 0 and the modulus is distance from the origin. The distance between z₁ and z₂ is |z₁−z₂|. Conjugate points reflect across the real axis, while −z is opposite through the origin. Addition has the parallelogram interpretation because coordinates add. A picture helps interpret formulas but does not impose a total ordering on complex points. For z=−3+4i, the point lies in quadrant II and has modulus 5. The axes show the coefficient of i, not a separate imaginary unit on each tick. Moving a point horizontally changes its real part, while vertical movement changes its imaginary coefficient. A drawing grid needs a common scale on both axes before a displayed Euclidean distance represents the modulus faithfully.",
+        "hi": "आर्गंड तल (Argand plane) में z=a+ib को बिंदु (a,b) से दिखाते हैं। क्षैतिज अक्ष वास्तविक और ऊर्ध्वाधर अक्ष काल्पनिक अक्ष है। मूलबिंदु 0 को दर्शाता है। मापांक मूलबिंदु से दूरी है। z₁ तथा z₂ के बीच दूरी |z₁−z₂| है, क्योंकि अंतर के वास्तविक तथा काल्पनिक भाग निर्देशांक अंतर देते हैं। संयुग्मी बिंदु वास्तविक अक्ष के बारे में परावर्तित होते हैं। −z मूलबिंदु के पार विपरीत बिंदु है। जोड़ में निर्देशांक जुड़ते हैं, इसलिए उसका समांतर चतुर्भुज वाला अर्थ मिलता है। चित्र बीजगणित समझाता है, लेकिन पूरे सम्मिश्र तल पर बड़ा-छोटा का वास्तविक क्रम नहीं बनाता। −3+4i दूसरे चतुर्थांश में है और मूलबिंदु से उसकी दूरी 5 है। काल्पनिक अक्ष पर अंक b का मान बताते हैं; बिंदु की सम्मिश्र संख्या लिखते समय ib जोड़ते हैं। पहले बिंदु अंकित करें, फिर चतुर्थांश और दूरी जाँचें। इससे ध्रुवीय रूप में कोण चुनने की गलती भी कम होती है। बिंदु का क्षैतिज स्थान बदलने से वास्तविक भाग और ऊर्ध्वाधर स्थान से काल्पनिक गुणांक बदलता है। चित्र में दूरी को मापांक के समान पढ़ने से पहले दोनों अक्षों का पैमाना समान होना चाहिए।"
+      },
+      "formula": "z=a+ib ↔ (a,b); distance(z₁,z₂)=|z₁−z₂|",
+      "question": {
+        "en": "Find distance between 1+i and 4+5i.",
+        "hi": "1+i तथा 4+5i के बीच दूरी निकालें।"
+      },
+      "answer": {
+        "en": "|(4+5i)−(1+i)|=|3+4i|=5.",
+        "hi": "|(4+5i)−(1+i)|=|3+4i|=5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Polar representation and argument",
+        "hi": "ध्रुवीय रूप और कोणांक"
+      },
+      "body": {
+        "en": "For nonzero z, write z=r(cosθ+i sinθ), with r=|z|>0. An argument θ is the directed angle from the positive real axis to the point. Arguments differ by integer multiples of 2π. The principal argument is chosen in (−π,π]. Compute cosθ=a/r and sinθ=b/r, using both signs to choose the quadrant. A tangent ratio alone cannot distinguish opposite quadrants. The origin has modulus 0 but no unique argument. For −1+i, r=√2 and principal argument 3π/4. A polar expression separates size from direction and makes rotational effects of multiplication visible.",
+        "hi": "अशून्य z को ध्रुवीय रूप (Polar form) z=r(cosθ+i sinθ) में लिखते हैं, जहाँ r=|z|>0 है। कोणांक (Argument) θ धनात्मक वास्तविक अक्ष से बिंदु की किरण तक दिष्ट कोण है। पूरे चक्कर जोड़ने पर वही बिंदु मिलता है, इसलिए कोणांक θ+2kπ भी होते हैं। मुख्य कोणांक (Principal argument) सामान्यतः (−π,π] में चुनते हैं। cosθ=a/r और sinθ=b/r निकालकर दोनों चिह्नों से सही चतुर्थांश चुनें। केवल tanθ=b/a विपरीत चतुर्थांशों में अंतर नहीं बताता। मूलबिंदु का मापांक 0 है, लेकिन कोई अद्वितीय कोणांक नहीं है। −1+i के लिए r=√2 और मुख्य कोणांक 3π/4 है। ध्रुवीय रूप आकार और दिशा को अलग दिखाता है। किसी नकारात्मक वास्तविक संख्या का मुख्य कोणांक π है, न कि −π, इस चुनी सीमा में। अंतिम रूप को खोलकर वास्तविक तथा काल्पनिक भाग मूल संख्या से मिलाएँ; यह कोण तथा त्रिज्या दोनों की सटीक जाँच देता है।"
+      },
+      "formula": "z=r(cosθ+i sinθ), r>0; principal θ∈(−π,π]",
+      "question": {
+        "en": "Find principal argument of −i.",
+        "hi": "−i का मुख्य कोणांक निकालें।"
+      },
+      "answer": {
+        "en": "−π/2.",
+        "hi": "−π/2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Quadratic equations over complex numbers",
+        "hi": "सम्मिश्र क्षेत्र में द्विघात समीकरण"
+      },
+      "body": {
+        "en": "For ax²+bx+c=0 with real coefficients and a≠0, completing the square gives x=(−b±√D)/(2a), D=b²−4ac. If D>0 there are two distinct real roots, if D=0 a repeated real root, and if D<0 two nonreal conjugate roots. Write √D=i√(−D) when D<0. For x²+4=0, roots are ±2i. The denominator 2a applies to the entire numerator. A root must satisfy the original equation. The relation between roots and coefficients remains α+β=−b/a and αβ=c/a even when roots are nonreal. Complex extension supplies solutions that the real system alone cannot provide.",
+        "hi": "वास्तविक गुणांकों वाले ax²+bx+c=0 में a≠0 हो, तो पूर्ण वर्ग बनाकर x=(−b±√D)/(2a) मिलता है। यहाँ विविक्तकर (Discriminant) D=b²−4ac है। D>0 में 2 अलग वास्तविक मूल, D=0 में दोहरा वास्तविक मूल और D<0 में 2 अवास्तविक संयुग्मी मूल होते हैं। D<0 हो, तो √D=i√(−D) लिखते हैं। x²+4=0 के मूल ±2i हैं, क्योंकि (2i)²=−4। पूरे अंश को 2a से भाग देना है; केवल मूल वाले भाग को नहीं। हर प्राप्त मूल मूल समीकरण में रखने पर 0 देना चाहिए। मूलों α तथा β का योग −b/a और गुणनफल c/a होता है, भले वे अवास्तविक हों। सम्मिश्र विस्तार वास्तविक संख्या प्रणाली में न मिलने वाले हल देता है। लेकिन a=0 होने पर सूत्र लागू नहीं है, क्योंकि तब समीकरण द्विघात ही नहीं रहता। पहले गुणांक पहचानें, फिर विविक्तकर तथा उसका चिह्न निकालें और अंत में मानक सम्मिश्र रूप में उत्तर दें।"
+      },
+      "formula": "D=b²−4ac; x=(−b±√D)/(2a)",
+      "question": {
+        "en": "Solve x²+1=0 over C.",
+        "hi": "C में x²+1=0 हल करें।"
+      },
+      "answer": {
+        "en": "x=i or x=−i.",
+        "hi": "x=i अथवा x=−i।"
+      }
+    },
+    {
+      "title": {
+        "en": "Conjugate roots and coefficient checks",
+        "hi": "संयुग्मी मूल और गुणांक जाँच"
+      },
+      "body": {
+        "en": "A polynomial with real coefficients has nonreal roots in conjugate pairs. If α=u+iv, v≠0 is a root, its conjugate u−iv is also a root because conjugating the polynomial equation leaves real coefficients unchanged. Their sum is 2u and product u²+v², both real. Thus a real quadratic with roots 2±3i is x²−4x+13=0. If coefficients are complex rather than real, the conjugate-pair conclusion need not hold. Do not assume the two roots have opposite real parts; they have equal real parts and opposite imaginary parts. Check a proposed equation by expanding its factors and comparing all coefficients.",
+        "hi": "वास्तविक गुणांकों वाले बहुपद में अवास्तविक मूल संयुग्मी युग्म में आते हैं। u+iv मूल हो और v≠0 हो, तो u−iv भी मूल है। कारण यह है कि समीकरण का संयुग्मी लेने पर वास्तविक गुणांक नहीं बदलते। दोनों मूलों का योग 2u और गुणनफल u²+v² वास्तविक हैं। इसलिए 2±3i मूलों वाला एक वास्तविक द्विघात x²−4x+13=0 है। गुणांक स्वयं सम्मिश्र हों, तो संयुग्मी युग्म का निष्कर्ष जरूरी नहीं। उदाहरणतः x−i=0 का अकेला मूल i है। संयुग्मी मूलों के वास्तविक भाग समान और काल्पनिक भाग विपरीत होते हैं; दोनों पूरे मूलों को एक-दूसरे का ऋणात्मक न मानें। मूलों से समीकरण बनाते समय (x−α)(x−β)=0 लिखना चिह्न सुरक्षित रखता है। विस्तार के बाद x² का गुणांक 1 हो, तभी योग तथा गुणनफल सीधे मध्य और अचर पद देते हैं। किसी अशून्य स्थिरांक से पूरा समीकरण गुणा करने पर मूल वही रहते हैं, लेकिन गुणांक बदल सकते हैं।"
+      },
+      "formula": "(x−(u+iv))(x−(u−iv))=x²−2ux+(u²+v²)",
+      "question": {
+        "en": "Form a monic real quadratic with roots 1±2i.",
+        "hi": "1±2i मूलों वाला एकक वास्तविक द्विघात बनाएँ।"
+      },
+      "answer": {
+        "en": "x²−2x+5=0.",
+        "hi": "x²−2x+5=0।"
+      }
+    },
+    {
+      "title": {
+        "en": "Square-root rules and careful verification",
+        "hi": "वर्गमूल नियम और सावधान जाँच"
+      },
+      "body": {
+        "en": "The real identity √a√b=√(ab) is safe for a,b≥0. Extending it blindly to negative real inputs leads to contradictions: √(−1)√(−1)=i²=−1, whereas the principal square root of 1 is 1. A nonzero complex number has two square roots, which are negatives of each other; a principal square root is a selected one. Solve w²=z by writing w=u+iv and comparing u²−v² and 2uv with the real and imaginary parts of z. For elementary quadratics, write negative discriminants as i times a positive real square root. Keep exact forms and check by substitution rather than relying on the appearance of a plotted point.",
+        "hi": "वास्तविक नियम √a√b=√(ab), a,b≥0 के लिए सुरक्षित है। उसे ऋणात्मक संख्याओं पर बिना शर्त लगाने से विरोध आता है। √(−1)√(−1)=i²=−1 है, जबकि 1 का मुख्य वर्गमूल 1 है। किसी अशून्य सम्मिश्र संख्या के 2 वर्गमूल होते हैं, जो एक-दूसरे के ऋणात्मक हैं। मुख्य वर्गमूल उन दोनों में से चुना गया मान है। w²=z हल करने में w=u+iv रखें। फिर u²−v² वास्तविक भाग और 2uv काल्पनिक भाग से मिलाएँ। साधारण द्विघात में ऋणात्मक विविक्तकर को i गुणा धनात्मक वास्तविक वर्गमूल लिखना पर्याप्त और स्पष्ट है। सटीक मूल वाले रूप रखें; अनावश्यक दशमलव से जाँच कठिन हो सकती है। प्राप्त हल को मूल समीकरण में रखकर पुष्टि करें। ग्राफ का बिंदु या सन्निकट स्क्रीन माप अकेले सटीक उत्तर सिद्ध नहीं करता। जोड़, संयुग्मी, मापांक और वर्ग को अलग-अलग क्रियाएँ समझें। उत्तर में हर, चिह्न और दोनों मूल लिखे हैं या नहीं, यह अंतिम व्यवस्थित जाँच का हिस्सा होना चाहिए।"
+      },
+      "formula": "√(−a)=i√a for a>0; do not extend √a√b=√(ab) blindly",
+      "question": {
+        "en": "Why is √(−4)√(−9) not 6 under principal-root notation?",
+        "hi": "मुख्य वर्गमूल संकेत में √(−4)√(−9),6 क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "It equals (2i)(3i)=−6; the nonnegative-real product rule was misapplied.",
+        "hi": "यह (2i)(3i)=−6 है;गैरऋणात्मक वास्तविक नियम गलत लगाया गया।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Simplify i^27.",
+        "hi": "i^27 सरल करें।"
+      },
+      "steps": [
+        {
+          "en": "27=4×6+3.",
+          "hi": "27=4×6+3।"
+        },
+        {
+          "en": "i^27=(i⁴)^6i³=−i.",
+          "hi": "i^27=(i⁴)^6i³=−i।"
+        }
+      ],
+      "answer": {
+        "en": "−i.",
+        "hi": "−i।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find (3+2i)+(1−5i).",
+        "hi": "(3+2i)+(1−5i) निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Add real parts:3+1=4.",
+          "hi": "वास्तविक भाग:3+1=4।"
+        },
+        {
+          "en": "Add imaginary coefficients:2−5=−3.",
+          "hi": "काल्पनिक गुणांक:2−5=−3।"
+        }
+      ],
+      "answer": {
+        "en": "4−3i.",
+        "hi": "4−3i।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Express (2+i)/(1−i) in a+ib form.",
+        "hi": "(2+i)/(1−i) को a+ib रूप में लिखें।"
+      },
+      "steps": [
+        {
+          "en": "Multiply numerator and denominator by 1+i.",
+          "hi": "अंश और हर को 1+i से गुणा करें।"
+        },
+        {
+          "en": "Numerator=(2+i)(1+i)=1+3i.",
+          "hi": "अंश=(2+i)(1+i)=1+3i।"
+        },
+        {
+          "en": "Denominator=(1−i)(1+i)=2.",
+          "hi": "हर=(1−i)(1+i)=2।"
+        }
+      ],
+      "answer": {
+        "en": "1/2+(3/2)i.",
+        "hi": "1/2+(3/2)i।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Solve x²−4x+13=0.",
+        "hi": "x²−4x+13=0 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "D=16−52=−36.",
+          "hi": "D=16−52=−36।"
+        },
+        {
+          "en": "x=(4±6i)/2.",
+          "hi": "x=(4±6i)/2।"
+        },
+        {
+          "en": "Sum 4 and product 13 verify the roots.",
+          "hi": "योग 4 तथा गुणनफल 13 से जाँचें।"
+        }
+      ],
+      "answer": {
+        "en": "x=2±3i.",
+        "hi": "x=2±3i।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find square roots of 3+4i.",
+        "hi": "3+4i के वर्गमूल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Let (u+iv)²=3+4i, giving u²−v²=3 and 2uv=4.",
+          "hi": "(u+iv)²=3+4i से u²−v²=3 तथा 2uv=4।"
+        },
+        {
+          "en": "Also u²+v²=|3+4i|=5; hence u²=4,v²=1.",
+          "hi": "u²+v²=|3+4i|=5 से u²=4,v²=1।"
+        },
+        {
+          "en": "uv=2 requires matching signs: (u,v)=(2,1) or (−2,−1).",
+          "hi": "uv=2 से समान चिह्न:(u,v)=(2,1) या (−2,−1)।"
+        }
+      ],
+      "answer": {
+        "en": "2+i and −2−i.",
+        "hi": "2+i तथा −2−i।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "The imaginary part of 3−5i is",
+        "hi": "3−5i का काल्पनिक भाग है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−5",
+            "hi": "−5"
+          },
+          "reason": {
+            "en": "Im(a+ib)=b.",
+            "hi": "Im(a+ib)=b।"
+          }
+        },
+        {
+          "text": {
+            "en": "−5i",
+            "hi": "−5i"
+          },
+          "reason": {
+            "en": "The coefficient, not the whole term, is the imaginary part.",
+            "hi": "काल्पनिक भाग गुणांक है,पूरा पद नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "3 is the real part.",
+            "hi": "3 वास्तविक भाग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "The negative sign belongs to the coefficient.",
+            "hi": "ऋण चिह्न गुणांक का भाग है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "i^10 equals",
+        "hi": "i^10 है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "1 occurs at powers divisible by4.",
+            "hi": "4 से विभाज्य घातों पर 1।"
+          }
+        },
+        {
+          "text": {
+            "en": "i",
+            "hi": "i"
+          },
+          "reason": {
+            "en": "i occurs at remainder1.",
+            "hi": "शेष 1 पर i।"
+          }
+        },
+        {
+          "text": {
+            "en": "−i",
+            "hi": "−i"
+          },
+          "reason": {
+            "en": "−i occurs at remainder3.",
+            "hi": "शेष 3 पर −i।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "10 leaves remainder 2 modulo4.",
+            "hi": "10 का 4 से शेष 2 है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Conjugate of −2+3i is",
+        "hi": "−2+3i का संयुग्मी है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2+3i",
+            "hi": "2+3i"
+          },
+          "reason": {
+            "en": "The real sign must stay unchanged.",
+            "hi": "वास्तविक चिह्न नहीं बदलना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2+3i",
+            "hi": "−2+3i"
+          },
+          "reason": {
+            "en": "This is the original nonreal number.",
+            "hi": "यह मूल अवास्तविक संख्या है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2−3i",
+            "hi": "−2−3i"
+          },
+          "reason": {
+            "en": "Only the imaginary sign changes.",
+            "hi": "केवल काल्पनिक चिह्न बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2−3i",
+            "hi": "2−3i"
+          },
+          "reason": {
+            "en": "This is −z, not its conjugate.",
+            "hi": "यह −z है,संयुग्मी नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "|3−4i| equals",
+        "hi": "|3−4i| है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "25",
+            "hi": "25"
+          },
+          "reason": {
+            "en": "25 is the squared modulus.",
+            "hi": "25 मापांक का वर्ग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "√(9+16)=5.",
+            "hi": "√(9+16)=5।"
+          }
+        },
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "Modulus is not sum of absolute components.",
+            "hi": "मापांक घटकों के परिमाण का योग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "A modulus cannot be negative.",
+            "hi": "मापांक ऋणात्मक नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "(1+i)² equals",
+        "hi": "(1+i)² है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2i",
+            "hi": "2i"
+          },
+          "reason": {
+            "en": "1+2i+i²=2i.",
+            "hi": "1+2i+i²=2i।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "The mixed term was omitted.",
+            "hi": "मिश्रित पद छूटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "1+i",
+            "hi": "1+i"
+          },
+          "reason": {
+            "en": "Squaring changes the value.",
+            "hi": "वर्ग से मान बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2+2i",
+            "hi": "2+2i"
+          },
+          "reason": {
+            "en": "i² is −1, not1.",
+            "hi": "i²,−1 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The principal argument of −1 is",
+        "hi": "−1 का मुख्य कोणांक है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "0 describes positive real numbers.",
+            "hi": "0 धनात्मक वास्तविक दिशा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "π/2",
+            "hi": "π/2"
+          },
+          "reason": {
+            "en": "This is the positive imaginary axis.",
+            "hi": "यह धन काल्पनिक अक्ष है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित"
+          },
+          "reason": {
+            "en": "Only the origin lacks an argument.",
+            "hi": "केवल मूलबिंदु का कोणांक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "π",
+            "hi": "π"
+          },
+          "reason": {
+            "en": "Negative real axis has angle π in (−π,π].",
+            "hi": "(−π,π] में ऋण वास्तविक अक्ष का कोण π।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Roots of x²+9=0 are",
+        "hi": "x²+9=0 के मूल हैं"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "9i only",
+            "hi": "केवल 9i"
+          },
+          "reason": {
+            "en": "Both roots and the correct square magnitude are needed.",
+            "hi": "दोनों मूल और सही परिमाण चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "No complex roots",
+            "hi": "कोई सम्मिश्र मूल नहीं"
+          },
+          "reason": {
+            "en": "Complex extension supplies ±3i.",
+            "hi": "सम्मिश्र विस्तार ±3i देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "±3i",
+            "hi": "±3i"
+          },
+          "reason": {
+            "en": "(3i)²=−9.",
+            "hi": "(3i)²=−9।"
+          }
+        },
+        {
+          "text": {
+            "en": "±3",
+            "hi": "±3"
+          },
+          "reason": {
+            "en": "Their squares are +9, not−9.",
+            "hi": "इनके वर्ग +9 हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "If a real quadratic has root 2+i, its other root is",
+        "hi": "वास्तविक द्विघात का 1 मूल 2+i हो,तो दूसरा है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1−2i",
+            "hi": "1−2i"
+          },
+          "reason": {
+            "en": "Components are not exchanged.",
+            "hi": "घटक बदले नहीं जाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "2−i",
+            "hi": "2−i"
+          },
+          "reason": {
+            "en": "Nonreal roots occur as conjugates.",
+            "hi": "अवास्तविक मूल संयुग्मी युग्म हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2−i",
+            "hi": "−2−i"
+          },
+          "reason": {
+            "en": "This is the negative, not conjugate.",
+            "hi": "यह ऋणात्मक है,संयुग्मी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2+i",
+            "hi": "−2+i"
+          },
+          "reason": {
+            "en": "The real part should stay2.",
+            "hi": "वास्तविक भाग 2 रहना चाहिए।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "For z≠0, zz̄ equals",
+        "hi": "z≠0 में zz̄ है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "|z|²",
+            "hi": "|z|²"
+          },
+          "reason": {
+            "en": "It equals a²+b².",
+            "hi": "यह a²+b² है।"
+          }
+        },
+        {
+          "text": {
+            "en": "z²",
+            "hi": "z²"
+          },
+          "reason": {
+            "en": "A square does not generally conjugate a factor.",
+            "hi": "वर्ग में संयुग्मी गुणनखंड नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 always",
+            "hi": "हमेशा 0"
+          },
+          "reason": {
+            "en": "For nonzero z, a²+b²>0.",
+            "hi": "अशून्य z में a²+b²>0।"
+          }
+        },
+        {
+          "text": {
+            "en": "2Re(z)",
+            "hi": "2Re(z)"
+          },
+          "reason": {
+            "en": "That is z+z̄, not product.",
+            "hi": "यह z+z̄ है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which rule needs nonnegative real a,b?",
+        "hi": "किस नियम में a,b गैरऋणात्मक वास्तविक चाहिए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "i²=−1",
+            "hi": "i²=−1"
+          },
+          "reason": {
+            "en": "This is the defining relation of i.",
+            "hi": "यह i का परिभाषक संबंध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "z+0=z",
+            "hi": "z+0=z"
+          },
+          "reason": {
+            "en": "Addition identity holds for every complex z.",
+            "hi": "यह हर सम्मिश्र z पर सही।"
+          }
+        },
+        {
+          "text": {
+            "en": "z·1=z",
+            "hi": "z·1=z"
+          },
+          "reason": {
+            "en": "Multiplicative identity holds generally.",
+            "hi": "गुणात्मक तत्समक सामान्यतः सही।"
+          }
+        },
+        {
+          "text": {
+            "en": "√a√b=√(ab)",
+            "hi": "√a√b=√(ab)"
+          },
+          "reason": {
+            "en": "Negative inputs can violate this principal-root identity.",
+            "hi": "ऋणात्मक निवेशों पर मुख्य-मूल नियम विफल हो सकता है।"
+          }
+        }
+      ],
+      "correct": 3
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Simplify i^2026.",
+        "hi": "i^2026 सरल करें।"
+      },
+      "answer": {
+        "en": "2026 leaves remainder2 on division by4; result−1.",
+        "hi": "2026 का 4 से शेष 2;उत्तर −1।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find z̄ and |z| for z=5+12i.",
+        "hi": "z=5+12i के लिए z̄ तथा |z| निकालें।"
+      },
+      "answer": {
+        "en": "z̄=5−12i; |z|=13.",
+        "hi": "z̄=5−12i;|z|=13।"
+      }
+    },
+    {
+      "question": {
+        "en": "Calculate (3−i)/(1+i).",
+        "hi": "(3−i)/(1+i) निकालें।"
+      },
+      "answer": {
+        "en": "Multiply by1−i: numerator2−4i, denominator2; result1−2i.",
+        "hi": "1−i से गुणा:अंश2−4i,हर2;उत्तर1−2i।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve 2x²+2x+5=0.",
+        "hi": "2x²+2x+5=0 हल करें।"
+      },
+      "answer": {
+        "en": "D=4−40=−36; x=(−2±6i)/4=(−1±3i)/2.",
+        "hi": "D=4−40=−36;x=(−2±6i)/4=(−1±3i)/2।"
+      }
+    },
+    {
+      "question": {
+        "en": "Write −√3+i in polar form.",
+        "hi": "−√3+i का ध्रुवीय रूप लिखें।"
+      },
+      "answer": {
+        "en": "Modulus2, argument5π/6; 2(cos(5π/6)+i sin(5π/6)).",
+        "hi": "मापांक2,कोणांक5π/6;2(cos(5π/6)+i sin(5π/6))।"
+      }
+    },
+    {
+      "question": {
+        "en": "Form a real quadratic with roots −1±2i.",
+        "hi": "−1±2i मूलों वाला वास्तविक द्विघात बनाएँ।"
+      },
+      "answer": {
+        "en": "Sum−2,product5; x²+2x+5=0.",
+        "hi": "योग−2,गुणनफल5;x²+2x+5=0।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Im(a+ib)=b. Do not set i²=1, confuse z² with |z|², use a tangent ratio without quadrant, or extend real square-root product laws to negative inputs.",
+    "hi": "Im(a+ib)=b है। i²=1 न लें;z² और |z|² न मिलाएँ;चतुर्थांश बिना tan से कोण न चुनें;ऋणात्मक निवेशों पर वास्तविक मूल नियम न थोपें।"
+  },
+  "revision": [
+    {
+      "en": "i²=−1 extends the real system.",
+      "hi": "i²=−1 वास्तविक प्रणाली का विस्तार करता है।"
+    },
+    {
+      "en": "Match real and imaginary parts separately.",
+      "hi": "वास्तविक तथा काल्पनिक भाग अलग मिलाएँ।"
+    },
+    {
+      "en": "zz̄=|z|²=a²+b².",
+      "hi": "zz̄=|z|²=a²+b² है।"
+    },
+    {
+      "en": "Argand coordinates are (a,b).",
+      "hi": "आर्गंड निर्देशांक (a,b) हैं।"
+    },
+    {
+      "en": "D<0 gives nonreal conjugate roots for a real quadratic.",
+      "hi": "वास्तविक द्विघात में D<0 से अवास्तविक संयुग्मी मूल मिलते हैं।"
+    }
+  ],
+  "conceptMap": {
+    "en": "i²=−1 → a+ib arithmetic → conjugate/modulus → Argand and polar forms → quadratic roots.",
+    "hi": "i²=−1 → a+ib संक्रियाएँ → संयुग्मी/मापांक → आर्गंड और ध्रुवीय रूप → द्विघात मूल।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class XI, Chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh104.pdf"
+    },
+    {
+      "title": "UPMSP Class11 Mathematics syllabus2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/131-Maths-Class-11.pdf"
+    }
+  ],
+  "engine": "eleven-math",
+  "scenes": []
+}

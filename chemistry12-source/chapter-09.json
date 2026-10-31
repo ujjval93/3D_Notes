@@ -1,0 +1,1073 @@
+{
+  "number": 9,
+  "id": "chemistry12-09",
+  "title": {
+    "en": "Amines",
+    "hi": "ऐमीन"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Amines and their classification",
+        "hi": "ऐमीन और उनका वर्गीकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Amines are ammonia derivatives with carbon groups replacing H atoms. Primary, secondary and tertiary classification counts one, two or three carbon groups directly bonded to N. Quaternary ammonium ions have four carbon groups and positive charge. Aniline has direct N–aryl bonding, whereas benzylamine has an intervening CH2. An available nitrogen lone pair supports basic and nucleophilic behaviour.",
+          "hi": "ऐमीन (Amine) को अमोनिया के 1 या अधिक हाइड्रोजन के स्थान पर ऐल्किल या ऐरिल समूह रखने वाले यौगिक के रूप में समझते हैं। प्राथमिक RNH2, द्वितीयक R2NH और तृतीयक R3N वर्गों में नाइट्रोजन से जुड़े कार्बन समूहों की संख्या क्रमशः 1, 2 और 3 है। यह वर्गीकरण ऐल्कोहॉल से भिन्न गिनती है, क्योंकि ऐल्कोहॉल में –OH धारण करने वाले कार्बन के पड़ोसी गिने जाते हैं। चतुर्थक अमोनियम आयन R4N+ में 4 कार्बन समूह और औपचारिक धन आवेश होता है; उसे उदासीन तृतीयक ऐमीन नहीं कहते। ऐनिलीन में नाइट्रोजन सीधे बेंजीन वलय से जुड़ा है, जबकि बेंजिलऐमीन में बीच में CH2 समूह है। संरचना के इसी अंतर से क्षारकता और अभिक्रिया बदलती है। सामान्य उदासीन ऐमीन में नाइट्रोजन का एकाकी इलेक्ट्रॉन युग्म प्रोटॉन ग्रहण करने या नाभिकरागी आक्रमण में भाग ले सकता है। ऐमीन का वर्ग तय करते समय N–H आबंध और N–C आबंध अलग गिनें। आण्विक सूत्र अकेले प्राथमिक और द्वितीयक संरचनाओं को अलग करने के लिए पर्याप्त नहीं हो सकता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "CH3NHCH3 is secondary; (CH3)3N is tertiary.",
+          "hi": "CH3NHCH3 द्वितीयक और (CH3)3N तृतीयक है।"
+        },
+        {
+          "en": "A quaternary ammonium ion has no free nitrogen lone pair.",
+          "hi": "चतुर्थक अमोनियम आयन में मुक्त नाइट्रोजन एकाकी युग्म नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How is a secondary amine classified?",
+          "hi": "द्वितीयक ऐमीन की पहचान कैसे?"
+        },
+        "answer": {
+          "en": "Nitrogen is directly bonded to two carbon groups and one hydrogen.",
+          "hi": "नाइट्रोजन सीधे2 कार्बन समूह और1 हाइड्रोजन से जुड़ा है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Names, geometry and physical properties",
+        "hi": "नाम, ज्यामिति और भौतिक गुण"
+      },
+      "paragraphs": [
+        {
+          "en": "Use N-locants for substituents attached to nitrogen, as in N-methylethanamine. Aliphatic amine nitrogen is usually pyramidal, with its lone pair occupying the fourth approximate electron-pair direction. Primary and secondary amines can donate hydrogen bonds; tertiary amines can accept them from water but lack N–H donors. Solubility depends on the hydrocarbon portion and salt formation.",
+          "hi": "ऐल्किलऐमीन का नाम सामान्य नाम में ऐल्किल समूह के साथ amine लगाकर या IUPAC में मूल शृंखला पर –amine प्रत्यय लगाकर दिया जा सकता है। नाइट्रोजन पर अतिरिक्त प्रतिस्थापी हों तो N–स्थानांक उनका स्थान स्पष्ट करता है। CH3NHCH2CH3 को N-methylethanamine कहना बताता है कि मेथिल नाइट्रोजन पर है। ऐनिलीन स्वीकृत नाम है और वलय पर अन्य प्रतिस्थापियों के लिए स्थानांक देते हैं। उदासीन ऐलिफैटिक ऐमीन का नाइट्रोजन सामान्यतः त्रिकोणीय पिरामिडीय होता है; एकाकी युग्म को गिनती में शामिल करके चतुश्फलकीय इलेक्ट्रॉन व्यवस्था समझ सकते हैं। प्राथमिक और द्वितीयक ऐमीन में N–H होने से अंतराअणुक हाइड्रोजन आबंधन संभव है। तृतीयक ऐमीन स्वयं आबंध दान नहीं करते, पर जल से आबंध स्वीकार कर सकते हैं। छोटे ऐमीन जल में घुल सकते हैं; बढ़ते अध्रुवीय कार्बन भाग से विलेयता सामान्यतः घटती है। अम्ल से लवण बनाने पर विलेयता काफी बदल सकती है। गंध को सीधा सूँघकर पहचानने की विधि न अपनाएँ; अध्ययन में संरचना और नियंत्रित प्रयोगशाला प्रमाण का उपयोग करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "N-methyl does not mean methyl on carbon2 of the parent chain.",
+          "hi": "N-मिथिल का मतलब मूल शृंखला के कार्बन2 पर मेथिल नहीं।"
+        },
+        {
+          "en": "Hydrogen bonding and protonation are distinct processes.",
+          "hi": "हाइड्रोजन आबंधन और प्रोटॉनीकरण अलग प्रक्रियाएँ हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can trimethylamine accept a hydrogen bond from water?",
+          "hi": "क्या ट्राइमेथिलऐमीन जल से हाइड्रोजन आबंध स्वीकार कर सकता है?"
+        },
+        "answer": {
+          "en": "Yes; its lone pair can accept, although it has no N–H bond to donate.",
+          "hi": "हाँ; एकाकी युग्म स्वीकार कर सकता है, पर दान के लिए N–H नहीं है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Preparation of amines",
+        "hi": "ऐमीन का निर्माण"
+      },
+      "paragraphs": [
+        {
+          "en": "Nitro-group reduction gives primary amines; acidic reduction may require basification to release the neutral amine. Ammonolysis of alkyl halides can continue to higher alkylated products. Gabriel synthesis is useful for primary alkyl amines, not ordinary aryl amines by direct SN2. Nitrile reduction retains its carbon, while Hofmann bromamide rearrangement loses the carbonyl carbon of a primary amide.",
+          "hi": "नाइट्रो यौगिकों के अपचयन से प्राथमिक ऐमीन मिल सकता है। नाइट्रोबेंजीन से ऐनिलीन बनाने में उपयुक्त धातु–अम्ल या उत्प्रेरित हाइड्रोजनीकरण जैसे मार्ग आते हैं। अम्लीय अपचयन में पहले ऐमोनियम लवण बन सकता है, इसलिए उदासीन ऐमीन पाने के लिए कार्योपरांत क्षारीकरण आवश्यक हो सकता है। ऐल्किल हैलाइड की अमोनिया से अभिक्रिया में प्राथमिक ऐमीन बनने के बाद आगे ऐल्किलीकरण भी हो सकता है; इसलिए मिश्रण बनने की संभावना लिखें। अधिक अमोनिया प्राथमिक उत्पाद को बढ़ाने में मदद करता है, पर इसे पूर्णतः चयनात्मक सामान्य विधि न समझें। गैब्रियल थैलिमाइड संश्लेषण प्राथमिक ऐल्किल ऐमीन के लिए उपयोगी है। साधारण ऐरिल हैलाइड नाभिकरागी प्रतिस्थापन की इस SN2 प्रक्रिया में अनुकूल नहीं होते, इसलिए यह ऐनिलीन का सामान्य मार्ग नहीं है। नाइट्राइल के अपचयन से –CN कार्बन सहित –CH2NH2 समूह मिलता है, जिससे कार्बन गिनती का ध्यान जरूरी है। ऐमाइड के अपचयन और हॉफमान ब्रोमामाइड पुनर्विन्यास अलग प्रक्रियाएँ हैं: पहले में कार्बोनिल कार्बन बना रहता है, दूसरे में उत्पाद ऐमीन में 1 कार्बन कम होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "CH3CN reduction gives CH3CH2NH2, not CH3NH2.",
+          "hi": "CH3CN अपचयन से CH3CH2NH2, CH3NH2 नहीं।"
+        },
+        {
+          "en": "RCONH2 gives RNH2 in Hofmann bromamide reaction.",
+          "hi": "हॉफमान ब्रोमामाइड में RCONH2 से RNH2 मिलता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What amine forms from ethanamide in Hofmann bromamide reaction?",
+          "hi": "हॉफमान ब्रोमामाइड में एथेनैमाइड से कौन ऐमीन?"
+        },
+        "answer": {
+          "en": "Methylamine, with one fewer carbon.",
+          "hi": "मेथिलऐमीन, जिसमें1 कार्बन कम है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Basicity and equilibrium",
+        "hi": "क्षारकता और साम्य"
+      },
+      "paragraphs": [
+        {
+          "en": "Amines accept protons, and aqueous basicity can be compared through Kb or pKb at the same temperature. Smaller pKb means stronger base. Alkyl donation, solvation and steric effects all matter, so no universal aqueous primary–secondary–tertiary ranking applies to all substituents. Aniline is weaker than typical aliphatic amines because resonance reduces lone-pair availability for protonation.",
+          "hi": "ऐमीन का एकाकी इलेक्ट्रॉन युग्म H+ ग्रहण करके ऐमोनियम आयन बनाता है। जल में क्षारक साम्य B + H2O ⇌ BH+ + OH− लिखते हैं और Kb से प्रवृत्ति की तुलना करते हैं। समान माध्यम और ताप पर Kb अधिक या pKb कम होने का अर्थ अधिक क्षारकता है। ऐल्किल समूहों का इलेक्ट्रॉन दाता प्रभाव नाइट्रोजन पर इलेक्ट्रॉन उपलब्धता बढ़ा सकता है। गैस अवस्था में यह प्रवृत्ति स्पष्ट हो सकती है, लेकिन जलीय विलयन में बने आयन का जलयोजन और त्रिविमीय बाधा भी महत्त्वपूर्ण हैं। इसलिए प्राथमिक, द्वितीयक और तृतीयक सभी ऐमीन के लिए एक ही सार्वभौमिक जलीय क्रम रटना सही नहीं है। ऐनिलीन में एकाकी युग्म वलय में अनुनाद के कारण फैलता है और प्रोटॉन ग्रहण करने के लिए कम उपलब्ध रहता है। इसलिए ऐनिलीन सामान्य ऐलिफैटिक ऐमीन से कमजोर क्षारक है। वलय के प्रतिस्थापी अपनी इलेक्ट्रॉन आकर्षी या दाता प्रकृति और स्थान से क्षारकता बदलते हैं। दो मानों की तुलना में अम्ल की Ka और क्षार की Kb को बिना संबंधित साम्य लिखे सीधे न मिलाएँ।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A smaller pKb corresponds to a larger Kb.",
+          "hi": "छोटा pKb बड़े Kb के अनुरूप है।"
+        },
+        {
+          "en": "State solvent and temperature when comparing basicity data.",
+          "hi": "क्षारकता आँकड़े मिलाते समय विलायक और ताप लिखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which is the stronger base if pKb(A)=3 and pKb(B)=5?",
+          "hi": "pKb(A)=3 और pKb(B)=5 में प्रबल क्षारक कौन?"
+        },
+        "answer": {
+          "en": "A; its Kb is100 times larger in the same medium.",
+          "hi": "A; समान माध्यम में उसका Kb100 गुना बड़ा है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Alkylation, acylation and diagnostic reactions",
+        "hi": "ऐल्किलीकरण, ऐसिलीकरण और पहचान अभिक्रियाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Alkylation can continue to quaternary ammonium salts. Primary and secondary amines acylate to amides, unlike tertiary amines lacking N–H for the usual process. Acetylation moderates aniline ring activation. The carbylamine test is characteristic of primary amines. Hinsberg products differ in their N–H acidity and alkali solubility; use controlled laboratory observations rather than smell alone.",
+          "hi": "ऐमीन नाभिकरागी होने से उपयुक्त ऐल्किल हैलाइड के साथ आगे ऐल्किलीकरण कर सकते हैं। प्राथमिक से द्वितीयक, फिर तृतीयक और अंत में चतुर्थक अमोनियम लवण बनने की संभावना इसी कारण है। ऐसिल क्लोराइड या अम्ल ऐनहाइड्राइड से प्राथमिक और द्वितीयक ऐमीन ऐमाइड बना सकते हैं। तृतीयक ऐमीन में N–H नहीं होने से उसी सामान्य स्थायी ऐमाइड निर्माण का मार्ग नहीं मिलता। ऐनिलीन के ऐसिलीकरण में बना ऐसिटऐनिलाइड वलय पर नाइट्रोजन के इलेक्ट्रॉन दान को नियंत्रित करता है और कुछ संश्लेषणों में संरक्षण समूह की भूमिका निभाता है। कार्बिलऐमीन परीक्षण प्राथमिक ऐलिफैटिक और ऐरोमैटिक दोनों ऐमीन के लिए सकारात्मक हो सकता है। इसमें CHCl3 और ऐल्कोहॉलीय KOH की दशाओं में आइसोसायनाइड बनता है; यह घर पर करने का सुझाव नहीं है। हिन्सबर्ग अभिकर्मक बेंजीनसल्फोनिल क्लोराइड है। प्राथमिक ऐमीन से बना N–H वाला सल्फोनैमाइड क्षार में घुल सकता है, जबकि द्वितीयक का उत्पाद तुलनीय अम्लीय N–H नहीं रखता। वास्तविक पहचान में परिस्थिति और अन्य परीक्षण जोड़ें, केवल गंध या एक परिणाम पर निष्कर्ष न टिकाएँ।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A secondary amine is negative in the ordinary carbylamine test.",
+          "hi": "सामान्य कार्बिलऐमीन परीक्षण में द्वितीयक ऐमीन नकारात्मक है।"
+        },
+        {
+          "en": "Acylation and alkylation add different kinds of groups.",
+          "hi": "ऐसिलीकरण और ऐल्किलीकरण अलग प्रकार के समूह जोड़ते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does trimethylamine not form an ordinary neutral amide by simple acylation?",
+          "hi": "ट्राइमेथिलऐमीन सरल ऐसिलीकरण से सामान्य उदासीन ऐमाइड क्यों नहीं देता?"
+        },
+        "answer": {
+          "en": "It has no N–H to replace in the usual amide-forming pathway.",
+          "hi": "सामान्य ऐमाइड निर्माण में बदलने योग्य N–H नहीं है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Nitrous acid and diazonium salts",
+        "hi": "नाइट्रस अम्ल और डाइऐजोनियम लवण"
+      },
+      "paragraphs": [
+        {
+          "en": "Primary aliphatic diazonium intermediates are usually unstable. Primary aromatic amines can form aryl diazonium salts in cold solution. Aniline diazotisation typically uses NaNO2/HCl at273–278K. The N2+ group and its counterion must be distinguished. Secondary amines have different nitrous-acid chemistry. The cold preparation condition does not imply every subsequent diazonium conversion is conducted at the same temperature.",
+          "hi": "नाइट्रस अम्ल के साथ ऐमीन का व्यवहार उसके वर्ग और ऐलिफैटिक या ऐरोमैटिक संरचना पर निर्भर है। प्राथमिक ऐलिफैटिक ऐमीन से बने डाइऐजोनियम मध्यवर्ती सामान्यतः अस्थिर होते हैं और नाइट्रोजन गैस निकलने सहित अनेक उत्पाद मिल सकते हैं। प्राथमिक ऐरोमैटिक ऐमीन से निम्न ताप पर अपेक्षाकृत स्थिर ऐरिलडाइऐजोनियम लवण का विलयन प्राप्त किया जा सकता है। ऐनिलीन के डाइऐजोटीकरण में NaNO2 और HCl से नाइट्रस अम्ल स्थान पर बनता है और सामान्यतः 273–278 K ताप सीमा रखी जाती है। यह सीमा लवण के नियंत्रित निर्माण हेतु है; सभी अगले रूपांतरण उसी ताप पर नहीं किए जाते। बेंजीनडाइऐजोनियम क्लोराइड में धन आवेशित –N2+ समूह और प्रतिआयन Cl− अलग पहचानें। द्वितीयक ऐमीन नाइट्रोसो यौगिक दे सकते हैं, इसलिए उनकी अभिक्रिया को प्राथमिक ऐमीन के समान न लिखें। शुष्क डाइऐजोनियम लवणों का व्यवहार जोखिमपूर्ण हो सकता है; शैक्षिक नोट्स का उद्देश्य अभिक्रिया संबंध समझना है, बिना पर्यवेक्षण वास्तविक तैयारी नहीं। नियंत्रित विलयन की स्थिरता को स्थायी सभी परिस्थितियों की स्थिरता न समझें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Aryl diazonium salts are intermediates, not ordinary stable bottled amines.",
+          "hi": "ऐरिलडाइऐजोनियम लवण मध्यवर्ती हैं, सामान्य स्थायी ऐमीन नहीं।"
+        },
+        {
+          "en": "Formation of one diazonium group uses one primary aromatic amino group.",
+          "hi": "1 डाइऐजोनियम समूह के निर्माण में1 प्राथमिक ऐरोमैटिक अमीनो समूह लगता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which temperature range is normally used for aniline diazotisation?",
+          "hi": "ऐनिलीन डाइऐजोटीकरण की सामान्य ताप सीमा?"
+        },
+        "answer": {
+          "en": "273–278K, about0–5°C.",
+          "hi": "273–278K, लगभग0–5°C।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Diazonium substitutions and coupling",
+        "hi": "डाइऐजोनियम प्रतिस्थापन और युग्मन"
+      },
+      "paragraphs": [
+        {
+          "en": "Diazonium substitution can introduce Cl, Br or CN using suitable copper(I) reagents; KI, fluoroborate chemistry, warm water and reducing agents support other transformations. Azo coupling differs: it retains an –N=N– link between aromatic groups rather than releasing both N atoms as N2. Activated phenol or aniline rings generally couple at an available para position under appropriate medium conditions.",
+          "hi": "ऐरिलडाइऐजोनियम समूह उपयोगी है क्योंकि उसे कई अन्य समूहों से बदल सकते हैं। उपयुक्त कॉपर(I) लवणों के साथ सैंडमेयर अभिक्रिया में Cl, Br या CN समूह आ सकता है और N2 निकलता है। आयोडाइड के लिए KI तथा फ्लुओरो प्रतिस्थापन के लिए टेट्राफ्लुओरोबोरेट से संबंधित बाल्ज–शीमान मार्ग अलग पहचानें। गरम जल से फीनॉल और उपयुक्त अपचायक से हाइड्रोजन द्वारा प्रतिस्थापन भी संभव है। प्रत्येक रूपांतरण में वलय का कार्बन कंकाल सामान्यतः बना रहता है, जबकि –N2+ समूह हटता है। ऐजो युग्मन (Azo coupling) में डाइऐजोनियम आयन सक्रिय ऐरोमैटिक वलय से जुड़कर –N=N– सेतु बनाता है। फीनॉल के साथ हल्का क्षारीय माध्यम फीनॉक्साइड सक्रियता बढ़ाता है; ऐनिलीन के साथ माध्यम का चुनाव उसके प्रोटॉनीकरण को ध्यान में रखता है। युग्मन में सामान्यतः पैरा स्थान उपलब्ध हो तो अनुकूल होता है। प्रतिस्थापन में नाइट्रोजन गैस निकलना और युग्मन में 2 नाइट्रोजन वाला सेतु बने रहना मौलिक अंतर है। रंग बनने को अपने आप किसी विशेष रंगक की शुद्धता या सुरक्षा का प्रमाण न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Sandmeyer substitution and azo coupling have different nitrogen bookkeeping.",
+          "hi": "सैंडमेयर प्रतिस्थापन और ऐजो युग्मन में नाइट्रोजन का लेखा अलग है।"
+        },
+        {
+          "en": "The aromatic ring does not gain a carbon when –N2+ is replaced by Cl.",
+          "hi": "–N2+ को Cl से बदलने में ऐरोमैटिक वलय में कार्बन नहीं जुड़ता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does azo coupling remove all diazonium nitrogen as gas?",
+          "hi": "क्या ऐजो युग्मन में सारा डाइऐजोनियम नाइट्रोजन गैस बनकर हटता है?"
+        },
+        "answer": {
+          "en": "No; the azo product retains an –N=N– link.",
+          "hi": "नहीं; ऐजो उत्पाद में –N=N– संबंध बना रहता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Aniline ring reactions and conversion strategy",
+        "hi": "ऐनिलीन वलय अभिक्रिया और रूपांतरण रणनीति"
+      },
+      "paragraphs": [
+        {
+          "en": "Aniline strongly activates its ring and directs mainly ortho/para substitution. Bromine water gives2,4,6-tribromoaniline. Acylation moderates activation for controlled synthesis. Strong acid protonates aniline, changing its directing behaviour, so direct nitration is not a simple exclusively para process. In conversions decide whether to preserve, protect or replace –NH2, then track atoms, conditions and order of operations.",
+          "hi": "ऐनिलीन का –NH2 समूह एकाकी युग्म देकर बेंजीन वलय को सक्रिय करता है और सामान्यतः ऑर्थो–पैरा निर्देशक है। ब्रोमीन जल से तीव्र अभिक्रिया कर 2,4,6-ट्राइब्रोमोऐनिलीन का अवक्षेप बन सकता है। यदि केवल सीमित प्रतिस्थापन चाहिए तो पहले ऐसिलीकरण से समूह का प्रभाव घटाना उपयोगी है। प्रबल अम्लीय नाइट्रीकरण में ऐनिलीन का कुछ भाग ऐनिलिनियम आयन बन जाता है, जिसका निर्देशक प्रभाव अलग है। इसलिए सीधे नाइट्रीकरण को हमेशा केवल पैरा उत्पाद देने वाली सरल प्रक्रिया न लिखें। ऐसिटऐनिलाइड का नाइट्रीकरण और फिर जलअपघटन लक्ष्य नाइट्रोऐनिलीन की दिशा में नियंत्रित मार्ग दे सकता है। रूपांतरण का प्रश्न हल करते समय पहले लक्ष्य में नए समूह और प्रारंभिक पदार्थ के अंतर को पहचानें। फिर तय करें कि अमीनो समूह बचाना है, अस्थायी रूप से संरक्षित करना है या डाइऐजोनियम बनाकर बदलना है। कार्बन संख्या, नाइट्रोजन संख्या, माध्यम और चरणों का क्रम अलग लिखें। एक अभिकर्मक से असंभव कई परिवर्तन एक साथ न दिखाएँ। अंतिम उत्पाद में किसी मध्यवर्ती प्रतिआयन को सहसंयोजक आबंध की तरह बनाए रखना भी सामान्य त्रुटि है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Anilinium and neutral aniline do not have identical directing effects.",
+          "hi": "ऐनिलिनियम और उदासीन ऐनिलीन का निर्देशक प्रभाव समान नहीं।"
+        },
+        {
+          "en": "Protecting-group steps must be followed by the intended deprotection.",
+          "hi": "संरक्षण चरण के बाद अपेक्षित विसंरक्षण भी लिखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why acetylate aniline before a controlled ring substitution?",
+          "hi": "नियंत्रित वलय प्रतिस्थापन से पहले ऐनिलीन का ऐसिलीकरण क्यों?"
+        },
+        "answer": {
+          "en": "It moderates the amino-group activation and can improve control of substitution.",
+          "hi": "यह अमीनो समूह की सक्रियता घटाकर प्रतिस्थापन का नियंत्रण सुधारता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "B + H2O ⇌ BH+ + OH−",
+      "meaning": {
+        "en": "Base protonation equilibrium in water.",
+        "hi": "जल में क्षार प्रोटॉनीकरण साम्य।"
+      },
+      "units": {
+        "en": "Kb uses equilibrium activities; school dilute-solution expressions use concentrations.",
+        "hi": "Kb साम्य सक्रियताओं से; विद्यालयी तनु विलयन व्यंजक सांद्रताओं से।"
+      }
+    },
+    {
+      "expression": "pKb = −log10 Kb",
+      "meaning": {
+        "en": "Lower pKb means largerKb in the same medium.",
+        "hi": "समान माध्यम में कम pKb का अर्थ बड़ा Kb।"
+      },
+      "units": {
+        "en": "pKb is dimensionless.",
+        "hi": "pKb विमाहीन है।"
+      }
+    },
+    {
+      "expression": "RCONH2 → RNH2",
+      "meaning": {
+        "en": "Hofmann bromamide schematic change loses the carbonyl carbon; reagents and by-products complete the equation.",
+        "hi": "हॉफमान ब्रोमामाइड सांकेतिक परिवर्तन में कार्बोनिल कार्बन हटता है; अभिकर्मक-उपोत्पाद से समीकरण पूरा होगा।"
+      },
+      "units": {
+        "en": "Compare carbon counts rather than treating this as a balanced full equation.",
+        "hi": "इसे पूर्ण संतुलित समीकरण नहीं, कार्बन गिनती संबंध मानें।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Classify CH3NHCH2CH3.",
+        "hi": "CH3NHCH2CH3 का वर्ग बताएँ।"
+      },
+      "given": {
+        "en": "N has methyl,ethyl and H neighbours.",
+        "hi": "N से मेथिल,एथिल और H जुड़े हैं।"
+      },
+      "find": {
+        "en": "Class and name.",
+        "hi": "वर्ग और नाम।"
+      },
+      "formula": {
+        "en": "Count carbon groups directly on N.",
+        "hi": "N पर सीधे जुड़े कार्बन समूह गिनें।"
+      },
+      "steps": [
+        {
+          "en": "Two carbon groups make it secondary.",
+          "hi": "2 कार्बन समूह इसे द्वितीयक बनाते हैं।"
+        },
+        {
+          "en": "Use ethane parent with N-methyl substituent.",
+          "hi": "एथेन मूल और N-मिथिल प्रतिस्थापी लें।"
+        }
+      ],
+      "answer": {
+        "en": "Secondary amine; N-methylethanamine.",
+        "hi": "द्वितीयक ऐमीन; N-मेथिलएथेनऐमीन।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Predict the product of CH3CN reduction.",
+        "hi": "CH3CN अपचयन का उत्पाद बताएँ।"
+      },
+      "given": {
+        "en": "A two-carbon nitrile.",
+        "hi": "2 कार्बन नाइट्राइल।"
+      },
+      "find": {
+        "en": "Primary amine structure.",
+        "hi": "प्राथमिक ऐमीन संरचना।"
+      },
+      "formula": {
+        "en": "R–C≡N → R–CH2NH2.",
+        "hi": "R–C≡N → R–CH2NH2 ।"
+      },
+      "steps": [
+        {
+          "en": "Keep the nitrile carbon.",
+          "hi": "नाइट्राइल कार्बन बनाए रखें।"
+        },
+        {
+          "en": "Convert C≡N to CH2NH2 after reduction/work-up.",
+          "hi": "अपचयन/कार्योपरांत C≡N को CH2NH2 करें।"
+        }
+      ],
+      "answer": {
+        "en": "CH3CH2NH2, ethanamine.",
+        "hi": "CH3CH2NH2, एथेनऐमीन।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Compare bases with pKb3.2 and4.2 in the same aqueous medium.",
+        "hi": "समान जलीय माध्यम में pKb3.2 और4.2 वाले क्षार मिलाएँ।"
+      },
+      "given": {
+        "en": "pKb(A)=3.2;pKb(B)=4.2.",
+        "hi": "pKb(A)=3.2;pKb(B)=4.2 ।"
+      },
+      "find": {
+        "en": "Stronger base and Kb ratio.",
+        "hi": "प्रबल क्षार और Kb अनुपात।"
+      },
+      "formula": {
+        "en": "pKb=−log10Kb.",
+        "hi": "pKb=−log10Kb।"
+      },
+      "steps": [
+        {
+          "en": "The smaller pKb belongs to the stronger base A.",
+          "hi": "छोटे pKb वाला A अधिक प्रबल है।"
+        },
+        {
+          "en": "Kb(A)/Kb(B)=10^(4.2−3.2)=10.",
+          "hi": "Kb(A)/Kb(B)=10^(4.2−3.2)=10 ।"
+        }
+      ],
+      "answer": {
+        "en": "A is stronger; its Kb is10 times that of B.",
+        "hi": "A प्रबल; उसका Kb,B से10 गुना है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "What amine follows Hofmann reaction of CH3CH2CONH2?",
+        "hi": "CH3CH2CONH2 की हॉफमान अभिक्रिया से कौन ऐमीन?"
+      },
+      "given": {
+        "en": "Propanamide,3 carbons.",
+        "hi": "प्रोपेनैमाइड,3 कार्बन।"
+      },
+      "find": {
+        "en": "Product and carbon count.",
+        "hi": "उत्पाद और कार्बन संख्या।"
+      },
+      "formula": {
+        "en": "RCONH2 → RNH2 with loss of the carbonyl carbon.",
+        "hi": "कार्बोनिल कार्बन हटाकर RCONH2 → RNH2 ।"
+      },
+      "steps": [
+        {
+          "en": "R is CH3CH2.",
+          "hi": "R=CH3CH2 है।"
+        },
+        {
+          "en": "Attach NH2 to that group, giving2 carbons.",
+          "hi": "उस समूह पर NH2 रखें;2 कार्बन बचते हैं।"
+        }
+      ],
+      "answer": {
+        "en": "CH3CH2NH2, ethanamine, not propan-1-amine.",
+        "hi": "CH3CH2NH2 एथेनऐमीन, प्रोपेन-1-ऐमीन नहीं।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Convert aniline into chlorobenzene using a diazonium intermediate.",
+        "hi": "डाइऐजोनियम मध्यवर्ती से ऐनिलीन को क्लोरोबेंजीन में बदलें।"
+      },
+      "given": {
+        "en": "C6H5NH2.",
+        "hi": "C6H5NH2 ।"
+      },
+      "find": {
+        "en": "Reagents and sequence.",
+        "hi": "अभिकर्मक और क्रम।"
+      },
+      "formula": {
+        "en": "Diazotisation followed by Sandmeyer substitution.",
+        "hi": "डाइऐजोटीकरण के बाद सैंडमेयर प्रतिस्थापन।"
+      },
+      "steps": [
+        {
+          "en": "NaNO2/HCl at273–278K forms benzenediazonium chloride in solution.",
+          "hi": "273–278K पर NaNO2/HCl से बेंजीनडाइऐजोनियम क्लोराइड विलयन।"
+        },
+        {
+          "en": "Suitable CuCl/HCl conditions replace the diazonium group byCl, releasingN2.",
+          "hi": "उपयुक्त CuCl/HCl दशाएँ डाइऐजोनियम को Cl से बदलकर N2 छोड़ती हैं।"
+        }
+      ],
+      "answer": {
+        "en": "C6H5NH2 → C6H5N2+Cl− → C6H5Cl; the ring keeps6 carbons.",
+        "hi": "C6H5NH2 → C6H5N2+Cl− → C6H5Cl; वलय में6 कार्बन बने रहते हैं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which is a tertiary amine?",
+        "hi": "तृतीयक ऐमीन कौन?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(CH3)3N",
+            "hi": "(CH3)3N"
+          },
+          "reason": {
+            "en": "Three carbon groups are attached to neutralN.",
+            "hi": "उदासीन N पर3 कार्बन समूह।"
+          }
+        },
+        {
+          "text": {
+            "en": "CH3NH2",
+            "hi": "CH3NH2"
+          },
+          "reason": {
+            "en": "One carbon group makes it primary.",
+            "hi": "1 कार्बन समूह से प्राथमिक।"
+          }
+        },
+        {
+          "text": {
+            "en": "(CH3)2NH",
+            "hi": "(CH3)2NH"
+          },
+          "reason": {
+            "en": "Two carbon groups make it secondary.",
+            "hi": "2 कार्बन समूह से द्वितीयक।"
+          }
+        },
+        {
+          "text": {
+            "en": "(CH3)4N+",
+            "hi": "(CH3)4N+"
+          },
+          "reason": {
+            "en": "Four groups define a quaternary ammonium ion.",
+            "hi": "4 समूह चतुर्थक अमोनियम आयन हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why is aniline weaker than a typical alkylamine?",
+        "hi": "ऐनिलीन सामान्य ऐल्किलऐमीन से कमजोर क्षार क्यों?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Its lone pair is delocalised into the ring.",
+            "hi": "एकाकी युग्म वलय में विस्थानीकृत है।"
+          },
+          "reason": {
+            "en": "Resonance lowers lone-pair availability for H+.",
+            "hi": "अनुनाद H+ हेतु युग्म की उपलब्धता घटाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It has no nitrogen.",
+            "hi": "इसमें नाइट्रोजन नहीं।"
+          },
+          "reason": {
+            "en": "Aniline does containN.",
+            "hi": "ऐनिलीन में N है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It is always fully protonated without acid.",
+            "hi": "अम्ल बिना हमेशा पूर्ण प्रोटॉनीकृत।"
+          },
+          "reason": {
+            "en": "Protonation depends on equilibrium and medium.",
+            "hi": "प्रोटॉनीकरण साम्य और माध्यम पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All aromatic compounds are nonbasic by definition.",
+            "hi": "सभी ऐरोमैटिक परिभाषा से अक्षारकीय।"
+          },
+          "reason": {
+            "en": "Basicity depends on the specific structure.",
+            "hi": "क्षारकता विशिष्ट संरचना पर निर्भर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A smaller pKb at the same temperature and solvent means:",
+        "hi": "समान ताप-विलायक में छोटा pKb बताता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Stronger base",
+            "hi": "अधिक प्रबल क्षार"
+          },
+          "reason": {
+            "en": "pKb=−logKb, so Kb is larger.",
+            "hi": "pKb=−logKb, इसलिए Kb बड़ा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Smaller Kb",
+            "hi": "छोटा Kb"
+          },
+          "reason": {
+            "en": "The logarithmic sign reverses this claim.",
+            "hi": "ऋण लघुगणक से यह दावा उलटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No proton acceptance",
+            "hi": "प्रोटॉन ग्रहण नहीं"
+          },
+          "reason": {
+            "en": "It indicates greater proton-accepting equilibrium tendency.",
+            "hi": "यह प्रोटॉन ग्रहण की अधिक साम्य प्रवृत्ति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Necessarily a tertiary amine",
+            "hi": "अनिवार्य तृतीयक ऐमीन"
+          },
+          "reason": {
+            "en": "Class alone does not determine a universal pKb.",
+            "hi": "केवल वर्ग सार्वभौमिक pKb तय नहीं करता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Hofmann bromamide reaction of ethanamide gives:",
+        "hi": "एथेनैमाइड की हॉफमान ब्रोमामाइड अभिक्रिया देती है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Methylamine",
+            "hi": "मेथिलऐमीन"
+          },
+          "reason": {
+            "en": "The carbonyl carbon is lost, leaving one carbon.",
+            "hi": "कार्बोनिल कार्बन हटकर1 कार्बन बचता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ethylamine",
+            "hi": "एथिलऐमीन"
+          },
+          "reason": {
+            "en": "This retains the carbonyl carbon incorrectly for this reaction.",
+            "hi": "इसमें इस अभिक्रिया के विपरीत कार्बोनिल कार्बन बचाया गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "Aniline",
+            "hi": "ऐनिलीन"
+          },
+          "reason": {
+            "en": "There is no aromatic ring in ethanamide.",
+            "hi": "एथेनैमाइड में ऐरोमैटिक वलय नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Trimethylamine",
+            "hi": "ट्राइमेथिलऐमीन"
+          },
+          "reason": {
+            "en": "This does not add two methyl groups.",
+            "hi": "इसमें2 मेथिल समूह नहीं जुड़ते।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which gives the ordinary carbylamine test?",
+        "hi": "सामान्य कार्बिलऐमीन परीक्षण कौन देता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Aniline",
+            "hi": "ऐनिलीन"
+          },
+          "reason": {
+            "en": "Aniline is a primary aromatic amine.",
+            "hi": "ऐनिलीन प्राथमिक ऐरोमैटिक ऐमीन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Dimethylamine",
+            "hi": "डाइमेथिलऐमीन"
+          },
+          "reason": {
+            "en": "It is secondary, not primary.",
+            "hi": "यह द्वितीयक है, प्राथमिक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Trimethylamine",
+            "hi": "ट्राइमेथिलऐमीन"
+          },
+          "reason": {
+            "en": "It is tertiary and lacksN–H.",
+            "hi": "यह तृतीयक है और N–H नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Tetramethylammonium chloride",
+            "hi": "टेट्रामेथिलअमोनियम क्लोराइड"
+          },
+          "reason": {
+            "en": "It is a quaternary ammonium salt.",
+            "hi": "यह चतुर्थक अमोनियम लवण है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Gabriel synthesis is normally suited to:",
+        "hi": "गैब्रियल संश्लेषण सामान्यतः उपयुक्त है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Primary alkylamines",
+            "hi": "प्राथमिक ऐल्किलऐमीन"
+          },
+          "reason": {
+            "en": "The phthalimide route releases a primary alkylamine.",
+            "hi": "थैलिमाइड मार्ग प्राथमिक ऐल्किलऐमीन देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Aniline from ordinary chlorobenzene bySN2",
+            "hi": "सामान्य क्लोरोबेंजीन से SN2 द्वारा ऐनिलीन"
+          },
+          "reason": {
+            "en": "Ordinary aryl carbon does not undergo thatSN2 step.",
+            "hi": "सामान्य ऐरिल कार्बन वह SN2 नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only tertiary amines",
+            "hi": "केवल तृतीयक ऐमीन"
+          },
+          "reason": {
+            "en": "The method is not a general tertiary-amine synthesis.",
+            "hi": "यह सामान्य तृतीयक ऐमीन संश्लेषण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Quaternary salts only",
+            "hi": "केवल चतुर्थक लवण"
+          },
+          "reason": {
+            "en": "The intended product is not restricted to quaternary salts.",
+            "hi": "लक्ष्य उत्पाद चतुर्थक लवण तक सीमित नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Usual temperature for aniline diazotisation?",
+        "hi": "ऐनिलीन डाइऐजोटीकरण का सामान्य ताप?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "273–278K",
+            "hi": "273–278K"
+          },
+          "reason": {
+            "en": "Cold solution limits decomposition of the diazonium intermediate.",
+            "hi": "शीत विलयन डाइऐजोनियम विघटन सीमित करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "500–600K",
+            "hi": "500–600K"
+          },
+          "reason": {
+            "en": "Such heating is not the stated cold preparation.",
+            "hi": "यह गर्मी निर्दिष्ट शीत निर्माण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any temperature gives identical stability",
+            "hi": "हर ताप पर समान स्थिरता"
+          },
+          "reason": {
+            "en": "Stability is strongly condition-dependent.",
+            "hi": "स्थिरता दशाओं पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0K",
+            "hi": "0K"
+          },
+          "reason": {
+            "en": "Absolute zero is not a laboratory diazotisation condition.",
+            "hi": "परम शून्य प्रयोगशाला डाइऐजोटीकरण दशा नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Sandmeyer replacement byCl commonly uses:",
+        "hi": "Cl द्वारा सैंडमेयर प्रतिस्थापन में सामान्यतः:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "CuCl/HCl",
+            "hi": "CuCl/HCl"
+          },
+          "reason": {
+            "en": "Cu(I) chloride supports diazonium substitution.",
+            "hi": "Cu(I) क्लोराइड डाइऐजोनियम प्रतिस्थापन में सहायक।"
+          }
+        },
+        {
+          "text": {
+            "en": "NaBH4 alone",
+            "hi": "केवल NaBH4"
+          },
+          "reason": {
+            "en": "This is not the usual chlorination reagent system.",
+            "hi": "यह सामान्य क्लोरो प्रतिस्थापन प्रणाली नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "NaCl without suitable reaction conditions",
+            "hi": "उपयुक्त दशा बिना NaCl"
+          },
+          "reason": {
+            "en": "Chloride presence alone is not the prescribed Sandmeyer procedure.",
+            "hi": "केवल क्लोराइड होना निर्धारित सैंडमेयर विधि नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only ethanol at room temperature",
+            "hi": "केवल कमरे के ताप पर एथेनॉल"
+          },
+          "reason": {
+            "en": "Ethanol is not that chloride introduction system.",
+            "hi": "एथेनॉल वह क्लोराइड प्रवेश प्रणाली नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Azo coupling retains which linkage?",
+        "hi": "ऐजो युग्मन में कौन संबंध बचता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "–N=N–",
+            "hi": "–N=N–"
+          },
+          "reason": {
+            "en": "The azo bridge joins aromatic groups.",
+            "hi": "ऐजो सेतु ऐरोमैटिक समूह जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only freeN2 gas",
+            "hi": "केवल मुक्त N2 गैस"
+          },
+          "reason": {
+            "en": "Gas release describes many substitutions, not coupling product formation.",
+            "hi": "गैस विमोचन अनेक प्रतिस्थापनों का है, युग्मन उत्पाद का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "–O–O–",
+            "hi": "–O–O–"
+          },
+          "reason": {
+            "en": "No peroxide bridge defines an azo compound.",
+            "hi": "पेरॉक्साइड सेतु ऐजो यौगिक की पहचान नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A metal–metal bond",
+            "hi": "धातु–धातु आबंध"
+          },
+          "reason": {
+            "en": "No metal–metal bridge is required.",
+            "hi": "धातु–धातु सेतु आवश्यक नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why acetylate aniline before controlled nitration?",
+        "hi": "नियंत्रित नाइट्रीकरण से पहले ऐनिलीन का ऐसिलीकरण क्यों?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "To moderate activation and protect the amino function.",
+            "hi": "सक्रियता घटाने और अमीनो समूह सुरक्षित रखने हेतु।"
+          },
+          "reason": {
+            "en": "The amide derivative is less strongly activating.",
+            "hi": "ऐमाइड व्युत्पन्न कम प्रबल सक्रियक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "To remove every nitrogen atom",
+            "hi": "सभी नाइट्रोजन हटाने हेतु"
+          },
+          "reason": {
+            "en": "The nitrogen remains in acetanilide.",
+            "hi": "ऐसिटऐनिलाइड में नाइट्रोजन रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "To convert it permanently into benzene",
+            "hi": "स्थायी बेंजीन बनाने हेतु"
+          },
+          "reason": {
+            "en": "Acylation does not remove the amino-derived group.",
+            "hi": "ऐसिलीकरण अमीनो-व्युत्पन्न समूह नहीं हटाता।"
+          }
+        },
+        {
+          "text": {
+            "en": "To make all ring positions identical",
+            "hi": "सभी वलय स्थान समान बनाने हेतु"
+          },
+          "reason": {
+            "en": "Different positions remain chemically distinguishable.",
+            "hi": "भिन्न स्थानों का रासायनिक अंतर बना रहता है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain why no universal aqueous amine basicity order applies.",
+        "hi": "सभी ऐमीन हेतु1 सार्वभौमिक जलीय क्षारकता क्रम क्यों नहीं?"
+      },
+      "answer": {
+        "en": "Electron donation,solvation,steric effects and substituent identity all influence the protonation equilibrium.",
+        "hi": "इलेक्ट्रॉन दान,जलयोजन,त्रिविमीय प्रभाव और प्रतिस्थापी पहचान प्रोटॉनीकरण साम्य प्रभावित करते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish nitrile reduction and Hofmann bromamide by carbon count.",
+        "hi": "कार्बन गिनती से नाइट्राइल अपचयन और हॉफमान ब्रोमामाइड अलग करें।"
+      },
+      "answer": {
+        "en": "Nitrile reduction retains its carbon asCH2NH2; Hofmann convertsRCONH2 into RNH2 with loss of carbonyl carbon.",
+        "hi": "नाइट्राइल का कार्बन CH2NH2 में रहता है; हॉफमान में RCONH2 से RNH2 और कार्बोनिल कार्बन हटता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does direct alkyl-halide ammonolysis often give mixtures?",
+        "hi": "ऐल्किल हैलाइड की अमोनिया अभिक्रिया में मिश्रण क्यों?"
+      },
+      "answer": {
+        "en": "The initial amine product can undergo further alkylation,forming higher amines and quaternary salts.",
+        "hi": "प्रारंभिक ऐमीन आगे ऐल्किलीकरण से उच्च ऐमीन और चतुर्थक लवण बना सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Describe diazonium formation from aniline.",
+        "hi": "ऐनिलीन से डाइऐजोनियम निर्माण बताएँ।"
+      },
+      "answer": {
+        "en": "UseNaNO2/HCl in cold273–278K solution to form benzenediazonium chloride; follow controlled laboratory conditions.",
+        "hi": "शीत273–278K विलयन में NaNO2/HCl से बेंजीनडाइऐजोनियम क्लोराइड; नियंत्रित प्रयोगशाला दशाएँ जरूरी।"
+      }
+    },
+    {
+      "question": {
+        "en": "Contrast diazonium substitution and azo coupling.",
+        "hi": "डाइऐजोनियम प्रतिस्थापन और ऐजो युग्मन की तुलना करें।"
+      },
+      "answer": {
+        "en": "Substitution commonly releasesN2; coupling retains the–N=N–unit between activated aromatic groups.",
+        "hi": "प्रतिस्थापन में प्रायः N2 निकलता है; युग्मन में सक्रिय ऐरोमैटिक समूहों के बीच–N=N–बचता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the difference between neutral aniline and anilinium in ring substitution.",
+        "hi": "वलय प्रतिस्थापन में ऐनिलीन और ऐनिलिनियम का अंतर बताएँ।"
+      },
+      "answer": {
+        "en": "Neutral–NH2 donates its lone pair and directsortho/para; protonation removes this lone-pair availability and changes directing behaviour.",
+        "hi": "उदासीन–NH2 एकाकी युग्म दान से ऑर्थो/पैरा निर्देशित; प्रोटॉनीकरण उपलब्धता हटाकर निर्देशक व्यवहार बदलता है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Amine class counts carbon groups directly on nitrogen.",
+      "hi": "ऐमीन वर्ग N पर सीधे जुड़े कार्बन समूह गिनता है।"
+    },
+    {
+      "en": "Basicity requires lone-pair and solvation reasoning.",
+      "hi": "क्षारकता में एकाकी युग्म और जलयोजन तर्क चाहिए।"
+    },
+    {
+      "en": "Preparation routes differ in carbon retention.",
+      "hi": "निर्माण मार्गों में कार्बन बचने का अंतर है।"
+    },
+    {
+      "en": "Cold diazotisation provides versatile aromatic intermediates.",
+      "hi": "शीत डाइऐजोटीकरण उपयोगी ऐरोमैटिक मध्यवर्ती देता है।"
+    },
+    {
+      "en": "Coupling retains an azo bridge rather than losing all nitrogen.",
+      "hi": "युग्मन में ऐजो सेतु बचता है, सारा नाइट्रोजन नहीं हटता।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not classify amines like alcohols, use one solvent-independent basicity order, or forget the lost carbon in Hofmann rearrangement.",
+    "hi": "ऐमीन को ऐल्कोहॉल की तरह वर्गीकृत न करें, विलायक-स्वतंत्र क्षारकता क्रम न मानें और हॉफमान में हटता कार्बन न भूलें।"
+  },
+  "goal": {
+    "en": "Relate nitrogen lone pairs to basicity,nucleophilicity and diazonium transformations.",
+    "hi": "नाइट्रोजन एकाकी युग्म को क्षारकता,नाभिकरागिता और डाइऐजोनियम रूपांतरण से जोड़ें।"
+  },
+  "conceptMap": "संरचना → नामकरण → निर्माण → क्षारकता → परीक्षण → डाइऐजोनियम निर्माण → प्रतिस्थापन/युग्मन",
+  "conceptMapEn": "Structure → naming → preparation → basicity → tests → diazonium formation → substitution/coupling",
+  "editionBasis": {
+    "en": "Original explanations for current NCERT Chemistry Class XII and UP Board 2026–27. Use the prescribed textbook and supervised school practical work alongside.",
+    "hi": "वर्तमान NCERT रसायन विज्ञान कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक व्याख्याएँ। निर्धारित पुस्तक और पर्यवेक्षित विद्यालयी प्रयोग भी साथ करें।"
+  },
+  "sources": [
+    {
+      "title": "UPMSP Class 12 Chemistry 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/152-Chemistry-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Chemistry XII Part II, Unit 9, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/lech204.pdf"
+    }
+  ]
+}

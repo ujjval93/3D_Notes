@@ -1,0 +1,892 @@
+{
+  "id": 9,
+  "title": {
+    "en": "Differential Equations",
+    "hi": "अवकल समीकरण"
+  },
+  "goal": {
+    "en": "Recognise and solve first-order equations, checking conditions and intervals.",
+    "hi": "प्रथम कोटि समीकरण पहचानें, हल करें और शर्तों व अंतराल की जाँच करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Differential equations and solutions",
+        "hi": "अवकल समीकरण और हल"
+      },
+      "body": {
+        "en": "A differential equation involves an unknown function and derivatives. A solution satisfies it after substitution. For y′=2x, y=x²+C is the family; y=x² is one member. Respect intervals where the original equation is defined and verify by differentiation.",
+        "hi": "अवकल समीकरण (Differential equation) में अज्ञात फलन और उसके अवकलज उपस्थित होते हैं। उदाहरणतः dy/dx=2x ऐसा फलन y माँगता है जिसकी x के सापेक्ष ढाल हर बिंदु पर 2x हो। उसका हल y=x²+C है, क्योंकि किसी स्थिरांक का अवकलज 0 होता है। केवल y=x² लिखना 1 विशेष हल देता है, सभी हल नहीं। समीकरण में स्वतंत्र चर (Independent variable) सामान्यतः x और आश्रित चर (Dependent variable) y है। भौतिक प्रश्न में ये समय, दूरी या तापमान भी हो सकते हैं। समीकरण का हल वह फलन है जिसे और उसके अवकलजों को मूल समीकरण में रखने पर पहचान मिलती है। हल लिखते समय उसका परिभाषित अंतराल भी ध्यान में रखें। यदि समीकरण में 1/x है तो x=0 पर समीकरण परिभाषित नहीं है; उस बिंदु को पार करता हल बिना जाँच न मानें। चित्र में हल वक्र किसी दिशा क्षेत्र का अनुसरण करता है, पर कुछ तीर देखकर सटीक सूत्र सिद्ध नहीं होता। अंतिम जाँच अवकलन और प्रतिस्थापन से करें। प्रारंभिक शर्त देने पर परिवार से कोई निश्चित हल चुना जा सकता है।"
+      },
+      "formula": "dy/dx=2x ⇒ y=x²+C",
+      "question": {
+        "en": "Verify y=x²+3 solves dy/dx=2x.",
+        "hi": "जाँचें कि y=x²+3, dy/dx=2x का हल है।"
+      },
+      "answer": {
+        "en": "Its derivative is 2x, so substitution gives equality.",
+        "hi": "इसका अवकलज 2x है, इसलिए प्रतिस्थापन पर समानता मिलती है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Order and degree",
+        "hi": "कोटि और घात"
+      },
+      "body": {
+        "en": "Order is the highest derivative order. Degree is the exponent of that derivative only when the equation is polynomial in derivatives. (y″)³+(y′)²+y=0 has order 2, degree 3. For sin(y′)+y=0, degree is undefined.",
+        "hi": "अवकल समीकरण की कोटि (Order) उसमें आए उच्चतम कोटि के अवकलज की कोटि है। यदि y″ उपस्थित है और उससे ऊँचा अवकलज नहीं है तो कोटि 2 है, चाहे उसका घातांक 1 हो या 3। घात (Degree) तय करने से पहले समीकरण अवकलजों में बहुपद रूप का होना चाहिए। इस रूप में उच्चतम कोटि वाले अवकलज का घातांक समीकरण की घात है। जैसे (y″)³+(y′)²+y=0 की कोटि 2 और घात 3 है। y′+y²=0 में y का वर्ग घात निर्धारित नहीं करता; उच्चतम अवकलज y′ का घातांक 1 है। यदि sin(y′)+y=0 जैसा व्यंजक हो तो अवकलज में बहुपद नहीं है और घात परिभाषित नहीं है। अवकलज के मूल या भिन्न हटाते समय आवश्यक बीजीय परिवर्तन कर सकते हैं, पर ऐसे परिवर्तन से आए अतिरिक्त हलों की मूल समीकरण में जाँच जरूरी है। घात और कोटि को केवल सभी दिखे घातांकों में सबसे बड़ा चुनकर नहीं निकालते। पहले अवकलज पहचानें, फिर उसकी कोटि और बहुपद की शर्त जाँचें।"
+      },
+      "formula": "(y″)³+(y′)²+y=0: order 2, degree 3",
+      "question": {
+        "en": "Find order and degree of y″+(y′)⁴=0.",
+        "hi": "y″+(y′)⁴=0 की कोटि और घात निकालें।"
+      },
+      "answer": {
+        "en": "Order 2, degree 1.",
+        "hi": "कोटि 2, घात 1।"
+      }
+    },
+    {
+      "title": {
+        "en": "General and particular solutions",
+        "hi": "व्यापक और विशिष्ट हल"
+      },
+      "body": {
+        "en": "A general solution contains independent arbitrary constants; an initial condition selects a particular member. For y′=3 and y(0)=2, y=3x+2. Differentiate a family and eliminate its constants to form an equation, checking independence and any lost solutions.",
+        "hi": "व्यापक हल (General solution) में स्वतंत्र स्वेच्छ स्थिरांक होते हैं। विद्यालय स्तर के परिचित समीकरणों में सामान्यतः कोटि जितने स्वतंत्र स्थिरांक व्यापक हल में मिलते हैं। y′=3 का व्यापक हल y=3x+C है। y(0)=2 देने पर C=2 मिलता है और विशिष्ट हल (Particular solution) y=3x+2 बनता है। प्रारंभिक शर्त (Initial condition) केवल सूत्र में संख्या भरना नहीं, उस हल का चयन है जो दी हुई स्थिति से गुजरता है। एक ही परिवार के अलग स्थिरांक अलग वक्र देते हैं। व्यापक हल से अवकल समीकरण बनाने के लिए स्वेच्छ स्थिरांक समाप्त करते हैं। उदाहरणतः y=Cx को अवकलित करने पर y′=C मिलता है; C हटाने पर xy′−y=0 आता है। किसी परिवार में प्रतीक 2 हों तो जरूरी नहीं कि वे स्वतंत्र हों; जैसे y=(A+B)x में केवल A+B का असर है। स्थिरांकों की स्वतंत्रता देखें। विभाजन या प्रतिस्थापन से कोई विशेष स्थिर हल छूट सकता है, इसलिए मूल समीकरण में ऐसे मान जाँचना महत्वपूर्ण है। प्रारंभिक शर्त समाधान के स्वीकार्य अंतराल के भीतर होनी चाहिए।"
+      },
+      "formula": "y=3x+C; y(0)=2 ⇒ y=3x+2",
+      "question": {
+        "en": "Find C if y=x²+C and y(1)=5.",
+        "hi": "y=x²+C तथा y(1)=5 में C निकालें।"
+      },
+      "answer": {
+        "en": "C=4.",
+        "hi": "C=4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Separation of variables",
+        "hi": "चरों का पृथक्करण"
+      },
+      "body": {
+        "en": "For y′=f(x)g(y), separate as dy/g(y)=f(x)dx where g≠0 and integrate. Check g(y)=0 separately. y′=xy gives y=Ae^(x²/2), including the zero solution with A=0. One arbitrary integration constant suffices.",
+        "hi": "चरों के पृथक्करण (Separation of variables) में समीकरण को ऐसे रूप में लिखते हैं जिसमें y वाला भाग dy के साथ और x वाला भाग dx के साथ हो। यदि dy/dx=f(x)g(y) है और g(y)≠0 है तो dy/g(y)=f(x)dx लिखकर दोनों तरफ समाकलन करें। इससे ∫dy/g(y)=∫f(x)dx+C मिलता है। केवल 1 स्वेच्छ स्थिरांक पर्याप्त है, क्योंकि दोनों तरफ आए स्थिरांकों का अंतर फिर कोई स्थिरांक ही है। उदाहरणतः y′=xy से dy/y=x dx, फिर ln|y|=x²/2+C मिलता है। इसे y=Ae^(x²/2) लिख सकते हैं। यहाँ y से भाग करते समय y=0 हट गया था; मूल समीकरण में रखकर देखें तो यह भी हल है और A=0 से अंतिम परिवार में शामिल होता है। हमेशा विभाजन किए गए व्यंजक के शून्य होने के मामले अलग जाँचें। समाकलन के बाद यदि y का स्पष्ट सूत्र कठिन हो तो सही अप्रत्यक्ष संबंध भी हल हो सकता है। प्रारंभिक शर्त से स्थिरांक निकालकर अंत में मूल समीकरण में अवकलन द्वारा उत्तर की पुष्टि करें।"
+      },
+      "formula": "∫dy/g(y)=∫f(x)dx+C",
+      "question": {
+        "en": "Which solution is lost temporarily by dividing y′=xy by y?",
+        "hi": "y′=xy को y से भाग करने पर कौन सा हल अस्थायी रूप से छूटता है?"
+      },
+      "answer": {
+        "en": "y=0.",
+        "hi": "y=0।"
+      }
+    },
+    {
+      "title": {
+        "en": "Homogeneous first-order equations",
+        "hi": "समघात प्रथम कोटि समीकरण"
+      },
+      "body": {
+        "en": "For y′=F(y/x), use y=vx and y′=v+xv′ on x≠0. Solve for v then return to y. Check factors divided out. Example y′=1+y/x gives y=x(ln|x|+C); v is a variable, not a constant.",
+        "hi": "प्रथम कोटि का समीकरण dy/dx=F(y/x) हो तो y=vx का प्रतिस्थापन (Substitution) उपयोगी होता है। यहाँ v स्थिरांक नहीं बल्कि x का नया फलन है। इसलिए गुणन नियम से dy/dx=v+x dv/dx होगा; केवल v लिखना गलत है। रखने पर v+x dv/dx=F(v) मिलता है और अक्सर चर पृथक हो जाते हैं। यह प्रक्रिया x≠0 वाले अंतराल पर करें। किसी M(x,y)dx+N(x,y)dy=0 रूप में M और N समान घात के समघात फलन हों, तो उपयुक्त भाग देकर यही रूप मिल सकता है। उदाहरणतः y′=1+y/x में v+xv′=1+v, इसलिए xv′=1 और v=ln|x|+C मिलता है। वापस y=xv रखने पर y=x(ln|x|+C) है। प्रतिस्थापन के बाद उत्तर v में छोड़ना अधूरा है, क्योंकि मूल प्रश्न x और y में था। पृथक्करण में F(v)−v से भाग हो तो उसके शून्य मानों की अलग जाँच करें; वे सीधी रेखा वाले विशेष हल दे सकते हैं। समघात शब्द का प्रयोग यहां फलनों के समान घात वाले रूप के लिए है, रैखिक समीकरण के शून्य दाहिने पक्ष से इसका अर्थ अलग समझें।"
+      },
+      "formula": "y=vx ⇒ dy/dx=v+x dv/dx",
+      "question": {
+        "en": "What is dy/dx when y=v(x)x?",
+        "hi": "y=v(x)x में dy/dx क्या होगा?"
+      },
+      "answer": {
+        "en": "v+x dv/dx.",
+        "hi": "v+x dv/dx।"
+      }
+    },
+    {
+      "title": {
+        "en": "Linear equations and integrating factors",
+        "hi": "रैखिक समीकरण और समाकलन गुणक"
+      },
+      "body": {
+        "en": "For y′+P(x)y=Q(x), IF=e^(∫Pdx) converts the left side into (y·IF)′. Then y·IF=∫Q·IFdx+C. First normalize the coefficient of y′. y′+2y=4 gives y=2+Ce^(−2x). Do not apply this directly to nonlinear y² terms.",
+        "hi": "प्रथम कोटि का रैखिक अवकल समीकरण (Linear differential equation) dy/dx+P(x)y=Q(x) रूप में होता है। y और y′ की घात 1 होती है और उनका आपस में गुणन नहीं होता। गुणांक P तथा Q केवल स्वतंत्र चर x के फलन हों। यदि y′ के साथ गुणांक है तो पहले उससे भाग देकर मानक रूप बनाएँ और वह गुणांक जहाँ 0 हो वहाँ सावधानी रखें। समाकलन गुणक (Integrating factor) IF=e^(∫P dx) चुनते हैं। मानक समीकरण को इससे गुणा करने पर बायाँ भाग d(y·IF)/dx बनता है। अतः y·IF=∫Q·IF dx+C मिलता है। IF निकालते समय समाकल का कोई 1 सुविधाजनक प्रतिअवकलज लें; अलग गैरशून्य स्थिर गुणक से हल परिवार नहीं बदलता। उदाहरणतः y′+2y=4 का IF=e^(2x) है। समाकलन से ye^(2x)=2e^(2x)+C, इसलिए y=2+Ce^(−2x) मिलता है। अंतिम उत्तर के अवकलन से दोनों पदों का संतुलन देखें। गैररैखिक y² वाला समीकरण सीधे इसी सूत्र में डालना सही नहीं है।"
+      },
+      "formula": "IF=e^(∫P dx); y·IF=∫Q·IF dx+C",
+      "question": {
+        "en": "Find IF for y′+3y=x.",
+        "hi": "y′+3y=x के लिए IF निकालें।"
+      },
+      "answer": {
+        "en": "e^(3x).",
+        "hi": "e^(3x)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Choosing the dependent variable",
+        "hi": "आश्रित चर और उपयुक्त विधि"
+      },
+      "body": {
+        "en": "Sometimes treat x as dependent on y: dx/dy+P(y)x=Q(y), with IF=e^(∫Pdy). For dx/dy+x=y, x=y−1+Ce^(−y). Check validity when inverting derivatives. Choose separable, homogeneous or linear form before calculating.",
+        "hi": "कुछ समीकरण y को x का फलन मानकर कठिन लगते हैं लेकिन x को y का फलन मानने पर रैखिक हो जाते हैं। यदि dx/dy+P(y)x=Q(y) मिले तो स्वतंत्र चर y है और IF=e^(∫P(y)dy) होगा। सूत्र में x तथा y की भूमिकाएँ सोचकर बदलें; केवल अक्षर अदलने से मूल समीकरण समान नहीं होता। उदाहरणतः dx/dy+x= y का IF=e^y है और xe^y=∫ye^y dy+C=e^y(y−1)+C मिलता है। इसलिए x=y−1+Ce^(−y)। किसी बिंदु पर dy/dx=0 हो तो उसका व्युत्क्रम dx/dy वहाँ परिभाषित नहीं हो सकता, इसलिए चर बदलने की वैधता का ध्यान रखें। विधि चुनने का सरल क्रम है: पहले देखें चर पृथक हो रहे हैं या नहीं; फिर y/x वाला समघात रूप जाँचें; फिर किसी 1 चर में रैखिक मानक रूप खोजें। सभी प्रश्न किसी एक ही विधि से सहज नहीं सुलझते। गणना से पहले चुनी विधि का कारण लिखने से गलत सूत्र लगाने की संभावना घटती है। अंत में हल को मूल चर और उसके स्वीकार्य अंतराल में व्यक्त करें।"
+      },
+      "formula": "dx/dy+P(y)x=Q(y); IF=e^(∫P(y)dy)",
+      "question": {
+        "en": "Find IF for dx/dy+2x=y.",
+        "hi": "dx/dy+2x=y के लिए IF निकालें।"
+      },
+      "answer": {
+        "en": "e^(2y).",
+        "hi": "e^(2y)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Checking constants, domains and models",
+        "hi": "स्थिरांक, प्रांत और प्रतिरूप की जाँच"
+      },
+      "body": {
+        "en": "Verify by differentiating and substituting, then check constants and intervals. ln|x| requires x≠0. The proportional-rate model y′=ky gives Ce^(kx), with k having reciprocal independent-variable units. Keep only physically admissible members and recover any divided-out solutions.",
+        "hi": "अवकल समीकरण का उत्तर केवल समाकल निकालने से पूरा नहीं होता। सबसे पहले देखें कि स्वेच्छ स्थिरांक बचा है या प्रारंभिक शर्त से उसका मान तय हुआ है। अगला कदम अवकलन करके मूल समीकरण में रखना है; इससे चिह्न, गुणांक और घात की बहुत सी गलतियाँ पकड़ी जाती हैं। ln|x| का अवकलज 1/x है, पर यह x=0 पर परिभाषित नहीं है। उत्तर को x>0 या x<0 जैसे उपयुक्त अंतराल पर समझें। इसी तरह ln|y| लिखने के बाद y का संकेत चुने अंतराल में ध्यान में रखें। यदि मॉडल y′=ky है तो y=Ce^(kx) मिलता है। k>0 पर धनात्मक प्रारंभिक मात्रा बढ़ती और k<0 पर घटती है; k की इकाई स्वतंत्र चर की इकाई का व्युत्क्रम है ताकि घातांक kx विमाहीन हो। इस गणितीय मॉडल को हर वास्तविक स्थिति पर अनिवार्य नियम न मानें; दर मात्रा के समानुपाती मानने की शर्त है। यदि प्राप्त मान वास्तविक प्रश्न में निषिद्ध हो, जैसे ऋणात्मक जनसंख्या, तो गणितीय परिवार से केवल अर्थपूर्ण भाग चुनें। विभाजित कारकों के शून्य वाले हलों को दोबारा जाँचकर सूची पूरी करें।"
+      },
+      "formula": "y′=ky ⇒ y=Ce^(kx)",
+      "question": {
+        "en": "Solve y′=2y with y(0)=3.",
+        "hi": "y′=2y तथा y(0)=3 हल करें।"
+      },
+      "answer": {
+        "en": "y=3e^(2x).",
+        "hi": "y=3e^(2x)।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find order and degree of (y″)²+y′+y=0.",
+        "hi": "(y″)²+y′+y=0 की कोटि और घात निकालें।"
+      },
+      "steps": [
+        {
+          "en": "The highest derivative is y″.",
+          "hi": "उच्चतम अवकलज y″ है।"
+        },
+        {
+          "en": "The equation is polynomial in derivatives; exponent of y″ is 2.",
+          "hi": "समीकरण अवकलजों में बहुपद है; y″ का घातांक 2 है।"
+        },
+        {
+          "en": "The power on y′ does not change the order because y″ is the highest derivative.",
+          "hi": "y′ का घातांक कोटि तय नहीं करता, क्योंकि उच्चतम अवकलज y″ है।"
+        }
+      ],
+      "answer": {
+        "en": "Order 2, degree 2.",
+        "hi": "कोटि 2, घात 2।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Solve y′=3x² with y(0)=2.",
+        "hi": "y′=3x² और y(0)=2 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "Integrate: y=∫3x²dx=x³+C.",
+          "hi": "समाकलन: y=∫3x²dx=x³+C।"
+        },
+        {
+          "en": "Put x=0,y=2 to obtain C=2.",
+          "hi": "x=0,y=2 रखने पर C=2।"
+        },
+        {
+          "en": "Derivative of x³+2 is 3x².",
+          "hi": "x³+2 का अवकलज 3x² है।"
+        }
+      ],
+      "answer": {
+        "en": "y=x³+2 for all real x.",
+        "hi": "सभी वास्तविक x के लिए y=x³+2।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Solve y′=xy, y(0)=2.",
+        "hi": "y′=xy, y(0)=2 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "Since the initial value is nonzero, separate dy/y=x dx.",
+          "hi": "प्रारंभिक मान अशून्य है; dy/y=x dx पृथक करें।"
+        },
+        {
+          "en": "ln|y|=x²/2+C, hence y=Ae^(x²/2).",
+          "hi": "ln|y|=x²/2+C, इसलिए y=Ae^(x²/2)।"
+        },
+        {
+          "en": "At x=0, A=2; verify y′=xy.",
+          "hi": "x=0 पर A=2; y′=xy जाँचें।"
+        }
+      ],
+      "answer": {
+        "en": "y=2e^(x²/2).",
+        "hi": "y=2e^(x²/2)।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Solve y′=1+y/x with y(1)=2 on x>0.",
+        "hi": "x>0 पर y′=1+y/x, y(1)=2 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "Set y=vx; y′=v+xv′.",
+          "hi": "y=vx रखें; y′=v+xv′।"
+        },
+        {
+          "en": "v+xv′=1+v gives dv=dx/x.",
+          "hi": "v+xv′=1+v से dv=dx/x।"
+        },
+        {
+          "en": "v=ln x+C; y=x(ln x+C). At x=1, C=2.",
+          "hi": "v=ln x+C; y=x(ln x+C)। x=1 पर C=2।"
+        }
+      ],
+      "answer": {
+        "en": "y=x(ln x+2), x>0.",
+        "hi": "y=x(ln x+2), x>0।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Solve y′+y/x=x², y(1)=1 on x>0.",
+        "hi": "x>0 पर y′+y/x=x², y(1)=1 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "P=1/x, Q=x²; IF=e^(∫dx/x)=x on x>0.",
+          "hi": "P=1/x, Q=x²; x>0 पर IF=e^(∫dx/x)=x।"
+        },
+        {
+          "en": "Multiply by x: (xy)′=x³. Integrate xy=x⁴/4+C.",
+          "hi": "x से गुणा: (xy)′=x³। समाकलन से xy=x⁴/4+C।"
+        },
+        {
+          "en": "y=x³/4+C/x. Using y(1)=1 gives C=3/4.",
+          "hi": "y=x³/4+C/x। y(1)=1 से C=3/4।"
+        },
+        {
+          "en": "Differentiate and add y/x; the C terms cancel, leaving x².",
+          "hi": "अवकलन के बाद y/x जोड़ें; C पद कटकर x² बचता है।"
+        }
+      ],
+      "answer": {
+        "en": "y=x³/4+3/(4x), x>0.",
+        "hi": "y=x³/4+3/(4x), x>0।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "What is the order of y‴+(y′)⁵=0?",
+        "hi": "y‴+(y′)⁵=0 की कोटि क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "The highest derivative is third order.",
+            "hi": "उच्चतम अवकलज तीसरी कोटि का है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "5 is a power of a lower derivative.",
+            "hi": "5 निम्न अवकलज का घातांक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "The equation also contains y‴.",
+            "hi": "समीकरण में y‴ भी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Derivatives are present.",
+            "hi": "अवकलज उपस्थित हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is the degree of (y″)³+y′=0?",
+        "hi": "(y″)³+y′=0 की घात क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "The highest-order derivative has exponent 3.",
+            "hi": "उच्चतम कोटि के अवकलज का घातांक 3 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "2 is the order, not the degree.",
+            "hi": "2 कोटि है, घात नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "The exponent of y″ is 3.",
+            "hi": "y″ का घातांक 3 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित"
+          },
+          "reason": {
+            "en": "The equation is polynomial in derivatives.",
+            "hi": "समीकरण अवकलजों में बहुपद है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Degree of sin(y′)+y=0 is…",
+        "hi": "sin(y′)+y=0 की घात है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित"
+          },
+          "reason": {
+            "en": "It is not polynomial in derivatives.",
+            "hi": "यह अवकलजों में बहुपद नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "An unpowered sine is not polynomial in y′.",
+            "hi": "बिना घात का sine भी y′ में बहुपद नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The definition is inapplicable, not zero.",
+            "hi": "परिभाषा लागू नहीं होती; घात शून्य नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "No quadratic highest derivative appears.",
+            "hi": "द्विघाती उच्चतम अवकलज नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "General solution of y′=2x?",
+        "hi": "y′=2x का व्यापक हल?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "y=x²+C",
+            "hi": "y=x²+C"
+          },
+          "reason": {
+            "en": "Differentiation gives 2x for every C.",
+            "hi": "हर C के लिए अवकलन से 2x मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "y=2x+C",
+            "hi": "y=2x+C"
+          },
+          "reason": {
+            "en": "Its derivative is 2, not 2x.",
+            "hi": "इसका अवकलज 2 है, 2x नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "y=x² only",
+            "hi": "केवल y=x²"
+          },
+          "reason": {
+            "en": "This omits the arbitrary constant.",
+            "hi": "इसमें स्वेच्छ स्थिरांक छूट गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "y=2x²+C",
+            "hi": "y=2x²+C"
+          },
+          "reason": {
+            "en": "Its derivative is 4x.",
+            "hi": "इसका अवकलज 4x है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The separated form of y′=xy for y≠0 is…",
+        "hi": "y≠0 के लिए y′=xy का पृथक रूप है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "dy/y=x dx",
+            "hi": "dy/y=x dx"
+          },
+          "reason": {
+            "en": "Dividing by y separates the variables.",
+            "hi": "y से भाग करने पर चर अलग होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "y dy=x dx",
+            "hi": "y dy=x dx"
+          },
+          "reason": {
+            "en": "This would correspond to a different equation.",
+            "hi": "यह दूसरे समीकरण का रूप होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "dy=x/y dx",
+            "hi": "dy=x/y dx"
+          },
+          "reason": {
+            "en": "The factor y was inverted incorrectly.",
+            "hi": "y का गुणक गलत उलटा गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "dx/x=y dy",
+            "hi": "dx/x=y dy"
+          },
+          "reason": {
+            "en": "This gives a different derivative relation.",
+            "hi": "यह दूसरा अवकल संबंध देता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For y=vx, what is y′?",
+        "hi": "y=vx के लिए y′ क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "v+xv′",
+            "hi": "v+xv′"
+          },
+          "reason": {
+            "en": "Use the product rule because v depends on x.",
+            "hi": "v, x पर निर्भर है; गुणन नियम लें।"
+          }
+        },
+        {
+          "text": {
+            "en": "v",
+            "hi": "v"
+          },
+          "reason": {
+            "en": "This incorrectly treats v as constant.",
+            "hi": "इसमें v को गलत स्थिर माना।"
+          }
+        },
+        {
+          "text": {
+            "en": "xv′",
+            "hi": "xv′"
+          },
+          "reason": {
+            "en": "The derivative of x contributes v too.",
+            "hi": "x के अवकलन से v भी जुड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "v′",
+            "hi": "v′"
+          },
+          "reason": {
+            "en": "The factor x and product rule are missing.",
+            "hi": "x और गुणन नियम छूट गए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "IF for y′+2y=x is…",
+        "hi": "y′+2y=x का IF है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "e^(2x)",
+            "hi": "e^(2x)"
+          },
+          "reason": {
+            "en": "IF=e^(∫2dx).",
+            "hi": "IF=e^(∫2dx)।"
+          }
+        },
+        {
+          "text": {
+            "en": "2x",
+            "hi": "2x"
+          },
+          "reason": {
+            "en": "The exponential is required.",
+            "hi": "चरघातांकी फलन चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "e^x",
+            "hi": "e^x"
+          },
+          "reason": {
+            "en": "The coefficient of y is 2, not 1.",
+            "hi": "y का गुणांक 2 है, 1 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "x²",
+            "hi": "x²"
+          },
+          "reason": {
+            "en": "Its logarithmic derivative is 2/x, not 2.",
+            "hi": "इसका लघुगणकीय अवकलज 2/x है, 2 नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is linear in y as a function of x?",
+        "hi": "x के फलन y में कौन रैखिक है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "y′+xy=sin x",
+            "hi": "y′+xy=sin x"
+          },
+          "reason": {
+            "en": "P=x and Q=sin x depend only on x.",
+            "hi": "P=x तथा Q=sin x केवल x पर निर्भर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "y′+y²=x",
+            "hi": "y′+y²=x"
+          },
+          "reason": {
+            "en": "y² makes it nonlinear.",
+            "hi": "y² इसे अरैखिक बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "yy′=x",
+            "hi": "yy′=x"
+          },
+          "reason": {
+            "en": "The derivative is multiplied by the unknown y.",
+            "hi": "अवकलज का अज्ञात y से गुणन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(y′)²+y=0",
+            "hi": "(y′)²+y=0"
+          },
+          "reason": {
+            "en": "The derivative is squared.",
+            "hi": "अवकलज का वर्ग है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "y=x²+C and y(1)=4 imply C=?",
+        "hi": "y=x²+C तथा y(1)=4 से C=?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "4=1+C gives C=3.",
+            "hi": "4=1+C से C=3।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "This forgets x²=1.",
+            "hi": "इसमें x²=1 छूट गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "The 1 must be subtracted.",
+            "hi": "1 घटाना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "1 is the input value, not C.",
+            "hi": "1 निवेश है, C नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What must be checked after dividing by g(y)?",
+        "hi": "g(y) से भाग करने के बाद क्या जाँचें?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Solutions with g(y)=0",
+            "hi": "g(y)=0 वाले हल"
+          },
+          "reason": {
+            "en": "They may have been excluded by division.",
+            "hi": "भाग देने से वे छूट सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the largest x",
+            "hi": "केवल सबसे बड़ा x"
+          },
+          "reason": {
+            "en": "Solutions are functions on intervals.",
+            "hi": "हल अंतरालों पर फलन होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No further checks",
+            "hi": "और कोई जाँच नहीं"
+          },
+          "reason": {
+            "en": "Division can lose valid solutions.",
+            "hi": "भाग से मान्य हल छूट सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Whether C is positive always",
+            "hi": "क्या C सदा धनात्मक है"
+          },
+          "reason": {
+            "en": "C need not always be positive.",
+            "hi": "C सदा धनात्मक होना जरूरी नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Differentiate order and degree with an example.",
+        "hi": "उदाहरण से कोटि और घात में अंतर करें।"
+      },
+      "answer": {
+        "en": "For (y″)³+y′=0, order is 2 and degree 3; degree requires polynomial dependence on derivatives.",
+        "hi": "(y″)³+y′=0 की कोटि 2 और घात 3 है; घात के लिए अवकलजों में बहुपद होना चाहिए।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve dy/dx=4x and y(0)=1.",
+        "hi": "dy/dx=4x तथा y(0)=1 हल करें।"
+      },
+      "answer": {
+        "en": "y=2x²+C; C=1, hence y=2x²+1.",
+        "hi": "y=2x²+C; C=1, अतः y=2x²+1।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find a differential equation of y=Cx².",
+        "hi": "y=Cx² परिवार का अवकल समीकरण बनाएँ।"
+      },
+      "answer": {
+        "en": "y′=2Cx; eliminate C to get xy′−2y=0.",
+        "hi": "y′=2Cx; C हटाने पर xy′−2y=0।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve y′=2y including the zero solution.",
+        "hi": "शून्य हल सहित y′=2y हल करें।"
+      },
+      "answer": {
+        "en": "y=Ce^(2x), C∈R; C=0 gives y=0.",
+        "hi": "y=Ce^(2x), C∈R; C=0 से y=0 मिलता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve y′+y=1.",
+        "hi": "y′+y=1 हल करें।"
+      },
+      "answer": {
+        "en": "IF=e^x; (ye^x)′=e^x, hence y=1+Ce^(−x).",
+        "hi": "IF=e^x; (ye^x)′=e^x, इसलिए y=1+Ce^(−x)।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is ln|x| used when integrating 1/x?",
+        "hi": "1/x समाकलित करने पर ln|x| क्यों लेते हैं?"
+      },
+      "answer": {
+        "en": "Its derivative equals 1/x on either x>0 or x<0; x=0 remains excluded.",
+        "hi": "इसका अवकलज x>0 और x<0 दोनों पर 1/x है; x=0 फिर भी निषिद्ध है।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not omit constants, confuse order with degree, or lose solutions when dividing by a variable expression.",
+    "hi": "स्थिरांक न छोड़ें, कोटि को घात न समझें और चर व्यंजक से भाग देते समय छूटे हल जाँचें।"
+  },
+  "revision": [
+    {
+      "en": "Order tracks the highest derivative.",
+      "hi": "कोटि उच्चतम अवकलज से मिलती है।"
+    },
+    {
+      "en": "Degree requires polynomial form in derivatives.",
+      "hi": "घात के लिए अवकलजों में बहुपद रूप चाहिए।"
+    },
+    {
+      "en": "Separate variables where allowed.",
+      "hi": "वैध होने पर चर पृथक करें।"
+    },
+    {
+      "en": "For y′+Py=Q, IF=e^(∫Pdx).",
+      "hi": "y′+Py=Q में IF=e^(∫Pdx) लें।"
+    },
+    {
+      "en": "Substitute back and verify the initial condition.",
+      "hi": "वापस रखकर समीकरण और प्रारंभिक शर्त जाँचें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Equation → order/degree → separable/homogeneous/linear → integration → constant → verified solution.",
+    "hi": "समीकरण → कोटि/घात → पृथक्करण/समघात/रैखिक → समाकलन → स्थिरांक → जाँचा हल।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class XII, Chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh203.pdf"
+    },
+    {
+      "title": "UPMSP Mathematics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    }
+  ],
+  "engine": "twelve-math",
+  "scenes": []
+}

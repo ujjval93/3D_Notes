@@ -1,0 +1,1506 @@
+{
+  "number": 1,
+  "id": "reactions",
+  "title": {
+    "en": "Chemical Reactions and Equations",
+    "hi": "रासायनिक अभिक्रियाएँ एवं समीकरण"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "ten-balance",
+      "title": {
+        "en": "Balance water formation",
+        "hi": "जल बनने का संतुलन"
+      },
+      "kind": "ten-reactions",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Hydrogen coefficient",
+            "hi": "हाइड्रोजन का गुणांक"
+          },
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "initial": 1,
+          "unit": ""
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Find the coefficient that conserves hydrogen and oxygen atoms.",
+        "hi": "हाइड्रोजन और ऑक्सीजन संरक्षित करने वाला गुणांक खोजें।"
+      },
+      "observe": {
+        "en": "Only the H2 coefficient changes; O2 and 2H2O are fixed. Compare atom counts.",
+        "hi": "केवल H2 गुणांक बदलता है; O2 तथा 2H2O निश्चित हैं। परमाणु गिनें।"
+      },
+      "modelNote": {
+        "en": "This is a symbolic coefficient editor. Unbalanced settings are not physical reactions; colours and sizes are not to scale.",
+        "hi": "यह प्रतीकात्मक गुणांक संपादक है। असंतुलित सेटिंग वास्तविक अभिक्रिया नहीं; रंग तथा आकार पैमाने पर नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Two H2 molecules supply the 4 hydrogen atoms needed in two water molecules. Oxygen is already balanced.",
+          "hi": "H2 के 2 अणु जल के 2 अणुओं के लिए आवश्यक 4 हाइड्रोजन देते हैं। ऑक्सीजन पहले से संतुलित है।"
+        }
+      },
+      "realLife": {
+        "en": "A balanced equation helps compare the amounts needed in a chemical process.",
+        "hi": "संतुलित समीकरण रासायनिक प्रक्रिया में आवश्यक मात्रा की तुलना करता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which H2 coefficient balances the fixed equation?",
+          "hi": "निश्चित समीकरण में H2 का कौन-सा गुणांक सही है?"
+        },
+        "options": [
+          {
+            "en": "1",
+            "hi": "1"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "2H2 + O2 → 2H2O has 4 H and 2 O atoms on each side.",
+          "hi": "2H2 + O2 → 2H2O में दोनों ओर 4 H और 2 O हैं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-balance-1",
+          "label": {
+            "en": "Set the coefficient to 2.",
+            "hi": "गुणांक 2 करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 2
+          }
+        },
+        {
+          "id": "ten-balance-2",
+          "label": {
+            "en": "Compare an excess-hydrogen setting at 4.",
+            "hi": "अतिरिक्त हाइड्रोजन वाली सेटिंग 4 से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 2
+          },
+          "text": {
+            "en": "Too few hydrogen atoms for the fixed products.",
+            "hi": "निश्चित उत्पादों के लिए हाइड्रोजन कम है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 2
+          },
+          "text": {
+            "en": "Balanced: 4 H and 2 O atoms on each side.",
+            "hi": "संतुलित: दोनों ओर 4 H तथा 2 O।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 2
+          },
+          "text": {
+            "en": "The left side has excess hydrogen atoms; this setting is unbalanced.",
+            "hi": "बाईं ओर हाइड्रोजन अधिक है; सेटिंग असंतुलित है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-reaction-types",
+      "title": {
+        "en": "Identify reaction patterns",
+        "hi": "अभिक्रिया के प्रकार"
+      },
+      "kind": "ten-reactions",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Reaction progress",
+            "hi": "अभिक्रिया की प्रगति"
+          },
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "initial": 20,
+          "unit": "%"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 1,
+      "goal": {
+        "en": "Compare how reactants rearrange in four reaction patterns.",
+        "hi": "चार प्रकारों में अभिकारकों का पुनर्विन्यास तुलना करें।"
+      },
+      "observe": {
+        "en": "Select a pattern and move progress from initial particles to products.",
+        "hi": "प्रकार चुनें और प्रगति को आरम्भिक कणों से उत्पादों तक बढ़ाएं।"
+      },
+      "modelNote": {
+        "en": "Progress is an animation phase, not elapsed time or a measured reaction rate.",
+        "hi": "प्रगति ऐनिमेशन का चरण है, वास्तविक समय या मापी अभिक्रिया चाल नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Combination joins reactants; decomposition splits one compound; displacement replaces an element; precipitation forms an insoluble solid by ion exchange.",
+          "hi": "संयोजन अभिकारक जोड़ता है; वियोजन यौगिक तोड़ता है; विस्थापन तत्व बदलता है; अवक्षेपण में आयन विनिमय से अविलेय ठोस बनता है।"
+        }
+      },
+      "realLife": {
+        "en": "Different patterns help interpret burning, electrolysis and metal displacement.",
+        "hi": "अलग ढाँचे दहन, विद्युत अपघटन और धातु विस्थापन समझाते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "One reactant forming several products is:",
+          "hi": "एक अभिकारक से कई उत्पाद बनना है:"
+        },
+        "options": [
+          {
+            "en": "Combination",
+            "hi": "संयोजन"
+          },
+          {
+            "en": "Decomposition",
+            "hi": "वियोजन"
+          },
+          {
+            "en": "No reaction",
+            "hi": "कोई अभिक्रिया नहीं"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Decomposition splits a single reactant.",
+          "hi": "वियोजन एक अभिकारक को विभाजित करता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-reaction-types-1",
+          "label": {
+            "en": "Inspect the initial stage at 0%.",
+            "hi": "0% पर आरम्भिक चरण देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-reaction-types-2",
+          "label": {
+            "en": "Reach the products at 100%.",
+            "hi": "100% पर उत्पाद देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 100
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 50
+          },
+          "text": {
+            "en": "Initial reactants dominate; identify their formulae before the rearrangement.",
+            "hi": "आरम्भिक अभिकारक प्रमुख हैं; पुनर्विन्यास से पहले सूत्र पहचानें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 50
+          },
+          "text": {
+            "en": "Products emerge in the selected pattern; atom identities remain conserved.",
+            "hi": "चुने ढाँचे में उत्पाद बनते हैं; परमाणु पहचान संरक्षित रहती है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-rusting",
+      "title": {
+        "en": "Conditions for rusting",
+        "hi": "जंग लगने की परिस्थितियाँ"
+      },
+      "kind": "ten-reactions",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Exposure time",
+            "hi": "संपर्क का समय"
+          },
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "initial": 2,
+          "unit": "model days"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Test whether water and oxygen are both needed for ordinary rusting.",
+        "hi": "जाँचें कि सामान्य जंग में जल तथा ऑक्सीजन दोनों चाहिए।"
+      },
+      "observe": {
+        "en": "Toggle water and oxygen separately, then change exposure time.",
+        "hi": "जल तथा ऑक्सीजन अलग बदलें, फिर संपर्क समय बढ़ाएं।"
+      },
+      "modelNote": {
+        "en": "Model days compress time and display relative rust, not a bridge-life prediction.",
+        "hi": "मॉडल दिन समय को संक्षिप्त तथा जंग सापेक्ष दिखाते हैं; पुल की आयु नहीं बताते।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Ordinary iron rusting requires both oxygen and moisture; removing either condition prevents rust in this simplified comparison.",
+          "hi": "सामान्य जंग में ऑक्सीजन तथा नमी दोनों चाहिए; इस सरल तुलना में किसी एक को हटाने से जंग नहीं बनती।"
+        }
+      },
+      "realLife": {
+        "en": "Paint keeps moisture and oxygen away from an iron gate while intact.",
+        "hi": "अखंड पेंट लोहे के फाटक से नमी तथा ऑक्सीजन का संपर्क घटाता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which pair supports ordinary rusting?",
+          "hi": "सामान्य जंग के लिए कौन-सी जोड़ी चाहिए?"
+        },
+        "options": [
+          {
+            "en": "Water and oxygen",
+            "hi": "जल तथा ऑक्सीजन"
+          },
+          {
+            "en": "Dry nitrogen only",
+            "hi": "केवल शुष्क नाइट्रोजन"
+          },
+          {
+            "en": "Oil only",
+            "hi": "केवल तेल"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Both oxygen and moisture are required.",
+          "hi": "ऑक्सीजन और नमी दोनों आवश्यक हैं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-rusting-1",
+          "label": {
+            "en": "Remove water to compare a dry condition.",
+            "hi": "शुष्क दशा के लिए जल हटाएं।"
+          },
+          "when": {
+            "selector": "water",
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-rusting-2",
+          "label": {
+            "en": "Inspect a longer exposure at 10 model days.",
+            "hi": "10 मॉडल दिन का लंबा संपर्क देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 10
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3
+          },
+          "text": {
+            "en": "Short model exposure: compare the water and oxygen toggles.",
+            "hi": "छोटा मॉडल संपर्क: जल तथा ऑक्सीजन विकल्प तुलना करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 3
+          },
+          "text": {
+            "en": "Longer exposure gives more relative rust only when water and oxygen are both present.",
+            "hi": "दोनों उपस्थित हों तभी लंबे संपर्क में सापेक्ष जंग बढ़ती है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Read evidence, balance atoms and connect reaction patterns with everyday changes.",
+    "hi": "प्रमाण पढ़ें, परमाणु संतुलित करें और अभिक्रिया प्रकारों को दैनिक परिवर्तनों से जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Recognising a chemical change",
+        "hi": "रासायनिक परिवर्तन की पहचान"
+      },
+      "paragraphs": [
+        {
+          "en": "A chemical reaction makes substances with a different chemical identity. The substances present initially are reactants, while the substances formed are products. A colour change, gas evolution, formation of an insoluble solid, or a temperature change can provide evidence. No single visible sign proves every reaction: boiling also makes bubbles, yet water remains water. Interpret the observation together with what substances are present. Magnesium burns in oxygen to form magnesium oxide; the white powder has properties different from the original ribbon. A word equation records names before symbols are introduced. Conditions such as heating or light belong above the arrow. They describe how the reaction is brought about rather than becoming extra atoms in the products.",
+          "hi": "रासायनिक अभिक्रिया (Chemical reaction) में ऐसे पदार्थ बनते हैं जिनकी रासायनिक पहचान प्रारम्भिक पदार्थों से अलग होती है। शुरू में उपस्थित पदार्थ अभिकारक (Reactants) और बनने वाले पदार्थ उत्पाद (Products) कहलाते हैं। रंग बदलना, गैस निकलना, अविलेय ठोस बनना या ताप बदलना अभिक्रिया के संकेत हो सकते हैं। केवल बुलबुले देखकर निष्कर्ष नहीं निकालना चाहिए, क्योंकि जल के उबलने पर भी बुलबुले बनते हैं और पदार्थ जल ही रहता है। इसलिए दिखाई देने वाले परिवर्तन को उपस्थित पदार्थों तथा बनने वाले उत्पादों के साथ जोड़कर समझना आवश्यक है। मैग्नीशियम के ऑक्सीजन में जलने से सफेद मैग्नीशियम ऑक्साइड बनता है, जिसके गुण मूल रिबन से अलग हैं। पहले शब्द समीकरण में पदार्थों के नाम लिखते हैं, फिर उनके सूत्रों का प्रयोग करते हैं। तीर अभिकारकों से उत्पाद बनने की दिशा दिखाता है। तीर के ऊपर ताप या प्रकाश लिखना अभिक्रिया की आवश्यक दशा बताता है; उसका अर्थ उत्पाद में कोई अतिरिक्त परमाणु जोड़ना नहीं है।"
+        },
+        {
+          "en": "Compare melting wax with burning wax. During melting, the state changes and cooling can restore the solid. During burning, wax reacts with oxygen and new gaseous products form. Reversibility is a useful clue but is not the definition of chemical change. A broken glass is difficult to restore, yet breaking it does not create a new chemical substance. In an answer, state the observation first and then explain the new substance that supports the classification.",
+          "hi": "मोम के पिघलने और जलने की तुलना करें। पिघलने पर अवस्था बदलती है तथा ठंडा करने पर ठोस मोम वापस मिल सकता है। जलने पर मोम ऑक्सीजन से अभिक्रिया करके नए पदार्थ बनाता है। परिवर्तन को आसानी से उलटना उपयोगी संकेत है, लेकिन यही रासायनिक परिवर्तन की परिभाषा नहीं है। टूटा हुआ काँच वापस जोड़ना कठिन होता है, फिर भी केवल टूटने से उसकी रासायनिक पहचान नहीं बदलती। उत्तर में पहले वास्तविक प्रेक्षण लिखें और फिर बताएं कि किस नए पदार्थ के बनने से आपका निष्कर्ष समर्थित होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Boiling also produces bubbles without making a new substance; the products and other evidence must be considered.",
+          "hi": "उबलने पर भी बिना नया पदार्थ बने बुलबुले निकलते हैं; इसलिए उत्पाद तथा अन्य प्रमाण देखना आवश्यक है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why are bubbles alone insufficient evidence of a chemical reaction?",
+          "hi": "केवल बुलबुले रासायनिक अभिक्रिया का पर्याप्त प्रमाण क्यों नहीं हैं?"
+        },
+        "answer": {
+          "en": "Boiling also produces bubbles without making a new substance; the products and other evidence must be considered.",
+          "hi": "उबलने पर भी बिना नया पदार्थ बने बुलबुले निकलते हैं; इसलिए उत्पाद तथा अन्य प्रमाण देखना आवश्यक है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Writing and balancing equations",
+        "hi": "समीकरण लिखना और संतुलित करना"
+      },
+      "paragraphs": [
+        {
+          "en": "A skeletal equation shows correct chemical formulae but may have unequal atom counts. Conservation of mass requires the same number of atoms of each element on both sides of a balanced equation. Change coefficients placed before complete formulae; never alter a subscript merely to balance. In water formation, 2H2 + O2 → 2H2O has four hydrogen atoms and two oxygen atoms on each side. Coefficients describe relative numbers of molecules or formula units, not a permission to change chemical identity. After balancing one element, recount every element because a changed coefficient affects the whole formula. Use the smallest whole-number ratio where possible. State symbols distinguish solid, liquid, gas and aqueous solution and can clarify the observation.",
+          "hi": "अस्थिपंजर समीकरण (Skeletal equation) में सही रासायनिक सूत्र लिखे होते हैं, पर दोनों ओर परमाणुओं की संख्या समान होना आवश्यक नहीं है। द्रव्यमान संरक्षण नियम (Law of conservation of mass) के अनुसार संतुलित समीकरण में प्रत्येक तत्व के परमाणुओं की संख्या दोनों ओर बराबर होती है। संतुलन के लिए पूरे सूत्र के आगे गुणांक (Coefficient) बदलते हैं। सूत्र के भीतर की संख्या बदलना पदार्थ को बदल देता है, इसलिए ऐसा नहीं करते। जल बनने का संतुलित समीकरण 2H2 + O2 → 2H2O है। दोनों ओर हाइड्रोजन के 4 और ऑक्सीजन के 2 परमाणु हैं। गुणांक अणुओं या सूत्र इकाइयों की सापेक्ष संख्या बताते हैं। किसी एक तत्व को संतुलित करने के बाद सभी तत्वों को दोबारा गिनना चाहिए, क्योंकि गुणांक पूरे सूत्र पर लागू होता है। सम्भव हो तो सबसे छोटा पूर्णांक अनुपात लिखते हैं। अवस्था संकेत ठोस, द्रव, गैस तथा जलीय विलयन में अंतर बताते हैं और अभिक्रिया का प्रेक्षण समझने में सहायता करते हैं।"
+        },
+        {
+          "en": "To balance Fe + H2O → Fe3O4 + H2, begin with three iron atoms and four water molecules. This gives eight hydrogen atoms, requiring four H2 molecules. The result is 3Fe + 4H2O → Fe3O4 + 4H2, with steam as the reaction condition. Count iron, oxygen and hydrogen separately. An equation being balanced establishes the atom ratio; it does not by itself prove that the reaction occurs under every temperature or with every form of water.",
+          "hi": "Fe + H2O → Fe3O4 + H2 में पहले लोहा संतुलित करने के लिए 3Fe और ऑक्सीजन के लिए 4H2O लेते हैं। अब बाईं ओर हाइड्रोजन के 8 परमाणु हैं, इसलिए दाईं ओर 4H2 लिखते हैं। समीकरण 3Fe + 4H2O → Fe3O4 + 4H2 बनता है, जहाँ जलवाष्प अभिक्रिया की दशा है। लोहा, ऑक्सीजन और हाइड्रोजन को अलग-अलग गिनकर जाँचें। संतुलन से परमाणुओं का अनुपात मिलता है; इससे यह सिद्ध नहीं होता कि अभिक्रिया प्रत्येक ताप पर या जल की प्रत्येक अवस्था में अपने आप हो जाएगी।"
+        }
+      ],
+      "points": [
+        {
+          "en": "H2O2 is hydrogen peroxide, a different compound; only coefficients may change.",
+          "hi": "H2O2 हाइड्रोजन परॉक्साइड नामक अलग यौगिक है; केवल गुणांक बदल सकते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why must H2O not be changed to H2O2 while balancing water formation?",
+          "hi": "जल बनने का समीकरण संतुलित करते समय H2O को H2O2 क्यों नहीं बनाते?"
+        },
+        "answer": {
+          "en": "H2O2 is hydrogen peroxide, a different compound; only coefficients may change.",
+          "hi": "H2O2 हाइड्रोजन परॉक्साइड नामक अलग यौगिक है; केवल गुणांक बदल सकते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Combination and energy release",
+        "hi": "संयोजन और ऊर्जा का निकलना"
+      },
+      "paragraphs": [
+        {
+          "en": "In a combination reaction, two or more reactants form a single product. The definition concerns the pattern of substances, while exothermic describes energy transferred to the surroundings. These are different ways of classifying a reaction and may apply together. Quicklime reacts with water to form calcium hydroxide: CaO + H2O → Ca(OH)2. Heat is released, so this is both combination and exothermic. Calcium hydroxide is used in whitewashing; it slowly reacts with carbon dioxide to form calcium carbonate. Respiration also releases energy, although it is a complex controlled process rather than one simple laboratory step. Do not infer that every combination reaction must release heat solely from its name. Energy behaviour needs separate evidence or information.",
+          "hi": "संयोजन अभिक्रिया (Combination reaction) में दो या अधिक अभिकारकों से एक उत्पाद बनता है। यह परिभाषा बनने वाले पदार्थों की संख्या तथा अभिक्रिया के ढाँचे से संबंधित है। ऊष्माक्षेपी अभिक्रिया (Exothermic reaction) में परिवेश को ऊर्जा मिलती है। इसलिए दोनों शब्द अलग आधार बताते हैं और एक ही अभिक्रिया पर लागू हो सकते हैं। बिना बुझा चूना जल से अभिक्रिया करके कैल्सियम हाइड्रॉक्साइड बनाता है: CaO + H2O → Ca(OH)2। इसमें ऊष्मा निकलती है, इसलिए यह संयोजन और ऊष्माक्षेपी दोनों है। सफेदी में प्रयुक्त कैल्सियम हाइड्रॉक्साइड वायु की कार्बन डाइऑक्साइड से धीरे-धीरे अभिक्रिया करके कैल्सियम कार्बोनेट बनाता है। श्वसन में भी ऊर्जा मुक्त होती है, लेकिन कोशिका में यह नियंत्रित चरणों की जटिल प्रक्रिया है। केवल संयोजन नाम देखकर हर अभिक्रिया को ऊष्माक्षेपी नहीं मानना चाहिए। ऊर्जा के आदान-प्रदान का निष्कर्ष निकालने के लिए अलग सूचना या प्रेक्षण आवश्यक है। अभिकारक तथा उत्पाद को सही पहचानना पहली आवश्यकता है।"
+        },
+        {
+          "en": "Picture the reactants as a system and the nearby water, vessel and air as surroundings. If the surroundings become warmer because of the reaction, energy has moved outward. The substances have not gained extra atoms from the heat. In a written explanation, first identify the single product and then mention heat release. This separates a structural classification from an energy classification and avoids treating the two labels as competing answers.",
+          "hi": "अभिकारकों को निकाय और पास के पात्र, जल तथा वायु को परिवेश मानकर सोचें। अभिक्रिया के कारण परिवेश गर्म होता है तो ऊर्जा निकाय से बाहर गई है। ऊष्मा मिलने या निकलने का अर्थ नए परमाणु बनना नहीं है। लिखित उत्तर में पहले एक उत्पाद बनने की बात रखें, फिर ऊष्मा निकलने का कारण लिखें। इससे पदार्थों के ढाँचे पर आधारित वर्गीकरण और ऊर्जा पर आधारित वर्गीकरण स्पष्ट रूप से अलग समझ आते हैं। दोनों नाम परस्पर विरोधी उत्तर नहीं हैं, बल्कि एक ही घटना के अलग पहलू बताते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "It is combination because one product forms, and exothermic because heat is released.",
+          "hi": "एक उत्पाद बनने से संयोजन तथा ऊष्मा निकलने से ऊष्माक्षेपी अभिक्रिया है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Classify CaO reacting with water on two different bases.",
+          "hi": "CaO की जल से अभिक्रिया को दो अलग आधारों पर वर्गीकृत करें।"
+        },
+        "answer": {
+          "en": "It is combination because one product forms, and exothermic because heat is released.",
+          "hi": "एक उत्पाद बनने से संयोजन तथा ऊष्मा निकलने से ऊष्माक्षेपी अभिक्रिया है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Decomposition and sources of energy",
+        "hi": "वियोजन और ऊर्जा के स्रोत"
+      },
+      "paragraphs": [
+        {
+          "en": "Decomposition splits one reactant into two or more products. Thermal decomposition uses heat; electrolytic decomposition uses electrical energy; photochemical decomposition uses light. On heating, calcium carbonate gives calcium oxide and carbon dioxide: CaCO3 → CaO + CO2. Water can be decomposed electrically into hydrogen and oxygen, collected in a volume ratio of 2:1 under the same conditions. Silver chloride darkens in sunlight because silver forms: 2AgCl → 2Ag + Cl2. The energy source is written as a condition over the arrow. It should not be added as a material reactant with an invented chemical formula. Different decomposition reactions require different conditions. A single compound splitting does not mean its elements always appear as separate free atoms.",
+          "hi": "वियोजन अभिक्रिया (Decomposition reaction) में एक अभिकारक टूटकर दो या अधिक उत्पाद बनाता है। ऊष्मीय वियोजन में ऊष्मा, विद्युत अपघटन में विद्युत ऊर्जा और प्रकाशीय वियोजन में प्रकाश आवश्यक होता है। कैल्सियम कार्बोनेट गर्म करने पर कैल्सियम ऑक्साइड और कार्बन डाइऑक्साइड देता है: CaCO3 → CaO + CO2। जल का विद्युत अपघटन करने पर हाइड्रोजन और ऑक्सीजन मिलती हैं। समान दशाओं में इनके गैसीय आयतन का अनुपात 2:1 होता है। सिल्वर क्लोराइड सूर्य के प्रकाश में धूसर पड़ता है क्योंकि धात्विक सिल्वर बनती है: 2AgCl → 2Ag + Cl2। ऊर्जा स्रोत को तीर के ऊपर दशा के रूप में लिखते हैं; उसके लिए मनमाना रासायनिक सूत्र बनाकर अभिकारक नहीं जोड़ते। अलग-अलग यौगिकों के वियोजन के लिए अलग दशाएँ आवश्यक हो सकती हैं। एक यौगिक टूटने का अर्थ यह नहीं कि उसके सभी तत्व अलग स्वतंत्र परमाणुओं के रूप में ही मिलेंगे। उत्पाद सरल यौगिक भी हो सकते हैं।"
+        },
+        {
+          "en": "For water electrolysis, write 2H2O → 2H2 + O2 and check all atoms. Two hydrogen molecules for every oxygen molecule explain the gas-volume ratio; they do not imply a 2:1 mass ratio. Hydrogen and oxygen have different molecular masses. This is an important distinction between counting particles, comparing volumes of gases under equal conditions, and comparing masses. A diagram may exaggerate molecule size to make the ratio visible.",
+          "hi": "जल के विद्युत अपघटन में 2H2O → 2H2 + O2 लिखकर परमाणु गिनें। प्रत्येक ऑक्सीजन अणु के साथ हाइड्रोजन के 2 अणु मिलना गैसों का आयतन अनुपात समझाता है। इसका अर्थ द्रव्यमान अनुपात 2:1 नहीं है, क्योंकि हाइड्रोजन और ऑक्सीजन के अणुओं के द्रव्यमान अलग हैं। कणों को गिनना, समान दशाओं में गैसों का आयतन तुलना करना तथा द्रव्यमान तुलना करना तीन अलग काम हैं। चित्र में अणुओं को बड़ा दिखाया जा सकता है ताकि अनुपात स्पष्ट हो; वह अणुओं का वास्तविक आकार नहीं बताता।"
+        },
+        {
+          "en": "Heating ferrous sulphate crystals first removes their crystal water. Further heating gives ferric oxide and sulphur oxides: 2FeSO4 → Fe2O3 + SO2 + SO3. Heating lead nitrate produces yellow lead oxide, brown nitrogen dioxide and oxygen: 2Pb(NO3)2 → 2PbO + 4NO2 + O2. These are thermal decomposition examples. Silver bromide, like silver chloride, decomposes in light; this light sensitivity was used in black-and-white photography.",
+          "hi": "फेरस सल्फेट क्रिस्टल गर्म करने पर पहले क्रिस्टलन का जल खोते हैं। आगे गर्म करने पर फेरिक ऑक्साइड और सल्फर ऑक्साइड बनते हैं: 2FeSO4 → Fe2O3 + SO2 + SO3। लेड नाइट्रेट से पीला लेड ऑक्साइड, भूरी नाइट्रोजन डाइऑक्साइड और ऑक्सीजन बनते हैं: 2Pb(NO3)2 → 2PbO + 4NO2 + O2। ये ऊष्मीय वियोजन हैं। सिल्वर ब्रोमाइड भी सिल्वर क्लोराइड की तरह प्रकाश में टूटता है; इस गुण का उपयोग श्वेत-श्याम फोटोग्राफी में हुआ।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Decomposition starts with one reactant and gives multiple products; combination joins reactants into one product.",
+          "hi": "वियोजन में एक अभिकारक से कई उत्पाद, जबकि संयोजन में अभिकारकों से एक उत्पाद बनता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How does decomposition differ from combination?",
+          "hi": "वियोजन, संयोजन से कैसे भिन्न है?"
+        },
+        "answer": {
+          "en": "Decomposition starts with one reactant and gives multiple products; combination joins reactants into one product.",
+          "hi": "वियोजन में एक अभिकारक से कई उत्पाद, जबकि संयोजन में अभिकारकों से एक उत्पाद बनता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Displacement and relative reactivity",
+        "hi": "विस्थापन और सापेक्ष सक्रियता"
+      },
+      "paragraphs": [
+        {
+          "en": "A more reactive element can displace a less reactive element from a suitable compound. Iron placed in copper sulphate solution forms iron sulphate and copper: Fe + CuSO4 → FeSO4 + Cu. The blue solution becomes greenish and a copper deposit appears. The change provides evidence about relative reactivity, not a measurement of an absolute reaction speed. Copper cannot reverse this displacement by being put into iron sulphate under the same ordinary conditions. The same rule needs the correct reactants and conditions; it does not say that any two substances must exchange places. Read a symbolic equation by identifying the free element, the element inside the compound and which one becomes free after reaction. This makes displacement easier to recognise than memorising colours alone.",
+          "hi": "विस्थापन अभिक्रिया (Displacement reaction) में अधिक सक्रिय तत्व उपयुक्त यौगिक से कम सक्रिय तत्व को हटा सकता है। लोहे को कॉपर सल्फेट विलयन में रखने पर आयरन सल्फेट और कॉपर बनते हैं: Fe + CuSO4 → FeSO4 + Cu। नीले विलयन का रंग हरा-सा होता है और लोहे पर कॉपर जमता है। यह प्रेक्षण लोहे की कॉपर से अधिक सक्रियता दर्शाता है; इससे अभिक्रिया की कोई निश्चित संख्यात्मक चाल नहीं मिलती। सामान्य समान दशाओं में कॉपर को आयरन सल्फेट में डालने पर विपरीत विस्थापन नहीं होता। नियम लागू करने के लिए सही अभिकारक तथा दशाएँ पहचानना आवश्यक है। इसका अर्थ यह नहीं कि कोई भी दो पदार्थ हमेशा स्थान बदलेंगे। समीकरण पढ़ते समय पहले स्वतंत्र तत्व पहचानें, फिर यौगिक में उपस्थित धातु देखें और अंत में पहचानें कि उत्पाद में कौन स्वतंत्र तत्व बना है। केवल रंग याद करने के बजाय यह क्रम विस्थापन की समझ को मजबूत बनाता है।"
+        },
+        {
+          "en": "Compare zinc, iron, copper and silver in copper sulphate. Zinc and iron can displace copper; copper itself produces no displacement, and silver is less reactive. A metal sample remaining unchanged is also useful evidence when a suitable comparison is made. In the animation, switching the sample selects an identity, not a continuous physical property. Index numbers are interface labels and must never be mistaken for atomic numbers or reactivity units.",
+          "hi": "कॉपर सल्फेट में जिंक, लोहा, कॉपर और सिल्वर की तुलना करें। जिंक तथा लोहा कॉपर को विस्थापित कर सकते हैं। कॉपर स्वयं अपना विस्थापन नहीं करता और सिल्वर कम सक्रिय है। उचित तुलना में कोई स्पष्ट परिवर्तन न होना भी उपयोगी प्रेक्षण है। मॉडल में नमूना बदलने वाला नियंत्रण अलग धातु चुनता है; यह किसी सतत भौतिक राशि का मापन नहीं है। उसके सूचकांक केवल विकल्प पहचानने के लिए हैं। उन्हें परमाणु क्रमांक या सक्रियता की वास्तविक इकाई मानना गलत होगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "No; copper is less reactive than iron in the activity series.",
+          "hi": "नहीं; सक्रियता श्रेणी में कॉपर लोहे से कम सक्रिय है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Will copper displace iron from iron sulphate? Explain.",
+          "hi": "क्या कॉपर आयरन सल्फेट से लोहा विस्थापित करेगा? कारण दें।"
+        },
+        "answer": {
+          "en": "No; copper is less reactive than iron in the activity series.",
+          "hi": "नहीं; सक्रियता श्रेणी में कॉपर लोहे से कम सक्रिय है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Double displacement and precipitates",
+        "hi": "द्विविस्थापन और अवक्षेप"
+      },
+      "paragraphs": [
+        {
+          "en": "Double displacement involves exchange of ions between suitable reactants. When aqueous sodium sulphate and barium chloride react, insoluble barium sulphate forms: Na2SO4 + BaCl2 → BaSO4 + 2NaCl. The solid is called a precipitate, and its formation is precipitation. The remaining sodium and chloride ions stay in the solution. A precipitate is not the same as an undissolved substance that was already added as a powder; it is produced by the reaction. Neutralisation can also have a double-displacement pattern when acid and base form salt and water. Not every mixture of two salt solutions gives a visible precipitate. Solubility and whether a chemical change is driven forward matter. Use state symbols when they help distinguish an aqueous reactant from a solid product.",
+          "hi": "द्विविस्थापन अभिक्रिया (Double displacement reaction) में उपयुक्त अभिकारकों के आयनों का विनिमय होता है। सोडियम सल्फेट और बेरियम क्लोराइड के जलीय विलयन मिलाने पर अविलेय बेरियम सल्फेट बनता है: Na2SO4 + BaCl2 → BaSO4 + 2NaCl। बने ठोस को अवक्षेप (Precipitate) और उसके बनने को अवक्षेपण कहते हैं। सोडियम तथा क्लोराइड आयन विलयन में बने रहते हैं। पहले से डाला गया अघुला पाउडर और अभिक्रिया से बना अवक्षेप एक बात नहीं हैं। अवक्षेप नया उत्पाद होना चाहिए। अम्ल तथा क्षारक से लवण और जल बनने वाला उदासीनीकरण भी उपयुक्त स्थिति में द्विविस्थापन का ढाँचा दिखाता है। दो लवणों के प्रत्येक विलयन को मिलाने पर अवक्षेप बने, यह आवश्यक नहीं है। पदार्थों की विलेयता और परिवर्तन के अनुकूल दशाएँ महत्वपूर्ण हैं। जलीय अभिकारक और ठोस उत्पाद का अंतर स्पष्ट करने के लिए अवस्था संकेत उपयोगी होते हैं। समीकरण में बने ठोस को सही पहचानना रंग बताने जितना ही जरूरी है।"
+        },
+        {
+          "en": "Count ions conceptually without pretending that a salt solution contains tiny neutral salt molecules only. Dissolved ions can move and meet other ions; some combinations form an insoluble solid. The overall balanced equation remains the level required here. An animation that pairs coloured balls is a symbolic account of ion exchange. It is not a photograph of collisions or a claim that every collision instantly produces a precipitate particle.",
+          "hi": "विलयन में आयनों की भूमिका समझें। किसी लवण के जलीय विलयन को केवल छोटे उदासीन लवण अणुओं का समूह मानना उचित नहीं है। घुले आयन गति कर सकते हैं और दूसरे आयनों से मिलते हैं; कुछ संयोजन अविलेय ठोस बनाते हैं। इस स्तर पर समग्र संतुलित समीकरण पर्याप्त है। रंगीन गोलों को जोड़ी बदलते दिखाने वाला मॉडल आयन विनिमय का प्रतीक है। वह टक्करों का वास्तविक चित्र नहीं है और यह दावा भी नहीं करता कि प्रत्येक टक्कर तुरन्त अवक्षेप का कण बना देती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "BaSO4 is the insoluble solid; NaCl remains aqueous.",
+          "hi": "BaSO4 अविलेय ठोस है; NaCl विलयन में रहता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which product is the precipitate when Na2SO4 and BaCl2 solutions react?",
+          "hi": "Na2SO4 और BaCl2 के विलयन मिलाने पर अवक्षेप कौन है?"
+        },
+        "answer": {
+          "en": "BaSO4 is the insoluble solid; NaCl remains aqueous.",
+          "hi": "BaSO4 अविलेय ठोस है; NaCl विलयन में रहता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Oxidation and reduction together",
+        "hi": "ऑक्सीकरण और अपचयन साथ-साथ"
+      },
+      "paragraphs": [
+        {
+          "en": "At this level, oxidation can be recognised as gain of oxygen or loss of hydrogen; reduction as loss of oxygen or gain of hydrogen. In CuO + H2 → Cu + H2O, copper oxide loses oxygen and is reduced, while hydrogen gains oxygen and is oxidised. Both changes occur in the same reaction, so it is a redox reaction. The substance that supplies oxygen oxidises another substance and is an oxidising agent; it is itself reduced. The reducing agent removes oxygen from another substance and is itself oxidised. These labels describe roles in the stated reaction, not permanent identities in every possible reaction. Do not confuse the product copper with the reactant copper oxide when naming which substance undergoes reduction.",
+          "hi": "इस स्तर पर ऑक्सीकरण (Oxidation) को ऑक्सीजन के जुड़ने या हाइड्रोजन के हटने से पहचान सकते हैं। अपचयन (Reduction) में ऑक्सीजन हटती है या हाइड्रोजन जुड़ती है। CuO + H2 → Cu + H2O में कॉपर ऑक्साइड से ऑक्सीजन हटती है, इसलिए उसका अपचयन होता है। हाइड्रोजन में ऑक्सीजन जुड़ती है, इसलिए उसका ऑक्सीकरण होता है। दोनों परिवर्तन एक ही अभिक्रिया में होते हैं, इसलिए इसे रेडॉक्स अभिक्रिया कहते हैं। दूसरे पदार्थ को ऑक्सीजन देने वाला पदार्थ ऑक्सीकारक की भूमिका निभाता है और स्वयं अपचयित होता है। दूसरे पदार्थ से ऑक्सीजन हटाने वाला अपचायक स्वयं ऑक्सीकृत होता है। ये नाम दी गई अभिक्रिया में पदार्थ की भूमिका बताते हैं, हर संभावित अभिक्रिया में उसकी स्थायी पहचान नहीं हैं। किस पदार्थ का अपचयन हुआ पूछे जाने पर उत्पाद कॉपर की जगह अभिकारक कॉपर ऑक्साइड पहचानना चाहिए। ऑक्सीजन किससे हटी और किसमें जुड़ी, यह लिखने से कारण स्पष्ट होता है।"
+        },
+        {
+          "en": "Use two arrows in your reasoning: one for oxygen leaving copper oxide, and another for oxygen joining hydrogen. Then attach the words reduction and oxidation respectively. This avoids relying on a product colour alone. A reaction may also be classified as displacement while being redox. Multiple correct labels are possible because atom rearrangement, oxygen transfer and energy change are different features of the same chemical event.",
+          "hi": "विचार में दो तीर बनाएं। पहला कॉपर ऑक्साइड से ऑक्सीजन हटना दिखाए और दूसरा हाइड्रोजन में उसका जुड़ना। पहले परिवर्तन के सामने अपचयन और दूसरे के सामने ऑक्सीकरण लिखें। इससे केवल उत्पाद के रंग पर निर्भर हुए बिना कारण समझ आता है। कोई अभिक्रिया रेडॉक्स होने के साथ विस्थापन भी हो सकती है। कई सही नाम सम्भव हैं क्योंकि परमाणुओं का पुनर्विन्यास, ऑक्सीजन का स्थानांतरण और ऊर्जा का परिवर्तन एक ही रासायनिक घटना के अलग-अलग पक्ष हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Hydrogen gains oxygen to become water, so hydrogen is oxidised.",
+          "hi": "हाइड्रोजन ऑक्सीजन लेकर जल बनाती है, इसलिए हाइड्रोजन का ऑक्सीकरण होता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Identify the oxidised substance in CuO + H2 → Cu + H2O.",
+          "hi": "CuO + H2 → Cu + H2O में किसका ऑक्सीकरण होता है?"
+        },
+        "answer": {
+          "en": "Hydrogen gains oxygen to become water, so hydrogen is oxidised.",
+          "hi": "हाइड्रोजन ऑक्सीजन लेकर जल बनाती है, इसलिए हाइड्रोजन का ऑक्सीकरण होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Corrosion, rancidity and prevention",
+        "hi": "संक्षारण, विकृतगंधिता और बचाव"
+      },
+      "paragraphs": [
+        {
+          "en": "Corrosion is the gradual attack on a metal by substances in its surroundings. Iron rusts when both oxygen and water are available; rust is hydrated iron oxide with variable composition, not a single fixed FeO molecule. Painting, oiling and suitable protective coatings reduce contact with the surroundings. An exposed scratch can make the protection incomplete. Rancidity is oxidation of fats and oils that spoils smell and taste. Airtight packaging, refrigeration, antioxidants and nitrogen flushing can slow it in appropriate foods. These methods act in different ways: reducing oxygen contact, slowing reactions or inhibiting oxidation. They do not turn an already spoiled food back into fresh food. Connect prevention to the required reaction conditions instead of learning an unconnected list of methods.",
+          "hi": "संक्षारण (Corrosion) में परिवेश के पदार्थ धातु पर धीरे-धीरे आक्रमण करते हैं। लोहे में जंग लगने के लिए ऑक्सीजन तथा जल दोनों आवश्यक हैं। जंग जलयोजित आयरन ऑक्साइड है जिसकी संरचना बदल सकती है; उसे केवल FeO का एक निश्चित अणु नहीं मानते। पेंट, तेल और उपयुक्त सुरक्षात्मक परत धातु का परिवेश से संपर्क घटाते हैं। परत में खरोंच होने पर सुरक्षा अधूरी हो सकती है। विकृतगंधिता (Rancidity) में वसा और तेल के ऑक्सीकरण से भोजन की गंध तथा स्वाद खराब होते हैं। उपयुक्त भोजन में वायुरोधी पैकिंग, कम ताप, प्रतिऑक्सीकारक और नाइट्रोजन भरना इस परिवर्तन को धीमा कर सकते हैं। सभी विधियाँ एक ही ढंग से काम नहीं करतीं। कुछ ऑक्सीजन से संपर्क घटाती हैं, कुछ अभिक्रिया धीमी करती हैं और कुछ ऑक्सीकरण रोकने में सहायता करती हैं। इनमें से कोई विधि पहले से खराब भोजन को फिर ताजा नहीं बनाती। बचाव को अभिक्रिया की आवश्यक दशाओं से जोड़कर समझना केवल सूची याद करने से अधिक उपयोगी है।"
+        },
+        {
+          "en": "Compare three imaginary iron samples: moist air, dry air, and water without an oxygen supply. The first supports ordinary rusting most clearly because both required conditions are present. A classroom model may compress days into seconds and show only a relative rust amount. Its time slider does not predict the lifetime of a bridge or gate. Real corrosion also depends on temperature, salts, surface condition and the metal material.",
+          "hi": "लोहे के तीन काल्पनिक नमूने सोचें: नम वायु, शुष्क वायु और ऑक्सीजन की आपूर्ति से अलग जल। नम वायु में सामान्य जंग सबसे स्पष्ट होगी क्योंकि दोनों आवश्यक दशाएँ उपस्थित हैं। कक्षा का मॉडल कई दिनों को कुछ सेकंड में दिखाकर केवल सापेक्ष जंग बता सकता है। समय वाला नियंत्रण पुल या फाटक की वास्तविक आयु की भविष्यवाणी नहीं करता। असली संक्षारण पर ताप, लवण, सतह की दशा तथा धातु का पदार्थ भी प्रभाव डालते हैं। इसलिए मॉडल से कारण समझें, निश्चित इंजीनियरिंग माप नहीं निकालें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "It reduces oxygen contact and slows oxidation that causes rancidity.",
+          "hi": "यह ऑक्सीजन से संपर्क घटाकर विकृतगंधिता करने वाले ऑक्सीकरण को धीमा करती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is nitrogen used in some packets of oily snacks?",
+          "hi": "कुछ तैलीय खाद्य पैकेटों में नाइट्रोजन क्यों भरी जाती है?"
+        },
+        "answer": {
+          "en": "It reduces oxygen contact and slows oxidation that causes rancidity.",
+          "hi": "यह ऑक्सीजन से संपर्क घटाकर विकृतगंधिता करने वाले ऑक्सीकरण को धीमा करती है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "2H2 + O2 → 2H2O",
+      "meaning": {
+        "en": "Hydrogen and oxygen combine in molecule ratio 2:1:2.",
+        "hi": "हाइड्रोजन और ऑक्सीजन का अणु अनुपात 2:1:2 है।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    },
+    {
+      "expression": "Na2SO4 + BaCl2 → BaSO4 + 2NaCl",
+      "meaning": {
+        "en": "Barium sulphate is the precipitate.",
+        "hi": "बेरियम सल्फेट अवक्षेप है।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    },
+    {
+      "expression": "CuO + H2 → Cu + H2O",
+      "meaning": {
+        "en": "Copper oxide is reduced and hydrogen is oxidised.",
+        "hi": "कॉपर ऑक्साइड अपचयित तथा हाइड्रोजन ऑक्सीकृत होती है।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not change formula subscripts to balance; a reaction can fit more than one classification.",
+    "hi": "संतुलन के लिए सूत्र के अंदर अंक न बदलें; एक अभिक्रिया के कई सही वर्ग हो सकते हैं।"
+  },
+  "summary": [
+    {
+      "en": "New chemical identity distinguishes a reaction.",
+      "hi": "नई रासायनिक पहचान अभिक्रिया बताती है।"
+    },
+    {
+      "en": "Balance every element using coefficients.",
+      "hi": "गुणांकों से प्रत्येक तत्व संतुलित करें।"
+    },
+    {
+      "en": "Combination and decomposition describe product patterns.",
+      "hi": "संयोजन और वियोजन उत्पाद ढाँचा बताते हैं।"
+    },
+    {
+      "en": "Oxidation and reduction occur together in redox.",
+      "hi": "रेडॉक्स में ऑक्सीकरण तथा अपचयन साथ होते हैं।"
+    },
+    {
+      "en": "Controlling conditions can slow corrosion and rancidity.",
+      "hi": "दशाएँ नियंत्रित करने से संक्षारण तथा विकृतगंधिता धीमे हो सकते हैं।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Balance Mg + O2 → MgO.",
+        "hi": "Mg + O2 → MgO संतुलित करें।"
+      },
+      "given": {
+        "en": "Magnesium and oxygen form magnesium oxide.",
+        "hi": "मैग्नीशियम तथा ऑक्सीजन से मैग्नीशियम ऑक्साइड बनता है।"
+      },
+      "find": {
+        "en": "Smallest whole-number coefficients.",
+        "hi": "न्यूनतम पूर्णांक गुणांक।"
+      },
+      "formula": {
+        "en": "Atoms of each element are conserved.",
+        "hi": "प्रत्येक तत्व के परमाणु संरक्षित हैं।"
+      },
+      "steps": [
+        {
+          "en": "O2 contains 2 oxygen atoms, so write 2MgO.",
+          "hi": "O2 में 2 ऑक्सीजन हैं, इसलिए 2MgO लिखें।"
+        },
+        {
+          "en": "The product now has 2 Mg atoms; write 2Mg.",
+          "hi": "उत्पाद में 2 Mg हैं; 2Mg लिखें।"
+        }
+      ],
+      "answer": {
+        "en": "2Mg + O2 → 2MgO; ratio 2:1:2, unitless.",
+        "hi": "2Mg + O2 → 2MgO; अनुपात 2:1:2, इकाईरहित।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Classify the formation of slaked lime.",
+        "hi": "बुझे चूने का बनना वर्गीकृत करें।"
+      },
+      "given": {
+        "en": "CaO reacts with water and releases heat.",
+        "hi": "CaO जल से अभिक्रिया करके ऊष्मा देता है।"
+      },
+      "find": {
+        "en": "Reaction pattern and energy type.",
+        "hi": "अभिक्रिया ढाँचा तथा ऊर्जा प्रकार।"
+      },
+      "formula": {
+        "en": "CaO + H2O → Ca(OH)2",
+        "hi": "CaO + H2O → Ca(OH)2"
+      },
+      "steps": [
+        {
+          "en": "Two reactants produce one compound.",
+          "hi": "दो अभिकारक एक यौगिक देते हैं।"
+        },
+        {
+          "en": "Heat passes to surroundings.",
+          "hi": "ऊष्मा परिवेश को जाती है।"
+        }
+      ],
+      "answer": {
+        "en": "Combination and exothermic; no numerical unit.",
+        "hi": "संयोजन तथा ऊष्माक्षेपी; संख्यात्मक इकाई नहीं।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Identify both redox changes when CuO reacts with H2.",
+        "hi": "CuO और H2 की अभिक्रिया में दोनों रेडॉक्स परिवर्तन पहचानें।"
+      },
+      "given": {
+        "en": "CuO + H2 → Cu + H2O",
+        "hi": "CuO + H2 → Cu + H2O"
+      },
+      "find": {
+        "en": "Oxidised and reduced reactants.",
+        "hi": "ऑक्सीकृत तथा अपचयित अभिकारक।"
+      },
+      "formula": {
+        "en": "Oxygen gain: oxidation; oxygen loss: reduction.",
+        "hi": "ऑक्सीजन जुड़ना: ऑक्सीकरण; हटना: अपचयन।"
+      },
+      "steps": [
+        {
+          "en": "CuO loses oxygen to become Cu.",
+          "hi": "CuO ऑक्सीजन खोकर Cu बनता है।"
+        },
+        {
+          "en": "H2 gains oxygen to become water.",
+          "hi": "H2 ऑक्सीजन पाकर जल बनती है।"
+        }
+      ],
+      "answer": {
+        "en": "CuO is reduced; H2 is oxidised.",
+        "hi": "CuO अपचयित तथा H2 ऑक्सीकृत होती है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Check the atom counts in iron reacting with steam.",
+        "hi": "लोहे की भाप से अभिक्रिया में परमाणु गिनें।"
+      },
+      "given": {
+        "en": "3Fe + 4H2O → Fe3O4 + 4H2",
+        "hi": "3Fe + 4H2O → Fe3O4 + 4H2"
+      },
+      "find": {
+        "en": "Atom count of each element on both sides.",
+        "hi": "दोनों ओर प्रत्येक तत्व के परमाणु।"
+      },
+      "formula": {
+        "en": "Coefficient × atoms in each formula.",
+        "hi": "गुणांक × सूत्र में परमाणु।"
+      },
+      "steps": [
+        {
+          "en": "Left: Fe 3, O 4 and H 8.",
+          "hi": "बाएँ: Fe 3, O 4 और H 8।"
+        },
+        {
+          "en": "Right: Fe 3, O 4 and H 8.",
+          "hi": "दाएँ: Fe 3, O 4 और H 8।"
+        }
+      ],
+      "answer": {
+        "en": "Balanced; counts are 3 Fe, 4 O and 8 H atoms per equation set.",
+        "hi": "संतुलित; प्रत्येक समीकरण समूह में 3 Fe, 4 O तथा 8 H परमाणु।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Water electrolysis gives 30 mL oxygen. Find hydrogen volume.",
+        "hi": "जल विद्युत अपघटन में 30 mL ऑक्सीजन मिले तो हाइड्रोजन आयतन ज्ञात करें।"
+      },
+      "given": {
+        "en": "Gases measured at the same temperature and pressure; O2 = 30 mL.",
+        "hi": "दोनों गैसें समान ताप तथा दाब पर; O2 = 30 mL।"
+      },
+      "find": {
+        "en": "H2 volume.",
+        "hi": "H2 का आयतन।"
+      },
+      "formula": {
+        "en": "2H2O → 2H2 + O2; V(H2):V(O2)=2:1.",
+        "hi": "2H2O → 2H2 + O2; V(H2):V(O2)=2:1।"
+      },
+      "steps": [
+        {
+          "en": "Multiply the oxygen volume by 2.",
+          "hi": "ऑक्सीजन आयतन को 2 से गुणा करें।"
+        },
+        {
+          "en": "V(H2)=2 × 30 mL.",
+          "hi": "V(H2)=2 × 30 mL।"
+        }
+      ],
+      "answer": {
+        "en": "60 mL H2; this is a volume ratio, not a mass ratio.",
+        "hi": "60 mL H2; यह आयतन अनुपात है, द्रव्यमान अनुपात नहीं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which observation best supports formation of a new substance?",
+        "hi": "कौन-सा प्रेक्षण नया पदार्थ बनने का अधिक अच्छा प्रमाण है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Ice melting",
+            "hi": "बर्फ पिघलना"
+          },
+          "reason": {
+            "en": "Melting changes state, not identity.",
+            "hi": "पिघलना अवस्था बदलता है, पहचान नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Copper deposited from CuSO4 by iron",
+            "hi": "लोहे द्वारा CuSO4 से कॉपर जमना"
+          },
+          "reason": {
+            "en": "New copper metal forms in a displacement reaction.",
+            "hi": "विस्थापन में नई कॉपर धातु बनती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Glass breaking",
+            "hi": "काँच टूटना"
+          },
+          "reason": {
+            "en": "Breaking changes size and shape.",
+            "hi": "टूटना आकार और आकृति बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Water boiling",
+            "hi": "जल उबलना"
+          },
+          "reason": {
+            "en": "Boiling changes liquid water into vapour.",
+            "hi": "उबलना द्रव जल को वाष्प बनाता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Choose the balanced water-formation equation.",
+        "hi": "जल बनने का संतुलित समीकरण चुनें।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "H2 + O2 → H2O",
+            "hi": "H2 + O2 → H2O"
+          },
+          "reason": {
+            "en": "Oxygen counts differ.",
+            "hi": "ऑक्सीजन संख्या अलग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "H2 + O → H2O",
+            "hi": "H2 + O → H2O"
+          },
+          "reason": {
+            "en": "The reactant oxygen gas should be O2.",
+            "hi": "अभिकारक ऑक्सीजन गैस O2 होनी चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "2H2 + O2 → 2H2O",
+            "hi": "2H2 + O2 → 2H2O"
+          },
+          "reason": {
+            "en": "Both sides contain 4 H and 2 O atoms.",
+            "hi": "दोनों ओर 4 H और 2 O हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2H2 + 2O2 → 2H2O",
+            "hi": "2H2 + 2O2 → 2H2O"
+          },
+          "reason": {
+            "en": "There are 4 O atoms on the left but 2 on the right.",
+            "hi": "बाईं ओर 4 और दाईं ओर 2 O हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "CaO + H2O → Ca(OH)2 is which pattern?",
+        "hi": "CaO + H2O → Ca(OH)2 का प्रकार क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Combination",
+            "hi": "संयोजन"
+          },
+          "reason": {
+            "en": "Two reactants form one product.",
+            "hi": "दो अभिकारकों से एक उत्पाद बनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Decomposition",
+            "hi": "वियोजन"
+          },
+          "reason": {
+            "en": "Decomposition begins with one reactant.",
+            "hi": "वियोजन एक अभिकारक से शुरू होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Displacement",
+            "hi": "विस्थापन"
+          },
+          "reason": {
+            "en": "No free element replaces another here.",
+            "hi": "यहाँ स्वतंत्र तत्व दूसरे को नहीं हटाता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Precipitation only",
+            "hi": "केवल अवक्षेपण"
+          },
+          "reason": {
+            "en": "This label misses the combining pattern.",
+            "hi": "यह नाम संयोजन का ढाँचा नहीं बताता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which condition causes silver chloride decomposition?",
+        "hi": "सिल्वर क्लोराइड का प्रकाशीय वियोजन किससे होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Painting",
+            "hi": "पेंट से"
+          },
+          "reason": {
+            "en": "Paint can block light, not supply it.",
+            "hi": "पेंट प्रकाश रोक सकता है, देता नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cooling only",
+            "hi": "केवल ठंडा करने से"
+          },
+          "reason": {
+            "en": "Cooling is not the stated energy source.",
+            "hi": "ठंडा करना आवश्यक ऊर्जा स्रोत नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nitrogen packing",
+            "hi": "नाइट्रोजन पैकिंग से"
+          },
+          "reason": {
+            "en": "Nitrogen packing concerns oxidation control.",
+            "hi": "नाइट्रोजन पैकिंग ऑक्सीकरण नियंत्रण से संबंधित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sunlight",
+            "hi": "सूर्यप्रकाश से"
+          },
+          "reason": {
+            "en": "Light supplies energy for the photochemical change.",
+            "hi": "प्रकाश इस परिवर्तन के लिए ऊर्जा देता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which metal can displace Cu from CuSO4?",
+        "hi": "कौन CuSO4 से Cu विस्थापित कर सकता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Ag",
+            "hi": "Ag"
+          },
+          "reason": {
+            "en": "Silver is less reactive than copper.",
+            "hi": "सिल्वर कॉपर से कम सक्रिय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Fe",
+            "hi": "Fe"
+          },
+          "reason": {
+            "en": "Iron is more reactive than copper.",
+            "hi": "लोहा कॉपर से अधिक सक्रिय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cu",
+            "hi": "Cu"
+          },
+          "reason": {
+            "en": "Copper cannot displace itself.",
+            "hi": "कॉपर स्वयं को विस्थापित नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Au",
+            "hi": "Au"
+          },
+          "reason": {
+            "en": "Gold is less reactive than copper.",
+            "hi": "गोल्ड कॉपर से कम सक्रिय है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The white precipitate from Na2SO4 and BaCl2 is:",
+        "hi": "Na2SO4 तथा BaCl2 से सफेद अवक्षेप है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "NaCl",
+            "hi": "NaCl"
+          },
+          "reason": {
+            "en": "Sodium chloride stays dissolved.",
+            "hi": "सोडियम क्लोराइड घुला रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Na2O",
+            "hi": "Na2O"
+          },
+          "reason": {
+            "en": "Sodium oxide is not a product.",
+            "hi": "सोडियम ऑक्साइड उत्पाद नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "BaSO4",
+            "hi": "BaSO4"
+          },
+          "reason": {
+            "en": "Barium sulphate is insoluble.",
+            "hi": "बेरियम सल्फेट अविलेय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cl2",
+            "hi": "Cl2"
+          },
+          "reason": {
+            "en": "Chlorine gas is not formed here.",
+            "hi": "यहाँ क्लोरीन गैस नहीं बनती।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "In CuO + H2 → Cu + H2O, which loses oxygen?",
+        "hi": "CuO + H2 → Cu + H2O में ऑक्सीजन किससे हटती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "CuO",
+            "hi": "CuO"
+          },
+          "reason": {
+            "en": "Copper oxide loses oxygen and is reduced.",
+            "hi": "कॉपर ऑक्साइड ऑक्सीजन खोकर अपचयित होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "H2",
+            "hi": "H2"
+          },
+          "reason": {
+            "en": "Hydrogen gains oxygen.",
+            "hi": "हाइड्रोजन ऑक्सीजन पाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "H2O",
+            "hi": "H2O"
+          },
+          "reason": {
+            "en": "Water is the oxygen-containing product.",
+            "hi": "जल ऑक्सीजन वाला उत्पाद है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cu",
+            "hi": "Cu"
+          },
+          "reason": {
+            "en": "Copper is the product after oxygen removal.",
+            "hi": "कॉपर ऑक्सीजन हटने के बाद बना उत्पाद है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Ordinary rusting of iron needs:",
+        "hi": "लोहे की सामान्य जंग के लिए चाहिए:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only dry nitrogen",
+            "hi": "केवल शुष्क नाइट्रोजन"
+          },
+          "reason": {
+            "en": "Nitrogen does not supply the required pair.",
+            "hi": "नाइट्रोजन आवश्यक दोनों दशाएँ नहीं देती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only dry oxygen",
+            "hi": "केवल शुष्क ऑक्सीजन"
+          },
+          "reason": {
+            "en": "Moisture is also needed.",
+            "hi": "नमी भी चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only oil",
+            "hi": "केवल तेल"
+          },
+          "reason": {
+            "en": "Oil usually forms a barrier.",
+            "hi": "तेल सामान्यतः बाधा परत बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Oxygen and moisture",
+            "hi": "ऑक्सीजन और नमी"
+          },
+          "reason": {
+            "en": "Both conditions support ordinary rusting.",
+            "hi": "दोनों दशाएँ सामान्य जंग में आवश्यक हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Why can airtight packing slow rancidity?",
+        "hi": "वायुरोधी पैकिंग विकृतगंधिता क्यों धीमी करती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It creates new fat",
+            "hi": "नई वसा बनाती है"
+          },
+          "reason": {
+            "en": "Packing does not create fat.",
+            "hi": "पैकिंग वसा नहीं बनाती।"
+          }
+        },
+        {
+          "text": {
+            "en": "It removes all bacteria automatically",
+            "hi": "हर जीवाणु स्वतः हटाती है"
+          },
+          "reason": {
+            "en": "Airtight is not identical to sterile.",
+            "hi": "वायुरोधी का अर्थ रोगाणुरहित नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "It reduces oxygen contact",
+            "hi": "ऑक्सीजन संपर्क घटाती है"
+          },
+          "reason": {
+            "en": "Less oxygen contact slows fat oxidation.",
+            "hi": "कम ऑक्सीजन संपर्क वसा ऑक्सीकरण धीमा करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It raises every food’s temperature",
+            "hi": "हर भोजन का ताप बढ़ाती है"
+          },
+          "reason": {
+            "en": "Packing need not heat the food.",
+            "hi": "पैकिंग से भोजन गर्म होना आवश्यक नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "What may be changed to balance an equation?",
+        "hi": "समीकरण संतुलित करने के लिए क्या बदल सकते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Element symbols",
+            "hi": "तत्व संकेत"
+          },
+          "reason": {
+            "en": "Changing symbols changes the elements.",
+            "hi": "संकेत बदलने से तत्व बदलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Coefficients before formulae",
+            "hi": "सूत्रों के आगे गुणांक"
+          },
+          "reason": {
+            "en": "Coefficients change amounts without changing identities.",
+            "hi": "गुणांक पहचान बदले बिना संख्या बदलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Subscripts within compounds",
+            "hi": "यौगिक के अंदर अंक"
+          },
+          "reason": {
+            "en": "Changing subscripts changes the compound.",
+            "hi": "भीतरी अंक बदलने से यौगिक बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Names of elements arbitrarily",
+            "hi": "तत्वों के मनमाने नाम"
+          },
+          "reason": {
+            "en": "Names must match actual substances.",
+            "hi": "नाम वास्तविक पदार्थों के होने चाहिए।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why are bubbles alone insufficient evidence of a chemical reaction?",
+        "hi": "केवल बुलबुले रासायनिक अभिक्रिया का पर्याप्त प्रमाण क्यों नहीं हैं?"
+      },
+      "answer": {
+        "en": "Boiling also produces bubbles without making a new substance; the products and other evidence must be considered.",
+        "hi": "उबलने पर भी बिना नया पदार्थ बने बुलबुले निकलते हैं; इसलिए उत्पाद तथा अन्य प्रमाण देखना आवश्यक है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why must H2O not be changed to H2O2 while balancing water formation?",
+        "hi": "जल बनने का समीकरण संतुलित करते समय H2O को H2O2 क्यों नहीं बनाते?"
+      },
+      "answer": {
+        "en": "H2O2 is hydrogen peroxide, a different compound; only coefficients may change.",
+        "hi": "H2O2 हाइड्रोजन परॉक्साइड नामक अलग यौगिक है; केवल गुणांक बदल सकते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Classify CaO reacting with water on two different bases.",
+        "hi": "CaO की जल से अभिक्रिया को दो अलग आधारों पर वर्गीकृत करें।"
+      },
+      "answer": {
+        "en": "It is combination because one product forms, and exothermic because heat is released.",
+        "hi": "एक उत्पाद बनने से संयोजन तथा ऊष्मा निकलने से ऊष्माक्षेपी अभिक्रिया है।"
+      }
+    },
+    {
+      "question": {
+        "en": "How does decomposition differ from combination?",
+        "hi": "वियोजन, संयोजन से कैसे भिन्न है?"
+      },
+      "answer": {
+        "en": "Decomposition starts with one reactant and gives multiple products; combination joins reactants into one product.",
+        "hi": "वियोजन में एक अभिकारक से कई उत्पाद, जबकि संयोजन में अभिकारकों से एक उत्पाद बनता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which product is the precipitate when Na2SO4 and BaCl2 solutions react?",
+        "hi": "Na2SO4 और BaCl2 के विलयन मिलाने पर अवक्षेप कौन है?"
+      },
+      "answer": {
+        "en": "BaSO4 is the insoluble solid; NaCl remains aqueous.",
+        "hi": "BaSO4 अविलेय ठोस है; NaCl विलयन में रहता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Identify the oxidised substance in CuO + H2 → Cu + H2O.",
+        "hi": "CuO + H2 → Cu + H2O में किसका ऑक्सीकरण होता है?"
+      },
+      "answer": {
+        "en": "Hydrogen gains oxygen to become water, so hydrogen is oxidised.",
+        "hi": "हाइड्रोजन ऑक्सीजन लेकर जल बनाती है, इसलिए हाइड्रोजन का ऑक्सीकरण होता है।"
+      }
+    }
+  ],
+  "conceptMap": "प्रमाण → अभिकारक व उत्पाद → संतुलन → संयोजन / वियोजन / विस्थापन / द्विविस्थापन → ऊर्जा व रेडॉक्स → संक्षारण व विकृतगंधिता",
+  "conceptMapEn": "Evidence → reactants and products → balancing → combination / decomposition / displacement / double displacement → energy and redox → corrosion and rancidity",
+  "editionBasis": {
+    "en": "Original study companion aligned to the NCERT Science Class 10, reprint 2026–27, and UP Board syllabus. Diagrams are explanatory models, not experimental data.",
+    "hi": "NCERT विज्ञान कक्षा 10, पुनर्मुद्रण 2026–27 तथा UP बोर्ड पाठ्यक्रम पर आधारित मौलिक अध्ययन सहायक। चित्र समझाने वाले मॉडल हैं, प्रयोग के मापे हुए आँकड़े नहीं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Science Class 10, Chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc101.pdf"
+    },
+    {
+      "title": "UP Board Class 10 Science syllabus",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ]
+}

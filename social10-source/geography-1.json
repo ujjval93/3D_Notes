@@ -1,0 +1,902 @@
+{
+  "id": "ten-geography-1",
+  "classId": "10",
+  "number": 1,
+  "title": {
+    "en": "Resources and Development",
+    "hi": "संसाधन एवं विकास"
+  },
+  "engine": "map",
+  "goal": {
+    "en": "Use places, evidence and cause–effect explanations to understand resources and development.",
+    "hi": "संसाधन एवं विकास को स्थान, प्रमाण और कारण–परिणाम के संबंध से समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Resources and human choices",
+        "hi": "संसाधन और मानवीय निर्णय"
+      },
+      "body": {
+        "en": "A resource is useful through the relationship between nature, technology, institutions and human needs. A mineral deposit cannot be treated as usable merely because it exists. Extraction must be technically possible and economically workable, and use must fit social conditions. People create knowledge and organise access. A village pond supports drinking-water recharge, irrigation, fishing and living organisms; these uses can compete. Resource decisions therefore ask who benefits, who bears costs and whether the next generation retains access. The same object can have several uses, while its usefulness changes with technology. In an answer, connect material, knowledge and organisation rather than calling resources unlimited gifts.\n\nConsider a village pond. Its water becomes useful through knowledge of storage, agreed access and suitable treatment. A pond can support irrigation while being unsuitable for drinking. The same material therefore has different uses under different conditions. When describing a resource, identify the user, the intended purpose, the available technology and the environmental limits. This approach explains why usefulness changes without claiming that every natural feature must be exploited.",
+        "hi": "संसाधन (Resource) केवल जमीन में पड़ी वस्तु का नाम नहीं है। कोई पदार्थ हमारी आवश्यकता पूरी करने में उपयोगी हो और उसका उपयोग तकनीक, आर्थिक क्षमता तथा सामाजिक स्वीकार्यता के अनुसार संभव हो, तभी वह संसाधन बनता है। प्रकृति, मनुष्य और संस्थाएँ मिलकर यह उपयोग तय करते हैं। खनिज का पता होना और उससे धातु निकाल पाना अलग बातें हैं। शिक्षा, कौशल और सहयोग भी जरूरी हैं। गाँव का तालाब सिंचाई, मछली पालन, भूजल पुनर्भरण और जीवों के आवास में मदद करता है। अगर केवल एक उपयोगकर्ता सारा पानी निकाल ले, तो दूसरे लोगों के अवसर घटेंगे। इसलिए संसाधन अध्ययन में मात्रा के साथ पहुँच और न्याय भी देखें। किसी स्थानीय वस्तु को चुनकर उसके उपयोग, उपयोगकर्ता और रखरखाव की सूची बनाएँ। फिर सोचें कि तकनीक बदलने पर उसका उपयोग कैसे बदल सकता है। उत्तर में प्रकृति को अकेला कारण न बनाएँ; मानवीय ज्ञान और व्यवस्था की भूमिका भी लिखें।"
+      },
+      "question": {
+        "en": "Why is a known mineral deposit not automatically a usable resource?",
+        "hi": "ज्ञात खनिज भंडार अपने-आप उपयोग योग्य संसाधन क्यों नहीं बन जाता?"
+      }
+    },
+    {
+      "title": {
+        "en": "Four bases of classification",
+        "hi": "वर्गीकरण के 4 आधार"
+      },
+      "body": {
+        "en": "Classifications answer different questions. Origin separates biotic from abiotic resources; renewability concerns replacement time; ownership describes access; development status describes knowledge and use. A forest can be biotic and renewable yet also community-owned. Renewable does not mean inexhaustible at every place. Cutting trees faster than regrowth depletes a forest. Coal forms over geological time and is non-renewable on a human timescale. A school classification table should have one column per basis. Do not compare a renewable category with a national category as if they were alternatives. Examples need a stated basis and an explanation.\n\nA single resource belongs to several categories at once. A community pasture can be biotic in its vegetation, renewable if managed within regeneration, community-owned under the relevant arrangement, and developed when people already use it. Classification headings answer different questions and should not compete with each other. Create a four-column table for a resource you know; if ownership or legal status is uncertain, mark that uncertainty instead of inventing a category.",
+        "hi": "वर्गीकरण (Classification) का आधार साफ होना चाहिए। उत्पत्ति के आधार पर जैव और अजैव संसाधन अलग होते हैं। जीवित जगत से संबंधित वन जैसे संसाधन जैव हैं; चट्टान और धातु जैसे पदार्थ अजैव हैं। समाप्त होने की संभावना के आधार पर नवीकरण योग्य तथा अनवीकरण योग्य वर्ग बनते हैं। स्वामित्व के आधार पर व्यक्तिगत, सामुदायिक, राष्ट्रीय और अंतरराष्ट्रीय संसाधन समझते हैं। विकास की स्थिति के आधार पर संभाव्य, विकसित, भंडार और संचित कोष जैसे वर्ग आते हैं। एक ही वन एक साथ जैव, नवीकरण योग्य और सामुदायिक हो सकता है; ये विरोधी उत्तर नहीं हैं। नवीकरण योग्य का अर्थ असीमित नहीं है। वृक्षों के बढ़ने से तेज कटाई वन को घटाती है। कोयले के बनने का समय मानव जीवन की तुलना में बहुत लंबा है। अभ्यास में 4 स्तंभ वाली तालिका बनाकर तालाब, कोयला और खेत रखें। हर वर्ग के पीछे कारण लिखें। केवल नाम याद करने पर आधार बदलते ही भ्रम होता है।"
+      },
+      "question": {
+        "en": "Can one resource belong to more than one classification? Explain.",
+        "hi": "क्या एक संसाधन कई वर्गों में आ सकता है? कारण दें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Development status and planning",
+        "hi": "विकास की स्थिति और नियोजन"
+      },
+      "body": {
+        "en": "Potential resources are recognised but not fully used. Developed resources have been surveyed and their quantity and quality assessed. Stock includes materials with possible usefulness for which accessible technology is inadequate; reserves are a usable part kept for future use under current technology. Planning identifies resources, develops suitable skills and institutions, and connects regional plans with wider goals. A resource-rich region may still lack infrastructure or equitable access. A planning exercise should specify information required before investment: water balance, soil condition, ownership, costs and likely impacts. Planning is repeated as evidence and needs change.\n\nPlanning is more than counting deposits. Suppose two settlements share a watershed: upstream clearing can increase sediment downstream, so each settlement's decision affects the other. A plan should identify the resource, estimate needs, compare alternatives and assign responsibility for maintenance. Revisiting the plan after observation is essential because population, technology and environmental conditions change. Resource inventories guide action, but an inventory alone cannot decide what is fair or sustainable.",
+        "hi": "संभाव्य संसाधन (Potential Resources) का उपयोग संभव माना जाता है, पर वे पूरी तरह विकसित नहीं हुए होते। विकसित संसाधनों का सर्वेक्षण कर मात्रा और गुणवत्ता का आकलन किया जाता है। भंडार (Stock) में उपयोग की संभावना वाले ऐसे पदार्थ आते हैं जिनके लिए उपलब्ध तकनीक पर्याप्त नहीं है। संचित कोष (Reserves) वर्तमान तकनीक से उपयोग योग्य भाग है जिसे भविष्य के लिए बचाया जा सकता है। इन शब्दों को केवल मात्रा के आधार पर अलग न करें। संसाधन नियोजन में पहचान और सूची बनाना, उपयुक्त तकनीक तथा संस्थागत व्यवस्था तैयार करना और विकास योजना से जोड़ना शामिल है। खनिज संपन्न क्षेत्र में भी शिक्षा, सड़क या स्थानीय अधिकार कमजोर हों तो लाभ समान नहीं पहुँचता। मान लें किसी पंचायत को सिंचाई बढ़ानी है। उसे कुओं की संख्या के साथ पुनर्भरण, फसल की जरूरत, लागत और नीचे स्थित गाँवों पर प्रभाव भी जानना होगा। अच्छी योजना जानकारी मिलने के साथ सुधरती है। इसलिए नियोजन को एक बार की सूची बनाने तक सीमित न समझें।"
+      },
+      "question": {
+        "en": "Why does resource-rich land still need planning?",
+        "hi": "संसाधन संपन्न क्षेत्र को भी नियोजन की जरूरत क्यों होती है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Sustainability and fair access",
+        "hi": "सतत विकास और न्यायपूर्ण पहुँच"
+      },
+      "body": {
+        "en": "Sustainability combines present needs with the ability of future generations to meet theirs. Conservation means careful use, restoration and reducing waste, not stopping all development. Environmental harm and unequal access can arise together. A development decision should compare benefits and costs over time. A fictional village may increase irrigation immediately by pumping more groundwater, but if extraction exceeds recharge, later users face deeper wells and higher costs. Efficient use, crop choices, recharge and shared rules must work together. The 1992 Rio summit provides a historical setting for international discussion; it does not prove that every later project is sustainable.\n\nA useful sustainability question is whether a decision transfers an unpaid cost to another community or to future users. Cheap extraction today may require expensive restoration later. Conversely, a conservation investment may protect several services at once, such as water infiltration and biodiversity. Compare short-term gains with longer-term effects, and identify whose perspective is being used. Sustainable development involves both ecological limits and social needs rather than a blanket refusal of every productive activity.",
+        "hi": "सतत विकास (Sustainable Development) में आज की जरूरतें पूरी करते हुए भविष्य की पीढ़ियों की क्षमता सुरक्षित रखना शामिल है। संरक्षण का मतलब हर उपयोग रोक देना नहीं है। इसका अर्थ अनावश्यक अपव्यय घटाना, क्षति सुधारना और उपयोग की गति को उपलब्धता से जोड़ना है। एक काल्पनिक गाँव में अधिक पंप लगाने से पहले वर्ष सिंचाई बढ़ सकती है। लेकिन यदि निकासी पुनर्भरण से अधिक रहे तो जल स्तर नीचे जाएगा, बिजली खर्च बढ़ेगा और छोटे किसानों की पहुँच घट सकती है। इसलिए केवल तत्काल उत्पादन बढ़ना सफलता का पूरा प्रमाण नहीं है। पानी बचाने वाली विधि, उचित फसल, वर्षा जल संचयन और साझा नियम साथ चाहिए। 1992 का रियो सम्मेलन पर्यावरण तथा विकास पर वैश्विक विचार-विमर्श का महत्त्वपूर्ण संदर्भ है। किसी योजना को सतत बताने से पहले उसके सामाजिक और पर्यावरणीय प्रभाव समझें। उत्तर में आज का लाभ, भविष्य की लागत और सुधार का एक उपाय लिखें। इससे संरक्षण और विकास का संबंध स्पष्ट होता है।"
+      },
+      "question": {
+        "en": "How can present irrigation gains create future water problems?",
+        "hi": "आज का सिंचाई लाभ भविष्य की जल समस्या कैसे बना सकता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Land use and degradation",
+        "hi": "भूमि उपयोग और निम्नीकरण"
+      },
+      "body": {
+        "en": "Land supports cultivation, settlement, forests, grazing and infrastructure. Land use reflects relief, soils, climate and human decisions. Land degradation is a decline in productive or ecological capacity, while erosion is one process that removes soil. Mining, deforestation, overgrazing and poorly managed irrigation may contribute. Causes differ across locations. Over-irrigation can cause waterlogging and salt accumulation where drainage is inadequate. Conservation should address the cause: managed grazing, restored mine sites, vegetation cover and suitable drainage. Avoid presenting one remedy as sufficient everywhere. Compare two local land uses and identify a benefit, pressure and practical precaution for each.\n\nNet sown area counts land cultivated at least once, while gross cropped area counts repeated cultivation as additional crop area. Thus one hectare cropped twice contributes one hectare to net sown area but two hectares to gross cropped area. This does not mean that the physical land has doubled. In an examination answer, name the measure before comparing figures. Land-use categories describe use during a stated period and should not be confused with permanent natural characteristics.",
+        "hi": "भूमि (Land) खेती, वन, चरागाह, बस्ती और सड़क जैसे अनेक कार्यों का आधार है। भूमि उपयोग उच्चावच, मिट्टी, जलवायु, जनसंख्या और मानवीय निर्णय से बदलता है। भूमि निम्नीकरण (Land Degradation) का अर्थ भूमि की उपयोगी या पारिस्थितिक क्षमता घटना है। मृदा अपरदन इसका एक कारण हो सकता है, लेकिन दोनों शब्द पूरी तरह समान नहीं हैं। खनन, अनियंत्रित चराई, वन कटाई और गलत सिंचाई प्रबंधन अलग स्थानों पर समस्या बढ़ाते हैं। जहाँ निकास कमजोर हो, जरूरत से अधिक सिंचाई जलभराव और लवण संचय को बढ़ा सकती है। इसका उपाय केवल और पानी देना नहीं है। उपयुक्त निकास और उपयोग की योजना चाहिए। खनन क्षेत्र में गड्ढों का सुधार तथा वनस्पति पुनर्स्थापना उपयोगी हो सकती है। चरागाह में चराई का नियमन जरूरी हो सकता है। उत्तर लिखते समय कारण, प्रक्रिया और स्थानीय उपाय जोड़ें। बिना कारण पहचाने हर जगह वृक्षारोपण को अकेला समाधान लिखना अधूरा होगा।"
+      },
+      "question": {
+        "en": "Distinguish land degradation from soil erosion.",
+        "hi": "भूमि निम्नीकरण और मृदा अपरदन में अंतर बताएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Soils: alluvial, black and red",
+        "hi": "मिट्टियाँ: जलोढ़, काली और लाल"
+      },
+      "body": {
+        "en": "Soil is formed through weathering and biological processes over long periods. Parent rock, climate, relief, organisms and time interact. Alluvial soils occur widely in river plains and deltas; khadar is newer and bhangar older alluvium. Black soils are clayey and retain moisture, making them important in cotton-growing regions when other conditions are suitable. They develop cracks when dry. Red and yellow soils are associated with crystalline rocks; colour alone cannot establish crop suitability. Irrigation, nutrient management and drainage matter too. Map points in this activity are examples inside broad regions, not boundaries of uniform soil.\n\nTexture and fertility are different properties. A soil can hold much water yet require careful drainage; another can drain quickly and need moisture-conserving management. Black soil's ability to retain moisture helps explain its association with cotton, but crop choice also depends on rainfall, markets and farming practices. Avoid writing that a named soil produces only one crop. Soil regions on a school map represent broad patterns, with local differences inside each region.",
+        "hi": "मृदा (Soil) चट्टानों के अपक्षय और जैविक प्रक्रियाओं से लंबे समय में बनती है। मूल चट्टान, जलवायु, ढाल, जीव और समय मिलकर उसके गुण तय करते हैं। जलोढ़ मिट्टी नदियों द्वारा लाए पदार्थों से मैदानों और डेल्टा में मिलती है। खादर नई जलोढ़ और बाँगर पुरानी जलोढ़ है। काली मिट्टी में महीन कण अधिक होते हैं और नमी रोकने की क्षमता महत्त्वपूर्ण है। सूखने पर दरारें पड़ सकती हैं। उपयुक्त अन्य परिस्थितियों के साथ यह कपास की खेती से जुड़ी है। लाल और पीली मिट्टी का संबंध कई क्षेत्रों में स्फटिकीय चट्टानों से है; लौह यौगिक रंग प्रभावित करते हैं। केवल रंग देखकर उपजाऊपन का निश्चित निर्णय न करें। फसल की जरूरत, पानी, पोषक तत्त्व और निकास भी देखें। मानचित्र पर महाराष्ट्र का चिह्न काली मिट्टी के एक संदर्भ क्षेत्र को दिखाता है, पूरे राज्य को एक जैसी मिट्टी घोषित नहीं करता। तुलना तालिका में निर्माण, गुण और उपयोग के 3 आधार रखें।"
+      },
+      "question": {
+        "en": "Why is soil colour alone insufficient to choose a crop?",
+        "hi": "फसल चुनने के लिए केवल मिट्टी का रंग पर्याप्त क्यों नहीं है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Laterite, arid and mountain soils",
+        "hi": "लेटराइट, मरुस्थली और पर्वतीय मृदा"
+      },
+      "body": {
+        "en": "Laterite develops under intense leaching in climates with high temperature and heavy rainfall. Nutrients can be washed downward, and management becomes important. Arid soils often have low organic matter and moisture; irrigation requires attention to salinity and drainage. Mountain soils vary along slopes and elevations; they cannot be described with one uniform texture or fertility level. Vegetation protects the surface, while steep slopes may increase erosion risk. Use an atlas to connect broad soil patterns with rainfall and relief, then explain limits. A soil map simplifies a continuous, locally variable landscape. Field samples require observation and testing rather than assumptions from a state name.\n\nSoil formation links climate, parent material, organisms, relief and time. Mountain soils vary with altitude and slope, so describing one uniform mountain soil hides important differences. Arid soils often require attention to moisture and salts, whereas heavy rainfall can remove soluble substances through leaching. Explain a property through its formation conditions, then connect that property to management. A label without the process may earn less understanding than a short causal explanation.",
+        "hi": "लेटराइट मृदा (Laterite Soil) उच्च ताप और अधिक वर्षा वाले क्षेत्रों में तीव्र निक्षालन से विकसित हो सकती है। वर्षा का पानी घुलनशील पदार्थ नीचे ले जाता है, इसलिए पोषक प्रबंधन जरूरी हो सकता है। मरुस्थली मिट्टी में सामान्यतः जैव पदार्थ और नमी कम होते हैं। सिंचाई मिलने पर भी लवणता और जल निकास पर ध्यान देना पड़ता है। पर्वतीय मिट्टियाँ ऊँचाई, ढाल, वनस्पति तथा घाटी के अनुसार बदलती हैं। सभी पर्वतीय स्थानों को एक जैसा उपजाऊ या अनुपजाऊ कहना गलत है। खड़ी ढाल पर खुली मिट्टी आसानी से बह सकती है; वनस्पति उसका संरक्षण करती है। मानचित्र में किसी स्थान की मिट्टी समझते समय वर्षा और स्थलरूप का संबंध देखें। फिर यह सीमा लिखें कि बड़ा मानचित्र छोटे खेतों का हर अंतर नहीं बताता। स्थानीय नमूने का रंग, बनावट और नमी देखें, लेकिन बिना परीक्षण के पोषक मात्रा न घोषित करें। मिट्टी का वर्ग उपयोगी मार्गदर्शक है, अंतिम कृषि निर्णय का अकेला आधार नहीं।"
+      },
+      "question": {
+        "en": "How does leaching influence laterite soils?",
+        "hi": "निक्षालन लेटराइट मिट्टी को कैसे प्रभावित करता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Erosion, conservation and revision",
+        "hi": "अपरदन, संरक्षण और पुनरावृत्ति"
+      },
+      "body": {
+        "en": "Running water may remove a thin layer over a broad surface or cut channels that grow into gullies. Wind erosion is important on exposed dry surfaces. Contour ploughing works across slopes, terrace farming reduces effective slope length, strip cropping interrupts exposed areas and shelter belts slow wind. Methods are chosen according to terrain and cause. A fictional sloping field with bare soil after harvest needs protective cover and runoff control; a dry windy plain needs wind protection as well. Draw the direction of slope before choosing a method. Revise by linking resource classification, planning, sustainability, soil properties and the conservation response.\n\nDistinguish prevention from repair. Keeping vegetation and using suitable contour practices can reduce the beginning of erosion, while filling an existing gully without managing runoff may fail again. In a hypothetical hillside plan, first trace where water flows, then protect soil along that path and monitor the result. Revision should connect cause, visible effect and suitable response. Memorised conservation names become useful when you can explain which local problem each one addresses.",
+        "hi": "जल द्वारा चादर अपरदन (Sheet Erosion) में विस्तृत सतह से पतली परत हटती है। अवनालिका अपरदन (Gully Erosion) में बहता पानी गहरी नालियाँ काट सकता है। सूखी और खुली सतह पर पवन भी कण उड़ा सकती है। समोच्च जुताई ढाल के आर-पार समोच्च दिशा में की जाती है। सीढ़ीदार खेती ढाल को छोटे समतल भागों में बाँटकर बहाव की गति घटाती है। पट्टी कृषि खुली भूमि को बाधित करती है और रक्षक मेखलाएँ हवा की गति घटाती हैं। उपाय चुनने से पहले अपरदन का कारण पहचानें। काल्पनिक पहाड़ी खेत में फसल कटने के बाद जमीन खुली है; वहाँ आवरण और बहाव नियंत्रण दोनों महत्त्वपूर्ण होंगे। शुष्क मैदान में तेज हवा के लिए पवनरोधी व्यवस्था उपयोगी है। अभ्यास में ढाल का तीर बनाकर पानी की दिशा दिखाएँ और उपाय का कारण लिखें। पुनरावृत्ति में 5 संबंध जोड़ें: वर्गीकरण, नियोजन, न्यायपूर्ण उपयोग, मिट्टी के गुण और संरक्षण। इस क्रम से याद रखने पर उत्तर उदाहरण सहित बनता है।"
+      },
+      "question": {
+        "en": "Which method would reduce wind erosion on a dry plain?",
+        "hi": "शुष्क मैदान में पवन अपरदन घटाने का कौन-सा उपाय उचित होगा?"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which resource is non-renewable on a human timescale?",
+        "hi": "मानवीय समयावधि में कौन अनवीकरण योग्य है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Coal",
+            "hi": "कोयला"
+          },
+          "reason": {
+            "en": "Formation takes geological time.",
+            "hi": "बनने में भूवैज्ञानिक समय लगता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sunlight",
+            "hi": "सूर्यप्रकाश"
+          },
+          "reason": {
+            "en": "It is a continuous energy flow.",
+            "hi": "यह सतत ऊर्जा प्रवाह है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Wind",
+            "hi": "पवन"
+          },
+          "reason": {
+            "en": "Atmospheric processes renew it.",
+            "hi": "वायुमंडलीय प्रक्रियाएँ इसे बनाए रखती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Managed forest",
+            "hi": "प्रबंधित वन"
+          },
+          "reason": {
+            "en": "Trees can regrow, though overuse can deplete them.",
+            "hi": "वृक्ष फिर उग सकते हैं, पर अति उपयोग क्षति करता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Biotic and abiotic classify resources by what?",
+        "hi": "जैव और अजैव किस आधार के वर्ग हैं?"
+      },
+      "correct": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Ownership",
+            "hi": "स्वामित्व"
+          },
+          "reason": {
+            "en": "This gives individual or community categories.",
+            "hi": "इससे व्यक्तिगत या सामुदायिक वर्ग बनते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Origin",
+            "hi": "उत्पत्ति"
+          },
+          "reason": {
+            "en": "The distinction concerns living and non-living origin.",
+            "hi": "अंतर जीवित और निर्जीव उत्पत्ति से है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Price",
+            "hi": "मूल्य"
+          },
+          "reason": {
+            "en": "Price is not this classification basis.",
+            "hi": "मूल्य इसका आधार नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Distance",
+            "hi": "दूरी"
+          },
+          "reason": {
+            "en": "Distance does not define these classes.",
+            "hi": "दूरी इन वर्गों को नहीं तय करती।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which is newer alluvium?",
+        "hi": "नई जलोढ़ कौन-सी है?"
+      },
+      "correct": 2,
+      "options": [
+        {
+          "text": {
+            "en": "Bhangar",
+            "hi": "बाँगर"
+          },
+          "reason": {
+            "en": "It is older alluvium.",
+            "hi": "यह पुरानी जलोढ़ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Laterite",
+            "hi": "लेटराइट"
+          },
+          "reason": {
+            "en": "This is associated with leaching.",
+            "hi": "यह निक्षालन से संबंधित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Khadar",
+            "hi": "खादर"
+          },
+          "reason": {
+            "en": "Floodplain deposition renews it.",
+            "hi": "बाढ़ मैदान में नया जमाव होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Black soil",
+            "hi": "काली मिट्टी"
+          },
+          "reason": {
+            "en": "This is a different soil group.",
+            "hi": "यह अलग मिट्टी समूह है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which soil retains much moisture because of fine clay?",
+        "hi": "महीन चिकने कणों से कौन-सी मिट्टी नमी रोकती है?"
+      },
+      "correct": 3,
+      "options": [
+        {
+          "text": {
+            "en": "Arid sand only",
+            "hi": "केवल मरुस्थली रेत"
+          },
+          "reason": {
+            "en": "Coarse sand retains less moisture.",
+            "hi": "मोटी रेत कम नमी रोकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Bare rock",
+            "hi": "खुली चट्टान"
+          },
+          "reason": {
+            "en": "It is not a soil type.",
+            "hi": "यह मिट्टी का प्रकार नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Fresh gravel",
+            "hi": "नया कंकड़"
+          },
+          "reason": {
+            "en": "Large pore spaces allow rapid drainage.",
+            "hi": "बड़े छिद्र से पानी जल्दी निकलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Black soil",
+            "hi": "काली मिट्टी"
+          },
+          "reason": {
+            "en": "Its clayey texture retains moisture.",
+            "hi": "चिकनी बनावट नमी रोकती है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What does sustainable development protect?",
+        "hi": "सतत विकास किसकी रक्षा करता है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Future ability to meet needs",
+            "hi": "भविष्य में जरूरतें पूरी करने की क्षमता"
+          },
+          "reason": {
+            "en": "Present use must consider later generations.",
+            "hi": "आज के उपयोग में आने वाली पीढ़ियों का ध्यान चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unlimited extraction",
+            "hi": "असीमित दोहन"
+          },
+          "reason": {
+            "en": "This can exhaust resources.",
+            "hi": "इससे संसाधन घट सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only current profit",
+            "hi": "केवल आज का लाभ"
+          },
+          "reason": {
+            "en": "This ignores future costs.",
+            "hi": "यह भविष्य की लागत भूलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Permanent exclusion",
+            "hi": "स्थायी बहिष्कार"
+          },
+          "reason": {
+            "en": "Fair access is part of responsible use.",
+            "hi": "जिम्मेदार उपयोग में न्यायपूर्ण पहुँच महत्त्वपूर्ण है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What is contour ploughing?",
+        "hi": "समोच्च जुताई क्या है?"
+      },
+      "correct": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Ploughing straight downhill",
+            "hi": "सीधे ढाल के नीचे जुताई"
+          },
+          "reason": {
+            "en": "This can accelerate runoff.",
+            "hi": "इससे बहाव तेज हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ploughing along contour lines",
+            "hi": "समोच्च रेखाओं के साथ जुताई"
+          },
+          "reason": {
+            "en": "It interrupts downslope flow.",
+            "hi": "यह नीचे की ओर बहाव बाधित करती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Removing all cover",
+            "hi": "पूरा आवरण हटाना"
+          },
+          "reason": {
+            "en": "Bare soil is more exposed.",
+            "hi": "खुली मिट्टी अधिक असुरक्षित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Deep mining",
+            "hi": "गहरा खनन"
+          },
+          "reason": {
+            "en": "This is extraction, not soil conservation.",
+            "hi": "यह दोहन है, मृदा संरक्षण नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What can excessive irrigation with poor drainage cause?",
+        "hi": "खराब निकास के साथ अधिक सिंचाई क्या कर सकती है?"
+      },
+      "correct": 2,
+      "options": [
+        {
+          "text": {
+            "en": "Only soil renewal",
+            "hi": "केवल मिट्टी का नवीकरण"
+          },
+          "reason": {
+            "en": "Water use is not always beneficial.",
+            "hi": "पानी का उपयोग हमेशा लाभकारी नहीं होता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Instant forests",
+            "hi": "तुरंत वन"
+          },
+          "reason": {
+            "en": "Irrigation does not automatically create forests.",
+            "hi": "सिंचाई अपने-आप वन नहीं बनाती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Waterlogging and salinity",
+            "hi": "जलभराव और लवणता"
+          },
+          "reason": {
+            "en": "Poor drainage allows water and salts to accumulate.",
+            "hi": "कम निकास से पानी तथा लवण जमा होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No land change",
+            "hi": "भूमि में कोई बदलाव नहीं"
+          },
+          "reason": {
+            "en": "Soil conditions can change.",
+            "hi": "मिट्टी की दशा बदल सकती है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "A surveyed resource with known quantity and quality is called what?",
+        "hi": "सर्वेक्षित मात्रा और गुणवत्ता वाला संसाधन क्या है?"
+      },
+      "correct": 3,
+      "options": [
+        {
+          "text": {
+            "en": "Unknown",
+            "hi": "अज्ञात"
+          },
+          "reason": {
+            "en": "A survey provides information.",
+            "hi": "सर्वेक्षण से जानकारी मिलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only international",
+            "hi": "केवल अंतरराष्ट्रीय"
+          },
+          "reason": {
+            "en": "That is an ownership category.",
+            "hi": "वह स्वामित्व का वर्ग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always stock",
+            "hi": "हमेशा भंडार"
+          },
+          "reason": {
+            "en": "Stock concerns technological limitations.",
+            "hi": "भंडार में तकनीकी सीमा महत्त्वपूर्ण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Developed resource",
+            "hi": "विकसित संसाधन"
+          },
+          "reason": {
+            "en": "Survey establishes its assessed characteristics.",
+            "hi": "सर्वेक्षण से उसके आकलित गुण पता चलते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which method reduces wind speed over fields?",
+        "hi": "खेतों में पवन गति कौन घटाता है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Shelter belts",
+            "hi": "रक्षक मेखलाएँ"
+          },
+          "reason": {
+            "en": "Rows of trees act as wind barriers.",
+            "hi": "वृक्ष पंक्तियाँ हवा की बाधा हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Overgrazing",
+            "hi": "अतिचराई"
+          },
+          "reason": {
+            "en": "It removes protective cover.",
+            "hi": "यह रक्षक आवरण हटाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Deforestation",
+            "hi": "वन कटाई"
+          },
+          "reason": {
+            "en": "It removes wind protection.",
+            "hi": "यह पवनरोधक आवरण घटाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Gully cutting",
+            "hi": "अवनालिका काटना"
+          },
+          "reason": {
+            "en": "It is an erosion process.",
+            "hi": "यह अपरदन की प्रक्रिया है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which statement about soil maps is correct?",
+        "hi": "मृदा मानचित्र का सही कथन कौन-सा है?"
+      },
+      "correct": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Every state has one soil",
+            "hi": "हर राज्य में एक मिट्टी"
+          },
+          "reason": {
+            "en": "Local soils vary.",
+            "hi": "स्थानीय मिट्टियाँ बदलती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "They generalise broad patterns",
+            "hi": "वे व्यापक प्रतिरूप सरल बनाते हैं"
+          },
+          "reason": {
+            "en": "Small-scale maps omit local variation.",
+            "hi": "छोटे पैमाने के मानचित्र स्थानीय अंतर नहीं दिखाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Colour proves fertility",
+            "hi": "रंग उपजाऊपन सिद्ध करता है"
+          },
+          "reason": {
+            "en": "Water, nutrients and texture also matter.",
+            "hi": "पानी, पोषक और बनावट भी महत्त्वपूर्ण हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Markers are boundaries",
+            "hi": "चिह्न सीमाएँ हैं"
+          },
+          "reason": {
+            "en": "A marker only locates an example.",
+            "hi": "चिह्न केवल उदाहरण का स्थान बताता है।"
+          }
+        }
+      ]
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "Why plan resources?",
+        "hi": "संसाधन नियोजन क्यों जरूरी है?"
+      },
+      "answer": {
+        "en": "Distribution and access are uneven; planning connects identification, technology and fair sustainable use.",
+        "hi": "वितरण और पहुँच असमान हैं; नियोजन पहचान, तकनीक और न्यायपूर्ण सतत उपयोग जोड़ता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish stock and reserves.",
+        "hi": "भंडार और संचित कोष में अंतर दें।"
+      },
+      "answer": {
+        "en": "Stock has potential use limited by available technology; reserves are usable with current technology but conserved for future needs.",
+        "hi": "भंडार का संभावित उपयोग उपलब्ध तकनीक से सीमित है; संचित कोष वर्तमान तकनीक से उपयोग योग्य होते हुए भविष्य के लिए बचाया जाता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give two causes of land degradation.",
+        "hi": "भूमि निम्नीकरण के 2 कारण दें।"
+      },
+      "answer": {
+        "en": "Uncontrolled mining and overgrazing can damage land; causes vary by region.",
+        "hi": "अनियंत्रित खनन और अतिचराई भूमि को नुकसान पहुँचा सकते हैं; कारण क्षेत्र के अनुसार बदलते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish sheet and gully erosion.",
+        "hi": "चादर और अवनालिका अपरदन में अंतर दें।"
+      },
+      "answer": {
+        "en": "Sheet erosion removes a thin surface layer; gully erosion cuts channels.",
+        "hi": "चादर अपरदन सतह की पतली परत हटाता है; अवनालिका अपरदन नालियाँ काटता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why conserve renewable resources?",
+        "hi": "नवीकरण योग्य संसाधनों का संरक्षण क्यों?"
+      },
+      "answer": {
+        "en": "Extraction can exceed renewal locally, damaging ecosystems and future access.",
+        "hi": "स्थानीय निकासी नवीकरण से अधिक होकर पारितंत्र और भविष्य की पहुँच घटा सकती है।"
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "alluvial",
+      "kind": "place",
+      "title": {
+        "en": "Northern alluvial plain",
+        "hi": "उत्तरी जलोढ़ मैदान"
+      },
+      "location": [
+        80.9,
+        26.8
+      ],
+      "info": {
+        "en": "Lucknow is a reference point in the northern alluvial plains. Location marker is approximate, not a distribution boundary.",
+        "hi": "लखनऊ उत्तरी जलोढ़ मैदान का संदर्भ स्थान है। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    },
+    {
+      "id": "black",
+      "kind": "place",
+      "title": {
+        "en": "Deccan black-soil region",
+        "hi": "दक्कन काली मृदा क्षेत्र"
+      },
+      "location": [
+        75.3,
+        19.9
+      ],
+      "info": {
+        "en": "Parts of Maharashtra illustrate black-soil landscapes. Location marker is approximate, not a distribution boundary.",
+        "hi": "महाराष्ट्र के कुछ भाग काली मिट्टी के उदाहरण हैं। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    },
+    {
+      "id": "red",
+      "kind": "place",
+      "title": {
+        "en": "Red-soil region",
+        "hi": "लाल मृदा क्षेत्र"
+      },
+      "location": [
+        78.1,
+        13.1
+      ],
+      "info": {
+        "en": "Parts of the southern plateau contain red soils. Location marker is approximate, not a distribution boundary.",
+        "hi": "दक्षिणी पठार के कुछ भागों में लाल मिट्टियाँ हैं। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    },
+    {
+      "id": "laterite",
+      "kind": "place",
+      "title": {
+        "en": "Western Ghats laterite reference",
+        "hi": "पश्चिमी घाट लेटराइट संदर्भ"
+      },
+      "location": [
+        75.7,
+        14.2
+      ],
+      "info": {
+        "en": "High rainfall and leaching favour laterite formation in suitable settings. Location marker is approximate, not a distribution boundary.",
+        "hi": "उपयुक्त दशाओं में अधिक वर्षा तथा निक्षालन लेटराइट बनाते हैं। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    },
+    {
+      "id": "arid",
+      "kind": "place",
+      "title": {
+        "en": "Western Rajasthan",
+        "hi": "पश्चिमी राजस्थान"
+      },
+      "location": [
+        70.9,
+        26.9
+      ],
+      "info": {
+        "en": "Dry conditions make moisture and wind erosion important concerns. Location marker is approximate, not a distribution boundary.",
+        "hi": "शुष्क दशाओं में नमी और पवन अपरदन महत्त्वपूर्ण हैं। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    },
+    {
+      "id": "mountain",
+      "kind": "place",
+      "title": {
+        "en": "Himalayan soil reference",
+        "hi": "हिमालयी मृदा संदर्भ"
+      },
+      "location": [
+        77.2,
+        31.1
+      ],
+      "info": {
+        "en": "Soils vary strongly with slope and elevation. Location marker is approximate, not a distribution boundary.",
+        "hi": "ढाल और ऊँचाई के साथ मिट्टियाँ बहुत बदलती हैं। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    }
+  ],
+  "mapQuestions": [
+    {
+      "question": {
+        "en": "Locate a black-soil reference region and one alluvial plain.",
+        "hi": "काली मृदा का 1 संदर्भ क्षेत्र और 1 जलोढ़ मैदान दिखाएँ।"
+      },
+      "answer": {
+        "en": "Mark the Maharashtra Deccan and the northern plains; do not colour entire states as uniform soil.",
+        "hi": "महाराष्ट्र का दक्कन तथा उत्तरी मैदान दिखाएँ; पूरे राज्य को एक मिट्टी न दिखाएँ।"
+      }
+    },
+    {
+      "question": {
+        "en": "Locate a dry western reference and a high-rainfall western-ghat reference.",
+        "hi": "पश्चिम का शुष्क और पश्चिमी घाट का अधिक वर्षा वाला संदर्भ दिखाएँ।"
+      },
+      "answer": {
+        "en": "Western Rajasthan and the Western Ghats contrast in moisture and leaching conditions.",
+        "hi": "पश्चिमी राजस्थान तथा पश्चिमी घाट में नमी और निक्षालन की दशाएँ अलग हैं।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "title": {
+        "en": "Classify carefully",
+        "hi": "सावधानी से वर्गीकरण"
+      },
+      "question": {
+        "en": "Classify a community forest by two bases.",
+        "hi": "सामुदायिक वन को 2 आधारों पर वर्गीकृत करें।"
+      },
+      "steps": [
+        {
+          "en": "Choose origin and ownership.",
+          "hi": "उत्पत्ति और स्वामित्व चुनें।"
+        },
+        {
+          "en": "Identify living cover and collective access.",
+          "hi": "जीवित आवरण और सामूहिक पहुँच पहचानें।"
+        }
+      ],
+      "answer": {
+        "en": "Biotic by origin; community-owned by ownership.",
+        "hi": "उत्पत्ति से जैव; स्वामित्व से सामुदायिक।"
+      }
+    },
+    {
+      "title": {
+        "en": "Diagnose the problem",
+        "hi": "समस्या पहचानें"
+      },
+      "question": {
+        "en": "Water stands in an irrigated field and salts collect. Suggest a response.",
+        "hi": "सिंचित खेत में पानी और लवण जमा हैं। उपाय सुझाएँ।"
+      },
+      "steps": [
+        {
+          "en": "Identify waterlogging, not simple water shortage.",
+          "hi": "जलभराव पहचानें, केवल जल कमी नहीं।"
+        },
+        {
+          "en": "Review drainage and irrigation quantity.",
+          "hi": "निकास और सिंचाई मात्रा जाँचें।"
+        }
+      ],
+      "answer": {
+        "en": "Improve appropriate drainage and irrigation management with local guidance.",
+        "hi": "स्थानीय मार्गदर्शन से उचित निकास और सिंचाई प्रबंधन सुधारें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Match remedy to cause",
+        "hi": "कारण के अनुसार उपाय"
+      },
+      "question": {
+        "en": "A dry field loses topsoil in strong winds. Choose a measure.",
+        "hi": "शुष्क खेत की ऊपरी मिट्टी तेज हवा उड़ाती है। उपाय चुनें।"
+      },
+      "steps": [
+        {
+          "en": "Identify wind as the agent.",
+          "hi": "पवन को कारक पहचानें।"
+        },
+        {
+          "en": "Keep cover and interrupt wind.",
+          "hi": "आवरण रखें और पवन बाधित करें।"
+        }
+      ],
+      "answer": {
+        "en": "Shelter belts and suitable cover reduce wind exposure.",
+        "hi": "रक्षक मेखला और उचित आवरण पवन का प्रभाव घटाते हैं।"
+      }
+    }
+  ],
+  "why": {
+    "en": "A resource becomes useful through knowledge and organisation; conservation must match the process causing depletion.",
+    "hi": "ज्ञान और व्यवस्था संसाधन को उपयोगी बनाते हैं; संरक्षण का उपाय क्षय के कारण से मिलना चाहिए।"
+  },
+  "missions": [
+    {
+      "key": "visited",
+      "min": 3,
+      "label": {
+        "en": "Explore 3 different map features.",
+        "hi": "मानचित्र के 3 अलग स्थल देखें।"
+      }
+    },
+    {
+      "key": "zoom",
+      "min": 2,
+      "label": {
+        "en": "Zoom to 2× and compare locations.",
+        "hi": "2× ज़ूम करके स्थानों की तुलना करें।"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, Chapter 1, 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf"
+    },
+    {
+      "title": "UPMSP Class 10 Social Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/932-Social-Science-Class-10.pdf"
+    }
+  ],
+  "scopeNote": {
+    "en": "Original study companion. Map markers are approximate reference locations; they do not show complete distributions or political boundaries. Use the prescribed atlas for map assessment.",
+    "hi": "मौलिक अध्ययन-सहायक। मानचित्र चिह्न लगभग संदर्भ स्थान हैं; वे पूरा वितरण या राजनीतिक सीमाएँ नहीं दिखाते। मानचित्र परीक्षा के लिए निर्धारित एटलस देखें।"
+  }
+}

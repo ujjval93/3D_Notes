@@ -1,0 +1,880 @@
+{
+  "id": 2,
+  "title": {
+    "en": "Relations and Functions",
+    "hi": "संबंध एवं फलन"
+  },
+  "goal": {
+    "en": "Distinguish relations from functions and track domain, range and function operations.",
+    "hi": "संबंध तथा फलन पहचानें और प्रांत,परिसर व संक्रियाएँ जाँचें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Ordered pairs and Cartesian product",
+        "hi": "क्रमित युग्म और कार्तीय गुणनफल"
+      },
+      "body": {
+        "en": "An ordered pair (a,b) records a first and a second component. It equals (c,d) exactly when a=c and b=d. Usually (a,b) differs from (b,a). The Cartesian product A×B contains every ordered pair whose first component belongs to A and second to B. For A={1,2} and B={p,q}, it contains (1,p),(1,q),(2,p),(2,q). A finite product has n(A)n(B) elements. If either set is empty the product is empty. A table helps enumerate systematically. Distinguish the ordered pair (1,2), the set {1,2}, and the coordinate point represented by that pair.",
+        "hi": "क्रमित युग्म (Ordered pair) (a,b) में पहला घटक a और दूसरा b है। (a,b)=(c,d) तभी जब a=c तथा b=d हों। सामान्यतः (a,b) और (b,a) अलग होते हैं। A×B कार्तीय गुणनफल (Cartesian product) है, जिसमें पहला घटक A और दूसरा B से लेने वाले सभी क्रमित युग्म हैं। A={1,2} तथा B={p,q} हो, तो (1,p),(1,q),(2,p),(2,q) मिलते हैं। हर पहले घटक के साथ हर दूसरे घटक को जोड़ना जरूरी है। तालिका बनाकर एक-एक पंक्ति पढ़ने से कोई युग्म छूटता या दोहराता नहीं है। परिमित समुच्चयों में n(A×B)=n(A)n(B) है। किसी 1 समुच्चय के रिक्त होने पर गुणनफल भी रिक्त होता है। A×B और B×A में क्रम बदलता है, इसलिए सामान्यतः वे समान नहीं हैं। युग्म (1,2) तथा समुच्चय {1,2} की प्रकृति अलग है। निर्देशांक तल पर यही युग्म 1 बिंदु का स्थान भी बता सकता है, लेकिन गुणनफल की परिभाषा केवल संख्यात्मक अवयवों तक सीमित नहीं है।"
+      },
+      "formula": "n(A×B)=n(A)n(B)",
+      "question": {
+        "en": "If n(A)=3 and n(B)=2, how many elements are in A×B?",
+        "hi": "n(A)=3 तथा n(B)=2 में A×B की अवयव संख्या क्या है?"
+      },
+      "answer": {
+        "en": "3×2=6.",
+        "hi": "3×2=6।"
+      }
+    },
+    {
+      "title": {
+        "en": "Relations as selected pairs",
+        "hi": "चुने हुए युग्मों के रूप में संबंध"
+      },
+      "body": {
+        "en": "A relation R from A to B is a subset of A×B. Its pairs record which A elements are related to which B elements. A rule such as a<b selects pairs from a specified product. With A={1,2} and B={2,3}, the relation a<b is {(1,2),(1,3),(2,3)}. The domain comprises first components actually occurring in R; the range comprises its second components. B remains the codomain and may be larger than the range. An empty relation is permitted. Finite sets with m and n elements admit 2^(mn) relations because each product pair may be included or omitted independently. A relation may leave some elements of the starting set unused, unlike a function whose stated domain must be fully covered. For A={1,2,3}, B={4,5} and R={(1,4)}, the relation domain is{1}; the codomain remains B.",
+        "hi": "A से B में संबंध (Relation) R, A×B का कोई उपसमुच्चय है। संबंध के युग्म बताते हैं कि A का कौन अवयव B के किस अवयव से जुड़ा है। कोई नियम दिए हुए गुणनफल से उपयुक्त युग्म चुनता है। A={1,2},B={2,3} तथा a<b का नियम हो, तो R={(1,2),(1,3),(2,3)} है। प्रांत (Domain) में संबंध में वास्तव में आने वाले पहले घटक होते हैं। परिसर (Range) में वास्तव में आने वाले दूसरे घटक होते हैं। B सहप्रांत (Codomain) है; उसका हर अवयव उपयोग होना जरूरी नहीं है। इसलिए प्रांत और पूरा आरंभिक समुच्चय किसी सामान्य संबंध में अलग हो सकते हैं। रिक्त संबंध भी उपसमुच्चय होने से मान्य है। m तथा n अवयवों वाले परिमित समुच्चयों में mn संभावित युग्म हैं। प्रत्येक को रखने या छोड़ने के 2 विकल्प होने से कुल 2^(mn) संबंध मिलते हैं। पहले गुणनफल लिखना, फिर नियम लगाना, सदस्यता और क्रम की गलतियाँ कम करता है। सामान्य संबंध आरंभिक समुच्चय के कुछ अवयव छोड़ सकता है,लेकिन फलन का पूरा घोषित प्रांत उपयोग होना चाहिए। A={1,2,3},B={4,5},R={(1,4)} में संबंध का प्रांत{1} है;सहप्रांत B ही है। यह उदाहरण प्रांत और आरंभिक समुच्चय का अंतर स्पष्ट करता है।"
+      },
+      "formula": "R⊆A×B; domain={a:(a,b)∈R}; range={b:(a,b)∈R}",
+      "question": {
+        "en": "For R={(1,4),(3,4)}, find domain and range.",
+        "hi": "R={(1,4),(3,4)} का प्रांत तथा परिसर निकालें।"
+      },
+      "answer": {
+        "en": "Domain={1,3}, range={4}.",
+        "hi": "प्रांत={1,3},परिसर={4}।"
+      }
+    },
+    {
+      "title": {
+        "en": "What makes a function",
+        "hi": "फलन बनने की शर्त"
+      },
+      "body": {
+        "en": "A function f:A→B assigns exactly one B element to every A element. Every input must receive an output, and an input cannot receive two different outputs. Different inputs may share an output. Thus {(1,p),(2,p)} defines a function on {1,2}, while {(1,p),(1,q),(2,p)} does not when p≠q. Not every relation is a function. The notation f(x) names the output for x; it is not multiplication of f and x. In an arrow diagram count arrows leaving each domain element: exactly one is required. A graph passes the vertical-line test precisely when each allowed input has a unique output.",
+        "hi": "फलन (Function) f:A→B ऐसा संबंध है जो A के प्रत्येक अवयव को B का ठीक 1 अवयव देता है। हर निवेश (Input) का निर्गत (Output) होना चाहिए, और उसी निवेश के 2 अलग निर्गत नहीं हो सकते। अलग निवेशों का निर्गत समान हो सकता है। इसलिए {(1,p),(2,p)} प्रांत {1,2} पर फलन है। लेकिन p≠q होने पर {(1,p),(1,q),(2,p)} फलन नहीं है। पहले उदाहरण में दोनों निवेशों को ठीक 1 निर्गत मिला; दूसरे में 1 को 2 अलग निर्गत मिल गए। हर फलन संबंध है, पर हर संबंध फलन नहीं है। संकेत f(x), x का फलन मान है; यह f और x का गुणनफल नहीं है। तीर आरेख में हर प्रांत अवयव से निकलता ठीक 1 तीर होना चाहिए। सहप्रांत में कोई अवयव बिना तीर के रह सकता है। ग्राफ में ऊर्ध्वाधर रेखा परीक्षण से एकल निर्गत जाँच सकते हैं। फिर भी दिए प्रांत के हर निवेश पर परिभाषित होने की शर्त अलग जाँचना जरूरी है।"
+      },
+      "formula": "For every x∈A, exactly one y∈B satisfies y=f(x)",
+      "question": {
+        "en": "Can two different inputs have the same function value?",
+        "hi": "क्या 2 अलग निवेशों का फलन मान समान हो सकता है?"
+      },
+      "answer": {
+        "en": "Yes; uniqueness is required per input, not per output.",
+        "hi": "हाँ; प्रत्येक निवेश का निर्गत अद्वितीय चाहिए, हर निर्गत का निवेश नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Domain, codomain and range",
+        "hi": "प्रांत, सहप्रांत और परिसर"
+      },
+      "body": {
+        "en": "The stated domain is the set of allowed inputs; the codomain is the target set; the range is the set of outputs actually attained. For f:R→R, f(x)=x², the range is [0,∞), although the codomain is R. Restricting the domain can change the range: on [−1,2], the same rule has range [0,4]. A real-valued formula imposes restrictions: denominators cannot vanish and radicands of even roots must be nonnegative. The natural real domain of √(x−2) is [2,∞); that of 1/(x−3) is R−{3}. State restrictions before simplifying, because cancellation can conceal an originally excluded input. A stated domain can be smaller than the largest domain permitted by a formula. The author must specify it; a reader should not silently enlarge it.",
+        "hi": "प्रांत (Domain) अनुमत निवेशों का समुच्चय है। सहप्रांत (Codomain) लक्ष्य समुच्चय और परिसर (Range) वास्तव में मिलने वाले निर्गतों का समुच्चय है। f:R→R, f(x)=x² में सहप्रांत R है, लेकिन परिसर [0,∞) है। ऋणात्मक वास्तविक संख्या का वर्ग ऋणात्मक नहीं बनता। प्रांत को [−1,2] तक सीमित करें, तो उसी नियम का परिसर [0,4] हो जाता है। अतः केवल सूत्र देखकर प्रांत और परिसर न तय करें; दी हुई सीमाएँ भी पढ़ें। वास्तविक मान वाले सूत्र में हर शून्य नहीं हो सकता और सम घात वाले मूल के अंदर का व्यंजक गैरऋणात्मक चाहिए। √(x−2) का स्वाभाविक वास्तविक प्रांत [2,∞) और 1/(x−3) का R−{3} है। सरल करने से पहले प्रतिबंध लिखें। (x²−1)/(x−1) को x+1 लिखने के बाद भी मूल फलन में x=1 निषिद्ध है। ग्राफ का छूटा बिंदु उस प्रतिबंध को याद रखने में मदद करता है। दिया हुआ प्रांत सूत्र से संभव सबसे बड़े प्रांत से छोटा हो सकता है। परिभाषा में उसे स्पष्ट लिखना चाहिए;पाठक अपनी ओर से उसे चुपचाप बड़ा न करे।"
+      },
+      "formula": "Range(f)⊆codomain; denominator≠0; even-root radicand≥0",
+      "question": {
+        "en": "Find the real domain of √(5−x).",
+        "hi": "√(5−x) का वास्तविक प्रांत निकालें।"
+      },
+      "answer": {
+        "en": "5−x≥0 gives (−∞,5].",
+        "hi": "5−x≥0 से (−∞,5]।"
+      }
+    },
+    {
+      "title": {
+        "en": "Constant, identity and polynomial functions",
+        "hi": "अचर, तत्समक और बहुपद फलन"
+      },
+      "body": {
+        "en": "A constant function f(x)=c has a horizontal graph and, on a nonempty domain, range {c}. The identity f(x)=x sends every real input to itself; its graph is the line y=x. A polynomial function is a sum of nonnegative integer powers of x with real coefficients. Its real domain is all R. A linear function ax+b has a straight graph; a nonconstant one has range R. The quadratic x² has a parabolic graph. Do not infer that every polynomial has range R: x² does not. Evaluating f(a) means substituting a consistently into every occurrence of x. Parentheses prevent sign errors for negative inputs.",
+        "hi": "अचर फलन (Constant function) f(x)=c हर अनुमत निवेश को वही c देता है। उसका ग्राफ क्षैतिज रेखा है और अरिक्त प्रांत पर परिसर {c} है। तत्समक फलन (Identity function) f(x)=x हर वास्तविक निवेश को स्वयं उसी में भेजता है। इसका ग्राफ मूलबिंदु से गुजरती y=x रेखा है। बहुपद फलन (Polynomial function) में x की गैरऋणात्मक पूर्णांक घातों के पद और वास्तविक गुणांक होते हैं। किसी वास्तविक बहुपद का स्वाभाविक प्रांत पूरा R है। ax+b का ग्राफ सीधी रेखा है। a≠0 होने पर उसका परिसर R है; a=0 में वह अचर बन जाता है। x² का ग्राफ परवलय है और परिसर [0,∞) है। इसलिए सभी बहुपदों का परिसर R कहना गलत है। f(a) निकालने के लिए हर x के स्थान पर a रखें। ऋणात्मक निवेश को कोष्ठक में लिखें: (−2)²=4, जबकि −2²=−4 है। फलन का नाम और उसका मान अलग पहचानने से प्रतिस्थापन अधिक स्पष्ट होता है।"
+      },
+      "formula": "Constant:f(x)=c; identity:f(x)=x; polynomial:Σ aₖxᵏ",
+      "question": {
+        "en": "For f(x)=x²−3x, find f(−2).",
+        "hi": "f(x)=x²−3x में f(−2) निकालें।"
+      },
+      "answer": {
+        "en": "4+6=10.",
+        "hi": "4+6=10।"
+      }
+    },
+    {
+      "title": {
+        "en": "Modulus and signum functions",
+        "hi": "मापांक और चिह्न फलन"
+      },
+      "body": {
+        "en": "The modulus |x| is the nonnegative distance of x from 0. It equals x for x≥0 and −x for x<0. Thus |−3|=3, and its V-shaped graph has range [0,∞). The signum function gives −1,0,1 according as x<0,x=0,x>0. Its range is {−1,0,1}; the isolated point at the origin must be shown separately. A piecewise rule chooses a formula after checking the input condition. To solve |x|=a for positive a, both x=a and x=−a are needed. If a<0 there is no real solution. Do not replace |x| by x without checking its sign.",
+        "hi": "मापांक (Modulus) |x|, संख्या रेखा पर x की 0 से गैरऋणात्मक दूरी है। x≥0 होने पर |x|=x और x<0 होने पर |x|=−x है। इसलिए |−3|=3 मिलता है। ग्राफ V आकार का है और परिसर [0,∞) है। चिह्न फलन (Signum function) निवेश ऋणात्मक होने पर −1, शून्य पर 0 और धनात्मक होने पर 1 देता है। उसका परिसर {−1,0,1} है। ग्राफ बनाते समय मूलबिंदु के अकेले बिंदु और दोनों खुले सिरों को सही दिखाएँ। खंडशः परिभाषित (Piecewise) नियम में पहले निवेश की शर्त पहचानते हैं, फिर चुना सूत्र लगाते हैं। |x|=a में a>0 हो, तो x=a और x=−a दोनों हल हैं। a<0 में कोई वास्तविक हल नहीं है, क्योंकि दूरी ऋणात्मक नहीं होती। |x| को हर जगह x न लिखें; यह केवल गैरऋणात्मक x पर सही है। x=0 पर सूत्र चुनने की सीमा जाँचना आवश्यक है, भले ही दोनों मापांक सूत्र उस बिंदु पर समान मान दें।"
+      },
+      "formula": "|x|=x if x≥0, −x if x<0; sgn(0)=0",
+      "question": {
+        "en": "What is |−5|+sgn(−5)?",
+        "hi": "|−5|+sgn(−5) क्या है?"
+      },
+      "answer": {
+        "en": "5−1=4.",
+        "hi": "5−1=4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Greatest integer function",
+        "hi": "महत्तम पूर्णांक फलन"
+      },
+      "body": {
+        "en": "The greatest integer function [x], also written floor(x), is the greatest integer not exceeding x. For 2≤x<3 its value is 2. For −2≤x<−1 its value is −2; in particular floor(−1.2)=−2, not −1. This is not rounding to the nearest integer and not merely deleting decimal digits. Its domain is R and range Z. The graph consists of horizontal steps closed at the left endpoint and open at the right. At each integer k, the value is k and a jump separates the neighbouring steps. To evaluate floor of an expression, calculate the real expression first and then locate it between consecutive integers. The defining inequality makes every sign decision unambiguous.",
+        "hi": "महत्तम पूर्णांक फलन (Greatest integer function) [x] या floor(x), x से अधिक न होने वाला सबसे बड़ा पूर्णांक देता है। 2≤x<3 में उसका मान 2 है। −2≤x<−1 में मान −2 है; इसलिए floor(−1.2)=−2, न कि −1। यह निकटतम पूर्णांक में पूर्णांकन नहीं है और केवल दशमलव अंक मिटाना भी नहीं है। इसका प्रांत R और परिसर Z है। ग्राफ क्षैतिज सीढ़ियों से बनता है। प्रत्येक सीढ़ी का बायाँ सिरा बंद और दायाँ सिरा खुला होता है। पूर्णांक k पर फलन मान k है, जबकि उसके ठीक बाईं ओर पिछली सीढ़ी का मान मिलता है। किसी व्यंजक का floor निकालते समय पहले उसका वास्तविक मान निकालें, फिर उसके दोनों ओर लगातार पूर्णांक पहचानें। परिभाषक असमिका [x]≤x<[x]+1 उपयोगी जाँच है। ऋणात्मक संख्याओं में संख्या रेखा पर बाईं दिशा छोटी होती है; इस तथ्य से −1.2 के लिए सही पूर्णांक तुरंत तय होता है।"
+      },
+      "formula": "floor(x)≤x<floor(x)+1",
+      "question": {
+        "en": "Find floor(−2.3).",
+        "hi": "floor(−2.3) निकालें।"
+      },
+      "answer": {
+        "en": "−3, because −3≤−2.3<−2.",
+        "hi": "−3,क्योंकि −3≤−2.3<−2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Algebra of real functions",
+        "hi": "वास्तविक फलनों का बीजगणित"
+      },
+      "body": {
+        "en": "For real functions f and g, addition, subtraction and multiplication are defined pointwise: (f+g)(x)=f(x)+g(x), and similarly for the other operations. Their domain is the intersection of the original domains. For a quotient also exclude inputs with g(x)=0. If f(x)=√x and g(x)=x−1, then f+g has domain [0,∞), whereas f/g has domain [0,∞)−{1}. Scalar multiplication af changes outputs but retains the stated domain. Before combining formulas list both sets of restrictions. A simplified expression must keep original restrictions unless a new, extended function is explicitly defined. Check sample inputs and units in an applied context; adding quantities of unlike physical units is not justified just because an algebraic expression can be written.",
+        "hi": "वास्तविक फलनों f तथा g की संक्रियाएँ बिंदुवार परिभाषित हैं। (f+g)(x)=f(x)+g(x), (f−g)(x)=f(x)−g(x) तथा (fg)(x)=f(x)g(x) हैं। इनका प्रांत मूल प्रांतों का सर्वनिष्ठ होता है, क्योंकि दोनों मान एक साथ परिभाषित चाहिए। भागफल f/g में अतिरिक्त रूप से g(x)≠0 चाहिए। f(x)=√x और g(x)=x−1 हो, तो योग का प्रांत [0,∞) है, लेकिन भागफल का [0,∞)−{1} है। अदिश गुणन af निर्गत को a से गुणा करता है और दिया हुआ प्रांत बनाए रखता है। सूत्र जोड़ने से पहले दोनों के प्रतिबंध लिखना अधिक सुरक्षित है। सरलीकरण के बाद भी मूल प्रतिबंध बने रहते हैं, जब तक अलग विस्तारित फलन स्पष्ट न परिभाषित किया जाए। उपयुक्त निवेश रखकर परिणाम जाँचें। अनुप्रयोग में भौतिक इकाइयों पर भी ध्यान दें; लंबाई और समय जैसी अलग राशियाँ केवल बीजगणितीय सूत्र बनने से जोड़ने योग्य नहीं हो जातीं। नियम, प्रांत और निर्गत मिलकर पूरी फलन परिभाषा देते हैं।"
+      },
+      "formula": "D(f±g)=D(f)∩D(g); D(f/g)={x∈D(f)∩D(g):g(x)≠0}",
+      "question": {
+        "en": "For f(x)=x+1,g(x)=x−2, find the domain of f/g.",
+        "hi": "f(x)=x+1,g(x)=x−2 में f/g का प्रांत निकालें।"
+      },
+      "answer": {
+        "en": "R−{2}.",
+        "hi": "R−{2}।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "List A×B for A={0,1},B={2,3}.",
+        "hi": "A={0,1},B={2,3} के लिए A×B लिखें।"
+      },
+      "steps": [
+        {
+          "en": "Pair each of 0 and 1 with both 2 and 3.",
+          "hi": "0 तथा 1 में प्रत्येक को 2 और 3 दोनों से जोड़ें।"
+        },
+        {
+          "en": "There are 2×2=4 pairs.",
+          "hi": "2×2=4 युग्म हैं।"
+        }
+      ],
+      "answer": {
+        "en": "{(0,2),(0,3),(1,2),(1,3)}.",
+        "hi": "{(0,2),(0,3),(1,2),(1,3)}।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "For R={(1,3),(2,3),(4,5)}, find domain and range.",
+        "hi": "R={(1,3),(2,3),(4,5)} का प्रांत तथा परिसर निकालें।"
+      },
+      "steps": [
+        {
+          "en": "First components are 1,2,4.",
+          "hi": "पहले घटक 1,2,4 हैं।"
+        },
+        {
+          "en": "Distinct second components are 3,5.",
+          "hi": "अलग दूसरे घटक 3,5 हैं।"
+        }
+      ],
+      "answer": {
+        "en": "Domain={1,2,4}; range={3,5}.",
+        "hi": "प्रांत={1,2,4};परिसर={3,5}।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find real domain of √(x+2)/(x−3).",
+        "hi": "√(x+2)/(x−3) का वास्तविक प्रांत निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Radicand x+2≥0 gives x≥−2.",
+          "hi": "मूल के अंदर x+2≥0 से x≥−2।"
+        },
+        {
+          "en": "Denominator x−3≠0 excludes 3.",
+          "hi": "हर x−3≠0 से 3 बाहर।"
+        },
+        {
+          "en": "Intersect both conditions.",
+          "hi": "दोनों शर्तों का सर्वनिष्ठ लें।"
+        }
+      ],
+      "answer": {
+        "en": "[−2,3)∪(3,∞).",
+        "hi": "[−2,3)∪(3,∞)।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Evaluate |−2.4|+floor(−2.4).",
+        "hi": "|−2.4|+floor(−2.4) निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Modulus=2.4.",
+          "hi": "मापांक=2.4।"
+        },
+        {
+          "en": "−3≤−2.4<−2 gives floor=−3.",
+          "hi": "−3≤−2.4<−2 से floor=−3।"
+        },
+        {
+          "en": "Sum=2.4−3.",
+          "hi": "योग=2.4−3।"
+        }
+      ],
+      "answer": {
+        "en": "−0.6.",
+        "hi": "−0.6।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "For f:[−2,3]→R, f(x)=x², find its range.",
+        "hi": "f:[−2,3]→R,f(x)=x² का परिसर निकालें।"
+      },
+      "steps": [
+        {
+          "en": "The square is nonnegative and x=0 is allowed, so minimum 0.",
+          "hi": "वर्ग गैरऋणात्मक है और 0 अनुमत है,इसलिए न्यूनतम 0।"
+        },
+        {
+          "en": "Endpoint squares are 4 and 9; all values stay at most 9.",
+          "hi": "सिरों के वर्ग 4 और 9 हैं;सभी मान अधिकतम 9।"
+        },
+        {
+          "en": "For every y∈[0,9], x=√y lies in [0,3] and gives y.",
+          "hi": "हर y∈[0,9] के लिए x=√y,[0,3] में है और y देता है।"
+        }
+      ],
+      "answer": {
+        "en": "[0,9].",
+        "hi": "[0,9]।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "How many pairs are in A×B when n(A)=2,n(B)=3?",
+        "hi": "n(A)=2,n(B)=3 में A×B के कितने युग्म हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "8",
+            "hi": "8"
+          },
+          "reason": {
+            "en": "2³ counts functions in the reverse finite direction, not product pairs.",
+            "hi": "2³ यहाँ गुणनफल युग्मों की संख्या नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "9",
+            "hi": "9"
+          },
+          "reason": {
+            "en": "3² is not 2×3.",
+            "hi": "3²,2×3 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "2×3=6.",
+            "hi": "2×3=6।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "Counts multiply, not add.",
+            "hi": "संख्याएँ गुणा होती हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "When are (a,b) and (c,d) equal?",
+        "hi": "(a,b) और (c,d) कब समान हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ab=cd",
+            "hi": "ab=cd"
+          },
+          "reason": {
+            "en": "Equal products do not fix ordered components.",
+            "hi": "समान गुणनफल पर्याप्त नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "a=c and b=d",
+            "hi": "a=c तथा b=d"
+          },
+          "reason": {
+            "en": "Corresponding components must match.",
+            "hi": "संगत घटक समान चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "a=d and b=c always",
+            "hi": "हमेशा a=d,b=c"
+          },
+          "reason": {
+            "en": "This reverses order.",
+            "hi": "यह क्रम उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a+b=c+d",
+            "hi": "a+b=c+d"
+          },
+          "reason": {
+            "en": "Equal sums do not fix components.",
+            "hi": "समान योग से घटक तय नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which relation on A={1,2} into B={p,q} is a function?",
+        "hi": "A={1,2} से B={p,q} में कौन फलन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "{(1,p),(2,p)}",
+            "hi": "{(1,p),(2,p)}"
+          },
+          "reason": {
+            "en": "Each input has exactly one output.",
+            "hi": "प्रत्येक निवेश का ठीक 1 निर्गत।"
+          }
+        },
+        {
+          "text": {
+            "en": "{(1,p)}",
+            "hi": "{(1,p)}"
+          },
+          "reason": {
+            "en": "Input 2 is unassigned.",
+            "hi": "2 का निर्गत नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "{(1,p),(1,q),(2,p)}",
+            "hi": "{(1,p),(1,q),(2,p)}"
+          },
+          "reason": {
+            "en": "Input 1 has two different outputs.",
+            "hi": "1 के 2 अलग निर्गत।"
+          }
+        },
+        {
+          "text": {
+            "en": "∅",
+            "hi": "∅"
+          },
+          "reason": {
+            "en": "Neither input has an output.",
+            "hi": "किसी निवेश का निर्गत नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Range of f:R→R,f(x)=x² is",
+        "hi": "f:R→R,f(x)=x² का परिसर है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "R",
+            "hi": "R"
+          },
+          "reason": {
+            "en": "Negative outputs are impossible.",
+            "hi": "ऋणात्मक निर्गत असंभव।"
+          }
+        },
+        {
+          "text": {
+            "en": "(0,∞)",
+            "hi": "(0,∞)"
+          },
+          "reason": {
+            "en": "0 is attained at x=0.",
+            "hi": "x=0 पर 0 मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Z",
+            "hi": "Z"
+          },
+          "reason": {
+            "en": "Noninteger squares such as 1/4 occur.",
+            "hi": "1/4 जैसे अपूर्णांक भी आते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "[0,∞)",
+            "hi": "[0,∞)"
+          },
+          "reason": {
+            "en": "Squares are nonnegative and every nonnegative value is attained.",
+            "hi": "वर्ग गैरऋणात्मक हैं और हर ऐसा मान मिलता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Domain of 1/(x+4) is",
+        "hi": "1/(x+4) का प्रांत है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "[−4,∞)",
+            "hi": "[−4,∞)"
+          },
+          "reason": {
+            "en": "There is no square-root restriction.",
+            "hi": "वर्गमूल की शर्त नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "R",
+            "hi": "R"
+          },
+          "reason": {
+            "en": "−4 is not allowed.",
+            "hi": "−4 निषिद्ध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "R−{−4}",
+            "hi": "R−{−4}"
+          },
+          "reason": {
+            "en": "The denominator vanishes at −4.",
+            "hi": "हर −4 पर शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "R−{4}",
+            "hi": "R−{4}"
+          },
+          "reason": {
+            "en": "At 4 the denominator is 8.",
+            "hi": "4 पर हर 8 है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "floor(−1.7) equals",
+        "hi": "floor(−1.7) है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−1.7",
+            "hi": "−1.7"
+          },
+          "reason": {
+            "en": "The result must be an integer.",
+            "hi": "उत्तर पूर्णांक चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2",
+            "hi": "−2"
+          },
+          "reason": {
+            "en": "−2≤−1.7<−1.",
+            "hi": "−2≤−1.7<−1।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "−1 exceeds −1.7.",
+            "hi": "−1,−1.7 से बड़ा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "The sign cannot be discarded.",
+            "hi": "चिह्न नहीं हटा सकते।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "sgn(0) equals",
+        "hi": "sgn(0) है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The zero branch is defined as 0.",
+            "hi": "शून्य शाखा का मान 0।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "1 applies to positive inputs only.",
+            "hi": "1 केवल धनात्मक निवेश पर।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "−1 applies to negative inputs.",
+            "hi": "−1 ऋणात्मक निवेश पर।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित"
+          },
+          "reason": {
+            "en": "Signum is defined at 0.",
+            "hi": "चिह्न फलन 0 पर परिभाषित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For f(x)=2x−1, f(−3) is",
+        "hi": "f(x)=2x−1 में f(−3) है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−5",
+            "hi": "−5"
+          },
+          "reason": {
+            "en": "This incorrectly adds 1.",
+            "hi": "यह 1 जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "The negative input sign was lost.",
+            "hi": "ऋणात्मक निवेश का चिह्न खोया।"
+          }
+        },
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "Both signs were changed incorrectly.",
+            "hi": "दोनों चिह्न गलत बदले।"
+          }
+        },
+        {
+          "text": {
+            "en": "−7",
+            "hi": "−7"
+          },
+          "reason": {
+            "en": "2(−3)−1=−7.",
+            "hi": "2(−3)−1=−7।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "The range of f(x)=5 on R is",
+        "hi": "R पर f(x)=5 का परिसर है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "{0}",
+            "hi": "{0}"
+          },
+          "reason": {
+            "en": "The constant is 5, not 0.",
+            "hi": "अचर 5 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "∅",
+            "hi": "∅"
+          },
+          "reason": {
+            "en": "Outputs exist.",
+            "hi": "निर्गत मौजूद हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "{5}",
+            "hi": "{5}"
+          },
+          "reason": {
+            "en": "Every input gives exactly 5.",
+            "hi": "हर निवेश 5 देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "R",
+            "hi": "R"
+          },
+          "reason": {
+            "en": "The domain is R, not the range.",
+            "hi": "R प्रांत है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "For f(x)=√x and g(x)=x−1, domain of f/g is",
+        "hi": "f(x)=√x,g(x)=x−1 में f/g का प्रांत है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(1,∞)",
+            "hi": "(1,∞)"
+          },
+          "reason": {
+            "en": "Values from 0 to 1 except 1 also work.",
+            "hi": "0 से 1 के बीच के मान भी मान्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "[0,∞)−{1}",
+            "hi": "[0,∞)−{1}"
+          },
+          "reason": {
+            "en": "Need x≥0 and x≠1.",
+            "hi": "x≥0 और x≠1 चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "[0,∞)",
+            "hi": "[0,∞)"
+          },
+          "reason": {
+            "en": "At 1 division by zero occurs.",
+            "hi": "1 पर शून्य से भाग।"
+          }
+        },
+        {
+          "text": {
+            "en": "R−{1}",
+            "hi": "R−{1}"
+          },
+          "reason": {
+            "en": "Negative x does not give a real square root.",
+            "hi": "ऋणात्मक x का वास्तविक वर्गमूल नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "List {a,b}×{1}.",
+        "hi": "{a,b}×{1} लिखें।"
+      },
+      "answer": {
+        "en": "{(a,1),(b,1)}.",
+        "hi": "{(a,1),(b,1)}।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find range of f(x)=|x| on R.",
+        "hi": "R पर f(x)=|x| का परिसर निकालें।"
+      },
+      "answer": {
+        "en": "[0,∞), because distance is nonnegative and all such values occur.",
+        "hi": "[0,∞),क्योंकि दूरी गैरऋणात्मक है और हर ऐसा मान मिलता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why x=y² does not define y as a function of all x≥0.",
+        "hi": "x=y² से सभी x≥0 के लिए y का फलन क्यों नहीं बनता?"
+      },
+      "answer": {
+        "en": "Every x>0 has y=±√x, two outputs; choose a branch to make a function.",
+        "hi": "हर x>0 के y=±√x,2 निर्गत हैं;फलन के लिए 1 शाखा चुनें।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find domain of √(3−x).",
+        "hi": "√(3−x) का प्रांत निकालें।"
+      },
+      "answer": {
+        "en": "3−x≥0, so (−∞,3].",
+        "hi": "3−x≥0,अतः (−∞,3]।"
+      }
+    },
+    {
+      "question": {
+        "en": "Calculate floor(−0.2)+|−0.2|.",
+        "hi": "floor(−0.2)+|−0.2| निकालें।"
+      },
+      "answer": {
+        "en": "−1+0.2=−0.8.",
+        "hi": "−1+0.2=−0.8।"
+      }
+    },
+    {
+      "question": {
+        "en": "For f=x²,g=x+1, find (f+g)(2) and (fg)(2).",
+        "hi": "f=x²,g=x+1 में (f+g)(2) तथा (fg)(2) निकालें।"
+      },
+      "answer": {
+        "en": "f(2)=4,g(2)=3; sum=7,product=12.",
+        "hi": "f(2)=4,g(2)=3;योग=7,गुणनफल=12।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not swap ordered components, confuse range with codomain, permit two outputs for one input, treat floor as rounding, or forget denominator restrictions.",
+    "hi": "क्रमित घटक न उलटें;परिसर और सहप्रांत अलग हैं। 1 निवेश के 2 निर्गत, floor को पूर्णांकन और शून्य हर स्वीकार न करें।"
+  },
+  "revision": [
+    {
+      "en": "A relation is a subset of a Cartesian product.",
+      "hi": "संबंध कार्तीय गुणनफल का उपसमुच्चय है।"
+    },
+    {
+      "en": "A function gives every domain element exactly one output.",
+      "hi": "फलन प्रत्येक प्रांत अवयव को ठीक 1 निर्गत देता है।"
+    },
+    {
+      "en": "Range lies within codomain.",
+      "hi": "परिसर सहप्रांत में समाहित है।"
+    },
+    {
+      "en": "Modulus is distance; floor is the greatest integer not exceeding x.",
+      "hi": "मापांक दूरी और floor,x से अधिक न होने वाला महत्तम पूर्णांक है।"
+    },
+    {
+      "en": "Function operations retain all original domain restrictions.",
+      "hi": "फलन संक्रियाएँ सभी मूल प्रांत प्रतिबंध रखती हैं।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Ordered pairs → Cartesian product → relations → unique-output functions → domains and standard graphs → operations.",
+    "hi": "क्रमित युग्म → कार्तीय गुणनफल → संबंध → एकल निर्गत फलन → प्रांत तथा मानक ग्राफ → संक्रियाएँ।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class XI, Chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh102.pdf"
+    },
+    {
+      "title": "UPMSP Class11 Mathematics syllabus2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/131-Maths-Class-11.pdf"
+    }
+  ],
+  "engine": "eleven-math",
+  "scenes": []
+}

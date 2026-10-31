@@ -1,0 +1,1521 @@
+{
+  "number": 3,
+  "id": "chemistry11-03",
+  "title": {
+    "en": "Classification of Elements and Periodicity in Properties",
+    "hi": "तत्वों का वर्गीकरण एवं गुणधर्मों में आवर्तिता"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "chem11-03-1",
+      "title": {
+        "en": "Effective nuclear attraction",
+        "hi": "प्रभावी नाभिकीय आकर्षण"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 6
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Effective charge model",
+            "hi": "प्रभावी आवेश मॉडल"
+          },
+          "min": 1,
+          "max": 7,
+          "step": 1,
+          "initial": 3,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 3,
+      "goal": {
+        "en": "Relate stronger effective attraction to a smaller symbolic cloud.",
+        "hi": "अधिक प्रभावी आकर्षण को छोटे सांकेतिक बादल से जोड़ें।"
+      },
+      "observe": {
+        "en": "Increase the effective-charge control and compare the dimensionless size index.",
+        "hi": "प्रभावी आवेश नियंत्रक बढ़ाकर विमाहीन आकार सूचकांक तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Index=1/Zeff is a schematic inverse relation only. It is not a calculated atomic radius and has no length unit.",
+        "hi": "सूचकांक=1/Zeff केवल सांकेतिक व्युत्क्रम संबंध है। यह गणित से मिली वास्तविक परमाणु त्रिज्या नहीं और इसका लंबाई मात्रक नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Stronger attraction tends to contract an electron distribution, but real shielding and orbital effects are more complex.",
+          "hi": "अधिक आकर्षण इलेक्ट्रॉन वितरण को सिकोड़ने की प्रवृत्ति देता है, पर वास्तविक परिरक्षण और कक्षक प्रभाव अधिक जटिल हैं।"
+        }
+      },
+      "realLife": {
+        "en": "Periodic size trends help compare bonding distances when radius definitions are consistent.",
+        "hi": "त्रिज्या की समान परिभाषा लेने पर आवर्त आकार प्रवृत्ति आबंध दूरी तुलना में सहायक है।"
+      },
+      "quick": {
+        "question": {
+          "en": "The scene’s radius index has which unit?",
+          "hi": "दृश्य के त्रिज्या सूचकांक का क्या मात्रक है?"
+        },
+        "options": [
+          {
+            "en": "No length unit; dimensionless",
+            "hi": "लंबाई मात्रक नहीं; विमाहीन"
+          },
+          {
+            "en": "Always pm",
+            "hi": "हमेशा pm"
+          },
+          {
+            "en": "Always kg",
+            "hi": "हमेशा kg"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "It is a teaching index, not measured size.",
+          "hi": "यह शिक्षण सूचकांक है, मापा आकार नहीं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-03-1-low",
+          "label": {
+            "en": "Set effective charge model to 1 .",
+            "hi": "प्रभावी आवेश मॉडल 1  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.01
+          }
+        },
+        {
+          "id": "chem11-03-1-high",
+          "label": {
+            "en": "Compare the maximum setting 7 .",
+            "hi": "अधिकतम सेटिंग 7  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 6.99
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 4.0
+          },
+          "text": {
+            "en": "Weak effective attraction corresponds to a larger symbolic distribution.",
+            "hi": "कम प्रभावी आकर्षण पर सांकेतिक वितरण बड़ा है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 4.0
+          },
+          "text": {
+            "en": "A smaller index illustrates contraction, not an exact real radius.",
+            "hi": "छोटा सूचकांक संकुचन समझाता है, ठीक वास्तविक त्रिज्या नहीं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected quantity or particle",
+            "hi": "चुनी राशि या कण"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference structure or graph",
+            "hi": "संदर्भ संरचना या आलेख"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-03-2",
+      "title": {
+        "en": "Ionisation enthalpy exceptions",
+        "hi": "आयनन एन्थैल्पी के अपवाद"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 7
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Atomic number",
+            "hi": "परमाणु क्रमांक"
+          },
+          "min": 3,
+          "max": 10,
+          "step": 1,
+          "initial": 5,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 5,
+      "goal": {
+        "en": "Find the B/Be and O/N dips in first ionisation enthalpy.",
+        "hi": "प्रथम आयनन एन्थैल्पी में B/Be और O/N गिरावट खोजें।"
+      },
+      "observe": {
+        "en": "Select atomic numbers3–10 and compare the rounded second-period values.",
+        "hi": "परमाणु क्रमांक3–10 चुनकर दूसरे आवर्त के पूर्णांकित मान तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Values are approximate kJ mol^-1 data for isolated gaseous ground-state atoms. Joined points do not imply continuous intermediate elements.",
+        "hi": "मान अलग गैसीय मूल अवस्था परमाणुओं के लगभग kJ mol^-1 आँकड़े हैं। बिंदु जोड़ने का अर्थ बीच के लगातार तत्व नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "A higher-energy2p electron explains B below Be; pairing repulsion explains O below N.",
+          "hi": "अधिक ऊर्जा2p इलेक्ट्रॉन से B,Be से नीचे और युग्मन प्रतिकर्षण से O,N से नीचे है।"
+        }
+      },
+      "realLife": {
+        "en": "Spectroscopic and thermochemical information helps test periodic explanations.",
+        "hi": "स्पेक्ट्रमी और ऊष्मारासायनिक सूचना आवर्त व्याख्या जाँचने में सहायक है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which has lower first IE: N or O?",
+          "hi": "N और O में प्रथम IE किसकी कम है?"
+        },
+        "options": [
+          {
+            "en": "O",
+            "hi": "O"
+          },
+          {
+            "en": "N",
+            "hi": "N"
+          },
+          {
+            "en": "Exactly equal",
+            "hi": "बिल्कुल समान"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Oxygen’s paired2p electron is easier to remove than nitrogen’s half-filled arrangement suggests.",
+          "hi": "ऑक्सीजन का युग्मित2p इलेक्ट्रॉन, नाइट्रोजन की अर्धभरी व्यवस्था की तुलना में आसानी से निकलता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-03-2-low",
+          "label": {
+            "en": "Set atomic number to 3 .",
+            "hi": "परमाणु क्रमांक 3  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3.01
+          }
+        },
+        {
+          "id": "chem11-03-2-high",
+          "label": {
+            "en": "Compare the maximum setting 10 .",
+            "hi": "अधिकतम सेटिंग 10  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 9.99
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 6.5
+          },
+          "text": {
+            "en": "Early second-period values show the Be-to-B exception.",
+            "hi": "दूसरे आवर्त के शुरुआती मान Be से B अपवाद दिखाते हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 6.5
+          },
+          "text": {
+            "en": "Check N and O: the general rise contains another dip.",
+            "hi": "N और O जाँचें: सामान्य वृद्धि में एक और गिरावट है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected quantity or particle",
+            "hi": "चुनी राशि या कण"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference structure or graph",
+            "hi": "संदर्भ संरचना या आलेख"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-03-3",
+      "title": {
+        "en": "Isoelectronic comparison",
+        "hi": "समइलेक्ट्रॉनी तुलना"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 8
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Proton number",
+            "hi": "प्रोटॉन संख्या"
+          },
+          "min": 8,
+          "max": 13,
+          "step": 1,
+          "initial": 11,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Compare ten-electron species while proton number changes.",
+        "hi": "प्रोटॉन बदलते समय10 इलेक्ट्रॉन वाली प्रजातियाँ तुलना करें।"
+      },
+      "observe": {
+        "en": "Read both the species charge and symbolic size index at Z=8 through13.",
+        "hi": "Z=8 से13 पर प्रजाति का आवेश और सांकेतिक आकार सूचकांक दोनों पढ़ें।"
+      },
+      "modelNote": {
+        "en": "All species have10 electrons. Index10/Z is dimensionless, not measured ionic radius. Ne is included for electron-count comparison; its non-bonded radius cannot be mixed carelessly with ionic radii.",
+        "hi": "सभी में10 इलेक्ट्रॉन हैं। सूचकांक10/Z विमाहीन है, मापी आयनिक त्रिज्या नहीं। Ne इलेक्ट्रॉन गिनती तुलना के लिए है; उसकी अबंधित त्रिज्या को आयनिक त्रिज्या से बिना विचार न मिलाएँ।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "At fixed electron count, more protons strengthen attraction and the general size trend decreases.",
+          "hi": "स्थिर इलेक्ट्रॉन संख्या पर अधिक प्रोटॉन आकर्षण बढ़ाते हैं और सामान्य आकार प्रवृत्ति घटती है।"
+        }
+      },
+      "realLife": {
+        "en": "Isoelectronic comparisons separate electron-count effects from nuclear-charge effects.",
+        "hi": "समइलेक्ट्रॉनी तुलना इलेक्ट्रॉन संख्या और नाभिकीय आवेश के प्रभाव अलग करती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "What is the charge at Z=12 with 10 electrons?",
+          "hi": "Z=12 और10 इलेक्ट्रॉन पर आवेश क्या है?"
+        },
+        "options": [
+          {
+            "en": "+2",
+            "hi": "+2"
+          },
+          {
+            "en": "−2",
+            "hi": "−2"
+          },
+          {
+            "en": "0",
+            "hi": "0"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "12 protons minus10 electrons gives+2.",
+          "hi": "12 प्रोटॉन घटा10 इलेक्ट्रॉन से+2 है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-03-3-low",
+          "label": {
+            "en": "Set proton number to 8 .",
+            "hi": "प्रोटॉन संख्या 8  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 8.01
+          }
+        },
+        {
+          "id": "chem11-03-3-high",
+          "label": {
+            "en": "Compare the maximum setting 13 .",
+            "hi": "अधिकतम सेटिंग 13  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 12.99
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 10.5
+          },
+          "text": {
+            "en": "Lower-Z members hold the same electron count with weaker nuclear attraction.",
+            "hi": "कम Z के सदस्य समान इलेक्ट्रॉन संख्या को कम नाभिकीय आकर्षण से रखते हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 10.5
+          },
+          "text": {
+            "en": "Higher-Z members are more positive and generally smaller in the size trend.",
+            "hi": "अधिक Z सदस्य अधिक धन और सामान्य आकार प्रवृत्ति में छोटे हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected quantity or particle",
+            "hi": "चुनी राशि या कण"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference structure or graph",
+            "hi": "संदर्भ संरचना या आलेख"
+          }
+        }
+      ],
+      "selectors": []
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Why elements are classified",
+        "hi": "तत्वों का वर्गीकरण क्यों"
+      },
+      "paragraphs": [
+        {
+          "en": "Classification turns a long list of elements into a system in which relationships can be recognised and predictions can be tested. Early classifications used similarities in chemical behaviour, such as the formation of related oxides or hydrides. Dobereiner’s triads connected some groups of three elements with similar properties, but the idea did not accommodate all known elements. Newlands arranged elements by increasing atomic mass and proposed repetition at every eighth element; this worked only within a limited range. Mendeleev’s periodic arrangement was more successful because it combined atomic mass with chemical properties, left gaps for undiscovered elements and predicted some properties of those elements. He did not simply force every observation into an unbroken mass order. However, the positions of isotopes and certain pairs of elements were difficult to explain using mass as the fundamental basis. The important lesson is that a classification is a scientific model: it organises evidence, exposes exceptions and can be improved when a more fundamental organising variable is discovered.",
+          "hi": "तत्वों का वर्गीकरण (Classification) लंबी सूची को ऐसे तंत्र में बदलता है जिसमें संबंध पहचानकर भविष्यवाणी जाँची जा सके। प्रारंभिक वर्गीकरण में समान रासायनिक व्यवहार, जैसे संबंधित ऑक्साइड या हाइड्राइड बनना, आधार था। डॉबेराइनर के त्रिक (Triads) में समान गुण वाले कुछ3 तत्वों को जोड़ा गया, लेकिन सभी ज्ञात तत्व इस विचार में नहीं आए। न्यूलैंड्स ने बढ़ते परमाणु द्रव्यमान में तत्व रखकर हर8वें तत्व पर गुण दोहरने का अष्टक विचार दिया। यह सीमित श्रेणी तक उपयोगी था। मेंडलीव की व्यवस्था अधिक सफल हुई, क्योंकि उन्होंने परमाणु द्रव्यमान के साथ रासायनिक गुण देखे, अज्ञात तत्वों के लिए खाली स्थान छोड़े और उनके कुछ गुणों का अनुमान लगाया। उन्होंने हर प्रेक्षण को बिना विचार केवल लगातार द्रव्यमान क्रम में नहीं ठूँसा। फिर भी समस्थानिकों और कुछ तत्व युग्मों की स्थिति केवल द्रव्यमान को मूल आधार मानकर कठिन थी। इससे सीख मिलती है कि वर्गीकरण वैज्ञानिक मॉडल है। वह प्रमाण व्यवस्थित करता है, अपवाद सामने लाता है और अधिक मूल आधार मिलने पर सुधर सकता है। ऐतिहासिक नियम पढ़ते समय उनके उपयोगी योगदान और सीमा दोनों लिखें; पुराने नियम की सीमा मिलने का अर्थ उसके सभी प्रेक्षण निरर्थक होना नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Historical patterns were useful even when their range was limited.",
+          "hi": "ऐतिहासिक प्रतिरूप सीमित क्षेत्र में भी उपयोगी थे।"
+        },
+        {
+          "en": "A modern table should explain isotopes without assigning them separate elemental places.",
+          "hi": "आधुनिक सारणी समस्थानिकों को अलग तत्व स्थान दिए बिना समझाती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why were gaps in Mendeleev’s table scientifically useful?",
+          "hi": "मेंडलीव सारणी में खाली स्थान वैज्ञानिक रूप से उपयोगी क्यों थे?"
+        },
+        "answer": {
+          "en": "They allowed predictions for undiscovered elements that could later be checked.",
+          "hi": "उन्होंने अज्ञात तत्वों के लिए अनुमान दिए, जिन्हें बाद में जाँचा जा सका।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Modern periodic law and table structure",
+        "hi": "आधुनिक आवर्त नियम और सारणी संरचना"
+      },
+      "paragraphs": [
+        {
+          "en": "The modern periodic law states that the physical and chemical properties of elements are periodic functions of atomic number. Atomic number counts protons and gives each element a unique identity, while isotopes of one element share that number. The long-form table has seven periods and eighteen groups. Elements in a period generally acquire electrons within the same broad principal-shell sequence, while elements of a main group often have related outer-shell configurations and chemical behaviour. This does not mean every property is exactly identical within a group. An element’s position reflects its ground-state electronic configuration. The s block includes the first two groups, with helium having an s configuration but placed in group 18 because of its closed shell and chemistry. The p block mainly contains groups 13–18, apart from helium. The d block occupies groups 3–12, and the f-block series is displayed separately to keep the table compact. Those detached rows are still parts of periods 6 and7, not extra periods. Use modern group numbers1–18 to avoid ambiguity.",
+          "hi": "आधुनिक आवर्त नियम (Modern periodic law) के अनुसार तत्वों के भौतिक और रासायनिक गुण उनके परमाणु क्रमांक के आवर्ती फलन हैं। परमाणु क्रमांक प्रोटॉन गिनता है और तत्व की निश्चित पहचान देता है। एक तत्व के समस्थानिकों में यह संख्या समान होती है। दीर्घ रूप आवर्त सारणी (Long-form periodic table) में7 आवर्त और18 वर्ग हैं। एक आवर्त में बढ़ते क्रमांक के साथ इलेक्ट्रॉन एक व्यापक मुख्य कोश क्रम में जुड़ते हैं। मुख्य वर्ग के तत्वों के बाहरी कोश विन्यास और रासायनिक व्यवहार प्रायः संबंधित होते हैं। इसका अर्थ वर्ग में हर गुण बिल्कुल एक जैसा होना नहीं है। किसी तत्व का स्थान उसके मूल अवस्था इलेक्ट्रॉनिक विन्यास से जुड़ता है। s ब्लॉक में पहले2 वर्ग हैं। हीलियम का विन्यास s वाला है, लेकिन पूर्ण कोश और रासायनिक व्यवहार के कारण उसे वर्ग18 में रखते हैं। हीलियम को छोड़कर p ब्लॉक मुख्यतः वर्ग13–18 है। d ब्लॉक वर्ग3–12 में है। f ब्लॉक की श्रेणियाँ सारणी को छोटा रखने के लिए नीचे अलग दिखाई जाती हैं। वे फिर भी आवर्त6 और7 का हिस्सा हैं, अतिरिक्त आवर्त नहीं। वर्ग संख्या लिखते समय आधुनिक1–18 पद्धति लें, ताकि पुराने A और B संकेतों का भ्रम न हो।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Atomic number, not average atomic mass, is the modern ordering variable.",
+          "hi": "आधुनिक क्रम का आधार परमाणु क्रमांक है, औसत परमाणु द्रव्यमान नहीं।"
+        },
+        {
+          "en": "The displayed f-block rows belong to periods 6 and7.",
+          "hi": "नीचे दिखाई f ब्लॉक पंक्तियाँ आवर्त6 और7 का भाग हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why do isotopes occupy the same elemental position?",
+          "hi": "समस्थानिकों का तत्व स्थान एक ही क्यों होता है?"
+        },
+        "answer": {
+          "en": "They have the same atomic number and therefore belong to the same element.",
+          "hi": "उनका परमाणु क्रमांक समान है, इसलिए वे एक ही तत्व हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Electronic configuration and periodicity",
+        "hi": "इलेक्ट्रॉनिक विन्यास और आवर्तिता"
+      },
+      "paragraphs": [
+        {
+          "en": "The recurrence of related outer-electron configurations explains why many chemical properties repeat. For a main-group atom, identify the highest occupied principal quantum number and examine its s and p occupancy. Sodium, [Ne]3s1, belongs to period 3 and group 1; chlorine, [Ne]3s2 3p5, belongs to period 3 and group 17. The period is associated with the highest occupied shell in these examples, not the total number of subshell symbols written. Across a period the proton number increases, electrons enter the same broad shell and outer-electron arrangements gradually change. Down a group a new principal shell is occupied while a similar valence pattern recurs. Transition elements require attention to both ns and (n−1)d electrons; a simple rule based only on the last s electron is insufficient. A block classification describes the type of subshell receiving the differentiating electron in the broad filling pattern. Electronic configuration predicts trends, but reliable explanations also consider shielding, orbital penetration, pairing and the actual energy of the atom or ion.",
+          "hi": "बाहरी इलेक्ट्रॉन विन्यास दोहरने से अनेक रासायनिक गुणों की आवर्तिता (Periodicity) समझ आती है। मुख्य वर्ग के परमाणु में सबसे ऊँची भरी मुख्य क्वांटम संख्या पहचानें और उसके s तथा p इलेक्ट्रॉन देखें। सोडियम [Ne]3s1, आवर्त3 और वर्ग1 में है। क्लोरीन [Ne]3s2 3p5, आवर्त3 और वर्ग17 में है। इन उदाहरणों में आवर्त का संबंध सबसे ऊँचे भरे कोश से है, विन्यास में लिखे उपकोश संकेतों की कुल संख्या से नहीं। आवर्त में आगे जाने पर प्रोटॉन बढ़ते हैं, इलेक्ट्रॉन उसी व्यापक कोश में जुड़ते हैं और बाहरी विन्यास बदलता है। वर्ग में नीचे जाने पर नया मुख्य कोश जुड़ता है, जबकि समान संयोजकता विन्यास फिर आता है। संक्रमण तत्वों में ns के साथ (n−1)d इलेक्ट्रॉन भी देखना जरूरी है। केवल अंतिम s इलेक्ट्रॉन पर आधारित सरल नियम पर्याप्त नहीं है। ब्लॉक वर्गीकरण व्यापक भरने के क्रम में विभेदी इलेक्ट्रॉन पाने वाले उपकोश के प्रकार से जुड़ा है। इलेक्ट्रॉनिक विन्यास प्रवृत्तियाँ समझाने में सहायक है, लेकिन अच्छी व्याख्या में परिरक्षण (Shielding), प्रवेश प्रभाव (Penetration), युग्मन और परमाणु या आयन की वास्तविक ऊर्जा भी शामिल होती है। इसलिए केवल तीर याद करने के बजाय कारण पढ़ें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For main-group patterns, outer s+p electrons help identify the group.",
+          "hi": "मुख्य वर्ग प्रतिरूप में बाहरी s+p इलेक्ट्रॉन वर्ग पहचानने में सहायक हैं।"
+        },
+        {
+          "en": "Transition-element chemistry can involve both s and d electrons.",
+          "hi": "संक्रमण तत्वों के रसायन में s और d दोनों इलेक्ट्रॉन भाग ले सकते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What are the period and group of[Ne]3s2 3p5?",
+          "hi": "[Ne]3s2 3p5 का आवर्त और वर्ग क्या है?"
+        },
+        "answer": {
+          "en": "Period3 and group 17.",
+          "hi": "आवर्त3 और वर्ग17।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Atomic size, shielding and effective attraction",
+        "hi": "परमाणु आकार, परिरक्षण और प्रभावी आकर्षण"
+      },
+      "paragraphs": [
+        {
+          "en": "An atom has no sharp outer edge, so atomic radius is defined operationally from a specified kind of distance or interaction. Covalent radius is obtained from distances between bonded atoms, metallic radius from metal structures and non-bonded radii from non-bonded contacts. Values from different definitions should not be mixed as though they were identical measurements. Across a main-group period, atomic size generally decreases because nuclear charge increases while the added electrons occupy the same broad shell and shielding does not fully cancel the increased attraction. Down a group, additional shells and shielding generally increase size despite the larger proton number. Effective nuclear attraction is the net attraction experienced by an electron after other electrons’ effects are considered; it is not simply the full nuclear charge acting unscreened. The visual effective-charge scene uses a dimensionless radius index1/Zeff to illustrate an inverse trend. It is not a quantitative atomic-radius calculation, does not supply radii in metres and does not claim that real many-electron atoms follow an exact1/Zeff law.",
+          "hi": "परमाणु की बाहरी सीमा कठोर नहीं होती, इसलिए परमाणु त्रिज्या (Atomic radius) को किसी निर्दिष्ट दूरी या अंतःक्रिया के आधार पर परिभाषित करते हैं। सहसंयोजक त्रिज्या बंधित परमाणुओं की दूरी से, धात्विक त्रिज्या धातु संरचना से और अबंधित त्रिज्या अबंधित संपर्क से मिलती है। अलग परिभाषाओं के मान ऐसे न मिलाएँ जैसे वे बिल्कुल समान प्रकार का मापन हों। मुख्य वर्ग के आवर्त में आकार सामान्यतः घटता है। कारण यह है कि नाभिकीय आवेश बढ़ता है, जबकि नए इलेक्ट्रॉन उसी व्यापक कोश में आते हैं और उनका परिरक्षण बढ़े आकर्षण को पूरी तरह नहीं काटता। वर्ग में नीचे नए कोश और अधिक परिरक्षण आने से प्रोटॉन बढ़ने के बावजूद आकार सामान्यतः बढ़ता है। प्रभावी नाभिकीय आकर्षण (Effective nuclear attraction) वह परिणामी आकर्षण है जो अन्य इलेक्ट्रॉनों का प्रभाव शामिल करने पर इलेक्ट्रॉन महसूस करता है। यह पूरा नाभिकीय आवेश बिना परिरक्षण लगना नहीं है। दृश्य में प्रभावी आवेश के साथ विमाहीन त्रिज्या सूचकांक1/Zeff लेकर व्युत्क्रम प्रवृत्ति समझाई है। यह वास्तविक परमाणु त्रिज्या की मात्रात्मक गणना नहीं करता। इससे मीटर में त्रिज्या नहीं मिलती और वास्तविक बहुइलेक्ट्रॉनी परमाणुओं के लिए ठीक1/Zeff नियम का दावा नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Atomic size trends are general patterns, not a promise of identical changes at every step.",
+          "hi": "परमाणु आकार की प्रवृत्तियाँ सामान्य प्रतिरूप हैं, हर चरण समान बदलाव का वचन नहीं।"
+        },
+        {
+          "en": "The scene’s radius index is explicitly dimensionless and symbolic.",
+          "hi": "दृश्य का त्रिज्या सूचकांक स्पष्ट रूप से विमाहीन और सांकेतिक है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why should a covalent radius not be compared carelessly with a non-bonded radius?",
+          "hi": "सहसंयोजक त्रिज्या की अबंधित त्रिज्या से बिना विचार तुलना क्यों नहीं करनी चाहिए?"
+        },
+        "answer": {
+          "en": "They are based on different operational distance definitions.",
+          "hi": "दोनों अलग प्रकार की दूरी की प्रायोगिक परिभाषाओं पर आधारित हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ionic size and isoelectronic species",
+        "hi": "आयन आकार और समइलेक्ट्रॉनी प्रजातियाँ"
+      },
+      "paragraphs": [
+        {
+          "en": "A cation commonly has a smaller radius than its parent atom because electrons are removed, repulsion changes and the remaining electrons experience stronger attraction; removal of a complete outer shell can have a large effect. An anion commonly has a larger radius than its parent atom because adding electrons increases electron-electron repulsion in the occupied region. Comparing ions of unrelated configurations requires care, so isoelectronic series are especially informative. Isoelectronic species have the same number of electrons but different proton numbers. In the familiar ten-electron series O2−,F−,Ne,Na+,Mg2+ andAl3+, the nuclear charge increases while electron count stays ten. Attraction strengthens and the size trend is toward smaller species. The neutral noble-gas member has a radius definition issue, so do not attach a mixed list of measured ionic and non-bonded radii without explanation. The scene includes it as a charge/electron-count comparison and displays only the symbolic size index10/Z. That index represents a general attraction trend, not experimental radii or an exact electronic-structure solution.",
+          "hi": "धनायन (Cation) प्रायः अपने मूल परमाणु से छोटा होता है। इलेक्ट्रॉन निकलने से प्रतिकर्षण बदलता है और बचे इलेक्ट्रॉनों पर आकर्षण अधिक प्रभावी होता है। पूरा बाहरी कोश हटने पर आकार में बड़ा परिवर्तन हो सकता है। ऋणायन (Anion) सामान्यतः मूल परमाणु से बड़ा होता है, क्योंकि इलेक्ट्रॉन जुड़ने पर भरे क्षेत्र में इलेक्ट्रॉन-इलेक्ट्रॉन प्रतिकर्षण बढ़ता है। असंबंधित विन्यास वाले आयनों की तुलना में सावधानी चाहिए। इसलिए समइलेक्ट्रॉनी श्रेणी (Isoelectronic series) विशेष उपयोगी है। समइलेक्ट्रॉनी प्रजातियों में इलेक्ट्रॉन संख्या समान, लेकिन प्रोटॉन संख्या अलग होती है। परिचित10 इलेक्ट्रॉन वाली श्रेणी O2−,F−,Ne,Na+,Mg2+ औरAl3+ में इलेक्ट्रॉन10 ही रहते हैं, जबकि नाभिकीय आवेश बढ़ता है। आकर्षण मजबूत होने से सामान्य आकार प्रवृत्ति छोटी प्रजाति की ओर है। उदासीन उत्कृष्ट गैस सदस्य की त्रिज्या की परिभाषा अलग हो सकती है, इसलिए बिना स्पष्टीकरण आयनिक और अबंधित मापी त्रिज्याओं की मिश्रित सूची न दें। दृश्य में Ne को आवेश और इलेक्ट्रॉन गिनती की तुलना में शामिल किया है और केवल सांकेतिक आकार सूचकांक10/Z दिखता है। यह सूचकांक सामान्य आकर्षण प्रवृत्ति है, प्रयोग से मिली वास्तविक त्रिज्या या ठीक इलेक्ट्रॉनिक संरचना हल नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For a fixed electron count, increasing proton number generally contracts the electron cloud.",
+          "hi": "स्थिर इलेक्ट्रॉन संख्या पर प्रोटॉन बढ़ने से इलेक्ट्रॉन बादल सामान्यतः सिकुड़ता है।"
+        },
+        {
+          "en": "Isoelectronic does not mean identical charge or identical chemical properties.",
+          "hi": "समइलेक्ट्रॉनी का अर्थ समान आवेश या बिल्कुल समान रासायनिक गुण नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many electrons are in Mg2+ when Z=12?",
+          "hi": "Z=12 होने पर Mg2+ में कितने इलेक्ट्रॉन हैं?"
+        },
+        "answer": {
+          "en": "12−2=10 electrons.",
+          "hi": "12−2=10 इलेक्ट्रॉन।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ionisation enthalpy and its exceptions",
+        "hi": "आयनन एन्थैल्पी और उसके अपवाद"
+      },
+      "paragraphs": [
+        {
+          "en": "First ionisation enthalpy is the enthalpy required to remove an electron from each atom in one mole of isolated gaseous atoms in their ground state, producing gaseous1+ ions. Removing a bound electron requires energy, so this quantity is positive. Successive ionisations generally become more difficult as the species becomes more positive; a very large jump can reveal that a closed-shell core would be disturbed. Across a period, ionisation enthalpy generally rises as attraction strengthens, but electronic structure gives important exceptions. Boron has lower first ionisation enthalpy than beryllium because the electron removed from boron is in a higher-energy2p orbital rather than the filled2s subshell. Oxygen has a lower value than nitrogen because oxygen has a paired2p electron whose removal reduces repulsion, while nitrogen has a half-filled2p3 arrangement. The scene’s approximate second-period values make these two dips visible. Values are not an exact smooth curve, and joining data points is only a comparison aid. Down a group, increasing size and shielding generally lower the first ionisation enthalpy.",
+          "hi": "प्रथम आयनन एन्थैल्पी (First ionisation enthalpy) वह एन्थैल्पी है जो मूल अवस्था के1 mol अलग गैसीय परमाणुओं में से प्रत्येक का1 इलेक्ट्रॉन हटाकर गैसीय1+ आयन बनाने में चाहिए। बंधा इलेक्ट्रॉन हटाने के लिए ऊर्जा देनी पड़ती है, इसलिए यह राशि धन होती है। क्रमिक आयनन सामान्यतः कठिन होते जाते हैं, क्योंकि प्रजाति अधिक धन होती जाती है। बहुत बड़ा उछाल बता सकता है कि अब पूर्ण भरे भीतरी कोश को छेड़ना पड़ेगा। आवर्त में आकर्षण बढ़ने से आयनन एन्थैल्पी सामान्यतः बढ़ती है, लेकिन इलेक्ट्रॉनिक संरचना महत्त्वपूर्ण अपवाद देती है। बोरॉन का प्रथम मान बेरिलियम से कम है, क्योंकि बोरॉन से निकलने वाला इलेक्ट्रॉन अधिक ऊर्जा के2p कक्षक में है, पूर्ण2s उपकोश में नहीं। ऑक्सीजन का मान नाइट्रोजन से कम है, क्योंकि ऑक्सीजन में2p का युग्मित इलेक्ट्रॉन हटाने से प्रतिकर्षण घटता है। नाइट्रोजन में अर्धभरा2p3 विन्यास है। दृश्य के लगभग दूसरे आवर्त मान इन दोनों गिरावटों को दिखाते हैं। ये ठीक चिकना वक्र नहीं हैं। आँकड़ा बिंदु जोड़ना केवल तुलना का साधन है। वर्ग में नीचे बढ़ते आकार और परिरक्षण से प्रथम आयनन एन्थैल्पी सामान्यतः घटती है। अपवाद को केवल याद करने की जगह कक्षक ऊर्जा और युग्मन से समझाएँ।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Specify isolated gaseous ground-state atoms when defining first ionisation enthalpy.",
+          "hi": "प्रथम आयनन एन्थैल्पी की परिभाषा में अलग गैसीय मूल अवस्था परमाणु लिखें।"
+        },
+        {
+          "en": "The scene uses rounded approximate values in kJ mol^-1.",
+          "hi": "दृश्य में kJ mol^-1 के पूर्णांकित लगभग मान हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is oxygen’s first ionisation enthalpy lower than nitrogen’s?",
+          "hi": "ऑक्सीजन की प्रथम आयनन एन्थैल्पी नाइट्रोजन से कम क्यों है?"
+        },
+        "answer": {
+          "en": "Removing a paired2p electron from oxygen reduces repulsion, whereas nitrogen has a half-filled2p3 arrangement.",
+          "hi": "ऑक्सीजन का युग्मित2p इलेक्ट्रॉन हटाने से प्रतिकर्षण घटता है; नाइट्रोजन का2p3 अर्धभरा है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Electron gain, electronegativity and metallic behaviour",
+        "hi": "इलेक्ट्रॉन लब्धि, विद्युतऋणात्मकता और धात्विक व्यवहार"
+      },
+      "paragraphs": [
+        {
+          "en": "Electron gain enthalpy describes the enthalpy change when an isolated gaseous atom accepts an electron. Under this convention an exothermic addition has negative enthalpy, whereas an endothermic addition has positive enthalpy. Do not silently reverse this sign when using a differently defined electron-affinity term. The tendency generally becomes more favourable across many main-group periods, but small size, repulsion and stable configurations cause exceptions. Chlorine’s electron gain is more negative than fluorine’s despite fluorine being above it, because the compact fluorine2p region has strong added-electron repulsion. Noble-gas atoms generally resist adding an electron to a new higher-energy shell. Electronegativity is different: it is the relative tendency of a bonded atom to attract shared electron density. It is not the energy of removing an isolated electron, and common electronegativity scales are dimensionless. Metallic character broadly involves a tendency to lose electrons and form positive species; it generally decreases across a period and increases down a group. These trends are connected but should not be treated as identical definitions.",
+          "hi": "इलेक्ट्रॉन लब्धि एन्थैल्पी (Electron gain enthalpy) वह एन्थैल्पी परिवर्तन है जब अलग गैसीय परमाणु इलेक्ट्रॉन ग्रहण करता है। इस संकेत परंपरा में ऊष्माक्षेपी ग्रहण की एन्थैल्पी ऋण और ऊष्माशोषी ग्रहण की धन है। इलेक्ट्रॉन बंधुता (Electron affinity) शब्द किसी दूसरी परिभाषा से लिखा हो तो बिना देखे संकेत उलटा न करें। मुख्य वर्ग के अनेक आवर्तों में इलेक्ट्रॉन ग्रहण सामान्यतः अधिक अनुकूल होता है, लेकिन छोटा आकार, प्रतिकर्षण और स्थिर विन्यास अपवाद देते हैं। क्लोरीन की इलेक्ट्रॉन लब्धि फ्लोरीन से अधिक ऋण है, यद्यपि फ्लोरीन ऊपर है। कारण फ्लोरीन के बहुत छोटे2p क्षेत्र में नए इलेक्ट्रॉन का अधिक प्रतिकर्षण है। उत्कृष्ट गैस परमाणु सामान्यतः नए अधिक ऊर्जा कोश में इलेक्ट्रॉन जोड़ने का विरोध करते हैं। विद्युतऋणात्मकता (Electronegativity) अलग विचार है। यह बंधित परमाणु की साझे इलेक्ट्रॉन घनत्व को खींचने की सापेक्ष प्रवृत्ति है। यह अलग परमाणु से इलेक्ट्रॉन हटाने की ऊर्जा नहीं है। सामान्य विद्युतऋणात्मकता पैमाने विमाहीन होते हैं। धात्विक गुण मोटे तौर पर इलेक्ट्रॉन खोकर धन प्रजाति बनाने की प्रवृत्ति से जुड़ा है। यह आवर्त में सामान्यतः घटता और वर्ग में नीचे बढ़ता है। ये प्रवृत्तियाँ संबंधित हैं, लेकिन इनकी परिभाषाएँ एक नहीं हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Exothermic electron addition has negative electron gain enthalpy in this convention.",
+          "hi": "इस परंपरा में ऊष्माक्षेपी इलेक्ट्रॉन ग्रहण की लब्धि एन्थैल्पी ऋण है।"
+        },
+        {
+          "en": "Fluorine is highly electronegative, but its electron gain enthalpy is not the most negative.",
+          "hi": "फ्लोरीन अत्यधिक विद्युतऋणात्मक है, पर उसकी इलेक्ट्रॉन लब्धि सबसे अधिक ऋण नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is electronegativity the same as first ionisation enthalpy?",
+          "hi": "विद्युतऋणात्मकता और प्रथम आयनन एन्थैल्पी एक ही हैं?"
+        },
+        "answer": {
+          "en": "No. One concerns shared density in a bond; the other is electron-removal enthalpy for isolated gaseous atoms.",
+          "hi": "नहीं। एक आबंध में साझा घनत्व का आकर्षण है; दूसरी अलग गैसीय परमाणु से इलेक्ट्रॉन हटाने की एन्थैल्पी है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Valence, chemical trends and systematic naming",
+        "hi": "संयोजकता, रासायनिक प्रवृत्तियाँ और व्यवस्थित नामकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Valence-electron patterns help predict formulas of common main-group compounds, but valency and oxidation state are not interchangeable labels for every situation. Across a simple main-group period, the number of outer electrons changes systematically and common oxide or hydride formulas reflect that change. The nature of many oxides progresses from more basic through amphoteric to more acidic as metallic character decreases, although a particular oxide must be identified before assigning behaviour. Aluminium oxide is a familiar amphoteric example. Periodic position supports predictions, but does not replace evidence about structure, oxidation state and reaction conditions. For elements with atomic number above100, systematic temporary naming uses digit roots and the ending ium until an approved permanent name is assigned. For a hypothetical atomic number120, the roots un, bi and nil give unbinilium, symbol Ubn. A temporary name is a naming exercise, not evidence that an element has been discovered. Many heavy elements already have approved permanent names, which should be used rather than obsolete temporary names. Always distinguish a general trend from a universal law with no exceptions.",
+          "hi": "संयोजकता इलेक्ट्रॉन का प्रतिरूप मुख्य वर्ग के सामान्य यौगिकों के सूत्र का अनुमान लगाने में सहायक है। फिर भी संयोजकता (Valency) और ऑक्सीकरण अवस्था (Oxidation state) हर परिस्थिति में एक ही नाम नहीं हैं। सरल मुख्य वर्ग आवर्त में बाहरी इलेक्ट्रॉन क्रम से बदलते हैं और सामान्य ऑक्साइड या हाइड्राइड सूत्र में उसका प्रभाव दिखता है। धात्विक गुण घटने पर अनेक ऑक्साइड अधिक क्षारीय से उभयधर्मी और फिर अधिक अम्लीय प्रकृति की ओर जाते हैं। लेकिन व्यवहार बताने से पहले विशेष ऑक्साइड की पहचान जरूरी है। ऐलुमिनियम ऑक्साइड उभयधर्मी (Amphoteric) होने का परिचित उदाहरण है। आवर्त स्थान अनुमान में सहायक है, पर संरचना, ऑक्सीकरण अवस्था और अभिक्रिया की दशाओं का प्रमाण नहीं बदलता। परमाणु क्रमांक100 से अधिक वाले तत्वों के अस्थायी व्यवस्थित नाम में अंकों के मूल और अंत में ium लगाते हैं, जब तक स्वीकृत स्थायी नाम न मिल जाए। काल्पनिक क्रमांक120 के लिए un,bi,nil से unbinilium और संकेत Ubn मिलता है। अस्थायी नाम बनाना नामकरण अभ्यास है, तत्व खोजे जाने का प्रमाण नहीं। कई भारी तत्वों के स्थायी नाम पहले से स्वीकृत हैं; पुराने अस्थायी नाम की जगह वही लें। सामान्य प्रवृत्ति को ऐसा सार्वभौमिक नियम न लिखें जिसमें कोई अपवाद ही न हो।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Al2O3 is a standard example of an amphoteric oxide.",
+          "hi": "Al2O3 उभयधर्मी ऑक्साइड का सामान्य उदाहरण है।"
+        },
+        {
+          "en": "For hypothetical120: un-bi-nil-ium gives unbinilium, Ubn.",
+          "hi": "काल्पनिक120 के लिए un-bi-nil-ium से unbinilium,Ubn मिलता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does constructing a systematic temporary name prove discovery of that element?",
+          "hi": "व्यवस्थित अस्थायी नाम बना देना उस तत्व की खोज का प्रमाण है?"
+        },
+        "answer": {
+          "en": "No. Naming rules and experimental discovery are different matters.",
+          "hi": "नहीं। नामकरण नियम और प्रयोग से खोज अलग बातें हैं।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Atomic number Z=proton count",
+      "meaning": {
+        "en": "Modern periodic ordering follows Z.",
+        "hi": "आधुनिक आवर्त क्रम Z पर आधारित है।"
+      },
+      "units": {
+        "en": "Integer count; dimensionless.",
+        "hi": "पूर्णांक गिनती; विमाहीन।"
+      }
+    },
+    {
+      "expression": "Electron count=Z−q",
+      "meaning": {
+        "en": "q is signed ionic charge in units of e; a negative q adds electrons.",
+        "hi": "q,e के मात्रक में साइन सहित आयनिक आवेश है; ऋण q पर इलेक्ट्रॉन बढ़ते हैं।"
+      },
+      "units": {
+        "en": "Particle count; q is a signed integer.",
+        "hi": "कण गिनती; q साइन सहित पूर्णांक है।"
+      }
+    },
+    {
+      "expression": "X(g)→X+(g)+e−",
+      "meaning": {
+        "en": "First ionisation removes one electron from an isolated gaseous ground-state atom.",
+        "hi": "प्रथम आयनन में अलग गैसीय मूल अवस्था परमाणु से1 इलेक्ट्रॉन निकलता है।"
+      },
+      "units": {
+        "en": "Ionisation enthalpy in kJ mol^-1.",
+        "hi": "आयनन एन्थैल्पी का मात्रक kJ mol^-1।"
+      }
+    },
+    {
+      "expression": "X(g)+e−→X−(g)",
+      "meaning": {
+        "en": "Electron gain enthalpy is negative for exothermic addition under the stated convention.",
+        "hi": "दिए संकेत में ऊष्माक्षेपी इलेक्ट्रॉन ग्रहण की लब्धि एन्थैल्पी ऋण है।"
+      },
+      "units": {
+        "en": "kJ mol^-1.",
+        "hi": "kJ mol^-1।"
+      }
+    },
+    {
+      "expression": "Model radius index=1/Zeff; isoelectronic index=10/Z",
+      "meaning": {
+        "en": "These are teaching indices, not measured atomic or ionic radii.",
+        "hi": "ये शिक्षण सूचकांक हैं, मापी परमाणु या आयन त्रिज्याएँ नहीं।"
+      },
+      "units": {
+        "en": "Dimensionless indices.",
+        "hi": "विमाहीन सूचकांक।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Identify period, group and block of sodium.",
+        "hi": "सोडियम का आवर्त, वर्ग और ब्लॉक बताइए।"
+      },
+      "given": {
+        "en": "Na has Z=11 and configuration[Ne]3s1.",
+        "hi": "Na का Z=11 और विन्यास[Ne]3s1 है।"
+      },
+      "find": {
+        "en": "Position.",
+        "hi": "स्थान।"
+      },
+      "formula": {
+        "en": "Highest shell n and outer-electron pattern",
+        "hi": "Highest shell n and outer-electron pattern"
+      },
+      "steps": [
+        {
+          "en": "Highest occupied n=3, so period 3.",
+          "hi": "सबसे ऊँचा भरा n=3, इसलिए आवर्त3।"
+        },
+        {
+          "en": "Outer3s1 gives group 1 and s block.",
+          "hi": "बाहरी3s1 से वर्ग1 और s ब्लॉक।"
+        }
+      ],
+      "answer": {
+        "en": "Period3, group 1, s block.",
+        "hi": "आवर्त3, वर्ग1, s ब्लॉक।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Count electrons in O2−,Na+ and Al3+.",
+        "hi": "O2−,Na+ औरAl3+ में इलेक्ट्रॉन गिनें।"
+      },
+      "given": {
+        "en": "Z values8,11,13.",
+        "hi": "Z क्रमशः8,11,13 हैं।"
+      },
+      "find": {
+        "en": "Electron counts.",
+        "hi": "इलेक्ट्रॉन गिनती।"
+      },
+      "formula": {
+        "en": "Ne=Z−q",
+        "hi": "Ne=Z−q"
+      },
+      "steps": [
+        {
+          "en": "O2−:8−(−2)=10.",
+          "hi": "O2−:8−(−2)=10।"
+        },
+        {
+          "en": "Na+:11−1=10; Al3+:13−3=10.",
+          "hi": "Na+:11−1=10; Al3+:13−3=10।"
+        }
+      ],
+      "answer": {
+        "en": "All have10 electrons and are isoelectronic.",
+        "hi": "सभी में10 इलेक्ट्रॉन हैं और वे समइलेक्ट्रॉनी हैं।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Explain the IE decrease from Be to B despite increasing Z.",
+        "hi": "Z बढ़ने पर भी Be से B में IE घटने का कारण बताएँ।"
+      },
+      "given": {
+        "en": "Be:[He]2s2; B:[He]2s2 2p1.",
+        "hi": "Be:[He]2s2; B:[He]2s2 2p1।"
+      },
+      "find": {
+        "en": "Configuration-based explanation.",
+        "hi": "विन्यास पर आधारित व्याख्या।"
+      },
+      "formula": {
+        "en": "Compare the orbital from which the first electron is removed.",
+        "hi": "Compare the orbital from which the first electron is removed."
+      },
+      "steps": [
+        {
+          "en": "B loses a2p electron; Be loses a2s electron.",
+          "hi": "B से2p और Be से2s इलेक्ट्रॉन निकलता है।"
+        },
+        {
+          "en": "The2p electron is higher in energy and less penetrating than 2s.",
+          "hi": "2p इलेक्ट्रॉन अधिक ऊर्जा और2s से कम प्रवेश वाला है।"
+        }
+      ],
+      "answer": {
+        "en": "B has lower first ionisation enthalpy; the general across-period rise has an exception.",
+        "hi": "B की प्रथम आयनन एन्थैल्पी कम है; आवर्त में सामान्य वृद्धि का यह अपवाद है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Compare symbolic size indices of ten-electron O2− and Al3+.",
+        "hi": "10 इलेक्ट्रॉन वाले O2− औरAl3+ के सांकेतिक आकार सूचकांक तुलना करें।"
+      },
+      "given": {
+        "en": "Z=8 and13; index=10/Z.",
+        "hi": "Z=8 और13; सूचकांक=10/Z।"
+      },
+      "find": {
+        "en": "Index values and size trend.",
+        "hi": "सूचकांक मान और आकार प्रवृत्ति।"
+      },
+      "formula": {
+        "en": "Index=10/Z",
+        "hi": "Index=10/Z"
+      },
+      "steps": [
+        {
+          "en": "For O2−,10/8=1.25.",
+          "hi": "O2− के लिए10/8=1.25।"
+        },
+        {
+          "en": "For Al3+,10/13≈0.769.",
+          "hi": "Al3+ के लिए10/13≈0.769।"
+        },
+        {
+          "en": "More protons attract the same electron number more strongly.",
+          "hi": "अधिक प्रोटॉन समान इलेक्ट्रॉन संख्या को अधिक खींचते हैं।"
+        }
+      ],
+      "answer": {
+        "en": "1.25 and approximately 0.769; Al3+ is smaller in the trend. These are not radii in pm.",
+        "hi": "1.25 और लगभग0.769; प्रवृत्ति मेंAl3+ छोटा है। ये pm में त्रिज्याएँ नहीं।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "An atom has outer configuration3s2 3p5. Predict its period, group and common monatomic ion, then compare that ion’s electron count with Ar.",
+        "hi": "किसी परमाणु का बाहरी विन्यास3s2 3p5 है। आवर्त, वर्ग और सामान्य एकपरमाणुक आयन बताएँ; आयन की इलेक्ट्रॉन गिनती Ar से तुलना करें।"
+      },
+      "given": {
+        "en": "Core[Ne]; outer electrons 7; Z=17.",
+        "hi": "भीतरी[Ne]; बाहरी इलेक्ट्रॉन7; Z=17।"
+      },
+      "find": {
+        "en": "Position and closed-shell ion.",
+        "hi": "स्थान और पूर्ण कोश आयन।"
+      },
+      "formula": {
+        "en": "Electron count of an anion=Z+number gained",
+        "hi": "Electron count of an anion=Z+number gained"
+      },
+      "steps": [
+        {
+          "en": "n=3 gives period 3; ns2 np5 gives group 17.",
+          "hi": "n=3 से आवर्त3; ns2 np5 से वर्ग17।"
+        },
+        {
+          "en": "Adding one electron gives Cl− with 18 electrons.",
+          "hi": "1 इलेक्ट्रॉन जुड़ने से18 इलेक्ट्रॉन वाला Cl− बनता है।"
+        },
+        {
+          "en": "Ar has 18 electrons, so the ion is isoelectronic with Ar, but has a different proton number.",
+          "hi": "Ar में18 इलेक्ट्रॉन हैं; आयन उससे समइलेक्ट्रॉनी है, लेकिन प्रोटॉन संख्या अलग है।"
+        }
+      ],
+      "answer": {
+        "en": "Period3, group 17; Cl− has 18 electrons and is isoelectronic with Ar.",
+        "hi": "आवर्त3, वर्ग17; Cl− में18 इलेक्ट्रॉन हैं और वह Ar से समइलेक्ट्रॉनी है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Modern periodic law orders elements by what?",
+        "hi": "आधुनिक आवर्त नियम में तत्वों का क्रम किससे है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Atomic number",
+            "hi": "परमाणु क्रमांक"
+          },
+          "reason": {
+            "en": "It counts protons and fixes identity.",
+            "hi": "यह प्रोटॉन गिनकर पहचान तय करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sample mass",
+            "hi": "नमूना द्रव्यमान"
+          },
+          "reason": {
+            "en": "A larger sample does not change the element.",
+            "hi": "बड़ा नमूना तत्व नहीं बदलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neutron count alone",
+            "hi": "केवल न्यूट्रॉन संख्या"
+          },
+          "reason": {
+            "en": "Isotopes may have different neutron numbers.",
+            "hi": "समस्थानिकों की न्यूट्रॉन संख्या अलग हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Alphabetical name",
+            "hi": "नाम का वर्णक्रम"
+          },
+          "reason": {
+            "en": "Names are not the physical basis of periodicity.",
+            "hi": "नाम आवर्तिता का भौतिक आधार नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "How many groups are in the modern long-form table?",
+        "hi": "आधुनिक दीर्घ सारणी में कितने वर्ग हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "18",
+            "hi": "18"
+          },
+          "reason": {
+            "en": "Modern group numbering runs1–18.",
+            "hi": "आधुनिक वर्ग संख्या1–18 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "7 is the number of periods.",
+            "hi": "7 आवर्तों की संख्या है।"
+          }
+        },
+        {
+          "text": {
+            "en": "8 only",
+            "hi": "केवल8"
+          },
+          "reason": {
+            "en": "This confuses older arrangements with modern group count.",
+            "hi": "यह पुरानी व्यवस्था को आधुनिक वर्ग गिनती से मिलाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "32",
+            "hi": "32"
+          },
+          "reason": {
+            "en": "32 is a possible period length, not the number of groups.",
+            "hi": "32 एक आवर्त लंबाई हो सकती है, वर्ग गिनती नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Where is[Ne]3s1 located?",
+        "hi": "[Ne]3s1 का स्थान क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Period3,group 1",
+            "hi": "आवर्त3,वर्ग1"
+          },
+          "reason": {
+            "en": "Highest shell3 and outer s1 identify this main-group position.",
+            "hi": "ऊँचा कोश3 और बाहरी s1 यह मुख्य वर्ग स्थान बताते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Period1,group 3",
+            "hi": "आवर्त1,वर्ग3"
+          },
+          "reason": {
+            "en": "The shell and group roles are reversed.",
+            "hi": "कोश और वर्ग की भूमिका उलटी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Period3,group 17",
+            "hi": "आवर्त3,वर्ग17"
+          },
+          "reason": {
+            "en": "Group17 has an ns2 np5 pattern.",
+            "hi": "वर्ग17 में ns2 np5 प्रतिरूप है।"
+          }
+        },
+        {
+          "text": {
+            "en": "An f-block element",
+            "hi": "f ब्लॉक तत्व"
+          },
+          "reason": {
+            "en": "The differentiating electron is in s.",
+            "hi": "विभेदी इलेक्ट्रॉन s में है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Across a main-group period, atomic radius generally does what?",
+        "hi": "मुख्य वर्ग आवर्त में परमाणु त्रिज्या सामान्यतः क्या करती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Decreases",
+            "hi": "घटती है"
+          },
+          "reason": {
+            "en": "Increasing effective attraction generally contracts the shell.",
+            "hi": "बढ़ता प्रभावी आकर्षण सामान्यतः कोश को सिकोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always doubles each step",
+            "hi": "हर चरण दुगुनी"
+          },
+          "reason": {
+            "en": "There is no exact doubling law.",
+            "hi": "ठीक दुगुना होने का नियम नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Increases without exceptions",
+            "hi": "बिना अपवाद बढ़ती है"
+          },
+          "reason": {
+            "en": "This is opposite to the usual trend.",
+            "hi": "यह सामान्य प्रवृत्ति के उलट है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Becomes identically zero",
+            "hi": "ठीक शून्य होती है"
+          },
+          "reason": {
+            "en": "Atoms retain finite spatial distributions.",
+            "hi": "परमाणु का सीमित स्थानिक वितरण रहता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which has 10 electrons?",
+        "hi": "किसमें10 इलेक्ट्रॉन हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Na+",
+            "hi": "Na+"
+          },
+          "reason": {
+            "en": "11 protons with charge+1 means10 electrons.",
+            "hi": "11 प्रोटॉन और+1 आवेश का अर्थ10 इलेक्ट्रॉन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neutral Na",
+            "hi": "उदासीन Na"
+          },
+          "reason": {
+            "en": "It has 11 electrons.",
+            "hi": "इसमें11 इलेक्ट्रॉन हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mg+",
+            "hi": "Mg+"
+          },
+          "reason": {
+            "en": "12−1=11 electrons.",
+            "hi": "12−1=11 इलेक्ट्रॉन।"
+          }
+        },
+        {
+          "text": {
+            "en": "Al+",
+            "hi": "Al+"
+          },
+          "reason": {
+            "en": "13−1=12 electrons.",
+            "hi": "13−1=12 इलेक्ट्रॉन।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For a fixed10-electron series, increasing Z generally makes the species what?",
+        "hi": "स्थिर10 इलेक्ट्रॉन श्रेणी में Z बढ़ने पर प्रजाति सामान्यतः कैसी होती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Smaller",
+            "hi": "छोटी"
+          },
+          "reason": {
+            "en": "More nuclear charge attracts the same electron count more strongly.",
+            "hi": "अधिक नाभिकीय आवेश समान इलेक्ट्रॉन संख्या को अधिक खींचता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "More negatively charged necessarily",
+            "hi": "अनिवार्य अधिक ऋण आवेशित"
+          },
+          "reason": {
+            "en": "At fixed electrons, more protons make charge more positive.",
+            "hi": "स्थिर इलेक्ट्रॉन पर अधिक प्रोटॉन से आवेश अधिक धन होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Identical in radius by definition",
+            "hi": "परिभाषा से समान त्रिज्या"
+          },
+          "reason": {
+            "en": "Isoelectronic means same electrons, not same size.",
+            "hi": "समइलेक्ट्रॉनी का अर्थ समान इलेक्ट्रॉन है, समान आकार नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A different isotope only",
+            "hi": "केवल अलग समस्थानिक"
+          },
+          "reason": {
+            "en": "Changing proton number changes element identity.",
+            "hi": "प्रोटॉन बदलने से तत्व पहचान बदलती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which second-period IE exception is correctly explained?",
+        "hi": "दूसरे आवर्त का कौन-सा IE अपवाद सही समझाया है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "B is below Be because a2p electron is easier to remove than Be’s2s electron",
+            "hi": "B,Be से कम है क्योंकि2p इलेक्ट्रॉन,Be के2s से आसानी से निकलता है"
+          },
+          "reason": {
+            "en": "Orbital energy and penetration explain this dip.",
+            "hi": "कक्षक ऊर्जा और प्रवेश यह गिरावट समझाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "O is above N because pairing always makes removal harder",
+            "hi": "O,N से ऊपर है क्योंकि युग्मन हमेशा निष्कासन कठिन बनाता है"
+          },
+          "reason": {
+            "en": "O has a paired electron whose removal reduces repulsion; its value is below N.",
+            "hi": "O का युग्मित इलेक्ट्रॉन हटने से प्रतिकर्षण घटता है; उसका मान N से कम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All IE values are exactly equal",
+            "hi": "सभी IE बिल्कुल बराबर हैं"
+          },
+          "reason": {
+            "en": "Their configurations and attractions differ.",
+            "hi": "विन्यास और आकर्षण अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ne has zero IE because its shell is full",
+            "hi": "Ne की IE शून्य है क्योंकि कोश भरा है"
+          },
+          "reason": {
+            "en": "A closed shell makes electron removal difficult, not free.",
+            "hi": "पूर्ण कोश से इलेक्ट्रॉन निकालना कठिन है, मुफ्त नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Under the electron gain enthalpy convention, exothermic addition has which sign?",
+        "hi": "इलेक्ट्रॉन लब्धि एन्थैल्पी की परंपरा में ऊष्माक्षेपी ग्रहण का संकेत क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Negative",
+            "hi": "ऋण"
+          },
+          "reason": {
+            "en": "Energy release gives negative enthalpy change.",
+            "hi": "ऊर्जा निकलने पर एन्थैल्पी परिवर्तन ऋण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Positive",
+            "hi": "धन"
+          },
+          "reason": {
+            "en": "Positive would describe endothermic change under this convention.",
+            "hi": "इस परंपरा में धन संकेत ऊष्माशोषी परिवर्तन बताता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "हमेशा शून्य"
+          },
+          "reason": {
+            "en": "Electron addition can release or require energy.",
+            "hi": "इलेक्ट्रॉन ग्रहण में ऊर्जा निकल या लग सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined for every atom",
+            "hi": "हर परमाणु के लिए अपरिभाषित"
+          },
+          "reason": {
+            "en": "It is a defined thermochemical quantity.",
+            "hi": "यह परिभाषित ऊष्मारासायनिक राशि है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Electronegativity describes what?",
+        "hi": "विद्युतऋणात्मकता क्या बताती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A bonded atom’s relative attraction for shared electron density",
+            "hi": "बंधित परमाणु का साझे इलेक्ट्रॉन घनत्व पर सापेक्ष आकर्षण"
+          },
+          "reason": {
+            "en": "It concerns electrons in a bond.",
+            "hi": "यह आबंध के इलेक्ट्रॉनों से संबंधित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass of a neutron",
+            "hi": "न्यूट्रॉन का द्रव्यमान"
+          },
+          "reason": {
+            "en": "This is unrelated to bond attraction.",
+            "hi": "यह आबंध आकर्षण से असंबंधित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always the same as first IE",
+            "hi": "हमेशा प्रथम IE के समान"
+          },
+          "reason": {
+            "en": "IE concerns removing an electron from an isolated gaseous atom.",
+            "hi": "IE अलग गैसीय परमाणु से इलेक्ट्रॉन हटाने का विषय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The number of neutrons",
+            "hi": "न्यूट्रॉन संख्या"
+          },
+          "reason": {
+            "en": "That is A−Z, not electronegativity.",
+            "hi": "वह A−Z है, विद्युतऋणात्मकता नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which oxide is a familiar amphoteric example?",
+        "hi": "कौन-सा ऑक्साइड परिचित उभयधर्मी उदाहरण है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Al2O3",
+            "hi": "Al2O3"
+          },
+          "reason": {
+            "en": "It can show both acidic and basic behaviour under suitable reactions.",
+            "hi": "उपयुक्त अभिक्रिया में यह अम्लीय और क्षारीय दोनों व्यवहार दिखा सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Na2O as a universal amphoteric oxide",
+            "hi": "सार्वभौमिक उभयधर्मी Na2O"
+          },
+          "reason": {
+            "en": "Na2O is normally classified as basic.",
+            "hi": "Na2O सामान्यतः क्षारीय माना जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CO2 as a basic oxide",
+            "hi": "क्षारीय CO2"
+          },
+          "reason": {
+            "en": "CO2 is normally acidic.",
+            "hi": "CO2 सामान्यतः अम्लीय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "An oxide chosen only from colour",
+            "hi": "केवल रंग से चुना ऑक्साइड"
+          },
+          "reason": {
+            "en": "Colour alone does not determine acid-base behaviour.",
+            "hi": "केवल रंग अम्ल-क्षार व्यवहार नहीं बताता।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain why modern classification resolved the isotope placement problem.",
+        "hi": "आधुनिक वर्गीकरण ने समस्थानिक स्थान की समस्या कैसे हल की?"
+      },
+      "answer": {
+        "en": "Isotopes share atomic number, so all belong in one elemental position despite different masses.",
+        "hi": "समस्थानिकों का परमाणु क्रमांक समान है, इसलिए अलग द्रव्यमान होने पर भी एक तत्व स्थान है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish atomic and ionic radius trends.",
+        "hi": "परमाणु और आयन त्रिज्या की प्रवृत्ति में अंतर समझाएँ।"
+      },
+      "answer": {
+        "en": "Atomic trends compare defined atomic sizes; cations are commonly smaller and anions larger than their parent atom, while isoelectronic comparisons hold electron count fixed.",
+        "hi": "परमाणु प्रवृत्तियाँ परिभाषित परमाणु आकार तुलना करती हैं; धनायन प्रायः मूल परमाणु से छोटे और ऋणायन बड़े होते हैं, जबकि समइलेक्ट्रॉनी तुलना में इलेक्ट्रॉन संख्या स्थिर रखते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does first IE generally fall down a group?",
+        "hi": "वर्ग में नीचे प्रथम IE सामान्यतः क्यों घटती है?"
+      },
+      "answer": {
+        "en": "Additional shells and shielding increase the outer electron’s distance and reduce effective binding despite larger nuclear charge.",
+        "hi": "नए कोश और परिरक्षण बाहरी इलेक्ट्रॉन की दूरी बढ़ाकर, नाभिकीय आवेश बढ़ने पर भी, उसका प्रभावी बंधन घटाते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the N/O first-ionisation exception.",
+        "hi": "N/O प्रथम आयनन अपवाद समझाएँ।"
+      },
+      "answer": {
+        "en": "O has a paired2p electron; removing it reduces repulsion, while N has a half-filled2p3 subshell.",
+        "hi": "O में युग्मित2p इलेक्ट्रॉन है; उसे हटाने से प्रतिकर्षण घटता है, जबकि N में अर्धभरा2p3 है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is electron gain enthalpy of Cl more negative than F?",
+        "hi": "Cl की इलेक्ट्रॉन लब्धि एन्थैल्पी F से अधिक ऋण क्यों है?"
+      },
+      "answer": {
+        "en": "Fluorine’s compact2p region causes stronger repulsion for an added electron; chlorine’s larger3p region accommodates it more readily.",
+        "hi": "फ्लोरीन के छोटे2p क्षेत्र में नए इलेक्ट्रॉन का प्रतिकर्षण अधिक है; क्लोरीन का बड़ा3p क्षेत्र उसे अधिक आसानी से जगह देता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State a limit of the displayed isoelectronic radius index.",
+        "hi": "दिखाए समइलेक्ट्रॉनी त्रिज्या सूचकांक की एक सीमा लिखें।"
+      },
+      "answer": {
+        "en": "10/Z is a dimensionless teaching trend, not a measured radius or an exact many-electron calculation.",
+        "hi": "10/Z विमाहीन शिक्षण प्रवृत्ति है, मापी त्रिज्या या ठीक बहुइलेक्ट्रॉनी गणना नहीं।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Modern periodicity follows atomic number.",
+      "hi": "आधुनिक आवर्तिता परमाणु क्रमांक पर है।"
+    },
+    {
+      "en": "Related outer configurations explain recurring properties.",
+      "hi": "संबंधित बाहरी विन्यास गुणों का दोहराव समझाते हैं।"
+    },
+    {
+      "en": "Compare sizes only with clear radius definitions.",
+      "hi": "आकार की तुलना में त्रिज्या की परिभाषा स्पष्ट रखें।"
+    },
+    {
+      "en": "Ionisation trends have configuration-based exceptions.",
+      "hi": "आयनन प्रवृत्ति में विन्यास पर आधारित अपवाद हैं।"
+    },
+    {
+      "en": "Electron gain and electronegativity are different quantities.",
+      "hi": "इलेक्ट्रॉन लब्धि और विद्युतऋणात्मकता अलग राशियाँ हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not make every trend absolute, confuse electron gain with electron removal, mix radius definitions or attach length units to symbolic indices.",
+    "hi": "हर प्रवृत्ति को निरपवाद न बनाएँ; इलेक्ट्रॉन ग्रहण को निष्कासन न समझें, त्रिज्या परिभाषाएँ न मिलाएँ और सांकेतिक सूचकांक को लंबाई मात्रक न दें।"
+  },
+  "goal": {
+    "en": "Use electronic configuration and effective attraction to explain periodic trends and important exceptions.",
+    "hi": "इलेक्ट्रॉनिक विन्यास और प्रभावी आकर्षण से आवर्त प्रवृत्तियाँ तथा महत्त्वपूर्ण अपवाद समझें।"
+  },
+  "conceptMap": "परमाणु क्रमांक → इलेक्ट्रॉनिक विन्यास → वर्ग और ब्लॉक → परिरक्षण तथा आकार → आयनन और इलेक्ट्रॉन लब्धि → आबंधन प्रवृत्तियाँ",
+  "conceptMapEn": "Atomic number → electronic configuration → groups and blocks → shielding and size → ionisation and electron gain → bonding trends",
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Chemistry Class 11, reprint 2026–27, and the UP Board syllabus. Use the prescribed textbook and school practicals alongside.",
+    "hi": "NCERT रसायन विज्ञान कक्षा 11, पुनर्मुद्रण 2026–27 तथा यूपी बोर्ड पाठ्यक्रम पर आधारित मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry Part I, Chapter 3, 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/kech103.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Chemistry syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/152-Chemistry-Class-11.pdf"
+    }
+  ]
+}

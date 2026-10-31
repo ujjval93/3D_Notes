@@ -1,0 +1,888 @@
+{
+  "id": 13,
+  "title": {
+    "en": "Statistics",
+    "hi": "सांख्यिकी"
+  },
+  "goal": {
+    "en": "Measure and interpret spread using mean deviation, variance and standard deviation.",
+    "hi": "माध्य विचलन, प्रसरण और मानक विचलन से फैलाव मापें और समझें।"
+  },
+  "engine": "eleven-math",
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Why averages are not enough",
+        "hi": "केवल औसत पर्याप्त क्यों नहीं"
+      },
+      "body": {
+        "en": "Two datasets may have the same mean but very different spreads. The lists 4,5,6 and 0,5,10 both have mean 5, yet the latter is more dispersed. Dispersion quantifies how far observations lie from one another or a representative centre. Keep the observational unit clear: marks, lengths and rupees are different quantities. A dataset is not fully described by one number. Before calculating, organise observations and check for recording errors, missing entries and outliers. An outlier can be genuine; do not delete it merely because it changes the result. This chapter studies range, mean deviation, variance and standard deviation.",
+        "hi": "2 आँकड़ा समूहों का औसत समान होने पर भी उनका फैलाव बहुत अलग हो सकता है। 4, 5, 6 और 0, 5, 10 दोनों का माध्य 5 है, लेकिन दूसरे में मान अधिक दूर फैले हैं। प्रकीर्णन (Dispersion) इसी फैलाव का माप है। केवल माध्य बताने से पूरी स्थिति स्पष्ट नहीं होती। पहले यह लिखें कि अवलोकन किस राशि के हैं और उसकी इकाई क्या है। अंक, लंबाई तथा रुपये की संख्याओं का अर्थ अलग है। आँकड़ों को क्रमबद्ध या सारणीबद्ध करके गलत प्रविष्टि, छूटा मान और बहुत अलग मान जाँचें। बहुत दूर का मान वास्तविक भी हो सकता है; केवल परिणाम बदलने के कारण उसे हटाना सही नहीं है। इस अध्याय में परिसर, माध्य विचलन, प्रसरण और मानक विचलन पढ़ते हैं। हर माप अलग जानकारी देता है। गणना से पहले प्रश्न पूछें: हमें किन मानों के बीच फैलाव चाहिए, किस केंद्रीय मान से दूरी लेनी है, और क्या सभी अवलोकनों को समान भार देना है? यही चुनाव सही विधि तक पहुँचाता है।"
+      },
+      "formula": "Same mean does not imply same spread",
+      "question": {
+        "en": "Do 4,5,6 and 0,5,10 have equal spread?",
+        "hi": "क्या 4,5,6 तथा 0,5,10 का फैलाव समान है?"
+      },
+      "answer": {
+        "en": "No; the second has greater spread despite the same mean.",
+        "hi": "नहीं; समान माध्य पर भी दूसरे का फैलाव अधिक है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Range and its limits",
+        "hi": "परिसर और उसकी सीमाएँ"
+      },
+      "body": {
+        "en": "The range is the largest observation minus the smallest. It is easy to calculate and has the same unit as the data, but ignores all intermediate values. Two datasets with the same endpoints have the same range even if their interior distributions differ. The range is sensitive to extreme observations. Sort data or identify the minimum and maximum carefully; do not subtract the first recorded entry from the last unless they are already sorted. For a constant dataset the range is zero. A nonzero range establishes variability but does not describe how observations cluster around the mean.",
+        "hi": "परिसर (Range) सबसे बड़े और सबसे छोटे अवलोकन का अंतर है। इसकी गणना सरल है और इकाई मूल आँकड़ों जैसी रहती है। लेकिन यह बीच के सभी मानों को अनदेखा करता है। 1, 2, 9 और 1, 8, 9 दोनों का परिसर 8 है, फिर भी वितरण अलग है। इसलिए एक जैसे परिसर से एक जैसा फैलाव निष्कर्षित न करें। परिसर चरम मानों से बहुत प्रभावित होता है। सूची क्रमबद्ध न हो तो पहले और अंतिम लिखे मान को घटाना गलत है; न्यूनतम और अधिकतम पहचानें। सभी मान समान हों तो परिसर 0 होगा। परिसर धनात्मक होने से परिवर्तनशीलता सिद्ध होती है, लेकिन यह नहीं बताता कि अधिकतर मान माध्य के पास हैं या सिरों पर। आवृत्ति सारणी में केवल उन मानों को देखें जिनकी आवृत्ति धनात्मक है। तुलना में मूल इकाइयाँ समान रखें। 2 cm का परिसर और 10 mm का परिसर सीधे संख्याओं से तुलना नहीं कर सकते; पहले एक इकाई में बदलें। छोटे वर्णन में परिसर के साथ उसकी सीमा भी लिखें।"
+      },
+      "formula": "Range=max(x_i)−min(x_i)",
+      "question": {
+        "en": "Find range of 8,3,11,5.",
+        "hi": "8,3,11,5 का परिसर।"
+      },
+      "answer": {
+        "en": "11−3=8.",
+        "hi": "11−3=8।"
+      }
+    },
+    {
+      "title": {
+        "en": "Mean deviation about a central value",
+        "hi": "केंद्रीय मान के सापेक्ष माध्य विचलन"
+      },
+      "body": {
+        "en": "Mean deviation about a is the average of the absolute deviations |x_i−a|. Absolute values prevent positive and negative deviations cancelling. The central value may be the mean or median; state which is used. For raw data divide by the number n of observations. For a frequency distribution weight each absolute deviation by its frequency and divide by total frequency N. The units remain those of the observations. Signed deviations from the arithmetic mean sum to zero, but their absolute values generally do not. Mean deviation is minimised about a median; it is not generally minimised about the mean.",
+        "hi": "किसी केंद्रीय मान a के सापेक्ष माध्य विचलन (Mean deviation) सभी |x_i−a| का औसत है। निरपेक्ष मान लेने से धन और ऋण विचलन आपस में कटते नहीं। a माध्य या माध्यिका हो सकता है; समाधान में स्पष्ट लिखें कि कौन-सा चुना है। अवर्गीकृत n अवलोकनों में MD=Σ|x_i−a|/n है। आवृत्ति f_i वाली सारणी में हर दूरी f_i बार गिनी जाएगी, इसलिए MD=Σf_i|x_i−a|/N और N=Σf_i है। केवल अलग-अलग मानों की संख्या से भाग देना गलत है। इस माप की इकाई मूल अवलोकनों जैसी है। माध्य से चिह्नित विचलनों का योग 0 होता है, लेकिन निरपेक्ष विचलनों का योग सामान्यतः धनात्मक होगा। माध्य विचलन माध्यिका के सापेक्ष न्यूनतम होता है। इसे माध्य के सापेक्ष न्यूनतम न लिखें; वर्ग विचलनों के लिए माध्य की अलग न्यूनतम विशेषता है। गणना सारणी में x_i, f_i, |x_i−a| और f_i|x_i−a| के अलग स्तंभ रखें।"
+      },
+      "formula": "MD(a)=Σ|x_i−a|/n; frequency: Σf_i|x_i−a|/N",
+      "question": {
+        "en": "Why take absolute deviations?",
+        "hi": "विचलनों का निरपेक्ष मान क्यों लेते हैं?"
+      },
+      "answer": {
+        "en": "To measure distance without cancellation of signs.",
+        "hi": "चिह्नों के कटने के बिना दूरी मापने के लिए।"
+      }
+    },
+    {
+      "title": {
+        "en": "Finding mean and median for deviation",
+        "hi": "विचलन के लिए माध्य और माध्यिका"
+      },
+      "body": {
+        "en": "The arithmetic mean of frequency data is Σf_ix_i/N. For the median, arrange values and use cumulative frequencies to find the central observation or the two central observations. Do not average the frequencies. In grouped continuous data the median is estimated by L+[(N/2−c_f)/f]h, using the lower boundary, cumulative frequency before the median class, class frequency and class width. A grouped mean uses class marks and therefore usually estimates the original raw-data mean. Mean deviation about a grouped median inherits these approximations. Clearly distinguish exact discrete calculations from class-based estimates.",
+        "hi": "आवृत्ति आँकड़ों में अंकगणितीय माध्य (Arithmetic mean) x̄=Σf_ix_i/N है। माध्यिका (Median) के लिए मान क्रम में रखें और संचयी आवृत्ति से बीच का स्थान ढूँढ़ें। N विषम हो तो (N+1)/2वाँ मान, और N सम हो तो N/2 तथा N/2+1 स्थानों के मानों का औसत लें। केवल आवृत्तियों का औसत माध्यिका नहीं है। सतत वर्गों में माध्यिका का अनुमान L+[(N/2−c_f)/f]h से मिलता है। L माध्यिका वर्ग की निचली सीमा, c_f उससे पहले की संचयी आवृत्ति, f उस वर्ग की आवृत्ति और h चौड़ाई है। वर्गीकृत माध्य में वर्ग चिह्न अर्थात मध्यबिंदु लेते हैं। इससे मूल आँकड़ों का सामान्यतः अनुमान मिलता है, पूर्ण सटीक मान नहीं। माध्य विचलन भी उसी वर्ग-आधारित अनुमान पर निर्भर होगा। सारणी में कुल N तथा संचयी आवृत्ति के अंतिम मान का मिलना जाँचें। वर्गों की सीमाएँ सतत हैं या नहीं, यह देखकर ही माध्यिका सूत्र लगाएँ।"
+      },
+      "formula": "x̄=Σf_ix_i/N; grouped median=L+[(N/2−c_f)/f]h",
+      "question": {
+        "en": "How do frequencies affect the mean?",
+        "hi": "आवृत्ति माध्य को कैसे प्रभावित करती है?"
+      },
+      "answer": {
+        "en": "Each value contributes as many times as its frequency.",
+        "hi": "हर मान अपनी आवृत्ति जितनी बार योगदान देता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Variance: average squared deviation",
+        "hi": "प्रसरण: वर्ग विचलनों का औसत"
+      },
+      "body": {
+        "en": "Variance σ² is the average squared deviation from the mean. For raw data use Σ(x_i−x̄)²/n and for frequency data use Σf_i(x_i−x̄)²/N. This NCERT descriptive formula divides by n or N, not n−1, which belongs to a different sample-estimation setting. Squaring makes every contribution nonnegative and emphasises large deviations. Variance is zero exactly when every observation equals the mean. Its units are squared data units, so marks and variance have different units. The computational identity σ²=Σf_ix_i²/N−x̄² follows by expansion. Preserve enough precision to avoid a negative variance caused by premature rounding.",
+        "hi": "प्रसरण (Variance) माध्य से वर्ग विचलनों का औसत है। अवर्गीकृत आँकड़ों में σ²=Σ(x_i−x̄)²/n तथा आवृत्ति आँकड़ों में σ²=Σf_i(x_i−x̄)²/N है। इस वर्णनात्मक NCERT गणना में हर n या N है। n−1 वाला नमूना अनुमान सूत्र अलग संदर्भ का है; यहाँ बिना कारण न बदलें। वर्ग करने से हर योगदान गैरऋणात्मक हो जाता है और दूर के मान का असर अधिक बढ़ता है। प्रसरण 0 तभी होगा जब सभी अवलोकन माध्य के बराबर हों। इसकी इकाई मूल इकाई का वर्ग है। यदि लंबाई cm में है तो प्रसरण cm² में होगा। विस्तार करने पर छोटा सूत्र σ²=Σf_ix_i²/N−x̄² मिलता है। इसमें पहले वर्गों का माध्य और बाद में माध्य का वर्ग अलग गणना करें। दोनों को उलटने से ऋणात्मक मान आ सकता है। वास्तविक प्रसरण ऋणात्मक नहीं हो सकता; छोटा ऋण परिणाम गणना या अत्यधिक गोलाई की गलती बताता है। अंत तक पर्याप्त सटीकता रखें।"
+      },
+      "formula": "σ²=Σ(x_i−x̄)²/n=Σx_i²/n−x̄²",
+      "question": {
+        "en": "Can variance be negative?",
+        "hi": "क्या प्रसरण ऋणात्मक हो सकता है?"
+      },
+      "answer": {
+        "en": "No; it is an average of nonnegative squares.",
+        "hi": "नहीं; वह गैरऋणात्मक वर्गों का औसत है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Standard deviation and transformation",
+        "hi": "मानक विचलन और रूपांतरण"
+      },
+      "body": {
+        "en": "Standard deviation is σ=√(σ²), taking the nonnegative root. Its unit is the same as the data. Adding a constant c to every observation shifts the mean by c but leaves variance and standard deviation unchanged. Multiplying every observation by k multiplies the mean by k, variance by k² and standard deviation by |k|. Thus a negative scale factor reverses signs without creating a negative standard deviation. These rules support quick checks and unit conversions. A dataset measured in centimetres has a numerical standard deviation ten times that of the same lengths in decimetres.",
+        "hi": "मानक विचलन (Standard deviation) प्रसरण का गैरऋणात्मक वर्गमूल σ=√(σ²) है। इसकी इकाई मूल आँकड़ों जैसी होती है। सभी अवलोकनों में एक ही स्थिरांक c जोड़ें तो माध्य c बढ़ेगा, लेकिन माध्य से दूरी नहीं बदलेगी। इसलिए प्रसरण और मानक विचलन वही रहेंगे। हर मान को k से गुणा करें तो माध्य k गुना, प्रसरण k² गुना और मानक विचलन |k| गुना होगा। ऋणात्मक गुणक में भी मानक विचलन ऋणात्मक नहीं होगा। उदाहरण हर लंबाई cm से mm में बदलने पर संख्यात्मक मान 10 गुने होते हैं। मानक विचलन भी 10 गुना और प्रसरण 100 गुना होगा। इकाई परिवर्तन वास्तविक फैलाव नहीं बदलता; उसका संख्यात्मक माप बदलता है। इन नियमों से बड़ी गणना की त्वरित जाँच हो सकती है। एक स्थिर समूह को खिसकाने से स्क्रीन पर स्थान बदलेगा, फैलाव नहीं। लेकिन खींचकर सभी दूरियाँ दोगुनी करने से मानक विचलन दोगुना होगा। चित्र और सूत्र को इसी विचार से जोड़ें।"
+      },
+      "formula": "Var(kX+c)=k²Var(X); SD(kX+c)=|k|SD(X)",
+      "question": {
+        "en": "If every value increases by 10, what happens to SD?",
+        "hi": "हर मान 10 बढ़े तो SD क्या होगा?"
+      },
+      "answer": {
+        "en": "It stays unchanged.",
+        "hi": "अपरिवर्तित रहेगा।"
+      }
+    },
+    {
+      "title": {
+        "en": "Grouped data and shortcut methods",
+        "hi": "वर्गीकृत आँकड़े और संक्षिप्त विधियाँ"
+      },
+      "body": {
+        "en": "For grouped data replace each class by its midpoint x_i and weight by f_i. This treats observations within a class as represented by that midpoint, so the resulting spread is an estimate. An assumed mean A simplifies differences d_i=x_i−A. Variance becomes Σf_id_i²/N−(Σf_id_i/N)². With equal class width h, put u_i=(x_i−A)/h and multiply the final u-variance by h². These are algebraic rearrangements, not different definitions. Always include every frequency and confirm the total. Irregular class widths do not justify using one common h.",
+        "hi": "वर्गीकृत आँकड़ों में प्रत्येक वर्ग को उसके मध्यबिंदु x_i से दर्शाते हैं और आवृत्ति f_i से भार देते हैं। वर्ग के अंदर के सभी वास्तविक मान उपलब्ध न होने से प्राप्त फैलाव अनुमान है। कल्पित माध्य (Assumed mean) A चुनकर d_i=x_i−A लेने से गणना छोटी होती है। तब σ²=Σf_id_i²/N−(Σf_id_i/N)² है। समान वर्ग चौड़ाई h में u_i=(x_i−A)/h लेकर σ²=h²[Σf_iu_i²/N−(Σf_iu_i/N)²] मिलेगा। मानक विचलन निकालते समय h का निरपेक्ष मान बाहर आएगा। ये नए माप नहीं, वही परिभाषा सरल करने के बीजगणितीय रूप हैं। सभी आवृत्तियाँ शामिल करें और उनका योग N से मिलाएँ। असमान वर्ग चौड़ाइयों में एक सामान्य h मनमाने ढंग से न लें। मध्यबिंदु बनाते समय निचली और ऊपरी सीमा का औसत लें, आवृत्ति से सीमा न बदलें। प्रत्यक्ष और संक्षिप्त दोनों विधियों से छोटे आँकड़ों का उत्तर मिलाकर जाँच सकते हैं।"
+      },
+      "formula": "σ²=h²[Σf_iu_i²/N−(Σf_iu_i/N)²]",
+      "question": {
+        "en": "Does a class midpoint method always give exact raw-data variance?",
+        "hi": "क्या वर्ग मध्यबिंदु विधि हमेशा मूल आँकड़ों का सटीक प्रसरण देती है?"
+      },
+      "answer": {
+        "en": "No; grouped data generally yield an estimate.",
+        "hi": "नहीं; वर्गीकृत आँकड़े सामान्यतः अनुमान देते हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Comparing variability responsibly",
+        "hi": "परिवर्तनशीलता की सावधान तुलना"
+      },
+      "body": {
+        "en": "Compare spreads only after checking the quantity, units and scale. Standard deviation uses every squared deviation and is more sensitive to distant observations than mean deviation. Range uses only endpoints. None of these alone explains the cause of variation. A small SD indicates clustering around the mean, not necessarily a desirable mean. A test score group may be consistently low. Optional extension beyond the current chapter core: if comparing relative consistency for positive means, the coefficient of variation is 100σ/x̄; use it only when the mean and scale make such a ratio meaningful. Do not divide by a zero mean. Report the chosen statistic and the assumptions behind any grouped estimate. For 1,1,7 the mean is 3, while the median is 1. Mean deviation about the mean is 8/3 and about the median is 2. This illustrates the distinction between the two centres.",
+        "hi": "परिवर्तनशीलता की तुलना (Comparison of variability) से पहले राशि, इकाई और पैमाना समान हैं या नहीं, देखें। मानक विचलन सभी वर्ग विचलनों का उपयोग करता है, इसलिए बहुत दूर के मानों से अधिक प्रभावित होता है। माध्य विचलन निरपेक्ष दूरी लेता है और परिसर केवल सिरों को देखता है। कोई माप अकेले फैलाव का कारण नहीं बताता। छोटा SD मतलब मान माध्य के पास हैं; यह माध्य अच्छा है, ऐसा नहीं। किसी परीक्षा में सभी अंक लगातार कम भी हो सकते हैं। वर्तमान अध्याय के मूल पाठ से आगे अतिरिक्त समझ: धनात्मक माध्य वाले उपयुक्त अनुपात पैमाने पर सापेक्ष संगति के लिए परिवर्तन गुणांक CV=100σ/x̄ प्रयोग किया जाता है। माध्य 0 हो तो इससे भाग देना संभव नहीं। अर्थहीन या ऋणात्मक माध्य संदर्भ में यांत्रिक CV तुलना न करें। प्रश्न में माँगा माप स्पष्ट पहचानें। परिणाम के साथ लिखें कि आँकड़े कच्चे हैं या वर्ग मध्यबिंदुओं से अनुमानित हैं। संक्षिप्त निष्कर्ष में संख्या, इकाई और तुलना का आधार तीनों बताना जिम्मेदार सांख्यिकीय व्याख्या है। उदाहरण 1,1,7 में माध्य 3 तथा माध्यिका 1 है। माध्य के सापेक्ष MD=8/3 और माध्यिका के सापेक्ष MD=2 है। इससे केंद्र चुनने का असर तथा माध्यिका वाला न्यूनतम गुण स्पष्ट होता है।"
+      },
+      "formula": "CV=100σ/x̄ for an appropriate positive mean",
+      "question": {
+        "en": "Does low SD guarantee high marks?",
+        "hi": "क्या कम SD अधिक अंक सुनिश्चित करता है?"
+      },
+      "answer": {
+        "en": "No; it measures consistency, not the level of the mean.",
+        "hi": "नहीं; वह संगति मापता है, माध्य का स्तर नहीं।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find range and mean of 2,4,6.",
+        "hi": "2,4,6 का परिसर और माध्य।"
+      },
+      "steps": [
+        {
+          "en": "Minimum=2, maximum=6.",
+          "hi": "न्यूनतम 2, अधिकतम 6।"
+        },
+        {
+          "en": "Range=6−2=4.",
+          "hi": "परिसर=6−2=4।"
+        },
+        {
+          "en": "Mean=(2+4+6)/3=4.",
+          "hi": "माध्य=(2+4+6)/3=4।"
+        }
+      ],
+      "answer": {
+        "en": "Range=4; mean=4.",
+        "hi": "परिसर=4; माध्य=4।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find mean deviation about mean for 1,3,5.",
+        "hi": "1,3,5 का माध्य के सापेक्ष माध्य विचलन।"
+      },
+      "steps": [
+        {
+          "en": "Mean=3.",
+          "hi": "माध्य=3।"
+        },
+        {
+          "en": "Absolute deviations are 2,0,2.",
+          "hi": "निरपेक्ष विचलन 2,0,2 हैं।"
+        },
+        {
+          "en": "MD=(2+0+2)/3=4/3.",
+          "hi": "MD=(2+0+2)/3=4/3।"
+        }
+      ],
+      "answer": {
+        "en": "4/3",
+        "hi": "4/3"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find variance and SD of 2,4,6.",
+        "hi": "2,4,6 का प्रसरण और SD।"
+      },
+      "steps": [
+        {
+          "en": "Mean=4; deviations are −2,0,2.",
+          "hi": "माध्य 4; विचलन −2,0,2।"
+        },
+        {
+          "en": "Average squared deviation=(4+0+4)/3=8/3.",
+          "hi": "वर्ग विचलन औसत=(4+0+4)/3=8/3।"
+        },
+        {
+          "en": "Take the nonnegative square root.",
+          "hi": "गैरऋणात्मक वर्गमूल लें।"
+        }
+      ],
+      "answer": {
+        "en": "Variance=8/3; SD=√(8/3).",
+        "hi": "प्रसरण=8/3; SD=√(8/3)।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Values 1,3 have frequencies 3,1. Find variance.",
+        "hi": "मान 1,3 की आवृत्तियाँ 3,1 हैं। प्रसरण निकालें।"
+      },
+      "steps": [
+        {
+          "en": "N=4; mean=(3×1+1×3)/4=1.5.",
+          "hi": "N=4; माध्य=(3×1+1×3)/4=1.5।"
+        },
+        {
+          "en": "Mean square=(3×1²+1×3²)/4=3.",
+          "hi": "वर्गों का माध्य=(3×1²+1×3²)/4=3।"
+        },
+        {
+          "en": "Variance=3−1.5²=0.75.",
+          "hi": "प्रसरण=3−1.5²=0.75।"
+        }
+      ],
+      "answer": {
+        "en": "0.75",
+        "hi": "0.75"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A dataset has mean 10 and SD 2. For Y=−3X+5 find mean, variance and SD.",
+        "hi": "आँकड़ों का माध्य 10 और SD 2 है। Y=−3X+5 का माध्य, प्रसरण और SD।"
+      },
+      "steps": [
+        {
+          "en": "Mean(Y)=−3×10+5=−25.",
+          "hi": "माध्य(Y)=−3×10+5=−25।"
+        },
+        {
+          "en": "Variance(X)=2²=4.",
+          "hi": "प्रसरण(X)=2²=4।"
+        },
+        {
+          "en": "Variance(Y)=(−3)²×4=36.",
+          "hi": "प्रसरण(Y)=(−3)²×4=36।"
+        },
+        {
+          "en": "SD(Y)=|−3|×2=6.",
+          "hi": "SD(Y)=|−3|×2=6।"
+        }
+      ],
+      "answer": {
+        "en": "Mean=−25; variance=36; SD=6.",
+        "hi": "माध्य=−25; प्रसरण=36; SD=6।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Range of 9,2,7,4 is",
+        "hi": "9,2,7,4 का परिसर"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "9−2=7.",
+            "hi": "9−2=7।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "First minus last is invalid for unsorted data.",
+            "hi": "अक्रमित सूची में पहले से अंतिम घटाना गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "22",
+            "hi": "22"
+          },
+          "reason": {
+            "en": "This is the sum.",
+            "hi": "यह योग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9",
+            "hi": "9"
+          },
+          "reason": {
+            "en": "This is only the maximum.",
+            "hi": "यह केवल अधिकतम है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Signed deviations from the mean sum to",
+        "hi": "माध्य से चिह्नित विचलनों का योग"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Σ(x_i−x̄)=Σx_i−nx̄=0.",
+            "hi": "Σ(x_i−x̄)=Σx_i−nx̄=0।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "There is no such constant rule.",
+            "hi": "ऐसा स्थिर नियम नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The variance",
+            "hi": "प्रसरण"
+          },
+          "reason": {
+            "en": "Variance uses squared deviations.",
+            "hi": "प्रसरण वर्ग विचलन लेता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The SD",
+            "hi": "SD"
+          },
+          "reason": {
+            "en": "SD is a nonnegative square root of variance.",
+            "hi": "SD प्रसरण का गैरऋणात्मक वर्गमूल है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Mean deviation uses",
+        "hi": "माध्य विचलन में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Absolute deviations",
+            "hi": "निरपेक्ष विचलन"
+          },
+          "reason": {
+            "en": "Absolute values prevent sign cancellation.",
+            "hi": "निरपेक्ष मान चिह्न कटने से रोकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Signed deviations only",
+            "hi": "केवल चिह्नित विचलन"
+          },
+          "reason": {
+            "en": "These may cancel to zero.",
+            "hi": "ये कटकर 0 हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Squared deviations",
+            "hi": "वर्ग विचलन"
+          },
+          "reason": {
+            "en": "Those define variance.",
+            "hi": "वे प्रसरण परिभाषित करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only maximum and minimum",
+            "hi": "केवल अधिकतम और न्यूनतम"
+          },
+          "reason": {
+            "en": "Those define range.",
+            "hi": "वे परिसर देते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Variance of a constant dataset is",
+        "hi": "स्थिर आँकड़ा समूह का प्रसरण"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Every deviation from the mean is zero.",
+            "hi": "माध्य से हर विचलन 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "There is no spread of 1.",
+            "hi": "फैलाव 1 नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The constant",
+            "hi": "वही स्थिरांक"
+          },
+          "reason": {
+            "en": "The level differs from the spread.",
+            "hi": "स्तर और फैलाव अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative",
+            "hi": "ऋणात्मक"
+          },
+          "reason": {
+            "en": "Variance cannot be negative.",
+            "hi": "प्रसरण ऋणात्मक नहीं हो सकता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If data are in cm, variance is in",
+        "hi": "आँकड़े cm में हों तो प्रसरण की इकाई"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "cm²",
+            "hi": "cm²"
+          },
+          "reason": {
+            "en": "Squared deviations have squared units.",
+            "hi": "वर्ग विचलनों की इकाई वर्ग होती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cm",
+            "hi": "cm"
+          },
+          "reason": {
+            "en": "That is the SD unit.",
+            "hi": "वह SD की इकाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No units",
+            "hi": "कोई इकाई नहीं"
+          },
+          "reason": {
+            "en": "Variance is not dimensionless.",
+            "hi": "प्रसरण विमाहीन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cm³",
+            "hi": "cm³"
+          },
+          "reason": {
+            "en": "There are squares, not cubes.",
+            "hi": "वर्ग हैं, घन नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Adding 7 to every observation makes SD",
+        "hi": "हर अवलोकन में 7 जोड़ने पर SD"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Distances from the shifted mean stay the same.",
+            "hi": "खिसके माध्य से दूरियाँ समान रहती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Increase by 7",
+            "hi": "7 बढ़ता है"
+          },
+          "reason": {
+            "en": "The mean increases by 7, not SD.",
+            "hi": "माध्य 7 बढ़ता है, SD नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Multiply by 7",
+            "hi": "7 गुना"
+          },
+          "reason": {
+            "en": "This would correspond to scaling, not addition.",
+            "hi": "यह गुणा का प्रभाव होगा, जोड़ का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Become zero",
+            "hi": "0 हो जाता है"
+          },
+          "reason": {
+            "en": "The data do not become constant.",
+            "hi": "आँकड़े स्थिर नहीं बनते।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Multiplying every observation by −2 makes variance",
+        "hi": "हर अवलोकन −2 से गुणा करने पर प्रसरण"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4 times",
+            "hi": "4 गुना"
+          },
+          "reason": {
+            "en": "Variance scales by (−2)².",
+            "hi": "प्रसरण (−2)² से बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2 times",
+            "hi": "−2 गुना"
+          },
+          "reason": {
+            "en": "Variance cannot scale negatively.",
+            "hi": "प्रसरण ऋण गुणक से नहीं बदलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 times",
+            "hi": "2 गुना"
+          },
+          "reason": {
+            "en": "That is the SD multiplier.",
+            "hi": "वह SD का गुणक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Scaling changes nonzero spread.",
+            "hi": "पैमाना बदलने से अशून्य फैलाव बदलता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For 1,3 the descriptive variance is",
+        "hi": "1,3 का वर्णनात्मक प्रसरण"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Mean=2; average squares of −1,1 is 1.",
+            "hi": "माध्य 2; −1,1 के वर्गों का औसत 1।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "This divides by n−1 instead of n.",
+            "hi": "इसमें n की जगह n−1 से भाग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Signed deviations cancel but squares do not.",
+            "hi": "चिह्नित विचलन कटते हैं, वर्ग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "This is the squared range.",
+            "hi": "यह परिसर का वर्ग है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A grouped variance using class marks is usually",
+        "hi": "वर्ग चिह्नों से प्रसरण सामान्यतः"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "An estimate",
+            "hi": "एक अनुमान"
+          },
+          "reason": {
+            "en": "The original within-class values are unknown.",
+            "hi": "वर्ग के भीतर मूल मान अज्ञात हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always exact",
+            "hi": "हमेशा सटीक"
+          },
+          "reason": {
+            "en": "Different raw datasets can share the same grouped table.",
+            "hi": "अलग मूल आँकड़े समान वर्ग सारणी दे सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "हमेशा 0"
+          },
+          "reason": {
+            "en": "Groups may have spread.",
+            "hi": "वर्गों में फैलाव हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative",
+            "hi": "ऋणात्मक"
+          },
+          "reason": {
+            "en": "Squared deviations remain nonnegative.",
+            "hi": "वर्ग विचलन गैरऋणात्मक हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Mean deviation is minimised about",
+        "hi": "माध्य विचलन किसके सापेक्ष न्यूनतम है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A median",
+            "hi": "माध्यिका"
+          },
+          "reason": {
+            "en": "A median minimises total absolute deviation.",
+            "hi": "माध्यिका कुल निरपेक्ष विचलन न्यूनतम करती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The maximum",
+            "hi": "अधिकतम"
+          },
+          "reason": {
+            "en": "An extreme value does not generally minimise it.",
+            "hi": "चरम मान सामान्यतः न्यूनतम नहीं देता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero always",
+            "hi": "हमेशा 0"
+          },
+          "reason": {
+            "en": "The best centre depends on the data.",
+            "hi": "उपयुक्त केंद्र आँकड़ों पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The mean always",
+            "hi": "हमेशा माध्य"
+          },
+          "reason": {
+            "en": "The mean minimises squared, not absolute, deviations in general.",
+            "hi": "माध्य सामान्यतः वर्ग विचलन न्यूनतम करता है, निरपेक्ष नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why is variance nonnegative?",
+        "hi": "प्रसरण गैरऋणात्मक क्यों है?"
+      },
+      "answer": {
+        "en": "It is an average of squared real deviations with nonnegative frequencies.",
+        "hi": "यह वास्तविक वर्ग विचलनों का गैरऋणात्मक आवृत्तियों सहित औसत है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find mean deviation about median for 2,3,7.",
+        "hi": "2,3,7 का माध्यिका के सापेक्ष माध्य विचलन।"
+      },
+      "answer": {
+        "en": "Median=3; MD=(1+0+4)/3=5/3.",
+        "hi": "माध्यिका 3; MD=(1+0+4)/3=5/3।"
+      }
+    },
+    {
+      "question": {
+        "en": "Write the computational variance identity.",
+        "hi": "प्रसरण का संक्षिप्त सूत्र लिखें।"
+      },
+      "answer": {
+        "en": "σ²=Σf_ix_i²/N−(Σf_ix_i/N)², N=Σf_i.",
+        "hi": "σ²=Σf_ix_i²/N−(Σf_ix_i/N)², N=Σf_i।"
+      }
+    },
+    {
+      "question": {
+        "en": "If SD is 3, what is variance?",
+        "hi": "SD 3 हो तो प्रसरण?"
+      },
+      "answer": {
+        "en": "3²=9 in squared units.",
+        "hi": "3²=9, वर्ग इकाई में।"
+      }
+    },
+    {
+      "question": {
+        "en": "If every value is doubled and then 5 added, how does SD change?",
+        "hi": "हर मान दोगुना करके 5 जोड़ें तो SD?"
+      },
+      "answer": {
+        "en": "SD doubles; the added constant has no effect.",
+        "hi": "SD दोगुना होगा; जोड़े स्थिरांक का प्रभाव नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can equal means hide different spreads?",
+        "hi": "समान माध्य अलग फैलाव क्यों छिपा सकते हैं?"
+      },
+      "answer": {
+        "en": "The mean describes centre, not individual distances. For example 4,5,6 and 0,5,10 have the same mean 5 but different variances.",
+        "hi": "माध्य केंद्र बताता है, हर दूरी नहीं। 4,5,6 तथा 0,5,10 का माध्य 5 समान है लेकिन प्रसरण अलग हैं।"
+      }
+    }
+  ],
+  "revision": [
+    {
+      "en": "Range uses only the extremes.",
+      "hi": "परिसर केवल चरम मान लेता है।"
+    },
+    {
+      "en": "Mean deviation averages absolute distances.",
+      "hi": "माध्य विचलन निरपेक्ष दूरियों का औसत है।"
+    },
+    {
+      "en": "Variance averages squared distances from the mean.",
+      "hi": "प्रसरण माध्य से वर्ग दूरियों का औसत है।"
+    },
+    {
+      "en": "SD is the nonnegative square root of variance.",
+      "hi": "SD प्रसरण का गैरऋणात्मक वर्गमूल है।"
+    },
+    {
+      "en": "Shifts preserve spread; scaling changes it.",
+      "hi": "खिसकाने से फैलाव समान; पैमाना बदलने से बदलता है।"
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not confuse signed, absolute and squared deviations; divide descriptive variance by N; use total frequency, and distinguish variance units from SD units.",
+    "hi": "चिह्नित, निरपेक्ष तथा वर्ग विचलन न मिलाएँ। वर्णनात्मक प्रसरण में N से भाग दें; कुल आवृत्ति लें; प्रसरण और SD की इकाइयाँ अलग रखें।"
+  },
+  "conceptMap": {
+    "en": "Data → centre and range → absolute deviations → squared deviations → variance → SD → responsible comparison.",
+    "hi": "आँकड़े → केंद्र और परिसर → निरपेक्ष विचलन → वर्ग विचलन → प्रसरण → SD → सावधान तुलना।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics, Class XI",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh113.pdf"
+    }
+  ]
+}

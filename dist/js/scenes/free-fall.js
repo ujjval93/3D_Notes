@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p})=>{let gval=p[0],duration=Math.sqrt(4/gval),tau=Math.min(t%(duration+.5),duration),s=.5*gval*tau*tau,y=-.9+s*.9;g.sphere(-.55,y,0,.09,C.gold,b('1 kg','1 kg'));g.sphere(.55,y,0,.16,C.green,b('5 kg','5 kg'));g.line([-1.1,1.1,0],[1.1,1.1,0]);return[read('Time','समय',fmt(tau),'s'),read('Distance fallen','गिरने की दूरी',fmt(s),'m'),read('Same acceleration','समान त्वरण',fmt(gval),'m/s²')];};

@@ -1,0 +1,892 @@
+{
+  "title": {
+    "en": "Linear Programming",
+    "hi": "रैखिक प्रोग्रामन"
+  },
+  "goal": {
+    "en": "Turn resource conditions into linear constraints and use the feasible region to optimize an objective.",
+    "hi": "संसाधन शर्तों को रैखिक व्यवरोधों में बदलें और सुसंगत क्षेत्र से उद्देश्य का इष्टतम मान निकालें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Decisions, constraints and objectives",
+        "hi": "निर्णय, व्यवरोध और उद्देश्य"
+      },
+      "body": {
+        "en": "Linear programming optimizes a linear objective subject to linear constraints. Decision variables represent quantities under our control. Constraints model resource limits or requirements, and the objective measures what is to be maximized or minimized. For two products, let x and y be their daily quantities. A profit of 30 per x and 20 per y gives Z=30x+20y. A machine allowing at most 40 hours with requirements 2 and 1 gives 2x+y≤40. Identify every coefficient with its practical unit. Nonnegativity x≥0,y≥0 is usually required. The continuous model may allow fractional values; a real situation demanding whole items needs that practical restriction to be stated rather than silently rounding an optimum.",
+        "hi": "रैखिक प्रोग्रामन (Linear programming) में सीमित संसाधनों के बीच किसी रैखिक उद्देश्य का अधिकतम या न्यूनतम मान खोजते हैं। निर्णय चर (Decision variables) वे राशियाँ हैं जिन्हें चुनना है। व्यवरोध (Constraints) संसाधन सीमा या अनिवार्य आवश्यकता बताते हैं। उद्देश्य फलन (Objective function) लाभ, लागत या दूसरी मापनीय राशि हो सकता है। यदि प्रतिदिन 2 प्रकार की वस्तुओं की संख्याएँ x और y हैं तथा प्रति वस्तु लाभ ₹30 और ₹20 है, तो Z=30x+20y होगा। यदि मशीन समय क्रमशः 2 घंटे और 1 घंटा है तथा कुल समय अधिकतम 40 घंटे है, तो 2x+y≤40 लिखेंगे। गुणांक का अर्थ और इकाई हर बार पहचानें। सामान्यतः उत्पादन ऋणात्मक नहीं हो सकता, इसलिए x≥0,y≥0 जोड़ना आवश्यक है। रैखिक मॉडल लगातार वास्तविक मान मानता है; वस्तुएँ पूर्ण संख्या में चाहिए हों तो उस व्यावहारिक शर्त को अलग समझें। बिना जाँच किसी भिन्न इष्टतम उत्तर को गोल करने से व्यवरोध टूट सकता है। पहले परिस्थिति को समीकरण में बदलना और फिर हल करना इस विधि के 2 अलग चरण हैं। सुंदर ग्राफ गलत मॉडल को सही नहीं कर सकता।"
+      },
+      "formula": "Optimize Z=ax+by subject to linear inequalities, usually x≥0,y≥0",
+      "question": {
+        "en": "If each chair uses 3 hours and each table 5 hours, with at most 60 hours, write a constraint.",
+        "hi": "प्रति कुर्सी 3, मेज 5 घंटे और अधिकतम 60 घंटे हों तो व्यवरोध लिखें।"
+      },
+      "answer": {
+        "en": "3x+5y≤60, where x and y count chairs and tables.",
+        "hi": "3x+5y≤60, जहाँ x कुर्सियाँ और y मेजें हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Translating the language of limits",
+        "hi": "सीमा की भाषा से असमिकाएँ"
+      },
+      "body": {
+        "en": "At most means ≤; at least means ≥; exactly means equality. A lower bound on nutrition is different from an upper bound on a resource. If mixture amounts x and y contain 2 and 3 units of a nutrient and at least 12 are required, write 2x+3y≥12. If total mixture may not exceed 10 units, add x+y≤10. Keep a table of per-unit contributions before building the model. Each row produces one constraint and each column corresponds to one variable. Verify the inequality using a simple trial allocation. Multiplying an inequality by a negative number reverses its sign. Costs belong to the objective only when the question asks to minimize total cost, not automatically to every constraint.",
+        "hi": "शब्दों का सही अनुवाद मॉडल का आधार है। अधिकतम इतना या अधिक से अधिक (At most) के लिए ≤, कम से कम (At least) के लिए ≥ और ठीक इतना (Exactly) के लिए = लिखते हैं। पोषण की न्यूनतम जरूरत तथा कच्चे माल की अधिकतम उपलब्धता विपरीत प्रकार की सीमाएँ हैं। यदि मिश्रण के x और y भाग प्रति इकाई 2 और 3 पोषक इकाई देते हैं तथा कम से कम 12 चाहिए, तो 2x+3y≥12 होगा। कुल मिश्रण 10 से अधिक न हो, तो x+y≤10 अलग शर्त है। पहले प्रति इकाई योगदान की तालिका बनाएँ। हर पंक्ति 1 संसाधन या आवश्यकता और हर स्तंभ 1 चर का योगदान दिखाए। इससे कोई सीमा छूटती नहीं। आसान परीक्षण के लिए कोई छोटा बिंदु रखें और परिस्थिति की भाषा से परिणाम मिलाएँ। ऋणात्मक संख्या से असमिका गुणा या भाग करने पर दिशा पलटती है। लागत को हर बार व्यवरोध न बनाएँ; प्रश्न यदि लागत न्यूनतम करने को कहता है, तो वह उद्देश्य में आएगी। सभी शर्तों को साथ पूरा करना है, इसलिए अलग-अलग सही दिखने वाले उत्तर पर्याप्त नहीं हैं। अंतिम मॉडल में चर की परिभाषा और इकाइयाँ जरूर लिखें।"
+      },
+      "formula": "At most → ≤; at least → ≥; exactly → =",
+      "question": {
+        "en": "At least 8 units of a mixture are needed. Write the total-quantity constraint.",
+        "hi": "मिश्रण कम से कम 8 इकाई चाहिए। कुल मात्रा की शर्त?"
+      },
+      "answer": {
+        "en": "x+y≥8.",
+        "hi": "x+y≥8।"
+      }
+    },
+    {
+      "title": {
+        "en": "Half-planes and boundary lines",
+        "hi": "अर्धसमतल और सीमा रेखाएँ"
+      },
+      "body": {
+        "en": "A linear inequality in two variables selects one side of a straight boundary line. Plot the equality first using intercepts or two convenient points. Test a point not on the line, often the origin, to choose the correct side. If the test point satisfies the inequality, shade its side; otherwise shade the other side. For ≤ or ≥ the boundary is included. When the origin lies on the boundary, choose another test point. Vertical and horizontal boundaries should be drawn directly. The condition x≥0,y≥0 restricts the graph to the first quadrant and axes. A single shaded half-plane is not yet the solution of all constraints. Use a consistent scale and label boundaries so intersections can be checked algebraically.",
+        "hi": "2 चरों की रैखिक असमिका समतल का 1 अर्धसमतल (Half-plane) चुनती है। पहले असमिका में बराबर चिह्न रखकर सीमा रेखा (Boundary line) बनाएँ। रेखा खींचने के लिए अक्षों पर अंतःखंड या कोई 2 सुविधाजनक बिंदु लें। फिर रेखा पर न पड़ने वाला परीक्षण बिंदु रखें; सामान्यतः मूलबिंदु (0,0) सरल है। यदि वह असमिका संतुष्ट करे, तो उसकी ओर का भाग लें, अन्यथा विपरीत भाग। यदि सीमा मूलबिंदु से गुजरती है, तो (1,0) जैसा दूसरा उपयुक्त बिंदु चुनें। ≤ और ≥ में सीमा रेखा भी शामिल है। x≥0 तथा y≥0 प्रथम चतुर्थांश और अक्षों को रखते हैं। उदाहरण x+y≤6 में (0,0) रखने पर 0≤6 सत्य है, इसलिए मूलबिंदु वाली ओर का क्षेत्र लिया जाएगा। x=2 जैसी ऊर्ध्वाधर और y=3 जैसी क्षैतिज सीमाएँ सीधे बनाएँ; अंतःखंड विधि जबरन न लगाएँ। ग्राफ में पैमाना, अक्ष और रेखाओं के नाम स्पष्ट रखें। 1 व्यवरोध का छायांकित क्षेत्र पूरे प्रश्न का हल नहीं है। आगे सभी चुने क्षेत्रों का साझा भाग लेना होगा। सीमा पर बैठा बिंदु जाँचने के लिए असमिका में उसका वास्तविक प्रतिस्थापन करें।"
+      },
+      "formula": "ax+by≤c: plot ax+by=c, then test a point off the line",
+      "question": {
+        "en": "Which side of x+y=6 represents x+y≤6?",
+        "hi": "x+y≤6 के लिए x+y=6 का कौन सा पक्ष?"
+      },
+      "answer": {
+        "en": "The side containing (0,0), including the boundary.",
+        "hi": "(0,0) वाला पक्ष, सीमा सहित।"
+      }
+    },
+    {
+      "title": {
+        "en": "Feasible region and feasibility",
+        "hi": "सुसंगत क्षेत्र और सुसंगत हल"
+      },
+      "body": {
+        "en": "The feasible region is the intersection of every constraint half-plane. Each point in it is a feasible solution; a point violating even one condition is infeasible. There may be no common point, in which case the problem has no feasible solution. With non-strict linear inequalities, the usual region includes its edges and vertices. A region can be bounded or unbounded. The intersection is convex: the segment between two feasible points is also feasible because every linear inequality remains valid along it. Find vertices by intersecting boundary pairs and retain only those satisfying all constraints. Axis intersections are candidates when nonnegativity is present. Do not accept a plotted intersection just because two lines meet there.",
+        "hi": "सुसंगत क्षेत्र (Feasible region) सभी व्यवरोधों के अर्धसमतलों का साझा भाग है। इसके भीतर या शामिल सीमा पर हर बिंदु सुसंगत हल (Feasible solution) है। 1 भी शर्त टूटे तो बिंदु असुसंगत है। उदाहरण x+y≤4, x≥0,y≥0 से त्रिभुजीय क्षेत्र मिलता है। यदि साथ x+y≥6 जोड़ दें, तो कोई बिंदु सभी शर्तें नहीं मानता; समस्या का सुसंगत हल नहीं है। क्षेत्र परिबद्ध (Bounded) हो सकता है या किसी दिशा में अनंत तक खुला अपरिबद्ध (Unbounded) हो सकता है। साधारण गैरकठोर रैखिक असमिकाओं में किनारे और कोने शामिल होते हैं। सुसंगत क्षेत्र उत्तल (Convex) होता है: 2 सुसंगत बिंदुओं को जोड़ने वाला पूरा रेखाखंड भी सुसंगत रहता है। कारण यह है कि हर रैखिक असमिका बीच के बिंदुओं पर भी बनी रहती है। कोने खोजने के लिए सीमा रेखाओं के युग्म हल करें और हर मिले बिंदु को सभी व्यवरोधों में जाँचें। अक्षों से मिले बिंदु भी प्रत्याशी हैं। केवल 2 रेखाओं का प्रतिच्छेद होना पर्याप्त नहीं; वह तीसरी शर्त के बाहर हो सकता है। साफ जाँच तालिका ग्राफ की गलत छायांकन से बचाती है।"
+      },
+      "formula": "Feasible region = intersection of all constraint half-planes",
+      "question": {
+        "en": "Can a point violating one constraint be feasible?",
+        "hi": "क्या 1 शर्त तोड़ने वाला बिंदु सुसंगत है?"
+      },
+      "answer": {
+        "en": "No; every constraint must hold simultaneously.",
+        "hi": "नहीं; सभी शर्तें एक साथ सत्य होनी चाहिए।"
+      }
+    },
+    {
+      "title": {
+        "en": "The corner-point method",
+        "hi": "कोना बिंदु विधि"
+      },
+      "body": {
+        "en": "For a nonempty bounded polygonal feasible region, a linear objective attains its maximum and minimum at vertices. List feasible vertices, calculate Z at each and compare. The theorem does not say that every optimum is a unique vertex. An entire edge may share one optimal value. Evaluate exact rational coordinates when possible rather than reading approximate graph values. If the objective coefficients carry currency per item, the final objective value is in currency. Keep the decision-variable answer as well as the objective value: a production plan asks how much to produce, not only its profit. The method assumes a correctly formed feasible region and a linear objective.",
+        "hi": "कोना बिंदु विधि (Corner-point method) में पहले सुसंगत क्षेत्र के सभी कोने सूचीबद्ध करते हैं। गैररिक्त परिबद्ध बहुभुजीय क्षेत्र पर रैखिक उद्देश्य का अधिकतम और न्यूनतम मान किसी कोने पर मिलता है। हर कोने के लिए Z=ax+by निकालें और मानों की तुलना करें। उदाहरण कोने (0,0),(4,0),(0,3) तथा Z=3x+2y हों तो मान 0,12,6 हैं। अधिकतम 12, बिंदु (4,0) पर है। ग्राफ से लगभग निर्देशांक पढ़ने की जगह सीमा समीकरण हल करके सटीक भिन्न लें। ₹ प्रति वस्तु के गुणांक हों तो Z रुपये में आएगा, जबकि x,y वस्तुओं की मात्राएँ हैं। अंतिम उत्तर में इष्टतम योजना और उसका उद्देश्य मान दोनों लिखें। केवल लाभ लिखने से उत्पादन की माँगी योजना अधूरी रह सकती है। प्रमेय यह नहीं कहता कि उत्तर हमेशा अद्वितीय कोना ही है; पूरे किनारे पर भी समान इष्टतम मान हो सकता है। विधि की शर्तें स्पष्ट रखें: सही सुसंगत क्षेत्र और रैखिक उद्देश्य। गलत क्षेत्र के कोनों पर बिल्कुल सही अंकगणित करने से भी प्रश्न का सही उत्तर नहीं मिलेगा। तुलना तालिका में न्यूनतम और अधिकतम को स्पष्ट अलग चिह्नित करें।"
+      },
+      "formula": "For a bounded feasible polygon: evaluate Z=ax+by at every feasible vertex",
+      "question": {
+        "en": "At (0,0),(4,0),(0,3), maximize Z=3x+2y.",
+        "hi": "(0,0),(4,0),(0,3) पर Z=3x+2y अधिकतम करें।"
+      },
+      "answer": {
+        "en": "Maximum 12 at (4,0).",
+        "hi": "अधिकतम 12, (4,0) पर।"
+      }
+    },
+    {
+      "title": {
+        "en": "Multiple optima and parallel objective lines",
+        "hi": "अनेक इष्टतम हल और समांतर उद्देश्य रेखाएँ"
+      },
+      "body": {
+        "en": "A family Z=ax+by=k consists of parallel objective lines. Sliding the line in the direction of increasing k visualizes maximization. If the final touching line contains a feasible edge, every point on that edge is optimal. Equal values at two adjacent feasible vertices imply the same value along their connecting segment by linearity. For x≥0,y≥0,x+y≤6 and Z=2x+2y, every point of x+y=6 in the first quadrant gives Z=12. Interior points below the edge have lower values. Do not report only one endpoint if all optimal solutions are requested. A graphical animation illustrates the movement but the constraints and vertex calculations justify the answer.",
+        "hi": "Z=ax+by=k में k बदलने पर उद्देश्य की समांतर रेखाएँ मिलती हैं। अधिकतम खोजते समय इन्हें बढ़ते k की ओर खिसकाकर सुसंगत क्षेत्र के अंतिम स्पर्श तक सोच सकते हैं। यदि अंतिम रेखा केवल 1 कोने पर मिले तो सामान्यतः वही इष्टतम बिंदु है। यदि वह पूरे सुसंगत किनारे पर बैठे, तो उस किनारे का हर बिंदु इष्टतम है। कारण रैखिकता है: 2 आसन्न कोनों पर समान मान हो तो उनके बीच हर उत्तल संयोजन पर भी वही मान होगा। उदाहरण x≥0,y≥0,x+y≤6 और Z=2x+2y में (6,0) तथा (0,6) दोनों पर 12 मिलता है। इनके बीच x+y=6 का पूरा रेखाखंड भी Z=12 देता है। किनारे से नीचे के बिंदुओं पर मान कम है। सभी इष्टतम हल पूछे हों तो केवल 1 सिरा लिखना अधूरा है। उन्हें {(x,y):x≥0,y≥0,x+y=6} लिख सकते हैं। चलती रेखा का दृश्य संबंध समझाता है, पर अंतिम औचित्य सीमाओं और मानों से दें। किसी उद्देश्य रेखा का क्षेत्र के भीतर होना तथा सबसे बड़ा स्वीकार्य k होना अलग बातें हैं; अंतिम सीमा तक तुलना आवश्यक है।"
+      },
+      "formula": "If Z(P)=Z(Q), then Z(tP+(1−t)Q)=Z(P), 0≤t≤1",
+      "question": {
+        "en": "For x,y≥0,x+y≤6, maximize Z=2x+2y.",
+        "hi": "x,y≥0,x+y≤6 में Z=2x+2y अधिकतम करें।"
+      },
+      "answer": {
+        "en": "Zmax=12 on the entire segment x+y=6, x,y≥0.",
+        "hi": "Zmax=12 पूरे रेखाखंड x+y=6, x,y≥0 पर।"
+      }
+    },
+    {
+      "title": {
+        "en": "Unbounded regions require an extra test",
+        "hi": "अपरिबद्ध क्षेत्र में अतिरिक्त जाँच"
+      },
+      "body": {
+        "en": "An unbounded feasible region does not automatically imply an unbounded optimum. For x,y≥0,x+y≥4, minimizing x+y gives 4 on a boundary segment, while maximizing x+y has no finite maximum. If a candidate maximum M is obtained from vertices of an unbounded region, test whether a feasible point can satisfy ax+by>M. If yes, M is not the maximum. For a minimum m, test ax+by<m instead. A feasible ray along which the objective increases without limit proves an unbounded maximum. State no finite maximum rather than pretending infinity is a point or a feasible value. Infeasibility and an unbounded objective are different outcomes.",
+        "hi": "अपरिबद्ध सुसंगत क्षेत्र से हमेशा उद्देश्य का अनंत मान नहीं निकलता। उदाहरण x≥0,y≥0,x+y≥4 में क्षेत्र बाहर की ओर खुला है। फिर भी x+y का न्यूनतम 4 है, जो सीमा रेखाखंड पर मिलता है। इसी क्षेत्र में x+y का अधिकतम कोई सीमित संख्या नहीं, क्योंकि (t,0) में t बढ़ाते रह सकते हैं। इसलिए अपरिबद्ध क्षेत्र के कोनों की तालिका अकेली पर्याप्त नहीं है। कोनों से अधिकतम का प्रत्याशी M मिले तो जाँचें कि कोई सुसंगत बिंदु ax+by>M भी कर सकता है या नहीं। यदि हाँ, तो M अधिकतम नहीं। न्यूनतम के प्रत्याशी m के लिए ax+by<m की जाँच करें। किसी सुसंगत किरण पर उद्देश्य बिना सीमा बढ़ता जाए, तो सीमित अधिकतम नहीं है। अनंत को कोई बिंदु या वास्तविक प्राप्त मान न लिखें। असुसंगत क्षेत्र में कोई स्वीकार्य योजना ही नहीं होती; अपरिबद्ध उद्देश्य में योजनाएँ होती हैं पर उद्देश्य का सीमित श्रेष्ठ मान नहीं होता। ये परिणाम अलग हैं। ग्राफ के दिखाई हिस्से से बाहर भी क्षेत्र जारी रह सकता है, इसलिए स्क्रीन का किनारा गणितीय सीमा नहीं माना जाता। निष्कर्ष में न्यूनतम या अधिकतम किसके बारे में बात है, स्पष्ट लिखें।"
+      },
+      "formula": "Unbounded region ≠ automatically unbounded optimum; test Z>M or Z<m",
+      "question": {
+        "en": "On x,y≥0,x+y≥4, does min(x+y) exist?",
+        "hi": "x,y≥0,x+y≥4 पर min(x+y) है?"
+      },
+      "answer": {
+        "en": "Yes, it is 4; there is no finite maximum.",
+        "hi": "हाँ, 4 है; सीमित अधिकतम नहीं है।"
+      }
+    },
+    {
+      "title": {
+        "en": "A complete modelling and checking workflow",
+        "hi": "पूरा मॉडल और सत्यापन क्रम"
+      },
+      "body": {
+        "en": "Read the problem, define variables with units, build a resource table, write every constraint and objective, graph the intersection, identify feasible corners, evaluate the objective and verify the requested optimum. Check a proposed plan in the original resource language as well as the algebra. If an answer uses all available time, that resource is binding; other constraints may still have slack. The unused amount is the limit minus actual usage for an upper-bound resource. Fractions may be mathematically correct in a continuous mixture model but need practical interpretation for indivisible goods. State whether an optimum is unique, shared along an edge, absent due to infeasibility or unbounded in the requested direction.",
+        "hi": "संपूर्ण हल का क्रम तय रखने से रैखिक प्रोग्रामन आसान होता है। पहले निर्णय चर उनकी इकाइयों सहित परिभाषित करें। फिर संसाधनों की तालिका बनाकर हर सीमा और उद्देश्य लिखें। असमिकाओं का साझा क्षेत्र खींचें, सीमा रेखाओं के प्रतिच्छेद से कोने निकालें और सभी शर्तों में उनकी जाँच करें। प्रत्येक सुसंगत कोने पर उद्देश्य मान की तालिका बनाएँ। क्षेत्र अपरिबद्ध हो तो अतिरिक्त बेहतर मान वाला अर्धसमतल जाँचना न भूलें। चुनी योजना को मूल प्रश्न की भाषा में भी जाँचें: कितने घंटे लगे, कितना माल लगा और कितना लाभ या खर्च हुआ। जिस संसाधन की पूरी सीमा उपयोग हुई वह सक्रिय व्यवरोध (Binding constraint) है। ऊपरी सीमा वाले संसाधन का बचा भाग उपलब्धता में से वास्तविक उपयोग घटाकर मिलता है। हर सीमा का पूरा उपयोग होना जरूरी नहीं। मिश्रण जैसे लगातार माप में भिन्न उत्तर ठीक हो सकते हैं; अविभाज्य वस्तुओं के लिए पूर्ण संख्या की व्यावहारिक शर्त देखें। अंत में बताएं कि हल अद्वितीय है, पूरे किनारे पर साझा है, क्षेत्र खाली है या माँगी दिशा में उद्देश्य अपरिबद्ध है। उत्तर केवल ग्राफ नहीं बल्कि अर्थ सहित निर्णय होना चाहिए। जाँच तालिका में शर्तों का सही चिह्न भी अंतिम बार पढ़ें।"
+      },
+      "formula": "Model → graph → feasible vertices → objective values → unboundedness check → interpretation",
+      "question": {
+        "en": "For 2x+y≤20 at (4,5), how much resource remains?",
+        "hi": "2x+y≤20 में (4,5) पर कितना संसाधन बचा?"
+      },
+      "answer": {
+        "en": "20−(2×4+5)=7 units.",
+        "hi": "20−(2×4+5)=7 इकाई।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Make a model: x notebooks yield ₹8 each, y pens ₹5 each. At most 20 items may be sold, and at most 12 notebooks.",
+        "hi": "मॉडल बनाएँ: x कॉपियों पर ₹8, y पेन पर ₹5 लाभ। अधिकतम 20 वस्तुएँ और 12 कॉपियाँ बिक सकती हैं।"
+      },
+      "steps": [
+        {
+          "en": "Given unit profits and upper limits. Find a profit-maximizing model.",
+          "hi": "प्रति इकाई लाभ और ऊपरी सीमाएँ दी हैं; अधिकतम लाभ का मॉडल चाहिए।"
+        },
+        {
+          "en": "Set x,y≥0. Total items give x+y≤20; notebook limit gives x≤12.",
+          "hi": "x,y≥0 रखें। कुल वस्तुओं से x+y≤20; कॉपी सीमा x≤12 है।"
+        },
+        {
+          "en": "Profit is additive: Z=8x+5y, to maximize.",
+          "hi": "लाभ जुड़ता है: Z=8x+5y अधिकतम करना है।"
+        }
+      ],
+      "answer": {
+        "en": "Maximize Z=8x+5y with x+y≤20,x≤12,x≥0,y≥0.",
+        "hi": "x+y≤20,x≤12,x≥0,y≥0 पर Z=8x+5y अधिकतम करें।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the feasible vertices for x,y≥0,x+y≤6,x≤4.",
+        "hi": "x,y≥0,x+y≤6,x≤4 के सुसंगत कोने निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Draw x=0,y=0,x+y=6 and x=4.",
+          "hi": "x=0,y=0,x+y=6,x=4 खींचें।"
+        },
+        {
+          "en": "The first-quadrant region lies below x+y=6 and left of x=4.",
+          "hi": "प्रथम चतुर्थांश में x+y=6 के नीचे तथा x=4 के बाएँ क्षेत्र है।"
+        },
+        {
+          "en": "Boundary pairs yield (0,0),(4,0),(4,2),(0,6). Each satisfies every constraint.",
+          "hi": "सीमा युग्मों से (0,0),(4,0),(4,2),(0,6) मिलते हैं; सभी हर शर्त मानते हैं।"
+        }
+      ],
+      "answer": {
+        "en": "Vertices: (0,0),(4,0),(4,2),(0,6).",
+        "hi": "कोने: (0,0),(4,0),(4,2),(0,6)।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Maximize Z=3x+2y with x,y≥0,x+y≤6,x≤4.",
+        "hi": "x,y≥0,x+y≤6,x≤4 पर Z=3x+2y अधिकतम करें।"
+      },
+      "steps": [
+        {
+          "en": "Use feasible vertices (0,0),(4,0),(4,2),(0,6).",
+          "hi": "सुसंगत कोने (0,0),(4,0),(4,2),(0,6) लें।"
+        },
+        {
+          "en": "Z values are 0,12,16,12 respectively.",
+          "hi": "Z मान क्रमशः 0,12,16,12 हैं।"
+        },
+        {
+          "en": "The region is bounded, so the largest vertex value is the maximum.",
+          "hi": "क्षेत्र परिबद्ध है, इसलिए सबसे बड़ा कोना मान अधिकतम है।"
+        }
+      ],
+      "answer": {
+        "en": "Maximum Z=16 at (x,y)=(4,2).",
+        "hi": "अधिकतम Z=16, (x,y)=(4,2) पर।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Minimize Z=2x+3y with x,y≥0,x+y≥4.",
+        "hi": "x,y≥0,x+y≥4 में Z=2x+3y न्यूनतम करें।"
+      },
+      "steps": [
+        {
+          "en": "Boundary vertices are (4,0) and (0,4), giving Z=8 and 12.",
+          "hi": "सीमा कोने (4,0),(0,4) पर Z=8,12 हैं।"
+        },
+        {
+          "en": "The region is unbounded, so check if Z<8 is feasible.",
+          "hi": "क्षेत्र अपरिबद्ध है; Z<8 संभव है या नहीं जाँचें।"
+        },
+        {
+          "en": "Z=2(x+y)+y≥2×4+0=8 everywhere feasible.",
+          "hi": "सुसंगत क्षेत्र में Z=2(x+y)+y≥2×4+0=8।"
+        }
+      ],
+      "answer": {
+        "en": "Minimum 8 at (4,0); no finite maximum.",
+        "hi": "न्यूनतम 8, (4,0) पर; सीमित अधिकतम नहीं।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Maximize Z=2x+y for x,y≥0,x+y≤6,2x+y≤8. State whether the optimum is unique.",
+        "hi": "x,y≥0,x+y≤6,2x+y≤8 पर Z=2x+y अधिकतम करें। क्या हल अद्वितीय है?"
+      },
+      "steps": [
+        {
+          "en": "Feasible vertices are (0,0),(4,0),(2,4),(0,6).",
+          "hi": "सुसंगत कोने (0,0),(4,0),(2,4),(0,6) हैं।"
+        },
+        {
+          "en": "Z values are 0,8,8,6. The maximum is 8.",
+          "hi": "Z मान 0,8,8,6 हैं; अधिकतम 8 है।"
+        },
+        {
+          "en": "The objective is constant on the feasible edge 2x+y=8 between (4,0) and (2,4).",
+          "hi": "(4,0) से (2,4) के सुसंगत किनारे 2x+y=8 पर उद्देश्य स्थिर है।"
+        },
+        {
+          "en": "Every point (x,8−2x), 2≤x≤4 satisfies all constraints and gives 8.",
+          "hi": "हर (x,8−2x), 2≤x≤4 सभी शर्तें मानता और 8 देता है।"
+        }
+      ],
+      "answer": {
+        "en": "Zmax=8; infinitely many optimal points on that edge.",
+        "hi": "Zmax=8; उस किनारे पर अनंत इष्टतम बिंदु हैं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "At most 10 units means…",
+        "hi": "अधिकतम 10 इकाई का अर्थ…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x+y≤10",
+            "hi": "x+y≤10"
+          },
+          "reason": {
+            "en": "The total cannot exceed 10.",
+            "hi": "कुल 10 से अधिक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "x+y≥10",
+            "hi": "x+y≥10"
+          },
+          "reason": {
+            "en": "This means at least 10.",
+            "hi": "यह कम से कम 10 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x+y=0",
+            "hi": "x+y=0"
+          },
+          "reason": {
+            "en": "The upper limit does not force zero.",
+            "hi": "ऊपरी सीमा 0 अनिवार्य नहीं करती।"
+          }
+        },
+        {
+          "text": {
+            "en": "x+y>10",
+            "hi": "x+y>10"
+          },
+          "reason": {
+            "en": "This violates the given upper limit.",
+            "hi": "यह ऊपरी सीमा तोड़ता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is a linear objective?",
+        "hi": "कौन रैखिक उद्देश्य है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Z=3x+2y",
+            "hi": "Z=3x+2y"
+          },
+          "reason": {
+            "en": "Both variables have first degree and constant coefficients.",
+            "hi": "दोनों चर प्रथम घात और अचर गुणांक वाले हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Z=xy",
+            "hi": "Z=xy"
+          },
+          "reason": {
+            "en": "A variable product is nonlinear.",
+            "hi": "चरों का गुणनफल अरैखिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Z=x²+y",
+            "hi": "Z=x²+y"
+          },
+          "reason": {
+            "en": "The square makes it nonlinear.",
+            "hi": "वर्ग इसे अरैखिक बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Z=1/x+y",
+            "hi": "Z=1/x+y"
+          },
+          "reason": {
+            "en": "A reciprocal variable is nonlinear.",
+            "hi": "चर का व्युत्क्रम अरैखिक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why is x≥0 usually included for production?",
+        "hi": "उत्पादन में x≥0 क्यों रखते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A negative production amount is not meaningful",
+            "hi": "ऋणात्मक उत्पादन अर्थपूर्ण नहीं"
+          },
+          "reason": {
+            "en": "It expresses the practical domain.",
+            "hi": "यह व्यावहारिक प्रांत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every profit must be positive",
+            "hi": "हर लाभ धनात्मक ही है"
+          },
+          "reason": {
+            "en": "Nonnegativity concerns quantity, not a guaranteed profit.",
+            "hi": "यह मात्रा की शर्त है, लाभ की गारंटी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "It makes every region bounded",
+            "hi": "यह हर क्षेत्र परिबद्ध करता है"
+          },
+          "reason": {
+            "en": "The first quadrant is itself unbounded.",
+            "hi": "प्रथम चतुर्थांश स्वयं अपरिबद्ध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It forces x=0",
+            "hi": "यह x=0 करता है"
+          },
+          "reason": {
+            "en": "Positive values are allowed too.",
+            "hi": "धनात्मक मान भी मान्य हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A feasible solution satisfies…",
+        "hi": "सुसंगत हल संतुष्ट करता है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Every constraint simultaneously",
+            "hi": "सभी व्यवरोध एक साथ"
+          },
+          "reason": {
+            "en": "Feasibility is the common intersection.",
+            "hi": "सुसंगति साझा प्रतिच्छेद है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the objective equation",
+            "hi": "केवल उद्देश्य समीकरण"
+          },
+          "reason": {
+            "en": "An objective does not replace resource limits.",
+            "hi": "उद्देश्य संसाधन सीमा की जगह नहीं लेता।"
+          }
+        },
+        {
+          "text": {
+            "en": "At least one constraint",
+            "hi": "कम से कम 1 व्यवरोध"
+          },
+          "reason": {
+            "en": "One violated constraint makes the point infeasible.",
+            "hi": "1 भी टूटा व्यवरोध असुसंगत करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the nonnegativity constraints",
+            "hi": "केवल गैरऋणात्मकता"
+          },
+          "reason": {
+            "en": "Other limits must hold as well.",
+            "hi": "अन्य सीमाएँ भी चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For x+y≤5, which test point chooses the correct side?",
+        "hi": "x+y≤5 में कौन परीक्षण बिंदु सही पक्ष चुनता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(0,0), which satisfies it",
+            "hi": "(0,0), जो इसे मानता है"
+          },
+          "reason": {
+            "en": "0≤5 selects the origin side.",
+            "hi": "0≤5 मूलबिंदु पक्ष चुनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(2,3), which lies on the boundary",
+            "hi": "(2,3), जो सीमा पर है"
+          },
+          "reason": {
+            "en": "A boundary point cannot distinguish sides.",
+            "hi": "सीमा बिंदु पक्ष नहीं अलग करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "(5,0), to distinguish sides",
+            "hi": "(5,0), पक्ष अलग करने को"
+          },
+          "reason": {
+            "en": "It is also on the boundary.",
+            "hi": "यह भी सीमा पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No test point can be used",
+            "hi": "कोई परीक्षण बिंदु नहीं ले सकते"
+          },
+          "reason": {
+            "en": "Any point off the boundary can be tested.",
+            "hi": "सीमा से बाहर बिंदु जाँच सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Where is a linear optimum attained on a nonempty bounded feasible polygon?",
+        "hi": "गैररिक्त परिबद्ध सुसंगत बहुभुज में रैखिक इष्टतम कहाँ मिलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "At a vertex, possibly also along an edge",
+            "hi": "किसी कोने पर, संभवतः किनारे पर भी"
+          },
+          "reason": {
+            "en": "The corner theorem allows multiple optimal points.",
+            "hi": "कोना प्रमेय अनेक इष्टतम बिंदु मानता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always at the origin",
+            "hi": "हमेशा मूलबिंदु पर"
+          },
+          "reason": {
+            "en": "The origin may be infeasible or nonoptimal.",
+            "hi": "मूलबिंदु असुसंगत या अनिष्टतम हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always at exactly one interior point",
+            "hi": "हमेशा केवल 1 आंतरिक बिंदु पर"
+          },
+          "reason": {
+            "en": "A linear objective does not have that forced behavior.",
+            "hi": "रैखिक उद्देश्य ऐसा अनिवार्य व्यवहार नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nowhere",
+            "hi": "कहीं नहीं"
+          },
+          "reason": {
+            "en": "A continuous linear function attains extrema on a compact polygon.",
+            "hi": "संहत बहुभुज पर रैखिक फलन चरम मान पाता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Does an unbounded feasible region always lack a minimum?",
+        "hi": "क्या अपरिबद्ध सुसंगत क्षेत्र में न्यूनतम हमेशा नहीं होता?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No; x+y≥4,x,y≥0 has min(x+y)=4",
+            "hi": "नहीं; x+y≥4,x,y≥0 में min(x+y)=4"
+          },
+          "reason": {
+            "en": "The objective direction matters.",
+            "hi": "उद्देश्य की दिशा महत्वपूर्ण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Yes, always",
+            "hi": "हाँ, हमेशा"
+          },
+          "reason": {
+            "en": "A boundary minimum can exist.",
+            "hi": "सीमा न्यूनतम हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only when there are two variables",
+            "hi": "केवल 2 चर होने पर"
+          },
+          "reason": {
+            "en": "This chapter already uses two variables; the claim is still false.",
+            "hi": "यह अध्याय 2 चर वाला है; दावा फिर भी गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every such region is infeasible",
+            "hi": "ऐसा हर क्षेत्र असुसंगत है"
+          },
+          "reason": {
+            "en": "Unbounded does not mean empty.",
+            "hi": "अपरिबद्ध का अर्थ रिक्त नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For x,y≥0,x+y≤6, the maximum of 2x+2y is…",
+        "hi": "x,y≥0,x+y≤6 में 2x+2y का अधिकतम…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12 on the edge x+y=6",
+            "hi": "किनारे x+y=6 पर 12"
+          },
+          "reason": {
+            "en": "Every point on that edge gives 2×6.",
+            "hi": "उस किनारे का हर बिंदु 2×6 देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6 only at (6,0)",
+            "hi": "केवल (6,0) पर 6"
+          },
+          "reason": {
+            "en": "The objective doubles the sum.",
+            "hi": "उद्देश्य योग का दोगुना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unbounded",
+            "hi": "अपरिबद्ध"
+          },
+          "reason": {
+            "en": "The feasible triangle is bounded.",
+            "hi": "सुसंगत त्रिभुज परिबद्ध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 at the origin",
+            "hi": "मूलबिंदु पर 0"
+          },
+          "reason": {
+            "en": "That is the minimum here.",
+            "hi": "यह यहाँ न्यूनतम है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What if the constraint half-planes have no common point?",
+        "hi": "अर्धसमतलों का कोई साझा बिंदु न हो तो?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No feasible solution",
+            "hi": "कोई सुसंगत हल नहीं"
+          },
+          "reason": {
+            "en": "No plan satisfies all limits.",
+            "hi": "कोई योजना सभी सीमाएँ नहीं मानती।"
+          }
+        },
+        {
+          "text": {
+            "en": "The objective is infinite",
+            "hi": "उद्देश्य अनंत है"
+          },
+          "reason": {
+            "en": "No feasible point is different from an unbounded objective.",
+            "hi": "रिक्त क्षेत्र और अपरिबद्ध उद्देश्य अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The origin must be optimal",
+            "hi": "मूलबिंदु इष्टतम होगा"
+          },
+          "reason": {
+            "en": "The origin may violate constraints too.",
+            "hi": "मूलबिंदु भी शर्तें तोड़ सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Choose any intersection of two lines",
+            "hi": "कोई 2 रेखाओं का प्रतिच्छेद लें"
+          },
+          "reason": {
+            "en": "A candidate must satisfy every constraint.",
+            "hi": "प्रत्याशी को सभी शर्तें माननी हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At (4,2), what is Z=3x+2y?",
+        "hi": "(4,2) पर Z=3x+2y कितना है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "16",
+            "hi": "16"
+          },
+          "reason": {
+            "en": "3×4+2×2=12+4=16.",
+            "hi": "3×4+2×2=12+4=16।"
+          }
+        },
+        {
+          "text": {
+            "en": "14",
+            "hi": "14"
+          },
+          "reason": {
+            "en": "The y contribution is 4, not 2.",
+            "hi": "Y का योगदान 4 है, 2 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "18",
+            "hi": "18"
+          },
+          "reason": {
+            "en": "Substitute both coordinates accurately.",
+            "hi": "दोनों निर्देशांक सही रखें।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "x+y is not the given objective.",
+            "hi": "x+y दिया उद्देश्य नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain a decision variable, constraint and objective using a production example.",
+        "hi": "उत्पादन उदाहरण से निर्णय चर, व्यवरोध और उद्देश्य समझाएँ।"
+      },
+      "answer": {
+        "en": "Let x,y be product quantities; 2x+y≤40 limits hours; maximize Z=30x+20y measures profit; x,y≥0.",
+        "hi": "x,y उत्पाद मात्राएँ लें; 2x+y≤40 घंटों की सीमा, अधिकतम Z=30x+20y लाभ मापता है; x,y≥0।"
+      }
+    },
+    {
+      "question": {
+        "en": "Describe how to choose the half-plane for 2x+y≥8.",
+        "hi": "2x+y≥8 का अर्धसमतल कैसे चुनेंगे?"
+      },
+      "answer": {
+        "en": "Draw 2x+y=8. The origin fails 0≥8, so choose the opposite side and include the boundary.",
+        "hi": "2x+y=8 खींचें। मूलबिंदु 0≥8 नहीं मानता; विपरीत पक्ष सीमा सहित लें।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find all feasible vertices for x,y≥0,x+y≤5,y≤3.",
+        "hi": "x,y≥0,x+y≤5,y≤3 के सुसंगत कोने निकालें।"
+      },
+      "answer": {
+        "en": "(0,0),(5,0),(2,3),(0,3); each satisfies every constraint.",
+        "hi": "(0,0),(5,0),(2,3),(0,3); प्रत्येक सभी शर्तें मानता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Maximize Z=x+2y on x,y≥0,x+y≤5,y≤3.",
+        "hi": "x,y≥0,x+y≤5,y≤3 में Z=x+2y अधिकतम करें।"
+      },
+      "answer": {
+        "en": "At vertices (0,0),(5,0),(2,3),(0,3), values are 0,5,8,6. Maximum 8 at (2,3).",
+        "hi": "कोनों (0,0),(5,0),(2,3),(0,3) पर मान 0,5,8,6 हैं। अधिकतम 8, (2,3) पर।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give an unbounded feasible region with a finite minimum.",
+        "hi": "सीमित न्यूनतम वाला अपरिबद्ध सुसंगत क्षेत्र दें।"
+      },
+      "answer": {
+        "en": "For x,y≥0,x+y≥4, min(x+y)=4 on the segment from (4,0) to (0,4).",
+        "hi": "x,y≥0,x+y≥4 में min(x+y)=4, (4,0) से (0,4) के रेखाखंड पर।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why should an LP answer not be rounded without checking?",
+        "hi": "रैखिक प्रोग्रामन का उत्तर बिना जाँच गोल क्यों न करें?"
+      },
+      "answer": {
+        "en": "Rounding can violate resource limits or change optimality. The continuous model and an integer-quantity requirement are different conditions.",
+        "hi": "गोल करने से संसाधन सीमा या इष्टतमता टूट सकती है। लगातार मॉडल और पूर्ण संख्या मात्रा की जरूरत अलग शर्तें हैं।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not reverse at least and at most, omit nonnegativity, accept infeasible intersections, assume an unbounded region has no finite optimum, or ignore a whole optimal edge.",
+    "hi": "कम से कम और अधिकतम के चिह्न न उलटें; गैरऋणात्मकता न छोड़ें; असुसंगत कोने न लें; अपरिबद्ध क्षेत्र से सीमित इष्टतम असंभव न मानें; पूरे इष्टतम किनारे को पहचानें।"
+  },
+  "revision": [
+    {
+      "en": "Define variables before writing inequalities.",
+      "hi": "असमिकाओं से पहले चर परिभाषित करें।"
+    },
+    {
+      "en": "Intersect every constraint half-plane.",
+      "hi": "सभी व्यवरोधों के अर्धसमतल साझा करें।"
+    },
+    {
+      "en": "Evaluate the linear objective at feasible vertices.",
+      "hi": "सुसंगत कोनों पर उद्देश्य मान निकालें।"
+    },
+    {
+      "en": "Unbounded regions need an additional improvement test.",
+      "hi": "अपरिबद्ध क्षेत्र में बेहतर मान की अतिरिक्त जाँच करें।"
+    },
+    {
+      "en": "Interpret the optimal plan and its units.",
+      "hi": "इष्टतम योजना और इकाइयों का अर्थ लिखें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Situation → variables and units → constraints + objective → half-planes → feasible region → corners → optimum and interpretation.",
+    "hi": "परिस्थिति → चर और इकाइयाँ → व्यवरोध + उद्देश्य → अर्धसमतल → सुसंगत क्षेत्र → कोने → इष्टतम और अर्थ।"
+  },
+  "id": 12,
+  "engine": "twelve-math",
+  "scenes": [],
+  "sources": [
+    {
+      "title": "UPMSP Mathematics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Mathematics Class XII, Chapter 12",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh206.pdf"
+    }
+  ]
+}

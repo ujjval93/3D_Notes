@@ -1,0 +1,892 @@
+{
+  "id": 3,
+  "title": {
+    "en": "Matrices",
+    "hi": "आव्यूह"
+  },
+  "goal": {
+    "en": "Calculate with matrices, preserve product order and understand transpose and inverse.",
+    "hi": "आव्यूहों पर गणना करें, गुणन का क्रम बनाए रखें और परिवर्त व प्रतिलोम समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Matrix notation and order",
+        "hi": "आव्यूह संकेत और कोटि"
+      },
+      "body": {
+        "en": "A matrix is a rectangular arrangement with m rows and n columns. The entry aij records row i and column j. Equality requires equal order and corresponding entries.",
+        "hi": "आव्यूह (Matrix) संख्याओं या व्यंजकों का आयताकार विन्यास है। क्षैतिज पंक्तियाँ और ऊर्ध्वाधर स्तंभ होते हैं। m पंक्ति और n स्तंभ वाले आव्यूह की कोटि (Order) m×n है; पहले पंक्तियाँ लिखते हैं। A=[aᵢⱼ] में aᵢⱼ, iवीं पंक्ति और jवें स्तंभ का अवयव (Entry) है। [[1,2,3],[4,5,6]] की कोटि 2×3 तथा a₂₁=4 है। किसी तालिका को आव्यूह में बदलते समय पंक्ति और स्तंभ का अर्थ अलग लिखें। उदाहरणतः पंक्तियाँ दुकानों और स्तंभ वस्तुओं का प्रतिनिधित्व कर सकते हैं। 2 आव्यूह समान तभी हैं जब उनकी कोटि समान हो और हर संबंधित स्थान के अवयव बराबर हों। केवल सभी अवयवों का योग बराबर होने से आव्यूह बराबर नहीं होते। स्थान बदलने से सूचना बदलती है। a₁₂ तथा a₂₁ सामान्यतः अलग हैं। चर वाले आव्यूहों की समानता से प्रत्येक संबंधित स्थान का समीकरण बनता है। पहले कोटि जाँचने से निरर्थक समीकरण लिखने से बचते हैं। कोष्ठक पूरे विन्यास को एक वस्तु बताते हैं; आव्यूह को उसके किसी 1 अवयव की संख्या से न मिलाएँ।"
+      },
+      "formula": "A=[aᵢⱼ]m×n; A=B ⇔ same order and aᵢⱼ=bᵢⱼ",
+      "question": {
+        "en": "What is a₂₁ in [[1,2],[3,4]]?",
+        "hi": "[[1,2],[3,4]] में a₂₁ क्या है?"
+      },
+      "answer": {
+        "en": "3.",
+        "hi": "3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Important matrix types",
+        "hi": "आव्यूहों के प्रमुख प्रकार"
+      },
+      "body": {
+        "en": "Classify matrices by shape and entries. A diagonal matrix has zero off-diagonal entries; scalar and identity matrices are special diagonal matrices. Zero matrices may be rectangular.",
+        "hi": "पंक्ति आव्यूह (Row matrix) में 1 पंक्ति तथा स्तंभ आव्यूह (Column matrix) में 1 स्तंभ होता है। वर्ग आव्यूह (Square matrix) में पंक्तियों और स्तंभों की संख्या बराबर होती है। उसके a₁₁,a₂₂,... मुख्य विकर्ण के अवयव हैं। विकर्ण आव्यूह (Diagonal matrix) में मुख्य विकर्ण के बाहर सभी अवयव शून्य होते हैं; विकर्ण पर शून्य आना मना नहीं है। अदिश आव्यूह (Scalar matrix) में सभी विकर्ण अवयव भी एक ही संख्या k हैं। k=1 होने पर तत्समक आव्यूह (Identity matrix) I मिलता है। शून्य आव्यूह (Zero matrix) में हर अवयव 0 है; इसकी कोटि वर्ग या आयताकार दोनों हो सकती है। इसलिए हर शून्य आव्यूह को तत्समक कहना गलत है। विकर्ण आव्यूह जरूरी नहीं अदिश हो; [[2,0],[0,3]] उदाहरण है। आव्यूह के प्रकारों में समावेशन है: तत्समक अदिश है, अदिश विकर्ण है, और विकर्ण वर्ग है। लेकिन उलटी दिशा में दावे सामान्यतः सही नहीं हैं। किसी प्रश्न में वर्ग आव्यूह की परिभाषा में केवल कोटि देखें, फिर उसके अवयवों से अधिक विशेष प्रकार पहचानें। जरूरत हो तो I₂ तथा O₂×₃ जैसे सूचक लिखकर कोटि स्पष्ट करें।"
+      },
+      "formula": "I₂=[[1,0],[0,1]]; scalar matrix=kI",
+      "question": {
+        "en": "Is [[2,0],[0,3]] a scalar matrix?",
+        "hi": "क्या [[2,0],[0,3]] अदिश आव्यूह है?"
+      },
+      "answer": {
+        "en": "No: its diagonal entries are unequal.",
+        "hi": "नहीं; विकर्ण अवयव असमान हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Addition and scalar multiplication",
+        "hi": "योग और अदिश गुणन"
+      },
+      "body": {
+        "en": "Only matrices of the same order can be added. Add matching entries. Multiplying by a scalar scales each entry; zero and negative matrices behave as additive identities and inverses.",
+        "hi": "आव्यूह योग (Matrix addition) तभी परिभाषित है जब दोनों आव्यूहों की कोटि समान हो। संबंधित स्थानों के अवयव जोड़ते हैं: (A+B)ᵢⱼ=aᵢⱼ+bᵢⱼ। 2×3 और 3×2 आव्यूह में अवयवों की कुल संख्या बराबर है, फिर भी उनका योग नहीं कर सकते। अदिश गुणन (Scalar multiplication) में वास्तविक संख्या k को हर अवयव से गुणा करते हैं। ऋणात्मक आव्यूह −A में प्रत्येक अवयव का चिह्न बदलता है और A−B=A+(−B) है। समान कोटि में A+B=B+A तथा (A+B)+C=A+(B+C) हैं। A+O=A और A+(−A)=O भी मिलते हैं। k(A+B)=kA+kB तथा (k+l)A=kA+lA वितरण नियम हैं। तालिका में 2 महीनों की समान वस्तुओं की बिक्री जोड़ना इस संक्रिया का अर्थ समझाता है। कीमतें या इकाइयाँ अलग हों तो केवल संख्याएँ जोड़ने से वास्तविक अर्थ गलत हो सकता है। गणना में ऋण चिह्न पूरे आव्यूह पर फैलाएँ। किसी 1 अवयव को छोड़ देना सामान्य भूल है। उत्तर की कोटि मूल आव्यूहों की समान कोटि ही रहेगी, इससे अंतिम जाँच कर सकते हैं।"
+      },
+      "formula": "(A+B)ᵢⱼ=aᵢⱼ+bᵢⱼ; (kA)ᵢⱼ=kaᵢⱼ",
+      "question": {
+        "en": "Can a 2×3 matrix be added to a 3×2 matrix?",
+        "hi": "क्या 2×3 और 3×2 आव्यूह जोड़े जा सकते हैं?"
+      },
+      "answer": {
+        "en": "No; their orders differ.",
+        "hi": "नहीं; उनकी कोटियाँ अलग हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Row-by-column multiplication",
+        "hi": "पंक्ति से स्तंभ गुणन"
+      },
+      "body": {
+        "en": "If A is m×n and B is n×p, then AB is m×p. Each entry is a dot product of one row of A and one column of B; this is not entrywise multiplication.",
+        "hi": "आव्यूह गुणन (Matrix multiplication) में A की कोटि m×n और B की n×p होनी चाहिए। बीच की संख्याएँ n समान हों तभी AB परिभाषित है और उत्तर की कोटि m×p होती है। परिणाम का cᵢⱼ, A की iवीं पंक्ति और B के jवें स्तंभ के संबंधित अवयवों के गुणनफल का योग है। उदाहरणतः [1,2] तथा [[3],[4]] का गुणन 1×3+2×4=11 है। हर अवयव के लिए सही पंक्ति और सही स्तंभ चुनना जरूरी है; केवल समान स्थानों को गुणा करना आव्यूह गुणन नहीं है। तालिका में वस्तुओं की मात्रा वाली पंक्ति को प्रति वस्तु कीमत वाले स्तंभ से गुणा करने पर कुल लागत मिलती है। इकाइयाँ भी गुणन के अर्थ की जाँच करती हैं। 2×3 को 3×4 से गुणा करने पर 2×4 परिणाम मिलता है। उलटे क्रम में 3×4 और 2×3 गुणन योग्य नहीं हैं। उत्तर भरते समय प्रत्येक cᵢⱼ का छोटा अलग हिसाब करें। यदि परिणाम में कोई अवयव 0 आए, तो जरूरी नहीं संबंधित पूरी पंक्ति या स्तंभ शून्य था; धनात्मक और ऋणात्मक पद कट भी सकते हैं।"
+      },
+      "formula": "cᵢⱼ=Σₖ₌₁ⁿ aᵢₖbₖⱼ; (m×n)(n×p)→m×p",
+      "question": {
+        "en": "What is the order of (2×3)(3×5)?",
+        "hi": "(2×3)(3×5) की कोटि क्या होगी?"
+      },
+      "answer": {
+        "en": "2×5.",
+        "hi": "2×5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Order matters in matrix products",
+        "hi": "आव्यूह गुणन में क्रम का महत्व"
+      },
+      "body": {
+        "en": "Matrix multiplication is associative and distributive, but generally not commutative. Nonzero matrices can multiply to zero. Cancelling a matrix requires an inverse, not just a nonzero entry.",
+        "hi": "आव्यूह गुणन सामान्यतः क्रमविनिमेय (Commutative) नहीं है। AB और BA दोनों परिभाषित होने पर भी अलग हो सकते हैं। A=[[1,1],[0,1]] तथा B=[[1,0],[1,1]] लें; AB=[[2,1],[1,1]], जबकि BA=[[1,1],[1,2]] है। गुणन साहचर्य है: (AB)C=A(BC), जब कोटियाँ अनुकूल हों। वितरण नियम A(B+C)=AB+AC तथा (A+B)C=AC+BC सही हैं, लेकिन गुणकों का क्रम बनाए रखें। अशून्य आव्यूहों का गुणन शून्य हो सकता है। A=[[1,0],[0,0]] और B=[[0,0],[0,1]] दोनों अशून्य हैं पर AB=O है। इसलिए AB=O से A=O या B=O निष्कर्ष निकालना गलत है। इसी कारण AB=AC तथा A≠O से सीधे B=C नहीं मिलता। ऐसा काटना तभी सुरक्षित है जब A का प्रतिलोम मौजूद हो और उपयुक्त तरफ उससे गुणा किया जाए। वर्ग आव्यूह के लिए AI=IA=A है। बहुपदी व्यंजक विस्तार में AB+BA को 2AB तभी बनाएँ जब AB=BA अतिरिक्त रूप से ज्ञात हो। साधारण संख्याओं के हर नियम को आव्यूहों पर न उतारें।"
+      },
+      "formula": "AB≠BA in general; A(B+C)=AB+AC",
+      "question": {
+        "en": "Does AB=O imply A=O or B=O?",
+        "hi": "क्या AB=O से A=O या B=O आवश्यक है?"
+      },
+      "answer": {
+        "en": "No; nonzero matrices can have a zero product.",
+        "hi": "नहीं; अशून्य आव्यूहों का गुणन शून्य हो सकता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Transpose",
+        "hi": "परिवर्त आव्यूह"
+      },
+      "body": {
+        "en": "Transpose interchanges rows and columns. It reverses the order of a matrix product: (AB)ᵀ=BᵀAᵀ. This reversal also restores conformable dimensions.",
+        "hi": "परिवर्त (Transpose) Aᵀ बनाने के लिए A की पंक्तियों को उसी क्रम में स्तंभ बनाते हैं। m×n आव्यूह का परिवर्त n×m होता है। यदि A=[[1,2,3],[4,5,6]], तो Aᵀ=[[1,4],[2,5],[3,6]] है। अवयवों में (Aᵀ)ᵢⱼ=aⱼᵢ, इसलिए मुख्य विकर्ण अपनी जगह रहता है और बाकी स्थान बदलते हैं। दो बार परिवर्त करने पर मूल आव्यूह लौटता है: (Aᵀ)ᵀ=A। योग और अदिश गुणन के साथ (A+B)ᵀ=Aᵀ+Bᵀ तथा (kA)ᵀ=kAᵀ हैं। गुणन में क्रम उलटता है: (AB)ᵀ=BᵀAᵀ। इसे AᵀBᵀ लिखना सामान्य त्रुटि है। उदाहरणतः A की कोटि 2×3 और B की 3×4 हो, तो (AB)ᵀ की कोटि 4×2 है; BᵀAᵀ का गुणन भी (4×3)(3×2)→4×2 है। उलटा न करें तो गुणन शायद परिभाषित ही न हो। परिवर्त में संख्याओं का चिह्न नहीं बदलता; केवल स्थान बदलता है। किसी तथ्य को याद करने के साथ छोटे संख्यात्मक उदाहरण और कोटि की जाँच करना उसकी समझ पक्की करता है।"
+      },
+      "formula": "(AB)ᵀ=BᵀAᵀ; (Aᵀ)ᵀ=A",
+      "question": {
+        "en": "What is the transpose order of a 3×2 matrix?",
+        "hi": "3×2 आव्यूह के परिवर्त की कोटि क्या है?"
+      },
+      "answer": {
+        "en": "2×3.",
+        "hi": "2×3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Symmetric and skew-symmetric matrices",
+        "hi": "सममित और विषम सममित आव्यूह"
+      },
+      "body": {
+        "en": "A real square matrix is symmetric if Aᵀ=A and skew-symmetric if Aᵀ=−A. Every real square matrix uniquely splits into these two parts; skew-symmetric diagonal entries vanish.",
+        "hi": "वास्तविक वर्ग आव्यूह A सममित (Symmetric) है यदि Aᵀ=A, अर्थात aᵢⱼ=aⱼᵢ हो। विषम सममित (Skew-symmetric) है यदि Aᵀ=−A, अर्थात aᵢⱼ=−aⱼᵢ हो। दूसरे मामले में मुख्य विकर्ण पर aᵢᵢ=−aᵢᵢ, इसलिए सभी विकर्ण अवयव 0 हैं। लेकिन केवल विकर्ण शून्य होने से कोई आव्यूह विषम सममित नहीं हो जाता; बाहर के संबंधित अवयवों का ऋणात्मक होना भी जाँचें। [[0,2],[−2,0]] विषम सममित है, जबकि [[0,2],[3,0]] नहीं है। हर वास्तविक वर्ग आव्यूह को A=(A+Aᵀ)/2+(A−Aᵀ)/2 रूप में लिख सकते हैं। पहला भाग सममित तथा दूसरा विषम सममित है। दोनों को जोड़ने पर A लौटता है, इससे गणना की जाँच होती है। यदि कोई आव्यूह सममित और विषम सममित दोनों है, तो A=−A से A=O मिलेगा। सभी बातें वर्ग कोटि के लिए हैं, क्योंकि A और Aᵀ की समानता के लिए कोटियाँ समान चाहिए। रंगीन स्थान चित्र विकर्ण के पार मिलते अवयव दिखा सकता है, लेकिन जाँच में वास्तविक संख्याएँ और उनके चिह्न देखें।"
+      },
+      "formula": "A=(A+Aᵀ)/2+(A−Aᵀ)/2",
+      "question": {
+        "en": "What must a real skew-symmetric diagonal entry be?",
+        "hi": "वास्तविक विषम सममित आव्यूह का विकर्ण अवयव क्या होगा?"
+      },
+      "answer": {
+        "en": "0.",
+        "hi": "0।"
+      }
+    },
+    {
+      "title": {
+        "en": "Inverse matrices and safe cancellation",
+        "hi": "प्रतिलोम आव्यूह और सुरक्षित विलोपन"
+      },
+      "body": {
+        "en": "A square matrix inverse B satisfies AB=BA=I and is unique. A nonzero matrix need not be invertible. The inverse of a product reverses the order, and equations must be multiplied on the correct side.",
+        "hi": "वर्ग आव्यूह A का प्रतिलोम (Inverse) वह B है जिसके लिए AB=BA=I हो। इसे A⁻¹ लिखते हैं। अशून्य आव्यूह होने भर से प्रतिलोम नहीं मिलता; [[1,0],[0,0]] अशून्य होते हुए भी प्रतिलोमहीन है। प्रतिलोम की एकमात्रता देखें: यदि B और C दोनों प्रतिलोम हैं, तो B=BI=B(AC)=(BA)C=IC=C। यह प्रमाण गुणन का क्रम सुरक्षित रखता है। यदि A और B व्युत्क्रमणीय हैं, तो (AB)⁻¹=B⁻¹A⁻¹ होता है, क्योंकि AB के दाएँ इस गुणन को लगाने पर I और बाएँ लगाने पर भी I मिलता है। AX=B हल करने के लिए बाएँ से A⁻¹ गुणा करें; X=A⁻¹B। XA=B हो तो दाएँ से गुणा करने पर X=BA⁻¹ होगा। A⁻¹ का अर्थ हर अवयव का reciprocal लेना नहीं है। किसी प्रस्तावित प्रतिलोम को दोनों गुणनों से जाँचना उपयोगी है। अगले अध्याय में सारणिक और सहखंडज से प्रतिलोम निकालने की विधि मिलेगी। यहाँ मूल संकल्पना और क्रम समझें। प्रतिलोम की परिभाषा में I की कोटि A की वर्ग कोटि के अनुरूप रखना आवश्यक है।"
+      },
+      "formula": "AA⁻¹=A⁻¹A=I; (AB)⁻¹=B⁻¹A⁻¹",
+      "question": {
+        "en": "If AX=B and A is invertible, what is X?",
+        "hi": "AX=B और A व्युत्क्रमणीय हो तो X क्या है?"
+      },
+      "answer": {
+        "en": "A⁻¹B.",
+        "hi": "A⁻¹B।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find x,y if [[x,2],[3,y]]=[[1,2],[3,4]].",
+        "hi": "[[x,2],[3,y]]=[[1,2],[3,4]] में x,y निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given equal matrices of order 2×2; equate corresponding entries.",
+          "hi": "दिया: समान 2×2 आव्यूह; संबंधित अवयव बराबर करें।"
+        },
+        {
+          "en": "Entry (1,1) gives x=1; entry (2,2) gives y=4.",
+          "hi": "स्थान (1,1) से x=1; स्थान (2,2) से y=4।"
+        },
+        {
+          "en": "Check: substitution restores all 4 matching entries of the given equality.",
+          "hi": "जाँच: मान रखने से दिए आव्यूहों के चारों संबंधित अवयव बराबर हो जाते हैं।"
+        }
+      ],
+      "answer": {
+        "en": "x=1, y=4.",
+        "hi": "x=1, y=4।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Compute 2A−B for A=[[1,−2],[0,3]], B=[[2,1],[−1,4]].",
+        "hi": "A=[[1,−2],[0,3]], B=[[2,1],[−1,4]] के लिए 2A−B निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Both orders are 2×2, so subtraction is defined.",
+          "hi": "दोनों की कोटि 2×2, अतः घटाना परिभाषित है।"
+        },
+        {
+          "en": "2A=[[2,−4],[0,6]]. Subtract matching entries of B.",
+          "hi": "2A=[[2,−4],[0,6]]। B के संबंधित अवयव घटाएँ।"
+        },
+        {
+          "en": "The four entries are 2−2=0, −4−1=−5, 0−(−1)=1 and 6−4=2.",
+          "hi": "चार अवयव 2−2=0, −4−1=−5, 0−(−1)=1 तथा 6−4=2 हैं।"
+        }
+      ],
+      "answer": {
+        "en": "[[0,−5],[1,2]].",
+        "hi": "[[0,−5],[1,2]]।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Compute AB with A=[[1,2],[3,4]], B=[[2,0],[1,2]].",
+        "hi": "A=[[1,2],[3,4]], B=[[2,0],[1,2]] का AB निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Formula: cᵢⱼ=Σaᵢₖbₖⱼ; result is 2×2.",
+          "hi": "सूत्र: cᵢⱼ=Σaᵢₖbₖⱼ; परिणाम 2×2 है।"
+        },
+        {
+          "en": "c₁₁=1×2+2×1=4; c₁₂=1×0+2×2=4.",
+          "hi": "c₁₁=1×2+2×1=4; c₁₂=1×0+2×2=4।"
+        },
+        {
+          "en": "c₂₁=3×2+4×1=10; c₂₂=3×0+4×2=8.",
+          "hi": "c₂₁=3×2+4×1=10; c₂₂=3×0+4×2=8।"
+        }
+      ],
+      "answer": {
+        "en": "AB=[[4,4],[10,8]].",
+        "hi": "AB=[[4,4],[10,8]]।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Split A=[[1,3],[5,2]] into symmetric and skew-symmetric parts.",
+        "hi": "A=[[1,3],[5,2]] को सममित और विषम सममित भागों में लिखें।"
+      },
+      "steps": [
+        {
+          "en": "Aᵀ=[[1,5],[3,2]]. Use S=(A+Aᵀ)/2, K=(A−Aᵀ)/2.",
+          "hi": "Aᵀ=[[1,5],[3,2]]। S=(A+Aᵀ)/2, K=(A−Aᵀ)/2 लें।"
+        },
+        {
+          "en": "S=[[1,4],[4,2]], K=[[0,−1],[1,0]].",
+          "hi": "S=[[1,4],[4,2]], K=[[0,−1],[1,0]]।"
+        },
+        {
+          "en": "Sᵀ=S, Kᵀ=−K and S+K=A, verifying all requirements.",
+          "hi": "Sᵀ=S, Kᵀ=−K और S+K=A; सभी शर्तें सही हैं।"
+        }
+      ],
+      "answer": {
+        "en": "A=[[1,4],[4,2]]+[[0,−1],[1,0]].",
+        "hi": "A=[[1,4],[4,2]]+[[0,−1],[1,0]]।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Solve AX=B, A=[[1,1],[0,1]], B=[[3],[2]].",
+        "hi": "AX=B हल करें: A=[[1,1],[0,1]], B=[[3],[2]]।"
+      },
+      "steps": [
+        {
+          "en": "Verify A⁻¹=[[1,−1],[0,1]] by multiplying in both orders.",
+          "hi": "दोनों क्रम में गुणा करके A⁻¹=[[1,−1],[0,1]] जाँचें।"
+        },
+        {
+          "en": "Multiply AX=B on the left by A⁻¹: X=A⁻¹B.",
+          "hi": "AX=B को बाएँ से A⁻¹ से गुणा करें: X=A⁻¹B।"
+        },
+        {
+          "en": "X=[[1×3−1×2],[0×3+1×2]]=[[1],[2]].",
+          "hi": "X=[[1×3−1×2],[0×3+1×2]]=[[1],[2]]।"
+        },
+        {
+          "en": "Check A[[1],[2]]=[[3],[2]]=B.",
+          "hi": "जाँच: A[[1],[2]]=[[3],[2]]=B।"
+        }
+      ],
+      "answer": {
+        "en": "X=[[1],[2]].",
+        "hi": "X=[[1],[2]]।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Order of [[1,2,3],[4,5,6]] is:",
+        "hi": "[[1,2,3],[4,5,6]] की कोटि है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2×3",
+            "hi": "2×3"
+          },
+          "reason": {
+            "en": "There are 2 rows and 3 columns.",
+            "hi": "2 पंक्तियाँ और 3 स्तंभ हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3×2",
+            "hi": "3×2"
+          },
+          "reason": {
+            "en": "Rows are listed before columns.",
+            "hi": "पहले पंक्ति संख्या लिखते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "6×1",
+            "hi": "6×1"
+          },
+          "reason": {
+            "en": "Six entries do not mean six rows.",
+            "hi": "6 अवयव का अर्थ 6 पंक्तियाँ नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2×2",
+            "hi": "2×2"
+          },
+          "reason": {
+            "en": "Each row has 3 entries.",
+            "hi": "हर पंक्ति में 3 अवयव हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In A=[[2,5],[7,9]], a₂₁ is:",
+        "hi": "A=[[2,5],[7,9]] में a₂₁ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "Second row, first column.",
+            "hi": "दूसरी पंक्ति, पहला स्तंभ।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "This is a₁₂.",
+            "hi": "यह a₁₂ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "This is a₁₁.",
+            "hi": "यह a₁₁ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9",
+            "hi": "9"
+          },
+          "reason": {
+            "en": "This is a₂₂.",
+            "hi": "यह a₂₂ है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "When is A+B defined?",
+        "hi": "A+B कब परिभाषित है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "When their orders are identical",
+            "hi": "जब कोटियाँ समान हों"
+          },
+          "reason": {
+            "en": "Corresponding entries can then be added.",
+            "hi": "तभी संबंधित स्थान जोड़ सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "When total entry counts agree",
+            "hi": "जब कुल अवयव समान हों"
+          },
+          "reason": {
+            "en": "2×3 and 3×2 still cannot be added.",
+            "hi": "2×3 और 3×2 फिर भी नहीं जुड़ते।"
+          }
+        },
+        {
+          "text": {
+            "en": "When both are square, any orders",
+            "hi": "दोनों वर्ग हों, कोटि कोई भी"
+          },
+          "reason": {
+            "en": "The same square order is required.",
+            "hi": "वर्ग कोटि भी समान होनी चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always",
+            "hi": "हमेशा"
+          },
+          "reason": {
+            "en": "Different orders do not match entry positions.",
+            "hi": "अलग कोटियों में स्थान नहीं मिलते।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The product of a 3×2 and a 2×4 matrix has order:",
+        "hi": "3×2 और 2×4 के गुणन की कोटि है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3×4",
+            "hi": "3×4"
+          },
+          "reason": {
+            "en": "Inner dimensions match; outer dimensions remain.",
+            "hi": "बीच की कोटियाँ समान; बाहर की शेष हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2×2",
+            "hi": "2×2"
+          },
+          "reason": {
+            "en": "These are the matching inner dimensions, not the result.",
+            "hi": "ये बीच की कोटियाँ हैं, परिणाम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "4×3",
+            "hi": "4×3"
+          },
+          "reason": {
+            "en": "The result order has been reversed.",
+            "hi": "परिणाम की कोटि उलट दी।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित"
+          },
+          "reason": {
+            "en": "The inner dimensions are both 2, so it is defined.",
+            "hi": "बीच की संख्याएँ 2 हैं, अतः परिभाषित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which always holds for compatible matrices?",
+        "hi": "अनुकूल कोटि के आव्यूहों में कौन हमेशा सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A(B+C)=AB+AC",
+            "hi": "A(B+C)=AB+AC"
+          },
+          "reason": {
+            "en": "Matrix multiplication is distributive.",
+            "hi": "आव्यूह गुणन वितरण नियम मानता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "AB=BA",
+            "hi": "AB=BA"
+          },
+          "reason": {
+            "en": "Matrix multiplication need not commute.",
+            "hi": "गुणन क्रमविनिमेय जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "AB=O⇒A=O or B=O",
+            "hi": "AB=O⇒A=O या B=O"
+          },
+          "reason": {
+            "en": "Nonzero zero-products exist.",
+            "hi": "अशून्य आव्यूहों का शून्य गुणन संभव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A²+B²=(A+B)²",
+            "hi": "A²+B²=(A+B)²"
+          },
+          "reason": {
+            "en": "Cross terms AB+BA are missing.",
+            "hi": "AB+BA पद छूट गए हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "(AB)ᵀ equals:",
+        "hi": "(AB)ᵀ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "BᵀAᵀ",
+            "hi": "BᵀAᵀ"
+          },
+          "reason": {
+            "en": "Transpose reverses product order.",
+            "hi": "परिवर्त में गुणन का क्रम उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "AᵀBᵀ",
+            "hi": "AᵀBᵀ"
+          },
+          "reason": {
+            "en": "The product order must reverse.",
+            "hi": "गुणन क्रम उलटना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "AB",
+            "hi": "AB"
+          },
+          "reason": {
+            "en": "A product is not necessarily symmetric.",
+            "hi": "गुणन जरूरी नहीं सममित हो।"
+          }
+        },
+        {
+          "text": {
+            "en": "−BA",
+            "hi": "−BA"
+          },
+          "reason": {
+            "en": "Transpose does not introduce a minus sign.",
+            "hi": "परिवर्त स्वयं ऋण चिह्न नहीं लाता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A real skew-symmetric matrix has diagonal entries:",
+        "hi": "वास्तविक विषम सममित आव्यूह के विकर्ण अवयव हैं:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "All 0",
+            "hi": "सभी 0"
+          },
+          "reason": {
+            "en": "aᵢᵢ=−aᵢᵢ implies aᵢᵢ=0.",
+            "hi": "aᵢᵢ=−aᵢᵢ से aᵢᵢ=0।"
+          }
+        },
+        {
+          "text": {
+            "en": "All 1",
+            "hi": "सभी 1"
+          },
+          "reason": {
+            "en": "This would violate aᵢᵢ=−aᵢᵢ.",
+            "hi": "इससे aᵢᵢ=−aᵢᵢ टूटेगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any real numbers",
+            "hi": "कोई वास्तविक संख्याएँ"
+          },
+          "reason": {
+            "en": "The diagonal restriction is essential.",
+            "hi": "विकर्ण प्रतिबंध जरूरी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only positive",
+            "hi": "केवल धनात्मक"
+          },
+          "reason": {
+            "en": "Zero, not a positive number, is required.",
+            "hi": "0 आवश्यक है, धनात्मक संख्या नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is a scalar matrix?",
+        "hi": "कौन अदिश आव्यूह है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "[[3,0],[0,3]]",
+            "hi": "[[3,0],[0,3]]"
+          },
+          "reason": {
+            "en": "Equal diagonal entries and zero off-diagonal entries.",
+            "hi": "समान विकर्ण तथा शून्य बाहरी अवयव हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "[[2,0],[0,3]]",
+            "hi": "[[2,0],[0,3]]"
+          },
+          "reason": {
+            "en": "Diagonal entries differ.",
+            "hi": "विकर्ण अवयव असमान हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "[[3,1],[0,3]]",
+            "hi": "[[3,1],[0,3]]"
+          },
+          "reason": {
+            "en": "An off-diagonal entry is nonzero.",
+            "hi": "विकर्ण के बाहर अशून्य अवयव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "[[3,3]]",
+            "hi": "[[3,3]]"
+          },
+          "reason": {
+            "en": "A scalar matrix must be square and diagonal.",
+            "hi": "अदिश आव्यूह वर्ग तथा विकर्ण होता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If AX=B with A invertible, then:",
+        "hi": "A व्युत्क्रमणीय तथा AX=B हो तो:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "X=A⁻¹B",
+            "hi": "X=A⁻¹B"
+          },
+          "reason": {
+            "en": "Multiply on the left by A⁻¹.",
+            "hi": "बाएँ से A⁻¹ गुणा करें।"
+          }
+        },
+        {
+          "text": {
+            "en": "X=BA⁻¹",
+            "hi": "X=BA⁻¹"
+          },
+          "reason": {
+            "en": "This solves XA=B, not AX=B.",
+            "hi": "यह XA=B का हल है, AX=B का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "X=B/A entrywise",
+            "hi": "स्थानवार X=B/A"
+          },
+          "reason": {
+            "en": "Entrywise division is not the inverse operation.",
+            "hi": "स्थानवार भाग प्रतिलोम संक्रिया नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "X=AB",
+            "hi": "X=AB"
+          },
+          "reason": {
+            "en": "A⁻¹ is required to undo A.",
+            "hi": "A हटाने को A⁻¹ चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which matrix is both symmetric and skew-symmetric over R?",
+        "hi": "R पर कौन सममित और विषम सममित दोनों है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero matrix",
+            "hi": "शून्य आव्यूह"
+          },
+          "reason": {
+            "en": "A=−A implies A=O over R.",
+            "hi": "R पर A=−A से A=O।"
+          }
+        },
+        {
+          "text": {
+            "en": "Identity matrix of positive order",
+            "hi": "धनात्मक कोटि का तत्समक"
+          },
+          "reason": {
+            "en": "Its diagonal entries are 1, not 0.",
+            "hi": "विकर्ण अवयव 1 हैं, 0 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every diagonal matrix",
+            "hi": "हर विकर्ण आव्यूह"
+          },
+          "reason": {
+            "en": "Skew-symmetry also needs zero diagonal.",
+            "hi": "विषम सममिति में शून्य विकर्ण चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every square matrix",
+            "hi": "हर वर्ग आव्यूह"
+          },
+          "reason": {
+            "en": "Most square matrices satisfy neither condition.",
+            "hi": "अधिकांश वर्ग आव्यूह दोनों में कोई गुण नहीं रखते।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain equality of matrices.",
+        "hi": "आव्यूहों की समानता समझाएँ।"
+      },
+      "answer": {
+        "en": "Orders must match and every pair of corresponding entries must agree.",
+        "hi": "कोटियाँ समान तथा संबंधित सभी अवयव बराबर होने चाहिए।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give nonzero 2×2 matrices whose product is zero.",
+        "hi": "ऐसे अशून्य 2×2 आव्यूह दें जिनका गुणन शून्य हो।"
+      },
+      "answer": {
+        "en": "A=[[1,0],[0,0]], B=[[0,0],[0,1]] give AB=O.",
+        "hi": "A=[[1,0],[0,0]], B=[[0,0],[0,1]] से AB=O।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the transpose product rule with dimensions.",
+        "hi": "परिवर्त के गुणन नियम को कोटियों सहित लिखें।"
+      },
+      "answer": {
+        "en": "A:m×n, B:n×p imply (AB)ᵀ=BᵀAᵀ of order p×m.",
+        "hi": "A:m×n, B:n×p के लिए (AB)ᵀ=BᵀAᵀ की कोटि p×m है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Prove uniqueness of an inverse.",
+        "hi": "प्रतिलोम की एकमात्रता सिद्ध करें।"
+      },
+      "answer": {
+        "en": "If B,C are inverses of A, then B=BI=B(AC)=(BA)C=IC=C.",
+        "hi": "B,C दोनों A के प्रतिलोम हों, तो B=BI=B(AC)=(BA)C=IC=C।"
+      }
+    },
+    {
+      "question": {
+        "en": "Decompose [[2,1],[5,4]] into symmetric and skew-symmetric parts.",
+        "hi": "[[2,1],[5,4]] को सममित और विषम सममित भागों में लिखें।"
+      },
+      "answer": {
+        "en": "(A+Aᵀ)/2=[[2,3],[3,4]]; (A−Aᵀ)/2=[[0,−2],[2,0]].",
+        "hi": "(A+Aᵀ)/2=[[2,3],[3,4]]; (A−Aᵀ)/2=[[0,−2],[2,0]]।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is AB=AC with A≠O insufficient to conclude B=C?",
+        "hi": "AB=AC तथा A≠O से B=C क्यों नहीं निकाल सकते?"
+      },
+      "answer": {
+        "en": "Nonzero matrices can have a zero product. Cancellation needs an invertible A; multiplying by A⁻¹ on the left then gives B=C.",
+        "hi": "अशून्य आव्यूहों का गुणन शून्य हो सकता है। विलोपन के लिए A व्युत्क्रमणीय चाहिए; बाएँ A⁻¹ से गुणा करने पर B=C मिलता है।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Rows precede columns in order. Matrix multiplication is not entrywise and need not commute; an inverse is not entrywise reciprocation.",
+    "hi": "कोटि में पहले पंक्ति लिखें। गुणन स्थानवार या आवश्यक रूप से क्रमविनिमेय नहीं; प्रतिलोम हर अवयव का reciprocal नहीं है।"
+  },
+  "revision": [
+    {
+      "en": "Order is rows × columns.",
+      "hi": "कोटि पंक्ति × स्तंभ है।"
+    },
+    {
+      "en": "Add only equal orders.",
+      "hi": "समान कोटियों को ही जोड़ें।"
+    },
+    {
+      "en": "Multiply rows by columns.",
+      "hi": "पंक्ति से स्तंभ गुणा करें।"
+    },
+    {
+      "en": "Transpose reverses a product.",
+      "hi": "परिवर्त में गुणन क्रम उलटता है।"
+    },
+    {
+      "en": "Inverse permits cancellation on the correct side.",
+      "hi": "प्रतिलोम से सही तरफ विलोपन संभव है।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Entries and order → types → addition and products → transpose → symmetry → inverse and equations.",
+    "hi": "अवयव और कोटि → प्रकार → योग और गुणन → परिवर्त → सममिति → प्रतिलोम और समीकरण।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics XII, Chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh103.pdf"
+    },
+    {
+      "title": "UPMSP Mathematics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    }
+  ],
+  "engine": "twelve-math",
+  "scenes": []
+}

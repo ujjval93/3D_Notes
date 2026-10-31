@@ -1,0 +1,3438 @@
+[
+  {
+    "id": "lkg-hindi-01",
+    "classId": "LKG",
+    "subject": "hindi",
+    "title": {
+      "en": "Meet the Hindi Vowels",
+      "hi": "हिंदी के स्वरों से मिलें"
+    },
+    "goal": {
+      "en": "Recognise अ to औ and say familiar example words.",
+      "hi": "अ से औ तक पहचानें और परिचित उदाहरण बोलें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Look and listen",
+          "hi": "देखें और सुनें"
+        },
+        "body": {
+          "en": "Look at one vowel at a time. An adult can say it slowly, then the child may repeat. Begin with familiar words such as आम.",
+          "hi": "एक बार में 1 स्वर देखें। बड़े व्यक्ति धीरे से बोलें और बच्चा सुनकर दोहराए। पहले परिचित शब्द चुनें, जैसे आ से आम। सभी स्वर एक साथ याद करना जरूरी नहीं। बच्चा जिस अक्षर को पहचान ले, उसका कार्ड फिर दिखाकर खुशी से नाम पूछें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Shapes and words",
+          "hi": "आकार और शब्द"
+        },
+        "body": {
+          "en": "Compare the shapes of इ and ई, then उ and ऊ. A picture gives a clue to the example word, not to every word with that vowel.",
+          "hi": "इ और ई के आकार मिलाएँ, फिर उ और ऊ देखें। बड़ा व्यक्ति अक्षर पर उँगली रखकर उसका नाम बोले। चित्र उदाहरण के शब्द का संकेत है। जहाँ सही चित्र नहीं है, वहाँ अक्षर का कार्ड है। अनार और इमली को असली वस्तु या बातचीत से भी पहचान सकते हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Say, point and trace",
+          "hi": "बोलें, दिखाएँ और बनाएँ"
+        },
+        "body": {
+          "en": "Trace a large shape with a finger. Keep this playful; a precise handwriting test is not needed.",
+          "hi": "हवा में बड़ा अ बनाएँ और फिर स्क्रीन पर उसका आकार देखें। बच्चे को बोलने, दिखाने या उँगली चलाने में से कोई तरीका चुनने दें। धीरे-धीरे बाकी स्वर मिलाएँ। अं और अः को यहाँ स्वर वाले कार्डों में नहीं रखा गया है; उनके साथ अलग चिह्न जुड़े होते हैं।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "अ",
+        "label": {
+          "en": "Pomegranate",
+          "hi": "अनार"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Pomegranate. Hindi: अनार.",
+          "hi": "अ। अनार।"
+        }
+      },
+      {
+        "symbol": "आ",
+        "label": {
+          "en": "Mango",
+          "hi": "आम"
+        },
+        "picture": "🥭",
+        "say": {
+          "en": "Mango. Hindi: आम.",
+          "hi": "आ। आम।"
+        }
+      },
+      {
+        "symbol": "इ",
+        "label": {
+          "en": "Tamarind",
+          "hi": "इमली"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Tamarind. Hindi: इमली.",
+          "hi": "इ। इमली।"
+        }
+      },
+      {
+        "symbol": "ई",
+        "label": {
+          "en": "Sugarcane",
+          "hi": "ईख"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Sugarcane. Hindi: ईख.",
+          "hi": "ई। ईख।"
+        }
+      },
+      {
+        "symbol": "उ",
+        "label": {
+          "en": "Owl",
+          "hi": "उल्लू"
+        },
+        "picture": "🦉",
+        "say": {
+          "en": "Owl. Hindi: उल्लू.",
+          "hi": "उ। उल्लू।"
+        }
+      },
+      {
+        "symbol": "ऊ",
+        "label": {
+          "en": "Wool",
+          "hi": "ऊन"
+        },
+        "picture": "🧶",
+        "say": {
+          "en": "Wool. Hindi: ऊन.",
+          "hi": "ऊ। ऊन।"
+        }
+      },
+      {
+        "symbol": "ऋ",
+        "label": {
+          "en": "Sage",
+          "hi": "ऋषि"
+        },
+        "picture": "🧘",
+        "say": {
+          "en": "Sage. Hindi: ऋषि.",
+          "hi": "ऋ। ऋषि।"
+        }
+      },
+      {
+        "symbol": "ए",
+        "label": {
+          "en": "One",
+          "hi": "एक"
+        },
+        "picture": "☝️",
+        "say": {
+          "en": "One. Hindi: एक.",
+          "hi": "ए। एक।"
+        }
+      },
+      {
+        "symbol": "ऐ",
+        "label": {
+          "en": "Glasses",
+          "hi": "ऐनक"
+        },
+        "picture": "👓",
+        "say": {
+          "en": "Glasses. Hindi: ऐनक.",
+          "hi": "ऐ। ऐनक।"
+        }
+      },
+      {
+        "symbol": "ओ",
+        "label": {
+          "en": "Dew",
+          "hi": "ओस"
+        },
+        "picture": "💧",
+        "say": {
+          "en": "Dew. Hindi: ओस.",
+          "hi": "ओ। ओस।"
+        }
+      },
+      {
+        "symbol": "औ",
+        "label": {
+          "en": "Woman",
+          "hi": "औरत"
+        },
+        "picture": "👩",
+        "say": {
+          "en": "Woman. Hindi: औरत.",
+          "hi": "औ। औरत।"
+        }
+      }
+    ],
+    "trace": "अ",
+    "play": [
+      {
+        "en": "Point to आ and say आम.",
+        "hi": "आ पर उँगली रखें और आम बोलें।"
+      },
+      {
+        "en": "Find two letters whose shapes look similar.",
+        "hi": "मिलते-जुलते आकार वाले 2 अक्षर खोजें।"
+      },
+      {
+        "en": "Draw अ in the air with a large arm movement.",
+        "hi": "हाथ से हवा में बड़ा अ बनाएँ।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word अनार?",
+          "hi": "अनार का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "अ",
+            "hi": "अ"
+          },
+          {
+            "en": "आ",
+            "hi": "आ"
+          },
+          {
+            "en": "इ",
+            "hi": "इ"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "अनार begins with अ.",
+          "hi": "अनार शब्द अ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word आम?",
+          "hi": "आम का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ई",
+            "hi": "ई"
+          },
+          {
+            "en": "आ",
+            "hi": "आ"
+          },
+          {
+            "en": "इ",
+            "hi": "इ"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "आम begins with आ.",
+          "hi": "आम शब्द आ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word इमली?",
+          "hi": "इमली का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ई",
+            "hi": "ई"
+          },
+          {
+            "en": "उ",
+            "hi": "उ"
+          },
+          {
+            "en": "इ",
+            "hi": "इ"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "इमली begins with इ.",
+          "hi": "इमली शब्द इ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word ईख?",
+          "hi": "ईख का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ई",
+            "hi": "ई"
+          },
+          {
+            "en": "उ",
+            "hi": "उ"
+          },
+          {
+            "en": "ऊ",
+            "hi": "ऊ"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "ईख begins with ई.",
+          "hi": "ईख शब्द ई से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word उल्लू?",
+          "hi": "उल्लू का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ऋ",
+            "hi": "ऋ"
+          },
+          {
+            "en": "उ",
+            "hi": "उ"
+          },
+          {
+            "en": "ऊ",
+            "hi": "ऊ"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "उल्लू begins with उ.",
+          "hi": "उल्लू शब्द उ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word ऊन?",
+          "hi": "ऊन का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ऋ",
+            "hi": "ऋ"
+          },
+          {
+            "en": "ए",
+            "hi": "ए"
+          },
+          {
+            "en": "ऊ",
+            "hi": "ऊ"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "ऊन begins with ऊ.",
+          "hi": "ऊन शब्द ऊ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word ऋषि?",
+          "hi": "ऋषि का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ऋ",
+            "hi": "ऋ"
+          },
+          {
+            "en": "ए",
+            "hi": "ए"
+          },
+          {
+            "en": "ऐ",
+            "hi": "ऐ"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "ऋषि begins with ऋ.",
+          "hi": "ऋषि शब्द ऋ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word एक?",
+          "hi": "एक का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ओ",
+            "hi": "ओ"
+          },
+          {
+            "en": "ए",
+            "hi": "ए"
+          },
+          {
+            "en": "ऐ",
+            "hi": "ऐ"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "एक begins with ए.",
+          "hi": "एक शब्द ए से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which of these is a vowel?",
+          "hi": "इनमें कौन स्वर है?"
+        },
+        "options": [
+          {
+            "en": "क",
+            "hi": "क"
+          },
+          {
+            "en": "म",
+            "hi": "म"
+          },
+          {
+            "en": "औ",
+            "hi": "औ"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "औ is a vowel; क and म are consonants.",
+          "hi": "औ स्वर है; क और म व्यंजन हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "How many vowels are on this lesson’s cards?",
+          "hi": "इस पाठ के कार्डों पर कितने स्वर हैं?"
+        },
+        "options": [
+          {
+            "en": "11",
+            "hi": "11"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The cards show 11 vowels, from अ to औ.",
+          "hi": "कार्डों पर अ से औ तक 11 स्वर हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-hindi-02",
+    "classId": "LKG",
+    "subject": "hindi",
+    "title": {
+      "en": "Consonants: क to ञ",
+      "hi": "व्यंजन: क से ञ"
+    },
+    "goal": {
+      "en": "Recognise the first 2 consonant groups through shapes and words.",
+      "hi": "आकार और शब्दों से पहले 2 व्यंजन समूह पहचानें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "First group",
+          "hi": "पहला समूह"
+        },
+        "body": {
+          "en": "Begin with क, ख, ग, घ and ङ. Use familiar examples where available; ङ is practised as a letter shape.",
+          "hi": "क, ख, ग, घ और ङ के कार्ड धीरे-धीरे देखें। कमल, खरगोश, गमला और घर के नाम बोलें। इन शब्दों का पहला अक्षर सुनने दें। ङ के लिए कोई बनावटी परिचित शब्द न बताएँ। अभी उसका आकार देखना और बड़े व्यक्ति के साथ उसका नाम बोलना पर्याप्त है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Second group",
+          "hi": "दूसरा समूह"
+        },
+        "body": {
+          "en": "Explore च, छ, ज, झ and ञ. A child may point before being ready to say the whole word.",
+          "hi": "अब च, छ, ज, झ और ञ देखें। चम्मच, छाता, जल और झंडा परिचित संकेत हैं। बच्चा पूरा शब्द न बोल पाए तो सही चित्र या अक्षर की ओर इशारा कर सकता है। ञ को भी अक्षर की तरह पहचानें। हर बच्चे को अलग समय लग सकता है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Compare carefully",
+          "hi": "ध्यान से मिलाएँ"
+        },
+        "body": {
+          "en": "Compare one pair at a time and revisit a few letters rather than racing through all ten.",
+          "hi": "क और ख, फिर च और छ के आकार मिलाएँ। 1 बार में केवल 2 कार्ड सामने रखें। बच्चे से एक अक्षर चुनने को कहें और सही कार्ड मिलने पर उसका नाम फिर बोलें। गलती पर धीरे से सही कार्ड दिखाएँ। तेज बोलने से अधिक जरूरी ध्यान से पहचानना है।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "क",
+        "label": {
+          "en": "Lotus",
+          "hi": "कमल"
+        },
+        "picture": "🪷",
+        "say": {
+          "en": "Lotus. Hindi: कमल.",
+          "hi": "क। कमल।"
+        }
+      },
+      {
+        "symbol": "ख",
+        "label": {
+          "en": "Rabbit",
+          "hi": "खरगोश"
+        },
+        "picture": "🐇",
+        "say": {
+          "en": "Rabbit. Hindi: खरगोश.",
+          "hi": "ख। खरगोश।"
+        }
+      },
+      {
+        "symbol": "ग",
+        "label": {
+          "en": "Pot",
+          "hi": "गमला"
+        },
+        "picture": "🪴",
+        "say": {
+          "en": "Pot. Hindi: गमला.",
+          "hi": "ग। गमला।"
+        }
+      },
+      {
+        "symbol": "घ",
+        "label": {
+          "en": "House",
+          "hi": "घर"
+        },
+        "picture": "🏠",
+        "say": {
+          "en": "House. Hindi: घर.",
+          "hi": "घ। घर।"
+        }
+      },
+      {
+        "symbol": "ङ",
+        "label": {
+          "en": "Read ङ",
+          "hi": "ङ पहचानें"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Read ङ. Hindi: ङ पहचानें.",
+          "hi": "ङ। ङ पहचानें।"
+        }
+      },
+      {
+        "symbol": "च",
+        "label": {
+          "en": "Spoon",
+          "hi": "चम्मच"
+        },
+        "picture": "🥄",
+        "say": {
+          "en": "Spoon. Hindi: चम्मच.",
+          "hi": "च। चम्मच।"
+        }
+      },
+      {
+        "symbol": "छ",
+        "label": {
+          "en": "Umbrella",
+          "hi": "छाता"
+        },
+        "picture": "☂️",
+        "say": {
+          "en": "Umbrella. Hindi: छाता.",
+          "hi": "छ। छाता।"
+        }
+      },
+      {
+        "symbol": "ज",
+        "label": {
+          "en": "Water",
+          "hi": "जल"
+        },
+        "picture": "💧",
+        "say": {
+          "en": "Water. Hindi: जल.",
+          "hi": "ज। जल।"
+        }
+      },
+      {
+        "symbol": "झ",
+        "label": {
+          "en": "Flag",
+          "hi": "झंडा"
+        },
+        "picture": "🚩",
+        "say": {
+          "en": "Flag. Hindi: झंडा.",
+          "hi": "झ। झंडा।"
+        }
+      },
+      {
+        "symbol": "ञ",
+        "label": {
+          "en": "Read ञ",
+          "hi": "ञ पहचानें"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Read ञ. Hindi: ञ पहचानें.",
+          "hi": "ञ। ञ पहचानें।"
+        }
+      }
+    ],
+    "trace": "क",
+    "play": [
+      {
+        "en": "Find क and point to the lotus picture.",
+        "hi": "क खोजें और कमल के चित्र पर उँगली रखें।"
+      },
+      {
+        "en": "Say घर and listen to its first sound.",
+        "hi": "घर बोलें और उसकी पहली ध्वनि सुनें।"
+      },
+      {
+        "en": "Make a big च in the air.",
+        "hi": "हवा में बड़ा च बनाएँ।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word कमल?",
+          "hi": "कमल का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "क",
+            "hi": "क"
+          },
+          {
+            "en": "ख",
+            "hi": "ख"
+          },
+          {
+            "en": "ग",
+            "hi": "ग"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "कमल begins with क.",
+          "hi": "कमल शब्द क से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word खरगोश?",
+          "hi": "खरगोश का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "घ",
+            "hi": "घ"
+          },
+          {
+            "en": "ख",
+            "hi": "ख"
+          },
+          {
+            "en": "ग",
+            "hi": "ग"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "खरगोश begins with ख.",
+          "hi": "खरगोश शब्द ख से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word गमला?",
+          "hi": "गमला का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "घ",
+            "hi": "घ"
+          },
+          {
+            "en": "ङ",
+            "hi": "ङ"
+          },
+          {
+            "en": "ग",
+            "hi": "ग"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "गमला begins with ग.",
+          "hi": "गमला शब्द ग से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word घर?",
+          "hi": "घर का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "घ",
+            "hi": "घ"
+          },
+          {
+            "en": "ङ",
+            "hi": "ङ"
+          },
+          {
+            "en": "च",
+            "hi": "च"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "घर begins with घ.",
+          "hi": "घर शब्द घ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Find the letter ङ.",
+          "hi": "ङ अक्षर खोजें।"
+        },
+        "options": [
+          {
+            "en": "छ",
+            "hi": "छ"
+          },
+          {
+            "en": "ङ",
+            "hi": "ङ"
+          },
+          {
+            "en": "च",
+            "hi": "च"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The displayed target is ङ.",
+          "hi": "चुना अक्षर ङ है। इसका आकार ध्यान से देखें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word चम्मच?",
+          "hi": "चम्मच का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "छ",
+            "hi": "छ"
+          },
+          {
+            "en": "ज",
+            "hi": "ज"
+          },
+          {
+            "en": "च",
+            "hi": "च"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "चम्मच begins with च.",
+          "hi": "चम्मच शब्द च से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word छाता?",
+          "hi": "छाता का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "छ",
+            "hi": "छ"
+          },
+          {
+            "en": "ज",
+            "hi": "ज"
+          },
+          {
+            "en": "झ",
+            "hi": "झ"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "छाता begins with छ.",
+          "hi": "छाता शब्द छ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word जल?",
+          "hi": "जल का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ञ",
+            "hi": "ञ"
+          },
+          {
+            "en": "ज",
+            "hi": "ज"
+          },
+          {
+            "en": "झ",
+            "hi": "झ"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "जल begins with ज.",
+          "hi": "जल शब्द ज से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word झंडा?",
+          "hi": "झंडा का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ञ",
+            "hi": "ञ"
+          },
+          {
+            "en": "क",
+            "hi": "क"
+          },
+          {
+            "en": "झ",
+            "hi": "झ"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "झंडा begins with झ.",
+          "hi": "झंडा शब्द झ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Find the letter ञ.",
+          "hi": "ञ अक्षर खोजें।"
+        },
+        "options": [
+          {
+            "en": "ञ",
+            "hi": "ञ"
+          },
+          {
+            "en": "क",
+            "hi": "क"
+          },
+          {
+            "en": "ख",
+            "hi": "ख"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The displayed target is ञ.",
+          "hi": "चुना अक्षर ञ है। इसका आकार ध्यान से देखें।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-hindi-03",
+    "classId": "LKG",
+    "subject": "hindi",
+    "title": {
+      "en": "Consonants: ट to म",
+      "hi": "व्यंजन: ट से म"
+    },
+    "goal": {
+      "en": "Recognise small sets of letters from ट to म.",
+      "hi": "ट से म तक के अक्षर छोटे समूहों में पहचानें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "One group at a time",
+          "hi": "एक समय पर एक समूह"
+        },
+        "body": {
+          "en": "Explore ट to ण first, then त to न, then प to म. There is no need to rush through all cards.",
+          "hi": "पहले ट, ठ, ड, ढ, ण देखें। फिर त, थ, द, ध, न का समूह लें। अंत में प, फ, ब, भ, म देखें। सभी कार्ड एक साथ याद न कराएँ। बच्चे को 1 छोटा समूह पसंद करने दें और उसमें परिचित चित्रों के नाम पूछें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Words make clues",
+          "hi": "शब्दों से संकेत लें"
+        },
+        "body": {
+          "en": "Say टमाटर, ढोल, नल and मछली. ण is a recognition card rather than a forced word-initial example.",
+          "hi": "टमाटर, ढोल, नल और मछली जैसे शब्द धीरे बोलें। पहले अक्षर पर उँगली रखें। ठोस का अर्थ ऐसा पदार्थ है जो ठोस रूप में है; ईंट उसका एक उदाहरण है। ण के लिए गलत शब्द न बनाएँ। अभी ण के आकार को अलग पहचानना अच्छा अभ्यास है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Look, choose and repeat",
+          "hi": "देखें, चुनें और दोहराएँ"
+        },
+        "body": {
+          "en": "A child can answer by pointing or speaking. Notice distinctions without demanding perfect pronunciation.",
+          "hi": "ड और ढ के आकार देखें, फिर त और थ मिलाएँ। बच्चा चाहे तो अक्षर बोले या उसकी ओर इशारा करे। सही पहचान के बाद कोई दूसरा परिचित शब्द बड़े व्यक्ति बोल सकते हैं। उच्चारण पूरी तरह स्पष्ट न हो तो भी खेल जारी रखें और धीरे से सही ध्वनि दोहराएँ।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "ट",
+        "label": {
+          "en": "Tomato",
+          "hi": "टमाटर"
+        },
+        "picture": "🍅",
+        "say": {
+          "en": "Tomato. Hindi: टमाटर.",
+          "hi": "ट। टमाटर।"
+        }
+      },
+      {
+        "symbol": "ठ",
+        "label": {
+          "en": "Solid",
+          "hi": "ठोस"
+        },
+        "picture": "🧱",
+        "say": {
+          "en": "Solid. Hindi: ठोस.",
+          "hi": "ठ। ठोस।"
+        }
+      },
+      {
+        "symbol": "ड",
+        "label": {
+          "en": "Box",
+          "hi": "डिब्बा"
+        },
+        "picture": "📦",
+        "say": {
+          "en": "Box. Hindi: डिब्बा.",
+          "hi": "ड। डिब्बा।"
+        }
+      },
+      {
+        "symbol": "ढ",
+        "label": {
+          "en": "Drum",
+          "hi": "ढोल"
+        },
+        "picture": "🥁",
+        "say": {
+          "en": "Drum. Hindi: ढोल.",
+          "hi": "ढ। ढोल।"
+        }
+      },
+      {
+        "symbol": "ण",
+        "label": {
+          "en": "Read ण",
+          "hi": "ण पहचानें"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Read ण. Hindi: ण पहचानें.",
+          "hi": "ण। ण पहचानें।"
+        }
+      },
+      {
+        "symbol": "त",
+        "label": {
+          "en": "Watermelon",
+          "hi": "तरबूज"
+        },
+        "picture": "🍉",
+        "say": {
+          "en": "Watermelon. Hindi: तरबूज.",
+          "hi": "त। तरबूज।"
+        }
+      },
+      {
+        "symbol": "थ",
+        "label": {
+          "en": "Plate",
+          "hi": "थाली"
+        },
+        "picture": "🍽️",
+        "say": {
+          "en": "Plate. Hindi: थाली.",
+          "hi": "थ। थाली।"
+        }
+      },
+      {
+        "symbol": "द",
+        "label": {
+          "en": "Tooth",
+          "hi": "दाँत"
+        },
+        "picture": "🦷",
+        "say": {
+          "en": "Tooth. Hindi: दाँत.",
+          "hi": "द। दाँत।"
+        }
+      },
+      {
+        "symbol": "ध",
+        "label": {
+          "en": "Bow",
+          "hi": "धनुष"
+        },
+        "picture": "🏹",
+        "say": {
+          "en": "Bow. Hindi: धनुष.",
+          "hi": "ध। धनुष।"
+        }
+      },
+      {
+        "symbol": "न",
+        "label": {
+          "en": "Tap",
+          "hi": "नल"
+        },
+        "picture": "🚰",
+        "say": {
+          "en": "Tap. Hindi: नल.",
+          "hi": "न। नल।"
+        }
+      },
+      {
+        "symbol": "प",
+        "label": {
+          "en": "Leaf",
+          "hi": "पत्ता"
+        },
+        "picture": "🍃",
+        "say": {
+          "en": "Leaf. Hindi: पत्ता.",
+          "hi": "प। पत्ता।"
+        }
+      },
+      {
+        "symbol": "फ",
+        "label": {
+          "en": "Fruit",
+          "hi": "फल"
+        },
+        "picture": "🍎",
+        "say": {
+          "en": "Fruit. Hindi: फल.",
+          "hi": "फ। फल।"
+        }
+      },
+      {
+        "symbol": "ब",
+        "label": {
+          "en": "Duck",
+          "hi": "बतख"
+        },
+        "picture": "🦆",
+        "say": {
+          "en": "Duck. Hindi: बतख.",
+          "hi": "ब। बतख।"
+        }
+      },
+      {
+        "symbol": "भ",
+        "label": {
+          "en": "Bear",
+          "hi": "भालू"
+        },
+        "picture": "🐻",
+        "say": {
+          "en": "Bear. Hindi: भालू.",
+          "hi": "भ। भालू।"
+        }
+      },
+      {
+        "symbol": "म",
+        "label": {
+          "en": "Fish",
+          "hi": "मछली"
+        },
+        "picture": "🐟",
+        "say": {
+          "en": "Fish. Hindi: मछली.",
+          "hi": "म। मछली।"
+        }
+      }
+    ],
+    "trace": "म",
+    "play": [
+      {
+        "en": "Choose the letter that begins मछली.",
+        "hi": "मछली का पहला अक्षर चुनें।"
+      },
+      {
+        "en": "Find ढ and make a soft drum sound.",
+        "hi": "ढ खोजें और धीरे से ढोल की आवाज़ निकालें।"
+      },
+      {
+        "en": "Point to प, then to the leaf.",
+        "hi": "प पर, फिर पत्ते पर उँगली रखें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word टमाटर?",
+          "hi": "टमाटर का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ट",
+            "hi": "ट"
+          },
+          {
+            "en": "ठ",
+            "hi": "ठ"
+          },
+          {
+            "en": "ड",
+            "hi": "ड"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "टमाटर begins with ट.",
+          "hi": "टमाटर शब्द ट से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word डिब्बा?",
+          "hi": "डिब्बा का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ढ",
+            "hi": "ढ"
+          },
+          {
+            "en": "ड",
+            "hi": "ड"
+          },
+          {
+            "en": "ठ",
+            "hi": "ठ"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "डिब्बा begins with ड.",
+          "hi": "डिब्बा शब्द ड से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word ढोल?",
+          "hi": "ढोल का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ड",
+            "hi": "ड"
+          },
+          {
+            "en": "ण",
+            "hi": "ण"
+          },
+          {
+            "en": "ढ",
+            "hi": "ढ"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "ढोल begins with ढ.",
+          "hi": "ढोल शब्द ढ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word तरबूज?",
+          "hi": "तरबूज का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "त",
+            "hi": "त"
+          },
+          {
+            "en": "ढ",
+            "hi": "ढ"
+          },
+          {
+            "en": "ण",
+            "hi": "ण"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "तरबूज begins with त.",
+          "hi": "तरबूज शब्द त से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word थाली?",
+          "hi": "थाली का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "त",
+            "hi": "त"
+          },
+          {
+            "en": "थ",
+            "hi": "थ"
+          },
+          {
+            "en": "ण",
+            "hi": "ण"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "थाली begins with थ.",
+          "hi": "थाली शब्द थ से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word दाँत?",
+          "hi": "दाँत का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "त",
+            "hi": "त"
+          },
+          {
+            "en": "थ",
+            "hi": "थ"
+          },
+          {
+            "en": "द",
+            "hi": "द"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "दाँत begins with द.",
+          "hi": "दाँत शब्द द से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word नल?",
+          "hi": "नल का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "न",
+            "hi": "न"
+          },
+          {
+            "en": "थ",
+            "hi": "थ"
+          },
+          {
+            "en": "द",
+            "hi": "द"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "नल begins with न.",
+          "hi": "नल शब्द न से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word पत्ता?",
+          "hi": "पत्ता का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ध",
+            "hi": "ध"
+          },
+          {
+            "en": "प",
+            "hi": "प"
+          },
+          {
+            "en": "द",
+            "hi": "द"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "पत्ता begins with प.",
+          "hi": "पत्ता शब्द प से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word बतख?",
+          "hi": "बतख का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "ध",
+            "hi": "ध"
+          },
+          {
+            "en": "न",
+            "hi": "न"
+          },
+          {
+            "en": "ब",
+            "hi": "ब"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "बतख begins with ब.",
+          "hi": "बतख शब्द ब से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word मछली?",
+          "hi": "मछली का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "म",
+            "hi": "म"
+          },
+          {
+            "en": "न",
+            "hi": "न"
+          },
+          {
+            "en": "प",
+            "hi": "प"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "मछली begins with म.",
+          "hi": "मछली शब्द म से शुरू होता है।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-hindi-04",
+    "classId": "LKG",
+    "subject": "hindi",
+    "title": {
+      "en": "Consonants: य to ह",
+      "hi": "व्यंजन: य से ह"
+    },
+    "goal": {
+      "en": "Recognise य, र, ल, व, श, ष, स and ह.",
+      "hi": "य, र, ल, व, श, ष, स और ह पहचानें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Meet the last group",
+          "hi": "अंतिम समूह से मिलें"
+        },
+        "body": {
+          "en": "Look at य, र, ल and व. An adult can add familiar spoken words without requiring the child to read them yet.",
+          "hi": "य, र, ल और व के आकार देखें। र से रथ और व से वन बोलें। लट्टू एक घूमने वाला खिलौना है; उसका चित्र न हो तो बड़े व्यक्ति समझा सकते हैं। य के कार्ड पर अक्षर पहचानें। अभी कठिन शब्द पढ़वाना जरूरी नहीं है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Similar letters",
+          "hi": "मिलते-जुलते अक्षर"
+        },
+        "body": {
+          "en": "श, ष and स are different letters. Notice their shapes and use clear adult examples rather than treating them as one letter.",
+          "hi": "श, ष और स अलग अक्षर हैं। इनके आकार ध्यान से देखें। श से शेर और स से सूरज बोलें। षट्कोण ऐसा आकार है जिसकी 6 भुजाएँ होती हैं; इस शब्द का पहला अक्षर ष है। अभी बड़े व्यक्ति शब्द बोलकर केवल ष की पहचान कराएँ।"
+        }
+      },
+      {
+        "title": {
+          "en": "Finish with a game",
+          "hi": "खेल से दोहराएँ"
+        },
+        "body": {
+          "en": "ह can be linked with हाथी and हवा. A short revisit to previous groups helps recognition.",
+          "hi": "ह से हाथी और हवा बोलें। फिर किसी पुराने समूह का 1 अक्षर चुनें और उसका नाम दोहराएँ। बच्चे को अपना पसंदीदा कार्ड चुनने दें। अक्षर को हवा में बनाना, चित्र देखना और शब्द सुनना अलग-अलग अच्छे तरीके हैं। गलती को खेल का हिस्सा मानें और सही अक्षर फिर दिखाएँ।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "य",
+        "label": {
+          "en": "Read य",
+          "hi": "य पहचानें"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Read य. Hindi: य पहचानें.",
+          "hi": "य। य पहचानें।"
+        }
+      },
+      {
+        "symbol": "र",
+        "label": {
+          "en": "Chariot",
+          "hi": "रथ"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Chariot. Hindi: रथ.",
+          "hi": "र। रथ।"
+        }
+      },
+      {
+        "symbol": "ल",
+        "label": {
+          "en": "Spinning top",
+          "hi": "लट्टू"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Spinning top. Hindi: लट्टू.",
+          "hi": "ल। लट्टू।"
+        }
+      },
+      {
+        "symbol": "व",
+        "label": {
+          "en": "Forest",
+          "hi": "वन"
+        },
+        "picture": "🌳",
+        "say": {
+          "en": "Forest. Hindi: वन.",
+          "hi": "व। वन।"
+        }
+      },
+      {
+        "symbol": "श",
+        "label": {
+          "en": "Lion",
+          "hi": "शेर"
+        },
+        "picture": "🦁",
+        "say": {
+          "en": "Lion. Hindi: शेर.",
+          "hi": "श। शेर।"
+        }
+      },
+      {
+        "symbol": "ष",
+        "label": {
+          "en": "Hexagon word",
+          "hi": "षट्कोण"
+        },
+        "picture": "⬡",
+        "say": {
+          "en": "Hexagon word. Hindi: षट्कोण.",
+          "hi": "ष। षट्कोण।"
+        }
+      },
+      {
+        "symbol": "स",
+        "label": {
+          "en": "Sun",
+          "hi": "सूरज"
+        },
+        "picture": "☀️",
+        "say": {
+          "en": "Sun. Hindi: सूरज.",
+          "hi": "स। सूरज।"
+        }
+      },
+      {
+        "symbol": "ह",
+        "label": {
+          "en": "Elephant",
+          "hi": "हाथी"
+        },
+        "picture": "🐘",
+        "say": {
+          "en": "Elephant. Hindi: हाथी.",
+          "hi": "ह। हाथी।"
+        }
+      }
+    ],
+    "trace": "ह",
+    "play": [
+      {
+        "en": "Find ह and move an arm like an elephant trunk.",
+        "hi": "ह खोजें और हाथ को हाथी की सूँड़ की तरह चलाएँ।"
+      },
+      {
+        "en": "Compare the shapes of श and स.",
+        "hi": "श और स के आकार मिलाएँ।"
+      },
+      {
+        "en": "Choose your favourite letter and say it.",
+        "hi": "पसंदीदा अक्षर चुनें और बोलें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Find the letter य.",
+          "hi": "य अक्षर खोजें।"
+        },
+        "options": [
+          {
+            "en": "य",
+            "hi": "य"
+          },
+          {
+            "en": "र",
+            "hi": "र"
+          },
+          {
+            "en": "ल",
+            "hi": "ल"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The displayed target is य.",
+          "hi": "चुना अक्षर य है। इसका आकार ध्यान से देखें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word रथ?",
+          "hi": "रथ का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "व",
+            "hi": "व"
+          },
+          {
+            "en": "र",
+            "hi": "र"
+          },
+          {
+            "en": "ल",
+            "hi": "ल"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "रथ begins with र.",
+          "hi": "रथ शब्द र से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word लट्टू?",
+          "hi": "लट्टू का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "व",
+            "hi": "व"
+          },
+          {
+            "en": "श",
+            "hi": "श"
+          },
+          {
+            "en": "ल",
+            "hi": "ल"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "लट्टू begins with ल.",
+          "hi": "लट्टू शब्द ल से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word वन?",
+          "hi": "वन का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "व",
+            "hi": "व"
+          },
+          {
+            "en": "श",
+            "hi": "श"
+          },
+          {
+            "en": "ष",
+            "hi": "ष"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "वन begins with व.",
+          "hi": "वन शब्द व से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word शेर?",
+          "hi": "शेर का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "स",
+            "hi": "स"
+          },
+          {
+            "en": "श",
+            "hi": "श"
+          },
+          {
+            "en": "ष",
+            "hi": "ष"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "शेर begins with श.",
+          "hi": "शेर शब्द श से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word षट्कोण?",
+          "hi": "षट्कोण का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "स",
+            "hi": "स"
+          },
+          {
+            "en": "ह",
+            "hi": "ह"
+          },
+          {
+            "en": "ष",
+            "hi": "ष"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "षट्कोण begins with ष.",
+          "hi": "षट्कोण शब्द ष से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word सूरज?",
+          "hi": "सूरज का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "स",
+            "hi": "स"
+          },
+          {
+            "en": "ह",
+            "hi": "ह"
+          },
+          {
+            "en": "य",
+            "hi": "य"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "सूरज begins with स.",
+          "hi": "सूरज शब्द स से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins the Hindi word हाथी?",
+          "hi": "हाथी का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "र",
+            "hi": "र"
+          },
+          {
+            "en": "ह",
+            "hi": "ह"
+          },
+          {
+            "en": "य",
+            "hi": "य"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "हाथी begins with ह.",
+          "hi": "हाथी शब्द ह से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins हवा?",
+          "hi": "हवा का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "स",
+            "hi": "स"
+          },
+          {
+            "en": "ल",
+            "hi": "ल"
+          },
+          {
+            "en": "ह",
+            "hi": "ह"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "हवा begins with ह.",
+          "hi": "हवा शब्द ह से शुरू होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter begins रस?",
+          "hi": "रस का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "र",
+            "hi": "र"
+          },
+          {
+            "en": "य",
+            "hi": "य"
+          },
+          {
+            "en": "व",
+            "hi": "व"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "रस begins with र.",
+          "hi": "रस शब्द र से शुरू होता है।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-hindi-01",
+    "classId": "UKG",
+    "subject": "hindi",
+    "title": {
+      "en": "Read Simple 2-letter Words",
+      "hi": "सरल 2 अक्षर वाले शब्द पढ़ें"
+    },
+    "goal": {
+      "en": "Blend familiar consonants into short words without added vowel marks.",
+      "hi": "पहचाने व्यंजन जोड़कर बिना अतिरिक्त मात्रा के छोटे शब्द पढ़ें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Join familiar letters",
+          "hi": "पहचाने अक्षर जोड़ें"
+        },
+        "body": {
+          "en": "Point to each letter in घर and say the word naturally. Reading is more than naming the letters separately.",
+          "hi": "घर के दोनों अक्षरों पर उँगली रखें और फिर पूरा शब्द सहज ढंग से बोलें। इसी तरह जल और फल पढ़ें। बड़े व्यक्ति पहले पढ़कर दिखा सकते हैं। बच्चा केवल अक्षर के नाम अलग-अलग न बोले; उसे पूरे शब्द की आवाज़ भी सुनने दें। परिचित अर्थ से पढ़ना आसान होता है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Connect word and meaning",
+          "hi": "शब्द और अर्थ जोड़ें"
+        },
+        "body": {
+          "en": "Match नल with a tap and बस with a bus. Explain an unfamiliar object instead of guessing from a letter alone.",
+          "hi": "नल को पानी के नल से और बस को वाहन से जोड़ें। वन में बहुत से पेड़ होते हैं। रथ पहियों वाला पुराना वाहन है, जिसे यहाँ केवल शब्द पहचानने के लिए रखा गया है। कप एक प्याला है। बच्चे से सही कार्ड चुनने को कहें, केवल पहला अक्षर देखकर अनुमान न लगवाएँ।"
+        }
+      },
+      {
+        "title": {
+          "en": "Speak and recognise",
+          "hi": "बोलें और पहचानें"
+        },
+        "body": {
+          "en": "Short oral prompts keep reading active. Accept pointing, then model the spoken word.",
+          "hi": "बड़े व्यक्ति कोई शब्द बोलें और बच्चा उसका कार्ड खोजे। पहले 2 कार्ड रखें, फिर विकल्प बढ़ाएँ। बच्चा इशारा करे तो भी उत्तर स्वीकारें और शब्द साथ पढ़ें। आज 2 या 3 शब्द साफ पहचानना भी अच्छी प्रगति है। लंबे अभ्यास के बजाय थोड़ी देर का आनंदपूर्ण पढ़ना बेहतर है।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "घर",
+        "label": {
+          "en": "Home",
+          "hi": "घर"
+        },
+        "picture": "🏠",
+        "say": {
+          "en": "Home. Hindi: घर.",
+          "hi": "घर। घर।"
+        }
+      },
+      {
+        "symbol": "जल",
+        "label": {
+          "en": "Water",
+          "hi": "जल"
+        },
+        "picture": "💧",
+        "say": {
+          "en": "Water. Hindi: जल.",
+          "hi": "जल। जल।"
+        }
+      },
+      {
+        "symbol": "फल",
+        "label": {
+          "en": "Fruit",
+          "hi": "फल"
+        },
+        "picture": "🍎",
+        "say": {
+          "en": "Fruit. Hindi: फल.",
+          "hi": "फल। फल।"
+        }
+      },
+      {
+        "symbol": "नल",
+        "label": {
+          "en": "Tap",
+          "hi": "नल"
+        },
+        "picture": "🚰",
+        "say": {
+          "en": "Tap. Hindi: नल.",
+          "hi": "नल। नल।"
+        }
+      },
+      {
+        "symbol": "बस",
+        "label": {
+          "en": "Bus",
+          "hi": "बस"
+        },
+        "picture": "🚌",
+        "say": {
+          "en": "Bus. Hindi: बस.",
+          "hi": "बस। बस।"
+        }
+      },
+      {
+        "symbol": "वन",
+        "label": {
+          "en": "Forest",
+          "hi": "वन"
+        },
+        "picture": "🌳",
+        "say": {
+          "en": "Forest. Hindi: वन.",
+          "hi": "वन। वन।"
+        }
+      },
+      {
+        "symbol": "रथ",
+        "label": {
+          "en": "Chariot",
+          "hi": "रथ"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Chariot. Hindi: रथ.",
+          "hi": "रथ। रथ।"
+        }
+      },
+      {
+        "symbol": "कप",
+        "label": {
+          "en": "Cup",
+          "hi": "कप"
+        },
+        "picture": "☕",
+        "say": {
+          "en": "Cup. Hindi: कप.",
+          "hi": "कप। कप।"
+        }
+      }
+    ],
+    "trace": "घर",
+    "play": [
+      {
+        "en": "Point to a word that names something in your room.",
+        "hi": "कमरे की किसी चीज़ का नाम बताने वाला शब्द चुनें।"
+      },
+      {
+        "en": "Say जल, then find its card.",
+        "hi": "जल बोलें, फिर उसका कार्ड खोजें।"
+      },
+      {
+        "en": "Read क and प together as कप.",
+        "hi": "क और प जोड़कर कप पढ़ें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which Hindi word means home?",
+          "hi": "रहने की जगह के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "घर",
+            "hi": "घर"
+          },
+          {
+            "en": "जल",
+            "hi": "जल"
+          },
+          {
+            "en": "फल",
+            "hi": "फल"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "घर means home.",
+          "hi": "सही शब्द घर है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means water?",
+          "hi": "पानी के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "नल",
+            "hi": "नल"
+          },
+          {
+            "en": "जल",
+            "hi": "जल"
+          },
+          {
+            "en": "फल",
+            "hi": "फल"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "जल means water.",
+          "hi": "सही शब्द जल है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means fruit?",
+          "hi": "🍎 के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "नल",
+            "hi": "नल"
+          },
+          {
+            "en": "बस",
+            "hi": "बस"
+          },
+          {
+            "en": "फल",
+            "hi": "फल"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "फल means fruit.",
+          "hi": "सही शब्द फल है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means tap?",
+          "hi": "पानी की टोंटी के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "नल",
+            "hi": "नल"
+          },
+          {
+            "en": "बस",
+            "hi": "बस"
+          },
+          {
+            "en": "वन",
+            "hi": "वन"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "नल means tap.",
+          "hi": "सही शब्द नल है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means bus?",
+          "hi": "🚌 के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "रथ",
+            "hi": "रथ"
+          },
+          {
+            "en": "बस",
+            "hi": "बस"
+          },
+          {
+            "en": "वन",
+            "hi": "वन"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "बस means bus.",
+          "hi": "सही शब्द बस है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means forest?",
+          "hi": "बहुत सारे पेड़ों का स्थान के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "रथ",
+            "hi": "रथ"
+          },
+          {
+            "en": "कप",
+            "hi": "कप"
+          },
+          {
+            "en": "वन",
+            "hi": "वन"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "वन means forest.",
+          "hi": "सही शब्द वन है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means chariot?",
+          "hi": "पुराने समय का पहियों वाला वाहन के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "रथ",
+            "hi": "रथ"
+          },
+          {
+            "en": "कप",
+            "hi": "कप"
+          },
+          {
+            "en": "घर",
+            "hi": "घर"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "रथ means chariot.",
+          "hi": "सही शब्द रथ है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means cup?",
+          "hi": "प्याला के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "जल",
+            "hi": "जल"
+          },
+          {
+            "en": "कप",
+            "hi": "कप"
+          },
+          {
+            "en": "घर",
+            "hi": "घर"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "कप means cup.",
+          "hi": "सही शब्द कप है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which word contains क followed by प?",
+          "hi": "क के बाद प जोड़ने पर कौन-सा शब्द बनता है?"
+        },
+        "options": [
+          {
+            "en": "वन",
+            "hi": "वन"
+          },
+          {
+            "en": "बस",
+            "hi": "बस"
+          },
+          {
+            "en": "कप",
+            "hi": "कप"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "क followed by प makes कप.",
+          "hi": "क और प मिलकर कप बनाते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which letter starts नल?",
+          "hi": "नल का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "न",
+            "hi": "न"
+          },
+          {
+            "en": "ज",
+            "hi": "ज"
+          },
+          {
+            "en": "फ",
+            "hi": "फ"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "नल starts with न.",
+          "hi": "नल शब्द न से शुरू होता है।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-hindi-02",
+    "classId": "UKG",
+    "subject": "hindi",
+    "title": {
+      "en": "Read Simple 3-letter Words",
+      "hi": "सरल 3 अक्षर वाले शब्द पढ़ें"
+    },
+    "goal": {
+      "en": "Read short words and connect them to familiar meanings.",
+      "hi": "छोटे शब्द पढ़ें और उनके अर्थ से जोड़ें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Read in a small group",
+          "hi": "छोटे समूह में पढ़ें"
+        },
+        "body": {
+          "en": "Begin with कमल and कलम. Their similar letters need careful attention to order.",
+          "hi": "पहले कमल और कलम देखें। दोनों में मिलते-जुलते अक्षर हैं, पर उनका क्रम और अर्थ अलग है। बड़े व्यक्ति धीरे से पूरा शब्द पढ़ें। बच्चा अक्षरों पर उँगली चला सकता है। कमल एक फूल है और कलम लिखने के काम आती है। ध्यान से क्रम देखना जरूरी है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Meet new meanings",
+          "hi": "नए अर्थ जानें"
+        },
+        "body": {
+          "en": "Connect नमक and मटर with food, and महल and शहर with places. नयन is another word for eyes.",
+          "hi": "नमक और मटर भोजन से जुड़े शब्द हैं। महल बड़ी राजसी इमारत हो सकती है और शहर बहुत से लोगों के रहने का स्थान है। मगर यहाँ जानवर मगरमच्छ के लिए आया है। नयन का अर्थ आँखें है। किसी शब्द का अर्थ नया लगे तो बड़े व्यक्ति चित्र या बातचीत से समझाएँ।"
+        }
+      },
+      {
+        "title": {
+          "en": "Choose, say and compare",
+          "hi": "चुनें, बोलें और मिलाएँ"
+        },
+        "body": {
+          "en": "Look at the whole word, not just its opening letter. A short matching game can support careful reading.",
+          "hi": "कार्ड चुनते समय पूरा शब्द देखें। केवल पहला अक्षर मिलने से हर शब्द सही नहीं हो जाता। बड़े व्यक्ति 1 शब्द बोलें और बच्चे को मिलते-जुलते 2 कार्डों में से चुनने दें। सही चुनाव के बाद उसे साथ पढ़ें। गलती होने पर अक्षरों के क्रम की ओर धीरे से ध्यान दिलाएँ।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "कमल",
+        "label": {
+          "en": "Lotus",
+          "hi": "कमल"
+        },
+        "picture": "🪷",
+        "say": {
+          "en": "Lotus. Hindi: कमल.",
+          "hi": "कमल। कमल।"
+        }
+      },
+      {
+        "symbol": "कलम",
+        "label": {
+          "en": "Pen",
+          "hi": "कलम"
+        },
+        "picture": "🖊️",
+        "say": {
+          "en": "Pen. Hindi: कलम.",
+          "hi": "कलम। कलम।"
+        }
+      },
+      {
+        "symbol": "नमक",
+        "label": {
+          "en": "Salt",
+          "hi": "नमक"
+        },
+        "picture": "🧂",
+        "say": {
+          "en": "Salt. Hindi: नमक.",
+          "hi": "नमक। नमक।"
+        }
+      },
+      {
+        "symbol": "मटर",
+        "label": {
+          "en": "Peas",
+          "hi": "मटर"
+        },
+        "picture": "🫛",
+        "say": {
+          "en": "Peas. Hindi: मटर.",
+          "hi": "मटर। मटर।"
+        }
+      },
+      {
+        "symbol": "महल",
+        "label": {
+          "en": "Palace",
+          "hi": "महल"
+        },
+        "picture": "🏰",
+        "say": {
+          "en": "Palace. Hindi: महल.",
+          "hi": "महल। महल।"
+        }
+      },
+      {
+        "symbol": "मगर",
+        "label": {
+          "en": "Crocodile",
+          "hi": "मगर"
+        },
+        "picture": "🐊",
+        "say": {
+          "en": "Crocodile. Hindi: मगर.",
+          "hi": "मगर। मगर।"
+        }
+      },
+      {
+        "symbol": "शहर",
+        "label": {
+          "en": "City",
+          "hi": "शहर"
+        },
+        "picture": "🏙️",
+        "say": {
+          "en": "City. Hindi: शहर.",
+          "hi": "शहर। शहर।"
+        }
+      },
+      {
+        "symbol": "नयन",
+        "label": {
+          "en": "Eyes",
+          "hi": "नयन"
+        },
+        "picture": "👀",
+        "say": {
+          "en": "Eyes. Hindi: नयन.",
+          "hi": "नयन। नयन।"
+        }
+      }
+    ],
+    "trace": "कलम",
+    "play": [
+      {
+        "en": "Find कमल, then find कलम.",
+        "hi": "पहले कमल, फिर कलम खोजें।"
+      },
+      {
+        "en": "Point to a word related to food.",
+        "hi": "भोजन से जुड़ा शब्द चुनें।"
+      },
+      {
+        "en": "Say another familiar word beginning with म.",
+        "hi": "म से शुरू होने वाला कोई परिचित शब्द बोलें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which Hindi word means lotus?",
+          "hi": "🪷 के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "कमल",
+            "hi": "कमल"
+          },
+          {
+            "en": "कलम",
+            "hi": "कलम"
+          },
+          {
+            "en": "नमक",
+            "hi": "नमक"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "कमल means lotus.",
+          "hi": "सही शब्द कमल है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means pen?",
+          "hi": "लिखने की वस्तु के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "मटर",
+            "hi": "मटर"
+          },
+          {
+            "en": "कलम",
+            "hi": "कलम"
+          },
+          {
+            "en": "नमक",
+            "hi": "नमक"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "कलम means pen.",
+          "hi": "सही शब्द कलम है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means salt?",
+          "hi": "खाने में डालने वाला नमकीन पदार्थ के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "मटर",
+            "hi": "मटर"
+          },
+          {
+            "en": "महल",
+            "hi": "महल"
+          },
+          {
+            "en": "नमक",
+            "hi": "नमक"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "नमक means salt.",
+          "hi": "सही शब्द नमक है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means peas?",
+          "hi": "🫛 के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "मटर",
+            "hi": "मटर"
+          },
+          {
+            "en": "महल",
+            "hi": "महल"
+          },
+          {
+            "en": "मगर",
+            "hi": "मगर"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "मटर means peas.",
+          "hi": "सही शब्द मटर है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means palace?",
+          "hi": "राजसी बड़ी इमारत के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "शहर",
+            "hi": "शहर"
+          },
+          {
+            "en": "महल",
+            "hi": "महल"
+          },
+          {
+            "en": "मगर",
+            "hi": "मगर"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "महल means palace.",
+          "hi": "सही शब्द महल है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means crocodile?",
+          "hi": "मगरमच्छ के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "शहर",
+            "hi": "शहर"
+          },
+          {
+            "en": "नयन",
+            "hi": "नयन"
+          },
+          {
+            "en": "मगर",
+            "hi": "मगर"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "मगर means crocodile.",
+          "hi": "सही शब्द मगर है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means city?",
+          "hi": "बड़ी बस्ती के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "शहर",
+            "hi": "शहर"
+          },
+          {
+            "en": "नयन",
+            "hi": "नयन"
+          },
+          {
+            "en": "कमल",
+            "hi": "कमल"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "शहर means city.",
+          "hi": "सही शब्द शहर है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means eyes?",
+          "hi": "आँखें के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "कलम",
+            "hi": "कलम"
+          },
+          {
+            "en": "नयन",
+            "hi": "नयन"
+          },
+          {
+            "en": "कमल",
+            "hi": "कमल"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "नयन means eyes.",
+          "hi": "सही शब्द नयन है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which word ends in म?",
+          "hi": "कौन-सा शब्द म पर समाप्त होता है?"
+        },
+        "options": [
+          {
+            "en": "कमल",
+            "hi": "कमल"
+          },
+          {
+            "en": "मटर",
+            "hi": "मटर"
+          },
+          {
+            "en": "कलम",
+            "hi": "कलम"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "कलम ends in म.",
+          "hi": "कलम का अंतिम अक्षर म है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is the first letter of नमक?",
+          "hi": "नमक का पहला अक्षर कौन है?"
+        },
+        "options": [
+          {
+            "en": "न",
+            "hi": "न"
+          },
+          {
+            "en": "म",
+            "hi": "म"
+          },
+          {
+            "en": "क",
+            "hi": "क"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "नमक begins with न.",
+          "hi": "नमक की शुरुआत न से होती है।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-hindi-03",
+    "classId": "UKG",
+    "subject": "hindi",
+    "title": {
+      "en": "Meet ा, ि and ी",
+      "hi": "ा, ि और ी से मिलें"
+    },
+    "goal": {
+      "en": "Notice vowel marks in short words without rushing handwriting.",
+      "hi": "छोटे शब्दों में मात्राएँ पहचानें और धीरे पढ़ें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "A mark changes the sound",
+          "hi": "मात्रा से ध्वनि बदलती है"
+        },
+        "body": {
+          "en": "Compare र and रा, then दि and दी. Read the complete syllable rather than the mark alone.",
+          "hi": "र और रा को सुनें। ा लगने पर ध्वनि बदलती है। अब दि और दी सुनें। बड़े व्यक्ति एक-एक उदाहरण बोलें और बच्चा दोहराए। मात्रा को अकेला शब्द न समझें। जिस अक्षर से वह जुड़ी है, उसके साथ मिलाकर पढ़ें। राम और नाम में ा की मात्रा देखें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Look at short ि",
+          "hi": "ि को ध्यान से देखें"
+        },
+        "body": {
+          "en": "In दिन and किताब, ि is written before its consonant but read together with it.",
+          "hi": "दिन में ि की मात्रा द के पहले दिखाई देती है, पर पढ़ते समय दोनों साथ दि बनते हैं। किताब में पहला भाग कि है। गिलास में पहला भाग गि है। अक्षर और मात्रा पर बारी-बारी उँगली रखें, फिर पूरा शब्द बोलें। केवल मात्रा की जगह देखकर शब्द न बदलें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Compare familiar words",
+          "hi": "परिचित शब्द मिलाएँ"
+        },
+        "body": {
+          "en": "दीपक, तीन and सीता show ी. Some words contain more than one vowel mark.",
+          "hi": "दीपक और तीन में ी की मात्रा देखें। सीता में ी और ा दोनों हैं। गिलास और किताब में भी अलग-अलग मात्राएँ मिलती हैं। इस खेल में प्रश्न जिस अक्षर की मात्रा पूछे, उसी को देखें। बच्चे को सही शब्द सुनने और चुनने का समय दें; सुंदर लिखावट की परीक्षा न लें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "राम",
+        "label": {
+          "en": "Ram, a name",
+          "hi": "राम"
+        },
+        "picture": "🧒",
+        "say": {
+          "en": "Ram, a name. Hindi: राम.",
+          "hi": "राम। राम।"
+        }
+      },
+      {
+        "symbol": "नाम",
+        "label": {
+          "en": "Name",
+          "hi": "नाम"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Name. Hindi: नाम.",
+          "hi": "नाम। नाम।"
+        }
+      },
+      {
+        "symbol": "दिन",
+        "label": {
+          "en": "Day",
+          "hi": "दिन"
+        },
+        "picture": "☀️",
+        "say": {
+          "en": "Day. Hindi: दिन.",
+          "hi": "दिन। दिन।"
+        }
+      },
+      {
+        "symbol": "किताब",
+        "label": {
+          "en": "Book",
+          "hi": "किताब"
+        },
+        "picture": "📖",
+        "say": {
+          "en": "Book. Hindi: किताब.",
+          "hi": "किताब। किताब।"
+        }
+      },
+      {
+        "symbol": "दीपक",
+        "label": {
+          "en": "Lamp",
+          "hi": "दीपक"
+        },
+        "picture": "🪔",
+        "say": {
+          "en": "Lamp. Hindi: दीपक.",
+          "hi": "दीपक। दीपक।"
+        }
+      },
+      {
+        "symbol": "तीन",
+        "label": {
+          "en": "Three",
+          "hi": "तीन"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Three. Hindi: तीन.",
+          "hi": "तीन। तीन।"
+        }
+      },
+      {
+        "symbol": "सीता",
+        "label": {
+          "en": "Sita, a name",
+          "hi": "सीता"
+        },
+        "picture": "👧",
+        "say": {
+          "en": "Sita, a name. Hindi: सीता.",
+          "hi": "सीता। सीता।"
+        }
+      },
+      {
+        "symbol": "गिलास",
+        "label": {
+          "en": "Glass",
+          "hi": "गिलास"
+        },
+        "picture": "🥛",
+        "say": {
+          "en": "Glass. Hindi: गिलास.",
+          "hi": "गिलास। गिलास।"
+        }
+      }
+    ],
+    "trace": "राम",
+    "play": [
+      {
+        "en": "Point to ा in राम.",
+        "hi": "राम में ा की मात्रा पर उँगली रखें।"
+      },
+      {
+        "en": "Say दिन and दीपक slowly.",
+        "hi": "दिन और दीपक धीरे बोलें।"
+      },
+      {
+        "en": "Find a word with ी.",
+        "hi": "ी की मात्रा वाला शब्द खोजें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which word says राम?",
+          "hi": "राम नाम वाला शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "राम",
+            "hi": "राम"
+          },
+          {
+            "en": "दिन",
+            "hi": "दिन"
+          },
+          {
+            "en": "तीन",
+            "hi": "तीन"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "राम is the written name Ram.",
+          "hi": "राम एक नाम है। इसमें र के साथ ा की मात्रा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which word means name?",
+          "hi": "नाम बताने वाला सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "दीपक",
+            "hi": "दीपक"
+          },
+          {
+            "en": "नाम",
+            "hi": "नाम"
+          },
+          {
+            "en": "दिन",
+            "hi": "दिन"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "नाम means name.",
+          "hi": "नाम में न के साथ ा की मात्रा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which word means day?",
+          "hi": "दिवस के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "दीपक",
+            "hi": "दीपक"
+          },
+          {
+            "en": "राम",
+            "hi": "राम"
+          },
+          {
+            "en": "दिन",
+            "hi": "दिन"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "दिन means day.",
+          "hi": "दिन में द के साथ ि की मात्रा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which word names a book?",
+          "hi": "पढ़ने की पुस्तक वाला शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "किताब",
+            "hi": "किताब"
+          },
+          {
+            "en": "गिलास",
+            "hi": "गिलास"
+          },
+          {
+            "en": "नाम",
+            "hi": "नाम"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "किताब means book.",
+          "hi": "किताब पुस्तक को कहते हैं। पहले क के साथ ि की मात्रा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which word names a lamp?",
+          "hi": "दीया या दीप वाले शब्द को चुनें।"
+        },
+        "options": [
+          {
+            "en": "दिन",
+            "hi": "दिन"
+          },
+          {
+            "en": "दीपक",
+            "hi": "दीपक"
+          },
+          {
+            "en": "तीन",
+            "hi": "तीन"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "दीपक means lamp.",
+          "hi": "दीपक में द के साथ ी की मात्रा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which word says the number 3?",
+          "hi": "3 को शब्द में कौन कहता है?"
+        },
+        "options": [
+          {
+            "en": "नाम",
+            "hi": "नाम"
+          },
+          {
+            "en": "राम",
+            "hi": "राम"
+          },
+          {
+            "en": "तीन",
+            "hi": "तीन"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "तीन is the word for 3.",
+          "hi": "तीन का अर्थ 3 है। त के साथ ी की मात्रा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Find the written name सीता.",
+          "hi": "सीता नाम वाला शब्द खोजें।"
+        },
+        "options": [
+          {
+            "en": "सीता",
+            "hi": "सीता"
+          },
+          {
+            "en": "किताब",
+            "hi": "किताब"
+          },
+          {
+            "en": "गिलास",
+            "hi": "गिलास"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "सीता is the name Sita.",
+          "hi": "सीता में स के साथ ी और त के साथ ा की मात्रा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which word names a drinking glass?",
+          "hi": "पानी पीने के गिलास वाला शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "तीन",
+            "hi": "तीन"
+          },
+          {
+            "en": "गिलास",
+            "hi": "गिलास"
+          },
+          {
+            "en": "दीपक",
+            "hi": "दीपक"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "गिलास is a drinking glass.",
+          "hi": "गिलास में ग के साथ ि और ल के साथ ा की मात्रा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which vowel mark is attached to र in राम?",
+          "hi": "राम में र के साथ कौन-सी मात्रा है?"
+        },
+        "options": [
+          {
+            "en": "ि",
+            "hi": "ि"
+          },
+          {
+            "en": "ी",
+            "hi": "ी"
+          },
+          {
+            "en": "ा",
+            "hi": "ा"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "र + ा makes रा.",
+          "hi": "र में ा जोड़ने पर रा बनता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which vowel mark is attached to द in दिन?",
+          "hi": "दिन में द के साथ कौन-सी मात्रा है?"
+        },
+        "options": [
+          {
+            "en": "ि",
+            "hi": "ि"
+          },
+          {
+            "en": "ा",
+            "hi": "ा"
+          },
+          {
+            "en": "ी",
+            "hi": "ी"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "द + ि makes दि; the mark appears before the letter.",
+          "hi": "द में ि जोड़ने पर दि बनता है। मात्रा लिखने में अक्षर के पहले दिखाई देती है।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-hindi-04",
+    "classId": "UKG",
+    "subject": "hindi",
+    "title": {
+      "en": "More Vowel Marks in Words",
+      "hi": "शब्दों में और मात्राएँ"
+    },
+    "goal": {
+      "en": "Recognise ु, ू, े, ै, ो and ौ in familiar word parts.",
+      "hi": "परिचित शब्दों के भागों में ु, ू, े, ै, ो और ौ पहचानें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Listen to उ and ऊ sounds",
+          "hi": "उ और ऊ की ध्वनि सुनें"
+        },
+        "body": {
+          "en": "कुत्ता and गुड़ contain ु; फूल and झूला contain ू. A picture gives the word meaning.",
+          "hi": "कुत्ता और गुड़ बोलें। इनमें ु की मात्रा देखें। अब फूल और झूला बोलें। इनमें ू की मात्रा है। बड़े व्यक्ति ध्वनि धीरे सुनाएँ और बच्चा सही कार्ड चुने। गुड़ मीठा खाद्य पदार्थ है; उसके लिए गलत चित्र लगाने के बजाय शब्द का कार्ड रखा गया है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Meet ए and ऐ sounds",
+          "hi": "ए और ऐ की ध्वनि पहचानें"
+        },
+        "body": {
+          "en": "केला and सेब show े; मैना shows ै on म. Compare one syllable at a time.",
+          "hi": "केला और सेब देखें। पहले अक्षर में े की मात्रा पहचानें। मैना में म के साथ ै की मात्रा है। बच्चा पहले के, से और मै सुने, फिर पूरे शब्द बोले। हर मात्रा की लिखने की जगह अलग हो सकती है। सही आकार देखने के लिए बड़े अक्षरों वाले कार्ड का उपयोग करें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Meet ओ and औ sounds",
+          "hi": "ओ और औ की ध्वनि पहचानें"
+        },
+        "body": {
+          "en": "तोता starts with तो and नौका with नौ. Words may include additional marks elsewhere.",
+          "hi": "तोता का पहला भाग तो है और नौका का पहला भाग नौ है। तो में ो तथा नौ में ौ की मात्रा देखें। इन शब्दों में आगे ा की मात्रा भी है। प्रश्न जिस भाग के बारे में पूछे, उसी को पहचानें। सभी शब्द एक दिन में याद करने के बजाय खेल में बार-बार सुनें और चुनें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "कुत्ता",
+        "label": {
+          "en": "Dog",
+          "hi": "कुत्ता"
+        },
+        "picture": "🐕",
+        "say": {
+          "en": "Dog. Hindi: कुत्ता.",
+          "hi": "कुत्ता। कुत्ता।"
+        }
+      },
+      {
+        "symbol": "गुड़",
+        "label": {
+          "en": "Jaggery",
+          "hi": "गुड़"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Jaggery. Hindi: गुड़.",
+          "hi": "गुड़। गुड़।"
+        }
+      },
+      {
+        "symbol": "फूल",
+        "label": {
+          "en": "Flower",
+          "hi": "फूल"
+        },
+        "picture": "🌼",
+        "say": {
+          "en": "Flower. Hindi: फूल.",
+          "hi": "फूल। फूल।"
+        }
+      },
+      {
+        "symbol": "झूला",
+        "label": {
+          "en": "Swing",
+          "hi": "झूला"
+        },
+        "picture": "🔤",
+        "say": {
+          "en": "Swing. Hindi: झूला.",
+          "hi": "झूला। झूला।"
+        }
+      },
+      {
+        "symbol": "केला",
+        "label": {
+          "en": "Banana",
+          "hi": "केला"
+        },
+        "picture": "🍌",
+        "say": {
+          "en": "Banana. Hindi: केला.",
+          "hi": "केला। केला।"
+        }
+      },
+      {
+        "symbol": "सेब",
+        "label": {
+          "en": "Apple",
+          "hi": "सेब"
+        },
+        "picture": "🍎",
+        "say": {
+          "en": "Apple. Hindi: सेब.",
+          "hi": "सेब। सेब।"
+        }
+      },
+      {
+        "symbol": "मैना",
+        "label": {
+          "en": "Myna",
+          "hi": "मैना"
+        },
+        "picture": "🐦",
+        "say": {
+          "en": "Myna. Hindi: मैना.",
+          "hi": "मैना। मैना।"
+        }
+      },
+      {
+        "symbol": "तोता",
+        "label": {
+          "en": "Parrot",
+          "hi": "तोता"
+        },
+        "picture": "🦜",
+        "say": {
+          "en": "Parrot. Hindi: तोता.",
+          "hi": "तोता। तोता।"
+        }
+      },
+      {
+        "symbol": "नौका",
+        "label": {
+          "en": "Boat",
+          "hi": "नौका"
+        },
+        "picture": "⛵",
+        "say": {
+          "en": "Boat. Hindi: नौका.",
+          "hi": "नौका। नौका।"
+        }
+      }
+    ],
+    "trace": "फूल",
+    "play": [
+      {
+        "en": "Find फूल and point to ू.",
+        "hi": "फूल खोजें और ू की मात्रा दिखाएँ।"
+      },
+      {
+        "en": "Compare तो in तोता with नौ in नौका.",
+        "hi": "तोता के तो और नौका के नौ को मिलाएँ।"
+      },
+      {
+        "en": "Say the name of a fruit from these cards.",
+        "hi": "इन कार्डों में से किसी फल का नाम बोलें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which Hindi word means dog?",
+          "hi": "🐕 के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "कुत्ता",
+            "hi": "कुत्ता"
+          },
+          {
+            "en": "गुड़",
+            "hi": "गुड़"
+          },
+          {
+            "en": "फूल",
+            "hi": "फूल"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "कुत्ता means dog.",
+          "hi": "सही शब्द कुत्ता है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means jaggery?",
+          "hi": "गन्ने से बना मीठा पदार्थ के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "झूला",
+            "hi": "झूला"
+          },
+          {
+            "en": "गुड़",
+            "hi": "गुड़"
+          },
+          {
+            "en": "फूल",
+            "hi": "फूल"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "गुड़ means jaggery.",
+          "hi": "सही शब्द गुड़ है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means flower?",
+          "hi": "🌼 के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "झूला",
+            "hi": "झूला"
+          },
+          {
+            "en": "केला",
+            "hi": "केला"
+          },
+          {
+            "en": "फूल",
+            "hi": "फूल"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "फूल means flower.",
+          "hi": "सही शब्द फूल है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means swing?",
+          "hi": "बैठकर आगे-पीछे झूलने की वस्तु के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "झूला",
+            "hi": "झूला"
+          },
+          {
+            "en": "केला",
+            "hi": "केला"
+          },
+          {
+            "en": "सेब",
+            "hi": "सेब"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "झूला means swing.",
+          "hi": "सही शब्द झूला है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means banana?",
+          "hi": "🍌 के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "मैना",
+            "hi": "मैना"
+          },
+          {
+            "en": "केला",
+            "hi": "केला"
+          },
+          {
+            "en": "सेब",
+            "hi": "सेब"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "केला means banana.",
+          "hi": "सही शब्द केला है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means apple?",
+          "hi": "🍎 के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "मैना",
+            "hi": "मैना"
+          },
+          {
+            "en": "तोता",
+            "hi": "तोता"
+          },
+          {
+            "en": "सेब",
+            "hi": "सेब"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "सेब means apple.",
+          "hi": "सही शब्द सेब है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means myna?",
+          "hi": "मैना पक्षी के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "मैना",
+            "hi": "मैना"
+          },
+          {
+            "en": "तोता",
+            "hi": "तोता"
+          },
+          {
+            "en": "नौका",
+            "hi": "नौका"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "मैना means myna.",
+          "hi": "सही शब्द मैना है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means parrot?",
+          "hi": "🦜 के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "कुत्ता",
+            "hi": "कुत्ता"
+          },
+          {
+            "en": "तोता",
+            "hi": "तोता"
+          },
+          {
+            "en": "नौका",
+            "hi": "नौका"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "तोता means parrot.",
+          "hi": "सही शब्द तोता है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which Hindi word means boat?",
+          "hi": "⛵ के लिए सही शब्द चुनें।"
+        },
+        "options": [
+          {
+            "en": "कुत्ता",
+            "hi": "कुत्ता"
+          },
+          {
+            "en": "गुड़",
+            "hi": "गुड़"
+          },
+          {
+            "en": "नौका",
+            "hi": "नौका"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "नौका means boat.",
+          "hi": "सही शब्द नौका है। इसे धीरे से पढ़ें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which vowel mark is attached to न in नौका?",
+          "hi": "नौका में न के साथ कौन-सी मात्रा है?"
+        },
+        "options": [
+          {
+            "en": "ौ",
+            "hi": "ौ"
+          },
+          {
+            "en": "ो",
+            "hi": "ो"
+          },
+          {
+            "en": "ु",
+            "hi": "ु"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "न + ौ makes नौ.",
+          "hi": "न में ौ की मात्रा जोड़ने पर नौ बनता है।"
+        }
+      }
+    ]
+  }
+]

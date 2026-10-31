@@ -1,0 +1,19 @@
+import fs from 'node:fs';
+const root=new URL('../',import.meta.url),read=p=>JSON.parse(fs.readFileSync(new URL(p,root),'utf8'));
+const B=(en,hi)=>({en,hi}),plans=read('science10-source/scene-specs.json');
+const select=(id,en,hi,options)=>({id,label:B(en,hi),options:options.map(([value,en,hi])=>({value,label:B(en,hi)}))});
+const selectors={
+ 'ten-reaction-types':[select('type','Reaction type','अभिक्रिया का प्रकार',[[0,'Combination','संयोजन'],[1,'Decomposition','अपघटन'],[2,'Displacement','विस्थापन'],[3,'Precipitation','अवक्षेपण']])],
+ 'ten-rusting':['water','oxygen'].map(id=>select(id,id==='water'?'Water':'Oxygen',id==='water'?'जल':'ऑक्सीजन',[[1,'Present','उपस्थित'],[0,'Absent','अनुपस्थित']])),
+ 'ten-photosynthesis':[select('co2','Carbon dioxide','कार्बन डाइऑक्साइड',[[1,'Available','उपलब्ध'],[0,'Absent','अनुपस्थित']])],
+ 'ten-asexual':[select('organism','Organism','जीव',[[0,'Amoeba: binary fission','अमीबा: द्विखंडन'],[1,'Yeast: budding','यीस्ट: मुकुलन']])],
+ 'ten-resistors':[select('topology','Connection','संयोजन',[[0,'Series','श्रेणीक्रम'],[1,'Parallel','पार्श्वक्रम']])],
+ 'ten-waste':[select('waste','Waste type','अपशिष्ट का प्रकार',[[0,'Biodegradable','जैव निम्नीकरणीय'],[1,'Conventional plastic','सामान्य प्लास्टिक']])]
+};
+const legends=read('science10-source/legends.json'),stageLegend=[['#f0c775','Current stage / moving signal','वर्तमान चरण / गतिशील संकेत'],['#a5dfa5','Earlier stages','पिछले चरण'],['#8eacb6','Later stages','आगे के चरण']];
+const chapters=plans.map((plan,i)=>{const c=read(`science10-source/chapter-${String(i+1).padStart(2,'0')}.json`);return{...c,id:plan.id,title:plan.title,unit:plan.unit,scenes:plan.scenes.map((spec,j)=>{const authored=c.scenes.find(s=>s.id===spec.id)||c.scenes[j];if(!authored)throw Error(`Missing scene ${spec.id}`);return{...authored,...spec,noteIndex:authored.noteIndex??spec.noteIndex,legend:(legends[spec.id]||stageLegend).map(([color,en,hi])=>({color,label:B(en,hi)})),selectors:selectors[spec.id]||[],...(spec.id==='ten-ohm'?{graph:{title:B('Voltage versus current','धारा के साथ विभवांतर'),xLabel:B('Current I (A)','धारा I (A)'),yLabel:B('Voltage V (V)','विभवांतर V (V)'),readout:0,yMin:0,yMax:12}}:{})}})}});
+const old=read('dist/data/class-10.json');
+const output={...old,id:'10',title:B('Class 10 Science','कक्षा 10 विज्ञान'),editionBasis:B('NCERT Class 10 Science, 13-chapter edition; aligned to the official UP Board 2026–27 Science syllabus. Original study explanations; consult the prescribed textbook for experiments and exercises.','NCERT कक्षा 10 विज्ञान के 13 अध्यायों वाला संस्करण; आधिकारिक यूपी बोर्ड 2026–27 विज्ञान पाठ्यक्रम के अनुरूप। ये मौलिक अध्ययन व्याख्याएँ हैं; प्रयोग और अभ्यास के लिए निर्धारित पुस्तक भी पढ़ें।'),sources:[{title:'UP Board Science syllabus 2026–27',url:'https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf'},{title:'NCERT Class 10 Science',url:'https://ncert.nic.in/textbook.php?jesc1=0-13'}],unitMarks:{chemistry:20,biology:20,naturalPhenomena:12,electricity:13,environment:5},chapters};
+const json=JSON.stringify(output,null,2)+'\n';if(/[०-९]/u.test(json))throw Error('Devanagari numeral found');fs.writeFileSync(new URL('dist/data/class-10.json',root),json);console.log(`Class 10: ${chapters.length} chapters, ${chapters.reduce((n,c)=>n+c.scenes.length,0)} scenes`);
+
+fs.writeFileSync(new URL('docs/class10-content-audit.json',root),JSON.stringify(chapters.map(c=>({id:c.id,title:c.title,scenes:c.scenes.length,noteSections:c.notes.length,noteWords:Object.fromEntries(['en','hi'].map(lang=>[lang,c.notes.flatMap(n=>[...n.paragraphs,...n.points]).map(b=>b[lang]).join(' ').trim().split(/\s+/).length])),examples:c.examples.length,mcqs:c.quiz.length,optionReasons:c.quiz.reduce((n,q)=>n+q.options.length,0),writtenQuestions:c.written.length,missions:c.scenes.reduce((n,s)=>n+s.missions.length,0)})),null,2)+'\n');

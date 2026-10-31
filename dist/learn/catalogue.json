@@ -1,0 +1,1191 @@
+[
+  {
+    "id": "social",
+    "name": {
+      "en": "Samajik Darshan",
+      "hi": "सामाजिक दर्शन"
+    },
+    "key": "samajik-darshan-v1",
+    "groups": [
+      {
+        "id": "history",
+        "title": {
+          "en": "History",
+          "hi": "इतिहास"
+        },
+        "chapters": [
+          {
+            "id": "history-1",
+            "number": 1,
+            "title": {
+              "en": "The French Revolution",
+              "hi": "फ्रांसीसी क्रांति"
+            },
+            "available": true,
+            "engine": "timeline"
+          },
+          {
+            "id": "history-2",
+            "number": 2,
+            "title": {
+              "en": "Socialism in Europe and the Russian Revolution",
+              "hi": "यूरोप में समाजवाद एवं रूसी क्रांति"
+            },
+            "available": true,
+            "engine": "timeline"
+          },
+          {
+            "id": "history-3",
+            "number": 3,
+            "title": {
+              "en": "Nazism and the Rise of Hitler",
+              "hi": "नात्सीवाद और हिटलर का उदय"
+            },
+            "available": true,
+            "engine": "timeline"
+          },
+          {
+            "id": "history-4",
+            "number": 4,
+            "title": {
+              "en": "Forest Society and Colonialism",
+              "hi": "वन्य समाज एवं उपनिवेशवाद"
+            },
+            "available": true,
+            "engine": "timeline"
+          },
+          {
+            "id": "history-5",
+            "number": 5,
+            "title": {
+              "en": "Pastoralists in the Modern World",
+              "hi": "आधुनिक विश्व में चरवाहे"
+            },
+            "available": true,
+            "engine": "timeline"
+          }
+        ]
+      },
+      {
+        "id": "geography",
+        "title": {
+          "en": "Geography",
+          "hi": "भूगोल"
+        },
+        "chapters": [
+          {
+            "id": "geography-1",
+            "number": 1,
+            "title": {
+              "en": "India – Size and Location",
+              "hi": "भारत – आकार और स्थिति"
+            },
+            "available": true,
+            "engine": "map"
+          },
+          {
+            "id": "geography-2",
+            "number": 2,
+            "title": {
+              "en": "Physical Features of India",
+              "hi": "भारत का भौतिक स्वरूप"
+            },
+            "available": true,
+            "engine": "map"
+          },
+          {
+            "id": "geography-3",
+            "number": 3,
+            "title": {
+              "en": "Drainage",
+              "hi": "अपवाह"
+            },
+            "available": true,
+            "engine": "map"
+          },
+          {
+            "id": "geography-4",
+            "number": 4,
+            "title": {
+              "en": "Climate",
+              "hi": "जलवायु"
+            },
+            "available": true,
+            "engine": "map"
+          },
+          {
+            "id": "geography-5",
+            "number": 5,
+            "title": {
+              "en": "Natural Vegetation and Wildlife",
+              "hi": "प्राकृतिक वनस्पति तथा वन्य प्राणी"
+            },
+            "available": true,
+            "engine": "map"
+          },
+          {
+            "id": "geography-6",
+            "number": 6,
+            "title": {
+              "en": "Population",
+              "hi": "जनसंख्या"
+            },
+            "available": true,
+            "engine": "map"
+          }
+        ]
+      },
+      {
+        "id": "civics",
+        "title": {
+          "en": "Civics",
+          "hi": "नागरिक शास्त्र"
+        },
+        "chapters": [
+          {
+            "id": "civics-1",
+            "number": 1,
+            "title": {
+              "en": "What Is Democracy? Why Democracy?",
+              "hi": "लोकतंत्र क्या? लोकतंत्र क्यों?"
+            },
+            "available": true,
+            "engine": "diagram"
+          },
+          {
+            "id": "civics-2",
+            "number": 2,
+            "title": {
+              "en": "Constitutional Design",
+              "hi": "संविधान निर्माण"
+            },
+            "available": true,
+            "engine": "diagram"
+          },
+          {
+            "id": "civics-3",
+            "number": 3,
+            "title": {
+              "en": "Electoral Politics",
+              "hi": "चुनावी राजनीति"
+            },
+            "available": true,
+            "engine": "diagram"
+          },
+          {
+            "id": "civics-4",
+            "number": 4,
+            "title": {
+              "en": "Working of Institutions",
+              "hi": "संस्थाओं का कामकाज"
+            },
+            "available": true,
+            "engine": "diagram"
+          },
+          {
+            "id": "civics-5",
+            "number": 5,
+            "title": {
+              "en": "Democratic Rights",
+              "hi": "लोकतांत्रिक अधिकार"
+            },
+            "available": true,
+            "engine": "diagram"
+          }
+        ]
+      },
+      {
+        "id": "economics",
+        "title": {
+          "en": "Economics",
+          "hi": "अर्थशास्त्र"
+        },
+        "chapters": [
+          {
+            "id": "economics-1",
+            "number": 1,
+            "title": {
+              "en": "The Story of Village Palampur",
+              "hi": "पालमपुर गाँव की कहानी"
+            },
+            "available": true,
+            "engine": "chart"
+          },
+          {
+            "id": "economics-2",
+            "number": 2,
+            "title": {
+              "en": "People as Resource",
+              "hi": "संसाधन के रूप में लोग"
+            },
+            "available": true,
+            "engine": "chart"
+          },
+          {
+            "id": "economics-3",
+            "number": 3,
+            "title": {
+              "en": "Poverty as a Challenge",
+              "hi": "निर्धनता: एक चुनौती"
+            },
+            "available": true,
+            "engine": "chart"
+          },
+          {
+            "id": "economics-4",
+            "number": 4,
+            "title": {
+              "en": "Food Security in India",
+              "hi": "भारत में खाद्य सुरक्षा"
+            },
+            "available": true,
+            "engine": "chart"
+          }
+        ]
+      }
+    ],
+    "classes": {
+      "10": {
+        "id": "10",
+        "groups": [
+          {
+            "id": "history",
+            "title": {
+              "en": "History",
+              "hi": "इतिहास"
+            },
+            "chapters": [
+              {
+                "id": "ten-history-1",
+                "number": 1,
+                "title": {
+                  "en": "The Rise of Nationalism in Europe",
+                  "hi": "यूरोप में राष्ट्रवाद का उदय"
+                },
+                "engine": "timeline",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-history-2",
+                "number": 2,
+                "title": {
+                  "en": "Nationalism in India",
+                  "hi": "भारत में राष्ट्रवाद"
+                },
+                "engine": "timeline",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-history-3",
+                "number": 3,
+                "title": {
+                  "en": "The Making of a Global World",
+                  "hi": "भूमंडलीकृत विश्व का बनना"
+                },
+                "engine": "timeline",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-history-4",
+                "number": 4,
+                "title": {
+                  "en": "The Age of Industrialisation",
+                  "hi": "औद्योगीकरण का युग"
+                },
+                "engine": "timeline",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-history-5",
+                "number": 5,
+                "title": {
+                  "en": "Print Culture and the Modern World",
+                  "hi": "मुद्रण संस्कृति और आधुनिक दुनिया"
+                },
+                "engine": "timeline",
+                "available": true,
+                "quizCount": 10
+              }
+            ]
+          },
+          {
+            "id": "geography",
+            "title": {
+              "en": "Geography",
+              "hi": "भूगोल"
+            },
+            "chapters": [
+              {
+                "id": "ten-geography-1",
+                "number": 1,
+                "title": {
+                  "en": "Resources and Development",
+                  "hi": "संसाधन एवं विकास"
+                },
+                "engine": "map",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-geography-2",
+                "number": 2,
+                "title": {
+                  "en": "Forest and Wildlife Resources",
+                  "hi": "वन एवं वन्य जीव संसाधन"
+                },
+                "engine": "map",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-geography-3",
+                "number": 3,
+                "title": {
+                  "en": "Water Resources",
+                  "hi": "जल संसाधन"
+                },
+                "engine": "map",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-geography-4",
+                "number": 4,
+                "title": {
+                  "en": "Agriculture",
+                  "hi": "कृषि"
+                },
+                "engine": "map",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-geography-5",
+                "number": 5,
+                "title": {
+                  "en": "Minerals and Energy Resources",
+                  "hi": "खनिज तथा ऊर्जा संसाधन"
+                },
+                "engine": "map",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-geography-6",
+                "number": 6,
+                "title": {
+                  "en": "Manufacturing Industries",
+                  "hi": "विनिर्माण उद्योग"
+                },
+                "engine": "map",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-geography-7",
+                "number": 7,
+                "title": {
+                  "en": "Lifelines of National Economy",
+                  "hi": "राष्ट्रीय अर्थव्यवस्था की जीवन रेखाएँ"
+                },
+                "engine": "map",
+                "available": true,
+                "quizCount": 10
+              }
+            ]
+          },
+          {
+            "id": "civics",
+            "title": {
+              "en": "Civics",
+              "hi": "नागरिक शास्त्र"
+            },
+            "chapters": [
+              {
+                "id": "ten-civics-1",
+                "number": 1,
+                "title": {
+                  "en": "Power-sharing",
+                  "hi": "सत्ता की साझेदारी"
+                },
+                "engine": "diagram",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-civics-2",
+                "number": 2,
+                "title": {
+                  "en": "Federalism",
+                  "hi": "संघवाद"
+                },
+                "engine": "diagram",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-civics-3",
+                "number": 3,
+                "title": {
+                  "en": "Gender, Religion and Caste",
+                  "hi": "जाति, धर्म और लैंगिक मसले"
+                },
+                "engine": "diagram",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-civics-4",
+                "number": 4,
+                "title": {
+                  "en": "Political Parties",
+                  "hi": "राजनीतिक दल"
+                },
+                "engine": "diagram",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-civics-5",
+                "number": 5,
+                "title": {
+                  "en": "Outcomes of Democracy",
+                  "hi": "लोकतंत्र के परिणाम"
+                },
+                "engine": "diagram",
+                "available": true,
+                "quizCount": 10
+              }
+            ]
+          },
+          {
+            "id": "economics",
+            "title": {
+              "en": "Economics",
+              "hi": "अर्थशास्त्र"
+            },
+            "chapters": [
+              {
+                "id": "ten-economics-1",
+                "number": 1,
+                "title": {
+                  "en": "Development",
+                  "hi": "विकास"
+                },
+                "engine": "chart",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-economics-2",
+                "number": 2,
+                "title": {
+                  "en": "Sectors of the Indian Economy",
+                  "hi": "भारतीय अर्थव्यवस्था के क्षेत्रक"
+                },
+                "engine": "chart",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-economics-3",
+                "number": 3,
+                "title": {
+                  "en": "Money and Credit",
+                  "hi": "मुद्रा और साख"
+                },
+                "engine": "chart",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-economics-4",
+                "number": 4,
+                "title": {
+                  "en": "Globalisation and the Indian Economy",
+                  "hi": "वैश्वीकरण और भारतीय अर्थव्यवस्था"
+                },
+                "engine": "chart",
+                "available": true,
+                "quizCount": 10
+              },
+              {
+                "id": "ten-economics-5",
+                "number": 5,
+                "title": {
+                  "en": "Consumer Rights",
+                  "hi": "उपभोक्ता अधिकार"
+                },
+                "engine": "chart",
+                "available": true,
+                "quizCount": 10
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "english",
+    "name": {
+      "en": "Angrezi Darshan",
+      "hi": "अंग्रेज़ी दर्शन"
+    },
+    "key": "angrezi-darshan-v1",
+    "groups": [
+      {
+        "id": "beehive",
+        "title": {
+          "en": "Beehive · Prose",
+          "hi": "बीहाइव · गद्य"
+        },
+        "chapters": [
+          {
+            "id": "beehive-1",
+            "number": 1,
+            "title": {
+              "en": "The Fun They Had",
+              "hi": "उनकी कल्पना का आनंद"
+            },
+            "available": true,
+            "engine": "text"
+          },
+          {
+            "id": "beehive-2",
+            "number": 2,
+            "title": {
+              "en": "The Sound of Music",
+              "hi": "संगीत की ध्वनि"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "beehive-3",
+            "number": 3,
+            "title": {
+              "en": "The Little Girl",
+              "hi": "छोटी लड़की"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "beehive-4",
+            "number": 4,
+            "title": {
+              "en": "A Truly Beautiful Mind",
+              "hi": "एक वास्तव में सुंदर मस्तिष्क"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "beehive-5",
+            "number": 5,
+            "title": {
+              "en": "The Snake and the Mirror",
+              "hi": "साँप और दर्पण"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "beehive-6",
+            "number": 6,
+            "title": {
+              "en": "My Childhood",
+              "hi": "मेरा बचपन"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "beehive-7",
+            "number": 7,
+            "title": {
+              "en": "Packing",
+              "hi": "सामान बाँधना"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "beehive-8",
+            "number": 8,
+            "title": {
+              "en": "Reach for the Top",
+              "hi": "शिखर की ओर"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "beehive-9",
+            "number": 9,
+            "title": {
+              "en": "The Bond of Love",
+              "hi": "प्रेम का बंधन"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "beehive-10",
+            "number": 10,
+            "title": {
+              "en": "Kathmandu",
+              "hi": "काठमांडू"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "beehive-11",
+            "number": 11,
+            "title": {
+              "en": "If I Were You",
+              "hi": "यदि मैं तुम्हारी जगह होता"
+            },
+            "available": false,
+            "engine": "text"
+          }
+        ]
+      },
+      {
+        "id": "poetry",
+        "title": {
+          "en": "Beehive · Poetry",
+          "hi": "बीहाइव · कविता"
+        },
+        "chapters": [
+          {
+            "id": "poetry-1",
+            "number": 1,
+            "title": {
+              "en": "The Road Not Taken",
+              "hi": "न चुना गया रास्ता"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "poetry-2",
+            "number": 2,
+            "title": {
+              "en": "Wind",
+              "hi": "पवन"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "poetry-3",
+            "number": 3,
+            "title": {
+              "en": "Rain on the Roof",
+              "hi": "छत पर वर्षा"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "poetry-4",
+            "number": 4,
+            "title": {
+              "en": "The Lake Isle of Innisfree",
+              "hi": "इनिसफ्री का झील-द्वीप"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "poetry-5",
+            "number": 5,
+            "title": {
+              "en": "A Legend of the Northland",
+              "hi": "उत्तर देश की कथा"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "poetry-6",
+            "number": 6,
+            "title": {
+              "en": "No Men Are Foreign",
+              "hi": "कोई मनुष्य पराया नहीं"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "poetry-7",
+            "number": 7,
+            "title": {
+              "en": "The Duck and the Kangaroo",
+              "hi": "बत्तख और कंगारू"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "poetry-8",
+            "number": 8,
+            "title": {
+              "en": "On Killing a Tree",
+              "hi": "वृक्ष को मारने पर"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "poetry-9",
+            "number": 9,
+            "title": {
+              "en": "The Snake Trying",
+              "hi": "साँप का प्रयास"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "poetry-10",
+            "number": 10,
+            "title": {
+              "en": "A Slumber Did My Spirit Seal",
+              "hi": "निद्रा ने मेरी आत्मा को ढका"
+            },
+            "available": false,
+            "engine": "text"
+          }
+        ]
+      },
+      {
+        "id": "moments",
+        "title": {
+          "en": "Moments",
+          "hi": "मोमेंट्स"
+        },
+        "chapters": [
+          {
+            "id": "moments-1",
+            "number": 1,
+            "title": {
+              "en": "The Lost Child",
+              "hi": "खोया बच्चा"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "moments-2",
+            "number": 2,
+            "title": {
+              "en": "The Adventures of Toto",
+              "hi": "टोटो के कारनामे"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "moments-3",
+            "number": 3,
+            "title": {
+              "en": "Iswaran the Storyteller",
+              "hi": "कहानीकार ईश्वरन"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "moments-4",
+            "number": 4,
+            "title": {
+              "en": "In the Kingdom of Fools",
+              "hi": "मूर्खों के राज्य में"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "moments-5",
+            "number": 5,
+            "title": {
+              "en": "The Happy Prince",
+              "hi": "खुश राजकुमार"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "moments-6",
+            "number": 6,
+            "title": {
+              "en": "Weathering the Storm in Ersama",
+              "hi": "एरसामा के तूफ़ान से जूझना"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "moments-7",
+            "number": 7,
+            "title": {
+              "en": "The Last Leaf",
+              "hi": "अंतिम पत्ता"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "moments-8",
+            "number": 8,
+            "title": {
+              "en": "A House Is Not a Home",
+              "hi": "मकान और घर"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "moments-9",
+            "number": 9,
+            "title": {
+              "en": "The Accidental Tourist",
+              "hi": "अनायास पर्यटक"
+            },
+            "available": false,
+            "engine": "text"
+          },
+          {
+            "id": "moments-10",
+            "number": 10,
+            "title": {
+              "en": "The Beggar",
+              "hi": "भिखारी"
+            },
+            "available": false,
+            "engine": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art",
+    "name": {
+      "en": "Kala Darshan",
+      "hi": "कला दर्शन"
+    },
+    "key": "kala-darshan-v1",
+    "groups": [
+      {
+        "id": "stilllife",
+        "title": {
+          "en": "Still Life",
+          "hi": "वस्तु चित्रण"
+        },
+        "chapters": [
+          {
+            "id": "stilllife-1",
+            "number": 1,
+            "title": {
+              "en": "Clay Pot",
+              "hi": "मिट्टी का घड़ा"
+            },
+            "available": true,
+            "engine": "step"
+          },
+          {
+            "id": "stilllife-2",
+            "number": 2,
+            "title": {
+              "en": "Fruit Study",
+              "hi": "फलों का अध्ययन"
+            },
+            "available": true,
+            "engine": "step"
+          },
+          {
+            "id": "stilllife-3",
+            "number": 3,
+            "title": {
+              "en": "Jug Study",
+              "hi": "जग का अध्ययन"
+            },
+            "available": true,
+            "engine": "step"
+          },
+          {
+            "id": "stilllife-4",
+            "number": 4,
+            "title": {
+              "en": "Drapery",
+              "hi": "कपड़े की सलवटें"
+            },
+            "available": true,
+            "engine": "step"
+          }
+        ]
+      },
+      {
+        "id": "applied",
+        "title": {
+          "en": "Applied Art / Design",
+          "hi": "व्यावहारिक कला / डिजाइन"
+        },
+        "chapters": [
+          {
+            "id": "applied-1",
+            "number": 1,
+            "title": {
+              "en": "Decorative Borders",
+              "hi": "सजावटी किनारे"
+            },
+            "available": true,
+            "engine": "step"
+          },
+          {
+            "id": "applied-2",
+            "number": 2,
+            "title": {
+              "en": "Poster Design",
+              "hi": "पोस्टर डिजाइन"
+            },
+            "available": true,
+            "engine": "step"
+          },
+          {
+            "id": "applied-3",
+            "number": 3,
+            "title": {
+              "en": "Lettering",
+              "hi": "अक्षरांकन"
+            },
+            "available": true,
+            "engine": "step"
+          }
+        ]
+      },
+      {
+        "id": "geometric",
+        "title": {
+          "en": "Geometric Drawing",
+          "hi": "ज्यामितीय चित्रण"
+        },
+        "chapters": [
+          {
+            "id": "geometric-1",
+            "number": 1,
+            "title": {
+              "en": "Geometric Patterns",
+              "hi": "ज्यामितीय पैटर्न"
+            },
+            "available": true,
+            "engine": "geodraw"
+          },
+          {
+            "id": "geometric-2",
+            "number": 2,
+            "title": {
+              "en": "Rangoli-style Design",
+              "hi": "रंगोली शैली का डिजाइन"
+            },
+            "available": true,
+            "engine": "geodraw"
+          }
+        ]
+      }
+    ],
+    "classes": {
+      "10": {
+        "id": "10",
+        "groups": [
+          {
+            "id": "foundation",
+            "title": {
+              "en": "Art Foundations",
+              "hi": "कला की बुनियाद"
+            },
+            "chapters": [
+              {
+                "id": "ten-art-1",
+                "number": 1,
+                "title": {
+                  "en": "Indian Art and Materials",
+                  "hi": "भारतीय कला और चित्रण सामग्री"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              }
+            ]
+          },
+          {
+            "id": "landscape",
+            "title": {
+              "en": "Natural Scenery",
+              "hi": "प्राकृतिक दृश्य"
+            },
+            "chapters": [
+              {
+                "id": "ten-art-2",
+                "number": 2,
+                "title": {
+                  "en": "Dawn Landscape",
+                  "hi": "उषाकाल का प्राकृतिक दृश्य"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              },
+              {
+                "id": "ten-art-3",
+                "number": 3,
+                "title": {
+                  "en": "Village and Hill Landscape",
+                  "hi": "ग्रामीण और पहाड़ी दृश्य"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              }
+            ]
+          },
+          {
+            "id": "design",
+            "title": {
+              "en": "Applied Design",
+              "hi": "आलेखन"
+            },
+            "chapters": [
+              {
+                "id": "ten-art-4",
+                "number": 4,
+                "title": {
+                  "en": "Circular Floral Design",
+                  "hi": "वृत्ताकार पुष्प आलेखन"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              },
+              {
+                "id": "ten-art-5",
+                "number": 5,
+                "title": {
+                  "en": "Quadrilateral Design",
+                  "hi": "चतुर्भुज में आलेखन"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              }
+            ]
+          },
+          {
+            "id": "technical",
+            "title": {
+              "en": "Technical Drawing",
+              "hi": "प्राविधिक चित्रण"
+            },
+            "chapters": [
+              {
+                "id": "ten-art-6",
+                "number": 6,
+                "title": {
+                  "en": "Tangents to a Circle",
+                  "hi": "वृत्त की स्पर्श रेखाएँ"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              },
+              {
+                "id": "ten-art-7",
+                "number": 7,
+                "title": {
+                  "en": "Inscribed and Circumscribed Figures",
+                  "hi": "अंतर्गत और परिगत आकृतियाँ"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              },
+              {
+                "id": "ten-art-8",
+                "number": 8,
+                "title": {
+                  "en": "Equal-area Constructions",
+                  "hi": "समान क्षेत्रफल की रचनाएँ"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              },
+              {
+                "id": "ten-art-9",
+                "number": 9,
+                "title": {
+                  "en": "Plain and Diagonal Scales",
+                  "hi": "साधारण और कर्णवत मापनियाँ"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              }
+            ]
+          },
+          {
+            "id": "memory",
+            "title": {
+              "en": "Memory Drawing",
+              "hi": "स्मृति चित्रण"
+            },
+            "chapters": [
+              {
+                "id": "ten-art-10",
+                "number": 10,
+                "title": {
+                  "en": "Vessel Memory Drawing",
+                  "hi": "बर्तनों का स्मृति चित्रण"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              },
+              {
+                "id": "ten-art-11",
+                "number": 11,
+                "title": {
+                  "en": "Fruit and Vegetable Memory Drawing",
+                  "hi": "फल और सब्जियों का स्मृति चित्रण"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              },
+              {
+                "id": "ten-art-12",
+                "number": 12,
+                "title": {
+                  "en": "Combined Memory Composition",
+                  "hi": "संयुक्त स्मृति संयोजन"
+                },
+                "engine": "step",
+                "available": true,
+                "quizCount": 0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

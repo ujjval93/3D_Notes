@@ -1,0 +1,1044 @@
+{
+  "number": 12,
+  "id": "physics12-12",
+  "title": {
+    "en": "Atoms",
+    "hi": "परमाणु"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Alpha scattering as an experiment",
+        "hi": "अल्फा प्रकीर्णन एक प्रयोग के रूप में"
+      },
+      "paragraphs": [
+        {
+          "en": "Most alpha particles traverse a thin foil with little deflection; a small fraction scatter strongly. The distribution, not merely one trajectory, reveals a small concentrated positive centre. Scattering is interpreted through interactions with the target rather than by treating a foil as a solid wall.",
+          "hi": "रदरफोर्ड प्रकीर्णन प्रयोग (Rutherford scattering) में तेज अल्फा कणों का संकीर्ण पुंज बहुत पतली धातु पन्नी पर डाला गया। अल्फा कण धनावेशित हीलियम नाभिक होते हैं। चारों ओर रखी संसूचक व्यवस्था से अलग दिशाओं में पहुँचने वाले कण गिने गए। अधिकांश कण बहुत कम विचलन के साथ आगे गए, कुछ बड़े कोण पर मुड़े और अत्यंत कम लगभग पीछे लौटे। सभी कण नाभिक से सीधे टकराते हैं, ऐसा निष्कर्ष नहीं निकलता। पतली पन्नी इसलिए उपयोगी है कि एक ही कण के अनेक प्रकीर्णनों की संभावना घटे और व्याख्या सरल हो। पीछे लौटने वाले दुर्लभ कण विशेष महत्वपूर्ण थे, क्योंकि फैला हुआ दुर्बल धनावेश उन्हें पर्याप्त बल नहीं दे सकता था। प्रेक्षण को केवल चित्र में बने 1 पथ से न आँकें। विभिन्न कोणों पर गिनती का अनुपात और उसकी प्रायिकता भी प्रयोग का हिस्सा है। अतः कम घटना भी संरचना के बारे में महत्वपूर्ण प्रमाण बन सकती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A large-angle event is rare; a drawing that shows many such paths is enlarged for explanation.",
+          "hi": "बड़े कोण का प्रकीर्णन दुर्लभ है। समझाने वाला चित्र कई मुड़े पथ दिखाए तो उसे वास्तविक अनुपात न मानें; कण संख्या और दृश्य की सीमा दोनों पढ़ें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why was a thin foil used?",
+          "hi": "पतली पन्नी क्यों ली गई?"
+        },
+        "answer": {
+          "en": "It reduces multiple scattering and makes individual deflection easier to interpret.",
+          "hi": "इससे बहु-प्रकीर्णन घटता और अलग विचलन समझना सरल होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "The nuclear model and its evidence",
+        "hi": "नाभिकीय मॉडल और प्रमाण"
+      },
+      "paragraphs": [
+        {
+          "en": "The atom is largely empty space, with most mass and positive charge concentrated in a tiny nucleus. Electrons account for neutralisation. Nuclear radius and atomic radius differ by orders of magnitude; their areas and volumes consequently differ by still larger factors.",
+          "hi": "प्रकीर्णन से नाभिकीय मॉडल (Nuclear model) बना। परमाणु का लगभग सारा धनावेश और अधिकांश द्रव्यमान बहुत छोटे केंद्रीय नाभिक में केंद्रित है। उसके बाहर इलेक्ट्रॉन हैं और परमाणु का अधिकांश आयतन तुलनात्मक रूप से खाली है। सामान्य परमाणु का आकार लगभग 10^-10 m और नाभिक का आकार लगभग 10^-15 से 10^-14 m क्रम का है; ये संकेतात्मक परिमाण हैं। अलग तत्वों के लिए एक ही संख्या बिल्कुल लागू न मानें। परमाणु उदासीन हो तो नाभिक के +Ze आवेश का संतुलन Z इलेक्ट्रॉन करते हैं। कभी परमाणु का आकार कमरे जितना और नाभिक का आकार छोटे बिंदु जैसा दिखाते हैं; ऐसा उदाहरण केवल पैमाना समझाने के लिए है। वास्तविक नाभिक को आँख से वैसा देखना नहीं होता। त्रिज्या अनुपात को सीधे आयतन अनुपात न कहें; आयतन त्रिज्या के घन पर निर्भर है। यह मॉडल अल्फा के बड़े विचलन समझाता है, पर इससे स्थायी परमाणु और रेखीय स्पेक्ट्रम की पूरी व्याख्या अपने आप नहीं होती।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Separate the mass distribution from the electric field distribution.",
+          "hi": "द्रव्यमान का वितरण और विद्युत क्षेत्र का वितरण अलग हैं। अधिकतर द्रव्यमान नाभिक में केंद्रित होने का अर्थ यह नहीं कि नाभिक के बाहर विद्युत प्रभाव बिल्कुल नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does empty atomic space mean zero electric field?",
+          "hi": "परमाणु में खाली स्थान का अर्थ शून्य विद्युत क्षेत्र है?"
+        },
+        "answer": {
+          "en": "No. Charges can produce fields even where no massive particle is located.",
+          "hi": "नहीं। जहाँ भारी कण नहीं है वहाँ भी आवेशों के क्षेत्र हो सकते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Closest approach and classical difficulty",
+        "hi": "निकटतम पहुँच और शास्त्रीय कठिनाई"
+      },
+      "paragraphs": [
+        {
+          "en": "In a head-on approach the alpha particle’s initial kinetic energy becomes electrostatic potential energy at the turning point, if recoil is neglected. Classical orbiting electrons would radiate energy, so the Rutherford picture alone cannot explain stable atomic orbits or discrete spectral lines.",
+          "hi": "सीधे सामने से आने वाले अल्फा कण की निकटतम पहुँच (Closest approach) ऊर्जा संरक्षण से समझते हैं। दूर से आती प्रारंभिक गतिज ऊर्जा, मुड़ने के क्षण पर नाभिक-अल्फा की विद्युत स्थितिज ऊर्जा में बदलती है। यदि भारी नाभिक का प्रतिक्षेप नगण्य लें तो K=(1/(4πε0))(2Ze²/rmin) मिलता है। मुड़ने के बिंदु पर क्षणिक चाल शून्य है, लेकिन प्रतिकर्षण बल शून्य नहीं है। यह संबंध केवल सिरों-सिर आने वाले आदर्श पथ के लिए है। तिरछे आने पर अल्फा में कोणीय संवेग भी रहता है और वही सरल गणना न लगाएँ। रदरफोर्ड मॉडल की दूसरी कठिनाई इलेक्ट्रॉन की स्थिरता थी। वृत्तीय गति में इलेक्ट्रॉन का त्वरण है; शास्त्रीय विद्युतचुंबकत्व के अनुसार वह ऊर्जा विकिरित करेगा और नाभिक की ओर गिरता जाएगा। फिर स्थायी परमाणु कैसे बनते हैं? केवल सामान्य ग्रह जैसी कक्षा कह देना पर्याप्त नहीं। साथ ही शास्त्रीय निरंतर ऊर्जा परिवर्तन से विशिष्ट रेखाएँ स्वाभाविक रूप से नहीं निकलतीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The closest-approach estimate is an upper bound on nuclear size when the alpha turns outside the nucleus.",
+          "hi": "यदि अल्फा नाभिक के बाहर से मुड़ता है तो निकटतम पहुँच का मान वास्तविक नाभिक त्रिज्या नहीं है। यह आकार की ऊपरी सीमा का अनुमान दे सकता है; दोनों को बराबर न लिखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is the force zero at head-on closest approach?",
+          "hi": "सीधे सामने की निकटतम पहुँच पर बल शून्य होता है?"
+        },
+        "answer": {
+          "en": "No. Speed is momentarily zero while electrostatic repulsion reverses the motion.",
+          "hi": "नहीं। चाल क्षणिक शून्य होती है और विद्युत प्रतिकर्षण गति पलटता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Bohr’s stationary-state postulates",
+        "hi": "बोर की स्थायी अवस्था अभिधारणाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Bohr postulated non-radiating stationary states with angular momentum nℏ and radiation during transitions, hν=Ei−Ef. The model is designed for hydrogen and hydrogen-like one-electron ions, not arbitrary multielectron atoms.",
+          "hi": "बोर मॉडल (Bohr model) ने स्थायी अवस्था (Stationary state) की अभिधारणा जोड़ी। इलेक्ट्रॉन कुछ अनुमत अवस्थाओं में रहते हुए ऊर्जा विकिरित नहीं करता, यद्यपि शास्त्रीय वृत्तीय चित्र में उसका त्वरण है। यह नया नियम था, शास्त्रीय सिद्धांत से अपने आप प्राप्त निष्कर्ष नहीं। अनुमत कक्षाओं के लिए कोणीय संवेग mvr=nℏ=nh/(2π), जहाँ n=1,2,3,… है। इलेक्ट्रॉन एक अनुमत ऊर्जा अवस्था से दूसरी में जाता है तब ऊर्जा अंतर के अनुसार फोटॉन निकलता या अवशोषित होता है। उत्सर्जन में Ei>Ef और hν=Ei−Ef>0 होना चाहिए। n को कोई मनमाना दशमलव मान नहीं लेते। यह मॉडल हाइड्रोजन और 1 इलेक्ट्रॉन वाले हाइड्रोजन-सदृश आयनों के लिए उपयोगी है। अनेक इलेक्ट्रॉनों की पारस्परिक क्रियाएँ इस सरल मॉडल में नहीं हैं। स्क्रीन पर गोल घेरा और बिंदु बोर के विचार को संकेत देते हैं; आधुनिक क्वांटम कक्षक का अर्थ निश्चित ग्रह-जैसा पथ नहीं है। अनुमत ऊर्जा और चित्र की सीमा साथ समझना जरूरी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use a positive photon energy difference; negative frequency is not an emitted photon.",
+          "hi": "फोटॉन ऊर्जा का अंतर धनात्मक लें। ऊपरी और निचले स्तर उलटकर ऋणात्मक आवृत्ति को वास्तविक उत्सर्जित प्रकाश न लिखें; अवशोषण और उत्सर्जन की दिशा अलग पहचानें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a stationary state mean an electron is at rest?",
+          "hi": "स्थायी अवस्था का अर्थ इलेक्ट्रॉन विराम में है?"
+        },
+        "answer": {
+          "en": "No. It means a permitted state with fixed energy in this model.",
+          "hi": "नहीं। इस मॉडल में यह निश्चित ऊर्जा की अनुमत अवस्था है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Orbit radius, speed and energy",
+        "hi": "कक्षा त्रिज्या, चाल और ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "For hydrogen rn=a0n² and En=−13.6/n² eV with zero at a free electron and proton at rest far apart. Higher n means larger radius and less negative total energy. Negative energy indicates a bound state, not negative kinetic energy.",
+          "hi": "हाइड्रोजन के लिए बोर त्रिज्या rn=a0n² है, जहाँ a0≈5.29×10^-11 m। इसलिए n दुगुना करने पर त्रिज्या 4 गुनी होती है। अनुमत ऊर्जा En=−13.6/n² eV है। शून्य ऊर्जा का संदर्भ इलेक्ट्रॉन और प्रोटॉन को बहुत दूर अलग करके विराम में रखना है। बँधी अवस्था (Bound state) की कुल ऊर्जा इस संदर्भ से कम होने के कारण ऋणात्मक है। इससे इलेक्ट्रॉन की गतिज ऊर्जा ऋणात्मक नहीं होती। कूलॉम वृत्तीय मॉडल में स्थितिज ऊर्जा ऋणात्मक, गतिज धनात्मक और कुल ऊर्जा उनका योग है। n बढ़ने पर कुल ऊर्जा कम ऋणात्मक अर्थात अधिक होती है; −3.4 eV, −13.6 eV से ऊँची ऊर्जा है। कक्षा की चाल vn लगभग v1/n घटती है। बड़े n पर कक्षाएँ आकार में अधिक दूर और ऊर्जा में अधिक पास-पास होती हैं। हाइड्रोजन-सदृश आयन में Z के कारण त्रिज्या n²/Z और ऊर्जा −13.6 Z²/n² eV के अनुसार बदलती है; हाइड्रोजन सूत्र को सभी तत्वों पर सीधे न लगाएँ।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Energy diagrams should place less negative energies above more negative energies.",
+          "hi": "ऊर्जा आरेख में कम ऋणात्मक स्तर ऊपर होना चाहिए। यदि चित्र में भौतिक दूरी और ऊर्जा स्तर साथ दिखें, तो उनकी माप-पट्टियाँ अलग हैं; ऊँचाई को कक्षा त्रिज्या न समझें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which is higher: −13.6 eV or −3.4 eV?",
+          "hi": "−13.6 eV और −3.4 eV में कौन ऊँची ऊर्जा है?"
+        },
+        "answer": {
+          "en": "−3.4 eV is higher, because it is less negative.",
+          "hi": "−3.4 eV ऊँची है क्योंकि वह कम ऋणात्मक है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Hydrogen spectral series",
+        "hi": "हाइड्रोजन की वर्णक्रम श्रेणियाँ"
+      },
+      "paragraphs": [
+        {
+          "en": "A spectral series fixes the lower level and allows several higher initial levels. Lyman ends at n=1, Balmer at n=2 and Paschen at n=3. The Rydberg formula describes wavelengths for hydrogen transitions; line spacings are not uniform.",
+          "hi": "रेखीय वर्णक्रम (Line spectrum) परमाणु की ऊर्जा अवस्थाओं का प्रमाण है। किसी उत्सर्जन संक्रमण में ऊपरी ni से निचले nf पर जाने की ऊर्जा hν=13.6(1/nf²−1/ni²) eV है। तरंगदैर्घ्य के लिए 1/λ=R(1/nf²−1/ni²), जहाँ ni>nf है। श्रेणी में अंतिम निचला स्तर स्थिर रखते हैं और प्रारंभिक ऊपरी स्तर बदलते हैं। लाइमन श्रेणी nf=1 पर समाप्त होती है और पराबैंगनी क्षेत्र में है। बाल्मर nf=2 पर समाप्त होती है; इसकी कई प्रमुख रेखाएँ दृश्य क्षेत्र में हैं, पूरी सीमा को केवल दृश्य न कहें। पाशेन nf=3 पर समाप्त होती है और अवरक्त में है। श्रेणी सीमा ni→∞ से मिलती है; वह सबसे छोटी तरंगदैर्घ्य की सीमा है। बराबर-बराबर अंतर वाले n का अर्थ बराबर ऊर्जा अंतर नहीं। स्तर ऊँचे होने पर ऊर्जा अंतर सिमटते हैं और रेखाएँ पास आती हैं। अवशोषण के लिए भी सही ऊर्जा अंतर वाला फोटॉन चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Specify both levels rather than writing only the change in n.",
+          "hi": "केवल Δn लिखना पर्याप्त नहीं है। 3→2 और 2→1 दोनों में n का अंतर 1 है, फिर भी उनकी ऊर्जा और तरंगदैर्घ्य अलग हैं क्योंकि ऊर्जा n के व्युत्क्रम वर्ग पर निर्भर करती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which lower level defines the Balmer series?",
+          "hi": "बाल्मर श्रेणी का अंतिम स्तर कौन है?"
+        },
+        "answer": {
+          "en": "nf=2.",
+          "hi": "nf=2।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Excitation and ionisation",
+        "hi": "उत्तेजन और आयनीकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Excitation moves a bound electron to a higher bound level. Ionisation removes it to the continuum threshold. From hydrogen level n, the minimum ionisation energy is 13.6/n² eV. Extra energy beyond the threshold can become kinetic energy of the products.",
+          "hi": "उत्तेजन (Excitation) में इलेक्ट्रॉन किसी बँधे स्तर से अधिक ऊर्जा वाले बँधे स्तर पर पहुँचता है। मूल अवस्था n=1 से n=2 तक हाइड्रोजन को 10.2 eV चाहिए, क्योंकि −3.4−(−13.6)=10.2 eV। आयनीकरण (Ionisation) में इलेक्ट्रॉन बँधी अवस्था से मुक्त अवस्था की सीमा तक पहुँचता है। मूल अवस्था से इसके लिए कम-से-कम 13.6 eV चाहिए। यदि प्रारंभिक अवस्था n हो तो न्यूनतम आयनीकरण ऊर्जा 13.6/n² eV है। n=2 से केवल 3.4 eV चाहिए, न कि फिर 13.6 eV। देहली से अधिक ऊर्जा मिलने पर शेष ऊर्जा मुक्त कणों की गतिज ऊर्जा में जा सकती है; विस्तृत विभाजन में संवेग संरक्षण भी लागू होता है। फोटॉन का अवशोषण तभी बँधे-बँधे संक्रमण देगा जब ऊर्जा ठीक उपयुक्त अंतर हो। टक्कर से उत्तेजन में आपतित कण शेष ऊर्जा लेकर जा सकता है। इसलिए फोटॉन अवशोषण और इलेक्ट्रॉन टक्कर के नियम बिना संदर्भ बिल्कुल समान न लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Always state the initial level when giving an ionisation energy.",
+          "hi": "आयनीकरण ऊर्जा बताते समय प्रारंभिक स्तर लिखें। उत्तेजित अवस्था पहले ही ऊँची ऊर्जा पर है, इसलिए वहाँ से मुक्त करने के लिए कम ऊर्जा चाहिए; ऊर्जा संरक्षण से यह अंतर स्पष्ट होता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is excitation to n=2 the same as ionisation?",
+          "hi": "n=2 तक उत्तेजन और आयनीकरण समान हैं?"
+        },
+        "answer": {
+          "en": "No. The electron is still bound at n=2.",
+          "hi": "नहीं। n=2 पर इलेक्ट्रॉन अभी भी बँधा है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "What Bohr explains and what it does not",
+        "hi": "बोर मॉडल की उपलब्धियाँ और सीमाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "The model links hydrogen radii, binding energies and main spectral frequencies, but it is not a full quantum account of multielectron spectra or line intensities. A numerical answer should identify the model, initial and final states, units and energy reference.",
+          "hi": "बोर मॉडल हाइड्रोजन की स्थिर अवस्थाओं, मूल ऊर्जा और प्रमुख वर्णक्रम रेखाओं के लिए महत्वपूर्ण सफलता है। फिर भी इसे परमाणु का अंतिम पूर्ण चित्र नहीं मानते। अनेक इलेक्ट्रॉन वाले परमाणु, रेखाओं की सूक्ष्म संरचना, उनकी तीव्रता और सभी चुंबकीय प्रभाव इस सरल मॉडल से पूरी तरह नहीं मिलते। आधुनिक क्वांटम सिद्धांत निश्चित कक्षा के बजाय अवस्थाओं और प्रायिकता वितरण का उपयोग करता है। यह सीमा बताना बोर मॉडल की उपयोगिता नकारना नहीं है; हर मॉडल की लागू सीमा होती है। प्रश्न में पहले हाइड्रोजन या 1 इलेक्ट्रॉन वाला आयन पहचानें। फिर दिए n से त्रिज्या, कुल ऊर्जा या संक्रमण ऊर्जा में कौन-सी राशि चाहिए, चुनें। ऊर्जा अंतर निकालते समय ऋण चिह्नों को कोष्ठक सहित लिखें। फोटॉन के लिए ऊर्जा धनात्मक तथा तरंगदैर्घ्य उचित परिमाण का होना चाहिए। अंतिम परिणाम जाँचें: बड़े ऊर्जा अंतर पर छोटा तरंगदैर्घ्य और मूल अवस्था में सबसे अधिक बंधन होना चाहिए। दृश्य की सुंदर कक्षा अकेली वैज्ञानिक प्रमाण नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use schematic circles as a model aid, not a photograph or a measured trajectory.",
+          "hi": "सांकेतिक वृत्तों को मॉडल का सहारा मानें, फोटो या मापा इलेक्ट्रॉन पथ नहीं। त्रिज्या का नियम, ऊर्जा का नियम और संक्रमण की दिशा अलग-अलग जाँचने से गलत दृश्य निष्कर्षों से बचते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can the simple hydrogen formula predict every multielectron spectrum?",
+          "hi": "क्या सरल हाइड्रोजन सूत्र हर अनेक-इलेक्ट्रॉन वर्णक्रम बताएगा?"
+        },
+        "answer": {
+          "en": "No; additional interactions and quantum structure matter.",
+          "hi": "नहीं; अतिरिक्त पारस्परिक क्रियाएँ और क्वांटम संरचना आवश्यक हैं।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "mvr=nℏ=nh/(2π)",
+      "meaning": {
+        "en": "Bohr angular-momentum postulate.",
+        "hi": "बोर का कोणीय संवेग नियम।"
+      },
+      "units": {
+        "en": "m: kg; v: m/s; r: m; h: J s",
+        "hi": "m: kg; v: m/s; r: m; h: J s"
+      }
+    },
+    {
+      "expression": "rn=a0n²; a0≈5.29×10^-11 m",
+      "meaning": {
+        "en": "Hydrogen orbit radius in the Bohr model.",
+        "hi": "बोर मॉडल में हाइड्रोजन कक्षा त्रिज्या।"
+      },
+      "units": {
+        "en": "rn: m; n: dimensionless",
+        "hi": "rn: m; n: dimensionless"
+      }
+    },
+    {
+      "expression": "En=−13.6/n² eV",
+      "meaning": {
+        "en": "Hydrogen energy relative to the ionisation limit.",
+        "hi": "आयनीकरण सीमा के सापेक्ष हाइड्रोजन ऊर्जा।"
+      },
+      "units": {
+        "en": "En: eV; 1 eV=1.602×10^-19 J",
+        "hi": "En: eV; 1 eV=1.602×10^-19 J"
+      }
+    },
+    {
+      "expression": "hν=Ei−Ef; 1/λ=R(1/nf²−1/ni²)",
+      "meaning": {
+        "en": "Emission with ni>nf.",
+        "hi": "ni>nf पर उत्सर्जन।"
+      },
+      "units": {
+        "en": "ν: Hz; λ: m; R≈1.097×10^7 m^-1",
+        "hi": "ν: Hz; λ: m; R≈1.097×10^7 m^-1"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the hydrogen radius at n=3.",
+        "hi": "n=3 पर हाइड्रोजन त्रिज्या निकालें।"
+      },
+      "given": {
+        "en": "a0=5.29×10^-11 m; n=3.",
+        "hi": "a0=5.29×10^-11 m; n=3।"
+      },
+      "find": {
+        "en": "r3.",
+        "hi": "r3।"
+      },
+      "formula": {
+        "en": "rn=a0n²",
+        "hi": "rn=a0n²"
+      },
+      "steps": [
+        {
+          "en": "r3=9×5.29×10^-11 m.",
+          "hi": "r3=9×5.29×10^-11 m।"
+        }
+      ],
+      "answer": {
+        "en": "4.76×10^-10 m.",
+        "hi": "4.76×10^-10 m।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the energy and ionisation energy from n=4 in hydrogen.",
+        "hi": "हाइड्रोजन में n=4 की ऊर्जा और वहाँ से आयनीकरण ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "n=4; En=−13.6/n² eV.",
+        "hi": "n=4; En=−13.6/n² eV।"
+      },
+      "find": {
+        "en": "E4 and energy to reach zero.",
+        "hi": "E4 और शून्य तक पहुँचने की ऊर्जा।"
+      },
+      "formula": {
+        "en": "ΔE=0−E4",
+        "hi": "ΔE=0−E4"
+      },
+      "steps": [
+        {
+          "en": "E4=−13.6/16=−0.85 eV.",
+          "hi": "E4=−13.6/16=−0.85 eV।"
+        }
+      ],
+      "answer": {
+        "en": "E4=−0.85 eV; ionisation needs 0.85 eV.",
+        "hi": "E4=−0.85 eV; आयनीकरण हेतु 0.85 eV।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Calculate the n=1 to n=2 excitation energy.",
+        "hi": "n=1 से n=2 की उत्तेजन ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "E1=−13.6 eV; E2=−3.4 eV.",
+        "hi": "E1=−13.6 eV; E2=−3.4 eV।"
+      },
+      "find": {
+        "en": "Absorbed energy.",
+        "hi": "अवशोषित ऊर्जा।"
+      },
+      "formula": {
+        "en": "ΔE=E2−E1",
+        "hi": "ΔE=E2−E1"
+      },
+      "steps": [
+        {
+          "en": "Subtract the negative initial energy.",
+          "hi": "ऋणात्मक प्रारंभिक ऊर्जा को घटाएँ।"
+        },
+        {
+          "en": "ΔE=−3.4+13.6.",
+          "hi": "ΔE=−3.4+13.6।"
+        }
+      ],
+      "answer": {
+        "en": "10.2 eV.",
+        "hi": "10.2 eV।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Estimate the wavelength emitted in hydrogen n=3→2.",
+        "hi": "हाइड्रोजन n=3→2 में उत्सर्जित तरंगदैर्घ्य अनुमानित करें।"
+      },
+      "given": {
+        "en": "hc=1240 eV nm.",
+        "hi": "hc=1240 eV nm।"
+      },
+      "find": {
+        "en": "λ.",
+        "hi": "λ।"
+      },
+      "formula": {
+        "en": "ΔE=13.6(1/4−1/9); λ=hc/ΔE",
+        "hi": "ΔE=13.6(1/4−1/9); λ=hc/ΔE"
+      },
+      "steps": [
+        {
+          "en": "ΔE=13.6×5/36≈1.889 eV.",
+          "hi": "ΔE=13.6×5/36≈1.889 eV।"
+        },
+        {
+          "en": "λ≈1240/1.889 nm.",
+          "hi": "λ≈1240/1.889 nm।"
+        }
+      ],
+      "answer": {
+        "en": "About 656.5 nm, a Balmer-series line; constants are rounded.",
+        "hi": "लगभग 656.5 nm, बाल्मर श्रेणी की रेखा; नियतांक पूर्णांकित हैं।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A 5 MeV alpha particle approaches a gold nucleus head-on. Estimate closest approach, ignoring recoil.",
+        "hi": "5 MeV अल्फा सोने के नाभिक की ओर सीधे आए तो प्रतिक्षेप नगण्य मानकर निकटतम पहुँच निकालें।"
+      },
+      "given": {
+        "en": "Z=79; e²/(4πε0)=1.44 MeV fm; alpha charge=2e.",
+        "hi": "Z=79; e²/(4πε0)=1.44 MeV fm; अल्फा आवेश=2e।"
+      },
+      "find": {
+        "en": "rmin.",
+        "hi": "rmin।"
+      },
+      "formula": {
+        "en": "K=2Z×1.44/rmin",
+        "hi": "K=2Z×1.44/rmin"
+      },
+      "steps": [
+        {
+          "en": "rmin=(2×79×1.44)/5 fm.",
+          "hi": "rmin=(2×79×1.44)/5 fm।"
+        },
+        {
+          "en": "This is a turning distance, not a direct nuclear radius measurement.",
+          "hi": "यह मुड़ने की दूरी है, सीधा नाभिक त्रिज्या मापन नहीं।"
+        }
+      ],
+      "answer": {
+        "en": "About 45.5 fm=4.55×10^-14 m.",
+        "hi": "लगभग 45.5 fm=4.55×10^-14 m।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Most alpha particles cross a thin gold foil almost undeflected because",
+        "hi": "अधिकांश अल्फा पतली सोने की पन्नी से लगभग सीधे जाते हैं क्योंकि"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Most atomic volume is relatively empty",
+            "hi": "परमाणु का अधिकांश आयतन तुलनात्मक रूप से खाली है"
+          },
+          "reason": {
+            "en": "Concentrated nuclei occupy a tiny fraction of atomic volume.",
+            "hi": "केंद्रित नाभिक परमाणु आयतन का बहुत छोटा भाग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nuclei are negatively charged",
+            "hi": "नाभिक ऋणावेशित हैं"
+          },
+          "reason": {
+            "en": "Nuclei have positive charge.",
+            "hi": "नाभिक धनावेशित हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Alpha particles have no charge",
+            "hi": "अल्फा अनावेशित हैं"
+          },
+          "reason": {
+            "en": "An alpha particle has charge +2e.",
+            "hi": "अल्फा का आवेश +2e है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every atom has no nucleus",
+            "hi": "हर परमाणु में नाभिक नहीं"
+          },
+          "reason": {
+            "en": "Rare strong deflections indicate a concentrated nucleus.",
+            "hi": "दुर्लभ बड़े विचलन केंद्रित नाभिक बताते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Rare backscattering supports",
+        "hi": "दुर्लभ पीछे प्रकीर्णन किसका प्रमाण है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "A small dense positive nucleus",
+            "hi": "छोटा सघन धनावेशित नाभिक"
+          },
+          "reason": {
+            "en": "A concentrated repulsion can strongly reverse an approaching positive alpha.",
+            "hi": "केंद्रित प्रतिकर्षण आने वाले धन अल्फा को तेजी से मोड़ सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Uniformly spread positive charge only",
+            "hi": "केवल समान फैला धनावेश"
+          },
+          "reason": {
+            "en": "Diffuse charge does not explain rare very large deflections well.",
+            "hi": "फैला आवेश दुर्लभ बहुत बड़े विचलन नहीं समझाता।"
+          }
+        },
+        {
+          "text": {
+            "en": "No electric interaction",
+            "hi": "विद्युत क्रिया नहीं"
+          },
+          "reason": {
+            "en": "The interpretation relies on Coulomb repulsion.",
+            "hi": "व्याख्या कूलॉम प्रतिकर्षण पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "An atom is a solid sphere",
+            "hi": "परमाणु ठोस गोला है"
+          },
+          "reason": {
+            "en": "Most alphas pass through nearly straight.",
+            "hi": "अधिकांश अल्फा लगभग सीधे निकलते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "A stationary state in the Bohr model has",
+        "hi": "बोर मॉडल की स्थायी अवस्था में है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "A permitted fixed energy without radiation from that orbit",
+            "hi": "उस कक्षा से विकिरण बिना अनुमत निश्चित ऊर्जा"
+          },
+          "reason": {
+            "en": "This is a postulate of the model, not ordinary classical radiation theory.",
+            "hi": "यह मॉडल की अभिधारणा है, सामान्य शास्त्रीय विकिरण नियम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "An electron necessarily at rest",
+            "hi": "इलेक्ट्रॉन आवश्यकतः विराम में"
+          },
+          "reason": {
+            "en": "Stationary does not mean zero orbital speed.",
+            "hi": "स्थायी का अर्थ शून्य कक्षीय चाल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any arbitrary angular momentum",
+            "hi": "कोई भी मनमाना कोणीय संवेग"
+          },
+          "reason": {
+            "en": "Allowed angular momenta are nℏ.",
+            "hi": "अनुमत कोणीय संवेग nℏ हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Continuously falling total energy",
+            "hi": "लगातार गिरती कुल ऊर्जा"
+          },
+          "reason": {
+            "en": "A stationary state has fixed energy.",
+            "hi": "स्थायी अवस्था की ऊर्जा निश्चित है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Hydrogen radius at n=2 relative to n=1 is",
+        "hi": "हाइड्रोजन की n=2 त्रिज्या n=1 की तुलना में है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "4 times",
+            "hi": "4 गुनी"
+          },
+          "reason": {
+            "en": "Radius scales as n².",
+            "hi": "त्रिज्या n² के अनुसार है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 times",
+            "hi": "2 गुनी"
+          },
+          "reason": {
+            "en": "This omits the square.",
+            "hi": "इसमें वर्ग छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "One half",
+            "hi": "आधी"
+          },
+          "reason": {
+            "en": "Radius grows with n.",
+            "hi": "n के साथ त्रिज्या बढ़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Different allowed n have different Bohr radii.",
+            "hi": "अलग n की बोर त्रिज्याएँ अलग हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "The hydrogen n=2 total energy is",
+        "hi": "हाइड्रोजन n=2 की कुल ऊर्जा है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "−3.4 eV",
+            "hi": "−3.4 eV"
+          },
+          "reason": {
+            "en": "−13.6/2²=−3.4 eV.",
+            "hi": "−13.6/2²=−3.4 eV।"
+          }
+        },
+        {
+          "text": {
+            "en": "+3.4 eV",
+            "hi": "+3.4 eV"
+          },
+          "reason": {
+            "en": "A bound-state total energy is negative relative to the ionisation limit.",
+            "hi": "आयनीकरण सीमा के सापेक्ष बँधी कुल ऊर्जा ऋणात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−6.8 eV",
+            "hi": "−6.8 eV"
+          },
+          "reason": {
+            "en": "The denominator is n², not n.",
+            "hi": "हर n² है, n नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−13.6 eV",
+            "hi": "−13.6 eV"
+          },
+          "reason": {
+            "en": "That is the ground-state energy.",
+            "hi": "यह मूल अवस्था ऊर्जा है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Balmer emission transitions end at",
+        "hi": "बाल्मर उत्सर्जन संक्रमण समाप्त होते हैं"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "n=2",
+            "hi": "n=2"
+          },
+          "reason": {
+            "en": "The final level defines the series.",
+            "hi": "अंतिम स्तर श्रेणी तय करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "n=1",
+            "hi": "n=1"
+          },
+          "reason": {
+            "en": "That is the Lyman series.",
+            "hi": "यह लाइमन श्रेणी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "n=3",
+            "hi": "n=3"
+          },
+          "reason": {
+            "en": "That is the Paschen series.",
+            "hi": "यह पाशेन श्रेणी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "n=∞ only",
+            "hi": "केवल n=∞"
+          },
+          "reason": {
+            "en": "A continuum limit is not the Balmer final bound level.",
+            "hi": "सांतत्य सीमा बाल्मर का अंतिम बँधा स्तर नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "For hydrogen n=3→2, the photon energy is",
+        "hi": "हाइड्रोजन n=3→2 की फोटॉन ऊर्जा है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "About 1.89 eV",
+            "hi": "लगभग 1.89 eV"
+          },
+          "reason": {
+            "en": "13.6(1/4−1/9)=1.889 eV.",
+            "hi": "13.6(1/4−1/9)=1.889 eV।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1.89 eV",
+            "hi": "−1.89 eV"
+          },
+          "reason": {
+            "en": "An emitted photon has positive energy.",
+            "hi": "उत्सर्जित फोटॉन ऊर्जा धनात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "13.6 eV",
+            "hi": "13.6 eV"
+          },
+          "reason": {
+            "en": "That is ground-state ionisation energy.",
+            "hi": "यह मूल अवस्था आयनीकरण ऊर्जा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 eV",
+            "hi": "0 eV"
+          },
+          "reason": {
+            "en": "The two levels have different energies.",
+            "hi": "दोनों स्तरों की ऊर्जा अलग है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Ionisation energy from hydrogen n=2 is",
+        "hi": "हाइड्रोजन n=2 से आयनीकरण ऊर्जा है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "3.4 eV",
+            "hi": "3.4 eV"
+          },
+          "reason": {
+            "en": "The energy rises from −3.4 eV to zero.",
+            "hi": "ऊर्जा −3.4 eV से शून्य तक बढ़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "13.6 eV",
+            "hi": "13.6 eV"
+          },
+          "reason": {
+            "en": "That value applies from n=1.",
+            "hi": "यह n=1 से लागू है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10.2 eV",
+            "hi": "10.2 eV"
+          },
+          "reason": {
+            "en": "That is the 1→2 excitation energy.",
+            "hi": "यह 1→2 उत्तेजन ऊर्जा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−3.4 eV",
+            "hi": "−3.4 eV"
+          },
+          "reason": {
+            "en": "Energy supplied for ionisation is positive.",
+            "hi": "आयनीकरण हेतु दी ऊर्जा धनात्मक है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "At head-on closest approach an alpha particle has",
+        "hi": "सीधे सामने की निकटतम पहुँच पर अल्फा में है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Zero instantaneous speed and nonzero repulsive force",
+            "hi": "क्षणिक शून्य चाल और अशून्य प्रतिकर्षण बल"
+          },
+          "reason": {
+            "en": "The force reverses the motion at the turning point.",
+            "hi": "मुड़ने के बिंदु पर बल गति पलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero electric force",
+            "hi": "शून्य विद्युत बल"
+          },
+          "reason": {
+            "en": "The positive charges still repel.",
+            "hi": "धन आवेश अभी भी प्रतिकर्षित करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Maximum kinetic energy",
+            "hi": "अधिकतम गतिज ऊर्जा"
+          },
+          "reason": {
+            "en": "Initial kinetic energy has become potential energy in the ideal model.",
+            "hi": "आदर्श मॉडल में प्रारंभिक गतिज ऊर्जा स्थितिज बन गई।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative mass",
+            "hi": "ऋणात्मक द्रव्यमान"
+          },
+          "reason": {
+            "en": "No such change is involved.",
+            "hi": "ऐसा परिवर्तन नहीं होता।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "The simple Bohr formula works most directly for",
+        "hi": "सरल बोर सूत्र सीधे किसके लिए उपयोगी है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Hydrogen-like one-electron systems",
+            "hi": "हाइड्रोजन-सदृश 1 इलेक्ट्रॉन तंत्र"
+          },
+          "reason": {
+            "en": "It omits multielectron interactions.",
+            "hi": "इसमें अनेक इलेक्ट्रॉन पारस्परिक क्रियाएँ नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every neutral multielectron atom exactly",
+            "hi": "हर अनेक-इलेक्ट्रॉन उदासीन परमाणु बिल्कुल"
+          },
+          "reason": {
+            "en": "Additional electron interactions require more complete quantum treatment.",
+            "hi": "अतिरिक्त इलेक्ट्रॉन क्रियाओं हेतु व्यापक क्वांटम वर्णन चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only planets",
+            "hi": "केवल ग्रह"
+          },
+          "reason": {
+            "en": "The model was introduced for atomic spectra.",
+            "hi": "मॉडल परमाणु वर्णक्रम के लिए बना।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only free neutrons",
+            "hi": "केवल मुक्त न्यूट्रॉन"
+          },
+          "reason": {
+            "en": "There is no Coulomb electron-nucleus orbit in that case.",
+            "hi": "उसमें कूलॉम इलेक्ट्रॉन-नाभिक कक्षा नहीं।"
+          }
+        }
+      ]
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "What did the rare large-angle alpha events show?",
+        "hi": "दुर्लभ बड़े कोण वाले अल्फा प्रेक्षण ने क्या बताया?"
+      },
+      "answer": {
+        "en": "Positive charge and most mass are concentrated in a tiny nucleus.",
+        "hi": "धनावेश और अधिकांश द्रव्यमान छोटे नाभिक में केंद्रित हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is the classical Rutherford atom unstable?",
+        "hi": "शास्त्रीय रदरफोर्ड परमाणु अस्थिर क्यों?"
+      },
+      "answer": {
+        "en": "An orbiting charged electron accelerates and would radiate energy, causing its orbit to shrink.",
+        "hi": "कक्षा में आवेशित इलेक्ट्रॉन त्वरित है, ऊर्जा विकिरित करेगा और कक्षा सिकुड़ेगी।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the two Bohr relations used for hydrogen energy calculations.",
+        "hi": "हाइड्रोजन ऊर्जा गणना के 2 बोर संबंध दें।"
+      },
+      "answer": {
+        "en": "En=−13.6/n² eV and hν=Ei−Ef for emission.",
+        "hi": "En=−13.6/n² eV और उत्सर्जन हेतु hν=Ei−Ef।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish excitation from ionisation.",
+        "hi": "उत्तेजन और आयनीकरण में अंतर दें।"
+      },
+      "answer": {
+        "en": "Excitation raises the electron to another bound level; ionisation removes it to the continuum threshold or beyond.",
+        "hi": "उत्तेजन में दूसरा बँधा स्तर; आयनीकरण में सांतत्य सीमा या उससे आगे मुक्त अवस्था।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are hydrogen spectral lines not equally spaced?",
+        "hi": "हाइड्रोजन रेखाएँ समान अंतर पर क्यों नहीं?"
+      },
+      "answer": {
+        "en": "Level energies depend on 1/n², so equal n steps do not give equal energy differences.",
+        "hi": "स्तर ऊर्जा 1/n² पर है; समान n अंतर पर समान ऊर्जा अंतर नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give two limits of the simple Bohr model.",
+        "hi": "सरल बोर मॉडल की 2 सीमाएँ दें।"
+      },
+      "answer": {
+        "en": "It does not fully describe multielectron spectra or detailed line intensities and fine structure.",
+        "hi": "यह अनेक-इलेक्ट्रॉन वर्णक्रम तथा रेखा तीव्रता व सूक्ष्म संरचना पूरी तरह नहीं समझाता।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Scattering supports a small dense nucleus.",
+      "hi": "प्रकीर्णन छोटा सघन नाभिक बताता है।"
+    },
+    {
+      "en": "Bohr states have angular momentum nℏ.",
+      "hi": "बोर अवस्थाओं का कोणीय संवेग nℏ है।"
+    },
+    {
+      "en": "Hydrogen radius scales as n².",
+      "hi": "हाइड्रोजन त्रिज्या n² के अनुसार है।"
+    },
+    {
+      "en": "Hydrogen energy is −13.6/n² eV.",
+      "hi": "हाइड्रोजन ऊर्जा −13.6/n² eV है।"
+    },
+    {
+      "en": "Photons connect allowed energy differences.",
+      "hi": "फोटॉन अनुमत ऊर्जा अंतरों से जुड़े हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse orbit radius with energy-diagram height, negative total energy with negative kinetic energy, or closest approach with exact nuclear radius.",
+    "hi": "कक्षा त्रिज्या को ऊर्जा आरेख की ऊँचाई, ऋणात्मक कुल ऊर्जा को ऋणात्मक गतिज ऊर्जा और निकटतम पहुँच को सटीक नाभिक त्रिज्या न मानें।"
+  },
+  "goal": {
+    "en": "Use scattering and Bohr energy levels to explain atomic structure and hydrogen spectra.",
+    "hi": "प्रकीर्णन और बोर ऊर्जा स्तरों से परमाणु संरचना तथा हाइड्रोजन वर्णक्रम समझें।"
+  },
+  "conceptMap": "अल्फा प्रकीर्णन एक प्रयोग के रूप में → नाभिकीय मॉडल और प्रमाण → निकटतम पहुँच और शास्त्रीय कठिनाई → बोर की स्थायी अवस्था अभिधारणाएँ → कक्षा त्रिज्या, चाल और ऊर्जा → हाइड्रोजन की वर्णक्रम श्रेणियाँ → उत्तेजन और आयनीकरण → बोर मॉडल की उपलब्धियाँ और सीमाएँ",
+  "conceptMapEn": "Alpha scattering as an experiment → The nuclear model and its evidence → Closest approach and classical difficulty → Bohr’s stationary-state postulates → Orbit radius, speed and energy → Hydrogen spectral series → Excitation and ionisation → What Bohr explains and what it does not",
+  "editionBasis": {
+    "en": "Original study explanations aligned with the current NCERT Class 12 Physics sequence and UP Board 2026–27. Use the prescribed textbook and school practicals alongside.",
+    "hi": "वर्तमान NCERT कक्षा 12 भौतिकी क्रम और यूपी बोर्ड 2026–27 के अनुरूप मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक तथा विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 12",
+      "url": "https://ncert.nic.in/textbook/pdf/leph204.pdf"
+    },
+    {
+      "title": "UPMSP Physics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    }
+  ]
+}

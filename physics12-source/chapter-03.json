@@ -1,0 +1,1008 @@
+{
+  "number": 3,
+  "id": "physics12-03",
+  "title": {
+    "en": "Current Electricity",
+    "hi": "धारा विद्युत"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Current and charge transport",
+        "hi": "धारा और आवेश परिवहन"
+      },
+      "paragraphs": [
+        {
+          "en": "Current is the rate of charge transfer through a cross-section. Conventional current follows positive-charge flow and opposes electron drift in metals. Current density is local and vectorial; for uniform normal flow I=JA. Equal series current through different wire areas need not imply equal current density.",
+          "hi": "वैद्युत धारा (Electric current) किसी अनुप्रस्थ काट से प्रति समय गुजरने वाले आवेश की दर I=dq/dt है। स्थिर धारा के लिए I=Q/t लिख सकते हैं। 1 A=1 C/s है। धारा की परंपरागत दिशा धन आवेश की गति की दिशा है; धातु में इलेक्ट्रॉन वास्तव में इसके विपरीत औसत दिशा में चलते हैं। तार के भीतर इलेक्ट्रॉन पहले से उपस्थित होते हैं। स्विच बंद करने पर बैटरी से निकला कोई एक इलेक्ट्रॉन तुरंत बल्ब तक दौड़कर प्रकाश नहीं देता; परिपथ में क्षेत्र की स्थापना और स्थानीय आवेशों की प्रतिक्रिया समझनी होती है। धारा अदिश राशि है, यद्यपि उसके साथ तार में चुनी दिशा और बीजीय चिह्न लिखे जाते हैं। किसी जंक्शन पर आने और जाने वाली धाराओं का हिसाब आवेश संरक्षण से होता है। धारा घनत्व (Current density) J धारा प्रति अनुप्रस्थ क्षेत्रफल है और स्थानीय प्रवाह दिशा रखता है। समान प्रवाह में I=JA होता है। अलग क्षेत्रफल वाले जुड़े तारों में स्थिर अवस्था में I बराबर हो सकती है, पर J बराबर होना आवश्यक नहीं। समय अंतराल और कुल आवेश की इकाइयाँ पहले एकरूप करें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the mean current for 20 C passing in 10 s?",
+          "hi": "10 s में 20 C गुजरें तो औसत धारा क्या होगी?"
+        },
+        "answer": {
+          "en": "2 A.",
+          "hi": "I=20/10=2 A।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Drift velocity and mobility",
+        "hi": "अपवाह वेग और गतिशीलता"
+      },
+      "paragraphs": [
+        {
+          "en": "Electron thermal motion has no preferred average direction. An electric field adds a small opposite drift. I=neAvd uses carrier number density, not total count. In the elementary relaxation model μ=eτ/m and σ=ne²τ/m. Slow drift does not imply an equally slow electrical signal.",
+          "hi": "धातु के चालक इलेक्ट्रॉनों की अनियमित ऊष्मीय गति होती है, इसलिए क्षेत्र न होने पर भी वे स्थिर नहीं हैं। इस अनियमित गति का औसत निर्देशित वेग सामान्यतः शून्य होता है। विद्युत क्षेत्र लगाने पर एक छोटा औसत अपवाह वेग (Drift velocity) जुड़ता है। इलेक्ट्रॉन के लिए यह क्षेत्र के विपरीत है। धारा का परिमाण I=neAvd है, जहाँ n प्रति आयतन चालक इलेक्ट्रॉन संख्या, e आवेश परिमाण, A काट क्षेत्रफल और vd अपवाह चाल है। n की इकाई m^-3 रखें, कुल इलेक्ट्रॉन संख्या न रखें। सरल टकराव मॉडल में vd=eEτ/m और गतिशीलता μ=vd/E=eτ/m है। τ औसत विश्रांति काल है, हर इलेक्ट्रॉन की बिल्कुल समान टकराव अवधि नहीं। किसी लंबे तार में अपवाह चाल छोटी होने से विद्युत संकेत का प्रसार भी उतना धीमा हो, ऐसा निष्कर्ष गलत है। चालकता σ=ne²τ/m इस मॉडल में मिलती है। वास्तविक पदार्थों में सूक्ष्म प्रक्रियाएँ जटिल हो सकती हैं, इसलिए मॉडल के परिणाम को उपयुक्त ताप और पदार्थ की शर्तों के भीतर प्रयोग करें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "At fixed n and A, what happens to drift speed when current doubles?",
+          "hi": "समान n और A पर धारा दुगुनी करने से अपवाह चाल क्या होगी?"
+        },
+        "answer": {
+          "en": "It doubles.",
+          "hi": "2 गुनी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ohm law and characteristic graphs",
+        "hi": "ओम नियम और अभिलाक्षणिक आलेख"
+      },
+      "paragraphs": [
+        {
+          "en": "Ohm’s law describes proportional V and I when physical conditions, especially temperature, remain fixed. A V-versus-I slope is R; an I-versus-V slope is conductance. Non-ohmic devices may have nonlinear or asymmetric characteristics, so a single constant resistance does not describe every operating point.",
+          "hi": "ओम का नियम (Ohm law) उचित भौतिक शर्तें स्थिर रहने पर V=IR बताता है। ताप स्थिर रखना विशेष रूप से जरूरी है, क्योंकि धारा बढ़ाने से तार गरम हो सकता है और R बदल सकता है। ओमीय प्रतिरोधक का V बनाम I आलेख मूलबिंदु से गुजरती सीधी रेखा है; उसकी ढाल R है। I बनाम V आलेख की ढाल 1/R है। अक्षों के नाम देखे बिना ढाल को प्रतिरोध कहना गलत होगा। V/I किसी कार्य बिंदु पर अनुपात के रूप में निकाला जा सकता है, लेकिन हर पदार्थ के लिए वह स्थिर नहीं होता। डायोड जैसी युक्ति का अभिलक्षण अरैखिक हो सकता है और धारा उलटने पर सममित भी नहीं रहता। ऐसे तत्व पर सभी वोल्टेजों के लिए एक ही R लगाना उचित नहीं। विभवांतर धारा को सहारा देने वाला ऊर्जा अंतर बताता है; धारा अपने आप प्रतिरोध को हमेशा कम या ज्यादा नहीं कर देती। प्रयोग में अनेक V,I युग्म लें, ताप परिवर्तन पहचानें और सीधी रेखा के क्षेत्र में ही ओमीय व्यवहार का दावा करें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the slope when I is vertical and V horizontal?",
+          "hi": "I को ऊर्ध्व अक्ष और V को क्षैतिज अक्ष पर रखें तो सीधी रेखा की ढाल क्या है?"
+        },
+        "answer": {
+          "en": "1/R, the conductance.",
+          "hi": "1/R, अर्थात चालकत्व।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Resistivity and temperature",
+        "hi": "प्रतिरोधकता और ताप"
+      },
+      "paragraphs": [
+        {
+          "en": "Resistivity is a material-state property; resistance also depends on geometry. R=ρl/A applies to a uniform wire. Stretching changes both l and A if volume is conserved. A small-range linear temperature model uses α in K^-1; metals commonly have positive coefficients, whereas semiconductor trends can differ.",
+          "hi": "समान पदार्थ और स्थिर अनुप्रस्थ काट वाले तार का प्रतिरोध R=ρl/A है। प्रतिरोधकता (Resistivity) ρ पदार्थ और उसकी अवस्था का गुण है, जबकि R लंबाई और क्षेत्रफल पर भी निर्भर है। ρ की SI इकाई Ω m है; चालकता σ=1/ρ की इकाई S/m है। तार लंबा करने पर, यदि पदार्थ और A समान रहें, प्रतिरोध बढ़ता है। लेकिन किसी तार को खींचने पर A भी बदलता है, इसलिए केवल नई लंबाई का अनुपात लेना पर्याप्त नहीं। आयतन स्थिर मानें तो l बढ़ने पर A घटेगा और R अधिक तेजी से बढ़ेगा। छोटे ताप अंतराल के लिए ρ(T)=ρ0[1+α(T−T0)] रैखिक सन्निकटन उपयोगी है। α की इकाई K^-1 है और तापांतर के लिए °C तथा K की संख्याएँ समान होती हैं। साधारण धातुओं में प्रतिरोध ताप के साथ प्रायः बढ़ता है; अर्धचालकों में अक्सर उलटी प्रवृत्ति होती है। मिश्रधातुओं में अपेक्षाकृत छोटी ताप निर्भरता उपकरणों के लिए लाभकारी हो सकती है। बड़े ताप अंतराल या अवस्था परिवर्तन पर सरल रैखिक नियम को बिना जाँच न फैलाएँ।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "How does resistance change when a constant-volume wire is stretched to twice its length?",
+          "hi": "आयतन स्थिर रखते हुए तार की लंबाई 2 गुनी हो तो R कितना होगा?"
+        },
+        "answer": {
+          "en": "It becomes four times as large if resistivity is unchanged.",
+          "hi": "A आधा और R,4 गुना होगा, यदि ρ अपरिवर्तित है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Energy and electric power",
+        "hi": "विद्युत ऊर्जा और शक्ति"
+      },
+      "paragraphs": [
+        {
+          "en": "Electrical power is VI. For an ohmic resistor it is also I²R or V²/R. Statements about changing resistance must say whether current or voltage is fixed. Energy is power times duration; kWh is an energy unit. Rated device power assumes the stated operating conditions.",
+          "hi": "विभवांतर V के बीच आवेश q जाने पर विद्युत ऊर्जा स्थानांतरण का परिमाण उपयुक्त निष्क्रिय तत्व में qV होता है। प्रति समय ऊर्जा से विद्युत शक्ति (Electric power) P=VI है। ओमीय प्रतिरोधक में V=IR लगाकर P=I²R=V²/R मिलता है। कौन सा रूप इस्तेमाल करें यह स्थिर राशि पर निर्भर करता है। समान धारा पर बड़ा R अधिक शक्ति लेता है, लेकिन समान विभवांतर पर बड़ा R कम शक्ति लेता है। इसलिए 'अधिक प्रतिरोध हमेशा अधिक गर्मी देता है' अधूरा कथन है। स्थिर शक्ति के लिए ऊर्जा W=Pt है। शक्ति W अर्थात वाट में और ऊर्जा J में मापी जाती है; एक ही अक्षर W का कभी कार्य के प्रतीक के रूप में उपयोग होने से इकाई और राशि का अंतर स्पष्ट रखें। 1 kWh=3.6×10^6 J है, यह शक्ति नहीं बल्कि ऊर्जा की इकाई है। घरेलू यंत्र की रेटिंग उसके निर्धारित वोल्टेज पर ली गई शक्ति बताती है; दूसरे वोल्टेज पर वही शक्ति आवश्यक नहीं। आदर्श प्रतिरोध मॉडल और वास्तविक ताप-परिवर्तित यंत्र में फर्क बनाए रखें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "At fixed voltage, how does power change when resistance doubles?",
+          "hi": "एक ही V पर R दुगुना हो तो शक्ति क्या होगी?"
+        },
+        "answer": {
+          "en": "It halves.",
+          "hi": "आधी, क्योंकि P=V²/R।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Cells, emf and internal resistance",
+        "hi": "सेल, विद्युत वाहक बल और आंतरिक प्रतिरोध"
+      },
+      "paragraphs": [
+        {
+          "en": "Emf is energy supplied per charge, measured in volts. A discharging cell satisfies I=ε/(R+r) and terminal V=ε−Ir. During charging the internal-drop sign changes with the chosen current direction. Identical series cells add both emf and internal resistance; identical parallel cells retain emf while reducing equivalent internal resistance.",
+          "hi": "सेल का विद्युत वाहक बल (Electromotive force, emf) ε उसके भीतर गैरवैद्युत प्रक्रियाओं द्वारा प्रति इकाई आवेश दी गई ऊर्जा है। नाम में बल होने पर भी यह N में मापा जाने वाला यांत्रिक बल नहीं; इसका मात्रक V है। आंतरिक प्रतिरोध r वाला सेल बाहरी R को धारा दे तो I=ε/(R+r) और टर्मिनल विभव V=ε−Ir=IR होता है। खुले परिपथ में आदर्श स्थिर अवस्था की धारा शून्य होने से V≈ε है। आवेशन के दौरान धारा सेल में विपरीत दिशा से जा सकती है और टर्मिनल संबंध V=ε+Ir बनता है; संकेत चुनी दिशा से सावधानी से रखें। बाहरी शॉर्ट पर आदर्श इस मॉडल में I=ε/r है, अनंत नहीं, पर यह वास्तविक खतरनाक स्थिति है जिसे प्रयोग के लिए न करें। बैटरी की रासायनिक ऊर्जा का कुछ भाग भीतर और कुछ बाहर ऊर्जा देता है। सेल जोड़ते समय ध्रुवता, समानता और बाहरी जुड़ाव जाँचें। समान सेल श्रेणी में emf और आंतरिक प्रतिरोध दोनों जोड़ते हैं; समांतर समान सेल में emf वही और तुल्य आंतरिक प्रतिरोध कम होता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is a discharging cell’s terminal voltage below its emf?",
+          "hi": "धारा दे रहे सेल का टर्मिनल विभव emf से कम क्यों होता है?"
+        },
+        "answer": {
+          "en": "There is an internal Ir drop.",
+          "hi": "आंतरिक प्रतिरोध पर Ir विभवपात होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Kirchhoff rules and circuit reasoning",
+        "hi": "किरचॉफ नियम और परिपथ तर्क"
+      },
+      "paragraphs": [
+        {
+          "en": "Junction rules express charge conservation; loop rules track signed potential changes. Assign branch directions, apply consistent resistor and source signs, and choose independent equations. A negative solved current reverses the assumed direction rather than invalidating the equations. Ideal connecting wires form equipotential nodes.",
+          "hi": "किरचॉफ का जंक्शन नियम (Junction rule) कहता है कि स्थिर अवस्था में किसी जोड़ पर कुल आने वाली धारा कुल जाने वाली धारा के बराबर है। यह आवेश संरक्षण का परिणाम है; जंक्शन पर आवेश लगातार जमा नहीं होता। लूप नियम (Loop rule) में बंद पथ के सभी विभव परिवर्तनों का बीजीय योग शून्य है, जो स्थिर परिपथ के ऊर्जा हिसाब से जुड़ा है। पहले प्रत्येक शाखा की धारा दिशा मनमानी मान सकते हैं। प्रतिरोधक को मानी धारा की दिशा में पार करने पर −IR और विपरीत दिशा में +IR लिखें। आदर्श सेल को ऋण से धन टर्मिनल पार करने पर +ε, धन से ऋण पर −ε लें। उत्तर में धारा ऋणात्मक आए तो वास्तविक दिशा अनुमान के विपरीत है; यह अपने आप गणना की विफलता नहीं। अनावश्यक समान लूप समीकरण लिखने के बजाय स्वतंत्र समीकरण चुनें। तार को आदर्श मानने पर एक जुड़े नोड का विभव समान है। कई शाखाओं वाले परिपथ में केवल चित्र देखकर श्रेणी-समांतर सूत्र ठूँसने के बजाय नोड और लूप पहचानना अधिक विश्वसनीय है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does a solved current of −0.5 A mean?",
+          "hi": "धारा का हल −0.5 A आए तो उसका अर्थ क्या है?"
+        },
+        "answer": {
+          "en": "A current of magnitude 0.5 A opposite the assumed direction.",
+          "hi": "परिमाण 0.5 A है और वास्तविक दिशा मानी दिशा के विपरीत है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Wheatstone bridge and measurements",
+        "hi": "व्हीटस्टोन सेतु और मापन"
+      },
+      "paragraphs": [
+        {
+          "en": "A balanced Wheatstone bridge has equal detector-node potentials, giving P/Q=R/S for a consistent branch labelling. Detector current is zero, not necessarily source current. Bridge balance removes detector resistance from the ideal ratio, while real contact, temperature and geometry errors still matter.",
+          "hi": "व्हीटस्टोन सेतु (Wheatstone bridge) में 4 प्रतिरोधों की शाखाएँ और मध्य बिंदुओं के बीच संवेदनशील धारामापी होता है। संतुलन पर धारामापी की धारा शून्य होती है, जिससे उसके सिरों का विभव बराबर होता है। उपयुक्त लेबल P,Q एक शाखा और R,S दूसरी में रखें तो संतुलन शर्त P/Q=R/S है। इस अनुपात को याद करने से पहले अपने चित्र में ऊपरी और निचले प्रतिरोधों की पहचान करें, क्योंकि अलग नामकरण में सूत्र का रूप बदल सकता है। शून्य धारा होने का अर्थ मुख्य बैटरी की धारा शून्य होना नहीं। संतुलन पर धारामापी प्रतिरोध ज्ञात अनुपात को प्रभावित नहीं करता। व्यावहारिक मापन में संपर्क प्रतिरोध, तार की असमानता और ताप परिवर्तन त्रुटि ला सकते हैं। प्रयोग की सुरक्षित कम-वोल्टेज व्यवस्था और शिक्षक के निर्देश अपनाएँ। पुराने या अतिरिक्त मापन उपकरणों का विस्तृत सिद्धांत यदि विद्यालय अलग से पढ़ाए तो उसे उसी दायरे में लें; मुख्य विचार यहाँ प्रतिरोध अनुपात और बराबर विभव का तर्क है। जाँच के लिए प्राप्त अज्ञात प्रतिरोध धनात्मक होना चाहिए और उसकी संभावित सीमा से संगत होना चाहिए।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does bridge balance stop all battery current?",
+          "hi": "सेतु संतुलित होने पर क्या बैटरी से धारा आना बंद हो जाता है?"
+        },
+        "answer": {
+          "en": "No. Only detector-branch current is zero.",
+          "hi": "नहीं। केवल मध्य धारामापी शाखा की धारा शून्य होती है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "I=dq/dt; I=neAvd",
+      "meaning": {
+        "en": "Current and electron-drift magnitude.",
+        "hi": "धारा और इलेक्ट्रॉन अपवाह का परिमाण।"
+      },
+      "units": {
+        "en": "I: A; n: m^-3; vd: m/s",
+        "hi": "I: A; n: m^-3; vd: m/s"
+      }
+    },
+    {
+      "expression": "V=IR; R=ρl/A",
+      "meaning": {
+        "en": "Ohmic relation and uniform-wire resistance.",
+        "hi": "ओमीय संबंध और समान तार का प्रतिरोध।"
+      },
+      "units": {
+        "en": "R: Ω; ρ: Ω m",
+        "hi": "R: Ω; ρ: Ω m"
+      }
+    },
+    {
+      "expression": "P=VI=I²R=V²/R",
+      "meaning": {
+        "en": "Power for a resistor, with the appropriate fixed variable.",
+        "hi": "उपयुक्त स्थिर राशि पर प्रतिरोधक की शक्ति।"
+      },
+      "units": {
+        "en": "W",
+        "hi": "W"
+      }
+    },
+    {
+      "expression": "I=ε/(R+r); V=ε−Ir",
+      "meaning": {
+        "en": "Discharging cell with internal resistance.",
+        "hi": "आंतरिक प्रतिरोध वाला धारा देता सेल।"
+      },
+      "units": {
+        "en": "I: A; ε,V: V; R,r: Ω",
+        "hi": "I: A; ε,V: V; R,r: Ω"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find current when 30 C passes in 15 s.",
+        "hi": "15 s में 30 C गुजरे तो धारा निकालें।"
+      },
+      "given": {
+        "en": "Q=30 C;t=15 s.",
+        "hi": "Q=30 C;t=15 s।"
+      },
+      "find": {
+        "en": "I.",
+        "hi": "I।"
+      },
+      "formula": {
+        "en": "I=Q/t",
+        "hi": "I=Q/t"
+      },
+      "steps": [
+        {
+          "en": "I=30/15=2 A.",
+          "hi": "I=30/15=2 A।"
+        }
+      ],
+      "answer": {
+        "en": "2 A.",
+        "hi": "2 A।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A 6 Ω resistor is connected across 12 V. Find current and power.",
+        "hi": "6 Ω प्रतिरोध पर 12 V है। धारा और शक्ति निकालें।"
+      },
+      "given": {
+        "en": "R=6 Ω;V=12 V.",
+        "hi": "R=6 Ω;V=12 V।"
+      },
+      "find": {
+        "en": "I and P.",
+        "hi": "I और P।"
+      },
+      "formula": {
+        "en": "I=V/R;P=VI",
+        "hi": "I=V/R;P=VI"
+      },
+      "steps": [
+        {
+          "en": "I=12/6=2 A.",
+          "hi": "I=12/6=2 A।"
+        },
+        {
+          "en": "P=12×2=24 W.",
+          "hi": "P=12×2=24 W।"
+        }
+      ],
+      "answer": {
+        "en": "2 A and 24 W.",
+        "hi": "2 A और 24 W।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A uniform wire has ρ=2×10^-8 Ω m, length 2 m and area 1 mm². Find R.",
+        "hi": "समान तार में ρ=2×10^-8 Ω m, लंबाई 2 m, क्षेत्रफल 1 mm² है। R निकालें।"
+      },
+      "given": {
+        "en": "ρ=2×10^-8 Ω m;l=2 m;A=1×10^-6 m².",
+        "hi": "ρ=2×10^-8 Ω m;l=2 m;A=1×10^-6 m²।"
+      },
+      "find": {
+        "en": "R.",
+        "hi": "R।"
+      },
+      "formula": {
+        "en": "R=ρl/A",
+        "hi": "R=ρl/A"
+      },
+      "steps": [
+        {
+          "en": "1 mm²=10^-6 m².",
+          "hi": "1 mm²=10^-6 m²।"
+        },
+        {
+          "en": "R=4×10^-8/10^-6=0.04 Ω.",
+          "hi": "R=4×10^-8/10^-6=0.04 Ω।"
+        }
+      ],
+      "answer": {
+        "en": "0.04 Ω.",
+        "hi": "0.04 Ω।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A 12 V emf cell with r=1 Ω supplies R=5 Ω. Find current and terminal voltage.",
+        "hi": "ε=12 V,r=1 Ω सेल से R=5 Ω जुड़ा है। धारा और टर्मिनल V निकालें।"
+      },
+      "given": {
+        "en": "ε=12 V;r=1 Ω;R=5 Ω.",
+        "hi": "ε=12 V;r=1 Ω;R=5 Ω।"
+      },
+      "find": {
+        "en": "I,V.",
+        "hi": "I,V।"
+      },
+      "formula": {
+        "en": "I=ε/(R+r);V=ε−Ir",
+        "hi": "I=ε/(R+r);V=ε−Ir"
+      },
+      "steps": [
+        {
+          "en": "I=12/6=2 A.",
+          "hi": "I=12/6=2 A।"
+        },
+        {
+          "en": "V=12−2×1=10 V; also IR=10 V.",
+          "hi": "V=12−2×1=10 V; IR=10 V भी।"
+        }
+      ],
+      "answer": {
+        "en": "I=2 A,V=10 V.",
+        "hi": "I=2 A,V=10 V।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "At bridge balance P=100 Ω,Q=200 Ω,R=150 Ω. Find S.",
+        "hi": "संतुलित सेतु में P=100 Ω,Q=200 Ω,R=150 Ω हैं। S निकालें।"
+      },
+      "given": {
+        "en": "Upper/lower branch ratios P/Q=R/S.",
+        "hi": "ऊपरी/निचले शाखा अनुपात P/Q=R/S।"
+      },
+      "find": {
+        "en": "Unknown S.",
+        "hi": "अज्ञात S।"
+      },
+      "formula": {
+        "en": "S=QR/P",
+        "hi": "S=QR/P"
+      },
+      "steps": [
+        {
+          "en": "S=200×150/100=300 Ω.",
+          "hi": "S=200×150/100=300 Ω।"
+        },
+        {
+          "en": "Check 100/200=150/300=1/2.",
+          "hi": "जाँच:100/200=150/300=1/2।"
+        }
+      ],
+      "answer": {
+        "en": "300 Ω.",
+        "hi": "300 Ω।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Conventional current in a metal is",
+        "hi": "धातु में परंपरागत धारा"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Opposite electron drift",
+            "hi": "इलेक्ट्रॉन अपवाह के विपरीत"
+          },
+          "reason": {
+            "en": "Electrons have negative charge.",
+            "hi": "इलेक्ट्रॉन ऋणावेशित हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Along electron drift",
+            "hi": "इलेक्ट्रॉन अपवाह की दिशा में"
+          },
+          "reason": {
+            "en": "That is electron motion, not conventional current.",
+            "hi": "यह इलेक्ट्रॉन गति है, परंपरागत धारा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "सदा शून्य"
+          },
+          "reason": {
+            "en": "A connected conducting circuit can carry current.",
+            "hi": "जुड़ा चालक परिपथ धारा ले सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The thermal speed",
+            "hi": "ऊष्मीय चाल"
+          },
+          "reason": {
+            "en": "Speed and current are different quantities.",
+            "hi": "चाल और धारा अलग राशियाँ हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The unit of resistivity is",
+        "hi": "प्रतिरोधकता का मात्रक"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Ω m",
+            "hi": "Ω m"
+          },
+          "reason": {
+            "en": "From ρ=RA/l.",
+            "hi": "ρ=RA/l से।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ω/m",
+            "hi": "Ω/m"
+          },
+          "reason": {
+            "en": "This reverses the length factor.",
+            "hi": "लंबाई गुणक उलट गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ω",
+            "hi": "Ω"
+          },
+          "reason": {
+            "en": "This is resistance.",
+            "hi": "यह प्रतिरोध।"
+          }
+        },
+        {
+          "text": {
+            "en": "A",
+            "hi": "A"
+          },
+          "reason": {
+            "en": "This is current.",
+            "hi": "यह धारा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Slope of V against I for an ohmic resistor is",
+        "hi": "ओमीय प्रतिरोधक के V बनाम I की ढाल"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "R",
+            "hi": "R"
+          },
+          "reason": {
+            "en": "V=RI.",
+            "hi": "V=RI।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/R",
+            "hi": "1/R"
+          },
+          "reason": {
+            "en": "That is slope of I against V.",
+            "hi": "यह I बनाम V की ढाल।"
+          }
+        },
+        {
+          "text": {
+            "en": "ρ always",
+            "hi": "सदा ρ"
+          },
+          "reason": {
+            "en": "Geometry separates R from ρ.",
+            "hi": "ज्यामिति R और ρ को अलग करती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Power",
+            "hi": "शक्ति"
+          },
+          "reason": {
+            "en": "Power is VI, not slope V/I.",
+            "hi": "शक्ति VI है, ढाल V/I नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At fixed current doubling R changes P to",
+        "hi": "धारा स्थिर हो और R दुगुना हो तो P"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2P",
+            "hi": "2P"
+          },
+          "reason": {
+            "en": "P=I²R at fixed I.",
+            "hi": "स्थिर I पर P=I²R।"
+          }
+        },
+        {
+          "text": {
+            "en": "P/2",
+            "hi": "P/2"
+          },
+          "reason": {
+            "en": "This would apply at fixed voltage.",
+            "hi": "यह स्थिर V पर लागू।"
+          }
+        },
+        {
+          "text": {
+            "en": "4P",
+            "hi": "4P"
+          },
+          "reason": {
+            "en": "Only R doubled, not I.",
+            "hi": "केवल R दुगुना, I नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "P",
+            "hi": "P"
+          },
+          "reason": {
+            "en": "Resistance affects heating at fixed I.",
+            "hi": "स्थिर I पर R ऊष्मन बदलता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Kirchhoff junction rule follows from",
+        "hi": "किरचॉफ जंक्शन नियम का आधार"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Charge conservation",
+            "hi": "आवेश संरक्षण"
+          },
+          "reason": {
+            "en": "No continuing charge buildup in steady state.",
+            "hi": "स्थिर अवस्था में लगातार आवेश संचय नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass loss",
+            "hi": "द्रव्यमान हानि"
+          },
+          "reason": {
+            "en": "That is not the junction balance principle.",
+            "hi": "यह जंक्शन संतुलन सिद्धांत नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Magnetic pole conservation only",
+            "hi": "केवल चुंबकीय ध्रुव संरक्षण"
+          },
+          "reason": {
+            "en": "Current balance is an electric charge statement.",
+            "hi": "धारा संतुलन विद्युत आवेश का कथन।"
+          }
+        },
+        {
+          "text": {
+            "en": "Constant resistance always",
+            "hi": "सदा स्थिर प्रतिरोध"
+          },
+          "reason": {
+            "en": "Junction balance does not require every device to be ohmic.",
+            "hi": "हर युक्ति ओमीय होना जरूरी नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For a discharging cell with r>0, terminal V is",
+        "hi": "r>0 वाला धारा देता सेल: टर्मिनल V"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ε−Ir",
+            "hi": "ε−Ir"
+          },
+          "reason": {
+            "en": "Internal resistance consumes a potential drop.",
+            "hi": "आंतरिक प्रतिरोध पर विभवपात।"
+          }
+        },
+        {
+          "text": {
+            "en": "ε+Ir",
+            "hi": "ε+Ir"
+          },
+          "reason": {
+            "en": "That sign can describe charging under the stated convention.",
+            "hi": "यह चिह्न उपयुक्त परंपरा में आवेशन का।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always ε",
+            "hi": "सदा ε"
+          },
+          "reason": {
+            "en": "Only zero-current or ideal-r limit gives that.",
+            "hi": "यह केवल शून्य धारा या r=0 सीमा में।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "सदा शून्य"
+          },
+          "reason": {
+            "en": "A finite external load generally has voltage.",
+            "hi": "परिमित बाहरी भार पर सामान्यतः विभव है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At fixed n,A the drift speed is proportional to",
+        "hi": "स्थिर n,A पर अपवाह चाल"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "I",
+            "hi": "I"
+          },
+          "reason": {
+            "en": "I=neAvd.",
+            "hi": "I=neAvd।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/I",
+            "hi": "1/I"
+          },
+          "reason": {
+            "en": "This reverses the drift relation.",
+            "hi": "अपवाह संबंध उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "I²",
+            "hi": "I²"
+          },
+          "reason": {
+            "en": "The relation is linear, not quadratic.",
+            "hi": "संबंध रैखिक है, वर्गीय नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Wire length only",
+            "hi": "केवल तार लंबाई"
+          },
+          "reason": {
+            "en": "Current and carrier density also matter.",
+            "hi": "धारा और वाहक घनत्व भी महत्वपूर्ण।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At Wheatstone balance the detector has",
+        "hi": "व्हीटस्टोन संतुलन पर धारामापी में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero current",
+            "hi": "शून्य धारा"
+          },
+          "reason": {
+            "en": "Its terminals have equal potential.",
+            "hi": "दोनों सिरों का विभव समान।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero resistance necessarily",
+            "hi": "अनिवार्य शून्य प्रतिरोध"
+          },
+          "reason": {
+            "en": "Balance does not require zero detector resistance.",
+            "hi": "संतुलन के लिए शून्य धारामापी प्रतिरोध नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite current",
+            "hi": "अनंत धारा"
+          },
+          "reason": {
+            "en": "Equal potentials give no detector current.",
+            "hi": "समान विभव से धारामापी धारा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All source current",
+            "hi": "पूरी स्रोत धारा"
+          },
+          "reason": {
+            "en": "Source current goes through the bridge branches.",
+            "hi": "स्रोत धारा सेतु शाखाओं में जाती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A constant-volume wire stretched to twice its length has R",
+        "hi": "आयतन स्थिर तार को 2 गुना खींचने पर R"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4R0",
+            "hi": "4R0"
+          },
+          "reason": {
+            "en": "Length doubles and area halves.",
+            "hi": "लंबाई दुगुनी, क्षेत्रफल आधा।"
+          }
+        },
+        {
+          "text": {
+            "en": "2R0",
+            "hi": "2R0"
+          },
+          "reason": {
+            "en": "This ignores area reduction.",
+            "hi": "क्षेत्रफल में कमी छूटी।"
+          }
+        },
+        {
+          "text": {
+            "en": "R0/2",
+            "hi": "R0/2"
+          },
+          "reason": {
+            "en": "Both geometry changes increase R.",
+            "hi": "दोनों ज्यामिति परिवर्तन R बढ़ाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "R0",
+            "hi": "R0"
+          },
+          "reason": {
+            "en": "Geometry has changed.",
+            "hi": "ज्यामिति बदल गई।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "1 kWh equals",
+        "hi": "1 kWh बराबर"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3.6×10^6 J",
+            "hi": "3.6×10^6 J"
+          },
+          "reason": {
+            "en": "1000 W×3600 s.",
+            "hi": "1000 W×3600 s।"
+          }
+        },
+        {
+          "text": {
+            "en": "1000 J",
+            "hi": "1000 J"
+          },
+          "reason": {
+            "en": "The hour-to-second factor is missing.",
+            "hi": "घंटे से सेकंड गुणक छूटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "3600 W",
+            "hi": "3600 W"
+          },
+          "reason": {
+            "en": "kWh is energy, not power.",
+            "hi": "kWh ऊर्जा है, शक्ति नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1 J/s",
+            "hi": "1 J/s"
+          },
+          "reason": {
+            "en": "This is one watt.",
+            "hi": "यह 1 वाट है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish current and current density.",
+        "hi": "धारा और धारा घनत्व में भेद करें।"
+      },
+      "answer": {
+        "en": "I is charge rate through a section; J is local current per area with direction. Uniform normal flow gives I=JA.",
+        "hi": "I काट से आवेश की दर; J स्थानीय प्रति क्षेत्रफल धारा और दिशा। समान लंबवत प्रवाह में I=JA।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is electron drift not thermal speed?",
+        "hi": "इलेक्ट्रॉन अपवाह ऊष्मीय चाल क्यों नहीं?"
+      },
+      "answer": {
+        "en": "Thermal motion is random; drift is the small directed average produced by a field.",
+        "hi": "ऊष्मीय गति अनियमित; अपवाह क्षेत्र से जुड़ा छोटा निर्देशित औसत।"
+      }
+    },
+    {
+      "question": {
+        "en": "State Ohm-law conditions.",
+        "hi": "ओम नियम की शर्तें लिखें।"
+      },
+      "answer": {
+        "en": "Physical conditions such as temperature must remain fixed in the proportional operating range.",
+        "hi": "ताप जैसी भौतिक शर्तें आनुपातिक कार्य सीमा में स्थिर रहें।"
+      }
+    },
+    {
+      "question": {
+        "en": "What does a negative solved branch current mean?",
+        "hi": "ऋणात्मक हल धारा का अर्थ क्या?"
+      },
+      "answer": {
+        "en": "Its actual direction is opposite the assumed arrow.",
+        "hi": "वास्तविक दिशा मानी दिशा के विपरीत।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is emf not a mechanical force?",
+        "hi": "emf यांत्रिक बल क्यों नहीं?"
+      },
+      "answer": {
+        "en": "It is energy supplied per charge and has volt units, not newtons.",
+        "hi": "यह प्रति आवेश दी ऊर्जा है; मात्रक V है, N नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare identical cells in series and parallel.",
+        "hi": "समान सेलों का श्रेणी-समांतर संयोजन मिलाएँ।"
+      },
+      "answer": {
+        "en": "Series: nε and nr. Parallel: ε and r/n, for consistent polarity and identical cells.",
+        "hi": "समान ध्रुवता वाले n समान सेल: श्रेणी nε,nr; समांतर ε,r/n।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "I measures charge transfer rate.",
+      "hi": "I आवेश स्थानांतरण की दर है।"
+    },
+    {
+      "en": "Electron drift opposes conventional current.",
+      "hi": "इलेक्ट्रॉन अपवाह परंपरागत धारा के विपरीत।"
+    },
+    {
+      "en": "Ohm law requires fixed physical conditions.",
+      "hi": "ओम नियम के लिए भौतिक शर्तें स्थिर।"
+    },
+    {
+      "en": "Internal resistance changes terminal voltage.",
+      "hi": "आंतरिक प्रतिरोध टर्मिनल विभव बदलता है।"
+    },
+    {
+      "en": "Circuit signs follow charge and energy conservation.",
+      "hi": "परिपथ चिह्न आवेश और ऊर्जा संरक्षण से जुड़ते हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse resistivity with resistance, drift with signal speed, or fixed-current heating with fixed-voltage heating.",
+    "hi": "प्रतिरोधकता को प्रतिरोध, अपवाह को संकेत चाल या स्थिर I के ऊष्मन को स्थिर V से न मिलाएँ।"
+  },
+  "goal": {
+    "en": "Build circuit equations from charge flow, material properties and energy balance.",
+    "hi": "आवेश प्रवाह, पदार्थ गुण और ऊर्जा संतुलन से परिपथ समीकरण बनाएँ।"
+  },
+  "conceptMap": "आवेश प्रवाह → अपवाह → ओम नियम → प्रतिरोधकता → शक्ति → सेल → किरचॉफ नियम → सेतु",
+  "conceptMapEn": "Charge flow → drift → Ohm law → resistivity → power → cells → Kirchhoff rules → bridge",
+  "editionBasis": {
+    "en": "Original study explanations for current NCERT Physics Class XII and UP Board 2026–27; use the prescribed textbook and practical work alongside.",
+    "hi": "वर्तमान NCERT भौतिकी कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ; निर्धारित पुस्तक और प्रयोगात्मक कार्य भी साथ करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics XII Part I Chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leph103.pdf"
+    },
+    {
+      "title": "UPMSP Physics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    }
+  ]
+}

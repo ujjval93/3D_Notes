@@ -1,0 +1,888 @@
+{
+  "id": 9,
+  "title": {
+    "en": "Straight Lines",
+    "hi": "सरल रेखाएँ"
+  },
+  "goal": {
+    "en": "Connect slope, line equations, angles and perpendicular distances.",
+    "hi": "ढाल, रेखा समीकरण, कोण और लंबवत दूरियों को जोड़ें।"
+  },
+  "engine": "eleven-math",
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Slope as a rate of change",
+        "hi": "ढाल और परिवर्तन की दर"
+      },
+      "body": {
+        "en": "The slope of a nonvertical line through two points is the change in y divided by the change in x. It measures directed rise per horizontal run. Reversing both point labels leaves the quotient unchanged. A horizontal line has slope zero; a vertical line has undefined slope because division by zero is impossible. Inclination is measured anticlockwise from the positive x-axis between 0 and 180 degrees. For a nonvertical line m=tan θ. A negative slope falls as x increases, even though its inclination lies between 90 and 180 degrees. Equal axis scales are important when interpreting visual steepness.",
+        "hi": "ढाल (Slope) किसी गैरऊर्ध्वाधर रेखा में x के परिवर्तन की तुलना में y का परिवर्तन है। बिंदु (x_1,y_1) तथा (x_2,y_2) के लिए m=(y_2−y_1)/(x_2−x_1) है। दोनों बिंदुओं का क्रम साथ बदलने पर अंश और हर दोनों के चिह्न बदलेंगे, इसलिए ढाल समान रहेगी। क्षैतिज रेखा की ढाल 0 है। ऊर्ध्वाधर रेखा में x का अंतर 0 होने से ढाल अपरिभाषित है; उसे 0 न लिखें। झुकाव कोण (Inclination) धनात्मक x-अक्ष से वामावर्त 0 से 180° के बीच मापते हैं। गैरऊर्ध्वाधर रेखा के लिए m=tan θ है। ऋणात्मक ढाल वाली रेखा x बढ़ने पर नीचे जाती है, लेकिन उसका झुकाव कोण सामान्यतः अधिककोण है। केवल स्क्रीन की खड़ी दिखती रेखा देखकर ढाल न निकालें। दोनों अक्षों की इकाइयाँ और पैमाना देखें। ढाल दूरी नहीं है, इसलिए ऋणात्मक भी हो सकती है। बिंदु मूल समीकरण पर हैं या नहीं, यह भी प्रतिस्थापन से जाँचना अच्छा रहता है।"
+      },
+      "formula": "m=(y_2−y_1)/(x_2−x_1), x_2≠x_1",
+      "question": {
+        "en": "Find the slope through (1,2),(3,6).",
+        "hi": "(1,2),(3,6) से रेखा की ढाल।"
+      },
+      "answer": {
+        "en": "(6−2)/(3−1)=2.",
+        "hi": "(6−2)/(3−1)=2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Parallel and perpendicular lines",
+        "hi": "समांतर और लंबवत रेखाएँ"
+      },
+      "body": {
+        "en": "Two distinct nonvertical lines are parallel when their slopes agree. They are perpendicular when the product of their slopes is −1, provided both slopes exist. A horizontal line and a vertical line are perpendicular but cannot be tested using a product of two finite slopes. The acute angle between lines with slopes m_1,m_2 satisfies tan θ=|(m_2−m_1)/(1+m_1m_2)| when the denominator is nonzero. If it is zero, the lines are perpendicular. Absolute value produces the nonnegative acute angle. Coincident lines share every point and should be distinguished from distinct parallel lines.",
+        "hi": "2 अलग गैरऊर्ध्वाधर रेखाएँ समांतर (Parallel) हों, तो उनकी ढाल समान होती है। दोनों ढाल मौजूद हों और रेखाएँ लंबवत (Perpendicular) हों, तो m_1m_2=−1 है। इस नियम की शर्त जरूरी है: क्षैतिज और ऊर्ध्वाधर रेखाएँ भी लंबवत हैं, लेकिन ऊर्ध्वाधर ढाल अपरिभाषित होने से साधारण गुणनफल नहीं लिख सकते। ढाल m_1 और m_2 की रेखाओं के बीच न्यून कोण के लिए tan θ=|(m_2−m_1)/(1+m_1m_2)| है, जब हर अशून्य हो। हर 0 हो तो कोण 90° है। निरपेक्ष मान न्यून कोण के लिए गैरऋणात्मक मान देता है। यदि दोनों समीकरण समान रेखा बताते हैं, तो रेखाएँ संपाती हैं; उन्हें अलग समांतर रेखाएँ न मानें। ढाल निकालते समय समीकरण को y=mx+c रूप में सावधानी से बदलें। जैसे 2x+3y=6 में m=−2/3 है, 2/3 नहीं। कोण की गणना में अंश और हर की पूरी अभिव्यक्ति को कोष्ठक में रखें।"
+      },
+      "formula": "Parallel: m_1=m_2; perpendicular: m_1m_2=−1",
+      "question": {
+        "en": "What slope is perpendicular to 2?",
+        "hi": "ढाल 2 के लंबवत ढाल क्या है?"
+      },
+      "answer": {
+        "en": "−1/2.",
+        "hi": "−1/2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Point-slope and two-point forms",
+        "hi": "बिंदु-ढाल और द्विबिंदु रूप"
+      },
+      "body": {
+        "en": "If a line passes through (x_1,y_1) and has slope m, every point on it satisfies y−y_1=m(x−x_1). This avoids finding an intercept first. With two points having distinct x-coordinates, replace m by their difference quotient. If the x-coordinates agree, write x=x_1 directly. A line is determined by two distinct points; repeated copies of one point do not determine a unique line. After expanding, substitute both known points as a check. Keep fractional slopes exact. Clearing denominators gives an equivalent general equation, and multiplying an equation by a nonzero constant does not change its line.",
+        "hi": "रेखा (x_1,y_1) से गुजरती हो और ढाल m हो, तो बिंदु-ढाल रूप (Point-slope form) y−y_1=m(x−x_1) है। इससे पहले अंतःखंड निकालना आवश्यक नहीं रहता। दिए बिंदु के दोनों निर्देशांक सही स्थान पर रखें। यदि बिंदु (−2,3) है, तो x−(−2)=x+2 और y−3 आएगा। 2 बिंदु दिए हों तथा उनके x अलग हों, तो ढाल का अंतर भाग वाला सूत्र रखकर द्विबिंदु रूप मिलता है। x समान हों तो भाग देने की कोशिश न करें; सीधे x=x_1 लिखें। 2 अलग बिंदु एक रेखा निर्धारित करते हैं। एक ही बिंदु दो बार लिखने से अनंत संभव रेखाओं में चुनाव नहीं होगा। समीकरण फैलाने के बाद दोनों बिंदु रखकर जाँचें। भिन्न ढाल का दशमलव लेने की जगह हर हटाकर सटीक सामान्य समीकरण प्राप्त कर सकते हैं। किसी समीकरण को अशून्य स्थिरांक से गुणा करने पर रेखा नहीं बदलती। लेकिन 0 से गुणा करने पर सारी सूचना मिट जाएगी।"
+      },
+      "formula": "y−y_1=m(x−x_1)",
+      "question": {
+        "en": "Write the line through (2,3) with slope 4.",
+        "hi": "(2,3) से ढाल 4 की रेखा लिखें।"
+      },
+      "answer": {
+        "en": "y−3=4(x−2), or y=4x−5.",
+        "hi": "y−3=4(x−2), अर्थात y=4x−5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Slope-intercept and intercept forms",
+        "hi": "ढाल-अंतःखंड और अंतःखंड रूप"
+      },
+      "body": {
+        "en": "The equation y=mx+c exposes slope m and y-intercept c. The intercept c is the y-coordinate at x=0, not necessarily a length. A line with nonzero intercepts a and b can be written x/a+y/b=1. It passes through (a,0) and (0,b), so the intercepts can be negative. This form does not represent a line through the origin using zero denominators. Read intercepts by setting the other coordinate to zero; a coefficient in the general equation is not itself an intercept. A sketch with two axis intersections is a useful check. Vertical lines have no slope-intercept form.",
+        "hi": "ढाल-अंतःखंड रूप (Slope-intercept form) y=mx+c में m ढाल और c y-अंतःखंड है। x=0 रखने पर y=c मिलता है। यह निर्देशांक ऋणात्मक भी हो सकता है; इसलिए हर अंतःखंड को धनात्मक लंबाई न मानें। x-अक्ष तथा y-अक्ष पर अशून्य अंतःखंड क्रमशः a और b हों, तो अंतःखंड रूप (Intercept form) x/a+y/b=1 है। यह (a,0) और (0,b) से गुजरता है। उदाहरण के लिए x/3+y/2=1 की ढाल −2/3 है। मूलबिंदु से जाने वाली रेखा के लिए दोनों अंतःखंड 0 रखने पर शून्य हर बनेगा, इसलिए यह रूप सीधे उपयोगी नहीं है। ऐसे में बिंदु-ढाल या सामान्य रूप चुनें। सामान्य समीकरण के गुणांक को अंतःखंड समझना गलत है। अंतःखंड निकालने के लिए दूसरे निर्देशांक को 0 करें। ऊर्ध्वाधर रेखा y=mx+c में नहीं लिखी जा सकती। रेखा की छोटी रूपरेखा बनाकर देखें कि प्राप्त अक्ष काट वास्तव में उसी समीकरण को संतुष्ट करते हैं।"
+      },
+      "formula": "y=mx+c; x/a+y/b=1 (a,b≠0)",
+      "question": {
+        "en": "Find the intercepts of 2x+3y=6.",
+        "hi": "2x+3y=6 के अंतःखंड क्या हैं?"
+      },
+      "answer": {
+        "en": "x-intercept 3; y-intercept 2.",
+        "hi": "x-अंतःखंड 3; y-अंतःखंड 2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Enrichment: Normal form",
+        "hi": "अतिरिक्त समझ: अभिलंब रूप"
+      },
+      "body": {
+        "en": "In normal form x cos ω+y sin ω=p, p is the nonnegative perpendicular distance from the origin to the line and ω is the direction angle of the perpendicular drawn from the origin. The normal vector is (cos ω,sin ω), a unit vector. It points perpendicular to the line rather than along it. To obtain this form from Ax+By+C=0 divide by √(A²+B²) with an overall sign chosen so the right side is nonnegative. If the line passes through the origin, p=0. The angle of the normal is not the inclination of the line; their directions differ by a right angle modulo 180 degrees.",
+        "hi": "अभिलंब रूप (Normal form) x cos ω+y sin ω=p है। इसमें p मूलबिंदु से रेखा की लंबवत दूरी है, इसलिए p≥0 होता है। ω उस अभिलंब की दिशा का कोण है जो मूलबिंदु से रेखा की ओर खींचा जाता है। सदिश (cos ω,sin ω) की लंबाई 1 है और वह रेखा के लंबवत है, रेखा की दिशा में नहीं। Ax+By+C=0 से यह रूप पाने के लिए √(A²+B²) से भाग दें और पूरे समीकरण का चिह्न ऐसा चुनें कि दाहिना पक्ष गैरऋणात्मक हो। जैसे 3x+4y=10 को 5 से भाग देने पर (3/5)x+(4/5)y=2 मिलता है। यहाँ p=2 है। अभिलंब के कोण को रेखा का झुकाव मानना सामान्य गलती है। दोनों दिशाएँ 90° से अलग हैं। मूलबिंदु पर जाने वाली रेखा में p=0 होगा। सामान्य रूप के गुणांक को त्रिकोणमितीय मान मानने से पहले उनके वर्गों का योग 1 अवश्य जाँचें।"
+      },
+      "formula": "x cos ω+y sin ω=p, p≥0",
+      "question": {
+        "en": "Find the origin distance to 3x+4y=10.",
+        "hi": "मूलबिंदु से 3x+4y=10 की दूरी।"
+      },
+      "answer": {
+        "en": "p=10/5=2.",
+        "hi": "p=10/5=2।"
+      }
+    },
+    {
+      "title": {
+        "en": "General equation of a line",
+        "hi": "रेखा का सामान्य समीकरण"
+      },
+      "body": {
+        "en": "Every straight line has an equation Ax+By+C=0 with A and B not both zero. If B≠0 its slope is −A/B and y-intercept is −C/B. If B=0 then A≠0 and the line is vertical. If A=0 the line is horizontal. Two coefficient triples differing by a nonzero factor describe the same line. Before comparing parallel lines for distances, make their x and y coefficients exactly the same. Solving two nonparallel equations yields their intersection. A shared solution belongs to both lines and should be checked by substitution rather than relying entirely on a diagram.",
+        "hi": "हर सीधी रेखा का सामान्य समीकरण (General equation) Ax+By+C=0 लिखा जा सकता है, जहाँ A और B दोनों साथ 0 नहीं हैं। यदि B≠0 हो तो y=−(A/B)x−C/B से ढाल −A/B तथा y-अंतःखंड −C/B मिलता है। B=0 में रेखा ऊर्ध्वाधर होती है और समीकरण x=−C/A है। A=0 में क्षैतिज रेखा y=−C/B मिलेगी। यदि A=B=0 हो, तो समीकरण वास्तविक रेखा नहीं बताता: C=0 पर पूरा समतल और C≠0 पर कोई बिंदु नहीं मिलेगा। 2 गुणांक त्रिक अशून्य गुणक से जुड़े हों तो रेखाएँ समान हैं। समांतर रेखाओं की दूरी निकालने से पहले x तथा y के गुणांक बिल्कुल समान बनाना जरूरी है। 2 असमांतर रेखाओं का प्रतिच्छेद दोनों समीकरण साथ हल करने से मिलता है। पाया गया बिंदु दोनों मूल समीकरणों में रखकर सत्यापित करें। चित्र अनुमान दे सकता है, लेकिन बीजगणितीय जाँच सटीकता स्थापित करती है।"
+      },
+      "formula": "Ax+By+C=0, (A,B)≠(0,0)",
+      "question": {
+        "en": "What is the slope of 2x+5y−7=0?",
+        "hi": "2x+5y−7=0 की ढाल क्या है?"
+      },
+      "answer": {
+        "en": "−2/5.",
+        "hi": "−2/5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Point-to-line and parallel-line distance",
+        "hi": "बिंदु से रेखा तथा समांतर रेखाओं की दूरी"
+      },
+      "body": {
+        "en": "The perpendicular distance from (x_0,y_0) to Ax+By+C=0 is |Ax_0+By_0+C|/√(A²+B²). The absolute value ensures a nonnegative distance, while the denominator normalises the coefficient vector. A point on the line gives zero. Scaling all coefficients does not change the result because numerator and denominator scale together. For parallel lines with the same A and B, the distance is |C_1−C_2|/√(A²+B²). First align coefficient signs and scales. These formulas measure the shortest distance, not a horizontal or vertical gap unless that direction happens to be perpendicular to the line.",
+        "hi": "बिंदु (x_0,y_0) से रेखा Ax+By+C=0 की लंबवत दूरी |Ax_0+By_0+C|/√(A²+B²) है। निरपेक्ष मान दूरी को गैरऋणात्मक रखता है। हर में गुणांकों की लंबाई होने से समीकरण के पैमाने का असर हट जाता है। सभी गुणांक 2 से गुणा करें तो अंश और हर दोनों 2 गुने होंगे, इसलिए दूरी वही मिलेगी। यदि बिंदु रेखा पर है, तो अंश 0 और दूरी 0 होगी। समांतर रेखाओं Ax+By+C_1=0 तथा Ax+By+C_2=0 की दूरी |C_1−C_2|/√(A²+B²) है। यह तभी सीधे लगाएँ जब x और y के गुणांक समान हों। जैसे 2x+2y+6=0 को पहले 2 से भाग दें, तभी x+y−1=0 से तुलना करें। समीकरणों के चिह्न और स्थिरांक सावधानी से मिलाएँ। यह सबसे छोटी लंबवत दूरी है। चित्र में समान x पर दिखने वाला ऊर्ध्वाधर अंतर सामान्यतः इससे अलग होगा। निर्देशांकों की इकाई दी हो तो उत्तर में वही लंबाई इकाई लिखें।"
+      },
+      "formula": "d=|Ax_0+By_0+C|/√(A²+B²)",
+      "question": {
+        "en": "Find distance from (0,0) to 3x+4y−15=0.",
+        "hi": "(0,0) से 3x+4y−15=0 की दूरी।"
+      },
+      "answer": {
+        "en": "15/5=3 units.",
+        "hi": "15/5=3 इकाई।"
+      }
+    },
+    {
+      "title": {
+        "en": "A complete coordinate solution",
+        "hi": "निर्देशांक समाधान की पूरी विधि"
+      },
+      "body": {
+        "en": "Translate words into geometric conditions before calculating. A midpoint condition supplies a point, a parallel condition supplies a slope, and a perpendicular condition supplies a negative reciprocal slope when defined. Choose the equation form requiring the fewest unknowns. Write the final equation in a clear equivalent form and verify each original condition. For triangles, an altitude is perpendicular to the opposite side and a median joins a vertex to the opposite midpoint; these are different lines. Do not treat the perpendicular bisector as passing through a vertex unless the configuration says so. A coordinate sketch should support the algebra without replacing it. For a median from A=(0,0), with opposite endpoints B=(2,4) and C=(6,0), first obtain midpoint M=(4,2). Its slope from A is 1/2, so the median is y=x/2. The opposite side has slope −1, hence the altitude from A has slope 1 and equation y=x. These are visibly and algebraically different. The median passes through M, while the altitude satisfies the perpendicular-slope condition; checking both illustrates why the original geometric word matters.",
+        "hi": "निर्देशांक प्रश्न हल करते समय पहले कथन को ज्यामितीय शर्त में बदलें। मध्यबिंदु की सूचना एक बिंदु देती है; समांतरता ढाल देती है; लंबवतता सामान्य स्थिति में ऋणात्मक व्युत्क्रम ढाल देती है। कम अज्ञात वाला समीकरण रूप चुनें। एक बिंदु और ढाल मिले तो बिंदु-ढाल रूप सरल है। त्रिभुज में माध्यिका शीर्ष को विपरीत भुजा के मध्यबिंदु से मिलाती है। शीर्षलंब उस भुजा पर लंबवत होता है। दोनों को एक मानना गलत है। लंब समद्विभाजक भुजा के मध्यबिंदु से जाता है और उस पर लंबवत होता है; वह अनिवार्यतः किसी शीर्ष से नहीं गुजरता। अंतिम समीकरण देने के बाद उपलब्ध बिंदुओं को रखें और ढाल या लंबवतता की शर्त जाँचें। भिन्न को सटीक रखें; बहुत जल्दी दशमलव लेने से रेखा थोड़ा खिसक सकती है। छोटे चित्र में अक्ष, बिंदु और अपेक्षित दिशा लिखें। चित्र बीजगणित का सहायक है, प्रमाण का विकल्प नहीं। उत्तर के किसी भी समतुल्य गैरशून्य गुणक रूप को स्वीकार कर सकते हैं। एक उदाहरण में शीर्ष A=(0,0) और विपरीत भुजा के सिरे B=(2,4), C=(6,0) लें। मध्यबिंदु M=(4,2) मिलेगा। A से M की ढाल 1/2 है, इसलिए माध्यिका y=x/2 है। दूसरी ओर BC की ढाल −1 है, इसलिए A से शीर्षलंब की ढाल 1 और समीकरण y=x होगा। दोनों रेखाएँ अलग हैं। माध्यिका के लिए M का समीकरण पर होना और शीर्षलंब के लिए ढाल गुणनफल −1 होना जाँचें। इस छोटे उदाहरण में शब्दों का सही अर्थ सीधे अंतिम समीकरण बदल देता है। इसलिए प्रश्न की ज्यामितीय शर्त पहले लिखना गणना जितना आवश्यक है।"
+      },
+      "formula": "Condition → point / slope → equation → verification",
+      "question": {
+        "en": "How does a median differ from an altitude?",
+        "hi": "माध्यिका और शीर्षलंब में अंतर क्या है?"
+      },
+      "answer": {
+        "en": "A median uses the opposite midpoint; an altitude is perpendicular to the opposite side.",
+        "hi": "माध्यिका विपरीत मध्यबिंदु से जाती है; शीर्षलंब विपरीत भुजा पर लंबवत होता है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find a line through (1,2) and (3,6).",
+        "hi": "(1,2),(3,6) से रेखा निकालें।"
+      },
+      "steps": [
+        {
+          "en": "m=(6−2)/(3−1)=2.",
+          "hi": "m=(6−2)/(3−1)=2।"
+        },
+        {
+          "en": "Use y−2=2(x−1).",
+          "hi": "y−2=2(x−1) लगाएँ।"
+        },
+        {
+          "en": "Simplify to y=2x.",
+          "hi": "सरलीकरण से y=2x।"
+        }
+      ],
+      "answer": {
+        "en": "y=2x",
+        "hi": "y=2x"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find intercepts of 3x+2y=12.",
+        "hi": "3x+2y=12 के अंतःखंड।"
+      },
+      "steps": [
+        {
+          "en": "At y=0, 3x=12.",
+          "hi": "y=0 पर 3x=12।"
+        },
+        {
+          "en": "At x=0, 2y=12.",
+          "hi": "x=0 पर 2y=12।"
+        },
+        {
+          "en": "The intercept form is x/4+y/6=1.",
+          "hi": "अंतःखंड रूप x/4+y/6=1।"
+        }
+      ],
+      "answer": {
+        "en": "4 and 6",
+        "hi": "4 तथा 6"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find a line through (2,−1) perpendicular to y=2x+3.",
+        "hi": "(2,−1) से y=2x+3 पर लंबवत रेखा।"
+      },
+      "steps": [
+        {
+          "en": "Given slope is 2; required slope=−1/2.",
+          "hi": "दी ढाल 2; अपेक्षित ढाल −1/2।"
+        },
+        {
+          "en": "y+1=−(x−2)/2.",
+          "hi": "y+1=−(x−2)/2।"
+        },
+        {
+          "en": "Multiply by 2 and simplify.",
+          "hi": "2 से गुणा करके सरल करें।"
+        }
+      ],
+      "answer": {
+        "en": "x+2y=0",
+        "hi": "x+2y=0"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the distance between x+y−1=0 and 2x+2y+6=0.",
+        "hi": "x+y−1=0 तथा 2x+2y+6=0 की दूरी।"
+      },
+      "steps": [
+        {
+          "en": "Divide the second equation by 2: x+y+3=0.",
+          "hi": "दूसरे को 2 से भाग दें: x+y+3=0।"
+        },
+        {
+          "en": "Now A=B=1, C_1=−1,C_2=3.",
+          "hi": "अब A=B=1, C_1=−1,C_2=3।"
+        },
+        {
+          "en": "Distance=|−1−3|/√2=2√2.",
+          "hi": "दूरी=|−1−3|/√2=2√2।"
+        }
+      ],
+      "answer": {
+        "en": "2√2 units",
+        "hi": "2√2 इकाई"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find the perpendicular bisector of the segment joining (1,1),(5,3).",
+        "hi": "(1,1),(5,3) को जोड़ने वाले खंड का लंब समद्विभाजक।"
+      },
+      "steps": [
+        {
+          "en": "Midpoint is (3,2).",
+          "hi": "मध्यबिंदु (3,2) है।"
+        },
+        {
+          "en": "Segment slope=(3−1)/(5−1)=1/2; normal slope=−2.",
+          "hi": "खंड की ढाल 1/2; लंबवत ढाल −2।"
+        },
+        {
+          "en": "y−2=−2(x−3) gives 2x+y−8=0.",
+          "hi": "y−2=−2(x−3) से 2x+y−8=0।"
+        },
+        {
+          "en": "Midpoint satisfies it and slope product is −1.",
+          "hi": "मध्यबिंदु इसे संतुष्ट करता है और ढाल गुणनफल −1 है।"
+        }
+      ],
+      "answer": {
+        "en": "2x+y−8=0",
+        "hi": "2x+y−8=0"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A vertical line has slope",
+        "hi": "ऊर्ध्वाधर रेखा की ढाल"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित"
+          },
+          "reason": {
+            "en": "Its horizontal change is zero.",
+            "hi": "क्षैतिज अंतर 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Zero slope belongs to a horizontal line.",
+            "hi": "शून्य ढाल क्षैतिज रेखा की होती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "This requires equal nonzero rise and run.",
+            "hi": "इसके लिए अशून्य उठान और चाल बराबर चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "Vertical direction has no finite slope.",
+            "hi": "ऊर्ध्वाधर दिशा की कोई परिमित ढाल नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Slope of 3x+2y=6 is",
+        "hi": "3x+2y=6 की ढाल"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−3/2",
+            "hi": "−3/2"
+          },
+          "reason": {
+            "en": "Solve for y to read −3/2.",
+            "hi": "y के लिए हल करने पर −3/2 मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3/2",
+            "hi": "3/2"
+          },
+          "reason": {
+            "en": "The sign is lost.",
+            "hi": "ऋण चिह्न छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2/3",
+            "hi": "−2/3"
+          },
+          "reason": {
+            "en": "This reverses the coefficient ratio.",
+            "hi": "गुणांकों का अनुपात उलट गया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "This is a coefficient, not the slope.",
+            "hi": "यह गुणांक है, ढाल नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which line is parallel to y=4x−1?",
+        "hi": "y=4x−1 के समांतर रेखा"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "y=4x+2",
+            "hi": "y=4x+2"
+          },
+          "reason": {
+            "en": "Both have slope 4.",
+            "hi": "दोनों की ढाल 4 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "y=−4x+2",
+            "hi": "y=−4x+2"
+          },
+          "reason": {
+            "en": "Slope −4 differs from 4.",
+            "hi": "ढाल −4, 4 से अलग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "y=x/4",
+            "hi": "y=x/4"
+          },
+          "reason": {
+            "en": "Slope is 1/4.",
+            "hi": "ढाल 1/4 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=4",
+            "hi": "x=4"
+          },
+          "reason": {
+            "en": "This is vertical.",
+            "hi": "यह ऊर्ध्वाधर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Slope perpendicular to −3 is",
+        "hi": "−3 के लंबवत ढाल"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/3",
+            "hi": "1/3"
+          },
+          "reason": {
+            "en": "(−3)(1/3)=−1.",
+            "hi": "(−3)(1/3)=−1।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1/3",
+            "hi": "−1/3"
+          },
+          "reason": {
+            "en": "The product would be +1.",
+            "hi": "गुणनफल +1 होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "The product would be −9.",
+            "hi": "गुणनफल −9 होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "−3",
+            "hi": "−3"
+          },
+          "reason": {
+            "en": "This is parallel instead.",
+            "hi": "यह समांतर ढाल है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The y-intercept of y=2x−5 is",
+        "hi": "y=2x−5 का y-अंतःखंड"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−5",
+            "hi": "−5"
+          },
+          "reason": {
+            "en": "At x=0, y=−5.",
+            "hi": "x=0 पर y=−5।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "The sign matters.",
+            "hi": "चिह्न महत्वपूर्ण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "This is the slope.",
+            "hi": "यह ढाल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5/2",
+            "hi": "5/2"
+          },
+          "reason": {
+            "en": "This is the x-intercept.",
+            "hi": "यह x-अंतःखंड है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Distance from origin to 3x+4y−20=0 is",
+        "hi": "मूलबिंदु से 3x+4y−20=0 की दूरी"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "|−20|/√25=4.",
+            "hi": "|−20|/√25=4।"
+          }
+        },
+        {
+          "text": {
+            "en": "20",
+            "hi": "20"
+          },
+          "reason": {
+            "en": "Normalisation by 5 is missing.",
+            "hi": "5 से भाग देना छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−4",
+            "hi": "−4"
+          },
+          "reason": {
+            "en": "Distance cannot be negative.",
+            "hi": "दूरी ऋणात्मक नहीं हो सकती।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "This is the normal-vector length.",
+            "hi": "यह अभिलंब सदिश की लंबाई है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is not a line equation?",
+        "hi": "कौन रेखा समीकरण नहीं है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0x+0y+5=0",
+            "hi": "0x+0y+5=0"
+          },
+          "reason": {
+            "en": "It has no solutions.",
+            "hi": "इसका कोई हल नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=2",
+            "hi": "x=2"
+          },
+          "reason": {
+            "en": "A vertical line.",
+            "hi": "यह ऊर्ध्वाधर रेखा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "y=0",
+            "hi": "y=0"
+          },
+          "reason": {
+            "en": "The x-axis is a line.",
+            "hi": "x-अक्ष एक रेखा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2x−y+3=0",
+            "hi": "2x−y+3=0"
+          },
+          "reason": {
+            "en": "A and B are not both zero.",
+            "hi": "A और B दोनों 0 नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The line through (−2,3) with slope 1 is",
+        "hi": "(−2,3) से ढाल 1 की रेखा"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "y−3=x+2",
+            "hi": "y−3=x+2"
+          },
+          "reason": {
+            "en": "Substitution gives zero on both sides of the point-slope equation.",
+            "hi": "सही बिंदु-ढाल प्रतिस्थापन यही है।"
+          }
+        },
+        {
+          "text": {
+            "en": "y+3=x−2",
+            "hi": "y+3=x−2"
+          },
+          "reason": {
+            "en": "Both point-coordinate signs are wrong.",
+            "hi": "बिंदु निर्देशांकों के चिह्न उलटे हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "y−3=x−2",
+            "hi": "y−3=x−2"
+          },
+          "reason": {
+            "en": "x−(−2) must be x+2.",
+            "hi": "x−(−2) को x+2 लिखना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "y=3",
+            "hi": "y=3"
+          },
+          "reason": {
+            "en": "This has slope zero.",
+            "hi": "इसकी ढाल 0 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two nonvertical perpendicular lines obey",
+        "hi": "2 गैरऊर्ध्वाधर लंबवत रेखाओं में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "m_1m_2=−1",
+            "hi": "m_1m_2=−1"
+          },
+          "reason": {
+            "en": "Their slopes are negative reciprocals.",
+            "hi": "ढालें ऋणात्मक व्युत्क्रम हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "m_1=m_2",
+            "hi": "m_1=m_2"
+          },
+          "reason": {
+            "en": "This is the parallel condition.",
+            "hi": "यह समांतरता की शर्त है।"
+          }
+        },
+        {
+          "text": {
+            "en": "m_1m_2=1",
+            "hi": "m_1m_2=1"
+          },
+          "reason": {
+            "en": "Positive reciprocal slopes do not give perpendicularity.",
+            "hi": "धनात्मक व्युत्क्रम ढालें लंबवत नहीं बनातीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "m_1+m_2=0",
+            "hi": "m_1+m_2=0"
+          },
+          "reason": {
+            "en": "Opposite slopes are not generally perpendicular.",
+            "hi": "विपरीत ढालें सामान्यतः लंबवत नहीं होतीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Enrichment: In x cos ω+y sin ω=p, p is",
+        "hi": "अतिरिक्त समझ: x cos ω+y sin ω=p में p"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Perpendicular origin distance",
+            "hi": "मूलबिंदु से लंबवत दूरी"
+          },
+          "reason": {
+            "en": "p≥0 measures the normal length.",
+            "hi": "p≥0 अभिलंब की लंबाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Slope",
+            "hi": "ढाल"
+          },
+          "reason": {
+            "en": "The normal distance is not a slope.",
+            "hi": "अभिलंब दूरी ढाल नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x-intercept always",
+            "hi": "हमेशा x-अंतःखंड"
+          },
+          "reason": {
+            "en": "The x-intercept depends on cos ω.",
+            "hi": "x-अंतःखंड cos ω पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any signed number",
+            "hi": "कोई भी चिह्नित संख्या"
+          },
+          "reason": {
+            "en": "The normal convention takes p≥0.",
+            "hi": "अभिलंब परिपाटी में p≥0 है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Find slope through (−1,4),(2,−2).",
+        "hi": "(−1,4),(2,−2) से ढाल।"
+      },
+      "answer": {
+        "en": "(−2−4)/(2+1)=−2.",
+        "hi": "(−2−4)/(2+1)=−2।"
+      }
+    },
+    {
+      "question": {
+        "en": "Write the horizontal line through (3,−2).",
+        "hi": "(3,−2) से क्षैतिज रेखा।"
+      },
+      "answer": {
+        "en": "y=−2.",
+        "hi": "y=−2।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why x=5 has no finite slope.",
+        "hi": "x=5 की परिमित ढाल क्यों नहीं?"
+      },
+      "answer": {
+        "en": "Any two distinct points have zero x-difference; slope would divide by zero.",
+        "hi": "किन्हीं 2 अलग बिंदुओं में x का अंतर 0 है; ढाल में 0 से भाग होगा।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the intersection of x+y=5 and x−y=1.",
+        "hi": "x+y=5 तथा x−y=1 का प्रतिच्छेद।"
+      },
+      "answer": {
+        "en": "Adding gives x=3, then y=2. The point is (3,2).",
+        "hi": "जोड़ने पर x=3, फिर y=2। बिंदु (3,2) है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the distance of (1,2) from x+y−1=0.",
+        "hi": "(1,2) से x+y−1=0 की दूरी।"
+      },
+      "answer": {
+        "en": "|1+2−1|/√2=√2 units.",
+        "hi": "|1+2−1|/√2=√2 इकाई।"
+      }
+    },
+    {
+      "question": {
+        "en": "Are x+2y−3=0 and 2x+4y−6=0 distinct parallel lines?",
+        "hi": "क्या x+2y−3=0 और 2x+4y−6=0 अलग समांतर रेखाएँ हैं?"
+      },
+      "answer": {
+        "en": "No; every coefficient is doubled, so they are the same line.",
+        "hi": "नहीं; हर गुणांक दोगुना है, इसलिए दोनों एक ही रेखा हैं।"
+      }
+    }
+  ],
+  "revision": [
+    {
+      "en": "Slope is rise divided by run.",
+      "hi": "ढाल उठान भाग क्षैतिज चाल है।"
+    },
+    {
+      "en": "Vertical slopes are undefined.",
+      "hi": "ऊर्ध्वाधर ढाल अपरिभाषित है।"
+    },
+    {
+      "en": "Use a point and slope to form an equation.",
+      "hi": "बिंदु और ढाल से समीकरण बनता है।"
+    },
+    {
+      "en": "Normalise coefficients in distance formulas.",
+      "hi": "दूरी सूत्र में गुणांकों का मानकीकरण करें।"
+    },
+    {
+      "en": "Verify all original geometric conditions.",
+      "hi": "सभी मूल ज्यामितीय शर्तें जाँचें।"
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not assign zero slope to vertical lines, drop the negative sign in −A/B, or compare unnormalised constants for parallel-line distance.",
+    "hi": "ऊर्ध्वाधर रेखा की ढाल 0 न लिखें; −A/B का ऋण चिह्न न छोड़ें; समांतर दूरी में असमान गुणांकों के स्थिरांक न घटाएँ।"
+  },
+  "conceptMap": {
+    "en": "Points → slope → line forms → intersection / angles → perpendicular distance.",
+    "hi": "बिंदु → ढाल → रेखा के रूप → प्रतिच्छेद / कोण → लंबवत दूरी।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics, Class XI",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh109.pdf"
+    }
+  ]
+}

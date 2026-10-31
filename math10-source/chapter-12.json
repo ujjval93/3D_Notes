@@ -1,0 +1,890 @@
+{
+  "id": 12,
+  "title": {
+    "en": "Surface Areas and Volumes",
+    "hi": "पृष्ठीय क्षेत्रफल और आयतन"
+  },
+  "goal": {
+    "en": "Break a composite solid into known shapes and distinguish exposed area from occupied volume.",
+    "hi": "संयुक्त ठोस को परिचित आकृतियों में बाँटकर खुले पृष्ठ का क्षेत्रफल और घिरा आयतन अलग पहचानें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Read the solid before calculating",
+        "hi": "गणना से पहले ठोस को पहचानें"
+      },
+      "body": {
+        "en": "A composite solid is one object whose shape can be understood using familiar solids. A cylindrical body with a conical roof is a useful example. Begin with a labelled sketch rather than a formula. Identify the common axis, the circular faces where the parts meet, and every given dimension. A shared circular face requires the same radius on both touching parts when the surfaces fit exactly. Total height is not automatically the height of each part: if a roof has height 4 cm on a body of height 9 cm, the combined height is 13 cm. Read whether the object is solid, hollow, open, closed, painted, or filled. These words decide the calculation. For this chapter, practise combinations of two familiar solids. More complicated decorative pictures can hide unnecessary detail. Make a short table listing each component, its radius or other lengths, and the quantity required. A correct mathematical model is already an important part of the solution.",
+        "hi": "संयुक्त ठोस (Composite solid) ऐसी वस्तु है जिसकी आकृति परिचित ठोसों को मिलाकर समझी जा सकती है। बेलनाकार भाग पर शंकु की छत इसका अच्छा उदाहरण है। तुरंत सूत्र लगाने के बजाय पहले नामों सहित चित्र बनाएँ। साझा अक्ष, जोड़ पर मिलने वाले वृत्ताकार पृष्ठ और दिए गए सभी माप पहचानें। यदि दोनों भाग पूरी तरह मिलते हैं, तो जोड़ वाले वृत्तों की त्रिज्याएँ समान होंगी। कुल ऊँचाई को हर भाग की ऊँचाई न मानें। 9 cm ऊँचे बेलन पर 4 cm ऊँचा शंकु हो, तो पूरी ऊँचाई 13 cm होगी। प्रश्न में वस्तु ठोस है या खोखली, खुली है या बंद, रंगनी है या भरनी है, यह भी पढ़ें। इन्हीं शब्दों से सही गणना तय होती है। इस अध्याय में 2 परिचित ठोसों के संयोजन का अभ्यास करें। सजावटी चित्र की हर रेखा गणना के लिए जरूरी नहीं होती। एक छोटी सारणी में हर भाग का नाम, त्रिज्या, ऊँचाई और पूछी गई राशि लिखें। चित्र का सही गणितीय मॉडल बनाना हल का आवश्यक भाग है। जोड़ पर छिपे पृष्ठ को अलग चिह्न लगाकर दिखाने से आगे गलती कम होती है।"
+      },
+      "formula": "H(total) = h1 + h2 (for vertically joined parts)",
+      "question": {
+        "en": "A cone of height 5 cm is on a cylinder of height 8 cm. What is the total height?",
+        "hi": "5 cm ऊँचा शंकु 8 cm ऊँचे बेलन पर है। कुल ऊँचाई क्या है?"
+      },
+      "answer": {
+        "en": "13 cm, because the heights are measured successively along the same axis.",
+        "hi": "13 cm, क्योंकि ऊँचाइयाँ एक ही अक्ष पर क्रम से जुड़ती हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Surface area and volume answer different questions",
+        "hi": "पृष्ठीय क्षेत्रफल और आयतन में अंतर"
+      },
+      "body": {
+        "en": "Surface area measures the size of a boundary, whereas volume measures the space occupied by a solid. Covering an object with paint or cloth usually involves area. Filling a container or finding how much material occupies a model usually involves volume. Area is measured in square units such as cm² or m²; volume uses cubic units such as cm³ or m³. A drawing may show both the outside boundary and hidden internal edges, but only the boundary mentioned in the question contributes to the requested area. Curved surface area excludes flat bases. Total surface area includes all exposed surfaces, curved and flat. Capacity concerns the internal space available for filling and may differ from the outside volume when walls have thickness. Keep these meanings attached to the formulas rather than learning symbols alone. For a closed cylinder, adding two circular bases changes the area but does not add any volume to the cylinder. A circular face has zero thickness in the ideal mathematical model.",
+        "hi": "पृष्ठीय क्षेत्रफल (Surface area) सीमा के फैलाव को मापता है, जबकि आयतन (Volume) ठोस द्वारा घेरी गई जगह को मापता है। वस्तु रंगने या कपड़े से ढकने में सामान्यतः क्षेत्रफल चाहिए। पात्र भरने या ठोस पदार्थ की मात्रा जानने में आयतन चाहिए। क्षेत्रफल की इकाइयाँ cm² और m² हैं। आयतन की इकाइयाँ cm³ और m³ हैं। चित्र में बाहर की सीमा के साथ भीतर के छिपे किनारे भी दिख सकते हैं। लेकिन माँगे गए क्षेत्रफल में केवल संबंधित खुले पृष्ठ गिने जाते हैं। वक्र पृष्ठीय क्षेत्रफल (Curved surface area) में समतल आधार नहीं आते। संपूर्ण पृष्ठीय क्षेत्रफल (Total surface area) में सभी खुले वक्र और समतल पृष्ठ आते हैं। धारिता (Capacity) भरने के लिए उपलब्ध अंदर की जगह है। दीवार मोटी हो, तो यह बाहर के आयतन से अलग होगी। सूत्र याद करते समय इन अर्थों को साथ रखें। बंद बेलन में 2 वृत्ताकार आधार जोड़ने से क्षेत्रफल बदलता है, लेकिन बेलन का आयतन नहीं बढ़ता। आदर्श गणितीय पृष्ठ की अपनी मोटाई नहीं होती। उत्तर लिखने से पहले पूछें कि राशि को ढकना है या जगह भरनी है।"
+      },
+      "formula": "Area: cm²; Volume: cm³; Capacity: internal volume",
+      "question": {
+        "en": "Which quantity estimates the paint needed for a solid toy?",
+        "hi": "ठोस खिलौने को रंगने के लिए कौन-सी राशि चाहिए?"
+      },
+      "answer": {
+        "en": "Its exposed surface area, not its volume.",
+        "hi": "खिलौने का खुला पृष्ठीय क्षेत्रफल चाहिए, आयतन नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Recall the basic solids and their dimensions",
+        "hi": "मूल ठोस और उनके माप"
+      },
+      "body": {
+        "en": "A cuboid with length l, breadth b and height h has volume lbh and total surface area 2(lb + bh + hl). A cube is a special cuboid with all edges equal. A right circular cylinder of radius r and height h has curved area 2πrh and volume πr²h. A right circular cone has vertical height h and slant height s. Its curved area is πrs and volume is one third of πr²h. The relation s² = r² + h² follows from a right triangle through the axis. A sphere has area 4πr² and volume 4πr³/3. A hemisphere has half the sphere's volume and half its curved area, but its total area also includes a circular base. Check which kind of height is supplied before substituting. A cone's volume uses perpendicular height, never slant height. These formulas are building blocks for a combined shape; they are not an instruction to add every total area without inspecting the join.",
+        "hi": "लंबाई l, चौड़ाई b और ऊँचाई h वाले घनाभ (Cuboid) का आयतन lbh तथा संपूर्ण क्षेत्रफल 2(lb + bh + hl) होता है। घन में सभी किनारे समान होते हैं। त्रिज्या r तथा ऊँचाई h वाले लंब वृत्तीय बेलन (Cylinder) का वक्र क्षेत्रफल 2πrh और आयतन πr²h है। लंब वृत्तीय शंकु (Cone) में लंबवत ऊँचाई h तथा तिर्यक ऊँचाई s अलग हैं। उसका वक्र क्षेत्रफल πrs और आयतन πr²h/3 है। अक्ष से गुजरने वाले समकोण त्रिभुज से s² = r² + h² मिलता है। गोले (Sphere) का क्षेत्रफल 4πr² तथा आयतन 4πr³/3 है। अर्धगोले का आयतन गोले के आयतन का आधा है। उसका वक्र क्षेत्रफल भी आधा है, लेकिन संपूर्ण क्षेत्रफल में वृत्ताकार आधार और जोड़ना पड़ता है। मान रखने से पहले जाँचें कि प्रश्न में कौन-सी ऊँचाई दी है। शंकु के आयतन में लंबवत ऊँचाई आती है, तिर्यक ऊँचाई नहीं। ये सूत्र संयुक्त आकृति के निर्माण-खंड हैं। हर ठोस का पूरा क्षेत्रफल बिना जोड़ देखे जोड़ देना सही तरीका नहीं है।"
+      },
+      "formula": "s = √(r² + h²); V(cone) = πr²h/3; CSA(hemisphere) = 2πr²",
+      "question": {
+        "en": "A cone has r = 3 cm and h = 4 cm. Find its slant height.",
+        "hi": "शंकु में r = 3 cm और h = 4 cm है। तिर्यक ऊँचाई ज्ञात करें।"
+      },
+      "answer": {
+        "en": "s = √(9 + 16) = 5 cm.",
+        "hi": "s = √(9 + 16) = 5 cm।"
+      }
+    },
+    {
+      "title": {
+        "en": "Joined faces are hidden, not painted twice",
+        "hi": "जोड़ वाले पृष्ठ भीतर छिप जाते हैं"
+      },
+      "body": {
+        "en": "When two solids are joined along matching faces, those faces stop being part of the external boundary. Suppose a cone and a cylinder have the same radius and meet at one circular face. Adding their individual total areas counts the joined disk twice, once from each solid. To obtain the outside area of a fully closed combined object, subtract 2πr² from that sum. An easier equivalent method is to list the visible parts directly: the cone's curved area, the cylinder's curved area, and the cylinder's remaining bottom disk. The visible-area method is especially helpful for an open tent, a toy with a flat bottom, or a vessel without a lid. Do not remove only one copy when starting from two total areas. If only the lateral outside is painted, the bottom disk must also be excluded. State that choice clearly. The contact disk is still useful for finding the common radius, even though its area is not exposed after joining.",
+        "hi": "जब 2 ठोस समान आकार वाले पृष्ठों पर जोड़े जाते हैं, तो वे पृष्ठ बाहर की सीमा का भाग नहीं रहते। समान त्रिज्या वाला शंकु और बेलन एक वृत्ताकार पृष्ठ पर मिलें, तो दोनों के अलग-अलग संपूर्ण क्षेत्रफल जोड़ने में जोड़ वाला वृत्त 2 बार गिना जाता है। बंद संयुक्त वस्तु का बाहरी क्षेत्रफल चाहिए, तो इस योग से 2πr² घटाएँ। दूसरा सरल तरीका है कि केवल दिखाई देने वाले भागों की सूची बनाएँ। इसमें शंकु का वक्र पृष्ठ, बेलन का वक्र पृष्ठ और बेलन का बचा हुआ निचला आधार आएगा। खुले तंबू, सपाट तल वाले खिलौने या बिना ढक्कन के पात्र में यह तरीका विशेष उपयोगी है। 2 संपूर्ण क्षेत्रफलों के योग से शुरू करें, तो केवल एक आधार घटाना गलत होगा। केवल पार्श्व बाहरी भाग रंगना हो, तो नीचे का आधार भी नहीं गिना जाएगा। इस चुनाव को उत्तर में साफ लिखें। संपर्क वाला वृत्त बाहर नहीं दिखता, फिर भी साझा त्रिज्या समझने में उपयोगी है। हर खुले पृष्ठ पर चित्र में निशान लगाकर गिनने से दोहरी गणना रुकती है।"
+      },
+      "formula": "A(exposed) = TSA1 + TSA2 − 2A(contact)",
+      "question": {
+        "en": "Why subtract the contact disk twice from two total surface areas?",
+        "hi": "2 संपूर्ण क्षेत्रफलों के योग से संपर्क वृत्त का क्षेत्रफल 2 बार क्यों घटाते हैं?"
+      },
+      "answer": {
+        "en": "Each separate total area contains one copy of the same hidden contact face.",
+        "hi": "अलग-अलग संपूर्ण क्षेत्रफल में उसी छिपे संपर्क पृष्ठ की एक-एक प्रति शामिल है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Volumes add when interiors do not overlap",
+        "hi": "भीतरी भाग न मिलें तो आयतन जुड़ते हैं"
+      },
+      "body": {
+        "en": "Two solid components joined face to face occupy separate interiors. The combined volume is therefore the sum of their volumes. A common boundary contributes no extra volume because it has no thickness in this ideal model. For a cone on a cylinder with common radius r, the result is πr²h1 + πr²h2/3, where h1 is the cylinder's height and h2 is the cone's perpendicular height. Always separate the heights if the problem gives only the total. For a hemisphere attached to a cylinder, use πr²h + 2πr³/3. The addition rule needs care when parts overlap: adding the whole volumes would count the overlapping space twice. School questions usually specify a straightforward join, but the sketch should still make this assumption clear. Decide whether the answer concerns material, outside enclosed space, or capacity. A solid wooden model and a thin hollow container of the same outside shape do not contain the same volume of material.",
+        "hi": "पृष्ठ से पृष्ठ जोड़ने पर 2 ठोसों के भीतरी भाग अलग-अलग जगह घेरते हैं। इसलिए संयुक्त ठोस का आयतन दोनों आयतनों का योग होता है। साझा सीमा का अतिरिक्त आयतन नहीं जोड़ते, क्योंकि आदर्श मॉडल में उसकी मोटाई नहीं है। समान त्रिज्या r वाले बेलन पर शंकु रखा हो, तो आयतन πr²h1 + πr²h2/3 होगा। यहाँ h1 बेलन की ऊँचाई और h2 शंकु की लंबवत ऊँचाई है। प्रश्न में पूरी ऊँचाई दी हो, तो पहले दोनों हिस्सों की ऊँचाइयाँ अलग निकालें। बेलन से अर्धगोला जुड़ा हो, तो आयतन πr²h + 2πr³/3 होगा। जोड़ का नियम लगाते समय ध्यान दें कि दोनों भाग एक-दूसरे में घुसे न हों। ऐसा हो, तो पूरी-पूरी मात्राएँ जोड़ने से साझा जगह 2 बार गिनी जाएगी। स्कूल के प्रश्न सामान्यतः स्पष्ट जोड़ देते हैं, फिर भी चित्र में यह बात समझनी चाहिए। उत्तर पदार्थ की मात्रा का है, बाहरी घिरी जगह का है या धारिता का, यह भी तय करें। समान बाहरी आकार वाला ठोस लकड़ी का मॉडल और पतली दीवार वाला खोखला पात्र समान पदार्थ नहीं रखते।"
+      },
+      "formula": "V(combined) = V1 + V2 (disjoint interiors)",
+      "question": {
+        "en": "Does a shared circular face add volume to a joined model?",
+        "hi": "क्या साझा वृत्ताकार पृष्ठ संयुक्त मॉडल में आयतन जोड़ता है?"
+      },
+      "answer": {
+        "en": "No. In the ideal model it is a boundary of zero thickness.",
+        "hi": "नहीं। आदर्श मॉडल में वह शून्य मोटाई वाली सीमा है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Cavities and capacity require subtraction",
+        "hi": "खोखले भाग और धारिता में घटाव"
+      },
+      "body": {
+        "en": "A cavity is a space removed from an originally solid object. Material volume is the outside volume minus the removed volume, provided the cavity lies inside the object. For a hemisphere hollowed out of a cylinder of equal radius, subtract the hemisphere's volume from the cylinder's volume. A cavity changes surface area differently: the new inner curved surface becomes exposed and may need to be added. Removing volume does not mean subtracting every corresponding area. For a cup, distinguish the outside curved wall, the inside curved wall, the rim, and the base. Only include surfaces requested by the question; wall thickness cannot be invented when it is not supplied. Capacity uses internal dimensions. An outside radius of 5 cm is not automatically the filling radius of a thick vessel. A result for removed material should be positive and smaller than the starting solid's volume. Such comparisons can reveal a mistaken dimension or an impossible cavity before the final calculation.",
+        "hi": "खोखला भाग (Cavity) वह जगह है जो मूल ठोस से निकाल दी गई है। बचे पदार्थ का आयतन बाहर के ठोस के आयतन से हटाए गए भाग का आयतन घटाकर मिलता है। यह मानना आवश्यक है कि खोखला भाग वस्तु के भीतर है। समान त्रिज्या वाले बेलन में अर्धगोला खोदें, तो बेलन के आयतन से अर्धगोले का आयतन घटाएँ। लेकिन पृष्ठीय क्षेत्रफल में असर अलग होता है। नया अंदर का वक्र पृष्ठ खुल जाता है और उसका क्षेत्रफल जोड़ना पड़ सकता है। आयतन घटने का अर्थ हर संबंधित क्षेत्रफल घटाना नहीं है। प्याले में बाहरी दीवार, भीतरी दीवार, किनारे का छल्ला और आधार अलग पहचानें। केवल प्रश्न में माँगे गए पृष्ठ लें। दीवार की मोटाई न दी हो, तो मनमाना मान न रखें। धारिता के लिए अंदर के माप चाहिए। मोटे पात्र की बाहरी त्रिज्या 5 cm हो, तो भरने वाली त्रिज्या अपने आप 5 cm नहीं होगी। हटाए गए पदार्थ की मात्रा धनात्मक और मूल ठोस से छोटी होनी चाहिए। ऐसी तुलना से असंभव खोखला भाग या गलत माप जल्दी पकड़ा जा सकता है।"
+      },
+      "formula": "V(material) = V(outer solid) − V(cavity)",
+      "question": {
+        "en": "What happens to material volume when a cavity is made?",
+        "hi": "खोखला भाग बनाने पर पदार्थ के आयतन का क्या होता है?"
+      },
+      "answer": {
+        "en": "It decreases by the volume removed; newly exposed inner area may increase the surface to be coated.",
+        "hi": "हटाए गए आयतन जितना घटता है; नया खुला भीतरी पृष्ठ रंगने का क्षेत्रफल बढ़ा सकता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Units, π and sensible approximation",
+        "hi": "इकाइयाँ, π और उचित सन्निकटन"
+      },
+      "body": {
+        "en": "Convert every length to a common unit before using a formula. Since 1 m = 100 cm, one square metre is 10000 square centimetres and one cubic metre is 1000000 cubic centimetres. The exponent matters: multiplying all lengths by 2 multiplies area by 4 and volume by 8. Capacity conversions include 1 L = 1000 cm³ and 1 mL = 1 cm³. Use the value of π requested in the problem, or keep π exact until the last stage. Mixing 22/7 in one component with 3.14 in another introduces inconsistent rounding. Label an answer as approximate when decimal rounding is used. If a cost is charged per square metre, multiply it by the appropriate area in square metres, not by a volume or by an area still expressed in square centimetres. A useful check is to estimate the expected size first. Rounding every intermediate result too early can change the last few digits unnecessarily.",
+        "hi": "सूत्र लगाने से पहले सभी लंबाइयाँ एक ही इकाई में बदलें। 1 m = 100 cm होने से 1 m² = 10000 cm² और 1 m³ = 1000000 cm³ होता है। घात का ध्यान रखना जरूरी है। सभी लंबाइयाँ 2 गुनी करने पर क्षेत्रफल 4 गुना और आयतन 8 गुना हो जाता है। धारिता में 1 L = 1000 cm³ तथा 1 mL = 1 cm³ है। प्रश्न में π का जो मान दिया हो, वही लें। मान न दिया हो, तो आखिरी चरण तक π सहित सटीक उत्तर रखना अच्छा है। एक भाग में 22/7 और दूसरे में 3.14 लेने से सन्निकटन असंगत हो जाता है। दशमलव को पूर्णांकित करें, तो उत्तर को लगभग लिखें। दर प्रति m² दी हो, तो लागत निकालने के लिए संबंधित क्षेत्रफल को m² में ही गुणा करें। आयतन या cm² में पड़े क्षेत्रफल को उस दर से सीधे गुणा नहीं कर सकते। पहले उत्तर के आकार का मोटा अनुमान लगाएँ। हर बीच की गणना में जल्दी पूर्णांकन करने से अंतिम उत्तर के अंक अनावश्यक बदल सकते हैं।"
+      },
+      "formula": "1 L = 1000 cm³; scale k ⇒ area × k², volume × k³",
+      "question": {
+        "en": "A model has volume 2500 cm³. Express it in litres.",
+        "hi": "मॉडल का आयतन 2500 cm³ है। इसे लीटर में लिखें।"
+      },
+      "answer": {
+        "en": "2500/1000 = 2.5 L.",
+        "hi": "2500/1000 = 2.5 L।"
+      }
+    },
+    {
+      "title": {
+        "en": "A reliable solution and checking routine",
+        "hi": "विश्वसनीय हल और जाँच का क्रम"
+      },
+      "body": {
+        "en": "A complete solution should tell the reader what has been modelled and why the chosen formulas apply. Write the given dimensions, state the required quantity, and draw or describe the component solids. List exposed faces for an area question, or describe addition and removal for a volume question. Substitute dimensions with units, simplify, and state a final answer with the proper squared or cubed unit. Then check the result independently. Is the material volume smaller after drilling? Does an attached solid increase the combined volume? Has the shared interface disappeared from the exposed area? Are the dimensions geometrically compatible? A cone of perpendicular height 4 cm and radius 3 cm must have slant height 5 cm, not 7 cm. A digital rotating picture helps identify hidden faces, but numerical display is not a proof of a formula. Use it to explore a conjecture, then justify the calculation through geometry. The same reasoning works for packaging, toy models, simple tanks and small architectural models.",
+        "hi": "पूरा हल पढ़ने वाले को बताए कि किस वस्तु का मॉडल बनाया गया है और चुने सूत्र क्यों लगते हैं। दिए माप लिखें, पूछी गई राशि बताएँ और भागों का चित्र या वर्णन करें। क्षेत्रफल के प्रश्न में खुले पृष्ठों की सूची दें। आयतन के प्रश्न में कौन-सा भाग जोड़ना या हटाना है, स्पष्ट करें। इकाइयों सहित मान रखें, सरल करें और अंतिम उत्तर में सही वर्ग या घन इकाई लिखें। फिर स्वतंत्र जाँच करें। छेद करने के बाद पदार्थ का आयतन छोटा है या नहीं? नया ठोस जोड़ने से आयतन बढ़ा या नहीं? छिपा संपर्क पृष्ठ बाहरी क्षेत्रफल से हटाया या नहीं? माप ज्यामिति के अनुसार संभव हैं या नहीं? 4 cm लंबवत ऊँचाई तथा 3 cm त्रिज्या वाले शंकु की तिर्यक ऊँचाई 5 cm होगी, 7 cm नहीं। डिजिटल घूमता चित्र छिपे पृष्ठ पहचानने में सहायता देता है। स्क्रीन का माप सूत्र का प्रमाण नहीं है। उससे विचार खोजें और फिर ज्यामिति से गणना का कारण लिखें। यही तरीका पैकेट, खिलौने, साधारण टंकी और छोटे भवन मॉडल पर लागू होता है।"
+      },
+      "formula": "Given → model → exposed faces / volumes → substitution → unit → check",
+      "question": {
+        "en": "Why is a rotating image not a proof of a surface-area formula?",
+        "hi": "घूमता चित्र पृष्ठीय क्षेत्रफल के सूत्र का प्रमाण क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "It is an illustration with finite precision; the formula requires a geometric argument.",
+        "hi": "वह सीमित शुद्धता वाला चित्र है; सूत्र के लिए ज्यामितीय तर्क चाहिए।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the volume of a cylinder with r = 2 cm and h = 5 cm.",
+        "hi": "r = 2 cm, h = 5 cm वाले बेलन का आयतन निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given: r = 2 cm, h = 5 cm. Find occupied volume.",
+          "hi": "दिया है: r = 2 cm, h = 5 cm। घिरा आयतन ज्ञात करना है।"
+        },
+        {
+          "en": "Use V = πr²h because the object is a right circular cylinder.",
+          "hi": "लंब वृत्तीय बेलन के लिए V = πr²h लगाएँ।"
+        },
+        {
+          "en": "Substitute: V = π × 2² × 5 = 20π.",
+          "hi": "मान रखने पर V = π × 2² × 5 = 20π।"
+        }
+      ],
+      "answer": {
+        "en": "20π cm³.",
+        "hi": "20π cm³।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A cone has radius 3 cm and perpendicular height 4 cm. Find its curved area.",
+        "hi": "शंकु की त्रिज्या 3 cm और लंबवत ऊँचाई 4 cm है। वक्र क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given r = 3 cm, h = 4 cm; first find slant height s.",
+          "hi": "r = 3 cm, h = 4 cm हैं; पहले तिर्यक ऊँचाई s निकालें।"
+        },
+        {
+          "en": "s = √(3² + 4²) = 5 cm.",
+          "hi": "s = √(3² + 4²) = 5 cm।"
+        },
+        {
+          "en": "CSA = πrs = π × 3 × 5.",
+          "hi": "वक्र क्षेत्रफल = πrs = π × 3 × 5।"
+        }
+      ],
+      "answer": {
+        "en": "15π cm².",
+        "hi": "15π cm²।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A closed toy is a cone on a cylinder. Both radii are 3 cm; cylinder height is 5 cm and cone height is 4 cm. Find its outside area.",
+        "hi": "बंद खिलौने में बेलन पर शंकु है। दोनों त्रिज्याएँ 3 cm, बेलन की ऊँचाई 5 cm और शंकु की ऊँचाई 4 cm है। बाहरी क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Find slant height of cone: s = √(9 + 16) = 5 cm.",
+          "hi": "शंकु की तिर्यक ऊँचाई s = √(9 + 16) = 5 cm।"
+        },
+        {
+          "en": "Visible surfaces: cone curve, cylinder curve and bottom disk; the join is hidden.",
+          "hi": "खुले पृष्ठ: शंकु का वक्र भाग, बेलन का वक्र भाग और नीचे का वृत्त; जोड़ छिपा है।"
+        },
+        {
+          "en": "A = πrs + 2πrh + πr² = 15π + 30π + 9π.",
+          "hi": "A = πrs + 2πrh + πr² = 15π + 30π + 9π।"
+        }
+      ],
+      "answer": {
+        "en": "54π cm².",
+        "hi": "54π cm²।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A cylinder of radius 3 cm and height 5 cm has a hemisphere of the same radius attached to one end. Find combined volume.",
+        "hi": "3 cm त्रिज्या और 5 cm ऊँचाई वाले बेलन के एक सिरे पर उसी त्रिज्या का अर्धगोला जुड़ा है। संयुक्त आयतन ज्ञात करें।"
+      },
+      "steps": [
+        {
+          "en": "Given: cylinder and hemisphere have separate interiors and a common circular face.",
+          "hi": "दिया है: बेलन और अर्धगोले के भीतरी भाग अलग हैं और साझा वृत्ताकार पृष्ठ है।"
+        },
+        {
+          "en": "V = πr²h + 2πr³/3.",
+          "hi": "V = πr²h + 2πr³/3।"
+        },
+        {
+          "en": "V = π × 9 × 5 + 2π × 27/3 = 45π + 18π.",
+          "hi": "V = π × 9 × 5 + 2π × 27/3 = 45π + 18π।"
+        }
+      ],
+      "answer": {
+        "en": "63π cm³.",
+        "hi": "63π cm³।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A hemisphere of radius 3 cm is hollowed from the top of a solid cylinder with radius 3 cm and height 6 cm. Find remaining material volume and exposed area, including the bottom and cavity.",
+        "hi": "3 cm त्रिज्या, 6 cm ऊँचाई के ठोस बेलन के ऊपर से 3 cm त्रिज्या का अर्धगोला खोदा गया। बचा आयतन और तल तथा खोखले भाग सहित खुला क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given cavity fits inside: its depth is 3 cm, smaller than cylinder height 6 cm.",
+          "hi": "खोखले भाग की गहराई 3 cm है, जो बेलन की 6 cm ऊँचाई से कम है।"
+        },
+        {
+          "en": "Material volume = πr²h − 2πr³/3 = 54π − 18π = 36π cm³.",
+          "hi": "बचा आयतन = πr²h − 2πr³/3 = 54π − 18π = 36π cm³।"
+        },
+        {
+          "en": "Exposed surfaces are cylinder curve, bottom disk and inner hemisphere curve. There is no top annulus because both radii agree.",
+          "hi": "खुले पृष्ठ हैं: बेलन का वक्र भाग, तल और अंदर के अर्धगोले का वक्र भाग। त्रिज्याएँ समान हैं, इसलिए ऊपर छल्ला नहीं बचता।"
+        },
+        {
+          "en": "A = 2πrh + πr² + 2πr² = 36π + 9π + 18π = 63π cm².",
+          "hi": "A = 2πrh + πr² + 2πr² = 36π + 9π + 18π = 63π cm²।"
+        }
+      ],
+      "answer": {
+        "en": "Remaining volume 36π cm³; exposed area 63π cm².",
+        "hi": "बचा आयतन 36π cm³; खुला क्षेत्रफल 63π cm²।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which unit is suitable for volume?",
+        "hi": "आयतन की सही इकाई कौन-सी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "cm",
+            "hi": "cm"
+          },
+          "reason": {
+            "en": "It measures length.",
+            "hi": "यह लंबाई की इकाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cm²",
+            "hi": "cm²"
+          },
+          "reason": {
+            "en": "It measures area.",
+            "hi": "यह क्षेत्रफल की इकाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cm³",
+            "hi": "cm³"
+          },
+          "reason": {
+            "en": "Volume uses cubic units.",
+            "hi": "आयतन में घन इकाई लगती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cm/s",
+            "hi": "cm/s"
+          },
+          "reason": {
+            "en": "This is a speed unit.",
+            "hi": "यह चाल की इकाई है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "What is the curved area of a hemisphere of radius r?",
+        "hi": "r त्रिज्या वाले अर्धगोले का वक्र क्षेत्रफल क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2πr²",
+            "hi": "2πr²"
+          },
+          "reason": {
+            "en": "It is half the area of a sphere.",
+            "hi": "यह गोले के क्षेत्रफल का आधा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3πr²",
+            "hi": "3πr²"
+          },
+          "reason": {
+            "en": "This includes the flat base: total area.",
+            "hi": "इसमें समतल आधार भी है; यह संपूर्ण क्षेत्रफल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4πr²",
+            "hi": "4πr²"
+          },
+          "reason": {
+            "en": "This is the entire sphere area.",
+            "hi": "यह पूरे गोले का क्षेत्रफल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2πr³/3",
+            "hi": "2πr³/3"
+          },
+          "reason": {
+            "en": "This is hemisphere volume.",
+            "hi": "यह अर्धगोले का आयतन है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two solids meet exactly along a face of area A. Starting from their two total areas, what is subtracted?",
+        "hi": "2 ठोस A क्षेत्रफल वाले पृष्ठ पर पूरी तरह मिलते हैं। दोनों संपूर्ण क्षेत्रफलों के योग से कितना घटाएँ?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Both copies of the hidden face remain counted.",
+            "hi": "छिपे पृष्ठ की दोनों प्रतियाँ बच जाएँगी।"
+          }
+        },
+        {
+          "text": {
+            "en": "A",
+            "hi": "A"
+          },
+          "reason": {
+            "en": "This removes only one of two copies.",
+            "hi": "यह 2 में से केवल एक प्रति हटाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3A",
+            "hi": "3A"
+          },
+          "reason": {
+            "en": "There are only two contact-face copies in the sum.",
+            "hi": "योग में संपर्क पृष्ठ की केवल 2 प्रतियाँ हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2A",
+            "hi": "2A"
+          },
+          "reason": {
+            "en": "Each separate solid includes one contact face.",
+            "hi": "हर अलग ठोस में संपर्क पृष्ठ की एक प्रति है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which height belongs in a cone volume formula?",
+        "hi": "शंकु के आयतन सूत्र में कौन-सी ऊँचाई लगती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Slant height",
+            "hi": "तिर्यक ऊँचाई"
+          },
+          "reason": {
+            "en": "It is used in curved area, not directly in volume.",
+            "hi": "यह वक्र क्षेत्रफल में आती है, सीधे आयतन में नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Perpendicular height",
+            "hi": "लंबवत ऊँचाई"
+          },
+          "reason": {
+            "en": "V = πr²h/3 uses the perpendicular distance to the base.",
+            "hi": "V = πr²h/3 में आधार से लंबवत दूरी लगती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Diameter",
+            "hi": "व्यास"
+          },
+          "reason": {
+            "en": "Diameter is a base measurement.",
+            "hi": "व्यास आधार का माप है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Circumference",
+            "hi": "परिधि"
+          },
+          "reason": {
+            "en": "It is the boundary length of the base.",
+            "hi": "यह आधार की सीमा की लंबाई है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A cone has radius 6 cm and height 8 cm. What is its slant height?",
+        "hi": "शंकु की त्रिज्या 6 cm और ऊँचाई 8 cm है। तिर्यक ऊँचाई क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "14 cm",
+            "hi": "14 cm"
+          },
+          "reason": {
+            "en": "Slant height is not r + h.",
+            "hi": "तिर्यक ऊँचाई r + h नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 cm",
+            "hi": "2 cm"
+          },
+          "reason": {
+            "en": "The difference h − r does not give the hypotenuse.",
+            "hi": "h − r से कर्ण नहीं मिलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 cm",
+            "hi": "10 cm"
+          },
+          "reason": {
+            "en": "√(6² + 8²) = √100 = 10.",
+            "hi": "√(6² + 8²) = √100 = 10।"
+          }
+        },
+        {
+          "text": {
+            "en": "100 cm",
+            "hi": "100 cm"
+          },
+          "reason": {
+            "en": "100 is the squared slant height, not the length.",
+            "hi": "100 तिर्यक ऊँचाई का वर्ग है, लंबाई नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "What is 1 L in cubic centimetres?",
+        "hi": "1 L कितने घन सेंटीमीटर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1000 cm³",
+            "hi": "1000 cm³"
+          },
+          "reason": {
+            "en": "This is the standard capacity conversion.",
+            "hi": "यह धारिता का सही रूपांतरण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "100 cm³",
+            "hi": "100 cm³"
+          },
+          "reason": {
+            "en": "This is only one tenth of a litre.",
+            "hi": "यह लीटर का केवल दसवाँ भाग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 cm³",
+            "hi": "10 cm³"
+          },
+          "reason": {
+            "en": "This is 10 mL, not 1 L.",
+            "hi": "यह 10 mL है, 1 L नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1 cm³",
+            "hi": "1 cm³"
+          },
+          "reason": {
+            "en": "This equals 1 mL.",
+            "hi": "यह 1 mL के बराबर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "All lengths of a similar model are doubled. What happens to its volume?",
+        "hi": "समरूप मॉडल की सभी लंबाइयाँ 2 गुनी हों, तो आयतन कितना होगा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2 times",
+            "hi": "2 गुना"
+          },
+          "reason": {
+            "en": "That is the length scale only.",
+            "hi": "यह केवल लंबाई का गुणक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4 times",
+            "hi": "4 गुना"
+          },
+          "reason": {
+            "en": "That is the area scale.",
+            "hi": "यह क्षेत्रफल का गुणक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6 times",
+            "hi": "6 गुना"
+          },
+          "reason": {
+            "en": "Volume scales by a cube, not by 3 × 2.",
+            "hi": "आयतन घन से बदलता है, 3 × 2 से नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "8 times",
+            "hi": "8 गुना"
+          },
+          "reason": {
+            "en": "The volume scale is 2³.",
+            "hi": "आयतन का गुणक 2³ है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "A cavity of volume 20 cm³ is removed from a 100 cm³ solid. What remains?",
+        "hi": "100 cm³ के ठोस से 20 cm³ खोखला भाग हटाया गया। कितना पदार्थ बचा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "120 cm³",
+            "hi": "120 cm³"
+          },
+          "reason": {
+            "en": "Removal requires subtraction.",
+            "hi": "हटाने में घटाव चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "80 cm³",
+            "hi": "80 cm³"
+          },
+          "reason": {
+            "en": "100 − 20 = 80.",
+            "hi": "100 − 20 = 80।"
+          }
+        },
+        {
+          "text": {
+            "en": "20 cm³",
+            "hi": "20 cm³"
+          },
+          "reason": {
+            "en": "This is the removed portion, not the remainder.",
+            "hi": "यह हटाया भाग है, बचा भाग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "5 cm³",
+            "hi": "5 cm³"
+          },
+          "reason": {
+            "en": "The ratio 100/20 is not remaining volume.",
+            "hi": "100/20 का अनुपात बचा आयतन नहीं है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "For r = 2 cm and h = 3 cm, what is cylinder volume?",
+        "hi": "r = 2 cm, h = 3 cm वाले बेलन का आयतन क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12π cm²",
+            "hi": "12π cm²"
+          },
+          "reason": {
+            "en": "The number matches but the area unit is wrong.",
+            "hi": "संख्या सही जैसी है, पर क्षेत्रफल की इकाई गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6π cm³",
+            "hi": "6π cm³"
+          },
+          "reason": {
+            "en": "The radius must be squared.",
+            "hi": "त्रिज्या का वर्ग लेना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "12π cm³",
+            "hi": "12π cm³"
+          },
+          "reason": {
+            "en": "π × 2² × 3 = 12π.",
+            "hi": "π × 2² × 3 = 12π।"
+          }
+        },
+        {
+          "text": {
+            "en": "4π cm³",
+            "hi": "4π cm³"
+          },
+          "reason": {
+            "en": "This leaves out the height factor 3.",
+            "hi": "इसमें ऊँचाई का गुणक 3 छूट गया।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which surface is exposed on a closed cone-on-cylinder toy with matching bases?",
+        "hi": "समान आधारों वाले बंद शंकु-बेलन खिलौने में कौन-सा पृष्ठ खुला है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The cylinder bottom disk",
+            "hi": "बेलन का नीचे वाला वृत्त"
+          },
+          "reason": {
+            "en": "It is not at the joined interface.",
+            "hi": "यह जोड़ पर नहीं है, इसलिए खुला है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both joined disks",
+            "hi": "जोड़ वाले दोनों वृत्त"
+          },
+          "reason": {
+            "en": "They become internal faces.",
+            "hi": "वे भीतरी पृष्ठ बन जाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the cone base",
+            "hi": "केवल शंकु का आधार"
+          },
+          "reason": {
+            "en": "That base is hidden at the join.",
+            "hi": "वह आधार जोड़ पर छिपा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No curved surfaces",
+            "hi": "कोई वक्र पृष्ठ नहीं"
+          },
+          "reason": {
+            "en": "The cone and cylinder curves remain exposed.",
+            "hi": "शंकु और बेलन के वक्र पृष्ठ खुले रहते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain why adding two total surface areas overcounts a joined face.",
+        "hi": "बताएँ कि 2 संपूर्ण क्षेत्रफल जोड़ने में साझा पृष्ठ अधिक क्यों गिना जाता है।"
+      },
+      "answer": {
+        "en": "Each separate total includes the contact face. After joining, both copies are internal, so subtract twice the contact area.",
+        "hi": "हर संपूर्ण क्षेत्रफल में संपर्क पृष्ठ शामिल है। जोड़ने पर दोनों प्रतियाँ अंदर होती हैं, इसलिए संपर्क क्षेत्रफल का 2 गुना घटाते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish curved area from total area of a hemisphere.",
+        "hi": "अर्धगोले के वक्र और संपूर्ण क्षेत्रफल में अंतर बताएँ।"
+      },
+      "answer": {
+        "en": "CSA = 2πr². TSA = 2πr² + πr² = 3πr², including the base.",
+        "hi": "वक्र क्षेत्रफल 2πr² है। आधार सहित संपूर्ण क्षेत्रफल 2πr² + πr² = 3πr² है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the volume of a cone with r = 3 cm and h = 8 cm.",
+        "hi": "r = 3 cm और h = 8 cm वाले शंकु का आयतन निकालें।"
+      },
+      "answer": {
+        "en": "V = π × 9 × 8/3 = 24π cm³.",
+        "hi": "V = π × 9 × 8/3 = 24π cm³।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the unit factors when converting m³ to cm³.",
+        "hi": "m³ से cm³ में बदलने का गुणक समझाएँ।"
+      },
+      "answer": {
+        "en": "Each metre contributes a factor 100 in three perpendicular directions: 100³ = 1000000.",
+        "hi": "तीन लंबवत दिशाओं में हर मीटर से 100 का गुणक आता है: 100³ = 1000000।"
+      }
+    },
+    {
+      "question": {
+        "en": "A cylinder and hemisphere of radius 2 cm meet at a face. Cylinder height is 3 cm. Find combined volume.",
+        "hi": "2 cm त्रिज्या वाले बेलन और अर्धगोले जुड़े हैं। बेलन की ऊँचाई 3 cm है। संयुक्त आयतन निकालें।"
+      },
+      "answer": {
+        "en": "V = 12π + 16π/3 = 52π/3 cm³.",
+        "hi": "V = 12π + 16π/3 = 52π/3 cm³।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does removing a cavity not mean subtracting its curved area from exposed area?",
+        "hi": "खोखला भाग हटाने पर उसका वक्र क्षेत्रफल खुले क्षेत्रफल से सीधे क्यों नहीं घटाते?"
+      },
+      "answer": {
+        "en": "The cavity creates a new inner exposed boundary. Material volume decreases, but the surfaces must be listed afresh.",
+        "hi": "खोखला भाग नया खुला भीतरी पृष्ठ बनाता है। पदार्थ का आयतन घटता है, लेकिन पृष्ठों की नई सूची बनानी पड़ती है।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not add hidden joining disks, use slant height in volume, confuse hemisphere CSA with TSA, or mix square and cubic units. A cavity changes area and volume by different rules.",
+    "hi": "छिपे जोड़ वाले वृत्त न जोड़ें। आयतन में तिर्यक ऊँचाई न रखें। अर्धगोले के वक्र और संपूर्ण क्षेत्रफल तथा वर्ग और घन इकाइयों को न मिलाएँ। खोखले भाग में क्षेत्रफल और आयतन के नियम अलग हैं।"
+  },
+  "revision": [
+    {
+      "en": "Sketch and label the two component solids.",
+      "hi": "2 भागों का चित्र बनाकर माप लिखें।"
+    },
+    {
+      "en": "Area counts only the surfaces requested and exposed.",
+      "hi": "क्षेत्रफल में केवल माँगे गए खुले पृष्ठ गिनें।"
+    },
+    {
+      "en": "Add volumes of separate interiors; subtract cavities.",
+      "hi": "अलग भीतरी भागों के आयतन जोड़ें; खोखले भाग घटाएँ।"
+    },
+    {
+      "en": "For a cone, s² = r² + h²; volume uses h.",
+      "hi": "शंकु में s² = r² + h²; आयतन में h लगता है।"
+    },
+    {
+      "en": "Area uses square units; volume uses cubic units.",
+      "hi": "क्षेत्रफल में वर्ग और आयतन में घन इकाइयाँ लगती हैं।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Identify components → label dimensions → choose exposed area or volume → remove hidden interfaces / add or subtract volumes → verify units and size.",
+    "hi": "भाग पहचानें → माप लिखें → खुला क्षेत्रफल या आयतन चुनें → छिपे पृष्ठ हटाएँ / आयतन जोड़ें या घटाएँ → इकाई और आकार जाँचें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, Chapter 12, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh112.pdf"
+    },
+    {
+      "title": "UP Board Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

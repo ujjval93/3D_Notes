@@ -1,0 +1,888 @@
+{
+  "id": 11,
+  "title": {
+    "en": "Introduction to Three Dimensional Geometry",
+    "hi": "त्रिविमीय ज्यामिति का परिचय"
+  },
+  "goal": {
+    "en": "Locate spatial points and calculate distances; explore midpoint and section formulas in labelled enrichment.",
+    "hi": "स्थानिक बिंदु पहचानें और दूरियाँ निकालें; चिह्नित अतिरिक्त समझ में मध्यबिंदु तथा विभाजन सूत्र देखें।"
+  },
+  "engine": "eleven-math",
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Three perpendicular coordinate axes",
+        "hi": "3 परस्पर लंबवत निर्देशांक अक्ष"
+      },
+      "body": {
+        "en": "Three-dimensional coordinates use three mutually perpendicular axes through one origin. A point is described by an ordered triple (x,y,z). Each coordinate is a directed measurement along its corresponding axis, so negative values are meaningful. The order cannot be interchanged. A drawing on a page projects three dimensions onto two and may distort apparent angles; the axes are perpendicular in space even if the picture looks oblique. Label the origin and positive directions before locating points. This chapter uses elementary coordinate geometry; an object’s physical size is independent of the viewing angle used to display it.",
+        "hi": "त्रिविमीय निर्देशांक (Three-dimensional coordinates) में एक मूलबिंदु O से गुजरने वाले 3 परस्पर लंबवत अक्ष x, y तथा z लेते हैं। किसी बिंदु का स्थान क्रमित त्रिक (x,y,z) से बताया जाता है। प्रत्येक निर्देशांक संबंधित अक्ष की दिशा में चिह्नित माप है। धन तथा ऋण दोनों मान संभव हैं। क्रम बदलने से सामान्यतः बिंदु बदल जाता है। जैसे (2,3,4) और (4,3,2) अलग स्थान हैं। कागज या स्क्रीन पर 3 आयामों का चित्र 2 आयामों में दिखता है, इसलिए अक्ष तिरछे दिखाई दे सकते हैं। इससे वास्तविक स्थान में उनका लंबवत होना नहीं बदलता। चित्र बनाने से पहले मूलबिंदु, धनात्मक दिशाएँ और पैमाना लिखें। स्क्रीन पर घुमाने से केवल देखने की दिशा बदलती है, निर्देशांक वाले स्थान या वास्तविक दूरियाँ नहीं। ऊँचाई को हमेशा z नाम देना सुविधाजनक परंपरा है; अक्षों का चुनाव समस्या के अनुसार हो सकता है। निर्देशांक व्यवस्था तय होने के बाद पूरे समाधान में वही क्रम और वही इकाई बनाए रखें।"
+      },
+      "formula": "P=(x,y,z)",
+      "question": {
+        "en": "Are (1,2,3) and (3,2,1) the same point?",
+        "hi": "क्या (1,2,3) और (3,2,1) समान बिंदु हैं?"
+      },
+      "answer": {
+        "en": "No; x and z differ.",
+        "hi": "नहीं; x और z अलग हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Coordinate planes",
+        "hi": "निर्देशांक तल"
+      },
+      "body": {
+        "en": "Each pair of coordinate axes determines a plane. The xy-plane has z=0, the yz-plane has x=0, and the xz-plane has y=0. Their pairwise intersections are the coordinate axes. A point on an axis has two zero coordinates, whereas a point in a coordinate plane needs only the corresponding one to be zero. The origin belongs to all axes and all three planes. To project a point perpendicularly onto a coordinate plane, set the coordinate perpendicular to that plane to zero and keep the other two. This gives a concrete way to see how an ordered triple relates to familiar two-dimensional geometry.",
+        "hi": "हर 2 निर्देशांक अक्ष एक निर्देशांक तल (Coordinate plane) बनाते हैं। xy-तल में z=0, yz-तल में x=0 तथा xz-तल में y=0 है। 2 तलों का साझा भाग एक अक्ष है। जैसे xy और xz का प्रतिच्छेद x-अक्ष है। किसी अक्ष पर बिंदु के 2 निर्देशांक 0 होंगे। किसी तल पर होने के लिए संबंधित एक निर्देशांक 0 होना पर्याप्त है। मूलबिंदु (0,0,0) सभी अक्षों और तलों पर है। बिंदु (2,−3,5) का xy-तल पर लंबवत प्रक्षेप (Projection) (2,−3,0) है। अन्य निर्देशांक बनाए रखकर केवल लंबवत दिशा वाला निर्देशांक 0 करें। इससे त्रिविमीय स्थिति को परिचित द्विविमीय चित्र से जोड़ सकते हैं। किसी तल का नाम देखकर उसके बाहर वाला अक्ष पहचानना आसान है: xy नाम में z नहीं है, इसलिए z=0 होगा। प्रक्षेप और मूल बिंदु के बीच की दूरी उसी हटाए निर्देशांक का निरपेक्ष मान है। दूरी में उसका ऋण चिह्न नहीं बचता, लेकिन स्थान के निर्देशांक में बचता है।"
+      },
+      "formula": "xy: z=0; yz: x=0; xz: y=0",
+      "question": {
+        "en": "Which plane contains (4,0,−2)?",
+        "hi": "(4,0,−2) किस निर्देशांक तल पर है?"
+      },
+      "answer": {
+        "en": "The xz-plane, because y=0.",
+        "hi": "xz-तल पर, क्योंकि y=0।"
+      }
+    },
+    {
+      "title": {
+        "en": "Octants and signs",
+        "hi": "अष्टांश और चिह्न"
+      },
+      "body": {
+        "en": "The coordinate planes divide space into eight octants. The first octant has x>0,y>0,z>0. Every other open octant corresponds to another fixed sign combination. Points on a coordinate plane lie on the boundary rather than inside an open octant. Instead of relying only on memorised numbering, state a point’s three signs explicitly; sign conventions are then unambiguous. Reflecting in the xy-plane reverses z while preserving x and y. Reflecting in the origin reverses all three coordinates. These transformations preserve distances. A sign change in just one coordinate does not mean the point has moved to the origin.",
+        "hi": "3 निर्देशांक तल स्थान को 8 अष्टांशों (Octants) में बाँटते हैं। पहले अष्टांश में x>0,y>0,z>0 है। अन्य खुले अष्टांश प्रत्येक अलग चिह्न संयोजन से पहचाने जाते हैं। किसी निर्देशांक तल पर बिंदु सीमा पर होता है, खुले अष्टांश के अंदर नहीं। अष्टांश की संख्या याद करने के साथ 3 चिह्न साफ लिखना अधिक सुरक्षित है। जैसे (−2,3,4) में चिह्न (−,+,+) हैं। xy-तल में परावर्तन करने पर केवल z का चिह्न बदलता है। इसलिए (2,−1,3) का प्रतिबिंब (2,−1,−3) है। मूलबिंदु में परावर्तन पर तीनों चिह्न बदलते हैं। परावर्तन में मूल बिंदुओं के बीच दूरियाँ सुरक्षित रहती हैं। शून्य निर्देशांक को धनात्मक या ऋणात्मक न मानें। किसी बिंदु को चित्र में रखने के लिए पहले x और y से तल में प्रक्षेप बनाएँ, फिर z दिशा में जाएँ। दृश्य में अक्षों की तिरछी रेखाओं से चिह्न का अनुमान लगाने की बजाय अंकित धनात्मक दिशाओं का उपयोग करें।"
+      },
+      "formula": "First octant: x>0,y>0,z>0",
+      "question": {
+        "en": "Is (2,3,0) inside the first open octant?",
+        "hi": "क्या (2,3,0) पहले खुले अष्टांश के अंदर है?"
+      },
+      "answer": {
+        "en": "No; it is on the xy-plane boundary.",
+        "hi": "नहीं; यह xy-तल की सीमा पर है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Distance from the origin",
+        "hi": "मूलबिंदु से दूरी"
+      },
+      "body": {
+        "en": "The distance of P(x,y,z) from the origin is √(x²+y²+z²). First use Pythagoras in the xy-plane to get the projected distance √(x²+y²), then use a right triangle with perpendicular height |z|. Squaring removes coordinate signs but does not make the coordinates themselves positive. The distance is nonnegative and is zero only at the origin. Points with the same value of x²+y²+z² are equally far from the origin. Keep the square root in exact form when it is irrational. Coordinate units must agree before adding squares.",
+        "hi": "बिंदु P(x,y,z) की मूलबिंदु से दूरी √(x²+y²+z²) है। इसे 2 बार पाइथागोरस प्रमेय (Pythagoras theorem) से समझ सकते हैं। पहले xy-तल में प्रक्षेप की मूलबिंदु से दूरी √(x²+y²) होगी। फिर उस प्रक्षेप से बिंदु तक लंबवत दूरी |z| लेकर दूसरा समकोण त्रिभुज बनता है। दोनों को जोड़ने पर दूरी का वर्ग x²+y²+z² मिलता है। वर्ग करने से निर्देशांकों के चिह्न का असर हटता है, लेकिन मूल निर्देशांक धनात्मक नहीं बन जाते। दूरी सदैव गैरऋणात्मक है और केवल मूलबिंदु पर 0 होगी। (−2,3,6) की दूरी √(4+9+36)=7 है। अलग चिह्नों वाले कई बिंदु एक ही दूरी पर हो सकते हैं। अपरिमेय परिणाम को सटीक वर्गमूल रूप में रखना अच्छा है। जोड़ने से पहले सभी निर्देशांकों की लंबाई इकाई समान होनी चाहिए। मीटर और सेंटीमीटर के वर्ग सीधे न जोड़ें। अंतिम उत्तर में दूरी की इकाई लिखें, वर्ग इकाई नहीं।"
+      },
+      "formula": "OP=√(x²+y²+z²)",
+      "question": {
+        "en": "Find origin distance of (2,−3,6).",
+        "hi": "(2,−3,6) की मूलबिंदु से दूरी।"
+      },
+      "answer": {
+        "en": "√(4+9+36)=7.",
+        "hi": "√(4+9+36)=7।"
+      }
+    },
+    {
+      "title": {
+        "en": "Distance between two points",
+        "hi": "2 बिंदुओं के बीच दूरी"
+      },
+      "body": {
+        "en": "Translate one point to the origin mentally. The changes in coordinates become Δx=x_2−x_1, Δy=y_2−y_1 and Δz=z_2−z_1. The distance is the square root of the sum of their squares. Reversing the point order reverses all three differences but leaves the squares unchanged, so distance is symmetric. The formula reduces to the plane formula when both z-coordinates agree. To compare distances, compare their nonnegative squares first; this often avoids unnecessary roots. Three points form a right triangle if the largest squared distance equals the sum of the other two.",
+        "hi": "2 बिंदु A(x_1,y_1,z_1) तथा B(x_2,y_2,z_2) के बीच दूरी में हर दिशा का अंतर लेते हैं। Δx=x_2−x_1, Δy=y_2−y_1 तथा Δz=z_2−z_1 हैं। फिर AB=√[(Δx)²+(Δy)²+(Δz)²] होगा। A को मानसिक रूप से मूलबिंदु पर खिसकाने से यही सूत्र पहले वाले दूरी सूत्र का रूप बन जाता है। बिंदुओं का क्रम बदलने पर सभी अंतर के चिह्न बदलते हैं, उनके वर्ग नहीं। इसलिए AB=BA है। दोनों z बराबर हों तो Δz=0 और द्विविमीय सूत्र मिल जाता है। 2 दूरियाँ बराबर हैं या नहीं, जाँचने में पहले उनके वर्गों की तुलना करें; अनावश्यक वर्गमूल निकालने की जरूरत नहीं है। त्रिभुज के सबसे बड़े दूरी वर्ग को अन्य 2 के योग से तुलना करके समकोण जाँच सकते हैं। प्रत्येक घटाव को कोष्ठक में रखें, खासकर ऋणात्मक निर्देशांक होने पर। जैसे 2−(−3)=5 है। केवल अलग-अलग निर्देशांकों के वर्ग जोड़ना मूलबिंदु से दूरी देगा, परस्पर दूरी नहीं।"
+      },
+      "formula": "AB=√[(x_2−x_1)²+(y_2−y_1)²+(z_2−z_1)²]",
+      "question": {
+        "en": "Find distance between (1,2,3) and (4,6,3).",
+        "hi": "(1,2,3) और (4,6,3) की दूरी।"
+      },
+      "answer": {
+        "en": "√(3²+4²+0²)=5.",
+        "hi": "√(3²+4²+0²)=5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Enrichment: Internal section formula",
+        "hi": "अतिरिक्त समझ: आंतरिक विभाजन सूत्र"
+      },
+      "body": {
+        "en": "If P divides AB internally in the ratio AP:PB=m:n, its coordinates are (mB+nA)/(m+n), applied component by component. The weight m multiplies B, the opposite endpoint. This reflects that a larger AP places P nearer B. Ratios are positive for internal division. The coordinate weights sum to 1 after division, so the point lies between A and B on the segment. If m=n the formula becomes the midpoint formula. Write the ratio with its segment order before substituting; interchanging m and n usually gives a different point.",
+        "hi": "यदि P रेखाखंड AB को आंतरिक रूप से AP:PB=m:n में बाँटता है, तो प्रत्येक निर्देशांक का भारित औसत लेते हैं। x=(mx_2+nx_1)/(m+n), और इसी तरह y तथा z मिलते हैं। ध्यान दें कि m विपरीत सिरे B के निर्देशांक से गुणा होता है। AP बड़ा हो तो P, B के निकट होगा; इसलिए B को बड़ा भार मिलना सही है। आंतरिक विभाजन में m और n धनात्मक हैं। हर निर्देशांक में विभाजित भारों का योग 1 है, इसलिए बिंदु दोनों सिरों के बीच रहता है। अनुपात को उलटने से सामान्यतः दूसरा बिंदु मिलेगा। लिखें कि दिया अनुपात AP:PB है या PB:AP; केवल 2:3 देखकर अनुमान न करें। m=n हो तो मध्यबिंदु का सूत्र मिलता है। गणना के बाद बिंदु का अनुमानित स्थान देखें। 1:3 में P, A के पास होना चाहिए, B के पास नहीं। दशमलव के स्थान पर सटीक भिन्न बनाए रखने से अनुपात की जाँच आसान रहती है।"
+      },
+      "formula": "P=((mx_2+nx_1)/(m+n),(my_2+ny_1)/(m+n),(mz_2+nz_1)/(m+n))",
+      "question": {
+        "en": "A=(0,0,0), B=(6,3,9), AP:PB=1:2. Find P.",
+        "hi": "A=(0,0,0), B=(6,3,9), AP:PB=1:2 में P।"
+      },
+      "answer": {
+        "en": "P=(2,1,3).",
+        "hi": "P=(2,1,3)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Enrichment: External division and the midpoint",
+        "hi": "अतिरिक्त समझ: बाह्य विभाजन और मध्यबिंदु"
+      },
+      "body": {
+        "en": "For external division AP:PB=m:n with m≠n, use (mB−nA)/(m−n). The point lies on the extended line outside the segment. A ratio 1:1 has no finite external division point because the denominator vanishes; it is not a midpoint case. The internal midpoint is instead (A+B)/2. Check an external result with distances or a parameter along the line. A point outside can have coordinates larger than both endpoint coordinates; that is expected, not a reason to reject it. Maintain one ratio convention in every coordinate.",
+        "hi": "बाह्य विभाजन (External division) में बिंदु रेखाखंड के बाहर उसकी बढ़ाई हुई रेखा पर होता है। AP:PB=m:n तथा m≠n हो तो P के निर्देशांक (mB−nA)/(m−n) से मिलते हैं। हर दिशा में यही घटाव क्रम रखें। आंतरिक सूत्र के जोड़ को केवल एक जगह घटाव में बदलना गलत होगा। बाह्य अनुपात 1:1 का कोई परिमित बिंदु नहीं है; हर 0 हो जाता है। इसे मध्यबिंदु न मानें। मध्यबिंदु आंतरिक बराबर विभाजन है और (A+B)/2 से मिलता है। बाहरी बिंदु के निर्देशांक दोनों सिरों से भी बड़े या छोटे हो सकते हैं; यह अपेक्षित है। जैसे A=(0,0,0), B=(2,0,0) और अनुपात 2:1 में P=(4,0,0) होगा। AP=4 तथा PB=2 से अनुपात जाँच सकते हैं। ऋणात्मक हर आने पर भी पूरे भिन्न का सही सरलीकरण करें। दूरी द्वारा जाँच अनुपात की दिशा और बाहर होने की शर्त दोनों को स्पष्ट करती है।"
+      },
+      "formula": "External P=(mB−nA)/(m−n), m≠n; midpoint=(A+B)/2",
+      "question": {
+        "en": "Why is external division in 1:1 impossible at a finite point?",
+        "hi": "1:1 बाह्य विभाजन का परिमित बिंदु क्यों नहीं?"
+      },
+      "answer": {
+        "en": "The denominator m−n is zero; equal external distances cannot occur for distinct endpoints.",
+        "hi": "m−n=0 है; अलग सिरों से बाहर समान दूरी संभव नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Checking spatial geometry",
+        "hi": "स्थानिक ज्यामिति की जाँच"
+      },
+      "body": {
+        "en": "Use coordinates to verify geometry rather than trusting perspective. Equal distances can establish an isosceles triangle, and three squared distances can test a right angle. A midpoint must satisfy equality of its distances from the two endpoints and lie on their segment; equal distance alone is not enough. A section point must satisfy both the ratio and collinearity. For a rectangular box aligned with the axes, the space diagonal is √(l²+b²+h²). Every length remains the same when the view rotates. Exact coordinate reasoning is therefore more reliable than visual measurement of a rendered screen. For A=(0,0,0), B=(2,0,0), the point (1,3,0) is equally far from A and B but is not their midpoint. The actual midpoint is (1,0,0). This example separates equal-distance and on-segment conditions.",
+        "hi": "स्थानिक चित्र में दूर की वस्तु छोटी या तिरछी दिख सकती है, इसलिए ज्यामितीय निष्कर्ष निर्देशांकों से जाँचें। समान दूरियाँ समद्विबाहु त्रिभुज की पहचान दे सकती हैं। 3 दूरी वर्गों से समकोण का परीक्षण किया जा सकता है। मध्यबिंदु को दोनों सिरों से समान दूरी पर होने के साथ उन्हीं के रेखाखंड पर भी होना चाहिए। केवल समान दूरी पर्याप्त नहीं, क्योंकि बहुत से अन्य बिंदु भी दोनों सिरों से बराबर दूर होंगे। विभाजन बिंदु में अनुपात और संरेखता दोनों जरूरी हैं। अक्षों के समांतर भुजाओं वाले घनाभ का अंतरिक्ष विकर्ण √(l²+b²+h²) है। यदि l,b,h लंबाइयाँ हैं, तो वे गैरऋणात्मक हैं; बिंदु निर्देशांक फिर भी ऋणात्मक हो सकते हैं। दृश्य घुमाने पर स्थान के निर्देशांक या वास्तविक विकर्ण की लंबाई नहीं बदलती। interactive मॉडल में किसी बिंदु को खींचें तो निर्देशांक बदलने के साथ दूरी फिर निकालें। चित्र को मापने की बजाय सूत्र में सटीक संख्या रखने से स्क्रीन के प्रक्षेपण की त्रुटि से बचते हैं। A=(0,0,0), B=(2,0,0) लें। बिंदु (1,3,0) दोनों से √10 दूरी पर है, फिर भी मध्यबिंदु नहीं है। सही मध्यबिंदु (1,0,0) है। इससे स्पष्ट है कि बराबर दूरी और रेखाखंड पर होना अलग शर्तें हैं; दोनों की जाँच जरूरी है।"
+      },
+      "formula": "Box diagonal=√(l²+b²+h²)",
+      "question": {
+        "en": "Find the diagonal of a box with sides 2,3,6.",
+        "hi": "2, 3, 6 भुजाओं के घनाभ का विकर्ण।"
+      },
+      "answer": {
+        "en": "√(4+9+36)=7.",
+        "hi": "√(4+9+36)=7।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Project (3,−2,5) onto the xy-plane.",
+        "hi": "(3,−2,5) का xy-तल पर प्रक्षेप।"
+      },
+      "steps": [
+        {
+          "en": "The xy-plane has z=0.",
+          "hi": "xy-तल में z=0।"
+        },
+        {
+          "en": "Keep x=3 and y=−2 unchanged.",
+          "hi": "x=3 और y=−2 अपरिवर्तित रखें।"
+        },
+        {
+          "en": "Set z to zero.",
+          "hi": "z को 0 करें।"
+        }
+      ],
+      "answer": {
+        "en": "(3,−2,0)",
+        "hi": "(3,−2,0)"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find distance between (1,2,3),(4,6,3).",
+        "hi": "(1,2,3),(4,6,3) की दूरी।"
+      },
+      "steps": [
+        {
+          "en": "Coordinate differences are 3,4,0.",
+          "hi": "निर्देशांक अंतर 3,4,0 हैं।"
+        },
+        {
+          "en": "Square and add: 9+16+0=25.",
+          "hi": "वर्ग जोड़ें: 9+16+0=25।"
+        },
+        {
+          "en": "Take the nonnegative root.",
+          "hi": "गैरऋणात्मक वर्गमूल लें।"
+        }
+      ],
+      "answer": {
+        "en": "5 units",
+        "hi": "5 इकाई"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Enrichment: Find midpoint of (−2,4,6),(8,−2,0).",
+        "hi": "अतिरिक्त समझ: (−2,4,6),(8,−2,0) का मध्यबिंदु।"
+      },
+      "steps": [
+        {
+          "en": "Average each pair of corresponding coordinates.",
+          "hi": "संगत निर्देशांकों का औसत लें।"
+        },
+        {
+          "en": "x=(−2+8)/2=3, y=(4−2)/2=1.",
+          "hi": "x=(−2+8)/2=3, y=(4−2)/2=1।"
+        },
+        {
+          "en": "z=(6+0)/2=3.",
+          "hi": "z=(6+0)/2=3।"
+        }
+      ],
+      "answer": {
+        "en": "(3,1,3)",
+        "hi": "(3,1,3)"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Enrichment: Divide A=(1,2,3),B=(7,5,9) internally in 1:2.",
+        "hi": "अतिरिक्त समझ: A=(1,2,3),B=(7,5,9) को 1:2 में आंतरिक बाँटें।"
+      },
+      "steps": [
+        {
+          "en": "Use P=(1B+2A)/3.",
+          "hi": "P=(1B+2A)/3 लें।"
+        },
+        {
+          "en": "x=(7+2)/3=3, y=(5+4)/3=3.",
+          "hi": "x=(7+2)/3=3, y=(5+4)/3=3।"
+        },
+        {
+          "en": "z=(9+6)/3=5.",
+          "hi": "z=(9+6)/3=5।"
+        }
+      ],
+      "answer": {
+        "en": "(3,3,5)",
+        "hi": "(3,3,5)"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Show A=(0,0,0),B=(1,2,2),C=(3,2,1) form a right triangle.",
+        "hi": "A=(0,0,0),B=(1,2,2),C=(3,2,1) से समकोण त्रिभुज दिखाएँ।"
+      },
+      "steps": [
+        {
+          "en": "AB²=1+4+4=9.",
+          "hi": "AB²=1+4+4=9।"
+        },
+        {
+          "en": "BC²=(3−1)²+(2−2)²+(1−2)²=5.",
+          "hi": "BC²=(3−1)²+(2−2)²+(1−2)²=5।"
+        },
+        {
+          "en": "AC²=9+4+1=14.",
+          "hi": "AC²=9+4+1=14।"
+        },
+        {
+          "en": "AB²+BC²=AC², so angle B=90°.",
+          "hi": "AB²+BC²=AC², इसलिए कोण B=90°।"
+        }
+      ],
+      "answer": {
+        "en": "Right-angled at B.",
+        "hi": "B पर समकोण।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A point on the yz-plane satisfies",
+        "hi": "yz-तल के बिंदु में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x=0",
+            "hi": "x=0"
+          },
+          "reason": {
+            "en": "x is perpendicular to this plane.",
+            "hi": "x दिशा इस तल के लंबवत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "y=0",
+            "hi": "y=0"
+          },
+          "reason": {
+            "en": "That describes the xz-plane.",
+            "hi": "यह xz-तल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "z=0",
+            "hi": "z=0"
+          },
+          "reason": {
+            "en": "That describes the xy-plane.",
+            "hi": "यह xy-तल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=y=z",
+            "hi": "x=y=z"
+          },
+          "reason": {
+            "en": "This describes a line, not the whole plane.",
+            "hi": "यह रेखा है, पूरा तल नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Distance of (−2,−3,6) from origin is",
+        "hi": "(−2,−3,6) की मूलबिंदु से दूरी"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "√(4+9+36)=7.",
+            "hi": "√(4+9+36)=7।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Signed coordinates cannot simply be summed.",
+            "hi": "चिह्नित निर्देशांक सीधे नहीं जोड़े जाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "11",
+            "hi": "11"
+          },
+          "reason": {
+            "en": "This sums absolute coordinates, not Euclidean distance.",
+            "hi": "यह निरपेक्ष निर्देशांकों का योग है, यूक्लिड दूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "49",
+            "hi": "49"
+          },
+          "reason": {
+            "en": "This is the squared distance.",
+            "hi": "यह दूरी का वर्ग है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Enrichment: Midpoint of (0,2,4),(6,4,8) is",
+        "hi": "अतिरिक्त समझ: (0,2,4),(6,4,8) का मध्यबिंदु"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(3,3,6)",
+            "hi": "(3,3,6)"
+          },
+          "reason": {
+            "en": "Average the corresponding coordinates.",
+            "hi": "संगत निर्देशांकों का औसत लें।"
+          }
+        },
+        {
+          "text": {
+            "en": "(6,6,12)",
+            "hi": "(6,6,12)"
+          },
+          "reason": {
+            "en": "This gives sums, not averages.",
+            "hi": "यह योग है, औसत नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "(3,1,2)",
+            "hi": "(3,1,2)"
+          },
+          "reason": {
+            "en": "This halves the differences.",
+            "hi": "यह अंतरों का आधा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(2,3,4)",
+            "hi": "(2,3,4)"
+          },
+          "reason": {
+            "en": "The coordinates are not the required averages.",
+            "hi": "ये अपेक्षित औसत नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "First open octant has signs",
+        "hi": "पहले खुले अष्टांश के चिह्न"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(+,+,+)",
+            "hi": "(+,+,+)"
+          },
+          "reason": {
+            "en": "All coordinates are positive.",
+            "hi": "सभी निर्देशांक धनात्मक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "(+,+,−)",
+            "hi": "(+,+,−)"
+          },
+          "reason": {
+            "en": "z is negative here.",
+            "hi": "यहाँ z ऋणात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(−,+,+)",
+            "hi": "(−,+,+)"
+          },
+          "reason": {
+            "en": "x is negative here.",
+            "hi": "यहाँ x ऋणात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(0,+,+)",
+            "hi": "(0,+,+)"
+          },
+          "reason": {
+            "en": "This is a coordinate-plane boundary.",
+            "hi": "यह निर्देशांक तल की सीमा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Distance between (1,1,1),(1,1,5) is",
+        "hi": "(1,1,1),(1,1,5) की दूरी"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "Only z changes, by 4.",
+            "hi": "केवल z बदलता है, अंतर 4 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "This adds z values.",
+            "hi": "यह z मान जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "√6",
+            "hi": "√6"
+          },
+          "reason": {
+            "en": "The coordinate differences are 0,0,4.",
+            "hi": "निर्देशांक अंतर 0,0,4 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "16",
+            "hi": "16"
+          },
+          "reason": {
+            "en": "This is the squared distance.",
+            "hi": "यह दूरी का वर्ग है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Enrichment: For AP:PB=1:3 internally, the weight on B is",
+        "hi": "अतिरिक्त समझ: AP:PB=1:3 के आंतरिक सूत्र में B का भार"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/4",
+            "hi": "1/4"
+          },
+          "reason": {
+            "en": "P=(B+3A)/4.",
+            "hi": "P=(B+3A)/4।"
+          }
+        },
+        {
+          "text": {
+            "en": "3/4",
+            "hi": "3/4"
+          },
+          "reason": {
+            "en": "This reverses the ratio.",
+            "hi": "यह अनुपात उलट देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/3",
+            "hi": "1/3"
+          },
+          "reason": {
+            "en": "The denominator is the sum of ratio parts.",
+            "hi": "हर अनुपात के भागों का योग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "The weights must be normalised.",
+            "hi": "भारों को कुल से भाग देना जरूरी है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Enrichment: External section ratio 1:1 gives",
+        "hi": "अतिरिक्त समझ: 1:1 बाह्य विभाजन में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No finite point",
+            "hi": "कोई परिमित बिंदु नहीं"
+          },
+          "reason": {
+            "en": "m−n=0 in the external formula.",
+            "hi": "बाह्य सूत्र में m−n=0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Midpoint",
+            "hi": "मध्यबिंदु"
+          },
+          "reason": {
+            "en": "Midpoint is internal division.",
+            "hi": "मध्यबिंदु आंतरिक विभाजन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Origin always",
+            "hi": "हमेशा मूलबिंदु"
+          },
+          "reason": {
+            "en": "No such origin rule exists.",
+            "hi": "ऐसा कोई नियम नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "B",
+            "hi": "B"
+          },
+          "reason": {
+            "en": "B would give PB=0.",
+            "hi": "B पर PB=0 होगा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A point on the x-axis has",
+        "hi": "x-अक्ष के बिंदु में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "y=z=0",
+            "hi": "y=z=0"
+          },
+          "reason": {
+            "en": "Only the x-coordinate may vary.",
+            "hi": "केवल x निर्देशांक बदल सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=0",
+            "hi": "x=0"
+          },
+          "reason": {
+            "en": "This allows a whole plane.",
+            "hi": "इससे पूरा तल मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=y=0",
+            "hi": "x=y=0"
+          },
+          "reason": {
+            "en": "This describes the z-axis.",
+            "hi": "यह z-अक्ष है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=z=0",
+            "hi": "x=z=0"
+          },
+          "reason": {
+            "en": "This describes the y-axis.",
+            "hi": "यह y-अक्ष है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Reflection of (2,−3,4) in xy-plane is",
+        "hi": "xy-तल में (2,−3,4) का प्रतिबिंब"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(2,−3,−4)",
+            "hi": "(2,−3,−4)"
+          },
+          "reason": {
+            "en": "Only z changes sign.",
+            "hi": "केवल z का चिह्न बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(−2,3,−4)",
+            "hi": "(−2,3,−4)"
+          },
+          "reason": {
+            "en": "This reflects in the origin.",
+            "hi": "यह मूलबिंदु में परावर्तन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(−2,−3,4)",
+            "hi": "(−2,−3,4)"
+          },
+          "reason": {
+            "en": "This reflects in yz-plane.",
+            "hi": "यह yz-तल में परावर्तन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(2,3,4)",
+            "hi": "(2,3,4)"
+          },
+          "reason": {
+            "en": "This reflects in xz-plane.",
+            "hi": "यह xz-तल में परावर्तन है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The space diagonal of a 1×2×2 box is",
+        "hi": "1×2×2 घनाभ का अंतरिक्ष विकर्ण"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "√(1+4+4)=3.",
+            "hi": "√(1+4+4)=3।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "This sums the edge lengths.",
+            "hi": "यह भुजाओं का योग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9",
+            "hi": "9"
+          },
+          "reason": {
+            "en": "This is the diagonal squared.",
+            "hi": "यह विकर्ण का वर्ग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2√2",
+            "hi": "2√2"
+          },
+          "reason": {
+            "en": "This omits the edge of length 1.",
+            "hi": "इसमें लंबाई 1 वाली भुजा छूटी है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Name the three coordinate planes with equations.",
+        "hi": "3 निर्देशांक तल समीकरण सहित लिखें।"
+      },
+      "answer": {
+        "en": "xy: z=0; yz: x=0; xz: y=0.",
+        "hi": "xy: z=0; yz: x=0; xz: y=0।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find distance from (2,3,4) to xy-plane.",
+        "hi": "(2,3,4) से xy-तल की दूरी।"
+      },
+      "answer": {
+        "en": "|z|=4 units; projection is (2,3,0).",
+        "hi": "|z|=4 इकाई; प्रक्षेप (2,3,0) है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Enrichment: Find midpoint of (1,−1,3),(5,3,−1).",
+        "hi": "अतिरिक्त समझ: (1,−1,3),(5,3,−1) का मध्यबिंदु।"
+      },
+      "answer": {
+        "en": "((1+5)/2,(−1+3)/2,(3−1)/2)=(3,1,1).",
+        "hi": "((1+5)/2,(−1+3)/2,(3−1)/2)=(3,1,1)।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find distance between (−1,2,0),(2,6,0).",
+        "hi": "(−1,2,0),(2,6,0) की दूरी।"
+      },
+      "answer": {
+        "en": "√(3²+4²)=5 units.",
+        "hi": "√(3²+4²)=5 इकाई।"
+      }
+    },
+    {
+      "question": {
+        "en": "Enrichment: Divide A=(0,0,0),B=(3,6,9) internally in 2:1.",
+        "hi": "अतिरिक्त समझ: A=(0,0,0),B=(3,6,9) का 2:1 आंतरिक विभाजन।"
+      },
+      "answer": {
+        "en": "P=(2B+A)/3=(2,4,6).",
+        "hi": "P=(2B+A)/3=(2,4,6)।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does view rotation not change computed distance?",
+        "hi": "दृश्य घुमाने से गणितीय दूरी क्यों नहीं बदलती?"
+      },
+      "answer": {
+        "en": "Only the projection/viewpoint changes; the fixed spatial points and their Euclidean separation do not.",
+        "hi": "केवल प्रक्षेपण या देखने का स्थान बदलता है; स्थिर स्थानिक बिंदु तथा उनकी यूक्लिड दूरी नहीं बदलते।"
+      }
+    }
+  ],
+  "revision": [
+    {
+      "en": "Coordinates are ordered triples.",
+      "hi": "निर्देशांक क्रमित त्रिक हैं।"
+    },
+    {
+      "en": "Coordinate planes each set one coordinate to zero.",
+      "hi": "हर निर्देशांक तल में एक निर्देशांक 0 है।"
+    },
+    {
+      "en": "Distance uses all three squared differences.",
+      "hi": "दूरी में 3 अंतरों के वर्ग जुड़ते हैं।"
+    },
+    {
+      "en": "Enrichment: Internal section uses opposite-endpoint weights.",
+      "hi": "अतिरिक्त समझ: आंतरिक विभाजन में विपरीत सिरों के भार लगते हैं।"
+    },
+    {
+      "en": "View rotation preserves spatial distances.",
+      "hi": "दृश्य घुमाने से स्थानिक दूरी सुरक्षित रहती है।"
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not interchange coordinate order, sum signed differences without squaring, reverse section weights, or use the external formula at m=n.",
+    "hi": "निर्देशांकों का क्रम न बदलें; अंतरों को बिना वर्ग न जोड़ें; विभाजन भार न उलटें; बाह्य सूत्र m=n पर न लगाएँ।"
+  },
+  "conceptMap": {
+    "en": "Axes → planes / octants → ordered triples → distances → midpoint and section → spatial checks.",
+    "hi": "अक्ष → तल / अष्टांश → क्रमित त्रिक → दूरियाँ → मध्यबिंदु और विभाजन → स्थानिक जाँच।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics, Class XI",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh111.pdf"
+    }
+  ]
+}

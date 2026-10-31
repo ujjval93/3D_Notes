@@ -1,0 +1,1063 @@
+{
+  "number": 10,
+  "id": "physics12-10",
+  "title": {
+    "en": "Wave Optics",
+    "hi": "तरंग प्रकाशिकी"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Wavefronts and Huygens principle",
+        "hi": "तरंगाग्र और हाइगेंस सिद्धांत"
+      },
+      "paragraphs": [
+        {
+          "en": "A wavefront joins points of equal phase. In a homogeneous isotropic medium rays are normal to wavefronts. Huygens construction treats each wavefront point as a source of secondary wavelets; their forward envelope locates the later wavefront. These are phase surfaces, not trajectories of individual particles or separate visible bulbs.",
+          "hi": "तरंगाग्र (Wavefront) समान कला वाले बिंदुओं का पृष्ठ है। किसी बिंदु स्रोत से एकसमान समदैशिक माध्यम में निकलती तरंग के तरंगाग्र गोलाकार हो सकते हैं; बहुत दूर के छोटे क्षेत्र में उन्हें लगभग समतल मान सकते हैं। किरणें समदैशिक माध्यम में तरंगाग्र के अभिलंब ऊर्जा संचरण दिशा बताती हैं। तरंगाग्र को किसी एक कण की गति रेखा न समझें। हाइगेंस सिद्धांत (Huygens Principle) में तरंगाग्र का हर बिंदु द्वितीयक तरंगिकाओं का स्रोत माना जाता है और बाद का तरंगाग्र उनकी अग्र बाह्य स्पर्श पृष्ठ से बनाया जाता है। यह ज्यामितीय निर्माण तरंग के आगे बढ़ने तथा सीमा पर दिशा बदलने को समझने का साधन है। वास्तविक एनीमेशन में सभी द्वितीयक स्रोत अलग बल्ब की तरह दिखाई नहीं देते। गोले और चाप सांकेतिक कला पृष्ठ हैं। आवृत्ति बढ़ने पर समान चाल में तरंगाग्रों के बीच दूरी घटती है, क्योंकि λ=v/f है। इसलिए चित्र में दूरी और कला को साथ पढ़ें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Distinguish a wavefront surface from a ray normal to it.",
+          "hi": "तरंगाग्र पृष्ठ और उसके अभिलंब किरण में भेद रखें। पृष्ठ को तीर की तरह तथा किरण को समान कला वाली रेखा की तरह पढ़ना परावर्तन और अपवर्तन के निर्माण में भ्रम पैदा करता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is common to all points on a wavefront?",
+          "hi": "तरंगाग्र के सभी बिंदुओं में क्या समान है?"
+        },
+        "answer": {
+          "en": "Phase.",
+          "hi": "कला।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Reflection and refraction of wavefronts",
+        "hi": "तरंगाग्रों का परावर्तन और अपवर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "Huygens geometry gives equal incidence and reflection angles. Different wave speeds across a boundary rotate the transmitted wavefront and yield Snell law. At a stationary boundary frequency stays fixed while wavelength changes with speed. Normal incidence changes wavelength without necessarily changing direction.",
+          "hi": "हाइगेंस निर्माण से परावर्तन नियम समझ सकते हैं। समतल दर्पण पर तरंगाग्र का एक किनारा पहले पहुँचता है और वहाँ से द्वितीयक तरंगिका बनती है, जबकि दूसरा किनारा आगे बढ़ता है। समान समय में बनी ज्यामिति आपतन कोण और परावर्तन कोण बराबर देती है। अपवर्तन में दूसरे माध्यम की तरंग चाल अलग होने से तरंगाग्र का एक भाग अलग दूरी तय करता है। इससे उसकी दिशा घूमती है और sin i/sin r=v1/v2=n2/n1 मिलता है। यहाँ कोण तरंगाग्रों के बीच नहीं, सामान्य परिभाषा में किरण और अभिलंब से मापे जाते हैं। स्थिर सीमा पर आवृत्ति समान रहती है; λ बदलता है। अधिक अपवर्तनांक वाले माध्यम में चाल और तरंगदैर्घ्य कम होते हैं। तरंग सिद्धांत इसलिए केवल चित्र नहीं, मापे हुए अपवर्तन नियम का समर्थन देता है। अभिलंब आपतन में तरंगाग्र की दिशा नहीं घूमती, लेकिन विभिन्न माध्यमों में उसकी समान समय की दूरी फिर भी अलग हो सकती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use wave speed in each medium rather than c in every region.",
+          "hi": "हर माध्यम में उसकी तरंग चाल लें, हर जगह c नहीं। समान समय के निर्माण में दूरी vΔt होती है; दोनों माध्यमों के लिए एक ही दूरी मानने से स्नेल नियम का निष्कर्ष गलत होगा।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What remains unchanged at a stationary refracting boundary?",
+          "hi": "स्थिर अपवर्तक सीमा पर क्या अपरिवर्तित रहता है?"
+        },
+        "answer": {
+          "en": "The temporal frequency of the wave.",
+          "hi": "तरंग की समय आवृत्ति।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Coherence and sustained interference",
+        "hi": "कलासंबद्धता और स्थायी व्यतिकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Superposition adds fields. Stable interference needs coherent sources: the same frequency with a stable relative phase, plus compatible polarisation. Independent ordinary lamps generally do not yield stationary fringes. Unequal amplitudes can interfere without giving a zero minimum. Interference redistributes energy rather than destroying it.",
+          "hi": "अध्यारोपण (Superposition) में दो तरंगों के क्षेत्र जुड़ते हैं, सीधे तीव्रताएँ नहीं। व्यतिकरण (Interference) से कुछ स्थानों पर तीव्रता बढ़ती और कुछ पर घटती है। स्थिर प्रतिरूप देखने के लिए स्रोतों की आवृत्ति समान तथा कलांतर समय के साथ स्थिर होना चाहिए; ऐसे स्रोत कलासंबद्ध (Coherent) कहलाते हैं। अलग साधारण बल्बों का यादृच्छिक बदलता कलांतर स्थिर स्पष्ट फ्रिंज नहीं देता, भले रंग लगभग समान हो। एक ही स्रोत से दो संबद्ध भाग बनाना अधिक उपयोगी है। दोनों तरंगों की ध्रुवण स्थितियाँ भी उपयुक्त होनी चाहिए; केवल समान आवृत्ति होना पर्याप्त नहीं। समान आयाम होने से अंध फ्रिंज में पूर्ण विनाश संभव होता है, पर असमान आयाम पर न्यूनतम तीव्रता शून्य जरूरी नहीं। तरंगों का विनाश ऊर्जा गायब होना नहीं; प्रतिरूप में ऊर्जा का स्थानिक पुनर्वितरण होता है। प्रेक्षण समय में कला बदलती रहे तो उजले-अँधेरे स्थान औसत में धुँधले हो सकते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Separate coherence from equal brightness.",
+          "hi": "कलासंबद्धता को समान चमक से अलग रखें। दो स्रोत समान तीव्रता के होकर भी असंबद्ध हो सकते हैं, और कलासंबद्ध स्रोत असमान तीव्रता पर भी व्यतिकरण कर सकते हैं; केवल न्यूनतम की गहराई बदलेगी।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is equal frequency alone sufficient for stable interference?",
+          "hi": "क्या केवल समान आवृत्ति स्थिर व्यतिकरण के लिए पर्याप्त है?"
+        },
+        "answer": {
+          "en": "No; a stable relative phase and suitable polarisation are also needed.",
+          "hi": "नहीं; स्थिर कलांतर और उपयुक्त ध्रुवण भी चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Path difference and intensity",
+        "hi": "पथांतर और तीव्रता"
+      },
+      "paragraphs": [
+        {
+          "en": "With zero initial relative phase, δ=2πΔ/λ. For equal individual intensities I0, the resultant is 4I0cos²(δ/2). Constructive paths differ by integer wavelengths and destructive paths by half-odd-integer wavelengths. For unequal sources the minimum is (√I1−√I2)², which need not vanish.",
+          "hi": "समान आवृत्ति की तरंगों के पथांतर Δ से कलांतर δ=2πΔ/λ बनता है, यदि स्रोतों का प्रारंभिक कलांतर शून्य और माध्यम समान हो। सामान्य रूप में प्रारंभिक कलांतर भी जोड़ना होगा। बराबर आयाम और समान ध्रुवण की दो तरंगों की प्रत्येक अकेली तीव्रता I0 हो तो परिणामी I=4I0 cos²(δ/2) है। उजले स्थानों के लिए Δ=nλ और अँधेरे के लिए Δ=(n+1/2)λ, जहाँ n पूर्णांक है। अधिकतम तीव्रता 4I0 है, केवल 2I0 नहीं, क्योंकि आयाम पहले जुड़कर दुगुना होता है और तीव्रता उसका वर्ग है। पूरे प्रतिरूप का औसत ऊर्जा हिसाब दोनों स्रोतों की कुल आपूर्ति के अनुरूप रहता है। यदि I1 और I2 अलग हों, सामान्य सूत्र I=I1+I2+2√(I1I2)cosδ है। न्यूनतम (√I1−√I2)² होने से असमान स्रोतों पर पूर्ण अंधकार नहीं मिलता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not add two intensities before considering the interference cross term.",
+          "hi": "व्यतिकरण का मिश्र पद देखे बिना केवल 2 तीव्रताएँ न जोड़ें। कलांतर के δ=0,π,2π उदाहरण में सूत्र रखकर उजला, अँधेरा और फिर उजला क्रम जाँचना संबंध समझने का सरल तरीका है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For equal sources, what is the maximum intensity in terms of I0?",
+          "hi": "समान स्रोतों के लिए अधिकतम तीव्रता I0 के रूप में कितनी है?"
+        },
+        "answer": {
+          "en": "4I0.",
+          "hi": "4I0।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Young double-slit geometry",
+        "hi": "यंग द्विझिरी की ज्यामिति"
+      },
+      "paragraphs": [
+        {
+          "en": "For a distant screen and small angles, double-slit path difference is approximately dy/D. Thus bright positions are nλD/d and fringe width is β=λD/d. A neighbouring bright-to-dark spacing is β/2. The equal spacing is a paraxial approximation, not a universal exact result for every screen geometry.",
+          "hi": "यंग के द्विझिरी प्रयोग (Young Double Slit Experiment) में पास की दो पतली झिरियाँ एक ही स्रोत से प्रकाश पाकर कलासंबद्ध स्रोतों का काम करती हैं। झिरियों के बीच दूरी d, स्क्रीन दूरी D और केंद्र से अनुप्रस्थ निर्देशांक y लें। D बहुत बड़ा तथा कोण छोटे हों तो पथांतर Δ≈dy/D मिलता है। इसलिए उजली फ्रिंज के स्थान yn=nλD/d तथा आसन्न उजली या आसन्न अँधेरी फ्रिंज की दूरी β=λD/d है। यही फ्रिंज चौड़ाई (Fringe Width) है। केंद्रीय उजली फ्रिंज y=0 पर शून्य पथांतर के कारण बनती है, जब प्रारंभिक कला समान हो। उजली और उसके पास की अँधेरी फ्रिंज की दूरी β/2 है, β नहीं। d तथा D बदलने का असर अलग है: D बढ़ाने से फ्रिंज फैलती और d बढ़ाने से पास आती हैं। सूत्र छोटे कोण और दूर स्क्रीन का सन्निकटन है; हर दूरी पर सीधी रेखा की समान दूरी का निष्कर्ष न लें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use d and λ in compatible units, commonly metres.",
+          "hi": "d और λ को संगत इकाइयों में रखें, सामान्यतः मीटर में। यदि λ nm में और d mm में दिया हो तो दोनों उपसर्ग बदलें; केवल स्क्रीन दूरी को मीटर में बदलना पर्याप्त नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to β if slit separation doubles?",
+          "hi": "झिरी दूरी दुगुनी करने पर β क्या होगी?"
+        },
+        "answer": {
+          "en": "It halves, with λ and D fixed.",
+          "hi": "λ,D स्थिर हों तो आधी होगी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Changing the interference pattern",
+        "hi": "व्यतिकरण प्रतिरूप का बदलना"
+      },
+      "paragraphs": [
+        {
+          "en": "Changing wavelength or geometry changes fringe spacing; changing only source intensity changes brightness. Filling the paths with the same transparent medium reduces wavelength and fringe width without changing frequency. Closing a slit removes two-source interference but does not remove the single-slit diffraction envelope. White-light fringes overlap away from the centre.",
+          "hi": "फ्रिंज चौड़ाई से किसी नियंत्रक राशि का प्रभाव समझने के लिए β=λD/d में केवल बदली राशि बदलें। एक ही स्रोत और ज्यामिति में समान अपवर्तनांक n का पारदर्शी माध्यम भरने पर आवृत्ति नहीं बदलती, लेकिन तरंगदैर्घ्य λ0/n होता है और β भी लगभग 1/n गुनी हो जाती है। स्रोतों की तीव्रता समान अनुपात में बढ़ाने से फ्रिंज की चमक बदलती है, दूरी नहीं, यदि λ और ज्यामिति स्थिर हों। एक झिरी बंद करने पर दो-स्रोत व्यतिकरण समाप्त होता है; वास्तविक अकेली झिरी का अपना विवर्तन फैलाव रह सकता है। श्वेत प्रकाश में अलग तरंगदैर्घ्यों की फ्रिंज चौड़ाइयाँ अलग होती हैं। केंद्र में समान पथ पर कई रंग साथ उजले हो सकते हैं, पर दूर जाने पर प्रतिरूप ओवरलैप होकर कम स्पष्ट होता है। किसी एक झिरी के आगे पतली प्लेट रखने से अतिरिक्त प्रकाशीय पथ प्रतिरूप खिसका सकता है; विस्तृत प्लेट गणना अतिरिक्त समझ है, मूल फ्रिंज सूत्र का विकल्प नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Separate a shift of the whole pattern from a change of fringe spacing.",
+          "hi": "पूरे प्रतिरूप के खिसकने को फ्रिंज दूरी के बदलने से अलग रखें। संदर्भ केंद्र, अधिकतम क्रम और लगातार 2 फ्रिंजों की दूरी मापकर तय करें कि किस प्रकार का परिवर्तन हुआ है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If both slit intensities double at fixed geometry, does β double?",
+          "hi": "स्थिर ज्यामिति पर दोनों झिरियों की तीव्रता दुगुनी हो तो क्या β दुगुनी होगी?"
+        },
+        "answer": {
+          "en": "No; brightness changes, while β depends on λ,D,d.",
+          "hi": "नहीं; चमक बदलती है, β का संबंध λ,D,d से है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Single-slit diffraction",
+        "hi": "एकल झिरी विवर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "Diffraction arises from superposition of contributions across a finite aperture. Narrowing a slit increases angular spread at fixed wavelength. As quantitative support for the prescribed qualitative treatment, first minima satisfy asinθ=λ and the small-angle central width is approximately2λD/a. The central maximum is wider and stronger than nearby side maxima.",
+          "hi": "विवर्तन (Diffraction) सीमित झिरी या किनारे के कारण तरंग के फैलने और अपने अलग भागों के अध्यारोपण का परिणाम है। एक पतली झिरी में तरंगाग्र के सभी भाग द्वितीयक योगदान देते हैं; यह केवल दो अलग झिरियों का प्रयोग नहीं। झिरी चौड़ाई a कम होने पर, समान λ में, केंद्रीय फैलाव अधिक होता है। दूर क्षेत्र की एकल झिरी के लिए पहले न्यूनतम की शर्त a sinθ=λ है। छोटे कोणों पर स्क्रीन का केंद्रीय अधिकतम लगभग 2λD/a चौड़ा होता है। यह मात्रात्मक संबंध अवधारणा समझाने का सहायक विस्तार है; निर्धारित पाठ्यक्रम में विवर्तन का मूल अध्ययन गुणात्मक रखा गया है। केंद्रीय अधिकतम आसन्न पार्श्व अधिकतमों से चौड़ा और सामान्यतः अधिक तीव्र होता है। तरंगदैर्घ्य की तुलना में बहुत बड़ी झिरी पर फैलाव छोटा दिखता है, इसलिए दैनिक बड़े दरवाजे से प्रकाश का मुड़ना आसानी से नहीं दिखता। विवर्तन बताता है कि बहुत बड़ा आवर्धन भी सीमित द्वारक की सूक्ष्म विवरण क्षमता को अनंत नहीं बना सकता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The slit width a and double-slit separation d are different quantities.",
+          "hi": "झिरी की चौड़ाई a और दो झिरियों की दूरी d अलग राशियाँ हैं। a घटाने पर विवर्तन आवरण फैलता है; d बढ़ाने पर द्विझिरी फ्रिंज पास आती हैं। दोनों प्रभाव एक ही प्रतिरूप में साथ मौजूद हो सकते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How does narrowing a slit affect diffraction spread?",
+          "hi": "झिरी सँकरी करने पर विवर्तन फैलाव कैसे बदलता है?"
+        },
+        "answer": {
+          "en": "It increases at fixed wavelength.",
+          "hi": "स्थिर तरंगदैर्घ्य पर बढ़ता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Polarisation: UP Board prescribed supplement",
+        "hi": "ध्रुवण: यूपी बोर्ड का निर्धारित पूरक"
+      },
+      "paragraphs": [
+        {
+          "en": "UP Board explicitly prescribes polarisation, Polaroid applications and Malus law, even where the rationalised NCERT chapter scope is narrower. For linearly polarised incident intensity Ip, an analyser transmits I=Ipcos²θ. An ideal first polariser transmits half the intensity of unpolarised light. This demonstrates transverse character, not merely a changed propagation direction.",
+          "hi": "ध्रुवण (Polarisation) अनुप्रस्थ तरंग में विद्युत क्षेत्र के दोलन की दिशा से संबंधित है। सामान्य अध्रुवित प्रकाश में अनुप्रस्थ दिशाओं का अनियमित मिश्रण होता है; आदर्श रैखिक ध्रुवक 1 चुने अक्ष का घटक पार करता है। इस अनुभाग को यूपी बोर्ड के निर्धारित पूरक के रूप में पढ़ें: वर्तमान NCERT की संक्षिप्त मूल अध्याय-सूची से अलग होने पर भी UPMSP 2026–27 में ध्रुवण, पोलरॉइड उपयोग और मैलेस नियम दिए हैं। पहले से रैखिक ध्रुवित प्रकाश की तीव्रता Ip हो और विश्लेषक अक्ष से कोण θ बने तो मैलेस नियम I=Ip cos²θ है। आदर्श ध्रुवक से अध्रुवित प्रकाश गुजरने पर औसत तीव्रता आधी होती है; उसके बाद दूसरे विश्लेषक पर cos²θ लगाएँ। परस्पर लम्बवत 2 आदर्श ध्रुवकों पर अंतिम तीव्रता शून्य है। केवल प्रकाश की दिशा घूमने को ध्रुवण न कहें। ध्रुवण का अस्तित्व प्रकाश की अनुप्रस्थ प्रकृति का प्रमाण है; अनुदैर्ध्य ध्वनि पर यही ध्रुवक चित्र लागू नहीं होता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use the intensity reaching the analyser as Ip, not necessarily the original unpolarised source intensity.",
+          "hi": "विश्लेषक तक पहुँचने वाली तीव्रता को Ip लें, जरूरी नहीं कि वह मूल अध्रुवित स्रोत की तीव्रता हो। पहले ध्रुवक का 1/2 गुणक और दूसरे का cos²θ क्रम में अलग लगाने से सामान्य 2 गुने उत्तर की गलती बचती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What fraction of already polarised intensity passes an analyser at60°?",
+          "hi": "पहले से ध्रुवित प्रकाश का कितना भाग60° विश्लेषक से पार होता है?"
+        },
+        "answer": {
+          "en": "cos²60°=1/4.",
+          "hi": "cos²60°=1/4।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "δ=2πΔ/λ",
+      "meaning": {
+        "en": "Path-to-phase relation for equal initial phase in one medium.",
+        "hi": "1 माध्यम में समान प्रारंभिक कला के लिए पथ-कला संबंध।"
+      },
+      "units": {
+        "en": "δ:rad; Δ,λ in the same length unit",
+        "hi": "δ:rad; Δ,λ समान लंबाई इकाई"
+      }
+    },
+    {
+      "expression": "I=I1+I2+2√(I1I2)cosδ",
+      "meaning": {
+        "en": "Interference intensity for coherent compatible waves.",
+        "hi": "कलासंबद्ध उपयुक्त तरंगों की व्यतिकरण तीव्रता।"
+      },
+      "units": {
+        "en": "W/m²",
+        "hi": "W/m²"
+      }
+    },
+    {
+      "expression": "β=λD/d; yn=nβ",
+      "meaning": {
+        "en": "Small-angle distant-screen double-slit pattern.",
+        "hi": "छोटे कोण और दूर स्क्रीन का द्विझिरी प्रतिरूप।"
+      },
+      "units": {
+        "en": "β,λ,D,d in m",
+        "hi": "β,λ,D,d को m में लें"
+      }
+    },
+    {
+      "expression": "a sinθ=λ; central width≈2λD/a",
+      "meaning": {
+        "en": "Quantitative support: single-slit first minima and small-angle central width.",
+        "hi": "मात्रात्मक सहायक विस्तार: एकल झिरी का पहला न्यूनतम और छोटे कोण की केंद्रीय चौड़ाई।"
+      },
+      "units": {
+        "en": "a,λ,D in m",
+        "hi": "a,λ,D को m में लें"
+      }
+    },
+    {
+      "expression": "I=Ip cos²θ",
+      "meaning": {
+        "en": "UP Board prescribed supplement: Malus law for a linearly polarised incident beam.",
+        "hi": "यूपी बोर्ड निर्धारित पूरक: रैखिक ध्रुवित आपतित पुंज का मैलेस नियम।"
+      },
+      "units": {
+        "en": "I,Ip:W/m²",
+        "hi": "I,Ip:W/m²"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find Young fringe width for λ=500 nm,D=2 m,d=1 mm.",
+        "hi": "λ=500 nm,D=2 m,d=1 mm के लिए यंग फ्रिंज चौड़ाई निकालें।"
+      },
+      "given": {
+        "en": "λ=5×10^-7 m,d=10^-3 m.",
+        "hi": "λ=5×10^-7 m,d=10^-3 m।"
+      },
+      "find": {
+        "en": "β.",
+        "hi": "β।"
+      },
+      "formula": {
+        "en": "β=λD/d",
+        "hi": "β=λD/d"
+      },
+      "steps": [
+        {
+          "en": "β=(5×10^-7×2)/10^-3.",
+          "hi": "β=(5×10^-7×2)/10^-3।"
+        }
+      ],
+      "answer": {
+        "en": "10^-3 m=1 mm.",
+        "hi": "10^-3 m=1 mm।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "With β=1 mm and zero central phase difference, locate the third bright fringe from the centre.",
+        "hi": "β=1 mm और केंद्र पर शून्य कलांतर हो तो तीसरी उजली फ्रिंज का स्थान निकालें।"
+      },
+      "given": {
+        "en": "n=3; central maximum n=0.",
+        "hi": "n=3; केंद्रीय अधिकतम n=0।"
+      },
+      "find": {
+        "en": "y3.",
+        "hi": "y3।"
+      },
+      "formula": {
+        "en": "yn=nβ",
+        "hi": "yn=nβ"
+      },
+      "steps": [
+        {
+          "en": "y3=3×1 mm.",
+          "hi": "y3=3×1 mm।"
+        },
+        {
+          "en": "Symmetric positions exist on both sides.",
+          "hi": "दोनों ओर सममित स्थान हैं।"
+        }
+      ],
+      "answer": {
+        "en": "y=±3 mm for the pair of third-order bright fringes.",
+        "hi": "तीसरे क्रम की उजली फ्रिंजों के लिए y=±3 mm।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "An interference setup has β=1.2 mm in air and is filled uniformly with index1.5 medium. Find new β.",
+        "hi": "हवा में β=1.2 mm वाले व्यतिकरण उपकरण को समान अपवर्तनांक1.5 माध्यम से भरें। नई β निकालें।"
+      },
+      "given": {
+        "en": "Geometry and source frequency fixed.",
+        "hi": "ज्यामिति और स्रोत आवृत्ति स्थिर।"
+      },
+      "find": {
+        "en": "βmedium.",
+        "hi": "βmedium।"
+      },
+      "formula": {
+        "en": "βmedium=βair/n",
+        "hi": "βmedium=βair/n"
+      },
+      "steps": [
+        {
+          "en": "The wavelength reduces by1.5.",
+          "hi": "तरंगदैर्घ्य1.5 से भाग देने पर घटता है।"
+        },
+        {
+          "en": "β=1.2/1.5 mm.",
+          "hi": "β=1.2/1.5 mm।"
+        }
+      ],
+      "answer": {
+        "en": "0.8 mm.",
+        "hi": "0.8 mm।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "As a quantitative diffraction extension, estimate central width for λ=600 nm,D=1 m,a=0.2 mm.",
+        "hi": "मात्रात्मक विवर्तन विस्तार में λ=600 nm,D=1 m,a=0.2 mm पर केंद्रीय चौड़ाई का अनुमान लगाएँ।"
+      },
+      "given": {
+        "en": "a=2×10^-4 m, small-angle far-field model.",
+        "hi": "a=2×10^-4 m,छोटे कोण का दूर क्षेत्र मॉडल।"
+      },
+      "find": {
+        "en": "Central maximum width.",
+        "hi": "केंद्रीय अधिकतम चौड़ाई।"
+      },
+      "formula": {
+        "en": "w≈2λD/a",
+        "hi": "w≈2λD/a"
+      },
+      "steps": [
+        {
+          "en": "w=2×6×10^-7/(2×10^-4) m.",
+          "hi": "w=2×6×10^-7/(2×10^-4) m।"
+        },
+        {
+          "en": "The factor2 includes both sides of the central maximum.",
+          "hi": "2 का गुणक केंद्रीय अधिकतम की दोनों ओर शामिल करता है।"
+        }
+      ],
+      "answer": {
+        "en": "0.006 m=6 mm.",
+        "hi": "0.006 m=6 mm।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "UP Board supplement: unpolarised light of intensity80 W/m² passes an ideal polariser and an analyser30° from it. Find final intensity.",
+        "hi": "यूपी बोर्ड पूरक:80 W/m² अध्रुवित प्रकाश आदर्श ध्रुवक और उससे30° पर विश्लेषक से गुजरता है। अंतिम तीव्रता निकालें।"
+      },
+      "given": {
+        "en": "I0=80 W/m²; θ=30°.",
+        "hi": "I0=80 W/m²;θ=30°।"
+      },
+      "find": {
+        "en": "Final I.",
+        "hi": "अंतिम I।"
+      },
+      "formula": {
+        "en": "Ip=I0/2; I=Ip cos²θ",
+        "hi": "Ip=I0/2; I=Ip cos²θ"
+      },
+      "steps": [
+        {
+          "en": "After first polariser Ip=40 W/m².",
+          "hi": "पहले ध्रुवक के बाद Ip=40 W/m²।"
+        },
+        {
+          "en": "cos²30°=3/4.",
+          "hi": "cos²30°=3/4।"
+        },
+        {
+          "en": "I=40×3/4.",
+          "hi": "I=40×3/4।"
+        }
+      ],
+      "answer": {
+        "en": "30 W/m².",
+        "hi": "30 W/m²।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A wavefront is a surface of equal",
+        "hi": "तरंगाग्र समान किसका पृष्ठ है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Phase",
+            "hi": "कला"
+          },
+          "reason": {
+            "en": "Equal phase defines a wavefront.",
+            "hi": "समान कला तरंगाग्र परिभाषित करती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Particle mass",
+            "hi": "कण द्रव्यमान"
+          },
+          "reason": {
+            "en": "A wavefront is not a mass surface.",
+            "hi": "तरंगाग्र द्रव्यमान पृष्ठ नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ray length always",
+            "hi": "हमेशा किरण लंबाई"
+          },
+          "reason": {
+            "en": "Equal optical phase is the criterion.",
+            "hi": "समान प्रकाशीय कला कसौटी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Intensity necessarily",
+            "hi": "अनिवार्य तीव्रता"
+          },
+          "reason": {
+            "en": "Amplitude can vary over equal-phase surfaces.",
+            "hi": "समान कला पृष्ठ पर आयाम बदल सकता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Stable interference requires",
+        "hi": "स्थिर व्यतिकरण के लिए चाहिए"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Stable relative phase",
+            "hi": "स्थिर सापेक्ष कला"
+          },
+          "reason": {
+            "en": "The fringe positions then remain stable.",
+            "hi": "तब फ्रिंज स्थान स्थिर रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only equal brightness",
+            "hi": "केवल समान चमक"
+          },
+          "reason": {
+            "en": "Equal brightness does not guarantee coherence.",
+            "hi": "समान चमक कलासंबद्धता सुनिश्चित नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Different random frequencies",
+            "hi": "भिन्न यादृच्छिक आवृत्तियाँ"
+          },
+          "reason": {
+            "en": "The phase relation then varies.",
+            "hi": "तब कला संबंध बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only two independent bulbs",
+            "hi": "केवल 2 स्वतंत्र बल्ब"
+          },
+          "reason": {
+            "en": "Ordinary independent bulbs are not coherent.",
+            "hi": "सामान्य स्वतंत्र बल्ब कलासंबद्ध नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For zero initial phase difference, constructive interference occurs at",
+        "hi": "शून्य प्रारंभिक कलांतर में रचनात्मक व्यतिकरण होता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Δ=nλ",
+            "hi": "Δ=nλ"
+          },
+          "reason": {
+            "en": "The phase difference is an integer multiple of2π.",
+            "hi": "कलांतर2π का पूर्णांक गुणज है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Δ=(n+1/2)λ",
+            "hi": "Δ=(n+1/2)λ"
+          },
+          "reason": {
+            "en": "That is destructive for equal sources.",
+            "hi": "समान स्रोतों पर वह विनाशी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every Δ gives the same intensity",
+            "hi": "हर Δ समान तीव्रता देता है"
+          },
+          "reason": {
+            "en": "Intensity depends on relative phase.",
+            "hi": "तीव्रता सापेक्ष कला पर निर्भर।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only Δ=λ/4",
+            "hi": "केवल Δ=λ/4"
+          },
+          "reason": {
+            "en": "This gives phaseπ/2, not a maximum.",
+            "hi": "इससे कलाπ/2,अधिकतम नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two equal coherent waves each have intensity I0. Their maximum resultant intensity is",
+        "hi": "प्रत्येक I0 तीव्रता की 2 समान कलासंबद्ध तरंगों की अधिकतम परिणामी तीव्रता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4I0",
+            "hi": "4I0"
+          },
+          "reason": {
+            "en": "Amplitudes double and intensity is their square.",
+            "hi": "आयाम दुगुना,तीव्रता उसका वर्ग।"
+          }
+        },
+        {
+          "text": {
+            "en": "2I0",
+            "hi": "2I0"
+          },
+          "reason": {
+            "en": "That omits the constructive cross term.",
+            "hi": "इसमें रचनात्मक मिश्र पद छूटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "I0",
+            "hi": "I0"
+          },
+          "reason": {
+            "en": "That ignores the second field contribution.",
+            "hi": "इसमें दूसरा क्षेत्र छूटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Zero is the equal-amplitude minimum.",
+            "hi": "शून्य समान आयाम का न्यूनतम है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In Young experiment, β is proportional to",
+        "hi": "यंग प्रयोग में β किसके अनुपाती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "λD/d",
+            "hi": "λD/d"
+          },
+          "reason": {
+            "en": "This is the small-angle fringe-width relation.",
+            "hi": "यह छोटे कोण का फ्रिंज चौड़ाई संबंध।"
+          }
+        },
+        {
+          "text": {
+            "en": "d/(λD)",
+            "hi": "d/(λD)"
+          },
+          "reason": {
+            "en": "This is the reciprocal and has wrong dimension for length.",
+            "hi": "यह व्युत्क्रम है,लंबाई का मात्रक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "dD/λ",
+            "hi": "dD/λ"
+          },
+          "reason": {
+            "en": "Slit separation has the wrong dependence.",
+            "hi": "झिरी दूरी की निर्भरता गलत।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only source brightness",
+            "hi": "केवल स्रोत चमक"
+          },
+          "reason": {
+            "en": "Brightness changes intensity rather than spacing.",
+            "hi": "चमक तीव्रता बदलती है,दूरी नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The spacing from a bright fringe to its nearest dark fringe is",
+        "hi": "उजली फ्रिंज से निकटतम अँधेरी फ्रिंज की दूरी है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "β/2",
+            "hi": "β/2"
+          },
+          "reason": {
+            "en": "Maxima and minima alternate halfway.",
+            "hi": "अधिकतम और न्यूनतम बीच में क्रम से हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "β",
+            "hi": "β"
+          },
+          "reason": {
+            "en": "β is adjacent bright-to-bright or dark-to-dark spacing.",
+            "hi": "β आसन्न उजली-उजली या अँधेरी-अँधेरी दूरी।"
+          }
+        },
+        {
+          "text": {
+            "en": "2β",
+            "hi": "2β"
+          },
+          "reason": {
+            "en": "This skips multiple fringes.",
+            "hi": "इसमें कई फ्रिंज छूटती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always0",
+            "hi": "हमेशा0"
+          },
+          "reason": {
+            "en": "Distinct maxima and minima occur at different points.",
+            "hi": "अलग अधिकतम-न्यूनतम अलग बिंदुओं पर।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If slit separation doubles at fixed λ,D, fringe width",
+        "hi": "स्थिर λ,D पर झिरी दूरी दुगुनी हो तो फ्रिंज चौड़ाई"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Halves",
+            "hi": "आधी"
+          },
+          "reason": {
+            "en": "β is inversely proportional to d.",
+            "hi": "β,d के व्युत्क्रमानुपाती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Doubles",
+            "hi": "दुगुनी"
+          },
+          "reason": {
+            "en": "That would follow increasing D or λ.",
+            "hi": "ऐसा D या λ बढ़ाने से होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Stays unchanged",
+            "hi": "नहीं बदलती"
+          },
+          "reason": {
+            "en": "d appears in the denominator.",
+            "hi": "d हर में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Becomes zero exactly",
+            "hi": "ठीक शून्य"
+          },
+          "reason": {
+            "en": "A finite doubled d gives finite half-width.",
+            "hi": "परिमित दुगुना d परिमित आधी चौड़ाई देता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Narrowing a single slit at fixed wavelength makes its diffraction spread",
+        "hi": "स्थिर तरंगदैर्घ्य पर एकल झिरी सँकरी करने से विवर्तन फैलाव"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Larger",
+            "hi": "अधिक"
+          },
+          "reason": {
+            "en": "The characteristic angle scales withλ/a.",
+            "hi": "विशिष्ट कोणλ/a के अनुसार।"
+          }
+        },
+        {
+          "text": {
+            "en": "Smaller",
+            "hi": "कम"
+          },
+          "reason": {
+            "en": "That reverses the aperture dependence.",
+            "hi": "यह द्वारक निर्भरता उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged necessarily",
+            "hi": "अनिवार्य अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Aperture width matters.",
+            "hi": "द्वारक चौड़ाई महत्वपूर्ण।"
+          }
+        },
+        {
+          "text": {
+            "en": "Disappear always",
+            "hi": "हमेशा गायब"
+          },
+          "reason": {
+            "en": "Narrowing generally makes diffraction more evident.",
+            "hi": "सँकरा करने से विवर्तन सामान्यतः अधिक स्पष्ट।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "UP Board supplement: an analyser at90° to already linearly polarised light transmits ideally",
+        "hi": "यूपी बोर्ड पूरक:पहले से रैखिक ध्रुवित प्रकाश से90° विश्लेषक आदर्शतः पार करता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Malus law gives cos²90°=0.",
+            "hi": "मैलेस नियम मेंcos²90°=0।"
+          }
+        },
+        {
+          "text": {
+            "en": "All of it",
+            "hi": "पूरा"
+          },
+          "reason": {
+            "en": "Full transmission occurs for parallel axes.",
+            "hi": "समानांतर अक्ष पर पूरा पारगमन।"
+          }
+        },
+        {
+          "text": {
+            "en": "Half of it",
+            "hi": "आधा"
+          },
+          "reason": {
+            "en": "Half is the ideal first-polariser average for unpolarised input.",
+            "hi": "आधा अध्रुवित निवेश के पहले आदर्श ध्रुवक का औसत।"
+          }
+        },
+        {
+          "text": {
+            "en": "Twice it",
+            "hi": "दुगुना"
+          },
+          "reason": {
+            "en": "A passive analyser does not amplify intensity.",
+            "hi": "निष्क्रिय विश्लेषक तीव्रता प्रवर्धित नहीं करता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Polarisation demonstrates that light is",
+        "hi": "ध्रुवण दिखाता है कि प्रकाश है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Transverse",
+            "hi": "अनुप्रस्थ"
+          },
+          "reason": {
+            "en": "The field oscillation has selectable transverse directions.",
+            "hi": "क्षेत्र दोलन की अनुप्रस्थ दिशाएँ चुनी जा सकती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Necessarily longitudinal",
+            "hi": "अनिवार्य अनुदैर्ध्य"
+          },
+          "reason": {
+            "en": "Longitudinal oscillations do not have this transverse freedom.",
+            "hi": "अनुदैर्ध्य दोलन में यह अनुप्रस्थ स्वतंत्रता नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A sound wave",
+            "hi": "ध्वनि तरंग"
+          },
+          "reason": {
+            "en": "Light is electromagnetic.",
+            "hi": "प्रकाश विद्युतचुंबकीय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only static electricity",
+            "hi": "केवल स्थिर विद्युत"
+          },
+          "reason": {
+            "en": "Polarisation here concerns a propagating light wave.",
+            "hi": "यहाँ ध्रुवण संचरित प्रकाश तरंग का है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State Huygens principle.",
+        "hi": "हाइगेंस सिद्धांत लिखें।"
+      },
+      "answer": {
+        "en": "Each wavefront point contributes secondary wavelets; their forward envelope determines the later wavefront.",
+        "hi": "हर तरंगाग्र बिंदु द्वितीयक तरंगिकाओं का योगदान देता है; उनका अग्र बाह्य स्पर्श पृष्ठ बाद का तरंगाग्र देता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why do two ordinary independent bulbs not give stable interference?",
+        "hi": "2 साधारण स्वतंत्र बल्ब स्थिर व्यतिकरण क्यों नहीं देते?"
+      },
+      "answer": {
+        "en": "Their relative phase fluctuates rapidly, so the cross term averages out.",
+        "hi": "उनकी सापेक्ष कला तेजी से बदलती है,इसलिए मिश्र पद औसत में समाप्त होता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Derive the small-angle bright-fringe positions from path difference.",
+        "hi": "पथांतर से छोटे कोण की उजली फ्रिंज स्थितियाँ निकालें।"
+      },
+      "answer": {
+        "en": "With Δ≈dy/D=nλ, yn=nλD/d and β=λD/d.",
+        "hi": "Δ≈dy/D=nλ से yn=nλD/d तथा β=λD/d।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find β for λ=600 nm,D=1 m,d=0.5 mm.",
+        "hi": "λ=600 nm,D=1 m,d=0.5 mm पर β निकालें।"
+      },
+      "answer": {
+        "en": "β=(6×10^-7)/(5×10^-4)=1.2×10^-3 m=1.2 mm.",
+        "hi": "β=(6×10^-7)/(5×10^-4)=1.2×10^-3 m=1.2 mm।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish interference and single-slit diffraction.",
+        "hi": "व्यतिकरण और एकल झिरी विवर्तन में भेद करें।"
+      },
+      "answer": {
+        "en": "Interference compares contributions from separate coherent sources; single-slit diffraction combines contributions across one finite aperture. Both use superposition.",
+        "hi": "व्यतिकरण अलग कलासंबद्ध स्रोतों के योगदान जोड़ता है;एकल झिरी विवर्तन1 सीमित द्वारक के भागों के योगदान जोड़ता है।दोनों में अध्यारोपण है।"
+      }
+    },
+    {
+      "question": {
+        "en": "UP Board supplement: state Malus law and identify its incident intensity.",
+        "hi": "यूपी बोर्ड पूरक:मैलेस नियम लिखकर आपतित तीव्रता पहचानें।"
+      },
+      "answer": {
+        "en": "I=Ipcos²θ; Ip is the linearly polarised intensity reaching the analyser, after any first polariser.",
+        "hi": "I=Ipcos²θ;Ip विश्लेषक तक पहुँचती रैखिक ध्रुवित तीव्रता है,पहले ध्रुवक के बाद की।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Wavefronts contain equal-phase points.",
+      "hi": "तरंगाग्र समान कला वाले बिंदु हैं।"
+    },
+    {
+      "en": "Stable interference needs coherent sources.",
+      "hi": "स्थिर व्यतिकरण हेतु कलासंबद्ध स्रोत चाहिए।"
+    },
+    {
+      "en": "Young fringe width is approximatelyλD/d.",
+      "hi": "यंग फ्रिंज चौड़ाई लगभगλD/d है।"
+    },
+    {
+      "en": "A narrower slit gives greater diffraction spread.",
+      "hi": "सँकरी झिरी अधिक विवर्तन फैलाव देती है।"
+    },
+    {
+      "en": "UP Board supplement: Malus law uses polarised incident intensity.",
+      "hi": "यूपी बोर्ड पूरक:मैलेस नियम में ध्रुवित आपतित तीव्रता लें।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not equate amplitude and intensity, confuse slit width with slit separation, or apply Malus law to the original unpolarised intensity without the first-polariser factor.",
+    "hi": "आयाम और तीव्रता समान न मानें,झिरी चौड़ाई को झिरी दूरी न समझें और पहले ध्रुवक का गुणक बिना मूल अध्रुवित तीव्रता पर मैलेस नियम न लगाएँ।"
+  },
+  "goal": {
+    "en": "Explain wavefronts, interference, diffraction and the UP Board polarisation supplement.",
+    "hi": "तरंगाग्र,व्यतिकरण,विवर्तन और यूपी बोर्ड ध्रुवण पूरक समझें।"
+  },
+  "conceptMap": "तरंगाग्र → हाइगेंस → कलासंबद्धता → कला/पथ → फ्रिंज → विवर्तन → ध्रुवण",
+  "conceptMapEn": "Wavefront → Huygens → coherence → phase/path → fringes → diffraction → polarisation",
+  "editionBasis": {
+    "en": "Original study explanations for current NCERT Physics XII and UP Board 2026–27. Use the prescribed text and practical work too. UP Board-specific topics are identified where scope differs.",
+    "hi": "वर्तमान NCERT भौतिकी कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और प्रयोग भी साथ पढ़ें। जहाँ दायरा अलग है, यूपी बोर्ड के अतिरिक्त विषय पहचाने गए हैं।"
+  },
+  "sources": [
+    {
+      "title": "UPMSP Physics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Physics XII Chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/leph202.pdf"
+    }
+  ]
+}

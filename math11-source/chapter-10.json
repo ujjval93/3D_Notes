@@ -1,0 +1,888 @@
+{
+  "id": 10,
+  "title": {
+    "en": "Conic Sections",
+    "hi": "शंकु परिच्छेद"
+  },
+  "goal": {
+    "en": "Build conic equations from distance definitions, axes and focal measurements.",
+    "hi": "दूरी परिभाषा, अक्ष और नाभि माप से शंकु परिच्छेद समीकरण बनाएँ।"
+  },
+  "engine": "eleven-math",
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Conic sections and the cutting plane",
+        "hi": "शंकु परिच्छेद और काटने वाला तल"
+      },
+      "body": {
+        "en": "A double cone cut by a plane produces conic sections. Depending on orientation the nondegenerate curves are a circle, ellipse, parabola or hyperbola. A plane through the vertex can produce degenerate cases such as a point, line or intersecting lines. Coordinate equations describe the same geometric objects precisely. Identify the axis and centre or vertex before choosing a standard form. Changing a sign can change an ellipse into a hyperbola. A sketch is useful, but equal-looking shapes on a distorted axis scale may not preserve circularity.",
+        "hi": "शंकु परिच्छेद (Conic section) किसी द्विशंकु को तल से काटने पर बनने वाली वक्र है। तल की दिशा और स्थिति के अनुसार वृत्त, दीर्घवृत्त, परवलय या अतिपरवलय मिल सकता है। शीर्ष से गुजरने वाले कुछ तल बिंदु, सरल रेखा या प्रतिच्छेदी रेखाओं जैसे अपभ्रष्ट रूप भी देते हैं। इस अध्याय में मुख्य ध्यान गैरअपभ्रष्ट मानक रूपों पर है। समीकरण और ज्यामितीय परिभाषा को साथ पढ़ें। पहले केंद्र या शीर्ष, फिर अक्ष और खुलने की दिशा पहचानें। केवल नाम याद करने से समीकरण के चिह्न की गलती नहीं पकड़ेगी। दीर्घवृत्त के दोनों वर्ग पदों के बीच जोड़ है, जबकि मानक अतिपरवलय में घटाव है। चित्र बनाते समय अक्षों का पैमाना समान रखें, नहीं तो वृत्त भी दीर्घवृत्त जैसा दिख सकता है। किसी समीकरण के प्रत्येक बिंदु को वक्र की दूरी वाली परिभाषा संतुष्ट करनी चाहिए। यही परिभाषा सूत्रों को अर्थ देती है और नए बिंदु की जाँच में काम आती है।"
+      },
+      "formula": "Circle, ellipse, parabola, hyperbola",
+      "question": {
+        "en": "Can a cone section degenerate to a point?",
+        "hi": "क्या शंकु परिच्छेद बिंदु बन सकता है?"
+      },
+      "answer": {
+        "en": "Yes, for an appropriate plane through the vertex.",
+        "hi": "हाँ, शीर्ष से उचित तल गुजरने पर।"
+      }
+    },
+    {
+      "title": {
+        "en": "Circle: centre and radius",
+        "hi": "वृत्त: केंद्र और त्रिज्या"
+      },
+      "body": {
+        "en": "A circle is the locus of points at a fixed positive distance r from a fixed centre (h,k). Squaring the distance equation gives (x−h)²+(y−k)²=r². The squared right side is important: a radius 3 gives 9. Expanding gives a general quadratic with equal x² and y² coefficients and no xy term. Completing squares recovers the centre and radius. A negative radius-square gives no real circle, and zero gives a single point. The intercepts need not be the radius when the centre is displaced from the origin.",
+        "hi": "वृत्त (Circle) उन बिंदुओं का बिंदुपथ है जिनकी किसी निश्चित केंद्र (h,k) से दूरी स्थिर धनात्मक r है। दूरी सूत्र का वर्ग करने से (x−h)²+(y−k)²=r² मिलता है। दाहिने पक्ष में त्रिज्या का वर्ग है, त्रिज्या स्वयं नहीं। केंद्र (2,−1) हो तो समीकरण में (x−2)² और (y+1)² आएँगे। चिह्न पढ़ते समय कोष्ठक को ध्यान दें। सामान्य रूप x²+y²+Dx+Ey+F=0 में पूर्ण वर्ग बनाकर केंद्र और r² निकालते हैं। यदि r²<0 हो तो वास्तविक वृत्त नहीं है; r²=0 पर केवल केंद्र बिंदु है। मूलबिंदु पर केंद्र न होने से अक्ष काट सामान्यतः त्रिज्या के बराबर नहीं होते। किसी बिंदु को वृत्त पर जाँचने के लिए केंद्र से दूरी r के बराबर देखें। अंदर के बिंदु में दूरी छोटी और बाहर के बिंदु में बड़ी होगी। चित्र में केंद्र, त्रिज्या और कोई एक प्रमाणित बिंदु अंकित करना उपयोगी है।"
+      },
+      "formula": "(x−h)²+(y−k)²=r²",
+      "question": {
+        "en": "Find centre and radius of (x−2)²+(y+3)²=16.",
+        "hi": "(x−2)²+(y+3)²=16 का केंद्र और त्रिज्या।"
+      },
+      "answer": {
+        "en": "Centre (2,−3), radius 4.",
+        "hi": "केंद्र (2,−3), त्रिज्या 4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Parabola as an equal-distance locus",
+        "hi": "समान दूरी का बिंदुपथ: परवलय"
+      },
+      "body": {
+        "en": "A parabola consists of points equidistant from a focus and a directrix. For focus (a,0), directrix x=−a and a>0, squaring the two distances yields y²=4ax. The vertex is the origin and the axis is the x-axis. The focus lies inside the opening. The latus rectum passes through the focus perpendicular to the axis and has length 4a. Replacing x by −x reverses the opening, while interchanging x and y makes the axis vertical. The parameter a is the vertex-to-focus distance, not the focus-to-directrix distance, which is 2a.",
+        "hi": "परवलय (Parabola) में प्रत्येक बिंदु की एक निश्चित नाभि (Focus) और निश्चित नियता (Directrix) से दूरी बराबर होती है। नाभि (a,0), नियता x=−a तथा a>0 हों, तो दूरी के वर्ग बराबर रखने से y²=4ax मिलता है। शीर्ष मूलबिंदु और अक्ष x-अक्ष है। वक्र धनात्मक x दिशा में खुलता है। a शीर्ष से नाभि की दूरी है; नाभि से नियता की दूरी 2a होगी। नाभिलंब (Latus rectum) नाभि से गुजरने वाली अक्ष पर लंबवत जीवा है। इसकी लंबाई 4a है। y²=−4ax में वक्र बाएँ खुलता है। x²=4ay में ऊपर और x²=−4ay में नीचे खुलता है। किस निर्देशांक का वर्ग है, इससे अक्ष पहचानें: y का वर्ग हो तो अक्ष x दिशा में है। उदाहरण y²=12x में 4a=12, इसलिए a=3 है; a को 12 मानना गलत होगा। चित्र में शीर्ष, नाभि और नियता साथ अंकित करें।"
+      },
+      "formula": "y²=4ax; focus (a,0); directrix x=−a; LR=4a",
+      "question": {
+        "en": "For y²=8x find the focus.",
+        "hi": "y²=8x की नाभि क्या है?"
+      },
+      "answer": {
+        "en": "4a=8 gives a=2; focus (2,0).",
+        "hi": "4a=8 से a=2; नाभि (2,0)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Ellipse and its foci",
+        "hi": "दीर्घवृत्त और उसकी नाभियाँ"
+      },
+      "body": {
+        "en": "An ellipse is the locus for which the sum of distances from two foci is constant, 2a. For a horizontal major axis its equation is x²/a²+y²/b²=1 with a>b>0. Its foci are (±c,0), where c²=a²−b². The major and minor axis lengths are 2a and 2b. Eccentricity e=c/a lies between 0 and 1. A circle is the limiting equal-axis case c=0. The larger denominator identifies the major-axis direction; if it is under y², the foci are on the y-axis. An interior point does not have the same focal-distance sum as a boundary point.",
+        "hi": "दीर्घवृत्त (Ellipse) उन बिंदुओं का बिंदुपथ है जिनकी 2 नाभियों से दूरियों का योग स्थिर 2a है। क्षैतिज दीर्घ अक्ष वाले मानक रूप में x²/a²+y²/b²=1 और a>b>0 होते हैं। नाभियाँ (±c,0), जहाँ c²=a²−b² है। दीर्घ अक्ष की पूरी लंबाई 2a तथा लघु अक्ष की 2b होती है; हर में दिए a² और b² लंबाइयाँ नहीं हैं। उत्केंद्रता (Eccentricity) e=c/a है और 0<e<1 होता है। बराबर अर्धअक्षों के विशेष वृत्त में c=0 मिलता है। बड़ा हर जिस निर्देशांक के नीचे है, दीर्घ अक्ष उसी दिशा में होगा। यदि बड़ा हर y² के नीचे हो तो नाभियाँ y-अक्ष पर हैं। उदाहरण x²/25+y²/9=1 में a=5,b=3,c=4 है। चित्र पर शीर्ष और सहशीर्ष अंकित करें। किसी बिंदु को जाँचते समय केवल चित्र से अंदर-बाहर न तय करें; समीकरण में रखकर मान 1 से तुलना करें।"
+      },
+      "formula": "x²/a²+y²/b²=1; c²=a²−b²; e=c/a",
+      "question": {
+        "en": "Find c for a=5,b=3.",
+        "hi": "a=5,b=3 में c ज्ञात करें।"
+      },
+      "answer": {
+        "en": "c=√(25−9)=4.",
+        "hi": "c=√(25−9)=4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Ellipse measurements",
+        "hi": "दीर्घवृत्त के माप"
+      },
+      "body": {
+        "en": "For x²/a²+y²/b²=1 with a>b, the vertices are (±a,0) and co-vertices are (0,±b). The latus rectum is parallel to the minor axis and passes through a focus. Putting x=c in the equation gives y=±b²/a, so its full length is 2b²/a. This derivation distinguishes a semi-length from a full chord. The focal-distance sum is 2a everywhere on the curve. The major-axis endpoints give one distance a−c and another a+c, confirming the sum. Use the correct orientation when the larger denominator lies beneath y²; switch the coordinate roles rather than changing the geometry.",
+        "hi": "क्षैतिज दीर्घवृत्त x²/a²+y²/b²=1 में शीर्ष (±a,0) और सहशीर्ष (0,±b) हैं। नाभिलंब लघु अक्ष के समांतर तथा नाभि से गुजरता है। x=c रखने पर y=±b²/a मिलता है। इसलिए नाभिलंब की पूरी लंबाई 2b²/a है, केवल b²/a नहीं। पूरा और आधा माप अलग लिखने से त्रुटि बचती है। दीर्घवृत्त के किसी भी बिंदु पर नाभियों से दूरी का योग 2a होता है। शीर्ष (a,0) पर दूरियाँ a−c और a+c हैं, जो जोड़कर 2a देती हैं। यह परिभाषा की आसान जाँच है। यदि दीर्घ अक्ष ऊर्ध्वाधर हो, तो निर्देशांकों की भूमिकाएँ बदलें; नाभिलंब तब क्षैतिज होगा। मापों में a>b>0 की परंपरा बनाए रखें। बड़े हर को a² नाम दें, चाहे वह x² के नीचे हो या y² के नीचे। इससे c² तथा उत्केंद्रता के सूत्र एक जैसे रहते हैं और चित्र की दिशा अलग से स्पष्ट होती है।"
+      },
+      "formula": "Ellipse latus rectum=2b²/a",
+      "question": {
+        "en": "For x²/25+y²/9=1 find latus rectum length.",
+        "hi": "x²/25+y²/9=1 का नाभिलंब।"
+      },
+      "answer": {
+        "en": "2×9/5=18/5.",
+        "hi": "2×9/5=18/5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Hyperbola and its transverse axis",
+        "hi": "अतिपरवलय और अनुप्रस्थ अक्ष"
+      },
+      "body": {
+        "en": "A hyperbola has a constant absolute difference, 2a, between distances from two foci. For x²/a²−y²/b²=1 the transverse axis is horizontal, vertices are (±a,0), and foci are (±c,0), with c²=a²+b². Eccentricity is c/a>1. The positive squared term identifies the transverse direction. The conjugate-axis endpoints are not points on the hyperbola. Its latus rectum length is 2b²/a, although the focal relation differs from the ellipse. A hyperbola has two branches, and the absolute value in the distance definition includes both. Do not interchange the plus and minus relations for c².",
+        "hi": "अतिपरवलय (Hyperbola) में 2 नाभियों से दूरियों के अंतर का निरपेक्ष मान स्थिर 2a होता है। क्षैतिज अनुप्रस्थ अक्ष के लिए x²/a²−y²/b²=1 है। शीर्ष (±a,0), नाभियाँ (±c,0) और c²=a²+b² होते हैं। उत्केंद्रता e=c/a>1 होगी। धनात्मक वर्ग पद जिस निर्देशांक का है, अनुप्रस्थ अक्ष उसी दिशा में है। y²/a²−x²/b²=1 ऊर्ध्वाधर रूप है। संयुग्मी अक्ष के सिरे (0,±b) क्षैतिज रूप की वक्र पर नहीं होते; b फिर भी आकार का आवश्यक माप है। अतिपरवलय की 2 शाखाएँ होती हैं। परिभाषा में निरपेक्ष मान दोनों को शामिल करता है। नाभिलंब की लंबाई 2b²/a है, लेकिन नाभि संबंध दीर्घवृत्त से अलग है। दीर्घवृत्त में c²=a²−b² और यहाँ c²=a²+b² है। तुलना की सारणी बनाकर यह अंतर याद करें। चित्र में शीर्षों के बीच का खाली भाग वक्र का हिस्सा न दिखाएँ।"
+      },
+      "formula": "x²/a²−y²/b²=1; c²=a²+b²; e=c/a>1",
+      "question": {
+        "en": "For x²/9−y²/16=1 find foci.",
+        "hi": "x²/9−y²/16=1 की नाभियाँ।"
+      },
+      "answer": {
+        "en": "c=5; foci (±5,0).",
+        "hi": "c=5; नाभियाँ (±5,0)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Choosing and checking a standard form",
+        "hi": "मानक रूप चुनना और जाँचना"
+      },
+      "body": {
+        "en": "Read the geometric data before substituting. A circle needs centre and radius; a standard parabola needs vertex, axis direction and focus distance; an ellipse needs axis lengths or equivalent focal information; a hyperbola needs its transverse direction and two parameters. A length 10 for an axis means the semiaxis is 5. Start a diagram with axes, mark the known points and use the locus definition as a final check. A standard equation can be multiplied by a nonzero constant without changing the curve, so divide to make the right side 1 when appropriate. Do not assume the origin is the centre unless the problem states the standard position.",
+        "hi": "वक्र का समीकरण बनाने से पहले जानकारी का प्रकार पहचानें। वृत्त में केंद्र और त्रिज्या पर्याप्त हैं। मानक परवलय में शीर्ष, अक्ष की दिशा और नाभि दूरी चाहिए। दीर्घवृत्त में अक्षों के माप या उनके समतुल्य नाभि आँकड़े चाहिए। अतिपरवलय में अनुप्रस्थ दिशा और 2 माप आवश्यक हैं। पूरी अक्ष लंबाई 10 हो तो अर्धअक्ष 5 है; सीधे हर में 10² रखने से आकार दोगुना हो जाएगा। पहले छोटा चित्र बनाकर ज्ञात बिंदु अंकित करें। समीकरण को अशून्य स्थिरांक से गुणा करने पर वक्र नहीं बदलती, इसलिए आवश्यक हो तो दाहिना पक्ष 1 बनाएँ। किसी भी मनमाने शंकु परिच्छेद में मूलबिंदु को केंद्र या शीर्ष न मानें; प्रश्न की स्थिति पढ़ें। अंतिम समीकरण में कोई दिया शीर्ष या नाभिलंब का सिरा रखकर जाँचें। नाभि सामान्यतः वक्र पर नहीं होती। जाँच के लिए वक्र पर निश्चित बिंदु चुनना जरूरी है। इसके बाद दूरी वाली परिभाषा से उत्तर का अर्थ समझाएँ।"
+      },
+      "formula": "Axis length=2×semiaxis",
+      "question": {
+        "en": "An ellipse has major-axis length 12. What is a?",
+        "hi": "दीर्घ अक्ष की लंबाई 12 हो तो a?"
+      },
+      "answer": {
+        "en": "a=6.",
+        "hi": "a=6।"
+      }
+    },
+    {
+      "title": {
+        "en": "Comparing the four curves",
+        "hi": "चारों वक्रों की तुलना"
+      },
+      "body": {
+        "en": "The locus definitions organise the chapter more reliably than memorising isolated equations. A circle fixes one distance; an ellipse fixes a sum of two distances; a hyperbola fixes the absolute difference; a parabola equates distance to a point and a line. In standard origin-centred forms circles and ellipses are bounded, while parabolas and hyperbolas are unbounded. Their symmetry axes follow from squared coordinates. Replacing a coordinate by its negative leaves the equation unchanged whenever it appears only squared. Use these symmetries to generate points efficiently. A visual model should be treated as a plot of the exact equation, not evidence for a theorem based only on appearance. Compare x²/25+y²/9=1 with x²/25−y²/9=1. Both have horizontal vertices (±5,0), but the ellipse has c=4 and e=4/5, whereas the hyperbola has c=√34 and e=√34/5. A single sign changes the focal relation and turns a bounded oval into two unbounded branches. At x=0 the ellipse meets y=±3, while the hyperbola has no real y. Substitution thus distinguishes the curves even before plotting them.",
+        "hi": "चारों वक्रों को अलग सूत्रों की सूची की बजाय बिंदुपथ की परिभाषा से जोड़ें। वृत्त एक बिंदु से स्थिर दूरी रखता है। दीर्घवृत्त 2 दूरियों का स्थिर योग रखता है। अतिपरवलय उनके अंतर का स्थिर निरपेक्ष मान रखता है। परवलय एक बिंदु और एक रेखा से बराबर दूरी रखता है। मानक रूप में वृत्त तथा दीर्घवृत्त सीमित क्षेत्र में रहते हैं, जबकि परवलय तथा अतिपरवलय अनंत फैलते हैं। समीकरण में किसी निर्देशांक का केवल वर्ग आए तो उसका चिह्न बदलने से समीकरण नहीं बदलता। इससे सममिति (Symmetry) समझ आती है। जैसे y²=4ax में y और −y दोनों समान x पर संभव हैं, लेकिन x का चिह्न मनमाने ढंग से नहीं बदल सकते। वक्र खींचते समय सममिति से बिंदु बनाना तेज है। interactive चित्र में आकार बदलने पर भी सटीक दूरी संबंध जाँचें। देखने में सही आकृति किसी सूत्र के प्रमाण का विकल्प नहीं है। हर मॉडल के पैमाने और सीमित स्क्रीन की सीमा याद रखें। तुलना के लिए x²/25+y²/9=1 और x²/25−y²/9=1 साथ लिखें। दोनों में क्षैतिज शीर्ष (±5,0) हैं। लेकिन पहले में c=4 और e=4/5 है। दूसरे में c=√34 और e=√34/5 है। केवल एक चिह्न बदलने से नाभि संबंध बदलता है तथा सीमित अंडाकार वक्र 2 असीमित शाखाओं में बदल जाती है। x=0 रखने पर दीर्घवृत्त में y=±3 मिलता है, जबकि अतिपरवलय में कोई वास्तविक y नहीं मिलेगा। इस तरह चित्र बनाने से पहले भी प्रतिस्थापन वक्रों का अंतर दिखा देता है। समान हरों से समान आकृति मान लेना सही नहीं है; बीच का चिह्न भी उतना ही महत्वपूर्ण है।"
+      },
+      "formula": "Circle: fixed distance; ellipse: sum; hyperbola: difference; parabola: equality",
+      "question": {
+        "en": "Which locus fixes the absolute difference of two focal distances?",
+        "hi": "किसमें नाभि दूरियों के अंतर का निरपेक्ष मान स्थिर है?"
+      },
+      "answer": {
+        "en": "Hyperbola.",
+        "hi": "अतिपरवलय।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Write a circle with centre (2,−1), radius 3.",
+        "hi": "केंद्र (2,−1), त्रिज्या 3 का वृत्त।"
+      },
+      "steps": [
+        {
+          "en": "Use (x−h)²+(y−k)²=r².",
+          "hi": "(x−h)²+(y−k)²=r² लगाएँ।"
+        },
+        {
+          "en": "Put h=2,k=−1,r=3.",
+          "hi": "h=2,k=−1,r=3 रखें।"
+        },
+        {
+          "en": "Remember y−(−1)=y+1.",
+          "hi": "y−(−1)=y+1 याद रखें।"
+        }
+      ],
+      "answer": {
+        "en": "(x−2)²+(y+1)²=9",
+        "hi": "(x−2)²+(y+1)²=9"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find focus, directrix and latus rectum of y²=12x.",
+        "hi": "y²=12x की नाभि, नियता तथा नाभिलंब।"
+      },
+      "steps": [
+        {
+          "en": "Compare with y²=4ax: a=3.",
+          "hi": "y²=4ax से a=3।"
+        },
+        {
+          "en": "Focus=(a,0), directrix x=−a.",
+          "hi": "नाभि=(a,0), नियता x=−a।"
+        },
+        {
+          "en": "Latus rectum=4a=12.",
+          "hi": "नाभिलंब=4a=12।"
+        }
+      ],
+      "answer": {
+        "en": "Focus (3,0), x=−3, length 12.",
+        "hi": "नाभि (3,0), x=−3, लंबाई 12।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find foci and eccentricity of x²/25+y²/9=1.",
+        "hi": "x²/25+y²/9=1 की नाभियाँ और उत्केंद्रता।"
+      },
+      "steps": [
+        {
+          "en": "a=5,b=3; major axis is horizontal.",
+          "hi": "a=5,b=3; दीर्घ अक्ष क्षैतिज।"
+        },
+        {
+          "en": "c²=25−9=16, so c=4.",
+          "hi": "c²=25−9=16, इसलिए c=4।"
+        },
+        {
+          "en": "e=c/a=4/5.",
+          "hi": "e=c/a=4/5।"
+        }
+      ],
+      "answer": {
+        "en": "Foci (±4,0); e=4/5.",
+        "hi": "नाभियाँ (±4,0); e=4/5।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find vertices and foci of y²/9−x²/16=1.",
+        "hi": "y²/9−x²/16=1 के शीर्ष और नाभियाँ।"
+      },
+      "steps": [
+        {
+          "en": "The positive term is y²/9, so the transverse axis is vertical.",
+          "hi": "धनात्मक पद y²/9 है, इसलिए अनुप्रस्थ अक्ष ऊर्ध्वाधर।"
+        },
+        {
+          "en": "a=3,b=4,c=√(9+16)=5.",
+          "hi": "a=3,b=4,c=√(9+16)=5।"
+        },
+        {
+          "en": "Place vertices and foci on the y-axis.",
+          "hi": "शीर्ष और नाभियाँ y-अक्ष पर रखें।"
+        }
+      ],
+      "answer": {
+        "en": "Vertices (0,±3), foci (0,±5).",
+        "hi": "शीर्ष (0,±3), नाभियाँ (0,±5)।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find the ellipse with foci (±3,0) and major-axis length 10.",
+        "hi": "नाभियाँ (±3,0), दीर्घ अक्ष लंबाई 10 का दीर्घवृत्त।"
+      },
+      "steps": [
+        {
+          "en": "c=3, 2a=10 gives a=5.",
+          "hi": "c=3, 2a=10 से a=5।"
+        },
+        {
+          "en": "b²=a²−c²=25−9=16.",
+          "hi": "b²=a²−c²=25−9=16।"
+        },
+        {
+          "en": "Use a horizontal major-axis equation.",
+          "hi": "क्षैतिज दीर्घ अक्ष का समीकरण लगाएँ।"
+        },
+        {
+          "en": "At vertex (5,0), distances 2 and 8 sum to 10.",
+          "hi": "शीर्ष (5,0) पर दूरियाँ 2 तथा 8 जोड़कर 10 देती हैं।"
+        }
+      ],
+      "answer": {
+        "en": "x²/25+y²/16=1",
+        "hi": "x²/25+y²/16=1"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "The radius of x²+y²=49 is",
+        "hi": "x²+y²=49 की त्रिज्या"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "r²=49, so r=7.",
+            "hi": "r²=49, इसलिए r=7।"
+          }
+        },
+        {
+          "text": {
+            "en": "49",
+            "hi": "49"
+          },
+          "reason": {
+            "en": "This is r², not r.",
+            "hi": "यह r² है, r नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "14",
+            "hi": "14"
+          },
+          "reason": {
+            "en": "This is the diameter.",
+            "hi": "यह व्यास है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−7",
+            "hi": "−7"
+          },
+          "reason": {
+            "en": "A radius is positive.",
+            "hi": "त्रिज्या धनात्मक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Centre of (x+2)²+(y−3)²=4 is",
+        "hi": "(x+2)²+(y−3)²=4 का केंद्र"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(−2,3)",
+            "hi": "(−2,3)"
+          },
+          "reason": {
+            "en": "Read x−h and y−k.",
+            "hi": "x−h तथा y−k से पढ़ें।"
+          }
+        },
+        {
+          "text": {
+            "en": "(2,−3)",
+            "hi": "(2,−3)"
+          },
+          "reason": {
+            "en": "Both signs are reversed.",
+            "hi": "दोनों चिह्न उलटे हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "(2,3)",
+            "hi": "(2,3)"
+          },
+          "reason": {
+            "en": "The x-coordinate sign is wrong.",
+            "hi": "x निर्देशांक का चिह्न गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(0,0)",
+            "hi": "(0,0)"
+          },
+          "reason": {
+            "en": "The centre is displaced.",
+            "hi": "केंद्र विस्थापित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Focus of y²=20x is",
+        "hi": "y²=20x की नाभि"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(5,0)",
+            "hi": "(5,0)"
+          },
+          "reason": {
+            "en": "4a=20 implies a=5.",
+            "hi": "4a=20 से a=5।"
+          }
+        },
+        {
+          "text": {
+            "en": "(20,0)",
+            "hi": "(20,0)"
+          },
+          "reason": {
+            "en": "20 equals 4a, not a.",
+            "hi": "20, 4a है, a नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "(0,5)",
+            "hi": "(0,5)"
+          },
+          "reason": {
+            "en": "The axis is horizontal.",
+            "hi": "अक्ष क्षैतिज है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(−5,0)",
+            "hi": "(−5,0)"
+          },
+          "reason": {
+            "en": "The parabola opens right.",
+            "hi": "परवलय दाएँ खुलता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For an ellipse, c² equals",
+        "hi": "दीर्घवृत्त में c² बराबर"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "a²−b²",
+            "hi": "a²−b²"
+          },
+          "reason": {
+            "en": "Here a is the major semiaxis.",
+            "hi": "यहाँ a दीर्घ अर्धअक्ष है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a²+b²",
+            "hi": "a²+b²"
+          },
+          "reason": {
+            "en": "That is the hyperbola relation.",
+            "hi": "वह अतिपरवलय का संबंध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "b²−a²",
+            "hi": "b²−a²"
+          },
+          "reason": {
+            "en": "This would be negative for a>b.",
+            "hi": "a>b में यह ऋणात्मक होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "2ab",
+            "hi": "2ab"
+          },
+          "reason": {
+            "en": "This is not the focal relation.",
+            "hi": "यह नाभि संबंध नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Eccentricity of a noncircular ellipse is",
+        "hi": "गैरवृत्तीय दीर्घवृत्त की उत्केंद्रता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Between 0 and 1",
+            "hi": "0 और 1 के बीच"
+          },
+          "reason": {
+            "en": "c<a gives 0<e<1.",
+            "hi": "c<a से 0<e<1।"
+          }
+        },
+        {
+          "text": {
+            "en": "Greater than 1",
+            "hi": "1 से अधिक"
+          },
+          "reason": {
+            "en": "That describes a hyperbola.",
+            "hi": "वह अतिपरवलय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Exactly 1",
+            "hi": "ठीक 1"
+          },
+          "reason": {
+            "en": "That is the parabolic eccentricity.",
+            "hi": "वह परवलय की उत्केंद्रता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative",
+            "hi": "ऋणात्मक"
+          },
+          "reason": {
+            "en": "Eccentricity is nonnegative.",
+            "hi": "उत्केंद्रता गैरऋणात्मक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The transverse axis of y²/16−x²/9=1 is",
+        "hi": "y²/16−x²/9=1 का अनुप्रस्थ अक्ष"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "y-axis",
+            "hi": "y-अक्ष"
+          },
+          "reason": {
+            "en": "The positive squared term is y².",
+            "hi": "धनात्मक वर्ग पद y² है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x-axis",
+            "hi": "x-अक्ष"
+          },
+          "reason": {
+            "en": "The x² term is negative.",
+            "hi": "x² पद ऋणात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "y=x",
+            "hi": "y=x"
+          },
+          "reason": {
+            "en": "No xy rotation term is present.",
+            "hi": "कोई xy घूर्णन पद नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No axis",
+            "hi": "कोई अक्ष नहीं"
+          },
+          "reason": {
+            "en": "The standard hyperbola has an axis.",
+            "hi": "मानक अतिपरवलय का अक्ष होता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Parabola y²=4ax with a>0 has directrix",
+        "hi": "a>0 में y²=4ax की नियता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x=−a",
+            "hi": "x=−a"
+          },
+          "reason": {
+            "en": "The focus is (a,0) and vertex midway.",
+            "hi": "नाभि (a,0) और शीर्ष बीच में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=a",
+            "hi": "x=a"
+          },
+          "reason": {
+            "en": "This passes through the focus.",
+            "hi": "यह नाभि से गुजरती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "y=−a",
+            "hi": "y=−a"
+          },
+          "reason": {
+            "en": "This has the wrong orientation.",
+            "hi": "इसकी दिशा गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=0",
+            "hi": "x=0"
+          },
+          "reason": {
+            "en": "This is the tangent at the vertex, not the directrix.",
+            "hi": "यह शीर्ष पर स्पर्शरेखा है, नियता नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An ellipse with a=4,b=2 has latus rectum length",
+        "hi": "a=4,b=2 के दीर्घवृत्त का नाभिलंब"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "2b²/a=8/4=2.",
+            "hi": "2b²/a=8/4=2।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "This is the half-length b²/a.",
+            "hi": "यह आधी लंबाई b²/a है।"
+          }
+        },
+        {
+          "text": {
+            "en": "8",
+            "hi": "8"
+          },
+          "reason": {
+            "en": "This is the major-axis length.",
+            "hi": "यह दीर्घ अक्ष की लंबाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "This is the minor-axis length.",
+            "hi": "यह लघु अक्ष की लंबाई है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which fixes the sum of focal distances?",
+        "hi": "नाभि दूरियों का योग किसमें स्थिर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Ellipse",
+            "hi": "दीर्घवृत्त"
+          },
+          "reason": {
+            "en": "The sum is 2a.",
+            "hi": "योग 2a है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Hyperbola",
+            "hi": "अतिपरवलय"
+          },
+          "reason": {
+            "en": "It fixes absolute difference.",
+            "hi": "इसमें अंतर का निरपेक्ष मान स्थिर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Straight line",
+            "hi": "सरल रेखा"
+          },
+          "reason": {
+            "en": "This is not its general locus definition.",
+            "hi": "यह उसकी सामान्य परिभाषा नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Parabola",
+            "hi": "परवलय"
+          },
+          "reason": {
+            "en": "It uses one focus and a directrix.",
+            "hi": "इसमें एक नाभि और नियता होती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For x²/9−y²/16=1 the focal distance c is",
+        "hi": "x²/9−y²/16=1 में c"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "c²=9+16=25.",
+            "hi": "c²=9+16=25।"
+          }
+        },
+        {
+          "text": {
+            "en": "√7",
+            "hi": "√7"
+          },
+          "reason": {
+            "en": "This incorrectly subtracts.",
+            "hi": "इसमें गलत घटाव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "This is a.",
+            "hi": "यह a है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "This is b.",
+            "hi": "यह b है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State the locus definition of a parabola.",
+        "hi": "परवलय की बिंदुपथ परिभाषा।"
+      },
+      "answer": {
+        "en": "Points equidistant from a fixed focus and directrix, the focus not on the directrix.",
+        "hi": "निश्चित नाभि और नियता से समान दूरी वाले बिंदु; नाभि नियता पर नहीं है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the radius of x²+y²−4x+6y−12=0.",
+        "hi": "x²+y²−4x+6y−12=0 की त्रिज्या।"
+      },
+      "answer": {
+        "en": "Complete squares: (x−2)²+(y+3)²=25, so r=5.",
+        "hi": "पूर्ण वर्ग: (x−2)²+(y+3)²=25, इसलिए r=5।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the latus rectum of x²=16y.",
+        "hi": "x²=16y का नाभिलंब।"
+      },
+      "answer": {
+        "en": "4a=16 gives length 16.",
+        "hi": "4a=16 से लंबाई 16।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find eccentricity for a=5,b=4 in an ellipse.",
+        "hi": "दीर्घवृत्त में a=5,b=4 की उत्केंद्रता।"
+      },
+      "answer": {
+        "en": "c=√(25−16)=3, e=3/5.",
+        "hi": "c=√(25−16)=3, e=3/5।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find vertices of x²/4−y²/5=1.",
+        "hi": "x²/4−y²/5=1 के शीर्ष।"
+      },
+      "answer": {
+        "en": "(±2,0), because a=2 and transverse axis is horizontal.",
+        "hi": "(±2,0), क्योंकि a=2 और अनुप्रस्थ अक्ष क्षैतिज है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare ellipse and hyperbola focal relations.",
+        "hi": "दीर्घवृत्त तथा अतिपरवलय के नाभि संबंध तुलना।"
+      },
+      "answer": {
+        "en": "Ellipse: c²=a²−b², e<1; hyperbola: c²=a²+b², e>1.",
+        "hi": "दीर्घवृत्त: c²=a²−b², e<1; अतिपरवलय: c²=a²+b², e>1।"
+      }
+    }
+  ],
+  "revision": [
+    {
+      "en": "Circle fixes distance to its centre.",
+      "hi": "वृत्त में केंद्र से दूरी स्थिर है।"
+    },
+    {
+      "en": "Parabola equates focus and directrix distances.",
+      "hi": "परवलय में नाभि और नियता दूरियाँ बराबर हैं।"
+    },
+    {
+      "en": "Ellipse fixes the focal-distance sum.",
+      "hi": "दीर्घवृत्त में नाभि दूरी योग स्थिर है।"
+    },
+    {
+      "en": "Hyperbola fixes absolute focal-distance difference.",
+      "hi": "अतिपरवलय में नाभि दूरी अंतर का निरपेक्ष मान स्थिर है।"
+    },
+    {
+      "en": "Distinguish full axes from semiaxes.",
+      "hi": "पूरे अक्ष और अर्धअक्ष अलग रखें।"
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not confuse r with r², a with 2a, or the ellipse and hyperbola formulas for c². Read the axis direction before locating foci.",
+    "hi": "r और r², a और 2a तथा दीर्घवृत्त-अतिपरवलय के c² सूत्र न मिलाएँ। नाभियाँ रखने से पहले अक्ष की दिशा पढ़ें।"
+  },
+  "conceptMap": {
+    "en": "Double cone → locus definitions → standard equations → axes / foci / eccentricity → verification.",
+    "hi": "द्विशंकु → बिंदुपथ परिभाषा → मानक समीकरण → अक्ष / नाभि / उत्केंद्रता → जाँच।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics, Class XI",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh110.pdf"
+    }
+  ]
+}

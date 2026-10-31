@@ -1,0 +1,1133 @@
+{
+  "number": 2,
+  "id": "chemistry12-02",
+  "title": {
+    "en": "Electrochemistry",
+    "hi": "वैद्युतरसायन"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Redox cells and electrode roles",
+        "hi": "रेडॉक्स सेल और इलेक्ट्रोड की भूमिका"
+      },
+      "paragraphs": [
+        {
+          "en": "Electrochemistry links electron-transfer reactions with electrical energy. In a galvanic cell a spontaneous chemical reaction supplies electrical energy; an electrolytic cell uses external electrical energy to drive a non-spontaneous transformation under the imposed conditions. Oxidation always occurs at the anode and reduction always at the cathode. Their signs are not universal: the galvanic anode is negative, while an externally driven electrolytic anode is positive. In a Daniell cell zinc is oxidised and copper ions are reduced. Electrons pass through the external metallic circuit from zinc to copper; ions, not free electrons through bulk solution, carry current in the electrolytes. Separating half-reactions allows useful electrical work before the species mix directly.",
+          "hi": "वैद्युतरसायन (Electrochemistry) इलेक्ट्रॉन अंतरण अभिक्रियाओं और विद्युत ऊर्जा के संबंध का अध्ययन है। गैल्वैनी सेल (Galvanic cell) में स्वतः प्रवर्तित रासायनिक अभिक्रिया विद्युत ऊर्जा उपलब्ध कराती है। विद्युतअपघटनी सेल (Electrolytic cell) में बाहरी स्रोत ऐसी अभिक्रिया चलाता है जो लागू परिस्थितियों में अपने आप उस दिशा में नहीं चलती। ऐनोड (Anode) पर हमेशा ऑक्सीकरण और कैथोड (Cathode) पर हमेशा अपचयन होता है। इलेक्ट्रोड का चिह्न याद करते समय सेल का प्रकार भी लिखें। गैल्वैनी सेल में ऐनोड ऋणात्मक और कैथोड धनात्मक है; विद्युतअपघटनी सेल में बाहरी स्रोत के कारण सामान्यतः ऐनोड धनात्मक होता है। डेनियल सेल में Zn से Zn2+ और इलेक्ट्रॉन बनते हैं, जबकि Cu2+ इलेक्ट्रॉन लेकर Cu बनता है। धात्विक बाहरी तार में इलेक्ट्रॉन जिंक से कॉपर की ओर जाते हैं। विलयन के भीतर विद्युत धारा आयनों के संचरण से चलती है; इसे पूरे द्रव में मुक्त इलेक्ट्रॉनों का प्रवाह न समझें। अर्धअभिक्रियाओं को अलग रखने से सीधे मिश्रण की जगह बाहरी परिपथ में कार्य प्राप्त कर सकते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Oxidation at anode and reduction at cathode hold for both cell types.",
+          "hi": "दोनों प्रकार के सेल में ऐनोड पर ऑक्सीकरण और कैथोड पर अपचयन का नियम स्थिर रहता है।"
+        },
+        {
+          "en": "Conventional current in the external wire is opposite to electron flow.",
+          "hi": "बाहरी तार में परंपरागत धारा की दिशा इलेक्ट्रॉन प्रवाह के विपरीत होती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a positive electrode always mean the cathode?",
+          "hi": "क्या धनात्मक इलेक्ट्रोड हमेशा कैथोड है?"
+        },
+        "answer": {
+          "en": "No. A galvanic cathode is positive, but an electrolytic anode is positive.",
+          "hi": "नहीं। गैल्वैनी कैथोड धनात्मक है, लेकिन विद्युतअपघटनी ऐनोड धनात्मक होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Cell notation and standard potentials",
+        "hi": "सेल संकेतन और मानक विभव"
+      },
+      "paragraphs": [
+        {
+          "en": "A cell diagram conventionally writes the oxidation half-cell on the left and reduction half-cell on the right. A single vertical line denotes a phase boundary and a double line a salt bridge or equivalent liquid junction. For Zn|Zn2+||Cu2+|Cu, zinc supplies the anode reaction and copper the cathode reaction. A salt bridge completes the ionic circuit and limits charge build-up without serving as a source of electrons. Electrode potentials are measured relative to a reference, commonly the standard hydrogen electrode whose standard potential is assigned zero. Tables usually list reduction potentials. Therefore E°cell=E°cathode−E°anode, using both entries as reduction potentials. Never multiply an electrode potential when multiplying a half-equation; potential is intensive.",
+          "hi": "सेल संकेतन (Cell notation) में परंपरागत रूप से बाईं ओर ऑक्सीकरण और दाईं ओर अपचयन अर्धसेल लिखते हैं। एक खड़ी रेखा प्रावस्था सीमा और दो रेखाएँ लवण सेतु (Salt bridge) या उपयुक्त द्रव संधि दर्शाती हैं। Zn|Zn2+||Cu2+|Cu में बाएँ Zn का ऑक्सीकरण और दाएँ Cu2+ का अपचयन होता है। लवण सेतु आयनिक परिपथ पूरा करता है और दोनों पात्रों में अत्यधिक आवेश जमने से रोकता है। यह इलेक्ट्रॉनों का स्रोत नहीं है। इलेक्ट्रोड विभव (Electrode potential) अकेले इलेक्ट्रोड का स्वतंत्र निरपेक्ष मापन नहीं, किसी संदर्भ से तुलना है। मानक हाइड्रोजन इलेक्ट्रोड का मानक विभव शून्य निर्धारित किया जाता है। सारणियों में सामान्यतः अपचयन विभव दिए होते हैं। इसलिए E°सेल=E°कैथोड−E°ऐनोड में दोनों सारणी मान अपचयन विभव के रूप में लें। समीकरण को संतुलित करने के लिए अर्धअभिक्रिया गुणा करने पर E° को गुणा नहीं करते; विभव गहन गुण है। मानक परिस्थितियों में गतिविधियाँ मानक अवस्था की होती हैं; 298 K अलग से सामान्य प्रयुक्त ताप है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use reduction-potential tables consistently before subtracting.",
+          "hi": "घटाने से पहले दोनों सारणी मानों को अपचयन विभव के रूप में एकसमान रखें।"
+        },
+        {
+          "en": "Standard gas pressure is1 bar; ideal1 mol L^-1 is a school approximation for unit activity.",
+          "hi": "मानक गैस दाब1 bar है; इकाई सक्रियता के लिए आदर्श1 mol L^-1 विद्यालयी सन्निकटन है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For E°Cu=+0.34 V and E°Zn=−0.76 V, find E°cell.",
+          "hi": "E°Cu=+0.34 V और E°Zn=−0.76 V पर E°सेल निकालें।"
+        },
+        "answer": {
+          "en": "E°cell=0.34−(−0.76)=1.10 V.",
+          "hi": "E°सेल=0.34−(−0.76)=1.10 V।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Nernst equation and composition",
+        "hi": "नर्न्स्ट समीकरण और संघटन"
+      },
+      "paragraphs": [
+        {
+          "en": "The Nernst equation connects reversible cell potential with reaction composition: E=E°−(RT/nF)lnQ. Here n is the electrons transferred in the balanced overall reaction and Q is a dimensionless activity quotient. Pure solids and liquids have activity one in this treatment. For the Daniell reaction Zn+Cu2+→Zn2++Cu, Q=aZn2+/aCu2+. At298 K the base-10 form is E=E°−(0.0591 V/n)log10Q. This particular coefficient is not valid at every temperature. Increasing Q lowers the potential for the stated reaction; reversing the written reaction reverses both E and the quotient relation. Concentrations approximate activities for sufficiently dilute solutions, but their standard-state ratios must be understood. At equilibrium E=0 and Q=K for the reversible reaction.",
+          "hi": "नर्न्स्ट समीकरण (Nernst equation) प्रतिवर्ती सेल विभव और संघटन को E=E°−(RT/nF)lnQ से जोड़ता है। n संतुलित पूर्ण अभिक्रिया में स्थानांतरित इलेक्ट्रॉनों के मोल-अनुपाती गुणांक की संख्या है। Q अभिक्रिया भागफल है, जिसमें सक्रियताओं का विमाहीन अनुपात लेते हैं। शुद्ध ठोस और शुद्ध द्रव की सक्रियता इस वर्णन में 1 मानी जाती है। डेनियल अभिक्रिया Zn+Cu2+→Zn2++Cu के लिए Q=aZn2+/aCu2+ होगा; ठोस Zn और Cu को सांद्रता के रूप में नहीं जोड़ते। 298 K पर सामान्य लघुगणक वाला रूप E=E°−(0.0591 V/n)log10Q है। 0.0591 का गुणांक हर ताप पर नहीं चलता; दूसरे ताप पर RT/F से निकालें। लिखी अभिक्रिया के लिए Q बढ़ने पर E घटता है। अभिक्रिया उलटने पर विभव का चिह्न भी उलटता है। पर्याप्त तनु विलयन में सक्रियता के स्थान पर मानक सांद्रता के सापेक्ष सांद्रता अनुपात का सन्निकटन लेते हैं। साम्य पर प्रतिवर्ती सेल के लिए E=0 और Q=K होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Balance the overall redox reaction before choosing n.",
+          "hi": "n चुनने से पहले पूर्ण रेडॉक्स अभिक्रिया संतुलित करें; इलेक्ट्रॉनों का गुणांक उसी से मिलेगा।"
+        },
+        {
+          "en": "The logarithm acts on a dimensionless reaction quotient.",
+          "hi": "लघुगणक के भीतर विमाहीन अभिक्रिया भागफल रखें; इकाइयों वाली अकेली सांद्रता का अस्पष्ट लघुगणक न लें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At298 K and n=2, what is the potential change when Q increases by100?",
+          "hi": "298 K और n=2 पर Q100 गुना बढ़ने से विभव कितना बदलेगा?"
+        },
+        "answer": {
+          "en": "ΔE=−(0.0591/2)log100=−0.0591 V.",
+          "hi": "ΔE=−(0.0591/2)log100=−0.0591 V।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Electrical work, Gibbs energy and equilibrium",
+        "hi": "विद्युत कार्य, गिब्स ऊर्जा और साम्य"
+      },
+      "paragraphs": [
+        {
+          "en": "For a reversible electrochemical process, ΔrG=−nFE. A positive E for the stated reaction therefore corresponds to negative Gibbs-energy change and spontaneous tendency under those conditions. Standard quantities obey ΔrG°=−nFE° and ΔrG°=−RTlnK, giving E°=(RT/nF)lnK. At298 K this becomes log10K=nE°/0.0591 V. The value of n depends on how the reaction is written: multiplying the reaction changes ΔG and n by the same factor but leaves E unchanged. At equilibrium the actual potential E is zero although E° may be nonzero. A working cell under load also experiences internal resistance and polarisation, so its terminal voltage need not equal the reversible emf. These distinctions prevent mixing thermodynamic potential with practical power output.",
+          "hi": "प्रतिवर्ती वैद्युतरासायनिक प्रक्रिया के लिए अभिक्रिया की गिब्स ऊर्जा ΔrG=−nFE होती है। F फैराडे स्थिरांक है, लगभग96485 C mol^-1 इलेक्ट्रॉन। लिखी अभिक्रिया के लिए E धनात्मक हो तो ΔrG ऋणात्मक और उस परिस्थिति में आगे की स्वतः प्रवृत्ति होती है। मानक राशियों के लिए ΔrG°=−nFE° तथा ΔrG°=−RTlnK मिलाकर E°=(RT/nF)lnK प्राप्त करते हैं। 298 K पर log10K=nE°/0.0591 V लिख सकते हैं। समीकरण को 2 से गुणा करने पर n और ΔG दोनों दुगुने होते हैं, पर E नहीं बदलता। इसलिए बड़ी संतुलित अभिक्रिया लिखने से सेल का विभव अपने आप दुगुना नहीं होता। वास्तविक साम्य पर E=0 है, लेकिन मानक विभव E° शून्य होना जरूरी नहीं। यह अंतर Q और मानक अवस्था के बीच अंतर से आता है। काम कर रहे सेल में आंतरिक प्रतिरोध तथा ध्रुवण से टर्मिनल विभव प्रतिवर्ती विद्युतवाहक बल से कम हो सकता है। अधिकतम प्रतिवर्ती विद्युत कार्य और वास्तविक उपयोगी शक्ति को बिना शर्त बराबर न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A positive E indicates spontaneity only for the reaction as written.",
+          "hi": "धनात्मक E लिखी दिशा की स्वतः प्रवृत्ति बताता है; उलटी दिशा का E ऋणात्मक होगा।"
+        },
+        {
+          "en": "E is intensive; ΔG is extensive for a specified reaction amount.",
+          "hi": "E गहन राशि है; निर्दिष्ट अभिक्रिया मात्रा का ΔG व्यापक राशि है, इसलिए उनके गुणन नियम अलग हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can E=0 at equilibrium while E° is positive?",
+          "hi": "साम्य पर E=0 जबकि E° धनात्मक क्यों हो सकता है?"
+        },
+        "answer": {
+          "en": "The composition term balances E° when Q reaches K.",
+          "hi": "Q=K होने पर संघटन वाला पद E° को संतुलित करता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Conductance and conductivity",
+        "hi": "चालकता और विशिष्ट चालकता"
+      },
+      "paragraphs": [
+        {
+          "en": "Resistance R=ρl/A depends on material resistivity and cell geometry. Conductance G=1/R is measured in siemens. Conductivity κ=1/ρ describes transport in the solution independently of the particular electrode separation and area; κ=G(l/A). The ratio l/A is the cell constant. In SI, l/A has unit m^-1 and κ has unit S m^-1. Laboratory tables often use cm^-1 and S cm^-1, requiring consistent conversion. Electrolytes conduct because mobile ions respond to an electric field. Changing concentration changes the number of ions per volume and their mobility. With dilution conductivity usually decreases because the number of charge carriers per unit volume falls, even while molar conductivity increases. A larger measured conductance alone cannot prove a higher material conductivity if cell geometries differ.",
+          "hi": "प्रतिरोध (Resistance) R=ρl/A में ρ प्रतिरोधकता, l इलेक्ट्रोड दूरी और A प्रभावी क्षेत्रफल है। चालकत्व (Conductance) G=1/R का मात्रक सीमेंस S है। विशिष्ट चालकता या चालकता (Conductivity) κ=1/ρ विलयन के आवेश परिवहन का गुण बताती है। κ=G(l/A) में l/A को सेल स्थिरांक (Cell constant) कहते हैं। SI में सेल स्थिरांक m^-1 और κ का मात्रक S m^-1 है। प्रयोगशाला में cm^-1 और S cm^-1 भी मिलते हैं; समीकरण में लंबाई का आधार एकसमान रखें। उदाहरण के लिए 1 S cm^-1=100 S m^-1 है। विद्युतअपघट्य आयनों के विद्युत क्षेत्र में संचरण से धारा चलाता है। सांद्रता बदलने पर प्रति आयतन आयन संख्या और उनकी गतिशीलता दोनों प्रभावित हो सकती हैं। तनु करने पर सामान्यतः प्रति आयतन आवेशवाहक कम होते हैं, इसलिए κ घटती है। इसी स्थिति में मोलर चालकता बढ़ सकती है; दोनों परिभाषाएँ अलग हैं। अलग ज्यामिति वाले पात्रों में केवल G देखकर विलयनों की κ की तुलना नहीं कर सकते। पहले सेल स्थिरांक का प्रभाव हटाएँ।"
+        }
+      ],
+      "points": [
+        {
+          "en": "κ=G×cell constant; do not invert the cell constant accidentally.",
+          "hi": "κ=G×सेल स्थिरांक है; l/A को गलती से A/l न बना दें।"
+        },
+        {
+          "en": "S is the unit of conductance; S m^-1 is the SI unit of conductivity.",
+          "hi": "G का मात्रक S, जबकि κ का SI मात्रक S m^-1 है; दोनों राशियाँ एक नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "A cell has G=0.02 S and cell constant100 m^-1. Find κ.",
+          "hi": "G=0.02 S और सेल स्थिरांक100 m^-1 होने पर κ निकालें।"
+        },
+        "answer": {
+          "en": "κ=0.02×100=2 S m^-1.",
+          "hi": "κ=0.02×100=2 S m^-1।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Molar conductivity and Kohlrausch’s law",
+        "hi": "मोलर चालकता और कोलराउश का नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "Molar conductivity Λm=κ/c when concentration c is in mol m^-3 and κ in S m^-1; its SI unit is S m² mol^-1. If κ is in S cm^-1 and C in mol L^-1, Λm=1000κ/C gives S cm² mol^-1. On dilution, Λm generally increases. Strong electrolytes are already substantially dissociated; reduced interionic effects increase mobility. Weak electrolytes also undergo increased ionisation, giving a much sharper rise. At infinite dilution, Kohlrausch’s law adds independent ionic contributions: Λm°=Σνiλi°. This permits construction of a weak electrolyte’s limiting conductivity from suitable strong-electrolyte values. For a simple weak electrolyte under dilute assumptions, α≈Λm/Λm°. The approximation does not justify treating every concentrated electrolyte as an ideal independent-ion system.",
+          "hi": "मोलर चालकता (Molar conductivity) Λm किसी मोल विद्युतअपघट्य के संदर्भ में चालकता का माप है। SI में Λm=κ/c लिखते हैं, जहाँ κ को S m^-1 और c को mol m^-3 में रखें; उत्तर S m² mol^-1 मिलेगा। यदि κ S cm^-1 और C mol L^-1 में है, तो Λm=1000κ/C से S cm² mol^-1 मिलता है। बिना मात्रक देखे 1000 जोड़ना या हटाना गलत है। तनु करने पर Λm सामान्यतः बढ़ती है। प्रबल विद्युतअपघट्य में आयन पहले से पर्याप्त बने होते हैं; आयन-आयन प्रभाव घटने पर गतिशीलता बढ़ती है। दुर्बल विद्युतअपघट्य में आयनीकरण अंश भी बढ़ता है, इसलिए वृद्धि अधिक तीव्र होती है। अनंत तनुता पर कोलराउश का नियम (Kohlrausch’s law) स्वतंत्र आयनिक योगदान जोड़ता है: Λm°=Σνiλi°। इससे उपयुक्त प्रबल विद्युतअपघट्यों के आँकड़ों को जोड़-घटाकर दुर्बल विद्युतअपघट्य की सीमांत चालकता निकाल सकते हैं। सरल तनु दुर्बल विद्युतअपघट्य के लिए α≈Λm/Λm° मिलता है। यह संबंध सांद्र वास्तविक आयनिक विलयन में सभी अंतःक्रियाएँ समाप्त नहीं कर देता।"
+        },
+        {
+          "en": "For a dilute monoprotic weak acid HA under the simple concentration model, HA⇌H++A− gives Ka=cα²/(1−α). Substituting α≈Λm/Λm° relates conductance measurements to an estimated dissociation constant. The concentration c must match the convention used for Ka; activity-based equilibrium constants require the appropriate standard-state treatment. The formula assumes the acid is the dominant source of the ions and ignores water autoionisation and added common ions. It should not be transferred unchanged to every salt, polyprotic acid or concentrated solution. This example illustrates how an electrical measurement can provide chemical-equilibrium information after the model assumptions are stated.",
+          "hi": "तनु एकप्रोटिक दुर्बल अम्लHA के सरल सांद्रता मॉडल मेंHA⇌H++A− सेKa=cα²/(1−α) मिलता है।α≈Λm/Λm° रखने पर चालकता से वियोजन स्थिरांक का अनुमान मिलता है।c औरKa की परिभाषाएँ संगत रखें।इस मॉडल में अम्ल आयनों का प्रमुख स्रोत है तथा जल का स्वआयनीकरण और मिला उभयनिष्ठ आयन उपेक्षित हैं।इसे हर लवण,बहुप्रोटिक अम्ल या सांद्र विलयन पर बिना जाँच लागू न करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Dilution can lower κ while increasing Λm; there is no contradiction.",
+          "hi": "तनुता पर κ घटकर भी Λm बढ़ सकती है; परिभाषाओं के अलग आधार के कारण इसमें विरोध नहीं।"
+        },
+        {
+          "en": "Include stoichiometric ion coefficients in the limiting ionic sum.",
+          "hi": "सीमांत आयनिक योग में आयनों के स्टॉइकियोमितीय गुणांक शामिल करें; CaCl2 में Cl− योगदान 2 बार है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If Λm=20 and Λm°=100 in matching units, estimate α.",
+          "hi": "समान मात्रकों में Λm=20 और Λm°=100 हो तो α का अनुमान?"
+        },
+        "answer": {
+          "en": "α≈20/100=0.20, or20%.",
+          "hi": "α≈20/100=0.20, अर्थात20%।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Electrolysis and Faraday’s laws",
+        "hi": "विद्युतअपघटन और फैराडे के नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "An external source can drive oxidation and reduction at electrodes. The total charge passed is Q=It for constant current. Faraday’s first law states that mass changed at an electrode is proportional to charge for a fixed reaction. Using the balanced half-reaction, m=MQ/(zF), where M is molar mass and z is the electrons required per formula unit of deposited material. One mole of electrons carries one faraday of charge, approximately96485 C. The same charge gives different deposited masses when M/z differs. Competing electrode reactions depend on ion concentrations, electrode materials and overpotential; the species deposited cannot always be predicted solely from a memorised activity series. The mass formula assumes the stated reaction receives the specified charge with100% current efficiency. Time must be in seconds if current is in amperes.",
+          "hi": "विद्युतअपघटन (Electrolysis) में बाहरी स्रोत इलेक्ट्रोडों पर ऑक्सीकरण और अपचयन चलाता है। स्थिर धारा I को समय t तक देने पर कुल आवेश Q=It होता है। फैराडे का पहला नियम निश्चित इलेक्ट्रोड अभिक्रिया में बदले पदार्थ का द्रव्यमान दिए आवेश के अनुपाती बताता है। संतुलित अर्धअभिक्रिया से m=MQ/(zF) लिखते हैं। यहाँ M जमा पदार्थ का मोलर द्रव्यमान और z उसकी 1 सूत्र इकाई बनाने में लगने वाले इलेक्ट्रॉनों की संख्या है। Cu2++2e−→Cu में z=2, जबकि Ag++e−→Ag में z=1 है। एक मोल इलेक्ट्रॉनों का आवेश F≈96485 C होता है। समान Q पर जमा द्रव्यमान M/z पर निर्भर है; अलग धातुओं में बराबर ग्राम जमा होना जरूरी नहीं। जलीय विलयन में जल की अभिक्रिया, इलेक्ट्रोड की प्रकृति और अतिविभव भी उत्पाद तय कर सकते हैं। इसलिए केवल एक क्रम याद करके हर परिस्थिति का उत्पाद निश्चित न करें। गणना में बताया जाता है कि निर्धारित अभिक्रिया की धारा दक्षता100% है। I ऐम्पियर में होने पर t सेकंड में लें, क्योंकि 1 A=1 C s^-1।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For copper(II) deposition, use2 mol electrons per mol Cu.",
+          "hi": "Cu2+ से Cu जमा करने में प्रति mol Cu के लिए2 mol इलेक्ट्रॉन लें; आवेश संतुलन इसकी जाँच है।"
+        },
+        {
+          "en": "Current efficiency below100% reduces the mass for the same total charge.",
+          "hi": "धारा दक्षता100% से कम हो तो समान कुल आवेश पर वास्तविक जमा द्रव्यमान कम होगा।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How much charge corresponds to0.5 mol electrons?",
+          "hi": "0.5 mol इलेक्ट्रॉनों का आवेश कितना?"
+        },
+        "answer": {
+          "en": "Q=0.5F≈48242.5 C.",
+          "hi": "Q=0.5F≈48242.5 C।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Batteries, fuel cells and corrosion",
+        "hi": "बैटरियाँ, ईंधन सेल और संक्षारण"
+      },
+      "paragraphs": [
+        {
+          "en": "A primary battery is not normally designed for repeated electrical recharging; a secondary battery is designed for reversible operation during charge and discharge. The lead storage battery changes lead, lead dioxide and sulfuric-acid species during discharge; charging reverses the intended overall chemistry. A fuel cell receives reactants continuously and converts chemical energy into electricity; the hydrogen–oxygen cell forms water, but practical efficiency is not100%. Corrosion is an electrochemical deterioration process. Rusting involves anodic iron dissolution and cathodic oxygen reduction in the presence of water and suitable conditions. Water, oxygen, dissolved salts and local surface differences influence the process. Coatings isolate the surface, while sacrificial protection uses a more readily oxidised metal. Never infer that a protective metal stays chemically unchanged while protecting iron.",
+          "hi": "प्राथमिक बैटरी (Primary battery) सामान्यतः बार-बार विद्युत पुनर्भरण के लिए नहीं बनाई जाती। द्वितीयक बैटरी (Secondary battery) में आवेशन और विसर्जन के दौरान अपेक्षित रासायनिक परिवर्तन उलटे चलाने की व्यवस्था होती है। सीसा संचायक में विसर्जन के समय सीसा, लेड डाइऑक्साइड और सल्फ्यूरिक अम्ल से संबंधित स्पीशीज बदलती हैं; आवेशन में इच्छित पूर्ण अभिक्रिया उलटती है। ईंधन सेल (Fuel cell) को अभिकारक लगातार दिए जाते हैं। हाइड्रोजन-ऑक्सीजन सेल जल बनाते हुए विद्युत ऊर्जा देता है, लेकिन व्यावहारिक दक्षता100% नहीं होती। संक्षारण (Corrosion) धातु का वैद्युतरासायनिक क्षरण है। लोहे में स्थानीय ऐनोड भागों पर Fe का ऑक्सीकरण तथा कैथोड भागों पर ऑक्सीजन का अपचयन हो सकता है। जल, ऑक्सीजन, घुले लवण और सतह की असमानता प्रक्रिया को प्रभावित करते हैं। पेंट या उपयुक्त परत संपर्क घटाती है। बलिदानी सुरक्षा में अधिक आसानी से ऑक्सीकृत धातु लगाते हैं, जो स्वयं क्षरित होकर लोहे की रक्षा करती है। इसलिए रक्षक धातु बिल्कुल अपरिवर्तित रहे, ऐसा मानना गलत है। सेल के सिद्धांत से बैटरी और जंग दोनों को एक ही इलेक्ट्रॉन-आयन संतुलन द्वारा समझ सकते हैं।"
+        },
+        {
+          "en": "In a common dry-cell description, the zinc container acts as the anode, while a carbon rod with surrounding manganese dioxide forms part of the cathodic assembly and the electrolyte is a moist ammonium chloride–zinc chloride paste. The carbon rod mainly collects current; it is not simply the substance consumed to supply all electrons. A lead storage cell has the overall discharge reaction Pb+PbO2+2H2SO4→2PbSO4+2H2O. Both electrodes acquire lead sulfate during discharge, and the acid composition changes. These examples explain why battery voltage and usable capacity depend on chemistry and state of discharge, rather than only on the visible size of the container.",
+          "hi": "सामान्य शुष्क सेल में जिंक पात्र ऐनोड है। कार्बन छड़ और उसके आसपास MnO2 कैथोडीय व्यवस्था के भाग हैं; नम NH4Cl-ZnCl2 पेस्ट विद्युतअपघट्य है। कार्बन छड़ मुख्यतः धारा संग्रह करती है, वह सभी इलेक्ट्रॉन देने वाला उपभुक्त पदार्थ नहीं। सीसा संचायक की पूर्ण विसर्जन अभिक्रिया Pb+PbO2+2H2SO4→2PbSO4+2H2O है। दोनों इलेक्ट्रोडों पर लेड सल्फेट बनता और अम्ल संघटन बदलता है। इसलिए बैटरी विभव और क्षमता रसायन तथा विसर्जन अवस्था पर निर्भर हैं, केवल पात्र के आकार पर नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Fuel must be replenished in a fuel cell; it is not an energy source without reactants.",
+          "hi": "ईंधन सेल में अभिकारक दोबारा देने पड़ते हैं; वह अभिकारकों बिना ऊर्जा पैदा करने वाला स्रोत नहीं।"
+        },
+        {
+          "en": "Sacrificial protection consumes the more easily oxidised metal.",
+          "hi": "बलिदानी सुरक्षा में अधिक आसानी से ऑक्सीकृत धातु खर्च होती है; उसी का ऑक्सीकरण संरक्षित धातु को बचाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can zinc protect iron sacrificially?",
+          "hi": "जिंक लोहे की बलिदानी रक्षा क्यों कर सकता है?"
+        },
+        "answer": {
+          "en": "Zinc is preferentially oxidised in the coupled system, supplying protective electrons.",
+          "hi": "युग्मित व्यवस्था में जिंक पहले ऑक्सीकृत होकर सुरक्षात्मक इलेक्ट्रॉन देता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "E°cell=E°cathode−E°anode",
+      "meaning": {
+        "en": "Use reduction potentials for both electrode entries.",
+        "hi": "दोनों इलेक्ट्रोडों के अपचयन विभव लेकर घटाएँ।"
+      },
+      "units": {
+        "en": "V; never multiply E° by a reaction coefficient.",
+        "hi": "V; अभिक्रिया गुणांक से E° गुणा नहीं होता।"
+      }
+    },
+    {
+      "expression": "E=E°−(RT/nF)lnQ",
+      "meaning": {
+        "en": "Reversible potential; Q is a dimensionless activity quotient.",
+        "hi": "प्रतिवर्ती विभव; Q सक्रियताओं का विमाहीन भागफल है।"
+      },
+      "units": {
+        "en": "T inK; R inJ mol^-1 K^-1, F inC mol^-1.",
+        "hi": "T कोK,R कोJ mol^-1 K^-1,F कोC mol^-1 में लें।"
+      }
+    },
+    {
+      "expression": "E=E°−(0.0591 V/n)log10Q at298 K",
+      "meaning": {
+        "en": "The decimal-log coefficient applies near298 K only.",
+        "hi": "सामान्य लघुगणक गुणांक केवल लगभग298 K पर लागू।"
+      },
+      "units": {
+        "en": "Potential inV; n is electrons in the balanced reaction.",
+        "hi": "विभवV में;n संतुलित अभिक्रिया के इलेक्ट्रॉन हैं।"
+      }
+    },
+    {
+      "expression": "ΔrG=−nFE; ΔrG°=−RTlnK",
+      "meaning": {
+        "en": "Connect electrical work and reaction equilibrium.",
+        "hi": "विद्युत कार्य और अभिक्रिया साम्य का संबंध।"
+      },
+      "units": {
+        "en": "J mol^-1 for the specified reaction extent.",
+        "hi": "निर्दिष्ट अभिक्रिया मात्रा के लिएJ mol^-1।"
+      }
+    },
+    {
+      "expression": "κ=G(l/A); Λm=κ/c",
+      "meaning": {
+        "en": "Conductivity removes cell geometry; molar conductivity uses concentration.",
+        "hi": "चालकता से ज्यामिति हटती; मोलर चालकता में सांद्रता का आधार है।"
+      },
+      "units": {
+        "en": "κ:S m^-1;c:mol m^-3;Λm:S m² mol^-1.",
+        "hi": "κ:S m^-1;c:mol m^-3;Λm:S m² mol^-1।"
+      }
+    },
+    {
+      "expression": "m=MIt/(zF)",
+      "meaning": {
+        "en": "Faraday mass at100% current efficiency for the stated half-reaction.",
+        "hi": "निर्दिष्ट अर्धअभिक्रिया में100% धारा दक्षता पर फैराडे द्रव्यमान।"
+      },
+      "units": {
+        "en": "M:g mol^-1,I:A,t:s gives m ing.",
+        "hi": "M:g mol^-1,I:A,t:s लेने परm ग्राम में।"
+      }
+    },
+    {
+      "expression": "Ka≈cα²/(1−α), α≈Λm/Λm°",
+      "meaning": {
+        "en": "Dilute monoprotic weak-electrolyte estimate with the stated concentration and independent-ion assumptions.",
+        "hi": "दी गई सांद्रता तथा स्वतंत्र-आयन मान्यताओं में तनु एकप्रोटिक दुर्बल विद्युतअपघट्य का अनुमान।"
+      },
+      "units": {
+        "en": "Use a consistent concentration convention for c and Ka; α is dimensionless.",
+        "hi": "c औरKa के लिए संगत सांद्रता परिभाषा लें;α विमाहीन है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find E° for the Daniell cell using E°Cu2+/Cu=+0.34 V and E°Zn2+/Zn=−0.76 V.",
+        "hi": "E°Cu2+/Cu=+0.34 V तथा E°Zn2+/Zn=−0.76 V से डेनियल सेल का E° निकालें।"
+      },
+      "given": {
+        "en": "CathodeCu,anodeZn; both values are reduction potentials.",
+        "hi": "कैथोडCu,ऐनोडZn; दोनों अपचयन विभव हैं।"
+      },
+      "find": {
+        "en": "E°cell.",
+        "hi": "E°सेल।"
+      },
+      "formula": {
+        "en": "E°cell=E°cathode−E°anode.",
+        "hi": "E°सेल=E°कैथोड−E°ऐनोड।"
+      },
+      "steps": [
+        {
+          "en": "Subtract the zinc value including its negative sign.",
+          "hi": "जिंक का मान उसके ऋणात्मक चिह्न सहित घटाएँ।"
+        },
+        {
+          "en": "0.34−(−0.76)=1.10.",
+          "hi": "0.34−(−0.76)=1.10।"
+        }
+      ],
+      "answer": {
+        "en": "1.10 V.",
+        "hi": "1.10 V।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A cell has resistance50 Ω and cell constant100 m^-1. Find conductivity.",
+        "hi": "सेल प्रतिरोध50 Ω और सेल स्थिरांक100 m^-1 है। चालकता निकालें।"
+      },
+      "given": {
+        "en": "R=50 Ω;l/A=100 m^-1.",
+        "hi": "R=50 Ω;l/A=100 m^-1।"
+      },
+      "find": {
+        "en": "κ.",
+        "hi": "κ।"
+      },
+      "formula": {
+        "en": "G=1/R;κ=G(l/A).",
+        "hi": "G=1/R;κ=G(l/A)।"
+      },
+      "steps": [
+        {
+          "en": "G=1/50=0.020 S.",
+          "hi": "G=1/50=0.020 S।"
+        },
+        {
+          "en": "κ=0.020×100=2.0 S m^-1.",
+          "hi": "κ=0.020×100=2.0 S m^-1।"
+        }
+      ],
+      "answer": {
+        "en": "2.0 S m^-1.",
+        "hi": "2.0 S m^-1।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "At298 K, find Daniell potential for E°=1.10 V and [Zn2+]/[Cu2+]=100, assuming ideal activities.",
+        "hi": "298 K पर E°=1.10 V तथा [Zn2+]/[Cu2+]=100 के लिए आदर्श सक्रियताओं से डेनियल विभव निकालें।"
+      },
+      "given": {
+        "en": "n=2,Q=100,T=298 K.",
+        "hi": "n=2,Q=100,T=298 K।"
+      },
+      "find": {
+        "en": "E.",
+        "hi": "E।"
+      },
+      "formula": {
+        "en": "E=E°−(0.0591/n)log10Q.",
+        "hi": "E=E°−(0.0591/n)log10Q।"
+      },
+      "steps": [
+        {
+          "en": "log10100=2.",
+          "hi": "log10100=2।"
+        },
+        {
+          "en": "E=1.10−(0.0591/2)×2.",
+          "hi": "E=1.10−(0.0591/2)×2।"
+        },
+        {
+          "en": "E=1.0409 V.",
+          "hi": "E=1.0409 V।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately1.041 V.",
+        "hi": "लगभग1.041 V।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find ΔrG° for n=2,E°=1.10 V,F=96485 C mol^-1.",
+        "hi": "n=2,E°=1.10 V,F=96485 C mol^-1 से ΔrG° निकालें।"
+      },
+      "given": {
+        "en": "n=2,E°=1.10 V.",
+        "hi": "n=2,E°=1.10 V।"
+      },
+      "find": {
+        "en": "Standard Gibbs-energy change.",
+        "hi": "मानक गिब्स ऊर्जा परिवर्तन।"
+      },
+      "formula": {
+        "en": "ΔrG°=−nFE°.",
+        "hi": "ΔrG°=−nFE°।"
+      },
+      "steps": [
+        {
+          "en": "ΔrG°=−2×96485×1.10=−212267 J mol^-1.",
+          "hi": "ΔrG°=−2×96485×1.10=−212267 J mol^-1।"
+        },
+        {
+          "en": "Divide by1000 for kJ mol^-1.",
+          "hi": "kJ mol^-1 के लिए1000 से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "−212.3 kJ mol^-1 for the written reaction.",
+        "hi": "लिखी अभिक्रिया के लिए−212.3 kJ mol^-1।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A Cu2+ solution is electrolysed at2.00 A for30.0 min. Find copper mass at100% efficiency using MCu=63.5 g mol^-1,F=96500 C mol^-1.",
+        "hi": "Cu2+ विलयन में2.00 A धारा30.0 min दी गई।100% दक्षता पर MCu=63.5 g mol^-1,F=96500 C mol^-1 से कॉपर द्रव्यमान निकालें।"
+      },
+      "given": {
+        "en": "I=2.00 A,t=1800 s,z=2.",
+        "hi": "I=2.00 A,t=1800 s,z=2।"
+      },
+      "find": {
+        "en": "Deposited Cu mass.",
+        "hi": "जमाCu द्रव्यमान।"
+      },
+      "formula": {
+        "en": "m=MIt/(zF).",
+        "hi": "m=MIt/(zF)।"
+      },
+      "steps": [
+        {
+          "en": "Cu2++2e−→Cu gives z=2.",
+          "hi": "Cu2++2e−→Cu सेz=2।"
+        },
+        {
+          "en": "Q=2.00×1800=3600 C.",
+          "hi": "Q=2.00×1800=3600 C।"
+        },
+        {
+          "en": "m=63.5×3600/(2×96500)=1.184 g.",
+          "hi": "m=63.5×3600/(2×96500)=1.184 g।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately1.18 g Cu.",
+        "hi": "लगभग1.18 g Cu।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which process always occurs at the anode?",
+        "hi": "ऐनोड पर हमेशा कौन-सी प्रक्रिया?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Oxidation",
+            "hi": "ऑक्सीकरण"
+          },
+          "reason": {
+            "en": "Anode is defined as the oxidation electrode.",
+            "hi": "ऐनोड की परिभाषा ऑक्सीकरण इलेक्ट्रोड है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Reduction",
+            "hi": "अपचयन"
+          },
+          "reason": {
+            "en": "Reduction occurs at the cathode.",
+            "hi": "अपचयन कैथोड पर होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only electron gain",
+            "hi": "केवल इलेक्ट्रॉन ग्रहण"
+          },
+          "reason": {
+            "en": "Oxidation releases electrons rather than gaining them.",
+            "hi": "ऑक्सीकरण में इलेक्ट्रॉन निकलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No reaction",
+            "hi": "कोई अभिक्रिया नहीं"
+          },
+          "reason": {
+            "en": "An operating electrode participates in a half-reaction.",
+            "hi": "कार्यरत इलेक्ट्रोड अर्धअभिक्रिया में भाग लेता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In a galvanic Daniell cell, electrons in the external wire move from?",
+        "hi": "गैल्वैनी डेनियल सेल के बाहरी तार में इलेक्ट्रॉन कहाँ से कहाँ जाते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zn to Cu",
+            "hi": "Zn से Cu"
+          },
+          "reason": {
+            "en": "Zinc oxidation supplies electrons for copper-ion reduction.",
+            "hi": "जिंक ऑक्सीकरण, कॉपर आयन अपचयन के लिए इलेक्ट्रॉन देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cu to Zn",
+            "hi": "Cu से Zn"
+          },
+          "reason": {
+            "en": "That reverses the spontaneous Daniell direction.",
+            "hi": "यह स्वतः डेनियल दिशा के विपरीत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Salt bridge to both metals",
+            "hi": "लवण सेतु से दोनों धातुओं में"
+          },
+          "reason": {
+            "en": "The salt bridge transports ions, not a supply of electrons.",
+            "hi": "लवण सेतु आयन चलाता है, इलेक्ट्रॉन स्रोत नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only through solution as free electrons",
+            "hi": "केवल द्रव में मुक्त इलेक्ट्रॉन रूप में"
+          },
+          "reason": {
+            "en": "Bulk electrolyte current is ionic.",
+            "hi": "द्रव विद्युतअपघट्य में धारा आयनिक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Multiplying a balanced cell reaction by2 does what to E°?",
+        "hi": "संतुलित सेल अभिक्रिया2 से गुणा करने पर E°?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Remains unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Potential is intensive; n and ΔG both double.",
+            "hi": "विभव गहन है;n औरΔG दोनों दुगुने होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Doubles",
+            "hi": "दुगुना"
+          },
+          "reason": {
+            "en": "That rule applies to ΔG, not potential.",
+            "hi": "यहΔG पर लागू, विभव पर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Halves",
+            "hi": "आधा"
+          },
+          "reason": {
+            "en": "No inverse scaling applies to an intensive potential.",
+            "hi": "गहन विभव पर उलटा पैमाना नहीं लगता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Becomes zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "Stoichiometric scaling does not create equilibrium.",
+            "hi": "समीकरण गुणा करने से साम्य नहीं बनता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For the Daniell reaction, the ideal Q is?",
+        "hi": "डेनियल अभिक्रिया का आदर्शQ क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "[Zn2+]/[Cu2+] as standard-state ratios",
+            "hi": "मानक अवस्था अनुपातों में[Zn2+]/[Cu2+]"
+          },
+          "reason": {
+            "en": "Solids Zn and Cu have unit activity in this treatment.",
+            "hi": "इस वर्णन में ठोसZn,Cu की सक्रियता1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "[Cu2+]/[Zn2+]",
+            "hi": "[Cu2+]/[Zn2+]"
+          },
+          "reason": {
+            "en": "That is the inverse quotient for the reverse reaction.",
+            "hi": "यह उलटी अभिक्रिया का उलटा भागफल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "[Zn][Cu2+]/[Cu]",
+            "hi": "[Zn][Cu2+]/[Cu]"
+          },
+          "reason": {
+            "en": "Pure solids are not inserted as concentration factors.",
+            "hi": "शुद्ध ठोसों को सांद्रता गुणक नहीं बनाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always1",
+            "hi": "हमेशा1"
+          },
+          "reason": {
+            "en": "Q depends on ion activities and need not be1.",
+            "hi": "Q आयन सक्रियताओं पर निर्भर है;1 होना जरूरी नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At equilibrium the reversible cell potential E is?",
+        "hi": "साम्य पर प्रतिवर्ती सेल काE कितना?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0 V",
+            "hi": "0 V"
+          },
+          "reason": {
+            "en": "ΔG=0 and E=−ΔG/(nF).",
+            "hi": "ΔG=0 तथाE=−ΔG/(nF)।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always equal to E°",
+            "hi": "हमेशाE°"
+          },
+          "reason": {
+            "en": "The composition term generally differs from zero.",
+            "hi": "संघटन वाला पद सामान्यतः शून्य नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always1 V",
+            "hi": "हमेशा1 V"
+          },
+          "reason": {
+            "en": "There is no universal1 V equilibrium value.",
+            "hi": "साम्य का सार्वभौमिक1 V मान नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "Equilibrium has no net reversible electrical driving force.",
+            "hi": "साम्य पर शुद्ध प्रतिवर्ती विद्युत प्रेरक बल नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A positive E for the written reaction means ΔG is?",
+        "hi": "लिखी अभिक्रिया के धनात्मकE परΔG?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Negative",
+            "hi": "ऋणात्मक"
+          },
+          "reason": {
+            "en": "ΔG=−nFE with n,F positive.",
+            "hi": "n,F धनात्मक होने परΔG=−nFE।"
+          }
+        },
+        {
+          "text": {
+            "en": "Positive",
+            "hi": "धनात्मक"
+          },
+          "reason": {
+            "en": "This omits the minus sign.",
+            "hi": "इसमें ऋण चिह्न छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "हमेशा शून्य"
+          },
+          "reason": {
+            "en": "Zero ΔG corresponds to E=0.",
+            "hi": "ΔG शून्य तबE=0।"
+          }
+        },
+        {
+          "text": {
+            "en": "Independent of E",
+            "hi": "E से असंबंधित"
+          },
+          "reason": {
+            "en": "The Gibbs–electrical relation directly links them.",
+            "hi": "गिब्स-विद्युत संबंध दोनों को सीधे जोड़ता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is the SI unit of conductivity κ?",
+        "hi": "κ काSI मात्रक कौन?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "S m^-1",
+            "hi": "S m^-1"
+          },
+          "reason": {
+            "en": "Conductivity is conductance times a cell constant in m^-1.",
+            "hi": "चालकता=चालकत्व×m^-1 सेल स्थिरांक।"
+          }
+        },
+        {
+          "text": {
+            "en": "S",
+            "hi": "S"
+          },
+          "reason": {
+            "en": "S alone measures conductance G.",
+            "hi": "केवलS चालकत्वG का मात्रक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ω",
+            "hi": "Ω"
+          },
+          "reason": {
+            "en": "Ohm measures resistance.",
+            "hi": "ओम प्रतिरोध मापता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "S m² mol^-1",
+            "hi": "S m² mol^-1"
+          },
+          "reason": {
+            "en": "That is the SI unit of molar conductivity.",
+            "hi": "यह मोलर चालकता काSI मात्रक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "During dilution, which pair can occur together?",
+        "hi": "तनु करने पर कौन-सा युग्म साथ संभव है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "κ decreases, Λm increases",
+            "hi": "κ घटे,Λm बढ़े"
+          },
+          "reason": {
+            "en": "There are fewer ions per volume but a larger molar transport contribution.",
+            "hi": "प्रति आयतन आयन कम, पर मोलर परिवहन योगदान अधिक हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both must always remain constant",
+            "hi": "दोनों हमेशा स्थिर"
+          },
+          "reason": {
+            "en": "Ion concentration and interactions change with dilution.",
+            "hi": "तनुता से आयन सांद्रता और अंतःक्रिया बदलती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "κ must become infinite",
+            "hi": "κ अनंत"
+          },
+          "reason": {
+            "en": "Dilution reduces charge carriers per volume rather than making κ infinite.",
+            "hi": "तनुता प्रति आयतन वाहक घटाती है;κ अनंत नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Λm must become zero",
+            "hi": "Λm शून्य"
+          },
+          "reason": {
+            "en": "Λm normally rises towards a finite limiting value.",
+            "hi": "Λm सामान्यतः परिमित सीमांत मान की ओर बढ़ती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For Cu2++2e−→Cu, charge for1 mol Cu at100% efficiency is?",
+        "hi": "Cu2++2e−→Cu में100% दक्षता पर1 mol Cu हेतु आवेश?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2F",
+            "hi": "2F"
+          },
+          "reason": {
+            "en": "Two moles of electrons are needed per mole Cu.",
+            "hi": "प्रति mol Cu के लिए2 mol इलेक्ट्रॉन चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "F",
+            "hi": "F"
+          },
+          "reason": {
+            "en": "That supplies only1 mol electrons, enough for0.5 mol Cu.",
+            "hi": "यह1 mol इलेक्ट्रॉन देकर0.5 mol Cu बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "F/2",
+            "hi": "F/2"
+          },
+          "reason": {
+            "en": "That is only0.5 mol electrons.",
+            "hi": "यह केवल0.5 mol इलेक्ट्रॉन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Reduction requires transferred charge.",
+            "hi": "अपचयन में स्थानांतरित आवेश आवश्यक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is consumed in sacrificial zinc protection of iron?",
+        "hi": "लोहे की बलिदानी जिंक सुरक्षा में क्या खर्च होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zinc oxidises preferentially",
+            "hi": "जिंक पहले ऑक्सीकृत होता है"
+          },
+          "reason": {
+            "en": "The sacrificial metal provides electrons as it dissolves.",
+            "hi": "बलिदानी धातु घुलते समय इलेक्ट्रॉन देती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Iron must oxidise faster",
+            "hi": "लोहा अधिक तेजी से ऑक्सीकृत"
+          },
+          "reason": {
+            "en": "Protection aims to suppress iron oxidation.",
+            "hi": "सुरक्षा का उद्देश्य लोहे का ऑक्सीकरण घटाना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No metal changes",
+            "hi": "कोई धातु नहीं बदलती"
+          },
+          "reason": {
+            "en": "Sacrificial action requires oxidation of the protecting metal.",
+            "hi": "बलिदानी क्रिया में रक्षक धातु का ऑक्सीकरण होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Salt bridge becomes iron",
+            "hi": "लवण सेतु लोहा बनता है"
+          },
+          "reason": {
+            "en": "A salt bridge is not converted into the protected metal.",
+            "hi": "लवण सेतु संरक्षित धातु में नहीं बदलता।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain why anode signs differ between galvanic and electrolytic cells.",
+        "hi": "गैल्वैनी और विद्युतअपघटनी सेल में ऐनोड के चिह्न अलग क्यों?"
+      },
+      "answer": {
+        "en": "Anode always oxidises. In galvanic operation oxidation supplies electrons; an external source imposes the opposite charge arrangement in electrolysis.",
+        "hi": "ऐनोड हमेशा ऑक्सीकरण करता है। गैल्वैनी में वही इलेक्ट्रॉन देता है; विद्युतअपघटन में बाहरी स्रोत विपरीत आवेश व्यवस्था लगाता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the role of a salt bridge.",
+        "hi": "लवण सेतु का कार्य बताइए।"
+      },
+      "answer": {
+        "en": "Ion migration completes the internal circuit and limits charge build-up; it does not supply external electrons.",
+        "hi": "आयन संचरण भीतरी परिपथ पूरा और आवेश संचय सीमित करता है; यह बाहरी इलेक्ट्रॉन नहीं देता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Write the Nernst equation and state the condition for0.0591/n.",
+        "hi": "नर्न्स्ट समीकरण और0.0591/n की शर्त लिखें।"
+      },
+      "answer": {
+        "en": "E=E°−RTlnQ/(nF); the base10 coefficient0.0591 V/n applies at298 K.",
+        "hi": "E=E°−RTlnQ/(nF); सामान्य लघुगणक का0.0591 V/n गुणांक298 K पर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can conductivity decrease while molar conductivity increases on dilution?",
+        "hi": "तनुता पर चालकता घटकर मोलर चालकता क्यों बढ़ सकती है?"
+      },
+      "answer": {
+        "en": "Conductivity depends on ions per volume; molar conductivity divides by concentration and reflects increased ion mobility and, for weak electrolytes, ionisation.",
+        "hi": "κ प्रति आयतन आयनों पर निर्भर;Λm में सांद्रता का भाग और अधिक गतिशीलता तथा दुर्बल पदार्थ में आयनीकरण का प्रभाव है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Relate cell potential to Gibbs-energy change.",
+        "hi": "सेल विभव और गिब्स ऊर्जा जोड़ें।"
+      },
+      "answer": {
+        "en": "For a reversible written reaction ΔG=−nFE, so positive E means negative ΔG.",
+        "hi": "प्रतिवर्ती लिखी अभिक्रिया मेंΔG=−nFE, इसलिए धनात्मकE पर ऋणात्मकΔG।"
+      }
+    },
+    {
+      "question": {
+        "en": "What assumptions enter a Faraday mass calculation?",
+        "hi": "फैराडे द्रव्यमान गणना की मान्यताएँ क्या हैं?"
+      },
+      "answer": {
+        "en": "Use the stated electrode reaction, its electron number, total passed charge and specified current efficiency; account for competing reactions when relevant.",
+        "hi": "निर्दिष्ट इलेक्ट्रोड अभिक्रिया, इलेक्ट्रॉन संख्या, कुल आवेश और दी धारा दक्षता लें; आवश्यक हो तो प्रतिस्पर्धी अभिक्रियाएँ गिनें।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Anode oxidises; cathode reduces, regardless of electrode signs.",
+      "hi": "चिह्न चाहे जो हो,ऐनोड ऑक्सीकरण और कैथोड अपचयन करता है।"
+    },
+    {
+      "en": "Subtract consistent reduction potentials to obtain E°cell.",
+      "hi": "एकसमान अपचयन विभव घटाकरE°सेल निकालें।"
+    },
+    {
+      "en": "Nernst potential changes with dimensionless Q and temperature.",
+      "hi": "नर्न्स्ट विभव विमाहीनQ और ताप से बदलता है।"
+    },
+    {
+      "en": "Keep conductance, conductivity and molar conductivity units distinct.",
+      "hi": "चालकत्व,चालकता और मोलर चालकता के मात्रक अलग रखें।"
+    },
+    {
+      "en": "Faraday mass follows electron stoichiometry and current efficiency.",
+      "hi": "फैराडे द्रव्यमान इलेक्ट्रॉन स्टॉइकियोमिति और धारा दक्षता पर निर्भर है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not multiply electrode potentials by balancing coefficients, use the298 K Nernst coefficient at arbitrary temperatures, insert pure solids into Q, confuse S with S m^-1, or leave electrolysis time in minutes when using amperes.",
+    "hi": "संतुलन गुणांक से इलेक्ट्रोड विभव न गुणा करें;298 K नर्न्स्ट गुणांक हर ताप पर न लें;Q में शुद्ध ठोस न जोड़ें;S औरS m^-1 न मिलाएँ;ऐम्पियर लेने पर समय मिनट में न छोड़ें।"
+  },
+  "goal": {
+    "en": "Relate redox reactions to cell potential, charge transport and electrical work.",
+    "hi": "रेडॉक्स अभिक्रियाओं को सेल विभव, आवेश परिवहन और विद्युत कार्य से जोड़ें।"
+  },
+  "conceptMap": "रेडॉक्स → इलेक्ट्रोड और सेल → मानक विभव → नर्न्स्ट और साम्य → चालकता व आयन → विद्युतअपघटन → बैटरी,ईंधन सेल और संक्षारण",
+  "conceptMapEn": "Redox → electrodes and cells → standard potentials → Nernst and equilibrium → conductivity and ions → electrolysis → batteries, fuel cells and corrosion",
+  "editionBasis": {
+    "en": "Original explanations aligned to the current NCERT Chemistry Class XII and UP Board 2026–27 syllabus. Use the prescribed textbook and school practicals alongside.",
+    "hi": "वर्तमान NCERT रसायन विज्ञान कक्षा 12 तथा यूपी बोर्ड 2026–27 पाठ्यक्रम के अनुरूप मौलिक व्याख्याएँ। निर्धारित पुस्तक और विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry XII, Chapter 2, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/lech102.pdf"
+    },
+    {
+      "title": "UPMSP Class 12 Chemistry syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/152-Chemistry-Class-12.pdf"
+    }
+  ]
+}

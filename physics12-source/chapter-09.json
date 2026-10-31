@@ -1,0 +1,1089 @@
+{
+  "number": 9,
+  "id": "physics12-09",
+  "title": {
+    "en": "Ray Optics and Optical Instruments",
+    "hi": "किरण प्रकाशिकी एवं प्रकाशीय यंत्र"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Rays and the Cartesian sign convention",
+        "hi": "किरणें और कार्तीय चिह्न परिपाटी"
+      },
+      "paragraphs": [
+        {
+          "en": "Ray optics is a short-wavelength approximation relative to optical-component sizes. In the new Cartesian convention distances are measured from the mirror pole or lens optical centre, positive along incident light and negative opposite. Heights above the principal axis are positive. Image reality and distance sign must be inferred within this convention rather than by a universal real-positive rule.",
+          "hi": "किरण प्रकाशिकी (Ray Optics) में प्रकाश का पथ किरणों से निरूपित करते हैं। यह सन्निकटन तब उपयोगी है जब तरंगदैर्घ्य की तुलना में दर्पण, लेंस और अवरोध के आकार बहुत बड़े हों। किरण प्रकाश के ऊर्जा संचरण की दिशा बताती है; यह प्रकाश की पूरी तरंग या फोटॉन संरचना का निषेध नहीं। गणना में नई कार्तीय चिह्न परिपाटी (Cartesian Sign Convention) अपनाएँ। दर्पण के लिए ध्रुव और लेंस के लिए प्रकाशिक केंद्र से दूरी मापें। आपतित प्रकाश की दिशा धनात्मक तथा विपरीत दिशा ऋणात्मक लें। मुख्य अक्ष से ऊपर ऊँचाई धनात्मक और नीचे ऋणात्मक है। बाईं ओर रखी वास्तविक वस्तु से प्रकाश दाईं ओर आए तो u ऋणात्मक होगा। वास्तविक या आभासी होने से अकेले दूरी का चिह्न तय न करें; चिह्न चुनी अक्ष दिशा से आता है। पहले चित्र में अक्ष और दिशा चिन्हित करें, फिर सूत्र में चिह्न सहित मान रखें। उत्तर के बाद प्रतिमा की स्थिति तथा प्रकृति जाँचें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Draw the direction before inserting numbers, and retain one convention throughout.",
+          "hi": "मान रखने से पहले दिशा का चित्र बनाएँ और पूरे हल में वही परिपाटी रखें। किसी दूसरे स्रोत की अलग चिह्न प्रणाली का याद किया हुआ सूत्र इस प्रणाली के चिह्नों के साथ मिलाना सामान्य गलती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "With incident light from left to right, what sign has the object distance for an ordinary real object on the left?",
+          "hi": "बाएँ से दाएँ आपतित प्रकाश में बाईं वास्तविक वस्तु का u किस चिह्न का है?"
+        },
+        "answer": {
+          "en": "Negative.",
+          "hi": "ऋणात्मक।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Spherical mirrors and magnification",
+        "hi": "गोलीय दर्पण और आवर्धन"
+      },
+      "paragraphs": [
+        {
+          "en": "For paraxial spherical-mirror imaging, 1/f=1/v+1/u and m=−v/u. A concave mirror has negative f in the usual left-object arrangement; a convex mirror has positive f. The sign of magnification indicates orientation. The relations assume paraxial rays and do not eliminate large-aperture aberrations.",
+          "hi": "गोलीय दर्पण (Spherical Mirror) के लिए पराक्षीय किरणों के सन्निकटन में 1/f=1/v+1/u तथा रैखिक आवर्धन m=hi/ho=−v/u है। अवतल दर्पण का मुख्य फोकस आपतित प्रकाश के विपरीत ओर होता है, इसलिए सामान्य बाएँ वस्तु व्यवस्था में f ऋणात्मक है। उत्तल दर्पण का f धनात्मक है। अवतल दर्पण में वस्तु फोकस से बाहर हो तो वास्तविक उलटी प्रतिमा बन सकती है; फोकस और ध्रुव के बीच वस्तु पर आभासी सीधी बड़ी प्रतिमा बनती है। उत्तल दर्पण सामान्य वास्तविक वस्तु की आभासी सीधी छोटी प्रतिमा देता है। m का ऋण चिह्न उलटाव और धन चिह्न सीधापन बताता है। सूत्र पतले किरण पुंज और छोटे कोणों की शर्त रखता है; बड़े द्वारक में गोलीय विपथन हो सकता है। f=R/2 भी इसी पराक्षीय स्थिति में लागू है। वस्तु ठीक फोकस पर होने पर परावर्तित किरणें समानांतर और प्रतिमा अनंत पर मानी जाती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The mirror and lens magnification formulas have different signs.",
+          "hi": "दर्पण और लेंस के आवर्धन सूत्र में चिह्न अलग है। समान वस्तु दूरी और फोकस के संख्यात्मक मान देखकर सूत्र अदलना उचित नहीं; प्रकाश दर्पण में लौटता और लेंस में पार जाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which sign of mirror magnification indicates an inverted image?",
+          "hi": "दर्पण आवर्धन का कौन चिह्न उलटी प्रतिमा बताता है?"
+        },
+        "answer": {
+          "en": "Negative m.",
+          "hi": "ऋणात्मक m।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Refraction and total internal reflection",
+        "hi": "अपवर्तन और पूर्ण आंतरिक परावर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "Snell law uses angles from the normal. Total internal reflection requires incidence from higher to lower refractive index and incidence above C, where sinC=n2/n1. At normal incidence direction remains unchanged even when speed changes. Optical-fibre guidance depends on suitable indices and launch geometry, not merely a large angle at any interface.",
+          "hi": "अपवर्तन (Refraction) में सीमा पर प्रकाश की चाल बदलने से दिशा बदल सकती है। स्नेल नियम n1 sin i=n2 sin r है, जहाँ कोण सीमा के अभिलंब से हैं। अपवर्तनांक n=c/v बताता है कि निर्वात की तुलना में माध्यम में प्रकाश कितना धीमा है। विरल से सघन में किरण सामान्यतः अभिलंब की ओर मुड़ती है; सीमा पर ठीक अभिलंब आपतन में दिशा नहीं बदलती, हालांकि चाल बदलती है। पूर्ण आंतरिक परावर्तन (Total Internal Reflection) केवल सघन से विरल की ओर तथा आपतन कोण क्रांतिक कोण से अधिक होने पर होता है। क्रांतिक स्थिति में अपवर्तन कोण 90° है और sin C=n2/n1, जब n1>n2। क्रांतिक कोण से कम पर सामान्यतः परावर्तन और पारगमन दोनों होते हैं। प्रकाशीय तंतु में उचित कोर-क्लैडिंग अपवर्तनांक और प्रवेश स्थितियाँ प्रकाश को सीमित पथ में रखने में सहायक हैं। किसी भी सीमा पर केवल बड़ा आपतन कोण होना पूर्ण आंतरिक परावर्तन की पर्याप्त शर्त नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Distinguish the incident angle from the angle with the surface.",
+          "hi": "आपतन कोण को पृष्ठ से बने कोण से अलग रखें। 60° पृष्ठ कोण का अभिलंब कोण 30° होगा; इसी अंतर से स्नेल नियम और क्रांतिक कोण की तुलना में उत्तर बदल सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can total internal reflection occur from air into glass?",
+          "hi": "क्या हवा से काँच में पूर्ण आंतरिक परावर्तन हो सकता है?"
+        },
+        "answer": {
+          "en": "Not in the ordinary air-to-glass direction, because it is lower to higher index.",
+          "hi": "सामान्य हवा से काँच दिशा में नहीं, क्योंकि अपवर्तनांक कम से अधिक है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Spherical refraction and thin lenses",
+        "hi": "गोलीय अपवर्तन और पतले लेंस"
+      },
+      "paragraphs": [
+        {
+          "en": "Refraction at a spherical interface follows n2/v−n1/u=(n2−n1)/R under paraxial conditions. Thin lenses satisfy 1/f=1/v−1/u and m=v/u in the Cartesian convention. A converging lens in air has positive f. Numerical signs should be interpreted using the ray geometry, not rejected automatically.",
+          "hi": "एक गोलीय अपवर्तक पृष्ठ पर पराक्षीय किरणों के लिए n2/v−n1/u=(n2−n1)/R लागू होता है। R का चिह्न वक्रता केंद्र की स्थिति से तय करें। पतले लेंस (Thin Lens) के दोनों पृष्ठों के प्रभाव जोड़ने पर 1/f=1/v−1/u मिलता है। हवा में अभिसारी उत्तल लेंस का f धनात्मक और अपसारी अवतल लेंस का f ऋणात्मक है। लेंस का रैखिक आवर्धन m=v/u है, दर्पण का −v/u नहीं। उत्तल लेंस में वस्तु f से दूर हो तो वास्तविक उलटी प्रतिमा, और f के भीतर हो तो आभासी सीधी बड़ी प्रतिमा मिल सकती है। अवतल लेंस सामान्य वास्तविक वस्तु के लिए आभासी सीधी छोटी प्रतिमा देता है। पतले लेंस में मोटाई प्रभाव तथा बड़े कोण उपेक्षित हैं। वस्तु या प्रतिमा ठीक फोकस पर होने से निकलती या आती किरणें समानांतर हो सकती हैं। हर परिणाम को किरण चित्र से जाँचें; केवल कैलकुलेटर की ऋणात्मक संख्या को त्रुटि न समझें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "State the surrounding medium before calling a lens converging from shape alone.",
+          "hi": "केवल आकार देखकर लेंस को अभिसारी कहने से पहले आसपास का माध्यम बताएँ। यहाँ सामान्य उत्तल-अवतल कथन हवा में लेंस के लिए हैं; सापेक्ष अपवर्तनांक बदलने पर व्यवहार बदल सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the thin-lens magnification formula in this convention?",
+          "hi": "इस परिपाटी में पतले लेंस का आवर्धन सूत्र क्या है?"
+        },
+        "answer": {
+          "en": "m=v/u.",
+          "hi": "m=v/u।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Lens maker, power and combinations",
+        "hi": "लेंस निर्माता सूत्र, क्षमता और संयोजन"
+      },
+      "paragraphs": [
+        {
+          "en": "The lens-maker relation uses signed radii and relative refractive index. Power is reciprocal focal length in metres. Powers add for thin lenses in contact; separated lenses require an additional treatment. Greater positive power means a shorter positive focal length, not a larger focal distance.",
+          "hi": "लेंस निर्माता सूत्र (Lens Maker Formula) पतले लेंस की फोकस दूरी को वक्रताओं और सापेक्ष अपवर्तनांक से जोड़ता है: 1/f=(nrel−1)(1/R1−1/R2)। हवा में nrel लगभग लेंस का अपवर्तनांक है। R1,R2 के चिह्न दोनों पृष्ठों के वक्रता केंद्रों से आते हैं; दोनों को केवल धनात्मक त्रिज्या मानना गलत होगा। लेंस क्षमता (Power) P=1/f है, जब f मीटर में हो; मात्रक डायॉप्टर D=m^-1 है। अभिसारी लेंस की क्षमता धनात्मक, अपसारी की ऋणात्मक है। संपर्क में रखे पतले लेंसों के लिए P=P1+P2 और 1/F=1/f1+1/f2 लागू होते हैं। दूरी पर अलग रखे लेंसों का सरल क्षमता योग सामान्यतः सही नहीं। क्षमता बड़ी होने का अर्थ छोटी फोकस दूरी है। 20 cm को 0.20 m बदलने पर +5 D मिलता है, +0.05 D नहीं। संयोजन में अंतिम छवि की गणना हेतु पहले लेंस की प्रतिमा दूसरे के लिए वस्तु हो सकती है; आवश्यक होने पर चरणों में हल करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Add signed powers, not unsigned focal lengths.",
+          "hi": "चिह्न सहित क्षमताएँ जोड़ें, बिना चिह्न की फोकस दूरियाँ नहीं। यदि +5 D और −5 D लेंस संपर्क में हों तो आदर्श संयुक्त क्षमता शून्य होगी और प्रभावी फोकस दूरी अनंत मानी जाएगी।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the power of a +20 cm lens?",
+          "hi": "+20 cm लेंस की क्षमता कितनी है?"
+        },
+        "answer": {
+          "en": "+5 D, because f=+0.20 m.",
+          "hi": "+5 D, क्योंकि f=+0.20 m।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Prism and minimum deviation",
+        "hi": "प्रिज्म और न्यूनतम विचलन"
+      },
+      "paragraphs": [
+        {
+          "en": "A prism obeys r1+r2=A and δ=i+e−A. At minimum deviation the path is symmetric, giving n=sin[(A+δm)/2]/sin(A/2) in air. This is not a formula for an arbitrary deviation. Dispersion arises because refractive index depends on wavelength; ordinary glass in normal dispersion deviates violet more than red.",
+          "hi": "प्रिज्म (Prism) में किरण दो अपवर्तक पृष्ठों से गुजरती है। प्रिज्म कोण A तथा अंदर के अपवर्तन कोणों के लिए r1+r2=A है। कुल विचलन δ=i+e−A होता है, जहाँ i आपतन और e निर्गमन कोण है। न्यूनतम विचलन (Minimum Deviation) पर सममित पथ मिलता है: i=e और r1=r2=A/2। हवा में प्रिज्म के लिए n=sin[(A+δm)/2]/sin(A/2) है। यह न्यूनतम स्थिति का सूत्र है; किसी भी मनमाने विचलन पर δ को δm समझकर नहीं लगा सकते। अलग तरंगदैर्घ्य के लिए n बदलने से वर्ण विक्षेपण होता है। सामान्य काँच में बैंगनी प्रकाश लाल से अधिक विचलित होता है, लेकिन यह सामान्य प्रसरण क्षेत्र का कथन है। प्रिज्म में सफेद प्रकाश अलग रंगों में बँटता है; नया रंगीन पदार्थ पैदा नहीं होता। पतले प्रिज्म और छोटे कोणों का δ≈(n−1)A सन्निकटन अलग शर्त रखता है, इसलिए बड़े कोणों पर साइन वाला सूत्र छोड़कर उसका उपयोग न करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use degree or radian mode consistently when evaluating trigonometric expressions.",
+          "hi": "त्रिकोणमितीय मान निकालते समय डिग्री या रेडियन मोड सुसंगत रखें। सूत्र में A तथा δm को जोड़ने से पहले दोनों की समान कोणीय इकाई सुनिश्चित करें; आधा कोण लेना भूलना बड़ी संख्यात्मक गलती देता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At minimum deviation, how are i and e related?",
+          "hi": "न्यूनतम विचलन पर i और e का संबंध क्या है?"
+        },
+        "answer": {
+          "en": "i=e.",
+          "hi": "i=e।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Magnifier and compound microscope",
+        "hi": "आवर्धक और संयुक्त सूक्ष्मदर्शी"
+      },
+      "paragraphs": [
+        {
+          "en": "Angular magnification compares visual angles, not always image heights. A simple magnifier gives D/f for an image at infinity and 1+D/f at the near point under standard assumptions. A compound microscope first forms an enlarged real intermediate image; a normal-adjustment estimate is |M|≈(L/fo)(D/fe), with the optical-tube-length approximation explicitly stated.",
+          "hi": "प्रकाशीय यंत्रों में कोणीय आवर्धन (Angular Magnification) आँख को दिखाई देने वाले कोण की तुलना करता है; यह हमेशा प्रतिमा की सेंटीमीटर ऊँचाई का अनुपात नहीं। सरल आवर्धक में सामान्य आँख के स्पष्ट दृष्टि की न्यूनतम दूरी D≈25 cm लेते हैं। अंतिम प्रतिमा अनंत पर हो तो आवर्धन का परिमाण D/f और निकट बिंदु पर हो तो 1+D/f होता है, उपयुक्त आँख स्थिति और पतले लेंस सन्निकटन के साथ। संयुक्त सूक्ष्मदर्शी में छोटी फोकस दूरी का अभिदृश्यक वस्तु की वास्तविक बड़ी मध्यवर्ती प्रतिमा बनाता है, जिसे नेत्रिका और बड़ा कोण देकर दिखाती है। सामान्य समायोजन में परिमाण लगभग (L/fo)(D/fe) है, जहाँ L उपयुक्त प्रकाशीय नली लंबाई का सन्निकट मान है। वास्तविक ज्यामिति में अभिदृश्यक का आवर्धन v/u से निकालना अधिक सटीक हो सकता है। प्रतिमा सामान्यतः वस्तु के सापेक्ष उलटी होती है। गणना में fo,fe,L,D को एक ही लंबाई इकाई में रखना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not use the near-point and infinity formulas interchangeably.",
+          "hi": "निकट बिंदु और अनंत प्रतिमा के सूत्र अदलकर न लगाएँ। पहले अंतिम प्रतिमा की स्थिति लिखें। सूक्ष्मदर्शी में अभिदृश्यक तथा नेत्रिका की फोकस दूरियों का योगदान भी अलग पहचानें; केवल 2 लेंस होने से दूरदर्शक सूत्र लागू नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For relaxed viewing through a simple magnifier, what is |M|?",
+          "hi": "सरल आवर्धक से शिथिल आँख द्वारा देखने पर |M| कितना है?"
+        },
+        "answer": {
+          "en": "D/f for an image at infinity.",
+          "hi": "अनंत प्रतिमा के लिए D/f।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Astronomical telescope and model limits",
+        "hi": "खगोलीय दूरदर्शक और मॉडल की सीमाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "An astronomical telescope focuses nearly parallel incoming rays. In normal adjustment its ideal refracting form has length fo+fe and M=−fo/fe. Larger angular magnification alone does not guarantee better detail; aperture, wave effects and atmosphere matter. Reflecting telescopes use a mirror objective. Ray diagrams are typically schematic rather than scale drawings.",
+          "hi": "खगोलीय दूरदर्शक (Astronomical Telescope) दूर की वस्तु से आती लगभग समानांतर किरणों को अभिदृश्यक से फोकस कर मध्यवर्ती प्रतिमा बनाता है। नेत्रिका उसे देखने के लिए कोण बढ़ाती है। सामान्य समायोजन में अंतिम प्रतिमा अनंत पर होती है; आदर्श अपवर्तक दूरदर्शक की लंबाई fo+fe तथा कोणीय आवर्धन M=−fo/fe है। ऋण चिह्न उलटी प्रतिमा बताता है; परिमाण fo/fe है। दूरदर्शक में बड़ा अभिदृश्यक प्रकाश संग्रह बढ़ाता है, लेकिन केवल आवर्धन बढ़ाने से हर सूक्ष्म विवरण स्पष्ट नहीं होता। तरंग प्रभाव, द्वारक, गुणवत्ता और वातावरण भी सीमाएँ डालते हैं। परावर्ती दूरदर्शक में बड़ा अवतल दर्पण अभिदृश्यक का काम करता है और रंग संबंधी कुछ लेंस समस्याएँ कम होती हैं। कक्षा के किरण चित्र दूरी, लेंस मोटाई और आँख को पैमाने पर नहीं दिखाते। उनका उद्देश्य फोकस, किरण मार्ग और प्रतिमा की प्रकृति समझना है; स्क्रीन पर मापी लंबाई को वास्तविक यंत्र का सही अनुपात न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A negative signed magnification can be a correct physical result, not an arithmetic failure.",
+          "hi": "ऋणात्मक आवर्धन सही भौतिक परिणाम हो सकता है, गणना की विफलता नहीं। अंतिम उत्तर में परिमाण के साथ उलटी या सीधी प्रतिमा लिखना चिह्न का अर्थ स्पष्ट करता है और यंत्रों की तुलना आसान बनाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "A telescope has fo=100 cm and fe=5 cm. What is |M| in normal adjustment?",
+          "hi": "दूरदर्शक में fo=100 cm,fe=5 cm हैं। सामान्य समायोजन में |M| कितना है?"
+        },
+        "answer": {
+          "en": "20.",
+          "hi": "20।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "1/f=1/v+1/u; m=−v/u",
+      "meaning": {
+        "en": "Paraxial spherical-mirror imaging in the Cartesian convention.",
+        "hi": "कार्तीय परिपाटी में पराक्षीय गोलीय दर्पण प्रतिबिंबन।"
+      },
+      "units": {
+        "en": "All distances in the same length unit; m dimensionless",
+        "hi": "सभी दूरियाँ समान लंबाई इकाई; m विमाहीन"
+      }
+    },
+    {
+      "expression": "n1 sin i=n2 sin r; sin C=n2/n1",
+      "meaning": {
+        "en": "Refraction and critical angle; C requires n1>n2.",
+        "hi": "अपवर्तन और क्रांतिक कोण; C हेतु n1>n2।"
+      },
+      "units": {
+        "en": "Indices dimensionless; angles consistent",
+        "hi": "अपवर्तनांक विमाहीन; कोण सुसंगत"
+      }
+    },
+    {
+      "expression": "n2/v−n1/u=(n2−n1)/R",
+      "meaning": {
+        "en": "Paraxial refraction at one spherical surface.",
+        "hi": "1 गोलीय पृष्ठ पर पराक्षीय अपवर्तन।"
+      },
+      "units": {
+        "en": "Distances use signed Cartesian lengths",
+        "hi": "दूरियाँ चिह्न सहित कार्तीय लंबाइयाँ"
+      }
+    },
+    {
+      "expression": "1/f=1/v−1/u; m=v/u",
+      "meaning": {
+        "en": "Thin-lens formula in the Cartesian convention.",
+        "hi": "कार्तीय परिपाटी में पतले लेंस का सूत्र।"
+      },
+      "units": {
+        "en": "Signed lengths in one unit",
+        "hi": "चिह्नित लंबाइयाँ 1 इकाई में"
+      }
+    },
+    {
+      "expression": "P=1/f; Pcontact=P1+P2",
+      "meaning": {
+        "en": "Lens power and thin lenses in contact.",
+        "hi": "लेंस क्षमता और संपर्क में पतले लेंस।"
+      },
+      "units": {
+        "en": "f in m; P in dioptre D",
+        "hi": "f को m में; P डायॉप्टर D"
+      }
+    },
+    {
+      "expression": "n=sin[(A+δm)/2]/sin(A/2)",
+      "meaning": {
+        "en": "Prism in air at minimum deviation.",
+        "hi": "हवा में न्यूनतम विचलन पर प्रिज्म।"
+      },
+      "units": {
+        "en": "Angles in a consistent angular unit",
+        "hi": "कोण समान कोणीय इकाई में"
+      }
+    },
+    {
+      "expression": "Mtelescope=−fo/fe; length=fo+fe",
+      "meaning": {
+        "en": "Ideal normal adjustment with final image at infinity.",
+        "hi": "अनंत अंतिम प्रतिमा वाला आदर्श सामान्य समायोजन।"
+      },
+      "units": {
+        "en": "focal lengths in the same unit",
+        "hi": "फोकस दूरियाँ समान इकाई में"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A concave mirror has f=−15 cm and object distance u=−30 cm. Find image and magnification.",
+        "hi": "अवतल दर्पण में f=−15 cm,u=−30 cm हैं। प्रतिमा और आवर्धन निकालें।"
+      },
+      "given": {
+        "en": "Cartesian convention; incident light left to right.",
+        "hi": "कार्तीय परिपाटी; आपतित प्रकाश बाएँ से दाएँ।"
+      },
+      "find": {
+        "en": "v,m.",
+        "hi": "v,m।"
+      },
+      "formula": {
+        "en": "1/v=1/f−1/u; m=−v/u",
+        "hi": "1/v=1/f−1/u; m=−v/u"
+      },
+      "steps": [
+        {
+          "en": "1/v=−1/15+1/30=−1/30.",
+          "hi": "1/v=−1/15+1/30=−1/30।"
+        },
+        {
+          "en": "v=−30 cm; m=−(−30)/(−30)=−1.",
+          "hi": "v=−30 cm; m=−(−30)/(−30)=−1।"
+        }
+      ],
+      "answer": {
+        "en": "v=−30 cm; real, inverted, same size.",
+        "hi": "v=−30 cm; वास्तविक, उलटी, समान आकार।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A converging thin lens has f=+20 cm and u=−30 cm. Find v and m.",
+        "hi": "अभिसारी पतले लेंस में f=+20 cm,u=−30 cm हैं। v,m निकालें।"
+      },
+      "given": {
+        "en": "Lens in air.",
+        "hi": "हवा में लेंस।"
+      },
+      "find": {
+        "en": "Image position and magnification.",
+        "hi": "प्रतिमा स्थिति और आवर्धन।"
+      },
+      "formula": {
+        "en": "1/v=1/f+1/u; m=v/u",
+        "hi": "1/v=1/f+1/u; m=v/u"
+      },
+      "steps": [
+        {
+          "en": "1/v=1/20−1/30=1/60.",
+          "hi": "1/v=1/20−1/30=1/60।"
+        },
+        {
+          "en": "v=+60 cm; m=60/(−30)=−2.",
+          "hi": "v=+60 cm; m=60/(−30)=−2।"
+        }
+      ],
+      "answer": {
+        "en": "+60 cm, real inverted image, magnification −2.",
+        "hi": "+60 cm, वास्तविक उलटी प्रतिमा, आवर्धन −2।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the glass-to-air critical angle for nglass=1.5 and nair=1.",
+        "hi": "nglass=1.5,nair=1 के लिए काँच से हवा का क्रांतिक कोण निकालें।"
+      },
+      "given": {
+        "en": "n1=1.5>n2=1.",
+        "hi": "n1=1.5>n2=1।"
+      },
+      "find": {
+        "en": "C.",
+        "hi": "C।"
+      },
+      "formula": {
+        "en": "sinC=n2/n1",
+        "hi": "sinC=n2/n1"
+      },
+      "steps": [
+        {
+          "en": "sinC=1/1.5=2/3.",
+          "hi": "sinC=1/1.5=2/3।"
+        },
+        {
+          "en": "C=sin^-1(2/3).",
+          "hi": "C=sin^-1(2/3)।"
+        }
+      ],
+      "answer": {
+        "en": "About41.8°; total internal reflection requires i>C.",
+        "hi": "लगभग41.8°; पूर्ण आंतरिक परावर्तन हेतु i>C।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Two thin lenses of focal lengths +10 cm and −20 cm touch. Find combined power and focal length.",
+        "hi": "+10 cm और −20 cm फोकस दूरी के 2 पतले लेंस संपर्क में हैं। संयुक्त क्षमता और फोकस दूरी निकालें।"
+      },
+      "given": {
+        "en": "f1=+0.10 m,f2=−0.20 m.",
+        "hi": "f1=+0.10 m,f2=−0.20 m।"
+      },
+      "find": {
+        "en": "P,F.",
+        "hi": "P,F।"
+      },
+      "formula": {
+        "en": "P=1/f1+1/f2; F=1/P",
+        "hi": "P=1/f1+1/f2; F=1/P"
+      },
+      "steps": [
+        {
+          "en": "P1=+10 D,P2=−5 D.",
+          "hi": "P1=+10 D,P2=−5 D।"
+        },
+        {
+          "en": "P=+5 D; F=+0.20 m.",
+          "hi": "P=+5 D; F=+0.20 m।"
+        }
+      ],
+      "answer": {
+        "en": "+5 D and +20 cm; converging combination.",
+        "hi": "+5 D और +20 cm; अभिसारी संयोजन।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A microscope in normal adjustment has approximate optical tube length20 cm, fo=1 cm and fe=5 cm. Take D=25 cm. Estimate |M|.",
+        "hi": "सामान्य समायोजन सूक्ष्मदर्शी में सन्निकट प्रकाशीय नली लंबाई20 cm,fo=1 cm,fe=5 cm हैं। D=25 cm लेकर |M| का अनुमान लगाएँ।"
+      },
+      "given": {
+        "en": "Use the long-tube approximation.",
+        "hi": "लंबी नली का सन्निकटन लें।"
+      },
+      "find": {
+        "en": "Angular magnification magnitude.",
+        "hi": "कोणीय आवर्धन का परिमाण।"
+      },
+      "formula": {
+        "en": "|M|≈(L/fo)(D/fe)",
+        "hi": "|M|≈(L/fo)(D/fe)"
+      },
+      "steps": [
+        {
+          "en": "Objective factor≈20/1=20.",
+          "hi": "अभिदृश्यक गुणक≈20/1=20।"
+        },
+        {
+          "en": "Eyepiece factor=25/5=5.",
+          "hi": "नेत्रिका गुणक=25/5=5।"
+        },
+        {
+          "en": "Multiply20×5.",
+          "hi": "20×5 करें।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately100; the image is inverted.",
+        "hi": "लगभग100; प्रतिमा उलटी है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "For a left-side real object with incident light to the right, u is",
+        "hi": "बाईं वास्तविक वस्तु और दाईं आपतित प्रकाश दिशा में u है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Negative",
+            "hi": "ऋणात्मक"
+          },
+          "reason": {
+            "en": "Distances opposite incident light are negative.",
+            "hi": "आपतित प्रकाश के विपरीत दूरी ऋणात्मक।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always positive",
+            "hi": "हमेशा धनात्मक"
+          },
+          "reason": {
+            "en": "That is not this Cartesian convention.",
+            "hi": "यह कार्तीय परिपाटी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero for every real object",
+            "hi": "हर वास्तविक वस्तु के लिए शून्य"
+          },
+          "reason": {
+            "en": "Only the origin has zero coordinate.",
+            "hi": "केवल मूलबिंदु का निर्देशांक शून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "Determined only by colour",
+            "hi": "केवल रंग से तय"
+          },
+          "reason": {
+            "en": "Position, not colour, sets the sign.",
+            "hi": "स्थिति चिह्न तय करती है, रंग नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The spherical-mirror formula is",
+        "hi": "गोलीय दर्पण सूत्र है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/f=1/v+1/u",
+            "hi": "1/f=1/v+1/u"
+          },
+          "reason": {
+            "en": "This is the paraxial mirror relation.",
+            "hi": "यह पराक्षीय दर्पण संबंध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/f=1/v−1/u",
+            "hi": "1/f=1/v−1/u"
+          },
+          "reason": {
+            "en": "That is the thin-lens form in this convention.",
+            "hi": "यह इस परिपाटी में पतले लेंस का रूप है।"
+          }
+        },
+        {
+          "text": {
+            "en": "f=u+v",
+            "hi": "f=u+v"
+          },
+          "reason": {
+            "en": "Reciprocals are required.",
+            "hi": "व्युत्क्रम चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "m=v/u for a mirror",
+            "hi": "दर्पण के लिए m=v/u"
+          },
+          "reason": {
+            "en": "Mirror magnification includes a minus sign.",
+            "hi": "दर्पण आवर्धन में ऋण चिह्न है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For a thin lens, magnification is",
+        "hi": "पतले लेंस में आवर्धन है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "v/u",
+            "hi": "v/u"
+          },
+          "reason": {
+            "en": "It follows from the ray geometry in this convention.",
+            "hi": "इस परिपाटी की किरण ज्यामिति से यही है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−v/u",
+            "hi": "−v/u"
+          },
+          "reason": {
+            "en": "This is the mirror expression.",
+            "hi": "यह दर्पण व्यंजक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "u+v",
+            "hi": "u+v"
+          },
+          "reason": {
+            "en": "Magnification is a dimensionless ratio.",
+            "hi": "आवर्धन विमाहीन अनुपात है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/f",
+            "hi": "1/f"
+          },
+          "reason": {
+            "en": "That is lens power when f is in metres.",
+            "hi": "f मीटर में हो तो वह क्षमता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Total internal reflection requires",
+        "hi": "पूर्ण आंतरिक परावर्तन की शर्त है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Higher to lower index and i>C",
+            "hi": "अधिक से कम अपवर्तनांक और i>C"
+          },
+          "reason": {
+            "en": "Both conditions are needed.",
+            "hi": "दोनों शर्तें जरूरी।"
+          }
+        },
+        {
+          "text": {
+            "en": "Lower to higher index",
+            "hi": "कम से अधिक अपवर्तनांक"
+          },
+          "reason": {
+            "en": "This cannot give the ordinary critical-angle condition.",
+            "hi": "इससे सामान्य क्रांतिक शर्त नहीं मिलती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any incidence above0°",
+            "hi": "0° से अधिक कोई भी आपतन"
+          },
+          "reason": {
+            "en": "The critical angle must be exceeded.",
+            "hi": "क्रांतिक कोण से अधिक चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only normal incidence",
+            "hi": "केवल अभिलंब आपतन"
+          },
+          "reason": {
+            "en": "At normal incidence transmission generally occurs.",
+            "hi": "अभिलंब पर सामान्यतः पारगमन होता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A lens with f=−0.5 m has power",
+        "hi": "f=−0.5 m लेंस की क्षमता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−2 D",
+            "hi": "−2 D"
+          },
+          "reason": {
+            "en": "P=1/(−0.5)=−2.",
+            "hi": "P=1/(−0.5)=−2।"
+          }
+        },
+        {
+          "text": {
+            "en": "+2 D",
+            "hi": "+2 D"
+          },
+          "reason": {
+            "en": "The negative focal-length sign was lost.",
+            "hi": "ऋण चिह्न छूट गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "−0.5 D",
+            "hi": "−0.5 D"
+          },
+          "reason": {
+            "en": "Power is reciprocal focal length.",
+            "hi": "क्षमता व्युत्क्रम फोकस दूरी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−50 D",
+            "hi": "−50 D"
+          },
+          "reason": {
+            "en": "Unit conversion was misused.",
+            "hi": "इकाई परिवर्तन गलत।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For thin lenses in contact, the combined power is",
+        "hi": "संपर्क में पतले लेंसों की संयुक्त क्षमता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "P1+P2",
+            "hi": "P1+P2"
+          },
+          "reason": {
+            "en": "Signed powers add for contact lenses.",
+            "hi": "संपर्क में चिह्नित क्षमताएँ जुड़ती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "P1P2",
+            "hi": "P1P2"
+          },
+          "reason": {
+            "en": "The product has wrong units.",
+            "hi": "गुणन के मात्रक गलत।"
+          }
+        },
+        {
+          "text": {
+            "en": "f1+f2",
+            "hi": "f1+f2"
+          },
+          "reason": {
+            "en": "Focal lengths do not simply add.",
+            "hi": "फोकस दूरियाँ सीधे नहीं जुड़तीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "हमेशा शून्य"
+          },
+          "reason": {
+            "en": "Only special opposite-power cases cancel.",
+            "hi": "केवल खास विपरीत क्षमता मामले कटते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At prism minimum deviation",
+        "hi": "प्रिज्म के न्यूनतम विचलन पर"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "i=e",
+            "hi": "i=e"
+          },
+          "reason": {
+            "en": "The ray path is symmetric.",
+            "hi": "किरण पथ सममित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "i=0 always",
+            "hi": "हमेशा i=0"
+          },
+          "reason": {
+            "en": "The symmetric angle need not be zero.",
+            "hi": "सममित कोण शून्य जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "r1=0 always",
+            "hi": "हमेशा r1=0"
+          },
+          "reason": {
+            "en": "r1=A/2 at minimum deviation.",
+            "hi": "न्यूनतम पर r1=A/2।"
+          }
+        },
+        {
+          "text": {
+            "en": "δm=A for every prism",
+            "hi": "हर प्रिज्म में δm=A"
+          },
+          "reason": {
+            "en": "It depends on refractive index.",
+            "hi": "यह अपवर्तनांक पर निर्भर।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For a magnifier with final image at infinity, |M| is",
+        "hi": "अनंत अंतिम प्रतिमा वाले आवर्धक का |M| है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "D/f",
+            "hi": "D/f"
+          },
+          "reason": {
+            "en": "This is the relaxed-eye standard relation.",
+            "hi": "यह शिथिल आँख का मानक संबंध।"
+          }
+        },
+        {
+          "text": {
+            "en": "1+D/f",
+            "hi": "1+D/f"
+          },
+          "reason": {
+            "en": "That is the near-point image case.",
+            "hi": "वह निकट बिंदु प्रतिमा की स्थिति।"
+          }
+        },
+        {
+          "text": {
+            "en": "f/D",
+            "hi": "f/D"
+          },
+          "reason": {
+            "en": "This is the inverse ratio.",
+            "hi": "यह उलटा अनुपात।"
+          }
+        },
+        {
+          "text": {
+            "en": "fo/fe always",
+            "hi": "हमेशा fo/fe"
+          },
+          "reason": {
+            "en": "That is a telescope relation.",
+            "hi": "वह दूरदर्शक संबंध है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An astronomical telescope in normal adjustment has length",
+        "hi": "सामान्य समायोजन खगोलीय दूरदर्शक की लंबाई"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "fo+fe",
+            "hi": "fo+fe"
+          },
+          "reason": {
+            "en": "The intermediate focal planes coincide.",
+            "hi": "मध्यवर्ती फोकस तल मिलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "fo−fe always",
+            "hi": "हमेशा fo−fe"
+          },
+          "reason": {
+            "en": "Not for the stated ordinary converging-lens telescope.",
+            "hi": "बताए सामान्य अभिसारी लेंस दूरदर्शक में नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "fofe",
+            "hi": "fofe"
+          },
+          "reason": {
+            "en": "This has units of area.",
+            "hi": "इसका मात्रक क्षेत्रफल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The lenses are separated.",
+            "hi": "लेंस अलग रखे जाते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A thin converging lens has f=+10 cm and u=−20 cm. Its image distance is",
+        "hi": "पतले अभिसारी लेंस में f=+10 cm,u=−20 cm है। प्रतिमा दूरी"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "+20 cm",
+            "hi": "+20 cm"
+          },
+          "reason": {
+            "en": "1/v=1/10−1/20=1/20.",
+            "hi": "1/v=1/10−1/20=1/20।"
+          }
+        },
+        {
+          "text": {
+            "en": "−20 cm",
+            "hi": "−20 cm"
+          },
+          "reason": {
+            "en": "This would put the image on the wrong side.",
+            "hi": "यह प्रतिमा गलत ओर रखता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "+6.67 cm",
+            "hi": "+6.67 cm"
+          },
+          "reason": {
+            "en": "This uses the mirror-style sign incorrectly.",
+            "hi": "इसमें दर्पण वाला चिह्न गलत लगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinity",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "Infinity occurs for u=−f, not−2f.",
+            "hi": "अनंत u=−f पर, −2f पर नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State the Cartesian sign rules used for lenses.",
+        "hi": "लेंसों में प्रयुक्त कार्तीय चिह्न नियम लिखें।"
+      },
+      "answer": {
+        "en": "Measure from optical centre; along incident light positive, opposite negative; heights above axis positive.",
+        "hi": "प्रकाशिक केंद्र से मापें; आपतित प्रकाश दिशा धनात्मक, विपरीत ऋणात्मक; अक्ष से ऊपर ऊँचाई धनात्मक।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish mirror and thin-lens formulas.",
+        "hi": "दर्पण और पतले लेंस सूत्र में भेद लिखें।"
+      },
+      "answer": {
+        "en": "Mirror:1/f=1/v+1/u,m=−v/u. Lens:1/f=1/v−1/u,m=v/u in the same Cartesian convention.",
+        "hi": "समान कार्तीय परिपाटी में दर्पण:1/f=1/v+1/u,m=−v/u; लेंस:1/f=1/v−1/u,m=v/u।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the two conditions for total internal reflection.",
+        "hi": "पूर्ण आंतरिक परावर्तन की 2 शर्तें समझाएँ।"
+      },
+      "answer": {
+        "en": "The ray must go from higher to lower index, and incidence must exceed C=sin^-1(n2/n1).",
+        "hi": "किरण अधिक से कम अपवर्तनांक में जाए और आपतन C=sin^-1(n2/n1) से अधिक हो।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does a prism separate white light?",
+        "hi": "प्रिज्म श्वेत प्रकाश को अलग क्यों करता है?"
+      },
+      "answer": {
+        "en": "Different wavelengths have different refractive indices and deviations in the material.",
+        "hi": "पदार्थ में अलग तरंगदैर्घ्य के अपवर्तनांक और विचलन अलग होते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find total power of +4 D and−1.5 D thin lenses in contact.",
+        "hi": "संपर्क में +4 D और−1.5 D पतले लेंसों की कुल क्षमता निकालें।"
+      },
+      "answer": {
+        "en": "P=4−1.5=+2.5 D, so F=+0.4 m.",
+        "hi": "P=4−1.5=+2.5 D, इसलिए F=+0.4 m।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare microscope and telescope objectives.",
+        "hi": "सूक्ष्मदर्शी और दूरदर्शक के अभिदृश्यक की तुलना करें।"
+      },
+      "answer": {
+        "en": "A microscope uses a short-focal-length objective for a nearby object; a telescope uses a long-focal-length large objective for a distant object.",
+        "hi": "सूक्ष्मदर्शी पास की वस्तु हेतु छोटी फोकस दूरी का अभिदृश्यक; दूरदर्शक दूर की वस्तु हेतु बड़ी फोकस दूरी और बड़ा द्वारक उपयोग करता है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Choose one Cartesian convention first.",
+      "hi": "पहले 1 कार्तीय परिपाटी चुनें।"
+    },
+    {
+      "en": "Mirror and lens formulas differ in sign.",
+      "hi": "दर्पण और लेंस सूत्र के चिह्न भिन्न हैं।"
+    },
+    {
+      "en": "TIR requires higher-to-lower index and i>C.",
+      "hi": "पूर्ण आंतरिक परावर्तन हेतु अधिक से कम अपवर्तनांक और i>C।"
+    },
+    {
+      "en": "Thin contact-lens powers add algebraically.",
+      "hi": "संपर्क पतले लेंसों की क्षमताएँ बीजगणितीय जुड़ती हैं।"
+    },
+    {
+      "en": "Instrument magnification depends on final-image adjustment.",
+      "hi": "यंत्र आवर्धन अंतिम प्रतिमा समायोजन पर निर्भर है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not combine mirror and lens sign formulas, use centimetres directly for dioptres, or apply the minimum-deviation relation away from its condition.",
+    "hi": "दर्पण और लेंस के चिह्न सूत्र न मिलाएँ, डायॉप्टर के लिए सीधे cm न रखें और न्यूनतम विचलन का सूत्र उसकी शर्त बिना न लगाएँ।"
+  },
+  "goal": {
+    "en": "Use ray diagrams, consistent signs and optical formulas to explain images.",
+    "hi": "किरण चित्र, सुसंगत चिह्न और प्रकाशीय सूत्रों से प्रतिमाएँ समझें।"
+  },
+  "conceptMap": "चिह्न → परावर्तन → अपवर्तन → लेंस → प्रिज्म → यंत्र",
+  "conceptMapEn": "Signs → reflection → refraction → lenses → prism → instruments",
+  "editionBasis": {
+    "en": "Original study explanations for current NCERT Physics XII and UP Board 2026–27. Use the prescribed text and practical work too. UP Board-specific topics are identified where scope differs.",
+    "hi": "वर्तमान NCERT भौतिकी कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और प्रयोग भी साथ पढ़ें। जहाँ दायरा अलग है, यूपी बोर्ड के अतिरिक्त विषय पहचाने गए हैं।"
+  },
+  "sources": [
+    {
+      "title": "UPMSP Physics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Physics XII Chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/leph201.pdf"
+    }
+  ]
+}

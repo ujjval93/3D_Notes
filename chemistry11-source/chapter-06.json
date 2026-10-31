@@ -1,0 +1,1488 @@
+{
+  "number": 6,
+  "id": "chemistry11-06",
+  "title": {
+    "en": "Equilibrium",
+    "hi": "साम्यावस्था"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "chem11-06-1",
+      "title": {
+        "en": "Reaction quotient",
+        "hi": "अभिक्रिया भागफल"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 15
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Product concentration",
+            "hi": "उत्पाद की सांद्रता"
+          },
+          "min": 0.1,
+          "max": 2,
+          "step": 0.1,
+          "initial": 0.5,
+          "unit": "mol/L"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Compare a trial reaction quotient with the equilibrium constant.",
+        "hi": "परीक्षण अभिक्रिया भागफल को साम्य स्थिरांक से तुलना करें।"
+      },
+      "observe": {
+        "en": "For A⇌B, hold[A]=0.5 mol/L and Kc=2 while choosing[B].",
+        "hi": "A⇌B में [A]=0.5 mol/L तथा Kc=2 स्थिर रखकर [B] चुनें।"
+      },
+      "modelNote": {
+        "en": "This prepares trial compositions independently; it is not the time trajectory of a closed vessel. Concentrations are idealised.",
+        "hi": "यह स्वतंत्र परीक्षण संघटन चुनता है; बंद पात्र का समय-पथ नहीं। सांद्रताएँ आदर्शीकृत हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Q=[B]/0.5. Q<2 favours forward change,Q>2 reverse,and Q=2 equilibrium.",
+          "hi": "Q=[B]/0.5 है। Q<2 पर अग्र, Q>2 पर पश्च दिशा और Q=2 पर साम्य है।"
+        }
+      },
+      "realLife": {
+        "en": "Chemists compare composition with K to analyse the direction of a reversible process.",
+        "hi": "रसायनज्ञ उत्क्रमणीय प्रक्रिया की दिशा के लिए संघटन की K से तुलना करते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which[B] givesQ=K here?",
+          "hi": "यहाँ कौन-सी [B] पर Q=K होगा?"
+        },
+        "options": [
+          {
+            "en": "0.5 mol/L",
+            "hi": "0.5 mol/L"
+          },
+          {
+            "en": "1.0 mol/L",
+            "hi": "1.0 mol/L"
+          },
+          {
+            "en": "2.0 mol/L",
+            "hi": "2.0 mol/L"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "1.0/0.5=2.",
+          "hi": "1.0/0.5=2।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-06-1-low",
+          "label": {
+            "en": "Explore the lowest setting 0.1 mol/L.",
+            "hi": "सबसे निचली सेटिंग 0.1 mol/L देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.1
+          }
+        },
+        {
+          "id": "chem11-06-1-high",
+          "label": {
+            "en": "Compare the highest setting 2 mol/L.",
+            "hi": "सबसे ऊपरी सेटिंग 2 mol/L से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 1.99
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.05
+          },
+          "text": {
+            "en": "For A⇌B, hold[A]=0.5 mol/L and Kc=2 while choosing[B].",
+            "hi": "A⇌B में [A]=0.5 mol/L तथा Kc=2 स्थिर रखकर [B] चुनें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.05
+          },
+          "text": {
+            "en": "Q=[B]/0.5. Q<2 favours forward change,Q>2 reverse,and Q=2 equilibrium.",
+            "hi": "Q=[B]/0.5 है। Q<2 पर अग्र, Q>2 पर पश्च दिशा और Q=2 पर साम्य है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-06-2",
+      "title": {
+        "en": "Weak acid equilibrium",
+        "hi": "दुर्बल अम्ल साम्य"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 16
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Acid concentration",
+            "hi": "अम्ल की सांद्रता"
+          },
+          "min": 0.01,
+          "max": 0.1,
+          "step": 0.01,
+          "initial": 0.05,
+          "unit": "mol/L"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Connect acid concentration,ionisation and pH.",
+        "hi": "अम्ल सांद्रता, आयनन तथा pH जोड़ें।"
+      },
+      "observe": {
+        "en": "Ka=1.8×10^−5 is fixed; vary the initial monoprotic acid concentrationC.",
+        "hi": "Ka=1.8×10^−5 स्थिर है; एकप्रोटॉनी अम्ल की प्रारंभिक C बदलें।"
+      },
+      "modelNote": {
+        "en": "Ideal dilute acid only; water autoionisation and activity corrections are omitted. The quadratic is solved without the small-x approximation.",
+        "hi": "केवल आदर्श तनु अम्ल; जल स्वआयनन और सक्रियता सुधार छोड़े हैं। छोटे x का सन्निकटन बिना द्विघात हल होता है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The positive root of x²+Kax−KaC gives[H+]; dilution lowers[H+] but raises the fraction ionised.",
+          "hi": "x²+Kax−KaC का धन मूल [H+] है; तनुकरण से [H+] घटती है पर आयनित अंश बढ़ता है।"
+        }
+      },
+      "realLife": {
+        "en": "Weak-acid solutions show why concentration and strength are different ideas.",
+        "hi": "दुर्बल अम्ल विलयन बताते हैं कि सांद्रता और प्रबलता अलग विचार हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which approximation needsx≪C?",
+          "hi": "किस सन्निकटन में x≪C चाहिए?"
+        },
+        "options": [
+          {
+            "en": "x≈√(KaC)",
+            "hi": "x≈√(KaC)"
+          },
+          {
+            "en": "Exact quadratic root",
+            "hi": "सटीक द्विघात मूल"
+          },
+          {
+            "en": "Counting atom numbers",
+            "hi": "परमाणु गिनना"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "It replacesC−x byC.",
+          "hi": "उसमें C−x को C मानते हैं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-06-2-low",
+          "label": {
+            "en": "Explore the lowest setting 0.01 mol/L.",
+            "hi": "सबसे निचली सेटिंग 0.01 mol/L देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.01
+          }
+        },
+        {
+          "id": "chem11-06-2-high",
+          "label": {
+            "en": "Compare the highest setting 0.1 mol/L.",
+            "hi": "सबसे ऊपरी सेटिंग 0.1 mol/L से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 0.099
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.055
+          },
+          "text": {
+            "en": "Ka=1.8×10^−5 is fixed; vary the initial monoprotic acid concentrationC.",
+            "hi": "Ka=1.8×10^−5 स्थिर है; एकप्रोटॉनी अम्ल की प्रारंभिक C बदलें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0.055
+          },
+          "text": {
+            "en": "The positive root of x²+Kax−KaC gives[H+]; dilution lowers[H+] but raises the fraction ionised.",
+            "hi": "x²+Kax−KaC का धन मूल [H+] है; तनुकरण से [H+] घटती है पर आयनित अंश बढ़ता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-06-3",
+      "title": {
+        "en": "Common ion effect",
+        "hi": "सम आयन प्रभाव"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 17
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Added acetate concentration",
+            "hi": "जोड़े एसीटेट की सांद्रता"
+          },
+          "min": 0,
+          "max": 0.1,
+          "step": 0.01,
+          "initial": 0,
+          "unit": "mol/L"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Observe suppression by a conjugate-base common ion.",
+        "hi": "संयुग्मी क्षारक सम आयन से दमन देखें।"
+      },
+      "observe": {
+        "en": "AcidCa=0.1 mol/L andKa=1.8×10^−5 stay fixed; add acetateCs.",
+        "hi": "अम्ल Ca=0.1 mol/L तथा Ka=1.8×10^−5 स्थिर हैं; एसीटेट Cs जोड़ें।"
+      },
+      "modelNote": {
+        "en": "The added salt is fully dissociated; ideal concentrations and negligible water ionisation are assumed. Volume effects are represented through stated concentrations.",
+        "hi": "जोड़ा लवण पूरा वियोजित है; आदर्श सांद्रता और नगण्य जल आयनन माना है। आयतन प्रभाव दी सांद्रताओं में शामिल हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The positive root of x²+(Cs+Ka)x−KaCa=0 decreases as Cs rises.",
+          "hi": "Cs बढ़ने पर x²+(Cs+Ka)x−KaCa=0 का धन मूल घटता है।"
+        }
+      },
+      "realLife": {
+        "en": "A weak acid plus its conjugate-base salt forms the basis of an acid buffer.",
+        "hi": "दुर्बल अम्ल और उसके संयुग्मी क्षारक लवण से अम्लीय बफर का आधार बनता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Adding acetate does what to acid dissociation here?",
+          "hi": "यहाँ एसीटेट जोड़ने से अम्ल आयनन क्या होता है?"
+        },
+        "options": [
+          {
+            "en": "Increases to completion",
+            "hi": "बढ़कर पूर्ण होता है"
+          },
+          {
+            "en": "Is suppressed",
+            "hi": "दबता है"
+          },
+          {
+            "en": "Never changes",
+            "hi": "कभी नहीं बदलता"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "A common product ion shifts the weak-acid equilibrium toward undissociated HA.",
+          "hi": "सम उत्पाद आयन दुर्बल अम्ल साम्य को अवियोजित HA की ओर करता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-06-3-low",
+          "label": {
+            "en": "Explore the lowest setting 0 mol/L.",
+            "hi": "सबसे निचली सेटिंग 0 mol/L देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "chem11-06-3-high",
+          "label": {
+            "en": "Compare the highest setting 0.1 mol/L.",
+            "hi": "सबसे ऊपरी सेटिंग 0.1 mol/L से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 0.099
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.05
+          },
+          "text": {
+            "en": "AcidCa=0.1 mol/L andKa=1.8×10^−5 stay fixed; add acetateCs.",
+            "hi": "अम्ल Ca=0.1 mol/L तथा Ka=1.8×10^−5 स्थिर हैं; एसीटेट Cs जोड़ें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0.05
+          },
+          "text": {
+            "en": "The positive root of x²+(Cs+Ka)x−KaCa=0 decreases as Cs rises.",
+            "hi": "Cs बढ़ने पर x²+(Cs+Ka)x−KaCa=0 का धन मूल घटता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    }
+  ],
+  "goal": {
+    "en": "Distinguish reaction quotient, equilibrium constants and ionic equilibria through reversible changes.",
+    "hi": "उत्क्रमणीय परिवर्तनों से अभिक्रिया भागफल, साम्य स्थिरांक और आयनिक साम्य अलग समझें।"
+  },
+  "editionBasis": {
+    "en": "Original study notes aligned to NCERT Chemistry Class 11 and UP Board 2026–27. Use prescribed textbooks and supervised school practicals alongside.",
+    "hi": "NCERT कक्षा 11 रसायन विज्ञान तथा यूपी बोर्ड 2026–27 के अनुरूप मौलिक नोट्स। निर्धारित पुस्तक और विद्यालय के पर्यवेक्षित प्रयोग भी करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry Part I, Chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/kech106.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Chemistry2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class 11/152-Chemistry-Class-11.pdf"
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Dynamic equilibrium in a closed system",
+        "hi": "बंद निकाय में गतिशील साम्य"
+      },
+      "paragraphs": [
+        {
+          "en": "Many physical and chemical changes can proceed in both directions. In a closed vessel containing liquid water and its vapour at fixed temperature, evaporation and condensation can continue even when the macroscopic amounts no longer change. At dynamic equilibrium, opposing rates are equal; the individual microscopic processes have not stopped. The same distinction applies to a reversible chemical reaction. Equilibrium does not require equal concentrations of reactants and products. It requires a stable composition under the specified conditions, with matching forward and reverse rates. A constant colour can provide an observation of an unchanged macroscopic state, but that alone does not reveal all microscopic details. Keep the system closed to the relevant matter when interpreting a reversible process. If a product escapes continuously, the composition need not reach the same equilibrium. State the temperature and phase conditions, and distinguish equilibrium from an apparently stationary condition maintained by continuous external supply and removal.",
+          "hi": "कई भौतिक और रासायनिक परिवर्तन दोनों दिशाओं में हो सकते हैं। निश्चित ताप पर बंद पात्र में जल और उसकी वाष्प हों तो वाष्पन तथा संघनन चलते रहते हैं, भले उनकी स्थूल मात्राएँ बदलती न दिखें। गतिशील साम्य (Dynamic equilibrium) में विपरीत प्रक्रियाओं की चाल बराबर होती है; अलग-अलग सूक्ष्म प्रक्रियाएँ बंद नहीं होतीं। यही विचार उत्क्रमणीय रासायनिक अभिक्रिया में लागू होता है। साम्य के लिए अभिकारकों और उत्पादों की सांद्रता समान होना आवश्यक नहीं है। दी दशाओं में स्थिर संघटन तथा अग्र और पश्च अभिक्रिया की समान चाल आवश्यक हैं। रंग समान रहना स्थूल अवस्था न बदलने का प्रेक्षण हो सकता है, लेकिन इससे अकेले पूरी सूक्ष्म प्रक्रिया नहीं पता चलती। उत्क्रमणीय प्रक्रिया समझते समय संबंधित पदार्थ के लिए निकाय बंद रखें। कोई उत्पाद लगातार निकल रहा हो तो वैसा ही साम्य संघटन नहीं मिल सकता। उत्तर में ताप और प्रावस्था की दशाएँ स्पष्ट करें। बाहर से पदार्थ लगातार जोड़कर और निकालकर बनी स्थिर दिखाई अवस्था को वास्तविक साम्य से अलग पहचानें। इसलिए स्थिर मात्रा और शून्य अभिक्रिया को एक अर्थ में न लें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: No; their rates become equal while microscopic changes continue.",
+          "hi": "जाँच बिंदु: नहीं; सूक्ष्म परिवर्तन जारी रहते हैं और दोनों की चाल समान होती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Do both reactions stop at equilibrium?",
+          "hi": "क्या साम्य पर दोनों अभिक्रियाएँ रुक जाती हैं?"
+        },
+        "answer": {
+          "en": "No; their rates become equal while microscopic changes continue.",
+          "hi": "नहीं; सूक्ष्म परिवर्तन जारी रहते हैं और दोनों की चाल समान होती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Equilibrium expressions and reaction quotient",
+        "hi": "साम्य व्यंजक और अभिक्रिया भागफल"
+      },
+      "paragraphs": [
+        {
+          "en": "For a reaction aA+bB⇌cC+dD, the concentration expression has product concentrations raised to their stoichiometric powers in the numerator and reactant terms in the denominator. Kc is obtained when these concentrations are the equilibrium values at the chosen temperature. The same expression evaluated at an arbitrary composition is the reaction quotient Qc. Comparing Q with K predicts the thermodynamically favoured adjustment toward equilibrium: Q<K favours net product formation, Q>K favours net reactant formation, and Q=K indicates equilibrium. This comparison does not give an instantaneous reaction rate. In the simple A⇌B scene, Kc=2 and the displayed A concentration is held at 0.5 mol/L while B is selected. Thus Qc=[B]/0.5. Changing the slider explores trial compositions; it is not a complete time evolution of an isolated vessel, because holding A fixed while independently changing B would require an imposed preparation or constraint.",
+          "hi": "aA+bB⇌cC+dD के सांद्रता व्यंजक में उत्पादों की सांद्रताओं के गुणांक-घात वाले पद अंश में और अभिकारकों के पद हर में होते हैं। दिए ताप पर साम्य सांद्रताएँ रखने से साम्य स्थिरांक Kc मिलता है। वही व्यंजक किसी मनमाने संघटन पर अभिक्रिया भागफल Qc कहलाता है। Q और K की तुलना से साम्य की ओर अनुकूल शुद्ध दिशा पता चलती है। Q<K हो तो उत्पाद बनना, Q>K हो तो अभिकारक बनना और Q=K हो तो साम्य की स्थिति है। इससे तात्कालिक अभिक्रिया चाल नहीं निकलती। सरल A⇌B दृश्य में Kc=2 है और A की सांद्रता 0.5 mol/L स्थिर रखकर B चुना जाता है। इसलिए Qc=[B]/0.5 होगा। स्लाइडर अलग परीक्षण संघटन दिखाता है, एकांतीय पात्र का पूरा समय-विकास नहीं। A स्थिर रहते B को स्वतंत्र बदलने के लिए पदार्थ की तैयारी या कोई बाहरी नियंत्रण चाहिए। इसलिए चित्र से दिशा की तुलना करें, लेकिन उसे बंद पात्र की वास्तविक सांद्रता यात्रा न मानें। संतुलित समीकरण के गुणांक बदलें तो व्यंजक की घातें भी जाँचें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: Forward, toward products, until equilibrium is approached.",
+          "hi": "जाँच बिंदु: अग्र दिशा, उत्पादों की ओर, जब तक साम्य की ओर बढ़ें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For Kc=2 and Qc=1, which net direction is favoured?",
+          "hi": "Kc=2 और Qc=1 पर कौन-सी शुद्ध दिशा अनुकूल है?"
+        },
+        "answer": {
+          "en": "Forward, toward products, until equilibrium is approached.",
+          "hi": "अग्र दिशा, उत्पादों की ओर, जब तक साम्य की ओर बढ़ें।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Using K correctly for phases and gases",
+        "hi": "प्रावस्थाओं और गैसों के लिए K का सही उपयोग"
+      },
+      "paragraphs": [
+        {
+          "en": "A heterogeneous equilibrium involves more than one phase. Pure solids and pure liquids are omitted from the usual equilibrium expression because their activities are unity under the stated standard-state approximation, not because they are absent or chemically unimportant. Gaseous and dissolved species must be included as appropriate. For ideal gases, Kp and Kc are related in the conventional school treatment by Kp=Kc(RT)^Δng, where Δng is gaseous product coefficients minus gaseous reactant coefficients. Use the gas constant in units consistent with the pressure and concentration convention. Reversing a reaction replaces K by 1/K, while multiplying every coefficient by n replaces K by K raised to n. A very large K favours products in equilibrium but does not prove complete conversion or a fast reaction. Thermodynamic equilibrium constants are rigorously defined using dimensionless activities. School concentration expressions use the corresponding ideal-solution approximations; always state the form and convention before assigning units or comparing numerical values.",
+          "hi": "विषमांगी साम्य (Heterogeneous equilibrium) में एक से अधिक प्रावस्थाएँ होती हैं। सामान्य साम्य व्यंजक से शुद्ध ठोस तथा शुद्ध द्रव इसलिए हटते हैं कि मानक अवस्था के सन्निकटन में उनकी सक्रियता 1 होती है। इसका अर्थ वे अनुपस्थित या रासायनिक रूप से महत्त्वहीन नहीं हैं। गैसीय और विलेय स्पीशीज को उपयुक्त रूप में शामिल करें। आदर्श गैसों के लिए विद्यालय की प्रचलित विधि में Kp=Kc(RT)^Δng है। Δng गैसीय उत्पादों के गुणांकों का योग घटा गैसीय अभिकारकों के गुणांकों का योग है। दाब और सांद्रता की परंपरा से मेल खाती R की इकाई लें। अभिक्रिया उलटने पर K का व्युत्क्रम 1/K होता है। सभी गुणांकों को n से गुणा करने पर नया स्थिरांक K की घात n होगा। बहुत बड़ा K साम्य में उत्पाद पक्ष अनुकूल बताता है; इससे शत-प्रतिशत परिवर्तन या तेज अभिक्रिया साबित नहीं होती। कठोर ऊष्मागतिक परिभाषा में सक्रियताओं से बना K विमाहीन है। विद्यालय के सांद्रता व्यंजक आदर्श विलयन सन्निकटन हैं। इसलिए इकाइयाँ या संख्यात्मक मान तुलना करने से पहले उपयोग की परिभाषा स्पष्ट करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: Its activity is taken as1; this does not mean it does not participate.",
+          "hi": "जाँच बिंदु: उसकी सक्रियता 1 ली जाती है; इसका अर्थ वह भाग नहीं लेता नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is pure solid CaCO3 omitted in its usual decomposition equilibrium expression?",
+          "hi": "CaCO3 के सामान्य अपघटन साम्य व्यंजक से शुद्ध ठोस क्यों हटता है?"
+        },
+        "answer": {
+          "en": "Its activity is taken as1; this does not mean it does not participate.",
+          "hi": "उसकी सक्रियता 1 ली जाती है; इसका अर्थ वह भाग नहीं लेता नहीं है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Le Chatelier principle and temperature",
+        "hi": "ले शातेलिए सिद्धांत और ताप"
+      },
+      "paragraphs": [
+        {
+          "en": "Le Chatelier’s principle describes the qualitative response of an equilibrium system to an imposed disturbance. Adding a reactant, removing a product or changing volume can change the reaction quotient and cause a new equilibrium composition. For an ideal-gas mixture at constant temperature, reducing volume favours the side with fewer gaseous moles when the gas-mole counts differ. If the counts are equal, this simple pressure argument predicts no such shift. Adding an inert gas at constant volume does not change the reactive partial pressures in the ideal model. Temperature is different from a mere composition disturbance: it changes the equilibrium constant itself. Heating favours the endothermic direction. A catalyst speeds the approach to equilibrium by influencing reaction pathways in both directions but does not change K or the equilibrium composition at fixed conditions. Industrial choices balance equilibrium yield, rate, energy use and practical operating conditions rather than maximising only one theoretical factor.",
+          "hi": "ले शातेलिए सिद्धांत (Le Chatelier principle) साम्य निकाय पर लगाए व्यवधान की गुणात्मक प्रतिक्रिया बताता है। अभिकारक जोड़ने, उत्पाद हटाने या आयतन बदलने से अभिक्रिया भागफल बदल सकता है और नया साम्य संघटन मिलता है। नियत ताप के आदर्श गैसीय मिश्रण में आयतन घटाने पर कम गैसीय मोल वाला पक्ष अनुकूल होता है, यदि दोनों पक्षों की गैसीय गिनती अलग हो। गिनती समान होने पर यह सरल दाब तर्क ऐसा विस्थापन नहीं बताता। नियत आयतन पर अक्रिय गैस जोड़ने से आदर्श मॉडल में अभिक्रियाशील गैसों के आंशिक दाब नहीं बदलते। ताप केवल संघटन के व्यवधान जैसा नहीं है; वह साम्य स्थिरांक को भी बदलता है। गरम करने पर ऊष्माशोषी दिशा अनुकूल होती है। उत्प्रेरक (Catalyst) दोनों दिशाओं के अभिक्रिया मार्गों को प्रभावित करके साम्य तक पहुँचने की चाल बढ़ाता है, लेकिन स्थिर दशाओं में K और अंतिम साम्य संघटन नहीं बदलता। उद्योग में केवल अधिकतम सैद्धांतिक उपज नहीं देखते। साम्य उपज, चाल, ऊर्जा खर्च और व्यावहारिक कार्य दशाओं को मिलाकर निर्णय लेते हैं। इसीलिए तेज उत्पादन और अधिक साम्य उपज का ताप कभी अलग हो सकता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: No; it changes the speed of reaching equilibrium, not the equilibrium constant.",
+          "hi": "जाँच बिंदु: नहीं; वह साम्य तक पहुँचने की चाल बदलता है, स्थिरांक नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a catalyst change K at fixed temperature?",
+          "hi": "नियत ताप पर उत्प्रेरक K बदलता है?"
+        },
+        "answer": {
+          "en": "No; it changes the speed of reaching equilibrium, not the equilibrium constant.",
+          "hi": "नहीं; वह साम्य तक पहुँचने की चाल बदलता है, स्थिरांक नहीं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Acids, bases, water and pH",
+        "hi": "अम्ल, क्षारक, जल और pH"
+      },
+      "paragraphs": [
+        {
+          "en": "Acid–base descriptions must identify the theory being used. In the Brønsted–Lowry description an acid donates a proton and a base accepts one. A conjugate pair differs by one proton. Lewis acids accept an electron pair, while Lewis bases donate one, so the Lewis description covers reactions beyond simple proton transfer. Water can act as an acid or a base and undergoes a small self-ionisation. At about 298 K, Kw is approximately1.0×10^−14 in the ideal dilute concentration treatment. Neutrality means equal hydrogen-ion and hydroxide-ion activities; pH 7 is the familiar neutral value near 25°C, not at every temperature. pH is rigorously the negative decimal logarithm of hydrogen-ion activity and is approximated using dilute-solution concentration relative to its standard concentration. A strong acid can be dilute, and a weak acid can be concentrated: strength describes ionisation behaviour, while concentration describes amount per volume. Do not replace these distinct ideas with everyday labels such as harsh or harmless.",
+          "hi": "अम्ल–क्षारक का वर्णन करते समय प्रयुक्त सिद्धांत पहचानें। ब्रॉन्स्टेड–लाउरी विचार में अम्ल प्रोटॉन देता है और क्षारक प्रोटॉन ग्रहण करता है। संयुग्मी युग्म में 1 प्रोटॉन का अंतर होता है। लुइस अम्ल इलेक्ट्रॉन युग्म ग्रहण तथा लुइस क्षारक इलेक्ट्रॉन युग्म दान करता है। इसलिए लुइस विचार साधारण प्रोटॉन स्थानांतरण से अधिक अभिक्रियाएँ समझाता है। जल अम्ल या क्षारक दोनों की तरह काम कर सकता है और थोड़ा स्वआयनन करता है। लगभग 298 K पर आदर्श तनु सांद्रता विधि में Kw लगभग 1.0×10^−14 है। उदासीनता का अर्थ हाइड्रोजन आयन तथा हाइड्रॉक्साइड आयन की समान सक्रियता है। 25°C के पास उदासीन pH 7 परिचित मान है, हर ताप पर नहीं। कठोर परिभाषा में pH हाइड्रोजन आयन की सक्रियता के दशमलव लघुगणक का ऋण है। तनु विलयन में मानक सांद्रता के सापेक्ष सांद्रता से इसका सन्निकटन लेते हैं। प्रबल अम्ल तनु और दुर्बल अम्ल सांद्र हो सकता है। प्रबलता आयनन व्यवहार बताती है, सांद्रता प्रति आयतन मात्रा। इन्हें रोजमर्रा के तीखा या सुरक्षित जैसे शब्दों से न बदलें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: No; concentration and extent of ionisation describe different properties.",
+          "hi": "जाँच बिंदु: नहीं; सांद्रता और आयनन का व्यवहार अलग गुण बताते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is a dilute acid necessarily weak?",
+          "hi": "क्या तनु अम्ल आवश्यक रूप से दुर्बल है?"
+        },
+        "answer": {
+          "en": "No; concentration and extent of ionisation describe different properties.",
+          "hi": "नहीं; सांद्रता और आयनन का व्यवहार अलग गुण बताते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Weak-acid equilibrium calculation",
+        "hi": "दुर्बल अम्ल साम्य की गणना"
+      },
+      "paragraphs": [
+        {
+          "en": "For a monoprotic weak acid HA initially at concentration C, let x be the equilibrium hydrogen-ion concentration produced by acid dissociation. Ignoring water autoionisation and assuming ideal dilute behaviour, [A−]=x and [HA]=C−x, giving Ka=x²/(C−x). This becomes x²+Kax−KaC=0. Select the positive root; the negative root does not represent a physical concentration in this setup. The approximation x≈√(KaC) is convenient only when x is sufficiently small compared with C, and that condition must be checked after estimating x. The screen uses Ka=1.8×10^−5 and solves the quadratic rather than silently imposing the small-ionisation approximation. Dilution usually increases the fraction ionised for this simple weak acid even though the hydrogen-ion concentration decreases. Thus a change in degree of ionisation should not be confused with a change in acidity measured by pH. Extremely dilute solutions require a more complete treatment including water and activities.",
+          "hi": "प्रारंभिक सांद्रता C वाले एकप्रोटॉनी दुर्बल अम्ल HA के लिए अम्ल के आयनन से मिली साम्य हाइड्रोजन आयन सांद्रता x मानें। जल का स्वआयनन छोड़कर तथा आदर्श तनु व्यवहार मानकर [A−]=x और [HA]=C−x होंगे। इसलिए Ka=x²/(C−x) है। इसे x²+Kax−KaC=0 लिख सकते हैं। इसका धन मूल चुनें; इस व्यवस्था में ऋण मूल भौतिक सांद्रता नहीं है। x≈√(KaC) का सन्निकटन तभी उपयुक्त है जब x, C की तुलना में पर्याप्त छोटा हो। अनुमान के बाद यह शर्त जाँचनी चाहिए। स्क्रीन मॉडल में Ka=1.8×10^−5 है और पूरा द्विघात हल किया जाता है, चुपचाप कम आयनन नहीं माना जाता। इस सरल दुर्बल अम्ल को तनु करने पर आयनित अंश सामान्यतः बढ़ता है, लेकिन हाइड्रोजन आयन की सांद्रता घटती है। इसलिए आयनन की मात्रा में परिवर्तन और pH से मापी अम्लता में परिवर्तन एक बात नहीं हैं। बहुत तनु विलयन में जल और सक्रियताओं को शामिल करने वाला अधिक पूरा उपचार चाहिए। प्रश्न हल करते समय प्रारंभिक, परिवर्तन तथा साम्य सांद्रताओं की तालिका स्पष्ट बनाएँ।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: The approximation replaces C−x by C, which fails when dissociation is not small.",
+          "hi": "जाँच बिंदु: यह C−x को C मानता है, जो आयनन अधिक होने पर ठीक नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why must x≪C be checked before using √(KaC)?",
+          "hi": "√(KaC) लगाने से पहले x≪C क्यों जाँचना चाहिए?"
+        },
+        "answer": {
+          "en": "The approximation replaces C−x by C, which fails when dissociation is not small.",
+          "hi": "यह C−x को C मानता है, जो आयनन अधिक होने पर ठीक नहीं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Common ions and buffer action",
+        "hi": "सम आयन और बफर क्रिया"
+      },
+      "paragraphs": [
+        {
+          "en": "Adding an ion already present in an equilibrium can suppress further formation of that ion; this is the common-ion effect. For a weak acid and its soluble salt, the conjugate-base concentration is increased. In the model, initial acid concentration Ca=0.1 mol/L and added acetate concentration Cs are used. With acid-generated hydrogen concentration x, the idealised equilibrium expression is Ka=x(Cs+x)/(Ca−x), giving x²+(Cs+Ka)x−KaCa=0. The salt is assumed fully dissociated and water autoionisation is neglected. Use the positive root and do not take the acid’s original concentration as the final hydrogen-ion concentration. A mixture of weak acid and its conjugate base can resist moderate additions of acid or base by converting one partner into the other. A buffer does not hold pH exactly fixed for unlimited additions; its capacity is finite. The Henderson form pH≈pKa+log([base]/[acid]) is an approximation based on suitable equilibrium concentrations and assumptions, not a replacement for all mass and charge balances.",
+          "hi": "साम्य में पहले से उपस्थित आयन जोड़ने पर उस आयन का आगे बनना दब सकता है; इसे सम आयन प्रभाव (Common-ion effect) कहते हैं। दुर्बल अम्ल और उसके घुलनशील लवण में संयुग्मी क्षारक की सांद्रता बढ़ती है। मॉडल में प्रारंभिक अम्ल Ca=0.1 mol/L तथा जोड़े एसीटेट की सांद्रता Cs ली है। अम्ल से उत्पन्न हाइड्रोजन आयन x हो तो आदर्श साम्य व्यंजक Ka=x(Cs+x)/(Ca−x) है। इससे x²+(Cs+Ka)x−KaCa=0 मिलता है। लवण को पूरा वियोजित और जल स्वआयनन को नगण्य माना गया है। धन मूल चुनें तथा अम्ल की मूल सांद्रता को अंतिम हाइड्रोजन आयन सांद्रता न मानें। दुर्बल अम्ल और उसके संयुग्मी क्षारक का मिश्रण मध्यम मात्रा में जोड़े अम्ल या क्षारक का विरोध कर सकता है। वह एक साथी को दूसरे में बदलता है। बफर (Buffer) असीमित मात्रा जोड़ने पर pH बिल्कुल स्थिर नहीं रखता; उसकी क्षमता सीमित है। pH≈pKa+log([base]/[acid]) का हेंडरसन रूप उचित साम्य सांद्रताओं और मान्यताओं पर आधारित सन्निकटन है। वह हर द्रव्यमान और आवेश संतुलन का विकल्प नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: It decreases because the conjugate-base common ion suppresses dissociation.",
+          "hi": "जाँच बिंदु: वह घटती है क्योंकि संयुग्मी क्षारक का सम आयन वियोजन दबाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to acid-generated [H+] when acetate is added in this model?",
+          "hi": "इस मॉडल में एसीटेट जोड़ने पर अम्ल से बनी [H+] का क्या होता है?"
+        },
+        "answer": {
+          "en": "It decreases because the conjugate-base common ion suppresses dissociation.",
+          "hi": "वह घटती है क्योंकि संयुग्मी क्षारक का सम आयन वियोजन दबाता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Solubility equilibria and a solution method",
+        "hi": "विलेयता साम्य और हल की विधि"
+      },
+      "paragraphs": [
+        {
+          "en": "A sparingly soluble salt can establish equilibrium between its solid phase and dissolved ions. Its solubility product Ksp contains the ion activities, approximated by concentration terms in elementary dilute-solution problems. For MX(s)⇌M+(aq)+X−(aq) dissolving in pure water with no other relevant sources, molar solubility s gives [M+]=[X−]=s and Ksp≈s². This relation changes when stoichiometry changes or a common ion is present. The ion product at a trial composition can be compared with Ksp to judge whether precipitation is thermodynamically favoured, while nucleation and kinetics can affect observations. Avoid equating a small numerical Ksp with the same solubility for salts of different stoichiometries. For any equilibrium calculation, write the balanced equation, identify phases, tabulate initial and changed amounts, impose mass and charge constraints, and check the final concentrations. Report assumptions, temperature and units. A numerical result is incomplete when an algebraic root violates the physical conditions of the problem.",
+          "hi": "अल्प विलेय लवण अपने ठोस और विलयन के आयनों के बीच साम्य बना सकता है। विलेयता गुणनफल Ksp में आयनों की सक्रियताएँ आती हैं। प्रारंभिक तनु-विलयन प्रश्नों में उनका सांद्रता पदों से सन्निकटन लेते हैं। MX(s)⇌M+(aq)+X−(aq) शुद्ध जल में घुले और अन्य संबंधित आयन स्रोत न हों, तो मोलर विलेयता s पर [M+]=[X−]=s होगा। इसलिए Ksp≈s² है। रससमीकरणमिति बदलने या सम आयन होने पर यह संबंध बदल जाता है। किसी परीक्षण संघटन के आयन गुणनफल की Ksp से तुलना करके अवक्षेपण की ऊष्मागतिक अनुकूलता देख सकते हैं, लेकिन नाभिकन और गतिज प्रभाव प्रेक्षण बदल सकते हैं। अलग रससमीकरणमिति वाले लवणों में समान छोटा Ksp समान विलेयता नहीं बताता। किसी भी साम्य गणना में पहले संतुलित समीकरण और प्रावस्थाएँ लिखें। प्रारंभिक तथा परिवर्तित मात्राओं की तालिका बनाएँ, द्रव्यमान और आवेश संतुलन लगाएँ और अंतिम सांद्रताएँ जाँचें। मान्यताएँ, ताप और इकाइयाँ दें। बीजीय मूल प्रश्न की भौतिक शर्त तोड़ता हो तो केवल अंक मिल जाने से उत्तर सही नहीं बन जाता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: s=√Ksp=1.0×10^−5 mol/L.",
+          "hi": "जाँच बिंदु: s=√Ksp=1.0×10^−5 mol/L।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For a1:1 salt with Ksp=1.0×10^−10 in pure water, what is s in the ideal model?",
+          "hi": "शुद्ध जल में 1:1 लवण का Ksp=1.0×10^−10 हो तो आदर्श मॉडल में s क्या है?"
+        },
+        "answer": {
+          "en": "s=√Ksp=1.0×10^−5 mol/L.",
+          "hi": "s=√Ksp=1.0×10^−5 mol/L।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Kc = [C]^c[D]^d / ([A]^a[B]^b)",
+      "meaning": {
+        "en": "For aA+bB⇌cC+dD use equilibrium concentrations; the same form at trial composition is Qc.",
+        "hi": "aA+bB⇌cC+dD में साम्य सांद्रता लें; परीक्षण संघटन पर यही रूप Qc है।"
+      },
+      "units": {
+        "en": "Concentration convention must be stated; thermodynamic K uses dimensionless activities.",
+        "hi": "सांद्रता की परंपरा स्पष्ट करें; ऊष्मागतिक K विमाहीन सक्रियताएँ लेता है।"
+      }
+    },
+    {
+      "expression": "Kp = Kc(RT)^Δng",
+      "meaning": {
+        "en": "Ideal-gas relation; Δng is gaseous product minus reactant coefficient sum.",
+        "hi": "आदर्श गैस संबंध; Δng गैसीय उत्पाद घटा अभिकारक गुणांक योग है।"
+      },
+      "units": {
+        "en": "Use R consistent with the pressure and concentration units.",
+        "hi": "दाब और सांद्रता की इकाइयों से मेल खाती R लें।"
+      }
+    },
+    {
+      "expression": "Ka = x²/(C−x); x²+Kax−KaC=0",
+      "meaning": {
+        "en": "Monoprotic weak acid, no added common ion, ideal solution and water ionisation neglected.",
+        "hi": "एकप्रोटॉनी दुर्बल अम्ल, जोड़ा सम आयन नहीं, आदर्श विलयन तथा जल आयनन नगण्य।"
+      },
+      "units": {
+        "en": "Insert concentrations in mol/L using the stated school convention.",
+        "hi": "दी विद्यालयी परंपरा में सांद्रता mol/L में रखें।"
+      }
+    },
+    {
+      "expression": "x²+(Cs+Ka)x−KaCa=0",
+      "meaning": {
+        "en": "Weak acid plus a fully dissociated conjugate-base salt; x is acid-generated hydrogen concentration.",
+        "hi": "दुर्बल अम्ल और पूरा वियोजित संयुग्मी क्षारक लवण; x अम्ल से बनी हाइड्रोजन सांद्रता है।"
+      },
+      "units": {
+        "en": "Concentration variables in mol/L; use the same numerical Ka convention.",
+        "hi": "सांद्रता चर mol/L; Ka की समान संख्यात्मक परंपरा लें।"
+      }
+    },
+    {
+      "expression": "pH ≈ −log10([H+]/c°); c°=1 mol/L",
+      "meaning": {
+        "en": "Dilute-solution approximation to the activity definition of pH.",
+        "hi": "pH की सक्रियता परिभाषा का तनु-विलयन सन्निकटन।"
+      },
+      "units": {
+        "en": "pH is dimensionless.",
+        "hi": "pH विमाहीन है।"
+      }
+    },
+    {
+      "expression": "Ksp ≈ s² for MX(s)⇌M+ + X−",
+      "meaning": {
+        "en": "Only for a1:1 salt dissolving in pure water under the stated ideal assumptions.",
+        "hi": "केवल शुद्ध जल में घुलने वाले 1:1 लवण और दी आदर्श मान्यताओं के लिए।"
+      },
+      "units": {
+        "en": "s is molar solubility in mol/L.",
+        "hi": "s मोलर विलेयता है, इकाई mol/L।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "For A⇌B, Kc=2, [A]=0.5 M and [B]=0.5 M. Compare Q with K.",
+        "hi": "A⇌B में Kc=2, [A]=0.5 M तथा [B]=0.5 M हैं। Q और K तुलना करें।"
+      },
+      "given": {
+        "en": "Trial concentrations, not assumed equilibrium.",
+        "hi": "परीक्षण सांद्रताएँ हैं, साम्य नहीं माना है।"
+      },
+      "find": {
+        "en": "Reaction quotient and favoured direction.",
+        "hi": "अभिक्रिया भागफल और अनुकूल दिशा।"
+      },
+      "formula": {
+        "en": "Qc=[B]/[A]",
+        "hi": "Qc=[B]/[A]"
+      },
+      "steps": [
+        {
+          "en": "Qc=0.5/0.5=1.",
+          "hi": "Qc=0.5/0.5=1।"
+        },
+        {
+          "en": "Compare 1<2.",
+          "hi": "1<2 तुलना करें।"
+        }
+      ],
+      "answer": {
+        "en": "Qc=1; net forward change is favoured.",
+        "hi": "Qc=1; शुद्ध अग्र परिवर्तन अनुकूल है।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "If a reaction has K=2, find K for its reverse.",
+        "hi": "अभिक्रिया का K=2 है; उलटी अभिक्रिया का K निकालें।"
+      },
+      "given": {
+        "en": "The equation is reversed without multiplying coefficients.",
+        "hi": "गुणांक बदले बिना समीकरण उलटा है।"
+      },
+      "find": {
+        "en": "Reverse equilibrium constant.",
+        "hi": "उलटा साम्य स्थिरांक।"
+      },
+      "formula": {
+        "en": "Kreverse=1/Kforward",
+        "hi": "Kreverse=1/Kforward"
+      },
+      "steps": [
+        {
+          "en": "Take the reciprocal1/2.",
+          "hi": "व्युत्क्रम 1/2 लें।"
+        }
+      ],
+      "answer": {
+        "en": "0.5.",
+        "hi": "0.5।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Initially1.0 M A and no B establish A⇌B with Kc=2. Find equilibrium concentrations.",
+        "hi": "शुरू में 1.0 M A तथा B शून्य हैं। A⇌B में Kc=2 पर साम्य सांद्रता निकालें।"
+      },
+      "given": {
+        "en": "Constant volume,1:1 conversion, total[A]+[B]=1.0 M.",
+        "hi": "नियत आयतन, 1:1 परिवर्तन; कुल [A]+[B]=1.0 M।"
+      },
+      "find": {
+        "en": "Equilibrium [A] and [B].",
+        "hi": "साम्य [A] तथा [B]।"
+      },
+      "formula": {
+        "en": "[B]=2[A]; [A]+[B]=1",
+        "hi": "[B]=2[A]; [A]+[B]=1"
+      },
+      "steps": [
+        {
+          "en": "Substitute2[A] for[B], so3[A]=1.",
+          "hi": "[B] की जगह 2[A] रखें; 3[A]=1।"
+        },
+        {
+          "en": "Use the total to find both concentrations.",
+          "hi": "कुल मात्रा से दोनों सांद्रताएँ निकालें।"
+        }
+      ],
+      "answer": {
+        "en": "[A]=0.333 M; [B]=0.667 M approximately.",
+        "hi": "लगभग [A]=0.333 M; [B]=0.667 M।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find [H+] and pH of 0.1 M weak acid with Ka=1.8×10^−5.",
+        "hi": "Ka=1.8×10^−5 वाले 0.1 M दुर्बल अम्ल की [H+] और pH निकालें।"
+      },
+      "given": {
+        "en": "Ideal monoprotic acid; water autoionisation neglected.",
+        "hi": "आदर्श एकप्रोटॉनी अम्ल; जल स्वआयनन नगण्य।"
+      },
+      "find": {
+        "en": "Positive equilibrium root and pH.",
+        "hi": "धन साम्य मूल तथा pH।"
+      },
+      "formula": {
+        "en": "x²+Kax−KaC=0; pH≈−log10x",
+        "hi": "x²+Kax−KaC=0; pH≈−log10x"
+      },
+      "steps": [
+        {
+          "en": "Solve the quadratic for its positive root.",
+          "hi": "द्विघात का धन मूल निकालें।"
+        },
+        {
+          "en": "x≈0.00133267 M, then take the negative decimal logarithm relative to 1 M.",
+          "hi": "x≈0.00133267 M; फिर 1 M के सापेक्ष ऋण दशमलव लघुगणक लें।"
+        }
+      ],
+      "answer": {
+        "en": "[H+]≈1.333×10^−3 M; pH≈2.875.",
+        "hi": "[H+]≈1.333×10^−3 M; pH≈2.875।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Add 0.1 M acetate to the 0.1 M weak acid model. Find [H+] and compare.",
+        "hi": "0.1 M दुर्बल अम्ल मॉडल में 0.1 M एसीटेट जोड़ें। [H+] निकालकर तुलना करें।"
+      },
+      "given": {
+        "en": "Ka=1.8×10^−5; Ca=Cs=0.1 M; ideal salt fully dissociated.",
+        "hi": "Ka=1.8×10^−5; Ca=Cs=0.1 M; आदर्श लवण पूरा वियोजित।"
+      },
+      "find": {
+        "en": "Hydrogen concentration with common ion.",
+        "hi": "सम आयन के साथ हाइड्रोजन सांद्रता।"
+      },
+      "formula": {
+        "en": "x²+(Cs+Ka)x−KaCa=0",
+        "hi": "x²+(Cs+Ka)x−KaCa=0"
+      },
+      "steps": [
+        {
+          "en": "Use the positive root with Cs=0.1.",
+          "hi": "Cs=0.1 रखकर धन मूल लें।"
+        },
+        {
+          "en": "Compare 1.79935×10^−5 M with the acid-only 1.33267×10^−3 M.",
+          "hi": "1.79935×10^−5 M की अकेले अम्ल के 1.33267×10^−3 M से तुलना करें।"
+        }
+      ],
+      "answer": {
+        "en": "[H+]≈1.799×10^−5 M; pH≈4.745. Dissociation is suppressed.",
+        "hi": "[H+]≈1.799×10^−5 M; pH≈4.745। वियोजन दबता है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "At dynamic equilibrium, which statement is correct?",
+        "hi": "गतिशील साम्य पर कौन-सा कथन सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Forward and reverse rates are equal",
+            "hi": "अग्र और पश्च चाल समान हैं"
+          },
+          "reason": {
+            "en": "Microscopic reactions continue at equal rates.",
+            "hi": "सूक्ष्म अभिक्रियाएँ समान चाल से जारी हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All reactions stop",
+            "hi": "सभी अभिक्रियाएँ रुकती हैं"
+          },
+          "reason": {
+            "en": "Equilibrium is dynamic.",
+            "hi": "साम्य गतिशील है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Concentrations must all be equal",
+            "hi": "सभी सांद्रताएँ समान होनी चाहिए"
+          },
+          "reason": {
+            "en": "Rates, not all concentrations, become equal.",
+            "hi": "चाल समान होती है, सभी सांद्रताएँ नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Products must vanish",
+            "hi": "उत्पाद समाप्त होने चाहिए"
+          },
+          "reason": {
+            "en": "Both sides can be present.",
+            "hi": "दोनों पक्ष उपस्थित हो सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Qc<Kc implies which net direction toward equilibrium?",
+        "hi": "Qc<Kc में साम्य की ओर कौन-सी शुद्ध दिशा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Forward",
+            "hi": "अग्र"
+          },
+          "reason": {
+            "en": "Products are relatively deficient in the quotient.",
+            "hi": "भागफल में उत्पाद अपेक्षाकृत कम हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Reverse",
+            "hi": "पश्च"
+          },
+          "reason": {
+            "en": "Reverse is favoured whenQ>K.",
+            "hi": "Q>K में पश्च दिशा अनुकूल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No change necessarily",
+            "hi": "अनिवार्यतः परिवर्तन नहीं"
+          },
+          "reason": {
+            "en": "Q=K is the equilibrium condition.",
+            "hi": "Q=K साम्य की शर्त है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A nuclear change",
+            "hi": "नाभिकीय परिवर्तन"
+          },
+          "reason": {
+            "en": "This is a chemical-equilibrium comparison.",
+            "hi": "यह रासायनिक साम्य की तुलना है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A⇌B with[A]=0.5 M,[B]=1 M has Qc=?",
+        "hi": "A⇌B में [A]=0.5 M,[B]=1 M पर Qc=?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "1/0.5=2.",
+            "hi": "1/0.5=2।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.5",
+            "hi": "0.5"
+          },
+          "reason": {
+            "en": "This reverses the ratio.",
+            "hi": "यह अनुपात उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1.5",
+            "hi": "1.5"
+          },
+          "reason": {
+            "en": "Adding concentrations is not Q.",
+            "hi": "सांद्रताएँ जोड़ना Q नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Both concentrations are nonzero.",
+            "hi": "दोनों सांद्रताएँ अशून्य हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A catalyst at fixed temperature changes what?",
+        "hi": "नियत ताप पर उत्प्रेरक क्या बदलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Time to approach equilibrium",
+            "hi": "साम्य तक पहुँचने का समय"
+          },
+          "reason": {
+            "en": "It speeds both directions through suitable pathways.",
+            "hi": "वह उपयुक्त मार्गों से दोनों दिशाएँ तेज करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "K itself necessarily",
+            "hi": "स्वयं K अनिवार्यतः"
+          },
+          "reason": {
+            "en": "K at fixed T is not changed by the catalyst.",
+            "hi": "नियत T पर उत्प्रेरक K नहीं बदलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "The balanced equation coefficients",
+            "hi": "संतुलित समीकरण के गुणांक"
+          },
+          "reason": {
+            "en": "Catalysis does not redefine stoichiometry.",
+            "hi": "उत्प्रेरण रससमीकरणमिति नहीं बदलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Atomic numbers",
+            "hi": "परमाणु क्रमांक"
+          },
+          "reason": {
+            "en": "Chemical catalysis is not element transmutation.",
+            "hi": "रासायनिक उत्प्रेरण तत्व परिवर्तन नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which species is usually omitted from a heterogeneous K expression?",
+        "hi": "विषमांगी K व्यंजक से सामान्यतः कौन हटता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Pure solid",
+            "hi": "शुद्ध ठोस"
+          },
+          "reason": {
+            "en": "Its standard-state activity is taken as1.",
+            "hi": "मानक अवस्था में उसकी सक्रियता 1 ली जाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every dissolved ion",
+            "hi": "हर विलेय आयन"
+          },
+          "reason": {
+            "en": "Relevant dissolved ions enter the expression.",
+            "hi": "संबंधित विलेय आयन व्यंजक में आते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every gas",
+            "hi": "हर गैस"
+          },
+          "reason": {
+            "en": "Reactive gas terms are included.",
+            "hi": "अभिक्रियाशील गैसीय पद शामिल होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All products",
+            "hi": "सभी उत्पाद"
+          },
+          "reason": {
+            "en": "Product terms are essential.",
+            "hi": "उत्पाद पद आवश्यक हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For an ideal gas mixture, adding inert gas at constant volume does what to reactive partial pressures?",
+        "hi": "आदर्श मिश्रण में नियत आयतन पर अक्रिय गैस जोड़ने से अभिक्रियाशील आंशिक दाब क्या होंगे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Unchanged at fixed temperature",
+            "hi": "नियत ताप पर अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Reactive amounts,volume andtemperature are unchanged.",
+            "hi": "अभिक्रियाशील मात्रा, आयतन और ताप नहीं बदले।"
+          }
+        },
+        {
+          "text": {
+            "en": "All double necessarily",
+            "hi": "सभी अनिवार्यतः दुगुने"
+          },
+          "reason": {
+            "en": "Total pressure and partial pressures differ.",
+            "hi": "कुल और आंशिक दाब अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All become zero",
+            "hi": "सभी शून्य"
+          },
+          "reason": {
+            "en": "The reactive molecules remain present.",
+            "hi": "अभिक्रियाशील अणु उपस्थित रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Become negative",
+            "hi": "ऋण हो जाते हैं"
+          },
+          "reason": {
+            "en": "Physical gas pressures are not negative here.",
+            "hi": "यहाँ भौतिक गैस दाब ऋण नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Brønsted–Lowry acid means what?",
+        "hi": "ब्रॉन्स्टेड–लाउरी अम्ल का अर्थ क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Proton donor",
+            "hi": "प्रोटॉन दाता"
+          },
+          "reason": {
+            "en": "This is the proton-transfer definition.",
+            "hi": "यह प्रोटॉन स्थानांतरण की परिभाषा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Proton acceptor",
+            "hi": "प्रोटॉन ग्राही"
+          },
+          "reason": {
+            "en": "That defines the corresponding base.",
+            "hi": "यह संबंधित क्षारक की परिभाषा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neutron donor",
+            "hi": "न्यूट्रॉन दाता"
+          },
+          "reason": {
+            "en": "Neutrons do not define this acid theory.",
+            "hi": "न्यूट्रॉन इस अम्ल सिद्धांत का आधार नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always an insoluble solid",
+            "hi": "हमेशा अविलेय ठोस"
+          },
+          "reason": {
+            "en": "Physical phase is not the definition.",
+            "hi": "भौतिक प्रावस्था इसकी परिभाषा नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In Ka=x²/(C−x), x represents what in the simple acid model?",
+        "hi": "सरल अम्ल मॉडल में Ka=x²/(C−x) का x क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Acid-generated equilibrium[H+]",
+            "hi": "अम्ल से बनी साम्य [H+]"
+          },
+          "reason": {
+            "en": "Dissociation produces equalH+ andA− in this model.",
+            "hi": "इस मॉडल में आयनन से समान H+ तथा A− बनते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Initial acid concentration always",
+            "hi": "हमेशा प्रारंभिक अम्ल सांद्रता"
+          },
+          "reason": {
+            "en": "That is C,not x.",
+            "hi": "वह C है, x नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The volume only",
+            "hi": "केवल आयतन"
+          },
+          "reason": {
+            "en": "x is a concentration.",
+            "hi": "x सांद्रता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A negative root",
+            "hi": "ऋण मूल"
+          },
+          "reason": {
+            "en": "A physical concentration requires the positive root.",
+            "hi": "भौतिक सांद्रता के लिए धन मूल चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Adding acetate to a weak-acid solution usually does what to its dissociation in the stated ideal model?",
+        "hi": "दी आदर्श व्यवस्था में दुर्बल अम्ल में एसीटेट जोड़ने से आयनन क्या होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Suppressed",
+            "hi": "दबता है"
+          },
+          "reason": {
+            "en": "The common conjugate-base ion favours undissociated acid.",
+            "hi": "सम संयुग्मी क्षारक आयन अवियोजित अम्ल को अनुकूल करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always complete",
+            "hi": "हमेशा पूर्ण"
+          },
+          "reason": {
+            "en": "A common ion does not force full acid dissociation.",
+            "hi": "सम आयन पूर्ण आयनन अनिवार्य नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unaffected at every amount",
+            "hi": "हर मात्रा पर अपरिवर्तित"
+          },
+          "reason": {
+            "en": "The equilibrium composition changes.",
+            "hi": "साम्य संघटन बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A nuclear reaction",
+            "hi": "नाभिकीय अभिक्रिया"
+          },
+          "reason": {
+            "en": "The effect concerns chemical equilibrium.",
+            "hi": "यह प्रभाव रासायनिक साम्य का है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For1:1 salt MX with no common ion, Ksp is approximately what?",
+        "hi": "सम आयन बिना 1:1 लवण MX के लिए Ksp लगभग क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "s²",
+            "hi": "s²"
+          },
+          "reason": {
+            "en": "Both ion concentrations equal the molar solubilitys.",
+            "hi": "दोनों आयन सांद्रता मोलर विलेयता s के बराबर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "s always",
+            "hi": "हमेशा s"
+          },
+          "reason": {
+            "en": "The expression contains two ion terms.",
+            "hi": "व्यंजक में 2 आयन पद हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2s",
+            "hi": "2s"
+          },
+          "reason": {
+            "en": "The ion product is not their sum.",
+            "hi": "आयन गुणनफल उनका योग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/s²",
+            "hi": "1/s²"
+          },
+          "reason": {
+            "en": "That reverses the dissolution quotient.",
+            "hi": "यह घुलने का भागफल उलटता है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why is equilibrium called dynamic?",
+        "hi": "साम्य गतिशील क्यों है?"
+      },
+      "answer": {
+        "en": "Forward and reverse microscopic changes continue with equal rates while macroscopic composition stays constant.",
+        "hi": "अग्र तथा पश्च सूक्ष्म परिवर्तन समान चाल से चलते हैं, जबकि स्थूल संघटन स्थिर रहता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish Qc and Kc.",
+        "hi": "Qc तथा Kc अलग करें।"
+      },
+      "answer": {
+        "en": "They use the same expression; Q uses trial concentrations and K uses equilibrium concentrations at a stated temperature.",
+        "hi": "व्यंजक समान है; Q में परीक्षण और K में दिए ताप की साम्य सांद्रताएँ हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does temperature deserve separate attention in Le Chatelier problems?",
+        "hi": "ले शातेलिए प्रश्नों में ताप को अलग ध्यान क्यों दें?"
+      },
+      "answer": {
+        "en": "Temperature changes the equilibrium constant,not just the reaction quotient at a fixedK.",
+        "hi": "ताप साम्य स्थिरांक बदलता है, केवल स्थिर K पर भागफल नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why must weak-acid approximations be checked?",
+        "hi": "दुर्बल अम्ल के सन्निकटन क्यों जाँचना चाहिए?"
+      },
+      "answer": {
+        "en": "ReplacingC−x byC requires small dissociation; water and activity effects can also matter outside the dilute model.",
+        "hi": "C−x को C मानने के लिए आयनन कम चाहिए; मॉडल से बाहर जल और सक्रियता प्रभाव भी महत्त्वपूर्ण हो सकते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is a buffer limitation?",
+        "hi": "बफर की सीमा क्या है?"
+      },
+      "answer": {
+        "en": "It resists moderate additions but has finite capacity and does not keep pH exactly fixed for unlimited acid/base.",
+        "hi": "वह मध्यम मात्रा का विरोध करता है, लेकिन क्षमता सीमित है और असीम अम्ल/क्षार पर pH बिल्कुल स्थिर नहीं रखता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why cannot Ksp numbers alone rank all salt solubilities?",
+        "hi": "केवल Ksp अंक से सभी लवणों की विलेयता क्रम क्यों नहीं तय होता?"
+      },
+      "answer": {
+        "en": "The relation betweenKsp andsolubility depends on stoichiometry and common-ion conditions.",
+        "hi": "Ksp तथा विलेयता का संबंध रससमीकरणमिति और सम आयन की दशाओं पर निर्भर है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "At equilibrium opposite rates match,not necessarily concentrations.",
+      "hi": "साम्य पर विपरीत चालें समान हैं, आवश्यक नहीं कि सांद्रताएँ भी।"
+    },
+    {
+      "en": "CompareQ with K to judge the favoured net direction.",
+      "hi": "अनुकूल शुद्ध दिशा के लिए Q और K तुलना करें।"
+    },
+    {
+      "en": "K changes with temperature; catalysts do not alter it at fixed T.",
+      "hi": "K ताप से बदलता है; नियत T पर उत्प्रेरक इसे नहीं बदलता।"
+    },
+    {
+      "en": "Use positive roots and check all concentration assumptions.",
+      "hi": "धन मूल लें और सांद्रता की सभी मान्यताएँ जाँचें।"
+    },
+    {
+      "en": "Common ions,buffer capacity and salt stoichiometry matter.",
+      "hi": "सम आयन, बफर क्षमता और लवण रससमीकरणमिति महत्त्वपूर्ण हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not equate equilibrium with stopped reactions,equal concentrations or an unchanged rate constant. Check the reaction equation and pH temperature conditions.",
+    "hi": "साम्य को रुकी अभिक्रिया, समान सांद्रता या अपरिवर्तित चाल स्थिरांक न समझें। अभिक्रिया समीकरण और pH की ताप दशाएँ जाँचें।"
+  },
+  "conceptMap": "उत्क्रमणीय परिवर्तन → समान विपरीत चाल → K और Q → व्यवधान का प्रभाव → अम्ल–क्षारक / pH → दुर्बल आयनन → सम आयन / बफर → विलेयता",
+  "conceptMapEn": "Reversible change → equal opposite rates → K and Q → disturbances → acids,bases and pH → weak dissociation → common ions /buffers → solubility"
+}

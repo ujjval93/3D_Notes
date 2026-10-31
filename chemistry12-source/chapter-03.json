@@ -1,0 +1,1130 @@
+{
+  "number": 3,
+  "id": "chemistry12-03",
+  "title": {
+    "en": "Chemical Kinetics",
+    "hi": "रासायनिक बलगतिकी"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Reaction rate and stoichiometry",
+        "hi": "अभिक्रिया दर और स्टॉइकियोमिति"
+      },
+      "paragraphs": [
+        {
+          "en": "Chemical kinetics studies reaction speed and pathways, rather than only whether a reaction is thermodynamically favourable. Average rate refers to a finite time interval; instantaneous rate is the slope of a concentration–time curve at a selected instant. Reactant concentration normally decreases, so a minus sign makes its disappearance rate positive. For aA→bB, a single normalised rate is r=−(1/a)d[A]/dt=(1/b)d[B]/dt. Raw disappearance and appearance rates are different when coefficients differ. Concentration units must remain consistent with time units. A curved plot means the rate changes with time; a straight line through two widely separated measurements gives only their average. A fast reaction need not have a larger total energy release than a slow one.",
+          "hi": "रासायनिक बलगतिकी (Chemical kinetics) अभिक्रिया कितनी तेजी से होती है और उसका संभावित मार्ग क्या है, इसका अध्ययन है। ऊष्मागतिक अनुकूलता और गति अलग प्रश्न हैं; स्वतः संभव अभिक्रिया भी धीमी हो सकती है। औसत दर (Average rate) किसी निश्चित समय अंतराल में सांद्रता परिवर्तन को समय से भाग देती है। तात्क्षणिक दर (Instantaneous rate) चुने क्षण पर सांद्रता-समय वक्र की स्पर्शरेखा की ढाल से मिलती है। अभिकारक घटता है, इसलिए उसके परिवर्तन के पहले ऋण चिह्न लगाकर विलोपन की धनात्मक दर लेते हैं। aA→bB के लिए सामान्यीकृत दर r=−(1/a)d[A]/dt=(1/b)d[B]/dt है। यदि गुणांक अलग हों तो केवल पदार्थों की कच्ची सांद्रता परिवर्तन दरें बराबर नहीं होंगी। 2A→B में A की विलोपन दर B की निर्माण दर की दुगुनी है, जबकि सामान्यीकृत दर एक होती है। सांद्रता और समय के मात्रक पहले निर्धारित करें। वक्र पर दूर के 2 बिंदु जोड़ने वाली रेखा औसत दर देती है, उस पूरी अवधि की हर क्षण की दर नहीं। अधिक ऊर्जा निकलने का अर्थ अपने आप अधिक तेजी नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For a rate in mol L^-1 s^-1, express time in seconds.",
+          "hi": "mol L^-1 s^-1 में दर चाहिए तो समय सेकंड में रखें; मिनट के आँकड़े बिना बदले न लगाएँ।"
+        },
+        {
+          "en": "Divide each species rate by its stoichiometric coefficient.",
+          "hi": "हर स्पीशीज की सांद्रता परिवर्तन दर को उसके स्टॉइकियोमितीय गुणांक से भाग देकर तुलना करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "In2A→B, if A disappears at0.04 mol L^-1 s^-1, what is the normalised rate?",
+          "hi": "2A→B में A की विलोपन दर0.04 mol L^-1 s^-1 हो तो सामान्यीकृत दर?"
+        },
+        "answer": {
+          "en": "r=0.04/2=0.02 mol L^-1 s^-1.",
+          "hi": "r=0.04/2=0.02 mol L^-1 s^-1।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Rate law and reaction order",
+        "hi": "दर नियम और अभिक्रिया कोटि"
+      },
+      "paragraphs": [
+        {
+          "en": "A rate law such as r=k[A]^m[B]^n is established experimentally under stated conditions. The exponents are partial orders, and their sum is the overall order. They are not automatically the stoichiometric coefficients of the balanced overall equation. Orders can be zero, integral or fractional, depending on the observed law. At fixed temperature and catalyst conditions, k is a rate constant rather than the measured rate. Changing reactant concentration changes the rate through the concentration factors without requiring k to change. Initial-rate comparisons can isolate an exponent by holding other concentrations fixed. If doubling [A] quadruples rate, the partial order in A is2 for those conditions. Always separate a measured empirical relationship from a proposed multi-step mechanism.",
+          "hi": "दर नियम (Rate law) प्रयोग से निर्धारित संबंध है, जैसे r=k[A]^m[B]^n। m और n संबंधित आंशिक कोटियाँ हैं तथा m+n पूर्ण अभिक्रिया कोटि (Order) है। संतुलित पूर्ण समीकरण में लिखे गुणांक अपने आप दर नियम की घातें नहीं बनते। बहुचरणीय अभिक्रिया का पूरा समीकरण उसके धीमे और तेज चरणों का विवरण नहीं देता। कोटि शून्य, पूर्णांक या भिन्नात्मक हो सकती है। समान ताप, उत्प्रेरक और माध्यम की तय परिस्थितियों में k दर स्थिरांक (Rate constant) है; यह स्वयं मापी दर r नहीं है। सांद्रता बदलने पर दर [A]^m और [B]^n से बदल सकती है, जबकि k स्थिर रहता है। प्रारंभिक दर विधि में दूसरे अभिकारक की सांद्रता स्थिर रखकर एक का प्रभाव तुलना करते हैं। यदि [A] दुगुना करने पर दर4 गुनी हो तो उन परिस्थितियों में A की कोटि2 होगी। यदि दर न बदले तो उस विस्तार में A की कोटि0 हो सकती है। पर्याप्त डेटा के बिना पूर्ण समीकरण देखकर कोटि घोषित करना ठीक नहीं। प्रयोग की ताप और सांद्रता सीमा भी परिणाम के साथ लिखें।"
+        },
+        {
+          "en": "A useful experimental table changes one factor at a time. If two runs use[A]=0.10 and0.20 mol L^-1 with identical[B] and temperature, and rates are2.0×10^-3 and8.0×10^-3 mol L^-1 s^-1, their ratio gives4=2^m and hence m=2. To determine the order in B, use another pair with A fixed. Once the exponents are known, insert any consistent run into k=r/([A]^m[B]^n), then confirm that the other runs give approximately the same k. Experimental uncertainty may prevent exact agreement, so do not invent additional significant figures from rounded observations.",
+          "hi": "प्रयोग सारणी में एक बार में एक कारक बदलें। समान [B] और ताप पर [A] को 0.10 से 0.20 mol L^-1 करने से दर 2.0×10^-3 से 8.0×10^-3 mol L^-1 s^-1 हो तो 4=2^m से m=2 मिलता है। B की कोटि के लिए A स्थिर वाली जोड़ी लें। फिर k=r/([A]^m[B]^n) से k निकालकर अन्य पंक्तियों से जाँचें। प्रायोगिक अनिश्चितता के कारण ठीक बराबरी जरूरी नहीं; पूर्णांकित आँकड़ों से झूठी परिशुद्धता न बनाएँ।"
+        }
+      ],
+      "points": [
+        {
+          "en": "An unchanged k does not mean an unchanged rate.",
+          "hi": "k स्थिर होने का अर्थ दर स्थिर होना नहीं; सांद्रता गुणक दर बदल सकते हैं।"
+        },
+        {
+          "en": "A fractional overall order is possible for an experimental multi-step rate law.",
+          "hi": "बहुचरणीय अभिक्रिया के प्रायोगिक दर नियम की पूर्ण कोटि भिन्नात्मक हो सकती है; उसे त्रुटि न मानें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Rate doubles when [A] doubles while [B] is fixed. What is order in A?",
+          "hi": "[B] स्थिर रखकर[A] दुगुना करने से दर दुगुनी हो। A की कोटि?"
+        },
+        "answer": {
+          "en": "First order in A because2^m=2 gives m=1.",
+          "hi": "A में प्रथम कोटि, क्योंकि2^m=2 सेm=1।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Molecularity, units and pseudo-first order",
+        "hi": "आण्विकता, मात्रक और छद्म प्रथम कोटि"
+      },
+      "paragraphs": [
+        {
+          "en": "Molecularity counts the reacting particles in an elementary step and is a positive integer. It is not assigned to an arbitrary overall multi-step reaction in the same way as experimental order. For rate units concentration/time, an overall order q gives k units concentration^(1−q)/time. A zero-order k therefore has concentration/time units, a first-order k has time^-1, and a second-order k has concentration^-1 time^-1. Units help detect mistakes but do not prove a mechanism. A reaction depending on two reactants may show pseudo-first-order behaviour if one remains effectively constant because it is present in large excess. Then kObserved includes that nearly constant concentration. This approximation fails when the excess reagent changes appreciably or when the rate law itself changes.",
+          "hi": "आण्विकता (Molecularity) किसी प्राथमिक चरण में एक साथ भाग लेने वाले अभिक्रियाशील कणों की संख्या है। यह धनात्मक पूर्णांक होती है; शून्य या भिन्नात्मक आण्विकता नहीं लेते। मनमानी बहुचरणीय पूर्ण अभिक्रिया को उसी तरह आण्विकता देना उचित नहीं, जबकि उसकी प्रायोगिक कोटि मिल सकती है। यदि पूर्ण कोटि q और दर का मात्रक सांद्रता/समय हो, तो k का मात्रक सांद्रता^(1−q)/समय होगा। शून्य कोटि में k का मात्रक mol L^-1 s^-1, प्रथम कोटि में s^-1 और द्वितीय कोटि में L mol^-1 s^-1 मिलता है। मात्रक से गणना की जाँच होती है, लेकिन अकेले वही पूरी क्रियाविधि सिद्ध नहीं करता। छद्म प्रथम कोटि (Pseudo-first order) तब मिल सकती है जब दो अभिकारकों में एक बहुत अधिक मात्रा में हो और उसकी सांद्रता लगभग स्थिर रहे। तब उसकी सांद्रता को k के साथ मिलाकर प्रेक्षित स्थिरांक बनाते हैं। यह मान्यता पानी के बड़े आधिक्य वाले कुछ जलअपघटन प्रश्नों में उपयोगी है। यदि अधिक मात्रा वाला पदार्थ भी पर्याप्त घटने लगे, तो यह सरल रूप दोबारा जाँचना पड़ेगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Order comes from a rate law; molecularity belongs to an elementary step.",
+          "hi": "कोटि दर नियम से आती है; आण्विकता प्राथमिक चरण की अवधारणा है। दोनों की परिभाषा अलग रखें।"
+        },
+        {
+          "en": "The first-order unit is inverse time, not concentration per time.",
+          "hi": "प्रथम कोटिk का मात्रक समय का व्युत्क्रम है; सांद्रता/समय दर का मात्रक है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What are SI-compatible concentration units for a first-order k measured using seconds?",
+          "hi": "सेकंड में समय लेने पर प्रथम कोटिk का मात्रक क्या?"
+        },
+        "answer": {
+          "en": "s^-1; no concentration dimension remains.",
+          "hi": "s^-1; सांद्रता का आयाम नहीं बचता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Zero-order integrated law",
+        "hi": "शून्य कोटि का समाकलित नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "For a zero-order disappearance law −d[A]/dt=k at fixed conditions, integration gives [A]t=[A]0−kt. A plot of concentration against time is linear with slope−k and intercept[A]0 over the interval where the law applies. Half-life follows by setting[A]t=[A]0/2, giving t1/2=[A]0/(2k). It increases with the initial concentration, unlike the first-order case. The formula predicts complete consumption at[A]0/k, but it must never be extended to negative concentrations. Real zero-order behaviour often holds only while a surface is saturated or another limiting condition remains fixed; after that, the observed law may change. A constant rate does not mean that no reaction occurs; it means concentration is not controlling rate within the specified regime.",
+          "hi": "शून्य कोटि (Zero order) में तय परिस्थितियों पर अभिकारक की विलोपन दर उसकी सांद्रता से स्वतंत्र होती है। −d[A]/dt=k का समाकलन [A]t=[A]0−kt देता है। इस नियम की लागू अवधि में सांद्रता-समय आलेख सीधी रेखा है, जिसका ढाल−k और प्रारंभिक अवरोध[A]0 है। अर्धायु (Half-life) निकालने के लिए बची सांद्रता को प्रारंभिक की आधी रखें। इससे t1/2=[A]0/(2k) मिलता है। इसलिए समान k पर प्रारंभिक सांद्रता दुगुनी करने से शून्य कोटि की अर्धायु दुगुनी होगी। प्रथम कोटि की तरह अर्धायु हर प्रारंभिक सांद्रता के लिए समान नहीं है। सूत्र t=[A]0/k पर पूर्ण उपभोग बताता है, लेकिन इसके बाद ऋणात्मक सांद्रता का परिणाम भौतिक नहीं है। वास्तविक शून्य कोटि व्यवहार किसी संतृप्त सतह या स्थिर सीमाकारी परिस्थिति तक ही चल सकता है। परिस्थिति बदलने पर दर नियम बदल सकता है। इसलिए लंबे समय तक यांत्रिक रूप से रेखा बढ़ाकर असंभव मात्रा न दिखाएँ। स्थिर दर का अर्थ अभिक्रिया रुकना नहीं; इसका अर्थ निर्दिष्ट सीमा में सांद्रता का नियंत्रक न होना है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use [A]0 and k in matching concentration units.",
+          "hi": "[A]0 औरk में सांद्रता का आधार समान रखें; mol L^-1 को बिना रूपांतरण mol m^-3 से न मिलाएँ।"
+        },
+        {
+          "en": "The mathematical line ends physically at depletion or earlier regime change.",
+          "hi": "गणितीय सीधी रेखा का भौतिक उपयोग पदार्थ समाप्त होने या उससे पहले नियम बदलने तक है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For[A]0=0.20 mol L^-1,k=0.01 mol L^-1 s^-1, find t1/2.",
+          "hi": "[A]0=0.20 mol L^-1,k=0.01 mol L^-1 s^-1 परt1/2?"
+        },
+        "answer": {
+          "en": "t1/2=0.20/(2×0.01)=10 s.",
+          "hi": "t1/2=0.20/(2×0.01)=10 s।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "First-order integrated law and half-life",
+        "hi": "प्रथम कोटि का समाकलित नियम और अर्धायु"
+      },
+      "paragraphs": [
+        {
+          "en": "For first-order disappearance −d[A]/dt=k[A], integration gives ln([A]0/[A]t)=kt or [A]t=[A]0e^-kt. The base-10 form uses k=(2.303/t)log10([A]0/[A]t). Do not insert the fraction reacted in place of the fraction remaining. A linear ln[A] versus time plot has slope−k. The half-life t1/2=ln2/k is independent of initial concentration at the same k. After one, two and three half-lives, fractions1/2,1/4 and1/8 remain. Equal half-lives remove equal fractions, not equal absolute amounts. The ideal exponential approaches zero but never reaches exactly zero at a finite time. Claims of100% completion need an operational detection limit rather than misuse of a finite logarithm.",
+          "hi": "प्रथम कोटि (First order) की विलोपन दर k[A] होती है। समाकलित रूप ln([A]0/[A]t)=kt अथवा [A]t=[A]0e^-kt है। सामान्य लघुगणक लेने पर k=(2.303/t)log10([A]0/[A]t) मिलता है। ln और log10 बदलते समय2.303 का गुणक न भूलें। यदि75% पदार्थ अभिक्रिया कर चुका है, तो बचा अंश25%=0.25 है; सूत्र में बची सांद्रता रखें,0.75 नहीं। ln[A] बनाम समय का ढाल−k होगा। अर्धायु t1/2=ln2/k लगभग0.693/k है। समान ताप और k पर यह प्रारंभिक सांद्रता से स्वतंत्र है। 1,2 और3 अर्धायु बाद क्रमशः1/2,1/4 और1/8 पदार्थ बचता है। बराबर समय की अर्धायु में बराबर अंश हटता है, बराबर ग्राम या बराबर mol नहीं। आदर्श घातीय वक्र पर सांद्रता सीमित समय में ठीक शून्य नहीं पहुँचती। इसलिए100% पूर्णता की समय गणना के लिए शून्य को लघुगणक में रखकर परिमित उत्तर न दें। व्यवहार में बहुत कम बची मात्रा उपकरण की पहचान सीमा से नीचे जा सकती है; वह गणितीय शून्य से अलग विचार है।"
+        },
+        {
+          "en": "Plot selection is itself part of the reasoning. For a first-order reaction, a concentration–time plot curves, but lnc versus time becomes linear. Its vertical intercept is ln[A]0, and its downward slope gives k after changing the sign. A graph of ln([A]0/[A]t) versus time instead has positive slope k and passes through zero at the initial time in the ideal model. Both graphs represent the same integrated equation; confusing them creates a sign error without changing the underlying chemistry. Check whether an axis uses natural logarithm, decimal logarithm, remaining fraction or percentage before extracting a numerical rate constant.",
+          "hi": "प्रथम कोटि में सांद्रता-समय आलेख वक्र है, पर ln[A] बनाम समय सीधी रेखा है। अवरोध ln[A]0 और ढाल −k है। दूसरी ओर ln([A]0/[A]t) बनाम समय का ढाल +k और आदर्श प्रारंभिक अवरोध 0 होता है। दोनों एक ही नियम के अलग रूप हैं। अक्ष का नाम न पढ़ने से अनावश्यक चिह्न त्रुटि होगी। ग्राफ से k निकालने से पहले ln, log10, बचा अंश या प्रतिशत का आधार पहचानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "At75% completion,25% remains and two half-lives have passed.",
+          "hi": "75% पूर्णता पर25% बचता है; यानी2 अर्धायु बीत चुकी हैं।"
+        },
+        {
+          "en": "A first-order half-life is independent of [A]0, provided k remains unchanged.",
+          "hi": "प्रथम कोटि की अर्धायु[A]0 से स्वतंत्र है, बशर्ते ताप और अन्य परिस्थितियों सेk न बदले।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What fraction remains after4 half-lives?",
+          "hi": "4 अर्धायु बाद कितना अंश बचेगा?"
+        },
+        "answer": {
+          "en": "(1/2)^4=1/16=6.25%.",
+          "hi": "(1/2)^4=1/16=6.25%।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Temperature and Arrhenius equation",
+        "hi": "ताप और आरेनियस समीकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "The Arrhenius equation k=Aexp(−Ea/RT) relates rate constant to temperature in a useful model. Ea is activation energy and A is a pre-exponential factor. Temperature must be in kelvin; Ea and R must share energy units. For approximately constant A and Ea over the interval, ln(k2/k1)=Ea/R(1/T1−1/T2). With positive Ea, increasing temperature increases k because a larger fraction of molecular encounters can overcome the energy barrier. A plot of lnk against1/T has slope−Ea/R; for log10k the slope is−Ea/(2.303R). The often quoted doubling per10°C is only a rough empirical observation for some reactions, not a universal equation. A higher k cannot be inferred solely from higher reactant concentration.",
+          "hi": "आरेनियस समीकरण (Arrhenius equation) k=Aexp(−Ea/RT) दर स्थिरांक और ताप का उपयोगी संबंध देता है। Ea सक्रियण ऊर्जा (Activation energy) और A पूर्वघातीय गुणक है। T हमेशा केल्विन में तथा Ea और R में ऊर्जा का समान मात्रक लें। Ea को kJ mol^-1 और R को J mol^-1 K^-1 में बिना रूपांतरण मिलाने से1000 गुनी त्रुटि हो सकती है। सीमित ताप विस्तार में A और Ea लगभग स्थिर मानकर ln(k2/k1)=(Ea/R)(1/T1−1/T2) मिलता है। धनात्मक Ea पर T2>T1 होने से दायाँ पद धनात्मक औरk2>k1 होता है। ताप बढ़ने से आवश्यक ऊर्जा वाली टक्करों का अंश बढ़ता है; केवल सभी अणु समान नई ऊर्जा प्राप्त करते हैं, ऐसा चित्र सही नहीं। ln k बनाम1/T का ढाल−Ea/R है। log10k आलेख के लिए ढाल−Ea/(2.303R) होगा। हर10°C वृद्धि पर दर हमेशा ठीक दुगुनी हो, यह सार्वभौमिक नियम नहीं; कुछ अभिक्रियाओं का मोटा प्रायोगिक अनुमान है। अलग सांद्रता और अलग ताप के प्रभावों को गणना में अलग रखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Compare rates at the same concentration when using k ratios as rate ratios.",
+          "hi": "k के अनुपात को दर का अनुपात मानने के लिए अन्य सांद्रता शर्तें समान रखें।"
+        },
+        {
+          "en": "A negative slope in lnk versus1/T corresponds to positive activation energy.",
+          "hi": "lnk बनाम1/T में ऋणात्मक ढाल धनात्मक सक्रियण ऊर्जा से संगत है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What slope gives Ea from an lnk versus1/T plot?",
+          "hi": "lnk बनाम1/T आलेख का कौन-सा ढालEa देता है?"
+        },
+        "answer": {
+          "en": "Slope=−Ea/R, so Ea=−R×slope.",
+          "hi": "ढाल=−Ea/R,अतःEa=−R×ढाल।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Catalysts and reaction pathways",
+        "hi": "उत्प्रेरक और अभिक्रिया मार्ग"
+      },
+      "paragraphs": [
+        {
+          "en": "A catalyst offers an alternative reaction pathway with a different, often lower, activation barrier. It can increase the rate at which equilibrium is reached without changing the thermodynamic equilibrium constant at a fixed temperature. It does not change the Gibbs-energy difference between reactants and products or make an unfavourable equilibrium favourable by itself. Both forward and reverse approaches are accelerated consistently with the same equilibrium. The catalyst participates in intermediate steps but is regenerated in the overall catalytic cycle; it is not necessarily absent from every elementary equation. Its action can depend on surface area, condition and poisoning. A simple energy-profile sketch must distinguish activation energy from reaction enthalpy. Lowering the peak relative to reactants does not move the initial and final thermodynamic levels.",
+          "hi": "उत्प्रेरक (Catalyst) अभिक्रिया के लिए वैकल्पिक मार्ग उपलब्ध कराता है, जिसकी प्रभावी सक्रियण बाधा अक्सर कम होती है। इसलिए समान ताप पर अभिक्रिया अधिक तेजी से साम्य की ओर पहुँच सकती है। लेकिन उत्प्रेरक स्वयं अभिकारक और उत्पाद की गिब्स ऊर्जा के अंतर या निश्चित ताप के साम्य स्थिरांक को नहीं बदलता। वह प्रतिकूल साम्य को केवल गति बढ़ाकर अनुकूल नहीं बना देता। अग्र और पश्च दोनों दिशाओं की गतिकी उसी साम्य के अनुरूप प्रभावित होती है। उत्प्रेरक बीच के प्राथमिक चरणों में भाग ले सकता है और पूर्ण उत्प्रेरकी चक्र में फिर प्राप्त होता है। इसलिए वह किसी भी अर्धचरण में दिखाई ही न दे, यह गलत धारणा है। ठोस उत्प्रेरक के लिए सतह क्षेत्र, सक्रिय स्थल और विषाक्तन महत्वपूर्ण हो सकते हैं। ऊर्जा आलेख में अभिकारकों से संक्रमण अवस्था तक की ऊँचाई सक्रियण ऊर्जा है, जबकि प्रारंभिक-अंतिम स्तर का अंतर अभिक्रिया का ऊष्मागतिक परिवर्तन है। केवल बीच का मार्ग बदलने से अंतिम और प्रारंभिक अवस्थाओं की ऊर्जा अंतर नहीं बदलता। ग्राफ में इन्हें अलग रेखाओं से पहचानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A catalyst changes the pathway, not the equilibrium constant at fixed temperature.",
+          "hi": "निश्चित ताप पर उत्प्रेरक मार्ग बदलता है, साम्य स्थिरांक नहीं; जल्दी पहुँचना और अलग साम्य होना अलग बातें हैं।"
+        },
+        {
+          "en": "Do not confuse a reduced activation barrier with a more negative reaction enthalpy.",
+          "hi": "कम सक्रियण बाधा को अधिक ऋणात्मक अभिक्रिया एन्थैल्पी न मानें; दोनों अलग ऊर्जा अंतर हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does adding a catalyst change K at fixed temperature?",
+          "hi": "निश्चित ताप पर उत्प्रेरक मिलाने सेK बदलता है?"
+        },
+        "answer": {
+          "en": "No; it changes the rate of approach to equilibrium, not K.",
+          "hi": "नहीं; यह साम्य तक पहुँचने की गति बदलता है,K नहीं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Collision theory and data interpretation",
+        "hi": "संघट्ट सिद्धांत और आँकड़ों की व्याख्या"
+      },
+      "paragraphs": [
+        {
+          "en": "Elementary collision theory explains that reacting particles must encounter one another with sufficient energy and suitable orientation. Collision frequency alone is therefore not the same as successful reaction frequency. Increasing concentration can raise encounter frequency, while heating changes the distribution of molecular energies and often the fraction above the activation barrier. A steric or orientation factor recognises that not every energetic encounter forms products. This is a qualitative model with limitations, especially for complex solution and surface mechanisms. When evaluating data, inspect units, plot axes, experimental controls and the time interval before choosing a model. Linear behaviour in an appropriate transformed plot supports an integrated law over that range but does not prove a unique microscopic mechanism. Report an approximation and its limits instead of extending a fitted law into impossible negative concentrations.",
+          "hi": "संघट्ट सिद्धांत (Collision theory) के प्रारंभिक वर्णन में अभिक्रियाशील कणों का मिलना आवश्यक है, लेकिन हर टक्कर से उत्पाद नहीं बनता। पर्याप्त ऊर्जा और उपयुक्त अभिविन्यास (Orientation) भी चाहिए। इसलिए कुल टक्कर आवृत्ति और सफल टक्कर आवृत्ति एक नहीं हैं। सांद्रता बढ़ाने से मिलने की संभावना बढ़ सकती है; ताप बदलने से आणविक ऊर्जाओं का वितरण और बाधा पार करने वाले कणों का अंश बदलता है। स्थानिक गुणक यह पहचानता है कि सही ऊर्जा होने पर भी सभी दिशाओं से टक्कर समान प्रभावी नहीं होती। यह गुणात्मक विद्यालयी मॉडल है, हर जटिल विलयन या सतही क्रियाविधि की पूरी तस्वीर नहीं। आँकड़े पढ़ते समय पहले अक्षों के नाम, मात्रक, नियंत्रित परिस्थितियाँ और माप की अवधि देखें। [A] बनामt की रेखीयता शून्य कोटि का समर्थन कर सकती है, जबकि ln[A] बनामt की रेखीयता प्रथम कोटि का। उचित परिवर्तित आलेख का सीधा होना उस सीमा में नियम का प्रमाणन है, अकेले उससे अद्वितीय सूक्ष्म क्रियाविधि सिद्ध नहीं होती। अच्छे उत्तर में मान्यता, गणना और लागू समय सीमा तीनों स्पष्ट होने चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Energy and orientation both affect the probability of a productive encounter.",
+          "hi": "उत्पादक टक्कर की संभावना में ऊर्जा और अभिविन्यास दोनों योगदान देते हैं; केवल कणों की भीड़ पर्याप्त नहीं।"
+        },
+        {
+          "en": "A model must be checked against data and physical bounds.",
+          "hi": "मॉडल को आँकड़ों तथा भौतिक सीमाओं से जाँचें; ऋणात्मक सांद्रता जैसा परिणाम विस्तार की सीमा दिखाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is collision frequency not identical to reaction rate?",
+          "hi": "टक्कर आवृत्ति अभिक्रिया दर के बराबर क्यों नहीं?"
+        },
+        "answer": {
+          "en": "Only a fraction of collisions meet the energy and orientation requirements.",
+          "hi": "टक्करों का केवल कुछ अंश ऊर्जा और अभिविन्यास की आवश्यकताएँ पूरा करता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "r=−(1/a)d[A]/dt=(1/b)d[B]/dt",
+      "meaning": {
+        "en": "Normalised rate for aA→bB.",
+        "hi": "aA→bB की सामान्यीकृत दर।"
+      },
+      "units": {
+        "en": "Commonly mol L^-1 s^-1.",
+        "hi": "सामान्यतःmol L^-1 s^-1।"
+      }
+    },
+    {
+      "expression": "r=k[A]^m[B]^n; order=m+n",
+      "meaning": {
+        "en": "Experimental rate law; exponents need not be overall coefficients.",
+        "hi": "प्रायोगिक दर नियम; घातें पूर्ण समीकरण के गुणांक जरूरी नहीं।"
+      },
+      "units": {
+        "en": "k:concentration^(1−order) time^-1.",
+        "hi": "k:सांद्रता^(1−कोटि) समय^-1।"
+      }
+    },
+    {
+      "expression": "[A]t=[A]0−kt; t1/2=[A]0/(2k)",
+      "meaning": {
+        "en": "Zero-order law only within its valid regime and before depletion.",
+        "hi": "शून्य कोटि नियम लागू सीमा और पदार्थ समाप्त होने से पहले तक।"
+      },
+      "units": {
+        "en": "k in mol L^-1 s^-1 when time is s.",
+        "hi": "समयs होने परk कोmol L^-1 s^-1 में लें।"
+      }
+    },
+    {
+      "expression": "ln([A]0/[A]t)=kt; t1/2=ln2/k",
+      "meaning": {
+        "en": "First-order disappearance and concentration-independent half-life.",
+        "hi": "प्रथम कोटि विलोपन और प्रारंभिक सांद्रता से स्वतंत्र अर्धायु।"
+      },
+      "units": {
+        "en": "k:s^-1 for time in s; logarithm ratio dimensionless.",
+        "hi": "समयs परk:s^-1;लघुगणक अनुपात विमाहीन।"
+      }
+    },
+    {
+      "expression": "k=A exp(−Ea/RT)",
+      "meaning": {
+        "en": "Arrhenius model; T is absolute temperature.",
+        "hi": "आरेनियस मॉडल;T पूर्ण ताप है।"
+      },
+      "units": {
+        "en": "Ea:J mol^-1 with R=8.314 J mol^-1 K^-1.",
+        "hi": "R=8.314 J mol^-1 K^-1 हो तोEa:J mol^-1।"
+      }
+    },
+    {
+      "expression": "ln(k2/k1)=(Ea/R)(1/T1−1/T2)",
+      "meaning": {
+        "en": "Two-temperature Arrhenius form with approximately fixed A and Ea.",
+        "hi": "लगभग स्थिरA औरEa के लिए2 तापों का आरेनियस रूप।"
+      },
+      "units": {
+        "en": "T1,T2 in K; k values in matching units.",
+        "hi": "T1,T2 कोK में तथाk के समान मात्रक लें।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A concentration falls from0.80 to0.50 mol L^-1 in30 s. Find its average disappearance rate.",
+        "hi": "सांद्रता30 s में0.80 से0.50 mol L^-1 हुई। औसत विलोपन दर निकालें।"
+      },
+      "given": {
+        "en": "[A]initial=0.80,[A]final=0.50 mol L^-1,Δt=30 s.",
+        "hi": "प्रारंभिक[A]=0.80,अंतिम[A]=0.50 mol L^-1,Δt=30 s।"
+      },
+      "find": {
+        "en": "Average disappearance rate.",
+        "hi": "औसत विलोपन दर।"
+      },
+      "formula": {
+        "en": "Rate=−Δ[A]/Δt.",
+        "hi": "दर=−Δ[A]/Δt।"
+      },
+      "steps": [
+        {
+          "en": "Δ[A]=0.50−0.80=−0.30 mol L^-1.",
+          "hi": "Δ[A]=0.50−0.80=−0.30 mol L^-1।"
+        },
+        {
+          "en": "Rate=−(−0.30)/30=0.010 mol L^-1 s^-1.",
+          "hi": "दर=−(−0.30)/30=0.010 mol L^-1 s^-1।"
+        }
+      ],
+      "answer": {
+        "en": "0.010 mol L^-1 s^-1.",
+        "hi": "0.010 mol L^-1 s^-1।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "For a zero-order reaction,[A]0=0.10 mol L^-1 and k=0.0020 mol L^-1 s^-1. Find[A] after20 s.",
+        "hi": "शून्य कोटि में[A]0=0.10 mol L^-1,k=0.0020 mol L^-1 s^-1।20 s बाद[A] निकालें।"
+      },
+      "given": {
+        "en": "[A]0=0.10,k=0.0020,t=20 s.",
+        "hi": "[A]0=0.10,k=0.0020,t=20 s।"
+      },
+      "find": {
+        "en": "Remaining concentration.",
+        "hi": "बची सांद्रता।"
+      },
+      "formula": {
+        "en": "[A]t=[A]0−kt.",
+        "hi": "[A]t=[A]0−kt।"
+      },
+      "steps": [
+        {
+          "en": "kt=0.0020×20=0.040 mol L^-1.",
+          "hi": "kt=0.0020×20=0.040 mol L^-1।"
+        },
+        {
+          "en": "[A]t=0.10−0.040=0.060 mol L^-1.",
+          "hi": "[A]t=0.10−0.040=0.060 mol L^-1।"
+        },
+        {
+          "en": "Depletion time is50 s, so20 s is within the stated model interval.",
+          "hi": "पूर्ण उपभोग समय50 s है;20 s मॉडल की बताई सीमा में है।"
+        }
+      ],
+      "answer": {
+        "en": "0.060 mol L^-1.",
+        "hi": "0.060 mol L^-1।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A first-order half-life is20 min. Find k and the fraction remaining after60 min.",
+        "hi": "प्रथम कोटि की अर्धायु20 min है।k और60 min बाद बचा अंश निकालें।"
+      },
+      "given": {
+        "en": "t1/2=20 min;t=60 min.",
+        "hi": "t1/2=20 min;t=60 min।"
+      },
+      "find": {
+        "en": "k and remaining fraction.",
+        "hi": "k और बचा अंश।"
+      },
+      "formula": {
+        "en": "k=ln2/t1/2;fraction=(1/2)^(t/t1/2).",
+        "hi": "k=ln2/t1/2;अंश=(1/2)^(t/t1/2)।"
+      },
+      "steps": [
+        {
+          "en": "k=0.693/20=0.03465 min^-1.",
+          "hi": "k=0.693/20=0.03465 min^-1।"
+        },
+        {
+          "en": "60/20=3 half-lives.",
+          "hi": "60/20=3 अर्धायु।"
+        },
+        {
+          "en": "Remaining fraction=1/8=0.125.",
+          "hi": "बचा अंश=1/8=0.125।"
+        }
+      ],
+      "answer": {
+        "en": "k≈0.0347 min^-1;12.5% remains.",
+        "hi": "k≈0.0347 min^-1;12.5% बचता है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A first-order reaction is75% complete in40 min. Find k.",
+        "hi": "प्रथम कोटि अभिक्रिया40 min में75% पूरी होती है।k निकालें।"
+      },
+      "given": {
+        "en": "Remaining fraction=0.25;t=40 min.",
+        "hi": "बचा अंश=0.25;t=40 min।"
+      },
+      "find": {
+        "en": "First-order rate constant.",
+        "hi": "प्रथम कोटि दर स्थिरांक।"
+      },
+      "formula": {
+        "en": "k=(1/t)ln([A]0/[A]t).",
+        "hi": "k=(1/t)ln([A]0/[A]t)।"
+      },
+      "steps": [
+        {
+          "en": "Use remaining25%, not reacted75%.",
+          "hi": "बचा25% लें,अभिक्रियित75% नहीं।"
+        },
+        {
+          "en": "k=ln4/40=1.38629/40.",
+          "hi": "k=ln4/40=1.38629/40।"
+        }
+      ],
+      "answer": {
+        "en": "0.03466 min^-1.",
+        "hi": "0.03466 min^-1।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Estimate k310/k300 for Ea=50.0 kJ mol^-1, assuming constant A and Ea. UseR=8.314 J mol^-1 K^-1.",
+        "hi": "Ea=50.0 kJ mol^-1 पर स्थिरA,Ea मानकरk310/k300 निकालें।R=8.314 J mol^-1 K^-1 लें।"
+      },
+      "given": {
+        "en": "T1=300 K,T2=310 K,Ea=50000 J mol^-1.",
+        "hi": "T1=300 K,T2=310 K,Ea=50000 J mol^-1।"
+      },
+      "find": {
+        "en": "Rate-constant ratio.",
+        "hi": "दर स्थिरांक अनुपात।"
+      },
+      "formula": {
+        "en": "ln(k2/k1)=(Ea/R)(1/T1−1/T2).",
+        "hi": "ln(k2/k1)=(Ea/R)(1/T1−1/T2)।"
+      },
+      "steps": [
+        {
+          "en": "Convert50.0 kJ to50000 J.",
+          "hi": "50.0 kJ को50000 J में बदलें।"
+        },
+        {
+          "en": "1/300−1/310=10/93000 K^-1.",
+          "hi": "1/300−1/310=10/93000 K^-1।"
+        },
+        {
+          "en": "lnratio=(50000/8.314)×10/93000≈0.6467.",
+          "hi": "lnअनुपात=(50000/8.314)×10/93000≈0.6467।"
+        },
+        {
+          "en": "Ratio=exp(0.6467)≈1.91.",
+          "hi": "अनुपात=exp(0.6467)≈1.91।"
+        }
+      ],
+      "answer": {
+        "en": "k310/k300≈1.91; not a universal exact doubling rule.",
+        "hi": "k310/k300≈1.91;यह हर10 K पर ठीक दुगुने होने का सार्वभौमिक नियम नहीं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "For2A→B,−d[A]/dt=0.06 mol L^-1 s^-1. What is normalised r?",
+        "hi": "2A→B में−d[A]/dt=0.06 mol L^-1 s^-1 हो तो सामान्यीकृतr?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0.03 mol L^-1 s^-1",
+            "hi": "0.03 mol L^-1 s^-1"
+          },
+          "reason": {
+            "en": "Divide A’s disappearance rate by its coefficient2.",
+            "hi": "A की विलोपन दर को गुणांक2 से भाग दें।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.06 mol L^-1 s^-1",
+            "hi": "0.06 mol L^-1 s^-1"
+          },
+          "reason": {
+            "en": "This is the raw A disappearance rate.",
+            "hi": "यह A की कच्ची विलोपन दर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.12 mol L^-1 s^-1",
+            "hi": "0.12 mol L^-1 s^-1"
+          },
+          "reason": {
+            "en": "Multiplication reverses the coefficient normalisation.",
+            "hi": "गुणा करना गुणांक सामान्यीकरण का उलटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−0.03 mol L^-1 s^-1",
+            "hi": "−0.03 mol L^-1 s^-1"
+          },
+          "reason": {
+            "en": "The conventional forward rate is positive here.",
+            "hi": "यहाँ परंपरागत अग्र दर धनात्मक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Doubling[A] at fixed[B] makes rate4 times. The order inA is?",
+        "hi": "[B] स्थिर पर[A] दुगुना करने से दर4 गुनी।A की कोटि?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "2^m=4 gives m=2.",
+            "hi": "2^m=4 सेm=2।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "First order would double the rate only.",
+            "hi": "प्रथम कोटि में दर केवल दुगुनी होती।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Zero order would leave the rate unchanged.",
+            "hi": "शून्य कोटि में दर न बदलती।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "The rate factor4 is not itself the exponent.",
+            "hi": "दर गुणक4 स्वयं घात नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which statement about molecularity is correct?",
+        "hi": "आण्विकता का सही कथन कौन?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It is a positive integer for an elementary step.",
+            "hi": "यह प्राथमिक चरण के लिए धनात्मक पूर्णांक है।"
+          },
+          "reason": {
+            "en": "It counts participating reacting particles in that step.",
+            "hi": "यह उस चरण के अभिक्रियाशील कणों की संख्या है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It may be0.5 for an elementary step.",
+            "hi": "प्राथमिक चरण में0.5 हो सकती है।"
+          },
+          "reason": {
+            "en": "Fractional values may describe order, not particle-count molecularity.",
+            "hi": "भिन्नात्मक कोटि हो सकती है,कण-संख्या आण्विकता नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "It always equals the overall reaction order.",
+            "hi": "हमेशा पूर्ण अभिक्रिया कोटि के बराबर है।"
+          },
+          "reason": {
+            "en": "Overall multi-step order is experimental and may differ.",
+            "hi": "बहुचरणीय पूर्ण कोटि प्रायोगिक है और अलग हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It is always zero.",
+            "hi": "हमेशा शून्य है।"
+          },
+          "reason": {
+            "en": "A reacting elementary event requires at least one reacting particle.",
+            "hi": "प्राथमिक घटना में कम-से-कम1 अभिक्रियाशील कण चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is the unit of a first-order k when time is seconds?",
+        "hi": "समय सेकंड में हो तो प्रथम कोटिk का मात्रक?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "s^-1",
+            "hi": "s^-1"
+          },
+          "reason": {
+            "en": "The concentration factor cancels one concentration dimension from rate.",
+            "hi": "दर से सांद्रता का आयाम कट जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "mol L^-1 s^-1",
+            "hi": "mol L^-1 s^-1"
+          },
+          "reason": {
+            "en": "That is a rate unit and a zero-order k unit.",
+            "hi": "यह दर तथा शून्य कोटिk का मात्रक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "L mol^-1 s^-1",
+            "hi": "L mol^-1 s^-1"
+          },
+          "reason": {
+            "en": "That is the usual second-order k unit.",
+            "hi": "यह सामान्य द्वितीय कोटिk का मात्रक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "s",
+            "hi": "s"
+          },
+          "reason": {
+            "en": "k is inverse time, not time.",
+            "hi": "k समय का व्युत्क्रम है,समय नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Zero-order half-life is proportional to?",
+        "hi": "शून्य कोटि अर्धायु किसके अनुपाती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Initial concentration at fixed k",
+            "hi": "निश्चितk पर प्रारंभिक सांद्रता"
+          },
+          "reason": {
+            "en": "t1/2=[A]0/(2k).",
+            "hi": "t1/2=[A]0/(2k)।"
+          }
+        },
+        {
+          "text": {
+            "en": "Inverse initial concentration",
+            "hi": "प्रारंभिक सांद्रता का व्युत्क्रम"
+          },
+          "reason": {
+            "en": "The zero-order formula has[A]0 in the numerator.",
+            "hi": "शून्य कोटि सूत्र में[A]0 अंश में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No initial-concentration dependence",
+            "hi": "प्रारंभिक सांद्रता से स्वतंत्र"
+          },
+          "reason": {
+            "en": "That is the first-order half-life property.",
+            "hi": "यह प्रथम कोटि अर्धायु का गुण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The square of elapsed time",
+            "hi": "बीते समय का वर्ग"
+          },
+          "reason": {
+            "en": "Half-life is a defined interval, not proportional to elapsed-time squared.",
+            "hi": "अर्धायु निर्धारित अंतराल है,बीते समय के वर्ग का अनुपात नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "After3 first-order half-lives, the fraction remaining is?",
+        "hi": "प्रथम कोटि की3 अर्धायु बाद बचा अंश?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/8",
+            "hi": "1/8"
+          },
+          "reason": {
+            "en": "(1/2)^3=1/8.",
+            "hi": "(1/2)^3=1/8।"
+          }
+        },
+        {
+          "text": {
+            "en": "3/2",
+            "hi": "3/2"
+          },
+          "reason": {
+            "en": "Remaining fraction cannot exceed1 in a disappearance process.",
+            "hi": "विलोपन में बचा अंश1 से अधिक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/3",
+            "hi": "1/3"
+          },
+          "reason": {
+            "en": "Successive half-lives multiply by1/2, not divide by the count.",
+            "hi": "हर अर्धायु में1/2 गुणा होता है,गिनती से भाग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The ideal first-order exponential does not reach zero at finite time.",
+            "hi": "आदर्श प्रथम कोटि वक्र सीमित समय में शून्य नहीं पहुँचता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If75% is reacted, what concentration fraction belongs in[A]t/[A]0?",
+        "hi": "75% अभिक्रियित हो तो[A]t/[A]0 में कौन-सा अंश?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0.25",
+            "hi": "0.25"
+          },
+          "reason": {
+            "en": "25% remains.",
+            "hi": "25% बचा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.75",
+            "hi": "0.75"
+          },
+          "reason": {
+            "en": "That is the reacted fraction, not the remaining fraction.",
+            "hi": "यह अभिक्रियित अंश है,बचा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "75",
+            "hi": "75"
+          },
+          "reason": {
+            "en": "Percent must be converted to a fraction, then subtract reacted from1.",
+            "hi": "प्रतिशत को अंश में बदलकर1 से अभिक्रियित अंश घटाएँ।"
+          }
+        },
+        {
+          "text": {
+            "en": "1.75",
+            "hi": "1.75"
+          },
+          "reason": {
+            "en": "This would imply more reactant than initially present.",
+            "hi": "इससे प्रारंभिक से अधिक अभिकारक निकलता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The slope of lnk versus1/T is?",
+        "hi": "lnk बनाम1/T का ढाल?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−Ea/R",
+            "hi": "−Ea/R"
+          },
+          "reason": {
+            "en": "Taking natural logs gives lnk=lnA−Ea/(RT).",
+            "hi": "प्राकृतिक लघुगणक सेlnk=lnA−Ea/(RT)।"
+          }
+        },
+        {
+          "text": {
+            "en": "+Ea/R",
+            "hi": "+Ea/R"
+          },
+          "reason": {
+            "en": "The reciprocal-temperature term carries a minus sign.",
+            "hi": "व्युत्क्रम ताप पद पर ऋण चिह्न है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−Ea/(2.303R)",
+            "hi": "−Ea/(2.303R)"
+          },
+          "reason": {
+            "en": "That slope applies to log10k, not lnk.",
+            "hi": "यहlog10k का ढाल है,lnk का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A",
+            "hi": "A"
+          },
+          "reason": {
+            "en": "lnA is the intercept under the model.",
+            "hi": "मॉडल मेंlnA अवरोध है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At fixed temperature, a catalyst changes which quantity?",
+        "hi": "निश्चित ताप पर उत्प्रेरक क्या बदलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The reaction pathway and rate of approach",
+            "hi": "अभिक्रिया मार्ग और पहुँचने की दर"
+          },
+          "reason": {
+            "en": "An alternative pathway changes kinetics.",
+            "hi": "वैकल्पिक मार्ग गतिकी बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The equilibrium constant K",
+            "hi": "साम्य स्थिरांकK"
+          },
+          "reason": {
+            "en": "K depends on thermodynamics at that temperature, not the catalytic pathway.",
+            "hi": "उस ताप काK ऊष्मागतिकी पर है,उत्प्रेरकी मार्ग पर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The Gibbs difference between initial and final states",
+            "hi": "प्रारंभिक-अंतिम गिब्स अंतर"
+          },
+          "reason": {
+            "en": "A catalyst does not move the initial and final thermodynamic levels.",
+            "hi": "उत्प्रेरक प्रारंभिक-अंतिम ऊष्मागतिक स्तर नहीं बदलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "The balanced overall atom count",
+            "hi": "पूर्ण संतुलित परमाणु संख्या"
+          },
+          "reason": {
+            "en": "Catalysis does not violate atom conservation.",
+            "hi": "उत्प्रेरण परमाणु संरक्षण नहीं तोड़ता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why is every collision not successful?",
+        "hi": "हर टक्कर सफल क्यों नहीं होती?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Energy and orientation requirements may not both be met.",
+            "hi": "ऊर्जा और अभिविन्यास की शर्तें साथ पूरी नहीं हो सकतीं।"
+          },
+          "reason": {
+            "en": "Both factors influence product formation.",
+            "hi": "दोनों कारक उत्पाद निर्माण प्रभावित करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No molecules ever have activation energy.",
+            "hi": "किसी अणु में सक्रियण ऊर्जा नहीं होती।"
+          },
+          "reason": {
+            "en": "A distribution includes some sufficiently energetic encounters.",
+            "hi": "वितरण में कुछ पर्याप्त ऊर्जावान टक्करें होती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Collisions always stop motion permanently.",
+            "hi": "टक्कर गति हमेशा के लिए रोक देती है।"
+          },
+          "reason": {
+            "en": "Molecules continue moving after ordinary collisions.",
+            "hi": "सामान्य टक्कर के बाद अणु चलते रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only collision count matters.",
+            "hi": "केवल टक्कर संख्या महत्वपूर्ण है।"
+          },
+          "reason": {
+            "en": "Frequency alone ignores energetic and steric constraints.",
+            "hi": "केवल आवृत्ति ऊर्जा और स्थानिक शर्तें अनदेखी करती है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish average and instantaneous reaction rates.",
+        "hi": "औसत और तात्क्षणिक दर का अंतर दें।"
+      },
+      "answer": {
+        "en": "Average rate uses finite concentration change divided by a time interval; instantaneous rate is the local derivative or tangent slope.",
+        "hi": "औसत दर निश्चित सांद्रता परिवर्तन/समय अंतराल है;तात्क्षणिक दर स्थानीय अवकलज या स्पर्शरेखा ढाल है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why cannot overall stoichiometric coefficients always give the rate law?",
+        "hi": "पूर्ण स्टॉइकियोमितीय गुणांक हमेशा दर नियम क्यों नहीं देते?"
+      },
+      "answer": {
+        "en": "An overall equation may combine multiple elementary steps; observed kinetics depends on the mechanism and conditions.",
+        "hi": "पूर्ण समीकरण कई प्राथमिक चरण जोड़ सकता है;प्रेक्षित गतिकी क्रियाविधि और परिस्थितियों पर निर्भर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare order and molecularity.",
+        "hi": "कोटि और आण्विकता की तुलना करें।"
+      },
+      "answer": {
+        "en": "Order is the sum of experimental rate-law exponents and can be fractional or zero; molecularity counts particles in an elementary step and is a positive integer.",
+        "hi": "कोटि प्रायोगिक दर घातों का योग है,शून्य या भिन्नात्मक हो सकती है;आण्विकता प्राथमिक चरण की कण संख्या और धनात्मक पूर्णांक है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Derive the first-order half-life from the integrated law.",
+        "hi": "समाकलित नियम से प्रथम कोटि अर्धायु निकालें।"
+      },
+      "answer": {
+        "en": "Set[A]t=[A]0/2 in ln([A]0/[A]t)=kt; ln2=kt1/2, hence t1/2=ln2/k.",
+        "hi": "ln([A]0/[A]t)=kt में[A]t=[A]0/2 रखें;ln2=kt1/2,अतःt1/2=ln2/k।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is a negative zero-order concentration prediction invalid?",
+        "hi": "शून्य कोटि से ऋणात्मक सांद्रता का अनुमान अमान्य क्यों?"
+      },
+      "answer": {
+        "en": "The law has been extended beyond depletion or its experimental regime; concentration cannot be negative.",
+        "hi": "नियम पदार्थ समाप्ति या प्रयोग की लागू सीमा से आगे बढ़ाया गया है;सांद्रता ऋणात्मक नहीं हो सकती।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why heating and catalysis are different ways to change reaction speed.",
+        "hi": "ताप बढ़ाना और उत्प्रेरण गति बदलने के अलग तरीके क्यों हैं?"
+      },
+      "answer": {
+        "en": "Heating changes temperature-dependent energy distributions and k; catalysis provides an alternative pathway, while neither interpretation permits confusing kinetic barriers with equilibrium energy differences.",
+        "hi": "ताप ऊर्जा वितरण औरk बदलता है;उत्प्रेरण वैकल्पिक मार्ग देता है।गतिक बाधा को साम्य ऊर्जा अंतर न समझें।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Normalise species rates by their balanced coefficients.",
+      "hi": "स्पीशीज की दर को संतुलित गुणांक से सामान्यीकृत करें।"
+    },
+    {
+      "en": "Determine order from data rather than guessing from the overall equation.",
+      "hi": "कोटि आँकड़ों से निकालें,पूर्ण समीकरण से अनुमान न लगाएँ।"
+    },
+    {
+      "en": "Zero-order concentration falls linearly within its valid regime.",
+      "hi": "लागू सीमा में शून्य कोटि सांद्रता रैखिक रूप से घटती है।"
+    },
+    {
+      "en": "First-order half-life is ln2/k and removes equal fractions.",
+      "hi": "प्रथम कोटि अर्धायुln2/k है और बराबर अंश हटाती है।"
+    },
+    {
+      "en": "Arrhenius temperature effects and catalytic pathways affect kinetics, not a new equilibrium at fixed temperature.",
+      "hi": "आरेनियस ताप प्रभाव और उत्प्रेरकी मार्ग गतिकी बदलते हैं;निश्चित ताप पर नया साम्य नहीं बनाते।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not equate order with overall coefficients, use reacted fraction instead of remaining fraction, mix ln with log10, retain Celsius in Arrhenius expressions, continue zero-order lines below zero, or claim catalysts change K at fixed temperature.",
+    "hi": "कोटि को पूर्ण गुणांक न मानें;बचे अंश की जगह अभिक्रियित अंश न रखें;ln औरlog10 न मिलाएँ;आरेनियस में सेल्सियस न रखें;शून्य कोटि रेखा को ऋणात्मक सांद्रता तक न बढ़ाएँ;उत्प्रेरक से निश्चित ताप परK बदलने का दावा न करें।"
+  },
+  "goal": {
+    "en": "Use rate data, integrated laws and activation energy to explain how fast reactions proceed.",
+    "hi": "दर आँकड़ों, समाकलित नियमों और सक्रियण ऊर्जा से अभिक्रिया की गति समझें।"
+  },
+  "conceptMap": "सांद्रता-समय आँकड़े → दर और सामान्यीकरण → दर नियम व कोटि → शून्य/प्रथम कोटि समाकलन → अर्धायु → ताप और सक्रियण ऊर्जा → उत्प्रेरक व संघट्ट मॉडल",
+  "conceptMapEn": "Concentration–time data → rate and normalisation → rate law and order → zero/first-order integration → half-life → temperature and activation energy → catalyst and collision model",
+  "editionBasis": {
+    "en": "Original explanations aligned to the current NCERT Chemistry Class XII and UP Board 2026–27 syllabus. Use the prescribed textbook and school practicals alongside.",
+    "hi": "वर्तमान NCERT रसायन विज्ञान कक्षा 12 तथा यूपी बोर्ड 2026–27 पाठ्यक्रम के अनुरूप मौलिक व्याख्याएँ। निर्धारित पुस्तक और विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry XII, Chapter 3, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/lech103.pdf"
+    },
+    {
+      "title": "UPMSP Class 12 Chemistry syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/152-Chemistry-Class-12.pdf"
+    }
+  ]
+}

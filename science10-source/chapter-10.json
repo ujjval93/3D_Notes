@@ -1,0 +1,1499 @@
+{
+  "id": "eye",
+  "number": 10,
+  "title": {
+    "en": "The Human Eye and the Colourful World",
+    "hi": "मानव नेत्र तथा रंगबिरंगा संसार"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "goal": {
+    "en": "Explain accommodation, optical defects, dispersion and atmospheric colour effects.",
+    "hi": "समंजन, दृष्टिदोष, विक्षेपण और वायुमंडलीय रंग प्रभाव समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Eye structures and the retinal image",
+        "hi": "नेत्र की संरचना और रेटिना पर चित्र"
+      },
+      "paragraphs": [
+        {
+          "en": "The eye admits light through the transparent cornea. Much of the bending of incoming light happens at this curved front surface; the crystalline lens provides finer adjustment for focusing at different object distances. The iris controls pupil size and therefore regulates the amount of light entering. The pupil is an opening, not a black lens or a screen. The light-sensitive retina receives a real inverted image. Its cells generate signals that travel through the optic nerve to the brain, where visual information is interpreted. Do not describe the eye as a small camera that someone inside watches: the retina is a biological detector and vision involves nervous processing. The eyeball is approximately spherical, but the drawings exaggerate parts so that they can be distinguished. The cornea and lens work together as an optical system. For school ray diagrams we often replace them by one converging lens; this useful simplification does not mean the cornea has no refracting role.",
+          "hi": "नेत्र में प्रकाश पारदर्शी कॉर्निया (Cornea) से प्रवेश करता है। आने वाली किरणों का अधिकांश अपवर्तन इस सामने की वक्र सतह पर होता है। क्रिस्टलीय नेत्र लेंस (Eye lens) अलग वस्तु दूरियों पर फोकस करने के लिए सूक्ष्म समायोजन देता है। परितारिका (Iris) पुतली का आकार बदलकर भीतर आने वाले प्रकाश की मात्रा नियंत्रित करती है। पुतली (Pupil) एक छिद्र है; वह काला लेंस या पर्दा नहीं है। प्रकाश-संवेदी रेटिना (Retina) पर वास्तविक उलटा चित्र बनता है। इसकी कोशिकाएँ संकेत बनाती हैं जो दृष्टि तंत्रिका (Optic nerve) से मस्तिष्क तक पहुँचते हैं। मस्तिष्क दृश्य सूचना का अर्थ निकालता है। आँख के भीतर कोई व्यक्ति कैमरे का चित्र नहीं देखता; दृष्टि में जैविक संवेदन और तंत्रिका प्रसंस्करण शामिल हैं। नेत्रगोलक लगभग गोल है, लेकिन आरेख में भाग पहचानने के लिए आकार बढ़ाकर दिखाए जाते हैं। कॉर्निया और लेंस मिलकर प्रकाशीय तंत्र बनाते हैं। विद्यालय के किरण चित्र में इन्हें अक्सर 1 अभिसारी लेंस से दर्शाते हैं। यह उपयोगी सरलीकरण है, कॉर्निया की भूमिका का निषेध नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The iris regulates light; the lens adjusts focus; the retina detects the image.",
+          "hi": "परितारिका प्रकाश नियंत्रित करती है; लेंस फोकस बदलता है; रेटिना चित्र ग्रहण करती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Where does the real image form in a normally focused eye?",
+          "hi": "सामान्य फोकस वाले नेत्र में वास्तविक चित्र कहाँ बनता है?"
+        },
+        "answer": {
+          "en": "On the retina, from which signals travel to the brain.",
+          "hi": "रेटिना पर, जहाँ से संकेत मस्तिष्क तक जाते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Accommodation and limits of distinct vision",
+        "hi": "समंजन और स्पष्ट दृष्टि की सीमाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Accommodation is the eye lens changing focal length to keep images on the retina while object distance changes. For a distant object the ciliary muscles are relaxed, the lens is relatively thin and its focal length is longer. For a nearby object these muscles contract, the lens becomes more curved and its focal length becomes shorter. The retina does not slide backwards and forwards as the screen in a classroom optical bench does. For a young adult with normal vision, the near point is conventionally about 25 cm and the far point is at infinity. These are reference values for textbook problems, not a diagnosis for every person. There is a limit to lens adjustment, so a page held extremely close looks blurred. In the scene a symbolic lens-retina distance is fixed at 2 cm. Using u = -d and v = +2 cm gives f = 2d/(d + 2) cm. This numerical toy model illustrates the trend only, not a complete anatomical calculation.",
+          "hi": "समंजन (Accommodation) नेत्र लेंस की फोकस दूरी बदलने की क्षमता है, जिससे अलग दूरी की वस्तुओं का चित्र रेटिना पर बना रहता है। दूर वस्तु देखने पर पक्ष्माभी पेशियाँ (Ciliary muscles) शिथिल होती हैं, लेंस अपेक्षाकृत पतला और फोकस दूरी अधिक होती है। पास की वस्तु के लिए पेशियाँ संकुचित होती हैं, लेंस अधिक वक्र या मोटा बनता है और फोकस दूरी घटती है। प्रकाशीय बेंच के पर्दे की तरह रेटिना आगे-पीछे नहीं सरकती। सामान्य दृष्टि वाले युवा वयस्क का निकट बिंदु (Near point) परंपरागत रूप से लगभग 25 cm और दूर बिंदु (Far point) अनंत माना जाता है। ये पुस्तक के प्रश्नों के संदर्भ मान हैं, हर व्यक्ति की जाँच का निष्कर्ष नहीं। समंजन की सीमा होती है, इसलिए पुस्तक बहुत पास लाने पर अक्षर धुँधले लगते हैं। दृश्य में लेंस से रेटिना की सांकेतिक दूरी 2 cm स्थिर है। u = -d और v = +2 cm रखने से f = 2d/(d + 2) cm मिलता है। यह सरल मॉडल प्रवृत्ति समझाता है, वास्तविक नेत्र का पूरा शारीरिक गणना मॉडल नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For nearer objects, required lens power increases while the retinal position stays fixed.",
+          "hi": "पास की वस्तु के लिए लेंस क्षमता बढ़ती है; रेटिना का स्थान स्थिर रहता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why must the lens become more converging for a nearby object?",
+          "hi": "पास की वस्तु के लिए लेंस को अधिक अभिसारी क्यों बनना पड़ता है?"
+        },
+        "answer": {
+          "en": "Nearby rays are more divergent, so stronger convergence is needed to focus them on the same retina.",
+          "hi": "पास से आई किरणें अधिक अपसारित हैं; उसी रेटिना पर मिलाने के लिए अधिक अभिसरण चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Myopia and its optical correction",
+        "hi": "निकट दृष्टिदोष और उसका सुधार"
+      },
+      "paragraphs": [
+        {
+          "en": "In myopia a person can see nearby objects clearly but distant objects are blurred. Parallel rays from a distant object are focused before the retina when accommodation is relaxed. The cause may be excessive converging power or an elongated eyeball. A concave correcting lens diverges incoming rays so that the eye receives them as if they came from its finite far point. The eye can then bring them to focus on the retina. For a simplified spectacle calculation, an object at infinity has 1/u = 0. If the unaided far point is 50 cm in front, the correcting lens must form a virtual image there: v = -0.50 m, so f = -0.50 m and P = -2 D. The scene holds this far point fixed and lets power vary from -5 D to 0 D. Only -2 D is the matched value for this model. More negative is not automatically better; too much divergence also gives an incorrect focus.",
+          "hi": "निकट दृष्टिदोष (Myopia) में व्यक्ति पास की वस्तु स्पष्ट, लेकिन दूर की धुँधली देखता है। शिथिल समंजन की अवस्था में दूर से आई समांतर किरणें रेटिना से पहले मिल जाती हैं। कारण नेत्र की अत्यधिक अभिसारी क्षमता या नेत्रगोलक का लंबा होना हो सकता है। सुधारक अवतल लेंस (Concave correcting lens) आने वाली किरणों को इतना अपसारित करता है कि वे नेत्र के सीमित दूर बिंदु से आती प्रतीत हों। तब नेत्र उन्हें रेटिना पर फोकस कर सकता है। सरल चश्मा गणना में अनंत पर वस्तु के लिए 1/u = 0 लेते हैं। बिना चश्मे का दूर बिंदु सामने 50 cm हो तो सुधारक लेंस को वहीं आभासी चित्र बनाना है: v = -0.50 m। इसलिए f = -0.50 m और P = -2 D है। दृश्य में यह दूर बिंदु स्थिर है और क्षमता -5 D से 0 D बदलती है। इस मॉडल के लिए केवल -2 D का मेल सही है। अधिक ऋणात्मक क्षमता अपने आप बेहतर नहीं होती; जरूरत से अधिक अपसरण भी गलत फोकस देता है। वास्तविक चश्मा विशेषज्ञ की माप से निर्धारित होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A negative-power lens corrects this model of myopia; the example is not a prescription.",
+          "hi": "इस निकट दृष्टिदोष मॉडल में ऋण क्षमता का लेंस है; उदाहरण चश्मे की सलाह नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What power matches a myopic far point at 50 cm?",
+          "hi": "50 cm दूर बिंदु वाले निकट दृष्टिदोष मॉडल में क्षमता कितनी है?"
+        },
+        "answer": {
+          "en": "-2 D, since the distant object must have a virtual image at -0.50 m.",
+          "hi": "-2 D, क्योंकि दूर वस्तु का आभासी चित्र -0.50 m पर चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Hypermetropia, presbyopia and careful comparisons",
+        "hi": "दूर दृष्टिदोष, जरा-दृष्टिदोष और तुलना"
+      },
+      "paragraphs": [
+        {
+          "en": "Hypermetropia is difficulty seeing nearby objects clearly while distant vision may be clearer. For a close object, the eye tends to focus rays behind the retina because its converging power is insufficient or its eyeball is too short. A convex lens adds convergence before light reaches the eye. Do not interchange the remedies: myopia needs divergence, whereas hypermetropia needs additional convergence. In presbyopia, age-related reduction in accommodation makes near tasks difficult as the lens becomes less flexible and the ciliary mechanism less effective. A person may have more than one focusing requirement, and appropriate spectacles may combine optical functions. The near-point calculation must state where the desired object is and where a virtual image should be formed. A positive focal length follows when a convex lens must present a nearby page as an object at the person's farther near point. The chapter explains optical principles, not how to choose spectacles by trial on a screen.",
+          "hi": "दूर दृष्टिदोष (Hypermetropia) में पास की वस्तु स्पष्ट देखने में कठिनाई होती है, जबकि दूर की वस्तु अपेक्षाकृत स्पष्ट हो सकती है। पास की वस्तु से आई किरणों को नेत्र रेटिना के पीछे फोकस करने की प्रवृत्ति रखता है। कारण कम अभिसारी क्षमता या छोटा नेत्रगोलक हो सकता है। उत्तल लेंस (Convex lens) नेत्र तक पहुँचने से पहले अतिरिक्त अभिसरण देता है। दोनों सुधार न बदलें: निकट दृष्टिदोष में अपसरण और दूर दृष्टिदोष में अतिरिक्त अभिसरण चाहिए। जरा-दृष्टिदोष (Presbyopia) में आयु के साथ समंजन घटता है; लेंस का लचीलापन और पेशीय समायोजन कम प्रभावी होने से पास के काम कठिन होते हैं। एक व्यक्ति की 1 से अधिक फोकस संबंधी जरूरतें हो सकती हैं। उचित चश्मे में अलग प्रकाशीय कार्य संयुक्त हो सकते हैं। निकट बिंदु की गणना में पृष्ठ का वास्तविक स्थान और चाहा गया आभासी चित्र स्थान स्पष्ट लिखना चाहिए। उत्तल लेंस पास के पृष्ठ को व्यक्ति के अधिक दूर निकट बिंदु पर स्थित दिखाता है। यह अध्याय प्रकाशीय सिद्धांत समझाता है; स्क्रीन पर कोशिश करके चश्मा चुनने की विधि नहीं देता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Compare image location before choosing a lens: before retina versus behind retina.",
+          "hi": "लेंस चुनने का सिद्धांत समझने से पहले चित्र स्थान जाँचें: रेटिना से पहले या पीछे।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which lens supplies extra convergence for hypermetropia?",
+          "hi": "दूर दृष्टिदोष में अतिरिक्त अभिसरण कौन सा लेंस देता है?"
+        },
+        "answer": {
+          "en": "A convex lens with positive power in air.",
+          "hi": "वायु में धनात्मक क्षमता वाला उत्तल लेंस।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Prisms, white light and dispersion",
+        "hi": "प्रिज्म, श्वेत प्रकाश और विक्षेपण"
+      },
+      "paragraphs": [
+        {
+          "en": "A glass prism has non-parallel refracting faces. A ray generally bends at entry and again at exit; unlike a parallel glass slab, its final direction is usually changed. Different colours have different refractive indices in glass, so white light separates into a band of colours called a spectrum. This separation is dispersion. In ordinary glass violet is deviated more than red. A second suitably oriented prism can recombine separated colours, showing that the colours were already constituents of white light rather than being created by the glass. A rainbow involves refraction, internal reflection and dispersion in water droplets, not merely a reflection from a coloured surface. The prism drawing in the interactive scene is illustrative: wavelength controls colour and the supplementary scattering readout, not a precise prism-deviation equation. Actual deviation also depends on prism angle, incidence and the material's wavelength-dependent refractive index. A colour legend is a drawing aid and cannot reproduce every spectral colour on a phone display.",
+          "hi": "काँच के प्रिज्म (Prism) की अपवर्तक सतहें समांतर नहीं होतीं। किरण प्रवेश और निर्गमन पर सामान्यतः मुड़ती है; समांतर काँच की पट्टी के विपरीत उसकी अंतिम दिशा बदल जाती है। काँच में अलग रंगों के अपवर्तनांक अलग होते हैं, इसलिए श्वेत प्रकाश रंगों की पट्टी, अर्थात स्पेक्ट्रम (Spectrum), में अलग होता है। इस विभाजन को विक्षेपण (Dispersion) कहते हैं। साधारण काँच में बैंगनी प्रकाश लाल से अधिक विचलित होता है। उचित विपरीत दिशा में दूसरा प्रिज्म रखकर रंग फिर मिलाए जा सकते हैं। इससे पता चलता है कि रंग श्वेत प्रकाश के घटक थे, काँच ने उन्हें नया नहीं बनाया। इंद्रधनुष में जल बूँदों द्वारा अपवर्तन, आंतरिक परावर्तन तथा विक्षेपण शामिल हैं; वह किसी रंगीन सतह से साधारण परावर्तन नहीं है। संवादात्मक प्रिज्म चित्र सांकेतिक है। तरंगदैर्घ्य स्लाइडर रंग और पूरक प्रकीर्णन पठन बदलता है, सटीक प्रिज्म विचलन नहीं। वास्तविक विचलन प्रिज्म कोण, आपतन तथा पदार्थ के रंग-निर्भर अपवर्तनांक पर भी निर्भर है। मोबाइल की रंग सूची हर स्पेक्ट्रमी रंग का पूर्ण पुनरुत्पादन नहीं कर सकती।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Dispersion separates component colours; it does not generate them from colourless material.",
+          "hi": "विक्षेपण घटक रंगों को अलग करता है, रंगहीन पदार्थ से नए रंग नहीं बनाता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does white light split in a prism?",
+          "hi": "प्रिज्म में श्वेत प्रकाश क्यों बँटता है?"
+        },
+        "answer": {
+          "en": "Different colours experience different refractive indices and therefore different deviations.",
+          "hi": "अलग रंगों के अपवर्तनांक अलग हैं, इसलिए उनका विचलन अलग होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Atmospheric refraction and apparent positions",
+        "hi": "वायुमंडलीय अपवर्तन और आभासी स्थिति"
+      },
+      "paragraphs": [
+        {
+          "en": "The atmosphere is not a single uniform glass block. Its density and refractive index vary gradually with height and also fluctuate with moving air. Light from a star passes through changing layers and follows a slightly changing path, so its apparent position and brightness fluctuate: this contributes to twinkling. A star is effectively a point source at this scale. A planet presents a small extended disc, so brightness variations from different parts tend to average out; planets therefore usually twinkle much less. Atmospheric refraction also makes the Sun appear above its geometric position near the horizon. We may see it a little before actual sunrise and after actual sunset. The Sun has not physically jumped upward, and light is not travelling instantaneously. These are apparent-position effects caused by bending in a non-uniform medium. The flat air-glass boundary scene illustrates only one change of direction and must not be mistaken for a quantitatively complete atmospheric simulation.",
+          "hi": "वायुमंडल एक समरूप काँच का टुकड़ा नहीं है। ऊँचाई के साथ घनत्व और अपवर्तनांक धीरे-धीरे बदलते हैं तथा चलती वायु में उतार-चढ़ाव भी होता है। तारे का प्रकाश इन बदलती परतों से गुजरकर थोड़ा बदलता रास्ता अपनाता है। इसलिए तारे की आभासी स्थिति और चमक में परिवर्तन होता है; यह टिमटिमाने (Twinkling) का कारण है। इस पैमाने पर तारा लगभग बिंदु स्रोत है। ग्रह का छोटा विस्तृत चक्र दिखाई देता है; अलग भागों के चमक परिवर्तन एक-दूसरे का औसत बना देते हैं। इसलिए ग्रह सामान्यतः बहुत कम टिमटिमाते हैं। वायुमंडलीय अपवर्तन (Atmospheric refraction) क्षितिज के पास सूर्य को उसकी ज्यामितीय स्थिति से ऊपर दिखाता है। इस कारण वास्तविक सूर्योदय से थोड़ा पहले और वास्तविक सूर्यास्त के थोड़ा बाद भी सूर्य दिखाई दे सकता है। सूर्य सचमुच ऊपर नहीं उछलता और प्रकाश तुरंत नहीं पहुँचता। असमरूप माध्यम में मुड़ने के कारण यह आभासी स्थिति का प्रभाव है। समतल वायु-काँच सीमा का दृश्य केवल एक सीमा पर दिशा बदलना दिखाता है; उसे पूर्ण गणनात्मक वायुमंडल मॉडल नहीं मानना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "An apparent shift changes the inferred light direction, not the object's true location.",
+          "hi": "आभासी विस्थापन अनुमानित प्रकाश दिशा बदलता है, वस्तु का वास्तविक स्थान नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why do planets usually twinkle less than stars?",
+          "hi": "ग्रह सामान्यतः तारों से कम क्यों टिमटिमाते हैं?"
+        },
+        "answer": {
+          "en": "Their extended apparent discs average fluctuations from many points.",
+          "hi": "उनके विस्तृत आभासी चक्र के अनेक बिंदुओं के उतार-चढ़ाव औसत हो जाते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Scattering, blue sky and red sunlight",
+        "hi": "प्रकीर्णन, नीला आकाश और लाल सूर्य प्रकाश"
+      },
+      "paragraphs": [
+        {
+          "en": "Scattering redirects light through interaction with particles. Very small atmospheric particles scatter shorter visible wavelengths more strongly, so blue-rich light reaches us from many directions in the daytime sky. This explanation concerns light redirected towards the observer, not a blue surface above Earth. Near sunrise or sunset, sunlight travels through a longer atmospheric path. More of the shorter wavelengths are scattered out of the direct beam, leaving it relatively richer in red. Larger droplets can scatter many visible wavelengths, helping explain why clouds may look white. The Tyndall effect makes a beam path visible when dispersed particles scatter light into the observer's eyes. In the scene a supplementary ideal small-particle relation gives relative scattering (700/λ)^4 with λ in nm. It predicts about 9.38 at 400 nm compared with 1 at 700 nm. This is a limited model, not a universal rule for every particle, cloud, pollutant or optical instrument, and it is not needed to derive the basic textbook explanation.",
+          "hi": "प्रकीर्णन (Scattering) में कणों से अंतःक्रिया के कारण प्रकाश अलग दिशाओं में जाता है। बहुत छोटे वायुमंडलीय कण कम तरंगदैर्घ्य का दृश्य प्रकाश अधिक प्रकीर्णित करते हैं। इसलिए दिन में अनेक दिशाओं से नीले घटक वाला प्रकाश आँखों तक पहुँचता है और आकाश नीला लगता है। इसका अर्थ पृथ्वी के ऊपर नीली सतह होना नहीं है। सूर्योदय या सूर्यास्त के पास प्रकाश वायुमंडल में लंबा रास्ता तय करता है। सीधे आने वाले पुंज से कम तरंगदैर्घ्य अधिक हट जाते हैं; बचा प्रकाश अपेक्षाकृत लाल होता है। बड़ी बूँदें अनेक दृश्य तरंगदैर्घ्यों को प्रकीर्णित करती हैं, जिससे बादल सफेद दिख सकते हैं। टिंडल प्रभाव (Tyndall effect) में बिखरे कण प्रकाश आँख की ओर भेजते हैं और पुंज का रास्ता दिखता है। दृश्य में पूरक आदर्श छोटे-कण संबंध (700/λ)^4 है, जहाँ λ nm में है। 700 nm पर मान 1 और 400 nm पर लगभग 9.38 है। यह सीमित मॉडल है, हर कण, बादल, प्रदूषक या उपकरण का सार्वभौमिक नियम नहीं। मूल पाठ्यपुस्तक व्याख्या समझने के लिए इस घात संबंध की व्युत्पत्ति जरूरी नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Distinguish scattering into the eye from scattering out of a direct beam.",
+          "hi": "आँख की ओर प्रकीर्णन और सीधे पुंज से बाहर प्रकीर्णन में अंतर रखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is direct sunlight relatively red near the horizon?",
+          "hi": "क्षितिज के पास सीधा सूर्य प्रकाश अपेक्षाकृत लाल क्यों है?"
+        },
+        "answer": {
+          "en": "The longer atmospheric path scatters more short-wavelength light out of the direct beam.",
+          "hi": "लंबे वायुमंडलीय रास्ते में कम तरंगदैर्घ्य का अधिक प्रकाश सीधे पुंज से बाहर हट जाता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Linking eye optics and colour observations",
+        "hi": "नेत्र प्रकाशिकी और रंग अनुभव को जोड़ना"
+      },
+      "paragraphs": [
+        {
+          "en": "Separate three questions when analysing an observation: where the light goes, where the image is focused, and which wavelengths reach the eye. Accommodation and spectacles concern focus. Dispersion concerns separation of wavelengths by refraction. Scattering concerns redistribution of light directions. These processes may occur together but are not interchangeable names. A prism can split white light without producing a sharp retinal image, while a clear spectacle lens can improve focus without splitting a visible spectrum. When using the interactive scenes, first note the fixed quantities: retina distance in the accommodation model, far point in the myopia model, and reference wavelength in the scattering model. Change one slider, record the readout and explain the direction of change. Use centimetres consistently in a lens equation, then convert focal length to metres for power. Any screen representation is a model with symbolic rays and magnified structures. Never test eye focusing by staring at the Sun or looking through a lens towards it.",
+          "hi": "किसी निरीक्षण में 3 प्रश्न अलग कीजिए: प्रकाश किस दिशा जाता है, चित्र कहाँ फोकस होता है और कौन से तरंगदैर्घ्य आँख तक पहुँचते हैं। समंजन और चश्मा फोकस से संबंधित हैं। विक्षेपण अपवर्तन द्वारा तरंगदैर्घ्यों के अलग होने का विषय है। प्रकीर्णन प्रकाश की दिशाओं में पुनर्वितरण है। ये प्रक्रियाएँ साथ हो सकती हैं, लेकिन इनके नाम एक-दूसरे के स्थान पर नहीं रखने चाहिए। प्रिज्म श्वेत प्रकाश बाँट सकता है, बिना रेटिना पर तीक्ष्ण चित्र बनाने का उदाहरण बने। साफ चश्मा दृश्य स्पेक्ट्रम बनाए बिना फोकस सुधार सकता है। दृश्य चलाते समय पहले स्थिर राशियाँ लिखें: समंजन मॉडल में रेटिना दूरी, निकट दृष्टिदोष में दूर बिंदु और प्रकीर्णन में संदर्भ तरंगदैर्घ्य। 1 स्लाइडर बदलें, पठन लिखें तथा परिवर्तन की दिशा समझाएँ। लेंस सूत्र में cm की समान इकाई रखें, फिर क्षमता निकालने के लिए फोकस दूरी m में बदलें। स्क्रीन का हर चित्र सांकेतिक किरणों और बढ़े अंगों वाला मॉडल है। सूर्य को देखकर या उसकी ओर लेंस लगाकर आँख का फोकस कभी न जाँचें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Name the process precisely before using a formula or explaining a colour.",
+          "hi": "सूत्र लगाने या रंग समझाने से पहले प्रक्रिया का सही नाम लिखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is dispersion the same process as myopia correction?",
+          "hi": "क्या विक्षेपण और निकट दृष्टिदोष सुधार एक प्रक्रिया हैं?"
+        },
+        "answer": {
+          "en": "No. Dispersion separates colours; correction redirects rays to restore retinal focus.",
+          "hi": "नहीं। विक्षेपण रंग अलग करता है; सुधार किरणों को रेटिना पर फोकस कराने के लिए मोड़ता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "P = 1/f(m) = 100/f(cm)",
+      "meaning": {
+        "en": "Lens power P; positive for converging, negative for diverging lenses in air.",
+        "hi": "लेंस क्षमता P; वायु में अभिसारी के लिए धनात्मक, अपसारी के लिए ऋणात्मक।"
+      },
+      "units": {
+        "en": "P: D; f in m for 1/f, in cm for 100/f.",
+        "hi": "P: D; 1/f में f m और 100/f में f cm।"
+      }
+    },
+    {
+      "expression": "1/f = 1/v - 1/u",
+      "meaning": {
+        "en": "Thin-lens relation used in simplified spectacle calculations.",
+        "hi": "सरल चश्मा गणना में पतले लेंस का संबंध।"
+      },
+      "units": {
+        "en": "All distances in one common length unit with signs.",
+        "hi": "सभी दूरियाँ एक इकाई में चिह्न सहित।"
+      }
+    },
+    {
+      "expression": "f_model = 2d/(d + 2)",
+      "meaning": {
+        "en": "Supplementary scene model: d positive object-distance magnitude; fixed image distance 2 cm.",
+        "hi": "पूरक दृश्य मॉडल: d वस्तु दूरी का धनात्मक परिमाण; चित्र दूरी 2 cm स्थिर।"
+      },
+      "units": {
+        "en": "d and f_model: cm; P_model = 100/f_model in D.",
+        "hi": "d तथा f_model: cm; P_model = 100/f_model, D में।"
+      }
+    },
+    {
+      "expression": "S_relative = (700/λ)^4",
+      "meaning": {
+        "en": "Supplementary ideal small-particle scattering model referenced to 700 nm; not universal.",
+        "hi": "700 nm संदर्भ वाला पूरक आदर्श छोटे-कण प्रकीर्णन मॉडल; सार्वभौमिक नहीं।"
+      },
+      "units": {
+        "en": "λ: nm; S_relative has no unit.",
+        "hi": "λ: nm; S_relative इकाई रहित।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not call every colour effect dispersion. Myopia uses a concave correcting lens; hypermetropia uses a convex one. Model powers are not spectacle prescriptions.",
+    "hi": "हर रंग प्रभाव को विक्षेपण न कहें। निकट दृष्टिदोष में अवतल, दूर दृष्टिदोष में उत्तल लेंस है। मॉडल क्षमता चश्मे की पर्ची नहीं है।"
+  },
+  "summary": [
+    {
+      "en": "The cornea and lens focus a real inverted retinal image.",
+      "hi": "कॉर्निया और लेंस रेटिना पर वास्तविक उलटा चित्र बनाते हैं।"
+    },
+    {
+      "en": "Accommodation adjusts lens curvature, not retinal position.",
+      "hi": "समंजन लेंस वक्रता बदलता है, रेटिना का स्थान नहीं।"
+    },
+    {
+      "en": "Suitable lenses correct focus errors with convergence or divergence.",
+      "hi": "उचित लेंस अभिसरण या अपसरण से फोकस त्रुटि सुधारते हैं।"
+    },
+    {
+      "en": "Dispersion separates colours by differing refraction.",
+      "hi": "अलग अपवर्तन से विक्षेपण रंग अलग करता है।"
+    },
+    {
+      "en": "Scattering and atmospheric refraction explain several sky observations.",
+      "hi": "प्रकीर्णन और वायुमंडलीय अपवर्तन आकाश के अनेक अनुभव समझाते हैं।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the power of a correcting lens of focal length -0.50 m.",
+        "hi": "-0.50 m फोकस दूरी वाले सुधारक लेंस की क्षमता निकालें।"
+      },
+      "given": {
+        "en": "f = -0.50 m",
+        "hi": "f = -0.50 m"
+      },
+      "find": {
+        "en": "P and lens type",
+        "hi": "P और लेंस प्रकार"
+      },
+      "formula": {
+        "en": "P = 1/f",
+        "hi": "P = 1/f"
+      },
+      "steps": [
+        {
+          "en": "P = 1/(-0.50).",
+          "hi": "P = 1/(-0.50)।"
+        },
+        {
+          "en": "Negative power denotes divergence.",
+          "hi": "ऋण क्षमता अपसरण बताती है।"
+        }
+      ],
+      "answer": {
+        "en": "-2 D; concave lens.",
+        "hi": "-2 D; अवतल लेंस।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Identify the optical change when a normal eye turns from a distant tree to a nearby book.",
+        "hi": "सामान्य नेत्र दूर पेड़ से पास पुस्तक की ओर करे तो प्रकाशीय परिवर्तन बताएँ।"
+      },
+      "given": {
+        "en": "Retina position unchanged; object becomes nearer.",
+        "hi": "रेटिना का स्थान स्थिर; वस्तु पास आती है।"
+      },
+      "find": {
+        "en": "Change of curvature and focal length",
+        "hi": "वक्रता और फोकस दूरी का परिवर्तन"
+      },
+      "formula": {
+        "en": "Stronger convergence → shorter focal length",
+        "hi": "Stronger convergence → shorter focal length"
+      },
+      "steps": [
+        {
+          "en": "Nearby rays arrive with greater divergence.",
+          "hi": "पास की किरणें अधिक अपसारित आती हैं।"
+        },
+        {
+          "en": "Ciliary muscles contract; lens becomes more curved.",
+          "hi": "पक्ष्माभी पेशियाँ संकुचित; लेंस अधिक वक्र होता है।"
+        }
+      ],
+      "answer": {
+        "en": "Focal length decreases and lens power increases.",
+        "hi": "फोकस दूरी घटती और लेंस क्षमता बढ़ती है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A myopic eye has its far point 50 cm away. Find the lens power for a distant object.",
+        "hi": "निकट दृष्टिदोष का दूर बिंदु 50 cm है। दूर वस्तु के लिए लेंस क्षमता निकालें।"
+      },
+      "given": {
+        "en": "u = -∞; v = -0.50 m; ignore lens-eye separation.",
+        "hi": "u = -∞; v = -0.50 m; लेंस-नेत्र अंतर उपेक्षित।"
+      },
+      "find": {
+        "en": "f and P",
+        "hi": "f और P"
+      },
+      "formula": {
+        "en": "1/f = 1/v - 1/u; P = 1/f",
+        "hi": "1/f = 1/v - 1/u; P = 1/f"
+      },
+      "steps": [
+        {
+          "en": "1/u = 0.",
+          "hi": "1/u = 0।"
+        },
+        {
+          "en": "1/f = -2 m^-1.",
+          "hi": "1/f = -2 m^-1।"
+        },
+        {
+          "en": "f = -0.50 m; P = -2 D.",
+          "hi": "f = -0.50 m; P = -2 D।"
+        }
+      ],
+      "answer": {
+        "en": "A -2 D concave lens for this simplified example.",
+        "hi": "इस सरल उदाहरण के लिए -2 D अवतल लेंस।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "In the symbolic eye model, find f when the object is 50 cm away and retina is 2 cm behind the lens.",
+        "hi": "सांकेतिक नेत्र में वस्तु 50 cm दूर और रेटिना लेंस के पीछे 2 cm है। f निकालें।"
+      },
+      "given": {
+        "en": "u = -50 cm; v = +2 cm",
+        "hi": "u = -50 cm; v = +2 cm"
+      },
+      "find": {
+        "en": "f and model power",
+        "hi": "f और मॉडल क्षमता"
+      },
+      "formula": {
+        "en": "1/f = 1/v - 1/u",
+        "hi": "1/f = 1/v - 1/u"
+      },
+      "steps": [
+        {
+          "en": "1/f = 1/2 + 1/50 = 0.52 cm^-1.",
+          "hi": "1/f = 1/2 + 1/50 = 0.52 cm^-1।"
+        },
+        {
+          "en": "f ≈ 1.923 cm.",
+          "hi": "f ≈ 1.923 cm।"
+        },
+        {
+          "en": "P = 100/1.923 ≈ 52 D.",
+          "hi": "P = 100/1.923 ≈ 52 D।"
+        }
+      ],
+      "answer": {
+        "en": "f ≈ 1.923 cm; P ≈ 52 D in the symbolic model, not an anatomical measurement.",
+        "hi": "सांकेतिक मॉडल में f ≈ 1.923 cm; P ≈ 52 D; वास्तविक शारीरिक माप नहीं।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A person has a near point at 50 cm. Find a lens to read a page at 25 cm in a simplified model.",
+        "hi": "व्यक्ति का निकट बिंदु 50 cm है। सरल मॉडल में 25 cm पर पृष्ठ पढ़ने के लिए लेंस निकालें।"
+      },
+      "given": {
+        "en": "u = -25 cm; desired virtual image v = -50 cm.",
+        "hi": "u = -25 cm; इच्छित आभासी चित्र v = -50 cm।"
+      },
+      "find": {
+        "en": "f and P",
+        "hi": "f और P"
+      },
+      "formula": {
+        "en": "1/f = 1/v - 1/u",
+        "hi": "1/f = 1/v - 1/u"
+      },
+      "steps": [
+        {
+          "en": "1/f = -1/50 + 1/25 = 1/50 cm^-1.",
+          "hi": "1/f = -1/50 + 1/25 = 1/50 cm^-1।"
+        },
+        {
+          "en": "f = +50 cm = +0.50 m.",
+          "hi": "f = +50 cm = +0.50 m।"
+        },
+        {
+          "en": "P = 1/0.50 = +2 D.",
+          "hi": "P = 1/0.50 = +2 D।"
+        }
+      ],
+      "answer": {
+        "en": "+2 D convex lens in the stated thin-lens model.",
+        "hi": "बताए पतले लेंस मॉडल में +2 D उत्तल लेंस।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which part regulates the amount of light entering the eye?",
+        "hi": "आँख में आने वाला प्रकाश कौन नियंत्रित करता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Retina",
+            "hi": "रेटिना"
+          },
+          "reason": {
+            "en": "Retina detects light rather than controlling pupil size.",
+            "hi": "रेटिना प्रकाश ग्रहण करती है, पुतली नहीं बदलती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Iris",
+            "hi": "परितारिका"
+          },
+          "reason": {
+            "en": "Iris adjusts the pupil opening.",
+            "hi": "परितारिका पुतली का छिद्र बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Optic nerve",
+            "hi": "दृष्टि तंत्रिका"
+          },
+          "reason": {
+            "en": "The nerve transmits signals.",
+            "hi": "तंत्रिका संकेत भेजती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Brain alone",
+            "hi": "केवल मस्तिष्क"
+          },
+          "reason": {
+            "en": "The local opening is controlled by the iris.",
+            "hi": "स्थानीय छिद्र परितारिका नियंत्रित करती है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The image on a normally focused retina is:",
+        "hi": "सामान्य रेटिना पर चित्र है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Real and inverted",
+            "hi": "वास्तविक और उलटा"
+          },
+          "reason": {
+            "en": "Converging rays meet on the retina.",
+            "hi": "अभिसारी किरणें रेटिना पर मिलती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Virtual and erect",
+            "hi": "आभासी और सीधा"
+          },
+          "reason": {
+            "en": "This describes some mirror images, not the retinal image.",
+            "hi": "यह कुछ दर्पण चित्रों का गुण है, रेटिना का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always at infinity",
+            "hi": "हमेशा अनंत पर"
+          },
+          "reason": {
+            "en": "The retina is at a finite position.",
+            "hi": "रेटिना सीमित स्थान पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Behind the brain",
+            "hi": "मस्तिष्क के पीछे"
+          },
+          "reason": {
+            "en": "Light is detected in the eye, not behind the brain.",
+            "hi": "प्रकाश आँख में ग्रहण होता है, मस्तिष्क के पीछे नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For a nearby object, accommodation normally makes focal length:",
+        "hi": "पास वस्तु के लिए समंजन सामान्यतः फोकस दूरी को करता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Infinite",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "Nearby divergent rays need stronger convergence.",
+            "hi": "पास की अपसारित किरणों को अधिक अभिसरण चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged by definition",
+            "hi": "परिभाषा से अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Accommodation specifically changes focus.",
+            "hi": "समंजन का कार्य फोकस बदलना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Shorter",
+            "hi": "कम"
+          },
+          "reason": {
+            "en": "Greater curvature provides stronger convergence.",
+            "hi": "अधिक वक्रता अधिक अभिसरण देती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative always",
+            "hi": "हमेशा ऋणात्मक"
+          },
+          "reason": {
+            "en": "The eye remains a converging optical system.",
+            "hi": "नेत्र अभिसारी प्रकाशीय तंत्र रहता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Myopia is corrected in the model by:",
+        "hi": "मॉडल में निकट दृष्टिदोष का सुधार होता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Plane glass only",
+            "hi": "केवल समतल काँच"
+          },
+          "reason": {
+            "en": "Plane glass adds no suitable divergence in this model.",
+            "hi": "समतल काँच आवश्यक अपसरण नहीं देता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Convex lens",
+            "hi": "उत्तल लेंस"
+          },
+          "reason": {
+            "en": "Extra convergence would not correct this focus error.",
+            "hi": "अतिरिक्त अभिसरण इस त्रुटि को ठीक नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "No lens at any far point",
+            "hi": "किसी दूर बिंदु पर लेंस नहीं"
+          },
+          "reason": {
+            "en": "A finite far point may require correction for distant vision.",
+            "hi": "सीमित दूर बिंदु में दूर दृष्टि सुधार चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Concave lens",
+            "hi": "अवतल लेंस"
+          },
+          "reason": {
+            "en": "Divergence shifts the effective object to the finite far point.",
+            "hi": "अपसरण प्रभावी वस्तु को सीमित दूर बिंदु पर दिखाता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "A 50 cm myopic far point requires approximately:",
+        "hi": "50 cm निकट दृष्टिदोष दूर बिंदु में लगभग चाहिए:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "-2 D",
+            "hi": "-2 D"
+          },
+          "reason": {
+            "en": "f = -0.50 m, so P = -2 D.",
+            "hi": "f = -0.50 m से P = -2 D।"
+          }
+        },
+        {
+          "text": {
+            "en": "+2 D",
+            "hi": "+2 D"
+          },
+          "reason": {
+            "en": "The positive sign is incorrect for this correction.",
+            "hi": "इस सुधार में धन चिह्न गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "-50 D",
+            "hi": "-50 D"
+          },
+          "reason": {
+            "en": "The centimetre number is not power.",
+            "hi": "cm का मान क्षमता नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 D",
+            "hi": "0 D"
+          },
+          "reason": {
+            "en": "Zero power provides no correction.",
+            "hi": "शून्य क्षमता सुधार नहीं देती।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Hypermetropia may require which lens?",
+        "hi": "दूर दृष्टिदोष में कौन सा लेंस चाहिए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Concave",
+            "hi": "अवतल"
+          },
+          "reason": {
+            "en": "Divergence worsens the missing convergence in this model.",
+            "hi": "इस मॉडल में अपसरण अभिसरण की कमी बढ़ाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Convex",
+            "hi": "उत्तल"
+          },
+          "reason": {
+            "en": "It supplies additional convergence.",
+            "hi": "यह अतिरिक्त अभिसरण देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Opaque",
+            "hi": "अपारदर्शी"
+          },
+          "reason": {
+            "en": "Blocking light does not restore focus.",
+            "hi": "प्रकाश रोकना फोकस नहीं सुधारता।"
+          }
+        },
+        {
+          "text": {
+            "en": "A mirror behind the retina",
+            "hi": "रेटिना के पीछे दर्पण"
+          },
+          "reason": {
+            "en": "Spectacle correction works before light enters the eye.",
+            "hi": "चश्मा प्रकाश के नेत्र में जाने से पहले काम करता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Why does a prism disperse white light?",
+        "hi": "प्रिज्म श्वेत प्रकाश का विक्षेपण क्यों करता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It paints rays",
+            "hi": "वह किरणों को रंगता है"
+          },
+          "reason": {
+            "en": "Colours are components of the incident white light.",
+            "hi": "रंग आपतित श्वेत प्रकाश के घटक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All colours have identical refractive index",
+            "hi": "सब रंगों का अपवर्तनांक समान है"
+          },
+          "reason": {
+            "en": "Identical index would not produce ordinary dispersion.",
+            "hi": "समान अपवर्तनांक सामान्य विक्षेपण नहीं देगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Refractive index varies with colour",
+            "hi": "रंग से अपवर्तनांक बदलता है"
+          },
+          "reason": {
+            "en": "Different indices produce different deviations.",
+            "hi": "अलग अपवर्तनांक अलग विचलन देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "It only reflects light",
+            "hi": "वह केवल परावर्तन करता है"
+          },
+          "reason": {
+            "en": "Refraction at the prism faces is central here.",
+            "hi": "यहाँ प्रिज्म सतहों पर अपवर्तन मुख्य है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "The daytime blue sky mainly illustrates:",
+        "hi": "दिन का नीला आकाश मुख्यतः दिखाता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Myopia",
+            "hi": "निकट दृष्टिदोष"
+          },
+          "reason": {
+            "en": "Myopia is a focus defect.",
+            "hi": "निकट दृष्टिदोष फोकस दोष है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Accommodation",
+            "hi": "समंजन"
+          },
+          "reason": {
+            "en": "Accommodation changes eye-lens focus.",
+            "hi": "समंजन नेत्र का फोकस बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A blue solid ceiling",
+            "hi": "नीली ठोस छत"
+          },
+          "reason": {
+            "en": "There is no such solid surface.",
+            "hi": "ऐसी ठोस सतह नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Stronger scattering of shorter wavelengths",
+            "hi": "कम तरंगदैर्घ्य का अधिक प्रकीर्णन"
+          },
+          "reason": {
+            "en": "Small particles scatter blue-rich light towards us.",
+            "hi": "छोटे कण नीला घटक हमारी ओर प्रकीर्णित करते हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Planets generally twinkle less because they:",
+        "hi": "ग्रह सामान्यतः कम टिमटिमाते हैं क्योंकि:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Appear as extended sources",
+            "hi": "विस्तृत स्रोत जैसे दिखते हैं"
+          },
+          "reason": {
+            "en": "Fluctuations from different points tend to average.",
+            "hi": "अलग बिंदुओं के उतार-चढ़ाव औसत हो जाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Have no light reaching us",
+            "hi": "उनका प्रकाश नहीं आता"
+          },
+          "reason": {
+            "en": "Reflected sunlight reaches us from planets.",
+            "hi": "ग्रहों से परावर्तित सूर्य प्रकाश आता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Are outside the atmosphere while stars are inside",
+            "hi": "ग्रह बाहर और तारे वायुमंडल के भीतर हैं"
+          },
+          "reason": {
+            "en": "Both are outside Earth’s atmosphere.",
+            "hi": "दोनों पृथ्वी के वायुमंडल से बाहर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Are always red",
+            "hi": "हमेशा लाल हैं"
+          },
+          "reason": {
+            "en": "Colour is not the source-size explanation.",
+            "hi": "रंग स्रोत के आकार की व्याख्या नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The relation (700/λ)^4 in this scene is:",
+        "hi": "दृश्य का (700/λ)^4 संबंध है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A universal law for every cloud",
+            "hi": "हर बादल का सार्वभौमिक नियम"
+          },
+          "reason": {
+            "en": "Large particles can behave differently.",
+            "hi": "बड़े कण अलग व्यवहार कर सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A supplementary ideal small-particle model",
+            "hi": "पूरक आदर्श छोटे-कण मॉडल"
+          },
+          "reason": {
+            "en": "Its limited assumptions are stated explicitly.",
+            "hi": "इसकी सीमित मान्यताएँ स्पष्ट दी गई हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A spectacle prescription",
+            "hi": "चश्मे की पर्ची"
+          },
+          "reason": {
+            "en": "It describes relative scattering, not vision correction.",
+            "hi": "यह सापेक्ष प्रकीर्णन है, दृष्टि सुधार नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The prism-angle formula",
+            "hi": "प्रिज्म कोण सूत्र"
+          },
+          "reason": {
+            "en": "It does not compute prism deviation.",
+            "hi": "यह प्रिज्म विचलन नहीं निकालता।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Describe accommodation in two points.",
+        "hi": "समंजन 2 बिंदुओं में समझाएँ।"
+      },
+      "answer": {
+        "en": "Ciliary muscles alter lens curvature and focal length. Near objects require a more curved lens with shorter focal length while the retina remains fixed.",
+        "hi": "पक्ष्माभी पेशियाँ लेंस की वक्रता और फोकस दूरी बदलती हैं। पास वस्तु के लिए लेंस अधिक वक्र तथा फोकस दूरी कम होती है; रेटिना स्थिर रहती है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "State one cause and one correction of myopia.",
+        "hi": "निकट दृष्टिदोष का 1 कारण और 1 सुधार लिखें।"
+      },
+      "answer": {
+        "en": "Excessive converging power or an elongated eyeball focuses distant rays before the retina. A suitable concave lens provides divergence.",
+        "hi": "अधिक अभिसारी क्षमता या लंबा नेत्रगोलक दूर किरणें रेटिना से पहले मिलाता है। उचित अवतल लेंस अपसरण देता है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "How does hypermetropia differ optically from myopia?",
+        "hi": "प्रकाशीय दृष्टि से दूर और निकट दृष्टिदोष कैसे अलग हैं?"
+      },
+      "answer": {
+        "en": "In myopia distant rays focus before the retina; in hypermetropia near-object rays tend to focus behind it. Corrections are concave and convex respectively.",
+        "hi": "निकट दृष्टिदोष में दूर किरणें रेटिना से पहले; दूर दृष्टिदोष में पास किरणें रेटिना के पीछे फोकस करने की प्रवृत्ति रखती हैं। सुधार क्रमशः अवतल तथा उत्तल है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Explain dispersion by a prism.",
+        "hi": "प्रिज्म द्वारा विक्षेपण समझाएँ।"
+      },
+      "answer": {
+        "en": "Glass has different refractive indices for different colours. Their different deviations separate white light into a spectrum.",
+        "hi": "काँच का अलग रंगों के लिए अपवर्तनांक अलग है। अलग विचलन से श्वेत प्रकाश स्पेक्ट्रम में अलग होता है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Why does the Sun look red near sunset?",
+        "hi": "सूर्यास्त के पास सूर्य लाल क्यों लगता है?"
+      },
+      "answer": {
+        "en": "The path through air is longer. Shorter wavelengths are scattered out more, so the direct beam is relatively rich in red.",
+        "hi": "वायु में रास्ता लंबा होता है। कम तरंगदैर्घ्य अधिक बाहर प्रकीर्णित होते हैं, इसलिए सीधा पुंज अपेक्षाकृत लाल है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Find power when f = +40 cm.",
+        "hi": "f = +40 cm होने पर क्षमता निकालें।"
+      },
+      "answer": {
+        "en": "f = +0.40 m; P = 1/0.40 = +2.5 D.",
+        "hi": "f = +0.40 m; P = 1/0.40 = +2.5 D।"
+      },
+      "marks": 2
+    }
+  ],
+  "conceptMap": "नेत्र → कॉर्निया और लेंस → रेटिना → समंजन → दोष और सुधारक लेंस; सूर्य प्रकाश → विक्षेपण / वायुमंडलीय अपवर्तन / प्रकीर्णन → रंग और आभासी स्थितियाँ।",
+  "conceptMapEn": "Eye → cornea and lens → retina → accommodation → defects and correcting lenses; sunlight → dispersion / atmospheric refraction / scattering → colours and apparent positions.",
+  "editionBasis": {
+    "en": "NCERT Science Class 10, reprint 2026–27; UPMSP Science syllabus 2026–27. Original explanations; supplementary model relations are identified.",
+    "hi": "NCERT कक्षा 10 विज्ञान, पुनर्मुद्रण 2026–27; UPMSP विज्ञान पाठ्यक्रम 2026–27। व्याख्याएँ मौलिक हैं; पूरक मॉडल संबंध अलग बताए गए हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Science Class 10, Chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc110.pdf"
+    },
+    {
+      "title": "UPMSP Class 10 Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "ten-accommodation",
+      "title": {
+        "en": "Accommodation of the eye",
+        "hi": "नेत्र की समंजन क्षमता"
+      },
+      "kind": "ten-eye",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Object distance",
+            "hi": "वस्तु दूरी"
+          },
+          "min": 25,
+          "max": 200,
+          "step": 5,
+          "initial": 100,
+          "unit": "cm"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 1,
+      "goal": {
+        "en": "Keep an image on a fixed symbolic retina.",
+        "hi": "स्थिर सांकेतिक रेटिना पर चित्र बनाए रखें।"
+      },
+      "observe": {
+        "en": "Bring the object nearer: f falls and power rises while retina distance remains 2 cm.",
+        "hi": "वस्तु पास लाएँ: रेटिना दूरी 2 cm स्थिर रहते f घटती और क्षमता बढ़ती है।"
+      },
+      "modelNote": {
+        "en": "Single thin-lens eye with retina fixed 2 cm behind it; not an anatomical model or measured total eye power.",
+        "hi": "रेटिना 2 cm पीछे वाला एकल पतला लेंस; यह शारीरिक मॉडल या मापी वास्तविक नेत्र क्षमता नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "With u = -d and v = 2 cm, f = 2d/(d+2); nearer divergent rays need more convergence.",
+          "hi": "u = -d और v = 2 cm से f = 2d/(d+2); पास की अपसारित किरणों को अधिक अभिसरण चाहिए।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "As an object comes nearer, required power:",
+          "hi": "वस्तु पास आने पर आवश्यक क्षमता:"
+        },
+        "options": [
+          {
+            "en": "Increases",
+            "hi": "बढ़ती है"
+          },
+          {
+            "en": "Becomes zero",
+            "hi": "शून्य होती है"
+          },
+          {
+            "en": "Always becomes negative",
+            "hi": "हमेशा ऋणात्मक होती है"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The focal length decreases while the image distance remains fixed.",
+          "hi": "चित्र दूरी स्थिर रखते फोकस दूरी घटती है।"
+        }
+      },
+      "realLife": {
+        "en": "Switching gaze between a book and a distant tree uses accommodation.",
+        "hi": "पुस्तक और दूर पेड़ के बीच देखना समंजन का उपयोग है।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-accommodation-0",
+          "label": {
+            "en": "Move the object to 25 cm",
+            "hi": "वस्तु 25 cm पर लाएँ"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 25
+          }
+        },
+        {
+          "id": "ten-accommodation-1",
+          "label": {
+            "en": "Move the object to 200 cm",
+            "hi": "वस्तु 200 cm पर ले जाएँ"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 200
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 50
+          },
+          "text": {
+            "en": "Nearer object: stronger convergence is required.",
+            "hi": "पास वस्तु: अधिक अभिसरण चाहिए।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 50
+          },
+          "text": {
+            "en": "Farther object: the required focal length approaches 2 cm in this model.",
+            "hi": "दूर वस्तु: इस मॉडल में आवश्यक फोकस दूरी 2 cm के निकट जाती है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-vision",
+      "title": {
+        "en": "Myopia correction",
+        "hi": "निकट दृष्टिदोष का सुधार"
+      },
+      "kind": "ten-eye",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Correcting lens power",
+            "hi": "सुधारक लेंस की क्षमता"
+          },
+          "min": -5,
+          "max": 0,
+          "step": 0.25,
+          "initial": 0,
+          "unit": "D"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Find the correcting power for a 50 cm far point.",
+        "hi": "50 cm दूर बिंदु के लिए सुधारक क्षमता खोजें।"
+      },
+      "observe": {
+        "en": "Move power from 0 D towards -2 D, then beyond it; strongest is not best.",
+        "hi": "क्षमता 0 D से -2 D और आगे बदलें; सबसे अधिक क्षमता सर्वोत्तम नहीं।"
+      },
+      "modelNote": {
+        "en": "Fixed myopic far point 50 cm; thin spectacle lens close to eye. This is teaching, not prescribing.",
+        "hi": "दूर बिंदु 50 cm स्थिर; चश्मा नेत्र के पास पतला माना है। यह शिक्षा है, उपचार पर्ची नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "A distant object needs a virtual image at -0.50 m: P = -2 D.",
+          "hi": "दूर वस्तु का आभासी चित्र -0.50 m पर चाहिए: P = -2 D।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "Which model power matches the far point?",
+          "hi": "कौन सी मॉडल क्षमता दूर बिंदु से मेल खाती है?"
+        },
+        "options": [
+          {
+            "en": "0 D",
+            "hi": "0 D"
+          },
+          {
+            "en": "-2 D",
+            "hi": "-2 D"
+          },
+          {
+            "en": "-5 D automatically",
+            "hi": "अपने आप -5 D"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "P = 1/(-0.50 m) = -2 D; extra divergence would overcorrect.",
+          "hi": "P = 1/(-0.50 m) = -2 D; अतिरिक्त अपसरण अधिक सुधार होगा।"
+        }
+      },
+      "realLife": {
+        "en": "Concave spectacle lenses can correct myopic distance blur.",
+        "hi": "अवतल चश्मा लेंस निकट दृष्टिदोष में दूर का धुँधलापन सुधार सकते हैं।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-vision-0",
+          "label": {
+            "en": "Find the match at -2 D",
+            "hi": "-2 D पर सही मेल खोजें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": -2
+          }
+        },
+        {
+          "id": "ten-vision-1",
+          "label": {
+            "en": "Compare no lens at 0 D",
+            "hi": "0 D पर बिना लेंस तुलना करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": -2
+          },
+          "text": {
+            "en": "More negative than the model match: too much divergence.",
+            "hi": "मॉडल मेल से अधिक ऋणात्मक: जरूरत से अधिक अपसरण।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": -2
+          },
+          "text": {
+            "en": "Matched model correction: -2 D.",
+            "hi": "मॉडल का सही सुधार: -2 D।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": -2
+          },
+          "text": {
+            "en": "Too little divergence to match the 50 cm far point.",
+            "hi": "50 cm दूर बिंदु के लिए अपसरण कम है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-dispersion",
+      "title": {
+        "en": "Dispersion and scattering",
+        "hi": "विक्षेपण एवं प्रकीर्णन"
+      },
+      "kind": "ten-eye",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Relative wavelength",
+            "hi": "सापेक्ष तरंगदैर्घ्य"
+          },
+          "min": 400,
+          "max": 700,
+          "step": 10,
+          "initial": 550,
+          "unit": "nm"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Compare wavelength, illustrative colour splitting and relative scattering.",
+        "hi": "तरंगदैर्घ्य, सांकेतिक रंग विभाजन और सापेक्ष प्रकीर्णन की तुलना करें।"
+      },
+      "observe": {
+        "en": "Shorten wavelength and watch relative scattering rise compared with 700 nm.",
+        "hi": "तरंगदैर्घ्य घटाएँ; 700 nm की तुलना में सापेक्ष प्रकीर्णन बढ़ता देखें।"
+      },
+      "modelNote": {
+        "en": "Prism paths are illustrative. (700/λ)^4 is a supplementary ideal small-particle law, not a precise prism-angle prediction.",
+        "hi": "प्रिज्म पथ सांकेतिक हैं। (700/λ)^4 पूरक आदर्श छोटे-कण संबंध है, सटीक प्रिज्म कोण गणना नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Small particles preferentially scatter shorter wavelengths; dispersion instead arises from colour-dependent refraction.",
+          "hi": "छोटे कण कम तरंगदैर्घ्य अधिक प्रकीर्णित करते हैं; विक्षेपण रंग-निर्भर अपवर्तन से होता है।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "In this limited model, which scatters more?",
+          "hi": "इस सीमित मॉडल में किसका अधिक प्रकीर्णन है?"
+        },
+        "options": [
+          {
+            "en": "700 nm",
+            "hi": "700 nm"
+          },
+          {
+            "en": "Both always equal",
+            "hi": "दोनों हमेशा समान"
+          },
+          {
+            "en": "400 nm",
+            "hi": "400 nm"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Relative scattering is about 9.38 at 400 nm and 1 at 700 nm.",
+          "hi": "400 nm पर सापेक्ष प्रकीर्णन लगभग 9.38 और 700 nm पर 1 है।"
+        }
+      },
+      "realLife": {
+        "en": "Blue sky and a red direct sunset beam illustrate scattering in different directions.",
+        "hi": "नीला आकाश और लाल सीधा सूर्यास्त पुंज अलग दिशाओं के प्रकीर्णन दिखाते हैं।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-dispersion-0",
+          "label": {
+            "en": "Set the short wavelength to 400 nm",
+            "hi": "कम तरंगदैर्घ्य 400 nm करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 400
+          }
+        },
+        {
+          "id": "ten-dispersion-1",
+          "label": {
+            "en": "Set reference wavelength to 700 nm",
+            "hi": "संदर्भ तरंगदैर्घ्य 700 nm करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 700
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 500
+          },
+          "text": {
+            "en": "Short wavelength: stronger relative scattering in the ideal model.",
+            "hi": "कम तरंगदैर्घ्य: आदर्श मॉडल में अधिक सापेक्ष प्रकीर्णन।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 500
+          },
+          "text": {
+            "en": "Longer wavelength: weaker relative scattering; 700 nm is the reference.",
+            "hi": "अधिक तरंगदैर्घ्य: कम सापेक्ष प्रकीर्णन; 700 nm संदर्भ है।"
+          }
+        }
+      ]
+    }
+  ]
+}

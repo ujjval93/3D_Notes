@@ -1,0 +1,1050 @@
+{
+  "number": 4,
+  "id": "biology12-04",
+  "title": {
+    "en": "Principles of Inheritance and Variation",
+    "hi": "वंशागति तथा विविधता के सिद्धांत"
+  },
+  "unit": {
+    "en": "Biology",
+    "hi": "जीव विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Mendel, characters and alleles",
+        "hi": "मेंडल, लक्षण और विकल्पी"
+      },
+      "paragraphs": [
+        {
+          "en": "Mendel compared contrasting pea characters using controlled crosses. Alleles occupy the same locus; genotype and phenotype describe different things. A dominant allele is not inherently common or superior.",
+          "hi": "वंशागति (Inheritance) से जनकों के जैविक लक्षण संतति तक पहुँचते हैं। विविधता (Variation) बताती है कि संतान पूरी तरह समान प्रतिलिपि क्यों नहीं होती। मेंडल ने मटर में स्पष्ट विपरीत लक्षणों वाले शुद्ध प्रजननी पौधे चुने और नियंत्रित संकरण किए। लंबे तने तथा बौने तने के लिए प्रयुक्त T और t एक ही जीन (Gene) के विकल्पी (Alleles) हैं; वे अलग जीनों के नाम नहीं हैं। द्विगुणित जीव में किसी स्थान के सामान्यतः 2 विकल्पी होते हैं, जिनमें 1 प्रत्येक जनक से मिलता है। TT और tt समयुग्मजी (Homozygous), जबकि Tt विषमयुग्मजी (Heterozygous) है। जीनप्ररूप (Genotype) विकल्पियों का संयोजन और लक्षणप्ररूप (Phenotype) दिखाई या मापी अभिव्यक्ति है। पूर्ण प्रभाविता में Tt लंबा होता है, पर उसके अंदर t नष्ट नहीं होता। प्रभावी का अर्थ अधिक सामान्य, अधिक उपयोगी या अधिक शक्तिशाली नहीं है। अक्षर केवल चुनी अभिव्यक्ति का संकेत हैं। प्रयोग के प्रत्येक चरण में जनक का जीनप्ररूप और बनने वाले युग्मक अलग लिखना परिणाम समझने का पहला कदम है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The recessive allele persists in a heterozygote.",
+          "hi": "विषमयुग्मजी में अप्रभावी विकल्पी मौजूद रहता है; उसकी अभिव्यक्ति दब सकती है, पर वह संतति तक जा सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is Tt homozygous?",
+          "hi": "क्या Tt समयुग्मजी है?"
+        },
+        "answer": {
+          "en": "No, it has two different alleles.",
+          "hi": "नहीं, इसमें 2 अलग विकल्पी हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Segregation and the monohybrid cross",
+        "hi": "विसंयोजन और एकसंकर संकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Alleles segregate during gamete formation. Tt×Tt predicts 1:2:1 genotypes and, with complete dominance, 3:1 phenotypes; small samples need not match exactly.",
+          "hi": "विसंयोजन का नियम (Law of segregation) कहता है कि युग्मक बनते समय विकल्पियों का युग्म अलग होता है, इसलिए प्रत्येक सामान्य युग्मक में उस जीन का 1 विकल्पी आता है। Tt पौधा T तथा t युग्मक समान अपेक्षित अनुपात में बनाता है। Tt×Tt में 4 समान संभावित संयोजन TT,Tt,tT,tt हैं। Tt और tT एक ही विषमयुग्मजी जीनप्ररूप बताते हैं। इसलिए जीनप्ररूपी अनुपात 1TT:2Tt:1tt है। पूर्ण प्रभाविता और समान जीविता मानने पर लक्षणप्ररूप 3 लंबे:1 बौना होता है। अनुपात संभाव्यता का पूर्वानुमान है, हर 4 बीजों में अनिवार्य व्यवस्था नहीं। छोटे नमूने में संख्या बदल सकती है। अप्रभावी लक्षण वाली संतति के लिए दोनों जनकों से t मिलना आवश्यक है। किसी दिखाई लंबे पौधे को देखकर TT या Tt में निश्चित चुनाव नहीं कर सकते। यह अनिश्चितता बताती है कि केवल बाहरी रूप से जीनप्ररूप निकालना हमेशा संभव नहीं है। युग्मक तथा संतति की संभावनाओं को एक ही पंक्ति में मिलाने से बचें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Write gametes before filling a Punnett square.",
+          "hi": "पहले प्रत्येक जनक के युग्मक लिखें, फिर पुनेट वर्ग भरें; Tt को अकेले युग्मक के रूप में न रखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is P(tt) in Tt×Tt?",
+          "hi": "Tt×Tt में P(tt) क्या है?"
+        },
+        "answer": {
+          "en": "1/4 under ordinary segregation.",
+          "hi": "सामान्य विसंयोजन में 1/4 ।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Test cross and independent assortment",
+        "hi": "परीक्षण संकरण और स्वतंत्र अपव्यूहन"
+      },
+      "paragraphs": [
+        {
+          "en": "A test cross distinguishes a dominant homozygote from a heterozygote. Independent assortment gives four equal gamete types for an unlinked double heterozygote; linked genes need not follow this pattern.",
+          "hi": "परीक्षण संकरण (Test cross) में प्रभावी लक्षण दिखाने वाले अज्ञात जीव का संकरण समयुग्मजी अप्रभावी जीव से करते हैं। TT×tt में सभी Tt होते हैं; Tt×tt में अपेक्षित 1Tt:1tt मिलता है। अप्रभावी संतति का मिलना विषमयुग्मजी जनक का प्रमाण है, यदि सामान्य वंशागति मान्य हो। द्विसंकर संकरण (Dihybrid cross) में 2 जीनों को साथ देखते हैं। स्वतंत्र अपव्यूहन (Independent assortment) लागू होने पर RrYy, RY,Ry,rY,ry युग्मक समान संभावना से बनाता है। RrYy×RrYy में पूर्ण प्रभाविता के साथ 9:3:3:1 लक्षणप्ररूप अपेक्षित हैं। यह अनुपात प्रत्येक जीन के 3:1 परिणामों का गुणन है। सभी जीन स्वतंत्र नहीं हैं; एक ही गुणसूत्र पर निकट जीन अक्सर सहलग्न व्यवहार करते हैं। इसलिए प्रश्न में असहलग्न जीन, सामान्य विसंयोजन और पूर्ण प्रभाविता जैसी मान्यताएँ पढ़ें। परीक्षण संकरण में युग्मक की आवृत्तियाँ सीधे संतति से समझना आसान होता है, क्योंकि अप्रभावी जनक हर बार समान विकल्पी संयोजन देता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The 9:3:3:1 ratio requires stated conditions.",
+          "hi": "9:3:3:1 को हर द्विजीनी समस्या पर न लगाएँ; सहलग्नता या प्रभाविता बदलने पर अपेक्षा बदल सकती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which parent is used in a test cross?",
+          "hi": "परीक्षण संकरण में कौन सा ज्ञात जनक लेते हैं?"
+        },
+        "answer": {
+          "en": "A homozygous recessive parent.",
+          "hi": "समयुग्मजी अप्रभावी जनक।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Beyond complete dominance",
+        "hi": "पूर्ण प्रभाविता से आगे"
+      },
+      "paragraphs": [
+        {
+          "en": "Incomplete dominance gives an intermediate heterozygous phenotype, whereas codominance expresses both alleles distinctly. ABO illustrates codominance and multiple allelism at the population level.",
+          "hi": "अपूर्ण प्रभाविता (Incomplete dominance) में विषमयुग्मजी का लक्षण दोनों समयुग्मजियों से अलग मध्यवर्ती होता है। स्नैपड्रैगन के लाल और सफेद फूलों के संकरण में गुलाबी F1 इसका उदाहरण है। गुलाबी को लाल तथा सफेद विकल्पियों का स्थायी विलयन न मानें; F2 में दोनों समयुग्मजी फिर आते हैं। यहाँ जीनप्ररूप और लक्षणप्ररूप दोनों 1:2:1 हो सकते हैं। सहप्रभाविता (Codominance) में दोनों विकल्पियों की अभिव्यक्तियाँ विषमयुग्मजी में पहचानी जाती हैं। ABO रक्त समूह में Iᴬ और Iᴮ, i पर प्रभावी और आपस में सहप्रभावी हैं। IᴬIᴮ व्यक्ति में A तथा B दोनों प्रतिजन बनते हैं। बहुविकल्पिता (Multiple allelism) जनसंख्या में किसी स्थान के 2 से अधिक विकल्पी होने की स्थिति है; एक सामान्य द्विगुणित व्यक्ति में उस स्थान पर फिर भी अधिकतम 2 रहते हैं। ABO जीन के 3 मुख्य विकल्पी इसका उदाहरण हैं। बहुविकल्पिता, अनेक जीन और सहप्रभाविता अलग अवधारणाएँ हैं; एक उदाहरण में साथ आ सकती हैं पर समान अर्थ नहीं रखतीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "An AB individual carries two alleles, not all three population alleles.",
+          "hi": "AB व्यक्ति में Iᴬ और Iᴮ हैं; जनसंख्या में i मौजूद होने से उस व्यक्ति में तीसरा विकल्पी नहीं जुड़ता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is AB codominant?",
+          "hi": "AB सहप्रभाविता का उदाहरण क्यों है?"
+        },
+        "answer": {
+          "en": "Both A and B antigens are expressed.",
+          "hi": "A और B दोनों प्रतिजन अभिव्यक्त होते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Chromosomes, linkage and recombination",
+        "hi": "गुणसूत्र, सहलग्नता और पुनर्संयोजन"
+      },
+      "paragraphs": [
+        {
+          "en": "Chromosomes provide the physical basis of inheritance. Linkage favours parental combinations; crossing over between non-sister chromatids produces recombinants. Recombination frequency is not a direct DNA-length measurement.",
+          "hi": "वंशागति का गुणसूत्र सिद्धांत (Chromosomal theory of inheritance) जीनों के व्यवहार को अर्धसूत्री विभाजन में गुणसूत्रों के व्यवहार से जोड़ता है। समजात गुणसूत्रों का युग्म तथा उनका अलग होना विकल्पियों के विसंयोजन को आधार देते हैं। मॉर्गन के ड्रोसोफिला अध्ययनों ने दिखाया कि एक गुणसूत्र पर स्थित जीन सहलग्न (Linked) हो सकते हैं और जनकीय संयोजन अधिक मिल सकते हैं। जीन विनिमय (Crossing over) समजात गुणसूत्रों की असहोदरी क्रोमैटिडों के बीच खंड विनिमय है; इससे पुनर्संयोजक (Recombinant) संयोजन बनते हैं। निकट जीनों के बीच पुनर्संयोजन सामान्यतः कम होता है। 50% से कम पुनर्संयोजन आवृत्ति सहलग्नता का संकेत हो सकती है; लगभग 50% से असहलग्न तथा बहुत दूर स्थित जीनों में अकेले भेद नहीं कर सकते। पुनर्संयोजन आवृत्ति को छोटी दूरियों के मानचित्रण में उपयोग करते हैं, वास्तविक DNA लंबाई के सीधे समान नहीं मानते। जीन का स्थान और प्रभाविता अलग प्रश्न हैं। कोई प्रभावी विकल्पी केवल प्रभावी होने से स्वतंत्र अपव्यूहन नहीं करने लगता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Close genes generally recombine less often.",
+          "hi": "पास स्थित जीनों में पुनर्संयोजन प्रायः कम है; लगभग 50% परिणाम अकेले भौतिक गुणसूत्र पहचान नहीं बताता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which chromatids exchange segments in crossing over?",
+          "hi": "जीन विनिमय में कौन सी क्रोमैटिड खंड बदलती हैं?"
+        },
+        "answer": {
+          "en": "Non-sister chromatids of homologous chromosomes.",
+          "hi": "समजात गुणसूत्रों की असहोदरी क्रोमैटिड।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Sex determination in biological systems",
+        "hi": "जैविक तंत्रों में लिंग निर्धारण"
+      },
+      "paragraphs": [
+        {
+          "en": "Sex-determining systems differ among humans, birds and honeybees. The simplified human XX/XY model is probabilistic and does not justify blaming a parent or making social judgements.",
+          "hi": "लिंग निर्धारण (Sex determination) के जैविक तंत्र विभिन्न जीवों में भिन्न हैं। मानव के सामान्य XX/XY मॉडल में अंडाणु X देता है और शुक्राणु X या Y दे सकता है; निषेचन में संयोजन से XX या XY बनता है। इसलिए इस मॉडल में गुणसूत्रीय संयोजन के लिए माँ को दोष देना वैज्ञानिक रूप से गलत है। यह सरल विद्यालयी मॉडल सभी जैविक विकास विविधताओं या किसी व्यक्ति की लैंगिक पहचान का पूर्ण वर्णन नहीं है। पक्षियों में मादा ZW और नर ZZ होता है, इसलिए विषमयुग्मकी मादा है। मधुमक्खी के अगुणित-द्विगुणित तंत्र में निषेचित अंडे सामान्यतः द्विगुणित मादा तथा अनिषेचित अंडे अगुणित नर बनाते हैं। मनुष्यों का 1:1 अपेक्षित अनुपात संभाव्यता है; किसी परिवार में क्रम या कुल संतानों का ठीक आधा-आधा होना आवश्यक नहीं। गुणसूत्र संख्या लिखते समय प्रजाति और कोशिका प्रकार स्पष्ट रखें। जैविकी की इन व्याख्याओं से किसी लिंग की सामाजिक योग्यता, अधिकार या मूल्य का आकलन नहीं किया जा सकता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Biological descriptions do not rank people.",
+          "hi": "जीववैज्ञानिक मॉडल को सामाजिक मूल्य या किसी व्यक्ति की पहचान के पूर्ण वर्णन के रूप में न प्रयोग करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which sex is heterogametic in birds?",
+          "hi": "पक्षियों में विषमयुग्मकी कौन है?"
+        },
+        "answer": {
+          "en": "The ZW female.",
+          "hi": "ZW मादा।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Sex-linked and Mendelian disorders",
+        "hi": "लिंग सहलग्न और मेंडलीय विकार"
+      },
+      "paragraphs": [
+        {
+          "en": "X-linked recessive inheritance follows the transmission of the X chromosome, not a simple father-to-son pattern. Thalassemia concerns reduced globin-chain synthesis; pedigrees can leave genotypes uncertain.",
+          "hi": "लिंग सहलग्न वंशागति (Sex-linked inheritance) में जीन लिंग गुणसूत्र पर स्थित है। हीमोफीलिया तथा लाल-हरा वर्णांधता X सहलग्न अप्रभावी उदाहरण हैं। सामान्य XY मॉडल में X पर अप्रभावी विकल्पी रखने वाले व्यक्ति में उसी स्थान का दूसरा X विकल्पी नहीं होता, इसलिए अभिव्यक्ति हो सकती है। वाहक XX व्यक्ति सामान्य लक्षण दिखा सकता है पर विकल्पी आगे दे सकता है। पिता अपना X पुत्र को नहीं, पुत्री को देता है; इसलिए साधारण X सहलग्न नियम में पिता से पुत्र का सीधा X अंतरण नहीं होता। थैलेसीमिया में ग्लोबिन शृंखला उत्पादन कम या अनुपस्थित हो सकता है; यह सिकल सेल रोग के अमीनो अम्ल प्रतिस्थापन से भिन्न है। वंशावली (Pedigree) पीढ़ियों में लक्षणों का वितरण दिखाती है, लेकिन छोटे परिवार का चित्र अकेले प्रत्येक जीनप्ररूप निश्चित नहीं करता। जोखिम को प्रत्येक गर्भधारण की संभावना की तरह पढ़ें, अनिवार्य संतति क्रम की तरह नहीं। अध्ययन हेतु विकारों की वंशागति समझें; व्यक्तिगत निदान के लिए केवल पुनेट वर्ग पर्याप्त नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A carrier is not a guarantee of an affected child.",
+          "hi": "वाहक से प्रभावित संतान की संभावना हो सकती है; हर संतान का परिणाम अनिवार्य या पहले से तय नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a father pass his X to a son in the usual XY model?",
+          "hi": "सामान्य XY मॉडल में पिता पुत्र को X देता है?"
+        },
+        "answer": {
+          "en": "No; a son receives the paternal Y.",
+          "hi": "नहीं; पुत्र को पिता का Y मिलता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Chromosomal changes and complex traits",
+        "hi": "गुणसूत्रीय परिवर्तन और जटिल लक्षण"
+      },
+      "paragraphs": [
+        {
+          "en": "Chromosomal disorders differ from single-gene inheritance. Nondisjunction may alter chromosome number. Pleiotropy means one gene affects several traits; polygenic inheritance means several genes contribute to a trait.",
+          "hi": "गुणसूत्रीय विकार (Chromosomal disorders) संख्या या संरचना में परिवर्तन से जुड़े हैं। अर्धसूत्री विभाजन में अवियोजन (Nondisjunction) से गुणसूत्र अलग न होने पर असामान्य संख्या वाले युग्मक बन सकते हैं। डाउन सिंड्रोम में सामान्यतः गुणसूत्र 21 की 3 प्रतियाँ अर्थात त्रिसूत्रता (Trisomy) होती है। क्लाइनफेल्टर सिंड्रोम का सामान्य विद्यालयी उदाहरण 47,XXY और टर्नर सिंड्रोम का 45,X है। ये पूरे गुणसूत्रों की संख्या के परिवर्तन हैं, किसी एक अक्षर वाले विकल्पी के साधारण मेंडलीय संकरण नहीं। बहुप्रभाविता (Pleiotropy) में 1 जीन अनेक लक्षणों को प्रभावित करता है; बहुजीनी वंशागति (Polygenic inheritance) में अनेक जीन एक लक्षण में योगदान देते हैं। मानव त्वचा वर्ण जैसी पाठ्यपुस्तकीय व्याख्या अनेक जीनों और पर्यावरण के संयुक्त प्रभाव को समझाती है। जटिल लक्षणों को एक साधारण प्रभावी-अप्रभावी युग्म में न समेटें। उत्परिवर्तन नया आनुवंशिक परिवर्तन दे सकता है; हर परिवर्तन हानिकारक नहीं होता। अंत में जीन स्तर, गुणसूत्र स्तर तथा पर्यावरणीय प्रभाव को अलग पहचानना सही उत्तर की शर्त है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not confuse one gene–many effects with many genes–one trait.",
+          "hi": "बहुप्रभाविता और बहुजीनी वंशागति विपरीत दिशा के संबंध बताते हैं; दोनों को एक शब्द न समझें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the usual chromosome change in Down syndrome?",
+          "hi": "डाउन सिंड्रोम में सामान्य गुणसूत्र परिवर्तन क्या है?"
+        },
+        "answer": {
+          "en": "Trisomy 21.",
+          "hi": "गुणसूत्र 21 की त्रिसूत्रता।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Tt×Tt →1TT:2Tt:1tt",
+      "meaning": {
+        "en": "Ordinary segregation; complete dominance additionally gives3:1phenotypes.",
+        "hi": "सामान्य विसंयोजन; पूर्ण प्रभाविता होने पर अतिरिक्त 3:1 लक्षण अनुपात।"
+      },
+      "units": {
+        "en": "Dimensionless expected ratios.",
+        "hi": "विमाहीन अपेक्षित अनुपात।"
+      }
+    },
+    {
+      "expression": "Recombination (%)=recombinants/total×100",
+      "meaning": {
+        "en": "Add both recombinant classes in a suitable test cross.",
+        "hi": "उपयुक्त परीक्षण संकरण में दोनों पुनर्संयोजक वर्ग जोड़ें।"
+      },
+      "units": {
+        "en": "Percent.",
+        "hi": "प्रतिशत।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Predict a monohybrid result.",
+        "hi": "एकसंकर परिणाम निकालें।"
+      },
+      "given": {
+        "en": "Tt×Tt; complete dominance.",
+        "hi": "Tt×Tt; पूर्ण प्रभाविता।"
+      },
+      "find": {
+        "en": "P(tt) and phenotype ratio.",
+        "hi": "P(tt) तथा लक्षण अनुपात।"
+      },
+      "formula": {
+        "en": "Independent gametes each have probability 1/2.",
+        "hi": "प्रत्येक जनक का T या t युग्मक 1/2 ।"
+      },
+      "steps": [
+        {
+          "en": "List T and t from each parent.",
+          "hi": "दोनों जनकों से T,t लिखें।"
+        },
+        {
+          "en": "Combine to TT,Tt,Tt,tt.",
+          "hi": "TT,Tt,Tt,tt संयोजन बनाएँ।"
+        },
+        {
+          "en": "Count 1 tt out of 4 and 3 dominant phenotypes.",
+          "hi": "4 में 1 tt और 3 प्रभावी लक्षण गिनें।"
+        }
+      ],
+      "answer": {
+        "en": "P(tt)=1/4; tall:dwarf=3:1.",
+        "hi": "P(tt)=1/4; लंबा:बौना=3:1 ।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Use a test cross.",
+        "hi": "परीक्षण संकरण समझें।"
+      },
+      "given": {
+        "en": "Tall unknown×tt gives dwarf offspring.",
+        "hi": "लंबे अज्ञात×tt से बौनी संतति।"
+      },
+      "find": {
+        "en": "Unknown genotype.",
+        "hi": "अज्ञात जीनप्ररूप।"
+      },
+      "formula": {
+        "en": "A dwarf tt needs t from both parents.",
+        "hi": "बौने tt को दोनों जनकों से t चाहिए।"
+      },
+      "steps": [
+        {
+          "en": "The known parent contributes t.",
+          "hi": "ज्ञात जनक t देता है।"
+        },
+        {
+          "en": "The unknown tall parent must also carry t.",
+          "hi": "अज्ञात लंबे जनक में भी t होना चाहिए।"
+        },
+        {
+          "en": "It is tall, so it also has T; therefore Tt.",
+          "hi": "लंबा होने से T भी है; अतः Tt।"
+        }
+      ],
+      "answer": {
+        "en": "Tt, under the ordinary Mendelian model.",
+        "hi": "सामान्य मेंडलीय मॉडल में Tt।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Predict ABO offspring.",
+        "hi": "ABO संतति निकालें।"
+      },
+      "given": {
+        "en": "Iᴬi×Iᴮi.",
+        "hi": "Iᴬi×Iᴮi।"
+      },
+      "find": {
+        "en": "Possible blood groups.",
+        "hi": "संभव रक्त समूह।"
+      },
+      "formula": {
+        "en": "Combine one allele from each parent.",
+        "hi": "प्रत्येक जनक का 1 विकल्पी मिलाएँ।"
+      },
+      "steps": [
+        {
+          "en": "Gametes are Iᴬ,i and Iᴮ,i.",
+          "hi": "युग्मक Iᴬ,i तथा Iᴮ,i हैं।"
+        },
+        {
+          "en": "Products are IᴬIᴮ,Iᴬi,Iᴮi,ii.",
+          "hi": "उत्पाद IᴬIᴮ,Iᴬi,Iᴮi,ii हैं।"
+        },
+        {
+          "en": "Translate genotypes to AB,A,B,O.",
+          "hi": "जीनप्ररूपों को AB,A,B,O में बदलें।"
+        }
+      ],
+      "answer": {
+        "en": "A,B,AB,O each 1/4.",
+        "hi": "A,B,AB,O प्रत्येक 1/4 ।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find recombinant frequency.",
+        "hi": "पुनर्संयोजन आवृत्ति ज्ञात करें।"
+      },
+      "given": {
+        "en": "80 recombinant offspring among 1000 test-cross offspring.",
+        "hi": "1000 परीक्षण संतति में 80 पुनर्संयोजक।"
+      },
+      "find": {
+        "en": "Recombination percentage.",
+        "hi": "पुनर्संयोजन प्रतिशत।"
+      },
+      "formula": {
+        "en": "r=recombinants/total×100.",
+        "hi": "r=पुनर्संयोजक/कुल×100 ।"
+      },
+      "steps": [
+        {
+          "en": "Identify both recombinant classes and add their counts:80.",
+          "hi": "दोनों पुनर्संयोजक वर्ग जोड़ें:80 ।"
+        },
+        {
+          "en": "Divide by total1000.",
+          "hi": "कुल 1000 से भाग दें।"
+        },
+        {
+          "en": "Multiply by100; interpret as a short-map estimate.",
+          "hi": "100 से गुणा करें; इसे लघु मानचित्र दूरी का अनुमान मानें।"
+        }
+      ],
+      "answer": {
+        "en": "8%; approximately8 map units for a short interval.",
+        "hi": "8%; छोटे अंतराल हेतु लगभग 8 मानचित्र इकाई।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Separate conditional and overall risk.",
+        "hi": "सशर्त और कुल जोखिम अलग करें।"
+      },
+      "given": {
+        "en": "Carrier mother XᴴXʰ×unaffected father XᴴY; equal sex probabilities.",
+        "hi": "वाहक माँ XᴴXʰ×अप्रभावित पिता XᴴY; समान लिंग संभावना।"
+      },
+      "find": {
+        "en": "Affected-son probability among all children and among sons.",
+        "hi": "सभी संतानों तथा केवल पुत्रों में प्रभावित पुत्र की संभावना।"
+      },
+      "formula": {
+        "en": "P(affected son)=P(son)P(affected|son).",
+        "hi": "P(प्रभावित पुत्र)=P(पुत्र)P(प्रभावित|पुत्र)।"
+      },
+      "steps": [
+        {
+          "en": "Possible products are XᴴXᴴ,XᴴXʰ,XᴴY,XʰY.",
+          "hi": "संयोजन XᴴXᴴ,XᴴXʰ,XᴴY,XʰY हैं।"
+        },
+        {
+          "en": "Only XʰY is an affected son:1 of4.",
+          "hi": "केवल XʰY प्रभावित पुत्र है:4 में 1 ।"
+        },
+        {
+          "en": "Restrict to the2 son outcomes;1 is affected.",
+          "hi": "2 पुत्र परिणामों तक सीमित करें;1 प्रभावित है।"
+        }
+      ],
+      "answer": {
+        "en": "Among all children1/4; among sons1/2.",
+        "hi": "सभी संतानों में 1/4; पुत्रों में 1/2 ।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "What separates in the law of segregation?",
+        "hi": "विसंयोजन नियम में क्या अलग होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Alleles of a gene",
+            "hi": "जीन के विकल्पी"
+          },
+          "reason": {
+            "en": "Each gamete receives one allele.",
+            "hi": "हर युग्मक को 1 विकल्पी मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All species",
+            "hi": "सभी प्रजातियाँ"
+          },
+          "reason": {
+            "en": "Species separation is not gamete formation.",
+            "hi": "प्रजाति पृथक्करण युग्मक निर्माण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Proteins into genes",
+            "hi": "प्रोटीन जीनों में"
+          },
+          "reason": {
+            "en": "Proteins do not split into genes.",
+            "hi": "प्रोटीन टूटकर जीन नहीं बनते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every linked gene independently",
+            "hi": "हर सहलग्न जीन स्वतंत्र"
+          },
+          "reason": {
+            "en": "Linkage can prevent independent assortment.",
+            "hi": "सहलग्नता स्वतंत्र अपव्यूहन बदल सकती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Tt×Tt genotype ratio is?",
+        "hi": "Tt×Tt का जीनप्ररूप अनुपात?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1:2:1",
+            "hi": "1:2:1"
+          },
+          "reason": {
+            "en": "TT,Tt,tt occur with these probabilities.",
+            "hi": "TT,Tt,tt की यही संभावनाएँ हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3:1",
+            "hi": "3:1"
+          },
+          "reason": {
+            "en": "This is phenotype under complete dominance.",
+            "hi": "यह पूर्ण प्रभाविता में लक्षण अनुपात है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1:1",
+            "hi": "1:1"
+          },
+          "reason": {
+            "en": "Typical of heterozygote test cross.",
+            "hi": "यह विषमयुग्मजी परीक्षण संकरण में सामान्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9:3:3:1",
+            "hi": "9:3:3:1"
+          },
+          "reason": {
+            "en": "This concerns a suitable dihybrid cross.",
+            "hi": "यह उपयुक्त द्विसंकर संकरण का है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "AB blood group demonstrates?",
+        "hi": "AB रक्त समूह क्या दिखाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Codominance",
+            "hi": "सहप्रभाविता"
+          },
+          "reason": {
+            "en": "A and B are both expressed.",
+            "hi": "A तथा B दोनों अभिव्यक्त होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Incomplete dominance",
+            "hi": "अपूर्ण प्रभाविता"
+          },
+          "reason": {
+            "en": "AB is not an intermediate antigen.",
+            "hi": "AB मध्यवर्ती प्रतिजन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only recessive expression",
+            "hi": "केवल अप्रभावी अभिव्यक्ति"
+          },
+          "reason": {
+            "en": "Iᴬ and Iᴮ express together.",
+            "hi": "Iᴬ,Iᴮ साथ व्यक्त हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Four alleles in one person",
+            "hi": "व्यक्ति में 4 विकल्पी"
+          },
+          "reason": {
+            "en": "The normal diploid locus carries2.",
+            "hi": "सामान्य द्विगुणित स्थान में 2 हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which cross is a test cross?",
+        "hi": "कौन सा परीक्षण संकरण है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Dominant phenotype×homozygous recessive",
+            "hi": "प्रभावी लक्षण×समयुग्मजी अप्रभावी"
+          },
+          "reason": {
+            "en": "The recessive partner reveals unknown gametes.",
+            "hi": "अप्रभावी साथी अज्ञात युग्मक प्रकट करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any two dominant plants",
+            "hi": "कोई 2 प्रभावी पौधे"
+          },
+          "reason": {
+            "en": "This need not identify the genotype.",
+            "hi": "इससे जीनप्ररूप जरूरी नहीं पहचानें।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only TT×TT",
+            "hi": "केवल TT×TT"
+          },
+          "reason": {
+            "en": "No recessive tester is present.",
+            "hi": "अप्रभावी परीक्षक नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only selfing",
+            "hi": "केवल स्वपरागण"
+          },
+          "reason": {
+            "en": "Selfing is a different crossing arrangement.",
+            "hi": "स्वपरागण अलग व्यवस्था है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Crossing over occurs between?",
+        "hi": "जीन विनिमय किनके बीच है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Non-sister chromatids of homologues",
+            "hi": "समजातों की असहोदरी क्रोमैटिड"
+          },
+          "reason": {
+            "en": "Their exchange generates recombination.",
+            "hi": "इनका विनिमय पुनर्संयोजन बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only ribosomes",
+            "hi": "केवल राइबोसोम"
+          },
+          "reason": {
+            "en": "They translate proteins.",
+            "hi": "वे प्रोटीन अनुवाद करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Two unrelated species necessarily",
+            "hi": "अनिवार्य 2 असंबंधित प्रजातियाँ"
+          },
+          "reason": {
+            "en": "This is not the meiotic mechanism.",
+            "hi": "यह अर्धसूत्री तंत्र नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Alleles changing into proteins",
+            "hi": "विकल्पी प्रोटीन बनते हुए"
+          },
+          "reason": {
+            "en": "Expression differs from chromosome exchange.",
+            "hi": "अभिव्यक्ति गुणसूत्र विनिमय से अलग है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Heterogametic sex in birds is?",
+        "hi": "पक्षियों में विषमयुग्मकी लिंग?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ZW female",
+            "hi": "ZW मादा"
+          },
+          "reason": {
+            "en": "Females form Z and W egg types.",
+            "hi": "मादा Z,W प्रकार अंडाणु बनाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "ZZ male",
+            "hi": "ZZ नर"
+          },
+          "reason": {
+            "en": "Both sex chromosomes are Z.",
+            "hi": "दोनों लिंग गुणसूत्र Z हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "XY female",
+            "hi": "XY मादा"
+          },
+          "reason": {
+            "en": "This is not the typical bird system.",
+            "hi": "यह सामान्य पक्षी तंत्र नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every haploid individual",
+            "hi": "हर अगुणित व्यक्ति"
+          },
+          "reason": {
+            "en": "Bird system is not honeybee haplodiploidy.",
+            "hi": "पक्षी तंत्र मधुमक्खी अगुणित-द्विगुणित नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Usual cause of Down syndrome is?",
+        "hi": "डाउन सिंड्रोम का सामान्य कारण?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Trisomy21",
+            "hi": "त्रिसूत्रता 21"
+          },
+          "reason": {
+            "en": "An extra copy of chromosome21 is typical.",
+            "hi": "गुणसूत्र 21 की अतिरिक्त प्रति सामान्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only45,X",
+            "hi": "केवल 45,X"
+          },
+          "reason": {
+            "en": "This is Turner syndrome.",
+            "hi": "यह टर्नर सिंड्रोम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only47,XXY",
+            "hi": "केवल 47,XXY"
+          },
+          "reason": {
+            "en": "This is Klinefelter syndrome.",
+            "hi": "यह क्लाइनफेल्टर सिंड्रोम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Absence of all chromosomes",
+            "hi": "सभी गुणसूत्र अनुपस्थित"
+          },
+          "reason": {
+            "en": "This does not describe Down syndrome.",
+            "hi": "यह डाउन सिंड्रोम नहीं बताता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "One gene influencing several traits is?",
+        "hi": "1 जीन से अनेक लक्षण प्रभावित होना?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Pleiotropy",
+            "hi": "बहुप्रभाविता"
+          },
+          "reason": {
+            "en": "The direction is one gene to multiple effects.",
+            "hi": "दिशा 1 जीन से अनेक प्रभाव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Polygenic inheritance",
+            "hi": "बहुजीनी वंशागति"
+          },
+          "reason": {
+            "en": "Several genes contribute to one trait.",
+            "hi": "अनेक जीन 1 लक्षण में योगदान करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Codominance always",
+            "hi": "हमेशा सहप्रभाविता"
+          },
+          "reason": {
+            "en": "That concerns two allele expressions.",
+            "hi": "वह 2 विकल्पियों की अभिव्यक्ति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Universal linkage",
+            "hi": "सार्वत्रिक सहलग्नता"
+          },
+          "reason": {
+            "en": "Linkage concerns chromosome location.",
+            "hi": "सहलग्नता गुणसूत्रीय स्थान की है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Human paternal X normally goes to?",
+        "hi": "मानव में पिता का X सामान्यतः किसको?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Daughters",
+            "hi": "पुत्रियों को"
+          },
+          "reason": {
+            "en": "Sons receive the paternal Y in this model.",
+            "hi": "इस मॉडल में पुत्र को पिता का Y मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only sons",
+            "hi": "केवल पुत्रों को"
+          },
+          "reason": {
+            "en": "This reverses usual X transmission.",
+            "hi": "यह सामान्य X अंतरण उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All sons and daughters necessarily",
+            "hi": "अनिवार्य सभी को"
+          },
+          "reason": {
+            "en": "A sperm contributes either X or Y.",
+            "hi": "शुक्राणु X या Y देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No offspring",
+            "hi": "किसी संतति को नहीं"
+          },
+          "reason": {
+            "en": "Paternal X is inherited by daughters.",
+            "hi": "पिता का X पुत्रियाँ पाती हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Linked genes generally show?",
+        "hi": "सहलग्न जीन सामान्यतः क्या दिखाते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Excess parental combinations",
+            "hi": "जनकीय संयोजन अधिक"
+          },
+          "reason": {
+            "en": "Linkage reduces independent recombination.",
+            "hi": "सहलग्नता स्वतंत्र पुनर्संयोजन घटाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always9:3:3:1",
+            "hi": "हमेशा 9:3:3:1"
+          },
+          "reason": {
+            "en": "That requires independent assortment conditions.",
+            "hi": "इसके लिए स्वतंत्र अपव्यूहन की शर्तें चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "No chromosomes",
+            "hi": "गुणसूत्र नहीं"
+          },
+          "reason": {
+            "en": "Genes are located on chromosomes.",
+            "hi": "जीन गुणसूत्रों पर स्थित हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Dominance cannot exist",
+            "hi": "प्रभाविता असंभव"
+          },
+          "reason": {
+            "en": "Linkage and dominance are separate.",
+            "hi": "सहलग्नता और प्रभाविता अलग हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State segregation with a cross.",
+        "hi": "संकरण सहित विसंयोजन लिखें।"
+      },
+      "answer": {
+        "en": "Tt forms T,t gametes; Tt×Tt gives1TT:2Tt:1tt because alleles separate into gametes.",
+        "hi": "Tt से T,t युग्मक; Tt×Tt से 1TT:2Tt:1tt, क्योंकि विकल्पी युग्मक में अलग होते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish incomplete dominance and codominance.",
+        "hi": "अपूर्ण प्रभाविता और सहप्रभाविता अलग करें।"
+      },
+      "answer": {
+        "en": "The former produces an intermediate heterozygote, as pink snapdragon; the latter expresses both, as AB blood group.",
+        "hi": "पहले में विषमयुग्मजी मध्यवर्ती, जैसे गुलाबी स्नैपड्रैगन; दूसरे में दोनों अभिव्यक्त, जैसे AB समूह।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain linkage and recombination.",
+        "hi": "सहलग्नता और पुनर्संयोजन समझाएँ।"
+      },
+      "answer": {
+        "en": "Linked genes share a chromosome and often retain parental combinations; crossing over between non-sister chromatids can produce new combinations.",
+        "hi": "सहलग्न जीन एक गुणसूत्र पर हैं और जनकीय संयोजन अधिक रखते हैं; असहोदरी क्रोमैटिड विनिमय नए संयोजन बना सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is9:3:3:1 not universal?",
+        "hi": "9:3:3:1 सार्वत्रिक क्यों नहीं?"
+      },
+      "answer": {
+        "en": "It assumes independent assortment and complete dominance at both loci; linkage or changed allele expression alters the outcome.",
+        "hi": "इसमें दोनों स्थानों पर स्वतंत्र अपव्यूहन और पूर्ण प्रभाविता मानते हैं; सहलग्नता या अभिव्यक्ति बदलने पर परिणाम बदलता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare pleiotropy and polygenic inheritance.",
+        "hi": "बहुप्रभाविता और बहुजीनी वंशागति मिलाएँ।"
+      },
+      "answer": {
+        "en": "Pleiotropy:one gene has multiple effects. Polygenic inheritance:multiple genes contribute to one character, often with environmental influence.",
+        "hi": "बहुप्रभाविता:1 जीन के अनेक प्रभाव। बहुजीनी वंशागति:अनेक जीन 1 लक्षण में योगदान, अक्सर पर्यावरण भी प्रभावी।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish Mendelian and chromosomal disorders.",
+        "hi": "मेंडलीय और गुणसूत्रीय विकार अलग करें।"
+      },
+      "answer": {
+        "en": "A Mendelian disorder follows a particular gene; a chromosomal disorder involves chromosome number or structure, such as trisomy21.",
+        "hi": "मेंडलीय विकार किसी विशेष जीन का है; गुणसूत्रीय विकार संख्या या संरचना का, जैसे त्रिसूत्रता 21 ।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Alleles segregate into gametes.",
+      "hi": "विकल्पी युग्मकों में विसंयोजित होते हैं।"
+    },
+    {
+      "en": "Dominance changes phenotype, not allele survival.",
+      "hi": "प्रभाविता लक्षण बदलती है, विकल्पी का अस्तित्व नहीं।"
+    },
+    {
+      "en": "Independent assortment has conditions.",
+      "hi": "स्वतंत्र अपव्यूहन की शर्तें हैं।"
+    },
+    {
+      "en": "Linkage and recombination explain new combinations.",
+      "hi": "सहलग्नता और पुनर्संयोजन संयोजन समझाते हैं।"
+    },
+    {
+      "en": "Gene and chromosome disorders are distinct.",
+      "hi": "जीन और गुणसूत्र विकार अलग हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse phenotype ratio with genotype ratio, or conditional risk among sons with risk among all children.",
+    "hi": "लक्षण और जीनप्ररूप अनुपात, तथा पुत्रों में सशर्त जोखिम और सभी संतानों में जोखिम को न मिलाएँ।"
+  },
+  "goal": {
+    "en": "Connect crosses, chromosome behaviour and conditional probabilities.",
+    "hi": "संकरण, गुणसूत्र व्यवहार और सशर्त संभावनाएँ जोड़ें।"
+  },
+  "conceptMap": "जीन → विकल्पी → युग्मक → संकरण → संभाव्यता → गुणसूत्र और विविधता",
+  "conceptMapEn": "Gene → allele → gamete → cross → probability → chromosomes and variation",
+  "editionBasis": {
+    "en": "Original study explanations for NCERT Class 12 Biology and UP Board 2026–27; use the prescribed textbook and school practicals too.",
+    "hi": "NCERT कक्षा 12 जीव विज्ञान और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ; निर्धारित पुस्तक और विद्यालयी प्रयोग भी साथ करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Biology XII Chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/lebo104.pdf"
+    },
+    {
+      "title": "UPMSP Biology XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/153-Biology-Class-12.pdf"
+    }
+  ]
+}

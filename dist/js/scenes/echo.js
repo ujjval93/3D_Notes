@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p})=>{let d=p[0],delay=2*d/340,cycle=t%(delay*3+.5),fraction=cycle/(delay*3),x=fraction<.5?-1.15+4.6*fraction:1.15-4.6*(fraction-.5);g.box(1.25,0,0,.06,.7,.5,C.green);g.sphere(-1.15,0,0,.12,C.gold,b('Source','स्रोत'));if(fraction<1)g.sphere(x,0,0,.065,C.blue);g.arrow([-.9,.7,0],[1,.7,0],C.blue);g.arrow([1,-.7,0],[-.9,-.7,0],C.gold);return[read('One-way distance','एक ओर की दूरी',d,'m'),read('Echo delay = 2d/v','प्रतिध्वनि समय = 2d/v',fmt(delay),'s'),read('Sound speed','ध्वनि चाल',340,'m/s')];};

@@ -1,0 +1,890 @@
+{
+  "id": 11,
+  "title": {
+    "en": "Areas Related to Circles",
+    "hi": "वृत्तों से संबंधित क्षेत्रफल"
+  },
+  "goal": {
+    "en": "Distinguish sectors and segments, calculate exact circular areas, and check boundaries and units.",
+    "hi": "त्रिज्यखंड और वृत्तखंड अलग पहचानें, वृत्तीय क्षेत्रफल निकालें और सीमा तथा इकाइयाँ जाँचें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Identify circle, arc, sector and segment",
+        "hi": "वृत्त, चाप, त्रिज्यखंड और वृत्तखंड पहचानें"
+      },
+      "body": {
+        "en": "Different circular regions need different boundaries and formulae. A circle is the boundary at a fixed radius; its enclosed region has area πr². An arc is part of that boundary and has length, not area. A sector is bounded by two radii and their connecting arc. A segment is bounded by a chord and its corresponding arc. The same chord usually creates a smaller minor segment and a larger major segment. Likewise, a non-diameter pair of radii gives minor and major sectors whose angles add to 360°. When a problem merely says sector or segment, check whether the minor region is intended or whether the drawing specifies otherwise. Draw the relevant chord or radii explicitly instead of choosing a formula from the appearance of shading. A diameter makes the two segments semicircles of equal area. Label the radius rather than the diameter in an area formula, and name each region before adding or subtracting areas in a composite figure.",
+        "hi": "अलग-अलग वृत्तीय क्षेत्रों की सीमाएँ अलग हैं, इसलिए उनके सूत्र भी अलग होंगे। वृत्त नियत त्रिज्या वाली सीमा है और उसके अंदर के क्षेत्र का क्षेत्रफल πr² होता है। चाप (Arc) उस सीमा का एक भाग है; उसकी लंबाई होती है, क्षेत्रफल नहीं। त्रिज्यखंड (Sector) की सीमा 2 त्रिज्याओं और उन्हें जोड़ने वाले चाप से बनती है। वृत्तखंड (Segment) की सीमा एक जीवा तथा संगत चाप से बनती है। एक ही जीवा सामान्यतः छोटा लघु वृत्तखंड और बड़ा दीर्घ वृत्तखंड बनाती है। इसी तरह व्यास न बनाने वाली 2 त्रिज्याओं के लघु और दीर्घ त्रिज्यखंडों के कोणों का योग 360° है। प्रश्न में केवल त्रिज्यखंड या वृत्तखंड लिखा हो, तो जाँचें कि लघु क्षेत्र अभिप्रेत है या चित्र में कोई अलग क्षेत्र बताया गया है। केवल छायांकन का आकार देखकर सूत्र न चुनें; आवश्यक जीवा और त्रिज्याएँ स्पष्ट बनाएँ। व्यास दोनों वृत्तखंडों को बराबर अर्धवृत्त बनाता है। क्षेत्रफल सूत्र में त्रिज्या रखें, व्यास नहीं। मिश्रित आकृति में जोड़ या घटाव से पहले हर क्षेत्र का नाम लिखें।"
+      },
+      "formula": "A_circle = πr²; sector: 2 radii + arc; segment: chord + arc",
+      "question": {
+        "en": "Which region is bounded by a chord and an arc?",
+        "hi": "जीवा और चाप से घिरा क्षेत्र कौन-सा है?"
+      },
+      "answer": {
+        "en": "A segment of the circle.",
+        "hi": "वृत्तखंड।"
+      }
+    },
+    {
+      "title": {
+        "en": "Sector area as a fraction of a circle",
+        "hi": "पूरे वृत्त के अंश के रूप में त्रिज्यखंड"
+      },
+      "body": {
+        "en": "A full circle subtends 360° at its centre. For a sector with central angle θ measured in degrees, its fraction of the whole circular region is θ/360. Multiplying this fraction by πr² gives sector area. The proportionality assumes sectors of the same radius: increasing the angle sweeps a larger fraction of the same disc. At θ = 90° the region is a quarter circle, and at 180° it is a semicircle. A 270° sector is a major sector and covers three quarters, so do not silently substitute its complementary 90°. The angle has no length unit; it determines a fraction. Radius supplies the squared unit in the result. For fixed θ, doubling r multiplies area by four. For fixed r, doubling θ doubles area while the angle remains within a full turn. These comparisons offer quick checks before detailed arithmetic. Write the fraction explicitly so that a missing division by 360 cannot pass unnoticed in a numerical solution.",
+        "hi": "पूरा वृत्त केंद्र पर 360° का कोण बनाता है। केंद्रीय कोण θ को डिग्री में मापा गया हो, तो त्रिज्यखंड पूरे वृत्त का θ/360 भाग होगा। इस अंश को πr² से गुणा करने पर उसका क्षेत्रफल मिलता है। यह समानुपात समान त्रिज्या वाले क्षेत्रों के लिए है: कोण बढ़ने पर उसी वृत्तीय क्षेत्र का अधिक हिस्सा मिलता है। θ = 90° पर चौथाई वृत्त और 180° पर अर्धवृत्त मिलता है। 270° का त्रिज्यखंड दीर्घ त्रिज्यखंड है और तीन चौथाई क्षेत्र घेरता है। उसकी जगह बिना कारण 90° का पूरक क्षेत्र न लें। कोण लंबाई नहीं देता; वह एक अंश तय करता है। क्षेत्रफल की वर्ग इकाई त्रिज्या के वर्ग से आती है। θ निश्चित हो और r दोगुना करें, तो क्षेत्रफल 4 गुना होगा। r निश्चित हो और θ दोगुना करें, तो पूर्ण चक्कर की सीमा में क्षेत्रफल दोगुना होगा। ऐसी तुलना विस्तृत गणना से पहले उत्तर जाँचने में उपयोगी है। हल में θ/360 का अंश स्पष्ट लिखें, ताकि 360 से भाग देना छूट न जाए।"
+      },
+      "formula": "A_sector = (θ/360)πr²",
+      "question": {
+        "en": "Find the fraction of a circle occupied by a 120° sector.",
+        "hi": "120° त्रिज्यखंड वृत्त का कितना भाग है?"
+      },
+      "answer": {
+        "en": "120/360 = 1/3.",
+        "hi": "120/360 = 1/3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Arc length and sector perimeter",
+        "hi": "चाप की लंबाई और त्रिज्यखंड का परिमाप"
+      },
+      "body": {
+        "en": "The circumference of a circle is 2πr. An arc subtending θ degrees has the same angular fraction θ/360 of this circumference. Thus arc length is (θ/360)2πr. A proper sector, with angle strictly between 0° and 360°, has two straight radial edges as well as its arc. Its perimeter is therefore 2r plus the arc length. Arc length and sector perimeter are not interchangeable. For a semicircle, the straight boundary is a diameter of length 2r, giving perimeter πr + 2r. For a quadrant the arc is πr/2 and the two radii contribute another 2r. At a complete 360° disc, the radial cuts are absent from the external boundary, so its perimeter is just the circumference; do not add two fictitious radii. Mark the requested boundary on a sketch before calculating a fencing length. Every boundary component should be counted exactly once, and the final answer must use a linear unit rather than a square unit.",
+        "hi": "वृत्त की परिधि (Circumference) 2πr है। θ डिग्री के चाप की लंबाई इस परिधि का θ/360 भाग होगी। इसलिए चाप लंबाई (θ/360)2πr है। जिस वास्तविक त्रिज्यखंड का कोण 0° और 360° के बीच है, उसकी सीमा में चाप के साथ 2 सीधी त्रिज्याएँ भी होती हैं। उसका परिमाप चाप लंबाई + 2r होगा। चाप की लंबाई और त्रिज्यखंड का परिमाप एक ही राशि नहीं हैं। अर्धवृत्त की सीधी सीमा 2r लंबा व्यास है, इसलिए उसका परिमाप πr + 2r होगा। चौथाई वृत्त में चाप πr/2 और 2 त्रिज्याओं का योगदान 2r है। पूरे 360° क्षेत्र की बाहरी सीमा में त्रिज्या के कटाव नहीं होते। इसलिए उसका परिमाप केवल परिधि है; उसमें 2 काल्पनिक त्रिज्याएँ न जोड़ें। बाड़ की लंबाई निकालने से पहले चित्र में माँगी सीमा को चिह्नित करें। हर सीमा भाग एक बार ही गिनें। अंतिम उत्तर रैखिक इकाई में दें, वर्ग इकाई में नहीं।"
+      },
+      "formula": "L_arc = (θ/360)2πr; P_sector = L_arc + 2r, 0° < θ < 360°",
+      "question": {
+        "en": "For a quadrant of radius 4 cm, what must be added to its arc length for perimeter?",
+        "hi": "4 cm त्रिज्या के चौथाई वृत्त के परिमाप हेतु चाप में कितना जोड़ें?"
+      },
+      "answer": {
+        "en": "Two radii, totalling 8 cm.",
+        "hi": "2 त्रिज्याएँ, कुल 8 cm।"
+      }
+    },
+    {
+      "title": {
+        "en": "Minor segment: subtract the triangle",
+        "hi": "लघु वृत्तखंड: त्रिभुज घटाएँ"
+      },
+      "body": {
+        "en": "For a minor central angle between 0° and 180°, join the two radii to the chord endpoints. The minor sector splits into a triangle and the minor segment. Subtracting the triangle's area from the sector's area gives the segment area. Identify the triangle before choosing its area formula. At a 90° central angle the radii are perpendicular, so the triangle area is r²/2. At 60°, the triangle is equilateral of side r, giving √3r²/4. More generally, dropping a perpendicular gives triangle area (r²/2)sin θ, but exact standard-angle geometry is sufficient for the intended simple school problems. A segment is not merely the sector with one radius removed; removing a boundary line does not subtract an area. The chord separates two regions, and the relevant arc determines which segment is intended. A correct minor segment area is nonnegative and smaller than its minor sector. Compare the resulting expression with those bounds before reporting a decimal.",
+        "hi": "0° से 180° के बीच के लघु केंद्रीय कोण में जीवा के सिरों को केंद्र से जोड़ें। लघु त्रिज्यखंड एक त्रिभुज और लघु वृत्तखंड में बँटता है। इसलिए त्रिज्यखंड के क्षेत्रफल में से त्रिभुज का क्षेत्रफल घटाने पर लघु वृत्तखंड मिलता है। क्षेत्रफल सूत्र चुनने से पहले त्रिभुज पहचानें। केंद्रीय कोण 90° हो, तो दोनों त्रिज्याएँ लंब हैं और त्रिभुज का क्षेत्रफल r²/2 होगा। 60° पर त्रिभुज r भुजा का समबाहु है, इसलिए उसका क्षेत्रफल √3r²/4 मिलता है। सामान्य स्थिति में लंब खींचकर त्रिभुज का क्षेत्रफल (r²/2)sin θ निकाला जा सकता है, लेकिन सरल विद्यालयी प्रश्नों के लिए मानक कोणों की ज्यामिति पर्याप्त है। वृत्तखंड केवल एक त्रिज्या हटाने से नहीं बनता; सीमा की रेखा मिटाने से कोई क्षेत्रफल नहीं घटता। जीवा 2 क्षेत्र अलग करती है और संगत चाप से तय होता है कि कौन-सा वृत्तखंड चाहिए। सही लघु वृत्तखंड का क्षेत्रफल ऋणात्मक नहीं होगा और अपने लघु त्रिज्यखंड से कम होगा। दशमलव देने से पहले इन सीमाओं से उत्तर जाँचें।"
+      },
+      "formula": "A_minor_segment = A_minor_sector − A_triangle",
+      "question": {
+        "en": "At θ = 90°, what is the triangle area between two radii r?",
+        "hi": "θ = 90° पर 2 त्रिज्याओं r के बीच त्रिभुज का क्षेत्रफल क्या है?"
+      },
+      "answer": {
+        "en": "r²/2, because those radii are perpendicular.",
+        "hi": "r²/2, क्योंकि वे त्रिज्याएँ परस्पर लंब हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Major regions and complementary areas",
+        "hi": "दीर्घ क्षेत्र और पूरक क्षेत्रफल"
+      },
+      "body": {
+        "en": "A chord divides a circular region into two segments whose areas add to πr². Once the minor segment is known, subtract it from the complete circle to obtain the major segment. This is different from taking a major sector alone: the major segment includes the central triangle as well as the major sector. If a minor sector has angle θ, the major sector has angle 360° − θ. Hence major segment area can also be written as major sector area plus the triangle area. Use these two routes as a consistency check. For a diameter the triangle collapses and the two segments are equal semicircles. Do not confuse a major arc with a major area; the former is measured in centimetres and the latter in square centimetres. If a problem labels the angle on the larger side of the centre, convert it to the appropriate complementary angle only when the requested minor region needs that conversion. Keep a shaded sketch beside the algebra to avoid subtracting the wrong part.",
+        "hi": "जीवा वृत्तीय क्षेत्र को 2 वृत्तखंडों में बाँटती है और उनके क्षेत्रफलों का योग πr² होता है। लघु वृत्तखंड ज्ञात होने पर पूरे वृत्त में से उसे घटाएँ; दीर्घ वृत्तखंड मिल जाएगा। यह केवल दीर्घ त्रिज्यखंड लेने से अलग है। दीर्घ वृत्तखंड में दीर्घ त्रिज्यखंड के साथ केंद्रीय त्रिभुज भी शामिल होता है। लघु त्रिज्यखंड का कोण θ हो, तो दीर्घ त्रिज्यखंड का कोण 360° − θ है। इसलिए दीर्घ वृत्तखंड का क्षेत्रफल दीर्घ त्रिज्यखंड और त्रिभुज के क्षेत्रफलों का योग भी लिखा जा सकता है। दोनों विधियों से उत्तर की जाँच करें। जीवा व्यास हो जाए, तो त्रिभुज का क्षेत्रफल 0 हो जाता है और दोनों वृत्तखंड समान अर्धवृत्त होते हैं। दीर्घ चाप को दीर्घ क्षेत्रफल से न मिलाएँ। पहले की इकाई सेंटीमीटर, दूसरे की वर्ग सेंटीमीटर होगी। यदि चित्र में केंद्र के बड़े भाग वाला कोण दिया हो, तो उसे तभी पूरक कोण में बदलें जब माँगे गए लघु क्षेत्र के लिए ऐसा जरूरी हो। बीजगणित के साथ छायांकित चित्र रखने से गलत भाग घटाने की भूल कम होती है।"
+      },
+      "formula": "A_major_segment = πr² − A_minor_segment",
+      "question": {
+        "en": "If a minor segment is 20 cm² and circle area is 100 cm², find the major segment.",
+        "hi": "लघु वृत्तखंड 20 cm² और पूरा वृत्त 100 cm² है। दीर्घ वृत्तखंड निकालें।"
+      },
+      "answer": {
+        "en": "80 cm².",
+        "hi": "80 cm²।"
+      }
+    },
+    {
+      "title": {
+        "en": "Composite regions and boundaries",
+        "hi": "संयुक्त क्षेत्र और सीमाएँ"
+      },
+      "body": {
+        "en": "Many figures combine rectangles, triangles, semicircles, quadrants, or circular strips. Split the shaded region into non-overlapping pieces whose dimensions are known, or begin with a larger simple region and subtract the unshaded parts. Addition is justified only when interiors do not overlap; otherwise the overlap would be counted twice. A circle inscribed in a square has diameter equal to the square's side, not radius equal to that side. An annular path has area π(R² − r²), because the inner disc is removed from the outer disc. Its two circular boundary lengths add for fencing both edges, even though its area uses subtraction. A common internal boundary between joined regions is not part of the outside perimeter. Label every given diameter, radius and width before calculating. A width added around a circular garden increases its radius by that width. The difference of squared radii is not the square of the difference, so expand or evaluate the two squares separately.",
+        "hi": "कई आकृतियाँ आयत, त्रिभुज, अर्धवृत्त, चौथाई वृत्त या वृत्तीय पट्टी से मिलकर बनती हैं। छायांकित भाग को ऐसे हिस्सों में बाँटें जिनके अंदरूनी भाग न मिलें और जिनके माप ज्ञात हों। या बड़ी सरल आकृति से बिना छायांकन वाले भाग घटाएँ। सीधे जोड़ तभी उचित है जब क्षेत्रों का अंदरूनी अतिव्यापन न हो; अन्यथा साझा भाग 2 बार गिना जाएगा। वर्ग में अंतःस्थित वृत्त का व्यास वर्ग की भुजा के बराबर है, त्रिज्या नहीं। वलयाकार पथ का क्षेत्रफल π(R² − r²) है, क्योंकि बाहरी वृत्त में से भीतरी वृत्त हटाया जाता है। दोनों किनारों पर बाड़ लगानी हो, तो दोनों परिधियों की लंबाइयाँ जुड़ेंगी, जबकि क्षेत्रफल में घटाव होता है। जुड़े क्षेत्रों की साझा अंदरूनी सीमा बाहरी परिमाप का हिस्सा नहीं है। गणना से पहले हर दिया व्यास, त्रिज्या और चौड़ाई नाम सहित लिखें। वृत्तीय बगीचे के चारों ओर पथ जोड़ने पर त्रिज्या में पथ की चौड़ाई जुड़ती है। वर्गों का अंतर, अंतर के वर्ग के बराबर नहीं है; दोनों वर्ग अलग निकालें या सही गुणनखंड करें।"
+      },
+      "formula": "A_annulus = π(R² − r²), R > r",
+      "question": {
+        "en": "A circular garden radius is 7 m and surrounding path width is 2 m. What is outer radius?",
+        "hi": "वृत्तीय बगीचे की त्रिज्या 7 m और पथ की चौड़ाई 2 m है। बाहरी त्रिज्या क्या है?"
+      },
+      "answer": {
+        "en": "9 m.",
+        "hi": "9 m।"
+      }
+    },
+    {
+      "title": {
+        "en": "Units, π and exact answers",
+        "hi": "इकाइयाँ, π और सटीक उत्तर"
+      },
+      "body": {
+        "en": "Keep a clear distinction between an exact symbolic expression and a numerical approximation. π is irrational; 22/7 and 3.14 are useful approximations, not exact identities. If a question prescribes a value, use it consistently and say so. Otherwise leaving an answer such as 49π cm² is exact. A radius in centimetres produces area in cm² and arc length in cm. Convert units before combining regions: 1 m² equals 10000 cm², not 100 cm², because both dimensions are converted. Angle θ/360 is valid here when θ is in degrees; do not insert a radian number into that degree fraction. A central angle measures a fraction of a turn and does not itself have a linear unit. Show substitutions so that squared radii, the angular fraction and any triangle subtraction remain visible. Rounding each intermediate component separately can make complementary areas fail to add back to the whole. Retain symbolic π and radicals until the final requested approximation.",
+        "hi": "सटीक प्रतीकात्मक उत्तर और दशमलव सन्निकटन में अंतर रखें। π अपरिमेय संख्या है। 22/7 और 3.14 उपयोगी सन्निकटन हैं, सटीक बराबरियाँ नहीं। प्रश्न में कोई मान निर्धारित हो, तो पूरे हल में वही प्रयोग करें और उसका उल्लेख करें। अन्यथा 49π cm² जैसा उत्तर सटीक है। सेंटीमीटर में त्रिज्या लेने पर क्षेत्रफल cm² और चाप लंबाई cm में आएगी। क्षेत्रों को जोड़ने से पहले इकाई बदलें: 1 m² = 10000 cm² है, 100 cm² नहीं, क्योंकि दोनों आयाम बदलते हैं। यहाँ θ/360 तभी उचित है जब θ डिग्री में हो। रेडियन का संख्यात्मक मान इस डिग्री वाले अंश में न रखें। केंद्रीय कोण पूरे चक्कर का अंश बताता है; उसकी अपनी कोई रैखिक इकाई नहीं होती। मान रखने के चरण दिखाएँ ताकि त्रिज्या का वर्ग, कोण का अंश और त्रिभुज का घटाव साफ रहें। अलग-अलग भागों को पहले ही पूर्णांकित करने से पूरक क्षेत्रफल जोड़ने पर पूरा क्षेत्र वापस न मिले। अंतिम माँगे गए सन्निकटन तक π और करणी का सटीक रूप रखें।"
+      },
+      "formula": "1 m² = 10000 cm²; π ≈ 22/7 ≈ 3.14",
+      "question": {
+        "en": "Is 22/7 exactly equal to π?",
+        "hi": "क्या 22/7 बिल्कुल π के बराबर है?"
+      },
+      "answer": {
+        "en": "No. It is an approximation.",
+        "hi": "नहीं। यह सन्निकटन है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Plan and verify an area solution",
+        "hi": "क्षेत्रफल का हल बनाना और जाँचना"
+      },
+      "body": {
+        "en": "A reliable solution begins by naming the requested region and marking its complete boundary. List the given dimensions and convert any diameter to radius. State whether the central angle belongs to the minor or major part. Choose an area relation, substitute the angular fraction and squared radius, and calculate any triangle area separately before subtraction. End with an exact expression or the prescribed approximation and a square unit. For a perimeter request, return to the outside boundary rather than reusing an area formula. Check that no resulting area is negative and no subregion is larger than the complete containing region. Test familiar limits: half a circle must give half its area, and a 90° sector must give one quarter. When the radius doubles, all lengths double and all corresponding areas quadruple. These checks reveal missing squares and mistaken fractions. Interactive shading supports identification and comparison; a pixel count is not a proof of the formula. The mathematical relation depends on clearly stated geometry, not on the resolution of the screen.",
+        "hi": "भरोसेमंद हल की शुरुआत माँगे गए क्षेत्र का नाम और उसकी पूरी सीमा चिह्नित करने से होती है। दिए माप लिखें और व्यास को आवश्यकता अनुसार त्रिज्या में बदलें। बताएँ कि केंद्रीय कोण लघु भाग का है या दीर्घ भाग का। उचित क्षेत्रफल संबंध चुनें, कोण का अंश तथा त्रिज्या का वर्ग रखें और घटाव से पहले त्रिभुज का क्षेत्रफल अलग निकालें। अंत में सटीक व्यंजक या निर्धारित सन्निकटन और वर्ग इकाई दें। परिमाप माँगा हो, तो बाहरी सीमा पर वापस जाएँ; क्षेत्रफल सूत्र का पुनः प्रयोग न करें। जाँचें कि कोई क्षेत्रफल ऋणात्मक नहीं और उपक्षेत्र पूरे क्षेत्र से बड़ा नहीं है। परिचित स्थितियाँ आजमाएँ: अर्धवृत्त का क्षेत्रफल आधा और 90° त्रिज्यखंड का चौथाई होना चाहिए। त्रिज्या दोगुनी होने पर संगत लंबाइयाँ दोगुनी तथा क्षेत्रफल 4 गुने होते हैं। इससे छूटा हुआ वर्ग या गलत अंश पता चल सकता है। इंटरैक्टिव छायांकन पहचान और तुलना में मदद करता है; पिक्सेल गिनना सूत्र का प्रमाण नहीं। गणितीय संबंध स्पष्ट ज्यामिति पर निर्भर है, स्क्रीन की गुणवत्ता पर नहीं।"
+      },
+      "formula": "Name region → radius → angle fraction → area relation → units → bounds",
+      "question": {
+        "en": "Doubling radius at fixed sector angle changes area by what factor?",
+        "hi": "त्रिज्यखंड का कोण निश्चित हो और त्रिज्या दोगुनी करें तो क्षेत्रफल कितने गुना होगा?"
+      },
+      "answer": {
+        "en": "4, because area depends on r².",
+        "hi": "4, क्योंकि क्षेत्रफल r² पर निर्भर है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the area of a circle of radius 7 cm. Give exact form and an estimate using π = 22/7.",
+        "hi": "7 cm त्रिज्या वाले वृत्त का क्षेत्रफल निकालें। सटीक रूप तथा π = 22/7 से अनुमान दें।"
+      },
+      "steps": [
+        {
+          "en": "Given: r = 7 cm. To find area, use A = πr².",
+          "hi": "दिया: r = 7 cm। क्षेत्रफल हेतु A = πr² लें।"
+        },
+        {
+          "en": "A = π × 7² = 49π cm².",
+          "hi": "A = π × 7² = 49π cm²।"
+        },
+        {
+          "en": "With the prescribed approximation 22/7, A ≈ 49 × 22/7 = 154.",
+          "hi": "निर्धारित सन्निकटन 22/7 से A ≈ 49 × 22/7 = 154।"
+        }
+      ],
+      "answer": {
+        "en": "49π cm² exactly; approximately 154 cm² using 22/7.",
+        "hi": "सटीक 49π cm²; 22/7 से लगभग 154 cm²।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A sector has radius 21 cm and angle 60°. Find area using π = 22/7.",
+        "hi": "त्रिज्यखंड की त्रिज्या 21 cm और कोण 60° है। π = 22/7 से क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given: θ/360 = 60/360 = 1/6, r = 21 cm.",
+          "hi": "दिया: θ/360 = 60/360 = 1/6, r = 21 cm।"
+        },
+        {
+          "en": "A = (1/6)π × 21² = 73.5π.",
+          "hi": "A = (1/6)π × 21² = 73.5π।"
+        },
+        {
+          "en": "Using 22/7 gives A ≈ 73.5 × 22/7 = 231.",
+          "hi": "22/7 लेने पर A ≈ 73.5 × 22/7 = 231।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately 231 cm²; exact area 147π/2 cm².",
+        "hi": "लगभग 231 cm²; सटीक क्षेत्रफल 147π/2 cm²।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A 60° sector has radius 21 cm. Find its arc length and perimeter using π = 22/7.",
+        "hi": "60° त्रिज्यखंड की त्रिज्या 21 cm है। π = 22/7 से चाप लंबाई और परिमाप निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Arc L = (60/360)2π × 21 = 7π cm.",
+          "hi": "चाप L = (60/360)2π × 21 = 7π cm।"
+        },
+        {
+          "en": "Using 22/7, L ≈ 22 cm.",
+          "hi": "22/7 से L ≈ 22 cm।"
+        },
+        {
+          "en": "Sector perimeter includes both radii: P = L + 42.",
+          "hi": "त्रिज्यखंड परिमाप में दोनों त्रिज्याएँ आती हैं: P = L + 42।"
+        }
+      ],
+      "answer": {
+        "en": "Arc ≈ 22 cm; perimeter ≈ 64 cm. Exact forms: 7π cm and (42 + 7π) cm.",
+        "hi": "चाप लगभग 22 cm; परिमाप लगभग 64 cm। सटीक रूप: 7π cm तथा (42 + 7π) cm।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A circle is inscribed in a square of side 14 cm. Find the area inside the square but outside the circle, using π = 22/7.",
+        "hi": "14 cm भुजा के वर्ग में अंतःस्थित वृत्त है। वर्ग के अंदर और वृत्त के बाहर का क्षेत्रफल π = 22/7 से निकालें।"
+      },
+      "steps": [
+        {
+          "en": "The circle diameter equals the square side, so radius = 7 cm.",
+          "hi": "वृत्त का व्यास वर्ग की भुजा है, अतः त्रिज्या = 7 cm।"
+        },
+        {
+          "en": "Square area = 14² = 196 cm²; circle area = 49π cm².",
+          "hi": "वर्ग क्षेत्रफल = 14² = 196 cm²; वृत्त क्षेत्रफल = 49π cm²।"
+        },
+        {
+          "en": "Required area = 196 − 49π ≈ 196 − 154.",
+          "hi": "आवश्यक क्षेत्रफल = 196 − 49π ≈ 196 − 154।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately 42 cm²; exactly (196 − 49π) cm².",
+        "hi": "लगभग 42 cm²; सटीक (196 − 49π) cm²।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A chord subtends 90° at the centre of a circle of radius 14 cm. Find both segment areas using π = 22/7.",
+        "hi": "14 cm त्रिज्या के वृत्त में जीवा केंद्र पर 90° बनाती है। π = 22/7 से दोनों वृत्तखंडों के क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Minor sector area = (90/360)π × 14² = 49π cm².",
+          "hi": "लघु त्रिज्यखंड क्षेत्रफल = (90/360)π × 14² = 49π cm²।"
+        },
+        {
+          "en": "The two radii are perpendicular, so triangle area = 1/2 ×14×14 =98 cm².",
+          "hi": "दोनों त्रिज्याएँ लंब हैं, अतः त्रिभुज क्षेत्रफल = 1/2 ×14×14 =98 cm²।"
+        },
+        {
+          "en": "Minor segment = 49π − 98 ≈ 154 − 98 = 56 cm².",
+          "hi": "लघु वृत्तखंड = 49π − 98 ≈ 154 − 98 = 56 cm²।"
+        },
+        {
+          "en": "Major segment = 196π − (49π−98) = 147π+98 ≈ 560 cm².",
+          "hi": "दीर्घ वृत्तखंड = 196π − (49π−98) = 147π+98 ≈ 560 cm²।"
+        },
+        {
+          "en": "Check: 56 + 560 = 616, the circle area using 22/7.",
+          "hi": "जाँच: 56 + 560 = 616, जो 22/7 से वृत्त का क्षेत्रफल है।"
+        }
+      ],
+      "answer": {
+        "en": "Minor ≈ 56 cm²; major ≈ 560 cm². Exact: 49π−98 and 147π+98 cm².",
+        "hi": "लघु लगभग 56 cm²; दीर्घ लगभग 560 cm²। सटीक: 49π−98 तथा 147π+98 cm²।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which boundaries define a sector?",
+        "hi": "त्रिज्यखंड किन सीमाओं से बनता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A chord and an arc",
+            "hi": "जीवा और चाप"
+          },
+          "reason": {
+            "en": "Those define a segment.",
+            "hi": "वे वृत्तखंड बनाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Two radii and an arc",
+            "hi": "2 त्रिज्याएँ और चाप"
+          },
+          "reason": {
+            "en": "These enclose a sector.",
+            "hi": "ये त्रिज्यखंड घेरते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Two parallel lines",
+            "hi": "2 समांतर रेखाएँ"
+          },
+          "reason": {
+            "en": "These do not specify a circular sector.",
+            "hi": "इनसे वृत्तीय त्रिज्यखंड तय नहीं होता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a diameter",
+            "hi": "केवल व्यास"
+          },
+          "reason": {
+            "en": "A single segment does not enclose the sector.",
+            "hi": "केवल रेखाखंड क्षेत्र नहीं घेरता।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A 90° sector is what fraction of a circle?",
+        "hi": "90° त्रिज्यखंड वृत्त का कौन-सा अंश है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/4",
+            "hi": "1/4"
+          },
+          "reason": {
+            "en": "90/360 = 1/4.",
+            "hi": "90/360 = 1/4।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          "reason": {
+            "en": "That is the 180° fraction.",
+            "hi": "वह 180° का अंश है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3/4",
+            "hi": "3/4"
+          },
+          "reason": {
+            "en": "That is the 270° fraction.",
+            "hi": "वह 270° का अंश है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "A quarter sector cannot be four complete circles.",
+            "hi": "चौथाई भाग 4 पूरे वृत्त नहीं हो सकता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is the sector area for θ in degrees?",
+        "hi": "θ डिग्री में हो तो त्रिज्यखंड क्षेत्रफल क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(θ/360)2πr",
+            "hi": "(θ/360)2πr"
+          },
+          "reason": {
+            "en": "This is arc length, not area.",
+            "hi": "यह चाप लंबाई है, क्षेत्रफल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "πr",
+            "hi": "πr"
+          },
+          "reason": {
+            "en": "This has length units and omits the angle.",
+            "hi": "इसकी लंबाई की इकाई है और कोण छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(θ/360)πr²",
+            "hi": "(θ/360)πr²"
+          },
+          "reason": {
+            "en": "Take the angle fraction of the complete area.",
+            "hi": "पूरे क्षेत्रफल का कोण वाला अंश लें।"
+          }
+        },
+        {
+          "text": {
+            "en": "360πr²/θ",
+            "hi": "360πr²/θ"
+          },
+          "reason": {
+            "en": "This inverts the angular fraction.",
+            "hi": "इसमें कोण का अंश उलट गया है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "A proper sector perimeter equals?",
+        "hi": "सामान्य त्रिज्यखंड का परिमाप क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Arc length only",
+            "hi": "केवल चाप लंबाई"
+          },
+          "reason": {
+            "en": "The two radial edges are missing.",
+            "hi": "2 त्रिज्यीय किनारे छूट रहे हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Arc length + r",
+            "hi": "चाप लंबाई + r"
+          },
+          "reason": {
+            "en": "Only one radius is counted.",
+            "hi": "केवल 1 त्रिज्या गिनी गई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "πr²",
+            "hi": "πr²"
+          },
+          "reason": {
+            "en": "That is full circle area.",
+            "hi": "वह पूरे वृत्त का क्षेत्रफल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Arc length + 2r",
+            "hi": "चाप लंबाई + 2r"
+          },
+          "reason": {
+            "en": "Both straight radii and the arc form the boundary.",
+            "hi": "दोनों सीधी त्रिज्याएँ तथा चाप सीमा बनाते हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Minor segment area is which difference?",
+        "hi": "लघु वृत्तखंड का क्षेत्रफल कौन-सा अंतर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Triangle − sector",
+            "hi": "त्रिभुज − त्रिज्यखंड"
+          },
+          "reason": {
+            "en": "This reverses the containing and contained regions.",
+            "hi": "इसमें बड़े और अंदर के क्षेत्र उलट गए हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Minor sector − central triangle",
+            "hi": "लघु त्रिज्यखंड − केंद्रीय त्रिभुज"
+          },
+          "reason": {
+            "en": "The sector splits into that triangle and the segment.",
+            "hi": "त्रिज्यखंड उसी त्रिभुज और वृत्तखंड में बँटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Circle − radius",
+            "hi": "वृत्त − त्रिज्या"
+          },
+          "reason": {
+            "en": "Area and length cannot be subtracted.",
+            "hi": "क्षेत्रफल और लंबाई घट नहीं सकते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Arc − chord",
+            "hi": "चाप − जीवा"
+          },
+          "reason": {
+            "en": "This is a difference of lengths, not the required area.",
+            "hi": "यह लंबाइयों का अंतर है, आवश्यक क्षेत्रफल नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "If radius doubles at fixed central angle, sector area becomes?",
+        "hi": "केंद्रीय कोण निश्चित हो और त्रिज्या दोगुनी हो तो क्षेत्रफल कितना होगा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4 times",
+            "hi": "4 गुना"
+          },
+          "reason": {
+            "en": "The squared radius contributes a factor 2².",
+            "hi": "त्रिज्या का वर्ग 2² का गुणक देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 times",
+            "hi": "2 गुना"
+          },
+          "reason": {
+            "en": "That is the scaling of corresponding lengths.",
+            "hi": "वह संगत लंबाइयों का गुणक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Area depends on radius.",
+            "hi": "क्षेत्रफल त्रिज्या पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "8 times",
+            "hi": "8 गुना"
+          },
+          "reason": {
+            "en": "A cubic scaling belongs to volume, not planar area.",
+            "hi": "घन वाला गुणक आयतन में है, समतलीय क्षेत्रफल में नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A circle inscribed in a 12 cm square has radius?",
+        "hi": "12 cm भुजा के वर्ग में अंतःस्थित वृत्त की त्रिज्या क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12 cm",
+            "hi": "12 cm"
+          },
+          "reason": {
+            "en": "12 cm is the diameter.",
+            "hi": "12 cm व्यास है।"
+          }
+        },
+        {
+          "text": {
+            "en": "24 cm",
+            "hi": "24 cm"
+          },
+          "reason": {
+            "en": "Doubling the side gives neither the radius nor the diameter here.",
+            "hi": "भुजा दोगुनी करने से यहाँ त्रिज्या नहीं मिलती।"
+          }
+        },
+        {
+          "text": {
+            "en": "6 cm",
+            "hi": "6 cm"
+          },
+          "reason": {
+            "en": "Radius is half the diameter 12 cm.",
+            "hi": "त्रिज्या 12 cm व्यास की आधी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3 cm",
+            "hi": "3 cm"
+          },
+          "reason": {
+            "en": "This halves the side twice.",
+            "hi": "इसमें भुजा को 2 बार आधा कर दिया गया है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "What is the correct conversion for 1 m²?",
+        "hi": "1 m² का सही परिवर्तन क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "100 cm²",
+            "hi": "100 cm²"
+          },
+          "reason": {
+            "en": "This converts only one dimension.",
+            "hi": "इसमें केवल 1 आयाम बदला है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 cm²",
+            "hi": "10 cm²"
+          },
+          "reason": {
+            "en": "This is not the square of the metre-to-centimetre factor.",
+            "hi": "यह मीटर-सेंटीमीटर गुणक का वर्ग नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1000 cm²",
+            "hi": "1000 cm²"
+          },
+          "reason": {
+            "en": "The squared factor is 100×100.",
+            "hi": "वर्ग गुणक 100×100 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10000 cm²",
+            "hi": "10000 cm²"
+          },
+          "reason": {
+            "en": "Both dimensions multiply by 100.",
+            "hi": "दोनों आयाम 100 से गुणित होते हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "For radius 7 cm, exact circle area is?",
+        "hi": "7 cm त्रिज्या के वृत्त का सटीक क्षेत्रफल क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "14π cm²",
+            "hi": "14π cm²"
+          },
+          "reason": {
+            "en": "14π cm would be circumference; its unit is not area.",
+            "hi": "14π cm परिधि होगी; उसकी इकाई क्षेत्रफल नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "49π cm²",
+            "hi": "49π cm²"
+          },
+          "reason": {
+            "en": "π × 7² = 49π.",
+            "hi": "π × 7² = 49π।"
+          }
+        },
+        {
+          "text": {
+            "en": "154π cm²",
+            "hi": "154π cm²"
+          },
+          "reason": {
+            "en": "This incorrectly includes π after using a numerical estimate.",
+            "hi": "इसमें संख्यात्मक अनुमान के बाद फिर π लगा दिया गया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "7π cm²",
+            "hi": "7π cm²"
+          },
+          "reason": {
+            "en": "The radius must be squared.",
+            "hi": "त्रिज्या का वर्ग लेना जरूरी है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Major and minor segments of the same chord together give?",
+        "hi": "एक ही जीवा के लघु और दीर्घ वृत्तखंड मिलकर क्या देते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The complete circle region",
+            "hi": "पूरा वृत्तीय क्षेत्र"
+          },
+          "reason": {
+            "en": "The chord partitions the disc into these two regions.",
+            "hi": "जीवा पूरे क्षेत्र को इन्हीं 2 भागों में बाँटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a semicircle",
+            "hi": "केवल अर्धवृत्त"
+          },
+          "reason": {
+            "en": "Their union is not generally half the disc.",
+            "hi": "उनका मेल सामान्यतः आधा क्षेत्र नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the triangle",
+            "hi": "केवल त्रिभुज"
+          },
+          "reason": {
+            "en": "The triangle is used inside a sector decomposition.",
+            "hi": "त्रिभुज त्रिज्यखंड को बाँटने में आता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The circumference",
+            "hi": "परिधि"
+          },
+          "reason": {
+            "en": "The segments are areas; circumference is a boundary length.",
+            "hi": "वृत्तखंड क्षेत्र हैं; परिधि सीमा की लंबाई है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish sector and segment by their boundaries.",
+        "hi": "सीमाओं से त्रिज्यखंड और वृत्तखंड का अंतर बताएँ।"
+      },
+      "answer": {
+        "en": "A sector uses two radii and an arc; a segment uses a chord and an arc.",
+        "hi": "त्रिज्यखंड 2 त्रिज्याओं और चाप से; वृत्तखंड जीवा और चाप से घिरता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give area and arc length formulae for central angle θ degrees.",
+        "hi": "θ डिग्री केंद्रीय कोण के क्षेत्रफल तथा चाप लंबाई सूत्र लिखें।"
+      },
+      "answer": {
+        "en": "Area = (θ/360)πr²; arc = (θ/360)2πr.",
+        "hi": "क्षेत्रफल = (θ/360)πr²; चाप = (θ/360)2πr।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find exact area of a semicircle of radius 6 cm.",
+        "hi": "6 cm त्रिज्या के अर्धवृत्त का सटीक क्षेत्रफल निकालें।"
+      },
+      "answer": {
+        "en": "(1/2)π×6² = 18π cm².",
+        "hi": "(1/2)π×6² = 18π cm²।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does a sector perimeter include two radii?",
+        "hi": "त्रिज्यखंड के परिमाप में 2 त्रिज्याएँ क्यों आती हैं?"
+      },
+      "answer": {
+        "en": "For 0°<θ<360°, those two straight edges are part of the external boundary in addition to the arc.",
+        "hi": "0°<θ<360° पर चाप के साथ दोनों सीधी त्रिज्याएँ बाहरी सीमा का भाग हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "For r=10 cm and θ=90°, write minor segment area exactly.",
+        "hi": "r=10 cm तथा θ=90° के लघु वृत्तखंड का सटीक क्षेत्रफल लिखें।"
+      },
+      "answer": {
+        "en": "Sector 25π minus triangle 50 gives (25π−50) cm².",
+        "hi": "त्रिज्यखंड 25π में से त्रिभुज 50 घटाएँ: (25π−50) cm²।"
+      }
+    },
+    {
+      "question": {
+        "en": "A path lies between circles of radii 9 m and 7 m. Find exact area.",
+        "hi": "9 m तथा 7 m त्रिज्याओं के वृत्तों के बीच पथ का सटीक क्षेत्रफल निकालें।"
+      },
+      "answer": {
+        "en": "π(9²−7²)=32π m².",
+        "hi": "π(9²−7²)=32π m²।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not use diameter as radius, confuse arc length with sector perimeter, or use sector area as segment area. Keep degree fractions, squared units and the chosen approximation of π consistent.",
+    "hi": "व्यास को त्रिज्या न लें, चाप लंबाई को त्रिज्यखंड परिमाप न मानें और त्रिज्यखंड को वृत्तखंड का क्षेत्रफल न लिखें। डिग्री के अंश, वर्ग इकाइयाँ और π का चुना सन्निकटन समान रखें।"
+  },
+  "revision": [
+    {
+      "en": "Sector: radii and arc; segment: chord and arc.",
+      "hi": "त्रिज्यखंड: त्रिज्याएँ और चाप; वृत्तखंड: जीवा और चाप।"
+    },
+    {
+      "en": "Sector area is θ/360 of πr².",
+      "hi": "त्रिज्यखंड क्षेत्रफल πr² का θ/360 भाग है।"
+    },
+    {
+      "en": "Arc length is θ/360 of 2πr; sector perimeter also includes 2r.",
+      "hi": "चाप लंबाई 2πr का θ/360 भाग; त्रिज्यखंड परिमाप में 2r भी है।"
+    },
+    {
+      "en": "Minor segment = sector − triangle; major segment = circle − minor segment.",
+      "hi": "लघु वृत्तखंड = त्रिज्यखंड − त्रिभुज; दीर्घ वृत्तखंड = वृत्त − लघु वृत्तखंड।"
+    },
+    {
+      "en": "Use exact π when possible and distinguish linear from square units.",
+      "hi": "जहाँ संभव हो सटीक π रखें तथा रैखिक और वर्ग इकाई अलग पहचानें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Circle → angular fraction → sector area / arc length → triangle subtraction → segment → composite region and boundary checks",
+    "hi": "वृत्त → कोण का अंश → त्रिज्यखंड क्षेत्रफल / चाप लंबाई → त्रिभुज घटाव → वृत्तखंड → संयुक्त क्षेत्र और सीमा जाँच"
+  },
+  "sources": [
+    {
+      "title": "NCERT Class 10 Mathematics Chapter 11, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh111.pdf"
+    }
+  ]
+}

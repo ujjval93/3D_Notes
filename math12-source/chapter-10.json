@@ -1,0 +1,888 @@
+{
+  "id": 10,
+  "title": {
+    "en": "Vector Algebra",
+    "hi": "सदिश बीजगणित"
+  },
+  "goal": {
+    "en": "Use components, dot and cross products to solve direction, projection and area problems.",
+    "hi": "घटक, डॉट और क्रॉस गुणनफल से दिशा, प्रक्षेप और क्षेत्रफल के प्रश्न हल करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Vectors, magnitude and direction",
+        "hi": "सदिश, परिमाण और दिशा"
+      },
+      "body": {
+        "en": "Scalars need magnitude; vectors need magnitude and direction. Equal free vectors share both. The zero vector has no definite direction. For a nonzero vector a, a/|a| is its unit vector. A drawing requires a stated scale to convey numerical magnitude.",
+        "hi": "अदिश (Scalar) राशि केवल परिमाण से बताई जाती है, जबकि सदिश (Vector) के लिए परिमाण और दिशा दोनों चाहिए। लंबाई, द्रव्यमान और समय अदिश हैं; विस्थापन और बल सदिश हैं। सदिश को तीर से दिखाते हैं, जहाँ तीर की लंबाई परिमाण और नोक दिशा बताती है। केवल चित्र की लंबाई देखकर वास्तविक परिमाण न पढ़ें जब तक पैमाना दिया न हो। समान सदिशों का परिमाण और दिशा समान होते हैं; मुक्त सदिश की स्थिति बदलने से वह नहीं बदलता। ऋण सदिश −a का परिमाण a जितना और दिशा विपरीत होती है। शून्य सदिश (Zero vector) का परिमाण 0 है तथा कोई निश्चित दिशा नहीं है। इकाई सदिश (Unit vector) का परिमाण 1 होता है और वह केवल दिशा व्यक्त करने में उपयोगी है। अशून्य a की दिशा का इकाई सदिश a/|a| है। शून्य सदिश से ऐसा भाग नहीं कर सकते। चित्रों में तीर की नोक स्पष्ट बनाएँ, क्योंकि बिना दिशा के वही रेखाखंड सदिश की पूरी जानकारी नहीं देता। बराबर परिमाण से सदिश बराबर होना जरूरी नहीं; उनकी दिशा भी जाँचें।"
+      },
+      "formula": "â=a/|a|, a≠0; |â|=1",
+      "question": {
+        "en": "Are two vectors equal if their magnitudes are equal?",
+        "hi": "केवल परिमाण बराबर हो तो क्या 2 सदिश बराबर हैं?"
+      },
+      "answer": {
+        "en": "No; their directions must also agree.",
+        "hi": "नहीं; दिशाएँ भी समान होनी चाहिए।"
+      }
+    },
+    {
+      "title": {
+        "en": "Components and position vectors",
+        "hi": "घटक और स्थिति सदिश"
+      },
+      "body": {
+        "en": "With orthonormal i,j,k, a=axi+ayj+azk and |a|=√(ax²+ay²+az²). Position vector OP uses point coordinates; AB=b−a. Components may be negative while magnitude is nonnegative. A projected 3D drawing does not preserve all spatial angles.",
+        "hi": "समकोणिक निर्देश तंत्र में i, j तथा k क्रमशः धनात्मक x, y और z दिशा के इकाई सदिश हैं। कोई सदिश a=ax i+ay j+az k के रूप में लिखा जा सकता है। ax, ay, az इसके अदिश घटक (Scalar components) हैं और ऋणात्मक भी हो सकते हैं। परिमाण |a|=√(ax²+ay²+az²) हमेशा गैरऋणात्मक है। बिंदु P(x,y,z) का मूल O के सापेक्ष स्थिति सदिश (Position vector) OP=x i+y j+z k है। बिंदु A तथा B के स्थिति सदिश a और b हों तो AB=b−a मिलता है। क्रम उलटने पर BA=a−b=−AB है। उदाहरणतः A(1,2,0), B(3,1,4) से AB=2i−j+4k और उसकी लंबाई √21 है। निर्देशांक बिंदु की स्थिति बताते हैं, जबकि घटक विस्थापन बताते हैं; दोनों की भूमिका प्रश्न के संदर्भ में समझें। परिमाण निकालते समय ऋण घटक का वर्ग धनात्मक होता है। त्रिविमीय चित्र कागज पर प्रक्षेप होता है; स्क्रीन का दिखा कोण वास्तविक स्थानिक कोण से अलग हो सकता है। गणना घटकों से करें।"
+      },
+      "formula": "AB=b−a; |a|=√(ax²+ay²+az²)",
+      "question": {
+        "en": "Find |2i−j+2k|.",
+        "hi": "|2i−j+2k| निकालें।"
+      },
+      "answer": {
+        "en": "√(4+1+4)=3.",
+        "hi": "√(4+1+4)=3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Addition and scalar multiplication",
+        "hi": "योग और अदिश गुणन"
+      },
+      "body": {
+        "en": "Use head-to-tail or parallelogram addition, or add corresponding components. Subtraction adds the opposite vector. Scalar multiplication changes length by |λ| and reverses direction for λ<0. Magnitudes do not generally add; parallel nonzero vectors are scalar multiples.",
+        "hi": "सदिश योग (Vector addition) त्रिभुज नियम से समझते हैं: पहले a का तीर बनाएँ और उसकी नोक पर b की पूँछ रखें। पहले की पूँछ से दूसरे की नोक तक सदिश a+b है। समांतर चतुर्भुज नियम में दोनों तीर एक बिंदु से शुरू होते हैं और विकर्ण उनका योग है। घटक रूप में समान दिशाओं के घटक जोड़ते हैं। a+b=b+a और (a+b)+c=a+(b+c) हैं। सदिश घटाना विपरीत सदिश जोड़ना है: a−b=a+(−b)। वास्तविक अदिश λ से गुणन में परिमाण |λ| गुना होता है। λ>0 पर दिशा वही, λ<0 पर विपरीत और λ=0 पर शून्य सदिश मिलता है। उदाहरणतः a=2i+j तथा b=−i+3j से a+b=i+4j है। केवल परिमाण जोड़ना सामान्यतः सही नहीं; |a+b| जरूरी नहीं कि |a|+|b| हो। यह समान दिशा वाले सदिशों में मिलता है। सदिश राशि की इकाई भी सुरक्षित रखें; असंगत इकाइयों वाले विस्थापन और बल को सीधे नहीं जोड़ सकते। समानांतर सदिश अशून्य होने पर एक दूसरे के अदिश गुणज होते हैं।"
+      },
+      "formula": "a−b=a+(−b); |λa|=|λ||a|",
+      "question": {
+        "en": "For a=i+2j, find −2a.",
+        "hi": "a=i+2j के लिए −2a निकालें।"
+      },
+      "answer": {
+        "en": "−2i−4j.",
+        "hi": "−2i−4j।"
+      }
+    },
+    {
+      "title": {
+        "en": "Section formula and direction cosines",
+        "hi": "विभाजन सूत्र और दिक् कोसाइन"
+      },
+      "body": {
+        "en": "Internal AP:PB=m:n gives p=(na+mb)/(m+n). External division uses (mb−na)/(m−n), m≠n. Direction cosines are normalized components of a nonzero vector and satisfy l²+m²+n²=1. Direction ratios need not themselves be normalized.",
+        "hi": "यदि P, A तथा B को जोड़ने वाले रेखाखंड को अंदर से AP:PB=m:n में बाँटता है तो उसका स्थिति सदिश p=(n a+m b)/(m+n) है, जहाँ m,n धनात्मक हैं। अनुपात का पहला अंक दूसरे सिरे के सदिश से गुणा होता है; इसे चित्र में जांच सकते हैं। मध्यबिंदु के लिए m=n और p=(a+b)/2 मिलता है। बाह्य विभाजन में यदि AP:PB=m:n, m≠n हो तो p=(m b−n a)/(m−n) मिलता है; प्रश्न में आंतरिक या बाह्य स्पष्ट पढ़ें। किसी अशून्य सदिश का धनात्मक अक्षों से कोण α,β,γ हो तो l=cosα, m=cosβ, n=cosγ उसके दिक् कोसाइन (Direction cosines) हैं। यहाँ m,n अनुपात के प्रतीकों से अलग संदर्भ में प्रयुक्त हैं। घटकों से ये ax/|a|, ay/|a|, az/|a| मिलते हैं और l²+m²+n²=1 है। दिक् अनुपात समानुपाती घटक हो सकते हैं, पर उन्हें सीधे दिक् कोसाइन न मानें; पहले परिमाण से भाग दें। शून्य सदिश के दिक् कोसाइन परिभाषित नहीं होते।"
+      },
+      "formula": "p=(na+mb)/(m+n); l²+m²+n²=1",
+      "question": {
+        "en": "Find direction cosines of 2i−j+2k.",
+        "hi": "2i−j+2k के दिक् कोसाइन निकालें।"
+      },
+      "answer": {
+        "en": "2/3, −1/3, 2/3.",
+        "hi": "2/3, −1/3, 2/3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Scalar product and angle",
+        "hi": "अदिश गुणनफल और कोण"
+      },
+      "body": {
+        "en": "The dot product is a scalar: a·b=|a||b|cosθ=Σaibi. Nonzero perpendicular vectors have dot product zero. The zero vector also has zero dot product but no defined direction angle. Divide by both magnitudes to find cosine; a·a=|a|².",
+        "hi": "अदिश गुणनफल (Scalar product) a·b=|a||b|cosθ है, जहाँ θ दोनों अशून्य सदिशों के बीच 0 से π तक का कोण है। परिणाम अदिश होता है, सदिश नहीं। घटक रूप में a·b=ax bx+ay by+az bz है। इसलिए कोण निकालने के लिए cosθ=(a·b)/(|a||b|) लें। यदि अशून्य सदिश लंबवत हों तो cosθ=0 और a·b=0 है। उलटा कथन भी अशून्य सदिशों के लिए सही है। शून्य सदिश का हर सदिश से डॉट गुणनफल 0 है, पर उसका कोई निश्चित कोण नहीं होता; इसलिए शून्य की स्थिति अलग लिखें। a·a=|a|² से परिमाण की गणना भी मिलती है। समान दिशा में गुणनफल धनात्मक अधिकतम, विपरीत दिशा में ऋणात्मक और समकोण पर 0 है। यह गुणनफल क्रमविनिमेय तथा योग पर वितरणशील है। उदाहरणतः (i+j)·(i−j)=1−1=0 से दोनों अशून्य सदिश लंबवत हैं। कोण के सूत्र में केवल डॉट गुणनफल को cosθ न मानें; दोनों परिमाणों का गुणनफल हर में चाहिए। त्रिकोणमितीय मान हमेशा स्वीकार्य सीमा [−1,1] में होना चाहिए।"
+      },
+      "formula": "a·b=ax bx+ay by+az bz=|a||b|cosθ",
+      "question": {
+        "en": "Find the angle between i+j and i−j.",
+        "hi": "i+j तथा i−j के बीच कोण निकालें।"
+      },
+      "answer": {
+        "en": "90°, since their dot product is 0 and both are nonzero.",
+        "hi": "90°, क्योंकि डॉट गुणनफल 0 है और दोनों अशून्य हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Projection and physical meaning",
+        "hi": "प्रक्षेप और भौतिक अर्थ"
+      },
+      "body": {
+        "en": "Scalar projection of a on nonzero b is (a·b)/|b|; vector projection is [(a·b)/|b|²]b. The sign may be negative. Work is F·s with joule units, using only the force component along displacement. Projection on the zero vector is undefined.",
+        "hi": "a का अशून्य b की दिशा में अदिश प्रक्षेप (Scalar projection) (a·b)/|b| है। इसका चिह्न बताता है कि a का उस दिशा वाला घटक आगे है या पीछे। वेक्टर प्रक्षेप (Vector projection) [(a·b)/|b|²]b है और वह सदिश है। दोनों को अलग पहचानें; अदिश प्रक्षेप में केवल 1 परिमाण तथा संकेत है, वेक्टर प्रक्षेप में दिशा भी है। यदि b इकाई सदिश है तो अदिश प्रक्षेप सीधे a·b बनता है। उदाहरणतः a=3i+4j का i दिशा में अदिश प्रक्षेप 3 और वेक्टर प्रक्षेप 3i है। लंबवत घटक 4j बचता है। बल F और विस्थापन s के लिए कार्य W=F·s=|F||s|cosθ है। केवल विस्थापन की दिशा का बल घटक कार्य में योगदान देता है। विपरीत दिशा के बल से कार्य ऋणात्मक हो सकता है, इसलिए डॉट गुणनफल को हमेशा धनात्मक न मानें। भौतिक इकाइयाँ गुणन से आती हैं: N और m का डॉट गुणनफल N m या J में है। प्रक्षेप के सूत्र में शून्य b के लिए भाग अवैध है, इसलिए b≠0 स्पष्ट रखें।"
+      },
+      "formula": "compb a=(a·b)/|b|; projb a=[(a·b)/|b|²]b",
+      "question": {
+        "en": "Project 3i+4j on i.",
+        "hi": "3i+4j का i पर प्रक्षेप निकालें।"
+      },
+      "answer": {
+        "en": "Scalar projection 3; vector projection 3i.",
+        "hi": "अदिश प्रक्षेप 3; वेक्टर प्रक्षेप 3i।"
+      }
+    },
+    {
+      "title": {
+        "en": "Vector product and orientation",
+        "hi": "सदिश गुणनफल और अभिविन्यास"
+      },
+      "body": {
+        "en": "The cross product is perpendicular to both vectors with right-hand orientation; |a×b|=|a||b|sinθ and b×a=−a×b. Use the component determinant carefully, especially the j sign. Parallel nonzero vectors have zero cross product; the zero-vector case also gives zero.",
+        "hi": "सदिश गुणनफल (Vector product) a×b का परिमाण |a||b|sinθ है और दिशा दोनों के समतल के लंबवत दाएँ हाथ के नियम से मिलती है। उंगलियाँ a से b की ओर छोटे कोण से मोड़ने पर अंगूठा गुणनफल की दिशा बताता है। क्रम बदलने पर b×a=−(a×b) होता है, इसलिए यह क्रमविनिमेय नहीं है। आधार सदिशों में i×j=k, j×k=i और k×i=j हैं; उलटे क्रम में ऋण चिह्न आता है। समान आधार सदिश का गुणनफल 0 है। घटकों में a×b=(ay bz−az by)i+(az bx−ax bz)j+(ax by−ay bx)k है। बीच वाले घटक में चिह्न की गलती सामान्य है, इसलिए पूरा सूत्र या सही सारणिक प्रसार इस्तेमाल करें। यदि अशून्य सदिश समानांतर हैं तो sinθ=0 और क्रॉस गुणनफल शून्य है। शून्य सदिश का भी क्रॉस गुणनफल हर सदिश से शून्य मिलता है। दाएँ हाथ का नियम त्रिविमीय दिशा तय करता है; कागज पर अंदर की दिशा को × और बाहर की दिशा को बिंदु से दिखा सकते हैं। परिमाण कभी ऋणात्मक नहीं होता।"
+      },
+      "formula": "a×b=(aybz−azby)i+(azbx−axbz)j+(axby−aybx)k",
+      "question": {
+        "en": "What are i×j and j×i?",
+        "hi": "i×j तथा j×i क्या हैं?"
+      },
+      "answer": {
+        "en": "k and −k respectively.",
+        "hi": "क्रमशः k तथा −k।"
+      }
+    },
+    {
+      "title": {
+        "en": "Areas and a final vector checklist",
+        "hi": "क्षेत्रफल और अंतिम सदिश जाँच"
+      },
+      "body": {
+        "en": "Parallelogram area is |a×b| and triangle area half of it. For vertices A,B,C, use AB and AC, not unrelated position vectors. A zero cross product indicates collinearity. Check scalar versus vector output, nonnegative area, square units and unit-vector normalization.",
+        "hi": "समान बिंदु से निकले दो आसन्न भुजा सदिश a और b समांतर चतुर्भुज बनाते हैं। उसका क्षेत्रफल आधार गुणा लंबवत ऊँचाई से |a||b|sinθ=|a×b| है। उन्हीं 2 भुजाओं वाला त्रिभुज आधा क्षेत्र घेरता है, इसलिए A=|a×b|/2 है। किसी 3 बिंदु A,B,C के त्रिभुज के लिए पहले AB=b−a तथा AC=c−a बनाएँ; स्थिति सदिशों b तथा c का सीधे क्रॉस गुणनफल तभी उचित है जब A मूल हो। यदि क्रॉस गुणनफल 0 है तो ये भुजाएँ एकरेखीय हैं और त्रिभुज का क्षेत्रफल 0 है। डॉट और क्रॉस गुणनफल में चुनाव मांगी राशि से करें: कोण का cosine या प्रक्षेप चाहिए तो डॉट, लंबवत दिशा या क्षेत्रफल चाहिए तो क्रॉस उपयोगी है। उत्तर अदिश है या सदिश, इसे हर चरण पर जाँचें। क्षेत्रफल का अंतिम मान परिमाण लेकर गैरऋणात्मक और वर्ग इकाई में लिखें। क्रॉस गुणनफल की दिशा बदलने से क्षेत्रफल नहीं बदलता। इकाई सदिश निकालते समय अंतिम परिमाण 1 और दिक् कोसाइन निकालते समय वर्गों का योग 1 जाँचें; ये उपयोगी स्वतंत्र परीक्षण हैं।"
+      },
+      "formula": "Aparallelogram=|a×b|; Atriangle=|AB×AC|/2",
+      "question": {
+        "en": "Triangle sides from one vertex are 2i and 3j. Find its area.",
+        "hi": "एक शीर्ष से त्रिभुज की भुजाएँ 2i तथा 3j हैं। क्षेत्रफल निकालें।"
+      },
+      "answer": {
+        "en": "|6k|/2=3 square units.",
+        "hi": "|6k|/2=3 वर्ग इकाई।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find a unit vector along 2i−j+2k.",
+        "hi": "2i−j+2k की दिशा का इकाई सदिश निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Magnitude=√(4+1+4)=3.",
+          "hi": "परिमाण=√(4+1+4)=3।"
+        },
+        {
+          "en": "Divide each component by 3.",
+          "hi": "हर घटक को 3 से भाग दें।"
+        },
+        {
+          "en": "Its squared magnitude is 4/9+1/9+4/9=1.",
+          "hi": "इसके परिमाण का वर्ग 4/9+1/9+4/9=1 है।"
+        }
+      ],
+      "answer": {
+        "en": "(2/3)i−(1/3)j+(2/3)k.",
+        "hi": "(2/3)i−(1/3)j+(2/3)k।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find AB for A(1,2,3), B(4,0,5).",
+        "hi": "A(1,2,3), B(4,0,5) के लिए AB निकालें।"
+      },
+      "steps": [
+        {
+          "en": "AB=OB−OA.",
+          "hi": "AB=OB−OA।"
+        },
+        {
+          "en": "Subtract coordinates: (4−1,0−2,5−3)=(3,−2,2).",
+          "hi": "निर्देशांक घटाएँ: (4−1,0−2,5−3)=(3,−2,2)।"
+        },
+        {
+          "en": "Check the magnitude: √(3²+(−2)²+2²)=√17.",
+          "hi": "परिमाण जाँचें: √(3²+(−2)²+2²)=√17।"
+        }
+      ],
+      "answer": {
+        "en": "AB=3i−2j+2k; |AB|=√17.",
+        "hi": "AB=3i−2j+2k; |AB|=√17।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the angle between i+j and i+k.",
+        "hi": "i+j तथा i+k के बीच कोण निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Dot product=1; each magnitude is √2.",
+          "hi": "डॉट गुणनफल=1; दोनों परिमाण √2 हैं।"
+        },
+        {
+          "en": "cosθ=1/(√2·√2)=1/2.",
+          "hi": "cosθ=1/(√2·√2)=1/2।"
+        },
+        {
+          "en": "Take θ in [0,π].",
+          "hi": "θ को [0,π] में लें।"
+        }
+      ],
+      "answer": {
+        "en": "θ=π/3 rad=60°.",
+        "hi": "θ=π/3 rad=60°।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find scalar and vector projections of 2i+3j on i+j.",
+        "hi": "2i+3j का i+j पर अदिश और वेक्टर प्रक्षेप निकालें।"
+      },
+      "steps": [
+        {
+          "en": "a·b=2+3=5, |b|=√2, |b|²=2.",
+          "hi": "a·b=2+3=5, |b|=√2, |b|²=2।"
+        },
+        {
+          "en": "Scalar projection=(a·b)/|b|=5/√2.",
+          "hi": "अदिश प्रक्षेप=(a·b)/|b|=5/√2।"
+        },
+        {
+          "en": "Vector projection=[(a·b)/|b|²]b=(5/2)(i+j).",
+          "hi": "वेक्टर प्रक्षेप=[(a·b)/|b|²]b=(5/2)(i+j)।"
+        }
+      ],
+      "answer": {
+        "en": "Scalar: 5/√2; vector: (5/2)i+(5/2)j.",
+        "hi": "अदिश: 5/√2; वेक्टर: (5/2)i+(5/2)j।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find the area of triangle A(1,0,0), B(0,1,0), C(0,0,1).",
+        "hi": "A(1,0,0), B(0,1,0), C(0,0,1) के त्रिभुज का क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "AB=−i+j; AC=−i+k.",
+          "hi": "AB=−i+j; AC=−i+k।"
+        },
+        {
+          "en": "AB×AC=i+j+k; its magnitude is √3.",
+          "hi": "AB×AC=i+j+k; उसका परिमाण √3 है।"
+        },
+        {
+          "en": "Triangle area is half the cross-product magnitude.",
+          "hi": "त्रिभुज क्षेत्रफल क्रॉस गुणनफल के परिमाण का आधा है।"
+        }
+      ],
+      "answer": {
+        "en": "√3/2 square units.",
+        "hi": "√3/2 वर्ग इकाई।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which is a vector quantity?",
+        "hi": "कौन सी सदिश राशि है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Displacement",
+            "hi": "विस्थापन"
+          },
+          "reason": {
+            "en": "It needs magnitude and direction.",
+            "hi": "इसे परिमाण और दिशा दोनों चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass",
+            "hi": "द्रव्यमान"
+          },
+          "reason": {
+            "en": "Mass is a scalar.",
+            "hi": "द्रव्यमान अदिश है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Time",
+            "hi": "समय"
+          },
+          "reason": {
+            "en": "Time is a scalar in this course.",
+            "hi": "इस पाठ में समय अदिश है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Length",
+            "hi": "लंबाई"
+          },
+          "reason": {
+            "en": "Length alone has no direction.",
+            "hi": "केवल लंबाई की दिशा नहीं होती।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Magnitude of 2i−j+2k?",
+        "hi": "2i−j+2k का परिमाण?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "√(4+1+4)=3.",
+            "hi": "√(4+1+4)=3।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Signed component sums do not give magnitude.",
+            "hi": "चिह्नित घटकों का योग परिमाण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "9",
+            "hi": "9"
+          },
+          "reason": {
+            "en": "9 is the squared magnitude.",
+            "hi": "9 परिमाण का वर्ग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−3",
+            "hi": "−3"
+          },
+          "reason": {
+            "en": "Magnitude is never negative.",
+            "hi": "परिमाण ऋणात्मक नहीं होता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For position vectors a,b of A,B, AB equals…",
+        "hi": "A,B के स्थिति सदिश a,b हों तो AB है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "b−a",
+            "hi": "b−a"
+          },
+          "reason": {
+            "en": "Subtract initial from final position.",
+            "hi": "अंतिम स्थिति से प्रारंभिक स्थिति घटाएँ।"
+          }
+        },
+        {
+          "text": {
+            "en": "a−b",
+            "hi": "a−b"
+          },
+          "reason": {
+            "en": "This is BA, the opposite vector.",
+            "hi": "यह उलटा सदिश BA है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a+b",
+            "hi": "a+b"
+          },
+          "reason": {
+            "en": "Adding positions does not give AB.",
+            "hi": "स्थितियाँ जोड़ने से AB नहीं मिलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "a·b",
+            "hi": "a·b"
+          },
+          "reason": {
+            "en": "A dot product is scalar, not AB.",
+            "hi": "डॉट गुणनफल अदिश है, AB नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Direction cosines l,m,n satisfy…",
+        "hi": "दिक् कोसाइन l,m,n का संबंध है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "l²+m²+n²=1",
+            "hi": "l²+m²+n²=1"
+          },
+          "reason": {
+            "en": "They are components of a unit direction.",
+            "hi": "वे इकाई दिशा के घटक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "l+m+n=1",
+            "hi": "l+m+n=1"
+          },
+          "reason": {
+            "en": "Their squares, not their sum, normalize to 1.",
+            "hi": "वर्गों का योग 1 है, साधारण योग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "l²+m²+n²=0",
+            "hi": "l²+m²+n²=0"
+          },
+          "reason": {
+            "en": "That would force all to zero.",
+            "hi": "इससे सभी शून्य होंगे।"
+          }
+        },
+        {
+          "text": {
+            "en": "lmn=1",
+            "hi": "lmn=1"
+          },
+          "reason": {
+            "en": "There is no such general product identity.",
+            "hi": "ऐसी सामान्य गुणन पहचान नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Dot product of nonzero perpendicular vectors is…",
+        "hi": "अशून्य लंबवत सदिशों का डॉट गुणनफल है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "cos90°=0.",
+            "hi": "cos90°=0।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "1 is not forced by perpendicularity.",
+            "hi": "लंबवत होने से 1 नहीं मिलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Their magnitudes multiplied",
+            "hi": "परिमाणों का गुणनफल"
+          },
+          "reason": {
+            "en": "That is for parallel same-direction vectors.",
+            "hi": "वह समान दिशा वाले समानांतर सदिशों के लिए है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A perpendicular vector",
+            "hi": "एक लंबवत सदिश"
+          },
+          "reason": {
+            "en": "A dot product is a scalar.",
+            "hi": "डॉट गुणनफल अदिश है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is j×i?",
+        "hi": "j×i क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−k",
+            "hi": "−k"
+          },
+          "reason": {
+            "en": "Reversing i×j=k changes sign.",
+            "hi": "i×j=k का क्रम पलटने से चिह्न बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "k",
+            "hi": "k"
+          },
+          "reason": {
+            "en": "This is i×j, the reverse order.",
+            "hi": "यह उलटे क्रम i×j का मान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "A cross product is vector-valued.",
+            "hi": "क्रॉस गुणनफल सदिश है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "i and j are not parallel.",
+            "hi": "i और j समानांतर नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Triangle area from adjacent vectors a,b is…",
+        "hi": "आसन्न भुजा सदिश a,b वाले त्रिभुज का क्षेत्रफल है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "|a×b|/2",
+            "hi": "|a×b|/2"
+          },
+          "reason": {
+            "en": "A triangle is half its parallelogram.",
+            "hi": "त्रिभुज अपने समांतर चतुर्भुज का आधा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "|a×b|",
+            "hi": "|a×b|"
+          },
+          "reason": {
+            "en": "This gives the parallelogram area.",
+            "hi": "यह समांतर चतुर्भुज का क्षेत्रफल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a·b/2",
+            "hi": "a·b/2"
+          },
+          "reason": {
+            "en": "Dot product measures a cosine relation, not area.",
+            "hi": "डॉट गुणनफल cosine संबंध है, क्षेत्रफल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "|a|+|b|",
+            "hi": "|a|+|b|"
+          },
+          "reason": {
+            "en": "Adding lengths cannot give area.",
+            "hi": "लंबाइयाँ जोड़ने से क्षेत्रफल नहीं मिलता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Scalar projection of 3i+4j on i is…",
+        "hi": "3i+4j का i पर अदिश प्रक्षेप है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "Dot with the unit vector i gives 3.",
+            "hi": "इकाई सदिश i से डॉट करने पर 3।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "5 is the full vector magnitude.",
+            "hi": "5 पूरे सदिश का परिमाण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "4 is the j component.",
+            "hi": "4, j घटक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3i",
+            "hi": "3i"
+          },
+          "reason": {
+            "en": "This is a vector projection, not scalar.",
+            "hi": "यह वेक्टर प्रक्षेप है, अदिश नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Midpoint position vector of a and b is…",
+        "hi": "स्थिति सदिश a,b वाले सिरों के मध्यबिंदु का स्थिति सदिश है…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(a+b)/2",
+            "hi": "(a+b)/2"
+          },
+          "reason": {
+            "en": "Internal division ratio is 1:1.",
+            "hi": "आंतरिक विभाजन अनुपात 1:1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a+b",
+            "hi": "a+b"
+          },
+          "reason": {
+            "en": "The required averaging factor is missing.",
+            "hi": "औसत का गुणक छूट गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "(b−a)/2",
+            "hi": "(b−a)/2"
+          },
+          "reason": {
+            "en": "This is half a displacement, not the midpoint position.",
+            "hi": "यह आधा विस्थापन है, मध्यबिंदु की स्थिति नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2(a+b)",
+            "hi": "2(a+b)"
+          },
+          "reason": {
+            "en": "This multiplies instead of averaging.",
+            "hi": "यह औसत के बजाय गुणा करता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which statement about the zero vector is correct?",
+        "hi": "शून्य सदिश के बारे में कौन सा कथन सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It has magnitude 0 and no definite direction",
+            "hi": "परिमाण 0 और निश्चित दिशा नहीं"
+          },
+          "reason": {
+            "en": "Direction cannot be normalized from zero components.",
+            "hi": "शून्य घटकों से दिशा सामान्यीकृत नहीं होती।"
+          }
+        },
+        {
+          "text": {
+            "en": "It has magnitude 1",
+            "hi": "इसका परिमाण 1 है"
+          },
+          "reason": {
+            "en": "That describes a unit vector, not zero.",
+            "hi": "यह इकाई सदिश का परिमाण है, शून्य का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Its unit vector is always i",
+            "hi": "इसका इकाई सदिश सदा i है"
+          },
+          "reason": {
+            "en": "Division by its zero magnitude is undefined.",
+            "hi": "शून्य परिमाण से भाग अपरिभाषित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It has a unique 90° angle with every vector",
+            "hi": "हर सदिश से इसका निश्चित कोण 90° है"
+          },
+          "reason": {
+            "en": "Its direction and hence angle are undefined.",
+            "hi": "इसकी दिशा और इसलिए कोण अपरिभाषित है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish scalar and vector using two examples.",
+        "hi": "2 उदाहरणों से अदिश और सदिश में अंतर करें।"
+      },
+      "answer": {
+        "en": "Mass needs only magnitude; displacement needs magnitude and direction. Equal vector magnitudes alone do not imply equal vectors.",
+        "hi": "द्रव्यमान में केवल परिमाण; विस्थापन में परिमाण और दिशा चाहिए। केवल बराबर परिमाण से सदिश बराबर नहीं होते।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the unit vector along i+2j+2k.",
+        "hi": "i+2j+2k की दिशा में इकाई सदिश निकालें।"
+      },
+      "answer": {
+        "en": "Magnitude 3; unit vector (i+2j+2k)/3.",
+        "hi": "परिमाण 3; इकाई सदिश (i+2j+2k)/3।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the point internally dividing A(1,0,0),B(4,3,0) in ratio 1:2.",
+        "hi": "A(1,0,0),B(4,3,0) को 1:2 में आंतरिक बाँटने वाला बिंदु निकालें।"
+      },
+      "answer": {
+        "en": "P=(2A+B)/3=(2,1,0).",
+        "hi": "P=(2A+B)/3=(2,1,0)।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the angle between 2i and −3i.",
+        "hi": "2i और −3i के बीच कोण निकालें।"
+      },
+      "answer": {
+        "en": "Dot product −6, product of magnitudes 6, hence cosθ=−1 and θ=180°.",
+        "hi": "डॉट गुणनफल −6, परिमाणों का गुणनफल 6; cosθ=−1 और θ=180°।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find (i+2j)×(3i+j).",
+        "hi": "(i+2j)×(3i+j) निकालें।"
+      },
+      "answer": {
+        "en": "The k component is 1×1−2×3=−5, so the result is −5k.",
+        "hi": "k घटक 1×1−2×3=−5 है; परिणाम −5k।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the area of a parallelogram with adjacent vectors 3i and 4j.",
+        "hi": "आसन्न सदिश 3i तथा 4j वाले समांतर चतुर्भुज का क्षेत्रफल निकालें।"
+      },
+      "answer": {
+        "en": "Cross product 12k; magnitude 12 square units.",
+        "hi": "क्रॉस गुणनफल 12k; परिमाण 12 वर्ग इकाई।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Keep dot products scalar and cross products vector; do not reverse a cross product without changing sign or normalize the zero vector.",
+    "hi": "डॉट गुणनफल अदिश और क्रॉस गुणनफल सदिश रखें; क्रॉस का क्रम पलटने पर चिह्न बदलें; शून्य सदिश सामान्यीकृत न करें।"
+  },
+  "revision": [
+    {
+      "en": "Magnitude is the square root of the component squares.",
+      "hi": "परिमाण घटक वर्गों के योग का वर्गमूल है।"
+    },
+    {
+      "en": "AB=b−a.",
+      "hi": "AB=b−a है।"
+    },
+    {
+      "en": "Dot product uses cosine and gives a scalar.",
+      "hi": "डॉट में cosine और परिणाम अदिश है।"
+    },
+    {
+      "en": "Cross product uses sine and right-hand direction.",
+      "hi": "क्रॉस में sine और दाएँ हाथ की दिशा है।"
+    },
+    {
+      "en": "Triangle area is half the cross-product magnitude.",
+      "hi": "त्रिभुज क्षेत्रफल क्रॉस परिमाण का आधा है।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Components → magnitude/unit vector → direction cosines → dot/projection → cross/area.",
+    "hi": "घटक → परिमाण/इकाई सदिश → दिक् कोसाइन → डॉट/प्रक्षेप → क्रॉस/क्षेत्रफल।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class XII, Chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh204.pdf"
+    },
+    {
+      "title": "UPMSP Mathematics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    }
+  ],
+  "engine": "twelve-math",
+  "scenes": []
+}

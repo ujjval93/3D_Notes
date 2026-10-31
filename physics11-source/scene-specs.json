@@ -1,0 +1,1248 @@
+[
+  {
+    "number": 1,
+    "id": "physics11-01",
+    "title": {
+      "en": "Units and Measurements",
+      "hi": "मात्रक और मापन"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-01-1",
+        "title": {
+          "en": "Significant figures",
+          "hi": "सार्थक अंक"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Measured length",
+              "hi": "मापी लंबाई"
+            },
+            "min": 1,
+            "max": 99.99,
+            "step": 0.01,
+            "initial": 12.34,
+            "unit": "cm"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-01-2",
+        "title": {
+          "en": "Unit conversion",
+          "hi": "मात्रक परिवर्तन"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Length",
+              "hi": "लंबाई"
+            },
+            "min": 10,
+            "max": 200,
+            "step": 10,
+            "initial": 100,
+            "unit": "cm"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-01-3",
+        "title": {
+          "en": "Dimensions and period",
+          "hi": "विमा और आवर्तकाल"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Pendulum length",
+              "hi": "लोलक की लंबाई"
+            },
+            "min": 0.2,
+            "max": 2,
+            "step": 0.1,
+            "initial": 1,
+            "unit": "m"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "id": "physics11-02",
+    "title": {
+      "en": "Motion in a Straight Line",
+      "hi": "सरल रेखा में गति"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-02-1",
+        "title": {
+          "en": "Uniform motion",
+          "hi": "एकसमान गति"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 3
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Velocity",
+              "hi": "वेग"
+            },
+            "min": -5,
+            "max": 5,
+            "step": 1,
+            "initial": 2,
+            "unit": "m/s"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-02-2",
+        "title": {
+          "en": "Uniform acceleration",
+          "hi": "एकसमान त्वरण"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 4
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Acceleration",
+              "hi": "त्वरण"
+            },
+            "min": -2,
+            "max": 4,
+            "step": 0.5,
+            "initial": 1,
+            "unit": "m/s²"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-02-3",
+        "title": {
+          "en": "Area under velocity graph",
+          "hi": "वेग आलेख के नीचे क्षेत्रफल"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 5
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Velocity",
+              "hi": "वेग"
+            },
+            "min": 0,
+            "max": 8,
+            "step": 1,
+            "initial": 4,
+            "unit": "m/s"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "id": "physics11-03",
+    "title": {
+      "en": "Motion in a Plane",
+      "hi": "समतल में गति"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-03-1",
+        "title": {
+          "en": "Projectile motion",
+          "hi": "प्रक्षेप्य गति"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 6
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Launch angle",
+              "hi": "प्रक्षेपण कोण"
+            },
+            "min": 10,
+            "max": 80,
+            "step": 5,
+            "initial": 45,
+            "unit": "°"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-03-2",
+        "title": {
+          "en": "Vector addition",
+          "hi": "सदिश योग"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 7
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Angle between vectors",
+              "hi": "सदिशों के बीच कोण"
+            },
+            "min": 0,
+            "max": 180,
+            "step": 10,
+            "initial": 60,
+            "unit": "°"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-03-3",
+        "title": {
+          "en": "Circular motion",
+          "hi": "वृत्तीय गति"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 8
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Radius",
+              "hi": "त्रिज्या"
+            },
+            "min": 0.5,
+            "max": 3,
+            "step": 0.25,
+            "initial": 1,
+            "unit": "m"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "id": "physics11-04",
+    "title": {
+      "en": "Laws of Motion",
+      "hi": "गति के नियम"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-04-1",
+        "title": {
+          "en": "Net force and acceleration",
+          "hi": "परिणामी बल और त्वरण"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 9
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Net force",
+              "hi": "परिणामी बल"
+            },
+            "min": 0,
+            "max": 20,
+            "step": 1,
+            "initial": 10,
+            "unit": "N"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-04-2",
+        "title": {
+          "en": "Static and kinetic friction",
+          "hi": "स्थैतिक और गतिज घर्षण"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 10
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Applied force",
+              "hi": "लगाया बल"
+            },
+            "min": 0,
+            "max": 20,
+            "step": 1,
+            "initial": 5,
+            "unit": "N"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-04-3",
+        "title": {
+          "en": "Banked road",
+          "hi": "ढलवाँ सड़क"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 11
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Bank angle",
+              "hi": "ढाल कोण"
+            },
+            "min": 5,
+            "max": 45,
+            "step": 5,
+            "initial": 20,
+            "unit": "°"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "id": "physics11-05",
+    "title": {
+      "en": "Work, Energy and Power",
+      "hi": "कार्य, ऊर्जा और शक्ति"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-05-1",
+        "title": {
+          "en": "Work at an angle",
+          "hi": "कोण पर किया कार्य"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 12
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Force angle",
+              "hi": "बल का कोण"
+            },
+            "min": 0,
+            "max": 180,
+            "step": 10,
+            "initial": 30,
+            "unit": "°"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-05-2",
+        "title": {
+          "en": "Spring energy",
+          "hi": "कमानी की ऊर्जा"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 13
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Extension",
+              "hi": "प्रसार"
+            },
+            "min": 0,
+            "max": 0.5,
+            "step": 0.05,
+            "initial": 0.2,
+            "unit": "m"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-05-3",
+        "title": {
+          "en": "Elastic collision",
+          "hi": "प्रत्यास्थ टक्कर"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 14
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Second mass",
+              "hi": "दूसरा द्रव्यमान"
+            },
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "initial": 2,
+            "unit": "kg"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "id": "physics11-06",
+    "title": {
+      "en": "System of Particles and Rotational Motion",
+      "hi": "कणों के निकाय तथा घूर्णी गति"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-06-1",
+        "title": {
+          "en": "Centre of mass",
+          "hi": "द्रव्यमान केंद्र"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 15
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Right mass",
+              "hi": "दायाँ द्रव्यमान"
+            },
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "initial": 2,
+            "unit": "kg"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-06-2",
+        "title": {
+          "en": "Torque",
+          "hi": "बल आघूर्ण"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 16
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Force angle",
+              "hi": "बल का कोण"
+            },
+            "min": 0,
+            "max": 180,
+            "step": 10,
+            "initial": 90,
+            "unit": "°"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-06-3",
+        "title": {
+          "en": "Moment of inertia",
+          "hi": "जड़त्व आघूर्ण"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 17
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Radius",
+              "hi": "त्रिज्या"
+            },
+            "min": 0.2,
+            "max": 1,
+            "step": 0.1,
+            "initial": 0.5,
+            "unit": "m"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "id": "physics11-07",
+    "title": {
+      "en": "Gravitation",
+      "hi": "गुरुत्वाकर्षण"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-07-1",
+        "title": {
+          "en": "Gravity with altitude",
+          "hi": "ऊँचाई के साथ गुरुत्व"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 18
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Height in Earth radii",
+              "hi": "पृथ्वी त्रिज्या में ऊँचाई"
+            },
+            "min": 0,
+            "max": 3,
+            "step": 0.25,
+            "initial": 1,
+            "unit": "R"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-07-2",
+        "title": {
+          "en": "Circular orbit",
+          "hi": "वृत्तीय कक्षा"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 19
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Orbital radius",
+              "hi": "कक्षीय त्रिज्या"
+            },
+            "min": 1,
+            "max": 4,
+            "step": 0.25,
+            "initial": 2,
+            "unit": "R"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-07-3",
+        "title": {
+          "en": "Escape speed",
+          "hi": "पलायन चाल"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 20
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Launch radius",
+              "hi": "प्रक्षेपण त्रिज्या"
+            },
+            "min": 1,
+            "max": 4,
+            "step": 0.25,
+            "initial": 1,
+            "unit": "R"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "id": "physics11-08",
+    "title": {
+      "en": "Mechanical Properties of Solids",
+      "hi": "ठोसों के यांत्रिक गुण"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-08-1",
+        "title": {
+          "en": "Stress and strain",
+          "hi": "प्रतिबल और विकृति"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 21
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Force",
+              "hi": "बल"
+            },
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "initial": 500,
+            "unit": "N"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-08-2",
+        "title": {
+          "en": "Stretching a wire",
+          "hi": "तार का प्रसार"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 22
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Cross-sectional area",
+              "hi": "अनुप्रस्थ क्षेत्रफल"
+            },
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "initial": 2,
+            "unit": "mm²"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-08-3",
+        "title": {
+          "en": "Bulk compression",
+          "hi": "आयतन संपीड़न"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 23
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Pressure increase",
+              "hi": "दाब वृद्धि"
+            },
+            "min": 10,
+            "max": 100,
+            "step": 10,
+            "initial": 50,
+            "unit": "MPa"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "id": "physics11-09",
+    "title": {
+      "en": "Mechanical Properties of Fluids",
+      "hi": "तरलों के यांत्रिक गुण"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-09-1",
+        "title": {
+          "en": "Hydrostatic pressure",
+          "hi": "द्रवस्थैतिक दाब"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 24
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Water depth",
+              "hi": "जल की गहराई"
+            },
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "initial": 5,
+            "unit": "m"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-09-2",
+        "title": {
+          "en": "Continuity",
+          "hi": "सांतत्य"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 25
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Outlet area",
+              "hi": "निर्गम क्षेत्रफल"
+            },
+            "min": 1,
+            "max": 4,
+            "step": 0.5,
+            "initial": 2,
+            "unit": "cm²"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-09-3",
+        "title": {
+          "en": "Bernoulli relation",
+          "hi": "बर्नूली संबंध"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 26
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Outlet speed",
+              "hi": "निर्गम चाल"
+            },
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "initial": 5,
+            "unit": "m/s"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "id": "physics11-10",
+    "title": {
+      "en": "Thermal Properties of Matter",
+      "hi": "पदार्थ के तापीय गुण"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-10-1",
+        "title": {
+          "en": "Linear expansion",
+          "hi": "रैखिक प्रसार"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 27
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Temperature rise",
+              "hi": "ताप वृद्धि"
+            },
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "initial": 50,
+            "unit": "K"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-10-2",
+        "title": {
+          "en": "Calorimetry",
+          "hi": "कैलोरीमिति"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 28
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Hot water mass",
+              "hi": "गर्म जल का द्रव्यमान"
+            },
+            "min": 0.1,
+            "max": 1,
+            "step": 0.1,
+            "initial": 0.5,
+            "unit": "kg"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-10-3",
+        "title": {
+          "en": "Conduction",
+          "hi": "चालन"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 29
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Thermal conductivity",
+              "hi": "ऊष्मा चालकता"
+            },
+            "min": 10,
+            "max": 100,
+            "step": 10,
+            "initial": 50,
+            "unit": "W/(m K)"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "id": "physics11-11",
+    "title": {
+      "en": "Thermodynamics",
+      "hi": "ऊष्मागतिकी"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-11-1",
+        "title": {
+          "en": "Isobaric work",
+          "hi": "समदाबी कार्य"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 30
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Final volume",
+              "hi": "अंतिम आयतन"
+            },
+            "min": 1,
+            "max": 5,
+            "step": 0.5,
+            "initial": 3,
+            "unit": "L"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-11-2",
+        "title": {
+          "en": "Isothermal expansion",
+          "hi": "समतापी प्रसार"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 31
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Volume ratio",
+              "hi": "आयतन अनुपात"
+            },
+            "min": 1,
+            "max": 4,
+            "step": 0.5,
+            "initial": 2,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-11-3",
+        "title": {
+          "en": "Heat engine limit",
+          "hi": "ऊष्मा इंजन की सीमा"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 32
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Cold reservoir temperature",
+              "hi": "ठंडे भंडार का ताप"
+            },
+            "min": 200,
+            "max": 500,
+            "step": 25,
+            "initial": 300,
+            "unit": "K"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "id": "physics11-12",
+    "title": {
+      "en": "Kinetic Theory",
+      "hi": "अणुगति सिद्धांत"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-12-1",
+        "title": {
+          "en": "Ideal gas pressure",
+          "hi": "आदर्श गैस दाब"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 33
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Temperature",
+              "hi": "ताप"
+            },
+            "min": 100,
+            "max": 600,
+            "step": 50,
+            "initial": 300,
+            "unit": "K"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-12-2",
+        "title": {
+          "en": "Molecular rms speed",
+          "hi": "अणुओं की वर्ग माध्य मूल चाल"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 34
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Temperature",
+              "hi": "ताप"
+            },
+            "min": 100,
+            "max": 600,
+            "step": 50,
+            "initial": 300,
+            "unit": "K"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-12-3",
+        "title": {
+          "en": "Equipartition",
+          "hi": "समविभाजन"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 35
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Degrees of freedom",
+              "hi": "स्वतंत्रता की कोटि"
+            },
+            "min": 3,
+            "max": 5,
+            "step": 2,
+            "initial": 3,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "id": "physics11-13",
+    "title": {
+      "en": "Oscillations",
+      "hi": "दोलन"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-13-1",
+        "title": {
+          "en": "Mass and spring",
+          "hi": "द्रव्यमान और कमानी"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 36
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Mass",
+              "hi": "द्रव्यमान"
+            },
+            "min": 0.5,
+            "max": 5,
+            "step": 0.5,
+            "initial": 2,
+            "unit": "kg"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-13-2",
+        "title": {
+          "en": "Simple pendulum",
+          "hi": "सरल लोलक"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 37
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Length",
+              "hi": "लंबाई"
+            },
+            "min": 0.2,
+            "max": 2,
+            "step": 0.1,
+            "initial": 1,
+            "unit": "m"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-13-3",
+        "title": {
+          "en": "SHM energy",
+          "hi": "सरल आवर्त गति की ऊर्जा"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 38
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Amplitude",
+              "hi": "आयाम"
+            },
+            "min": 0.1,
+            "max": 0.5,
+            "step": 0.05,
+            "initial": 0.3,
+            "unit": "m"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "id": "physics11-14",
+    "title": {
+      "en": "Waves",
+      "hi": "तरंगें"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "phy11-14-1",
+        "title": {
+          "en": "Travelling wave",
+          "hi": "प्रगामी तरंग"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 39
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Frequency",
+              "hi": "आवृत्ति"
+            },
+            "min": 1,
+            "max": 5,
+            "step": 0.5,
+            "initial": 2,
+            "unit": "Hz"
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "phy11-14-2",
+        "title": {
+          "en": "Standing string wave",
+          "hi": "तनी डोरी की अप्रगामी तरंग"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 40
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Harmonic number",
+              "hi": "हार्मोनिक संख्या"
+            },
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "initial": 2,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "phy11-14-3",
+        "title": {
+          "en": "Beats",
+          "hi": "विस्पंद"
+        },
+        "kind": "eleven-physics",
+        "parameters": {
+          "mode": 41
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Second frequency",
+              "hi": "दूसरी आवृत्ति"
+            },
+            "min": 10,
+            "max": 14,
+            "step": 1,
+            "initial": 12,
+            "unit": "Hz"
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,1052 @@
+{
+  "number": 11,
+  "id": "physics12-11",
+  "title": {
+    "en": "Dual Nature of Radiation and Matter",
+    "hi": "विकिरण तथा द्रव्य की द्वैत प्रकृति"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Electron emission and surface energy",
+        "hi": "इलेक्ट्रॉन उत्सर्जन और पृष्ठ ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "Electrons in a metal are not all free to escape its surface. A minimum energy, the work function, must be supplied. Thermionic, field and photoelectric emission supply or enable escape in different ways. Work function is a property of the prepared surface, not the mass or total number of electrons in the sample.",
+          "hi": "धातु में चालन इलेक्ट्रॉन (Conduction electrons) गति कर सकते हैं, लेकिन इसका अर्थ यह नहीं कि वे बिना ऊर्जा पाए सतह छोड़ देंगे। धातु की सतह पर आकर्षण के कारण बाहर निकलने के लिए न्यूनतम ऊर्जा चाहिए। इस न्यूनतम ऊर्जा को कार्य फलन (Work function), φ कहते हैं। इसका मान धातु और सतह की दशा पर निर्भर करता है। इलेक्ट्रॉन वोल्ट (Electron volt), eV ऊर्जा का सुविधाजनक मात्रक है; 1 eV=1.602×10^-19 J। तापायनिक उत्सर्जन में गर्म करने से इलेक्ट्रॉनों को ऊर्जा मिलती है। क्षेत्र उत्सर्जन में प्रबल विद्युत क्षेत्र सतह से निकलने में सहायता करता है। प्रकाशवैद्युत उत्सर्जन में उपयुक्त आवृत्ति का प्रकाश आवश्यक ऊर्जा देता है। इन विधियों को केवल एक ही घटना के अलग नाम न मानें। किसी धातु के अधिक द्रव्यमान का अर्थ बड़ा कार्य फलन नहीं होता। नमूना बड़ा करने पर उपलब्ध इलेक्ट्रॉनों की संख्या बढ़ सकती है, पर प्रति इलेक्ट्रॉन की न्यूनतम निष्क्रमण ऊर्जा उसी आधार पर नहीं बढ़ती।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Keep energy, charge and potential difference distinct when converting eV to joules.",
+          "hi": "eV को जूल में बदलते समय ऊर्जा, आवेश और विभवांतर को अलग रखें। कार्य फलन और इलेक्ट्रॉन की निर्गत गतिज ऊर्जा दोनों ऊर्जा हैं, जबकि निरोधी विभव वोल्ट में लिखा जाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is eV a unit of charge?",
+          "hi": "क्या eV आवेश का मात्रक है?"
+        },
+        "answer": {
+          "en": "No. It is energy gained by charge e across 1 V.",
+          "hi": "नहीं। यह e आवेश द्वारा 1 V विभवांतर पार करने पर प्राप्त ऊर्जा है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "What the photoelectric experiment measures",
+        "hi": "प्रकाशवैद्युत प्रयोग क्या मापता है"
+      },
+      "paragraphs": [
+        {
+          "en": "An illuminated emitter and a collector in an evacuated tube allow current to be measured as the collector potential is varied. The observed current counts collected emitted charge per time. It depends both on emission and collection; therefore a current reading is not by itself a direct measurement of the maximum electron energy.",
+          "hi": "प्रकाशवैद्युत प्रयोग में निर्वात नली के अंदर उत्सर्जक पटल (Emitter) पर प्रकाश डालते हैं और दूसरा पटल उत्सर्जित इलेक्ट्रॉनों को संग्रहीत करता है। परिपथ में सूक्ष्म धारा मापी जाती है। संग्राहक को उत्सर्जक से धनात्मक रखने पर इलेक्ट्रॉन उसकी ओर आकर्षित होते हैं। विभव पर्याप्त बढ़ने पर लगभग सभी उपलब्ध प्रकाशइलेक्ट्रॉन एकत्र हो जाते हैं और धारा संतृप्ति मान तक पहुँचती है। यह संतृप्त धारा (Saturation current) प्रति समय एकत्र इलेक्ट्रॉन संख्या से जुड़ी है। अब संग्राहक को ऋणात्मक करने पर वह इलेक्ट्रॉनों का विरोध करता है। कुछ कम ऊर्जा वाले इलेक्ट्रॉन वापस लौट जाते हैं, इसलिए धारा घटती है। सबसे तेज इलेक्ट्रॉन भी न पहुँचें तो धारा शून्य हो जाती है। प्रयोग में प्रकाश की आवृत्ति, तीव्रता और विभव अलग-अलग नियंत्रित करने चाहिए। एक साथ सभी बदलने पर कारण पहचानना कठिन होगा। निर्वात का उद्देश्य गैस अणुओं से बार-बार टकराव घटाना है। धारा केवल निकले इलेक्ट्रॉनों पर नहीं, उन्हें संग्रहीत करने की दशा पर भी निर्भर करती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Compare one control at a time, and identify which metal surface is illuminated.",
+          "hi": "एक समय पर 1 नियंत्रक बदलकर तुलना करें। धारा का बढ़ना इलेक्ट्रॉन की अधिकतम गतिज ऊर्जा बढ़ने का प्रमाण नहीं है; इलेक्ट्रॉन की संख्या और ऊर्जा के लिए अलग प्रेक्षण चाहिए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does a sufficiently positive collector give saturation?",
+          "hi": "पर्याप्त धनात्मक संग्राहक पर संतृप्ति क्यों मिलती है?"
+        },
+        "answer": {
+          "en": "Nearly all emitted electrons are then collected; raising collection voltage cannot create more emitted electrons.",
+          "hi": "लगभग सभी उत्सर्जित इलेक्ट्रॉन मिल जाते हैं; संग्राहक विभव बढ़ाना नए उत्सर्जित इलेक्ट्रॉन नहीं बनाता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Threshold frequency and prompt emission",
+        "hi": "देहली आवृत्ति और तात्कालिक उत्सर्जन"
+      },
+      "paragraphs": [
+        {
+          "en": "Every prepared metal surface has a threshold frequency below which the ordinary single-photon photoelectric effect is absent. Increasing the intensity below threshold does not compensate for insufficient photon energy. Above threshold, emission begins without a measurable accumulation delay on the usual experimental time scale.",
+          "hi": "प्रकाशवैद्युत प्रभाव का महत्वपूर्ण परिणाम देहली आवृत्ति (Threshold frequency), ν0 है। किसी निर्धारित सतह से सामान्य एकल-फोटॉन प्रक्रिया द्वारा उत्सर्जन तभी होता है जब आपतित आवृत्ति देहली के बराबर या उससे अधिक हो। देहली से कम आवृत्ति पर प्रकाश बहुत तीव्र कर देने से भी साधारण प्रयोग में उत्सर्जन शुरू नहीं होता। इससे स्पष्ट होता है कि इलेक्ट्रॉन केवल लहर की कुल ऊर्जा धीरे-धीरे जमा करके नहीं निकल रहा है। देहली से ऊपर प्रकाश पड़ते ही उत्सर्जन प्रयोग की सामान्य समय सीमा में लगभग तुरंत शुरू होता है। बहुत मंद उपयुक्त प्रकाश पर भी लंबी ऊर्जा-संचय प्रतीक्षा नहीं मिलती। प्रकाश की आवृत्ति और उसकी तीव्रता अलग बातें हैं। नीले प्रकाश की आवृत्ति लाल से अधिक होती है, लेकिन कोई नीला स्रोत आवश्यक रूप से अधिक तीव्र नहीं होगा। देहली के ठीक बराबर ऊर्जा पर आदर्श अधिकतम गतिज ऊर्जा शून्य है। प्रेक्षित सतह की अशुद्धता, संपर्क विभव और यंत्र की सीमा वास्तविक मापन को प्रभावित कर सकती हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The textbook result concerns the ordinary single-photon regime, not specialised extreme-intensity multiphoton experiments.",
+          "hi": "यह नियम पाठ्यपुस्तक के साधारण एकल-फोटॉन प्रयोग के लिए है। अत्यधिक तीव्र लेजर की विशेष बहुफोटॉन प्रक्रियाओं को इस अध्याय के सामान्य निष्कर्ष के स्थान पर न लगाएँ।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can stronger light below threshold produce ordinary single-photon emission?",
+          "hi": "देहली से कम आवृत्ति का अधिक तीव्र प्रकाश सामान्य एकल-फोटॉन उत्सर्जन करेगा?"
+        },
+        "answer": {
+          "en": "No; the energy of each photon is still too small.",
+          "hi": "नहीं; हर फोटॉन की ऊर्जा अभी भी कम है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Photons and Einstein’s energy balance",
+        "hi": "फोटॉन और आइंस्टाइन का ऊर्जा संतुलन"
+      },
+      "paragraphs": [
+        {
+          "en": "A photon carries energy hν and, in vacuum, momentum h/λ. In the basic photoelectric model one photon transfers its energy to one electron. The work function accounts for escape; the greatest remainder becomes maximum kinetic energy. Other electrons can emerge with less energy because of their initial states and internal losses.",
+          "hi": "आइंस्टाइन ने प्रकाश ऊर्जा को फोटॉन (Photon) नाम के पैकेटों के रूप में ग्रहण किया। प्रत्येक फोटॉन की ऊर्जा E=hν है, जहाँ h प्लांक नियतांक है। निर्वात में E=hc/λ और संवेग p=h/λ भी लिखते हैं। सामान्य प्रकाशवैद्युत मॉडल में 1 फोटॉन अपनी ऊर्जा 1 इलेक्ट्रॉन को देता है। पहले कार्य फलन के बराबर ऊर्जा धातु छोड़ने में लगती है। जो अधिकतम ऊर्जा बचती है वह इलेक्ट्रॉन की अधिकतम गतिज ऊर्जा Kmax बनती है। इसलिए hν=φ+Kmax। यह ऊर्जा संरक्षण का कथन है। सभी निकले इलेक्ट्रॉनों की ऊर्जा समान नहीं होती; वे अलग अवस्थाओं से आ सकते हैं और अंदर ऊर्जा खो सकते हैं। इसी कारण समीकरण में अधिकतम शब्द आवश्यक है। एक फोटॉन की ऊर्जा को प्रकाश पुंज की कुल ऊर्जा न समझें। समान आवृत्ति पर फोटॉनों की संख्या बढ़ाने से कुल ऊर्जा बढ़ती है, लेकिन हर फोटॉन की व्यक्तिगत ऊर्जा hν नहीं बदलती। निर्वात तरंगदैर्घ्य लेते समय c का उपयोग करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use φ and hν in the same energy unit before subtracting them.",
+          "hi": "घटाने से पहले φ और hν को एक ही ऊर्जा मात्रक में लिखें। eV में दी ऊर्जा को बिना परिवर्तन J में लिखे h से नहीं जोड़ सकते; hc≈1240 eV nm उपयोग करने पर λ को nm में रखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does Einstein’s equation use maximum kinetic energy?",
+          "hi": "आइंस्टाइन समीकरण में अधिकतम गतिज ऊर्जा क्यों है?"
+        },
+        "answer": {
+          "en": "Electrons can lose different amounts before leaving; the fastest ones set the energy upper limit.",
+          "hi": "बाहर निकलने से पहले अलग ऊर्जा हानियाँ हो सकती हैं; सबसे तेज इलेक्ट्रॉन ऊपरी सीमा देते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Stopping potential and straight-line graphs",
+        "hi": "निरोधी विभव और सरल रेखीय आलेख"
+      },
+      "paragraphs": [
+        {
+          "en": "The magnitude V0 of stopping potential obeys eV0=Kmax. The graph of V0 against frequency is a straight line of slope h/e above threshold. The frequency intercept is ν0, while changing the metal changes the work function and shifts the line without changing h/e.",
+          "hi": "निरोधी विभव (Stopping potential) वह विपरीत विभव है जो सबसे अधिक ऊर्जा वाले प्रकाशइलेक्ट्रॉन को भी संग्राहक तक पहुँचने से रोकता है। इसके परिमाण V0 के लिए eV0=Kmax होता है। e यहाँ मूल आवेश का धनात्मक परिमाण है। वास्तविक संग्राहक विभव ऋणात्मक रखा गया हो सकता है, पर V0 को सामान्यतः धनात्मक परिमाण के रूप में लिखते हैं। आइंस्टाइन समीकरण से V0=(h/e)ν−φ/e मिलता है। इसलिए V0 बनाम ν का आलेख देहली के ऊपर सरल रेखा है। ढाल h/e है और आवृत्ति अक्ष पर प्रतिच्छेद ν0=φ/h है। धातु बदलने पर कार्य फलन और प्रतिच्छेद बदलते हैं; सार्वत्रिक h बदलता नहीं। यदि ऊर्ध्व अक्ष Kmax हो तो ढाल h होगी, h/e नहीं। आलेख का अक्ष और मात्रक पढ़ना इसलिए जरूरी है। शून्य से नीचे निकला बीजीय Kmax उत्सर्जित इलेक्ट्रॉन की ऋणात्मक गतिज ऊर्जा नहीं बताता; उस दशा में सामान्य उत्सर्जन ही नहीं होता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A stopping potential of 2 V corresponds to Kmax=2 eV, not 2 J.",
+          "hi": "2 V निरोधी विभव पर Kmax=2 eV है, 2 J नहीं। निरोधी विभव से गति निकालनी हो तो पहले ऊर्जा को जूल में बदलें और फिर गैर-सापेक्षिक सीमा में K=mv²/2 का प्रयोग करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the slope of Kmax versus ν?",
+          "hi": "Kmax बनाम ν की ढाल क्या है?"
+        },
+        "answer": {
+          "en": "h, when energy is expressed in joules and frequency in hertz.",
+          "hi": "ऊर्जा जूल और आवृत्ति हर्ट्ज में हो तो h।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Intensity, frequency and the limits of wave theory",
+        "hi": "तीव्रता, आवृत्ति और तरंग सिद्धांत की सीमा"
+      },
+      "paragraphs": [
+        {
+          "en": "At fixed frequency above threshold, more intensity generally means more arriving photons and a higher saturation current, but not a higher stopping potential. Frequency controls energy per photon. Wave behaviour remains necessary for interference and diffraction; the photoelectric effect does not erase that evidence.",
+          "hi": "उचित आवृत्ति स्थिर रखते हुए प्रकाश तीव्रता (Intensity) बढ़ाएँ तो सामान्यतः प्रति समय अधिक फोटॉन सतह पर पड़ते हैं। उपयुक्त व्यवस्था में अधिक इलेक्ट्रॉन निकलते हैं और संतृप्त धारा बढ़ती है। प्रत्येक फोटॉन की ऊर्जा वही hν रहने से Kmax तथा निरोधी विभव नहीं बढ़ते। अब तीव्रता की तुलना में आवृत्ति बढ़ाने का प्रभाव अलग है। अधिक आवृत्ति हर फोटॉन की ऊर्जा बढ़ाती है, इसलिए देहली के ऊपर अधिकतम गतिज ऊर्जा बढ़ती है। सरल प्रयोग के बाहर धारा के साथ आवृत्ति का संबंध सतह की दक्षता और आपतित फोटॉन दर पर निर्भर हो सकता है; बिना शर्त उसे समानुपाती न मानें। शास्त्रीय तरंग मॉडल प्रकाश की अनेक घटनाएँ अच्छी तरह बताता है, पर देहली, तात्कालिक उत्सर्जन और ऊर्जा-आवृत्ति संबंध को अकेले नहीं समझाता। इसका अर्थ यह नहीं कि प्रकाश का तरंग व्यवहार गलत हो गया। व्यतिकरण और विवर्तन अब भी तरंगात्मक प्रमाण हैं। उपयुक्त प्रयोग अलग पहलू प्रकट करते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Say explicitly what is held fixed before describing a change in current or energy.",
+          "hi": "परिवर्तन समझाने से पहले कौन-सी राशि स्थिर है, लिखें। केवल अधिक प्रकाश कहने से स्पष्ट नहीं होता कि तीव्रता बढ़ी, आवृत्ति बढ़ी या प्रकाश का क्षेत्र बढ़ा; इनका प्रभाव एक जैसा नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At fixed ν>ν0, what changes when intensity doubles in the simple model?",
+          "hi": "स्थिर ν>ν0 पर सरल मॉडल में तीव्रता दुगुनी हो तो क्या बदलता है?"
+        },
+        "answer": {
+          "en": "Saturation current can double; stopping potential remains the same.",
+          "hi": "संतृप्त धारा दुगुनी हो सकती है; निरोधी विभव वही रहता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "de Broglie wavelength of matter",
+        "hi": "द्रव्य की दे ब्रॉग्ली तरंगदैर्घ्य"
+      },
+      "paragraphs": [
+        {
+          "en": "De Broglie associated wavelength λ=h/p with material particles. For a non-relativistic particle p=mv, and for kinetic energy K, λ=h/√(2mK). An electron accelerated from rest through V has K=eV only when losses are neglected; the familiar 12.27/√V Å expression is non-relativistic.",
+          "hi": "दे ब्रॉग्ली ने द्रव्य कणों के साथ भी तरंगदैर्घ्य (Matter wavelength) λ=h/p जोड़ा। यहाँ p कण के संवेग का परिमाण है। धीमे कण के लिए p=mv लिख सकते हैं, इसलिए λ=h/(mv)। समान द्रव्यमान पर चाल बढ़े तो तरंगदैर्घ्य घटता है। गैर-सापेक्षिक गतिज ऊर्जा K=p²/(2m) से λ=h/√(2mK) मिलता है। इलेक्ट्रॉन को विराम से V विभवांतर से त्वरित करने पर, ऊर्जा हानि नगण्य हो तो K=eV होगा। तब λ=h/√(2meV) और सुविधाजनक रूप λ≈12.27/√V Å है। इस रूप में V का संख्यात्मक मान वोल्ट में डालना चाहिए। बहुत अधिक विभव पर इलेक्ट्रॉन सापेक्षिक हो सकता है और यह सरल रूप पर्याप्त नहीं रहता। समान गतिज ऊर्जा पर भारी कण का संवेग अधिक और तरंगदैर्घ्य कम होता है। समान संवेग पर भिन्न द्रव्यमान वाले कणों का दे ब्रॉग्ली तरंगदैर्घ्य समान होगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Å is a length unit: 1 Å=10^-10 m; do not confuse it with A, the ampere.",
+          "hi": "Å लंबाई का मात्रक है: 1 Å=10^-10 m। इसे विद्युत धारा के A से न मिलाएँ। विभव 4 गुना करने पर गैर-सापेक्षिक इलेक्ट्रॉन का तरंगदैर्घ्य आधा होता है, चौथाई नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At equal momentum, do an electron and proton have different wavelengths?",
+          "hi": "समान संवेग पर इलेक्ट्रॉन और प्रोटॉन के तरंगदैर्घ्य अलग होंगे?"
+        },
+        "answer": {
+          "en": "No. λ=h/p gives the same wavelength.",
+          "hi": "नहीं। λ=h/p से तरंगदैर्घ्य समान है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Duality, evidence and solving questions",
+        "hi": "द्वैत, प्रमाण और प्रश्न हल करने की विधि"
+      },
+      "paragraphs": [
+        {
+          "en": "Quantum descriptions predict both localisation in detection and wave-like statistical patterns. Matter-wave wavelength is not the size of the particle or a visible sinusoidal path. Solve numerical questions by choosing the correct experiment and equation, checking threshold conditions, and stating approximation limits.",
+          "hi": "द्वैत प्रकृति (Dual nature) को केवल यह कहकर न याद करें कि प्रकाश कभी गेंद और कभी पानी की लहर बन जाता है। क्वांटम वर्णन में पहचान की घटनाएँ स्थानीय हो सकती हैं, जबकि बहुत-सी घटनाओं का वितरण तरंगात्मक पैटर्न देता है। द्रव्य तरंग का तरंगदैर्घ्य कण का वास्तविक व्यास नहीं है और इलेक्ट्रॉन को साइन वक्र वाली डोरी पर चलना जरूरी नहीं। दृश्य मॉडल इन संबंधों को संकेतों से दिखाते हैं। प्रश्न हल करते समय पहले पहचानें कि प्रकाशवैद्युत ऊर्जा, फोटॉन संवेग या द्रव्य तरंग में से क्या पूछा है। देहली की जाँच के बिना ऋणात्मक गतिज ऊर्जा को उत्तर न लिखें। दिए तरंगदैर्घ्य से आवृत्ति चाहिए तो निर्वात संबंध ν=c/λ लें। द्रव्य कण की ऊर्जा से तरंगदैर्घ्य निकालते समय द्रव्यमान और गैर-सापेक्षिक सीमा दोनों देखें। अंतिम उत्तर में उचित मात्रक तथा परिमाण लिखें। अलग प्रयोगों के प्रमाण मिलकर अधिक समग्र भौतिक समझ देते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "In a symbolic animation, motion speed and dot size need not be physical scale values.",
+          "hi": "सांकेतिक एनीमेशन की गति और बिंदु का आकार वास्तविक पैमाने पर नहीं होते। विश्वसनीय निष्कर्ष के लिए दृश्य के साथ संख्यात्मक मान, समीकरण और उसकी शर्तें पढ़ें; केवल चित्र का माप प्रमाण नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is matter wavelength the electron diameter?",
+          "hi": "क्या द्रव्य तरंगदैर्घ्य इलेक्ट्रॉन का व्यास है?"
+        },
+        "answer": {
+          "en": "No; it characterises wave behaviour associated with momentum.",
+          "hi": "नहीं; यह संवेग से जुड़े तरंग व्यवहार की विशेषता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "E=hν=hc/λ",
+      "meaning": {
+        "en": "Photon energy in vacuum.",
+        "hi": "निर्वात में फोटॉन ऊर्जा।"
+      },
+      "units": {
+        "en": "E: J; h: J s; ν: Hz; λ: m",
+        "hi": "E: J; h: J s; ν: Hz; λ: m"
+      }
+    },
+    {
+      "expression": "Kmax=hν−φ=eV0",
+      "meaning": {
+        "en": "Photoelectric energy balance above threshold.",
+        "hi": "देहली के ऊपर प्रकाशवैद्युत ऊर्जा संतुलन।"
+      },
+      "units": {
+        "en": "Kmax,φ: J; e: C; V0: V",
+        "hi": "Kmax,φ: J; e: C; V0: V"
+      }
+    },
+    {
+      "expression": "ν0=φ/h; λ0=hc/φ",
+      "meaning": {
+        "en": "Threshold relations for a prepared surface.",
+        "hi": "निर्धारित सतह के देहली संबंध।"
+      },
+      "units": {
+        "en": "ν0: Hz; λ0: m",
+        "hi": "ν0: Hz; λ0: m"
+      }
+    },
+    {
+      "expression": "λ=h/p=h/√(2mK)",
+      "meaning": {
+        "en": "Matter wavelength; second form is non-relativistic.",
+        "hi": "द्रव्य तरंगदैर्घ्य; दूसरा रूप गैर-सापेक्षिक है।"
+      },
+      "units": {
+        "en": "λ: m; p: kg m/s; K: J",
+        "hi": "λ: m; p: kg m/s; K: J"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find photon energy for λ=400 nm.",
+        "hi": "λ=400 nm पर फोटॉन ऊर्जा ज्ञात करें।"
+      },
+      "given": {
+        "en": "hc=1240 eV nm; λ=400 nm.",
+        "hi": "hc=1240 eV nm; λ=400 nm।"
+      },
+      "find": {
+        "en": "Photon energy.",
+        "hi": "फोटॉन ऊर्जा।"
+      },
+      "formula": {
+        "en": "E=hc/λ",
+        "hi": "E=hc/λ"
+      },
+      "steps": [
+        {
+          "en": "E=1240/400.",
+          "hi": "E=1240/400।"
+        }
+      ],
+      "answer": {
+        "en": "3.10 eV.",
+        "hi": "3.10 eV।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "For 3.1 eV photons and φ=2.0 eV find Kmax and V0.",
+        "hi": "3.1 eV फोटॉन तथा φ=2.0 eV पर Kmax और V0 निकालें।"
+      },
+      "given": {
+        "en": "E=3.1 eV; φ=2.0 eV.",
+        "hi": "E=3.1 eV; φ=2.0 eV।"
+      },
+      "find": {
+        "en": "Kmax and stopping-potential magnitude.",
+        "hi": "Kmax और निरोधी विभव का परिमाण।"
+      },
+      "formula": {
+        "en": "Kmax=E−φ=eV0",
+        "hi": "Kmax=E−φ=eV0"
+      },
+      "steps": [
+        {
+          "en": "The photon energy exceeds the work function.",
+          "hi": "फोटॉन ऊर्जा कार्य फलन से अधिक है।"
+        },
+        {
+          "en": "Kmax=3.1−2.0=1.1 eV.",
+          "hi": "Kmax=3.1−2.0=1.1 eV।"
+        }
+      ],
+      "answer": {
+        "en": "Kmax=1.1 eV; V0=1.1 V.",
+        "hi": "Kmax=1.1 eV; V0=1.1 V।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A surface has φ=2.48 eV. Find threshold wavelength and test 600 nm light.",
+        "hi": "φ=2.48 eV वाली सतह की देहली तरंगदैर्घ्य निकालें और 600 nm प्रकाश जाँचें।"
+      },
+      "given": {
+        "en": "hc=1240 eV nm; φ=2.48 eV.",
+        "hi": "hc=1240 eV nm; φ=2.48 eV।"
+      },
+      "find": {
+        "en": "λ0 and emission condition.",
+        "hi": "λ0 और उत्सर्जन की दशा।"
+      },
+      "formula": {
+        "en": "λ0=hc/φ",
+        "hi": "λ0=hc/φ"
+      },
+      "steps": [
+        {
+          "en": "λ0=1240/2.48=500 nm.",
+          "hi": "λ0=1240/2.48=500 nm।"
+        },
+        {
+          "en": "600 nm is longer than λ0, so its photons have insufficient energy.",
+          "hi": "600 nm, λ0 से बड़ा है, इसलिए फोटॉन ऊर्जा अपर्याप्त है।"
+        }
+      ],
+      "answer": {
+        "en": "λ0=500 nm; no ordinary single-photon emission at 600 nm.",
+        "hi": "λ0=500 nm; 600 nm पर सामान्य एकल-फोटॉन उत्सर्जन नहीं।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the wavelength of an electron accelerated through 150 V from rest.",
+        "hi": "विराम से 150 V द्वारा त्वरित इलेक्ट्रॉन का तरंगदैर्घ्य निकालें।"
+      },
+      "given": {
+        "en": "V=150 V; ignore losses.",
+        "hi": "V=150 V; ऊर्जा हानि नगण्य।"
+      },
+      "find": {
+        "en": "de Broglie wavelength.",
+        "hi": "दे ब्रॉग्ली तरंगदैर्घ्य।"
+      },
+      "formula": {
+        "en": "λ≈12.27/√V Å",
+        "hi": "λ≈12.27/√V Å"
+      },
+      "steps": [
+        {
+          "en": "√150≈12.247.",
+          "hi": "√150≈12.247।"
+        },
+        {
+          "en": "λ≈12.27/12.247 Å.",
+          "hi": "λ≈12.27/12.247 Å।"
+        }
+      ],
+      "answer": {
+        "en": "About 1.00 Å=1.00×10^-10 m; non-relativistic approximation.",
+        "hi": "लगभग 1.00 Å=1.00×10^-10 m; गैर-सापेक्षिक सन्निकटन।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Stopping potentials are 0.5 V and 1.5 V at 6×10^14 Hz and 8×10^14 Hz. Estimate h and ν0.",
+        "hi": "6×10^14 Hz और 8×10^14 Hz पर निरोधी विभव 0.5 V और 1.5 V हैं। h और ν0 अनुमानित करें।"
+      },
+      "given": {
+        "en": "e=1.60×10^-19 C; two V0,ν points.",
+        "hi": "e=1.60×10^-19 C; V0,ν के 2 बिंदु।"
+      },
+      "find": {
+        "en": "h and threshold frequency.",
+        "hi": "h और देहली आवृत्ति।"
+      },
+      "formula": {
+        "en": "ΔV0/Δν=h/e",
+        "hi": "ΔV0/Δν=h/e"
+      },
+      "steps": [
+        {
+          "en": "Slope=1.0/(2×10^14)=5.0×10^-15 V s.",
+          "hi": "ढाल=1.0/(2×10^14)=5.0×10^-15 V s।"
+        },
+        {
+          "en": "h=e×slope=8.0×10^-34 J s; these rounded data give an estimate.",
+          "hi": "h=e×ढाल=8.0×10^-34 J s; पूर्णांकित आँकड़े अनुमान देते हैं।"
+        },
+        {
+          "en": "ν0=6×10^14−0.5/(5×10^-15).",
+          "hi": "ν0=6×10^14−0.5/(5×10^-15)।"
+        }
+      ],
+      "answer": {
+        "en": "h≈8.0×10^-34 J s; ν0≈5.0×10^14 Hz.",
+        "hi": "h≈8.0×10^-34 J s; ν0≈5.0×10^14 Hz।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "The work function is the minimum energy needed to do what?",
+        "hi": "कार्य फलन किस काम की न्यूनतम ऊर्जा है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Remove an electron from the surface",
+            "hi": "सतह से इलेक्ट्रॉन निकालना"
+          },
+          "reason": {
+            "en": "It is the escape-energy threshold of the prepared surface.",
+            "hi": "यह निर्धारित सतह की निष्क्रमण ऊर्जा सीमा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Remove the whole nucleus",
+            "hi": "पूरा नाभिक निकालना"
+          },
+          "reason": {
+            "en": "Nuclear removal is not photoelectric emission.",
+            "hi": "नाभिक हटना प्रकाशवैद्युत उत्सर्जन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Double light intensity",
+            "hi": "प्रकाश तीव्रता दुगुनी करना"
+          },
+          "reason": {
+            "en": "Intensity is not a surface escape energy.",
+            "hi": "तीव्रता सतह निष्क्रमण ऊर्जा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Create charge from nothing",
+            "hi": "शून्य से आवेश बनाना"
+          },
+          "reason": {
+            "en": "Emission moves existing electrons and conserves charge.",
+            "hi": "उत्सर्जन पहले से मौजूद इलेक्ट्रॉन हटाता और आवेश संरक्षित करता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "At fixed ν>ν0, increasing intensity mainly increases what?",
+        "hi": "स्थिर ν>ν0 पर तीव्रता बढ़ाने से मुख्यतः क्या बढ़ता है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Saturation current",
+            "hi": "संतृप्त धारा"
+          },
+          "reason": {
+            "en": "More photons can produce more collected electrons per time.",
+            "hi": "अधिक फोटॉन से प्रति समय अधिक इलेक्ट्रॉन मिल सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Stopping potential",
+            "hi": "निरोधी विभव"
+          },
+          "reason": {
+            "en": "Energy per photon has not changed.",
+            "hi": "प्रति फोटॉन ऊर्जा नहीं बदली।"
+          }
+        },
+        {
+          "text": {
+            "en": "Work function",
+            "hi": "कार्य फलन"
+          },
+          "reason": {
+            "en": "The prepared metal surface is unchanged.",
+            "hi": "निर्धारित धातु सतह नहीं बदली।"
+          }
+        },
+        {
+          "text": {
+            "en": "Threshold frequency",
+            "hi": "देहली आवृत्ति"
+          },
+          "reason": {
+            "en": "ν0=φ/h is unchanged for the same surface.",
+            "hi": "उसी सतह पर ν0=φ/h नहीं बदलता।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Light below threshold is made brighter. In the ordinary single-photon model what occurs?",
+        "hi": "देहली से कम आवृत्ति का प्रकाश अधिक चमकीला करें तो सामान्य एकल-फोटॉन मॉडल में क्या होगा?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "No emission",
+            "hi": "उत्सर्जन नहीं"
+          },
+          "reason": {
+            "en": "Individual photons still carry less than φ.",
+            "hi": "हर फोटॉन की ऊर्जा अभी भी φ से कम।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative kinetic energy electrons emerge",
+            "hi": "ऋणात्मक गतिज ऊर्जा वाले इलेक्ट्रॉन निकलते हैं"
+          },
+          "reason": {
+            "en": "Negative calculated remainder means no emission, not negative kinetic energy.",
+            "hi": "ऋणात्मक शेष का अर्थ उत्सर्जन नहीं, ऋणात्मक गतिज ऊर्जा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Threshold automatically falls",
+            "hi": "देहली स्वतः घटती है"
+          },
+          "reason": {
+            "en": "Brightness alone does not redefine the surface work function.",
+            "hi": "चमक अकेली सतह का कार्य फलन नहीं बदलती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Each photon doubles its energy",
+            "hi": "हर फोटॉन की ऊर्जा दुगुनी"
+          },
+          "reason": {
+            "en": "Frequency, not photon count, determines photon energy.",
+            "hi": "आवृत्ति प्रति फोटॉन ऊर्जा तय करती है, संख्या नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Photon energy for 620 nm using hc=1240 eV nm is",
+        "hi": "hc=1240 eV nm से 620 nm फोटॉन की ऊर्जा है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "2 eV",
+            "hi": "2 eV"
+          },
+          "reason": {
+            "en": "1240/620=2.",
+            "hi": "1240/620=2।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.5 eV",
+            "hi": "0.5 eV"
+          },
+          "reason": {
+            "en": "This reverses the division.",
+            "hi": "इसमें भाग उलटा किया गया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "620 eV",
+            "hi": "620 eV"
+          },
+          "reason": {
+            "en": "A wavelength number is not the energy number.",
+            "hi": "तरंगदैर्घ्य की संख्या ऊर्जा की संख्या नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1240 eV",
+            "hi": "1240 eV"
+          },
+          "reason": {
+            "en": "Division by λ is missing.",
+            "hi": "λ से भाग नहीं दिया गया।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "The magnitude of stopping potential for Kmax=3 eV is",
+        "hi": "Kmax=3 eV पर निरोधी विभव का परिमाण है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "3 V",
+            "hi": "3 V"
+          },
+          "reason": {
+            "en": "eV0=Kmax gives 3 V.",
+            "hi": "eV0=Kmax से 3 V।"
+          }
+        },
+        {
+          "text": {
+            "en": "3 J",
+            "hi": "3 J"
+          },
+          "reason": {
+            "en": "Stopping potential is measured in volts.",
+            "hi": "निरोधी विभव वोल्ट में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/3 V",
+            "hi": "1/3 V"
+          },
+          "reason": {
+            "en": "There is no reciprocal relation here.",
+            "hi": "यहाँ व्युत्क्रम संबंध नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 V",
+            "hi": "0 V"
+          },
+          "reason": {
+            "en": "A nonzero maximum kinetic energy needs a retarding potential.",
+            "hi": "अशून्य अधिकतम गतिज ऊर्जा रोकने को विरोधी विभव चाहिए।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Slope of V0 versus ν in SI units is",
+        "hi": "SI में V0 बनाम ν की ढाल है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "h/e",
+            "hi": "h/e"
+          },
+          "reason": {
+            "en": "V0=(h/e)ν−φ/e.",
+            "hi": "V0=(h/e)ν−φ/e।"
+          }
+        },
+        {
+          "text": {
+            "en": "h",
+            "hi": "h"
+          },
+          "reason": {
+            "en": "h is the slope of Kmax in joules versus ν.",
+            "hi": "h, जूल में Kmax बनाम ν की ढाल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "e/h",
+            "hi": "e/h"
+          },
+          "reason": {
+            "en": "This is the reciprocal of the correct slope.",
+            "hi": "यह सही ढाल का व्युत्क्रम।"
+          }
+        },
+        {
+          "text": {
+            "en": "φ/h",
+            "hi": "φ/h"
+          },
+          "reason": {
+            "en": "φ/h is threshold frequency.",
+            "hi": "φ/h देहली आवृत्ति है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Matter wavelength depends directly on which inverse quantity?",
+        "hi": "द्रव्य तरंगदैर्घ्य किस राशि के व्युत्क्रम से जुड़ा है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Momentum magnitude",
+            "hi": "संवेग का परिमाण"
+          },
+          "reason": {
+            "en": "λ=h/p.",
+            "hi": "λ=h/p।"
+          }
+        },
+        {
+          "text": {
+            "en": "Charge alone",
+            "hi": "केवल आवेश"
+          },
+          "reason": {
+            "en": "Neutral particles can also have matter wavelengths.",
+            "hi": "उदासीन कणों का भी द्रव्य तरंगदैर्घ्य होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Particle diameter",
+            "hi": "कण का व्यास"
+          },
+          "reason": {
+            "en": "Matter wavelength is not geometrical diameter.",
+            "hi": "द्रव्य तरंगदैर्घ्य ज्यामितीय व्यास नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Light intensity",
+            "hi": "प्रकाश तीव्रता"
+          },
+          "reason": {
+            "en": "A material particle’s momentum sets its wavelength.",
+            "hi": "द्रव्य कण का संवेग उसका तरंगदैर्घ्य तय करता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "An electron accelerating potential is multiplied by 4 in the non-relativistic regime. Its wavelength becomes",
+        "hi": "गैर-सापेक्षिक सीमा में इलेक्ट्रॉन का त्वरक विभव 4 गुना हो तो तरंगदैर्घ्य होगा"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          "reason": {
+            "en": "λ∝1/√V.",
+            "hi": "λ∝1/√V।"
+          }
+        },
+        {
+          "text": {
+            "en": "Four times",
+            "hi": "4 गुना"
+          },
+          "reason": {
+            "en": "Wavelength falls rather than rises.",
+            "hi": "तरंगदैर्घ्य बढ़ता नहीं, घटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "One quarter",
+            "hi": "चौथाई"
+          },
+          "reason": {
+            "en": "Momentum scales with √V, not V.",
+            "hi": "संवेग √V के साथ बदलता है, V के साथ नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "The momentum changed.",
+            "hi": "संवेग बदल गया है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "At equal momentum electron and proton wavelengths are",
+        "hi": "समान संवेग पर इलेक्ट्रॉन और प्रोटॉन के तरंगदैर्घ्य हैं"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Equal",
+            "hi": "समान"
+          },
+          "reason": {
+            "en": "The same h/p applies.",
+            "hi": "दोनों पर वही h/p लागू।"
+          }
+        },
+        {
+          "text": {
+            "en": "In the mass ratio",
+            "hi": "द्रव्यमान अनुपात में"
+          },
+          "reason": {
+            "en": "At fixed momentum mass does not appear separately.",
+            "hi": "स्थिर संवेग पर द्रव्यमान अलग नहीं आता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero for proton",
+            "hi": "प्रोटॉन के लिए शून्य"
+          },
+          "reason": {
+            "en": "Massive protons also have matter-wave behaviour.",
+            "hi": "द्रव्यमान वाले प्रोटॉन में भी द्रव्य तरंग व्यवहार।"
+          }
+        },
+        {
+          "text": {
+            "en": "Set by their charge signs",
+            "hi": "आवेश चिह्न से तय"
+          },
+          "reason": {
+            "en": "Momentum magnitude, not charge sign, enters λ=h/p.",
+            "hi": "λ=h/p में संवेग परिमाण है, आवेश चिह्न नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which evidence still requires wave behaviour of light?",
+        "hi": "प्रकाश के किस प्रमाण में तरंग व्यवहार जरूरी है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Interference fringes",
+            "hi": "व्यतिकरण फ्रिंज"
+          },
+          "reason": {
+            "en": "Phase superposition explains the fringe pattern.",
+            "hi": "कला अध्यारोपण फ्रिंज पैटर्न समझाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Work-function threshold alone",
+            "hi": "केवल कार्य फलन देहली"
+          },
+          "reason": {
+            "en": "This is characteristic photoelectric evidence for photon energy.",
+            "hi": "यह फोटॉन ऊर्जा का प्रकाशवैद्युत प्रमाण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Electron charge quantisation alone",
+            "hi": "केवल इलेक्ट्रॉन आवेश क्वांटीकरण"
+          },
+          "reason": {
+            "en": "That is not an interference observation.",
+            "hi": "यह व्यतिकरण प्रेक्षण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Metal mass alone",
+            "hi": "केवल धातु द्रव्यमान"
+          },
+          "reason": {
+            "en": "The specimen’s mass alone establishes no wave property.",
+            "hi": "केवल नमूने का द्रव्यमान तरंग गुण नहीं बताता।"
+          }
+        }
+      ]
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish frequency from intensity.",
+        "hi": "आवृत्ति और तीव्रता अलग करें।"
+      },
+      "answer": {
+        "en": "Frequency fixes energy per photon; at fixed frequency intensity changes the incident photon rate per area.",
+        "hi": "आवृत्ति प्रति फोटॉन ऊर्जा तय करती; स्थिर आवृत्ति पर तीव्रता प्रति क्षेत्र आपतित फोटॉन दर बदलती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is threshold frequency incompatible with simple energy accumulation?",
+        "hi": "देहली आवृत्ति सरल ऊर्जा संचय विचार से क्यों नहीं समझती?"
+      },
+      "answer": {
+        "en": "Below threshold even stronger ordinary light does not emit electrons, although the classical wave picture would supply more total energy.",
+        "hi": "देहली से नीचे अधिक तीव्र सामान्य प्रकाश भी इलेक्ट्रॉन नहीं निकालता, जबकि शास्त्रीय तरंग चित्र में कुल ऊर्जा बढ़ती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Derive the stopping-potential relation.",
+        "hi": "निरोधी विभव संबंध निकालें।"
+      },
+      "answer": {
+        "en": "hν=φ+Kmax and Kmax=eV0 give V0=(h/e)ν−φ/e.",
+        "hi": "hν=φ+Kmax तथा Kmax=eV0 से V0=(h/e)ν−φ/e।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give the assumptions behind λ=12.27/√V Å.",
+        "hi": "λ=12.27/√V Å की शर्तें दें।"
+      },
+      "answer": {
+        "en": "Electron starts from rest, gains eV without significant losses, V is in volts, and motion remains non-relativistic.",
+        "hi": "इलेक्ट्रॉन विराम से चले, नगण्य हानि के साथ eV पाए, V वोल्ट में हो और गति गैर-सापेक्षिक रहे।"
+      }
+    },
+    {
+      "question": {
+        "en": "How does stopping potential depend on light intensity at fixed suitable frequency?",
+        "hi": "स्थिर उपयुक्त आवृत्ति पर निरोधी विभव तीव्रता पर कैसे निर्भर है?"
+      },
+      "answer": {
+        "en": "In the simple photoelectric regime it does not change; saturation current changes instead.",
+        "hi": "सरल प्रकाशवैद्युत सीमा में यह नहीं बदलता; संतृप्त धारा बदलती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Is an animated matter wave the literal electron path?",
+        "hi": "क्या द्रव्य तरंग का एनीमेशन इलेक्ट्रॉन का वास्तविक पथ है?"
+      },
+      "answer": {
+        "en": "No. It symbolises wavelength associated with momentum, not a sinusoidal mechanical trajectory or particle diameter.",
+        "hi": "नहीं। वह संवेग से जुड़े तरंगदैर्घ्य का संकेत है, साइन आकार का यांत्रिक पथ या कण व्यास नहीं।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Photon energy is hν.",
+      "hi": "फोटॉन ऊर्जा hν है।"
+    },
+    {
+      "en": "Emission needs ν≥ν0 in the ordinary regime.",
+      "hi": "सामान्य सीमा में उत्सर्जन हेतु ν≥ν0 चाहिए।"
+    },
+    {
+      "en": "Kmax=hν−φ=eV0.",
+      "hi": "Kmax=hν−φ=eV0।"
+    },
+    {
+      "en": "Intensity and frequency have different roles.",
+      "hi": "तीव्रता और आवृत्ति की भूमिकाएँ अलग हैं।"
+    },
+    {
+      "en": "Matter wavelength is h/p.",
+      "hi": "द्रव्य तरंगदैर्घ्य h/p है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not give electrons negative emitted kinetic energy or equate photon count with photon energy; retain the non-relativistic condition.",
+    "hi": "उत्सर्जित इलेक्ट्रॉन की ऋणात्मक गतिज ऊर्जा न लिखें, फोटॉन संख्या को फोटॉन ऊर्जा न मानें और गैर-सापेक्षिक शर्त न भूलें।"
+  },
+  "goal": {
+    "en": "Connect photoelectric evidence, photons and matter wavelengths through energy and momentum.",
+    "hi": "ऊर्जा और संवेग से प्रकाशवैद्युत प्रमाण, फोटॉन और द्रव्य तरंगदैर्घ्य जोड़ें।"
+  },
+  "conceptMap": "इलेक्ट्रॉन उत्सर्जन और पृष्ठ ऊर्जा → प्रकाशवैद्युत प्रयोग क्या मापता है → देहली आवृत्ति और तात्कालिक उत्सर्जन → फोटॉन और आइंस्टाइन का ऊर्जा संतुलन → निरोधी विभव और सरल रेखीय आलेख → तीव्रता, आवृत्ति और तरंग सिद्धांत की सीमा → द्रव्य की दे ब्रॉग्ली तरंगदैर्घ्य → द्वैत, प्रमाण और प्रश्न हल करने की विधि",
+  "conceptMapEn": "Electron emission and surface energy → What the photoelectric experiment measures → Threshold frequency and prompt emission → Photons and Einstein’s energy balance → Stopping potential and straight-line graphs → Intensity, frequency and the limits of wave theory → de Broglie wavelength of matter → Duality, evidence and solving questions",
+  "editionBasis": {
+    "en": "Original study explanations aligned with the current NCERT Class 12 Physics sequence and UP Board 2026–27. Use the prescribed textbook and school practicals alongside.",
+    "hi": "वर्तमान NCERT कक्षा 12 भौतिकी क्रम और यूपी बोर्ड 2026–27 के अनुरूप मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक तथा विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/leph203.pdf"
+    },
+    {
+      "title": "UPMSP Physics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    }
+  ]
+}

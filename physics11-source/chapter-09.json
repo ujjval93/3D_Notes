@@ -1,0 +1,1437 @@
+{
+  "number": 9,
+  "id": "physics11-09",
+  "title": {
+    "en": "Mechanical Properties of Fluids",
+    "hi": "तरलों के यांत्रिक गुण"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-09-1",
+      "title": {
+        "en": "Hydrostatic pressure",
+        "hi": "द्रवस्थैतिक दाब"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 24
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Water depth",
+            "hi": "जल की गहराई"
+          },
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "initial": 5,
+          "unit": "m"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Connect vertical depth and gauge pressure.",
+        "hi": "ऊर्ध्वाधर गहराई और गेज दाब जोड़ें।"
+      },
+      "observe": {
+        "en": "Water density is 1000 kg/m³ and g=9.8 m/s².",
+        "hi": "जल घनत्व 1000 kg/m³ और g=9.8 m/s² है।"
+      },
+      "modelNote": {
+        "en": "Resting water of constant density; atmospheric pressure is omitted from the gauge reading.",
+        "hi": "नियत घनत्व का स्थिर जल; गेज मान में वायुमंडलीय दाब शामिल नहीं है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Gauge pressure is ρgh and rises linearly with depth.",
+          "hi": "गेज दाब ρgh है और गहराई के साथ रैखिक बढ़ता है।"
+        }
+      },
+      "realLife": {
+        "en": "A lower hole in a water bottle has greater hydrostatic pressure.",
+        "hi": "जल बोतल के नीचे छेद पर अधिक द्रवस्थैतिक दाब है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At zero depth, gauge pressure is:",
+          "hi": "शून्य गहराई पर गेज दाब है:"
+        },
+        "options": [
+          {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          {
+            "en": "Atmospheric pressure",
+            "hi": "वायुमंडलीय दाब"
+          },
+          {
+            "en": "Infinite",
+            "hi": "अनंत"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Gauge pressure is ρgh and rises linearly with depth.",
+          "hi": "गेज दाब ρgh है और गहराई के साथ रैखिक बढ़ता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-09-1-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "phy11-09-1-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 10
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 5.0
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 5.0
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-09-2",
+      "title": {
+        "en": "Continuity",
+        "hi": "सांतत्य"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 25
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Outlet area",
+            "hi": "निर्गम क्षेत्रफल"
+          },
+          "min": 1,
+          "max": 4,
+          "step": 0.5,
+          "initial": 2,
+          "unit": "cm²"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Compare tube area with flow speed.",
+        "hi": "नली क्षेत्रफल और प्रवाह चाल की तुलना करें।"
+      },
+      "observe": {
+        "en": "Inlet area=4 cm², inlet speed=2 m/s; change outlet area.",
+        "hi": "प्रवेश क्षेत्रफल=4 cm², चाल=2 m/s; निर्गम क्षेत्रफल बदलें।"
+      },
+      "modelNote": {
+        "en": "Ideal steady incompressible flow without leaks; marker motion is rescaled.",
+        "hi": "बिना रिसाव आदर्श स्थायी असंपीड्य प्रवाह; चिह्न गति बदले पैमाने पर है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "A₁v₁=A₂v₂, so a narrower outlet requires a larger speed.",
+          "hi": "A₁v₁=A₂v₂, इसलिए संकरे निर्गम में अधिक चाल है।"
+        }
+      },
+      "realLife": {
+        "en": "A nozzle increases speed for a given flowing volume rate.",
+        "hi": "नियत आयतन प्रवाह दर में नोजल चाल बढ़ाता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "If outlet area halves, speed:",
+          "hi": "निर्गम क्षेत्रफल आधा हो तो चाल:"
+        },
+        "options": [
+          {
+            "en": "Doubles",
+            "hi": "दोगुनी"
+          },
+          {
+            "en": "Halves",
+            "hi": "आधी"
+          },
+          {
+            "en": "Stays fixed",
+            "hi": "नियत"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A₁v₁=A₂v₂, so a narrower outlet requires a larger speed.",
+          "hi": "A₁v₁=A₂v₂, इसलिए संकरे निर्गम में अधिक चाल है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-09-2-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-09-2-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2.5
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 2.5
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-09-3",
+      "title": {
+        "en": "Bernoulli relation",
+        "hi": "बर्नूली संबंध"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 26
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Outlet speed",
+            "hi": "निर्गम चाल"
+          },
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "initial": 5,
+          "unit": "m/s"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Relate speed and static pressure at one height.",
+        "hi": "समान ऊँचाई पर चाल और स्थैतिक दाब जोड़ें।"
+      },
+      "observe": {
+        "en": "Use p₁=200 kPa, v₁=2 m/s, ρ=1000 kg/m³.",
+        "hi": "p₁=200 kPa, v₁=2 m/s, ρ=1000 kg/m³ लें।"
+      },
+      "modelNote": {
+        "en": "Ideal Bernoulli flow at equal height; no pump or viscous energy loss.",
+        "hi": "समान ऊँचाई का आदर्श बर्नूली प्रवाह; पंप या श्यान हानि नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "p₂=p₁+ρ(v₁²−v₂²)/2, so increasing v₂ lowers p₂.",
+          "hi": "p₂=p₁+ρ(v₁²−v₂²)/2, इसलिए v₂ बढ़ाने से p₂ घटता है।"
+        }
+      },
+      "realLife": {
+        "en": "Venturi meters use a pressure difference to infer flow.",
+        "hi": "वेंचुरी मापक दाब अंतर से प्रवाह निकालते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "At equal speeds and height, pressures are:",
+          "hi": "समान चाल और ऊँचाई पर दाब:"
+        },
+        "options": [
+          {
+            "en": "Equal",
+            "hi": "समान"
+          },
+          {
+            "en": "Always zero",
+            "hi": "हमेशा शून्य"
+          },
+          {
+            "en": "Opposite infinities",
+            "hi": "विपरीत अनंत"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "p₂=p₁+ρ(v₁²−v₂²)/2, so increasing v₂ lowers p₂.",
+          "hi": "p₂=p₁+ρ(v₁²−v₂²)/2, इसलिए v₂ बढ़ाने से p₂ घटता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-09-3-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-09-3-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 10
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 5.5
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 5.5
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    }
+  ],
+  "editionBasis": {
+    "en": "Original Class 11 Physics study companion aligned to NCERT and UP Board 2026–27. Models explain idealised relationships, not measured laboratory data.",
+    "hi": "NCERT और यूपी बोर्ड 2026–27 पर आधारित कक्षा 11 भौतिकी की मौलिक अध्ययन सामग्री। मॉडल आदर्श संबंध समझाते हैं, प्रयोगशाला के मापे आँकड़े नहीं हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/keph202.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ],
+  "goal": {
+    "en": "Connect pressure, flow, viscosity and surface effects with the assumptions that make fluid formulas valid.",
+    "hi": "दाब, प्रवाह, श्यानता और पृष्ठीय प्रभावों को उनके सूत्रों की मान्यताओं के साथ समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Fluids and pressure",
+        "hi": "तरल और दाब"
+      },
+      "paragraphs": [
+        {
+          "en": "Liquids and gases are fluids because they flow rather than sustaining a static shearing stress like a solid. A liquid has approximately fixed volume under ordinary conditions but takes the shape of its container; a gas can expand to occupy the available space. Pressure at a point is normal force per unit area, p=F/A, measured in pascals. In a fluid at rest, the pressure at a point is the same in all directions. Otherwise an unbalanced tangential effect would cause flow. The force on a small surface is perpendicular to it, even if the surface is sloping. Pressure is a scalar quantity, whereas the force associated with a chosen surface has a direction determined by that surface. Distinguish absolute pressure from gauge pressure. Gauge pressure is measured relative to the surrounding atmospheric pressure, so an open water surface has zero gauge pressure but nonzero absolute pressure. A pressure reading needs its reference; simply writing a number without stating whether atmospheric pressure is included can make a calculation ambiguous.",
+          "hi": "द्रव और गैस तरल (Fluids) हैं, क्योंकि वे ठोस की तरह स्थिर अपरूपण प्रतिबल सहने के बजाय बहते हैं। सामान्य दशाओं में द्रव का आयतन लगभग नियत रहता है, लेकिन उसकी आकृति पात्र के अनुसार बदलती है। गैस उपलब्ध स्थान में फैल सकती है। किसी बिंदु पर दाब (Pressure) सतह पर लंबवत बल प्रति इकाई क्षेत्रफल है: p=F/A। इसका मात्रक पास्कल है। विरामावस्था वाले तरल में एक बिंदु पर हर दिशा में दाब समान होता है; अन्यथा असंतुलन से प्रवाह होने लगेगा। छोटी सतह पर दाब का बल उसके लंबवत है, चाहे सतह झुकी हो। दाब अदिश राशि है, लेकिन चुनी सतह पर उससे जुड़ा बल सतह की दिशा के अनुसार सदिश होता है। निरपेक्ष दाब (Absolute pressure) और गेज दाब (Gauge pressure) में अंतर रखें। गेज दाब आसपास के वायुमंडलीय दाब के सापेक्ष है। इसलिए खुले जल की सतह पर गेज दाब शून्य, पर निरपेक्ष दाब शून्य नहीं होता। दाब का संदर्भ बताना आवश्यक है। वायुमंडलीय दाब शामिल है या नहीं, यह बताए बिना केवल संख्या लिखना अस्पष्ट गणना पैदा कर सकता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is pressure a vector because pressure forces have directions?",
+          "hi": "क्या दाब के बल की दिशा होने से दाब सदिश है?"
+        },
+        "answer": {
+          "en": "No. Pressure is scalar; the chosen surface determines the force direction.",
+          "hi": "नहीं। दाब अदिश है; चुनी सतह बल की दिशा निर्धारित करती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Hydrostatic variation and Pascal’s law",
+        "hi": "द्रवस्थैतिक परिवर्तन और पास्कल का नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "For a stationary liquid of uniform density ρ in a nearly uniform gravitational field, pressure increases with depth according to p=p₀+ρgh. Here h is vertical depth below a reference surface, not distance along a sloping wall. The pressure difference between two levels is ρg times their vertical separation. Container shape does not enter this relation. At the same depth in the same connected resting liquid, pressures are equal even in differently shaped arms. Density may vary in gases, so a constant-density formula cannot describe an entire atmosphere accurately. Pascal’s law states that a pressure change applied to an enclosed fluid is transmitted undiminished throughout the fluid and to the container walls in the ideal static model. A hydraulic lift uses equal pressure changes: F₁/A₁=F₂/A₂. A larger output force is accompanied by a smaller output displacement, so the device does not create energy. If the pistons have different heights, hydrostatic pressure differences must also be considered rather than blindly equating all absolute pressures.",
+          "hi": "नियत घनत्व ρ वाला स्थिर द्रव लगभग समान गुरुत्व क्षेत्र में हो तो गहराई के साथ दाब p=p₀+ρgh के अनुसार बढ़ता है। यहाँ h संदर्भ सतह से ऊर्ध्वाधर गहराई है, झुकी दीवार के साथ दूरी नहीं। दो स्तरों के बीच दाब अंतर उनके ऊर्ध्वाधर अंतर का ρg गुना है। पात्र की आकृति इस संबंध में नहीं आती। समान जुड़े हुए स्थिर द्रव में एक ही गहराई पर दाब समान होता है, भले ही नलियों की आकृतियाँ अलग हों। गैसों का घनत्व ऊँचाई के साथ बदल सकता है, इसलिए पूरे वायुमंडल को नियत घनत्व वाले सूत्र से ठीक नहीं बताया जा सकता। पास्कल का नियम (Pascal’s law) कहता है कि बंद तरल पर लगाया दाब परिवर्तन आदर्श स्थिर अवस्था में तरल और पात्र की दीवारों तक बिना घटे पहुँचता है। द्रवचालित लिफ्ट में F₁/A₁=F₂/A₂ होता है। अधिक निर्गम बल के साथ कम निर्गम विस्थापन मिलता है, इसलिए ऊर्जा अपने आप नहीं बनती। यदि पिस्टन अलग ऊँचाइयों पर हों तो द्रवस्थैतिक दाब अंतर भी जोड़ना चाहिए; सभी निरपेक्ष दाब बिना विचार समान नहीं रख सकते।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a wider container have greater pressure at the same water depth?",
+          "hi": "समान जल गहराई पर चौड़े पात्र में दाब अधिक होगा?"
+        },
+        "answer": {
+          "en": "No. At fixed surface pressure, density and gravity, pressure depends on vertical depth.",
+          "hi": "नहीं। समान सतह दाब, घनत्व और गुरुत्व में दाब ऊर्ध्वाधर गहराई पर निर्भर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Buoyancy and floating",
+        "hi": "उत्प्लावन और तैरना"
+      },
+      "paragraphs": [
+        {
+          "en": "Pressure on the lower part of a submerged body is generally greater than pressure on its upper part. The resultant upward force is buoyancy. Archimedes’ principle states that its magnitude equals the weight of fluid displaced by the body. For a uniform-density liquid, Fᵦ=ρfluid gVdisplaced. Use the displaced volume, which is only the submerged part for a partially floating object. A body in static floating equilibrium has buoyancy equal to its weight, not necessarily equal to the weight of liquid filling the entire body’s external volume. A ship can float even when its hull material is denser than water because its overall volume includes air and its average density can be sufficiently small. When a fully submerged incompressible object moves deeper in a uniform-density liquid, both top and bottom pressures increase, but their resultant difference stays the same. Real compressible objects and fluids may behave differently. Buoyancy reduces apparent weight in a weighing experiment; it does not remove the body’s mass or switch off gravity.",
+          "hi": "डूबे पिंड के निचले भाग पर दाब सामान्यतः ऊपरी भाग से अधिक होता है। इन दाब बलों का परिणामी ऊपर की ओर उत्प्लावन बल (Buoyant force) देता है। आर्किमिडीज का सिद्धांत कहता है कि यह बल विस्थापित तरल के भार के बराबर है। समान घनत्व के द्रव में Fᵦ=ρfluid gVdisplaced है। विस्थापित आयतन का सही उपयोग करें; आंशिक रूप से तैरते पिंड में केवल डूबा भाग लिया जाता है। स्थिर तैरने की अवस्था में उत्प्लावन पिंड के भार के बराबर है। यह आवश्यक नहीं कि पिंड के पूरे बाहरी आयतन के बराबर द्रव का भार लिया जाए। जहाज की धातु जल से अधिक घनी होने पर भी जहाज तैर सकता है, क्योंकि उसके समग्र आयतन में वायु शामिल है और औसत घनत्व कम हो सकता है। समान घनत्व वाले द्रव में पूरी तरह डूबा असंपीड्य पिंड अधिक गहराई पर जाए तो ऊपर और नीचे दोनों दाब बढ़ते हैं, लेकिन उनका परिणामी अंतर समान रहता है। संपीड्य पिंड या बदलते घनत्व वाले तरल में परिणाम अलग हो सकता है। उत्प्लावन आभासी भार घटाता है, द्रव्यमान नहीं मिटाता और गुरुत्व को बंद नहीं करता।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which volume enters buoyancy for a floating block?",
+          "hi": "तैरते गुटके के उत्प्लावन में कौन-सा आयतन लिया जाता है?"
+        },
+        "answer": {
+          "en": "The displaced fluid volume, equal to the submerged volume.",
+          "hi": "विस्थापित तरल का आयतन, जो डूबे भाग के आयतन के बराबर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Steady flow and continuity",
+        "hi": "स्थायी प्रवाह और सांतत्य"
+      },
+      "paragraphs": [
+        {
+          "en": "In steady flow, the velocity at a fixed point does not change with time, although it can differ from one point to another. A streamline is tangent to the instantaneous velocity at every point along it. For steady flow of an incompressible fluid through a tube with no leaks, the volume flow rate is constant: A₁v₁=A₂v₂. More generally conservation of mass gives ρAv constant. A narrower section therefore has a greater average speed when density remains constant. This conclusion is about the same flowing stream, not every unrelated narrow and wide pipe in a building. Volume rate has unit m³/s; mass rate has unit kg/s. Converting area requires squaring the length conversion factor. In the visual model, an inlet area of 4 cm² with speed 2 m/s gives a flow rate of 8 × 10⁻⁴ m³/s. The animation’s marker speed may be rescaled for visibility, while numerical readouts follow the stated formula. Continuity remains a conservation statement even when viscosity matters, provided the appropriate density and flow assumptions are maintained.",
+          "hi": "स्थायी प्रवाह (Steady flow) में किसी निश्चित स्थान पर वेग समय के साथ नहीं बदलता, लेकिन अलग स्थानों पर अलग हो सकता है। धारारेखा (Streamline) के हर बिंदु पर स्पर्शरेखा तत्कालीन वेग की दिशा बताती है। बिना रिसाव की नली में असंपीड्य तरल के स्थायी प्रवाह के लिए आयतन प्रवाह दर नियत है: A₁v₁=A₂v₂। अधिक सामान्य रूप में द्रव्यमान संरक्षण से ρAv नियत मिलता है। इसलिए घनत्व समान हो तो संकरे भाग में औसत चाल अधिक होती है। यह निष्कर्ष एक ही प्रवाहित धारा के लिए है, भवन की हर असंबद्ध पतली और मोटी नली के लिए नहीं। आयतन दर का मात्रक m³/s और द्रव्यमान दर का kg/s है। क्षेत्रफल बदलते समय लंबाई परिवर्तन गुणक का वर्ग करें। दृश्य मॉडल में प्रवेश क्षेत्रफल 4 cm² तथा चाल 2 m/s से प्रवाह दर 8 × 10⁻⁴ m³/s मिलती है। गति दिखाने वाले चिह्नों की चाल दृश्य सुविधा के लिए बदली जा सकती है, जबकि संख्यात्मक मान दिए सूत्र का पालन करते हैं। श्यानता होने पर भी सांतत्य संरक्षण का कथन है, यदि घनत्व और प्रवाह संबंधी उपयुक्त मान्यताएँ रखी जाएँ।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "If area is halved in the same incompressible steady stream, what happens to speed?",
+          "hi": "उसी असंपीड्य स्थायी धारा में क्षेत्रफल आधा हो तो चाल?"
+        },
+        "answer": {
+          "en": "It doubles because Av remains constant.",
+          "hi": "Av नियत होने से चाल दोगुनी होती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Bernoulli equation and its limits",
+        "hi": "बर्नूली समीकरण और सीमाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "For steady flow of an incompressible, nonviscous fluid along a streamline, p+½ρv²+ρgh is constant. Each term has pressure units and represents mechanical energy per unit volume. Between two points at the same height, a larger speed is associated with a smaller pressure in this ideal flow. This is not a universal claim that any fast-moving fluid always has low pressure. Pumps can add energy, friction can dissipate mechanical energy, and different streamlines can have different constants. When applying Bernoulli, name both points and check their heights, densities and boundary pressures. Torricelli’s result v=√(2gh) follows for an ideal large tank discharging through a small opening, with equal atmospheric pressure at the free surface and outlet and negligible surface speed. Real outflow has losses. In a venturi tube, continuity relates the speeds before Bernoulli relates the pressures. A numerical negative absolute pressure signals that the assumptions or chosen settings are unsuitable; it should not be interpreted as ordinary liquid supporting unlimited tension.",
+          "hi": "असंपीड्य और अश्यान तरल के स्थायी प्रवाह में एक धारारेखा पर p+½ρv²+ρgh नियत रहता है। यह बर्नूली समीकरण (Bernoulli equation) है। हर पद का मात्रक दाब है और वह प्रति इकाई आयतन यांत्रिक ऊर्जा दर्शाता है। समान ऊँचाई के दो बिंदुओं में इस आदर्श धारा की अधिक चाल कम दाब से जुड़ी होती है। इसका अर्थ यह नहीं कि हर तेज चलने वाले तरल का दाब हमेशा कम होगा। पंप ऊर्जा जोड़ सकता है, घर्षण यांत्रिक ऊर्जा का क्षय कर सकता है और अलग धारारेखाओं के नियतांक अलग हो सकते हैं। प्रयोग से पहले दोनों बिंदु, उनकी ऊँचाई, घनत्व और सीमा दाब पहचानें। टॉरिसेली का v=√(2gh) संबंध बड़े आदर्श टैंक के छोटे छेद से निकलने पर मिलता है, जब मुक्त सतह और निर्गम पर वायुमंडलीय दाब समान हो तथा सतह की चाल नगण्य हो। वास्तविक प्रवाह में हानियाँ होती हैं। वेंचुरी नली में पहले सांतत्य से चालें और फिर बर्नूली से दाब जोड़े जाते हैं। ऋणात्मक निरपेक्ष दाब मिलने पर मान्यताओं या चुने मानों की उपयुक्तता जाँचें; सामान्य द्रव को असीम तनन सहने वाला न मानें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which condition is essential for the elementary Bernoulli relation?",
+          "hi": "सरल बर्नूली संबंध की आवश्यक शर्त कौन है?"
+        },
+        "answer": {
+          "en": "Steady incompressible nonviscous flow along the chosen streamline.",
+          "hi": "चुनी धारारेखा पर स्थायी, असंपीड्य और अश्यान प्रवाह।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Viscosity, Stokes force and terminal speed",
+        "hi": "श्यानता, स्टोक्स बल और सीमांत चाल"
+      },
+      "paragraphs": [
+        {
+          "en": "Viscosity is a fluid’s internal resistance to relative motion of adjacent layers. In a simple layered flow the tangential stress is η times the velocity gradient perpendicular to the layers. The coefficient η has SI unit Pa s. It is not the same quantity as density. For a small sphere moving slowly through a viscous fluid, Stokes’ law gives drag magnitude 6πηrv, opposite the relative motion. Its use requires low Reynolds number and suitable conditions; it is not a general drag formula for a rapidly moving car or large turbulent object. A falling sphere may reach terminal speed when its weight equals buoyancy plus viscous drag. The acceleration is then zero but the sphere still moves. Combining these forces gives vₜ=2r²(ρsphere−ρfluid)g/(9η) under Stokes conditions. A larger viscosity lowers terminal speed, while the radius dependence is quadratic in this regime. Reynolds number ρvD/η compares inertial and viscous effects, helping identify when simple laminar descriptions may fail. Exact transition behaviour also depends on geometry and disturbances.",
+          "hi": "श्यानता (Viscosity) तरल की पास-पास की परतों के सापेक्ष चलने का आंतरिक प्रतिरोध है। सरल परतीय प्रवाह में स्पर्शरेखीय प्रतिबल परतों के लंबवत वेग प्रवणता का η गुना है। श्यानता गुणांक η का SI मात्रक Pa s है। इसे घनत्व के समान राशि न समझें। किसी श्यान तरल में धीरे चलती छोटी गोली पर स्टोक्स का नियम (Stokes’ law) प्रतिरोध का परिमाण 6πηrv देता है। दिशा सापेक्ष गति के विपरीत होती है। इसके लिए कम रेनॉल्ड्स संख्या और उपयुक्त दशाएँ चाहिए। यह तेज कार या बड़े प्रक्षुब्ध पिंड का सामान्य प्रतिरोध सूत्र नहीं है। गिरती गोली सीमांत चाल (Terminal speed) तक पहुँच सकती है, जब उसका भार उत्प्लावन और श्यान प्रतिरोध के योग के बराबर हो। तब त्वरण शून्य है, लेकिन गोली चलती रहती है। स्टोक्स दशाओं में बल जोड़ने से vₜ=2r²(ρsphere−ρfluid)g/(9η) मिलता है। अधिक श्यानता सीमांत चाल घटाती है और इस क्षेत्र में त्रिज्या का प्रभाव वर्ग के अनुसार है। रेनॉल्ड्स संख्या ρvD/η जड़त्वीय तथा श्यान प्रभावों की तुलना करती है। सरल धारारेखीय वर्णन कब विफल हो सकता है, इसका संकेत मिलता है; वास्तविक संक्रमण ज्यामिति और विक्षोभ पर भी निर्भर है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is a sphere at terminal speed at rest?",
+          "hi": "क्या सीमांत चाल पर गोली विराम में है?"
+        },
+        "answer": {
+          "en": "No. Its velocity is constant because net force and acceleration are zero.",
+          "hi": "नहीं। परिणामी बल और त्वरण शून्य होने से वह नियत वेग से चलती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Surface tension and pressure excess",
+        "hi": "पृष्ठ तनाव और अतिरिक्त दाब"
+      },
+      "paragraphs": [
+        {
+          "en": "A liquid surface behaves as if it tends to reduce its area because surface molecules have a different interaction environment from molecules in the bulk. Surface tension S is force per unit length along a line on the surface, and equivalently surface energy per unit increase in area under suitable conditions. Its unit is N/m, also equal to J/m². It is not force per unit area. A soap film has two surfaces, so counting surfaces matters in force and energy calculations. A spherical liquid drop with one liquid–air surface has excess pressure 2S/r; a thin soap bubble has two surfaces and excess pressure 4S/r. These ideal formulas neglect complications such as thick films and varying tension. Smaller drops require greater pressure excess at the same S. Surface tension generally changes with temperature and contamination. A clean needle can sometimes be supported partly by a depressed surface even though its material is denser than water, but this does not replace buoyancy as a general explanation for every floating object.",
+          "hi": "द्रव की सतह अपना क्षेत्रफल घटाने की प्रवृत्ति रखती है, क्योंकि सतह के अणुओं का पारस्परिक वातावरण भीतरी अणुओं से अलग होता है। पृष्ठ तनाव (Surface tension) S सतह की किसी रेखा पर प्रति इकाई लंबाई बल है। उचित दशाओं में यह प्रति इकाई क्षेत्रफल वृद्धि की पृष्ठ ऊर्जा के बराबर भी होता है। इसका मात्रक N/m या समान रूप में J/m² है। यह प्रति इकाई क्षेत्रफल बल नहीं है। साबुन की पतली फिल्म में दो सतहें होती हैं, इसलिए बल और ऊर्जा की गणना में सतहों की संख्या गिनना जरूरी है। एक द्रव–वायु सतह वाली गोल बूंद का अतिरिक्त दाब 2S/r है। दो सतहों वाले पतले साबुन बुलबुले में यह 4S/r है। ये आदर्श सूत्र मोटी फिल्म और बदलते पृष्ठ तनाव जैसी जटिलताएँ छोड़ते हैं। समान S में छोटी बूंद के लिए अधिक अतिरिक्त दाब चाहिए। ताप और अशुद्धि से पृष्ठ तनाव बदल सकता है। साफ सुई को सतह का झुकाव आंशिक सहारा दे सकता है, भले उसकी धातु जल से घनी हो। लेकिन हर तैरती वस्तु के लिए इससे उत्प्लावन की सामान्य व्याख्या को नहीं बदलना चाहिए।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does a soap bubble have 4S/r rather than 2S/r?",
+          "hi": "साबुन बुलबुले में 2S/r के बजाय 4S/r क्यों है?"
+        },
+        "answer": {
+          "en": "A thin soap bubble has two liquid–air surfaces.",
+          "hi": "पतले साबुन बुलबुले में 2 द्रव–वायु सतहें होती हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Contact angle, capillarity and problem solving",
+        "hi": "संपर्क कोण, केशिकत्व और प्रश्न विधि"
+      },
+      "paragraphs": [
+        {
+          "en": "The contact angle is measured through the liquid between the tangent to its surface and the solid wall. It depends on the liquid, solid and surrounding medium. Wetting liquids can rise in a narrow tube; nonwetting combinations can show a depression. For a circular capillary of radius r in the elementary equilibrium model, h=2S cosθ/(ρgr). The cosine gives the sign and the tube radius gives the inverse size dependence. A smaller tube produces a larger magnitude of rise or depression, provided the assumptions hold. Do not substitute the tube diameter for its radius without the corresponding factor. To solve a fluid problem, identify whether it concerns a resting fluid, a flowing ideal fluid, viscosity or a surface effect. Write the conservation or equilibrium law before numbers, then convert area, volume and density to SI. Use gauge pressures consistently if atmospheric contributions cancel. Finally check plausibility: a horizontal ideal flow speeding up should lose static pressure, while a deeper point in resting water should gain pressure. These are distinct physical situations.",
+          "hi": "संपर्क कोण (Contact angle) ठोस दीवार और द्रव सतह की स्पर्शरेखा के बीच द्रव के अंदर मापा जाता है। यह द्रव, ठोस और आसपास के माध्यम पर निर्भर है। भिगोने वाला द्रव संकरी नली में ऊपर चढ़ सकता है, जबकि न भिगोने वाली जोड़ी में सतह नीचे जा सकती है। वृत्ताकार केशिका की त्रिज्या r के लिए सरल संतुलन मॉडल h=2S cosθ/(ρgr) देता है। कोसाइन चिह्न बताता है और त्रिज्या ऊँचाई की व्युत्क्रम निर्भरता बताती है। मान्यताएँ सही हों तो छोटी नली में चढ़ाव या अवनमन का परिमाण अधिक है। त्रिज्या की जगह बिना उपयुक्त गुणक व्यास न रखें। प्रश्न हल करते समय पहले पहचानें कि मामला विराम द्रव, आदर्श प्रवाह, श्यानता या पृष्ठ प्रभाव का है। संख्याएँ रखने से पहले संरक्षण या संतुलन का नियम लिखें। फिर क्षेत्रफल, आयतन और घनत्व को SI में बदलें। वायुमंडलीय अंश कटते हों तो गेज दाब का संगत प्रयोग करें। अंत में भौतिक अर्थ जाँचें: क्षैतिज आदर्श प्रवाह के तेज भाग में स्थैतिक दाब घटेगा, लेकिन स्थिर जल में अधिक गहराई पर दाब बढ़ेगा। दोनों अलग स्थितियाँ हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What changes in capillary rise if tube radius doubles?",
+          "hi": "नली की त्रिज्या दोगुनी हो तो केशिका चढ़ाव?"
+        },
+        "answer": {
+          "en": "Its magnitude halves at fixed S, angle, density and g.",
+          "hi": "नियत S, कोण, घनत्व और g में परिमाण आधा होगा।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "p = p₀ + ρgh",
+      "meaning": {
+        "en": "Hydrostatic pressure at vertical depth h.",
+        "hi": "ऊर्ध्वाधर गहराई h पर द्रवस्थैतिक दाब।"
+      },
+      "units": {
+        "en": "Pa",
+        "hi": "Pa"
+      }
+    },
+    {
+      "expression": "A₁v₁ = A₂v₂",
+      "meaning": {
+        "en": "Steady incompressible continuity.",
+        "hi": "स्थायी असंपीड्य सांतत्य।"
+      },
+      "units": {
+        "en": "m³/s",
+        "hi": "m³/s"
+      }
+    },
+    {
+      "expression": "p + ρv²/2 + ρgh = constant",
+      "meaning": {
+        "en": "Ideal Bernoulli relation along a streamline.",
+        "hi": "धारारेखा पर आदर्श बर्नूली संबंध।"
+      },
+      "units": {
+        "en": "Pa",
+        "hi": "Pa"
+      }
+    },
+    {
+      "expression": "Fdrag = 6πηrv",
+      "meaning": {
+        "en": "Slow small-sphere viscous drag.",
+        "hi": "धीमी छोटी गोली पर श्यान प्रतिरोध।"
+      },
+      "units": {
+        "en": "N",
+        "hi": "N"
+      }
+    },
+    {
+      "expression": "Δpdrop = 2S/r; Δpbubble = 4S/r",
+      "meaning": {
+        "en": "One drop surface versus two bubble surfaces.",
+        "hi": "बूंद की 1 सतह और बुलबुले की 2 सतहें।"
+      },
+      "units": {
+        "en": "Pa",
+        "hi": "Pa"
+      }
+    },
+    {
+      "expression": "h = 2S cosθ/(ρgr)",
+      "meaning": {
+        "en": "Ideal capillary equilibrium.",
+        "hi": "आदर्श केशिका संतुलन।"
+      },
+      "units": {
+        "en": "m",
+        "hi": "m"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not mix gauge and absolute pressure, apply Bernoulli to arbitrary turbulent flow, or confuse bubble and drop surfaces.",
+    "hi": "गेज और निरपेक्ष दाब न मिलाएँ, बर्नूली को किसी भी प्रक्षुब्ध प्रवाह पर न लगाएँ और बुलबुले तथा बूंद की सतहें न मिलाएँ।"
+  },
+  "summary": [
+    {
+      "en": "Pressure is scalar and rises with depth in a resting uniform liquid.",
+      "hi": "दाब अदिश है और स्थिर समान द्रव में गहराई से बढ़ता है।"
+    },
+    {
+      "en": "Continuity expresses mass conservation.",
+      "hi": "सांतत्य द्रव्यमान संरक्षण बताता है।"
+    },
+    {
+      "en": "Bernoulli requires explicit ideal-flow assumptions.",
+      "hi": "बर्नूली के लिए स्पष्ट आदर्श प्रवाह मान्यताएँ चाहिए।"
+    },
+    {
+      "en": "Viscosity resists relative layer motion.",
+      "hi": "श्यानता परतों की सापेक्ष गति का विरोध करती है।"
+    },
+    {
+      "en": "Surface tension controls small drops, films and capillary effects.",
+      "hi": "पृष्ठ तनाव छोटी बूंदों, फिल्मों और केशिका प्रभावों में महत्त्वपूर्ण है।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find gauge pressure 5 m below water surface.",
+        "hi": "जल सतह से 5 m नीचे गेज दाब निकालें।"
+      },
+      "given": {
+        "en": "ρ=1000 kg/m³, g=9.8 m/s², h=5 m.",
+        "hi": "ρ=1000 kg/m³, g=9.8 m/s², h=5 m।"
+      },
+      "find": {
+        "en": "Gauge pressure.",
+        "hi": "गेज दाब।"
+      },
+      "formula": {
+        "en": "p−p₀=ρgh",
+        "hi": "p−p₀=ρgh"
+      },
+      "steps": [
+        {
+          "en": "Multiply 1000 × 9.8 × 5.",
+          "hi": "1000 × 9.8 × 5 करें।"
+        }
+      ],
+      "answer": {
+        "en": "49,000 Pa = 49 kPa.",
+        "hi": "49,000 Pa = 49 kPa।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A hydraulic piston area ratio is 20. Find ideal output force for 100 N input.",
+        "hi": "द्रवचालित पिस्टन क्षेत्रफल अनुपात 20 है। 100 N निवेश पर आदर्श निर्गम बल निकालें।"
+      },
+      "given": {
+        "en": "A₂/A₁=20.",
+        "hi": "A₂/A₁=20।"
+      },
+      "find": {
+        "en": "F₂.",
+        "hi": "F₂।"
+      },
+      "formula": {
+        "en": "F₂=F₁A₂/A₁",
+        "hi": "F₂=F₁A₂/A₁"
+      },
+      "steps": [
+        {
+          "en": "Multiply 100 N by 20.",
+          "hi": "100 N को 20 से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "2000 N, ignoring height and losses.",
+        "hi": "ऊँचाई अंतर और हानि छोड़ने पर 2000 N।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find outlet speed when area falls from 4 cm² to 2 cm² and inlet speed is 2 m/s.",
+        "hi": "प्रवेश चाल 2 m/s और क्षेत्रफल 4 cm² से 2 cm² हो तो निर्गम चाल निकालें।"
+      },
+      "given": {
+        "en": "Steady incompressible flow.",
+        "hi": "स्थायी असंपीड्य प्रवाह।"
+      },
+      "find": {
+        "en": "v₂.",
+        "hi": "v₂।"
+      },
+      "formula": {
+        "en": "A₁v₁=A₂v₂",
+        "hi": "A₁v₁=A₂v₂"
+      },
+      "steps": [
+        {
+          "en": "Use the area ratio 4/2=2.",
+          "hi": "क्षेत्रफल अनुपात 4/2=2 लें।"
+        }
+      ],
+      "answer": {
+        "en": "v₂=4 m/s.",
+        "hi": "v₂=4 m/s।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find pressure at a faster horizontal section.",
+        "hi": "तेज क्षैतिज भाग पर दाब निकालें।"
+      },
+      "given": {
+        "en": "p₁=200 kPa; v₁=2 m/s; v₂=5 m/s; ρ=1000 kg/m³.",
+        "hi": "p₁=200 kPa; v₁=2 m/s; v₂=5 m/s; ρ=1000 kg/m³।"
+      },
+      "find": {
+        "en": "p₂.",
+        "hi": "p₂।"
+      },
+      "formula": {
+        "en": "p₂=p₁+ρ(v₁²−v₂²)/2",
+        "hi": "p₂=p₁+ρ(v₁²−v₂²)/2"
+      },
+      "steps": [
+        {
+          "en": "Velocity contribution is 500(4−25)=−10,500 Pa.",
+          "hi": "चाल पद 500(4−25)=−10,500 Pa है।"
+        },
+        {
+          "en": "Subtract from 200,000 Pa.",
+          "hi": "200,000 Pa से घटाएँ।"
+        }
+      ],
+      "answer": {
+        "en": "189,500 Pa = 189.5 kPa in ideal flow.",
+        "hi": "आदर्श प्रवाह में 189,500 Pa = 189.5 kPa।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Compare pressure excess in a water drop and soap bubble of the same radius.",
+        "hi": "समान त्रिज्या की जल बूंद और साबुन बुलबुले के अतिरिक्त दाब की तुलना करें।"
+      },
+      "given": {
+        "en": "For this comparison both have S=0.03 N/m; r=1 mm.",
+        "hi": "तुलना में दोनों का S=0.03 N/m और r=1 mm लें।"
+      },
+      "find": {
+        "en": "Both excess pressures.",
+        "hi": "दोनों अतिरिक्त दाब।"
+      },
+      "formula": {
+        "en": "Drop:2S/r; bubble:4S/r",
+        "hi": "बूंद:2S/r; बुलबुला:4S/r"
+      },
+      "steps": [
+        {
+          "en": "Convert r to 0.001 m.",
+          "hi": "r=0.001 m करें।"
+        },
+        {
+          "en": "One surface gives 60 Pa; two surfaces give twice that.",
+          "hi": "1 सतह से 60 Pa; 2 सतह से उसका दोगुना।"
+        }
+      ],
+      "answer": {
+        "en": "Drop 60 Pa; bubble 120 Pa.",
+        "hi": "बूंद 60 Pa; बुलबुला 120 Pa।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Pressure is:",
+        "hi": "दाब है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Scalar",
+            "hi": "अदिश"
+          },
+          "reason": {
+            "en": "Surface orientation sets force direction.",
+            "hi": "बल की दिशा सतह से तय होती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always a vector",
+            "hi": "हमेशा सदिश"
+          },
+          "reason": {
+            "en": "Force is vector but pressure is scalar.",
+            "hi": "बल सदिश है, दाब अदिश।"
+          }
+        },
+        {
+          "text": {
+            "en": "Measured in N only",
+            "hi": "केवल N में"
+          },
+          "reason": {
+            "en": "Pressure is N/m².",
+            "hi": "दाब N/m² है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass per volume",
+            "hi": "द्रव्यमान/आयतन"
+          },
+          "reason": {
+            "en": "That is density.",
+            "hi": "वह घनत्व है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Hydrostatic gauge pressure is:",
+        "hi": "द्रवस्थैतिक गेज दाब है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ρgh",
+            "hi": "ρgh"
+          },
+          "reason": {
+            "en": "This is the pressure above surface pressure.",
+            "hi": "यह सतह दाब से अतिरिक्त दाब है।"
+          }
+        },
+        {
+          "text": {
+            "en": "ρg/h",
+            "hi": "ρg/h"
+          },
+          "reason": {
+            "en": "Depth belongs in the numerator.",
+            "hi": "गहराई अंश में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "gh/ρ",
+            "hi": "gh/ρ"
+          },
+          "reason": {
+            "en": "Density multiplies depth.",
+            "hi": "घनत्व से गुणा होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "ρh/g",
+            "hi": "ρh/g"
+          },
+          "reason": {
+            "en": "Gravity also multiplies depth.",
+            "hi": "g से भी गुणा होता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Continuity for fixed density gives:",
+        "hi": "नियत घनत्व में सांतत्य देता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Av constant",
+            "hi": "Av नियत"
+          },
+          "reason": {
+            "en": "Volume rate is conserved.",
+            "hi": "आयतन दर संरक्षित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A/v constant",
+            "hi": "A/v नियत"
+          },
+          "reason": {
+            "en": "This is not volume rate.",
+            "hi": "यह आयतन दर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Av² constant",
+            "hi": "Av² नियत"
+          },
+          "reason": {
+            "en": "This differs from mass continuity.",
+            "hi": "यह द्रव्यमान सांतत्य नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A+v constant",
+            "hi": "A+v नियत"
+          },
+          "reason": {
+            "en": "Units cannot be added this way.",
+            "hi": "अलग मात्रक ऐसे नहीं जुड़ते।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At the same height in ideal Bernoulli flow, higher speed means:",
+        "hi": "समान ऊँचाई के आदर्श बर्नूली प्रवाह में अधिक चाल का अर्थ:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Lower pressure",
+            "hi": "कम दाब"
+          },
+          "reason": {
+            "en": "The pressure and kinetic terms sum to a constant.",
+            "hi": "दाब और गतिज पद का योग नियत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always higher pressure",
+            "hi": "हमेशा अधिक दाब"
+          },
+          "reason": {
+            "en": "This reverses the relation.",
+            "hi": "यह संबंध उल्टा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No pressure change",
+            "hi": "दाब नहीं बदलता"
+          },
+          "reason": {
+            "en": "Kinetic energy per volume has changed.",
+            "hi": "प्रति आयतन गतिज ऊर्जा बदली है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite pressure",
+            "hi": "अनंत दाब"
+          },
+          "reason": {
+            "en": "No finite speed change implies infinity.",
+            "hi": "सीमित चाल परिवर्तन से अनंत नहीं मिलता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Stokes drag magnitude is:",
+        "hi": "स्टोक्स प्रतिरोध का परिमाण है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "6πηrv",
+            "hi": "6πηrv"
+          },
+          "reason": {
+            "en": "Valid for a slowly moving small sphere under stated conditions.",
+            "hi": "उपयुक्त दशाओं में धीमी छोटी गोली के लिए सही।"
+          }
+        },
+        {
+          "text": {
+            "en": "mg only",
+            "hi": "केवल mg"
+          },
+          "reason": {
+            "en": "This is weight.",
+            "hi": "यह भार है।"
+          }
+        },
+        {
+          "text": {
+            "en": "ρgh",
+            "hi": "ρgh"
+          },
+          "reason": {
+            "en": "This is pressure, not force.",
+            "hi": "यह दाब है, बल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2S/r",
+            "hi": "2S/r"
+          },
+          "reason": {
+            "en": "This is a drop pressure excess.",
+            "hi": "यह बूंद का अतिरिक्त दाब है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At terminal speed, acceleration is:",
+        "hi": "सीमांत चाल पर त्वरण है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "Forces balance although velocity is nonzero.",
+            "hi": "वेग अशून्य हो सकता है, पर बल संतुलित हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always g",
+            "hi": "हमेशा g"
+          },
+          "reason": {
+            "en": "Drag and buoyancy cannot then be ignored.",
+            "hi": "प्रतिरोध और उत्प्लावन नहीं छोड़ सकते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "Net force is zero, not infinite.",
+            "hi": "परिणामी बल शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Equal to speed",
+            "hi": "चाल के बराबर"
+          },
+          "reason": {
+            "en": "The quantities have different units.",
+            "hi": "दोनों के मात्रक अलग हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Surface tension unit is:",
+        "hi": "पृष्ठ तनाव का मात्रक है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "N/m",
+            "hi": "N/m"
+          },
+          "reason": {
+            "en": "It is force per line length.",
+            "hi": "यह प्रति रेखा लंबाई बल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "N/m²",
+            "hi": "N/m²"
+          },
+          "reason": {
+            "en": "This is pressure.",
+            "hi": "यह दाब है।"
+          }
+        },
+        {
+          "text": {
+            "en": "kg/m³",
+            "hi": "kg/m³"
+          },
+          "reason": {
+            "en": "This is density.",
+            "hi": "यह घनत्व है।"
+          }
+        },
+        {
+          "text": {
+            "en": "m/s",
+            "hi": "m/s"
+          },
+          "reason": {
+            "en": "This is speed.",
+            "hi": "यह चाल है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A thin soap bubble has pressure excess:",
+        "hi": "पतले साबुन बुलबुले का अतिरिक्त दाब है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4S/r",
+            "hi": "4S/r"
+          },
+          "reason": {
+            "en": "There are two surfaces.",
+            "hi": "इसमें 2 सतहें हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2S/r",
+            "hi": "2S/r"
+          },
+          "reason": {
+            "en": "This is for one spherical drop surface.",
+            "hi": "यह 1 सतह वाली गोल बूंद के लिए है।"
+          }
+        },
+        {
+          "text": {
+            "en": "S/r²",
+            "hi": "S/r²"
+          },
+          "reason": {
+            "en": "This has the wrong dimensions.",
+            "hi": "इसकी विमा गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero always",
+            "hi": "हमेशा शून्य"
+          },
+          "reason": {
+            "en": "Curved surfaces require pressure excess.",
+            "hi": "वक्र सतह को अतिरिक्त दाब चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Capillary rise is inversely proportional to:",
+        "hi": "केशिका चढ़ाव किसके व्युत्क्रमानुपाती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Tube radius",
+            "hi": "नली की त्रिज्या"
+          },
+          "reason": {
+            "en": "h contains 1/r.",
+            "hi": "h में 1/r है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Surface tension",
+            "hi": "पृष्ठ तनाव"
+          },
+          "reason": {
+            "en": "h is proportional to S.",
+            "hi": "h, S के समानुपाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cosθ",
+            "hi": "cosθ"
+          },
+          "reason": {
+            "en": "This factor is in the numerator.",
+            "hi": "यह अंश में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nothing",
+            "hi": "किसी के नहीं"
+          },
+          "reason": {
+            "en": "Geometry matters.",
+            "hi": "ज्यामिति का प्रभाव है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A hydraulic lift gains force but must:",
+        "hi": "द्रवचालित लिफ्ट में बल बढ़ने पर क्या होगा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Reduce output displacement for ideal energy balance",
+            "hi": "आदर्श ऊर्जा संतुलन में निर्गम विस्थापन घटेगा"
+          },
+          "reason": {
+            "en": "Equal displaced fluid volume enforces this.",
+            "hi": "समान विस्थापित द्रव आयतन से ऐसा होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Create free energy",
+            "hi": "मुफ्त ऊर्जा बनेगी"
+          },
+          "reason": {
+            "en": "Energy is conserved.",
+            "hi": "ऊर्जा संरक्षित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Remove atmospheric pressure",
+            "hi": "वायुमंडलीय दाब मिटेगा"
+          },
+          "reason": {
+            "en": "Force multiplication does not remove the atmosphere.",
+            "hi": "बल बढ़ने से वायुमंडल नहीं हटता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Make density zero",
+            "hi": "घनत्व शून्य होगा"
+          },
+          "reason": {
+            "en": "Density is not eliminated.",
+            "hi": "घनत्व समाप्त नहीं होता।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Is pressure a vector because pressure forces have directions?",
+        "hi": "क्या दाब के बल की दिशा होने से दाब सदिश है?"
+      },
+      "answer": {
+        "en": "No. Pressure is scalar; the chosen surface determines the force direction.",
+        "hi": "नहीं। दाब अदिश है; चुनी सतह बल की दिशा निर्धारित करती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Does a wider container have greater pressure at the same water depth?",
+        "hi": "समान जल गहराई पर चौड़े पात्र में दाब अधिक होगा?"
+      },
+      "answer": {
+        "en": "No. At fixed surface pressure, density and gravity, pressure depends on vertical depth.",
+        "hi": "नहीं। समान सतह दाब, घनत्व और गुरुत्व में दाब ऊर्ध्वाधर गहराई पर निर्भर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which volume enters buoyancy for a floating block?",
+        "hi": "तैरते गुटके के उत्प्लावन में कौन-सा आयतन लिया जाता है?"
+      },
+      "answer": {
+        "en": "The displaced fluid volume, equal to the submerged volume.",
+        "hi": "विस्थापित तरल का आयतन, जो डूबे भाग के आयतन के बराबर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "If area is halved in the same incompressible steady stream, what happens to speed?",
+        "hi": "उसी असंपीड्य स्थायी धारा में क्षेत्रफल आधा हो तो चाल?"
+      },
+      "answer": {
+        "en": "It doubles because Av remains constant.",
+        "hi": "Av नियत होने से चाल दोगुनी होती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which condition is essential for the elementary Bernoulli relation?",
+        "hi": "सरल बर्नूली संबंध की आवश्यक शर्त कौन है?"
+      },
+      "answer": {
+        "en": "Steady incompressible nonviscous flow along the chosen streamline.",
+        "hi": "चुनी धारारेखा पर स्थायी, असंपीड्य और अश्यान प्रवाह।"
+      }
+    },
+    {
+      "question": {
+        "en": "Is a sphere at terminal speed at rest?",
+        "hi": "क्या सीमांत चाल पर गोली विराम में है?"
+      },
+      "answer": {
+        "en": "No. Its velocity is constant because net force and acceleration are zero.",
+        "hi": "नहीं। परिणामी बल और त्वरण शून्य होने से वह नियत वेग से चलती है।"
+      }
+    }
+  ],
+  "conceptMapEn": "Resting fluids → pressure and buoyancy → mass continuity → Bernoulli energy balance → viscous losses → surface tension and capillarity",
+  "conceptMap": "स्थिर तरल → दाब और उत्प्लावन → द्रव्यमान सांतत्य → बर्नूली ऊर्जा संतुलन → श्यान हानि → पृष्ठ तनाव और केशिकत्व"
+}

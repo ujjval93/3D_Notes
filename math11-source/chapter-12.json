@@ -1,0 +1,888 @@
+{
+  "id": 12,
+  "title": {
+    "en": "Limits and Derivatives",
+    "hi": "सीमा और अवकलज"
+  },
+  "goal": {
+    "en": "Understand approach, simplify limits, and derive instantaneous rates and tangent slopes.",
+    "hi": "निकट जाने का अर्थ समझें, सीमाएँ सरल करें तथा तात्कालिक दर और स्पर्श ढाल निकालें।"
+  },
+  "engine": "eleven-math",
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Approaching a value",
+        "hi": "किसी मान के निकट जाना"
+      },
+      "body": {
+        "en": "A limit describes the value a function approaches as its input approaches a point. It need not equal the function’s value at that point, and the function may even be undefined there. Nearby inputs on both sides matter. A table provides evidence but not a proof; rounded values can conceal behaviour. Write x→a rather than x=a during an approach. For a two-sided limit, left and right approaches must agree. Different one-sided limits mean the two-sided limit does not exist. A graph should show the approached height separately from any filled point representing an assigned function value.",
+        "hi": "सीमा (Limit) बताती है कि x किसी a के निकट जाने पर f(x) किस मान के निकट जाता है। इसमें x का ठीक a होना आवश्यक नहीं है। f(a) अलग हो सकता है या वहाँ फलन परिभाषित ही न हो। इसलिए x→a और x=a अलग कथन हैं। बाएँ से आने पर मिलने वाली सीमा तथा दाएँ से आने पर मिलने वाली सीमा बराबर हों, तभी द्विपक्षीय सीमा मौजूद है। पास के मानों की सारणी उपयोगी संकेत देती है, लेकिन अकेले प्रमाण नहीं है। दशमलव गोल करने से अचानक बदलाव छिप सकता है। चित्र में निकट जाता ऊँचाई मान और ठीक बिंदु का भरा हुआ चिह्न अलग समझें। उदाहरण के लिए (x²−1)/(x−1) फलन x=1 पर अपरिभाषित है, फिर भी उसके पास मान 2 की ओर जाते हैं। सीमा निकालते समय पहले आसपास का व्यवहार देखें, फिर फलन के उस बिंदु पर मान से तुलना करें। अनंत की ओर बढ़ना किसी परिमित संख्या के बराबर होना नहीं है।"
+      },
+      "formula": "lim_(x→a) f(x)=L",
+      "question": {
+        "en": "Can a limit exist where f(a) is undefined?",
+        "hi": "क्या f(a) अपरिभाषित होने पर सीमा हो सकती है?"
+      },
+      "answer": {
+        "en": "Yes; the nearby behaviour may approach one value.",
+        "hi": "हाँ; आसपास का व्यवहार एक मान की ओर जा सकता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Limit algebra and direct substitution",
+        "hi": "सीमा बीजगणित और सीधा प्रतिस्थापन"
+      },
+      "body": {
+        "en": "When finite limits exist, sums, differences, constant multiples and products have the corresponding combined limits. A quotient rule also works if the limiting denominator is nonzero. For polynomials, direct substitution gives the limit. For rational functions, first check whether the denominator stays nonzero at the target. A result 0/0 is an indeterminate form, not the number zero and not an automatic proof of nonexistence. It signals that the expression needs rewriting. Never divide a limit by zero under the ordinary quotient rule. State the domain restrictions that justified any cancellation.",
+        "hi": "परिमित सीमाएँ मौजूद हों, तो योग, अंतर, स्थिर गुणक तथा गुणनफल की सीमाएँ संबंधित मानों के योग, अंतर और गुणनफल से मिलती हैं। भागफल का नियम तभी सीधे लागू होगा जब हर की सीमा 0 न हो। बहुपद में x=a रखकर सीमा मिलती है। परिमेय फलन में पहले हर जाँचें। यदि प्रतिस्थापन से 0/0 मिलता है, तो यह अनिर्धार्य रूप (Indeterminate form) है। इसे 0, 1 या सीमा का न होना घोषित न करें। इसका अर्थ है कि अभिव्यक्ति को नए रूप में लिखना आवश्यक है। जैसे गुणनखंडन, परिमेयकरण या मानक त्रिकोणमितीय सीमा मदद कर सकती है। सीमा नियम में 0 से भाग देना मान्य नहीं है। किसी पद को काटने से पहले उसके गुणनखंड होने की शर्त देखें; योग के अलग पद सीधे नहीं कटते। हल में पहले प्रतिस्थापन की जाँच लिखें, फिर उचित विधि चुनें। इससे स्पष्ट होता है कि सरल रूप क्यों चाहिए और किन आसपास के x के लिए वह बराबर है।"
+      },
+      "formula": "lim(f/g)=lim f / lim g, if lim g≠0",
+      "question": {
+        "en": "What does 0/0 indicate in a limit?",
+        "hi": "सीमा में 0/0 क्या बताता है?"
+      },
+      "answer": {
+        "en": "An indeterminate form requiring further analysis.",
+        "hi": "आगे विश्लेषण माँगने वाला अनिर्धार्य रूप।"
+      }
+    },
+    {
+      "title": {
+        "en": "Factorisation and rationalisation",
+        "hi": "गुणनखंडन और परिमेयकरण"
+      },
+      "body": {
+        "en": "A removable factor can make a rational expression simpler near the target even though the original expression is undefined at the target. For (x²−a²)/(x−a), factor the numerator and cancel x−a for x≠a, leaving x+a. The limit is then 2a. With square roots, multiply numerator and denominator by a conjugate to use a difference of squares. The conjugate multiplication must apply to the entire fraction. Keep the restriction x≠a during cancellation; the goal is not to assign a value to the original undefined expression, but to study nearby values.",
+        "hi": "कुछ सीमाओं में गुणनखंडन (Factorisation) से शून्य होता गुणनखंड हट सकता है। (x²−a²)/(x−a) में अंश (x−a)(x+a) है। x≠a के लिए x−a काटने पर x+a बचता है। इसलिए x→a पर सीमा 2a है। मूल फलन को a पर नया मान देना इस प्रक्रिया का उद्देश्य नहीं है; आसपास के बराबर व्यवहार का उपयोग करना उद्देश्य है। वर्गमूल वाली सीमा में परिमेयकरण (Rationalisation) उपयोगी है। √(1+x)−1 को उसके संयुग्मी √(1+x)+1 से गुणा करने पर अंश x बन जाता है। पूरे भिन्न के अंश और हर दोनों को संयुग्मी से गुणा करें, केवल अंश को नहीं। गुणनखंड काटना x≠0 जैसी शर्त के भीतर होता है। फिर सरल अभिव्यक्ति में लक्ष्य मान रखें। हल की अंतिम जाँच छोटे धन और ऋण x लेकर कर सकते हैं। लेकिन सारणी बीजगणितीय कारण का स्थान नहीं लेती। गलती से वर्गमूल को जोड़ पर बाँटने से बचें: √(a+b) सामान्यतः √a+√b नहीं है।"
+      },
+      "formula": "lim_(x→a)(x²−a²)/(x−a)=2a",
+      "question": {
+        "en": "Find lim_(x→2)(x²−4)/(x−2).",
+        "hi": "lim_(x→2)(x²−4)/(x−2) निकालें।"
+      },
+      "answer": {
+        "en": "After cancellation, limit of x+2 is 4.",
+        "hi": "काटने के बाद x+2 की सीमा 4 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Trigonometric limits in radians",
+        "hi": "रेडियन में त्रिकोणमितीय सीमाएँ"
+      },
+      "body": {
+        "en": "The fundamental limit sin x/x→1 as x→0 uses radians. Replacing radians by degrees without conversion changes the constant. From the fundamental result, sin(kx)/x→k for fixed real k. The identity 1−cos x=2sin²(x/2) gives (1−cos x)/x→0 and (1−cos x)/x²→1/2. Apply the identity before substituting. A transformed variable must also approach zero for the standard result to apply. Distinguish sin²x from sin(x²), since they are different functions. The notation sin^-1 can mean inverse sine, so avoid using it carelessly for a reciprocal.",
+        "hi": "मूल त्रिकोणमितीय सीमा lim_(x→0)(sin x)/x=1 में x रेडियन (Radian) में है। डिग्री को बिना रूपांतरण रखने से स्थिरांक बदल जाएगा। यही शर्त आगे त्रिकोणमितीय अवकलजों में भी जरूरी है। स्थिर k के लिए sin(kx)/x को k[sin(kx)/(kx)] लिखने पर सीमा k मिलती है, क्योंकि kx भी 0 की ओर जाता है। पहचान 1−cos x=2sin²(x/2) से (1−cos x)/x की सीमा 0 तथा (1−cos x)/x² की सीमा 1/2 मिलती है। लक्ष्य के अनुसार सही हर अलग पहचानें। कोष्ठक स्पष्ट रखें: sin²x का अर्थ (sin x)² है, sin(x²) नहीं। मानक सीमा लगाने से पहले अंदर का कोण 0 की ओर जा रहा है या नहीं, यह जाँचें। 0/0 देखकर अंश और हर अलग से 0 रखकर निष्कर्ष न निकालें। पहचान से रूप बदलना और मानक सीमा तक पहुँचाना समाधान का मुख्य तर्क है। चित्र छोटा कोण समझा सकता है, लेकिन रेडियन की शर्त हटाता नहीं।"
+      },
+      "formula": "lim_(x→0) sin x/x=1 (radians)",
+      "question": {
+        "en": "Find lim_(x→0) sin(3x)/x.",
+        "hi": "lim_(x→0) sin(3x)/x ज्ञात करें।"
+      },
+      "answer": {
+        "en": "3.",
+        "hi": "3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Derivative from first principles",
+        "hi": "प्रथम सिद्धांत से अवकलज"
+      },
+      "body": {
+        "en": "The derivative at a is the limit of [f(a+h)−f(a)]/h as h→0, if it exists. The quotient is an average rate of change over a small nonzero interval; its limit is the instantaneous rate. Geometrically it is the limiting slope of secants, giving the tangent slope. A derivative can be positive, zero or negative. Its units are output units per input unit. For f(x)=x², expansion gives 2a+h and the derivative is 2a. Keep f(a+h) distinct from f(a)+h; the function acts on the whole shifted input.",
+        "hi": "अवकलज (Derivative) f′(a)=lim_(h→0)[f(a+h)−f(a)]/h से परिभाषित है, जब सीमा मौजूद हो। h अशून्य रहते हुए भागफल छोटे अंतराल पर औसत परिवर्तन दर है। h को 0 के निकट ले जाने पर तात्कालिक परिवर्तन दर मिलती है। ज्यामिति में छेदक रेखा की ढाल स्पर्शरेखा की ढाल की ओर जाती है। f(a+h) में पूरा नया आगत फलन में रखें। यह f(a)+h नहीं है। उदाहरण f(x)=x² में f(a+h)=(a+h)² होगा। अंतर लेने पर 2ah+h² और h से भाग देने पर 2a+h मिलता है। सीमा 2a है। अवकलज धनात्मक, ऋणात्मक या 0 हो सकता है। फलन का मान और उसकी बदलने की दर अलग राशियाँ हैं। यदि दूरी समय का फलन हो तो अवकलज की इकाई m/s होगी। केवल बिंदु पर स्पर्श करती रेखा देखकर स्पर्शरेखा की ढाल न मानें; सीमा की परिभाषा या सही नियम से निकालें।"
+      },
+      "formula": "f′(a)=lim_(h→0)[f(a+h)−f(a)]/h",
+      "question": {
+        "en": "Find derivative of x² at x=3.",
+        "hi": "x=3 पर x² का अवकलज।"
+      },
+      "answer": {
+        "en": "2×3=6.",
+        "hi": "2×3=6।"
+      }
+    },
+    {
+      "title": {
+        "en": "Basic derivative rules",
+        "hi": "अवकलन के मूल नियम"
+      },
+      "body": {
+        "en": "The derivative of a constant is zero because its change is zero. The power rule gives d(x^n)/dx=nx^(n−1) on its valid domain. Derivatives distribute over sums and constant multiples. Differentiate each polynomial term separately. The derivative is a function of x until an evaluation point is substituted. For instance, 3x²−5x+7 has derivative 6x−5, not 6x−5+7. The derivative of x is 1, including at x=0. For negative powers, keep the original domain restriction x≠0. A slope of zero at a point does not mean the entire function is constant.",
+        "hi": "स्थिर फलन का अवकलज 0 है क्योंकि उसका मान बदलता नहीं। घात नियम (Power rule) d(x^n)/dx=nx^(n−1) है, जहाँ फलन और नियम का प्रांत मान्य हो। योग तथा स्थिर गुणक पर अवकलन वितरित होता है। इसलिए बहुपद के हर पद को अलग अवकलित कर सकते हैं। 3x²−5x+7 का अवकलज 6x−5 है; स्थिर 7 का अवकलज 0 होने से वह नहीं बचता। अवकलज पहले x का फलन है। किसी बिंदु की ढाल चाहिए तो बाद में उस x का मान रखें। x का अवकलज 1 है, x नहीं। ऋणात्मक घात में मूल प्रांत की शर्त रखें; 1/x के लिए x≠0 है। एक बिंदु पर ढाल 0 होने से पूरा फलन स्थिर नहीं हो जाता। x² में मूलबिंदु पर ढाल 0 है, फिर भी अन्य स्थानों पर मान बदलते हैं। सूत्र को प्रथम सिद्धांत से परिचित छोटे उदाहरण पर जाँचें। गणना में गुणांक और नई घात दोनों लिखना भूल से बचाता है।"
+      },
+      "formula": "d(c)/dx=0; d(x^n)/dx=nx^(n−1)",
+      "question": {
+        "en": "Differentiate 4x³−2x+9.",
+        "hi": "4x³−2x+9 का अवकलज।"
+      },
+      "answer": {
+        "en": "12x²−2.",
+        "hi": "12x²−2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Products, quotients and trigonometric derivatives",
+        "hi": "गुणनफल, भागफल और त्रिकोणमितीय अवकलज"
+      },
+      "body": {
+        "en": "For differentiable u and v, the product derivative is u′v+uv′, not u′v′. The quotient derivative is (vu′−uv′)/v² where v≠0. Parentheses preserve the order and minus sign. In radians, d(sin x)/dx=cos x and d(cos x)/dx=−sin x; hence d(tan x)/dx=sec²x wherever defined. Simplifying an expression before differentiating may be shorter than applying a complicated rule. A quotient’s derivative retains domain exclusions from the original function. Check a rule-based result against direct expansion when both are possible.",
+        "hi": "अवकलनीय u और v के गुणनफल का अवकलज u′v+uv′ है। यह केवल दोनों अवकलजों का गुणनफल u′v′ नहीं है। भागफल में (u/v)′=(vu′−uv′)/v² होता है, जहाँ v≠0 है। अंश में क्रम और ऋण चिह्न बदलने से पूरा उत्तर उलट सकता है। रेडियन में sin x का अवकलज cos x और cos x का अवकलज −sin x है। भागफल नियम से tan x का अवकलज sec²x मिलता है, जहाँ फलन परिभाषित है। कभी पहले व्यंजक सरल करना सुविधाजनक है। जैसे x(x+1) को फैलाकर x²+x का अवकलज 2x+1 सीधे मिल सकता है। गुणनफल नियम से भी यही परिणाम आना चाहिए। मूल फलन में जहाँ हर 0 है, वहाँ सरल किए अवकलज से नया मान न जोड़ें। प्रांत की बाधाएँ याद रखें। सूत्र लिखकर u,u′,v,v′ अलग पहचानें, फिर प्रतिस्थापन करें। इससे जटिल कोष्ठक और चिह्न संबंधी गलतियाँ घटती हैं।"
+      },
+      "formula": "(uv)′=u′v+uv′; (u/v)′=(vu′−uv′)/v²",
+      "question": {
+        "en": "Is (uv)′ equal to u′v′?",
+        "hi": "क्या (uv)′=u′v′ है?"
+      },
+      "answer": {
+        "en": "No; it is u′v+uv′.",
+        "hi": "नहीं; वह u′v+uv′ है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Existence and interpretation",
+        "hi": "अस्तित्व और अर्थ"
+      },
+      "body": {
+        "en": "A derivative exists only when the corresponding left and right difference-quotient limits agree and are finite. The function |x| has slopes −1 and +1 on the two sides of zero, so it has no derivative at zero. A sharp corner on a graph may therefore signal nondifferentiability. Numerical secants approach a derivative but never replace the limit argument. Small intervals can also amplify rounding error. In a rate problem state the dependent quantity, independent quantity, evaluation point and units. Distinguish a function value, a limit and a derivative: they answer three different questions about the same model. At x=2, f(x)=x² has value 4 but derivative 4; the equal numbers are a coincidence. At x=3 the value is 9 while the derivative is 6. Keep the question “how much?” separate from “how fast changing?”.",
+        "hi": "अवकलज का अस्तित्व (Existence) तभी है जब अंतर भागफल की बाएँ तथा दाएँ सीमाएँ समान परिमित मान दें। |x| में x<0 पर ढाल −1 और x>0 पर +1 है। इसलिए मूलबिंदु पर दोनों पक्ष नहीं मिलते और अवकलज मौजूद नहीं है। चित्र का तीखा कोना इस समस्या का संकेत देता है। परंतु केवल देखने से निष्कर्ष के स्थान पर अंतर भागफल जाँचना बेहतर है। संख्यात्मक छेदक ढालें अवकलज का अनुमान देती हैं, सीमा का तर्क नहीं बदलतीं। बहुत छोटा h लेने पर गोलाई की त्रुटि भी बढ़ सकती है। दर वाले प्रश्न में बताइए कि कौन-सी राशि किसके सापेक्ष बदल रही है। मूल्यांकन बिंदु और इकाइयाँ साथ लिखें। फलन का मान, सीमा और अवकलज 3 अलग प्रश्नों के उत्तर हैं। कोई फलन बिंदु पर परिभाषित हो सकता है, सीमा भी हो सकती है, फिर भी अवकलज न हो। |x| इसका सरल उदाहरण है। इन अवधारणाओं को अलग रखने से दृश्य तथा सूत्र दोनों स्पष्ट होते हैं। x=2 पर x² का मान 4 और अवकलज भी 4 है, लेकिन यह संख्या का संयोग है। x=3 पर मान 9 और अवकलज 6 है। इसलिए कितना मान है तथा कितनी तेजी से बदल रहा है, इन प्रश्नों को अलग रखें।"
+      },
+      "formula": "f(x)=|x| is not differentiable at x=0",
+      "question": {
+        "en": "Does |x| have a derivative at 0?",
+        "hi": "क्या |x| का 0 पर अवकलज है?"
+      },
+      "answer": {
+        "en": "No; one-sided slopes are −1 and +1.",
+        "hi": "नहीं; एकपक्षीय ढालें −1 और +1 हैं।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find lim_(x→2)(x²+3x−1).",
+        "hi": "lim_(x→2)(x²+3x−1) ज्ञात करें।"
+      },
+      "steps": [
+        {
+          "en": "The expression is a polynomial.",
+          "hi": "व्यंजक बहुपद है।"
+        },
+        {
+          "en": "Use direct substitution.",
+          "hi": "सीधा प्रतिस्थापन करें।"
+        },
+        {
+          "en": "2²+3×2−1=9.",
+          "hi": "2²+3×2−1=9।"
+        }
+      ],
+      "answer": {
+        "en": "9",
+        "hi": "9"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find lim_(x→3)(x²−9)/(x−3).",
+        "hi": "lim_(x→3)(x²−9)/(x−3) निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Substitution gives 0/0.",
+          "hi": "प्रतिस्थापन से 0/0।"
+        },
+        {
+          "en": "For x≠3 factor and cancel: (x−3)(x+3)/(x−3)=x+3.",
+          "hi": "x≠3 में गुणनखंड काटें: (x−3)(x+3)/(x−3)=x+3।"
+        },
+        {
+          "en": "The limit is 3+3=6.",
+          "hi": "सीमा 3+3=6।"
+        }
+      ],
+      "answer": {
+        "en": "6",
+        "hi": "6"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find lim_(x→0)(√(1+x)−1)/x.",
+        "hi": "lim_(x→0)(√(1+x)−1)/x ज्ञात करें।"
+      },
+      "steps": [
+        {
+          "en": "Multiply numerator and denominator by √(1+x)+1.",
+          "hi": "अंश और हर को √(1+x)+1 से गुणा करें।"
+        },
+        {
+          "en": "For x≠0 the expression becomes 1/(√(1+x)+1).",
+          "hi": "x≠0 में व्यंजक 1/(√(1+x)+1) बनता है।"
+        },
+        {
+          "en": "Substitute x=0 in the simplified expression.",
+          "hi": "सरल व्यंजक में x=0 रखें।"
+        }
+      ],
+      "answer": {
+        "en": "1/2",
+        "hi": "1/2"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Differentiate x² from first principles.",
+        "hi": "प्रथम सिद्धांत से x² का अवकलज।"
+      },
+      "steps": [
+        {
+          "en": "Compute [(x+h)²−x²]/h for h≠0.",
+          "hi": "h≠0 में [(x+h)²−x²]/h लें।"
+        },
+        {
+          "en": "Expand to (2xh+h²)/h=2x+h.",
+          "hi": "फैलाने पर (2xh+h²)/h=2x+h।"
+        },
+        {
+          "en": "Let h→0.",
+          "hi": "h→0 लें।"
+        }
+      ],
+      "answer": {
+        "en": "2x",
+        "hi": "2x"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Differentiate (x²+1)/(x−1).",
+        "hi": "(x²+1)/(x−1) का अवकलज।"
+      },
+      "steps": [
+        {
+          "en": "u=x²+1,u′=2x;v=x−1,v′=1.",
+          "hi": "u=x²+1,u′=2x;v=x−1,v′=1।"
+        },
+        {
+          "en": "Use (vu′−uv′)/v².",
+          "hi": "(vu′−uv′)/v² लगाएँ।"
+        },
+        {
+          "en": "Numerator=2x(x−1)−(x²+1)=x²−2x−1.",
+          "hi": "अंश=2x(x−1)−(x²+1)=x²−2x−1।"
+        },
+        {
+          "en": "Keep the original exclusion x≠1.",
+          "hi": "मूल बाधा x≠1 रखें।"
+        }
+      ],
+      "answer": {
+        "en": "(x²−2x−1)/(x−1)², x≠1",
+        "hi": "(x²−2x−1)/(x−1)², x≠1"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A two-sided limit exists when",
+        "hi": "द्विपक्षीय सीमा कब है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Left and right limits agree",
+            "hi": "बाएँ और दाएँ सीमाएँ समान हों"
+          },
+          "reason": {
+            "en": "Both approaches must reach the same finite value here.",
+            "hi": "दोनों दिशाओं से वही परिमित मान मिलना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only f(a) is given",
+            "hi": "केवल f(a) दिया हो"
+          },
+          "reason": {
+            "en": "A point value does not determine nearby behaviour.",
+            "hi": "बिंदु मान आसपास का व्यवहार तय नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only right limit exists",
+            "hi": "केवल दाहिनी सीमा हो"
+          },
+          "reason": {
+            "en": "The left approach also matters.",
+            "hi": "बाईं दिशा भी आवश्यक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The graph is drawn",
+            "hi": "चित्र बना हो"
+          },
+          "reason": {
+            "en": "A drawing alone does not establish a limit.",
+            "hi": "चित्र मात्र सीमा सिद्ध नहीं करता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "0/0 in limit substitution means",
+        "hi": "सीमा प्रतिस्थापन में 0/0 का अर्थ"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Indeterminate form",
+            "hi": "अनिर्धार्य रूप"
+          },
+          "reason": {
+            "en": "Rewrite before deciding the limit.",
+            "hi": "सीमा तय करने से पहले रूप बदलें।"
+          }
+        },
+        {
+          "text": {
+            "en": "The limit is 0",
+            "hi": "सीमा 0 है"
+          },
+          "reason": {
+            "en": "Different functions give different limits.",
+            "hi": "अलग फलनों की अलग सीमाएँ हो सकती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The limit is 1",
+            "hi": "सीमा 1 है"
+          },
+          "reason": {
+            "en": "Equal zeros cannot be cancelled as numbers.",
+            "hi": "संख्याओं की तरह 0 नहीं काट सकते।"
+          }
+        },
+        {
+          "text": {
+            "en": "No limit always",
+            "hi": "हमेशा सीमा नहीं है"
+          },
+          "reason": {
+            "en": "Some such limits exist.",
+            "hi": "ऐसी कुछ सीमाएँ मौजूद होती हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "lim_(x→2)(x²−4)/(x−2) is",
+        "hi": "lim_(x→2)(x²−4)/(x−2)"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "For nearby x the expression is x+2.",
+            "hi": "पास के x के लिए व्यंजक x+2 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "0/0 is not zero.",
+            "hi": "0/0 शून्य नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "The remaining expression is x+2, not x.",
+            "hi": "बचा व्यंजक x+2 है, x नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined limit",
+            "hi": "Undefined limit"
+          },
+          "reason": {
+            "en": "Only the original point value is undefined.",
+            "hi": "केवल मूल बिंदु मान अपरिभाषित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "lim_(x→0) sin x/x=1 assumes",
+        "hi": "lim_(x→0) sin x/x=1 में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Radians",
+            "hi": "रेडियन"
+          },
+          "reason": {
+            "en": "The standard constant 1 uses radians.",
+            "hi": "मानक स्थिरांक 1 रेडियन में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Degrees without conversion",
+            "hi": "बिना रूपांतरण डिग्री"
+          },
+          "reason": {
+            "en": "The constant changes in degree inputs.",
+            "hi": "डिग्री आगत में स्थिरांक बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=0 exactly",
+            "hi": "ठीक x=0"
+          },
+          "reason": {
+            "en": "The ratio is undefined at zero.",
+            "hi": "शून्य पर भागफल अपरिभाषित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x is an integer",
+            "hi": "x पूर्णांक है"
+          },
+          "reason": {
+            "en": "A real approach near zero is intended.",
+            "hi": "0 के पास वास्तविक आगत लिए जाते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Derivative of 7 is",
+        "hi": "7 का अवकलज"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "A constant has no change.",
+            "hi": "स्थिरांक में परिवर्तन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "This is the function value.",
+            "hi": "यह फलन मान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "That is the derivative of x.",
+            "hi": "यह x का अवकलज है।"
+          }
+        },
+        {
+          "text": {
+            "en": "7x",
+            "hi": "7x"
+          },
+          "reason": {
+            "en": "This reverses differentiation.",
+            "hi": "यह अवकलन की दिशा उलटता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Derivative of x³ is",
+        "hi": "x³ का अवकलज"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3x²",
+            "hi": "3x²"
+          },
+          "reason": {
+            "en": "Power rule lowers the power by 1.",
+            "hi": "घात नियम घात 1 घटाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x²",
+            "hi": "x²"
+          },
+          "reason": {
+            "en": "The factor 3 is missing.",
+            "hi": "3 का गुणक छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3x³",
+            "hi": "3x³"
+          },
+          "reason": {
+            "en": "The exponent was not reduced.",
+            "hi": "घात नहीं घटी।"
+          }
+        },
+        {
+          "text": {
+            "en": "x⁴/4",
+            "hi": "x⁴/4"
+          },
+          "reason": {
+            "en": "This is an antiderivative, not a derivative.",
+            "hi": "यह प्रतिअवकलज है, अवकलज नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The product rule is",
+        "hi": "गुणनफल नियम"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "u′v+uv′",
+            "hi": "u′v+uv′"
+          },
+          "reason": {
+            "en": "Differentiate one factor at a time and add.",
+            "hi": "एक-एक गुणक अवकलित कर जोड़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "u′v′",
+            "hi": "u′v′"
+          },
+          "reason": {
+            "en": "This omits both product-rule terms.",
+            "hi": "इसमें दोनों आवश्यक पद छूटते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "u′+v′",
+            "hi": "u′+v′"
+          },
+          "reason": {
+            "en": "This is a sum rule.",
+            "hi": "यह योग नियम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "uv",
+            "hi": "uv"
+          },
+          "reason": {
+            "en": "This leaves the function unchanged.",
+            "hi": "यह फलन को वैसा छोड़ता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Derivative of cos x in radians is",
+        "hi": "रेडियन में cos x का अवकलज"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−sin x",
+            "hi": "−sin x"
+          },
+          "reason": {
+            "en": "The minus sign is essential.",
+            "hi": "ऋण चिह्न आवश्यक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sin x",
+            "hi": "sin x"
+          },
+          "reason": {
+            "en": "This loses the minus sign.",
+            "hi": "ऋण चिह्न छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−cos x",
+            "hi": "−cos x"
+          },
+          "reason": {
+            "en": "The trigonometric function is wrong.",
+            "hi": "त्रिकोणमितीय फलन गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sec²x",
+            "hi": "sec²x"
+          },
+          "reason": {
+            "en": "This is the derivative of tan x.",
+            "hi": "यह tan x का अवकलज है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For f(x)=x², tangent slope at x=−2 is",
+        "hi": "f(x)=x² में x=−2 की स्पर्श ढाल"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−4",
+            "hi": "−4"
+          },
+          "reason": {
+            "en": "f′(x)=2x, so f′(−2)=−4.",
+            "hi": "f′(x)=2x से f′(−2)=−4।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "This is f(−2), not its slope.",
+            "hi": "यह f(−2) है, ढाल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2",
+            "hi": "−2"
+          },
+          "reason": {
+            "en": "The power-rule factor is missing.",
+            "hi": "घात नियम का गुणक छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Zero slope occurs at x=0.",
+            "hi": "शून्य ढाल x=0 पर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At x=0, f(x)=|x| is",
+        "hi": "x=0 पर f(x)=|x|"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Not differentiable",
+            "hi": "अवकलनीय नहीं"
+          },
+          "reason": {
+            "en": "The left and right slopes differ.",
+            "hi": "बाईं और दाईं ढाल अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Differentiable with slope 0",
+            "hi": "ढाल 0 से अवकलनीय"
+          },
+          "reason": {
+            "en": "The two slopes are −1 and +1.",
+            "hi": "दो ढालें −1 तथा +1 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित"
+          },
+          "reason": {
+            "en": "Its value is 0.",
+            "hi": "इसका मान 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Discontinuous",
+            "hi": "असतत"
+          },
+          "reason": {
+            "en": "Its limit and value are both 0.",
+            "hi": "इसकी सीमा और मान दोनों 0 हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Find lim_(x→1)(x³−1)/(x−1).",
+        "hi": "lim_(x→1)(x³−1)/(x−1) ज्ञात करें।"
+      },
+      "answer": {
+        "en": "Factor to x²+x+1 for x≠1; the limit is 3.",
+        "hi": "x≠1 में x²+x+1; सीमा 3 है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find lim_(x→0)sin(5x)/x in radians.",
+        "hi": "रेडियन में lim_(x→0)sin(5x)/x।"
+      },
+      "answer": {
+        "en": "5×lim sin(5x)/(5x)=5.",
+        "hi": "5×lim sin(5x)/(5x)=5।"
+      }
+    },
+    {
+      "question": {
+        "en": "Differentiate 2x³−3x²+4.",
+        "hi": "2x³−3x²+4 का अवकलज।"
+      },
+      "answer": {
+        "en": "6x²−6x.",
+        "hi": "6x²−6x।"
+      }
+    },
+    {
+      "question": {
+        "en": "State derivative at a from first principles.",
+        "hi": "a पर प्रथम सिद्धांत अवकलज लिखें।"
+      },
+      "answer": {
+        "en": "lim_(h→0)[f(a+h)−f(a)]/h, if the finite limit exists.",
+        "hi": "lim_(h→0)[f(a+h)−f(a)]/h, यदि परिमित सीमा मौजूद हो।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does cancelling x−a not define the original fraction at a?",
+        "hi": "x−a काटने से मूल भिन्न a पर परिभाषित क्यों नहीं होता?"
+      },
+      "answer": {
+        "en": "Cancellation is justified only for x≠a; it identifies nearby values, which are enough for the limit.",
+        "hi": "काटना केवल x≠a में मान्य है; यह आसपास के मान देता है, जो सीमा के लिए पर्याप्त हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Differentiate x sin x.",
+        "hi": "x sin x का अवकलज।"
+      },
+      "answer": {
+        "en": "Product rule: sin x+x cos x, with angles in radians.",
+        "hi": "गुणनफल नियम: sin x+x cos x, कोण रेडियन में।"
+      }
+    }
+  ],
+  "revision": [
+    {
+      "en": "A limit concerns nearby inputs.",
+      "hi": "सीमा आसपास के आगतों के बारे में है।"
+    },
+    {
+      "en": "0/0 requires analysis, not guessing.",
+      "hi": "0/0 में विश्लेषण चाहिए, अनुमान नहीं।"
+    },
+    {
+      "en": "Trigonometric standard limits use radians.",
+      "hi": "मानक त्रिकोणमितीय सीमाएँ रेडियन में हैं।"
+    },
+    {
+      "en": "A derivative is a difference-quotient limit.",
+      "hi": "अवकलज अंतर भागफल की सीमा है।"
+    },
+    {
+      "en": "Check derivative rules and original domains.",
+      "hi": "अवकलन नियम और मूल प्रांत जाँचें।"
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not treat 0/0 as 0, confuse f(a+h) with f(a)+h, omit radians, or multiply derivatives instead of using the product rule.",
+    "hi": "0/0 को 0 न मानें; f(a+h) और f(a)+h न मिलाएँ; रेडियन न छोड़ें; गुणनफल नियम की जगह अवकलजों को न गुणा करें।"
+  },
+  "conceptMap": {
+    "en": "Nearby values → one/two-sided limits → algebraic simplification → difference quotient → derivative → tangent and rate.",
+    "hi": "आसपास के मान → एक / द्विपक्षीय सीमा → बीजगणितीय सरलीकरण → अंतर भागफल → अवकलज → स्पर्शरेखा और दर।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics, Class XI",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh112.pdf"
+    }
+  ]
+}

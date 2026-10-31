@@ -1,0 +1,1481 @@
+{
+  "id": "reproduction",
+  "title": {
+    "en": "How do Organisms Reproduce?",
+    "hi": "जीव जनन कैसे करते हैं?"
+  },
+  "unit": {
+    "en": "Biology",
+    "hi": "जीव विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "ten-asexual",
+      "title": {
+        "en": "Binary fission and budding",
+        "hi": "द्विखंडन और मुकुलन"
+      },
+      "kind": "ten-reproduction",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Reproduction progress",
+            "hi": "जनन की प्रगति"
+          },
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "initial": 0,
+          "unit": "%"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 1,
+      "goal": {
+        "en": "Compare division of a parent with growth of a bud.",
+        "hi": "जनक के बंटने और मुकुल बढ़ने की तुलना कीजिए।"
+      },
+      "observe": {
+        "en": "Choose fission or yeast budding and move through the stages.",
+        "hi": "विखंडन या यीस्ट मुकुलन चुनकर चरणों में जाइए।"
+      },
+      "modelNote": {
+        "en": "Progress is a schematic sequence, not elapsed time; cell sizes and copying details are simplified.",
+        "hi": "प्रगति सांकेतिक क्रम है, बीता समय नहीं; आकार तथा प्रतिकृति विवरण सरल हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Fission divides a parent cell; budding starts a smaller outgrowth that grows and can separate.",
+          "hi": "विखंडन जनक कोशिका बांटता है; मुकुलन छोटे उभार से शुरू होता है जो बढ़कर अलग हो सकता है।"
+        }
+      },
+      "realLife": {
+        "en": "Yeast multiplying in suitable conditions illustrates budding.",
+        "hi": "अनुकूल दशाओं में बढ़ता यीस्ट मुकुलन दर्शाता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which begins as a small outgrowth?",
+          "hi": "कौन छोटे उभार से शुरू होता है?"
+        },
+        "options": [
+          {
+            "en": "Budding",
+            "hi": "मुकुलन"
+          },
+          {
+            "en": "Pollination",
+            "hi": "परागण"
+          },
+          {
+            "en": "Implantation",
+            "hi": "आरोपण"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A bud grows from the parent before separation.",
+          "hi": "मुकुल अलग होने से पहले जनक पर बढ़ता है।"
+        }
+      },
+      "legend": [
+        {
+          "color": "#f2c86b",
+          "label": {
+            "en": "Highlighted structure or current stage",
+            "hi": "प्रकाशित संरचना या वर्तमान चरण"
+          }
+        },
+        {
+          "color": "#63c9ba",
+          "label": {
+            "en": "Pathway or supporting structure",
+            "hi": "मार्ग या सहायक संरचना"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-asexual-start",
+          "label": {
+            "en": "Set the control to 0 %.",
+            "hi": "नियंत्रक को 0 % पर लाइए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-asexual-end",
+          "label": {
+            "en": "Explore 100 % and compare.",
+            "hi": "100 % तक जाकर तुलना कीजिए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 100
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 50
+          },
+          "text": {
+            "en": "Copying and early division or budding are shown.",
+            "hi": "प्रतिलिपि और आरंभिक विभाजन या मुकुलन दिख रहे हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 55
+          },
+          "text": {
+            "en": "Later development produces separated daughter individuals.",
+            "hi": "आगे विकास से अलग संतति जीव बनते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-pollination",
+      "title": {
+        "en": "Pollination and fertilisation",
+        "hi": "परागण एवं निषेचन"
+      },
+      "kind": "ten-reproduction",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Flower reproduction stage",
+            "hi": "पुष्प जनन का चरण"
+          },
+          "min": 0,
+          "max": 4,
+          "step": 1,
+          "initial": 0,
+          "unit": "stage"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Separate pollen transfer from gamete fusion and seed formation.",
+        "hi": "पराग स्थानांतरण को युग्मक संलयन तथा बीज बनने से अलग समझिए।"
+      },
+      "observe": {
+        "en": "Follow pollen → stigma → tube → fertilisation → seed and fruit.",
+        "hi": "पराग → वर्तिकाग्र → नली → निषेचन → बीज और फल देखिए।"
+      },
+      "modelNote": {
+        "en": "The flower is a magnified schematic; tube growth and fertilisation are not instantaneous steps in nature.",
+        "hi": "पुष्प बड़ा सांकेतिक चित्र है; प्रकृति में नली वृद्धि और निषेचन तुरंत बदलते चरण नहीं हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Pollen germinates and delivers a male gamete; the ovule becomes seed and ovary usually becomes fruit.",
+          "hi": "पराग अंकुरित होकर नर युग्मक पहुंचाता है; बीजांड बीज और अंडाशय सामान्यतः फल बनता है।"
+        }
+      },
+      "realLife": {
+        "en": "Many fruits contain seeds formed after flower reproduction.",
+        "hi": "अनेक फलों में पुष्प जनन से बने बीज होते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "What usually becomes the fruit?",
+          "hi": "सामान्यतः फल कौन बनता है?"
+        },
+        "options": [
+          {
+            "en": "Stigma",
+            "hi": "वर्तिकाग्र"
+          },
+          {
+            "en": "Ovary",
+            "hi": "अंडाशय"
+          },
+          {
+            "en": "Pollen grain",
+            "hi": "परागकण"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The ovary develops into fruit, while ovules become seeds.",
+          "hi": "अंडाशय फल बनता है, जबकि बीजांड बीज बनते हैं।"
+        }
+      },
+      "legend": [
+        {
+          "color": "#f2c86b",
+          "label": {
+            "en": "Highlighted structure or current stage",
+            "hi": "प्रकाशित संरचना या वर्तमान चरण"
+          }
+        },
+        {
+          "color": "#63c9ba",
+          "label": {
+            "en": "Pathway or supporting structure",
+            "hi": "मार्ग या सहायक संरचना"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-pollination-start",
+          "label": {
+            "en": "Set the control to 0 stage.",
+            "hi": "नियंत्रक को 0 stage पर लाइए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-pollination-end",
+          "label": {
+            "en": "Explore 4 stage and compare.",
+            "hi": "4 stage तक जाकर तुलना कीजिए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2
+          },
+          "text": {
+            "en": "Pollen reaches the stigma and the tube starts growing towards an ovule.",
+            "hi": "पराग वर्तिकाग्र तक आता है और नली बीजांड की ओर बढ़ती है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 3
+          },
+          "text": {
+            "en": "Fertilisation is followed by embryo, seed and fruit development.",
+            "hi": "निषेचन के बाद भ्रूण, बीज और फल का विकास होता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-human-reproduction",
+      "title": {
+        "en": "Human reproduction sequence",
+        "hi": "मानव जनन का क्रम"
+      },
+      "kind": "ten-reproduction",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Developmental stage",
+            "hi": "विकास का चरण"
+          },
+          "min": 0,
+          "max": 4,
+          "step": 1,
+          "initial": 0,
+          "unit": "stage"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 6,
+      "goal": {
+        "en": "Locate fertilisation, implantation and later development.",
+        "hi": "निषेचन, आरोपण तथा आगे विकास के स्थान पहचानिए।"
+      },
+      "observe": {
+        "en": "Track gametes, oviduct fertilisation, division, uterine implantation and foetal growth.",
+        "hi": "युग्मक, अंडवाहिनी निषेचन, विभाजन, गर्भाशय आरोपण और आगे वृद्धि देखिए।"
+      },
+      "modelNote": {
+        "en": "Anatomical shapes are educational schematics, not to scale; stages are not pregnancy dating or medical guidance.",
+        "hi": "अंग शिक्षण हेतु सांकेतिक और अनुपात रहित हैं; चरण गर्भावस्था की तारीख या चिकित्सकीय मार्गदर्शन नहीं हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Gametes normally fuse in an oviduct; the dividing embryo later implants in the uterus, supported by placental exchange.",
+          "hi": "युग्मक सामान्यतः अंडवाहिनी में मिलते हैं; विभाजित भ्रूण बाद में गर्भाशय में आरोपित होता है और अपरा विनिमय से सहायता पाता है।"
+        }
+      },
+      "realLife": {
+        "en": "Placental exchange supplies the developing organism without making maternal and foetal blood one shared pool.",
+        "hi": "अपरा विनिमय विकसित जीव को आपूर्ति देता है, मातृ तथा भ्रूण रक्त को एक पात्र नहीं बनाता।"
+      },
+      "quick": {
+        "question": {
+          "en": "Where does fertilisation normally occur?",
+          "hi": "निषेचन सामान्यतः कहां होता है?"
+        },
+        "options": [
+          {
+            "en": "Ovary",
+            "hi": "अंडाशय"
+          },
+          {
+            "en": "Urinary bladder",
+            "hi": "मूत्राशय"
+          },
+          {
+            "en": "Oviduct",
+            "hi": "अंडवाहिनी"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "The uterus is normally the implantation and development site, not the usual fertilisation site.",
+          "hi": "गर्भाशय सामान्यतः आरोपण तथा विकास का स्थान है, सामान्य निषेचन स्थान नहीं।"
+        }
+      },
+      "legend": [
+        {
+          "color": "#f2c86b",
+          "label": {
+            "en": "Highlighted structure or current stage",
+            "hi": "प्रकाशित संरचना या वर्तमान चरण"
+          }
+        },
+        {
+          "color": "#63c9ba",
+          "label": {
+            "en": "Pathway or supporting structure",
+            "hi": "मार्ग या सहायक संरचना"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-human-reproduction-start",
+          "label": {
+            "en": "Set the control to 0 stage.",
+            "hi": "नियंत्रक को 0 stage पर लाइए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-human-reproduction-end",
+          "label": {
+            "en": "Explore 4 stage and compare.",
+            "hi": "4 stage तक जाकर तुलना कीजिए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2
+          },
+          "text": {
+            "en": "Gametes meet and the early embryo begins cell divisions.",
+            "hi": "युग्मक मिलते हैं और प्रारंभिक भ्रूण में विभाजन शुरू होते हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 3
+          },
+          "text": {
+            "en": "The embryo implants in the uterine lining and later development continues.",
+            "hi": "भ्रूण गर्भाशय परत में आरोपित होता है और आगे विकास चलता है।"
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Reproduction and DNA copying",
+        "hi": "जनन तथा डीएनए प्रतिकृति"
+      },
+      "paragraphs": [
+        {
+          "en": "Reproduction produces new individuals and maintains the continuity of a species. It is not required for the immediate survival of every individual, unlike cellular maintenance. DNA carries information used in organising proteins and cell structures. Before a cell divides in a reproductive process, DNA is copied and the cellular machinery is duplicated or organised so the new cells can function. Copying is accurate enough to preserve a recognisable body plan, but small differences can arise. Therefore offspring resemble their parents without necessarily being identical in every detail.",
+          "hi": "जनन (Reproduction) नए जीव उत्पन्न करता है और प्रजाति की निरंतरता बनाए रखता है। कोशिकीय रखरखाव के विपरीत, हर जीव के तत्काल जीवित रहने के लिए उसका स्वयं जनन करना आवश्यक नहीं है। डीएनए प्रोटीन तथा कोशिकीय संरचनाओं की व्यवस्था से जुड़ी सूचना रखता है। जनन प्रक्रिया में कोशिका विभाजन से पहले डीएनए की प्रतिलिपि बनती है और कोशिकीय व्यवस्था नई कोशिकाओं के काम करने योग्य तैयार होती है। प्रतिलिपि इतनी सही होती है कि मूल शारीरिक रूप बना रहे, फिर भी छोटे अंतर उत्पन्न हो सकते हैं। इसलिए संतति माता पिता जैसी होती है, लेकिन हर विवरण में समान होना जरूरी नहीं।"
+        },
+        {
+          "en": "Variation creates differences among individuals of a population. When environmental conditions change, not all variants are affected equally; a population with suitable variation may persist more successfully. This does not mean every variation is useful or that organisms deliberately manufacture a needed trait. Reproduction and variation should be explained as linked biological processes rather than as conscious plans by a species.",
+          "hi": "विविधता से किसी समष्टि के जीवों में अंतर होते हैं। पर्यावरण बदलने पर सभी प्रकार समान प्रभावित नहीं होते; उपयुक्त विविधता वाली समष्टि बेहतर बनी रह सकती है। इसका अर्थ यह नहीं कि हर अंतर उपयोगी है या जीव जरूरत के अनुसार जानबूझकर नया लक्षण बनाते हैं। जनन और विविधता को जुड़ी जैविक प्रक्रियाओं के रूप में समझाइए, प्रजाति की सचेत योजना की तरह नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "DNA copying and cell division must remain coordinated: an isolated DNA copy is not itself a complete new organism.",
+          "hi": "डीएनए प्रतिकृति और कोशिका विभाजन में समन्वय चाहिए। केवल डीएनए की अलग प्रति अपने आप पूर्ण नया जीव नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does reproduction matter to a species rather than only one individual?",
+          "hi": "जनन का महत्व केवल एक जीव से बढ़कर प्रजाति के लिए क्यों है?"
+        },
+        "answer": {
+          "en": "Individuals eventually die; reproduction replaces them across generations and transfers biological information to new individuals.",
+          "hi": "जीव अंततः मरते हैं। जनन पीढ़ियों में उनका स्थान लेने वाले जीव बनाता है और जैविक सूचना नए जीवों तक पहुंचाता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Fission, budding and fragmentation",
+        "hi": "विखंडन, मुकुलन तथा खंडन"
+      },
+      "paragraphs": [
+        {
+          "en": "Asexual reproduction involves one parent without fusion of gametes. In binary fission, a single-celled organism divides into two new individuals after copying its material. Amoeba can divide in different planes because it has no fixed body orientation, whereas Leishmania divides in a definite orientation related to its body organisation. Multiple fission can produce many daughter cells from one parent under suitable conditions. The key comparison is not simply “splitting” but how the nucleus, cell contents and body organisation are distributed.",
+          "hi": "अलैंगिक जनन (Asexual reproduction) में युग्मकों के संलयन के बिना एक जनक से संतति बनती है। द्विखंडन में एककोशिकीय जीव अपनी सामग्री की प्रतिलिपि बनाकर 2 नए जीवों में बंटता है। अमीबा में निश्चित शारीरिक दिशा न होने से विभाजन अलग तलों में हो सकता है। लीशमैनिया की शारीरिक व्यवस्था के कारण विभाजन निश्चित दिशा में होता है। उपयुक्त दशाओं में बहुखंडन से एक जनक से कई संतति कोशिकाएं बन सकती हैं। तुलना में केवल टूटना न लिखें; केंद्रक, कोशिकीय पदार्थ और शरीर की व्यवस्था कैसे बंटती है, यह भी समझिए।"
+        },
+        {
+          "en": "In budding, a small outgrowth develops, receives cellular material and can separate when sufficiently formed; yeast and Hydra illustrate this mode. Fragmentation occurs when suitable body pieces, as in Spirogyra, grow into new individuals. Regeneration means rebuilding missing parts through specialised cells; in certain organisms such as Planaria, separated pieces can form whole individuals. It is not the normal reproductive method of every animal that can heal a wound.",
+          "hi": "मुकुलन (Budding) में छोटा उभार बनता है, उसे कोशिकीय सामग्री मिलती है और पर्याप्त विकसित होने पर वह अलग हो सकता है। यीस्ट और हाइड्रा इसके उदाहरण हैं। स्पाइरोगाइरा जैसे जीव में उपयुक्त शरीर खंड से नया जीव बनने को खंडन कहते हैं। पुनरुद्भवन (Regeneration) में विशेष कोशिकाओं से खोए भाग बनते हैं; प्लेनेरिया में अलग टुकड़े पूरे जीव बना सकते हैं। घाव भर सकने वाले हर जंतु का यह सामान्य जनन तरीका नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Never infer that any random piece of any organism can reproduce. The capacity depends on its organisation and specialised cells.",
+          "hi": "यह निष्कर्ष न निकालिए कि किसी भी जीव का कोई भी टुकड़ा जनन कर सकता है। क्षमता उसकी संरचना और विशिष्ट कोशिकाओं पर निर्भर है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How is budding different from binary fission?",
+          "hi": "मुकुलन द्विखंडन से कैसे अलग है?"
+        },
+        "answer": {
+          "en": "Budding begins as a smaller outgrowth on a parent, whereas binary fission divides a parent cell into two daughter individuals.",
+          "hi": "मुकुलन जनक पर छोटे उभार से शुरू होता है, जबकि द्विखंडन में जनक कोशिका 2 संतति जीवों में बंटती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Vegetative propagation and spores",
+        "hi": "कायिक प्रवर्धन तथा बीजाणु"
+      },
+      "paragraphs": [
+        {
+          "en": "Parts such as stems, roots and leaves can form new plants in vegetative propagation. Potato eyes are buds on a stem tuber, not seeds; Bryophyllum forms plantlets from buds along leaf margins. Cuttings and grafting use natural growth capacities under managed conditions. This can maintain desirable features and allow propagation of plants that do not produce useful seeds, but genetically similar plants may share susceptibility to a disease. Faster multiplication should not be confused with greater genetic variation in every case.",
+          "hi": "कायिक प्रवर्धन (Vegetative propagation) में तने, जड़ या पत्ती जैसे भाग नए पौधे बना सकते हैं। आलू की आंखें तना कंद की कलिकाएं हैं, बीज नहीं। ब्रायोफिलम की पत्ती के किनारे की कलिकाओं से छोटे पौधे बनते हैं। कलम तथा रोपण विधियां नियंत्रित दशाओं में प्राकृतिक वृद्धि क्षमताओं का उपयोग करती हैं। इससे वांछित लक्षण बनाए रखना और उपयोगी बीज न बनाने वाले पौधों को बढ़ाना संभव है। लेकिन आनुवंशिक रूप से मिलते पौधों में किसी रोग की समान संवेदनशीलता भी हो सकती है। तेजी से संख्या बढ़ना हर बार अधिक आनुवंशिक विविधता नहीं है।"
+        },
+        {
+          "en": "Rhizopus produces spores in sporangia on upright hyphae. Spores have protective coverings and can spread; when moisture and other conditions become suitable, they germinate into new fungal growth. A spore is not the same structure as a pollen grain or a seed. When comparing these units, ask which organism produced it, whether fertilisation was involved, and what develops after it lands. Growth of mould on food can be observed without touching, tasting or deliberately inhaling its spores.",
+          "hi": "राइजोपस में खड़े तंतुओं के बीजाणुधानियों में बीजाणु बनते हैं। इनके सुरक्षात्मक आवरण होते हैं और वे फैल सकते हैं। नमी तथा दूसरी दशाएं अनुकूल होने पर अंकुरित होकर नया कवकीय विकास करते हैं। बीजाणु परागकण या बीज जैसी संरचना नहीं है। तुलना में पूछिए कि उसे किस जीव ने बनाया, निषेचन हुआ या नहीं, और गिरने के बाद क्या विकसित होता है। भोजन पर फफूंद को बिना छुए, चखे या जानबूझकर बीजाणु सूंघे देखा जा सकता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Vegetative propagation normally preserves many parental features; it does not guarantee freedom from infection or remove the need for suitable growing conditions.",
+          "hi": "कायिक प्रवर्धन सामान्यतः अनेक जनकीय लक्षण बचाता है; इससे संक्रमण रहित होना या अनुकूल वृद्धि दशाओं की आवश्यकता मिटना सुनिश्चित नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is an eye of a potato important?",
+          "hi": "आलू की आंख महत्वपूर्ण क्यों है?"
+        },
+        "answer": {
+          "en": "It contains a bud that can grow into a shoot and help produce a new plant through vegetative propagation.",
+          "hi": "उसमें कलिका होती है, जो प्ररोह बनाकर कायिक प्रवर्धन से नया पौधा उत्पन्न करने में सहायता कर सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Sexual reproduction and gametes",
+        "hi": "लैंगिक जनन तथा युग्मक"
+      },
+      "paragraphs": [
+        {
+          "en": "Sexual reproduction involves fusion of specialised reproductive cells, or gametes. It combines genetic contributions, creating new combinations of inherited information. If every generation simply doubled the full chromosome set at fertilisation, the number would keep increasing. Gamete formation therefore reduces the chromosome number to half, and fertilisation restores the paired condition in the zygote. This school-level relationship explains continuity of chromosome number without requiring detailed stages of cell division here. The zygote then divides and develops into an embryo.",
+          "hi": "लैंगिक जनन (Sexual reproduction) में विशिष्ट जनन कोशिकाओं यानी युग्मकों का संलयन होता है। इससे आनुवंशिक योगदान मिलते हैं और वंशागत सूचना के नए संयोजन बनते हैं। यदि हर पीढ़ी में निषेचन पर पूरे गुणसूत्र समूह बस दोगुने होते जाएं, तो संख्या लगातार बढ़ती रहेगी। इसलिए युग्मक बनने में संख्या आधी होती है और निषेचन से युग्मनज में जोड़ी वाली स्थिति वापस आती है। विद्यालय स्तर पर यह संबंध गुणसूत्र संख्या की निरंतरता समझाता है; यहां विभाजन की सूक्ष्म अवस्थाएं जरूरी नहीं हैं। युग्मनज विभाजित होकर भ्रूण विकसित करता है।"
+        },
+        {
+          "en": "In many animals the sperm is small and mobile, while the egg is larger and stores resources. These differences are functional specialisations, not measures of personal worth or a reason to value one parent more. Reproductive maturity develops through puberty, but biological ability to reproduce does not alone imply emotional, social or practical readiness for parenting. Respectful science separates anatomical facts from stereotypes and pressure.",
+          "hi": "अनेक जंतुओं में शुक्राणु छोटा और गतिशील होता है तथा अंड कोशिका बड़ी होकर संसाधन रखती है। ये कार्य संबंधी विशेषताएं हैं, किसी व्यक्ति के मूल्य या एक जनक को अधिक महत्व देने का माप नहीं। यौवनारंभ में जनन परिपक्वता विकसित होती है। लेकिन जैविक जनन क्षमता अकेले भावनात्मक, सामाजिक या व्यावहारिक रूप से पालन पोषण की तैयारी नहीं बताती। सम्मानपूर्ण विज्ञान शरीर संबंधी तथ्य को रूढ़ियों और दबाव से अलग रखता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Fertilisation is gamete fusion; pollination is pollen transfer. These names cannot replace one another.",
+          "hi": "निषेचन युग्मक संलयन है; परागण पराग का स्थानांतरण है। दोनों शब्द एक दूसरे के बदले नहीं आते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is the chromosome number halved during gamete formation?",
+          "hi": "युग्मक बनने में गुणसूत्र संख्या आधी क्यों होती है?"
+        },
+        "answer": {
+          "en": "Fusion of two gametes can then restore the usual paired number rather than doubling it in each generation.",
+          "hi": "इससे 2 युग्मक मिलने पर सामान्य जोड़ी वाली संख्या लौटती है, हर पीढ़ी में दोगुनी नहीं होती।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Reproduction in flowering plants",
+        "hi": "पुष्पी पौधों में जनन"
+      },
+      "paragraphs": [
+        {
+          "en": "The stamen consists of anther and filament; pollen grains form in anthers. The pistil includes stigma, style and ovary, with ovules inside the ovary. A flower may contain one or both kinds of reproductive structures. Pollination transfers pollen from anther to stigma, either within the same flower or between flowers. Agents such as insects or wind help transfer pollen, but successful transfer alone does not complete fertilisation. A compatible pollen grain germinates on the stigma and forms a tube growing through the style towards an ovule.",
+          "hi": "पुंकेसर में परागकोश और तंतु होते हैं; परागकोश में परागकण बनते हैं। स्त्रीकेसर में वर्तिकाग्र, वर्तिका और अंडाशय हैं; अंडाशय के भीतर बीजांड होते हैं। पुष्प में एक या दोनों प्रकार की जनन संरचनाएं हो सकती हैं। परागण में परागकोश से वर्तिकाग्र तक पराग पहुंचता है, उसी पुष्प में या दूसरे पुष्प से। कीट और वायु जैसे माध्यम मदद करते हैं, लेकिन पराग पहुंचना मात्र निषेचन पूरा नहीं करता। अनुकूल परागकण वर्तिकाग्र पर अंकुरित होकर वर्तिका से बीजांड की ओर नली बनाता है।"
+        },
+        {
+          "en": "The male gamete travels through the pollen tube and fuses with the egg, forming a zygote. The embryo develops within the ovule, which becomes a seed with a protective covering. The ovary usually develops into the fruit. Other floral parts may wither. Seed germination requires suitable conditions and starts a new plant, so distinguish pollination, fertilisation, seed formation and germination as successive ideas rather than calling them all seed production.",
+          "hi": "नर युग्मक पराग नली से जाकर अंड कोशिका से मिलता है और युग्मनज बनता है। बीजांड में भ्रूण विकसित होता है और बीजांड सुरक्षात्मक आवरण वाले बीज में बदलता है। अंडाशय सामान्यतः फल बनता है। अन्य पुष्प भाग सूख सकते हैं। उपयुक्त दशाओं में बीज अंकुरण से नया पौधा शुरू होता है। इसलिए परागण, निषेचन, बीज बनना और अंकुरण को अलग क्रमिक विचार मानिए, सबको केवल बीज उत्पादन न कहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "After fertilisation: ovule → seed and ovary → fruit. The stigma does not normally become the seed.",
+          "hi": "निषेचन के बाद बीजांड → बीज तथा अंडाशय → फल। वर्तिकाग्र सामान्यतः बीज नहीं बनता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can pollination occur without immediate fertilisation?",
+          "hi": "परागण के तुरंत बाद निषेचन होना जरूरी क्यों नहीं है?"
+        },
+        "answer": {
+          "en": "Pollen still needs suitable germination, tube growth and delivery of the male gamete to the egg in an ovule.",
+          "hi": "पराग को उपयुक्त अंकुरण, नली वृद्धि और नर युग्मक को बीजांड की अंड कोशिका तक पहुंचाना अभी बाकी है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Human reproductive systems and puberty",
+        "hi": "मानव जनन तंत्र तथा यौवनारंभ"
+      },
+      "paragraphs": [
+        {
+          "en": "Puberty brings physical changes as reproductive systems mature, with considerable normal variation in timing. Testes produce sperm and testosterone. Their position in the scrotum supports a temperature lower than the body interior for sperm formation. Sperm travel through ducts; secretions from associated glands form semen and support transport. The urethra provides an exit through the penis, but urine and semen are not described as simultaneous normal flows. Naming these structures accurately is part of biology, not a reason for embarrassment or teasing.",
+          "hi": "यौवनारंभ (Puberty) में जनन तंत्र परिपक्व होने के साथ शारीरिक बदलाव आते हैं। उनके समय में सामान्य व्यक्तिगत अंतर हो सकते हैं। वृषण शुक्राणु और टेस्टोस्टेरॉन बनाते हैं। अंडकोश में उनका स्थान शुक्राणु निर्माण के लिए शरीर के अंदर से कम तापमान बनाए रखने में मदद करता है। शुक्राणु वाहिकाओं से जाते हैं; संबंधित ग्रंथियों के स्राव वीर्य बनाते और परिवहन में सहायता करते हैं। मूत्रमार्ग शिश्न से बाहर का रास्ता देता है, लेकिन सामान्य दशा में मूत्र और वीर्य को साथ बहना नहीं बताना चाहिए। इन अंगों के सही नाम जीव विज्ञान का हिस्सा हैं, शर्म या किसी को चिढ़ाने का कारण नहीं।"
+        },
+        {
+          "en": "Ovaries produce eggs and hormones. An egg released from an ovary enters an oviduct, which leads towards the uterus. The uterus can support development, and the cervix connects it with the vagina. Secondary sexual characteristics, body hair and voice changes reflect hormonal activity but do not develop at an identical age in everyone. Hygiene, privacy, consent and access to reliable health information support dignity during these changes.",
+          "hi": "अंडाशय अंड कोशिकाएं तथा हार्मोन बनाते हैं। अंडाशय से निकली अंड कोशिका अंडवाहिनी में पहुंचती है, जो गर्भाशय की ओर जाती है। गर्भाशय विकास का स्थान बन सकता है और गर्भाशय ग्रीवा उसे योनि से जोड़ती है। द्वितीयक लैंगिक लक्षण, शरीर के बाल और आवाज के बदलाव हार्मोन संबंधी हैं, लेकिन हर व्यक्ति में एक ही उम्र पर नहीं आते। स्वच्छता, निजता, सहमति और विश्वसनीय स्वास्थ्य जानकारी इन परिवर्तनों में गरिमा बनाए रखते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Gamete production, hormone production and transport are different functions; label the organ and its role separately.",
+          "hi": "युग्मक निर्माण, हार्मोन निर्माण और परिवहन अलग कार्य हैं। हर अंग का नाम और कार्य अलग स्पष्ट कीजिए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why are testes outside the main abdominal cavity?",
+          "hi": "वृषण मुख्य उदर गुहा के बाहर क्यों होते हैं?"
+        },
+        "answer": {
+          "en": "The scrotal position helps maintain the lower temperature needed for normal sperm formation.",
+          "hi": "अंडकोश में स्थिति सामान्य शुक्राणु निर्माण के लिए आवश्यक अपेक्षाकृत कम तापमान बनाए रखने में सहायक है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Fertilisation, development and menstruation",
+        "hi": "निषेचन, विकास तथा मासिक धर्म"
+      },
+      "paragraphs": [
+        {
+          "en": "In humans, fertilisation normally occurs in an oviduct when a sperm fuses with an egg. The resulting zygote divides while moving towards the uterus. The early embryo implants in the thickened uterine lining. A placenta develops as an exchange structure between maternal tissues and the developing organism. It supplies nutrients and oxygen and helps remove wastes; maternal and foetal blood are not simply poured together into one shared pool. As body parts become identifiable, the developing organism is described as a foetus.",
+          "hi": "मानव में निषेचन सामान्यतः अंडवाहिनी में होता है, जब शुक्राणु और अंड कोशिका मिलते हैं। बना युग्मनज गर्भाशय की ओर जाते हुए विभाजित होता है। प्रारंभिक भ्रूण मोटी गर्भाशय भित्ति में आरोपित होता है। मातृ ऊतकों और विकसित जीव के बीच विनिमय के लिए अपरा (Placenta) बनती है। उससे पोषक पदार्थ तथा ऑक्सीजन मिलते हैं और अपशिष्ट हटाने में सहायता होती है। मातृ तथा भ्रूण का रक्त बस एक ही पात्र में मिलकर नहीं बहता। शरीर के भाग पहचाने जाने लगें तो विकसित अवस्था को गर्भस्थ शिशु या फीतस कहते हैं।"
+        },
+        {
+          "en": "If pregnancy does not occur, the prepared uterine lining breaks down and leaves with blood through the vagina as menstruation. The cycle is often described as roughly monthly, but timing varies; it is not a compulsory identical 28-day clock in every person. Menstruation is a biological process, not impurity. Clean absorbent materials, suitable washing and disposal, privacy and support matter. Persistent severe symptoms should be discussed with a qualified health professional rather than interpreted through the simulation.",
+          "hi": "गर्भ न ठहरने पर तैयार गर्भाशय परत टूटकर रक्त के साथ योनि से निकलती है; यह मासिक धर्म (Menstruation) है। चक्र सामान्यतः लगभग मासिक कहा जाता है, लेकिन अवधि बदलती है। हर व्यक्ति के लिए अनिवार्य रूप से ठीक 28 दिन की घड़ी नहीं है। मासिक धर्म जैविक प्रक्रिया है, अशुद्धता नहीं। स्वच्छ अवशोषक सामग्री, उचित सफाई और निपटान, निजता तथा सहायता महत्वपूर्ण हैं। लंबे या गंभीर लक्षण पर मॉडल से निष्कर्ष निकालने के बजाय योग्य स्वास्थ्यकर्मी से बात करनी चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Fertilisation occurs before implantation. A uterus supports development, while an ovary produces eggs; these sites are not interchangeable.",
+          "hi": "निषेचन आरोपण से पहले होता है। गर्भाशय विकास का स्थान है, जबकि अंडाशय अंड कोशिका बनाता है; दोनों स्थान अलग हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does the placenta exchange?",
+          "hi": "अपरा क्या विनिमय करती है?"
+        },
+        "answer": {
+          "en": "It supports transfer of oxygen and nutrients towards the developing organism and removal of carbon dioxide and other wastes towards maternal circulation.",
+          "hi": "वह ऑक्सीजन तथा पोषक पदार्थ विकसित जीव तक पहुंचाने और कार्बन डाइऑक्साइड तथा अन्य अपशिष्ट मातृ परिसंचरण की ओर हटाने में सहायता करती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Reproductive health and contraception",
+        "hi": "जनन स्वास्थ्य तथा गर्भनिरोध"
+      },
+      "paragraphs": [
+        {
+          "en": "Reproductive health includes physical wellbeing, informed decisions, respectful relationships and freedom from coercion. Unprotected sexual contact can transmit infections such as gonorrhoea, syphilis and HIV, although transmission routes differ among infections. Condoms provide a barrier that reduces the risk of pregnancy and many sexually transmitted infections when used correctly; no classroom model should claim absolute protection. Oral contraceptive pills act through hormonal mechanisms, while intrauterine devices act within the uterus. These methods do not provide the same STI protection as condoms.",
+          "hi": "जनन स्वास्थ्य में शारीरिक कुशलता, जानकारी पर आधारित निर्णय, सम्मानपूर्ण संबंध और दबाव से स्वतंत्रता शामिल हैं। असुरक्षित लैंगिक संपर्क से गोनोरिया, सिफिलिस और एचआईवी जैसे संक्रमण फैल सकते हैं, हालांकि अलग संक्रमणों के रास्ते अलग भी होते हैं। सही उपयोग पर कंडोम अवरोध बनाकर गर्भ तथा अनेक लैंगिक संचारित संक्रमणों का जोखिम घटाते हैं। किसी कक्षा मॉडल को पूर्ण सुरक्षा का दावा नहीं करना चाहिए। गर्भनिरोधक गोलियां हार्मोन संबंधी तरीकों से काम करती हैं और अंतर्गर्भाशयी युक्तियां गर्भाशय में काम करती हैं। ये विधियां कंडोम जैसी संक्रमण सुरक्षा नहीं देतीं।"
+        },
+        {
+          "en": "Surgical methods such as vasectomy and tubectomy block gamete transport pathways; they are not removal of the testes or ovaries. Selecting a method requires reliable professional advice, not self-prescription from school notes. Responsible discussion also includes spacing pregnancies, maternal health and the resources needed for care. Prenatal sex determination for sex selection is prohibited in India; scientific knowledge must not support discrimination. A child’s sex is not a mother’s fault, and every child deserves equal respect.",
+          "hi": "नसबंदी की पुरुष तथा महिला शल्य विधियों में युग्मक परिवहन मार्ग रोके जाते हैं; वे वृषण या अंडाशय हटाना नहीं हैं। विधि का चयन विश्वसनीय पेशेवर सलाह से होना चाहिए, स्कूल नोट से स्वयं दवा तय करके नहीं। जिम्मेदार चर्चा में गर्भों के बीच अंतर, मातृ स्वास्थ्य और देखभाल के संसाधन भी आते हैं। भारत में लिंग चयन के लिए प्रसवपूर्व लिंग निर्धारण निषिद्ध है। वैज्ञानिक ज्ञान भेदभाव को बढ़ावा नहीं देना चाहिए। बच्चे का लिंग मां की गलती नहीं और हर बच्चे को समान सम्मान मिलना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Pregnancy prevention and infection prevention are related but distinct goals; ask what each method actually prevents.",
+          "hi": "गर्भ रोकना और संक्रमण रोकना जुड़े लेकिन अलग लक्ष्य हैं। हर विधि वास्तव में क्या रोकती है, यह स्पष्ट कीजिए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why cannot pills alone be treated as STI protection?",
+          "hi": "केवल गर्भनिरोधक गोली को संक्रमण सुरक्षा क्यों नहीं मान सकते?"
+        },
+        "answer": {
+          "en": "Their main mechanism prevents pregnancy through hormonal effects; it does not create a barrier against transmission of infectious agents.",
+          "hi": "उनका मुख्य तंत्र हार्मोन प्रभाव से गर्भ रोकता है; वह संक्रमणकारी जीवों के संचार के सामने भौतिक अवरोध नहीं बनाता।"
+        }
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A yeast cell develops a small attached outgrowth. Name the process.",
+        "hi": "यीस्ट कोशिका पर छोटा जुड़ा उभार बना है। प्रक्रिया बताइए।"
+      },
+      "given": {
+        "en": "One parent and an outgrowth are visible.",
+        "hi": "एक जनक और उभार दिखते हैं।"
+      },
+      "find": {
+        "en": "Reproductive mode.",
+        "hi": "जनन तरीका।"
+      },
+      "formula": {
+        "en": "Small parental outgrowth → bud",
+        "hi": "जनक पर छोटा उभार → मुकुल"
+      },
+      "steps": [
+        {
+          "en": "Compare with whole-cell division.",
+          "hi": "पूरी कोशिका के विभाजन से तुलना कीजिए।"
+        },
+        {
+          "en": "The new part begins smaller and grows.",
+          "hi": "नया भाग छोटा शुरू होकर बढ़ता है।"
+        }
+      ],
+      "answer": {
+        "en": "Budding, an asexual reproductive mode.",
+        "hi": "मुकुलन, जो अलैंगिक जनन का तरीका है।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Which floral parts become seed and fruit?",
+        "hi": "पुष्प के कौन से भाग बीज और फल बनते हैं?"
+      },
+      "given": {
+        "en": "Fertilisation has occurred.",
+        "hi": "निषेचन हो चुका है।"
+      },
+      "find": {
+        "en": "Post-fertilisation changes.",
+        "hi": "निषेचन बाद के बदलाव।"
+      },
+      "formula": {
+        "en": "Ovule → seed; ovary → fruit",
+        "hi": "बीजांड → बीज; अंडाशय → फल"
+      },
+      "steps": [
+        {
+          "en": "Locate ovules within the ovary.",
+          "hi": "अंडाशय के भीतर बीजांड पहचानिए।"
+        },
+        {
+          "en": "Match the internal unit and the surrounding structure to outcomes.",
+          "hi": "भीतरी इकाई और उसे घेरती संरचना को परिणामों से जोड़िए।"
+        }
+      ],
+      "answer": {
+        "en": "Ovules form seeds; the ovary usually forms the fruit.",
+        "hi": "बीजांड बीज तथा अंडाशय सामान्यतः फल बनता है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Why is pollen on a stigma not proof that a zygote already exists?",
+        "hi": "वर्तिकाग्र पर पराग होना युग्मनज बनने का प्रमाण क्यों नहीं?"
+      },
+      "given": {
+        "en": "Pollen has been transferred successfully.",
+        "hi": "पराग सफलतापूर्वक पहुंचा है।"
+      },
+      "find": {
+        "en": "Distinguish pollination and fertilisation.",
+        "hi": "परागण और निषेचन अलग करना।"
+      },
+      "formula": {
+        "en": "Transfer ≠ gamete fusion",
+        "hi": "स्थानांतरण ≠ युग्मक संलयन"
+      },
+      "steps": [
+        {
+          "en": "Pollen must germinate and grow a tube.",
+          "hi": "पराग को अंकुरित होकर नली बनानी है।"
+        },
+        {
+          "en": "A male gamete must reach and fuse with an egg in an ovule.",
+          "hi": "नर युग्मक को बीजांड की अंड कोशिका तक पहुंचकर मिलना है।"
+        }
+      ],
+      "answer": {
+        "en": "Pollination has occurred; fertilisation is a later distinct event.",
+        "hi": "परागण हुआ है; निषेचन आगे की अलग घटना है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Arrange human fertilisation and development sites.",
+        "hi": "मानव निषेचन और विकास के स्थान क्रम में रखिए।"
+      },
+      "given": {
+        "en": "Egg, sperm, embryo and uterus are named.",
+        "hi": "अंड कोशिका, शुक्राणु, भ्रूण और गर्भाशय दिए हैं।"
+      },
+      "find": {
+        "en": "Correct pathway.",
+        "hi": "सही मार्ग।"
+      },
+      "formula": {
+        "en": "Oviduct fertilisation → divisions → uterine implantation",
+        "hi": "अंडवाहिनी निषेचन → विभाजन → गर्भाशय आरोपण"
+      },
+      "steps": [
+        {
+          "en": "Fusion normally occurs in the oviduct.",
+          "hi": "संलयन सामान्यतः अंडवाहिनी में होता है।"
+        },
+        {
+          "en": "The early embryo moves and implants in the prepared uterus.",
+          "hi": "प्रारंभिक भ्रूण आगे जाकर तैयार गर्भाशय में आरोपित होता है।"
+        }
+      ],
+      "answer": {
+        "en": "The uterus supports later development; it is not the usual fertilisation site.",
+        "hi": "गर्भाशय आगे का विकास समर्थित करता है; वह सामान्य निषेचन स्थान नहीं है।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Evaluate: every pregnancy-prevention method also prevents STIs.",
+        "hi": "जांचिए: हर गर्भ रोकने वाली विधि संक्रमण भी रोकती है।"
+      },
+      "given": {
+        "en": "Condoms and hormonal pills act differently.",
+        "hi": "कंडोम और हार्मोन गोलियां अलग काम करती हैं।"
+      },
+      "find": {
+        "en": "Validity and reason.",
+        "hi": "सत्यता तथा कारण।"
+      },
+      "formula": {
+        "en": "Barrier action ≠ hormonal pregnancy prevention",
+        "hi": "अवरोध क्रिया ≠ हार्मोन द्वारा गर्भ रोकना"
+      },
+      "steps": [
+        {
+          "en": "Condom barriers reduce contact with infectious material as well as sperm transfer.",
+          "hi": "कंडोम का अवरोध शुक्राणु संचार के साथ संक्रमित पदार्थ के संपर्क को घटाता है।"
+        },
+        {
+          "en": "Pills act mainly on reproductive hormonal processes and do not provide that physical barrier.",
+          "hi": "गोलियां मुख्यतः जनन हार्मोन प्रक्रियाओं पर काम करती हैं; ऐसा भौतिक अवरोध नहीं देतीं।"
+        }
+      ],
+      "answer": {
+        "en": "The claim is false. Pregnancy and STI prevention must be assessed separately with reliable health guidance.",
+        "hi": "कथन गलत है। गर्भ और संक्रमण रोकने को विश्वसनीय स्वास्थ्य सलाह के साथ अलग परखना चाहिए।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which is budding?",
+        "hi": "मुकुलन का उदाहरण कौन सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Yeast outgrowth",
+            "hi": "यीस्ट का उभार"
+          },
+          "reason": {
+            "en": "A small parental outgrowth forms a new individual.",
+            "hi": "जनक का छोटा उभार नया जीव बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Amoeba dividing into two",
+            "hi": "अमीबा का 2 में बंटना"
+          },
+          "reason": {
+            "en": "That is binary fission.",
+            "hi": "वह द्विखंडन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pollen reaching stigma",
+            "hi": "पराग का वर्तिकाग्र तक आना"
+          },
+          "reason": {
+            "en": "That is pollination.",
+            "hi": "वह परागण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Seed germination",
+            "hi": "बीज अंकुरण"
+          },
+          "reason": {
+            "en": "That is seed growth, not budding.",
+            "hi": "वह बीज की वृद्धि है, मुकुलन नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is the main role of DNA copying in reproduction?",
+        "hi": "जनन में डीएनए प्रतिकृति का मुख्य महत्व क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "To prevent all variation forever",
+            "hi": "हमेशा हर विविधता रोकना"
+          },
+          "reason": {
+            "en": "Small variations can still occur.",
+            "hi": "छोटे अंतर फिर भी हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "To transfer biological information to new cells",
+            "hi": "नई कोशिकाओं तक जैविक सूचना पहुंचाना"
+          },
+          "reason": {
+            "en": "Copying passes information needed for cellular organisation.",
+            "hi": "प्रतिलिपि कोशिकीय व्यवस्था की जरूरी सूचना देती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "To replace all cell contents with water",
+            "hi": "सारी सामग्री को जल से बदलना"
+          },
+          "reason": {
+            "en": "New cells need organised contents, not only water.",
+            "hi": "नई कोशिकाओं को व्यवस्थित सामग्री चाहिए, केवल जल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "To make reproduction a conscious decision",
+            "hi": "जनन को सचेत निर्णय बनाना"
+          },
+          "reason": {
+            "en": "DNA copying is a biological process, not a conscious plan.",
+            "hi": "यह जैविक प्रक्रिया है, सचेत योजना नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A potato eye is mainly a:",
+        "hi": "आलू की आंख मुख्यतः क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Fruit",
+            "hi": "फल"
+          },
+          "reason": {
+            "en": "Potato tuber is not a fruit.",
+            "hi": "आलू कंद फल नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pollen grain",
+            "hi": "परागकण"
+          },
+          "reason": {
+            "en": "Pollen forms in anthers.",
+            "hi": "पराग परागकोश में बनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Bud on a stem tuber",
+            "hi": "तना कंद की कलिका"
+          },
+          "reason": {
+            "en": "It can sprout in vegetative propagation.",
+            "hi": "यह कायिक प्रवर्धन में अंकुरित हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Kidney",
+            "hi": "वृक्क"
+          },
+          "reason": {
+            "en": "A kidney is an animal excretory organ.",
+            "hi": "वृक्क जंतु उत्सर्जन अंग है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "What is pollination?",
+        "hi": "परागण क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Fusion of egg and sperm",
+            "hi": "अंड कोशिका और शुक्राणु का मिलना"
+          },
+          "reason": {
+            "en": "That is fertilisation.",
+            "hi": "वह निषेचन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Embryo implantation",
+            "hi": "भ्रूण आरोपण"
+          },
+          "reason": {
+            "en": "Implantation concerns early human development here.",
+            "hi": "यहां आरोपण प्रारंभिक मानव विकास से जुड़ा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Seed germination",
+            "hi": "बीज अंकुरण"
+          },
+          "reason": {
+            "en": "Germination follows seed formation.",
+            "hi": "अंकुरण बीज बनने के बाद है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Transfer of pollen to stigma",
+            "hi": "वर्तिकाग्र तक पराग का पहुंचना"
+          },
+          "reason": {
+            "en": "This is the defining pollen-transfer step.",
+            "hi": "यह पराग स्थानांतरण की परिभाषित घटना है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which floral structure usually becomes fruit?",
+        "hi": "पुष्प की कौन सी संरचना सामान्यतः फल बनती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Ovary",
+            "hi": "अंडाशय"
+          },
+          "reason": {
+            "en": "The ovary develops into the fruit.",
+            "hi": "अंडाशय फल बनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ovule",
+            "hi": "बीजांड"
+          },
+          "reason": {
+            "en": "The ovule becomes a seed.",
+            "hi": "बीजांड बीज बनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pollen tube",
+            "hi": "पराग नली"
+          },
+          "reason": {
+            "en": "The tube carries male gametes.",
+            "hi": "नली नर युग्मक पहुंचाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Filament",
+            "hi": "तंतु"
+          },
+          "reason": {
+            "en": "A filament supports an anther.",
+            "hi": "तंतु परागकोश को सहारा देता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Where does human fertilisation normally occur?",
+        "hi": "मानव में निषेचन सामान्यतः कहां होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Urinary bladder",
+            "hi": "मूत्राशय"
+          },
+          "reason": {
+            "en": "The bladder stores urine.",
+            "hi": "मूत्राशय मूत्र रखता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Oviduct",
+            "hi": "अंडवाहिनी"
+          },
+          "reason": {
+            "en": "Egg and sperm normally fuse in an oviduct.",
+            "hi": "अंड कोशिका और शुक्राणु सामान्यतः अंडवाहिनी में मिलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Stomach",
+            "hi": "आमाशय"
+          },
+          "reason": {
+            "en": "The stomach digests food.",
+            "hi": "आमाशय भोजन पचाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Testis",
+            "hi": "वृषण"
+          },
+          "reason": {
+            "en": "Testes produce sperm, not the usual fertilisation site.",
+            "hi": "वृषण शुक्राणु बनाते हैं; सामान्य निषेचन स्थान नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "What is the placenta mainly associated with?",
+        "hi": "अपरा मुख्यतः किससे जुड़ी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Making saliva",
+            "hi": "लार बनाना"
+          },
+          "reason": {
+            "en": "Salivary glands make saliva.",
+            "hi": "लार ग्रंथियां लार बनाती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Filtering air in the nose",
+            "hi": "नाक में वायु छानना"
+          },
+          "reason": {
+            "en": "That is unrelated to placental exchange.",
+            "hi": "यह अपरा विनिमय से अलग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Exchange supporting the developing embryo/foetus",
+            "hi": "भ्रूण/गर्भस्थ शिशु को समर्थित करने वाला विनिमय"
+          },
+          "reason": {
+            "en": "It supports nutrient, gas and waste exchange.",
+            "hi": "यह पोषक, गैस और अपशिष्ट विनिमय में सहायक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Producing pollen",
+            "hi": "पराग बनाना"
+          },
+          "reason": {
+            "en": "Anthers produce pollen.",
+            "hi": "परागकोश पराग बनाते हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which statement about menstruation is correct?",
+        "hi": "मासिक धर्म के बारे में कौन सा कथन सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It is impurity.",
+            "hi": "यह अशुद्धता है।"
+          },
+          "reason": {
+            "en": "It is a normal biological process, not impurity.",
+            "hi": "यह सामान्य जैविक प्रक्रिया है, अशुद्धता नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Everyone must have an identical 28-day cycle.",
+            "hi": "सभी का ठीक समान 28 दिन चक्र जरूरी है।"
+          },
+          "reason": {
+            "en": "Cycle timing can vary.",
+            "hi": "चक्र की अवधि बदल सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It is the removal of a kidney.",
+            "hi": "यह वृक्क का निकलना है।"
+          },
+          "reason": {
+            "en": "Kidneys are not shed in menstruation.",
+            "hi": "मासिक धर्म में वृक्क नहीं निकलते।"
+          }
+        },
+        {
+          "text": {
+            "en": "It includes shedding of uterine lining when pregnancy does not occur.",
+            "hi": "गर्भ न ठहरने पर गर्भाशय परत का निकलना शामिल है।"
+          },
+          "reason": {
+            "en": "The prepared lining breaks down and leaves with blood.",
+            "hi": "तैयार परत टूटकर रक्त के साथ निकलती है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which method can reduce both pregnancy risk and many STI risks?",
+        "hi": "कौन सी विधि गर्भ और अनेक संक्रमण दोनों का जोखिम घटा सकती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Correct condom use",
+            "hi": "कंडोम का सही उपयोग"
+          },
+          "reason": {
+            "en": "A barrier reduces sperm transfer and infectious contact, without an absolute guarantee.",
+            "hi": "अवरोध शुक्राणु संचार और संक्रमित संपर्क घटाता है; पूर्ण गारंटी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Hormonal pills alone",
+            "hi": "केवल हार्मोन गोलियां"
+          },
+          "reason": {
+            "en": "Pills do not create an STI barrier.",
+            "hi": "गोलियां संक्रमण का अवरोध नहीं बनातीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A calendar alone guarantees protection",
+            "hi": "केवल कैलेंडर की पूर्ण सुरक्षा"
+          },
+          "reason": {
+            "en": "A calendar alone does not prevent infections.",
+            "hi": "केवल कैलेंडर संक्रमण नहीं रोकता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Eating extra sugar",
+            "hi": "अधिक शर्करा खाना"
+          },
+          "reason": {
+            "en": "Sugar intake is not contraception or STI protection.",
+            "hi": "शर्करा गर्भनिरोध या संक्रमण सुरक्षा नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is blocked in vasectomy or tubectomy?",
+        "hi": "पुरुष या महिला नसबंदी में क्या रोका जाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "All blood circulation",
+            "hi": "पूरा रक्त परिसंचरण"
+          },
+          "reason": {
+            "en": "Circulation must remain functional.",
+            "hi": "परिसंचरण काम करता रहना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Gamete transport pathways",
+            "hi": "युग्मक परिवहन मार्ग"
+          },
+          "reason": {
+            "en": "The relevant ducts are blocked, not all gonads removed.",
+            "hi": "संबंधित वाहिकाएं रोकी जाती हैं; सभी जनन ग्रंथियां नहीं हटतीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every hormone forever",
+            "hi": "हमेशा सभी हार्मोन"
+          },
+          "reason": {
+            "en": "These are not removal of the hormone-producing gonads.",
+            "hi": "ये हार्मोन बनाने वाली ग्रंथियां हटाना नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The digestive tract",
+            "hi": "पाचन मार्ग"
+          },
+          "reason": {
+            "en": "Digestive organs are unrelated to these methods.",
+            "hi": "पाचन अंग इन विधियों से अलग हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "marks": 2,
+      "question": {
+        "en": "Compare binary fission and budding with examples.",
+        "hi": "उदाहरण सहित द्विखंडन और मुकुलन की तुलना कीजिए।"
+      },
+      "answer": {
+        "en": "In Amoeba, a cell divides into two daughter individuals. In yeast, a smaller outgrowth develops on the parent and may separate after growth. Both are asexual modes without gamete fusion.",
+        "hi": "अमीबा में कोशिका 2 संतति जीवों में बंटती है। यीस्ट में जनक पर छोटा उभार बनता है और बढ़कर अलग हो सकता है। दोनों युग्मक संलयन रहित अलैंगिक तरीके हैं।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Distinguish pollination and fertilisation.",
+        "hi": "परागण और निषेचन में अंतर कीजिए।"
+      },
+      "answer": {
+        "en": "Pollination transfers pollen from anther to stigma. Fertilisation fuses the male gamete with an egg in an ovule to form a zygote; tube growth connects the events.",
+        "hi": "परागण में परागकोश से वर्तिकाग्र तक पराग जाता है। निषेचन में बीजांड की अंड कोशिका और नर युग्मक मिलकर युग्मनज बनाते हैं; नली वृद्धि दोनों घटनाओं को जोड़ती है।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Describe the route from human zygote to implantation.",
+        "hi": "मानव युग्मनज से आरोपण तक क्रम बताइए।"
+      },
+      "answer": {
+        "en": "After fertilisation in an oviduct, the zygote divides while moving towards the uterus. The early embryo attaches within the prepared uterine lining, where further development is supported.",
+        "hi": "अंडवाहिनी में निषेचन के बाद युग्मनज गर्भाशय की ओर जाते हुए विभाजित होता है। प्रारंभिक भ्रूण तैयार गर्भाशय परत में जुड़ता है, जहां आगे विकास समर्थित होता है।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Give 2 functions supported by the placenta.",
+        "hi": "अपरा से समर्थित 2 कार्य बताइए।"
+      },
+      "answer": {
+        "en": "It transfers nutrients and oxygen towards the developing organism. It helps remove carbon dioxide and other wastes towards maternal circulation without simply mixing both blood supplies into one pool.",
+        "hi": "यह विकसित जीव तक पोषक पदार्थ और ऑक्सीजन पहुंचाती है। दोनों रक्त को बस एक पात्र में मिलाए बिना कार्बन डाइऑक्साइड तथा अन्य अपशिष्ट मातृ परिसंचरण की ओर हटाने में सहायता करती है।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Why are pregnancy prevention and STI prevention different questions?",
+        "hi": "गर्भ रोकना और संक्रमण रोकना अलग प्रश्न क्यों हैं?"
+      },
+      "answer": {
+        "en": "A method may change gamete production, transport or hormonal conditions without blocking infectious contact. Condoms provide a physical barrier; pills and intrauterine methods do not provide the same STI protection.",
+        "hi": "किसी विधि से युग्मक, परिवहन या हार्मोन दशा बदल सकती है, पर संक्रमित संपर्क न रुके। कंडोम भौतिक अवरोध देता है; गोलियां और अंतर्गर्भाशयी विधियां वैसी संक्रमण सुरक्षा नहीं देतीं।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "How can reproduction preserve resemblance and still produce variation?",
+        "hi": "जनन समानता रखते हुए विविधता कैसे देता है?"
+      },
+      "answer": {
+        "en": "DNA copying passes inherited information, maintaining the basic body plan, but copying differences can arise. Sexual reproduction also combines parental genetic contributions into new arrangements.",
+        "hi": "डीएनए प्रतिकृति वंशागत सूचना देकर मूल रूप बनाए रखती है, लेकिन प्रतिलिपि में अंतर आ सकते हैं। लैंगिक जनन जनकीय आनुवंशिक योगदान के नए संयोजन भी बनाता है।"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT Science Class X: How do Organisms Reproduce?",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc107.pdf"
+    },
+    {
+      "title": "UPMSP Class 10 Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ],
+  "goal": {
+    "en": "Compare reproductive modes and explain flower and human reproduction with accurate, respectful health concepts.",
+    "hi": "जनन के प्रकारों की तुलना तथा पुष्प और मानव जनन को सही, सम्मानपूर्ण स्वास्थ्य विचारों सहित समझिए।"
+  },
+  "formulas": [
+    {
+      "expression": "Half-set gamete + half-set gamete → paired-set zygote",
+      "meaning": {
+        "en": "A conceptual chromosome-number relation in sexual reproduction.",
+        "hi": "लैंगिक जनन में गुणसूत्र संख्या का वैचारिक संबंध।"
+      },
+      "units": {
+        "en": "Counts of chromosomes, not mass or time.",
+        "hi": "गुणसूत्रों की संख्या, द्रव्यमान या समय नहीं।"
+      }
+    },
+    {
+      "expression": "Pollination → pollen tube → fertilisation → embryo/seed; ovary → fruit",
+      "meaning": {
+        "en": "Related stages with distinct meanings in flowering plants.",
+        "hi": "पुष्पी पौधों के अलग अर्थ वाले जुड़े चरण।"
+      },
+      "units": {
+        "en": "Stage order has no physical unit.",
+        "hi": "चरण क्रम की भौतिक इकाई नहीं है।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Pollination is not fertilisation; an ovule becomes a seed and an ovary usually becomes a fruit. Human fertilisation normally occurs in an oviduct, not the uterus. Contraceptive pills do not protect against STIs.",
+    "hi": "परागण निषेचन नहीं है। बीजांड बीज तथा अंडाशय सामान्यतः फल बनता है। मानव निषेचन सामान्यतः अंडवाहिनी में होता है, गर्भाशय में नहीं। गर्भनिरोधक गोलियां लैंगिक संक्रमण से सुरक्षा नहीं देतीं।"
+  },
+  "summary": [
+    {
+      "en": "DNA copying supports continuity with some variation.",
+      "hi": "डीएनए प्रतिकृति कुछ विविधता सहित निरंतरता देती है।"
+    },
+    {
+      "en": "Fission, budding, spores and vegetative propagation illustrate asexual modes.",
+      "hi": "विखंडन, मुकुलन, बीजाणु तथा कायिक प्रवर्धन अलैंगिक तरीके हैं।"
+    },
+    {
+      "en": "Gamete fusion makes a zygote and combines inherited information.",
+      "hi": "युग्मक संलयन युग्मनज बनाता और वंशागत सूचना मिलाता है।"
+    },
+    {
+      "en": "Flower pollination precedes fertilisation, seed and fruit formation.",
+      "hi": "पुष्प में परागण के बाद निषेचन तथा बीज और फल बनना आते हैं।"
+    },
+    {
+      "en": "Human reproductive health includes accurate knowledge, dignity and distinct pregnancy/STI prevention goals.",
+      "hi": "मानव जनन स्वास्थ्य में सही जानकारी, गरिमा तथा गर्भ और संक्रमण रोकने के अलग लक्ष्य हैं।"
+    }
+  ],
+  "conceptMap": "डीएनए प्रतिकृति → अलैंगिक जनन / युग्मक निर्माण → निषेचन → युग्मनज → भ्रूण → नया जीव; स्वास्थ्य → जानकारी + सम्मान + उचित रोकथाम",
+  "conceptMapEn": "DNA copying → asexual reproduction / gamete formation → fertilisation → zygote → embryo → new organism; health → knowledge + dignity + appropriate prevention"
+}

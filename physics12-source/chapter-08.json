@@ -1,0 +1,1052 @@
+{
+  "number": 8,
+  "id": "physics12-08",
+  "title": {
+    "en": "Electromagnetic Waves",
+    "hi": "वैद्युतचुंबकीय तरंगें"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Why displacement current is needed",
+        "hi": "विस्थापन धारा की आवश्यकता"
+      },
+      "paragraphs": [
+        {
+          "en": "A charging capacitor exposes the limitation of a magnetic-field law containing conduction current alone. Maxwell added displacement current associated with changing electric flux. In vacuum Id=ε0dΦE/dt. It is not the same microscopic mechanism as charge carriers crossing a wire. For an ideal charging parallel-plate capacitor it matches the wire current under the usual approximations.",
+          "hi": "संधारित्र को आवेशित करते समय तारों में चालन धारा (Conduction Current) होती है, लेकिन आदर्श प्लेटों के बीच के निर्वात या परावैद्युत से वैसे मुक्त आवेश पार नहीं जाते। फिर भी वहाँ बदलता विद्युत क्षेत्र चुंबकीय प्रभाव से जुड़ा होता है। केवल चालन धारा वाला ऐम्पियर नियम अलग पृष्ठ चुनने पर असंगत परिणाम देता है। मैक्सवेल ने बदलते विद्युत फ्लक्स से संबंधित विस्थापन धारा (Displacement Current) जोड़कर इस असंगति को दूर किया। निर्वात में Id=ε0 dΦE/dt है। यह सामान्य चालक में चलते आवेशों का वही भौतिक प्रवाह नहीं, बल्कि समय के साथ बदलते विद्युत क्षेत्र का पद है। आदर्श समानांतर प्लेट संधारित्र को धीरे आवेशित करने और किनारी प्रभाव उपेक्षित करने पर प्लेटों के बीच विस्थापन धारा, तार में चालन धारा के बराबर होती है। इससे परिपथ के सभी पृष्ठों पर चुंबकीय क्षेत्र का हिसाब सुसंगत रहता है। स्थिर विद्युत क्षेत्र के लिए यह पद शून्य है; केवल बड़ा विद्युत क्षेत्र होना पर्याप्त नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Distinguish field change from field magnitude.",
+          "hi": "विद्युत क्षेत्र का मान और उसकी परिवर्तन दर अलग रखें। किसी स्थिर आवेशित संधारित्र में विद्युत क्षेत्र और ऊर्जा मौजूद हो सकते हैं, फिर भी आवेशन रुकने के बाद आदर्श विस्थापन धारा शून्य होगी।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can a constant electric field produce displacement current?",
+          "hi": "क्या स्थिर विद्युत क्षेत्र विस्थापन धारा देता है?"
+        },
+        "answer": {
+          "en": "Not through its time derivative; dΦE/dt must be nonzero.",
+          "hi": "उसकी समय अवकलज से नहीं; dΦE/dt अशून्य होना चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Generation and propagation",
+        "hi": "उत्पत्ति और संचरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Accelerated charges can radiate electromagnetic waves. Uniform motion alone does not guarantee radiation. Oscillating antenna charges provide a familiar source. Electromagnetic waves can transfer energy through vacuum and do not need material-particle oscillations as sound does. A travelling wave contains coupled electric and magnetic fields rather than an alternating sequence of isolated field types.",
+          "hi": "विद्युतचुंबकीय तरंग (Electromagnetic Wave) में समय और स्थान के साथ बदलते विद्युत तथा चुंबकीय क्षेत्र जुड़े होते हैं। त्वरित विद्युत आवेश विद्युतचुंबकीय विकिरण उत्पन्न कर सकता है। हर स्थिर आवेश लगातार विकिरण नहीं करता और समान वेग से चलते आवेश को केवल गतिमान कहकर विकिरणकारी नहीं मान सकते। एंटीना में दोलित आवेश रेडियो तरंगों का परिचित स्रोत हैं। तरंग बनने के बाद ऊर्जा और संकेत स्रोत से दूर तक जा सकते हैं। संचरण के लिए हवा, जल या किसी पदार्थ का होना जरूरी नहीं; निर्वात में भी ये तरंगें चलती हैं। इन्हें ध्वनि जैसी यांत्रिक तरंग न समझें, जिसमें माध्यम के कणों का दोलन आवश्यक है। बदलते क्षेत्रों के स्वसंगत संबंध तरंग को वर्णित करते हैं; यह कहना कि पहले केवल विद्युत और फिर बाद में केवल चुंबकीय क्षेत्र बनता है, चलती समतल तरंग का सही चित्र नहीं। स्रोत के पास का जटिल क्षेत्र तथा दूर का तरंग क्षेत्र अलग परिस्थितियाँ हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Separate the source mechanism from the propagation medium.",
+          "hi": "स्रोत में आवेश दोलित हो सकते हैं, लेकिन रास्ते में हर स्थान पर वही आवेश चलकर नहीं पहुँचते। सिग्नल की ऊर्जा का संचरण और किसी विशेष इलेक्ट्रॉन की लंबी यात्रा अलग विचार हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does an electromagnetic wave require air?",
+          "hi": "क्या विद्युतचुंबकीय तरंग को हवा चाहिए?"
+        },
+        "answer": {
+          "en": "No; it propagates in vacuum.",
+          "hi": "नहीं; वह निर्वात में चल सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Transverse fields and directions",
+        "hi": "अनुप्रस्थ क्षेत्र और दिशाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "For a plane wave in vacuum, E, B and the propagation direction are mutually perpendicular. E×B gives the energy-flow direction. The fields are in phase in a travelling sinusoidal plane wave. A graph height represents field magnitude, not the mechanical displacement of a material rope.",
+          "hi": "निर्वात में चलती समतल विद्युतचुंबकीय तरंग में विद्युत क्षेत्र E तथा चुंबकीय क्षेत्र B एक-दूसरे के लम्बवत और दोनों संचरण दिशा के लम्बवत होते हैं। इसलिए तरंग अनुप्रस्थ (Transverse) है। यदि E, y दिशा में और B, z दिशा में धनात्मक हों, तो E×B के अनुसार ऊर्जा +x दिशा में जाती है। दिशा निकालने में दाएँ हाथ का सदिश गुणनफल प्रयोग करें, केवल दोनों तीरों को जोड़ न दें। एक ही स्थान पर E और B साइनाकार चलती तरंग में समान कला में होते हैं: दोनों साथ शून्य और साथ चरम पर जाते हैं। किसी एक क्षेत्र की दिशा उलटने से चुना ऊर्जा प्रवाह उलट सकता है। पाठ्यचित्र में E और B की तरंगें खींचने का अर्थ यह नहीं कि वे दो अलग रस्सियाँ हैं या कण ऊपर-नीचे चल रहे हैं। ऊर्ध्वाधर ऊँचाई उस स्थान और क्षण के क्षेत्र का मान बताती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A transverse-wave diagram must state the propagation direction and field axes separately.",
+          "hi": "अनुप्रस्थ चित्र में संचरण दिशा, विद्युत क्षेत्र अक्ष और चुंबकीय क्षेत्र अक्ष अलग नामित करें। अलग राशियों की दृश्य ऊँचाइयाँ समान खींची जाएँ तो भी उनके वास्तविक SI संख्यात्मक आयाम समान नहीं होते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "E points +y and B points +z. Which way does the wave travel?",
+          "hi": "E,+y और B,+z में हैं। तरंग किस दिशा में जाती है?"
+        },
+        "answer": {
+          "en": "+x, since y×z=x.",
+          "hi": "+x, क्योंकि y×z=x।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Speed, frequency and wavelength",
+        "hi": "चाल, आवृत्ति और तरंगदैर्घ्य"
+      },
+      "paragraphs": [
+        {
+          "en": "In vacuum c=fλ and c=1/√(μ0ε0), approximately 3×10^8 m/s. Increasing frequency reduces wavelength, not vacuum speed. In a material medium use its wave speed v. At a stationary boundary the frequency normally stays fixed while speed and wavelength change.",
+          "hi": "निर्वात में विद्युतचुंबकीय तरंग की चाल c=1/√(μ0ε0) है, जिसे साधारण प्रश्नों में 3×10^8 m/s लेते हैं। आवृत्ति f और तरंगदैर्घ्य λ के बीच c=fλ संबंध है। सभी निर्वात विद्युतचुंबकीय तरंगें इसी चाल से चलती हैं, भले उनकी आवृत्तियाँ बहुत अलग हों। अधिक आवृत्ति का अर्थ निर्वात में अधिक चाल नहीं; उसका तरंगदैर्घ्य छोटा होगा। माध्यम में चाल बदल सकती है और निर्वात संबंध की जगह v=fλ लेना पड़ता है। सीमा पार करते समय स्रोत द्वारा निर्धारित आवृत्ति सामान्यतः वही रहती है; चाल बदलने पर λ बदलता है। प्रकाश का अपवर्तन इसी बदलाव से जुड़ा है। इकाइयों में विशेष सावधानी रखें: 1 MHz=10^6 Hz और 1 nm=10^-9 m। रेडियो के मीटर तथा गामा किरणों के बहुत छोटे तरंगदैर्घ्य को एक सीधी रेखीय चित्र-धुरी पर वास्तविक अनुपात में दिखाना कठिन है; वर्णक्रम के चित्र प्रायः सांकेतिक या लघुगणकीय होते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Convert prefixes to SI before dividing c by frequency.",
+          "hi": "c/f करने से पहले उपसर्गों को SI में बदलें। 100 MHz के लिए f=10^8 Hz रखने पर λ=3 m मिलता है; 100 को सीधे हर में रखने से 10^6 का गलत गुणक आएगा।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If vacuum frequency is doubled, what happens to wavelength?",
+          "hi": "निर्वात आवृत्ति दुगुनी हो तो तरंगदैर्घ्य क्या होगा?"
+        },
+        "answer": {
+          "en": "It halves.",
+          "hi": "आधा होगा।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Field amplitudes and energy",
+        "hi": "क्षेत्र आयाम और ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "For a vacuum plane wave E0=cB0; numerical equality is impossible because the SI units differ. Electric and magnetic energy densities are equal in this ideal wave. Intensity scales with field-amplitude squared. Energy-density relations are a quantitative supporting explanation; the prescribed electromagnetic-wave treatment emphasises qualitative characteristics.",
+          "hi": "निर्वात की समतल तरंग में विद्युत और चुंबकीय आयाम E0=cB0 से जुड़े हैं। E को V/m या N/C तथा B को T में मापते हैं, इसलिए उनके संख्यात्मक मान सीधे बराबर नहीं हो सकते। उदाहरण के लिए E0=300 V/m हो तो B0=10^-6 T है। तरंग विद्युत और चुंबकीय दोनों क्षेत्रों में ऊर्जा रखती है। निर्वात में ऊर्जा घनत्वों के तात्क्षणिक मान uE=ε0E²/2 और uB=B²/(2μ0) हैं; समतल चलती तरंग में ये समान हैं। पूरे चक्र का औसत तात्क्षणिक आयाम से अलग होता है क्योंकि sin² का औसत 1/2 है। यह मात्रात्मक विस्तार अवधारणा की सहायता करता है; बोर्ड का मूल जोर तरंग के गुणात्मक स्वरूप पर है। तीव्रता (Intensity) औसत ऊर्जा प्रवाह प्रति क्षेत्रफल है और समान माध्यम में क्षेत्र आयाम के वर्ग के अनुपात में बढ़ती है। आयाम दुगुना करने का अर्थ ऊर्जा प्रवाह दुगुना नहीं, 4 गुना है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not compare the drawn E and B heights as if they used the same physical unit.",
+          "hi": "चित्र में E और B की ऊँचाई एक जैसी दिख सकती है, लेकिन वे अलग मात्रकों की राशियाँ हैं। पहले आयाम का संबंध E0=cB0 लिखें; उसके बाद शक्ति या ऊर्जा घनत्व की गणना करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If E0 doubles in the same medium, by what factor does intensity change?",
+          "hi": "समान माध्यम में E0 दुगुना हो तो तीव्रता कितनी होगी?"
+        },
+        "answer": {
+          "en": "Four times.",
+          "hi": "4 गुनी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Radio, microwave and infrared regions",
+        "hi": "रेडियो, सूक्ष्मतरंग और अवरक्त क्षेत्र"
+      },
+      "paragraphs": [
+        {
+          "en": "Radio, microwave and infrared regions differ mainly in frequency and wavelength, not vacuum speed. Communication, radar, heating, thermal imaging and remote control are examples whose operation depends on how matter interacts with radiation. Conventional spectral boundaries can overlap; they are not rigid natural discontinuities.",
+          "hi": "विद्युतचुंबकीय वर्णक्रम (Electromagnetic Spectrum) को बढ़ती आवृत्ति या घटते तरंगदैर्घ्य के क्रम में व्यवस्थित करते हैं। रेडियो तरंगें लंबे तरंगदैर्घ्य क्षेत्र में संचार से जुड़ी हैं। सूक्ष्मतरंगें रेडार, कुछ संचार प्रणालियों और उपयुक्त पदार्थों के ऊष्मन में उपयोगी हैं। अवरक्त (Infrared) का संबंध अनेक गर्म वस्तुओं के तापीय विकिरण से है; तापीय चित्रण और कुछ रिमोट नियंत्रण इसके उदाहरण हैं। किसी श्रेणी की सीमा बिल्कुल कठोर प्राकृतिक दीवार नहीं; उपयोग और परंपरा के अनुसार क्षेत्रों में सीमा-ओवरलैप हो सकता है। माइक्रोवेव ओवन में खाना गर्म होने को केवल बाहर से अंदर चलती साधारण ऊष्मा का नियम न मानें; पदार्थ की तरंग के प्रति प्रतिक्रिया भी जरूरी है। ध्वनि की तरह तरंग के लिए हवा जरूरी मानना गलत है। इन सभी श्रेणियों की निर्वात चाल समान c है। उपयोग बताते समय स्रोत, तरंग क्षेत्र और पदार्थ के साथ अंतःक्रिया को अलग-अलग पहचानना बेहतर वैज्ञानिक उत्तर देता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A use is an example, not a definition of a spectral band.",
+          "hi": "किसी उपयोग को ही तरंग क्षेत्र की पूरी परिभाषा न बनाएँ। एक ही क्षेत्र के कई उपयोग हो सकते हैं और एक तकनीकी कार्य में अलग क्षेत्रों की तरंगें भी प्रयुक्त हो सकती हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Are radio waves slower than infrared in vacuum?",
+          "hi": "क्या निर्वात में रेडियो तरंगें अवरक्त से धीमी हैं?"
+        },
+        "answer": {
+          "en": "No; both travel at c.",
+          "hi": "नहीं; दोनों c से चलती हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Visible, ultraviolet, X and gamma rays",
+        "hi": "दृश्य, पराबैंगनी, X और गामा किरणें"
+      },
+      "paragraphs": [
+        {
+          "en": "Visible light is a narrow band detected by ordinary human vision. Violet has higher frequency than red. Ultraviolet, X and gamma radiation extend towards shorter wavelengths. X/gamma labels can also reflect origin and their energies may overlap, so a rigid universal energy ordering of every photon is inappropriate.",
+          "hi": "दृश्य प्रकाश (Visible Light) वह सीमित विद्युतचुंबकीय क्षेत्र है जिस पर सामान्य मानव आँख प्रतिक्रिया करती है। बैंगनी ओर आवृत्ति अधिक और लाल ओर कम होती है। दृश्य के आगे छोटी तरंगदैर्घ्य ओर पराबैंगनी, फिर X तथा गामा क्षेत्र आते हैं। पराबैंगनी का उपयोग उपयुक्त नियंत्रित स्थितियों में विसंक्रमण और पदार्थों के अध्ययन में होता है। X किरणें चिकित्सा चित्रण और संरचना अध्ययन में उपयोगी हैं। गामा विकिरण अक्सर नाभिकीय प्रक्रियाओं से उत्पन्न होता है; X और गामा नामों में उत्पत्ति का भेद भी महत्वपूर्ण हो सकता है, क्योंकि उनकी ऊर्जा सीमाएँ ओवरलैप कर सकती हैं। यह कहना कि हर गामा फोटॉन हर X फोटॉन से अधिक ऊर्जावान है, सार्वभौम सही नहीं। उच्च आवृत्ति विकिरण पदार्थ को आयनित कर सकता है, इसलिए उसके उपयोग नियंत्रित होते हैं। केवल आँख से न दिखने का अर्थ ऊर्जा या प्रभाव न होना नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not identify X and gamma radiation solely by an absolute non-overlapping wavelength boundary.",
+          "hi": "X और गामा को केवल पूरी तरह अलग कठोर तरंगदैर्घ्य सीमा से न पहचानें। स्रोत की प्रक्रिया, ऊर्जा का क्षेत्र और उपयोग साथ बताने से उत्तर अधिक सटीक होता है। सभी निर्वात में समान चाल से चलते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which visible colour has greater frequency: red or violet?",
+          "hi": "लाल या बैंगनी में किसकी आवृत्ति अधिक है?"
+        },
+        "answer": {
+          "en": "Violet.",
+          "hi": "बैंगनी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Reading models and radiation effects",
+        "hi": "मॉडल और विकिरण प्रभाव पढ़ना"
+      },
+      "paragraphs": [
+        {
+          "en": "A classroom wave animation stretches time and length scales. Its coloured curves identify fields, not material strings. Radiation effects depend on intensity, duration, energy and interaction with matter. The classical field picture here complements the photon treatment in the later dual-nature chapter. Always retain the vacuum or medium assumptions of a relation.",
+          "hi": "विद्युतचुंबकीय तरंग का कक्षा मॉडल अक्सर दो रंगों की साइन वक्रों से बनाया जाता है। रंग केवल E और B पहचानने का संकेत हैं; तरंग स्वयं दो रंगीन रस्सियाँ नहीं है। स्क्रीन पर धीमा चलता दोलन वास्तविक प्रकाश की अत्यधिक आवृत्ति को देखने योग्य बनाने का समय-विस्तार है। तरंगदैर्घ्य बदलने वाले स्लाइडर का अर्थ यह भी नहीं कि एनीमेशन की मिलीमीटर दूरी वास्तविक तरंगदैर्घ्य का पूर्ण पैमाना है। सीखने का लक्ष्य दिशा, लम्बवत संबंध, कला और c=fλ समझना है। किसी विकिरण के प्रभाव को केवल तरंग की श्रेणी से तय नहीं करते; तीव्रता, अवधि, फोटॉन ऊर्जा और पदार्थ की प्रतिक्रिया महत्वपूर्ण हो सकती है। इस अध्याय में ऊर्जा के प्रवाह का शास्त्रीय क्षेत्र चित्र पढ़ते हैं; फोटॉन के hν संबंध और प्रकाशविद्युत प्रभाव का विस्तृत अध्ययन द्वैत प्रकृति अध्याय में होगा। मॉडल से निकले नियम को उसकी निर्वात या माध्यम संबंधी शर्त के साथ लिखना वैज्ञानिक आदत है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use the model to compare relations, and use labelled numerical values for calculation.",
+          "hi": "मॉडल से संबंधों की तुलना करें और गणना में नामित संख्यात्मक मान लें। किसी दृश्य की धीमी गति, मोटी रेखा या रंग को पदार्थ की वास्तविक गति, आकार या दृश्य रंग के बराबर न मानें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does the height of an E-field graph represent?",
+          "hi": "E क्षेत्र आलेख की ऊँचाई क्या बताती है?"
+        },
+        "answer": {
+          "en": "Electric-field value, not displacement of a physical rope.",
+          "hi": "विद्युत क्षेत्र का मान, वास्तविक रस्सी का विस्थापन नहीं।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Id=ε0 dΦE/dt",
+      "meaning": {
+        "en": "Vacuum displacement current for changing electric flux.",
+        "hi": "बदलते विद्युत फ्लक्स की निर्वात विस्थापन धारा।"
+      },
+      "units": {
+        "en": "A; ΦE in V m",
+        "hi": "A; ΦE को V m में लें"
+      }
+    },
+    {
+      "expression": "c=1/√(μ0ε0)=fλ",
+      "meaning": {
+        "en": "Vacuum electromagnetic-wave speed.",
+        "hi": "निर्वात विद्युतचुंबकीय तरंग चाल।"
+      },
+      "units": {
+        "en": "m/s; f:Hz, λ:m",
+        "hi": "m/s; f:Hz, λ:m"
+      }
+    },
+    {
+      "expression": "E0=cB0",
+      "meaning": {
+        "en": "Vacuum plane-wave amplitude relation.",
+        "hi": "निर्वात समतल तरंग आयाम संबंध।"
+      },
+      "units": {
+        "en": "E0:V/m, B0:T",
+        "hi": "E0:V/m, B0:T"
+      }
+    },
+    {
+      "expression": "uE=ε0E²/2; uB=B²/(2μ0)",
+      "meaning": {
+        "en": "Quantitative support: field energy densities; equal in a vacuum plane wave.",
+        "hi": "मात्रात्मक सहायक विस्तार: क्षेत्र ऊर्जा घनत्व; निर्वात समतल तरंग में समान।"
+      },
+      "units": {
+        "en": "J/m³",
+        "hi": "J/m³"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find wavelength of a 100 MHz wave in vacuum.",
+        "hi": "निर्वात में 100 MHz तरंग का तरंगदैर्घ्य निकालें।"
+      },
+      "given": {
+        "en": "f=100×10^6 Hz, c=3×10^8 m/s.",
+        "hi": "f=100×10^6 Hz,c=3×10^8 m/s।"
+      },
+      "find": {
+        "en": "λ.",
+        "hi": "λ।"
+      },
+      "formula": {
+        "en": "λ=c/f",
+        "hi": "λ=c/f"
+      },
+      "steps": [
+        {
+          "en": "Convert 100 MHz to 10^8 Hz.",
+          "hi": "100 MHz को 10^8 Hz करें।"
+        },
+        {
+          "en": "Divide 3×10^8 by 10^8.",
+          "hi": "3×10^8 को 10^8 से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "3 m.",
+        "hi": "3 m।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find frequency for 600 nm light in vacuum.",
+        "hi": "निर्वात में 600 nm प्रकाश की आवृत्ति निकालें।"
+      },
+      "given": {
+        "en": "λ=600×10^-9 m.",
+        "hi": "λ=600×10^-9 m।"
+      },
+      "find": {
+        "en": "f.",
+        "hi": "f।"
+      },
+      "formula": {
+        "en": "f=c/λ",
+        "hi": "f=c/λ"
+      },
+      "steps": [
+        {
+          "en": "λ=6×10^-7 m.",
+          "hi": "λ=6×10^-7 m।"
+        },
+        {
+          "en": "f=(3×10^8)/(6×10^-7).",
+          "hi": "f=(3×10^8)/(6×10^-7)।"
+        }
+      ],
+      "answer": {
+        "en": "5×10^14 Hz.",
+        "hi": "5×10^14 Hz।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A vacuum plane wave has E0=300 V/m. Find B0.",
+        "hi": "निर्वात समतल तरंग में E0=300 V/m है। B0 निकालें।"
+      },
+      "given": {
+        "en": "c=3×10^8 m/s.",
+        "hi": "c=3×10^8 m/s।"
+      },
+      "find": {
+        "en": "B0.",
+        "hi": "B0।"
+      },
+      "formula": {
+        "en": "B0=E0/c",
+        "hi": "B0=E0/c"
+      },
+      "steps": [
+        {
+          "en": "300/(3×10^8)=10^-6.",
+          "hi": "300/(3×10^8)=10^-6।"
+        }
+      ],
+      "answer": {
+        "en": "1 μT.",
+        "hi": "1 μT।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A vacuum wave travels along +z and E is along +x. Find B direction.",
+        "hi": "निर्वात तरंग +z में चलती और E,+x में है। B की दिशा बताइए।"
+      },
+      "given": {
+        "en": "Propagation ∝ E×B.",
+        "hi": "संचरण ∝ E×B।"
+      },
+      "find": {
+        "en": "B direction.",
+        "hi": "B दिशा।"
+      },
+      "formula": {
+        "en": "x×y=z",
+        "hi": "x×y=z"
+      },
+      "steps": [
+        {
+          "en": "The field must be perpendicular to E and +z.",
+          "hi": "क्षेत्र E और +z दोनों के लम्बवत होना चाहिए।"
+        },
+        {
+          "en": "Choose +y so E×B points +z.",
+          "hi": "+y चुनें ताकि E×B,+z हो।"
+        }
+      ],
+      "answer": {
+        "en": "+y.",
+        "hi": "+y।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Light has vacuum wavelength 600 nm and enters a medium of refractive index 1.5. Find speed, frequency and wavelength there.",
+        "hi": "निर्वात तरंगदैर्घ्य 600 nm का प्रकाश अपवर्तनांक 1.5 के माध्यम में जाता है। चाल, आवृत्ति और तरंगदैर्घ्य निकालें।"
+      },
+      "given": {
+        "en": "n=1.5; stationary interface.",
+        "hi": "n=1.5; स्थिर सीमा।"
+      },
+      "find": {
+        "en": "v,f,λmedium.",
+        "hi": "v,f,λmedium।"
+      },
+      "formula": {
+        "en": "v=c/n; f constant; λmedium=λ0/n",
+        "hi": "v=c/n; f स्थिर; λmedium=λ0/n"
+      },
+      "steps": [
+        {
+          "en": "v=3×10^8/1.5=2×10^8 m/s.",
+          "hi": "v=3×10^8/1.5=2×10^8 m/s।"
+        },
+        {
+          "en": "f=5×10^14 Hz remains unchanged.",
+          "hi": "f=5×10^14 Hz अपरिवर्तित।"
+        },
+        {
+          "en": "λmedium=600/1.5=400 nm.",
+          "hi": "λmedium=600/1.5=400 nm।"
+        }
+      ],
+      "answer": {
+        "en": "2×10^8 m/s; 5×10^14 Hz; 400 nm.",
+        "hi": "2×10^8 m/s;5×10^14 Hz;400 nm।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Displacement current in vacuum is associated with",
+        "hi": "निर्वात विस्थापन धारा संबंधित है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Changing electric flux",
+            "hi": "बदलते विद्युत फ्लक्स से"
+          },
+          "reason": {
+            "en": "Id=ε0dΦE/dt.",
+            "hi": "Id=ε0dΦE/dt।"
+          }
+        },
+        {
+          "text": {
+            "en": "Constant magnetic flux only",
+            "hi": "केवल स्थिर चुंबकीय फ्लक्स"
+          },
+          "reason": {
+            "en": "This is not its defining term.",
+            "hi": "यह उसका परिभाषित पद नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Electrons crossing an ideal vacuum gap",
+            "hi": "आदर्श निर्वात अंतराल पार करते इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "The Maxwell term does not require this conduction.",
+            "hi": "मैक्सवेल पद को यह चालन जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only static electric charge",
+            "hi": "केवल स्थिर विद्युत आवेश"
+          },
+          "reason": {
+            "en": "A time derivative is required.",
+            "hi": "समय अवकलज चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which can radiate electromagnetic waves?",
+        "hi": "कौन विद्युतचुंबकीय तरंग विकिरित कर सकता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "An accelerated charge",
+            "hi": "त्वरित आवेश"
+          },
+          "reason": {
+            "en": "Acceleration can produce radiation.",
+            "hi": "त्वरण विकिरण दे सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every stationary charge continuously",
+            "hi": "हर स्थिर आवेश लगातार"
+          },
+          "reason": {
+            "en": "Its static field is not a propagating radiation wave.",
+            "hi": "स्थिर क्षेत्र संचरित विकिरण तरंग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a neutral object with no charges",
+            "hi": "केवल आवेशरहित उदासीन वस्तु"
+          },
+          "reason": {
+            "en": "Radiation arises from charge dynamics.",
+            "hi": "विकिरण आवेश की गतिकी से जुड़ा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only sound-producing objects",
+            "hi": "केवल ध्वनि बनाने वाली वस्तु"
+          },
+          "reason": {
+            "en": "Sound production is not the criterion.",
+            "hi": "ध्वनि बनना कसौटी नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In a vacuum plane wave E and B are",
+        "hi": "निर्वात समतल तरंग में E और B हैं"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Perpendicular and in phase",
+            "hi": "लम्बवत और समान कला में"
+          },
+          "reason": {
+            "en": "Both reach extrema together in the ideal travelling wave.",
+            "hi": "आदर्श चलती तरंग में दोनों साथ चरम पर।"
+          }
+        },
+        {
+          "text": {
+            "en": "Parallel",
+            "hi": "समानांतर"
+          },
+          "reason": {
+            "en": "The wave is transverse.",
+            "hi": "तरंग अनुप्रस्थ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "90° out of phase necessarily",
+            "hi": "अनिवार्य 90° कलांतर"
+          },
+          "reason": {
+            "en": "They are in phase in this case.",
+            "hi": "इस स्थिति में समान कला में हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both along propagation",
+            "hi": "दोनों संचरण दिशा में"
+          },
+          "reason": {
+            "en": "Both are perpendicular to propagation.",
+            "hi": "दोनों संचरण के लम्बवत।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The propagation direction is along",
+        "hi": "संचरण दिशा है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "E×B",
+            "hi": "E×B"
+          },
+          "reason": {
+            "en": "The cross product gives energy-flow direction.",
+            "hi": "सदिश गुणनफल ऊर्जा प्रवाह दिशा देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "E+B always",
+            "hi": "हमेशा E+B"
+          },
+          "reason": {
+            "en": "Simple addition does not give the propagation axis.",
+            "hi": "साधारण योग संचरण अक्ष नहीं देता।"
+          }
+        },
+        {
+          "text": {
+            "en": "E alone",
+            "hi": "केवल E"
+          },
+          "reason": {
+            "en": "E is transverse.",
+            "hi": "E अनुप्रस्थ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "B alone",
+            "hi": "केवल B"
+          },
+          "reason": {
+            "en": "B is transverse.",
+            "hi": "B अनुप्रस्थ है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which waves travel fastest in vacuum?",
+        "hi": "निर्वात में कौन-सी तरंग सबसे तेज है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "All electromagnetic bands have the same speed",
+            "hi": "सभी विद्युतचुंबकीय क्षेत्रों की चाल समान"
+          },
+          "reason": {
+            "en": "Their common vacuum speed is c.",
+            "hi": "साझी निर्वात चाल c है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Gamma rays always faster than radio",
+            "hi": "गामा हमेशा रेडियो से तेज"
+          },
+          "reason": {
+            "en": "Frequency is different, vacuum speed is not.",
+            "hi": "आवृत्ति अलग, निर्वात चाल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Visible red faster than violet",
+            "hi": "दृश्य लाल बैंगनी से तेज"
+          },
+          "reason": {
+            "en": "Both have c in vacuum.",
+            "hi": "निर्वात में दोनों c हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Microwaves slower than infrared",
+            "hi": "सूक्ष्मतरंग अवरक्त से धीमी"
+          },
+          "reason": {
+            "en": "This is not true in vacuum.",
+            "hi": "निर्वात में सही नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A 3 m vacuum wavelength corresponds to frequency",
+        "hi": "3 m निर्वात तरंगदैर्घ्य की आवृत्ति है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "100 MHz",
+            "hi": "100 MHz"
+          },
+          "reason": {
+            "en": "3×10^8/3=10^8 Hz.",
+            "hi": "3×10^8/3=10^8 Hz।"
+          }
+        },
+        {
+          "text": {
+            "en": "1 MHz",
+            "hi": "1 MHz"
+          },
+          "reason": {
+            "en": "That would have wavelength300 m.",
+            "hi": "उसका तरंगदैर्घ्य300 m होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "1 GHz",
+            "hi": "1 GHz"
+          },
+          "reason": {
+            "en": "That would have wavelength0.3 m.",
+            "hi": "उसका तरंगदैर्घ्य0.3 m होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "3 Hz",
+            "hi": "3 Hz"
+          },
+          "reason": {
+            "en": "The frequency conversion is missing c.",
+            "hi": "आवृत्ति में c नहीं लिया।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If E0=600 V/m in a vacuum plane wave, B0 is",
+        "hi": "निर्वात समतल तरंग में E0=600 V/m हो तो B0 है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2×10^-6 T",
+            "hi": "2×10^-6 T"
+          },
+          "reason": {
+            "en": "B0=600/(3×10^8).",
+            "hi": "B0=600/(3×10^8)।"
+          }
+        },
+        {
+          "text": {
+            "en": "600 T",
+            "hi": "600 T"
+          },
+          "reason": {
+            "en": "Numerical field amplitudes are not equal in SI.",
+            "hi": "SI में संख्यात्मक आयाम समान नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1.8×10^11 T",
+            "hi": "1.8×10^11 T"
+          },
+          "reason": {
+            "en": "B0 is E0/c, not E0c.",
+            "hi": "B0=E0/c है, E0c नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 T",
+            "hi": "0 T"
+          },
+          "reason": {
+            "en": "A nonzero E plane wave also has B.",
+            "hi": "अशून्य E वाली समतल तरंग में B भी है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which band is commonly associated with thermal imaging?",
+        "hi": "तापीय चित्रण सामान्यतः किस क्षेत्र से जुड़ा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Infrared",
+            "hi": "अवरक्त"
+          },
+          "reason": {
+            "en": "Warm-object thermal radiation is commonly detected here.",
+            "hi": "गर्म वस्तुओं का तापीय विकिरण प्रायः यहाँ पहचाना जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only audible sound",
+            "hi": "केवल श्रव्य ध्वनि"
+          },
+          "reason": {
+            "en": "Sound is not electromagnetic radiation.",
+            "hi": "ध्वनि विद्युतचुंबकीय विकिरण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only gamma rays",
+            "hi": "केवल गामा किरण"
+          },
+          "reason": {
+            "en": "This is not ordinary thermal imaging.",
+            "hi": "यह साधारण तापीय चित्रण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Static magnetic field",
+            "hi": "स्थिर चुंबकीय क्षेत्र"
+          },
+          "reason": {
+            "en": "A static field is not this radiation band.",
+            "hi": "स्थिर क्षेत्र यह विकिरण क्षेत्र नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "On entering a stationary optical medium, light normally retains",
+        "hi": "स्थिर प्रकाशीय माध्यम में जाने पर प्रकाश सामान्यतः बनाए रखता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Frequency",
+            "hi": "आवृत्ति"
+          },
+          "reason": {
+            "en": "The source sets the temporal frequency across the boundary.",
+            "hi": "स्रोत सीमा पर समय आवृत्ति निर्धारित करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Vacuum speed",
+            "hi": "निर्वात चाल"
+          },
+          "reason": {
+            "en": "Speed generally changes.",
+            "hi": "चाल सामान्यतः बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Vacuum wavelength",
+            "hi": "निर्वात तरंगदैर्घ्य"
+          },
+          "reason": {
+            "en": "Wavelength changes with speed.",
+            "hi": "चाल के साथ तरंगदैर्घ्य बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both speed and wavelength necessarily",
+            "hi": "चाल और तरंगदैर्घ्य दोनों अनिवार्य"
+          },
+          "reason": {
+            "en": "That is not generally true.",
+            "hi": "सामान्यतः सही नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Doubling a vacuum-wave field amplitude changes intensity by",
+        "hi": "निर्वात तरंग के क्षेत्र आयाम को दुगुना करने पर तीव्रता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4 times",
+            "hi": "4 गुनी"
+          },
+          "reason": {
+            "en": "Intensity scales as amplitude squared.",
+            "hi": "तीव्रता आयाम के वर्ग के अनुपाती।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 times",
+            "hi": "2 गुनी"
+          },
+          "reason": {
+            "en": "That would be linear dependence.",
+            "hi": "वह रैखिक निर्भरता होगी।"
+          }
+        },
+        {
+          "text": {
+            "en": "No change",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Intensity depends on field amplitude.",
+            "hi": "तीव्रता क्षेत्र आयाम पर निर्भर।"
+          }
+        },
+        {
+          "text": {
+            "en": "Half",
+            "hi": "आधी"
+          },
+          "reason": {
+            "en": "The amplitude was increased, not decreased.",
+            "hi": "आयाम बढ़ा है, घटा नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why did Maxwell add displacement current?",
+        "hi": "मैक्सवेल ने विस्थापन धारा क्यों जोड़ी?"
+      },
+      "answer": {
+        "en": "To make the magnetic-field law consistent for time-varying electric flux, including the charging-capacitor gap.",
+        "hi": "समय बदलते विद्युत फ्लक्स और आवेशित होते संधारित्र के अंतराल के लिए चुंबकीय नियम सुसंगत बनाने हेतु।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the orientation of E, B and propagation in a plane wave.",
+        "hi": "समतल तरंग में E,B और संचरण का अभिविन्यास लिखें।"
+      },
+      "answer": {
+        "en": "They are mutually perpendicular, and propagation is along E×B.",
+        "hi": "वे परस्पर लम्बवत हैं और संचरण E×B में है।"
+      }
+    },
+    {
+      "question": {
+        "en": "List the electromagnetic bands from low to high frequency.",
+        "hi": "विद्युतचुंबकीय क्षेत्र कम से अधिक आवृत्ति क्रम में लिखें।"
+      },
+      "answer": {
+        "en": "Radio, microwave, infrared, visible, ultraviolet, X-rays, gamma rays; conventional boundaries can overlap.",
+        "hi": "रेडियो,सूक्ष्मतरंग,अवरक्त,दृश्य,पराबैंगनी,X,गामा; पारंपरिक सीमाएँ ओवरलैप कर सकती हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find frequency for vacuum wavelength0.1 m.",
+        "hi": "निर्वात तरंगदैर्घ्य0.1 m की आवृत्ति निकालें।"
+      },
+      "answer": {
+        "en": "f=3×10^8/0.1=3×10^9 Hz=3 GHz.",
+        "hi": "f=3×10^8/0.1=3×10^9 Hz=3 GHz।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is an electromagnetic wave different from sound?",
+        "hi": "विद्युतचुंबकीय तरंग ध्वनि से कैसे भिन्न है?"
+      },
+      "answer": {
+        "en": "It can propagate through vacuum as coupled fields; sound is a mechanical disturbance requiring a material medium.",
+        "hi": "यह जुड़े क्षेत्रों के रूप में निर्वात में चलती है; ध्वनि को पदार्थ माध्यम चाहिए।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain one limitation of a slow animated wave diagram.",
+        "hi": "धीमे तरंग एनीमेशन की 1 सीमा समझाएँ।"
+      },
+      "answer": {
+        "en": "Displayed time, wavelength and field heights are rescaled and do not reproduce real light frequencies or equal E/B SI amplitudes.",
+        "hi": "समय,तरंगदैर्घ्य और ऊँचाइयाँ पुनर्मापित हैं; वास्तविक प्रकाश आवृत्ति या समान E/B SI आयाम नहीं।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Changing electric flux adds displacement current.",
+      "hi": "बदलता विद्युत फ्लक्स विस्थापन धारा देता है।"
+    },
+    {
+      "en": "Vacuum plane-wave fields are transverse and in phase.",
+      "hi": "निर्वात समतल तरंग के क्षेत्र अनुप्रस्थ और समान कला में हैं।"
+    },
+    {
+      "en": "E×B gives propagation direction.",
+      "hi": "E×B संचरण दिशा देता है।"
+    },
+    {
+      "en": "All vacuum electromagnetic bands travel at c.",
+      "hi": "सभी निर्वात विद्युतचुंबकीय क्षेत्र c से चलते हैं।"
+    },
+    {
+      "en": "Frequency and wavelength satisfy c=fλ.",
+      "hi": "आवृत्ति और तरंगदैर्घ्य का संबंध c=fλ है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not mistake graph displacement for particle motion, equate E and B numerical amplitudes, or assign different vacuum speeds to spectral bands.",
+    "hi": "आलेख विस्थापन को कण गति न मानें, E,B के संख्यात्मक आयाम बराबर न करें और अलग क्षेत्रों की निर्वात चाल अलग न मानें।"
+  },
+  "goal": {
+    "en": "Recognise coupled fields and compare the electromagnetic spectrum.",
+    "hi": "जुड़े क्षेत्रों को पहचानें और विद्युतचुंबकीय वर्णक्रम की तुलना करें।"
+  },
+  "conceptMap": "विस्थापन धारा → जुड़े क्षेत्र → अनुप्रस्थ संचरण → c=fλ → वर्णक्रम",
+  "conceptMapEn": "Displacement current → coupled fields → transverse propagation → c=fλ → spectrum",
+  "editionBasis": {
+    "en": "Original study explanations for current NCERT Physics XII and UP Board 2026–27. Use the prescribed text and practical work too. UP Board-specific topics are identified where scope differs.",
+    "hi": "वर्तमान NCERT भौतिकी कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और प्रयोग भी साथ पढ़ें। जहाँ दायरा अलग है, यूपी बोर्ड के अतिरिक्त विषय पहचाने गए हैं।"
+  },
+  "sources": [
+    {
+      "title": "UPMSP Physics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Physics XII Chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/leph108.pdf"
+    }
+  ]
+}

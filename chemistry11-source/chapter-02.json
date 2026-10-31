@@ -1,0 +1,1532 @@
+{
+  "number": 2,
+  "id": "chemistry11-02",
+  "title": {
+    "en": "Structure of Atom",
+    "hi": "परमाणु की संरचना"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "chem11-02-1",
+      "title": {
+        "en": "Hydrogen energy levels",
+        "hi": "हाइड्रोजन के ऊर्जा स्तर"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 3
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Principal quantum number",
+            "hi": "मुख्य क्वांटम संख्या"
+          },
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "initial": 2,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 3,
+      "goal": {
+        "en": "Compare allowed hydrogen energies as n changes.",
+        "hi": "n बदलकर हाइड्रोजन की अनुमत ऊर्जा तुलना करें।"
+      },
+      "observe": {
+        "en": "Watch negative energy approach zero while neighbouring levels come closer.",
+        "hi": "ऋण ऊर्जा शून्य के पास और पड़ोसी स्तरों का अंतर कम होता देखें।"
+      },
+      "modelNote": {
+        "en": "The formula is for a hydrogen atom. Levels and shell drawings are symbolic; they are not measured electron paths.",
+        "hi": "सूत्र हाइड्रोजन परमाणु के लिए है। स्तर और खोल चित्र सांकेतिक हैं; वे मापे इलेक्ट्रॉन पथ नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "En=−13.6/n² eV is less negative at larger n; zero is the ionisation limit.",
+          "hi": "बड़े n पर En=−13.6/n² eV कम ऋण है; शून्य आयनन सीमा है।"
+        }
+      },
+      "realLife": {
+        "en": "Hydrogen line spectra reveal differences between allowed energies.",
+        "hi": "हाइड्रोजन रेखीय स्पेक्ट्रम अनुमत ऊर्जाओं का अंतर बताता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which state has the lowest energy?",
+          "hi": "किस अवस्था की ऊर्जा न्यूनतम है?"
+        },
+        "options": [
+          {
+            "en": "n=1",
+            "hi": "n=1"
+          },
+          {
+            "en": "n=3",
+            "hi": "n=3"
+          },
+          {
+            "en": "n=5",
+            "hi": "n=5"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "n=1 has−13.6 eV, the lowest allowed hydrogen level.",
+          "hi": "n=1 में−13.6 eV है, हाइड्रोजन का निम्नतम अनुमत स्तर।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-02-1-low",
+          "label": {
+            "en": "Set principal quantum number to 1 .",
+            "hi": "मुख्य क्वांटम संख्या 1  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.01
+          }
+        },
+        {
+          "id": "chem11-02-1-high",
+          "label": {
+            "en": "Compare the maximum setting 5 .",
+            "hi": "अधिकतम सेटिंग 5  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4.99
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Low n corresponds to a more tightly bound electron.",
+            "hi": "छोटा n अधिक मजबूत बंधी इलेक्ट्रॉन अवस्था बताता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Higher n is closer to the zero-energy separation limit.",
+            "hi": "ऊँचा n शून्य ऊर्जा की अलगाव सीमा के पास है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected quantity or particle",
+            "hi": "चुनी राशि या कण"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference structure or graph",
+            "hi": "संदर्भ संरचना या आलेख"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-02-2",
+      "title": {
+        "en": "Matter wavelength",
+        "hi": "द्रव्य तरंगदैर्घ्य"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 4
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Electron speed",
+            "hi": "इलेक्ट्रॉन की चाल"
+          },
+          "min": 0.5,
+          "max": 3,
+          "step": 0.5,
+          "initial": 1,
+          "unit": "×10^6 m/s"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Observe the inverse relation between electron speed and matter wavelength.",
+        "hi": "इलेक्ट्रॉन चाल और द्रव्य तरंगदैर्घ्य का व्युत्क्रम संबंध देखें।"
+      },
+      "observe": {
+        "en": "Read the slider scale as millions of metres per second.",
+        "hi": "स्लाइडर पैमाना प्रति सेकंड दस लाख मीटर के गुणज में पढ़ें।"
+      },
+      "modelNote": {
+        "en": "Uses λ=h/(mv) with a non-relativistic electron. The wave drawing is symbolic and not an electron trajectory.",
+        "hi": "अनापेक्षिक इलेक्ट्रॉन के लिए λ=h/(mv) है। तरंग चित्र सांकेतिक है, इलेक्ट्रॉन का पथ नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "At fixed electron mass, increasing v increases momentum and shortens λ.",
+          "hi": "स्थिर इलेक्ट्रॉन द्रव्यमान पर v बढ़ने से संवेग बढ़ता और λ घटती है।"
+        }
+      },
+      "realLife": {
+        "en": "Electron diffraction exploits a wave property of matter.",
+        "hi": "इलेक्ट्रॉन विवर्तन द्रव्य के तरंग गुण का उपयोग करता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "What does doubling speed do to λ?",
+          "hi": "चाल दुगुनी करने पर λ क्या होती है?"
+        },
+        "options": [
+          {
+            "en": "Doubles",
+            "hi": "दुगुनी"
+          },
+          {
+            "en": "Halves",
+            "hi": "आधी"
+          },
+          {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "λ is inversely proportional to v for fixed m.",
+          "hi": "स्थिर m पर λ, v के व्युत्क्रमानुपाती है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-02-2-low",
+          "label": {
+            "en": "Set electron speed to 0.5 ×10^6 m/s.",
+            "hi": "इलेक्ट्रॉन की चाल 0.5 ×10^6 m/s करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.505
+          }
+        },
+        {
+          "id": "chem11-02-2-high",
+          "label": {
+            "en": "Compare the maximum setting 3 ×10^6 m/s.",
+            "hi": "अधिकतम सेटिंग 3 ×10^6 m/s से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 2.995
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.75
+          },
+          "text": {
+            "en": "Lower speed gives a longer matter wavelength.",
+            "hi": "कम चाल पर द्रव्य तरंगदैर्घ्य अधिक है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.75
+          },
+          "text": {
+            "en": "Higher speed gives a shorter wavelength, not a smaller electron.",
+            "hi": "अधिक चाल पर तरंगदैर्घ्य कम है, इलेक्ट्रॉन छोटा नहीं होता।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected quantity or particle",
+            "hi": "चुनी राशि या कण"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference structure or graph",
+            "hi": "संदर्भ संरचना या आलेख"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-02-3",
+      "title": {
+        "en": "Orbital shapes",
+        "hi": "कक्षकों की आकृतियाँ"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 5
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Azimuthal quantum number",
+            "hi": "दिगंशी क्वांटम संख्या"
+          },
+          "min": 0,
+          "max": 2,
+          "step": 1,
+          "initial": 1,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 6,
+      "goal": {
+        "en": "Identify s,p and d orbital-shape families from l.",
+        "hi": "l से s,p,d कक्षक आकृति परिवार पहचानें।"
+      },
+      "observe": {
+        "en": "Select l=0,1,2 and compare the representative angular shapes.",
+        "hi": "l=0,1,2 चुनकर प्रतिनिधि कोणीय आकृतियाँ तुलना करें।"
+      },
+      "modelNote": {
+        "en": "A boundary-surface sketch is not an electron path. Colours denote phase, not charge. A representative d drawing does not show all five d orbitals.",
+        "hi": "सीमा पृष्ठ चित्र इलेक्ट्रॉन पथ नहीं है। रंग कला बताते हैं, आवेश नहीं। प्रतिनिधि d चित्र सभी5 d कक्षक नहीं दिखाता।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "l=0,1,2 correspond to s,p,d subshells with 1,3,5 orbitals respectively.",
+          "hi": "l=0,1,2 क्रमशः s,p,d उपकोश हैं, जिनमें1,3,5 कक्षक हैं।"
+        }
+      },
+      "realLife": {
+        "en": "Orbital shapes help explain directional bonding models.",
+        "hi": "कक्षक आकृतियाँ दिशात्मक आबंधन मॉडल समझाने में सहायक हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which l identifies a p subshell?",
+          "hi": "कौन-सा l, p उपकोश बताता है?"
+        },
+        "options": [
+          {
+            "en": "0",
+            "hi": "0"
+          },
+          {
+            "en": "1",
+            "hi": "1"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "For p, l=1 and there are three orbitals.",
+          "hi": "p के लिए l=1 तथा3 कक्षक हैं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-02-3-low",
+          "label": {
+            "en": "Set azimuthal quantum number to 0 .",
+            "hi": "दिगंशी क्वांटम संख्या 0  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.01
+          }
+        },
+        {
+          "id": "chem11-02-3-high",
+          "label": {
+            "en": "Compare the maximum setting 2 .",
+            "hi": "अधिकतम सेटिंग 2  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 1.99
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.0
+          },
+          "text": {
+            "en": "s is spherically symmetric; p uses two-lobed angular drawings.",
+            "hi": "s गोलकीय सममित है; p के कोणीय चित्र में2 पालियाँ हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.0
+          },
+          "text": {
+            "en": "d has five orbital states; the drawing is one representative shape.",
+            "hi": "d में5 कक्षक अवस्थाएँ हैं; चित्र एक प्रतिनिधि रूप है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected quantity or particle",
+            "hi": "चुनी राशि या कण"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference structure or graph",
+            "hi": "संदर्भ संरचना या आलेख"
+          }
+        }
+      ],
+      "selectors": []
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Subatomic particles and evidence",
+        "hi": "उपपरमाण्विक कण और प्रमाण"
+      },
+      "paragraphs": [
+        {
+          "en": "Atoms are not indivisible solid balls. Cathode-ray observations established that electrons are negatively charged constituents common to different substances. Their charge-to-mass ratio did not depend on the material used for the tube electrodes, supporting their universal nature. The measured electron charge and charge-to-mass ratio together made its mass accessible. Positive particles and later the electrically neutral neutron helped explain nuclear composition. A proton has charge +e, an electron has charge −e, and a neutron has no net electric charge. The proton and neutron have masses close to 1 u, while an electron is much lighter; close does not mean exactly identical masses. Atomic number Z counts protons and identifies the element. In a neutral atom the electron count also equals Z, but this equality changes when an ion forms. The mass number A is the integer count of protons plus neutrons, so neutron count is A−Z. Do not use a non-integer isotope-averaged atomic mass as though it were the mass number of one atom.",
+          "hi": "परमाणु अविभाज्य ठोस गेंद नहीं हैं। कैथोड किरणों (Cathode rays) के अध्ययन से पता चला कि इलेक्ट्रॉन (Electron) ऋण आवेशित कण हैं और अलग पदार्थों में समान प्रकृति के मिलते हैं। उनका आवेश और द्रव्यमान का अनुपात नली के इलेक्ट्रोड पदार्थ पर निर्भर नहीं था। इससे इलेक्ट्रॉन की सार्वभौमिक प्रकृति का समर्थन मिला। इलेक्ट्रॉन का आवेश और उसका आवेश-द्रव्यमान अनुपात मिलने से द्रव्यमान निकाला गया। धन आवेशित कणों और बाद में उदासीन न्यूट्रॉन की खोज ने नाभिक की संरचना समझाई। प्रोटॉन (Proton) का आवेश +e, इलेक्ट्रॉन का −e और न्यूट्रॉन (Neutron) का कुल विद्युत आवेश शून्य है। प्रोटॉन और न्यूट्रॉन के द्रव्यमान लगभग 1 u हैं, जबकि इलेक्ट्रॉन बहुत हल्का है; लगभग बराबर का अर्थ ठीक समान नहीं है। परमाणु क्रमांक (Atomic number) Z प्रोटॉन गिनता है और तत्व की पहचान करता है। उदासीन परमाणु में इलेक्ट्रॉन भी Z होते हैं, लेकिन आयन बनने पर यह समानता बदलती है। द्रव्यमान संख्या (Mass number) A प्रोटॉन और न्यूट्रॉन की पूर्णांक गिनती है। इसलिए न्यूट्रॉन A−Z हैं। समस्थानिकों के गैर-पूर्णांक औसत परमाणु द्रव्यमान को किसी एक परमाणु की द्रव्यमान संख्या न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Ion formation changes electrons, not the identity fixed by proton number.",
+          "hi": "आयन बनने पर इलेक्ट्रॉन बदलते हैं, प्रोटॉन संख्या से तय पहचान नहीं।"
+        },
+        {
+          "en": "Isotopes share Z but differ in neutron count and mass number.",
+          "hi": "समस्थानिकों का Z समान, लेकिन न्यूट्रॉन और द्रव्यमान संख्या अलग होती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For an atom with Z=11 and A=23, how many neutrons are present?",
+          "hi": "Z=11 और A=23 वाले परमाणु में कितने न्यूट्रॉन हैं?"
+        },
+        "answer": {
+          "en": "A−Z=23−11=12 neutrons.",
+          "hi": "A−Z=23−11=12 न्यूट्रॉन।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Thomson and Rutherford models",
+        "hi": "थॉमसन और रदरफोर्ड मॉडल"
+      },
+      "paragraphs": [
+        {
+          "en": "Thomson pictured electrons embedded within a distributed positive charge, giving an electrically neutral atom overall. This model could accommodate the existence of electrons but could not explain the strong deflection of a small fraction of alpha particles from a thin metal foil. In Rutherford’s scattering interpretation, most alpha particles passed through with little deflection because most atomic volume was not occupied by a concentrated mass or positive charge. Rare large-angle deflections indicated a small, dense, positively charged nucleus. The nucleus contains almost all atomic mass but occupies only a very small part of atomic size. An alpha particle scattered backward does not imply that every atom contains a solid wall. The nuclear model then faced a serious problem under classical electrodynamics: a charged electron continuously orbiting the nucleus should radiate energy, lose energy and collapse inward. It also did not explain discrete atomic line spectra. A successful model must account for both the evidence it explains and the phenomena it leaves unresolved.",
+          "hi": "थॉमसन मॉडल (Thomson model) में धन आवेश फैला हुआ माना गया और उसमें इलेक्ट्रॉन धँसे हुए थे। कुल धन और ऋण आवेश बराबर होने पर परमाणु उदासीन था। इससे इलेक्ट्रॉन का अस्तित्व शामिल होता था, लेकिन पतली धातु पन्नी से कुछ अल्फा कणों का बहुत अधिक मुड़ना नहीं समझाया जा सका। रदरफोर्ड प्रकीर्णन (Rutherford scattering) की व्याख्या में अधिकांश अल्फा कण बहुत कम विचलन के साथ निकल गए, क्योंकि परमाणु का अधिकांश आयतन केंद्रित द्रव्यमान या धन आवेश से भरा नहीं था। बहुत कम कणों का बड़े कोण से मुड़ना छोटे, सघन और धन आवेशित नाभिक (Nucleus) का प्रमाण बना। लगभग पूरा परमाणु द्रव्यमान नाभिक में है, लेकिन परमाणु के आकार की तुलना में उसका आयतन बहुत छोटा है। किसी अल्फा कण का पीछे लौटना यह नहीं बताता कि हर परमाणु ठोस दीवार है। शास्त्रीय विद्युतगतिकी में नाभिक के चारों ओर घूमता आवेशित इलेक्ट्रॉन लगातार ऊर्जा विकिरित करता, ऊर्जा खोता और अंदर गिरता। इसलिए केवल नाभिकीय मॉडल परमाणु का स्थायित्व नहीं समझा सका। वह रेखीय स्पेक्ट्रम भी नहीं समझाता था। किसी मॉडल की सफलता के साथ उसकी सीमा बताना भी आवश्यक है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Most particles passing through supported a mostly empty atomic volume.",
+          "hi": "अधिकांश कण निकलने से परमाणु आयतन का अधिकांश भाग रिक्त होने का समर्थन मिला।"
+        },
+        {
+          "en": "Rutherford’s model was a major advance, not the final quantum description.",
+          "hi": "रदरफोर्ड मॉडल बड़ी प्रगति था, अंतिम क्वांटम वर्णन नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What did rare large-angle alpha deflections imply?",
+          "hi": "अल्फा कणों का बहुत कम बार बड़े कोण से मुड़ना क्या बताता है?"
+        },
+        "answer": {
+          "en": "Positive charge and much of the mass are concentrated in a tiny nucleus.",
+          "hi": "धन आवेश और अधिकांश द्रव्यमान छोटे नाभिक में केंद्रित हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Radiation, photons and spectra",
+        "hi": "विकिरण, फोटॉन और स्पेक्ट्रम"
+      },
+      "paragraphs": [
+        {
+          "en": "Electromagnetic radiation has wavelength λ and frequency ν related by c=λν in vacuum. Increasing frequency therefore means decreasing wavelength at the same wave speed. Planck introduced energy exchange in discrete amounts, and the photon energy relation is E=hν=hc/λ. A photon’s energy is not increased simply by making more photons of the same frequency. This distinction is important in the photoelectric effect: electrons are emitted only when the incident frequency exceeds the material’s threshold frequency, while greater intensity above threshold can increase the number of emitted electrons. A continuous spectrum contains an uninterrupted range of wavelengths, whereas an atomic line spectrum has specific wavelengths. Excited atoms can emit photons when they change to lower energy states, and absorb photons when an allowed energy difference is supplied. The light frequency is determined by the difference between states, not by an electron moving around a classical orbital path. Hydrogen spectral series group transitions ending at the same lower principal level. The familiar Balmer series ends at n=2.",
+          "hi": "विद्युतचुंबकीय विकिरण (Electromagnetic radiation) की तरंगदैर्घ्य λ और आवृत्ति ν के बीच निर्वात में c=λν संबंध है। समान तरंग चाल पर आवृत्ति बढ़ने से तरंगदैर्घ्य घटती है। प्लांक ने ऊर्जा विनिमय को छोटे निश्चित भागों में समझाया। फोटॉन (Photon) की ऊर्जा E=hν=hc/λ है। समान आवृत्ति के केवल अधिक फोटॉन लेने से प्रत्येक फोटॉन की ऊर्जा नहीं बढ़ती। प्रकाशविद्युत प्रभाव (Photoelectric effect) में यह अंतर महत्त्वपूर्ण है। इलेक्ट्रॉन तभी निकलते हैं जब आपतित आवृत्ति पदार्थ की देहली आवृत्ति से अधिक हो। देहली से ऊपर तीव्रता बढ़ाने पर निकले इलेक्ट्रॉनों की संख्या बढ़ सकती है। सतत स्पेक्ट्रम (Continuous spectrum) में तरंगदैर्घ्यों की लगातार श्रेणी होती है, जबकि परमाणु का रेखीय स्पेक्ट्रम (Line spectrum) कुछ निश्चित तरंगदैर्घ्य देता है। उत्तेजित परमाणु कम ऊर्जा अवस्था में जाने पर फोटॉन उत्सर्जित कर सकता है। उपयुक्त अनुमत ऊर्जा अंतर मिलने पर फोटॉन अवशोषित भी कर सकता है। प्रकाश की आवृत्ति अवस्थाओं के ऊर्जा अंतर से तय होती है, किसी शास्त्रीय कक्षा पर इलेक्ट्रॉन के चक्कर लगाने से नहीं। हाइड्रोजन की स्पेक्ट्रमी श्रेणी में वे संक्रमण साथ रखते हैं जो एक ही निचले मुख्य स्तर पर समाप्त होते हैं। बाल्मर श्रेणी n=2 पर समाप्त होती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use metres for wavelength when c is in m s^-1 and h in J s.",
+          "hi": "c को m s^-1 और h को J s में लेने पर तरंगदैर्घ्य मीटर में लें।"
+        },
+        {
+          "en": "Absorption raises atomic energy; emission lowers it.",
+          "hi": "अवशोषण से परमाणु ऊर्जा बढ़ती और उत्सर्जन से घटती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What changes photon energy: its frequency or merely the number of identical photons?",
+          "hi": "फोटॉन ऊर्जा किससे बदलती है: उसकी आवृत्ति या समान फोटॉनों की केवल संख्या से?"
+        },
+        "answer": {
+          "en": "Its frequency changes energy per photon through E=hν.",
+          "hi": "E=hν के अनुसार उसकी आवृत्ति प्रति फोटॉन ऊर्जा बदलती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Bohr model of hydrogen",
+        "hi": "हाइड्रोजन का बोर मॉडल"
+      },
+      "paragraphs": [
+        {
+          "en": "Bohr proposed that an electron in a hydrogen-like species can occupy certain stationary energy states without continuously radiating. A transition between allowed states involves absorption or emission of a photon whose energy equals the magnitude of the state-energy difference. For hydrogen in the simplified model, En=−13.6/n² eV, where n=1,2,3 and so on. The zero of energy corresponds to the separated electron and proton at rest infinitely far apart. Negative energy indicates a bound state, not a negative amount of light. As n increases, the energy becomes less negative and the spacing between neighbouring levels decreases. The ground state n=1 has the lowest allowed energy; an excited state has higher energy. Removing the ground-state electron to n approaching infinity requires 13.6 eV. The model explained hydrogen’s line spectrum but is inadequate for general multi-electron spectra and fine details. Its definite electron paths must not be confused with modern orbitals. The visual scene represents energy levels symbolically, and any circular shell drawing is a model aid rather than a verified electron trajectory.",
+          "hi": "बोर मॉडल (Bohr model) के अनुसार हाइड्रोजन जैसे निकाय में इलेक्ट्रॉन कुछ निश्चित स्थिर ऊर्जा अवस्थाओं में रह सकता है और वहाँ लगातार विकिरण नहीं करता। अनुमत अवस्थाओं के बीच संक्रमण में उतनी ऊर्जा का फोटॉन अवशोषित या उत्सर्जित होता है जितना दोनों अवस्थाओं का ऊर्जा अंतर है। सरल हाइड्रोजन मॉडल में En=−13.6/n² eV है, जहाँ n=1,2,3 आदि हैं। ऊर्जा का शून्य उस स्थिति के लिए लिया जाता है जब इलेक्ट्रॉन और प्रोटॉन अनंत दूरी पर अलग और विराम में हों। ऋण ऊर्जा बंधी अवस्था (Bound state) बताती है, प्रकाश की ऋण मात्रा नहीं। n बढ़ने पर ऊर्जा कम ऋण होती है और पास-पास के स्तरों का अंतर घटता है। n=1 निम्नतम अनुमत ऊर्जा वाली मूल अवस्था (Ground state) है; उत्तेजित अवस्था (Excited state) की ऊर्जा अधिक है। मूल अवस्था के इलेक्ट्रॉन को n अनंत तक अलग करने के लिए 13.6 eV चाहिए। मॉडल ने हाइड्रोजन का रेखीय स्पेक्ट्रम समझाया, लेकिन सामान्य बहुइलेक्ट्रॉनी परमाणुओं और सूक्ष्म विवरणों के लिए पर्याप्त नहीं है। इसकी निश्चित कक्षाओं को आधुनिक कक्षकों के बराबर न मानें। दृश्य में ऊर्जा स्तर सांकेतिक हैं। गोल खोल का कोई चित्र इलेक्ट्रॉन का प्रमाणित वास्तविक पथ नहीं, बल्कि समझाने का साधन है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For emission, the atom goes from higher to lower energy.",
+          "hi": "उत्सर्जन में परमाणु अधिक से कम ऊर्जा में जाता है।"
+        },
+        {
+          "en": "The simple −13.6/n² expression here is for hydrogen.",
+          "hi": "यह सरल −13.6/n² संबंध यहाँ हाइड्रोजन के लिए है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is the n=2 hydrogen energy more or less negative than n=1?",
+          "hi": "हाइड्रोजन की n=2 ऊर्जा, n=1 से अधिक ऋण है या कम?"
+        },
+        "answer": {
+          "en": "It is less negative: −3.4 eV rather than −13.6 eV.",
+          "hi": "यह कम ऋण है: −13.6 eV की जगह −3.4 eV।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Matter waves and uncertainty",
+        "hi": "द्रव्य तरंग और अनिश्चितता"
+      },
+      "paragraphs": [
+        {
+          "en": "De Broglie associated a wavelength with the momentum of a moving particle through λ=h/p. For a non-relativistic particle, p=mv, giving λ=h/(mv). Electron diffraction demonstrated why a purely classical particle-path picture is insufficient. A larger momentum gives a shorter matter wavelength; the relation does not require an electron to become an ordinary water wave. For macroscopic bodies the wavelength is usually far too small to observe in everyday circumstances. The Heisenberg uncertainty principle states that position and momentum cannot both have arbitrarily small spreads, with ΔxΔp at least h/(4π) in the standard form. This is a fundamental limit on a quantum description, not merely a poorly made measuring instrument. Precise classical paths require both position and momentum at every instant, so that idea is unsuitable for bound electrons. In the visual model, the electron speed is far below the speed of light and the non-relativistic formula is used. The model’s oscillating line represents the wavelength relation rather than the literal track of a flying electron.",
+          "hi": "दे ब्रॉग्ली संबंध (De Broglie relation) चल कण के संवेग के साथ λ=h/p तरंगदैर्घ्य जोड़ता है। अनापेक्षिक गति में p=mv होने से λ=h/(mv) मिलता है। इलेक्ट्रॉन विवर्तन (Electron diffraction) ने दिखाया कि केवल शास्त्रीय कण-पथ का चित्र पर्याप्त नहीं है। अधिक संवेग पर द्रव्य तरंगदैर्घ्य कम होती है। इसका अर्थ यह नहीं कि इलेक्ट्रॉन साधारण जल तरंग बन जाता है। बड़ी दैनिक वस्तुओं के लिए तरंगदैर्घ्य इतनी छोटी होती है कि सामान्य परिस्थितियों में उसका प्रभाव नहीं दिखता। हाइजेनबर्ग अनिश्चितता सिद्धांत (Uncertainty principle) के अनुसार स्थिति और संवेग दोनों के फैलाव को एक साथ मनचाहा छोटा नहीं कर सकते। सामान्य रूप में ΔxΔp कम से कम h/(4π) है। यह क्वांटम वर्णन की मूल सीमा है, केवल खराब माप यंत्र की कमी नहीं। शास्त्रीय निश्चित पथ में हर क्षण स्थिति और संवेग दोनों निश्चित चाहिए; इसलिए बंधे इलेक्ट्रॉन के लिए वह विचार उचित नहीं है। दृश्य में इलेक्ट्रॉन की चाल प्रकाश की चाल से बहुत कम है, इसलिए अनापेक्षिक सूत्र लगाया है। हिलती रेखा तरंगदैर्घ्य संबंध समझाती है। इसे उड़ते इलेक्ट्रॉन का शाब्दिक रास्ता न समझें और तरंग के ऊपर दिखाई कण को निश्चित क्वांटम पथ का प्रमाण न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use electron mass in kg and speed in m s^-1 to get wavelength in m.",
+          "hi": "तरंगदैर्घ्य m में पाने के लिए इलेक्ट्रॉन द्रव्यमान kg और चाल m s^-1 में लें।"
+        },
+        {
+          "en": "Uncertainty is not a claim that every measurement is meaningless.",
+          "hi": "अनिश्चितता का अर्थ यह नहीं कि हर मापन अर्थहीन है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to λ if a non-relativistic electron’s speed doubles?",
+          "hi": "अनापेक्षिक इलेक्ट्रॉन की चाल दुगुनी होने पर λ क्या होगी?"
+        },
+        "answer": {
+          "en": "It halves because λ is inversely proportional to v for fixed mass.",
+          "hi": "यह आधी होगी, क्योंकि स्थिर द्रव्यमान पर λ, v के व्युत्क्रमानुपाती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Quantum numbers and allowed states",
+        "hi": "क्वांटम संख्याएँ और अनुमत अवस्थाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "The quantum-mechanical description specifies electron states using quantum numbers rather than classical orbits. The principal quantum number n is a positive integer and broadly relates to shell size and energy. For a given n, the azimuthal quantum number l can be 0 through n−1; the corresponding subshell names begin s, p, d and f. For each l, the magnetic quantum number ml takes all integer values from −l to +l, giving 2l+1 orbitals in that subshell. The electron spin quantum number ms can be +1/2 or −1/2. Spin is an intrinsic quantum property; an arrow in an orbital box is not a tiny spinning charged sphere. A p subshell has three orbitals, a d subshell has five and an s subshell has one. Each orbital can contain at most two electrons with opposite spin. The total shell capacity is 2n², while subshell capacities are 2,6,10 and 14 for s,p,d and f. These are maximum capacities, not a rule that every available shell fills completely before any higher shell begins.",
+          "hi": "क्वांटम यांत्रिक वर्णन (Quantum-mechanical description) में इलेक्ट्रॉन अवस्थाएँ क्वांटम संख्याओं से बताई जाती हैं, शास्त्रीय कक्षाओं से नहीं। मुख्य क्वांटम संख्या (Principal quantum number) n धन पूर्णांक है और मोटे तौर पर कोश के आकार तथा ऊर्जा से जुड़ी है। किसी n के लिए दिगंशी क्वांटम संख्या (Azimuthal quantum number) l के मान 0 से n−1 तक होते हैं। संबंधित उपकोश s, p, d और f नाम से शुरू होते हैं। प्रत्येक l के लिए चुंबकीय क्वांटम संख्या ml, −l से +l तक सभी पूर्णांक मान लेती है। इसलिए उपकोश में 2l+1 कक्षक होते हैं। इलेक्ट्रॉन की चक्रण क्वांटम संख्या ms के मान +1/2 या −1/2 हैं। चक्रण (Spin) इलेक्ट्रॉन का आंतरिक क्वांटम गुण है। कक्षक खाने में तीर का अर्थ कोई छोटी आवेशित गेंद घूमना नहीं है। p उपकोश में 3, d में 5 और s में 1 कक्षक होता है। प्रत्येक कक्षक में विपरीत चक्रण के अधिकतम 2 इलेक्ट्रॉन रह सकते हैं। पूरे कोश की अधिकतम क्षमता 2n² तथा s,p,d,f उपकोशों की क्षमता क्रमशः 2,6,10,14 है। यह अधिकतम क्षमता है; इसका अर्थ यह नियम नहीं कि हर उपलब्ध कोश पूरा भरने के बाद ही ऊँचा कोश शुरू होगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A quantum-number set must satisfy all allowed-range conditions.",
+          "hi": "क्वांटम संख्याओं का समूह सभी अनुमत सीमा शर्तें पूरा करे।"
+        },
+        {
+          "en": "For d, l=2 and ml has five allowed values.",
+          "hi": "d के लिए l=2 तथा ml के 5 अनुमत मान हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which l values are allowed for n=3?",
+          "hi": "n=3 के लिए l के कौन-से मान अनुमत हैं?"
+        },
+        "answer": {
+          "en": "l=0,1,2, corresponding to 3s,3p and 3d.",
+          "hi": "l=0,1,2 अर्थात 3s,3p और 3d।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Orbitals, probability and shapes",
+        "hi": "कक्षक, प्रायिकता और आकृतियाँ"
+      },
+      "paragraphs": [
+        {
+          "en": "An orbital is a one-electron wave function used to describe an electron state. Its squared magnitude gives a probability-density interpretation rather than a circular travel route. A boundary surface usually encloses a chosen large fraction of the electron probability; it is not a hard wall beyond which an electron is forbidden. An s orbital is spherically symmetric in its angular dependence. The three p orbitals have equivalent energy in an isolated atom without external fields and are conventionally drawn along three perpendicular directions. Most common real d-orbital drawings have four lobes, while the dz² form has two lobes and a ring-like region. Different colours in a lobe diagram indicate wave-function phase, not opposite electric charges. Nodes are regions where the wave function is zero; radial and angular nodes have different forms. For hydrogenic orbitals, angular nodes equal l and radial nodes equal n−l−1. Shape illustrations simplify three-dimensional probability information. The scene’s l slider identifies a subshell shape family, not a principal quantum number or a moving electron’s path.",
+          "hi": "कक्षक (Orbital) एक-इलेक्ट्रॉन तरंग फलन है जिससे इलेक्ट्रॉन अवस्था का वर्णन करते हैं। उसके परिमाण का वर्ग प्रायिकता घनत्व (Probability density) से जुड़ता है, गोल घूमने के रास्ते से नहीं। सीमा पृष्ठ सामान्यतः इलेक्ट्रॉन मिलने की चुनी हुई बड़ी प्रायिकता वाला क्षेत्र घेरता है। यह कठोर दीवार नहीं, जिसके बाहर इलेक्ट्रॉन मिलना असंभव हो। s कक्षक का कोणीय भाग गोलकीय सममित होता है। अलग परमाणु में बाहरी क्षेत्र न होने पर 3 p कक्षकों की ऊर्जा समान होती है और चित्रों में उन्हें 3 परस्पर लंबवत दिशाओं में बनाते हैं। अधिकतर सामान्य वास्तविक d कक्षक चित्रों में 4 पालियाँ होती हैं, जबकि dz² में 2 पालियाँ और वलय जैसा क्षेत्र होता है। पालियों के अलग रंग तरंग फलन की कला (Phase) बताते हैं, विपरीत विद्युत आवेश नहीं। नोड (Node) वह क्षेत्र है जहाँ तरंग फलन शून्य होता है। त्रिज्यीय और कोणीय नोड अलग रूप के होते हैं। हाइड्रोजन जैसे कक्षकों के लिए कोणीय नोड l और त्रिज्यीय नोड n−l−1 हैं। आकृति चित्र त्रिविमीय प्रायिकता सूचना को सरल बनाते हैं। दृश्य का l स्लाइडर उपकोश की आकृति का परिवार बताता है। यह मुख्य क्वांटम संख्या नहीं है और न किसी चल इलेक्ट्रॉन का वास्तविक रास्ता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "An orbital is not an orbit.",
+          "hi": "कक्षक, कक्षा नहीं है।"
+        },
+        {
+          "en": "A typical four-lobed d drawing does not represent every d orbital.",
+          "hi": "सामान्य 4 पालियों वाला d चित्र हर d कक्षक का रूप नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Do two colours on a p-orbital drawing mean positive and negative electric charge?",
+          "hi": "p कक्षक में 2 रंग धन और ऋण विद्युत आवेश बताते हैं?"
+        },
+        "answer": {
+          "en": "No. They conventionally distinguish opposite phases of the wave function.",
+          "hi": "नहीं। वे परंपरागत रूप से तरंग फलन की विपरीत कलाएँ बताते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Electronic configuration and filling rules",
+        "hi": "इलेक्ट्रॉनिक विन्यास और भरने के नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "Electronic configuration records how electrons occupy available orbitals in an atom or ion. The Aufbau idea fills lower-energy orbitals first in the ground-state approximation. The n+l ordering rule is a useful guide; for equal n+l, the orbital with smaller n is generally filled first. The Pauli exclusion principle forbids two electrons in an atom from having the same complete set of four quantum numbers, so one orbital holds at most two with opposite spin. Hund’s rule fills degenerate orbitals singly with parallel spins before pairing, reducing the energy relative to premature pairing. A configuration must also give the correct total electron count. Chromium and copper are familiar exceptions to a naive filling sequence: their ground states are [Ar]3d5 4s1 and [Ar]3d10 4s1. Half-filled and filled subshell stability contributes to their explanation, but the total energy is the deciding factor. When common transition-metal cations form, electrons are removed from the outer ns orbital before the (n−1)d electrons. A filling diagram is bookkeeping for a quantum state, not a video of electrons being inserted.",
+          "hi": "इलेक्ट्रॉनिक विन्यास (Electronic configuration) बताता है कि परमाणु या आयन के उपलब्ध कक्षकों में इलेक्ट्रॉन कैसे व्यवस्थित हैं। आफबाऊ विचार (Aufbau principle) में मूल अवस्था के सरल वर्णन के लिए कम ऊर्जा वाले कक्षक पहले भरते हैं। n+l नियम उपयोगी मार्गदर्शक है। समान n+l होने पर सामान्यतः कम n वाला कक्षक पहले भरता है। पाउली अपवर्जन सिद्धांत (Pauli exclusion principle) के अनुसार एक परमाणु के 2 इलेक्ट्रॉनों की चारों क्वांटम संख्याएँ समान नहीं हो सकतीं। इसलिए एक कक्षक में विपरीत चक्रण के अधिकतम 2 इलेक्ट्रॉन होते हैं। हुंड का नियम (Hund’s rule) बताता है कि समान ऊर्जा वाले कक्षकों में युग्म बनाने से पहले इलेक्ट्रॉन समानांतर चक्रण के साथ अलग-अलग बैठते हैं। समय से पहले युग्म बनाने की तुलना में यह कम ऊर्जा देता है। विन्यास में कुल इलेक्ट्रॉन संख्या भी सही होनी चाहिए। क्रोमियम और कॉपर सीधे भरने के सरल क्रम के प्रसिद्ध अपवाद हैं; उनके मूल विन्यास [Ar]3d5 4s1 और [Ar]3d10 4s1 हैं। अर्धभरे और पूरे भरे उपकोश की स्थिरता व्याख्या में सहायक है, लेकिन अंतिम निर्णय कुल ऊर्जा से होता है। सामान्य संक्रमण धातु धनायन बनने पर बाहरी ns इलेक्ट्रॉन, (n−1)d से पहले निकलते हैं। भरने का चित्र क्वांटम अवस्था का लेखा है, इलेक्ट्रॉन डालने का वास्तविक वीडियो नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Check the total electron count after writing a configuration.",
+          "hi": "विन्यास लिखकर कुल इलेक्ट्रॉन संख्या अवश्य जाँचें।"
+        },
+        {
+          "en": "For Fe2+, remove the two 4s electrons from neutral Fe first.",
+          "hi": "Fe2+ के लिए उदासीन Fe से पहले 2 इलेक्ट्रॉन 4s से निकालें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How should three electrons occupy three degenerate p orbitals in the ground state?",
+          "hi": "मूल अवस्था में 3 इलेक्ट्रॉन 3 समान ऊर्जा p कक्षकों में कैसे बैठेंगे?"
+        },
+        "answer": {
+          "en": "Singly in the three orbitals with parallel spins before pairing.",
+          "hi": "युग्मन से पहले 3 कक्षकों में अलग-अलग, समानांतर चक्रण के साथ।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "A=Z+Nn",
+      "meaning": {
+        "en": "A is mass number, Z proton number, Nn neutron number.",
+        "hi": "A द्रव्यमान संख्या, Z प्रोटॉन संख्या, Nn न्यूट्रॉन संख्या है।"
+      },
+      "units": {
+        "en": "Integer particle counts; no physical unit.",
+        "hi": "पूर्णांक कण गिनती; भौतिक मात्रक नहीं।"
+      }
+    },
+    {
+      "expression": "c=λν; E=hν=hc/λ",
+      "meaning": {
+        "en": "λ is wavelength; ν frequency; E photon energy.",
+        "hi": "λ तरंगदैर्घ्य, ν आवृत्ति तथा E फोटॉन ऊर्जा है।"
+      },
+      "units": {
+        "en": "m, s^-1 and J in SI.",
+        "hi": "SI में m, s^-1 तथा J।"
+      }
+    },
+    {
+      "expression": "En=−13.6/n² eV",
+      "meaning": {
+        "en": "Hydrogen bound-state energy with zero at separated particles.",
+        "hi": "अलग कणों पर शून्य मानकर हाइड्रोजन की बंधी अवस्था ऊर्जा।"
+      },
+      "units": {
+        "en": "eV; n is a positive integer.",
+        "hi": "eV; n धन पूर्णांक है।"
+      }
+    },
+    {
+      "expression": "λ=h/(mv)",
+      "meaning": {
+        "en": "Non-relativistic de Broglie wavelength.",
+        "hi": "अनापेक्षिक दे ब्रॉग्ली तरंगदैर्घ्य।"
+      },
+      "units": {
+        "en": "h in J s, m in kg, v in m s^-1 gives λ in m.",
+        "hi": "h को J s, m को kg, v को m s^-1 लेने पर λ का मात्रक m।"
+      }
+    },
+    {
+      "expression": "ΔxΔp≥h/(4π)",
+      "meaning": {
+        "en": "Position and momentum uncertainty limit.",
+        "hi": "स्थिति और संवेग की अनिश्चितता सीमा।"
+      },
+      "units": {
+        "en": "m×kg m s^-1 = J s.",
+        "hi": "m×kg m s^-1 = J s।"
+      }
+    },
+    {
+      "expression": "Orbitals per subshell=2l+1",
+      "meaning": {
+        "en": "Allowed ml values run from −l to +l.",
+        "hi": "ml के अनुमत मान −l से +l तक हैं।"
+      },
+      "units": {
+        "en": "Dimensionless counts.",
+        "hi": "विमाहीन गिनती।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find protons, neutrons and electrons in 23Na+.",
+        "hi": "23Na+ में प्रोटॉन, न्यूट्रॉन और इलेक्ट्रॉन निकालें।"
+      },
+      "given": {
+        "en": "Z=11; A=23; charge=+1.",
+        "hi": "Z=11; A=23; आवेश=+1।"
+      },
+      "find": {
+        "en": "Particle counts.",
+        "hi": "कण गिनती।"
+      },
+      "formula": {
+        "en": "Nn=A−Z; electrons=Z−positive charge",
+        "hi": "Nn=A−Z; electrons=Z−positive charge"
+      },
+      "steps": [
+        {
+          "en": "Protons=11; neutrons=23−11=12.",
+          "hi": "प्रोटॉन=11; न्यूट्रॉन=23−11=12।"
+        },
+        {
+          "en": "The cation has lost one electron: 11−1=10.",
+          "hi": "धनायन ने 1 इलेक्ट्रॉन खोया: 11−1=10।"
+        }
+      ],
+      "answer": {
+        "en": "11 protons,12 neutrons,10 electrons.",
+        "hi": "11 प्रोटॉन,12 न्यूट्रॉन,10 इलेक्ट्रॉन।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find hydrogen energy at n=2.",
+        "hi": "n=2 पर हाइड्रोजन की ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "En=−13.6/n² eV.",
+        "hi": "En=−13.6/n² eV।"
+      },
+      "find": {
+        "en": "E2.",
+        "hi": "E2।"
+      },
+      "formula": {
+        "en": "E2=−13.6/2²",
+        "hi": "E2=−13.6/2²"
+      },
+      "steps": [
+        {
+          "en": "2²=4.",
+          "hi": "2²=4।"
+        },
+        {
+          "en": "−13.6/4=−3.4.",
+          "hi": "−13.6/4=−3.4।"
+        }
+      ],
+      "answer": {
+        "en": "−3.4 eV; a bound state.",
+        "hi": "−3.4 eV; बंधी अवस्था।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find energy and approximate wavelength emitted in hydrogen n=2→1.",
+        "hi": "हाइड्रोजन n=2→1 में उत्सर्जित ऊर्जा और लगभग तरंगदैर्घ्य निकालें।"
+      },
+      "given": {
+        "en": "E1=−13.6 eV; E2=−3.4 eV; hc≈1240 eV nm.",
+        "hi": "E1=−13.6 eV; E2=−3.4 eV; hc≈1240 eV nm।"
+      },
+      "find": {
+        "en": "Positive photon energy and wavelength.",
+        "hi": "धन फोटॉन ऊर्जा और तरंगदैर्घ्य।"
+      },
+      "formula": {
+        "en": "Ephoton=Einitial−Efinal; λ=hc/E",
+        "hi": "Ephoton=Einitial−Efinal; λ=hc/E"
+      },
+      "steps": [
+        {
+          "en": "Ephoton=−3.4−(−13.6)=10.2 eV.",
+          "hi": "Eफोटॉन=−3.4−(−13.6)=10.2 eV।"
+        },
+        {
+          "en": "λ≈1240/10.2 nm.",
+          "hi": "λ≈1240/10.2 nm।"
+        }
+      ],
+      "answer": {
+        "en": "10.2 eV; approximately 121.6 nm.",
+        "hi": "10.2 eV; लगभग121.6 nm।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find an electron’s matter wavelength at 1.0×10^6 m s^-1.",
+        "hi": "1.0×10^6 m s^-1 चाल पर इलेक्ट्रॉन की द्रव्य तरंगदैर्घ्य निकालें।"
+      },
+      "given": {
+        "en": "h=6.62607015×10^-34 J s; me=9.1093837×10^-31 kg.",
+        "hi": "h=6.62607015×10^-34 J s; me=9.1093837×10^-31 kg।"
+      },
+      "find": {
+        "en": "λ.",
+        "hi": "λ।"
+      },
+      "formula": {
+        "en": "λ=h/(mev)",
+        "hi": "λ=h/(mev)"
+      },
+      "steps": [
+        {
+          "en": "Momentum≈9.1093837×10^-25 kg m s^-1.",
+          "hi": "संवेग≈9.1093837×10^-25 kg m s^-1।"
+        },
+        {
+          "en": "Divide h by momentum.",
+          "hi": "h को संवेग से भाग दें।"
+        },
+        {
+          "en": "Convert metres to nanometres using1 nm=10^-9 m.",
+          "hi": "1 nm=10^-9 m से मीटर को नैनोमीटर में बदलें।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately7.27×10^-10 m=0.727 nm (about 0.73 nm to2 significant figures).",
+        "hi": "लगभग7.27×10^-10 m=0.727 nm (2 सार्थक अंकों में लगभग0.73 nm)।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "List allowed ml values and maximum electrons for 3d; then write Fe2+ configuration.",
+        "hi": "3d के अनुमत ml और अधिकतम इलेक्ट्रॉन लिखें; फिर Fe2+ विन्यास दें।"
+      },
+      "given": {
+        "en": "3d has n=3,l=2; Fe has Z=26 and neutral[Ar]3d6 4s2.",
+        "hi": "3d में n=3,l=2; Fe का Z=26 और उदासीन विन्यास[Ar]3d6 4s2 है।"
+      },
+      "find": {
+        "en": "Subshell capacity and ion configuration.",
+        "hi": "उपकोश क्षमता और आयन विन्यास।"
+      },
+      "formula": {
+        "en": "ml=−l,...,+l; capacity=2(2l+1)",
+        "hi": "ml=−l,...,+l; capacity=2(2l+1)"
+      },
+      "steps": [
+        {
+          "en": "ml=−2,−1,0,+1,+2 gives5 orbitals.",
+          "hi": "ml=−2,−1,0,+1,+2 से5 कक्षक।"
+        },
+        {
+          "en": "Each holds at most2 electrons: capacity 10.",
+          "hi": "हर कक्षक में अधिकतम2: क्षमता10।"
+        },
+        {
+          "en": "Remove the two 4s electrons before 3d when forming Fe2+.",
+          "hi": "Fe2+ बनाते समय3d से पहले2 इलेक्ट्रॉन4s से निकालें।"
+        }
+      ],
+      "answer": {
+        "en": "3d capacity 10 electrons; Fe2+=[Ar]3d6.",
+        "hi": "3d क्षमता10 इलेक्ट्रॉन; Fe2+=[Ar]3d6।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which number identifies an element?",
+        "hi": "कौन-सी संख्या तत्व पहचानती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Proton number Z",
+            "hi": "प्रोटॉन संख्या Z"
+          },
+          "reason": {
+            "en": "Atomic number is fixed by protons.",
+            "hi": "परमाणु क्रमांक प्रोटॉन से तय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neutron count alone",
+            "hi": "केवल न्यूट्रॉन गिनती"
+          },
+          "reason": {
+            "en": "Isotopes can differ in neutrons.",
+            "hi": "समस्थानिकों में न्यूट्रॉन अलग हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ionic electron count alone",
+            "hi": "केवल आयन की इलेक्ट्रॉन गिनती"
+          },
+          "reason": {
+            "en": "Different ions may be isoelectronic.",
+            "hi": "अलग आयन समइलेक्ट्रॉनी हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sample mass",
+            "hi": "नमूना द्रव्यमान"
+          },
+          "reason": {
+            "en": "Sample size does not identify an element.",
+            "hi": "नमूना आकार तत्व नहीं पहचानता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why did most alpha particles pass through the foil with little deflection?",
+        "hi": "अधिकांश अल्फा कण कम विचलन से पन्नी के पार क्यों गए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Most atomic volume lacks concentrated mass and positive charge",
+            "hi": "अधिकांश परमाणु आयतन में केंद्रित द्रव्यमान और धन आवेश नहीं"
+          },
+          "reason": {
+            "en": "This supports a tiny nucleus.",
+            "hi": "यह छोटे नाभिक का समर्थन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every atom is a solid positive sphere",
+            "hi": "हर परमाणु ठोस धन गेंद है"
+          },
+          "reason": {
+            "en": "This would not explain the observed passage and rare strong scattering.",
+            "hi": "इससे अधिकांश का निकलना और दुर्लभ तीव्र प्रकीर्णन नहीं समझता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Electrons have all atomic mass",
+            "hi": "पूरा परमाणु द्रव्यमान इलेक्ट्रॉन में है"
+          },
+          "reason": {
+            "en": "Almost all mass lies in the nucleus.",
+            "hi": "लगभग पूरा द्रव्यमान नाभिक में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Alpha particles have no charge",
+            "hi": "अल्फा कण आवेशहीन हैं"
+          },
+          "reason": {
+            "en": "Alpha particles are positively charged.",
+            "hi": "अल्फा कण धन आवेशित हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Increasing photon frequency changes its energy how?",
+        "hi": "फोटॉन आवृत्ति बढ़ने पर उसकी ऊर्जा कैसे बदलती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It increases",
+            "hi": "बढ़ती है"
+          },
+          "reason": {
+            "en": "E=hν.",
+            "hi": "E=hν।"
+          }
+        },
+        {
+          "text": {
+            "en": "It decreases",
+            "hi": "घटती है"
+          },
+          "reason": {
+            "en": "Energy is directly, not inversely, proportional to frequency.",
+            "hi": "ऊर्जा आवृत्ति के सीधे, न कि उलटे अनुपात में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It stays fixed for every frequency",
+            "hi": "हर आवृत्ति पर स्थिर रहती है"
+          },
+          "reason": {
+            "en": "Different frequencies have different photon energies.",
+            "hi": "अलग आवृत्तियों की फोटॉन ऊर्जा अलग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It becomes negative",
+            "hi": "ऋण हो जाती है"
+          },
+          "reason": {
+            "en": "Photon energy is positive.",
+            "hi": "फोटॉन ऊर्जा धन होती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is hydrogen E2 in the simple Bohr model?",
+        "hi": "सरल बोर मॉडल में हाइड्रोजन E2 कितना है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−3.4 eV",
+            "hi": "−3.4 eV"
+          },
+          "reason": {
+            "en": "−13.6/4=−3.4.",
+            "hi": "−13.6/4=−3.4।"
+          }
+        },
+        {
+          "text": {
+            "en": "−27.2 eV",
+            "hi": "−27.2 eV"
+          },
+          "reason": {
+            "en": "The formula divides by n².",
+            "hi": "सूत्र में n² से भाग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "+3.4 eV",
+            "hi": "+3.4 eV"
+          },
+          "reason": {
+            "en": "Bound hydrogen states have negative energy with the stated zero.",
+            "hi": "दिए शून्य के अनुसार बंधी हाइड्रोजन ऊर्जा ऋण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 eV",
+            "hi": "0 eV"
+          },
+          "reason": {
+            "en": "Zero is the separated-particle limit.",
+            "hi": "शून्य अलग कणों की सीमा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Doubling non-relativistic electron speed at fixed mass does what to its matter wavelength?",
+        "hi": "स्थिर द्रव्यमान पर अनापेक्षिक इलेक्ट्रॉन चाल दुगुनी होने से द्रव्य तरंगदैर्घ्य?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It halves",
+            "hi": "आधी होती है"
+          },
+          "reason": {
+            "en": "λ=h/(mv).",
+            "hi": "λ=h/(mv)।"
+          }
+        },
+        {
+          "text": {
+            "en": "It doubles",
+            "hi": "दुगुनी होती है"
+          },
+          "reason": {
+            "en": "The speed appears in the denominator.",
+            "hi": "चाल हर में आती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It becomes zero",
+            "hi": "शून्य हो जाती है"
+          },
+          "reason": {
+            "en": "A finite speed gives a finite nonzero wavelength.",
+            "hi": "सीमित चाल पर सीमित अशून्य तरंगदैर्घ्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It always becomes1 m",
+            "hi": "हमेशा1 m होती है"
+          },
+          "reason": {
+            "en": "There is no such universal wavelength.",
+            "hi": "ऐसी सार्वभौमिक तरंगदैर्घ्य नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which l value is forbidden when n=2?",
+        "hi": "n=2 पर कौन-सा l निषिद्ध है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "l can only be0 or1 for n=2.",
+            "hi": "n=2 पर l केवल0 या1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "2s is allowed.",
+            "hi": "2s अनुमत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "2p is allowed.",
+            "hi": "2p अनुमत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both0 and1",
+            "hi": "0 और1 दोनों"
+          },
+          "reason": {
+            "en": "Both are allowed.",
+            "hi": "दोनों अनुमत हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "How many orbitals are in a p subshell?",
+        "hi": "p उपकोश में कितने कक्षक हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "l=1 gives2l+1=3.",
+            "hi": "l=1 पर2l+1=3।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "This is the s-subshell count.",
+            "hi": "यह s उपकोश की गिनती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "This is the d-subshell count.",
+            "hi": "यह d उपकोश की गिनती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "6 is maximum electrons in p, not orbitals.",
+            "hi": "6, p के अधिकतम इलेक्ट्रॉन हैं, कक्षक नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What do opposite colours on p-orbital lobes conventionally show?",
+        "hi": "p कक्षक पालियों के विपरीत रंग परंपरागत रूप से क्या बताते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Wave-function phase",
+            "hi": "तरंग फलन की कला"
+          },
+          "reason": {
+            "en": "They do not represent two opposite charges.",
+            "hi": "ये2 विपरीत आवेश नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Positive and negative electron charges",
+            "hi": "धन और ऋण इलेक्ट्रॉन आवेश"
+          },
+          "reason": {
+            "en": "Every electron has the same negative charge.",
+            "hi": "हर इलेक्ट्रॉन का समान ऋण आवेश है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A clockwise electron track",
+            "hi": "दक्षिणावर्त इलेक्ट्रॉन पथ"
+          },
+          "reason": {
+            "en": "An orbital is not a trajectory.",
+            "hi": "कक्षक पथ नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Two different elements",
+            "hi": "2 अलग तत्व"
+          },
+          "reason": {
+            "en": "Lobes belong to one orbital description.",
+            "hi": "पालियाँ एक कक्षक वर्णन का भाग हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which rule limits one orbital to two opposite-spin electrons?",
+        "hi": "एक कक्षक में विपरीत चक्रण के2 इलेक्ट्रॉन की सीमा किस नियम से है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Pauli exclusion principle",
+            "hi": "पाउली अपवर्जन सिद्धांत"
+          },
+          "reason": {
+            "en": "Two electrons cannot share all four quantum numbers.",
+            "hi": "2 इलेक्ट्रॉनों की चारों क्वांटम संख्याएँ समान नहीं हो सकतीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Avogadro law",
+            "hi": "आवोगाद्रो नियम"
+          },
+          "reason": {
+            "en": "It relates gas amount and volume under stated conditions.",
+            "hi": "यह निर्दिष्ट दशाओं में गैस मात्रा और आयतन जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Conservation of mass alone",
+            "hi": "केवल द्रव्यमान संरक्षण"
+          },
+          "reason": {
+            "en": "It does not specify spin occupation.",
+            "hi": "यह चक्रण व्यवस्था नहीं बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "A rule that all shells hold8",
+            "hi": "हर कोश में8 का नियम"
+          },
+          "reason": {
+            "en": "Shell capacities vary with n.",
+            "hi": "कोश क्षमता n के साथ बदलती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is ground-state chromium configuration?",
+        "hi": "क्रोमियम का मूल अवस्था विन्यास क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "[Ar]3d5 4s1",
+            "hi": "[Ar]3d5 4s1"
+          },
+          "reason": {
+            "en": "This is the observed stable ground-state arrangement.",
+            "hi": "यह स्थिर मूल अवस्था व्यवस्था है।"
+          }
+        },
+        {
+          "text": {
+            "en": "[Ar]3d4 4s2",
+            "hi": "[Ar]3d4 4s2"
+          },
+          "reason": {
+            "en": "This naive sequence misses the known exception.",
+            "hi": "यह सरल क्रम ज्ञात अपवाद छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "[Ar]3d6 4s2",
+            "hi": "[Ar]3d6 4s2"
+          },
+          "reason": {
+            "en": "This gives26 electrons, not24.",
+            "hi": "यह24 की जगह26 इलेक्ट्रॉन देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "[Ne]3s2 3p6",
+            "hi": "[Ne]3s2 3p6"
+          },
+          "reason": {
+            "en": "This has 18 electrons.",
+            "hi": "इसमें18 इलेक्ट्रॉन हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish isotopes and isobars.",
+        "hi": "समस्थानिक और समभारिक में अंतर लिखें।"
+      },
+      "answer": {
+        "en": "Isotopes have the same Z but different A; isobars have the same A but different Z.",
+        "hi": "समस्थानिकों में Z समान और A अलग; समभारिकों में A समान और Z अलग हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "State two limitations of the Rutherford model.",
+        "hi": "रदरफोर्ड मॉडल की2 सीमाएँ लिखें।"
+      },
+      "answer": {
+        "en": "Classical orbiting electrons should radiate and collapse, and the model does not explain discrete atomic line spectra.",
+        "hi": "शास्त्रीय घूमते इलेक्ट्रॉन विकिरण कर गिरने चाहिए तथा मॉडल निश्चित परमाणु रेखीय स्पेक्ट्रम नहीं समझाता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are hydrogen bound-state energies negative?",
+        "hi": "हाइड्रोजन की बंधी अवस्था ऊर्जा ऋण क्यों है?"
+      },
+      "answer": {
+        "en": "Zero is assigned to separated electron and proton; a bound state has lower energy and needs positive energy for separation.",
+        "hi": "अलग इलेक्ट्रॉन और प्रोटॉन की ऊर्जा शून्य मानी है; बंधी अवस्था कम ऊर्जा पर है और अलग करने में धन ऊर्जा चाहिए।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why an orbital is not an orbit.",
+        "hi": "कक्षक, कक्षा क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "An orbital is a quantum wave-function description with probability density, whereas an orbit would be a definite classical path.",
+        "hi": "कक्षक प्रायिकता घनत्व वाला क्वांटम तरंग फलन वर्णन है; कक्षा निश्चित शास्त्रीय पथ होती।"
+      }
+    },
+    {
+      "question": {
+        "en": "List all four quantum numbers for an electron and one role of each.",
+        "hi": "इलेक्ट्रॉन की चारों क्वांटम संख्याएँ और हर एक की भूमिका लिखें।"
+      },
+      "answer": {
+        "en": "n labels shell, l subshell angular form, ml orbital orientation state and ms spin state.",
+        "hi": "n कोश, l उपकोश का कोणीय रूप, ml कक्षक का अभिविन्यास अवस्था तथा ms चक्रण अवस्था बताता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State Hund’s rule for degenerate orbitals.",
+        "hi": "समान ऊर्जा कक्षकों के लिए हुंड नियम लिखें।"
+      },
+      "answer": {
+        "en": "Electrons occupy them singly with parallel spins before pairing in the ground-state arrangement.",
+        "hi": "मूल अवस्था व्यवस्था में युग्मन से पहले इलेक्ट्रॉन समानांतर चक्रण के साथ अलग-अलग बैठते हैं।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Proton number identifies the element.",
+      "hi": "प्रोटॉन संख्या तत्व पहचानती है।"
+    },
+    {
+      "en": "Photons connect atomic energy differences.",
+      "hi": "फोटॉन परमाणु ऊर्जा अंतर जोड़ते हैं।"
+    },
+    {
+      "en": "Hydrogen energies are quantised and negative when bound.",
+      "hi": "बंधी हाइड्रोजन ऊर्जा क्वांटित और ऋण है।"
+    },
+    {
+      "en": "Orbitals describe quantum probability, not electron paths.",
+      "hi": "कक्षक क्वांटम प्रायिकता बताते हैं, इलेक्ट्रॉन पथ नहीं।"
+    },
+    {
+      "en": "Pauli, Hund and energy ordering guide configuration.",
+      "hi": "पाउली, हुंड और ऊर्जा क्रम विन्यास में मार्गदर्शन करते हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not substitute average atomic mass for A, call an orbital an orbit, treat l as n, or read lobe colours as electric charge.",
+    "hi": "औसत परमाणु द्रव्यमान को A न रखें; कक्षक को कक्षा, l को n या पालियों के रंग को विद्युत आवेश न समझें।"
+  },
+  "goal": {
+    "en": "Use experimental evidence and quantum ideas to explain atomic structure and electronic configuration.",
+    "hi": "प्रयोग के प्रमाण और क्वांटम विचार से परमाणु संरचना तथा इलेक्ट्रॉनिक विन्यास समझें।"
+  },
+  "conceptMap": "कण → नाभिकीय प्रमाण → विकिरण → क्वांटित हाइड्रोजन ऊर्जा → द्रव्य तरंग → कक्षक → क्वांटम संख्याएँ → इलेक्ट्रॉनिक विन्यास",
+  "conceptMapEn": "Particles → nuclear evidence → radiation → quantised hydrogen energies → matter waves → orbitals → quantum numbers → electronic configuration",
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Chemistry Class 11, reprint 2026–27, and the UP Board syllabus. Use the prescribed textbook and school practicals alongside.",
+    "hi": "NCERT रसायन विज्ञान कक्षा 11, पुनर्मुद्रण 2026–27 तथा यूपी बोर्ड पाठ्यक्रम पर आधारित मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry Part I, Chapter 2, 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/kech102.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Chemistry syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/152-Chemistry-Class-11.pdf"
+    }
+  ]
+}

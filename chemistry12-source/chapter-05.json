@@ -1,0 +1,1045 @@
+{
+  "number": 5,
+  "id": "chemistry12-05",
+  "title": {
+    "en": "Coordination Compounds",
+    "hi": "उपसहसंयोजन यौगिक"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Coordination entity and ligands",
+        "hi": "उपसहसंयोजन सत्ता और लिगैंड"
+      },
+      "paragraphs": [
+        {
+          "en": "A coordination entity consists of a central metal atom or ion surrounded by ligands through donor atoms. A ligand supplies an electron pair to form a coordinate bond. The coordination sphere is written inside square brackets; counterions outside balance the overall charge. In [Co(NH3)6]Cl3, six neutral ammonia ligands coordinate to cobalt and three chloride counterions lie outside. Coordination number counts donor atoms bonded directly to the centre, not simply the number of ligand molecules. A bidentate ligand can contribute two donor atoms, while an ambidentate ligand offers alternative donor sites but commonly binds through one at a time.",
+          "hi": "उपसहसंयोजन यौगिक (Coordination compound) में केंद्रीय धातु परमाणु या आयन से लिगैंड (Ligand) दाता परमाणुओं के माध्यम से जुड़े रहते हैं। लिगैंड इलेक्ट्रॉन युग्म देकर उपसहसंयोजक आबंध बनाता है। वर्ग कोष्ठक के भीतर की सत्ता उपसहसंयोजन मंडल (Coordination sphere) है, जबकि बाहर के प्रतिआयन कुल आवेश संतुलित करते हैं। [Co(NH3)6]Cl3 में 6 उदासीन अमोनिया लिगैंड सीधे Co से जुड़े हैं और 3 Cl− बाहर हैं। बाहर लिखा आयन हर स्थिति में केंद्रीय धातु का सीधा पड़ोसी नहीं होता। उपसहसंयोजन संख्या (Coordination number) सीधे जुड़े दाता परमाणुओं की संख्या है, केवल लिगैंड अणुओं की संख्या नहीं। एथेन-1,2-डाइऐमीन जैसे द्विदंती लिगैंड के 1 अणु से 2 दाता नाइट्रोजन जुड़ सकते हैं। उभयदंती लिगैंड में अलग संभावित दाता स्थान होते हैं, लेकिन वह सामान्यतः किसी 1 स्थान से जुड़ता है। इन दोनों प्रकारों को समान न मानें। सूत्र पढ़ते समय पहले कोष्ठक, फिर केंद्रीय धातु, लिगैंडों का प्रकार और अंत में बाहरी आयन पहचानना सबसे उपयोगी क्रम है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Coordination number counts attached donor atoms.",
+          "hi": "उपसहसंयोजन संख्या जुड़े दाता परमाणु गिनती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the coordination number in [Co(en)3]3+?",
+          "hi": "[Co(en)3]3+ में उपसहसंयोजन संख्या क्या है?"
+        },
+        "answer": {
+          "en": "6, because each of three en ligands is bidentate.",
+          "hi": "6,क्योंकि3 en में प्रत्येक द्विदंती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Charge and oxidation-state accounting",
+        "hi": "आवेश और ऑक्सीकरण अवस्था का लेखा"
+      },
+      "paragraphs": [
+        {
+          "en": "The charge on a coordination entity equals the metal oxidation state plus all ligand charges. Neutral ligands such as NH3, H2O and CO contribute zero; chlorido and cyanido each contribute −1. In [Fe(CN)6]4−, x−6=−4 gives Fe(II). In K3[Fe(CN)6], the three K+ ions indicate an entity charge of −3 and therefore Fe(III). Coordination number and oxidation state are different numbers: six donor atoms can surround either an Fe(II) or Fe(III) centre. The complete salt may be electrically neutral even when its coordination entity is charged.",
+          "hi": "किसी उपसहसंयोजन सत्ता का आवेश केंद्रीय धातु की ऑक्सीकरण संख्या तथा सभी लिगैंड आवेशों का योग है। NH3,H2O और CO जैसे उदासीन लिगैंड 0 जोड़ते हैं। क्लोरिडो और सायनिडो का प्रत्येक लिगैंड −1 देता है। [Fe(CN)6]4− के लिए x+6(−1)=−4 से Fe की अवस्था +2 मिलती है। K3[Fe(CN)6] में बाहर के 3 K+ के कारण कोष्ठक की सत्ता का आवेश −3 है; तब x−6=−3 से धातु +3 होती है। पूरे उदासीन लवण को देखकर कोष्ठक के भीतर की सत्ता भी उदासीन मानना गलत होगा। उपसहसंयोजन संख्या और ऑक्सीकरण संख्या अलग अवधारणाएँ हैं। एक ही 6 दाता परमाणुओं के बीच Fe(II) या Fe(III) दोनों मिल सकते हैं। गणना से पहले लिगैंड का आवेश विश्वसनीय रूप से तय करें और आयन का ऊपर लिखा कुल आवेश न भूलें। इलेक्ट्रॉनिक विन्यास चाहिए तो निकली अवस्था के अनुसार धातु आयन बनाएं; लिगैंड की संख्या को धातु से निकले इलेक्ट्रॉन न मानें। इस विधि से नामकरण, चुंबकत्व और आयन विनिमय वाले प्रश्नों का आधार मजबूत होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The entity charge need not equal the metal oxidation state.",
+          "hi": "सत्ता का आवेश धातु की ऑक्सीकरण अवस्था के बराबर होना जरूरी नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Find Co oxidation state in [Co(NH3)5Cl]2+.",
+          "hi": "[Co(NH3)5Cl]2+ में Co की अवस्था निकालें।"
+        },
+        "answer": {
+          "en": "x+0−1=+2 gives Co(III).",
+          "hi": "x+0−1=+2 से Co(III)।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Werner theory and ionisation",
+        "hi": "वर्नर सिद्धांत और आयनीकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Werner distinguished primary valence, corresponding to oxidation state, from secondary valence, corresponding to coordination number. Secondary valences have definite spatial arrangements. For cobalt(III) ammine chlorides, differing numbers of chloride ions outside the coordination sphere explain different immediate AgCl precipitates under suitable aqueous test conditions. CoCl3·6NH3 can be represented as [Co(NH3)6]Cl3; CoCl3·5NH3 as [Co(NH3)5Cl]Cl2. These formulae distinguish directly coordinated chloride from counterions. Such evidence supports structural reasoning but does not mean every complex instantly releases every ion written in its empirical composition.",
+          "hi": "वर्नर (Werner) ने प्राथमिक संयोजकता (Primary valence) और द्वितीयक संयोजकता (Secondary valence) में अंतर किया। प्राथमिक संयोजकता ऑक्सीकरण अवस्था से तथा द्वितीयक संयोजकता उपसहसंयोजन संख्या से जुड़ती है। द्वितीयक संयोजकताओं की निश्चित स्थानिक व्यवस्था होती है, इसलिए वे आकृति और समावयवता समझाने में सहायक हैं। कोबाल्ट(III) के अमोनिया-युक्त क्लोराइडों में बाहर के Cl− की अलग संख्या उपयुक्त जलीय परीक्षण में AgCl अवक्षेप की अलग मात्रा समझाती है। CoCl3·6NH3 को [Co(NH3)6]Cl3 लिखने पर 3 क्लोराइड बाहर हैं, जबकि CoCl3·5NH3 को [Co(NH3)5Cl]Cl2 लिखने पर 2 बाहर और 1 धातु से जुड़ा है। केवल कुल रासायनिक संघटन से यह स्थान नहीं दिखता। बाहर के आयनों के तत्काल आयनीकरण और भीतर के समन्वित लिगैंड के व्यवहार को अलग रखें। हर धातु-लिगैंड आबंध पानी में पहुँचते ही टूट जाए, ऐसा सामान्य नियम नहीं है। प्रयोग की दशाएँ, संकुल की स्थिरता और समय परिणाम प्रभावित कर सकते हैं। सूत्र, मुक्त आयन और अवक्षेप की मोल मात्रा को जोड़कर वर्नर के तर्क को समझना केवल तिथियाँ याद करने से अधिक उपयोगी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Coordinated chloride and free chloride have different roles in this test.",
+          "hi": "इस परीक्षण में समन्वित क्लोराइड और मुक्त क्लोराइड की भूमिकाएँ अलग हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many outside chlorides occur in [Co(NH3)5Cl]Cl2?",
+          "hi": "[Co(NH3)5Cl]Cl2 में बाहर कितने क्लोराइड हैं?"
+        },
+        "answer": {
+          "en": "2 chloride counterions.",
+          "hi": "2 क्लोराइड प्रतिआयन।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Systematic nomenclature",
+        "hi": "व्यवस्थित नामकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Name ligands before the metal, arrange ligand names alphabetically and use multiplicative prefixes for repeated ligands. Prefixes do not determine alphabetic order. Common names include ammine for NH3, aqua for H2O, chlorido for Cl− and cyanido for CN−. The metal oxidation state appears in Roman numerals in parentheses. An anionic coordination entity uses a metal name ending in -ate; iron commonly becomes ferrate. Thus K4[Fe(CN)6] is potassium hexacyanidoferrate(II). The number of outside potassium ions determines charge balance, not the prefix on the cyanido ligands.",
+          "hi": "नामकरण (Nomenclature) में पहले लिगैंड, फिर केंद्रीय धातु का नाम लिखा जाता है। अलग लिगैंडों के नाम वर्णक्रम में रखते हैं; di,tri,tetra जैसे संख्या उपसर्ग वर्णक्रम तय नहीं करते। NH3 के लिए ammine और H2O के लिए aqua जैसे स्वीकृत नाम उपयोग होते हैं। Cl− को chlorido और CN− को cyanido कहते हैं। लिगैंड एक ही हो तो उसकी संख्या के अनुसार उपसर्ग लगाते हैं; जटिल या बहुदंती लिगैंड के लिए bis,tris जैसे रूप उपयोगी हैं। धातु की ऑक्सीकरण अवस्था रोमन अंक में कोष्ठक के भीतर लिखें। यदि पूरी उपसहसंयोजन सत्ता ऋणायन हो तो धातु का नाम सामान्यतः -ate रूप लेता है; iron से ferrate बनता है। K4[Fe(CN)6] का नाम potassium hexacyanidoferrate(II) है। पहले Fe की +2 अवस्था स्वतंत्र आवेश लेखे से निकालें, फिर नाम बनाएं। नाम से सूत्र लिखते समय इसी क्रम को उलटें: लिगैंड संख्या, आवेश, धातु अवस्था और प्रतिआयन से अंतिम विद्युत उदासीनता जाँचें। शब्दों की वर्तनी और रासायनिक अर्थ दोनों महत्वपूर्ण हैं; ammine को amine लिखने से अलग शब्द बन जाता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Alphabetise ligand names without counting multiplicative prefixes.",
+          "hi": "संख्या उपसर्गों को छोड़कर लिगैंड नामों का वर्णक्रम लें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Name K3[Fe(CN)6].",
+          "hi": "K3[Fe(CN)6] का नाम दें।"
+        },
+        "answer": {
+          "en": "Potassium hexacyanidoferrate(III).",
+          "hi": "पोटैशियम हेक्सासायनिडोफेरेट(III)।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Structural and stereoisomerism",
+        "hi": "संरचनात्मक और त्रिविम समावयवता"
+      },
+      "paragraphs": [
+        {
+          "en": "Isomers share an overall composition but differ in connectivity or spatial arrangement. Structural examples include ionisation, hydrate, linkage and coordination isomerism. Ambidentate nitrite can bind through N or O, giving linkage isomers. Geometrical isomers differ in ligand positions: square-planar [Pt(NH3)2Cl2] has cis and trans forms. Tetrahedral MA2B2 does not show a cis/trans pair because all four positions are equivalent in the required way. Optical isomers are non-superimposable mirror images; suitable octahedral chelate complexes such as [Co(en)3]3+ can form such pairs. Not every complex with an octahedral geometry is optically active.",
+          "hi": "समावयव (Isomer) समान कुल संघटन रखते हुए जोड़ने के तरीके या स्थानिक व्यवस्था में भिन्न हो सकते हैं। संरचनात्मक समावयवता में आयनीकरण, जलयोजन, बंधन और उपसहसंयोजन समावयवता के उदाहरण पढ़ते हैं। उभयदंती NO2− नाइट्रोजन या ऑक्सीजन से जुड़ सकता है; इससे बंधन समावयव (Linkage isomer) बनते हैं। त्रिविम समावयवता (Stereoisomerism) में जोड़ समान रह सकते हैं, लेकिन दिशा बदलती है। वर्ग समतलीय [Pt(NH3)2Cl2] में समान लिगैंड पास-पास होने पर cis और आमने-सामने होने पर trans रूप है। दोनों की केवल 2 आयामी कागजी दिशा बदलना पर्याप्त नहीं; वास्तविक ज्यामिति देखें। चतुष्फलकीय MA2B2 में ऐसा cis/trans युग्म नहीं बनता, क्योंकि स्थानों की समानता अलग है। प्रकाशिक समावयव एक-दूसरे के दर्पण प्रतिबिंब होते हैं, लेकिन पूर्णतः आरोपित नहीं होते। [Co(en)3]3+ जैसे उपयुक्त अष्टफलकीय कीलेट संकुल इसके उदाहरण हैं। हर अष्टफलकीय संकुल को प्रकाशिक सक्रिय और हर चित्र को नया समावयव कहना गलत है। पहचान में पहले जोड़, फिर ज्यामिति, फिर सममिति की जाँच करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Cis/trans requires the correct geometry, not just two unlike ligand types.",
+          "hi": "cis/trans के लिए सही ज्यामिति चाहिए,केवल2 अलग लिगैंड प्रकार नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does tetrahedral MA2B2 show cis/trans isomers?",
+          "hi": "क्या चतुष्फलकीय MA2B2 में cis/trans होते हैं?"
+        },
+        "answer": {
+          "en": "No; those positions are equivalent under tetrahedral symmetry.",
+          "hi": "नहीं;चतुष्फलकीय सममिति में वे स्थान समतुल्य हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Valence-bond model and magnetism",
+        "hi": "संयोजकता आबंध मॉडल और चुंबकत्व"
+      },
+      "paragraphs": [
+        {
+          "en": "Valence-bond theory describes ligand electron-pair donation into suitable metal hybrid orbitals. Four-coordinate examples may be tetrahedral sp3 or square-planar dsp2. Six-coordinate octahedral examples can be described as inner-orbital d2sp3 or outer-orbital sp3d2 in this model. Pairing decisions determine the number of unpaired electrons. For Ni(II), d8, [Ni(CN)4]2− is commonly square planar and diamagnetic, whereas [NiCl4]2− is tetrahedral and paramagnetic with two unpaired electrons. The model connects shape and magnetism but does not adequately explain colours, spectra or all stability trends. Hybridisation labels are teaching descriptions, not a complete modern bonding calculation.",
+          "hi": "संयोजकता आबंध सिद्धांत (Valence bond theory) में धातु के उपयुक्त संकर कक्षक लिगैंड के इलेक्ट्रॉन युग्म स्वीकार करते हैं। 4 समन्वयी संकुल चतुष्फलकीय sp3 या वर्ग समतलीय dsp2 हो सकता है। केवल उपसहसंयोजन संख्या 4 देखकर दोनों में से 1 आकृति निश्चित करना उचित नहीं। 6 समन्वयी अष्टफलकीय उदाहरणों में मॉडल आंतरिक कक्षक d2sp3 तथा बाहरी कक्षक sp3d2 का अंतर बताता है। इलेक्ट्रॉन युग्मन के बाद बचे अयुग्मित इलेक्ट्रॉन चुंबकीय व्यवहार समझाने में सहायता करते हैं। Ni2+ का d8 विन्यास होता है। [Ni(CN)4]2− सामान्यतः वर्ग समतलीय और प्रतिचुंबकीय है, जबकि [NiCl4]2− चतुष्फलकीय और 2 अयुग्मित इलेक्ट्रॉन वाला अनुचुंबकीय संकुल है। समान धातु अवस्था होते हुए लिगैंड बदलने से परिणाम बदल सकता है। संकरकरण के नाम को कारण का पूरा वैज्ञानिक विवरण न समझें; यह सीमित मॉडल है। इससे रंग, स्पेक्ट्रम तथा सभी स्थिरता प्रवृत्तियाँ पर्याप्त रूप से नहीं समझाई जातीं। प्रश्न में पहले धातु अवस्था और d संख्या, फिर दिए लिगैंड तथा स्वीकृत आकृति लें, अंत में अयुग्मित इलेक्ट्रॉन गिनें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Four-coordinate does not always mean tetrahedral.",
+          "hi": "4 समन्वयी का अर्थ हमेशा चतुष्फलकीय नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can two Ni(II) complexes have different magnetism?",
+          "hi": "2 Ni(II) संकुलों का चुंबकत्व अलग क्यों हो सकता है?"
+        },
+        "answer": {
+          "en": "Different ligands and geometries produce different orbital arrangements and pairing.",
+          "hi": "अलग लिगैंड और ज्यामिति से कक्षक व्यवस्था तथा युग्मन बदलते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Crystal-field splitting",
+        "hi": "क्रिस्टल क्षेत्र विभाजन"
+      },
+      "paragraphs": [
+        {
+          "en": "Crystal-field theory treats the electrostatic effect of ligands on d-orbital energies. In an octahedral field, t2g orbitals lie below eg orbitals; the gap is Δo. Filling depends on the competition between splitting energy and pairing energy P. Small Δo relative to P favours high-spin configurations where possible; large Δo favours additional pairing and low spin. In a tetrahedral field the e set lies below t2 and Δt is smaller, often approximated as 4Δo/9 for comparable arrangements. Absorption across a suitable gap can produce colour, but charge-transfer transitions and selection rules also matter.",
+          "hi": "क्रिस्टल क्षेत्र सिद्धांत (Crystal field theory) लिगैंडों के विद्युतस्थैतिक प्रभाव से धातु के d कक्षकों की ऊर्जा बदलना समझाता है। मुक्त आयन में समऊर्जीय माने गए 5 d कक्षक अष्टफलकीय क्षेत्र में नीचे के t2g और ऊपर के eg समूह में विभाजित होते हैं। दोनों के बीच ऊर्जा अंतर Δo है। इलेक्ट्रॉन भरने का निर्णय केवल ऊपर-नीचे का चित्र देखकर नहीं होता; विभाजन ऊर्जा और युग्मन ऊर्जा (Pairing energy) P की तुलना जरूरी है। Δo छोटा होने पर जहाँ विकल्प संभव है वहाँ उच्च स्पिन, तथा बड़ा होने पर अतिरिक्त युग्मन से निम्न स्पिन रूप मिल सकता है। d1,d2 जैसे हर विन्यास में अलग उच्च-निम्न स्पिन विकल्प नहीं होते। चतुष्फलकीय क्षेत्र में क्रम बदलकर e नीचे और t2 ऊपर होता है; समान तुलना में Δt का मान सामान्यतः छोटा होता है। उपयुक्त ऊर्जा अंतर का प्रकाश अवशोषण रंग से जुड़ता है, लेकिन सभी रंग केवल इसी प्रक्रिया से नहीं आते। चित्र में वास्तविक लिगैंड दिशा, कक्षक समूह, ऊर्जा अंतर और इलेक्ट्रॉन संख्या अलग चिह्नित करें। ऊर्जा अंतर के लिए kJ mol^-1 या अन्य ऊर्जा मात्रक एकसमान रखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Compare splitting energy with pairing energy before choosing high or low spin.",
+          "hi": "उच्च या निम्न स्पिन चुनने से पहले विभाजन और युग्मन ऊर्जा तुलना करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which octahedral set is lower in energy?",
+          "hi": "अष्टफलकीय क्षेत्र में कौन-सा समूह कम ऊर्जा का है?"
+        },
+        "answer": {
+          "en": "t2g lies below eg.",
+          "hi": "t2g,eg से नीचे होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Chelation and applications",
+        "hi": "कीलेशन और उपयोग"
+      },
+      "paragraphs": [
+        {
+          "en": "Chelating ligands bind through multiple donor atoms and form rings with the central metal. Their complexes often have enhanced stability compared with comparable monodentate systems, although stability always depends on conditions. EDTA commonly acts as a hexadentate ligand and is used in complexometric titration. Haemoglobin, chlorophyll and vitamin B12 illustrate important metal-containing biological structures. Coordination compounds support metal extraction, qualitative analysis and some medicines; cisplatin is a standard drug example, not a substance for unsupervised use. A familiar application should be linked to the relevant ligand, central metal and coordination behaviour rather than memorised as an isolated name.",
+          "hi": "कीलेशन (Chelation) में बहुदंती लिगैंड के अनेक दाता परमाणु केंद्रीय धातु से जुड़कर वलय बनाते हैं। उपयुक्त तुलना में ऐसे संकुल समान एकदंती लिगैंडों वाले निकाय से अधिक स्थिर हो सकते हैं; फिर भी स्थिरता को बिना दशा और संरचना देखे सार्वभौमिक नियम न बनाएं। EDTA सामान्यतः षट्दंती लिगैंड की तरह काम करता है और धातु आयनों के संकुलमितीय अनुमापन (Complexometric titration) में उपयोगी है। हीमोग्लोबिन में लोहा, क्लोरोफिल में मैग्नीशियम और विटामिन B12 में कोबाल्ट केंद्र महत्वपूर्ण जैविक उदाहरण हैं। उनकी पूरी संरचना और कार्य को केवल धातु के नाम से बदल नहीं सकते। धातु निष्कर्षण, गुणात्मक विश्लेषण और औषधियों में भी उपसहसंयोजन का उपयोग होता है। cisplatin औषधि का प्रसिद्ध उदाहरण है, लेकिन दवा उपयोग प्रशिक्षित चिकित्सकीय व्यवस्था का विषय है। अध्याय की पुनरावृत्ति में हर उदाहरण के लिए केंद्रीय धातु, लिगैंड, दाता परमाणु, कुल आवेश और उपयोग जोड़ें। स्क्रीन पर दिखी आकृति को सटीक आबंध लंबाई या स्थिरता का मापन न मानें। संरचना का चित्र समझ बढ़ाता है, जबकि अंतिम निष्कर्ष इलेक्ट्रॉन लेखे, प्रमाण और दी हुई परिस्थितियों से निकलना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A chelate ring involves the metal and a multidentate ligand.",
+          "hi": "कीलेट वलय में धातु तथा बहुदंती लिगैंड दोनों भाग लेते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does three en not mean coordination number 3?",
+          "hi": "3 en का अर्थ उपसहसंयोजन संख्या3 क्यों नहीं?"
+        },
+        "answer": {
+          "en": "Each en supplies two donor atoms, giving coordination number 6.",
+          "hi": "हर en2 दाता परमाणु देता है,इसलिए संख्या6 है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "q(entity)=oxidation state(metal)+Σq(ligands)",
+      "meaning": {
+        "en": "Charge balance determines metal oxidation state.",
+        "hi": "आवेश संतुलन धातु की ऑक्सीकरण अवस्था देता है।"
+      },
+      "units": {
+        "en": "Signed dimensionless numbers; charges may be expressed in e.",
+        "hi": "चिह्न वाली विमाहीन संख्याएँ;आवेश e में लिख सकते हैं।"
+      }
+    },
+    {
+      "expression": "CN=number of directly attached donor atoms",
+      "meaning": {
+        "en": "CN is coordination number, not the number of ligand molecules.",
+        "hi": "CN उपसहसंयोजन संख्या है,लिगैंड अणुओं की संख्या नहीं।"
+      },
+      "units": {
+        "en": "Dimensionless count.",
+        "hi": "विमाहीन गिनती।"
+      }
+    },
+    {
+      "expression": "μ=√[n(n+2)] BM",
+      "meaning": {
+        "en": "Spin-only estimate from the actual unpaired count n.",
+        "hi": "वास्तविक अयुग्मित संख्या n से स्पिन-मात्र अनुमान।"
+      },
+      "units": {
+        "en": "Bohr magneton; orbital effects omitted.",
+        "hi": "बोर मैग्नेटॉन;कक्षकीय प्रभाव उपेक्षित।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find Fe oxidation state in [Fe(CN)6]4−.",
+        "hi": "Fe की ऑक्सीकरण अवस्था निकालें: [Fe(CN)6]4−।"
+      },
+      "given": {
+        "en": "Each CN− has charge −1; entity charge −4.",
+        "hi": "हर CN− का आवेश −1 तथा सत्ता का कुल आवेश −4 है।"
+      },
+      "find": {
+        "en": "Fe oxidation state.",
+        "hi": "Fe की ऑक्सीकरण अवस्था।"
+      },
+      "formula": {
+        "en": "x+6(−1)=−4.",
+        "hi": "x+6(−1)=−4।"
+      },
+      "steps": [
+        {
+          "en": "Sum ligand charge is −6.",
+          "hi": "सभी लिगैंडों का कुल आवेश −6 है।"
+        },
+        {
+          "en": "x−6=−4, hence x=+2.",
+          "hi": "x−6=−4 से x=+2 मिलता है।"
+        }
+      ],
+      "answer": {
+        "en": "+2, Fe(II).",
+        "hi": "+2, अर्थात Fe(II)।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the coordination number of [Co(en)3]3+.",
+        "hi": "[Co(en)3]3+ की उपसहसंयोजन संख्या निकालें।"
+      },
+      "given": {
+        "en": "Three en ligands; each is bidentate.",
+        "hi": "3 en लिगैंड, प्रत्येक द्विदंती है।"
+      },
+      "find": {
+        "en": "Directly attached donor count.",
+        "hi": "सीधे जुड़े दाता परमाणुओं की संख्या।"
+      },
+      "formula": {
+        "en": "CN=ligands×donors per ligand.",
+        "hi": "CN=लिगैंड संख्या×प्रति लिगैंड दाता संख्या।"
+      },
+      "steps": [
+        {
+          "en": "Each en contributes two N donors.",
+          "hi": "हर en, 2 N दाता देता है।"
+        },
+        {
+          "en": "3×2=6.",
+          "hi": "3×2=6 प्राप्त होता है।"
+        }
+      ],
+      "answer": {
+        "en": "CN=6.",
+        "hi": "उपसहसंयोजन संख्या 6 है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Name [Co(NH3)5Cl]Cl2.",
+        "hi": "[Co(NH3)5Cl]Cl2 का नाम बताएं।"
+      },
+      "given": {
+        "en": "NH3 neutral; coordinated Cl−; two outside Cl−.",
+        "hi": "NH3 उदासीन है; 1 समन्वित Cl− और 2 बाहरी Cl− हैं।"
+      },
+      "find": {
+        "en": "Name and cobalt oxidation state.",
+        "hi": "नाम तथा Co की ऑक्सीकरण अवस्था।"
+      },
+      "formula": {
+        "en": "Entity charge +2; x−1=+2.",
+        "hi": "सत्ता का आवेश +2; x−1=+2।"
+      },
+      "steps": [
+        {
+          "en": "Co is +3.",
+          "hi": "Co की अवस्था +3 है।"
+        },
+        {
+          "en": "Ammine alphabetically precedes chlorido; the cation metal is cobalt.",
+          "hi": "वर्णक्रम में ammine पहले है; धनायन का धातु नाम cobalt है।"
+        }
+      ],
+      "answer": {
+        "en": "Pentaamminechloridocobalt(III) chloride.",
+        "hi": "पेंटाऐम्मीनक्लोरिडोकोबाल्ट(III) क्लोराइड।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Compare unpaired counts in [Ni(CN)4]2− and [NiCl4]2−.",
+        "hi": "[Ni(CN)4]2− तथा [NiCl4]2− की अयुग्मित इलेक्ट्रॉन संख्या मिलाएँ।"
+      },
+      "given": {
+        "en": "Both Ni(II),d8; standard geometries are square planar and tetrahedral respectively.",
+        "hi": "दोनों में Ni(II), d8; क्रमशः वर्ग समतलीय और चतुष्फलकीय ज्यामिति।"
+      },
+      "find": {
+        "en": "Magnetic behaviour.",
+        "hi": "दोनों का चुंबकीय व्यवहार।"
+      },
+      "formula": {
+        "en": "Use ligand-dependent orbital arrangement, not d count alone.",
+        "hi": "केवल d संख्या नहीं, लिगैंड-निर्भर कक्षक व्यवस्था लें।"
+      },
+      "steps": [
+        {
+          "en": "The cyanido square-planar complex has paired electrons.",
+          "hi": "सायनिडो वर्ग समतलीय संकुल में इलेक्ट्रॉन युग्मित हैं।"
+        },
+        {
+          "en": "The tetrahedral chlorido complex has 2 unpaired electrons.",
+          "hi": "चतुष्फलकीय क्लोरिडो संकुल में 2 अयुग्मित इलेक्ट्रॉन हैं।"
+        }
+      ],
+      "answer": {
+        "en": "0 and 2 unpaired electrons; diamagnetic and paramagnetic respectively.",
+        "hi": "क्रमशः 0 और 2 अयुग्मित; प्रतिचुंबकीय तथा अनुचुंबकीय।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Predict immediate AgCl from 0.010 mol [Co(NH3)5Cl]Cl2 with excess AgNO3 under the standard aqueous test assumption.",
+        "hi": "सामान्य जलीय परीक्षण मानकर 0.010 mol [Co(NH3)5Cl]Cl2 से अधिक AgNO3 पर तत्काल AgCl निकालें।"
+      },
+      "given": {
+        "en": "Two free counterion chlorides per formula unit; coordinated chloride remains bound during the test.",
+        "hi": "प्रति सूत्र 2 मुक्त Cl−; परीक्षण में समन्वित Cl बँधा रहता है।"
+      },
+      "find": {
+        "en": "AgCl amount and mass using M=143.5 g/mol.",
+        "hi": "AgCl की मोल मात्रा और द्रव्यमान; M=143.5 g/mol।"
+      },
+      "formula": {
+        "en": "n(AgCl)=2n(complex);m=nM.",
+        "hi": "n(AgCl)=2n(संकुल); m=nM।"
+      },
+      "steps": [
+        {
+          "en": "n(AgCl)=2×0.010=0.020 mol.",
+          "hi": "n(AgCl)=2×0.010=0.020 mol।"
+        },
+        {
+          "en": "m=0.020×143.5=2.87 g.",
+          "hi": "m=0.020×143.5=2.87 g।"
+        },
+        {
+          "en": "Do not include the coordinated third chloride as immediately free.",
+          "hi": "तीसरे समन्वित क्लोराइड को तत्काल मुक्त न गिनें।"
+        }
+      ],
+      "answer": {
+        "en": "0.020 mol, approximately 2.87 g AgCl under the stated assumption.",
+        "hi": "दी हुई मान्यता में 0.020 mol, लगभग 2.87 g AgCl।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Coordination number counts",
+        "hi": "उपसहसंयोजन संख्या क्या गिनती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Directly attached donor atoms",
+            "hi": "सीधे जुड़े दाता परमाणु"
+          },
+          "reason": {
+            "en": "Each donor atom bound to the centre contributes one.",
+            "hi": "केंद्र से सीधे जुड़ा हर दाता परमाणु 1 गिना जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All atoms in the formula",
+            "hi": "सूत्र के सभी परमाणु"
+          },
+          "reason": {
+            "en": "Most atoms are not directly bonded to the metal.",
+            "hi": "अधिकांश परमाणु सीधे धातु से नहीं जुड़े होते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only counterions",
+            "hi": "केवल प्रतिआयन"
+          },
+          "reason": {
+            "en": "Counterions lie outside the coordination sphere.",
+            "hi": "प्रतिआयन उपसहसंयोजन मंडल के बाहर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always ligand molecules",
+            "hi": "हमेशा लिगैंड अणुओं की संख्या"
+          },
+          "reason": {
+            "en": "Multidentate ligands can supply several donors.",
+            "hi": "बहुदंती लिगैंड के 1 अणु से अनेक दाता जुड़ सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Co oxidation state in [Co(NH3)6]3+ is",
+        "hi": "[Co(NH3)6]3+ में Co की ऑक्सीकरण अवस्था क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "+3",
+            "hi": "+3"
+          },
+          "reason": {
+            "en": "NH3 is neutral, so the metal supplies the entity charge.",
+            "hi": "NH3 उदासीन है, इसलिए धातु की अवस्था +3 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "+6",
+            "hi": "+6"
+          },
+          "reason": {
+            "en": "Six is ligand count, not oxidation state.",
+            "hi": "6 लिगैंड संख्या है, ऑक्सीकरण अवस्था नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Neutral ligands do not imply a neutral metal centre.",
+            "hi": "उदासीन लिगैंड से धातु की अवस्था 0 नहीं हो जाती।"
+          }
+        },
+        {
+          "text": {
+            "en": "−3",
+            "hi": "−3"
+          },
+          "reason": {
+            "en": "The entity charge is positive.",
+            "hi": "सत्ता का आवेश धनात्मक +3 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which ligand is bidentate in its usual chelating mode?",
+        "hi": "सामान्य कीलेट रूप में कौन द्विदंती लिगैंड है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "en",
+            "hi": "en"
+          },
+          "reason": {
+            "en": "It donates through two nitrogen atoms.",
+            "hi": "en अपने 2 नाइट्रोजन परमाणुओं से जुड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "NH3",
+            "hi": "NH3"
+          },
+          "reason": {
+            "en": "Ammonia has one usual donor nitrogen.",
+            "hi": "अमोनिया का 1 सामान्य दाता N है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cl−",
+            "hi": "Cl−"
+          },
+          "reason": {
+            "en": "Chlorido is monodentate here.",
+            "hi": "यहाँ क्लोरिडो एकदंती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "H2O",
+            "hi": "H2O"
+          },
+          "reason": {
+            "en": "Aqua is ordinarily monodentate in these examples.",
+            "hi": "इन उदाहरणों में aqua सामान्यतः एकदंती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An ambidentate ligand can",
+        "hi": "उभयदंती लिगैंड क्या कर सकता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Bind through alternative donor atoms",
+            "hi": "वैकल्पिक दाता परमाणुओं से जुड़ना"
+          },
+          "reason": {
+            "en": "Nitrite may bind through N or O.",
+            "hi": "नाइट्राइट N या O से जुड़ सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always bind both sites to one metal simultaneously",
+            "hi": "हमेशा दोनों स्थानों से एक साथ जुड़ना"
+          },
+          "reason": {
+            "en": "That describes a typical bidentate mode, not ambidentate alternatives.",
+            "hi": "यह द्विदंती व्यवहार है; उभयदंती में वैकल्पिक दाता होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Have no donor electron pair",
+            "hi": "दाता इलेक्ट्रॉन युग्म नहीं होना"
+          },
+          "reason": {
+            "en": "Coordination requires a donor interaction.",
+            "hi": "दाता इलेक्ट्रॉन युग्म उपसहसंयोजन का आधार है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Be only positively charged",
+            "hi": "केवल धनावेशित होना"
+          },
+          "reason": {
+            "en": "Ambidentate behaviour is about donor options, not a fixed charge sign.",
+            "hi": "उभयदंती होना दाता विकल्प का गुण है, आवेश चिह्न का नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Square-planar [Pt(NH3)2Cl2] can show",
+        "hi": "वर्ग समतलीय [Pt(NH3)2Cl2] कौन-सी समावयवता दिखाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Cis/trans isomerism",
+            "hi": "cis/trans समावयवता"
+          },
+          "reason": {
+            "en": "Like ligands may be adjacent or opposite.",
+            "hi": "समान लिगैंड पास-पास या आमने-सामने हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No geometric distinction",
+            "hi": "कोई ज्यामितीय अंतर नहीं"
+          },
+          "reason": {
+            "en": "Square-planar positions allow two distinct arrangements.",
+            "hi": "वर्ग समतलीय स्थान 2 अलग व्यवस्थाएँ देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only tetrahedral chirality",
+            "hi": "केवल चतुष्फलकीय असममिति"
+          },
+          "reason": {
+            "en": "The specified geometry is square planar.",
+            "hi": "दी गई ज्यामिति वर्ग समतलीय है, चतुष्फलकीय नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A change in total formula between cis and trans",
+            "hi": "cis और trans में कुल सूत्र बदलना"
+          },
+          "reason": {
+            "en": "Geometric isomers keep the same composition.",
+            "hi": "ज्यामितीय समावयव समान कुल संघटन रखते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which octahedral set lies lower in a crystal field?",
+        "hi": "अष्टफलकीय क्रिस्टल क्षेत्र में कौन-सा समूह कम ऊर्जा पर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "t2g",
+            "hi": "t2g"
+          },
+          "reason": {
+            "en": "Its orbitals experience less direct ligand repulsion in the model.",
+            "hi": "मॉडल में इन कक्षकों पर सीधा लिगैंड प्रतिकर्षण कम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "eg",
+            "hi": "eg"
+          },
+          "reason": {
+            "en": "eg points more directly towards ligands and lies higher.",
+            "hi": "eg कक्षक लिगैंडों की ओर अधिक सीधे होने से ऊँची ऊर्जा पर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both always remain degenerate",
+            "hi": "दोनों हमेशा समऊर्जीय रहते हैं"
+          },
+          "reason": {
+            "en": "Octahedral ligand fields split the sets.",
+            "hi": "अष्टफलकीय लिगैंड क्षेत्र दोनों समूहों को विभाजित करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4s alone",
+            "hi": "केवल 4s"
+          },
+          "reason": {
+            "en": "The question concerns the d-level splitting sets.",
+            "hi": "प्रश्न d कक्षकों के विभाजन का है, 4s का नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A strong octahedral field relative to pairing energy favours",
+        "hi": "युग्मन ऊर्जा की तुलना में प्रबल अष्टफलकीय क्षेत्र किसे अनुकूल करता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "More pairing where high/low-spin alternatives exist",
+            "hi": "जहाँ विकल्प हों वहाँ अधिक युग्मन"
+          },
+          "reason": {
+            "en": "Large Δo can make lower-level pairing favourable.",
+            "hi": "बड़ा Δo नीचे के स्तर में युग्मन को अनुकूल कर सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always maximum unpaired electrons",
+            "hi": "हमेशा अधिकतम अयुग्मित इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "That is usually favoured by a weaker field.",
+            "hi": "अधिक अयुग्मित इलेक्ट्रॉन सामान्यतः कमजोर क्षेत्र में अनुकूल होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A different atomic number",
+            "hi": "अलग परमाणु क्रमांक"
+          },
+          "reason": {
+            "en": "Ligands do not change the metal nucleus.",
+            "hi": "लिगैंड धातु का नाभिक और परमाणु क्रमांक नहीं बदलते।"
+          }
+        },
+        {
+          "text": {
+            "en": "No electron interaction",
+            "hi": "कोई इलेक्ट्रॉन अंतःक्रिया नहीं"
+          },
+          "reason": {
+            "en": "Pairing energy represents electron interaction costs.",
+            "hi": "युग्मन ऊर्जा इलेक्ट्रॉन अंतःक्रिया की लागत दर्शाती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The accepted name of K4[Fe(CN)6] includes",
+        "hi": "K4[Fe(CN)6] के स्वीकृत नाम में कौन-सा भाग है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Hexacyanidoferrate(II)",
+            "hi": "हेक्सासायनिडोफेरेट(II)"
+          },
+          "reason": {
+            "en": "The anionic entity has Fe(II) and six cyanido ligands.",
+            "hi": "ऋणायनिक सत्ता में 6 सायनिडो तथा Fe(II) है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Hexacyanidoiron(IV)",
+            "hi": "हेक्सासायनिडोआयरन(IV)"
+          },
+          "reason": {
+            "en": "Both the oxidation state and anionic naming form are wrong.",
+            "hi": "अवस्था और ऋणायनिक नामरूप दोनों गलत हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Tetracyanidoferrate(III)",
+            "hi": "टेट्रासायनिडोफेरेट(III)"
+          },
+          "reason": {
+            "en": "Four K+ ions are not four cyanido ligands; Fe is +2.",
+            "hi": "4 K+ का अर्थ 4 सायनिडो नहीं; यहाँ Fe की अवस्था +2 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Hexaammineferrate(II)",
+            "hi": "हेक्साऐम्मीनफेरेट(II)"
+          },
+          "reason": {
+            "en": "CN− is cyanido, not ammine.",
+            "hi": "CN− सायनिडो है, ऐम्मीन नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which commonly forms an optical pair?",
+        "hi": "कौन सामान्यतः प्रकाशिक समावयव युग्म बनाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "[Co(en)3]3+",
+            "hi": "[Co(en)3]3+"
+          },
+          "reason": {
+            "en": "Its octahedral chelate arrangement has non-superimposable mirror forms.",
+            "hi": "अष्टफलकीय कीलेट व्यवस्था के अनारोपित दर्पण रूप हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "[Pt(NH3)2Cl2] as a simple square plane",
+            "hi": "सरल वर्ग समतलीय [Pt(NH3)2Cl2]"
+          },
+          "reason": {
+            "en": "Its familiar distinction is cis/trans, not an optical pair.",
+            "hi": "इसका परिचित अंतर cis/trans है, प्रकाशिक युग्म नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Free Cl− alone",
+            "hi": "अकेला मुक्त Cl−"
+          },
+          "reason": {
+            "en": "A single spherical ion has no such chelate chirality.",
+            "hi": "अकेले गोलाकार आयन में ऐसी कीलेट असममिति नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every octahedral complex",
+            "hi": "हर अष्टफलकीय संकुल"
+          },
+          "reason": {
+            "en": "Symmetry and ligand arrangement decide optical activity.",
+            "hi": "सममिति और लिगैंड व्यवस्था प्रकाशिक सक्रियता तय करती हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why does EDTA support chelation?",
+        "hi": "EDTA कीलेशन में सहायक क्यों है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It can attach through multiple donor atoms",
+            "hi": "यह अनेक दाता परमाणुओं से जुड़ सकता है"
+          },
+          "reason": {
+            "en": "Its usual hexadentate mode can form several rings around a metal.",
+            "hi": "सामान्य षट्दंती रूप में धातु के साथ अनेक वलय बन सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "It has no lone pairs",
+            "hi": "इसमें एकाकी इलेक्ट्रॉन युग्म नहीं हैं"
+          },
+          "reason": {
+            "en": "Donor electron pairs are essential to its coordination.",
+            "hi": "इसके उपसहसंयोजन में दाता इलेक्ट्रॉन युग्म आवश्यक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "It changes the metal atomic number",
+            "hi": "यह धातु का परमाणु क्रमांक बदलता है"
+          },
+          "reason": {
+            "en": "Chelation is not a nuclear reaction.",
+            "hi": "कीलेशन नाभिकीय अभिक्रिया नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It always makes coordination number 1",
+            "hi": "यह हमेशा उपसहसंयोजन संख्या 1 देता है"
+          },
+          "reason": {
+            "en": "Multiple donor attachments give a higher coordination number.",
+            "hi": "अनेक दाता जुड़ने से उपसहसंयोजन संख्या 1 से अधिक होती है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Differentiate coordination number and oxidation state.",
+        "hi": "उपसहसंयोजन संख्या और ऑक्सीकरण अवस्था में अंतर करें।"
+      },
+      "answer": {
+        "en": "Coordination number counts directly attached donors; oxidation state follows formal charge balance. In [Fe(CN)6]4− these are 6 and +2.",
+        "hi": "उपसहसंयोजन संख्या सीधे जुड़े दाता गिनती है; ऑक्सीकरण अवस्था औपचारिक आवेश लेखे से मिलती है। [Fe(CN)6]4− में ये क्रमशः 6 और +2 हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish bidentate and ambidentate ligands.",
+        "hi": "द्विदंती और उभयदंती लिगैंड में अंतर करें।"
+      },
+      "answer": {
+        "en": "A bidentate ligand binds through two donors simultaneously; an ambidentate ligand offers alternative donor atoms, commonly binding through one at a time.",
+        "hi": "द्विदंती लिगैंड 2 दाताओं से एक साथ जुड़ता है। उभयदंती वैकल्पिक दाता परमाणु देता है और सामान्यतः एक समय 1 से जुड़ता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the Werner chloride test.",
+        "hi": "वर्नर के क्लोराइड परीक्षण का तर्क समझाएँ।"
+      },
+      "answer": {
+        "en": "Outside chloride counterions can precipitate immediately with Ag+ under standard aqueous assumptions; coordinated chloride is distinguished from that immediately ionisable fraction.",
+        "hi": "सामान्य जलीय मान्यता में बाहर के Cl−, Ag+ से तत्काल अवक्षेप देते हैं। समन्वित Cl को इस तुरंत आयनीकरण वाले भाग से अलग रखें।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain cis and trans with one example.",
+        "hi": "1 उदाहरण से cis और trans समझाएँ।"
+      },
+      "answer": {
+        "en": "In square-planar [Pt(NH3)2Cl2], identical ligands are adjacent in cis and opposite in trans; composition stays unchanged.",
+        "hi": "वर्ग समतलीय [Pt(NH3)2Cl2] में समान लिगैंड cis में पास-पास तथा trans में आमने-सामने हैं। कुल संघटन समान रहता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State two limits of the elementary VBT treatment.",
+        "hi": "सरल VBT की 2 सीमाएँ लिखें।"
+      },
+      "answer": {
+        "en": "It does not adequately explain electronic spectra/colour or give a complete account of complex stability and detailed metal–ligand bonding.",
+        "hi": "यह इलेक्ट्रॉनिक स्पेक्ट्रम तथा रंग को पर्याप्त रूप से नहीं समझाता। संकुल स्थिरता और सूक्ष्म धातु-लिगैंड आबंधन का भी पूर्ण विवरण नहीं देता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Link ligand-field strength with magnetism.",
+        "hi": "लिगैंड क्षेत्र प्रबलता को चुंबकत्व से जोड़ें।"
+      },
+      "answer": {
+        "en": "For configurations with alternatives, larger octahedral splitting relative to pairing energy favours pairing and fewer unpaired electrons; smaller splitting can favour high spin.",
+        "hi": "जहाँ उच्च/निम्न स्पिन विकल्प हों, वहाँ युग्मन ऊर्जा की तुलना में बड़ा अष्टफलकीय विभाजन अधिक युग्मन और कम अयुग्मित इलेक्ट्रॉन अनुकूल करता है; छोटा विभाजन उच्च स्पिन को अनुकूल कर सकता है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Identify the bracketed coordination entity first.",
+      "hi": "पहले कोष्ठक की उपसहसंयोजन सत्ता पहचानें।"
+    },
+    {
+      "en": "Count donors for coordination number.",
+      "hi": "उपसहसंयोजन संख्या के लिए सीधे जुड़े दाता गिनें।"
+    },
+    {
+      "en": "Use charge balance for oxidation state.",
+      "hi": "ऑक्सीकरण अवस्था के लिए आवेश संतुलन लगाएँ।"
+    },
+    {
+      "en": "Geometry and symmetry determine isomerism.",
+      "hi": "ज्यामिति और सममिति समावयवता तय करती हैं।"
+    },
+    {
+      "en": "Ligand field and pairing affect colour and magnetism.",
+      "hi": "लिगैंड क्षेत्र और इलेक्ट्रॉन युग्मन रंग तथा चुंबकत्व को प्रभावित करते हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse ligand count with donor count, metal oxidation state with entity charge, or every four-coordinate shape with a tetrahedron.",
+    "hi": "लिगैंड अणुओं की संख्या को दाता संख्या, धातु की अवस्था को सत्ता का आवेश, या हर 4 समन्वयी आकृति को चतुष्फलक न समझें।"
+  },
+  "goal": {
+    "en": "Read formulas, name complexes and connect geometry, isomerism and ligand-dependent bonding.",
+    "hi": "सूत्र पढ़ें, संकुलों के नाम दें और ज्यामिति, समावयवता तथा लिगैंड-निर्भर आबंधन जोड़ें।"
+  },
+  "conceptMap": "सत्ता और लिगैंड → दाता संख्या और आवेश → नामकरण → समावयव → VBT/CFT → चुंबकत्व और उपयोग",
+  "conceptMapEn": "Entity and ligands → donor count and charge → names → isomers → VBT/CFT → magnetism and applications",
+  "editionBasis": {
+    "en": "Original study explanations for NCERT Chemistry Class XII and UP Board 2026–27. Use the prescribed textbook and school practicals alongside.",
+    "hi": "NCERT रसायन विज्ञान कक्षा 12 तथा यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "UPMSP Class 12 Chemistry 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/152-Chemistry-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Chemistry Class XII Chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/lech105.pdf"
+    }
+  ]
+}

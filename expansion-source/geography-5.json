@@ -1,0 +1,1209 @@
+{
+  "id": "geography-5",
+  "number": 5,
+  "title": {
+    "en": "Natural Vegetation and Wildlife",
+    "hi": "प्राकृतिक वनस्पति तथा वन्य प्राणी"
+  },
+  "engine": "map",
+  "goal": {
+    "en": "Connect plant adaptations, habitats and conservation with climate and relief.",
+    "hi": "पौधों के अनुकूलन, आवास और संरक्षण को जलवायु तथा धरातल से जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "1. Vegetation, flora and fauna",
+        "hi": "1. वनस्पति, फ्लोरा और फौना"
+      },
+      "body": {
+        "en": "Natural vegetation is a plant community that develops without direct human cultivation. Crops planted and managed in fields are therefore different from naturally established vegetation, even though both contain living plants. Flora refers to the plants of a region or period, while fauna refers to its animals. Wildlife includes more than large mammals: birds, insects, reptiles and many other organisms matter. Biodiversity is the variety of life, including differences among organisms and the habitats that support them. A plantation with one tree species is not automatically equivalent to a diverse natural forest. To describe a landscape, notice the height and spacing of plants, leaf form, moisture and signs of human management. A photograph cannot reveal every species, so distinguish what is visible from what requires field evidence. In the interactive map, vegetation regions are approximate learning zones. They are not a current forest-cover survey or a claim that the whole marked state contains one vegetation type. This distinction helps prevent the common mistake of equating a broad climatic region with uninterrupted forest on every piece of land.",
+        "hi": "प्राकृतिक वनस्पति (Natural Vegetation) वह पादप समुदाय है जो सीधे मानव द्वारा बोए बिना स्वाभाविक रूप से विकसित होता है। खेत में बोई और सँभाली फसल इससे अलग है, यद्यपि दोनों में जीवित पौधे हैं। किसी क्षेत्र या काल के पौधों को फ्लोरा (Flora) और पशुओं को फौना (Fauna) कहते हैं। वन्य जीव केवल बड़े स्तनधारी नहीं हैं; पक्षी, कीट, सरीसृप और अनेक अन्य जीव भी महत्वपूर्ण हैं। जैव विविधता (Biodiversity) जीवन की विभिन्नता है, जिसमें जीवों और उनके आवासों का अंतर शामिल है। एक ही वृक्ष प्रजाति का बागान अपने-आप विविध प्राकृतिक वन के बराबर नहीं हो जाता। किसी दृश्य का वर्णन करते समय पौधों की ऊँचाई, दूरी, पत्ती, नमी और मानव देखभाल के चिह्न देखें। एक तस्वीर से हर प्रजाति नहीं पहचानी जा सकती। जो दिखता है और जिसके लिए क्षेत्रीय प्रमाण चाहिए, उन्हें अलग करें। इंटरैक्टिव मानचित्र के क्षेत्र लगभग शिक्षण पट्टियाँ हैं। वे वर्तमान वनावरण सर्वेक्षण या पूरे राज्य में एक ही वनस्पति होने का दावा नहीं हैं। बड़ी जलवायु पट्टी का अर्थ उसके हर भूखंड पर लगातार जंगल नहीं। इस अंतर से क्षेत्रीय सामान्यीकरण की गलती दूर होती है।"
+      },
+      "question": {
+        "en": "How is a crop field different from natural vegetation?",
+        "hi": "फसल का खेत प्राकृतिक वनस्पति से कैसे अलग है?"
+      }
+    },
+    {
+      "title": {
+        "en": "2. Why vegetation varies",
+        "hi": "2. वनस्पति में अंतर क्यों है"
+      },
+      "body": {
+        "en": "Temperature, rainfall, sunlight, soil and relief influence which plants can grow in a region. Rainfall amount matters, but the length of the dry season is also important. A place receiving rain in a short intense season can differ from one with moisture spread through the year. Altitude changes temperature, so vegetation can change over a short horizontal distance on a mountain slope. Soil depth, drainage and salt content create further local differences. Human activities such as clearing, grazing, fire, planting and conservation alter the actual cover. It is therefore too simple to explain every forest pattern by rainfall alone. Use a chain: climate and soil affect available moisture and growing conditions; plants with suitable adaptations establish; human use modifies the result. A riverbank can support moisture-loving plants within a much drier surrounding region. On a map, compare a wet coastal slope, an interior plateau and a high mountain area. Then name the control that differs rather than assuming that all green areas share the same environment. Field observations should be non-destructive and should not involve tasting unknown plants.",
+        "hi": "तापमान, वर्षा, धूप, मिट्टी और धरातल प्रभावित करते हैं कि किसी क्षेत्र में कौन-से पौधे बढ़ सकते हैं। केवल कुल वर्षा नहीं, शुष्क ऋतु की अवधि भी महत्वपूर्ण है। थोड़े समय में तेज वर्षा पाने वाला स्थान पूरे वर्ष फैली नमी वाले स्थान से अलग हो सकता है। ऊँचाई पर तापमान बदलता है, इसलिए पर्वतीय ढाल पर कम क्षैतिज दूरी में वनस्पति बदल सकती है। मिट्टी की गहराई, जल निकास और लवणता स्थानीय अंतर बढ़ाते हैं। कटाई, चराई, आग, रोपण और संरक्षण जैसी मानव क्रियाएँ वास्तविक आवरण बदलती हैं। इसलिए हर वन को केवल वर्षा से समझाना अधूरा है। कारणों की कड़ी बनाएँ: जलवायु और मिट्टी से नमी तथा वृद्धि दशाएँ बनती हैं; अनुकूलन वाले पौधे विकसित होते हैं; मानव उपयोग परिणाम बदलता है। अपेक्षाकृत शुष्क क्षेत्र में भी नदी किनारे नमी पसंद पौधे मिल सकते हैं। मानचित्र पर नम तटीय ढाल, भीतरी पठार और ऊँचे पर्वत की तुलना करें। फिर बताएँ कि कौन-सा नियंत्रक बदला। हर हरे भाग का वातावरण एक जैसा न मानें। क्षेत्रीय निरीक्षण में पौधे न तोड़ें और अज्ञात पौधे का स्वाद कभी न लें। अच्छे उत्तर में प्राकृतिक और मानव दोनों प्रभावों की पहचान होनी चाहिए।"
+      },
+      "question": {
+        "en": "Why does rainfall alone not explain all vegetation differences?",
+        "hi": "केवल वर्षा से सभी वनस्पति अंतर क्यों नहीं समझते?"
+      }
+    },
+    {
+      "title": {
+        "en": "3. Tropical evergreen forests",
+        "hi": "3. उष्णकटिबंधीय सदाबहार वन"
+      },
+      "body": {
+        "en": "Tropical evergreen forests develop in hot, very wet environments with little prolonged dry season. In the textbook's broad classification, they are associated with annual rainfall above about 200 cm. Examples occur in parts of the Western Ghats, northeastern India and the Andaman–Nicobar islands. Dense, multilayered vegetation can make the ground relatively shaded. Trees of different species do not all shed leaves at one time, so the forest appears green through the year. Evergreen does not mean that an individual leaf never falls. Ebony, mahogany and rosewood are commonly discussed examples of valuable timber trees in this broad group, but species composition varies locally. High rainfall alone does not make every coastal strip an evergreen forest: soils, disturbance and land use also matter. In a drawing, show layers and differing tree heights rather than one uniform row of identical trunks. For a comparison answer, match rainfall conditions, leaf-shedding pattern and distribution against deciduous forests. Avoid claiming that dense forests are unused spaces; they support ecological processes and may be part of local communities' lives and livelihoods.",
+        "hi": "उष्णकटिबंधीय सदाबहार वन (Tropical Evergreen Forests) गर्म, बहुत नम वातावरण में विकसित होते हैं, जहाँ लंबी शुष्क ऋतु कम होती है। पाठ्यपुस्तक के व्यापक वर्गीकरण में इन्हें लगभग 200 cm से अधिक वार्षिक वर्षा से जोड़ा जाता है। पश्चिमी घाट के कुछ भाग, पूर्वोत्तर और अंडमान-निकोबार इसके उदाहरण हैं। घनी अनेक परतों वाली वनस्पति के कारण धरातल पर कम धूप पहुँच सकती है। अलग प्रजातियों के वृक्ष एक साथ सभी पत्तियाँ नहीं गिराते, इसलिए वन पूरे वर्ष हरा दिखाई देता है। सदाबहार का अर्थ यह नहीं कि एक पत्ती कभी नहीं गिरती। आबनूस, महोगनी और रोजवुड इस बड़े समूह में चर्चा किए जाने वाले काष्ठ वृक्ष हैं; वास्तविक प्रजातियाँ स्थान के अनुसार बदलती हैं। केवल अधिक वर्षा से हर तटीय पट्टी सदाबहार जंगल नहीं बन जाती। मिट्टी, व्यवधान और भूमि उपयोग भी महत्वपूर्ण हैं। चित्र में समान तनों की एक कतार के बजाय अलग ऊँचाई और कई परतें दिखाएँ। तुलना में वर्षा, पत्ती गिरने का क्रम और वितरण को पर्णपाती वन से मिलाएँ। घने वन को अनुपयोगी खाली स्थान न कहें। वह पारिस्थितिक प्रक्रियाओं तथा स्थानीय समुदायों के जीवन और आजीविका का आधार हो सकता है।"
+      },
+      "question": {
+        "en": "Does evergreen mean leaves never fall? Explain.",
+        "hi": "क्या सदाबहार का अर्थ पत्तियाँ कभी नहीं गिरतीं? समझाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "4. Tropical deciduous forests",
+        "hi": "4. उष्णकटिबंधीय पर्णपाती वन"
+      },
+      "body": {
+        "en": "Tropical deciduous forests are also called monsoon forests. Trees shed leaves for a period during the dry season, reducing water loss when moisture is limited. In the broad school classification, moist deciduous forests are associated with about 100–200 cm annual rainfall, and dry deciduous forests with about 70–100 cm. These boundaries are teaching ranges rather than sharp lines painted on the ground. Teak, sal, shisham and other species are discussed in different deciduous regions. Moisture, soil and local history affect which trees dominate. The same species name should not be used to identify an entire forest from a distant map alone. Parts of central and eastern India and the Himalayan foothills contain important deciduous environments. With clearing and grazing, forest may become more open and support grass or scrub; this is not necessarily its original state. A useful answer explains seasonal leaf shedding as an adaptation, not as proof that trees have died. Compare photographs taken in different seasons before deciding that a site has permanently lost all vegetation. Human disturbance must be investigated separately.",
+        "hi": "उष्णकटिबंधीय पर्णपाती वन (Tropical Deciduous Forests) मानसूनी वन भी कहलाते हैं। शुष्क ऋतु में कुछ समय पत्तियाँ गिराकर वृक्ष पानी की हानि घटाते हैं। इससे सीमित नमी में जीवित रहने में मदद मिलती है। विद्यालय के व्यापक वर्गीकरण में नम पर्णपाती वन लगभग 100–200 cm और शुष्क पर्णपाती वन लगभग 70–100 cm वार्षिक वर्षा से जुड़े हैं। ये शिक्षण की सीमाएँ हैं, जमीन पर खिंची एकदम स्पष्ट रेखाएँ नहीं। सागौन, साल, शीशम और अन्य वृक्ष अलग पर्णपाती क्षेत्रों में चर्चा किए जाते हैं। नमी, मिट्टी और क्षेत्र का इतिहास तय करते हैं कि कौन-से वृक्ष अधिक होंगे। दूर के मानचित्र में केवल एक प्रजाति के नाम से पूरे वन की पहचान नहीं की जा सकती। मध्य और पूर्वी भारत तथा हिमालय की तलहटी के भागों में महत्वपूर्ण पर्णपाती वातावरण हैं। कटाई और चराई से वन खुला होकर घास या झाड़ी वाला हो सकता है; यह आवश्यक नहीं कि यही मूल अवस्था थी। उत्तर में मौसमी पत्ती गिरना जल बचाने का अनुकूलन बताएँ, वृक्ष की मृत्यु का प्रमाण नहीं। अलग ऋतुओं की तस्वीर तुलना किए बिना यह न कहें कि वनस्पति हमेशा के लिए समाप्त हो गई। मानव व्यवधान का प्रमाण अलग जाँचना चाहिए।"
+      },
+      "question": {
+        "en": "How does seasonal leaf shedding help a tree?",
+        "hi": "मौसमी पत्ती गिरने से वृक्ष को क्या लाभ है?"
+      }
+    },
+    {
+      "title": {
+        "en": "5. Thorn forests and dry adaptations",
+        "hi": "5. काँटेदार वन और शुष्क अनुकूलन"
+      },
+      "body": {
+        "en": "Thorn forests and scrub occur in dry regions, broadly associated in the textbook with rainfall below 70 cm. Northwestern India provides familiar examples, including parts of Rajasthan and Gujarat. Scattered trees and bushes reduce competition for limited water. Long roots may reach deeper moisture, while small leaves or spines reduce the surface exposed to evaporation. Some plants store water in thick stems. These are different adaptations, so do not claim that every dry-region plant has exactly the same root or leaf. Acacia and other drought-tolerant plants form part of these communities. Sparse vegetation is still an ecosystem and can provide habitat and grazing resources. It should not automatically be described as useless land waiting to become a dense wet forest. Planting unsuitable water-demanding species may create new problems. For a careful explanation, connect an observable feature to its function: a smaller leaf surface can reduce water loss, while deep roots may access moisture below the dry surface. On the map, the dry-zone overlay is approximate and does not show every local irrigated field or riverbank habitat.",
+        "hi": "काँटेदार वन और झाड़ियाँ (Thorn Forests and Scrub) शुष्क क्षेत्रों में मिलते हैं। पाठ्यपुस्तक में इन्हें सामान्यतः 70 cm से कम वर्षा से जोड़ा जाता है। राजस्थान और गुजरात के कुछ उत्तर-पश्चिमी भाग परिचित उदाहरण हैं। बिखरे वृक्ष और झाड़ियाँ सीमित पानी के लिए प्रतिस्पर्धा कम करती हैं। लंबी जड़ें गहरी नमी तक पहुँच सकती हैं। छोटी पत्तियाँ या काँटे वाष्पीकरण के लिए खुली सतह घटाते हैं। कुछ पौधे मोटे तने में जल संग्रह करते हैं। ये अलग अनुकूलन हैं; हर शुष्क क्षेत्रीय पौधे की जड़ और पत्ती बिल्कुल समान नहीं होती। बबूल तथा अन्य सूखा सहने वाले पौधे इन समुदायों का भाग हैं। विरल वनस्पति भी पारितंत्र है और जीव आवास तथा चराई संसाधन देती है। उसे बेकार भूमि या घना नम जंगल बनाने की प्रतीक्षा करती जगह न समझें। अनुपयुक्त अधिक पानी माँगने वाली प्रजाति लगाने से नई समस्या बन सकती है। स्पष्ट कारण में दिखाई विशेषता और कार्य जोड़ें। छोटी पत्ती सतह पानी की हानि घटा सकती है और गहरी जड़ सूखी ऊपरी मिट्टी के नीचे नमी तक जा सकती है। मानचित्र की शुष्क परत लगभग क्षेत्र है; वह हर सिंचित खेत या नदी किनारे का स्थानीय आवास नहीं दिखाती।"
+      },
+      "question": {
+        "en": "Give two adaptations that can reduce water stress.",
+        "hi": "जल की कमी सहने वाले 2 अनुकूलन लिखें।"
+      }
+    },
+    {
+      "title": {
+        "en": "6. Montane vegetation and mangroves",
+        "hi": "6. पर्वतीय वनस्पति और मैंग्रोव"
+      },
+      "body": {
+        "en": "On mountains, vegetation changes with altitude as temperature and growing conditions change. Lower slopes can support broadleaved forests, higher zones often contain conifers, and still higher areas may support alpine grasslands and shrubs before vegetation becomes sparse near the snowline. Exact elevations vary by latitude, slope and exposure; one fixed number cannot describe every mountain. Conical shapes and needle-like leaves are familiar conifer features, but not every mountain tree is a conifer. Mangroves belong to a very different setting: tidal coasts and estuarine or delta environments. Their plants tolerate waterlogged, often saline conditions, with specialised roots in some species. The Sundarbans of the Ganga–Brahmaputra delta are a major example. Mangroves help support fish nurseries, shoreline ecosystems and coastal protection, although they cannot prevent every storm impact. Do not place them high in the Himalayas or treat every coastal tree as a mangrove. Compare the environmental challenge first: cold and short growing season at high altitude versus tidal flooding and salinity near the coast. Then connect plant adaptations to each setting.",
+        "hi": "पर्वत पर ऊँचाई के साथ तापमान और वृद्धि की दशाएँ बदलने से वनस्पति बदलती है। नीचे की ढाल पर चौड़ी पत्ती वाले वन, ऊपर शंकुधारी वन और उससे ऊँचे भाग में अल्पाइन घास तथा झाड़ियाँ मिल सकती हैं। हिमरेखा के निकट वनस्पति विरल हो जाती है। वास्तविक ऊँचाई अक्षांश, ढाल और खुलाव से बदलती है; एक संख्या हर पर्वत पर लागू नहीं होती। शंक्वाकार रूप और सुई जैसी पत्तियाँ शंकुधारी वृक्षों की परिचित विशेषताएँ हैं, लेकिन हर पर्वतीय वृक्ष शंकुधारी नहीं। मैंग्रोव (Mangroves) बिल्कुल अलग वातावरण में होते हैं: ज्वारीय तट, नदी मुहाने और डेल्टा। इनमें जलमग्न तथा अक्सर खारी दशाएँ सहने वाले पौधे मिलते हैं। कुछ प्रजातियों में विशेष जड़ें होती हैं। गंगा-ब्रह्मपुत्र डेल्टा का सुंदरबन प्रमुख उदाहरण है। मैंग्रोव मछलियों के शिशु आवास, तटीय पारितंत्र और तट सुरक्षा में योगदान देते हैं, पर हर तूफान का नुकसान पूरी तरह रोक नहीं सकते। इन्हें ऊँचे हिमालय में न दिखाएँ और हर तटीय पेड़ को मैंग्रोव न कहें। पहले पर्यावरण की चुनौती तुलना करें: ऊँचाई पर ठंड और छोटी वृद्धि ऋतु, जबकि तट पर ज्वार तथा लवणता। फिर पौधों का अनुकूलन इन दशाओं से जोड़ें।"
+      },
+      "question": {
+        "en": "Why are mangroves associated with tidal coasts?",
+        "hi": "मैंग्रोव ज्वारीय तटों से क्यों जुड़े हैं?"
+      }
+    },
+    {
+      "title": {
+        "en": "7. Wildlife and conservation",
+        "hi": "7. वन्य जीव और संरक्षण"
+      },
+      "body": {
+        "en": "Plants and animals depend on one another and on soil, water and climate within ecosystems. Removing a habitat can affect many organisms even if only one species is the focus of attention. Habitat loss, fragmentation, pollution, poaching and inappropriate exploitation threaten wildlife. Conservation includes protecting habitats, reducing harmful activities and involving communities, not only keeping individual animals in enclosures. National parks, wildlife sanctuaries and biosphere reserves have different legal and management arrangements; their names are not interchangeable labels for any wooded place. Corbett, Kaziranga, Gir and other protected areas are useful map examples, but they protect varied ecosystems rather than identical forests. A species can have a limited distribution and still require habitat outside a park boundary. Wildlife corridors help explain why isolated protected islands may be insufficient. Never collect eggs, chase animals or enter restricted areas for a school task. Observe responsibly from permitted places. An exam answer should connect a threat with a suitable response, such as reducing habitat fragmentation through connected conservation planning, rather than offering tree planting as the sole solution to every biodiversity problem.",
+        "hi": "पारितंत्र (Ecosystem) में पौधे और पशु एक-दूसरे तथा मिट्टी, पानी और जलवायु पर निर्भर होते हैं। आवास हटने पर कई जीव प्रभावित होते हैं, भले चर्चा केवल एक प्रजाति की हो। आवास नाश, विखंडन, प्रदूषण, अवैध शिकार और अनुचित दोहन वन्य जीवों को खतरा देते हैं। संरक्षण का अर्थ केवल किसी जीव को बाड़े में रखना नहीं। आवास बचाना, हानिकारक काम घटाना और समुदायों को शामिल करना भी आवश्यक है। राष्ट्रीय उद्यान, वन्य जीव अभयारण्य तथा जैवमंडल आरक्षित क्षेत्र की कानूनी और प्रबंधन व्यवस्था अलग होती है। किसी भी पेड़ वाले स्थान के लिए ये नाम परस्पर नहीं लगाए जा सकते। कॉर्बेट, काजीरंगा और गिर मानचित्र के उपयोगी उदाहरण हैं, लेकिन उनके पारितंत्र समान नहीं। सीमित वितरण वाली प्रजाति को उद्यान के बाहर भी आवास चाहिए हो सकता है। वन्य जीव गलियारे बताते हैं कि अलग-थलग संरक्षित टापू पर्याप्त क्यों नहीं होते। स्कूल कार्य में अंडे न उठाएँ, जानवर का पीछा न करें और प्रतिबंधित क्षेत्र में न जाएँ। अनुमत स्थान से जिम्मेदारी से देखें। परीक्षा में खतरे और उपयुक्त समाधान को जोड़ें। आवास विखंडन के लिए जुड़े संरक्षण क्षेत्र का तर्क दें। हर जैव विविधता समस्या का एकमात्र समाधान वृक्षारोपण लिखना अधूरा है।"
+      },
+      "question": {
+        "en": "Why must conservation protect habitats as well as individual animals?",
+        "hi": "संरक्षण में जीव के साथ आवास बचाना क्यों जरूरी है?"
+      }
+    },
+    {
+      "title": {
+        "en": "8. Evidence, maps and revision",
+        "hi": "8. प्रमाण, मानचित्र और पुनरावृत्ति"
+      },
+      "body": {
+        "en": "Make a revision table with vegetation type, moisture conditions, distribution and adaptation. Compare evergreen and deciduous forests using the same headings, then contrast thorn vegetation with montane vegetation through environmental stress. On an outline map, locate example regions rather than colouring every area of a state identically. Protected-area points in this lesson indicate locations, not their exact legal boundaries. A current forest-cover percentage needs a named survey and year; this chapter deliberately avoids presenting old species counts or reserve totals as present-day statistics. In an observation task, record what you can actually see, such as leaf shape, spacing and shade. Do not infer an entire ecosystem from one garden plant. For a reasoning answer, use because: small leaves can reduce water loss because less surface is exposed. For conservation, identify both the pressure and the proposed action. Finally ask how a change in water, fire or land use might alter the local community. This approach turns memorised vegetation names into a geographical explanation of living systems and responsible human decisions.",
+        "hi": "पुनरावृत्ति तालिका में वनस्पति प्रकार, नमी, वितरण और अनुकूलन लिखें। समान शीर्षकों पर सदाबहार तथा पर्णपाती वन तुलना करें। फिर शुष्क और पर्वतीय वनस्पति को उनकी पर्यावरणीय चुनौती से अलग करें। खाली मानचित्र में उदाहरण क्षेत्र दिखाएँ; राज्य का हर भाग एक रंग से भरकर समान वन होने का संकेत न दें। इस पाठ के संरक्षित क्षेत्र बिंदु केवल स्थिति बताते हैं, उनकी सटीक कानूनी सीमा नहीं। वर्तमान वनावरण प्रतिशत के लिए सर्वेक्षण का नाम और वर्ष चाहिए। इसलिए पुराने प्रजाति आँकड़े या आरक्षित क्षेत्रों की पुरानी संख्या को वर्तमान तथ्य की तरह यहाँ नहीं दिया गया है। निरीक्षण में वास्तव में दिखाई पत्ती, दूरी और छाया लिखें। बगीचे के एक पौधे से पूरा पारितंत्र न पहचानें। कारण उत्तर में क्योंकि जोड़ें: छोटी पत्ती खुली सतह घटने से जल हानि कम कर सकती है। संरक्षण में दबाव और उपाय दोनों बताएँ। अंत में सोचें कि पानी, आग या भूमि उपयोग बदलने से स्थानीय जीव समुदाय कैसे बदलेगा। इससे केवल वनस्पति नाम याद करने के बजाय जीवित व्यवस्था और जिम्मेदार मानव निर्णय की भौगोलिक समझ बनती है। उत्तर को उदाहरण से जाँचें और जरूरत हो तो अपने मानचित्र का लेबल सुधारें।"
+      },
+      "question": {
+        "en": "Why must a forest-cover figure include a survey year?",
+        "hi": "वनावरण आँकड़े के साथ सर्वेक्षण वर्ष क्यों जरूरी है?"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which term refers to regional plants?",
+        "hi": "क्षेत्रीय पौधों का शब्द कौन-सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Flora",
+            "hi": "फ्लोरा"
+          },
+          "reason": {
+            "en": "Flora refers to plants.",
+            "hi": "फ्लोरा पौधों को कहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Fauna",
+            "hi": "फौना"
+          },
+          "reason": {
+            "en": "Fauna refers to animals.",
+            "hi": "फौना पशुओं को कहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Discharge",
+            "hi": "निस्सरण"
+          },
+          "reason": {
+            "en": "This describes water flow rate.",
+            "hi": "यह जल प्रवाह दर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Plateau",
+            "hi": "पठार"
+          },
+          "reason": {
+            "en": "This is a landform.",
+            "hi": "यह स्थलरूप है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why do deciduous trees shed leaves?",
+        "hi": "पर्णपाती वृक्ष पत्तियाँ क्यों गिराते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "To prove the forest is dead",
+            "hi": "वन मृत सिद्ध करने के लिए"
+          },
+          "reason": {
+            "en": "Seasonal shedding does not imply death.",
+            "hi": "मौसमी पत्ती गिरना मृत्यु नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "To reduce dry-season water loss",
+            "hi": "शुष्क ऋतु में जल हानि घटाने के लिए"
+          },
+          "reason": {
+            "en": "Less leaf area reduces transpiration demand.",
+            "hi": "कम पत्ती क्षेत्र जल माँग घटाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Because roots cease to exist",
+            "hi": "जड़ें समाप्त होने से"
+          },
+          "reason": {
+            "en": "Living roots remain.",
+            "hi": "जीवित जड़ें रहती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only because snow covers every forest",
+            "hi": "हर वन में बर्फ के कारण"
+          },
+          "reason": {
+            "en": "Tropical deciduous forests need not be snowy.",
+            "hi": "उष्णकटिबंधीय पर्णपाती वन में बर्फ आवश्यक नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which setting favours mangroves?",
+        "hi": "मैंग्रोव का अनुकूल वातावरण कौन-सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "High snowy summit",
+            "hi": "ऊँचा बर्फीला शिखर"
+          },
+          "reason": {
+            "en": "This is not a tidal setting.",
+            "hi": "यह ज्वारीय वातावरण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Dry inland dune only",
+            "hi": "केवल शुष्क भीतरी टीला"
+          },
+          "reason": {
+            "en": "Saline tidal wetlands differ.",
+            "hi": "ज्वारीय खारे नम क्षेत्र अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Tidal delta coast",
+            "hi": "ज्वारीय डेल्टा तट"
+          },
+          "reason": {
+            "en": "Mangroves tolerate waterlogged coastal conditions.",
+            "hi": "मैंग्रोव तटीय जलमग्न दशाएँ सहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cultivated wheat field",
+            "hi": "बोया गेहूँ खेत"
+          },
+          "reason": {
+            "en": "This is managed agriculture.",
+            "hi": "यह कृषि है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which helps a dry-region plant?",
+        "hi": "शुष्क क्षेत्रीय पौधे में क्या मदद करता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Every leaf becoming enormous",
+            "hi": "हर पत्ती बहुत बड़ी होना"
+          },
+          "reason": {
+            "en": "Large exposed area can increase water loss.",
+            "hi": "बड़ी खुली सतह जल हानि बढ़ा सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No access to any moisture",
+            "hi": "नमी तक कोई पहुँच नहीं"
+          },
+          "reason": {
+            "en": "Living plants need water.",
+            "hi": "जीवित पौधों को पानी चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Removing all roots",
+            "hi": "सभी जड़ें हटाना"
+          },
+          "reason": {
+            "en": "Roots supply water.",
+            "hi": "जड़ें पानी देती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Deep roots and small leaves",
+            "hi": "गहरी जड़ें और छोटी पत्तियाँ"
+          },
+          "reason": {
+            "en": "These can improve water access and reduce loss.",
+            "hi": "इनसे नमी की पहुँच और कम हानि संभव है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "What does evergreen mean?",
+        "hi": "सदाबहार का अर्थ क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The forest remains green through the year",
+            "hi": "वन वर्ष भर हरा दिखता है"
+          },
+          "reason": {
+            "en": "Different trees replace leaves at different times.",
+            "hi": "वृक्ष अलग समय पर पत्तियाँ बदलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No leaf ever falls",
+            "hi": "कोई पत्ती कभी नहीं गिरती"
+          },
+          "reason": {
+            "en": "Individual leaves do fall.",
+            "hi": "अलग पत्तियाँ गिरती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No animals live there",
+            "hi": "वहाँ जीव नहीं रहते"
+          },
+          "reason": {
+            "en": "Forests support fauna.",
+            "hi": "वन जीवों का आधार हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only one tree species exists",
+            "hi": "केवल एक वृक्ष प्रजाति है"
+          },
+          "reason": {
+            "en": "Natural evergreen forests can be diverse.",
+            "hi": "प्राकृतिक सदाबहार वन विविध हो सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why does mountain vegetation change upward?",
+        "hi": "पर्वत पर ऊपर वनस्पति क्यों बदलती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Political borders always change",
+            "hi": "राजनीतिक सीमा हमेशा बदलती है"
+          },
+          "reason": {
+            "en": "The direct control is environmental.",
+            "hi": "सीधा नियंत्रक पर्यावरण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Temperature and growing conditions change",
+            "hi": "तापमान और वृद्धि दशाएँ बदलती हैं"
+          },
+          "reason": {
+            "en": "Altitude changes the habitat.",
+            "hi": "ऊँचाई आवास बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Maps create new plants",
+            "hi": "नक्शे पौधे बनाते हैं"
+          },
+          "reason": {
+            "en": "Maps represent conditions.",
+            "hi": "नक्शे दशाएँ दर्शाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All soil disappears at sea level",
+            "hi": "समुद्र तल पर सारी मिट्टी गायब है"
+          },
+          "reason": {
+            "en": "This is false.",
+            "hi": "यह गलत है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which is a conservation measure?",
+        "hi": "संरक्षण का उपाय कौन-सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Collecting wild eggs",
+            "hi": "जंगली अंडे उठाना"
+          },
+          "reason": {
+            "en": "This harms wildlife.",
+            "hi": "इससे वन्य जीवों को नुकसान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Breaking habitats into isolated pieces",
+            "hi": "आवास को अलग टुकड़ों में तोड़ना"
+          },
+          "reason": {
+            "en": "Fragmentation is a threat.",
+            "hi": "विखंडन खतरा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Protecting connected habitats",
+            "hi": "जुड़े आवास बचाना"
+          },
+          "reason": {
+            "en": "Connectivity supports movement and survival.",
+            "hi": "जुड़ाव आवागमन तथा अस्तित्व में मदद देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Dumping waste into wetlands",
+            "hi": "आर्द्रभूमि में कचरा डालना"
+          },
+          "reason": {
+            "en": "This damages habitat.",
+            "hi": "इससे आवास खराब होता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which statement about a vegetation map is careful?",
+        "hi": "वनस्पति मानचित्र के बारे में सावधान कथन क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Every square metre of a marked state is forest",
+            "hi": "चिह्नित राज्य का हर भाग वन है"
+          },
+          "reason": {
+            "en": "Land uses vary within regions.",
+            "hi": "क्षेत्र के भीतर उपयोग बदलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Old species totals are always current",
+            "hi": "पुराने आँकड़े हमेशा वर्तमान हैं"
+          },
+          "reason": {
+            "en": "Counts require a dated source.",
+            "hi": "गणना के लिए दिनांकित स्रोत चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "One garden tree identifies an entire ecosystem",
+            "hi": "एक बगीचे का पेड़ पूरा पारितंत्र बताता है"
+          },
+          "reason": {
+            "en": "Wider evidence is needed.",
+            "hi": "अधिक प्रमाण चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Broad zones simplify local variation",
+            "hi": "बड़े क्षेत्र स्थानीय अंतर सरल करते हैं"
+          },
+          "reason": {
+            "en": "This states the map limitation honestly.",
+            "hi": "यह मानचित्र की सीमा सही बताता है।"
+          }
+        }
+      ],
+      "correct": 3
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "Differentiate flora and fauna.",
+        "hi": "फ्लोरा और फौना अलग करें।"
+      },
+      "answer": {
+        "en": "Flora means plants of a region; fauna means its animals.",
+        "hi": "फ्लोरा क्षेत्र के पौधे और फौना उसके पशु हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Name five broad vegetation types.",
+        "hi": "5 बड़े वनस्पति प्रकार लिखें।"
+      },
+      "answer": {
+        "en": "Tropical evergreen, tropical deciduous, thorn and scrub, montane, and mangrove vegetation.",
+        "hi": "उष्णकटिबंधीय सदाबहार, पर्णपाती, काँटेदार-झाड़ी, पर्वतीय और मैंग्रोव वनस्पति।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are forests not only timber resources?",
+        "hi": "वन केवल लकड़ी संसाधन क्यों नहीं?"
+      },
+      "answer": {
+        "en": "They support habitats, soil and water processes and community livelihoods; timber is only one role.",
+        "hi": "वे आवास, मिट्टी-जल प्रक्रियाएँ और सामुदायिक आजीविका देते हैं; लकड़ी केवल एक भूमिका है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give two threats and responses.",
+        "hi": "2 खतरे और उपाय दें।"
+      },
+      "answer": {
+        "en": "Habitat loss needs habitat protection and planning; poaching needs enforcement and community-supported conservation.",
+        "hi": "आवास नाश के लिए संरक्षण-योजना और अवैध शिकार के लिए कानून तथा समुदाय आधारित संरक्षण चाहिए।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is a plantation not automatically a natural forest?",
+        "hi": "बागान अपने-आप प्राकृतिक वन क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "It is deliberately planted and may have few species, whereas natural communities develop through ecological processes.",
+        "hi": "उसे जानबूझकर लगाया जाता है और प्रजातियाँ कम हो सकती हैं; प्राकृतिक समुदाय पारिस्थितिक प्रक्रियाओं से विकसित होते हैं।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "title": {
+        "en": "Read an adaptation",
+        "hi": "अनुकूलन पढ़ें"
+      },
+      "question": {
+        "en": "A plant has small leaves and deep roots in a dry region. Explain.",
+        "hi": "शुष्क क्षेत्र के पौधे में छोटी पत्ती और गहरी जड़ है। समझाएँ।"
+      },
+      "steps": [
+        {
+          "en": "Identify limited moisture.",
+          "hi": "सीमित नमी पहचानें।"
+        },
+        {
+          "en": "Connect roots to access and leaves to loss.",
+          "hi": "जड़ को पहुँच और पत्ती को हानि से जोड़ें।"
+        }
+      ],
+      "answer": {
+        "en": "Deep roots can reach moisture; smaller leaves reduce exposed surface and water loss.",
+        "hi": "गहरी जड़ नमी तक पहुँच सकती है; छोटी पत्ती खुली सतह और जल हानि घटाती है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Compare like with like",
+        "hi": "समान आधार पर तुलना"
+      },
+      "question": {
+        "en": "Compare evergreen and deciduous forests in two points.",
+        "hi": "सदाबहार और पर्णपाती वन की 2 बिंदुओं में तुलना करें।"
+      },
+      "steps": [
+        {
+          "en": "Use moisture conditions as one heading.",
+          "hi": "एक आधार नमी रखें।"
+        },
+        {
+          "en": "Use leaf-shedding pattern as another.",
+          "hi": "दूसरा आधार पत्ती गिरना रखें।"
+        }
+      ],
+      "answer": {
+        "en": "Evergreen forests have persistently moist conditions and no common leafless season; deciduous forests have a dry-season shedding period.",
+        "hi": "सदाबहार में लगातार नम दशाएँ और साझा पर्णहीन ऋतु नहीं; पर्णपाती में शुष्क ऋतु में पत्तियाँ गिरती हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Evaluate a conservation claim",
+        "hi": "संरक्षण दावा जाँचें"
+      },
+      "question": {
+        "en": "Will planting one species everywhere solve habitat loss?",
+        "hi": "हर जगह एक प्रजाति लगाने से आवास नाश हल होगा?"
+      },
+      "steps": [
+        {
+          "en": "Different habitats support different organisms.",
+          "hi": "अलग आवास अलग जीवों का आधार हैं।"
+        },
+        {
+          "en": "Match restoration to local ecology and pressures.",
+          "hi": "पुनर्स्थापन स्थानीय पारिस्थितिकी और दबाव से मिलाएँ।"
+        }
+      ],
+      "answer": {
+        "en": "No. Conservation must protect suitable diverse habitats and address the actual threats.",
+        "hi": "नहीं। संरक्षण में उपयुक्त विविध आवास और वास्तविक खतरे दोनों देखना जरूरी है।"
+      }
+    }
+  ],
+  "mapQuestions": [
+    {
+      "question": {
+        "en": "Mark one evergreen example region and one thorn region.",
+        "hi": "एक सदाबहार और एक काँटेदार क्षेत्र दिखाएँ।"
+      },
+      "answer": {
+        "en": "Use a wet Western Ghats example and dry western Rajasthan; labels show broad environments, not exact forest borders.",
+        "hi": "नम पश्चिमी घाट और शुष्क पश्चिमी राजस्थान उदाहरण लें; चिह्न बड़े वातावरण हैं, सटीक वन सीमा नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Locate Corbett and Kaziranga and name their states.",
+        "hi": "कॉर्बेट और काजीरंगा दिखाकर राज्य लिखें।"
+      },
+      "answer": {
+        "en": "Corbett is in Uttarakhand; Kaziranga is in Assam.",
+        "hi": "कॉर्बेट उत्तराखंड और काजीरंगा असम में है।"
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "western-evergreen",
+      "title": {
+        "en": "Western Ghats evergreen example",
+        "hi": "पश्चिमी घाट सदाबहार उदाहरण"
+      },
+      "kind": "place",
+      "info": {
+        "en": "Wet windward slopes support evergreen environments in some areas.",
+        "hi": "कुछ नम पवनाभिमुख ढालों पर सदाबहार वातावरण।"
+      },
+      "location": [
+        75.2,
+        12.8
+      ]
+    },
+    {
+      "id": "northeast-evergreen",
+      "title": {
+        "en": "Northeastern wet forests",
+        "hi": "पूर्वोत्तर नम वन"
+      },
+      "kind": "place",
+      "info": {
+        "en": "High moisture supports diverse wet forests; local variation remains.",
+        "hi": "अधिक नमी विविध नम वन का आधार; स्थानीय अंतर बने हैं।"
+      },
+      "location": [
+        94,
+        27
+      ]
+    },
+    {
+      "id": "central-deciduous",
+      "title": {
+        "en": "Central Indian deciduous belt",
+        "hi": "मध्य भारतीय पर्णपाती पट्टी"
+      },
+      "kind": "place",
+      "info": {
+        "en": "Seasonal dry periods favour deciduous communities.",
+        "hi": "मौसमी शुष्क अवधि पर्णपाती समुदायों से जुड़ी है।"
+      },
+      "location": [
+        79,
+        22
+      ]
+    },
+    {
+      "id": "rajasthan-thorn",
+      "title": {
+        "en": "Rajasthan thorn vegetation",
+        "hi": "राजस्थान काँटेदार वनस्पति"
+      },
+      "kind": "place",
+      "info": {
+        "en": "Drought-tolerant trees and scrub in dry environments.",
+        "hi": "शुष्क दशाओं में सूखा सहने वाले वृक्ष और झाड़ियाँ।"
+      },
+      "location": [
+        72,
+        27
+      ]
+    },
+    {
+      "id": "himalayan-montane",
+      "title": {
+        "en": "Himalayan montane belt",
+        "hi": "हिमालयी पर्वतीय पट्टी"
+      },
+      "kind": "range",
+      "info": {
+        "en": "Vegetation changes with altitude; line is approximate.",
+        "hi": "ऊँचाई के साथ वनस्पति बदलती है; रेखा लगभग है।"
+      },
+      "points": [
+        [
+          76,
+          33
+        ],
+        [
+          80,
+          30
+        ],
+        [
+          85,
+          28
+        ],
+        [
+          91,
+          28
+        ]
+      ]
+    },
+    {
+      "id": "sundarbans",
+      "title": {
+        "en": "Sundarbans mangroves",
+        "hi": "सुंदरबन मैंग्रोव"
+      },
+      "kind": "place",
+      "info": {
+        "en": "Tidal Ganga–Brahmaputra delta environment.",
+        "hi": "ज्वारीय गंगा-ब्रह्मपुत्र डेल्टा वातावरण।"
+      },
+      "location": [
+        88.7,
+        21.9
+      ]
+    },
+    {
+      "id": "corbett",
+      "title": {
+        "en": "Corbett National Park",
+        "hi": "कॉर्बेट राष्ट्रीय उद्यान"
+      },
+      "kind": "place",
+      "info": {
+        "en": "Protected-area location point, not boundary.",
+        "hi": "संरक्षित क्षेत्र का स्थिति बिंदु, सीमा नहीं।"
+      },
+      "location": [
+        78.8,
+        29.5
+      ]
+    },
+    {
+      "id": "kaziranga",
+      "title": {
+        "en": "Kaziranga National Park",
+        "hi": "काजीरंगा राष्ट्रीय उद्यान"
+      },
+      "kind": "place",
+      "info": {
+        "en": "Assam floodplain habitats; point is approximate.",
+        "hi": "असम के बाढ़ मैदान आवास; बिंदु लगभग है।"
+      },
+      "location": [
+        93.2,
+        26.6
+      ]
+    },
+    {
+      "id": "gir",
+      "title": {
+        "en": "Gir",
+        "hi": "गिर"
+      },
+      "kind": "place",
+      "info": {
+        "en": "Gujarat protected landscape associated with Asiatic lions.",
+        "hi": "एशियाई सिंह से जुड़ा गुजरात का संरक्षित परिदृश्य।"
+      },
+      "location": [
+        70.8,
+        21.1
+      ]
+    },
+    {
+      "id": "kanha",
+      "title": {
+        "en": "Kanha National Park",
+        "hi": "कान्हा राष्ट्रीय उद्यान"
+      },
+      "kind": "place",
+      "info": {
+        "en": "Central Indian protected landscape.",
+        "hi": "मध्य भारत का संरक्षित परिदृश्य।"
+      },
+      "location": [
+        80.6,
+        22.3
+      ]
+    }
+  ],
+  "why": {
+    "en": "Vegetation reflects climate, soil and relief, while human choices shape habitat continuity and biodiversity.",
+    "hi": "वनस्पति जलवायु, मिट्टी और धरातल से जुड़ी है; मानव निर्णय आवास के जुड़ाव तथा जैव विविधता को बदलते हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT ePathshala — Contemporary India I, Chapter 5",
+      "url": "https://epathshala.nic.in/topicc.php?id=0968CH05"
+    }
+  ],
+  "scopeNote": {
+    "en": "Original study explanations for the requested legacy NCERT sequence. Physical overlays are approximate educational guides; consult an atlas for exact routes and boundaries.",
+    "hi": "माँगे गए पुराने NCERT क्रम के लिए मौलिक अध्ययन व्याख्याएँ। भौतिक परतें लगभग शिक्षण संकेत हैं; सटीक मार्ग और सीमाएँ एटलस में देखें।"
+  },
+  "mapLayers": [
+    {
+      "id": "evergreen",
+      "title": {
+        "en": "Tropical evergreen",
+        "hi": "उष्णकटिबंधीय सदाबहार"
+      },
+      "features": [
+        {
+          "id": "evergreen-zone",
+          "title": {
+            "en": "Wet western slope · schematic",
+            "hi": "नम पश्चिमी ढाल · सांकेतिक"
+          },
+          "kind": "zone",
+          "info": {
+            "en": "Illustrative wet-zone strip, not measured forest-cover boundary.",
+            "hi": "नम क्षेत्र की शिक्षण पट्टी, मापी वनावरण सीमा नहीं।"
+          },
+          "points": [
+            [
+              73.5,
+              16
+            ],
+            [
+              74.5,
+              16
+            ],
+            [
+              76.5,
+              10
+            ],
+            [
+              75.5,
+              10
+            ],
+            [
+              73.5,
+              16
+            ]
+          ],
+          "color": "#1d8c65"
+        },
+        {
+          "id": "western-evergreen",
+          "title": {
+            "en": "Western Ghats evergreen example",
+            "hi": "पश्चिमी घाट सदाबहार उदाहरण"
+          },
+          "kind": "place",
+          "info": {
+            "en": "Wet windward slopes support evergreen environments in some areas.",
+            "hi": "कुछ नम पवनाभिमुख ढालों पर सदाबहार वातावरण।"
+          },
+          "location": [
+            75.2,
+            12.8
+          ]
+        },
+        {
+          "id": "northeast-evergreen",
+          "title": {
+            "en": "Northeastern wet forests",
+            "hi": "पूर्वोत्तर नम वन"
+          },
+          "kind": "place",
+          "info": {
+            "en": "High moisture supports diverse wet forests; local variation remains.",
+            "hi": "अधिक नमी विविध नम वन का आधार; स्थानीय अंतर बने हैं।"
+          },
+          "location": [
+            94,
+            27
+          ]
+        }
+      ],
+      "replaceBase": true
+    },
+    {
+      "id": "deciduous",
+      "title": {
+        "en": "Tropical deciduous",
+        "hi": "उष्णकटिबंधीय पर्णपाती"
+      },
+      "features": [
+        {
+          "id": "deciduous-zone",
+          "title": {
+            "en": "Central seasonal forest zone · schematic",
+            "hi": "मध्य मौसमी वन क्षेत्र · सांकेतिक"
+          },
+          "kind": "zone",
+          "info": {
+            "en": "Broad teaching region; farms, settlements and other covers occur within it.",
+            "hi": "बड़ा शिक्षण क्षेत्र; भीतर खेत, बस्ती और अन्य आवरण भी हैं।"
+          },
+          "points": [
+            [
+              77,
+              24
+            ],
+            [
+              84,
+              24
+            ],
+            [
+              85,
+              20
+            ],
+            [
+              78,
+              18
+            ],
+            [
+              77,
+              24
+            ]
+          ],
+          "color": "#88a847"
+        },
+        {
+          "id": "central-deciduous",
+          "title": {
+            "en": "Central Indian deciduous belt",
+            "hi": "मध्य भारतीय पर्णपाती पट्टी"
+          },
+          "kind": "place",
+          "info": {
+            "en": "Seasonal dry periods favour deciduous communities.",
+            "hi": "मौसमी शुष्क अवधि पर्णपाती समुदायों से जुड़ी है।"
+          },
+          "location": [
+            79,
+            22
+          ]
+        },
+        {
+          "id": "kanha",
+          "title": {
+            "en": "Kanha National Park",
+            "hi": "कान्हा राष्ट्रीय उद्यान"
+          },
+          "kind": "place",
+          "info": {
+            "en": "Central Indian protected landscape.",
+            "hi": "मध्य भारत का संरक्षित परिदृश्य।"
+          },
+          "location": [
+            80.6,
+            22.3
+          ]
+        }
+      ],
+      "replaceBase": true
+    },
+    {
+      "id": "thorn",
+      "title": {
+        "en": "Thorn and scrub",
+        "hi": "काँटेदार वन और झाड़ी"
+      },
+      "features": [
+        {
+          "id": "thorn-zone",
+          "title": {
+            "en": "Dry northwest · schematic",
+            "hi": "शुष्क उत्तर-पश्चिम · सांकेतिक"
+          },
+          "kind": "zone",
+          "info": {
+            "en": "Approximate dry environment, not exact vegetation boundary.",
+            "hi": "लगभग शुष्क वातावरण, सटीक वनस्पति सीमा नहीं।"
+          },
+          "points": [
+            [
+              70,
+              28
+            ],
+            [
+              74,
+              29
+            ],
+            [
+              75,
+              25
+            ],
+            [
+              71,
+              23
+            ],
+            [
+              70,
+              28
+            ]
+          ],
+          "color": "#baa16a"
+        },
+        {
+          "id": "rajasthan-thorn",
+          "title": {
+            "en": "Rajasthan thorn vegetation",
+            "hi": "राजस्थान काँटेदार वनस्पति"
+          },
+          "kind": "place",
+          "info": {
+            "en": "Drought-tolerant trees and scrub in dry environments.",
+            "hi": "शुष्क दशाओं में सूखा सहने वाले वृक्ष और झाड़ियाँ।"
+          },
+          "location": [
+            72,
+            27
+          ]
+        },
+        {
+          "id": "gir",
+          "title": {
+            "en": "Gir",
+            "hi": "गिर"
+          },
+          "kind": "place",
+          "info": {
+            "en": "Gujarat protected landscape associated with Asiatic lions.",
+            "hi": "एशियाई सिंह से जुड़ा गुजरात का संरक्षित परिदृश्य।"
+          },
+          "location": [
+            70.8,
+            21.1
+          ]
+        }
+      ],
+      "replaceBase": true
+    },
+    {
+      "id": "montane",
+      "title": {
+        "en": "Montane vegetation",
+        "hi": "पर्वतीय वनस्पति"
+      },
+      "features": [
+        {
+          "id": "himalayan-montane",
+          "title": {
+            "en": "Himalayan montane belt",
+            "hi": "हिमालयी पर्वतीय पट्टी"
+          },
+          "kind": "range",
+          "info": {
+            "en": "Vegetation changes with altitude; line is approximate.",
+            "hi": "ऊँचाई के साथ वनस्पति बदलती है; रेखा लगभग है।"
+          },
+          "points": [
+            [
+              76,
+              33
+            ],
+            [
+              80,
+              30
+            ],
+            [
+              85,
+              28
+            ],
+            [
+              91,
+              28
+            ]
+          ]
+        },
+        {
+          "id": "corbett",
+          "title": {
+            "en": "Corbett National Park",
+            "hi": "कॉर्बेट राष्ट्रीय उद्यान"
+          },
+          "kind": "place",
+          "info": {
+            "en": "Protected-area location point, not boundary.",
+            "hi": "संरक्षित क्षेत्र का स्थिति बिंदु, सीमा नहीं।"
+          },
+          "location": [
+            78.8,
+            29.5
+          ]
+        }
+      ],
+      "replaceBase": true
+    },
+    {
+      "id": "mangrove",
+      "title": {
+        "en": "Mangrove and tidal coast",
+        "hi": "मैंग्रोव और ज्वारीय तट"
+      },
+      "features": [
+        {
+          "id": "mangrove-zone",
+          "title": {
+            "en": "Sundarbans tidal zone · schematic",
+            "hi": "सुंदरबन ज्वारीय क्षेत्र · सांकेतिक"
+          },
+          "kind": "zone",
+          "info": {
+            "en": "Small illustrative delta patch; not a legal forest boundary.",
+            "hi": "छोटा शिक्षण डेल्टा भाग; कानूनी वन सीमा नहीं।"
+          },
+          "points": [
+            [
+              88,
+              22.5
+            ],
+            [
+              89.5,
+              22.5
+            ],
+            [
+              89.5,
+              21.5
+            ],
+            [
+              88,
+              21.5
+            ],
+            [
+              88,
+              22.5
+            ]
+          ],
+          "color": "#2b9f94"
+        },
+        {
+          "id": "sundarbans",
+          "title": {
+            "en": "Sundarbans mangroves",
+            "hi": "सुंदरबन मैंग्रोव"
+          },
+          "kind": "place",
+          "info": {
+            "en": "Tidal Ganga–Brahmaputra delta environment.",
+            "hi": "ज्वारीय गंगा-ब्रह्मपुत्र डेल्टा वातावरण।"
+          },
+          "location": [
+            88.7,
+            21.9
+          ]
+        }
+      ],
+      "replaceBase": true
+    }
+  ]
+}

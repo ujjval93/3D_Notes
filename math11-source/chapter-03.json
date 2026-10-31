@@ -1,0 +1,872 @@
+{
+  "id": 3,
+  "title": {
+    "en": "Trigonometric Functions",
+    "hi": "त्रिकोणमितीय फलन"
+  },
+  "goal": {
+    "en": "Connect directed angles, unit-circle coordinates, identities and complete solution sets.",
+    "hi": "दिष्ट कोण,इकाई वृत्त निर्देशांक,सर्वसमिकाएँ तथा पूर्ण हल समुच्चय जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Angles and radian measure",
+        "hi": "कोण और रेडियन माप"
+      },
+      "body": {
+        "en": "A directed angle records rotation from an initial ray to a terminal ray. Counterclockwise rotation is positive and clockwise negative. One complete turn is 360°=2π radians. A radian is the angle subtended by an arc whose length equals the radius. For a circle of radius r and arc length s, θ=s/r when θ is in radians. Thus 180°=π rad and 1°=π/180 rad. Degree and radian are measures of the same angle, not different geometrical objects. Arc-length calculations require radians. A numerical input such as sin 30 must specify the intended unit. For an arc making several turns, s=rθ is a directed arc-length relation when θ carries sign. Ordinary travelled arc length is nonnegative and should use the magnitude for motion in one direction. State which quantity is meant.",
+        "hi": "दिष्ट कोण (Directed angle) प्रारंभिक किरण से अंतिम किरण तक घुमाव बताता है। वामावर्त घुमाव धनात्मक और दक्षिणावर्त घुमाव ऋणात्मक लेते हैं। पूरा चक्कर 360°=2π रेडियन है। रेडियन (Radian) वह केंद्रीय कोण है जिसकी चाप लंबाई त्रिज्या के बराबर हो। त्रिज्या r और चाप लंबाई s के लिए θ=s/r है, जब θ रेडियन में हो। इसलिए 180°=π रेडियन तथा 1°=π/180 रेडियन है। डिग्री और रेडियन एक ही कोण के अलग माप हैं। रूपांतरण में इकाई काटकर जाँचें: 60°×π/180°=π/3 रेडियन। चाप लंबाई s=rθ में सीधे डिग्री मान नहीं रख सकते। उदाहरणतः r=3 cm और θ=2 रेडियन पर s=6 cm है। 2° रखने पर यही परिणाम नहीं मिलेगा। किसी sin 30 जैसे लिखे मान में इकाई स्पष्ट होना जरूरी है। कैलकुलेटर का degree या radian mode गलत होने पर सही सूत्र भी गलत संख्यात्मक उत्तर दे सकता है। कई चक्करों वाली चाप में θ का चिह्न लेने पर s=rθ दिष्ट चाप लंबाई बताता है। साधारण तय दूरी गैरऋणात्मक है। एक दिशा की गति में उसके लिए परिमाण लें। प्रश्न कौन-सी राशि पूछता है,यह स्पष्ट लिखें।"
+      },
+      "formula": "180°=π rad; s=rθ (θ in radians)",
+      "question": {
+        "en": "Convert 150° into radians.",
+        "hi": "150° को रेडियन में बदलें।"
+      },
+      "answer": {
+        "en": "150π/180=5π/6 rad.",
+        "hi": "150π/180=5π/6 रेडियन।"
+      }
+    },
+    {
+      "title": {
+        "en": "The unit circle definitions",
+        "hi": "इकाई वृत्त की परिभाषाएँ"
+      },
+      "body": {
+        "en": "On the unit circle x²+y²=1, the terminal point of angle θ has coordinates (cosθ,sinθ). This defines sine and cosine beyond acute angles. Tangent equals sinθ/cosθ when cosθ≠0. Cotangent, secant and cosecant are reciprocals with their own nonzero-denominator restrictions. At θ=0, the point is (1,0), so sin0=0 and cos0=1, while cosec0 and cot0 are undefined. The radius stays 1 while coordinates change. For a radius r circle, x=r cosθ and y=r sinθ. A right-triangle interpretation agrees with this definition in the first quadrant but does not alone describe negative or large angles.",
+        "hi": "इकाई वृत्त (Unit circle) x²+y²=1 पर कोण θ की अंतिम किरण जिस बिंदु से मिलती है, उसके निर्देशांक (cosθ,sinθ) हैं। इस परिभाषा से न्यून कोणों के बाहर भी ज्या (Sine) और कोज्या (Cosine) के मान मिलते हैं। tanθ=sinθ/cosθ है, बशर्ते cosθ≠0। cotθ=cosθ/sinθ, secθ=1/cosθ और cosecθ=1/sinθ में भी हर अशून्य चाहिए। θ=0 पर बिंदु (1,0) है, इसलिए sin0=0 और cos0=1; लेकिन cot0 तथा cosec0 अपरिभाषित हैं। घुमाव में त्रिज्या 1 रहती है, जबकि क्षैतिज और ऊर्ध्वाधर निर्देशांक बदलते हैं। त्रिज्या r के वृत्त में x=r cosθ तथा y=r sinθ होंगे। प्रथम चतुर्थांश में यह समकोण त्रिभुज के अनुपातों से मेल खाता है। पर केवल न्यून कोण वाले त्रिभुज से ऋणात्मक या कई चक्कर वाले कोण सीधे नहीं समझाए जा सकते। वृत्त की दिशा और निर्देशांक के चिह्न साथ देखने से व्यापक परिभाषा स्पष्ट होती है।"
+      },
+      "formula": "P=(cosθ,sinθ); tanθ=sinθ/cosθ",
+      "question": {
+        "en": "At θ=π/2, which coordinate is cosθ?",
+        "hi": "θ=π/2 पर cosθ कौन-सा निर्देशांक है?"
+      },
+      "answer": {
+        "en": "The x-coordinate, equal to 0.",
+        "hi": "x-निर्देशांक,जिसका मान 0 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Signs, quadrants and standard angles",
+        "hi": "चिह्न, चतुर्थांश और मानक कोण"
+      },
+      "body": {
+        "en": "Sine has the sign of y and cosine the sign of x. In quadrant I all basic ratios are positive; in II sine is positive; in III tangent is positive; in IV cosine is positive. Obtain exact values at 30°,45°,60° from standard triangles rather than memorising unrelated numbers. For example sin(π/6)=1/2, cos(π/3)=1/2 and tan(π/4)=1. A reference angle is an acute angle made with the x-axis; it supplies magnitude while the quadrant supplies sign. Thus sin(5π/6)=1/2 and cos(5π/6)=−√3/2. First reduce large angles by whole turns, then identify quadrant and reference angle. At an axis angle, a point belongs to neither open quadrant. Use coordinates directly: atπ, the point is(−1,0), so cosine is−1 and sine0. Rules for open-quadrant signs should not replace endpoint evaluation.",
+        "hi": "ज्या का चिह्न y और कोज्या का चिह्न x के समान है। प्रथम चतुर्थांश में सभी मूल अनुपात धनात्मक हैं। दूसरे में ज्या, तीसरे में स्पर्शज्या और चौथे में कोज्या धनात्मक है। 30°,45°,60° के सटीक मान मानक समकोण त्रिभुजों से निकाल सकते हैं। sin(π/6)=1/2, cos(π/3)=1/2 तथा tan(π/4)=1 हैं। संदर्भ कोण (Reference angle) अंतिम किरण और x-अक्ष के बीच का संबंधित न्यून कोण है। वह परिमाण देता है और चतुर्थांश चिह्न तय करता है। 5π/6 दूसरे चतुर्थांश में है तथा उसका संदर्भ कोण π/6 है। इसलिए sin(5π/6)=1/2 और cos(5π/6)=−√3/2 मिलता है। बड़े कोण में पहले पूरे चक्कर हटाएँ, फिर चतुर्थांश पहचानें। ऋणात्मक कोण में घुमाव की दिशा भी देखें। केवल मानक कोण का मान लिखना पर्याप्त नहीं; गलत चिह्न पूरे उत्तर को बदल देता है। बिंदु के दोनों निर्देशांकों को जाँचने से याद किए चिह्नों की स्वतंत्र पुष्टि मिलती है। अक्ष पर स्थित कोण किसी खुले चतुर्थांश में नहीं है। सीधे निर्देशांक लें:π पर बिंदु(−1,0) है,इसलिए कोज्या−1 तथा ज्या0 है। खुले चतुर्थांशों के चिह्न नियम को अंतिम बिंदु के मान की जगह न लगाएँ।"
+      },
+      "formula": "sin(π/6)=1/2; cos(π/6)=√3/2; tan(π/4)=1",
+      "question": {
+        "en": "Find cos(4π/3).",
+        "hi": "cos(4π/3) निकालें।"
+      },
+      "answer": {
+        "en": "Quadrant III, reference π/3: −1/2.",
+        "hi": "तीसरा चतुर्थांश,संदर्भ π/3:−1/2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Identities, domains and periodicity",
+        "hi": "सर्वसमिकाएँ, प्रांत और आवर्तिता"
+      },
+      "body": {
+        "en": "The unit-circle equation gives sin²x+cos²x=1. Dividing by cos²x or sin²x gives 1+tan²x=sec²x and 1+cot²x=cosec²x wherever denominators are nonzero. An identity is true for every input where both sides are defined; it is not an equation to solve at only selected inputs. Sine and cosine have domain R, range [−1,1] and period 2π. Tangent has domain R−{π/2+kπ:k∈Z}, range R and period π. Sine is odd and cosine even. Graphs show these patterns but do not prove identities by appearance alone. Never divide by an expression without considering whether it can be zero. The reciprocal functions cannot be evaluated at zeros of their denominators, even when sine and cosine themselves remain defined. A graph may show an asymptote rather than a point at such an input.",
+        "hi": "इकाई वृत्त के समीकरण से sin²x+cos²x=1 मिलता है। cos²x से भाग देने पर 1+tan²x=sec²x और sin²x से भाग देने पर 1+cot²x=cosec²x मिलता है, जहाँ संबंधित हर अशून्य हों। सर्वसमिका (Identity) उन सभी निवेशों पर सही होती है जहाँ दोनों पक्ष परिभाषित हों। इसे कुछ विशेष मानों वाला समीकरण न समझें। ज्या और कोज्या का प्रांत R, परिसर [−1,1] तथा आवर्तकाल (Period) 2π है। स्पर्शज्या का प्रांत R−{π/2+kπ:k∈Z}, परिसर R और आवर्तकाल π है। sin(−x)=−sinx से ज्या विषम और cos(−x)=cosx से कोज्या सम फलन है। ग्राफ इन गुणों को देखने में मदद करता है, लेकिन केवल चित्र से सर्वसमिका सिद्ध नहीं होती। किसी व्यंजक से भाग देने पर पहले उसके शून्य होने की संभावना देखें। उदाहरणतः tanx के सूत्र में cosx=0 वाले कोण निषिद्ध हैं। परिसर और आवर्तकाल अलग गुण हैं; एक मानों की सीमा, दूसरा ग्राफ की पुनरावृत्ति बताता है। व्युत्क्रम फलन अपने हर के शून्यों पर अपरिभाषित हैं,भले ज्या तथा कोज्या वहाँ परिभाषित हों। ऐसे निवेश पर ग्राफ में बिंदु की जगह अनंतस्पर्शी रेखा का व्यवहार दिख सकता है।"
+      },
+      "formula": "sin²x+cos²x=1; sin(x+2π)=sinx; tan(x+π)=tanx",
+      "question": {
+        "en": "Can sinx=1.2 have a real solution?",
+        "hi": "क्या sinx=1.2 का वास्तविक हल है?"
+      },
+      "answer": {
+        "en": "No; sine lies between −1 and 1.",
+        "hi": "नहीं;ज्या −1 और 1 के बीच होती है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Addition and subtraction formulas",
+        "hi": "योग और अंतर के सूत्र"
+      },
+      "body": {
+        "en": "The addition rules are sin(a±b)=sina cosb±cosa sinb and cos(a±b)=cosa cosb∓sina sinb. They are not the same as adding function values: sin(a+b) is generally not sina+sinb. The tangent rule is tan(a±b)=(tana±tanb)/(1∓tana tanb) where all terms and the result are defined. Choose known angles whose sum or difference gives the target. For 75°, use 45°+30° to obtain sin75°=(√6+√2)/4. Track the opposite sign in the cosine formula carefully. Exact radical expressions are preferable to rounded decimals when the question asks an exact value.",
+        "hi": "योग तथा अंतर सूत्र sin(a±b)=sina cosb±cosa sinb और cos(a±b)=cosa cosb∓sina sinb हैं। ध्यान दें कि कोज्या के दूसरे पद का चिह्न उलटा आता है। सामान्यतः sin(a+b), sina+sinb के बराबर नहीं है। स्पर्शज्या के लिए tan(a±b)=(tana±tanb)/(1∓tana tanb) है, जहाँ सभी पद और भागफल परिभाषित हों। लक्ष्य कोण को ज्ञात मानक कोणों के योग या अंतर में बाँटें। 75°=45°+30° रखने पर sin75°=(√6+√2)/4 मिलता है। पहले सूत्र लिखें, फिर हर ज्ञात मान को कोष्ठक के साथ रखें और अंत में सरल करें। इससे चिह्न तथा मूलों की गलती कम होती है। 15° के लिए 45°−30° उपयोगी है। सटीक मान पूछे जाने पर दशमलव सन्निकटन के स्थान पर मूल वाला उत्तर रखें। tan सूत्र में हर 0 हो तो सीधे भाग नहीं दे सकते। किसी गलत चुने विघटन से गणना लंबी हो सकती है, इसलिए पहले आसान ज्ञात कोण खोजने की आदत बनाएँ।"
+      },
+      "formula": "sin(a+b)=sina cosb+cosa sinb; cos(a+b)=cosa cosb−sina sinb",
+      "question": {
+        "en": "Find cos75° exactly.",
+        "hi": "cos75° का सटीक मान निकालें।"
+      },
+      "answer": {
+        "en": "cos(45°+30°)=(√6−√2)/4.",
+        "hi": "cos(45°+30°)=(√6−√2)/4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Multiple angles and transformations",
+        "hi": "बहुगुण कोण और रूपांतरण"
+      },
+      "body": {
+        "en": "Setting a=b gives sin2x=2sinx cosx and cos2x=cos²x−sin²x=1−2sin²x=2cos²x−1. The tangent double-angle rule has denominator 1−tan²x and needs the usual restrictions. The triple-angle formulas sin3x=3sinx−4sin³x and cos3x=4cos³x−3cosx follow by adding 2x and x. Sum-to-product rules such as sinC+sinD=2sin((C+D)/2)cos((C−D)/2) connect pairs of waves. Choose the version matching known quantities. If sinx is given but the quadrant is not, cosx may have either sign; squaring hides this choice. Verify a derived identity algebraically, retaining the domain throughout.",
+        "hi": "योग सूत्र में दोनों कोण समान रखने से sin2x=2sinx cosx और cos2x=cos²x−sin²x मिलता है। मूल सर्वसमिका से कोज्या के रूप 1−2sin²x तथा 2cos²x−1 भी मिलते हैं। ज्ञात राशि के अनुसार सबसे सुविधाजनक रूप चुनें। tan2x=2tanx/(1−tan²x) में हर और मूल स्पर्शज्या की परिभाषा जाँचना जरूरी है। 2x तथा x का योग लेकर sin3x=3sinx−4sin³x और cos3x=4cos³x−3cosx निकाल सकते हैं। योग से गुणनफल रूपांतरण में sinC+sinD=2sin((C+D)/2)cos((C−D)/2) है। आधे योग और आधे अंतर को अलग लिखें। केवल sinx दिया हो और चतुर्थांश न दिया हो, तो cosx के दोनों चिह्न संभव हो सकते हैं। वर्ग लेने से चिह्न छिप जाता है; उसे बिना कारण धनात्मक न मानें। रूपांतरण का उद्देश्य व्यंजक सरल करना है, नई शर्त बनाकर हल खोना नहीं। अंतिम परिणाम को 0 या π/2 जैसे अनुमत सरल कोण पर जाँचना गणना की गलती पकड़ सकता है।"
+      },
+      "formula": "sin2x=2sinx cosx; cos2x=1−2sin²x=2cos²x−1",
+      "question": {
+        "en": "If sinx=3/5 and x is acute, find sin2x.",
+        "hi": "sinx=3/5 और x न्यून कोण हो,तो sin2x निकालें।"
+      },
+      "answer": {
+        "en": "cosx=4/5, so sin2x=24/25.",
+        "hi": "cosx=4/5,इसलिए sin2x=24/25।"
+      }
+    },
+    {
+      "title": {
+        "en": "General solutions — enrichment",
+        "hi": "व्यापक हल — अतिरिक्त समझ"
+      },
+      "body": {
+        "en": "Enrichment: general trigonometric solution methods extend the core function-and-identity study; consult the current prescribed exercise list for examination scope. Trigonometric equations usually have infinitely many solutions because of periodicity. For integer n, sinx=sinα gives x=nπ+(−1)^nα; cosx=cosα gives x=2nπ±α; tanx=tanα gives x=nπ+α. An interval restriction selects only the representatives inside it. For sinx=1/2 on [0,2π), the solutions are π/6 and 5π/6. One inverse value is not the complete solution. Check all final candidates in the original equation, especially after squaring, dividing or using tangent. Endpoint conventions matter: [0,2π) contains 0 but not 2π. Keep radians throughout a derivation unless a conversion is explicitly made.",
+        "hi": "अतिरिक्त समझ (Enrichment): व्यापक त्रिकोणमितीय हल की विधियाँ मूल फलन और सर्वसमिका अध्ययन का विस्तार हैं। परीक्षा के निर्धारित दायरे के लिए वर्तमान अभ्यास सूची देखें। आवर्तिता के कारण त्रिकोणमितीय समीकरणों के सामान्यतः अनंत हल होते हैं। n पूर्णांक हो, तो sinx=sinα का व्यापक हल x=nπ+(−1)^nα है। cosx=cosα के लिए x=2nπ±α और tanx=tanα के लिए x=nπ+α मिलता है। दिए अंतराल की शर्त इन व्यापक हलों में से अनुमत मान चुनती है। sinx=1/2 को [0,2π) में हल करने पर π/6 तथा 5π/6 दोनों मिलते हैं। केवल कैलकुलेटर का 1 प्रतिलोम मान पूरा उत्तर नहीं है। पहले चतुर्थांश और दूसरा संबंधित चतुर्थांश पहचानें, फिर आवर्तिता लगाएँ। वर्ग लेने, भाग देने या tan में बदलने से पहले मूल समीकरण की परिभाषा जाँचें। अंत में हर उम्मीदवार को उसी मूल समीकरण में रखें। [0,2π) में 0 शामिल है, लेकिन 2π नहीं। एक ही गणना में डिग्री और रेडियन के मान बिना रूपांतरण न मिलाएँ। हल समुच्चय को स्पष्ट लिखना, विशेषकर कई आवर्तों वाले अंतराल में, दोहराव और छूट दोनों रोकता है।"
+      },
+      "formula": "sinx=sinα ⇒ x=nπ+(−1)^nα, n∈Z",
+      "question": {
+        "en": "Solve cosx=−1 on [0,2π).",
+        "hi": "[0,2π) में cosx=−1 हल करें।"
+      },
+      "answer": {
+        "en": "x=π.",
+        "hi": "x=π।"
+      }
+    },
+    {
+      "title": {
+        "en": "Proof and application habits",
+        "hi": "प्रमाण और अनुप्रयोग की आदतें"
+      },
+      "body": {
+        "en": "An identity proof should transform a side through valid equalities into the other side, or transform both sides separately into the same expression. Do not assume the desired result as a starting fact. Choose a common denominator, basic sine-cosine forms or angle formulas according to structure. Keep excluded inputs visible. In an applied circular-motion model, angle θ=ωt requires ω in radian per unit time; then coordinates rcosθ,rsinθ describe position. Graph amplitudes represent output scale and periods represent horizontal repetition. A screen plot is approximate and should support, not replace, exact calculations. Distinguish an identity from an equation whose solution set is only part of the domain.",
+        "hi": "सर्वसमिका के प्रमाण में किसी 1 पक्ष को वैध समानताओं से दूसरे तक पहुँचाएँ, या दोनों पक्षों को अलग-अलग उसी व्यंजक में बदलें। जिस परिणाम को सिद्ध करना है, उसे प्रारंभ में सही मान लेना प्रमाण नहीं है। संरचना के अनुसार समान हर, ज्या-कोज्या रूप या कोण योग सूत्र चुनें। बीच में शून्य हो सकने वाले पद से भाग देकर प्रांत बदलने से बचें। वृताकार गति के मॉडल में θ=ωt हो, तो ω की इकाई समय की प्रति इकाई रेडियन होनी चाहिए। फिर rcosθ तथा rsinθ स्थान के निर्देशांक देते हैं। ग्राफ का आयाम ऊर्ध्वाधर मानों का पैमाना और आवर्तकाल क्षैतिज पुनरावृत्ति बताता है। स्क्रीन पर बिंदु तथा मान सन्निकट हैं; वे सटीक बीजगणितीय तर्क के पूरक हैं, उसका स्थानापन्न नहीं। सर्वसमिका सभी अनुमत निवेशों पर सही है, जबकि समीकरण केवल कुछ निवेशों पर सही हो सकता है। प्रश्न पढ़ते समय पहले तय करें कि मान निकालना, पहचान सिद्ध करना या हल समुच्चय ढूँढ़ना है।"
+      },
+      "formula": "y=A sin(ωt); period=2π/|ω| for ω≠0",
+      "question": {
+        "en": "Is checking an identity at 3 angles a complete proof?",
+        "hi": "क्या 3 कोणों पर जाँच करना सर्वसमिका का पूरा प्रमाण है?"
+      },
+      "answer": {
+        "en": "No; it checks examples, not every allowed angle.",
+        "hi": "नहीं;यह उदाहरणों की जाँच है,सभी अनुमत कोणों का प्रमाण नहीं।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Convert 225° to radians.",
+        "hi": "225° को रेडियन में बदलें।"
+      },
+      "steps": [
+        {
+          "en": "Multiply degrees by π/180.",
+          "hi": "डिग्री को π/180 से गुणा करें।"
+        },
+        {
+          "en": "225π/180=5π/4.",
+          "hi": "225π/180=5π/4।"
+        }
+      ],
+      "answer": {
+        "en": "5π/4 rad.",
+        "hi": "5π/4 रेडियन।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find sin(7π/6).",
+        "hi": "sin(7π/6) निकालें।"
+      },
+      "steps": [
+        {
+          "en": "7π/6 lies in quadrant III with reference π/6.",
+          "hi": "7π/6 तीसरे चतुर्थांश में है,संदर्भ π/6।"
+        },
+        {
+          "en": "Sine is negative there and sinπ/6=1/2.",
+          "hi": "वहाँ ज्या ऋणात्मक और sinπ/6=1/2 है।"
+        }
+      ],
+      "answer": {
+        "en": "−1/2.",
+        "hi": "−1/2।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find sin15° exactly.",
+        "hi": "sin15° का सटीक मान निकालें।"
+      },
+      "steps": [
+        {
+          "en": "15°=45°−30°.",
+          "hi": "15°=45°−30°।"
+        },
+        {
+          "en": "sin15°=(√2/2)(√3/2)−(√2/2)(1/2).",
+          "hi": "sin15°=(√2/2)(√3/2)−(√2/2)(1/2)।"
+        }
+      ],
+      "answer": {
+        "en": "(√6−√2)/4.",
+        "hi": "(√6−√2)/4।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Solve tanx=−1 on [0,2π).",
+        "hi": "[0,2π) में tanx=−1 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "Reference angle is π/4; tangent is negative in II and IV.",
+          "hi": "संदर्भ π/4 है;स्पर्शज्या दूसरे और चौथे में ऋणात्मक।"
+        },
+        {
+          "en": "Candidates are 3π/4 and 7π/4; both have nonzero cosine.",
+          "hi": "उम्मीदवार 3π/4,7π/4 हैं;दोनों में कोज्या अशून्य।"
+        }
+      ],
+      "answer": {
+        "en": "x=3π/4,7π/4.",
+        "hi": "x=3π/4,7π/4।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Prove (1−cos2x)/sin2x=tanx wherever the left side is defined.",
+        "hi": "जहाँ बायाँ पक्ष परिभाषित हो,सिद्ध करें (1−cos2x)/sin2x=tanx।"
+      },
+      "steps": [
+        {
+          "en": "Use 1−cos2x=2sin²x and sin2x=2sinx cosx.",
+          "hi": "1−cos2x=2sin²x तथा sin2x=2sinx cosx रखें।"
+        },
+        {
+          "en": "The left denominator nonzero ensures sinx and cosx are nonzero.",
+          "hi": "बायाँ हर अशून्य होने से sinx और cosx अशून्य हैं।"
+        },
+        {
+          "en": "Cancel to obtain sinx/cosx=tanx.",
+          "hi": "काटने पर sinx/cosx=tanx।"
+        }
+      ],
+      "answer": {
+        "en": "Identity holds on its common domain; do not include x with sin2x=0.",
+        "hi": "साझा प्रांत पर सही;sin2x=0 वाले x शामिल न करें।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "180° equals",
+        "hi": "180° बराबर है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "180π rad",
+            "hi": "180π रेडियन"
+          },
+          "reason": {
+            "en": "Conversion requires division by 180.",
+            "hi": "रूपांतरण में 180 से भाग चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "π rad",
+            "hi": "π रेडियन"
+          },
+          "reason": {
+            "en": "A half-turn is π radians.",
+            "hi": "आधा चक्कर π रेडियन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2π rad",
+            "hi": "2π रेडियन"
+          },
+          "reason": {
+            "en": "That is a full turn.",
+            "hi": "यह पूरा चक्कर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "π/2 rad",
+            "hi": "π/2 रेडियन"
+          },
+          "reason": {
+            "en": "That is 90°.",
+            "hi": "यह 90° है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "sin(3π/2) is",
+        "hi": "sin(3π/2) है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "Unit-circle point is (0,−1).",
+            "hi": "इकाई वृत्त बिंदु (0,−1) है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "1 occurs at π/2.",
+            "hi": "1,π/2 पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "0 is the cosine here.",
+            "hi": "यहाँ 0 कोज्या है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित"
+          },
+          "reason": {
+            "en": "Sine is defined for every real angle.",
+            "hi": "ज्या हर वास्तविक कोण पर परिभाषित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "cos(−x) equals",
+        "hi": "cos(−x) बराबर है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−cosx",
+            "hi": "−cosx"
+          },
+          "reason": {
+            "en": "That would make cosine odd.",
+            "hi": "यह उसे विषम बना देगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "sinx",
+            "hi": "sinx"
+          },
+          "reason": {
+            "en": "Reflection in x-axis preserves x-coordinate, not swaps it.",
+            "hi": "परावर्तन x निर्देशांक रखता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−sinx",
+            "hi": "−sinx"
+          },
+          "reason": {
+            "en": "This is not the cosine symmetry rule.",
+            "hi": "यह कोज्या का सममिति नियम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "cosx",
+            "hi": "cosx"
+          },
+          "reason": {
+            "en": "Cosine is even.",
+            "hi": "कोज्या सम फलन है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "The period of tanx is",
+        "hi": "tanx का आवर्तकाल है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Period is an angle, π radians.",
+            "hi": "आवर्तकाल π रेडियन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4π",
+            "hi": "4π"
+          },
+          "reason": {
+            "en": "This repeats too, but is not the least positive period.",
+            "hi": "यह पुनरावृत्ति है,न्यूनतम धनात्मक आवर्तकाल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "π",
+            "hi": "π"
+          },
+          "reason": {
+            "en": "Both numerator and denominator change sign after π.",
+            "hi": "π बाद अंश तथा हर दोनों चिह्न बदलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "π/2",
+            "hi": "π/2"
+          },
+          "reason": {
+            "en": "tan0 and tanπ/2 do not agree; latter is undefined.",
+            "hi": "tan0 और tanπ/2 समान नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "sin(a+b) equals",
+        "hi": "sin(a+b) है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "sina sinb",
+            "hi": "sina sinb"
+          },
+          "reason": {
+            "en": "A product alone misses cross terms.",
+            "hi": "अकेला गुणनफल आवश्यक पद छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sina cosb+cosa sinb",
+            "hi": "sina cosb+cosa sinb"
+          },
+          "reason": {
+            "en": "This is the sine addition formula.",
+            "hi": "यह ज्या योग सूत्र है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sina+sinb",
+            "hi": "sina+sinb"
+          },
+          "reason": {
+            "en": "Sine does not distribute over addition.",
+            "hi": "ज्या योग पर ऐसे वितरित नहीं होती।"
+          }
+        },
+        {
+          "text": {
+            "en": "cosa cosb−sina sinb",
+            "hi": "cosa cosb−sina sinb"
+          },
+          "reason": {
+            "en": "This is cos(a+b).",
+            "hi": "यह cos(a+b) है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "If sinx=3/5 and x is acute, cos2x equals",
+        "hi": "sinx=3/5,x न्यून कोण हो,तो cos2x है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "7/25",
+            "hi": "7/25"
+          },
+          "reason": {
+            "en": "1−2(9/25)=7/25.",
+            "hi": "1−2(9/25)=7/25।"
+          }
+        },
+        {
+          "text": {
+            "en": "24/25",
+            "hi": "24/25"
+          },
+          "reason": {
+            "en": "This is sin2x.",
+            "hi": "यह sin2x है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−7/25",
+            "hi": "−7/25"
+          },
+          "reason": {
+            "en": "The subtraction sign was reversed.",
+            "hi": "घटाव का क्रम उलटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "4/5",
+            "hi": "4/5"
+          },
+          "reason": {
+            "en": "This is cosx, not cos2x.",
+            "hi": "यह cosx है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "How many solutions has sinx=1/2 on [0,2π)?",
+        "hi": "[0,2π) में sinx=1/2 के कितने हल हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "The quadrant-II solution is also needed.",
+            "hi": "दूसरे चतुर्थांश का हल भी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "Only two intersections occur in one turn.",
+            "hi": "1 चक्कर में केवल 2 प्रतिच्छेद।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "1/2 lies in the sine range.",
+            "hi": "1/2 ज्या के परिसर में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "π/6 and 5π/6.",
+            "hi": "π/6 तथा 5π/6।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "tanx is undefined when",
+        "hi": "tanx कब अपरिभाषित है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x=π/4+kπ",
+            "hi": "x=π/4+kπ"
+          },
+          "reason": {
+            "en": "Tangent equals 1 there.",
+            "hi": "वहाँ स्पर्शज्या 1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=0 only",
+            "hi": "केवल x=0"
+          },
+          "reason": {
+            "en": "tan0=0 is defined.",
+            "hi": "tan0=0 परिभाषित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=π/2+kπ,k∈Z",
+            "hi": "x=π/2+kπ,k∈Z"
+          },
+          "reason": {
+            "en": "Cosine is zero there.",
+            "hi": "वहाँ कोज्या शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=kπ",
+            "hi": "x=kπ"
+          },
+          "reason": {
+            "en": "Tangent is 0 at these angles.",
+            "hi": "इन कोणों पर स्पर्शज्या 0 है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "A radius 4 cm circle has an arc subtending 1.5 rad. Arc length is",
+        "hi": "4 cm त्रिज्या में 1.5 रेडियन वाली चाप की लंबाई है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "6 cm²",
+            "hi": "6 cm²"
+          },
+          "reason": {
+            "en": "Arc length has length units, not area units.",
+            "hi": "चाप की इकाई लंबाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6 cm",
+            "hi": "6 cm"
+          },
+          "reason": {
+            "en": "s=rθ=4×1.5.",
+            "hi": "s=rθ=4×1.5।"
+          }
+        },
+        {
+          "text": {
+            "en": "2.5 cm",
+            "hi": "2.5 cm"
+          },
+          "reason": {
+            "en": "Subtracting angle from radius is invalid.",
+            "hi": "कोण को त्रिज्या से घटाना गलत।"
+          }
+        },
+        {
+          "text": {
+            "en": "8 cm",
+            "hi": "8 cm"
+          },
+          "reason": {
+            "en": "This ignores the given angle.",
+            "hi": "यह दिया कोण नहीं लगाता।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which equation has no real solution?",
+        "hi": "किस समीकरण का वास्तविक हल नहीं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "cosx=2",
+            "hi": "cosx=2"
+          },
+          "reason": {
+            "en": "Cosine range is [−1,1].",
+            "hi": "कोज्या का परिसर [−1,1] है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sinx=0",
+            "hi": "sinx=0"
+          },
+          "reason": {
+            "en": "x=0 is a solution.",
+            "hi": "x=0 हल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "tanx=2",
+            "hi": "tanx=2"
+          },
+          "reason": {
+            "en": "Tangent attains all real values.",
+            "hi": "स्पर्शज्या सभी वास्तविक मान लेती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cosx=−1",
+            "hi": "cosx=−1"
+          },
+          "reason": {
+            "en": "x=π is a solution.",
+            "hi": "x=π हल है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Convert −120° into radians.",
+        "hi": "−120° को रेडियन में बदलें।"
+      },
+      "answer": {
+        "en": "−120π/180=−2π/3 rad.",
+        "hi": "−120π/180=−2π/3 रेडियन।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find sin(11π/6) and cos(11π/6).",
+        "hi": "sin(11π/6),cos(11π/6) निकालें।"
+      },
+      "answer": {
+        "en": "−1/2 and √3/2, because the angle lies in quadrant IV.",
+        "hi": "चौथे चतुर्थांश से −1/2 तथा √3/2।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the real domain of tanx.",
+        "hi": "tanx का वास्तविक प्रांत लिखें।"
+      },
+      "answer": {
+        "en": "R−{π/2+kπ:k∈Z}.",
+        "hi": "R−{π/2+kπ:k∈Z}।"
+      }
+    },
+    {
+      "question": {
+        "en": "Show cos2x=1−2sin²x.",
+        "hi": "cos2x=1−2sin²x दिखाएँ।"
+      },
+      "answer": {
+        "en": "cos2x=cos²x−sin²x=(1−sin²x)−sin²x.",
+        "hi": "cos2x=cos²x−sin²x=(1−sin²x)−sin²x।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve sinx=0 on [−π,π].",
+        "hi": "[−π,π] में sinx=0 हल करें।"
+      },
+      "answer": {
+        "en": "x=−π,0,π; both endpoints are included.",
+        "hi": "x=−π,0,π;दोनों सिरे शामिल हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find general solutions of cosx=1/2.",
+        "hi": "cosx=1/2 के व्यापक हल निकालें।"
+      },
+      "answer": {
+        "en": "x=2nπ±π/3,n∈Z.",
+        "hi": "x=2nπ±π/3,n∈Z।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Keep degrees and radians distinct. Do not discard quadrant signs, divide by zero, write sin(a+b)=sina+sinb, or give only one principal value as a general solution.",
+    "hi": "डिग्री और रेडियन अलग रखें। चतुर्थांश चिह्न न छोड़ें;शून्य से भाग न दें;sin(a+b) को sina+sinb न लिखें;व्यापक हल में केवल 1 मान न दें।"
+  },
+  "revision": [
+    {
+      "en": "A turn is 2π radians.",
+      "hi": "1 चक्कर 2π रेडियन है।"
+    },
+    {
+      "en": "Unit-circle coordinates are (cosθ,sinθ).",
+      "hi": "इकाई वृत्त निर्देशांक (cosθ,sinθ) हैं।"
+    },
+    {
+      "en": "sin²x+cos²x=1 on R.",
+      "hi": "R पर sin²x+cos²x=1 है।"
+    },
+    {
+      "en": "Sine and cosine repeat after 2π; tangent after π.",
+      "hi": "ज्या तथा कोज्या 2π,स्पर्शज्या π बाद दोहरती हैं।"
+    },
+    {
+      "en": "Use periodicity and interval endpoints to give all solutions.",
+      "hi": "आवर्तिता और अंतराल सिरों से सभी हल दें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Angle measure → unit circle → signs and standard values → identities → transformations → equations.",
+    "hi": "कोण माप → इकाई वृत्त → चिह्न और मानक मान → सर्वसमिकाएँ → रूपांतरण → समीकरण।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class XI, Chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh103.pdf"
+    },
+    {
+      "title": "UPMSP Class11 Mathematics syllabus2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/131-Maths-Class-11.pdf"
+    }
+  ],
+  "engine": "eleven-math",
+  "scenes": []
+}

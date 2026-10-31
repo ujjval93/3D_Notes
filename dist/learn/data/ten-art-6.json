@@ -1,0 +1,419 @@
+{
+  "id": "ten-art-6",
+  "number": 6,
+  "classId": "10",
+  "title": {
+    "en": "Tangents to a Circle",
+    "hi": "वृत्त की स्पर्श रेखाएँ"
+  },
+  "engine": "step",
+  "drawingKind": "ten-tangents",
+  "artTopic": 6,
+  "goal": {
+    "en": "Construct and explain tangents to a circle with accurate relationships.",
+    "hi": "सटीक संबंधों से वृत्त की स्पर्श रेखाएँ की रचना और व्याख्या करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Meaning of a Tangent",
+        "hi": "स्पर्श रेखा का अर्थ"
+      },
+      "body": {
+        "en": "A tangent meets a circle at one point and is perpendicular to the radius at that point. A secant crosses the circle at two points. In this construction O is the centre and P is outside the circle. The external condition is essential: a point inside the circle cannot supply a real tangent to it. The task is to locate the contact points, not to guess lines that merely look close to touching. Begin by drawing the given circle accurately.",
+        "hi": "स्पर्श रेखा (Tangent) वृत्त से एक बिंदु पर मिलती है और उस बिंदु की त्रिज्या पर लंब होती है। छेदक वृत्त को दो बिंदुओं पर काटती है। इस रचना में O केंद्र है और P वृत्त के बाहर है। बाहरी बिंदु की शर्त आवश्यक है: वृत्त के अंदर के बिंदु से उसकी वास्तविक स्पर्श रेखा नहीं बनती। काम स्पर्श बिंदु खोजने का है, केवल पास छूती दिखने वाली रेखा का अनुमान लगाने का नहीं। पहले दिया वृत्त सटीक बनाएँ।"
+      },
+      "question": {
+        "en": "Which geometric relationship justifies this stage?",
+        "hi": "कौन सा ज्यामितीय संबंध इस चरण को सही ठहराता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Find the Auxiliary Circle",
+        "hi": "सहायक वृत्त खोजें"
+      },
+      "body": {
+        "en": "Join O to P and construct its midpoint M. The midpoint may be found by equal-radius arcs from O and P and their perpendicular bisector. With M as centre and MO as radius, draw the auxiliary circle whose diameter is OP. Keep this circle lighter or dashed in the explanation. It intersects the original circle at T and U. These intersections provide the two possible contact points. The auxiliary circle is a reasoning device, not an extra part of the required final object.",
+        "hi": "O और P को जोड़कर उसका मध्यबिंदु M बनाएँ। मध्यबिंदु के लिए O और P से समान त्रिज्या के चाप और उनका लंब समद्विभाजक लिया जा सकता है। M केंद्र तथा MO त्रिज्या से सहायक वृत्त बनाएँ जिसका व्यास OP है। व्याख्या में यह वृत्त हल्का या बिंदीदार रखें। वह मूल वृत्त को T और U पर काटता है। ये प्रतिच्छेद दोनों संभव स्पर्श बिंदु देते हैं। सहायक वृत्त तर्क का साधन है, माँगी गई अंतिम वस्तु का अतिरिक्त भाग नहीं।"
+      },
+      "question": {
+        "en": "Which geometric relationship justifies this stage?",
+        "hi": "कौन सा ज्यामितीय संबंध इस चरण को सही ठहराता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Why the Lines Touch",
+        "hi": "रेखाएँ स्पर्श क्यों करती हैं"
+      },
+      "body": {
+        "en": "Join O to T and U, then join P to T and U. Because T and U lie on the circle with diameter OP, angles OTP and OUP are right angles. Thus PT is perpendicular to OT and PU is perpendicular to OU. A line perpendicular to a radius at its endpoint on the circle is a tangent. This is the geometric justification. Right-angle marks record the relationship; drawing a square symbol by itself does not prove that an arbitrary line is perpendicular.",
+        "hi": "O को T और U से जोड़ें, फिर P को T और U से जोड़ें। T और U व्यास OP वाले वृत्त पर हैं, इसलिए कोण OTP और OUP समकोण हैं। अतः PT, OT पर तथा PU, OU पर लंब है। वृत्त पर त्रिज्या के अंतिम बिंदु से उस त्रिज्या पर लंब रेखा स्पर्श रेखा होती है। यही ज्यामितीय औचित्य है। समकोण चिह्न संबंध दर्ज करता है; केवल छोटा वर्ग बना देना किसी मनमानी रेखा के लंब होने का प्रमाण नहीं है।"
+      },
+      "question": {
+        "en": "Which geometric relationship justifies this stage?",
+        "hi": "कौन सा ज्यामितीय संबंध इस चरण को सही ठहराता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Check Length and Limits",
+        "hi": "लंबाई और सीमाएँ जाँचें"
+      },
+      "body": {
+        "en": "The two tangent segments from the same external point are equal: PT = PU. If OP = d and the circle radius is r, right triangle OTP gives PT² = d² − r², provided d > r. This formula is a useful check, not a replacement for constructing the contact points. A point on the circle gives one tangent, while an interior point gives none. Keep these cases separate. In the completed drawing distinguish the original circle, the auxiliary circle, the radii and the two final tangents.",
+        "hi": "एक ही बाहरी बिंदु से खींचे दोनों स्पर्श खंड समान होते हैं: PT = PU। यदि OP = d और त्रिज्या r हो तो समकोण त्रिभुज OTP से PT² = d² − r² मिलता है, जहाँ d > r है। यह सूत्र उपयोगी जाँच है, स्पर्श बिंदु बनाने का विकल्प नहीं। वृत्त पर स्थित बिंदु पर एक स्पर्श रेखा होती है और भीतरी बिंदु से कोई नहीं। इन स्थितियों को अलग रखें। पूरे चित्र में मूल वृत्त, सहायक वृत्त, त्रिज्याएँ और दोनों अंतिम स्पर्श रेखाएँ अलग पहचानें।"
+      },
+      "question": {
+        "en": "Which geometric relationship justifies this stage?",
+        "hi": "कौन सा ज्यामितीय संबंध इस चरण को सही ठहराता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Tools, Accuracy and Line Convention",
+        "hi": "साधन, सटीकता और रेखा परंपरा"
+      },
+      "body": {
+        "en": "Use a sharp pencil, a ruler and a compass with a firm hinge. Draw construction lines lightly so that the required final shape can be distinguished from its supporting work. Keep the compass opening fixed whenever equal radii are required. Mark points with small clear intersections rather than large dark blobs. A ruler can measure the given data, while a straightedge connects established points. In a compass-and-straightedge explanation, state how each point is found instead of relying only on its appearance. Label the main points outside crowded intersections. Avoid tracing a line repeatedly: a broad uncertain stroke makes the measured relationship less clear. Keep the paper still while measuring and compare the result before darkening it. Screen coordinates are schematic and cannot be treated as physical centimetres. For the paper version use the dimensions assigned by your teacher and keep all units consistent. If a construction fails to meet its expected point, find the earlier measurement or compass error rather than bending the final line. Retain enough auxiliary work to explain the method. A technically correct drawing combines the required geometry with clear communication of how it was obtained.",
+        "hi": "नुकीली पेंसिल, पैमाना और मजबूत जोड़ वाला परकार लें। निर्माण रेखाएँ हल्की बनाएँ ताकि माँगी गई अंतिम आकृति उसके सहायक कार्य से अलग दिखे। जहाँ समान त्रिज्या चाहिए वहाँ परकार का खुलाव स्थिर रखें। बड़े गहरे धब्बे के बजाय छोटे स्पष्ट प्रतिच्छेद से बिंदु चिह्नित करें। पैमाना दिए माप ले सकता है और सीधी धार स्थापित बिंदुओं को जोड़ती है। परकार तथा सीधी धार की व्याख्या में बताएँ कि हर बिंदु कैसे मिला; केवल दिखने पर भरोसा न करें। प्रमुख बिंदुओं के नाम भीड़ वाले प्रतिच्छेद से बाहर लिखें। एक रेखा बार बार न खींचें क्योंकि चौड़ा अनिश्चित निशान मापा हुआ संबंध अस्पष्ट करता है। मापते समय कागज स्थिर रखें और गहरा करने से पहले परिणाम मिलाएँ। स्क्रीन के निर्देशांक सांकेतिक हैं; उन्हें वास्तविक सेंटीमीटर न मानें। कागज पर शिक्षक के दिए माप लें और सभी इकाइयाँ समान रखें। अपेक्षित बिंदु न मिले तो अंतिम रेखा मोड़ने के बजाय पहले के माप या परकार की गलती खोजें। विधि समझाने लायक सहायक कार्य रखें। सटीक प्राविधिक चित्र में सही ज्यामिति और उसे प्राप्त करने की स्पष्ट जानकारी दोनों चाहिए।"
+      },
+      "question": {
+        "en": "Which lines are construction guides and which form the required answer?",
+        "hi": "कौन सी रेखाएँ सहायक हैं और कौन माँगा गया उत्तर बनाती हैं?"
+      }
+    },
+    {
+      "title": {
+        "en": "Review, Practice and Self-assessment",
+        "hi": "समीक्षा, अभ्यास और स्वमूल्यांकन"
+      },
+      "body": {
+        "en": "Pause after the outline, the main construction and the final treatment. At each pause compare the actual result with the purpose of this particular study. Identify one measurable relationship rather than saying only that the drawing looks nice. It may be a width-to-height ratio, a repeated interval, the position of a light area or a required perpendicular. Turn the paper slightly or view it from farther away to notice an imbalance, then return to the intended viewpoint for corrections. Keep early lines light enough to revise. Make one deliberate correction before adding decoration. In your notebook record the material, the main decision, the error you found and the correction you made. For a second attempt keep the central principle but change one condition, such as scale, placement or the selected colour. Compare the two versions and explain why one communicates the idea more clearly. A finished drawing should show purposeful choices, not merely a greater number of details. Use the observation questions to describe visible evidence. Use the reference sheet as a reminder of order rather than a substitute for practice. In the final five-line description mention the subject, structure, important contrast, technique and one improvement. Respect the teacher’s assigned dimensions and medium when adapting this screen study to an assessed drawing.",
+        "hi": "रूपरेखा, मुख्य निर्माण और अंतिम उपचार के बाद थोड़ी देर रुकें। हर बार बने परिणाम को इसी अध्ययन के उद्देश्य से मिलाएँ। केवल चित्र अच्छा है कहने के बजाय कोई जाँचने योग्य संबंध बताएँ। वह चौड़ाई और ऊँचाई का अनुपात, दोहराई दूरी, हल्के भाग की जगह या आवश्यक समकोण हो सकता है। चित्र को कुछ दूर से देखकर असंतुलन पहचानें, फिर सुधार के लिए निर्धारित देखने की स्थिति पर लौटें। आरंभिक रेखाएँ इतनी हल्की रखें कि संशोधन संभव हो। सजावट बढ़ाने से पहले एक स्पष्ट गलती सुधारें। अभ्यास कॉपी में सामग्री, मुख्य निर्णय, मिली गलती और किए सुधार को अलग लिखें। दूसरे प्रयास में मूल सिद्धांत समान रखें, पर आकार, स्थान या रंग में से एक बात बदलें। दोनों परिणामों की तुलना करके समझाएँ कि कौन विचार अधिक स्पष्ट दिखाता है। पूरा चित्र केवल अधिक विवरण वाला नहीं, सोचकर लिए निर्णयों वाला होना चाहिए। अवलोकन प्रश्नों के उत्तर में दिखाई देने वाला प्रमाण दें। संदर्भ पत्रक क्रम याद रखने में मदद करता है; वह हाथ से अभ्यास का विकल्प नहीं है। अंतिम 5 पंक्तियों में विषय, संरचना, प्रमुख अंतर, तकनीक और एक सुधार लिखें। मूल्यांकन के लिए स्क्रीन के चित्र को कागज पर बनाते समय शिक्षक द्वारा दिए माप और माध्यम का पालन करें।"
+      },
+      "question": {
+        "en": "Name one specific correction and explain what it improves.",
+        "hi": "एक निश्चित सुधार बताएँ और समझाएँ कि उससे क्या बेहतर होता है।"
+      }
+    }
+  ],
+  "artStepTips": [
+    {
+      "title": {
+        "en": "Original circle",
+        "hi": "मूल वृत्त"
+      },
+      "tip": {
+        "en": "Draw the circle with centre O.",
+        "hi": "O केंद्र वाला वृत्त बनाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "External point",
+        "hi": "बाहरी बिंदु"
+      },
+      "tip": {
+        "en": "Place P outside the circle.",
+        "hi": "P को वृत्त के बाहर रखें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Join OP",
+        "hi": "OP जोड़ें"
+      },
+      "tip": {
+        "en": "Connect centre and external point.",
+        "hi": "केंद्र और बाहरी बिंदु जोड़ें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Midpoint M",
+        "hi": "मध्यबिंदु M"
+      },
+      "tip": {
+        "en": "Bisect OP accurately.",
+        "hi": "OP को ठीक समद्विभाजित करें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Auxiliary circle",
+        "hi": "सहायक वृत्त"
+      },
+      "tip": {
+        "en": "Use OP as diameter.",
+        "hi": "OP को व्यास लें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Contact points",
+        "hi": "स्पर्श बिंदु"
+      },
+      "tip": {
+        "en": "Mark intersections T and U.",
+        "hi": "प्रतिच्छेद T और U चिह्नित करें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Radii",
+        "hi": "त्रिज्याएँ"
+      },
+      "tip": {
+        "en": "Draw OT and OU.",
+        "hi": "OT और OU बनाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Tangents",
+        "hi": "स्पर्श रेखाएँ"
+      },
+      "tip": {
+        "en": "Join PT and PU.",
+        "hi": "PT और PU जोड़ें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Right angles",
+        "hi": "समकोण"
+      },
+      "tip": {
+        "en": "Check perpendicular radius and tangent.",
+        "hi": "त्रिज्या और स्पर्श रेखा का लंब संबंध जाँचें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Final review",
+        "hi": "अंतिम समीक्षा"
+      },
+      "tip": {
+        "en": "Confirm PT = PU and both right angles.",
+        "hi": "PT = PU और दोनों समकोण सुनिश्चित करें।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Beginner",
+      "title": {
+        "en": "Beginner study",
+        "hi": "प्रारंभिक अध्ययन"
+      },
+      "well": {
+        "en": "The circle centre O and external point P are clearly identified.",
+        "hi": "वृत्त केंद्र O और बाहरी बिंदु P स्पष्ट हैं।"
+      },
+      "improve": {
+        "en": "In your construction, make the auxiliary circle lighter than PT and PU.",
+        "hi": "अपने निर्माण में सहायक वृत्त PT और PU से हल्का रखें।"
+      }
+    },
+    {
+      "level": "Intermediate",
+      "title": {
+        "en": "Intermediate study",
+        "hi": "मध्यम अध्ययन"
+      },
+      "well": {
+        "en": "The circle with diameter OP locates the contact points T and U.",
+        "hi": "OP व्यास वाला वृत्त स्पर्श बिंदु T और U तय करता है।"
+      },
+      "improve": {
+        "en": "Check that M is exactly the midpoint of OP before drawing the auxiliary circle.",
+        "hi": "सहायक वृत्त से पहले जाँचें कि M ठीक OP का मध्यबिंदु है।"
+      }
+    },
+    {
+      "level": "Good",
+      "title": {
+        "en": "Good study",
+        "hi": "अच्छा अध्ययन"
+      },
+      "well": {
+        "en": "The radii meet the two tangents at right angles and PT equals PU.",
+        "hi": "त्रिज्याएँ दोनों स्पर्श रेखाओं से समकोण बनाती हैं और PT = PU है।"
+      },
+      "improve": {
+        "en": "Repeat with a different external point and verify both perpendicular relationships.",
+        "hi": "दूसरा बाहरी बिंदु लेकर दोनों लंब संबंध फिर जाँचें।"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "question": {
+        "en": "Where is P?",
+        "hi": "P कहाँ है?"
+      },
+      "answer": {
+        "en": "Outside the original circle.",
+        "hi": "मूल वृत्त के बाहर।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the auxiliary diameter?",
+        "hi": "सहायक वृत्त का व्यास क्या है?"
+      },
+      "answer": {
+        "en": "OP.",
+        "hi": "OP।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is M?",
+        "hi": "M क्या है?"
+      },
+      "answer": {
+        "en": "The midpoint of OP.",
+        "hi": "OP का मध्यबिंदु।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is PT a tangent?",
+        "hi": "PT स्पर्श रेखा क्यों है?"
+      },
+      "answer": {
+        "en": "It is perpendicular to radius OT at T on the circle.",
+        "hi": "वह वृत्त के T बिंदु पर त्रिज्या OT से लंब है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which lengths are equal?",
+        "hi": "कौन सी लंबाइयाँ समान हैं?"
+      },
+      "answer": {
+        "en": "The two tangent segments PT and PU.",
+        "hi": "दोनों स्पर्श खंड PT और PU।"
+      }
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "Why is the order of construction important in this study?",
+        "hi": "इस अध्ययन में निर्माण का क्रम महत्त्वपूर्ण क्यों है?"
+      },
+      "answer": {
+        "en": "Large reference relationships support later details. If the underlying structure is wrong, adding finish hides the error without correcting it. Establish and check the foundation first.",
+        "hi": "बड़े संदर्भ संबंध आगे के विवरण का आधार हैं। मूल संरचना गलत हो तो अंतिम उपचार गलती सुधारने के बजाय उसे छिपाता है। पहले आधार बनाकर उसकी जाँच करें।"
+      }
+    },
+    {
+      "question": {
+        "en": "How would you improve a second attempt?",
+        "hi": "दूसरे प्रयास को कैसे सुधारेंगे?"
+      },
+      "answer": {
+        "en": "Identify a specific problem using the observation questions, practise that relationship on scrap paper, then repeat the study while changing only one chosen variable. Compare visible evidence.",
+        "hi": "अवलोकन प्रश्नों से एक निश्चित समस्या पहचानें, अलग कागज पर उस संबंध का अभ्यास करें और केवल एक चुनी बात बदलकर अध्ययन दोहराएँ। दिखाई देने वाले प्रमाण की तुलना करें।"
+      }
+    }
+  ],
+  "description": {
+    "question": {
+      "en": "Describe this study in 5 lines: subject, structure, method, emphasis and one improvement.",
+      "hi": "इस अध्ययन को 5 पंक्तियों में लिखें: विषय, संरचना, विधि, प्रमुखता और एक सुधार।"
+    },
+    "answer": {
+      "en": "1. The subject is Tangents to a Circle.\n2. The given reference geometry is established first.\n3. Light auxiliary lines locate the required points.\n4. The final relationships are checked mathematically.\n5. Clear labels distinguish the result from the construction.",
+      "hi": "1. विषय वृत्त की स्पर्श रेखाएँ है।\n2. पहले दिया संदर्भ ज्यामितीय ढाँचा बनाया गया है।\n3. हल्की सहायक रेखाएँ आवश्यक बिंदु खोजती हैं।\n4. अंतिम संबंधों की गणितीय जाँच होती है।\n5. साफ नामांकन परिणाम को निर्माण से अलग करता है।"
+    }
+  },
+  "why": {
+    "en": "The angle in a semicircle creates the required perpendicular radius–tangent relationship.",
+    "hi": "अर्धवृत्त का कोण आवश्यक त्रिज्या–स्पर्श रेखा का लंब संबंध बनाता है।"
+  },
+  "palette": [
+    {
+      "name": {
+        "en": "Paper",
+        "hi": "कागज"
+      },
+      "color": "#F6EBD6"
+    },
+    {
+      "name": {
+        "en": "Warm ochre",
+        "hi": "गेरुआ पीला"
+      },
+      "color": "#CDA45F"
+    },
+    {
+      "name": {
+        "en": "Blue green",
+        "hi": "नील हरित"
+      },
+      "color": "#4B8583"
+    },
+    {
+      "name": {
+        "en": "Muted red",
+        "hi": "मद्धिम लाल"
+      },
+      "color": "#B86658"
+    },
+    {
+      "name": {
+        "en": "Graphite",
+        "hi": "ग्रेफाइट"
+      },
+      "color": "#344E58"
+    }
+  ],
+  "commonMistakes": {
+    "en": "Avoid pressing the first lines too hard, adding details before checking the main relationships, and copying the screen without understanding each step. Use the topic-specific checks in the notes.",
+    "hi": "शुरू की रेखाओं पर अधिक दबाव, मुख्य संबंध जाँचे बिना विवरण और चरण समझे बिना स्क्रीन की नकल से बचें। नोट्स में दिए इस विषय के विशेष परीक्षण करें।"
+  },
+  "spotStep": {
+    "question": {
+      "en": "Which step joins the two tangents from P?",
+      "hi": "P से दोनों स्पर्श रेखाएँ किस चरण में जुड़ती हैं?"
+    },
+    "correct": 7,
+    "reason": {
+      "en": "Step 8: Join PT and PU.",
+      "hi": "चरण 8: PT और PU जोड़ें।"
+    }
+  },
+  "missions": [
+    {
+      "label": {
+        "en": "Complete all 10 drawing stages.",
+        "hi": "चित्रण के सभी 10 चरण पूरे करें।"
+      },
+      "key": "step",
+      "min": 9
+    },
+    {
+      "label": {
+        "en": "Find the step: Tangents.",
+        "hi": "चरण खोजें: स्पर्श रेखाएँ।"
+      },
+      "key": "spot",
+      "min": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "UPMSP: Class 10 Art (Drawing), 2026–27 official syllabus",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/936-Art(drawing)-Class-10.pdf"
+    }
+  ],
+  "scopeNote": {
+    "en": "These 12 teaching topics organise skills from the UP Board Art syllabus; they are not official textbook chapter numbers. Screen examples are original demonstrations. Practice here uses observation and description; the official examination also includes an objective section.",
+    "hi": "ये 12 शिक्षण विषय यूपी बोर्ड कला पाठ्यक्रम के कौशल व्यवस्थित करते हैं; ये आधिकारिक पाठ्यपुस्तक अध्याय संख्याएँ नहीं हैं। स्क्रीन के उदाहरण मौलिक प्रदर्शन हैं। यहाँ अभ्यास अवलोकन और वर्णन पर आधारित है; आधिकारिक परीक्षा में वस्तुनिष्ठ खंड भी होता है।"
+  }
+}

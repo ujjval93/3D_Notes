@@ -1,0 +1,1065 @@
+{
+  "number": 11,
+  "id": "biology12-11",
+  "title": {
+    "en": "Organisms and Populations",
+    "hi": "जीव और समष्टियाँ"
+  },
+  "unit": {
+    "en": "Biology",
+    "hi": "जीव विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "A population is a measurable group",
+        "hi": "समष्टि एक मापने योग्य समूह"
+      },
+      "paragraphs": [
+        {
+          "en": "A population consists of individuals of the same species occupying a defined area at a given time. A community includes populations of different species. Population density is measured per area or volume and can use number, biomass or percent cover depending on the organism. State the sampling boundary and date; a count without them cannot define density.",
+          "hi": "समष्टि (Population) किसी निश्चित क्षेत्र में निश्चित समय पर रहने वाले एक ही प्रजाति के व्यक्तियों का समूह है। तालाब की सभी मछलियाँ मिलकर हमेशा 1 समष्टि नहीं बनातीं, क्योंकि उनमें कई प्रजातियाँ हो सकती हैं। उसी तालाब की किसी 1 मछली प्रजाति के व्यक्ति समष्टि बनाते हैं। अनेक प्रजातियों की समष्टियाँ मिलकर समुदाय (Community) बनाती हैं। समष्टि घनत्व (Population density) प्रति इकाई क्षेत्र या आयतन में उसकी उपस्थिति का माप है। घास के लिए व्यक्ति गिनना उपयोगी हो सकता है, जबकि फैलती घास की चादर में प्रतिशत आवरण बेहतर माप देता है। किसी विशाल बरगद और छोटी घास को केवल व्यक्ति संख्या से तुलना करना जैवभार का अंतर छिपा सकता है। इसलिए माप का चुनाव अध्ययन प्रश्न पर निर्भर है। नमूना क्षेत्र, समय और इकाई लिखे बिना गिनती को घनत्व न कहें। क्षेत्र बदलने पर कुल संख्या और प्रति इकाई संख्या अलग ढंग से बदल सकती हैं। पहले प्रजाति पहचानें, फिर अध्ययन सीमा निश्चित करें और उपयुक्त माप चुनें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A count, biomass and cover answer different questions.",
+          "hi": "व्यक्ति संख्या, जैवभार और आवरण अलग प्रश्नों के उत्तर देते हैं; तुलना में एक ही प्रकार का माप इस्तेमाल करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a pond containing 3 fish species contain only 1 fish population?",
+          "hi": "3 मछली प्रजातियों वाला तालाब क्या केवल 1 मछली समष्टि रखता है?"
+        },
+        "answer": {
+          "en": "No; each species has its own population in the defined area.",
+          "hi": "नहीं; निर्धारित क्षेत्र में हर प्रजाति की अलग समष्टि है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Birth, death and movement",
+        "hi": "जन्म, मृत्यु और आवागमन"
+      },
+      "paragraphs": [
+        {
+          "en": "Natality adds individuals through birth; mortality removes them through death. Immigration adds arrivals and emigration removes departures. N at the next time equals the original population plus births and immigrants minus deaths and emigrants. Per-capita rates divide an event count by population size and the stated time interval.",
+          "hi": "जन्मता (Natality) से नए व्यक्ति जुड़ते हैं और मृत्यता (Mortality) से व्यक्ति घटते हैं। आप्रवासन (Immigration) में बाहर से व्यक्ति अध्ययन क्षेत्र में आते हैं, जबकि उत्प्रवासन (Emigration) में व्यक्ति बाहर जाते हैं। इन 4 प्रक्रियाओं के कारण समष्टि का आकार बदलता है। यदि आरंभ में N व्यक्ति हों, जन्म B, मृत्यु D, आगमन I और निर्गमन E हों, तो अगली गिनती N+B+I−D−E होगी। यह लेखा तभी सही है जब सभी घटनाएँ एक ही क्षेत्र और अवधि की हों। जन्म दर को समझते समय कुल जन्म और प्रति व्यक्ति जन्म दर अलग रखें। 100 व्यक्तियों में 20 जन्म तथा 1000 में 20 जन्म की कुल संख्या समान है, पर प्रति व्यक्ति प्रभाव अलग है। छोटे अध्ययन में बाहर से आगमन को जन्म मान लेने पर वृद्धि का कारण गलत निकलेगा। इसी तरह किसी जीव का दिखाई न देना तुरंत मृत्यु का प्रमाण नहीं; वह क्षेत्र से बाहर जा सकता है। प्रश्न में बंद समष्टि दी हो तो I और E को 0 माना जा सकता है, लेकिन खुले क्षेत्र में यह मान्यता लिखनी चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Always use one interval for all demographic events.",
+          "hi": "चारों घटनाओं की अवधि समान रखें; वार्षिक जन्म को मासिक मृत्यु से सीधे घटाना सही तुलना नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which two processes directly add individuals?",
+          "hi": "कौन सी 2 प्रक्रियाएँ व्यक्ति सीधे जोड़ती हैं?"
+        },
+        "answer": {
+          "en": "Births and immigration.",
+          "hi": "जन्म और आप्रवासन।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Age structure and sex ratio",
+        "hi": "आयु संरचना और लिंग अनुपात"
+      },
+      "paragraphs": [
+        {
+          "en": "Age structure divides individuals into pre-reproductive, reproductive and post-reproductive groups. An age pyramid describes proportions rather than guaranteeing a future. A broad young base often indicates growth potential under suitable survival and reproduction. Sex ratio is a population attribute; an individual does not possess a population sex ratio.",
+          "hi": "आयु संरचना (Age structure) बताती है कि समष्टि में अलग आयु समूहों के व्यक्ति कितने हैं। सामान्य अध्ययन में पूर्वजनन, जनन और पश्चजनन समूह बनाए जाते हैं। आयु पिरैमिड (Age pyramid) में इन समूहों के अनुपात दिखते हैं। चौड़ा युवा आधार आगे वृद्धि की संभावना बता सकता है, पर भविष्य निश्चित नहीं करता। भोजन की कमी, रोग, मृत्यु और प्रवासन वास्तविक संख्या बदल सकते हैं। स्थिर जैसी संरचना में समूहों का अनुपात अपेक्षाकृत संतुलित होता है, जबकि छोटी युवा पीढ़ी घटती समष्टि का संकेत दे सकती है। लिंग अनुपात (Sex ratio) भी समष्टि का गुण है। किसी 1 व्यक्ति का लिंग जैविक विशेषता हो सकती है, लेकिन उस व्यक्ति का समष्टि लिंग अनुपात नहीं होता। अनुपात लिखते समय बताएँ कि मादा प्रति नर, नर प्रति मादा या कोई अन्य आधार लिया गया है। 60 मादाएँ और 40 नर हों तो मादा:नर 3:2 होगा। चित्र की चौड़ाई पढ़ने से पहले उसकी कुंजी देखें; कुछ चित्र संख्या बताते हैं और कुछ प्रतिशत। छोटे नमूने की संरचना को बिना जाँच पूरे क्षेत्र पर लागू नहीं करना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A pyramid shows a snapshot of structure, not an unavoidable prediction.",
+          "hi": "पिरैमिड संरचना की समय विशेष की झलक है; उसे बिना शर्त भविष्यवाणी न बनाएँ।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a broad young base guarantee population growth?",
+          "hi": "क्या चौड़ा युवा आधार वृद्धि की गारंटी है?"
+        },
+        "answer": {
+          "en": "No; future survival, births and movement still matter.",
+          "hi": "नहीं; आगे जीवित रहना, जन्म और आवागमन भी महत्त्वपूर्ण हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Exponential growth under ideal conditions",
+        "hi": "आदर्श दशाओं में चरघातांकी वृद्धि"
+      },
+      "paragraphs": [
+        {
+          "en": "With unlimited resources and constant per-capita intrinsic rate r, dN/dt=rN and N(t)=N0e^(rt). A positive r produces a J-shaped curve; negative r gives decline. The derivative is an instantaneous model rate, not a direct count of actual births. The assumptions seldom persist indefinitely in nature.",
+          "hi": "जब संसाधन असीम माने जाएँ और प्रति व्यक्ति आंतरिक वृद्धि दर r स्थिर हो, तब चरघातांकी वृद्धि (Exponential growth) का मॉडल dN/dt=rN है। इसका हल N(t)=N0e^(rt) है, जहाँ N0 आरंभिक संख्या और t बीता समय है। r धनात्मक हो तो संख्या बढ़ती है और वृद्धि का आलेख J आकार का होता है। बड़ी समष्टि में उसी r पर प्रति समय जुड़ने वाली संख्या अधिक होती है, क्योंकि r को N से गुणा करते हैं। r=0 पर इस मॉडल में संख्या स्थिर रहती है, जबकि ऋणात्मक r गिरावट देता है। समय की इकाई r की इकाई से मिलनी चाहिए; वर्ष के व्युत्क्रम वाली दर के साथ महीनों को बिना बदले न रखें। dN/dt क्षणिक मॉडल दर है, वास्तविक जन्मों की अलग गिनती नहीं। वास्तविक जीव पूर्णांक में गिने जाते हैं, पर मॉडल निरंतर मान दे सकता है। प्रकृति में भोजन, स्थान और शत्रुओं की सीमाएँ लंबे समय तक असीम वृद्धि रोकती हैं। इसलिए J वक्र को अनंत भविष्य का निश्चित दावा नहीं, चुनी मान्यताओं का परिणाम समझें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "State resource and constant-rate assumptions before applying the formula.",
+          "hi": "सूत्र लगाने से पहले संसाधन और स्थिर दर की मान्यताएँ लिखें; केवल सुडौल वक्र से मॉडल सही सिद्ध नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At the same positive r, is dN/dt greater for N=100 or N=200?",
+          "hi": "समान धनात्मक r पर N=100 या N=200 में वृद्धि दर अधिक है?"
+        },
+        "answer": {
+          "en": "For N=200, since rN doubles.",
+          "hi": "N=200 में, क्योंकि rN दुगुना होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Logistic growth and carrying capacity",
+        "hi": "संभार क्षमता और लॉजिस्टिक वृद्धि"
+      },
+      "paragraphs": [
+        {
+          "en": "Logistic growth includes a carrying capacity K: dN/dt=rN(1−N/K). At N=K the model net growth is zero. For fixed positive r and K, total growth is maximal at K/2, although per-capita growth falls continuously as N rises. K depends on environmental conditions and can change.",
+          "hi": "सीमित संसाधनों के लिए लॉजिस्टिक वृद्धि (Logistic growth) उपयोगी आदर्श मॉडल है। इसमें dN/dt=rN(1−N/K) लिखते हैं। K वातावरण की संभार क्षमता (Carrying capacity) है, अर्थात दी परिस्थितियों में लंबे समय तक समर्थित समष्टि का आदर्श स्तर। N बहुत छोटा हो तो 1−N/K लगभग 1 रहता है और आरंभिक वृद्धि चरघातांकी जैसी होती है। N बढ़ने पर यह गुणक घटता है, इसलिए वृद्धि धीमी पड़ती है और S आकार का वक्र बनता है। N=K पर शुद्ध मॉडल वृद्धि 0 है; इसका अर्थ हर जन्म और मृत्यु बंद होना नहीं, उनका कुल प्रभाव संतुलित होना है। स्थिर धनात्मक r और K पर कुल वृद्धि दर N=K/2 पर सबसे अधिक है। इसे प्रति व्यक्ति वृद्धि दर से न मिलाएँ, जो N बढ़ने पर लगातार घटती है। वास्तविक सूखे, मौसम या आवास परिवर्तन से K बदल सकता है। इसलिए K को किसी प्रजाति की हर स्थान पर समान स्थायी संख्या न मानें। आदर्श वक्र वास्तविक उतार-चढ़ाव का पूरा विवरण नहीं देता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "At carrying capacity births and deaths may continue despite zero net growth.",
+          "hi": "संभार क्षमता पर शुद्ध वृद्धि 0 होते हुए भी जन्म और मृत्यु जारी रह सकते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Where is total logistic growth greatest?",
+          "hi": "लॉजिस्टिक कुल वृद्धि सबसे अधिक कहाँ होती है?"
+        },
+        "answer": {
+          "en": "At N=K/2 for fixed positive r and K.",
+          "hi": "स्थिर धनात्मक r और K पर N=K/2।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Predation and competition",
+        "hi": "परभक्षण और स्पर्धा"
+      },
+      "paragraphs": [
+        {
+          "en": "Predation benefits the predator and harms the prey. It transfers energy and can regulate prey populations. Competition is a negative effect on both participants when a shared resource is limiting; it can occur between different species. Resource partitioning may reduce direct overlap. Competitive exclusion has defined ecological conditions rather than being a universal instant rule.",
+          "hi": "परभक्षण (Predation) में एक जीव दूसरे को खाकर लाभ पाता है और शिकार को हानि होती है; संकेत +,− है। यह ऊर्जा को पोषी स्तरों में पहुँचाता है और शिकार की समष्टि पर नियंत्रण रख सकता है। परभक्षी हटाने पर हर परिस्थिति में केवल लाभ नहीं होता; शिकार की अधिक संख्या पौधों या अन्य संसाधनों पर दबाव बढ़ा सकती है। स्पर्धा (Competition) तब समझते हैं जब साझा सीमित संसाधन के उपयोग से दोनों पक्षों पर नकारात्मक प्रभाव पड़ता है; इसका संकेत −,− है। स्पर्धा केवल एक ही प्रजाति में नहीं, भिन्न प्रजातियों में भी हो सकती है। भोजन का समय, स्थान या आकार अलग इस्तेमाल करने से संसाधन विभाजन (Resource partitioning) हो सकता है। इससे प्रत्यक्ष टकराव घट सकता है। प्रतिस्पर्धी बहिष्करण के सिद्धांत को तुरंत हर परिस्थिति में एक प्रजाति गायब होने का नियम न बनाएँ; संसाधन, स्थिरता और पारिस्थितिक भूमिका महत्त्वपूर्ण हैं। किसी चित्र में 2 जीव पास दिखाई देने भर से स्पर्धा सिद्ध नहीं होती। पहले साझा सीमित संसाधन और वास्तविक प्रभाव का प्रमाण खोजें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Signs describe effects, not moral labels such as good or bad organisms.",
+          "hi": "संकेत जैविक प्रभाव बताते हैं; जीवों को नैतिक रूप से अच्छा या बुरा बताने के लिए नहीं हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What sign pair represents competition?",
+          "hi": "स्पर्धा का संकेत युग्म क्या है?"
+        },
+        "answer": {
+          "en": "−,− because both are negatively affected by the interaction.",
+          "hi": "−,− क्योंकि पारस्परिक क्रिया से दोनों पर नकारात्मक प्रभाव होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Parasitism, mutualism and commensalism",
+        "hi": "परजीविता, सहोपकारिता और सहभोजिता"
+      },
+      "paragraphs": [
+        {
+          "en": "A parasite benefits at the expense of a host and often has life-cycle adaptations for host use. Mutualism gives benefits to both partners, as in many mycorrhizal associations. Commensalism benefits one while the other has no measured benefit or harm in the stated context. These categories depend on actual effects and environmental context.",
+          "hi": "परजीविता (Parasitism) में परजीवी पोषक से भोजन या आश्रय लेकर लाभ पाता है और पोषक पर हानिकारक प्रभाव होता है। इसका संकेत +,− है, लेकिन यह परभक्षण से जीवन संबंध और उपयोग के ढंग में अलग है। अनेक परजीवियों में चिपकने के अंग, अधिक प्रजनन या जटिल जीवन चक्र जैसी अनुकूलन विशेषताएँ मिलती हैं। सहोपकारिता (Mutualism) में दोनों भागीदार लाभ पाते हैं; संकेत +,+ है। जड़ और कवक के अनेक माइकोराइजा संबंध में पौधे को खनिज ग्रहण में सहायता मिलती है और कवक को कार्बनिक भोजन मिलता है। सहभोजिता (Commensalism) में 1 जीव लाभ पाता है, जबकि दूसरे पर उस अध्ययन में स्पष्ट लाभ या हानि नहीं मापी जाती; संकेत +,0 है। पेड़ पर बढ़ने वाला अधिपादपी ऑर्किड सहारे का उदाहरण है; उसे सीधे पेड़ का भोजन चूसने वाला परजीवी न मानें। वास्तविक संबंध परिस्थिति बदलने पर अलग प्रभाव दे सकते हैं। इसलिए केवल निकटता या नाम के आधार पर श्रेणी न चुनें, बल्कि कौन क्या प्राप्त करता और किसे हानि होती है, यह स्पष्ट लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use +, +; +, −; and +, 0 only after identifying each partner’s effect.",
+          "hi": "दोनों भागीदारों का प्रभाव पहचानने के बाद ही +,+, +,− या +,0 लिखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is an epiphytic orchid not automatically a parasite?",
+          "hi": "अधिपादपी ऑर्किड अपने आप परजीवी क्यों नहीं है?"
+        },
+        "answer": {
+          "en": "It uses the tree mainly as support, not necessarily as a food source.",
+          "hi": "वह मुख्यतः सहारा लेता है, आवश्यक रूप से पेड़ से भोजन नहीं खींचता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Interpreting a population investigation",
+        "hi": "समष्टि अध्ययन का निष्कर्ष पढ़ना"
+      },
+      "paragraphs": [
+        {
+          "en": "Population investigation needs a repeatable boundary, appropriate samples and clear denominators. Quadrat counts estimate local plant density; not every moving animal can be counted with the same method. Average density is total individuals across equal sampled areas divided by total sampled area. An observed association alone does not establish a cause.",
+          "hi": "समष्टि अध्ययन में अनुमान और प्रत्यक्ष गिनती अलग रखें। पूरे बड़े घास के मैदान को गिनना कठिन हो तो समान क्षेत्रफल वाले क्वाड्रेट (Quadrat) से नमूने लिए जा सकते हैं। नमूनों का स्थान किसी पसंदीदा घने भाग तक सीमित करने से औसत पक्षपाती होगा। बराबर क्षेत्रफल के नमूनों में कुल व्यक्तियों को कुल नमूना क्षेत्र से भाग देकर औसत घनत्व मिलता है। यह अनुमान पूरे क्षेत्र के लिए तभी उपयोगी है जब नमूने प्रतिनिधि हों। तेजी से घूमते जानवरों पर पौधों की यही विधि सीधे लागू नहीं की जा सकती। दो तिथियों की तुलना में मौसम, अध्ययन सीमा, पहचान विधि और प्रयास समान या दर्ज होने चाहिए। यदि परभक्षी और शिकार दोनों घटें, तो केवल साथ घटने से एक को दूसरे का कारण न मानें; आवास या मौसम दोनों को प्रभावित कर सकते हैं। उत्तर में पहले आँकड़ा, फिर गणना, फिर सीमित निष्कर्ष लिखें। उचित इकाई और मान्यता जोड़ने से छोटा उत्तर भी वैज्ञानिक बनता है। समष्टि के गुण व्यक्ति के गुणों से अलग स्तर पर समझे जाते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Report sampling uncertainty instead of treating an estimate as a perfect census.",
+          "hi": "नमूना अनुमान को पूर्ण जनगणना न मानें; स्थान, समय और अनिश्चितता निष्कर्ष का हिस्सा हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the density if 40 plants occur in a total sampled area of 10 m²?",
+          "hi": "10 m² कुल नमूना क्षेत्र में 40 पौधे हों तो घनत्व क्या है?"
+        },
+        "answer": {
+          "en": "4 plants m⁻².",
+          "hi": "4 पौधे m⁻²।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Density=N/A",
+      "meaning": {
+        "en": "N is the count in sampled area A.",
+        "hi": "N, नमूना क्षेत्र A में व्यक्ति संख्या है।"
+      },
+      "units": {
+        "en": "Individuals per unit area, for example m⁻².",
+        "hi": "प्रति इकाई क्षेत्र व्यक्ति, जैसे m⁻²।"
+      }
+    },
+    {
+      "expression": "Nnext=N+B+I−D−E",
+      "meaning": {
+        "en": "Births and immigrants add; deaths and emigrants subtract.",
+        "hi": "जन्म और आप्रवासन जोड़ते, मृत्यु और उत्प्रवासन घटाते हैं।"
+      },
+      "units": {
+        "en": "All counts refer to one interval.",
+        "hi": "सभी गिनतियाँ 1 अवधि की हों।"
+      }
+    },
+    {
+      "expression": "dN/dt=rN; dN/dt=rN(1−N/K)",
+      "meaning": {
+        "en": "Exponential and logistic ideal growth laws.",
+        "hi": "चरघातांकी और लॉजिस्टिक आदर्श वृद्धि नियम।"
+      },
+      "units": {
+        "en": "r: time⁻¹; growth: individuals time⁻¹; K,N: individuals.",
+        "hi": "r: समय⁻¹; वृद्धि: व्यक्ति समय⁻¹; K,N: व्यक्ति।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Calculate a population density.",
+        "hi": "समष्टि घनत्व निकालें।"
+      },
+      "given": {
+        "en": "80 plants in 20 m².",
+        "hi": "20 m² में 80 पौधे।"
+      },
+      "find": {
+        "en": "Plants per m².",
+        "hi": "प्रति m² पौधे।"
+      },
+      "formula": {
+        "en": "Density=N/A",
+        "hi": "घनत्व=N/A"
+      },
+      "steps": [
+        {
+          "en": "Choose number as the density measure.",
+          "hi": "घनत्व के लिए व्यक्ति संख्या को माप चुनें।"
+        },
+        {
+          "en": "Divide 80 by the sampled 20 m².",
+          "hi": "80 को नमूना क्षेत्र 20 m² से भाग दें।"
+        },
+        {
+          "en": "Write the result with area in the denominator.",
+          "hi": "परिणाम में क्षेत्र की इकाई हर में लिखें।"
+        }
+      ],
+      "answer": {
+        "en": "4 plants m⁻².",
+        "hi": "4 पौधे m⁻²।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Update the population count.",
+        "hi": "नई समष्टि संख्या निकालें।"
+      },
+      "given": {
+        "en": "N=100, B=20, D=10, I=5, E=15 during one month.",
+        "hi": "1 महीने में N=100, B=20, D=10, I=5, E=15।"
+      },
+      "find": {
+        "en": "Next count.",
+        "hi": "अगली संख्या।"
+      },
+      "formula": {
+        "en": "Nnext=N+B+I−D−E",
+        "hi": "अगला N=N+B+I−D−E"
+      },
+      "steps": [
+        {
+          "en": "Add births and arrivals: 20+5=25.",
+          "hi": "जन्म और आगमन जोड़ें: 20+5=25।"
+        },
+        {
+          "en": "Add losses: 10+15=25.",
+          "hi": "कमी जोड़ें: 10+15=25।"
+        },
+        {
+          "en": "Compute 100+25−25 and retain the same boundary.",
+          "hi": "समान अध्ययन सीमा पर 100+25−25 निकालें।"
+        }
+      ],
+      "answer": {
+        "en": "100 individuals; zero net change does not mean no events.",
+        "hi": "100 व्यक्ति; शुद्ध परिवर्तन 0 होने का अर्थ घटनाएँ बंद होना नहीं।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Compare exponential model rates.",
+        "hi": "चरघातांकी मॉडल दर मिलाएँ।"
+      },
+      "given": {
+        "en": "r=0.2 year⁻¹, N=150.",
+        "hi": "r=0.2 वर्ष⁻¹, N=150।"
+      },
+      "find": {
+        "en": "Instantaneous dN/dt.",
+        "hi": "क्षणिक dN/dt।"
+      },
+      "formula": {
+        "en": "dN/dt=rN",
+        "hi": "dN/dt=rN"
+      },
+      "steps": [
+        {
+          "en": "Assume constant r and no limiting resource term.",
+          "hi": "स्थिर r और संसाधन सीमा पद न होना मानें।"
+        },
+        {
+          "en": "Multiply 0.2×150=30.",
+          "hi": "0.2×150=30 गुणा करें।"
+        },
+        {
+          "en": "Attach individuals per year; distinguish rate from total future count.",
+          "hi": "व्यक्ति प्रति वर्ष लिखें; दर को भविष्य की कुल संख्या से अलग रखें।"
+        }
+      ],
+      "answer": {
+        "en": "30 individuals year⁻¹ at that instant.",
+        "hi": "उस क्षण 30 व्यक्ति वर्ष⁻¹।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Calculate logistic growth below capacity.",
+        "hi": "संभार क्षमता से नीचे लॉजिस्टिक वृद्धि निकालें।"
+      },
+      "given": {
+        "en": "r=0.4 year⁻¹, N=50, K=200.",
+        "hi": "r=0.4 वर्ष⁻¹, N=50, K=200।"
+      },
+      "find": {
+        "en": "Instantaneous net growth.",
+        "hi": "क्षणिक शुद्ध वृद्धि।"
+      },
+      "formula": {
+        "en": "rN(1−N/K)",
+        "hi": "rN(1−N/K)"
+      },
+      "steps": [
+        {
+          "en": "Calculate N/K=50/200=0.25.",
+          "hi": "N/K=50/200=0.25 निकालें।"
+        },
+        {
+          "en": "The resource factor is 1−0.25=0.75.",
+          "hi": "संसाधन गुणक 1−0.25=0.75 है।"
+        },
+        {
+          "en": "Multiply 0.4×50×0.75=15.",
+          "hi": "0.4×50×0.75=15 गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "15 individuals year⁻¹.",
+        "hi": "15 व्यक्ति वर्ष⁻¹।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Locate the greatest logistic growth.",
+        "hi": "सबसे अधिक लॉजिस्टिक वृद्धि की स्थिति पहचानें।"
+      },
+      "given": {
+        "en": "r=0.2 year⁻¹ and K=1000; compare N=200,500,800.",
+        "hi": "r=0.2 वर्ष⁻¹ और K=1000; N=200,500,800 मिलाएँ।"
+      },
+      "find": {
+        "en": "Largest total rate.",
+        "hi": "सबसे बड़ी कुल दर।"
+      },
+      "formula": {
+        "en": "dN/dt=rN(1−N/K)",
+        "hi": "dN/dt=rN(1−N/K)"
+      },
+      "steps": [
+        {
+          "en": "At 200: 0.2×200×0.8=32.",
+          "hi": "200 पर: 0.2×200×0.8=32।"
+        },
+        {
+          "en": "At 500: 0.2×500×0.5=50.",
+          "hi": "500 पर: 0.2×500×0.5=50।"
+        },
+        {
+          "en": "At 800: 0.2×800×0.2=32.",
+          "hi": "800 पर: 0.2×800×0.2=32।"
+        },
+        {
+          "en": "Compare total rates, not per-capita factors.",
+          "hi": "प्रति व्यक्ति गुणकों की जगह कुल दरों की तुलना करें।"
+        }
+      ],
+      "answer": {
+        "en": "N=500=K/2; rate 50 individuals year⁻¹.",
+        "hi": "N=500=K/2; दर 50 व्यक्ति वर्ष⁻¹।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which defines one population?",
+        "hi": "1 समष्टि किससे बनती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Same species in a defined area and time",
+            "hi": "निश्चित क्षेत्र और समय में एक ही प्रजाति"
+          },
+          "reason": {
+            "en": "Species and boundary are specified.",
+            "hi": "प्रजाति और सीमा स्पष्ट हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All living species on Earth",
+            "hi": "पृथ्वी की सभी प्रजातियाँ"
+          },
+          "reason": {
+            "en": "That spans many populations.",
+            "hi": "इसमें अनेक समष्टियाँ हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the non-living environment",
+            "hi": "केवल निर्जीव पर्यावरण"
+          },
+          "reason": {
+            "en": "A population comprises organisms.",
+            "hi": "समष्टि जीवों से बनती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any two organisms anywhere",
+            "hi": "कहीं भी कोई 2 जीव"
+          },
+          "reason": {
+            "en": "Species, area and time cannot be ignored.",
+            "hi": "प्रजाति, क्षेत्र और समय नहीं छोड़ सकते।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which increases a count by arrival?",
+        "hi": "आगमन से संख्या कौन बढ़ाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Immigration",
+            "hi": "आप्रवासन"
+          },
+          "reason": {
+            "en": "Individuals enter the area.",
+            "hi": "व्यक्ति क्षेत्र में प्रवेश करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Emigration",
+            "hi": "उत्प्रवासन"
+          },
+          "reason": {
+            "en": "Individuals leave the area.",
+            "hi": "व्यक्ति क्षेत्र से निकलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mortality",
+            "hi": "मृत्यता"
+          },
+          "reason": {
+            "en": "Deaths reduce the count.",
+            "hi": "मृत्यु संख्या घटाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Post-reproductive age",
+            "hi": "पश्चजनन आयु"
+          },
+          "reason": {
+            "en": "This is an age category, not arrival.",
+            "hi": "यह आयु वर्ग है, आगमन नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which unit suits number density on land?",
+        "hi": "भूमि पर संख्या घनत्व की उपयुक्त इकाई कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Individuals m⁻²",
+            "hi": "व्यक्ति m⁻²"
+          },
+          "reason": {
+            "en": "Number is divided by area.",
+            "hi": "संख्या को क्षेत्रफल से भाग दिया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "m² individual⁻¹",
+            "hi": "m² व्यक्ति⁻¹"
+          },
+          "reason": {
+            "en": "That is area per individual.",
+            "hi": "यह प्रति व्यक्ति क्षेत्र है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Individuals year⁻¹",
+            "hi": "व्यक्ति वर्ष⁻¹"
+          },
+          "reason": {
+            "en": "That is a change rate.",
+            "hi": "यह परिवर्तन दर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No unit in every case",
+            "hi": "हर स्थिति में कोई इकाई नहीं"
+          },
+          "reason": {
+            "en": "Area-based counts need their denominator.",
+            "hi": "क्षेत्र आधारित गिनती में हर की इकाई चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Under exponential growth, doubling N at fixed r does what?",
+        "hi": "स्थिर r पर चरघातांकी मॉडल में N दुगुना होने से क्या होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Doubles rN",
+            "hi": "rN दुगुना होता है"
+          },
+          "reason": {
+            "en": "The rate is proportional to N.",
+            "hi": "दर N के समानुपाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Halves rN",
+            "hi": "rN आधा होता है"
+          },
+          "reason": {
+            "en": "No inverse N occurs here.",
+            "hi": "यहाँ N का व्युत्क्रम नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Makes r zero",
+            "hi": "r शून्य हो जाता है"
+          },
+          "reason": {
+            "en": "r is stated fixed.",
+            "hi": "r स्थिर दिया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always reaches K immediately",
+            "hi": "तुरंत हमेशा K पर पहुँचता है"
+          },
+          "reason": {
+            "en": "K is not in this ideal equation.",
+            "hi": "इस आदर्श समीकरण में K नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At N=K, logistic net growth is:",
+        "hi": "N=K पर लॉजिस्टिक शुद्ध वृद्धि है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The factor 1−N/K vanishes.",
+            "hi": "1−N/K गुणक शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "rK",
+            "hi": "rK"
+          },
+          "reason": {
+            "en": "That omits resource limitation.",
+            "hi": "यह संसाधन सीमा छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "K²",
+            "hi": "K²"
+          },
+          "reason": {
+            "en": "This is not the growth formula.",
+            "hi": "यह वृद्धि सूत्र नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Proof that all deaths stop",
+            "hi": "सभी मृत्यु बंद होने का प्रमाण"
+          },
+          "reason": {
+            "en": "Net balance does not stop individual events.",
+            "hi": "शुद्ध संतुलन व्यक्तिगत घटनाएँ नहीं रोकता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The greatest logistic total rate occurs at:",
+        "hi": "सबसे बड़ी लॉजिस्टिक कुल दर कहाँ होती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "K/2",
+            "hi": "K/2"
+          },
+          "reason": {
+            "en": "For fixed positive r,K, the quadratic peaks here.",
+            "hi": "स्थिर धनात्मक r,K पर द्विघाती पद यहाँ अधिकतम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "No individuals means zero model growth.",
+            "hi": "व्यक्ति शून्य हों तो मॉडल वृद्धि शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "K",
+            "hi": "K"
+          },
+          "reason": {
+            "en": "Net growth is zero at capacity.",
+            "hi": "क्षमता पर शुद्ध वृद्धि शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any N equally",
+            "hi": "हर N पर समान"
+          },
+          "reason": {
+            "en": "The rate depends on N.",
+            "hi": "दर N पर निर्भर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which sign pair denotes mutualism?",
+        "hi": "सहोपकारिता का संकेत युग्म कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "+,+",
+            "hi": "+,+"
+          },
+          "reason": {
+            "en": "Both partners benefit.",
+            "hi": "दोनों भागीदार लाभ पाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−,−",
+            "hi": "−,−"
+          },
+          "reason": {
+            "en": "This represents competition.",
+            "hi": "यह स्पर्धा बताता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "+,−",
+            "hi": "+,−"
+          },
+          "reason": {
+            "en": "One benefits and the other is harmed.",
+            "hi": "1 लाभ पाता है और दूसरे को हानि है।"
+          }
+        },
+        {
+          "text": {
+            "en": "+,0",
+            "hi": "+,0"
+          },
+          "reason": {
+            "en": "This represents commensalism.",
+            "hi": "यह सहभोजिता बताता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An epiphytic orchid using a tree mainly as support illustrates:",
+        "hi": "मुख्यतः सहारे के लिए पेड़ पर उगा ऑर्किड क्या दर्शाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Commensalism",
+            "hi": "सहभोजिता"
+          },
+          "reason": {
+            "en": "The orchid benefits without the stated feeding harm to the tree.",
+            "hi": "पेड़ से भोजन की बताई हानि बिना ऑर्किड लाभ पाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Certain parasitism",
+            "hi": "निश्चित परजीविता"
+          },
+          "reason": {
+            "en": "Support alone is not evidence of food extraction.",
+            "hi": "केवल सहारा भोजन चूसने का प्रमाण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Competition in every case",
+            "hi": "हर स्थिति में स्पर्धा"
+          },
+          "reason": {
+            "en": "A shared limiting resource is not established.",
+            "hi": "साझा सीमित संसाधन सिद्ध नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Predation",
+            "hi": "परभक्षण"
+          },
+          "reason": {
+            "en": "The orchid is not eating the tree in this example.",
+            "hi": "इस उदाहरण में ऑर्किड पेड़ को खा नहीं रहा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is a population attribute?",
+        "hi": "कौन सा समष्टि का गुण है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Age distribution",
+            "hi": "आयु वितरण"
+          },
+          "reason": {
+            "en": "It compares individuals across age groups.",
+            "hi": "यह व्यक्तियों को आयु समूहों में तुलना करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The age of one individual",
+            "hi": "1 व्यक्ति की आयु"
+          },
+          "reason": {
+            "en": "That is an individual attribute.",
+            "hi": "यह व्यक्ति का गुण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "One leaf’s length",
+            "hi": "1 पत्ती की लंबाई"
+          },
+          "reason": {
+            "en": "It measures one structure.",
+            "hi": "यह 1 संरचना का माप है।"
+          }
+        },
+        {
+          "text": {
+            "en": "One animal’s body mass",
+            "hi": "1 जंतु का शरीर द्रव्यमान"
+          },
+          "reason": {
+            "en": "It is not an age distribution or group ratio.",
+            "hi": "यह समूह वितरण या अनुपात नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Equal quadrats contain 8,12,10 plants, each 2 m². Mean density is:",
+        "hi": "2 m² के 3 क्वाड्रेट में 8,12,10 पौधे हैं। औसत घनत्व है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5 plants m⁻²",
+            "hi": "5 पौधे m⁻²"
+          },
+          "reason": {
+            "en": "30 plants divided by 6 m² gives 5.",
+            "hi": "30 पौधे को 6 m² से भाग देने पर 5।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 plants m⁻²",
+            "hi": "10 पौधे m⁻²"
+          },
+          "reason": {
+            "en": "10 is mean count per quadrat, not per m².",
+            "hi": "10 प्रति क्वाड्रेट औसत है, प्रति m² नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "30 plants m⁻²",
+            "hi": "30 पौधे m⁻²"
+          },
+          "reason": {
+            "en": "That omits division by area.",
+            "hi": "इसमें क्षेत्र से भाग नहीं दिया।"
+          }
+        },
+        {
+          "text": {
+            "en": "6 plants m⁻²",
+            "hi": "6 पौधे m⁻²"
+          },
+          "reason": {
+            "en": "6 is sampled area, not density.",
+            "hi": "6 नमूना क्षेत्र है, घनत्व नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Differentiate population and community.",
+        "hi": "समष्टि और समुदाय में अंतर लिखें।"
+      },
+      "answer": {
+        "en": "Population: one species within a defined area/time; community: interacting populations of different species there.",
+        "hi": "समष्टि निश्चित क्षेत्र और समय में 1 प्रजाति का समूह; समुदाय वहाँ भिन्न प्रजातियों की समष्टियों का समूह है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain zero net growth at K.",
+        "hi": "K पर शुद्ध वृद्धि 0 समझाएँ।"
+      },
+      "answer": {
+        "en": "The logistic factor 1−N/K becomes zero; births and deaths may still balance.",
+        "hi": "लॉजिस्टिक गुणक 1−N/K शून्य होता है; जन्म और मृत्यु फिर भी संतुलित रूप में जारी रह सकते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give 2 conditions of the exponential model.",
+        "hi": "चरघातांकी मॉडल की 2 शर्तें लिखें।"
+      },
+      "answer": {
+        "en": "Unlimited resources and constant per-capita r over the model interval.",
+        "hi": "मॉडल अवधि में असीम संसाधन और स्थिर प्रति व्यक्ति r।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the sign of competition.",
+        "hi": "स्पर्धा के संकेत समझाएँ।"
+      },
+      "answer": {
+        "en": "−,−: shared limited resources reduce the performance of both competitors relative to their absence.",
+        "hi": "−,−: साझा सीमित संसाधन के कारण दोनों का प्रदर्शन स्पर्धी की अनुपस्थिति की तुलना में घटता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish parasitism from commensalism.",
+        "hi": "परजीविता और सहभोजिता अलग करें।"
+      },
+      "answer": {
+        "en": "Parasitism is +,−; commensalism is +,0 in the stated context. State the host effect rather than using proximity alone.",
+        "hi": "परजीविता +,− और सहभोजिता दिए संदर्भ में +,0 है। केवल निकटता की जगह पोषक पर प्रभाव बताएँ।"
+      }
+    },
+    {
+      "question": {
+        "en": "A count of 200 receives 30 births,10 deaths,5 immigrants and15 emigrants. Find the next count.",
+        "hi": "200 की संख्या में 30 जन्म,10 मृत्यु,5 आप्रवासी और15 उत्प्रवासी हों तो अगली संख्या निकालें।"
+      },
+      "answer": {
+        "en": "200+30+5−10−15=210 individuals.",
+        "hi": "200+30+5−10−15=210 व्यक्ति।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Population attributes concern groups.",
+      "hi": "समष्टि के गुण समूह से संबंधित हैं।"
+    },
+    {
+      "en": "Births and immigration add individuals.",
+      "hi": "जन्म और आप्रवासन व्यक्ति जोड़ते हैं।"
+    },
+    {
+      "en": "Exponential growth assumes constant r and unlimited resources.",
+      "hi": "चरघातांकी वृद्धि स्थिर r और असीम संसाधन मानती है।"
+    },
+    {
+      "en": "Logistic growth slows near K.",
+      "hi": "K के निकट लॉजिस्टिक वृद्धि धीमी होती है।"
+    },
+    {
+      "en": "Interaction signs identify effects on each partner.",
+      "hi": "पारस्परिक क्रिया के संकेत हर भागीदार का प्रभाव बताते हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse total growth with per-capita growth or zero net growth with zero births.",
+    "hi": "कुल और प्रति व्यक्ति वृद्धि, तथा शुद्ध वृद्धि 0 और जन्म 0 को न मिलाएँ।"
+  },
+  "goal": {
+    "en": "Measure population attributes and interpret growth and species interactions.",
+    "hi": "समष्टि के गुण मापें तथा वृद्धि और प्रजातीय पारस्परिक क्रियाएँ समझें।"
+  },
+  "conceptMap": "समष्टि → घनत्व और आयु → जनांकिकीय घटनाएँ → वृद्धि मॉडल → प्रजातीय क्रियाएँ",
+  "conceptMapEn": "Population → density and age → demographic events → growth models → species interactions",
+  "editionBasis": {
+    "en": "Original study explanations for the current 13-chapter NCERT Class 12 Biology sequence and UP Board 2026–27. Use the prescribed textbook and school practicals alongside.",
+    "hi": "वर्तमान 13 अध्यायों वाले NCERT कक्षा 12 जीव विज्ञान क्रम और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और विद्यालयी प्रयोग साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Biology XII, Chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/lebo111.pdf"
+    },
+    {
+      "title": "UPMSP Biology XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/153-Biology-Class-12.pdf"
+    }
+  ]
+}

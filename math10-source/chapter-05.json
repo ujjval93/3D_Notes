@@ -1,0 +1,898 @@
+{
+  "id": 5,
+  "title": {
+    "en": "Arithmetic Progressions",
+    "hi": "समांतर श्रेढ़ियाँ"
+  },
+  "goal": {
+    "en": "Recognise a constant difference, locate terms and calculate finite totals with reasons.",
+    "hi": "समान अंतर पहचानें, पद का स्थान खोजें और तर्क सहित सीमित पदों का योग निकालें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "A sequence with a constant difference",
+        "hi": "समान अंतर वाला अनुक्रम"
+      },
+      "body": {
+        "en": "A sequence is an ordered list, so position matters as much as value. An arithmetic progression, or AP, is a sequence in which subtracting a term from the next term always gives the same number. That number is the common difference d. For example, 4, 9, 14, 19 has differences 5, 5, 5. The first term is usually written a, and the term in position n is a_n. The list 2, 4, 8, 16 is not an AP because its consecutive differences are 2, 4, 8. Equal multiplication is a different pattern. A finite sample suggests a rule, but a stated rule is needed to extend it confidently. If the question supplies a sequence, inspect every displayed consecutive pair before deciding that it is arithmetic. A row of equally spaced fence posts can represent positions in an AP, although the number of posts and the distances between them are different quantities. Write down which quantity each term represents before calculating.",
+        "hi": "अनुक्रम (Sequence) एक निश्चित क्रम में लिखी संख्याओं की सूची है। इसमें संख्या का मान और उसका स्थान दोनों महत्वपूर्ण हैं। समांतर श्रेढ़ी (Arithmetic progression या AP) में हर पद को उसके अगले पद से घटाने पर समान संख्या मिलती है। इस संख्या को सार्व अंतर (Common difference) d कहते हैं। 4, 9, 14, 19 में लगातार अंतर 5, 5, 5 हैं, इसलिए यह AP है। पहला पद सामान्यतः a और nवें स्थान का पद a_n लिखा जाता है। 2, 4, 8, 16 में अंतर 2, 4, 8 हैं; अतः यह AP नहीं है। समान संख्या से गुणा होना अलग प्रकार का नियम है। केवल कुछ पद देखकर आगे का नियम निश्चित नहीं मानना चाहिए; प्रश्न में दिया नियम भी पढ़ें। सभी दिखाए गए लगातार युग्मों का अंतर जाँचें। बराबर दूरी पर लगे खंभों की स्थितियाँ AP बना सकती हैं, पर खंभों की संख्या और उनके बीच के अंतरालों की संख्या अलग होगी। गणना से पहले लिखें कि पद दूरी, राशि या किसी दूसरी मात्रा का मान बताता है।"
+      },
+      "formula": "d = a_(n+1) − a_n",
+      "question": {
+        "en": "Is 3, 7, 11, 15 an AP?",
+        "hi": "क्या 3, 7, 11, 15 एक AP है?"
+      },
+      "answer": {
+        "en": "Yes; each consecutive difference is 4.",
+        "hi": "हाँ; प्रत्येक लगातार अंतर 4 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Positive, negative and zero differences",
+        "hi": "धनात्मक, ऋणात्मक और शून्य अंतर"
+      },
+      "body": {
+        "en": "The common difference may be positive, negative or zero. When d is positive, terms increase as their positions increase. When d is negative, they decrease. When d equals zero, every term is the same. For 18, 14, 10, 6, the difference is 14 − 18 = −4, not 4. Always subtract the earlier term from the later term in the displayed order. Negative terms do not stop an AP: 6, 2, −2, −6 continues with difference −4. Fractions and decimals are also allowed, provided one constant difference applies. The list 1.5, 2.25, 3, 3.75 has d = 0.75. Use exact fractional values where possible so repeated rounding does not invent unequal differences. A constant monthly deduction can create a decreasing arithmetic model until the real situation imposes a stopping condition. The algebraic rule may continue beyond that point, but the story may not. Distinguishing a mathematical sequence from its practical allowed range prevents meaningless negative counts or savings.",
+        "hi": "सार्व अंतर धनात्मक, ऋणात्मक या शून्य हो सकता है। d धनात्मक होने पर स्थान बढ़ने के साथ पद बढ़ते हैं। d ऋणात्मक होने पर पद घटते हैं। d = 0 होने पर सभी पद समान रहते हैं। 18, 14, 10, 6 के लिए d = 14 − 18 = −4 है, 4 नहीं। अंतर निकालते समय हमेशा अगले पद में से पिछला पद घटाएँ। ऋणात्मक पद आने से AP समाप्त नहीं होती। 6, 2, −2, −6 में भी d = −4 रहता है। भिन्न और दशमलव भी AP के पद हो सकते हैं। 1.5, 2.25, 3, 3.75 में अंतर 0.75 है। जहाँ संभव हो, सही भिन्नों का प्रयोग करें; बार-बार सन्निकटन करने से अंतर में कृत्रिम बदलाव दिख सकता है। हर महीने निश्चित राशि घटने पर घटती AP का मॉडल बन सकता है। लेकिन वास्तविक परिस्थिति में कोई रुकने की शर्त हो सकती है। बीजगणित का नियम आगे चलता रहेगा, फिर भी कहानी में बचत या वस्तुओं की संख्या ऋणात्मक नहीं हो सकती। इसलिए उत्तर का संदर्भ भी जाँचना आवश्यक है।"
+      },
+      "formula": "a, a+d, a+2d, a+3d, …",
+      "question": {
+        "en": "Find d for 5, 2, −1, −4.",
+        "hi": "5, 2, −1, −4 का d खोजें।"
+      },
+      "answer": {
+        "en": "d = 2 − 5 = −3.",
+        "hi": "d = 2 − 5 = −3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Deriving the nth term",
+        "hi": "nवें पद के सूत्र की व्युत्पत्ति"
+      },
+      "body": {
+        "en": "Starting from the first term a, one addition of d reaches the second term, two additions reach the third, and three additions reach the fourth. Therefore reaching position n requires n − 1 additions, giving a_n = a + (n − 1)d. The number n counts positions and is a positive integer. It is not the value of the term. For a = 7 and d = 3, position 6 contains 7 + 5 × 3 = 22. Check the formula at n = 1: it returns a rather than a + d. This simple substitution catches the common error a + nd. A table with columns for n, n − 1 and a_n makes the pattern visible. If the first term is a measurement, all terms and d carry that same unit; n has no unit. The formula is a result of repeated constant addition, not an independent rule to memorise without understanding. It works for decreasing and constant APs as well as increasing ones.",
+        "hi": "पहले पद a से दूसरे पद तक जाने के लिए d को 1 बार जोड़ते हैं। तीसरे पद तक जाने के लिए 2 बार और चौथे तक जाने के लिए 3 बार जोड़ते हैं। इसलिए nवें स्थान तक पहुँचने के लिए d को n − 1 बार जोड़ना होगा। इससे a_n = a + (n − 1)d मिलता है। यहाँ n पद का स्थान है और धनात्मक पूर्णांक होना चाहिए। n स्वयं पद का मान नहीं है। a = 7 और d = 3 होने पर 6वें पद का मान 7 + 5 × 3 = 22 है। सूत्र में n = 1 रखकर जाँचें; उत्तर a आना चाहिए, a + d नहीं। इससे गलत सूत्र a + nd तुरंत पकड़ा जा सकता है। n, n − 1 और a_n की सारणी बनाकर नियम स्पष्ट दिखता है। यदि पद रुपये में हैं, तो a, d और a_n की इकाई रुपये होगी; n की कोई इकाई नहीं होती। सूत्र लगातार समान राशि जोड़ने से बना है। यह घटती और स्थिर AP पर भी उतना ही सही लागू होता है।"
+      },
+      "formula": "a_n = a + (n − 1)d",
+      "question": {
+        "en": "Find the 8th term when a = 2 and d = 5.",
+        "hi": "a = 2, d = 5 होने पर 8वाँ पद खोजें।"
+      },
+      "answer": {
+        "en": "a_8 = 2 + 7 × 5 = 37.",
+        "hi": "a_8 = 2 + 7 × 5 = 37।"
+      }
+    },
+    {
+      "title": {
+        "en": "Does a number belong to an AP?",
+        "hi": "क्या कोई संख्या AP का पद है?"
+      },
+      "body": {
+        "en": "To test whether a proposed number x is a term, place x on the left of the nth-term equation and solve for n. A valid position must be a positive integer and, in a stated finite sequence, must also lie within the listed range. Consider 5, 9, 13, 17, … . Setting 46 = 5 + (n − 1)4 gives n = 11.25, so 46 is not a term even though it lies between some terms. Setting 45 instead gives n = 11, which is valid. A negative or zero index is also invalid in the convention beginning at n = 1. If d = 0, do not divide by d. The AP contains only the repeated value a: x = a occurs at every allowed position and any other value never occurs. Questions asking how many terms lie in an interval require finding the first and last permitted terms and then counting positions, not merely subtracting their values. State the rejected index when explaining non-membership.",
+        "hi": "किसी संख्या x के AP में होने की जाँच के लिए a_n = a + (n − 1)d में a_n की जगह x रखें और n निकालें। सही स्थान धनात्मक पूर्णांक होना चाहिए। यदि AP सीमित है, तो n दी गई सीमा में भी होना चाहिए। 5, 9, 13, 17, … के लिए 46 = 5 + (n − 1)4 रखने पर n = 11.25 मिलता है। इसलिए 46 पद नहीं है, भले ही उसका मान कुछ पदों के बीच आता हो। 45 रखने पर n = 11 मिलता है, जो सही स्थान है। हमारी गिनती n = 1 से शुरू होती है; शून्य या ऋणात्मक स्थान मान्य नहीं है। यदि d = 0 हो, तो d से भाग न दें। उस AP में केवल a बार-बार आता है। x = a हर अनुमत स्थान पर मिलेगा; दूसरा कोई मान नहीं मिलेगा। किसी अंतराल में पदों की संख्या पूछी जाए तो पहले सही पहला और अंतिम पद खोजें, फिर स्थानों की गिनती करें। केवल संख्याओं को घटाकर संख्या तय न करें।"
+      },
+      "formula": "n = 1 + (x − a)/d, d ≠ 0",
+      "question": {
+        "en": "Is 30 a term of 4, 10, 16, … ?",
+        "hi": "क्या 30, AP 4, 10, 16, … का पद है?"
+      },
+      "answer": {
+        "en": "No; n = 1 + 26/6 = 16/3 is not an integer.",
+        "hi": "नहीं; n = 1 + 26/6 = 16/3 पूर्णांक नहीं है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Information from two known terms",
+        "hi": "2 ज्ञात पदों से जानकारी"
+      },
+      "body": {
+        "en": "Two known terms often determine an AP without a displayed list. Write a_p = a + (p − 1)d and a_q = a + (q − 1)d. Subtraction removes a and gives a_q − a_p = (q − p)d. The difference in positions is the number of equal steps between the terms. If the 4th term is 14 and the 9th term is 34, there are 5 steps, so d = 20/5 = 4; then a = 14 − 3 × 4 = 2. Check both original terms after solving. Keep the order of subtraction consistent in numerator and denominator, especially when terms decrease. If the same position is given with two different values, no AP can satisfy both statements. If the same position and same value are repeated, the data are insufficient to determine a unique AP. This is a useful example of forming two linear equations from a pattern rather than guessing missing numbers from a diagram.",
+        "hi": "पूरी सूची न दी हो, तब भी 2 अलग ज्ञात पदों से AP निर्धारित की जा सकती है। a_p = a + (p − 1)d और a_q = a + (q − 1)d लिखें। घटाने पर a हट जाता है और a_q − a_p = (q − p)d मिलता है। स्थानों का अंतर उन पदों के बीच समान कदमों की संख्या बताता है। 4था पद 14 और 9वाँ पद 34 हो, तो बीच में 5 कदम हैं। इसलिए d = 20/5 = 4 और a = 14 − 3 × 4 = 2 है। दोनों मूल शर्तों में उत्तर रखकर जाँचें। अंश और हर में घटाने का क्रम एक जैसा रखें, विशेषकर घटती AP में। एक ही स्थान के लिए 2 अलग मान दिए हों, तो कोई AP दोनों शर्तों को पूरा नहीं कर सकती। एक ही स्थान और एक ही मान दोहराया गया हो, तो अनोखी AP निकालने के लिए जानकारी कम है। यह पैटर्न से 2 रैखिक समीकरण बनाने का उदाहरण है; चित्र देखकर अनुमान लगाना आवश्यक नहीं है।"
+      },
+      "formula": "d = (a_q − a_p)/(q − p), p ≠ q",
+      "question": {
+        "en": "If a_3 = 11 and a_7 = 27, find d.",
+        "hi": "a_3 = 11 तथा a_7 = 27 हों, तो d खोजें।"
+      },
+      "answer": {
+        "en": "d = (27 − 11)/(7 − 3) = 4.",
+        "hi": "d = (27 − 11)/(7 − 3) = 4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Why the finite-sum formula works",
+        "hi": "सीमित योग का सूत्र क्यों सही है?"
+      },
+      "body": {
+        "en": "Let S_n be the sum of the first n terms and let the last included term be l. Write the terms once forwards and once backwards. Adding the two rows column by column produces n equal sums a + l. Thus 2S_n = n(a + l), and S_n = n(a + l)/2. Substituting l = a + (n − 1)d gives S_n = n[2a + (n − 1)d]/2. Choose the form matching the information supplied rather than calculating an unnecessary unknown. The argument works when n is odd too: in the doubled arrangement every column still pairs to a + l, and division by 2 gives the original total. For 2 + 5 + 8 + 11 + 14, the average term is (2 + 14)/2 = 8, so the total is 5 × 8 = 40. The sum S_n and the final term a_n answer different questions. Use appropriate units for the total and interpret whether negative terms are sensible in the stated situation.",
+        "hi": "पहले n पदों का योग S_n और अंतिम शामिल पद l मानें। वही पद पहले सीधे क्रम में और फिर उलटे क्रम में लिखें। दोनों पंक्तियों को स्थान अनुसार जोड़ने पर हर स्थान का योग a + l होता है। ऐसे n स्थान हैं, इसलिए 2S_n = n(a + l) और S_n = n(a + l)/2 मिलता है। l = a + (n − 1)d रखने पर दूसरा रूप S_n = n[2a + (n − 1)d]/2 मिलता है। जो जानकारी दी हो, उसके अनुसार आसान रूप चुनें। अनावश्यक अज्ञात पहले निकालना जरूरी नहीं है। n विषम होने पर भी तर्क सही है; दुगुनी पंक्ति में हर जोड़ी का योग समान रहता है। 2 + 5 + 8 + 11 + 14 में औसत पद (2 + 14)/2 = 8 और कुल 5 × 8 = 40 है। अंतिम पद a_n और कुल योग S_n अलग सवालों के उत्तर हैं। रुपये जोड़ने पर कुल रुपये में आएगा; n केवल गिनती है। ऋणात्मक पदों को वास्तविक परिस्थिति के अनुसार जाँचना भी जरूरी है।"
+      },
+      "formula": "S_n = n(a+l)/2 = n[2a+(n−1)d]/2",
+      "question": {
+        "en": "Find 3 + 6 + 9 + 12.",
+        "hi": "3 + 6 + 9 + 12 का योग खोजें।"
+      },
+      "answer": {
+        "en": "S_4 = 4(3+12)/2 = 30.",
+        "hi": "S_4 = 4(3+12)/2 = 30।"
+      }
+    },
+    {
+      "title": {
+        "en": "Counting before adding",
+        "hi": "जोड़ने से पहले पद गिनना"
+      },
+      "body": {
+        "en": "A sum question may give a first and last value without the number of terms. First use l = a + (n − 1)d to calculate n, then use the sum formula. If the values run from 12 to 60 in steps of 6, the number of intervals is (60 − 12)/6 = 8, while the number of terms is 9. Both endpoints are included, which explains the extra 1. In a word problem, phrases such as between, from, up to and excluding can change the endpoints. List the first few valid terms and the final valid term before substituting. When a sum is known and n is unknown, a quadratic equation may result; retain only positive integer roots that fit the sequence. An algebraic root of −5 cannot represent a number of terms. For an infinite AP, the finite formula calculates only the first chosen n terms; it does not automatically define a total of infinitely many terms. Check small cases with direct addition to test your setup.",
+        "hi": "कई योग प्रश्नों में पहला और अंतिम मान दिया होता है, पर पदों की संख्या नहीं दी होती। पहले l = a + (n − 1)d से n निकालें और फिर योग का सूत्र लगाएँ। 12 से 60 तक 6 के अंतर से चलने पर अंतराल (60 − 12)/6 = 8 हैं, लेकिन पद 9 हैं। दोनों सिरों को शामिल करने के कारण 1 अतिरिक्त पद आता है। प्रश्न में बीच में, से लेकर, तक और छोड़कर जैसे शब्द अंतिम पद बदल सकते हैं। इसलिए पहले कुछ सही पद और अंतिम सही पद लिख लें। यदि योग ज्ञात हो और n अज्ञात हो, तो द्विघात समीकरण बन सकता है। केवल धनात्मक पूर्णांक मूल ही पदों की संख्या होगा। n = −5 जैसा बीजीय उत्तर गिनती नहीं बता सकता। अनंत AP होने पर भी यह सूत्र केवल चुने हुए पहले n पदों का योग देता है। इसे सभी अनंत पदों का तैयार कुल नहीं मानें। छोटे उदाहरण में सीधे जोड़कर सूत्र की व्यवस्था जाँचना अच्छा अभ्यास है।"
+      },
+      "formula": "n = (l−a)/d + 1, d ≠ 0",
+      "question": {
+        "en": "How many terms occur in 8, 12, …, 40?",
+        "hi": "8, 12, …, 40 में कितने पद हैं?"
+      },
+      "answer": {
+        "en": "n = (40−8)/4 + 1 = 9.",
+        "hi": "n = (40−8)/4 + 1 = 9।"
+      }
+    },
+    {
+      "title": {
+        "en": "Modelling and checking an answer",
+        "hi": "मॉडल बनाना और उत्तर जाँचना"
+      },
+      "body": {
+        "en": "Arithmetic models apply when the change per step is genuinely constant. Suppose a student saves ₹20 in week 1 and increases the weekly deposit by ₹5 each week. The weekly deposits form an AP with a = 20 and d = 5; the accumulated saving is their sum, not the nth deposit. After 6 weeks the deposit that week is ₹45, while the accumulated amount is ₹195. These quantities need separate labels. A fixed percentage increase generally does not form an AP because the absolute increment changes. Similarly, annual compound growth should not be placed into an AP formula merely because the years are equally spaced. An interactive bar display can show the deposit in each week and a total counter. Moving the number-of-weeks control changes both the last bar and the sum. Use that observation to check a prediction numerically, then explain it with the formula. Finish a written solution with the requested quantity, its unit and one substitution back into the given conditions.",
+        "hi": "AP का मॉडल तभी उचित है जब हर कदम पर वास्तविक बदलाव समान हो। मानें कोई विद्यार्थी पहले सप्ताह ₹20 बचाता है और हर अगले सप्ताह जमा राशि ₹5 बढ़ाता है। साप्ताहिक जमा AP है, जिसमें a = 20 तथा d = 5 हैं। अब तक की कुल बचत इन पदों का योग होगी, केवल nवाँ जमा नहीं। 6वें सप्ताह की जमा ₹45 है, जबकि 6 सप्ताह की कुल बचत ₹195 है। दोनों मात्राओं को अलग नाम दें। निश्चित प्रतिशत वृद्धि सामान्यतः AP नहीं बनाती, क्योंकि हर बार बढ़ने वाली वास्तविक राशि बदलती है। वर्षों के अंतराल समान होने से चक्रवृद्धि वृद्धि अपने आप AP नहीं हो जाती। सजीव दंड चित्र में हर सप्ताह की जमा अलग दंड और कुल बचत अलग संख्या से दिख सकती है। सप्ताह संख्या का स्लाइडर बदलने पर अंतिम दंड तथा योग दोनों बदलेंगे। दृश्य से अनुमान जाँचें, फिर सूत्र से कारण समझाएँ। लिखित उत्तर में माँगी गई मात्रा, उसकी इकाई और मूल शर्त में एक जाँच अवश्य लिखें।"
+      },
+      "formula": "Weekly deposit: a_n; accumulated saving: S_n",
+      "question": {
+        "en": "In the saving model, what does S_6 mean?",
+        "hi": "बचत मॉडल में S_6 का अर्थ क्या है?"
+      },
+      "answer": {
+        "en": "It is the total deposited during weeks 1 through 6.",
+        "hi": "यह सप्ताह 1 से 6 तक जमा की गई कुल राशि है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find d and the next term of 12, 8, 4.",
+        "hi": "12, 8, 4 का d और अगला पद खोजें।"
+      },
+      "steps": [
+        {
+          "en": "Given: consecutive terms 12, 8, 4.",
+          "hi": "दिया है: लगातार पद 12, 8, 4।"
+        },
+        {
+          "en": "Compute 8−12 = −4 and 4−8 = −4.",
+          "hi": "8−12 = −4 तथा 4−8 = −4 निकालें।"
+        },
+        {
+          "en": "Add −4 to the last term: 4−4 = 0.",
+          "hi": "अंतिम पद में −4 जोड़ें: 4−4 = 0।"
+        }
+      ],
+      "answer": {
+        "en": "d = −4; next term 0.",
+        "hi": "d = −4; अगला पद 0।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the 12th term of 3, 8, 13, … .",
+        "hi": "3, 8, 13, … का 12वाँ पद खोजें।"
+      },
+      "steps": [
+        {
+          "en": "Given a = 3, d = 5, n = 12.",
+          "hi": "दिया है a = 3, d = 5, n = 12।"
+        },
+        {
+          "en": "Use a_n = a+(n−1)d.",
+          "hi": "a_n = a+(n−1)d प्रयोग करें।"
+        },
+        {
+          "en": "a_12 = 3+11×5 = 58.",
+          "hi": "a_12 = 3+11×5 = 58।"
+        }
+      ],
+      "answer": {
+        "en": "58.",
+        "hi": "58।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Is 102 a term of 7, 12, 17, … ?",
+        "hi": "क्या 102, AP 7, 12, 17, … का पद है?"
+      },
+      "steps": [
+        {
+          "en": "Given a = 7, d = 5; proposed term 102.",
+          "hi": "दिया है a = 7, d = 5; जाँचना है 102।"
+        },
+        {
+          "en": "Set 102 = 7+(n−1)5.",
+          "hi": "102 = 7+(n−1)5 रखें।"
+        },
+        {
+          "en": "95 = 5(n−1), so n = 20.",
+          "hi": "95 = 5(n−1), इसलिए n = 20।"
+        },
+        {
+          "en": "20 is a positive integer.",
+          "hi": "20 धनात्मक पूर्णांक है।"
+        }
+      ],
+      "answer": {
+        "en": "Yes, it is the 20th term.",
+        "hi": "हाँ, यह 20वाँ पद है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "The 3rd term is 13 and the 8th term is 33. Find a and d.",
+        "hi": "3रा पद 13 और 8वाँ पद 33 है। a और d खोजें।"
+      },
+      "steps": [
+        {
+          "en": "a+2d = 13 and a+7d = 33.",
+          "hi": "a+2d = 13 और a+7d = 33।"
+        },
+        {
+          "en": "Subtract: 5d = 20, hence d = 4.",
+          "hi": "घटाएँ: 5d = 20, अतः d = 4।"
+        },
+        {
+          "en": "a = 13−2×4 = 5. Check: 5+7×4 = 33.",
+          "hi": "a = 13−2×4 = 5। जाँच: 5+7×4 = 33।"
+        }
+      ],
+      "answer": {
+        "en": "a = 5, d = 4.",
+        "hi": "a = 5, d = 4।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A hall has 12 seats in the first row and 3 more in each next row. How many seats are in 15 rows?",
+        "hi": "सभागार की पहली पंक्ति में 12 सीटें हैं और हर अगली में 3 अधिक। 15 पंक्तियों में कुल सीटें खोजें।"
+      },
+      "steps": [
+        {
+          "en": "Given a = 12 seats, d = 3 seats, n = 15.",
+          "hi": "दिया है a = 12 सीटें, d = 3 सीटें, n = 15।"
+        },
+        {
+          "en": "Find total S_15, not only the last row.",
+          "hi": "कुल S_15 चाहिए, केवल अंतिम पंक्ति नहीं।"
+        },
+        {
+          "en": "S_n = n[2a+(n−1)d]/2.",
+          "hi": "S_n = n[2a+(n−1)d]/2।"
+        },
+        {
+          "en": "S_15 = 15[24+14×3]/2 = 15×66/2 = 495.",
+          "hi": "S_15 = 15[24+14×3]/2 = 15×66/2 = 495।"
+        },
+        {
+          "en": "Last row has 54 seats; average row has 33, so 15×33 checks the sum.",
+          "hi": "अंतिम पंक्ति में 54 सीटें; औसत 33 सीटें, इसलिए 15×33 से जाँच होती है।"
+        }
+      ],
+      "answer": {
+        "en": "495 seats.",
+        "hi": "495 सीटें।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which list is an AP?",
+        "hi": "कौन-सी सूची AP है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2,4,8",
+            "hi": "2,4,8"
+          },
+          "reason": {
+            "en": "Differences 2 and 4 differ.",
+            "hi": "अंतर 2 और 4 अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3,7,11",
+            "hi": "3,7,11"
+          },
+          "reason": {
+            "en": "Both differences are 4.",
+            "hi": "दोनों अंतर 4 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1,4,9",
+            "hi": "1,4,9"
+          },
+          "reason": {
+            "en": "Differences are 3 and 5.",
+            "hi": "अंतर 3 और 5 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1,2,4",
+            "hi": "1,2,4"
+          },
+          "reason": {
+            "en": "Differences are 1 and 2.",
+            "hi": "अंतर 1 और 2 हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "For 10,6,2, …, d equals:",
+        "hi": "10,6,2, … का d है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "The order was reversed.",
+            "hi": "घटाने का क्रम उलटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "This is the second term, not d.",
+            "hi": "यह दूसरा पद है, d नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−4",
+            "hi": "−4"
+          },
+          "reason": {
+            "en": "6−10 = −4.",
+            "hi": "6−10 = −4।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2",
+            "hi": "−2"
+          },
+          "reason": {
+            "en": "2 is the third term; −2 is not the difference.",
+            "hi": "2 तीसरा पद है; −2 अंतर नहीं है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "The nth term of an AP is:",
+        "hi": "AP का nवाँ पद है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "a+nd",
+            "hi": "a+nd"
+          },
+          "reason": {
+            "en": "This shifts each position by one.",
+            "hi": "इससे स्थान 1 आगे खिसकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a+(n+1)d",
+            "hi": "a+(n+1)d"
+          },
+          "reason": {
+            "en": "At n=1 this gives a+2d.",
+            "hi": "n=1 पर a+2d देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "nd",
+            "hi": "nd"
+          },
+          "reason": {
+            "en": "The first term is omitted.",
+            "hi": "पहला पद छूट गया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a+(n−1)d",
+            "hi": "a+(n−1)d"
+          },
+          "reason": {
+            "en": "There are n−1 steps from the first term.",
+            "hi": "पहले पद से n−1 कदम हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Find the 5th term when a=2,d=3.",
+        "hi": "a=2,d=3 में 5वाँ पद खोजें।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "14",
+            "hi": "14"
+          },
+          "reason": {
+            "en": "2+4×3 = 14.",
+            "hi": "2+4×3 = 14।"
+          }
+        },
+        {
+          "text": {
+            "en": "17",
+            "hi": "17"
+          },
+          "reason": {
+            "en": "This uses 5 differences rather than 4.",
+            "hi": "यह 4 की जगह 5 अंतर जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "15",
+            "hi": "15"
+          },
+          "reason": {
+            "en": "It ignores the first term.",
+            "hi": "पहला पद नहीं लिया गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "11",
+            "hi": "11"
+          },
+          "reason": {
+            "en": "This is the 4th term.",
+            "hi": "यह 4था पद है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An AP with d=0 has:",
+        "hi": "d=0 वाली AP में:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No terms",
+            "hi": "कोई पद नहीं"
+          },
+          "reason": {
+            "en": "A zero difference does not remove terms.",
+            "hi": "शून्य अंतर पदों को हटाता नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Equal terms",
+            "hi": "सभी पद समान"
+          },
+          "reason": {
+            "en": "Each next term adds zero.",
+            "hi": "अगला पद 0 जोड़कर मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only negative terms",
+            "hi": "केवल ऋणात्मक पद"
+          },
+          "reason": {
+            "en": "The first term may have any real value.",
+            "hi": "पहले पद का मान कोई वास्तविक संख्या हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Increasing terms",
+            "hi": "बढ़ते पद"
+          },
+          "reason": {
+            "en": "An increase requires d>0.",
+            "hi": "बढ़ने के लिए d>0 चाहिए।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "If solving membership gives n=7.5, the proposed value is:",
+        "hi": "पद की जाँच में n=7.5 मिले, तो संख्या:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The 7th term",
+            "hi": "7वाँ पद"
+          },
+          "reason": {
+            "en": "Positions are not rounded.",
+            "hi": "स्थान को पूर्णांकित नहीं करते।"
+          }
+        },
+        {
+          "text": {
+            "en": "The 8th term",
+            "hi": "8वाँ पद"
+          },
+          "reason": {
+            "en": "Rounding changes the equation.",
+            "hi": "पूर्णांकित करने से समीकरण बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Not a term",
+            "hi": "पद नहीं है"
+          },
+          "reason": {
+            "en": "An index must be a positive integer.",
+            "hi": "स्थान धनात्मक पूर्णांक होना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always the first term",
+            "hi": "हमेशा पहला पद"
+          },
+          "reason": {
+            "en": "n=1 would be required.",
+            "hi": "उसके लिए n=1 चाहिए।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "For first term a and nth term l, S_n equals:",
+        "hi": "पहला पद a और nवाँ पद l हों, तो S_n है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "a+l",
+            "hi": "a+l"
+          },
+          "reason": {
+            "en": "This is one pair, not the total.",
+            "hi": "यह एक जोड़ी का योग है, कुल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "n(a+l)",
+            "hi": "n(a+l)"
+          },
+          "reason": {
+            "en": "This is twice the required sum.",
+            "hi": "यह आवश्यक योग का दुगुना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(a+l)/n",
+            "hi": "(a+l)/n"
+          },
+          "reason": {
+            "en": "Term count should multiply the average.",
+            "hi": "पद संख्या का औसत से गुणा चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "n(a+l)/2",
+            "hi": "n(a+l)/2"
+          },
+          "reason": {
+            "en": "Count multiplied by the average of endpoints.",
+            "hi": "गिनती × सिरों का औसत।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "How many terms are in 5,10, …,50?",
+        "hi": "5,10, …,50 में कितने पद हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "10",
+            "hi": "10"
+          },
+          "reason": {
+            "en": "(50−5)/5+1 = 10.",
+            "hi": "(50−5)/5+1 = 10।"
+          }
+        },
+        {
+          "text": {
+            "en": "9",
+            "hi": "9"
+          },
+          "reason": {
+            "en": "9 counts intervals only.",
+            "hi": "9 केवल अंतराल हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "11",
+            "hi": "11"
+          },
+          "reason": {
+            "en": "This includes one extra term.",
+            "hi": "इसमें 1 अतिरिक्त पद गिना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "50",
+            "hi": "50"
+          },
+          "reason": {
+            "en": "50 is the last value, not count.",
+            "hi": "50 अंतिम मान है, गिनती नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If a_8−a_3=20, what is d?",
+        "hi": "a_8−a_3=20 हो, तो d क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "20",
+            "hi": "20"
+          },
+          "reason": {
+            "en": "Five differences make 20.",
+            "hi": "5 अंतर मिलकर 20 बनते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "(8−3)d = 20 gives d=4.",
+            "hi": "(8−3)d = 20 से d=4।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "5 is the position gap.",
+            "hi": "5 स्थानों का अंतर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "25",
+            "hi": "25"
+          },
+          "reason": {
+            "en": "Adding position gap is not the required operation.",
+            "hi": "स्थान का अंतर जोड़ना आवश्यक क्रिया नहीं है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "S_6 represents:",
+        "hi": "S_6 का अर्थ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only the 6th term",
+            "hi": "केवल 6वाँ पद"
+          },
+          "reason": {
+            "en": "That quantity is a_6.",
+            "hi": "वह a_6 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The common difference",
+            "hi": "सार्व अंतर"
+          },
+          "reason": {
+            "en": "The difference is d.",
+            "hi": "अंतर d है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sum of first 6 terms",
+            "hi": "पहले 6 पदों का योग"
+          },
+          "reason": {
+            "en": "The symbol S denotes a partial sum.",
+            "hi": "S आंशिक योग का संकेत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6th term from the end",
+            "hi": "अंत से 6वाँ पद"
+          },
+          "reason": {
+            "en": "That requires information about the last term.",
+            "hi": "उसके लिए अंतिम पद की जानकारी चाहिए।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain why 2,5,8,11 is an AP.",
+        "hi": "2,5,8,11 को AP क्यों कहते हैं?"
+      },
+      "answer": {
+        "en": "All consecutive differences are 3, so the difference is constant.",
+        "hi": "सभी लगातार अंतर 3 हैं, अतः अंतर स्थिर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find a_10 for a=6,d=−2.",
+        "hi": "a=6,d=−2 का a_10 खोजें।"
+      },
+      "answer": {
+        "en": "a_10=6+9(−2)=−12.",
+        "hi": "a_10=6+9(−2)=−12।"
+      }
+    },
+    {
+      "question": {
+        "en": "Is 41 a term of 5,9,13,…?",
+        "hi": "क्या 41, AP 5,9,13,… का पद है?"
+      },
+      "answer": {
+        "en": "41=5+4(n−1) gives n=10, so yes.",
+        "hi": "41=5+4(n−1) से n=10, इसलिए हाँ।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the sum 7+11+15+19+23.",
+        "hi": "7+11+15+19+23 का योग खोजें।"
+      },
+      "answer": {
+        "en": "S_5=5(7+23)/2=75.",
+        "hi": "S_5=5(7+23)/2=75।"
+      }
+    },
+    {
+      "question": {
+        "en": "If a_2=9,a_5=21, find a and d.",
+        "hi": "a_2=9,a_5=21 हों, तो a,d खोजें।"
+      },
+      "answer": {
+        "en": "3d=12 gives d=4; a=9−4=5.",
+        "hi": "3d=12 से d=4; a=9−4=5।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why a monthly 10% increase is generally not an AP.",
+        "hi": "मासिक 10% वृद्धि सामान्यतः AP क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "The increase is a percentage of a changing amount, so the absolute consecutive difference changes.",
+        "hi": "वृद्धि बदलती राशि का प्रतिशत है; इसलिए लगातार वास्तविक अंतर बदलता है।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not confuse a_n with S_n, reverse the subtraction for d, omit the endpoint when counting, or accept a fractional position as a term number.",
+    "hi": "a_n और S_n न मिलाएँ; d का घटाने का क्रम न उलटें; गिनती में अंतिम सिरा न छोड़ें; भिन्न स्थान को पद संख्या न मानें।"
+  },
+  "revision": [
+    {
+      "en": "An AP has a constant consecutive difference.",
+      "hi": "AP में लगातार पदों का अंतर स्थिर है।"
+    },
+    {
+      "en": "a_n=a+(n−1)d, with n a positive integer.",
+      "hi": "a_n=a+(n−1)d में n धनात्मक पूर्णांक है।"
+    },
+    {
+      "en": "Two known terms give d from their value gap divided by their index gap.",
+      "hi": "2 ज्ञात पदों से मानों के अंतर को स्थानों के अंतर से भाग देकर d मिलता है।"
+    },
+    {
+      "en": "S_n=n(a+l)/2=n[2a+(n−1)d]/2.",
+      "hi": "S_n=n(a+l)/2=n[2a+(n−1)d]/2।"
+    },
+    {
+      "en": "Interpret counts, endpoints and units before accepting an answer.",
+      "hi": "उत्तर से पहले गिनती, सिरों और इकाइयों का अर्थ जाँचें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Constant difference → AP → nth term → membership and unknown terms → finite sums → contextual totals",
+    "hi": "स्थिर अंतर → AP → nवाँ पद → सदस्यता और अज्ञात पद → सीमित योग → वास्तविक कुल"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, Chapter 5, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh105.pdf"
+    },
+    {
+      "title": "UP Board Class 10 Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

@@ -1,0 +1,1471 @@
+{
+  "number": 5,
+  "id": "physics11-05",
+  "title": {
+    "en": "Work, Energy and Power",
+    "hi": "कार्य, ऊर्जा और शक्ति"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-05-1",
+      "title": {
+        "en": "Work at an angle",
+        "hi": "कोण पर किया कार्य"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 12
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Force angle",
+            "hi": "बल का कोण"
+          },
+          "min": 0,
+          "max": 180,
+          "step": 10,
+          "initial": 30,
+          "unit": "°"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Explore work as the force angle changes.",
+        "hi": "बल के कोण से कार्य का परिवर्तन देखें।"
+      },
+      "observe": {
+        "en": "F = 10 N and s = 2 m remain fixed; compare 0°,90°,180°.",
+        "hi": "F = 10 N और s = 2 m नियत हैं; 0°,90°,180° की तुलना करें।"
+      },
+      "modelNote": {
+        "en": "The force is constant; the drawing is schematic and distance is not to screen scale.",
+        "hi": "बल नियत है; चित्र सांकेतिक और दूरी स्क्रीन पैमाने पर नहीं है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Only the component F cos θ along displacement transfers energy by work.",
+          "hi": "विस्थापन की दिशा वाला F cos θ घटक ही कार्य द्वारा ऊर्जा देता है।"
+        }
+      },
+      "realLife": {
+        "en": "Pulling a suitcase at an angle changes the useful horizontal component.",
+        "hi": "कोण पर सूटकेस खींचने से उपयोगी क्षैतिज घटक बदलता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At which angle is work zero?",
+          "hi": "किस कोण पर कार्य शून्य है?"
+        },
+        "options": [
+          {
+            "en": "0°",
+            "hi": "0°"
+          },
+          {
+            "en": "90°",
+            "hi": "90°"
+          },
+          {
+            "en": "180°",
+            "hi": "180°"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "cos 90° = 0.",
+          "hi": "cos 90° = 0।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-05-1-low",
+          "label": {
+            "en": "Set force angle to 0 °.",
+            "hi": "बल का कोण 0 ° करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "phy11-05-1-high",
+          "label": {
+            "en": "Compare the maximum setting 180 °.",
+            "hi": "अधिकतम सेटिंग 180 ° से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 180
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 90.0
+          },
+          "text": {
+            "en": "At acute angles the work is positive; at 90° it becomes zero.",
+            "hi": "न्यूनकोण पर कार्य धनात्मक और 90° पर शून्य है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 90.0
+          },
+          "text": {
+            "en": "Beyond 90° the force does negative work.",
+            "hi": "90° से अधिक पर बल ऋणात्मक कार्य करता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Controlled quantity / reference",
+            "hi": "नियंत्रित राशि / संदर्भ"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Moving body / response",
+            "hi": "गतिशील पिंड / परिणाम"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-05-2",
+      "title": {
+        "en": "Spring energy",
+        "hi": "कमानी की ऊर्जा"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 13
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Extension",
+            "hi": "प्रसार"
+          },
+          "min": 0,
+          "max": 0.5,
+          "step": 0.05,
+          "initial": 0.2,
+          "unit": "m"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Relate spring extension to stored energy.",
+        "hi": "कमानी प्रसार को संचित ऊर्जा से जोड़ें।"
+      },
+      "observe": {
+        "en": "For k = 100 N/m compare the force and ½kx² readouts.",
+        "hi": "k = 100 N/m में बल तथा ½kx² के मान देखें।"
+      },
+      "modelNote": {
+        "en": "An ideal massless Hookean spring is shown within its assumed elastic range.",
+        "hi": "मानी हुई प्रत्यास्थ सीमा में आदर्श द्रव्यमानरहित हुक नियम वाली कमानी है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Force rises linearly, but its accumulated work rises as extension squared.",
+          "hi": "बल रैखिक बढ़ता है, लेकिन संचित कार्य प्रसार के वर्ग से बढ़ता है।"
+        }
+      },
+      "realLife": {
+        "en": "A spring toy stores elastic energy when compressed or stretched.",
+        "hi": "खिलौने की कमानी दबने या खिंचने पर प्रत्यास्थ ऊर्जा रखती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Doubling extension multiplies energy by?",
+          "hi": "प्रसार दुगुना होने पर ऊर्जा कितनी गुनी?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "8",
+            "hi": "8"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "U is proportional to x².",
+          "hi": "U, x² के समानुपाती है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-05-2-low",
+          "label": {
+            "en": "Set extension to 0 m.",
+            "hi": "प्रसार 0 m करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "phy11-05-2-high",
+          "label": {
+            "en": "Compare the maximum setting 0.5 m.",
+            "hi": "अधिकतम सेटिंग 0.5 m से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 0.5
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.25
+          },
+          "text": {
+            "en": "Small extension stores relatively little elastic energy.",
+            "hi": "कम प्रसार पर अपेक्षाकृत कम प्रत्यास्थ ऊर्जा है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0.25
+          },
+          "text": {
+            "en": "Greater extension stores energy rapidly because U ∝ x².",
+            "hi": "अधिक प्रसार पर U ∝ x² से ऊर्जा तेजी से बढ़ती है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Controlled quantity / reference",
+            "hi": "नियंत्रित राशि / संदर्भ"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Moving body / response",
+            "hi": "गतिशील पिंड / परिणाम"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-05-3",
+      "title": {
+        "en": "Elastic collision",
+        "hi": "प्रत्यास्थ टक्कर"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 14
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Second mass",
+            "hi": "दूसरा द्रव्यमान"
+          },
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "initial": 2,
+          "unit": "kg"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Compare final velocities as target mass changes.",
+        "hi": "लक्ष्य द्रव्यमान बदलकर अंतिम वेग देखें।"
+      },
+      "observe": {
+        "en": "m1 = 2 kg, u1 = 3 m/s and u2 = 0; compare final momentum and energy.",
+        "hi": "m1 = 2 kg, u1 = 3 m/s और u2 = 0; अंतिम संवेग व ऊर्जा मिलाएँ।"
+      },
+      "modelNote": {
+        "en": "The collision is one-dimensional, perfectly elastic and isolated; sizes are symbolic.",
+        "hi": "टक्कर एक विमीय, पूर्ण प्रत्यास्थ और विलग है; आकार सांकेतिक हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Momentum and kinetic energy together determine the two final velocities.",
+          "hi": "संवेग तथा गतिज ऊर्जा संरक्षण मिलकर दोनों अंतिम वेग देते हैं।"
+        }
+      },
+      "realLife": {
+        "en": "Real billiard collisions approximate this only when rotation and losses are small.",
+        "hi": "घूर्णन और हानियाँ कम हों तभी बिलियर्ड की टक्कर इस मॉडल के निकट है।"
+      },
+      "quick": {
+        "question": {
+          "en": "For equal masses with target initially at rest, the first body?",
+          "hi": "समान द्रव्यमान और स्थिर लक्ष्य में पहला पिंड?"
+        },
+        "options": [
+          {
+            "en": "Stops",
+            "hi": "रुकता है"
+          },
+          {
+            "en": "Always reverses",
+            "hi": "हमेशा उलटता है"
+          },
+          {
+            "en": "Keeps the same velocity",
+            "hi": "समान वेग रखता है"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Equal masses exchange velocities in this special elastic case.",
+          "hi": "इस विशेष प्रत्यास्थ स्थिति में समान द्रव्यमान वेग बदलते हैं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-05-3-low",
+          "label": {
+            "en": "Set second mass to 1 kg.",
+            "hi": "दूसरा द्रव्यमान 1 kg करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-05-3-high",
+          "label": {
+            "en": "Compare the maximum setting 5 kg.",
+            "hi": "अधिकतम सेटिंग 5 kg से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 5
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3.0
+          },
+          "text": {
+            "en": "A lighter target receives a larger forward velocity.",
+            "hi": "हल्का लक्ष्य अधिक अग्र वेग पाता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 3.0
+          },
+          "text": {
+            "en": "A target heavier than m1 makes the first body rebound.",
+            "hi": "m1 से भारी लक्ष्य पहले पिंड को पीछे लौटा देता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Controlled quantity / reference",
+            "hi": "नियंत्रित राशि / संदर्भ"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Moving body / response",
+            "hi": "गतिशील पिंड / परिणाम"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Understand work, energy and power using equations, conditions and evidence.",
+    "hi": "समीकरण, उनकी शर्तों और प्रेक्षण से कार्य, ऊर्जा और शक्ति समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Work and the choice of system",
+        "hi": "कार्य और निकाय का चुनाव"
+      },
+      "paragraphs": [
+        {
+          "en": "In everyday speech, effort means work, but mechanical work has a precise definition. A force does work on a particle when its point of application undergoes displacement with a component along the force. For a constant force, W = F s cos θ, where θ is the angle between force and displacement. Work is a scalar: its sign describes energy transfer, not a direction in space. Select the body and identify which force is being considered before calculating. The work done by a person's hand, gravity and friction are separate contributions. Their sum is the net work on the chosen body. A student holding a stationary bag exerts force but does no mechanical work on the bag during that stationary interval. The student's muscles still consume chemical energy; that biological process is a different energy account. Displacement, force and the system boundary must therefore be stated together.",
+          "hi": "दैनिक भाषा में मेहनत को कार्य कहते हैं, पर यांत्रिक कार्य (Mechanical work) की स्पष्ट परिभाषा है। किसी कण पर लगा बल तभी कार्य करता है जब उसके लगने का बिंदु विस्थापित हो और विस्थापन का कुछ घटक बल की दिशा में हो। नियत बल के लिए W = F s cos θ है। यहाँ θ बल और विस्थापन के बीच कोण है। कार्य अदिश राशि (Scalar) है; इसका चिह्न ऊर्जा के हस्तांतरण को बताता है, स्थान में दिशा को नहीं। गणना से पहले चुनें कि किस पिंड पर और किस बल का कार्य चाहिए। हाथ का बल, गुरुत्व तथा घर्षण अलग योगदान दे सकते हैं। चुने पिंड पर इन सभी बलों के कार्य का योग परिणामी कार्य होता है। स्थिर थैला पकड़े विद्यार्थी का बल थैले पर इस अंतराल में यांत्रिक कार्य नहीं करता। फिर भी मांसपेशियों में रासायनिक ऊर्जा खर्च होती है। यह अलग ऊर्जा लेखा है, इसलिए दोनों कथन विरोधी नहीं हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use the displacement of the force application point, not merely the distance travelled by an unrelated part of a machine or person.",
+          "hi": "बल के कार्य में उसके लगने वाले बिंदु का विस्थापन लें। केवल मशीन या व्यक्ति के किसी अन्य भाग की चली दूरी लगाना सही नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can a force act while its work is zero?",
+          "hi": "क्या बल लगते हुए उसका कार्य शून्य हो सकता है?"
+        },
+        "answer": {
+          "en": "Yes: zero displacement or a perpendicular force gives zero work.",
+          "hi": "हाँ; शून्य विस्थापन या विस्थापन के लंबवत बल का कार्य शून्य है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Positive, negative and variable-force work",
+        "hi": "धनात्मक, ऋणात्मक तथा परिवर्ती बल का कार्य"
+      },
+      "paragraphs": [
+        {
+          "en": "When force and displacement have an acute angle, the force contributes positive work. At a right angle its work vanishes, and at an obtuse angle the work is negative. Gravity does positive work during a downward fall and negative work during an upward displacement. A centripetal force is perpendicular to instantaneous motion in uniform circular motion, so it changes direction without changing speed through work. If the force varies with position, divide the path into small displacements, add F·Δr and take the limiting sum. In one dimension this becomes W = ∫ F(x) dx. The signed area under a force–position graph represents work; area below the position axis is negative. This graph is not a force–time graph: the latter gives impulse. For a force that reverses direction, treat each interval with its sign rather than multiplying an average magnitude by total path length.",
+          "hi": "बल तथा विस्थापन के बीच कोण न्यूनकोण हो तो कार्य धनात्मक होता है। समकोण पर कार्य शून्य और अधिककोण पर ऋणात्मक होता है। नीचे गिरते पिंड पर गुरुत्व धनात्मक कार्य करता है, जबकि ऊपर जाते पिंड पर उसका कार्य ऋणात्मक है। एकसमान वृत्तीय गति में अभिकेंद्रीय बल तात्कालिक गति के लंबवत रहता है। इसलिए वह दिशा बदलता है, पर कार्य द्वारा चाल नहीं बदलता। स्थिति के साथ बल बदलने पर रास्ते को छोटे विस्थापनों में बाँटकर F·Δr का योग लेते हैं। अत्यंत छोटी सीमाओं में यही समाकलन (Integration) है। एक विमा में W = ∫ F(x) dx होता है। बल–स्थिति आलेख के नीचे चिह्न सहित क्षेत्रफल कार्य देता है। स्थिति अक्ष के नीचे का क्षेत्रफल ऋणात्मक लें। बल–समय आलेख से आवेग मिलता है, कार्य नहीं। बल की दिशा बदलने पर हर अंतराल को उसके चिह्न सहित देखें; केवल बल का औसत परिमाण और कुल दूरी गुणा करना पर्याप्त नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A 10 N force over 2 m gives work 20 cos θ J; the same magnitudes can produce positive, zero or negative work.",
+          "hi": "10 N बल और 2 m विस्थापन में कार्य 20 cos θ J है। समान परिमाण होते हुए भी कोण से कार्य धनात्मक, शून्य या ऋणात्मक बनता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does the area under an F–x graph represent?",
+          "hi": "F–x आलेख के नीचे क्षेत्रफल क्या बताता है?"
+        },
+        "answer": {
+          "en": "Signed work done by that force over the selected displacement interval.",
+          "hi": "चुने विस्थापन अंतराल में उस बल का चिह्न सहित कार्य।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Kinetic energy and the work–energy theorem",
+        "hi": "गतिज ऊर्जा और कार्य–ऊर्जा प्रमेय"
+      },
+      "paragraphs": [
+        {
+          "en": "For a particle of constant mass moving non-relativistically, kinetic energy is K = ½mv². It depends on speed squared and is non-negative, although velocity itself may be positive or negative in a coordinate system. Combining Newton's second law with the displacement relation gives Wnet = Kfinal − Kinitial. This is the work–energy theorem. It concerns the work of all forces, not just the force that is easiest to notice. Positive net work increases kinetic energy; negative net work reduces it. Zero net work means unchanged kinetic energy, but the direction of motion may still change. Energy methods often avoid solving for time. For a car stopping under a constant opposing force, the initial kinetic energy equals the magnitude of the braking work. At fixed mass, doubling speed quadruples kinetic energy and, for the same stopping force, quadruples stopping distance. State the approximation of a constant braking force before using that comparison.",
+          "hi": "नियत द्रव्यमान वाले तथा प्रकाश की चाल से बहुत कम चाल पर चलते कण की गतिज ऊर्जा (Kinetic energy) K = ½mv² है। यह चाल के वर्ग पर निर्भर और अऋणात्मक होती है। किसी निर्देशांक में वेग ऋणात्मक हो सकता है, लेकिन उसके वर्ग से गतिज ऊर्जा ऋणात्मक नहीं होगी। न्यूटन के दूसरे नियम और विस्थापन संबंध को मिलाने पर Wnet = Kअंतिम − Kप्रारंभिक मिलता है। यही कार्य–ऊर्जा प्रमेय है। इसमें सभी बलों का कुल कार्य चाहिए, केवल दिखाई देने वाले एक बल का नहीं। धनात्मक परिणामी कार्य गतिज ऊर्जा बढ़ाता और ऋणात्मक परिणामी कार्य घटाता है। कुल कार्य शून्य हो तो गतिज ऊर्जा समान रहती है, फिर भी गति की दिशा बदल सकती है। ऊर्जा विधि में अक्सर समय निकालना आवश्यक नहीं होता। नियत विरोधी बल से रुकती कार की प्रारंभिक गतिज ऊर्जा ब्रेक के कार्य के परिमाण के बराबर होती है। समान द्रव्यमान में चाल दुगुनी करने पर ऊर्जा 4 गुनी होती है। समान ब्रेक बल होने पर रुकने की दूरी भी 4 गुनी होगी।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The theorem remains useful with friction: include frictional work in Wnet rather than incorrectly assuming that kinetic plus potential energy is always conserved.",
+          "hi": "घर्षण होने पर भी कार्य–ऊर्जा प्रमेय उपयोगी है। घर्षण का कार्य कुल कार्य में लें; हर परिस्थिति में गतिज और स्थितिज ऊर्जा का योग संरक्षित न मानें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If speed doubles at fixed mass, what happens to kinetic energy?",
+          "hi": "नियत द्रव्यमान में चाल दुगुनी होने पर गतिज ऊर्जा क्या होगी?"
+        },
+        "answer": {
+          "en": "It becomes 4 times the original value.",
+          "hi": "वह प्रारंभिक मान की 4 गुनी होगी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Conservative forces and potential energy",
+        "hi": "संरक्षी बल और स्थितिज ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "A force is conservative when its work between two positions depends only on the endpoints, not the path. Equivalently, its work around a closed path is zero. Potential energy U can then be defined so that Wconservative = −ΔU. Near Earth's surface, where g is treated as constant, gravitational potential energy may be written U = mgh relative to a chosen zero level. A reference change adds the same constant to all potential energies and does not alter forces or measurable energy changes. Potential energy belongs to interacting systems: the Earth–body system has gravitational potential energy. If only conservative forces do work, K + U remains constant. Friction is generally non-conservative; its work depends on path and converts organised mechanical energy into internal energy. Do not infer that energy itself is destroyed. Mechanical energy and total energy are different accounts, and the system must include the surroundings if frictional heating is to be tracked explicitly.",
+          "hi": "संरक्षी बल (Conservative force) का दो स्थितियों के बीच कार्य केवल सिरों की स्थिति पर निर्भर होता है, रास्ते पर नहीं। बंद मार्ग में उसका कुल कार्य शून्य होता है। ऐसे बल के लिए स्थितिज ऊर्जा (Potential energy) परिभाषित कर सकते हैं, जिससे Wसंरक्षी = −ΔU होता है। पृथ्वी की सतह के पास g लगभग नियत मानने पर चुने शून्य तल से गुरुत्वीय स्थितिज ऊर्जा U = mgh लिखते हैं। शून्य तल बदलने से सभी मानों में समान नियतांक जुड़ता है; बल और ऊर्जा परिवर्तन नहीं बदलते। स्थितिज ऊर्जा अंतःक्रिया करने वाले निकाय की है। उदाहरण के लिए पृथ्वी–पिंड निकाय में गुरुत्वीय स्थितिज ऊर्जा होती है। यदि केवल संरक्षी बल कार्य करें तो K + U नियत रहता है। घर्षण सामान्यतः असंरक्षी है; उसका कार्य रास्ते पर निर्भर करता और संगठित यांत्रिक ऊर्जा को आंतरिक ऊर्जा में बदल सकता है। इससे कुल ऊर्जा नष्ट नहीं होती। यांत्रिक ऊर्जा और कुल ऊर्जा के लेखे अलग हैं। घर्षण की ऊष्मा देखनी हो तो परिवेश को भी निकाय में शामिल करना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Always state the zero level and whether g is approximately constant; U = mgh is a near-surface model, not the universal gravitational potential formula.",
+          "hi": "शून्य तल और g नियत मानने की शर्त लिखें। U = mgh पृथ्वी के पास का मॉडल है, सभी दूरी के लिए सार्वत्रिक गुरुत्वीय सूत्र नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is gravitational work dependent on the path near Earth?",
+          "hi": "पृथ्वी के पास गुरुत्व का कार्य रास्ते पर निर्भर है?"
+        },
+        "answer": {
+          "en": "No; for fixed endpoints it is determined by the height change.",
+          "hi": "नहीं; निश्चित सिरों के लिए यह ऊँचाई परिवर्तन से निर्धारित है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Elastic energy stored in a spring",
+        "hi": "कमानी में संचित प्रत्यास्थ ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "An ideal spring obeys Hooke's law Fx = −kx within its elastic range. The negative sign indicates a restoring force opposite to displacement from equilibrium. To stretch it slowly from x = 0 to x, an external agent applies a force increasing from zero to kx. The triangular area under this applied-force graph gives stored energy U = ½kx². The spring's own work over the same stretch is negative. Doubling the extension multiplies stored energy by 4, while doubling stiffness at the same extension doubles it. A compressed ideal spring also stores ½kx² because the expression contains a square. The simple model ignores spring mass, damping, plastic deformation and limits of proportionality. Real springs can heat, fail or remain deformed if stretched too far. In an ideal horizontal mass–spring system without friction, kinetic and elastic potential energies exchange while their sum remains constant.",
+          "hi": "आदर्श कमानी अपनी प्रत्यास्थ सीमा के भीतर हुक का नियम (Hooke’s law) Fx = −kx मानती है। ऋण चिह्न बताता है कि प्रत्यानयन बल साम्य स्थिति से विस्थापन के विपरीत है। कमानी को x = 0 से धीरे-धीरे x तक खींचने के लिए बाहरी बल शून्य से kx तक बढ़ाना पड़ता है। लगाए बल–विस्थापन आलेख के त्रिभुज का क्षेत्रफल संचित ऊर्जा U = ½kx² देता है। उसी प्रसार में कमानी का स्वयं का कार्य ऋणात्मक होता है। प्रसार दुगुना करने पर संचित ऊर्जा 4 गुनी होगी। समान प्रसार में बल नियतांक दुगुना करने पर ऊर्जा दुगुनी होती है। संपीडित आदर्श कमानी में भी ½kx² ऊर्जा रहती है, क्योंकि सूत्र में वर्ग है। सरल मॉडल कमानी का द्रव्यमान, अवमंदन, स्थायी विकृति और अनुपातिकता सीमा की अनदेखी करता है। वास्तविक कमानी अधिक खिंचने पर गर्म, विकृत या टूट सकती है। घर्षणरहित क्षैतिज द्रव्यमान–कमानी निकाय में गतिज तथा प्रत्यास्थ स्थितिज ऊर्जा परस्पर बदलती हैं, जबकि योग नियत रहता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For k = 100 N/m and x = 0.20 m, F has magnitude 20 N and U = 2 J; force and energy are different quantities.",
+          "hi": "k = 100 N/m तथा x = 0.20 m पर बल का परिमाण 20 N और ऊर्जा 2 J है। बल तथा ऊर्जा अलग राशियाँ और अलग इकाइयाँ हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is spring energy not simply kx²?",
+          "hi": "कमानी ऊर्जा केवल kx² क्यों नहीं है?"
+        },
+        "answer": {
+          "en": "The stretching force increases from 0 to kx; its average during slow stretching is kx/2.",
+          "hi": "खींचने का बल 0 से kx तक बढ़ता है; धीरे खींचने में औसत बल kx/2 होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Power and rates of energy transfer",
+        "hi": "शक्ति और ऊर्जा हस्तांतरण की दर"
+      },
+      "paragraphs": [
+        {
+          "en": "Power measures how rapidly work is done or energy is transferred. Average power over an interval is W/Δt, while instantaneous power is dW/dt = F·v for a force acting on a particle. Its SI unit is watt, equal to joule per second. A lift raising the same load through the same height performs the same gravitational work whether it is fast or slow, but the faster lift needs greater average power. Do not confuse power with energy: a rating in watts is a rate, while a kilowatt-hour is energy. One kilowatt-hour equals 3.6 × 10⁶ J. Efficiency compares useful output energy or power with total input, under the same accounting interval and system boundary. A real machine's output is less than its input because some energy is transferred through heating, sound and other channels. Efficiency does not imply that the remaining energy disappears; the full energy balance must still close.",
+          "hi": "शक्ति (Power) बताती है कि कार्य कितनी तेजी से किया जा रहा है या ऊर्जा किस दर से स्थानांतरित हो रही है। किसी अंतराल में औसत शक्ति W/Δt और तात्कालिक शक्ति dW/dt = F·v होती है। SI मात्रक वाट है, अर्थात जूल प्रति सेकंड। एक ही भार को समान ऊँचाई तक उठाने में लिफ्ट द्वारा गुरुत्व के विरुद्ध कार्य समान होगा, चाहे लिफ्ट धीमी हो या तेज। तेज लिफ्ट को अधिक औसत शक्ति चाहिए। शक्ति को ऊर्जा न समझें। वाट में लिखी रेटिंग दर है, जबकि किलोवाट-घंटा ऊर्जा है। 1 किलोवाट-घंटा = 3.6 × 10⁶ J होता है। दक्षता (Efficiency) समान अंतराल तथा निकाय सीमा में उपयोगी निर्गत ऊर्जा या शक्ति का कुल निवेश से अनुपात है। वास्तविक मशीन की उपयोगी निर्गत ऊर्जा कम होती है, क्योंकि कुछ ऊर्जा ऊष्मा, ध्वनि तथा अन्य रूपों में स्थानांतरित होती है। इसका अर्थ बची ऊर्जा का गायब होना नहीं है। पूरे निकाय तथा परिवेश का ऊर्जा लेखा फिर भी संतुलित होना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use seconds with watts and joules. Convert minutes or hours before division, and distinguish average power from a changing instantaneous value.",
+          "hi": "वाट और जूल के साथ समय सेकंड में लें। भाग देने से पहले मिनट या घंटे बदलें। बदलती तात्कालिक शक्ति को पूरे अंतराल की औसत शक्ति न मानें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is kWh a unit of power?",
+          "hi": "क्या kWh शक्ति की इकाई है?"
+        },
+        "answer": {
+          "en": "No, it is a unit of energy.",
+          "hi": "नहीं, यह ऊर्जा की इकाई है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Collisions and momentum conservation",
+        "hi": "टक्कर और संवेग संरक्षण"
+      },
+      "paragraphs": [
+        {
+          "en": "During a short collision, interacting bodies exert large forces on each other. If the net external impulse on the chosen system is negligible, total momentum is conserved. This statement does not require kinetic energy conservation. In an elastic collision total kinetic energy is conserved as well as momentum. In an inelastic collision some initial kinetic energy becomes internal energy, sound or deformation. A perfectly inelastic collision means the bodies stick together; it does not mean that all kinetic energy is lost. Choose a positive direction and retain the signs of velocities. For a one-dimensional elastic collision with m2 initially stationary, v1 = (m1 − m2)u1/(m1 + m2) and v2 = 2m1u1/(m1 + m2). A light projectile may rebound from a heavier target. Two equal masses exchange velocities in this special one-dimensional ideal case. Neither this rule nor the formulas should be transferred uncritically to oblique collisions.",
+          "hi": "टक्कर के कम समय में पिंड एक-दूसरे पर बड़े बल लगाते हैं। यदि चुने निकाय पर बाहरी परिणामी आवेग नगण्य है तो कुल संवेग (Momentum) संरक्षित रहता है। इसके लिए गतिज ऊर्जा का संरक्षित होना आवश्यक नहीं है। प्रत्यास्थ टक्कर (Elastic collision) में संवेग के साथ कुल गतिज ऊर्जा भी संरक्षित होती है। अप्रत्यास्थ टक्कर में कुछ प्रारंभिक गतिज ऊर्जा आंतरिक ऊर्जा, ध्वनि या विकृति में बदलती है। पूर्णतः अप्रत्यास्थ टक्कर में पिंड चिपक जाते हैं, पर इसका अर्थ सभी गतिज ऊर्जा का खोना नहीं है। एक धन दिशा चुनकर वेगों के चिह्न बनाए रखें। एक विमीय प्रत्यास्थ टक्कर में दूसरा पिंड पहले स्थिर हो तो v1 = (m1 − m2)u1/(m1 + m2) और v2 = 2m1u1/(m1 + m2) हैं। हल्का प्रक्षेप्य भारी लक्ष्य से लौट सकता है। इसी विशेष आदर्श एक विमीय स्थिति में समान द्रव्यमान के पिंड वेगों का आदान-प्रदान करते हैं। तिरछी टक्कर में ये सूत्र सीधे लागू नहीं किए जा सकते।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For m1 = 2 kg and u1 = 3 m/s, initial momentum is 6 kg m/s and initial kinetic energy is 9 J.",
+          "hi": "m1 = 2 kg तथा u1 = 3 m/s में प्रारंभिक संवेग 6 kg m/s और गतिज ऊर्जा 9 J है। दोनों संरक्षण जाँच में इकाइयाँ अलग रखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is conserved in an isolated inelastic collision?",
+          "hi": "विलग अप्रत्यास्थ टक्कर में क्या संरक्षित है?"
+        },
+        "answer": {
+          "en": "Total momentum and total energy, but generally not total kinetic energy.",
+          "hi": "कुल संवेग और कुल ऊर्जा; कुल गतिज ऊर्जा सामान्यतः नहीं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Energy reasoning and checking solutions",
+        "hi": "ऊर्जा तर्क और उत्तर की जाँच"
+      },
+      "paragraphs": [
+        {
+          "en": "Begin an energy problem by drawing initial and final states, identifying the system and listing interactions that cross its boundary. Decide whether to use net work and kinetic energy, or a mechanical-energy balance with potential energy. Include each contribution once: do not count gravity as both work and a potential-energy decrease in the same equation unless the terms are deliberately rearranged. Check that each term has the unit joule. Compare the answer with limiting cases. At θ = 90° the work of a constant force should vanish; at zero spring extension the ideal elastic energy should be zero. For collisions verify momentum and, only for an elastic model, kinetic energy. A negative final squared speed usually signals an impossible assumed motion or a sign error. A model can be mathematically consistent while omitting losses, so explain its assumptions before comparing the prediction with a real experiment. Numerical precision cannot compensate for an inappropriate physical model.",
+          "hi": "ऊर्जा के प्रश्न में पहले प्रारंभिक तथा अंतिम अवस्था का चित्र बनाएँ, निकाय चुनें और उसकी सीमा के पार होने वाली अंतःक्रियाएँ लिखें। फिर तय करें कि परिणामी कार्य–गतिज ऊर्जा प्रमेय लेना है या स्थितिज ऊर्जा सहित यांत्रिक ऊर्जा संतुलन। हर योगदान केवल एक बार लें। उसी समीकरण में गुरुत्व को अलग कार्य और स्थितिज ऊर्जा की कमी दोनों के रूप में जोड़कर दोहरी गिनती न करें। हर पद की इकाई जूल होनी चाहिए। उत्तर को सीमांत स्थितियों से जाँचें। θ = 90° पर नियत बल का कार्य शून्य और कमानी का प्रसार शून्य होने पर प्रत्यास्थ ऊर्जा शून्य मिलनी चाहिए। टक्कर में संवेग की जाँच करें तथा केवल प्रत्यास्थ मॉडल में गतिज ऊर्जा संरक्षण भी देखें। अंतिम चाल के वर्ग का ऋणात्मक आना असंभव मानी गई गति या चिह्न की गलती बता सकता है। कोई मॉडल गणितीय रूप से सही होते हुए भी वास्तविक ऊर्जा हानियाँ छोड़ सकता है। इसलिए प्रयोग से तुलना से पहले उसकी शर्तें बताना आवश्यक है। केवल अधिक दशमलव अंक गलत मॉडल को सही नहीं बनाते।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Write the physical interpretation after the number: a negative work value means that the specified force removes mechanical energy from the chosen body.",
+          "hi": "संख्या के बाद अर्थ लिखें। ऋणात्मक कार्य बताता है कि चुना बल उस पिंड की यांत्रिक ऊर्जा कम करने की दिशा में ऊर्जा स्थानांतरण करता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why should gravity not be counted twice in one energy balance?",
+          "hi": "ऊर्जा संतुलन में गुरुत्व की दोहरी गिनती क्यों नहीं करनी चाहिए?"
+        },
+        "answer": {
+          "en": "Its work and potential-energy change describe the same transfer with opposite signs.",
+          "hi": "उसका कार्य और स्थितिज ऊर्जा परिवर्तन एक ही हस्तांतरण को विपरीत चिह्नों से बताते हैं।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "W = Fs cos θ",
+      "meaning": {
+        "en": "Work by a constant force; θ is the force–displacement angle.",
+        "hi": "नियत बल का कार्य; θ बल–विस्थापन कोण है।"
+      },
+      "units": {
+        "en": "F: N; s: m; W: J",
+        "hi": "F: N; s: m; W: J"
+      }
+    },
+    {
+      "expression": "K = ½mv²; Wnet = ΔK",
+      "meaning": {
+        "en": "Constant-mass non-relativistic kinetic energy and theorem.",
+        "hi": "नियत द्रव्यमान की अप्रापेक्षिक गतिज ऊर्जा और प्रमेय।"
+      },
+      "units": {
+        "en": "m: kg; v: m/s; K: J",
+        "hi": "m: kg; v: m/s; K: J"
+      }
+    },
+    {
+      "expression": "U = ½kx²",
+      "meaning": {
+        "en": "Ideal spring potential energy; x is displacement from equilibrium.",
+        "hi": "आदर्श कमानी की ऊर्जा; x साम्य से विस्थापन है।"
+      },
+      "units": {
+        "en": "k: N/m; x: m; U: J",
+        "hi": "k: N/m; x: m; U: J"
+      }
+    },
+    {
+      "expression": "P = F·v",
+      "meaning": {
+        "en": "Instantaneous mechanical power.",
+        "hi": "तात्कालिक यांत्रिक शक्ति।"
+      },
+      "units": {
+        "en": "P: W = J/s",
+        "hi": "P: W = J/s"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not conserve kinetic energy in every collision or count gravity twice in an energy equation.",
+    "hi": "हर टक्कर में गतिज ऊर्जा संरक्षित न मानें तथा ऊर्जा समीकरण में गुरुत्व की दोहरी गिनती न करें।"
+  },
+  "summary": [
+    {
+      "en": "Work depends on the force component along displacement.",
+      "hi": "कार्य विस्थापन की दिशा वाले बल घटक पर निर्भर है।"
+    },
+    {
+      "en": "Net work equals kinetic-energy change.",
+      "hi": "परिणामी कार्य गतिज ऊर्जा परिवर्तन है।"
+    },
+    {
+      "en": "Conservative work is minus potential-energy change.",
+      "hi": "संरक्षी कार्य स्थितिज ऊर्जा परिवर्तन का ऋणात्मक है।"
+    },
+    {
+      "en": "Power is the rate of energy transfer.",
+      "hi": "शक्ति ऊर्जा हस्तांतरण की दर है।"
+    },
+    {
+      "en": "Elastic collisions conserve momentum and kinetic energy.",
+      "hi": "प्रत्यास्थ टक्कर में संवेग तथा गतिज ऊर्जा संरक्षित हैं।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find work by 10 N through 2 m at 60°.",
+        "hi": "10 N बल का 2 m में 60° पर कार्य निकालें।"
+      },
+      "given": {
+        "en": "F = 10 N, s = 2 m, θ = 60°.",
+        "hi": "F = 10 N, s = 2 m, θ = 60°।"
+      },
+      "find": {
+        "en": "Work W.",
+        "hi": "कार्य W।"
+      },
+      "formula": {
+        "en": "W = Fs cos θ",
+        "hi": "W = Fs cos θ"
+      },
+      "steps": [
+        {
+          "en": "cos 60° = 0.5.",
+          "hi": "cos 60° = 0.5।"
+        },
+        {
+          "en": "W = 10 × 2 × 0.5.",
+          "hi": "W = 10 × 2 × 0.5।"
+        }
+      ],
+      "answer": {
+        "en": "10 J, positive.",
+        "hi": "10 J, धनात्मक।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A 2 kg body moves at 3 m/s. Find K.",
+        "hi": "2 kg पिंड की चाल 3 m/s है। K निकालें।"
+      },
+      "given": {
+        "en": "m = 2 kg, v = 3 m/s.",
+        "hi": "m = 2 kg, v = 3 m/s।"
+      },
+      "find": {
+        "en": "Kinetic energy.",
+        "hi": "गतिज ऊर्जा।"
+      },
+      "formula": {
+        "en": "K = ½mv²",
+        "hi": "K = ½mv²"
+      },
+      "steps": [
+        {
+          "en": "Square the speed: 9 m²/s².",
+          "hi": "चाल का वर्ग 9 m²/s²।"
+        },
+        {
+          "en": "K = ½ × 2 × 9.",
+          "hi": "K = ½ × 2 × 9।"
+        }
+      ],
+      "answer": {
+        "en": "9 J.",
+        "hi": "9 J।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find spring energy at x = 0.3 m.",
+        "hi": "x = 0.3 m पर कमानी की ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "k = 100 N/m; ideal elastic spring.",
+        "hi": "k = 100 N/m; आदर्श प्रत्यास्थ कमानी।"
+      },
+      "find": {
+        "en": "Stored U.",
+        "hi": "संचित U।"
+      },
+      "formula": {
+        "en": "U = ½kx²",
+        "hi": "U = ½kx²"
+      },
+      "steps": [
+        {
+          "en": "x² = 0.09 m².",
+          "hi": "x² = 0.09 m²।"
+        },
+        {
+          "en": "U = 50 × 0.09.",
+          "hi": "U = 50 × 0.09।"
+        }
+      ],
+      "answer": {
+        "en": "4.5 J.",
+        "hi": "4.5 J।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find average power to lift 10 kg by 2 m in 4 s.",
+        "hi": "10 kg को 2 m ऊँचा 4 s में उठाने की औसत शक्ति निकालें।"
+      },
+      "given": {
+        "en": "g = 9.8 m/s²; initial and final speeds equal.",
+        "hi": "g = 9.8 m/s²; प्रारंभिक और अंतिम चाल समान।"
+      },
+      "find": {
+        "en": "Average useful power.",
+        "hi": "औसत उपयोगी शक्ति।"
+      },
+      "formula": {
+        "en": "P = mgh/t",
+        "hi": "P = mgh/t"
+      },
+      "steps": [
+        {
+          "en": "Useful work = 10 × 9.8 × 2 = 196 J.",
+          "hi": "उपयोगी कार्य = 10 × 9.8 × 2 = 196 J।"
+        },
+        {
+          "en": "Divide by 4 s.",
+          "hi": "4 s से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "49 W.",
+        "hi": "49 W।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find final velocities in a one-dimensional elastic collision.",
+        "hi": "एक विमीय प्रत्यास्थ टक्कर के अंतिम वेग निकालें।"
+      },
+      "given": {
+        "en": "m1 = 2 kg, u1 = 3 m/s, m2 = 4 kg, u2 = 0.",
+        "hi": "m1 = 2 kg, u1 = 3 m/s, m2 = 4 kg, u2 = 0।"
+      },
+      "find": {
+        "en": "v1 and v2.",
+        "hi": "v1 और v2।"
+      },
+      "formula": {
+        "en": "v1 = (m1−m2)u1/(m1+m2); v2 = 2m1u1/(m1+m2)",
+        "hi": "v1 = (m1−m2)u1/(m1+m2); v2 = 2m1u1/(m1+m2)"
+      },
+      "steps": [
+        {
+          "en": "v1 = (−2) × 3/6 = −1 m/s; v2 = 12/6 = 2 m/s.",
+          "hi": "v1 = (−2) × 3/6 = −1 m/s; v2 = 12/6 = 2 m/s।"
+        },
+        {
+          "en": "Final momentum = −2 + 8 = 6 kg m/s.",
+          "hi": "अंतिम संवेग = −2 + 8 = 6 kg m/s।"
+        },
+        {
+          "en": "Final K = 1 + 8 = 9 J, equal to initial K.",
+          "hi": "अंतिम K = 1 + 8 = 9 J, प्रारंभिक K के समान।"
+        }
+      ],
+      "answer": {
+        "en": "v1 = −1 m/s; v2 = 2 m/s.",
+        "hi": "v1 = −1 m/s; v2 = 2 m/s।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A 10 N force acts through 2 m at 90°. Work is?",
+        "hi": "10 N बल 2 m में 90° पर लगे तो कार्य?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "20 J",
+            "hi": "20 J"
+          },
+          "reason": {
+            "en": "This is for 0°, not 90°.",
+            "hi": "यह 0° के लिए है, 90° नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 J",
+            "hi": "0 J"
+          },
+          "reason": {
+            "en": "cos 90° = 0.",
+            "hi": "cos 90° = 0।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 J",
+            "hi": "10 J"
+          },
+          "reason": {
+            "en": "Force alone is not work.",
+            "hi": "केवल बल कार्य नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−20 J",
+            "hi": "−20 J"
+          },
+          "reason": {
+            "en": "This corresponds to 180°.",
+            "hi": "यह 180° के लिए है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Net work equals which change?",
+        "hi": "परिणामी कार्य किस परिवर्तन के बराबर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Kinetic energy",
+            "hi": "गतिज ऊर्जा"
+          },
+          "reason": {
+            "en": "The work–energy theorem gives Wnet = ΔK.",
+            "hi": "कार्य–ऊर्जा प्रमेय Wnet = ΔK देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass",
+            "hi": "द्रव्यमान"
+          },
+          "reason": {
+            "en": "Their units differ.",
+            "hi": "इनकी इकाइयाँ अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Momentum",
+            "hi": "संवेग"
+          },
+          "reason": {
+            "en": "Impulse changes momentum.",
+            "hi": "आवेग संवेग बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Force",
+            "hi": "बल"
+          },
+          "reason": {
+            "en": "Work has unit joule, force newton.",
+            "hi": "कार्य जूल, बल न्यूटन में है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Doubling speed at fixed mass changes K by?",
+        "hi": "नियत द्रव्यमान में चाल दुगुनी हो तो K?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2 times",
+            "hi": "2 गुनी"
+          },
+          "reason": {
+            "en": "K depends on v².",
+            "hi": "K, v² पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Half",
+            "hi": "आधी"
+          },
+          "reason": {
+            "en": "Increasing speed increases K.",
+            "hi": "चाल बढ़ने से K बढ़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4 times",
+            "hi": "4 गुनी"
+          },
+          "reason": {
+            "en": "(2v)² = 4v².",
+            "hi": "(2v)² = 4v²।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Speed is part of K.",
+            "hi": "K चाल पर निर्भर है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Work by a conservative force around a closed path is?",
+        "hi": "बंद मार्ग में संरक्षी बल का कार्य?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always positive",
+            "hi": "सदैव धनात्मक"
+          },
+          "reason": {
+            "en": "The endpoint is the starting point.",
+            "hi": "अंत बिंदु प्रारंभ वाला है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always negative",
+            "hi": "सदैव ऋणात्मक"
+          },
+          "reason": {
+            "en": "No net potential-energy change occurs.",
+            "hi": "स्थितिज ऊर्जा का कुल परिवर्तन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "No such result follows.",
+            "hi": "ऐसा परिणाम नहीं निकलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "ΔU = 0 and W = −ΔU.",
+            "hi": "ΔU = 0 तथा W = −ΔU।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "A 100 N/m spring stretched 0.2 m stores?",
+        "hi": "100 N/m कमानी 0.2 m खिंचे तो ऊर्जा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2 J",
+            "hi": "2 J"
+          },
+          "reason": {
+            "en": "½ × 100 × 0.2² = 2.",
+            "hi": "½ × 100 × 0.2² = 2।"
+          }
+        },
+        {
+          "text": {
+            "en": "20 J",
+            "hi": "20 J"
+          },
+          "reason": {
+            "en": "20 is force in N, not energy.",
+            "hi": "20 N बल है, ऊर्जा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "4 J",
+            "hi": "4 J"
+          },
+          "reason": {
+            "en": "The factor ½ is missing.",
+            "hi": "½ छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.2 J",
+            "hi": "0.2 J"
+          },
+          "reason": {
+            "en": "Extension alone is not energy.",
+            "hi": "केवल प्रसार ऊर्जा नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is a unit of energy?",
+        "hi": "ऊर्जा की इकाई कौन-सी?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "W",
+            "hi": "W"
+          },
+          "reason": {
+            "en": "Watt measures power.",
+            "hi": "वाट शक्ति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "kWh",
+            "hi": "kWh"
+          },
+          "reason": {
+            "en": "Power multiplied by time is energy.",
+            "hi": "शक्ति गुणा समय ऊर्जा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "N",
+            "hi": "N"
+          },
+          "reason": {
+            "en": "Newton measures force.",
+            "hi": "न्यूटन बल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "J/s",
+            "hi": "J/s"
+          },
+          "reason": {
+            "en": "This is power.",
+            "hi": "यह शक्ति है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "In an isolated elastic collision, what is conserved?",
+        "hi": "विलग प्रत्यास्थ टक्कर में क्या संरक्षित?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Momentum only",
+            "hi": "केवल संवेग"
+          },
+          "reason": {
+            "en": "Kinetic energy is also conserved.",
+            "hi": "गतिज ऊर्जा भी संरक्षित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Kinetic energy only",
+            "hi": "केवल गतिज ऊर्जा"
+          },
+          "reason": {
+            "en": "Momentum also remains constant.",
+            "hi": "संवेग भी नियत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Momentum and kinetic energy",
+            "hi": "संवेग और गतिज ऊर्जा"
+          },
+          "reason": {
+            "en": "Both are defining constraints here.",
+            "hi": "यहाँ दोनों संरक्षण लागू हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Each body’s velocity",
+            "hi": "हर पिंड का वेग"
+          },
+          "reason": {
+            "en": "Velocities generally change.",
+            "hi": "वेग सामान्यतः बदलते हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Two bodies stick after impact. The collision is?",
+        "hi": "टक्कर के बाद पिंड चिपकें तो टक्कर?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always elastic",
+            "hi": "हमेशा प्रत्यास्थ"
+          },
+          "reason": {
+            "en": "Sticking usually changes kinetic energy.",
+            "hi": "चिपकने में गतिज ऊर्जा बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Not a collision",
+            "hi": "टक्कर नहीं"
+          },
+          "reason": {
+            "en": "It is a limiting collision model.",
+            "hi": "यह टक्कर का सीमांत मॉडल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Momentum destroying",
+            "hi": "संवेग नष्ट करने वाली"
+          },
+          "reason": {
+            "en": "Negligible external impulse still gives conservation.",
+            "hi": "नगण्य बाहरी आवेग में संवेग संरक्षित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Perfectly inelastic",
+            "hi": "पूर्णतः अप्रत्यास्थ"
+          },
+          "reason": {
+            "en": "A common final velocity defines sticking.",
+            "hi": "समान अंतिम वेग चिपकना बताता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Instantaneous power delivered by a force is?",
+        "hi": "बल की तात्कालिक शक्ति?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "F·v",
+            "hi": "F·v"
+          },
+          "reason": {
+            "en": "dW/dt = F·v.",
+            "hi": "dW/dt = F·v।"
+          }
+        },
+        {
+          "text": {
+            "en": "F·r",
+            "hi": "F·r"
+          },
+          "reason": {
+            "en": "This resembles work, not a rate.",
+            "hi": "यह कार्य जैसा है, दर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "mv",
+            "hi": "mv"
+          },
+          "reason": {
+            "en": "This is momentum.",
+            "hi": "यह संवेग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "½mv²",
+            "hi": "½mv²"
+          },
+          "reason": {
+            "en": "This is kinetic energy.",
+            "hi": "यह गतिज ऊर्जा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Friction reduces mechanical energy. Total energy is?",
+        "hi": "घर्षण से यांत्रिक ऊर्जा घटे तो कुल ऊर्जा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Destroyed",
+            "hi": "नष्ट"
+          },
+          "reason": {
+            "en": "Internal energy and surroundings must be included.",
+            "hi": "आंतरिक ऊर्जा और परिवेश भी लें।"
+          }
+        },
+        {
+          "text": {
+            "en": "Conserved in a closed total system",
+            "hi": "बंद कुल निकाय में संरक्षित"
+          },
+          "reason": {
+            "en": "Energy changes form, not total amount.",
+            "hi": "ऊर्जा रूप बदलती है, कुल मात्रा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "सदैव शून्य"
+          },
+          "reason": {
+            "en": "A reference does not force total energy zero.",
+            "hi": "संदर्भ कुल ऊर्जा शून्य नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Equal to momentum",
+            "hi": "संवेग के बराबर"
+          },
+          "reason": {
+            "en": "Their dimensions differ.",
+            "hi": "दोनों की विमाएँ अलग हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why can a force do zero work?",
+        "hi": "बल शून्य कार्य कैसे कर सकता है?"
+      },
+      "answer": {
+        "en": "There may be no displacement or the force may be perpendicular to it.",
+        "hi": "विस्थापन शून्य हो सकता है या बल उसके लंबवत हो सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the work–energy theorem.",
+        "hi": "कार्य–ऊर्जा प्रमेय लिखें।"
+      },
+      "answer": {
+        "en": "Net work by all forces equals the change in kinetic energy of a constant-mass particle.",
+        "hi": "नियत द्रव्यमान कण पर सभी बलों का कुल कार्य उसकी गतिज ऊर्जा परिवर्तन के बराबर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish elastic and inelastic collisions.",
+        "hi": "प्रत्यास्थ और अप्रत्यास्थ टक्कर में अंतर करें।"
+      },
+      "answer": {
+        "en": "Both conserve momentum for negligible external impulse; only elastic collisions conserve total kinetic energy.",
+        "hi": "नगण्य बाहरी आवेग में दोनों में संवेग संरक्षित है; केवल प्रत्यास्थ में कुल गतिज ऊर्जा भी संरक्षित है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the factor ½ in spring energy.",
+        "hi": "कमानी ऊर्जा में ½ समझाएँ।"
+      },
+      "answer": {
+        "en": "Stretching force rises linearly from zero to kx, so its F–x area is triangular.",
+        "hi": "खींचने का बल शून्य से kx तक रैखिक बढ़ता है, इसलिए F–x क्षेत्रफल त्रिभुज है।"
+      }
+    },
+    {
+      "question": {
+        "en": "How are power and energy different?",
+        "hi": "शक्ति और ऊर्जा कैसे अलग हैं?"
+      },
+      "answer": {
+        "en": "Power is the rate of energy transfer; watt is J/s, while joule and kWh measure energy.",
+        "hi": "शक्ति ऊर्जा हस्तांतरण की दर है; वाट J/s है, जबकि जूल और kWh ऊर्जा हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Does friction destroy energy?",
+        "hi": "क्या घर्षण ऊर्जा नष्ट करता है?"
+      },
+      "answer": {
+        "en": "No. Mechanical energy can become internal energy or transfer to surroundings.",
+        "hi": "नहीं। यांत्रिक ऊर्जा आंतरिक ऊर्जा में बदल या परिवेश को स्थानांतरित हो सकती है।"
+      }
+    }
+  ],
+  "conceptMap": "बल और विस्थापन → कार्य → गतिज ऊर्जा → स्थितिज ऊर्जा → संरक्षण → शक्ति → टक्कर",
+  "conceptMapEn": "Force and displacement → work → kinetic energy → potential energy → conservation → power → collisions",
+  "editionBasis": {
+    "en": "Original explanations aligned to NCERT Class 11 Physics and UP Board 2026–27; ideal models have stated assumptions.",
+    "hi": "NCERT कक्षा 11 भौतिकी तथा यूपी बोर्ड 2026–27 पर आधारित मौलिक व्याख्याएँ; आदर्श मॉडलों की शर्तें स्पष्ट हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part I · Chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keph105.pdf"
+    },
+    {
+      "title": "UP Board Class 11 Physics 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ]
+}

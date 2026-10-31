@@ -1,0 +1,894 @@
+{
+  "id": 4,
+  "title": {
+    "en": "Quadratic Equations",
+    "hi": "द्विघात समीकरण"
+  },
+  "goal": {
+    "en": "Recognise genuine quadratics, solve their real roots and interpret admissible answers in everyday models.",
+    "hi": "वास्तविक द्विघात पहचानें, वास्तविक मूल निकालें और दैनिक जीवन के मॉडल में स्वीकार्य उत्तर चुनें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Recognise the standard form",
+        "hi": "मानक रूप की पहचान"
+      },
+      "body": {
+        "en": "A quadratic equation in one variable has standard form ax² + bx + c = 0, with real coefficients and a ≠ 0. The nonzero leading coefficient is essential: if a becomes 0, the equation is linear or constant instead. Expand brackets, combine like terms and move all terms to one side before deciding the degree. An equation that displays x² on both sides can simplify to a linear equation. For example x² + 3x = x² + 9 reduces to 3x − 9 = 0. Conversely, cancelling matching cubic terms can leave a quadratic. In standard form, keep signs attached to coefficients. For 5 − 2x² = 3x, write −2x² − 3x + 5 = 0, so a = −2, b = −3 and c = 5. Multiplying the whole equation by any nonzero constant gives an equivalent equation. It may make the leading coefficient positive, but dividing by an expression involving x can discard valid solutions. Start every solution by establishing the correct standard form and checking its restrictions.",
+        "hi": "एक चर का द्विघात समीकरण (Quadratic equation) मानक रूप ax² + bx + c = 0 में होता है। गुणांक वास्तविक तथा a ≠ 0 होता है। अग्र गुणांक का अशून्य होना जरूरी है। a = 0 होने पर समीकरण रैखिक या अचर बन जाएगा। घात तय करने से पहले कोष्ठक खोलें, समान पद जोड़ें और सभी पद एक पक्ष में लाएँ। दोनों पक्षों पर x² दिखने से समीकरण हमेशा द्विघात नहीं होता। x² + 3x = x² + 9 सरल होकर 3x − 9 = 0 है, जो रैखिक है। इसके विपरीत दोनों तरफ समान त्रिघात पद कटने पर द्विघात बच सकता है। मानक रूप में गुणांक का चिह्न साथ रखें। 5 − 2x² = 3x को −2x² − 3x + 5 = 0 लिखेंगे। इसलिए a = −2, b = −3 तथा c = 5 हैं। पूरे समीकरण को अशून्य अचर से गुणा करने पर समतुल्य समीकरण मिलता है। ऐसा करके अग्र गुणांक धनात्मक कर सकते हैं। लेकिन x वाले किसी व्यंजक से भाग देने पर सही मूल खो सकते हैं। हल की शुरुआत सही मानक रूप और उसकी शर्तों से करें, न कि दिखाई देती सबसे बड़ी घात के अनुमान से।"
+      },
+      "formula": "ax² + bx + c = 0, a ≠ 0",
+      "question": {
+        "en": "Is x² + 2x = x² + 6 quadratic after simplification?",
+        "hi": "सरल करने के बाद क्या x² + 2x = x² + 6 द्विघात है?"
+      },
+      "answer": {
+        "en": "No. It reduces to 2x − 6 = 0.",
+        "hi": "नहीं। यह 2x − 6 = 0 बनता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Roots, zeroes and graphical interpretation",
+        "hi": "मूल, शून्यक और ग्राफ का अर्थ"
+      },
+      "body": {
+        "en": "A real number r is a root when ar² + br + c = 0. Thus roots of a quadratic equation are the zeroes of its associated quadratic polynomial. A genuine quadratic has at most two distinct real roots. It may have two distinct roots, one distinct repeated root, or no real roots. The graph of y = ax² + bx + c helps visualise these possibilities as two x-axis intersections, one touch, or no contact. A root is an x-value, while the graph point is (r,0). The y-intercept (0,c) usually gives no root information unless c = 0. Equal roots mean the same value appears twice in the factor form, as in (x − 2)² = 0. Do not count the repeated value as two different locations. The equation x² + 1 = 0 has no real root, because a real square is nonnegative. A graph is a useful model, but a limited window or numerical rounding can hide roots. Exact substitution and algebra establish the answer even when a screen image is ambiguous.",
+        "hi": "वास्तविक संख्या r मूल (Root) तब है जब ar² + br + c = 0 हो। इसलिए द्विघात समीकरण के मूल उसके संगत बहुपद के शून्यक हैं। वास्तविक द्विघात के अधिकतम 2 भिन्न वास्तविक मूल हो सकते हैं। 2 अलग मूल, 1 भिन्न दोहराया मूल या कोई वास्तविक मूल नहीं, ये 3 स्थितियाँ संभव हैं। y = ax² + bx + c का ग्राफ इन्हें क्रमशः x-अक्ष के 2 प्रतिच्छेद, 1 स्पर्श या कोई मिलन नहीं के रूप में दिखाता है। मूल x का मान है; पूरा बिंदु (r,0) है। y-अक्ष प्रतिच्छेद (0,c) सामान्यतः मूल नहीं देता, जब तक c = 0 न हो। समान मूल का अर्थ एक ही मान गुणनखंड रूप में 2 बार आता है। (x − 2)² = 0 में यही स्थिति है। इसे 2 अलग स्थान न गिनें। x² + 1 = 0 का कोई वास्तविक मूल नहीं है, क्योंकि वास्तविक संख्या का वर्ग ऋणेतर है। ग्राफ समझने में उपयोगी है, पर सीमित खिड़की या पूर्णांकित गणना मूल छिपा सकती है। अस्पष्ट चित्र के समय सटीक प्रतिस्थापन और बीजगणित उत्तर सिद्ध करते हैं। स्क्रीन में न दिखना अकेले अस्तित्व न होने का प्रमाण नहीं है।"
+      },
+      "formula": "r is a root ⇔ ar² + br + c = 0",
+      "question": {
+        "en": "Does (x − 5)² = 0 have two distinct roots?",
+        "hi": "क्या (x − 5)² = 0 के 2 भिन्न मूल हैं?"
+      },
+      "answer": {
+        "en": "No. It has the repeated root 5, one distinct real value.",
+        "hi": "नहीं। इसका दोहरा मूल 5 है; भिन्न वास्तविक मान केवल 1 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Factorisation and the zero-product rule",
+        "hi": "गुणनखंडन और शून्य गुणनफल नियम"
+      },
+      "body": {
+        "en": "If a quadratic expression factors as (px + q)(rx + s), set the product equal to 0 and then set each factor equal to 0 separately. The zero-product rule states that a product of real numbers is 0 only if at least one factor is 0. It cannot be used when the product equals 5 or when the expression is still a sum. To factor ax² + bx + c by splitting the middle term, seek two numbers whose sum is b and whose product is ac. Split bx using those numbers and group terms to obtain a common linear factor. For 3x² − 8x + 4, use −6 and −2: 3x(x − 2) − 2(x − 2) = (3x − 2)(x − 2). Hence the roots are 2/3 and 2. Re-expand to verify the factorisation before solving. Do not cancel a factor containing x from both sides without checking when it equals 0; cancellation could remove a root. After finding both candidates, substitute each into the original equation.",
+        "hi": "द्विघात व्यंजक (px + q)(rx + s) में टूट जाए, तो पहले पूरा गुणनफल 0 के बराबर लिखें। फिर हर गुणनखंड को अलग 0 रखें। शून्य गुणनफल नियम (Zero-product rule) कहता है कि वास्तविक संख्याओं का गुणनफल 0 तभी होगा जब कम-से-कम 1 गुणनखंड 0 हो। गुणनफल 5 हो या व्यंजक अभी योग हो, तो यह नियम सीधे नहीं लगा सकते। ax² + bx + c के मध्य पद को तोड़ने के लिए ऐसी 2 संख्याएँ खोजें जिनका योग b तथा गुणनफल ac हो। उन्हीं से bx तोड़कर पद समूह बनाएँ और साझा रैखिक गुणनखंड निकालें। 3x² − 8x + 4 में −6 तथा −2 लें। तब 3x(x − 2) − 2(x − 2) = (3x − 2)(x − 2) है। इससे मूल 2/3 तथा 2 मिलते हैं। हल करने से पहले विस्तार करके गुणनखंडन जाँचें। x वाला गुणनखंड दोनों पक्षों से काटते समय उसके 0 होने की स्थिति न छोड़ें, वरना मूल खो सकता है। दोनों मान मिलने के बाद मूल समीकरण में रखें। केवल गुणनखंड के चिह्न को देखकर मान न लिखें; जैसे 3x − 2 = 0 से x = 2/3 है, केवल 2 नहीं।"
+      },
+      "formula": "(px + q)(rx + s) = 0 ⇒ px + q = 0 or rx + s = 0",
+      "question": {
+        "en": "Can x be cancelled from x(x − 4) = 0 without checking?",
+        "hi": "क्या x(x − 4) = 0 में x बिना जाँच काट सकते हैं?"
+      },
+      "answer": {
+        "en": "No. That would lose the root x = 0.",
+        "hi": "नहीं। ऐसा करने से x = 0 मूल छूट जाएगा।"
+      }
+    },
+    {
+      "title": {
+        "en": "Quadratic formula and exact answers",
+        "hi": "द्विघात सूत्र और सटीक उत्तर"
+      },
+      "body": {
+        "en": "The quadratic formula gives real roots of ax² + bx + c = 0 as x = [−b ± √(b² − 4ac)]/(2a), provided a ≠ 0 and b² − 4ac ≥ 0. The ± symbol instructs us to calculate both the plus and minus cases; it is not a third operation producing one uncertain answer. The entire numerator, including both terms, is divided by 2a. Keep b in brackets before squaring, especially when b is negative. For x² − 4x − 1 = 0, substitute a = 1, b = −4, c = −1 to obtain [4 ± √20]/2 = 2 ± √5. Retaining radicals gives exact answers; a decimal approximation can be added when the context requires it. The formula follows by completing a square, so it is not an unrelated rule to memorise. At a double root the square-root term is 0 and both signs give the same value. If a = 0, the denominator vanishes and the quadratic formula is inapplicable; solve the resulting lower-degree condition separately.",
+        "hi": "द्विघात सूत्र (Quadratic formula) से ax² + bx + c = 0 के वास्तविक मूल x = [−b ± √(b² − 4ac)]/(2a) मिलते हैं। शर्तें a ≠ 0 तथा b² − 4ac ≥ 0 हैं। ± का अर्थ धन और ऋण दोनों स्थितियाँ अलग निकालना है। यह कोई तीसरी क्रिया या अस्पष्ट अकेला उत्तर नहीं है। पूरे अंश, अर्थात दोनों पदों, को 2a से भाग देते हैं। b ऋणात्मक हो तो वर्ग करने से पहले कोष्ठक लगाएँ। x² − 4x − 1 = 0 में a = 1, b = −4 तथा c = −1 है। सूत्र से [4 ± √20]/2 = 2 ± √5 मिलता है। करणी रूप सटीक उत्तर है। संदर्भ में जरूरत हो तो दशमलव सन्निकटन बाद में जोड़ सकते हैं। सूत्र वर्ग पूर्ण करने के तर्क से आता है; यह अलग जादुई नियम नहीं है। दोहरे मूल में वर्गमूल वाला पद 0 होता है और दोनों चिह्नों से एक ही मान मिलता है। a = 0 करने पर हर 0 होगा, इसलिए यह सूत्र लागू नहीं है। उस समय बनी निम्न-घात शर्त को अलग हल करें। चिह्न और पूरा हर सावधानी से लिखना अधिकतर सूत्र-गलतियाँ रोक देता है।"
+      },
+      "formula": "x = [−b ± √(b² − 4ac)]/(2a), a ≠ 0, b² − 4ac ≥ 0",
+      "question": {
+        "en": "For x² − 4x − 1 = 0, what are the exact roots?",
+        "hi": "x² − 4x − 1 = 0 के सटीक मूल क्या हैं?"
+      },
+      "answer": {
+        "en": "2 + √5 and 2 − √5.",
+        "hi": "2 + √5 तथा 2 − √5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Discriminant and nature of roots",
+        "hi": "विविक्तकर और मूलों की प्रकृति"
+      },
+      "body": {
+        "en": "The expression D = b² − 4ac is the discriminant. Its sign classifies real roots before the full equation is solved. If D > 0, the square-root term is nonzero and gives two distinct real roots. If D = 0, both formula choices coincide at −b/(2a), giving two equal real roots or one distinct repeated root. If D < 0, no real number can have square D, so there are no real roots in the present course. A positive D does not guarantee integer roots: x² − 2 = 0 has D = 8 and irrational roots. With integer coefficients, a nonnegative perfect-square D gives rational roots; denominator simplification then decides whether they are integers. A parameter question about equal roots should start by imposing D = 0, then checking that a remains nonzero. If multiplying an equation by a nonzero real constant k, the discriminant is multiplied by k²; its sign therefore remains unchanged. This agrees with the fact that equivalent equations have the same roots. Use exact arithmetic near D = 0 because rounding can incorrectly switch the classification.",
+        "hi": "D = b² − 4ac को विविक्तकर (Discriminant) कहते हैं। पूरा समीकरण हल करने से पहले इसका चिह्न वास्तविक मूलों की प्रकृति बताता है। D > 0 हो तो वर्गमूल वाला पद अशून्य है, इसलिए 2 भिन्न वास्तविक मूल हैं। D = 0 हो तो दोनों सूत्र-मान −b/(2a) पर मिलते हैं। इन्हें 2 समान वास्तविक मूल या 1 भिन्न दोहरा मूल कहते हैं। D < 0 में कोई वास्तविक संख्या ऐसी नहीं जिसका वर्ग D हो; इसलिए इस पाठ्यक्रम में कोई वास्तविक मूल नहीं है। धनात्मक D से पूर्णांक मूल निश्चित नहीं होते। x² − 2 = 0 में D = 8 है और मूल अपरिमेय हैं। पूर्णांक गुणांकों में D ऋणेतर पूर्ण वर्ग हो, तो मूल परिमेय होंगे। वे पूर्णांक भी हैं या नहीं, यह हर सरल करने से पता चलेगा। समान मूल वाले प्राचल प्रश्न में पहले D = 0 लगाएँ, फिर a का अशून्य रहना जाँचें। पूरे समीकरण को अशून्य वास्तविक k से गुणा करने पर D, k² से गुणा होता है; उसका चिह्न नहीं बदलता। यह समतुल्य समीकरणों के समान मूल होने से मेल खाता है। D = 0 के पास सटीक गणना रखें, क्योंकि पूर्णांकन वर्गीकरण बदल सकता है।"
+      },
+      "formula": "D > 0: 2 distinct; D = 0: equal; D < 0: no real roots",
+      "question": {
+        "en": "Does D > 0 always mean integer roots?",
+        "hi": "क्या D > 0 से हमेशा पूर्णांक मूल मिलते हैं?"
+      },
+      "answer": {
+        "en": "No. x² − 2 = 0 has irrational roots ±√2.",
+        "hi": "नहीं। x² − 2 = 0 के अपरिमेय मूल ±√2 हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Why completing the square works",
+        "hi": "वर्ग पूर्ण करने का कारण"
+      },
+      "body": {
+        "en": "To understand the formula, divide ax² + bx + c = 0 by the nonzero a. Move c/a to the other side and add (b/2a)² to both sides. The left becomes [x + b/(2a)]², and the right becomes (b² − 4ac)/(4a²). Taking both real square-root possibilities and rearranging yields the quadratic formula. For a simpler numerical example, x² + 6x − 7 = 0 gives x² + 6x = 7. Adding 9 to each side gives (x + 3)² = 16. Thus x + 3 = ±4, so x = 1 or −7. Both signs are necessary, since positive and negative numbers can have the same square. Adding the completing term to only one side would change the equation. This derivation explains the discriminant and the repeated-root case. It can be used as an understanding aid even when factorisation is the quickest exam method. Do not claim that (x + 3)² equals x² + 9: the middle term 6x is essential.",
+        "hi": "सूत्र का कारण समझने के लिए ax² + bx + c = 0 को अशून्य a से भाग दें। c/a को दूसरे पक्ष ले जाएँ और दोनों पक्षों में (b/2a)² जोड़ें। बायाँ पक्ष [x + b/(2a)]² बनता है। दायाँ पक्ष (b² − 4ac)/(4a²) बनता है। वर्गमूल की दोनों वास्तविक संभावनाएँ लेकर पुनर्व्यवस्थित करने पर द्विघात सूत्र मिलता है। सरल संख्यात्मक उदाहरण x² + 6x − 7 = 0 लें। इसे x² + 6x = 7 लिखें। दोनों पक्षों में 9 जोड़ने पर (x + 3)² = 16 है। इसलिए x + 3 = ±4 और x = 1 या −7 मिलता है। दोनों चिह्न जरूरी हैं, क्योंकि धनात्मक और ऋणात्मक संख्याओं का वर्ग समान हो सकता है। केवल एक पक्ष में वर्ग पूर्ण करने वाला पद जोड़ने से समीकरण बदल जाएगा। यह व्युत्पत्ति विविक्तकर और समान मूल की स्थिति भी समझाती है। परीक्षा में गुणनखंडन जल्दी हो, तब भी यह समझ के लिए सहायक है। (x + 3)² को x² + 9 न मानें। बीच का पद 6x जरूरी है। हर चरण समतुल्य रहे और कोई वैध मान न छूटे, यही मुख्य उद्देश्य है।"
+      },
+      "formula": "[x + b/(2a)]² = (b² − 4ac)/(4a²)",
+      "question": {
+        "en": "Why does (x + 3)² = 16 give two possibilities?",
+        "hi": "(x + 3)² = 16 से 2 संभावनाएँ क्यों मिलती हैं?"
+      },
+      "answer": {
+        "en": "Both 4 and −4 have square 16.",
+        "hi": "4 और −4 दोनों का वर्ग 16 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Turn area, number and time stories into equations",
+        "hi": "क्षेत्रफल, संख्या और समय की स्थितियों के समीकरण"
+      },
+      "body": {
+        "en": "Quadratics arise when two quantities depending linearly on the same unknown are multiplied. For a rectangle of width x and length x + 3, area 54 gives x(x + 3) = 54. Rearranging gives x² + 3x − 54 = 0. Solving produces x = 6 or −9, but width must be positive, so only x = 6 m is admissible if the dimensions were in metres. Consecutive positive integers can be modelled as n and n + 1; their product gives n(n + 1). In speed questions, time equals distance divided by speed, so write the nonzero-speed restrictions before clearing denominators. Clearing them can introduce values that were never allowed in the original rational expression. Read whether a question asks for present or future age, width or length, slower or faster speed. A mathematically valid root may fail a contextual condition. Reject it with a reason rather than deleting it silently. Finish by checking the original numerical story, not merely the expanded quadratic, because a correct algebraic solution cannot repair a wrongly modelled situation.",
+        "hi": "जब एक ही अज्ञात पर रैखिक रूप से निर्भर 2 राशियाँ गुणा होती हैं, तो द्विघात स्थिति बनती है। आयत की चौड़ाई x तथा लंबाई x + 3 हो और क्षेत्रफल 54 हो, तो x(x + 3) = 54 लिखें। सरल करके x² + 3x − 54 = 0 मिलता है। हल x = 6 या −9 है, लेकिन चौड़ाई धनात्मक चाहिए। इसलिए लंबाइयाँ मीटर में हों तो केवल x = 6 m स्वीकार्य है। लगातार धनात्मक पूर्णांकों को n तथा n + 1 मान सकते हैं। उनका गुणनफल n(n + 1) होगा। चाल के प्रश्न में समय = दूरी/चाल होता है। हर हटाने से पहले चाल की अशून्य शर्त लिखें। हर से गुणा करने के बाद ऐसे मान भी उम्मीदवार बन सकते हैं जो मूल भिन्न में मान्य नहीं थे। प्रश्न वर्तमान या भविष्य की आयु, चौड़ाई या लंबाई, धीमी या तेज चाल में से क्या पूछता है, यह पढ़ें। सही बीजगणितीय मूल संदर्भ की शर्त में अस्वीकार्य हो सकता है। उसे कारण देकर अस्वीकार करें, चुपचाप मिटाएँ नहीं। अंतिम जाँच मूल संख्यात्मक कहानी में करें, केवल विस्तारित द्विघात में नहीं। गलत मॉडल को सही बीजगणित हल करके भी वास्तविक प्रश्न का सही उत्तर नहीं मिलेगा।"
+      },
+      "formula": "Area = length × breadth; time = distance / speed",
+      "question": {
+        "en": "Why is a negative width root rejected?",
+        "hi": "चौड़ाई का ऋणात्मक मूल क्यों अस्वीकार करते हैं?"
+      },
+      "answer": {
+        "en": "It fails the physical condition that a length is positive.",
+        "hi": "वह लंबाई के धनात्मक होने की भौतिक शर्त तोड़ता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Choose a method and check both candidates",
+        "hi": "विधि चुनें और दोनों मान जाँचें"
+      },
+      "body": {
+        "en": "Choose factorisation when simple factors are evident, the quadratic formula when factoring is inconvenient, and the discriminant when only the nature of roots is requested. Each method solves the same equation under the same conditions. Write a, b and c with signs before substituting into the formula. Simplify square roots exactly where possible, keep the entire numerator over 2a, and list both roots. For a proposed root r, evaluate ar² + br + c directly and show that it is 0. The sum and product relationships from the preceding chapter provide an additional check: the roots should add to −b/a and multiply to c/a. They do not replace checking domain restrictions in a story. When D = 0, state explicitly that the roots are equal rather than presenting a single value without explanation. When D < 0, stop at no real roots instead of forcing a square root of a negative real number into a calculator. In a visual model, a coefficient setting with a = 0 must be labelled not quadratic, even if the rest of the interface still resembles the quadratic laboratory.",
+        "hi": "सरल गुणनखंड साफ दिखें तो गुणनखंडन चुनें। गुणनखंडन कठिन हो तो द्विघात सूत्र लें। केवल मूलों की प्रकृति पूछी हो तो विविक्तकर पर्याप्त है। सभी विधियाँ समान शर्तों के साथ वही समीकरण हल करती हैं। सूत्र में रखने से पहले a, b तथा c चिह्न सहित लिखें। जहाँ संभव हो वर्गमूल का सटीक सरल रूप रखें। पूरा अंश 2a के ऊपर रखें और दोनों मूल लिखें। किसी सुझाए मूल r के लिए ar² + br + c सीधे निकालकर 0 दिखाएँ। पिछले अध्याय के योग और गुणनफल संबंध अतिरिक्त जाँच देते हैं। मूलों का योग −b/a तथा गुणनफल c/a होना चाहिए। लेकिन ये संबंध कहानी की परिभाषा-सीमा की जाँच का स्थान नहीं लेते। D = 0 हो तो स्पष्ट लिखें कि मूल समान हैं; केवल अकेला मान बिना कारण न दें। D < 0 हो तो कोई वास्तविक मूल नहीं पर रुकें। ऋणात्मक वास्तविक संख्या का वर्गमूल जबरन कैलकुलेटर में डालना जरूरी नहीं है। दृश्य मॉडल में a = 0 सेटिंग को द्विघात नहीं कहना चाहिए, भले बाकी उपकरण द्विघात प्रयोगशाला जैसा दिखे। सही विधि, सटीक गणना और मूल शर्तों का सत्यापन मिलकर पूरा हल बनाते हैं।"
+      },
+      "formula": "Checks: ar² + br + c = 0; r1 + r2 = −b/a; r1r2 = c/a",
+      "question": {
+        "en": "When only the nature of roots is asked, must both roots be calculated?",
+        "hi": "केवल मूलों की प्रकृति पूछी हो, तो क्या दोनों मूल निकालना जरूरी है?"
+      },
+      "answer": {
+        "en": "No. The sign of the discriminant is enough.",
+        "hi": "नहीं। विविक्तकर का चिह्न पर्याप्त है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Solve x² − 9x + 20 = 0 by factorisation.",
+        "hi": "गुणनखंडन से x² − 9x + 20 = 0 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "Need numbers with product 20 and sum −9: −4 and −5.",
+          "hi": "गुणनफल 20 तथा योग −9 वाले मान: −4 तथा −5।"
+        },
+        {
+          "en": "Factor: (x − 4)(x − 5) = 0.",
+          "hi": "गुणनखंड: (x − 4)(x − 5) = 0।"
+        },
+        {
+          "en": "Set each factor to 0: x = 4 or 5. Both substitutions give 0.",
+          "hi": "हर गुणनखंड 0 रखें: x = 4 या 5। दोनों प्रतिस्थापन 0 देते हैं।"
+        }
+      ],
+      "answer": {
+        "en": "Roots: 4 and 5.",
+        "hi": "मूल: 4 तथा 5।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the nature of roots of 2x² + 4x + 5 = 0.",
+        "hi": "2x² + 4x + 5 = 0 के मूलों की प्रकृति बताएँ।"
+      },
+      "steps": [
+        {
+          "en": "a = 2, b = 4, c = 5.",
+          "hi": "a = 2, b = 4, c = 5।"
+        },
+        {
+          "en": "D = b² − 4ac = 16 − 40 = −24.",
+          "hi": "D = b² − 4ac = 16 − 40 = −24।"
+        },
+        {
+          "en": "D < 0, so the equation has no real roots.",
+          "hi": "D < 0 है, इसलिए कोई वास्तविक मूल नहीं है।"
+        }
+      ],
+      "answer": {
+        "en": "No real roots.",
+        "hi": "कोई वास्तविक मूल नहीं।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Solve 2x² − 4x − 3 = 0 using the quadratic formula.",
+        "hi": "द्विघात सूत्र से 2x² − 4x − 3 = 0 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "a = 2, b = −4, c = −3; D = 16 + 24 = 40.",
+          "hi": "a = 2, b = −4, c = −3; D = 16 + 24 = 40।"
+        },
+        {
+          "en": "x = [4 ± √40]/4 = [4 ± 2√10]/4.",
+          "hi": "x = [4 ± √40]/4 = [4 ± 2√10]/4।"
+        },
+        {
+          "en": "Simplify: x = 1 ± √10/2. The sum is 2 = −b/a and product −3/2 = c/a.",
+          "hi": "सरल करें: x = 1 ± √10/2। योग 2 = −b/a तथा गुणनफल −3/2 = c/a है।"
+        }
+      ],
+      "answer": {
+        "en": "x = 1 + √10/2 or 1 − √10/2.",
+        "hi": "x = 1 + √10/2 या 1 − √10/2।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A rectangle is 3 m longer than its width and has area 54 m². Find its dimensions.",
+        "hi": "आयत की लंबाई उसकी चौड़ाई से 3 m अधिक तथा क्षेत्रफल 54 m² है। माप निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Let width x m, x > 0; length (x + 3) m.",
+          "hi": "चौड़ाई x m, x > 0 लें; लंबाई (x + 3) m है।"
+        },
+        {
+          "en": "x(x + 3) = 54 gives x² + 3x − 54 = 0.",
+          "hi": "x(x + 3) = 54 से x² + 3x − 54 = 0।"
+        },
+        {
+          "en": "(x + 9)(x − 6) = 0 gives x = −9 or 6. Reject −9 because width is positive.",
+          "hi": "(x + 9)(x − 6) = 0 से x = −9 या 6। चौड़ाई धनात्मक होने से −9 अस्वीकार करें।"
+        },
+        {
+          "en": "Width 6 m, length 9 m; 6 × 9 = 54 m².",
+          "hi": "चौड़ाई 6 m, लंबाई 9 m; 6 × 9 = 54 m²।"
+        }
+      ],
+      "answer": {
+        "en": "Width 6 m; length 9 m.",
+        "hi": "चौड़ाई 6 m; लंबाई 9 m।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "For which real values of k does x² + kx + 9 = 0 have equal roots? Find those roots.",
+        "hi": "किन वास्तविक k के लिए x² + kx + 9 = 0 के समान मूल होंगे? वे मूल भी निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Equal roots require D = k² − 36 = 0, and a = 1 stays nonzero.",
+          "hi": "समान मूल के लिए D = k² − 36 = 0; a = 1 अशून्य है।"
+        },
+        {
+          "en": "Thus k² = 36, so k = 6 or −6. Both signs must be included.",
+          "hi": "इसलिए k² = 36, अतः k = 6 या −6। दोनों चिह्न जरूरी हैं।"
+        },
+        {
+          "en": "The repeated root is −k/2. For k = 6 it is −3; for k = −6 it is 3.",
+          "hi": "दोहरा मूल −k/2 है। k = 6 पर −3 तथा k = −6 पर 3 मिलता है।"
+        },
+        {
+          "en": "Check factors: (x + 3)² = 0 or (x − 3)² = 0.",
+          "hi": "गुणनखंड जाँचें: (x + 3)² = 0 या (x − 3)² = 0।"
+        }
+      ],
+      "answer": {
+        "en": "k = 6: roots −3, −3; k = −6: roots 3, 3.",
+        "hi": "k = 6: मूल −3, −3; k = −6: मूल 3, 3।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which condition is essential for ax² + bx + c = 0 to be quadratic?",
+        "hi": "ax² + bx + c = 0 के द्विघात होने के लिए आवश्यक शर्त कौन-सी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "b ≠ 0",
+            "hi": "b ≠ 0"
+          },
+          "reason": {
+            "en": "b may be 0, as in x² − 4 = 0.",
+            "hi": "x² − 4 = 0 में b, 0 हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "c ≠ 0",
+            "hi": "c ≠ 0"
+          },
+          "reason": {
+            "en": "c may be 0, as in x² + x = 0.",
+            "hi": "x² + x = 0 में c, 0 हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a = 0",
+            "hi": "a = 0"
+          },
+          "reason": {
+            "en": "That removes the quadratic term.",
+            "hi": "इससे द्विघात पद हट जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a ≠ 0",
+            "hi": "a ≠ 0"
+          },
+          "reason": {
+            "en": "The x² coefficient must be nonzero.",
+            "hi": "x² का गुणांक अशून्य होना चाहिए।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Roots of x² − 5x + 6 = 0 are",
+        "hi": "x² − 5x + 6 = 0 के मूल हैं"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2 and 3",
+            "hi": "2 तथा 3"
+          },
+          "reason": {
+            "en": "It factors as (x − 2)(x − 3) = 0.",
+            "hi": "इसके गुणनखंड (x − 2)(x − 3) = 0 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2 and −3",
+            "hi": "−2 तथा −3"
+          },
+          "reason": {
+            "en": "Those would solve x² + 5x + 6 = 0.",
+            "hi": "ये x² + 5x + 6 = 0 को हल करते।"
+          }
+        },
+        {
+          "text": {
+            "en": "1 and 6",
+            "hi": "1 तथा 6"
+          },
+          "reason": {
+            "en": "Their sum is 7 rather than 5.",
+            "hi": "इनका योग 7 है, 5 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 and 5",
+            "hi": "0 तथा 5"
+          },
+          "reason": {
+            "en": "Their product is 0, not 6.",
+            "hi": "इनका गुणनफल 0 है, 6 नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is the discriminant?",
+        "hi": "विविक्तकर क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "b² + 4ac",
+            "hi": "b² + 4ac"
+          },
+          "reason": {
+            "en": "The sign before 4ac is minus.",
+            "hi": "4ac से पहले ऋण चिह्न है।"
+          }
+        },
+        {
+          "text": {
+            "en": "b² − 4ac",
+            "hi": "b² − 4ac"
+          },
+          "reason": {
+            "en": "This determines the nature of real roots.",
+            "hi": "यह वास्तविक मूलों की प्रकृति तय करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−b/(2a)",
+            "hi": "−b/(2a)"
+          },
+          "reason": {
+            "en": "This is the repeated root when D = 0.",
+            "hi": "D = 0 पर यह दोहरा मूल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a + b + c",
+            "hi": "a + b + c"
+          },
+          "reason": {
+            "en": "This equals the polynomial value at x = 1, not the discriminant.",
+            "hi": "यह x = 1 पर बहुपद का मान है, विविक्तकर नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "If D = 0, a quadratic has",
+        "hi": "D = 0 होने पर द्विघात के होते हैं"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No real roots",
+            "hi": "कोई वास्तविक मूल नहीं"
+          },
+          "reason": {
+            "en": "That happens for D < 0.",
+            "hi": "यह D < 0 पर होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Two distinct real roots",
+            "hi": "2 भिन्न वास्तविक मूल"
+          },
+          "reason": {
+            "en": "Distinct roots require D > 0.",
+            "hi": "भिन्न मूलों के लिए D > 0 चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Two equal real roots",
+            "hi": "2 समान वास्तविक मूल"
+          },
+          "reason": {
+            "en": "The square-root term vanishes, so both formula values agree.",
+            "hi": "वर्गमूल पद 0 होने से दोनों सूत्र-मान समान हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinitely many roots",
+            "hi": "अनंत मूल"
+          },
+          "reason": {
+            "en": "A genuine quadratic is a nonzero degree-2 polynomial.",
+            "hi": "वास्तविक द्विघात अशून्य घात-2 बहुपद है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "The denominator of the full quadratic formula is",
+        "hi": "पूरे द्विघात सूत्र का हर है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "a",
+            "hi": "a"
+          },
+          "reason": {
+            "en": "The correct denominator includes factor 2.",
+            "hi": "सही हर में 2 गुणक भी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "b",
+            "hi": "b"
+          },
+          "reason": {
+            "en": "b may be 0, while the formula still applies.",
+            "hi": "b, 0 हो सकता है और सूत्र फिर भी लागू है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "The leading coefficient a must also be included.",
+            "hi": "अग्र गुणांक a भी शामिल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2a",
+            "hi": "2a"
+          },
+          "reason": {
+            "en": "Both −b and the signed square-root term are divided by 2a.",
+            "hi": "−b तथा चिह्न सहित वर्गमूल पद, दोनों 2a से विभाजित हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Solving x(x − 7) = 0 gives",
+        "hi": "x(x − 7) = 0 हल करने पर मिलता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x = 0 or 7",
+            "hi": "x = 0 या 7"
+          },
+          "reason": {
+            "en": "Either factor can be zero.",
+            "hi": "कोई भी गुणनखंड 0 हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only x = 7",
+            "hi": "केवल x = 7"
+          },
+          "reason": {
+            "en": "Cancelling x without checking loses root 0.",
+            "hi": "x बिना जाँच काटने से मूल 0 छूटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only x = 0",
+            "hi": "केवल x = 0"
+          },
+          "reason": {
+            "en": "The second factor also becomes 0 when x = 7.",
+            "hi": "x = 7 पर दूसरा गुणनखंड भी 0 होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x = −7",
+            "hi": "x = −7"
+          },
+          "reason": {
+            "en": "Substituting −7 gives 98, not 0.",
+            "hi": "−7 रखने पर 98 मिलता है, 0 नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For x² + 1 = 0, which statement is correct in real numbers?",
+        "hi": "वास्तविक संख्याओं में x² + 1 = 0 के बारे में सही कथन है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x = 1",
+            "hi": "x = 1"
+          },
+          "reason": {
+            "en": "1² + 1 = 2.",
+            "hi": "1² + 1 = 2।"
+          }
+        },
+        {
+          "text": {
+            "en": "No real roots",
+            "hi": "कोई वास्तविक मूल नहीं"
+          },
+          "reason": {
+            "en": "A real square cannot equal −1.",
+            "hi": "वास्तविक वर्ग −1 नहीं हो सकता।"
+          }
+        },
+        {
+          "text": {
+            "en": "x = −1",
+            "hi": "x = −1"
+          },
+          "reason": {
+            "en": "(−1)² + 1 = 2.",
+            "hi": "(−1)² + 1 = 2।"
+          }
+        },
+        {
+          "text": {
+            "en": "x = 0",
+            "hi": "x = 0"
+          },
+          "reason": {
+            "en": "0² + 1 = 1.",
+            "hi": "0² + 1 = 1।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A rectangle model gives width roots 6 m and −9 m. Which width is admissible?",
+        "hi": "आयत मॉडल में चौड़ाई के मूल 6 m तथा −9 m हैं। कौन-सी चौड़ाई स्वीकार्य है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Both",
+            "hi": "दोनों"
+          },
+          "reason": {
+            "en": "Physical width cannot be negative.",
+            "hi": "भौतिक चौड़ाई ऋणात्मक नहीं हो सकती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only −9 m",
+            "hi": "केवल −9 m"
+          },
+          "reason": {
+            "en": "This violates positive length.",
+            "hi": "यह धनात्मक लंबाई की शर्त तोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only 6 m",
+            "hi": "केवल 6 m"
+          },
+          "reason": {
+            "en": "It satisfies the positive-width restriction.",
+            "hi": "यह धनात्मक चौड़ाई की शर्त संतुष्ट करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Their sum −3 m",
+            "hi": "उनका योग −3 m"
+          },
+          "reason": {
+            "en": "The sum of roots is not automatically a width.",
+            "hi": "मूलों का योग अपने आप चौड़ाई नहीं है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Equal roots for x² + kx + 4 = 0 require",
+        "hi": "x² + kx + 4 = 0 के समान मूलों के लिए चाहिए"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "k = 0 only",
+            "hi": "केवल k = 0"
+          },
+          "reason": {
+            "en": "Then D = −16, so no real roots.",
+            "hi": "तब D = −16 है; कोई वास्तविक मूल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "k = 4 only",
+            "hi": "केवल k = 4"
+          },
+          "reason": {
+            "en": "It misses the valid negative value.",
+            "hi": "इसमें सही ऋणात्मक मान छूटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "k = 16",
+            "hi": "k = 16"
+          },
+          "reason": {
+            "en": "Then D = 240, not 0.",
+            "hi": "तब D = 240 है, 0 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "k = ±4",
+            "hi": "k = ±4"
+          },
+          "reason": {
+            "en": "D = k² − 16 = 0 gives both signs.",
+            "hi": "D = k² − 16 = 0 से दोनों चिह्न मिलते हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which equation becomes linear after simplification?",
+        "hi": "कौन-सा समीकरण सरल होने पर रैखिक बनता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x² + 2x = x² + 8",
+            "hi": "x² + 2x = x² + 8"
+          },
+          "reason": {
+            "en": "The squares cancel, leaving 2x − 8 = 0.",
+            "hi": "वर्ग कटकर 2x − 8 = 0 बचता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x² + 2x = 8",
+            "hi": "x² + 2x = 8"
+          },
+          "reason": {
+            "en": "A nonzero quadratic term remains.",
+            "hi": "अशून्य द्विघात पद बचता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x² = 8",
+            "hi": "x² = 8"
+          },
+          "reason": {
+            "en": "This is x² − 8 = 0, a quadratic.",
+            "hi": "यह x² − 8 = 0 द्विघात है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(x + 2)² = 8",
+            "hi": "(x + 2)² = 8"
+          },
+          "reason": {
+            "en": "Expansion still has a nonzero x² coefficient.",
+            "hi": "विस्तार में x² का अशून्य गुणांक बचता है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Write standard form and coefficients for 3x² = 5x + 2.",
+        "hi": "3x² = 5x + 2 का मानक रूप और गुणांक लिखें।"
+      },
+      "answer": {
+        "en": "3x² − 5x − 2 = 0; a = 3, b = −5, c = −2.",
+        "hi": "3x² − 5x − 2 = 0; a = 3, b = −5, c = −2।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve x² − 6x + 8 = 0.",
+        "hi": "x² − 6x + 8 = 0 हल करें।"
+      },
+      "answer": {
+        "en": "(x − 2)(x − 4) = 0, so x = 2 or 4.",
+        "hi": "(x − 2)(x − 4) = 0, इसलिए x = 2 या 4।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the nature of roots of 3x² − 2x + 1 = 0.",
+        "hi": "3x² − 2x + 1 = 0 के मूलों की प्रकृति बताएँ।"
+      },
+      "answer": {
+        "en": "D = (−2)² − 4 × 3 × 1 = −8 < 0; no real roots.",
+        "hi": "D = (−2)² − 4 × 3 × 1 = −8 < 0; कोई वास्तविक मूल नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve x² − 2x − 2 = 0 by the formula.",
+        "hi": "सूत्र से x² − 2x − 2 = 0 हल करें।"
+      },
+      "answer": {
+        "en": "D = 12; x = [2 ± √12]/2 = 1 ± √3.",
+        "hi": "D = 12; x = [2 ± √12]/2 = 1 ± √3।"
+      }
+    },
+    {
+      "question": {
+        "en": "Two consecutive positive integers have product 56. Find them.",
+        "hi": "2 लगातार धनात्मक पूर्णांकों का गुणनफल 56 है। उन्हें निकालें।"
+      },
+      "answer": {
+        "en": "Let n and n + 1; n² + n − 56 = (n + 8)(n − 7) = 0. Positive n = 7, giving 7 and 8.",
+        "hi": "n तथा n + 1 लें; n² + n − 56 = (n + 8)(n − 7) = 0। धनात्मक n = 7 है, इसलिए 7 तथा 8।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find k for equal roots of 2x² + kx + 2 = 0.",
+        "hi": "2x² + kx + 2 = 0 के समान मूलों के लिए k निकालें।"
+      },
+      "answer": {
+        "en": "D = k² − 16 = 0 gives k = ±4. The leading coefficient 2 stays nonzero.",
+        "hi": "D = k² − 16 = 0 से k = ±4। अग्र गुणांक 2 अशून्य रहता है।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Simplify before deciding the degree. Keep a ≠ 0. Apply the zero-product rule only to a product equal to 0. Do not cancel a possible zero factor. Divide the whole formula numerator by 2a, include both ± cases, classify D correctly and reject contextually invalid roots with a reason.",
+    "hi": "घात तय करने से पहले सरल करें। a ≠ 0 रखें। शून्य गुणनफल नियम केवल 0 के बराबर गुणनफल पर लगाएँ। संभव शून्य गुणनखंड को काटकर मूल न खोएँ। पूरे अंश को 2a से भाग दें, ± की दोनों स्थितियाँ लें, D का सही वर्गीकरण करें तथा संदर्भ में अमान्य मूल कारण देकर अस्वीकार करें।"
+  },
+  "revision": [
+    {
+      "en": "Standard form is ax² + bx + c = 0 with a ≠ 0.",
+      "hi": "मानक रूप ax² + bx + c = 0 तथा a ≠ 0 है।"
+    },
+    {
+      "en": "Factorisation uses the zero-product rule.",
+      "hi": "गुणनखंडन में शून्य गुणनफल नियम लगता है।"
+    },
+    {
+      "en": "Formula: x = [−b ± √D]/(2a), D = b² − 4ac.",
+      "hi": "सूत्र: x = [−b ± √D]/(2a), D = b² − 4ac।"
+    },
+    {
+      "en": "D positive, zero and negative give distinct, equal and no real roots.",
+      "hi": "D धनात्मक, शून्य तथा ऋणात्मक होने पर भिन्न, समान तथा कोई वास्तविक मूल नहीं मिलते।"
+    },
+    {
+      "en": "Check roots in the original equation and retain only contextually allowed values.",
+      "hi": "मूल समीकरण में जाँचें और संदर्भ में स्वीकार्य मान ही चुनें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Situation / equation → simplify standard form → check a ≠ 0 → factorisation or quadratic formula → discriminant classification → candidate roots → substitution and domain check.",
+    "hi": "स्थिति / समीकरण → मानक रूप में सरल करें → a ≠ 0 जाँचें → गुणनखंडन या द्विघात सूत्र → विविक्तकर वर्गीकरण → संभावित मूल → प्रतिस्थापन और सीमा-शर्त जाँच।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, chapter 4, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh104.pdf"
+    },
+    {
+      "title": "UP Board Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

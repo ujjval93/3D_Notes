@@ -1,0 +1,1467 @@
+{
+  "number": 7,
+  "id": "chemistry11-07",
+  "title": {
+    "en": "Redox Reactions",
+    "hi": "अपचयोपचय अभिक्रियाएँ"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "chem11-07-1",
+      "title": {
+        "en": "Oxidation number balance",
+        "hi": "ऑक्सीकरण संख्या संतुलन"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 18
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Oxygen atoms in ion",
+            "hi": "आयन में ऑक्सीजन परमाणु"
+          },
+          "min": 2,
+          "max": 4,
+          "step": 1,
+          "initial": 4,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Use charge sums to find a formal oxidation number.",
+        "hi": "आवेश योग से औपचारिक ऑक्सीकरण संख्या निकालें।"
+      },
+      "observe": {
+        "en": "Count oxygen atoms assigned −2 in the assumed MOx− ion.",
+        "hi": "काल्पनिक MOx− आयन में −2 वाले ऑक्सीजन गिनें।"
+      },
+      "modelNote": {
+        "en": "Generic charge-accounting model only; displayed formulae are not claims that all these ions exist.",
+        "hi": "यह केवल सामान्य आवेश गणना का मॉडल है; सभी दिखे आयनों का वास्तविक अस्तित्व दावा नहीं है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "M − 2x = −1 gives M = 2x − 1.",
+          "hi": "M − 2x = −1 से M = 2x − 1।"
+        }
+      },
+      "realLife": {
+        "en": "Oxidation-number calculations support balancing equations.",
+        "hi": "ऑक्सीकरण संख्या की गणना समीकरण संतुलित करने में मदद करती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "For x = 4, what is M?",
+          "hi": "x = 4 पर M कितना है?"
+        },
+        "options": [
+          {
+            "en": "+5",
+            "hi": "+5"
+          },
+          {
+            "en": "+7",
+            "hi": "+7"
+          },
+          {
+            "en": "+8",
+            "hi": "+8"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "M − 8 = −1, so M = +7.",
+          "hi": "M − 8 = −1, इसलिए M = +7।"
+        }
+      },
+      "selectors": [],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected species or electron count",
+            "hi": "चुनी स्पीशीज़ या इलेक्ट्रॉन संख्या"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Comparison or conserved amount",
+            "hi": "तुलना या संरक्षित मात्रा"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "chem11-07-1-low",
+          "label": {
+            "en": "Set the lower value 2 .",
+            "hi": "निचला मान 2  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2
+          }
+        },
+        {
+          "id": "chem11-07-1-high",
+          "label": {
+            "en": "Compare the upper value 4 .",
+            "hi": "ऊपरी मान 4  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 3.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Fewer −2 oxygen contributions require a smaller positive M.",
+            "hi": "−2 वाले कम ऑक्सीजन पर M का धनात्मक मान कम है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 3.0
+          },
+          "text": {
+            "en": "More oxygen makes the positive formal number larger for the same −1 ion charge.",
+            "hi": "समान −1 आवेश में अधिक ऑक्सीजन से M का धनात्मक औपचारिक मान बढ़ता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chem11-07-2",
+      "title": {
+        "en": "Electron transfer",
+        "hi": "इलेक्ट्रॉन स्थानांतरण"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 19
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Zinc amount reacted",
+            "hi": "अभिक्रिया किया जिंक"
+          },
+          "min": 0,
+          "max": 3,
+          "step": 0.5,
+          "initial": 1,
+          "unit": "mol"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Connect reacted zinc with transferred electron amount.",
+        "hi": "अभिक्रिया किए जिंक और इलेक्ट्रॉन मात्रा जोड़ें।"
+      },
+      "observe": {
+        "en": "Compare n mol zinc, 2n mol electrons and n mol deposited copper.",
+        "hi": "n mol जिंक, 2n mol इलेक्ट्रॉन और n mol जमे कॉपर तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Cu2+ is sufficient and zinc reacts completely; electron dots are symbolic, not individual mol-sized particles.",
+        "hi": "Cu2+ पर्याप्त और जिंक की पूर्ण अभिक्रिया मानते हैं; इलेक्ट्रॉन बिंदु सांकेतिक हैं, mol आकार के एकल कण नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Each Zn atom loses 2 electrons; each Cu2+ accepts 2.",
+          "hi": "हर Zn 2 इलेक्ट्रॉन देता और हर Cu2+ 2 लेता है।"
+        }
+      },
+      "realLife": {
+        "en": "Metal displacement and cells depend on related electron-transfer changes.",
+        "hi": "धातु विस्थापन तथा सेल इलेक्ट्रॉन स्थानांतरण से जुड़े हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "How many mol electrons from 1.5 mol Zn?",
+          "hi": "1.5 mol Zn से कितने mol इलेक्ट्रॉन?"
+        },
+        "options": [
+          {
+            "en": "1.5 mol",
+            "hi": "1.5 mol"
+          },
+          {
+            "en": "3 mol",
+            "hi": "3 mol"
+          },
+          {
+            "en": "0.75 mol",
+            "hi": "0.75 mol"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Multiply zinc amount by 2.",
+          "hi": "जिंक की मात्रा को 2 से गुणा करें।"
+        }
+      },
+      "selectors": [],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected species or electron count",
+            "hi": "चुनी स्पीशीज़ या इलेक्ट्रॉन संख्या"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Comparison or conserved amount",
+            "hi": "तुलना या संरक्षित मात्रा"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "chem11-07-2-low",
+          "label": {
+            "en": "Set the lower value 0 mol.",
+            "hi": "निचला मान 0 mol करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "chem11-07-2-high",
+          "label": {
+            "en": "Compare the upper value 3 mol.",
+            "hi": "ऊपरी मान 3 mol से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 2.95
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.5
+          },
+          "text": {
+            "en": "The balanced ratio remains 1 mol Zn to 2 mol electrons.",
+            "hi": "संतुलित अनुपात 1 mol Zn पर 2 mol इलेक्ट्रॉन रहता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.5
+          },
+          "text": {
+            "en": "A larger reaction amount transfers proportionally more electrons.",
+            "hi": "अधिक अभिक्रिया मात्रा पर उसी अनुपात में अधिक इलेक्ट्रॉन स्थानांतरित होते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chem11-07-3",
+      "title": {
+        "en": "Electron balance",
+        "hi": "इलेक्ट्रॉन संतुलन"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 20
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Fe2+ coefficient",
+            "hi": "Fe2+ का गुणांक"
+          },
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "initial": 5,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Match iron electron loss to acidic permanganate gain.",
+        "hi": "आयरन के इलेक्ट्रॉन त्याग को अम्लीय परमैंगनेट के ग्रहण से मिलाएँ।"
+      },
+      "observe": {
+        "en": "One MnO4− becoming Mn2+ needs 5 electrons; vary Fe2+ count.",
+        "hi": "1 MnO4− से Mn2+ बनने को 5 इलेक्ट्रॉन चाहिए; Fe2+ गिनती बदलें।"
+      },
+      "modelNote": {
+        "en": "Only coefficient 5 balances this specified electron exchange; other settings are intentionally unbalanced symbolic trials.",
+        "hi": "इस निश्चित इलेक्ट्रॉन विनिमय में केवल गुणांक 5 संतुलित है; अन्य सेटिंग जानबूझकर असंतुलित सांकेतिक परीक्षण हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Fe2+ loses 1 electron, while Mn(+7) gains 5 to reach +2.",
+          "hi": "Fe2+ 1 इलेक्ट्रॉन देता है; Mn(+7) से +2 बनने को 5 चाहिए।"
+        }
+      },
+      "realLife": {
+        "en": "Redox stoichiometry underlies quantitative chemical analysis.",
+        "hi": "रेडॉक्स स्टॉइकियोमिति मात्रात्मक रासायनिक विश्लेषण का आधार है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which Fe2+ coefficient conserves electrons?",
+          "hi": "कौन-सा Fe2+ गुणांक इलेक्ट्रॉन संरक्षित करता है?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "5",
+            "hi": "5"
+          },
+          {
+            "en": "8",
+            "hi": "8"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "5 one-electron losses match 5 gained electrons.",
+          "hi": "1-1 की 5 हानियाँ 5 इलेक्ट्रॉन लाभ से मेल खाती हैं।"
+        }
+      },
+      "selectors": [],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected species or electron count",
+            "hi": "चुनी स्पीशीज़ या इलेक्ट्रॉन संख्या"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Comparison or conserved amount",
+            "hi": "तुलना या संरक्षित मात्रा"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "chem11-07-3-low",
+          "label": {
+            "en": "Set the lower value 1 .",
+            "hi": "निचला मान 1  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "chem11-07-3-high",
+          "label": {
+            "en": "Compare the upper value 10 .",
+            "hi": "ऊपरी मान 10  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 9.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 5.5
+          },
+          "text": {
+            "en": "Below 5, too few electrons are supplied.",
+            "hi": "5 से नीचे इलेक्ट्रॉन कम मिलते हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 5.5
+          },
+          "text": {
+            "en": "Above 5, the trial supplies more electrons than one permanganate needs.",
+            "hi": "5 से ऊपर परीक्षण में 1 परमैंगनेट की जरूरत से अधिक इलेक्ट्रॉन हैं।"
+          }
+        }
+      ]
+    }
+  ],
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Chemistry Class 11 and UP Board 2026–27; consult the prescribed text and teacher-led practical work.",
+    "hi": "NCERT कक्षा 11 रसायन विज्ञान तथा यूपी बोर्ड 2026–27 पर आधारित मौलिक अध्ययन व्याख्याएँ; निर्धारित पुस्तक और शिक्षक के निर्देशन वाले प्रयोग भी पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry Part II, Chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/kech201.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Chemistry 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/152-Chemistry-Class-11.pdf"
+    }
+  ],
+  "goal": {
+    "en": "Track oxidation numbers and electrons to explain and balance redox changes.",
+    "hi": "ऑक्सीकरण संख्याओं और इलेक्ट्रॉनों से रेडॉक्स परिवर्तन समझें तथा संतुलित करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Oxidation and reduction",
+        "hi": "ऑक्सीकरण और अपचयन"
+      },
+      "paragraphs": [
+        {
+          "en": "Oxidation and reduction originally described changes involving oxygen and hydrogen. Adding oxygen or removing hydrogen often represents oxidation; removing oxygen or adding hydrogen often represents reduction. These descriptions are useful for familiar reactions but do not cover every case. The electron definition is wider: oxidation is loss of electrons and reduction is gain of electrons. In Zn + Cu2+ → Zn2+ + Cu, zinc loses electrons although oxygen is absent. The copper ion gains those electrons. A redox reaction contains both changes because electrons released by one species must be accepted by another. Do not describe an isolated loss as a complete chemical reaction without identifying an electron acceptor or an external circuit. Write the initial and final forms of the same element before deciding what changed. This avoids confusing the charge of an entire ion with the electron change at one atom.",
+          "hi": "ऑक्सीकरण (Oxidation) और अपचयन (Reduction) की शुरुआती व्याख्या ऑक्सीजन तथा हाइड्रोजन के जुड़ने या हटने से की गई थी। सामान्य उदाहरणों में ऑक्सीजन जुड़ना या हाइड्रोजन हटना ऑक्सीकरण कहलाता है। ऑक्सीजन हटना या हाइड्रोजन जुड़ना अपचयन कहलाता है। लेकिन सभी अभिक्रियाओं में ये तत्व नहीं होते। इसलिए इलेक्ट्रॉन पर आधारित व्याख्या अधिक व्यापक है। इलेक्ट्रॉन छोड़ना ऑक्सीकरण और इलेक्ट्रॉन ग्रहण करना अपचयन है। Zn + Cu2+ → Zn2+ + Cu में ऑक्सीजन नहीं है, फिर भी रेडॉक्स परिवर्तन होता है। जिंक इलेक्ट्रॉन छोड़ता है और कॉपर आयन उन्हें ग्रहण करता है। दोनों परिवर्तन साथ होते हैं क्योंकि छोड़े गए इलेक्ट्रॉन किसी दूसरी स्पीशीज़ को मिलने चाहिए। केवल एक पदार्थ का इलेक्ट्रॉन खोना लिखकर पूरी अभिक्रिया समाप्त नहीं मान सकते। इलेक्ट्रॉन ग्रहण करने वाली स्पीशीज़ या बाहरी परिपथ का संबंध बताना होगा। निर्णय करने से पहले उसी तत्व का आरंभिक और अंतिम रूप लिखें। पूरे आयन का आवेश और किसी एक परमाणु का परिवर्तन अलग बातें हो सकती हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "An electron must appear on the product side of an oxidation half-reaction and on the reactant side of a reduction half-reaction.",
+          "hi": "ऑक्सीकरण अर्ध-अभिक्रिया में इलेक्ट्रॉन उत्पाद की ओर और अपचयन अर्ध-अभिक्रिया में अभिकारक की ओर लिखा जाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can oxygen-free reactions be redox?",
+          "hi": "क्या ऑक्सीजन रहित अभिक्रिया रेडॉक्स हो सकती है?"
+        },
+        "answer": {
+          "en": "Yes; electron transfer between zinc and copper ions is an example.",
+          "hi": "हाँ; जिंक और कॉपर आयनों में इलेक्ट्रॉन स्थानांतरण इसका उदाहरण है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Oxidation number as a bookkeeping tool",
+        "hi": "ऑक्सीकरण संख्या: गणना का साधन"
+      },
+      "paragraphs": [
+        {
+          "en": "An oxidation number assigns electrons to atoms by a stated convention, usually giving bonding electrons to the more electronegative partner. It is a formal accounting number, not a claim that every atom carries that actual electric charge. In covalent water, oxygen is assigned −2 and each hydrogen +1, although the molecule is not built from separate fully charged H+ and O2− ions. A free element has oxidation number zero: this applies to Na, O2, Cl2 and S8 alike. A monatomic ion has an oxidation number equal to its ionic charge. The sum over a neutral compound is zero; for a polyatomic ion it equals the overall ion charge. Multiplication by the number of atoms is essential. If two identical atoms together contribute +2, this does not mean each atom is +2. Keep atom count, charge and oxidation number in separate columns when solving a new formula.",
+          "hi": "ऑक्सीकरण संख्या (Oxidation number) इलेक्ट्रॉनों का औपचारिक हिसाब रखने की संख्या है। प्रचलित नियम में आबंध के इलेक्ट्रॉन अधिक विद्युतऋणात्मक परमाणु को दिए हुए मानते हैं। इसका अर्थ यह नहीं कि हर परमाणु पर वास्तव में उतना ही पूरा विद्युत आवेश उपस्थित है। जल में ऑक्सीजन को −2 और हर हाइड्रोजन को +1 दिया जाता है। फिर भी सहसंयोजक जल का अणु अलग-अलग पूर्ण आवेश वाले H+ और O2− आयनों से बना हुआ नहीं समझना चाहिए। स्वतंत्र तत्व की ऑक्सीकरण संख्या शून्य होती है। यह नियम Na, O2, Cl2 और S8 सभी पर लागू है। एकपरमाणुक आयन के लिए संख्या उसके आयनिक आवेश के बराबर है। उदासीन यौगिक में सभी परमाणुओं की संख्याओं का योग शून्य और बहुपरमाणुक आयन में कुल आयन आवेश के बराबर होता है। हर तत्व के परमाणुओं की संख्या से गुणा करना जरूरी है। यदि 2 समान परमाणुओं का कुल योगदान +2 है तो हर परमाणु का मान +1 होगा, +2 नहीं। नया सूत्र हल करते समय परमाणु गिनती, आवेश और ऑक्सीकरण संख्या अलग लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Formal oxidation numbers describe an electron-assignment convention; they must not be confused with partial charges or measured electron density.",
+          "hi": "औपचारिक ऑक्सीकरण संख्या इलेक्ट्रॉन बाँटने की परिपाटी है; इसे आंशिक आवेश या मापे गए इलेक्ट्रॉन घनत्व के समान न मानें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the sum in SO4^2−?",
+          "hi": "SO4^2− में कुल योग कितना है?"
+        },
+        "answer": {
+          "en": "The oxidation-number sum is −2, the ion charge.",
+          "hi": "ऑक्सीकरण संख्याओं का योग आयन आवेश −2 के बराबर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Rules and important exceptions",
+        "hi": "नियम और जरूरी अपवाद"
+      },
+      "paragraphs": [
+        {
+          "en": "Fluorine is assigned −1 in its compounds. Oxygen usually has −2, but peroxide oxygen has −1 and oxygen in OF2 has +2 because fluorine is more electronegative. Hydrogen usually has +1 with nonmetals and −1 in metal hydrides such as NaH. These exceptions must be checked before applying a memorised calculation. Alkali metals commonly have +1 and alkaline earth metals +2 in their compounds. For MnO4−, write x + 4(−2) = −1, giving manganese +7. The scene generalises only this bookkeeping pattern to an assumed MOx− ion: M has 2x − 1 if every oxygen is assigned −2. Moving the slider does not prove that every displayed formula is a stable real substance. An unusual result should prompt a check of species identity and assumptions, not a claim that a general rule has failed. Oxidation numbers can sometimes be fractional averages when equivalent positions cannot be distinguished by a simple formula.",
+          "hi": "फ्लोरीन अपने यौगिकों में सामान्य नियम के अनुसार −1 रखता है। ऑक्सीजन का मान प्रायः −2 होता है, लेकिन परॉक्साइड में −1 होता है। OF2 में ऑक्सीजन का मान +2 है क्योंकि फ्लोरीन अधिक विद्युतऋणात्मक है। हाइड्रोजन अधातुओं के साथ सामान्यतः +1 तथा NaH जैसे धातु हाइड्राइड में −1 होता है। याद किया हुआ नियम लगाने से पहले ये अपवाद पहचानें। क्षार धातुएँ यौगिकों में सामान्यतः +1 और क्षारीय मृदा धातुएँ +2 देती हैं। MnO4− के लिए x + 4(−2) = −1 लिखने पर मैंगनीज +7 मिलता है। दृश्य में केवल इसी गणना को एक काल्पनिक MOx− आयन तक बढ़ाया गया है। यदि प्रत्येक ऑक्सीजन −2 है, तो M का मान 2x − 1 होगा। स्लाइडर पर सूत्र दिखने का अर्थ यह नहीं कि वे सभी वास्तविक स्थायी पदार्थ हैं। असामान्य उत्तर मिलने पर स्पीशीज़ और मान्यताओं की जाँच करें। कुछ सूत्रों में निकला भिन्नात्मक मान औसत ऑक्सीकरण संख्या भी हो सकता है; यह हर परमाणु पर अलग वास्तविक भिन्न आवेश होने का प्रमाण नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Assign known values first, form one charge-sum equation, solve the unknown and substitute it back to check the total.",
+          "hi": "पहले ज्ञात मान रखें, आवेश-योग का समीकरण बनाएँ, अज्ञात निकालें और वापस रखकर कुल योग की जाँच करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is oxygen’s oxidation number in H2O2?",
+          "hi": "H2O2 में ऑक्सीजन की ऑक्सीकरण संख्या क्या है?"
+        },
+        "answer": {
+          "en": "It is −1 in this peroxide.",
+          "hi": "इस परॉक्साइड में यह −1 है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Oxidising and reducing agents",
+        "hi": "ऑक्सीकारक और अपचायक"
+      },
+      "paragraphs": [
+        {
+          "en": "An oxidising agent accepts electrons and causes another species to be oxidised. It is itself reduced. A reducing agent gives electrons and causes another species to be reduced; it is itself oxidised. The names describe the effect on the partner, so confusing them is common. In the zinc–copper reaction, Zn is the reducing agent and Cu2+ the oxidising agent. The same element may behave differently in different compounds or media because its initial oxidation state and available products change. A species in an intermediate oxidation state may be capable of both roles. A substance with oxygen is not automatically an oxidising agent in every reaction. Identify the species that actually changes oxidation number. Write “Zn: 0 to +2, oxidation” and “Cu: +2 to 0, reduction” before naming the agents. This sequence is more reliable than guessing from colour, metal/nonmetal labels or the position on the page.",
+          "hi": "ऑक्सीकारक (Oxidising agent) इलेक्ट्रॉन ग्रहण करके दूसरी स्पीशीज़ का ऑक्सीकरण कराता है। उसका अपना अपचयन होता है। अपचायक (Reducing agent) इलेक्ट्रॉन देकर दूसरी स्पीशीज़ का अपचयन कराता है और स्वयं ऑक्सीकृत होता है। नाम साथी पर पड़ने वाले प्रभाव के आधार पर है, इसलिए इसमें भ्रम हो सकता है। जिंक–कॉपर अभिक्रिया में Zn अपचायक तथा Cu2+ ऑक्सीकारक है। किसी तत्व की अलग यौगिकों या अलग माध्यमों में भूमिका बदल सकती है क्योंकि आरंभिक ऑक्सीकरण अवस्था और बनने वाले उत्पाद बदलते हैं। मध्यवर्ती ऑक्सीकरण अवस्था वाली स्पीशीज़ कभी दोनों भूमिकाएँ निभा सकती है। केवल ऑक्सीजन होने से कोई पदार्थ हर अभिक्रिया में ऑक्सीकारक नहीं बन जाता। पहले उस स्पीशीज़ को पहचानें जिसकी संख्या वास्तव में बदली है। Zn के लिए 0 से +2 लिखकर ऑक्सीकरण और Cu के लिए +2 से 0 लिखकर अपचयन तय करें। इसके बाद अभिकर्मकों के नाम देना आसान होगा। रंग, धातु-अधातु का नाम या समीकरण में बाएँ-दाएँ स्थान देखकर भूमिका का अनुमान लगाना भरोसेमंद तरीका नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Agent and change are linked pairs: oxidising agent–reduction, reducing agent–oxidation. Always identify the changed atom and initial/final states.",
+          "hi": "अभिकर्मक और परिवर्तन की जोड़ियाँ हैं: ऑक्सीकारक–अपचयन, अपचायक–ऑक्सीकरण। बदले परमाणु तथा उसकी शुरुआती और अंतिम अवस्था पहचानें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which agent is oxidised?",
+          "hi": "कौन-सा अभिकर्मक स्वयं ऑक्सीकृत होता है?"
+        },
+        "answer": {
+          "en": "The reducing agent is oxidised.",
+          "hi": "अपचायक स्वयं ऑक्सीकृत होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Balancing by oxidation-number change",
+        "hi": "ऑक्सीकरण संख्या से संतुलन"
+      },
+      "paragraphs": [
+        {
+          "en": "A redox equation must conserve atoms and total charge as well as electrons. First write correct reactant and product formulae. Assign oxidation numbers to identify the atoms whose values increase and decrease. Multiply each change by the number of such atoms in the relevant formula. Choose coefficients so the total increase equals the total decrease. Then balance the remaining atoms using the appropriate medium and finally check charge. For acidic permanganate reacting with Fe2+, Mn changes from +7 to +2 and gains 5 electrons; each Fe changes from +2 to +3 and loses 1. Therefore 5 Fe2+ are needed for each MnO4−. Oxygen and hydrogen are balanced with water and hydrogen ions. The final equation is MnO4− + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O. Changing a subscript to make numbers fit would change the substance, so only coefficients may be adjusted.",
+          "hi": "रेडॉक्स समीकरण में परमाणु, कुल आवेश और इलेक्ट्रॉन—तीनों का संरक्षण होना चाहिए। सबसे पहले अभिकारकों और उत्पादों के सही सूत्र लिखें। ऑक्सीकरण संख्याएँ देकर बढ़ने और घटने वाले परमाणु पहचानें। हर परिवर्तन को संबंधित सूत्र में उस तरह के परमाणुओं की संख्या से गुणा करें। ऐसे गुणांक चुनें कि कुल वृद्धि और कुल कमी बराबर हों। फिर माध्यम के अनुसार शेष परमाणु संतुलित करें तथा अंत में आवेश जाँचें। अम्लीय परमैंगनेट और Fe2+ की अभिक्रिया में Mn का मान +7 से +2 होता है, इसलिए वह 5 इलेक्ट्रॉन ग्रहण करता है। प्रत्येक Fe का मान +2 से +3 होता है और वह 1 इलेक्ट्रॉन छोड़ता है। इसलिए 1 MnO4− के लिए 5 Fe2+ चाहिए। ऑक्सीजन तथा हाइड्रोजन को जल और हाइड्रोजन आयनों से संतुलित करते हैं। पूरा समीकरण MnO4− + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O है। संतुलन के लिए सूत्र के अंदर छोटा अंक बदलना गलत है, क्योंकि उससे पदार्थ बदल जाएगा; केवल बाहर के गुणांक बदल सकते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The coefficient ratio comes from electron balance; hydrogen ions and water finish atom balance in the specified acidic medium.",
+          "hi": "गुणांक अनुपात इलेक्ट्रॉन संतुलन से मिलता है; दिए अम्लीय माध्यम में H+ और जल शेष परमाणुओं का संतुलन पूरा करते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why are 5 Fe2+ needed per MnO4− in acid?",
+          "hi": "अम्ल में 1 MnO4− के लिए 5 Fe2+ क्यों चाहिए?"
+        },
+        "answer": {
+          "en": "Mn gains 5 electrons, while each Fe2+ loses only 1.",
+          "hi": "Mn को 5 इलेक्ट्रॉन चाहिए और हर Fe2+ केवल 1 देता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Half-reaction method and medium",
+        "hi": "अर्ध-अभिक्रिया विधि और माध्यम"
+      },
+      "paragraphs": [
+        {
+          "en": "The ion–electron method separates oxidation and reduction into half-reactions. Balance atoms other than hydrogen and oxygen first. In acidic solution balance oxygen with H2O, hydrogen with H+, and then charge with electrons. Multiply the half-reactions to make electron counts equal, add them and cancel species appearing on both sides. For a basic medium, an acidic intermediate balance can be converted by adding the same number of OH− ions to both sides to neutralise H+, then cancelling excess water. This is an algebraic balancing method, not a claim that acidic conditions occur during the basic reaction. Never leave free electrons in a complete net ionic equation for an ordinary redox reaction. Check whether products are chemically appropriate for the stated medium before balancing: permanganate can form different manganese products under different conditions. A correctly balanced but chemically incorrect skeleton is still an incorrect description of a reaction.",
+          "hi": "आयन–इलेक्ट्रॉन विधि (Ion–electron method) में ऑक्सीकरण और अपचयन अलग अर्ध-अभिक्रियाओं में लिखते हैं। पहले हाइड्रोजन तथा ऑक्सीजन के अतिरिक्त परमाणु संतुलित करें। अम्लीय विलयन में ऑक्सीजन को H2O, हाइड्रोजन को H+ और आवेश को इलेक्ट्रॉन से संतुलित करते हैं। दोनों अर्ध-अभिक्रियाओं को इस तरह गुणा करें कि इलेक्ट्रॉन बराबर हों। जोड़ने पर दोनों ओर के इलेक्ट्रॉन और समान स्पीशीज़ काट दें। क्षारीय माध्यम के लिए अम्लीय रूप में बने अस्थायी संतुलन में दोनों ओर बराबर OH− जोड़कर H+ को जल में बदल सकते हैं, फिर अतिरिक्त जल काट सकते हैं। यह बीजीय तरीका है; इसका अर्थ यह नहीं कि वास्तविक क्षारीय अभिक्रिया पहले अम्लीय हो जाती है। पूरी शुद्ध आयनिक रेडॉक्स अभिक्रिया में मुक्त इलेक्ट्रॉन नहीं बचने चाहिए। संतुलन शुरू करने से पहले दिए माध्यम में उत्पाद सही हैं या नहीं, यह भी देखें। अलग परिस्थितियों में परमैंगनेट से मैंगनीज के अलग उत्पाद बन सकते हैं। गलत उत्पादों वाले प्रारूप को सही संख्याओं से संतुलित कर देने पर भी वास्तविक अभिक्रिया की व्याख्या गलत ही रहेगी।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use H2O, H+ or OH− only in a way consistent with the stated medium, and verify both sides have the same charge.",
+          "hi": "H2O, H+ या OH− का उपयोग दिए माध्यम के अनुसार करें और जाँचें कि दोनों ओर कुल आवेश समान है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can electrons remain in the final net equation?",
+          "hi": "क्या अंतिम शुद्ध समीकरण में इलेक्ट्रॉन बच सकते हैं?"
+        },
+        "answer": {
+          "en": "They cancel when the complete oxidation and reduction processes are combined.",
+          "hi": "पूरा ऑक्सीकरण और अपचयन जोड़ने पर इलेक्ट्रॉन कट जाते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Redox patterns and applications",
+        "hi": "रेडॉक्स के प्रकार और उपयोग"
+      },
+      "paragraphs": [
+        {
+          "en": "Combination, decomposition, displacement and disproportionation can include redox changes, but a reaction name alone is not enough to decide. Metal displacement often transfers electrons, as zinc reducing copper ions. In disproportionation the same element in one reactant is simultaneously oxidised and reduced into different products. Chlorine reacting with cold dilute alkali provides a familiar accounting example: chlorine at 0 forms chloride at −1 and hypochlorite with chlorine at +1. Neutralisation between a simple acid and base generally leaves oxidation states unchanged and is not redox. Combustion, corrosion and many biological processes involve electron redistribution. A cell separates related oxidation and reduction processes so electrons can pass through an external connection. This chapter gives the electron-accounting foundation; detailed electrode potentials and cell calculations belong to later study. Study observations such as colour changes as evidence interpreted with equations, not as universal proof that every colour change is a redox reaction.",
+          "hi": "संयोजन, वियोजन, विस्थापन और असमानुपातन में रेडॉक्स परिवर्तन हो सकते हैं, लेकिन केवल अभिक्रिया के नाम से निर्णय पूरा नहीं होता। धातु विस्थापन में प्रायः इलेक्ट्रॉन स्थानांतरण होता है, जैसे जिंक द्वारा कॉपर आयनों का अपचयन। असमानुपातन (Disproportionation) में एक ही अभिकारक का वही तत्व एक साथ ऑक्सीकृत और अपचयित होकर अलग उत्पाद देता है। ठंडी तनु क्षार से क्लोरीन की अभिक्रिया में 0 अवस्था की क्लोरीन से −1 वाला क्लोराइड तथा +1 वाली क्लोरीन का हाइपोक्लोराइट बनता है। साधारण अम्ल–क्षार उदासीनीकरण में ऑक्सीकरण अवस्थाएँ सामान्यतः नहीं बदलतीं, इसलिए वह रेडॉक्स नहीं है। दहन, संक्षारण और अनेक जैविक प्रक्रियाएँ इलेक्ट्रॉनों के पुनर्वितरण से जुड़ी हैं। किसी सेल में ऑक्सीकरण और अपचयन को अलग स्थानों पर व्यवस्थित किया जाता है, जिससे इलेक्ट्रॉन बाहरी संपर्क से गुजर सकें। यह अध्याय इलेक्ट्रॉन लेखे की बुनियाद देता है; विस्तृत इलेक्ट्रोड विभव और सेल गणनाएँ आगे पढ़ी जाती हैं। रंग बदलना उपयोगी प्रेक्षण हो सकता है, लेकिन हर रंग परिवर्तन को बिना समीकरण जाँचे रेडॉक्स का प्रमाण न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A classification such as displacement describes the overall pattern; oxidation-number changes determine whether that particular reaction is redox.",
+          "hi": "विस्थापन जैसी श्रेणी समग्र ढाँचा बताती है; संबंधित ऑक्सीकरण संख्याओं का बदलाव तय करता है कि अभिक्रिया रेडॉक्स है या नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is simple HCl–NaOH neutralisation redox?",
+          "hi": "क्या साधारण HCl–NaOH उदासीनीकरण रेडॉक्स है?"
+        },
+        "answer": {
+          "en": "No; the relevant oxidation numbers do not change.",
+          "hi": "नहीं; संबंधित ऑक्सीकरण संख्याएँ नहीं बदलतीं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Mole ratios and revision strategy",
+        "hi": "मोल अनुपात और पुनरावृत्ति"
+      },
+      "paragraphs": [
+        {
+          "en": "Electron accounting connects directly with stoichiometry. If 1 mol of zinc becomes Zn2+, it releases 2 mol of electrons, and enough Cu2+ can accept them to form 1 mol of copper. “Mol of electrons” counts particles; it is different from saying that a copper atom gains two moles of electrons. The scene assumes copper ions are available in excess and that the stated amount of zinc reacts completely. Real yields can be smaller and do not alter the balanced ideal ratio. For examination work state the changing elements, their initial and final oxidation numbers, the electron ratio, then the fully balanced equation. Finish with an independent atom and charge check. In the permanganate slider, settings other than 5 Fe2+ per MnO4− are deliberately unbalanced comparisons, not alternative physical reactions. Treat the final tick as confirmation of the chosen condition, not as a replacement for explaining why it conserves electrons.",
+          "hi": "इलेक्ट्रॉन का हिसाब स्टॉइकियोमिति (Stoichiometry) से सीधे जुड़ता है। यदि 1 mol जिंक Zn2+ बनता है तो 2 mol इलेक्ट्रॉन छोड़ता है। पर्याप्त Cu2+ उन्हें ग्रहण करके 1 mol कॉपर बना सकता है। इलेक्ट्रॉनों का mol कणों की गिनती है। इसका अर्थ यह नहीं कि कॉपर का एक परमाणु 2 mol इलेक्ट्रॉन लेता है; एक Cu2+ आयन 2 इलेक्ट्रॉन लेता है। दृश्य में कॉपर आयन पर्याप्त मात्रा में और दिया जिंक पूर्णतः अभिक्रियाशील माना गया है। वास्तविक प्राप्ति कम हो सकती है, लेकिन इससे संतुलित आदर्श अनुपात नहीं बदलता। परीक्षा में बदलते तत्व, उनकी शुरुआती और अंतिम संख्याएँ, इलेक्ट्रॉन अनुपात और फिर पूरा संतुलित समीकरण लिखें। अंत में परमाणु तथा कुल आवेश की स्वतंत्र जाँच करें। परमैंगनेट स्लाइडर में 1 MnO4− पर Fe2+ का गुणांक 5 से अलग रखना जानबूझकर असंतुलित तुलना है, कोई दूसरी वास्तविक संतुलित अभिक्रिया नहीं। सही टिक केवल चुनी शर्त पूरी होने की सूचना देता है। इलेक्ट्रॉन क्यों संरक्षित हैं, इसकी व्याख्या भी स्वयं करना जरूरी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Check units, distinguish individual particles from moles, and use coefficients as mole ratios only after the equation is balanced.",
+          "hi": "इकाइयाँ जाँचें, एकल कण तथा mol में अंतर रखें और समीकरण संतुलित करने के बाद ही गुणांक को मोल अनुपात की तरह लें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many moles of electrons come from 2 mol Zn?",
+          "hi": "2 mol Zn से कितने mol इलेक्ट्रॉन मिलेंगे?"
+        },
+        "answer": {
+          "en": "4 mol electrons, because every Zn atom loses 2 electrons.",
+          "hi": "4 mol इलेक्ट्रॉन, क्योंकि हर Zn परमाणु 2 इलेक्ट्रॉन छोड़ता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Σ(oxidation number × atom count) = species charge",
+      "meaning": {
+        "en": "The sum of formal oxidation numbers equals the total charge of a neutral compound or ion.",
+        "hi": "औपचारिक ऑक्सीकरण संख्याओं और परमाणु गिनती के गुणनफलों का योग स्पीशीज़ के कुल आवेश के बराबर है।"
+      },
+      "units": {
+        "en": "Oxidation numbers and charge numbers are dimensionless.",
+        "hi": "ऑक्सीकरण संख्या और आवेश संख्या विमाहीन हैं।"
+      }
+    },
+    {
+      "expression": "Zn → Zn2+ + 2e−",
+      "meaning": {
+        "en": "One zinc atom loses 2 electrons; n mol zinc releases 2n mol electrons.",
+        "hi": "एक जिंक परमाणु 2 इलेक्ट्रॉन छोड़ता है; n mol जिंक से 2n mol इलेक्ट्रॉन मिलते हैं।"
+      },
+      "units": {
+        "en": "Amounts in mol; electron counts per atom are dimensionless.",
+        "hi": "पदार्थ की मात्रा mol में; प्रति परमाणु इलेक्ट्रॉन गिनती विमाहीन।"
+      }
+    },
+    {
+      "expression": "MnO4− + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O",
+      "meaning": {
+        "en": "Acidic permanganate consumes 5 iron(II) ions for every permanganate ion.",
+        "hi": "अम्लीय परमैंगनेट में हर परमैंगनेट आयन के लिए 5 आयरन(II) आयन लगते हैं।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are dimensionless mole ratios.",
+        "hi": "स्टॉइकियोमितीय गुणांक विमाहीन मोल अनुपात हैं।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the oxidation number of S in SO4^2−.",
+        "hi": "SO4^2− में S की ऑक्सीकरण संख्या निकालें।"
+      },
+      "given": {
+        "en": "4 oxygen atoms at −2; total charge −2.",
+        "hi": "4 ऑक्सीजन −2 पर; कुल आवेश −2।"
+      },
+      "find": {
+        "en": "Oxidation number x of sulfur.",
+        "hi": "सल्फर की ऑक्सीकरण संख्या x।"
+      },
+      "formula": {
+        "en": "x + 4(−2) = −2",
+        "hi": "x + 4(−2) = −2"
+      },
+      "steps": [
+        {
+          "en": "Write x − 8 = −2.",
+          "hi": "x − 8 = −2 लिखें।"
+        },
+        {
+          "en": "Add 8 to obtain x = +6; recheck +6 − 8 = −2.",
+          "hi": "8 जोड़ने पर x = +6; जाँचें +6 − 8 = −2।"
+        }
+      ],
+      "answer": {
+        "en": "S is +6, dimensionless.",
+        "hi": "S का मान +6, विमाहीन है।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Identify the agents in Zn + Cu2+ → Zn2+ + Cu.",
+        "hi": "Zn + Cu2+ → Zn2+ + Cu में अभिकर्मकों की भूमिका बताएँ।"
+      },
+      "given": {
+        "en": "Zn: 0 to +2; Cu: +2 to 0.",
+        "hi": "Zn: 0 से +2; Cu: +2 से 0।"
+      },
+      "find": {
+        "en": "Oxidising and reducing agents.",
+        "hi": "ऑक्सीकारक और अपचायक।"
+      },
+      "formula": {
+        "en": "Electron loss = oxidation; gain = reduction.",
+        "hi": "इलेक्ट्रॉन हानि = ऑक्सीकरण; लाभ = अपचयन।"
+      },
+      "steps": [
+        {
+          "en": "Zn loses 2 electrons and is oxidised.",
+          "hi": "Zn 2 इलेक्ट्रॉन छोड़कर ऑक्सीकृत होता है।"
+        },
+        {
+          "en": "Cu2+ gains 2 electrons and is reduced.",
+          "hi": "Cu2+ 2 इलेक्ट्रॉन लेकर अपचयित होता है।"
+        }
+      ],
+      "answer": {
+        "en": "Zn is the reducing agent; Cu2+ is the oxidising agent.",
+        "hi": "Zn अपचायक तथा Cu2+ ऑक्सीकारक है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "How many moles of electrons are released by 2.5 mol Zn?",
+        "hi": "2.5 mol Zn से कितने mol इलेक्ट्रॉन निकलेंगे?"
+      },
+      "given": {
+        "en": "Zn → Zn2+ + 2e−; zinc reacts completely.",
+        "hi": "Zn → Zn2+ + 2e−; जिंक पूर्ण अभिक्रिया करता है।"
+      },
+      "find": {
+        "en": "Electron amount.",
+        "hi": "इलेक्ट्रॉनों की मात्रा।"
+      },
+      "formula": {
+        "en": "n(e−) = 2n(Zn)",
+        "hi": "n(e−) = 2n(Zn)"
+      },
+      "steps": [
+        {
+          "en": "Use the balanced 1:2 mole ratio.",
+          "hi": "संतुलित 1:2 मोल अनुपात लें।"
+        },
+        {
+          "en": "Multiply 2 × 2.5 = 5.",
+          "hi": "2 × 2.5 = 5 करें।"
+        }
+      ],
+      "answer": {
+        "en": "5 mol electrons.",
+        "hi": "5 mol इलेक्ट्रॉन।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Balance Fe2+ with acidic permanganate.",
+        "hi": "अम्लीय परमैंगनेट के साथ Fe2+ संतुलित करें।"
+      },
+      "given": {
+        "en": "MnO4− becomes Mn2+; Fe2+ becomes Fe3+.",
+        "hi": "MnO4− से Mn2+ और Fe2+ से Fe3+ बनते हैं।"
+      },
+      "find": {
+        "en": "Net ionic equation.",
+        "hi": "शुद्ध आयनिक समीकरण।"
+      },
+      "formula": {
+        "en": "Mn gains 5e−; each Fe loses 1e−.",
+        "hi": "Mn 5e− लेता है; हर Fe 1e− देता है।"
+      },
+      "steps": [
+        {
+          "en": "Multiply the iron half-reaction by 5.",
+          "hi": "आयरन अर्ध-अभिक्रिया को 5 से गुणा करें।"
+        },
+        {
+          "en": "Use 4H2O and 8H+ to balance oxygen and hydrogen.",
+          "hi": "ऑक्सीजन और हाइड्रोजन के लिए 4H2O और 8H+ लें।"
+        },
+        {
+          "en": "Both sides have charge +17.",
+          "hi": "दोनों ओर कुल आवेश +17 है।"
+        }
+      ],
+      "answer": {
+        "en": "MnO4− + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O.",
+        "hi": "MnO4− + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Explain disproportionation in Cl2 + 2OH− → Cl− + ClO− + H2O.",
+        "hi": "Cl2 + 2OH− → Cl− + ClO− + H2O में असमानुपातन समझाएँ।"
+      },
+      "given": {
+        "en": "Chlorine starts at 0; oxygen is −2 in ClO−.",
+        "hi": "क्लोरीन शुरू में 0 है; ClO− में ऑक्सीजन −2 है।"
+      },
+      "find": {
+        "en": "Final chlorine numbers and both changes.",
+        "hi": "क्लोरीन की अंतिम संख्याएँ तथा दोनों परिवर्तन।"
+      },
+      "formula": {
+        "en": "x − 2 = −1 for ClO−.",
+        "hi": "ClO− के लिए x − 2 = −1।"
+      },
+      "steps": [
+        {
+          "en": "Cl in Cl− is −1, so part of chlorine is reduced.",
+          "hi": "Cl− में Cl −1 है, अतः कुछ क्लोरीन अपचयित होती है।"
+        },
+        {
+          "en": "Cl in ClO− is +1, so part is oxidised.",
+          "hi": "ClO− में Cl +1 है, अतः कुछ क्लोरीन ऑक्सीकृत होती है।"
+        },
+        {
+          "en": "The same initial element undergoes both changes.",
+          "hi": "वही शुरुआती तत्व दोनों परिवर्तन करता है।"
+        }
+      ],
+      "answer": {
+        "en": "Disproportionation: 0 → −1 and 0 → +1; oxidation numbers are dimensionless.",
+        "hi": "असमानुपातन: 0 → −1 तथा 0 → +1; ऑक्सीकरण संख्याएँ विमाहीन हैं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Oxidation means:",
+        "hi": "ऑक्सीकरण का अर्थ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Loss of electrons",
+            "hi": "इलेक्ट्रॉन छोड़ना"
+          },
+          "reason": {
+            "en": "Electron loss raises oxidation number.",
+            "hi": "इलेक्ट्रॉन हानि से ऑक्सीकरण संख्या बढ़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Gain of electrons",
+            "hi": "इलेक्ट्रॉन लेना"
+          },
+          "reason": {
+            "en": "This is reduction.",
+            "hi": "यह अपचयन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only melting",
+            "hi": "केवल पिघलना"
+          },
+          "reason": {
+            "en": "A state change alone is not oxidation.",
+            "hi": "केवल अवस्था बदलना ऑक्सीकरण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only gaining mass",
+            "hi": "केवल द्रव्यमान बढ़ना"
+          },
+          "reason": {
+            "en": "Mass alone does not identify electron change.",
+            "hi": "केवल द्रव्यमान से इलेक्ट्रॉन परिवर्तन नहीं तय होता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Oxidation number of oxygen in H2O2?",
+        "hi": "H2O2 में ऑक्सीजन की संख्या?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "Peroxide oxygen is −1.",
+            "hi": "परॉक्साइड की ऑक्सीजन −1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2",
+            "hi": "−2"
+          },
+          "reason": {
+            "en": "This usual value has a peroxide exception.",
+            "hi": "सामान्य मान का परॉक्साइड में अपवाद है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Zero applies to free elemental oxygen.",
+            "hi": "शून्य स्वतंत्र तत्व ऑक्सीजन में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "+2",
+            "hi": "+2"
+          },
+          "reason": {
+            "en": "Oxygen has +2 in OF2, not this compound.",
+            "hi": "OF2 में ऑक्सीजन +2 है, यहाँ नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The oxidising agent itself is:",
+        "hi": "ऑक्सीकारक स्वयं क्या होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Reduced",
+            "hi": "अपचयित"
+          },
+          "reason": {
+            "en": "It accepts electrons.",
+            "hi": "यह इलेक्ट्रॉन ग्रहण करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always oxidised",
+            "hi": "हमेशा ऑक्सीकृत"
+          },
+          "reason": {
+            "en": "The reducing agent is oxidised.",
+            "hi": "अपचायक ऑक्सीकृत होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always unchanged",
+            "hi": "हमेशा अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Its oxidation state changes in the redox process.",
+            "hi": "रेडॉक्स में इसकी अवस्था बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always an oxygen atom",
+            "hi": "हमेशा ऑक्सीजन परमाणु"
+          },
+          "reason": {
+            "en": "Cu2+ can be an oxidising agent without oxygen.",
+            "hi": "Cu2+ बिना ऑक्सीजन के ऑक्सीकारक हो सकता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Mn oxidation number in MnO4− is:",
+        "hi": "MnO4− में Mn की संख्या:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "+7",
+            "hi": "+7"
+          },
+          "reason": {
+            "en": "x − 8 = −1 gives +7.",
+            "hi": "x − 8 = −1 से +7।"
+          }
+        },
+        {
+          "text": {
+            "en": "+8",
+            "hi": "+8"
+          },
+          "reason": {
+            "en": "This ignores the −1 ion charge.",
+            "hi": "यह आयन के −1 आवेश को भूलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−7",
+            "hi": "−7"
+          },
+          "reason": {
+            "en": "The sign would not satisfy the charge sum.",
+            "hi": "इस चिह्न से आवेश योग सही नहीं होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "+4",
+            "hi": "+4"
+          },
+          "reason": {
+            "en": "Four oxygen atoms do not directly give the Mn number.",
+            "hi": "4 ऑक्सीजन होने से सीधे Mn का मान नहीं मिलता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Electrons released by 1 mol Zn becoming Zn2+?",
+        "hi": "1 mol Zn से Zn2+ बनने पर इलेक्ट्रॉन?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2 mol",
+            "hi": "2 mol"
+          },
+          "reason": {
+            "en": "Each Zn loses 2 electrons.",
+            "hi": "हर Zn 2 इलेक्ट्रॉन देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1 mol",
+            "hi": "1 mol"
+          },
+          "reason": {
+            "en": "This misses the 2-electron change.",
+            "hi": "इसमें 2 इलेक्ट्रॉन वाला परिवर्तन छूटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 mol",
+            "hi": "0 mol"
+          },
+          "reason": {
+            "en": "Oxidation transfers electrons.",
+            "hi": "ऑक्सीकरण में इलेक्ट्रॉन निकलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "4 mol",
+            "hi": "4 mol"
+          },
+          "reason": {
+            "en": "That amount corresponds to 2 mol Zn.",
+            "hi": "यह 2 mol Zn के लिए होगा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Fe2+ coefficient per MnO4− in the specified acidic reaction?",
+        "hi": "दी अम्लीय अभिक्रिया में 1 MnO4− पर Fe2+ का गुणांक?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "Five one-electron losses match a five-electron gain.",
+            "hi": "1-1 इलेक्ट्रॉन की 5 हानियाँ 5 लाभ से मेल खाती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "Only 2 electrons would be supplied.",
+            "hi": "केवल 2 इलेक्ट्रॉन मिलेंगे।"
+          }
+        },
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "The oxidation number +7 is not the electron change to +2.",
+            "hi": "+7 से +2 का परिवर्तन 5 है, 7 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "8",
+            "hi": "8"
+          },
+          "reason": {
+            "en": "Eight belongs to H+ in the balanced equation.",
+            "hi": "संतुलित समीकरण में 8 गुणांक H+ का है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A free element such as Cl2 has oxidation number:",
+        "hi": "Cl2 जैसे स्वतंत्र तत्व की संख्या:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Atoms in a free element are assigned zero.",
+            "hi": "स्वतंत्र तत्व में परमाणुओं को शून्य दिया जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "This applies to chloride ion, not Cl2.",
+            "hi": "यह क्लोराइड आयन का है, Cl2 का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "+1",
+            "hi": "+1"
+          },
+          "reason": {
+            "en": "This may occur in compounds but not the free element.",
+            "hi": "यह यौगिक में हो सकता है, स्वतंत्र तत्व में नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−2",
+            "hi": "−2"
+          },
+          "reason": {
+            "en": "The subscript 2 counts atoms, not charge.",
+            "hi": "छोटा 2 परमाणु गिनता है, आवेश नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is usually not redox?",
+        "hi": "कौन सामान्यतः रेडॉक्स नहीं है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "HCl + NaOH → NaCl + H2O",
+            "hi": "HCl + NaOH → NaCl + H2O"
+          },
+          "reason": {
+            "en": "Oxidation numbers remain unchanged.",
+            "hi": "ऑक्सीकरण संख्याएँ अपरिवर्तित हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zn + Cu2+ → Zn2+ + Cu",
+            "hi": "Zn + Cu2+ → Zn2+ + Cu"
+          },
+          "reason": {
+            "en": "Zn and Cu change oxidation states.",
+            "hi": "Zn और Cu की अवस्थाएँ बदलती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2Mg + O2 → 2MgO",
+            "hi": "2Mg + O2 → 2MgO"
+          },
+          "reason": {
+            "en": "Mg is oxidised and oxygen reduced.",
+            "hi": "Mg ऑक्सीकृत तथा ऑक्सीजन अपचयित होती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2H2 + O2 → 2H2O",
+            "hi": "2H2 + O2 → 2H2O"
+          },
+          "reason": {
+            "en": "H and O both change oxidation numbers.",
+            "hi": "H और O दोनों की संख्याएँ बदलती हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Disproportionation requires:",
+        "hi": "असमानुपातन के लिए चाहिए:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The same element both oxidised and reduced",
+            "hi": "वही तत्व ऑक्सीकृत और अपचयित दोनों"
+          },
+          "reason": {
+            "en": "Different products contain its higher and lower states.",
+            "hi": "अलग उत्पादों में उसकी ऊँची और नीची अवस्थाएँ होती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only oxidation",
+            "hi": "केवल ऑक्सीकरण"
+          },
+          "reason": {
+            "en": "Both changes are necessary.",
+            "hi": "दोनों परिवर्तन जरूरी हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only physical mixing",
+            "hi": "केवल भौतिक मिश्रण"
+          },
+          "reason": {
+            "en": "An oxidation-state change is needed.",
+            "hi": "ऑक्सीकरण अवस्था बदलनी चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every atom has zero final state",
+            "hi": "हर परमाणु अंत में शून्य"
+          },
+          "reason": {
+            "en": "The products have distinct states in this pattern.",
+            "hi": "इस प्रकार में उत्पादों की अवस्थाएँ भिन्न होती हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What may be changed to balance an equation?",
+        "hi": "समीकरण संतुलन के लिए क्या बदल सकते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Coefficients",
+            "hi": "गुणांक"
+          },
+          "reason": {
+            "en": "They change relative amounts without changing identities.",
+            "hi": "ये पदार्थ बदले बिना सापेक्ष मात्रा बदलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Formula subscripts",
+            "hi": "सूत्र के छोटे अंक"
+          },
+          "reason": {
+            "en": "That changes the substance.",
+            "hi": "इससे पदार्थ बदल जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The electron charge",
+            "hi": "इलेक्ट्रॉन का आवेश"
+          },
+          "reason": {
+            "en": "Electron charge is not an adjustable coefficient.",
+            "hi": "इलेक्ट्रॉन आवेश बदलने वाला गुणांक नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The element symbols arbitrarily",
+            "hi": "मनमाने तत्व संकेत"
+          },
+          "reason": {
+            "en": "The species must represent the actual reaction.",
+            "hi": "स्पीशीज़ वास्तविक अभिक्रिया के अनुसार होनी चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish oxidation number from actual charge.",
+        "hi": "ऑक्सीकरण संख्या और वास्तविक आवेश में अंतर बताएँ।"
+      },
+      "answer": {
+        "en": "Oxidation number is a formal electron-assignment value; in a covalent molecule it need not equal a fully localised ionic charge.",
+        "hi": "ऑक्सीकरण संख्या इलेक्ट्रॉन बाँटने का औपचारिक मान है; सहसंयोजक अणु में यह किसी पूरे स्थानीय आयनिक आवेश के बराबर जरूरी नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why must oxidation and reduction accompany each other?",
+        "hi": "ऑक्सीकरण और अपचयन साथ क्यों होते हैं?"
+      },
+      "answer": {
+        "en": "Electrons released by one species are accepted by another; total electrons are conserved in the complete process.",
+        "hi": "एक स्पीशीज़ के छोड़े इलेक्ट्रॉन दूसरी ग्रहण करती है; पूरी प्रक्रिया में इलेक्ट्रॉन संरक्षित रहते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the roles of Zn and Cu2+.",
+        "hi": "Zn और Cu2+ की भूमिका समझाएँ।"
+      },
+      "answer": {
+        "en": "Zn loses 2 electrons and is the reducing agent; Cu2+ gains 2 and is the oxidising agent.",
+        "hi": "Zn 2 इलेक्ट्रॉन छोड़कर अपचायक और Cu2+ 2 लेकर ऑक्सीकारक है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does the medium matter in balancing?",
+        "hi": "संतुलन में माध्यम क्यों जरूरी है?"
+      },
+      "answer": {
+        "en": "It determines appropriate species and products, and whether H+ or OH− can appear in the final balance.",
+        "hi": "माध्यम सही स्पीशीज़ और उत्पाद तय करता है तथा अंतिम संतुलन में H+ या OH− की उपस्थिति बताता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give a disproportionation example.",
+        "hi": "असमानुपातन का उदाहरण दें।"
+      },
+      "answer": {
+        "en": "Cl2 + 2OH− → Cl− + ClO− + H2O: chlorine changes from 0 to −1 and +1.",
+        "hi": "Cl2 + 2OH− → Cl− + ClO− + H2O: क्लोरीन 0 से −1 तथा +1 होती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give the atom and charge check for acidic permanganate with iron(II).",
+        "hi": "अम्लीय परमैंगनेट तथा आयरन(II) में परमाणु और आवेश जाँच दें।"
+      },
+      "answer": {
+        "en": "MnO4− + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O has Mn1,Fe5,O4,H8 on both sides and total charge +17 on each side.",
+        "hi": "MnO4− + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O में दोनों ओर Mn1,Fe5,O4,H8 और कुल आवेश +17 है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Oxidation loses electrons; reduction gains them.",
+      "hi": "ऑक्सीकरण में इलेक्ट्रॉन निकलते, अपचयन में मिलते हैं।"
+    },
+    {
+      "en": "Oxidation-number sums equal the species charge.",
+      "hi": "ऑक्सीकरण संख्याओं का योग स्पीशीज़ के आवेश के बराबर है।"
+    },
+    {
+      "en": "The oxidising agent is reduced.",
+      "hi": "ऑक्सीकारक का अपना अपचयन होता है।"
+    },
+    {
+      "en": "Balance atoms, electrons and total charge.",
+      "hi": "परमाणु, इलेक्ट्रॉन और कुल आवेश संतुलित करें।"
+    },
+    {
+      "en": "State the medium and use coefficients, not changed subscripts.",
+      "hi": "माध्यम बताएँ और गुणांक बदलें, सूत्र के छोटे अंक नहीं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not reverse the agents, treat oxidation numbers as always-real ionic charges, ignore peroxide exceptions, or leave uncancelled electrons in a complete net equation.",
+    "hi": "अभिकर्मकों की भूमिका न उलटें, ऑक्सीकरण संख्या को हमेशा वास्तविक आयनिक आवेश न मानें, परॉक्साइड अपवाद न भूलें और पूरे शुद्ध समीकरण में इलेक्ट्रॉन न छोड़ें।"
+  },
+  "conceptMap": "इलेक्ट्रॉन → ऑक्सीकरण संख्या → बढ़ना/घटना → ऑक्सीकारक/अपचायक → अर्ध-अभिक्रिया → परमाणु और आवेश संतुलन → मोल अनुपात",
+  "conceptMapEn": "Electrons → oxidation numbers → increase/decrease → agents → half-reactions → atom and charge balance → mole ratios"
+}

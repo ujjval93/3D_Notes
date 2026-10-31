@@ -1,0 +1,902 @@
+{
+  "id": "ten-geography-7",
+  "classId": "10",
+  "number": 7,
+  "title": {
+    "en": "Lifelines of National Economy",
+    "hi": "राष्ट्रीय अर्थव्यवस्था की जीवन रेखाएँ"
+  },
+  "engine": "map",
+  "goal": {
+    "en": "Connect transport, communication and trade to everyday economic life.",
+    "hi": "परिवहन, संचार और व्यापार को रोजमर्रा के आर्थिक जीवन से जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Why networks are lifelines",
+        "hi": "संपर्क जाल जीवन रेखाएँ क्यों हैं"
+      },
+      "body": {
+        "en": "An economy depends on movement as well as production. A farmer may grow vegetables, but households cannot use the harvest unless it reaches markets before spoiling. Transport moves people and goods, communication carries information, and trade connects buyers with sellers. Their functions support one another. A phone message can confirm an order, a truck can deliver the consignment, and a trader can arrange payment. None of these functions alone explains the complete chain. Transport networks connect settlements at different scales: a village path joins a district road, which may lead to a railway terminal or port. Such connections can enlarge markets and improve access to schools, hospitals and employment. However, a road on a map does not prove that everyone can afford a journey. Reliability, safety, accessibility and cost also matter. When examining a transport proposal, ask who benefits, what is carried, and whether smaller settlements gain useful connections. In a written answer, use a linked example instead of listing transport modes without explaining their relationship. Think about the journey of milk from a dairy village to a nearby town.",
+        "hi": "अर्थव्यवस्था उत्पादन के साथ आवागमन पर भी निर्भर करती है। किसान सब्जियाँ उगा सकता है, लेकिन फसल खराब होने से पहले बाजार पहुँचे तभी परिवार उसका उपयोग कर पाएँगे। परिवहन (Transport) व्यक्ति और वस्तु को पहुँचाता है, संचार (Communication) सूचना पहुँचाता है तथा व्यापार (Trade) खरीदार और विक्रेता को जोड़ता है। तीनों कार्य एक दूसरे को सहारा देते हैं। फोन से आदेश की पुष्टि, ट्रक से माल की आपूर्ति और व्यापारी से भुगतान का प्रबंध हो सकता है। केवल एक कार्य पूरी श्रृंखला नहीं समझाता। गाँव का रास्ता जिला सड़क से और वह रेलवे स्टेशन या पत्तन से जुड़ सकता है। ऐसे संपर्क बाजार बढ़ाने तथा विद्यालय, अस्पताल और रोजगार तक पहुँच सुधारने में सहायक हैं। फिर भी मानचित्र पर सड़क होने से यह सिद्ध नहीं होता कि हर व्यक्ति यात्रा का खर्च उठा सकता है। विश्वसनीयता, सुरक्षा, सुगमता और लागत भी जरूरी हैं। नई परिवहन योजना देखते समय पूछें कि लाभ किसे होगा, क्या पहुँचाया जाएगा और छोटे गाँवों को उपयोगी संपर्क मिलेगा या नहीं। उत्तर में केवल साधनों की सूची देने के बजाय जुड़ा उदाहरण लिखें। दूध के गाँव से शहर तक आने में पशुपालक, संग्रह केंद्र, वाहन, शीतलन, दुकानदार और ग्राहक का संबंध समझाएँ। संचार बाधित हो तो वाहन होने पर भी वितरण में देरी हो सकती है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Road transport and its hierarchy",
+        "hi": "सड़क परिवहन और उसका क्रम"
+      },
+      "body": {
+        "en": "Roads provide flexible routes and can offer service close to a person's home or a factory gate. They are especially useful for short journeys, small loads and links to other modes. Roads can negotiate some difficult terrain more easily than railways, although steep slopes, landslides and heavy rainfall create serious construction and maintenance problems. National highways connect major parts of the country, while state highways link important places within states. District roads connect district centres with other settlements, and rural roads improve village access. Border roads have strategic and local importance in difficult frontier areas. The Golden Quadrilateral connects Delhi, Mumbai, Chennai and Kolkata through a major highway network. The North–South and East–West corridor projects provide other long-distance links. These are networks, not straight lines across the map. Distinguish surfaced roads from unsurfaced roads and remember that a road may become unusable during particular seasons. Traffic congestion, accidents, fuel use and air pollution are costs to consider. Safe public transport, maintenance and connections with railway stations can improve the usefulness of an existing road system without assuming that more private vehicles are always the answer.",
+        "hi": "सड़क परिवहन मार्ग में लचीलापन देता है और घर या कारखाने के द्वार के पास सेवा पहुँचा सकता है। छोटी दूरी, कम माल और दूसरे परिवहन साधन से जोड़ने में इसकी विशेष उपयोगिता है। कुछ कठिन भूभाग में रेल की तुलना में सड़क बनाना आसान हो सकता है, लेकिन तीखी ढाल, भूस्खलन और अधिक वर्षा निर्माण तथा रखरखाव को कठिन बनाते हैं। राष्ट्रीय महामार्ग (National Highways) देश के प्रमुख भागों को जोड़ते हैं। राज्य महामार्ग राज्य के महत्त्वपूर्ण स्थानों को जोड़ते हैं। जिला सड़कें जिला केंद्र को अन्य बस्तियों से तथा ग्रामीण सड़कें गाँवों को संपर्क देती हैं। सीमांत सड़कें कठिन सीमा क्षेत्रों में सामरिक और स्थानीय महत्त्व रखती हैं। स्वर्णिम चतुर्भुज (Golden Quadrilateral) दिल्ली, मुंबई, चेन्नई और कोलकाता को प्रमुख सड़क जाल से जोड़ता है। उत्तर–दक्षिण तथा पूर्व–पश्चिम गलियारे लंबी दूरी के दूसरे संपर्क हैं। इन्हें मानचित्र पर सीधी काल्पनिक रेखा न मानें। पक्की और कच्ची सड़क में अंतर करें तथा मौसमी उपयोगिता देखें। यातायात जाम, दुर्घटना, ईंधन खपत और वायु प्रदूषण की लागत भी होती है। सुरक्षित सार्वजनिक वाहन, नियमित मरम्मत और स्टेशन तक संपर्क मौजूदा व्यवस्था को उपयोगी बनाते हैं। हर समस्या का उत्तर केवल निजी वाहन बढ़ाना नहीं है। सड़क की श्रेणी और उसके कार्य को उदाहरण सहित लिखें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Railways and pipelines",
+        "hi": "रेलवे और पाइपलाइन"
+      },
+      "body": {
+        "en": "Railways carry passengers and large quantities of goods over long distances. They are useful for bulky loads such as coal, grain and industrial materials. Tracks, terminals, signalling and maintenance require substantial investment. Relief influences construction: broad plains often permit easier routes, while mountains may need bridges, tunnels and curves. Dense settlement, economic activity and historical decisions also shape the network, so physical relief is not the only explanation. A railway journey usually includes a road journey at one or both ends. Pipelines carry substances such as crude oil, petroleum products and natural gas; some solids can be transported in a liquid mixture called slurry. Their movement is continuous along a fixed route. High initial construction costs are followed by operating advantages in suitable situations, but leaks and damage can harm soil and water. Do not claim that pipelines transport every kind of finished product or replace all trucks. Compare a coal consignment and a natural-gas supply: they need different equipment and handling. The appropriate mode depends on the material, distance, volume, terrain, safety requirements and the connections available at each end.",
+        "hi": "रेलवे (Railways) यात्रियों तथा बड़ी मात्रा में माल को लंबी दूरी तक ले जाता है। कोयला, अनाज और औद्योगिक पदार्थ जैसे भारी माल के लिए इसकी उपयोगिता है। पटरी, स्टेशन, संकेत व्यवस्था और रखरखाव में बड़ा निवेश चाहिए। भूआकृति निर्माण को प्रभावित करती है। विस्तृत मैदान में मार्ग बनाना अपेक्षाकृत आसान होता है, जबकि पर्वतीय क्षेत्र में पुल, सुरंग और घुमाव चाहिए। घनी बस्ती, आर्थिक गतिविधि और ऐतिहासिक निर्णय भी रेल जाल बनाते हैं; केवल धरातल से पूरी व्याख्या नहीं होती। रेल यात्रा के आरंभ या अंत में अक्सर सड़क यात्रा भी जुड़ी होती है। पाइपलाइन (Pipeline) से कच्चा तेल, पेट्रोलियम उत्पाद तथा प्राकृतिक गैस पहुँचाई जाती है। कुछ ठोस पदार्थ तरल मिश्रण यानी स्लरी (Slurry) बनाकर पहुँचाए जा सकते हैं। निश्चित मार्ग में प्रवाह लगातार हो सकता है। निर्माण की आरंभिक लागत अधिक होती है, लेकिन उचित परिस्थिति में संचालन के लाभ मिलते हैं। रिसाव और टूटने से मिट्टी तथा जल को नुकसान हो सकता है। यह न लिखें कि पाइपलाइन हर तैयार वस्तु ले जाती है या सभी ट्रकों का विकल्प है। कोयले की खेप और प्राकृतिक गैस की आपूर्ति की तुलना करें। पदार्थ, दूरी, मात्रा, धरातल, सुरक्षा तथा दोनों सिरों के संपर्क के अनुसार साधन चुनना पड़ता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Waterways and sea ports",
+        "hi": "जलमार्ग और समुद्री पत्तन"
+      },
+      "body": {
+        "en": "Water transport is useful for heavy and bulky goods, especially when large consignments move over long distances. Inland waterways use navigable rivers, canals and other inland water bodies, while overseas shipping links sea ports. Navigability depends on sufficient depth, channel conditions, seasonal flow and suitable terminals. A river appearing on a map is not automatically navigable throughout its length. Sea ports handle cargo, connect ships with inland transport and support storage and related services. Mumbai is a major west-coast port, while Jawaharlal Nehru Port near Mumbai helps handle substantial container traffic. Deendayal Port at Kandla serves the northwestern hinterland. Kochi lies on the southwestern coast. Chennai, Visakhapatnam and Paradip are important eastern-coast examples. Kolkata is a riverine port, and Haldia provides associated port facilities downstream. Learn coast, state and relative position together rather than memorising names alone. A port's hinterland is the inland area that it serves through transport connections. Cargo handling can disturb coastal environments, so planning must consider pollution, dredging impacts and local livelihoods. Shipping needs road and rail links before its international connections can benefit inland producers.",
+        "hi": "जल परिवहन (Water Transport) भारी तथा अधिक आयतन वाले माल के लिए उपयोगी है, विशेषकर बड़ी खेप लंबी दूरी तक पहुँचाने में। आंतरिक जलमार्ग नौगम्य नदी, नहर और भीतरी जल निकाय का उपयोग करते हैं। समुद्री जहाज पत्तनों के बीच संपर्क देते हैं। नौगम्यता (Navigability) के लिए पर्याप्त गहराई, उपयुक्त धारा, मौसमी प्रवाह और घाट सुविधाएँ जरूरी हैं। मानचित्र में नदी दिखने का अर्थ यह नहीं कि उसकी पूरी लंबाई में जहाज चल सकता है। समुद्री पत्तन (Sea Port) माल चढ़ाने, उतारने, भंडारण और स्थल परिवहन से जोड़ने का केंद्र है। मुंबई पश्चिमी तट का प्रमुख पत्तन है। पास का जवाहरलाल नेहरू पत्तन कंटेनर परिवहन में महत्त्वपूर्ण है। कांडला स्थित दीनदयाल पत्तन उत्तर-पश्चिमी पृष्ठप्रदेश की सेवा करता है। कोच्चि दक्षिण-पश्चिम तट पर है। चेन्नई, विशाखापत्तनम और पारादीप पूर्वी तट के महत्त्वपूर्ण उदाहरण हैं। कोलकाता नदी पर स्थित पत्तन है तथा नीचे की ओर हल्दिया संबंधित सुविधा देता है। नाम के साथ तट, राज्य और सापेक्ष स्थिति याद करें। पृष्ठप्रदेश (Hinterland) वह भीतरी क्षेत्र है जिसकी सेवा पत्तन करता है। माल संचालन और तल की खुदाई से तटीय पर्यावरण प्रभावित हो सकता है। प्रदूषण नियंत्रण तथा मछुआरों की आजीविका का ध्यान रखें। पत्तन की उपयोगिता सड़क और रेल संपर्क से भी जुड़ी है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Air transport and choosing a mode",
+        "hi": "वायु परिवहन और साधन का चयन"
+      },
+      "body": {
+        "en": "Air transport provides rapid travel across long distances and difficult terrain. It can connect mountain regions, islands and remote settlements where surface travel is slow or interrupted. Emergency medical movement, urgent consignments and some high-value goods can benefit from speed. However, air travel requires airports, safety systems, suitable weather conditions and substantial operating expenditure. It is not the cheapest or most appropriate choice for every product. A large shipment of low-value stone usually has different priorities from an urgent medical consignment. Delhi, Mumbai, Chennai, Kolkata, Bengaluru and Hyderabad are important airport examples; learn their geographical positions without confusing airports with sea ports. Compare modes using several criteria rather than speed alone: total cost, time, load, reliability, environmental effects and door-to-door connections. A flight may be fast in the air but still require travel to the airport and time for handling. Good planning combines modes. A parcel may travel by van, aircraft and another van. In an examination comparison, give a situation and explain why a mode fits it instead of calling one form of transport universally best.",
+        "hi": "वायु परिवहन (Air Transport) लंबी दूरी और कठिन धरातल के ऊपर तीव्र यात्रा देता है। पर्वतीय क्षेत्र, द्वीप तथा दूर की बस्तियाँ इससे जुड़ सकती हैं जहाँ स्थल यात्रा धीमी या बाधित हो। आपात चिकित्सा, तुरंत पहुँचने वाली खेप तथा कुछ अधिक मूल्य वाले सामान को गति का लाभ मिलता है। फिर भी हवाई अड्डा, सुरक्षा व्यवस्था, उपयुक्त मौसम और अधिक संचालन व्यय चाहिए। हर वस्तु के लिए यह सबसे सस्ता या सबसे उचित साधन नहीं है। कम मूल्य के पत्थर की भारी खेप और तुरंत चाहिए दवा की खेप की जरूरत अलग होती है। दिल्ली, मुंबई, चेन्नई, कोलकाता, बेंगलुरु तथा हैदराबाद महत्त्वपूर्ण हवाई अड्डों के उदाहरण हैं। उनकी भौगोलिक स्थिति सीखें और पत्तन से भ्रम न करें। साधनों की तुलना केवल गति से न करें। कुल लागत, समय, भार, विश्वसनीयता, पर्यावरण प्रभाव और अंतिम स्थान तक संपर्क देखें। उड़ान तेज होने पर भी हवाई अड्डे तक पहुँचने और सामान की प्रक्रिया में समय लगता है। उचित योजना कई साधन जोड़ती है। पार्सल पहले वैन, फिर विमान और फिर वैन से पहुँच सकता है। परीक्षा में परिस्थिति देकर उपयुक्त साधन का कारण लिखें। एक परिवहन साधन को हर परिस्थिति में सर्वश्रेष्ठ बताने से बचें। अलग आवश्यकताओं के कारण साधन एक दूसरे के पूरक भी हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Communication and access to information",
+        "hi": "संचार और सूचना तक पहुँच"
+      },
+      "body": {
+        "en": "Communication allows information to move without the physical movement of the sender. Personal communication connects individuals, while mass communication reaches large audiences through media such as radio, television and newspapers. Postal services, telephones and digital networks perform different but related functions. A weather warning may help a fishing community, a market message may inform a farmer, and a transport update may prevent a wasted journey. The usefulness of information depends on accuracy, timeliness and whether people can understand it. Digital access is unequal: electricity, network coverage, equipment, literacy and cost affect participation. Therefore, a mobile connection count alone cannot prove that all students have reliable learning access. Mass media can support education and public discussion, but advertisements and unverified messages should be examined critically. Check the date, source and evidence before forwarding a claim. Communication can reduce some unnecessary travel, yet it also depends on physical infrastructure and skilled workers. Explain its role in coordination: production schedules, orders, payment information and emergency instructions all help transport and trade function. A signal carries information; it does not itself carry the grain or passenger described in the message.",
+        "hi": "संचार (Communication) में सूचना भेजने वाले के स्वयं यात्रा किए बिना संदेश पहुँच सकता है। व्यक्तिगत संचार व्यक्तियों को जोड़ता है, जबकि जनसंचार (Mass Communication) रेडियो, टेलीविजन और समाचारपत्र जैसे माध्यम से बड़े समूह तक पहुँचता है। डाक, टेलीफोन तथा डिजिटल जाल के कार्य अलग होकर भी जुड़े हैं। मौसम चेतावनी मछुआरे की सहायता, बाजार संदेश किसान को जानकारी और वाहन सूचना अनावश्यक यात्रा रोक सकती है। सूचना की उपयोगिता उसकी सच्चाई, समय पर उपलब्धता और समझ आने पर निर्भर करती है। डिजिटल पहुँच समान नहीं है। बिजली, नेटवर्क, उपकरण, साक्षरता और खर्च भागीदारी प्रभावित करते हैं। इसलिए मोबाइल कनेक्शन की संख्या से यह सिद्ध नहीं होता कि सभी विद्यार्थियों को नियमित पढ़ाई की सुविधा है। जनमाध्यम शिक्षा और सार्वजनिक चर्चा में सहायक हैं, लेकिन विज्ञापन तथा अप्रमाणित संदेश की आलोचनात्मक जाँच चाहिए। दावा आगे भेजने से पहले तिथि, स्रोत और प्रमाण देखें। संचार कुछ यात्राएँ घटा सकता है, पर स्वयं भौतिक ढाँचे तथा कुशल कर्मियों पर निर्भर है। उत्पादन समय, आदेश, भुगतान और आपात निर्देश परिवहन तथा व्यापार को व्यवस्थित करते हैं। संदेश में लिखे अनाज या यात्री को संदेश स्वयं नहीं ले जाता। इस अंतर से संचार और परिवहन का संबंध स्पष्ट होता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Trade and the balance of trade",
+        "hi": "व्यापार और व्यापार संतुलन"
+      },
+      "body": {
+        "en": "Trade is the exchange of goods and services between people and places. Local trade may connect nearby settlements, while international trade crosses national boundaries. Exports are goods or services sold abroad and imports are purchased from abroad. Countries trade because resources, skills, technologies and demands differ. No single export total reveals how benefits are shared among workers, firms and regions. For the merchandise balance of trade, subtract the value of imports from the value of exports over the same period and in the same currency. If exports exceed imports, the balance is favourable or a surplus; if imports exceed exports, it is a deficit. This calculation is not the same as government revenue minus expenditure, and it does not include every international financial flow. For example, exports of 80 units and imports of 100 units produce a balance of −20 units. Label illustrative numbers clearly instead of presenting them as current national statistics. Trade relies on transport, communication, storage, banking and documentation. Changes in one link can affect the entire chain. Discuss both opportunities and vulnerabilities, such as wider markets alongside dependence on distant supplies.",
+        "hi": "व्यापार (Trade) व्यक्तियों और स्थानों के बीच वस्तु तथा सेवा का विनिमय है। स्थानीय व्यापार पास की बस्तियों को जोड़ता है, जबकि अंतरराष्ट्रीय व्यापार देश की सीमा पार करता है। निर्यात (Export) विदेश को बिक्री और आयात (Import) विदेश से खरीद है। संसाधन, कौशल, तकनीक तथा माँग में अंतर होने से व्यापार होता है। केवल कुल निर्यात से पता नहीं चलता कि श्रमिक, कंपनी और क्षेत्रों में लाभ कैसे बँटा है। वस्तुओं के व्यापार संतुलन (Balance of Trade) के लिए समान अवधि तथा समान मुद्रा में निर्यात मूल्य से आयात मूल्य घटाएँ। निर्यात अधिक हो तो अनुकूल संतुलन या अधिशेष और आयात अधिक हो तो घाटा होता है। यह सरकारी आय में से व्यय घटाने वाली गणना नहीं है। इसमें सभी अंतरराष्ट्रीय वित्तीय प्रवाह भी शामिल नहीं होते। उदाहरण में निर्यात 80 और आयात 100 इकाई हो तो संतुलन −20 इकाई होगा। ऐसे आँकड़े अभ्यास के उदाहरण हैं, वर्तमान राष्ट्रीय आँकड़े नहीं। व्यापार को परिवहन, संचार, भंडारण, बैंकिंग और दस्तावेज चाहिए। एक कड़ी में परिवर्तन पूरी श्रृंखला को प्रभावित कर सकता है। बड़े बाजार से अवसर मिलते हैं, लेकिन दूर की आपूर्ति पर निर्भरता से जोखिम भी हो सकता है। उत्तर में अवसर और कठिनाई दोनों का कारण बताकर संतुलित व्याख्या करें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Tourism, maps and revision",
+        "hi": "पर्यटन, मानचित्र और पुनरावृत्ति"
+      },
+      "body": {
+        "en": "Tourism involves travel away from the usual place of living for purposes such as leisure, culture, pilgrimage or business. It supports accommodation, food services, guides, local transport and handicrafts. International visitors can bring foreign exchange, while domestic tourism also supports economic activity. Benefits are not automatic or evenly distributed: seasonal employment, waste, pressure on water and crowding require planning. Respect for local communities and heritage helps tourism remain useful over time. A responsible visitor uses authorised routes, reduces litter and avoids damaging monuments or habitats. For map work, practise selected ports and airports on an outline map, using a small dot and an accurate label. Match each place with its coast or inland location before drawing lines. The on-screen markers are approximate study aids, not navigation tools or administrative boundaries. Revise the chapter through one connected chain: production needs transport; transport needs information; trade needs both; tourism creates demand for services. Distinguish road from rail, port from airport, and import from export. Finally, explain why a connected and affordable network matters more than merely counting vehicles or memorising the longest possible list of place names.",
+        "hi": "पर्यटन (Tourism) में व्यक्ति मनोरंजन, संस्कृति, तीर्थयात्रा या व्यवसाय जैसे उद्देश्य से सामान्य निवास से बाहर जाता है। इससे आवास, भोजन, मार्गदर्शक, स्थानीय परिवहन और हस्तशिल्प में काम मिल सकता है। विदेशी पर्यटक विदेशी मुद्रा लाते हैं और घरेलू पर्यटन भी आर्थिक गतिविधि बढ़ाता है। लाभ अपने आप या सबको समान नहीं मिलता। मौसमी रोजगार, कचरा, जल पर दबाव तथा भीड़ के लिए योजना चाहिए। स्थानीय समुदाय और धरोहर का सम्मान पर्यटन की दीर्घकालीन उपयोगिता बढ़ाता है। जिम्मेदार यात्री अधिकृत मार्ग चुनता, कूड़ा घटाता और स्मारक या प्राकृतिक आवास को नुकसान नहीं पहुँचाता। मानचित्र अभ्यास में रूपरेखा पर चुने पत्तन और हवाई अड्डे छोटे बिंदु तथा स्पष्ट नाम से दिखाएँ। पहले तट या भीतरी स्थिति पहचानें, फिर संकेत लगाएँ। स्क्रीन के लगभग स्थित चिह्न अध्ययन-सहायक हैं, यात्रा निर्देशन या प्रशासनिक सीमा नहीं। अध्याय को जुड़ी श्रृंखला से दोहराएँ: उत्पादन को परिवहन, परिवहन को सूचना और व्यापार को दोनों की आवश्यकता है। पर्यटन सेवाओं की माँग बढ़ाता है। सड़क और रेल, पत्तन और हवाई अड्डे, आयात और निर्यात अलग करें। अंतिम उत्तर में समझाएँ कि उपयोगी तथा वहनीय संपर्क जाल केवल वाहनों की गिनती से अधिक महत्त्वपूर्ण क्यों है। नामों की लंबी सूची के बजाय स्थान, कार्य और संबंध याद करें।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which activity carries information?",
+        "hi": "कौन-सी गतिविधि सूचना पहुँचाती है?"
+      },
+      "correct": 3,
+      "options": [
+        {
+          "text": {
+            "en": "Only farming",
+            "hi": "केवल खेती"
+          },
+          "reason": {
+            "en": "Farming produces crops.",
+            "hi": "खेती फसल उत्पादन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only mining",
+            "hi": "केवल खनन"
+          },
+          "reason": {
+            "en": "Mining extracts minerals.",
+            "hi": "खनन खनिज निकालता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only weaving",
+            "hi": "केवल बुनाई"
+          },
+          "reason": {
+            "en": "Weaving makes fabric.",
+            "hi": "बुनाई कपड़ा बनाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Communication",
+            "hi": "संचार"
+          },
+          "reason": {
+            "en": "Messages carry information.",
+            "hi": "संदेश सूचना पहुँचाते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which network links Delhi, Mumbai, Chennai and Kolkata?",
+        "hi": "दिल्ली, मुंबई, चेन्नई और कोलकाता को कौन जोड़ता है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Golden Quadrilateral",
+            "hi": "स्वर्णिम चतुर्भुज"
+          },
+          "reason": {
+            "en": "These are its four major city links.",
+            "hi": "ये इसके 4 प्रमुख नगर संपर्क हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A single inland canal",
+            "hi": "एक आंतरिक नहर"
+          },
+          "reason": {
+            "en": "This is a highway network.",
+            "hi": "यह सड़क जाल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a gas pipeline",
+            "hi": "केवल गैस पाइपलाइन"
+          },
+          "reason": {
+            "en": "Pipelines carry selected substances.",
+            "hi": "पाइपलाइन विशेष पदार्थ ले जाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A local footpath",
+            "hi": "स्थानीय पगडंडी"
+          },
+          "reason": {
+            "en": "A footpath is not this national network.",
+            "hi": "पगडंडी यह राष्ट्रीय जाल नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which mode commonly carries natural gas continuously along a fixed route?",
+        "hi": "निश्चित मार्ग में प्राकृतिक गैस लगातार किससे पहुँचती है?"
+      },
+      "correct": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Walking path",
+            "hi": "पैदल मार्ग"
+          },
+          "reason": {
+            "en": "It does not pipe gas.",
+            "hi": "इसमें गैस का पाइप प्रवाह नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pipeline",
+            "hi": "पाइपलाइन"
+          },
+          "reason": {
+            "en": "It is suitable for gas supply.",
+            "hi": "यह गैस आपूर्ति में उपयुक्त है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Passenger bicycle",
+            "hi": "यात्री साइकिल"
+          },
+          "reason": {
+            "en": "It is not a gas distribution network.",
+            "hi": "यह गैस वितरण जाल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Newspaper",
+            "hi": "समाचारपत्र"
+          },
+          "reason": {
+            "en": "It carries printed information.",
+            "hi": "यह मुद्रित सूचना देता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What makes an inland waterway navigable?",
+        "hi": "आंतरिक जलमार्ग नौगम्य होने में क्या जरूरी है?"
+      },
+      "correct": 2,
+      "options": [
+        {
+          "text": {
+            "en": "No water",
+            "hi": "जल का अभाव"
+          },
+          "reason": {
+            "en": "Water is essential.",
+            "hi": "जल आवश्यक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a nearby airport",
+            "hi": "केवल पास हवाई अड्डा"
+          },
+          "reason": {
+            "en": "An airport cannot supply river depth.",
+            "hi": "हवाई अड्डा नदी को गहरा नहीं बनाता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Adequate depth and suitable channel",
+            "hi": "पर्याप्त गहराई और उपयुक्त धारा मार्ग"
+          },
+          "reason": {
+            "en": "Vessels need safe water conditions.",
+            "hi": "जलयान को सुरक्षित जल दशा चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only its name",
+            "hi": "केवल नाम"
+          },
+          "reason": {
+            "en": "Names do not establish depth.",
+            "hi": "नाम से गहराई तय नहीं होती।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which is a west-coast sea port?",
+        "hi": "पश्चिमी तट का पत्तन कौन है?"
+      },
+      "correct": 3,
+      "options": [
+        {
+          "text": {
+            "en": "Chennai",
+            "hi": "चेन्नई"
+          },
+          "reason": {
+            "en": "Chennai lies on the eastern coast.",
+            "hi": "चेन्नई पूर्वी तट पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Paradip",
+            "hi": "पारादीप"
+          },
+          "reason": {
+            "en": "Paradip is on the eastern coast.",
+            "hi": "पारादीप पूर्वी तट पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Delhi",
+            "hi": "दिल्ली"
+          },
+          "reason": {
+            "en": "Delhi is inland.",
+            "hi": "दिल्ली भीतरी स्थल पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mumbai",
+            "hi": "मुंबई"
+          },
+          "reason": {
+            "en": "It lies on the Arabian Sea side.",
+            "hi": "यह अरब सागर की ओर है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Exports are 80 units and imports 100 units. What is the trade balance?",
+        "hi": "निर्यात 80 और आयात 100 इकाई है। व्यापार संतुलन?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "−20 units",
+            "hi": "−20 इकाई"
+          },
+          "reason": {
+            "en": "80 − 100 = −20, a deficit.",
+            "hi": "80 − 100 = −20, यानी घाटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "180 units",
+            "hi": "180 इकाई"
+          },
+          "reason": {
+            "en": "This adds instead of subtracting.",
+            "hi": "यह घटाने के बजाय जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "20 units surplus",
+            "hi": "20 इकाई अधिशेष"
+          },
+          "reason": {
+            "en": "Imports exceed exports here.",
+            "hi": "यहाँ आयात निर्यात से अधिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 units",
+            "hi": "0 इकाई"
+          },
+          "reason": {
+            "en": "The two values are unequal.",
+            "hi": "दोनों मूल्य बराबर नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What does a port hinterland mean?",
+        "hi": "पत्तन का पृष्ठप्रदेश क्या है?"
+      },
+      "correct": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Only a runway",
+            "hi": "केवल रनवे"
+          },
+          "reason": {
+            "en": "A runway serves aircraft.",
+            "hi": "रनवे विमान के लिए है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The inland area served by the port",
+            "hi": "पत्तन से सेवित भीतरी क्षेत्र"
+          },
+          "reason": {
+            "en": "Transport connects this area with the port.",
+            "hi": "परिवहन इसे पत्तन से जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the ship cabin",
+            "hi": "केवल जहाज का कक्ष"
+          },
+          "reason": {
+            "en": "A cabin is inside a ship.",
+            "hi": "कक्ष जहाज के भीतर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The entire ocean floor",
+            "hi": "पूरा समुद्री तल"
+          },
+          "reason": {
+            "en": "The term concerns inland connections.",
+            "hi": "यह शब्द भीतरी संपर्क से जुड़ा है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which is mass communication?",
+        "hi": "जनसंचार का उदाहरण कौन है?"
+      },
+      "correct": 2,
+      "options": [
+        {
+          "text": {
+            "en": "A coal wagon",
+            "hi": "कोयले की बोगी"
+          },
+          "reason": {
+            "en": "It transports goods.",
+            "hi": "यह माल पहुँचाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A water pipe",
+            "hi": "पानी का पाइप"
+          },
+          "reason": {
+            "en": "It carries water.",
+            "hi": "यह पानी ले जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Radio broadcasting",
+            "hi": "रेडियो प्रसारण"
+          },
+          "reason": {
+            "en": "It can reach many listeners.",
+            "hi": "यह अनेक श्रोताओं तक पहुँचता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A private whisper",
+            "hi": "निजी फुसफुसाहट"
+          },
+          "reason": {
+            "en": "This reaches an individual nearby.",
+            "hi": "यह पास के व्यक्ति तक है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Why can air transport help remote mountain regions?",
+        "hi": "दूर पर्वतीय क्षेत्र में वायु परिवहन क्यों सहायक है?"
+      },
+      "correct": 3,
+      "options": [
+        {
+          "text": {
+            "en": "It needs no infrastructure",
+            "hi": "इसे ढाँचा नहीं चाहिए"
+          },
+          "reason": {
+            "en": "Airports and safety systems are required.",
+            "hi": "हवाई अड्डा और सुरक्षा जरूरी हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "It is always cheapest",
+            "hi": "यह हमेशा सबसे सस्ता है"
+          },
+          "reason": {
+            "en": "Costs depend on the task and route.",
+            "hi": "लागत कार्य और मार्ग पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Weather never matters",
+            "hi": "मौसम का प्रभाव नहीं"
+          },
+          "reason": {
+            "en": "Weather can affect operations.",
+            "hi": "मौसम संचालन प्रभावित करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It crosses difficult terrain rapidly",
+            "hi": "यह कठिन धरातल शीघ्र पार करता है"
+          },
+          "reason": {
+            "en": "Surface routes may be slow or interrupted.",
+            "hi": "स्थल मार्ग धीमे या बाधित हो सकते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which tourism practice is responsible?",
+        "hi": "जिम्मेदार पर्यटन व्यवहार कौन है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Reduce litter and respect local communities",
+            "hi": "कूड़ा घटाएँ और स्थानीय समुदाय का सम्मान करें"
+          },
+          "reason": {
+            "en": "It limits harm and supports long-term benefits.",
+            "hi": "इससे नुकसान घटता और दीर्घकालीन लाभ बढ़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Damage monuments",
+            "hi": "स्मारक को नुकसान दें"
+          },
+          "reason": {
+            "en": "This destroys heritage.",
+            "hi": "यह धरोहर नष्ट करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Waste scarce water",
+            "hi": "कम उपलब्ध पानी बर्बाद करें"
+          },
+          "reason": {
+            "en": "This increases local pressure.",
+            "hi": "यह स्थानीय दबाव बढ़ाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ignore authorised routes",
+            "hi": "अधिकृत मार्ग अनदेखे करें"
+          },
+          "reason": {
+            "en": "It can harm safety and habitats.",
+            "hi": "यह सुरक्षा और आवास को हानि दे सकता है।"
+          }
+        }
+      ]
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "Explain why transport and communication are complementary.",
+        "hi": "परिवहन और संचार पूरक क्यों हैं?"
+      },
+      "answer": {
+        "en": "Transport carries goods and people; communication provides orders, schedules and other information that coordinates movement.",
+        "hi": "परिवहन वस्तु तथा व्यक्ति ले जाता है; संचार आदेश, समय और सूचना से आवागमन व्यवस्थित करता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give two advantages of roads.",
+        "hi": "सड़क के 2 लाभ बताएँ।"
+      },
+      "answer": {
+        "en": "They provide flexible routes and short-distance links close to homes, farms and terminals.",
+        "hi": "वे लचीले मार्ग तथा घर, खेत और स्टेशन के पास छोटी दूरी का संपर्क देते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why do railway networks vary geographically?",
+        "hi": "रेल जाल का भौगोलिक अंतर क्यों है?"
+      },
+      "answer": {
+        "en": "Terrain, population, economic activity and historical investment shape routes; mountains may require costly tunnels and bridges.",
+        "hi": "धरातल, जनसंख्या, आर्थिक गतिविधि और ऐतिहासिक निवेश मार्ग बनाते हैं; पर्वत में महँगी सुरंग तथा पुल चाहिए।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish imports and exports.",
+        "hi": "आयात और निर्यात अलग करें।"
+      },
+      "answer": {
+        "en": "Imports are purchased from abroad; exports are sold abroad. Compare values for the same period and currency.",
+        "hi": "आयात विदेश से खरीद और निर्यात विदेश को बिक्री है। समान अवधि तथा मुद्रा में मूल्य की तुलना करें।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain one benefit and one pressure from tourism.",
+        "hi": "पर्यटन का 1 लाभ और 1 दबाव समझाएँ।"
+      },
+      "answer": {
+        "en": "Tourism can support guides and accommodation jobs, but crowding and waste can burden local water and habitats.",
+        "hi": "पर्यटन मार्गदर्शक और आवास में काम देता है, लेकिन भीड़ तथा कचरा जल और आवास पर दबाव डाल सकते हैं।"
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "mumbai",
+      "title": {
+        "en": "Mumbai Port",
+        "hi": "मुंबई पत्तन"
+      },
+      "kind": "place",
+      "location": [
+        72.84,
+        18.95
+      ],
+      "info": {
+        "en": "West-coast port in Maharashtra; linked to a large hinterland.",
+        "hi": "महाराष्ट्र में पश्चिमी तट का पत्तन; विस्तृत पृष्ठप्रदेश से जुड़ा।"
+      }
+    },
+    {
+      "id": "kandla",
+      "title": {
+        "en": "Deendayal Port · Kandla",
+        "hi": "दीनदयाल पत्तन · कांडला"
+      },
+      "kind": "place",
+      "location": [
+        70.22,
+        23.03
+      ],
+      "info": {
+        "en": "Port in Gujarat near the Gulf of Kachchh.",
+        "hi": "गुजरात में कच्छ की खाड़ी के पास पत्तन।"
+      }
+    },
+    {
+      "id": "kochi",
+      "title": {
+        "en": "Kochi Port",
+        "hi": "कोच्चि पत्तन"
+      },
+      "kind": "place",
+      "location": [
+        76.27,
+        9.97
+      ],
+      "info": {
+        "en": "Port on the southwestern coast in Kerala.",
+        "hi": "केरल के दक्षिण-पश्चिमी तट पर पत्तन।"
+      }
+    },
+    {
+      "id": "chennai",
+      "title": {
+        "en": "Chennai Port",
+        "hi": "चेन्नई पत्तन"
+      },
+      "kind": "place",
+      "location": [
+        80.3,
+        13.1
+      ],
+      "info": {
+        "en": "Eastern-coast port in Tamil Nadu.",
+        "hi": "तमिलनाडु में पूर्वी तट का पत्तन।"
+      }
+    },
+    {
+      "id": "visakhapatnam",
+      "title": {
+        "en": "Visakhapatnam Port",
+        "hi": "विशाखापत्तनम पत्तन"
+      },
+      "kind": "place",
+      "location": [
+        83.29,
+        17.69
+      ],
+      "info": {
+        "en": "Eastern-coast port in Andhra Pradesh.",
+        "hi": "आंध्र प्रदेश में पूर्वी तट का पत्तन।"
+      }
+    },
+    {
+      "id": "paradip",
+      "title": {
+        "en": "Paradip Port",
+        "hi": "पारादीप पत्तन"
+      },
+      "kind": "place",
+      "location": [
+        86.68,
+        20.27
+      ],
+      "info": {
+        "en": "Port on the Odisha coast.",
+        "hi": "ओडिशा तट पर पत्तन।"
+      }
+    },
+    {
+      "id": "kolkata",
+      "title": {
+        "en": "Kolkata Port",
+        "hi": "कोलकाता पत्तन"
+      },
+      "kind": "place",
+      "location": [
+        88.3,
+        22.53
+      ],
+      "info": {
+        "en": "Riverine port on the Hugli; Haldia facilities lie downstream.",
+        "hi": "हुगली पर नदी पत्तन; नीचे की ओर हल्दिया सुविधा है।"
+      }
+    },
+    {
+      "id": "delhi-air",
+      "title": {
+        "en": "Delhi Airport",
+        "hi": "दिल्ली हवाई अड्डा"
+      },
+      "kind": "place",
+      "location": [
+        77.1,
+        28.56
+      ],
+      "info": {
+        "en": "Inland airport example in northern India, not a sea port.",
+        "hi": "उत्तर भारत में भीतरी हवाई अड्डा; समुद्री पत्तन नहीं।"
+      }
+    }
+  ],
+  "mapQuestions": [
+    {
+      "question": {
+        "en": "Locate Mumbai and Chennai and identify their respective coasts.",
+        "hi": "मुंबई और चेन्नई दिखाकर उनके तट लिखें।"
+      },
+      "answer": {
+        "en": "Mumbai is on the western coast; Chennai is on the eastern coast.",
+        "hi": "मुंबई पश्चिमी तथा चेन्नई पूर्वी तट पर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Locate Deendayal Port at Kandla and Kochi and name their states.",
+        "hi": "कांडला का दीनदयाल पत्तन तथा कोच्चि दिखाकर राज्य लिखें।"
+      },
+      "answer": {
+        "en": "Deendayal Port is in Gujarat; Kochi is in Kerala.",
+        "hi": "दीनदयाल पत्तन गुजरात तथा कोच्चि केरल में है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "title": {
+        "en": "Choose a transport chain",
+        "hi": "परिवहन श्रृंखला चुनें"
+      },
+      "question": {
+        "en": "A village sends vegetables to a nearby town. Suggest a connected route.",
+        "hi": "गाँव से पास के शहर तक सब्जी पहुँचाने का मार्ग सुझाएँ।"
+      },
+      "steps": [
+        {
+          "en": "Collect the crop near farms and avoid delay.",
+          "hi": "खेत के पास फसल एकत्र कर विलंब घटाएँ।"
+        },
+        {
+          "en": "Use a suitable road vehicle to reach the town market.",
+          "hi": "उचित सड़क वाहन से शहर की मंडी पहुँचाएँ।"
+        }
+      ],
+      "answer": {
+        "en": "A short road link with timely handling suits this example; actual choice depends on volume and access.",
+        "hi": "समय पर संचालन वाला छोटी दूरी का सड़क संपर्क इस उदाहरण में उपयुक्त है; मात्रा और पहुँच से चयन बदलेगा।"
+      }
+    },
+    {
+      "title": {
+        "en": "Calculate trade balance",
+        "hi": "व्यापार संतुलन निकालें"
+      },
+      "question": {
+        "en": "Illustrative exports are ₹150 crore and imports ₹120 crore. Find the balance.",
+        "hi": "उदाहरण में निर्यात ₹150 करोड़ तथा आयात ₹120 करोड़ है। संतुलन निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Use exports − imports for the same period.",
+          "hi": "समान अवधि में निर्यात − आयात लें।"
+        },
+        {
+          "en": "150 − 120 = 30.",
+          "hi": "150 − 120 = 30।"
+        }
+      ],
+      "answer": {
+        "en": "₹30 crore surplus. These are practice figures, not national statistics.",
+        "hi": "₹30 करोड़ अधिशेष। ये अभ्यास के आँकड़े हैं, राष्ट्रीय आँकड़े नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Explain a port connection",
+        "hi": "पत्तन संपर्क समझाएँ"
+      },
+      "question": {
+        "en": "Why does an inland factory need more than a sea port to export?",
+        "hi": "भीतरी कारखाने को निर्यात में केवल पत्तन पर्याप्त क्यों नहीं?"
+      },
+      "steps": [
+        {
+          "en": "Goods must first reach the port through inland transport.",
+          "hi": "माल पहले स्थल परिवहन से पत्तन पहुँचे।"
+        },
+        {
+          "en": "Information, storage and handling coordinate the shipment.",
+          "hi": "सूचना, भंडारण और संचालन खेप व्यवस्थित करें।"
+        }
+      ],
+      "answer": {
+        "en": "Road or rail, communication and port services combine with shipping.",
+        "hi": "सड़क या रेल, संचार और पत्तन सुविधा जहाज से जुड़ते हैं।"
+      }
+    }
+  ],
+  "why": {
+    "en": "A network works through connected links. Ports, roads, railways and airports move people or goods, while communication coordinates movement and trade. Markers are approximate teaching locations, not navigation instructions.",
+    "hi": "संपर्क जाल जुड़ी कड़ियों से चलता है। पत्तन, सड़क, रेल और हवाई अड्डा व्यक्ति या माल पहुँचाते हैं तथा संचार आवागमन और व्यापार व्यवस्थित करता है। चिह्न लगभग शिक्षण स्थान हैं, यात्रा निर्देश नहीं।"
+  },
+  "missions": [
+    {
+      "label": {
+        "en": "Explore 3 different map features.",
+        "hi": "मानचित्र के 3 अलग स्थल देखें।"
+      },
+      "key": "visited",
+      "min": 3
+    },
+    {
+      "label": {
+        "en": "Zoom to 2× or more.",
+        "hi": "2× या अधिक ज़ूम करें।"
+      },
+      "key": "zoom",
+      "min": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, Chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/jess107.pdf"
+    },
+    {
+      "title": "UP Board Social Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/932-Social-Science-Class-10.pdf"
+    }
+  ],
+  "scopeNote": {
+    "en": "Original study companion. Historical textbook figures retain their dates. Map markers are approximate; use the prescribed atlas for assessed map work.",
+    "hi": "मौलिक अध्ययन-सहायक। पाठ्यपुस्तक के पुराने आँकड़ों की तिथि रखें। मानचित्र चिह्न लगभग हैं; परीक्षा के मानचित्र कार्य में निर्धारित एटलस देखें।"
+  }
+}

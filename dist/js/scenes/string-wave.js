@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p})=>{let f=p[0],v=4,lambda=v/f,prev;for(let i=0;i<=90;i++){let x=-1.5+i/30,y=.3*Math.sin(2*Math.PI*(x/lambda-f*t*.15)),q=[x,y,0];if(prev)g.line(prev,q,C.green,2);if(i===45)g.sphere(...q,.06,C.gold);prev=q}g.arrow([0,-.7,0],[0,-.25,0],C.gold);g.arrow([-.6,.8,0],[.6,.8,0],C.blue);return[read('Wave speed','तरंग चाल',v,'m/s'),read('Frequency','आवृत्ति',f,'Hz'),read('Wavelength','तरंगदैर्ध्य',fmt(lambda),'m')];};

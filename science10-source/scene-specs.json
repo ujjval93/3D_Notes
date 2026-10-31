@@ -1,0 +1,1250 @@
+[
+  {
+    "number": 1,
+    "id": "reactions",
+    "title": {
+      "en": "Chemical Reactions and Equations",
+      "hi": "रासायनिक अभिक्रियाएँ एवं समीकरण"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-balance",
+        "title": {
+          "en": "Balance water formation",
+          "hi": "जल बनने का संतुलन"
+        },
+        "kind": "ten-reactions",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Hydrogen coefficient",
+              "hi": "हाइड्रोजन का गुणांक"
+            },
+            "min": 1,
+            "max": 4,
+            "step": 1,
+            "initial": 1,
+            "unit": ""
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-reaction-types",
+        "title": {
+          "en": "Identify reaction patterns",
+          "hi": "अभिक्रिया के प्रकार"
+        },
+        "kind": "ten-reactions",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Reaction progress",
+              "hi": "अभिक्रिया की प्रगति"
+            },
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "initial": 20,
+            "unit": "%"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-rusting",
+        "title": {
+          "en": "Conditions for rusting",
+          "hi": "जंग लगने की परिस्थितियाँ"
+        },
+        "kind": "ten-reactions",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Exposure time",
+              "hi": "संपर्क का समय"
+            },
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "initial": 2,
+            "unit": "model days"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "id": "acids",
+    "title": {
+      "en": "Acids, Bases and Salts",
+      "hi": "अम्ल, क्षारक एवं लवण"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-ph",
+        "title": {
+          "en": "Explore the pH scale",
+          "hi": "pH पैमाना देखें"
+        },
+        "kind": "ten-acids",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "pH",
+              "hi": "pH"
+            },
+            "min": 0,
+            "max": 14,
+            "step": 1,
+            "initial": 7,
+            "unit": ""
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-neutralisation",
+        "title": {
+          "en": "Neutralisation",
+          "hi": "उदासीनीकरण"
+        },
+        "kind": "ten-acids",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Base added",
+              "hi": "मिलाया क्षारक"
+            },
+            "min": 0,
+            "max": 20,
+            "step": 1,
+            "initial": 5,
+            "unit": "mL"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-salts",
+        "title": {
+          "en": "Water of crystallisation",
+          "hi": "क्रिस्टलन का जल"
+        },
+        "kind": "ten-acids",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Hydrated particles",
+              "hi": "जलयोजित कण"
+            },
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "initial": 6,
+            "unit": "units"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "id": "metals",
+    "title": {
+      "en": "Metals and Non-metals",
+      "hi": "धातु एवं अधातु"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-reactivity",
+        "title": {
+          "en": "Displacement and reactivity",
+          "hi": "विस्थापन और सक्रियता"
+        },
+        "kind": "ten-metals",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Metal sample",
+              "hi": "धातु का नमूना"
+            },
+            "min": 0,
+            "max": 3,
+            "step": 1,
+            "initial": 0,
+            "unit": "index"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-ionic",
+        "title": {
+          "en": "Ionic bond formation",
+          "hi": "आयनिक बंध का निर्माण"
+        },
+        "kind": "ten-metals",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Electron transfer progress",
+              "hi": "इलेक्ट्रॉन स्थानांतरण"
+            },
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "initial": 20,
+            "unit": "%"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-protection",
+        "title": {
+          "en": "Corrosion protection",
+          "hi": "संक्षारण से सुरक्षा"
+        },
+        "kind": "ten-metals",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Protective coating",
+              "hi": "सुरक्षात्मक परत"
+            },
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "initial": 20,
+            "unit": "%"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "id": "carbon",
+    "title": {
+      "en": "Carbon and its Compounds",
+      "hi": "कार्बन एवं उसके यौगिक"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-chains",
+        "title": {
+          "en": "Homologous carbon chains",
+          "hi": "समजातीय कार्बन शृंखला"
+        },
+        "kind": "ten-carbon",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Carbon atoms",
+              "hi": "कार्बन परमाणु"
+            },
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "initial": 2,
+            "unit": "atoms"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-bonds",
+        "title": {
+          "en": "Single, double and triple bonds",
+          "hi": "एकल, द्वि और त्रि बंध"
+        },
+        "kind": "ten-carbon",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Bond order",
+              "hi": "बंध क्रम"
+            },
+            "min": 1,
+            "max": 3,
+            "step": 1,
+            "initial": 1,
+            "unit": ""
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-soap",
+        "title": {
+          "en": "Soap micelles and hard water",
+          "hi": "साबुन मिसेल और कठोर जल"
+        },
+        "kind": "ten-carbon",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Hard-water ions",
+              "hi": "कठोर जल के आयन"
+            },
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "initial": 0,
+            "unit": "relative units"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "id": "life",
+    "title": {
+      "en": "Life Processes",
+      "hi": "जैव प्रक्रम"
+    },
+    "unit": {
+      "en": "Biology",
+      "hi": "जीव विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-digestion",
+        "title": {
+          "en": "Journey of food",
+          "hi": "भोजन की यात्रा"
+        },
+        "kind": "ten-life",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Digestive stage",
+              "hi": "पाचन का चरण"
+            },
+            "min": 0,
+            "max": 4,
+            "step": 1,
+            "initial": 0,
+            "unit": "stage"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-photosynthesis",
+        "title": {
+          "en": "Photosynthesis factors",
+          "hi": "प्रकाश संश्लेषण के कारक"
+        },
+        "kind": "ten-life",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Light availability",
+              "hi": "प्रकाश की उपलब्धता"
+            },
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "initial": 50,
+            "unit": "relative units"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-circulation",
+        "title": {
+          "en": "Double circulation",
+          "hi": "दोहरा परिसंचरण"
+        },
+        "kind": "ten-life",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Blood pathway stage",
+              "hi": "रक्त मार्ग का चरण"
+            },
+            "min": 0,
+            "max": 7,
+            "step": 1,
+            "initial": 0,
+            "unit": "stage"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      },
+      {
+        "id": "ten-respiration",
+        "title": {
+          "en": "Aerobic and anaerobic respiration",
+          "hi": "वायवीय एवं अवायवीय श्वसन"
+        },
+        "kind": "ten-life",
+        "parameters": {
+          "mode": 3
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Oxygen supply",
+              "hi": "ऑक्सीजन की उपलब्धता"
+            },
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "initial": 50,
+            "unit": "relative units"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 3
+      },
+      {
+        "id": "ten-nephron",
+        "title": {
+          "en": "Filtration and reabsorption",
+          "hi": "निस्यंदन एवं पुनरवशोषण"
+        },
+        "kind": "ten-life",
+        "parameters": {
+          "mode": 4
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Nephron stage",
+              "hi": "वृक्काणु का चरण"
+            },
+            "min": 0,
+            "max": 3,
+            "step": 1,
+            "initial": 0,
+            "unit": "stage"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "id": "control",
+    "title": {
+      "en": "Control and Coordination",
+      "hi": "नियंत्रण एवं समन्वय"
+    },
+    "unit": {
+      "en": "Biology",
+      "hi": "जीव विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-reflex",
+        "title": {
+          "en": "Reflex arc",
+          "hi": "प्रतिवर्ती चाप"
+        },
+        "kind": "ten-control",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Impulse pathway stage",
+              "hi": "आवेग मार्ग का चरण"
+            },
+            "min": 0,
+            "max": 4,
+            "step": 1,
+            "initial": 0,
+            "unit": "stage"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-tropism",
+        "title": {
+          "en": "Phototropism",
+          "hi": "प्रकाशानुवर्तन"
+        },
+        "kind": "ten-control",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Time after side illumination",
+              "hi": "एक ओर प्रकाश के बाद समय"
+            },
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "initial": 0,
+            "unit": "model hours"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-hormones",
+        "title": {
+          "en": "Hormonal feedback",
+          "hi": "हार्मोन का प्रतिपुष्टि नियंत्रण"
+        },
+        "kind": "ten-control",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Blood glucose level",
+              "hi": "रक्त शर्करा स्तर"
+            },
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "initial": 50,
+            "unit": "relative units"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "id": "reproduction",
+    "title": {
+      "en": "How do Organisms Reproduce?",
+      "hi": "जीव जनन कैसे करते हैं?"
+    },
+    "unit": {
+      "en": "Biology",
+      "hi": "जीव विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-asexual",
+        "title": {
+          "en": "Binary fission and budding",
+          "hi": "द्विखंडन और मुकुलन"
+        },
+        "kind": "ten-reproduction",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Reproduction progress",
+              "hi": "जनन की प्रगति"
+            },
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "initial": 0,
+            "unit": "%"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-pollination",
+        "title": {
+          "en": "Pollination and fertilisation",
+          "hi": "परागण एवं निषेचन"
+        },
+        "kind": "ten-reproduction",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Flower reproduction stage",
+              "hi": "पुष्प जनन का चरण"
+            },
+            "min": 0,
+            "max": 4,
+            "step": 1,
+            "initial": 0,
+            "unit": "stage"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-human-reproduction",
+        "title": {
+          "en": "Human reproduction sequence",
+          "hi": "मानव जनन का क्रम"
+        },
+        "kind": "ten-reproduction",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Developmental stage",
+              "hi": "विकास का चरण"
+            },
+            "min": 0,
+            "max": 4,
+            "step": 1,
+            "initial": 0,
+            "unit": "stage"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "id": "heredity",
+    "title": {
+      "en": "Heredity",
+      "hi": "आनुवंशिकता"
+    },
+    "unit": {
+      "en": "Biology",
+      "hi": "जीव विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-monohybrid",
+        "title": {
+          "en": "Monohybrid cross",
+          "hi": "एकसंकर क्रॉस"
+        },
+        "kind": "ten-heredity",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Offspring sample",
+              "hi": "संतति का नमूना"
+            },
+            "min": 0,
+            "max": 3,
+            "step": 1,
+            "initial": 0,
+            "unit": "cell"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-independent",
+        "title": {
+          "en": "Independent assortment",
+          "hi": "स्वतंत्र अपव्यूहन"
+        },
+        "kind": "ten-heredity",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Gamete combination",
+              "hi": "युग्मक संयोजन"
+            },
+            "min": 0,
+            "max": 15,
+            "step": 1,
+            "initial": 0,
+            "unit": "cell"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-sex",
+        "title": {
+          "en": "Chromosomal sex determination",
+          "hi": "गुणसूत्रीय लिंग निर्धारण"
+        },
+        "kind": "ten-heredity",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Paternal gamete",
+              "hi": "पिता का युग्मक"
+            },
+            "min": 0,
+            "max": 1,
+            "step": 1,
+            "initial": 0,
+            "unit": "index"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "id": "light",
+    "title": {
+      "en": "Light – Reflection and Refraction",
+      "hi": "प्रकाश – परावर्तन तथा अपवर्तन"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-mirror",
+        "title": {
+          "en": "Concave mirror images",
+          "hi": "अवतल दर्पण के प्रतिबिंब"
+        },
+        "kind": "ten-light",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Object distance magnitude",
+              "hi": "वस्तु दूरी का परिमाण"
+            },
+            "min": 5,
+            "max": 60,
+            "step": 1,
+            "initial": 30,
+            "unit": "cm"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-lens",
+        "title": {
+          "en": "Convex lens images",
+          "hi": "उत्तल लेंस के प्रतिबिंब"
+        },
+        "kind": "ten-light",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Object distance magnitude",
+              "hi": "वस्तु दूरी का परिमाण"
+            },
+            "min": 5,
+            "max": 60,
+            "step": 1,
+            "initial": 30,
+            "unit": "cm"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-refraction",
+        "title": {
+          "en": "Refraction at a boundary",
+          "hi": "सीमा पर अपवर्तन"
+        },
+        "kind": "ten-light",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Angle of incidence",
+              "hi": "आपतन कोण"
+            },
+            "min": 0,
+            "max": 75,
+            "step": 1,
+            "initial": 30,
+            "unit": "°"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "id": "eye",
+    "title": {
+      "en": "The Human Eye and the Colourful World",
+      "hi": "मानव नेत्र तथा रंगबिरंगा संसार"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-accommodation",
+        "title": {
+          "en": "Accommodation of the eye",
+          "hi": "नेत्र की समंजन क्षमता"
+        },
+        "kind": "ten-eye",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Object distance",
+              "hi": "वस्तु दूरी"
+            },
+            "min": 25,
+            "max": 200,
+            "step": 5,
+            "initial": 100,
+            "unit": "cm"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-vision",
+        "title": {
+          "en": "Myopia correction",
+          "hi": "निकट दृष्टिदोष का सुधार"
+        },
+        "kind": "ten-eye",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Correcting lens power",
+              "hi": "सुधारक लेंस की क्षमता"
+            },
+            "min": -5,
+            "max": 0,
+            "step": 0.25,
+            "initial": 0,
+            "unit": "D"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-dispersion",
+        "title": {
+          "en": "Dispersion and scattering",
+          "hi": "विक्षेपण एवं प्रकीर्णन"
+        },
+        "kind": "ten-eye",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Relative wavelength",
+              "hi": "सापेक्ष तरंगदैर्घ्य"
+            },
+            "min": 400,
+            "max": 700,
+            "step": 10,
+            "initial": 550,
+            "unit": "nm"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "id": "electricity",
+    "title": {
+      "en": "Electricity",
+      "hi": "विद्युत"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-ohm",
+        "title": {
+          "en": "Ohm’s law",
+          "hi": "ओम का नियम"
+        },
+        "kind": "ten-electricity",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Voltage",
+              "hi": "विभवांतर"
+            },
+            "min": 0,
+            "max": 12,
+            "step": 0.5,
+            "initial": 6,
+            "unit": "V"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-resistors",
+        "title": {
+          "en": "Series and parallel resistors",
+          "hi": "श्रेणी एवं पार्श्वक्रम प्रतिरोधक"
+        },
+        "kind": "ten-electricity",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Resistance R2",
+              "hi": "प्रतिरोध R2"
+            },
+            "min": 1,
+            "max": 20,
+            "step": 1,
+            "initial": 6,
+            "unit": "Ω"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-power",
+        "title": {
+          "en": "Heating and electrical energy",
+          "hi": "ऊष्मीय प्रभाव और विद्युत ऊर्जा"
+        },
+        "kind": "ten-electricity",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Current",
+              "hi": "विद्युत धारा"
+            },
+            "min": 0,
+            "max": 5,
+            "step": 0.25,
+            "initial": 2,
+            "unit": "A"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "id": "magnetism",
+    "title": {
+      "en": "Magnetic Effects of Electric Current",
+      "hi": "विद्युत धारा के चुंबकीय प्रभाव"
+    },
+    "unit": {
+      "en": "Physics",
+      "hi": "भौतिक विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-wire-field",
+        "title": {
+          "en": "Field around a straight wire",
+          "hi": "सीधे तार के चारों ओर क्षेत्र"
+        },
+        "kind": "ten-magnetism",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Current",
+              "hi": "विद्युत धारा"
+            },
+            "min": -5,
+            "max": 5,
+            "step": 1,
+            "initial": 2,
+            "unit": "A"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-solenoid",
+        "title": {
+          "en": "Solenoid and electromagnet",
+          "hi": "परिनालिका और विद्युत चुंबक"
+        },
+        "kind": "ten-magnetism",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Number of turns",
+              "hi": "फेरों की संख्या"
+            },
+            "min": 4,
+            "max": 20,
+            "step": 1,
+            "initial": 8,
+            "unit": "turns"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-force",
+        "title": {
+          "en": "Force on a current-carrying wire",
+          "hi": "धारावाही तार पर बल"
+        },
+        "kind": "ten-magnetism",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Current",
+              "hi": "विद्युत धारा"
+            },
+            "min": -5,
+            "max": 5,
+            "step": 1,
+            "initial": 2,
+            "unit": "A"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "id": "environment",
+    "title": {
+      "en": "Our Environment",
+      "hi": "हमारा पर्यावरण"
+    },
+    "unit": {
+      "en": "Biology",
+      "hi": "जीव विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "ten-energy-flow",
+        "title": {
+          "en": "Energy flow in a food chain",
+          "hi": "खाद्य शृंखला में ऊर्जा प्रवाह"
+        },
+        "kind": "ten-environment",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Producer energy",
+              "hi": "उत्पादक की ऊर्जा"
+            },
+            "min": 1000,
+            "max": 10000,
+            "step": 500,
+            "initial": 5000,
+            "unit": "J"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 0
+      },
+      {
+        "id": "ten-biomagnification",
+        "title": {
+          "en": "Biomagnification",
+          "hi": "जैव आवर्धन"
+        },
+        "kind": "ten-environment",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Trophic level",
+              "hi": "पोषी स्तर"
+            },
+            "min": 1,
+            "max": 4,
+            "step": 1,
+            "initial": 1,
+            "unit": "level"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 1
+      },
+      {
+        "id": "ten-waste",
+        "title": {
+          "en": "Waste and biodegradation",
+          "hi": "कचरा और जैव निम्नीकरण"
+        },
+        "kind": "ten-environment",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Elapsed time",
+              "hi": "बीता समय"
+            },
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "initial": 0,
+            "unit": "model weeks"
+          }
+        ],
+        "selectors": [],
+        "noteIndex": 2
+      }
+    ]
+  }
+]

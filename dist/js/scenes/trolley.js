@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p})=>{let F=p[0],m=p[1]??2,a=F/m,tau=t%4,s=.5*a*tau*tau;g.line([-1.4,.5,0],[1.4,.5,0]);let x=-1.3+2.6*s/96;g.box(x,.15,0,.16+.02*m,.15,.18,C.gold);g.sphere(x-.12,.4,.1,.07,C.white);g.sphere(x+.12,.4,.1,.07,C.white);if(F)g.arrow([x,-.2,0],[x+F/15,-.2,0],C.green);return[read('Mass','द्रव्यमान',m,'kg'),read('Net force','परिणामी बल',F,'N'),read('Acceleration F/m','त्वरण F/m',fmt(a),'m/s²')];};

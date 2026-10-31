@@ -1,0 +1,1052 @@
+{
+  "number": 14,
+  "id": "physics12-14",
+  "title": {
+    "en": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+    "hi": "अर्धचालक इलेक्ट्रॉनिकी: पदार्थ, युक्तियाँ तथा सरल परिपथ"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Energy bands and material classes",
+        "hi": "ऊर्जा बैंड और पदार्थों के वर्ग"
+      },
+      "paragraphs": [
+        {
+          "en": "Closely spaced atomic levels form energy bands in a solid. Conduction depends on occupied states, available nearby states and the band gap, not merely on whether the material contains electrons. Metals conduct readily; intrinsic semiconductors have a relatively small gap; insulators have a larger gap in the elementary model.",
+          "hi": "ठोस में बहुत-से परमाणु पास आते हैं तो उनके ऊर्जा स्तर मिलकर ऊर्जा बैंड (Energy bands) बनाते हैं। संयोजकता बैंड (Valence band) में बंधन से जुड़े इलेक्ट्रॉन की अवस्थाएँ और उसके ऊपर चालन बैंड (Conduction band) होता है। इनके बीच निषिद्ध ऊर्जा अंतराल (Band gap), Eg=Ec−Ev है। इस अंतराल में आदर्श ठोस की अनुमत इलेक्ट्रॉन अवस्थाएँ नहीं होतीं। धातु में आंशिक भरा बैंड या बैंडों का अतिव्यापन इलेक्ट्रॉनों को आसानी से गति बदलने की अवस्थाएँ देता है। सामान्य अर्धचालक में अंतराल अपेक्षाकृत छोटा और कुचालक में बड़ा होता है। केवल इलेक्ट्रॉन मौजूद होने से पदार्थ अच्छा चालक नहीं बनता; सभी ठोसों में इलेक्ट्रॉन होते हैं। भरी अवस्थाओं से उपलब्ध अवस्थाओं तक ऊर्जा और गति परिवर्तन भी चाहिए। कमरे के ताप के आसपास सिलिकॉन का Eg लगभग 1.1 eV और जर्मेनियम का लगभग 0.7 eV लेते हैं। ये संकेतात्मक मान हैं, हर ताप पर अपरिवर्तनीय परिभाषा नहीं। बैंड आरेख में ऊर्ध्व दिशा ऊर्जा दर्शाती है, वास्तविक इमारत की ऊँचाई नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not draw energy bands as literal layers that electrons climb through in space.",
+          "hi": "ऊर्जा बैंड को स्थान में बनी वास्तविक मंजिलें न समझें। आरेख की ऊँचाई ऊर्जा है, दूरी नहीं; ग्राफ में ऊर्जा अंतर बड़ा दिखाने से क्रिस्टल का आकार बड़ा नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is a band gap a physical empty crack in a crystal?",
+          "hi": "क्या बैंड अंतराल क्रिस्टल की खाली दरार है?"
+        },
+        "answer": {
+          "en": "No; it is a range of forbidden electronic energies in the ideal model.",
+          "hi": "नहीं; आदर्श मॉडल में यह निषिद्ध इलेक्ट्रॉन ऊर्जा का क्षेत्र है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Intrinsic carriers and electron–hole pairs",
+        "hi": "निज वाहक और इलेक्ट्रॉन–होल युग्म"
+      },
+      "paragraphs": [
+        {
+          "en": "In a pure intrinsic semiconductor, thermal excitation produces an electron in the conduction band and a corresponding hole in the valence band. At equilibrium ne=nh=ni. A hole describes a missing electron state that can move as neighbouring electrons change occupation; it is not a proton travelling through the lattice.",
+          "hi": "शुद्ध अर्धचालक को निज अर्धचालक (Intrinsic semiconductor) कहते हैं। तापीय ऊर्जा कुछ इलेक्ट्रॉनों को चालन बैंड तक पहुँचा सकती है। संयोजकता बैंड में पीछे बची रिक्त अवस्था होल (Hole) कहलाती है और प्रभावी धन आवेश वाले वाहक की तरह व्यवहार करती है। प्रत्येक ऐसे उत्तेजन से 1 चालन इलेक्ट्रॉन तथा 1 होल बनता है। इसलिए निज पदार्थ के तापीय साम्य में ne=nh=ni होता है। होल कोई नाभिक से निकला प्रोटॉन नहीं है। पास का बंधा इलेक्ट्रॉन रिक्त अवस्था भरता है तो रिक्ति पड़ोस में दिखाई देती है; इससे होल की गति का सुविधाजनक वर्णन मिलता है। उत्पत्ति के साथ इलेक्ट्रॉन और होल का पुनर्संयोजन (Recombination) भी होता रहता है। साम्य में दोनों दरें बराबर हैं, पर सभी सूक्ष्म प्रक्रियाएँ रुक नहीं जातीं। ताप बढ़ने पर सामान्य निज अर्धचालक में वाहक संख्या तेजी से बढ़ सकती है और चालकता बढ़ती है। यह प्रवृत्ति धातु के सामान्य ताप-प्रतिरोध व्यवहार से अलग है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Equal electron and hole concentration does not mean their mobilities or individual current contributions must be equal.",
+          "hi": "इलेक्ट्रॉन और होल संख्या समान होने से उनकी गतिशीलता या अलग धारा का योगदान आवश्यकतः बराबर नहीं होता। दोनों वाहक धारा में योगदान दे सकते हैं; उनकी गति और आवेश की दिशा अलग समझें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is a hole a moving proton?",
+          "hi": "क्या होल चलता प्रोटॉन है?"
+        },
+        "answer": {
+          "en": "No. It is an effective description of an unoccupied electron state.",
+          "hi": "नहीं। यह खाली इलेक्ट्रॉन अवस्था का प्रभावी वर्णन है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "n-type doping and donor atoms",
+        "hi": "n-प्रकार अपमिश्रण और दाता परमाणु"
+      },
+      "paragraphs": [
+        {
+          "en": "Adding a small concentration of pentavalent dopants to Si or Ge supplies donor electrons. Electrons become majority carriers and holes minority carriers. The crystal remains electrically neutral overall; the donor ions left after ionisation are positive and essentially fixed in the lattice.",
+          "hi": "शुद्ध सिलिकॉन या जर्मेनियम में उचित बहुत कम अशुद्धि मिलाने की नियंत्रित प्रक्रिया अपमिश्रण (Doping) है। 5 संयोजक इलेक्ट्रॉन वाला फॉस्फोरस या आर्सेनिक जैसा दाता (Donor) सामान्यतः 4 सहसंयोजक आबंध बनाता है। अतिरिक्त इलेक्ट्रॉन अपेक्षाकृत कम ऊर्जा से चालन के लिए उपलब्ध हो सकता है। इससे n-प्रकार अर्धचालक बनता है, जिसमें इलेक्ट्रॉन बहुसंख्यक वाहक (Majority carriers) और होल अल्पसंख्यक वाहक हैं। n अक्षर का अर्थ पूरा नमूना ऋणावेशित हो गया नहीं है। अतिरिक्त स्वतंत्र इलेक्ट्रॉन के साथ आयनित दाता का धनात्मक स्थिर आवेश भी रहता है, इसलिए सामान्य रूप से पदार्थ कुल मिलाकर उदासीन है। दाता आयन जालक में बँधे रहते हैं; उन्हें धारा के साथ दौड़ते कण न दिखाएँ। उचित ताप और पर्याप्त दाता सांद्रता पर ne≈ND ले सकते हैं, पर यह हर ताप और हर अपमिश्रण की बिल्कुल सार्वत्रिक समानता नहीं। तापीय साम्य में ne nh=ni² का संबंध उपयोगी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Doping changes carrier populations; it does not require every dopant to remain ionised at every possible temperature.",
+          "hi": "अपमिश्रण वाहक जनसंख्या बदलता है। प्रत्येक संभव ताप पर हर दाता आयनित होगा, ऐसा बिना शर्त न मानें; ne≈ND लगाते समय मॉडल की साम्य और आयनीकरण शर्त लिखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is n-type material not automatically negatively charged?",
+          "hi": "n-प्रकार पदार्थ आवश्यकतः ऋणावेशित क्यों नहीं?"
+        },
+        "answer": {
+          "en": "Positive fixed donor ions balance the additional mobile electrons.",
+          "hi": "धनात्मक स्थिर दाता आयन अतिरिक्त गतिशील इलेक्ट्रॉनों का संतुलन करते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "p-type doping and acceptor atoms",
+        "hi": "p-प्रकार अपमिश्रण और ग्राही परमाणु"
+      },
+      "paragraphs": [
+        {
+          "en": "Trivalent dopants accept an electron in bonding and leave a mobile hole description. Holes are majority carriers in p-type material. Ionised acceptors are negative and fixed; the total material is still neutral. Both carrier types remain present at nonzero temperature.",
+          "hi": "3 संयोजक इलेक्ट्रॉन वाले बोरॉन या ऐल्युमिनियम जैसे ग्राही (Acceptor) को सिलिकॉन में मिलाने पर एक आबंध में इलेक्ट्रॉन की कमी का वर्णन मिलता है। ग्राही पास के इलेक्ट्रॉन को स्वीकार कर सकता है और संयोजकता बैंड में होल उपलब्ध होता है। ऐसे पदार्थ को p-प्रकार कहते हैं। इसमें होल बहुसंख्यक और इलेक्ट्रॉन अल्पसंख्यक वाहक हैं। p अक्षर को पूरे नमूने के धनात्मक कुल आवेश का प्रमाण न मानें। इलेक्ट्रॉन स्वीकार करने पर बना स्थिर ऋणात्मक ग्राही आयन होल के प्रभावी धन आवेश का संतुलन करता है। जालक के भारी आयन सामान्य धारा में इधर-उधर नहीं जाते। बाहरी विद्युत क्षेत्र में इलेक्ट्रॉनों और होलों की प्रवाह गति विपरीत हो सकती है, पर पारंपरिक धारा में दोनों का योगदान उचित दिशा में जुड़ सकता है। p-प्रकार में इलेक्ट्रॉन बिल्कुल नहीं हैं कहना गलत है। सीमित ताप पर अल्पसंख्यक वाहक भी मौजूद होते हैं और संधि की पश्च धारा जैसी घटनाओं में महत्वपूर्ण हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Remember the sign of the fixed ion separately from the effective mobile carrier.",
+          "hi": "स्थिर आयन का चिह्न और गतिशील प्रभावी वाहक का चिह्न अलग याद करें। n-प्रकार में स्थिर दाता धनात्मक और p-प्रकार में स्थिर ग्राही ऋणात्मक होता है; बहुसंख्यक वाहक का चिह्न उलटा है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which carriers are majority in p-type?",
+          "hi": "p-प्रकार में बहुसंख्यक वाहक कौन?"
+        },
+        "answer": {
+          "en": "Holes; electrons are minority carriers.",
+          "hi": "होल; इलेक्ट्रॉन अल्पसंख्यक हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Formation of a p–n junction",
+        "hi": "p–n संधि का निर्माण"
+      },
+      "paragraphs": [
+        {
+          "en": "Diffusion across a junction leaves a depletion region containing fixed ionised dopants. Its electric field points from the positive donor-ion side n towards the negative acceptor-ion side p. At equilibrium drift and diffusion currents cancel, giving zero net current without stopping carrier motion.",
+          "hi": "एक ही उपयुक्त क्रिस्टल में p और n क्षेत्र बनाने पर p–n संधि (Junction) बनती है। यह केवल 2 टुकड़े दबाकर जोड़ देने का सरल संपर्क नहीं है। सांद्रता अंतर के कारण इलेक्ट्रॉन n से p और होल p से n की ओर विसरित होते हैं। संधि के पास पुनर्संयोजन से गतिशील बहुसंख्यक वाहक कम हो जाते हैं, पर स्थिर आयनित दाता और ग्राही बचते हैं। इस क्षेत्र को अवक्षय क्षेत्र (Depletion region) कहते हैं। इसका अर्थ सभी आवेश गायब नहीं; गतिशील वाहक कम हुए हैं और स्थिर स्थानिक आवेश बचा है। n तरफ धनात्मक दाता आयन और p तरफ ऋणात्मक ग्राही आयन से अंतर्निर्मित विद्युत क्षेत्र n से p की ओर होता है। यह क्षेत्र और संबंधित विभव रोधिका आगे के बहुसंख्यक विसरण का विरोध करते हैं। साम्य में विसरण धारा और अपवाह धारा बराबर तथा विपरीत होकर कुल धारा शून्य देती हैं। इलेक्ट्रॉन और होल की सभी व्यक्तिगत गतियाँ शून्य नहीं हो जातीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not identify the built-in barrier with a freely available battery voltage at the diode terminals in equilibrium.",
+          "hi": "अंतर्निर्मित रोधिका को साम्य में डायोड सिरों पर उपलब्ध स्वतंत्र बैटरी वोल्टता न मानें। संपर्क, आंतरिक क्षेत्र और बाहरी माप का पूरा परिपथ अलग संदर्भ देता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What remains in the depletion region?",
+          "hi": "अवक्षय क्षेत्र में क्या बचा रहता है?"
+        },
+        "answer": {
+          "en": "Mostly fixed ionised dopants; mobile majority carriers are depleted.",
+          "hi": "मुख्यतः स्थिर आयनित अपमिश्रक; गतिशील बहुसंख्यक वाहक कम हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Forward and reverse bias",
+        "hi": "अग्र और पश्च अभिनति"
+      },
+      "paragraphs": [
+        {
+          "en": "Forward bias connects p to the positive terminal and n to negative, lowering the barrier and narrowing depletion. Reverse bias does the opposite. A small reverse current is mainly due to minority carriers before breakdown; a reverse-biased diode is not an absolutely perfect open circuit in reality.",
+          "hi": "बाहरी वोल्टता लगाना अभिनति (Biasing) है। p क्षेत्र को धनात्मक और n को ऋणात्मक टर्मिनल से जोड़ें तो अग्र अभिनति (Forward bias) है। बाहरी प्रभाव अंतर्निर्मित रोधिका घटाता और अवक्षय क्षेत्र संकरा करता है, जिससे बहुसंख्यक वाहकों का पार होना बढ़ता है। उलटा जोड़ें, p को ऋणात्मक और n को धनात्मक, तो पश्च अभिनति (Reverse bias) है। रोधिका और अवक्षय चौड़ाई बढ़ते हैं तथा बहुसंख्यक वाहक धारा दबती है। फिर भी सीमित ताप पर अल्पसंख्यक वाहकों से छोटी पश्च धारा रहती है। उसे हर वास्तविक परिस्थिति में ठीक शून्य न लिखें। बहुत बड़ी पश्च वोल्टता पर भंजन (Breakdown) हो सकता है; वह सामान्य छोटी पश्च धारा वाली अवस्था से अलग है। डायोड को केवल स्थिर प्रतिरोध की तरह मानने से सही व्यवहार नहीं मिलेगा। परिपथ का चिन्ह देखते समय पहले p,n और बैटरी के +,− सिर पहचानें, फिर नाम तय करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use the diode orientation and the instantaneous source polarity together for an AC circuit.",
+          "hi": "AC परिपथ में डायोड की दिशा और उस क्षण स्रोत की ध्रुवता दोनों जाँचें। केवल एक स्थिर चित्र में लगा + चिन्ह देखकर पूरे आवर्त में समान धारा दिशा का निष्कर्ष न निकालें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For forward bias, which terminal connects to p?",
+          "hi": "अग्र अभिनति में p किस टर्मिनल से जुड़ता है?"
+        },
+        "answer": {
+          "en": "The positive terminal.",
+          "hi": "धनात्मक टर्मिनल से।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "I–V characteristics and models",
+        "hi": "I–V अभिलक्षण और मॉडल"
+      },
+      "paragraphs": [
+        {
+          "en": "Diode current is nonlinear with voltage. The forward current rises rapidly over a characteristic range, while reverse current is small on a much more sensitive scale. Approximate Si and Ge knee voltages are useful models, not universal fixed voltages or perfect on–off boundaries.",
+          "hi": "डायोड का धारा-वोल्टता अभिलक्षण (I–V characteristic) अरैखिक है। अग्र दिशा में प्रारंभ में छोटी धारा और फिर तेजी से बढ़ती धारा मिलती है। सिलिकॉन के लिए लगभग 0.7 V और जर्मेनियम के लिए लगभग 0.3 V घुटना वोल्टता (Knee voltage) के उपयोगी संकेत हैं। इन्हें हर डायोड, ताप और धारा पर बिल्कुल स्थिर प्राकृतिक नियतांक न मानें। वास्तविक धारा इस सीमा के ठीक नीचे पूरी तरह शून्य और ठीक ऊपर असीमित नहीं हो जाती। अलग स्तर के परिपथ प्रश्नों में आदर्श डायोड, स्थिर वोल्टता पतन या अधिक वास्तविक वक्र में से मॉडल बताया जाना चाहिए। पश्च दिशा की धारा अक्सर बहुत छोटी होने से आलेख का धारा पैमाना अलग लिया जाता है। μA और mA को एक जैसे अंक देखकर बराबर न कहें। छोटे क्षेत्र की ढाल स्थानीय प्रतिरोध समझने में सहायक है, लेकिन पूरे वक्र पर एक ही V/I मान लगाने से ओमीय प्रतिरोध जैसा गलत चित्र बन सकता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "State which diode model is being used before calculating a load current.",
+          "hi": "लोड धारा निकालने से पहले डायोड मॉडल लिखें। आदर्श अग्र डायोड में शून्य पतन लेना और दूसरे प्रश्न में 0.7 V लेना तभी संगत है जब दोनों की मॉडल शर्तें अलग स्पष्ट हों।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is 0.7 V an exact universal turn-on voltage for all silicon diodes?",
+          "hi": "क्या हर सिलिकॉन डायोड के लिए 0.7 V सटीक सार्वत्रिक चालू वोल्टता है?"
+        },
+        "answer": {
+          "en": "No; it is an approximate circuit-model value, dependent on operating conditions.",
+          "hi": "नहीं; यह कार्य दशाओं पर निर्भर सन्निकट परिपथ मान है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Diode rectification and output waveforms",
+        "hi": "डायोड दिष्टकरण और निर्गत तरंगरूप"
+      },
+      "paragraphs": [
+        {
+          "en": "A rectifier uses unequal forward and reverse conduction to obtain unidirectional pulsating output from AC. Half-wave output has one pulse each source period; full-wave output has two. Rectification alone is not voltage regulation and does not give perfectly smooth DC.",
+          "hi": "दिष्टकरण (Rectification) में प्रत्यावर्ती निवेश से एक ही दिशा का स्पंदित निर्गत प्राप्त करते हैं। अर्धतरंग दिष्टकारी (Half-wave rectifier) में डायोड एक अर्धचक्र में संचालित और दूसरे में लगभग अवरोध करता है। प्रतिरोधी लोड पर आदर्श निर्गत में हर निवेश आवर्त पर 1 पल्स होता है; पल्स पुनरावृत्ति आवृत्ति निवेश के बराबर है। पूर्णतरंग दिष्टकारी (Full-wave rectifier) में उपयुक्त व्यवस्था दोनों अर्धचक्रों को लोड में एक ही दिशा की धारा देने में उपयोग करती है। इसलिए हर निवेश आवर्त में 2 पल्स और निर्गत तरंग की पुनरावृत्ति आवृत्ति 2f होती है। इसका अर्थ निवेश स्रोत की आवृत्ति बदल गई नहीं है। केंद्र-टैप और ब्रिज अलग परिपथ व्यवस्थाएँ हैं; उनके डायोड पथ एक जैसे न खींचें। केवल दिष्टकरण से चिकनी स्थिर DC नहीं मिलती, बल्कि उतार-चढ़ाव वाली एकदिशीय वोल्टता मिलती है। फिल्टर और नियमन अलग अतिरिक्त कार्य हैं। वर्तमान मुख्य अध्ययन संधि डायोड और दिष्टकारी है; ट्रांजिस्टर तथा लॉजिक गेट इस पाठ में नहीं जोड़े गए हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Check output polarity across the same load terminals in both half cycles; changing the reference terminals changes the sign convention.",
+          "hi": "दोनों अर्धचक्रों में उसी लोड के समान सिरों के सापेक्ष निर्गत ध्रुवता जाँचें। संदर्भ सिर बदल देने पर चिह्न बदल सकता है; उससे दिष्टकारी की धारा का वास्तविक मार्ग नहीं बदलता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For 50 Hz input, what is the ideal full-wave pulse repetition frequency?",
+          "hi": "50 Hz निवेश पर आदर्श पूर्णतरंग पल्स आवृत्ति क्या है?"
+        },
+        "answer": {
+          "en": "100 Hz.",
+          "hi": "100 Hz।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Eg=Ec−Ev",
+      "meaning": {
+        "en": "Energy gap between conduction-band edge and valence-band edge.",
+        "hi": "चालन बैंड तल और संयोजकता बैंड शीर्ष का ऊर्जा अंतर।"
+      },
+      "units": {
+        "en": "Eg: eV or J; energy axis, not spatial height",
+        "hi": "Eg: eV or J; energy axis, not spatial height"
+      }
+    },
+    {
+      "expression": "ne=nh=ni",
+      "meaning": {
+        "en": "Intrinsic semiconductor in thermal equilibrium.",
+        "hi": "तापीय साम्य में निज अर्धचालक।"
+      },
+      "units": {
+        "en": "Carrier concentrations: m^-3",
+        "hi": "Carrier concentrations: m^-3"
+      }
+    },
+    {
+      "expression": "ne nh=ni²",
+      "meaning": {
+        "en": "Carrier relation in the elementary thermal-equilibrium model at fixed temperature.",
+        "hi": "निश्चित ताप के प्राथमिक तापीय साम्य मॉडल में वाहक संबंध।"
+      },
+      "units": {
+        "en": "ne,nh,ni: m^-3; products: m^-6",
+        "hi": "ne,nh,ni: m^-3; products: m^-6"
+      }
+    },
+    {
+      "expression": "fout=fin (half-wave); fout=2fin (full-wave)",
+      "meaning": {
+        "en": "Output pulse repetition for ideal sinusoidal rectification.",
+        "hi": "आदर्श साइन निवेश के दिष्टकरण की निर्गत पल्स आवृत्ति।"
+      },
+      "units": {
+        "en": "f: Hz",
+        "hi": "f: Hz"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A pure intrinsic sample has ne=2×10^16 m^-3. Find nh at thermal equilibrium.",
+        "hi": "शुद्ध निज नमूने में ne=2×10^16 m^-3 है। तापीय साम्य में nh निकालें।"
+      },
+      "given": {
+        "en": "Intrinsic sample; ne=2×10^16 m^-3.",
+        "hi": "निज नमूना; ne=2×10^16 m^-3।"
+      },
+      "find": {
+        "en": "Hole concentration.",
+        "hi": "होल सांद्रता।"
+      },
+      "formula": {
+        "en": "ne=nh=ni",
+        "hi": "ne=nh=ni"
+      },
+      "steps": [
+        {
+          "en": "Each thermal excitation creates an electron–hole pair.",
+          "hi": "हर तापीय उत्तेजन इलेक्ट्रॉन-होल युग्म बनाता है।"
+        }
+      ],
+      "answer": {
+        "en": "nh=2×10^16 m^-3.",
+        "hi": "nh=2×10^16 m^-3।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A diode has p connected to negative and n to positive. Classify the bias.",
+        "hi": "डायोड का p ऋणात्मक और n धनात्मक से जुड़ा है। अभिनति पहचानें।"
+      },
+      "given": {
+        "en": "p→negative;n→positive.",
+        "hi": "p→ऋणात्मक;n→धनात्मक।"
+      },
+      "find": {
+        "en": "Bias and depletion-width change.",
+        "hi": "अभिनति और अवक्षय चौड़ाई परिवर्तन।"
+      },
+      "formula": {
+        "en": "Reverse bias raises the barrier.",
+        "hi": "पश्च अभिनति रोधिका बढ़ाती है।"
+      },
+      "steps": [
+        {
+          "en": "The connection is opposite to forward bias.",
+          "hi": "जोड़ अग्र अभिनति का उलटा है।"
+        },
+        {
+          "en": "The depletion region broadens.",
+          "hi": "अवक्षय क्षेत्र चौड़ा होता है।"
+        }
+      ],
+      "answer": {
+        "en": "Reverse bias; depletion width increases.",
+        "hi": "पश्च अभिनति; अवक्षय चौड़ाई बढ़ती है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A 60 Hz sine input feeds ideal half-wave and full-wave rectifiers. Find their pulse repetition frequencies.",
+        "hi": "60 Hz साइन निवेश आदर्श अर्धतरंग और पूर्णतरंग दिष्टकारी को दिया। पल्स आवृत्तियाँ निकालें।"
+      },
+      "given": {
+        "en": "fin=60 Hz.",
+        "hi": "fin=60 Hz।"
+      },
+      "find": {
+        "en": "Both fout values.",
+        "hi": "दोनों fout मान।"
+      },
+      "formula": {
+        "en": "Half: fout=fin; full: fout=2fin",
+        "hi": "अर्ध: fout=fin; पूर्ण: fout=2fin"
+      },
+      "steps": [
+        {
+          "en": "Half-wave has one pulse per input cycle.",
+          "hi": "अर्धतरंग में प्रति निवेश चक्र 1 पल्स।"
+        },
+        {
+          "en": "Full-wave has two pulses per input cycle.",
+          "hi": "पूर्णतरंग में प्रति निवेश चक्र 2 पल्स।"
+        }
+      ],
+      "answer": {
+        "en": "Half-wave 60 Hz; full-wave 120 Hz.",
+        "hi": "अर्धतरंग 60 Hz; पूर्णतरंग 120 Hz।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "In an illustrative ideal-diode circuit, a forward conducting diode and 1 kΩ resistor are in series across 5 V. Find load current.",
+        "hi": "उदाहरणात्मक आदर्श डायोड परिपथ में अग्र संचालित डायोड और 1 kΩ प्रतिरोध श्रेणी में 5 V पर हैं। लोड धारा निकालें।"
+      },
+      "given": {
+        "en": "Ideal conducting diode:0 V drop; R=1000 Ω; source=5 V.",
+        "hi": "आदर्श संचालित डायोड:0 V पतन; R=1000 Ω; स्रोत=5 V।"
+      },
+      "find": {
+        "en": "Resistor current.",
+        "hi": "प्रतिरोध धारा।"
+      },
+      "formula": {
+        "en": "I=VR/R",
+        "hi": "I=VR/R"
+      },
+      "steps": [
+        {
+          "en": "All 5 V appears across the resistor in this model.",
+          "hi": "इस मॉडल में पूरे 5 V प्रतिरोध पर हैं।"
+        },
+        {
+          "en": "I=5/1000 A.",
+          "hi": "I=5/1000 A।"
+        }
+      ],
+      "answer": {
+        "en": "5 mA; this applies Ohm’s law to the resistor, not a linear diode model.",
+        "hi": "5 mA; ओम नियम प्रतिरोध पर लगाया है, डायोड को रैखिक नहीं माना।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "At one temperature an n-type sample has ne=10^22 m^-3 and ni=10^16 m^-3. Estimate minority holes.",
+        "hi": "किसी ताप पर n-प्रकार में ne=10^22 m^-3 तथा ni=10^16 m^-3 है। अल्पसंख्यक होल अनुमानित करें।"
+      },
+      "given": {
+        "en": "Thermal-equilibrium carrier relation is applicable.",
+        "hi": "तापीय साम्य वाहक संबंध लागू है।"
+      },
+      "find": {
+        "en": "nh.",
+        "hi": "nh।"
+      },
+      "formula": {
+        "en": "ne nh=ni²",
+        "hi": "ne nh=ni²"
+      },
+      "steps": [
+        {
+          "en": "ni²=10^32 m^-6.",
+          "hi": "ni²=10^32 m^-6।"
+        },
+        {
+          "en": "nh=10^32/10^22 m^-3.",
+          "hi": "nh=10^32/10^22 m^-3।"
+        },
+        {
+          "en": "The small minority concentration is not zero.",
+          "hi": "छोटी अल्पसंख्यक सांद्रता शून्य नहीं।"
+        }
+      ],
+      "answer": {
+        "en": "nh=10^10 m^-3.",
+        "hi": "nh=10^10 m^-3।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A band gap is",
+        "hi": "बैंड अंतराल है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "A forbidden electronic-energy interval in the ideal solid",
+            "hi": "आदर्श ठोस में निषिद्ध इलेक्ट्रॉन ऊर्जा अंतराल"
+          },
+          "reason": {
+            "en": "It is an energy-domain concept.",
+            "hi": "यह ऊर्जा क्षेत्र की अवधारणा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A macroscopic crack",
+            "hi": "बड़ी वास्तविक दरार"
+          },
+          "reason": {
+            "en": "Band diagrams do not show spatial cracks.",
+            "hi": "बैंड आरेख स्थानिक दरार नहीं दिखाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "A missing nucleus",
+            "hi": "गायब नाभिक"
+          },
+          "reason": {
+            "en": "The gap concerns electron states, not lost nuclei.",
+            "hi": "अंतर इलेक्ट्रॉन अवस्थाओं का है, नाभिक गायब नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero in insulators",
+            "hi": "कुचालक में हमेशा शून्य"
+          },
+          "reason": {
+            "en": "Insulators generally have a large gap.",
+            "hi": "कुचालक में सामान्यतः बड़ा अंतराल।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "In an intrinsic semiconductor at equilibrium",
+        "hi": "साम्य में निज अर्धचालक में"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "ne=nh",
+            "hi": "ne=nh"
+          },
+          "reason": {
+            "en": "Thermal electron–hole generation creates equal concentrations.",
+            "hi": "तापीय इलेक्ट्रॉन-होल उत्पत्ति समान सांद्रताएँ बनाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "There are only electrons",
+            "hi": "केवल इलेक्ट्रॉन हैं"
+          },
+          "reason": {
+            "en": "Holes accompany intrinsic excitation.",
+            "hi": "निज उत्तेजन में होल भी बनते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "There are only protons carrying current",
+            "hi": "केवल प्रोटॉन धारा ले जाते हैं"
+          },
+          "reason": {
+            "en": "Lattice nuclei are not the mobile electronic carriers.",
+            "hi": "जालक नाभिक गतिशील इलेक्ट्रॉनिक वाहक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "ne=0 at every temperature",
+            "hi": "हर ताप पर ne=0"
+          },
+          "reason": {
+            "en": "Thermal excitation produces carriers at nonzero temperature.",
+            "hi": "अशून्य ताप पर तापीय उत्तेजन वाहक बनाता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "A hole is best described here as",
+        "hi": "यहाँ होल का उचित वर्णन है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "An unoccupied electron state behaving as an effective positive carrier",
+            "hi": "खाली इलेक्ट्रॉन अवस्था जो प्रभावी धन वाहक की तरह व्यवहार करे"
+          },
+          "reason": {
+            "en": "Neighbouring electron occupation changes make the hole appear to move.",
+            "hi": "पड़ोसी इलेक्ट्रॉन की अवस्था बदलने से होल चलता प्रतीत होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A free proton from the nucleus",
+            "hi": "नाभिक का मुक्त प्रोटॉन"
+          },
+          "reason": {
+            "en": "Hole motion does not involve moving lattice nuclei.",
+            "hi": "होल गति में जालक नाभिक नहीं चलते।"
+          }
+        },
+        {
+          "text": {
+            "en": "An electron with positive mass removed",
+            "hi": "धन द्रव्यमान वाला हटाया इलेक्ट्रॉन मात्र"
+          },
+          "reason": {
+            "en": "The useful description concerns a vacancy and its effective charge.",
+            "hi": "उपयोगी वर्णन रिक्ति और प्रभावी आवेश का है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A vacuum tunnel through silicon",
+            "hi": "सिलिकॉन की निर्वात सुरंग"
+          },
+          "reason": {
+            "en": "A hole is not a physical tunnel.",
+            "hi": "होल वास्तविक सुरंग नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Pentavalent doping of silicon usually produces",
+        "hi": "सिलिकॉन में 5-संयोजी अपमिश्रण सामान्यतः देता है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "n-type material with electrons as majority carriers",
+            "hi": "इलेक्ट्रॉन बहुसंख्यक वाला n-प्रकार पदार्थ"
+          },
+          "reason": {
+            "en": "The donor supplies an additional easily excited electron.",
+            "hi": "दाता अतिरिक्त आसानी से उत्तेजित इलेक्ट्रॉन देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "p-type with only holes",
+            "hi": "केवल होल वाला p-प्रकार"
+          },
+          "reason": {
+            "en": "Trivalent acceptors produce p-type; both carrier types still exist.",
+            "hi": "3-संयोजी ग्राही p-प्रकार देते; दोनों वाहक मौजूद रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A necessarily negative bulk charge",
+            "hi": "आवश्यकतः ऋणात्मक कुल आवेश"
+          },
+          "reason": {
+            "en": "Fixed donor ions balance the mobile electrons.",
+            "hi": "स्थिर दाता आयन गतिशील इलेक्ट्रॉन संतुलित करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "An insulator with no carriers",
+            "hi": "बिना वाहक कुचालक"
+          },
+          "reason": {
+            "en": "Doping ordinarily increases usable carrier density.",
+            "hi": "अपमिश्रण सामान्यतः उपयोगी वाहक संख्या बढ़ाता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "In p-type material the majority carriers are",
+        "hi": "p-प्रकार में बहुसंख्यक वाहक हैं"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Holes",
+            "hi": "होल"
+          },
+          "reason": {
+            "en": "Acceptor doping creates a high hole concentration.",
+            "hi": "ग्राही अपमिश्रण अधिक होल सांद्रता देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Positive donor nuclei moving freely",
+            "hi": "स्वतंत्र चलते धन दाता नाभिक"
+          },
+          "reason": {
+            "en": "Dopant ions are essentially fixed; acceptors are relevant in p-type.",
+            "hi": "अपमिश्रक आयन स्थिर; p-प्रकार में ग्राही प्रासंगिक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only electrons",
+            "hi": "केवल इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "Electrons are minority carriers here.",
+            "hi": "यहाँ इलेक्ट्रॉन अल्पसंख्यक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No charged carriers",
+            "hi": "कोई आवेशित वाहक नहीं"
+          },
+          "reason": {
+            "en": "Holes and electrons contribute to conduction.",
+            "hi": "होल और इलेक्ट्रॉन चालन में योगदान देते हैं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "The depletion region contains mainly",
+        "hi": "अवक्षय क्षेत्र में मुख्यतः हैं"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Fixed ionised dopants with depleted mobile majority carriers",
+            "hi": "गतिशील बहुसंख्यक वाहक कम और स्थिर आयनित अपमिश्रक"
+          },
+          "reason": {
+            "en": "Diffusion and recombination leave space charge.",
+            "hi": "विसरण-पुनर्संयोजन स्थानिक आवेश छोड़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No charges of any kind",
+            "hi": "किसी तरह का आवेश नहीं"
+          },
+          "reason": {
+            "en": "Fixed space charge remains.",
+            "hi": "स्थिर स्थानिक आवेश रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only freely moving protons",
+            "hi": "केवल स्वतंत्र प्रोटॉन"
+          },
+          "reason": {
+            "en": "Dopant ions are fixed in the lattice.",
+            "hi": "अपमिश्रक आयन जालक में स्थिर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A broken physical gap between crystals",
+            "hi": "क्रिस्टलों के बीच टूटा खाली अंतर"
+          },
+          "reason": {
+            "en": "A junction is within a semiconductor structure.",
+            "hi": "संधि अर्धचालक संरचना के भीतर है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Forward bias connects",
+        "hi": "अग्र अभिनति में जोड़ते हैं"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "p to positive,n to negative",
+            "hi": "p धनात्मक,n ऋणात्मक"
+          },
+          "reason": {
+            "en": "This lowers the junction barrier.",
+            "hi": "इससे संधि रोधिका घटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "p to negative,n to positive",
+            "hi": "p ऋणात्मक,n धनात्मक"
+          },
+          "reason": {
+            "en": "This is reverse bias.",
+            "hi": "यह पश्च अभिनति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both terminals to zero with no source",
+            "hi": "दोनों शून्य पर,स्रोत नहीं"
+          },
+          "reason": {
+            "en": "That does not impose forward bias.",
+            "hi": "इससे अग्र अभिनति नहीं लगती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only n to a nucleus",
+            "hi": "केवल n को नाभिक से"
+          },
+          "reason": {
+            "en": "This is not a circuit-bias connection.",
+            "hi": "यह परिपथ अभिनति का जोड़ नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Before breakdown, a real reverse-biased diode has",
+        "hi": "भंजन से पहले वास्तविक पश्च अभिनत डायोड में है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "A small minority-carrier current",
+            "hi": "छोटी अल्पसंख्यक वाहक धारा"
+          },
+          "reason": {
+            "en": "Minority carriers are swept across the junction.",
+            "hi": "अल्पसंख्यक वाहक संधि के पार जाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Exactly infinite current",
+            "hi": "ठीक अनंत धारा"
+          },
+          "reason": {
+            "en": "That is not the ordinary reverse region.",
+            "hi": "वह सामान्य पश्च क्षेत्र नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always exactly zero current",
+            "hi": "हमेशा ठीक शून्य धारा"
+          },
+          "reason": {
+            "en": "That is an idealisation, not real minority-carrier behaviour.",
+            "hi": "यह आदर्शीकरण है, वास्तविक अल्पसंख्यक व्यवहार नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A narrower depletion layer than forward bias",
+            "hi": "अग्र से संकरा अवक्षय क्षेत्र"
+          },
+          "reason": {
+            "en": "Reverse bias normally broadens depletion.",
+            "hi": "पश्च अभिनति सामान्यतः अवक्षय बढ़ाती है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "A 50 Hz source in an ideal full-wave rectifier gives pulse repetition",
+        "hi": "आदर्श पूर्णतरंग दिष्टकारी में 50 Hz स्रोत की पल्स आवृत्ति है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "100 Hz",
+            "hi": "100 Hz"
+          },
+          "reason": {
+            "en": "Two pulses occur per source cycle.",
+            "hi": "प्रति स्रोत चक्र 2 पल्स हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "50 Hz",
+            "hi": "50 Hz"
+          },
+          "reason": {
+            "en": "That is the half-wave repetition frequency.",
+            "hi": "वह अर्धतरंग पल्स आवृत्ति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "25 Hz",
+            "hi": "25 Hz"
+          },
+          "reason": {
+            "en": "Full-wave rectification doubles, not halves, pulse repetition.",
+            "hi": "पूर्णतरंग पल्स आवृत्ति दुगुनी करता है,आधी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 Hz with perfectly smooth DC",
+            "hi": "पूर्ण चिकनी DC के साथ 0 Hz"
+          },
+          "reason": {
+            "en": "Rectification alone leaves pulsation.",
+            "hi": "केवल दिष्टकरण में स्पंदन रहता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which statement about a silicon diode is correct?",
+        "hi": "सिलिकॉन डायोड के बारे में सही कथन है"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Its forward I–V curve is nonlinear",
+            "hi": "अग्र I–V वक्र अरैखिक है"
+          },
+          "reason": {
+            "en": "Current rises strongly over a characteristic forward-voltage range.",
+            "hi": "विशिष्ट अग्र वोल्टता क्षेत्र में धारा तेजी से बढ़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It obeys one constant resistance at every voltage",
+            "hi": "हर वोल्टता पर 1 स्थिर प्रतिरोध"
+          },
+          "reason": {
+            "en": "The nonlinear characteristic contradicts a single fixed resistance.",
+            "hi": "अरैखिक अभिलक्षण 1 स्थिर प्रतिरोध से नहीं मिलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.7 V is exact at all temperatures",
+            "hi": "हर ताप पर 0.7 V सटीक"
+          },
+          "reason": {
+            "en": "It is only an approximate operating-model value.",
+            "hi": "यह केवल सन्निकट कार्य मॉडल मान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It changes AC into regulated ripple-free DC alone",
+            "hi": "अकेला AC को नियंत्रित बिना रिपल DC बनाता है"
+          },
+          "reason": {
+            "en": "Filtering and regulation are separate from rectification.",
+            "hi": "फिल्टर और नियमन दिष्टकरण से अलग हैं।"
+          }
+        }
+      ]
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish intrinsic and extrinsic semiconductors.",
+        "hi": "निज और बाह्य अर्धचालक अलग करें।"
+      },
+      "answer": {
+        "en": "Intrinsic material has equal electron and hole concentrations from thermal generation; controlled doping makes extrinsic material with a majority carrier type.",
+        "hi": "निज में तापीय उत्पत्ति से इलेक्ट्रॉन-होल सांद्रताएँ समान; नियंत्रित अपमिश्रण से बहुसंख्यक वाहक वाला बाह्य पदार्थ बनता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are doped semiconductors ordinarily neutral?",
+        "hi": "अपमिश्रित अर्धचालक सामान्यतः उदासीन क्यों?"
+      },
+      "answer": {
+        "en": "Fixed ionised dopants balance the extra mobile carrier charge.",
+        "hi": "स्थिर आयनित अपमिश्रक अतिरिक्त गतिशील वाहक आवेश संतुलित करते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain depletion and the built-in field.",
+        "hi": "अवक्षय और अंतर्निर्मित क्षेत्र समझाएँ।"
+      },
+      "answer": {
+        "en": "Diffusion and recombination deplete mobile majority carriers, leaving positive donor ions on n and negative acceptor ions on p; the field points n→p.",
+        "hi": "विसरण-पुनर्संयोजन गतिशील बहुसंख्यक वाहक घटाते; n पर धन दाता,p पर ऋण ग्राही आयन बचते; क्षेत्र n→p है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare the two bias polarities.",
+        "hi": "दोनों अभिनति ध्रुवताएँ मिलाएँ।"
+      },
+      "answer": {
+        "en": "Forward:p positive,n negative,barrier reduced. Reverse:p negative,n positive,barrier raised.",
+        "hi": "अग्र:p धन,n ऋण,रोधिका घटती। पश्च:p ऋण,n धन,रोधिका बढ़ती।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is rectified output not perfectly steady DC?",
+        "hi": "दिष्टकृत निर्गत पूर्ण स्थिर DC क्यों नहीं?"
+      },
+      "answer": {
+        "en": "It retains periodic amplitude variation even though polarity is unidirectional; filtering and regulation are separate functions.",
+        "hi": "ध्रुवता एकदिशीय होने पर भी आवर्त आयाम परिवर्तन रहता; फिल्टर और नियमन अलग कार्य हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is wrong with treating a diode as an ordinary fixed resistor?",
+        "hi": "डायोड को साधारण स्थिर प्रतिरोध मानने में क्या गलत है?"
+      },
+      "answer": {
+        "en": "Its I–V curve is nonlinear and strongly polarity dependent, unlike a fixed ohmic resistance.",
+        "hi": "उसका I–V वक्र अरैखिक और ध्रुवता पर बहुत निर्भर है,स्थिर ओमीय प्रतिरोध जैसा नहीं।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Bands distinguish available electronic energies.",
+      "hi": "बैंड उपलब्ध इलेक्ट्रॉन ऊर्जा अवस्थाएँ बताते हैं।"
+    },
+    {
+      "en": "Intrinsic material has equal electron and hole concentrations.",
+      "hi": "निज में इलेक्ट्रॉन-होल सांद्रताएँ समान हैं।"
+    },
+    {
+      "en": "n-type and p-type remain ordinarily neutral.",
+      "hi": "n-प्रकार और p-प्रकार सामान्यतः उदासीन रहते हैं।"
+    },
+    {
+      "en": "Bias changes the junction barrier and current.",
+      "hi": "अभिनति संधि रोधिका और धारा बदलती है।"
+    },
+    {
+      "en": "Rectification gives unidirectional pulsating output.",
+      "hi": "दिष्टकरण एकदिशीय स्पंदित निर्गत देता है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not call holes protons, claim doped bulk is necessarily charged, or treat knee voltage as an exact universal switch. Rectification alone does not regulate or fully smooth DC.",
+    "hi": "होल को प्रोटॉन,अपमिश्रित पूरा पदार्थ आवश्यकतः आवेशित या घुटना वोल्टता को सटीक सार्वत्रिक स्विच न कहें। केवल दिष्टकरण DC को नियंत्रित या पूरा चिकना नहीं करता।"
+  },
+  "goal": {
+    "en": "Explain carrier populations,p–n junction bias and diode rectification using clear energy and circuit models.",
+    "hi": "स्पष्ट ऊर्जा और परिपथ मॉडल से वाहक जनसंख्या,p–n अभिनति तथा डायोड दिष्टकरण समझें।"
+  },
+  "conceptMap": "ऊर्जा बैंड और पदार्थों के वर्ग → निज वाहक और इलेक्ट्रॉन–होल युग्म → n-प्रकार अपमिश्रण और दाता परमाणु → p-प्रकार अपमिश्रण और ग्राही परमाणु → p–n संधि का निर्माण → अग्र और पश्च अभिनति → I–V अभिलक्षण और मॉडल → डायोड दिष्टकरण और निर्गत तरंगरूप",
+  "conceptMapEn": "Energy bands and material classes → Intrinsic carriers and electron–hole pairs → n-type doping and donor atoms → p-type doping and acceptor atoms → Formation of a p–n junction → Forward and reverse bias → I–V characteristics and models → Diode rectification and output waveforms",
+  "editionBasis": {
+    "en": "Original study explanations aligned with the current NCERT Class 12 Physics sequence and UP Board 2026–27. Use the prescribed textbook and school practicals alongside.",
+    "hi": "वर्तमान NCERT कक्षा 12 भौतिकी क्रम और यूपी बोर्ड 2026–27 के अनुरूप मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक तथा विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 14",
+      "url": "https://ncert.nic.in/textbook/pdf/leph206.pdf"
+    },
+    {
+      "title": "UPMSP Physics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    }
+  ]
+}

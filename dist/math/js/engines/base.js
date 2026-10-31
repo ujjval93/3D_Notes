@@ -1,0 +1,22 @@
+export const NS='http://www.w3.org/2000/svg';
+export const fmt=x=>Number.isFinite(x)?(+x.toFixed(3)).toString():'—';
+export function svgEl(tag,attrs={},text=''){let e=document.createElementNS(NS,tag);for(let[k,v]of Object.entries(attrs))e.setAttribute(k,v);if(text)e.textContent=text;return e}
+export class Base{
+ constructor(host,ctx){this.host=host;this.ctx=ctx;this.clean=[];this.labels=true;this.changed=false;this.step=0;this.points=[];this.svg=host.querySelector('svg');this.readout=host.querySelector('.readout');this.controls=host.querySelector('.controls');this.scale=31;this.cx=300;this.cy=195;this.drag=null;this.listen(this.svg,'pointerdown',e=>{let p=e.target.closest('[data-point]');if(p){this.drag=+p.dataset.point;this.svg.setPointerCapture(e.pointerId);e.preventDefault()}else this.background?.(this.world(e))});this.listen(this.svg,'pointermove',e=>{if(this.drag===null)return;this.move?.(this.drag,this.world(e));this.changed=true;this.draw();ctx.onChange?.()});this.listen(this.svg,'pointerup',()=>this.drag=null);this.listen(this.svg,'pointercancel',()=>this.drag=null);this.listen(this.svg,'keydown',e=>{let i=e.target.dataset.point;if(i===undefined||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();let p=[...this.points[+i]],d=e.shiftKey?.5:.1;p[0]+=(e.key==='ArrowRight'?d:e.key==='ArrowLeft'?-d:0);p[1]+=(e.key==='ArrowUp'?d:e.key==='ArrowDown'?-d:0);this.move?.(+i,p);this.changed=true;this.draw();this.svg.querySelector(`[data-point="${i}"]`)?.focus();ctx.onChange?.()})}
+ listen(el,type,fn,opts){el.addEventListener(type,fn,opts);this.clean.push(()=>el.removeEventListener(type,fn,opts))}
+ world(e){let p=this.svg.createSVGPoint();p.x=e.clientX;p.y=e.clientY;let q=p.matrixTransform(this.svg.getScreenCTM().inverse());return[(q.x-this.cx)/this.scale,(this.cy-q.y)/this.scale]}
+ xy(p){return[this.cx+p[0]*this.scale,this.cy-p[1]*this.scale]}
+ clear(grid=true){this.svg.replaceChildren();if(grid){for(let i=-9;i<=9;i++){this.line([i,-5],[i,5],'grid');this.line([-9,i],[9,i],'grid')}this.line([-9,0],[9,0],'axis');this.line([0,-5],[0,5],'axis');for(let i=-8;i<=8;i+=2)if(i){this.text([i,-.5],i);this.text([-.5,i],i)}this.text([8.4,-.6],this.ctx.t('X-axis','X-axis | X-अक्ष'));this.text([.3,5.3],this.ctx.t('Y-axis','Y-axis | Y-अक्ष'))}}
+ line(a,b,cls='shape',extra={}){let[x1,y1]=this.xy(a),[x2,y2]=this.xy(b);this.svg.append(svgEl('line',{x1,y1,x2,y2,class:cls,...extra}))}
+ path(points,cls='shape',closed=false,extra={}){let d=points.map((p,i)=>`${i?'L':'M'}${this.xy(p).join(',')}`).join(' ')+(closed?' Z':'');this.svg.append(svgEl('path',{d,class:cls,...extra}))}
+ circle(p,r,cls='shape',extra={}){let[cx,cy]=this.xy(p);this.svg.append(svgEl('circle',{cx,cy,r:r*this.scale,class:cls,...extra}))}
+ text(p,t,extra={}){let[x,y]=this.xy(p);this.svg.append(svgEl('text',{x,y,...extra},String(t)))}
+ point(p,i,label){this.circle(p,.19,'point',{'data-point':i,tabindex:0,role:'slider','aria-label':`${label}: ${fmt(p[0])}, ${fmt(p[1])}. Arrow keys | तीर कुंजियाँ`,'aria-valuetext':`${fmt(p[0])}, ${fmt(p[1])}`});if(this.labels)this.text([p[0]+.25,p[1]+.35],label)}
+ slider(key,en,hi,min,max,value,step=.1,unit=''){let l=document.createElement('label');l.innerHTML=`${this.ctx.label(en,hi)} <output>${value} ${unit}</output><input type="range" min="${min}" max="${max}" step="${step}" value="${value}" aria-label="${en} | ${hi}">`;this.controls.append(l);this[key]=value;this.listen(l.querySelector('input'),'input',e=>{this[key]=+e.target.value;l.querySelector('output').textContent=`${this[key]} ${unit}`;this.changed=true;this.update?.(key);this.draw();this.ctx.onChange?.()});return l}
+ select(key,options,value){let s=document.createElement('select');s.setAttribute('aria-label',options.label||key);for(let o of options.items){let e=document.createElement('option');e.value=o[0];e.textContent=this.ctx.dual(o[1],o[2]);s.append(e)}s.value=value;this.controls.append(s);this[key]=value;this.listen(s,'change',()=>{this[key]=s.value;this.changed=true;this.update?.(key);this.draw();this.ctx.onChange?.()});return s}
+ button(en,hi,fn){let b=document.createElement('button');b.innerHTML=this.ctx.label(en,hi);this.controls.append(b);this.listen(b,'click',()=>{fn();this.draw();this.changed=true;this.ctx.onChange?.()});return b}
+ output(s){this.readout.textContent=s}
+ setLabels(v){this.labels=v;this.draw()}
+ reset(){this.ctx.reload()}
+ pause(){} setSpeed(v){this.speed=v} destroy(){for(let f of this.clean)f();this.clean=[]}
+}

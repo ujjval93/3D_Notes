@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p})=>{let a=pendulum(p[0],t),x=Math.sin(a.angle)*1.4,y=-.8+Math.cos(a.angle)*1.4;g.line([0,-.8,0],[x,y,0],C.white,2);g.sphere(0,-.8,0,.045,C.blue);g.sphere(x,y,0,.14,C.gold);g.bars({title:b('Ideal mechanical energy','आदर्श यान्त्रिक ऊर्जा'),max:a.total,items:[{label:b('KE','गतिज'),value:a.ke,color:C.blue},{label:b('PE','स्थितिज'),value:a.pe,color:C.green},{label:b('Total','कुल'),value:a.total,color:C.gold}]});return[read('Mass','द्रव्यमान',1,'kg'),read('Length','लम्बाई',1.5,'m'),read('Total energy','कुल ऊर्जा',fmt(a.total),'J')];};

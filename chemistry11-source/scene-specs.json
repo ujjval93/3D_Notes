@@ -1,0 +1,803 @@
+[
+  {
+    "number": 1,
+    "id": "chemistry11-01",
+    "title": {
+      "en": "Some Basic Concepts of Chemistry",
+      "hi": "रसायन विज्ञान की कुछ मूल अवधारणाएँ"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "chem11-01-1",
+        "title": {
+          "en": "Mass, mole and particles",
+          "hi": "द्रव्यमान, मोल और कण"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 0
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Water mass",
+              "hi": "जल का द्रव्यमान"
+            },
+            "min": 9,
+            "max": 72,
+            "step": 9,
+            "initial": 18,
+            "unit": "g"
+          }
+        ],
+        "noteIndex": 3
+      },
+      {
+        "id": "chem11-01-2",
+        "title": {
+          "en": "Limiting reagent",
+          "hi": "सीमांत अभिकर्मक"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 1
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Hydrogen amount",
+              "hi": "हाइड्रोजन की मात्रा"
+            },
+            "min": 0,
+            "max": 6,
+            "step": 0.5,
+            "initial": 2,
+            "unit": "mol"
+          }
+        ],
+        "noteIndex": 7
+      },
+      {
+        "id": "chem11-01-3",
+        "title": {
+          "en": "Dilution",
+          "hi": "तनुकरण"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 2
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Solution volume",
+              "hi": "विलयन का आयतन"
+            },
+            "min": 50,
+            "max": 500,
+            "step": 50,
+            "initial": 100,
+            "unit": "mL"
+          }
+        ],
+        "noteIndex": 5
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "id": "chemistry11-02",
+    "title": {
+      "en": "Structure of Atom",
+      "hi": "परमाणु की संरचना"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "chem11-02-1",
+        "title": {
+          "en": "Hydrogen energy levels",
+          "hi": "हाइड्रोजन के ऊर्जा स्तर"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 3
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Principal quantum number",
+              "hi": "मुख्य क्वांटम संख्या"
+            },
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "initial": 2,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 3
+      },
+      {
+        "id": "chem11-02-2",
+        "title": {
+          "en": "Matter wavelength",
+          "hi": "द्रव्य तरंगदैर्घ्य"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 4
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Electron speed",
+              "hi": "इलेक्ट्रॉन की चाल"
+            },
+            "min": 0.5,
+            "max": 3,
+            "step": 0.5,
+            "initial": 1,
+            "unit": "×10^6 m/s"
+          }
+        ],
+        "noteIndex": 4
+      },
+      {
+        "id": "chem11-02-3",
+        "title": {
+          "en": "Orbital shapes",
+          "hi": "कक्षकों की आकृतियाँ"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 5
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Azimuthal quantum number",
+              "hi": "दिगंशी क्वांटम संख्या"
+            },
+            "min": 0,
+            "max": 2,
+            "step": 1,
+            "initial": 1,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 6
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "id": "chemistry11-03",
+    "title": {
+      "en": "Classification of Elements and Periodicity in Properties",
+      "hi": "तत्वों का वर्गीकरण एवं गुणधर्मों में आवर्तिता"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "chem11-03-1",
+        "title": {
+          "en": "Effective nuclear attraction",
+          "hi": "प्रभावी नाभिकीय आकर्षण"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 6
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Effective charge model",
+              "hi": "प्रभावी आवेश मॉडल"
+            },
+            "min": 1,
+            "max": 7,
+            "step": 1,
+            "initial": 3,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 3
+      },
+      {
+        "id": "chem11-03-2",
+        "title": {
+          "en": "Ionisation enthalpy exceptions",
+          "hi": "आयनन एन्थैल्पी के अपवाद"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 7
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Atomic number",
+              "hi": "परमाणु क्रमांक"
+            },
+            "min": 3,
+            "max": 10,
+            "step": 1,
+            "initial": 5,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 5
+      },
+      {
+        "id": "chem11-03-3",
+        "title": {
+          "en": "Isoelectronic comparison",
+          "hi": "समइलेक्ट्रॉनी तुलना"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 8
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Proton number",
+              "hi": "प्रोटॉन संख्या"
+            },
+            "min": 8,
+            "max": 13,
+            "step": 1,
+            "initial": 11,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "id": "chemistry11-04",
+    "title": {
+      "en": "Chemical Bonding and Molecular Structure",
+      "hi": "रासायनिक आबंधन तथा आण्विक संरचना"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "chem11-04-1",
+        "title": {
+          "en": "Molecular geometry",
+          "hi": "अणु की ज्यामिति"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 9
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Molecule index",
+              "hi": "अणु क्रम"
+            },
+            "min": 0,
+            "max": 3,
+            "step": 1,
+            "initial": 0,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 3
+      },
+      {
+        "id": "chem11-04-2",
+        "title": {
+          "en": "Bond dipole addition",
+          "hi": "आबंध द्विध्रुवों का योग"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 10
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Angle between bond dipoles",
+              "hi": "आबंध द्विध्रुवों के बीच कोण"
+            },
+            "min": 0,
+            "max": 180,
+            "step": 15,
+            "initial": 120,
+            "unit": "°"
+          }
+        ],
+        "noteIndex": 5
+      },
+      {
+        "id": "chem11-04-3",
+        "title": {
+          "en": "Bond order model",
+          "hi": "आबंध कोटि मॉडल"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 11
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Antibonding electrons",
+              "hi": "प्रतिआबंधन इलेक्ट्रॉन"
+            },
+            "min": 0,
+            "max": 4,
+            "step": 1,
+            "initial": 4,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 6
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "id": "chemistry11-05",
+    "title": {
+      "en": "Thermodynamics",
+      "hi": "ऊष्मागतिकी"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "chem11-05-1",
+        "title": {
+          "en": "Chemistry first law",
+          "hi": "रसायन का प्रथम नियम"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 12
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Volume increase",
+              "hi": "आयतन वृद्धि"
+            },
+            "min": 0,
+            "max": 5,
+            "step": 0.5,
+            "initial": 2,
+            "unit": "L"
+          }
+        ],
+        "noteIndex": 2
+      },
+      {
+        "id": "chem11-05-2",
+        "title": {
+          "en": "Hess law",
+          "hi": "हेस का नियम"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 13
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Second path step enthalpy",
+              "hi": "पथ के दूसरे चरण की एन्थैल्पी"
+            },
+            "min": -150,
+            "max": 50,
+            "step": 25,
+            "initial": -50,
+            "unit": "kJ/mol"
+          }
+        ],
+        "noteIndex": 4
+      },
+      {
+        "id": "chem11-05-3",
+        "title": {
+          "en": "Gibbs energy",
+          "hi": "गिब्स ऊर्जा"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 14
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Temperature",
+              "hi": "ताप"
+            },
+            "min": 200,
+            "max": 800,
+            "step": 50,
+            "initial": 400,
+            "unit": "K"
+          }
+        ],
+        "noteIndex": 7
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "id": "chemistry11-06",
+    "title": {
+      "en": "Equilibrium",
+      "hi": "साम्यावस्था"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "chem11-06-1",
+        "title": {
+          "en": "Reaction quotient",
+          "hi": "अभिक्रिया भागफल"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 15
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Product concentration",
+              "hi": "उत्पाद की सांद्रता"
+            },
+            "min": 0.1,
+            "max": 2,
+            "step": 0.1,
+            "initial": 0.5,
+            "unit": "mol/L"
+          }
+        ],
+        "noteIndex": 1
+      },
+      {
+        "id": "chem11-06-2",
+        "title": {
+          "en": "Weak acid equilibrium",
+          "hi": "दुर्बल अम्ल साम्य"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 16
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Acid concentration",
+              "hi": "अम्ल की सांद्रता"
+            },
+            "min": 0.01,
+            "max": 0.1,
+            "step": 0.01,
+            "initial": 0.05,
+            "unit": "mol/L"
+          }
+        ],
+        "noteIndex": 5
+      },
+      {
+        "id": "chem11-06-3",
+        "title": {
+          "en": "Common ion effect",
+          "hi": "सम आयन प्रभाव"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 17
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Added acetate concentration",
+              "hi": "जोड़े एसीटेट की सांद्रता"
+            },
+            "min": 0,
+            "max": 0.1,
+            "step": 0.01,
+            "initial": 0,
+            "unit": "mol/L"
+          }
+        ],
+        "noteIndex": 6
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "id": "chemistry11-07",
+    "title": {
+      "en": "Redox Reactions",
+      "hi": "अपचयोपचय अभिक्रियाएँ"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "chem11-07-1",
+        "title": {
+          "en": "Oxidation number balance",
+          "hi": "ऑक्सीकरण संख्या संतुलन"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 18
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Oxygen atoms in ion",
+              "hi": "आयन में ऑक्सीजन परमाणु"
+            },
+            "min": 2,
+            "max": 4,
+            "step": 1,
+            "initial": 4,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 1
+      },
+      {
+        "id": "chem11-07-2",
+        "title": {
+          "en": "Electron transfer",
+          "hi": "इलेक्ट्रॉन स्थानांतरण"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 19
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Zinc amount reacted",
+              "hi": "अभिक्रिया किया जिंक"
+            },
+            "min": 0,
+            "max": 3,
+            "step": 0.5,
+            "initial": 1,
+            "unit": "mol"
+          }
+        ],
+        "noteIndex": 7
+      },
+      {
+        "id": "chem11-07-3",
+        "title": {
+          "en": "Electron balance",
+          "hi": "इलेक्ट्रॉन संतुलन"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 20
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Fe2+ coefficient",
+              "hi": "Fe2+ का गुणांक"
+            },
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "initial": 5,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 5
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "id": "chemistry11-08",
+    "title": {
+      "en": "Organic Chemistry – Some Basic Principles and Techniques",
+      "hi": "कार्बनिक रसायन: कुछ आधारभूत सिद्धांत तथा तकनीकें"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "chem11-08-1",
+        "title": {
+          "en": "Hybridisation and bonding",
+          "hi": "संकरण और आबंधन"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 21
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Carbon hybridisation index",
+              "hi": "कार्बन संकरण क्रम"
+            },
+            "min": 0,
+            "max": 2,
+            "step": 1,
+            "initial": 0,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "chem11-08-2",
+        "title": {
+          "en": "Inductive effect model",
+          "hi": "प्रेरणिक प्रभाव मॉडल"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 22
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Sigma bonds from substituent",
+              "hi": "प्रतिस्थापी से सिग्मा आबंध"
+            },
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "initial": 2,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 4
+      },
+      {
+        "id": "chem11-08-3",
+        "title": {
+          "en": "Chromatography",
+          "hi": "वर्णलेखिकी"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 23
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Solute travel distance",
+              "hi": "विलेय के चलने की दूरी"
+            },
+            "min": 1,
+            "max": 8,
+            "step": 1,
+            "initial": 4,
+            "unit": "cm"
+          }
+        ],
+        "noteIndex": 6
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "id": "chemistry11-09",
+    "title": {
+      "en": "Hydrocarbons",
+      "hi": "हाइड्रोकार्बन"
+    },
+    "unit": {
+      "en": "Chemistry",
+      "hi": "रसायन विज्ञान"
+    },
+    "scenes": [
+      {
+        "id": "chem11-09-1",
+        "title": {
+          "en": "Homologous series",
+          "hi": "समजातीय श्रेणी"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 24
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Carbon atom count",
+              "hi": "कार्बन परमाणुओं की संख्या"
+            },
+            "min": 2,
+            "max": 8,
+            "step": 1,
+            "initial": 3,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 0
+      },
+      {
+        "id": "chem11-09-2",
+        "title": {
+          "en": "Ethane conformation",
+          "hi": "एथेन की संरूपणा"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 25
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Dihedral angle",
+              "hi": "द्वितल कोण"
+            },
+            "min": 0,
+            "max": 360,
+            "step": 30,
+            "initial": 60,
+            "unit": "°"
+          }
+        ],
+        "noteIndex": 3
+      },
+      {
+        "id": "chem11-09-3",
+        "title": {
+          "en": "Addition versus substitution",
+          "hi": "संकलन और प्रतिस्थापन"
+        },
+        "kind": "eleven-chemistry",
+        "parameters": {
+          "mode": 26
+        },
+        "controls": [
+          {
+            "label": {
+              "en": "Reaction index",
+              "hi": "अभिक्रिया क्रम"
+            },
+            "min": 0,
+            "max": 2,
+            "step": 1,
+            "initial": 0,
+            "unit": ""
+          }
+        ],
+        "noteIndex": 4
+      }
+    ]
+  }
+]

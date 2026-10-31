@@ -1,0 +1,892 @@
+{
+  "title": {
+    "en": "Three Dimensional Geometry",
+    "hi": "त्रिविमीय ज्यामिति"
+  },
+  "goal": {
+    "en": "Represent lines in space and calculate their angles, intersections and shortest separation.",
+    "hi": "अंतरिक्ष की रेखाएँ लिखें तथा उनके कोण, प्रतिच्छेद और न्यूनतम दूरी निकालें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Position and direction",
+        "hi": "स्थिति और दिशा"
+      },
+      "body": {
+        "en": "A point fixes a position, whereas a nonzero vector fixes a directed orientation. In rectangular coordinates P=(x,y,z) has position vector xi+yj+zk. For distinct A and B, AB=B−A is a direction vector of their line. Translating both endpoints by the same vector changes the position but leaves B−A unchanged. A single point cannot determine a line: infinitely many lines pass through it. A point and a nonzero direction determine one line. Coordinate lengths use the same chosen unit along all three mutually perpendicular axes. A drawing on a screen is a projection, so angles and lengths must be calculated rather than estimated visually.",
+        "hi": "बिंदु (Point) स्थान बताता है, जबकि अशून्य सदिश (Nonzero vector) दिशा बताता है। आयताकार निर्देशांक में P=(x,y,z) का स्थिति सदिश (Position vector) xî+yĵ+zk̂ होता है। यदि A और B भिन्न बिंदु हों, तो AB=B−A उनकी रेखा का दिशा सदिश (Direction vector) है। उदाहरण के लिए A=(1,2,0), B=(3,1,4) होने पर AB=(2,−1,4) मिलेगा। घटाव हमेशा अंतिम बिंदु से प्रारंभिक बिंदु घटाकर करें। दोनों बिंदुओं में समान सदिश जोड़ने पर रेखा का स्थान बदलता है, पर उनकी आपसी दिशा नहीं बदलती। केवल 1 बिंदु से रेखा निश्चित नहीं होती; उससे अनंत रेखाएँ गुजर सकती हैं। 1 बिंदु और 1 अशून्य दिशा मिलकर अद्वितीय रेखा तय करते हैं। निर्देशांक अक्ष परस्पर लंबवत माने जाते हैं और तीनों पर दूरी की इकाई समान रखी जाती है। स्क्रीन का चित्र द्विविमीय प्रक्षेप है; उसमें दिखी लंबाई वास्तविक स्थानिक लंबाई नहीं मानी जा सकती। इसलिए किसी दिशा को केवल देखकर समांतर या लंबवत न घोषित करें; घटकों से गणना करें। शून्य सदिश दिशा नहीं देता, क्योंकि उसका परिमाण 0 है और उससे इकाई सदिश नहीं बनाया जा सकता।"
+      },
+      "formula": "AB=(x2−x1,y2−y1,z2−z1); |AB|=√[(Δx)²+(Δy)²+(Δz)²]",
+      "question": {
+        "en": "Find a direction vector from A=(0,1,2) to B=(2,4,6).",
+        "hi": "A=(0,1,2) से B=(2,4,6) की दिशा निकालें।"
+      },
+      "answer": {
+        "en": "(2,3,4).",
+        "hi": "(2,3,4)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Direction ratios and direction cosines",
+        "hi": "दिक् अनुपात और दिक् कोसाइन"
+      },
+      "body": {
+        "en": "Any nonzero scalar multiple of a direction vector gives direction ratios of the same unoriented line. Direction cosines are cosines of the angles made by a directed line with the positive coordinate axes. Normalize (a,b,c) by its magnitude to obtain (l,m,n). Their squares sum to one. The opposite orientation negates all three cosines. Direction ratios need not satisfy a²+b²+c²=1. For direction ratios (2,−1,2), the norm is 3 and one choice of direction cosines is (2/3,−1/3,2/3). Keep signs: they indicate the angles being acute or obtuse. A coordinate axis has one cosine equal to ±1 and the other two equal to zero.",
+        "hi": "दिक् अनुपात (Direction ratios) किसी दिशा के अनुपाती 3 संख्याएँ हैं। यदि (a,b,c) अशून्य दिशा है, तो k≠0 के लिए (ka,kb,kc) भी उसी रेखा के दिक् अनुपात हैं। दिक् कोसाइन (Direction cosines) धनात्मक X, Y, Z अक्षों से निर्देशित रेखा के बने कोणों के कोसाइन हैं। इन्हें l, m, n लिखते हैं। दिशा सदिश को उसके परिमाण से भाग देकर इकाई सदिश प्राप्त होता है; उसके घटक ही दिक् कोसाइन देते हैं। इसीलिए l²+m²+n²=1 होता है। यह शर्त सामान्य दिक् अनुपातों पर लागू नहीं करनी चाहिए। (2,−1,2) का परिमाण 3 है, इसलिए दिक् कोसाइन (2/3,−1/3,2/3) होंगे। दिशा उलटने पर सभी चिह्न साथ बदलते हैं। किसी 1 चिह्न को मनमाने ढंग से बदलने पर सामान्यतः दूसरी रेखा मिलती है। ऋणात्मक कोसाइन संबंधित धनात्मक अक्ष से अधिककोण बताता है। X अक्ष के अनुदिश इकाई सदिश के दिक् कोसाइन (1,0,0) हैं। दिक् अनुपात दिए हों तो पहले देखें कि तीनों 0 नहीं हैं, फिर वर्गों का योग और वर्गमूल सावधानी से निकालें। अनुपात और सामान्यीकृत मान का अंतर प्रश्न की भाषा से पहचानें।"
+      },
+      "formula": "(l,m,n)=(a,b,c)/√(a²+b²+c²); l²+m²+n²=1",
+      "question": {
+        "en": "Are (1,1,1) direction cosines?",
+        "hi": "क्या (1,1,1) दिक् कोसाइन हैं?"
+      },
+      "answer": {
+        "en": "No; their squared sum is 3. The normalized values are all 1/√3.",
+        "hi": "नहीं; वर्गों का योग 3 है। सामान्यीकृत मान सभी 1/√3 हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Vector equation of a line",
+        "hi": "रेखा का सदिश समीकरण"
+      },
+      "body": {
+        "en": "For a fixed point with position vector a and a fixed nonzero direction b, every point of the line is r=a+λb, where λ ranges over all real numbers. The parameter is a scalar, not a vector coordinate. At λ=0 the point is a; at λ=1 it is a+b. Two distinct points a and c give r=a+λ(c−a). All real parameters describe the whole line; restricting 0≤λ≤1 gives the segment joining the two points. To test a point, one common λ must satisfy all three component equations. Equivalent equations can use a different base point or a rescaled direction.",
+        "hi": "रेखा का सदिश समीकरण (Vector equation) r=a+λb है। यहाँ a रेखा के किसी निश्चित बिंदु का स्थिति सदिश, b अशून्य दिशा सदिश और λ वास्तविक अदिश प्राचल (Parameter) है। λ बदलने पर बिंदु दिशा b में आगे या पीछे चलता है। λ=0 पर r=a तथा λ=1 पर r=a+b मिलता है। 2 बिंदु A और C दिए हों तो b=C−A लेकर समीकरण बनाया जा सकता है। λ के सभी वास्तविक मान पूरी अनंत रेखा देते हैं। केवल 0≤λ≤1 लेने पर A और C के बीच का रेखाखंड मिलता है; यह अलग प्रतिबंध है। उदाहरण r=(1,2,3)+λ(2,−1,1) में λ=2 पर बिंदु (5,0,5) है। किसी दिए बिंदु की सदस्यता जाँचने के लिए तीनों घटक समीकरणों में समान λ मिलना चाहिए। प्रत्येक निर्देशांक के लिए अलग प्राचल चुनना गलत है। एक ही रेखा के कई सही समीकरण हो सकते हैं, क्योंकि आधार बिंदु बदल सकते हैं और दिशा सदिश को अशून्य संख्या से गुणा कर सकते हैं। समान रेखाएँ पहचानते समय दिशा की अनुपातिकता के बाद आधार बिंदु की सदस्यता भी जाँचें। केवल समांतर दिशा होने से रेखाएँ एक नहीं हो जातीं।"
+      },
+      "formula": "r=a+λb, λ∈R, b≠0; x=x0+λa, y=y0+λb, z=z0+λc",
+      "question": {
+        "en": "Does (5,0,5) lie on r=(1,2,3)+λ(2,−1,1)?",
+        "hi": "क्या (5,0,5), r=(1,2,3)+λ(2,−1,1) पर है?"
+      },
+      "answer": {
+        "en": "Yes, λ=2 satisfies all components.",
+        "hi": "हाँ; λ=2 तीनों घटक संतुष्ट करता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Cartesian form and zero components",
+        "hi": "कार्तीय रूप और शून्य घटक"
+      },
+      "body": {
+        "en": "Eliminating the parameter from the component equations gives (x−x0)/a=(y−y0)/b=(z−z0)/c when all denominators are nonzero. A zero direction component means the corresponding coordinate is constant; division by zero is never permitted. For direction (2,0,−1), write (x−1)/2=(z−3)/(−1) with y=2. The symmetric form may look like three ratios, but it describes two independent equalities and a line, not a plane. If the line passes through A and B, use coordinate differences as denominators. Preserve denominator signs; rewriting (z−3)/(−1) as 3−z is legitimate. Convert back to parametric form whenever a ratio is confusing.",
+        "hi": "सदिश समीकरण को घटकों में लिखने पर x=x0+λa, y=y0+λb, z=z0+λc मिलता है। जब a,b,c सभी अशून्य हों, तो λ हटाकर सममित कार्तीय रूप (Cartesian form) लिखते हैं: (x−x0)/a=(y−y0)/b=(z−z0)/c। हरों में दिशा अनुपात आते हैं, बिंदु के निर्देशांक नहीं। यदि कोई दिशा घटक 0 हो, तो उस घटक का निर्देशांक स्थिर रहता है। उदाहरण के लिए (1,2,3) से गुजरती दिशा (2,0,−1) की रेखा में y=2 है और बाकी संबंध (x−1)/2=(z−3)/(−1) है। इसे y−2 को 0 से भाग देकर लिखना सही नहीं है। 2 बिंदुओं के लिए हर संबंधित निर्देशांकों का अंतर होगा। ऋणात्मक हर का चिह्न बचाएँ; दिशा (2,0,−1) में x बढ़ने पर z घटता है। सममित समीकरण 2 स्वतंत्र बराबरियाँ देता है और अंतरिक्ष में रेखा बताता है। कठिन अनुपात मिले तो उसे फिर λ के बराबर रखकर घटक समीकरण बना लें। इससे बिंदु निकालना, सदस्यता देखना और दूसरी रेखा से प्रतिच्छेद जाँचना आसान होता है। अंतिम रूप में स्थिर निर्देशांक की शर्त लिखना न भूलें, वरना पूरी रेखा का वर्णन अधूरा रहेगा।"
+      },
+      "formula": "(x−x0)/a=(y−y0)/b=(z−z0)/c; if b=0, write y=y0 separately",
+      "question": {
+        "en": "Write the line through (1,2,3) with direction (0,1,2).",
+        "hi": "(1,2,3) से दिशा (0,1,2) वाली रेखा लिखें।"
+      },
+      "answer": {
+        "en": "x=1; (y−2)=(z−3)/2.",
+        "hi": "x=1; (y−2)=(z−3)/2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Angle between two lines",
+        "hi": "2 रेखाओं के बीच कोण"
+      },
+      "body": {
+        "en": "The angle between lines is calculated from their direction vectors, irrespective of their positions. The scalar product gives cosθ=(b1·b2)/(|b1||b2|) for directed vectors. The conventional smaller angle between unoriented lines uses the absolute value of the numerator, giving 0≤θ≤π/2. Perpendicular directions have zero dot product. Parallel directions have a zero cross product. In space, perpendicular direction vectors need not imply intersecting lines: the lines may be skew. Check intersection separately if the question asks for perpendicular intersecting lines. Avoid using a 2D slope formula for a general spatial line. All three components contribute to the dot product and norms.",
+        "hi": "2 रेखाओं के बीच कोण (Angle between lines) उनकी दिशाओं से निकलता है, आधार बिंदुओं से नहीं। दिशा सदिश b1 और b2 का अदिश गुणनफल b1·b2 लेकर परिमाणों के गुणनफल से भाग देते हैं। निर्देशित सदिशों का कोण 0 से π तक हो सकता है। लेकिन अनिर्देशित रेखाओं का छोटा कोण पूछा हो तो अंश का निरपेक्ष मान लेते हैं; तब कोण 0 से π/2 तक मिलता है। उदाहरण दिशाएँ (1,0,0) और (1,1,0) हों तो cosθ=1/√2, इसलिए θ=45° है। लंबवत दिशाओं का अदिश गुणनफल 0 होता है। समांतर दिशाओं में एक सदिश दूसरे का अशून्य अदिश गुणज होता है और उनका सदिश गुणनफल 0 होता है। अंतरिक्ष में 90° दिशाएँ होने पर भी रेखाएँ अलग स्तरों पर रह सकती हैं और न मिलें। इसलिए दिशा की लंबवतता तथा वास्तविक प्रतिच्छेद अलग जाँच हैं। त्रिविमीय प्रश्न में द्विविमीय ढाल सूत्र सीधे न लगाएँ। तीनों घटक जोड़ने और दोनों सदिशों के पूरे परिमाण लेने पर ध्यान दें। सूत्र में परिमाण छोड़ देने से कोसाइन का मान 1 से अधिक आ सकता है; यह गणना त्रुटि का उपयोगी संकेत है।"
+      },
+      "formula": "cosθ=|b1·b2|/(|b1||b2|) for the smaller line angle",
+      "question": {
+        "en": "Find the smaller angle for directions (1,0,0) and (0,0,2).",
+        "hi": "दिशाओं (1,0,0), (0,0,2) का छोटा कोण निकालें।"
+      },
+      "answer": {
+        "en": "90°, because the dot product is 0.",
+        "hi": "90°, क्योंकि अदिश गुणनफल 0 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Intersection, parallelism and skew lines",
+        "hi": "प्रतिच्छेद, समांतर और विषमतलीय रेखाएँ"
+      },
+      "body": {
+        "en": "Distinct lines in space may intersect, be parallel, or be skew. Parallel lines lie in a common plane; skew lines are nonparallel and do not intersect. To find an intersection, equate a1+λb1=a2+μb2. Solve two component equations for λ and μ, then test the third. Failure of the third equation proves that the apparent intersection in the projection is not a spatial intersection. For nonparallel directions, the scalar triple product (a2−a1)·(b1×b2)=0 is the coplanarity criterion. A nonzero result gives skew lines. Coincident lines require proportional directions and a base-point displacement parallel to them. Treat parallel directions separately because the cross product vanishes.",
+        "hi": "अंतरिक्ष की 2 भिन्न रेखाएँ प्रतिच्छेदी (Intersecting), समांतर (Parallel) या विषमतलीय (Skew) हो सकती हैं। समांतर रेखाएँ एक समतल में रहती हैं। विषमतलीय रेखाएँ न समांतर होती हैं, न मिलती हैं। प्रतिच्छेद खोजने के लिए a1+λb1=a2+μb2 लिखें। दोनों रेखाओं के प्राचल अलग λ और μ रखें, क्योंकि उनके आधार बिंदु तथा दिशा का पैमाना अलग हो सकता है। पहले 2 घटक समीकरण हल कर प्राचल निकालें; फिर तीसरे को अवश्य जाँचें। तीसरा संतुष्ट न हो तो स्क्रीन में रेखाएँ कटती दिखने पर भी अंतरिक्ष में नहीं मिलतीं। गैरसमांतर दिशाओं के लिए (a2−a1)·(b1×b2)=0 समतलीयता की शर्त है। यह 0 न हो तो रेखाएँ विषमतलीय हैं। यदि दिशा सदिश अनुपाती हों, तो पहले समांतरता तय करें। फिर आधार बिंदुओं का अंतर भी उसी दिशा में हो तो दोनों रेखाएँ संपाती हैं, अन्यथा भिन्न समांतर हैं। केवल 2 समीकरण हल करके अंतिम उत्तर देना सामान्य गलती है। 3 अज्ञात निर्देशांकों के लिए तीनों घटकों की संगति पूरे स्थानिक संबंध को प्रमाणित करती है। ऐसे प्रश्नों में चित्र दिशा समझाता है, पर निर्णायक प्रमाण समीकरण से मिलता है।"
+      },
+      "formula": "a1+λb1=a2+μb2; nonparallel coplanar ⇔ (a2−a1)·(b1×b2)=0",
+      "question": {
+        "en": "Can nonparallel spatial lines fail to meet?",
+        "hi": "क्या गैरसमांतर स्थानिक रेखाएँ न मिल सकती हैं?"
+      },
+      "answer": {
+        "en": "Yes; skew lines are nonparallel and nonintersecting.",
+        "hi": "हाँ; विषमतलीय रेखाएँ गैरसमांतर और अप्रतिच्छेदी हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Shortest distance between skew lines",
+        "hi": "विषमतलीय रेखाओं की न्यूनतम दूरी"
+      },
+      "body": {
+        "en": "For nonparallel lines, n=b1×b2 is perpendicular to both directions. The shortest joining segment is along their common perpendicular. Its length equals the absolute projection of the base-point displacement onto n: d=|(a2−a1)·n|/|n|. Choosing other base points on either line leaves the answer unchanged because their additional direction terms have zero dot product with n. A zero numerator gives intersecting lines when the directions are nonparallel. The formula cannot be used when the directions are parallel because both numerator and denominator become zero. The distance is a nonnegative length, so the absolute value is essential. Matching units and a nonzero cross product should be checked before substitution.",
+        "hi": "गैरसमांतर रेखाओं की दिशाओं b1 और b2 के सदिश गुणनफल n=b1×b2 की दिशा दोनों रेखाओं के लंबवत होती है। विषमतलीय रेखाओं के बीच सबसे छोटा जोड़ने वाला रेखाखंड इसी उभयनिष्ठ लंब (Common perpendicular) पर होता है। आधार बिंदुओं का अंतर a2−a1 लेकर n पर उसका अदिश प्रक्षेप निकालने से दूरी मिलती है। सूत्र d=|(a2−a1)·n|/|n| है। अंश में निरपेक्ष मान आवश्यक है, क्योंकि दूरी ऋणात्मक नहीं हो सकती। आधार बिंदु बदलने से उत्तर नहीं बदलता; जुड़ी अतिरिक्त दिशाएँ n के लंबवत हैं और उनका अदिश गुणनफल 0 है। उदाहरण X अक्ष तथा z=3 स्तर पर Y दिशा वाली रेखा का उभयनिष्ठ लंब Z दिशा में है और दूरी 3 इकाई है। गैरसमांतर रेखाओं के लिए अंश 0 आए तो वे मिलती हैं और न्यूनतम दूरी 0 है। यह सूत्र समांतर रेखाओं पर सीधे नहीं लगाएँ, क्योंकि n=0 होकर हर 0 होगा। गणना का क्रम रखें: पहले सदिश गुणनफल, फिर विस्थापन से अदिश गुणनफल, उसके बाद निरपेक्ष मान तथा परिमाण से भाग। इकाइयों की जाँच में अंतिम उत्तर लंबाई की इकाई में होना चाहिए।"
+      },
+      "formula": "d=|(a2−a1)·(b1×b2)|/|b1×b2|, b1×b2≠0",
+      "question": {
+        "en": "Find the separation of the x-axis and r=(0,0,3)+μ(0,1,0).",
+        "hi": "X अक्ष और r=(0,0,3)+μ(0,1,0) की दूरी?"
+      },
+      "answer": {
+        "en": "3 units.",
+        "hi": "3 इकाई।"
+      }
+    },
+    {
+      "title": {
+        "en": "Parallel lines and a reliable solution method",
+        "hi": "समांतर रेखाएँ और हल की जाँच"
+      },
+      "body": {
+        "en": "For parallel lines with common direction b, distance is |(a2−a1)×b|/|b|. It is the component of the base-point displacement perpendicular to the common direction. If this is zero, the lines coincide. A point-to-line distance uses the same expression with the point replacing a2. First classify the direction vectors, then choose the distance formula. For intersection problems retain separate parameters and verify all coordinates. In a final answer state the equation, angle or distance actually requested, along with length units when applicable. The chapter studies lines in space; a plane equation is not needed for these methods. A good revision table separates points, directions, dot products and cross products rather than memorizing formulas without conditions.",
+        "hi": "समांतर रेखाओं में b1×b2=0 होता है, इसलिए विषमतलीय दूरी का सूत्र अनुपयुक्त है। समान दिशा b लें और आधार बिंदुओं का अंतर d0=a2−a1 बनाएँ। तब दूरी |d0×b|/|b| होगी। यह विस्थापन का दिशा b के लंबवत भाग है। उदाहरण X दिशा की 2 रेखाएँ y=0,z=0 और y=3,z=4 पर हों तो दूरी √(3²+4²)=5 इकाई है। यदि विस्थापन भी b के अनुदिश हो तो दूरी 0 होगी और रेखाएँ संपाती हैं। बिंदु से रेखा की दूरी भी इसी सूत्र से मिलती है; दूसरे आधार बिंदु की जगह दिया बिंदु लें। पूरा हल शुरू करते समय पहले अशून्य दिशा, फिर समांतरता, फिर संगति या दूरी जाँचें। कोण के लिए अदिश गुणनफल और उभयनिष्ठ लंब के लिए सदिश गुणनफल उपयोगी हैं; दोनों संक्रियाओं को न मिलाएँ। उत्तर में माँगी वस्तु स्पष्ट लिखें: रेखा का समीकरण, छोटा कोण या लंबाई। लंबाई की इकाई दिए प्रश्न के अनुरूप लगाएँ। इस अध्याय का निर्धारित अध्ययन स्थानिक रेखाओं का है; इन विधियों के लिए समतल का समीकरण जोड़ना जरूरी नहीं। पुनरावृत्ति में हर सूत्र के साथ उसके लागू होने की शर्त भी लिखें।"
+      },
+      "formula": "dparallel=|(a2−a1)×b|/|b|; dpoint,line=|(P−a)×b|/|b|",
+      "question": {
+        "en": "Find the distance between r=λ(1,0,0) and r=(0,3,4)+μ(1,0,0).",
+        "hi": "r=λ(1,0,0), r=(0,3,4)+μ(1,0,0) की दूरी?"
+      },
+      "answer": {
+        "en": "5 units.",
+        "hi": "5 इकाई।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find direction cosines for the direction (2,−1,2).",
+        "hi": "दिशा (2,−1,2) के दिक् कोसाइन निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given: direction ratios are 2,−1,2. Find a unit direction.",
+          "hi": "दिया: दिक् अनुपात 2,−1,2; इकाई दिशा ज्ञात करनी है।"
+        },
+        {
+          "en": "Magnitude=√(4+1+4)=3. Divide every component by 3.",
+          "hi": "परिमाण=√(4+1+4)=3। प्रत्येक घटक को 3 से भाग दें।"
+        },
+        {
+          "en": "Check: 4/9+1/9+4/9=1.",
+          "hi": "जाँच: 4/9+1/9+4/9=1।"
+        }
+      ],
+      "answer": {
+        "en": "One orientation: (2/3,−1/3,2/3); the opposite negates all three.",
+        "hi": "1 अभिविन्यास (2/3,−1/3,2/3); विपरीत में तीनों चिह्न उलटेंगे।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Write the line through A=(1,2,3), B=(3,2,2).",
+        "hi": "A=(1,2,3), B=(3,2,2) से रेखा लिखें।"
+      },
+      "steps": [
+        {
+          "en": "Given: two distinct points. Required: vector and Cartesian equations.",
+          "hi": "दिया: 2 भिन्न बिंदु; सदिश और कार्तीय समीकरण चाहिए।"
+        },
+        {
+          "en": "B−A=(2,0,−1), so r=(1,2,3)+λ(2,0,−1).",
+          "hi": "B−A=(2,0,−1), इसलिए r=(1,2,3)+λ(2,0,−1)।"
+        },
+        {
+          "en": "The zero y-direction gives y=2 separately.",
+          "hi": "Y दिशा 0 है, इसलिए y=2 अलग लिखें।"
+        }
+      ],
+      "answer": {
+        "en": "r=(1,2,3)+λ(2,0,−1); (x−1)/2=(z−3)/(−1), y=2.",
+        "hi": "r=(1,2,3)+λ(2,0,−1); (x−1)/2=(z−3)/(−1), y=2।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the smaller angle between directions (1,1,0) and (1,0,1).",
+        "hi": "दिशाओं (1,1,0), (1,0,1) का छोटा कोण निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given directions; no base points are required for their angle.",
+          "hi": "दिशाएँ दी हैं; कोण के लिए आधार बिंदु जरूरी नहीं।"
+        },
+        {
+          "en": "Dot product=1; both magnitudes are √2.",
+          "hi": "अदिश गुणनफल=1; दोनों परिमाण √2 हैं।"
+        },
+        {
+          "en": "cosθ=|1|/(√2×√2)=1/2.",
+          "hi": "cosθ=|1|/(√2×√2)=1/2।"
+        }
+      ],
+      "answer": {
+        "en": "θ=60°.",
+        "hi": "θ=60°।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the distance between r=λ(1,0,0) and r=(0,0,3)+μ(0,1,0).",
+        "hi": "r=λ(1,0,0), r=(0,0,3)+μ(0,1,0) की दूरी निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given b1=(1,0,0), b2=(0,1,0), displacement=(0,0,3).",
+          "hi": "दिया b1=(1,0,0), b2=(0,1,0), विस्थापन=(0,0,3)।"
+        },
+        {
+          "en": "n=b1×b2=(0,0,1), with |n|=1.",
+          "hi": "n=b1×b2=(0,0,1), |n|=1।"
+        },
+        {
+          "en": "d=|(0,0,3)·(0,0,1)|/1=3.",
+          "hi": "d=|(0,0,3)·(0,0,1)|/1=3।"
+        }
+      ],
+      "answer": {
+        "en": "3 length units; the lines are skew.",
+        "hi": "3 लंबाई इकाई; रेखाएँ विषमतलीय हैं।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Decide whether r=(1,0,0)+λ(1,1,1) and r=(0,1,0)+μ(1,−1,1) intersect.",
+        "hi": "r=(1,0,0)+λ(1,1,1), r=(0,1,0)+μ(1,−1,1) के मिलने की जाँच करें।"
+      },
+      "steps": [
+        {
+          "en": "Equating x and y: 1+λ=μ and λ=1−μ.",
+          "hi": "X,Y बराबर करें: 1+λ=μ तथा λ=1−μ।"
+        },
+        {
+          "en": "These give λ=0 and μ=1. The z-coordinates then become 0 and 1.",
+          "hi": "इनसे λ=0, μ=1। तब Z निर्देशांक 0 और 1 हैं।"
+        },
+        {
+          "en": "The third equation fails, and directions are not proportional. Hence they are skew.",
+          "hi": "तीसरा समीकरण असंतुष्ट है और दिशाएँ अनुपाती नहीं; इसलिए विषमतलीय हैं।"
+        },
+        {
+          "en": "n=(1,1,1)×(1,−1,1)=(2,0,−2); d=|(-1,1,0)·n|/√8=1/√2.",
+          "hi": "n=(1,1,1)×(1,−1,1)=(2,0,−2); d=|(−1,1,0)·n|/√8=1/√2।"
+        }
+      ],
+      "answer": {
+        "en": "No intersection; shortest distance 1/√2 units.",
+        "hi": "प्रतिच्छेद नहीं; न्यूनतम दूरी 1/√2 इकाई।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which triples can be direction ratios?",
+        "hi": "कौन दिक् अनुपात हो सकते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2,−1,2",
+            "hi": "2,−1,2"
+          },
+          "reason": {
+            "en": "Any nonzero vector gives a direction.",
+            "hi": "अशून्य सदिश दिशा देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0,0,0",
+            "hi": "0,0,0"
+          },
+          "reason": {
+            "en": "The zero vector has no direction.",
+            "hi": "शून्य सदिश की दिशा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only unit triples",
+            "hi": "केवल इकाई त्रिक"
+          },
+          "reason": {
+            "en": "Ratios need not be normalized.",
+            "hi": "अनुपात सामान्यीकृत होना जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only positive triples",
+            "hi": "केवल धनात्मक त्रिक"
+          },
+          "reason": {
+            "en": "Negative components are permitted.",
+            "hi": "ऋणात्मक घटक मान्य हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Direction cosines satisfy which identity?",
+        "hi": "दिक् कोसाइन कौन सा संबंध मानते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "l²+m²+n²=1",
+            "hi": "l²+m²+n²=1"
+          },
+          "reason": {
+            "en": "They are the components of a unit direction.",
+            "hi": "ये इकाई दिशा के घटक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "l+m+n=1",
+            "hi": "l+m+n=1"
+          },
+          "reason": {
+            "en": "The sum itself need not be 1.",
+            "hi": "सीधा योग जरूरी नहीं 1 हो।"
+          }
+        },
+        {
+          "text": {
+            "en": "l²+m²+n²=0",
+            "hi": "l²+m²+n²=0"
+          },
+          "reason": {
+            "en": "This would force the zero vector.",
+            "hi": "इससे शून्य सदिश मिलेगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "lmn=1",
+            "hi": "lmn=1"
+          },
+          "reason": {
+            "en": "The product is not fixed.",
+            "hi": "गुणनफल निश्चित नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What does λ∈R describe in r=a+λb, b≠0?",
+        "hi": "r=a+λb, b≠0 में λ∈R क्या देता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The whole line",
+            "hi": "पूरी रेखा"
+          },
+          "reason": {
+            "en": "All real parameters extend in both directions.",
+            "hi": "सभी वास्तविक मान दोनों ओर विस्तार देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a segment",
+            "hi": "केवल रेखाखंड"
+          },
+          "reason": {
+            "en": "A segment needs a bounded parameter interval.",
+            "hi": "रेखाखंड के लिए सीमित अंतराल चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "A plane",
+            "hi": "समतल"
+          },
+          "reason": {
+            "en": "One parameter with fixed direction gives a line.",
+            "hi": "निश्चित दिशा में 1 प्राचल रेखा देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the point a",
+            "hi": "केवल बिंदु a"
+          },
+          "reason": {
+            "en": "That corresponds only to λ=0.",
+            "hi": "वह केवल λ=0 पर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For direction (2,0,1), what is constant?",
+        "hi": "दिशा (2,0,1) में क्या स्थिर रहता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The y-coordinate",
+            "hi": "Y निर्देशांक"
+          },
+          "reason": {
+            "en": "The y increment is λ×0.",
+            "hi": "Y वृद्धि λ×0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The x-coordinate",
+            "hi": "X निर्देशांक"
+          },
+          "reason": {
+            "en": "Its increment is 2λ.",
+            "hi": "उसकी वृद्धि 2λ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The z-coordinate",
+            "hi": "Z निर्देशांक"
+          },
+          "reason": {
+            "en": "Its increment is λ.",
+            "hi": "उसकी वृद्धि λ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All coordinates",
+            "hi": "सभी निर्देशांक"
+          },
+          "reason": {
+            "en": "The direction is nonzero.",
+            "hi": "दिशा अशून्य है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Directions (1,1,0) and (1,−1,0) make what smaller angle?",
+        "hi": "दिशाओं (1,1,0), (1,−1,0) का छोटा कोण?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "90°",
+            "hi": "90°"
+          },
+          "reason": {
+            "en": "The dot product 1−1 equals 0.",
+            "hi": "अदिश गुणनफल 1−1=0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0°",
+            "hi": "0°"
+          },
+          "reason": {
+            "en": "The vectors are not proportional.",
+            "hi": "सदिश अनुपाती नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "45°",
+            "hi": "45°"
+          },
+          "reason": {
+            "en": "Their normalized dot product is 0, not 1/√2.",
+            "hi": "सामान्यीकृत गुणनफल 0 है, 1/√2 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "180°",
+            "hi": "180°"
+          },
+          "reason": {
+            "en": "They are not opposite parallel directions.",
+            "hi": "ये विपरीत समांतर दिशाएँ नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Skew lines are…",
+        "hi": "विषमतलीय रेखाएँ हैं…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Nonparallel and nonintersecting",
+            "hi": "गैरसमांतर और अप्रतिच्छेदी"
+          },
+          "reason": {
+            "en": "They do not lie in one plane.",
+            "hi": "वे 1 समतल में नहीं रहतीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always parallel",
+            "hi": "हमेशा समांतर"
+          },
+          "reason": {
+            "en": "Parallel lines are coplanar.",
+            "hi": "समांतर रेखाएँ समतलीय हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always intersecting",
+            "hi": "हमेशा प्रतिच्छेदी"
+          },
+          "reason": {
+            "en": "Skew lines never meet.",
+            "hi": "विषमतलीय रेखाएँ नहीं मिलतीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always perpendicular and intersecting",
+            "hi": "हमेशा लंबवत और प्रतिच्छेदी"
+          },
+          "reason": {
+            "en": "Neither intersection nor a right direction angle is required.",
+            "hi": "प्रतिच्छेद या समकोण अनिवार्य नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why test all three component equations for an intersection?",
+        "hi": "प्रतिच्छेद में तीनों घटक क्यों जाँचें?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The same pair of parameters must satisfy every coordinate",
+            "hi": "समान प्राचल युग्म हर निर्देशांक संतुष्ट करे"
+          },
+          "reason": {
+            "en": "Two projected coordinates alone can mislead.",
+            "hi": "केवल 2 प्रक्षेपित निर्देशांक भ्रम दे सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The third coordinate never matters",
+            "hi": "तीसरा निर्देशांक महत्वपूर्ण नहीं"
+          },
+          "reason": {
+            "en": "Spatial intersection requires it too.",
+            "hi": "स्थानिक प्रतिच्छेद में वह भी चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Each coordinate uses independent parameters",
+            "hi": "हर निर्देशांक के स्वतंत्र प्राचल हैं"
+          },
+          "reason": {
+            "en": "Each line has one shared parameter.",
+            "hi": "हर रेखा का 1 साझा प्राचल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All spatial lines intersect",
+            "hi": "सभी स्थानिक रेखाएँ मिलती हैं"
+          },
+          "reason": {
+            "en": "Skew and parallel lines refute this.",
+            "hi": "विषमतलीय और समांतर रेखाएँ इसे गलत करती हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For nonparallel lines, zero scalar triple product implies…",
+        "hi": "गैरसमांतर रेखाओं में अदिश त्रिक गुणनफल 0 होने पर…"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "They are coplanar and intersect",
+            "hi": "वे समतलीय और प्रतिच्छेदी हैं"
+          },
+          "reason": {
+            "en": "Nonparallel coplanar lines meet.",
+            "hi": "गैरसमांतर समतलीय रेखाएँ मिलती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "They are skew",
+            "hi": "वे विषमतलीय हैं"
+          },
+          "reason": {
+            "en": "Skew lines give a nonzero triple product.",
+            "hi": "विषमतलीय में त्रिक गुणनफल अशून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "They are parallel",
+            "hi": "वे समांतर हैं"
+          },
+          "reason": {
+            "en": "Nonparallel directions were given.",
+            "hi": "गैरसमांतर दिशा दी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "They must coincide",
+            "hi": "वे संपाती ही हैं"
+          },
+          "reason": {
+            "en": "Coincident lines require proportional directions.",
+            "hi": "संपाती के लिए अनुपाती दिशा चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "When is the skew-line distance formula inapplicable?",
+        "hi": "विषमतलीय दूरी का सूत्र कब अनुपयुक्त है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "When b1×b2=0",
+            "hi": "जब b1×b2=0"
+          },
+          "reason": {
+            "en": "The denominator vanishes; use the parallel formula.",
+            "hi": "हर 0 होगा; समांतर सूत्र लें।"
+          }
+        },
+        {
+          "text": {
+            "en": "When the distance is positive",
+            "hi": "जब दूरी धनात्मक हो"
+          },
+          "reason": {
+            "en": "Positive distances are normal for skew lines.",
+            "hi": "विषमतलीय दूरी धनात्मक ही है।"
+          }
+        },
+        {
+          "text": {
+            "en": "When coordinates are negative",
+            "hi": "जब निर्देशांक ऋणात्मक हों"
+          },
+          "reason": {
+            "en": "Signs do not prevent using the formula.",
+            "hi": "चिह्न सूत्र रोकते नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "When directions are perpendicular",
+            "hi": "जब दिशाएँ लंबवत हों"
+          },
+          "reason": {
+            "en": "Their cross product is nonzero.",
+            "hi": "इनका सदिश गुणनफल अशून्य है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Distance between x-direction lines through (0,0,0) and (0,3,4)?",
+        "hi": "(0,0,0), (0,3,4) से X दिशा रेखाओं की दूरी?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5 units",
+            "hi": "5 इकाई"
+          },
+          "reason": {
+            "en": "Perpendicular separation is √(3²+4²)=5.",
+            "hi": "लंब दूरी √(3²+4²)=5 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "7 units",
+            "hi": "7 इकाई"
+          },
+          "reason": {
+            "en": "Adding component magnitudes is not Euclidean distance.",
+            "hi": "घटकों के परिमाण जोड़ना यूक्लिड दूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1 unit",
+            "hi": "1 इकाई"
+          },
+          "reason": {
+            "en": "The direction length does not equal separation.",
+            "hi": "दिशा की लंबाई दूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 units",
+            "hi": "0 इकाई"
+          },
+          "reason": {
+            "en": "The base displacement is not parallel to the x-axis.",
+            "hi": "आधार विस्थापन X अक्ष के समांतर नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish direction ratios and direction cosines.",
+        "hi": "दिक् अनुपात तथा दिक् कोसाइन में अंतर बताएँ।"
+      },
+      "answer": {
+        "en": "Ratios are any nonzero proportional direction components. Direction cosines normalize them to squared sum 1; opposite orientations negate all three.",
+        "hi": "अनुपात कोई भी अशून्य अनुपाती दिशा घटक हैं। दिक् कोसाइन सामान्यीकृत होते हैं और वर्ग योग 1 है; विपरीत दिशा में तीनों चिह्न उलटते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Write a line through (2,−1,0) parallel to (1,2,0).",
+        "hi": "(2,−1,0) से (1,2,0) के समांतर रेखा लिखें।"
+      },
+      "answer": {
+        "en": "r=(2,−1,0)+λ(1,2,0); (x−2)=(y+1)/2, z=0.",
+        "hi": "r=(2,−1,0)+λ(1,2,0); (x−2)=(y+1)/2, z=0।"
+      }
+    },
+    {
+      "question": {
+        "en": "Can perpendicular directions belong to skew lines? Give an example.",
+        "hi": "क्या लंबवत दिशाएँ विषमतलीय रेखाओं की हो सकती हैं? उदाहरण दें।"
+      },
+      "answer": {
+        "en": "Yes: the x-axis and r=(0,0,1)+μ(0,1,0) have perpendicular directions but never meet.",
+        "hi": "हाँ; X अक्ष और r=(0,0,1)+μ(0,1,0) की दिशाएँ लंबवत हैं पर वे नहीं मिलतीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the cross product in the shortest-distance formula.",
+        "hi": "न्यूनतम दूरी सूत्र में सदिश गुणनफल की भूमिका बताएँ।"
+      },
+      "answer": {
+        "en": "b1×b2 is perpendicular to both nonparallel directions. Project the base displacement on its unit direction and take the absolute value.",
+        "hi": "b1×b2 दोनों गैरसमांतर दिशाओं के लंबवत है। आधार विस्थापन का उसकी इकाई दिशा पर प्रक्षेप लेकर निरपेक्ष मान लें।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the smaller angle between (1,0,1) and (0,1,1).",
+        "hi": "(1,0,1), (0,1,1) का छोटा कोण निकालें।"
+      },
+      "answer": {
+        "en": "Dot=1, norms=√2 each, so cosθ=1/2 and θ=60°.",
+        "hi": "अदिश गुणनफल=1, दोनों परिमाण √2; cosθ=1/2, इसलिए θ=60°।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why must the parallel-line formula be separate?",
+        "hi": "समांतर रेखाओं की दूरी का अलग सूत्र क्यों चाहिए?"
+      },
+      "answer": {
+        "en": "Their direction cross product is 0, causing 0/0 in the skew formula. Use |(a2−a1)×b|/|b| instead.",
+        "hi": "उनके दिशा सदिशों का गुणनफल 0 से विषमतलीय सूत्र 0/0 देता है। उसकी जगह |(a2−a1)×b|/|b| लें।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Never divide by a zero direction component, discard the third intersection equation, confuse perpendicular directions with an intersection, or apply the skew formula to parallel lines.",
+    "hi": "शून्य दिशा घटक से भाग न दें; तीसरा प्रतिच्छेद समीकरण न छोड़ें; लंबवत दिशा को प्रतिच्छेद न मानें; समांतर रेखाओं पर विषमतलीय सूत्र न लगाएँ।"
+  },
+  "revision": [
+    {
+      "en": "A point and a nonzero direction define a line.",
+      "hi": "1 बिंदु और अशून्य दिशा रेखा तय करते हैं।"
+    },
+    {
+      "en": "Direction cosines have squared sum 1.",
+      "hi": "दिक् कोसाइन के वर्गों का योग 1 है।"
+    },
+    {
+      "en": "One parameter must satisfy every component.",
+      "hi": "समान प्राचल सभी घटक संतुष्ट करे।"
+    },
+    {
+      "en": "A dot product gives the line angle.",
+      "hi": "अदिश गुणनफल रेखा का कोण देता है।"
+    },
+    {
+      "en": "Classify directions before selecting the distance formula.",
+      "hi": "दूरी सूत्र से पहले दिशाएँ वर्गीकृत करें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Points → direction ratios → unit direction → line equations → angle and intersection → skew / parallel distance.",
+    "hi": "बिंदु → दिक् अनुपात → इकाई दिशा → रेखा समीकरण → कोण और प्रतिच्छेद → विषमतलीय / समांतर दूरी।"
+  },
+  "id": 11,
+  "engine": "twelve-math",
+  "scenes": [],
+  "sources": [
+    {
+      "title": "UPMSP Mathematics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    },
+    {
+      "title": "NCERT Mathematics Class XII, Chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh205.pdf"
+    }
+  ]
+}

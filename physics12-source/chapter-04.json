@@ -1,0 +1,996 @@
+{
+  "number": 4,
+  "id": "physics12-04",
+  "title": {
+    "en": "Moving Charges and Magnetism",
+    "hi": "गतिमान आवेश और चुंबकत्व"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Magnetic field and the current connection",
+        "hi": "चुंबकीय क्षेत्र और धारा का संबंध"
+      },
+      "paragraphs": [
+        {
+          "en": "Oersted’s compass observation links current to magnetic effects. B is a vector measured in tesla. Long straight-wire field lines form circles around the wire, with orientation tied to current. A compass samples local direction and can respond to Earth’s field as well. Magnetic lines form closed loops.",
+          "hi": "चुंबकीय क्षेत्र (Magnetic field) गतिमान आवेशों, विद्युत धाराओं और चुंबकीय पदार्थों से जुड़ा है। ओर्स्टेड के प्रयोग में धारा वाले तार के पास दिक्सूची की सुई का मुड़ना दिखाता है कि विद्युत धारा चुंबकीय प्रभाव पैदा करती है। धारा उलटने पर सुई का विक्षेप भी उलट सकता है। यह प्रभाव तार का केवल गरम होना नहीं, दिशा-संबंधी चुंबकीय अंतःक्रिया है। क्षेत्र B सदिश है और SI इकाई टेस्ला (Tesla), T है। किसी स्थान पर चुंबकीय प्रभाव की गणना करते समय दिशा उतनी ही महत्वपूर्ण है जितना परिमाण। चुंबकीय क्षेत्र रेखाएँ बंद वक्र बनाती हैं; स्थिरवैद्युत रेखाओं से यह महत्वपूर्ण भेद है। सीधे लंबे तार के आसपास रेखाएँ सहकेंद्रीय वृत्त हैं, तार की लंबाई के साथ सीधी रेखाएँ नहीं। एक दिक्सूची पूरी रेखा नहीं दिखाती बल्कि अपने स्थान की दिशा का संकेत देती है। व्यावहारिक प्रयोग में पृथ्वी का चुंबकीय क्षेत्र भी प्रभाव डालता है, इसलिए दिक्सूची का वास्तविक कोण केवल एक तार के क्षेत्र से निर्धारित मानना हर व्यवस्था में सही नहीं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to the circular field direction when straight-wire current reverses?",
+          "hi": "सीधे लंबे तार की धारा उलटें तो चुंबकीय क्षेत्र की दिशा कैसे बदलती है?"
+        },
+        "answer": {
+          "en": "It reverses.",
+          "hi": "वृत्तीय क्षेत्र की दिशा उलट जाती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Lorentz force on a moving charge",
+        "hi": "गतिमान आवेश पर लॉरेंट्ज बल"
+      },
+      "paragraphs": [
+        {
+          "en": "Lorentz force is q(E+v×B). The magnetic part vanishes for motion along B and is largest for perpendicular motion. Reverse the cross-product direction for a negative charge. Magnetic force alone does no work because it is perpendicular to velocity; it changes direction rather than speed.",
+          "hi": "विद्युत और चुंबकीय क्षेत्रों में आवेश q पर लॉरेंट्ज बल (Lorentz force) F=q(E+v×B) है। केवल चुंबकीय भाग का परिमाण |q|vB sinθ है, जहाँ θ वेग और क्षेत्र के बीच कोण है। धारा या आवेश की गति को क्षेत्र के समानांतर करने पर चुंबकीय बल शून्य, लंबवत करने पर अधिकतम होता है। धन आवेश के लिए v×B की दिशा दाएँ हाथ के नियम से तय करें; ऋण आवेश के लिए उसे उलटें। चुंबकीय बल वेग के लंबवत होने से किसी बिंदु आवेश पर तात्कालिक चुंबकीय शक्ति F·v शून्य है। केवल स्थिर चुंबकीय क्षेत्र कण की चाल या गतिज ऊर्जा नहीं बदलता, लेकिन दिशा बदल सकता है। विद्युत क्षेत्र का बल अलग से ऊर्जा बदल सकता है। 'बल है इसलिए चाल अवश्य बढ़ेगी' कहना गलत है; बल यदि वेग के लंबवत हो तो अभिकेंद्रित त्वरण देता है। सूत्र में v सदिश और उसकी चाल का अंतर स्पष्ट रखें। विराम आवेश पर चुंबकीय भाग शून्य है, पर विद्युत भाग qE शून्य होना आवश्यक नहीं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What magnetic force acts on an electron initially at rest?",
+          "hi": "एक स्थिर इलेक्ट्रॉन पर केवल चुंबकीय क्षेत्र लगाया जाए तो बल कितना होगा?"
+        },
+        "answer": {
+          "en": "Zero, since v=0.",
+          "hi": "0, क्योंकि v=0 है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Circular and helical motion",
+        "hi": "वृत्तीय और कुंडलिनी गति"
+      },
+      "paragraphs": [
+        {
+          "en": "Perpendicular nonrelativistic motion gives r=mv/(|q|B) and T=2πm/(|q|B). A parallel component persists, producing a helix with pitch vparallelT. Use perpendicular speed in the radius. Charge sign changes rotation sense, not radius magnitude. Particle paths are not magnetic field lines.",
+          "hi": "जब किसी आवेशित कण का प्रारंभिक वेग एकसमान B के लंबवत हो, तो चुंबकीय बल अभिकेंद्र बल देता है। गैर-सापेक्षिक स्थिति में |q|vB=mv²/r से r=mv/(|q|B) मिलता है। परिक्रमण काल T=2πm/(|q|B) है और इस सरल मॉडल में चाल से स्वतंत्र है। यह कथन अत्यधिक वेग पर सापेक्षिक प्रभावों के बिना लागू है। यदि वेग का एक घटक B के समानांतर और दूसरा लंबवत हो, तो समानांतर घटक अपरिवर्तित रहता है तथा लंबवत घटक वृत्त बनाता है। संयुक्त पथ कुंडलिनी (Helix) होता है। त्रिज्या में v का लंबवत घटक रखें और पिच, अर्थात 1 चक्कर में अक्ष के साथ दूरी, vparallel T है। आवेश का चिह्न घूमने की दिशा बदलता है, लेकिन समान द्रव्यमान और चाल पर त्रिज्या का परिमाण नहीं। कण का वास्तविक पथ क्षेत्र की रेखा नहीं होता; क्षेत्र रेखा केवल स्थानीय B की दिशा बताती है। स्क्रीन का घूमता गोला आदर्श चक्रीय संकेत है, वास्तविक आकार या विकिरण हानि का पूर्ण मॉडल नहीं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "How does orbit radius change if B doubles at fixed speed?",
+          "hi": "B दुगुना और v स्थिर हो तो वृत्तीय त्रिज्या क्या होगी?"
+        },
+        "answer": {
+          "en": "It halves.",
+          "hi": "आधी।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Biot–Savart law and a circular loop",
+        "hi": "बायो-सावर्ट नियम और वृत्तीय लूप"
+      },
+      "paragraphs": [
+        {
+          "en": "Biot–Savart contributions are vectorial. At a circular-loop centre B=μ0NI/(2R), with R the radius. On-axis field falls with distance according to the axial formula. Curl the right hand along conventional current to obtain the central axial direction. The centre formula is not valid at arbitrary positions.",
+          "hi": "बायो-सावर्ट नियम (Biot–Savart law) किसी धारा तत्व I dl से बिंदु पर चुंबकीय क्षेत्र का योगदान देता है। परिमाण dB=(μ0/4π)I dl sinθ/r² है; दिशा dl×rhat से मिलती है। पूरे तार का क्षेत्र छोटे योगदानों का सदिश योग है। यहाँ dl परंपरागत धारा की दिशा में है। वृत्तीय लूप के केंद्र पर सभी योगदान अक्ष की एक ही दिशा में जुड़ते हैं, इसलिए एक फेरे के लिए B=μ0I/(2R) और N पास-पास समान फेरों के लिए B=μ0NI/(2R) है। केंद्र से अक्ष पर x दूरी पर B=μ0IR²/[2(R²+x²)^(3/2)] एक फेरे का परिणाम है। R लूप की त्रिज्या है, व्यास नहीं। केंद्र का सूत्र अक्ष के हर बिंदु पर नहीं लगाएँ। धारा बढ़ाने से B समान अनुपात में बढ़ता है, पर लूप बड़ा करने से केंद्र का B घटता है। दिशा के लिए उँगलियाँ धारा की दिशा में मोड़ें, अंगूठा अक्षीय क्षेत्र की दिशा देगा। दृश्य में लूप का झुकाव बदलना और धारा उलटना अलग भौतिक बदलाव हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "How does centre field change when loop radius doubles at fixed current?",
+          "hi": "समान I पर लूप की त्रिज्या 2 गुनी हो तो केंद्र का B कितना होगा?"
+        },
+        "answer": {
+          "en": "It halves.",
+          "hi": "आधा।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ampere law, wire and solenoid",
+        "hi": "ऐम्पियर नियम, तार और परिनालिका"
+      },
+      "paragraphs": [
+        {
+          "en": "Ampere’s circuital law links a closed line integral to enclosed steady current. Symmetry yields μ0I/(2πr) for an infinite wire and approximately μ0nI inside a long air-core solenoid away from ends. Here n is turns per metre. Finite-end and magnetic-core effects require additional care.",
+          "hi": "ऐम्पियर का परिपथीय नियम (Ampere circuital law) स्थिर धाराओं के लिए बंद पथ पर ∮B·dl=μ0Ienc कहता है। यह समाकलन पथ से घिरे उपयुक्त पृष्ठ को भेदती धाराओं का बीजीय योग लेता है। लंबे सीधे तार के लिए वृत्तीय सममिति से B=μ0I/(2πr) मिलता है। चुना वृत्त गणना का कल्पित ऐम्पीयरियन पथ है, वास्तविक धातु की गोल सीमा होना आवश्यक नहीं। लंबी सघन परिनालिका (Solenoid) के भीतर, किनारों से दूर, लगभग एकसमान B=μ0nI है, जहाँ n=N/l प्रति लंबाई फेरे हैं। बाहर क्षेत्र आदर्श अनंत-लंबाई सीमा में नगण्य माना जाता है; छोटी वास्तविक परिनालिका के सिरों पर यह सन्निकटन टूटता है। n को कुल फेरे N मान लेना आयाम की गलती देगा। परिनालिका के ध्रुव धारा की दिशा से तय होते हैं और धारा उलटने पर बदलते हैं। यदि भीतर चुंबकीय पदार्थ हो तो उसका प्रभाव अलग शामिल करना पड़ता है; निर्वात का μ0 सूत्र हर कोर पदार्थ के लिए बिना बदलाव लागू नहीं। सममिति का लाभ उठाने से पहले उसके भौतिक आधार को पहचानें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Find n for 500 turns over 0.25 m.",
+          "hi": "500 फेरे और 0.25 m लंबाई की परिनालिका में n क्या है?"
+        },
+        "answer": {
+          "en": "2000 m^-1.",
+          "hi": "n=500/0.25=2000 m^-1।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Force on wires and between currents",
+        "hi": "तार पर और धाराओं के बीच बल"
+      },
+      "paragraphs": [
+        {
+          "en": "A straight wire in uniform B experiences I(l×B). Parallel steady currents in the same direction attract; opposite currents repel. Their ideal long-wire force per length is μ0I1I2/(2πd). Distinguish N/m from total force. The current SI ampere is defined using fixed elementary charge, not solely the historical wire-force definition.",
+          "hi": "एकसमान B में लंबाई सदिश l वाला सीधा धारा तत्व कुल बल F=I(l×B) अनुभव करता है। परिमाण IlB sinθ है, जहाँ l परंपरागत धारा दिशा में है। लंबवत तार पर IlB और समानांतर तार पर शून्य बल मिलता है। 2 लंबे समांतर तारों में दूरी d हो तो प्रति लंबाई बल μ0I1I2/(2πd) है। समान दिशा की धाराएँ आकर्षित और विपरीत दिशा की धाराएँ प्रतिकर्षित होती हैं। इसे स्थिर आवेशों के समान चिह्न वाले प्रतिकर्षण से न मिलाएँ; यहाँ गतिमान आवेशों और पूरे चालक की चुंबकीय अंतःक्रिया है। यदि एक तार के बिंदु पर दूसरे का B निकालें, तो अपने ही तार का क्षेत्र बाहरी बल सूत्र में न जोड़ें। प्रति लंबाई बल की इकाई N/m है; निश्चित लंबाई L का बल चाहिए तो उसे L से गुणा करें, उपयुक्त लंबा-तार सीमा में। SI में ऐम्पियर की आधुनिक परिभाषा मूल आवेश e के निश्चित मान से जुड़ी है; समानांतर तार वाला ऐतिहासिक संबंध भौतिक परिणाम है, वर्तमान परिभाषा का एकमात्र आधार नहीं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does reversing both parallel currents change attraction into repulsion?",
+          "hi": "2 तारों की दोनों धाराएँ उलटने पर उनके आकर्षण या प्रतिकर्षण का प्रकार बदलता है?"
+        },
+        "answer": {
+          "en": "No. Their relative direction is unchanged.",
+          "hi": "नहीं; आपसी दिशा संबंध वही रहता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Current-loop torque and magnetic moment",
+        "hi": "धारा लूप का आघूर्ण और चुंबकीय आघूर्ण"
+      },
+      "paragraphs": [
+        {
+          "en": "A planar loop has moment m=NIA normal to its plane. Torque magnitude is mB sinθ, where θ is between moment and B. A loop can have zero net force but nonzero torque in uniform B. The moment’s SI unit is A m². Nonuniform fields can additionally produce a net force.",
+          "hi": "समतल धारा लूप का चुंबकीय द्विध्रुव आघूर्ण (Magnetic dipole moment) m=NI A है। यहाँ A क्षेत्रफल सदिश है और उसकी दिशा दाएँ हाथ के नियम से लूप के अभिलंब में होती है। m का मात्रक A m² है, द्रव्यमान का kg नहीं; एक ही अक्षर m का अलग प्रसंग में उपयोग पहचानें। एकसमान बाहरी क्षेत्र में बंद लूप का कुल बल शून्य हो सकता है, पर आघूर्ण τ=m×B और परिमाण mB sinθ होता है। θ लूप के तल से नहीं, क्षेत्रफल अभिलंब और B के बीच है। लूप का तल B के समानांतर हो तो आघूर्ण अधिकतम और तल B के लंबवत हो तो शून्य होता है। यह परिणाम विद्युत मोटर और धारामापी जैसे उपकरणों को समझने में आधार देता है। एकसमान क्षेत्र में शून्य कुल बल से शून्य आघूर्ण का निष्कर्ष न निकालें। असमान क्षेत्र में कुल बल भी हो सकता है। चुंबकीय आघूर्ण एक छोटे धारा लूप को दूर से चुंबकीय द्विध्रुव की तरह वर्णित करता है, लेकिन लूप के पास पूरी ज्यामिति महत्वपूर्ण रहती है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is loop torque when its plane is perpendicular to B?",
+          "hi": "लूप का तल B के लंबवत होने पर आघूर्ण क्या होगा?"
+        },
+        "answer": {
+          "en": "Zero, because its normal is parallel to B.",
+          "hi": "शून्य, क्योंकि अभिलंब B के समानांतर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Moving-coil galvanometer and conversion",
+        "hi": "चल कुंडली धारामापी और रूपांतरण"
+      },
+      "paragraphs": [
+        {
+          "en": "A radial-field galvanometer balances NIAB against κθ, giving θ∝I. A low parallel shunt converts it to an ammeter; a large series resistor converts it to a voltmeter. Ideal ammeters have zero resistance and ideal voltmeters infinite resistance. Real instruments perturb circuits and require correct ranges and connections.",
+          "hi": "चल कुंडली धारामापी (Moving-coil galvanometer) छोटी धारा को कोणीय विक्षेप में बदलता है। रेडियल चुंबकीय क्षेत्र में कुंडली पर चुंबकीय आघूर्ण NIAB होता है और स्प्रिंग का प्रत्यानयन आघूर्ण κθ। संतुलन पर θ=(NAB/κ)I, इसलिए उपयुक्त सीमा में धारा और विक्षेप समानुपाती हैं। धारा सुग्राहिता θ/I=NAB/κ है। अधिक धारा नापने के लिए धारामापी के समांतर छोटा शंट प्रतिरोध लगाते हैं, ताकि अधिकतर धारा उससे गुजरे। धारामापी प्रतिरोध G और पूर्ण-विक्षेप धारा Ig हों तो I श्रेणी के ऐमीटर हेतु शंट S=IgG/(I−Ig) है। वोल्टमीटर बनाने के लिए श्रेणी में बड़ा प्रतिरोध R=V/Ig−G लगाते हैं। ऐमीटर को परिपथ में श्रेणी और वोल्टमीटर को मापी शाखा के समांतर जोड़ते हैं। आदर्श ऐमीटर का प्रतिरोध शून्य और आदर्श वोल्टमीटर का अनंत माना जाता है; वास्तविक यंत्र केवल इन सीमाओं के निकट होते हैं। गलत जोड़ यंत्र को नुकसान पहुँचा सकता है, इसलिए वास्तविक मापन शिक्षक के निर्देश और उचित श्रेणी के साथ ही करें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is an ammeter shunt placed in parallel rather than series?",
+          "hi": "धारामापी को ऐमीटर बनाने में शंट श्रेणी में क्यों नहीं जोड़ते?"
+        },
+        "answer": {
+          "en": "A low-resistance parallel path diverts most of the measured current.",
+          "hi": "धारा बाँटने के लिए कम प्रतिरोध वाला समांतर मार्ग चाहिए।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "F=q(E+v×B)",
+      "meaning": {
+        "en": "Lorentz force.",
+        "hi": "लॉरेंट्ज बल।"
+      },
+      "units": {
+        "en": "N; B: T",
+        "hi": "N; B: T"
+      }
+    },
+    {
+      "expression": "r=mvperp/(|q|B); T=2πm/(|q|B)",
+      "meaning": {
+        "en": "Nonrelativistic circular/helical motion in uniform B.",
+        "hi": "एकसमान B में गैर-सापेक्षिक वृत्तीय/कुंडलिनी गति।"
+      },
+      "units": {
+        "en": "r: m; T: s",
+        "hi": "r: m; T: s"
+      }
+    },
+    {
+      "expression": "Bwire=μ0I/(2πr); Bloop=μ0NI/(2R)",
+      "meaning": {
+        "en": "Infinite-wire and loop-centre fields in vacuum.",
+        "hi": "निर्वात में अनंत तार और लूप केंद्र के क्षेत्र।"
+      },
+      "units": {
+        "en": "T",
+        "hi": "T"
+      }
+    },
+    {
+      "expression": "m=NIA; τ=mB sinθ",
+      "meaning": {
+        "en": "Loop moment and torque; θ is measured from the normal.",
+        "hi": "लूप आघूर्ण और बल आघूर्ण; θ अभिलंब से।"
+      },
+      "units": {
+        "en": "m: A m²; τ: N m",
+        "hi": "m: A m²; τ: N m"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find magnetic force on +2 μC moving at 3×10^4 m/s perpendicular to 0.5 T.",
+        "hi": "+2 μC आवेश 3×10^4 m/s से 0.5 T के लंबवत चलता है। बल निकालें।"
+      },
+      "given": {
+        "en": "q=2×10^-6 C;v=3×10^4 m/s;B=0.5 T;θ=90°.",
+        "hi": "q=2×10^-6 C;v=3×10^4 m/s;B=0.5 T;θ=90°।"
+      },
+      "find": {
+        "en": "Magnetic force magnitude.",
+        "hi": "चुंबकीय बल परिमाण।"
+      },
+      "formula": {
+        "en": "F=|q|vB sinθ",
+        "hi": "F=|q|vB sinθ"
+      },
+      "steps": [
+        {
+          "en": "F=2×10^-6×3×10^4×0.5=0.03 N.",
+          "hi": "F=2×10^-6×3×10^4×0.5=0.03 N।"
+        }
+      ],
+      "answer": {
+        "en": "0.03 N perpendicular to v and B.",
+        "hi": "v और B दोनों के लंबवत 0.03 N।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find force on 0.20 m wire carrying 5 A perpendicular to 0.4 T.",
+        "hi": "0.20 m तार में 5 A है और B=0.4 T लंबवत है। बल निकालें।"
+      },
+      "given": {
+        "en": "I=5 A;l=0.20 m;B=0.4 T.",
+        "hi": "I=5 A;l=0.20 m;B=0.4 T।"
+      },
+      "find": {
+        "en": "F.",
+        "hi": "F।"
+      },
+      "formula": {
+        "en": "F=IlB",
+        "hi": "F=IlB"
+      },
+      "steps": [
+        {
+          "en": "F=5×0.20×0.4=0.40 N.",
+          "hi": "F=5×0.20×0.4=0.40 N।"
+        }
+      ],
+      "answer": {
+        "en": "0.40 N.",
+        "hi": "0.40 N।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find B at 0.10 m from a long straight wire carrying 10 A.",
+        "hi": "10 A वाले लंबे सीधे तार से 0.10 m पर B निकालें।"
+      },
+      "given": {
+        "en": "μ0≈4π×10^-7 N/A²;I=10 A;r=0.10 m.",
+        "hi": "μ0≈4π×10^-7 N/A²;I=10 A;r=0.10 m।"
+      },
+      "find": {
+        "en": "B.",
+        "hi": "B।"
+      },
+      "formula": {
+        "en": "B=μ0I/(2πr)",
+        "hi": "B=μ0I/(2πr)"
+      },
+      "steps": [
+        {
+          "en": "B=(2×10^-7)(10)/0.10=2×10^-5 T.",
+          "hi": "B=(2×10^-7)(10)/0.10=2×10^-5 T।"
+        }
+      ],
+      "answer": {
+        "en": "20 μT, tangential to the circular field line.",
+        "hi": "वृत्तीय क्षेत्र रेखा की स्पर्शरेखा में 20 μT।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A 50-turn coil of area 0.01 m² carries 0.20 A in 0.5 T. Find maximum torque.",
+        "hi": "50 फेरे,0.01 m² क्षेत्रफल वाली कुंडली में 0.20 A और B=0.5 T है। अधिकतम आघूर्ण निकालें।"
+      },
+      "given": {
+        "en": "N=50;A=0.01 m²;I=0.20 A;B=0.5 T.",
+        "hi": "N=50;A=0.01 m²;I=0.20 A;B=0.5 T।"
+      },
+      "find": {
+        "en": "τmax.",
+        "hi": "τmax।"
+      },
+      "formula": {
+        "en": "τmax=NIAB",
+        "hi": "τmax=NIAB"
+      },
+      "steps": [
+        {
+          "en": "τmax=50×0.20×0.01×0.5=0.05 N m.",
+          "hi": "τmax=50×0.20×0.01×0.5=0.05 N m।"
+        }
+      ],
+      "answer": {
+        "en": "0.05 N m.",
+        "hi": "0.05 N m।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A galvanometer has G=100 Ω and Ig=1 mA. Find shunt for a 1 A ammeter.",
+        "hi": "धारामापी में G=100 Ω,Ig=1 mA है। 1 A ऐमीटर हेतु शंट निकालें।"
+      },
+      "given": {
+        "en": "G=100 Ω;Ig=0.001 A;I=1 A.",
+        "hi": "G=100 Ω;Ig=0.001 A;I=1 A।"
+      },
+      "find": {
+        "en": "Shunt resistance.",
+        "hi": "शंट प्रतिरोध।"
+      },
+      "formula": {
+        "en": "S=IgG/(I−Ig)",
+        "hi": "S=IgG/(I−Ig)"
+      },
+      "steps": [
+        {
+          "en": "Galvanometer drop=0.001×100=0.10 V.",
+          "hi": "धारामापी विभवपात=0.001×100=0.10 V।"
+        },
+        {
+          "en": "Shunt current=0.999 A;S=0.10/0.999≈0.1001 Ω.",
+          "hi": "शंट धारा=0.999 A;S=0.10/0.999≈0.1001 Ω।"
+        }
+      ],
+      "answer": {
+        "en": "Approximately 0.100 Ω in parallel.",
+        "hi": "समांतर में लगभग 0.100 Ω।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Magnetic force on a stationary charge is",
+        "hi": "विराम आवेश पर चुंबकीय बल"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "Magnetic force contains velocity.",
+            "hi": "चुंबकीय बल में वेग गुणक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "qB",
+            "hi": "qB"
+          },
+          "reason": {
+            "en": "A velocity factor is missing.",
+            "hi": "वेग गुणक छूटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "q/B",
+            "hi": "q/B"
+          },
+          "reason": {
+            "en": "This is not the Lorentz relation.",
+            "hi": "यह लॉरेंट्ज संबंध नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always infinite",
+            "hi": "सदा अनंत"
+          },
+          "reason": {
+            "en": "No motion means no magnetic force.",
+            "hi": "गति नहीं तो चुंबकीय बल नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The magnetic force does no work because it is",
+        "hi": "चुंबकीय बल कार्य नहीं करता क्योंकि वह"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Perpendicular to velocity",
+            "hi": "वेग के लंबवत"
+          },
+          "reason": {
+            "en": "F·v=0.",
+            "hi": "F·v=0।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "सदा शून्य"
+          },
+          "reason": {
+            "en": "A moving charge can feel nonzero magnetic force.",
+            "hi": "गतिमान आवेश पर अशून्य बल संभव।"
+          }
+        },
+        {
+          "text": {
+            "en": "Parallel to velocity",
+            "hi": "वेग के समानांतर"
+          },
+          "reason": {
+            "en": "That would generally permit work.",
+            "hi": "तब सामान्यतः कार्य संभव।"
+          }
+        },
+        {
+          "text": {
+            "en": "Independent of charge",
+            "hi": "आवेश से स्वतंत्र"
+          },
+          "reason": {
+            "en": "Its magnitude is proportional to |q|.",
+            "hi": "परिमाण |q| के समानुपाती।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For fixed v and B, doubling |q| changes circular radius to",
+        "hi": "v,B स्थिर पर |q| दुगुना करें तो वृत्तीय त्रिज्या"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "r/2",
+            "hi": "r/2"
+          },
+          "reason": {
+            "en": "r=mv/(|q|B).",
+            "hi": "r=mv/(|q|B)।"
+          }
+        },
+        {
+          "text": {
+            "en": "2r",
+            "hi": "2r"
+          },
+          "reason": {
+            "en": "This reverses the charge dependence.",
+            "hi": "आवेश निर्भरता उलटी।"
+          }
+        },
+        {
+          "text": {
+            "en": "4r",
+            "hi": "4r"
+          },
+          "reason": {
+            "en": "No square charge factor occurs.",
+            "hi": "आवेश का वर्ग गुणक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "r",
+            "hi": "r"
+          },
+          "reason": {
+            "en": "Radius depends on charge magnitude.",
+            "hi": "त्रिज्या आवेश परिमाण पर निर्भर।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Loop-centre field of N turns is",
+        "hi": "N फेरों के लूप केंद्र का क्षेत्र"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "μ0NI/(2R)",
+            "hi": "μ0NI/(2R)"
+          },
+          "reason": {
+            "en": "For N coincident circular turns of radius R.",
+            "hi": "R त्रिज्या के N निकट वृत्तीय फेरों के लिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "μ0NI/(2πR)",
+            "hi": "μ0NI/(2πR)"
+          },
+          "reason": {
+            "en": "The 2πr denominator belongs to a straight wire.",
+            "hi": "2πr हर सीधे तार का।"
+          }
+        },
+        {
+          "text": {
+            "en": "μ0I R",
+            "hi": "μ0I R"
+          },
+          "reason": {
+            "en": "Wrong radius dependence and dimensions.",
+            "hi": "गलत त्रिज्या निर्भरता और विमा।"
+          }
+        },
+        {
+          "text": {
+            "en": "N/I",
+            "hi": "N/I"
+          },
+          "reason": {
+            "en": "No such magnetic-field formula exists here.",
+            "hi": "यहाँ ऐसा क्षेत्र सूत्र नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Long-solenoid field uses n as",
+        "hi": "लंबी परिनालिका के क्षेत्र में n"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Turns per unit length",
+            "hi": "प्रति लंबाई फेरे"
+          },
+          "reason": {
+            "en": "B≈μ0nI.",
+            "hi": "B≈μ0nI।"
+          }
+        },
+        {
+          "text": {
+            "en": "Total turns only",
+            "hi": "केवल कुल फेरे"
+          },
+          "reason": {
+            "en": "Total turns must be divided by length.",
+            "hi": "कुल फेरों को लंबाई से भाग देना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Electron number",
+            "hi": "इलेक्ट्रॉन संख्या"
+          },
+          "reason": {
+            "en": "That n belongs to a different microscopic context.",
+            "hi": "वह n अलग सूक्ष्म प्रसंग का।"
+          }
+        },
+        {
+          "text": {
+            "en": "Wire radius",
+            "hi": "तार त्रिज्या"
+          },
+          "reason": {
+            "en": "It is not a length in this expression.",
+            "hi": "यहाँ यह लंबाई नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Parallel currents in the same direction",
+        "hi": "एक दिशा की समांतर धाराएँ"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Attract",
+            "hi": "आकर्षित होती हैं"
+          },
+          "reason": {
+            "en": "The mutual magnetic forces pull wires together.",
+            "hi": "परस्पर चुंबकीय बल तारों को पास खींचते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Repel",
+            "hi": "प्रतिकर्षित होती हैं"
+          },
+          "reason": {
+            "en": "Opposite current directions repel.",
+            "hi": "विपरीत धाराएँ प्रतिकर्षित करती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Never interact",
+            "hi": "कभी अंतःक्रिया नहीं"
+          },
+          "reason": {
+            "en": "Each wire produces a field at the other.",
+            "hi": "हर तार दूसरे पर क्षेत्र बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Have only electric gravity",
+            "hi": "केवल विद्युत गुरुत्व है"
+          },
+          "reason": {
+            "en": "This is a magnetic interaction.",
+            "hi": "यह चुंबकीय अंतःक्रिया है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Magnetic moment of a current loop points",
+        "hi": "धारा लूप का चुंबकीय आघूर्ण"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Along its normal by right-hand rule",
+            "hi": "दाएँ हाथ नियम से अभिलंब पर"
+          },
+          "reason": {
+            "en": "m=NIA uses the area vector.",
+            "hi": "m=NIA में क्षेत्रफल सदिश।"
+          }
+        },
+        {
+          "text": {
+            "en": "Along every part of the wire",
+            "hi": "तार के हर हिस्से की दिशा में"
+          },
+          "reason": {
+            "en": "There is one net axial moment.",
+            "hi": "1 कुल अक्षीय आघूर्ण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always east",
+            "hi": "सदा पूर्व"
+          },
+          "reason": {
+            "en": "Orientation depends on the loop.",
+            "hi": "दिशा लूप पर निर्भर।"
+          }
+        },
+        {
+          "text": {
+            "en": "Along the loop plane only",
+            "hi": "केवल लूप तल में"
+          },
+          "reason": {
+            "en": "Moment is perpendicular to the plane.",
+            "hi": "आघूर्ण तल के लंबवत।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Loop torque is maximum when B is",
+        "hi": "लूप आघूर्ण अधिकतम जब B"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Parallel to the loop plane",
+            "hi": "लूप तल के समानांतर"
+          },
+          "reason": {
+            "en": "Then B is perpendicular to the area normal.",
+            "hi": "तब B क्षेत्रफल अभिलंब के लंबवत।"
+          }
+        },
+        {
+          "text": {
+            "en": "Normal to the loop plane",
+            "hi": "लूप तल के अभिलंब में"
+          },
+          "reason": {
+            "en": "Then the moment is parallel to B and torque zero.",
+            "hi": "तब आघूर्ण सदिश B के समानांतर, बल आघूर्ण शून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "Zero B gives zero torque.",
+            "hi": "B शून्य से आघूर्ण शून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "Absent",
+            "hi": "अनुपस्थित"
+          },
+          "reason": {
+            "en": "No external field gives no field torque.",
+            "hi": "बाहरी क्षेत्र नहीं तो उसका आघूर्ण नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "To make an ammeter, connect a low resistance",
+        "hi": "ऐमीटर बनाने में कम प्रतिरोध जोड़ें"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "In parallel with the galvanometer",
+            "hi": "धारामापी के समांतर"
+          },
+          "reason": {
+            "en": "It carries most of the current.",
+            "hi": "इसमें अधिकतर धारा जाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "In series only",
+            "hi": "केवल श्रेणी में"
+          },
+          "reason": {
+            "en": "Series resistance is used for voltage-range conversion.",
+            "hi": "श्रेणी प्रतिरोध वोल्टमीटर रूपांतरण में।"
+          }
+        },
+        {
+          "text": {
+            "en": "Across a mains socket directly",
+            "hi": "सीधे घरेलू सप्लाई पर"
+          },
+          "reason": {
+            "en": "This is unsafe and is not an instrument-conversion rule.",
+            "hi": "यह असुरक्षित है और रूपांतरण नियम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nowhere",
+            "hi": "कहीं नहीं"
+          },
+          "reason": {
+            "en": "An unmodified sensitive meter cannot generally measure a much larger current.",
+            "hi": "अपरिवर्तित संवेदनशील यंत्र सामान्यतः बड़ी धारा नहीं माप सकता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Ideal voltmeter resistance is",
+        "hi": "आदर्श वोल्टमीटर प्रतिरोध"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Infinite",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "It draws no current from the measured branch.",
+            "hi": "मापी शाखा से धारा नहीं खींचता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "That is the ideal ammeter limit.",
+            "hi": "यह आदर्श ऐमीटर सीमा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always 1 Ω",
+            "hi": "सदा 1 Ω"
+          },
+          "reason": {
+            "en": "No universal finite resistance defines the ideal voltmeter.",
+            "hi": "आदर्श वोल्टमीटर का सार्वत्रिक परिमित प्रतिरोध नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative",
+            "hi": "ऋणात्मक"
+          },
+          "reason": {
+            "en": "Not the passive ideal measurement limit.",
+            "hi": "यह निष्क्रिय आदर्श मापन सीमा नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why does a magnetic field change direction but not speed of an isolated charge?",
+        "hi": "केवल चुंबकीय क्षेत्र आवेश की दिशा बदलकर चाल क्यों नहीं बदलता?"
+      },
+      "answer": {
+        "en": "Magnetic force is perpendicular to velocity, so it does no work and cannot change kinetic energy.",
+        "hi": "बल वेग के लंबवत है; कार्य शून्य और गतिज ऊर्जा स्थिर।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish field line and particle trajectory.",
+        "hi": "क्षेत्र रेखा और कण पथ में भेद करें।"
+      },
+      "answer": {
+        "en": "A field line indicates B direction; a charged particle trajectory follows Lorentz force and initial velocity.",
+        "hi": "क्षेत्र रेखा B की दिशा; कण पथ लॉरेंट्ज बल और प्रारंभिक वेग से।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the long-solenoid approximation.",
+        "hi": "लंबी परिनालिका सन्निकटन लिखें।"
+      },
+      "answer": {
+        "en": "Far from ends in a long, closely wound air-core solenoid, B≈μ0nI inside and the outside field is much smaller.",
+        "hi": "लंबी सघन वायु-कोर परिनालिका में सिरों से दूर भीतर B≈μ0nI, बाहर बहुत छोटा।"
+      }
+    },
+    {
+      "question": {
+        "en": "What angle belongs in τ=NIAB sinθ?",
+        "hi": "τ=NIAB sinθ में कौन-सा कोण है?"
+      },
+      "answer": {
+        "en": "The angle between B and the normal to the loop, not the angle to its plane.",
+        "hi": "B और लूप के अभिलंब का कोण, तल का नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the purpose of an ammeter shunt.",
+        "hi": "ऐमीटर शंट का उद्देश्य समझाएँ।"
+      },
+      "answer": {
+        "en": "A low parallel resistance carries most current while limiting galvanometer current to its permitted range.",
+        "hi": "कम समांतर प्रतिरोध अधिकतर धारा लेकर धारामापी धारा अनुमत सीमा में रखता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is turn density required in the solenoid formula?",
+        "hi": "परिनालिका सूत्र में फेरा घनत्व क्यों चाहिए?"
+      },
+      "answer": {
+        "en": "Field depends on turns distributed per length; the same total turns spread over a longer solenoid give smaller n.",
+        "hi": "क्षेत्र प्रति लंबाई फेरों पर निर्भर; समान फेरे अधिक लंबाई में फैलें तो n कम।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Magnetic force is qv×B.",
+      "hi": "चुंबकीय बल qv×B है।"
+    },
+    {
+      "en": "It does no work on a point charge.",
+      "hi": "यह बिंदु आवेश पर कार्य नहीं करता।"
+    },
+    {
+      "en": "Field formulas depend on wire geometry.",
+      "hi": "क्षेत्र सूत्र तार ज्यामिति पर निर्भर।"
+    },
+    {
+      "en": "A loop has moment NIA normal to its plane.",
+      "hi": "लूप आघूर्ण NIA तल के अभिलंब में।"
+    },
+    {
+      "en": "A shunt and series resistor make different meters.",
+      "hi": "शंट और श्रेणी प्रतिरोध अलग मापक बनाते हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not use total speed for helical radius, confuse the loop plane with its normal, or connect an ammeter across a source.",
+    "hi": "कुंडलिनी त्रिज्या में कुल चाल न रखें; तल और अभिलंब न मिलाएँ; ऐमीटर स्रोत के समांतर न जोड़ें।"
+  },
+  "goal": {
+    "en": "Relate moving charges and currents to magnetic fields, forces and measuring instruments.",
+    "hi": "गतिमान आवेश और धाराओं को चुंबकीय क्षेत्र, बल और मापक यंत्रों से जोड़ें।"
+  },
+  "conceptMap": "धारा → चुंबकीय क्षेत्र → लॉरेंट्ज बल → वृत्तीय गति → तार बल → लूप आघूर्ण → धारामापी",
+  "conceptMapEn": "Current → magnetic field → Lorentz force → circular motion → wire force → loop torque → galvanometer",
+  "editionBasis": {
+    "en": "Original study explanations for current NCERT Physics Class XII and UP Board 2026–27; use the prescribed textbook and practical work alongside.",
+    "hi": "वर्तमान NCERT भौतिकी कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ; निर्धारित पुस्तक और प्रयोगात्मक कार्य भी साथ करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics XII Part I Chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leph104.pdf"
+    },
+    {
+      "title": "UPMSP Physics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    }
+  ]
+}

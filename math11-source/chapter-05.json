@@ -1,0 +1,872 @@
+{
+  "id": 5,
+  "title": {
+    "en": "Linear Inequalities",
+    "hi": "रैखिक असमिकाएँ"
+  },
+  "goal": {
+    "en": "Solve comparisons without losing sign, domain or endpoint conditions.",
+    "hi": "चिह्न,प्रांत और अंतिम बिंदु की शर्त बनाए रखकर असमिकाएँ हल करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Comparisons and inequality symbols",
+        "hi": "तुलना और असमिका चिह्न"
+      },
+      "body": {
+        "en": "An inequality compares quantities using <,>,≤ or ≥. Strict inequalities exclude equality; non-strict inequalities include it. A linear inequality in one variable has the variable to the first power and no products of variables. Its solution set contains every allowed value making the statement true, often an interval rather than one number. For x+2<5, real solutions are x<3. On an integer domain only the corresponding integers qualify. Read a compound statement carefully: x>1 and x<4 means both conditions at once. A numerical inequality has no variable and is simply true or false. Distinguish the question of checking a candidate from finding the entire solution set.",
+        "hi": "असमिका (Inequality) में <,>,≤ या ≥ से राशियों की तुलना होती है। कड़ी असमिका में बराबरी शामिल नहीं होती, जबकि ≤ तथा ≥ में होती है। 1 चर की रैखिक असमिका (Linear inequality) में चर की घात 1 होती है और चर का गुणनफल नहीं होता। हल समुच्चय में सभी अनुमत मान आते हैं जिनसे कथन सही हो। इसलिए उत्तर अक्सर कोई अंतराल होता है, केवल 1 संख्या नहीं। x+2<5 में वास्तविक हल x<3 हैं। यदि प्रांत पूर्णांक हो, तो केवल उस सीमा के पूर्णांक लिए जाएँगे। संयुक्त कथन x>1 और x<4 में दोनों शर्तें एक साथ पूरी चाहिए। चर रहित संख्यात्मक असमिका केवल सही या गलत कथन होती है। किसी 1 उम्मीदवार की जाँच और पूरे हल समुच्चय की खोज अलग काम हैं। प्रश्न में दिया संख्या क्षेत्र, सीमा का चिह्न और बराबरी की अनुमति पहले पहचानें। इससे अंत में खुला या बंद सिरा चुनना सीधे समझ में आता है।"
+      },
+      "formula": "x+2<5 ⇔ x<3",
+      "question": {
+        "en": "Does x=3 satisfy x+2<5?",
+        "hi": "क्या x=3, x+2<5 को संतुष्ट करता है?"
+      },
+      "answer": {
+        "en": "No; it gives equality5=5, excluded by <.",
+        "hi": "नहीं;5=5 बराबरी है,जो < में शामिल नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Adding and subtracting on both sides",
+        "hi": "दोनों पक्षों में जोड़ और घटाव"
+      },
+      "body": {
+        "en": "Adding the same real number to both sides preserves an inequality, as does subtracting the same number. If a<b, then a+c<b+c. This is a translation on the number line: the order of two points is unchanged when both move the same distance. Thus x−7≤2 is equivalent to x≤9. Transposition is a shorthand for adding or subtracting on both sides, not a rule that changes comparison direction. Combine like terms carefully and retain the original inequality symbol. Adding inequalities in the same direction is valid, but subtracting one inequality from another is not a universal rule. Each transformation should preserve exactly the same solutions unless otherwise justified.",
+        "hi": "असमिका के दोनों पक्षों में समान वास्तविक संख्या जोड़ने या घटाने से दिशा नहीं बदलती। a<b हो, तो a+c<b+c है। संख्या रेखा पर दोनों बिंदु समान दूरी और दिशा में खिसकते हैं, इसलिए उनका क्रम वही रहता है। x−7≤2 में दोनों ओर 7 जोड़कर x≤9 मिलता है। पक्षांतरण (Transposition) वास्तव में दोनों पक्षों में जोड़ या घटाव का संक्षिप्त रूप है। पद को दूसरी तरफ ले जाने से उसका बीजगणितीय चिह्न बदलता है; असमिका की दिशा नहीं। समान पद मिलाते समय गुणांक और ऋण चिह्न जाँचें। समान दिशा वाली 2 असमिकाएँ जोड़ना उचित है, लेकिन 1 असमिका को दूसरी से मनमाने ढंग से घटाने का सार्वत्रिक नियम नहीं है। प्रत्येक चरण मूल हलों को बनाए रखे, यह जरूरी है। उत्तर मिलने पर सीमा के दोनों ओर 1-1 मान रखकर सत्यता जाँच सकते हैं। यह परीक्षण तर्क का विकल्प नहीं, गणना में हुई गलती पकड़ने का सरल उपाय है।"
+      },
+      "formula": "a<b ⇒ a+c<b+c",
+      "question": {
+        "en": "Solve x−8≥−3.",
+        "hi": "x−8≥−3 हल करें।"
+      },
+      "answer": {
+        "en": "Add8: x≥5.",
+        "hi": "8 जोड़ें:x≥5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Multiplication and division: sign matters",
+        "hi": "गुणा और भाग में चिह्न का महत्त्व"
+      },
+      "body": {
+        "en": "Multiplication or division by a positive number preserves comparison direction. Multiplication or division by a negative number reverses it. For example 2<5 gives −2>−5 after multiplication by −1. Therefore −3x>12 becomes x<−4, not x>−4. Division by zero is never allowed. If the sign of a multiplying expression is unknown, a case split is required; it cannot be treated as automatically positive. In a linear inequality the final coefficient may be zero, leaving a statement true for every allowed x or false for every x. Write the reason for reversing the sign so it becomes a consequence of order, not a memorised gesture.",
+        "hi": "धनात्मक संख्या से गुणा या भाग करने पर असमिका की दिशा वही रहती है। ऋणात्मक संख्या से गुणा या भाग करने पर दिशा उलटती है। 2<5 को −1 से गुणा करें, तो −2>−5 मिलता है। संख्या रेखा पर ऋणात्मक गुणन क्रम को परावर्तित कर देता है। इसलिए −3x>12 को −3 से भाग देने पर x<−4 है, न कि x>−4। शून्य से भाग कभी मान्य नहीं। किसी चर वाले गुणनखंड का चिह्न अज्ञात हो, तो उसे स्वतः धनात्मक मानकर गुणा या भाग नहीं कर सकते; अलग स्थितियाँ चाहिए। रैखिक असमिका सरल करने पर चर का गुणांक 0 भी हो सकता है। तब बचा कथन हर अनुमत x पर सही या हर x पर गलत हो सकता है। उदाहरणतः 0x≤2 के सभी वास्तविक हल हैं, जबकि 0x>2 का कोई हल नहीं। दिशा बदलने का कारण चरण के साथ लिखने से नियम का अर्थ याद रहता है और जल्दी की गणना में उलटा चिह्न नहीं छूटता।"
+      },
+      "formula": "a<b,c<0 ⇒ ac>bc",
+      "question": {
+        "en": "Solve −2x≤6.",
+        "hi": "−2x≤6 हल करें।"
+      },
+      "answer": {
+        "en": "Divide by−2 and reverse: x≥−3.",
+        "hi": "−2 से भाग देकर दिशा उलटें:x≥−3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Solving and checking one-variable inequalities",
+        "hi": "1 चर की असमिकाओं का हल और जाँच"
+      },
+      "body": {
+        "en": "Expand brackets, collect variable terms on one side and constants on the other, then divide by the coefficient with its sign respected. For 3(x−2)≤2x+5, expansion gives 3x−6≤2x+5 and hence x≤11. Fractions can be cleared by a known positive common denominator without changing direction. For (x−1)/2>(x+2)/3 multiply by6 to obtain 3x−3>2x+4, so x>7. If a boundary is excluded, testing it produces equality rather than a valid solution. Keep exact fractional boundaries instead of rounding them prematurely. State the final set in the specified domain and substitute a representative value as an arithmetic check. The method uses equivalent transformations, so a complete solution describes every allowed input rather than merely checking one successful example.",
+        "hi": "1 चर की रैखिक असमिका हल करने का व्यवस्थित क्रम है: कोष्ठक खोलें, चर वाले पद 1 तरफ और अचर दूसरी तरफ लाएँ, फिर गुणांक के चिह्न के अनुसार भाग दें। 3(x−2)≤2x+5 में 3x−6≤2x+5, फिर x≤11 मिलता है। भिन्न हों, तो ज्ञात धनात्मक लघुत्तम समापवर्त्य से दोनों पक्ष गुणा करके हर हटा सकते हैं। (x−1)/2>(x+2)/3 में 6 से गुणा करने पर 3x−3>2x+4 और x>7 है। 6 धनात्मक है, इसलिए दिशा नहीं बदलती। सीमा 7 रखने पर बराबरी मिलती है, जो कड़ी असमिका में मान्य नहीं। सीमांत भिन्नों को जल्दी दशमलव में पूर्णांकित न करें, क्योंकि उससे हल क्षेत्र बदल सकता है। अंतिम उत्तर दिए प्रांत में लिखें। उदाहरणतः x>7 में वास्तविक प्रांत पर अनंत वास्तविक मान हैं, लेकिन पूर्णांक प्रांत में 8,9,10,... होंगे। कोई प्रतिनिधि मान रखकर गणना की पुष्टि करें। विधि तुल्य रूपांतरण उपयोग करती है,इसलिए पूरा हल हर अनुमत निवेश बताता है,सिर्फ1 सफल उदाहरण की जाँच नहीं।"
+      },
+      "formula": "(x−1)/2>(x+2)/3 ⇔ x>7",
+      "question": {
+        "en": "Solve 4(x+1)<2x+10.",
+        "hi": "4(x+1)<2x+10 हल करें।"
+      },
+      "answer": {
+        "en": "4x+4<2x+10 gives x<3.",
+        "hi": "4x+4<2x+10 से x<3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Intervals and number-line graphs",
+        "hi": "अंतराल और संख्या रेखा ग्राफ"
+      },
+      "body": {
+        "en": "An open circle on the number line excludes an endpoint, while a filled circle includes it. Shade left for x<a and right for x>a. For x≤a use (−∞,a]; for x>a use (a,∞). Infinity is not a number that can be included. A compound inequality such as −2<x≤5 gives (−2,5]. To intersect conditions keep only the common part; to take their union keep values satisfying at least one. The distinction between and and or determines the operation. Draw the real-number solution first, then restrict to integers or natural numbers if the problem asks. A single-point solution is written {a}, not an open interval with equal endpoints.",
+        "hi": "संख्या रेखा पर खोखला बिंदु सीमा को बाहर और भरा बिंदु शामिल दिखाता है। x<a में बाईं ओर और x>a में दाईं ओर छायांकन करें। x≤a का अंतराल (−∞,a] तथा x>a का (a,∞) है। अनंत कोई शामिल होने वाली संख्या नहीं है, इसलिए उसके साथ हमेशा खुला कोष्ठक लगता है। −2<x≤5 का रूप (−2,5] है। दोनों शर्तें साथ चाहिए हों, तो उनका सर्वनिष्ठ लें। कम-से-कम 1 शर्त चाहिए हो, तो सम्मिलन लें। इसलिए भाषा का और तथा या सही पहचानना जरूरी है। पहले वास्तविक संख्या रेखा पर हल क्षेत्र दिखाएँ, फिर पूर्णांक या प्राकृतिक प्रांत की शर्त हो तो संबंधित अलग बिंदु चुनें। केवल 1 बिंदु का हल {a} है। (a,a) रिक्त अंतराल है; उसे अकेले a के बराबर न समझें। ग्राफ बनाते समय पहले सीमा के स्थान, फिर उसका खुला या बंद होना और अंत में छायांकन की दिशा जाँचें। इन 3 जाँचों से उत्तर पढ़ने योग्य और सही रहता है।"
+      },
+      "formula": "−2<x≤5 ↔ (−2,5]",
+      "question": {
+        "en": "Write x≥−1 in interval notation.",
+        "hi": "x≥−1 को अंतराल रूप में लिखें।"
+      },
+      "answer": {
+        "en": "[−1,∞).",
+        "hi": "[−1,∞)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Systems and compound conditions",
+        "hi": "असमिका निकाय और संयुक्त शर्तें"
+      },
+      "body": {
+        "en": "A system asks for values satisfying every listed inequality. Solve each separately and intersect the sets. For 2x−1>3 and x+4≤9, the first gives x>2 and second x≤5, hence (2,5]. Conditions can be incompatible: x<1 and x≥3 have no common solution. They can also be redundant, when one already implies the other. A chained inequality may be split into two conditions with a shared middle expression. If a problem uses or, combine with union instead of intersection. When inequalities have different variable coefficients, solve each branch before comparing boundaries. Never combine endpoints simply by choosing the smaller numbers without considering direction and inclusion.",
+        "hi": "असमिका निकाय (System) में सभी दी हुई असमिकाएँ एक साथ पूरी करने वाले मान चाहिए। हर असमिका अलग हल करें और फिर हल समुच्चयों का सर्वनिष्ठ लें। 2x−1>3 से x>2 और x+4≤9 से x≤5 है; इसलिए साझा हल (2,5] है। कभी शर्तें असंगत होती हैं: x<1 तथा x≥3 का कोई साझा हल नहीं। कभी 1 शर्त दूसरी में पहले ही शामिल होती है; ऐसी अतिरिक्त शर्त क्षेत्र को नहीं बदलती। शृंखलाबद्ध असमिका को बीच वाले व्यंजक के साथ 2 अलग असमिकाओं में बाँट सकते हैं। प्रश्न में या हो, तो सर्वनिष्ठ के बजाय सम्मिलन लेना है। अलग चर गुणांकों वाली असमिकाओं को पहले अलग सरल करें, फिर सीमाओं की तुलना करें। केवल छोटी संख्याएँ चुन लेने से सही अंतराल नहीं मिलता; दिशा और सीमा की बराबरी भी महत्त्वपूर्ण हैं। संख्या रेखा पर दोनों हल अलग रंग में दिखाकर साझा भाग देखना उपयोगी है। अंतिम हल की 1 अंदर और 1 बाहर की संख्या से जाँच भाषा की गलत व्याख्या पकड़ सकती है।"
+      },
+      "formula": "(x>2) and (x≤5) ⇒ x∈(2,5]",
+      "question": {
+        "en": "Solve x≥4 and x<2 together.",
+        "hi": "x≥4 तथा x<2 को साथ हल करें।"
+      },
+      "answer": {
+        "en": "No solution:∅.",
+        "hi": "कोई हल नहीं:∅।"
+      }
+    },
+    {
+      "title": {
+        "en": "Two-variable graphs — visual enrichment",
+        "hi": "2-चर ग्राफ — अतिरिक्त दृश्य समझ"
+      },
+      "body": {
+        "en": "Visual enrichment: this connection supports coordinate reasoning and is not a claim that every two-variable exercise belongs to the prescribed core. The equation ax+by=c is a boundary line. The inequality ax+by<c selects one half-plane, excluding the line; ≤ includes it. Draw a dashed boundary for strict inequality and a solid boundary otherwise. Test a point not on the line, often (0,0), to select the correct side. For x+y≤4, the origin satisfies the inequality, so shade the side containing it and include the line. A system of such inequalities uses the common shaded region. Additional constraints x≥0,y≥0 restrict the region to the first quadrant and axes. This visual extension links inequalities to coordinate geometry; the exact prescribed exercise scope should still be checked in the current textbook and syllabus.",
+        "hi": "अतिरिक्त दृश्य समझ (Enrichment): यह संबंध निर्देशांक तर्क मजबूत करता है;इसका अर्थ हर2-चर अभ्यास को निर्धारित मूल पाठ्यक्रम में शामिल मानना नहीं है। 2 चरों में ax+by=c सीमा रेखा है। ax+by<c उस रेखा के 1 ओर का अर्धतल चुनता है और रेखा को छोड़ता है। ≤ होने पर सीमा भी शामिल है। कड़ी असमिका की सीमा टूटी और दूसरी की पूरी रेखा से दिखाएँ। सही ओर चुनने के लिए रेखा पर न स्थित कोई बिंदु, अक्सर (0,0), रखकर जाँचें। x+y≤4 में मूलबिंदु शर्त पूरी करता है, इसलिए मूलबिंदु वाली ओर छायांकन और सीमा शामिल होगी। कई असमिकाओं का निकाय साझा छायांकित क्षेत्र देता है। x≥0,y≥0 अतिरिक्त हों, तो प्रथम चतुर्थांश तथा उसकी अक्ष सीमाएँ लागू होंगी। यदि मूलबिंदु सीमा पर ही हो, तो जाँच के लिए कोई दूसरा बिंदु चुनें; सीमा का बिंदु पक्ष तय नहीं करता। यह आलेखीय विस्तार निर्देशांक ज्यामिति से संबंध दिखाता है। वर्तमान निर्धारित अभ्यास का दायरा पुस्तक और पाठ्यक्रम से मिलाएँ। चित्र में माप अनुमानित हैं; सटीक सदस्यता जाँच असमिका में निर्देशांक रखने से होती है।"
+      },
+      "formula": "ax+by≤c: boundary line included; ax+by<c: boundary excluded",
+      "question": {
+        "en": "Which side of x+y<3 contains the solution point (0,0)?",
+        "hi": "x+y<3 का कौन पक्ष हल बिंदु (0,0) रखता है?"
+      },
+      "answer": {
+        "en": "The half-plane containing the origin; the boundary itself is excluded.",
+        "hi": "मूलबिंदु वाला अर्धतल;सीमा रेखा बाहर है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Modelling limits and feasible values",
+        "hi": "सीमाओं का मॉडल और संभव मान"
+      },
+      "body": {
+        "en": "Words such as at most, at least, fewer than and more than translate to ≤,≥,< and >. If a notebook costs ₹30 and a pen ₹10, a budget of ₹200 with 4 pens gives 30n+40≤200. Hence n≤16/3, but n counts notebooks, so the largest permitted nonnegative integer is5. Rounding to the nearest integer would violate a budget in some problems; use the feasible direction. Quantities counting objects cannot be negative or fractional unless the context allows division. A correct algebraic interval must therefore be intersected with contextual restrictions. Write an answer in ordinary language with units and verify the limiting case in the original cost or capacity statement.",
+        "hi": "अधिकतम, कम-से-कम, से कम और से अधिक को क्रमशः ≤,≥,< और > में बदलते हैं। 1 कॉपी ₹30 और 1 कलम ₹10 की हो तथा 4 कलमों के साथ बजट ₹200 हो, तो 30n+40≤200 है। इससे n≤16/3 मिलता है। लेकिन n कॉपियों की संख्या है, इसलिए सबसे बड़ा अनुमत गैरऋणात्मक पूर्णांक 5 है। यहाँ सामान्य निकटतम पूर्णांकन नहीं, परिस्थिति के अनुसार संभव दिशा चुनते हैं। वस्तुओं की गिनती ऋणात्मक या भिन्नात्मक नहीं हो सकती, जब तक प्रसंग विभाजन की अनुमति न देता हो। इसलिए बीजगणितीय अंतराल को व्यावहारिक प्रतिबंधों के साथ मिलाना आवश्यक है। उत्तर सामान्य भाषा और इकाई में लिखें। 5 कॉपियों तथा 4 कलमों की लागत ₹190 और 6 कॉपियों की ₹220 है; इससे अधिकतम की पुष्टि होती है। मॉडल बनाते समय स्थिर शुल्क और प्रति वस्तु शुल्क अलग रखें। सही सूत्र के बाद भी संदर्भ भूलने से अंतिम संख्या गलत हो सकती है।"
+      },
+      "formula": "30n+40≤200; n∈W ⇒ n≤5",
+      "question": {
+        "en": "A ticket costs ₹35; budget is ₹150. What is the maximum ticket count?",
+        "hi": "टिकट ₹35 और बजट ₹150 है। अधिकतम कितने टिकट?"
+      },
+      "answer": {
+        "en": "35n≤150,n∈W gives at most4 tickets.",
+        "hi": "35n≤150,n∈W से अधिकतम4 टिकट।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Solve 5x−3<12.",
+        "hi": "5x−3<12 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "Add3:5x<15.",
+          "hi": "3 जोड़ें:5x<15।"
+        },
+        {
+          "en": "Divide by positive5; direction stays.",
+          "hi": "धनात्मक5 से भाग;दिशा वही।"
+        }
+      ],
+      "answer": {
+        "en": "x<3.",
+        "hi": "x<3।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Solve −4x+1≥9.",
+        "hi": "−4x+1≥9 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "Subtract1:−4x≥8.",
+          "hi": "1 घटाएँ:−4x≥8।"
+        },
+        {
+          "en": "Divide by−4 and reverse direction.",
+          "hi": "−4 से भाग देकर दिशा उलटें।"
+        }
+      ],
+      "answer": {
+        "en": "x≤−2.",
+        "hi": "x≤−2।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Solve (2x−1)/3≤(x+2)/2.",
+        "hi": "(2x−1)/3≤(x+2)/2 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "Multiply by positive6:4x−2≤3x+6.",
+          "hi": "धनात्मक6 से गुणा:4x−2≤3x+6।"
+        },
+        {
+          "en": "Subtract3x and add2.",
+          "hi": "3x घटाएँ और2 जोड़ें।"
+        }
+      ],
+      "answer": {
+        "en": "x≤8.",
+        "hi": "x≤8।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Solve 3x+2>8 and 2x−1≤9.",
+        "hi": "3x+2>8 तथा 2x−1≤9 साथ हल करें।"
+      },
+      "steps": [
+        {
+          "en": "First gives x>2; second gives x≤5.",
+          "hi": "पहली से x>2;दूसरी से x≤5।"
+        },
+        {
+          "en": "Take intersection of both real solution sets.",
+          "hi": "दोनों वास्तविक हल समुच्चयों का सर्वनिष्ठ लें।"
+        }
+      ],
+      "answer": {
+        "en": "x∈(2,5].",
+        "hi": "x∈(2,5]।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A taxi charges ₹50 plus ₹12 per km. With ₹200, what is the greatest whole-km distance affordable?",
+        "hi": "टैक्सी ₹50 और प्रति km ₹12 लेती है। ₹200 में अधिकतम पूर्ण km दूरी क्या है?"
+      },
+      "steps": [
+        {
+          "en": "Cost condition:50+12d≤200, d≥0.",
+          "hi": "लागत शर्त:50+12d≤200,d≥0।"
+        },
+        {
+          "en": "12d≤150 gives d≤12.5.",
+          "hi": "12d≤150 से d≤12.5।"
+        },
+        {
+          "en": "For whole km choose12, not13; costs ₹194 versus₹206.",
+          "hi": "पूर्ण km में12 लें,13 नहीं;लागत₹194 बनाम₹206।"
+        }
+      ],
+      "answer": {
+        "en": "12 km.",
+        "hi": "12 km।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Dividing −2x<6 by−2 gives",
+        "hi": "−2x<6 को −2 से भाग देने पर"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x<−3",
+            "hi": "x<−3"
+          },
+          "reason": {
+            "en": "The direction must reverse.",
+            "hi": "दिशा उलटनी चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "x>3",
+            "hi": "x>3"
+          },
+          "reason": {
+            "en": "6/(−2)=−3.",
+            "hi": "6/(−2)=−3।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=−3",
+            "hi": "x=−3"
+          },
+          "reason": {
+            "en": "Strict inequality excludes the boundary.",
+            "hi": "कड़ी असमिका सीमा छोड़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x>−3",
+            "hi": "x>−3"
+          },
+          "reason": {
+            "en": "A negative divisor reverses direction.",
+            "hi": "ऋणात्मक भाजक दिशा उलटता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "At most5 means",
+        "hi": "अधिकतम5 का अर्थ है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x≥5",
+            "hi": "x≥5"
+          },
+          "reason": {
+            "en": "This means at least5.",
+            "hi": "इसका अर्थ कम-से-कम5।"
+          }
+        },
+        {
+          "text": {
+            "en": "x>5",
+            "hi": "x>5"
+          },
+          "reason": {
+            "en": "This means more than5.",
+            "hi": "इसका अर्थ5 से अधिक।"
+          }
+        },
+        {
+          "text": {
+            "en": "x≤5",
+            "hi": "x≤5"
+          },
+          "reason": {
+            "en": "5 is allowed and larger values are not.",
+            "hi": "5 मान्य,बड़े मान निषिद्ध।"
+          }
+        },
+        {
+          "text": {
+            "en": "x<5",
+            "hi": "x<5"
+          },
+          "reason": {
+            "en": "This wrongly excludes5.",
+            "hi": "यह5 को बाहर करता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Solution of x+4≥7 is",
+        "hi": "x+4≥7 का हल है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "{3}",
+            "hi": "{3}"
+          },
+          "reason": {
+            "en": "Values greater than3 work too.",
+            "hi": "3 से बड़े मान भी सही।"
+          }
+        },
+        {
+          "text": {
+            "en": "[3,∞)",
+            "hi": "[3,∞)"
+          },
+          "reason": {
+            "en": "Subtract4: x≥3.",
+            "hi": "4 घटाएँ:x≥3।"
+          }
+        },
+        {
+          "text": {
+            "en": "(3,∞)",
+            "hi": "(3,∞)"
+          },
+          "reason": {
+            "en": "Equality at3 is allowed.",
+            "hi": "3 पर बराबरी मान्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "(−∞,3]",
+            "hi": "(−∞,3]"
+          },
+          "reason": {
+            "en": "The direction is reversed incorrectly.",
+            "hi": "दिशा गलत उलटी।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which point is excluded by x<2?",
+        "hi": "x<2 में कौन बिंदु बाहर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "A strict inequality excludes equality.",
+            "hi": "कड़ी असमिका बराबरी छोड़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "1<2.",
+            "hi": "1<2।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "0<2.",
+            "hi": "0<2।"
+          }
+        },
+        {
+          "text": {
+            "en": "−3",
+            "hi": "−3"
+          },
+          "reason": {
+            "en": "−3<2.",
+            "hi": "−3<2।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Solve 3x−2≤10.",
+        "hi": "3x−2≤10 हल करें।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x≥4",
+            "hi": "x≥4"
+          },
+          "reason": {
+            "en": "Dividing by positive3 preserves direction.",
+            "hi": "धनात्मक3 से दिशा वही।"
+          }
+        },
+        {
+          "text": {
+            "en": "x≤8/3",
+            "hi": "x≤8/3"
+          },
+          "reason": {
+            "en": "Add2, not subtract2.",
+            "hi": "2 जोड़ना था।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=4 only",
+            "hi": "केवल x=4"
+          },
+          "reason": {
+            "en": "All smaller real values also work.",
+            "hi": "छोटे वास्तविक मान भी मान्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "x≤4",
+            "hi": "x≤4"
+          },
+          "reason": {
+            "en": "3x≤12.",
+            "hi": "3x≤12।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "The system x>5 and x≤3 has",
+        "hi": "x>5 तथा x≤3 निकाय में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(3,5)",
+            "hi": "(3,5)"
+          },
+          "reason": {
+            "en": "These are below5, not above5.",
+            "hi": "ये5 से नीचे हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All real numbers",
+            "hi": "सभी वास्तविक"
+          },
+          "reason": {
+            "en": "Many inputs violate both restrictions.",
+            "hi": "कई निवेश शर्तें तोड़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No solution",
+            "hi": "कोई हल नहीं"
+          },
+          "reason": {
+            "en": "No number can satisfy both bounds.",
+            "hi": "कोई संख्या दोनों सीमाएँ नहीं मानती।"
+          }
+        },
+        {
+          "text": {
+            "en": "[3,5]",
+            "hi": "[3,5]"
+          },
+          "reason": {
+            "en": "Values here satisfy neither pair simultaneously.",
+            "hi": "ये दोनों साथ पूरी नहीं करते।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Visual enrichment: For x+y<4, the boundary line is",
+        "hi": "अतिरिक्त दृश्य समझ: x+y<4 की सीमा रेखा है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "y=0",
+            "hi": "y=0"
+          },
+          "reason": {
+            "en": "The x-axis is not the given boundary.",
+            "hi": "x-अक्ष दी सीमा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "x+y=4,excluded",
+            "hi": "x+y=4,बाहर"
+          },
+          "reason": {
+            "en": "Strict comparison excludes equality.",
+            "hi": "कड़ी तुलना बराबरी छोड़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x+y=4,included",
+            "hi": "x+y=4,शामिल"
+          },
+          "reason": {
+            "en": "Inclusion would require≤.",
+            "hi": "शामिल के लिए≤ चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=4 only",
+            "hi": "केवल x=4"
+          },
+          "reason": {
+            "en": "Both coordinates occur in the boundary equation.",
+            "hi": "सीमा में दोनों निर्देशांक हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which operation always preserves a<b?",
+        "hi": "कौन संक्रिया हमेशा a<b बनाए रखती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Add7 to both sides",
+            "hi": "दोनों ओर7 जोड़ना"
+          },
+          "reason": {
+            "en": "Equal translation preserves order.",
+            "hi": "समान खिसकाव क्रम रखता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Multiply both by−1 without reversing",
+            "hi": "−1 गुणा,दिशा न बदलना"
+          },
+          "reason": {
+            "en": "Negative multiplication reverses direction.",
+            "hi": "ऋणात्मक गुणन दिशा उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Divide both by0",
+            "hi": "दोनों को0 से भाग"
+          },
+          "reason": {
+            "en": "Division by0 is undefined.",
+            "hi": "0 से भाग अपरिभाषित।"
+          }
+        },
+        {
+          "text": {
+            "en": "Multiply by unknown x without cases",
+            "hi": "अज्ञात x से बिना स्थितियों के गुणा"
+          },
+          "reason": {
+            "en": "The sign of x affects the direction.",
+            "hi": "x का चिह्न दिशा प्रभावित करता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If 40n≤170 and n is a whole-number count, greatest n is",
+        "hi": "40n≤170 में n पूर्ण वस्तु संख्या हो,तो अधिकतम n है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "40×5=200 exceeds170.",
+            "hi": "40×5=200,170 से अधिक।"
+          }
+        },
+        {
+          "text": {
+            "en": "4.25",
+            "hi": "4.25"
+          },
+          "reason": {
+            "en": "A whole-object count must be an integer.",
+            "hi": "पूर्ण वस्तु संख्या पूर्णांक चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "4 also satisfies the constraint.",
+            "hi": "4 भी शर्त पूरी करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "n≤4.25 gives maximum integer4.",
+            "hi": "n≤4.25 से अधिकतम पूर्णांक4।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Write −1<x≤2 as an interval.",
+        "hi": "−1<x≤2 का अंतराल लिखें।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "[−1,2]",
+            "hi": "[−1,2]"
+          },
+          "reason": {
+            "en": "−1 must be excluded.",
+            "hi": "−1 बाहर चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "(−1,2)",
+            "hi": "(−1,2)"
+          },
+          "reason": {
+            "en": "2 must be included.",
+            "hi": "2 शामिल चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "(−1,2]",
+            "hi": "(−1,2]"
+          },
+          "reason": {
+            "en": "−1 excluded and2 included.",
+            "hi": "−1 बाहर,2 शामिल।"
+          }
+        },
+        {
+          "text": {
+            "en": "[−1,2)",
+            "hi": "[−1,2)"
+          },
+          "reason": {
+            "en": "Both endpoint conventions are reversed.",
+            "hi": "दोनों सिरे उलटे।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Solve 7−2x>1.",
+        "hi": "7−2x>1 हल करें।"
+      },
+      "answer": {
+        "en": "−2x>−6, so x<3.",
+        "hi": "−2x>−6 से x<3।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve 2≤x+1<6.",
+        "hi": "2≤x+1<6 हल करें।"
+      },
+      "answer": {
+        "en": "Subtract1 throughout:1≤x<5, or [1,5).",
+        "hi": "सभी ओर1 घटाएँ:1≤x<5,अर्थात[1,5)।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find integer solutions of −2<x≤2.",
+        "hi": "−2<x≤2 के पूर्णांक हल निकालें।"
+      },
+      "answer": {
+        "en": "{−1,0,1,2}.",
+        "hi": "{−1,0,1,2}।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why a negative multiplier reverses direction.",
+        "hi": "ऋणात्मक गुणक दिशा क्यों उलटता है?"
+      },
+      "answer": {
+        "en": "Multiplication by−1 reflects the number line, reversing left-right order; positive scaling preserves that reversal.",
+        "hi": "−1 से गुणन संख्या रेखा पर परावर्तन कर बायाँ-दायाँ क्रम उलटता है;धनात्मक पैमाना यह उलटाव रखता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Visual enrichment: For x+y≤2, does (1,1) belong? Does (2,1)?",
+        "hi": "अतिरिक्त दृश्य समझ: x+y≤2 में (1,1) तथा (2,1) हैं?"
+      },
+      "answer": {
+        "en": "(1,1) is on the included boundary; (2,1) gives3>2 and is outside.",
+        "hi": "(1,1) शामिल सीमा पर है;(2,1) में3>2,इसलिए बाहर।"
+      }
+    },
+    {
+      "question": {
+        "en": "A box holds at most25 kg; each packet weighs3 kg. Maximum packets?",
+        "hi": "डिब्बा अधिकतम25 kg रखता है;पैकेट3 kg है। अधिकतम पैकेट?"
+      },
+      "answer": {
+        "en": "3n≤25,n∈W; n≤8.333..., so8 packets.",
+        "hi": "3n≤25,n∈W;n≤8.333...,इसलिए8 पैकेट।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Reverse the comparison only for negative multiplication/division. Do not round a count beyond its feasible bound, confuse and with or, or close a strict endpoint.",
+    "hi": "केवल ऋणात्मक गुणा/भाग में तुलना उलटें। गिनती को संभव सीमा से ऊपर न करें;और तथा या न मिलाएँ;कड़ी सीमा बंद न करें।"
+  },
+  "revision": [
+    {
+      "en": "Solution sets contain all admissible values.",
+      "hi": "हल समुच्चय में सभी अनुमत मान आते हैं।"
+    },
+    {
+      "en": "Adding the same number preserves order.",
+      "hi": "समान संख्या जोड़ना क्रम बनाए रखता है।"
+    },
+    {
+      "en": "Negative multiplication or division reverses order.",
+      "hi": "ऋणात्मक गुणा या भाग क्रम उलटता है।"
+    },
+    {
+      "en": "And means intersection; or means union.",
+      "hi": "और सर्वनिष्ठ,या सम्मिलन बताता है।"
+    },
+    {
+      "en": "Apply domain and context restrictions after algebra.",
+      "hi": "बीजगणित के बाद प्रांत तथा प्रसंग प्रतिबंध लगाएँ।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Comparison words → linear model → valid order operations → interval → intersection → feasible answer.",
+    "hi": "तुलना भाषा → रैखिक मॉडल → वैध क्रम संक्रियाएँ → अंतराल → सर्वनिष्ठ → संभव उत्तर।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class XI, Chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh105.pdf"
+    },
+    {
+      "title": "UPMSP Class11 Mathematics syllabus2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/131-Maths-Class-11.pdf"
+    }
+  ],
+  "engine": "eleven-math",
+  "scenes": []
+}

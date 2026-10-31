@@ -1,0 +1,1510 @@
+{
+  "number": 3,
+  "id": "metals",
+  "title": {
+    "en": "Metals and Non-metals",
+    "hi": "धातु एवं अधातु"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "ten-reactivity",
+      "title": {
+        "en": "Displacement and reactivity",
+        "hi": "विस्थापन और सक्रियता"
+      },
+      "kind": "ten-metals",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Metal sample",
+            "hi": "धातु का नमूना"
+          },
+          "min": 0,
+          "max": 3,
+          "step": 1,
+          "initial": 0,
+          "unit": "index"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 3,
+      "goal": {
+        "en": "Compare four metal samples in copper sulphate.",
+        "hi": "कॉपर सल्फेट में चार धातुओं की तुलना करें।"
+      },
+      "observe": {
+        "en": "Read sample names: 0 Zn, 1 Fe, 2 Cu and 3 Ag. Watch whether copper deposits.",
+        "hi": "नमूने पढ़ें: 0 Zn, 1 Fe, 2 Cu और 3 Ag। कॉपर जमना देखें।"
+      },
+      "modelNote": {
+        "en": "The index chooses a metal, not atomic number or a measured reactivity. Reaction extent is symbolic.",
+        "hi": "सूचकांक धातु चुनता है, परमाणु क्रमांक या मापी सक्रियता नहीं। अभिक्रिया मात्रा प्रतीकात्मक है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Zn and Fe are above copper in the activity series and displace it; Cu and Ag do not.",
+          "hi": "Zn तथा Fe श्रेणी में कॉपर से ऊपर होकर विस्थापन करते हैं; Cu तथा Ag नहीं।"
+        }
+      },
+      "realLife": {
+        "en": "Metal displacement helps compare reactivity and obtain deposited metal.",
+        "hi": "विस्थापन सक्रियता की तुलना और धातु जमना समझाता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which sample cannot displace copper here?",
+          "hi": "यहाँ कौन कॉपर विस्थापित नहीं कर सकता?"
+        },
+        "options": [
+          {
+            "en": "Zn",
+            "hi": "Zn"
+          },
+          {
+            "en": "Fe",
+            "hi": "Fe"
+          },
+          {
+            "en": "Ag",
+            "hi": "Ag"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Zn and Fe are above copper in the activity series and displace it; Cu and Ag do not.",
+          "hi": "Zn तथा Fe श्रेणी में कॉपर से ऊपर होकर विस्थापन करते हैं; Cu तथा Ag नहीं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-reactivity-1",
+          "label": {
+            "en": "Set Metal sample to 0 index.",
+            "hi": "धातु का नमूना को 0 index करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-reactivity-2",
+          "label": {
+            "en": "Reach 3 index and compare.",
+            "hi": "3 index तक जाकर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 3
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 2
+          },
+          "text": {
+            "en": "Zn or Fe: copper can be displaced under the model conditions.",
+            "hi": "Zn या Fe: मॉडल दशाओं में कॉपर विस्थापित हो सकता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 2
+          },
+          "text": {
+            "en": "Cu or Ag: no copper displacement in the model.",
+            "hi": "Cu या Ag: मॉडल में कॉपर विस्थापन नहीं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-ionic",
+      "title": {
+        "en": "Ionic bond formation",
+        "hi": "आयनिक बंध का निर्माण"
+      },
+      "kind": "ten-metals",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Electron transfer progress",
+            "hi": "इलेक्ट्रॉन स्थानांतरण"
+          },
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "initial": 20,
+          "unit": "%"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Follow one electron from sodium to chlorine.",
+        "hi": "सोडियम से क्लोरीन तक एक इलेक्ट्रॉन देखें।"
+      },
+      "observe": {
+        "en": "At completion, count 10 electrons on Na+ and 18 on Cl−.",
+        "hi": "पूरा होने पर Na+ में 10 और Cl− में 18 इलेक्ट्रॉन गिनें।"
+      },
+      "modelNote": {
+        "en": "One atom pair introduces bonding; a real NaCl crystal is an extended ionic lattice. Paths and sizes are symbolic.",
+        "hi": "एक परमाणु जोड़ा परिचय है; वास्तविक NaCl विस्तृत आयनिक जालक है। रास्ता तथा आकार प्रतीकात्मक हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Sodium loses one electron and chlorine gains it; opposite charges attract while total electrons remain conserved.",
+          "hi": "सोडियम एक इलेक्ट्रॉन खोता और क्लोरीन पाती है; विपरीत आवेश आकर्षित होते हैं और कुल इलेक्ट्रॉन संरक्षित हैं।"
+        }
+      },
+      "realLife": {
+        "en": "NaCl crystals are familiar table salt, with properties arising from the ionic lattice.",
+        "hi": "साधारण नमक NaCl के गुण आयनिक जालक से आते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "What charge does chlorine obtain after gaining one electron?",
+          "hi": "एक इलेक्ट्रॉन पाकर क्लोरीन का आवेश क्या है?"
+        },
+        "options": [
+          {
+            "en": "+1",
+            "hi": "+1"
+          },
+          {
+            "en": "−1",
+            "hi": "−1"
+          },
+          {
+            "en": "0",
+            "hi": "0"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Sodium loses one electron and chlorine gains it; opposite charges attract while total electrons remain conserved.",
+          "hi": "सोडियम एक इलेक्ट्रॉन खोता और क्लोरीन पाती है; विपरीत आवेश आकर्षित होते हैं और कुल इलेक्ट्रॉन संरक्षित हैं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-ionic-1",
+          "label": {
+            "en": "Set Electron transfer progress to 0 %.",
+            "hi": "इलेक्ट्रॉन स्थानांतरण को 0 % करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-ionic-2",
+          "label": {
+            "en": "Reach 100 % and compare.",
+            "hi": "100 % तक जाकर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 100
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 100
+          },
+          "text": {
+            "en": "Transfer is being illustrated; total electrons in the pair remain unchanged.",
+            "hi": "स्थानांतरण दिखाया जा रहा है; जोड़े के कुल इलेक्ट्रॉन नहीं बदलते।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 100
+          },
+          "text": {
+            "en": "Complete: Na+ and Cl− attract; one electron has transferred.",
+            "hi": "पूरा: Na+ तथा Cl− आकर्षित हैं; एक इलेक्ट्रॉन स्थानांतरित है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-protection",
+      "title": {
+        "en": "Corrosion protection",
+        "hi": "संक्षारण से सुरक्षा"
+      },
+      "kind": "ten-metals",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Protective coating",
+            "hi": "सुरक्षात्मक परत"
+          },
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "initial": 20,
+          "unit": "%"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 7,
+      "goal": {
+        "en": "Relate intact coating coverage to reduced exposure.",
+        "hi": "अखंड परत के ढकाव को कम संपर्क से जोड़ें।"
+      },
+      "observe": {
+        "en": "Increase coverage and compare the exposed metal area.",
+        "hi": "ढकाव बढ़ाकर खुला धातु क्षेत्र तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Coverage is a qualitative barrier model, not a corrosion-rate law; zinc sacrificial action is described in notes.",
+        "hi": "ढकाव गुणात्मक बाधा मॉडल है, संक्षारण चाल का नियम नहीं; जिंक की बलिदानी सुरक्षा नोट्स में है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "An intact barrier reduces oxygen and moisture contact. Zinc can additionally protect sacrificially because it is more reactive than iron.",
+          "hi": "अखंड बाधा ऑक्सीजन तथा नमी संपर्क घटाती है। जिंक लोहे से अधिक सक्रिय होने से अतिरिक्त बलिदानी सुरक्षा देता है।"
+        }
+      },
+      "realLife": {
+        "en": "Painting gates and galvanising sheets are familiar protection methods.",
+        "hi": "फाटक पेंट करना और चादर यशदलेपन सामान्य सुरक्षा विधियाँ हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Galvanisation coats iron with:",
+          "hi": "यशदलेपन में लोहे पर चढ़ता है:"
+        },
+        "options": [
+          {
+            "en": "Zinc",
+            "hi": "जिंक"
+          },
+          {
+            "en": "Sugar",
+            "hi": "चीनी"
+          },
+          {
+            "en": "Chlorine gas",
+            "hi": "क्लोरीन गैस"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "An intact barrier reduces oxygen and moisture contact. Zinc can additionally protect sacrificially because it is more reactive than iron.",
+          "hi": "अखंड बाधा ऑक्सीजन तथा नमी संपर्क घटाती है। जिंक लोहे से अधिक सक्रिय होने से अतिरिक्त बलिदानी सुरक्षा देता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "ten-protection-1",
+          "label": {
+            "en": "Set Protective coating to 0 %.",
+            "hi": "सुरक्षात्मक परत को 0 % करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-protection-2",
+          "label": {
+            "en": "Reach 100 % and compare.",
+            "hi": "100 % तक जाकर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 100
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 50
+          },
+          "text": {
+            "en": "Lower coverage leaves more surface exposed in this barrier model.",
+            "hi": "कम ढकाव इस बाधा मॉडल में अधिक सतह खुली छोड़ता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 50
+          },
+          "text": {
+            "en": "Higher intact coverage reduces exposed area; scratches still matter.",
+            "hi": "अधिक अखंड ढकाव खुला क्षेत्र घटाता है; खरोंच फिर भी महत्वपूर्ण हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Reactant / model object",
+            "hi": "अभिकारक / मॉडल वस्तु"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Product / highlighted quantity",
+            "hi": "उत्पाद / प्रमुख राशि"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Use reactivity and electron transfer to explain properties, extraction and protection of metals.",
+    "hi": "सक्रियता और इलेक्ट्रॉन स्थानांतरण से धातुओं के गुण, निष्कर्षण और सुरक्षा समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Properties and important exceptions",
+        "hi": "गुण और महत्वपूर्ण अपवाद"
+      },
+      "paragraphs": [
+        {
+          "en": "Metals generally show lustre, malleability, ductility and good conduction of heat and electricity. Malleability means being beaten into sheets; ductility means being drawn into wires. Non-metals generally lack these properties, but physical classification has exceptions. Mercury is a liquid metal at room temperature; sodium is soft. Iodine is a lustrous non-metal, graphite conducts electricity and diamond is exceptionally hard. Therefore a single property cannot reliably identify every metal or non-metal. Properties help explain uses: electrical wiring requires conduction and ductility, while a cooking vessel needs good heat transfer. The protective plastic on a wire is chosen because it is insulating, not because the metal inside has stopped conducting. Compare materials using several observations rather than one stereotype.",
+          "hi": "धातुओं में सामान्यतः चमक, आघातवर्धनीयता (Malleability), तन्यता (Ductility) तथा ऊष्मा और विद्युत का अच्छा चालन होता है। पीटकर पतली चादर बना पाना आघातवर्धनीयता और खींचकर तार बना पाना तन्यता है। अधातुओं में ये गुण सामान्यतः नहीं होते, लेकिन अपवाद महत्वपूर्ण हैं। पारा सामान्य ताप पर द्रव धातु है और सोडियम मुलायम है। आयोडीन चमकीली अधातु, ग्रेफाइट विद्युत चालक और हीरा बहुत कठोर है। इसलिए केवल एक भौतिक गुण देखकर हर तत्व का वर्ग निश्चित नहीं कर सकते। गुण उपयोग समझाते हैं। विद्युत तार के लिए चालन के साथ तन्यता और खाना पकाने के पात्र के लिए ऊष्मा चालन उपयोगी है। तार की बाहरी प्लास्टिक परत इसलिए लगती है क्योंकि वह विद्युतरोधी है; इसका अर्थ भीतर की धातु का चालन बंद हो जाना नहीं है। पदार्थों की तुलना कई प्रेक्षणों के आधार पर करनी चाहिए। सामान्य प्रवृत्ति और अपवाद को साथ लिखने से वर्गीकरण सही रहता है।"
+        },
+        {
+          "en": "An exam may ask for a material suitable for making wires. Answer with the relevant pair of properties, good conduction and ductility, rather than listing every metal property. If asked whether all solids are metals, use a counterexample such as sulphur or carbon. The question controls the evidence needed. Remember also that a polished surface can change appearance without changing the identity of the element underneath.",
+          "hi": "यदि परीक्षा में तार बनाने के लिए उपयुक्त पदार्थ का कारण पूछें, तो अच्छे विद्युत चालन और तन्यता को जोड़ें। धातु के सभी गुण बिना संबंध के लिखना जरूरी नहीं है। सभी ठोस धातु हैं या नहीं पूछने पर सल्फर या कार्बन जैसा प्रतिउदाहरण दें। प्रश्न के अनुसार उचित प्रमाण चुनना चाहिए। सतह साफ या पॉलिश करने से चमक बदल सकती है, पर नीचे के तत्व की पहचान नहीं बदलती। इसलिए केवल बाहरी रंग और चमक को रासायनिक प्रकृति का पूरा प्रमाण न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Graphite is a non-metal that conducts electricity, so this property has an exception.",
+          "hi": "ग्रेफाइट अधातु होकर भी विद्युत चलाता है, इसलिए इस गुण का अपवाद है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why cannot electrical conduction alone identify every metal?",
+          "hi": "केवल विद्युत चालन से प्रत्येक धातु की पहचान क्यों नहीं होती?"
+        },
+        "answer": {
+          "en": "Graphite is a non-metal that conducts electricity, so this property has an exception.",
+          "hi": "ग्रेफाइट अधातु होकर भी विद्युत चलाता है, इसलिए इस गुण का अपवाद है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Oxides and reactions with oxygen",
+        "hi": "ऑक्साइड और ऑक्सीजन से अभिक्रियाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Most metals combine with oxygen to form metal oxides. Magnesium forms magnesium oxide; heated copper forms black copper oxide. Many metal oxides are basic and react with acids to form salt and water. Aluminium oxide and zinc oxide are amphoteric: they react with both acids and bases. Many non-metal oxides are acidic, but the statement is a general pattern rather than a universal definition. Reactivity with oxygen varies. Sodium and potassium react rapidly and are stored under kerosene; aluminium develops a thin protective oxide layer. The presence of oxygen alone does not make every metal burn in the same way. Surface condition, temperature and the identity of the metal affect what is observed and how quickly it occurs.",
+          "hi": "अधिकांश धातुएँ ऑक्सीजन से मिलकर धातु ऑक्साइड बनाती हैं। मैग्नीशियम से मैग्नीशियम ऑक्साइड और गर्म कॉपर से काला कॉपर ऑक्साइड बनता है। अनेक धातु ऑक्साइड क्षारकीय होते हैं तथा अम्ल से लवण और जल देते हैं। ऐलुमिनियम ऑक्साइड और जिंक ऑक्साइड उभयधर्मी (Amphoteric) हैं; ये अम्ल तथा क्षारक दोनों से अभिक्रिया करते हैं। अनेक अधातु ऑक्साइड अम्लीय होते हैं, लेकिन यह सामान्य प्रवृत्ति है, हर ऑक्साइड की सार्वभौमिक परिभाषा नहीं। ऑक्सीजन के प्रति धातुओं की सक्रियता अलग होती है। सोडियम और पोटैशियम बहुत तेजी से अभिक्रिया करते हैं तथा मिट्टी के तेल में रखे जाते हैं। ऐलुमिनियम की सतह पर पतली रक्षक ऑक्साइड परत बन जाती है। केवल ऑक्सीजन उपस्थित होने से प्रत्येक धातु एक समान नहीं जलेगी। सतह की दशा, ताप तथा धातु की पहचान प्रेक्षण और उसकी चाल को प्रभावित करते हैं। समीकरण के साथ उपयुक्त दशाएँ पढ़ना इसलिए जरूरी है।"
+        },
+        {
+          "en": "Compare the black coating on heated copper with the protective oxide on aluminium. Both involve oxygen, but a coating is not automatically equally protective on every metal. In an equation, oxygen appears as O2 because the reactant gas is molecular oxygen. To balance copper oxidation, write 2Cu + O2 → 2CuO. The coefficient balances atoms without changing the copper oxide formula or asserting that all copper oxides have the same composition.",
+          "hi": "गर्म कॉपर की काली परत की तुलना ऐलुमिनियम की रक्षक ऑक्साइड परत से करें। दोनों में ऑक्सीजन जुड़ी है, पर हर धातु की हर परत समान सुरक्षा नहीं देती। समीकरण में ऑक्सीजन O2 लिखते हैं क्योंकि अभिकारक गैस द्विपरमाणुक अणुओं में है। कॉपर के इस ऑक्सीकरण के लिए 2Cu + O2 → 2CuO संतुलित समीकरण है। गुणांक परमाणुओं को बराबर करता है; वह कॉपर ऑक्साइड का सूत्र नहीं बदलता और सभी कॉपर ऑक्साइड का संघटन एक होने का दावा भी नहीं करता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "It reacts with both acids and bases to produce salts and water.",
+          "hi": "यह अम्ल और क्षारक दोनों से अभिक्रिया करके लवण तथा जल बनाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What makes aluminium oxide amphoteric?",
+          "hi": "ऐलुमिनियम ऑक्साइड को उभयधर्मी क्यों कहते हैं?"
+        },
+        "answer": {
+          "en": "It reacts with both acids and bases to produce salts and water.",
+          "hi": "यह अम्ल और क्षारक दोनों से अभिक्रिया करके लवण तथा जल बनाता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Water, steam and dilute acids",
+        "hi": "जल, भाप और तनु अम्ल"
+      },
+      "paragraphs": [
+        {
+          "en": "Metals differ in their reactions with water. Sodium reacts vigorously with cold water; calcium reacts less vigorously. Magnesium reacts with hot water, whereas aluminium, zinc and iron can react with steam under suitable conditions. Copper, silver and gold do not react with water in the school comparisons. Reactive metals above hydrogen can generally release hydrogen from suitable dilute non-oxidising acids. Nitric acid usually does not give hydrogen because it oxidises the hydrogen formed to water; very dilute nitric acid with magnesium or manganese is an important exception. Do not apply one acid rule to every concentration and every acid. A reaction with steam can form an oxide, while reaction with cold water can form a hydroxide. The product must match the stated conditions.",
+          "hi": "धातुओं की जल से अभिक्रिया समान नहीं होती। सोडियम ठंडे जल से तीव्र और कैल्सियम अपेक्षाकृत कम तीव्र अभिक्रिया करता है। मैग्नीशियम गर्म जल से, जबकि ऐलुमिनियम, जिंक और लोहा उपयुक्त दशाओं में भाप से अभिक्रिया कर सकते हैं। विद्यालयी तुलना में कॉपर, सिल्वर और गोल्ड जल से अभिक्रिया नहीं करते। हाइड्रोजन से ऊपर की सक्रिय धातुएँ सामान्यतः उपयुक्त तनु गैर-ऑक्सीकारक अम्लों से हाइड्रोजन निकाल सकती हैं। नाइट्रिक अम्ल सामान्यतः हाइड्रोजन नहीं देता क्योंकि बनी हाइड्रोजन को ऑक्सीकृत करके जल बना देता है। बहुत तनु नाइट्रिक अम्ल के साथ मैग्नीशियम और मैंगनीज महत्वपूर्ण अपवाद हैं। इसलिए प्रत्येक अम्ल तथा प्रत्येक सांद्रता पर एक ही नियम लागू नहीं करना चाहिए। भाप से अभिक्रिया में धातु ऑक्साइड और ठंडे जल से अभिक्रिया में हाइड्रॉक्साइड मिल सकता है। उत्पादों को प्रश्न में दी दशाओं के अनुसार लिखें। धातु की सक्रियता के साथ माध्यम और ताप भी समझना जरूरी है।"
+        },
+        {
+          "en": "For iron with steam, the balanced equation is 3Fe + 4H2O → Fe3O4 + 4H2. Writing Fe(OH)2 merely because water is present would ignore the stated steam condition. Similarly, copper remaining unchanged in dilute hydrochloric acid does not mean that copper can never undergo any chemical reaction. A negative observation is specific to the reagents and conditions used. This prevents overgeneralising a classroom comparison into an absolute rule.",
+          "hi": "लोहे की भाप से अभिक्रिया के लिए 3Fe + 4H2O → Fe3O4 + 4H2 लिखते हैं। केवल जल उपस्थित देखकर Fe(OH)2 लिख देना भाप की दी हुई दशा की उपेक्षा होगी। इसी तरह तनु हाइड्रोक्लोरिक अम्ल में कॉपर न बदले तो इसका अर्थ यह नहीं कि कॉपर कोई रासायनिक अभिक्रिया कभी नहीं कर सकता। परिवर्तन न दिखना प्रयुक्त अभिकारकों और दशाओं के संदर्भ में है। यह सावधानी कक्षा की सीमित तुलना को बिना आधार पूर्ण सार्वभौमिक नियम बनाने से रोकती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "It acts as an oxidising agent and usually oxidises the hydrogen to water.",
+          "hi": "यह ऑक्सीकारक है और सामान्यतः हाइड्रोजन को ऑक्सीकृत करके जल बना देता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is nitric acid usually an exception to hydrogen evolution?",
+          "hi": "नाइट्रिक अम्ल से सामान्यतः हाइड्रोजन क्यों नहीं मिलती?"
+        },
+        "answer": {
+          "en": "It acts as an oxidising agent and usually oxidises the hydrogen to water.",
+          "hi": "यह ऑक्सीकारक है और सामान्यतः हाइड्रोजन को ऑक्सीकृत करके जल बना देता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "The reactivity series and displacement",
+        "hi": "सक्रियता श्रेणी और विस्थापन"
+      },
+      "paragraphs": [
+        {
+          "en": "The reactivity series orders common metals by their tendency to lose electrons and form positive ions in the school comparisons. A more reactive metal displaces a less reactive metal from a suitable aqueous salt solution. Zinc and iron can displace copper from copper sulphate; silver cannot. Copper in its own salt solution does not produce displacement. Hydrogen is included as a reference although it is not a metal. The series is not a table of densities, atomic numbers or reaction speeds. Zinc being above iron does not mean every zinc sample reacts visibly faster than every iron sample under all conditions. Use the relative position to predict whether a stated displacement is possible, and then write the product salt with the correct formula.",
+          "hi": "सक्रियता श्रेणी (Reactivity series) विद्यालयी तुलना में धातुओं के इलेक्ट्रॉन खोकर धनायन बनने की प्रवृत्ति का क्रम देती है। अधिक सक्रिय धातु उपयुक्त जलीय लवण विलयन से कम सक्रिय धातु को विस्थापित कर सकती है। जिंक तथा लोहा कॉपर सल्फेट से कॉपर निकालते हैं, जबकि सिल्वर ऐसा नहीं करती। अपने ही लवण विलयन में कॉपर से कोई विस्थापन नहीं होता। हाइड्रोजन धातु नहीं होते हुए भी संदर्भ के रूप में श्रेणी में रखा जाता है। यह घनत्व, परमाणु क्रमांक या निश्चित अभिक्रिया चाल की सूची नहीं है। जिंक का लोहे से ऊपर होना यह नहीं बताता कि हर दशा में हर जिंक नमूना हर लोहे के नमूने से तेज दिखाई देगा। पहले सापेक्ष स्थान से विस्थापन की सम्भावना पहचानें, फिर उत्पाद लवण का सही सूत्र लिखें। विलयन, धातु तथा उपयुक्त दशाओं का संबंध बनाए रखें। सतह की परत या सांद्रता प्रेक्षण को प्रभावित कर सकती है।"
+        },
+        {
+          "en": "In Zn + CuSO4 → ZnSO4 + Cu, zinc becomes part of the dissolved salt and copper becomes free metal. The sulphate group is retained; it does not disappear because the metal changed. Compare this with a silver sample: the model should show no ordinary displacement. The slider values 0, 1, 2 and 3 simply choose sample names. They are not a numerical measurement of reactivity and have no unit of chemical activity.",
+          "hi": "Zn + CuSO4 → ZnSO4 + Cu में जिंक विलयन के लवण का भाग बनता है और कॉपर स्वतंत्र धातु बनती है। सल्फेट समूह बना रहता है; धातु बदलने से वह गायब नहीं होता। सिल्वर नमूना चुनने पर सामान्य विस्थापन नहीं दिखना चाहिए। नियंत्रण के मान 0, 1, 2 और 3 केवल धातु चुनने के संकेत हैं। वे सक्रियता का संख्यात्मक मापन नहीं हैं और रासायनिक सक्रियता की इकाई नहीं रखते। सूत्र और नमूना नाम पढ़ें, सूचकांक से वैज्ञानिक राशि न निकालें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Zn and Fe do; Cu and Ag do not under the model conditions.",
+          "hi": "मॉडल की दशाओं में Zn तथा Fe करते हैं; Cu तथा Ag नहीं करते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which of Zn, Fe, Cu and Ag displace copper from CuSO4?",
+          "hi": "Zn, Fe, Cu और Ag में कौन CuSO4 से कॉपर विस्थापित करते हैं?"
+        },
+        "answer": {
+          "en": "Zn and Fe do; Cu and Ag do not under the model conditions.",
+          "hi": "मॉडल की दशाओं में Zn तथा Fe करते हैं; Cu तथा Ag नहीं करते।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ionic bonding and properties",
+        "hi": "आयनिक बंध और गुण"
+      },
+      "paragraphs": [
+        {
+          "en": "A sodium atom has electron arrangement 2,8,1 and a chlorine atom 2,8,7. Sodium transfers one electron to chlorine, forming Na+ with 2,8 and Cl− with 2,8,8. Oppositely charged ions attract and form an ionic compound. A sodium chloride crystal is a repeating lattice, not an isolated pair of atoms held like a tiny molecule in empty space. Ionic compounds generally have high melting points because strong attractions must be overcome. They conduct electricity when molten or dissolved in water because ions can move, but not as solids where ions are fixed in position. Dissolving a solid and melting it are different processes even though both can make ionic conduction possible. Charge balance gives a neutral formula unit.",
+          "hi": "सोडियम परमाणु का इलेक्ट्रॉन विन्यास 2,8,1 और क्लोरीन का 2,8,7 है। सोडियम 1 इलेक्ट्रॉन क्लोरीन को देकर Na+ बनता है, जिसका विन्यास 2,8 है। क्लोरीन Cl− बनती है, जिसका विन्यास 2,8,8 है। विपरीत आवेश वाले आयनों का आकर्षण आयनिक यौगिक बनाता है। सोडियम क्लोराइड क्रिस्टल दो परमाणुओं के अकेले छोटे अणु जैसा नहीं, बल्कि दोहराती जालक संरचना है। आयनिक यौगिकों का गलनांक सामान्यतः अधिक होता है क्योंकि प्रबल आकर्षण को पार करना पड़ता है। पिघले या जलीय विलयन में आयन चल सकते हैं, इसलिए विद्युत चालन होता है। ठोस में आयन निश्चित स्थानों पर होने से सामान्यतः चालन नहीं होता। घुलना और पिघलना अलग प्रक्रियाएँ हैं, हालांकि दोनों में आयनों को गति मिल सकती है। सूत्र इकाई का कुल आवेश शून्य होना चाहिए। इलेक्ट्रॉन स्थानांतरण में नाभिक नहीं बदलता, इसलिए सोडियम परमाणु का नाभिक दूसरे तत्व में नहीं बदल जाता।"
+        },
+        {
+          "en": "Count electrons before and after transfer: the sodium–chlorine pair initially contains 28 electrons, and the ions together still contain 28. One electron has changed location, not vanished. Proton numbers remain unchanged. The attraction in a crystal acts among many ions, so the two-sphere scene is only a bonding introduction. It cannot show the full three-dimensional lattice, lattice energy or the real size ratio of the ions.",
+          "hi": "स्थानांतरण से पहले सोडियम-क्लोरीन जोड़े में कुल 28 इलेक्ट्रॉन हैं और बाद में दोनों आयनों में भी कुल 28 ही हैं। एक इलेक्ट्रॉन ने स्थान बदला है, वह नष्ट नहीं हुआ। प्रोटॉन संख्या नहीं बदलती। क्रिस्टल में आकर्षण कई आयनों के बीच होता है, इसलिए दो गोले वाला दृश्य बंध बनने का परिचय मात्र है। वह पूरी त्रिविमीय जालक संरचना, उसकी ऊर्जा या आयनों के वास्तविक आकार अनुपात को नहीं दिखाता। प्रतीकात्मक चित्र से आवेश और इलेक्ट्रॉन गिनना सीखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Solid ions cannot move freely; molten ions can move and carry charge.",
+          "hi": "ठोस में आयन स्वतंत्र गति नहीं कर सकते; पिघली अवस्था में चलकर आवेश ले जाते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does solid NaCl not conduct but molten NaCl does?",
+          "hi": "ठोस NaCl विद्युत नहीं चलाता, पर पिघला NaCl क्यों चलाता है?"
+        },
+        "answer": {
+          "en": "Solid ions cannot move freely; molten ions can move and carry charge.",
+          "hi": "ठोस में आयन स्वतंत्र गति नहीं कर सकते; पिघली अवस्था में चलकर आवेश ले जाते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ores and extraction strategies",
+        "hi": "अयस्क और निष्कर्षण की विधियाँ"
+      },
+      "paragraphs": [
+        {
+          "en": "A mineral is a naturally occurring substance containing an element or its compounds. An ore is a mineral from which a metal can be extracted conveniently and economically. Unwanted earthy impurities are called gangue. Extraction depends on reactivity. Highly reactive metals such as sodium and aluminium are obtained through electrolytic reduction rather than ordinary carbon reduction. Metals of medium reactivity are often obtained by converting ores to oxides and then reducing them. Sulphide ores are generally roasted in air; carbonate ores are generally calcined with limited or no air. Low-reactivity metals may occur native or be obtained with simpler reduction steps. These are broad strategies; a single universal extraction equation cannot replace the different ores, reactions and process conditions.",
+          "hi": "खनिज (Mineral) प्रकृति में पाया जाने वाला तत्व या उसके यौगिक वाला पदार्थ है। अयस्क (Ore) ऐसा खनिज है जिससे धातु का सुविधापूर्वक और आर्थिक रूप से निष्कर्षण हो सके। अवांछित मिट्टी जैसी अशुद्धियाँ गैंग कहलाती हैं। निष्कर्षण की विधि धातु की सक्रियता पर निर्भर करती है। सोडियम और ऐलुमिनियम जैसी अत्यधिक सक्रिय धातुएँ साधारण कार्बन अपचयन से नहीं, विद्युत अपचयन से प्राप्त की जाती हैं। मध्यम सक्रिय धातुओं के अयस्क अक्सर पहले ऑक्साइड में बदलकर फिर अपचयित करते हैं। सल्फाइड अयस्क को सामान्यतः वायु में भर्जित करते हैं; कार्बोनेट अयस्क को सीमित या बिना वायु निस्तापित करते हैं। कम सक्रिय धातुएँ प्राकृतिक मुक्त अवस्था में मिल सकती हैं या सरल अपचयन से प्राप्त होती हैं। ये व्यापक रणनीतियाँ हैं, सभी धातुओं का एक ही निष्कर्षण समीकरण नहीं है। सही अयस्क, अभिक्रिया तथा प्रक्रिया की दशा पहचानना आवश्यक है। अधिक सक्रिय धातु का ऑक्साइड सामान्यतः अधिक स्थिर होने से सामान्य अपचायक पर्याप्त नहीं होता।"
+        },
+        {
+          "en": "For zinc, compare 2ZnS + 3O2 → 2ZnO + 2SO2 with ZnCO3 → ZnO + CO2. Both produce zinc oxide, yet the starting ore and gaseous products differ. Reduction such as ZnO + C → Zn + CO is a separate step. Keep ore conversion and metal reduction distinct when explaining the sequence. An oxide appearing as an intermediate does not mean the metal has already been obtained.",
+          "hi": "जिंक के लिए 2ZnS + 3O2 → 2ZnO + 2SO2 की तुलना ZnCO3 → ZnO + CO2 से करें। दोनों में जिंक ऑक्साइड बनता है, लेकिन प्रारम्भिक अयस्क और गैसीय उत्पाद अलग हैं। ZnO + C → Zn + CO जैसा अपचयन अगला अलग चरण है। क्रम समझाते समय अयस्क को ऑक्साइड में बदलना और उससे धातु प्राप्त करना अलग लिखें। मध्यवर्ती ऑक्साइड बन जाना शुद्ध धातु मिल जाने के बराबर नहीं है। प्रत्येक चरण के पदार्थ पहचानने से प्रक्रिया याद रखना सरल होता है।"
+        },
+        {
+          "en": "Aluminium can reduce iron oxide in the thermite reaction: Fe2O3 + 2Al → Al2O3 + 2Fe + heat. The heat released is sufficient to produce molten iron and is useful in joining railway tracks. This illustrates that a more reactive metal can serve as a reducing agent. It does not imply that aluminium itself can be extracted from its oxide by carbon.",
+          "hi": "थर्मिट अभिक्रिया में ऐलुमिनियम आयरन ऑक्साइड का अपचयन करता है: Fe2O3 + 2Al → Al2O3 + 2Fe + ऊष्मा। अधिक ऊष्मा से पिघला लोहा मिलता है, जिसका उपयोग रेल पटरियाँ जोड़ने में होता है। अधिक सक्रिय धातु अपचायक हो सकती है। इसका अर्थ यह नहीं कि ऐलुमिनियम को उसके ऑक्साइड से कार्बन द्वारा प्राप्त कर सकते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Roasting usually heats sulphides in air; calcination heats carbonates in limited or no air.",
+          "hi": "भर्जन में सल्फाइड को वायु में, निस्तापन में कार्बोनेट को सीमित या बिना वायु गर्म करते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How do roasting and calcination differ?",
+          "hi": "भर्जन और निस्तापन में क्या अंतर है?"
+        },
+        "answer": {
+          "en": "Roasting usually heats sulphides in air; calcination heats carbonates in limited or no air.",
+          "hi": "भर्जन में सल्फाइड को वायु में, निस्तापन में कार्बोनेट को सीमित या बिना वायु गर्म करते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Refining and alloys",
+        "hi": "परिष्करण और मिश्रधातुएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Extraction does not always yield sufficiently pure metal for its intended use. In electrolytic refining of copper, impure copper is the anode, a thin pure copper sheet is the cathode, and an appropriate copper salt solution is the electrolyte. Copper dissolves from the anode and deposits on the cathode. Some insoluble impurities collect as anode mud; other impurities can remain in solution. An alloy is a homogeneous mixture of a metal with other metals or a non-metal. Alloys can improve hardness, corrosion resistance and other useful properties. Brass contains copper and zinc; bronze contains copper and tin. Steel contains iron and a small amount of carbon. An alloy is not automatically a pure compound with one fixed chemical formula.",
+          "hi": "निष्कर्षण से मिली धातु हर उपयोग के लिए पर्याप्त शुद्ध हो, यह जरूरी नहीं है। कॉपर के विद्युत अपघटनी परिष्करण (Electrolytic refining) में अशुद्ध कॉपर ऐनोड, शुद्ध कॉपर की पतली चादर कैथोड तथा उपयुक्त कॉपर लवण विलयन विद्युत अपघट्य होता है। कॉपर ऐनोड से घुलता है और कैथोड पर जमता है। कुछ अविलेय अशुद्धियाँ ऐनोड पंक के रूप में नीचे जमा होती हैं; दूसरी अशुद्धियाँ विलयन में रह सकती हैं। मिश्रधातु (Alloy) धातु का दूसरी धातुओं या किसी अधातु के साथ समांगी मिश्रण है। उससे कठोरता, संक्षारण प्रतिरोध तथा अन्य उपयोगी गुण बदले जा सकते हैं। पीतल में कॉपर तथा जिंक और काँसे में कॉपर तथा टिन होते हैं। इस्पात में लोहा और थोड़ी कार्बन होती है। मिश्रधातु को अपने आप निश्चित सूत्र वाला शुद्ध यौगिक नहीं मानते। पदार्थ चुनते समय अपेक्षित गुण देखना चाहिए; सबसे शुद्ध धातु हर काम के लिए सर्वोत्तम पदार्थ नहीं होती।"
+        },
+        {
+          "en": "Follow the mass trend qualitatively: the impure copper electrode loses copper, and the pure sheet gains deposited copper. Do not say every impurity deposits on the cathode, since separation is the purpose of refining. For alloys, connect composition with a property: adding suitable elements can make iron more useful for tools or resistant to corrosion. The name of an alloy identifies a material family rather than proving all samples have identical percentages.",
+          "hi": "द्रव्यमान की दिशा गुणात्मक रूप से देखें। अशुद्ध इलेक्ट्रोड से कॉपर निकलता और शुद्ध चादर पर जमता है। सभी अशुद्धियाँ कैथोड पर आ जाती हैं कहना गलत होगा, क्योंकि उन्हें अलग करना ही परिष्करण का उद्देश्य है। मिश्रधातु में संघटन को गुण से जोड़ें। उपयुक्त तत्व मिलाने से लोहा औजारों के लिए अधिक उपयोगी या संक्षारण प्रतिरोधी हो सकता है। किसी मिश्रधातु का नाम पदार्थ के परिवार को बताता है; इससे सभी नमूनों में घटकों का प्रतिशत बिल्कुल समान होना सिद्ध नहीं होता।"
+        },
+        {
+          "en": "In the standard copper refining arrangement, the electrolyte is acidified copper sulphate solution. Stainless steel contains iron with chromium and nickel, while solder is commonly an alloy of lead and tin in the school examples. Gold used for jewellery is often alloyed because pure gold is soft. These examples connect processing with the properties needed for a particular use.",
+          "hi": "कॉपर परिष्करण की मानक व्यवस्था में अम्लीकृत कॉपर सल्फेट विलयन विद्युत अपघट्य है। स्टेनलेस इस्पात में लोहे के साथ क्रोमियम तथा निकेल होते हैं। विद्यालयी उदाहरण में सोल्डर सामान्यतः लेड और टिन की मिश्रधातु है। आभूषण के सोने में अन्य धातुएँ मिलाते हैं क्योंकि शुद्ध सोना मुलायम है। ये उदाहरण उपयोग के आवश्यक गुणों को पदार्थ प्रसंस्करण से जोड़ते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Impure copper is the anode and a thin pure copper sheet is the cathode.",
+          "hi": "अशुद्ध कॉपर ऐनोड और शुद्ध कॉपर की पतली चादर कैथोड होती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which electrodes are used in copper refining?",
+          "hi": "कॉपर परिष्करण में कौन-से इलेक्ट्रोड होते हैं?"
+        },
+        "answer": {
+          "en": "Impure copper is the anode and a thin pure copper sheet is the cathode.",
+          "hi": "अशुद्ध कॉपर ऐनोड और शुद्ध कॉपर की पतली चादर कैथोड होती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Corrosion and protective strategies",
+        "hi": "संक्षारण और सुरक्षा की रणनीतियाँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Iron rusting requires oxygen and moisture. Other metals corrode differently: silver tarnishes through sulphur compounds, while copper can acquire a green coating containing basic copper carbonate in moist air. Painting and oiling create barriers; galvanisation coats iron with zinc. Zinc can protect iron even when the coating is slightly damaged because zinc is more reactive. Aluminium forms a protective oxide layer, and anodising thickens it. Alloying can also improve corrosion resistance, as in stainless steel. A barrier coating and sacrificial protection are different mechanisms and should not be explained as identical. The protective-coating slider shows a qualitative trend in exposed area; it does not measure the actual life of a metal object or model every electrochemical effect.",
+          "hi": "लोहे में जंग के लिए ऑक्सीजन तथा नमी आवश्यक हैं। दूसरी धातुओं का संक्षारण अलग हो सकता है। सिल्वर पर सल्फर यौगिकों से कालापन और कॉपर पर नम वायु में क्षारकीय कॉपर कार्बोनेट वाली हरी परत बन सकती है। पेंट और तेल बाधा बनाते हैं; यशदलेपन (Galvanisation) में लोहे पर जिंक चढ़ाते हैं। जिंक अधिक सक्रिय होने से हल्की खरोंच के बाद भी लोहे की रक्षा में सहायता कर सकता है। ऐलुमिनियम की ऑक्साइड परत रक्षक है और ऐनोडीकरण से उसे मोटा करते हैं। मिश्रधातु बनाना, जैसे स्टेनलेस इस्पात, भी संक्षारण प्रतिरोध बढ़ा सकता है। केवल बाधा बनाकर सुरक्षा और अधिक सक्रिय धातु द्वारा बलिदानी सुरक्षा अलग तंत्र हैं; दोनों का कारण एक जैसा नहीं लिखना चाहिए। परत वाला नियंत्रण केवल खुले क्षेत्रफल का गुणात्मक प्रभाव दिखाता है। वह धातु की वास्तविक आयु या सभी विद्युतरासायनिक प्रभावों का मापन नहीं है। वस्तु के उपयोग और वातावरण के अनुसार सुरक्षा की विधि चुनते हैं।"
+        },
+        {
+          "en": "Compare painted iron with zinc-coated iron. Intact layers reduce contact in both cases, but once a scratch exposes iron, ordinary paint has no sacrificial metal to act. The difference explains why the statement “all coatings protect only by sealing air out” is incomplete. Prevention also conserves resources by reducing repeated replacement of objects. In an answer, name the method and link it to its mechanism instead of merely listing protection names.",
+          "hi": "पेंट लगे लोहे की तुलना जिंक चढ़े लोहे से करें। पूरी परत दोनों में संपर्क घटाती है, लेकिन खरोंच से लोहा खुलने पर साधारण पेंट में बलिदानी धातु नहीं होती। इसलिए सभी परतें केवल वायु रोककर सुरक्षा देती हैं कहना अधूरा है। संक्षारण रोकने से वस्तुओं को बार-बार बदलना कम होता है और संसाधन बचते हैं। उत्तर में विधि का नाम लिखने के साथ उसका तंत्र जोड़ें। केवल सुरक्षा की विधियों की सूची से यह स्पष्ट नहीं होता कि कौन-सी विधि किस परिस्थिति में उपयोगी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Zinc is more reactive and can corrode preferentially, providing sacrificial protection.",
+          "hi": "जिंक अधिक सक्रिय है और पहले संक्षारित होकर बलिदानी सुरक्षा दे सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can zinc coating protect iron even after a small scratch?",
+          "hi": "जिंक की परत हल्की खरोंच के बाद भी लोहे की सुरक्षा कैसे कर सकती है?"
+        },
+        "answer": {
+          "en": "Zinc is more reactive and can corrode preferentially, providing sacrificial protection.",
+          "hi": "जिंक अधिक सक्रिय है और पहले संक्षारित होकर बलिदानी सुरक्षा दे सकता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Zn + CuSO4 → ZnSO4 + Cu",
+      "meaning": {
+        "en": "Zinc displaces copper from its salt.",
+        "hi": "जिंक लवण से कॉपर विस्थापित करता है।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    },
+    {
+      "expression": "Na → Na+ + e−; Cl + e− → Cl−",
+      "meaning": {
+        "en": "A sodium atom transfers one electron to a chlorine atom.",
+        "hi": "सोडियम परमाणु क्लोरीन को एक इलेक्ट्रॉन देता है।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    },
+    {
+      "expression": "2ZnS + 3O2 → 2ZnO + 2SO2",
+      "meaning": {
+        "en": "Roasting zinc sulphide produces zinc oxide.",
+        "hi": "जिंक सल्फाइड का भर्जन जिंक ऑक्साइड देता है।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    },
+    {
+      "expression": "ZnCO3 → ZnO + CO2",
+      "meaning": {
+        "en": "Calcination converts zinc carbonate to zinc oxide.",
+        "hi": "निस्तापन जिंक कार्बोनेट को ऑक्साइड में बदलता है।"
+      },
+      "units": {
+        "en": "Stoichiometric coefficients are ratios; no physical unit.",
+        "hi": "गुणांक अनुपात हैं; उनकी भौतिक इकाई नहीं है।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not classify every element from one property, confuse mobile ions with electrons in molten salts, or treat every coating as identical.",
+    "hi": "एक गुण से हर तत्व न पहचानें; पिघले लवण में गतिशील आयन को इलेक्ट्रॉन न कहें; हर परत का तंत्र समान नहीं।"
+  },
+  "summary": [
+    {
+      "en": "Physical trends have important exceptions.",
+      "hi": "भौतिक प्रवृत्तियों के महत्वपूर्ण अपवाद हैं।"
+    },
+    {
+      "en": "Reactivity predicts suitable displacement reactions.",
+      "hi": "सक्रियता उचित विस्थापन बताती है।"
+    },
+    {
+      "en": "Ionic bonding involves transfer and attraction of ions.",
+      "hi": "आयनिक बंध में स्थानांतरण और आयन आकर्षण हैं।"
+    },
+    {
+      "en": "Extraction strategy depends on metal reactivity.",
+      "hi": "निष्कर्षण विधि सक्रियता पर निर्भर है।"
+    },
+    {
+      "en": "Refining, alloying and coating serve different purposes.",
+      "hi": "परिष्करण, मिश्रधातु और परत के उद्देश्य अलग हैं।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Why cannot electrical conduction alone identify every metal?",
+        "hi": "केवल विद्युत चालन से प्रत्येक धातु की पहचान क्यों नहीं होती?"
+      },
+      "given": {
+        "en": "Graphite conducts electricity despite being a non-metal.",
+        "hi": "ग्रेफाइट अधातु होकर भी विद्युत चलाता है।"
+      },
+      "find": {
+        "en": "A justified explanation using the stated conditions.",
+        "hi": "दी गई दशाओं पर आधारित कारण सहित व्याख्या।"
+      },
+      "formula": {
+        "en": "Properties and important exceptions: apply the definitions and identify the relevant species.",
+        "hi": "गुण और महत्वपूर्ण अपवाद: परिभाषा लगाएं और संबंधित पदार्थ पहचानें।"
+      },
+      "steps": [
+        {
+          "en": "An exam may ask for a material suitable for making wires. Answer with the relevant pair of properties, good conduction and ductility, rather than listing every metal property. If asked whether all solids are metals, use a counterexample such as sulphur or carbon. The question controls the evidence needed. Remember also that a polished surface can change appearance without changing the identity of the element underneath.",
+          "hi": "यदि परीक्षा में तार बनाने के लिए उपयुक्त पदार्थ का कारण पूछें, तो अच्छे विद्युत चालन और तन्यता को जोड़ें। धातु के सभी गुण बिना संबंध के लिखना जरूरी नहीं है। सभी ठोस धातु हैं या नहीं पूछने पर सल्फर या कार्बन जैसा प्रतिउदाहरण दें। प्रश्न के अनुसार उचित प्रमाण चुनना चाहिए। सतह साफ या पॉलिश करने से चमक बदल सकती है, पर नीचे के तत्व की पहचान नहीं बदलती। इसलिए केवल बाहरी रंग और चमक को रासायनिक प्रकृति का पूरा प्रमाण न मानें।"
+        },
+        {
+          "en": "Graphite is a non-metal that conducts electricity, so this property has an exception.",
+          "hi": "ग्रेफाइट अधातु होकर भी विद्युत चलाता है, इसलिए इस गुण का अपवाद है।"
+        }
+      ],
+      "answer": {
+        "en": "Graphite is a non-metal that conducts electricity, so this property has an exception.",
+        "hi": "ग्रेफाइट अधातु होकर भी विद्युत चलाता है, इसलिए इस गुण का अपवाद है।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "What makes aluminium oxide amphoteric?",
+        "hi": "ऐलुमिनियम ऑक्साइड को उभयधर्मी क्यों कहते हैं?"
+      },
+      "given": {
+        "en": "Aluminium oxide reacts with acids and bases.",
+        "hi": "ऐलुमिनियम ऑक्साइड अम्ल तथा क्षारक से अभिक्रिया करता है।"
+      },
+      "find": {
+        "en": "A justified explanation using the stated conditions.",
+        "hi": "दी गई दशाओं पर आधारित कारण सहित व्याख्या।"
+      },
+      "formula": {
+        "en": "Oxides and reactions with oxygen: apply the definitions and identify the relevant species.",
+        "hi": "ऑक्साइड और ऑक्सीजन से अभिक्रियाएँ: परिभाषा लगाएं और संबंधित पदार्थ पहचानें।"
+      },
+      "steps": [
+        {
+          "en": "Compare the black coating on heated copper with the protective oxide on aluminium. Both involve oxygen, but a coating is not automatically equally protective on every metal. In an equation, oxygen appears as O2 because the reactant gas is molecular oxygen. To balance copper oxidation, write 2Cu + O2 → 2CuO. The coefficient balances atoms without changing the copper oxide formula or asserting that all copper oxides have the same composition.",
+          "hi": "गर्म कॉपर की काली परत की तुलना ऐलुमिनियम की रक्षक ऑक्साइड परत से करें। दोनों में ऑक्सीजन जुड़ी है, पर हर धातु की हर परत समान सुरक्षा नहीं देती। समीकरण में ऑक्सीजन O2 लिखते हैं क्योंकि अभिकारक गैस द्विपरमाणुक अणुओं में है। कॉपर के इस ऑक्सीकरण के लिए 2Cu + O2 → 2CuO संतुलित समीकरण है। गुणांक परमाणुओं को बराबर करता है; वह कॉपर ऑक्साइड का सूत्र नहीं बदलता और सभी कॉपर ऑक्साइड का संघटन एक होने का दावा भी नहीं करता।"
+        },
+        {
+          "en": "It reacts with both acids and bases to produce salts and water.",
+          "hi": "यह अम्ल और क्षारक दोनों से अभिक्रिया करके लवण तथा जल बनाता है।"
+        }
+      ],
+      "answer": {
+        "en": "It reacts with both acids and bases to produce salts and water.",
+        "hi": "यह अम्ल और क्षारक दोनों से अभिक्रिया करके लवण तथा जल बनाता है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Which of Zn, Fe, Cu and Ag displace copper from CuSO4?",
+        "hi": "Zn, Fe, Cu और Ag में कौन CuSO4 से कॉपर विस्थापित करते हैं?"
+      },
+      "given": {
+        "en": "Compare Zn, Fe, Cu and Ag samples in CuSO4.",
+        "hi": "CuSO4 में Zn, Fe, Cu और Ag नमूने तुलना करें।"
+      },
+      "find": {
+        "en": "A justified explanation using the stated conditions.",
+        "hi": "दी गई दशाओं पर आधारित कारण सहित व्याख्या।"
+      },
+      "formula": {
+        "en": "The reactivity series and displacement: apply the definitions and identify the relevant species.",
+        "hi": "सक्रियता श्रेणी और विस्थापन: परिभाषा लगाएं और संबंधित पदार्थ पहचानें।"
+      },
+      "steps": [
+        {
+          "en": "In Zn + CuSO4 → ZnSO4 + Cu, zinc becomes part of the dissolved salt and copper becomes free metal. The sulphate group is retained; it does not disappear because the metal changed. Compare this with a silver sample: the model should show no ordinary displacement. The slider values 0, 1, 2 and 3 simply choose sample names. They are not a numerical measurement of reactivity and have no unit of chemical activity.",
+          "hi": "Zn + CuSO4 → ZnSO4 + Cu में जिंक विलयन के लवण का भाग बनता है और कॉपर स्वतंत्र धातु बनती है। सल्फेट समूह बना रहता है; धातु बदलने से वह गायब नहीं होता। सिल्वर नमूना चुनने पर सामान्य विस्थापन नहीं दिखना चाहिए। नियंत्रण के मान 0, 1, 2 और 3 केवल धातु चुनने के संकेत हैं। वे सक्रियता का संख्यात्मक मापन नहीं हैं और रासायनिक सक्रियता की इकाई नहीं रखते। सूत्र और नमूना नाम पढ़ें, सूचकांक से वैज्ञानिक राशि न निकालें।"
+        },
+        {
+          "en": "Zn and Fe do; Cu and Ag do not under the model conditions.",
+          "hi": "मॉडल की दशाओं में Zn तथा Fe करते हैं; Cu तथा Ag नहीं करते।"
+        }
+      ],
+      "answer": {
+        "en": "Zn and Fe do; Cu and Ag do not under the model conditions.",
+        "hi": "मॉडल की दशाओं में Zn तथा Fe करते हैं; Cu तथा Ag नहीं करते।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Count electrons in Na+ and Cl−.",
+        "hi": "Na+ तथा Cl− में इलेक्ट्रॉन गिनें।"
+      },
+      "given": {
+        "en": "Neutral Na has 11 electrons and Cl has 17. One electron transfers.",
+        "hi": "उदासीन Na में 11 और Cl में 17 इलेक्ट्रॉन हैं। एक इलेक्ट्रॉन स्थानांतरित है।"
+      },
+      "find": {
+        "en": "Ion electron counts and total.",
+        "hi": "आयनों के इलेक्ट्रॉन तथा कुल संख्या।"
+      },
+      "formula": {
+        "en": "Cation loses electrons; anion gains electrons.",
+        "hi": "धनायन इलेक्ट्रॉन खोता है; ऋणायन पाता है।"
+      },
+      "steps": [
+        {
+          "en": "Na+: 11 − 1 = 10 electrons.",
+          "hi": "Na+: 11 − 1 = 10 इलेक्ट्रॉन।"
+        },
+        {
+          "en": "Cl−: 17 + 1 = 18 electrons; total 28.",
+          "hi": "Cl−: 17 + 1 = 18 इलेक्ट्रॉन; कुल 28।"
+        }
+      ],
+      "answer": {
+        "en": "Na+ has 10, Cl− has 18; total 28 electrons is conserved.",
+        "hi": "Na+ में 10, Cl− में 18; कुल 28 इलेक्ट्रॉन संरक्षित हैं।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Why can zinc coating protect iron even after a small scratch?",
+        "hi": "जिंक की परत हल्की खरोंच के बाद भी लोहे की सुरक्षा कैसे कर सकती है?"
+      },
+      "given": {
+        "en": "Compare scratched paint with a scratched zinc coating.",
+        "hi": "खरोंचे हुए पेंट की खरोंची जिंक परत से तुलना करें।"
+      },
+      "find": {
+        "en": "A justified explanation using the stated conditions.",
+        "hi": "दी गई दशाओं पर आधारित कारण सहित व्याख्या।"
+      },
+      "formula": {
+        "en": "Corrosion and protective strategies: apply the definitions and identify the relevant species.",
+        "hi": "संक्षारण और सुरक्षा की रणनीतियाँ: परिभाषा लगाएं और संबंधित पदार्थ पहचानें।"
+      },
+      "steps": [
+        {
+          "en": "Compare painted iron with zinc-coated iron. Intact layers reduce contact in both cases, but once a scratch exposes iron, ordinary paint has no sacrificial metal to act. The difference explains why the statement “all coatings protect only by sealing air out” is incomplete. Prevention also conserves resources by reducing repeated replacement of objects. In an answer, name the method and link it to its mechanism instead of merely listing protection names.",
+          "hi": "पेंट लगे लोहे की तुलना जिंक चढ़े लोहे से करें। पूरी परत दोनों में संपर्क घटाती है, लेकिन खरोंच से लोहा खुलने पर साधारण पेंट में बलिदानी धातु नहीं होती। इसलिए सभी परतें केवल वायु रोककर सुरक्षा देती हैं कहना अधूरा है। संक्षारण रोकने से वस्तुओं को बार-बार बदलना कम होता है और संसाधन बचते हैं। उत्तर में विधि का नाम लिखने के साथ उसका तंत्र जोड़ें। केवल सुरक्षा की विधियों की सूची से यह स्पष्ट नहीं होता कि कौन-सी विधि किस परिस्थिति में उपयोगी है।"
+        },
+        {
+          "en": "Zinc is more reactive and can corrode preferentially, providing sacrificial protection.",
+          "hi": "जिंक अधिक सक्रिय है और पहले संक्षारित होकर बलिदानी सुरक्षा दे सकता है।"
+        }
+      ],
+      "answer": {
+        "en": "Zinc is more reactive and can corrode preferentially, providing sacrificial protection.",
+        "hi": "जिंक अधिक सक्रिय है और पहले संक्षारित होकर बलिदानी सुरक्षा दे सकता है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which property means drawing a material into wires?",
+        "hi": "तार में खींचे जाने का गुण क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Malleability",
+            "hi": "आघातवर्धनीयता"
+          },
+          "reason": {
+            "en": "Incorrect. Malleability means forming sheets.",
+            "hi": "गलत। इसका अर्थ चादर बनना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ductility",
+            "hi": "तन्यता"
+          },
+          "reason": {
+            "en": "Correct. Ductility is the ability to form wires.",
+            "hi": "सही। तन्यता तार बनने का गुण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sonority",
+            "hi": "ध्वानिकता"
+          },
+          "reason": {
+            "en": "Incorrect. Sonority concerns sound on striking.",
+            "hi": "गलत। यह चोट पर ध्वनि से संबंधित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Brittleness",
+            "hi": "भंगुरता"
+          },
+          "reason": {
+            "en": "Incorrect. Brittleness means breaking readily.",
+            "hi": "गलत। भंगुरता आसानी से टूटना है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which non-metal conducts electricity?",
+        "hi": "कौन-सी अधातु विद्युत चलाती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Sulphur",
+            "hi": "सल्फर"
+          },
+          "reason": {
+            "en": "Incorrect. Sulphur is not the conducting example.",
+            "hi": "गलत। सल्फर चालक उदाहरण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Phosphorus",
+            "hi": "फॉस्फोरस"
+          },
+          "reason": {
+            "en": "Incorrect. Phosphorus is not the conducting example.",
+            "hi": "गलत। फॉस्फोरस चालक उदाहरण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Graphite",
+            "hi": "ग्रेफाइट"
+          },
+          "reason": {
+            "en": "Correct. Graphite is the important exception.",
+            "hi": "सही। ग्रेफाइट महत्वपूर्ण अपवाद है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Oxygen gas",
+            "hi": "ऑक्सीजन गैस"
+          },
+          "reason": {
+            "en": "Incorrect. Ordinary oxygen gas is not this conductor.",
+            "hi": "गलत। सामान्य ऑक्सीजन गैस यह चालक नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which oxide is amphoteric?",
+        "hi": "कौन-सा ऑक्साइड उभयधर्मी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Al2O3",
+            "hi": "Al2O3"
+          },
+          "reason": {
+            "en": "Correct. It reacts with acids and bases.",
+            "hi": "सही। यह अम्ल तथा क्षारक दोनों से अभिक्रिया करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Na2O",
+            "hi": "Na2O"
+          },
+          "reason": {
+            "en": "Incorrect. Sodium oxide is basic.",
+            "hi": "गलत। सोडियम ऑक्साइड क्षारकीय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CO2",
+            "hi": "CO2"
+          },
+          "reason": {
+            "en": "Incorrect. Carbon dioxide is acidic oxide.",
+            "hi": "गलत। कार्बन डाइऑक्साइड अम्लीय ऑक्साइड है।"
+          }
+        },
+        {
+          "text": {
+            "en": "SO2",
+            "hi": "SO2"
+          },
+          "reason": {
+            "en": "Incorrect. Sulphur dioxide is acidic oxide.",
+            "hi": "गलत। सल्फर डाइऑक्साइड अम्लीय ऑक्साइड है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which sample will not displace Cu from aqueous CuSO4?",
+        "hi": "कौन जलीय CuSO4 से Cu विस्थापित नहीं करेगा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zn",
+            "hi": "Zn"
+          },
+          "reason": {
+            "en": "Incorrect. Zinc is more reactive than copper.",
+            "hi": "गलत। जिंक कॉपर से अधिक सक्रिय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Fe",
+            "hi": "Fe"
+          },
+          "reason": {
+            "en": "Incorrect. Iron is more reactive than copper.",
+            "hi": "गलत। लोहा कॉपर से अधिक सक्रिय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mg",
+            "hi": "Mg"
+          },
+          "reason": {
+            "en": "Incorrect. Magnesium is more reactive than copper.",
+            "hi": "गलत। मैग्नीशियम कॉपर से अधिक सक्रिय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ag",
+            "hi": "Ag"
+          },
+          "reason": {
+            "en": "Correct. Silver is less reactive than copper.",
+            "hi": "सही। सिल्वर कॉपर से कम सक्रिय है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Sodium forms Na+ by:",
+        "hi": "सोडियम Na+ कैसे बनता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Gaining 1 electron",
+            "hi": "1 इलेक्ट्रॉन पाकर"
+          },
+          "reason": {
+            "en": "Incorrect. Electron gain would make a negative ion.",
+            "hi": "गलत। इलेक्ट्रॉन पाना ऋणायन बनाएगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Losing 1 electron",
+            "hi": "1 इलेक्ट्रॉन खोकर"
+          },
+          "reason": {
+            "en": "Correct. Losing one negative electron gives +1 charge.",
+            "hi": "सही। एक ऋण इलेक्ट्रॉन खोने से +1 आवेश मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Losing 1 proton",
+            "hi": "1 प्रोटॉन खोकर"
+          },
+          "reason": {
+            "en": "Incorrect. Its nucleus does not change in bonding.",
+            "hi": "गलत। बंध बनने में नाभिक नहीं बदलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Gaining 1 proton",
+            "hi": "1 प्रोटॉन पाकर"
+          },
+          "reason": {
+            "en": "Incorrect. Proton gain would change the element.",
+            "hi": "गलत। प्रोटॉन बढ़ने से तत्व बदल जाएगा।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Molten NaCl conducts because:",
+        "hi": "पिघला NaCl क्यों चालक है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Ions can move",
+            "hi": "आयन गति कर सकते हैं"
+          },
+          "reason": {
+            "en": "Correct. Mobile ions carry charge.",
+            "hi": "सही। गतिशील आयन आवेश ले जाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every atom becomes copper",
+            "hi": "हर परमाणु कॉपर बनता है"
+          },
+          "reason": {
+            "en": "Incorrect. Melting does not change sodium into copper.",
+            "hi": "गलत। पिघलना सोडियम को कॉपर नहीं बनाता।"
+          }
+        },
+        {
+          "text": {
+            "en": "All ions disappear",
+            "hi": "सभी आयन गायब होते हैं"
+          },
+          "reason": {
+            "en": "Incorrect. Ions remain and become mobile.",
+            "hi": "गलत। आयन रहते हैं और गतिशील होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Solid ions were already freely mobile",
+            "hi": "ठोस आयन पहले से स्वतंत्र थे"
+          },
+          "reason": {
+            "en": "Incorrect. Solid lattice ions are fixed in position.",
+            "hi": "गलत। ठोस जालक में आयन स्थिर स्थान पर हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Roasting is commonly used for:",
+        "hi": "भर्जन सामान्यतः किसके लिए है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Carbonate ore without air",
+            "hi": "बिना वायु कार्बोनेट अयस्क"
+          },
+          "reason": {
+            "en": "Incorrect. This describes calcination more closely.",
+            "hi": "गलत। यह निस्तापन से अधिक मेल खाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pure gold dissolving in water",
+            "hi": "शुद्ध गोल्ड का जल में घुलना"
+          },
+          "reason": {
+            "en": "Incorrect. This is not roasting.",
+            "hi": "गलत। यह भर्जन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sulphide ore heated in air",
+            "hi": "वायु में गर्म सल्फाइड अयस्क"
+          },
+          "reason": {
+            "en": "Correct. Roasting converts sulphide towards oxide.",
+            "hi": "सही। भर्जन सल्फाइड को ऑक्साइड में बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Plastic melting",
+            "hi": "प्लास्टिक पिघलाना"
+          },
+          "reason": {
+            "en": "Incorrect. Plastic melting is unrelated.",
+            "hi": "गलत। प्लास्टिक पिघलना असंबंधित है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "In copper refining, impure copper is:",
+        "hi": "कॉपर परिष्करण में अशुद्ध कॉपर है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The cathode",
+            "hi": "कैथोड"
+          },
+          "reason": {
+            "en": "Incorrect. Pure copper sheet is the cathode.",
+            "hi": "गलत। शुद्ध कॉपर चादर कैथोड है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The electrolyte solvent",
+            "hi": "विद्युत अपघट्य का विलायक"
+          },
+          "reason": {
+            "en": "Incorrect. The electrolyte is an appropriate salt solution.",
+            "hi": "गलत। विद्युत अपघट्य उपयुक्त लवण विलयन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A plastic separator",
+            "hi": "प्लास्टिक विभाजक"
+          },
+          "reason": {
+            "en": "Incorrect. Impure copper is an electrode, not plastic.",
+            "hi": "गलत। अशुद्ध कॉपर इलेक्ट्रोड है, प्लास्टिक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The anode",
+            "hi": "ऐनोड"
+          },
+          "reason": {
+            "en": "Correct. Copper dissolves from the impure anode.",
+            "hi": "सही। अशुद्ध ऐनोड से कॉपर घुलता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Brass is mainly an alloy of:",
+        "hi": "पीतल मुख्यतः किसकी मिश्रधातु है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Copper and tin",
+            "hi": "कॉपर और टिन"
+          },
+          "reason": {
+            "en": "Incorrect. Copper–tin is bronze.",
+            "hi": "गलत। कॉपर-टिन काँसा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Copper and zinc",
+            "hi": "कॉपर और जिंक"
+          },
+          "reason": {
+            "en": "Correct. Copper–zinc is brass.",
+            "hi": "सही। कॉपर-जिंक पीतल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Iron and carbon",
+            "hi": "लोहा और कार्बन"
+          },
+          "reason": {
+            "en": "Incorrect. This describes steel.",
+            "hi": "गलत। यह इस्पात का संघटन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sodium and chlorine",
+            "hi": "सोडियम और क्लोरीन"
+          },
+          "reason": {
+            "en": "Incorrect. Sodium chloride is an ionic compound.",
+            "hi": "गलत। सोडियम क्लोराइड आयनिक यौगिक है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Galvanisation protects iron with:",
+        "hi": "यशदलेपन में लोहे पर किसकी परत लगती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zinc",
+            "hi": "जिंक"
+          },
+          "reason": {
+            "en": "Correct. Zinc provides a coating and sacrificial protection.",
+            "hi": "सही। जिंक परत और बलिदानी सुरक्षा देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sugar",
+            "hi": "चीनी"
+          },
+          "reason": {
+            "en": "Incorrect. Sugar is not galvanising metal.",
+            "hi": "गलत। चीनी यशदलेपन की धातु नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sodium chloride",
+            "hi": "सोडियम क्लोराइड"
+          },
+          "reason": {
+            "en": "Incorrect. Salt can promote corrosion in moisture.",
+            "hi": "गलत। नमी में नमक संक्षारण बढ़ा सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sulphur powder only",
+            "hi": "केवल सल्फर पाउडर"
+          },
+          "reason": {
+            "en": "Incorrect. Sulphur powder is not zinc coating.",
+            "hi": "गलत। सल्फर पाउडर जिंक परत नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why cannot electrical conduction alone identify every metal?",
+        "hi": "केवल विद्युत चालन से प्रत्येक धातु की पहचान क्यों नहीं होती?"
+      },
+      "answer": {
+        "en": "Graphite is a non-metal that conducts electricity, so this property has an exception.",
+        "hi": "ग्रेफाइट अधातु होकर भी विद्युत चलाता है, इसलिए इस गुण का अपवाद है।"
+      }
+    },
+    {
+      "question": {
+        "en": "What makes aluminium oxide amphoteric?",
+        "hi": "ऐलुमिनियम ऑक्साइड को उभयधर्मी क्यों कहते हैं?"
+      },
+      "answer": {
+        "en": "It reacts with both acids and bases to produce salts and water.",
+        "hi": "यह अम्ल और क्षारक दोनों से अभिक्रिया करके लवण तथा जल बनाता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is nitric acid usually an exception to hydrogen evolution?",
+        "hi": "नाइट्रिक अम्ल से सामान्यतः हाइड्रोजन क्यों नहीं मिलती?"
+      },
+      "answer": {
+        "en": "It acts as an oxidising agent and usually oxidises the hydrogen to water.",
+        "hi": "यह ऑक्सीकारक है और सामान्यतः हाइड्रोजन को ऑक्सीकृत करके जल बना देता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does solid NaCl not conduct but molten NaCl does?",
+        "hi": "ठोस NaCl विद्युत नहीं चलाता, पर पिघला NaCl क्यों चलाता है?"
+      },
+      "answer": {
+        "en": "Solid ions cannot move freely; molten ions can move and carry charge.",
+        "hi": "ठोस में आयन स्वतंत्र गति नहीं कर सकते; पिघली अवस्था में चलकर आवेश ले जाते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "How do roasting and calcination differ?",
+        "hi": "भर्जन और निस्तापन में क्या अंतर है?"
+      },
+      "answer": {
+        "en": "Roasting usually heats sulphides in air; calcination heats carbonates in limited or no air.",
+        "hi": "भर्जन में सल्फाइड को वायु में, निस्तापन में कार्बोनेट को सीमित या बिना वायु गर्म करते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can zinc coating protect iron even after a small scratch?",
+        "hi": "जिंक की परत हल्की खरोंच के बाद भी लोहे की सुरक्षा कैसे कर सकती है?"
+      },
+      "answer": {
+        "en": "Zinc is more reactive and can corrode preferentially, providing sacrificial protection.",
+        "hi": "जिंक अधिक सक्रिय है और पहले संक्षारित होकर बलिदानी सुरक्षा दे सकता है।"
+      }
+    }
+  ],
+  "conceptMap": "गुण व अपवाद → सक्रियता → विस्थापन → आयन व जालक → अयस्क व निष्कर्षण → परिष्करण → मिश्रधातु व संक्षारण सुरक्षा",
+  "conceptMapEn": "Properties and exceptions → reactivity → displacement → ions and lattice → ores and extraction → refining → alloys and corrosion protection",
+  "editionBasis": {
+    "en": "Original study companion aligned to the NCERT Science Class 10, reprint 2026–27, and UP Board syllabus. Diagrams are explanatory models, not experimental data.",
+    "hi": "NCERT विज्ञान कक्षा 10, पुनर्मुद्रण 2026–27 तथा UP बोर्ड पाठ्यक्रम पर आधारित मौलिक अध्ययन सहायक। चित्र समझाने वाले मॉडल हैं, प्रयोग के मापे हुए आँकड़े नहीं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Science Class 10, Chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc103.pdf"
+    },
+    {
+      "title": "UP Board Class 10 Science syllabus",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ]
+}

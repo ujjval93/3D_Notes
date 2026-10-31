@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p,low})=>{g.box(0,0,0,1,1,.6);let speed=Math.sqrt(p[0]/300),count=low?28:56;for(let i=0;i<count;i++){let start=i<count/2?-.65:.65,x=reflect(start+Math.sin(i*13+1)*t*.15*speed,.9),y=reflect(Math.sin(i*6)+Math.cos(i*7+1)*t*.12*speed,.8),z=Math.cos(i*4)*.5;g.sphere(x,y,z,.05,i<count/2?C.green:C.gold)}return[read('Temperature','तापमान',p[0],'K'),read('Motion speed relative to 300 K','300 K के सापेक्ष गति',fmt(speed),'×')];};

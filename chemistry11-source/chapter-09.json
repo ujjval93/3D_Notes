@@ -1,0 +1,1488 @@
+{
+  "number": 9,
+  "id": "chemistry11-09",
+  "title": {
+    "en": "Hydrocarbons",
+    "hi": "हाइड्रोकार्बन"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "chem11-09-1",
+      "title": {
+        "en": "Homologous series",
+        "hi": "समजातीय श्रेणी"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 24
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Carbon atom count",
+            "hi": "कार्बन परमाणुओं की संख्या"
+          },
+          "min": 2,
+          "max": 8,
+          "step": 1,
+          "initial": 3,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Compare atom counts in three restricted hydrocarbon families.",
+        "hi": "3 सीमित हाइड्रोकार्बन परिवारों में परमाणु गिनती तुलना करें।"
+      },
+      "observe": {
+        "en": "Change n from2 to8; compare acyclic alkane,monoalkene and monoalkyne formulas.",
+        "hi": "n को 2 से 8 बदलें; अचक्रीय ऐल्केन, मोनोऐल्कीन और मोनोऐल्काइन सूत्र तुलना करें।"
+      },
+      "modelNote": {
+        "en": "The formulas assume no ring and only the stated single unsaturation pattern. They do not enumerate isomers or classify every formula uniquely.",
+        "hi": "सूत्र में वलय नहीं और केवल बताई एक असंतृप्ति व्यवस्था है। ये सभी समावयवी या हर सूत्र का एकमात्र वर्ग नहीं बताते।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Hydrogen counts are2n+2,2n and2n−2 under these assumptions.",
+          "hi": "इन मान्यताओं में H गिनती 2n+2, 2n तथा 2n−2 है।"
+        }
+      },
+      "realLife": {
+        "en": "Related fuel molecules illustrate homologous-series comparisons.",
+        "hi": "संबंधित ईंधन अणुओं से समजातीय श्रेणी की तुलना समझ आती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At n=3,the acyclic alkane formula is?",
+          "hi": "n=3 पर अचक्रीय ऐल्केन सूत्र क्या है?"
+        },
+        "options": [
+          {
+            "en": "C3H6",
+            "hi": "C3H6"
+          },
+          {
+            "en": "C3H8",
+            "hi": "C3H8"
+          },
+          {
+            "en": "C3H4",
+            "hi": "C3H4"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "2×3+2=8 hydrogens.",
+          "hi": "2×3+2=8 H हैं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-09-1-low",
+          "label": {
+            "en": "Explore the lowest setting 2 .",
+            "hi": "सबसे निचली सेटिंग 2  देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2
+          }
+        },
+        {
+          "id": "chem11-09-1-high",
+          "label": {
+            "en": "Compare the highest setting 8 .",
+            "hi": "सबसे ऊपरी सेटिंग 8  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 7.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 5.0
+          },
+          "text": {
+            "en": "Change n from2 to8; compare acyclic alkane,monoalkene and monoalkyne formulas.",
+            "hi": "n को 2 से 8 बदलें; अचक्रीय ऐल्केन, मोनोऐल्कीन और मोनोऐल्काइन सूत्र तुलना करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 5.0
+          },
+          "text": {
+            "en": "Hydrogen counts are2n+2,2n and2n−2 under these assumptions.",
+            "hi": "इन मान्यताओं में H गिनती 2n+2, 2n तथा 2n−2 है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-09-2",
+      "title": {
+        "en": "Ethane conformation",
+        "hi": "एथेन की संरूपणा"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 25
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Dihedral angle",
+            "hi": "द्वितल कोण"
+          },
+          "min": 0,
+          "max": 360,
+          "step": 30,
+          "initial": 60,
+          "unit": "°"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Relate ethane rotation to a periodic torsional-energy model.",
+        "hi": "एथेन घूर्णन को आवर्ती मरोड़ी ऊर्जा मॉडल से जोड़ें।"
+      },
+      "observe": {
+        "en": "Use0° as eclipsed and60° as staggered; compare repeated positions.",
+        "hi": "0° को ग्रस्त और 60° को सांतरित लें; दोहराए स्थान तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Eindex=(1+cos3θ)/2 is dimensionless and symbolic,not a measured energy curve. Connectivity stays unchanged.",
+        "hi": "Eindex=(1+cos3θ)/2 विमाहीन सांकेतिक सूचकांक है, मापी ऊर्जा वक्र नहीं। संयोजकता समान है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The index is highest at eclipsed0°,120°,240° and lowest at staggered60°,180°,300°.",
+          "hi": "सूचकांक ग्रस्त 0°,120°,240° पर अधिकतम तथा सांतरित 60°,180°,300° पर न्यूनतम है।"
+        }
+      },
+      "realLife": {
+        "en": "Conformation helps explain how single-bond rotation changes relative energy.",
+        "hi": "संरूपणा बताती है कि एकल आबंध घूर्णन से सापेक्ष ऊर्जा कैसे बदलती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which reference angle gives a staggered minimum?",
+          "hi": "कौन-सा संदर्भ कोण सांतरित न्यूनतम देता है?"
+        },
+        "options": [
+          {
+            "en": "0°",
+            "hi": "0°"
+          },
+          {
+            "en": "60°",
+            "hi": "60°"
+          },
+          {
+            "en": "120°",
+            "hi": "120°"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "At60°,cos180°=−1 and the index is0.",
+          "hi": "60° पर cos180°=−1 और सूचकांक 0 है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-09-2-low",
+          "label": {
+            "en": "Explore the lowest setting 0 °.",
+            "hi": "सबसे निचली सेटिंग 0 ° देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "chem11-09-2-high",
+          "label": {
+            "en": "Compare the highest setting 360 °.",
+            "hi": "सबसे ऊपरी सेटिंग 360 ° से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 357.0
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 180.0
+          },
+          "text": {
+            "en": "Use0° as eclipsed and60° as staggered; compare repeated positions.",
+            "hi": "0° को ग्रस्त और 60° को सांतरित लें; दोहराए स्थान तुलना करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 180.0
+          },
+          "text": {
+            "en": "The index is highest at eclipsed0°,120°,240° and lowest at staggered60°,180°,300°.",
+            "hi": "सूचकांक ग्रस्त 0°,120°,240° पर अधिकतम तथा सांतरित 60°,180°,300° पर न्यूनतम है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-09-3",
+      "title": {
+        "en": "Addition versus substitution",
+        "hi": "संकलन और प्रतिस्थापन"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 26
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Reaction index",
+            "hi": "अभिक्रिया क्रम"
+          },
+          "min": 0,
+          "max": 2,
+          "step": 1,
+          "initial": 0,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Distinguish addition from alkane and aromatic substitution.",
+        "hi": "संकलन को ऐल्केन तथा ऐरोमैटिक प्रतिस्थापन से अलग करें।"
+      },
+      "observe": {
+        "en": "Choose0 ethene hydrogenation,1 first methane chlorination,or2 benzene nitration.",
+        "hi": "0 एथीन हाइड्रोजनीकरण, 1 पहला मीथेन क्लोरीनीकरण या 2 बेंजीन नाइट्रेशन चुनें।"
+      },
+      "modelNote": {
+        "en": "Equations are conceptual,not experimental instructions. Methane can undergo further substitution; benzene nitration requires suitable acidic conditions.",
+        "hi": "समीकरण वैचारिक हैं, प्रयोग निर्देश नहीं। मीथेन में आगे प्रतिस्थापन संभव; बेंजीन नाइट्रेशन के लिए उचित अम्लीय दशाएँ चाहिए।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Hydrogenation adds across C=C; chlorination replaces methane H; nitration replaces benzene H while restoring aromaticity.",
+          "hi": "हाइड्रोजनीकरण C=C पर जोड़ता है; क्लोरीनीकरण मीथेन H बदलता है; नाइट्रेशन बेंजीन H बदलकर ऐरोमैटिकता लौटाता है।"
+        }
+      },
+      "realLife": {
+        "en": "Product patterns differ even when all reactions involve familiar hydrocarbons.",
+        "hi": "परिचित हाइड्रोकार्बन होने पर भी उत्पाद का प्रकार अलग हो सकता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which selected reaction is addition?",
+          "hi": "चुनी अभिक्रियाओं में संकलन कौन है?"
+        },
+        "options": [
+          {
+            "en": "Ethene+H2→ethane",
+            "hi": "एथीन+H2→एथेन"
+          },
+          {
+            "en": "First methane chlorination",
+            "hi": "पहला मीथेन क्लोरीनीकरण"
+          },
+          {
+            "en": "Benzene nitration",
+            "hi": "बेंजीन नाइट्रेशन"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "H2 adds across the ethene double bond.",
+          "hi": "एथीन के द्वि आबंध पर H2 जुड़ता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-09-3-low",
+          "label": {
+            "en": "Explore the lowest setting 0 .",
+            "hi": "सबसे निचली सेटिंग 0  देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "chem11-09-3-high",
+          "label": {
+            "en": "Compare the highest setting 2 .",
+            "hi": "सबसे ऊपरी सेटिंग 2  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 1.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.0
+          },
+          "text": {
+            "en": "Choose0 ethene hydrogenation,1 first methane chlorination,or2 benzene nitration.",
+            "hi": "0 एथीन हाइड्रोजनीकरण, 1 पहला मीथेन क्लोरीनीकरण या 2 बेंजीन नाइट्रेशन चुनें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.0
+          },
+          "text": {
+            "en": "Hydrogenation adds across C=C; chlorination replaces methane H; nitration replaces benzene H while restoring aromaticity.",
+            "hi": "हाइड्रोजनीकरण C=C पर जोड़ता है; क्लोरीनीकरण मीथेन H बदलता है; नाइट्रेशन बेंजीन H बदलकर ऐरोमैटिकता लौटाता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    }
+  ],
+  "goal": {
+    "en": "Connect hydrocarbon structures, conformations and reaction patterns without confusing addition and substitution.",
+    "hi": "हाइड्रोकार्बन संरचना, संरूपणा और अभिक्रिया प्रकार जोड़ें; संकलन तथा प्रतिस्थापन अलग पहचानें।"
+  },
+  "editionBasis": {
+    "en": "Original study notes aligned to NCERT Chemistry Class11 and UP Board2026–27. Use prescribed textbooks and supervised school practicals alongside.",
+    "hi": "NCERT कक्षा 11 रसायन विज्ञान तथा यूपी बोर्ड 2026–27 के अनुरूप मौलिक नोट्स। निर्धारित पुस्तक और विद्यालय के पर्यवेक्षित प्रयोग भी करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry Part II, Chapter9 Hydrocarbons",
+      "url": "https://ncert.nic.in/textbook/pdf/kech203.pdf"
+    },
+    {
+      "title": "UPMSP Class11 Chemistry2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/152-Chemistry-Class-11.pdf"
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Hydrocarbon families and formula limits",
+        "hi": "हाइड्रोकार्बन परिवार और सूत्र की सीमाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Hydrocarbons contain carbon and hydrogen only. Carbon can form chains, branches and rings, so a molecular formula alone does not determine the complete structure. Saturated acyclic hydrocarbons have only carbon–carbon single bonds and follow CnH2n+2. Acyclic compounds with one carbon–carbon double bond and no other ring or multiple bond follow CnH2n, while the corresponding single-triple-bond family follows CnH2n−2. These conditions matter: a cycloalkane can also have CnH2n without a double bond, and a diene may share a formula pattern with an alkyne. Homologous-series members have a common structural pattern and successive members differ by CH2. They display related chemistry but gradual changes in physical properties such as boiling point. The scene compares atom counts for n from2 to8 under the stated acyclic assumptions. It does not show every possible isomer or prove that a selected formula has only one chemically valid structure.",
+          "hi": "हाइड्रोकार्बन (Hydrocarbon) में केवल कार्बन और हाइड्रोजन होते हैं। कार्बन शृंखलाएँ, शाखाएँ और वलय बना सकता है, इसलिए केवल आण्विक सूत्र से पूरी संरचना तय नहीं होती। संतृप्त अचक्रीय हाइड्रोकार्बन में कार्बन–कार्बन के केवल एकल आबंध होते हैं और सूत्र CnH2n+2 होता है। बिना वलय और अन्य बहु आबंध वाला एक द्वि आबंध युक्त अचक्रीय परिवार CnH2n तथा एक त्रि आबंध वाला संबंधित परिवार CnH2n−2 का अनुसरण करता है। ये शर्तें आवश्यक हैं। चक्रीय ऐल्केन का सूत्र भी CnH2n हो सकता है, भले द्वि आबंध न हो। डाइईन का सूत्र किसी ऐल्काइन के समान रूप ले सकता है। समजातीय श्रेणी (Homologous series) के सदस्यों का सामान्य संरचनात्मक ढाँचा होता है और क्रमिक सदस्य में CH2 का अंतर आता है। रासायनिक व्यवहार संबंधित रहता है, पर क्वथनांक जैसे भौतिक गुण धीरे बदलते हैं। दृश्य में n को 2 से 8 तक बदलकर दी अचक्रीय मान्यताओं में परमाणु गिनती तुलना होती है। यह सभी समावयवी नहीं दिखाता और न चुने सूत्र की केवल एक संभव संरचना सिद्ध करता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: No; a cycloalkane can have the same general formula.",
+          "hi": "जाँच बिंदु: नहीं; चक्रीय ऐल्केन का सामान्य सूत्र भी यही हो सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does CnH2n always prove the presence of a double bond?",
+          "hi": "क्या CnH2n हमेशा द्वि आबंध का प्रमाण है?"
+        },
+        "answer": {
+          "en": "No; a cycloalkane can have the same general formula.",
+          "hi": "नहीं; चक्रीय ऐल्केन का सामान्य सूत्र भी यही हो सकता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Naming, isomerism and structure reading",
+        "hi": "नामकरण, समावयवता और संरचना पढ़ना"
+      },
+      "paragraphs": [
+        {
+          "en": "A systematic hydrocarbon name should let a reader reconstruct the relevant carbon skeleton and unsaturation. Identify an appropriate parent chain containing the principal multiple bond when present, number it to give the required low locants under the naming rules, and then locate branches. A double bond uses the ene suffix and a triple bond uses yne. State the position when different placements are possible. Structural isomers share a molecular formula but have different connectivity; chain and position isomerism are common examples. Do not count the same structure twice merely because it has been drawn from the opposite end. Geometrical isomerism around a double bond can arise because rotation is restricted, but each doubly bonded carbon must have suitable different substituents. Ethene itself does not show a cis–trans pair because each carbon bears two identical hydrogens. A good answer draws the structure first, checks carbon valence and hydrogen count, and then verifies that the name and structure agree.",
+          "hi": "व्यवस्थित हाइड्रोकार्बन नाम से संबंधित कार्बन ढाँचा और असंतृप्ति फिर बनाई जा सकनी चाहिए। बहु आबंध उपस्थित हो तो उपयुक्त मूल शृंखला में उसे शामिल करें। नामकरण नियमों के अनुसार आवश्यक न्यून स्थान अंक देने वाली दिशा से क्रमांकन करें और फिर शाखाएँ पहचानें। द्वि आबंध के लिए ईन तथा त्रि आबंध के लिए आइन प्रत्यय आता है। अलग स्थान संभव हों तो उसका अंक लिखें। संरचनात्मक समावयवी (Structural isomers) का आण्विक सूत्र समान लेकिन संयोजकता अलग होती है। शृंखला और स्थिति समावयवता सामान्य उदाहरण हैं। केवल उलटी दिशा से वही चित्र बनाने को नया समावयवी न गिनें। द्वि आबंध के चारों ओर घूर्णन प्रतिबंधित होने से ज्यामितीय समावयवता हो सकती है, लेकिन दोनों द्वि-आबंधित कार्बनों पर उपयुक्त अलग प्रतिस्थापी होने चाहिए। एथीन स्वयं सिस–ट्रांस युग्म नहीं बनाती, क्योंकि प्रत्येक कार्बन पर 2 समान हाइड्रोजन हैं। अच्छे उत्तर में पहले संरचना बनाएँ, कार्बन की संयोजकता और हाइड्रोजन गिनती जाँचें, फिर नाम तथा संरचना का मेल देखें। यही विधि याद किए नाम से गलत चित्र बनाने की संभावना कम करती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: Each double-bonded carbon has two identical hydrogen substituents.",
+          "hi": "जाँच बिंदु: प्रत्येक द्वि-आबंधित कार्बन पर 2 समान हाइड्रोजन प्रतिस्थापी हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does ethene not have cis–trans isomerism?",
+          "hi": "एथीन में सिस–ट्रांस समावयवता क्यों नहीं है?"
+        },
+        "answer": {
+          "en": "Each double-bonded carbon has two identical hydrogen substituents.",
+          "hi": "प्रत्येक द्वि-आबंधित कार्बन पर 2 समान हाइड्रोजन प्रतिस्थापी हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Alkanes: preparation and radical substitution",
+        "hi": "ऐल्केन: निर्माण और मूलक प्रतिस्थापन"
+      },
+      "paragraphs": [
+        {
+          "en": "Alkanes have a largely nonpolar framework of sigma bonds. Their physical behaviour reflects molecular size and shape, while their chemical reactions require the appropriate conditions. Hydrogenation of a suitable unsaturated hydrocarbon can produce an alkane. Wurtz coupling joins alkyl fragments using sodium and an alkyl halide; using two different alkyl halides generally gives mixtures, so it is not a clean universal method for every unsymmetrical alkane. Decarboxylation of a suitable carboxylate gives a hydrocarbon with one fewer carbon atom than the carboxylate part. In alkane halogenation, a radical-chain description separates initiation, propagation and termination. For methane chlorination, the first substitution is CH4+Cl2→CH3Cl+HCl under suitable light conditions. Further substitution can occur and lead to additional chlorinated products. The displayed equation therefore represents a reaction step rather than a promise of a pure product. Learn the mechanism and atom balance conceptually instead of treating a screen model as an experimental procedure.",
+          "hi": "ऐल्केन का ढाँचा मुख्यतः अध्रुवीय सिग्मा आबंधों से बनता है। उसका भौतिक व्यवहार अणु के आकार और रूप पर निर्भर है, जबकि रासायनिक अभिक्रिया के लिए उपयुक्त दशाएँ चाहिए। उचित असंतृप्त हाइड्रोकार्बन का हाइड्रोजनीकरण ऐल्केन बना सकता है। वुर्ट्ज अभिक्रिया (Wurtz reaction) में सोडियम और ऐल्किल हैलाइड की सहायता से ऐल्किल खंड जुड़ते हैं। 2 अलग ऐल्किल हैलाइड लेने पर सामान्यतः मिश्रण मिलता है, इसलिए यह हर असममित ऐल्केन को शुद्ध बनाने की सार्वत्रिक विधि नहीं है। उपयुक्त कार्बोक्सिलेट के विकार्बोक्सिलीकरण में उससे 1 कार्बन कम वाला हाइड्रोकार्बन बनता है। ऐल्केन हैलोजनीकरण की मूलक शृंखला में प्रारंभन, संचरण और समापन चरण अलग करते हैं। मीथेन क्लोरीनीकरण का पहला प्रतिस्थापन उचित प्रकाश में CH4+Cl2→CH3Cl+HCl है। आगे प्रतिस्थापन से अन्य क्लोरीनयुक्त उत्पाद भी बन सकते हैं। इसलिए दिखाया समीकरण एक अभिक्रिया चरण है, शुद्ध उत्पाद मिलने का वादा नहीं। क्रियाविधि और परमाणु संतुलन अवधारणा के रूप में सीखें; स्क्रीन के मॉडल को वास्तविक प्रयोग करने के निर्देश न मानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: Further substitution and side products can occur.",
+          "hi": "जाँच बिंदु: आगे प्रतिस्थापन और अन्य उत्पाद बन सकते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does the first methane chlorination equation not guarantee pure CH3Cl?",
+          "hi": "पहला मीथेन क्लोरीनीकरण समीकरण शुद्ध CH3Cl की गारंटी क्यों नहीं है?"
+        },
+        "answer": {
+          "en": "Further substitution and side products can occur.",
+          "hi": "आगे प्रतिस्थापन और अन्य उत्पाद बन सकते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ethane conformations and torsional energy",
+        "hi": "एथेन की संरूपणाएँ और मरोड़ी ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "Rotation around the carbon–carbon sigma bond gives different conformations of ethane without breaking its connectivity. Newman and sawhorse projections are ways to compare the relative positions of bonds on the two carbons. In an eclipsed conformation, selected front and rear bonds align in the projection; in a staggered conformation they are offset. Staggered ethane has lower torsional energy than eclipsed ethane. The molecule is not permanently frozen in one drawing, and ordinary room-temperature rotation continually samples conformations. The scene uses θ=0° as an eclipsed reference and θ=60° as a staggered reference. Its index E=(1+cos3θ)/2 repeats every120° and ranges from0 to1. This is a symbolic shape for the periodic energy relation, not a measured energy in joules per mole. Conformations differ from structural isomers because their atom connectivity remains unchanged. Also distinguish this relatively accessible single-bond rotation from rotation around a double bond, which would disturb pi overlap.",
+          "hi": "कार्बन–कार्बन सिग्मा आबंध के चारों ओर घूर्णन से एथेन की अलग संरूपणाएँ (Conformations) मिलती हैं, लेकिन परमाणुओं की संयोजकता नहीं टूटती। न्यूमैन और सॉहॉर्स प्रक्षेप दोनों कार्बनों पर आबंधों के सापेक्ष स्थान की तुलना के तरीके हैं। ग्रस्त संरूपणा में चुने आगे और पीछे के आबंध प्रक्षेप में एक दिशा में आते हैं। सांतरित संरूपणा में वे एक-दूसरे से हटे होते हैं। सांतरित एथेन की मरोड़ी ऊर्जा ग्रस्त एथेन से कम होती है। अणु हमेशा किसी एक स्थिर चित्र में नहीं रुका रहता; सामान्य ताप पर घूर्णन से संरूपणाएँ बदलती रहती हैं। दृश्य में θ=0° को ग्रस्त और θ=60° को सांतरित संदर्भ लिया है। सूचकांक E=(1+cos3θ)/2 हर 120° पर दोहराता है तथा 0 से 1 तक रहता है। यह आवर्ती ऊर्जा संबंध का सांकेतिक रूप है, J/mol में मापी ऊर्जा नहीं। संरूपणा में संयोजकता समान रहने से यह संरचनात्मक समावयवता से अलग है। एकल आबंध के इस अपेक्षाकृत सुगम घूर्णन को द्वि आबंध के घूर्णन से भी अलग करें, क्योंकि द्वि आबंध घुमाने में पाई अतिव्यापन बाधित होगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: The staggered conformation.",
+          "hi": "जाँच बिंदु: सांतरित संरूपणा में।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which ethane conformation has lower torsional energy?",
+          "hi": "एथेन की किस संरूपणा में मरोड़ी ऊर्जा कम है?"
+        },
+        "answer": {
+          "en": "The staggered conformation.",
+          "hi": "सांतरित संरूपणा में।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Alkenes and electrophilic addition",
+        "hi": "ऐल्कीन और इलेक्ट्रॉनरागी संकलन"
+      },
+      "paragraphs": [
+        {
+          "en": "An alkene contains a carbon–carbon double bond with one sigma and one pi component in the simple valence-bond picture. The pi electron density is more accessible to an electrophile than the framework of an ordinary alkane, making addition a characteristic reaction pattern. Hydrogenation adds hydrogen across the double bond to give an alkane under suitable catalytic conditions. Halogen addition and hydrogen-halide addition also change the unsaturated centre. For an unsymmetrical alkene, the usual ionic addition of a hydrogen halide is described by Markovnikov orientation: hydrogen attaches to the carbon already bearing more hydrogen atoms, with the other group on the other carbon in the typical product. This is a model rule tied to the mechanism and substrate, not a universal statement covering every condition. The peroxide effect taught for HBr can reverse the usual orientation through a radical pathway; do not extend it automatically to HCl or HI. Always distinguish the product pattern, mechanism and reaction conditions.",
+          "hi": "ऐल्कीन में कार्बन–कार्बन द्वि आबंध होता है, जिसे सरल संयोजकता आबंध विचार में 1 सिग्मा और 1 पाई घटक से समझते हैं। पाई इलेक्ट्रॉन घनत्व सामान्य ऐल्केन के ढाँचे की तुलना में इलेक्ट्रॉनरागी को अधिक उपलब्ध होता है। इसलिए संकलन (Addition) उसकी विशेष अभिक्रिया है। उपयुक्त उत्प्रेरक की उपस्थिति में द्वि आबंध पर हाइड्रोजन जुड़ने से ऐल्केन बनता है। हैलोजन तथा हाइड्रोजन हैलाइड का संकलन भी असंतृप्त केंद्र बदलता है। असममित ऐल्कीन पर सामान्य आयनिक HX संकलन की दिशा मार्कोवनीकॉफ नियम से बताई जाती है। सामान्य उत्पाद में H उस कार्बन पर जाता है जहाँ पहले अधिक H हों, और दूसरा समूह दूसरे कार्बन पर जाता है। यह क्रियाविधि और पदार्थ से जुड़ा नियम है, हर परिस्थिति का सार्वत्रिक कथन नहीं। HBr के लिए पढ़ाया परॉक्साइड प्रभाव मूलक मार्ग से सामान्य दिशा उलट सकता है। इसे अपने आप HCl या HI पर लागू न करें। उत्तर में उत्पाद का प्रकार, क्रियाविधि और दशाएँ अलग लिखना चाहिए। केवल सूत्र जोड़ने से हर संभावित अभिक्रिया की सही दिशा तय नहीं होती।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: No; the usual school-level effect is characteristic of HBr under the stated radical conditions.",
+          "hi": "जाँच बिंदु: नहीं; दी मूलक दशाओं में सामान्य विद्यालयी प्रभाव HBr का है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is the peroxide effect automatically applicable to HCl and HI?",
+          "hi": "क्या परॉक्साइड प्रभाव अपने आप HCl और HI पर लागू है?"
+        },
+        "answer": {
+          "en": "No; the usual school-level effect is characteristic of HBr under the stated radical conditions.",
+          "hi": "नहीं; दी मूलक दशाओं में सामान्य विद्यालयी प्रभाव HBr का है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Alkynes and terminal-hydrogen acidity",
+        "hi": "ऐल्काइन और अंतिम हाइड्रोजन की अम्लता"
+      },
+      "paragraphs": [
+        {
+          "en": "An alkyne has a carbon–carbon triple bond containing one sigma and two pi bonds in the elementary orbital description. The carbons of the triple bond are usually described as sp hybridised with a linear local arrangement. Alkynes can undergo addition, and sufficient reagent can add in more than one stage across the multiple bond. A terminal alkyne has a hydrogen directly attached to an sp carbon, while an internal alkyne does not have that terminal C–H group. The terminal hydrogen is more acidic than typical alkene or alkane hydrogens because the conjugate-base electron pair is associated with an orbital having greater s character. This comparison does not mean that an alkyne behaves like a strong aqueous mineral acid. Analyse the actual base, medium and reaction conditions. Structural formulas are essential: a compound merely having the general alkyne formula need not have a terminal hydrogen. Use this distinction when comparing reactions, identification patterns and possible carbon-chain transformations.",
+          "hi": "ऐल्काइन में कार्बन–कार्बन त्रि आबंध होता है। प्रारंभिक कक्षक वर्णन में इसमें 1 सिग्मा तथा 2 पाई आबंध हैं। त्रि आबंध के कार्बन सामान्यतः sp संकरित और स्थानीय व्यवस्था रैखिक माने जाते हैं। ऐल्काइन संकलन कर सकते हैं और पर्याप्त अभिकर्मक होने पर बहु आबंध पर एक से अधिक चरणों में समूह जुड़ सकते हैं। अंतिम ऐल्काइन (Terminal alkyne) में sp कार्बन से सीधे H जुड़ा होता है। आंतरिक ऐल्काइन में वैसा अंतिम C–H समूह नहीं होता। अंतिम H सामान्य ऐल्कीन या ऐल्केन के H से अधिक अम्लीय है, क्योंकि संयुग्मी क्षारक का इलेक्ट्रॉन युग्म अधिक s-गुण वाले कक्षक से संबंधित होता है। इसका अर्थ यह नहीं कि ऐल्काइन जल में प्रबल खनिज अम्ल जैसा व्यवहार करता है। वास्तविक क्षारक, माध्यम और अभिक्रिया दशाएँ देखें। संरचनात्मक सूत्र आवश्यक है; केवल सामान्य ऐल्काइन सूत्र होने से अंतिम H का होना निश्चित नहीं है। अभिक्रिया तुलना, पहचान के नमूने और कार्बन शृंखला परिवर्तन समझने में इस अंतर का उपयोग करें। आबंध की संख्या तथा H के स्थान दोनों की जाँच से गलत सामान्यीकरण से बच सकते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: No; internal alkynes lack that terminal hydrogen.",
+          "hi": "जाँच बिंदु: नहीं; आंतरिक ऐल्काइन में वह अंतिम H नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Do all alkynes contain an acidic terminal C–H group?",
+          "hi": "क्या सभी ऐल्काइन में अम्लीय अंतिम C–H समूह है?"
+        },
+        "answer": {
+          "en": "No; internal alkynes lack that terminal hydrogen.",
+          "hi": "नहीं; आंतरिक ऐल्काइन में वह अंतिम H नहीं होता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Benzene, delocalisation and aromaticity",
+        "hi": "बेंजीन, विस्थानीकरण और ऐरोमैटिकता"
+      },
+      "paragraphs": [
+        {
+          "en": "Benzene has a planar six-carbon framework with a conjugated pi system. The familiar Kekulé drawings are resonance representations, not two distinct structures between which the actual molecule rapidly switches. The delocalised electron distribution helps explain equivalent carbon–carbon bonds and special stability compared with a naive isolated-double-bond picture. For the elementary Hückel criterion, a planar cyclic and fully conjugated system with4n+2 pi electrons can be aromatic, where n is a nonnegative integer. The electron count alone is insufficient if planarity or continuous conjugation is absent. Benzene has6 pi electrons, corresponding to n=1. Do not call every cyclic hydrocarbon aromatic, and do not apply the word merely because a substance has a smell. Aromaticity affects reaction preference: benzene commonly undergoes electrophilic substitution that can retain the aromatic framework rather than the simple addition pattern typical of an isolated alkene. Draw the ring and electron count carefully before comparing reactions.",
+          "hi": "बेंजीन में 6 कार्बनों का समतलीय ढाँचा तथा संयुग्मित पाई निकाय होता है। परिचित केकुले चित्र अनुनाद वर्णन हैं, 2 अलग संरचनाएँ नहीं जिनमें वास्तविक अणु तेजी से बदलता हो। विस्थानीकृत इलेक्ट्रॉन वितरण समान कार्बन–कार्बन आबंधों तथा अलग-अलग द्वि आबंध मानने वाले सरल चित्र से अतिरिक्त स्थायित्व समझाने में मदद करता है। शुरुआती हकल कसौटी के अनुसार समतलीय, चक्रीय और पूर्ण संयुग्मित निकाय में 4n+2 पाई इलेक्ट्रॉन हों तो वह ऐरोमैटिक हो सकता है, जहाँ n शून्य या धन पूर्णांक है। केवल इलेक्ट्रॉन गिनती पर्याप्त नहीं; समतलता या निरंतर संयुग्मन न हो तो निष्कर्ष बदलता है। बेंजीन में 6 पाई इलेक्ट्रॉन हैं, इसलिए n=1 है। हर चक्रीय हाइड्रोकार्बन को ऐरोमैटिक न कहें और केवल गंध के आधार पर यह नाम न दें। ऐरोमैटिकता अभिक्रिया पसंद को प्रभावित करती है। बेंजीन सामान्यतः इलेक्ट्रॉनरागी प्रतिस्थापन करता है, जिसमें ऐरोमैटिक ढाँचा फिर मिल सकता है। यह पृथक ऐल्कीन के सामान्य संकलन से अलग है। तुलना से पहले वलय और इलेक्ट्रॉन गिनती स्पष्ट बनाना उपयोगी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: The cyclic system must also be planar and continuously conjugated.",
+          "hi": "जाँच बिंदु: चक्रीय निकाय समतलीय और निरंतर संयुग्मित भी होना चाहिए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is6 pi electrons not the only condition for aromaticity?",
+          "hi": "ऐरोमैटिकता के लिए केवल 6 पाई इलेक्ट्रॉन पर्याप्त शर्त क्यों नहीं?"
+        },
+        "answer": {
+          "en": "The cyclic system must also be planar and continuously conjugated.",
+          "hi": "चक्रीय निकाय समतलीय और निरंतर संयुग्मित भी होना चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Aromatic substitution and responsible interpretation",
+        "hi": "ऐरोमैटिक प्रतिस्थापन और सावधान व्याख्या"
+      },
+      "paragraphs": [
+        {
+          "en": "Electrophilic aromatic substitution replaces a hydrogen on an aromatic ring while restoring the aromatic pi system in the overall product. Nitration of benzene is represented as C6H6+HNO3→C6H5NO2+H2O with the appropriate acidic reaction conditions. This balanced conceptual equation is not a laboratory procedure. A substituent already on a ring influences both reactivity and the relative positions of further substitution. Methyl is commonly activating and ortho–para directing, while halogens are deactivating yet ortho–para directing; activation and direction are distinct ideas. Avoid predicting a single pure product simply by choosing a directing label because actual mixtures and conditions matter. Compare addition and substitution by checking which atoms are retained or replaced and whether a multiple-bond or aromatic system changes. NCERT also discusses carcinogenicity and toxicity of certain hydrocarbons, so recognise that familiar fuels and solvents are not automatically harmless. Finish a problem by balancing atoms, naming the reaction pattern and stating the model’s scope.",
+          "hi": "इलेक्ट्रॉनरागी ऐरोमैटिक प्रतिस्थापन में वलय का H दूसरे समूह से बदलता है और कुल उत्पाद में ऐरोमैटिक पाई निकाय फिर प्राप्त होता है। बेंजीन नाइट्रेशन को उपयुक्त अम्लीय दशाओं में C6H6+HNO3→C6H5NO2+H2O लिखते हैं। यह संतुलित वैचारिक समीकरण है, प्रयोग करने की विधि नहीं। वलय पर पहले से उपस्थित प्रतिस्थापी अभिक्रियाशीलता और अगले प्रतिस्थापन के सापेक्ष स्थान दोनों को प्रभावित करता है। मिथिल समूह सामान्यतः सक्रियकारी तथा ऑर्थो–पैरा निर्देशक है। हैलोजन निष्क्रियकारी होते हुए भी ऑर्थो–पैरा निर्देशक हैं। इसलिए सक्रियता और दिशा अलग विचार हैं। केवल निर्देशक का नाम चुनकर एक शुद्ध उत्पाद निश्चित न मानें, क्योंकि वास्तविक मिश्रण और दशाएँ महत्त्वपूर्ण हैं। संकलन तथा प्रतिस्थापन तुलना में देखें कि कौन-से परमाणु जुड़े या बदले और बहु आबंध अथवा ऐरोमैटिक निकाय में क्या हुआ। NCERT कुछ हाइड्रोकार्बनों की कैंसरजन्यता और विषाक्तता भी पढ़ाती है। इसलिए परिचित ईंधन और विलायक अपने आप हानिरहित नहीं होते। प्रश्न के अंत में परमाणु संतुलन, अभिक्रिया का प्रकार तथा मॉडल की सीमा लिखें। इससे केवल उत्पाद याद करने के बजाय कारण सहित उत्तर बनता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: Yes; halogens are the familiar example.",
+          "hi": "जाँच बिंदु: हाँ; हैलोजन इसका परिचित उदाहरण हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can a substituent be deactivating but ortho–para directing?",
+          "hi": "क्या कोई प्रतिस्थापी निष्क्रियकारी लेकिन ऑर्थो–पैरा निर्देशक हो सकता है?"
+        },
+        "answer": {
+          "en": "Yes; halogens are the familiar example.",
+          "hi": "हाँ; हैलोजन इसका परिचित उदाहरण हैं।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Acyclic alkane CnH2n+2; monoalkene CnH2n; monoalkyne CnH2n−2",
+      "meaning": {
+        "en": "No rings or additional unsaturation are included in these selected families.",
+        "hi": "इन चुने परिवारों में वलय या अतिरिक्त असंतृप्ति शामिल नहीं है।"
+      },
+      "units": {
+        "en": "n and atom counts are dimensionless integers.",
+        "hi": "n और परमाणु गिनती विमाहीन पूर्णांक हैं।"
+      }
+    },
+    {
+      "expression": "Eindex = (1 + cos3θ)/2",
+      "meaning": {
+        "en": "Symbolic ethane torsional index; θ=0° eclipsed and60° staggered.",
+        "hi": "एथेन का सांकेतिक मरोड़ी सूचकांक; θ=0° ग्रस्त और 60° सांतरित।"
+      },
+      "units": {
+        "en": "Index dimensionless; θ in degrees. Not measured kJ/mol.",
+        "hi": "सूचकांक विमाहीन; θ डिग्री में। मापी kJ/mol ऊर्जा नहीं।"
+      }
+    },
+    {
+      "expression": "C2H4 + H2 → C2H6",
+      "meaning": {
+        "en": "Catalytic hydrogen addition across the ethene double bond.",
+        "hi": "उत्प्रेरक की उपस्थिति में एथीन द्वि आबंध पर H का संकलन।"
+      },
+      "units": {
+        "en": "Coefficients give molecule or mole ratios.",
+        "hi": "गुणांक अणु या मोल अनुपात हैं।"
+      }
+    },
+    {
+      "expression": "CH4 + Cl2 → CH3Cl + HCl",
+      "meaning": {
+        "en": "First substitution step under appropriate light; further substitution may occur.",
+        "hi": "उचित प्रकाश में पहला प्रतिस्थापन चरण; आगे प्रतिस्थापन संभव है।"
+      },
+      "units": {
+        "en": "Stoichiometric ratios; no separate physical unit.",
+        "hi": "रससमीकरणमितीय अनुपात; अलग भौतिक इकाई नहीं।"
+      }
+    },
+    {
+      "expression": "C6H6 + HNO3 → C6H5NO2 + H2O",
+      "meaning": {
+        "en": "Conceptual benzene nitration equation with suitable acidic conditions.",
+        "hi": "उचित अम्लीय दशाओं वाला बेंजीन नाइट्रेशन का वैचारिक समीकरण।"
+      },
+      "units": {
+        "en": "Balanced molecule or mole ratios.",
+        "hi": "संतुलित अणु या मोल अनुपात।"
+      }
+    },
+    {
+      "expression": "Aromatic pi-electron count = 4n+2",
+      "meaning": {
+        "en": "Apply only with a planar cyclic fully conjugated framework.",
+        "hi": "केवल समतलीय चक्रीय पूर्ण संयुग्मित ढाँचे पर लगाएँ।"
+      },
+      "units": {
+        "en": "Electron count; n=0,1,2,...",
+        "hi": "इलेक्ट्रॉन संख्या; n=0,1,2,...।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Write the formula of an acyclic alkane with5 carbons.",
+        "hi": "5 कार्बन वाले अचक्रीय ऐल्केन का सूत्र लिखें।"
+      },
+      "given": {
+        "en": "n=5; saturated and no ring.",
+        "hi": "n=5; संतृप्त और वलय नहीं।"
+      },
+      "find": {
+        "en": "Hydrogen count and formula.",
+        "hi": "H गिनती और सूत्र।"
+      },
+      "formula": {
+        "en": "H=2n+2",
+        "hi": "H=2n+2"
+      },
+      "steps": [
+        {
+          "en": "Calculate2×5+2=12.",
+          "hi": "2×5+2=12 निकालें।"
+        }
+      ],
+      "answer": {
+        "en": "C5H12.",
+        "hi": "C5H12।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Compare the3 selected acyclic families at n=4.",
+        "hi": "n=4 पर 3 चुने अचक्रीय परिवारों की तुलना करें।"
+      },
+      "given": {
+        "en": "One alkane, one monoalkene and one monoalkyne.",
+        "hi": "1 ऐल्केन, 1 मोनोऐल्कीन और 1 मोनोऐल्काइन।"
+      },
+      "find": {
+        "en": "Molecular formulas under those restrictions.",
+        "hi": "दी सीमाओं में आण्विक सूत्र।"
+      },
+      "formula": {
+        "en": "2n+2, 2n, 2n−2",
+        "hi": "2n+2, 2n, 2n−2"
+      },
+      "steps": [
+        {
+          "en": "Substitute n=4 into each hydrogen count.",
+          "hi": "प्रत्येक H गिनती में n=4 रखें।"
+        },
+        {
+          "en": "Keep the carbon count4 unchanged.",
+          "hi": "कार्बन गिनती 4 समान रखें।"
+        }
+      ],
+      "answer": {
+        "en": "C4H10, C4H8 and C4H6 respectively.",
+        "hi": "क्रमशः C4H10, C4H8 और C4H6।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the ethane energy index at0° and60°.",
+        "hi": "0° तथा 60° पर एथेन ऊर्जा सूचकांक निकालें।"
+      },
+      "given": {
+        "en": "E=(1+cos3θ)/2, a symbolic index.",
+        "hi": "E=(1+cos3θ)/2, सांकेतिक सूचकांक।"
+      },
+      "find": {
+        "en": "Compare eclipsed and staggered references.",
+        "hi": "ग्रस्त और सांतरित संदर्भों की तुलना।"
+      },
+      "formula": {
+        "en": "E=(1+cos3θ)/2",
+        "hi": "E=(1+cos3θ)/2"
+      },
+      "steps": [
+        {
+          "en": "At0°, cos0°=1, so E=1.",
+          "hi": "0° पर cos0°=1; E=1।"
+        },
+        {
+          "en": "At60°, cos180°=−1, so E=0.",
+          "hi": "60° पर cos180°=−1; E=0।"
+        }
+      ],
+      "answer": {
+        "en": "Eclipsed index1; staggered index0. No kJ/mol unit is assigned.",
+        "hi": "ग्रस्त सूचकांक 1; सांतरित 0। kJ/mol इकाई नहीं दी है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "How much H2 is required to hydrogenate2 mol ethene completely in the ideal equation?",
+        "hi": "आदर्श समीकरण में 2 mol एथीन के पूर्ण हाइड्रोजनीकरण के लिए कितना H2 चाहिए?"
+      },
+      "given": {
+        "en": "C2H4+H2→C2H6; ethene2 mol.",
+        "hi": "C2H4+H2→C2H6; एथीन 2 mol।"
+      },
+      "find": {
+        "en": "Stoichiometric H2 amount.",
+        "hi": "रससमीकरणमितीय H2 मात्रा।"
+      },
+      "formula": {
+        "en": "Ethene:H2 = 1:1",
+        "hi": "Ethene:H2 = 1:1"
+      },
+      "steps": [
+        {
+          "en": "Read the coefficients, both1.",
+          "hi": "दोनों गुणांक 1 पढ़ें।"
+        },
+        {
+          "en": "Multiply2 mol by1/1.",
+          "hi": "2 mol को 1/1 से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "2 mol H2 under complete ideal conversion.",
+        "hi": "पूर्ण आदर्श परिवर्तन पर 2 mol H2।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Why does benzene favour substitution in the usual elementary comparison with ethene?",
+        "hi": "एथीन की सामान्य शुरुआती तुलना में बेंजीन प्रतिस्थापन क्यों पसंद करता है?"
+      },
+      "given": {
+        "en": "Benzene has a delocalised aromatic pi framework.",
+        "hi": "बेंजीन में विस्थानीकृत ऐरोमैटिक पाई ढाँचा है।"
+      },
+      "find": {
+        "en": "Explain reaction pattern, not a universal prohibition.",
+        "hi": "अभिक्रिया प्रकार समझाएँ, सार्वत्रिक निषेध नहीं।"
+      },
+      "formula": {
+        "en": "Substitution can restore aromaticity in the overall product",
+        "hi": "Substitution can restore aromaticity in the overall product"
+      },
+      "steps": [
+        {
+          "en": "Addition to the ring would disturb the aromatic framework.",
+          "hi": "वलय पर संकलन ऐरोमैटिक ढाँचा बाधित करेगा।"
+        },
+        {
+          "en": "Electrophilic substitution replaces H and restores the pi system.",
+          "hi": "इलेक्ट्रॉनरागी प्रतिस्थापन H बदलकर पाई निकाय फिर देता है।"
+        }
+      ],
+      "answer": {
+        "en": "Aromatic stabilisation helps favour the usual substitution pathway; conditions and reagent still matter.",
+        "hi": "ऐरोमैटिक स्थायित्व सामान्य प्रतिस्थापन मार्ग को अनुकूल करता है; दशाएँ और अभिकर्मक फिर भी महत्त्वपूर्ण हैं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Hydrocarbons contain which elements only?",
+        "hi": "हाइड्रोकार्बन में केवल कौन-से तत्व हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Carbon and hydrogen",
+            "hi": "कार्बन और हाइड्रोजन"
+          },
+          "reason": {
+            "en": "This is the hydrocarbon definition.",
+            "hi": "यही हाइड्रोकार्बन की परिभाषा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Carbon and oxygen",
+            "hi": "कार्बन और ऑक्सीजन"
+          },
+          "reason": {
+            "en": "Oxygen-containing compounds are not hydrocarbons.",
+            "hi": "O वाले यौगिक हाइड्रोकार्बन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Hydrogen and nitrogen",
+            "hi": "हाइड्रोजन और नाइट्रोजन"
+          },
+          "reason": {
+            "en": "Carbon is required.",
+            "hi": "कार्बन आवश्यक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every element",
+            "hi": "सभी तत्व"
+          },
+          "reason": {
+            "en": "The definition is restricted to C and H.",
+            "hi": "परिभाषा C और H तक सीमित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The formula for an acyclic saturated alkane is?",
+        "hi": "अचक्रीय संतृप्त ऐल्केन का सूत्र क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "CnH2n+2",
+            "hi": "CnH2n+2"
+          },
+          "reason": {
+            "en": "An open saturated carbon skeleton follows this count.",
+            "hi": "खुला संतृप्त कार्बन ढाँचा यह गिनती देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CnH2n always",
+            "hi": "हमेशा CnH2n"
+          },
+          "reason": {
+            "en": "That is not the acyclic alkane count.",
+            "hi": "यह अचक्रीय ऐल्केन की गिनती नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "CnHn",
+            "hi": "CnHn"
+          },
+          "reason": {
+            "en": "This does not express the alkane family.",
+            "hi": "यह ऐल्केन परिवार नहीं बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "CnH2n−2 always",
+            "hi": "हमेशा CnH2n−2"
+          },
+          "reason": {
+            "en": "That has additional unsaturation relative to an acyclic alkane.",
+            "hi": "इसमें अचक्रीय ऐल्केन की तुलना में अधिक असंतृप्ति है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Consecutive members of a homologous series differ by?",
+        "hi": "समजातीय श्रेणी के क्रमिक सदस्य में क्या अंतर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "CH2",
+            "hi": "CH2"
+          },
+          "reason": {
+            "en": "One carbon and two hydrogens are added to the family skeleton.",
+            "hi": "परिवार ढाँचे में 1 C और 2 H जुड़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "O2",
+            "hi": "O2"
+          },
+          "reason": {
+            "en": "Hydrocarbons do not contain oxygen.",
+            "hi": "हाइड्रोकार्बन में O नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "One electron only",
+            "hi": "केवल 1 इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "Homology concerns molecular composition.",
+            "hi": "समजातीयता आण्विक संघटन की बात है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A neutron",
+            "hi": "न्यूट्रॉन"
+          },
+          "reason": {
+            "en": "That would concern isotopic change.",
+            "hi": "यह समस्थानिक परिवर्तन से जुड़ा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which ethane conformation is lower in torsional energy?",
+        "hi": "एथेन की किस संरूपणा में मरोड़ी ऊर्जा कम है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Staggered",
+            "hi": "सांतरित"
+          },
+          "reason": {
+            "en": "It is lower than the eclipsed arrangement.",
+            "hi": "यह ग्रस्त व्यवस्था से कम ऊर्जा की है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Eclipsed",
+            "hi": "ग्रस्त"
+          },
+          "reason": {
+            "en": "Eclipsing is the higher reference here.",
+            "hi": "यहाँ ग्रस्त उच्च ऊर्जा संदर्भ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both must always be equal",
+            "hi": "दोनों हमेशा समान"
+          },
+          "reason": {
+            "en": "Rotation changes the relative torsional energy.",
+            "hi": "घूर्णन से सापेक्ष मरोड़ी ऊर्जा बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A new carbon connectivity",
+            "hi": "नई कार्बन संयोजकता"
+          },
+          "reason": {
+            "en": "Conformation retains connectivity.",
+            "hi": "संरूपणा में संयोजकता समान है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Ethene hydrogenation to ethane is which pattern?",
+        "hi": "एथीन का एथेन में हाइड्रोजनीकरण कौन-सा प्रकार है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Addition",
+            "hi": "संकलन"
+          },
+          "reason": {
+            "en": "H adds across the double bond.",
+            "hi": "द्वि आबंध पर H जुड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "First chlorination",
+            "hi": "पहला क्लोरीनीकरण"
+          },
+          "reason": {
+            "en": "No chlorine enters this equation.",
+            "hi": "इस समीकरण में Cl नहीं आता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nitration",
+            "hi": "नाइट्रेशन"
+          },
+          "reason": {
+            "en": "No nitro group is introduced.",
+            "hi": "नाइट्रो समूह नहीं जुड़ता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nuclear fusion",
+            "hi": "नाभिकीय संलयन"
+          },
+          "reason": {
+            "en": "This is an ordinary chemical reaction.",
+            "hi": "यह सामान्य रासायनिक अभिक्रिया है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The usual peroxide effect is taught for which hydrogen halide?",
+        "hi": "सामान्य परॉक्साइड प्रभाव किस हाइड्रोजन हैलाइड के लिए पढ़ते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "HBr",
+            "hi": "HBr"
+          },
+          "reason": {
+            "en": "The usual radical anti-Markovnikov effect applies under its stated conditions.",
+            "hi": "दी दशाओं में सामान्य मूलक प्रभाव इससे जुड़ा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "HCl automatically",
+            "hi": "अपने आप HCl"
+          },
+          "reason": {
+            "en": "It cannot be extended automatically to HCl.",
+            "hi": "इसे अपने आप HCl पर नहीं लगाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "HI automatically",
+            "hi": "अपने आप HI"
+          },
+          "reason": {
+            "en": "It cannot be extended automatically to HI.",
+            "hi": "इसे अपने आप HI पर नहीं लगाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "All acids without conditions",
+            "hi": "बिना दशा सभी अम्ल"
+          },
+          "reason": {
+            "en": "Mechanism and conditions are essential.",
+            "hi": "क्रियाविधि और दशाएँ जरूरी हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A simple carbon–carbon triple bond contains?",
+        "hi": "सरल कार्बन–कार्बन त्रि आबंध में क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1 sigma and2 pi bonds",
+            "hi": "1 सिग्मा और 2 पाई"
+          },
+          "reason": {
+            "en": "This is the elementary overlap description.",
+            "hi": "यह प्रारंभिक अतिव्यापन वर्णन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3 sigma bonds",
+            "hi": "3 सिग्मा"
+          },
+          "reason": {
+            "en": "Not all overlaps are head-on.",
+            "hi": "सभी अतिव्यापन आमने-सामने नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only1 pi bond",
+            "hi": "केवल 1 पाई"
+          },
+          "reason": {
+            "en": "That misses the sigma and another pi bond.",
+            "hi": "इसमें सिग्मा और दूसरा पाई छूटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No covalent bond",
+            "hi": "सहसंयोजक आबंध नहीं"
+          },
+          "reason": {
+            "en": "The triple bond is covalent.",
+            "hi": "त्रि आबंध सहसंयोजक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which alkynes have a terminal sp-carbon hydrogen?",
+        "hi": "किन ऐल्काइनों में अंतिम sp-कार्बन H है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Terminal alkynes",
+            "hi": "अंतिम ऐल्काइन"
+          },
+          "reason": {
+            "en": "The name identifies that terminal C–H arrangement.",
+            "hi": "नाम उसी अंतिम C–H व्यवस्था को बताता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All internal alkynes",
+            "hi": "सभी आंतरिक ऐल्काइन"
+          },
+          "reason": {
+            "en": "They lack that terminal hydrogen.",
+            "hi": "उनमें वह अंतिम H नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every aromatic compound",
+            "hi": "हर ऐरोमैटिक यौगिक"
+          },
+          "reason": {
+            "en": "Aromaticity does not imply a terminal alkyne.",
+            "hi": "ऐरोमैटिकता अंतिम ऐल्काइन नहीं बताती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only methane",
+            "hi": "केवल मीथेन"
+          },
+          "reason": {
+            "en": "Methane has no triple bond.",
+            "hi": "मीथेन में त्रि आबंध नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Benzene has how many pi electrons in the elementary aromatic model?",
+        "hi": "प्रारंभिक ऐरोमैटिक मॉडल में बेंजीन के कितने पाई इलेक्ट्रॉन हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "Its conjugated six-carbon ring provides6 pi electrons.",
+            "hi": "उसका संयुग्मित 6-कार्बन वलय 6 पाई इलेक्ट्रॉन देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "That does not count the benzene pi system.",
+            "hi": "यह बेंजीन पाई निकाय की गिनती नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "This doubles the pi-electron count.",
+            "hi": "यह पाई इलेक्ट्रॉन दुगुने गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Benzene has a delocalised pi system.",
+            "hi": "बेंजीन में विस्थानीकृत पाई निकाय है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Halogens on benzene are commonly described as?",
+        "hi": "बेंजीन पर हैलोजन सामान्यतः कैसे वर्णित हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Deactivating and ortho–para directing",
+            "hi": "निष्क्रियकारी तथा ऑर्थो–पैरा निर्देशक"
+          },
+          "reason": {
+            "en": "Reactivity and directing preference are different properties.",
+            "hi": "अभिक्रियाशीलता और निर्देशन अलग गुण हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always activating and meta directing",
+            "hi": "हमेशा सक्रियकारी और मेटा निर्देशक"
+          },
+          "reason": {
+            "en": "Both parts misstate the familiar classification.",
+            "hi": "दोनों भाग परिचित वर्गीकरण से गलत हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Never directing",
+            "hi": "कभी निर्देशक नहीं"
+          },
+          "reason": {
+            "en": "Their presence affects preferred substitution positions.",
+            "hi": "उनसे पसंदीदा प्रतिस्थापन स्थान प्रभावित होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A guarantee of one pure product",
+            "hi": "एक शुद्ध उत्पाद की गारंटी"
+          },
+          "reason": {
+            "en": "Real reactions can produce mixtures.",
+            "hi": "वास्तविक अभिक्रिया मिश्रण दे सकती है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why must the conditions behind a general hydrocarbon formula be stated?",
+        "hi": "सामान्य हाइड्रोकार्बन सूत्र की शर्तें क्यों लिखनी चाहिए?"
+      },
+      "answer": {
+        "en": "Rings and different patterns of multiple bonds can share a molecular formula,so the family is not determined by atom counts alone.",
+        "hi": "वलय और अलग बहु आबंध व्यवस्था का सूत्र समान हो सकता है; केवल गिनती से परिवार तय नहीं होता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish structural isomers and ethane conformations.",
+        "hi": "संरचनात्मक समावयवी और एथेन संरूपणा अलग करें।"
+      },
+      "answer": {
+        "en": "Structural isomers differ in connectivity; ethane conformations retain connectivity and differ by single-bond rotation.",
+        "hi": "संरचनात्मक समावयवियों की संयोजकता अलग; एथेन संरूपणाओं में संयोजकता समान और एकल आबंध घूर्णन अलग है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is methane monochlorination shown as a first step rather than a pure-product claim?",
+        "hi": "मीथेन मोनोक्लोरीनीकरण को शुद्ध उत्पाद का दावा न कहकर पहला चरण क्यों कहते हैं?"
+      },
+      "answer": {
+        "en": "Further substitutions can produce additional chlorinated compounds.",
+        "hi": "आगे प्रतिस्थापन से अतिरिक्त क्लोरीनयुक्त यौगिक बन सकते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the limitation of the usual Markovnikov statement.",
+        "hi": "सामान्य मार्कोवनीकॉफ कथन की सीमा लिखें।"
+      },
+      "answer": {
+        "en": "It describes the usual orientation for suitable ionic additions; radical conditions such as the HBr peroxide effect require separate treatment.",
+        "hi": "यह उपयुक्त आयनिक संकलन की सामान्य दिशा बताता है; HBr परॉक्साइड जैसे मूलक मार्ग अलग समझने होंगे।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is terminal alkyne hydrogen more acidic than a typical alkane hydrogen?",
+        "hi": "अंतिम ऐल्काइन H सामान्य ऐल्केन H से अधिक अम्लीय क्यों है?"
+      },
+      "answer": {
+        "en": "Its conjugate base places the electron pair in an orbital of greater s character,which stabilises it relative to the simple alkane comparison.",
+        "hi": "उसके संयुग्मी क्षारक में इलेक्ट्रॉन युग्म अधिक s-गुण वाले कक्षक से जुड़ता है, जिससे सरल ऐल्केन तुलना में स्थायित्व अधिक है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does benzene usually undergo electrophilic substitution rather than simple alkene-like addition?",
+        "hi": "बेंजीन सामान्यतः सरल ऐल्कीन जैसे संकलन के बजाय इलेक्ट्रॉनरागी प्रतिस्थापन क्यों करता है?"
+      },
+      "answer": {
+        "en": "Substitution can restore the aromatic pi framework in the final product,whereas addition disturbs that framework.",
+        "hi": "प्रतिस्थापन से अंतिम उत्पाद में ऐरोमैटिक पाई ढाँचा फिर मिल सकता है; संकलन उसे बाधित करता है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Hydrocarbons contain only C and H; formulas need structural restrictions.",
+      "hi": "हाइड्रोकार्बन में केवल C और H; सूत्र के लिए संरचनात्मक सीमाएँ जरूरी हैं।"
+    },
+    {
+      "en": "Ethane conformations retain connectivity and differ in torsional energy.",
+      "hi": "एथेन संरूपणा की संयोजकता समान, मरोड़ी ऊर्जा अलग होती है।"
+    },
+    {
+      "en": "Alkenes and alkynes commonly show addition at multiple bonds.",
+      "hi": "ऐल्कीन और ऐल्काइन सामान्यतः बहु आबंध पर संकलन करते हैं।"
+    },
+    {
+      "en": "Terminal alkyne acidity depends on the actual C–H arrangement.",
+      "hi": "अंतिम ऐल्काइन अम्लता वास्तविक C–H व्यवस्था पर निर्भर है।"
+    },
+    {
+      "en": "Aromaticity and directing effects explain important benzene reactions.",
+      "hi": "ऐरोमैटिकता और निर्देशक प्रभाव बेंजीन की महत्त्वपूर्ण अभिक्रियाएँ समझाते हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not infer a unique structure from a general formula,confuse conformation with changed connectivity,or promise a pure chlorination product. The ethane energy index is not measured kJ/mol.",
+    "hi": "सामान्य सूत्र से एकमात्र संरचना न निकालें, संरूपणा को बदली संयोजकता न मानें और शुद्ध क्लोरीनीकरण उत्पाद का वादा न करें। एथेन ऊर्जा सूचकांक मापी kJ/mol ऊर्जा नहीं।"
+  },
+  "conceptMap": "C–H ढाँचा → संतृप्ति और असंतृप्ति → समजातीयता तथा नामकरण → ऐल्केन संरूपणा / प्रतिस्थापन → ऐल्कीन–ऐल्काइन संकलन → ऐरोमैटिकता → बेंजीन प्रतिस्थापन",
+  "conceptMapEn": "C–H framework → saturation and unsaturation → homology and naming → alkane conformation / substitution → alkene–alkyne addition → aromaticity → benzene substitution"
+}

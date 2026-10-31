@@ -1,0 +1,1452 @@
+{
+  "number": 2,
+  "id": "physics11-02",
+  "title": {
+    "en": "Motion in a Straight Line",
+    "hi": "सरल रेखा में गति"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-02-1",
+      "title": {
+        "en": "Uniform motion",
+        "hi": "एकसमान गति"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 3
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Velocity",
+            "hi": "वेग"
+          },
+          "min": -5,
+          "max": 5,
+          "step": 1,
+          "initial": 2,
+          "unit": "m/s"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Relate constant velocity to position-time slope.",
+        "hi": "नियत वेग को स्थिति समय ढाल से जोड़ें।"
+      },
+      "observe": {
+        "en": "Change signed velocity and compare the motion and graph.",
+        "hi": "चिह्न सहित वेग बदलकर गति और आलेख तुलना करें।"
+      },
+      "modelNote": {
+        "en": "A point moves along a symbolic line; the display may repeat, not represent an actual endless road.",
+        "hi": "बिंदु सांकेतिक रेखा पर चलता है; दृश्य दोहर सकता है, वास्तविक अनंत सड़क नहीं है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "At constant velocity position changes by v times elapsed time.",
+          "hi": "नियत वेग में स्थिति परिवर्तन v और समय का गुणनफल है।"
+        }
+      },
+      "realLife": {
+        "en": "A conveyor belt moves goods at nearly constant speed.",
+        "hi": "कन्वेयर बेल्ट लगभग नियत चाल से सामान ले जाती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "A negative velocity means:",
+          "hi": "ऋण वेग का अर्थ:"
+        },
+        "options": [
+          {
+            "en": "Negative time",
+            "hi": "ऋण समय"
+          },
+          {
+            "en": "Motion in the negative direction",
+            "hi": "ऋण दिशा में गति"
+          },
+          {
+            "en": "Negative mass",
+            "hi": "ऋण द्रव्यमान"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The sign specifies direction along the chosen axis.",
+          "hi": "चिह्न चुने अक्ष पर दिशा बताता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-02-1-low",
+          "label": {
+            "en": "Explore the lower setting: -5 m/s",
+            "hi": "निचली सेटिंग देखें: -5 m/s"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": -5
+          }
+        },
+        {
+          "id": "phy11-02-1-high",
+          "label": {
+            "en": "Compare the upper setting: 5 m/s",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 5 m/s"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 5
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.0
+          },
+          "text": {
+            "en": "The velocity is zero or negative in this range.",
+            "hi": "इस सीमा में वेग शून्य या ऋण है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0.0
+          },
+          "text": {
+            "en": "Positive velocity gives an increasing position.",
+            "hi": "धन वेग से स्थिति बढ़ती है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-02-2",
+      "title": {
+        "en": "Uniform acceleration",
+        "hi": "एकसमान त्वरण"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 4
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Acceleration",
+            "hi": "त्वरण"
+          },
+          "min": -2,
+          "max": 4,
+          "step": 0.5,
+          "initial": 1,
+          "unit": "m/s²"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Compare velocity changes under constant acceleration.",
+        "hi": "नियत त्वरण में वेग परिवर्तन तुलना करें।"
+      },
+      "observe": {
+        "en": "Keep initial velocity 2 m/s and vary acceleration.",
+        "hi": "प्रारंभिक वेग 2 m/s रखकर त्वरण बदलें।"
+      },
+      "modelNote": {
+        "en": "One-dimensional ideal motion with x₀ = 0; forces are not separately modelled.",
+        "hi": "x₀ = 0 वाला आदर्श एकविमीय मॉडल; बल अलग नहीं दिखाए गए हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "v = 2 + at and x = 2t + ½at² follow from constant acceleration.",
+          "hi": "नियत त्वरण से v = 2 + at और x = 2t + ½at² मिलता है।"
+        }
+      },
+      "realLife": {
+        "en": "A vehicle accelerates along a straight test track.",
+        "hi": "वाहन सीधी परीक्षण पटरी पर त्वरित होता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "For constant acceleration, v(t) is:",
+          "hi": "नियत त्वरण में v(t) है:"
+        },
+        "options": [
+          {
+            "en": "Linear in time",
+            "hi": "समय में रैखिक"
+          },
+          {
+            "en": "Always zero",
+            "hi": "हमेशा शून्य"
+          },
+          {
+            "en": "Always constant",
+            "hi": "हमेशा नियत"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "v = u + at is linear; it is constant only when a = 0.",
+          "hi": "v = u + at रैखिक है; a = 0 पर ही नियत है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-02-2-low",
+          "label": {
+            "en": "Explore the lower setting: -2 m/s²",
+            "hi": "निचली सेटिंग देखें: -2 m/s²"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": -2
+          }
+        },
+        {
+          "id": "phy11-02-2-high",
+          "label": {
+            "en": "Compare the upper setting: 4 m/s²",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 4 m/s²"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.0
+          },
+          "text": {
+            "en": "A negative acceleration can reverse initially positive motion.",
+            "hi": "ऋण त्वरण शुरू की धन गति उलट सकता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.0
+          },
+          "text": {
+            "en": "Larger positive acceleration makes velocity increase faster.",
+            "hi": "अधिक धन त्वरण से वेग जल्दी बढ़ता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-02-3",
+      "title": {
+        "en": "Area under velocity graph",
+        "hi": "वेग आलेख के नीचे क्षेत्रफल"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 5
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Velocity",
+            "hi": "वेग"
+          },
+          "min": 0,
+          "max": 8,
+          "step": 1,
+          "initial": 4,
+          "unit": "m/s"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Read displacement as velocity-time area.",
+        "hi": "विस्थापन को वेग समय क्षेत्रफल से पढ़ें।"
+      },
+      "observe": {
+        "en": "Use a fixed 5 s interval and change constant velocity.",
+        "hi": "5 s नियत अंतराल में नियत वेग बदलें।"
+      },
+      "modelNote": {
+        "en": "The rectangle is a graph area, not a physical surface; duration is fixed at 5 s.",
+        "hi": "आयत आलेख का क्षेत्र है, भौतिक सतह नहीं; अवधि 5 s नियत है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The area v × 5 equals displacement in metres.",
+          "hi": "v × 5 क्षेत्रफल मीटर में विस्थापन है।"
+        }
+      },
+      "realLife": {
+        "en": "A lift cruising at constant speed covers speed multiplied by time.",
+        "hi": "नियत चाल से चलती लिफ्ट चाल गुणा समय दूरी तय करती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "4 m/s for 5 s gives:",
+          "hi": "4 m/s से 5 s में मिलता है:"
+        },
+        "options": [
+          {
+            "en": "20 m",
+            "hi": "20 m"
+          },
+          {
+            "en": "9 m",
+            "hi": "9 m"
+          },
+          {
+            "en": "0.8 m",
+            "hi": "0.8 m"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The rectangle area is 4 × 5 = 20 m.",
+          "hi": "आयत क्षेत्र 4 × 5 = 20 m है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-02-3-low",
+          "label": {
+            "en": "Explore the lower setting: 0 m/s",
+            "hi": "निचली सेटिंग देखें: 0 m/s"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "phy11-02-3-high",
+          "label": {
+            "en": "Compare the upper setting: 8 m/s",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 8 m/s"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 8
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 4.0
+          },
+          "text": {
+            "en": "A smaller velocity makes a smaller rectangle area.",
+            "hi": "कम वेग पर आयत क्षेत्रफल कम है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 4.0
+          },
+          "text": {
+            "en": "A larger velocity gives greater displacement in the same time.",
+            "hi": "समान समय में अधिक वेग से अधिक विस्थापन है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Reference frame and position",
+        "hi": "संदर्भ फ्रेम और स्थिति"
+      },
+      "paragraphs": [
+        {
+          "en": "Motion means that an object's position changes with time relative to a chosen reference frame. A passenger sitting in a moving bus is at rest relative to the seat but moving relative to the road. For straight-line motion, choose an origin, a positive direction and a clock. A coordinate x then describes position along the line. A negative coordinate means the object lies on the negative side of the origin, not that it has a negative distance from it. Changing the origin changes coordinates but does not change a displacement between the same two events. A simple particle description is useful when the object's size is unimportant for the question. It does not mean that a real train has no length. Record the reference frame before assigning signs; otherwise two correct observers may appear to disagree only because they used different conventions.",
+          "hi": "गति (Motion) का अर्थ है कि चुने गए संदर्भ फ्रेम के सापेक्ष किसी वस्तु की स्थिति समय के साथ बदलती है। चलती बस में बैठा यात्री सीट के सापेक्ष विराम में और सड़क के सापेक्ष गति में है। सरल रेखीय गति के लिए मूल बिंदु, धन दिशा और घड़ी चुनते हैं। फिर निर्देशांक x से रेखा पर स्थिति बताते हैं। ऋण निर्देशांक का अर्थ मूल के ऋण पक्ष में होना है, दूरी का ऋण होना नहीं। मूल बदलने से निर्देशांक बदलते हैं, लेकिन समान 2 घटनाओं के बीच विस्थापन नहीं बदलता। जब प्रश्न में वस्तु का आकार महत्त्वपूर्ण न हो तब कण मॉडल उपयोगी है। इसका अर्थ यह नहीं कि वास्तविक रेल की लंबाई शून्य है। चिह्न लगाने से पहले संदर्भ फ्रेम स्पष्ट लिखें। अलग दिशा मानने वाले 2 प्रेक्षकों के संख्यात्मक चिह्न अलग हो सकते हैं, फिर भी उनकी भौतिक व्याख्या समान हो सकती है। पहले व्यवस्था स्पष्ट करने से आगे की गणना में भ्रम कम होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For an escalator, state whether the observer stands on the steps or on the building floor. The same passenger can have different measured velocities because the reference frames themselves move relative to one another.",
+          "hi": "एस्केलेटर में स्पष्ट करें कि प्रेक्षक सीढ़ियों पर है या भवन के फर्श पर। संदर्भ फ्रेम आपस में चल रहे हों तो एक यात्री के मापे वेग अलग हो सकते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can an object be at rest and moving relative to different frames?",
+          "hi": "क्या वस्तु अलग फ्रेमों में विराम तथा गति में हो सकती है?"
+        },
+        "answer": {
+          "en": "Yes; motion is described relative to the chosen frame.",
+          "hi": "हाँ; गति चुने हुए फ्रेम के सापेक्ष बताई जाती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Distance and displacement",
+        "hi": "दूरी और विस्थापन"
+      },
+      "paragraphs": [
+        {
+          "en": "Distance is the total length of the actual path travelled. Displacement is final position minus initial position, Δx = x₂ − x₁, in one dimension. Distance is a nonnegative scalar; displacement has a direction represented by its sign. If a student walks from x = 0 to x = 5 m and returns to x = 2 m, the distance is 8 m but displacement is +2 m. The magnitude of displacement cannot exceed the distance travelled between the same events. They are equal for motion along the line without reversal. A round trip has zero displacement but usually nonzero distance. The initial and final positions are sufficient to find displacement; they are not generally sufficient for distance. In a multi-stage journey, add the lengths of the individual stages for distance, while adding signed position changes for displacement. These definitions prevent confusion later in average speed and average velocity.",
+          "hi": "दूरी (Distance) वस्तु के वास्तविक पथ की कुल लंबाई है। एक विमा में विस्थापन (Displacement) अंतिम स्थिति में से प्रारंभिक स्थिति घटाने पर मिलता है: Δx = x₂ − x₁। दूरी अऋण अदिश है, जबकि विस्थापन की दिशा उसके चिह्न से बताते हैं। विद्यार्थी x = 0 से x = 5 m तक जाए और फिर x = 2 m पर लौटे तो दूरी 8 m है, लेकिन विस्थापन +2 m है। समान घटनाओं के बीच विस्थापन का परिमाण दूरी से अधिक नहीं हो सकता। दिशा बदले बिना रेखा पर चलने पर दोनों के परिमाण बराबर होते हैं। वापस प्रारंभिक बिंदु पर आने की यात्रा में विस्थापन शून्य होता है, लेकिन दूरी सामान्यतः शून्य नहीं होती। विस्थापन निकालने के लिए केवल आरंभ और अंत की स्थिति पर्याप्त है; दूरी के लिए पूरा पथ जानना पड़ सकता है। कई चरणों वाली यात्रा में दूरी के लिए चरणों की लंबाइयाँ जोड़ें और विस्थापन के लिए चिह्न सहित स्थिति परिवर्तन जोड़ें। यही अंतर औसत चाल तथा औसत वेग में भी लागू होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A position table listing 0 m, 5 m and 2 m contains enough information for both quantities only if each stage follows the straight line without additional unrecorded reversals.",
+          "hi": "0 m, 5 m और 2 m की स्थिति तालिका दोनों राशियाँ तभी बताती है जब हर चरण में बिना अतिरिक्त अनलिखे मोड़ के सीधी रेखा पर चला गया हो।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "A round trip returns to its start. Is its distance necessarily zero?",
+          "hi": "प्रारंभिक बिंदु पर लौटने से दूरी भी शून्य होगी?"
+        },
+        "answer": {
+          "en": "No; displacement is zero, but the path length can be positive.",
+          "hi": "नहीं; विस्थापन शून्य है, पथ की लंबाई धन हो सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Average speed and average velocity",
+        "hi": "औसत चाल और औसत वेग"
+      },
+      "paragraphs": [
+        {
+          "en": "Average velocity equals net displacement divided by total elapsed time. Average speed equals total distance divided by total elapsed time. They use the same time interval but different numerators. For a round trip, average velocity is zero even if average speed is large. Never find a journey's average speed by simply averaging two speeds unless the time spent at each speed is equal. If equal distances are covered at speeds v₁ and v₂, total time is d/v₁ + d/v₂ and average speed is 2v₁v₂/(v₁ + v₂). Include stopping time when the requested interval includes the stops. Average velocity depends only on positions at the interval endpoints, whereas average speed also depends on the route. The SI unit of both is m/s. Their numerical values alone do not describe every moment of motion: an average of 4 m/s does not mean the object moved at that speed throughout.",
+          "hi": "औसत वेग (Average velocity) कुल विस्थापन को कुल बीते समय से भाग देने पर मिलता है। औसत चाल (Average speed) कुल दूरी को उसी कुल समय से भाग देने पर मिलती है। दोनों में समय अंतराल समान है, लेकिन अंश अलग है। पूरी यात्रा के बाद प्रारंभिक बिंदु पर लौटने पर औसत वेग शून्य हो सकता है, जबकि औसत चाल काफी बड़ी हो सकती है। 2 चालों का साधारण औसत तभी लें जब दोनों चालों पर समान समय चला हो। समान दूरियाँ v₁ और v₂ चालों से तय हों तो कुल समय d/v₁ + d/v₂ है और औसत चाल 2v₁v₂/(v₁ + v₂) मिलती है। यदि चुने अंतराल में रुकने का समय शामिल है तो उसे भी कुल समय में लें। औसत वेग केवल सिरों की स्थितियों पर निर्भर है; औसत चाल में पथ भी महत्त्वपूर्ण है। दोनों का SI मात्रक m/s है। केवल औसत मान पूरी गति नहीं बताता। 4 m/s औसत चाल का अर्थ हर क्षण 4 m/s चलना नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A cyclist covering equal distances at 10 and 20 m/s takes longer at the lower speed. The journey average is therefore below the arithmetic mean of 15 m/s.",
+          "hi": "10 और 20 m/s पर समान दूरी तय करने वाला साइकिल चालक कम चाल पर अधिक समय लेता है। इसलिए औसत चाल 15 m/s के साधारण औसत से कम है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "When is the arithmetic mean of two speeds a valid average speed?",
+          "hi": "2 चालों का साधारण औसत कब सही औसत चाल है?"
+        },
+        "answer": {
+          "en": "When the time intervals at the two speeds are equal.",
+          "hi": "जब दोनों चालों पर बिताए समय समान हों।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Instantaneous velocity and slope",
+        "hi": "तात्क्षणिक वेग और ढाल"
+      },
+      "paragraphs": [
+        {
+          "en": "Instantaneous velocity describes motion at a particular instant. It is obtained as the limiting value of Δx/Δt when the interval around that instant becomes very small, written v = dx/dt. On a position-time graph, it is the slope of the tangent. A positive slope means motion in the positive direction; a negative slope means motion in the negative direction. A horizontal graph represents rest, even if the position is not zero. A steeper slope in magnitude means greater speed. Average velocity corresponds to the slope of a secant joining two points, so it need not equal the tangent slope at either endpoint. A curved position-time graph indicates changing velocity. The graph is not a picture of the road: a downward curve can describe movement along a horizontal track. Always read the labelled axes before interpreting a graph. Speed is the magnitude of instantaneous velocity and is never negative.",
+          "hi": "तात्क्षणिक वेग (Instantaneous velocity) किसी विशेष क्षण की गति बताता है। उस क्षण के आसपास Δt को बहुत छोटा करने पर Δx/Δt की सीमा से v = dx/dt मिलता है। स्थिति समय आलेख में यह स्पर्शरेखा की ढाल है। धन ढाल का अर्थ धन दिशा में और ऋण ढाल का अर्थ ऋण दिशा में गति है। क्षैतिज आलेख विराम दर्शाता है, भले स्थिति शून्य न हो। ढाल का परिमाण अधिक होने पर चाल अधिक होती है। 2 बिंदुओं को मिलाने वाली छेदक रेखा की ढाल औसत वेग देती है; यह सिरों पर स्पर्शरेखा की ढाल के बराबर होना आवश्यक नहीं है। वक्र स्थिति समय आलेख बदलता वेग दिखाता है। आलेख सड़क की तस्वीर नहीं है। नीचे जाती वक्र रेखा क्षैतिज पटरी पर चलने वाली वस्तु की गति भी दिखा सकती है। व्याख्या से पहले अक्षों पर लिखी राशियाँ और मात्रक पढ़ें। तात्क्षणिक चाल वेग का परिमाण है, इसलिए वह ऋण नहीं होती।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not compare the apparent steepness of two graphs drawn with different scales. Calculate the slope using the axis values and units before deciding which object has greater speed.",
+          "hi": "अलग पैमानों पर बने 2 आलेखों की दिखाई ढाल की सीधी तुलना न करें। अक्ष मानों और मात्रकों से ढाल निकालकर ही अधिक चाल का निर्णय लें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does a horizontal position-time graph represent?",
+          "hi": "क्षैतिज स्थिति समय आलेख क्या बताता है?"
+        },
+        "answer": {
+          "en": "A constant position and zero velocity.",
+          "hi": "नियत स्थिति और शून्य वेग।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Acceleration and signs",
+        "hi": "त्वरण और चिह्न"
+      },
+      "paragraphs": [
+        {
+          "en": "Acceleration is the rate of change of velocity, not simply the rate of increase of speed. Average acceleration is Δv/Δt and instantaneous acceleration is dv/dt. In one dimension its sign depends on the chosen positive direction. An object speeds up when velocity and acceleration have the same sign and slows down when they have opposite signs. Thus a negative acceleration does not automatically mean slowing down. A car with v = −5 m/s and a = −2 m/s² is gaining speed in the negative direction. Zero velocity at one instant does not imply zero acceleration; a ball at the highest point of its vertical flight still accelerates downward. Constant acceleration means equal changes in velocity in equal time intervals. Its SI unit is m/s². Draw a direction arrow, write the signs of velocity and acceleration separately, and then infer how speed changes instead of attaching the word retardation to every negative number.",
+          "hi": "त्वरण (Acceleration) वेग परिवर्तन की दर है, केवल चाल बढ़ने की दर नहीं। औसत त्वरण Δv/Δt और तात्क्षणिक त्वरण dv/dt है। एक विमा में इसका चिह्न चुनी हुई धन दिशा पर निर्भर करता है। वेग और त्वरण के चिह्न समान हों तो वस्तु की चाल बढ़ती है; विपरीत हों तो चाल घटती है। इसलिए ऋण त्वरण का अर्थ हमेशा धीमा होना नहीं है। v = −5 m/s और a = −2 m/s² वाली कार ऋण दिशा में अधिक चाल से चलने लगती है। किसी एक क्षण वेग शून्य होने से त्वरण शून्य नहीं हो जाता। ऊपर फेंकी गेंद के उच्चतम बिंदु पर भी गुरुत्वीय त्वरण नीचे की ओर रहता है। नियत त्वरण में समान समय अंतरालों में वेग में समान परिवर्तन होता है। इसका SI मात्रक m/s² है। पहले दिशा का तीर बनाएँ, फिर वेग और त्वरण के चिह्न अलग लिखें। उसके बाद चाल बढ़ने या घटने का निष्कर्ष निकालें। हर ऋण संख्या को बिना संदर्भ मंदन कहना सही नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "At a turning point, inspect nearby velocities on both sides of the instant. A change from positive to negative velocity is compatible with a continuous negative acceleration throughout the turn.",
+          "hi": "मोड़ बिंदु के दोनों ओर पास के क्षणों का वेग देखें। धन से ऋण वेग में बदलना पूरे मोड़ के दौरान लगातार ऋण त्वरण के साथ संभव है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can negative acceleration increase speed?",
+          "hi": "क्या ऋण त्वरण चाल बढ़ा सकता है?"
+        },
+        "answer": {
+          "en": "Yes, if velocity is also negative.",
+          "hi": "हाँ, यदि वेग भी ऋण हो।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Velocity-time and acceleration-time graphs",
+        "hi": "वेग समय तथा त्वरण समय आलेख"
+      },
+      "paragraphs": [
+        {
+          "en": "The slope of a velocity-time graph gives acceleration. The signed area between that graph and the time axis gives displacement. An area below the axis is negative, not an absence of motion. To calculate distance when velocity changes sign, add the magnitudes of the separate areas. A horizontal velocity-time line has zero acceleration but can have nonzero displacement. A straight sloping line represents constant acceleration. For a constant velocity of 4 m/s lasting 5 s, the rectangle area is 20 m. The area under an acceleration-time graph gives change in velocity, not displacement. Check units to recognise the difference: (m/s) × s gives m, whereas (m/s²) × s gives m/s. Graphical questions are often solved more directly by geometry than by repeated substitutions into equations. Mark the zero line clearly and divide a graph into rectangles, triangles or other manageable pieces before adding their signed contributions.",
+          "hi": "वेग समय आलेख की ढाल त्वरण देती है। इस आलेख और समय अक्ष के बीच का चिह्न सहित क्षेत्रफल विस्थापन देता है। अक्ष के नीचे का क्षेत्रफल ऋण है; इसका अर्थ गति का न होना नहीं है। वेग का चिह्न बदलने पर दूरी निकालने के लिए अलग क्षेत्रों के परिमाण जोड़ते हैं। क्षैतिज वेग समय रेखा में त्वरण शून्य है, लेकिन विस्थापन अशून्य हो सकता है। सीधी ढलवाँ रेखा नियत त्वरण बताती है। 4 m/s का नियत वेग 5 s तक हो तो आयत का क्षेत्रफल 20 m है। त्वरण समय आलेख के नीचे क्षेत्रफल वेग परिवर्तन देता है, विस्थापन नहीं। मात्रक देखकर अंतर पहचानें: (m/s) × s से m मिलता है, जबकि (m/s²) × s से m/s मिलता है। कई आलेख प्रश्नों में समीकरण बार बार लगाने के बजाय ज्यामिति से सीधा हल मिलता है। शून्य रेखा स्पष्ट करें, आलेख को आयत और त्रिभुज जैसे सरल भागों में बाँटें और फिर चिह्न सहित योगदान जोड़ें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "An interval with zero net area can still contain positive and negative areas of equal magnitude. The object returns to its starting position while travelling a nonzero distance.",
+          "hi": "शून्य कुल क्षेत्रफल वाले अंतराल में समान परिमाण के धन और ऋण क्षेत्र हो सकते हैं। वस्तु अशून्य दूरी चलकर प्रारंभिक स्थिति पर लौटती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does area under a velocity-time graph give?",
+          "hi": "वेग समय आलेख के नीचे क्षेत्रफल क्या देता है?"
+        },
+        "answer": {
+          "en": "Signed displacement for the chosen interval.",
+          "hi": "चुने अंतराल का चिह्न सहित विस्थापन।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Equations for constant acceleration",
+        "hi": "नियत त्वरण के समीकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "For constant acceleration in a fixed direction, v = u + at, displacement s = ut + ½at², and v² = u² + 2as. Here u is initial velocity, v final velocity, t elapsed time and s the signed displacement. The position itself is x = x₀ + s. These equations are not generally valid when acceleration varies with time. The relation s = (u + v)t/2 uses the average of the endpoint velocities because a constant acceleration makes velocity linear in time. Choose an equation that contains the required quantity and known data rather than inserting numbers into every formula. Keep signs consistent throughout. Squaring velocity loses directional information, so a result from v² may require a separate sign decision. If motion reverses direction, displacement equations remain valid with signs, but total distance may require splitting the journey at the turning point. Finally check whether the calculated time belongs to the physical interval described.",
+          "hi": "एक दिशा में नियत त्वरण के लिए v = u + at, विस्थापन s = ut + ½at² और v² = u² + 2as हैं। यहाँ u प्रारंभिक वेग, v अंतिम वेग, t बीता समय और s चिह्न सहित विस्थापन है। वास्तविक स्थिति x = x₀ + s लिखते हैं। त्वरण समय के साथ बदलता हो तो ये समीकरण सामान्यतः लागू नहीं होते। s = (u + v)t/2 में सिरों के वेगों का औसत इसलिए सही है क्योंकि नियत त्वरण में वेग समय के साथ रैखिक बदलता है। हर सूत्र में संख्या डालने के बजाय ऐसा संबंध चुनें जिसमें ज्ञात राशियाँ और पूछी राशि हों। पूरे हल में चिह्न की पद्धति समान रखें। वेग का वर्ग दिशा की जानकारी हटाता है, इसलिए v² से मान मिलने पर चिह्न अलग तय करना पड़ सकता है। गति की दिशा बदलने पर विस्थापन के समीकरण चिह्न सहित सही रहते हैं, लेकिन कुल दूरी के लिए यात्रा को मोड़ बिंदु पर बाँटना पड़ सकता है। अंत में देखें कि निकला समय प्रश्न में बताई भौतिक अवधि में आता है या नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For a braking vehicle, select the solution with positive elapsed time before the vehicle stops. Extending a constant braking acceleration beyond stopping may describe an unintended reversal rather than the stated event.",
+          "hi": "ब्रेक लगती गाड़ी में रुकने से पहले का धन समय चुनें। रुकने के बाद भी वही त्वरण बढ़ाने पर अनचाही उलटी गति निकल सकती है, जो प्रश्न की घटना नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can constant-acceleration equations be used for arbitrary variable acceleration?",
+          "hi": "क्या नियत त्वरण के समीकरण किसी भी बदलते त्वरण में लगा सकते हैं?"
+        },
+        "answer": {
+          "en": "No; their derivation assumes constant acceleration.",
+          "hi": "नहीं; उनकी व्युत्पत्ति में त्वरण नियत माना गया है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Vertical motion and calculus connection",
+        "hi": "ऊर्ध्वाधर गति और कलन संबंध"
+      },
+      "paragraphs": [
+        {
+          "en": "Near Earth's surface, neglecting air resistance, a freely moving object has approximately constant downward acceleration g. If upward is positive, a = −g; the sign does not change when the object begins to descend. A ball thrown upward with speed u reaches its highest point when v = 0, at time u/g, and rises through u²/(2g). At that point it does not remain at rest for a finite interval. For a return to the same height, the ideal total flight time is 2u/g. These results change if the landing height differs. More generally, derivatives link x, v and a: v = dx/dt and a = d²x/dt². Integration reverses the process, with initial conditions determining constants. If acceleration is known, velocity change is the signed integral of acceleration; position change is the signed integral of velocity. Understanding these links explains why graph slopes and areas are central to motion.",
+          "hi": "पृथ्वी की सतह के पास वायु प्रतिरोध उपेक्षित करने पर स्वतंत्र वस्तु का त्वरण लगभग नियत और नीचे की ओर g होता है। ऊपर की दिशा धन लें तो a = −g है। वस्तु नीचे लौटने लगे तब भी त्वरण का चिह्न नहीं बदलता। प्रारंभिक चाल u से ऊपर फेंकी गेंद v = 0 होने पर उच्चतम बिंदु पर पहुँचती है। वहाँ पहुँचने का समय u/g और ऊपर उठा विस्थापन u²/(2g) है। उस बिंदु पर गेंद किसी सीमित समय तक विराम में नहीं रहती। उसी ऊँचाई पर लौटने का आदर्श कुल समय 2u/g है; उतरने की ऊँचाई अलग हो तो यह परिणाम बदलता है। सामान्यतः अवकलज से x, v और a जुड़े हैं: v = dx/dt और a = d²x/dt²। समाकलन उलटी प्रक्रिया है, जिसमें प्रारंभिक शर्तों से नियतांक तय होते हैं। त्वरण के चिह्न सहित समाकलन से वेग परिवर्तन और वेग के समाकलन से स्थिति परिवर्तन मिलता है। इससे समझ आता है कि गति में आलेख की ढाल तथा क्षेत्रफल इतने महत्त्वपूर्ण क्यों हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The ideal free-fall model compares objects when air resistance is negligible. A feather and a stone in air need not follow identical motion because the neglected force affects them differently.",
+          "hi": "आदर्श मुक्त पतन में वायु प्रतिरोध नगण्य माना है। हवा में पंख और पत्थर की गति समान होना आवश्यक नहीं, क्योंकि छोड़ा गया बल दोनों को अलग प्रभावित करता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At the top of vertical flight, is acceleration zero?",
+          "hi": "ऊर्ध्वाधर उड़ान के उच्चतम बिंदु पर त्वरण शून्य है?"
+        },
+        "answer": {
+          "en": "No; velocity is zero there, but acceleration remains downward.",
+          "hi": "नहीं; वहाँ वेग शून्य है, पर त्वरण नीचे की ओर रहता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "v = dx/dt; a = dv/dt",
+      "meaning": {
+        "en": "Instantaneous rates of change.",
+        "hi": "तात्क्षणिक परिवर्तन दरें।"
+      },
+      "units": {
+        "en": "v: m/s; a: m/s²",
+        "hi": "v: m/s; a: m/s²"
+      }
+    },
+    {
+      "expression": "v = u + at; s = ut + ½at²",
+      "meaning": {
+        "en": "Valid for constant acceleration.",
+        "hi": "नियत त्वरण में लागू।"
+      },
+      "units": {
+        "en": "u,v: m/s; a: m/s²; s: m; t: s",
+        "hi": "u,v: m/s; a: m/s²; s: m; t: s"
+      }
+    },
+    {
+      "expression": "v² = u² + 2as",
+      "meaning": {
+        "en": "Eliminates time for constant acceleration.",
+        "hi": "नियत त्वरण में समय हटाता है।"
+      },
+      "units": {
+        "en": "Each term has unit m²/s²",
+        "hi": "हर पद का मात्रक m²/s²"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A body moves at 3 m/s for 4 s. Find displacement.",
+        "hi": "वस्तु 3 m/s से 4 s चलती है। विस्थापन निकालें।"
+      },
+      "given": {
+        "en": "v = 3 m/s; t = 4 s.",
+        "hi": "v = 3 m/s; t = 4 s।"
+      },
+      "find": {
+        "en": "s.",
+        "hi": "s।"
+      },
+      "formula": {
+        "en": "s = vt",
+        "hi": "s = vt"
+      },
+      "steps": [
+        {
+          "en": "Multiply 3 by 4.",
+          "hi": "3 को 4 से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "+12 m in the chosen positive direction.",
+        "hi": "चुनी धन दिशा में +12 m।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A walker goes 6 m forward and 2 m back. Find distance and displacement.",
+        "hi": "व्यक्ति 6 m आगे और 2 m पीछे जाता है। दूरी और विस्थापन निकालें।"
+      },
+      "given": {
+        "en": "Straight-line stages 6 m and −2 m.",
+        "hi": "सरल रेखीय चरण 6 m और −2 m।"
+      },
+      "find": {
+        "en": "Distance and displacement.",
+        "hi": "दूरी तथा विस्थापन।"
+      },
+      "formula": {
+        "en": "Distance = sum of lengths; displacement = signed sum.",
+        "hi": "दूरी लंबाइयों का योग; विस्थापन चिह्न सहित योग।"
+      },
+      "steps": [
+        {
+          "en": "Distance = 6 + 2.",
+          "hi": "दूरी = 6 + 2।"
+        },
+        {
+          "en": "Displacement = 6 − 2.",
+          "hi": "विस्थापन = 6 − 2।"
+        }
+      ],
+      "answer": {
+        "en": "Distance 8 m; displacement +4 m.",
+        "hi": "दूरी 8 m; विस्थापन +4 m।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A body starts at 2 m/s and accelerates at 1 m/s² for 3 s.",
+        "hi": "वस्तु 2 m/s से शुरू होकर 1 m/s² से 3 s त्वरित होती है।"
+      },
+      "given": {
+        "en": "u = 2 m/s; a = 1 m/s²; t = 3 s.",
+        "hi": "u = 2 m/s; a = 1 m/s²; t = 3 s।"
+      },
+      "find": {
+        "en": "Final velocity and displacement.",
+        "hi": "अंतिम वेग तथा विस्थापन।"
+      },
+      "formula": {
+        "en": "v = u + at; s = ut + ½at²",
+        "hi": "v = u + at; s = ut + ½at²"
+      },
+      "steps": [
+        {
+          "en": "v = 2 + 1 × 3.",
+          "hi": "v = 2 + 1 × 3।"
+        },
+        {
+          "en": "s = 2 × 3 + 0.5 × 1 × 9.",
+          "hi": "s = 2 × 3 + 0.5 × 1 × 9।"
+        }
+      ],
+      "answer": {
+        "en": "v = 5 m/s; s = 10.5 m.",
+        "hi": "v = 5 m/s; s = 10.5 m।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A car at 20 m/s brakes with a = −4 m/s². Find stopping distance.",
+        "hi": "20 m/s कार a = −4 m/s² से रुकती है। रोक दूरी निकालें।"
+      },
+      "given": {
+        "en": "u = 20 m/s; v = 0; a = −4 m/s².",
+        "hi": "u = 20 m/s; v = 0; a = −4 m/s²।"
+      },
+      "find": {
+        "en": "Stopping displacement.",
+        "hi": "रुकने तक विस्थापन।"
+      },
+      "formula": {
+        "en": "v² = u² + 2as",
+        "hi": "v² = u² + 2as"
+      },
+      "steps": [
+        {
+          "en": "0 = 400 − 8s.",
+          "hi": "0 = 400 − 8s।"
+        },
+        {
+          "en": "s = 400/8.",
+          "hi": "s = 400/8।"
+        }
+      ],
+      "answer": {
+        "en": "50 m forward.",
+        "hi": "आगे की ओर 50 m।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A ball is thrown upward at 19.6 m/s. Find height and same-level flight time.",
+        "hi": "गेंद 19.6 m/s से ऊपर फेंकी है। ऊँचाई और उसी स्तर पर लौटने का समय निकालें।"
+      },
+      "given": {
+        "en": "g = 9.8 m/s²; ignore air resistance.",
+        "hi": "g = 9.8 m/s²; वायु प्रतिरोध उपेक्षित।"
+      },
+      "find": {
+        "en": "Maximum rise and total time.",
+        "hi": "अधिकतम ऊँचाई और कुल समय।"
+      },
+      "formula": {
+        "en": "h = u²/(2g); t = 2u/g",
+        "hi": "h = u²/(2g); t = 2u/g"
+      },
+      "steps": [
+        {
+          "en": "h = 19.6²/19.6.",
+          "hi": "h = 19.6²/19.6।"
+        },
+        {
+          "en": "t = 39.2/9.8.",
+          "hi": "t = 39.2/9.8।"
+        }
+      ],
+      "answer": {
+        "en": "h = 19.6 m; t = 4 s.",
+        "hi": "h = 19.6 m; t = 4 s।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A round trip has zero:",
+        "hi": "बंद यात्रा में क्या शून्य है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Distance",
+            "hi": "दूरी"
+          },
+          "reason": {
+            "en": "The path can be long.",
+            "hi": "पथ लंबा हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Displacement",
+            "hi": "विस्थापन"
+          },
+          "reason": {
+            "en": "Final and initial positions coincide.",
+            "hi": "अंतिम तथा प्रारंभिक स्थिति समान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Elapsed time",
+            "hi": "बीता समय"
+          },
+          "reason": {
+            "en": "The journey takes time.",
+            "hi": "यात्रा में समय लगता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Average speed necessarily",
+            "hi": "औसत चाल अनिवार्यतः"
+          },
+          "reason": {
+            "en": "Nonzero distance gives nonzero average speed.",
+            "hi": "अशून्य दूरी से औसत चाल अशून्य है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Slope of a position-time graph gives:",
+        "hi": "स्थिति समय आलेख की ढाल देती है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Force",
+            "hi": "बल"
+          },
+          "reason": {
+            "en": "No mass information is supplied.",
+            "hi": "द्रव्यमान की जानकारी नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Velocity",
+            "hi": "वेग"
+          },
+          "reason": {
+            "en": "dx/dt is velocity.",
+            "hi": "dx/dt वेग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Distance directly",
+            "hi": "सीधे दूरी"
+          },
+          "reason": {
+            "en": "Slope is not path length.",
+            "hi": "ढाल पथ लंबाई नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass",
+            "hi": "द्रव्यमान"
+          },
+          "reason": {
+            "en": "Mass is not on either axis.",
+            "hi": "किसी अक्ष पर द्रव्यमान नहीं है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Area under a velocity-time graph gives:",
+        "hi": "वेग समय आलेख के नीचे क्षेत्रफल देता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Acceleration",
+            "hi": "त्वरण"
+          },
+          "reason": {
+            "en": "Slope gives acceleration.",
+            "hi": "ढाल त्वरण देती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Displacement",
+            "hi": "विस्थापन"
+          },
+          "reason": {
+            "en": "Velocity integrated over time gives displacement.",
+            "hi": "समय पर वेग का समाकलन विस्थापन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Force",
+            "hi": "बल"
+          },
+          "reason": {
+            "en": "Force also needs mass and acceleration.",
+            "hi": "बल के लिए द्रव्यमान भी चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Velocity",
+            "hi": "वेग"
+          },
+          "reason": {
+            "en": "The vertical coordinate already gives velocity.",
+            "hi": "ऊर्ध्व निर्देशांक पहले ही वेग देता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "v < 0 and a < 0 means the object is:",
+        "hi": "v < 0 और a < 0 होने पर वस्तु:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always slowing",
+            "hi": "हमेशा धीमी होती है"
+          },
+          "reason": {
+            "en": "Same signs increase speed.",
+            "hi": "समान चिह्न चाल बढ़ाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Speeding up",
+            "hi": "चाल बढ़ाती है"
+          },
+          "reason": {
+            "en": "Velocity and acceleration point the same way.",
+            "hi": "वेग और त्वरण एक दिशा में हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "At rest",
+            "hi": "विराम में है"
+          },
+          "reason": {
+            "en": "Velocity is nonzero.",
+            "hi": "वेग अशून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Moving positively",
+            "hi": "धन दिशा में चलती है"
+          },
+          "reason": {
+            "en": "Negative velocity indicates negative motion.",
+            "hi": "ऋण वेग ऋण दिशा बताता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "At the highest point of ideal vertical flight:",
+        "hi": "आदर्श ऊर्ध्व उड़ान के उच्चतम बिंदु पर:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "v = 0 and a = 0",
+            "hi": "v = 0 और a = 0"
+          },
+          "reason": {
+            "en": "Gravity does not vanish there.",
+            "hi": "गुरुत्व वहाँ समाप्त नहीं होता।"
+          }
+        },
+        {
+          "text": {
+            "en": "v = 0, acceleration downward",
+            "hi": "v = 0, त्वरण नीचे"
+          },
+          "reason": {
+            "en": "The ball still experiences gravity.",
+            "hi": "गेंद पर गुरुत्व बना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Acceleration upward",
+            "hi": "त्वरण ऊपर"
+          },
+          "reason": {
+            "en": "Gravity remains downward.",
+            "hi": "गुरुत्व नीचे रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Speed is maximum",
+            "hi": "चाल अधिकतम"
+          },
+          "reason": {
+            "en": "Speed is minimum there.",
+            "hi": "वहाँ चाल न्यूनतम है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A constant 4 m/s for 5 s gives displacement:",
+        "hi": "नियत 4 m/s से 5 s में विस्थापन:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0 m",
+            "hi": "0 m"
+          },
+          "reason": {
+            "en": "Velocity is not zero.",
+            "hi": "वेग शून्य नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9 m",
+            "hi": "9 m"
+          },
+          "reason": {
+            "en": "Velocities and times are not added.",
+            "hi": "वेग तथा समय नहीं जोड़ते।"
+          }
+        },
+        {
+          "text": {
+            "en": "20 m",
+            "hi": "20 m"
+          },
+          "reason": {
+            "en": "4 × 5 = 20.",
+            "hi": "4 × 5 = 20।"
+          }
+        },
+        {
+          "text": {
+            "en": "1.25 m",
+            "hi": "1.25 m"
+          },
+          "reason": {
+            "en": "Dividing time by speed is not displacement.",
+            "hi": "समय को चाल से भाग देना विस्थापन नहीं है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Constant-acceleration equations require:",
+        "hi": "नियत त्वरण के समीकरणों की शर्त है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Constant acceleration",
+            "hi": "नियत त्वरण"
+          },
+          "reason": {
+            "en": "This is the required assumption.",
+            "hi": "यही आवश्यक मान्यता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero initial velocity",
+            "hi": "हमेशा शून्य प्रारंभिक वेग"
+          },
+          "reason": {
+            "en": "u may be nonzero.",
+            "hi": "u अशून्य हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always positive velocity",
+            "hi": "हमेशा धन वेग"
+          },
+          "reason": {
+            "en": "Signs may be negative.",
+            "hi": "चिह्न ऋण हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero displacement",
+            "hi": "हमेशा शून्य विस्थापन"
+          },
+          "reason": {
+            "en": "Displacement may be nonzero.",
+            "hi": "विस्थापन अशून्य हो सकता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Equal times at 2 and 6 m/s in one direction give average speed:",
+        "hi": "एक दिशा में 2 और 6 m/s पर समान समय चलने से औसत चाल:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3 m/s",
+            "hi": "3 m/s"
+          },
+          "reason": {
+            "en": "This is not the equal-time mean.",
+            "hi": "यह समान समय का औसत नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4 m/s",
+            "hi": "4 m/s"
+          },
+          "reason": {
+            "en": "(2 + 6)/2 = 4.",
+            "hi": "(2 + 6)/2 = 4।"
+          }
+        },
+        {
+          "text": {
+            "en": "8 m/s",
+            "hi": "8 m/s"
+          },
+          "reason": {
+            "en": "Total time must also be included.",
+            "hi": "कुल समय भी लेना होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "12 m/s",
+            "hi": "12 m/s"
+          },
+          "reason": {
+            "en": "Multiplying speeds has wrong dimensions.",
+            "hi": "चालों का गुणन गलत विमा देता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The SI unit of acceleration is:",
+        "hi": "त्वरण का SI मात्रक है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "m/s",
+            "hi": "m/s"
+          },
+          "reason": {
+            "en": "This is velocity.",
+            "hi": "यह वेग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "m/s²",
+            "hi": "m/s²"
+          },
+          "reason": {
+            "en": "Velocity changes per second.",
+            "hi": "वेग प्रति सेकंड बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "m²/s",
+            "hi": "m²/s"
+          },
+          "reason": {
+            "en": "This is not acceleration.",
+            "hi": "यह त्वरण नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "s/m",
+            "hi": "s/m"
+          },
+          "reason": {
+            "en": "This is inverse speed.",
+            "hi": "यह चाल का व्युत्क्रम है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A horizontal velocity-time line above zero means:",
+        "hi": "शून्य से ऊपर क्षैतिज वेग समय रेखा का अर्थ:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Rest",
+            "hi": "विराम"
+          },
+          "reason": {
+            "en": "Velocity is nonzero.",
+            "hi": "वेग अशून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Constant positive velocity",
+            "hi": "नियत धन वेग"
+          },
+          "reason": {
+            "en": "The velocity coordinate is constant and positive.",
+            "hi": "वेग निर्देशांक नियत और धन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Increasing acceleration",
+            "hi": "बढ़ता त्वरण"
+          },
+          "reason": {
+            "en": "Its slope is zero.",
+            "hi": "उसकी ढाल शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero displacement for every interval",
+            "hi": "हर अंतराल में शून्य विस्थापन"
+          },
+          "reason": {
+            "en": "Its area over a positive duration is positive.",
+            "hi": "धन अवधि में क्षेत्रफल धन है।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish distance and displacement.",
+        "hi": "दूरी और विस्थापन में अंतर दें।"
+      },
+      "answer": {
+        "en": "Distance is path length; displacement is final minus initial position and includes direction.",
+        "hi": "दूरी पथ की लंबाई है; विस्थापन अंतिम में से प्रारंभिक स्थिति घटाना है और दिशा सहित है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can average velocity be zero for a moving object?",
+        "hi": "चलती वस्तु का औसत वेग शून्य कैसे हो सकता है?"
+      },
+      "answer": {
+        "en": "It can return to its starting position, giving zero net displacement.",
+        "hi": "वस्तु प्रारंभिक स्थिति पर लौट सकती है, इसलिए कुल विस्थापन शून्य है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain a negative acceleration.",
+        "hi": "ऋण त्वरण समझाएँ।"
+      },
+      "answer": {
+        "en": "It points along the chosen negative axis; whether speed falls depends on velocity direction.",
+        "hi": "यह चुने ऋण अक्ष की दिशा में है; चाल घटेगी या नहीं, यह वेग की दिशा पर निर्भर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find acceleration when velocity changes from 2 to 8 m/s in 3 s.",
+        "hi": "3 s में वेग 2 से 8 m/s हो तो त्वरण निकालें।"
+      },
+      "answer": {
+        "en": "a = (8 − 2)/3 = 2 m/s².",
+        "hi": "a = (8 − 2)/3 = 2 m/s²।"
+      }
+    },
+    {
+      "question": {
+        "en": "How is distance obtained from a graph when velocity changes sign?",
+        "hi": "वेग चिह्न बदले तो आलेख से दूरी कैसे निकालें?"
+      },
+      "answer": {
+        "en": "Split at zero crossings and add magnitudes of the velocity-time areas.",
+        "hi": "शून्य पार बिंदुओं पर बाँटकर वेग समय क्षेत्रों के परिमाण जोड़ें।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the calculus links among x, v and a.",
+        "hi": "x, v और a के कलन संबंध लिखें।"
+      },
+      "answer": {
+        "en": "v = dx/dt and a = dv/dt; their signed integrals give the respective changes.",
+        "hi": "v = dx/dt तथा a = dv/dt; चिह्न सहित समाकलन क्रमशः परिवर्तन देते हैं।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Define the frame and positive direction first.",
+      "hi": "पहले फ्रेम और धन दिशा चुनें।"
+    },
+    {
+      "en": "Distance and displacement answer different questions.",
+      "hi": "दूरी तथा विस्थापन अलग प्रश्नों के उत्तर हैं।"
+    },
+    {
+      "en": "Graph slopes give rates and areas give accumulated changes.",
+      "hi": "आलेख की ढाल दर और क्षेत्रफल कुल परिवर्तन देते हैं।"
+    },
+    {
+      "en": "Negative acceleration need not reduce speed.",
+      "hi": "ऋण त्वरण अनिवार्यतः चाल नहीं घटाता।"
+    },
+    {
+      "en": "Use kinematic equations only under their assumptions.",
+      "hi": "गति समीकरण उनकी मान्यताओं में ही लगाएँ।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not call every negative acceleration slowing down, or confuse graph shape with the road shape.",
+    "hi": "हर ऋण त्वरण को मंदन न कहें और आलेख को सड़क की आकृति न मानें।"
+  },
+  "goal": {
+    "en": "Describe straight-line motion using signs, graphs and equations.",
+    "hi": "चिह्न, आलेख और समीकरण से सरल रेखीय गति समझें।"
+  },
+  "conceptMap": "संदर्भ फ्रेम और स्थिति → दूरी और विस्थापन → औसत चाल और औसत वेग → तात्क्षणिक वेग और ढाल → त्वरण और चिह्न → वेग समय तथा त्वरण समय आलेख → नियत त्वरण के समीकरण → ऊर्ध्वाधर गति और कलन संबंध",
+  "conceptMapEn": "Reference frame and position → Distance and displacement → Average speed and average velocity → Instantaneous velocity and slope → Acceleration and signs → Velocity-time and acceleration-time graphs → Equations for constant acceleration → Vertical motion and calculus connection",
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Class 11 Physics and the UP Board 2026–27 syllabus. Use the prescribed textbook alongside these models.",
+    "hi": "NCERT कक्षा 11 भौतिकी तथा यूपी बोर्ड 2026–27 पाठ्यक्रम पर आधारित मौलिक अध्ययन व्याख्याएँ। इन मॉडलों के साथ निर्धारित पाठ्यपुस्तक भी पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part I · Chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keph102.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ]
+}

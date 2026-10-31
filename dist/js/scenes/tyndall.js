@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p,low})=>{g.box(0,0,0,1,.8,.6);let colloid=p[0]===1;for(let i=0;i<(low?20:40);i++)g.sphere(Math.sin(i*8)*.85,Math.cos(i*5+t*.15)*.65,Math.sin(i*3)*.5,colloid?.075:.028,colloid?C.gold:C.blue);g.line([-1.45,0,0],[-1,0,0],C.gold,4);if(colloid){g.line([-1,0,0],[1,0,0],C.gold,3);for(let i=0;i<7;i++)g.line([-.8+i*.25,0,0],[-.7+i*.25,-.3,0],C.gold,1)}return[{label:b('Sample','नमूना'),value:colloid?b('Colloid: beam path visible','कोलॉइड: किरण-पथ दिखाई देता है'):b('True solution: no visible scattering path','विलयन: प्रकीर्णन-पथ दिखाई नहीं देता')}];};

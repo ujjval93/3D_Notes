@@ -1,0 +1,1441 @@
+{
+  "number": 10,
+  "id": "physics11-10",
+  "title": {
+    "en": "Thermal Properties of Matter",
+    "hi": "पदार्थ के तापीय गुण"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-10-1",
+      "title": {
+        "en": "Linear expansion",
+        "hi": "रैखिक प्रसार"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 27
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Temperature rise",
+            "hi": "ताप वृद्धि"
+          },
+          "min": 0,
+          "max": 100,
+          "step": 10,
+          "initial": 50,
+          "unit": "K"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Relate a rod’s length change to temperature rise.",
+        "hi": "छड़ का लंबाई परिवर्तन ताप वृद्धि से जोड़ें।"
+      },
+      "observe": {
+        "en": "L₀=1 m and α=12 × 10⁻⁶ K⁻¹ remain fixed.",
+        "hi": "L₀=1 m और α=12 × 10⁻⁶ K⁻¹ नियत हैं।"
+      },
+      "modelNote": {
+        "en": "Small free expansion, constant coefficient; the length change is exaggerated visually.",
+        "hi": "छोटा स्वतंत्र प्रसार और नियत गुणांक; चित्र में परिवर्तन बढ़ाया गया है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "ΔL=αL₀ΔT, so doubling temperature rise doubles expansion.",
+          "hi": "ΔL=αL₀ΔT, इसलिए ताप वृद्धि दोगुनी करने से प्रसार दोगुना है।"
+        }
+      },
+      "realLife": {
+        "en": "Expansion gaps allow structures to change length.",
+        "hi": "प्रसार अंतराल संरचनाओं को लंबाई बदलने देते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "At zero temperature rise the expansion is:",
+          "hi": "शून्य ताप वृद्धि पर प्रसार:"
+        },
+        "options": [
+          {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          {
+            "en": "Always 1 m",
+            "hi": "हमेशा 1 m"
+          },
+          {
+            "en": "Infinite",
+            "hi": "अनंत"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "ΔL=αL₀ΔT, so doubling temperature rise doubles expansion.",
+          "hi": "ΔL=αL₀ΔT, इसलिए ताप वृद्धि दोगुनी करने से प्रसार दोगुना है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-10-1-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "phy11-10-1-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 100
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 50.0
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 50.0
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-10-2",
+      "title": {
+        "en": "Calorimetry",
+        "hi": "कैलोरीमिति"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 28
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Hot water mass",
+            "hi": "गर्म जल का द्रव्यमान"
+          },
+          "min": 0.1,
+          "max": 1,
+          "step": 0.1,
+          "initial": 0.5,
+          "unit": "kg"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Find the equilibrium temperature of mixed water.",
+        "hi": "मिले जल का संतुलन ताप निकालें।"
+      },
+      "observe": {
+        "en": "Cold water is 0.5 kg at 20°C; hot water starts at 80°C.",
+        "hi": "ठंडा जल 20°C पर 0.5 kg है; गर्म जल 80°C पर है।"
+      },
+      "modelNote": {
+        "en": "No heat loss, negligible vessel capacity, equal constant c and no phase change.",
+        "hi": "ऊष्मा हानि नहीं, नगण्य पात्र धारिता, समान नियत c और अवस्था परिवर्तन नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Heat lost by hot water equals heat gained by cold water; the final temperature is mass weighted.",
+          "hi": "गर्म जल की ऊष्मा हानि ठंडे के लाभ के बराबर है; अंतिम ताप द्रव्यमान-भारित है।"
+        }
+      },
+      "realLife": {
+        "en": "Mixing warm and cold water changes the final temperature.",
+        "hi": "गर्म और ठंडा जल मिलाने पर अंतिम ताप बदलता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "For equal masses at 20°C and 80°C, final temperature is:",
+          "hi": "20°C और 80°C पर समान द्रव्यमान का अंतिम ताप:"
+        },
+        "options": [
+          {
+            "en": "50°C",
+            "hi": "50°C"
+          },
+          {
+            "en": "100°C",
+            "hi": "100°C"
+          },
+          {
+            "en": "20°C",
+            "hi": "20°C"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Heat lost by hot water equals heat gained by cold water; the final temperature is mass weighted.",
+          "hi": "गर्म जल की ऊष्मा हानि ठंडे के लाभ के बराबर है; अंतिम ताप द्रव्यमान-भारित है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-10-2-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.1
+          }
+        },
+        {
+          "id": "phy11-10-2-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 1
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.55
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0.55
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-10-3",
+      "title": {
+        "en": "Conduction",
+        "hi": "चालन"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 29
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Thermal conductivity",
+            "hi": "ऊष्मा चालकता"
+          },
+          "min": 10,
+          "max": 100,
+          "step": 10,
+          "initial": 50,
+          "unit": "W/(m K)"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Separate material conductivity from geometry.",
+        "hi": "पदार्थ चालकता को ज्यामिति से अलग देखें।"
+      },
+      "observe": {
+        "en": "A=0.01 m², ΔT=50 K and L=0.1 m remain fixed.",
+        "hi": "A=0.01 m², ΔT=50 K और L=0.1 m नियत हैं।"
+      },
+      "modelNote": {
+        "en": "Steady one-dimensional conduction with insulated sides and constant k.",
+        "hi": "रोधित किनारों और नियत k के साथ स्थायी एकविमीय चालन।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "H=kAΔT/L, so the heat current is proportional to conductivity.",
+          "hi": "H=kAΔT/L, इसलिए ऊष्मा धारा चालकता के समानुपाती है।"
+        }
+      },
+      "realLife": {
+        "en": "Different utensil materials conduct energy at different rates.",
+        "hi": "अलग बर्तन पदार्थ अलग दर से ऊर्जा चलाते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Doubling k at fixed geometry changes H to:",
+          "hi": "नियत ज्यामिति में k दोगुना हो तो H:"
+        },
+        "options": [
+          {
+            "en": "Double",
+            "hi": "दोगुना"
+          },
+          {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "H=kAΔT/L, so the heat current is proportional to conductivity.",
+          "hi": "H=kAΔT/L, इसलिए ऊष्मा धारा चालकता के समानुपाती है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-10-3-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 10
+          }
+        },
+        {
+          "id": "phy11-10-3-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 100
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 55.0
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 55.0
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    }
+  ],
+  "editionBasis": {
+    "en": "Original Class 11 Physics study companion aligned to NCERT and UP Board 2026–27. Models explain idealised relationships, not measured laboratory data.",
+    "hi": "NCERT और यूपी बोर्ड 2026–27 पर आधारित कक्षा 11 भौतिकी की मौलिक अध्ययन सामग्री। मॉडल आदर्श संबंध समझाते हैं, प्रयोगशाला के मापे आँकड़े नहीं हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/keph203.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ],
+  "goal": {
+    "en": "Distinguish temperature from heat and calculate expansion, energy transfer and equilibrium with clear assumptions.",
+    "hi": "ताप और ऊष्मा में अंतर करके स्पष्ट मान्यताओं के साथ प्रसार, ऊर्जा स्थानांतरण और संतुलन की गणना करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Temperature, heat and thermal equilibrium",
+        "hi": "ताप, ऊष्मा और तापीय संतुलन"
+      },
+      "paragraphs": [
+        {
+          "en": "Temperature describes the thermal state that determines the direction of spontaneous heat transfer between bodies in thermal contact. Heat is energy transferred because of a temperature difference; it is not a material fluid stored inside an object. Internal energy is a property of the system, while heat describes a transfer process. A small hot spoon may have less total internal energy than a much larger cooler body, so temperature alone does not measure the amount of energy present. In thermal equilibrium there is no net heat transfer between bodies in contact. Equal temperatures do not require equal masses, substances or internal energies. Use joules for heat and kelvin for thermodynamic temperature. Celsius is convenient for everyday temperatures, but an absolute-temperature formula cannot usually use Celsius directly. A thermometer compares a reproducible physical property with its calibration. Allowing it to reach equilibrium is essential: touching a body for an instant need not give its actual temperature. The instrument itself exchanges some energy with the object and can disturb a very small sample.",
+          "hi": "ताप (Temperature) वह तापीय अवस्था बताता है जो संपर्क में रखे पिंडों के बीच स्वतः ऊष्मा प्रवाह की दिशा तय करती है। ऊष्मा (Heat) तापांतर के कारण स्थानांतरित ऊर्जा है; वह वस्तु में भरा कोई भौतिक द्रव नहीं है। आंतरिक ऊर्जा निकाय का गुण है, जबकि ऊष्मा स्थानांतरण प्रक्रिया को बताती है। छोटा गर्म चम्मच बहुत बड़े ठंडे पिंड से कम कुल आंतरिक ऊर्जा रख सकता है। इसलिए केवल ताप ऊर्जा की कुल मात्रा नहीं बताता। तापीय संतुलन (Thermal equilibrium) में संपर्क वाले पिंडों के बीच निवल ऊष्मा स्थानांतरण नहीं होता। समान ताप के लिए समान द्रव्यमान, पदार्थ या आंतरिक ऊर्जा आवश्यक नहीं है। ऊष्मा का मात्रक जूल और ऊष्मागतिक ताप का मात्रक केल्विन है। दैनिक तापों में सेल्सियस उपयोगी है, लेकिन निरपेक्ष ताप वाले सूत्र में सीधे सेल्सियस सामान्यतः नहीं रख सकते। तापमापी किसी पुनरुत्पादित गुण की अंशांकन से तुलना करता है। उसे संतुलन तक पहुँचने देना जरूरी है; तुरंत छूने से सही ताप नहीं मिल सकता। उपकरण स्वयं भी ऊर्जा लेता या देता है और बहुत छोटे नमूने का ताप बदल सकता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can two bodies at the same temperature have different internal energies?",
+          "hi": "क्या समान ताप के दो पिंडों की आंतरिक ऊर्जा अलग हो सकती है?"
+        },
+        "answer": {
+          "en": "Yes; mass, substance and state also matter.",
+          "hi": "हाँ; द्रव्यमान, पदार्थ और अवस्था भी महत्त्वपूर्ण हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Temperature scales and measurements",
+        "hi": "ताप पैमाने और मापन"
+      },
+      "paragraphs": [
+        {
+          "en": "The Celsius and kelvin scales have equal-sized intervals, related by T(K)=t(°C)+273.15. Therefore a rise of 10°C is a rise of 10 K, although a temperature of 10°C is not 10 K. The Fahrenheit conversion is tF=(9/5)tC+32. Keep a temperature value distinct from a temperature difference when converting. A thermometer may use liquid expansion, electrical resistance or another property whose relation to temperature is known. Calibration and the usable range matter; a linear interpolation is only justified over a range where the thermometric property is sufficiently linear. A laboratory reading includes uncertainty and should not be reported with unjustified digits. Liquid-in-glass instruments must be read at the proper level to avoid parallax. Thermodynamic formulas use absolute kelvin temperatures because zero kelvin is the reference of the absolute scale. Negative Celsius temperatures are ordinary values below water’s conventional freezing point, not negative absolute thermal energy. In the site’s sliders, the displayed unit identifies whether the control represents an actual temperature or merely a temperature rise.",
+          "hi": "सेल्सियस और केल्विन पैमानों के अंतराल समान आकार के हैं। संबंध T(K)=t(°C)+273.15 है। इसलिए 10°C की ताप वृद्धि 10 K की वृद्धि है, लेकिन 10°C का ताप 10 K नहीं है। फारेनहाइट परिवर्तन tF=(9/5)tC+32 है। ताप के मान और तापांतर को बदलते समय अलग पहचानें। तापमापी द्रव प्रसार, विद्युत प्रतिरोध या ज्ञात ताप संबंध वाले अन्य गुण का उपयोग कर सकता है। अंशांकन और उपयोगी परास महत्त्वपूर्ण हैं। सीधी रेखा से बीच का ताप निकालना उसी परास में उचित है जहाँ तापमापी गुण पर्याप्त रैखिक हो। प्रयोगशाला माप में अनिश्चितता होती है, इसलिए बिना आधार बहुत सारे अंक न लिखें। द्रव-युक्त काँच तापमापी को सही दृष्टि स्तर से पढ़ना चाहिए, जिससे लंबन त्रुटि न हो। ऊष्मागतिक सूत्र निरपेक्ष केल्विन ताप लेते हैं, क्योंकि शून्य केल्विन निरपेक्ष पैमाने का संदर्भ है। ऋणात्मक सेल्सियस ताप केवल परंपरागत जल हिमांक से कम ताप है; इसका अर्थ ऋणात्मक निरपेक्ष तापीय ऊर्जा नहीं है। साइट के slider का मात्रक बताता है कि वह वास्तविक ताप है या केवल ताप वृद्धि।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is a rise of 20°C the same interval as 20 K?",
+          "hi": "क्या 20°C वृद्धि का अंतराल 20 K के बराबर है?"
+        },
+        "answer": {
+          "en": "Yes; their interval sizes are equal, although their zero points differ.",
+          "hi": "हाँ; अंतराल समान हैं, पर शून्य बिंदु अलग हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Thermal expansion of solids and liquids",
+        "hi": "ठोस और द्रव का तापीय प्रसार"
+      },
+      "paragraphs": [
+        {
+          "en": "Most materials expand when heated over an ordinary range. For a small change at approximately constant pressure, linear expansion is ΔL=αL₀ΔT. The coefficient α is approximately constant only over a limited temperature interval. Its unit is K⁻¹. For an isotropic solid and small expansion, area and volume coefficients are approximately 2α and 3α. A hole in a heated plate expands as if the missing material were present; it does not shrink simply because nearby material expands. If expansion is prevented, thermal stresses can develop, explaining the need for expansion joints. Liquids have no fixed shape, so volume expansion is normally discussed. A measured apparent expansion in a vessel depends on expansion of both the liquid and its container. Water shows anomalous behaviour between 0°C and 4°C: heating through that interval decreases its volume and increases its density, with maximum density near 4°C. This affects the freezing pattern of lakes. These statements concern suitable pressure conditions and should not be extended to every temperature or phase without checking.",
+          "hi": "सामान्य ताप परास में अधिकतर पदार्थ गर्म करने पर फैलते हैं। लगभग नियत दाब और छोटे परिवर्तन में रैखिक प्रसार ΔL=αL₀ΔT है। रैखिक प्रसार गुणांक α सीमित ताप अंतराल में ही लगभग नियत माना जाता है और इसका मात्रक K⁻¹ है। समदैशिक ठोस के छोटे प्रसार में क्षेत्रफल तथा आयतन प्रसार गुणांक लगभग 2α और 3α होते हैं। गर्म पट्टिका का छेद ऐसे फैलता है जैसे वहाँ का अनुपस्थित पदार्थ भी मौजूद होता। आसपास का पदार्थ फैलता है इसलिए छेद सिकुड़ेगा, यह गलत है। प्रसार रोकने पर तापीय प्रतिबल बन सकते हैं, इसलिए संरचनाओं में प्रसार जोड़ रखे जाते हैं। द्रव की नियत आकृति नहीं होती, इसलिए उसका आयतन प्रसार बताया जाता है। पात्र में मापा आभासी प्रसार द्रव और पात्र दोनों के प्रसार पर निर्भर है। जल 0°C से 4°C के बीच असंगत व्यवहार दिखाता है। इस परास में गर्म करने से आयतन घटता और घनत्व बढ़ता है; लगभग 4°C पर घनत्व अधिकतम है। झील के जमने में इसका प्रभाव होता है। ये कथन उपयुक्त दाब दशाओं के लिए हैं; बिना जाँच हर ताप या अवस्था तक न बढ़ाएँ।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to a small hole when a uniform metal plate is heated?",
+          "hi": "समान धातु पट्टिका गर्म करने पर उसका छोटा छेद क्या करता है?"
+        },
+        "answer": {
+          "en": "It expands along with the plate under free uniform expansion.",
+          "hi": "स्वतंत्र समान प्रसार में वह पट्टिका के साथ फैलता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Heat capacity and specific heat",
+        "hi": "ऊष्मा धारिता और विशिष्ट ऊष्मा"
+      },
+      "paragraphs": [
+        {
+          "en": "Heat capacity C is the energy required per unit temperature rise for a specified body under specified conditions. Specific heat capacity c is heat capacity per unit mass, so Q=mcΔT when c can be treated as constant and no phase change occurs. C has unit J/K and c has unit J/(kg K). A kilogram of different substances need not require the same energy for the same temperature rise. A large heat capacity can mean a large mass, a large specific heat, or both. Water’s relatively high specific heat is important in cooling and in moderating temperature changes near large water bodies. For gases, the energy required depends strongly on how expansion is allowed: constant-pressure specific heat differs from constant-volume specific heat because work can be done during expansion. Do not apply one tabulated value to an unspecified process. When c varies substantially with temperature, the simple product is replaced by an appropriate integral or average value; school problems normally specify or imply a constant over the stated range.",
+          "hi": "ऊष्मा धारिता (Heat capacity) C किसी निश्चित पिंड का ताप निर्दिष्ट दशाओं में प्रति इकाई बढ़ाने के लिए आवश्यक ऊर्जा है। विशिष्ट ऊष्मा धारिता (Specific heat capacity) c प्रति इकाई द्रव्यमान ऊष्मा धारिता है। यदि c लगभग नियत हो और अवस्था परिवर्तन न हो तो Q=mcΔT है। C का मात्रक J/K और c का J/(kg K) है। अलग पदार्थों के 1 kg द्रव्यमान का ताप समान बढ़ाने के लिए समान ऊर्जा जरूरी नहीं है। बड़ी ऊष्मा धारिता अधिक द्रव्यमान, अधिक विशिष्ट ऊष्मा या दोनों से हो सकती है। जल की अपेक्षाकृत अधिक विशिष्ट ऊष्मा शीतलन और बड़े जलाशयों के पास ताप परिवर्तन कम करने में महत्त्वपूर्ण है। गैसों में आवश्यक ऊर्जा प्रसार की अनुमति पर काफी निर्भर है। नियत दाब की विशिष्ट ऊष्मा नियत आयतन की विशिष्ट ऊष्मा से अलग है, क्योंकि प्रसार में कार्य किया जा सकता है। इसलिए किसी एक सारणी मान को बिना प्रक्रम बताए हर जगह न लगाएँ। ताप के साथ c काफी बदले तो सरल गुणन की जगह उचित समाकल या औसत लेना पड़ता है। विद्यालयी प्रश्न सामान्यतः दिए परास में नियत c बताते या मानते हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "How is heat capacity different from specific heat capacity?",
+          "hi": "ऊष्मा धारिता और विशिष्ट ऊष्मा धारिता में अंतर?"
+        },
+        "answer": {
+          "en": "Heat capacity belongs to a body; specific heat capacity is per unit mass.",
+          "hi": "ऊष्मा धारिता पूरे पिंड की है; विशिष्ट ऊष्मा प्रति इकाई द्रव्यमान की है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Phase changes and latent heat",
+        "hi": "अवस्था परिवर्तन और गुप्त ऊष्मा"
+      },
+      "paragraphs": [
+        {
+          "en": "During melting or boiling at a fixed pressure, energy can be transferred without a temperature rise while two phases coexist in equilibrium. The specific latent heat L is energy per unit mass for the phase change, giving Q=mL. Its unit is J/kg. The energy changes the arrangement and separation of particles rather than simply increasing temperature. Melting and vaporisation absorb energy; freezing and condensation release corresponding energy under the same conditions. Do not add mcΔT for a constant-temperature phase-change segment. A full heating calculation may require several separate steps: warming a solid, melting it, warming the liquid and possibly vaporising it. The boiling point depends on pressure, so 100°C is not a universal boiling temperature for water in every environment. Evaporation can happen at temperatures below the boiling point and is a surface process; boiling occurs through the liquid under the appropriate condition. Steam can cause severe heating on condensation because its latent energy is released as well as any later cooling energy. A temperature plateau does not mean that no energy is being supplied.",
+          "hi": "नियत दाब पर गलन या क्वथन के दौरान संतुलन में दो अवस्थाएँ साथ हों तो ऊर्जा मिलने पर भी ताप नहीं बढ़ सकता। अवस्था बदलने की प्रति इकाई द्रव्यमान ऊर्जा विशिष्ट गुप्त ऊष्मा (Specific latent heat) L है और Q=mL होता है। इसका मात्रक J/kg है। ऊर्जा केवल ताप बढ़ाने के बजाय कणों की व्यवस्था और दूरी बदलती है। गलन और वाष्पन ऊर्जा लेते हैं, जबकि जमना और संघनन उन्हीं दशाओं में संबंधित ऊर्जा छोड़ते हैं। नियत ताप के अवस्था-परिवर्तन भाग में mcΔT का अतिरिक्त पद न लगाएँ। पूरे ऊष्मन प्रश्न को अलग चरणों में बाँटना पड़ सकता है: ठोस गर्म करना, पिघलाना, द्रव गर्म करना और आवश्यकता हो तो वाष्प बनाना। क्वथनांक दाब पर निर्भर है। इसलिए जल हर वातावरण में अनिवार्य रूप से 100°C पर नहीं उबलता। वाष्पीकरण क्वथनांक से नीचे भी सतह पर हो सकता है; क्वथन उपयुक्त दशा में पूरे द्रव में होता है। भाप के संघनन में गुप्त ऊर्जा और बाद में ठंडा होने की ऊर्जा निकल सकती है, इसलिए वह अधिक ऊष्मा दे सकती है। ताप का स्थिर पठार यह नहीं बताता कि ऊर्जा देना बंद है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can melting ice absorb energy without a temperature rise?",
+          "hi": "पिघलती बर्फ ताप बढ़े बिना ऊर्जा क्यों लेती है?"
+        },
+        "answer": {
+          "en": "Energy changes phase rather than temperature during coexistence at the melting condition.",
+          "hi": "गलन दशा में सहअस्तित्व के दौरान ऊर्जा ताप के बजाय अवस्था बदलती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Calorimetry and energy balance",
+        "hi": "कैलोरीमिति और ऊर्जा संतुलन"
+      },
+      "paragraphs": [
+        {
+          "en": "Calorimetry uses conservation of energy to infer heat transfer. In a thermally isolated mixture with no work or other energy transfer, energy lost by warmer components equals energy gained by cooler components. Include the calorimeter if its heat capacity is significant. For two masses of the same liquid with the same constant c and no phase change, the final temperature is the mass-weighted average, not automatically the arithmetic average. The final value should lie between the initial temperatures under these assumptions. If ice is present, first test whether all ice can melt; assuming a warm final temperature before this test can produce an impossible answer. Separate latent heat from temperature changes and keep signs consistent. Heat losses to the room, imperfect mixing and thermometer response create experimental deviations. The visual mixer fixes 0.5 kg of cold water at 20°C and varies hot water at 80°C. It assumes equal constant specific heats and negligible vessel heat capacity. Its final temperature is a model prediction, not a measured result from a real laboratory.",
+          "hi": "कैलोरीमिति (Calorimetry) ऊर्जा संरक्षण से ऊष्मा स्थानांतरण निकालती है। तापीय रूप से पृथक मिश्रण में कार्य या अन्य ऊर्जा लेन-देन न हो तो गर्म भागों की ऊर्जा हानि ठंडे भागों के ऊर्जा लाभ के बराबर होती है। कैलोरीमीटर की ऊष्मा धारिता महत्त्वपूर्ण हो तो उसे भी शामिल करें। समान द्रव की दो मात्राएँ, समान नियत c और बिना अवस्था परिवर्तन के मिलें तो अंतिम ताप द्रव्यमान-भारित औसत होता है; वह हमेशा साधारण अंकगणित औसत नहीं है। इन मान्यताओं में अंतिम मान दोनों प्रारंभिक तापों के बीच होना चाहिए। बर्फ हो तो पहले जाँचें कि क्या सारी बर्फ पिघल सकती है। यह जाँचे बिना गर्म अंतिम ताप मानने से असंभव उत्तर मिल सकता है। गुप्त ऊष्मा और ताप परिवर्तन के पद अलग रखें तथा चिह्न संगत लें। कमरे में ऊष्मा हानि, अधूरा मिश्रण और तापमापी की देरी प्रयोग में अंतर पैदा करते हैं। दृश्य मिश्रक में 0.5 kg ठंडा जल 20°C पर नियत है और 80°C के गर्म जल का द्रव्यमान बदलता है। दोनों की विशिष्ट ऊष्मा समान और पात्र की धारिता नगण्य मानी है। अंतिम ताप मॉडल का अनुमान है, वास्तविक प्रयोग का मापा परिणाम नहीं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "When is the final temperature the simple average of two initial temperatures?",
+          "hi": "अंतिम ताप दो प्रारंभिक तापों का सरल औसत कब है?"
+        },
+        "answer": {
+          "en": "For equal heat capacities, no losses and no phase change.",
+          "hi": "समान ऊष्मा धारिता, बिना हानि और बिना अवस्था परिवर्तन में।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Conduction and convection",
+        "hi": "चालन और संवहन"
+      },
+      "paragraphs": [
+        {
+          "en": "Conduction transfers energy through matter without bulk transport of the material. In a uniform slab in steady state, the heat current magnitude is H=kA(Tₕ−T𝚌)/L. Here k is thermal conductivity, A is area normal to flow and L is thickness. Its unit is W/(m K), and H is measured in watts. A greater area or temperature difference increases current, while greater thickness reduces it. Steady state means temperatures at points no longer change with time; it does not mean heat flow has stopped. The elementary slab relation assumes suitable side insulation and approximately constant k. Layers in series carry the same steady heat current, and their thermal resistances add. Convection involves bulk fluid motion, often driven by density differences in gravity, although fans or pumps can force it. A solid does not develop ordinary bulk convection. Distinguish the mechanisms when explaining a utensil, room heater or cooling system. The conduction slider changes k while holding area, thickness and temperature difference fixed, isolating the material-property effect from geometric changes.",
+          "hi": "चालन (Conduction) में पदार्थ का समग्र स्थानांतरण किए बिना ऊर्जा उसके भीतर जाती है। समान पट्टिका की स्थायी अवस्था में ऊष्मा धारा का परिमाण H=kA(Tₕ−T𝚌)/L है। यहाँ k ऊष्मा चालकता, A प्रवाह के लंबवत क्षेत्रफल और L मोटाई है। k का मात्रक W/(m K) और H का मात्रक वाट है। अधिक क्षेत्रफल या तापांतर से धारा बढ़ती है, जबकि अधिक मोटाई से घटती है। स्थायी अवस्था का अर्थ बिंदुओं के ताप समय के साथ न बदलना है; इसका अर्थ ऊष्मा प्रवाह रुकना नहीं। सरल पट्टिका संबंध में किनारों का उपयुक्त ऊष्मारोधन और लगभग नियत k माना जाता है। श्रेणीक्रम की परतों में समान स्थायी ऊष्मा धारा चलती है तथा उनके तापीय प्रतिरोध जुड़ते हैं। संवहन (Convection) में तरल का समग्र प्रवाह होता है। गुरुत्व में घनत्व अंतर इसे चला सकता है, जबकि पंखा या पंप बलपूर्वक संवहन करा सकता है। साधारण ठोस में ऐसा समग्र संवहन नहीं होता। बर्तन, हीटर या शीतलन प्रणाली समझाते समय विधियाँ अलग पहचानें। चालन slider में क्षेत्रफल, मोटाई और तापांतर नियत रखकर k बदलता है। इससे पदार्थ का प्रभाव ज्यामिति से अलग दिखता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is steady conduction the same as zero heat current?",
+          "hi": "क्या स्थायी चालन का अर्थ शून्य ऊष्मा धारा है?"
+        },
+        "answer": {
+          "en": "No; a nonzero constant current can flow while temperatures stay fixed.",
+          "hi": "नहीं; ताप नियत रहते हुए अशून्य स्थिर धारा बह सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Radiation and cooling",
+        "hi": "विकिरण और शीतलन"
+      },
+      "paragraphs": [
+        {
+          "en": "Thermal radiation transfers energy by electromagnetic waves and needs no material medium. An ideal black body absorbs all incident radiation and is also the maximum emitter at a given temperature. For an actual surface, the Stefan–Boltzmann law gives emitted power approximately eσAT⁴, where e is emissivity. When the surroundings can be treated as a large uniform enclosure at temperature Tₛ, net radiative loss is eσA(T⁴−Tₛ⁴). Both temperatures must be in kelvin. A body emits radiation even when its net exchange is zero at equilibrium. Wien’s displacement relation λmaxT=b describes how the wavelength of maximum spectral emission shifts as temperature changes; higher temperature shifts the peak towards shorter wavelengths. Newton’s cooling law approximates cooling rate as proportional to a small temperature excess under suitable conditions, and it is not an exact universal law for every temperature difference. Radiation, convection and conduction can act together. A shiny reflective surface, insulation or a vacuum gap suppresses different contributions, so an explanation should identify which transfer path each design feature reduces.",
+          "hi": "तापीय विकिरण (Thermal radiation) विद्युतचुंबकीय तरंगों से ऊर्जा ले जाता है और इसे भौतिक माध्यम नहीं चाहिए। आदर्श कृष्णिका (Black body) आपतित विकिरण पूरा अवशोषित करती है और किसी दिए ताप पर अधिकतम उत्सर्जक भी होती है। वास्तविक सतह की उत्सर्जित शक्ति लगभग eσAT⁴ है। यहाँ e उत्सर्जकता है। बड़े समान ताप Tₛ वाले परिवेश में निवल विकिरण हानि eσA(T⁴−Tₛ⁴) है। दोनों ताप केल्विन में होने चाहिए। संतुलन में निवल विनिमय शून्य होने पर भी पिंड विकिरण उत्सर्जित करता है। वीन विस्थापन संबंध λmaxT=b अधिकतम वर्णक्रमीय उत्सर्जन की तरंगदैर्घ्य का ताप के साथ बदलाव बताता है। अधिक ताप पर शिखर छोटी तरंगदैर्घ्य की ओर जाता है। न्यूटन का शीतलन नियम उपयुक्त दशाओं में छोटे ताप आधिक्य के लिए शीतलन दर को ताप आधिक्य के समानुपाती मानता है। यह हर तापांतर का पूर्ण सार्वभौमिक नियम नहीं है। विकिरण, संवहन और चालन साथ हो सकते हैं। चमकीली परावर्तक सतह, रोधन और निर्वात अंतराल अलग योगदान कम करते हैं। इसलिए हर डिजाइन विशेषता किस ऊर्जा मार्ग को कम करती है, यह स्पष्ट बताना चाहिए।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which temperature scale is required in the T⁴ radiation formula?",
+          "hi": "T⁴ विकिरण सूत्र में कौन-सा ताप पैमाना चाहिए?"
+        },
+        "answer": {
+          "en": "Absolute kelvin temperature.",
+          "hi": "निरपेक्ष केल्विन ताप।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "T = t°C + 273.15",
+      "meaning": {
+        "en": "Convert Celsius to absolute temperature.",
+        "hi": "सेल्सियस से निरपेक्ष ताप में परिवर्तन।"
+      },
+      "units": {
+        "en": "K",
+        "hi": "K"
+      }
+    },
+    {
+      "expression": "ΔL = αL₀ΔT",
+      "meaning": {
+        "en": "Small free linear expansion.",
+        "hi": "छोटा स्वतंत्र रैखिक प्रसार।"
+      },
+      "units": {
+        "en": "m",
+        "hi": "m"
+      }
+    },
+    {
+      "expression": "Q = mcΔT; Qphase = mL",
+      "meaning": {
+        "en": "Temperature change versus phase change.",
+        "hi": "ताप परिवर्तन तथा अवस्था परिवर्तन।"
+      },
+      "units": {
+        "en": "J",
+        "hi": "J"
+      }
+    },
+    {
+      "expression": "H = kAΔT/L",
+      "meaning": {
+        "en": "Steady conduction through a uniform slab.",
+        "hi": "समान पट्टिका से स्थायी चालन।"
+      },
+      "units": {
+        "en": "W",
+        "hi": "W"
+      }
+    },
+    {
+      "expression": "Pnet = eσA(T⁴−Tₛ⁴)",
+      "meaning": {
+        "en": "Net radiation to a uniform enclosure.",
+        "hi": "समान परिवेश में निवल विकिरण।"
+      },
+      "units": {
+        "en": "W",
+        "hi": "W"
+      }
+    },
+    {
+      "expression": "λmax T = b",
+      "meaning": {
+        "en": "Wien displacement relation.",
+        "hi": "वीन विस्थापन संबंध।"
+      },
+      "units": {
+        "en": "m K",
+        "hi": "m K"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Use kelvin in absolute-temperature laws; do not add temperature rise during a constant-temperature phase change or ignore the vessel in calorimetry when its heat capacity matters.",
+    "hi": "निरपेक्ष ताप नियमों में केल्विन लें; नियत ताप अवस्था परिवर्तन में ताप वृद्धि न जोड़ें और महत्त्वपूर्ण पात्र धारिता को न छोड़ें।"
+  },
+  "summary": [
+    {
+      "en": "Heat is energy transfer, temperature is a thermal-state variable.",
+      "hi": "ऊष्मा ऊर्जा स्थानांतरण और ताप तापीय अवस्था की राशि है।"
+    },
+    {
+      "en": "Expansion coefficients apply within stated ranges.",
+      "hi": "प्रसार गुणांक निर्दिष्ट परास में लागू हैं।"
+    },
+    {
+      "en": "Use mcΔT for warming and mL for phase change.",
+      "hi": "ताप बदलने में mcΔT और अवस्था बदलने में mL लें।"
+    },
+    {
+      "en": "Calorimetry is an energy balance.",
+      "hi": "कैलोरीमिति ऊर्जा संतुलन है।"
+    },
+    {
+      "en": "Conduction, convection and radiation are distinct transfer mechanisms.",
+      "hi": "चालन, संवहन और विकिरण अलग स्थानांतरण विधियाँ हैं।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Convert 27°C to kelvin.",
+        "hi": "27°C को केल्विन में बदलें।"
+      },
+      "given": {
+        "en": "t=27°C.",
+        "hi": "t=27°C।"
+      },
+      "find": {
+        "en": "Absolute temperature.",
+        "hi": "निरपेक्ष ताप।"
+      },
+      "formula": {
+        "en": "T=t+273.15",
+        "hi": "T=t+273.15"
+      },
+      "steps": [
+        {
+          "en": "Add the scale offset.",
+          "hi": "पैमाने का अंतर जोड़ें।"
+        }
+      ],
+      "answer": {
+        "en": "300.15 K, approximately 300 K.",
+        "hi": "300.15 K, लगभग 300 K।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find expansion of a 1 m rod for a 50 K rise.",
+        "hi": "1 m छड़ में 50 K वृद्धि का प्रसार निकालें।"
+      },
+      "given": {
+        "en": "α=12 × 10⁻⁶ K⁻¹.",
+        "hi": "α=12 × 10⁻⁶ K⁻¹।"
+      },
+      "find": {
+        "en": "ΔL.",
+        "hi": "ΔL।"
+      },
+      "formula": {
+        "en": "ΔL=αL₀ΔT",
+        "hi": "ΔL=αL₀ΔT"
+      },
+      "steps": [
+        {
+          "en": "Multiply 12 × 10⁻⁶ × 1 × 50.",
+          "hi": "12 × 10⁻⁶ × 1 × 50 करें।"
+        }
+      ],
+      "answer": {
+        "en": "0.0006 m = 0.6 mm.",
+        "hi": "0.0006 m = 0.6 mm।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find energy to warm 0.5 kg water from 20°C to 40°C.",
+        "hi": "0.5 kg जल को 20°C से 40°C करने की ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "c=4180 J/(kg K); no losses.",
+        "hi": "c=4180 J/(kg K); हानि नहीं।"
+      },
+      "find": {
+        "en": "Q.",
+        "hi": "Q।"
+      },
+      "formula": {
+        "en": "Q=mcΔT",
+        "hi": "Q=mcΔT"
+      },
+      "steps": [
+        {
+          "en": "ΔT=20 K.",
+          "hi": "ΔT=20 K।"
+        },
+        {
+          "en": "Q=0.5 × 4180 × 20.",
+          "hi": "Q=0.5 × 4180 × 20।"
+        }
+      ],
+      "answer": {
+        "en": "41,800 J = 41.8 kJ.",
+        "hi": "41,800 J = 41.8 kJ।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Mix 0.5 kg water at 20°C with 0.5 kg at 80°C.",
+        "hi": "20°C के 0.5 kg जल में 80°C का 0.5 kg जल मिलाएँ।"
+      },
+      "given": {
+        "en": "Equal c, negligible vessel capacity and no losses.",
+        "hi": "समान c, नगण्य पात्र धारिता और हानि नहीं।"
+      },
+      "find": {
+        "en": "Final temperature.",
+        "hi": "अंतिम ताप।"
+      },
+      "formula": {
+        "en": "mhot c(80−Tf)=mcold c(Tf−20)",
+        "hi": "mhot c(80−Tf)=mcold c(Tf−20)"
+      },
+      "steps": [
+        {
+          "en": "Equal masses and c cancel.",
+          "hi": "समान द्रव्यमान और c कटते हैं।"
+        },
+        {
+          "en": "80−Tf=Tf−20.",
+          "hi": "80−Tf=Tf−20।"
+        }
+      ],
+      "answer": {
+        "en": "Tf=50°C.",
+        "hi": "Tf=50°C।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find the steady heat current through a slab and the energy transferred in 10 s.",
+        "hi": "पट्टिका से स्थायी ऊष्मा धारा तथा 10 s में स्थानांतरित ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "k=50 W/(m K), A=0.01 m², ΔT=50 K, L=0.1 m.",
+        "hi": "k=50 W/(m K), A=0.01 m², ΔT=50 K, L=0.1 m।"
+      },
+      "find": {
+        "en": "Heat transfer rate and energy transferred in 10 s.",
+        "hi": "ऊष्मा संचरण दर तथा 10 s में स्थानांतरित ऊर्जा।"
+      },
+      "formula": {
+        "en": "H=kAΔT/L; Q=Ht",
+        "hi": "H=kAΔT/L; Q=Ht"
+      },
+      "steps": [
+        {
+          "en": "H=50 × 0.01 × 50/0.1.",
+          "hi": "H=50 × 0.01 × 50/0.1।"
+        },
+        {
+          "en": "Multiply H by 10 s.",
+          "hi": "H को 10 s से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "H=250 W; Q=2500 J.",
+        "hi": "H=250 W; Q=2500 J।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Heat means:",
+        "hi": "ऊष्मा का अर्थ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Energy transferred because of temperature difference",
+            "hi": "तापांतर से स्थानांतरित ऊर्जा"
+          },
+          "reason": {
+            "en": "Heat describes a transfer process.",
+            "hi": "ऊष्मा स्थानांतरण प्रक्रिया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A substance stored in bodies",
+            "hi": "पिंड में भरा पदार्थ"
+          },
+          "reason": {
+            "en": "Heat is not a material fluid.",
+            "hi": "ऊष्मा भौतिक द्रव नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Temperature itself",
+            "hi": "ताप ही"
+          },
+          "reason": {
+            "en": "Temperature describes thermal state.",
+            "hi": "ताप तापीय अवस्था है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass per volume",
+            "hi": "द्रव्यमान/आयतन"
+          },
+          "reason": {
+            "en": "That is density.",
+            "hi": "वह घनत्व है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A rise of 10°C equals a rise of:",
+        "hi": "10°C वृद्धि किस वृद्धि के बराबर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "10 K",
+            "hi": "10 K"
+          },
+          "reason": {
+            "en": "Kelvin and Celsius intervals have equal size.",
+            "hi": "दोनों अंतराल समान हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "283.15 K",
+            "hi": "283.15 K"
+          },
+          "reason": {
+            "en": "The offset applies to temperature values, not intervals.",
+            "hi": "यह वास्तविक ताप का अंतर है, वृद्धि का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 K",
+            "hi": "0 K"
+          },
+          "reason": {
+            "en": "A nonzero interval cannot vanish.",
+            "hi": "अशून्य अंतराल शून्य नहीं होता।"
+          }
+        },
+        {
+          "text": {
+            "en": "100 K",
+            "hi": "100 K"
+          },
+          "reason": {
+            "en": "The scale factors are equal, not tenfold.",
+            "hi": "गुणक समान हैं, 10 गुना नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Linear expansion is proportional to:",
+        "hi": "रैखिक प्रसार किसके समानुपाती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Original length and temperature rise",
+            "hi": "मूल लंबाई और ताप वृद्धि"
+          },
+          "reason": {
+            "en": "ΔL=αL₀ΔT.",
+            "hi": "ΔL=αL₀ΔT है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only final length squared",
+            "hi": "केवल अंतिम लंबाई का वर्ग"
+          },
+          "reason": {
+            "en": "That is not the linear model.",
+            "hi": "यह रैखिक मॉडल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Inverse temperature rise",
+            "hi": "ताप वृद्धि के व्युत्क्रम"
+          },
+          "reason": {
+            "en": "Expansion grows with the rise in this model.",
+            "hi": "इस मॉडल में वृद्धि से प्रसार बढ़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nothing about material",
+            "hi": "पदार्थ से कोई संबंध नहीं"
+          },
+          "reason": {
+            "en": "α depends on material.",
+            "hi": "α पदार्थ पर निर्भर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Water has maximum density approximately at:",
+        "hi": "जल का घनत्व लगभग किस ताप पर अधिकतम है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4°C",
+            "hi": "4°C"
+          },
+          "reason": {
+            "en": "Water shows anomalous expansion near this range.",
+            "hi": "इस परास में जल असंगत प्रसार दिखाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0°C always",
+            "hi": "हमेशा 0°C"
+          },
+          "reason": {
+            "en": "Maximum density is near 4°C under ordinary pressure.",
+            "hi": "सामान्य दाब पर अधिकतम लगभग 4°C है।"
+          }
+        },
+        {
+          "text": {
+            "en": "100°C",
+            "hi": "100°C"
+          },
+          "reason": {
+            "en": "This is near ordinary boiling, not maximum density.",
+            "hi": "यह सामान्य क्वथन के पास है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every temperature",
+            "hi": "हर ताप"
+          },
+          "reason": {
+            "en": "Density changes with temperature.",
+            "hi": "घनत्व ताप से बदलता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Specific heat capacity unit is:",
+        "hi": "विशिष्ट ऊष्मा धारिता का मात्रक है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "J/(kg K)",
+            "hi": "J/(kg K)"
+          },
+          "reason": {
+            "en": "It is energy per mass per temperature interval.",
+            "hi": "प्रति द्रव्यमान प्रति ताप अंतराल ऊर्जा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "J only",
+            "hi": "केवल J"
+          },
+          "reason": {
+            "en": "That is energy.",
+            "hi": "यह ऊर्जा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "J/kg",
+            "hi": "J/kg"
+          },
+          "reason": {
+            "en": "This is the unit of specific latent heat.",
+            "hi": "यह विशिष्ट गुप्त ऊष्मा का मात्रक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "W",
+            "hi": "W"
+          },
+          "reason": {
+            "en": "That is power.",
+            "hi": "यह शक्ति है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "During melting at fixed pressure, supplied energy can:",
+        "hi": "नियत दाब पर गलन के दौरान दी ऊर्जा:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Change phase at constant temperature",
+            "hi": "नियत ताप पर अवस्था बदल सकती है"
+          },
+          "reason": {
+            "en": "Latent heat changes the phase.",
+            "hi": "गुप्त ऊष्मा अवस्था बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always raise temperature immediately",
+            "hi": "हमेशा तुरंत ताप बढ़ाती है"
+          },
+          "reason": {
+            "en": "Coexisting phases can remain at fixed temperature.",
+            "hi": "सहअस्तित्व में ताप नियत रह सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Disappear",
+            "hi": "गायब हो जाती है"
+          },
+          "reason": {
+            "en": "Energy is conserved.",
+            "hi": "ऊर्जा संरक्षित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Become massless water only",
+            "hi": "केवल द्रव्यमानहीन जल बनती है"
+          },
+          "reason": {
+            "en": "The material retains mass.",
+            "hi": "पदार्थ का द्रव्यमान रहता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For equal water masses at 20°C and 80°C, ideal final temperature is:",
+        "hi": "20°C और 80°C के समान जल द्रव्यमान का आदर्श अंतिम ताप:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "50°C",
+            "hi": "50°C"
+          },
+          "reason": {
+            "en": "Equal heat capacities give the midpoint.",
+            "hi": "समान धारिता से मध्य ताप मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "100°C",
+            "hi": "100°C"
+          },
+          "reason": {
+            "en": "That exceeds both initial temperatures without energy input.",
+            "hi": "यह बिना निवेश दोनों से अधिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "20°C",
+            "hi": "20°C"
+          },
+          "reason": {
+            "en": "The hot part transfers energy to the cold part.",
+            "hi": "गर्म भाग ठंडे को ऊर्जा देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "80°C",
+            "hi": "80°C"
+          },
+          "reason": {
+            "en": "The cold part must gain energy.",
+            "hi": "ठंडे भाग को ऊर्जा चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Steady conduction current decreases if:",
+        "hi": "स्थायी चालन धारा कब घटती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Slab thickness increases",
+            "hi": "पट्टिका की मोटाई बढ़े"
+          },
+          "reason": {
+            "en": "H is inversely proportional to thickness.",
+            "hi": "H मोटाई के व्युत्क्रमानुपाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Area increases",
+            "hi": "क्षेत्रफल बढ़े"
+          },
+          "reason": {
+            "en": "This increases current at fixed other values.",
+            "hi": "अन्य मान नियत हों तो धारा बढ़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Conductivity increases",
+            "hi": "चालकता बढ़े"
+          },
+          "reason": {
+            "en": "This increases current.",
+            "hi": "इससे धारा बढ़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Temperature difference increases",
+            "hi": "तापांतर बढ़े"
+          },
+          "reason": {
+            "en": "This also increases current.",
+            "hi": "इससे भी धारा बढ़ती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Thermal radiation can travel through:",
+        "hi": "तापीय विकिरण कहाँ जा सकता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Vacuum",
+            "hi": "निर्वात"
+          },
+          "reason": {
+            "en": "Electromagnetic waves need no material medium.",
+            "hi": "विद्युतचुंबकीय तरंगों को पदार्थ माध्यम नहीं चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only metals",
+            "hi": "केवल धातु"
+          },
+          "reason": {
+            "en": "Radiation is not limited to conductors.",
+            "hi": "विकिरण चालकों तक सीमित नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only water",
+            "hi": "केवल जल"
+          },
+          "reason": {
+            "en": "It also travels through vacuum.",
+            "hi": "यह निर्वात में भी जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No space at all",
+            "hi": "किसी स्थान में नहीं"
+          },
+          "reason": {
+            "en": "Radiation transports energy through space.",
+            "hi": "विकिरण स्थान में ऊर्जा ले जाता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In Stefan–Boltzmann calculations use:",
+        "hi": "स्टेफन–बोल्ट्समान गणना में लें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Kelvin temperatures",
+            "hi": "केल्विन ताप"
+          },
+          "reason": {
+            "en": "The fourth power uses absolute temperature.",
+            "hi": "चौथी घात निरपेक्ष ताप की है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Celsius directly",
+            "hi": "सीधे सेल्सियस"
+          },
+          "reason": {
+            "en": "The scale offset makes this incorrect.",
+            "hi": "पैमाने का अंतर इसे गलत बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only temperature differences to the fourth power",
+            "hi": "केवल तापांतर की चौथी घात"
+          },
+          "reason": {
+            "en": "T⁴−Ts⁴ is not (T−Ts)⁴.",
+            "hi": "T⁴−Ts⁴, (T−Ts)⁴ नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass instead of temperature",
+            "hi": "ताप के बजाय द्रव्यमान"
+          },
+          "reason": {
+            "en": "The law depends on temperature.",
+            "hi": "नियम ताप पर निर्भर है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Can two bodies at the same temperature have different internal energies?",
+        "hi": "क्या समान ताप के दो पिंडों की आंतरिक ऊर्जा अलग हो सकती है?"
+      },
+      "answer": {
+        "en": "Yes; mass, substance and state also matter.",
+        "hi": "हाँ; द्रव्यमान, पदार्थ और अवस्था भी महत्त्वपूर्ण हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Is a rise of 20°C the same interval as 20 K?",
+        "hi": "क्या 20°C वृद्धि का अंतराल 20 K के बराबर है?"
+      },
+      "answer": {
+        "en": "Yes; their interval sizes are equal, although their zero points differ.",
+        "hi": "हाँ; अंतराल समान हैं, पर शून्य बिंदु अलग हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "What happens to a small hole when a uniform metal plate is heated?",
+        "hi": "समान धातु पट्टिका गर्म करने पर उसका छोटा छेद क्या करता है?"
+      },
+      "answer": {
+        "en": "It expands along with the plate under free uniform expansion.",
+        "hi": "स्वतंत्र समान प्रसार में वह पट्टिका के साथ फैलता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "How is heat capacity different from specific heat capacity?",
+        "hi": "ऊष्मा धारिता और विशिष्ट ऊष्मा धारिता में अंतर?"
+      },
+      "answer": {
+        "en": "Heat capacity belongs to a body; specific heat capacity is per unit mass.",
+        "hi": "ऊष्मा धारिता पूरे पिंड की है; विशिष्ट ऊष्मा प्रति इकाई द्रव्यमान की है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can melting ice absorb energy without a temperature rise?",
+        "hi": "पिघलती बर्फ ताप बढ़े बिना ऊर्जा क्यों लेती है?"
+      },
+      "answer": {
+        "en": "Energy changes phase rather than temperature during coexistence at the melting condition.",
+        "hi": "गलन दशा में सहअस्तित्व के दौरान ऊर्जा ताप के बजाय अवस्था बदलती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "When is the final temperature the simple average of two initial temperatures?",
+        "hi": "अंतिम ताप दो प्रारंभिक तापों का सरल औसत कब है?"
+      },
+      "answer": {
+        "en": "For equal heat capacities, no losses and no phase change.",
+        "hi": "समान ऊष्मा धारिता, बिना हानि और बिना अवस्था परिवर्तन में।"
+      }
+    }
+  ],
+  "conceptMapEn": "Thermal state → temperature scales → expansion → heat capacity and phase change → calorimetry → conduction, convection and radiation",
+  "conceptMap": "तापीय अवस्था → ताप पैमाने → प्रसार → ऊष्मा धारिता और अवस्था परिवर्तन → कैलोरीमिति → चालन, संवहन और विकिरण"
+}

@@ -1,0 +1,1471 @@
+{
+  "number": 6,
+  "id": "physics11-06",
+  "title": {
+    "en": "System of Particles and Rotational Motion",
+    "hi": "कणों के निकाय तथा घूर्णी गति"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-06-1",
+      "title": {
+        "en": "Centre of mass",
+        "hi": "द्रव्यमान केंद्र"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 15
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Right mass",
+            "hi": "दायाँ द्रव्यमान"
+          },
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "initial": 2,
+          "unit": "kg"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Find the mass-weighted centre.",
+        "hi": "द्रव्यमान-भारित केंद्र खोजें।"
+      },
+      "observe": {
+        "en": "A 2 kg mass stays at x = 0; change the right mass at x = 4 m.",
+        "hi": "2 kg द्रव्यमान x = 0 पर है; x = 4 m का द्रव्यमान बदलें।"
+      },
+      "modelNote": {
+        "en": "Point masses and a massless connector are assumed; screen spacing is schematic.",
+        "hi": "बिंदु द्रव्यमान और द्रव्यमानरहित जोड़ माने हैं; स्क्रीन दूरी सांकेतिक है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The heavier mass receives greater weight in the position average.",
+          "hi": "स्थिति औसत में भारी द्रव्यमान का भार अधिक होता है।"
+        }
+      },
+      "realLife": {
+        "en": "Balance a ruler with unequal small loads by adjusting the support position.",
+        "hi": "असमान छोटे भार वाली पटरी को सहारे की स्थिति बदलकर संतुलित करें।"
+      },
+      "quick": {
+        "question": {
+          "en": "Increasing the right mass moves the centre?",
+          "hi": "दायाँ द्रव्यमान बढ़े तो केंद्र?"
+        },
+        "options": [
+          {
+            "en": "Left",
+            "hi": "बाएँ"
+          },
+          {
+            "en": "Right",
+            "hi": "दाएँ"
+          },
+          {
+            "en": "Always outside the masses",
+            "hi": "हमेशा द्रव्यमानों के बाहर"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The weighted average shifts toward the added mass.",
+          "hi": "भारित औसत बढ़े द्रव्यमान की ओर जाता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-06-1-low",
+          "label": {
+            "en": "Set right mass to 1 kg.",
+            "hi": "दायाँ द्रव्यमान 1 kg करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-06-1-high",
+          "label": {
+            "en": "Compare the maximum setting 5 kg.",
+            "hi": "अधिकतम सेटिंग 5 kg से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 5
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3.0
+          },
+          "text": {
+            "en": "The centre is left of or near the midpoint for a light right mass.",
+            "hi": "हल्के दाएँ द्रव्यमान पर केंद्र मध्य के बाएँ या निकट है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 3.0
+          },
+          "text": {
+            "en": "A heavier right mass draws the centre to the right.",
+            "hi": "भारी दायाँ द्रव्यमान केंद्र को दाएँ खींचता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Controlled quantity / reference",
+            "hi": "नियंत्रित राशि / संदर्भ"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Moving body / response",
+            "hi": "गतिशील पिंड / परिणाम"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-06-2",
+      "title": {
+        "en": "Torque",
+        "hi": "बल आघूर्ण"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 16
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Force angle",
+            "hi": "बल का कोण"
+          },
+          "min": 0,
+          "max": 180,
+          "step": 10,
+          "initial": 90,
+          "unit": "°"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Explore the perpendicular lever arm.",
+        "hi": "लंबवत आघूर्ण भुजा देखें।"
+      },
+      "observe": {
+        "en": "Keep r = 2 m and F = 10 N; turn the force angle.",
+        "hi": "r = 2 m और F = 10 N नियत रखकर बल का कोण बदलें।"
+      },
+      "modelNote": {
+        "en": "A fixed pivot and a rigid massless lever are symbolic.",
+        "hi": "नियत धुरी और दृढ़ द्रव्यमानरहित भुजा सांकेतिक हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Only the perpendicular force component produces torque about the pivot.",
+          "hi": "धुरी के बारे में केवल लंबवत बल घटक आघूर्ण देता है।"
+        }
+      },
+      "realLife": {
+        "en": "A spanner works best when the applied force is perpendicular to its handle.",
+        "hi": "पाने पर हत्थे के लंबवत बल लगाने से अधिक प्रभाव मिलता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Maximum torque occurs at?",
+          "hi": "अधिकतम आघूर्ण कब?"
+        },
+        "options": [
+          {
+            "en": "0°",
+            "hi": "0°"
+          },
+          {
+            "en": "90°",
+            "hi": "90°"
+          },
+          {
+            "en": "180°",
+            "hi": "180°"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "sin 90° = 1 makes rF sin θ maximum.",
+          "hi": "sin 90° = 1 से rF sin θ अधिकतम है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-06-2-low",
+          "label": {
+            "en": "Set force angle to 0 °.",
+            "hi": "बल का कोण 0 ° करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "phy11-06-2-high",
+          "label": {
+            "en": "Compare the maximum setting 180 °.",
+            "hi": "अधिकतम सेटिंग 180 ° से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 180
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 90.0
+          },
+          "text": {
+            "en": "Torque grows toward its maximum as the angle approaches 90°.",
+            "hi": "कोण 90° की ओर आने पर आघूर्ण अधिकतम की ओर बढ़ता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 90.0
+          },
+          "text": {
+            "en": "Beyond 90° the torque magnitude falls toward zero at 180°.",
+            "hi": "90° के बाद आघूर्ण परिमाण 180° के शून्य की ओर घटता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Controlled quantity / reference",
+            "hi": "नियंत्रित राशि / संदर्भ"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Moving body / response",
+            "hi": "गतिशील पिंड / परिणाम"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-06-3",
+      "title": {
+        "en": "Moment of inertia",
+        "hi": "जड़त्व आघूर्ण"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 17
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Radius",
+            "hi": "त्रिज्या"
+          },
+          "min": 0.2,
+          "max": 1,
+          "step": 0.1,
+          "initial": 0.5,
+          "unit": "m"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Compare equal-mass ring and disc inertia.",
+        "hi": "समान द्रव्यमान के वलय और चकती का I तुलना करें।"
+      },
+      "observe": {
+        "en": "Both masses are 2 kg and the axes are central and perpendicular; vary their common radius.",
+        "hi": "दोनों 2 kg और अक्ष केंद्रीय लंबवत हैं; समान त्रिज्या बदलें।"
+      },
+      "modelNote": {
+        "en": "Uniform thin bodies are idealised; rotation speed is illustrative, not a torque-driven race.",
+        "hi": "एकसमान पतले पिंड आदर्श हैं; घूमने की चाल उदाहरण है, आघूर्ण से चलती दौड़ नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Ring mass lies at R; disc mass is spread inward, so Idisc = Iring/2.",
+          "hi": "वलय का द्रव्यमान R पर और चकती का भीतर फैला है; इसलिए Idisc = Iring/2।"
+        }
+      },
+      "realLife": {
+        "en": "A flywheel stores energy according to both its mass distribution and angular speed.",
+        "hi": "फ्लाईव्हील की ऊर्जा द्रव्यमान वितरण तथा कोणीय चाल दोनों पर निर्भर है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Doubling radius at fixed mass multiplies I by?",
+          "hi": "नियत द्रव्यमान में त्रिज्या दुगुनी करने पर I?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "8",
+            "hi": "8"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "I is proportional to R².",
+          "hi": "I, R² के समानुपाती है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-06-3-low",
+          "label": {
+            "en": "Set radius to 0.2 m.",
+            "hi": "त्रिज्या 0.2 m करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.2
+          }
+        },
+        {
+          "id": "phy11-06-3-high",
+          "label": {
+            "en": "Compare the maximum setting 1 m.",
+            "hi": "अधिकतम सेटिंग 1 m से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 1
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.6
+          },
+          "text": {
+            "en": "Small radius gives a small moment of inertia.",
+            "hi": "छोटी त्रिज्या पर जड़त्व आघूर्ण कम है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0.6
+          },
+          "text": {
+            "en": "Increasing radius increases both inertias quadratically; the ratio remains 2.",
+            "hi": "त्रिज्या बढ़ने पर दोनों I वर्गानुपाती बढ़ते हैं; अनुपात 2 रहता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Controlled quantity / reference",
+            "hi": "नियंत्रित राशि / संदर्भ"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Moving body / response",
+            "hi": "गतिशील पिंड / परिणाम"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Understand system of particles and rotational motion using equations, conditions and evidence.",
+    "hi": "समीकरण, उनकी शर्तों और प्रेक्षण से कणों के निकाय तथा घूर्णी गति समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Centre of mass of a particle system",
+        "hi": "कण निकाय का द्रव्यमान केंद्र"
+      },
+      "paragraphs": [
+        {
+          "en": "A system may contain many particles, but its overall translational motion can be described using one special position called the centre of mass. For point masses on a line, xcm = Σmixi/Σmi. In three dimensions the same mass-weighted average applies to position vectors. This is not simply the midpoint unless the mass distribution has the required symmetry. Two equal point masses have their centre of mass halfway between them; a heavier mass pulls the weighted average closer to itself. The centre of mass need not lie in the material: it lies at the centre of a uniform ring even though that point is empty. Choose a common coordinate origin for every position before forming the sum. Shifting the origin changes all coordinates consistently and does not change the physical location. A uniform rod has its centre of mass at its midpoint because opposite equal elements balance by symmetry.",
+          "hi": "किसी निकाय में अनेक कण हो सकते हैं, फिर भी उसकी समग्र स्थानांतरीय गति एक विशेष स्थिति से बताई जा सकती है। उसे द्रव्यमान केंद्र (Centre of mass) कहते हैं। एक रेखा पर बिंदु द्रव्यमानों के लिए xcm = Σmixi/Σmi है। तीन विमाओं में यही द्रव्यमान-भारित औसत स्थिति सदिशों पर लागू होता है। यह केवल मध्यबिंदु नहीं है; मध्यबिंदु तभी मिलेगा जब द्रव्यमान वितरण में उपयुक्त सममिति हो। दो समान बिंदु द्रव्यमानों का केंद्र बीच में होता है, लेकिन एक द्रव्यमान बढ़ाने पर केंद्र उसकी ओर आता है। द्रव्यमान केंद्र का पदार्थ के भीतर होना आवश्यक नहीं। एकसमान वलय का केंद्र उसके खाली मध्य में होता है। सभी स्थितियों के लिए पहले एक ही निर्देशांक मूल चुनें, फिर भारित योग बनाएँ। मूल बदलने पर सभी निर्देशांक संगत ढंग से बदलेंगे, वास्तविक केंद्र नहीं। एकसमान छड़ का केंद्र मध्य में है, क्योंकि दोनों ओर समान दूरी के समान द्रव्यमान सममिति से संतुलित होते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "With 2 kg at x = 0 and 4 kg at x = 4 m, the centre is 16/6 m, closer to the 4 kg mass.",
+          "hi": "x = 0 पर 2 kg और x = 4 m पर 4 kg रखने से केंद्र 16/6 m है। यह 4 kg वाले भारी द्रव्यमान के निकट है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can the centre of mass lie outside the material?",
+          "hi": "क्या द्रव्यमान केंद्र पदार्थ के बाहर हो सकता है?"
+        },
+        "answer": {
+          "en": "Yes; the centre of a uniform ring is an example.",
+          "hi": "हाँ; एकसमान वलय का केंद्र ऐसा उदाहरण है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Motion of the centre of mass",
+        "hi": "द्रव्यमान केंद्र की गति"
+      },
+      "paragraphs": [
+        {
+          "en": "For a fixed collection of particles of constant total mass M, total momentum P equals M Vcm. Differentiating and adding the individual Newton equations gives Fexternal = M Acm. Internal force pairs cancel when Newton's third law applies to the interactions being modelled. Internal forces can change separations, rotation or internal energy without changing the total momentum of an isolated system. This explains why two skaters pushing apart move oppositely while their common centre of mass maintains its earlier motion. The relation describes the whole system, not the motion of every part. An exploding projectile has fragments with complicated paths, yet their centre of mass follows the path set by the external force if air resistance is ignored. A nonzero external force does not automatically imply a nonzero external torque about every origin; force and torque describe different aspects of motion and must be evaluated separately.",
+          "hi": "नियत कुल द्रव्यमान M वाले कण निकाय का कुल संवेग P = M Vcm है। अलग-अलग कणों के न्यूटन समीकरण जोड़ने तथा समय के सापेक्ष अवकलन करने से Fबाहरी = M Acm मिलता है। मॉडल की अंतःक्रियाओं में न्यूटन का तीसरा नियम लागू हो तो आंतरिक बलों के युग्म आपस में निरस्त होते हैं। आंतरिक बल कणों की दूरी, घूर्णन या आंतरिक ऊर्जा बदल सकते हैं, पर विलग निकाय का कुल संवेग नहीं बदलते। दो स्केटर एक-दूसरे को धक्का देकर विपरीत ओर जाते हैं, फिर भी उनका साझा द्रव्यमान केंद्र अपनी पुरानी गति बनाए रखता है। यह संबंध पूरे निकाय के लिए है, प्रत्येक भाग की समान गति के लिए नहीं। फटते प्रक्षेप्य के टुकड़ों के रास्ते जटिल हो सकते हैं, लेकिन वायु प्रतिरोध छोड़ने पर उनका द्रव्यमान केंद्र बाहरी बल से तय मार्ग पर चलता है। अशून्य बाहरी बल का अर्थ हर मूल के सापेक्ष अशून्य आघूर्ण नहीं है। बल और आघूर्ण गति के अलग पहलू बताते हैं, इसलिए दोनों की अलग जाँच चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "An isolated system has constant total momentum, but its individual particles can accelerate strongly because of forces exerted on one another.",
+          "hi": "विलग निकाय का कुल संवेग नियत है, लेकिन उसके अलग कण एक-दूसरे के बल से बड़े त्वरण पा सकते हैं। कुल और व्यक्तिगत गति अलग रखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which force controls centre-of-mass acceleration?",
+          "hi": "द्रव्यमान केंद्र का त्वरण कौन-सा बल तय करता है?"
+        },
+        "answer": {
+          "en": "The net external force on the chosen system.",
+          "hi": "चुने निकाय का परिणामी बाहरी बल।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Torque and its direction",
+        "hi": "बल आघूर्ण और उसकी दिशा"
+      },
+      "paragraphs": [
+        {
+          "en": "A force's turning effect about a chosen origin is its torque τ = r × F, where r runs from that origin to the force application point. Its magnitude is rF sin θ, or force multiplied by the perpendicular lever arm. A large force close to a hinge may produce less torque than a smaller force farther away. Torque is an axial vector; its direction follows the right-hand rule for the cross product. Reversing the order to F × r changes the sign. The choice of origin matters: a force can have zero torque about a point on its line of action and nonzero torque about another point. The SI unit N m has the same dimensions as a joule, but torque is not labelled as energy because they represent different quantities. In the scene, r = 2 m and F = 10 N are fixed, so the angle alone controls the turning effect.",
+          "hi": "चुने मूल के सापेक्ष बल का घुमाने वाला प्रभाव बल आघूर्ण (Torque) τ = r × F है। यहाँ r मूल से बल लगने के बिंदु तक स्थिति सदिश है। परिमाण rF sin θ या बल गुणा लंबवत भुजा है। काज के पास बड़ा बल कभी दूर लगे छोटे बल से कम आघूर्ण दे सकता है। बल आघूर्ण अक्षीय सदिश है और दिशा सदिश गुणन के दाएँ हाथ के नियम से मिलती है। क्रम F × r करने पर चिह्न उलट जाता है। मूल का चुनाव महत्त्वपूर्ण है। किसी बल की कार्यरेखा पर स्थित बिंदु के सापेक्ष आघूर्ण शून्य हो सकता है और दूसरे बिंदु के सापेक्ष अशून्य। इसका SI मात्रक N m है। विमा जूल जैसी होने पर भी आघूर्ण को ऊर्जा नहीं कहते, क्योंकि दोनों अलग राशियाँ हैं। दृश्य में r = 2 m तथा F = 10 N नियत हैं; इसलिए केवल कोण बदलने से घुमाने वाला प्रभाव बदलता है। दरवाजा खोलते समय हत्थे को काज से दूर रखना इसी सिद्धांत का उपयोग है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "At 0° or 180° the force line passes through the pivot and torque is zero; at 90° the magnitude rF is maximum.",
+          "hi": "0° या 180° पर बल की कार्यरेखा धुरी से गुजरती है और आघूर्ण शून्य है। 90° पर परिमाण rF अधिकतम होता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is a door handle placed far from its hinge?",
+          "hi": "दरवाजे का हत्था काज से दूर क्यों है?"
+        },
+        "answer": {
+          "en": "A larger perpendicular lever arm gives more torque for the same force.",
+          "hi": "समान बल में लंबवत भुजा बड़ी होने से आघूर्ण अधिक मिलता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Angular momentum and conservation",
+        "hi": "कोणीय संवेग और संरक्षण"
+      },
+      "paragraphs": [
+        {
+          "en": "For a particle, angular momentum about an origin is L = r × p. It depends on both the momentum and the perpendicular distance of its line of motion from the origin. A particle moving along a line through the origin has zero angular momentum about that origin even while its linear momentum is nonzero. For a system, add all particle angular momenta about the same origin. The net external torque gives the rate of change of total angular momentum. If external torque is zero, angular momentum is conserved. This condition is different from zero external force. For rotation about a fixed symmetry axis with a rigid mass distribution, the axial relation L = Iω is useful. When a skater draws their arms inward, their moment of inertia falls and angular speed rises if external torque is negligible. Kinetic energy may increase because muscles perform internal work; angular-momentum conservation alone does not imply unchanged rotational kinetic energy.",
+          "hi": "किसी कण का मूल के सापेक्ष कोणीय संवेग (Angular momentum) L = r × p है। यह संवेग तथा उसकी गति की कार्यरेखा की मूल से लंबवत दूरी दोनों पर निर्भर है। मूल से गुजरती रेखा पर चलते कण का उस मूल के सापेक्ष कोणीय संवेग शून्य है, भले रैखिक संवेग अशून्य हो। निकाय में सभी कणों के कोणीय संवेग एक ही मूल के सापेक्ष जोड़ते हैं। कुल कोणीय संवेग के परिवर्तन की दर परिणामी बाहरी बल आघूर्ण है। बाहरी आघूर्ण शून्य हो तो कोणीय संवेग संरक्षित होता है। यह बाहरी बल शून्य होने से अलग शर्त है। दृढ़ द्रव्यमान वितरण की नियत सममिति अक्ष के चारों ओर गति में अक्षीय संबंध L = Iω उपयोगी है। स्केटर बाँहें भीतर खींचे तो जड़त्व आघूर्ण घटता और बाहरी आघूर्ण नगण्य होने पर कोणीय चाल बढ़ती है। मांसपेशियाँ आंतरिक कार्य करती हैं, इसलिए गतिज ऊर्जा बढ़ सकती है। केवल कोणीय संवेग संरक्षण से घूर्णी गतिज ऊर्जा का नियत होना सिद्ध नहीं होता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use one common origin when adding angular momenta. Changing the origin halfway through a solution can change the numerical quantity being conserved.",
+          "hi": "कोणीय संवेग जोड़ते समय एक ही मूल रखें। समाधान के बीच मूल बदल देने पर जिस संख्यात्मक राशि का संरक्षण देख रहे हैं, वही बदल सकती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What condition conserves angular momentum?",
+          "hi": "कोणीय संवेग संरक्षण की शर्त क्या है?"
+        },
+        "answer": {
+          "en": "Zero net external torque about the selected origin or axis.",
+          "hi": "चुने मूल या अक्ष के सापेक्ष परिणामी बाहरी आघूर्ण शून्य होना।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Equilibrium of a rigid body",
+        "hi": "दृढ़ पिंड का संतुलन"
+      },
+      "paragraphs": [
+        {
+          "en": "A rigid body retains fixed distances between its particles in the ideal model. For complete static equilibrium it must have zero net external force and zero net external torque. The first condition prevents translational acceleration; the second prevents angular acceleration. Meeting only one is insufficient. Two equal opposite forces on different parallel lines form a couple: their resultant force is zero but their torque can rotate the body. A pair acting along the same line has neither resultant force nor a couple torque. When solving a supported beam, draw every load and support force, choose an origin that simplifies unknown torques and then check the force balance. A force whose line of action passes through the chosen origin contributes zero torque there, but it must still appear in the force equation. Weight acts effectively through the centre of mass in a uniform gravitational field, allowing the distributed gravitational forces to be represented by one resultant.",
+          "hi": "आदर्श मॉडल में दृढ़ पिंड (Rigid body) के कणों के बीच दूरी नियत रहती है। पूर्ण स्थैतिक संतुलन के लिए परिणामी बाहरी बल और परिणामी बाहरी बल आघूर्ण दोनों शून्य होने चाहिए। पहली शर्त स्थानांतरीय त्वरण रोकती और दूसरी कोणीय त्वरण रोकती है। केवल एक शर्त पर्याप्त नहीं। अलग समांतर कार्यरेखाओं पर लगे बराबर विपरीत बल बलयुग्म (Couple) बनाते हैं। उनका परिणामी बल शून्य होते हुए भी आघूर्ण पिंड को घुमा सकता है। एक ही रेखा पर बराबर विपरीत बल हों तो ऐसा बलयुग्म आघूर्ण नहीं होगा। सहारे वाली छड़ के प्रश्न में सभी भार तथा सहारा बल चित्रित करें। ऐसा मूल चुनें जिससे अज्ञात बलों के आघूर्ण सरल हों और फिर बल संतुलन भी जाँचें। जिस बल की कार्यरेखा मूल से गुजरती है, उसका वहाँ आघूर्ण शून्य है; फिर भी उसे बल समीकरण से हटाना गलत होगा। एकसमान गुरुत्व क्षेत्र में भार प्रभावी रूप से द्रव्यमान केंद्र से लगता है, इसलिए वितरित गुरुत्व बलों की जगह एक परिणामी भार ले सकते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A force balance is not a torque balance. Test both equations, and state whether equilibrium is static or uniform motion with no acceleration.",
+          "hi": "बल संतुलन और आघूर्ण संतुलन अलग हैं। दोनों समीकरण जाँचें तथा स्पष्ट करें कि पिंड स्थिर है या बिना त्वरण की एकसमान गति में है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can zero net force coexist with nonzero torque?",
+          "hi": "क्या शून्य परिणामी बल के साथ अशून्य आघूर्ण हो सकता है?"
+        },
+        "answer": {
+          "en": "Yes, a couple is an example.",
+          "hi": "हाँ, बलयुग्म इसका उदाहरण है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Moment of inertia and radius of gyration",
+        "hi": "जड़त्व आघूर्ण और परिभ्रमण त्रिज्या"
+      },
+      "paragraphs": [
+        {
+          "en": "Moment of inertia about a specified axis is I = Σmi ri², where each ri is the perpendicular distance from that axis. It measures resistance to angular acceleration, not simply total mass. Moving the same mass farther from an axis increases I because distance is squared. A thin ring of mass M and radius R has I = MR² about its central perpendicular axis. A uniform disc has I = ½MR² about the corresponding axis, because some of its mass lies nearer the centre. Shape formulas are meaningless unless the axis is stated. The radius of gyration k is defined by I = Mk²; it is an equivalent mass-distribution distance, not necessarily the physical radius. The scene compares a 2 kg disc and ring of equal radius. At any common R the ring has twice the disc's inertia, while doubling R multiplies each inertia by 4.",
+          "hi": "निर्दिष्ट अक्ष के सापेक्ष जड़त्व आघूर्ण (Moment of inertia) I = Σmi ri² है। हर ri उस अक्ष से कण की लंबवत दूरी है। यह कोणीय त्वरण में प्रतिरोध बताता है, केवल कुल द्रव्यमान नहीं। समान द्रव्यमान को अक्ष से दूर करने पर I बढ़ता है, क्योंकि दूरी का वर्ग लिया जाता है। M द्रव्यमान तथा R त्रिज्या के पतले वलय का केंद्र से गुजरती लंबवत अक्ष के बारे में I = MR² है। समान अक्ष के बारे में एकसमान चकती का I = ½MR² है, क्योंकि उसका कुछ द्रव्यमान केंद्र के निकट है। अक्ष बताए बिना आकृति का सूत्र अधूरा है। परिभ्रमण त्रिज्या (Radius of gyration) k को I = Mk² से परिभाषित करते हैं। यह द्रव्यमान वितरण की समतुल्य दूरी है, आवश्यक नहीं कि पिंड की वास्तविक त्रिज्या हो। दृश्य में समान त्रिज्या की 2 kg चकती तथा वलय तुलना में हैं। हर R पर वलय का जड़त्व आघूर्ण चकती से दुगुना है। R दुगुना करने पर दोनों के I, 4 गुने होते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The SI unit of I is kg m². It is neither angular momentum nor torque; always check the powers of length and time in units.",
+          "hi": "I की SI इकाई kg m² है। यह कोणीय संवेग या बल आघूर्ण नहीं है। इकाइयों में लंबाई तथा समय की घातें अलग से जाँचें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which has larger I, a ring or disc of equal mass and radius?",
+          "hi": "समान द्रव्यमान और त्रिज्या में वलय या चकती का I अधिक है?"
+        },
+        "answer": {
+          "en": "The thin ring about the common central perpendicular axis.",
+          "hi": "समान केंद्रीय लंबवत अक्ष के बारे में पतले वलय का।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Rotational kinematics and dynamics",
+        "hi": "घूर्णी शुद्ध गतिकी और गतिकी"
+      },
+      "paragraphs": [
+        {
+          "en": "For fixed-axis rotation, angular displacement θ is measured in radians, angular velocity is dθ/dt and angular acceleration is dω/dt. Every particle in a rigid body has the same angular velocity, but its linear speed is v = rω and therefore depends on distance from the axis. Tangential acceleration is rα; centripetal acceleration is rω² toward the axis. With constant angular acceleration, equations analogous to linear kinematics hold: ω = ω0 + αt and θ − θ0 = ω0t + ½αt². Do not use them when α varies without modification. For a rigid body about a fixed axis with constant I, the component of net external torque along that axis equals Iα. This relation resembles F = ma, but the rotational quantities depend on the chosen axis. A point on the axis can have zero linear speed while the body's angular velocity remains nonzero.",
+          "hi": "नियत अक्ष घूर्णन में कोणीय विस्थापन θ रेडियन में, कोणीय वेग dθ/dt और कोणीय त्वरण dω/dt है। दृढ़ पिंड के सभी कणों का कोणीय वेग समान होता है, लेकिन रैखिक चाल v = rω अक्ष से दूरी पर निर्भर करती है। स्पर्शरेखीय त्वरण rα तथा अक्ष की ओर अभिकेंद्रीय त्वरण rω² है। कोणीय त्वरण नियत हो तो रैखिक गति जैसे समीकरण ω = ω0 + αt तथा θ − θ0 = ω0t + ½αt² लागू हैं। α बदलता हो तो इन्हें बिना संशोधन नहीं लगा सकते। नियत अक्ष और नियत I वाले दृढ़ पिंड में अक्ष की दिशा का परिणामी बाहरी आघूर्ण Iα के बराबर होता है। यह F = ma जैसा दिखता है, लेकिन घूर्णी राशियाँ चुने अक्ष पर निर्भर हैं। अक्ष पर स्थित बिंदु की रैखिक चाल शून्य हो सकती है, जबकि पूरे पिंड का कोणीय वेग अशून्य है। घूमते पंखे में बाहरी सिरे की चाल अंदर वाले बिंदु से अधिक होती है, पर एक ही पत्ती के दोनों बिंदु समान समय में समान कोण घूमते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use radians when relating arc length to angle: s = rθ. Degrees must be converted before calculating a speed from v = rω.",
+          "hi": "चाप लंबाई से कोण जोड़ते समय s = rθ में रेडियन लें। v = rω से चाल निकालने से पहले डिग्री प्रति सेकंड को रेडियन प्रति सेकंड में बदलें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Do all points on a rotating disc have the same speed?",
+          "hi": "घूमती चकती के सभी बिंदुओं की चाल समान है?"
+        },
+        "answer": {
+          "en": "They share angular speed, but linear speed increases with distance from the axis.",
+          "hi": "कोणीय चाल समान है; रैखिक चाल अक्ष से दूरी के साथ बढ़ती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Rotational energy and careful comparisons",
+        "hi": "घूर्णी ऊर्जा और सही तुलना"
+      },
+      "paragraphs": [
+        {
+          "en": "The kinetic energy of a rigid body rotating about a fixed axis is Krot = ½Iω². It follows by adding ½mi vi² for all particles and using vi = riω. Power supplied by torque about that axis is P = τω. A body can translate and rotate simultaneously; a useful decomposition is ½M Vcm² plus rotational kinetic energy about its centre of mass. In pure rolling on a stationary surface, the contact point is instantaneously at rest and Vcm = Rω. This extra rolling relation must not be used for slipping motion. Comparisons require stating what is held fixed. At equal angular speed a ring has greater rotational energy than an equal-mass equal-radius disc. At equal angular momentum the energy L²/(2I) is smaller for larger I. These statements are consistent because they describe different experimental constraints. Check the axis, mass distribution and conserved quantity before deciding which body is faster or more energetic.",
+          "hi": "नियत अक्ष के चारों ओर घूमते दृढ़ पिंड की गतिज ऊर्जा Kघूर्णी = ½Iω² है। सभी कणों की ½mi vi² ऊर्जा जोड़कर और vi = riω लगाने से यह सूत्र मिलता है। उसी अक्ष के आघूर्ण द्वारा दी शक्ति P = τω है। पिंड साथ में स्थानांतरण तथा घूर्णन कर सकता है। तब उपयोगी विभाजन ½M Vcm² तथा द्रव्यमान केंद्र के सापेक्ष घूर्णी ऊर्जा है। स्थिर सतह पर बिना फिसले लुढ़कने में संपर्क बिंदु तात्कालिक रूप से विराम पर और Vcm = Rω होता है। फिसलने वाली गति में यह अतिरिक्त संबंध नहीं लगा सकते। तुलना में बताना चाहिए कि कौन-सी राशि नियत है। समान कोणीय चाल पर समान द्रव्यमान तथा त्रिज्या के वलय की घूर्णी ऊर्जा चकती से अधिक है। लेकिन समान कोणीय संवेग पर K = L²/(2I) से बड़े I की ऊर्जा कम होती है। ये विरोधी कथन नहीं, अलग शर्तों की तुलना हैं। कौन तेज या अधिक ऊर्जावान है, तय करने से पहले अक्ष, द्रव्यमान वितरण तथा संरक्षित राशि जाँचें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not assume conservation of rotational energy merely because angular momentum is conserved; internal work may change energy while external torque remains negligible.",
+          "hi": "केवल कोणीय संवेग संरक्षण से घूर्णी ऊर्जा संरक्षित न मानें। बाहरी आघूर्ण नगण्य रहते हुए भी आंतरिक कार्य ऊर्जा बदल सकता है। शर्तें स्पष्ट लिखना अनिवार्य है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At fixed angular momentum, how does K change when I decreases?",
+          "hi": "नियत कोणीय संवेग में I घटे तो K कैसे बदलेगा?"
+        },
+        "answer": {
+          "en": "K = L²/(2I) increases.",
+          "hi": "K = L²/(2I) बढ़ता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "xcm = Σmixi/Σmi",
+      "meaning": {
+        "en": "Mass-weighted position on a line.",
+        "hi": "रेखा पर द्रव्यमान-भारित स्थिति।"
+      },
+      "units": {
+        "en": "xi,xcm: m; mi: kg",
+        "hi": "xi,xcm: m; mi: kg"
+      }
+    },
+    {
+      "expression": "τ = r × F; |τ| = rF sin θ",
+      "meaning": {
+        "en": "Torque about a chosen origin.",
+        "hi": "चुने मूल के सापेक्ष बल आघूर्ण।"
+      },
+      "units": {
+        "en": "τ: N m; r: m; F: N",
+        "hi": "τ: N m; r: m; F: N"
+      }
+    },
+    {
+      "expression": "I = Σmiri²; τaxis = Iα",
+      "meaning": {
+        "en": "Fixed-axis inertia and dynamics for constant I.",
+        "hi": "नियत I में नियत अक्ष जड़त्व आघूर्ण और गतिकी।"
+      },
+      "units": {
+        "en": "I: kg m²; α: rad/s²",
+        "hi": "I: kg m²; α: rad/s²"
+      }
+    },
+    {
+      "expression": "Laxis = Iω; Krot = ½Iω²",
+      "meaning": {
+        "en": "Rigid rotation about the stated axis.",
+        "hi": "बताई अक्ष के चारों ओर दृढ़ घूर्णन।"
+      },
+      "units": {
+        "en": "L: kg m²/s; K: J",
+        "hi": "L: kg m²/s; K: J"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse zero net force with zero torque, or apply an inertia formula without naming its axis.",
+    "hi": "शून्य कुल बल को शून्य आघूर्ण न समझें और अक्ष बताए बिना जड़त्व आघूर्ण का सूत्र न लगाएँ।"
+  },
+  "summary": [
+    {
+      "en": "The centre of mass is a weighted mean position.",
+      "hi": "द्रव्यमान केंद्र भारित औसत स्थिति है।"
+    },
+    {
+      "en": "Net external force governs centre-of-mass acceleration.",
+      "hi": "बाहरी कुल बल द्रव्यमान केंद्र का त्वरण तय करता है।"
+    },
+    {
+      "en": "Torque changes angular momentum.",
+      "hi": "आघूर्ण कोणीय संवेग बदलता है।"
+    },
+    {
+      "en": "Inertia depends on mass distribution and axis.",
+      "hi": "जड़त्व आघूर्ण वितरण तथा अक्ष पर निर्भर है।"
+    },
+    {
+      "en": "Static equilibrium needs zero net force and torque.",
+      "hi": "स्थैतिक संतुलन में कुल बल तथा आघूर्ण शून्य हों।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the centre of mass.",
+        "hi": "द्रव्यमान केंद्र निकालें।"
+      },
+      "given": {
+        "en": "2 kg at 0 m, 4 kg at 4 m.",
+        "hi": "0 m पर 2 kg, 4 m पर 4 kg।"
+      },
+      "find": {
+        "en": "xcm.",
+        "hi": "xcm।"
+      },
+      "formula": {
+        "en": "xcm = (m1x1 + m2x2)/(m1+m2)",
+        "hi": "xcm = (m1x1 + m2x2)/(m1+m2)"
+      },
+      "steps": [
+        {
+          "en": "Numerator = 2 × 0 + 4 × 4 = 16 kg m.",
+          "hi": "अंश = 2 × 0 + 4 × 4 = 16 kg m।"
+        },
+        {
+          "en": "Total mass = 6 kg.",
+          "hi": "कुल द्रव्यमान = 6 kg।"
+        }
+      ],
+      "answer": {
+        "en": "8/3 m ≈ 2.67 m from the origin.",
+        "hi": "मूल से 8/3 m ≈ 2.67 m।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find torque at a right angle.",
+        "hi": "समकोण पर आघूर्ण निकालें।"
+      },
+      "given": {
+        "en": "r = 2 m, F = 10 N, θ = 90°.",
+        "hi": "r = 2 m, F = 10 N, θ = 90°।"
+      },
+      "find": {
+        "en": "Torque magnitude.",
+        "hi": "आघूर्ण परिमाण।"
+      },
+      "formula": {
+        "en": "τ = rF sin θ",
+        "hi": "τ = rF sin θ"
+      },
+      "steps": [
+        {
+          "en": "sin 90° = 1.",
+          "hi": "sin 90° = 1।"
+        },
+        {
+          "en": "τ = 2 × 10.",
+          "hi": "τ = 2 × 10।"
+        }
+      ],
+      "answer": {
+        "en": "20 N m.",
+        "hi": "20 N m।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Compare ring and disc inertia.",
+        "hi": "वलय तथा चकती का जड़त्व आघूर्ण तुलना करें।"
+      },
+      "given": {
+        "en": "Each has M = 2 kg, R = 0.5 m; central perpendicular axes.",
+        "hi": "प्रत्येक में M = 2 kg, R = 0.5 m; केंद्रीय लंबवत अक्ष।"
+      },
+      "find": {
+        "en": "Both I values.",
+        "hi": "दोनों I।"
+      },
+      "formula": {
+        "en": "Iring = MR²; Idisc = ½MR²",
+        "hi": "Iring = MR²; Idisc = ½MR²"
+      },
+      "steps": [
+        {
+          "en": "R² = 0.25 m².",
+          "hi": "R² = 0.25 m²।"
+        },
+        {
+          "en": "Iring = 2 × 0.25; Idisc = half this.",
+          "hi": "Iring = 2 × 0.25; Idisc इसका आधा।"
+        }
+      ],
+      "answer": {
+        "en": "Ring 0.50 kg m²; disc 0.25 kg m².",
+        "hi": "वलय 0.50 kg m²; चकती 0.25 kg m²।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find angular acceleration and speed after 3 s.",
+        "hi": "3 s बाद कोणीय त्वरण तथा चाल निकालें।"
+      },
+      "given": {
+        "en": "τ = 2 N m, I = 0.5 kg m², initially at rest; fixed axis.",
+        "hi": "τ = 2 N m, I = 0.5 kg m², प्रारंभ में विराम; नियत अक्ष।"
+      },
+      "find": {
+        "en": "α and ω.",
+        "hi": "α तथा ω।"
+      },
+      "formula": {
+        "en": "α = τ/I; ω = ω0 + αt",
+        "hi": "α = τ/I; ω = ω0 + αt"
+      },
+      "steps": [
+        {
+          "en": "α = 2/0.5 = 4 rad/s².",
+          "hi": "α = 2/0.5 = 4 rad/s²।"
+        },
+        {
+          "en": "ω = 0 + 4 × 3.",
+          "hi": "ω = 0 + 4 × 3।"
+        }
+      ],
+      "answer": {
+        "en": "α = 4 rad/s²; ω = 12 rad/s.",
+        "hi": "α = 4 rad/s²; ω = 12 rad/s।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A rotating skater halves I without external torque. Find speed and energy ratio.",
+        "hi": "बाहरी आघूर्ण बिना स्केटर I आधा करे। चाल व ऊर्जा अनुपात निकालें।"
+      },
+      "given": {
+        "en": "Initial I = 4 kg m², ω = 2 rad/s; final I = 2 kg m².",
+        "hi": "प्रारंभिक I = 4 kg m², ω = 2 rad/s; अंतिम I = 2 kg m²।"
+      },
+      "find": {
+        "en": "Final ω and Kfinal/Kinitial.",
+        "hi": "अंतिम ω तथा ऊर्जा अनुपात।"
+      },
+      "formula": {
+        "en": "I1ω1 = I2ω2; K = ½Iω²",
+        "hi": "I1ω1 = I2ω2; K = ½Iω²"
+      },
+      "steps": [
+        {
+          "en": "L = 4 × 2 = 8 kg m²/s.",
+          "hi": "L = 4 × 2 = 8 kg m²/s।"
+        },
+        {
+          "en": "ω2 = 8/2 = 4 rad/s.",
+          "hi": "ω2 = 8/2 = 4 rad/s।"
+        },
+        {
+          "en": "K1 = 8 J; K2 = 16 J; internal muscular work supplies the increase.",
+          "hi": "K1 = 8 J; K2 = 16 J; वृद्धि मांसपेशियों के आंतरिक कार्य से है।"
+        }
+      ],
+      "answer": {
+        "en": "ω2 = 4 rad/s; energy ratio = 2.",
+        "hi": "ω2 = 4 rad/s; ऊर्जा अनुपात = 2।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "The centre of mass of equal masses at 0 and 4 m is?",
+        "hi": "0 तथा 4 m पर समान द्रव्यमान का केंद्र?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0 m",
+            "hi": "0 m"
+          },
+          "reason": {
+            "en": "Both masses contribute.",
+            "hi": "दोनों द्रव्यमान योगदान देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 m",
+            "hi": "2 m"
+          },
+          "reason": {
+            "en": "Equal weights give the midpoint.",
+            "hi": "समान भारित मान मध्यबिंदु देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "4 m",
+            "hi": "4 m"
+          },
+          "reason": {
+            "en": "That is one mass position.",
+            "hi": "यह एक द्रव्यमान की स्थिति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "8 m",
+            "hi": "8 m"
+          },
+          "reason": {
+            "en": "This is outside the weighted average interval.",
+            "hi": "यह भारित औसत के अंतराल से बाहर है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Centre-of-mass acceleration is controlled by?",
+        "hi": "द्रव्यमान केंद्र का त्वरण किससे तय है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Net external force",
+            "hi": "परिणामी बाहरी बल"
+          },
+          "reason": {
+            "en": "Fext = M Acm.",
+            "hi": "Fext = M Acm।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every internal force separately",
+            "hi": "हर आंतरिक बल अलग"
+          },
+          "reason": {
+            "en": "Internal pairs cancel in the total equation.",
+            "hi": "कुल समीकरण में आंतरिक युग्म निरस्त हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the largest mass",
+            "hi": "केवल सबसे बड़ा द्रव्यमान"
+          },
+          "reason": {
+            "en": "All masses enter the system.",
+            "hi": "सभी द्रव्यमान निकाय में हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only angular speed",
+            "hi": "केवल कोणीय चाल"
+          },
+          "reason": {
+            "en": "It does not set translational acceleration alone.",
+            "hi": "यह अकेले स्थानांतरीय त्वरण नहीं बताती।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Torque magnitude is?",
+        "hi": "आघूर्ण का परिमाण?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "rF cos θ",
+            "hi": "rF cos θ"
+          },
+          "reason": {
+            "en": "Torque uses the perpendicular component.",
+            "hi": "आघूर्ण में लंबवत घटक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "r/F",
+            "hi": "r/F"
+          },
+          "reason": {
+            "en": "Its dimensions are wrong.",
+            "hi": "विमाएँ गलत हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "rF sin θ",
+            "hi": "rF sin θ"
+          },
+          "reason": {
+            "en": "This is the cross-product magnitude.",
+            "hi": "यह सदिश गुणन का परिमाण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "F/r",
+            "hi": "F/r"
+          },
+          "reason": {
+            "en": "This is not torque.",
+            "hi": "यह आघूर्ण नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Torque is maximum for fixed r,F at?",
+        "hi": "नियत r,F में आघूर्ण अधिकतम कब?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0°",
+            "hi": "0°"
+          },
+          "reason": {
+            "en": "sin 0° = 0.",
+            "hi": "sin 0° = 0।"
+          }
+        },
+        {
+          "text": {
+            "en": "180°",
+            "hi": "180°"
+          },
+          "reason": {
+            "en": "sin 180° = 0.",
+            "hi": "sin 180° = 0।"
+          }
+        },
+        {
+          "text": {
+            "en": "45°",
+            "hi": "45°"
+          },
+          "reason": {
+            "en": "sin 45° is below 1.",
+            "hi": "sin 45° का मान 1 से कम।"
+          }
+        },
+        {
+          "text": {
+            "en": "90°",
+            "hi": "90°"
+          },
+          "reason": {
+            "en": "sin 90° = 1.",
+            "hi": "sin 90° = 1।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Angular momentum is conserved when?",
+        "hi": "कोणीय संवेग संरक्षित कब?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Net external torque is zero",
+            "hi": "परिणामी बाहरी आघूर्ण शून्य हो"
+          },
+          "reason": {
+            "en": "dL/dt = τext.",
+            "hi": "dL/dt = τext।"
+          }
+        },
+        {
+          "text": {
+            "en": "Kinetic energy is zero",
+            "hi": "गतिज ऊर्जा शून्य हो"
+          },
+          "reason": {
+            "en": "This is not its conservation condition.",
+            "hi": "यह संरक्षण की शर्त नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass is zero",
+            "hi": "द्रव्यमान शून्य हो"
+          },
+          "reason": {
+            "en": "Real systems need not have zero mass.",
+            "hi": "वास्तविक निकाय का द्रव्यमान शून्य नहीं चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Angular speed always zero",
+            "hi": "कोणीय चाल हमेशा शून्य हो"
+          },
+          "reason": {
+            "en": "A rotating isolated body can conserve L.",
+            "hi": "घूमता विलग पिंड भी L संरक्षित रखता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "SI unit of moment of inertia is?",
+        "hi": "जड़त्व आघूर्ण का SI मात्रक?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "kg m/s",
+            "hi": "kg m/s"
+          },
+          "reason": {
+            "en": "This is linear momentum.",
+            "hi": "यह रैखिक संवेग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "kg m²",
+            "hi": "kg m²"
+          },
+          "reason": {
+            "en": "I sums mass times squared distance.",
+            "hi": "I द्रव्यमान गुणा दूरी का वर्ग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "N m",
+            "hi": "N m"
+          },
+          "reason": {
+            "en": "This is torque.",
+            "hi": "यह बल आघूर्ण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "J/s",
+            "hi": "J/s"
+          },
+          "reason": {
+            "en": "This is power.",
+            "hi": "यह शक्ति है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "For equal M,R about central perpendicular axes, Iring/Idisc = ?",
+        "hi": "समान M,R और केंद्रीय लंबवत अक्ष में Iring/Idisc?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "½",
+            "hi": "½"
+          },
+          "reason": {
+            "en": "The ring distributes mass farther out.",
+            "hi": "वलय का द्रव्यमान अधिक दूर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "The distributions differ.",
+            "hi": "वितरण अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "MR²/(½MR²) = 2.",
+            "hi": "MR²/(½MR²) = 2।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "That is the radius-doubling factor.",
+            "hi": "यह त्रिज्या दुगुनी करने का गुणक है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Complete static equilibrium requires?",
+        "hi": "पूर्ण स्थैतिक संतुलन की शर्त?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only zero net force",
+            "hi": "केवल कुल बल शून्य"
+          },
+          "reason": {
+            "en": "A couple could still rotate it.",
+            "hi": "बलयुग्म फिर भी घुमा सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only zero net torque",
+            "hi": "केवल कुल आघूर्ण शून्य"
+          },
+          "reason": {
+            "en": "Translation could still accelerate.",
+            "hi": "स्थानांतरीय त्वरण फिर भी संभव।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only zero mass",
+            "hi": "केवल शून्य द्रव्यमान"
+          },
+          "reason": {
+            "en": "This is not equilibrium.",
+            "hi": "यह संतुलन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero net force and torque",
+            "hi": "कुल बल और कुल आघूर्ण शून्य"
+          },
+          "reason": {
+            "en": "Both translational and angular acceleration vanish.",
+            "hi": "दोनों प्रकार के त्वरण शून्य हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Rigid rotation gives equal values of which quantity to all points?",
+        "hi": "दृढ़ घूर्णन में सभी बिंदुओं की कौन-सी राशि समान?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Angular speed",
+            "hi": "कोणीय चाल"
+          },
+          "reason": {
+            "en": "All points turn through the same angle in the same time.",
+            "hi": "सभी समान समय में समान कोण घूमते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Linear speed",
+            "hi": "रैखिक चाल"
+          },
+          "reason": {
+            "en": "v = rω depends on r.",
+            "hi": "v = rω, r पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Centripetal acceleration",
+            "hi": "अभिकेंद्रीय त्वरण"
+          },
+          "reason": {
+            "en": "rω² depends on r.",
+            "hi": "rω², r पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Distance to axis",
+            "hi": "अक्ष से दूरी"
+          },
+          "reason": {
+            "en": "Different points have different radii.",
+            "hi": "अलग बिंदुओं की त्रिज्या अलग है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Rotational kinetic energy is?",
+        "hi": "घूर्णी गतिज ऊर्जा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Iω",
+            "hi": "Iω"
+          },
+          "reason": {
+            "en": "This is axial angular momentum.",
+            "hi": "यह अक्षीय कोणीय संवेग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "½Iω²",
+            "hi": "½Iω²"
+          },
+          "reason": {
+            "en": "Sum the kinetic energy of all rotating particles.",
+            "hi": "सभी घूमते कणों की गतिज ऊर्जा जोड़ें।"
+          }
+        },
+        {
+          "text": {
+            "en": "I/ω",
+            "hi": "I/ω"
+          },
+          "reason": {
+            "en": "The dimensions are incorrect.",
+            "hi": "विमाएँ गलत हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "τω",
+            "hi": "τω"
+          },
+          "reason": {
+            "en": "This is power.",
+            "hi": "यह शक्ति है।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define centre of mass.",
+        "hi": "द्रव्यमान केंद्र परिभाषित करें।"
+      },
+      "answer": {
+        "en": "It is the mass-weighted mean position of a system.",
+        "hi": "यह निकाय की द्रव्यमान-भारित औसत स्थिति है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why must the axis be specified for I?",
+        "hi": "I के लिए अक्ष बताना क्यों जरूरी है?"
+      },
+      "answer": {
+        "en": "Distances from the axis enter squared, so a different axis can give a different I.",
+        "hi": "अक्ष से दूरियों के वर्ग आते हैं; अक्ष बदलने पर I बदल सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish torque and work.",
+        "hi": "आघूर्ण तथा कार्य में अंतर करें।"
+      },
+      "answer": {
+        "en": "Torque is r × F, an axial vector; work is an integral of F·dr, a scalar energy transfer.",
+        "hi": "आघूर्ण r × F अक्षीय सदिश है; कार्य F·dr का समाकल, अदिश ऊर्जा हस्तांतरण है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State equilibrium conditions.",
+        "hi": "संतुलन की शर्तें लिखें।"
+      },
+      "answer": {
+        "en": "Both net external force and torque must vanish for static equilibrium.",
+        "hi": "स्थैतिक संतुलन में परिणामी बाहरी बल और आघूर्ण दोनों शून्य हों।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does a ring have larger I than a disc?",
+        "hi": "वलय का I चकती से अधिक क्यों है?"
+      },
+      "answer": {
+        "en": "At equal mass and radius, its mass is farther from the common central perpendicular axis.",
+        "hi": "समान द्रव्यमान और त्रिज्या में उसका द्रव्यमान समान केंद्रीय लंबवत अक्ष से अधिक दूर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Does conserved L imply conserved rotational K?",
+        "hi": "L संरक्षण से घूर्णी K भी संरक्षित है?"
+      },
+      "answer": {
+        "en": "No. Internal work can change I and K while L remains constant.",
+        "hi": "नहीं। आंतरिक कार्य I और K बदल सकता है, जबकि L नियत रहे।"
+      }
+    }
+  ],
+  "conceptMap": "कण स्थिति → द्रव्यमान केंद्र → बाहरी बल → आघूर्ण → कोणीय संवेग → जड़त्व आघूर्ण → संतुलन और घूर्णी ऊर्जा",
+  "conceptMapEn": "Particle positions → centre of mass → external force → torque → angular momentum → inertia → equilibrium and rotational energy",
+  "editionBasis": {
+    "en": "Original explanations aligned to NCERT Class 11 Physics and UP Board 2026–27; ideal models have stated assumptions.",
+    "hi": "NCERT कक्षा 11 भौतिकी तथा यूपी बोर्ड 2026–27 पर आधारित मौलिक व्याख्याएँ; आदर्श मॉडलों की शर्तें स्पष्ट हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part I · Chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keph106.pdf"
+    },
+    {
+      "title": "UP Board Class 11 Physics 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ]
+}

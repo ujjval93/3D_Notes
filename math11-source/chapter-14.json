@@ -1,0 +1,888 @@
+{
+  "id": 14,
+  "title": {
+    "en": "Probability",
+    "hi": "प्रायिकता"
+  },
+  "goal": {
+    "en": "Build sample spaces and use event algebra, equal likelihood and addition rules.",
+    "hi": "प्रतिदर्श समष्टि बनाएँ तथा घटना बीजगणित, समान संभावना और योग नियम लगाएँ।"
+  },
+  "engine": "eleven-math",
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Random experiments and outcomes",
+        "hi": "यादृच्छिक प्रयोग और परिणाम"
+      },
+      "body": {
+        "en": "A random experiment has known possible outcomes but an individual trial cannot be predicted with certainty. Tossing a coin or rolling a die are familiar idealised examples. The conditions of the experiment must be specified: one toss, two ordered tosses and a toss until a head are different experiments. An outcome is one complete possible result, not a property shared by several results. For two tosses, HT and TH are different ordered outcomes. A physical device need not be fair; fairness is a model assumption that must be stated. Probability describes uncertainty under a specified model, not a guarantee about the next trial.",
+        "hi": "यादृच्छिक प्रयोग (Random experiment) में संभावित परिणाम ज्ञात होते हैं, लेकिन किसी विशेष प्रयास का परिणाम निश्चित रूप से नहीं बता सकते। सिक्का उछालना और पासा फेंकना परिचित आदर्श उदाहरण हैं। प्रयोग की शर्त साफ होनी चाहिए। एक बार सिक्का उछालना, 2 क्रमित बार उछालना तथा चित आने तक उछालना अलग प्रयोग हैं। परिणाम (Outcome) एक पूरी संभव स्थिति है, केवल कई स्थितियों की साझा विशेषता नहीं। 2 उछालों में HT और TH अलग हैं, क्योंकि क्रम अलग है। किसी वास्तविक सिक्के या पासे को अपने-आप निष्पक्ष न मानें। निष्पक्षता मॉडल की शर्त है, जिसका औचित्य या स्पष्ट कथन चाहिए। प्रायिकता अगले प्रयास की गारंटी नहीं देती, अनिश्चितता का माप देती है। प्रयोग लिखने के बाद देखें कि परिणाम परस्पर अलग हैं और सभी संभावनाएँ शामिल हैं। इससे आगे प्रतिदर्श समष्टि तथा घटना बनाने में गिनती की गलती कम होती है। परिणाम के लिए H,T जैसे चिह्न उपयोग करने पर उनका अर्थ पहले बताएँ।"
+      },
+      "formula": "Experiment → possible complete outcomes",
+      "question": {
+        "en": "Are HT and TH the same ordered two-toss outcome?",
+        "hi": "क्या HT और TH समान क्रमित 2 उछाल परिणाम हैं?"
+      },
+      "answer": {
+        "en": "No; the first and second toss results differ.",
+        "hi": "नहीं; पहले और दूसरे उछाल के परिणाम अलग हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Sample spaces",
+        "hi": "प्रतिदर्श समष्टि"
+      },
+      "body": {
+        "en": "The sample space S is the set of all possible outcomes of an experiment. For one die S={1,2,3,4,5,6}. For two distinguishable dice, use ordered pairs (i,j), giving 36 outcomes. Their sums are not 11 equally likely outcomes: some sums occur in many pairs. A tree diagram helps build multi-stage sample spaces without missing branches. The multiplication principle counts outcomes when the number of choices at each stage is known. A sample space can be finite or infinite, but the simple favourable-over-total formula requires a finite equally likely space. Start with a consistent elementary outcome description.",
+        "hi": "प्रतिदर्श समष्टि (Sample space) S प्रयोग के सभी संभावित परिणामों का समुच्चय है। एक पासे में S={1,2,3,4,5,6} है। 2 अलग पहचाने जा सकने वाले पासों में परिणाम क्रमित युग्म (i,j) होंगे। पहले के 6 और दूसरे के 6 विकल्प मिलकर 36 परिणाम देते हैं। केवल योग 2 से 12 को लिखकर 11 समान संभावित परिणाम मानना गलत है। योग 7 कई युग्मों से आता है, जबकि योग 2 केवल (1,1) से। चरणबद्ध प्रयोग में वृक्ष आरेख (Tree diagram) हर शाखा गिनने में मदद करता है। गुणन सिद्धांत चरणों की विकल्प संख्या गुणा करता है। लेकिन शाखाओं की प्रायिकताएँ समान हैं या नहीं, अलग जाँचें। समष्टि परिमित या अनंत हो सकती है; अनुकूल भाग कुल वाला साधारण सूत्र परिमित समान संभावित परिणामों के लिए है। एक समाधान में परिणाम की परिभाषा बीच में न बदलें। क्रमित युग्म से शुरू किया हो तो घटना भी उन्हीं युग्मों का उपसमुच्चय बनाएँ।"
+      },
+      "formula": "Two distinguishable dice: |S|=6×6=36",
+      "question": {
+        "en": "Why are die sums not equally likely?",
+        "hi": "2 पासों के योग समान संभावित क्यों नहीं?"
+      },
+      "answer": {
+        "en": "Different sums correspond to different numbers of ordered pairs.",
+        "hi": "अलग योग अलग संख्या में क्रमित युग्मों से बनते हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Events as subsets",
+        "hi": "उपसमुच्चय के रूप में घटनाएँ"
+      },
+      "body": {
+        "en": "An event is a subset of S. It occurs when the observed outcome belongs to that subset. An elementary event contains one outcome, while a compound event contains more than one. The impossible event is the empty set and the sure event is S. For one die the event of an even result is {2,4,6}. The event “at least one” differs from “exactly one”; write complete outcomes to avoid ambiguity. Two events are equal only when they contain the same outcomes. A verbal description should be converted into a subset before calculating probability, especially in experiments involving multiple objects or stages.",
+        "hi": "घटना (Event) प्रतिदर्श समष्टि S का उपसमुच्चय है। देखा परिणाम उस उपसमुच्चय में हो तो घटना घटती है। प्राथमिक घटना में 1 परिणाम और संयुक्त घटना में एक से अधिक परिणाम होते हैं। असंभव घटना रिक्त समुच्चय ∅ तथा निश्चित घटना पूरी S है। एक पासे में सम संख्या की घटना {2,4,6} है। कम-से-कम 1 और ठीक 1 अलग शर्तें हैं। 2 उछालों में कम-से-कम 1 चित की घटना {HH,HT,TH}, जबकि ठीक 1 चित {HT,TH} है। शब्दों को बिना सूची बनाए पढ़ने से HH गलती से शामिल या बाहर हो सकता है। 2 घटनाएँ तभी समान हैं जब उनके सभी परिणाम समान हों, केवल परिणामों की संख्या बराबर होना पर्याप्त नहीं। पहले शर्त को उपसमुच्चय में बदलें, फिर गिनें। एक ही परिणाम अलग वर्णनों में दोबारा आ सकता है; समुच्चय में उसे केवल एक बार गिनते हैं। यह विचार आगे संघ और प्रतिच्छेद के सूत्र का आधार है।"
+      },
+      "formula": "E⊆S; impossible=∅; sure=S",
+      "question": {
+        "en": "Write exactly one head in two tosses.",
+        "hi": "2 उछालों में ठीक 1 चित की घटना लिखें।"
+      },
+      "answer": {
+        "en": "{HT,TH}.",
+        "hi": "{HT,TH}।"
+      }
+    },
+    {
+      "title": {
+        "en": "Union, intersection and complement",
+        "hi": "संघ, प्रतिच्छेद और पूरक"
+      },
+      "body": {
+        "en": "The union A∪B means A or B or both; mathematical “or” is inclusive. The intersection A∩B means both events occur. The complement A′=S\\A means A does not occur. The difference A\\B means A occurs but B does not. A Venn diagram makes overlaps visible, but list outcomes as a check. De Morgan’s laws state (A∪B)′=A′∩B′ and (A∩B)′=A′∪B′. These identities translate “neither” and “not both” carefully. In everyday language “either” can be exclusive, so follow the exact event statement rather than assuming it excludes the overlap.",
+        "hi": "संघ (Union) A∪B का अर्थ A या B या दोनों है। गणित का सामान्य या समावेशी है, इसलिए साझा भाग भी शामिल होगा। प्रतिच्छेद (Intersection) A∩B में दोनों घटनाओं के साझा परिणाम हैं। पूरक (Complement) A′=S\\A में A न होने के सभी परिणाम हैं। अंतर A\\B में A होता है, लेकिन B नहीं। वेन आरेख (Venn diagram) साझा भाग दिखाता है; साथ में छोटे प्रयोग में परिणाम सूची से जाँचें। डी मॉर्गन नियम (A∪B)′=A′∩B′ तथा (A∩B)′=A′∪B′ हैं। न A न B को पूरक संघ से जोड़ें, जबकि दोनों नहीं का अर्थ कम-से-कम एक का न होना है। ये वाक्य समान नहीं हैं। एक पासे में A={2,4,6}, B={4,5,6} लें। साझा {4,6} और संघ {2,4,5,6} होगा। दोनों सूचियाँ जोड़कर साझा परिणाम दो बार गिनना गलत है। पूरे S के सापेक्ष पूरक लें; प्रयोग बदलने पर पूरक भी बदल सकता है।"
+      },
+      "formula": "A∪B: at least one; A∩B: both; A′=S\\A",
+      "question": {
+        "en": "If A={1,2}, B={2,3}, find A∩B.",
+        "hi": "A={1,2}, B={2,3} में A∩B।"
+      },
+      "answer": {
+        "en": "{2}.",
+        "hi": "{2}।"
+      }
+    },
+    {
+      "title": {
+        "en": "Mutually exclusive and exhaustive events",
+        "hi": "परस्पर अपवर्जी और निःशेष घटनाएँ"
+      },
+      "body": {
+        "en": "Mutually exclusive events cannot occur together, so their intersection is empty. Events are exhaustive if their union covers S. These are different properties. For a die, odd and even events are both exclusive and exhaustive. The events {1} and {2} are exclusive but not exhaustive. Events {1,2,3,4} and {4,5,6} are exhaustive but overlap at 4. Do not confuse mutual exclusivity with independence: independence is a separate probability relation, while exclusivity is a set relation. A partition consists of nonempty pairwise disjoint events whose union is S. Checking a partition prevents double-counting and missing outcomes.",
+        "hi": "परस्पर अपवर्जी (Mutually exclusive) घटनाएँ साथ नहीं घट सकतीं, इसलिए उनका प्रतिच्छेद रिक्त है। निःशेष (Exhaustive) घटनाओं का संघ पूरी S को ढकता है। ये 2 अलग गुण हैं। एक पासे में विषम और सम घटनाएँ दोनों अपवर्जी भी हैं और निःशेष भी। लेकिन {1} और {2} अपवर्जी हैं, निःशेष नहीं, क्योंकि 3,4,5,6 बचते हैं। {1,2,3,4} तथा {4,5,6} निःशेष हैं, लेकिन 4 साझा होने से अपवर्जी नहीं। इन उदाहरणों की सूची से दोनों शब्दों का अंतर समझें। अपवर्जन को स्वतंत्रता (Independence) न कहें। स्वतंत्रता अलग प्रायिकता संबंध है; 2 धनात्मक प्रायिकता वाली अपवर्जी घटनाएँ सामान्यतः स्वतंत्र नहीं हैं। समष्टि का विभाजन (Partition) गैररिक्त, जोड़े-जोड़े असाझा घटनाओं से बनता है जिनका संघ S है। अच्छे मामले-विभाजन में कोई परिणाम छूटे नहीं और कोई दो बार न गिने। जटिल गिनती से पहले यही 2 जाँच करना समाधान को व्यवस्थित रखता है।"
+      },
+      "formula": "Exclusive: A∩B=∅; exhaustive: A∪B=S",
+      "question": {
+        "en": "Can exclusive events fail to be exhaustive?",
+        "hi": "क्या अपवर्जी घटनाएँ निःशेष न हों?"
+      },
+      "answer": {
+        "en": "Yes; {1} and {2} in a die experiment.",
+        "hi": "हाँ; पासे में {1} और {2} उदाहरण हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Probability axioms and equal likelihood",
+        "hi": "प्रायिकता अभिगृहीत और समान संभावना"
+      },
+      "body": {
+        "en": "Probability assigns each event a number from 0 to 1, with P(S)=1 and additivity for disjoint events. It follows that P(∅)=0. For a finite space, elementary outcome probabilities sum to 1. If all n outcomes are equally likely, each has probability 1/n and P(E)=|E|/|S|. Equal likelihood must be justified, not inferred from a short outcome list. With a biased coin P(H) may differ from P(T), although their sum is still 1. A probability 0 or 1 should be interpreted within the model; the simple finite classroom models make these the impossible and sure events respectively.",
+        "hi": "प्रायिकता (Probability) हर घटना को 0 से 1 के बीच संख्या देती है। निश्चित घटना के लिए P(S)=1 और असाझा घटनाओं के संघ की प्रायिकता उनके योग के बराबर है। इससे P(∅)=0 निकलता है। परिमित समष्टि में सभी प्राथमिक परिणामों की प्रायिकताएँ जोड़ने पर 1 होंगी। यदि n परिणाम समान संभावित हैं, तो हर परिणाम 1/n और P(E)=|E|/|S| होगा। समान संभावना की शर्त अनिवार्य है। केवल 2 लिखे परिणाम होने से दोनों की प्रायिकता आधी नहीं हो जाती। पक्षपाती सिक्के में P(H) और P(T) अलग हो सकते हैं, फिर भी उनका योग 1 है। सीमित कक्षा मॉडल में रिक्त और पूर्ण घटना क्रमशः 0 तथा 1 देते हैं। अनुकूल परिणामों को गिनने से पहले यह जाँचें कि पूरा S समान संभावित प्राथमिक परिणामों में विभाजित है। सही भिन्न को 0 और 1 की सीमा में देखकर प्राथमिक जाँच करें। 6/4 जैसा परिणाम सामान्यतः अनुकूल या कुल परिणाम गिनने की गलती बताता है।"
+      },
+      "formula": "0≤P(E)≤1; P(S)=1; equally likely: P(E)=|E|/|S|",
+      "question": {
+        "en": "Can favourable/total be used for unequal outcomes?",
+        "hi": "असमान संभावित परिणामों में अनुकूल/कुल लगा सकते हैं?"
+      },
+      "answer": {
+        "en": "No; add the assigned outcome probabilities instead.",
+        "hi": "नहीं; दी हुई परिणाम प्रायिकताएँ जोड़नी होंगी।"
+      }
+    },
+    {
+      "title": {
+        "en": "Complement and addition rules",
+        "hi": "पूरक और योग नियम"
+      },
+      "body": {
+        "en": "Since E and E′ are disjoint and cover S, P(E′)=1−P(E). This often simplifies “at least one” questions by counting “none”. The general addition rule is P(A∪B)=P(A)+P(B)−P(A∩B). Subtract the overlap because adding the two probabilities counts it twice. For mutually exclusive events the intersection probability is zero and simple addition is valid. Check whether “or” includes both. For two fair distinguishable dice, the event of sum 7 contains six ordered pairs, whereas a sum of 12 contains one. Count events using the original sample space, not by treating all sums as equally likely.",
+        "hi": "घटना E और उसका पूरक E′ असाझा हैं और उनका संघ S है। इसलिए P(E′)=1−P(E) है। कम-से-कम 1 वाले प्रश्न में पहले कोई भी नहीं की प्रायिकता निकालना अक्सर सरल रहता है। सामान्य योग नियम P(A∪B)=P(A)+P(B)−P(A∩B) है। साझा भाग दोनों प्रायिकताओं में गिना गया था, इसलिए उसे एक बार घटाते हैं। अपवर्जी घटनाओं में साझा प्रायिकता 0 होने से सीधे जोड़ सकते हैं। बिना यह शर्त जाँचे योग लेना गलत है। उदाहरण पासे में सम या 4 से बड़ी संख्या के लिए A={2,4,6}, B={5,6}; साझा {6} है। अनुकूल परिणाम 3+2−1=4 हैं। उत्तर 4/6=2/3 होगा। दोनों पासों के प्रश्न में मूल 36 क्रमित परिणामों से गिनें। योग 7 के 6 परिणाम और योग 12 का 1 परिणाम है। केवल योगों की संख्या से अनुकूल/कुल लेना समान संभावना की शर्त तोड़ देता है।"
+      },
+      "formula": "P(E′)=1−P(E); P(A∪B)=P(A)+P(B)−P(A∩B)",
+      "question": {
+        "en": "If P(A)=0.4,P(B)=0.5,P(A∩B)=0.2, find union.",
+        "hi": "P(A)=0.4,P(B)=0.5,P(A∩B)=0.2 में संघ।"
+      },
+      "answer": {
+        "en": "0.4+0.5−0.2=0.7.",
+        "hi": "0.4+0.5−0.2=0.7।"
+      }
+    },
+    {
+      "title": {
+        "en": "Simulation and theoretical probability",
+        "hi": "अनुकरण और सैद्धांतिक प्रायिकता"
+      },
+      "body": {
+        "en": "A simulation repeats a modelled experiment and records relative frequency, observed successes divided by trial count. This is an estimate that varies from run to run. A fair coin does not have to give exactly half heads in every finite batch. With more trials, frequencies often stabilise near theoretical probabilities, but there is no guarantee of monotonic improvement after every new trial. Past independent tosses do not make a head “due”. Resetting a simulation begins a new batch; it does not change the assumed fairness. Always display both trial count and success count so the estimate is interpretable. A dotted theoretical line is a model benchmark, not a required observed value. On two fair dice the sum 7 has probability 6/36, but a run of 36 simulated trials need not contain exactly six sevens. Counts fluctuate; compare relative frequency with the model without forcing agreement.",
+        "hi": "अनुकरण (Simulation) में किसी मॉडल प्रयोग को बार-बार चलाकर सफल परिणामों की सापेक्ष आवृत्ति निकालते हैं। यह सफल प्रयासों की संख्या भाग कुल प्रयास है। यह अनुमान है और हर नई श्रृंखला में बदल सकता है। निष्पक्ष सिक्के से हर परिमित समूह में ठीक आधे चित आना जरूरी नहीं। अधिक प्रयासों में सापेक्ष आवृत्ति अक्सर सैद्धांतिक मान के पास स्थिर होती दिखती है, लेकिन हर नए प्रयास के बाद त्रुटि कम होगी, इसकी गारंटी नहीं। स्वतंत्र उछालों में पिछले कई पट आने से अगला चित अनिवार्य या अधिक बकाया नहीं होता। मॉडल निष्पक्ष है तो अगले उछाल की प्रायिकता फिर 1/2 है। reset केवल नई गिनती शुरू करता है, निष्पक्षता नहीं बदलता। परिणाम दिखाते समय कुल प्रयास और सफलता दोनों संख्या लिखें। 5 में 3 सफल और 500 में 300 सफल का अनुपात समान 0.6 है, लेकिन साक्ष्य का आकार अलग है। सैद्धांतिक रेखा तुलना का मानक है, हर देखी पट्टी का अनिवार्य स्तर नहीं। 2 निष्पक्ष पासों पर योग 7 की प्रायिकता 6/36 है। फिर भी 36 अनुकरण प्रयासों में ठीक 6 बार योग 7 आना जरूरी नहीं। गिनती बदलती है; मॉडल से तुलना करें, आँकड़ों को जबरन मॉडल के अनुसार न बदलें।"
+      },
+      "formula": "Experimental frequency=successes/trials",
+      "question": {
+        "en": "Must 10 fair tosses give exactly 5 heads?",
+        "hi": "क्या 10 निष्पक्ष उछाल में ठीक 5 चित जरूरी हैं?"
+      },
+      "answer": {
+        "en": "No; theoretical probability does not fix a finite batch count.",
+        "hi": "नहीं; सैद्धांतिक प्रायिकता परिमित समूह की संख्या तय नहीं करती।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find probability of an even number on a fair die.",
+        "hi": "निष्पक्ष पासे पर सम संख्या की प्रायिकता।"
+      },
+      "steps": [
+        {
+          "en": "S={1,2,3,4,5,6}, equally likely.",
+          "hi": "S={1,2,3,4,5,6}, समान संभावित।"
+        },
+        {
+          "en": "E={2,4,6} has 3 outcomes.",
+          "hi": "E={2,4,6} में 3 परिणाम।"
+        },
+        {
+          "en": "P(E)=3/6.",
+          "hi": "P(E)=3/6।"
+        }
+      ],
+      "answer": {
+        "en": "1/2",
+        "hi": "1/2"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find probability of exactly one head in two independent fair tosses.",
+        "hi": "2 स्वतंत्र निष्पक्ष उछाल में ठीक 1 चित की प्रायिकता।"
+      },
+      "steps": [
+        {
+          "en": "S={HH,HT,TH,TT}, all four equally likely.",
+          "hi": "S={HH,HT,TH,TT}, चारों समान संभावित।"
+        },
+        {
+          "en": "E={HT,TH}.",
+          "hi": "E={HT,TH}।"
+        },
+        {
+          "en": "P(E)=2/4.",
+          "hi": "P(E)=2/4।"
+        }
+      ],
+      "answer": {
+        "en": "1/2",
+        "hi": "1/2"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find probability of sum 7 on two independent fair dice.",
+        "hi": "2 स्वतंत्र निष्पक्ष पासों पर योग 7 की प्रायिकता।"
+      },
+      "steps": [
+        {
+          "en": "There are 36 equally likely ordered pairs.",
+          "hi": "36 समान संभावित क्रमित युग्म हैं।"
+        },
+        {
+          "en": "Favourable pairs: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1).",
+          "hi": "अनुकूल युग्म: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1)।"
+        },
+        {
+          "en": "P=6/36.",
+          "hi": "P=6/36।"
+        }
+      ],
+      "answer": {
+        "en": "1/6",
+        "hi": "1/6"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find probability of at least one head in 3 independent fair tosses.",
+        "hi": "3 स्वतंत्र निष्पक्ष उछाल में कम-से-कम 1 चित की प्रायिकता।"
+      },
+      "steps": [
+        {
+          "en": "Use complement: no head means TTT.",
+          "hi": "पूरक लें: कोई चित नहीं मतलब TTT।"
+        },
+        {
+          "en": "There are 8 equally likely outcomes; P(TTT)=1/8.",
+          "hi": "8 समान संभावित परिणाम; P(TTT)=1/8।"
+        },
+        {
+          "en": "P(at least one)=1−1/8.",
+          "hi": "P(कम-से-कम 1)=1−1/8।"
+        }
+      ],
+      "answer": {
+        "en": "7/8",
+        "hi": "7/8"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A fair die is rolled. Find P(even or greater than 4).",
+        "hi": "निष्पक्ष पासा फेंकें। P(सम या 4 से अधिक) निकालें।"
+      },
+      "steps": [
+        {
+          "en": "A={2,4,6}, B={5,6}; intersection={6}.",
+          "hi": "A={2,4,6}, B={5,6}; साझा={6}।"
+        },
+        {
+          "en": "Use addition rule with overlap subtraction.",
+          "hi": "साझा भाग घटाकर योग नियम लगाएँ।"
+        },
+        {
+          "en": "P=3/6+2/6−1/6=4/6.",
+          "hi": "P=3/6+2/6−1/6=4/6।"
+        },
+        {
+          "en": "Check union={2,4,5,6}.",
+          "hi": "संघ={2,4,5,6} से जाँचें।"
+        }
+      ],
+      "answer": {
+        "en": "2/3",
+        "hi": "2/3"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Sample space for one die has",
+        "hi": "एक पासे की समष्टि में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "6 outcomes",
+            "hi": "6 परिणाम"
+          },
+          "reason": {
+            "en": "The faces are 1 through 6.",
+            "hi": "फलक 1 से 6 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 outcomes",
+            "hi": "2 परिणाम"
+          },
+          "reason": {
+            "en": "That would fit a single coin model.",
+            "hi": "यह एक सिक्के के मॉडल से मेल खाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "36 outcomes",
+            "hi": "36 परिणाम"
+          },
+          "reason": {
+            "en": "That belongs to two distinguishable dice.",
+            "hi": "यह 2 अलग पासों की समष्टि है।"
+          }
+        },
+        {
+          "text": {
+            "en": "7 outcomes",
+            "hi": "7 परिणाम"
+          },
+          "reason": {
+            "en": "Zero is not a face on the standard die.",
+            "hi": "मानक पासे पर 0 नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For two distinguishable fair dice, P(sum=2) is",
+        "hi": "2 अलग निष्पक्ष पासों में P(योग=2)"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/36",
+            "hi": "1/36"
+          },
+          "reason": {
+            "en": "Only (1,1) among 36 pairs.",
+            "hi": "36 युग्मों में केवल (1,1)।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/11",
+            "hi": "1/11"
+          },
+          "reason": {
+            "en": "The 11 possible sums are not equally likely.",
+            "hi": "11 संभव योग समान संभावित नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/6",
+            "hi": "1/6"
+          },
+          "reason": {
+            "en": "That counts a one-die event.",
+            "hi": "यह एक पासे की घटना गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2/36",
+            "hi": "2/36"
+          },
+          "reason": {
+            "en": "The single pair is not counted twice.",
+            "hi": "एक युग्म को दो बार नहीं गिनते।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The complement probability is",
+        "hi": "पूरक प्रायिकता है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1−P(E)",
+            "hi": "1−P(E)"
+          },
+          "reason": {
+            "en": "Event and complement partition S.",
+            "hi": "घटना और पूरक S का विभाजन करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1+P(E)",
+            "hi": "1+P(E)"
+          },
+          "reason": {
+            "en": "This can exceed 1.",
+            "hi": "यह 1 से अधिक हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−P(E)",
+            "hi": "−P(E)"
+          },
+          "reason": {
+            "en": "Probabilities are nonnegative.",
+            "hi": "प्रायिकता गैरऋणात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(E)/2",
+            "hi": "P(E)/2"
+          },
+          "reason": {
+            "en": "No general half relation exists.",
+            "hi": "ऐसा आधा संबंध सामान्य नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Mutually exclusive events satisfy",
+        "hi": "परस्पर अपवर्जी घटनाओं में"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A∩B=∅",
+            "hi": "A∩B=∅"
+          },
+          "reason": {
+            "en": "They cannot occur together.",
+            "hi": "वे साथ नहीं घट सकतीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A∪B=∅",
+            "hi": "A∪B=∅"
+          },
+          "reason": {
+            "en": "Nonempty events can have nonempty union.",
+            "hi": "गैररिक्त घटनाओं का संघ गैररिक्त हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A=B always",
+            "hi": "हमेशा A=B"
+          },
+          "reason": {
+            "en": "Identical nonempty events overlap.",
+            "hi": "समान गैररिक्त घटनाएँ साझा हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A∪B=S always",
+            "hi": "हमेशा A∪B=S"
+          },
+          "reason": {
+            "en": "Exhaustiveness is a separate condition.",
+            "hi": "निःशेषता अलग शर्त है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Probability of exactly one head in two fair independent tosses is",
+        "hi": "2 स्वतंत्र निष्पक्ष उछाल में ठीक 1 चित"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          "reason": {
+            "en": "HT and TH give 2 of 4 outcomes.",
+            "hi": "HT और TH, 4 में 2 परिणाम देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/4",
+            "hi": "1/4"
+          },
+          "reason": {
+            "en": "This counts only one ordering.",
+            "hi": "यह केवल एक क्रम गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3/4",
+            "hi": "3/4"
+          },
+          "reason": {
+            "en": "This is at least one head.",
+            "hi": "यह कम-से-कम 1 चित की प्रायिकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "HH and TT do not satisfy the event.",
+            "hi": "HH और TT घटना को संतुष्ट नहीं करते।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The general union rule subtracts",
+        "hi": "सामान्य संघ नियम में घटाते हैं"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "P(A∩B)",
+            "hi": "P(A∩B)"
+          },
+          "reason": {
+            "en": "The overlap was counted twice.",
+            "hi": "साझा भाग 2 बार गिना गया था।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(A∪B)",
+            "hi": "P(A∪B)"
+          },
+          "reason": {
+            "en": "This is the unknown, not the correction term.",
+            "hi": "यह अज्ञात है, सुधार पद नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1 always",
+            "hi": "हमेशा 1"
+          },
+          "reason": {
+            "en": "Only the overlap should be removed.",
+            "hi": "केवल साझा भाग हटाना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(A)P(B) always",
+            "hi": "हमेशा P(A)P(B)"
+          },
+          "reason": {
+            "en": "A product for intersection needs additional independence assumptions.",
+            "hi": "प्रतिच्छेद को गुणनफल लिखने के लिए स्वतंत्रता की अतिरिक्त शर्त चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A probability can be",
+        "hi": "प्रायिकता हो सकती है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0.7",
+            "hi": "0.7"
+          },
+          "reason": {
+            "en": "It lies between 0 and 1.",
+            "hi": "यह 0 और 1 के बीच है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−0.2",
+            "hi": "−0.2"
+          },
+          "reason": {
+            "en": "Negative probabilities violate the axioms.",
+            "hi": "ऋणात्मक प्रायिकता अभिगृहीत के विरुद्ध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1.4",
+            "hi": "1.4"
+          },
+          "reason": {
+            "en": "This exceeds 1.",
+            "hi": "यह 1 से अधिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "This is larger than the maximum probability.",
+            "hi": "यह अधिकतम प्रायिकता से बड़ी है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "After 5 tails in independent fair tosses, P(next head) is",
+        "hi": "स्वतंत्र निष्पक्ष उछाल में 5 पट के बाद अगले चित की प्रायिकता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          "reason": {
+            "en": "Past outcomes do not change the fair next toss.",
+            "hi": "पुराने परिणाम अगले निष्पक्ष उछाल को नहीं बदलते।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "A head is not guaranteed or due.",
+            "hi": "चित अनिवार्य या बकाया नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "A previous run does not forbid heads.",
+            "hi": "पिछली श्रृंखला चित को रोकती नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "5/6",
+            "hi": "5/6"
+          },
+          "reason": {
+            "en": "The past count does not set this probability.",
+            "hi": "पिछली गिनती यह प्रायिकता तय नहीं करती।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An event with all sample-space outcomes is",
+        "hi": "सभी परिणामों वाली घटना"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Sure event",
+            "hi": "निश्चित घटना"
+          },
+          "reason": {
+            "en": "It equals S.",
+            "hi": "यह S के बराबर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Impossible event",
+            "hi": "असंभव घटना"
+          },
+          "reason": {
+            "en": "That is the empty set.",
+            "hi": "वह रिक्त समुच्चय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always elementary",
+            "hi": "हमेशा प्राथमिक"
+          },
+          "reason": {
+            "en": "An elementary event has one outcome.",
+            "hi": "प्राथमिक घटना में 1 परिणाम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Complement of S",
+            "hi": "S का पूरक"
+          },
+          "reason": {
+            "en": "The complement of S is empty.",
+            "hi": "S का पूरक रिक्त है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "30 successes in 50 trials gives relative frequency",
+        "hi": "50 प्रयास में 30 सफलता की सापेक्ष आवृत्ति"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0.6",
+            "hi": "0.6"
+          },
+          "reason": {
+            "en": "30/50=0.6.",
+            "hi": "30/50=0.6।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.4",
+            "hi": "0.4"
+          },
+          "reason": {
+            "en": "This is the failure frequency.",
+            "hi": "यह असफलता की आवृत्ति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "30",
+            "hi": "30"
+          },
+          "reason": {
+            "en": "This is the count, not the proportion.",
+            "hi": "यह गिनती है, अनुपात नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "5/3",
+            "hi": "5/3"
+          },
+          "reason": {
+            "en": "The ratio is reversed.",
+            "hi": "अनुपात उलटा है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define an event with a die example.",
+        "hi": "पासे के उदाहरण से घटना परिभाषित करें।"
+      },
+      "answer": {
+        "en": "An event is a subset of S; for example, getting a prime is {2,3,5}.",
+        "hi": "घटना S का उपसमुच्चय है; अभाज्य आने की घटना {2,3,5} है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish exclusive and exhaustive events.",
+        "hi": "अपवर्जी तथा निःशेष घटनाओं में अंतर।"
+      },
+      "answer": {
+        "en": "Exclusive events have empty intersection; exhaustive events have union S. Either property may hold without the other.",
+        "hi": "अपवर्जी घटनाओं का प्रतिच्छेद रिक्त है; निःशेष घटनाओं का संघ S है। एक गुण दूसरे के बिना हो सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find P(not 6) for a fair die.",
+        "hi": "निष्पक्ष पासे में P(6 नहीं) निकालें।"
+      },
+      "answer": {
+        "en": "1−1/6=5/6.",
+        "hi": "1−1/6=5/6।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find P(A∪B) if P(A)=0.3,P(B)=0.6,P(A∩B)=0.1.",
+        "hi": "P(A)=0.3,P(B)=0.6,P(A∩B)=0.1 से संघ।"
+      },
+      "answer": {
+        "en": "0.3+0.6−0.1=0.8.",
+        "hi": "0.3+0.6−0.1=0.8।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can a fair simulation show 7 heads in 10 tosses?",
+        "hi": "निष्पक्ष अनुकरण में 10 उछालों में 7 चित क्यों संभव हैं?"
+      },
+      "answer": {
+        "en": "Probability is a modelled long-run proportion, not an exact finite-batch requirement; different random runs fluctuate.",
+        "hi": "प्रायिकता दीर्घकालीन मॉडल अनुपात है, हर सीमित समूह की निश्चित गिनती नहीं; यादृच्छिक श्रृंखलाएँ बदलती हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "List outcomes for at least one head in two tosses.",
+        "hi": "2 उछाल में कम-से-कम 1 चित के परिणाम लिखें।"
+      },
+      "answer": {
+        "en": "{HH,HT,TH}; its probability is 3/4 for independent fair tosses.",
+        "hi": "{HH,HT,TH}; स्वतंत्र निष्पक्ष उछाल में प्रायिकता 3/4 है।"
+      }
+    }
+  ],
+  "revision": [
+    {
+      "en": "An event is a subset of the sample space.",
+      "hi": "घटना प्रतिदर्श समष्टि का उपसमुच्चय है।"
+    },
+    {
+      "en": "Equal-likelihood counting needs justification.",
+      "hi": "समान संभावना वाली गिनती का औचित्य चाहिए।"
+    },
+    {
+      "en": "Complements have probability 1−P(E).",
+      "hi": "पूरक की प्रायिकता 1−P(E) है।"
+    },
+    {
+      "en": "Union addition subtracts the overlap.",
+      "hi": "संघ में साझा भाग एक बार घटता है।"
+    },
+    {
+      "en": "Finite simulation frequencies fluctuate.",
+      "hi": "परिमित अनुकरण आवृत्तियाँ बदलती रहती हैं।"
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not treat die sums as equally likely, confuse exactly one with at least one, add overlapping probabilities without correction, or expect a head to be due after tails.",
+    "hi": "पासों के योग समान संभावित न मानें; ठीक 1 और कम-से-कम 1 न मिलाएँ; साझा प्रायिकता बिना घटाए न जोड़ें; पट के बाद चित को बकाया न मानें।"
+  },
+  "conceptMap": {
+    "en": "Random experiment → sample space → events → set operations → probability axioms → complement / addition → simulation comparison.",
+    "hi": "यादृच्छिक प्रयोग → प्रतिदर्श समष्टि → घटनाएँ → समुच्चय संक्रियाएँ → प्रायिकता अभिगृहीत → पूरक / योग → अनुकरण तुलना।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics, Class XI",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh114.pdf"
+    }
+  ]
+}

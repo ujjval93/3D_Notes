@@ -1,0 +1,1477 @@
+{
+  "number": 5,
+  "id": "chemistry11-05",
+  "title": {
+    "en": "Thermodynamics",
+    "hi": "ऊष्मागतिकी"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "chem11-05-1",
+      "title": {
+        "en": "Chemistry first law",
+        "hi": "रसायन का प्रथम नियम"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 12
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Volume increase",
+            "hi": "आयतन वृद्धि"
+          },
+          "min": 0,
+          "max": 5,
+          "step": 0.5,
+          "initial": 2,
+          "unit": "L"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Apply chemical work signs to an expanding system.",
+        "hi": "प्रसार करते निकाय पर रसायन के कार्य चिह्न लगाएँ।"
+      },
+      "observe": {
+        "en": "Heat input is 500 J and external pressure100 kPa; change ΔV in litres.",
+        "hi": "ऊष्मा निवेश 500 J तथा बाहरी दाब 100 kPa है; ΔV को L में बदलें।"
+      },
+      "modelNote": {
+        "en": "Only pressure–volume work at constant external pressure is included. This is a bookkeeping model, not a gas equation-of-state experiment.",
+        "hi": "केवल नियत बाहरी दाब का pV कार्य शामिल है। यह ऊर्जा लेखा मॉडल है, गैस अवस्था समीकरण का प्रयोग नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "w=−100ΔV J and ΔU=500+w, with ΔV entered in L.",
+          "hi": "ΔV को L में रखने पर w=−100ΔV J और ΔU=500+w है।"
+        }
+      },
+      "realLife": {
+        "en": "A gas pushing a piston transfers some supplied energy as work.",
+        "hi": "पिस्टन धकेलने वाली गैस मिली ऊर्जा का कुछ भाग कार्य में देती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At ΔV=2 L, what is ΔU?",
+          "hi": "ΔV=2 L पर ΔU क्या है?"
+        },
+        "options": [
+          {
+            "en": "700 J",
+            "hi": "700 J"
+          },
+          {
+            "en": "300 J",
+            "hi": "300 J"
+          },
+          {
+            "en": "−300 J",
+            "hi": "−300 J"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "w=−200 J, so500−200=300 J.",
+          "hi": "w=−200 J; इसलिए 500−200=300 J।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-05-1-low",
+          "label": {
+            "en": "Explore the lowest setting 0 L.",
+            "hi": "सबसे निचली सेटिंग 0 L देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "chem11-05-1-high",
+          "label": {
+            "en": "Compare the highest setting 5 L.",
+            "hi": "सबसे ऊपरी सेटिंग 5 L से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4.95
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2.5
+          },
+          "text": {
+            "en": "Heat input is 500 J and external pressure100 kPa; change ΔV in litres.",
+            "hi": "ऊष्मा निवेश 500 J तथा बाहरी दाब 100 kPa है; ΔV को L में बदलें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 2.5
+          },
+          "text": {
+            "en": "w=−100ΔV J and ΔU=500+w, with ΔV entered in L.",
+            "hi": "ΔV को L में रखने पर w=−100ΔV J और ΔU=500+w है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-05-2",
+      "title": {
+        "en": "Hess law",
+        "hi": "हेस का नियम"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 13
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Second path step enthalpy",
+            "hi": "पथ के दूसरे चरण की एन्थैल्पी"
+          },
+          "min": -150,
+          "max": 50,
+          "step": 25,
+          "initial": -50,
+          "unit": "kJ/mol"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Add enthalpy changes along a Hess path.",
+        "hi": "हेस पथ के एन्थैल्पी परिवर्तन जोड़ें।"
+      },
+      "observe": {
+        "en": "The first step remains −100 kJ/mol; vary the second step.",
+        "hi": "पहला चरण −100 kJ/mol स्थिर है; दूसरा चरण बदलें।"
+      },
+      "modelNote": {
+        "en": "Step values are illustrative and use the same reaction-extent basis. Actual thermochemical equations must cancel intermediates.",
+        "hi": "चरण मान उदाहरण के हैं और समान अभिक्रिया मात्रा आधार पर हैं। वास्तविक समीकरणों में मध्यवर्ती स्पीशीज कटनी चाहिए।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Overall enthalpy is the signed sum−100+ΔH2.",
+          "hi": "कुल एन्थैल्पी चिह्न सहित योग −100+ΔH2 है।"
+        }
+      },
+      "realLife": {
+        "en": "Formation enthalpy data allow an indirect reaction-energy calculation.",
+        "hi": "निर्माण एन्थैल्पी आँकड़े अप्रत्यक्ष अभिक्रिया ऊर्जा निकालने देते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "For second step −50 kJ/mol, the total is?",
+          "hi": "दूसरा चरण −50 kJ/mol हो तो कुल क्या है?"
+        },
+        "options": [
+          {
+            "en": "−150 kJ/mol",
+            "hi": "−150 kJ/mol"
+          },
+          {
+            "en": "−50 kJ/mol",
+            "hi": "−50 kJ/mol"
+          },
+          {
+            "en": "150 kJ/mol",
+            "hi": "150 kJ/mol"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Add −100 and −50 without dropping their signs.",
+          "hi": "−100 और −50 चिह्न सहित जोड़ें।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-05-2-low",
+          "label": {
+            "en": "Explore the lowest setting -150 kJ/mol.",
+            "hi": "सबसे निचली सेटिंग -150 kJ/mol देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": -150
+          }
+        },
+        {
+          "id": "chem11-05-2-high",
+          "label": {
+            "en": "Compare the highest setting 50 kJ/mol.",
+            "hi": "सबसे ऊपरी सेटिंग 50 kJ/mol से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 47.5
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": -50.0
+          },
+          "text": {
+            "en": "The first step remains −100 kJ/mol; vary the second step.",
+            "hi": "पहला चरण −100 kJ/mol स्थिर है; दूसरा चरण बदलें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": -50.0
+          },
+          "text": {
+            "en": "Overall enthalpy is the signed sum−100+ΔH2.",
+            "hi": "कुल एन्थैल्पी चिह्न सहित योग −100+ΔH2 है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-05-3",
+      "title": {
+        "en": "Gibbs energy",
+        "hi": "गिब्स ऊर्जा"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 14
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Temperature",
+            "hi": "ताप"
+          },
+          "min": 200,
+          "max": 800,
+          "step": 50,
+          "initial": 400,
+          "unit": "K"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Compare enthalpy and entropy contributions to Gibbs energy.",
+        "hi": "गिब्स ऊर्जा में एन्थैल्पी और एंट्रॉपी के योगदान की तुलना करें।"
+      },
+      "observe": {
+        "en": "ΔH=40 kJ/mol and ΔS=100 J/(mol K) are fixed; use kelvin.",
+        "hi": "ΔH=40 kJ/mol तथा ΔS=100 J/(mol K) स्थिर हैं; केल्विन लें।"
+      },
+      "modelNote": {
+        "en": "The parameters are assumed constant over the displayed interval. A Gibbs criterion is not a reaction-rate prediction.",
+        "hi": "दिखाए अंतराल में प्राचल स्थिर माने हैं। गिब्स कसौटी अभिक्रिया चाल की भविष्यवाणी नहीं है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "ΔG=40−0.100T kJ/mol; it changes sign at 400 K.",
+          "hi": "ΔG=40−0.100T kJ/mol; 400 K पर चिह्न बदलता है।"
+        }
+      },
+      "realLife": {
+        "en": "Temperature can change whether a process is thermodynamically favourable.",
+        "hi": "ताप बदलने से प्रक्रिया की ऊष्मागतिक अनुकूलता बदल सकती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At600 K the model ΔG is?",
+          "hi": "600 K पर मॉडल का ΔG क्या है?"
+        },
+        "options": [
+          {
+            "en": "20 kJ/mol",
+            "hi": "20 kJ/mol"
+          },
+          {
+            "en": "0",
+            "hi": "0"
+          },
+          {
+            "en": "−20 kJ/mol",
+            "hi": "−20 kJ/mol"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "40−0.100×600=−20 kJ/mol.",
+          "hi": "40−0.100×600=−20 kJ/mol।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-05-3-low",
+          "label": {
+            "en": "Explore the lowest setting 200 K.",
+            "hi": "सबसे निचली सेटिंग 200 K देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 200
+          }
+        },
+        {
+          "id": "chem11-05-3-high",
+          "label": {
+            "en": "Compare the highest setting 800 K.",
+            "hi": "सबसे ऊपरी सेटिंग 800 K से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 795.0
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 500.0
+          },
+          "text": {
+            "en": "ΔH=40 kJ/mol and ΔS=100 J/(mol K) are fixed; use kelvin.",
+            "hi": "ΔH=40 kJ/mol तथा ΔS=100 J/(mol K) स्थिर हैं; केल्विन लें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 500.0
+          },
+          "text": {
+            "en": "ΔG=40−0.100T kJ/mol; it changes sign at 400 K.",
+            "hi": "ΔG=40−0.100T kJ/mol; 400 K पर चिह्न बदलता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    }
+  ],
+  "goal": {
+    "en": "Use energy bookkeeping, enthalpy, entropy and Gibbs energy with clear chemical sign conventions.",
+    "hi": "स्पष्ट रासायनिक चिह्न परंपरा से ऊर्जा लेखा, एन्थैल्पी, एंट्रॉपी और गिब्स ऊर्जा समझें।"
+  },
+  "editionBasis": {
+    "en": "Original study notes aligned to NCERT Chemistry Class 11 and UP Board 2026–27. Use prescribed textbooks and supervised school practicals alongside.",
+    "hi": "NCERT कक्षा 11 रसायन विज्ञान तथा यूपी बोर्ड 2026–27 के अनुरूप मौलिक नोट्स। निर्धारित पुस्तक और विद्यालय के पर्यवेक्षित प्रयोग भी करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry Part I, Chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kech105.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Chemistry2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class 11/152-Chemistry-Class-11.pdf"
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "System, surroundings and boundary",
+        "hi": "निकाय, परिवेश और सीमा"
+      },
+      "paragraphs": [
+        {
+          "en": "Thermodynamics studies energy changes using the macroscopic state of a system. Choose the system before writing an equation: it may be the reacting chemicals in a vessel, a gas inside a cylinder or a specified quantity of solution. Everything outside the chosen system is the surroundings, and the boundary separates them. An open system can exchange matter and energy. A closed system exchanges energy but not matter, whereas an isolated system exchanges neither. A closed container is not automatically isolated because heat may pass through its walls. State variables such as temperature, pressure, volume and composition describe equilibrium states. The same state can be reached by different routes. Thermodynamics compares suitable states and energy transfers; it does not by itself tell how fast a reaction proceeds or what microscopic mechanism produces it. In a chemical question, identify the boundary, allowed transfers and initial and final conditions explicitly before calculating.",
+          "hi": "ऊष्मागतिकी (Thermodynamics) में निकाय की स्थूल अवस्था के आधार पर ऊर्जा परिवर्तन पढ़ते हैं। समीकरण लिखने से पहले निकाय (System) चुनें। वह पात्र के अभिक्रियाशील रसायन, सिलिंडर के अंदर की गैस या विलयन की निश्चित मात्रा हो सकता है। चुने निकाय के बाहर सब कुछ परिवेश (Surroundings) है और दोनों के बीच सीमा होती है। खुला निकाय पदार्थ तथा ऊर्जा दोनों का आदान-प्रदान करता है। बंद निकाय ऊर्जा ले या दे सकता है, लेकिन पदार्थ नहीं। एकांतीय निकाय में न पदार्थ और न ऊर्जा का आदान-प्रदान होता है। केवल ढक्कन लगा होने से पात्र एकांतीय नहीं हो जाता, क्योंकि उसकी दीवार से ऊष्मा जा सकती है। ताप, दाब, आयतन और संघटन जैसे अवस्था चर साम्य अवस्थाओं का वर्णन करते हैं। एक ही अंतिम अवस्था अलग मार्गों से मिल सकती है। ऊष्मागतिकी उपयुक्त अवस्थाओं और ऊर्जा हस्तांतरण की तुलना करती है; केवल इससे अभिक्रिया की चाल या सूक्ष्म क्रियाविधि नहीं पता चलती। इसलिए प्रश्न में सीमा, संभव आदान-प्रदान तथा प्रारंभिक और अंतिम दशाएँ स्पष्ट लिखना अच्छा आरंभ है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: No; it can exchange heat through its wall even without matter exchange.",
+          "hi": "जाँच बिंदु: नहीं; पदार्थ का आदान-प्रदान न होने पर भी दीवार से ऊष्मा जा सकती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is a sealed metal vessel necessarily isolated?",
+          "hi": "क्या बंद धातु पात्र आवश्यक रूप से एकांतीय है?"
+        },
+        "answer": {
+          "en": "No; it can exchange heat through its wall even without matter exchange.",
+          "hi": "नहीं; पदार्थ का आदान-प्रदान न होने पर भी दीवार से ऊष्मा जा सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "State functions, heat and work",
+        "hi": "अवस्था फलन, ऊष्मा और कार्य"
+      },
+      "paragraphs": [
+        {
+          "en": "Internal energy U is a state function: its change depends only on the initial and final states, not on the route between them. Heat q and work w are modes of energy transfer across the boundary, not substances stored inside the system. Their individual amounts depend on the process. A system therefore has internal energy, but saying that it contains a particular amount of heat is misleading. In the chemistry convention, heat supplied to the system is positive and heat released is negative. Work done on the system is positive; work done by the system is negative. For expansion against a constant external pressure, w=−pextΔV. Expansion has positive ΔV and negative work. Compression reverses these signs. Use external pressure in this expression and consistent units: Pa multiplied by cubic metres gives joules. A litre is 0.001 cubic metre. A sign should describe the chosen system, not the observer’s feeling that a process uses energy.",
+          "hi": "आंतरिक ऊर्जा U अवस्था फलन (State function) है। उसका परिवर्तन केवल प्रारंभिक और अंतिम अवस्थाओं पर निर्भर है, उनके बीच के मार्ग पर नहीं। ऊष्मा q और कार्य w सीमा के आर-पार ऊर्जा हस्तांतरण के तरीके हैं, निकाय में रखे पदार्थ नहीं। उनकी अलग-अलग मात्राएँ प्रक्रिया पर निर्भर होती हैं। इसलिए निकाय की आंतरिक ऊर्जा कहना उचित है, पर उसमें निश्चित ऊष्मा भरी है कहना भ्रामक हो सकता है। रसायन की चिह्न परंपरा में निकाय को दी गई ऊष्मा धन और उससे निकली ऊष्मा ऋण होती है। निकाय पर किया कार्य धन तथा निकाय द्वारा किया कार्य ऋण होता है। नियत बाहरी दाब के विरुद्ध प्रसार के लिए w=−pextΔV है। प्रसार में ΔV धन होने से कार्य ऋण आता है। संपीड़न में ये चिह्न बदलते हैं। इस सूत्र में बाहरी दाब लें और इकाइयाँ समान रखें। Pa तथा m³ का गुणन J होता है; 1 L को 0.001 m³ में बदलें। चिह्न चुने निकाय के सापेक्ष लिखा जाता है, केवल इस धारणा से नहीं कि प्रक्रिया में ऊर्जा खर्च हुई है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: The system transfers energy to the surroundings by doing work.",
+          "hi": "जाँच बिंदु: निकाय कार्य करके परिवेश को ऊर्जा देता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is expansion work negative in the chemistry convention?",
+          "hi": "रसायन परंपरा में प्रसार कार्य ऋण क्यों है?"
+        },
+        "answer": {
+          "en": "The system transfers energy to the surroundings by doing work.",
+          "hi": "निकाय कार्य करके परिवेश को ऊर्जा देता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "First law and internal-energy changes",
+        "hi": "प्रथम नियम और आंतरिक ऊर्जा परिवर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "The first law is an energy-conservation statement. With the chemical convention, ΔU=q+w. If a system absorbs 500 J of heat and does 200 J of work on its surroundings, q is +500 J and w is −200 J, giving ΔU=+300 J. This result does not mean that heat and work are state functions; different routes can give different q and w while preserving their sum for the same change of state. If there is no heat exchange, the process is adiabatic and q=0. Adiabatic does not mean that temperature is constant. If no work occurs, ΔU=q under the assumptions of the problem. At constant volume, expansion work is zero, and qv=ΔU when other work modes are absent. Keep the amount of material and units clear. Energy change in joules for a specified sample is different from a molar energy change in joules per mole.",
+          "hi": "ऊष्मागतिकी का प्रथम नियम ऊर्जा संरक्षण का कथन है। रसायन की परंपरा में ΔU=q+w लिखा जाता है। यदि निकाय 500 J ऊष्मा लेता है और परिवेश पर 200 J कार्य करता है, तो q=+500 J तथा w=−200 J होंगे। इसलिए ΔU=+300 J मिलता है। इसका अर्थ यह नहीं कि ऊष्मा और कार्य अवस्था फलन हैं। एक ही अवस्था परिवर्तन के लिए अलग मार्गों में q और w अलग हो सकते हैं, लेकिन उनका योग समान रहता है। ऊष्मा आदान-प्रदान न हो तो प्रक्रिया रुद्धोष्म (Adiabatic) है और q=0 है। रुद्धोष्म का अर्थ नियत ताप नहीं है; कार्य के कारण ताप बदल सकता है। यदि कोई कार्य न हो तो प्रश्न की मान्यताओं में ΔU=q होगा। नियत आयतन पर प्रसार कार्य शून्य होता है। अन्य कार्य विधियाँ अनुपस्थित हों तो qv=ΔU लिख सकते हैं। पदार्थ की मात्रा और इकाई भी स्पष्ट रखें। निश्चित नमूने की J में ऊर्जा और प्रति मोल J/mol में ऊर्जा अलग राशियाँ हैं। चिह्न सहित समीकरण में मान रखने से गलती कम होती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: ΔU=+300 J.",
+          "hi": "जाँच बिंदु: ΔU=+300 J।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For q=+500 J and w=−200 J, what is ΔU?",
+          "hi": "q=+500 J तथा w=−200 J पर ΔU क्या है?"
+        },
+        "answer": {
+          "en": "ΔU=+300 J.",
+          "hi": "ΔU=+300 J।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Enthalpy and heat capacity",
+        "hi": "एन्थैल्पी और ऊष्मा धारिता"
+      },
+      "paragraphs": [
+        {
+          "en": "Enthalpy is defined by H=U+pV and is a state function. For a constant-pressure process with only pressure–volume work, the heat supplied is qp=ΔH. This useful relation must not be applied without checking its conditions. An exothermic process has negative enthalpy change for the system; an endothermic process has positive enthalpy change. Heat capacity relates heat transfer to temperature change for a specified process and amount of material. Specific heat capacity refers to unit mass, and molar heat capacity refers to a mole. The familiar q=mcΔT applies when c is treated as constant and no phase change occurs over the interval. During a phase transition, energy can be transferred without the corresponding temperature rise, so latent heat must be considered separately. For ideal-gas reactions at a common temperature, ΔH=ΔU+ΔngRT, where Δng counts gaseous product moles minus gaseous reactant moles with the equation’s stoichiometric coefficients.",
+          "hi": "एन्थैल्पी (Enthalpy) की परिभाषा H=U+pV है और यह अवस्था फलन है। नियत दाब पर केवल दाब–आयतन कार्य वाली प्रक्रिया में दी गई ऊष्मा qp=ΔH होती है। यह उपयोगी संबंध है, लेकिन उसकी शर्तें जाँचे बिना हर प्रक्रिया में नहीं लगाना चाहिए। निकाय के लिए ऊष्माक्षेपी परिवर्तन में ΔH ऋण तथा ऊष्माशोषी परिवर्तन में धन होता है। ऊष्मा धारिता निश्चित प्रक्रिया और पदार्थ मात्रा के लिए ऊष्मा तथा ताप परिवर्तन का संबंध बताती है। विशिष्ट ऊष्मा धारिता इकाई द्रव्यमान और मोलर ऊष्मा धारिता 1 mol के लिए होती है। q=mcΔT तब उपयोगी है जब c को अंतराल में स्थिर माना जाए तथा अवस्था परिवर्तन न हो। अवस्था संक्रमण में ऊर्जा मिलने पर भी ताप समान रह सकता है; तब गुप्त ऊष्मा अलग शामिल करनी होगी। समान ताप पर आदर्श गैस अभिक्रिया के लिए ΔH=ΔU+ΔngRT है। यहाँ Δng संतुलित समीकरण में गैसीय उत्पादों के मोल का योग घटा गैसीय अभिकारकों के मोल है। ठोस और द्रव को इस गैसीय गिनती में न जोड़ें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: qv equals ΔU.",
+          "hi": "जाँच बिंदु: qv, ΔU के बराबर है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which heat equals ΔU under constant-volume conditions with no other work?",
+          "hi": "अन्य कार्य न होने पर नियत आयतन की कौन-सी ऊष्मा ΔU के बराबर है?"
+        },
+        "answer": {
+          "en": "qv equals ΔU.",
+          "hi": "qv, ΔU के बराबर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Thermochemical equations and Hess law",
+        "hi": "ऊष्मारासायनिक समीकरण और हेस नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "A thermochemical equation specifies the chemical change, physical states and an associated enthalpy change. The enthalpy value belongs to the reaction as written. Reversing the equation reverses the sign of ΔH, and multiplying every coefficient by a number multiplies ΔH by that number. Standard reaction enthalpy refers to reactants and products in their standard states at the stated temperature; standard does not automatically mean 0°C. Hess law follows because enthalpy is a state function. If a reaction is obtained by adding several steps, its enthalpy change is the sum of the step enthalpies. Draw or write the routes, make intermediate species cancel and then add signed quantities. In the screen model, the first step is −100 kJ/mol and the second is adjustable. A second step of −50 kJ/mol gives −150 kJ/mol overall. Path independence does not mean that every possible step has the same enthalpy; it concerns the total between fixed end states.",
+          "hi": "ऊष्मारासायनिक समीकरण (Thermochemical equation) में रासायनिक परिवर्तन, पदार्थों की भौतिक अवस्थाएँ तथा संबंधित एन्थैल्पी परिवर्तन दिए जाते हैं। ΔH का मान लिखी हुई अभिक्रिया के लिए होता है। समीकरण उलटने पर उसका चिह्न उलटता है। सभी गुणांकों को किसी संख्या से गुणा करने पर ΔH भी उसी संख्या से गुणा होगा। मानक अभिक्रिया एन्थैल्पी में अभिकारक और उत्पाद दिए ताप पर मानक अवस्थाओं में होते हैं। मानक का अर्थ अपने आप 0°C नहीं है। एन्थैल्पी अवस्था फलन होने के कारण हेस नियम (Hess law) लागू होता है। यदि कई चरण जोड़कर वांछित अभिक्रिया मिलती है, तो उनकी एन्थैल्पियाँ चिह्न सहित जोड़ते हैं। पहले मार्ग या समीकरण लिखें, मध्यवर्ती स्पीशीज को काटें और फिर राशियाँ जोड़ें। स्क्रीन मॉडल में पहला चरण −100 kJ/mol है और दूसरा बदला जा सकता है। दूसरा चरण −50 kJ/mol होने पर कुल −150 kJ/mol होगा। मार्ग स्वतंत्रता का अर्थ प्रत्येक चरण की एन्थैल्पी समान होना नहीं है; यह निश्चित प्रारंभिक और अंतिम अवस्थाओं के बीच के कुल परिवर्तन की बात है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: Its sign reverses.",
+          "hi": "जाँच बिंदु: उसका चिह्न उलट जाता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If a reaction equation is reversed, what happens to ΔH?",
+          "hi": "अभिक्रिया समीकरण उलटने पर ΔH का क्या होता है?"
+        },
+        "answer": {
+          "en": "Its sign reverses.",
+          "hi": "उसका चिह्न उलट जाता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Formation and bond enthalpies",
+        "hi": "निर्माण और आबंध एन्थैल्पियाँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Standard enthalpy of formation refers to forming one mole of a substance from its constituent elements in their reference standard states. An element in its reference standard state has zero standard formation enthalpy by convention; this is not a claim that its internal energy is absolutely zero. Reaction enthalpy can be calculated as the stoichiometric sum of product formation enthalpies minus the corresponding reactant sum. Check both coefficients and physical states. Bond enthalpy provides another route for estimating gas-phase reaction enthalpies: energy is required to break bonds, while bond formation releases energy. The estimate is the sum of bond enthalpies for bonds broken minus the sum for bonds formed. Mean bond enthalpies average different molecular environments, so this route is often approximate. A bond breaking term should not be assigned a negative sign merely because the overall reaction is exothermic. Separate the hypothetical bond-breaking and bond-forming stages before combining them.",
+          "hi": "मानक निर्माण एन्थैल्पी (Standard enthalpy of formation) किसी पदार्थ के 1 mol को उसके संघटक तत्वों की संदर्भ मानक अवस्थाओं से बनाने का परिवर्तन है। संदर्भ मानक अवस्था वाले तत्व की मानक निर्माण एन्थैल्पी परंपरा से शून्य ली जाती है। इसका अर्थ उसकी आंतरिक ऊर्जा बिल्कुल शून्य होना नहीं है। अभिक्रिया एन्थैल्पी के लिए उत्पादों की निर्माण एन्थैल्पियों का गुणांक सहित योग लेकर अभिकारकों का वैसा ही योग घटाते हैं। समीकरण के गुणांक तथा भौतिक अवस्थाएँ दोनों जाँचें। गैसीय अभिक्रिया की एन्थैल्पी का अनुमान आबंध एन्थैल्पियों से भी लगा सकते हैं। आबंध तोड़ने में ऊर्जा लगती है और आबंध बनने पर ऊर्जा निकलती है। इसलिए तोड़े आबंधों की एन्थैल्पियों का योग घटा बनाए आबंधों की एन्थैल्पियों का योग लेते हैं। माध्य आबंध एन्थैल्पियाँ अलग आण्विक परिवेशों का औसत हैं, इसलिए यह विधि प्रायः सन्निकट परिणाम देती है। पूरी अभिक्रिया ऊष्माक्षेपी होने पर भी आबंध तोड़ने के पद को ऋण न करें। पहले काल्पनिक आबंध-विच्छेदन और आबंध-निर्माण चरण अलग लिखें, फिर उन्हें जोड़ें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: The values average bond environments that may differ from the actual molecules.",
+          "hi": "जाँच बिंदु: मान अलग आबंध परिवेशों के औसत हैं, जो वास्तविक अणु से भिन्न हो सकते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is a calculation with mean bond enthalpies often approximate?",
+          "hi": "माध्य आबंध एन्थैल्पियों से गणना प्रायः सन्निकट क्यों है?"
+        },
+        "answer": {
+          "en": "The values average bond environments that may differ from the actual molecules.",
+          "hi": "मान अलग आबंध परिवेशों के औसत हैं, जो वास्तविक अणु से भिन्न हो सकते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Entropy and spontaneity",
+        "hi": "एंट्रॉपी और स्वतःप्रवर्तिता"
+      },
+      "paragraphs": [
+        {
+          "en": "Entropy S is a state function associated with the distribution of energy and the number of accessible microscopic arrangements. Calling it disorder can be a useful first picture, but disorder alone is not a complete definition or calculation method. A process is spontaneous in a specified direction under given conditions when it is thermodynamically favoured, not necessarily when it happens rapidly. A slow reaction may still be spontaneous because a kinetic barrier controls its rate. For an isolated combined system, a spontaneous change increases total entropy, and equilibrium corresponds to no further entropy increase from the allowed macroscopic change. The entropy of a chosen subsystem may decrease if the surroundings gain more. Therefore do not decide spontaneity using only the system entropy without considering the surroundings. Heating, phase changes and mixing often affect entropy, but the conditions and amount of material matter. Entropy changes have units of J/K for a sample or J/(mol K) for molar quantities.",
+          "hi": "एंट्रॉपी S अवस्था फलन है, जो ऊर्जा के वितरण और उपलब्ध सूक्ष्म व्यवस्थाओं की संख्या से संबंधित है। इसे अव्यवस्था कहना शुरुआती चित्र के रूप में उपयोगी हो सकता है, लेकिन केवल अव्यवस्था पूर्ण परिभाषा या गणना विधि नहीं है। निश्चित दशाओं में किसी दिशा का ऊष्मागतिक रूप से अनुकूल होना स्वतःप्रवर्तिता (Spontaneity) है; इसका अर्थ तेजी से होना नहीं है। गतिज अवरोध के कारण स्वतःप्रवर्ती अभिक्रिया भी धीमी चल सकती है। एकांतीय संयुक्त निकाय में स्वतःप्रवर्ती परिवर्तन कुल एंट्रॉपी बढ़ाता है। साम्य पर अनुमत स्थूल परिवर्तन से आगे एंट्रॉपी नहीं बढ़ती। चुने उपनिकाय की एंट्रॉपी घट सकती है, यदि परिवेश की वृद्धि उससे अधिक हो। इसलिए केवल निकाय की एंट्रॉपी देखकर स्वतःप्रवर्तिता तय करना गलत हो सकता है। गरम करने, अवस्था बदलने और मिश्रण बनाने से एंट्रॉपी पर प्रभाव पड़ता है, लेकिन दशाएँ और पदार्थ की मात्रा जरूरी हैं। निश्चित नमूने के लिए इकाई J/K तथा मोलर राशि के लिए J/(mol K) होती है। उत्तर में दोनों को मिलाए बिना संबंध और इकाई लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: No; thermodynamic favourability and reaction rate are different questions.",
+          "hi": "जाँच बिंदु: नहीं; ऊष्मागतिक अनुकूलता और अभिक्रिया की चाल अलग प्रश्न हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does spontaneous mean fast?",
+          "hi": "क्या स्वतःप्रवर्ती का अर्थ तेज है?"
+        },
+        "answer": {
+          "en": "No; thermodynamic favourability and reaction rate are different questions.",
+          "hi": "नहीं; ऊष्मागतिक अनुकूलता और अभिक्रिया की चाल अलग प्रश्न हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Gibbs energy and the temperature test",
+        "hi": "गिब्स ऊर्जा और ताप की कसौटी"
+      },
+      "paragraphs": [
+        {
+          "en": "For processes at constant temperature and pressure, Gibbs energy is a convenient criterion for spontaneity. It is defined by G=H−TS. At a fixed temperature, ΔG=ΔH−TΔS. A negative change indicates a thermodynamically favoured direction under the specified conditions, a positive change indicates the reverse direction is favoured, and zero corresponds to equilibrium for the allowed change. Temperature must be in kelvin, and the enthalpy and entropy terms must use consistent energy units. In a simplified model with constant ΔH=40 kJ/mol and ΔS=100 J/(mol K), first convert entropy to 0.100 kJ/(mol K). Then ΔG=40−0.100T kJ/mol. The crossover is 400 K. This temperature test assumes the chosen ΔH and ΔS remain approximately constant over the range and does not predict reaction rate. Distinguish ΔG under the actual composition from the standard reaction quantity ΔG°. A criterion is useful only when its conditions and reference states are stated.",
+          "hi": "नियत ताप और दाब पर स्वतःप्रवर्तिता की उपयोगी कसौटी गिब्स ऊर्जा (Gibbs energy) है। इसकी परिभाषा G=H−TS है। निश्चित ताप पर ΔG=ΔH−TΔS लिखते हैं। ऋण ΔG दी दशाओं में चुनी दिशा को ऊष्मागतिक रूप से अनुकूल बताता है। धन ΔG में उलटी दिशा अनुकूल होती है और अनुमत परिवर्तन के लिए शून्य मान साम्य दर्शाता है। ताप केल्विन में लें और एन्थैल्पी तथा एंट्रॉपी पदों की ऊर्जा इकाइयाँ एक जैसी करें। सरल मॉडल में ΔH=40 kJ/mol और ΔS=100 J/(mol K) स्थिर मानें। पहले एंट्रॉपी को 0.100 kJ/(mol K) में बदलें। तब ΔG=40−0.100T kJ/mol होगा और परिवर्तन का सीमा ताप 400 K मिलेगा। इस तुलना में माना है कि पूरे अंतराल में चुने ΔH और ΔS लगभग स्थिर हैं। इससे अभिक्रिया की चाल नहीं निकलती। वास्तविक संघटन पर ΔG और मानक अभिक्रिया राशि ΔG° अलग हैं। कसौटी तभी ठीक उपयोग होती है जब उसकी दशाएँ तथा संदर्भ अवस्थाएँ स्पष्ट हों। केवल धन या ऋण अंक याद करने के बजाय पूरी परिस्थिति देखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: At400 K under the constant-parameter model.",
+          "hi": "जाँच बिंदु: स्थिर प्राचल मॉडल में 400 K पर।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For ΔH=40 kJ/mol and ΔS=0.100 kJ/(mol K), where does ΔG become zero?",
+          "hi": "ΔH=40 kJ/mol तथा ΔS=0.100 kJ/(mol K) पर ΔG कब शून्य है?"
+        },
+        "answer": {
+          "en": "At400 K under the constant-parameter model.",
+          "hi": "स्थिर प्राचल मॉडल में 400 K पर।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "ΔU = q + w; w = −pextΔV",
+      "meaning": {
+        "en": "q: heat to system; w: work on system; expansion against constant external pressure gives negative w.",
+        "hi": "q: निकाय को ऊष्मा; w: निकाय पर कार्य; स्थिर बाहरी दाब के विरुद्ध प्रसार में w ऋण है।"
+      },
+      "units": {
+        "en": "Energy J; pressure Pa; volume m³.",
+        "hi": "ऊर्जा J; दाब Pa; आयतन m³।"
+      }
+    },
+    {
+      "expression": "H = U + pV; ΔH = ΔU + ΔngRT",
+      "meaning": {
+        "en": "The second relation applies to ideal-gas reaction terms at the same temperature.",
+        "hi": "दूसरा संबंध समान ताप के आदर्श गैसीय अभिक्रिया पदों पर लागू है।"
+      },
+      "units": {
+        "en": "Use consistent J or kJ; R=8.314 J/(mol K).",
+        "hi": "J या kJ समान रखें; R=8.314 J/(mol K)।"
+      }
+    },
+    {
+      "expression": "q = mcΔT",
+      "meaning": {
+        "en": "m: mass; c: specific heat capacity, assumed constant; no phase change.",
+        "hi": "m: द्रव्यमान; c: स्थिर मानी विशिष्ट ऊष्मा धारिता; अवस्था परिवर्तन नहीं।"
+      },
+      "units": {
+        "en": "kg × J/(kg K) × K = J.",
+        "hi": "kg × J/(kg K) × K = J।"
+      }
+    },
+    {
+      "expression": "ΔrH° = ΣνΔfH°products − ΣνΔfH°reactants",
+      "meaning": {
+        "en": "ν are stoichiometric coefficients; retain stated physical states.",
+        "hi": "ν रससमीकरणमितीय गुणांक हैं; दी भौतिक अवस्थाएँ रखें।"
+      },
+      "units": {
+        "en": "Usually kJ per mole of reaction as written.",
+        "hi": "प्रायः लिखी अभिक्रिया के प्रति mol kJ।"
+      }
+    },
+    {
+      "expression": "ΔG = ΔH − TΔS",
+      "meaning": {
+        "en": "At fixed T, compare Gibbs energy change; spontaneous direction has ΔG<0 at constant T,p.",
+        "hi": "निश्चित T पर गिब्स परिवर्तन की तुलना; नियत T,p पर स्वतःप्रवर्ती दिशा में ΔG<0।"
+      },
+      "units": {
+        "en": "T in K; ΔH and TΔS in the same energy unit.",
+        "hi": "T की इकाई K; ΔH और TΔS समान ऊर्जा इकाई में।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A gas absorbs500 J and expands by 2 L against100 kPa. Find ΔU.",
+        "hi": "गैस 500 J लेकर 100 kPa के विरुद्ध 2 L फैलती है। ΔU निकालें।"
+      },
+      "given": {
+        "en": "q=+500 J; pext=100000 Pa; ΔV=0.002 m³.",
+        "hi": "q=+500 J; pext=100000 Pa; ΔV=0.002 m³।"
+      },
+      "find": {
+        "en": "Work and internal-energy change.",
+        "hi": "कार्य और आंतरिक ऊर्जा परिवर्तन।"
+      },
+      "formula": {
+        "en": "w=−pextΔV; ΔU=q+w",
+        "hi": "w=−pextΔV; ΔU=q+w"
+      },
+      "steps": [
+        {
+          "en": "w=−100000×0.002=−200 J.",
+          "hi": "w=−100000×0.002=−200 J।"
+        },
+        {
+          "en": "ΔU=500−200.",
+          "hi": "ΔU=500−200।"
+        }
+      ],
+      "answer": {
+        "en": "w=−200 J; ΔU=+300 J.",
+        "hi": "w=−200 J; ΔU=+300 J।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Heat2 kg water by 5 K using c=4.18 kJ/(kg K).",
+        "hi": "c=4.18 kJ/(kg K) से 2 kg जल को 5 K गरम करने की ऊष्मा निकालें।"
+      },
+      "given": {
+        "en": "m=2 kg; ΔT=5 K; no phase change.",
+        "hi": "m=2 kg; ΔT=5 K; अवस्था परिवर्तन नहीं।"
+      },
+      "find": {
+        "en": "Heat required.",
+        "hi": "आवश्यक ऊष्मा।"
+      },
+      "formula": {
+        "en": "q=mcΔT",
+        "hi": "q=mcΔT"
+      },
+      "steps": [
+        {
+          "en": "Multiply 2×4.18×5.",
+          "hi": "2×4.18×5 गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "q=41.8 kJ.",
+        "hi": "q=41.8 kJ।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Two Hess steps have ΔH=−100 and −50 kJ/mol. Find the total.",
+        "hi": "हेस के 2 चरणों के ΔH −100 तथा −50 kJ/mol हैं। कुल निकालें।"
+      },
+      "given": {
+        "en": "The equations add to the target change.",
+        "hi": "समीकरण जोड़ने पर वांछित परिवर्तन मिलता है।"
+      },
+      "find": {
+        "en": "Overall reaction enthalpy.",
+        "hi": "कुल अभिक्रिया एन्थैल्पी।"
+      },
+      "formula": {
+        "en": "ΔHoverall = ΣΔHsteps",
+        "hi": "ΔHoverall = ΣΔHsteps"
+      },
+      "steps": [
+        {
+          "en": "Retain both negative signs.",
+          "hi": "दोनों ऋण चिह्न रखें।"
+        },
+        {
+          "en": "Add −100+(−50).",
+          "hi": "−100+(−50) जोड़ें।"
+        }
+      ],
+      "answer": {
+        "en": "−150 kJ/mol for the stated reaction extent.",
+        "hi": "दी अभिक्रिया मात्रा के लिए −150 kJ/mol।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "An ideal-gas reaction has Δng=+1 at 298 K. Find ΔH−ΔU.",
+        "hi": "298 K पर आदर्श गैस अभिक्रिया में Δng=+1 है। ΔH−ΔU निकालें।"
+      },
+      "given": {
+        "en": "R=8.314 J/(mol K).",
+        "hi": "R=8.314 J/(mol K)।"
+      },
+      "find": {
+        "en": "Enthalpy–internal-energy difference per mole of reaction.",
+        "hi": "अभिक्रिया के प्रति mol एन्थैल्पी–आंतरिक ऊर्जा अंतर।"
+      },
+      "formula": {
+        "en": "ΔH−ΔU = ΔngRT",
+        "hi": "ΔH−ΔU = ΔngRT"
+      },
+      "steps": [
+        {
+          "en": "Use only the gas-mole difference.",
+          "hi": "केवल गैसीय मोल अंतर लें।"
+        },
+        {
+          "en": "Calculate 1×8.314×298.",
+          "hi": "1×8.314×298 निकालें।"
+        }
+      ],
+      "answer": {
+        "en": "2477.6 J/mol≈2.48 kJ/mol.",
+        "hi": "2477.6 J/mol≈2.48 kJ/mol।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Test spontaneity at 600 K for ΔH=40 kJ/mol and ΔS=100 J/(mol K).",
+        "hi": "ΔH=40 kJ/mol और ΔS=100 J/(mol K) पर 600 K की स्वतःप्रवर्तिता जाँचें।"
+      },
+      "given": {
+        "en": "Constant ΔH and ΔS; constant T,p criterion.",
+        "hi": "ΔH और ΔS स्थिर; नियत T,p कसौटी।"
+      },
+      "find": {
+        "en": "ΔG and thermodynamic direction.",
+        "hi": "ΔG तथा ऊष्मागतिक दिशा।"
+      },
+      "formula": {
+        "en": "ΔG=ΔH−TΔS",
+        "hi": "ΔG=ΔH−TΔS"
+      },
+      "steps": [
+        {
+          "en": "Convert100 J/(mol K) to 0.100 kJ/(mol K).",
+          "hi": "100 J/(mol K) को 0.100 kJ/(mol K) करें।"
+        },
+        {
+          "en": "Calculate 40−600×0.100.",
+          "hi": "40−600×0.100 निकालें।"
+        }
+      ],
+      "answer": {
+        "en": "ΔG=−20 kJ/mol; forward direction is favoured, not necessarily fast.",
+        "hi": "ΔG=−20 kJ/mol; अग्र दिशा अनुकूल है, आवश्यक नहीं कि तेज हो।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which system exchanges energy but not matter?",
+        "hi": "कौन-सा निकाय ऊर्जा देता-लेता है, पदार्थ नहीं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Closed",
+            "hi": "बंद"
+          },
+          "reason": {
+            "en": "A closed system prevents matter exchange but can exchange energy.",
+            "hi": "बंद निकाय में पदार्थ नहीं, ऊर्जा जा सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Open",
+            "hi": "खुला"
+          },
+          "reason": {
+            "en": "An open system can exchange both.",
+            "hi": "खुले में दोनों का आदान-प्रदान संभव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Isolated",
+            "hi": "एकांतीय"
+          },
+          "reason": {
+            "en": "An isolated system exchanges neither.",
+            "hi": "एकांतीय में दोनों नहीं जाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every system",
+            "hi": "हर निकाय"
+          },
+          "reason": {
+            "en": "The boundary conditions differ.",
+            "hi": "सीमा की दशाएँ अलग होती हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is a state function?",
+        "hi": "अवस्था फलन कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Internal energy",
+            "hi": "आंतरिक ऊर्जा"
+          },
+          "reason": {
+            "en": "U depends on the state.",
+            "hi": "U अवस्था पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Heat q",
+            "hi": "ऊष्मा q"
+          },
+          "reason": {
+            "en": "Heat transfer depends on the path.",
+            "hi": "ऊष्मा हस्तांतरण मार्ग पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Work w",
+            "hi": "कार्य w"
+          },
+          "reason": {
+            "en": "Work depends on the process.",
+            "hi": "कार्य प्रक्रिया पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the vessel colour",
+            "hi": "केवल पात्र का रंग"
+          },
+          "reason": {
+            "en": "Colour is not the thermodynamic quantity asked here.",
+            "hi": "रंग यहाँ पूछा ऊष्मागतिक फलन नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "During expansion, chemistry work w has which sign?",
+        "hi": "प्रसार में रसायन का कार्य w किस चिह्न का है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Negative",
+            "hi": "ऋण"
+          },
+          "reason": {
+            "en": "The system does work on surroundings.",
+            "hi": "निकाय परिवेश पर कार्य करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Positive always",
+            "hi": "हमेशा धन"
+          },
+          "reason": {
+            "en": "Positive w represents work on the system.",
+            "hi": "धन w निकाय पर कार्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero always",
+            "hi": "हमेशा शून्य"
+          },
+          "reason": {
+            "en": "Against nonzero external pressure expansion work is not zero.",
+            "hi": "अशून्य बाहरी दाब में प्रसार कार्य शून्य नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No unit",
+            "hi": "इकाई रहित"
+          },
+          "reason": {
+            "en": "Work is an energy transfer with units.",
+            "hi": "कार्य ऊर्जा हस्तांतरण है, इसकी इकाई है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "q=500 J,w=−200 J gives ΔU=?",
+        "hi": "q=500 J,w=−200 J पर ΔU=?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "300 J",
+            "hi": "300 J"
+          },
+          "reason": {
+            "en": "500+(−200)=300.",
+            "hi": "500+(−200)=300।"
+          }
+        },
+        {
+          "text": {
+            "en": "700 J",
+            "hi": "700 J"
+          },
+          "reason": {
+            "en": "This uses the wrong work sign.",
+            "hi": "इसमें कार्य का चिह्न गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−700 J",
+            "hi": "−700 J"
+          },
+          "reason": {
+            "en": "Neither the sum nor signs support this.",
+            "hi": "योग और चिह्न इससे मेल नहीं खाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "−300 J",
+            "hi": "−300 J"
+          },
+          "reason": {
+            "en": "The net supplied energy is positive.",
+            "hi": "शुद्ध मिली ऊर्जा धन है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "With only pV work, heat at constant volume equals what?",
+        "hi": "केवल pV कार्य हो तो नियत आयतन की ऊष्मा किसके बराबर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ΔU",
+            "hi": "ΔU"
+          },
+          "reason": {
+            "en": "Expansion work vanishes at fixed volume.",
+            "hi": "नियत आयतन पर प्रसार कार्य शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always ΔH",
+            "hi": "हमेशा ΔH"
+          },
+          "reason": {
+            "en": "The constant-pressure condition is different.",
+            "hi": "नियत दाब की शर्त अलग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−ΔU always",
+            "hi": "हमेशा −ΔU"
+          },
+          "reason": {
+            "en": "The heat sign is not reversed here.",
+            "hi": "यहाँ ऊष्मा का चिह्न नहीं उलटता।"
+          }
+        },
+        {
+          "text": {
+            "en": "The volume itself",
+            "hi": "स्वयं आयतन"
+          },
+          "reason": {
+            "en": "Volume and energy have different dimensions.",
+            "hi": "आयतन और ऊर्जा की विमाएँ अलग हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Reversing a thermochemical equation changes ΔH how?",
+        "hi": "ऊष्मारासायनिक समीकरण उलटने पर ΔH कैसे बदलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Sign reverses",
+            "hi": "चिह्न उलटता है"
+          },
+          "reason": {
+            "en": "The initial and final states are exchanged.",
+            "hi": "प्रारंभिक और अंतिम अवस्थाएँ बदलती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always becomes zero",
+            "hi": "हमेशा शून्य"
+          },
+          "reason": {
+            "en": "A nonzero energy difference does not vanish.",
+            "hi": "अशून्य अंतर मिटता नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Magnitude doubles",
+            "hi": "परिमाण दुगुना"
+          },
+          "reason": {
+            "en": "Reversal alone does not double coefficients.",
+            "hi": "उलटना गुणांक दुगुना करना नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No change at all",
+            "hi": "कुछ नहीं बदलता"
+          },
+          "reason": {
+            "en": "The reverse change has the opposite enthalpy.",
+            "hi": "उलटे परिवर्तन की एन्थैल्पी विपरीत है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What does Hess law rely on?",
+        "hi": "हेस नियम किस पर आधारित है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Enthalpy is a state function",
+            "hi": "एन्थैल्पी अवस्था फलन है"
+          },
+          "reason": {
+            "en": "Totals between fixed states are path independent.",
+            "hi": "निश्चित अवस्थाओं का कुल परिवर्तन मार्ग स्वतंत्र है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All reactions are fast",
+            "hi": "सभी अभिक्रियाएँ तेज हैं"
+          },
+          "reason": {
+            "en": "Rate is not the basis.",
+            "hi": "चाल इसका आधार नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Heat is a substance",
+            "hi": "ऊष्मा पदार्थ है"
+          },
+          "reason": {
+            "en": "Heat is energy transfer, not stored material.",
+            "hi": "ऊष्मा ऊर्जा हस्तांतरण है, पदार्थ नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every step has equal ΔH",
+            "hi": "हर चरण का ΔH समान है"
+          },
+          "reason": {
+            "en": "Only the sum is constrained for the same end states.",
+            "hi": "समान अंतिम अवस्थाओं के लिए कुल योग निश्चित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A spontaneous process must be what?",
+        "hi": "स्वतःप्रवर्ती प्रक्रिया के लिए कौन-सा कथन ठीक है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Thermodynamically favoured under specified conditions",
+            "hi": "दी दशाओं में ऊष्मागतिक रूप से अनुकूल"
+          },
+          "reason": {
+            "en": "Spontaneity concerns direction, not speed.",
+            "hi": "स्वतःप्रवर्तिता दिशा बताती है, चाल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Instantaneous",
+            "hi": "तत्काल पूरी"
+          },
+          "reason": {
+            "en": "Kinetic barriers can make it slow.",
+            "hi": "गतिज अवरोध इसे धीमा कर सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always exothermic",
+            "hi": "हमेशा ऊष्माक्षेपी"
+          },
+          "reason": {
+            "en": "Entropy can favour an endothermic process.",
+            "hi": "एंट्रॉपी ऊष्माशोषी प्रक्रिया को अनुकूल बना सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always increases system entropy only",
+            "hi": "केवल निकाय एंट्रॉपी हमेशा बढ़ाती है"
+          },
+          "reason": {
+            "en": "The total including surroundings is relevant.",
+            "hi": "परिवेश सहित कुल परिवर्तन प्रासंगिक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For Gibbs calculations temperature should be in which unit?",
+        "hi": "गिब्स गणना में ताप की इकाई क्या हो?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Kelvin",
+            "hi": "केल्विन"
+          },
+          "reason": {
+            "en": "Thermodynamic absolute temperature is required.",
+            "hi": "ऊष्मागतिक निरपेक्ष ताप चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Celsius directly",
+            "hi": "सीधे सेल्सियस"
+          },
+          "reason": {
+            "en": "A Celsius value is not an absolute temperature.",
+            "hi": "सेल्सियस मान निरपेक्ष ताप नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Metre",
+            "hi": "मीटर"
+          },
+          "reason": {
+            "en": "Metre measures length.",
+            "hi": "मीटर लंबाई की इकाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Joule only",
+            "hi": "केवल जूल"
+          },
+          "reason": {
+            "en": "Joule is energy, not temperature.",
+            "hi": "जूल ऊर्जा है, ताप नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At constant T,p, equilibrium for a permitted change has what ΔG?",
+        "hi": "नियत T,p पर अनुमत परिवर्तन के साम्य में ΔG क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "No thermodynamic driving force remains for that change.",
+            "hi": "उस परिवर्तन की ऊष्मागतिक प्रेरणा शेष नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always negative",
+            "hi": "हमेशा ऋण"
+          },
+          "reason": {
+            "en": "Negative ΔG favours the forward direction.",
+            "hi": "ऋण ΔG अग्र दिशा अनुकूल करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always positive",
+            "hi": "हमेशा धन"
+          },
+          "reason": {
+            "en": "Positive ΔG favours the reverse direction.",
+            "hi": "धन ΔG उलटी दिशा अनुकूल करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "Equilibrium does not require infinite energy.",
+            "hi": "साम्य के लिए अनंत ऊर्जा नहीं चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish closed and isolated systems.",
+        "hi": "बंद और एकांतीय निकाय अलग करें।"
+      },
+      "answer": {
+        "en": "A closed system can exchange energy but not matter; an isolated system exchanges neither.",
+        "hi": "बंद निकाय ऊर्जा का, पदार्थ का नहीं, आदान-प्रदान करता है; एकांतीय में दोनों नहीं होते।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are heat and work not state functions?",
+        "hi": "ऊष्मा और कार्य अवस्था फलन क्यों नहीं हैं?"
+      },
+      "answer": {
+        "en": "Their individual values depend on the process or path between states.",
+        "hi": "उनके अलग-अलग मान अवस्थाओं के बीच के मार्ग या प्रक्रिया पर निर्भर हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the chemistry first law and sign of expansion work.",
+        "hi": "रसायन का प्रथम नियम और प्रसार कार्य का चिह्न लिखें।"
+      },
+      "answer": {
+        "en": "ΔU=q+w; expansion against positive external pressure gives w<0.",
+        "hi": "ΔU=q+w; धन बाहरी दाब के विरुद्ध प्रसार में w<0 है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why do mean bond enthalpies give approximate reaction enthalpies?",
+        "hi": "माध्य आबंध एन्थैल्पियाँ सन्निकट अभिक्रिया एन्थैल्पी क्यों देती हैं?"
+      },
+      "answer": {
+        "en": "They average bond strengths over molecular environments and generally describe gas-phase bond steps.",
+        "hi": "वे अलग आण्विक परिवेशों की औसत आबंध सामर्थ्य हैं और सामान्यतः गैसीय आबंध चरण बताते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "May system entropy decrease in a spontaneous process?",
+        "hi": "क्या स्वतःप्रवर्ती प्रक्रिया में निकाय एंट्रॉपी घट सकती है?"
+      },
+      "answer": {
+        "en": "Yes, if the surroundings gain enough entropy that the total increases.",
+        "hi": "हाँ, यदि परिवेश की एंट्रॉपी इतनी बढ़े कि कुल वृद्धि धन हो।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can an endothermic process be spontaneous?",
+        "hi": "ऊष्माशोषी प्रक्रिया स्वतःप्रवर्ती कैसे हो सकती है?"
+      },
+      "answer": {
+        "en": "At constant T,p a sufficiently favourable entropy term can make ΔG=ΔH−TΔS negative.",
+        "hi": "नियत T,p पर पर्याप्त अनुकूल एंट्रॉपी पद ΔG=ΔH−TΔS को ऋण बना सकता है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Choose the system and allowed transfers first.",
+      "hi": "पहले निकाय और अनुमत आदान-प्रदान चुनें।"
+    },
+    {
+      "en": "Chemistry uses ΔU=q+w with expansion work negative.",
+      "hi": "रसायन में ΔU=q+w तथा प्रसार कार्य ऋण है।"
+    },
+    {
+      "en": "Enthalpy is a state function; Hess steps add with signs.",
+      "hi": "एन्थैल्पी अवस्था फलन है; हेस चरण चिह्न सहित जुड़ते हैं।"
+    },
+    {
+      "en": "Spontaneous does not mean rapid.",
+      "hi": "स्वतःप्रवर्ती का अर्थ तीव्र नहीं।"
+    },
+    {
+      "en": "Use kelvin and consistent energy units in ΔG=ΔH−TΔS.",
+      "hi": "ΔG=ΔH−TΔS में केल्विन और समान ऊर्जा इकाइयाँ लें।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not mix the physics work-by-system convention with chemistry work-on-system signs. Convert litres, kilojoules and entropy units before substitution.",
+    "hi": "भौतिकी के निकाय-द्वारा-कार्य और रसायन के निकाय-पर-कार्य के चिह्न न मिलाएँ। मान रखने से पहले L, kJ और एंट्रॉपी इकाइयाँ बदलें।"
+  },
+  "conceptMap": "निकाय और सीमा → अवस्था फलन / मार्ग → q तथा w → प्रथम नियम → एन्थैल्पी और हेस नियम → एंट्रॉपी → गिब्स ऊर्जा तथा स्वतःप्रवर्तिता",
+  "conceptMapEn": "System and boundary → state / path → q and w → first law → enthalpy and Hess law → entropy → Gibbs energy and spontaneity"
+}

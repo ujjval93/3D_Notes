@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p,low})=>{g.box(0,0,0,1,.8,.6);for(let i=0;i<(low?24:48);i++)g.sphere(reflect(Math.sin(i*5)+t*.07,.9),reflect(Math.cos(i*9)+t*.1,.7),Math.sin(i*2)*.5,.035,C.blue);for(let i=0;i<p[0];i++)g.sphere(reflect(Math.sin(i*8+2)+t*.1,.85),reflect(Math.cos(i*3+2)+t*.11,.7),Math.sin(i*5)*.5,.045,C.gold);return[read('Solvent mass','विलायक द्रव्यमान',90,'g'),read('Solution mass','विलयन द्रव्यमान',90+p[0],'g'),read('Mass percentage','द्रव्यमान प्रतिशत',fmt(100*p[0]/(90+p[0])),'%')];};

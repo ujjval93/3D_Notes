@@ -1,0 +1,902 @@
+{
+  "id": "ten-geography-2",
+  "classId": "10",
+  "number": 2,
+  "title": {
+    "en": "Forest and Wildlife Resources",
+    "hi": "वन एवं वन्य जीव संसाधन"
+  },
+  "engine": "map",
+  "goal": {
+    "en": "Use places, evidence and cause–effect explanations to understand forest and wildlife resources.",
+    "hi": "वन एवं वन्य जीव संसाधन को स्थान, प्रमाण और कारण–परिणाम के संबंध से समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Biodiversity as a living system",
+        "hi": "जैव विविधता एक जीवित व्यवस्था"
+      },
+      "body": {
+        "en": "Biodiversity includes variation among living organisms and the relationships that support ecosystems. A forest is more than timber: plants produce organic matter, decomposers recycle nutrients and animals disperse seeds or pollinate flowers. Losing one component can affect others. A local observation should include grasses, insects and fungi, not only large mammals. Compare a mixed vegetation patch with a single-species plantation without assuming that equal tree counts mean equal habitat quality.\n\nBiodiversity includes variety within species, between species and among ecosystems. A forest with many trees of one planted species is not automatically equivalent to a diverse natural habitat. Different organisms occupy roles in pollination, decomposition and food webs, although the importance of a species is not limited to its immediate usefulness to people. A change in one part of the web can have indirect consequences that are not visible in a simple count of trees.",
+        "hi": "जैव विविधता (Biodiversity) जीवों की विविधता और उनके परस्पर संबंधों को समझने का आधार है। वन केवल लकड़ी का भंडार नहीं है। पौधे भोजन बनाते हैं, अपघटक मृत पदार्थों के पोषक तत्त्व वापस मिट्टी में पहुँचाते हैं और अनेक जीव बीज फैलाने तथा परागण में सहायता करते हैं। इसलिए किसी एक प्रजाति की कमी दूसरे जीवों को भी प्रभावित कर सकती है। मनुष्य भी इसी व्यवस्था का हिस्सा है। भोजन, पानी, मिट्टी और जलवायु से जुड़े लाभ हमारे जीवन में आते हैं। स्थानीय निरीक्षण में केवल बड़े जानवर न गिनें। घास, कीट, कवक और छोटे पौधों को भी पहचानने की कोशिश करें। मिश्रित वन और एक प्रजाति के वृक्षारोपण में समान संख्या के पेड़ हो सकते हैं, फिर भी आवास अलग होंगे। उत्तर में विविधता का अर्थ केवल जीवों की संख्या बताना अधूरा है। उनके कार्य और संबंध का उदाहरण भी दें। किसी जीव को छुए या परेशान किए बिना सुरक्षित दूरी से अवलोकन करें।"
+      },
+      "question": {
+        "en": "Why can equal tree counts hide different biodiversity?",
+        "hi": "समान वृक्ष संख्या के बावजूद जैव विविधता अलग क्यों हो सकती है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Forests, water and livelihoods",
+        "hi": "वन, जल और आजीविका"
+      },
+      "body": {
+        "en": "Forest cover protects soil and influences infiltration and runoff, although effects depend on location and management. Communities may use fuelwood, fodder and non-timber forest products. Conservation decisions must consider these needs alongside ecological protection. A forest cannot be understood only through the price of timber. Trace one chain from vegetation to soil protection, water conditions and livelihoods. Avoid claiming that every forest produces identical rainfall or that people living nearby are automatically the main cause of damage.\n\nA forest supports several users whose needs may differ: nearby households may collect permitted products, farmers may depend on watershed services, and wildlife needs connected habitat. A conservation discussion should identify these relationships before proposing restrictions. Access rules vary by place and law; the classroom example does not grant permission to collect anything. Explain how protection can preserve ecological functions while recognising legitimate livelihood concerns and the knowledge of communities who use the landscape.",
+        "hi": "वन मिट्टी को वर्षा के सीधे प्रहार से बचाने और बहाव नियंत्रित करने में भूमिका निभाते हैं। पत्तियों, जड़ों और जैव पदार्थ से पानी का जमीन में प्रवेश प्रभावित होता है। इसका प्रभाव स्थान, मिट्टी और वन की स्थिति के अनुसार बदलता है। वन पर रहने वाले या उसके पास रहने वाले समुदाय ईंधन, चारा, फल, पत्तियाँ और अन्य गैर-काष्ठ उत्पाद प्राप्त कर सकते हैं। इसलिए संरक्षण में उनकी आजीविका और अधिकार को समझना जरूरी है। केवल लकड़ी के बाजार मूल्य से वन का पूरा महत्त्व नहीं मापा जा सकता। मिट्टी संरक्षण, आवास और जल संबंधी लाभ भी देखें। अभ्यास में वनस्पति से मिट्टी, मिट्टी से जल और जल से खेती का संबंध तीरों से बनाएँ। फिर लिखें कि अत्यधिक कटाई इस क्रम को कहाँ प्रभावित कर सकती है। सभी स्थानीय समुदायों को बिना प्रमाण दोष देना गलत है। अलग समूहों की जरूरतें और निर्णय लेने की शक्ति अलग हो सकती है। संतुलित उत्तर में पर्यावरण और आजीविका दोनों का उल्लेख करें।"
+      },
+      "question": {
+        "en": "Give one link between forests and a village livelihood.",
+        "hi": "वन और गाँव की आजीविका का 1 संबंध बताएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Causes of habitat loss",
+        "hi": "आवास क्षति के कारण"
+      },
+      "body": {
+        "en": "Habitat loss and fragmentation can follow conversion to farms, settlements, infrastructure or mines. Commercial exploitation and hunting add pressure, but their importance differs across time and place. Fragmentation breaks a larger habitat into smaller separated patches; an animal may have forest nearby but no safe route between patches. Pollution, fires and invasive species may also create stress. Analyse a proposed road by considering access benefits, habitat crossings and alternatives rather than declaring every road harmless or every development impossible.\n\nHabitat fragmentation matters even when some vegetation remains. A road or cleared strip can divide a once-connected area and make movement harder for certain animals. The effect depends on species, traffic, barriers and surrounding land use. Therefore forest area and habitat quality are related but distinct measures. When asked about threats, organise an answer by process: removal, fragmentation, overuse, pollution or disturbance. Then support the process with a relevant example rather than an unsupported statistic.",
+        "hi": "आवास (Habitat) वह स्थान और परिस्थितियाँ हैं जहाँ जीव भोजन, आश्रय तथा प्रजनन के अवसर पाता है। खेती, बस्ती, सड़क और खनन के लिए भूमि परिवर्तन आवास घटा सकता है। व्यावसायिक दोहन तथा अवैध शिकार भी दबाव बनाते हैं, लेकिन हर स्थान पर उनका अनुपात समान नहीं होता। आवास विखंडन (Fragmentation) में बड़ा आवास छोटे, अलग टुकड़ों में बँट जाता है। किसी पशु के पास वन का टुकड़ा बचा हो, फिर भी दूसरे टुकड़े तक सुरक्षित मार्ग न मिलने से समस्या बनी रहती है। प्रदूषण, आग और बाहरी आक्रामक प्रजातियाँ भी दबाव बढ़ा सकती हैं। एक काल्पनिक सड़क योजना में यातायात के लाभ और वन्यजीव मार्ग दोनों की जाँच करें। पहले स्थान, प्रभावित जीव और वैकल्पिक मार्ग की जानकारी चाहिए। बिना प्रमाण यह कहना कि हर सड़क समान क्षति करती है या कोई क्षति नहीं करती, दोनों गलत हैं। अच्छे उत्तर में कारण, उसके काम करने की प्रक्रिया और संभावित सुधार को क्रम से लिखें।"
+      },
+      "question": {
+        "en": "How is fragmentation different from complete forest removal?",
+        "hi": "विखंडन और पूरा वन हटाने में क्या अंतर है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Conservation: species and habitats",
+        "hi": "संरक्षण: प्रजातियाँ और आवास"
+      },
+      "body": {
+        "en": "Conservation includes protecting species, their habitats and ecological processes. The Wildlife Protection Act of 1972 and Project Tiger launched in 1973 are historical landmarks in Indian conservation. A tiger programme needs prey, habitat and protection, not merely a fence around an animal. Protected areas require management and cooperation. Do not use old textbook population figures as current counts. Evaluate progress using dated evidence and several indicators, such as habitat condition, threats and community participation.\n\nSpecies-focused protection and habitat protection can reinforce each other. Protecting a large animal without safeguarding prey, water and movement routes may not secure its future. At the same time, a flagship species can draw attention to a wider ecosystem. A good answer states both the intended benefit and a limitation. Do not assume that declaring a protected area instantly removes every pressure; management, scientific observation, enforcement and cooperation determine how rules work in practice.",
+        "hi": "संरक्षण (Conservation) में प्रजाति के साथ उसका आवास और पारिस्थितिक संबंध सुरक्षित रखना शामिल है। भारत में 1972 का वन्यजीव संरक्षण अधिनियम और 1973 में आरंभ प्रोजेक्ट टाइगर महत्त्वपूर्ण ऐतिहासिक कदम हैं। बाघ की रक्षा केवल उसके चारों ओर घेरा लगाने से पूरी नहीं होती। उसके लिए शिकार जीव, पानी, पर्याप्त आवास और अवैध शिकार से सुरक्षा चाहिए। संरक्षित क्षेत्र घोषित करना शुरुआत हो सकती है; प्रभावी प्रबंधन तथा स्थानीय सहयोग भी जरूरी हैं। अध्ययन में कानून की तिथि और किसी जनसंख्या अनुमान की तिथि अलग रखें। पुराना आँकड़ा वर्तमान संख्या बताकर न लिखें। यदि प्रगति का प्रश्न हो तो केवल एक संख्या की जगह आवास की दशा, दबाव और संरक्षण व्यवस्था पर भी विचार करें। राष्ट्रीय उद्यान या अभयारण्य के स्थान को एटलस पर खोजें और उस क्षेत्र का एक विशिष्ट जीव जानें। किसी प्रजाति को पूरे राज्य में समान रूप से पाया जाना मानना मानचित्र की गलत व्याख्या होगी।"
+      },
+      "question": {
+        "en": "Why must tiger conservation also protect prey and habitat?",
+        "hi": "बाघ संरक्षण में शिकार जीव और आवास की रक्षा क्यों जरूरी है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Forest categories and their meaning",
+        "hi": "वन श्रेणियाँ और उनका अर्थ"
+      },
+      "body": {
+        "en": "Reserved, protected and unclassed forests are administrative categories used in the textbook. They concern legal and management arrangements, not simply how dense a forest looks. A reserved forest is not the same category as a national park. Forest cover measurements and administrative forest area answer different questions. Study the label and year before comparing statistics. A photograph cannot establish legal status. For an exam, explain the classification basis and avoid substituting evergreen or deciduous types, which classify vegetation differently.\n\nReserved, protected and unclassed forests are administrative categories described in the textbook, not a simple ranking of how green each place looks. A photograph cannot establish the legal category of a forest. Similarly, a point marking a national park on the study map does not show its entire boundary. Separate the name of a category, its broad management meaning and an example. Check the prescribed text for the exact context when comparing categories in an examination.",
+        "hi": "पाठ्यपुस्तक में आरक्षित, रक्षित और अवर्गीकृत वन प्रशासनिक श्रेणियाँ हैं। इनका संबंध कानूनी स्थिति और प्रबंधन से है, केवल पेड़ों की ऊँचाई या घनत्व से नहीं। आरक्षित वन (Reserved Forest) और राष्ट्रीय उद्यान एक ही वर्ग के नाम नहीं हैं। सदाबहार तथा पर्णपाती वन वनस्पति की विशेषता बताते हैं; वे प्रशासनिक वर्गीकरण के विकल्प नहीं हैं। किसी तस्वीर में घना वन देखकर उसकी कानूनी श्रेणी निश्चित नहीं की जा सकती। वन आवरण का मापन और प्रशासनिक वन क्षेत्र की गणना भी अलग प्रश्नों का उत्तर देते हैं। आँकड़ों की तुलना करते समय श्रेणी, परिभाषा और वर्ष देखें। अभ्यास में 2 स्तंभ बनाएँ: एक में वर्गीकरण का आधार, दूसरे में उदाहरण। फिर आरक्षित और पर्णपाती शब्द सही स्तंभ में रखें। इस प्रकार विद्यार्थी समझता है कि एक क्षेत्र अलग आधारों पर अलग पहचान रख सकता है। परीक्षा में केवल नामों की सूची देने के बजाय उनका आधार स्पष्ट करने से उत्तर अधिक सटीक बनता है।"
+      },
+      "question": {
+        "en": "Why is a reserved forest not simply another name for a deciduous forest?",
+        "hi": "आरक्षित वन पर्णपाती वन का दूसरा नाम क्यों नहीं है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Community participation",
+        "hi": "समुदाय की भागीदारी"
+      },
+      "body": {
+        "en": "Community participation can connect local knowledge, livelihood needs and protection. Sacred groves, community rules and movements such as Chipko show different forms of involvement. Joint Forest Management is associated with cooperation between communities and forest departments; local arrangements and benefits need attention. Participation means more than asking people to obey rules decided elsewhere. It includes voice, transparent responsibilities and fair sharing. An invented village plan can specify who monitors grazing, how decisions are made and how conflicts are addressed.\n\nParticipation means more than asking people to follow an outside plan. It can include sharing knowledge, agreeing responsibilities, monitoring use and discussing how benefits and costs are distributed. Different members of a community may have different access to land or decision-making, so a village should not be treated as one identical voice. A balanced conservation example identifies who participates and how decisions are made. This makes the explanation stronger than simply writing that awareness solves all problems.",
+        "hi": "समुदाय की भागीदारी में स्थानीय ज्ञान, आजीविका और संरक्षण को साथ समझा जाता है। पवित्र उपवन, सामुदायिक नियम और चिपको जैसे आंदोलन अलग प्रकार की भागीदारी दिखाते हैं। संयुक्त वन प्रबंधन (Joint Forest Management) में समुदाय और वन विभाग के सहयोग पर बल दिया जाता है। केवल लोगों से बाहरी आदेश मानने को कहना पूरी भागीदारी नहीं है। निर्णय में आवाज, स्पष्ट जिम्मेदारी और लाभ का न्यायपूर्ण बँटवारा भी जरूरी है। एक काल्पनिक गाँव वन के पास चारा एकत्र करता है। यदि नियम बिना चर्चा बने तो कमजोर परिवारों की कठिनाई बढ़ सकती है। बेहतर योजना में उपयोग की सीमा, निगरानी, वैकल्पिक व्यवस्था और विवाद समाधान तय किए जा सकते हैं। सभी समुदायों को एक जैसी सोच वाला समूह न मानें; महिलाओं, छोटे परिवारों और अलग आजीविका वालों की जरूरतें भिन्न हो सकती हैं। उत्तर में भागीदारी का एक उदाहरण और उसकी सफलता की एक शर्त लिखें। इससे संरक्षण सामाजिक प्रक्रिया के रूप में समझ आता है।"
+      },
+      "question": {
+        "en": "What makes participation more than merely following an order?",
+        "hi": "भागीदारी केवल आदेश मानने से अधिक कैसे है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Reading conservation maps",
+        "hi": "संरक्षण मानचित्र पढ़ना"
+      },
+      "body": {
+        "en": "Map markers identify examples such as Corbett, Kaziranga, Gir, Sundarbans, Periyar and Keoladeo. They do not show complete park boundaries or current animal numbers. Compare north–south and east–west positions and connect each place with a habitat. Kaziranga is associated with floodplain landscapes, while Gir is known for Asiatic lions. A marker is not proof that the species occurs only there. Use a prescribed atlas for assessment and distinguish a sanctuary, national park, reserve and larger ecological region when naming locations.\n\nA map can support a location claim but may not support a population claim. Seeing a park marker in Assam tells you where the selected example lies; it does not reveal the number of animals living there. To compare populations, you would need a dated survey with a clear method. Use the map legend and scale before making conclusions. In this learning map, markers provide orientation and the accompanying text explains their limits explicitly.",
+        "hi": "मानचित्र में कॉर्बेट, काजीरंगा, गिर, सुंदरबन, पेरियार और केवलादेव जैसे संदर्भ स्थल देखें। यहाँ बिंदु स्थान पहचानने के लिए हैं; वे उद्यान की पूरी सीमा या जीवों की वर्तमान संख्या नहीं दिखाते। पहले उत्तर-दक्षिण और पूर्व-पश्चिम की सापेक्ष स्थिति समझें। फिर स्थल को उसके आवास से जोड़ें। काजीरंगा का संबंध बाढ़ मैदान से है, जबकि गिर एशियाई सिंह के लिए प्रसिद्ध है। किसी स्थल का नाम किसी जीव से जुड़ना यह सिद्ध नहीं करता कि वह जीव केवल उसी बिंदु पर मिलता है। राष्ट्रीय उद्यान, अभयारण्य और बड़े प्राकृतिक क्षेत्र के नाम अलग हो सकते हैं। अभ्यास में 2 स्थलों के बीच दिशा लिखें, दूरी का अनुमान बिना पैमाने के निश्चित न बताएँ। परीक्षा के लिए निर्धारित राजनीतिक रूपरेखा और एटलस का उपयोग करें। यदि प्रश्न राज्य पूछता है तो राज्य दें; अगर स्थल पूछता है तो विशिष्ट स्थल दें। इस भेद से सही जानकारी भी गलत स्थान पर लिखने की भूल घटती है।"
+      },
+      "question": {
+        "en": "What can and cannot a conservation location marker tell you?",
+        "hi": "संरक्षण स्थल का बिंदु क्या बता सकता है और क्या नहीं?"
+      }
+    },
+    {
+      "title": {
+        "en": "Evaluate a conservation plan",
+        "hi": "संरक्षण योजना का मूल्यांकन"
+      },
+      "body": {
+        "en": "A useful plan identifies a threat, its cause, affected people and organisms, and a workable response. For a fictional wetland, dumping waste may reduce water quality and damage birds and fishing livelihoods. The response combines waste control, habitat care and local participation. Check outcomes using repeated observations at comparable times, not one attractive photograph. Revision should connect biodiversity, habitat loss, protection, administrative categories and community action. Explanations become stronger when a limitation or trade-off is acknowledged.\n\nImagine a restoration proposal that plants trees beside a stream. Ask whether the chosen species suit the habitat, whether natural regeneration could help, how seedlings will survive and who will maintain the site. Success should be judged through ecological condition and fair participation, not only the number planted on one day. This is an original classroom application of conservation reasoning. It encourages comparison of alternatives while avoiding the claim that one method works in every forest.",
+        "hi": "एक उपयोगी संरक्षण योजना में समस्या, कारण, प्रभावित जीव तथा लोग और व्यावहारिक उपाय स्पष्ट होते हैं। मान लें काल्पनिक आर्द्रभूमि में कचरा डाला जा रहा है। इससे पानी की गुणवत्ता, पक्षियों का भोजन और मछली पालन प्रभावित हो सकते हैं। केवल चेतावनी का बोर्ड लगा देना पर्याप्त नहीं होगा। कचरे का स्रोत रोकना, उचित निस्तारण, आवास की देखभाल और लोगों का सहयोग साथ चाहिए। परिणाम जानने के लिए समान मौसम में बार-बार अवलोकन करें; एक सुंदर तस्वीर पूरी सफलता का प्रमाण नहीं है। विद्यार्थी 3 प्रश्न पूछ सकता है: समस्या क्यों बनी, किस पर प्रभाव पड़ा और उपाय उस कारण को कैसे बदलता है। पुनरावृत्ति में जैव विविधता, आवास क्षति, संरक्षण कानून, वन श्रेणियाँ और समुदाय को जोड़ें। सामान्य गलती यह है कि संरक्षण को केवल प्रसिद्ध बड़े पशुओं तक सीमित कर दिया जाए। छोटे जीव और पारिस्थितिक संबंध भी आवश्यक हैं। संतुलित उत्तर में लाभ के साथ सीमा या कठिनाई स्वीकार करना तर्क को अधिक मजबूत बनाता है।"
+      },
+      "question": {
+        "en": "Suggest a combined response to waste entering a wetland.",
+        "hi": "आर्द्रभूमि में कचरा आने पर संयुक्त उपाय सुझाएँ।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "What does biodiversity include?",
+        "hi": "जैव विविधता में क्या शामिल है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Organisms and their varied relationships",
+            "hi": "जीव और उनके विविध संबंध"
+          },
+          "reason": {
+            "en": "Diversity includes interacting life forms.",
+            "hi": "विविधता में परस्पर जुड़े जीव आते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only tigers",
+            "hi": "केवल बाघ"
+          },
+          "reason": {
+            "en": "Small organisms matter too.",
+            "hi": "छोटे जीव भी महत्त्वपूर्ण हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only timber price",
+            "hi": "केवल लकड़ी का मूल्य"
+          },
+          "reason": {
+            "en": "Price does not describe living diversity.",
+            "hi": "मूल्य जीव विविधता नहीं बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only planted tree numbers",
+            "hi": "केवल लगाए पेड़ों की संख्या"
+          },
+          "reason": {
+            "en": "Species and habitat quality also matter.",
+            "hi": "प्रजाति और आवास की गुणवत्ता भी जरूरी है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "When was Project Tiger launched?",
+        "hi": "प्रोजेक्ट टाइगर कब शुरू हुआ?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "1973",
+            "hi": "1973"
+          },
+          "reason": {
+            "en": "This is the launch year.",
+            "hi": "यह आरंभ का वर्ष है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1857",
+            "hi": "1857"
+          },
+          "reason": {
+            "en": "This relates to a different historical event.",
+            "hi": "यह दूसरी ऐतिहासिक घटना से जुड़ा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1947",
+            "hi": "1947"
+          },
+          "reason": {
+            "en": "This is Indian independence, not the launch.",
+            "hi": "यह स्वतंत्रता का वर्ष है, आरंभ का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1992",
+            "hi": "1992"
+          },
+          "reason": {
+            "en": "This is associated with the Rio summit.",
+            "hi": "यह रियो सम्मेलन से जुड़ा है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What is habitat fragmentation?",
+        "hi": "आवास विखंडन क्या है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Breaking habitat into separated patches",
+            "hi": "आवास का अलग टुकड़ों में बँटना"
+          },
+          "reason": {
+            "en": "Connections between patches can be lost.",
+            "hi": "टुकड़ों का संपर्क खो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All organisms growing larger",
+            "hi": "सभी जीव बड़े होना"
+          },
+          "reason": {
+            "en": "Size is not fragmentation.",
+            "hi": "आकार विखंडन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only counting trees",
+            "hi": "केवल पेड़ गिनना"
+          },
+          "reason": {
+            "en": "Counting does not describe habitat breaks.",
+            "hi": "गिनती आवास का टूटना नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Increasing rainfall everywhere",
+            "hi": "हर जगह वर्षा बढ़ना"
+          },
+          "reason": {
+            "en": "This is not the meaning.",
+            "hi": "यह इसका अर्थ नहीं है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which is an administrative forest category?",
+        "hi": "प्रशासनिक वन श्रेणी कौन है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Reserved forest",
+            "hi": "आरक्षित वन"
+          },
+          "reason": {
+            "en": "It describes legal-management status.",
+            "hi": "यह कानूनी-प्रबंधन स्थिति बताती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Evergreen",
+            "hi": "सदाबहार"
+          },
+          "reason": {
+            "en": "This describes vegetation behaviour.",
+            "hi": "यह वनस्पति की विशेषता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Deciduous",
+            "hi": "पर्णपाती"
+          },
+          "reason": {
+            "en": "This describes leaf shedding.",
+            "hi": "यह पत्ते झड़ने की विशेषता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Thorn vegetation",
+            "hi": "कंटीली वनस्पति"
+          },
+          "reason": {
+            "en": "This is a vegetation type.",
+            "hi": "यह वनस्पति का प्रकार है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Gir is especially associated with which animal?",
+        "hi": "गिर विशेष रूप से किस जीव से जुड़ा है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Asiatic lion",
+            "hi": "एशियाई सिंह"
+          },
+          "reason": {
+            "en": "Gir is a well-known conservation habitat.",
+            "hi": "गिर इसका प्रसिद्ध संरक्षण आवास है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Polar bear",
+            "hi": "ध्रुवीय भालू"
+          },
+          "reason": {
+            "en": "Its natural habitat is Arctic.",
+            "hi": "इसका प्राकृतिक आवास आर्कटिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Penguin",
+            "hi": "पेंगुइन"
+          },
+          "reason": {
+            "en": "Gir is not its natural habitat.",
+            "hi": "गिर इसका प्राकृतिक आवास नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Kangaroo",
+            "hi": "कंगारू"
+          },
+          "reason": {
+            "en": "It is associated naturally with Australia.",
+            "hi": "इसका प्राकृतिक संबंध ऑस्ट्रेलिया से है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which process returns nutrients from dead matter?",
+        "hi": "मृत पदार्थ से पोषक तत्त्व कौन लौटाता है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Decomposition",
+            "hi": "अपघटन"
+          },
+          "reason": {
+            "en": "Decomposers recycle nutrients.",
+            "hi": "अपघटक पोषक तत्त्व लौटाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only hunting",
+            "hi": "केवल शिकार"
+          },
+          "reason": {
+            "en": "Hunting is not nutrient recycling itself.",
+            "hi": "शिकार स्वयं पोषक पुनर्चक्रण नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Road building",
+            "hi": "सड़क बनाना"
+          },
+          "reason": {
+            "en": "This is infrastructure work.",
+            "hi": "यह आधारभूत संरचना का कार्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Timber pricing",
+            "hi": "लकड़ी का मूल्य तय करना"
+          },
+          "reason": {
+            "en": "This is an economic activity.",
+            "hi": "यह आर्थिक कार्य है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What is needed for meaningful participation?",
+        "hi": "सार्थक भागीदारी के लिए क्या चाहिए?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Voice and fair responsibilities",
+            "hi": "आवाज और न्यायपूर्ण जिम्मेदारी"
+          },
+          "reason": {
+            "en": "People should influence decisions affecting them.",
+            "hi": "लोगों को प्रभावित करने वाले निर्णय में भूमिका चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only orders",
+            "hi": "केवल आदेश"
+          },
+          "reason": {
+            "en": "Orders alone do not ensure participation.",
+            "hi": "आदेश मात्र भागीदारी नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Excluding all residents",
+            "hi": "सभी निवासियों को बाहर करना"
+          },
+          "reason": {
+            "en": "Exclusion prevents local participation.",
+            "hi": "बहिष्कार स्थानीय भागीदारी रोकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No information",
+            "hi": "कोई जानकारी नहीं"
+          },
+          "reason": {
+            "en": "Information supports informed decisions.",
+            "hi": "जानकारी समझदार निर्णय में सहायक है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What does a park marker show?",
+        "hi": "उद्यान का बिंदु क्या दिखाता है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Approximate reference location",
+            "hi": "लगभग संदर्भ स्थान"
+          },
+          "reason": {
+            "en": "It is a locational aid.",
+            "hi": "यह स्थान पहचानने का सहायक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Exact animal population",
+            "hi": "जीवों की सटीक संख्या"
+          },
+          "reason": {
+            "en": "A location symbol is not a census.",
+            "hi": "स्थान चिह्न जनगणना नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All park boundaries",
+            "hi": "उद्यान की सारी सीमाएँ"
+          },
+          "reason": {
+            "en": "A point has no area boundary.",
+            "hi": "बिंदु क्षेत्रीय सीमा नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every species range",
+            "hi": "हर प्रजाति का क्षेत्र"
+          },
+          "reason": {
+            "en": "Ranges require separate data.",
+            "hi": "वितरण के लिए अलग आँकड़े चाहिए।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Why protect prey in a tiger habitat?",
+        "hi": "बाघ के आवास में शिकार जीव क्यों बचाएँ?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "They support its food supply",
+            "hi": "वे उसका भोजन आधार हैं"
+          },
+          "reason": {
+            "en": "Predators depend on a functioning food web.",
+            "hi": "परभक्षी कार्यशील खाद्य जाल पर निर्भर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "They replace forests",
+            "hi": "वे वन का विकल्प हैं"
+          },
+          "reason": {
+            "en": "Prey also need habitat.",
+            "hi": "शिकार जीवों को भी आवास चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "They remove all threats",
+            "hi": "वे हर खतरा मिटाते हैं"
+          },
+          "reason": {
+            "en": "Other protections remain necessary.",
+            "hi": "अन्य सुरक्षा भी जरूरी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "They make monitoring unnecessary",
+            "hi": "वे निगरानी अनावश्यक करते हैं"
+          },
+          "reason": {
+            "en": "Monitoring still matters.",
+            "hi": "निगरानी फिर भी जरूरी है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which evidence best evaluates a conservation effort?",
+        "hi": "संरक्षण प्रयास का बेहतर प्रमाण क्या है?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Repeated dated observations of habitat and threats",
+            "hi": "आवास तथा दबाव के बार-बार दिनांकित अवलोकन"
+          },
+          "reason": {
+            "en": "Comparable evidence can reveal change.",
+            "hi": "तुलनीय प्रमाण बदलाव दिखा सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "One attractive photograph",
+            "hi": "एक सुंदर तस्वीर"
+          },
+          "reason": {
+            "en": "It may omit long-term conditions.",
+            "hi": "यह दीर्घकालीन स्थिति छोड़ सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "An undated old count",
+            "hi": "बिना तिथि की पुरानी संख्या"
+          },
+          "reason": {
+            "en": "Its relevance cannot be assessed.",
+            "hi": "उसकी उपयोगिता नहीं जाँची जा सकती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a slogan",
+            "hi": "केवल नारा"
+          },
+          "reason": {
+            "en": "A slogan is not evidence of outcomes.",
+            "hi": "नारा परिणाम का प्रमाण नहीं है।"
+          }
+        }
+      ]
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "Explain a food-web connection.",
+        "hi": "खाद्य जाल का संबंध समझाएँ।"
+      },
+      "answer": {
+        "en": "Plants support herbivores, which support predators; decomposers recycle nutrients.",
+        "hi": "पौधे शाकाहारियों और वे परभक्षियों का आधार हैं; अपघटक पोषक लौटाते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Name two causes of habitat stress.",
+        "hi": "आवास पर दबाव के 2 कारण दें।"
+      },
+      "answer": {
+        "en": "Conversion of land and fragmentation by infrastructure can reduce or separate habitat.",
+        "hi": "भूमि परिवर्तन और आधारभूत संरचना से विखंडन आवास घटा या अलग कर सकते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain community conservation.",
+        "hi": "सामुदायिक संरक्षण समझाएँ।"
+      },
+      "answer": {
+        "en": "Local people share decisions and responsibilities while protecting ecological and livelihood needs.",
+        "hi": "स्थानीय लोग पारिस्थितिक तथा आजीविका जरूरतें सुरक्षित रखते हुए निर्णय और जिम्मेदारी बाँटते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Separate forest cover from legal forest category.",
+        "hi": "वन आवरण और कानूनी श्रेणी अलग करें।"
+      },
+      "answer": {
+        "en": "Cover measures vegetation; an administrative category records legal-management status.",
+        "hi": "आवरण वनस्पति को मापता है; प्रशासनिक श्रेणी कानूनी-प्रबंधन स्थिति बताती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why date population figures?",
+        "hi": "जनसंख्या आँकड़ों की तिथि क्यों दें?"
+      },
+      "answer": {
+        "en": "Counts change and methods vary; a dated figure is not automatically a current estimate.",
+        "hi": "संख्याएँ तथा विधियाँ बदलती हैं; दिनांकित पुराना आँकड़ा अपने-आप वर्तमान अनुमान नहीं है।"
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "corbett",
+      "kind": "place",
+      "title": {
+        "en": "Corbett",
+        "hi": "कॉर्बेट"
+      },
+      "location": [
+        78.8,
+        29.5
+      ],
+      "info": {
+        "en": "Himalayan foothill conservation reference in Uttarakhand. Location marker is approximate, not a distribution boundary.",
+        "hi": "उत्तराखंड की हिमालयी तलहटी का संरक्षण संदर्भ। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    },
+    {
+      "id": "kaziranga",
+      "kind": "place",
+      "title": {
+        "en": "Kaziranga",
+        "hi": "काजीरंगा"
+      },
+      "location": [
+        93.2,
+        26.6
+      ],
+      "info": {
+        "en": "Assam floodplain habitat known for the greater one-horned rhinoceros. Location marker is approximate, not a distribution boundary.",
+        "hi": "असम का बाढ़ मैदान आवास, एक सींग वाले गैंडे के लिए प्रसिद्ध। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    },
+    {
+      "id": "gir",
+      "kind": "place",
+      "title": {
+        "en": "Gir",
+        "hi": "गिर"
+      },
+      "location": [
+        70.8,
+        21.1
+      ],
+      "info": {
+        "en": "Gujarat habitat associated with Asiatic lions. Location marker is approximate, not a distribution boundary.",
+        "hi": "गुजरात का एशियाई सिंह से जुड़ा आवास। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    },
+    {
+      "id": "sundarbans",
+      "kind": "place",
+      "title": {
+        "en": "Sundarbans",
+        "hi": "सुंदरबन"
+      },
+      "location": [
+        88.7,
+        21.9
+      ],
+      "info": {
+        "en": "Mangrove ecosystem in the delta region. Location marker is approximate, not a distribution boundary.",
+        "hi": "डेल्टा क्षेत्र का मैंग्रोव पारितंत्र। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    },
+    {
+      "id": "periyar",
+      "kind": "place",
+      "title": {
+        "en": "Periyar",
+        "hi": "पेरियार"
+      },
+      "location": [
+        77.2,
+        9.5
+      ],
+      "info": {
+        "en": "Western Ghats conservation reference in Kerala. Location marker is approximate, not a distribution boundary.",
+        "hi": "केरल के पश्चिमी घाट का संरक्षण संदर्भ। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    },
+    {
+      "id": "keoladeo",
+      "kind": "place",
+      "title": {
+        "en": "Keoladeo",
+        "hi": "केवलादेव"
+      },
+      "location": [
+        77.5,
+        27.2
+      ],
+      "info": {
+        "en": "Wetland bird habitat near Bharatpur. Location marker is approximate, not a distribution boundary.",
+        "hi": "भरतपुर के पास आर्द्रभूमि पक्षी आवास। स्थान चिह्न लगभग है, वितरण की सीमा नहीं।"
+      }
+    }
+  ],
+  "mapQuestions": [
+    {
+      "question": {
+        "en": "Locate Gir and Kaziranga and compare their positions.",
+        "hi": "गिर और काजीरंगा दिखाकर स्थिति तुलना करें।"
+      },
+      "answer": {
+        "en": "Gir is in western India in Gujarat; Kaziranga lies in northeastern India in Assam.",
+        "hi": "गिर पश्चिम भारत के गुजरात में; काजीरंगा पूर्वोत्तर के असम में है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Locate Sundarbans and Periyar; identify a habitat distinction.",
+        "hi": "सुंदरबन और पेरियार दिखाकर आवास का अंतर दें।"
+      },
+      "answer": {
+        "en": "Sundarbans is a deltaic mangrove region; Periyar is a Western Ghats conservation area.",
+        "hi": "सुंदरबन डेल्टाई मैंग्रोव क्षेत्र; पेरियार पश्चिमी घाट का संरक्षण क्षेत्र है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "title": {
+        "en": "Beyond a tree count",
+        "hi": "वृक्ष गिनती से आगे"
+      },
+      "question": {
+        "en": "Two plots have 100 trees each. Are they equally diverse?",
+        "hi": "2 भूखंडों में 100-100 पेड़ हैं। क्या विविधता समान है?"
+      },
+      "steps": [
+        {
+          "en": "Compare species and habitat structure.",
+          "hi": "प्रजातियाँ और आवास संरचना तुलना करें।"
+        },
+        {
+          "en": "Include other organisms.",
+          "hi": "अन्य जीव भी देखें।"
+        }
+      ],
+      "answer": {
+        "en": "Tree count alone cannot establish equal biodiversity.",
+        "hi": "केवल पेड़ संख्या समान जैव विविधता सिद्ध नहीं करती।"
+      }
+    },
+    {
+      "title": {
+        "en": "A road and wildlife",
+        "hi": "सड़क और वन्यजीव"
+      },
+      "question": {
+        "en": "A new road splits habitat. What should planners examine?",
+        "hi": "नई सड़क आवास बाँटती है। क्या जाँचें?"
+      },
+      "steps": [
+        {
+          "en": "Locate animal movement routes.",
+          "hi": "जीवों के आवागमन मार्ग पहचानें।"
+        },
+        {
+          "en": "Compare alternatives and mitigation.",
+          "hi": "विकल्प तथा क्षति घटाने के उपाय तुलना करें।"
+        }
+      ],
+      "answer": {
+        "en": "Consider connectivity, crossing safety and local needs together.",
+        "hi": "संपर्क, सुरक्षित पारगमन और स्थानीय जरूरतें साथ देखें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Reading a dated claim",
+        "hi": "दिनांकित दावा पढ़ना"
+      },
+      "question": {
+        "en": "A report gives an old animal count. Can it be called today’s count?",
+        "hi": "रिपोर्ट में पुरानी जीव संख्या है। क्या उसे आज की संख्या कहें?"
+      },
+      "steps": [
+        {
+          "en": "Check survey date and method.",
+          "hi": "सर्वेक्षण तिथि और विधि देखें।"
+        },
+        {
+          "en": "Seek comparable newer evidence.",
+          "hi": "तुलनीय नया प्रमाण खोजें।"
+        }
+      ],
+      "answer": {
+        "en": "No; retain the original date and qualify the claim.",
+        "hi": "नहीं; मूल तिथि रखें और दावे की सीमा बताएँ।"
+      }
+    }
+  ],
+  "why": {
+    "en": "Species survive through connected habitats and food webs; effective conservation combines protection with informed community participation.",
+    "hi": "प्रजातियाँ जुड़े आवास और खाद्य जाल से जीवित रहती हैं; प्रभावी संरक्षण सुरक्षा तथा समझदार सामुदायिक भागीदारी जोड़ता है।"
+  },
+  "missions": [
+    {
+      "key": "visited",
+      "min": 3,
+      "label": {
+        "en": "Explore 3 different map features.",
+        "hi": "मानचित्र के 3 अलग स्थल देखें।"
+      }
+    },
+    {
+      "key": "zoom",
+      "min": 2,
+      "label": {
+        "en": "Zoom to 2× and compare locations.",
+        "hi": "2× ज़ूम करके स्थानों की तुलना करें।"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, Chapter 2, 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jess102.pdf"
+    },
+    {
+      "title": "UPMSP Class 10 Social Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/932-Social-Science-Class-10.pdf"
+    }
+  ],
+  "scopeNote": {
+    "en": "Original study companion. Map markers are approximate reference locations; they do not show complete distributions or political boundaries. Use the prescribed atlas for map assessment.",
+    "hi": "मौलिक अध्ययन-सहायक। मानचित्र चिह्न लगभग संदर्भ स्थान हैं; वे पूरा वितरण या राजनीतिक सीमाएँ नहीं दिखाते। मानचित्र परीक्षा के लिए निर्धारित एटलस देखें।"
+  }
+}

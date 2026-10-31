@@ -1,0 +1,898 @@
+{
+  "id": 1,
+  "title": {
+    "en": "Real Numbers",
+    "hi": "वास्तविक संख्याएँ"
+  },
+  "goal": {
+    "en": "Use prime structure to calculate HCF and LCM and explain why familiar square roots are irrational.",
+    "hi": "अभाज्य संरचना से HCF तथा LCM निकालें और परिचित वर्गमूलों की अपरिमेयता तर्क से समझाएँ।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Integers, primes and composite numbers",
+        "hi": "पूर्णांक, अभाज्य और भाज्य संख्याएँ"
+      },
+      "body": {
+        "en": "A real number names a point on the number line. Rational numbers can be written as p/q with integer p and nonzero integer q; irrational numbers cannot. This chapter studies positive integers closely because their prime structure helps us understand both divisibility and irrationality. A prime number is greater than 1 and has exactly two positive factors, 1 and itself. A composite number is greater than 1 and has another positive factor. Thus 1 is neither prime nor composite. The number 2 is the only even prime: every larger even integer has 2 as an additional factor. To test a small integer, try potential prime divisors rather than guessing from its last digit. If n is composite, at least one factor is at most √n, otherwise both factors would exceed √n and their product would exceed n. For example, testing 2, 3 and 5 is enough to establish that 37 is prime. A factor and a multiple describe different directions of divisibility.",
+        "hi": "वास्तविक संख्या (Real number) संख्या रेखा के किसी बिंदु का मान बताती है। परिमेय संख्या को p/q लिख सकते हैं, जहाँ p और q पूर्णांक तथा q अशून्य है। अपरिमेय संख्या ऐसा रूप नहीं रखती। इस अध्याय में धनात्मक पूर्णांकों की संरचना पर विशेष ध्यान है। अभाज्य संख्या (Prime number) 1 से बड़ी होती है और उसके ठीक 2 धनात्मक गुणनखंड होते हैं: 1 तथा वह संख्या स्वयं। भाज्य संख्या (Composite number) 1 से बड़ी होती है और उसका कोई अन्य धनात्मक गुणनखंड भी होता है। इसलिए 1 न अभाज्य है, न भाज्य। 2 अकेली सम अभाज्य संख्या है। हर बड़ी सम संख्या में 2 अतिरिक्त गुणनखंड होगा। किसी छोटी संख्या को जाँचते समय अभाज्य भाजकों से भाग दें। यदि n भाज्य है, तो उसका कम-से-कम 1 गुणनखंड √n से अधिक नहीं होगा। दोनों गुणनखंड √n से बड़े हों, तो उनका गुणनफल n से बड़ा हो जाएगा। इसलिए 37 की जाँच में 2, 3 और 5 पर्याप्त हैं। गुणनखंड संख्या को विभाजित करता है; गुणज उस संख्या का गुणनफल होता है। इन दोनों शब्दों को उलटने से आगे HCF और LCM में गलती होती है।"
+      },
+      "formula": "Prime: n > 1; positive factors exactly 1 and n",
+      "question": {
+        "en": "Why is 1 not prime?",
+        "hi": "1 अभाज्य क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "It has only one positive factor, not exactly two.",
+        "hi": "उसका केवल 1 धनात्मक गुणनखंड है; ठीक 2 नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Fundamental theorem and prime factorisation",
+        "hi": "आधारभूत प्रमेय और अभाज्य गुणनखंडन"
+      },
+      "body": {
+        "en": "The Fundamental Theorem of Arithmetic says that every composite positive integer can be expressed as a product of primes, uniquely apart from the order of those primes. Existence means a decomposition can be made; uniqueness means different correct routes finish with the same prime factors and exponents. Start with a convenient factor pair and keep breaking every composite factor until all leaves are prime. For 180, one route is 18 × 10 and another is 12 × 15. Both eventually give 2² × 3² × 5. A factor tree is incomplete if a leaf such as 9 or 15 remains. Repeated division by primes is another arrangement of the same reasoning. Count occurrences carefully: 2 × 2 × 2 is 2³, not 3². Multiplying the final factors is a useful check, but it does not replace checking that each factor is prime. Prime factorisation is the common language behind the next two calculations: common factors use shared prime power, whereas common multiples must contain enough of every required prime.",
+        "hi": "अंकगणित का आधारभूत प्रमेय (Fundamental Theorem of Arithmetic) बताता है कि हर धनात्मक भाज्य पूर्णांक को अभाज्य संख्याओं के गुणनफल के रूप में लिख सकते हैं। गुणनखंडों के क्रम को छोड़कर यह रूप अद्वितीय होता है। अस्तित्व का अर्थ है कि ऐसा गुणनखंडन मिलेगा। अद्वितीयता का अर्थ है कि अलग सही रास्ते भी अंत में वही अभाज्य और वही घातें देंगे। कोई सुविधाजनक गुणनखंड युग्म चुनें, फिर हर भाज्य गुणनखंड को और तोड़ें। 180 को 18 × 10 या 12 × 15 से शुरू कर सकते हैं। दोनों रास्ते अंत में 2² × 3² × 5 देते हैं। यदि गुणनखंड वृक्ष में 9 या 15 जैसी संख्या बची है, तो काम अधूरा है। क्रमिक अभाज्य भाग से भी यही परिणाम मिलता है। दोहराव गिनते समय ध्यान दें: 2 × 2 × 2 को 2³ लिखते हैं, 3² नहीं। अंतिम गुणनफल मूल संख्या के बराबर करके जाँचें। साथ में प्रत्येक अंतिम गुणनखंड का अभाज्य होना भी जरूरी है। यही संरचना आगे HCF तथा LCM निकालने का आधार है। साझा गुणनखंड साझा अभाज्य घातों से बनते हैं; साझा गुणज में सभी आवश्यक अभाज्य घातें होनी चाहिए।"
+      },
+      "formula": "180 = 2² × 3² × 5",
+      "question": {
+        "en": "Do 18 × 10 and 12 × 15 contradict uniqueness?",
+        "hi": "क्या 18 × 10 तथा 12 × 15 अद्वितीयता का खंडन करते हैं?"
+      },
+      "answer": {
+        "en": "No. Those are composite decompositions; their complete prime factors agree.",
+        "hi": "नहीं। ये भाज्य विघटन हैं; पूर्ण अभाज्य गुणनखंड समान हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Highest common factor",
+        "hi": "महत्तम समापवर्तक"
+      },
+      "body": {
+        "en": "The highest common factor, HCF, is the greatest positive integer that divides each of the given positive integers exactly. Write their prime factorisations and keep only the primes present in every number, with the smallest exponent found among them. For 72 = 2³ × 3² and 120 = 2³ × 3 × 5, the shared contribution is 2³ × 3, giving HCF 24. The factor 5 is absent from 72 and therefore cannot appear in a common factor. The exponent of 3 cannot be 2 because 120 contains only one factor 3. This explains the minimum-power rule instead of treating it as a memory trick. If no prime is common, the HCF is 1 and the integers are coprime. Coprime does not mean that both integers are prime: 8 and 15 are composite but coprime. Always check that the proposed answer divides every original number. The HCF cannot exceed the smallest positive number in the list. A positive common factor also divides any integer difference of the two numbers.",
+        "hi": "महत्तम समापवर्तक (Highest Common Factor, HCF) वह सबसे बड़ा धनात्मक पूर्णांक है जो दी हुई हर संख्या को पूरा विभाजित करता है। पहले सभी संख्याओं का अभाज्य गुणनखंडन करें। केवल वे अभाज्य लें जो हर संख्या में हैं। उनकी सबसे छोटी उपस्थित घात चुनें। जैसे 72 = 2³ × 3² तथा 120 = 2³ × 3 × 5 में साझा भाग 2³ × 3 है, इसलिए HCF 24 है। 5 संख्या 72 में नहीं है, इसलिए साझा गुणनखंड में नहीं आ सकता। 3 की घात 2 नहीं ले सकते, क्योंकि 120 में केवल 1 बार 3 है। इस तरह न्यूनतम घात वाला नियम समझ में आता है। यदि कोई अभाज्य साझा नहीं है, तो HCF 1 होता है। ऐसी संख्याएँ सह-अभाज्य (Coprime) कहलाती हैं। दोनों संख्याओं का अभाज्य होना आवश्यक नहीं है। 8 और 15 दोनों भाज्य हैं, फिर भी सह-अभाज्य हैं। अंतिम उत्तर से हर मूल संख्या को भाग देकर शेष 0 जाँचें। HCF दी हुई सबसे छोटी धनात्मक संख्या से बड़ा नहीं हो सकता। हर साझा गुणनखंड दो संख्याओं के अंतर को भी विभाजित करता है। यही विचार अतिरिक्त अध्ययन में यूक्लिड की भाग विधि समझने में उपयोगी होता है।"
+      },
+      "formula": "HCF = product of common primes with minimum exponents",
+      "question": {
+        "en": "Find HCF of 8 and 15.",
+        "hi": "8 तथा 15 का HCF ज्ञात करें।"
+      },
+      "answer": {
+        "en": "1, because their prime factorisations share no prime.",
+        "hi": "1, क्योंकि अभाज्य गुणनखंडों में कोई अभाज्य साझा नहीं है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Least common multiple and the product relation",
+        "hi": "लघुत्तम समापवर्त्य और गुणनफल संबंध"
+      },
+      "body": {
+        "en": "The least common multiple, LCM, is the smallest positive integer divisible by every given positive integer. A common multiple must include every prime power required by any original number. Therefore take all distinct primes and the greatest exponent needed for each. With 72 and 120, the LCM is 2³ × 3² × 5 = 360. Dividing 360 by the original numbers gives integers 5 and 3. The maximum-power rule is different from multiplying the two numbers without removing overlap. For two positive integers a and b, HCF(a,b) × LCM(a,b) = ab. For each prime, the smaller exponent plus the larger exponent equals the sum of the two original exponents, proving this identity. It can find one unknown quantity when the other three are known. The same simple product identity does not hold for three arbitrary integers. For three numbers calculate their full prime powers or combine LCMs successively. Keep the terms highest common factor and least common multiple attached to their definitions, because their names sound similar but solve opposite divisibility tasks.",
+        "hi": "लघुत्तम समापवर्त्य (Least Common Multiple, LCM) वह सबसे छोटा धनात्मक पूर्णांक है जो दी हुई प्रत्येक संख्या से पूरा विभाजित हो। किसी साझा गुणज में हर मूल संख्या के लिए जरूरी अभाज्य घात होनी चाहिए। इसलिए सभी अलग अभाज्य लें और हर अभाज्य की सबसे बड़ी जरूरी घात चुनें। 72 तथा 120 के लिए LCM = 2³ × 3² × 5 = 360 मिलता है। 360 को 72 और 120 से भाग देने पर क्रमशः 5 तथा 3 मिलते हैं। केवल दोनों संख्याओं को गुणा करना हमेशा सबसे छोटा साझा गुणज नहीं देता, क्योंकि साझा भाग दोहर सकता है। दो धनात्मक पूर्णांकों a तथा b के लिए HCF(a,b) × LCM(a,b) = ab होता है। हर अभाज्य की न्यूनतम और अधिकतम घातों का योग उसकी दोनों मूल घातों के योग के बराबर है। इसी से संबंध का कारण समझ आता है। ज्ञात 3 राशियों से चौथी राशि निकाल सकते हैं। लेकिन यही सरल गुणनफल संबंध 3 मनमानी संख्याओं पर लागू नहीं होता। वहाँ पूरा अभाज्य गुणनखंडन करें या क्रम से LCM निकालें। उत्तर प्रत्येक संख्या का गुणज हो और आवश्यक अधिकतम घातों से बना हो, यह जाँचना जरूरी है।"
+      },
+      "formula": "HCF(a,b) × LCM(a,b) = a × b, a,b > 0",
+      "question": {
+        "en": "Does HCF × LCM equal the product for every three numbers?",
+        "hi": "क्या हर 3 संख्याओं में HCF × LCM उनका गुणनफल है?"
+      },
+      "answer": {
+        "en": "No. For 2, 4, 8 the left side is 2 × 8 = 16 but the product is 64.",
+        "hi": "नहीं। 2, 4, 8 में बायाँ पक्ष 2 × 8 = 16 तथा गुणनफल 64 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Choose HCF or LCM from the situation",
+        "hi": "स्थिति देखकर HCF या LCM चुनें"
+      },
+      "body": {
+        "en": "A word problem should be translated into a divisibility condition before choosing a procedure. If equal groups must use all items and the group size is as large as possible, the size must divide every total; this points to HCF. If several repeating events must next coincide, the waiting time must be a multiple of each period; choose LCM. Suppose lamps flash every 12 s and 18 s and flash together now. The first positive common time is 36 s, not 6 s. In contrast, cutting 12 m and 18 m ropes into the greatest equal lengths without waste gives 6 m pieces. State whether the question asks for the size of a group, the number of groups, or the time of reunion. These may require a second division after finding HCF or LCM. For a rectangular floor tiled with the largest identical squares, the tile side is the HCF of the two dimensions when both are expressed in the same unit. Count tiles by area division or by rows times columns, then check that no remainder is left.",
+        "hi": "शाब्दिक प्रश्न (Word problem) पढ़कर पहले विभाज्यता की शर्त लिखें, फिर विधि चुनें। सभी वस्तुओं को बिना बचाए सबसे बड़े समान समूहों में बाँटना हो, तो समूह का आकार हर कुल संख्या को विभाजित करेगा। यह HCF की स्थिति है। कई दोहराती घटनाएँ अगली बार एक साथ हों, तो समय हर अवधि का गुणज होगा। यह LCM की स्थिति है। यदि 2 लैंप अभी साथ चमकते हैं और फिर हर 12 s तथा 18 s में चमकते हैं, तो अगला साझा समय 36 s है; 6 s नहीं। इसके विपरीत 12 m तथा 18 m की रस्सियों के सबसे लंबे समान टुकड़े बिना अपव्यय काटने पर लंबाई 6 m होगी। ध्यान दें कि प्रश्न समूह का आकार पूछता है, समूहों की संख्या पूछता है या दोबारा मिलने का समय। HCF या LCM निकालने के बाद कभी एक अतिरिक्त भाग भी करना पड़ता है। आयताकार फर्श को सबसे बड़ी समान वर्गाकार टाइलों से ढकना हो, तो समान इकाई में लिखी दोनों लंबाइयों का HCF टाइल की भुजा देगा। टाइलों की संख्या क्षेत्रफल से या पंक्ति तथा स्तंभ गुणा करके निकालें। उत्तर की इकाई और शेष न बचने की शर्त दोनों जाँचें।"
+      },
+      "formula": "Largest equal size → HCF; first common positive repeat → LCM",
+      "question": {
+        "en": "Two bells ring every 10 min and 15 min. When next together?",
+        "hi": "2 घंटियाँ हर 10 min तथा 15 min पर बजती हैं। फिर साथ कब बजेंगी?"
+      },
+      "answer": {
+        "en": "After 30 min, their least positive common multiple.",
+        "hi": "30 min बाद; यह उनका सबसे छोटा धनात्मक साझा गुणज है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Proving √2 is irrational",
+        "hi": "√2 की अपरिमेयता का प्रमाण"
+      },
+      "body": {
+        "en": "A long decimal display cannot prove irrationality. A proof must show that no fraction of integers can equal the number. Assume, for contradiction, that √2 = a/b, with integers a and b, b nonzero, and the fraction reduced so HCF(a,b) = 1. Squaring gives a² = 2b². Thus a² is even, so a is even. This last step follows from prime factorisation: a square contains a prime exactly when the original integer does. Write a = 2k. Substituting gives 4k² = 2b² and hence b² = 2k², so b is also even. Both numerator and denominator then have the common factor 2. That contradicts the reduced-fraction assumption. Therefore √2 is irrational. Each line must state the reason for the next: assumption, squaring, prime divisibility, substitution, contradiction, conclusion. We have not shown that √2 fails to exist; it is a real length, but it is not rational. Squaring is used inside an assumed equality, not as a claim that all square roots are irrational.",
+        "hi": "दशमलव के बहुत से अंक लिखना अपरिमेयता का प्रमाण नहीं है। प्रमाण को दिखाना होगा कि कोई पूर्णांक भिन्न उस संख्या के बराबर नहीं हो सकती। विरोधाभास विधि (Proof by contradiction) में मानें कि √2 = a/b है, जहाँ a तथा b पूर्णांक, b अशून्य और भिन्न सरलतम रूप में है। इसलिए HCF(a,b) = 1 होगा। वर्ग करने से a² = 2b² मिलता है। अतः a² सम है, इसलिए a भी सम होगा। अभाज्य गुणनखंडन के अनुसार वर्ग में 2 तभी आएगा जब मूल संख्या में भी 2 हो। अब a = 2k लिखें। रखने पर 4k² = 2b² और फिर b² = 2k² मिलता है। इसलिए b भी सम होगा। अब a तथा b दोनों में 2 साझा गुणनखंड है। यह सरलतम भिन्न की प्रारंभिक शर्त का विरोध करता है। इसलिए √2 अपरिमेय है। परीक्षा में हर कदम का कारण दें: मान्यता, वर्ग, अभाज्य विभाज्यता, प्रतिस्थापन, विरोधाभास तथा निष्कर्ष। इससे √2 का अस्तित्व नकारा नहीं जाता। वह वास्तविक लंबाई है, बस परिमेय नहीं है। सभी वर्गमूल अपरिमेय भी नहीं होते; √4 = 2 परिमेय है।"
+      },
+      "formula": "√2 = a/b ⇒ a² = 2b² ⇒ 2 divides both a and b: contradiction",
+      "question": {
+        "en": "Why must a/b be in lowest terms at the start?",
+        "hi": "शुरू में a/b को सरलतम रूप में क्यों लेते हैं?"
+      },
+      "answer": {
+        "en": "So a shared factor found later contradicts the assumption.",
+        "hi": "ताकि बाद में मिला साझा गुणनखंड प्रारंभिक मान्यता का विरोध करे।"
+      }
+    },
+    {
+      "title": {
+        "en": "Other irrational roots and combinations",
+        "hi": "अन्य अपरिमेय मूल और उनके संयोजन"
+      },
+      "body": {
+        "en": "For a prime p, if p divides a², then p divides a. Its exponent in a² is twice its exponent in a, so it cannot appear in the square without appearing in the integer. Replacing 2 by 3 or 5 in the contradiction argument establishes irrationality of √3 and √5. More generally, a positive integer with any odd exponent in its prime factorisation cannot have an integer square root. For rational r and irrational x, r + x is irrational: if the sum were rational, subtracting r would make x rational. If r is nonzero, rx is also irrational, because dividing an assumed rational product by r would make x rational. The nonzero condition matters: 0 × √2 = 0. Two irrational numbers, however, can add or multiply to a rational number. For example, √2 + (−√2) = 0 and √2 × √2 = 2. Therefore use a proved rule with its stated conditions; do not guess the type of a result merely from the appearance of its terms.",
+        "hi": "यदि p अभाज्य है और p संख्या a² को विभाजित करता है, तो p संख्या a को भी विभाजित करेगा। a² में हर अभाज्य की घात, a में उसकी घात की दोगुनी है। इसलिए कोई अभाज्य वर्ग में अचानक नहीं आ सकता। √2 वाले विरोधाभास तर्क में 2 की जगह 3 या 5 रखने से √3 तथा √5 की अपरिमेयता मिलती है। किसी धनात्मक पूर्णांक के अभाज्य गुणनखंडन में कोई घात विषम हो, तो उसका वर्गमूल पूर्णांक नहीं होगा। यदि r परिमेय तथा x अपरिमेय है, तो r + x अपरिमेय है। योग परिमेय मानने पर r घटाकर x परिमेय मिल जाएगा, जो विरोधाभास है। अशून्य परिमेय r के लिए rx भी अपरिमेय है। गुणनफल को परिमेय मानकर r से भाग देने पर फिर x परिमेय मिल जाएगा। अशून्य शर्त जरूरी है, क्योंकि 0 × √2 = 0 परिमेय है। लेकिन 2 अपरिमेय संख्याओं का योग या गुणनफल कभी परिमेय भी हो सकता है। √2 + (−√2) = 0 तथा √2 × √2 = 2 उदाहरण हैं। इसलिए केवल चिह्न देखकर निर्णय न लें। नियम लगाते समय उसकी सभी शर्तें लिखें और परिणाम के लिए तर्क दें।"
+      },
+      "formula": "r + x irrational; rx irrational if r is rational, r ≠ 0, x irrational",
+      "question": {
+        "en": "Can two irrational numbers have a rational product?",
+        "hi": "क्या 2 अपरिमेय संख्याओं का गुणनफल परिमेय हो सकता है?"
+      },
+      "answer": {
+        "en": "Yes: √3 × √3 = 3.",
+        "hi": "हाँ: √3 × √3 = 3।"
+      }
+    },
+    {
+      "title": {
+        "en": "A reliable method and optional connections",
+        "hi": "विश्वसनीय विधि और अतिरिक्त संबंध"
+      },
+      "body": {
+        "en": "Organise a solution in a short logical chain. First identify the numbers and any restrictions such as positive integer or nonzero denominator. Next write a complete prime factorisation, choose the relevant exponents, calculate, and verify divisibility or the original equation. In an irrationality proof, write the lowest-terms assumption and make the contradiction explicit. Avoid reporting a calculator approximation such as 1.414 as exactly √2. An optional connection to earlier learning is the decimal test: after reducing p/q, a positive denominator containing only prime factors 2 and 5 gives a terminating decimal, because it can be made a power of 10. A different prime factor gives a nonterminating recurring decimal. Another enrichment is repeated division with remainder to calculate HCF; its final nonzero remainder is the HCF. These connections support understanding but should not be confused with separate additional examinable chapters. Exact factors, fractions and radicals should normally be retained until the final numerical interpretation. In application questions, write a complete sentence stating what the calculated integer represents.",
+        "hi": "हल को छोटे तर्कपूर्ण क्रम में व्यवस्थित करें। पहले दी संख्याएँ और उनकी शर्तें लिखें, जैसे धनात्मक पूर्णांक या अशून्य हर। फिर पूरा अभाज्य गुणनखंडन करें, जरूरी घात चुनें, गणना करें और मूल शर्त जाँचें। HCF हर संख्या को विभाजित करे; LCM हर संख्या से विभाजित हो। अपरिमेयता के प्रमाण में सरलतम भिन्न की मान्यता तथा उससे निकला विरोधाभास स्पष्ट लिखें। कैलकुलेटर का 1.414 जैसा मान √2 का सन्निकटन है, उसका सटीक मान नहीं। पूर्व अध्ययन से जुड़ा एक अतिरिक्त संबंध दशमलव परीक्षण है। p/q को सरलतम रूप में लिखने के बाद q में केवल 2 तथा 5 अभाज्य हों, तो हर को 10 की घात बना सकते हैं और दशमलव सांत होगा। अन्य अभाज्य रहने पर दशमलव असांत आवर्ती होगा। अतिरिक्त अभ्यास में बार-बार शेष सहित भाग से भी HCF निकाल सकते हैं; अंतिम अशून्य शेष HCF होता है। ये समझ बढ़ाने वाले संबंध हैं, अलग नए परीक्षा-अध्याय नहीं। अंतिम चरण तक भिन्न और करणी के सटीक रूप रखें। अनुप्रयोग प्रश्न में उत्तर का अर्थ तथा इकाई पूरी पंक्ति में लिखें, केवल अकेली संख्या नहीं।"
+      },
+      "formula": "p/q in lowest terms: q = 2ᵐ5ⁿ, m,n nonnegative integers ⇒ terminating decimal (enrichment)",
+      "question": {
+        "en": "Why should a fraction be reduced before the decimal test?",
+        "hi": "दशमलव परीक्षण से पहले भिन्न सरल क्यों करें?"
+      },
+      "answer": {
+        "en": "A denominator prime may cancel; 3/6 = 1/2 terminates despite the unreduced 6.",
+        "hi": "हर का कोई अभाज्य कट सकता है; 3/6 = 1/2 सांत है, भले पहले हर 6 था।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find HCF and LCM of 48 and 180.",
+        "hi": "48 तथा 180 का HCF और LCM ज्ञात करें।"
+      },
+      "steps": [
+        {
+          "en": "Given positive integers 48 and 180; find their HCF and LCM.",
+          "hi": "दिया: धनात्मक पूर्णांक 48 और 180; HCF तथा LCM ज्ञात करने हैं।"
+        },
+        {
+          "en": "48 = 2⁴ × 3; 180 = 2² × 3² × 5.",
+          "hi": "48 = 2⁴ × 3; 180 = 2² × 3² × 5।"
+        },
+        {
+          "en": "HCF takes minimum shared powers: 2² × 3 = 12.",
+          "hi": "HCF में न्यूनतम साझा घातें: 2² × 3 = 12।"
+        },
+        {
+          "en": "LCM takes maximum powers: 2⁴ × 3² × 5 = 720. Check 12 × 720 = 48 × 180.",
+          "hi": "LCM में अधिकतम घातें: 2⁴ × 3² × 5 = 720। जाँच: 12 × 720 = 48 × 180।"
+        }
+      ],
+      "answer": {
+        "en": "HCF = 12; LCM = 720.",
+        "hi": "HCF = 12; LCM = 720।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Three lights flash every 18 s, 24 s and 30 s. If together now, when next together?",
+        "hi": "3 बत्तियाँ हर 18 s, 24 s और 30 s में चमकती हैं। अभी साथ चमकें, तो फिर कब साथ चमकेंगी?"
+      },
+      "steps": [
+        {
+          "en": "The time must be divisible by all 3 periods, so find the LCM.",
+          "hi": "समय तीनों अवधियों से विभाजित होना चाहिए, इसलिए LCM निकालें।"
+        },
+        {
+          "en": "18 = 2 × 3²; 24 = 2³ × 3; 30 = 2 × 3 × 5.",
+          "hi": "18 = 2 × 3²; 24 = 2³ × 3; 30 = 2 × 3 × 5।"
+        },
+        {
+          "en": "LCM = 2³ × 3² × 5 = 360 s.",
+          "hi": "LCM = 2³ × 3² × 5 = 360 s।"
+        },
+        {
+          "en": "360/18 = 20, 360/24 = 15 and 360/30 = 12 are integers.",
+          "hi": "360/18 = 20, 360/24 = 15 तथा 360/30 = 12 पूर्णांक हैं।"
+        }
+      ],
+      "answer": {
+        "en": "After 360 s, or 6 min.",
+        "hi": "360 s अर्थात 6 min बाद।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Prove that 3 + √5 is irrational.",
+        "hi": "सिद्ध करें कि 3 + √5 अपरिमेय है।"
+      },
+      "steps": [
+        {
+          "en": "Given √5 is irrational; suppose 3 + √5 = r for a rational r.",
+          "hi": "दिया: √5 अपरिमेय है। मानें 3 + √5 = r, जहाँ r परिमेय है।"
+        },
+        {
+          "en": "Subtract 3: √5 = r − 3.",
+          "hi": "3 घटाएँ: √5 = r − 3।"
+        },
+        {
+          "en": "The difference of rational numbers is rational, contradicting the given fact.",
+          "hi": "परिमेय संख्याओं का अंतर परिमेय है; यह दिए तथ्य का विरोध है।"
+        }
+      ],
+      "answer": {
+        "en": "Therefore 3 + √5 is irrational.",
+        "hi": "अतः 3 + √5 अपरिमेय है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "An 84 cm by 126 cm rectangle is tiled by the largest identical square tiles. Find tile size and count.",
+        "hi": "84 cm × 126 cm आयत को सबसे बड़ी समान वर्गाकार टाइलों से ढकना है। टाइल की भुजा तथा संख्या ज्ञात करें।"
+      },
+      "steps": [
+        {
+          "en": "The side must divide both dimensions, so use HCF.",
+          "hi": "भुजा दोनों लंबाइयों को विभाजित करे, इसलिए HCF लें।"
+        },
+        {
+          "en": "84 = 2² × 3 × 7 and 126 = 2 × 3² × 7; HCF = 42.",
+          "hi": "84 = 2² × 3 × 7 तथा 126 = 2 × 3² × 7; HCF = 42।"
+        },
+        {
+          "en": "Tiles along the dimensions: 84/42 = 2 and 126/42 = 3.",
+          "hi": "दोनों दिशाओं में टाइलें: 84/42 = 2 तथा 126/42 = 3।"
+        },
+        {
+          "en": "Count = 2 × 3 = 6; no part is left uncovered.",
+          "hi": "संख्या = 2 × 3 = 6; कोई भाग खाली नहीं बचता।"
+        }
+      ],
+      "answer": {
+        "en": "Side 42 cm; 6 tiles.",
+        "hi": "भुजा 42 cm; कुल 6 टाइलें।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Two positive integers have HCF 6 and LCM 180. One is 30. Find and verify the other.",
+        "hi": "2 धनात्मक पूर्णांकों का HCF 6 तथा LCM 180 है। एक संख्या 30 है। दूसरी संख्या निकालकर जाँचें।"
+      },
+      "steps": [
+        {
+          "en": "For two positive integers, a × b = HCF × LCM.",
+          "hi": "2 धनात्मक पूर्णांकों के लिए a × b = HCF × LCM।"
+        },
+        {
+          "en": "30b = 6 × 180 = 1080, so b = 36.",
+          "hi": "30b = 6 × 180 = 1080, इसलिए b = 36।"
+        },
+        {
+          "en": "30 = 2 × 3 × 5; 36 = 2² × 3². Their HCF is 6 and LCM is 180.",
+          "hi": "30 = 2 × 3 × 5; 36 = 2² × 3²। इनका HCF 6 और LCM 180 है।"
+        }
+      ],
+      "answer": {
+        "en": "The other integer is 36.",
+        "hi": "दूसरा पूर्णांक 36 है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which number is neither prime nor composite?",
+        "hi": "कौन-सी संख्या न अभाज्य है, न भाज्य?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "It has only one positive factor.",
+            "hi": "इसका केवल 1 धनात्मक गुणनखंड है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "2 has exactly two positive factors and is prime.",
+            "hi": "2 के ठीक 2 धनात्मक गुणनखंड हैं; यह अभाज्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "4 has 1, 2 and 4 as positive factors and is composite.",
+            "hi": "4 के धनात्मक गुणनखंड 1, 2 और 4 हैं; यह भाज्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9",
+            "hi": "9"
+          },
+          "reason": {
+            "en": "9 = 3 × 3 is composite.",
+            "hi": "9 = 3 × 3 भाज्य है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is the prime factorisation of 72?",
+        "hi": "72 का अभाज्य गुणनखंडन क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2² × 3³",
+            "hi": "2² × 3³"
+          },
+          "reason": {
+            "en": "This equals 108.",
+            "hi": "यह 108 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2³ × 3²",
+            "hi": "2³ × 3²"
+          },
+          "reason": {
+            "en": "8 × 9 = 72 and both bases are prime.",
+            "hi": "8 × 9 = 72 तथा दोनों आधार अभाज्य हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 × 3 × 12",
+            "hi": "2 × 3 × 12"
+          },
+          "reason": {
+            "en": "The product is 72 but 12 is not prime.",
+            "hi": "गुणनफल 72 है, पर 12 अभाज्य नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2⁶ × 3",
+            "hi": "2⁶ × 3"
+          },
+          "reason": {
+            "en": "This equals 192.",
+            "hi": "यह 192 है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "HCF of 18 and 24 is",
+        "hi": "18 तथा 24 का HCF है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "72",
+            "hi": "72"
+          },
+          "reason": {
+            "en": "72 is their LCM, not their HCF.",
+            "hi": "72 इनका LCM है, HCF नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "3 divides both but 6 is a larger common factor.",
+            "hi": "3 साझा गुणनखंड है, पर 6 बड़ा साझा गुणनखंड है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "18 = 2 × 3² and 24 = 2³ × 3 share 2 × 3.",
+            "hi": "18 = 2 × 3² तथा 24 = 2³ × 3 में 2 × 3 साझा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "12 does not divide 18 exactly.",
+            "hi": "12 संख्या 18 को पूरा विभाजित नहीं करता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "LCM of 8 and 12 is",
+        "hi": "8 तथा 12 का LCM है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "4 is their HCF.",
+            "hi": "4 इनका HCF है।"
+          }
+        },
+        {
+          "text": {
+            "en": "20",
+            "hi": "20"
+          },
+          "reason": {
+            "en": "Adding the numbers does not produce a common multiple here.",
+            "hi": "संख्याएँ जोड़ने से यहाँ साझा गुणज नहीं मिलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "96",
+            "hi": "96"
+          },
+          "reason": {
+            "en": "96 is a common multiple but not the least.",
+            "hi": "96 साझा गुणज है, पर सबसे छोटा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "24",
+            "hi": "24"
+          },
+          "reason": {
+            "en": "24 = 2³ × 3 is the least integer containing both required prime powers.",
+            "hi": "24 = 2³ × 3 में दोनों जरूरी अभाज्य घातें न्यूनतम पर्याप्त रूप में हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which pair is coprime?",
+        "hi": "कौन-सा युग्म सह-अभाज्य है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "8 and 15",
+            "hi": "8 तथा 15"
+          },
+          "reason": {
+            "en": "They have no common prime factor, so HCF is 1.",
+            "hi": "इनमें कोई साझा अभाज्य गुणनखंड नहीं; HCF 1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9 and 15",
+            "hi": "9 तथा 15"
+          },
+          "reason": {
+            "en": "Both contain the factor 3.",
+            "hi": "दोनों में 3 गुणनखंड है।"
+          }
+        },
+        {
+          "text": {
+            "en": "14 and 21",
+            "hi": "14 तथा 21"
+          },
+          "reason": {
+            "en": "Both contain the factor 7.",
+            "hi": "दोनों में 7 गुणनखंड है।"
+          }
+        },
+        {
+          "text": {
+            "en": "16 and 24",
+            "hi": "16 तथा 24"
+          },
+          "reason": {
+            "en": "Both are divisible by 8.",
+            "hi": "दोनों 8 से विभाजित हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For two positive integers, HCF × LCM equals",
+        "hi": "2 धनात्मक पूर्णांकों के लिए HCF × LCM बराबर है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Their sum",
+            "hi": "उनके योग के"
+          },
+          "reason": {
+            "en": "The relation concerns prime exponents in a product, not a sum.",
+            "hi": "संबंध गुणनफल की अभाज्य घातों का है, योग का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Their product",
+            "hi": "उनके गुणनफल के"
+          },
+          "reason": {
+            "en": "Minimum plus maximum exponents give the two original exponents together.",
+            "hi": "न्यूनतम और अधिकतम घातों का योग दोनों मूल घातों का योग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Their difference",
+            "hi": "उनके अंतर के"
+          },
+          "reason": {
+            "en": "A difference need not equal this product.",
+            "hi": "अंतर इस गुणनफल के बराबर होना आवश्यक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always 1",
+            "hi": "हमेशा 1"
+          },
+          "reason": {
+            "en": "For 2 and 4 the product is 8.",
+            "hi": "2 तथा 4 में यह गुणनफल 8 है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which expression is rational?",
+        "hi": "कौन-सा व्यंजक परिमेय है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "√2 + 1",
+            "hi": "√2 + 1"
+          },
+          "reason": {
+            "en": "Adding rational 1 to irrational √2 remains irrational.",
+            "hi": "अपरिमेय √2 में परिमेय 1 जोड़ने पर अपरिमेय ही मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3√5",
+            "hi": "3√5"
+          },
+          "reason": {
+            "en": "A nonzero rational times √5 remains irrational.",
+            "hi": "अशून्य परिमेय का √5 से गुणनफल अपरिमेय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "√3 × √3",
+            "hi": "√3 × √3"
+          },
+          "reason": {
+            "en": "It equals the integer 3.",
+            "hi": "यह पूर्णांक 3 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 + √7",
+            "hi": "2 + √7"
+          },
+          "reason": {
+            "en": "Adding rational 2 to irrational √7 remains irrational.",
+            "hi": "अपरिमेय √7 में परिमेय 2 जोड़ने पर अपरिमेय मिलता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "If 5 divides a² for an integer a, what follows?",
+        "hi": "पूर्णांक a के लिए 5 संख्या a² को विभाजित करे, तो क्या निष्कर्ष है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "a must equal 5",
+            "hi": "a अवश्य 5 है"
+          },
+          "reason": {
+            "en": "a may be any multiple of 5, including 10.",
+            "hi": "a, 5 का कोई भी गुणज, जैसे 10, हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a is always odd",
+            "hi": "a हमेशा विषम है"
+          },
+          "reason": {
+            "en": "10 is a counterexample.",
+            "hi": "10 एक प्रतिउदाहरण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a is irrational",
+            "hi": "a अपरिमेय है"
+          },
+          "reason": {
+            "en": "a is given to be an integer.",
+            "hi": "a को पूर्णांक दिया गया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5 divides a",
+            "hi": "5 संख्या a को विभाजित करता है"
+          },
+          "reason": {
+            "en": "A prime present in a square is present in the original integer.",
+            "hi": "वर्ग में उपस्थित अभाज्य मूल पूर्णांक में भी उपस्थित होता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "The largest equal square tile side for a 60 cm by 96 cm floor is",
+        "hi": "60 cm × 96 cm फर्श की सबसे बड़ी समान वर्गाकार टाइल की भुजा है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12 cm",
+            "hi": "12 cm"
+          },
+          "reason": {
+            "en": "HCF(60,96) = 12.",
+            "hi": "HCF(60,96) = 12।"
+          }
+        },
+        {
+          "text": {
+            "en": "6 cm",
+            "hi": "6 cm"
+          },
+          "reason": {
+            "en": "6 fits but is not the largest possible side.",
+            "hi": "6 फिट है, पर सबसे बड़ी संभव भुजा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "24 cm",
+            "hi": "24 cm"
+          },
+          "reason": {
+            "en": "24 does not divide 60 exactly.",
+            "hi": "24 संख्या 60 को पूरा विभाजित नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "480 cm",
+            "hi": "480 cm"
+          },
+          "reason": {
+            "en": "480 is an LCM and exceeds both floor dimensions.",
+            "hi": "480 एक LCM है तथा दोनों फर्श लंबाइयों से बड़ा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What creates the contradiction in the usual proof that √2 is irrational?",
+        "hi": "√2 की अपरिमेयता के सामान्य प्रमाण में विरोधाभास किससे मिलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "√2 has a decimal value",
+            "hi": "√2 का दशमलव मान है"
+          },
+          "reason": {
+            "en": "Rational and irrational numbers both have decimal expansions.",
+            "hi": "परिमेय तथा अपरिमेय दोनों का दशमलव प्रसार होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A lowest-terms numerator and denominator are both even",
+            "hi": "सरलतम भिन्न के अंश और हर दोनों सम मिलते हैं"
+          },
+          "reason": {
+            "en": "They would share factor 2, contradicting coprimality.",
+            "hi": "दोनों में 2 साझा होगा, जो सह-अभाज्यता का विरोध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every integer is prime",
+            "hi": "हर पूर्णांक अभाज्य है"
+          },
+          "reason": {
+            "en": "This statement is false and is not used.",
+            "hi": "यह कथन गलत है और प्रमाण में नहीं लिया जाता।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 is not a real number",
+            "hi": "2 वास्तविक संख्या नहीं है"
+          },
+          "reason": {
+            "en": "2 is a real number.",
+            "hi": "2 वास्तविक संख्या है।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State the Fundamental Theorem of Arithmetic and illustrate with 90.",
+        "hi": "अंकगणित का आधारभूत प्रमेय लिखें तथा 90 से समझाएँ।"
+      },
+      "answer": {
+        "en": "Every composite positive integer is a product of primes uniquely apart from order. 90 = 2 × 3² × 5.",
+        "hi": "हर धनात्मक भाज्य पूर्णांक अभाज्यों का गुणनफल है, जिसका रूप क्रम छोड़कर अद्वितीय है। 90 = 2 × 3² × 5।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find HCF and LCM of 36 and 84.",
+        "hi": "36 तथा 84 का HCF और LCM निकालें।"
+      },
+      "answer": {
+        "en": "36 = 2² × 3²; 84 = 2² × 3 × 7. HCF = 12, LCM = 252.",
+        "hi": "36 = 2² × 3²; 84 = 2² × 3 × 7। HCF = 12, LCM = 252।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are 8 and 15 coprime although neither is prime?",
+        "hi": "8 तथा 15 अभाज्य न होते हुए भी सह-अभाज्य क्यों हैं?"
+      },
+      "answer": {
+        "en": "8 = 2³ and 15 = 3 × 5 have no common prime factor, so HCF = 1.",
+        "hi": "8 = 2³ तथा 15 = 3 × 5 में कोई अभाज्य साझा नहीं है; HCF = 1।"
+      }
+    },
+    {
+      "question": {
+        "en": "Outline a contradiction proof that √3 is irrational.",
+        "hi": "विरोधाभास से √3 की अपरिमेयता सिद्ध करने की रूपरेखा दें।"
+      },
+      "answer": {
+        "en": "Assume √3 = a/b in lowest terms. Then a² = 3b² forces 3 to divide a. Write a = 3k; then b² = 3k² forces 3 to divide b, contradiction.",
+        "hi": "सरलतम रूप में √3 = a/b मानें। a² = 3b² से 3, a को विभाजित करेगा। a = 3k रखने पर b² = 3k² से 3, b को भी विभाजित करेगा; विरोधाभास।"
+      }
+    },
+    {
+      "question": {
+        "en": "Bells ring every 14 min and 21 min. Find the next common positive time.",
+        "hi": "घंटियाँ हर 14 min तथा 21 min में बजती हैं। अगला साझा धनात्मक समय निकालें।"
+      },
+      "answer": {
+        "en": "LCM = 2 × 3 × 7 = 42 min. The time must be a multiple of both periods.",
+        "hi": "LCM = 2 × 3 × 7 = 42 min। समय दोनों अवधियों का गुणज होना चाहिए।"
+      }
+    },
+    {
+      "question": {
+        "en": "Prove 2√5 is irrational, given √5 is irrational.",
+        "hi": "√5 अपरिमेय दिया है। सिद्ध करें कि 2√5 अपरिमेय है।"
+      },
+      "answer": {
+        "en": "If 2√5 were rational, dividing by nonzero rational 2 would make √5 rational, contradiction.",
+        "hi": "यदि 2√5 परिमेय होता, तो अशून्य परिमेय 2 से भाग देने पर √5 परिमेय मिलता; विरोधाभास।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not treat 1 as prime, stop a factor tree at composite leaves, swap minimum and maximum exponents, extend the two-number product relation to three numbers, or claim every sum/product of irrationals is irrational. A decimal approximation is not an irrationality proof.",
+    "hi": "1 को अभाज्य न मानें; गुणनखंड वृक्ष में भाज्य पत्तियाँ न छोड़ें; न्यूनतम और अधिकतम घातें न उलटें। 2 संख्याओं का गुणनफल संबंध 3 संख्याओं पर न थोपें। हर अपरिमेय योग या गुणनफल अपरिमेय नहीं होता। दशमलव सन्निकटन अपरिमेयता का प्रमाण नहीं है।"
+  },
+  "revision": [
+    {
+      "en": "Complete prime factorisation is unique apart from order.",
+      "hi": "पूर्ण अभाज्य गुणनखंडन क्रम छोड़कर अद्वितीय है।"
+    },
+    {
+      "en": "HCF uses common prime factors with minimum exponents.",
+      "hi": "HCF में साझा अभाज्य की न्यूनतम घातें लेते हैं।"
+    },
+    {
+      "en": "LCM uses all required primes with maximum exponents.",
+      "hi": "LCM में सभी जरूरी अभाज्य की अधिकतम घातें लेते हैं।"
+    },
+    {
+      "en": "For two positive integers, HCF × LCM = their product.",
+      "hi": "2 धनात्मक पूर्णांकों में HCF × LCM = उनका गुणनफल।"
+    },
+    {
+      "en": "Lowest terms plus prime divisibility builds an irrationality contradiction.",
+      "hi": "सरलतम भिन्न और अभाज्य विभाज्यता से अपरिमेयता का विरोधाभास मिलता है।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Positive integers → prime factorisation → shared/minimum powers (HCF) and required/maximum powers (LCM) → applications; prime divisibility of squares → contradiction → irrational roots.",
+    "hi": "धनात्मक पूर्णांक → अभाज्य गुणनखंडन → साझा न्यूनतम घातें (HCF) तथा जरूरी अधिकतम घातें (LCM) → अनुप्रयोग; वर्ग की अभाज्य विभाज्यता → विरोधाभास → अपरिमेय मूल।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, chapter 1, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh101.pdf"
+    },
+    {
+      "title": "UP Board Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

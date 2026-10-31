@@ -1,0 +1,886 @@
+{
+  "id": 10,
+  "title": {
+    "en": "Circles",
+    "hi": "वृत्त"
+  },
+  "goal": {
+    "en": "Explain tangent geometry with contact radii, congruence and checked lengths.",
+    "hi": "स्पर्श त्रिज्या, सर्वांगसमता और जाँची लंबाइयों से स्पर्शरेखा की ज्यामिति समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Circle and line: three possibilities",
+        "hi": "वृत्त और रेखा की 3 स्थितियाँ"
+      },
+      "body": {
+        "en": "A circle consists of points in a plane whose distance from its centre O is a fixed positive radius r. A line can have no common point with a circle, exactly one common point, or two common points. The one-point case is a tangent; the two-point case is a secant. A chord is the finite segment joining two points on the circle, whereas the secant is the entire line through them. These names describe intersections, not the apparent slope of a drawing. A tangent need not be horizontal or vertical. To classify a line, compare its perpendicular distance d from the centre with r: greater gives no intersection, equal gives tangency, and smaller gives two intersections. Equality here is mathematical equality; the thickness of a screen line cannot establish it. Rotating a diagram does not change the classification. Keep the radius positive and distinguish the complete circular boundary from its interior region when interpreting a shaded picture.",
+        "hi": "वृत्त (Circle) तल के उन बिंदुओं का समूह है जिनकी एक निश्चित केंद्र O से दूरी धनात्मक नियत त्रिज्या r होती है। कोई रेखा वृत्त को बिल्कुल नहीं काट सकती, केवल 1 बिंदु पर मिल सकती या 2 बिंदुओं पर काट सकती है। केवल 1 उभयनिष्ठ बिंदु वाली रेखा स्पर्शरेखा (Tangent) और 2 बिंदुओं वाली छेदक रेखा (Secant) कहलाती है। वृत्त पर स्थित 2 बिंदुओं को जोड़ने वाला सीमित रेखाखंड जीवा है; उन्हीं बिंदुओं से गुजरती पूरी रेखा छेदक है। ये नाम प्रतिच्छेदों से तय होते हैं, चित्र में रेखा कितनी झुकी है उससे नहीं। स्पर्शरेखा का क्षैतिज या ऊर्ध्वाधर होना आवश्यक नहीं है। केंद्र से रेखा की लंब दूरी d की तुलना r से करें। d > r पर प्रतिच्छेद नहीं, d = r पर स्पर्श और d < r पर 2 प्रतिच्छेद होंगे। यहाँ बराबरी गणितीय बराबरी है; स्क्रीन की मोटी रेखा देखकर प्रमाण नहीं मिल जाता। चित्र घुमाने से यह स्थिति नहीं बदलती। त्रिज्या धनात्मक रखें और वृत्त की सीमा तथा उसके अंदर के क्षेत्र को अलग पहचानें।"
+      },
+      "formula": "d > r: 0 intersections; d = r: tangent; d < r: secant",
+      "question": {
+        "en": "A line is 6 cm from a centre and the radius is 4 cm. Is it tangent?",
+        "hi": "केंद्र से रेखा 6 cm दूर और त्रिज्या 4 cm है। क्या वह स्पर्शरेखा है?"
+      },
+      "answer": {
+        "en": "No. Since 6 > 4, there is no intersection.",
+        "hi": "नहीं। 6 > 4 होने से कोई प्रतिच्छेद नहीं है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Radius at the contact point",
+        "hi": "स्पर्श बिंदु पर त्रिज्या"
+      },
+      "body": {
+        "en": "The tangent at a point of a circle is perpendicular to the radius through that contact point. Thus if a line touches the circle at T, then OT is perpendicular to the tangent. The radius must end at T: an arbitrary radius to another point has no such guaranteed relationship. A useful proof idea is the shortest distance from a point to a line. If the tangent were not perpendicular to OT, the perpendicular from O to the line would be shorter than r. That line would then pass through the circle and have two intersections, contradicting tangency. This reasoning explains the right angle instead of assuming it from the picture. The converse is also useful: a line through T perpendicular to OT is tangent there. In a construction or a visual lab, mark both the contact point and the centre. A right-angle square at the correct vertex records the theorem used and makes the later Pythagorean calculation legitimate.",
+        "hi": "वृत्त के किसी बिंदु पर स्पर्शरेखा उस बिंदु से जाने वाली त्रिज्या पर लंब होती है। यदि रेखा वृत्त को T पर स्पर्श करती है, तो OT उस स्पर्शरेखा पर लंब होगा। ध्यान दें कि त्रिज्या का अंतिम बिंदु T ही होना चाहिए। किसी अन्य बिंदु की त्रिज्या के साथ ऐसा संबंध आवश्यक नहीं है। प्रमाण का उपयोगी विचार बिंदु से रेखा की न्यूनतम दूरी है। यदि OT रेखा पर लंब न हो, तो O से खींचा लंब r से छोटा होगा। तब रेखा वृत्त के भीतर से होकर जाएगी और उसे 2 बिंदुओं पर काटेगी, जो स्पर्शरेखा की शर्त के विरुद्ध है। इस तरह समकोण का कारण मिलता है; उसे केवल चित्र देखकर नहीं मानते। इसका विलोम भी उपयोगी है: T से OT पर लंब रेखा उसी बिंदु की स्पर्शरेखा होगी। रचना या दृश्य प्रयोग में केंद्र और स्पर्श बिंदु दोनों का नाम लिखें। सही शीर्ष पर समकोण का चिह्न यह बताता है कि कौन-सा प्रमेय लगाया गया है और आगे पाइथागोरस का प्रयोग क्यों उचित है।"
+      },
+      "formula": "OT ⟂ tangent at T",
+      "question": {
+        "en": "Which radius is perpendicular to a tangent touching at A?",
+        "hi": "A पर स्पर्श करती रेखा पर कौन-सी त्रिज्या लंब है?"
+      },
+      "answer": {
+        "en": "OA, the radius through the contact point.",
+        "hi": "OA, अर्थात स्पर्श बिंदु से जाने वाली त्रिज्या।"
+      }
+    },
+    {
+      "title": {
+        "en": "How many tangents from a point?",
+        "hi": "एक बिंदु से कितनी स्पर्शरेखाएँ?"
+      },
+      "body": {
+        "en": "The number of tangents drawn through a specified point depends on its position relative to the circle. An interior point has no tangent because every line through it crosses the circle twice. A point on the circle has exactly one tangent, perpendicular to its radius at that point. An exterior point has two distinct tangents. These statements refer to real lines in the plane and a genuine circle of positive radius. If d = OP is the distance from the centre to the specified point P, compare d with r: d < r gives zero, d = r gives one, and d > r gives two. Do not confuse the two tangents from one external point with the infinitely many tangents available around the entire circle. When an external point approaches the circle, its two contact points approach each other; at contact the two lines coincide into the single tangent. A software slider may display a tolerance, so the mathematical cases should be shown explicitly beside the diagram.",
+        "hi": "किसी निश्चित बिंदु से खींची जा सकने वाली स्पर्शरेखाओं की संख्या उसकी वृत्त के सापेक्ष स्थिति पर निर्भर है। अंदर के बिंदु से कोई स्पर्शरेखा नहीं बनती, क्योंकि उससे गुजरती हर रेखा वृत्त को 2 बार काटती है। वृत्त पर स्थित बिंदु से ठीक 1 स्पर्शरेखा बनती है, जो उसी बिंदु की त्रिज्या पर लंब होती है। बाहर के बिंदु से 2 अलग स्पर्शरेखाएँ बनती हैं। ये कथन तल की वास्तविक रेखाओं और धनात्मक त्रिज्या वाले वृत्त के लिए हैं। यदि निर्दिष्ट बिंदु P की केंद्र से दूरी d = OP हो, तो d और r की तुलना करें। d < r पर 0, d = r पर 1 और d > r पर 2 स्पर्शरेखाएँ मिलती हैं। एक बाहरी बिंदु की 2 स्पर्शरेखाओं को पूरे वृत्त की असंख्य स्पर्शरेखाओं से न मिलाएँ। बाहरी बिंदु वृत्त की ओर आए, तो दोनों स्पर्श बिंदु पास आते हैं; सीमा पर दोनों रेखाएँ एक स्पर्शरेखा बन जाती हैं। सॉफ्टवेयर की संख्यात्मक सहनशीलता और गणित की सटीक बराबरी में अंतर स्पष्ट रखें।"
+      },
+      "formula": "OP < r → 0; OP = r → 1; OP > r → 2",
+      "question": {
+        "en": "How many tangents pass through a point on the circle?",
+        "hi": "वृत्त पर स्थित बिंदु से कितनी स्पर्शरेखाएँ जाती हैं?"
+      },
+      "answer": {
+        "en": "Exactly one.",
+        "hi": "ठीक 1।"
+      }
+    },
+    {
+      "title": {
+        "en": "Equal tangents: understand the proof",
+        "hi": "समान स्पर्शरेखाएँ: प्रमाण समझें"
+      },
+      "body": {
+        "en": "Let PA and PB be tangents from the same exterior point P to a circle with centre O. Join OA, OB and OP. The contact radii give right angles at A and B. The triangles OAP and OBP share hypotenuse OP, and their radii OA and OB are equal. They are congruent by the right-angle–hypotenuse–side criterion. Corresponding tangent sides are therefore equal: PA = PB. This is an equality of the finite segments from P to their contact points, not a comparison of two infinite lines. The proof also shows that OP bisects the angle between the tangent segments, and it bisects the angle formed by the two contact radii. The same exterior point and the same circle are essential. Tangent lengths from two unrelated exterior points need not be equal. In an exam, write the reason for each equality and identify the right triangles before claiming congruence. A measured diagram can suggest this result, but congruence establishes it for all valid configurations.",
+        "hi": "एक ही बाहरी बिंदु P से केंद्र O वाले वृत्त की स्पर्शरेखाएँ PA और PB खींचें। OA, OB तथा OP जोड़ें। स्पर्श बिंदुओं पर त्रिज्याएँ लंब होने से A और B पर समकोण बनते हैं। त्रिभुज OAP और OBP में कर्ण OP उभयनिष्ठ है तथा OA और OB एक ही वृत्त की बराबर त्रिज्याएँ हैं। इसलिए समकोण–कर्ण–भुजा कसौटी से दोनों त्रिभुज सर्वांगसम हैं। संगत स्पर्श रेखाखंड बराबर होंगे: PA = PB। यह P से स्पर्श बिंदुओं तक सीमित रेखाखंडों की लंबाइयों की बराबरी है, 2 अनंत रेखाओं की लंबाई की तुलना नहीं। इसी प्रमाण से OP स्पर्श रेखाखंडों के बीच का कोण और दोनों स्पर्श त्रिज्याओं का कोण समद्विभाजित करता है। एक ही बाहरी बिंदु और एक ही वृत्त की शर्त आवश्यक है। अलग-अलग बाहरी बिंदुओं से मिली लंबाइयाँ बराबर होना जरूरी नहीं है। परीक्षा में प्रत्येक बराबरी का कारण लिखें और सर्वांगसमता से पहले समकोण त्रिभुजों को पहचानें। चित्र का मापन परिणाम सुझा सकता है, लेकिन प्रमाण सभी उपयुक्त विन्यासों के लिए उसे स्थापित करता है।"
+      },
+      "formula": "PA = PB; ΔOAP ≅ ΔOBP by RHS",
+      "question": {
+        "en": "Why is OP the hypotenuse in both triangles?",
+        "hi": "दोनों त्रिभुजों में OP कर्ण क्यों है?"
+      },
+      "answer": {
+        "en": "The right angles are at the contact points A and B, opposite OP.",
+        "hi": "समकोण A तथा B स्पर्श बिंदुओं पर हैं और उनके सामने OP है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Calculate a tangent length",
+        "hi": "स्पर्श रेखाखंड की लंबाई निकालें"
+      },
+      "body": {
+        "en": "A tangent length follows from a right triangle, not from subtracting the radius directly from the centre distance. If PT touches at T, OT = r and OP = d, then triangle OTP is right-angled at T. Pythagoras gives PT² = d² − r². For an exterior point, take the nonnegative square root: PT = √(d² − r²). The condition d > r must be checked before using the exterior-point model. For d = r the formula gives zero segment length, although the tangent line still exists at that point. For d < r there is no real tangent length, so a negative radicand is a geometric warning, not a distance to round to zero. Conversely, if a tangent length and radius are known, d = √(PT² + r²). Square the numerical lengths with their units consistently, and report the final length in the original linear unit. Familiar triples such as 5–12–13 offer a quick independent check of arithmetic.",
+        "hi": "स्पर्श रेखाखंड की लंबाई समकोण त्रिभुज से मिलती है; केंद्र की दूरी में से सीधे त्रिज्या घटाना सही नहीं। यदि PT वृत्त को T पर स्पर्श करता है, OT = r तथा OP = d है, तो त्रिभुज OTP में T पर समकोण होगा। पाइथागोरस से PT² = d² − r² मिलता है। बाहरी बिंदु के लिए धनात्मक वर्गमूल लें: PT = √(d² − r²)। बाहरी बिंदु का मॉडल लगाने से पहले d > r जाँचें। d = r पर सूत्र रेखाखंड की लंबाई 0 देता है, फिर भी उस बिंदु पर स्पर्शरेखा मौजूद है। d < r पर वास्तविक स्पर्श लंबाई नहीं मिलती। इसलिए वर्गमूल के अंदर ऋणात्मक संख्या आने का अर्थ ज्यामितीय शर्त टूटना है; उसे 0 बनाकर दूरी न लिखें। उलटे प्रश्न में स्पर्श लंबाई और त्रिज्या ज्ञात हों, तो d = √(PT² + r²) होगा। लंबाइयों के वर्ग और इकाइयाँ सावधानी से रखें तथा अंतिम उत्तर रैखिक इकाई में दें। 5–12–13 जैसे ज्ञात समकोण त्रिक गणना की स्वतंत्र जाँच में सहायता करते हैं।"
+      },
+      "formula": "PT = √(OP² − r²), OP > r",
+      "question": {
+        "en": "Find tangent length for OP = 13 cm and r = 5 cm.",
+        "hi": "OP = 13 cm और r = 5 cm पर स्पर्श लंबाई निकालें।"
+      },
+      "answer": {
+        "en": "√(169 − 25) = √144 = 12 cm.",
+        "hi": "√(169 − 25) = √144 = 12 cm।"
+      }
+    },
+    {
+      "title": {
+        "en": "Angles between the tangents",
+        "hi": "स्पर्शरेखाओं के बीच के कोण"
+      },
+      "body": {
+        "en": "For two tangents PA and PB with centre O, quadrilateral OAPB has two right angles, at A and B. Its four interior angles sum to 360°. Consequently the interior angle APB between the tangent segments and the centre angle AOB containing that quadrilateral sum to 180°. If APB is 70°, this centre angle is 110°. Be precise about the chosen centre angle: the reflex angle around the other side is 360° minus the non-reflex one and does not satisfy the same sum statement. Congruent right triangles also show that OP bisects APB. Thus each angle at P in triangles OAP and OBP is half the complete tangent angle. These facts can be combined with the triangle angle sum to check a result. Do not identify a tangent–radius angle with a tangent–tangent angle; the former is always 90°, while the latter changes as P moves. Draw or name the particular angle whenever several rays meet at a point.",
+        "hi": "2 स्पर्शरेखाओं PA और PB तथा केंद्र O से चतुर्भुज OAPB बनता है। इसमें A और B पर 2 समकोण होते हैं। चारों आंतरिक कोणों का योग 360° होने से स्पर्श रेखाखंडों के बीच का ∠APB और इसी चतुर्भुज वाला केंद्रीय ∠AOB मिलकर 180° देते हैं। यदि ∠APB = 70° है, तो यह केंद्रीय कोण 110° होगा। चुने गए केंद्रीय कोण को ठीक पहचानें। दूसरी ओर का प्रतिवर्ती कोण 360° में से अप्रतिवर्ती कोण घटाकर मिलता है और उसी योग वाले कथन में नहीं रखा जा सकता। सर्वांगसम समकोण त्रिभुज यह भी बताते हैं कि OP, ∠APB को समद्विभाजित करता है। अतः OAP और OBP में P का प्रत्येक कोण पूरे स्पर्श कोण का आधा है। इन संबंधों तथा त्रिभुज के कोण योग से उत्तर जाँच सकते हैं। स्पर्शरेखा–त्रिज्या के कोण को स्पर्शरेखा–स्पर्शरेखा के कोण से न मिलाएँ। पहला सदैव 90° है, जबकि दूसरा P के खिसकने पर बदलता है। एक बिंदु पर कई किरणें हों, तो माँगे गए कोण का स्पष्ट नाम या चाप अवश्य दें।"
+      },
+      "formula": "∠APB + ∠AOB = 180° (non-reflex centre angle)",
+      "question": {
+        "en": "If the tangent angle is 60°, find the non-reflex centre angle.",
+        "hi": "स्पर्शरेखाओं का कोण 60° है तो अप्रतिवर्ती केंद्रीय कोण क्या है?"
+      },
+      "answer": {
+        "en": "120°.",
+        "hi": "120°।"
+      }
+    },
+    {
+      "title": {
+        "en": "Tangents in triangles and quadrilaterals",
+        "hi": "त्रिभुज और चतुर्भुज में स्पर्शरेखाएँ"
+      },
+      "body": {
+        "en": "A circle touching the sides of a polygon creates useful equal segment pairs at each exterior vertex. In a triangle ABC with an inscribed circle, let the two tangent lengths from A be x, those from B be y, and those from C be z. The sides satisfy AB = x + y, BC = y + z and CA = z + x. Adding gives twice the semiperimeter, so x = s − BC, y = s − CA and z = s − AB. These are deductions from equal tangents, not new assumptions about arbitrary points on the sides. For a circumscribed quadrilateral, adding the four pairs gives AB + CD = BC + DA. The condition that one circle actually touches all four sides is crucial; the identity is not a universal quadrilateral rule. Label the contact points and avoid assigning a whole side length to a single tangent piece. After solving a segment system, ensure all tangent lengths are positive and sum back to the stated side lengths.",
+        "hi": "किसी बहुभुज की भुजाओं को स्पर्श करता वृत्त हर बाहरी शीर्ष से बराबर स्पर्श रेखाखंडों के युग्म देता है। अंतःवृत्त वाले त्रिभुज ABC में A से दोनों स्पर्श लंबाइयाँ x, B से y और C से z लें। तब AB = x + y, BC = y + z तथा CA = z + x होगा। जोड़ने पर परिमाप 2(x + y + z) मिलता है। अर्धपरिमाप s से x = s − BC, y = s − CA तथा z = s − AB निकलते हैं। ये समान स्पर्शरेखा प्रमेय के निष्कर्ष हैं; भुजाओं पर मनमाने बिंदुओं के बारे में नई मान्यता नहीं हैं। परिगत चतुर्भुज में इसी तरह चारों शीर्षों के युग्म जोड़ने पर AB + CD = BC + DA मिलता है। जरूरी शर्त है कि वही वृत्त चारों भुजाओं को सचमुच स्पर्श करे। यह हर चतुर्भुज का नियम नहीं है। स्पर्श बिंदुओं के नाम लिखें और पूरी भुजा की लंबाई को एक छोटे स्पर्श रेखाखंड के बराबर न रखें। समीकरण हल करने के बाद सभी लंबाइयाँ धनात्मक हों और उनका योग दी हुई भुजाएँ लौटाए, यह जाँचें।"
+      },
+      "formula": "AB = x+y; BC = y+z; CA = z+x",
+      "question": {
+        "en": "An incircle touches a 13,14,15 cm triangle. Find the tangent length from the vertex between sides 13 and 15.",
+        "hi": "13,14,15 cm त्रिभुज के अंतःवृत्त में 13 और 15 वाली भुजाओं के बीच शीर्ष से स्पर्श लंबाई निकालें।"
+      },
+      "answer": {
+        "en": "s = 21 cm, so x = 21 − 14 = 7 cm.",
+        "hi": "s = 21 cm, अतः x = 21 − 14 = 7 cm।"
+      }
+    },
+    {
+      "title": {
+        "en": "From an observation to a proof",
+        "hi": "अवलोकन से प्रमाण तक"
+      },
+      "body": {
+        "en": "A geometry answer should separate what is given, what is to be proved, and the reasons connecting them. Start by identifying the same circle, its centre, the contact points, and the exterior point. Join only the useful auxiliary segments, usually the radii and the line to the centre. Mark perpendicularity using the tangent theorem; then choose congruence, Pythagoras, or an angle-sum relation according to the required conclusion. Measuring two equal-looking segments on a screen does not prove they remain equal in every permitted position. Conversely, the theorem does not depend on the accuracy of a hand-drawn figure. Keep notation consistent: PA denotes a segment length, whereas a line through P and A extends indefinitely. A numerical problem still needs a brief reason for its right angle. Test boundary cases conceptually: an interior point has no tangents, an on-circle point has one, and a genuine exterior point has two. Such checks make both written solutions and interactive observations mathematically trustworthy.",
+        "hi": "ज्यामिति के उत्तर में दी हुई बात, सिद्ध करना है और दोनों को जोड़ने वाले कारण अलग रखें। पहले समान वृत्त, उसका केंद्र, स्पर्श बिंदु तथा बाहरी बिंदु पहचानें। सहायक रेखाखंड केवल आवश्यकता अनुसार जोड़ें; प्रायः त्रिज्याएँ और केंद्र तक की रेखा उपयोगी होती हैं। स्पर्शरेखा प्रमेय से लंबता चिह्नित करें। फिर निष्कर्ष के अनुसार सर्वांगसमता, पाइथागोरस या कोण योग का संबंध चुनें। स्क्रीन पर बराबर दिखाई देने वाली 2 लंबाइयों को माप लेना यह सिद्ध नहीं करता कि हर उपयुक्त स्थिति में वे बराबर रहेंगी। दूसरी ओर, प्रमेय हाथ के चित्र की मापन शुद्धता पर निर्भर नहीं है। संकेत स्पष्ट रखें: PA एक रेखाखंड की लंबाई भी दर्शा सकता है, लेकिन P और A से जाने वाली रेखा अनंत तक बढ़ती है। संख्यात्मक प्रश्न में भी समकोण का संक्षिप्त कारण लिखना जरूरी है। सीमा स्थितियों को सोचकर जाँचें: अंदर से कोई स्पर्शरेखा नहीं, वृत्त पर से 1 और वास्तविक बाहरी बिंदु से 2। ऐसी जाँच लिखित हल तथा इंटरैक्टिव अवलोकन दोनों को भरोसेमंद बनाती है।"
+      },
+      "formula": "Given → radii → perpendicularity → theorem / calculation → conclusion",
+      "question": {
+        "en": "Does a screen measurement alone prove the equal-tangent theorem?",
+        "hi": "क्या केवल स्क्रीन पर मापना समान स्पर्शरेखा प्रमेय का प्रमाण है?"
+      },
+      "answer": {
+        "en": "No; the RHS congruence argument proves the result for every valid exterior point.",
+        "hi": "नहीं; RHS सर्वांगसमता हर उपयुक्त बाहरी बिंदु के लिए परिणाम सिद्ध करती है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A line has perpendicular distance 5 cm from a circle centre; radius is 5 cm. Classify it.",
+        "hi": "रेखा की केंद्र से लंब दूरी 5 cm और वृत्त की त्रिज्या 5 cm है। रेखा का प्रकार बताएँ।"
+      },
+      "steps": [
+        {
+          "en": "Given: d = r = 5 cm.",
+          "hi": "दिया: d = r = 5 cm।"
+        },
+        {
+          "en": "Equal centre distance and radius give exactly one contact point.",
+          "hi": "केंद्र की दूरी और त्रिज्या बराबर होने से ठीक 1 स्पर्श बिंदु मिलता है।"
+        },
+        {
+          "en": "The line is perpendicular to the radius at that point.",
+          "hi": "रेखा उस बिंदु की त्रिज्या पर लंब होती है।"
+        }
+      ],
+      "answer": {
+        "en": "A tangent.",
+        "hi": "स्पर्शरेखा।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "PA and PB are tangents from P. PA = 9 cm. Find PB.",
+        "hi": "P से PA और PB स्पर्शरेखाएँ हैं। PA = 9 cm हो तो PB निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given: both segments start at the same exterior point and touch the same circle.",
+          "hi": "दिया: दोनों एक ही बाहरी बिंदु से उसी वृत्त को स्पर्श करते हैं।"
+        },
+        {
+          "en": "By the equal-tangent theorem, PB = PA.",
+          "hi": "समान स्पर्शरेखा प्रमेय से PB = PA।"
+        },
+        {
+          "en": "Substitute PA = 9 cm.",
+          "hi": "PA = 9 cm रखें।"
+        }
+      ],
+      "answer": {
+        "en": "PB = 9 cm.",
+        "hi": "PB = 9 cm।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "OP = 13 cm and circle radius OT = 5 cm. PT is tangent at T. Find PT.",
+        "hi": "OP = 13 cm तथा त्रिज्या OT = 5 cm है। PT, T पर स्पर्शरेखा है। PT निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given: OT ⟂ PT, so triangle OTP is right-angled at T.",
+          "hi": "दिया: OT ⟂ PT, अतः OTP में T पर समकोण है।"
+        },
+        {
+          "en": "To find PT, use PT² = OP² − OT².",
+          "hi": "PT के लिए PT² = OP² − OT² लें।"
+        },
+        {
+          "en": "PT² = 169 − 25 = 144; positive length PT = 12.",
+          "hi": "PT² = 169 − 25 = 144; धनात्मक लंबाई PT = 12।"
+        }
+      ],
+      "answer": {
+        "en": "12 cm.",
+        "hi": "12 cm।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Tangents PA and PB make ∠APB = 70°. Find the non-reflex ∠AOB.",
+        "hi": "PA और PB स्पर्शरेखाओं में ∠APB = 70° है। अप्रतिवर्ती ∠AOB निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Radii at the contact points give ∠OAP = ∠OBP = 90°.",
+          "hi": "स्पर्श बिंदुओं की त्रिज्याओं से ∠OAP = ∠OBP = 90°।"
+        },
+        {
+          "en": "In quadrilateral OAPB, the angle sum is 360°.",
+          "hi": "चतुर्भुज OAPB में कोण योग 360° है।"
+        },
+        {
+          "en": "∠AOB = 360° − 90° − 90° − 70° = 110°.",
+          "hi": "∠AOB = 360° − 90° − 90° − 70° = 110°।"
+        }
+      ],
+      "answer": {
+        "en": "110°.",
+        "hi": "110°।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "An incircle touches all sides of triangle ABC. AB = 13 cm, BC = 14 cm, CA = 15 cm. Find the tangent length from A.",
+        "hi": "अंतःवृत्त त्रिभुज ABC की सभी भुजाओं को स्पर्श करता है। AB = 13 cm, BC = 14 cm, CA = 15 cm। A से स्पर्श लंबाई निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Let tangent lengths from A,B,C be x,y,z respectively. Equal pairs share a vertex.",
+          "hi": "A,B,C से स्पर्श लंबाइयाँ क्रमशः x,y,z लें। समान शीर्ष के दोनों रेखाखंड बराबर हैं।"
+        },
+        {
+          "en": "x+y=13, y+z=14, z+x=15. Adding gives x+y+z=21.",
+          "hi": "x+y=13, y+z=14, z+x=15। जोड़ने पर x+y+z=21।"
+        },
+        {
+          "en": "Subtract y+z=14 to obtain x=7.",
+          "hi": "y+z=14 घटाने पर x=7।"
+        },
+        {
+          "en": "Check: y=6,z=8, so all three side sums are correct and positive.",
+          "hi": "जाँच: y=6,z=8 से तीनों भुजाओं के योग सही और धनात्मक हैं।"
+        }
+      ],
+      "answer": {
+        "en": "Each tangent segment from A is 7 cm.",
+        "hi": "A से दोनों स्पर्श रेखाखंड 7 cm हैं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A tangent and its contact radius make what angle?",
+        "hi": "स्पर्शरेखा और स्पर्श बिंदु की त्रिज्या में कितना कोण है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "30°",
+            "hi": "30°"
+          },
+          "reason": {
+            "en": "This is not the contact-radius theorem.",
+            "hi": "यह स्पर्श त्रिज्या प्रमेय का कोण नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "45°",
+            "hi": "45°"
+          },
+          "reason": {
+            "en": "An arbitrary diagram angle does not replace perpendicularity.",
+            "hi": "चित्र का मनमाना कोण लंबता की जगह नहीं लेता।"
+          }
+        },
+        {
+          "text": {
+            "en": "90°",
+            "hi": "90°"
+          },
+          "reason": {
+            "en": "The contact radius is perpendicular to the tangent.",
+            "hi": "स्पर्श बिंदु की त्रिज्या स्पर्शरेखा पर लंब है।"
+          }
+        },
+        {
+          "text": {
+            "en": "180°",
+            "hi": "180°"
+          },
+          "reason": {
+            "en": "A straight angle does not describe these two perpendicular segments.",
+            "hi": "सरल कोण इन लंब रेखाखंडों का वर्णन नहीं करता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "How many tangents can be drawn from an interior point?",
+        "hi": "अंदर के बिंदु से कितनी स्पर्शरेखाएँ बनती हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Every line through an interior point cuts the circle twice.",
+            "hi": "अंदर से गुजरती हर रेखा वृत्त को 2 बार काटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "One tangent belongs to an on-circle point.",
+            "hi": "1 स्पर्शरेखा वृत्त पर बिंदु से बनती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "Two tangents require an exterior point.",
+            "hi": "2 स्पर्शरेखाओं के लिए बाहरी बिंदु चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinitely many",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "The whole circle has many tangents, not an interior point.",
+            "hi": "पूरे वृत्त की अनेक स्पर्शरेखाएँ हैं, अंदर के एक बिंदु की नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "PA and PB touch the same circle from P. Which must hold?",
+        "hi": "P से PA तथा PB उसी वृत्त की स्पर्शरेखाएँ हैं। क्या आवश्यक है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "PA + PB = r",
+            "hi": "PA + PB = r"
+          },
+          "reason": {
+            "en": "Their sum is not generally the radius.",
+            "hi": "उनका योग सामान्यतः त्रिज्या नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "PA = 2PB",
+            "hi": "PA = 2PB"
+          },
+          "reason": {
+            "en": "This contradicts equal tangent lengths.",
+            "hi": "यह समान स्पर्श लंबाइयों के विरुद्ध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "PA = OP",
+            "hi": "PA = OP"
+          },
+          "reason": {
+            "en": "OP is a right-triangle hypotenuse and is longer.",
+            "hi": "OP समकोण त्रिभुज का कर्ण और अधिक लंबा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "PA = PB",
+            "hi": "PA = PB"
+          },
+          "reason": {
+            "en": "Tangents from one exterior point to one circle have equal lengths.",
+            "hi": "एक ही बाहरी बिंदु से उसी वृत्त की स्पर्श लंबाइयाँ बराबर हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "For OP = 10 cm and radius 6 cm, tangent length is?",
+        "hi": "OP = 10 cm तथा त्रिज्या 6 cm पर स्पर्श लंबाई क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4 cm",
+            "hi": "4 cm"
+          },
+          "reason": {
+            "en": "Subtracting d−r does not use Pythagoras.",
+            "hi": "d−r घटाना पाइथागोरस का प्रयोग नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "8 cm",
+            "hi": "8 cm"
+          },
+          "reason": {
+            "en": "√(100−36)=√64=8.",
+            "hi": "√(100−36)=√64=8।"
+          }
+        },
+        {
+          "text": {
+            "en": "16 cm",
+            "hi": "16 cm"
+          },
+          "reason": {
+            "en": "Adding d+r is not tangent length.",
+            "hi": "d+r जोड़ना स्पर्श लंबाई नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "√136 cm",
+            "hi": "√136 cm"
+          },
+          "reason": {
+            "en": "This incorrectly treats the centre distance as a leg.",
+            "hi": "इसमें केंद्र दूरी को लंब भुजा मान लिया गया है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A line whose centre distance is less than r is a?",
+        "hi": "केंद्र से दूरी r से कम वाली रेखा क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Secant",
+            "hi": "छेदक"
+          },
+          "reason": {
+            "en": "It intersects the circle at two points.",
+            "hi": "वह वृत्त को 2 बिंदुओं पर काटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Tangent",
+            "hi": "स्पर्शरेखा"
+          },
+          "reason": {
+            "en": "Tangency needs distance equal to r.",
+            "hi": "स्पर्श के लिए दूरी r के बराबर चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Non-intersecting line",
+            "hi": "न काटने वाली रेखा"
+          },
+          "reason": {
+            "en": "That requires distance greater than r.",
+            "hi": "उसके लिए दूरी r से अधिक चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Radius",
+            "hi": "त्रिज्या"
+          },
+          "reason": {
+            "en": "A radius is a centre-to-circle segment, not a line classification.",
+            "hi": "त्रिज्या केंद्र से वृत्त तक रेखाखंड है, रेखा का यह प्रकार नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A point lies on the circle. Number of tangents through it is?",
+        "hi": "बिंदु वृत्त पर है। उससे कितनी स्पर्शरेखाएँ जाती हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Zero applies to an interior point.",
+            "hi": "0 अंदर के बिंदु के लिए है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "Two distinct tangents apply outside the circle.",
+            "hi": "2 अलग स्पर्शरेखाएँ बाहर से बनती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "The unique tangent is perpendicular to the radius there.",
+            "hi": "अद्वितीय स्पर्शरेखा वहाँ की त्रिज्या पर लंब है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "A circle has no such point-position case.",
+            "hi": "वृत्त में ऐसी स्थिति नहीं है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "The tangent angle is 80°. The non-reflex centre angle is?",
+        "hi": "स्पर्शरेखाओं का कोण 80° है। अप्रतिवर्ती केंद्रीय कोण क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "80°",
+            "hi": "80°"
+          },
+          "reason": {
+            "en": "The two angles are supplementary, not generally equal.",
+            "hi": "दोनों संपूरक हैं, सामान्यतः बराबर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "90°",
+            "hi": "90°"
+          },
+          "reason": {
+            "en": "90° is the contact radius angle.",
+            "hi": "90° स्पर्श त्रिज्या का कोण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "280°",
+            "hi": "280°"
+          },
+          "reason": {
+            "en": "This uses the wrong reflex-angle relation.",
+            "hi": "यह गलत प्रतिवर्ती संबंध का प्रयोग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "100°",
+            "hi": "100°"
+          },
+          "reason": {
+            "en": "180°−80°=100°.",
+            "hi": "180°−80°=100°।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which congruence proves equal tangents using contact radii and OP?",
+        "hi": "स्पर्श त्रिज्याओं और OP से कौन-सी सर्वांगसमता समान स्पर्शरेखाएँ सिद्ध करती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "SSA without a right angle",
+            "hi": "समकोण बिना SSA"
+          },
+          "reason": {
+            "en": "Arbitrary SSA is not a congruence criterion.",
+            "hi": "मनमाना SSA सर्वांगसमता कसौटी नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "RHS",
+            "hi": "RHS"
+          },
+          "reason": {
+            "en": "The right triangles have equal hypotenuse OP and equal radius legs.",
+            "hi": "समकोण त्रिभुजों में कर्ण OP और त्रिज्या भुजाएँ बराबर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "AAA",
+            "hi": "AAA"
+          },
+          "reason": {
+            "en": "AAA gives similarity, not equal lengths by itself.",
+            "hi": "AAA समरूपता देता है, अपने आप समान लंबाई नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only visual measurement",
+            "hi": "केवल चित्र का मापन"
+          },
+          "reason": {
+            "en": "Measurement is an observation, not a proof.",
+            "hi": "मापन अवलोकन है, प्रमाण नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "For a circumscribed quadrilateral, which equality holds?",
+        "hi": "परिगत चतुर्भुज में कौन-सी बराबरी सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "AB + CD = BC + DA",
+            "hi": "AB + CD = BC + DA"
+          },
+          "reason": {
+            "en": "Equal tangent pairs at its four vertices give equal opposite-side sums.",
+            "hi": "चारों शीर्षों के समान स्पर्श युग्म विपरीत भुजा योग बराबर देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "AB = BC always",
+            "hi": "AB = BC हमेशा"
+          },
+          "reason": {
+            "en": "Adjacent sides need not be equal.",
+            "hi": "आसन्न भुजाएँ बराबर होना जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every angle is 90°",
+            "hi": "हर कोण 90°"
+          },
+          "reason": {
+            "en": "Touching one circle does not imply a rectangle.",
+            "hi": "एक वृत्त को स्पर्श करने से आयत होना आवश्यक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both diagonals are diameters",
+            "hi": "दोनों विकर्ण व्यास हैं"
+          },
+          "reason": {
+            "en": "The vertices are outside the inscribed circle.",
+            "hi": "शीर्ष अंतःवृत्त के बाहर हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If d<r gives a negative d²−r², what should be concluded?",
+        "hi": "d<r से d²−r² ऋणात्मक हो तो क्या निष्कर्ष है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A negative physical tangent length",
+            "hi": "ऋणात्मक वास्तविक स्पर्श लंबाई"
+          },
+          "reason": {
+            "en": "Lengths cannot be negative.",
+            "hi": "लंबाइयाँ ऋणात्मक नहीं होतीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Round it to zero",
+            "hi": "इसे 0 कर दें"
+          },
+          "reason": {
+            "en": "Rounding cannot repair the failed geometric condition.",
+            "hi": "पूर्णांकन से टूटी ज्यामितीय शर्त नहीं सुधरती।"
+          }
+        },
+        {
+          "text": {
+            "en": "No real tangent from that interior point",
+            "hi": "उस अंदर के बिंदु से वास्तविक स्पर्शरेखा नहीं"
+          },
+          "reason": {
+            "en": "The radicand flags the interior-point case.",
+            "hi": "ऋणात्मक मान अंदर की स्थिति का संकेत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "There are two longer tangents",
+            "hi": "2 अधिक लंबी स्पर्शरेखाएँ हैं"
+          },
+          "reason": {
+            "en": "Two tangents exist only when d>r.",
+            "hi": "2 स्पर्शरेखाएँ केवल d>r पर हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State the tangent–radius theorem.",
+        "hi": "स्पर्शरेखा–त्रिज्या प्रमेय लिखें।"
+      },
+      "answer": {
+        "en": "A tangent at a point of a circle is perpendicular to the radius through that point.",
+        "hi": "वृत्त के बिंदु पर स्पर्शरेखा उसी बिंदु की त्रिज्या पर लंब होती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give the number of tangents from an inside, on-circle, and outside point.",
+        "hi": "अंदर, वृत्त पर और बाहर बिंदुओं से स्पर्शरेखाओं की संख्या लिखें।"
+      },
+      "answer": {
+        "en": "Respectively 0,1,2. Compare centre distance with radius.",
+        "hi": "क्रमशः 0,1,2। केंद्र दूरी की तुलना त्रिज्या से करें।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the RHS proof of equal tangents.",
+        "hi": "समान स्पर्शरेखाओं का RHS प्रमाण समझाएँ।"
+      },
+      "answer": {
+        "en": "Join the contact radii and OP. The contact angles are right, OP is common hypotenuse, radii equal; RHS gives equal tangent sides.",
+        "hi": "स्पर्श त्रिज्याएँ और OP जोड़ें। स्पर्श कोण समकोण, OP उभयनिष्ठ कर्ण और त्रिज्याएँ बराबर; RHS से स्पर्श भुजाएँ बराबर।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find tangent length when radius is 8 cm and centre distance is 17 cm.",
+        "hi": "त्रिज्या 8 cm और केंद्र दूरी 17 cm पर स्पर्श लंबाई निकालें।"
+      },
+      "answer": {
+        "en": "√(17²−8²)=√225=15 cm.",
+        "hi": "√(17²−8²)=√225=15 cm।"
+      }
+    },
+    {
+      "question": {
+        "en": "The non-reflex centre angle is 130°. Find tangent angle.",
+        "hi": "अप्रतिवर्ती केंद्रीय कोण 130° है। स्पर्शरेखाओं का कोण निकालें।"
+      },
+      "answer": {
+        "en": "180°−130°=50°, using the two contact right angles.",
+        "hi": "180°−130°=50°, क्योंकि स्पर्श बिंदुओं पर 2 समकोण हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are tangent segments from different exterior points not automatically equal?",
+        "hi": "अलग बाहरी बिंदुओं के स्पर्श रेखाखंड अपने आप बराबर क्यों नहीं हैं?"
+      },
+      "answer": {
+        "en": "The theorem requires a common exterior point. Their centre distances can differ, giving different √(d²−r²).",
+        "hi": "प्रमेय में एक ही बाहरी बिंदु चाहिए। केंद्र दूरियाँ अलग होने पर √(d²−r²) भी अलग हो सकता है।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not replace tangent length by OP−r, use a radius to the wrong contact point, or assume two tangents from an interior point. Equal lengths require the same exterior point and circle.",
+    "hi": "स्पर्श लंबाई को OP−r न लें, गलत स्पर्श बिंदु की त्रिज्या न लगाएँ और अंदर से 2 स्पर्शरेखाएँ न मानें। समान लंबाई के लिए एक ही बाहरी बिंदु और वृत्त आवश्यक हैं।"
+  },
+  "revision": [
+    {
+      "en": "One intersection defines tangency.",
+      "hi": "1 प्रतिच्छेद स्पर्श की पहचान है।"
+    },
+    {
+      "en": "The contact radius is perpendicular to the tangent.",
+      "hi": "स्पर्श त्रिज्या स्पर्शरेखा पर लंब है।"
+    },
+    {
+      "en": "A point gives 0,1,2 tangents when inside,on,outside.",
+      "hi": "अंदर,पर,बाहर बिंदु से 0,1,2 स्पर्शरेखाएँ मिलती हैं।"
+    },
+    {
+      "en": "Equal tangents follow from RHS congruence.",
+      "hi": "समान स्पर्श लंबाइयाँ RHS से सिद्ध हैं।"
+    },
+    {
+      "en": "Use Pythagoras and supplementary tangent/centre angles with their conditions.",
+      "hi": "शर्तों सहित पाइथागोरस और संपूरक स्पर्श/केंद्रीय कोण लगाएँ।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Point position → contact radius → right triangle → RHS equal tangents → Pythagoras / angle sum → polygon segments",
+    "hi": "बिंदु की स्थिति → स्पर्श त्रिज्या → समकोण त्रिभुज → RHS से समान स्पर्श → पाइथागोरस / कोण योग → बहुभुज के रेखाखंड"
+  },
+  "sources": [
+    {
+      "title": "NCERT Class 10 Mathematics Chapter 10, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh110.pdf"
+    }
+  ]
+}

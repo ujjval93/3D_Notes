@@ -1,0 +1,1481 @@
+{
+  "id": "control",
+  "title": {
+    "en": "Control and Coordination",
+    "hi": "नियंत्रण एवं समन्वय"
+  },
+  "unit": {
+    "en": "Biology",
+    "hi": "जीव विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "ten-reflex",
+      "title": {
+        "en": "Reflex arc",
+        "hi": "प्रतिवर्ती चाप"
+      },
+      "kind": "ten-control",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Impulse pathway stage",
+            "hi": "आवेग मार्ग का चरण"
+          },
+          "min": 0,
+          "max": 4,
+          "step": 1,
+          "initial": 0,
+          "unit": "stage"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Trace a rapid protective pathway.",
+        "hi": "तेज सुरक्षात्मक मार्ग का क्रम देखिए।"
+      },
+      "observe": {
+        "en": "Move from receptor to sensory neuron, spinal centre, motor neuron and effector.",
+        "hi": "ग्राही से संवेदी न्यूरॉन, मेरु केंद्र, प्रेरक न्यूरॉन और कार्यकारी अंग तक जाइए।"
+      },
+      "modelNote": {
+        "en": "The impulse speed and distances are symbolic; the brain also receives information although the rapid spinal link is highlighted.",
+        "hi": "आवेग गति और दूरियां सांकेतिक हैं; तेज मेरु मार्ग दिखाने पर भी मस्तिष्क को सूचना मिलती है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "A short coordinated route reduces delay before an effector responds.",
+          "hi": "छोटा समन्वित मार्ग कार्यकारी अंग की प्रतिक्रिया की देरी घटाता है।"
+        }
+      },
+      "realLife": {
+        "en": "An unexpected harmful touch can trigger rapid withdrawal; do not test with dangerous heat.",
+        "hi": "अचानक हानिकारक स्पर्श से तुरंत हाथ हट सकता है; खतरनाक गर्मी से परीक्षण न करें।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which carries output to the effector?",
+          "hi": "कार्यकारी अंग तक आउटपुट कौन ले जाता है?"
+        },
+        "options": [
+          {
+            "en": "Sensory neuron",
+            "hi": "संवेदी न्यूरॉन"
+          },
+          {
+            "en": "Motor neuron",
+            "hi": "प्रेरक न्यूरॉन"
+          },
+          {
+            "en": "Skin pigment",
+            "hi": "त्वचा वर्णक"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Motor neurons carry the outgoing instruction to the effector.",
+          "hi": "प्रेरक न्यूरॉन बाहर जाने वाला निर्देश कार्यकारी अंग तक ले जाते हैं।"
+        }
+      },
+      "legend": [
+        {
+          "color": "#f2c86b",
+          "label": {
+            "en": "Highlighted structure or current stage",
+            "hi": "प्रकाशित संरचना या वर्तमान चरण"
+          }
+        },
+        {
+          "color": "#63c9ba",
+          "label": {
+            "en": "Pathway or supporting structure",
+            "hi": "मार्ग या सहायक संरचना"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-reflex-start",
+          "label": {
+            "en": "Set the control to 0 stage.",
+            "hi": "नियंत्रक को 0 stage पर लाइए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-reflex-end",
+          "label": {
+            "en": "Explore 4 stage and compare.",
+            "hi": "4 stage तक जाकर तुलना कीजिए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2
+          },
+          "text": {
+            "en": "The stimulus is detected and carried towards the spinal integration region.",
+            "hi": "उद्दीपन पहचाना जाकर मेरु समन्वय क्षेत्र की ओर जाता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 3
+          },
+          "text": {
+            "en": "The motor signal reaches the effector, producing the response.",
+            "hi": "प्रेरक संकेत कार्यकारी अंग तक पहुंचकर प्रतिक्रिया कराता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-tropism",
+      "title": {
+        "en": "Phototropism",
+        "hi": "प्रकाशानुवर्तन"
+      },
+      "kind": "ten-control",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Time after side illumination",
+            "hi": "एक ओर प्रकाश के बाद समय"
+          },
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "initial": 0,
+          "unit": "model hours"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 3,
+      "goal": {
+        "en": "Connect unequal elongation with bending.",
+        "hi": "असमान लंबाई वृद्धि को झुकने से जोड़िए।"
+      },
+      "observe": {
+        "en": "Compare the illuminated and shaded sides as model time advances.",
+        "hi": "मॉडल समय बढ़ने पर प्रकाशित तथा छाया वाली ओर की तुलना कीजिए।"
+      },
+      "modelNote": {
+        "en": "Model hours are illustrative, not measured plant-growth times; the drawing exaggerates curvature.",
+        "hi": "मॉडल घंटे सांकेतिक हैं, मापा पादप वृद्धि समय नहीं; वक्रता बढ़ाकर दिखाई गई है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Greater elongation on the shaded shoot side bends the tip towards light.",
+          "hi": "प्ररोह की छाया वाली ओर अधिक वृद्धि से सिरा प्रकाश की ओर मुड़ता है।"
+        }
+      },
+      "realLife": {
+        "en": "A seedling near a window may bend towards the available light.",
+        "hi": "खिड़की के पास पौध उपलब्ध प्रकाश की ओर झुक सकता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "What causes the bending in this shoot model?",
+          "hi": "इस प्ररोह मॉडल में झुकाव का कारण क्या है?"
+        },
+        "options": [
+          {
+            "en": "Unequal growth",
+            "hi": "असमान वृद्धि"
+          },
+          {
+            "en": "Light pulling like a rope",
+            "hi": "रस्सी जैसा प्रकाश का खिंचाव"
+          },
+          {
+            "en": "Bones contracting",
+            "hi": "हड्डियां सिकुड़ना"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Auxin-related differences in elongation produce curvature.",
+          "hi": "ऑक्सिन संबंधी लंबाई वृद्धि का अंतर वक्रता बनाता है।"
+        }
+      },
+      "legend": [
+        {
+          "color": "#f2c86b",
+          "label": {
+            "en": "Highlighted structure or current stage",
+            "hi": "प्रकाशित संरचना या वर्तमान चरण"
+          }
+        },
+        {
+          "color": "#63c9ba",
+          "label": {
+            "en": "Pathway or supporting structure",
+            "hi": "मार्ग या सहायक संरचना"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-tropism-start",
+          "label": {
+            "en": "Set the control to 0 model hours.",
+            "hi": "नियंत्रक को 0 model hours पर लाइए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-tropism-end",
+          "label": {
+            "en": "Explore 10 model hours and compare.",
+            "hi": "10 model hours तक जाकर तुलना कीजिए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 10
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 5
+          },
+          "text": {
+            "en": "The shoot is beginning to respond to one-sided illumination.",
+            "hi": "प्ररोह एक ओर प्रकाश पर प्रतिक्रिया शुरू कर रहा है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 6
+          },
+          "text": {
+            "en": "Unequal elongation produces a visible bend towards light.",
+            "hi": "असमान लंबाई वृद्धि से प्रकाश की ओर झुकाव दिखता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-hormones",
+      "title": {
+        "en": "Hormonal feedback",
+        "hi": "हार्मोन का प्रतिपुष्टि नियंत्रण"
+      },
+      "kind": "ten-control",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Blood glucose level",
+            "hi": "रक्त शर्करा स्तर"
+          },
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "initial": 50,
+          "unit": "relative units"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 6,
+      "goal": {
+        "en": "Explore a simplified insulin feedback relationship.",
+        "hi": "सरल इंसुलिन प्रतिपुष्टि संबंध खोजिए।"
+      },
+      "observe": {
+        "en": "Change relative glucose and compare the indicated pancreatic response.",
+        "hi": "सापेक्ष ग्लूकोज बदलकर दर्शाई अग्न्याशयी प्रतिक्रिया देखिए।"
+      },
+      "modelNote": {
+        "en": "The 0–100 relative scale is not a clinical blood glucose measurement, diagnosis or medicine dose; other regulatory signals are omitted.",
+        "hi": "0–100 सापेक्ष मापनी चिकित्सकीय रक्त ग्लूकोज, निदान या दवा की खुराक नहीं; दूसरे नियंत्रक संकेत छोड़े गए हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "A glucose rise stimulates insulin response, whose effects help reduce the original rise.",
+          "hi": "ग्लूकोज वृद्धि इंसुलिन प्रतिक्रिया बढ़ाती है, जिसके प्रभाव मूल वृद्धि घटाते हैं।"
+        }
+      },
+      "realLife": {
+        "en": "After absorbed food changes available glucose, feedback helps adjust the response.",
+        "hi": "भोजन अवशोषित होने पर उपलब्ध ग्लूकोज बदलता है और प्रतिपुष्टि प्रतिक्रिया समायोजित करती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "What does the slider measure?",
+          "hi": "नियंत्रक क्या मापता है?"
+        },
+        "options": [
+          {
+            "en": "A medicine dose",
+            "hi": "दवा की खुराक"
+          },
+          {
+            "en": "A real diagnostic blood test",
+            "hi": "वास्तविक नैदानिक रक्त जांच"
+          },
+          {
+            "en": "A relative model input",
+            "hi": "सापेक्ष मॉडल मान"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "The display is a teaching model and has no clinical concentration units.",
+          "hi": "यह शिक्षण मॉडल है और इसमें चिकित्सकीय सांद्रता इकाई नहीं है।"
+        }
+      },
+      "legend": [
+        {
+          "color": "#f2c86b",
+          "label": {
+            "en": "Highlighted structure or current stage",
+            "hi": "प्रकाशित संरचना या वर्तमान चरण"
+          }
+        },
+        {
+          "color": "#63c9ba",
+          "label": {
+            "en": "Pathway or supporting structure",
+            "hi": "मार्ग या सहायक संरचना"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-hormones-start",
+          "label": {
+            "en": "Set the control to 0 relative units.",
+            "hi": "नियंत्रक को 0 relative units पर लाइए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-hormones-end",
+          "label": {
+            "en": "Explore 100 relative units and compare.",
+            "hi": "100 relative units तक जाकर तुलना कीजिए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 100
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 50
+          },
+          "text": {
+            "en": "Lower relative glucose gives a smaller illustrated insulin stimulus.",
+            "hi": "कम सापेक्ष ग्लूकोज में दर्शाया इंसुलिन उद्दीपन छोटा है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 55
+          },
+          "text": {
+            "en": "Higher relative glucose increases the illustrated feedback response.",
+            "hi": "अधिक सापेक्ष ग्लूकोज में दर्शाई प्रतिपुष्टि प्रतिक्रिया बढ़ती है।"
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Neurons and the reflex arc",
+        "hi": "तंत्रिका कोशिकाएं तथा प्रतिवर्त चाप"
+      },
+      "paragraphs": [
+        {
+          "en": "A stimulus is a detectable change, and a receptor is a specialised structure that receives it. In a neuron, dendrites receive information; an electrical impulse travels through the cell body along the axon towards its ending. At a typical synapse, chemicals released from one ending cross a small gap and start a new signal in the next cell. A pathway therefore requires connected, correctly directed communication rather than one continuous metal-like wire. Sensory neurons carry information towards the central nervous system; motor neurons carry instructions towards an effector such as a muscle.",
+          "hi": "उद्दीपन (Stimulus) पहचानने योग्य परिवर्तन है तथा ग्राही (Receptor) उसे ग्रहण करने वाली विशिष्ट संरचना है। तंत्रिका कोशिका यानी न्यूरॉन के द्रुमिकाएं सूचना ग्रहण करती हैं। विद्युत आवेग कोशिका काय से अक्षतंतु के अंतिम भाग की ओर जाता है। सामान्य अंतर्ग्रथन (Synapse) पर एक न्यूरॉन से निकले रसायन छोटा अंतर पार करके अगली कोशिका में नया संकेत शुरू करते हैं। इसलिए यह मार्ग धातु के एक अखंड तार जैसा नहीं है। इसमें सही दिशा में जुड़े संचार की जरूरत होती है। संवेदी न्यूरॉन सूचना केंद्रीय तंत्रिका तंत्र तक लाते हैं; प्रेरक न्यूरॉन पेशी जैसे कार्यकारी अंग तक निर्देश पहुंचाते हैं।"
+        },
+        {
+          "en": "A reflex arc connects receptor, sensory neuron, spinal integration, motor neuron and effector for a rapid response. The brain may receive information as well; a spinal reflex does not mean the brain ceases to exist or never learns what happened. This rapid arrangement reduces delay when protection is urgent.",
+          "hi": "प्रतिवर्त चाप (Reflex arc) में ग्राही, संवेदी न्यूरॉन, मेरुरज्जु में समन्वय, प्रेरक न्यूरॉन और कार्यकारी अंग जुड़ते हैं। इससे तुरंत प्रतिक्रिया संभव होती है। सूचना मस्तिष्क तक भी पहुंच सकती है। मेरुरज्जु आधारित प्रतिवर्त का अर्थ यह नहीं कि मस्तिष्क को घटना का कभी पता ही नहीं चलता। सुरक्षा में तेजी जरूरी होने पर यह व्यवस्था देरी घटाती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A reflex is a coordinated response, not a decision made by the skin alone. Do not test it with burns or sharp objects.",
+          "hi": "प्रतिवर्त समन्वित प्रतिक्रिया है, केवल त्वचा का फैसला नहीं। इसे जलाने या नुकीली वस्तु से जांचने का प्रयास न करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is a short reflex pathway useful?",
+          "hi": "छोटा प्रतिवर्त मार्ग उपयोगी क्यों है?"
+        },
+        "answer": {
+          "en": "It can trigger a protective response quickly without waiting for a detailed conscious decision, while information can still reach the brain.",
+          "hi": "विस्तृत सचेत निर्णय की प्रतीक्षा किए बिना वह जल्दी सुरक्षात्मक प्रतिक्रिया करा सकता है, जबकि सूचना मस्तिष्क तक भी पहुंच सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "The brain and voluntary control",
+        "hi": "मस्तिष्क तथा ऐच्छिक नियंत्रण"
+      },
+      "paragraphs": [
+        {
+          "en": "The central nervous system consists of the brain and spinal cord. The forebrain receives sensory information and supports thinking, interpretation and many voluntary actions. Different areas process signals from different receptors; association of these inputs helps create a meaningful response. Hunger and other internal sensations also have control centres. The midbrain and hindbrain contribute to several involuntary activities. The medulla helps regulate functions such as blood pressure, salivation and vomiting. The cerebellum helps maintain balance and the precision of movements, such as placing a foot accurately while walking.",
+          "hi": "केंद्रीय तंत्रिका तंत्र में मस्तिष्क और मेरुरज्जु शामिल हैं। अग्र मस्तिष्क संवेदी सूचना ग्रहण करता है और सोचने, अर्थ समझने तथा अनेक ऐच्छिक कार्यों में भाग लेता है। अलग क्षेत्रों में अलग ग्राहियों से संकेत आते हैं। इनका संबंध जोड़ने से उपयुक्त प्रतिक्रिया बनती है। भूख जैसी आंतरिक संवेदनाओं के भी नियंत्रण केंद्र होते हैं। मध्य मस्तिष्क और पश्च मस्तिष्क कई अनैच्छिक क्रियाओं में योगदान देते हैं। मेडुला रक्त दाब, लार स्राव और वमन जैसी क्रियाओं के नियंत्रण में भाग लेता है। अनुमस्तिष्क (Cerebellum) संतुलन तथा गति की शुद्धता में सहायक है, जैसे चलते समय पैर को उचित स्थान पर रखना।"
+        },
+        {
+          "en": "Bone and fluid protect this delicate tissue: the skull encloses the brain, and the vertebral column protects the spinal cord. Peripheral nerves connect the central system with the rest of the body. A muscle responds to a motor signal through changes in special proteins that alter cell shape and produce contraction; the nerve itself does not pull the limb like a rope.",
+          "hi": "यह कोमल ऊतक हड्डी तथा द्रव से सुरक्षित रहता है। खोपड़ी मस्तिष्क को घेरती है और कशेरुक दंड मेरुरज्जु की रक्षा करता है। परिधीय तंत्रिकाएं केंद्रीय तंत्र से शरीर के अन्य भाग जोड़ती हैं। प्रेरक संकेत मिलने पर पेशी के विशिष्ट प्रोटीनों में परिवर्तन होता है, जिससे कोशिका का आकार बदलकर संकुचन होता है। तंत्रिका स्वयं रस्सी की तरह खींचकर हाथ पैर नहीं चलाती।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Voluntary and involuntary describe control patterns, not whether an action uses energy. Both involve organised cellular activity.",
+          "hi": "ऐच्छिक और अनैच्छिक नियंत्रण के प्रकार हैं, ऊर्जा लगने या न लगने के नाम नहीं। दोनों में व्यवस्थित कोशिकीय क्रियाएं होती हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which region helps precise movement and balance?",
+          "hi": "सटीक गति और संतुलन में कौन सा भाग सहायक है?"
+        },
+        "answer": {
+          "en": "The cerebellum coordinates precision and balance; this is different from the forebrain’s role in interpreting information and planning many voluntary actions.",
+          "hi": "अनुमस्तिष्क सटीकता और संतुलन का समन्वय करता है; यह सूचना समझने और अनेक ऐच्छिक कार्यों की योजना में अग्र मस्तिष्क की भूमिका से अलग है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Movement without nerves in plants",
+        "hi": "पौधों में तंत्रिकाओं के बिना गति"
+      },
+      "paragraphs": [
+        {
+          "en": "Plants respond to stimuli even though they lack an animal-like nervous system and muscles. A sensitive plant can fold leaves after touch through changes in water content and cell shape. Such movement does not require the leaf to grow longer and is not a response directed towards the toucher. Growth movements, in contrast, involve unequal growth and usually develop more slowly. A tendril touching a support grows differently on opposite sides, causing it to coil. Comparing these examples prevents the mistake of calling every plant movement a tropism or every response a reflex.",
+          "hi": "पौधों में जंतुओं जैसा तंत्रिका तंत्र और पेशियां नहीं हैं, फिर भी वे उद्दीपनों पर प्रतिक्रिया करते हैं। छुईमुई स्पर्श के बाद कोशिकाओं में जल की मात्रा और आकार बदलने से पत्तियां मोड़ सकती है। इसमें पत्ती का लंबा होना जरूरी नहीं है और गति छूने वाले की दिशा में होना भी जरूरी नहीं है। इसके विपरीत वृद्धि गति में असमान वृद्धि होती है और वह सामान्यतः धीरे विकसित होती है। प्रतान किसी सहारे को छूने पर दोनों ओर अलग वृद्धि से लिपट जाता है। इन उदाहरणों की तुलना करने पर हर पादप गति को अनुवर्तन या हर प्रतिक्रिया को प्रतिवर्त कहने की गलती नहीं होती।"
+        },
+        {
+          "en": "Communication between plant cells can use chemical signals and changes in water or electrical conditions. A visible response must still be explained through the responding cells. “The plant wants light” can be a helpful informal description, but the scientific explanation identifies the stimulus, signal, unequal change and resulting movement. Distinguish observation from purpose-like language.",
+          "hi": "पादप कोशिकाओं के बीच रासायनिक संकेत तथा जल या विद्युत दशाओं में परिवर्तन संचार कर सकते हैं। दिखाई देने वाली प्रतिक्रिया को भी संबंधित कोशिकाओं के बदलाव से समझाना चाहिए। बोलचाल में पौधा प्रकाश चाहता है कहना सरल लगता है, लेकिन वैज्ञानिक उत्तर में उद्दीपन, संकेत, असमान परिवर्तन और परिणामी गति बताना जरूरी है। अवलोकन और इच्छा जैसी भाषा में अंतर रखिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Ask whether growth occurs and whether direction depends on the stimulus before classifying a movement.",
+          "hi": "गति का वर्गीकरण करने से पहले पूछिए कि वृद्धि हुई या नहीं और दिशा उद्दीपन की दिशा पर निर्भर है या नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is touch-folding different from a shoot bending towards light?",
+          "hi": "स्पर्श पर पत्ती मुड़ना प्रकाश की ओर प्ररोह झुकने से कैसे अलग है?"
+        },
+        "answer": {
+          "en": "Touch-folding mainly involves water-related shape changes, while phototropic bending involves directional unequal growth.",
+          "hi": "स्पर्श पर मुड़ने में मुख्यतः जल संबंधी आकार परिवर्तन होता है, जबकि प्रकाशानुवर्ती झुकाव दिशात्मक असमान वृद्धि से होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Tropisms and auxin",
+        "hi": "अनुवर्तन तथा ऑक्सिन"
+      },
+      "paragraphs": [
+        {
+          "en": "A tropism is a directional growth response. Shoots generally show positive phototropism by bending towards light, while roots generally show positive geotropism by growing with gravity. Roots also respond to water gradients, and pollen tubes grow towards chemical signals associated with the ovule. These responses can occur together; a real plant is not limited to one stimulus at a time. The word positive means towards the stimulus and negative means away, not beneficial versus harmful. Different organs may respond differently to the same signal.",
+          "hi": "अनुवर्तन (Tropism) दिशात्मक वृद्धि प्रतिक्रिया है। प्ररोह सामान्यतः प्रकाश की ओर झुककर धनात्मक प्रकाशानुवर्तन दिखाते हैं और जड़ें गुरुत्व की दिशा में बढ़कर धनात्मक गुरुत्वानुवर्तन करती हैं। जड़ें जल की दिशा पर भी प्रतिक्रिया करती हैं। पराग नली बीजांड से जुड़े रासायनिक संकेतों की ओर बढ़ती है। ये प्रतिक्रियाएं साथ भी हो सकती हैं; वास्तविक पौधे पर एक समय केवल एक उद्दीपन नहीं लगता। धनात्मक का अर्थ उद्दीपन की ओर और ऋणात्मक का अर्थ उससे दूर है, अच्छा और बुरा नहीं। एक ही संकेत पर अलग अंगों की प्रतिक्रिया अलग हो सकती है।"
+        },
+        {
+          "en": "Auxin made near a growing shoot tip becomes distributed unequally when light comes from one side. Greater elongation on the shaded side bends the shoot towards light. The bending is therefore a growth difference, not a pull exerted by light on the stem. A time slider can illustrate this sequence, but the speed depends on species and conditions and should not be treated as measured experimental hours.",
+          "hi": "बढ़ते प्ररोह के सिरे के पास बना ऑक्सिन एक ओर से प्रकाश आने पर असमान रूप से वितरित होता है। छाया वाली ओर अधिक लंबाई वृद्धि से प्ररोह प्रकाश की ओर झुकता है। इसलिए यह वृद्धि का अंतर है, प्रकाश द्वारा तने को खींचना नहीं। समय नियंत्रक क्रम समझा सकता है, लेकिन वास्तविक गति प्रजाति तथा परिस्थितियों पर निर्भर है। दृश्य के घंटों को प्रयोग से मापा समय नहीं मानना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For a causal answer, link one-sided light → auxin redistribution → unequal elongation → bending.",
+          "hi": "कारण वाले उत्तर में एक ओर प्रकाश → ऑक्सिन पुनर्वितरण → असमान लंबाई वृद्धि → झुकाव जोड़िए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which side elongates more in a shoot bending towards light?",
+          "hi": "प्रकाश की ओर झुकते प्ररोह में कौन सी ओर अधिक बढ़ती है?"
+        },
+        "answer": {
+          "en": "The shaded side elongates more in the textbook shoot model, bending the tip towards the illuminated side.",
+          "hi": "पाठ्यपुस्तक के प्ररोह मॉडल में छाया वाली ओर अधिक लंबाई वृद्धि होती है, जिससे सिरा प्रकाशित ओर झुकता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Plant growth regulators",
+        "hi": "पादप वृद्धि नियामक"
+      },
+      "paragraphs": [
+        {
+          "en": "Plant hormones are chemical signals that regulate growth and responses at low amounts. Auxin helps cell elongation in shoots and participates in tropic responses. Gibberellins help stem growth, while cytokinins promote cell division and are found in actively dividing regions such as fruits and seeds. Abscisic acid generally inhibits growth and can contribute to responses such as stomatal closure. These are broad roles at school level, not a rule that each hormone has only one effect in every tissue. Concentration, tissue and developmental stage affect the outcome.",
+          "hi": "पादप हार्मोन कम मात्रा में वृद्धि और प्रतिक्रियाओं को नियंत्रित करने वाले रासायनिक संकेत हैं। ऑक्सिन प्ररोह कोशिकाओं की लंबाई बढ़ाने और अनुवर्ती प्रतिक्रियाओं में सहायक है। जिबरेलिन तने की वृद्धि में भाग लेते हैं। साइटोकाइनिन कोशिका विभाजन को बढ़ाते हैं और फल तथा बीज जैसे सक्रिय विभाजन वाले क्षेत्रों में मिलते हैं। एब्सिसिक अम्ल सामान्यतः वृद्धि का निरोध करता है तथा रंध्र बंद होने जैसी प्रतिक्रियाओं में योगदान देता है। ये विद्यालय स्तर की व्यापक भूमिकाएं हैं; इसका अर्थ यह नहीं कि हर ऊतक में एक हार्मोन का केवल एक ही प्रभाव होगा। सांद्रता, ऊतक और विकास अवस्था से परिणाम बदलता है।"
+        },
+        {
+          "en": "Chemical coordination lets information influence cells away from its site of production. It does not require a dedicated nerve connecting every pair of cells. However, this flexibility should not be confused with instantaneous action: hormone production, transport, reception and cellular response take time. When reading a question, identify whether it asks for cell division, elongation or inhibition before choosing a hormone. A list of names alone does not explain a response.",
+          "hi": "रासायनिक समन्वय से संकेत अपने निर्माण स्थान से दूर की कोशिकाओं को भी प्रभावित कर सकता है। हर कोशिका जोड़ी के बीच अलग तंत्रिका होना जरूरी नहीं। लेकिन इसे तात्कालिक क्रिया न समझिए। हार्मोन बनना, पहुंचना, ग्रहण होना और कोशिकीय प्रतिक्रिया विकसित होना समय लेता है। प्रश्न पढ़ते समय पहले पहचानिए कि कोशिका विभाजन, लंबाई वृद्धि या निरोध पूछा गया है। केवल हार्मोन के नामों की सूची किसी प्रतिक्रिया को नहीं समझाती।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Do not confuse cytokinins with cytokinesis, the division of cytoplasm during cell division. Similar words can describe different ideas.",
+          "hi": "साइटोकाइनिन को साइटोकाइनेसिस से न मिलाइए। साइटोकाइनेसिस कोशिका विभाजन में कोशिका द्रव्य का बंटना है; मिलते शब्द अलग अर्थ रखते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which hormone group is linked with cell division?",
+          "hi": "कौन सा हार्मोन समूह कोशिका विभाजन से जुड़ा है?"
+        },
+        "answer": {
+          "en": "Cytokinins promote cell division; the name should be linked with the process and an actively growing region.",
+          "hi": "साइटोकाइनिन कोशिका विभाजन को बढ़ाते हैं; नाम को प्रक्रिया तथा सक्रिय वृद्धि वाले क्षेत्र से जोड़कर याद कीजिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Animal hormones and target organs",
+        "hi": "जंतु हार्मोन तथा लक्ष्य अंग"
+      },
+      "paragraphs": [
+        {
+          "en": "Endocrine glands release hormones into blood rather than through ducts onto a surface. Blood carries a hormone widely, but only cells with appropriate receptors respond in the relevant way. Adrenaline prepares the body for urgent activity: heart rate and breathing can increase, more blood is directed towards skeletal muscles, and stored resources become more available. This coordinated preparation is a chemical response, while nervous signals can also participate in the situation. It is not evidence that one hormone acts independently of all other control systems.",
+          "hi": "अंतःस्रावी ग्रंथियां (Endocrine glands) हार्मोन को नलिका से सतह पर भेजने के बजाय रक्त में छोड़ती हैं। रक्त उन्हें अनेक स्थानों तक ले जाता है, पर उपयुक्त ग्राही वाली लक्ष्य कोशिकाएं संबंधित प्रतिक्रिया करती हैं। एड्रेनालिन शरीर को अचानक जरूरी गतिविधि के लिए तैयार करता है। हृदय गति और श्वसन बढ़ सकते हैं, कंकाल पेशियों की ओर अधिक रक्त जाता है और संग्रहित संसाधन अधिक उपलब्ध होते हैं। यह समन्वित रासायनिक तैयारी है; परिस्थिति में तंत्रिका संकेत भी भाग ले सकते हैं। इसका अर्थ यह नहीं कि एक हार्मोन सभी दूसरी नियंत्रण व्यवस्थाओं से अलग होकर काम करता है।"
+        },
+        {
+          "en": "Thyroxine from the thyroid helps regulate metabolism and requires iodine for synthesis. Growth hormone from the pituitary influences growth; inappropriate levels during childhood can affect normal development. The pancreas produces insulin, which helps regulate blood glucose. Testes produce testosterone and ovaries produce oestrogens, contributing to puberty-related changes. These school-level associations are learning aids, not a basis for diagnosing a person from appearance or prescribing hormone products.",
+          "hi": "थायरॉयड का थायरॉक्सिन उपापचय के नियंत्रण में सहायक है और उसके निर्माण के लिए आयोडीन चाहिए। पीयूष ग्रंथि का वृद्धि हार्मोन बढ़ने को प्रभावित करता है; बाल्यावस्था में अनुचित मात्रा सामान्य विकास पर प्रभाव डाल सकती है। अग्न्याशय का इंसुलिन रक्त ग्लूकोज नियंत्रण में मदद करता है। वृषण टेस्टोस्टेरॉन और अंडाशय एस्ट्रोजन बनाते हैं, जो यौवन संबंधी बदलावों में भाग लेते हैं। ये विद्यालय स्तर के संबंध सीखने के लिए हैं; किसी का रूप देखकर निदान करने या हार्मोन उत्पाद सुझाने का आधार नहीं हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A gland’s location, its hormone and its main effect are three different facts; practise connecting all three.",
+          "hi": "ग्रंथि का स्थान, उसका हार्मोन और मुख्य प्रभाव 3 अलग तथ्य हैं; इन्हें जोड़ने का अभ्यास कीजिए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does every cell not respond identically to the same hormone?",
+          "hi": "एक ही हार्मोन पर हर कोशिका समान प्रतिक्रिया क्यों नहीं करती?"
+        },
+        "answer": {
+          "en": "Appropriate receptors and internal response machinery differ among target cells, so blood delivery alone does not determine the effect.",
+          "hi": "लक्ष्य कोशिकाओं में उपयुक्त ग्राही तथा आंतरिक प्रतिक्रिया व्यवस्था अलग होती है। केवल रक्त से पहुंचना प्रभाव तय नहीं करता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Feedback and glucose regulation",
+        "hi": "प्रतिपुष्टि तथा ग्लूकोज नियंत्रण"
+      },
+      "paragraphs": [
+        {
+          "en": "A control system must respond to changing needs rather than release a fixed amount of signal forever. Feedback connects a measured internal condition with further hormone release. In the textbook insulin example, a rise in blood glucose stimulates pancreatic insulin secretion. Insulin helps cells take up and use glucose and supports storage pathways, so the level moves back towards a suitable range. As the stimulus diminishes, the need for further insulin release also changes. This balancing response is a negative-feedback idea, not a judgement that insulin is harmful.",
+          "hi": "नियंत्रण व्यवस्था को बदलती जरूरतों का उत्तर देना चाहिए, हमेशा समान संकेत छोड़ना नहीं। प्रतिपुष्टि (Feedback) में आंतरिक दशा आगे के हार्मोन स्राव को प्रभावित करती है। इंसुलिन के उदाहरण में रक्त ग्लूकोज बढ़ने से अग्न्याशय का इंसुलिन स्राव उत्तेजित होता है। इंसुलिन कोशिकाओं द्वारा ग्लूकोज लेने और उपयोग करने तथा भंडारण मार्गों में सहायता करता है। इससे स्तर उपयुक्त सीमा की ओर लौटता है। उद्दीपन घटने पर आगे इंसुलिन छोड़ने की आवश्यकता भी बदलती है। यह ऋणात्मक प्रतिपुष्टि का विचार है; ऋणात्मक कहने का अर्थ इंसुलिन को हानिकारक बताना नहीं है।"
+        },
+        {
+          "en": "The scene uses a relative 0–100 scale to make this relationship visible. Those numbers are not clinical concentrations, normal limits, doses or a diabetes test. Real glucose regulation also involves other signals and organs that this introductory model leaves out. If a question concerns the mechanism, explain the direction of change and feedback rather than attaching invented medical units to the slider.",
+          "hi": "दृश्य इस संबंध को समझाने के लिए 0–100 की सापेक्ष मापनी लेता है। ये अंक चिकित्सकीय सांद्रता, सामान्य सीमा, दवा की मात्रा या मधुमेह की जांच नहीं हैं। वास्तविक ग्लूकोज नियंत्रण में अन्य संकेत तथा अंग भी शामिल हैं, जिन्हें परिचयात्मक मॉडल छोड़ देता है। तंत्र पूछे जाने पर परिवर्तन की दिशा और प्रतिपुष्टि समझाइए। नियंत्रक के अंक पर मनमानी चिकित्सकीय इकाई जोड़ना गलत होगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A feedback loop needs a changing condition, a response and an effect that alters the original stimulus.",
+          "hi": "प्रतिपुष्टि चक्र में बदलती दशा, प्रतिक्रिया और मूल उद्दीपन को बदलने वाला प्रभाव तीनों पहचानिए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to the stimulus for insulin release as excess glucose is reduced?",
+          "hi": "अतिरिक्त ग्लूकोज घटने पर इंसुलिन स्राव के उद्दीपन का क्या होता है?"
+        },
+        "answer": {
+          "en": "The stimulus decreases, so secretion is adjusted instead of remaining permanently at the earlier higher response.",
+          "hi": "उद्दीपन घटता है, इसलिए स्राव समायोजित होता है; वह पहले वाली अधिक प्रतिक्रिया पर स्थायी रूप से नहीं बना रहता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Comparing coordination systems",
+        "hi": "समन्वय व्यवस्थाओं की तुलना"
+      },
+      "paragraphs": [
+        {
+          "en": "Nervous coordination sends rapid signals along connected neurons to particular effectors. Hormonal coordination sends chemicals through circulation, often producing slower and longer-lasting effects in responsive targets. These are useful comparisons, not absolute statements that every neural effect is brief or every hormone is slow. A real response, such as preparation for an emergency, may combine both. Electrical communication within a neuron and chemical transmission at many synapses also show why “nervous means only electrical” is incomplete. The route, target specificity and duration matter more than a one-word label.",
+          "hi": "तंत्रिका समन्वय जुड़े न्यूरॉनों से विशिष्ट कार्यकारी अंग तक तेजी से संकेत भेजता है। हार्मोन समन्वय में रसायन रक्त द्वारा जाते हैं और ग्रहणशील लक्ष्यों में अक्सर धीमा तथा अधिक समय चलने वाला प्रभाव देते हैं। ये उपयोगी तुलनाएं हैं, पूर्ण नियम नहीं कि हर तंत्रिका प्रभाव छोटा या हर हार्मोन धीमा हो। आपातकाल की तैयारी जैसी प्रतिक्रिया में दोनों मिल सकते हैं। न्यूरॉन के भीतर विद्युत संचार और अनेक अंतर्ग्रथनों पर रासायनिक संचार से स्पष्ट है कि तंत्रिका तंत्र को केवल विद्युत कहना अधूरा है। मार्ग, लक्ष्य की विशिष्टता और प्रभाव की अवधि एक शब्द के नाम से अधिक जरूरी हैं।"
+        },
+        {
+          "en": "For any unfamiliar example, identify stimulus, receptor or sensing tissue, signal, responding tissue and outcome. Then ask whether growth or reversible shape change is involved and whether feedback alters the signal. This method works for a hand withdrawing, a shoot bending and a hormone level changing, while preserving their biological differences. A labelled arrow sequence usually explains coordination better than an unconnected catalogue of organs.",
+          "hi": "नए उदाहरण में उद्दीपन, ग्राही या संवेदक ऊतक, संकेत, प्रतिक्रिया करने वाला ऊतक और परिणाम पहचानिए। फिर पूछिए कि वृद्धि हुई या उलट सकने वाला आकार परिवर्तन, तथा प्रतिपुष्टि से संकेत बदला या नहीं। यह तरीका हाथ हटने, प्ररोह झुकने तथा हार्मोन बदलने तीनों पर लागू होता है, फिर भी उनके जैविक अंतर बने रहते हैं। नाम वाले तीरों का क्रम सामान्यतः अंगों की असंबद्ध सूची से बेहतर समन्वय समझाता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use a comparison table only after selecting shared criteria: route, speed, target, duration and feedback.",
+          "hi": "तुलना तालिका बनाने से पहले समान कसौटियां चुनिए: मार्ग, गति, लक्ष्य, अवधि और प्रतिपुष्टि।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why do organisms need coordination between organs?",
+          "hi": "जीवों को अंगों के बीच समन्वय क्यों चाहिए?"
+        },
+        "answer": {
+          "en": "Different organs must respond consistently to external changes and internal needs; otherwise individually working parts would not produce a suitable whole-body response.",
+          "hi": "बाहरी परिवर्तन और आंतरिक जरूरत पर अलग अंगों को संगत प्रतिक्रिया देनी होती है; वरना अलग काम करते भाग पूरे शरीर की उपयुक्त प्रतिक्रिया नहीं बना पाएंगे।"
+        }
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Trace withdrawal from an unexpectedly hot surface.",
+        "hi": "अचानक गर्म सतह से हाथ हटने का मार्ग बताइए।"
+      },
+      "given": {
+        "en": "A skin receptor detects a harmful stimulus.",
+        "hi": "त्वचा का ग्राही हानिकारक उद्दीपन पहचानता है।"
+      },
+      "find": {
+        "en": "The reflex pathway.",
+        "hi": "प्रतिवर्त मार्ग।"
+      },
+      "formula": {
+        "en": "Receptor → sensory → spinal integration → motor → muscle",
+        "hi": "ग्राही → संवेदी → मेरुरज्जु समन्वय → प्रेरक → पेशी"
+      },
+      "steps": [
+        {
+          "en": "Sensory neurons carry the signal inward.",
+          "hi": "संवेदी न्यूरॉन संकेत भीतर लाते हैं।"
+        },
+        {
+          "en": "Motor output triggers muscle contraction; the brain can also receive information.",
+          "hi": "प्रेरक संकेत पेशी संकुचन कराता है; मस्तिष्क को भी सूचना मिल सकती है।"
+        }
+      ],
+      "answer": {
+        "en": "The hand withdraws through a coordinated reflex, not a decision by the skin alone.",
+        "hi": "समन्वित प्रतिवर्त से हाथ हटता है; अकेली त्वचा निर्णय नहीं करती।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Choose the brain region linked with walking balance.",
+        "hi": "चलने के संतुलन से जुड़ा मस्तिष्क भाग चुनिए।"
+      },
+      "given": {
+        "en": "A question asks about precision and balance.",
+        "hi": "प्रश्न सटीकता और संतुलन पूछता है।"
+      },
+      "find": {
+        "en": "Relevant region.",
+        "hi": "संबंधित भाग।"
+      },
+      "formula": {
+        "en": "Cerebellum → precision and balance",
+        "hi": "अनुमस्तिष्क → सटीकता तथा संतुलन"
+      },
+      "steps": [
+        {
+          "en": "Separate thinking from movement coordination.",
+          "hi": "सोचने को गति समन्वय से अलग कीजिए।"
+        },
+        {
+          "en": "Match the stated function to the cerebellum.",
+          "hi": "दिए कार्य को अनुमस्तिष्क से जोड़िए।"
+        }
+      ],
+      "answer": {
+        "en": "Cerebellum; the answer concerns coordination of movement.",
+        "hi": "अनुमस्तिष्क; उत्तर गति के समन्वय से संबंधित है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Explain bending towards a window.",
+        "hi": "खिड़की की ओर प्ररोह झुकना समझाइए।"
+      },
+      "given": {
+        "en": "A growing shoot receives light mainly from one side.",
+        "hi": "बढ़ते प्ररोह पर मुख्यतः एक ओर प्रकाश आता है।"
+      },
+      "find": {
+        "en": "Cause of bending.",
+        "hi": "झुकने का कारण।"
+      },
+      "formula": {
+        "en": "Unequal auxin → unequal elongation → curvature",
+        "hi": "असमान ऑक्सिन → असमान लंबाई वृद्धि → वक्रता"
+      },
+      "steps": [
+        {
+          "en": "Auxin distribution favours more elongation on the shaded side.",
+          "hi": "ऑक्सिन वितरण से छाया वाली ओर अधिक लंबाई वृद्धि होती है।"
+        },
+        {
+          "en": "That side becomes longer, so the tip bends towards light.",
+          "hi": "वह ओर लंबी होती है, इसलिए सिरा प्रकाश की ओर झुकता है।"
+        }
+      ],
+      "answer": {
+        "en": "Positive phototropism due to differential growth.",
+        "hi": "असमान वृद्धि के कारण धनात्मक प्रकाशानुवर्तन।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Why does a hormone not affect all cells equally?",
+        "hi": "हार्मोन हर कोशिका को समान प्रभावित क्यों नहीं करता?"
+      },
+      "given": {
+        "en": "The hormone circulates in blood.",
+        "hi": "हार्मोन रक्त में घूमता है।"
+      },
+      "find": {
+        "en": "Reason for target specificity.",
+        "hi": "लक्ष्य विशिष्टता का कारण।"
+      },
+      "formula": {
+        "en": "Signal + appropriate receptor → response",
+        "hi": "संकेत + उपयुक्त ग्राही → प्रतिक्रिया"
+      },
+      "steps": [
+        {
+          "en": "Delivery is widespread.",
+          "hi": "पहुंच अनेक जगह होती है।"
+        },
+        {
+          "en": "Suitable receptors and internal machinery differ among tissues.",
+          "hi": "ऊतकों में उपयुक्त ग्राही और आंतरिक व्यवस्था अलग होती है।"
+        }
+      ],
+      "answer": {
+        "en": "Responsive target cells detect and interpret the hormone; delivery alone is insufficient.",
+        "hi": "लक्ष्य कोशिकाएं हार्मोन पहचानकर प्रतिक्रिया करती हैं; केवल पहुंचना पर्याप्त नहीं है।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Explain why insulin secretion should not stay maximally high after glucose returns towards its regulated range.",
+        "hi": "ग्लूकोज सीमा की ओर लौटने पर इंसुलिन स्राव लगातार अधिकतम क्यों न रहे?"
+      },
+      "given": {
+        "en": "A rise in glucose initially stimulates insulin release.",
+        "hi": "ग्लूकोज बढ़ने से शुरू में इंसुलिन स्राव बढ़ता है।"
+      },
+      "find": {
+        "en": "Feedback explanation.",
+        "hi": "प्रतिपुष्टि की व्याख्या।"
+      },
+      "formula": {
+        "en": "Response reduces stimulus → secretion adjusts",
+        "hi": "प्रतिक्रिया उद्दीपन घटाती है → स्राव समायोजित होता है"
+      },
+      "steps": [
+        {
+          "en": "Insulin promotes processes that reduce the initial glucose rise.",
+          "hi": "इंसुलिन शुरुआती ग्लूकोज वृद्धि घटाने वाली प्रक्रियाएं बढ़ाता है।"
+        },
+        {
+          "en": "As the stimulus falls, further secretion is adjusted.",
+          "hi": "उद्दीपन घटने पर आगे का स्राव समायोजित होता है।"
+        }
+      ],
+      "answer": {
+        "en": "Negative feedback matches the response to need; the model gives no medical threshold or dose.",
+        "hi": "ऋणात्मक प्रतिपुष्टि प्रतिक्रिया को जरूरत से मिलाती है; मॉडल चिकित्सकीय सीमा या खुराक नहीं देता।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which neuron carries information towards the central nervous system?",
+        "hi": "कौन सा न्यूरॉन केंद्रीय तंत्रिका तंत्र की ओर सूचना ले जाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Motor",
+            "hi": "प्रेरक"
+          },
+          "reason": {
+            "en": "Motor output travels towards effectors.",
+            "hi": "प्रेरक संकेत कार्यकारी अंग की ओर जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sensory",
+            "hi": "संवेदी"
+          },
+          "reason": {
+            "en": "Sensory neurons carry incoming information.",
+            "hi": "संवेदी न्यूरॉन आने वाली सूचना लाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a muscle fibre",
+            "hi": "केवल पेशी तंतु"
+          },
+          "reason": {
+            "en": "Muscle fibres are effectors, not sensory neurons.",
+            "hi": "पेशी तंतु कार्यकारी हैं, संवेदी न्यूरॉन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a gland duct",
+            "hi": "केवल ग्रंथि नलिका"
+          },
+          "reason": {
+            "en": "Ducts are not neurons.",
+            "hi": "नलिकाएं न्यूरॉन नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "How is a signal commonly passed across a synaptic gap?",
+        "hi": "अंतर्ग्रथन अंतर पर सामान्यतः संकेत कैसे जाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "By pulling the next cell",
+            "hi": "अगली कोशिका खींचकर"
+          },
+          "reason": {
+            "en": "There is no rope-like pulling.",
+            "hi": "रस्सी जैसा खिंचाव नहीं होता।"
+          }
+        },
+        {
+          "text": {
+            "en": "By blood clotting",
+            "hi": "रक्त थक्का बनाकर"
+          },
+          "reason": {
+            "en": "Clotting repairs vessels, not synaptic signalling.",
+            "hi": "थक्का वाहिका सुधारता है, अंतर्ग्रथन संकेत नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "By released chemicals",
+            "hi": "छोड़े गए रसायनों से"
+          },
+          "reason": {
+            "en": "Released transmitter chemicals affect the next membrane.",
+            "hi": "छोड़े संदेशवाहक रसायन अगली झिल्ली को प्रभावित करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "By growing a bone",
+            "hi": "हड्डी बनाकर"
+          },
+          "reason": {
+            "en": "Bone growth is unrelated to rapid synaptic transmission.",
+            "hi": "हड्डी वृद्धि त्वरित अंतर्ग्रथन संचार नहीं है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which brain region helps balance?",
+        "hi": "कौन सा मस्तिष्क भाग संतुलन में सहायक है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Cerebellum",
+            "hi": "अनुमस्तिष्क"
+          },
+          "reason": {
+            "en": "It coordinates precision and balance.",
+            "hi": "यह सटीकता और संतुलन का समन्वय करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the spinal nerve",
+            "hi": "केवल मेरु तंत्रिका"
+          },
+          "reason": {
+            "en": "A nerve is not this brain region.",
+            "hi": "तंत्रिका मस्तिष्क का यह भाग नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Thyroid",
+            "hi": "थायरॉयड"
+          },
+          "reason": {
+            "en": "Thyroid is an endocrine gland.",
+            "hi": "थायरॉयड अंतःस्रावी ग्रंथि है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pancreas",
+            "hi": "अग्न्याशय"
+          },
+          "reason": {
+            "en": "Pancreas is not a brain region.",
+            "hi": "अग्न्याशय मस्तिष्क भाग नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which shoot side elongates more during phototropism?",
+        "hi": "प्रकाशानुवर्तन में प्ररोह की कौन सी ओर अधिक लंबी होती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Both must stop growing",
+            "hi": "दोनों की वृद्धि रुकनी चाहिए"
+          },
+          "reason": {
+            "en": "Unequal growth is needed for curvature.",
+            "hi": "वक्रता के लिए असमान वृद्धि चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the cut surface",
+            "hi": "केवल कटी सतह"
+          },
+          "reason": {
+            "en": "A cut is not required for phototropism.",
+            "hi": "प्रकाशानुवर्तन के लिए कटाव जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The illuminated side",
+            "hi": "प्रकाशित ओर"
+          },
+          "reason": {
+            "en": "That would produce the opposite bend in this model.",
+            "hi": "इस मॉडल में इससे विपरीत झुकाव होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "The shaded side",
+            "hi": "छाया वाली ओर"
+          },
+          "reason": {
+            "en": "Greater elongation there bends the tip towards light.",
+            "hi": "वहां अधिक वृद्धि सिरे को प्रकाश की ओर मोड़ती है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which plant hormone promotes cell division?",
+        "hi": "कौन सा पादप हार्मोन कोशिका विभाजन बढ़ाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Insulin",
+            "hi": "इंसुलिन"
+          },
+          "reason": {
+            "en": "Insulin is an animal glucose-regulating hormone.",
+            "hi": "इंसुलिन जंतु ग्लूकोज नियंत्रक हार्मोन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cytokinin",
+            "hi": "साइटोकाइनिन"
+          },
+          "reason": {
+            "en": "Cytokinins are linked with cell division.",
+            "hi": "साइटोकाइनिन कोशिका विभाजन से जुड़े हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Adrenaline",
+            "hi": "एड्रेनालिन"
+          },
+          "reason": {
+            "en": "Adrenaline prepares an animal for urgent action.",
+            "hi": "एड्रेनालिन जंतु को तुरंत क्रिया के लिए तैयार करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Thyroxine",
+            "hi": "थायरॉक्सिन"
+          },
+          "reason": {
+            "en": "Thyroxine helps regulate animal metabolism.",
+            "hi": "थायरॉक्सिन जंतु उपापचय नियंत्रित करने में सहायक है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which element is needed to make thyroxine?",
+        "hi": "थायरॉक्सिन बनाने के लिए कौन सा तत्व चाहिए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Iron",
+            "hi": "लोहा"
+          },
+          "reason": {
+            "en": "Iron has roles such as in haemoglobin, not this identifying requirement.",
+            "hi": "लोहा हीमोग्लोबिन जैसे कार्यों में है, यह विशिष्ट आवश्यकता नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Carbon only",
+            "hi": "केवल कार्बन"
+          },
+          "reason": {
+            "en": "Carbon is present in organic molecules but is not the named nutritional requirement here.",
+            "hi": "कार्बनिक अणुओं में कार्बन है, लेकिन यहां पूछा विशिष्ट पोषक तत्व नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Iodine",
+            "hi": "आयोडीन"
+          },
+          "reason": {
+            "en": "Iodine is required for thyroxine synthesis.",
+            "hi": "थायरॉक्सिन संश्लेषण के लिए आयोडीन चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Gold",
+            "hi": "सोना"
+          },
+          "reason": {
+            "en": "Gold is not the required element.",
+            "hi": "सोना आवश्यक तत्व नहीं है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which gland secretes insulin?",
+        "hi": "इंसुलिन कौन सी ग्रंथि छोड़ती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Pancreas",
+            "hi": "अग्न्याशय"
+          },
+          "reason": {
+            "en": "The pancreas has insulin-secreting endocrine cells.",
+            "hi": "अग्न्याशय में इंसुलिन छोड़ने वाली अंतःस्रावी कोशिकाएं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Thyroid",
+            "hi": "थायरॉयड"
+          },
+          "reason": {
+            "en": "Thyroid secretes thyroxine.",
+            "hi": "थायरॉयड थायरॉक्सिन छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Adrenal",
+            "hi": "अधिवृक्क"
+          },
+          "reason": {
+            "en": "Adrenal glands produce adrenaline among other hormones.",
+            "hi": "अधिवृक्क अन्य हार्मोन के साथ एड्रेनालिन बनाती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Salivary gland",
+            "hi": "लार ग्रंथि"
+          },
+          "reason": {
+            "en": "Salivary glands release saliva through ducts.",
+            "hi": "लार ग्रंथियां नलिकाओं से लार छोड़ती हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What does negative feedback mean here?",
+        "hi": "यहां ऋणात्मक प्रतिपुष्टि का अर्थ क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The response is always harmful.",
+            "hi": "प्रतिक्रिया हमेशा हानिकारक है।"
+          },
+          "reason": {
+            "en": "Negative describes direction, not harm.",
+            "hi": "ऋणात्मक दिशा बताता है, हानि नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The body stops all signalling.",
+            "hi": "शरीर सारे संकेत रोक देता है।"
+          },
+          "reason": {
+            "en": "Signals are adjusted, not universally stopped.",
+            "hi": "संकेत समायोजित होते हैं, सब बंद नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Glucose must become zero.",
+            "hi": "ग्लूकोज शून्य होना चाहिए।"
+          },
+          "reason": {
+            "en": "Cells still need glucose.",
+            "hi": "कोशिकाओं को ग्लूकोज चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "The response reduces the original disturbance.",
+            "hi": "प्रतिक्रिया मूल विचलन घटाती है।"
+          },
+          "reason": {
+            "en": "Reducing the stimulus helps restore regulation.",
+            "hi": "उद्दीपन घटने से नियंत्रण बहाल होता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which movement mainly uses rapid water-related shape changes?",
+        "hi": "किस गति में मुख्यतः जल संबंधी तेज आकार परिवर्तन होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Shoot growing towards light",
+            "hi": "प्रकाश की ओर बढ़ता प्ररोह"
+          },
+          "reason": {
+            "en": "This is directional growth.",
+            "hi": "यह दिशात्मक वृद्धि है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sensitive plant leaf folding",
+            "hi": "छुईमुई पत्ती मुड़ना"
+          },
+          "reason": {
+            "en": "Water changes in specialised cells fold the leaf.",
+            "hi": "विशेष कोशिकाओं में जल परिवर्तन से पत्ती मुड़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Root growing with gravity",
+            "hi": "गुरुत्व में बढ़ती जड़"
+          },
+          "reason": {
+            "en": "This is growth-based geotropism.",
+            "hi": "यह वृद्धि आधारित गुरुत्वानुवर्तन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pollen tube growth",
+            "hi": "पराग नली वृद्धि"
+          },
+          "reason": {
+            "en": "This is directed growth towards chemical signals.",
+            "hi": "यह रासायनिक संकेतों की ओर वृद्धि है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which statement about a spinal reflex is correct?",
+        "hi": "मेरुरज्जु प्रतिवर्त का कौन सा कथन सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The skin alone decides everything.",
+            "hi": "त्वचा अकेले सब तय करती है।"
+          },
+          "reason": {
+            "en": "A reflex uses a coordinated neural pathway.",
+            "hi": "प्रतिवर्त समन्वित तंत्रिका मार्ग उपयोग करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The brain can never receive the information.",
+            "hi": "मस्तिष्क को कभी सूचना नहीं मिल सकती।"
+          },
+          "reason": {
+            "en": "Ascending information can reach the brain.",
+            "hi": "ऊपर जाती सूचना मस्तिष्क पहुंच सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The spinal pathway can act rapidly while information also reaches the brain.",
+            "hi": "मेरुरज्जु मार्ग तेजी से काम कर सकता है और सूचना मस्तिष्क तक भी जाती है।"
+          },
+          "reason": {
+            "en": "This distinguishes rapid local integration from conscious awareness.",
+            "hi": "यह तेज स्थानीय समन्वय और सचेत जानकारी का अंतर बताता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No neurons are involved.",
+            "hi": "कोई न्यूरॉन शामिल नहीं।"
+          },
+          "reason": {
+            "en": "Sensory and motor neurons are involved.",
+            "hi": "संवेदी और प्रेरक न्यूरॉन शामिल हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "marks": 2,
+      "question": {
+        "en": "Give the 5 main links of a reflex arc.",
+        "hi": "प्रतिवर्त चाप की 5 प्रमुख कड़ियां बताइए।"
+      },
+      "answer": {
+        "en": "Receptor → sensory neuron → spinal integration → motor neuron → effector. The effector produces a response; information may also reach the brain.",
+        "hi": "ग्राही → संवेदी न्यूरॉन → मेरुरज्जु समन्वय → प्रेरक न्यूरॉन → कार्यकारी अंग। कार्यकारी अंग प्रतिक्रिया करता है; सूचना मस्तिष्क तक भी जा सकती है।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Explain auxin-related bending towards light.",
+        "hi": "ऑक्सिन से प्रकाश की ओर झुकाव समझाइए।"
+      },
+      "answer": {
+        "en": "One-sided light causes unequal auxin distribution. Greater elongation on the shaded shoot side makes that side longer and bends the tip towards light.",
+        "hi": "एक ओर प्रकाश से ऑक्सिन असमान वितरित होता है। छाया वाली ओर अधिक लंबाई वृद्धि उसे लंबा करती है, जिससे सिरा प्रकाश की ओर मुड़ता है।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Compare nervous and hormonal signalling using 2 criteria.",
+        "hi": "2 कसौटियों पर तंत्रिका तथा हार्मोन संकेत की तुलना कीजिए।"
+      },
+      "answer": {
+        "en": "Nervous signals travel along connected neurons and are often rapid and specific. Hormones travel through blood to responsive targets and often give longer-lasting effects.",
+        "hi": "तंत्रिका संकेत जुड़े न्यूरॉनों में जाते हैं और अक्सर तेज तथा विशिष्ट होते हैं। हार्मोन रक्त से ग्रहणशील लक्ष्यों तक जाते हैं और अक्सर अधिक समय का प्रभाव देते हैं।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Explain the role of insulin feedback without medical values.",
+        "hi": "चिकित्सकीय मानों के बिना इंसुलिन प्रतिपुष्टि समझाइए।"
+      },
+      "answer": {
+        "en": "A glucose rise stimulates insulin release. Its effects help reduce the rise, so the stimulus for additional release declines and secretion is adjusted.",
+        "hi": "ग्लूकोज वृद्धि इंसुलिन स्राव को उत्तेजित करती है। उसके प्रभाव वृद्धि घटाते हैं, इसलिए आगे स्राव का उद्दीपन घटता है और स्राव समायोजित होता है।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Distinguish sensitive-leaf folding and phototropism.",
+        "hi": "छुईमुई की पत्ती मुड़ने और प्रकाशानुवर्तन में अंतर कीजिए।"
+      },
+      "answer": {
+        "en": "Leaf folding mainly uses reversible water-related cell shape changes and does not depend on touch direction. Phototropism is directional unequal growth in relation to light.",
+        "hi": "पत्ती मुड़ने में मुख्यतः जल से जुड़े उलट सकने वाले आकार परिवर्तन होते हैं और गति स्पर्श की दिशा पर निर्भर नहीं। प्रकाशानुवर्तन प्रकाश की दिशा से जुड़ी असमान वृद्धि है।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Explain 2 changes caused by adrenaline during urgent action.",
+        "hi": "तत्काल क्रिया में एड्रेनालिन से 2 परिवर्तन समझाइए।"
+      },
+      "answer": {
+        "en": "Heart and breathing rates can rise, improving delivery to active tissues. More blood is directed towards skeletal muscles and energy resources become more available.",
+        "hi": "हृदय और श्वसन गति बढ़ सकती हैं, जिससे सक्रिय ऊतक तक आपूर्ति सुधरती है। कंकाल पेशियों की ओर अधिक रक्त और ऊर्जा संसाधन उपलब्ध होते हैं।"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT Science Class X: Control and Coordination",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc106.pdf"
+    },
+    {
+      "title": "UPMSP Class 10 Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ],
+  "goal": {
+    "en": "Explain how nervous signals, hormones and plant responses coordinate an organism.",
+    "hi": "तंत्रिका संकेत, हार्मोन तथा पादप प्रतिक्रियाएं जीव में समन्वय कैसे करते हैं, समझिए।"
+  },
+  "formulas": [
+    {
+      "expression": "Stimulus → receptor → coordination → effector → response",
+      "meaning": {
+        "en": "A causal pathway, not an algebraic equation. Nervous and hormonal pathways implement it differently.",
+        "hi": "यह कारण क्रम है, बीजगणित समीकरण नहीं। तंत्रिका और हार्मोन मार्ग इसे अलग तरह पूरा करते हैं।"
+      },
+      "units": {
+        "en": "No numerical unit; relative model sliders are not clinical measurements.",
+        "hi": "संख्यात्मक इकाई नहीं; सापेक्ष नियंत्रक चिकित्सकीय माप नहीं हैं।"
+      }
+    },
+    {
+      "expression": "Glucose rise → insulin response → glucose reduction → reduced stimulus",
+      "meaning": {
+        "en": "Simplified negative-feedback relationship.",
+        "hi": "ऋणात्मक प्रतिपुष्टि का सरल संबंध।"
+      },
+      "units": {
+        "en": "Relative values only in this simulation.",
+        "hi": "इस दृश्य में केवल सापेक्ष मान।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "A spinal reflex can still inform the brain. Phototropism involves greater elongation on the shaded side of a shoot, not the lighted side. Relative glucose values cannot diagnose illness.",
+    "hi": "मेरुरज्जु प्रतिवर्त की सूचना मस्तिष्क तक भी जा सकती है। प्ररोह के प्रकाशानुवर्तन में छाया वाली ओर अधिक वृद्धि होती है, प्रकाशित ओर नहीं। सापेक्ष ग्लूकोज मान बीमारी का निदान नहीं करते।"
+  },
+  "summary": [
+    {
+      "en": "Neurons carry impulses; many synapses use chemical transmission.",
+      "hi": "न्यूरॉन आवेग ले जाते हैं; अनेक अंतर्ग्रथनों पर रासायनिक संचार होता है।"
+    },
+    {
+      "en": "A reflex arc links receptor and effector through a rapid pathway.",
+      "hi": "प्रतिवर्त चाप ग्राही को कार्यकारी अंग से त्वरित मार्ग में जोड़ता है।"
+    },
+    {
+      "en": "Brain regions contribute differently to thought, balance and involuntary regulation.",
+      "hi": "मस्तिष्क के भाग सोच, संतुलन और अनैच्छिक नियंत्रण में अलग योगदान देते हैं।"
+    },
+    {
+      "en": "Plant responses include growth-based tropisms and non-growth movements.",
+      "hi": "पादप प्रतिक्रियाओं में वृद्धि वाले अनुवर्तन तथा बिना वृद्धि की गतियां हैं।"
+    },
+    {
+      "en": "Hormones act on targets and secretion can be regulated by feedback.",
+      "hi": "हार्मोन लक्ष्य पर काम करते हैं और स्राव प्रतिपुष्टि से नियंत्रित हो सकता है।"
+    }
+  ],
+  "conceptMap": "उद्दीपन → ग्राही → तंत्रिका/रासायनिक संकेत → समन्वय → पेशी/ग्रंथि/वृद्धि प्रतिक्रिया → प्रतिपुष्टि",
+  "conceptMapEn": "Stimulus → receptor → neural/chemical signal → coordination → muscle/gland/growth response → feedback"
+}

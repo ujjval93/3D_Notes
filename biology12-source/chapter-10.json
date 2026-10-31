@@ -1,0 +1,1031 @@
+{
+  "number": 10,
+  "id": "biology12-10",
+  "title": {
+    "en": "Biotechnology and its Applications",
+    "hi": "जैव प्रौद्योगिकी एवं उसके उपयोग"
+  },
+  "unit": {
+    "en": "Biology",
+    "hi": "जीव विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Applications begin with a defined trait",
+        "hi": "अनुप्रयोग की शुरुआत निश्चित लक्षण से"
+      },
+      "paragraphs": [
+        {
+          "en": "Biotechnology can modify traits related to crop protection, nutrition, production and health. A useful application requires evidence of the intended trait, its performance and its consequences.",
+          "hi": "जैव प्रौद्योगिकी के अनुप्रयोग (Applications) में केवल नया जीन जोड़ना लक्ष्य नहीं है। उपयोगी कृषि लक्षण, औषधीय उत्पाद, जैविक अध्ययन या रोग पहचान जैसे स्पष्ट उद्देश्य पहले तय होते हैं। आनुवंशिक रूपांतरित जीव (Genetically modified organism, GMO) में आनुवंशिक सूचना तकनीक से बदली गई होती है। किसी फसल में कीट प्रतिरोध, पोषण गुणवत्ता या विशेष पर्यावरणीय सहनशीलता उपयोगी लक्ष्य हो सकते हैं। परंतु 1 लाभ मिलने से पौधा सभी रोगों, सभी कीटों और हर सूखे से सुरक्षित नहीं हो जाता। लक्षण का प्रभाव जीन, उसकी अभिव्यक्ति, पौधे की पृष्ठभूमि और वातावरण पर निर्भर हो सकता है। उत्पादन बढ़ना और पोषण गुणवत्ता बढ़ना भी अलग परिणाम हैं। इच्छित गुण की पुष्टि के साथ संभावित अनचाहे प्रभावों का मूल्यांकन आवश्यक है। किसी उत्पाद को केवल प्राकृतिक या केवल परिवर्तित कहकर उसका पूरा वैज्ञानिक निर्णय नहीं किया जा सकता। तुलना में उपयुक्त नियंत्रण, स्पष्ट माप और वास्तविक उपयोग की दशाएँ जरूरी हैं। इस अध्याय के उदाहरणों में तकनीक, जैविक क्रिया और उससे मिलने वाले उपयोग को अलग पहचानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "One engineered trait is not a universal improvement in every environment.",
+          "hi": "1 अभियांत्रित लक्षण हर पर्यावरण में सार्वत्रिक सुधार नहीं है; लाभ का दावा उसी लक्षण और जाँची दशाओं तक सीमित रखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does insect resistance imply resistance to every disease?",
+          "hi": "क्या कीट प्रतिरोध से हर रोग का प्रतिरोध सिद्ध होता है?"
+        },
+        "answer": {
+          "en": "No; different pests, pathogens and stresses require separate evidence.",
+          "hi": "नहीं; अलग कीट, रोगजनक और तनाव के लिए अलग प्रमाण चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Bt crops and the insect gut",
+        "hi": "Bt फसल और कीट की आँत"
+      },
+      "paragraphs": [
+        {
+          "en": "Bacillus thuringiensis produces certain insecticidal proteins. In susceptible larvae, the activated toxin binds gut epithelial cells and forms pores; specificity is central to the example.",
+          "hi": "Bacillus thuringiensis का संक्षिप्त नाम Bt है। इसके कुछ उपभेद विशेष कीट लार्वों पर प्रभावी प्रोटीन बनाते हैं। जीवाणु में बनने वाला निष्क्रिय पूर्वविष (Protoxin) संवेदनशील कीट की क्षारीय आँत में सक्रिय रूप ले सकता है। सक्रिय प्रोटीन आँत की उपकला कोशिका के उपयुक्त ग्राही से जुड़कर छिद्र निर्माण करता है, जिससे कोशिका को क्षति और अंततः कीट की मृत्यु हो सकती है। cry जीन इन प्रोटीनों से जुड़े हैं। अलग cry जीनों के लक्ष्य अलग हो सकते हैं; इसलिए हर cry प्रोटीन हर कीट पर काम करता है, यह गलत है। पाठ्यपुस्तक में cryIAc और cryIIAb कपास के बॉलवर्म तथा cryIAb मक्का छेदक से जुड़े उदाहरण हैं। Bt फसल में संबंधित जीन के कारण पौधा उपयुक्त प्रोटीन बना सकता है। पौधे के भीतर पूरा जीवाणु लगातार बढ़ना इस लक्षण की आवश्यक शर्त नहीं है। इस उदाहरण को कीट आँत, सक्रियण, ग्राही और झिल्ली क्षति की कारण श्रृंखला में समझें। प्रतिरोध प्रबंधन तथा पर्यावरणीय मूल्यांकन अलग आवश्यक प्रश्न हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Target specificity must be evaluated; the term Bt does not establish universal safety or universal toxicity.",
+          "hi": "लक्ष्य विशिष्टता का मूल्यांकन जरूरी है; Bt शब्द अपने आप सभी जीवों के लिए पूर्ण सुरक्षा या समान विषाक्तता सिद्ध नहीं करता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why are all cry genes not interchangeable?",
+          "hi": "सभी cry जीन अदल-बदलकर समान क्यों नहीं हैं?"
+        },
+        "answer": {
+          "en": "Their proteins can have different target ranges and receptor interactions.",
+          "hi": "उनके प्रोटीनों का लक्ष्य दायरा और ग्राही संबंध अलग हो सकता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "RNA interference as gene silencing",
+        "hi": "जीन शमन के रूप में RNA हस्तक्षेप"
+      },
+      "paragraphs": [
+        {
+          "en": "RNA interference uses sequence-specific RNA interactions to reduce expression, commonly through degradation of complementary mRNA. It does not simply cut the corresponding DNA gene out.",
+          "hi": "RNA हस्तक्षेप (RNA interference, RNAi) जीन अभिव्यक्ति कम करने की अनुक्रम विशिष्ट प्रक्रिया है। द्विरज्जु RNA से जुड़ी कोशिकीय व्यवस्था पूरक संदेशवाहक RNA को लक्ष्य बना सकती है और उसका विघटन करा सकती है। जब उचित mRNA उपलब्ध कम हो, तो संबंधित प्रोटीन निर्माण घट सकता है। इसे हर RNA अणु को नष्ट करने वाला सामान्य प्रभाव या DNA जीन का सीधे कटकर बाहर निकल जाना न समझें। पाठ्यपुस्तक में Meloidogyne incognita नामक सूत्रकृमि तंबाकू की जड़ों को संक्रमित करने का उदाहरण है। उपयुक्त जीन सूचना से बने पूरक RNA का उपयोग परजीवी की आवश्यक अभिव्यक्ति के शमन से जोड़ा गया है। इस अध्ययन में Agrobacterium आधारित जीन अंतरण की भूमिका समझाई जाती है। मुख्य सिद्धांत पूरकता और सही लक्ष्य अनुक्रम है, न कि हर परजीवी पर एक ही RNA का प्रभाव। जीन शमन, जीन विलोपन और सामान्य प्रतिजैविक प्रभाव अलग प्रक्रियाएँ हैं। चित्र में mRNA टूटना दिखे तो उसका संबंध अनुवादन घटने से जोड़ें, DNA की पूरी अनुपस्थिति से नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The target is sequence-specific expression; the gene may remain present while its product decreases.",
+          "hi": "लक्ष्य अनुक्रम विशिष्ट अभिव्यक्ति है; उत्पाद घटने पर भी जीन मौजूद रह सकता है, इसलिए उपस्थिति और कार्य अलग जाँचें हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does RNAi necessarily remove the DNA gene?",
+          "hi": "क्या RNAi आवश्यक रूप से DNA जीन हटा देता है?"
+        },
+        "answer": {
+          "en": "No; it can suppress expression by targeting complementary RNA.",
+          "hi": "नहीं; यह पूरक RNA लक्षित करके अभिव्यक्ति दबा सकता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Recombinant human insulin",
+        "hi": "पुनर्योगज मानव इंसुलिन"
+      },
+      "paragraphs": [
+        {
+          "en": "Mature insulin has A and B chains linked by disulfide bonds. Proinsulin also has a connecting C-peptide; recombinant production must yield the correctly processed active molecule.",
+          "hi": "इंसुलिन (Insulin) रक्त ग्लूकोज नियमन में महत्त्वपूर्ण प्रोटीन हार्मोन है। परिपक्व मानव इंसुलिन में A और B नामक 2 पॉलीपेप्टाइड श्रृंखलाएँ होती हैं, जो डाइसल्फाइड बंधों से जुड़ी हैं। मानव में प्रारंभिक प्रोटीन प्रोइंसुलिन (Proinsulin) में एक जोड़ने वाला C-पेप्टाइड भी होता है। परिपक्वण में C-पेप्टाइड हटता है और कार्यशील संरचना बनती है। केवल पूरी प्रोइंसुलिन सूचना जीवाणु में डाल देने से उचित मानव परिपक्वण स्वतः हो जाएगा, यह आवश्यक नहीं है। पाठ्यपुस्तक का पुनर्योगज उदाहरण A और B श्रृंखलाओं को अलग बनाकर उचित ढंग से जोड़ने की रणनीति समझाता है। मानव A श्रृंखला में 21 और B श्रृंखला में 30 अमीनो अम्ल होते हैं; कुल 51 परिपक्व अणु की गणना है, C-पेप्टाइड सहित पूर्वगामी की नहीं। सही क्रम, वलन और बंध कार्य के लिए आवश्यक हैं। उत्पादन के बाद शुद्धता और सक्रियता की जाँच जरूरी है। यह अणु निर्माण का शैक्षिक उदाहरण है, किसी व्यक्ति के लिए मात्रा या उपचार चयन का निर्देश नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Proinsulin and mature insulin are related but different molecular forms.",
+          "hi": "प्रोइंसुलिन और परिपक्व इंसुलिन संबंधित पर अलग आणविक रूप हैं; C-पेप्टाइड को परिपक्व A या B श्रृंखला में न गिनें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is C-peptide a retained chain of mature insulin?",
+          "hi": "क्या परिपक्व इंसुलिन में C-पेप्टाइड बची श्रृंखला है?"
+        },
+        "answer": {
+          "en": "No; it is removed during normal maturation.",
+          "hi": "नहीं; सामान्य परिपक्वण में यह हटता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Gene therapy and the ADA example",
+        "hi": "जीन चिकित्सा और ADA उदाहरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Gene therapy aims to address a genetic defect by introducing or modifying functional genetic information in relevant cells. The historic ADA example illustrates limitations of changing short-lived somatic cells.",
+          "hi": "जीन चिकित्सा (Gene therapy) का उद्देश्य प्रभावित कोशिकाओं में कार्यशील आनुवंशिक सूचना देकर या उसे बदलकर किसी आनुवंशिक कमी का समाधान करना है। एडेनोसिन डिएमिनेज (ADA) की कमी प्रतिरक्षा तंत्र को प्रभावित कर सकती है। पाठ्यपुस्तक में ADA संबंधी प्रारंभिक जीन चिकित्सा का उदाहरण रोगी की लसीकाणु कोशिकाओं में कार्यशील सूचना पहुँचाने की अवधारणा समझाता है। इसका अर्थ पूरे शरीर की हर कोशिका या जनन कोशिकाओं का स्वतः बदल जाना नहीं है। लसीकाणु सीमित समय तक रह सकते हैं, इसलिए ऐसी देहिक कोशिकाओं में सुधार स्थायी जीवनभर समाधान की गारंटी नहीं है। उपयुक्त दीर्घजीवी कोशिका या मूल कोशिका को लक्ष्य बनाने से अवधि का प्रश्न अलग बनता है, लेकिन वह भी जैविक और सुरक्षा मूल्यांकन माँगता है। जीन की उपस्थिति, उसकी उचित अभिव्यक्ति और पर्याप्त कार्यशील एंजाइम मिलना अलग चरण हैं। किसी 1 ऐतिहासिक उदाहरण से सभी आनुवंशिक रोगों का निश्चित इलाज घोषित नहीं किया जा सकता। यह अध्याय सिद्धांत और सीमाएँ समझाता है, व्यक्तिगत चिकित्सकीय योजना नहीं देता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Somatic-cell modification does not automatically become inherited by offspring.",
+          "hi": "देहिक कोशिकाओं का परिवर्तन अपने आप संतति में वंशानुगत नहीं हो जाता; जनन रेखा और देहिक कोशिका का अंतर बनाए रखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can short-lived modified lymphocytes limit persistence?",
+          "hi": "कम आयु वाली बदली लसीकाणु कोशिकाएँ स्थायित्व क्यों सीमित कर सकती हैं?"
+        },
+        "answer": {
+          "en": "Their loss can reduce the corrected cell population and its functional output.",
+          "hi": "उनके समाप्त होने से सुधरी कोशिकाओं की संख्या और उनका कार्यशील उत्पाद घट सकता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Molecular diagnosis and careful interpretation",
+        "hi": "आणविक निदान और सावधान व्याख्या"
+      },
+      "paragraphs": [
+        {
+          "en": "PCR detects selected nucleic-acid targets after amplification, while ELISA depends on antigen–antibody recognition. A test result must be interpreted with its target, controls and context.",
+          "hi": "आणविक निदान (Molecular diagnosis) में रोग या जैविक स्थिति से संबंधित अणु लक्षित किए जाते हैं। PCR किसी चुने DNA अनुक्रम को बढ़ाकर कम मात्रा में मौजूद लक्ष्य पहचानने में सहायक हो सकता है। RNA लक्ष्य के लिए पहले DNA प्रति बनाने जैसा उपयुक्त अतिरिक्त चरण चाहिए; RNA पर सामान्य DNA PCR सीधे नहीं चलता। पूरक न्यूक्लिक अम्ल प्रोब भी लक्ष्य अनुक्रम पहचानने में उपयोगी हो सकते हैं। ELISA प्रतिजन और प्रतिरक्षी की विशिष्ट पहचान पर आधारित है और एंजाइम संकेत से बंधन का पता देता है। यह PCR का दूसरा नाम नहीं है। परीक्षण किस पदार्थ को खोजता है, नमूना कैसा है और उपयुक्त नियंत्रण हैं या नहीं, इससे परिणाम का अर्थ प्रभावित होता है। धनात्मक संकेत का अर्थ हर परिस्थिति में जीवित रोगजनक की समान मात्रा या रोग की समान गंभीरता नहीं है। ऋणात्मक परिणाम भी लक्ष्य की अनुपस्थिति की पूर्ण गारंटी नहीं, क्योंकि नमूना और संवेदनशीलता सीमित हो सकते हैं। अध्ययन प्रश्न में परीक्षण का सिद्धांत समझाएँ, किसी व्यक्ति का निदान केवल 1 संकेत से न घोषित करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "DNA amplification and antigen–antibody detection are different measurement principles.",
+          "hi": "DNA प्रवर्धन और प्रतिजन प्रतिरक्षी पहचान अलग मापन सिद्धांत हैं; दोनों उपयोगी हो सकते हैं पर उनके संकेत का अर्थ समान नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is ELISA a DNA amplification method?",
+          "hi": "क्या ELISA DNA प्रवर्धन विधि है?"
+        },
+        "answer": {
+          "en": "No; it uses antigen–antibody recognition and an enzyme-linked signal.",
+          "hi": "नहीं; यह प्रतिजन प्रतिरक्षी पहचान और एंजाइम जुड़े संकेत पर आधारित है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Transgenic animals as models",
+        "hi": "मॉडल के रूप में पारजीनी जंतु"
+      },
+      "paragraphs": [
+        {
+          "en": "Transgenic animals can support studies of gene function, disease and biological products. Their usefulness depends on model validity, responsible care and appropriate interpretation.",
+          "hi": "पारजीनी जंतु (Transgenic animal) में तकनीक द्वारा बाहर से दी गई आनुवंशिक सूचना मौजूद हो सकती है और उपयुक्त दशाओं में अभिव्यक्त होती है। ऐसे मॉडल जीन के सामान्य कार्य, विकास और रोग प्रक्रिया समझने में उपयोगी हो सकते हैं। किसी जीन का प्रभाव जानने के लिए परिवर्तित तथा उपयुक्त नियंत्रण जंतुओं की तुलना की जाती है। सभी लक्षण केवल नए जीन से आए हों, यह मानना उचित नहीं; पृष्ठभूमि और वातावरण भी प्रभाव डाल सकते हैं। कुछ जंतु जैविक उत्पाद निर्माण या सुरक्षा परीक्षण के अध्ययन में उपयोग किए गए हैं। मॉडल का परिणाम सीधे हर मानव पर समान लागू होगा, यह आवश्यक नहीं है। प्रजातियों की शारीरिक और उपापचयी भिन्नताएँ बनी रहती हैं। जंतु कल्याण, उचित देखभाल और आवश्यकता का मूल्यांकन वैज्ञानिक कार्य का हिस्सा हैं। चित्र में किसी जंतु का अलग रंग केवल संकेत है, पारजीनीपन की वास्तविक सार्वत्रिक पहचान नहीं। जीन का प्रमाण, उसके प्रोटीन का प्रमाण और दिखाई लक्षण का प्रमाण अलग-अलग पूछे जा सकते हैं। मॉडल से निष्कर्ष निकालते समय सीमा भी लिखना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A model is a tool for a defined question, not a complete copy of human biology.",
+          "hi": "मॉडल किसी निश्चित प्रश्न का साधन है, मानव जीव विज्ञान की पूर्ण प्रतिलिपि नहीं; तुलना और सीमाएँ साथ बताना जरूरी है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a transgenic model guarantee identical effects in humans?",
+          "hi": "क्या पारजीनी मॉडल मानव में समान प्रभाव की गारंटी देता है?"
+        },
+        "answer": {
+          "en": "No; biological differences and model limitations must be considered.",
+          "hi": "नहीं; जैविक अंतर और मॉडल की सीमाएँ ध्यान में रखनी होती हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Biosafety, knowledge and benefit sharing",
+        "hi": "जैव सुरक्षा, ज्ञान और लाभ बाँटना"
+      },
+      "paragraphs": [
+        {
+          "en": "Biotechnology requires evaluation of intended and unintended effects. Intellectual property and traditional knowledge raise questions of authorisation, attribution and fair sharing of benefits.",
+          "hi": "जैव सुरक्षा (Biosafety) में जीव और उत्पाद के संभावित प्रभावों का वैज्ञानिक मूल्यांकन किया जाता है। इच्छित लाभ के साथ गैरलक्ष्य जीव, जीन प्रवाह, पर्यावरण तथा उपयोगकर्ता से जुड़े प्रश्न भी हो सकते हैं। मूल्यांकन उत्पाद और परिस्थिति विशिष्ट होना चाहिए; सभी परिवर्तनों को एक साथ पूर्ण सुरक्षित या पूर्ण खतरनाक कहना उचित नहीं है। संबंधित निगरानी और अनुमति व्यवस्थाएँ सामाजिक जवाबदेही का भाग हैं। जैव पेटेंट (Biopatent) जैविक आविष्कार से जुड़े बौद्धिक संपदा दावे का संदर्भ है; केवल जीव मिलने से हर परिस्थिति में वही दावा उचित हो, यह आवश्यक नहीं है। जैव संसाधन और पारंपरिक ज्ञान के बिना उचित अनुमति या लाभ बाँटे उपयोग को जैव दस्युता (Biopiracy) की चर्चा में रखा जाता है। समुदायों के योगदान की पहचान, उचित अभिस्वीकृति और न्यायपूर्ण लाभ साझेदारी महत्त्वपूर्ण नैतिक मुद्दे हैं। इस पाठ में अवधारणाएँ समझनी हैं, किसी वर्तमान कानून की पूरी कानूनी व्याख्या नहीं। उपयोगी तकनीक के लिए सही जैविक प्रमाण के साथ पारदर्शी निर्णय और जिम्मेदार सामाजिक व्यवहार भी जरूरी हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A scientific benefit claim and a fair ownership claim are different questions.",
+          "hi": "वैज्ञानिक लाभ का दावा और न्यायपूर्ण स्वामित्व का दावा अलग प्रश्न हैं; एक की पुष्टि से दूसरे का उत्तर स्वतः नहीं मिलता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What central concern does biopiracy highlight?",
+          "hi": "जैव दस्युता कौन-सी मुख्य चिंता उठाती है?"
+        },
+        "answer": {
+          "en": "Use of biological resources or associated knowledge without proper authorisation or fair benefit sharing.",
+          "hi": "जैव संसाधन या संबंधित ज्ञान का उचित अनुमति या न्यायपूर्ण लाभ साझेदारी बिना उपयोग।"
+        }
+      }
+    }
+  ],
+  "formulas": [],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Explain why Bt action is target-specific.",
+        "hi": "Bt प्रभाव लक्ष्य विशिष्ट क्यों है?"
+      },
+      "given": {
+        "en": "A Cry protein acts on a susceptible insect larva.",
+        "hi": "Cry प्रोटीन संवेदनशील कीट लार्वा पर प्रभावी है।"
+      },
+      "find": {
+        "en": "Build the cause chain.",
+        "hi": "कारण श्रृंखला बनाएँ।"
+      },
+      "formula": {
+        "en": "Activation → receptor binding → membrane damage.",
+        "hi": "सक्रियण → ग्राही बंधन → झिल्ली क्षति।"
+      },
+      "steps": [
+        {
+          "en": "Link larval gut conditions with toxin activation.",
+          "hi": "लार्वा आँत की दशाओं को विष सक्रियण से जोड़ें।"
+        },
+        {
+          "en": "Identify binding to appropriate gut-cell receptors.",
+          "hi": "उचित आँत कोशिका ग्राही से बंधन पहचानें।"
+        },
+        {
+          "en": "Connect pore formation with epithelial damage.",
+          "hi": "छिद्र निर्माण को उपकला क्षति से जोड़ें।"
+        }
+      ],
+      "answer": {
+        "en": "Susceptibility depends on the protein, gut conditions and receptor interaction.",
+        "hi": "संवेदनशीलता प्रोटीन, आँत की दशाओं और ग्राही संबंध पर निर्भर है।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Count mature insulin amino acids.",
+        "hi": "परिपक्व इंसुलिन के अमीनो अम्ल गिनें।"
+      },
+      "given": {
+        "en": "A chain=21; B chain=30.",
+        "hi": "A श्रृंखला=21; B श्रृंखला=30।"
+      },
+      "find": {
+        "en": "Total in mature insulin.",
+        "hi": "परिपक्व इंसुलिन में कुल।"
+      },
+      "formula": {
+        "en": "Total=A+B.",
+        "hi": "कुल=A+B।"
+      },
+      "steps": [
+        {
+          "en": "Identify the 2 retained chains.",
+          "hi": "बची 2 श्रृंखलाएँ पहचानें।"
+        },
+        {
+          "en": "Add 21+30.",
+          "hi": "21+30 जोड़ें।"
+        },
+        {
+          "en": "Do not add the removed C-peptide.",
+          "hi": "हटा C-पेप्टाइड न जोड़ें।"
+        }
+      ],
+      "answer": {
+        "en": "51 amino acids across the 2 chains.",
+        "hi": "2 श्रृंखलाओं में कुल 51 अमीनो अम्ल।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Distinguish gene presence and silencing.",
+        "hi": "जीन उपस्थिति और शमन का अंतर करें।"
+      },
+      "given": {
+        "en": "DNA remains detectable, but complementary mRNA decreases after RNAi.",
+        "hi": "DNA मिलता है, पर RNAi के बाद पूरक mRNA घटता है।"
+      },
+      "find": {
+        "en": "Is this contradictory?",
+        "hi": "क्या यह विरोध है?"
+      },
+      "formula": {
+        "en": "Gene presence ≠ expression level.",
+        "hi": "जीन उपस्थिति ≠ अभिव्यक्ति स्तर।"
+      },
+      "steps": [
+        {
+          "en": "DNA detection establishes that the sequence remains.",
+          "hi": "DNA पहचान बताती है कि अनुक्रम मौजूद है।"
+        },
+        {
+          "en": "RNAi can reduce the corresponding RNA.",
+          "hi": "RNAi संबंधित RNA घटा सकता है।"
+        },
+        {
+          "en": "Lower mRNA can reduce protein synthesis without deleting the gene.",
+          "hi": "जीन हटाए बिना कम mRNA से प्रोटीन संश्लेषण घट सकता है।"
+        }
+      ],
+      "answer": {
+        "en": "No contradiction; expression is suppressed while DNA remains.",
+        "hi": "विरोध नहीं; DNA रहते हुए अभिव्यक्ति दब सकती है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Explain a limit of the historical ADA approach.",
+        "hi": "ऐतिहासिक ADA विधि की 1 सीमा समझाएँ।"
+      },
+      "given": {
+        "en": "A functional gene is introduced into a population of lymphocytes.",
+        "hi": "लसीकाणुओं के समूह में कार्यशील जीन पहुँचाया जाता है।"
+      },
+      "find": {
+        "en": "Why might the effect not persist permanently?",
+        "hi": "प्रभाव स्थायी क्यों न रहे?"
+      },
+      "formula": {
+        "en": "Cell lifetime limits persistence of a corrected population.",
+        "hi": "कोशिका आयु सुधरी संख्या का स्थायित्व सीमित करती है।"
+      },
+      "steps": [
+        {
+          "en": "Identify the changed cells as somatic lymphocytes.",
+          "hi": "बदली कोशिकाओं को देहिक लसीकाणु पहचानें।"
+        },
+        {
+          "en": "Their population can decline as cells die.",
+          "hi": "कोशिकाएँ मरने पर उनकी संख्या घट सकती है।"
+        },
+        {
+          "en": "A one-time change in short-lived cells does not imply lifelong correction of all tissues.",
+          "hi": "कम आयु कोशिकाओं में 1 बार बदलाव सभी ऊतकों का जीवनभर सुधार नहीं बताता।"
+        }
+      ],
+      "answer": {
+        "en": "Persistence depends partly on the survival and renewal of corrected cells.",
+        "hi": "स्थायित्व कुछ हद तक सुधरी कोशिकाओं के जीवन और नवीकरण पर निर्भर है।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Interpret two molecular tests.",
+        "hi": "2 आणविक परीक्षणों की व्याख्या करें।"
+      },
+      "given": {
+        "en": "Test A amplifies selected DNA; test B gives an enzyme-linked signal after antibody recognition.",
+        "hi": "A चुना DNA बढ़ाता है; B प्रतिरक्षी पहचान के बाद एंजाइम संकेत देता है।"
+      },
+      "find": {
+        "en": "Identify principles and avoid overclaiming.",
+        "hi": "सिद्धांत पहचानें और अतिदावा रोकें।"
+      },
+      "formula": {
+        "en": "PCR targets nucleic acid; ELISA targets antigen–antibody recognition.",
+        "hi": "PCR न्यूक्लिक अम्ल लक्षित करता है; ELISA प्रतिजन प्रतिरक्षी पहचान।"
+      },
+      "steps": [
+        {
+          "en": "Identify A as a PCR-type principle.",
+          "hi": "A को PCR प्रकार का सिद्धांत पहचानें।"
+        },
+        {
+          "en": "Identify B as an ELISA-type principle.",
+          "hi": "B को ELISA प्रकार का सिद्धांत पहचानें।"
+        },
+        {
+          "en": "Ask what exact target and controls each test uses.",
+          "hi": "पूछें हर परीक्षण का सटीक लक्ष्य और नियंत्रण क्या हैं।"
+        },
+        {
+          "en": "Do not infer disease severity or viable organism count from either signal alone.",
+          "hi": "किसी 1 संकेत से रोग गंभीरता या जीवित जीव संख्या न निकालें।"
+        }
+      ],
+      "answer": {
+        "en": "Different targets and signals require context-specific interpretation.",
+        "hi": "अलग लक्ष्य और संकेत के लिए संदर्भ विशिष्ट व्याख्या चाहिए।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Bt refers to which organism?",
+        "hi": "Bt किस जीव का संक्षेप है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Bacillus thuringiensis",
+            "hi": "Bacillus thuringiensis"
+          },
+          "reason": {
+            "en": "Its selected proteins have insecticidal roles.",
+            "hi": "इसके चुने प्रोटीन कीटनाशी भूमिका रखते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Bacillus typhi",
+            "hi": "Bacillus typhi"
+          },
+          "reason": {
+            "en": "This is not the expansion of Bt in this chapter.",
+            "hi": "यह इस अध्याय में Bt का विस्तार नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Human B lymphocyte",
+            "hi": "मानव B लसीकाणु"
+          },
+          "reason": {
+            "en": "That is an immune cell, not Bt.",
+            "hi": "यह प्रतिरक्षा कोशिका है, Bt नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Glomus",
+            "hi": "Glomus"
+          },
+          "reason": {
+            "en": "It is a mycorrhizal fungal example.",
+            "hi": "यह कवकमूल कवक का उदाहरण है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which step follows activation of a suitable Bt toxin in susceptible larvae?",
+        "hi": "संवेदनशील लार्वा में उपयुक्त Bt विष सक्रिय होने के बाद कौन-सा चरण आता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Binding to gut epithelial receptors and pore formation",
+            "hi": "आँत उपकला ग्राही बंधन और छिद्र निर्माण"
+          },
+          "reason": {
+            "en": "This damages susceptible gut cells.",
+            "hi": "इससे संवेदनशील आँत कोशिकाओं को क्षति होती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Photosynthesis in the insect",
+            "hi": "कीट में प्रकाश संश्लेषण"
+          },
+          "reason": {
+            "en": "Bt action is not a photosynthetic pathway.",
+            "hi": "Bt प्रभाव प्रकाश संश्लेषण मार्ग नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Conversion of all DNA into insulin",
+            "hi": "सभी DNA का इंसुलिन में बदलना"
+          },
+          "reason": {
+            "en": "Genes are not converted wholesale into proteins.",
+            "hi": "पूरा जीन पदार्थ प्रोटीन में नहीं बदलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nitrogen fixation in human blood",
+            "hi": "मानव रक्त में नाइट्रोजन स्थिरीकरण"
+          },
+          "reason": {
+            "en": "That is unrelated to the toxin mechanism.",
+            "hi": "यह विष क्रियाविधि से असंबंधित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "RNAi usually reduces expression by targeting:",
+        "hi": "RNAi सामान्यतः किसे लक्षित कर अभिव्यक्ति घटाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Complementary RNA",
+            "hi": "पूरक RNA"
+          },
+          "reason": {
+            "en": "Sequence-specific RNA interaction can promote mRNA degradation.",
+            "hi": "अनुक्रम विशिष्ट RNA संबंध mRNA विघटन करा सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every chromosome indiscriminately",
+            "hi": "हर गुणसूत्र बिना भेद"
+          },
+          "reason": {
+            "en": "RNAi is not wholesale chromosome destruction.",
+            "hi": "RNAi सभी गुणसूत्रों का विनाश नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only dietary fat",
+            "hi": "केवल भोजन वसा"
+          },
+          "reason": {
+            "en": "The mechanism concerns RNA, not fat digestion.",
+            "hi": "यह RNA से जुड़ा है, वसा पाचन से नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All proteins by direct DNA deletion",
+            "hi": "सीधे DNA हटाकर सभी प्रोटीन"
+          },
+          "reason": {
+            "en": "Silencing is not equivalent to deletion of every gene.",
+            "hi": "शमन हर जीन के विलोपन के समान नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Meloidogyne incognita in the textbook example is a:",
+        "hi": "पाठ्यपुस्तकीय उदाहरण में Meloidogyne incognita है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Nematode parasite of roots",
+            "hi": "जड़ों का सूत्रकृमि परजीवी"
+          },
+          "reason": {
+            "en": "The RNAi example concerns protection of tobacco roots.",
+            "hi": "RNAi उदाहरण तंबाकू जड़ सुरक्षा से जुड़ा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nitrogen-fixing cyanobacterium",
+            "hi": "नाइट्रोजन स्थिर सायनोबैक्टीरियम"
+          },
+          "reason": {
+            "en": "It is a nematode, not a cyanobacterium.",
+            "hi": "यह सूत्रकृमि है, सायनोबैक्टीरियम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Human hormone",
+            "hi": "मानव हार्मोन"
+          },
+          "reason": {
+            "en": "It is an organism, not insulin.",
+            "hi": "यह जीव है, इंसुलिन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "DNA ligase",
+            "hi": "DNA लाइगेज"
+          },
+          "reason": {
+            "en": "It is not a DNA-joining enzyme.",
+            "hi": "यह DNA जोड़ने वाला एंजाइम नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Mature human insulin contains:",
+        "hi": "परिपक्व मानव इंसुलिन में होता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A and B chains linked by disulfide bonds",
+            "hi": "डाइसल्फाइड बंधों से जुड़ी A और B श्रृंखलाएँ"
+          },
+          "reason": {
+            "en": "C-peptide is removed during maturation.",
+            "hi": "परिपक्वण में C-पेप्टाइड हटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the C-peptide",
+            "hi": "केवल C-पेप्टाइड"
+          },
+          "reason": {
+            "en": "That connecting segment is not mature insulin alone.",
+            "hi": "केवल जोड़ने वाला भाग परिपक्व इंसुलिन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "One DNA double helix",
+            "hi": "1 DNA द्विकुंडली"
+          },
+          "reason": {
+            "en": "Insulin is a protein, not DNA.",
+            "hi": "इंसुलिन प्रोटीन है, DNA नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "An intact bacterial chromosome",
+            "hi": "पूरा जीवाणु गुणसूत्र"
+          },
+          "reason": {
+            "en": "Recombinant production yields a protein product.",
+            "hi": "पुनर्योगज उत्पादन में प्रोटीन उत्पाद मिलता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why may changing short-lived somatic cells give limited persistence?",
+        "hi": "कम आयु देहिक कोशिकाएँ बदलने पर स्थायित्व सीमित क्यों हो सकता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Corrected cells can be lost over time",
+            "hi": "सुधरी कोशिकाएँ समय के साथ समाप्त हो सकती हैं"
+          },
+          "reason": {
+            "en": "Their loss reduces the corrected functional population.",
+            "hi": "उनके जाने से सुधरी कार्यशील संख्या घटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every germ cell automatically changes",
+            "hi": "हर जनन कोशिका स्वतः बदलती है"
+          },
+          "reason": {
+            "en": "Somatic modification does not imply germline change.",
+            "hi": "देहिक परिवर्तन से जनन रेखा परिवर्तन नहीं निकलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "DNA never directs any enzyme",
+            "hi": "DNA कभी एंजाइम सूचना नहीं देता"
+          },
+          "reason": {
+            "en": "Genes can encode functional enzymes.",
+            "hi": "जीन कार्यशील एंजाइम की सूचना दे सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All cells are immortal",
+            "hi": "सभी कोशिकाएँ अमर हैं"
+          },
+          "reason": {
+            "en": "Cell populations have lifetimes and renewal patterns.",
+            "hi": "कोशिका समूहों की आयु और नवीकरण ढंग होते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "ELISA is based primarily on:",
+        "hi": "ELISA मुख्यतः किस पर आधारित है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Antigen–antibody recognition",
+            "hi": "प्रतिजन प्रतिरक्षी पहचान"
+          },
+          "reason": {
+            "en": "An enzyme-linked signal reveals appropriate binding.",
+            "hi": "एंजाइम जुड़ा संकेत उपयुक्त बंधन बताता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "DNA doubling in every thermal cycle",
+            "hi": "हर ताप चक्र में DNA दुगुना"
+          },
+          "reason": {
+            "en": "That describes the ideal PCR principle.",
+            "hi": "यह आदर्श PCR सिद्धांत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sedimentation of sand",
+            "hi": "रेत का अवसादन"
+          },
+          "reason": {
+            "en": "That is physical separation, not ELISA.",
+            "hi": "यह भौतिक पृथक्करण है, ELISA नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A plant’s stomatal opening",
+            "hi": "पौध रंध्र खुलना"
+          },
+          "reason": {
+            "en": "That is a plant physiological process.",
+            "hi": "यह पौध शारीरिक प्रक्रिया है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which statement about a transgenic animal model is best?",
+        "hi": "पारजीनी जंतु मॉडल का सबसे उचित कथन कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It helps answer defined questions with limitations",
+            "hi": "यह सीमाओं सहित निश्चित प्रश्नों का उत्तर देने में सहायक है"
+          },
+          "reason": {
+            "en": "Model validity and appropriate controls remain necessary.",
+            "hi": "मॉडल की वैधता और उचित नियंत्रण आवश्यक रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "It is a complete copy of every human",
+            "hi": "यह हर मानव की पूर्ण प्रतिलिपि है"
+          },
+          "reason": {
+            "en": "Species and individual differences remain.",
+            "hi": "प्रजाति तथा व्यक्ति अंतर बने रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Its coat colour always proves the inserted gene",
+            "hi": "इसका रंग हमेशा insert सिद्ध करता है"
+          },
+          "reason": {
+            "en": "Visible colour is not a universal molecular test.",
+            "hi": "दृश्य रंग सार्वत्रिक आणविक जाँच नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It never requires animal-welfare consideration",
+            "hi": "इसमें जंतु कल्याण विचार नहीं चाहिए"
+          },
+          "reason": {
+            "en": "Responsible care is part of scientific practice.",
+            "hi": "जिम्मेदार देखभाल वैज्ञानिक कार्य का भाग है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Biopiracy highlights which concern?",
+        "hi": "जैव दस्युता किस चिंता से जुड़ी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Unauthorised use of resources or knowledge without fair sharing",
+            "hi": "उचित अनुमति या लाभ साझेदारी बिना संसाधन अथवा ज्ञान का उपयोग"
+          },
+          "reason": {
+            "en": "It raises questions of recognition and benefit sharing.",
+            "hi": "यह अभिस्वीकृति और लाभ साझेदारी के प्रश्न उठाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Normal DNA replication in every cell",
+            "hi": "हर कोशिका की सामान्य DNA प्रतिकृति"
+          },
+          "reason": {
+            "en": "That is a biological process, not the ethical issue.",
+            "hi": "वह जैव प्रक्रिया है, यह नैतिक मुद्दा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the formation of an antibody",
+            "hi": "केवल प्रतिरक्षी निर्माण"
+          },
+          "reason": {
+            "en": "That belongs to immunity.",
+            "hi": "यह प्रतिरक्षा से जुड़ा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the joining of peptide chains",
+            "hi": "केवल पेप्टाइड श्रृंखलाओं का जुड़ना"
+          },
+          "reason": {
+            "en": "That is protein chemistry, not resource ownership.",
+            "hi": "यह प्रोटीन रसायन है, संसाधन स्वामित्व नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which conclusion is scientifically justified?",
+        "hi": "कौन-सा निष्कर्ष वैज्ञानिक रूप से उचित है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Each engineered product needs trait-specific evaluation",
+            "hi": "हर अभियांत्रित उत्पाद का लक्षण विशिष्ट मूल्यांकन चाहिए"
+          },
+          "reason": {
+            "en": "Benefits and unintended effects depend on the product and context.",
+            "hi": "लाभ और अनचाहे प्रभाव उत्पाद तथा संदर्भ पर निर्भर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "All modifications are automatically harmless",
+            "hi": "हर परिवर्तन स्वतः हानिरहित है"
+          },
+          "reason": {
+            "en": "That overstates safety without evidence.",
+            "hi": "यह प्रमाण बिना सुरक्षा का अतिदावा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All modifications are automatically dangerous",
+            "hi": "हर परिवर्तन स्वतः खतरनाक है"
+          },
+          "reason": {
+            "en": "That ignores differences and evaluation.",
+            "hi": "यह भिन्नता तथा मूल्यांकन की उपेक्षा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "One useful trait improves all traits",
+            "hi": "1 उपयोगी लक्षण सभी लक्षण सुधारता है"
+          },
+          "reason": {
+            "en": "Different traits require separate evidence.",
+            "hi": "अलग लक्षणों के लिए अलग प्रमाण चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain the main steps of Bt toxin action in a susceptible insect.",
+        "hi": "संवेदनशील कीट में Bt विष के मुख्य चरण समझाएँ।"
+      },
+      "answer": {
+        "en": "Appropriate gut conditions activate the protoxin; active toxin binds suitable epithelial receptors and forms pores, damaging cells. The response is protein- and target-specific.",
+        "hi": "उपयुक्त आँत दशाएँ पूर्वविष सक्रिय करती हैं; सक्रिय विष उपयुक्त उपकला ग्राही से जुड़कर छिद्र बनाता है और कोशिकाओं को क्षति देता है। प्रतिक्रिया प्रोटीन तथा लक्ष्य विशिष्ट है।"
+      }
+    },
+    {
+      "question": {
+        "en": "How does RNAi differ from removal of a DNA gene?",
+        "hi": "RNAi, DNA जीन हटाने से कैसे अलग है?"
+      },
+      "answer": {
+        "en": "RNAi can target complementary mRNA and reduce expression while the DNA sequence remains present; DNA deletion physically removes sequence.",
+        "hi": "RNAi पूरक mRNA को लक्षित करके DNA रहते हुए अभिव्यक्ति घटा सकता है; DNA विलोपन में अनुक्रम भौतिक रूप से हटता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish proinsulin and mature insulin.",
+        "hi": "प्रोइंसुलिन और परिपक्व इंसुलिन में अंतर करें।"
+      },
+      "answer": {
+        "en": "Proinsulin includes a connecting C-peptide; maturation removes it, leaving A and B chains linked by disulfide bonds.",
+        "hi": "प्रोइंसुलिन में जोड़ने वाला C-पेप्टाइड है; परिपक्वण इसे हटाकर डाइसल्फाइड बंधों से जुड़ी A और B श्रृंखलाएँ छोड़ता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain one persistence limitation of somatic gene therapy.",
+        "hi": "देहिक जीन चिकित्सा में स्थायित्व की 1 सीमा समझाएँ।"
+      },
+      "answer": {
+        "en": "If corrected cells are short-lived and not adequately renewed, their loss can reduce functional correction. It does not imply permanent change of every tissue or inheritance by offspring.",
+        "hi": "यदि सुधरी कोशिकाएँ कम आयु की हों और पर्याप्त नवीकरण न हो, तो उनके जाने से कार्यशील सुधार घट सकता है। इससे हर ऊतक का स्थायी बदलाव या संतति में वंशागति नहीं निकलती।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare PCR and ELISA principles.",
+        "hi": "PCR और ELISA के सिद्धांत मिलाएँ।"
+      },
+      "answer": {
+        "en": "PCR amplifies selected DNA; ELISA uses antigen–antibody recognition with an enzyme-linked signal. Their targets and interpretation differ.",
+        "hi": "PCR चुना DNA बढ़ाता है; ELISA एंजाइम जुड़े संकेत के साथ प्रतिजन प्रतिरक्षी पहचान करता है। इनके लक्ष्य और व्याख्या अलग हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why should biosafety and benefit sharing both be considered?",
+        "hi": "जैव सुरक्षा और लाभ साझेदारी दोनों पर विचार क्यों चाहिए?"
+      },
+      "answer": {
+        "en": "Biosafety addresses biological effects and risks, while benefit sharing addresses fair recognition and distribution when resources or knowledge contribute. A useful product does not automatically settle either question.",
+        "hi": "जैव सुरक्षा जैविक प्रभाव तथा जोखिम देखती है; लाभ साझेदारी संसाधन या ज्ञान के योगदान पर न्यायपूर्ण अभिस्वीकृति और वितरण देखती है। उपयोगी उत्पाद अपने आप दोनों प्रश्न नहीं सुलझाता।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "An engineered trait has a defined mechanism and scope.",
+      "hi": "अभियांत्रित लक्षण की निश्चित क्रियाविधि और सीमा है।"
+    },
+    {
+      "en": "Bt action depends on susceptible targets; RNAi silences complementary expression.",
+      "hi": "Bt प्रभाव संवेदनशील लक्ष्य पर निर्भर; RNAi पूरक अभिव्यक्ति दबाता है।"
+    },
+    {
+      "en": "Mature insulin has A and B chains, not retained C-peptide.",
+      "hi": "परिपक्व इंसुलिन में A और B श्रृंखलाएँ हैं, बचा C-पेप्टाइड नहीं।"
+    },
+    {
+      "en": "Gene therapy persistence depends partly on the corrected cell population.",
+      "hi": "जीन चिकित्सा का स्थायित्व कुछ हद तक सुधरी कोशिका संख्या पर निर्भर है।"
+    },
+    {
+      "en": "Product evidence, biosafety and fair sharing are distinct questions.",
+      "hi": "उत्पाद प्रमाण, जैव सुरक्षा और न्यायपूर्ण साझेदारी अलग प्रश्न हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not claim all GMO traits are universal, RNAi deletes every gene, or one test signal alone establishes disease severity.",
+    "hi": "सभी GMO लक्षण सार्वत्रिक हैं, RNAi हर जीन हटाता है या 1 परीक्षण संकेत से रोग गंभीरता सिद्ध है—ऐसे दावे न करें।"
+  },
+  "goal": {
+    "en": "Explain Bt, RNAi, recombinant insulin and molecular diagnosis while evaluating limits and biosafety.",
+    "hi": "Bt, RNAi, पुनर्योगज इंसुलिन और आणविक निदान समझें तथा सीमाएँ और जैव सुरक्षा जाँचें।"
+  },
+  "conceptMap": "निश्चित लक्ष्य → विशिष्ट जैविक क्रियाविधि → प्रमाणित उत्पाद या मॉडल → सीमाएँ और जैव सुरक्षा",
+  "conceptMapEn": "Defined goal → targeted biological mechanism → verified product or model → limits and biosafety",
+  "editionBasis": {
+    "en": "Original study explanations for the current NCERT Class 12 Biology sequence and UP Board 2026–27; use the prescribed textbook and school practicals too.",
+    "hi": "वर्तमान NCERT कक्षा 12 जीव विज्ञान क्रम और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ; निर्धारित पाठ्यपुस्तक और विद्यालयी प्रयोग भी साथ करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Biology XII Chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/lebo110.pdf"
+    },
+    {
+      "title": "UPMSP Biology Class 12 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/153-Biology-Class-12.pdf"
+    }
+  ]
+}

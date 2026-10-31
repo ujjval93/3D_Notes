@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,t,p})=>{let r=p[0],a=t/Math.pow(r,1.5),visual=.45+r*.27;g.sphere(0,0,0,.22,C.blue,b('Central body','केन्द्रीय पिण्ड'));g.ring(visual);let pos=[Math.cos(a)*visual,0,Math.sin(a)*visual];g.sphere(...pos,.08,C.gold);g.arrow(pos,[pos[0]*.65,0,pos[2]*.65],C.green);return[read('Radius factor','त्रिज्या गुणक',fmt(r),'×'),read('Circular speed factor','वृत्तीय चाल गुणक',fmt(1/Math.sqrt(r)),'×'),read('Orbital period factor','परिक्रमण काल गुणक',fmt(r**1.5),'×')];};

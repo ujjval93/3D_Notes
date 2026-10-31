@@ -1,0 +1,1492 @@
+{
+  "number": 14,
+  "id": "physics11-14",
+  "title": {
+    "en": "Waves",
+    "hi": "तरंगें"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-14-1",
+      "title": {
+        "en": "Travelling wave",
+        "hi": "प्रगामी तरंग"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 39
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Frequency",
+            "hi": "आवृत्ति"
+          },
+          "min": 1,
+          "max": 5,
+          "step": 0.5,
+          "initial": 2,
+          "unit": "Hz"
+        }
+      ],
+      "noteIndex": 0,
+      "selectors": [],
+      "goal": {
+        "en": "Compare wavelength when frequency changes at fixed speed.",
+        "hi": "स्थिर चाल पर आवृत्ति बदलकर तरंगदैर्ध्य तुलना करें।"
+      },
+      "observe": {
+        "en": "v = 4 m/s and amplitude 0.3 m stay fixed; particles oscillate locally.",
+        "hi": "v = 4 m/s और आयाम 0.3 m स्थिर; कण स्थानीय दोलन करते हैं।"
+      },
+      "modelNote": {
+        "en": "Idealised teaching model; sizes, particle counts and animation speed are symbolic. Read physical values from the readouts, not screen distances.",
+        "hi": "यह आदर्श शिक्षण मॉडल है; आकार, कण संख्या और एनीमेशन चाल सांकेतिक हैं। भौतिक मान readout से पढ़ें, स्क्रीन की दूरी से नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "λ = v/ν, so higher frequency gives shorter wavelength in this fixed-speed model.",
+          "hi": "λ = v/ν, इसलिए स्थिर चाल मॉडल में अधिक आवृत्ति से छोटा तरंगदैर्ध्य है।"
+        }
+      },
+      "realLife": {
+        "en": "A vibrating source sets frequency while the string properties set speed.",
+        "hi": "कंपित स्रोत आवृत्ति और डोरी के गुण चाल तय करते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "At v = 4 m/s and ν = 2 Hz, λ is?",
+          "hi": "v = 4 m/s और ν = 2 Hz पर λ?"
+        },
+        "options": [
+          {
+            "en": "2 m",
+            "hi": "2 m"
+          },
+          {
+            "en": "8 m",
+            "hi": "8 m"
+          },
+          {
+            "en": "0.5 m",
+            "hi": "0.5 m"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Divide speed by frequency.",
+          "hi": "चाल को आवृत्ति से भाग दें।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-14-1-low",
+          "label": {
+            "en": "Set frequency to 1 Hz.",
+            "hi": "आवृत्ति 1 Hz करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-14-1-high",
+          "label": {
+            "en": "Compare at 5 Hz.",
+            "hi": "5 Hz पर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4.95
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Lower frequency leaves a longer spatial wavelength.",
+            "hi": "कम आवृत्ति से स्थानिक तरंगदैर्ध्य लंबा है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Higher frequency packs more wavelengths into the same length.",
+            "hi": "अधिक आवृत्ति में समान लंबाई में अधिक तरंगदैर्ध्य हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Model object / particles",
+            "hi": "मॉडल वस्तु / कण"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Highlighted quantity / reference",
+            "hi": "प्रमुख राशि / संदर्भ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-14-2",
+      "title": {
+        "en": "Standing string wave",
+        "hi": "तनी डोरी की अप्रगामी तरंग"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 40
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Harmonic number",
+            "hi": "हार्मोनिक संख्या"
+          },
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "initial": 2,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 2,
+      "selectors": [],
+      "goal": {
+        "en": "Identify fixed-string harmonics, nodes and loops.",
+        "hi": "बँधी डोरी के हार्मोनिक, निस्पंद और लूप पहचानें।"
+      },
+      "observe": {
+        "en": "L = 2 m and v = 20 m/s; choose harmonic n and count loops.",
+        "hi": "L = 2 m और v = 20 m/s; हार्मोनिक n चुनकर लूप गिनें।"
+      },
+      "modelNote": {
+        "en": "Idealised teaching model; sizes, particle counts and animation speed are symbolic. Read physical values from the readouts, not screen distances.",
+        "hi": "यह आदर्श शिक्षण मॉडल है; आकार, कण संख्या और एनीमेशन चाल सांकेतिक हैं। भौतिक मान readout से पढ़ें, स्क्रीन की दूरी से नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "νn = nv/(2L) and λn = 2L/n follow from nodes at both ends.",
+          "hi": "दोनों सिरों पर निस्पंद से νn = nv/(2L) और λn = 2L/n मिलता है।"
+        }
+      },
+      "realLife": {
+        "en": "String instruments select standing vibration patterns.",
+        "hi": "तार वाले वाद्य अप्रगामी कंपन प्रतिरूप चुनते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "For n = 3, number of loops is?",
+          "hi": "n = 3 के लिए लूप संख्या?"
+        },
+        "options": [
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The nth fixed-string harmonic has n loops and n + 1 nodes.",
+          "hi": "बँधी डोरी के nवें हार्मोनिक में n लूप और n + 1 निस्पंद हैं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-14-2-low",
+          "label": {
+            "en": "Set harmonic number to 1 .",
+            "hi": "हार्मोनिक संख्या 1  करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-14-2-high",
+          "label": {
+            "en": "Compare at 5 .",
+            "hi": "5  पर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Lower modes have fewer loops and longer wavelengths.",
+            "hi": "निचली विधाओं में कम लूप और लंबा तरंगदैर्ध्य है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Higher harmonics have more nodes and higher frequencies.",
+            "hi": "ऊँचे हार्मोनिक में अधिक निस्पंद और अधिक आवृत्ति है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Model object / particles",
+            "hi": "मॉडल वस्तु / कण"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Highlighted quantity / reference",
+            "hi": "प्रमुख राशि / संदर्भ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-14-3",
+      "title": {
+        "en": "Beats",
+        "hi": "विस्पंद"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 41
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Second frequency",
+            "hi": "दूसरी आवृत्ति"
+          },
+          "min": 10,
+          "max": 14,
+          "step": 1,
+          "initial": 12,
+          "unit": "Hz"
+        }
+      ],
+      "noteIndex": 4,
+      "selectors": [],
+      "goal": {
+        "en": "Relate beat rate to the difference of two frequencies.",
+        "hi": "विस्पंद दर को 2 आवृत्तियों के अंतर से जोड़ें।"
+      },
+      "observe": {
+        "en": "The first source stays at 10 Hz; vary the second from 10 to 14 Hz.",
+        "hi": "पहला स्रोत 10 Hz स्थिर; दूसरा 10 से 14 Hz बदलें।"
+      },
+      "modelNote": {
+        "en": "The 10–14 Hz sources are slowed mathematical demonstrations, not a realistic audible tuning-fork pair. Curve height represents displacement; loudness is related to amplitude magnitude, not its sign.",
+        "hi": "10–14 Hz स्रोत गणित समझाने का धीमा उदाहरण हैं, वास्तविक सुनाई देने वाली स्वरित्र जोड़ी नहीं। वक्र की ऊँचाई विस्थापन बताती है; प्रबलता आयाम के परिमाण से जुड़ी है, उसके चिह्न से नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The loudness-maxima rate is |ν2 − ν1|; exactly equal frequencies produce no repeated beats.",
+          "hi": "प्रबलता अधिकतम की दर |ν2 − ν1|; ठीक समान आवृत्तियों पर बार-बार विस्पंद नहीं।"
+        }
+      },
+      "realLife": {
+        "en": "Musicians reduce slow beats to bring pitches closer together.",
+        "hi": "संगीतकार धीमे विस्पंद घटाकर स्वरों की आवृत्तियाँ पास लाते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "10 Hz and 12 Hz produce which beat rate?",
+          "hi": "10 Hz और 12 Hz की विस्पंद दर?"
+        },
+        "options": [
+          {
+            "en": "2 Hz",
+            "hi": "2 Hz"
+          },
+          {
+            "en": "1 Hz",
+            "hi": "1 Hz"
+          },
+          {
+            "en": "22 Hz",
+            "hi": "22 Hz"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Use the absolute difference, not its half or the sum.",
+          "hi": "अंतर का परिमाण लें, उसका आधा या योग नहीं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-14-3-low",
+          "label": {
+            "en": "Set second frequency to 10 Hz.",
+            "hi": "दूसरी आवृत्ति 10 Hz करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 10
+          }
+        },
+        {
+          "id": "phy11-14-3-high",
+          "label": {
+            "en": "Compare at 14 Hz.",
+            "hi": "14 Hz पर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 13.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 12.0
+          },
+          "text": {
+            "en": "Near equal frequencies give slow or zero beats.",
+            "hi": "लगभग समान आवृत्तियों में धीमे या शून्य विस्पंद हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 12.0
+          },
+          "text": {
+            "en": "Greater frequency separation gives a faster beat pattern here.",
+            "hi": "यहाँ अधिक आवृत्ति अंतर से विस्पंद प्रतिरूप तेज है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Model object / particles",
+            "hi": "मॉडल वस्तु / कण"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Highlighted quantity / reference",
+            "hi": "प्रमुख राशि / संदर्भ"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Distinguish particle motion from wave propagation and connect travelling waves, standing modes and beats.",
+    "hi": "कण गति और तरंग प्रसार अलग पहचानकर प्रगामी तरंग, अप्रगामी विधा तथा विस्पंद जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "A disturbance that transports energy",
+        "hi": "ऊर्जा ले जाने वाला विक्षोभ"
+      },
+      "paragraphs": [
+        {
+          "en": "A mechanical wave is a disturbance that travels through a material medium because neighbouring parts interact. A vibrating source first disturbs nearby particles, which influence the next particles. The pattern can move across a large distance while each particle oscillates near its own equilibrium position. Thus wave propagation does not require the material itself to travel from the source to the receiver. A small cork on gentle water ripples mainly moves up and down as the pattern passes, although real water waves are more complicated than a one-dimensional string model. Mechanical waves need inertia and an elastic restoring mechanism in the medium. Sound in air and waves on a stretched string are examples. Electromagnetic waves are a different class and need no material medium. In this chapter, distinguish motion of the disturbance from motion of the particles before interpreting any animation or applying a speed formula.",
+          "hi": "यांत्रिक तरंग (Mechanical wave) ऐसा विक्षोभ है जो माध्यम के पड़ोसी भागों की अंतःक्रिया से आगे बढ़ता है। कंपन करता स्रोत पहले पास के कणों को विचलित करता है। वे आगे के कणों को प्रभावित करते हैं और क्रम चलता है। तरंग का प्रतिरूप बड़ी दूरी तय कर सकता है, जबकि प्रत्येक कण अपनी साम्य स्थिति के आसपास दोलन करता है। इसलिए तरंग के चलने के लिए पूरा पदार्थ स्रोत से सुनने वाले तक जाना आवश्यक नहीं है। हल्की जल तरंग पर रखा छोटा कॉर्क मुख्यतः ऊपर-नीचे होता है, जबकि प्रतिरूप आगे जाता है। वास्तविक जल तरंग सरल एकविमीय डोरी से अधिक जटिल है। यांत्रिक तरंग के लिए माध्यम का जड़त्व और प्रत्यास्थ प्रत्यावर्तन व्यवस्था आवश्यक हैं। हवा में ध्वनि और तनी डोरी की तरंग इसके उदाहरण हैं। विद्युतचुंबकीय तरंग (Electromagnetic wave) अलग प्रकार है और उसे पदार्थ माध्यम की आवश्यकता नहीं होती। इस अध्याय में चित्र या चाल सूत्र समझने से पहले विक्षोभ की गति तथा माध्यम कणों की गति को अलग-अलग पहचानें। तभी तरंग द्वारा ऊर्जा ले जाने का अर्थ स्पष्ट होगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A wave carries energy and momentum, while medium particles usually have no sustained transport along the propagation direction in the elementary model. Do not mistake a travelling crest for one travelling particle.",
+          "hi": "तरंग ऊर्जा और संवेग ले जाती है; सरल मॉडल में माध्यम के कण सामान्यतः प्रसार दिशा में लगातार आगे नहीं जाते। चलती शिखा को चलता हुआ एक ही कण न मानें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does one string particle travel along the whole string with a crest?",
+          "hi": "क्या डोरी का एक कण शिखा के साथ पूरी डोरी तय करता है?"
+        },
+        "answer": {
+          "en": "No. It oscillates locally while the disturbance propagates.",
+          "hi": "नहीं। कण स्थानीय दोलन करता है, विक्षोभ आगे बढ़ता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Transverse and longitudinal waves",
+        "hi": "अनुप्रस्थ और अनुदैर्ध्य तरंगें"
+      },
+      "paragraphs": [
+        {
+          "en": "In a transverse wave, particles oscillate perpendicular to the direction of propagation. A wave on a stretched string is a familiar example. In a longitudinal wave, particle oscillations are parallel to propagation; sound in air is described through successive compressions and rarefactions. These labels compare two directions, not the appearance of a curve drawn on paper. A sine graph of air pressure is not a picture of air molecules moving up and down. Solids can support different wave types depending on their elastic response, while a fluid bulk does not sustain a static shear stress needed for ordinary transverse elastic waves. Surface waves may combine motions and should not be forced into an oversimplified category. To identify a wave in a diagram, first mark the direction of propagation, then the direction of particle displacement. The animated string uses transverse displacement; the vertical magnification is chosen for visibility.",
+          "hi": "अनुप्रस्थ तरंग (Transverse wave) में माध्यम के कण तरंग प्रसार की दिशा के लंबवत दोलन करते हैं। तनी डोरी की तरंग सामान्य उदाहरण है। अनुदैर्ध्य तरंग (Longitudinal wave) में कणों का दोलन प्रसार दिशा के समानांतर होता है। हवा की ध्वनि को क्रमिक संपीडन और विरलन से समझते हैं। ये नाम 2 दिशाओं की तुलना करते हैं, केवल कागज पर बनी वक्र रेखा का रूप नहीं बताते। हवा के दाब का साइन आलेख यह चित्र नहीं है कि हवा के अणु ऊपर-नीचे जा रहे हैं। ठोस अपने प्रत्यास्थ गुणों के अनुसार अलग तरंग प्रकारों को सहारा दे सकते हैं। द्रव के अंदर साधारण अनुप्रस्थ प्रत्यास्थ तरंग के लिए आवश्यक स्थिर अपरूपण प्रतिबल नहीं टिकता। सतह की तरंगों में कई प्रकार की गतियाँ मिल सकती हैं, इसलिए उन्हें जबरदस्ती बहुत सरल श्रेणी में नहीं रखना चाहिए। किसी चित्र में तरंग पहचानते समय पहले प्रसार दिशा का तीर बनाएँ, फिर कण विस्थापन की दिशा देखें। स्क्रीन की डोरी में अनुप्रस्थ गति है और ऊर्ध्व दिशा को स्पष्टता के लिए बड़ा दिखाया गया है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Compression means locally increased pressure or density; rarefaction means decreased pressure or density. A pressure-versus-position graph represents a field value, not the material shape of the air.",
+          "hi": "संपीडन में स्थानीय दाब या घनत्व बढ़ता और विरलन में घटता है। दाब-स्थिति आलेख किसी क्षेत्र का मान है, हवा की वास्तविक आकृति नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What direction do air particles oscillate in a sound wave?",
+          "hi": "ध्वनि तरंग में हवा के कण किस दिशा में दोलन करते हैं?"
+        },
+        "answer": {
+          "en": "Parallel to the direction of propagation for a longitudinal sound wave.",
+          "hi": "अनुदैर्ध्य ध्वनि में प्रसार दिशा के समानांतर।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Travelling wave equation and phase",
+        "hi": "प्रगामी तरंग समीकरण और कला"
+      },
+      "paragraphs": [
+        {
+          "en": "A sinusoidal wave travelling in the positive x direction can be written y(x,t) = A sin(kx − ωt + φ). Here A is displacement amplitude, k = 2π/λ is wave number, and ω = 2πν is angular frequency. The wavelength λ is the distance between neighbouring points in the same phase at one instant. The period T is the time between repeated states at one fixed position. These are different measurements: one is a spatial interval and the other a time interval. Following a point of constant phase gives wave speed v = ω/k = νλ. Replacing the minus sign between kx and ωt by a plus sign reverses travel direction for positive k and ω. Changing the phase constant shifts the pattern without changing speed. Always state which variable is held fixed when drawing a displacement graph, because a snapshot in space and a time trace at one point answer different questions.",
+          "hi": "धन x दिशा में जाने वाली साइन तरंग को y(x,t) = A sin(kx − ωt + φ) से लिख सकते हैं। A विस्थापन आयाम, k = 2π/λ तरंग संख्या (Wave number) और ω = 2πν कोणीय आवृत्ति है। तरंगदैर्ध्य (Wavelength) λ किसी एक क्षण पर समान कला वाले पड़ोसी बिंदुओं की दूरी है। आवर्तकाल T किसी निश्चित स्थान पर वही अवस्था फिर आने का समय है। एक दूरी है और दूसरा समय, इसलिए दोनों अलग मापन हैं। स्थिर कला वाले बिंदु का पीछा करने पर तरंग चाल v = ω/k = νλ मिलती है। धन k और ω के लिए kx तथा ωt के बीच ऋण की जगह धन चिह्न करने से प्रसार दिशा उलटती है। कला नियतांक बदलने से प्रतिरूप खिसकता है, चाल नहीं बदलती। आलेख बनाते समय बताना चाहिए कि कौन-सा चर स्थिर है। किसी क्षण पूरे माध्यम का दृश्य स्थानिक प्रतिरूप देता है। एक निश्चित बिंदु का समय आलेख उस कण की स्थानीय गति बताता है। दोनों को मिलाने से तरंगदैर्ध्य और आवर्तकाल की पहचान में गलती हो सकती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use radians for phase: k in rad/m and ω in rad/s. The wave speed v is not generally equal to the instantaneous particle speed |∂y/∂t|.",
+          "hi": "कला में रेडियन लें: k की इकाई rad/m और ω की rad/s। तरंग चाल v सामान्यतः तात्कालिक कण चाल |∂y/∂t| के बराबर नहीं होती।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which sign gives positive-x propagation in this convention?",
+          "hi": "इस लेखन में धन-x प्रसार कौन-सा चिह्न देता है?"
+        },
+        "answer": {
+          "en": "The minus sign in kx − ωt.",
+          "hi": "kx − ωt में ऋण चिह्न।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "What determines wave speed",
+        "hi": "तरंग चाल किन पर निर्भर है"
+      },
+      "paragraphs": [
+        {
+          "en": "For a small transverse disturbance on an ideal stretched string, v = √(F/μ), where F is tension and μ is mass per unit length. Larger tension makes the restoring action stronger and raises wave speed; larger linear density increases inertia and reduces speed. The source controls frequency, while the medium and its condition control wave speed in this ideal nondispersive model. Consequently increasing source frequency at fixed speed shortens wavelength. For longitudinal waves in a fluid, speed relates to the appropriate bulk modulus and density: v = √(B/ρ). Sound in an ideal gas involves approximately adiabatic compression, giving v = √(γp/ρ) = √(γRT/M). Temperature therefore affects sound speed. These expressions have different assumptions and should not be exchanged merely because all involve a square root. In the travelling-wave scene, v = 4 m/s is deliberately fixed while frequency is varied.",
+          "hi": "आदर्श तनी डोरी पर छोटे अनुप्रस्थ विक्षोभ की चाल v = √(F/μ) है। यहाँ F तनाव और μ प्रति इकाई लंबाई का द्रव्यमान है। तनाव बढ़ने पर प्रत्यावर्तन प्रभाव मजबूत होता है और चाल बढ़ती है। रैखिक घनत्व बढ़ने पर जड़त्व बढ़ता है, जिससे चाल घटती है। इस आदर्श अविक्षेपी मॉडल में स्रोत आवृत्ति तय करता है, जबकि माध्यम और उसकी अवस्था तरंग चाल तय करते हैं। इसलिए चाल स्थिर रखते हुए स्रोत की आवृत्ति बढ़ाएँ तो तरंगदैर्ध्य घटेगा। द्रव की अनुदैर्ध्य तरंग में उपयुक्त आयतन प्रत्यास्थता गुणांक B और घनत्व ρ के लिए v = √(B/ρ) है। आदर्श गैस की ध्वनि में संपीड़न लगभग रुद्धोष्म होता है। इससे v = √(γp/ρ) = √(γRT/M) मिलता है। इसलिए ताप ध्वनि चाल को प्रभावित करता है। इन सूत्रों की मान्यताएँ अलग हैं। केवल सभी में वर्गमूल होने से इन्हें आपस में नहीं बदल सकते। प्रगामी तरंग दृश्य में v = 4 m/s जानबूझकर स्थिर है और केवल आवृत्ति बदली जाती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For a fixed string, quadrupling tension doubles speed. If speed stays fixed and frequency doubles, wavelength halves; wave amplitude does not enter this linear speed formula.",
+          "hi": "स्थिर डोरी में तनाव 4 गुना करने से चाल दोगुनी। चाल स्थिर और आवृत्ति दोगुनी हो तो तरंगदैर्ध्य आधा; रैखिक चाल सूत्र में आयाम नहीं आता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At fixed v, what happens to λ when ν doubles?",
+          "hi": "v स्थिर हो और ν दोगुनी हो तो λ क्या होगा?"
+        },
+        "answer": {
+          "en": "It becomes half.",
+          "hi": "यह आधा होगा।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Superposition and reflection",
+        "hi": "अध्यारोपण और परावर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "When small waves meet in a linear medium, the resultant displacement is the algebraic sum of their individual displacements. This is the superposition principle. It can produce reinforcement when contributions have the same sign and cancellation when they have opposite signs. The waves do not permanently destroy one another; after overlapping, each can continue propagating. Reflection depends on the boundary. An ideal fixed end must have zero displacement, so a reflected transverse pulse is inverted there. At an ideal free end, a reflected displacement pulse is not inverted. Partial reflection and transmission occur when a wave meets a change of medium. Boundary conditions decide the allowed combined motion rather than an arbitrary rule about colour or arrow direction in a drawing. Superposition is essential for understanding standing waves and beats, but simple addition is an approximation when disturbances become strongly nonlinear.",
+          "hi": "रैखिक माध्यम में छोटी तरंगें मिलें तो परिणामी विस्थापन उनके अलग-अलग विस्थापनों का बीजगणितीय योग होता है। इसे अध्यारोपण सिद्धांत (Superposition principle) कहते हैं। समान चिह्न वाले अंश मिलकर प्रबलन और विपरीत चिह्न वाले अंश आंशिक या पूर्ण निरस्तीकरण कर सकते हैं। इसका अर्थ यह नहीं कि दोनों तरंगें स्थायी रूप से नष्ट हो गईं। मिलने के बाद वे आगे चल सकती हैं। परावर्तन (Reflection) का परिणाम सीमा पर निर्भर है। आदर्श स्थिर सिरे का विस्थापन शून्य होना चाहिए, इसलिए अनुप्रस्थ विस्थापन स्पंद वहाँ उलटकर लौटता है। आदर्श मुक्त सिरे से लौटने वाला विस्थापन स्पंद नहीं उलटता। माध्यम बदलने पर आंशिक परावर्तन तथा संचरण दोनों हो सकते हैं। सीमा शर्तें संयुक्त गति तय करती हैं; चित्र के रंग या तीर की मनमानी दिशा से नियम नहीं बनता। अप्रगामी तरंग और विस्पंद समझने के लिए अध्यारोपण आवश्यक है। बहुत बड़े, अरैखिक विक्षोभ में सरल योग पर्याप्त नहीं हो सकता। इसलिए छोटी तरंगों वाले मॉडल की सीमा याद रखना चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Displacements add with signs, not just magnitudes. A moment of zero resultant displacement does not imply zero total energy, because motion and energy distribution must also be considered.",
+          "hi": "विस्थापन चिह्न सहित जोड़ें, केवल परिमाण नहीं। किसी क्षण परिणामी विस्थापन शून्य होने से कुल ऊर्जा शून्य नहीं होती; गति और ऊर्जा वितरण भी देखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to a transverse displacement pulse at an ideal fixed end?",
+          "hi": "आदर्श स्थिर सिरे पर अनुप्रस्थ विस्थापन स्पंद क्या करता है?"
+        },
+        "answer": {
+          "en": "It reflects with inversion.",
+          "hi": "यह उलटकर परावर्तित होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Standing waves on strings",
+        "hi": "डोरी की अप्रगामी तरंगें"
+      },
+      "paragraphs": [
+        {
+          "en": "Two equal-amplitude waves with equal frequency and speed travelling in opposite directions can combine into a standing wave. A useful form is y = 2A sin(kx) cos(ωt). Nodes are positions that remain at zero displacement; antinodes have maximum oscillation amplitude. Adjacent nodes are λ/2 apart and a node is λ/4 from its nearest antinode. In an ideal standing wave there is no net time-averaged energy transfer along the string, unlike a single progressive wave. A string of length L fixed at both ends needs nodes at both boundaries. Its allowed wavelengths are λn = 2L/n and frequencies νn = nv/(2L), where n = 1, 2, 3 and so on. The fundamental is n = 1, and higher allowed frequencies are harmonics. The scene uses L = 2 m and v = 20 m/s, making the fundamental 5 Hz.",
+          "hi": "समान आयाम, समान आवृत्ति और समान चाल वाली 2 तरंगें विपरीत दिशाओं में चलें तो अप्रगामी तरंग (Standing wave) बना सकती हैं। एक उपयोगी रूप y = 2A sin(kx) cos(ωt) है। निस्पंद (Node) वे स्थान हैं जहाँ विस्थापन हमेशा शून्य रहता है। प्रस्पंद (Antinode) पर दोलन आयाम अधिकतम है। पड़ोसी निस्पंदों की दूरी λ/2 और किसी निस्पंद से निकटतम प्रस्पंद की दूरी λ/4 होती है। आदर्श अप्रगामी तरंग में डोरी के साथ औसत शुद्ध ऊर्जा प्रवाह नहीं होता, जबकि अकेली प्रगामी तरंग ऊर्जा आगे ले जाती है। दोनों सिरों से बँधी L लंबाई की डोरी में सिरों पर निस्पंद आवश्यक हैं। इसलिए स्वीकृत तरंगदैर्ध्य λn = 2L/n और आवृत्तियाँ νn = nv/(2L) हैं। यहाँ n = 1, 2, 3 आदि है। n = 1 मूल विधा (Fundamental mode), आगे की स्वीकृत आवृत्तियाँ हार्मोनिक हैं। दृश्य में L = 2 m और v = 20 m/s है, इसलिए मूल आवृत्ति 5 Hz बनती है। डोरी के सिरों की शर्त बदलें तो स्वीकृत विधाएँ भी बदलेंगी।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The nth fixed-string mode has n loops and n + 1 nodes including both ends. The peak local amplitude of the standing wave can be twice either component-wave amplitude.",
+          "hi": "बँधी डोरी की nवीं विधा में n लूप और सिरों सहित n + 1 निस्पंद हैं। संयुक्त तरंग का अधिकतम स्थानीय आयाम किसी एक घटक तरंग का दोगुना हो सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many loops occur in the third harmonic?",
+          "hi": "तीसरे हार्मोनिक में कितने लूप होते हैं?"
+        },
+        "answer": {
+          "en": "3 loops.",
+          "hi": "3 लूप।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Air columns and boundary conditions",
+        "hi": "वायु स्तंभ और सीमा शर्तें"
+      },
+      "paragraphs": [
+        {
+          "en": "Standing sound waves also form in air columns. For an ideal pipe open at both ends, the ends are approximately displacement antinodes and pressure nodes. The allowed frequencies are νn = nv/(2L), so all integer harmonics occur. For a pipe closed at one end and open at the other, the closed end is a displacement node and pressure antinode; the open end is approximately the reverse. The allowed frequencies are (2n − 1)v/(4L), so only odd harmonics occur in the elementary model. End corrections slightly change the effective length of real pipes. A statement about a node must specify whether it means displacement or pressure, because their patterns are interchanged. The air-column relations follow from fitting the appropriate fractions of a wavelength between boundaries; they are not separate memorisation tricks. Musical instruments use these allowed vibration patterns while real tone also depends on excitation and losses.",
+          "hi": "वायु स्तंभ में भी अप्रगामी ध्वनि तरंगें बनती हैं। दोनों सिरों से खुले आदर्श पाइप के सिरों पर लगभग विस्थापन प्रस्पंद और दाब निस्पंद होते हैं। उसकी स्वीकृत आवृत्तियाँ νn = nv/(2L) हैं, इसलिए सभी पूर्णांक हार्मोनिक मिलते हैं। एक सिरे से बंद और दूसरे से खुले पाइप में बंद सिरा विस्थापन निस्पंद तथा दाब प्रस्पंद होता है। खुले सिरे पर लगभग उलटी स्थिति है। उसकी आवृत्तियाँ (2n − 1)v/(4L) होती हैं, इसलिए सरल मॉडल में केवल विषम हार्मोनिक आते हैं। वास्तविक पाइप की प्रभावी लंबाई सिरा संशोधन (End correction) से थोड़ी बदलती है। निस्पंद बोलते समय बताना चाहिए कि विस्थापन का निस्पंद है या दाब का, क्योंकि दोनों प्रतिरूप उलटे हैं। वायु स्तंभ के संबंध सही सीमा शर्तों के बीच तरंगदैर्ध्य के हिस्से बैठाने से निकलते हैं। ये अलग-अलग रटने की तरकीब नहीं हैं। वाद्य यंत्र इन स्वीकृत कंपन विधाओं का उपयोग करते हैं, जबकि वास्तविक स्वर उत्तेजन, हानि और अन्य प्रभावों से भी बदलता है। चित्र में डोरी का निस्पंद सीधे हर पाइप पर लागू न करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Closed-pipe fundamental has L = λ/4; open-pipe fundamental has L = λ/2. State whether both lengths are physical or effective before making a precise experimental comparison.",
+          "hi": "बंद पाइप की मूल विधा में L = λ/4; खुले पाइप में L = λ/2। सटीक प्रयोग तुलना से पहले बताएँ कि लंबाई भौतिक है या प्रभावी।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a one-end-closed ideal pipe support the second harmonic?",
+          "hi": "क्या एक सिरा बंद आदर्श पाइप दूसरा हार्मोनिक देता है?"
+        },
+        "answer": {
+          "en": "No. Its elementary allowed sequence contains odd harmonics only.",
+          "hi": "नहीं। उसके सरल स्वीकृत क्रम में केवल विषम हार्मोनिक हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Beats and revision strategy",
+        "hi": "विस्पंद और पुनरावृत्ति"
+      },
+      "paragraphs": [
+        {
+          "en": "Beats are periodic changes in loudness or resultant amplitude produced by superposing two waves of nearly equal frequencies. For equal component amplitudes, adding the two sine functions gives a rapidly oscillating factor multiplied by a slowly varying envelope. The number of loudness maxima per second is the beat frequency νbeat = |ν1 − ν2|. The sign is irrelevant because loudness depends on amplitude magnitude or intensity. If the frequencies are exactly equal and the phase difference remains fixed, there are no repeated beats; the resultant may be reinforced, reduced or cancelled depending on phase. Musicians use slow beats to judge whether two pitches are close to unison. In the scene ν1 = 10 Hz is fixed and ν2 changes from 10 to 14 Hz. These low demonstration frequencies visualise the mathematics and should not be mistaken for a realistic audible tuning-fork pair.",
+          "hi": "विस्पंद (Beats) लगभग समान आवृत्तियों की 2 तरंगों के अध्यारोपण से उत्पन्न परिणामी आयाम या प्रबलता का आवर्ती बदलना है। समान घटक आयाम वाली 2 साइन तरंगों को जोड़ने पर तेजी से दोलन करने वाला भाग तथा धीरे बदलता आवरण (Envelope) मिलता है। प्रति सेकंड प्रबलता के अधिकतम मानों की संख्या विस्पंद आवृत्ति νbeat = |ν1 − ν2| है। अंतर का चिह्न महत्त्वपूर्ण नहीं, क्योंकि प्रबलता आयाम के परिमाण या तीव्रता पर निर्भर है। दोनों आवृत्तियाँ ठीक समान और कलांतर स्थिर हों तो बार-बार विस्पंद नहीं बनते। उस स्थिति में कला के अनुसार प्रबलन, कमी या निरस्तीकरण हो सकता है। संगीतकार धीमे विस्पंद से देखते हैं कि 2 स्वर एकसमान आवृत्ति के कितने पास हैं। दृश्य में ν1 = 10 Hz स्थिर और ν2 को 10 से 14 Hz तक बदलते हैं। इतनी कम उदाहरण आवृत्तियाँ गणित दिखाने के लिए हैं। उन्हें वास्तविक सुनाई देने वाली स्वरित्र द्विशाख जोड़ी का पूरा मॉडल न समझें। पुनरावृत्ति में तरंग चाल, कण चाल और आवरण के बदलने की दर अलग-अलग रखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use the absolute frequency difference for beats. For 10 Hz and 12 Hz, two envelope loudness maxima occur each second; at equal frequencies the beat rate is zero.",
+          "hi": "विस्पंद के लिए आवृत्ति अंतर का परिमाण लें। 10 Hz तथा 12 Hz पर प्रति सेकंड 2 प्रबलता अधिकतम हैं; समान आवृत्तियों पर विस्पंद दर शून्य है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the beat frequency of 10 Hz and 13 Hz?",
+          "hi": "10 Hz तथा 13 Hz की विस्पंद आवृत्ति क्या है?"
+        },
+        "answer": {
+          "en": "3 Hz.",
+          "hi": "3 Hz।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "y = A sin(kx − ωt + φ); k = 2π/λ; ω = 2πν",
+      "meaning": {
+        "en": "Positive-x sinusoidal wave for positive k and ω.",
+        "hi": "धन k और ω के लिए धन-x साइन तरंग।"
+      },
+      "units": {
+        "en": "A,y,λ: m; k: rad/m; ω: rad/s",
+        "hi": "A,y,λ: m; k: rad/m; ω: rad/s"
+      }
+    },
+    {
+      "expression": "v = νλ = ω/k",
+      "meaning": {
+        "en": "Wave speed, distinct from instantaneous particle speed.",
+        "hi": "तरंग चाल, तात्कालिक कण चाल से अलग।"
+      },
+      "units": {
+        "en": "v: m/s; ν: Hz; λ: m",
+        "hi": "v: m/s; ν: Hz; λ: m"
+      }
+    },
+    {
+      "expression": "vstring = √(F/μ)",
+      "meaning": {
+        "en": "Small transverse disturbance on an ideal stretched string.",
+        "hi": "आदर्श तनी डोरी पर छोटा अनुप्रस्थ विक्षोभ।"
+      },
+      "units": {
+        "en": "F: N; μ: kg/m; v: m/s",
+        "hi": "F: N; μ: kg/m; v: m/s"
+      }
+    },
+    {
+      "expression": "νn = nv/(2L); λn = 2L/n",
+      "meaning": {
+        "en": "String fixed at both ends; n = 1,2,3…",
+        "hi": "दोनों सिरों से बँधी डोरी; n = 1,2,3…"
+      },
+      "units": {
+        "en": "νn: Hz; L,λn: m",
+        "hi": "νn: Hz; L,λn: m"
+      }
+    },
+    {
+      "expression": "νclosed,n = (2n − 1)v/(4L)",
+      "meaning": {
+        "en": "Ideal one-end-closed pipe; displacement node at closed end.",
+        "hi": "एक सिरा बंद आदर्श पाइप; बंद सिरे पर विस्थापन निस्पंद।"
+      },
+      "units": {
+        "en": "ν: Hz; v: m/s; L: m",
+        "hi": "ν: Hz; v: m/s; L: m"
+      }
+    },
+    {
+      "expression": "νbeat = |ν1 − ν2|",
+      "meaning": {
+        "en": "Loudness maxima per second for nearby frequencies.",
+        "hi": "निकट आवृत्तियों पर प्रति सेकंड प्रबलता अधिकतम।"
+      },
+      "units": {
+        "en": "Hz",
+        "hi": "Hz"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse wave speed with particle speed, pressure nodes with displacement nodes, or half the frequency difference with the beat rate.",
+    "hi": "तरंग चाल और कण चाल अलग हैं; दाब निस्पंद को विस्थापन निस्पंद न मानें; विस्पंद दर आवृत्ति अंतर का पूरा परिमाण है।"
+  },
+  "summary": [
+    {
+      "en": "A wave transports a disturbance while particles oscillate locally.",
+      "hi": "तरंग विक्षोभ ले जाती है, कण स्थानीय दोलन करते हैं।"
+    },
+    {
+      "en": "Wave speed equals frequency times wavelength.",
+      "hi": "तरंग चाल आवृत्ति गुणा तरंगदैर्ध्य है।"
+    },
+    {
+      "en": "Superposition adds signed displacements.",
+      "hi": "अध्यारोपण चिह्न सहित विस्थापन जोड़ता है।"
+    },
+    {
+      "en": "Boundary conditions determine standing-wave modes.",
+      "hi": "सीमा शर्तें अप्रगामी विधाएँ तय करती हैं।"
+    },
+    {
+      "en": "Beat rate is the absolute frequency difference.",
+      "hi": "विस्पंद दर आवृत्ति अंतर का परिमाण है।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A wave has speed 4 m/s and frequency 2 Hz. Find wavelength.",
+        "hi": "तरंग चाल 4 m/s और आवृत्ति 2 Hz है। तरंगदैर्ध्य निकालें।"
+      },
+      "given": {
+        "en": "v = 4 m/s, ν = 2 Hz",
+        "hi": "v = 4 m/s, ν = 2 Hz"
+      },
+      "find": {
+        "en": "λ",
+        "hi": "λ"
+      },
+      "formula": {
+        "en": "λ = v/ν",
+        "hi": "λ = v/ν"
+      },
+      "steps": [
+        {
+          "en": "Divide 4 by 2.",
+          "hi": "4 को 2 से भाग दें।"
+        },
+        {
+          "en": "Use metres for the spatial period.",
+          "hi": "स्थानिक आवर्त के लिए मीटर लें।"
+        }
+      ],
+      "answer": {
+        "en": "λ = 2 m",
+        "hi": "λ = 2 m"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find beat frequency for 10 Hz and 12 Hz.",
+        "hi": "10 Hz और 12 Hz की विस्पंद आवृत्ति निकालें।"
+      },
+      "given": {
+        "en": "ν1 = 10 Hz, ν2 = 12 Hz",
+        "hi": "ν1 = 10 Hz, ν2 = 12 Hz"
+      },
+      "find": {
+        "en": "νbeat",
+        "hi": "νbeat"
+      },
+      "formula": {
+        "en": "νbeat = |ν1 − ν2|",
+        "hi": "νbeat = |ν1 − ν2|"
+      },
+      "steps": [
+        {
+          "en": "Subtract the frequencies.",
+          "hi": "आवृत्तियाँ घटाएँ।"
+        },
+        {
+          "en": "Take the absolute value.",
+          "hi": "परिमाण लें।"
+        }
+      ],
+      "answer": {
+        "en": "νbeat = 2 Hz",
+        "hi": "νbeat = 2 Hz"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the third harmonic of a 2 m fixed string with speed 20 m/s.",
+        "hi": "2 m बँधी डोरी में चाल 20 m/s है। तीसरा हार्मोनिक निकालें।"
+      },
+      "given": {
+        "en": "L = 2 m, v = 20 m/s, n = 3",
+        "hi": "L = 2 m, v = 20 m/s, n = 3"
+      },
+      "find": {
+        "en": "ν3 and λ3",
+        "hi": "ν3 और λ3"
+      },
+      "formula": {
+        "en": "νn = nv/(2L); λn = 2L/n",
+        "hi": "νn = nv/(2L); λn = 2L/n"
+      },
+      "steps": [
+        {
+          "en": "ν3 = 3 × 20 / 4.",
+          "hi": "ν3 = 3 × 20 / 4।"
+        },
+        {
+          "en": "λ3 = 4/3.",
+          "hi": "λ3 = 4/3।"
+        }
+      ],
+      "answer": {
+        "en": "ν3 = 15 Hz; λ3 ≈ 1.33 m",
+        "hi": "ν3 = 15 Hz; λ3 ≈ 1.33 m"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A string has tension 80 N and linear density 0.02 kg/m. Find speed.",
+        "hi": "डोरी का तनाव 80 N और रैखिक घनत्व 0.02 kg/m है। चाल निकालें।"
+      },
+      "given": {
+        "en": "F = 80 N, μ = 0.02 kg/m",
+        "hi": "F = 80 N, μ = 0.02 kg/m"
+      },
+      "find": {
+        "en": "v",
+        "hi": "v"
+      },
+      "formula": {
+        "en": "v = √(F/μ)",
+        "hi": "v = √(F/μ)"
+      },
+      "steps": [
+        {
+          "en": "F/μ = 4000 m²/s².",
+          "hi": "F/μ = 4000 m²/s²।"
+        },
+        {
+          "en": "Take the square root.",
+          "hi": "वर्गमूल लें।"
+        }
+      ],
+      "answer": {
+        "en": "v ≈ 63.25 m/s",
+        "hi": "v ≈ 63.25 m/s"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Compare fundamentals of ideal open and one-end-closed 0.85 m pipes at sound speed 340 m/s.",
+        "hi": "340 m/s ध्वनि चाल पर 0.85 m खुले और एक सिरा बंद आदर्श पाइप की मूल आवृत्ति तुलना करें।"
+      },
+      "given": {
+        "en": "Same effective L = 0.85 m; no end correction",
+        "hi": "समान प्रभावी L = 0.85 m; सिरा संशोधन नहीं"
+      },
+      "find": {
+        "en": "Both fundamentals and ratio",
+        "hi": "दोनों मूल आवृत्तियाँ और अनुपात"
+      },
+      "formula": {
+        "en": "νopen = v/(2L); νclosed = v/(4L)",
+        "hi": "νopen = v/(2L); νclosed = v/(4L)"
+      },
+      "steps": [
+        {
+          "en": "Open: 340/(2 × 0.85) = 200.",
+          "hi": "खुला: 340/(2 × 0.85) = 200।"
+        },
+        {
+          "en": "Closed: 340/(4 × 0.85) = 100.",
+          "hi": "बंद: 340/(4 × 0.85) = 100।"
+        }
+      ],
+      "answer": {
+        "en": "Open 200 Hz; closed 100 Hz; ratio 2:1, dimensionless",
+        "hi": "खुला 200 Hz; बंद 100 Hz; अनुपात 2:1, इकाईरहित"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "A transverse wave has particle motion in which direction?",
+        "hi": "अनुप्रस्थ तरंग में कण गति किस दिशा में है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always towards the source",
+            "hi": "हमेशा स्रोत की ओर"
+          },
+          "reason": {
+            "en": "Particles oscillate about equilibrium.",
+            "hi": "कण साम्य के आसपास दोलन करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No particle motion",
+            "hi": "कण गति नहीं"
+          },
+          "reason": {
+            "en": "A mechanical wave involves particle displacement.",
+            "hi": "यांत्रिक तरंग में कण विस्थापन होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Perpendicular to propagation",
+            "hi": "प्रसार के लंबवत"
+          },
+          "reason": {
+            "en": "This defines a transverse wave.",
+            "hi": "यही अनुप्रस्थ तरंग की परिभाषा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Parallel to propagation",
+            "hi": "प्रसार के समानांतर"
+          },
+          "reason": {
+            "en": "This describes a longitudinal wave.",
+            "hi": "यह अनुदैर्ध्य तरंग बताता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which relation connects wave speed, frequency and wavelength?",
+        "hi": "तरंग चाल, आवृत्ति और तरंगदैर्ध्य का संबंध?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "v = ν/λ",
+            "hi": "v = ν/λ"
+          },
+          "reason": {
+            "en": "The dimensions are wrong for speed.",
+            "hi": "इसकी विमा चाल नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "v = λ/ν",
+            "hi": "v = λ/ν"
+          },
+          "reason": {
+            "en": "This gives length times time.",
+            "hi": "यह लंबाई गुणा समय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "v = ν + λ",
+            "hi": "v = ν + λ"
+          },
+          "reason": {
+            "en": "Different dimensions cannot be added.",
+            "hi": "अलग विमाएँ नहीं जोड़ी जातीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "v = νλ",
+            "hi": "v = νλ"
+          },
+          "reason": {
+            "en": "One wavelength travels in one period.",
+            "hi": "एक आवर्त में एक तरंगदैर्ध्य चलता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "At fixed wave speed, doubling frequency gives wavelength?",
+        "hi": "चाल स्थिर रखकर आवृत्ति दोगुनी करने पर तरंगदैर्ध्य?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          "reason": {
+            "en": "λ = v/ν.",
+            "hi": "λ = v/ν।"
+          }
+        },
+        {
+          "text": {
+            "en": "Double",
+            "hi": "दोगुना"
+          },
+          "reason": {
+            "en": "This reverses the inverse relation.",
+            "hi": "यह व्युत्क्रम संबंध उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Fixed speed requires wavelength change.",
+            "hi": "स्थिर चाल के लिए तरंगदैर्ध्य बदलना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Four times",
+            "hi": "4 गुना"
+          },
+          "reason": {
+            "en": "There is no square dependence here.",
+            "hi": "यहाँ वर्ग निर्भरता नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In y = A sin(kx − ωt), propagation is towards?",
+        "hi": "y = A sin(kx − ωt) में प्रसार दिशा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No propagation",
+            "hi": "प्रसार नहीं"
+          },
+          "reason": {
+            "en": "This is a travelling-wave equation.",
+            "hi": "यह प्रगामी तरंग समीकरण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Positive x",
+            "hi": "धन x"
+          },
+          "reason": {
+            "en": "Constant phase gives x increasing with t.",
+            "hi": "स्थिर कला पर t के साथ x बढ़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative x",
+            "hi": "ऋण x"
+          },
+          "reason": {
+            "en": "The plus sign kx + ωt gives negative x.",
+            "hi": "kx + ωt ऋण x देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only positive y",
+            "hi": "केवल धन y"
+          },
+          "reason": {
+            "en": "y is transverse displacement here.",
+            "hi": "यहाँ y अनुप्रस्थ विस्थापन है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "At an ideal fixed string end the displacement pulse reflects with?",
+        "hi": "आदर्श स्थिर डोरी सिरे पर विस्थापन स्पंद का परावर्तन?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Double speed necessarily",
+            "hi": "अनिवार्य दोगुनी चाल"
+          },
+          "reason": {
+            "en": "The medium sets speed.",
+            "hi": "माध्यम चाल तय करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No boundary condition",
+            "hi": "कोई सीमा शर्त नहीं"
+          },
+          "reason": {
+            "en": "The fixed-end condition is essential.",
+            "hi": "स्थिर सिरे की शर्त आवश्यक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Inversion",
+            "hi": "उलटना"
+          },
+          "reason": {
+            "en": "Zero displacement at the boundary requires opposite sign.",
+            "hi": "सीमा पर शून्य विस्थापन के लिए विपरीत चिह्न चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "No inversion",
+            "hi": "बिना उलटना"
+          },
+          "reason": {
+            "en": "This describes an ideal free end.",
+            "hi": "यह आदर्श मुक्त सिरे में है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Distance between adjacent nodes is?",
+        "hi": "पड़ोसी निस्पंदों की दूरी?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "λ/4",
+            "hi": "λ/4"
+          },
+          "reason": {
+            "en": "This is node to nearest antinode.",
+            "hi": "यह निस्पंद से निकटतम प्रस्पंद की दूरी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "λ",
+            "hi": "λ"
+          },
+          "reason": {
+            "en": "A full wavelength skips one neighbouring node.",
+            "hi": "पूरे तरंगदैर्ध्य में एक पड़ोसी निस्पंद छूटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2λ",
+            "hi": "2λ"
+          },
+          "reason": {
+            "en": "This spans several node intervals.",
+            "hi": "यह कई निस्पंद अंतराल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "λ/2",
+            "hi": "λ/2"
+          },
+          "reason": {
+            "en": "Nodes repeat every half wavelength.",
+            "hi": "निस्पंद आधे तरंगदैर्ध्य पर दोहराते हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "A fixed string third harmonic contains how many loops?",
+        "hi": "बँधी डोरी के तीसरे हार्मोनिक में कितने लूप?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "The nth harmonic has n loops.",
+            "hi": "nवें हार्मोनिक में n लूप हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "Two loops is second harmonic.",
+            "hi": "2 लूप दूसरा हार्मोनिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "There are four nodes, not four loops.",
+            "hi": "4 निस्पंद हैं, 4 लूप नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "One loop is fundamental.",
+            "hi": "1 लूप मूल विधा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which harmonic is absent in an ideal one-end-closed pipe?",
+        "hi": "एक सिरा बंद आदर्श पाइप में कौन-सा हार्मोनिक अनुपस्थित?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Fifth",
+            "hi": "पाँचवाँ"
+          },
+          "reason": {
+            "en": "Fifth is an allowed odd harmonic.",
+            "hi": "पाँचवाँ स्वीकृत विषम हार्मोनिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Second",
+            "hi": "दूसरा"
+          },
+          "reason": {
+            "en": "Only odd harmonics occur.",
+            "hi": "केवल विषम हार्मोनिक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "First",
+            "hi": "पहला"
+          },
+          "reason": {
+            "en": "The first is the fundamental.",
+            "hi": "पहला मूल विधा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Third",
+            "hi": "तीसरा"
+          },
+          "reason": {
+            "en": "Third is an allowed odd harmonic.",
+            "hi": "तीसरा स्वीकृत विषम हार्मोनिक है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Two sources have frequencies 10 Hz and 14 Hz. Beat rate is?",
+        "hi": "2 स्रोतों की आवृत्तियाँ 10 Hz और 14 Hz हैं। विस्पंद दर?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12 Hz",
+            "hi": "12 Hz"
+          },
+          "reason": {
+            "en": "This is the mean frequency.",
+            "hi": "यह औसत आवृत्ति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 Hz",
+            "hi": "2 Hz"
+          },
+          "reason": {
+            "en": "Half the difference is not the loudness beat rate.",
+            "hi": "आधे अंतर को प्रबलता की विस्पंद दर नहीं लेते।"
+          }
+        },
+        {
+          "text": {
+            "en": "4 Hz",
+            "hi": "4 Hz"
+          },
+          "reason": {
+            "en": "Take |14 − 10|.",
+            "hi": "|14 − 10| लें।"
+          }
+        },
+        {
+          "text": {
+            "en": "24 Hz",
+            "hi": "24 Hz"
+          },
+          "reason": {
+            "en": "This is the sum, not difference.",
+            "hi": "यह योग है, अंतर नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Increasing string tension fourfold at fixed μ gives wave speed?",
+        "hi": "μ स्थिर रखकर तनाव 4 गुना करने पर तरंग चाल?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Four times",
+            "hi": "4 गुनी"
+          },
+          "reason": {
+            "en": "Speed depends on square root, not tension linearly.",
+            "hi": "चाल वर्गमूल पर है, तनाव में रैखिक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Half",
+            "hi": "आधी"
+          },
+          "reason": {
+            "en": "Greater tension raises speed.",
+            "hi": "अधिक तनाव चाल बढ़ाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Tension enters the speed relation.",
+            "hi": "तनाव चाल संबंध में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Twice",
+            "hi": "दोगुनी"
+          },
+          "reason": {
+            "en": "v = √(F/μ).",
+            "hi": "v = √(F/μ)।"
+          }
+        }
+      ],
+      "correct": 3
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish transverse and longitudinal waves.",
+        "hi": "अनुप्रस्थ तथा अनुदैर्ध्य तरंग अलग करें।"
+      },
+      "answer": {
+        "en": "Particle oscillations are perpendicular to propagation in transverse waves and parallel in longitudinal waves.",
+        "hi": "अनुप्रस्थ में कण दोलन प्रसार के लंबवत; अनुदैर्ध्य में समानांतर हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is a pressure sine graph not a picture of molecular paths?",
+        "hi": "दाब का साइन आलेख अणुओं का पथ क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "It shows pressure values versus position or time; the air particles oscillate longitudinally.",
+        "hi": "यह स्थान या समय के साथ दाब मान दिखाता है; हवा के कण अनुदैर्ध्य दोलन करते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "State superposition principle.",
+        "hi": "अध्यारोपण सिद्धांत बताएँ।"
+      },
+      "answer": {
+        "en": "In a linear medium the resultant displacement is the algebraic sum of component displacements.",
+        "hi": "रैखिक माध्यम में परिणामी विस्थापन घटक विस्थापनों का बीजगणितीय योग है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish nodes and antinodes.",
+        "hi": "निस्पंद तथा प्रस्पंद अलग करें।"
+      },
+      "answer": {
+        "en": "Nodes remain at zero displacement; antinodes have maximum local oscillation amplitude.",
+        "hi": "निस्पंद का विस्थापन सदा शून्य; प्रस्पंद पर स्थानीय दोलन आयाम अधिकतम है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare an open pipe and one-end-closed pipe.",
+        "hi": "खुले और एक सिरा बंद पाइप की तुलना करें।"
+      },
+      "answer": {
+        "en": "The open ideal pipe supports all integer harmonics with fundamental v/(2L); the closed ideal pipe supports odd harmonics with fundamental v/(4L).",
+        "hi": "खुले आदर्श पाइप में सभी पूर्णांक हार्मोनिक और मूल v/(2L); बंद में विषम हार्मोनिक और मूल v/(4L) हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain beats and their use in tuning.",
+        "hi": "विस्पंद और स्वर मिलाने में उनका उपयोग समझाएँ।"
+      },
+      "answer": {
+        "en": "Nearly equal frequencies create periodic loudness variation at their absolute difference. Slower beats indicate closer frequencies.",
+        "hi": "निकट आवृत्तियाँ अपने अंतर के परिमाण से प्रबलता बदलती हैं। धीमे विस्पंद अधिक निकट आवृत्तियाँ बताते हैं।"
+      }
+    }
+  ],
+  "conceptMap": "स्थानीय कंपन → प्रसार → तरंगदैर्ध्य और आवृत्ति → तरंग समीकरण → चाल और माध्यम → अध्यारोपण → अप्रगामी विधाएँ → विस्पंद",
+  "conceptMapEn": "Local vibration → propagation → wavelength and frequency → wave equation → speed and medium → superposition → standing modes → beats",
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Physics Class 11 and UP Board 2026–27. Simulations illustrate ideal models; use the prescribed textbook and supervised laboratory work alongside.",
+    "hi": "NCERT कक्षा 11 भौतिकी तथा यूपी बोर्ड 2026–27 पर आधारित मौलिक अध्ययन व्याख्याएँ। अनुकरण आदर्श मॉडल समझाते हैं; निर्धारित पुस्तक तथा शिक्षक की देखरेख में प्रयोग भी करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 14",
+      "url": "https://ncert.nic.in/textbook/pdf/keph207.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ]
+}

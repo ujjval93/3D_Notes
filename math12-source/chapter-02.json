@@ -1,0 +1,888 @@
+{
+  "id": 2,
+  "title": {
+    "en": "Inverse Trigonometric Functions",
+    "hi": "प्रतिलोम त्रिकोणमितीय फलन"
+  },
+  "goal": {
+    "en": "Use principal branches, domains and identities without losing angle restrictions.",
+    "hi": "कोण की सीमा बनाए रखते हुए मुख्य शाखाएँ, प्रांत और सर्वसमिकाएँ प्रयोग करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Why restrict a trigonometric function?",
+        "hi": "त्रिकोणमितीय फलन पर प्रतिबंध क्यों?"
+      },
+      "body": {
+        "en": "Sine and cosine repeat values on R, so they have no inverse on all real inputs. Restricting to a suitable interval creates a bijection onto the original range. Inverse notation is not a reciprocal.",
+        "hi": "त्रिकोणमितीय फलन (Trigonometric function) आवर्ती होते हैं। जैसे sin0=sinπ=0 है। इसलिए पूरे R पर sine एकैकी नहीं और उसका प्रतिलोम फलन नहीं बनता। उपयुक्त अंतराल तक प्रांत सीमित करने पर प्रत्येक निर्गत का ठीक 1 पूर्वप्रतिबिंब चुना जाता है। इसी चयन से प्रतिलोम त्रिकोणमितीय फलन (Inverse trigonometric function) परिभाषित होते हैं। sin⁻¹x का अर्थ वह मुख्य कोण है जिसका sine x हो; इसका अर्थ 1/sinx नहीं है। प्रतिलोम में मूल फलन का परास नया प्रांत और प्रतिबंधित प्रांत नया परास बन जाता है। मुख्य मान (Principal value) के लिए अंतराल का चुनाव निश्चित है, मनमाना नहीं। sinθ=1/2 के अनेक हल हैं, पर sin⁻¹(1/2) केवल π/6 है। इस अध्याय में कोण रेडियन (Radian) में लिखते हैं, जब तक अंश का चिह्न स्पष्ट न हो। π रेडियन 180° है, इसलिए π/6 रेडियन 30° है। गणना में पहले जाँचें कि निवेश स्वीकार्य प्रांत में है, फिर उस मुख्य अंतराल में कोण खोजें। सामान्य समीकरण के सभी हल और प्रतिलोम का मुख्य मान अलग प्रश्न हैं। प्रत्येक मान सत्यापित करें।"
+      },
+      "formula": "sin⁻¹x ≠ 1/sinx; π rad = 180°",
+      "question": {
+        "en": "Why does sin:R→[−1,1] have no inverse function?",
+        "hi": "sin:R→[−1,1] का प्रतिलोम फलन क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "It is not one-one: sin0=sinπ.",
+        "hi": "यह एकैकी नहीं: sin0=sinπ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Inverse sine and inverse cosine",
+        "hi": "प्रतिलोम sine और cosine"
+      },
+      "body": {
+        "en": "Arcsine has domain [−1,1] and range [−π/2,π/2]; arccosine has domain [−1,1] and range [0,π]. Endpoints are included. Negative arguments require the correct quadrant.",
+        "hi": "प्रतिलोम sine (Inverse sine) के लिए sine को [−π/2,π/2] पर सीमित करते हैं। इस अंतराल में sine लगातार बढ़ता है और −1 से 1 तक सभी मान देता है। अतः sin⁻¹ का प्रांत [−1,1] तथा परास [−π/2,π/2] है। प्रतिलोम cosine (Inverse cosine) के लिए cosine को [0,π] पर सीमित करते हैं। वहाँ यह 1 से −1 तक घटता है। इसलिए cos⁻¹ का प्रांत [−1,1] तथा परास [0,π] है। sin⁻¹(−1/2)=−π/6 है, पर cos⁻¹(−1/2)=2π/3 है। cosine के मुख्य परास में ऋणात्मक कोण नहीं हैं। सिरे शामिल हैं: sin⁻¹1=π/2, sin⁻¹(−1)=−π/2, cos⁻¹1=0 और cos⁻¹(−1)=π। √3/2 जैसे सटीक मान में पहले परिचित कोण पहचानें और फिर चिह्न से सही मुख्य कोण चुनें। निवेश 2 हो तो न sin⁻¹2 और न cos⁻¹2 का वास्तविक मान है। आलेख में प्रांत क्षैतिज अक्ष और परास ऊर्ध्वाधर अक्ष पर पढ़ें; दोनों को बदल देना सामान्य भूल है।"
+      },
+      "formula": "arcsin:[−1,1]→[−π/2,π/2]; arccos:[−1,1]→[0,π]",
+      "question": {
+        "en": "Find cos⁻¹(−1/2).",
+        "hi": "cos⁻¹(−1/2) निकालें।"
+      },
+      "answer": {
+        "en": "2π/3.",
+        "hi": "2π/3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Inverse tangent and inverse cotangent",
+        "hi": "प्रतिलोम tangent और cotangent"
+      },
+      "body": {
+        "en": "Arctangent maps R to (−π/2,π/2). Arccotangent maps R to (0,π). These endpoint angles are excluded; the functions are defined for zero arguments.",
+        "hi": "प्रतिलोम tangent (Inverse tangent) का मुख्य परास (−π/2,π/2) है और प्रांत R है। tangent इस खुले अंतराल में सभी वास्तविक मान एक-एक बार लेता है। ±π/2 पर tangent परिभाषित नहीं, इसलिए सिरों को परास में शामिल नहीं करते। tan⁻¹0=0 और tan⁻¹1=π/4 है। x बहुत बड़ा होने पर tan⁻¹x, π/2 के पास जाता है पर किसी परिमित x के लिए बराबर नहीं होता। प्रतिलोम cotangent (Inverse cotangent) का प्रांत R तथा मुख्य परास (0,π) है। cot⁻¹0=π/2, cot⁻¹1=π/4 और cot⁻¹(−1)=3π/4 हैं। cot के लिए चुना अंतराल tan से अलग होने के कारण ऋणात्मक निवेश का मुख्य कोण अलग चतुर्थांश में आता है। केवल calculator का परिणाम लिखने से पहले उसकी कोण इकाई और शाखा जाँचें। विशेषतः अंश में मिला 45 तथा रेडियन में मिला π/4 एक ही कोण हैं, पर संख्यात्मक रूप अलग है। cos⁻¹0=π/2 को tan⁻¹0=0 से न मिलाएँ। परिचित मानों की छोटी तालिका बनाकर प्रत्येक को मूल त्रिकोणमितीय फलन में रखकर जाँचना उपयोगी अभ्यास है। सही मान वही होगा जो मूल संबंध तथा निर्धारित मुख्य परास दोनों को संतुष्ट करे। tan⁻¹(−x)=−tan⁻¹x है, लेकिन cot⁻¹(−x)=π−cot⁻¹x है। x=0 पर भी दूसरा संबंध सही है। 1/x के साथ tangent और cotangent जोड़ने वाली पहचान लिखते समय x का चिह्न अलग जाँचें; शून्य पर 1/x परिभाषित नहीं है।"
+      },
+      "formula": "arctan:R→(−π/2,π/2); arccot:R→(0,π)",
+      "question": {
+        "en": "Find cot⁻¹(−1).",
+        "hi": "cot⁻¹(−1) निकालें।"
+      },
+      "answer": {
+        "en": "3π/4.",
+        "hi": "3π/4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Inverse secant and inverse cosecant",
+        "hi": "प्रतिलोम secant और cosecant"
+      },
+      "body": {
+        "en": "Arcsecant has domain R\\(−1,1) and principal range [0,π]\\{π/2}. Arccosecant uses [−π/2,π/2]\\{0}. Zero and arguments of magnitude below one are excluded.",
+        "hi": "प्रतिलोम secant (Inverse secant) और cosecant (Inverse cosecant) में निवेश का परिमाण कम से कम 1 होना चाहिए। दोनों का प्रांत (−∞,−1]∪[1,∞) है। sec⁻¹ का मुख्य परास [0,π] में से π/2 हटाकर मिलता है, क्योंकि उस कोण पर cosine शून्य और secant अपरिभाषित है। csc⁻¹ का मुख्य परास [−π/2,π/2] में से 0 हटाकर मिलता है, क्योंकि sine शून्य पर cosecant अपरिभाषित है। उदाहरणतः sec⁻¹2=π/3 और sec⁻¹(−2)=2π/3 है। csc⁻¹2=π/6 तथा csc⁻¹(−2)=−π/6 है। संबंध sec⁻¹x=cos⁻¹(1/x) और csc⁻¹x=sin⁻¹(1/x) निर्धारित प्रांत में सही हैं। इन संबंधों में 1/x लेना निवेश का व्युत्क्रम है; प्रतिलोम फलन और reciprocal की संकल्पनाएँ फिर भी अलग रहती हैं। निवेश 1/2 स्वीकार्य नहीं, क्योंकि किसी वास्तविक कोण के secant या cosecant का परिमाण 1 से कम नहीं हो सकता। सिरे ±1 स्वीकार्य हैं; खुले तथा बंद कोष्ठक ध्यान से लिखें। आलेख में 2 अलग शाखाएँ प्रांत के बीच के रिक्त अंतराल को दिखाती हैं।"
+      },
+      "formula": "arcsec:R\\(−1,1)→[0,π]\\{π/2}; arccsc:R\\(−1,1)→[−π/2,π/2]\\{0}",
+      "question": {
+        "en": "Is sec⁻¹(1/2) real?",
+        "hi": "क्या sec⁻¹(1/2) वास्तविक है?"
+      },
+      "answer": {
+        "en": "No; |1/2|<1 is outside the domain.",
+        "hi": "नहीं; |1/2|<1 प्रांत के बाहर है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Graphs and reverse compositions",
+        "hi": "आलेख और उलटे संयोजन"
+      },
+      "body": {
+        "en": "Inverse graphs reflect restricted trigonometric graphs in y=x. The cancellation sin(arcsin x)=x uses x∈[−1,1], while arcsin(sin θ)=θ only within the principal interval.",
+        "hi": "प्रतिलोम का आलेख (Graph of inverse) मूल प्रतिबंधित आलेख का y=x रेखा के सापेक्ष प्रतिबिंब है। यदि मूल पर (a,b) है, तो प्रतिलोम पर (b,a) होगा। sin⁻¹ का आलेख बढ़ता और cos⁻¹ का आलेख घटता है। tan⁻¹ के लिए y=±π/2 क्षैतिज अनंतस्पर्शी हैं, पर वे स्वयं आलेख का भाग नहीं हैं। sin(sin⁻¹x)=x, x∈[−1,1] के लिए सही है। उलटी दिशा में sin⁻¹(sinθ)=θ तभी सीधे लिखें जब θ∈[−π/2,π/2] हो। θ=5π/6 पर sine=1/2 है, इसलिए प्रतिलोम का मान π/6 होगा, 5π/6 नहीं। इसी प्रकार cos⁻¹(cosθ)=θ के लिए θ∈[0,π] चाहिए। tan⁻¹(tanθ)=θ के लिए θ∈(−π/2,π/2) चाहिए। बाहर के कोण को मुख्य अंतराल में उसी त्रिकोणमितीय मान वाले कोण में बदलें। ‘दो चिह्न कट गए’ जैसा तर्क सीमा शर्त छोड़ देता है। चलायमान बिंदु का दृश्य यह अंतर समझा सकता है; सटीक उत्तर में आवर्तिता और मुख्य परास दोनों लिखें।"
+      },
+      "formula": "sin(arcsin x)=x; arcsin(sinθ)=θ only if θ∈[−π/2,π/2]",
+      "question": {
+        "en": "Evaluate sin⁻¹(sin(5π/6)).",
+        "hi": "sin⁻¹(sin(5π/6)) का मान निकालें।"
+      },
+      "answer": {
+        "en": "π/6, not 5π/6.",
+        "hi": "π/6; 5π/6 नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Complementary and negative arguments",
+        "hi": "पूरक और ऋणात्मक निवेश"
+      },
+      "body": {
+        "en": "Complementary inverse identities follow from principal ranges. In particular arcsin x+arccos x=π/2 for |x|≤1 and arctan x+arccot x=π/2 for all real x. These identities are part of UP Board coverage.",
+        "hi": "यूपी बोर्ड के निर्धारित पाठ्यक्रम में प्रतिलोम फलनों के गुणधर्म भी आते हैं। प्रमुख पहचान sin⁻¹x+cos⁻¹x=π/2 है, जहाँ −1≤x≤1 चाहिए। यदि α=sin⁻¹x, तो α मुख्य sine अंतराल में है। π/2−α, cosine के मुख्य अंतराल [0,π] में आता है और उसका cosine x होता है; यही पहचान का कारण है। इसी प्रकार tan⁻¹x+cot⁻¹x=π/2 हर वास्तविक x के लिए सही है। ऋणात्मक निवेश के लिए sin⁻¹(−x)=−sin⁻¹x और tan⁻¹(−x)=−tan⁻¹x हैं। दूसरी ओर cos⁻¹(−x)=π−cos⁻¹x तथा cot⁻¹(−x)=π−cot⁻¹x हैं। secant तथा cosecant के निर्धारित प्रांत में sec⁻¹x+csc⁻¹x=π/2 भी मिलता है। समान दिखती पहचानों को बिना परास जाँचे सब फलनों पर न लगाएँ। उदाहरणतः cos⁻¹(−1/2) को −π/3 लिखना गलत है, क्योंकि वह मुख्य परास के बाहर है। पहचान का उपयोग लंबी गणना को छोटा करता है, लेकिन अंतिम कोण की शाखा तथा निवेश का प्रांत लिखना फिर भी जरूरी है।"
+      },
+      "formula": "arcsin x+arccos x=π/2; arctan x+arccot x=π/2",
+      "question": {
+        "en": "Find sin⁻¹(3/5)+cos⁻¹(3/5).",
+        "hi": "sin⁻¹(3/5)+cos⁻¹(3/5) निकालें।"
+      },
+      "answer": {
+        "en": "π/2.",
+        "hi": "π/2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Adding inverse tangent values",
+        "hi": "प्रतिलोम tangent मानों का योग"
+      },
+      "body": {
+        "en": "Use the tangent addition formula, then select the angle with the correct quadrant. The bare formula arctan x+arctan y=arctan((x+y)/(1−xy)) needs a branch condition.",
+        "hi": "दो प्रतिलोम tangent का योग निकालते समय α=tan⁻¹x और β=tan⁻¹y मानें। तब tan(α+β)=(x+y)/(1−xy), यदि xy≠1 हो। लेकिन tan का मान अकेले कोण की शाखा नहीं बताता, क्योंकि tangent का आवर्त π है। यदि xy<1, तो α+β मुख्य अंतराल में रहता है और tan⁻¹((x+y)/(1−xy)) सीधे सही है। यदि x,y धनात्मक तथा xy>1 हों, तो योग दूसरे चतुर्थांश में है; मुख्य arctangent के परिणाम में π जोड़ना पड़ता है। x,y ऋणात्मक तथा xy>1 हों तो π घटता है। xy=1 पर सूत्र का हर शून्य है; धनात्मक निवेशों का योग π/2 और ऋणात्मक का −π/2 है। उदाहरणतः tan⁻¹2+tan⁻¹3 में भागफल −1 है, पर योग धनात्मक और π/2 से बड़ा है; इसलिए उत्तर π−π/4=3π/4 है। संबंध साबित करते समय दोनों पक्षों का tangent बराबर दिखाना पर्याप्त नहीं, संभावित कोणों का अंतराल भी तय करें। किसी चित्र या दशमलव अनुमान से शाखा पहचानें, फिर सटीक रेडियन रूप में उत्तर लिखें।"
+      },
+      "formula": "tan(α+β)=(tanα+tanβ)/(1−tanαtanβ)",
+      "question": {
+        "en": "Find tan⁻¹1+tan⁻¹1.",
+        "hi": "tan⁻¹1+tan⁻¹1 निकालें।"
+      },
+      "answer": {
+        "en": "π/2; handle the zero denominator separately.",
+        "hi": "π/2; शून्य हर वाला मामला अलग लें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Triangle methods and domain checks",
+        "hi": "त्रिभुज विधि और प्रांत की जाँच"
+      },
+      "body": {
+        "en": "Let an inverse value be an angle in its principal range, then use a right triangle or an identity to evaluate the requested function. Signs come from the principal quadrant, not from a memorised positive square root.",
+        "hi": "संयुक्त व्यंजक हल करने की त्रिभुज विधि (Triangle method) में पहले प्रतिलोम को कोई कोण मानते हैं। यदि θ=sin⁻¹(3/5), तो θ प्रथम चतुर्थांश में है। समकोण त्रिभुज में लंब 3 और कर्ण 5 लें; आधार √(25−9)=4 होगा। इसलिए cosθ=4/5 तथा tanθ=3/4। यदि θ=sin⁻¹(−3/5), तो मुख्य कोण ऋणात्मक है; cosine फिर भी 4/5, पर tangent −3/4 होगा। इसी से cos(sin⁻¹x)=√(1−x²), −1≤x≤1 मिलता है, क्योंकि मुख्य sine अंतराल में cosine गैरऋणात्मक है। sin(cos⁻¹x)=√(1−x²) भी सही है क्योंकि मुख्य cosine अंतराल में sine गैरऋणात्मक है। √(x²)=|x| होता है, हमेशा x नहीं। प्रश्न में 2x जैसा निवेश हो तो |2x|≤1 से −1/2≤x≤1/2 तय करें। x² जैसे निवेश में नीचे की सीमा पहले से गैरऋणात्मक होती है, पर ऊपर की सीमा फिर भी चाहिए। प्रत्येक कदम में चिह्न और स्वीकार्य सीमा साथ रखने से सूत्र अधिक सुरक्षित और अर्थपूर्ण बनते हैं।"
+      },
+      "formula": "cos(arcsin x)=√(1−x²), |x|≤1; √(x²)=|x|",
+      "question": {
+        "en": "Find cos(sin⁻¹(−3/5)).",
+        "hi": "cos(sin⁻¹(−3/5)) निकालें।"
+      },
+      "answer": {
+        "en": "4/5.",
+        "hi": "4/5।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Evaluate sin⁻¹(−√3/2).",
+        "hi": "sin⁻¹(−√3/2) का मान निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given sine value −√3/2; required angle lies in [−π/2,π/2].",
+          "hi": "दिया sine मान −√3/2; कोण [−π/2,π/2] में चाहिए।"
+        },
+        {
+          "en": "sin(−π/3)=−√3/2 and −π/3 is in the principal interval.",
+          "hi": "sin(−π/3)=−√3/2 तथा −π/3 मुख्य अंतराल में है।"
+        },
+        {
+          "en": "Check: the selected angle is negative and has magnitude below π/2, as required.",
+          "hi": "जाँच: चुना कोण ऋणात्मक है और उसका परिमाण π/2 से छोटा है, जैसा आवश्यक है।"
+        }
+      ],
+      "answer": {
+        "en": "−π/3 rad.",
+        "hi": "−π/3 rad।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Evaluate cos⁻¹(cos(5π/3)).",
+        "hi": "cos⁻¹(cos(5π/3)) निकालें।"
+      },
+      "steps": [
+        {
+          "en": "cos(5π/3)=1/2. The inverse cosine range is [0,π].",
+          "hi": "cos(5π/3)=1/2। प्रतिलोम cosine का परास [0,π] है।"
+        },
+        {
+          "en": "The angle in that interval with cosine 1/2 is π/3.",
+          "hi": "उस अंतराल में cosine 1/2 वाला कोण π/3 है।"
+        },
+        {
+          "en": "Check: cos(π/3)=1/2, so both the defining value and principal range agree.",
+          "hi": "जाँच: cos(π/3)=1/2, इसलिए मूल मान तथा मुख्य परास दोनों सही हैं।"
+        }
+      ],
+      "answer": {
+        "en": "π/3 rad.",
+        "hi": "π/3 rad।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the real domain of sin⁻¹(2x−1).",
+        "hi": "sin⁻¹(2x−1) का वास्तविक प्रांत निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given inverse sine; its argument must satisfy −1≤2x−1≤1.",
+          "hi": "प्रतिलोम sine के निवेश के लिए −1≤2x−1≤1 चाहिए।"
+        },
+        {
+          "en": "Add 1 throughout: 0≤2x≤2.",
+          "hi": "सभी भागों में 1 जोड़ें: 0≤2x≤2।"
+        },
+        {
+          "en": "Divide by positive 2: 0≤x≤1.",
+          "hi": "धनात्मक 2 से भाग दें: 0≤x≤1।"
+        }
+      ],
+      "answer": {
+        "en": "[0,1].",
+        "hi": "[0,1]।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Evaluate tan(cos⁻¹(−3/5)).",
+        "hi": "tan(cos⁻¹(−3/5)) निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Let θ=cos⁻¹(−3/5). Then θ∈(π/2,π).",
+          "hi": "θ=cos⁻¹(−3/5) लें; θ∈(π/2,π)।"
+        },
+        {
+          "en": "sinθ=+√(1−9/25)=4/5 since sine is positive there.",
+          "hi": "उस चतुर्थांश में sine धनात्मक है; sinθ=+√(1−9/25)=4/5।"
+        },
+        {
+          "en": "tanθ=sinθ/cosθ=(4/5)/(−3/5).",
+          "hi": "tanθ=sinθ/cosθ=(4/5)/(−3/5)।"
+        }
+      ],
+      "answer": {
+        "en": "−4/3.",
+        "hi": "−4/3।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Express tan⁻¹2+tan⁻¹3 as one principal arctangent with a correction.",
+        "hi": "tan⁻¹2+tan⁻¹3 को 1 मुख्य arctangent और आवश्यक सुधार में लिखें।"
+      },
+      "steps": [
+        {
+          "en": "Let α=tan⁻¹2, β=tan⁻¹3. Both are in (π/4,π/2), so their sum lies in (π/2,π).",
+          "hi": "α=tan⁻¹2, β=tan⁻¹3 लें। दोनों (π/4,π/2) में हैं; योग (π/2,π) में है।"
+        },
+        {
+          "en": "tan(α+β)=(2+3)/(1−6)=−1.",
+          "hi": "tan(α+β)=(2+3)/(1−6)=−1।"
+        },
+        {
+          "en": "The unique angle in (π/2,π) with tangent −1 is 3π/4.",
+          "hi": "(π/2,π) में tangent −1 वाला एकमात्र कोण 3π/4 है।"
+        }
+      ],
+      "answer": {
+        "en": "π+tan⁻¹(−1)=3π/4 rad.",
+        "hi": "π+tan⁻¹(−1)=3π/4 rad।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Principal range of sin⁻¹ is:",
+        "hi": "sin⁻¹ का मुख्य परास है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "[−π/2,π/2]",
+            "hi": "[−π/2,π/2]"
+          },
+          "reason": {
+            "en": "Sine is bijective on this closed interval.",
+            "hi": "इस बंद अंतराल पर sine द्विएकी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "[0,π]",
+            "hi": "[0,π]"
+          },
+          "reason": {
+            "en": "This is the inverse cosine range.",
+            "hi": "यह प्रतिलोम cosine का परास है।"
+          }
+        },
+        {
+          "text": {
+            "en": "R",
+            "hi": "R"
+          },
+          "reason": {
+            "en": "The output angles are restricted.",
+            "hi": "निर्गत कोण सीमित हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "(−π/2,π/2)",
+            "hi": "(−π/2,π/2)"
+          },
+          "reason": {
+            "en": "The endpoint sine values ±1 are attained.",
+            "hi": "सिरों के sine मान ±1 मिलते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "cos⁻¹(−1/2) equals:",
+        "hi": "cos⁻¹(−1/2) है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2π/3",
+            "hi": "2π/3"
+          },
+          "reason": {
+            "en": "Its cosine is −1/2 and it lies in [0,π].",
+            "hi": "cosine −1/2 है और कोण [0,π] में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−π/3",
+            "hi": "−π/3"
+          },
+          "reason": {
+            "en": "Cosine is +1/2, and this angle is outside the range.",
+            "hi": "cosine +1/2 है तथा कोण परास से बाहर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4π/3",
+            "hi": "4π/3"
+          },
+          "reason": {
+            "en": "It has the correct cosine but is outside [0,π].",
+            "hi": "cosine सही है, पर [0,π] के बाहर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "π/3",
+            "hi": "π/3"
+          },
+          "reason": {
+            "en": "Its cosine is positive 1/2.",
+            "hi": "इसका cosine धनात्मक 1/2 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Domain of tan⁻¹ is:",
+        "hi": "tan⁻¹ का प्रांत है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "R",
+            "hi": "R"
+          },
+          "reason": {
+            "en": "Every real tangent value occurs on the principal branch.",
+            "hi": "मुख्य शाखा पर हर वास्तविक tangent मान मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "[−1,1]",
+            "hi": "[−1,1]"
+          },
+          "reason": {
+            "en": "This restriction belongs to inverse sine/cosine.",
+            "hi": "यह प्रतिबंध प्रतिलोम sine/cosine में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(0,π)",
+            "hi": "(0,π)"
+          },
+          "reason": {
+            "en": "This is an angle interval, not the domain.",
+            "hi": "यह कोण अंतराल है, प्रांत नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "R\\{0}",
+            "hi": "R\\{0}"
+          },
+          "reason": {
+            "en": "Zero is allowed: tan⁻¹0=0.",
+            "hi": "0 स्वीकार्य है: tan⁻¹0=0।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "cot⁻¹(−1) is:",
+        "hi": "cot⁻¹(−1) है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3π/4",
+            "hi": "3π/4"
+          },
+          "reason": {
+            "en": "It lies in (0,π) with cotangent −1.",
+            "hi": "यह (0,π) में है और cotangent −1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−π/4",
+            "hi": "−π/4"
+          },
+          "reason": {
+            "en": "Outside the chosen cotangent inverse range.",
+            "hi": "चुने मुख्य cotangent परास के बाहर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "π/4",
+            "hi": "π/4"
+          },
+          "reason": {
+            "en": "Cotangent is +1.",
+            "hi": "cotangent +1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "π",
+            "hi": "π"
+          },
+          "reason": {
+            "en": "Cotangent is undefined there.",
+            "hi": "वहाँ cotangent अपरिभाषित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Domain of sec⁻¹ is:",
+        "hi": "sec⁻¹ का प्रांत है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(−∞,−1]∪[1,∞)",
+            "hi": "(−∞,−1]∪[1,∞)"
+          },
+          "reason": {
+            "en": "Secant has magnitude at least 1.",
+            "hi": "secant का परिमाण कम से कम 1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "[−1,1]",
+            "hi": "[−1,1]"
+          },
+          "reason": {
+            "en": "This is cosine range, not secant range.",
+            "hi": "यह cosine का परास है, secant का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "R",
+            "hi": "R"
+          },
+          "reason": {
+            "en": "Values of magnitude below 1 are impossible.",
+            "hi": "1 से छोटे परिमाण के मान असंभव हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "(−1,1)",
+            "hi": "(−1,1)"
+          },
+          "reason": {
+            "en": "Every point in this interval is excluded.",
+            "hi": "यह पूरा अंतराल बाहर है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "sin⁻¹(sin(5π/6)) equals:",
+        "hi": "sin⁻¹(sin(5π/6)) है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "π/6",
+            "hi": "π/6"
+          },
+          "reason": {
+            "en": "Sine is 1/2 and the principal angle is π/6.",
+            "hi": "sine 1/2 तथा मुख्य कोण π/6 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5π/6",
+            "hi": "5π/6"
+          },
+          "reason": {
+            "en": "This angle is outside [−π/2,π/2].",
+            "hi": "यह [−π/2,π/2] के बाहर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−π/6",
+            "hi": "−π/6"
+          },
+          "reason": {
+            "en": "Its sine is negative.",
+            "hi": "इसका sine ऋणात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "π/3",
+            "hi": "π/3"
+          },
+          "reason": {
+            "en": "Its sine is √3/2.",
+            "hi": "इसका sine √3/2 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For |x|≤1, arcsin x+arccos x equals:",
+        "hi": "|x|≤1 पर arcsin x+arccos x है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "π/2",
+            "hi": "π/2"
+          },
+          "reason": {
+            "en": "The principal angles are complementary.",
+            "hi": "मुख्य कोण पूरक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "At x=0 the sum is already π/2.",
+            "hi": "x=0 पर भी योग π/2 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "π",
+            "hi": "π"
+          },
+          "reason": {
+            "en": "The sum is half this value.",
+            "hi": "योग इसका आधा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x",
+            "hi": "x"
+          },
+          "reason": {
+            "en": "An angle sum is fixed here, not equal to its input.",
+            "hi": "यहाँ कोण योग नियत है, निवेश के बराबर नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "tan⁻¹2+tan⁻¹3 equals:",
+        "hi": "tan⁻¹2+tan⁻¹3 है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3π/4",
+            "hi": "3π/4"
+          },
+          "reason": {
+            "en": "Tangent is −1 and the sum is in quadrant 2.",
+            "hi": "tangent −1 और योग दूसरे चतुर्थांश में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−π/4",
+            "hi": "−π/4"
+          },
+          "reason": {
+            "en": "This ignores the π branch correction.",
+            "hi": "इसमें π वाला शाखा सुधार छूट गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "π/4",
+            "hi": "π/4"
+          },
+          "reason": {
+            "en": "Its tangent is +1.",
+            "hi": "इसका tangent +1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "π/2",
+            "hi": "π/2"
+          },
+          "reason": {
+            "en": "Here tangent is undefined, but the sum has finite tangent −1.",
+            "hi": "इस कोण पर tangent अपरिभाषित है; योग का tangent −1 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "cos(arcsin(−3/5)) equals:",
+        "hi": "cos(arcsin(−3/5)) है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4/5",
+            "hi": "4/5"
+          },
+          "reason": {
+            "en": "Cosine is nonnegative on the arcsine range.",
+            "hi": "arcsine के परास में cosine गैरऋणात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−4/5",
+            "hi": "−4/5"
+          },
+          "reason": {
+            "en": "The principal quadrant gives positive cosine.",
+            "hi": "मुख्य चतुर्थांश cosine धनात्मक देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3/5",
+            "hi": "3/5"
+          },
+          "reason": {
+            "en": "This confuses sine magnitude with cosine.",
+            "hi": "sine का परिमाण cosine समझ लिया।"
+          }
+        },
+        {
+          "text": {
+            "en": "−3/5",
+            "hi": "−3/5"
+          },
+          "reason": {
+            "en": "This is the given sine, not the cosine.",
+            "hi": "यह दिया sine है, cosine नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The notation sin⁻¹x denotes:",
+        "hi": "sin⁻¹x का अर्थ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Principal angle whose sine is x",
+            "hi": "वह मुख्य कोण जिसका sine x है"
+          },
+          "reason": {
+            "en": "The inverse returns an angle.",
+            "hi": "प्रतिलोम कोण देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/sinx",
+            "hi": "1/sinx"
+          },
+          "reason": {
+            "en": "This is cosecant of x, not inverse sine.",
+            "hi": "यह x का cosecant है, प्रतिलोम sine नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−sinx",
+            "hi": "−sinx"
+          },
+          "reason": {
+            "en": "Negative sign is not inverse-function notation.",
+            "hi": "ऋण चिह्न प्रतिलोम फलन का संकेत नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every solution of sinθ=x at once",
+            "hi": "sinθ=x के सभी हल एक साथ"
+          },
+          "reason": {
+            "en": "An inverse function selects one principal value.",
+            "hi": "प्रतिलोम फलन 1 मुख्य मान चुनता है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "List domains and principal ranges of inverse sine and cosine.",
+        "hi": "प्रतिलोम sine और cosine के प्रांत व मुख्य परास लिखें।"
+      },
+      "answer": {
+        "en": "Both domains are [−1,1]. Ranges: arcsin [−π/2,π/2], arccos [0,π].",
+        "hi": "दोनों का प्रांत [−1,1]। परास: arcsin [−π/2,π/2], arccos [0,π]।"
+      }
+    },
+    {
+      "question": {
+        "en": "Evaluate tan⁻¹(tan(3π/4)).",
+        "hi": "tan⁻¹(tan(3π/4)) निकालें।"
+      },
+      "answer": {
+        "en": "tan(3π/4)=−1; principal arctangent is −π/4.",
+        "hi": "tan(3π/4)=−1; मुख्य arctangent −π/4 है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Prove arcsin x+arccos x=π/2 for |x|≤1.",
+        "hi": "|x|≤1 पर arcsin x+arccos x=π/2 सिद्ध करें।"
+      },
+      "answer": {
+        "en": "Put α=arcsin x. Then π/2−α∈[0,π] and cos(π/2−α)=x, so arccos x=π/2−α.",
+        "hi": "α=arcsin x लें। π/2−α∈[0,π] तथा cos(π/2−α)=x; अतः arccos x=π/2−α।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find domain of arccos(3x).",
+        "hi": "arccos(3x) का प्रांत निकालें।"
+      },
+      "answer": {
+        "en": "−1≤3x≤1 gives [−1/3,1/3].",
+        "hi": "−1≤3x≤1 से [−1/3,1/3]।"
+      }
+    },
+    {
+      "question": {
+        "en": "Evaluate sin(arctan(4/3)).",
+        "hi": "sin(arctan(4/3)) निकालें।"
+      },
+      "answer": {
+        "en": "The principal angle is acute. A 3–4–5 triangle gives sine 4/5.",
+        "hi": "मुख्य कोण न्यून है। 3–4–5 त्रिभुज से sine 4/5।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can tan⁻¹a+tan⁻¹b require a π correction?",
+        "hi": "tan⁻¹a+tan⁻¹b में π का सुधार क्यों लग सकता है?"
+      },
+      "answer": {
+        "en": "Tangent repeats after π; its addition formula fixes tangent, not the principal interval. Determine the sum quadrant before choosing the inverse value.",
+        "hi": "tangent का आवर्त π है; योग सूत्र tangent तय करता है, मुख्य अंतराल नहीं। प्रतिलोम मान चुनने से पहले योग का चतुर्थांश तय करें।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "An inverse is not a reciprocal. Do not cancel inverse signs outside principal ranges or omit branch corrections in tangent sums.",
+    "hi": "प्रतिलोम reciprocal नहीं है। मुख्य परास के बाहर चिह्न न काटें; tangent योग में शाखा सुधार न छोड़ें।"
+  },
+  "revision": [
+    {
+      "en": "Inverse values are angles in fixed principal intervals.",
+      "hi": "प्रतिलोम मान निश्चित मुख्य अंतराल के कोण हैं।"
+    },
+    {
+      "en": "arcsin and arccos inputs satisfy |x|≤1.",
+      "hi": "arcsin और arccos में |x|≤1 है।"
+    },
+    {
+      "en": "arctan and arccot accept all real inputs.",
+      "hi": "arctan और arccot हर वास्तविक निवेश लेते हैं।"
+    },
+    {
+      "en": "Check the quadrant before taking a square-root sign.",
+      "hi": "वर्गमूल का चिह्न लेने से पहले चतुर्थांश जाँचें।"
+    },
+    {
+      "en": "Identities need domain and branch conditions.",
+      "hi": "सर्वसमिका के साथ प्रांत और शाखा की शर्तें जरूरी हैं।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Periodic functions → domain restriction → principal inverse → graph reflection → identities → branch-safe evaluation.",
+    "hi": "आवर्ती फलन → प्रांत प्रतिबंध → मुख्य प्रतिलोम → आलेख प्रतिबिंब → सर्वसमिकाएँ → सही शाखा में मान।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics XII, Chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh102.pdf"
+    },
+    {
+      "title": "UPMSP Mathematics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    }
+  ],
+  "engine": "twelve-math",
+  "scenes": []
+}

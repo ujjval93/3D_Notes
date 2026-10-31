@@ -1,0 +1,1445 @@
+{
+  "number": 11,
+  "id": "physics11-11",
+  "title": {
+    "en": "Thermodynamics",
+    "hi": "ऊष्मागतिकी"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-11-1",
+      "title": {
+        "en": "Isobaric work",
+        "hi": "समदाबी कार्य"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 30
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Final volume",
+            "hi": "अंतिम आयतन"
+          },
+          "min": 1,
+          "max": 5,
+          "step": 0.5,
+          "initial": 3,
+          "unit": "L"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Track heat, work and internal energy during isobaric expansion.",
+        "hi": "समदाबी प्रसार में ऊष्मा, कार्य और आंतरिक ऊर्जा देखें।"
+      },
+      "observe": {
+        "en": "p=10⁵ Pa, V₁=1 L; ideal monatomic gas, variable final volume.",
+        "hi": "p=10⁵ Pa, V₁=1 L; एकपरमाणुक आदर्श गैस, अंतिम आयतन बदलें।"
+      },
+      "modelNote": {
+        "en": "Quasistatic constant-pressure expansion; only volume work; monatomic ideal-gas heat capacity.",
+        "hi": "लगभग स्थैतिक नियत दाब प्रसार; केवल आयतन कार्य; एकपरमाणुक आदर्श गैस धारिता।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "W=pΔV, ΔU=3pΔV/2 and Q=ΔU+W in this model.",
+          "hi": "इस मॉडल में W=pΔV, ΔU=3pΔV/2 और Q=ΔU+W है।"
+        }
+      },
+      "realLife": {
+        "en": "A movable piston can expand while receiving heat.",
+        "hi": "गतिशील पिस्टन ऊष्मा लेते हुए फैल सकता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At V₂=V₁, volume work is:",
+          "hi": "V₂=V₁ पर आयतन कार्य है:"
+        },
+        "options": [
+          {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          {
+            "en": "Always 1000 J",
+            "hi": "हमेशा 1000 J"
+          },
+          {
+            "en": "Infinite",
+            "hi": "अनंत"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "W=pΔV, ΔU=3pΔV/2 and Q=ΔU+W in this model.",
+          "hi": "इस मॉडल में W=pΔV, ΔU=3pΔV/2 और Q=ΔU+W है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-11-1-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-11-1-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 5
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-11-2",
+      "title": {
+        "en": "Isothermal expansion",
+        "hi": "समतापी प्रसार"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 31
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Volume ratio",
+            "hi": "आयतन अनुपात"
+          },
+          "min": 1,
+          "max": 4,
+          "step": 0.5,
+          "initial": 2,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Compare reversible isothermal work with volume ratio.",
+        "hi": "उत्क्रमणीय समतापी कार्य को आयतन अनुपात से जोड़ें।"
+      },
+      "observe": {
+        "en": "n=1 mol and T=300 K remain fixed.",
+        "hi": "n=1 mol तथा T=300 K नियत हैं।"
+      },
+      "modelNote": {
+        "en": "Reversible isothermal ideal gas; no temperature change; logarithmic work.",
+        "hi": "उत्क्रमणीय समतापी आदर्श गैस; ताप परिवर्तन नहीं; कार्य लघुगणकीय है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "W=nRT ln(V₂/V₁) and ΔU=0, so Q=W.",
+          "hi": "W=nRT ln(V₂/V₁) और ΔU=0, इसलिए Q=W।"
+        }
+      },
+      "realLife": {
+        "en": "Slow gas expansion in contact with a large heat reservoir approximates this path.",
+        "hi": "बड़े ताप भंडार के संपर्क में धीमा गैस प्रसार इस मार्ग के लगभग हो सकता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Ideal-gas internal-energy change here is:",
+          "hi": "यहाँ आदर्श गैस का आंतरिक ऊर्जा परिवर्तन:"
+        },
+        "options": [
+          {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          {
+            "en": "Equal to pV always",
+            "hi": "हमेशा pV"
+          },
+          {
+            "en": "Negative infinity",
+            "hi": "ऋण अनंत"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "W=nRT ln(V₂/V₁) and ΔU=0, so Q=W.",
+          "hi": "W=nRT ln(V₂/V₁) और ΔU=0, इसलिए Q=W।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-11-2-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-11-2-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2.5
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 2.5
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-11-3",
+      "title": {
+        "en": "Heat engine limit",
+        "hi": "ऊष्मा इंजन की सीमा"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 32
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Cold reservoir temperature",
+            "hi": "ठंडे भंडार का ताप"
+          },
+          "min": 200,
+          "max": 500,
+          "step": 25,
+          "initial": 300,
+          "unit": "K"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "See how the cold reservoir limits efficiency.",
+        "hi": "ठंडा भंडार दक्षता की सीमा कैसे देता है, देखें।"
+      },
+      "observe": {
+        "en": "Hot reservoir stays at 600 K; change cold-reservoir temperature.",
+        "hi": "गर्म भंडार 600 K पर नियत है; ठंडे भंडार का ताप बदलें।"
+      },
+      "modelNote": {
+        "en": "Carnot reversible upper bound, not the measured efficiency of a real engine.",
+        "hi": "कार्नो उत्क्रमणीय ऊपरी सीमा, वास्तविक इंजन की मापी दक्षता नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "ηC=1−Tc/Th, so a warmer cold reservoir lowers the maximum efficiency.",
+          "hi": "ηC=1−Tc/Th, इसलिए ठंडे भंडार का ताप बढ़ने से अधिकतम दक्षता घटती है।"
+        }
+      },
+      "realLife": {
+        "en": "Real heat engines must reject heat and operate below the ideal bound.",
+        "hi": "वास्तविक ऊष्मा इंजन ऊष्मा छोड़ते हैं और आदर्श सीमा से नीचे रहते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "For 600 K and 300 K reservoirs, Carnot efficiency is:",
+          "hi": "600 K और 300 K भंडारों में कार्नो दक्षता:"
+        },
+        "options": [
+          {
+            "en": "50%",
+            "hi": "50%"
+          },
+          {
+            "en": "100%",
+            "hi": "100%"
+          },
+          {
+            "en": "200%",
+            "hi": "200%"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "ηC=1−Tc/Th, so a warmer cold reservoir lowers the maximum efficiency.",
+          "hi": "ηC=1−Tc/Th, इसलिए ठंडे भंडार का ताप बढ़ने से अधिकतम दक्षता घटती है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-11-3-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 200
+          }
+        },
+        {
+          "id": "phy11-11-3-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 500
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 350.0
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 350.0
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    }
+  ],
+  "editionBasis": {
+    "en": "Original Class 11 Physics study companion aligned to NCERT and UP Board 2026–27. Models explain idealised relationships, not measured laboratory data.",
+    "hi": "NCERT और यूपी बोर्ड 2026–27 पर आधारित कक्षा 11 भौतिकी की मौलिक अध्ययन सामग्री। मॉडल आदर्श संबंध समझाते हैं, प्रयोगशाला के मापे आँकड़े नहीं हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/keph204.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ],
+  "goal": {
+    "en": "Use state variables and the first and second laws to compare thermodynamic processes and heat-engine limits.",
+    "hi": "अवस्था राशियों और प्रथम तथा द्वितीय नियम से ऊष्मागतिक प्रक्रमों और इंजन की सीमाओं की तुलना करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Systems, surroundings and equilibrium",
+        "hi": "निकाय, परिवेश और संतुलन"
+      },
+      "paragraphs": [
+        {
+          "en": "Thermodynamics studies macroscopic energy exchanges without following every molecule. First choose the system, its boundary and its surroundings. A closed system exchanges energy but not matter; an isolated system exchanges neither. These are ideal descriptions that depend on the chosen boundary and experimental arrangement. A gas in a sealed movable piston can exchange heat and do work without losing molecules. Thermal equilibrium means no net heat exchange between contacting bodies, while mechanical equilibrium requires the appropriate force balance. The zeroth law says that if two systems are separately in thermal equilibrium with a third, they are in thermal equilibrium with each other. It supports the use of a thermometer to compare temperatures. Equilibrium thermodynamic states can be described by macroscopic variables such as pressure, volume and temperature. During a rapid nonuniform change, a single uniform pressure or temperature may not describe the whole sample. Distinguish an equilibrium state from the process connecting states; two experiments can share endpoints while transferring different amounts of heat and work.",
+          "hi": "ऊष्मागतिकी (Thermodynamics) हर अणु का पीछा किए बिना स्थूल ऊर्जा विनिमय का अध्ययन करती है। पहले निकाय (System), उसकी सीमा और परिवेश (Surroundings) चुनें। बंद निकाय ऊर्जा का विनिमय कर सकता है, पदार्थ का नहीं। पृथक निकाय न पदार्थ और न ऊर्जा का विनिमय करता है। ये आदर्श विवरण चुनी सीमा और प्रयोग की व्यवस्था पर निर्भर हैं। बंद गतिशील पिस्टन वाली गैस अणु खोए बिना ऊष्मा ले और कार्य कर सकती है। तापीय संतुलन में संपर्क वाले पिंडों के बीच निवल ऊष्मा विनिमय नहीं होता। यांत्रिक संतुलन में उपयुक्त बल संतुलन चाहिए। शून्य कोटि का नियम (Zeroth law) कहता है कि यदि दो निकाय अलग-अलग किसी तीसरे निकाय के साथ तापीय संतुलन में हों, तो वे एक-दूसरे के साथ भी संतुलन में हैं। इसी से तापमापी द्वारा ताप तुलना संभव है। संतुलन अवस्थाएँ दाब, आयतन और ताप जैसी स्थूल राशियों से बताई जाती हैं। तेज और असमान परिवर्तन में पूरे नमूने का एक समान दाब या ताप पर्याप्त विवरण नहीं होता। अवस्था और उसे जोड़ने वाले प्रक्रम में अंतर रखें; समान अंतिम अवस्थाओं के बीच ऊष्मा तथा कार्य अलग हो सकते हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can a closed system exchange energy?",
+          "hi": "क्या बंद निकाय ऊर्जा का विनिमय कर सकता है?"
+        },
+        "answer": {
+          "en": "Yes. It can exchange heat or work but not matter.",
+          "hi": "हाँ। वह ऊष्मा या कार्य का विनिमय कर सकता है, पदार्थ का नहीं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "State variables and internal energy",
+        "hi": "अवस्था राशियाँ और आंतरिक ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "A state variable depends on the present equilibrium state rather than on the history used to reach it. Pressure, volume, temperature and internal energy are examples. Heat and work are not stored state variables: they describe energy crossing the system boundary during a process. Internal energy includes microscopic kinetic and interaction energies; it excludes the kinetic energy of the system’s overall motion and its external gravitational potential energy when these are treated separately. For an ideal gas, internal energy depends only on temperature. This statement is a property of the ideal-gas model, not of every possible substance. A change in internal energy between given endpoints is fixed even when different paths involve different heats and works. An equation of state, such as pV=nRT for an ideal gas, constrains variables in equilibrium. It does not by itself say what path the gas follows. The amount of gas n must be held fixed when using simple comparisons. Absolute temperature in kelvin and consistent SI units are required in the ideal-gas equation.",
+          "hi": "अवस्था राशि (State variable) वर्तमान संतुलन अवस्था पर निर्भर होती है, उस तक पहुँचने के इतिहास पर नहीं। दाब, आयतन, ताप और आंतरिक ऊर्जा उदाहरण हैं। ऊष्मा तथा कार्य संग्रहीत अवस्था राशियाँ नहीं हैं; वे प्रक्रम के दौरान सीमा पार ऊर्जा जाने के तरीके बताते हैं। आंतरिक ऊर्जा में सूक्ष्म गतिज तथा अंतःक्रिया ऊर्जा शामिल है। निकाय की समग्र गति की गतिज ऊर्जा और बाहरी गुरुत्व स्थितिज ऊर्जा को अलग लिया जाए तो वे आंतरिक ऊर्जा में नहीं जोड़ी जातीं। आदर्श गैस की आंतरिक ऊर्जा केवल ताप पर निर्भर है। यह आदर्श गैस मॉडल का गुण है, हर पदार्थ का सार्वभौमिक गुण नहीं। दिए आरंभिक तथा अंतिम अवस्थाओं के बीच आंतरिक ऊर्जा परिवर्तन नियत है, भले अलग मार्गों में ऊष्मा और कार्य अलग हों। आदर्श गैस का pV=nRT जैसे अवस्था समीकरण संतुलन राशियों में संबंध देता है। वह अपने आप प्रक्रम का मार्ग तय नहीं करता। सरल तुलना में गैस की मात्रा n समान रखनी चाहिए। समीकरण में निरपेक्ष केल्विन ताप और संगत SI मात्रक लेने आवश्यक हैं। ऊष्मा को आंतरिक ऊर्जा का दूसरा नाम कहना इन भेदों को मिटा देता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Are heat and work properties stored in a thermodynamic state?",
+          "hi": "क्या ऊष्मा और कार्य अवस्था में संग्रहीत गुण हैं?"
+        },
+        "answer": {
+          "en": "No. They describe process-dependent energy transfers.",
+          "hi": "नहीं। वे प्रक्रम पर निर्भर ऊर्जा स्थानांतरण बताते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Heat, work and the first law",
+        "hi": "ऊष्मा, कार्य और प्रथम नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "Use a sign convention before calculating. In this chapter Q is positive when heat enters the system and W is positive when the system does work on the surroundings. The first law is ΔU=Q−W, or Q=ΔU+W. Compression work done on the gas corresponds to negative W in this convention. Some books use work done on the system as positive, so their algebraic form differs without changing the physics. For quasistatic volume work, W=∫p dV; on a pressure–volume graph it is the signed area under the path. Expansion gives positive work and compression negative work. At constant pressure, W=p(V₂−V₁), but that product is not valid for an arbitrary varying-pressure path. Heating does not always raise temperature: energy can be used for work or phase change. Likewise a temperature rise need not require heat input, since compression can increase internal energy. Check energy conservation in words before substitution and state whether any other work modes have been excluded.",
+          "hi": "गणना से पहले चिह्न परंपरा तय करें। यहाँ निकाय में ऊष्मा आने पर Q धनात्मक और निकाय द्वारा परिवेश पर कार्य करने पर W धनात्मक है। प्रथम नियम (First law) ΔU=Q−W या Q=ΔU+W है। गैस पर किए संपीड़न कार्य के लिए इस परंपरा में W ऋणात्मक होगा। कुछ पुस्तकों में निकाय पर किया कार्य धनात्मक लिया जाता है। तब बीजगणितीय रूप बदलता है, भौतिक नियम नहीं। लगभग स्थैतिक आयतन कार्य W=∫p dV है। दाब–आयतन आलेख में यह मार्ग के नीचे चिह्न सहित क्षेत्रफल है। प्रसार में कार्य धनात्मक और संपीड़न में ऋणात्मक है। नियत दाब पर W=p(V₂−V₁) है, लेकिन बदलते दाब के किसी भी मार्ग में यह सरल गुणन नहीं लगा सकते। ऊष्मा देने से हमेशा ताप बढ़े, यह जरूरी नहीं; ऊर्जा कार्य या अवस्था परिवर्तन में लग सकती है। इसी प्रकार ताप बढ़ने के लिए ऊष्मा निवेश अनिवार्य नहीं, क्योंकि संपीड़न से आंतरिक ऊर्जा बढ़ सकती है। संख्याएँ रखने से पहले शब्दों में ऊर्जा संतुलन जाँचें और बताएँ कि अन्य प्रकार के कार्य छोड़े गए हैं या नहीं। गलत चिह्न सही संख्याओं को भी गलत निष्कर्ष दे सकते हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "A gas receives 100 J and does 40 J work. What is ΔU?",
+          "hi": "गैस 100 J ले और 40 J कार्य करे तो ΔU?"
+        },
+        "answer": {
+          "en": "60 J under the stated sign convention.",
+          "hi": "दी चिह्न परंपरा में 60 J।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Isochoric and isobaric processes",
+        "hi": "समआयतनिक और समदाबी प्रक्रम"
+      },
+      "paragraphs": [
+        {
+          "en": "An isochoric process has constant volume. If only pressure–volume work is considered, W=0 and the first law becomes Q=ΔU. Pressure can still change as temperature changes. An isobaric process has constant pressure and volume work pΔV. For an ideal gas of fixed amount, V/T is constant along this path. The heat supplied is not all retained as internal energy because expansion can do work. For one mole of an ideal monatomic gas in the elementary model, U=3RT/2, so at constant pressure ΔU=3pΔV/2 and Q=5pΔV/2. These relations rely on the monatomic ideal-gas assumption and should not be used unchanged for a gas with different active degrees of freedom. Molar heat capacities satisfy Cp−Cv=R for an ideal gas. Cp exceeds Cv because a constant-pressure temperature rise includes expansion work. Keep molar heat capacity, with unit J/(mol K), distinct from specific heat capacity per kilogram. A rigid container can exchange heat even though its volume remains unchanged.",
+          "hi": "समआयतनिक प्रक्रम (Isochoric process) में आयतन नियत रहता है। केवल दाब–आयतन कार्य हो तो W=0 और प्रथम नियम Q=ΔU बनता है। ताप बदलने पर दाब फिर भी बदल सकता है। समदाबी प्रक्रम (Isobaric process) में दाब नियत है और कार्य pΔV है। नियत मात्रा की आदर्श गैस में इस मार्ग पर V/T नियत रहता है। दी गई सारी ऊष्मा आंतरिक ऊर्जा नहीं बनती, क्योंकि प्रसार में कार्य हो सकता है। प्राथमिक मॉडल की 1 mol एकपरमाणुक आदर्श गैस में U=3RT/2 है। इसलिए नियत दाब पर ΔU=3pΔV/2 तथा Q=5pΔV/2 मिलता है। ये संबंध एकपरमाणुक आदर्श गैस की मान्यता पर आधारित हैं। अलग सक्रिय स्वतंत्रता कोटि वाली गैस पर इन्हें बिना बदलाव नहीं लगाना चाहिए। आदर्श गैस की मोलर ऊष्मा धारिताओं में Cp−Cv=R होता है। नियत दाब पर ताप बढ़ाने में प्रसार कार्य भी होने से Cp अधिक है। मोलर धारिता का मात्रक J/(mol K) है; इसे प्रति kg वाली विशिष्ट ऊष्मा से अलग रखें। कठोर बंद पात्र का आयतन नियत होने पर भी वह ऊष्मा का विनिमय कर सकता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can an isochoric process have nonzero heat transfer?",
+          "hi": "क्या समआयतनिक प्रक्रम में ऊष्मा विनिमय अशून्य हो सकता है?"
+        },
+        "answer": {
+          "en": "Yes. With only volume work, heat changes internal energy.",
+          "hi": "हाँ। केवल आयतन कार्य होने पर ऊष्मा आंतरिक ऊर्जा बदलती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Isothermal and adiabatic changes",
+        "hi": "समतापी और रुद्धोष्म परिवर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "An isothermal process maintains constant temperature. For an ideal gas, ΔU=0 and therefore Q=W. In a reversible isothermal expansion of n moles, W=nRT ln(V₂/V₁). The logarithm is natural and its argument is a dimensionless volume ratio. Equal initial and final temperature alone does not prove that an arbitrary path was isothermal throughout. An adiabatic process exchanges no heat, Q=0, so ΔU=−W. Expansion can then lower internal energy and temperature, while compression can raise them. Adiabatic does not mean constant temperature. For a reversible adiabatic change of an ideal gas with approximately constant heat-capacity ratio γ, pVᵞ is constant. This relation needs more assumptions than simply Q=0; a rapid irreversible free expansion should not be analysed by that reversible path equation. Insulation or a sufficiently short process can reduce heat exchange, but actual experiments only approximate the ideal limit. Compare paths on a p–V diagram with the same starting state, taking care that their endpoints need not coincide.",
+          "hi": "समतापी प्रक्रम (Isothermal process) में ताप नियत रहता है। आदर्श गैस के लिए ΔU=0 होने से Q=W है। n mol गैस के उत्क्रमणीय समतापी प्रसार में W=nRT ln(V₂/V₁) होता है। लघुगणक प्राकृतिक है और उसका पद विमाहीन आयतन अनुपात है। केवल आरंभिक तथा अंतिम ताप समान होने से यह सिद्ध नहीं होता कि पूरे मार्ग में ताप नियत था। रुद्धोष्म प्रक्रम (Adiabatic process) में ऊष्मा विनिमय नहीं होता, Q=0 है। इसलिए ΔU=−W। प्रसार में आंतरिक ऊर्जा और ताप घट सकते हैं, जबकि संपीड़न में बढ़ सकते हैं। रुद्धोष्म का अर्थ समतापी नहीं है। लगभग नियत ऊष्मा धारिता अनुपात γ वाली आदर्श गैस के उत्क्रमणीय रुद्धोष्म परिवर्तन में pVᵞ नियत है। इस संबंध के लिए केवल Q=0 से अधिक मान्यताएँ चाहिए। तेज अनुत्क्रमणीय मुक्त प्रसार पर यह उत्क्रमणीय मार्ग समीकरण नहीं लगाना चाहिए। रोधन या कम समय ऊष्मा विनिमय घटा सकते हैं, लेकिन वास्तविक प्रयोग आदर्श सीमा के लगभग ही होते हैं। p–V आलेख पर समान प्रारंभिक अवस्था से निकले मार्गों की तुलना करें; उनके अंतिम बिंदु जरूरी नहीं कि समान हों।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does Q=0 imply constant temperature?",
+          "hi": "क्या Q=0 का अर्थ नियत ताप है?"
+        },
+        "answer": {
+          "en": "No. In an adiabatic change, work can change internal energy and temperature.",
+          "hi": "नहीं। रुद्धोष्म परिवर्तन में कार्य आंतरिक ऊर्जा और ताप बदल सकता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Cycles, engines and refrigerators",
+        "hi": "चक्र, इंजन और प्रशीतक"
+      },
+      "paragraphs": [
+        {
+          "en": "A cyclic process returns the system to its initial state, so its total internal-energy change is zero. Over the full cycle, net heat equals net work using the chosen convention. On a p–V diagram the enclosed signed area is net volume work; clockwise and anticlockwise paths have opposite signs. A heat engine receives heat Qh from a hot reservoir, delivers work W and rejects heat Qc to a colder reservoir. Using positive magnitudes, W=Qh−Qc and efficiency η=W/Qh=1−Qc/Qh. A refrigerator uses external work to extract heat from a cold region and deliver it to a warmer region. Its coefficient of performance is Qc/W, which can exceed one without violating energy conservation because it compares moved heat with input work. Do not confuse the refrigerator’s useful output with the engine’s useful work. Real cycles also involve losses and design constraints. A schematic arrow diagram records energy transfers and reservoir roles; it is not a claim that every engine follows the same microscopic mechanism or uses the same working substance.",
+          "hi": "चक्रीय प्रक्रम (Cyclic process) निकाय को प्रारंभिक अवस्था में लौटाता है, इसलिए पूरे चक्र में आंतरिक ऊर्जा परिवर्तन शून्य है। चुनी चिह्न परंपरा में निवल ऊष्मा निवल कार्य के बराबर है। p–V आलेख में बंद क्षेत्र का चिह्न सहित क्षेत्रफल निवल आयतन कार्य है। दक्षिणावर्त और वामावर्त मार्गों के चिह्न विपरीत होते हैं। ऊष्मा इंजन (Heat engine) गर्म भंडार से Qh लेता, W कार्य देता और ठंडे भंडार को Qc छोड़ता है। धनात्मक परिमाणों में W=Qh−Qc तथा दक्षता η=W/Qh=1−Qc/Qh है। प्रशीतक (Refrigerator) बाहरी कार्य लेकर ठंडे स्थान से ऊष्मा निकालता और गर्म स्थान में पहुँचाता है। इसका निष्पादन गुणांक Qc/W है। यह 1 से बड़ा हो सकता है और ऊर्जा संरक्षण नहीं तोड़ता, क्योंकि निकाली ऊष्मा की तुलना निवेश कार्य से हो रही है। प्रशीतक के उपयोगी परिणाम को इंजन के उपयोगी कार्य से न मिलाएँ। वास्तविक चक्रों में हानि और अभिकल्प सीमाएँ होती हैं। सांकेतिक तीर चित्र ऊर्जा मार्ग और भंडार की भूमिका दिखाता है; यह नहीं कहता कि हर इंजन की सूक्ष्म प्रक्रिया या कार्यकारी पदार्थ एक ही है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is ΔU zero over a complete cycle?",
+          "hi": "पूरे चक्र में ΔU शून्य क्यों है?"
+        },
+        "answer": {
+          "en": "Internal energy is a state variable and the final state equals the initial state.",
+          "hi": "आंतरिक ऊर्जा अवस्था राशि है और अंतिम अवस्था प्रारंभिक के समान है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Second law and irreversibility",
+        "hi": "द्वितीय नियम और अनुत्क्रमणीयता"
+      },
+      "paragraphs": [
+        {
+          "en": "Energy conservation alone does not decide whether a process can occur spontaneously. The second law restricts the direction of natural processes and the conversion of heat into work. The Kelvin–Planck statement rules out a cyclic engine whose sole effect is to take heat from a single reservoir and convert all of it into work. The Clausius statement rules out a device whose sole effect is to transfer heat from a colder body to a hotter body without external work. A refrigerator does not violate this statement because work is supplied. Natural heat flow across a finite temperature difference, friction and uncontrolled expansion are irreversible examples. A reversible process is an ideal limit that can be reversed through infinitesimal changes without leaving a net change in system and surroundings. Merely bringing the system back to its original state is not enough; the surroundings must also be restored. A quasistatic process is not automatically reversible if dissipative friction is present. These distinctions explain why real machines have stricter practical limitations than a simple energy balance suggests.",
+          "hi": "केवल ऊर्जा संरक्षण से यह तय नहीं होता कि प्रक्रम स्वतः हो सकता है या नहीं। द्वितीय नियम (Second law) प्राकृतिक प्रक्रियाओं की दिशा और ऊष्मा से कार्य बनने की सीमा बताता है। केल्विन–प्लांक कथन के अनुसार ऐसा चक्रीय इंजन नहीं हो सकता जिसका अकेला प्रभाव एक भंडार से ऊष्मा लेकर पूरी कार्य में बदलना हो। क्लॉसियस कथन के अनुसार ऐसा उपकरण नहीं हो सकता जिसका अकेला प्रभाव बिना बाहरी कार्य ठंडे पिंड से गर्म पिंड तक ऊष्मा पहुँचाना हो। प्रशीतक इसे नहीं तोड़ता, क्योंकि उसे कार्य दिया जाता है। सीमित तापांतर से स्वतः ऊष्मा प्रवाह, घर्षण और अनियंत्रित प्रसार अनुत्क्रमणीय उदाहरण हैं। उत्क्रमणीय प्रक्रम (Reversible process) ऐसी आदर्श सीमा है जिसे अत्यल्प बदलावों से उलटकर निकाय और परिवेश दोनों में कोई निवल परिवर्तन न छोड़ा जाए। केवल निकाय को मूल अवस्था में लाना पर्याप्त नहीं; परिवेश भी लौटना चाहिए। घर्षण से ऊर्जा क्षय हो तो लगभग स्थैतिक प्रक्रम भी अपने आप उत्क्रमणीय नहीं हो जाता। इन भेदों से समझ आता है कि वास्तविक मशीनों की व्यावहारिक सीमाएँ सरल ऊर्जा संतुलन से अधिक कड़ी क्यों हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does a refrigerator not violate the Clausius statement?",
+          "hi": "प्रशीतक क्लॉसियस कथन का उल्लंघन क्यों नहीं करता?"
+        },
+        "answer": {
+          "en": "It needs external work to transfer heat from cold to hot.",
+          "hi": "ठंडे से गर्म स्थान तक ऊष्मा ले जाने के लिए बाहरी कार्य चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Carnot limit and checking numerical answers",
+        "hi": "कार्नो सीमा और उत्तर की जाँच"
+      },
+      "paragraphs": [
+        {
+          "en": "A reversible engine working between reservoirs at absolute temperatures Th and Tc has Carnot efficiency ηC=1−Tc/Th. No engine operating only between the same two reservoirs can be more efficient. The result depends on reservoir temperatures, not on the particular working substance. All temperatures must be in kelvin; using Celsius ratios can give meaningless efficiencies. Raising the hot-reservoir temperature or lowering the cold-reservoir temperature increases this ideal upper bound, but real engines remain below it because their processes are irreversible. A Carnot cycle has two reversible isotherms and two reversible adiabats. It is an ideal comparison standard rather than an easily constructed everyday cycle. For Th=600 K and Tc=300 K, the limiting efficiency is 0.5, meaning at most half the heat input becomes work in this two-reservoir setting. To check a problem, verify 0≤η<1 for finite positive reservoir temperatures with Th>Tc, and confirm Qh=W+Qc. State the sign convention, process assumptions and gas model before applying numerical formulas.",
+          "hi": "निरपेक्ष ताप Th और Tc वाले दो भंडारों के बीच कार्य करने वाले उत्क्रमणीय इंजन की कार्नो दक्षता (Carnot efficiency) ηC=1−Tc/Th है। केवल उन्हीं भंडारों के बीच कोई इंजन इससे अधिक दक्ष नहीं हो सकता। परिणाम कार्यकारी पदार्थ के बजाय भंडारों के ताप पर निर्भर है। सभी ताप केल्विन में लेने चाहिए। सेल्सियस तापों का अनुपात अर्थहीन दक्षता दे सकता है। गर्म भंडार का ताप बढ़ाने या ठंडे भंडार का ताप घटाने से आदर्श ऊपरी सीमा बढ़ती है। वास्तविक इंजन अपनी अनुत्क्रमणीय प्रक्रियाओं के कारण इससे नीचे रहते हैं। कार्नो चक्र में 2 उत्क्रमणीय समतापी और 2 उत्क्रमणीय रुद्धोष्म मार्ग होते हैं। यह आदर्श तुलना मानक है, रोजमर्रा में आसानी से बनने वाला चक्र नहीं। Th=600 K और Tc=300 K में सीमा 0.5 है। अर्थात इस दो-भंडार व्यवस्था में अधिकतम आधा ऊष्मा निवेश कार्य बन सकता है। उत्तर जाँचते समय Th>Tc और सीमित धनात्मक तापों में 0≤η<1 होना चाहिए। साथ में Qh=W+Qc जाँचें। संख्यात्मक सूत्र से पहले चिह्न परंपरा, प्रक्रम की मान्यताएँ और गैस मॉडल स्पष्ट करें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can a real engine between 600 K and 300 K have efficiency 80%?",
+          "hi": "600 K और 300 K के बीच वास्तविक इंजन की दक्षता 80% हो सकती है?"
+        },
+        "answer": {
+          "en": "No. The Carnot upper bound is 50%.",
+          "hi": "नहीं। कार्नो ऊपरी सीमा 50% है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "ΔU = Q − W",
+      "meaning": {
+        "en": "Q enters system; W is work done by system.",
+        "hi": "Q निकाय में आती है; W निकाय द्वारा किया कार्य है।"
+      },
+      "units": {
+        "en": "J",
+        "hi": "J"
+      }
+    },
+    {
+      "expression": "W = ∫p dV; Wconstant p = pΔV",
+      "meaning": {
+        "en": "Quasistatic volume work.",
+        "hi": "लगभग स्थैतिक आयतन कार्य।"
+      },
+      "units": {
+        "en": "J",
+        "hi": "J"
+      }
+    },
+    {
+      "expression": "pV = nRT",
+      "meaning": {
+        "en": "Ideal-gas equation of state.",
+        "hi": "आदर्श गैस का अवस्था समीकरण।"
+      },
+      "units": {
+        "en": "p:Pa; V:m³; T:K",
+        "hi": "p:Pa; V:m³; T:K"
+      }
+    },
+    {
+      "expression": "Wisothermal = nRT ln(V₂/V₁)",
+      "meaning": {
+        "en": "Reversible isothermal ideal-gas work.",
+        "hi": "उत्क्रमणीय समतापी आदर्श गैस कार्य।"
+      },
+      "units": {
+        "en": "J",
+        "hi": "J"
+      }
+    },
+    {
+      "expression": "pVᵞ = constant",
+      "meaning": {
+        "en": "Reversible adiabatic ideal gas with constant γ.",
+        "hi": "नियत γ वाली उत्क्रमणीय रुद्धोष्म आदर्श गैस।"
+      },
+      "units": {
+        "en": "γ dimensionless",
+        "hi": "γ विमाहीन"
+      }
+    },
+    {
+      "expression": "ηC = 1 − Tc/Th",
+      "meaning": {
+        "en": "Carnot upper bound between two reservoirs.",
+        "hi": "दो भंडारों के बीच कार्नो ऊपरी सीमा।"
+      },
+      "units": {
+        "en": "T:K; η dimensionless",
+        "hi": "T:K; η विमाहीन"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not mix work sign conventions, confuse adiabatic with isothermal, use Celsius temperature ratios, or treat Q and W as state variables.",
+    "hi": "कार्य की चिह्न परंपराएँ न मिलाएँ, रुद्धोष्म को समतापी न मानें, सेल्सियस ताप अनुपात न लें और Q तथा W को अवस्था राशि न समझें।"
+  },
+  "summary": [
+    {
+      "en": "State variables depend on equilibrium state; heat and work depend on path.",
+      "hi": "अवस्था राशियाँ संतुलन अवस्था पर, ऊष्मा और कार्य मार्ग पर निर्भर हैं।"
+    },
+    {
+      "en": "The first law is ΔU=Q−W with work by the system positive.",
+      "hi": "निकाय द्वारा कार्य धनात्मक हो तो प्रथम नियम ΔU=Q−W है।"
+    },
+    {
+      "en": "Isochoric, isobaric, isothermal and adiabatic constraints differ.",
+      "hi": "समआयतनिक, समदाबी, समतापी और रुद्धोष्म प्रतिबंध अलग हैं।"
+    },
+    {
+      "en": "A cycle returns ΔU to zero but can have nonzero work.",
+      "hi": "चक्र में ΔU शून्य है, लेकिन कार्य अशून्य हो सकता है।"
+    },
+    {
+      "en": "Carnot efficiency is a reversible upper limit using kelvin temperatures.",
+      "hi": "कार्नो दक्षता केल्विन तापों से मिलने वाली उत्क्रमणीय ऊपरी सीमा है।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A system receives 300 J heat and does 100 J work. Find ΔU.",
+        "hi": "निकाय 300 J ऊष्मा ले और 100 J कार्य करे तो ΔU निकालें।"
+      },
+      "given": {
+        "en": "Q=+300 J; W=+100 J.",
+        "hi": "Q=+300 J; W=+100 J।"
+      },
+      "find": {
+        "en": "Internal-energy change.",
+        "hi": "आंतरिक ऊर्जा परिवर्तन।"
+      },
+      "formula": {
+        "en": "ΔU=Q−W",
+        "hi": "ΔU=Q−W"
+      },
+      "steps": [
+        {
+          "en": "Subtract work output from heat input.",
+          "hi": "ऊष्मा निवेश से निर्गम कार्य घटाएँ।"
+        }
+      ],
+      "answer": {
+        "en": "+200 J.",
+        "hi": "+200 J।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find work in a constant-pressure expansion from 1 L to 3 L.",
+        "hi": "1 L से 3 L के नियत दाब प्रसार में कार्य निकालें।"
+      },
+      "given": {
+        "en": "p=10⁵ Pa; ΔV=2 × 10⁻³ m³.",
+        "hi": "p=10⁵ Pa; ΔV=2 × 10⁻³ m³।"
+      },
+      "find": {
+        "en": "Work by gas.",
+        "hi": "गैस द्वारा कार्य।"
+      },
+      "formula": {
+        "en": "W=pΔV",
+        "hi": "W=pΔV"
+      },
+      "steps": [
+        {
+          "en": "Convert litres to cubic metres.",
+          "hi": "लीटर को घन मीटर में बदलें।"
+        },
+        {
+          "en": "Multiply 10⁵ by 0.002.",
+          "hi": "10⁵ को 0.002 से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "+200 J.",
+        "hi": "+200 J।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "For the same monatomic ideal-gas isobaric expansion, find ΔU and Q.",
+        "hi": "उसी एकपरमाणुक आदर्श गैस के समदाबी प्रसार में ΔU और Q निकालें।"
+      },
+      "given": {
+        "en": "pΔV=200 J; fixed amount; U=3nRT/2.",
+        "hi": "pΔV=200 J; मात्रा नियत; U=3nRT/2।"
+      },
+      "find": {
+        "en": "ΔU and Q.",
+        "hi": "ΔU और Q।"
+      },
+      "formula": {
+        "en": "ΔU=3pΔV/2; Q=ΔU+W",
+        "hi": "ΔU=3pΔV/2; Q=ΔU+W"
+      },
+      "steps": [
+        {
+          "en": "ΔU=1.5 × 200=300 J.",
+          "hi": "ΔU=1.5 × 200=300 J।"
+        },
+        {
+          "en": "Add W=200 J.",
+          "hi": "W=200 J जोड़ें।"
+        }
+      ],
+      "answer": {
+        "en": "ΔU=300 J; Q=500 J.",
+        "hi": "ΔU=300 J; Q=500 J।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find reversible isothermal expansion work for 1 mol at 300 K doubling its volume.",
+        "hi": "300 K पर 1 mol के उत्क्रमणीय समतापी प्रसार में आयतन दोगुना हो तो कार्य निकालें।"
+      },
+      "given": {
+        "en": "R=8.314 J/(mol K); V₂/V₁=2.",
+        "hi": "R=8.314 J/(mol K); V₂/V₁=2।"
+      },
+      "find": {
+        "en": "W and ΔU.",
+        "hi": "W और ΔU।"
+      },
+      "formula": {
+        "en": "W=nRT ln2; ΔU=0",
+        "hi": "W=nRT ln2; ΔU=0"
+      },
+      "steps": [
+        {
+          "en": "ln2≈0.693.",
+          "hi": "ln2≈0.693।"
+        },
+        {
+          "en": "Multiply 1 × 8.314 × 300 × 0.693.",
+          "hi": "1 × 8.314 × 300 × 0.693 करें।"
+        }
+      ],
+      "answer": {
+        "en": "W≈1.73 kJ; ΔU=0; Q=W.",
+        "hi": "W≈1.73 kJ; ΔU=0; Q=W।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "An engine between 600 K and 300 K absorbs 1000 J. What is maximum work?",
+        "hi": "600 K और 300 K के बीच इंजन 1000 J लेता है। अधिकतम कार्य कितना है?"
+      },
+      "given": {
+        "en": "Only these reservoirs; reversible limit.",
+        "hi": "केवल यही भंडार; उत्क्रमणीय सीमा।"
+      },
+      "find": {
+        "en": "ηmax, Wmax and rejected heat at that limit.",
+        "hi": "ηmax, Wmax तथा उस सीमा पर छोड़ी ऊष्मा।"
+      },
+      "formula": {
+        "en": "ηC=1−Tc/Th; W=ηQh",
+        "hi": "ηC=1−Tc/Th; W=ηQh"
+      },
+      "steps": [
+        {
+          "en": "ηC=1−300/600=0.5.",
+          "hi": "ηC=1−300/600=0.5।"
+        },
+        {
+          "en": "Wmax=500 J and Qc=1000−500.",
+          "hi": "Wmax=500 J तथा Qc=1000−500।"
+        }
+      ],
+      "answer": {
+        "en": "50%; maximum work 500 J; rejected heat 500 J.",
+        "hi": "50%; अधिकतम कार्य 500 J; छोड़ी ऊष्मा 500 J।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which is a state variable?",
+        "hi": "अवस्था राशि कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Internal energy",
+            "hi": "आंतरिक ऊर्जा"
+          },
+          "reason": {
+            "en": "It depends on the state.",
+            "hi": "यह अवस्था पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Heat supplied",
+            "hi": "दी ऊष्मा"
+          },
+          "reason": {
+            "en": "It depends on the process path.",
+            "hi": "यह प्रक्रम मार्ग पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Work done",
+            "hi": "किया कार्य"
+          },
+          "reason": {
+            "en": "It also depends on path.",
+            "hi": "यह भी मार्ग पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both heat and work stored",
+            "hi": "संग्रहीत ऊष्मा और कार्य"
+          },
+          "reason": {
+            "en": "These are transfer descriptions, not stored state quantities.",
+            "hi": "ये स्थानांतरण हैं, संग्रहीत अवस्था राशियाँ नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "With work by system positive, first law is:",
+        "hi": "निकाय द्वारा कार्य धनात्मक हो तो प्रथम नियम है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ΔU=Q−W",
+            "hi": "ΔU=Q−W"
+          },
+          "reason": {
+            "en": "Energy output as work is subtracted.",
+            "hi": "कार्य निर्गम घटाया जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "ΔU=Q+W",
+            "hi": "ΔU=Q+W"
+          },
+          "reason": {
+            "en": "This would require a different work definition.",
+            "hi": "इसके लिए अलग कार्य परिभाषा चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "ΔU=QW",
+            "hi": "ΔU=QW"
+          },
+          "reason": {
+            "en": "A product has incorrect dimensions.",
+            "hi": "गुणन की विमा गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "ΔU=W−Q",
+            "hi": "ΔU=W−Q"
+          },
+          "reason": {
+            "en": "This reverses the energy balance.",
+            "hi": "यह ऊर्जा संतुलन उल्टा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For isochoric volume work:",
+        "hi": "समआयतनिक आयतन कार्य में:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "W=0",
+            "hi": "W=0"
+          },
+          "reason": {
+            "en": "There is no volume change.",
+            "hi": "आयतन परिवर्तन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Q=0 always",
+            "hi": "हमेशा Q=0"
+          },
+          "reason": {
+            "en": "Heat may change internal energy.",
+            "hi": "ऊष्मा आंतरिक ऊर्जा बदल सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Temperature must be constant",
+            "hi": "ताप नियत होना चाहिए"
+          },
+          "reason": {
+            "en": "Constant volume does not imply constant temperature.",
+            "hi": "नियत आयतन से नियत ताप नहीं निकलता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pressure must be zero",
+            "hi": "दाब शून्य होना चाहिए"
+          },
+          "reason": {
+            "en": "Pressure can be nonzero and vary.",
+            "hi": "दाब अशून्य और परिवर्ती हो सकता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For an ideal-gas isothermal process:",
+        "hi": "आदर्श गैस के समतापी प्रक्रम में:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ΔU=0",
+            "hi": "ΔU=0"
+          },
+          "reason": {
+            "en": "Ideal-gas internal energy depends only on temperature.",
+            "hi": "आदर्श गैस की आंतरिक ऊर्जा केवल ताप पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Q=0 necessarily",
+            "hi": "Q जरूरी शून्य"
+          },
+          "reason": {
+            "en": "Heat can supply the work done.",
+            "hi": "ऊष्मा कार्य की ऊर्जा दे सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "W=0 necessarily",
+            "hi": "W जरूरी शून्य"
+          },
+          "reason": {
+            "en": "Volume can change at constant temperature.",
+            "hi": "नियत ताप पर आयतन बदल सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Temperature doubles",
+            "hi": "ताप दोगुना"
+          },
+          "reason": {
+            "en": "Isothermal means fixed temperature.",
+            "hi": "समतापी में ताप नियत है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Adiabatic means:",
+        "hi": "रुद्धोष्म का अर्थ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No heat transfer",
+            "hi": "ऊष्मा विनिमय नहीं"
+          },
+          "reason": {
+            "en": "Q=0 defines the thermal restriction.",
+            "hi": "Q=0 तापीय प्रतिबंध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No temperature change",
+            "hi": "ताप परिवर्तन नहीं"
+          },
+          "reason": {
+            "en": "That is isothermal, not generally adiabatic.",
+            "hi": "वह समतापी है, सामान्य रुद्धोष्म नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No work",
+            "hi": "कार्य नहीं"
+          },
+          "reason": {
+            "en": "Adiabatic compression or expansion can do work.",
+            "hi": "रुद्धोष्म संपीड़न या प्रसार में कार्य हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No pressure",
+            "hi": "दाब नहीं"
+          },
+          "reason": {
+            "en": "Pressure remains a relevant state variable.",
+            "hi": "दाब प्रासंगिक अवस्था राशि है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Over a full cycle:",
+        "hi": "पूरे चक्र में:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ΔU=0",
+            "hi": "ΔU=0"
+          },
+          "reason": {
+            "en": "The state returns to its start.",
+            "hi": "अवस्था आरंभ में लौटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "W=0 always",
+            "hi": "W हमेशा शून्य"
+          },
+          "reason": {
+            "en": "The enclosed p–V area can be nonzero.",
+            "hi": "बंद p–V क्षेत्र अशून्य हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Qh=0 always",
+            "hi": "Qh हमेशा शून्य"
+          },
+          "reason": {
+            "en": "Engines receive heat during a cycle.",
+            "hi": "इंजन चक्र में ऊष्मा लेते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Temperature is fixed throughout",
+            "hi": "पूरे समय ताप नियत"
+          },
+          "reason": {
+            "en": "A cycle may contain different processes.",
+            "hi": "चक्र में अलग प्रक्रम हो सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Carnot efficiency uses temperatures in:",
+        "hi": "कार्नो दक्षता में ताप लें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Kelvin",
+            "hi": "केल्विन"
+          },
+          "reason": {
+            "en": "The ratio is of absolute temperatures.",
+            "hi": "अनुपात निरपेक्ष तापों का है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Celsius directly",
+            "hi": "सीधे सेल्सियस"
+          },
+          "reason": {
+            "en": "Its offset invalidates the ratio.",
+            "hi": "उसका शून्य अंतर अनुपात गलत करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any scale without conversion",
+            "hi": "बिना परिवर्तन कोई भी पैमाना"
+          },
+          "reason": {
+            "en": "Scale origin matters for the ratio.",
+            "hi": "अनुपात में पैमाने का शून्य महत्त्वपूर्ण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only degrees Fahrenheit",
+            "hi": "केवल फारेनहाइट"
+          },
+          "reason": {
+            "en": "That is not an absolute scale.",
+            "hi": "वह निरपेक्ष पैमाना नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For Th=600 K and Tc=300 K, ηC is:",
+        "hi": "Th=600 K और Tc=300 K पर ηC:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0.5",
+            "hi": "0.5"
+          },
+          "reason": {
+            "en": "1−300/600=0.5.",
+            "hi": "1−300/600=0.5 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "Efficiency cannot exceed this reversible bound.",
+            "hi": "दक्षता उत्क्रमणीय सीमा से अधिक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Finite cold temperature prevents full conversion.",
+            "hi": "सीमित ठंडा ताप पूर्ण रूपांतरण रोकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Reservoir temperatures are not equal.",
+            "hi": "भंडार ताप समान नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why is Cp greater than Cv for an ideal gas?",
+        "hi": "आदर्श गैस में Cp, Cv से बड़ा क्यों है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Constant-pressure heating includes expansion work",
+            "hi": "नियत दाब ऊष्मन में प्रसार कार्य भी है"
+          },
+          "reason": {
+            "en": "Extra heat supplies work as well as internal-energy change.",
+            "hi": "अतिरिक्त ऊष्मा कार्य भी देती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Energy is not conserved",
+            "hi": "ऊर्जा संरक्षित नहीं"
+          },
+          "reason": {
+            "en": "The first law still holds.",
+            "hi": "प्रथम नियम लागू है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Volume is always zero",
+            "hi": "आयतन हमेशा शून्य"
+          },
+          "reason": {
+            "en": "The gas has nonzero volume.",
+            "hi": "गैस का आयतन अशून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "R is zero",
+            "hi": "R शून्य है"
+          },
+          "reason": {
+            "en": "Cp−Cv=R with nonzero gas constant.",
+            "hi": "Cp−Cv=R और R अशून्य है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A refrigerator moves heat cold to hot by:",
+        "hi": "प्रशीतक ठंडे से गर्म स्थान ऊष्मा कैसे पहुँचाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Using external work",
+            "hi": "बाहरी कार्य लेकर"
+          },
+          "reason": {
+            "en": "This is consistent with the second law.",
+            "hi": "यह द्वितीय नियम के अनुरूप है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No energy input ever",
+            "hi": "कभी ऊर्जा निवेश नहीं"
+          },
+          "reason": {
+            "en": "That sole effect is forbidden.",
+            "hi": "ऐसा अकेला प्रभाव निषिद्ध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Destroying internal energy",
+            "hi": "आंतरिक ऊर्जा नष्ट करके"
+          },
+          "reason": {
+            "en": "Energy is conserved.",
+            "hi": "ऊर्जा संरक्षित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Making all temperatures equal instantly",
+            "hi": "सभी ताप तुरंत समान करके"
+          },
+          "reason": {
+            "en": "It maintains a temperature difference rather than removing it.",
+            "hi": "यह ताप अंतर बनाए रखता है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Can a closed system exchange energy?",
+        "hi": "क्या बंद निकाय ऊर्जा का विनिमय कर सकता है?"
+      },
+      "answer": {
+        "en": "Yes. It can exchange heat or work but not matter.",
+        "hi": "हाँ। वह ऊष्मा या कार्य का विनिमय कर सकता है, पदार्थ का नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Are heat and work properties stored in a thermodynamic state?",
+        "hi": "क्या ऊष्मा और कार्य अवस्था में संग्रहीत गुण हैं?"
+      },
+      "answer": {
+        "en": "No. They describe process-dependent energy transfers.",
+        "hi": "नहीं। वे प्रक्रम पर निर्भर ऊर्जा स्थानांतरण बताते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "A gas receives 100 J and does 40 J work. What is ΔU?",
+        "hi": "गैस 100 J ले और 40 J कार्य करे तो ΔU?"
+      },
+      "answer": {
+        "en": "60 J under the stated sign convention.",
+        "hi": "दी चिह्न परंपरा में 60 J।"
+      }
+    },
+    {
+      "question": {
+        "en": "Can an isochoric process have nonzero heat transfer?",
+        "hi": "क्या समआयतनिक प्रक्रम में ऊष्मा विनिमय अशून्य हो सकता है?"
+      },
+      "answer": {
+        "en": "Yes. With only volume work, heat changes internal energy.",
+        "hi": "हाँ। केवल आयतन कार्य होने पर ऊष्मा आंतरिक ऊर्जा बदलती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Does Q=0 imply constant temperature?",
+        "hi": "क्या Q=0 का अर्थ नियत ताप है?"
+      },
+      "answer": {
+        "en": "No. In an adiabatic change, work can change internal energy and temperature.",
+        "hi": "नहीं। रुद्धोष्म परिवर्तन में कार्य आंतरिक ऊर्जा और ताप बदल सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is ΔU zero over a complete cycle?",
+        "hi": "पूरे चक्र में ΔU शून्य क्यों है?"
+      },
+      "answer": {
+        "en": "Internal energy is a state variable and the final state equals the initial state.",
+        "hi": "आंतरिक ऊर्जा अवस्था राशि है और अंतिम अवस्था प्रारंभिक के समान है।"
+      }
+    }
+  ],
+  "conceptMapEn": "System and equilibrium → state variables → heat and work → first law → process constraints → cycles → second law → Carnot limit",
+  "conceptMap": "निकाय और संतुलन → अवस्था राशियाँ → ऊष्मा और कार्य → प्रथम नियम → प्रक्रम प्रतिबंध → चक्र → द्वितीय नियम → कार्नो सीमा"
+}

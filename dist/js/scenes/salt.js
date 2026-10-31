@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,p})=>{let n=p[0],count=0;for(let x=0;x<n;x++)for(let y=0;y<n;y++)for(let z=0;z<n;z++){let even=(x+y+z)%2===0,a=[(x-(n-1)/2)*.52,(y-(n-1)/2)*.52,(z-(n-1)/2)*.52];g.sphere(...a,even?.09:.14,even?C.blue:C.green);if(even)count++;if(x<n-1)g.line(a,[a[0]+.52,a[1],a[2]]);if(y<n-1)g.line(a,[a[0],a[1]+.52,a[2]]);if(z<n-1)g.line(a,[a[0],a[1],a[2]+.52])}return[read('Na+ ions','Na+ आयन',count),read('Cl− ions','Cl− आयन',count),read('Ion ratio','आयन अनुपात','1 : 1')];};

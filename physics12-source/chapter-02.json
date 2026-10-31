@@ -1,0 +1,1004 @@
+{
+  "number": 2,
+  "id": "physics12-02",
+  "title": {
+    "en": "Electrostatic Potential and Capacitance",
+    "hi": "स्थिरवैद्युत विभव तथा धारिता"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Potential and work per charge",
+        "hi": "विभव और प्रति आवेश कार्य"
+      },
+      "paragraphs": [
+        {
+          "en": "Potential difference is the change in potential energy per charge. For quasistatic transfer Wext=qΔV, while electric-field work is −qΔV. Potential is a scalar; the chosen zero affects its absolute value but not potential differences. Zero at infinity is useful for bounded charge systems, not automatically for infinite distributions.",
+          "hi": "वैद्युत विभव (Electric potential) किसी बिंदु पर एकांक धन परीक्षण आवेश की स्थितिज ऊर्जा है। 2 बिंदुओं का विभवांतर VB−VA उस परिवर्तन के बराबर है जो प्रति इकाई आवेश स्थितिज ऊर्जा में होता है। यदि बाहरी एजेंट आवेश q को धीरे ले जाए और गतिज ऊर्जा न बदले, तो उसका कार्य Wext=q(VB−VA) होता है। विद्युत क्षेत्र का कार्य इसके ऋणात्मक Wfield=q(VA−VB) के बराबर है। विभव अदिश राशि है; इसका चिह्न बल की दिशा की तरह तीर नहीं बताता। 1 V=1 J/C है। किसी बिंदु के विभव का संख्यात्मक मान चुने शून्य संदर्भ पर निर्भर करता है, पर विभवांतर और उससे मिलने वाले भौतिक परिणाम संदर्भ के समान बदलाव से नहीं बदलते। पृथक सीमित आवेश वितरण के लिए अनंत पर विभव शून्य लेना उपयोगी है। अनंत समान क्षेत्र या अनंत रेखीय वितरण में यही संदर्भ हमेशा उपयुक्त नहीं होता। प्रश्न पढ़कर पहले स्पष्ट करें कि कार्य किसका पूछा है: बाहरी बल का या विद्युत क्षेत्र का। इस अंतर को न बताने से सही गणना भी गलत चिह्न दे सकती है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the sign of external work when a positive charge is moved slowly to higher potential?",
+          "hi": "धन आवेश को अधिक विभव पर धीरे ले जाने में बाहरी कार्य का चिह्न क्या होगा?"
+        },
+        "answer": {
+          "en": "Positive: qΔV>0.",
+          "hi": "धनात्मक, क्योंकि qΔV धनात्मक है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Potential of charges and a dipole",
+        "hi": "आवेशों और द्विध्रुव का विभव"
+      },
+      "paragraphs": [
+        {
+          "en": "Add point-charge potentials algebraically, retaining signs. A small dipole has far potential kp cosθ/r². Its equatorial potential is zero even though its field is not. Conversely the midpoint of equal like charges can have zero field and nonzero potential. Potential and field therefore require separate reasoning.",
+          "hi": "निर्वात में बिंदु आवेश का विभव V=kq/r है, जब अनंत पर शून्य चुना हो। यहाँ q का चिह्न शामिल रहता है, इसलिए धन आवेश का विभव धन और ऋण आवेश का ऋण होता है। अनेक आवेशों के लिए विभवों का बीजीय योग V=Σkqi/ri लेते हैं। क्षेत्र की तरह सदिश घटक जोड़ने की आवश्यकता नहीं, फिर भी प्रत्येक दूरी सही स्रोत से चुनी जाती है। द्विध्रुव के लिए सही विभव दोनों आवेशों के अलग योगदान का योग है। दूरस्थ बिंदु पर V≈kp cosθ/r², जहाँ θ द्विध्रुव आघूर्ण और केंद्र से बिंदु तक की दिशा का कोण है। यह r≫2a का सन्निकटन है। निरक्षीय तल में दोनों योगदान रद्द होकर विभव शून्य होता है, लेकिन क्षेत्र वहाँ सामान्यतः अशून्य है। 2 बराबर धनावेशों के मध्य क्षेत्र शून्य हो सकता है, पर विभव दोनों धन योगदानों का योग होने से शून्य नहीं। ये उदाहरण सिखाते हैं कि V=0 और E=0 अलग कथन हैं। विभव का चिन्ह और क्षेत्र का परिमाण आपस में सीधे बदलकर निष्कर्ष न निकालें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does zero dipole potential on the equatorial plane not imply zero field?",
+          "hi": "द्विध्रुव के निरक्षीय तल में V=0 होने से E=0 क्यों नहीं?"
+        },
+        "answer": {
+          "en": "Its spatial gradient can be nonzero even where the potential value is zero.",
+          "hi": "विभव मान शून्य हो सकता है, जबकि आसपास विभव का स्थानिक परिवर्तन अशून्य हो।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Equipotentials and field relation",
+        "hi": "समविभव पृष्ठ और क्षेत्र संबंध"
+      },
+      "paragraphs": [
+        {
+          "en": "Equipotential surfaces permit no electrostatic work along them. E is normal to such surfaces and points towards decreasing potential: Ex=−dV/dx. Constant potential throughout a region gives zero field there; a single zero-valued point does not. Surface spacing indicates relative field when equal potential increments are compared.",
+          "hi": "समविभव पृष्ठ (Equipotential surface) के हर बिंदु पर विभव समान होता है। इस पृष्ठ पर आवेश चलाने में विद्युत कार्य शून्य है, क्योंकि ΔV=0 है। विद्युत क्षेत्र समविभव पृष्ठ के लंबवत होता है; यदि स्पर्शीय घटक होता तो पृष्ठ पर चलने से कार्य और विभव परिवर्तन होता। बिंदु आवेश के समविभव पृष्ठ संकेंद्रीय गोले हैं। एकसमान क्षेत्र में क्षेत्र के लंबवत समतल समविभव होते हैं। एक ही विभवांतर के लिए पास-पास पृष्ठ अधिक क्षेत्र का संकेत देते हैं। एक विमा में Ex=−dV/dx है। ऋण चिह्न बताता है कि क्षेत्र घटते विभव की ओर होता है। इस नियम में धन और ऋण परीक्षण आवेश की गति अलग हो सकती है; ऋण आवेश का बल क्षेत्र के विपरीत होता है। यदि किसी क्षेत्र में हर स्थान पर विभव स्थिर है तो वहाँ क्षेत्र शून्य है। केवल किसी एक बिंदु पर विभव शून्य हो तो ऐसा निष्कर्ष नहीं निकलता। चित्र में खींचे समविभव वास्तविक दीवारें नहीं; वे स्थान में विभव का सुविधाजनक मानचित्र हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Find Ex for V(x)=10−2x with x in metres.",
+          "hi": "V(x)=10−2x V हो और x मीटर में हो तो Ex क्या होगा?"
+        },
+        "answer": {
+          "en": "Ex=+2 V/m.",
+          "hi": "Ex=+2 V/m।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Potential energy of a system",
+        "hi": "निकाय की स्थितिज ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "Pair energy retains charge signs and counts each pair once. For a dipole in a uniform external field U=−pE cosθ. Parallel alignment minimises energy; antiparallel alignment maximises it. Quasistatic rotation work equals ΔU. Energy uses cosine while torque magnitude uses sine.",
+          "hi": "2 बिंदु आवेशों की वैद्युत स्थितिज ऊर्जा (Electrostatic potential energy) U=kq1q2/r है, जब अनंत पृथक्करण पर शून्य चुना हो। समान चिह्न के लिए U धन और विपरीत चिह्न के लिए ऋण है। धन ऊर्जा का अर्थ उस विन्यास को अनंत से धीरे बनाने में बाहरी कार्य देना पड़ता है; ऋण ऊर्जा आकर्षक विन्यास से जुड़ी है। अनेक आवेशों में प्रत्येक अलग युग्म केवल 1 बार गिनते हैं। 3 आवेशों के लिए 3 युग्म होते हैं, 6 नहीं। किसी बाहरी स्थिर विभव में परीक्षण आवेश की ऊर्जा qV है; इसमें स्रोतों की स्वयं की ऊर्जा को फिर जोड़ना अलग प्रश्न है। एकसमान क्षेत्र में द्विध्रुव की ऊर्जा U=−pE cosθ है। p समानांतर E होने पर न्यूनतम −pE और प्रतिसमानांतर पर अधिकतम +pE है। धीरे घुमाने का बाहरी कार्य अंतिम और प्रारंभिक ऊर्जा का अंतर है। ऊर्जा और आघूर्ण के कोणीय सूत्रों को न मिलाएँ: ऊर्जा में cosθ, आघूर्ण के परिमाण में sinθ आता है। दोनों के मात्रक भी अलग अभिव्यक्तियों में अपने अर्थ सहित लिखें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many distinct pair terms occur for three charges?",
+          "hi": "3 बिंदु आवेशों के निकाय में ऊर्जा के कितने अलग युग्म होंगे?"
+        },
+        "answer": {
+          "en": "Three pair terms.",
+          "hi": "3: (1,2),(1,3),(2,3)।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Conductors and shielding",
+        "hi": "चालक और परिरक्षण"
+      },
+      "paragraphs": [
+        {
+          "en": "An equilibrium conductor has zero interior field and constant potential, not necessarily zero potential. Surface charge is generally nonuniform. A charge-free cavity in a closed conductor is shielded from external electrostatic fields. Charges inside a cavity create induced inner-surface charge and require separate analysis. Earthing allows charge exchange with Earth.",
+          "hi": "स्थिरवैद्युत संतुलन (Electrostatic equilibrium) में चालक के भीतर वैद्युत क्षेत्र शून्य होता है, क्योंकि अशून्य क्षेत्र मुक्त आवेशों को चलाता रहेगा। पूरा जुड़ा चालक समान विभव पर होता है; इसका अर्थ विभव आवश्यक रूप से शून्य होना नहीं। अतिरिक्त मुक्त आवेश चालक की बाहरी सतह पर रहता है, यदि भीतर की गुहा में कोई आवेश न हो। सतह पर क्षेत्र का स्पर्शीय घटक शून्य और बाहरी अभिलंब घटक स्थानीय पृष्ठीय घनत्व से जुड़ा है। तीखे भागों पर आवेश घनत्व और क्षेत्र अधिक हो सकते हैं, इसलिए चालक के हर भाग का सतही घनत्व बराबर मानना सही नहीं। खोखले बंद चालक की आवेशरहित गुहा बाहरी स्थिरवैद्युत प्रभाव से परिरक्षित होती है। गुहा में आवेश रखने पर आंतरिक सतह पर प्रेरित आवेश का नया वितरण बनता है; उसे पुराने शून्य-गुहा उदाहरण से सीधे न मिलाएँ। अर्थिंग (Earthing) पृथ्वी से आवेश विनिमय कर सकती है। किसी चालक को जमीन से जोड़ना और केवल 2 चालकों को आपस में जोड़ना भिन्न शर्तें हैं। परिरक्षण वास्तविक यंत्रों में उपयोगी है, पर तेजी से बदलते क्षेत्रों के लिए केवल स्थिरवैद्युत तर्क पर्याप्त नहीं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Must a conductor at zero internal field have zero potential?",
+          "hi": "किसी चालक में E=0 होने पर क्या उसका V अवश्य 0 है?"
+        },
+        "answer": {
+          "en": "No. It can have a constant nonzero potential.",
+          "hi": "नहीं। वह स्थिर गैरशून्य विभव पर भी हो सकता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Capacitance and dielectric polarisation",
+        "hi": "धारिता और परावैद्युत ध्रुवण"
+      },
+      "paragraphs": [
+        {
+          "en": "C=Q/V uses the magnitude on one plate. Ideal parallel plates give C=ε0A/d, or KC when fully filled by a linear dielectric. Capacitance depends on geometry and medium, not independently on Q. Insertion with a battery connected fixes V; isolation fixes Q, producing different energy changes.",
+          "hi": "संधारित्र (Capacitor) में 2 चालक समान परिमाण के विपरीत आवेश रखते हैं। धारिता (Capacitance) C=Q/V है, जहाँ Q एक प्लेट के आवेश का परिमाण और V प्लेटों का विभवांतर है। यह कुल संयुक्त आवेश नहीं, क्योंकि आदर्श संधारित्र का कुल आवेश शून्य हो सकता है। धारिता ज्यामिति और माध्यम पर निर्भर करती है; सामान्य रैखिक संधारित्र में Q बढ़ाने पर V उसी अनुपात में बढ़ता है, इसलिए C स्थिर रहता है। बड़े क्षेत्रफल A और छोटी दूरी d वाली समांतर प्लेटों के लिए किनारी प्रभाव उपेक्षित करने पर C=ε0A/d है। पूरे अंतराल में रैखिक परावैद्युत (Dielectric) भरने पर C=Kε0A/d हो जाता है। पदार्थ में बंध आवेशों का ध्रुवण प्रभावी क्षेत्र को बदलता है। K का उपयोग करते समय पूरा भराव, उपयुक्त रैखिक व्यवहार और विद्युत भंग से नीचे क्षेत्र जैसी शर्तें ध्यान रखें। बैटरी जुड़ी हो तो V स्थिर, अलग हो तो आदर्शतः Q स्थिर रहता है। इसी कारण परावैद्युत डालने पर ऊर्जा और क्षेत्र के निष्कर्ष दोनों स्थितियों में अलग होते हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "For an isolated capacitor fully filled with dielectric K, how does voltage change?",
+          "hi": "बैटरी हटाकर परावैद्युत भरने पर Q स्थिर हो तो V कैसे बदलता है?"
+        },
+        "answer": {
+          "en": "It decreases to V/K while charge stays fixed.",
+          "hi": "C, K गुना और V, 1/K गुना होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Capacitor combinations",
+        "hi": "संधारित्रों के संयोजन"
+      },
+      "paragraphs": [
+        {
+          "en": "Parallel capacitors share voltage and their capacitances add. Ordinary series capacitors with initially neutral intermediate conductors share charge magnitude, so reciprocal capacitances add. Check equivalent capacitance against the smallest/largest component. Node connectivity rather than drawing position identifies series and parallel arrangements.",
+          "hi": "समांतर संयोजन (Parallel combination) में प्रत्येक संधारित्र का विभवांतर समान होता है और कुल स्रोत आवेश अलग प्लेट आवेशों का योग है। इसलिए Ceq=C1+C2+… मिलता है। श्रेणी संयोजन (Series combination) में बीच के पृथक जुड़े चालक आरंभ में उदासीन हों तो प्रत्येक संधारित्र के आवेश का परिमाण समान होता है और कुल विभवांतर अलग विभवांतरों का योग है। फलतः 1/Ceq=1/C1+1/C2+… होता है। 2 धन धारिताओं का श्रेणी तुल्य सबसे छोटी धारिता से भी कम और समांतर तुल्य सबसे बड़ी से भी अधिक होता है। यह अनुमान गणना की जाँच में उपयोगी है। किसी चित्र का आकार या पास-पास होना संयोजन तय नहीं करता; वास्तविक जुड़े नोड पहचानें। एक ही 2 नोडों के बीच तत्व समांतर हैं। बीच का नोड अन्य शाखा से जुड़ जाए तो साधारण श्रेणी शर्त टूट सकती है। समान μF इकाइयों में अनुपात गणना कर सकते हैं, लेकिन ऊर्जा में J प्राप्त करने हेतु धारिता F में बदलें। संयोजन सूत्रों को प्रतिरोध के सूत्रों से उलटा याद न करें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What bound should a series equivalent of 2 μF and 3 μF satisfy?",
+          "hi": "2 μF और 3 μF के श्रेणी तुल्य की अपेक्षित सीमा क्या है?"
+        },
+        "answer": {
+          "en": "It must be below 2 μF; its value is 1.2 μF.",
+          "hi": "2 μF से कम; सही मान 1.2 μF।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Energy stored and choosing constraints",
+        "hi": "संचित ऊर्जा और स्थिर शर्तें"
+      },
+      "paragraphs": [
+        {
+          "en": "The three capacitor-energy formulas are equivalent for a linear capacitor. Identify fixed Q or fixed V before discussing changes. At fixed voltage increased C raises capacitor energy and involves source energy exchange; at fixed charge it lowers stored energy. Vacuum field energy density is ε0E²/2.",
+          "hi": "संधारित्र को धीरे आवेशित करने में बढ़ते विभव के विरुद्ध कार्य करना पड़ता है। यह ऊर्जा विद्युत क्षेत्र में संचित होती है और आदर्श रैखिक संधारित्र के लिए U=Q²/(2C)=CV²/2=QV/2 है। सूत्रों में V उसी संधारित्र का विभवांतर है; किसी दूसरी शाखा का स्रोत मान बिना संबंध जाँचे न रखें। निर्वात के क्षेत्र की ऊर्जा घनत्व u=ε0E²/2 है। रैखिक परावैद्युत की सरल स्थिति में ε का उपयोग होता है, पर पदार्थ के पूर्ण ऊर्जा विश्लेषण में शर्तें स्पष्ट होनी चाहिए। बैटरी जुड़ी होने पर धारिता बढ़े तो संधारित्र की ऊर्जा CV²/2 बढ़ती है, ऊर्जा स्रोत से आती है। बैटरी से अलग होने पर Q स्थिर है और U=Q²/(2C) घटती है; शेष ऊर्जा यांत्रिक कार्य या अन्य रूपों में जा सकती है। इसलिए 'परावैद्युत डालने से ऊर्जा हमेशा घटती है' अधूरा कथन है। गणना में पहले स्थिर राशि लिखें, फिर उपयुक्त ऊर्जा रूप चुनें और अंतिम इकाई J जाँचें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "How does energy change when voltage doubles at fixed capacitance?",
+          "hi": "एक ही C पर V दुगुना करने से संचित ऊर्जा कितनी होती है?"
+        },
+        "answer": {
+          "en": "It becomes four times as large.",
+          "hi": "4 गुनी, क्योंकि U∝V²।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "V=kq/r; U=kq1q2/r",
+      "meaning": {
+        "en": "Potential and pair energy, zero at infinity.",
+        "hi": "अनंत पर शून्य संदर्भ में विभव और युग्म ऊर्जा।"
+      },
+      "units": {
+        "en": "V: J/C; U: J",
+        "hi": "V: J/C; U: J"
+      }
+    },
+    {
+      "expression": "Ex=−dV/dx",
+      "meaning": {
+        "en": "Electric field is the negative spatial potential gradient.",
+        "hi": "क्षेत्र विभव का ऋणात्मक स्थानिक प्रवणता है।"
+      },
+      "units": {
+        "en": "V/m = N/C",
+        "hi": "V/m = N/C"
+      }
+    },
+    {
+      "expression": "C=Q/V; C=Kε0A/d",
+      "meaning": {
+        "en": "Capacitance; ideal fully filled parallel plates.",
+        "hi": "धारिता; पूर्ण परावैद्युत भरी आदर्श समांतर प्लेटें।"
+      },
+      "units": {
+        "en": "F = C/V",
+        "hi": "F = C/V"
+      }
+    },
+    {
+      "expression": "U=CV²/2=Q²/(2C)",
+      "meaning": {
+        "en": "Stored electrostatic energy.",
+        "hi": "संचित स्थिरवैद्युत ऊर्जा।"
+      },
+      "units": {
+        "en": "J",
+        "hi": "J"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find potential 0.30 m from +2 nC.",
+        "hi": "+2 nC से 0.30 m पर विभव निकालें।"
+      },
+      "given": {
+        "en": "q=2×10^-9 C;r=0.30 m;k=9×10^9.",
+        "hi": "q=2×10^-9 C;r=0.30 m;k=9×10^9।"
+      },
+      "find": {
+        "en": "V relative to infinity.",
+        "hi": "अनंत के सापेक्ष V।"
+      },
+      "formula": {
+        "en": "V=kq/r",
+        "hi": "V=kq/r"
+      },
+      "steps": [
+        {
+          "en": "V=18/0.30=60 V.",
+          "hi": "V=18/0.30=60 V।"
+        }
+      ],
+      "answer": {
+        "en": "+60 V.",
+        "hi": "+60 V।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find capacitance for charge 12 μC at 6 V.",
+        "hi": "6 V पर 12 μC आवेश के लिए धारिता निकालें।"
+      },
+      "given": {
+        "en": "Q=12 μC;V=6 V.",
+        "hi": "Q=12 μC;V=6 V।"
+      },
+      "find": {
+        "en": "C.",
+        "hi": "C।"
+      },
+      "formula": {
+        "en": "C=Q/V",
+        "hi": "C=Q/V"
+      },
+      "steps": [
+        {
+          "en": "C=12/6=2 μF.",
+          "hi": "C=12/6=2 μF।"
+        }
+      ],
+      "answer": {
+        "en": "2 μF.",
+        "hi": "2 μF।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find equivalents of 2 μF and 3 μF in series and parallel.",
+        "hi": "2 μF और 3 μF का श्रेणी व समांतर तुल्य निकालें।"
+      },
+      "given": {
+        "en": "C1=2 μF;C2=3 μF.",
+        "hi": "C1=2 μF;C2=3 μF।"
+      },
+      "find": {
+        "en": "Cs and Cp.",
+        "hi": "Cs और Cp।"
+      },
+      "formula": {
+        "en": "Cs=C1C2/(C1+C2);Cp=C1+C2",
+        "hi": "Cs=C1C2/(C1+C2);Cp=C1+C2"
+      },
+      "steps": [
+        {
+          "en": "Cs=6/5=1.2 μF.",
+          "hi": "Cs=6/5=1.2 μF।"
+        },
+        {
+          "en": "Cp=5 μF.",
+          "hi": "Cp=5 μF।"
+        }
+      ],
+      "answer": {
+        "en": "Series 1.2 μF; parallel 5 μF.",
+        "hi": "श्रेणी 1.2 μF; समांतर 5 μF।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A 4 μF capacitor has 10 V across it. Find energy.",
+        "hi": "4 μF संधारित्र पर 10 V है। ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "C=4×10^-6 F;V=10 V.",
+        "hi": "C=4×10^-6 F;V=10 V।"
+      },
+      "find": {
+        "en": "Stored U.",
+        "hi": "संचित U।"
+      },
+      "formula": {
+        "en": "U=CV²/2",
+        "hi": "U=CV²/2"
+      },
+      "steps": [
+        {
+          "en": "U=(4×10^-6)(100)/2=2×10^-4 J.",
+          "hi": "U=(4×10^-6)(100)/2=2×10^-4 J।"
+        }
+      ],
+      "answer": {
+        "en": "2×10^-4 J = 0.20 mJ.",
+        "hi": "2×10^-4 J = 0.20 mJ।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "An isolated 2 μF capacitor initially at 12 V is fully filled with K=3. Find final voltage and energy.",
+        "hi": "12 V पर 2 μF संधारित्र बैटरी से अलग है। K=3 पूर्ण भरें। अंतिम V और U निकालें।"
+      },
+      "given": {
+        "en": "C0=2 μF;V0=12 V;Q fixed;K=3.",
+        "hi": "C0=2 μF;V0=12 V;Q स्थिर;K=3।"
+      },
+      "find": {
+        "en": "Final C,V,U.",
+        "hi": "अंतिम C,V,U।"
+      },
+      "formula": {
+        "en": "Q=C0V0;C=KC0;V=Q/C;U=Q²/(2C)",
+        "hi": "Q=C0V0;C=KC0;V=Q/C;U=Q²/(2C)"
+      },
+      "steps": [
+        {
+          "en": "Q=24 μC; final C=6 μF.",
+          "hi": "Q=24 μC; अंतिम C=6 μF।"
+        },
+        {
+          "en": "V=24/6=4 V.",
+          "hi": "V=24/6=4 V।"
+        },
+        {
+          "en": "U=(6×10^-6)(4²)/2=48×10^-6 J.",
+          "hi": "U=(6×10^-6)(4²)/2=48×10^-6 J।"
+        }
+      ],
+      "answer": {
+        "en": "6 μF,4 V,48 μJ.",
+        "hi": "6 μF,4 V,48 μJ।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Potential is a",
+        "hi": "विभव है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Scalar",
+            "hi": "अदिश"
+          },
+          "reason": {
+            "en": "Potential contributions add algebraically.",
+            "hi": "विभव बीजीय रूप से जुड़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Vector",
+            "hi": "सदिश"
+          },
+          "reason": {
+            "en": "Electric field, not potential, is a vector.",
+            "hi": "क्षेत्र सदिश है, विभव नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Force",
+            "hi": "बल"
+          },
+          "reason": {
+            "en": "Its unit is J/C, not N.",
+            "hi": "मात्रक J/C है, N नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Charge",
+            "hi": "आवेश"
+          },
+          "reason": {
+            "en": "Charge is measured in C.",
+            "hi": "आवेश C में मापा जाता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Electric-field work for moving q through ΔV is",
+        "hi": "q को ΔV से ले जाने में विद्युत क्षेत्र का कार्य"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−qΔV",
+            "hi": "−qΔV"
+          },
+          "reason": {
+            "en": "Field work is negative change in potential energy.",
+            "hi": "क्षेत्र कार्य स्थितिज ऊर्जा परिवर्तन का ऋणात्मक।"
+          }
+        },
+        {
+          "text": {
+            "en": "+qΔV",
+            "hi": "+qΔV"
+          },
+          "reason": {
+            "en": "This is quasistatic external work.",
+            "hi": "यह धीरे ले जाने का बाहरी कार्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "q/ΔV",
+            "hi": "q/ΔV"
+          },
+          "reason": {
+            "en": "This has capacitance units, not work.",
+            "hi": "यह धारिता मात्रक देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "सदा शून्य"
+          },
+          "reason": {
+            "en": "Only suitable zero-energy-change paths give zero.",
+            "hi": "केवल उपयुक्त शून्य ऊर्जा परिवर्तन पर शून्य।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Electrostatic field is directed towards",
+        "hi": "स्थिरवैद्युत क्षेत्र की दिशा"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Decreasing potential",
+            "hi": "घटता विभव"
+          },
+          "reason": {
+            "en": "E is the negative potential gradient.",
+            "hi": "E विभव की ऋणात्मक प्रवणता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Increasing potential",
+            "hi": "बढ़ता विभव"
+          },
+          "reason": {
+            "en": "This reverses the gradient sign.",
+            "hi": "यह प्रवणता चिह्न उलटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Constant potential along E",
+            "hi": "E के साथ स्थिर विभव"
+          },
+          "reason": {
+            "en": "Nonzero field gives change along its direction.",
+            "hi": "अशून्य क्षेत्र अपनी दिशा में परिवर्तन देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only positive potential",
+            "hi": "केवल धन विभव"
+          },
+          "reason": {
+            "en": "Direction depends on differences, not absolute sign.",
+            "hi": "दिशा अंतर पर निर्भर, केवल चिह्न पर नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Work along an equipotential is",
+        "hi": "समविभव पर कार्य"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "ΔV=0 gives zero electrostatic work.",
+            "hi": "ΔV=0 से विद्युत कार्य शून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always positive",
+            "hi": "सदा धनात्मक"
+          },
+          "reason": {
+            "en": "No potential change is present.",
+            "hi": "विभव परिवर्तन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always negative",
+            "hi": "सदा ऋणात्मक"
+          },
+          "reason": {
+            "en": "No potential change is present.",
+            "hi": "विभव परिवर्तन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Equal to q",
+            "hi": "q के बराबर"
+          },
+          "reason": {
+            "en": "Work and charge have different dimensions.",
+            "hi": "कार्य और आवेश की विमाएँ अलग।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For fixed geometry a linear capacitor has C",
+        "hi": "निश्चित ज्यामिति के रैखिक संधारित्र की C"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Independent of applied Q within its linear range",
+            "hi": "रैखिक सीमा में लगाए Q से स्वतंत्र"
+          },
+          "reason": {
+            "en": "Q and V rise in proportion.",
+            "hi": "Q और V समान अनुपात में बढ़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always equal to Q",
+            "hi": "सदा Q के बराबर"
+          },
+          "reason": {
+            "en": "C=Q/V, with different units.",
+            "hi": "C=Q/V; मात्रक अलग।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero because net charge is zero",
+            "hi": "कुल आवेश शून्य से शून्य"
+          },
+          "reason": {
+            "en": "Q means one plate magnitude.",
+            "hi": "Q,1 प्लेट का परिमाण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite for all plates",
+            "hi": "हर प्लेट के लिए अनंत"
+          },
+          "reason": {
+            "en": "Finite geometry gives finite capacitance.",
+            "hi": "परिमित ज्यामिति से परिमित धारिता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Doubling ideal parallel-plate separation changes C to",
+        "hi": "आदर्श प्लेट दूरी दुगुनी करने पर C"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "C/2",
+            "hi": "C/2"
+          },
+          "reason": {
+            "en": "C is inversely proportional to separation.",
+            "hi": "C दूरी के व्युत्क्रमानुपाती।"
+          }
+        },
+        {
+          "text": {
+            "en": "2C",
+            "hi": "2C"
+          },
+          "reason": {
+            "en": "That would occur if area doubled.",
+            "hi": "यह क्षेत्रफल दुगुना करने पर।"
+          }
+        },
+        {
+          "text": {
+            "en": "4C",
+            "hi": "4C"
+          },
+          "reason": {
+            "en": "There is no square dependence on d.",
+            "hi": "d पर वर्ग निर्भरता नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "C",
+            "hi": "C"
+          },
+          "reason": {
+            "en": "Separation is part of the geometry.",
+            "hi": "दूरी ज्यामिति का भाग है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Capacitors in parallel share",
+        "hi": "समांतर संधारित्रों में समान"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Voltage",
+            "hi": "विभवांतर"
+          },
+          "reason": {
+            "en": "They connect to the same two nodes.",
+            "hi": "वे समान 2 नोड से जुड़े हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Charge in every case",
+            "hi": "हर स्थिति में आवेश"
+          },
+          "reason": {
+            "en": "Different capacitances give different Q at equal V.",
+            "hi": "समान V पर अलग C से अलग Q।"
+          }
+        },
+        {
+          "text": {
+            "en": "Energy in every case",
+            "hi": "हर स्थिति में ऊर्जा"
+          },
+          "reason": {
+            "en": "U depends on C at common V.",
+            "hi": "समान V पर U,C पर निर्भर।"
+          }
+        },
+        {
+          "text": {
+            "en": "Plate area",
+            "hi": "प्लेट क्षेत्रफल"
+          },
+          "reason": {
+            "en": "Circuit wiring does not fix plate geometry.",
+            "hi": "जुड़ाव प्लेट ज्यामिति तय नहीं करता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Capacitor energy at fixed C scales as",
+        "hi": "निश्चित C पर ऊर्जा निर्भर"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "V²",
+            "hi": "V²"
+          },
+          "reason": {
+            "en": "U=CV²/2.",
+            "hi": "U=CV²/2।"
+          }
+        },
+        {
+          "text": {
+            "en": "V",
+            "hi": "V"
+          },
+          "reason": {
+            "en": "This omits the voltage square.",
+            "hi": "इसमें विभव का वर्ग छूटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/V",
+            "hi": "1/V"
+          },
+          "reason": {
+            "en": "Energy rises rather than falls with |V|.",
+            "hi": "|V| से ऊर्जा बढ़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/V²",
+            "hi": "1/V²"
+          },
+          "reason": {
+            "en": "This is the inverse of the correct dependence.",
+            "hi": "सही निर्भरता का उलटा।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An isolated charged capacitor fully filled with K has final V",
+        "hi": "पृथक आवेशित संधारित्र में K पूर्ण भरने पर अंतिम V"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "V0/K",
+            "hi": "V0/K"
+          },
+          "reason": {
+            "en": "Q is fixed and C becomes KC0.",
+            "hi": "Q स्थिर और C=KC0।"
+          }
+        },
+        {
+          "text": {
+            "en": "KV0",
+            "hi": "KV0"
+          },
+          "reason": {
+            "en": "That would require a different charge constraint.",
+            "hi": "इसके लिए अलग आवेश शर्त चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "V0 always",
+            "hi": "सदा V0"
+          },
+          "reason": {
+            "en": "A connected ideal battery would hold V fixed.",
+            "hi": "जुड़ी आदर्श बैटरी V स्थिर रखेगी।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero for all finite K",
+            "hi": "हर परिमित K पर शून्य"
+          },
+          "reason": {
+            "en": "Finite increased C gives finite nonzero V if Q≠0.",
+            "hi": "Q≠0 पर परिमित C से अशून्य V।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Inside an equilibrium conductor potential is",
+        "hi": "संतुलित चालक के भीतर विभव"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Constant",
+            "hi": "स्थिर"
+          },
+          "reason": {
+            "en": "Zero internal field implies no internal potential gradient.",
+            "hi": "भीतर क्षेत्र शून्य से प्रवणता शून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "Necessarily zero",
+            "hi": "अनिवार्यतः शून्य"
+          },
+          "reason": {
+            "en": "The constant can be nonzero.",
+            "hi": "स्थिर मान अशून्य हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Proportional to distance",
+            "hi": "दूरी के समानुपाती"
+          },
+          "reason": {
+            "en": "That would imply nonzero internal field.",
+            "hi": "इससे भीतर अशून्य क्षेत्र होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined everywhere",
+            "hi": "हर जगह अपरिभाषित"
+          },
+          "reason": {
+            "en": "A reference gives a well-defined potential.",
+            "hi": "संदर्भ से विभव परिभाषित है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why can V=0 and E≠0 at a point?",
+        "hi": "1 बिंदु पर V=0 और E≠0 क्यों संभव?"
+      },
+      "answer": {
+        "en": "Value and spatial gradient are different; a dipole equatorial point illustrates this.",
+        "hi": "मान और स्थानिक प्रवणता अलग हैं; द्विध्रुव का निरक्षीय बिंदु उदाहरण।"
+      }
+    },
+    {
+      "question": {
+        "en": "State the role of the negative sign in E=−gradV.",
+        "hi": "E=−gradV में ऋण चिह्न का अर्थ बताएँ।"
+      },
+      "answer": {
+        "en": "The field points towards decreasing potential.",
+        "hi": "क्षेत्र घटते विभव की ओर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain conductor shielding for a charge-free cavity.",
+        "hi": "आवेशरहित गुहा का चालक परिरक्षण समझाएँ।"
+      },
+      "answer": {
+        "en": "Induced surface charge rearranges until the electrostatic field in the closed charge-free cavity vanishes.",
+        "hi": "प्रेरित सतही आवेश पुनर्व्यवस्थित होकर बंद आवेशरहित गुहा का क्षेत्र शून्य करते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Compare series and parallel capacitor rules.",
+        "hi": "श्रेणी और समांतर धारिता नियम मिलाएँ।"
+      },
+      "answer": {
+        "en": "Series shares charge and adds inverse capacitances; parallel shares voltage and adds capacitances.",
+        "hi": "श्रेणी में आवेश समान और व्युत्क्रम धारिताएँ जुड़ती हैं; समांतर में V समान और धारिताएँ जुड़ती हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why must battery condition be stated during dielectric insertion?",
+        "hi": "परावैद्युत डालने में बैटरी की स्थिति क्यों बताएँ?"
+      },
+      "answer": {
+        "en": "It determines whether V or Q is fixed and therefore how energy changes.",
+        "hi": "इसी से V या Q स्थिर तय होता है और ऊर्जा परिवर्तन बदलता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find energy change when a dipole turns from parallel to antiparallel.",
+        "hi": "द्विध्रुव समानांतर से प्रतिसमानांतर हो तो ऊर्जा परिवर्तन निकालें।"
+      },
+      "answer": {
+        "en": "ΔU=(+pE)−(−pE)=2pE.",
+        "hi": "ΔU=(+pE)−(−pE)=2pE।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Potential is a signed scalar.",
+      "hi": "विभव चिह्न सहित अदिश है।"
+    },
+    {
+      "en": "Electric field follows decreasing potential.",
+      "hi": "क्षेत्र घटते विभव की ओर होता है।"
+    },
+    {
+      "en": "Equilibrium conductors are equipotential.",
+      "hi": "संतुलित चालक समविभव हैं।"
+    },
+    {
+      "en": "C depends on geometry and medium.",
+      "hi": "C ज्यामिति और माध्यम पर निर्भर।"
+    },
+    {
+      "en": "Choose fixed Q or fixed V before energy analysis.",
+      "hi": "ऊर्जा विश्लेषण से पहले स्थिर Q या V चुनें।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not equate zero potential with zero field, count charge pairs twice, or confuse series capacitor rules with resistance rules.",
+    "hi": "शून्य विभव को शून्य क्षेत्र न मानें, युग्म दो बार न गिनें, धारिता नियम प्रतिरोध नियम से न मिलाएँ।"
+  },
+  "goal": {
+    "en": "Relate potential, work, conductors and capacitor energy with explicit constraints.",
+    "hi": "विभव, कार्य, चालक और संधारित्र ऊर्जा को स्पष्ट शर्तों से जोड़ें।"
+  },
+  "conceptMap": "विभव → कार्य व ऊर्जा → समविभव → चालक → धारिता → संयोजन → संचित ऊर्जा",
+  "conceptMapEn": "Potential → work and energy → equipotentials → conductors → capacitance → combinations → stored energy",
+  "editionBasis": {
+    "en": "Original study explanations for current NCERT Physics Class XII and UP Board 2026–27; use the prescribed textbook and practical work alongside.",
+    "hi": "वर्तमान NCERT भौतिकी कक्षा 12 और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ; निर्धारित पुस्तक और प्रयोगात्मक कार्य भी साथ करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics XII Part I Chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leph102.pdf"
+    },
+    {
+      "title": "UPMSP Physics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/151-Physics-Class-12.pdf"
+    }
+  ]
+}

@@ -1,0 +1,894 @@
+{
+  "id": 6,
+  "title": {
+    "en": "Triangles",
+    "hi": "त्रिभुज"
+  },
+  "goal": {
+    "en": "Use correspondence, parallel lines and valid similarity criteria to justify proportional lengths.",
+    "hi": "संगति, समांतर रेखाएँ और सही समरूपता कसौटियों से आनुपातिक लंबाइयाँ सिद्ध करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Same shape is not always same size",
+        "hi": "समान आकृति, पर आकार हमेशा समान नहीं"
+      },
+      "body": {
+        "en": "Similar figures have the same shape, while congruent figures have the same shape and size. Every congruent pair is therefore similar, but a similar pair need not be congruent. All circles are similar, and all squares are similar; two arbitrary rectangles are not necessarily similar. A rectangle with side ratio 2:1 cannot be obtained by uniformly enlarging a square. For polygons, corresponding angles must agree and corresponding sides must share one common ratio. Checking only one of these conditions is generally insufficient. A photograph stretched differently horizontally and vertically changes shape, even though it may still resemble the original object. An interactive triangle can be enlarged uniformly with a scale factor; the angles stay fixed while all corresponding lengths change together. The picture helps you notice this relationship, but a mathematical statement requires the named corresponding sides and angles. Measurements displayed to a few decimal places are approximate; do not use a tiny rounding difference to reject an exactly constructed similar pair. Read the construction rule as well as the measurements.",
+        "hi": "समरूप आकृतियों (Similar figures) की आकृति समान होती है, पर आकार अलग हो सकता है। सर्वांगसम आकृतियों (Congruent figures) की आकृति और आकार दोनों समान होते हैं। इसलिए सर्वांगसम आकृतियाँ समरूप भी हैं, पर हर समरूप जोड़ी सर्वांगसम नहीं होती। सभी वृत्त समरूप हैं और सभी वर्ग समरूप हैं। लेकिन कोई भी 2 आयत हमेशा समरूप नहीं होते। 2:1 भुजा अनुपात वाले आयत को किसी वर्ग का समान अनुपात में विस्तार करके नहीं बना सकते। बहुभुजों में संगत कोण बराबर और सभी संगत भुजाओं का एक ही अनुपात होना चाहिए। सामान्यतः केवल एक शर्त पर्याप्त नहीं है। तस्वीर को लंबाई और चौड़ाई में अलग-अलग गुणकों से खींचने पर उसकी आकृति बदल जाती है। सजीव त्रिभुज को समान पैमाना गुणक से बढ़ाने पर कोण स्थिर और सभी भुजाएँ उसी अनुपात में बढ़ती हैं। चित्र नियम पहचानने में सहायता करता है, लेकिन प्रमाण के लिए संगत भुजाएँ और कोण लिखना जरूरी है। स्क्रीन के दशमलव माप सन्निकट होते हैं। बहुत छोटे पूर्णांकन अंतर से सही रचना की समरूपता गलत न ठहराएँ; रचना का नियम भी पढ़ें।"
+      },
+      "formula": "Congruent ⇒ similar; similar ⇏ congruent",
+      "question": {
+        "en": "Are all rectangles similar?",
+        "hi": "क्या सभी आयत समरूप हैं?"
+      },
+      "answer": {
+        "en": "No; their corresponding length-to-breadth ratios may differ.",
+        "hi": "नहीं; उनकी लंबाई-चौड़ाई के संगत अनुपात अलग हो सकते हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Writing correspondence correctly",
+        "hi": "संगति को सही क्रम में लिखना"
+      },
+      "body": {
+        "en": "The order in a similarity statement carries information. If triangle ABC is similar to triangle PQR, then A corresponds to P, B to Q and C to R. Consequently AB/PQ = BC/QR = AC/PR and the matching angle pairs are A,P; B,Q; C,R. A rotated or reflected drawing does not change these mathematical pairings. Do not simply match the leftmost points in the two pictures. Mark equal angles or follow the information in the question, then write a correspondence table. If one pair has scale factor 3/2, every correctly matched side pair must have that same factor when the direction of the ratio is consistent. Reversing only one ratio destroys the statement. The reciprocal set of ratios is valid if all pairs are reversed together. In a calculation, leave a ratio in symbolic form before inserting numbers. This exposes a mismatched side immediately and makes the reasoning easier to review. Similarity notation is a compact summary of a correspondence already justified by a criterion, not proof by itself.",
+        "hi": "समरूपता कथन में अक्षरों का क्रम जानकारी देता है। ΔABC ∼ ΔPQR लिखने का अर्थ है A की संगति P से, B की Q से और C की R से है। इसलिए AB/PQ = BC/QR = AC/PR और संबंधित कोण बराबर होंगे। चित्र को घुमा देने या प्रतिबिंबित कर देने से ये संबंध नहीं बदलते। दोनों चित्रों के सबसे बाएँ बिंदुओं को अपने आप संगत न मानें। पहले बराबर कोण चिह्नित करें या प्रश्न की जानकारी पढ़ें, फिर संगति की सारणी बनाएँ। एक संगत भुजा का अनुपात 3/2 है, तो उसी दिशा में लिखी अन्य भुजाओं का अनुपात भी 3/2 होगा। केवल एक अनुपात उलटने से कथन गलत हो जाता है। सभी अनुपात एक साथ उलटने पर उनका व्युत्क्रम रूप सही रहता है। गणना में संख्या रखने से पहले भुजाओं वाला प्रतीकात्मक अनुपात लिखें। इससे गलत जोड़ी जल्दी दिखाई देती है और परीक्षक आपका तर्क समझ सकता है। समरूपता का संकेत पहले सिद्ध संगति को संक्षेप में लिखता है; केवल संकेत लिख देना अपने आप प्रमाण नहीं है।"
+      },
+      "formula": "ΔABC ∼ ΔPQR ⇒ AB/PQ = BC/QR = AC/PR",
+      "question": {
+        "en": "In ΔABC ∼ ΔXYZ, which side matches AC?",
+        "hi": "ΔABC ∼ ΔXYZ में AC की संगत भुजा कौन-सी है?"
+      },
+      "answer": {
+        "en": "XZ, because A↔X and C↔Z.",
+        "hi": "XZ, क्योंकि A↔X और C↔Z हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Basic Proportionality Theorem",
+        "hi": "आधारभूत समानुपातिकता प्रमेय"
+      },
+      "body": {
+        "en": "In triangle ABC, take D on AB and E on AC. If DE is parallel to BC, the Basic Proportionality Theorem states AD/DB = AE/EC. The theorem compares the two pieces into which each side is divided; it does not directly say AD/AB = AE/EC. A related valid whole-side relation is AD/AB = AE/AC. Understand which segments your symbols represent. One proof uses triangle areas. Triangles ADE and BDE have bases AD and DB on one line and share the altitude from E, so their area ratio is AD/DB. Similarly, the area ratio of ADE to CDE is AE/EC. Triangles BDE and CDE have common base DE and equal heights because B and C lie on the parallel BC. Their areas are equal, so the first two ratios are equal. This explains the theorem without trusting a ruler measurement. The positions D and E should be on the stated sides for the internal-division form used here; extensions require careful signed or external-division treatment.",
+        "hi": "त्रिभुज ABC में D को AB पर और E को AC पर लें। यदि DE ∥ BC है, तो आधारभूत समानुपातिकता प्रमेय (Basic Proportionality Theorem या BPT) से AD/DB = AE/EC होगा। यह दोनों भुजाओं के छोटे-छोटे भागों की तुलना करता है। इसे सीधे AD/AB = AE/EC नहीं लिख सकते। पूरा पक्ष लेने पर सही संबंध AD/AB = AE/AC है। हर संकेत किस रेखाखंड को दर्शाता है, यह समझें। प्रमाण के लिए क्षेत्रफल का विचार उपयोगी है। ΔADE और ΔBDE के आधार AD तथा DB एक रेखा पर हैं और E से उनकी ऊँचाई समान है। इसलिए उनके क्षेत्रफलों का अनुपात AD/DB है। इसी प्रकार ΔADE और ΔCDE के क्षेत्रफल का अनुपात AE/EC है। ΔBDE और ΔCDE का आधार DE समान है। B तथा C समांतर रेखा BC पर होने से उनकी ऊँचाइयाँ बराबर हैं; अतः उनके क्षेत्रफल बराबर हैं। इससे दोनों अनुपात बराबर मिलते हैं। इस आंतरिक विभाजन वाले रूप में D और E दिए हुए पक्षों पर हैं; बढ़ी हुई रेखाओं पर अलग सावधानी चाहिए।"
+      },
+      "formula": "DE ∥ BC ⇒ AD/DB = AE/EC",
+      "question": {
+        "en": "If AD=3, DB=6 and AE=4, find EC when DE∥BC.",
+        "hi": "DE∥BC, AD=3, DB=6, AE=4 हों, तो EC खोजें।"
+      },
+      "answer": {
+        "en": "3/6 = 4/EC, so EC=8.",
+        "hi": "3/6 = 4/EC, अतः EC=8।"
+      }
+    },
+    {
+      "title": {
+        "en": "The converse and the need for a reason",
+        "hi": "विलोम और कारण लिखने की आवश्यकता"
+      },
+      "body": {
+        "en": "The converse of BPT reverses the direction of reasoning. If D lies on AB, E lies on AC, and AD/DB = AE/EC, then DE is parallel to BC. Equality must use corresponding parts and nonzero denominators. For a proof, imagine the line through D parallel to BC meeting AC at E′. BPT gives AD/DB = AE′/E′C. The given ratio also equals AE/EC. There is only one internal point of AC dividing it in a fixed positive ratio, so E′ and E coincide; hence DE is the parallel line. In an exam solution, distinguish using BPT to find a missing length from using its converse to establish parallelism. A nearly parallel-looking segment does not satisfy the hypothesis by appearance. Compare exact ratios by simplifying fractions or cross multiplication, not merely by rounding both to the same decimal. If the ratios differ, the converse does not establish parallelism. This conclusion concerns the given D and E, not some nearby points that might have produced a parallel segment.",
+        "hi": "BPT का विलोम (Converse) तर्क की दिशा उलट देता है। D भुजा AB पर और E भुजा AC पर हो तथा AD/DB = AE/EC हो, तो DE ∥ BC है। अनुपातों में संगत भाग और अशून्य हर लेने आवश्यक हैं। प्रमाण समझने के लिए D से BC के समांतर रेखा खींचकर AC को E′ पर काटें। BPT से AD/DB = AE′/E′C मिलेगा। दी हुई शर्त के अनुसार यही अनुपात AE/EC भी है। किसी रेखाखंड को निश्चित धनात्मक अनुपात में भीतर बाँटने वाला बिंदु एक ही होता है। इसलिए E′ और E एक ही बिंदु हैं; अतः DE समांतर रेखा है। उत्तर में स्पष्ट लिखें कि आप लंबाई के लिए BPT लगा रहे हैं या समांतरता के लिए उसका विलोम। केवल देखने में लगभग समांतर लगना शर्त नहीं है। भिन्न सरल करके या वज्र गुणन से सही अनुपात मिलाएँ। दशमलव को समान अंक तक पूर्णांकित कर देने से गलत बराबरी न बनाएं। अनुपात अलग हों, तो विलोम से दिए हुए DE की समांतरता सिद्ध नहीं होगी।"
+      },
+      "formula": "AD/DB = AE/EC ⇒ DE ∥ BC",
+      "question": {
+        "en": "Does AD/DB=2/3 and AE/EC=4/6 establish DE∥BC?",
+        "hi": "AD/DB=2/3 और AE/EC=4/6 से DE∥BC मिलेगा?"
+      },
+      "answer": {
+        "en": "Yes; the ratios are exactly equal and D,E lie on the two sides.",
+        "hi": "हाँ; अनुपात ठीक बराबर हैं और D,E दोनों भुजाओं पर हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "AA and AAA similarity",
+        "hi": "AA और AAA समरूपता"
+      },
+      "body": {
+        "en": "The angles of a triangle sum to 180°. Therefore, if two angle pairs in two triangles are equal, the third pair is equal automatically. The AA criterion states that two triangles with two corresponding equal angles are similar. The equivalent AAA wording lists all three angle pairs. This is special to triangles: matching angles alone does not force two arbitrary quadrilaterals to have proportional sides. For example, rectangles all have four right angles but can have different side ratios. In a proof involving parallel lines, first state the alternate or corresponding angle equality, then use AA. In intersecting-line diagrams, vertically opposite angles may provide one pair, but another justified equality is still needed. The criterion gives proportional sides only after correspondence is settled. If triangle ABC has angles 40°, 60°, 80° and triangle PQR has corresponding angles 40°, 60°, 80°, their lengths may differ while shape agrees. Do not call this congruence unless additional size information makes the scale factor 1. Always write the criterion name beside the final similarity statement.",
+        "hi": "त्रिभुज के तीनों कोणों का योग 180° होता है। इसलिए 2 त्रिभुजों में 2 संगत कोण बराबर हों, तो तीसरी जोड़ी भी बराबर होगी। AA कसौटी कहती है कि ऐसे त्रिभुज समरूप हैं। AAA रूप में तीनों बराबर कोण लिखे जाते हैं। यह बात त्रिभुजों के लिए विशेष है। सामान्य चतुर्भुजों में केवल बराबर कोणों से भुजाओं का समान अनुपात नहीं मिलता। उदाहरण के लिए सभी आयतों के 4 समकोण हैं, पर उनके लंबाई-चौड़ाई अनुपात अलग हो सकते हैं। समांतर रेखाओं वाले प्रमाण में पहले संगत या एकांतर कोण की बराबरी का कारण लिखें, फिर AA लगाएँ। प्रतिच्छेदी रेखाओं में शीर्षाभिमुख कोण एक जोड़ी दे सकते हैं, पर दूसरी जोड़ी का उचित कारण भी चाहिए। संगति तय करने के बाद ही भुजाओं के अनुपात लिखें। 40°, 60°, 80° कोण वाले संगत त्रिभुजों का आकार अलग हो सकता है, पर आकृति समान होगी। केवल इससे सर्वांगसमता न लिखें। आकार का अनुपात 1 सिद्ध करने वाली अतिरिक्त जानकारी चाहिए। अंतिम समरूपता कथन के साथ कसौटी का नाम भी लिखना अच्छा है।"
+      },
+      "formula": "∠A=∠P and ∠B=∠Q ⇒ ΔABC ∼ ΔPQR",
+      "question": {
+        "en": "Two angles are 50° and 70°. What is the third?",
+        "hi": "2 कोण 50° तथा 70° हैं। तीसरा कितना है?"
+      },
+      "answer": {
+        "en": "180°−50°−70°=60°.",
+        "hi": "180°−50°−70°=60°।"
+      }
+    },
+    {
+      "title": {
+        "en": "SSS similarity and scale factor",
+        "hi": "SSS समरूपता और पैमाना गुणक"
+      },
+      "body": {
+        "en": "SSS similarity applies when all three pairs of corresponding sides are proportional. It does not require the side lengths to be equal. Triangles with sides 3,4,5 and 6,8,10 have a consistent scale factor 2, so they are similar. Checking only two ratios is not sufficient for SSS; the third ratio could disagree. Before applying the criterion, confirm that each set of three lengths can actually form a triangle using the triangle inequality. A list 2,3,8 cannot represent a triangle, regardless of ratios written beside it. When names are supplied, follow their stated correspondence rather than sorting lengths and then writing an unrelated vertex order. After similarity is established, a side of length 7 in the first triangle becomes 14 when the scale factor is 2. Perimeters scale by that same length factor because each corresponding side is multiplied by it. This gives a useful consistency check without needing a separate measurement. Be clear about direction: from small to large the factor is 2; from large to small it is 1/2.",
+        "hi": "SSS समरूपता कसौटी में तीनों संगत भुजा युग्म आनुपातिक होते हैं। भुजाओं का बराबर होना जरूरी नहीं है। 3,4,5 और 6,8,10 भुजाओं वाले त्रिभुजों में एक ही पैमाना गुणक 2 है; इसलिए वे समरूप हैं। केवल 2 अनुपातों की जाँच से SSS नहीं लगा सकते; तीसरा अनुपात अलग हो सकता है। पहले यह भी देखें कि हर 3 लंबाइयों से त्रिभुज बन सकता है। त्रिभुज असमता के अनुसार किसी भी 2 भुजाओं का योग तीसरी से बड़ा होना चाहिए। 2,3,8 से त्रिभुज नहीं बनेगा, चाहे साथ में कैसे भी अनुपात लिखे हों। नाम दिए हों, तो सही संगति के अनुसार ही अनुपात लिखें। केवल लंबाइयाँ क्रम में लगाकर गलत शीर्ष क्रम में समरूपता न लिखें। समरूपता सिद्ध होने और पैमाना गुणक 2 होने पर 7 लंबाई की संगत भुजा 14 होगी। परिमाप भी उसी गुणक से बदलता है, क्योंकि हर भुजा उसी अनुपात में बदली है। दिशा स्पष्ट रखें: छोटे से बड़े का गुणक 2, जबकि बड़े से छोटे का गुणक 1/2 है।"
+      },
+      "formula": "AB/PQ = BC/QR = AC/PR ⇒ ΔABC ∼ ΔPQR",
+      "question": {
+        "en": "Are sides 4,5,6 and 8,10,12 proportional?",
+        "hi": "क्या 4,5,6 तथा 8,10,12 भुजाएँ आनुपातिक हैं?"
+      },
+      "answer": {
+        "en": "Yes; corresponding ratios are all 1/2.",
+        "hi": "हाँ; संगत अनुपात सभी 1/2 हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "SAS requires the included angle",
+        "hi": "SAS में अंतर्गत कोण आवश्यक है"
+      },
+      "body": {
+        "en": "SAS similarity uses two proportional pairs of corresponding sides and equality of the included angles. The included angle is the angle between the two sides used in the ratios. If AB/PQ = AC/PR and angle A equals angle P, the triangles are similar because A and P lie between those matched sides. If instead an unrelated angle is supplied, this is not the SAS hypothesis. Two sides and a non-included angle, often called SSA, do not generally establish similarity. A flexible diagram can produce different triangles satisfying incomplete information, so avoid inventing a criterion from visual resemblance. To organise a proof, list the two side ratios, simplify them to the same number, identify the angle enclosed by those sides, and then write the similarity conclusion with the correct vertex order. A scale factor alone is not enough unless the angle condition is also present. The reason for that condition is geometric: sides of fixed lengths can open at different angles, creating different shapes. Holding the included angle fixed removes that freedom.",
+        "hi": "SAS समरूपता में 2 संगत भुजा युग्म आनुपातिक और उनके बीच के अंतर्गत कोण बराबर होते हैं। अंतर्गत कोण (Included angle) उन्हीं 2 भुजाओं के बीच बनता है जिनका अनुपात लिया गया है। AB/PQ = AC/PR और ∠A = ∠P होने पर SAS सही लगेगा, क्योंकि A तथा P उन्हीं भुजाओं के बीच हैं। यदि कोई दूसरा असंबंधित कोण दिया है, तो SAS की शर्त पूरी नहीं होती। 2 भुजाएँ और गैर-अंतर्गत कोण, जिसे अक्सर SSA कहा जाता है, सामान्यतः समरूपता सिद्ध नहीं करते। अधूरी जानकारी से अलग-अलग त्रिभुज बन सकते हैं; इसलिए देखने में मिलते चित्र से नई कसौटी न बना लें। प्रमाण व्यवस्थित करने के लिए पहले दोनों भुजा अनुपात लिखें और सरल करके बराबरी दिखाएँ। फिर उन भुजाओं के बीच वाला कोण पहचानें। उसके बाद सही शीर्ष क्रम में समरूपता निष्कर्ष लिखें। केवल पैमाना गुणक मिलने से काम पूरा नहीं होता; कोण की शर्त भी चाहिए। निश्चित लंबाइयों की भुजाएँ अलग कोणों पर खुल सकती हैं और अलग आकृतियाँ बना सकती हैं। अंतर्गत कोण को निश्चित करने से यही स्वतंत्रता समाप्त होती है।"
+      },
+      "formula": "AB/PQ = AC/PR and ∠A=∠P ⇒ SAS similarity",
+      "question": {
+        "en": "Which angle is included between AB and AC?",
+        "hi": "AB और AC के बीच अंतर्गत कोण कौन-सा है?"
+      },
+      "answer": {
+        "en": "Angle BAC, or angle A.",
+        "hi": "∠BAC, अर्थात ∠A।"
+      }
+    },
+    {
+      "title": {
+        "en": "From a diagram to an indirect measurement",
+        "hi": "चित्र से अप्रत्यक्ष मापन तक"
+      },
+      "body": {
+        "en": "Similarity allows inaccessible lengths to be calculated from accessible ones. A vertical pole and a vertical tree standing on level ground can form right triangles with their shadows. If sunlight is treated as parallel rays at the same time, each triangle has a right angle and the same angle made by a sunlight ray with the ground. AA establishes similarity, so height divided by shadow length is equal for the two objects. The model requires those assumptions; a sloping surface, tilted pole or shadows measured at different times can spoil the comparison. Draw the two triangles separately if an overlapping figure is confusing. Label corresponding heights and ground lengths with the same units before forming a ratio. Solve for the required height, then check whether a longer shadow reasonably corresponds to a taller object in this same-light model. Numerical agreement in an app illustrates a theorem rather than proving it for every triangle. A complete written answer therefore includes the geometric assumptions, the similarity criterion, the proportional relationship and the final length with its unit.",
+        "hi": "समरूपता से ऐसी लंबाइयाँ भी निकाल सकते हैं जिन्हें सीधे मापना कठिन है। समतल भूमि पर खड़ा ऊर्ध्वाधर खंभा और ऊर्ध्वाधर पेड़ अपनी छायाओं के साथ समकोण त्रिभुज बनाते हैं। एक ही समय पर सूर्य किरणों को समांतर मानें, तो दोनों में समकोण और किरण का भूमि से बना कोण बराबर होगा। AA से त्रिभुज समरूप हैं; अतः ऊँचाई और छाया की लंबाई का अनुपात समान है। ये मान्यताएँ जरूरी हैं। ढलानदार भूमि, झुका खंभा या अलग समय पर मापी छायाएँ तुलना बिगाड़ सकती हैं। मिले हुए चित्र में भ्रम हो, तो दोनों त्रिभुज अलग बना लें। संगत ऊँचाइयाँ और भूमि लंबाइयाँ समान इकाई में लिखें। अनुपात से अज्ञात ऊँचाई निकालें और उसी प्रकाश मॉडल में बड़ी छाया का अधिक ऊँचाई से संबंध जाँचें। ऐप में संख्याएँ मिल जाना हर त्रिभुज का प्रमाण नहीं है। पूरा लिखित उत्तर मान्यताएँ, समरूपता कसौटी, अनुपात और इकाई सहित अंतिम लंबाई बताता है। इस क्रम से दृश्य अनुभव एक स्पष्ट गणितीय तर्क में बदल जाता है।"
+      },
+      "formula": "Height 1 / shadow 1 = height 2 / shadow 2",
+      "question": {
+        "en": "A 2 m pole casts a 3 m shadow; a tree shadow is 12 m. Find the tree height.",
+        "hi": "2 m खंभे की छाया 3 m और पेड़ की छाया 12 m है। पेड़ की ऊँचाई खोजें।"
+      },
+      "answer": {
+        "en": "h/12=2/3, hence h=8 m under the stated assumptions.",
+        "hi": "दी गई मान्यताओं में h/12=2/3, अतः h=8 m।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Two triangles have corresponding angles 35° and 65°. Explain similarity.",
+        "hi": "2 त्रिभुजों में संगत कोण 35° और 65° हैं। समरूपता समझाएँ।"
+      },
+      "steps": [
+        {
+          "en": "Two corresponding angle pairs are equal.",
+          "hi": "2 संगत कोण युग्म बराबर हैं।"
+        },
+        {
+          "en": "The remaining angle is 180°−35°−65°=80° in each.",
+          "hi": "दोनों में शेष कोण 180°−35°−65°=80° है।"
+        },
+        {
+          "en": "Apply AA similarity; side lengths need not be equal.",
+          "hi": "AA समरूपता लगाएँ; भुजाओं का बराबर होना जरूरी नहीं।"
+        }
+      ],
+      "answer": {
+        "en": "The triangles are similar by AA.",
+        "hi": "त्रिभुज AA से समरूप हैं।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "DE∥BC, AD=4 cm, DB=6 cm, AE=5 cm. Find EC.",
+        "hi": "DE∥BC, AD=4 cm, DB=6 cm, AE=5 cm हैं। EC खोजें।"
+      },
+      "steps": [
+        {
+          "en": "Use BPT: AD/DB=AE/EC.",
+          "hi": "BPT से AD/DB=AE/EC।"
+        },
+        {
+          "en": "4/6=5/EC, so 4EC=30.",
+          "hi": "4/6=5/EC, इसलिए 4EC=30।"
+        },
+        {
+          "en": "EC=30/4=7.5 cm.",
+          "hi": "EC=30/4=7.5 cm।"
+        }
+      ],
+      "answer": {
+        "en": "EC=7.5 cm.",
+        "hi": "EC=7.5 cm।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Check similarity of triangles with sides 5,6,7 and 15,18,21 cm.",
+        "hi": "5,6,7 और 15,18,21 cm भुजाओं वाले त्रिभुजों की समरूपता जाँचें।"
+      },
+      "steps": [
+        {
+          "en": "Each triple satisfies the triangle inequality.",
+          "hi": "प्रत्येक समूह त्रिभुज असमता संतुष्ट करता है।"
+        },
+        {
+          "en": "5/15=6/18=7/21=1/3.",
+          "hi": "5/15=6/18=7/21=1/3।"
+        },
+        {
+          "en": "All three corresponding side ratios agree.",
+          "hi": "तीनों संगत भुजा अनुपात समान हैं।"
+        }
+      ],
+      "answer": {
+        "en": "Similar by SSS; enlargement factor from first to second is 3.",
+        "hi": "SSS से समरूप; पहले से दूसरे का विस्तार गुणक 3 है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "AB=6, AC=8, PQ=9, PR=12 and ∠A=∠P=50°. Prove similarity.",
+        "hi": "AB=6, AC=8, PQ=9, PR=12 और ∠A=∠P=50° हैं। समरूपता सिद्ध करें।"
+      },
+      "steps": [
+        {
+          "en": "AB/PQ=6/9=2/3 and AC/PR=8/12=2/3.",
+          "hi": "AB/PQ=6/9=2/3 तथा AC/PR=8/12=2/3।"
+        },
+        {
+          "en": "The equal angles A and P are included between those pairs.",
+          "hi": "बराबर A तथा P कोण उन्हीं भुजा युग्मों के बीच हैं।"
+        },
+        {
+          "en": "Use SAS with A↔P,B↔Q,C↔R.",
+          "hi": "A↔P,B↔Q,C↔R संगति में SAS लगाएँ।"
+        }
+      ],
+      "answer": {
+        "en": "ΔABC∼ΔPQR by SAS.",
+        "hi": "SAS से ΔABC∼ΔPQR।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A 1.5 m stick casts a 2 m shadow while a vertical tower casts a 28 m shadow. Find tower height.",
+        "hi": "1.5 m छड़ी की छाया 2 m है और उसी समय ऊर्ध्वाधर मीनार की छाया 28 m है। ऊँचाई खोजें।"
+      },
+      "steps": [
+        {
+          "en": "Assume level ground, vertical objects and parallel sunlight.",
+          "hi": "समतल भूमि, ऊर्ध्वाधर वस्तुएँ और समांतर सूर्य किरणें मानें।"
+        },
+        {
+          "en": "The shadow triangles have equal right angles and sunlight angles, hence AA similarity.",
+          "hi": "छाया त्रिभुजों में समकोण और सूर्य किरण कोण समान हैं, अतः AA समरूपता।"
+        },
+        {
+          "en": "h/28=1.5/2.",
+          "hi": "h/28=1.5/2।"
+        },
+        {
+          "en": "h=28×0.75=21 m.",
+          "hi": "h=28×0.75=21 m।"
+        },
+        {
+          "en": "28/2=14, and 14×1.5=21 checks the same scale factor.",
+          "hi": "28/2=14 और 14×1.5=21 से समान गुणक की जाँच होती है।"
+        }
+      ],
+      "answer": {
+        "en": "Tower height 21 m.",
+        "hi": "मीनार की ऊँचाई 21 m।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which statement is always true?",
+        "hi": "कौन-सा कथन हमेशा सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Similar triangles are congruent",
+            "hi": "समरूप त्रिभुज सर्वांगसम हैं"
+          },
+          "reason": {
+            "en": "Their sizes may differ.",
+            "hi": "उनके आकार अलग हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Congruent triangles are similar",
+            "hi": "सर्वांगसम त्रिभुज समरूप हैं"
+          },
+          "reason": {
+            "en": "Equal size and shape imply equal shape.",
+            "hi": "समान आकार और आकृति से समान आकृति मिलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All rectangles are similar",
+            "hi": "सभी आयत समरूप हैं"
+          },
+          "reason": {
+            "en": "Their side ratios may differ.",
+            "hi": "भुजा अनुपात अलग हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only equal circles are similar",
+            "hi": "केवल बराबर वृत्त समरूप हैं"
+          },
+          "reason": {
+            "en": "All circles share the same shape.",
+            "hi": "सभी वृत्तों की आकृति समान है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "In ΔABC∼ΔPQR, BC matches:",
+        "hi": "ΔABC∼ΔPQR में BC की संगत भुजा है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "PQ",
+            "hi": "PQ"
+          },
+          "reason": {
+            "en": "PQ matches AB.",
+            "hi": "PQ की संगति AB से है।"
+          }
+        },
+        {
+          "text": {
+            "en": "PR",
+            "hi": "PR"
+          },
+          "reason": {
+            "en": "PR matches AC.",
+            "hi": "PR की संगति AC से है।"
+          }
+        },
+        {
+          "text": {
+            "en": "QR",
+            "hi": "QR"
+          },
+          "reason": {
+            "en": "B↔Q and C↔R.",
+            "hi": "B↔Q तथा C↔R हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "RP only because it is longest",
+            "hi": "RP, क्योंकि सबसे बड़ी है"
+          },
+          "reason": {
+            "en": "Correspondence follows the ordered vertices, not appearance.",
+            "hi": "संगति क्रम से मिलती है, केवल दृश्य से नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "When DE∥BC, D∈AB,E∈AC, BPT gives:",
+        "hi": "DE∥BC, D∈AB,E∈AC हों, तो BPT से:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "AD/DB=AC/AE",
+            "hi": "AD/DB=AC/AE"
+          },
+          "reason": {
+            "en": "Whole and partial segments are mismatched.",
+            "hi": "पूर्ण और छोटे भाग गलत मिलाए हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "AD/AB=AE/EC",
+            "hi": "AD/AB=AE/EC"
+          },
+          "reason": {
+            "en": "The second denominator must be AC in this form.",
+            "hi": "इस रूप में दूसरा हर AC होना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "AD=AE always",
+            "hi": "AD=AE हमेशा"
+          },
+          "reason": {
+            "en": "Proportions do not force equal lengths.",
+            "hi": "अनुपात से लंबाइयाँ जरूरी बराबर नहीं होतीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "AD/DB=AE/EC",
+            "hi": "AD/DB=AE/EC"
+          },
+          "reason": {
+            "en": "The two sides are divided in equal ratios.",
+            "hi": "दोनों भुजाएँ समान अनुपात में विभाजित हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Two corresponding angle pairs equal establish:",
+        "hi": "2 संगत कोण युग्म बराबर होने से मिलती है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "AA similarity",
+            "hi": "AA समरूपता"
+          },
+          "reason": {
+            "en": "The third angle pair also agrees.",
+            "hi": "तीसरी कोण जोड़ी भी बराबर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "SSS congruence",
+            "hi": "SSS सर्वांगसमता"
+          },
+          "reason": {
+            "en": "No side equality was given.",
+            "hi": "भुजा बराबरी नहीं दी गई।"
+          }
+        },
+        {
+          "text": {
+            "en": "Equal perimeters",
+            "hi": "बराबर परिमाप"
+          },
+          "reason": {
+            "en": "Similar triangles may have different sizes.",
+            "hi": "समरूप त्रिभुजों के आकार अलग हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Parallel sides in every drawing",
+            "hi": "हर चित्र में भुजाएँ समांतर"
+          },
+          "reason": {
+            "en": "Triangles may be rotated.",
+            "hi": "त्रिभुज घुमाए जा सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For SAS, the equal angle must be:",
+        "hi": "SAS में बराबर कोण होना चाहिए:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Any angle",
+            "hi": "कोई भी कोण"
+          },
+          "reason": {
+            "en": "An arbitrary angle is insufficient.",
+            "hi": "कोई असंबंधित कोण पर्याप्त नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Included between the proportional sides",
+            "hi": "आनुपातिक भुजाओं के बीच का"
+          },
+          "reason": {
+            "en": "This is the exact SAS condition.",
+            "hi": "यही SAS की सही शर्त है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a right angle",
+            "hi": "केवल समकोण"
+          },
+          "reason": {
+            "en": "Other included angles can satisfy SAS.",
+            "hi": "अन्य अंतर्गत कोण भी SAS में हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The smallest angle",
+            "hi": "सबसे छोटा कोण"
+          },
+          "reason": {
+            "en": "Size ranking is not the condition.",
+            "hi": "सबसे छोटा होना शर्त नहीं है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Sides 3,4,5 and 6,8,10 show:",
+        "hi": "3,4,5 और 6,8,10 भुजाएँ दर्शाती हैं:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Congruence with factor 1",
+            "hi": "गुणक 1 से सर्वांगसमता"
+          },
+          "reason": {
+            "en": "Corresponding lengths are not equal.",
+            "hi": "संगत लंबाइयाँ बराबर नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No relationship",
+            "hi": "कोई संबंध नहीं"
+          },
+          "reason": {
+            "en": "All corresponding ratios agree.",
+            "hi": "सभी संगत अनुपात समान हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "SSS similarity",
+            "hi": "SSS समरूपता"
+          },
+          "reason": {
+            "en": "Every side of the second is twice the first.",
+            "hi": "दूसरे की हर भुजा पहले की दुगुनी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Similarity by one side only",
+            "hi": "केवल 1 भुजा से समरूपता"
+          },
+          "reason": {
+            "en": "All three ratios are the reason.",
+            "hi": "कारण तीनों अनुपात हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Equal division ratios on two sides imply parallelism by:",
+        "hi": "2 भुजाओं के समान विभाजन अनुपात से समांतरता किससे मिलती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "AA directly without angles",
+            "hi": "बिना कोणों के सीधे AA"
+          },
+          "reason": {
+            "en": "The given information is about segment ratios.",
+            "hi": "जानकारी रेखाखंड अनुपात की है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A ruler measurement",
+            "hi": "पैमाने के माप से"
+          },
+          "reason": {
+            "en": "Measurement does not establish exact parallelism.",
+            "hi": "माप सटीक समांतरता सिद्ध नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "SSA",
+            "hi": "SSA"
+          },
+          "reason": {
+            "en": "SSA is not a general similarity criterion.",
+            "hi": "SSA सामान्य समरूपता कसौटी नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The converse of BPT",
+            "hi": "BPT के विलोम से"
+          },
+          "reason": {
+            "en": "It reverses the theorem from ratios to parallelism.",
+            "hi": "यह अनुपात से समांतरता की ओर तर्क करता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "If corresponding lengths scale by 3, perimeter scales by:",
+        "hi": "संगत लंबाइयाँ 3 गुनी हों, तो परिमाप:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "Each side in the sum is multiplied by 3.",
+            "hi": "योग की प्रत्येक भुजा 3 से गुणी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9",
+            "hi": "9"
+          },
+          "reason": {
+            "en": "That is not the length/perimeter factor.",
+            "hi": "यह लंबाई या परिमाप का गुणक नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/3",
+            "hi": "1/3"
+          },
+          "reason": {
+            "en": "This would be the reverse direction.",
+            "hi": "यह उलटी दिशा का गुणक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The triangle does not vanish.",
+            "hi": "त्रिभुज समाप्त नहीं होता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A 2 m pole has 4 m shadow; a tree has 10 m shadow. Its height is:",
+        "hi": "2 m खंभे की छाया 4 m है; पेड़ की छाया 10 m है। पेड़ की ऊँचाई:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "20 m",
+            "hi": "20 m"
+          },
+          "reason": {
+            "en": "The ratio was inverted.",
+            "hi": "अनुपात उलट दिया गया।"
+          }
+        },
+        {
+          "text": {
+            "en": "5 m",
+            "hi": "5 m"
+          },
+          "reason": {
+            "en": "h/10=2/4 gives h=5.",
+            "hi": "h/10=2/4 से h=5।"
+          }
+        },
+        {
+          "text": {
+            "en": "8 m",
+            "hi": "8 m"
+          },
+          "reason": {
+            "en": "Subtracting shadow lengths is not proportional reasoning.",
+            "hi": "छाया लंबाइयाँ घटाना सही अनुपात नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "12 m",
+            "hi": "12 m"
+          },
+          "reason": {
+            "en": "Adding pole height to shadow is not justified.",
+            "hi": "खंभे की ऊँचाई को छाया में जोड़ना उचित नहीं है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A numerical drawing is mainly useful to:",
+        "hi": "संख्यात्मक चित्र मुख्यतः उपयोगी है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Replace every proof",
+            "hi": "हर प्रमाण बदलने में"
+          },
+          "reason": {
+            "en": "A finite set of measurements is not a universal proof.",
+            "hi": "सीमित माप सार्वत्रिक प्रमाण नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Make SSA always valid",
+            "hi": "SSA हमेशा सही बनाने में"
+          },
+          "reason": {
+            "en": "A drawing cannot change a false general criterion.",
+            "hi": "चित्र गलत सामान्य कसौटी को सही नहीं बनाता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Explore and check, then justify with a theorem",
+            "hi": "खोज और जाँच के बाद प्रमेय से कारण देने में"
+          },
+          "reason": {
+            "en": "Visual evidence supports reasoning but does not replace it.",
+            "hi": "दृश्य तर्क में सहायक है, उसका विकल्प नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ignore correspondence",
+            "hi": "संगति छोड़ने में"
+          },
+          "reason": {
+            "en": "Correspondence is essential.",
+            "hi": "संगति जरूरी है।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish similar and congruent triangles.",
+        "hi": "समरूप और सर्वांगसम त्रिभुजों में अंतर बताइए।"
+      },
+      "answer": {
+        "en": "Similar triangles have the same shape; congruent triangles also have equal corresponding side lengths.",
+        "hi": "समरूप त्रिभुजों की आकृति समान; सर्वांगसम में संगत लंबाइयाँ भी बराबर होती हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "State BPT with D on AB and E on AC.",
+        "hi": "D को AB और E को AC पर लेकर BPT लिखें।"
+      },
+      "answer": {
+        "en": "If DE∥BC, then AD/DB=AE/EC.",
+        "hi": "DE∥BC हो, तो AD/DB=AE/EC।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is AA sufficient for triangle similarity?",
+        "hi": "त्रिभुज समरूपता के लिए AA पर्याप्त क्यों है?"
+      },
+      "answer": {
+        "en": "The third angle is fixed by the 180° sum, so all corresponding angles agree.",
+        "hi": "180° योग से तीसरा कोण भी निश्चित और बराबर हो जाता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "If AB/PQ=AC/PR=2 and ∠A=∠P, name the criterion.",
+        "hi": "AB/PQ=AC/PR=2 और ∠A=∠P हों, तो कसौटी बताइए।"
+      },
+      "answer": {
+        "en": "SAS similarity, since A and P are the included angles.",
+        "hi": "SAS समरूपता, क्योंकि A और P अंतर्गत कोण हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "DE∥BC, AD=2,DB=5,AE=6. Find EC.",
+        "hi": "DE∥BC, AD=2,DB=5,AE=6 हों, तो EC खोजें।"
+      },
+      "answer": {
+        "en": "2/5=6/EC gives EC=15 in the same length unit.",
+        "hi": "2/5=6/EC से EC=15, उसी लंबाई इकाई में।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give one necessary modelling assumption when using shadows to compare heights.",
+        "hi": "छाया से ऊँचाई तुलना में एक जरूरी मान्यता दें।"
+      },
+      "answer": {
+        "en": "Objects are vertical on level ground, and shadows are measured at the same time with parallel sunlight.",
+        "hi": "वस्तुएँ समतल भूमि पर ऊर्ध्वाधर हों और छायाएँ एक समय पर समांतर सूर्य किरणों में मापी जाएँ।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not swap only one ratio, treat similar as congruent, use SSA as a general rule, or replace a proof with rounded measurements.",
+    "hi": "केवल 1 अनुपात उलटा न लिखें; समरूप को सर्वांगसम न मानें; SSA को सामान्य कसौटी न बनाएँ; सन्निकट माप को प्रमाण न कहें।"
+  },
+  "revision": [
+    {
+      "en": "Correspondence determines every side and angle pairing.",
+      "hi": "संगति से प्रत्येक भुजा और कोण की जोड़ी तय होती है।"
+    },
+    {
+      "en": "BPT converts a parallel line into equal division ratios.",
+      "hi": "BPT समांतर रेखा से समान विभाजन अनुपात देता है।"
+    },
+    {
+      "en": "Its converse converts equal division ratios into parallelism.",
+      "hi": "विलोम समान विभाजन अनुपात से समांतरता देता है।"
+    },
+    {
+      "en": "AA, SSS and included-angle SAS are valid similarity criteria.",
+      "hi": "AA, SSS और अंतर्गत कोण वाला SAS सही समरूपता कसौटियाँ हैं।"
+    },
+    {
+      "en": "Write the criterion, proportional sides and final units in applications.",
+      "hi": "अनुप्रयोग में कसौटी, आनुपातिक भुजाएँ और अंतिम इकाई लिखें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Shape and correspondence → parallel lines and BPT → converse → AA / SSS / SAS → proportional lengths → indirect measurement",
+    "hi": "आकृति और संगति → समांतर रेखाएँ और BPT → विलोम → AA / SSS / SAS → आनुपातिक लंबाइयाँ → अप्रत्यक्ष मापन"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, Chapter 6, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh106.pdf"
+    },
+    {
+      "title": "UP Board Class 10 Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

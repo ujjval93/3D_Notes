@@ -1,0 +1,1470 @@
+{
+  "number": 4,
+  "id": "chemistry11-04",
+  "title": {
+    "en": "Chemical Bonding and Molecular Structure",
+    "hi": "रासायनिक आबंधन तथा आण्विक संरचना"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "chem11-04-1",
+      "title": {
+        "en": "Molecular geometry",
+        "hi": "अणु की ज्यामिति"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 9
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Molecule index",
+            "hi": "अणु क्रम"
+          },
+          "min": 0,
+          "max": 3,
+          "step": 1,
+          "initial": 0,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Compare four familiar molecular shapes.",
+        "hi": "4 परिचित आण्विक आकृतियों की तुलना करें।"
+      },
+      "observe": {
+        "en": "Select0CH4,1NH3,2H2O or3CO2 and compare the atom arrangement.",
+        "hi": "0 पर CH4, 1 पर NH3, 2 पर H2O या 3 पर CO2 चुनकर परमाणु व्यवस्था देखें।"
+      },
+      "modelNote": {
+        "en": "Ball-and-stick positions are schematic; angles109.5°,107°,104.5°,180° are standard approximate teaching values, not sizes of atoms.",
+        "hi": "गेंद-छड़ स्थान सांकेतिक हैं; 109.5°,107°,104.5°,180° सामान्य सन्निकट शिक्षण कोण हैं, परमाणुओं के आकार नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Lone pairs affect repulsion and molecular shape differs from the full electron-domain arrangement.",
+          "hi": "एकाकी युग्म प्रतिकर्षण बदलते हैं और आण्विक आकृति पूरी इलेक्ट्रॉन क्षेत्र व्यवस्था से अलग है।"
+        }
+      },
+      "realLife": {
+        "en": "Water molecules are bent rather than straight.",
+        "hi": "जल अणु सीधे नहीं, वक्र होते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which selected molecule is linear?",
+          "hi": "चुने अणुओं में रैखिक कौन है?"
+        },
+        "options": [
+          {
+            "en": "CH4",
+            "hi": "CH4"
+          },
+          {
+            "en": "CO2",
+            "hi": "CO2"
+          },
+          {
+            "en": "H2O",
+            "hi": "H2O"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "CO2 has two electron domains at carbon and a linear atomic arrangement.",
+          "hi": "CO2 के कार्बन पर 2 क्षेत्र और रैखिक परमाणु व्यवस्था है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-04-1-low",
+          "label": {
+            "en": "Explore the lowest setting 0 .",
+            "hi": "सबसे निचली सेटिंग 0  देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "chem11-04-1-high",
+          "label": {
+            "en": "Compare the highest setting 3 .",
+            "hi": "सबसे ऊपरी सेटिंग 3  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 2.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.5
+          },
+          "text": {
+            "en": "Select0CH4,1NH3,2H2O or3CO2 and compare the atom arrangement.",
+            "hi": "0 पर CH4, 1 पर NH3, 2 पर H2O या 3 पर CO2 चुनकर परमाणु व्यवस्था देखें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.5
+          },
+          "text": {
+            "en": "Lone pairs affect repulsion and molecular shape differs from the full electron-domain arrangement.",
+            "hi": "एकाकी युग्म प्रतिकर्षण बदलते हैं और आण्विक आकृति पूरी इलेक्ट्रॉन क्षेत्र व्यवस्था से अलग है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-04-2",
+      "title": {
+        "en": "Bond dipole addition",
+        "hi": "आबंध द्विध्रुवों का योग"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 10
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Angle between bond dipoles",
+            "hi": "आबंध द्विध्रुवों के बीच कोण"
+          },
+          "min": 0,
+          "max": 180,
+          "step": 15,
+          "initial": 120,
+          "unit": "°"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Add two equal bond dipoles as vectors.",
+        "hi": "2 समान आबंध द्विध्रुवों का सदिश योग करें।"
+      },
+      "observe": {
+        "en": "Each model dipole has magnitude 1D; change their included angle.",
+        "hi": "प्रत्येक मॉडल द्विध्रुव 1 D है; उनके बीच कोण बदलें।"
+      },
+      "modelNote": {
+        "en": "Two ideal equal dipoles are assumed; this is not a measured dipole calculator for every real molecule.",
+        "hi": "2 आदर्श समान द्विध्रुव माने हैं; यह हर वास्तविक अणु का मापा द्विध्रुव निकालने वाला यंत्र नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The resultant is 2 cos(θ/2)D, so opposite equal dipoles cancel at 180°.",
+          "hi": "परिणामी 2 cos(θ/2) D है; 180° पर समान विपरीत द्विध्रुव निरस्त होते हैं।"
+        }
+      },
+      "realLife": {
+        "en": "Linear CO2 illustrates cancellation by molecular symmetry.",
+        "hi": "रैखिक CO2 आण्विक सममिति से निरसन का उदाहरण है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At180°, what is the resultant?",
+          "hi": "180° पर परिणामी कितना है?"
+        },
+        "options": [
+          {
+            "en": "0 D",
+            "hi": "0 D"
+          },
+          {
+            "en": "1 D",
+            "hi": "1 D"
+          },
+          {
+            "en": "2 D",
+            "hi": "2 D"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "cos90°=0 in 2μcos(θ/2).",
+          "hi": "2μcos(θ/2) में cos90°=0 है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-04-2-low",
+          "label": {
+            "en": "Explore the lowest setting 0 °.",
+            "hi": "सबसे निचली सेटिंग 0 ° देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "chem11-04-2-high",
+          "label": {
+            "en": "Compare the highest setting 180 °.",
+            "hi": "सबसे ऊपरी सेटिंग 180 ° से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 178.5
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 90.0
+          },
+          "text": {
+            "en": "Each model dipole has magnitude 1D; change their included angle.",
+            "hi": "प्रत्येक मॉडल द्विध्रुव 1 D है; उनके बीच कोण बदलें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 90.0
+          },
+          "text": {
+            "en": "The resultant is 2 cos(θ/2)D, so opposite equal dipoles cancel at 180°.",
+            "hi": "परिणामी 2 cos(θ/2) D है; 180° पर समान विपरीत द्विध्रुव निरस्त होते हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-04-3",
+      "title": {
+        "en": "Bond order model",
+        "hi": "आबंध कोटि मॉडल"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 11
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Antibonding electrons",
+            "hi": "प्रतिआबंधन इलेक्ट्रॉन"
+          },
+          "min": 0,
+          "max": 4,
+          "step": 1,
+          "initial": 4,
+          "unit": ""
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Relate antibonding occupancy to bond order.",
+        "hi": "प्रतिआबंधन अधिभोग को आबंध कोटि से जोड़ें।"
+      },
+      "observe": {
+        "en": "Bonding count stays8 while antibonding electrons vary from 0to4.",
+        "hi": "आबंधन गिनती 8 स्थिर है; प्रतिआबंधन इलेक्ट्रॉन 0 से 4 बदलते हैं।"
+      },
+      "modelNote": {
+        "en": "This is a generic count model, not the complete orbital filling diagram of a named molecule.",
+        "hi": "यह सामान्य गिनती मॉडल है, किसी नामित अणु का पूरा कक्षक भराव चित्र नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Bond order=(8−Na)/2; adding antibonding electrons lowers the result.",
+          "hi": "आबंध कोटि=(8−Na)/2; प्रतिआबंधन इलेक्ट्रॉन बढ़ाने पर मान घटता है।"
+        }
+      },
+      "realLife": {
+        "en": "MO occupancy helps interpret bonds and magnetic behaviour in diatomic species.",
+        "hi": "MO अधिभोग द्विपरमाणुक स्पीशीज के आबंध और चुंबकीय गुण समझने में मदद करता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "With8 bonding and 4 antibonding electrons, bond order is?",
+          "hi": "8 आबंधन और 4 प्रतिआबंधन इलेक्ट्रॉनों पर कोटि क्या है?"
+        },
+        "options": [
+          {
+            "en": "4",
+            "hi": "4"
+          },
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "6",
+            "hi": "6"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "(8−4)/2=2.",
+          "hi": "(8−4)/2=2।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-04-3-low",
+          "label": {
+            "en": "Explore the lowest setting 0 .",
+            "hi": "सबसे निचली सेटिंग 0  देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "chem11-04-3-high",
+          "label": {
+            "en": "Compare the highest setting 4 .",
+            "hi": "सबसे ऊपरी सेटिंग 4  से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 3.9
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2.0
+          },
+          "text": {
+            "en": "Bonding count stays8 while antibonding electrons vary from 0to4.",
+            "hi": "आबंधन गिनती 8 स्थिर है; प्रतिआबंधन इलेक्ट्रॉन 0 से 4 बदलते हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 2.0
+          },
+          "text": {
+            "en": "Bond order=(8−Na)/2; adding antibonding electrons lowers the result.",
+            "hi": "आबंध कोटि=(8−Na)/2; प्रतिआबंधन इलेक्ट्रॉन बढ़ाने पर मान घटता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f3c573",
+          "label": {
+            "en": "Selected atom, quantity or stage",
+            "hi": "चयनित परमाणु, राशि या चरण"
+          }
+        },
+        {
+          "color": "#91d7a8",
+          "label": {
+            "en": "Bonds, reference and relation",
+            "hi": "आबंध, संदर्भ और संबंध"
+          }
+        }
+      ],
+      "selectors": []
+    }
+  ],
+  "goal": {
+    "en": "Explain bonds, shape and polarity using electron arrangements and model limits.",
+    "hi": "इलेक्ट्रॉन व्यवस्था और मॉडल की सीमाओं से आबंध, आकृति तथा ध्रुवता समझें।"
+  },
+  "editionBasis": {
+    "en": "Original study notes aligned to NCERT Chemistry Class 11 and the UP Board 2026–27 syllabus. Use the prescribed textbook and supervised school practicals alongside.",
+    "hi": "NCERT कक्षा 11 रसायन विज्ञान तथा यूपी बोर्ड 2026–27 पाठ्यक्रम के अनुरूप मौलिक अध्ययन नोट्स। साथ में निर्धारित पुस्तक और विद्यालय के पर्यवेक्षित प्रयोग भी करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry Part I, Chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kech104.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Chemistry syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class 11/152-Chemistry-Class-11.pdf"
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Why chemical bonds form",
+        "hi": "रासायनिक आबंध क्यों बनते हैं"
+      },
+      "paragraphs": [
+        {
+          "en": "A chemical bond is an interaction that holds atoms together in a chemical species. Bond formation is understood through the energy of the combined system, not through a statement that atoms consciously want an octet. At large separation the atoms hardly interact. As they approach, attractions between electrons and nuclei compete with electron–electron and nucleus–nucleus repulsions. An appropriate arrangement may have lower energy than the separated atoms, producing a stable bonded state. Valence electrons are especially useful for describing ordinary bonding. Lewis symbols place dots around an element symbol to represent these electrons. The octet rule explains many simple main-group compounds, but it is a useful pattern rather than a universal physical law. Hydrogen commonly has a duet; electron-deficient molecules, odd-electron species and expanded-valence descriptions require additional discussion. Always identify the species and its total electron count before drawing bonds.",
+          "hi": "रासायनिक आबंध (Chemical bond) वह अन्योन्यक्रिया है जो किसी रासायनिक स्पीशीज में परमाणुओं को साथ रखती है। आबंध बनने को पूरे निकाय की ऊर्जा से समझते हैं; यह कहना पर्याप्त नहीं कि परमाणु स्वयं अष्टक चाहते हैं। बहुत दूर स्थित परमाणुओं में अन्योन्यक्रिया कम होती है। पास आने पर इलेक्ट्रॉन और नाभिक का आकर्षण, इलेक्ट्रॉनों का पारस्परिक प्रतिकर्षण तथा नाभिकों का पारस्परिक प्रतिकर्षण साथ काम करते हैं। उपयुक्त दूरी और व्यवस्था में संयुक्त निकाय की ऊर्जा अलग परमाणुओं से कम हो सकती है। यही स्थिर आबंधित अवस्था का आधार है। संयोजकता इलेक्ट्रॉन (Valence electrons) सामान्य आबंधन के वर्णन में विशेष उपयोगी हैं। लुइस प्रतीक (Lewis symbol) में तत्व के संकेत के चारों ओर बिंदुओं से इन्हें दिखाते हैं। अष्टक नियम (Octet rule) अनेक सरल मुख्य समूह यौगिकों को समझाता है, पर सार्वत्रिक नियम नहीं है। हाइड्रोजन में प्रायः द्विक होता है। इलेक्ट्रॉन-न्यून अणु, विषम इलेक्ट्रॉन स्पीशीज और विस्तारित संयोजकता वाले वर्णनों को अलग ध्यान चाहिए। चित्र बनाने से पहले पूरे स्पीशीज का आवेश और कुल संयोजकता इलेक्ट्रॉन गिनना आवश्यक है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: It is a limited main-group pattern; several stable species have non-octet arrangements.",
+          "hi": "जाँच बिंदु: यह मुख्य समूह का सीमित नमूना है; कई स्थिर स्पीशीज में अष्टक से अलग व्यवस्था होती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is the octet rule not enough to predict every molecule?",
+          "hi": "हर अणु की भविष्यवाणी के लिए अष्टक नियम पर्याप्त क्यों नहीं?"
+        },
+        "answer": {
+          "en": "It is a limited main-group pattern; several stable species have non-octet arrangements.",
+          "hi": "यह मुख्य समूह का सीमित नमूना है; कई स्थिर स्पीशीज में अष्टक से अलग व्यवस्था होती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ionic bonding and lattice stability",
+        "hi": "आयनिक आबंधन और जालक स्थायित्व"
+      },
+      "paragraphs": [
+        {
+          "en": "In a simple ionic description, electrons are transferred between atoms and oppositely charged ions are produced. Sodium can lose an electron while chlorine can gain one, but electron transfer alone is not the whole explanation for the stability of solid sodium chloride. The crystal contains an extended arrangement of positive and negative ions. Electrostatic attractions within this lattice contribute strongly to its stability. Ionisation enthalpy, electron gain enthalpy and lattice enthalpy must be considered together when discussing formation energetics. Do not imagine an ionic crystal as isolated NaCl molecules connected in pairs. The formula usually expresses the simplest ratio of ions required for electrical neutrality. Smaller, more highly charged ions often have stronger electrostatic interactions, while structural differences also matter. Properties such as melting behaviour, solubility and conductivity depend on whether ions are fixed in a lattice or mobile in a melt or solution.",
+          "hi": "सरल आयनिक वर्णन में परमाणुओं के बीच इलेक्ट्रॉन का स्थानांतरण होने से विपरीत आवेश वाले आयन बनते हैं। सोडियम एक इलेक्ट्रॉन छोड़ सकता है और क्लोरीन उसे ग्रहण कर सकती है। फिर भी केवल इलेक्ट्रॉन स्थानांतरण से ठोस सोडियम क्लोराइड का पूरा स्थायित्व नहीं समझाया जाता। क्रिस्टल में धनायन और ऋणायन का विस्तृत नियमित जालक (Lattice) होता है। इस व्यवस्था में वैद्युत आकर्षण स्थायित्व में महत्त्वपूर्ण योगदान देता है। निर्माण की ऊर्जा समझते समय आयनन एन्थैल्पी, इलेक्ट्रॉन लब्धि एन्थैल्पी तथा जालक एन्थैल्पी को साथ देखना चाहिए। आयनिक ठोस को अलग-अलग NaCl अणुओं के जोड़े मानना ठीक नहीं है। उसका सूत्र प्रायः विद्युत उदासीनता के लिए आवश्यक आयनों का न्यूनतम अनुपात बताता है। छोटे और अधिक आवेश वाले आयनों में आकर्षण सामान्यतः अधिक होता है, लेकिन वास्तविक संरचना का भी प्रभाव पड़ता है। गलन, घुलनशीलता और चालकता समझने के लिए आयनों की गतिशीलता देखें। ठोस जालक में आयन निश्चित स्थानों के पास रहते हैं; द्रवित अवस्था या उचित विलयन में वे चलकर आवेश पहुँचा सकते हैं। इसलिए केवल सूत्र देखकर हर गुण निश्चित नहीं किया जा सकता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: Its ions become mobile in the melt.",
+          "hi": "जाँच बिंदु: द्रवित अवस्था में उसके आयन गतिशील हो जाते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does molten sodium chloride conduct while its solid usually does not?",
+          "hi": "द्रवित सोडियम क्लोराइड चालक क्यों है जबकि ठोस सामान्यतः नहीं?"
+        },
+        "answer": {
+          "en": "Its ions become mobile in the melt.",
+          "hi": "द्रवित अवस्था में उसके आयन गतिशील हो जाते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Lewis structures, formal charge and resonance",
+        "hi": "लुइस संरचनाएँ, औपचारिक आवेश और अनुनाद"
+      },
+      "paragraphs": [
+        {
+          "en": "A Lewis structure distributes the available valence electrons into bonding and nonbonding pairs. Count all atomic valence electrons, add electrons for a negative charge and subtract electrons for a positive charge. Connect atoms with plausible single bonds, complete terminal-atom arrangements and then consider multiple bonds if needed. Formal charge is a bookkeeping tool: valence electrons of the free atom minus its nonbonding electrons minus half its bonding electrons. It is not necessarily the actual local charge. A suitable Lewis structure often has small formal charges and places negative formal charge on the more electronegative atom, when other requirements are comparable. Some species cannot be represented adequately by one Lewis structure. Resonance forms describe different electron arrangements for the same nuclear framework. The actual species is a resonance hybrid; it does not repeatedly jump between separately existing structures. Equivalent resonance forms help explain equal bond lengths in species such as carbonate.",
+          "hi": "लुइस संरचना (Lewis structure) में उपलब्ध संयोजकता इलेक्ट्रॉनों को आबंधी और अनाबंधी युग्मों में बाँटते हैं। पहले सभी परमाणुओं के संयोजकता इलेक्ट्रॉन जोड़ें। ऋण आवेश के लिए इलेक्ट्रॉन जोड़ें और धन आवेश के लिए घटाएँ। उपयुक्त परमाणुओं को एकल आबंधों से जोड़कर बाहरी परमाणुओं की व्यवस्था पूरी करें, फिर आवश्यकता होने पर बहु आबंध बनाएँ। औपचारिक आवेश (Formal charge) इलेक्ट्रॉन की गणना का साधन है। इसका मान मुक्त परमाणु के संयोजकता इलेक्ट्रॉन में से अनाबंधी इलेक्ट्रॉन तथा आबंधी इलेक्ट्रॉनों का आधा घटाने से मिलता है। यह हमेशा वास्तविक स्थानीय आवेश नहीं होता। अन्य शर्तें समान हों तो छोटे औपचारिक आवेश और अधिक विद्युतऋणात्मक परमाणु पर ऋण औपचारिक आवेश वाली संरचना उपयुक्त हो सकती है। कुछ स्पीशीज के लिए एक संरचना पर्याप्त नहीं होती। अनुनाद रूप (Resonance forms) एक ही नाभिकीय ढाँचे में इलेक्ट्रॉनों की अलग व्यवस्थाएँ हैं। वास्तविक स्पीशीज अनुनाद संकर होती है, अलग संरचनाओं में बार-बार बदलती नहीं। कार्बोनेट में समतुल्य रूप समान C–O आबंध लंबाई समझाने में मदद करते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: No; the nuclear framework remains the same while the electron bookkeeping changes.",
+          "hi": "जाँच बिंदु: नहीं; नाभिकीय ढाँचा समान रहता है, इलेक्ट्रॉनों का वर्णन बदलता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Do nuclei change positions between resonance forms?",
+          "hi": "क्या अनुनाद रूपों में नाभिकों के स्थान बदलते हैं?"
+        },
+        "answer": {
+          "en": "No; the nuclear framework remains the same while the electron bookkeeping changes.",
+          "hi": "नहीं; नाभिकीय ढाँचा समान रहता है, इलेक्ट्रॉनों का वर्णन बदलता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "VSEPR and molecular shape",
+        "hi": "VSEPR और आण्विक आकृति"
+      },
+      "paragraphs": [
+        {
+          "en": "The valence-shell electron-pair repulsion model starts with electron domains around a central atom. A single, double or triple bond counts as one domain for the basic geometrical arrangement, although their repulsions need not be identical. Electron domains arrange to reduce repulsion. Molecular shape names the positions of atoms, whereas electron-domain geometry includes lone pairs as well. Methane has four bonding domains and a tetrahedral shape with angles near 109.5°. Ammonia has three bonding pairs and one lone pair; its molecular shape is trigonal pyramidal and the H–N–H angle is about 107°. Water has two bonding pairs and two lone pairs, so its bent shape has an H–O–H angle about 104.5°. Carbon dioxide has two domains at carbon and is linear. The familiar lone-pair repulsion comparison helps explain these simple cases, but VSEPR is a qualitative model and does not calculate every exact bond angle.",
+          "hi": "संयोजकता कोश इलेक्ट्रॉन युग्म प्रतिकर्षण मॉडल (VSEPR) में केंद्रीय परमाणु के चारों ओर इलेक्ट्रॉन क्षेत्रों को देखते हैं। मूल ज्यामिति गिनने के लिए एकल, द्वि या त्रि आबंध प्रत्येक एक क्षेत्र माना जाता है, यद्यपि उनके प्रतिकर्षण बिल्कुल समान होना जरूरी नहीं है। क्षेत्र प्रतिकर्षण कम करने वाली व्यवस्था लेते हैं। आण्विक आकृति (Molecular shape) परमाणुओं के स्थान बताती है, जबकि इलेक्ट्रॉन क्षेत्र ज्यामिति में एकाकी युग्म भी गिने जाते हैं। मीथेन में 4 आबंधी क्षेत्र और लगभग 109.5° कोण वाली चतुष्फलकीय आकृति है। अमोनिया में 3 आबंधी युग्म और 1 एकाकी युग्म होता है; उसकी आकृति त्रिकोणीय पिरामिडीय तथा कोण लगभग 107° है। जल में 2 आबंधी और 2 एकाकी युग्म होते हैं। इसलिए वह 104.5° के लगभग कोण वाला वक्र अणु है। CO2 के कार्बन पर 2 क्षेत्र होने से अणु रैखिक है। एकाकी युग्म के अधिक प्रतिकर्षण का सामान्य विचार इन उदाहरणों में उपयोगी है। फिर भी VSEPR गुणात्मक मॉडल है, हर अणु का सटीक कोण निकालने वाला समीकरण नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: Two domains are lone pairs; molecular shape uses the positions of the two bonded hydrogens.",
+          "hi": "जाँच बिंदु: 2 क्षेत्र एकाकी युग्म हैं; आण्विक आकृति दोनों आबंधित हाइड्रोजनों के स्थानों से बनती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is water bent even though it has four electron domains?",
+          "hi": "4 इलेक्ट्रॉन क्षेत्र होने पर भी जल वक्र क्यों है?"
+        },
+        "answer": {
+          "en": "Two domains are lone pairs; molecular shape uses the positions of the two bonded hydrogens.",
+          "hi": "2 क्षेत्र एकाकी युग्म हैं; आण्विक आकृति दोनों आबंधित हाइड्रोजनों के स्थानों से बनती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Valence bond theory and hybridisation",
+        "hi": "संयोजकता आबंध सिद्धांत और संकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Valence bond theory relates a covalent bond to the overlap of atomic orbitals containing suitable electrons. A head-on overlap along the internuclear axis makes a sigma bond. Sideways overlap of parallel orbitals produces a pi bond with a nodal plane containing that axis. A double bond contains one sigma and one pi bond; a triple bond contains one sigma and two pi bonds in the simple description. Hybridisation is a mathematical mixing of orbitals on the same atom used to construct directed bonding orbitals. The common sp, sp2 and sp3 descriptions correspond to linear, trigonal-planar and tetrahedral orbital directions. Hybrid orbitals are not physical boxes made by stirring electrons. The number of orbitals is conserved during the mixing. Relate hybridisation to the bonding environment rather than memorising a word for every molecule. Lone pairs and limitations of simple expanded-octet descriptions deserve care, especially when interpreting heavier main-group species.",
+          "hi": "संयोजकता आबंध सिद्धांत (Valence bond theory) में उपयुक्त इलेक्ट्रॉन वाले परमाणु कक्षकों के अतिव्यापन से सहसंयोजक आबंध समझते हैं। अंतरानाभिकीय अक्ष की दिशा में आमने-सामने अतिव्यापन से सिग्मा आबंध (Sigma bond) बनता है। समानांतर कक्षकों के पार्श्व अतिव्यापन से पाई आबंध (Pi bond) बनता है; उसके नोडल तल में अंतरानाभिकीय अक्ष होता है। सरल वर्णन में द्वि आबंध में 1 सिग्मा तथा 1 पाई और त्रि आबंध में 1 सिग्मा तथा 2 पाई आबंध होते हैं। संकरण (Hybridisation) एक ही परमाणु के कक्षकों का गणितीय मिश्रण है, जिससे दिशात्मक आबंधन कक्षक समझाए जाते हैं। sp, sp2 तथा sp3 वर्णन क्रमशः रैखिक, त्रिकोणीय समतलीय तथा चतुष्फलकीय दिशाओं से जुड़े हैं। संकर कक्षक इलेक्ट्रॉन हिलाकर बनाए गए वास्तविक डिब्बे नहीं हैं। मिश्रण में कक्षकों की कुल संख्या बनी रहती है। केवल शब्द याद करने के बजाय परमाणु के आबंधन परिवेश को देखें। एकाकी युग्मों तथा सरल विस्तारित अष्टक वर्णनों की सीमाएँ भी ध्यान में रखें, विशेषकर भारी मुख्य समूह तत्वों की स्पीशीज के लिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: One sigma and two pi bonds.",
+          "hi": "जाँच बिंदु: 1 सिग्मा और 2 पाई आबंध।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many sigma and pi bonds occur in a simple carbon–carbon triple bond?",
+          "hi": "सरल कार्बन–कार्बन त्रि आबंध में कितने सिग्मा और पाई आबंध हैं?"
+        },
+        "answer": {
+          "en": "One sigma and two pi bonds.",
+          "hi": "1 सिग्मा और 2 पाई आबंध।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Bond parameters and molecular polarity",
+        "hi": "आबंध प्राचल और आण्विक ध्रुवता"
+      },
+      "paragraphs": [
+        {
+          "en": "Bond length is an equilibrium internuclear distance, and bond enthalpy describes an energy change for bond breaking under a stated convention. Bond order, bond length and strength are related trends rather than interchangeable numerical quantities. Electronegativity differences can produce polar bonds. A bond dipole has magnitude related to separated charge and distance, but molecular polarity depends on the vector sum of all bond dipoles and the full electron distribution. Equal dipoles may cancel in a symmetrical arrangement. Carbon dioxide therefore has polar C=O bonds but a zero net molecular dipole in its ideal linear geometry. Water is bent and its bond dipoles do not cancel. For two equal ideal dipoles of magnitude μ at angle θ, the resultant magnitude is 2μ cos(θ/2) between 0° and 180°. Use a consistent vector convention; the chemistry arrow often points toward the negative end and marks the positive end with a cross.",
+          "hi": "आबंध लंबाई (Bond length) साम्य अवस्था में नाभिकों के बीच की दूरी है। आबंध एन्थैल्पी (Bond enthalpy) निश्चित परंपरा के अनुसार आबंध तोड़ने की ऊर्जा परिवर्तन बताती है। आबंध कोटि, लंबाई और सामर्थ्य के बीच सामान्य प्रवृत्तियाँ हैं, लेकिन ये एक ही संख्यात्मक राशि नहीं हैं। विद्युतऋणात्मकता में अंतर से ध्रुवीय आबंध बन सकता है। आबंध द्विध्रुव का परिमाण अलग हुए आवेश तथा दूरी से जुड़ा होता है। पूरे अणु की ध्रुवता सभी आबंध द्विध्रुवों के सदिश योग तथा इलेक्ट्रॉन वितरण पर निर्भर है। सममित व्यवस्था में समान द्विध्रुव एक-दूसरे को निरस्त कर सकते हैं। इसलिए रैखिक CO2 में C=O आबंध ध्रुवीय होने पर भी कुल द्विध्रुव शून्य है। जल की वक्र आकृति में द्विध्रुव निरस्त नहीं होते। θ कोण पर दो समान आदर्श द्विध्रुवों का परिणामी 2μ cos(θ/2) है, जहाँ μ प्रत्येक का परिमाण है। सदिश चिह्न की परंपरा एक जैसी रखें। रसायन में प्रचलित तीर ऋण सिरे की ओर होता है और धन सिरा क्रॉस से चिह्नित किया जाता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: Yes; symmetry can make their vector sum zero, as in linear CO2.",
+          "hi": "जाँच बिंदु: हाँ; सममिति से सदिश योग शून्य हो सकता है, जैसे रैखिक CO2 में।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can a molecule with polar bonds be nonpolar overall?",
+          "hi": "क्या ध्रुवीय आबंधों वाला अणु कुल मिलाकर अध्रुवीय हो सकता है?"
+        },
+        "answer": {
+          "en": "Yes; symmetry can make their vector sum zero, as in linear CO2.",
+          "hi": "हाँ; सममिति से सदिश योग शून्य हो सकता है, जैसे रैखिक CO2 में।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Molecular orbitals and bond order",
+        "hi": "आण्विक कक्षक और आबंध कोटि"
+      },
+      "paragraphs": [
+        {
+          "en": "Molecular orbital theory describes electrons in orbitals belonging to the molecule as a whole. Combining compatible atomic orbitals gives bonding and antibonding molecular orbitals, with the total number of orbitals conserved. Electrons fill the available molecular orbitals using the Pauli principle and Hund rule, together with an appropriate energy ordering. Bond order in this model is half the difference between bonding and antibonding electron counts. Increasing antibonding occupancy can reduce the net stabilising effect. A positive bond order suggests net bonding within the model, while zero means no net bond from that simple occupancy pattern. Do not assign a real molecule solely from a selected pair of counts: electron number, orbital ordering, spin and the actual species must agree. The qualitative molecular-orbital description accounts for unpaired electrons and paramagnetism of O2, a feature not explained by a simple all-paired Lewis picture. Magnetic behaviour must follow the unpaired-electron arrangement, not just the bond order number.",
+          "hi": "आण्विक कक्षक सिद्धांत (Molecular orbital theory) में इलेक्ट्रॉन पूरे अणु से संबंधित कक्षकों में वर्णित होते हैं। अनुकूल परमाणु कक्षकों के संयोजन से आबंधन और प्रतिआबंधन आण्विक कक्षक बनते हैं। कुल कक्षकों की संख्या बनी रहती है। उपयुक्त ऊर्जा क्रम के साथ पाउली नियम और हुंड नियम का उपयोग करके इलेक्ट्रॉन भरे जाते हैं। इस मॉडल में आबंध कोटि (Bond order) आबंधन इलेक्ट्रॉनों और प्रतिआबंधन इलेक्ट्रॉनों की संख्या के अंतर की आधी होती है। प्रतिआबंधन कक्षक भरने से शुद्ध स्थायित्व कम हो सकता है। धन आबंध कोटि मॉडल में शुद्ध आबंधन बताती है, जबकि शून्य कोटि सरल अधिभोग व्यवस्था में शुद्ध आबंध न होने का संकेत है। केवल दो चुनी संख्याओं से किसी वास्तविक अणु की पहचान नहीं करें। कुल इलेक्ट्रॉन, कक्षक ऊर्जा क्रम, चक्रण और वास्तविक स्पीशीज का मेल भी जरूरी है। गुणात्मक MO वर्णन O2 के अयुग्मित इलेक्ट्रॉनों और अनुचुंबकत्व को समझाता है, जो सभी इलेक्ट्रॉन युग्मित मानने वाले सरल लुइस चित्र से स्पष्ट नहीं होता। चुंबकीय गुण केवल आबंध कोटि के अंक से नहीं, अयुग्मित इलेक्ट्रॉनों की व्यवस्था से तय होते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: It decreases by 1.",
+          "hi": "जाँच बिंदु: वह 1 घटती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to bond order when two electrons enter antibonding orbitals without another change?",
+          "hi": "अन्य परिवर्तन बिना 2 इलेक्ट्रॉन प्रतिआबंधन कक्षकों में जाएँ तो आबंध कोटि क्या होगी?"
+        },
+        "answer": {
+          "en": "It decreases by 1.",
+          "hi": "वह 1 घटती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Hydrogen bonding and careful model use",
+        "hi": "हाइड्रोजन आबंधन और मॉडल का सावधान उपयोग"
+      },
+      "paragraphs": [
+        {
+          "en": "Hydrogen bonding is an important interaction involving hydrogen covalently bonded to a strongly electronegative atom such as N, O or F and a suitable electron-rich site. Intermolecular hydrogen bonding can connect different molecules; intramolecular hydrogen bonding occurs within a suitable molecule. These interactions help interpret boiling behaviour, association and the unusual structure of ice. They should not be confused with the ordinary covalent O–H bonds inside each water molecule. No single diagram answers every bonding question. Use Lewis structures for electron bookkeeping, VSEPR for a qualitative shape, hybridisation and overlap for directed bonds, and molecular orbitals when whole-molecule electron distribution is required. Begin an examination answer with the species, valence-electron count and model being used. State whether angles are approximate and whether an illustration is symbolic. A complete comparison explains both similarities and exceptions. Finally check charge conservation, electron counts and the distinction between bond polarity and total molecular polarity.",
+          "hi": "हाइड्रोजन आबंधन (Hydrogen bonding) में प्रायः N, O या F जैसे अधिक विद्युतऋणात्मक परमाणु से सहसंयोजक रूप में जुड़ा हाइड्रोजन तथा उपयुक्त इलेक्ट्रॉन-समृद्ध स्थान भाग लेते हैं। अंतराअणुक हाइड्रोजन आबंधन अलग अणुओं को जोड़ सकता है। उपयुक्त व्यवस्था वाले एक अणु के अंदर अंतःअणुक हाइड्रोजन आबंधन हो सकता है। इन अन्योन्यक्रियाओं से क्वथन, संगुणन और बर्फ की असामान्य संरचना समझने में मदद मिलती है। इन्हें जल अणु के अंदर के सामान्य सहसंयोजक O–H आबंध से न मिलाएँ। कोई एक चित्र आबंधन के हर प्रश्न का उत्तर नहीं देता। इलेक्ट्रॉन गणना के लिए लुइस संरचना, गुणात्मक आकृति के लिए VSEPR, दिशात्मक आबंध के लिए संकरण और अतिव्यापन तथा पूरे अणु के इलेक्ट्रॉन वितरण के लिए MO वर्णन चुनें। परीक्षा में पहले स्पीशीज, संयोजकता इलेक्ट्रॉन और उपयोग किया मॉडल स्पष्ट लिखें। कोण सन्निकट हों तो बताएं और सांकेतिक चित्र को वास्तविक पैमाने का मापन न कहें। अच्छी तुलना समानताओं के साथ अपवाद भी समझाती है। अंत में कुल आवेश, इलेक्ट्रॉन संख्या तथा आबंध की ध्रुवता और पूरे अणु की ध्रुवता के अंतर की जाँच करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Checkpoint: No; they are different interactions and must be distinguished.",
+          "hi": "जाँच बिंदु: नहीं; वे अलग अन्योन्यक्रियाएँ हैं और उन्हें अलग पहचानना चाहिए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is a hydrogen bond identical to the O–H covalent bond inside water?",
+          "hi": "क्या हाइड्रोजन आबंध जल के अंदर के सहसंयोजक O–H आबंध के समान है?"
+        },
+        "answer": {
+          "en": "No; they are different interactions and must be distinguished.",
+          "hi": "नहीं; वे अलग अन्योन्यक्रियाएँ हैं और उन्हें अलग पहचानना चाहिए।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "Formal charge = V − N − B/2",
+      "meaning": {
+        "en": "V: free-atom valence electrons; N: nonbonding electrons; B: bonding electrons.",
+        "hi": "V: मुक्त परमाणु के संयोजकता इलेक्ट्रॉन; N: अनाबंधी इलेक्ट्रॉन; B: आबंधी इलेक्ट्रॉन।"
+      },
+      "units": {
+        "en": "Electron counts and formal-charge numbers are dimensionless.",
+        "hi": "इलेक्ट्रॉन गिनती और औपचारिक आवेश की संख्या विमाहीन हैं।"
+      }
+    },
+    {
+      "expression": "Bond order = (Nb − Na)/2",
+      "meaning": {
+        "en": "Nb and Na count bonding and antibonding electrons.",
+        "hi": "Nb और Na क्रमशः आबंधन तथा प्रतिआबंधन इलेक्ट्रॉनों की संख्या हैं।"
+      },
+      "units": {
+        "en": "Dimensionless.",
+        "hi": "विमाहीन।"
+      }
+    },
+    {
+      "expression": "μresultant = 2μ cos(θ/2)",
+      "meaning": {
+        "en": "Two equal dipoles μ separated by angle θ; use 0°≤θ≤180°.",
+        "hi": "θ कोण वाले 2 समान द्विध्रुव μ; 0°≤θ≤180° लें।"
+      },
+      "units": {
+        "en": "Dipole moment: C m in SI; debye (D) is also used.",
+        "hi": "द्विध्रुव आघूर्ण: SI में C m; debye (D) भी प्रयुक्त है।"
+      }
+    },
+    {
+      "expression": "1 D ≈ 3.33564 × 10^−30 C m",
+      "meaning": {
+        "en": "Conversion from debye to SI dipole moment.",
+        "hi": "debye से SI द्विध्रुव आघूर्ण में परिवर्तन।"
+      },
+      "units": {
+        "en": "C m.",
+        "hi": "C m।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Count the valence electrons in H2O.",
+        "hi": "H2O में संयोजकता इलेक्ट्रॉन गिनें।"
+      },
+      "given": {
+        "en": "O contributes 6; each H contributes 1.",
+        "hi": "O के 6 और प्रत्येक H का 1 इलेक्ट्रॉन।"
+      },
+      "find": {
+        "en": "Total and distribution.",
+        "hi": "कुल संख्या और वितरण।"
+      },
+      "formula": {
+        "en": "Total = 6 + 2 × 1",
+        "hi": "Total = 6 + 2 × 1"
+      },
+      "steps": [
+        {
+          "en": "Add the contributions to obtain 8 electrons.",
+          "hi": "योग से 8 इलेक्ट्रॉन मिलते हैं।"
+        },
+        {
+          "en": "Use 4 electrons in 2 O–H bonds; 4 remain as 2 lone pairs on O.",
+          "hi": "2 O–H आबंधों में 4 इलेक्ट्रॉन; शेष 4 से O पर 2 एकाकी युग्म।"
+        }
+      ],
+      "answer": {
+        "en": "8 valence electrons; 2 bond pairs and 2 lone pairs.",
+        "hi": "8 संयोजकता इलेक्ट्रॉन; 2 आबंधी और 2 एकाकी युग्म।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Predict the shape of NH3.",
+        "hi": "NH3 की आकृति बताएं।"
+      },
+      "given": {
+        "en": "3 bond pairs and 1 lone pair at N.",
+        "hi": "N पर 3 आबंधी तथा 1 एकाकी युग्म।"
+      },
+      "find": {
+        "en": "Molecular shape and approximate angle.",
+        "hi": "आण्विक आकृति और सन्निकट कोण।"
+      },
+      "formula": {
+        "en": "4 electron domains → tetrahedral domain arrangement",
+        "hi": "4 electron domains → tetrahedral domain arrangement"
+      },
+      "steps": [
+        {
+          "en": "Count 4 domains but only 3 bonded atoms.",
+          "hi": "4 क्षेत्र गिनें, पर आबंधित परमाणु केवल 3 हैं।"
+        },
+        {
+          "en": "Name the atomic arrangement trigonal pyramidal.",
+          "hi": "परमाणुओं की व्यवस्था त्रिकोणीय पिरामिडीय है।"
+        }
+      ],
+      "answer": {
+        "en": "Trigonal pyramidal; H–N–H ≈107°.",
+        "hi": "त्रिकोणीय पिरामिडीय; H–N–H ≈107°।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the resultant of two 1 D bond dipoles at 120°.",
+        "hi": "120° पर 2 समान 1 D आबंध द्विध्रुवों का परिणामी निकालें।"
+      },
+      "given": {
+        "en": "μ=1 D; θ=120°.",
+        "hi": "μ=1 D; θ=120°।"
+      },
+      "find": {
+        "en": "Net dipole magnitude.",
+        "hi": "कुल द्विध्रुव का परिमाण।"
+      },
+      "formula": {
+        "en": "μnet = 2μ cos(θ/2)",
+        "hi": "μnet = 2μ cos(θ/2)"
+      },
+      "steps": [
+        {
+          "en": "Use θ/2=60° and cos60°=0.5.",
+          "hi": "θ/2=60° और cos60°=0.5 लें।"
+        },
+        {
+          "en": "Calculate 2×1×0.5.",
+          "hi": "2×1×0.5 निकालें।"
+        }
+      ],
+      "answer": {
+        "en": "1 D.",
+        "hi": "1 D।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Calculate bond order for Nb=8 and Na=4.",
+        "hi": "Nb=8 और Na=4 के लिए आबंध कोटि निकालें।"
+      },
+      "given": {
+        "en": "Generic molecular-orbital occupancy counts.",
+        "hi": "सामान्य MO अधिभोग की गिनती।"
+      },
+      "find": {
+        "en": "Bond order; not a unique molecule identity.",
+        "hi": "आबंध कोटि; किसी एक अणु की पहचान नहीं।"
+      },
+      "formula": {
+        "en": "BO=(Nb−Na)/2",
+        "hi": "BO=(Nb−Na)/2"
+      },
+      "steps": [
+        {
+          "en": "Subtract 4 from 8.",
+          "hi": "8 में से 4 घटाएँ।"
+        },
+        {
+          "en": "Divide the difference4 by 2.",
+          "hi": "अंतर 4 को 2 से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "Bond order2, dimensionless.",
+        "hi": "आबंध कोटि 2, विमाहीन।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Explain why CO2 is nonpolar but H2O is polar.",
+        "hi": "CO2 अध्रुवीय और H2O ध्रुवीय क्यों है?"
+      },
+      "given": {
+        "en": "Both contain polar bonds; CO2 is linear and H2O is bent.",
+        "hi": "दोनों में ध्रुवीय आबंध; CO2 रैखिक और H2O वक्र है।"
+      },
+      "find": {
+        "en": "Effect of geometry on the vector sum.",
+        "hi": "सदिश योग पर ज्यामिति का प्रभाव।"
+      },
+      "formula": {
+        "en": "μmolecule = vector sum of bond contributions",
+        "hi": "μmolecule = vector sum of bond contributions"
+      },
+      "steps": [
+        {
+          "en": "Equal opposite C=O dipoles cancel in linear CO2.",
+          "hi": "रैखिक CO2 के समान विपरीत C=O द्विध्रुव निरस्त होते हैं।"
+        },
+        {
+          "en": "Bent O–H dipoles do not point in opposite directions.",
+          "hi": "वक्र अणु में O–H द्विध्रुव विपरीत दिशाओं में नहीं हैं।"
+        }
+      ],
+      "answer": {
+        "en": "Ideal CO2 has zero net dipole; water has a nonzero molecular dipole.",
+        "hi": "आदर्श CO2 का कुल द्विध्रुव शून्य; जल का अशून्य है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which electrons are most directly used in Lewis symbols?",
+        "hi": "लुइस प्रतीक में मुख्यतः कौन-से इलेक्ट्रॉन दिखते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Valence electrons",
+            "hi": "संयोजकता इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "Dots represent the outer-shell valence count.",
+            "hi": "बिंदु बाहरी कोश की संयोजकता गिनती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only core electrons",
+            "hi": "केवल क्रोड इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "Core electrons are not the Lewis-dot count.",
+            "hi": "क्रोड इलेक्ट्रॉन लुइस बिंदुओं की गिनती नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only neutrons",
+            "hi": "केवल न्यूट्रॉन"
+          },
+          "reason": {
+            "en": "Neutrons are nuclear particles.",
+            "hi": "न्यूट्रॉन नाभिकीय कण हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only protons",
+            "hi": "केवल प्रोटॉन"
+          },
+          "reason": {
+            "en": "Protons are not electrons.",
+            "hi": "प्रोटॉन इलेक्ट्रॉन नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An ionic formula generally gives what?",
+        "hi": "आयनिक सूत्र सामान्यतः क्या बताता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Simplest neutral ion ratio",
+            "hi": "उदासीन आयनों का न्यूनतम अनुपात"
+          },
+          "reason": {
+            "en": "The ratio balances total charge.",
+            "hi": "अनुपात कुल आवेश संतुलित करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "One isolated molecule always",
+            "hi": "हमेशा 1 पृथक अणु"
+          },
+          "reason": {
+            "en": "An ionic solid is an extended lattice.",
+            "hi": "आयनिक ठोस विस्तृत जालक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the melting point",
+            "hi": "केवल गलनांक"
+          },
+          "reason": {
+            "en": "A formula does not directly give this value.",
+            "hi": "सूत्र सीधे यह मान नहीं देता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Electron speeds",
+            "hi": "इलेक्ट्रॉन चाल"
+          },
+          "reason": {
+            "en": "Speeds are not encoded in the formula.",
+            "hi": "सूत्र में चाल नहीं लिखी होती।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Formal charge equals which expression?",
+        "hi": "औपचारिक आवेश का सही व्यंजक क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "V−N−B/2",
+            "hi": "V−N−B/2"
+          },
+          "reason": {
+            "en": "Bond electrons are shared equally for this bookkeeping.",
+            "hi": "इस गणना में आबंधी इलेक्ट्रॉन बराबर बाँटते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "V+N+B",
+            "hi": "V+N+B"
+          },
+          "reason": {
+            "en": "This adds counts rather than assigning charge.",
+            "hi": "यह गिनती जोड़ता है, आवेश नहीं देता।"
+          }
+        },
+        {
+          "text": {
+            "en": "N/B",
+            "hi": "N/B"
+          },
+          "reason": {
+            "en": "A ratio is not the formal-charge rule.",
+            "hi": "यह अनुपात औपचारिक आवेश नियम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "V−B−N/2",
+            "hi": "V−B−N/2"
+          },
+          "reason": {
+            "en": "It halves the wrong electron set.",
+            "hi": "इसमें गलत इलेक्ट्रॉन समूह आधा किया है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What changes between resonance forms?",
+        "hi": "अनुनाद रूपों में क्या बदलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Electron arrangement in a fixed nuclear framework",
+            "hi": "स्थिर नाभिकीय ढाँचे में इलेक्ट्रॉन व्यवस्था"
+          },
+          "reason": {
+            "en": "Resonance representations retain the nuclei.",
+            "hi": "अनुनाद वर्णन में नाभिक समान रहते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nuclear positions necessarily",
+            "hi": "नाभिकीय स्थान अनिवार्यतः"
+          },
+          "reason": {
+            "en": "Moving nuclei makes a different structural description.",
+            "hi": "नाभिक खिसकाने से अलग संरचनात्मक वर्णन होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Element identities",
+            "hi": "तत्व की पहचान"
+          },
+          "reason": {
+            "en": "Resonance does not transmute elements.",
+            "hi": "अनुनाद तत्व परिवर्तन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Total charge arbitrarily",
+            "hi": "कुल आवेश मनमाने ढंग से"
+          },
+          "reason": {
+            "en": "The species retains its charge.",
+            "hi": "स्पीशीज का कुल आवेश समान है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is the molecular shape of H2O?",
+        "hi": "H2O की आण्विक आकृति क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Bent",
+            "hi": "वक्र"
+          },
+          "reason": {
+            "en": "Two lone pairs leave a bent atomic arrangement.",
+            "hi": "2 एकाकी युग्म से परमाणु व्यवस्था वक्र है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Linear",
+            "hi": "रैखिक"
+          },
+          "reason": {
+            "en": "Its angle is about 104.5°, not180°.",
+            "hi": "इसका कोण लगभग 104.5°, 180° नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Trigonal planar",
+            "hi": "त्रिकोणीय समतलीय"
+          },
+          "reason": {
+            "en": "Only2 atoms are bonded to oxygen.",
+            "hi": "O से केवल 2 परमाणु आबंधित हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Octahedral",
+            "hi": "अष्टफलकीय"
+          },
+          "reason": {
+            "en": "This would require a different domain arrangement.",
+            "hi": "इसके लिए अलग क्षेत्र व्यवस्था चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A carbon–carbon double bond contains what in the simple model?",
+        "hi": "सरल मॉडल में C=C में क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1 sigma and 1 pi",
+            "hi": "1 सिग्मा और 1 पाई"
+          },
+          "reason": {
+            "en": "The first overlap is sigma and the added sideways overlap is pi.",
+            "hi": "पहला अतिव्यापन सिग्मा, अतिरिक्त पार्श्व अतिव्यापन पाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 sigma",
+            "hi": "2 सिग्मा"
+          },
+          "reason": {
+            "en": "The second bond is not another independent head-on overlap.",
+            "hi": "दूसरा आबंध अलग आमने-सामने अतिव्यापन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 pi and no sigma",
+            "hi": "2 पाई, सिग्मा नहीं"
+          },
+          "reason": {
+            "en": "A double bond includes a sigma bond.",
+            "hi": "द्वि आबंध में सिग्मा भी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a hydrogen bond",
+            "hi": "केवल हाइड्रोजन आबंध"
+          },
+          "reason": {
+            "en": "C=C is covalent bonding.",
+            "hi": "C=C सहसंयोजक आबंधन है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two equal dipoles at 180° have what net magnitude?",
+        "hi": "180° पर 2 समान द्विध्रुवों का परिणामी कितना है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Equal opposite vectors cancel.",
+            "hi": "समान विपरीत सदिश निरस्त होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2μ",
+            "hi": "2μ"
+          },
+          "reason": {
+            "en": "That occurs for parallel dipoles at 0°.",
+            "hi": "यह 0° पर समानांतर द्विध्रुवों में होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "μ always",
+            "hi": "हमेशा μ"
+          },
+          "reason": {
+            "en": "The angle determines the vector sum.",
+            "hi": "सदिश योग कोण पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinite",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "Finite dipoles have a finite sum.",
+            "hi": "सीमित द्विध्रुवों का योग सीमित है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Nb=8, Na=4 gives which bond order?",
+        "hi": "Nb=8, Na=4 पर आबंध कोटि क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "(8−4)/2=2.",
+            "hi": "(8−4)/2=2।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "This is the difference before halving.",
+            "hi": "यह आधा करने से पहले का अंतर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "This is half the sum, not the difference.",
+            "hi": "यह योग का आधा है, अंतर का नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "Adding all electrons does not give bond order.",
+            "hi": "कुल इलेक्ट्रॉन जोड़ना आबंध कोटि नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which observation is explained by unpaired electrons in O2?",
+        "hi": "O2 के अयुग्मित इलेक्ट्रॉन क्या समझाते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Paramagnetism",
+            "hi": "अनुचुंबकत्व"
+          },
+          "reason": {
+            "en": "Unpaired electrons contribute magnetic response.",
+            "hi": "अयुग्मित इलेक्ट्रॉन चुंबकीय प्रभाव देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nuclear fusion",
+            "hi": "नाभिकीय संलयन"
+          },
+          "reason": {
+            "en": "Bond orbitals do not explain nuclear fusion.",
+            "hi": "आबंध कक्षक नाभिकीय संलयन नहीं बताते।"
+          }
+        },
+        {
+          "text": {
+            "en": "A compulsory zero bond order",
+            "hi": "अनिवार्य शून्य आबंध कोटि"
+          },
+          "reason": {
+            "en": "O2 has a net bond, not zero bond order.",
+            "hi": "O2 में शुद्ध आबंध है, शून्य कोटि नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No electrons",
+            "hi": "इलेक्ट्रॉन नहीं होना"
+          },
+          "reason": {
+            "en": "O2 contains electrons, including unpaired ones.",
+            "hi": "O2 में अयुग्मित सहित इलेक्ट्रॉन हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A typical strong hydrogen-bond donor contains hydrogen bonded to which atom?",
+        "hi": "सामान्य प्रबल हाइड्रोजन आबंध दाता में H किससे जुड़ा होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "N, O or F",
+            "hi": "N, O या F"
+          },
+          "reason": {
+            "en": "These electronegative atoms are typical donors with bonded H.",
+            "hi": "ये विद्युतऋणात्मक परमाणु H के साथ सामान्य दाता हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Any metal only",
+            "hi": "केवल कोई धातु"
+          },
+          "reason": {
+            "en": "That is not the typical donor condition.",
+            "hi": "यह सामान्य दाता शर्त नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A neutron",
+            "hi": "न्यूट्रॉन"
+          },
+          "reason": {
+            "en": "Neutrons are nuclear particles.",
+            "hi": "न्यूट्रॉन नाभिकीय कण हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No atom at all",
+            "hi": "किसी परमाणु से नहीं"
+          },
+          "reason": {
+            "en": "The donor hydrogen is covalently bound.",
+            "hi": "दाता H सहसंयोजक रूप से जुड़ा होता है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why does electron transfer alone not explain NaCl stability?",
+        "hi": "केवल इलेक्ट्रॉन स्थानांतरण NaCl का स्थायित्व क्यों नहीं समझाता?"
+      },
+      "answer": {
+        "en": "The extended ionic lattice contributes substantial electrostatic stabilisation.",
+        "hi": "विस्तृत आयनिक जालक से महत्त्वपूर्ण वैद्युत स्थायित्व मिलता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish electron-domain geometry and molecular shape.",
+        "hi": "इलेक्ट्रॉन क्षेत्र ज्यामिति और आण्विक आकृति में अंतर बताएं।"
+      },
+      "answer": {
+        "en": "Domain geometry includes lone pairs; molecular shape names atomic positions.",
+        "hi": "क्षेत्र ज्यामिति में एकाकी युग्म भी हैं; आण्विक आकृति परमाणुओं के स्थान बताती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain resonance without moving nuclei.",
+        "hi": "नाभिक खिसकाए बिना अनुनाद समझाएँ।"
+      },
+      "answer": {
+        "en": "Different valid electron arrangements represent one resonance hybrid with a fixed nuclear framework.",
+        "hi": "स्थिर नाभिकीय ढाँचे की अलग इलेक्ट्रॉन व्यवस्थाएँ एक अनुनाद संकर का वर्णन हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can CO2 have polar bonds but zero net dipole?",
+        "hi": "CO2 के आबंध ध्रुवीय होने पर भी कुल द्विध्रुव शून्य क्यों है?"
+      },
+      "answer": {
+        "en": "Its equal C=O dipoles point oppositely in a linear geometry.",
+        "hi": "रैखिक ज्यामिति में समान C=O द्विध्रुव विपरीत दिशाओं में हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the effect of antibonding occupancy?",
+        "hi": "प्रतिआबंधन अधिभोग का प्रभाव क्या है?"
+      },
+      "answer": {
+        "en": "With other counts fixed it reduces bond order and net bonding stabilisation.",
+        "hi": "अन्य गिनती स्थिर हो तो वह आबंध कोटि और शुद्ध आबंधन स्थायित्व घटाता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish an O–H bond and a hydrogen bond.",
+        "hi": "O–H आबंध और हाइड्रोजन आबंध अलग करें।"
+      },
+      "answer": {
+        "en": "O–H is a covalent bond within the molecule; a hydrogen bond is a distinct interaction involving a donor H and electron-rich acceptor.",
+        "hi": "O–H अणु के अंदर सहसंयोजक आबंध है; हाइड्रोजन आबंध दाता H तथा इलेक्ट्रॉन-समृद्ध ग्राही की अलग अन्योन्यक्रिया है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Bonding reflects the energy of the combined system.",
+      "hi": "आबंधन पूरे संयुक्त निकाय की ऊर्जा से जुड़ा है।"
+    },
+    {
+      "en": "Count valence electrons and charge before drawing Lewis structures.",
+      "hi": "लुइस चित्र से पहले संयोजकता इलेक्ट्रॉन और आवेश गिनें।"
+    },
+    {
+      "en": "Lone pairs distinguish domain geometry from molecular shape.",
+      "hi": "एकाकी युग्म क्षेत्र ज्यामिति और आण्विक आकृति में अंतर लाते हैं।"
+    },
+    {
+      "en": "Molecular polarity is a vector property.",
+      "hi": "आण्विक ध्रुवता सदिश गुण है।"
+    },
+    {
+      "en": "MO bond order and unpaired-electron arrangements answer different questions.",
+      "hi": "MO आबंध कोटि और अयुग्मित इलेक्ट्रॉन व्यवस्था अलग प्रश्नों के उत्तर हैं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not treat an electron domain as a bonded atom, resonance as moving nuclei, or a polar bond as proof of a polar molecule.",
+    "hi": "इलेक्ट्रॉन क्षेत्र को आबंधित परमाणु, अनुनाद को नाभिकों की गति या ध्रुवीय आबंध को ध्रुवीय अणु का अनिवार्य प्रमाण न मानें।"
+  },
+  "conceptMap": "संयोजकता इलेक्ट्रॉन → लुइस संरचना → आबंध और एकाकी युग्म → VSEPR / संकरण → आकृति और ध्रुवता → MO और हाइड्रोजन आबंधन",
+  "conceptMapEn": "Valence electrons → Lewis structures → bond and lone pairs → VSEPR / hybridisation → shape and polarity → MO and hydrogen bonding"
+}

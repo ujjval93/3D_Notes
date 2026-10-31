@@ -1,0 +1,890 @@
+{
+  "id": 14,
+  "title": {
+    "en": "Probability",
+    "hi": "प्रायिकता"
+  },
+  "goal": {
+    "en": "Count equally likely outcomes correctly and explain theoretical probability, complements and experimental variation.",
+    "hi": "समप्रायिक परिणाम सही गिनकर सैद्धांतिक प्रायिकता, पूरक घटना और प्रयोग में परिवर्तन समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Random experiments, trials and outcomes",
+        "hi": "यादृच्छिक प्रयोग, परीक्षण और परिणाम"
+      },
+      "body": {
+        "en": "A random experiment has a well-described procedure and possible outcomes, but its individual result cannot be predicted with certainty before performing it. Tossing a fair coin once is an example: head and tail are possible, although the next result is uncertain. One performance is a trial. An outcome is a complete result of that trial, and the sample space is the collection of all outcomes being considered. An event is a chosen set of outcomes, such as obtaining an even face when a die is thrown. Write the experiment precisely before counting. One throw of a die and the sum from two dice are different experiments with different elementary outcomes. The model also needs assumptions, such as a fair object and a toss that gives each face equal chance. A physical coin landing on its edge is omitted in the simple classroom model. Stating such idealisations makes the reasoning clear without pretending that a model describes every detail of a real throw.",
+        "hi": "यादृच्छिक प्रयोग (Random experiment) की प्रक्रिया और संभव परिणाम बताए जा सकते हैं, लेकिन उसे करने से पहले अकेला परिणाम निश्चित नहीं बता सकते। निष्पक्ष सिक्के को एक बार उछालना उदाहरण है। चित और पट संभव हैं, पर अगला परिणाम अनिश्चित है। प्रयोग को एक बार करना परीक्षण (Trial) है। परीक्षण का पूरा उत्तर परिणाम (Outcome) और सभी विचार किए परिणामों का समूह प्रतिदर्श समष्टि (Sample space) है। घटना (Event) चुने हुए परिणामों का समूह है, जैसे पासे पर सम अंक आना। गिनती से पहले प्रयोग साफ लिखें। एक पासे का एक फेंक और 2 पासों के योग का प्रयोग अलग हैं। उनके मूल परिणाम भी अलग हैं। मॉडल में निष्पक्ष वस्तु और हर फलक को समान अवसर जैसी मान्यताएँ चाहिए। साधारण कक्षा मॉडल में सिक्के का किनारे पर टिकना नहीं लेते। ऐसी सरल मान्यताएँ बताने से तर्क साफ होता है। इसका अर्थ यह नहीं कि मॉडल वास्तविक उछाल के हर सूक्ष्म पहलू को दिखाता है। पहले प्रश्न पढ़कर तय करें कि एक परीक्षण में क्या देखा और दर्ज किया जाएगा।"
+      },
+      "formula": "Experiment → trial → outcome; event E ⊆ sample space S",
+      "question": {
+        "en": "What is an event in a die experiment?",
+        "hi": "पासे के प्रयोग में घटना क्या है?"
+      },
+      "answer": {
+        "en": "A set of chosen outcomes, for example {2, 4, 6} for an even face.",
+        "hi": "चुने परिणामों का समूह, जैसे सम अंक के लिए {2, 4, 6}।"
+      }
+    },
+    {
+      "title": {
+        "en": "Classical probability needs equally likely outcomes",
+        "hi": "शास्त्रीय प्रायिकता और समप्रायिक परिणाम"
+      },
+      "body": {
+        "en": "For a finite experiment with equally likely elementary outcomes, the classical probability of an event is the number of outcomes favourable to it divided by the total number of possible outcomes. Each outcome must be counted once in the denominator. The numerator counts only those satisfying the stated event. Since a favourable set cannot contain more outcomes than the whole sample space, the result lies between 0 and 1. Probability has no measurement unit; it may be written as a fraction, decimal, or percentage. The equally likely assumption is essential. Two categories such as red and not red do not automatically have the same probability merely because there are two names. A bag with one red ball and nine blue balls has ten equally selectable balls, not two equally selectable colours. For a fair die, each numbered face is an equally likely elementary outcome, so the denominator is 6. A loaded die cannot be analysed by this simple counting rule without additional information about its different face chances.",
+        "hi": "सीमित प्रयोग में सभी मूल परिणाम समप्रायिक (Equally likely) हों, तो घटना की शास्त्रीय प्रायिकता (Classical probability) अनुकूल परिणामों की संख्या को कुल संभव परिणामों से भाग देकर मिलती है। हर संभव परिणाम हर में ठीक एक बार गिनें। अंश में केवल घटना की शर्त पूरी करने वाले परिणाम गिनें। अनुकूल समूह पूरे प्रतिदर्श समूह से बड़ा नहीं हो सकता, इसलिए प्रायिकता 0 और 1 के बीच होती है। इसकी मापन इकाई नहीं है। इसे भिन्न, दशमलव या प्रतिशत में लिख सकते हैं। समान संभावना की मान्यता आवश्यक है। लाल और लाल नहीं जैसे 2 नाम होने से दोनों की प्रायिकता अपने आप बराबर नहीं होती। थैले में 1 लाल और 9 नीली गेंद हों, तो समान अवसर वाली 10 गेंदें हैं, 2 समान अवसर वाले रंग नहीं। निष्पक्ष पासे में हर अंक वाला फलक मूल समप्रायिक परिणाम है, इसलिए हर 6 है। पक्षपाती पासे पर यही सरल गिनती नियम बिना अतिरिक्त जानकारी नहीं लगा सकते। उसके अलग-अलग फलकों की संभावनाएँ अलग हो सकती हैं। पहले तय करें कि बराबर संभावना किस वस्तु या परिणाम की है।"
+      },
+      "formula": "P(E) = n(E)/n(S), for equally likely outcomes; 0 ≤ P(E) ≤ 1",
+      "question": {
+        "en": "Can two named categories be assumed equally likely without further information?",
+        "hi": "क्या 2 नाम वाली श्रेणियों को बिना जानकारी समान संभावित मान सकते हैं?"
+      },
+      "answer": {
+        "en": "No. Equal naming or a count of categories does not establish equal chances.",
+        "hi": "नहीं। केवल 2 नाम या 2 श्रेणियाँ समान अवसर सिद्ध नहीं करते।"
+      }
+    },
+    {
+      "title": {
+        "en": "Certain, impossible and complementary events",
+        "hi": "निश्चित, असंभव और पूरक घटनाएँ"
+      },
+      "body": {
+        "en": "An impossible event has no favourable outcome in the stated sample space, so its probability is 0. A certain event includes the whole sample space and has probability 1. On one standard die, obtaining 9 is impossible and obtaining a number below 7 is certain. Both statements depend on which experiment is being described. The complement of an event E consists of every outcome where E does not occur. The two sets are disjoint and together exhaust the sample space; therefore P(not E) = 1 − P(E). A complement is often easier to count than a long list of favourable outcomes. For example, not obtaining 6 on a fair die has probability 5/6 because obtaining 6 has probability 1/6. Do not confuse the complement with a different event that covers only some of the missing possibilities. The complement of getting a head on one ideal coin is getting a tail, but the complement of at least one head in two tosses is no heads, not exactly one tail.",
+        "hi": "असंभव घटना (Impossible event) में बताए प्रतिदर्श समूह का कोई परिणाम अनुकूल नहीं होता, इसलिए उसकी प्रायिकता 0 है। निश्चित घटना (Certain event) में सभी परिणाम अनुकूल होते हैं और प्रायिकता 1 होती है। एक मानक पासे पर 9 आना असंभव और 7 से छोटा अंक आना निश्चित है। दोनों बातें बताए गए प्रयोग पर निर्भर हैं। घटना E की पूरक घटना (Complement) में वे सभी परिणाम आते हैं जिनमें E नहीं होती। दोनों समूह अलग हैं और मिलकर पूरी प्रतिदर्श समष्टि बनाते हैं। इसलिए P(E नहीं) = 1 − P(E) है। कई बार लंबी अनुकूल सूची बनाने के बजाय पूरक गिनना आसान होता है। निष्पक्ष पासे पर 6 नहीं आने की प्रायिकता 5/6 है, क्योंकि 6 आने की प्रायिकता 1/6 है। पूरक को ऐसी दूसरी घटना से न मिलाएँ जिसमें बची संभावनाओं का केवल कुछ भाग आए। एक आदर्श सिक्के पर चित का पूरक पट है। लेकिन 2 उछालों में कम से कम एक चित का पूरक कोई चित नहीं है, ठीक एक पट नहीं। शब्दों का पूरा अर्थ पढ़ना जरूरी है।"
+      },
+      "formula": "P(not E) = 1 − P(E); P(impossible) = 0; P(certain) = 1",
+      "question": {
+        "en": "What is the complement of at least one head in two coin tosses?",
+        "hi": "2 उछालों में कम से कम एक चित का पूरक क्या है?"
+      },
+      "answer": {
+        "en": "No heads: TT.",
+        "hi": "कोई चित नहीं: TT।"
+      }
+    },
+    {
+      "title": {
+        "en": "Read number conditions carefully on a die",
+        "hi": "पासे पर अंकों की शर्त सही पढ़ें"
+      },
+      "body": {
+        "en": "A standard fair die has the outcomes 1, 2, 3, 4, 5 and 6. Start by listing them, then underline the outcomes satisfying the event. Even numbers are 2, 4 and 6, giving probability 3/6 = 1/2. Prime numbers are 2, 3 and 5, also giving 1/2, but the events are different even though their probabilities match. The number 1 is neither prime nor composite. A condition such as greater than 4 excludes 4, whereas at least 4 includes it. These words can change the numerator by one or more outcomes. The events less than 3 and greater than 4 each have probability 2/6, not because small and large numbers are naturally balanced, but because the counted sets have the same size. Avoid guessing from the numerical sizes of faces: the face 6 is not more likely than face 1 on a fair die. Reduce the final fraction and state the event in words so the calculation remains connected to the question.",
+        "hi": "मानक निष्पक्ष पासे के परिणाम 1, 2, 3, 4, 5 और 6 हैं। पहले पूरी सूची लिखें और घटना की शर्त पूरी करने वाले परिणाम चुनें। सम अंक 2, 4 और 6 हैं, इसलिए प्रायिकता 3/6 = 1/2 है। अभाज्य अंक 2, 3 और 5 हैं, इसलिए उनकी प्रायिकता भी 1/2 है। दोनों घटनाएँ अलग हैं, भले ही प्रायिकताएँ बराबर हों। 1 न अभाज्य है और न भाज्य। 4 से बड़ा में 4 नहीं आता, जबकि कम से कम 4 में 4 शामिल है। ऐसे शब्दों से अंश में गिने परिणाम बदल जाते हैं। 3 से छोटा और 4 से बड़ा दोनों घटनाओं में 2 परिणाम हैं, इसलिए प्रायिकता 2/6 है। यह छोटे और बड़े अंक अपने आप संतुलित होने के कारण नहीं, बल्कि अनुकूल समूहों की संख्या बराबर होने के कारण है। फलक पर लिखे अंक के आकार से अनुमान न लगाएँ। निष्पक्ष पासे पर 6, अंक 1 से अधिक संभावित नहीं है। अंतिम भिन्न को सरल करें और घटना शब्दों में भी लिखें, ताकि गणना प्रश्न से जुड़ी रहे।"
+      },
+      "formula": "P(prime on fair die) = 3/6 = 1/2",
+      "question": {
+        "en": "Is 1 counted as a prime outcome on a die?",
+        "hi": "क्या पासे पर 1 को अभाज्य परिणाम गिनेंगे?"
+      },
+      "answer": {
+        "en": "No. The prime outcomes are 2, 3 and 5.",
+        "hi": "नहीं। अभाज्य परिणाम 2, 3 और 5 हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Balls and objects: count items, not colour names",
+        "hi": "गेंदों में वस्तुएँ गिनें, रंगों के नाम नहीं"
+      },
+      "body": {
+        "en": "In a bag experiment, the elementary outcomes are usually the individual balls. To justify equal selection chances, the model assumes they are alike in relevant physical properties and are mixed and drawn without looking. If there are 4 red balls and 6 green balls, a red event has four favourable items out of ten, so its probability is 2/5. The two colour names do not imply probability 1/2 each. A colour absent from the bag has probability 0. Drawing a ball of any colour present in the complete listed bag is certain. For one draw, replacement is irrelevant because no second selection is being made. If the problem includes repeated draws, replacement can change the next sample space, so it must be specified before solving; do not silently use the one-draw formula for a different experiment. When an unknown count occurs, form an equation from favourable count divided by total count, then check that the solution is a nonnegative integer and gives the stated probability.",
+        "hi": "थैले के प्रयोग में मूल परिणाम सामान्यतः अलग-अलग गेंदें हैं। समान चयन अवसर को उचित मानने के लिए मॉडल में गेंदें संबंधित भौतिक गुणों में एक जैसी, ठीक से मिली हुई और बिना देखे निकाली हुई मानी जाती हैं। 4 लाल और 6 हरी गेंदें हों, तो लाल घटना में 10 में से 4 वस्तुएँ अनुकूल हैं। इसलिए प्रायिकता 2/5 है। रंगों के 2 नाम होने से दोनों की प्रायिकता 1/2 नहीं हो जाती। जो रंग थैले में नहीं है, उसकी प्रायिकता 0 होगी। पूरी सूची में मौजूद किसी भी रंग की गेंद निकलना निश्चित है। केवल एक गेंद निकालनी हो, तो वापस रखने की बात परिणाम नहीं बदलती, क्योंकि दूसरा चयन हो ही नहीं रहा। कई चयन हों, तो वापस रखना अगले प्रतिदर्श समूह को बदल सकता है। इसलिए पहले प्रयोग साफ बताएँ। अलग प्रयोग में एक चयन का सूत्र चुपचाप न लगा दें। कोई अज्ञात संख्या हो, तो अनुकूल संख्या को कुल संख्या से भाग देकर समीकरण बनाएँ। हल के बाद जाँचें कि संख्या ऋणेतर पूर्णांक है और दी गई प्रायिकता वास्तव में मिलती है।"
+      },
+      "formula": "P(red) = red ball count / total ball count (one equal-chance draw)",
+      "question": {
+        "en": "A bag has 4 red and 6 green balls. What is P(red)?",
+        "hi": "थैले में 4 लाल और 6 हरी गेंदें हैं। P(लाल) क्या है?"
+      },
+      "answer": {
+        "en": "4/10 = 2/5.",
+        "hi": "4/10 = 2/5।"
+      }
+    },
+    {
+      "title": {
+        "en": "A standard deck as a counting model",
+        "hi": "मानक ताश की गड्डी में गिनती"
+      },
+      "body": {
+        "en": "A standard deck without jokers contains 52 cards in four suits of 13 cards each. Hearts and diamonds are red; clubs and spades are black. Each suit has one ace and the numbered cards 2 through 10, plus jack, queen and king. Face cards are jack, queen and king: there are 3 per suit and 12 altogether. An ace is not counted as a face card in this convention. A well-shuffled, equal-chance single-card draw has denominator 52. To find the probability of a king, count four kings and obtain 4/52 = 1/13. For a red king, both conditions must hold simultaneously, leaving two cards. For a red card or a king, a red king satisfies both descriptions and must not be counted twice. A simple explicit list is often safer than memorising a rule without understanding overlap. The deck is used here only as a finite mathematical collection; no money, wager or game strategy is involved in the probability calculation.",
+        "hi": "जोकर रहित मानक ताश की गड्डी में 52 पत्ते और 13-13 पत्तों के 4 चिह्न होते हैं। पान और ईंट लाल तथा चिड़ी और हुकुम काले होते हैं। हर चिह्न में एक इक्का, 2 से 10 तक अंक वाले पत्ते और गुलाम, बेगम, बादशाह होते हैं। मुख पत्ते (Face cards) गुलाम, बेगम और बादशाह हैं। हर चिह्न में 3 तथा कुल 12 मुख पत्ते हैं। इस परंपरा में इक्का मुख पत्ता नहीं गिना जाता। ठीक से फेंटी गड्डी से समान अवसर पर एक पत्ता निकालने में हर 52 है। बादशाह की प्रायिकता में 4 अनुकूल पत्ते गिनकर 4/52 = 1/13 मिलता है। लाल बादशाह में दोनों शर्तें एक साथ पूरी होंगी, इसलिए 2 पत्ते बचते हैं। लाल पत्ता या बादशाह की घटना में लाल बादशाह दोनों विवरण पूरे करता है। उसे 2 बार नहीं गिनना चाहिए। बिना अर्थ समझे नियम याद करने से बेहतर कई बार स्पष्ट सूची बनाना है। यहाँ ताश केवल सीमित गणितीय संग्रह का उदाहरण है। प्रायिकता की इस गणना में धन, दाँव या खेल की रणनीति शामिल नहीं है।"
+      },
+      "formula": "52 cards; 4 suits; 26 red; 4 aces; 12 face cards",
+      "question": {
+        "en": "How many red face cards are in the standard deck?",
+        "hi": "मानक गड्डी में लाल मुख पत्ते कितने हैं?"
+      },
+      "answer": {
+        "en": "6: three face cards in each of the two red suits.",
+        "hi": "6: दोनों लाल चिह्नों में 3-3 मुख पत्ते।"
+      }
+    },
+    {
+      "title": {
+        "en": "Ordered pairs in two-coin and two-dice models",
+        "hi": "2 सिक्कों और 2 पासों में क्रमित युग्म"
+      },
+      "body": {
+        "en": "For two independent fair coin tosses, the equally likely complete outcomes are HH, HT, TH and TT. The labels identify first and second tosses, or distinguish the two coins. Exactly one head includes HT and TH, so its probability is 2/4, not 1/3. The three categories two heads, one head and no heads are not equally likely. For two independent fair dice, use ordered pairs (first face, second face). A 6 by 6 table contains 36 equally likely outcomes. The pair (2, 5) differs from (5, 2), even though both give sum 7. Sums from 2 through 12 are not equally likely: 2 has only (1, 1), while 7 has six ordered pairs. An event concerning a sum is counted by marking all matching cells. Do not divide by 11 merely because there are 11 possible sum values. Such tables make the favourable count visible and reduce mistakes involving repeated faces, reversed order, or phrases such as at least one.",
+        "hi": "2 स्वतंत्र निष्पक्ष सिक्का उछालों के पूरे समप्रायिक परिणाम HH, HT, TH और TT हैं। अक्षर पहले तथा दूसरे उछाल को पहचानते हैं या दोनों सिक्कों को अलग बताते हैं। ठीक एक चित में HT और TH आते हैं, इसलिए प्रायिकता 2/4 है, 1/3 नहीं। दोनों चित, एक चित और कोई चित नहीं जैसी 3 श्रेणियाँ समप्रायिक नहीं हैं। 2 स्वतंत्र निष्पक्ष पासों में क्रमित युग्म (Ordered pair) लें: पहले पासे का अंक और दूसरे का अंक। 6 × 6 सारणी में 36 समप्रायिक परिणाम हैं। (2, 5) और (5, 2) अलग हैं, भले ही दोनों का योग 7 है। 2 से 12 तक के योग बराबर संभावित नहीं हैं। योग 2 केवल (1, 1) से बनता है, जबकि योग 7 के 6 क्रमित युग्म हैं। योग की घटना में उससे मेल खाने वाले सभी खाने चिह्नित करें। केवल 11 संभव योग होने से हर 11 न लें। सारणी से अनुकूल गिनती दिखती है और समान फलक, उलटा क्रम तथा कम से कम एक जैसे शब्दों में गलती घटती है।"
+      },
+      "formula": "Two coins: 4 ordered outcomes; two dice: 36 ordered outcomes",
+      "question": {
+        "en": "Why is sum 7 more likely than sum 2 with two fair dice?",
+        "hi": "2 निष्पक्ष पासों में योग 7, योग 2 से अधिक संभावित क्यों है?"
+      },
+      "answer": {
+        "en": "Sum 7 has 6 favourable ordered pairs; sum 2 has 1.",
+        "hi": "योग 7 के 6 अनुकूल क्रमित युग्म हैं; योग 2 का केवल 1 है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Theory, simulation and an honest final answer",
+        "hi": "सिद्धांत, सिमुलेशन और सही अर्थ"
+      },
+      "body": {
+        "en": "Experimental relative frequency is the number of observed successes divided by the number of trials performed. Theoretical probability is calculated from a stated model before looking at results. A fair coin has theoretical head probability 1/2, but ten software tosses need not contain exactly five heads. Increasing the number of trials often makes relative frequency more stable, yet it does not guarantee an exact match at any chosen finite trial count. Previous outcomes do not force the next independent fair toss to compensate: a run of heads does not make a tail certain. Use a simulation to observe variation, not as a proof of fairness or of a counting theorem. A complete written answer states the experiment, assumptions, complete outcome count, favourable count, fraction and simplified result. Check that the answer is between 0 and 1 and that its complement adds to 1. If outcomes are not equally likely, explain why simple counting is insufficient rather than inventing a probability. These habits are useful in interpreting everyday uncertain claims.",
+        "hi": "प्रयोगात्मक सापेक्ष बारंबारता (Relative frequency) में देखी गई सफलताओं की संख्या को किए गए परीक्षणों से भाग देते हैं। सैद्धांतिक प्रायिकता (Theoretical probability) बताए मॉडल से परिणाम देखे बिना निकाली जाती है। निष्पक्ष सिक्के में चित की सैद्धांतिक प्रायिकता 1/2 है, लेकिन सॉफ्टवेयर के 10 उछालों में ठीक 5 चित होना जरूरी नहीं है। परीक्षण बढ़ने पर सापेक्ष बारंबारता अक्सर अधिक स्थिर दिखती है। फिर भी किसी चुनी सीमित संख्या पर सटीक मिलान की गारंटी नहीं है। पिछले परिणाम अगले स्वतंत्र निष्पक्ष उछाल को हिसाब बराबर करने के लिए मजबूर नहीं करते। लगातार कई चित आने से अगला पट निश्चित नहीं हो जाता। सिमुलेशन से परिवर्तन देखें, लेकिन उसे निष्पक्षता या गिनती के प्रमेय का प्रमाण न मानें। पूरे लिखित उत्तर में प्रयोग, मान्यताएँ, कुल परिणाम, अनुकूल परिणाम, भिन्न और सरल उत्तर लिखें। जाँचें कि उत्तर 0 और 1 के बीच है तथा पूरक के साथ योग 1 है। परिणाम समप्रायिक न हों, तो सरल गिनती की कमी बताएँ; मनमानी प्रायिकता न बनाएँ। ये आदतें दैनिक जीवन के अनिश्चित दावों को समझने में भी उपयोगी हैं।"
+      },
+      "formula": "Observed relative frequency = observed successes / completed trials",
+      "question": {
+        "en": "Do 100 fair coin tosses guarantee exactly 50 heads?",
+        "hi": "क्या 100 निष्पक्ष उछालों में ठीक 50 चित की गारंटी है?"
+      },
+      "answer": {
+        "en": "No. The probability model is fair, but finite observed counts vary.",
+        "hi": "नहीं। मॉडल निष्पक्ष है, फिर भी सीमित प्रयोग की गिनती बदलती है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "One fair coin is tossed. Find the probability of a tail.",
+        "hi": "एक निष्पक्ष सिक्का उछाला गया। पट की प्रायिकता ज्ञात करें।"
+      },
+      "steps": [
+        {
+          "en": "Given a fair, ideal one-toss model: S = {H, T}.",
+          "hi": "निष्पक्ष आदर्श एक उछाल मॉडल में S = {H, T} है।"
+        },
+        {
+          "en": "There are 2 equally likely outcomes and 1 favourable tail.",
+          "hi": "2 समप्रायिक परिणाम हैं और पट का 1 अनुकूल परिणाम है।"
+        },
+        {
+          "en": "P(T) = 1/2.",
+          "hi": "P(T) = 1/2।"
+        }
+      ],
+      "answer": {
+        "en": "1/2, with no measurement unit.",
+        "hi": "1/2, इसकी कोई मापन इकाई नहीं है।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the probability of a prime number on one fair die.",
+        "hi": "एक निष्पक्ष पासे पर अभाज्य अंक की प्रायिकता निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Possible faces are 1, 2, 3, 4, 5, 6; total 6.",
+          "hi": "संभव अंक 1, 2, 3, 4, 5, 6 हैं; कुल 6।"
+        },
+        {
+          "en": "Prime outcomes are 2, 3, 5; the number 1 is not prime.",
+          "hi": "अभाज्य परिणाम 2, 3, 5 हैं; 1 अभाज्य नहीं है।"
+        },
+        {
+          "en": "P(prime) = 3/6 = 1/2.",
+          "hi": "P(अभाज्य) = 3/6 = 1/2।"
+        }
+      ],
+      "answer": {
+        "en": "1/2.",
+        "hi": "1/2।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A bag has 5 red, 3 blue and 4 green identical balls. One is selected without looking. Find the probability it is not blue.",
+        "hi": "थैले में 5 लाल, 3 नीली और 4 हरी एक जैसी गेंदें हैं। बिना देखे एक गेंद चुनी। नीली नहीं होने की प्रायिकता निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Total equally selectable balls = 5 + 3 + 4 = 12.",
+          "hi": "समान अवसर वाली कुल गेंदें = 5 + 3 + 4 = 12।"
+        },
+        {
+          "en": "Not blue means red or green, so favourable count = 5 + 4 = 9.",
+          "hi": "नीली नहीं का अर्थ लाल या हरी है; अनुकूल संख्या = 5 + 4 = 9।"
+        },
+        {
+          "en": "P(not blue) = 9/12 = 3/4. Also 1 − 3/12 = 3/4.",
+          "hi": "P(नीली नहीं) = 9/12 = 3/4। जाँच: 1 − 3/12 = 3/4।"
+        }
+      ],
+      "answer": {
+        "en": "3/4.",
+        "hi": "3/4।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "One card is selected equally from a shuffled standard 52-card deck without jokers. Find the probability of a red king.",
+        "hi": "जोकर रहित फेंटी गई 52 पत्तों की मानक गड्डी से समान अवसर पर एक पत्ता चुना। लाल बादशाह की प्रायिकता निकालें।"
+      },
+      "steps": [
+        {
+          "en": "The total number of elementary outcomes is 52.",
+          "hi": "मूल परिणामों की कुल संख्या 52 है।"
+        },
+        {
+          "en": "The two red suits each contain one king, so favourable count = 2.",
+          "hi": "दोनों लाल चिह्नों में एक-एक बादशाह है, इसलिए अनुकूल संख्या 2 है।"
+        },
+        {
+          "en": "P(red king) = 2/52 = 1/26.",
+          "hi": "P(लाल बादशाह) = 2/52 = 1/26।"
+        }
+      ],
+      "answer": {
+        "en": "1/26.",
+        "hi": "1/26।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Two independent fair dice are thrown. Find the probability that their sum is 9.",
+        "hi": "2 स्वतंत्र निष्पक्ष पासे फेंके गए। योग 9 होने की प्रायिकता निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given a two-dice model; distinguish first and second die. There are 6 × 6 = 36 equally likely ordered pairs.",
+          "hi": "2 पासों में पहला और दूसरा अलग पहचानें। कुल 6 × 6 = 36 समप्रायिक क्रमित युग्म हैं।"
+        },
+        {
+          "en": "Sum 9 occurs for (3, 6), (4, 5), (5, 4), (6, 3).",
+          "hi": "योग 9 के युग्म (3, 6), (4, 5), (5, 4), (6, 3) हैं।"
+        },
+        {
+          "en": "There are 4 favourable pairs, so P(sum 9) = 4/36 = 1/9.",
+          "hi": "4 अनुकूल युग्म हैं, इसलिए P(योग 9) = 4/36 = 1/9।"
+        },
+        {
+          "en": "Do not use denominator 11: the possible sum values are not equally likely.",
+          "hi": "हर 11 न लें: संभव योग बराबर संभावित नहीं हैं।"
+        }
+      ],
+      "answer": {
+        "en": "1/9.",
+        "hi": "1/9।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "What is P(E) for equally likely finite outcomes?",
+        "hi": "सीमित समप्रायिक परिणामों में P(E) क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Total / favourable",
+            "hi": "कुल / अनुकूल"
+          },
+          "reason": {
+            "en": "This can exceed 1 and reverses the ratio.",
+            "hi": "यह अनुपात उलटता है और 1 से बड़ा हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Favourable + total",
+            "hi": "अनुकूल + कुल"
+          },
+          "reason": {
+            "en": "A sum is not the required proportion.",
+            "hi": "योग माँगा गया अनुपात नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Favourable / total",
+            "hi": "अनुकूल / कुल"
+          },
+          "reason": {
+            "en": "This is the classical counting definition.",
+            "hi": "यह शास्त्रीय गिनती की परिभाषा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Favourable − total",
+            "hi": "अनुकूल − कुल"
+          },
+          "reason": {
+            "en": "A difference does not express probability.",
+            "hi": "अंतर प्रायिकता नहीं बताता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "What is the probability of getting 8 on one standard die?",
+        "hi": "एक मानक पासे पर 8 आने की प्रायिकता क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "No face is marked 8.",
+            "hi": "किसी फलक पर 8 नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/6",
+            "hi": "1/6"
+          },
+          "reason": {
+            "en": "That is the probability of one existing fair-die face.",
+            "hi": "यह किसी मौजूद निष्पक्ष फलक की प्रायिकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Getting 8 is not certain; it is impossible.",
+            "hi": "8 आना निश्चित नहीं, असंभव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "8/6",
+            "hi": "8/6"
+          },
+          "reason": {
+            "en": "A probability cannot exceed 1.",
+            "hi": "प्रायिकता 1 से बड़ी नहीं हो सकती।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A fair die is thrown. What is P(at least 5)?",
+        "hi": "निष्पक्ष पासा फेंका। P(कम से कम 5) क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/6",
+            "hi": "1/6"
+          },
+          "reason": {
+            "en": "This counts only 6 or only 5, not both.",
+            "hi": "यह केवल एक अंक गिनता है, दोनों नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "5/6",
+            "hi": "5/6"
+          },
+          "reason": {
+            "en": "The number 5 is a threshold, not a favourable count.",
+            "hi": "5 सीमा है, अनुकूल परिणामों की संख्या नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          "reason": {
+            "en": "There are only two favourable faces, not three.",
+            "hi": "केवल 2 अनुकूल फलक हैं, 3 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/3",
+            "hi": "1/3"
+          },
+          "reason": {
+            "en": "Favourable faces are 5 and 6, giving 2/6.",
+            "hi": "अनुकूल फलक 5 और 6 हैं; 2/6 मिलता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "If P(E) = 0.35, what is P(not E)?",
+        "hi": "P(E) = 0.35 हो, तो P(E नहीं) क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0.35",
+            "hi": "0.35"
+          },
+          "reason": {
+            "en": "The complement need not equal the event.",
+            "hi": "पूरक घटना के बराबर होना जरूरी नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.65",
+            "hi": "0.65"
+          },
+          "reason": {
+            "en": "1 − 0.35 = 0.65.",
+            "hi": "1 − 0.35 = 0.65।"
+          }
+        },
+        {
+          "text": {
+            "en": "1.35",
+            "hi": "1.35"
+          },
+          "reason": {
+            "en": "This exceeds 1 and adds instead of subtracting.",
+            "hi": "यह 1 से बड़ा है; यहाँ घटाना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "−0.35",
+            "hi": "−0.35"
+          },
+          "reason": {
+            "en": "Probabilities cannot be negative.",
+            "hi": "प्रायिकताएँ ऋणात्मक नहीं हो सकतीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A bag has 1 red and 9 blue identical balls. What is P(red) in one equal-chance draw?",
+        "hi": "थैले में 1 लाल और 9 नीली समान गेंदें हैं। एक समान अवसर चयन में P(लाल) क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          "reason": {
+            "en": "Two colour names do not give equal colour chances.",
+            "hi": "2 रंगों के नाम बराबर अवसर नहीं देते।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/9",
+            "hi": "1/9"
+          },
+          "reason": {
+            "en": "The denominator must include the red ball too.",
+            "hi": "हर में लाल गेंद भी शामिल होगी।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/10",
+            "hi": "1/10"
+          },
+          "reason": {
+            "en": "One of ten equally selectable balls is red.",
+            "hi": "10 समान अवसर गेंदों में से 1 लाल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9/10",
+            "hi": "9/10"
+          },
+          "reason": {
+            "en": "That is P(blue), not P(red).",
+            "hi": "यह P(नीली) है, P(लाल) नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "How many face cards are in a standard deck without jokers?",
+        "hi": "जोकर रहित मानक गड्डी में मुख पत्ते कितने हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "Jack, queen and king in each of four suits give 3 × 4.",
+            "hi": "4 चिह्नों में गुलाम, बेगम, बादशाह से 3 × 4 मिलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "This counts one rank across all suits.",
+            "hi": "यह सभी चिह्नों में केवल एक पद गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "16",
+            "hi": "16"
+          },
+          "reason": {
+            "en": "This incorrectly includes aces as face cards.",
+            "hi": "इसमें इक्के गलत ढंग से मुख पत्ते गिने गए हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "52",
+            "hi": "52"
+          },
+          "reason": {
+            "en": "This counts every card, including number cards.",
+            "hi": "यह अंक वाले पत्तों सहित पूरी गड्डी गिनता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two fair coins are tossed independently. What is P(exactly one head)?",
+        "hi": "2 निष्पक्ष सिक्के स्वतंत्र उछाले। ठीक एक चित की प्रायिकता क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/3",
+            "hi": "1/3"
+          },
+          "reason": {
+            "en": "The categories 0, 1 and 2 heads are not equally likely.",
+            "hi": "0, 1, 2 चित वाली श्रेणियाँ समप्रायिक नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/4",
+            "hi": "1/4"
+          },
+          "reason": {
+            "en": "This counts only HT or only TH.",
+            "hi": "यह केवल HT या केवल TH गिनता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3/4",
+            "hi": "3/4"
+          },
+          "reason": {
+            "en": "This is P(at least one head).",
+            "hi": "यह कम से कम एक चित की प्रायिकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          "reason": {
+            "en": "HT and TH are two favourable outcomes among four.",
+            "hi": "4 में HT और TH, 2 अनुकूल परिणाम हैं।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "How many equally likely ordered pairs occur with two independent fair dice?",
+        "hi": "2 स्वतंत्र निष्पक्ष पासों में कितने समप्रायिक क्रमित युग्म हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "Adding six and six does not count pairs.",
+            "hi": "6 और 6 जोड़ने से युग्म नहीं गिने जाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "36",
+            "hi": "36"
+          },
+          "reason": {
+            "en": "Each of six first results pairs with six second results.",
+            "hi": "पहले के हर 6 परिणाम के साथ दूसरे के 6 परिणाम जुड़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "11",
+            "hi": "11"
+          },
+          "reason": {
+            "en": "This counts sum values, which are not equally likely.",
+            "hi": "यह योगों के मान गिनता है, जो समप्रायिक नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "This is the outcome count for one die.",
+            "hi": "यह एक पासे के परिणामों की संख्या है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "What is the probability of sum 2 on two independent fair dice?",
+        "hi": "2 स्वतंत्र निष्पक्ष पासों पर योग 2 की प्रायिकता क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/11",
+            "hi": "1/11"
+          },
+          "reason": {
+            "en": "The eleven possible sums are not equally likely.",
+            "hi": "11 संभव योग बराबर संभावित नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2/36",
+            "hi": "2/36"
+          },
+          "reason": {
+            "en": "The pair (1, 1) is counted only once.",
+            "hi": "(1, 1) युग्म केवल एक बार गिना जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/36",
+            "hi": "1/36"
+          },
+          "reason": {
+            "en": "Only (1, 1) is favourable among 36 pairs.",
+            "hi": "36 युग्मों में केवल (1, 1) अनुकूल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/6",
+            "hi": "1/6"
+          },
+          "reason": {
+            "en": "This uses a one-die denominator.",
+            "hi": "यह एक पासे वाला हर लेता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "After several heads in independent fair tosses, what can be said about the next toss?",
+        "hi": "स्वतंत्र निष्पक्ष उछालों में कई चित के बाद अगले उछाल के बारे में क्या कहेंगे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "P(head) remains 1/2",
+            "hi": "P(चित) अभी भी 1/2 है"
+          },
+          "reason": {
+            "en": "Earlier results do not alter the independent fair model.",
+            "hi": "पहले परिणाम स्वतंत्र निष्पक्ष मॉडल को नहीं बदलते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Tail is certain",
+            "hi": "पट निश्चित है"
+          },
+          "reason": {
+            "en": "The experiment does not have to compensate for earlier results.",
+            "hi": "प्रयोग को पहले परिणामों का हिसाब बराबर नहीं करना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Head is certain",
+            "hi": "चित निश्चित है"
+          },
+          "reason": {
+            "en": "A previous run does not force repetition.",
+            "hi": "पिछला क्रम अगली पुनरावृत्ति निश्चित नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "P(head) becomes 0",
+            "hi": "P(चित) अब 0 है"
+          },
+          "reason": {
+            "en": "The head outcome is still possible.",
+            "hi": "चित का परिणाम अभी भी संभव है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State the classical probability formula and its essential assumption.",
+        "hi": "शास्त्रीय प्रायिकता का सूत्र और आवश्यक मान्यता लिखें।"
+      },
+      "answer": {
+        "en": "P(E) = favourable outcomes / total outcomes, assuming a finite sample space of equally likely elementary outcomes.",
+        "hi": "P(E) = अनुकूल परिणाम / कुल परिणाम, जब सीमित मूल परिणाम समप्रायिक हों।"
+      }
+    },
+    {
+      "question": {
+        "en": "A fair die is thrown. Find P(not a prime).",
+        "hi": "एक निष्पक्ष पासा फेंका। अभाज्य नहीं की प्रायिकता निकालें।"
+      },
+      "answer": {
+        "en": "Prime faces are 2, 3, 5, so non-prime faces are 1, 4, 6. Probability = 3/6 = 1/2.",
+        "hi": "अभाज्य अंक 2, 3, 5 हैं। अभाज्य नहीं अंक 1, 4, 6 हैं। प्रायिकता 3/6 = 1/2 है।"
+      }
+    },
+    {
+      "question": {
+        "en": "A bag has 5 red, 3 blue and k green identical balls. P(green) = 1/3 for one equal-chance draw. Find k.",
+        "hi": "थैले में 5 लाल, 3 नीली और k हरी समान गेंदें हैं। एक समान अवसर चयन में P(हरी) = 1/3 है। k निकालें।"
+      },
+      "answer": {
+        "en": "k/(8 + k) = 1/3 ⇒ 3k = 8 + k ⇒ k = 4.",
+        "hi": "k/(8 + k) = 1/3 ⇒ 3k = 8 + k ⇒ k = 4।"
+      }
+    },
+    {
+      "question": {
+        "en": "List the complement of at least one head in two tosses and find its probability.",
+        "hi": "2 उछालों में कम से कम एक चित का पूरक लिखें और प्रायिकता निकालें।"
+      },
+      "answer": {
+        "en": "The complement is no heads, TT. Of four equally likely outcomes, one is TT, so P = 1/4.",
+        "hi": "पूरक कोई चित नहीं अर्थात TT है। 4 समप्रायिक परिणामों में 1 TT है, इसलिए P = 1/4।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find P(sum 7) for two independent fair dice.",
+        "hi": "2 स्वतंत्र निष्पक्ष पासों पर P(योग 7) निकालें।"
+      },
+      "answer": {
+        "en": "Pairs are (1,6),(2,5),(3,4),(4,3),(5,2),(6,1): 6 out of 36, so 1/6.",
+        "hi": "युग्म (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) हैं। 36 में 6, इसलिए 1/6।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can the observed fraction of heads differ from 1/2 in a finite simulation?",
+        "hi": "सीमित सिमुलेशन में चित का देखा गया अनुपात 1/2 से अलग क्यों हो सकता है?"
+      },
+      "answer": {
+        "en": "Theoretical probability describes the fair model. Finite random outcomes fluctuate and are not required to match it exactly.",
+        "hi": "सैद्धांतिक प्रायिकता निष्पक्ष मॉडल बताती है। सीमित यादृच्छिक परिणाम बदलते हैं और ठीक उसी अनुपात में आना आवश्यक नहीं है।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not assume colour categories or dice sums are equally likely, count 1 as prime, treat aces as face cards, forget ordered pairs, or claim previous independent results force a compensating next outcome.",
+    "hi": "रंगों की श्रेणियों या पासों के योगों को अपने आप समप्रायिक न मानें। 1 को अभाज्य और इक्के को मुख पत्ता न गिनें। क्रमित युग्म न भूलें। पिछले स्वतंत्र परिणाम अगले में हिसाब बराबर करने की गारंटी नहीं देते।"
+  },
+  "revision": [
+    {
+      "en": "Define the experiment and complete elementary outcomes first.",
+      "hi": "पहले प्रयोग और पूरे मूल परिणाम बताएँ।"
+    },
+    {
+      "en": "Use favourable / total only for equally likely outcomes.",
+      "hi": "समप्रायिक परिणामों में ही अनुकूल / कुल लगाएँ।"
+    },
+    {
+      "en": "Probability lies from 0 to 1 and has no measurement unit.",
+      "hi": "प्रायिकता 0 से 1 तक है और उसकी मापन इकाई नहीं है।"
+    },
+    {
+      "en": "P(not E) = 1 − P(E).",
+      "hi": "P(E नहीं) = 1 − P(E)।"
+    },
+    {
+      "en": "A finite simulation can vary from theoretical probability.",
+      "hi": "सीमित सिमुलेशन सैद्धांतिक प्रायिकता से अलग दिख सकता है।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Precise random experiment → equally likely sample space → event / complement → favourable count → probability → compare with variable experimental frequency.",
+    "hi": "स्पष्ट यादृच्छिक प्रयोग → समप्रायिक प्रतिदर्श समष्टि → घटना / पूरक → अनुकूल गिनती → प्रायिकता → बदलती प्रयोगात्मक बारंबारता से तुलना।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, Chapter 14, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh114.pdf"
+    },
+    {
+      "title": "UP Board Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

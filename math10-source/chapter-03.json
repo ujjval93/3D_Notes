@@ -1,0 +1,898 @@
+{
+  "id": 3,
+  "title": {
+    "en": "Pair of Linear Equations in Two Variables",
+    "hi": "दो चरों वाले रैखिक समीकरण युग्म"
+  },
+  "goal": {
+    "en": "Translate two conditions into a pair of lines and solve or classify them by graphs and algebra.",
+    "hi": "2 शर्तों को रेखाओं के युग्म में बदलें और ग्राफ तथा बीजगणित से हल या वर्गीकरण करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "From one condition to a pair",
+        "hi": "एक शर्त से समीकरण युग्म तक"
+      },
+      "body": {
+        "en": "A linear equation in two variables has form ax + by + c = 0, where a and b are not both zero. Its solutions are ordered pairs (x,y), and infinitely many pairs usually satisfy this single condition. For x + y = 8, both (3,5) and (6,2) work. A second independent condition may select exactly one common pair. If x − y = 2 also holds, only (5,3) satisfies both. Write a separate equation for each separate fact in a word problem rather than trying to guess a solution from one fact. Define variables before using them: x and y should represent specific quantities in stated units. The order matters, because interchanging x and y can change the interpretation. A solution of the pair must make both original equations true simultaneously. Solving each equation for a different convenient point is not solving the pair unless those points coincide. Always distinguish an expression, which has a value, from an equation, which places a condition on possible values.",
+        "hi": "दो चरों का रैखिक समीकरण (Linear equation) ax + by + c = 0 होता है, जहाँ a और b दोनों एक साथ 0 नहीं होते। इसके हल क्रमित युग्म (x,y) होते हैं। सामान्यतः एक समीकरण को अनंत युग्म संतुष्ट करते हैं। x + y = 8 में (3,5) और (6,2) दोनों सही हैं। दूसरी स्वतंत्र शर्त कभी केवल 1 साझा युग्म चुन देती है। यदि x − y = 2 भी हो, तो (5,3) दोनों को संतुष्ट करता है। शाब्दिक प्रश्न के हर अलग तथ्य से अलग समीकरण बनाएँ; केवल एक तथ्य से उत्तर का अनुमान न लगाएँ। चर उपयोग करने से पहले उनका अर्थ लिखें। x तथा y कौन-सी राशि हैं और किस इकाई में हैं, यह स्पष्ट हो। क्रम महत्वपूर्ण है, क्योंकि x और y बदलने पर वस्तु या अर्थ बदल सकता है। समीकरण युग्म का हल दोनों मूल समीकरणों को एक ही समय संतुष्ट करे। पहले समीकरण के लिए एक सुविधाजनक बिंदु और दूसरे के लिए कोई अलग बिंदु निकालना साझा हल नहीं है। दोनों का एक ही युग्म चाहिए। व्यंजक और समीकरण का अंतर भी रखें: व्यंजक का मान होता है, समीकरण संभावित मानों पर शर्त लगाता है।"
+      },
+      "formula": "a1x + b1y + c1 = 0; a2x + b2y + c2 = 0",
+      "question": {
+        "en": "Does satisfying only one equation solve the pair?",
+        "hi": "क्या केवल 1 समीकरण संतुष्ट करने से युग्म हल हो जाता है?"
+      },
+      "answer": {
+        "en": "No. The same ordered pair must satisfy both.",
+        "hi": "नहीं। एक ही क्रमित युग्म दोनों को संतुष्ट करे।"
+      }
+    },
+    {
+      "title": {
+        "en": "Draw a line and read a common point",
+        "hi": "रेखा बनाना और साझा बिंदु पढ़ना"
+      },
+      "body": {
+        "en": "The graph of a nondegenerate linear equation is a straight line. Find at least two distinct exact solution points, plot them with a consistent scale, and join them. A third point provides an arithmetic check. For x + 2y = 6, convenient points are (0,3) and (6,0). When two graphs meet, the intersection belongs to both lines, so its coordinates solve both equations. If the intersection appears at fractional coordinates, use algebra to recover the exact values; a graph reading alone is approximate. Vertical and horizontal lines are valid: x = 2 is vertical and y = −3 is horizontal. Do not divide by b to form y = (−a/b)x − c/b when b = 0. Instead recognise the vertical equation directly. A plotting window may not contain the intersection even when it exists. Parallel-looking lines on a small screen are not sufficient evidence of inconsistency; compare their coefficients. Label axes, tick spacing and the interpreted point so a reader can connect the picture to the equations rather than merely see two strokes.",
+        "hi": "अविकृत रैखिक समीकरण का ग्राफ सीधी रेखा होता है। पहले कम-से-कम 2 अलग सटीक हल-बिंदु निकालें। समान पैमाने पर उन्हें रखें और जोड़ें। तीसरा बिंदु गणना की जाँच में मदद करता है। x + 2y = 6 के लिए (0,3) तथा (6,0) सुविधाजनक हैं। 2 रेखाएँ जहाँ मिलें, वह बिंदु दोनों रेखाओं का है। इसलिए उसके निर्देशांक दोनों समीकरणों का साझा हल हैं। प्रतिच्छेद भिन्न निर्देशांकों पर दिखे, तो बीजगणित से सटीक मान निकालें; ग्राफ पढ़ना सन्निकट हो सकता है। लंबवत और क्षैतिज रेखाएँ भी मान्य हैं। x = 2 लंबवत तथा y = −3 क्षैतिज रेखा है। b = 0 होने पर y = (−a/b)x − c/b बनाने के लिए b से भाग न दें। सीधे लंबवत रेखा पहचानें। प्रतिच्छेद अस्तित्व में होते हुए भी स्क्रीन की सीमित खिड़की से बाहर हो सकता है। छोटे चित्र में रेखाएँ समांतर जैसी लगने भर से असंगति सिद्ध नहीं होती; गुणांक जाँचें। अक्ष, माप-अंतराल और साझा बिंदु का नाम लिखें। इससे पाठक चित्र को समीकरण से जोड़ता है, केवल 2 खींची रेखाएँ नहीं देखता।"
+      },
+      "formula": "(x,y) on both graphs ⇒ simultaneous solution",
+      "question": {
+        "en": "What is the intersection of x = 2 and y = −3?",
+        "hi": "x = 2 तथा y = −3 का प्रतिच्छेद क्या है?"
+      },
+      "answer": {
+        "en": "(2,−3).",
+        "hi": "(2,−3)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Unique, no and infinitely many solutions",
+        "hi": "अद्वितीय, कोई नहीं और अनंत हल"
+      },
+      "body": {
+        "en": "Two genuine lines in a plane have three relevant relationships. Intersecting lines give one common point and a unique solution. Distinct parallel lines have no common point and no solution. Coincident lines are the same line represented twice and have infinitely many common points. A pair with at least one solution is consistent. Thus both a uniquely solved pair and a coincident pair are consistent; the coincident case is also dependent. A pair with no solution is inconsistent. These terms describe logical compatibility, not whether a calculation feels easy. For example x + y = 4 and 2x + 2y = 8 are dependent because every solution of the first satisfies the second. Replacing 8 by 10 makes the conditions contradictory and gives parallel distinct lines. Do not call coincident lines two separate intersections, and do not report (0,0) merely because elimination removed both variables. When algebra reduces the pair to a statement containing no variables, decide whether it is always true or impossible before concluding how many original pairs remain.",
+        "hi": "समतल की 2 वास्तविक रेखाओं के बीच 3 उपयोगी संबंध हो सकते हैं। प्रतिच्छेदी रेखाएँ एक साझा बिंदु देती हैं, इसलिए हल अद्वितीय (Unique) है। अलग समांतर रेखाओं का कोई साझा बिंदु नहीं, इसलिए कोई हल नहीं है। संपाती रेखाएँ एक ही रेखा को 2 रूपों में दिखाती हैं, इसलिए उनके अनंत साझा बिंदु हैं। जिस युग्म का कम-से-कम 1 हल हो, वह संगत (Consistent) कहलाता है। इसलिए अद्वितीय हल वाला और संपाती, दोनों युग्म संगत हैं। संपाती स्थिति आश्रित (Dependent) भी है। कोई हल न होने पर युग्म असंगत (Inconsistent) है। ये शब्द शर्तों की अनुकूलता बताते हैं, गणना की आसानी नहीं। x + y = 4 तथा 2x + 2y = 8 आश्रित हैं, क्योंकि पहली शर्त का हर हल दूसरी को भी संतुष्ट करता है। दूसरी ओर 8 की जगह 10 रखने पर शर्तें विरोधी हो जाती हैं और रेखाएँ अलग समांतर होती हैं। संपाती रेखाओं को केवल 2 साझा बिंदु वाली न कहें। विलोपन में दोनों चर हट जाएँ, तो तुरंत (0,0) उत्तर न लिखें। पहले देखें कि बचा कथन हमेशा सत्य है या असंभव। उसी से मूल युग्म के हलों की संख्या तय होगी।"
+      },
+      "formula": "Intersecting → 1; parallel distinct → 0; coincident → infinitely many",
+      "question": {
+        "en": "Are coincident equations consistent?",
+        "hi": "क्या संपाती समीकरण संगत हैं?"
+      },
+      "answer": {
+        "en": "Yes. They have infinitely many solutions and are dependent.",
+        "hi": "हाँ। इनके अनंत हल हैं और ये आश्रित हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Coefficient tests without invalid ratios",
+        "hi": "अवैध अनुपातों के बिना गुणांक परीक्षण"
+      },
+      "body": {
+        "en": "Write both equations in the same standard form before comparing coefficients. When all relevant denominator coefficients are nonzero, a1/a2 ≠ b1/b2 means a unique solution. Equal a and b ratios but a different c ratio means no solution; all three equal ratios mean coincident lines. These ratio statements must not involve division by zero. A safer unique-intersection test is D = a1b2 − a2b1. If D ≠ 0, the pair has one solution, including vertical-line cases. If D = 0 for two genuine lines, compare the whole coefficient triples for proportionality or use elimination. A common nonzero multiplier must transform all three coefficients together for coincidence. For x + 2y − 3 = 0 and 2x + 4y − 6 = 0 that multiplier is 2. If the last constant is −8 instead, the lines are parallel distinct. In a slider model, a = b = 0 creates an identity 0 = 0 or a contradiction c = 0 with c nonzero; neither is a line. Such degenerate settings require separate interpretation rather than blindly applying the usual three-line-case table.",
+        "hi": "गुणांक तुलना से पहले दोनों समीकरणों को एक ही मानक रूप में लिखें। जरूरी हर अशून्य हों, तो a1/a2 ≠ b1/b2 से अद्वितीय हल मिलता है। a तथा b के अनुपात समान, पर c का अनुपात अलग हो, तो कोई हल नहीं। तीनों अनुपात समान हों, तो रेखाएँ संपाती हैं। लेकिन शून्य हर वाले अनुपात न बनाएँ। अधिक सुरक्षित अद्वितीय-प्रतिच्छेद परीक्षण D = a1b2 − a2b1 है। D ≠ 0 हो, तो 1 साझा हल है; लंबवत रेखाओं पर भी यह काम करता है। 2 वास्तविक रेखाओं में D = 0 हो, तो पूरे गुणांक त्रिक की समानुपातिकता जाँचें या विलोपन करें। संपाती होने के लिए एक ही अशून्य गुणक से तीनों गुणांक बदलने चाहिए। x + 2y − 3 = 0 से 2x + 4y − 6 = 0 में गुणक 2 है। अंतिम अचर −6 की जगह −8 हो, तो रेखाएँ अलग समांतर होंगी। स्लाइडर में a = b = 0 करने पर 0 = 0 जैसी सर्वसमता या अशून्य c के लिए विरोधी कथन मिलता है। इनमें कोई स्थिति वास्तविक रेखा नहीं है। इसलिए ऐसी अविकृत शर्त टूटने पर सामान्य रेखा-तालिका अंधाधुंध न लगाएँ; अलग अर्थ निकालें।"
+      },
+      "formula": "D = a1b2 − a2b1; D ≠ 0 ⇒ unique solution",
+      "question": {
+        "en": "Why is a ratio test unsafe if a denominator is 0?",
+        "hi": "हर 0 होने पर अनुपात परीक्षण असुरक्षित क्यों है?"
+      },
+      "answer": {
+        "en": "Division by zero is undefined; use cross-products or elimination.",
+        "hi": "0 से भाग परिभाषित नहीं है; आड़ी गुणा या विलोपन करें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Substitution method",
+        "hi": "प्रतिस्थापन विधि"
+      },
+      "body": {
+        "en": "In substitution, isolate one variable using an equation with a nonzero coefficient, then replace that variable in the other equation by the entire equivalent expression. If x − y = 2, write x = y + 2. Substitute into x + y = 8 to obtain y + 2 + y = 8, so y = 3 and x = 5. The substitution turns two unknowns into one while keeping the original condition intact. Parentheses are essential when the expression is multiplied or subtracted: 3x with x = 2y − 1 becomes 3(2y − 1), not 6y − 1. After finding one variable, return to an original equation for the other. Check both original conditions, not only a rearranged equation used midway. Choose the isolated variable to reduce arithmetic, often a coefficient 1 or −1. Fractions are valid and do not make the method wrong. If substitution yields an identity, the remaining equation describes infinitely many pairs; if it yields an impossible constant statement, no pair satisfies both conditions.",
+        "hi": "प्रतिस्थापन विधि (Substitution method) में पहले अशून्य गुणांक वाली किसी चर राशि को एक समीकरण से अलग करें। फिर उसका पूरा समतुल्य व्यंजक दूसरे समीकरण में रखें। x − y = 2 से x = y + 2 मिलता है। इसे x + y = 8 में रखने पर y + 2 + y = 8 है। इसलिए y = 3 और x = 5 मिलता है। इस तरह मूल शर्त बचाते हुए 2 अज्ञातों की जगह 1 अज्ञात बचता है। किसी पूरे व्यंजक को गुणा या घटाते समय कोष्ठक आवश्यक हैं। x = 2y − 1 हो, तो 3x को 3(2y − 1) लिखेंगे, 6y − 1 नहीं। एक चर मिलने के बाद मूल समीकरण से दूसरा निकालें। केवल बीच के बदले समीकरण की नहीं, दोनों मूल शर्तों की जाँच करें। गणना आसान करने के लिए 1 या −1 गुणांक वाला चर अलग करना सुविधाजनक है। भिन्न आने से विधि गलत नहीं हो जाती। यदि प्रतिस्थापन से सर्वसमता मिले, तो बचा स्वतंत्र समीकरण अनंत युग्मों को दर्शाता है। यदि कोई असंभव अचर कथन मिले, तो दोनों शर्तें एक साथ संतुष्ट करने वाला कोई युग्म नहीं है। हर चरण में दोनों पक्षों पर समान क्रिया करें।"
+      },
+      "formula": "x − y = 2 ⇒ x = y + 2",
+      "question": {
+        "en": "If x = 2y − 1, what is 3x?",
+        "hi": "यदि x = 2y − 1 है, तो 3x क्या होगा?"
+      },
+      "answer": {
+        "en": "3(2y − 1) = 6y − 3.",
+        "hi": "3(2y − 1) = 6y − 3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Elimination method",
+        "hi": "विलोपन विधि"
+      },
+      "body": {
+        "en": "Elimination forms equal or opposite coefficients for one variable and then subtracts or adds the equations to remove it. Every multiplication must apply to the whole equation, including the constant. For 2x + 3y = 17 and x − y = 1, multiply the second equation by 2 to obtain 2x − 2y = 2. Subtracting gives 5y = 15, so y = 3 and x = 4. Put subtraction brackets around the entire second side to protect negative signs. Adding is convenient for opposite coefficients; subtracting is convenient for equal ones. An efficient multiplier choice uses small common multiples, but any nonzero legal multipliers preserve the solution set. After eliminating and solving one variable, substitute into an original equation to find the second. If both variables disappear, interpret the result: 0 = 0 signals dependence for two genuine equations; 0 = 5 signals inconsistency. Never divide by the eliminated zero coefficient. A clear aligned layout helps the reader see which equation was multiplied and which was subtracted, and makes a sign error easier to locate.",
+        "hi": "विलोपन विधि (Elimination method) में किसी 1 चर के गुणांक बराबर या विपरीत बनाते हैं। फिर समीकरण घटाकर या जोड़कर वह चर हटाते हैं। किसी संख्या से गुणा करें, तो पूरा समीकरण, अचर सहित, गुणा करें। 2x + 3y = 17 तथा x − y = 1 में दूसरे समीकरण को 2 से गुणा करें: 2x − 2y = 2। पहले से दूसरा घटाने पर 5y = 15 है। इसलिए y = 3 तथा x = 4 मिलता है। घटाते समय पूरे दूसरे पक्ष को कोष्ठक में लें ताकि ऋण चिह्न न बिगड़ें। गुणांक विपरीत हों तो जोड़ना, और समान हों तो घटाना सुविधाजनक है। छोटे साझा गुणज चुनने से गणना कम होती है, लेकिन कोई भी उचित अशून्य गुणक हल नहीं बदलता। एक चर निकालने के बाद मूल समीकरण में रखकर दूसरा निकालें। दोनों चर हट जाएँ तो बचा परिणाम समझें। वास्तविक 2 समीकरणों में 0 = 0 आश्रितता का संकेत है, जबकि 0 = 5 असंगति का संकेत है। हटे हुए शून्य गुणांक से भाग कभी न दें। साफ पंक्तिबद्ध लेखन से दिखता है कि किस समीकरण को गुणा किया और कौन-सा घटाया। इससे चिह्न की गलती का स्थान जल्दी पहचान सकते हैं।"
+      },
+      "formula": "E1 − 2E2: (2x + 3y) − (2x − 2y) = 17 − 2",
+      "question": {
+        "en": "Should constants be multiplied during elimination?",
+        "hi": "विलोपन में अचर पद भी गुणा करना चाहिए?"
+      },
+      "answer": {
+        "en": "Yes. Otherwise the new equation is not equivalent.",
+        "hi": "हाँ। वरना नया समीकरण समतुल्य नहीं रहेगा।"
+      }
+    },
+    {
+      "title": {
+        "en": "Model word problems with units",
+        "hi": "इकाइयों सहित शाब्दिक प्रश्न बनाना"
+      },
+      "body": {
+        "en": "Two unknown quantities require two independent conditions for a unique determination. In a cost problem, let x be the price of one notebook and y the price of one pen, both in rupees. If three notebooks and two pens cost 65 rupees, write 3x + 2y = 65. A second purchase gives the other equation. Do not use x for both a price and a count. Age problems need a clear present-time definition; after t years both people's ages increase by t, while their age difference stays unchanged. Digit problems use place value: a two-digit number with tens digit x and units digit y is 10x + y, not xy. If the digits are reversed, the number is 10y + x. Additional restrictions such as integer digits, positive lengths or nonnegative counts must be checked after solving. An algebraic solution can fail the story's conditions even when it satisfies a loosely written pair. Finish with a sentence naming each quantity and its unit, and verify the original verbal totals to ensure the equations represented the story correctly.",
+        "hi": "2 अज्ञात राशियों का अद्वितीय मान निकालने के लिए 2 स्वतंत्र शर्तें चाहिए। लागत प्रश्न में x को 1 कॉपी की कीमत और y को 1 पेन की कीमत मानें; दोनों रुपये में हों। 3 कॉपी तथा 2 पेन का मूल्य 65 रुपये हो, तो 3x + 2y = 65 लिखें। दूसरी खरीद से दूसरा समीकरण बनेगा। x को एक जगह कीमत और दूसरी जगह वस्तु-संख्या का अर्थ न दें। आयु प्रश्न में पहले वर्तमान आयु की परिभाषा दें। t वर्ष बाद दोनों की आयु t बढ़ेगी, जबकि आयु-अंतर समान रहेगा। अंकों के प्रश्न में स्थानीय मान लगाएँ। दहाई अंक x और इकाई अंक y हो, तो संख्या 10x + y है, xy नहीं। अंक उलटने पर संख्या 10y + x होगी। अंक का पूर्णांक होना, लंबाई का धनात्मक होना या वस्तुओं की संख्या का ऋणेतर होना जैसी शर्तें हल के बाद जाँचें। ढीले बनाए समीकरणों का बीजगणितीय हल कहानी की शर्तों में अस्वीकार्य भी हो सकता है। अंत में हर राशि का नाम और इकाई पूरी पंक्ति में लिखें। मूल मौखिक कुलों में उत्तर रखकर जाँचें, ताकि पता चले कि समीकरण वास्तव में कहानी को सही दर्शाते हैं।"
+      },
+      "formula": "Two-digit number = 10x + y; reversed = 10y + x",
+      "question": {
+        "en": "For tens digit x and units digit y, is the number xy?",
+        "hi": "दहाई अंक x और इकाई अंक y हों, तो क्या संख्या xy है?"
+      },
+      "answer": {
+        "en": "No. It is 10x + y. xy normally denotes multiplication.",
+        "hi": "नहीं। संख्या 10x + y है। सामान्यतः xy गुणनफल है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Verification, parameter changes and exactness",
+        "hi": "सत्यापन, प्राचल परिवर्तन और सटीकता"
+      },
+      "body": {
+        "en": "A final check is part of the reasoning, not an optional decoration. Substitute the computed ordered pair into each original equation and show the resulting equality. If x = 4 and y = 3 were obtained for 2x + 3y = 17 and x − y = 1, the checks are 8 + 9 = 17 and 4 − 3 = 1. For a parameter question, first identify the coefficient condition for one, none or infinitely many solutions, then solve that condition without using ratios with zero denominators. A coefficient slider can move continuously through a unique-intersection setting into a parallel or coincident one. Near a parallel setting, the intersection may lie very far away; this is not the same as no intersection. Exact fractions often explain the apparent jump. When a tool shows no visible point, read its classification and inspect the full equations. Remember that calculations on a screen are finite-precision models. An algebraic proof uses exact equalities and stated assumptions. A complete written response contains the method, the important equations, the ordered pair or classification, and the contextual meaning.",
+        "hi": "अंतिम जाँच तर्क का हिस्सा है, केवल सजावट नहीं। निकाला गया क्रमित युग्म दोनों मूल समीकरणों में रखें और बराबरी दिखाएँ। 2x + 3y = 17 तथा x − y = 1 के लिए x = 4, y = 3 मिला हो, तो जाँच 8 + 9 = 17 तथा 4 − 3 = 1 है। प्राचल (Parameter) वाले प्रश्न में पहले 1, 0 या अनंत हल की गुणांक-शर्त चुनें। फिर उस शर्त को हल करें, लेकिन शून्य हर वाला अनुपात न लें। गुणांक स्लाइडर से अद्वितीय प्रतिच्छेद वाली स्थिति धीरे-धीरे समांतर या संपाती बन सकती है। समांतर स्थिति के बहुत पास प्रतिच्छेद बहुत दूर जा सकता है। यह प्रतिच्छेद न होने से अलग है। सटीक भिन्न उस अचानक दिखते परिवर्तन का कारण समझा सकती हैं। उपकरण में बिंदु न दिखे, तो उसका वर्गीकरण और पूरे समीकरण पढ़ें। केवल खिड़की के बाहर जाने को असंगति न मानें। स्क्रीन की गणना सीमित सटीकता वाला मॉडल है। बीजगणितीय प्रमाण सटीक बराबरियों और स्पष्ट मान्यताओं से बनता है। लिखित उत्तर में विधि, मुख्य समीकरण, क्रमित युग्म या वर्गीकरण तथा संदर्भ का अर्थ देना चाहिए।"
+      },
+      "formula": "Check both original equations after solving",
+      "question": {
+        "en": "Can a unique intersection lie outside the plotting window?",
+        "hi": "क्या अद्वितीय प्रतिच्छेद ग्राफ खिड़की से बाहर हो सकता है?"
+      },
+      "answer": {
+        "en": "Yes. Its absence from the window does not imply no solution.",
+        "hi": "हाँ। खिड़की में न दिखने से कोई हल न होना सिद्ध नहीं होता।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Solve x + y = 9 and x − y = 3.",
+        "hi": "x + y = 9 तथा x − y = 3 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "Given two equations; find the same x and y satisfying both.",
+          "hi": "दिया: 2 समीकरण; दोनों को संतुष्ट करने वाले x तथा y चाहिए।"
+        },
+        {
+          "en": "Add: 2x = 12, so x = 6.",
+          "hi": "जोड़ें: 2x = 12, इसलिए x = 6।"
+        },
+        {
+          "en": "Substitute in x + y = 9: y = 3.",
+          "hi": "x + y = 9 में रखें: y = 3।"
+        },
+        {
+          "en": "Check: 6 + 3 = 9 and 6 − 3 = 3.",
+          "hi": "जाँच: 6 + 3 = 9 तथा 6 − 3 = 3।"
+        }
+      ],
+      "answer": {
+        "en": "x = 6, y = 3.",
+        "hi": "x = 6, y = 3।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Solve the graph pair x = 2, y = −3.",
+        "hi": "ग्राफ युग्म x = 2, y = −3 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "x = 2 is a vertical line; y = −3 is horizontal.",
+          "hi": "x = 2 लंबवत रेखा है; y = −3 क्षैतिज है।"
+        },
+        {
+          "en": "Their common point has first coordinate 2 and second coordinate −3.",
+          "hi": "साझा बिंदु का पहला निर्देशांक 2 तथा दूसरा −3 है।"
+        },
+        {
+          "en": "Both original equations are satisfied directly.",
+          "hi": "दोनों मूल समीकरण सीधे संतुष्ट हैं।"
+        }
+      ],
+      "answer": {
+        "en": "Unique solution (2,−3).",
+        "hi": "अद्वितीय हल (2,−3)।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Solve 2x + 3y = 17 and x − y = 1 by substitution.",
+        "hi": "प्रतिस्थापन से 2x + 3y = 17 तथा x − y = 1 हल करें।"
+      },
+      "steps": [
+        {
+          "en": "From x − y = 1, x = y + 1.",
+          "hi": "x − y = 1 से x = y + 1।"
+        },
+        {
+          "en": "2(y + 1) + 3y = 17 gives 5y = 15 and y = 3.",
+          "hi": "2(y + 1) + 3y = 17 से 5y = 15 और y = 3।"
+        },
+        {
+          "en": "x = 4; check 8 + 9 = 17 and 4 − 3 = 1.",
+          "hi": "x = 4; जाँच 8 + 9 = 17 तथा 4 − 3 = 1।"
+        }
+      ],
+      "answer": {
+        "en": "x = 4, y = 3.",
+        "hi": "x = 4, y = 3।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Three notebooks and two pens cost ₹65; two notebooks and three pens cost ₹60. Find each price.",
+        "hi": "3 कॉपी और 2 पेन की कीमत ₹65; 2 कॉपी और 3 पेन की कीमत ₹60 है। दोनों की अलग कीमत निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Let notebook price x and pen price y be in rupees. Then 3x + 2y = 65, 2x + 3y = 60.",
+          "hi": "कॉपी की कीमत x और पेन की y रुपये लें। तब 3x + 2y = 65, 2x + 3y = 60।"
+        },
+        {
+          "en": "Multiply the first by 3 and second by 2: 9x + 6y = 195; 4x + 6y = 120.",
+          "hi": "पहला 3 से तथा दूसरा 2 से गुणा करें: 9x + 6y = 195; 4x + 6y = 120।"
+        },
+        {
+          "en": "Subtract: 5x = 75, so x = 15. Then 45 + 2y = 65 gives y = 10.",
+          "hi": "घटाएँ: 5x = 75, इसलिए x = 15। फिर 45 + 2y = 65 से y = 10।"
+        },
+        {
+          "en": "Check both purchases: 45 + 20 = 65; 30 + 30 = 60.",
+          "hi": "दोनों खरीद जाँचें: 45 + 20 = 65; 30 + 30 = 60।"
+        }
+      ],
+      "answer": {
+        "en": "Notebook ₹15; pen ₹10.",
+        "hi": "कॉपी ₹15; पेन ₹10।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Classify kx + 2y = 6 and 3x + y = 5 for k = 6; then solve for k = 2.",
+        "hi": "k = 6 पर kx + 2y = 6 तथा 3x + y = 5 का वर्गीकरण करें; फिर k = 2 पर हल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "For k = 6, the first equation divides to 3x + y = 3, contradicting 3x + y = 5.",
+          "hi": "k = 6 पर पहला समीकरण 3x + y = 3 बनता है, जो 3x + y = 5 का विरोध है।"
+        },
+        {
+          "en": "Thus the lines are parallel distinct and there is no solution for k = 6.",
+          "hi": "इसलिए k = 6 पर अलग समांतर रेखाएँ हैं और कोई हल नहीं है।"
+        },
+        {
+          "en": "For k = 2, divide the first by 2: x + y = 3. Subtract it from 3x + y = 5.",
+          "hi": "k = 2 पर पहला 2 से भाग दें: x + y = 3। इसे 3x + y = 5 से घटाएँ।"
+        },
+        {
+          "en": "2x = 2 gives x = 1, then y = 2; both equations check.",
+          "hi": "2x = 2 से x = 1, फिर y = 2; दोनों समीकरण जाँचते हैं।"
+        }
+      ],
+      "answer": {
+        "en": "k = 6: no solution. k = 2: (x,y) = (1,2).",
+        "hi": "k = 6: कोई हल नहीं। k = 2: (x,y) = (1,2)।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which ordered pair solves x + y = 7 and x − y = 1?",
+        "hi": "कौन-सा क्रमित युग्म x + y = 7 तथा x − y = 1 हल करता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "(3,4)",
+            "hi": "(3,4)"
+          },
+          "reason": {
+            "en": "The difference is −1, not 1.",
+            "hi": "अंतर −1 है, 1 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "(7,0)",
+            "hi": "(7,0)"
+          },
+          "reason": {
+            "en": "The difference is 7.",
+            "hi": "अंतर 7 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "(4,3)",
+            "hi": "(4,3)"
+          },
+          "reason": {
+            "en": "4 + 3 = 7 and 4 − 3 = 1.",
+            "hi": "4 + 3 = 7 तथा 4 − 3 = 1।"
+          }
+        },
+        {
+          "text": {
+            "en": "(1,6)",
+            "hi": "(1,6)"
+          },
+          "reason": {
+            "en": "The difference is −5.",
+            "hi": "अंतर −5 है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Distinct parallel lines represent",
+        "hi": "अलग समांतर रेखाएँ दर्शाती हैं"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "One solution",
+            "hi": "1 हल"
+          },
+          "reason": {
+            "en": "One solution requires an intersection.",
+            "hi": "1 हल के लिए प्रतिच्छेद चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinitely many solutions",
+            "hi": "अनंत हल"
+          },
+          "reason": {
+            "en": "That occurs for coincident lines.",
+            "hi": "यह संपाती रेखाओं में होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Exactly two solutions",
+            "hi": "ठीक 2 हल"
+          },
+          "reason": {
+            "en": "Two straight lines cannot have exactly two separate common points.",
+            "hi": "2 सीधी रेखाओं के ठीक 2 अलग साझा बिंदु नहीं हो सकते।"
+          }
+        },
+        {
+          "text": {
+            "en": "No solution",
+            "hi": "कोई हल नहीं"
+          },
+          "reason": {
+            "en": "The lines have no common point.",
+            "hi": "रेखाओं का कोई साझा बिंदु नहीं है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "x + y = 3 and 2x + 2y = 6 are",
+        "hi": "x + y = 3 तथा 2x + 2y = 6 हैं"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Coincident and dependent",
+            "hi": "संपाती और आश्रित"
+          },
+          "reason": {
+            "en": "The second is twice the first, including its constant.",
+            "hi": "दूसरा पहले का दोगुना है, अचर सहित।"
+          }
+        },
+        {
+          "text": {
+            "en": "Parallel distinct",
+            "hi": "अलग समांतर"
+          },
+          "reason": {
+            "en": "Their entire equations are equivalent.",
+            "hi": "दोनों पूरे समीकरण समतुल्य हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Intersecting once",
+            "hi": "1 बार प्रतिच्छेदी"
+          },
+          "reason": {
+            "en": "Every point of the first line belongs to the second.",
+            "hi": "पहली रेखा का हर बिंदु दूसरी पर भी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Inconsistent",
+            "hi": "असंगत"
+          },
+          "reason": {
+            "en": "They have infinitely many solutions, so are consistent.",
+            "hi": "इनके अनंत हल हैं, इसलिए संगत हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For ax + by + c = 0 to represent a line,",
+        "hi": "ax + by + c = 0 को रेखा दर्शाने के लिए"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "a and b must both be 0",
+            "hi": "a और b दोनों 0 होने चाहिए"
+          },
+          "reason": {
+            "en": "Then no variable term remains.",
+            "hi": "तब कोई चर पद नहीं बचता।"
+          }
+        },
+        {
+          "text": {
+            "en": "a and b must not both be 0",
+            "hi": "a और b दोनों एक साथ 0 नहीं होने चाहिए"
+          },
+          "reason": {
+            "en": "At least one variable coefficient must be nonzero.",
+            "hi": "कम-से-कम 1 चर गुणांक अशून्य होना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "c must be 0",
+            "hi": "c को 0 होना चाहिए"
+          },
+          "reason": {
+            "en": "Lines need not pass through the origin.",
+            "hi": "रेखाओं का मूलबिंदु से गुजरना जरूरी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both a and b must be positive",
+            "hi": "a और b दोनों धनात्मक हों"
+          },
+          "reason": {
+            "en": "Negative and zero coefficients are allowed subject to the stated condition.",
+            "hi": "बताई शर्त के अधीन ऋणात्मक और शून्य गुणांक भी मान्य हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which method replaces x by an equivalent expression in y?",
+        "hi": "कौन-सी विधि x की जगह y का समतुल्य व्यंजक रखती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Reading only one intercept",
+            "hi": "केवल 1 अक्ष प्रतिच्छेद पढ़ना"
+          },
+          "reason": {
+            "en": "One intercept does not generally solve a pair.",
+            "hi": "1 अक्ष प्रतिच्छेद सामान्यतः युग्म का हल नहीं देता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ignoring the second equation",
+            "hi": "दूसरा समीकरण छोड़ना"
+          },
+          "reason": {
+            "en": "Both conditions must remain satisfied.",
+            "hi": "दोनों शर्तें संतुष्ट रहनी चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Substitution",
+            "hi": "प्रतिस्थापन"
+          },
+          "reason": {
+            "en": "It substitutes one variable using a rearranged original equation.",
+            "hi": "यह बदले हुए मूल समीकरण से 1 चर का प्रतिस्थापन करती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Changing the units only",
+            "hi": "केवल इकाई बदलना"
+          },
+          "reason": {
+            "en": "Unit conversion alone does not eliminate a variable.",
+            "hi": "केवल इकाई बदलने से चर नहीं हटता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "What must happen when multiplying an equation by 3?",
+        "hi": "किसी समीकरण को 3 से गुणा करते समय क्या करना चाहिए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Multiply x terms only",
+            "hi": "केवल x पद गुणा करें"
+          },
+          "reason": {
+            "en": "That changes the original condition.",
+            "hi": "इससे मूल शर्त बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Multiply variable terms but not the constant",
+            "hi": "चर पद गुणा करें, अचर नहीं"
+          },
+          "reason": {
+            "en": "The constant must be multiplied as well.",
+            "hi": "अचर को भी गुणा करना जरूरी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Add 3 to each coefficient",
+            "hi": "हर गुणांक में 3 जोड़ें"
+          },
+          "reason": {
+            "en": "Multiplication is not addition.",
+            "hi": "गुणा करना जोड़ना नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Multiply every term on both sides",
+            "hi": "दोनों पक्षों के हर पद को गुणा करें"
+          },
+          "reason": {
+            "en": "This preserves an equivalent equation.",
+            "hi": "इससे समीकरण समतुल्य बना रहता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Elimination produces 0 = 8. What follows?",
+        "hi": "विलोपन से 0 = 8 मिले, तो क्या निष्कर्ष है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No solution",
+            "hi": "कोई हल नहीं"
+          },
+          "reason": {
+            "en": "The remaining statement is impossible.",
+            "hi": "बचा कथन असंभव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x = 0, y = 8",
+            "hi": "x = 0, y = 8"
+          },
+          "reason": {
+            "en": "The statement contains no such valid variable values.",
+            "hi": "इस कथन से ऐसे मान नहीं निकलते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinitely many solutions",
+            "hi": "अनंत हल"
+          },
+          "reason": {
+            "en": "That would require a true identity, not a contradiction.",
+            "hi": "उसके लिए सत्य सर्वसमता चाहिए, विरोधाभास नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Exactly eight solutions",
+            "hi": "ठीक 8 हल"
+          },
+          "reason": {
+            "en": "The constant 8 is not a count of solutions.",
+            "hi": "अचर 8 हलों की संख्या नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What does D = a1b2 − a2b1 ≠ 0 imply for two linear equations?",
+        "hi": "2 रैखिक समीकरणों में D = a1b2 − a2b1 ≠ 0 से क्या मिलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Coincident lines",
+            "hi": "संपाती रेखाएँ"
+          },
+          "reason": {
+            "en": "Coincidence has proportional variable coefficients and D = 0.",
+            "hi": "संपाती स्थिति में चर गुणांक समानुपाती तथा D = 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A unique solution",
+            "hi": "अद्वितीय हल"
+          },
+          "reason": {
+            "en": "The coefficient directions are independent, so the lines meet once.",
+            "hi": "गुणांक दिशाएँ स्वतंत्र हैं, इसलिए रेखाएँ 1 बार मिलती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No solution",
+            "hi": "कोई हल नहीं"
+          },
+          "reason": {
+            "en": "For genuine lines, no solution requires D = 0 and incompatible constants.",
+            "hi": "वास्तविक रेखाओं में कोई हल न होने के लिए D = 0 और विरोधी अचर चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both coefficients vanish",
+            "hi": "दोनों गुणांक मिट जाते हैं"
+          },
+          "reason": {
+            "en": "That cannot yield a nonzero determinant.",
+            "hi": "उससे अशून्य D नहीं मिलेगा।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A two-digit number with tens digit x and units digit y is",
+        "hi": "दहाई अंक x तथा इकाई अंक y वाली संख्या है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x + y",
+            "hi": "x + y"
+          },
+          "reason": {
+            "en": "This is the digit sum, not the number.",
+            "hi": "यह अंक-योग है, संख्या नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "xy",
+            "hi": "xy"
+          },
+          "reason": {
+            "en": "This denotes their product.",
+            "hi": "यह उनका गुणनफल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10x + y",
+            "hi": "10x + y"
+          },
+          "reason": {
+            "en": "The tens digit contributes ten times its value.",
+            "hi": "दहाई अंक अपने मान का 10 गुना देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x + 10y",
+            "hi": "x + 10y"
+          },
+          "reason": {
+            "en": "That is the reversed number.",
+            "hi": "यह उलटे अंकों वाली संख्या है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "A plotted intersection is outside the screen. What is the safest next step?",
+        "hi": "ग्राफ का प्रतिच्छेद स्क्रीन से बाहर हो, तो सबसे सही अगला कदम क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Declare no solution immediately",
+            "hi": "तुरंत कोई हल नहीं कहें"
+          },
+          "reason": {
+            "en": "The viewing window is finite, unlike the lines.",
+            "hi": "खिड़की सीमित है, रेखाएँ नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Set both variables to 0",
+            "hi": "दोनों चर 0 रखें"
+          },
+          "reason": {
+            "en": "The origin may not satisfy either equation.",
+            "hi": "मूलबिंदु किसी समीकरण को संतुष्ट न करे, यह संभव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Round both slopes to make them equal",
+            "hi": "ढालों को पूर्णांकित कर बराबर करें"
+          },
+          "reason": {
+            "en": "Rounding can change the mathematical classification.",
+            "hi": "पूर्णांकन गणितीय वर्गीकरण बदल सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Check the coefficients and solve exactly",
+            "hi": "गुणांक जाँचें और सटीक हल निकालें"
+          },
+          "reason": {
+            "en": "Algebra distinguishes a distant intersection from parallel lines.",
+            "hi": "बीजगणित दूर के प्रतिच्छेद और समांतर रेखाओं का अंतर बताता है।"
+          }
+        }
+      ],
+      "correct": 3
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define a solution of a pair of linear equations.",
+        "hi": "रैखिक समीकरण युग्म के हल की परिभाषा दें।"
+      },
+      "answer": {
+        "en": "An ordered pair satisfying both original equations simultaneously.",
+        "hi": "ऐसा क्रमित युग्म जो दोनों मूल समीकरणों को एक साथ संतुष्ट करे।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve x + y = 10 and x − y = 4.",
+        "hi": "x + y = 10 तथा x − y = 4 हल करें।"
+      },
+      "answer": {
+        "en": "Add to get 2x = 14, so x = 7; then y = 3. Both equations check.",
+        "hi": "जोड़ने पर 2x = 14, इसलिए x = 7; फिर y = 3। दोनों समीकरण सही हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Classify 2x + y = 5 and 4x + 2y = 12.",
+        "hi": "2x + y = 5 तथा 4x + 2y = 12 का वर्गीकरण करें।"
+      },
+      "answer": {
+        "en": "Doubling the first gives 4x + 2y = 10, inconsistent with 12. Parallel distinct; no solution.",
+        "hi": "पहला दोगुना करने पर 4x + 2y = 10 है, जो 12 से असंगत है। अलग समांतर रेखाएँ; कोई हल नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Solve 3x + 2y = 12 and x + y = 5.",
+        "hi": "3x + 2y = 12 तथा x + y = 5 हल करें।"
+      },
+      "answer": {
+        "en": "Subtract twice the second from the first: x = 2; then y = 3.",
+        "hi": "पहले से दूसरे का दोगुना घटाएँ: x = 2; फिर y = 3।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain what 0 = 0 after elimination means for two genuine lines.",
+        "hi": "2 वास्तविक रेखाओं में विलोपन के बाद 0 = 0 का क्या अर्थ है?"
+      },
+      "answer": {
+        "en": "The equations are dependent and share infinitely many solutions; one independent line condition remains.",
+        "hi": "समीकरण आश्रित हैं और अनंत हल साझा करते हैं; एक स्वतंत्र रेखा-शर्त बचती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "A ticket costs x rupees for an adult and y rupees for a child. Write equations for 2 adults plus 3 children costing ₹210, and 3 adults plus 1 child costing ₹210.",
+        "hi": "वयस्क टिकट x रुपये, बाल टिकट y रुपये है। 2 वयस्क और 3 बच्चों का ₹210, तथा 3 वयस्क और 1 बच्चे का ₹210 हो, तो समीकरण बनाएँ।"
+      },
+      "answer": {
+        "en": "2x + 3y = 210; 3x + y = 210. Solving gives x = 60, y = 30 rupees, which checks both totals.",
+        "hi": "2x + 3y = 210; 3x + y = 210। हल x = 60, y = 30 रुपये है; दोनों कुल सही हैं।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Keep both equations in one standard form before comparisons. Do not divide by a zero coefficient, omit constants while multiplying, or lose subtraction signs. An identity means dependence, not x = y = 0. A contradiction means no solution. A point solves the pair only if both original equations check.",
+    "hi": "तुलना से पहले दोनों समीकरण एक मानक रूप में रखें। शून्य गुणांक से भाग न दें, गुणा करते समय अचर न छोड़ें और घटाने के चिह्न न बिगाड़ें। सर्वसमता का अर्थ आश्रितता है, x = y = 0 नहीं। विरोधाभास का अर्थ कोई हल नहीं है। बिंदु तभी युग्म का हल है जब दोनों मूल समीकरण सही हों।"
+  },
+  "revision": [
+    {
+      "en": "Define the variables and write one equation for each independent condition.",
+      "hi": "चर परिभाषित करें और हर स्वतंत्र शर्त का समीकरण लिखें।"
+    },
+    {
+      "en": "The intersection point solves both equations.",
+      "hi": "प्रतिच्छेद बिंदु दोनों समीकरण हल करता है।"
+    },
+    {
+      "en": "Intersecting, parallel distinct and coincident lines give 1, 0 and infinitely many solutions.",
+      "hi": "प्रतिच्छेदी, अलग समांतर तथा संपाती रेखाएँ क्रमशः 1, 0 तथा अनंत हल देती हैं।"
+    },
+    {
+      "en": "Use substitution or elimination without dividing by zero.",
+      "hi": "0 से भाग दिए बिना प्रतिस्थापन या विलोपन करें।"
+    },
+    {
+      "en": "Verify both equations and the story constraints.",
+      "hi": "दोनों समीकरण और कहानी की शर्तें जाँचें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Two verbal conditions → two linear equations → graphs / coefficients → unique, inconsistent or dependent → substitution or elimination → original-condition verification.",
+    "hi": "2 मौखिक शर्तें → 2 रैखिक समीकरण → ग्राफ / गुणांक → अद्वितीय, असंगत या आश्रित → प्रतिस्थापन या विलोपन → मूल शर्तों से सत्यापन।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, chapter 3, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh103.pdf"
+    },
+    {
+      "title": "UP Board Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

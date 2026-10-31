@@ -1,0 +1,902 @@
+{
+  "id": "ten-geography-3",
+  "classId": "10",
+  "number": 3,
+  "title": {
+    "en": "Water Resources",
+    "hi": "जल संसाधन"
+  },
+  "engine": "map",
+  "goal": {
+    "en": "Connect locations, processes and decisions using evidence and the map.",
+    "hi": "मानचित्र और प्रमाण से स्थान, प्रक्रिया तथा निर्णय के संबंध समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Fresh water and the water cycle",
+        "hi": "मीठा जल और जल चक्र"
+      },
+      "body": {
+        "en": "Water moves between atmosphere, land and oceans through evaporation, condensation, precipitation and flow. This circulation renews supplies, but does not place clean water everywhere at the time people need it. Most water on Earth is saline; much fresh water is stored in ice or underground. A river can carry abundant monsoon flow and become much smaller during a dry season. Groundwater enters permeable material through infiltration and is replenished at different rates in different places. Therefore renewable means part of an ongoing cycle, not an unlimited local stock. Distinguish water quantity from water quality and access. A household beside a polluted river may still lack safe drinking water. A useful diagram shows rainfall, surface runoff, infiltration and extraction with arrows. Explain what each arrow represents instead of treating the diagram as a tank that refills instantly. Compare a paved courtyard with a vegetated plot: water may leave the paved surface rapidly, while suitable soil allows some infiltration. Local geology, slope and land cover modify this simple comparison.",
+        "hi": "जल चक्र (Water Cycle) में वाष्पीकरण, संघनन, वर्षण और प्रवाह से पानी समुद्र, वायु तथा स्थल के बीच घूमता है। इससे पानी का नवीकरण होता है, पर हर स्थान पर जरूरत के समय स्वच्छ जल मिलना निश्चित नहीं होता। पृथ्वी का अधिकांश पानी खारा है। मीठे पानी का बड़ा भाग बर्फ या भूमिगत भंडार में है। नदी में वर्षा ऋतु में बहुत प्रवाह और शुष्क समय में कम प्रवाह हो सकता है। भूजल पुनर्भरण (Recharge) जमीन के भीतर पानी पहुँचने से होता है। इसकी गति मिट्टी, चट्टान, ढाल और भूमि आवरण पर निर्भर करती है। इसलिए नवीकरण योग्य का अर्थ असीमित स्थानीय उपलब्धता नहीं है। मात्रा, गुणवत्ता और पहुँच अलग प्रश्न हैं। प्रदूषित नदी के पास रहने वाले परिवार को भी सुरक्षित पेयजल नहीं मिल सकता। चित्र में वर्षा, सतही बहाव, रिसाव और निकासी के तीर बनाएँ। हर तीर का अर्थ लिखें। पक्के आँगन से पानी तेजी से बाहर जा सकता है, जबकि उपयुक्त खुली जमीन कुछ पानी भीतर जाने देती है। इस तुलना में स्थानीय भूगर्भीय दशाओं को भी ध्यान में रखें।"
+      },
+      "question": {
+        "en": "Why can renewable water still be scarce?",
+        "hi": "नवीकरण योग्य पानी भी दुर्लभ क्यों हो सकता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Causes of water scarcity",
+        "hi": "जल दुर्लभता के कारण"
+      },
+      "body": {
+        "en": "Scarcity occurs when usable supply is insufficient relative to demand and access. Low rainfall is one cause, but population growth, intensive irrigation, industrial use, urban expansion and unequal distribution can create shortages even where rainfall is substantial. More pumping can increase supply briefly while lowering the water table over time. A wealthy user with a deep borewell may obtain water after a shallow community well fails. Pollution creates a quality shortage by making existing water unsuitable for a particular use. Separate these mechanisms in an answer: reduced supply, increased demand, damaged quality and unequal access. Consider a fictional town with unchanged rainfall but more paved land and water-intensive factories. The explanation should not simply blame a weak monsoon. Ask how recharge, consumption, leakage and wastewater treatment changed. Household conservation matters, but agriculture, industry and public distribution systems must also improve. Avoid blaming a whole community without evidence; compare actual uses and responsibilities. A local water budget records incoming water, storage changes and withdrawals, while recognising that estimates contain uncertainty.",
+        "hi": "जल दुर्लभता (Water Scarcity) तब बनती है जब उपयोग योग्य आपूर्ति जरूरत और पहुँच के अनुपात में कम होती है। कम वर्षा इसका एक कारण है, पूरा कारण नहीं। जनसंख्या वृद्धि, अधिक सिंचाई, उद्योग, नगर विस्तार और असमान वितरण भी दबाव बढ़ाते हैं। ज्यादा पंप से थोड़े समय तक अधिक पानी मिल सकता है, पर निकासी पुनर्भरण से अधिक होने पर जल स्तर गिरता है। गहरा नलकूप रखने वाला संपन्न व्यक्ति तब भी पानी पा सकता है जब उथला सार्वजनिक कुआँ सूख जाए। प्रदूषण उपलब्ध पानी को अनुपयोगी बनाकर गुणवत्ता की कमी पैदा करता है। उत्तर में आपूर्ति की कमी, मांग की वृद्धि, खराब गुणवत्ता और असमान पहुँच अलग लिखें। कल्पना करें कि नगर की वर्षा लगभग समान है, लेकिन पक्के क्षेत्र और उद्योग बढ़ गए हैं। तब केवल कमजोर मानसून को दोष देना ठीक नहीं। रिसाव, पुनर्भरण, उपयोग और उपचार में बदलाव जाँचें। घर में बचत के साथ कृषि, उद्योग और वितरण व्यवस्था का सुधार जरूरी है। स्थानीय जल बजट में आने वाला पानी, भंडार में परिवर्तन और निकासी लिखी जाती है; अनुमानों की सीमा भी समझनी चाहिए।"
+      },
+      "question": {
+        "en": "Give two causes of scarcity besides low rainfall.",
+        "hi": "कम वर्षा के अतिरिक्त जल दुर्लभता के 2 कारण दें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Dams and multiple purposes",
+        "hi": "बाँध और बहुउद्देशीय उपयोग"
+      },
+      "body": {
+        "en": "A dam obstructs and regulates a river, often creating a reservoir. Multipurpose projects combine several objectives such as irrigation, hydroelectricity, water supply, flood moderation, navigation or recreation. These objectives can compete. Keeping a reservoir full may support electricity generation and dry-season irrigation, while leaving storage space may be important for absorbing flood inflow. The correct operation depends on forecasts, safety rules and downstream needs. Electricity from falling water converts water's potential energy into mechanical and then electrical energy; it does not manufacture additional water. Bhakra Nangal is associated with the Sutlej, Hirakud with the Mahanadi, and Nagarjuna Sagar with the Krishna. Learn river–project associations rather than memorising scattered place names. On the map, the marker identifies an approximate project location, not the reservoir's size or service area. A balanced explanation names a benefit, identifies who receives it and recognises operating limits. One project cannot be assumed to solve every problem across an entire river basin. Maintenance, sediment management and coordination between users remain necessary after construction.",
+        "hi": "बाँध (Dam) नदी के प्रवाह को रोकने और नियंत्रित करने वाली संरचना है, जिसके पीछे अक्सर जलाशय बनता है। बहुउद्देशीय परियोजना (Multipurpose Project) में सिंचाई, जलविद्युत, जलापूर्ति, बाढ़ नियंत्रण, नौवहन या मनोरंजन जैसे कई उद्देश्य जुड़े हो सकते हैं। इन उद्देश्यों में कभी टकराव होता है। बिजली और शुष्क मौसम की सिंचाई के लिए जलाशय भरना उपयोगी है, जबकि बाढ़ का पानी रखने के लिए खाली क्षमता चाहिए। इसलिए संचालन में पूर्वानुमान, सुरक्षा और नीचे के क्षेत्रों की जरूरतें देखी जाती हैं। जलविद्युत में गिरते पानी की स्थितिज ऊर्जा पहले यांत्रिक और फिर विद्युत ऊर्जा बनती है; नया पानी पैदा नहीं होता। भाखड़ा नांगल सतलुज, हीराकुड महानदी और नागार्जुन सागर कृष्णा से संबंधित हैं। मानचित्र पर परियोजना तथा नदी का संबंध सीखें। बिंदु केवल लगभग स्थान दिखाता है, जलाशय का आकार या पूरा लाभ क्षेत्र नहीं। संतुलित उत्तर में लाभ, लाभ लेने वाला समूह और संचालन की सीमा बताएँ। निर्माण के बाद भी रखरखाव, गाद प्रबंधन और उपयोगकर्ताओं में सहयोग आवश्यक रहता है।"
+      },
+      "question": {
+        "en": "Why may a reservoir’s purposes conflict?",
+        "hi": "जलाशय के उद्देश्यों में टकराव क्यों हो सकता है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Environmental and social costs",
+        "hi": "पर्यावरणीय और सामाजिक लागत"
+      },
+      "body": {
+        "en": "Large reservoirs can submerge land, settlements and habitats. Displaced people may lose more than a house: farmland, forest access, local markets, cultural places and social networks can also be affected. Rehabilitation therefore concerns livelihoods and participation, not only a cash payment. Dams alter flow, sediment transport and aquatic habitats. Sediment trapped upstream may reduce reservoir capacity and change downstream deposition. Irrigation can improve farming, but poorly managed water supply and drainage may contribute to waterlogging or salinity. None of these effects is identical at every project; assess local evidence and design. Public disagreements often concern how benefits and costs are distributed. A city may receive electricity while a distant village bears displacement. In a school answer, state the mechanism connecting the structure to its effect. Do not write that every dam always causes floods or that every dam always prevents them. Risk depends on rainfall, catchment conditions, storage, maintenance and operation. Compare alternatives and mitigation measures, and include the views of affected communities when evaluating development decisions.",
+        "hi": "बड़े जलाशय खेत, बस्ती और प्राकृतिक आवास को डुबा सकते हैं। विस्थापित परिवार केवल मकान नहीं खोता; खेती, वन तक पहुँच, बाजार, सांस्कृतिक स्थल और सामाजिक सहयोग भी प्रभावित हो सकते हैं। इसलिए पुनर्वास (Rehabilitation) में आजीविका तथा निर्णय में भागीदारी महत्त्वपूर्ण हैं, केवल नकद भुगतान पर्याप्त नहीं माना जा सकता। बाँध नदी के प्रवाह, तलछट के परिवहन और जलीय आवास बदलते हैं। ऊपर रुकने वाली गाद जलाशय की क्षमता घटा सकती है और नीचे जमाव को प्रभावित कर सकती है। सिंचाई खेती में लाभ देती है, पर खराब जल प्रबंधन और निकास से जलभराव तथा लवणता बढ़ सकती है। हर परियोजना का प्रभाव समान नहीं होता; स्थान और संचालन के प्रमाण देखें। विवाद अक्सर लाभ तथा लागत के बँटवारे से जुड़ा होता है। बिजली शहर को मिले और विस्थापन दूर गाँव को सहना पड़े, तो न्याय का प्रश्न उठता है। उत्तर में संरचना से प्रभाव तक का कारण लिखें। सभी बाँध हमेशा बाढ़ रोकते या हमेशा बाढ़ लाते हैं, ऐसा दावा न करें। वर्षा, जलग्रहण, भंडारण और संचालन मिलकर जोखिम तय करते हैं।"
+      },
+      "question": {
+        "en": "Why is compensation alone not the whole of rehabilitation?",
+        "hi": "केवल मुआवजा पुनर्वास का पूरा अर्थ क्यों नहीं है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Traditional water harvesting",
+        "hi": "परंपरागत जल संचयन"
+      },
+      "body": {
+        "en": "Water-harvesting systems developed in response to local slopes, rainfall, materials and social organisation. Mountain channels can guide stream water to fields; examples include guls or kuls in the western Himalayas. In parts of Rajasthan, structures such as khadins and johads collect or retain runoff, while household tankas store rainwater. Rooftop collection directs relatively clean rain from a catchment through pipes into storage or a recharge arrangement. Bamboo drip irrigation in Meghalaya illustrates adapting local materials to controlled water delivery. These examples are not interchangeable recipes. A storage structure suited to an arid settlement may be inappropriate on an unstable slope. Describe the local problem, the movement of water and the users' maintenance responsibility. Traditional does not automatically mean perfect, and modern does not automatically mean unsuitable. Designs can combine inherited knowledge with testing, safer materials and equitable rules. A diagram should distinguish collection area, conveyance, storage, overflow and use. Discuss cleaning and contamination prevention without assuming untreated harvested water is automatically safe to drink.",
+        "hi": "जल संचयन (Water Harvesting) की परंपराएँ स्थानीय ढाल, वर्षा, सामग्री और सामुदायिक व्यवस्था के अनुसार विकसित हुईं। पर्वतीय नहरें धारा का पानी खेतों तक पहुँचा सकती हैं; पश्चिमी हिमालय में गुल या कुल इसके उदाहरण हैं। राजस्थान के कुछ क्षेत्रों में खडीन और जोहड़ बहते पानी को रोकने या इकट्ठा करने में मदद करते हैं। घरों के टाँके वर्षा जल का भंडारण करते हैं। छत से वर्षा जल संचयन में छत जलग्रहण क्षेत्र बनती है, नालियाँ पानी को भंडार या पुनर्भरण व्यवस्था तक ले जाती हैं। मेघालय की बाँस ड्रिप पद्धति स्थानीय सामग्री से नियंत्रित जल पहुँचाने का उदाहरण है। ये हर जगह एक जैसी लगाने की विधियाँ नहीं हैं। शुष्क बस्ती के लिए उपयुक्त संरचना अस्थिर ढाल पर अनुपयुक्त हो सकती है। स्थानीय समस्या, पानी की दिशा और रखरखाव का उत्तरदायित्व समझाएँ। परंपरागत का अर्थ हमेशा पूर्ण और आधुनिक का अर्थ हमेशा गलत नहीं है। ज्ञान के साथ परीक्षण, सुरक्षित सामग्री और न्यायपूर्ण नियम जोड़े जा सकते हैं। संग्रहण, पाइप, भंडार, अतिरिक्त निकास और उपयोग का चित्र बनाएँ। एकत्र पानी अपने-आप पीने योग्य नहीं मानना चाहिए।"
+      },
+      "question": {
+        "en": "Why should harvesting designs fit local conditions?",
+        "hi": "जल संचयन की बनावट स्थानीय दशाओं के अनुसार क्यों हो?"
+      }
+    },
+    {
+      "title": {
+        "en": "Rooftop harvesting and recharge",
+        "hi": "छत का जल और पुनर्भरण"
+      },
+      "body": {
+        "en": "A rooftop is a catchment: rainfall landing on it can be collected through gutters and downpipes. A first-flush arrangement diverts the initial dirty runoff; screens and appropriate treatment reduce contamination risks. Collected water can be stored for suitable uses or directed to a properly designed recharge structure. Recharge and storage are different purposes. A tank keeps water accessible, whereas infiltration aims to replenish groundwater where local soil and geology allow it. A simple estimate multiplies roof area by rainfall depth and a collection coefficient. For a fictional roof of 100 square metres, rainfall of 0.5 metres gives a theoretical 50 cubic metres before losses. At a coefficient of 0.8, the illustrative collection is 40 cubic metres, or 40,000 litres. This calculation estimates volume, not drinking-water safety or an engineering design. Real systems need overflow, cleaning and maintenance. Never direct polluted runoff into groundwater. Compare the estimate with demand over the same period and explain the units at every step.",
+        "hi": "छत जलग्रहण क्षेत्र (Catchment) का काम करती है। उस पर गिरने वाला पानी नालियों और पाइपों से जमा किया जा सकता है। शुरुआती गंदे बहाव को अलग करने की व्यवस्था को फर्स्ट फ्लश कहते हैं। जाली और उपयुक्त उपचार से गंदगी का जोखिम घटाया जाता है। पानी जरूरत के अनुसार टंकी में रखा या सही तरह बने पुनर्भरण ढाँचे में भेजा जा सकता है। भंडारण और पुनर्भरण अलग उद्देश्य हैं। टंकी से पानी सीधे लिया जाता है; जमीन में रिसाव से भूजल बढ़ाने का प्रयास होता है, जो मिट्टी और चट्टान की दशाओं पर निर्भर है। उदाहरण में 100 वर्ग मीटर छत पर 0.5 मीटर वर्षा हो तो बिना हानि सैद्धांतिक मात्रा 50 घन मीटर होगी। संग्रहण गुणांक 0.8 लेने पर अनुमान 40 घन मीटर अर्थात 40,000 लीटर बनता है। यह केवल शैक्षिक मात्रा अनुमान है, पेयजल सुरक्षा या इंजीनियरिंग डिजाइन नहीं। वास्तविक व्यवस्था में सफाई, अतिरिक्त पानी का निकास और रखरखाव चाहिए। प्रदूषित पानी भूजल में नहीं भेजना चाहिए। मांग और संग्रहण की तुलना एक ही समय अवधि तथा सही इकाइयों में करें।"
+      },
+      "question": {
+        "en": "How is storing rainwater different from recharging groundwater?",
+        "hi": "वर्षा जल भंडारण और भूजल पुनर्भरण में क्या अंतर है?"
+      }
+    },
+    {
+      "title": {
+        "en": "Managing demand and shared access",
+        "hi": "मांग और साझा पहुँच का प्रबंधन"
+      },
+      "body": {
+        "en": "Water management requires attention to demand as well as supply. Repairing leaks, choosing suitable irrigation methods, treating wastewater for appropriate reuse and selecting locally suitable crops can reduce avoidable withdrawals. Efficiency alone may not save a basin if users expand the irrigated area after saving water per field. Consider total extraction, not only water used per unit of output. Shared sources need rules about timing, priority, monitoring and responsibility. Drinking-water needs, livelihoods and environmental flows must be considered together. A fictional village can record well levels each month, discuss irrigation schedules and protect recharge areas. Such records are more useful when the same measurement method is followed over time. Do not confuse one rainy week with a lasting recovery of groundwater. Different users may have unequal bargaining power, so participation must include people who collect water and those without private wells. Conservation is most effective when technical changes and fair institutions reinforce each other. Explain one individual action and one collective action rather than placing the entire burden on households.",
+        "hi": "जल प्रबंधन (Water Management) में आपूर्ति बढ़ाने के साथ मांग समझना जरूरी है। पाइप की मरम्मत, उचित सिंचाई, उपचारित जल का उपयुक्त पुनः उपयोग और स्थानीय दशाओं के अनुसार फसल चयन से अनावश्यक निकासी घट सकती है। केवल प्रति खेत पानी बचना पूरे क्षेत्र की बचत नहीं बताता। अगर बचत के बाद सिंचित क्षेत्र बहुत बढ़ जाए, तो कुल निकासी फिर बढ़ सकती है। इसलिए प्रति उत्पादन उपयोग के साथ कुल उपयोग भी देखें। साझा जल स्रोत के लिए समय, प्राथमिकता, निगरानी और जिम्मेदारी के नियम चाहिए। पेयजल, आजीविका और नदी के पर्यावरणीय प्रवाह को साथ समझें। काल्पनिक गाँव में हर महीने कुएँ का स्तर मापा, सिंचाई समय तय किया और पुनर्भरण क्षेत्र बचाया जा सकता है। तुलना के लिए मापने की विधि समान रहनी चाहिए। एक सप्ताह की बारिश को भूजल का स्थायी सुधार नहीं मानें। बिना निजी कुएँ वाले और पानी लाने वाले लोगों की बात भी निर्णय में शामिल हो। तकनीक तथा न्यायपूर्ण संस्था एक-दूसरे को सहारा दें। उत्तर में एक व्यक्तिगत और एक सामूहिक उपाय लिखना उपयोगी है।"
+      },
+      "question": {
+        "en": "Why may efficient irrigation fail to reduce total extraction?",
+        "hi": "कुशल सिंचाई से भी कुल निकासी क्यों नहीं घट सकती?"
+      }
+    },
+    {
+      "title": {
+        "en": "Map reading and revision",
+        "hi": "मानचित्र अध्ययन और पुनरावृत्ति"
+      },
+      "body": {
+        "en": "Use a river basin as a connected system. Upstream land use, storage and extraction can affect downstream flow and water quality. On the study map, locate Bhakra Nangal, Tehri, Hirakud, Sardar Sarovar, Nagarjuna Sagar and Tungabhadra, then connect each project with its river and broad state location. The point symbols are intentionally enlarged for visibility; they do not show dam length, height or reservoir boundaries. A map-based answer should give the place, associated river and requested direction or state, rather than relying on the screen position alone. For revision, organise the chapter into five links: uneven usable supply, rising and unequal demand, multipurpose projects, their costs and local conservation. Compare a dam and rooftop harvesting by scale and purpose, not by declaring one universally good. When using textbook statistics, retain the stated year; a historical projection is not a verified present-day count. End an explanation by matching the remedy to the diagnosed problem. Pollution needs treatment and prevention, while excessive extraction needs demand management and recharge protection.",
+        "hi": "नदी बेसिन (River Basin) को जुड़े हुए तंत्र की तरह देखें। ऊपर भूमि उपयोग, जलाशय और निकासी बदलने से नीचे प्रवाह तथा गुणवत्ता प्रभावित हो सकती है। अध्ययन मानचित्र पर भाखड़ा नांगल, टिहरी, हीराकुड, सरदार सरोवर, नागार्जुन सागर और तुंगभद्रा खोजें। हर परियोजना को नदी और मोटे राज्य स्थान से जोड़ें। स्पष्ट दिखाई देने के लिए बिंदु बड़े हैं; वे बाँध की लंबाई, ऊँचाई या जलाशय की सीमा नहीं दिखाते। मानचित्र उत्तर में स्थान, संबंधित नदी और पूछा गया राज्य या दिशा लिखें। केवल स्क्रीन में ऊपर या नीचे देखकर उत्तर न दें। पुनरावृत्ति के 5 संबंध बनाइए: असमान उपयोग योग्य आपूर्ति, बढ़ती तथा असमान मांग, बहुउद्देशीय परियोजना, उसकी लागत और स्थानीय संरक्षण। बाँध तथा छत संचयन की तुलना पैमाने और उद्देश्य से करें, किसी एक को हर जगह श्रेष्ठ न कहें। पुराने आँकड़े के साथ उसकी तिथि रखें। ऐतिहासिक अनुमान को वर्तमान का सत्यापित आँकड़ा न बनाएँ। उपाय समस्या के कारण से मिलना चाहिए। प्रदूषण के लिए उपचार तथा रोकथाम, और अधिक निकासी के लिए मांग प्रबंधन तथा पुनर्भरण क्षेत्र का संरक्षण जरूरी है।"
+      },
+      "question": {
+        "en": "Why must map markers not be read as reservoir boundaries?",
+        "hi": "मानचित्र बिंदु को जलाशय की सीमा क्यों नहीं मानना चाहिए?"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Why can water be scarce despite renewal?",
+        "hi": "नवीकरण के बावजूद पानी दुर्लभ क्यों?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Demand and usable supply may not match",
+            "hi": "मांग और उपयोग योग्य आपूर्ति में अंतर"
+          },
+          "reason": {
+            "en": "Renewal varies across place and time.",
+            "hi": "नवीकरण स्थान और समय से बदलता है."
+          }
+        },
+        {
+          "text": {
+            "en": "All water is fresh",
+            "hi": "सारा पानी मीठा है"
+          },
+          "reason": {
+            "en": "Most water is saline.",
+            "hi": "अधिकांश पानी खारा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Rain falls equally everywhere",
+            "hi": "वर्षा हर जगह समान है"
+          },
+          "reason": {
+            "en": "Rainfall varies.",
+            "hi": "वर्षा बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pollution increases safe supply",
+            "hi": "प्रदूषण सुरक्षित आपूर्ति बढ़ाता है"
+          },
+          "reason": {
+            "en": "Pollution reduces usable supply.",
+            "hi": "प्रदूषण उपयोग योग्य मात्रा घटाता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which river is associated with Hirakud?",
+        "hi": "हीराकुड किस नदी पर है?"
+      },
+      "correct": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Narmada",
+            "hi": "नर्मदा"
+          },
+          "reason": {
+            "en": "Sardar Sarovar is associated with it.",
+            "hi": "इससे सरदार सरोवर संबंधित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mahanadi",
+            "hi": "महानदी"
+          },
+          "reason": {
+            "en": "Hirakud is on the Mahanadi.",
+            "hi": "हीराकुड महानदी पर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sutlej",
+            "hi": "सतलुज"
+          },
+          "reason": {
+            "en": "Bhakra Nangal is associated with it.",
+            "hi": "इससे भाखड़ा नांगल संबंधित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Krishna",
+            "hi": "कृष्णा"
+          },
+          "reason": {
+            "en": "Nagarjuna Sagar is associated with it.",
+            "hi": "इससे नागार्जुन सागर संबंधित है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What is recharge?",
+        "hi": "पुनर्भरण क्या है?"
+      },
+      "correct": 2,
+      "options": [
+        {
+          "text": {
+            "en": "Salt production",
+            "hi": "नमक उत्पादन"
+          },
+          "reason": {
+            "en": "This is not recharge.",
+            "hi": "यह पुनर्भरण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Building a road",
+            "hi": "सड़क बनाना"
+          },
+          "reason": {
+            "en": "Paving can reduce infiltration.",
+            "hi": "पक्का क्षेत्र रिसाव घटा सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Water entering groundwater storage",
+            "hi": "भूजल भंडार में पानी पहुँचना"
+          },
+          "reason": {
+            "en": "Infiltration can replenish groundwater.",
+            "hi": "रिसाव से भूजल बढ़ सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pumping only",
+            "hi": "केवल पंप करना"
+          },
+          "reason": {
+            "en": "Pumping withdraws water.",
+            "hi": "पंप से निकासी होती है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Why can a reservoir need empty space?",
+        "hi": "जलाशय में खाली क्षमता क्यों चाहिए?"
+      },
+      "correct": 3,
+      "options": [
+        {
+          "text": {
+            "en": "To create rainfall",
+            "hi": "वर्षा बनाने के लिए"
+          },
+          "reason": {
+            "en": "A reservoir does not command rainfall.",
+            "hi": "जलाशय वर्षा नियंत्रित नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "To stop all evaporation",
+            "hi": "सारा वाष्पीकरण रोकने के लिए"
+          },
+          "reason": {
+            "en": "Empty space does not do this.",
+            "hi": "खाली स्थान ऐसा नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "To increase salinity",
+            "hi": "लवणता बढ़ाने के लिए"
+          },
+          "reason": {
+            "en": "This is not the purpose.",
+            "hi": "यह उद्देश्य नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "To receive flood inflow",
+            "hi": "बाढ़ का पानी समाने के लिए"
+          },
+          "reason": {
+            "en": "Storage space can moderate inflow.",
+            "hi": "खाली भंडारण प्रवाह संभाल सकता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Which is a rooftop harvesting component?",
+        "hi": "छत संचयन का घटक कौन?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Gutter and storage tank",
+            "hi": "नाली और भंडार टंकी"
+          },
+          "reason": {
+            "en": "They collect and hold runoff.",
+            "hi": "ये बहाव जमा और सुरक्षित करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Coal seam",
+            "hi": "कोयला परत"
+          },
+          "reason": {
+            "en": "It is a mineral deposit.",
+            "hi": "यह खनिज जमाव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Blast furnace",
+            "hi": "धमन भट्ठी"
+          },
+          "reason": {
+            "en": "It processes iron.",
+            "hi": "इसमें लौह प्रसंस्करण होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Sea port",
+            "hi": "समुद्री पत्तन"
+          },
+          "reason": {
+            "en": "It serves transport.",
+            "hi": "यह परिवहन से जुड़ा है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What does a first flush divert?",
+        "hi": "फर्स्ट फ्लश क्या अलग करता है?"
+      },
+      "correct": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Only electricity",
+            "hi": "केवल बिजली"
+          },
+          "reason": {
+            "en": "It is not an electrical switch.",
+            "hi": "यह बिजली स्विच नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Initial dirty runoff",
+            "hi": "शुरुआती गंदा बहाव"
+          },
+          "reason": {
+            "en": "The first runoff can carry roof dirt.",
+            "hi": "पहले बहाव में छत की गंदगी हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All groundwater",
+            "hi": "सारा भूजल"
+          },
+          "reason": {
+            "en": "It acts at collection, not all aquifers.",
+            "hi": "यह संग्रहण पर काम करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only sunlight",
+            "hi": "केवल सूर्यप्रकाश"
+          },
+          "reason": {
+            "en": "It directs water.",
+            "hi": "यह पानी की दिशा बदलता है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What is an important displacement cost?",
+        "hi": "विस्थापन की महत्त्वपूर्ण लागत?"
+      },
+      "correct": 2,
+      "options": [
+        {
+          "text": {
+            "en": "No social change",
+            "hi": "कोई सामाजिक बदलाव नहीं"
+          },
+          "reason": {
+            "en": "Moving can disrupt relationships.",
+            "hi": "स्थानांतरण संबंध बदल सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unlimited new land",
+            "hi": "असीमित नई भूमि"
+          },
+          "reason": {
+            "en": "Land is limited.",
+            "hi": "भूमि सीमित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Loss of livelihoods and networks",
+            "hi": "आजीविका और सामाजिक संबंध खोना"
+          },
+          "reason": {
+            "en": "Rehabilitation must address these.",
+            "hi": "पुनर्वास में इनका ध्यान चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Automatic higher income",
+            "hi": "अपने-आप अधिक आय"
+          },
+          "reason": {
+            "en": "Income improvement is not guaranteed.",
+            "hi": "आय वृद्धि निश्चित नहीं।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "100 m² × 0.5 m × 0.8 equals?",
+        "hi": "100 m² × 0.5 m × 0.8 कितना?"
+      },
+      "correct": 3,
+      "options": [
+        {
+          "text": {
+            "en": "40 m²",
+            "hi": "40 m²"
+          },
+          "reason": {
+            "en": "This is area, not volume.",
+            "hi": "यह क्षेत्रफल है, आयतन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "400 m³",
+            "hi": "400 m³"
+          },
+          "reason": {
+            "en": "The product is 40.",
+            "hi": "गुणनफल 40 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.4 m³",
+            "hi": "0.4 m³"
+          },
+          "reason": {
+            "en": "This is too small by a factor of 100.",
+            "hi": "यह 100 गुना कम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "40 m³",
+            "hi": "40 m³"
+          },
+          "reason": {
+            "en": "Area times depth gives volume.",
+            "hi": "क्षेत्रफल गुणा गहराई से आयतन।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "Bamboo drip is associated with which example?",
+        "hi": "बाँस ड्रिप किस उदाहरण से जुड़ी?"
+      },
+      "correct": 0,
+      "options": [
+        {
+          "text": {
+            "en": "Meghalaya",
+            "hi": "मेघालय"
+          },
+          "reason": {
+            "en": "The chapter describes its local use.",
+            "hi": "अध्याय में स्थानीय उपयोग बताया है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Desert sea ice",
+            "hi": "मरुस्थल की समुद्री बर्फ"
+          },
+          "reason": {
+            "en": "This is not the example.",
+            "hi": "यह उदाहरण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Himalayan glacier mining",
+            "hi": "हिमनद खनन"
+          },
+          "reason": {
+            "en": "This is not irrigation.",
+            "hi": "यह सिंचाई नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ocean shipping",
+            "hi": "समुद्री जहाज"
+          },
+          "reason": {
+            "en": "This is transport.",
+            "hi": "यह परिवहन है।"
+          }
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "What should a water remedy match?",
+        "hi": "जल उपाय किससे मेल खाए?"
+      },
+      "correct": 1,
+      "options": [
+        {
+          "text": {
+            "en": "A claim of unlimited water",
+            "hi": "असीमित जल का दावा"
+          },
+          "reason": {
+            "en": "Local availability is limited.",
+            "hi": "स्थानीय उपलब्धता सीमित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The diagnosed cause",
+            "hi": "पहचाना गया कारण"
+          },
+          "reason": {
+            "en": "Different causes need different responses.",
+            "hi": "अलग कारणों के अलग उपाय होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the largest building",
+            "hi": "केवल सबसे बड़ी इमारत"
+          },
+          "reason": {
+            "en": "Size alone does not solve the problem.",
+            "hi": "आकार अकेला समाधान नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a slogan",
+            "hi": "केवल नारा"
+          },
+          "reason": {
+            "en": "Evidence and action are needed.",
+            "hi": "प्रमाण और कार्य चाहिए।"
+          }
+        }
+      ]
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "Explain quantity and quality scarcity.",
+        "hi": "मात्रा और गुणवत्ता की दुर्लभता समझाएँ।"
+      },
+      "answer": {
+        "en": "Quantity scarcity concerns insufficient volume; quality scarcity means water exists but is unsuitable for use.",
+        "hi": "मात्रा में पानी कम है; गुणवत्ता में पानी है पर उपयोग योग्य नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Give two benefits and two costs of a large dam.",
+        "hi": "बड़े बाँध के 2 लाभ और 2 लागत दें।"
+      },
+      "answer": {
+        "en": "Irrigation and electricity are possible benefits; displacement and altered sediment flow are possible costs.",
+        "hi": "सिंचाई और बिजली लाभ; विस्थापन और तलछट प्रवाह में बदलाव लागत हो सकते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain rainwater harvesting.",
+        "hi": "वर्षा जल संचयन समझाएँ।"
+      },
+      "answer": {
+        "en": "Collect runoff from a catchment for suitable storage or recharge, with cleaning and overflow provisions.",
+        "hi": "जलग्रहण का बहाव सफाई और निकास सहित उपयुक्त भंडार या पुनर्भरण के लिए जमा करना।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is a community rule useful?",
+        "hi": "सामुदायिक नियम क्यों उपयोगी है?"
+      },
+      "answer": {
+        "en": "It coordinates withdrawals and makes responsibility and priority explicit.",
+        "hi": "यह निकासी में तालमेल तथा जिम्मेदारी और प्राथमिकता स्पष्ट करता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why retain the date of a water statistic?",
+        "hi": "जल आँकड़े की तिथि क्यों रखें?"
+      },
+      "answer": {
+        "en": "Water use and population change; a historical projection is not a current measurement.",
+        "hi": "उपयोग और आबादी बदलते हैं; पुराना अनुमान वर्तमान माप नहीं।"
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "bhakra",
+      "title": {
+        "en": "Bhakra Nangal · Sutlej",
+        "hi": "भाखड़ा नांगल · सतलुज"
+      },
+      "kind": "place",
+      "location": [
+        76.43,
+        31.42
+      ],
+      "info": {
+        "en": "Approximate Bhakra dam location near the Himachal Pradesh–Punjab area; Sutlej project marker, not a reservoir boundary.",
+        "hi": "हिमाचल प्रदेश–पंजाब क्षेत्र के पास भाखड़ा का लगभग स्थान; सतलुज परियोजना चिह्न, जलाशय सीमा नहीं।"
+      }
+    },
+    {
+      "id": "tehri",
+      "title": {
+        "en": "Tehri · Bhagirathi",
+        "hi": "टिहरी · भागीरथी"
+      },
+      "kind": "place",
+      "location": [
+        78.48,
+        30.38
+      ],
+      "info": {
+        "en": "Tehri in Uttarakhand is on the Bhagirathi.",
+        "hi": "उत्तराखंड में टिहरी भागीरथी पर है।"
+      }
+    },
+    {
+      "id": "hirakud",
+      "title": {
+        "en": "Hirakud · Mahanadi",
+        "hi": "हीराकुड · महानदी"
+      },
+      "kind": "place",
+      "location": [
+        83.87,
+        21.53
+      ],
+      "info": {
+        "en": "Hirakud lies on the Mahanadi in Odisha.",
+        "hi": "हीराकुड ओडिशा में महानदी पर है।"
+      }
+    },
+    {
+      "id": "sardar",
+      "title": {
+        "en": "Sardar Sarovar · Narmada",
+        "hi": "सरदार सरोवर · नर्मदा"
+      },
+      "kind": "place",
+      "location": [
+        73.75,
+        21.83
+      ],
+      "info": {
+        "en": "Sardar Sarovar is a Narmada project in Gujarat.",
+        "hi": "सरदार सरोवर गुजरात में नर्मदा परियोजना है।"
+      }
+    },
+    {
+      "id": "nagarjuna",
+      "title": {
+        "en": "Nagarjuna Sagar · Krishna",
+        "hi": "नागार्जुन सागर · कृष्णा"
+      },
+      "kind": "place",
+      "location": [
+        79.31,
+        16.58
+      ],
+      "info": {
+        "en": "Krishna river project at the Telangana–Andhra Pradesh border area.",
+        "hi": "तेलंगाना–आंध्र प्रदेश सीमावर्ती क्षेत्र में कृष्णा नदी परियोजना।"
+      }
+    },
+    {
+      "id": "tunga",
+      "title": {
+        "en": "Tungabhadra",
+        "hi": "तुंगभद्रा"
+      },
+      "kind": "place",
+      "location": [
+        76.33,
+        15.26
+      ],
+      "info": {
+        "en": "Tungabhadra dam near Hosapete in Karnataka.",
+        "hi": "कर्नाटक में होसपेटे के पास तुंगभद्रा बाँध।"
+      }
+    }
+  ],
+  "mapQuestions": [
+    {
+      "question": {
+        "en": "Mark Hirakud and name its river and state.",
+        "hi": "हीराकुड दिखाकर नदी और राज्य लिखें।"
+      },
+      "answer": {
+        "en": "Odisha; Mahanadi.",
+        "hi": "ओडिशा; महानदी।"
+      }
+    },
+    {
+      "question": {
+        "en": "Locate Sardar Sarovar and Nagarjuna Sagar; name their rivers.",
+        "hi": "सरदार सरोवर और नागार्जुन सागर दिखाकर नदियाँ लिखें।"
+      },
+      "answer": {
+        "en": "Sardar Sarovar—Narmada; Nagarjuna Sagar—Krishna.",
+        "hi": "सरदार सरोवर—नर्मदा; नागार्जुन सागर—कृष्णा।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "title": {
+        "en": "Estimate collection",
+        "hi": "संग्रहण का अनुमान"
+      },
+      "question": {
+        "en": "Estimate collection from 100 m² roof, 0.5 m rain, coefficient 0.8.",
+        "hi": "100 m² छत, 0.5 m वर्षा, गुणांक 0.8 से संग्रहण निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Multiply area by depth: 50 m³.",
+          "hi": "क्षेत्रफल और गहराई गुणा: 50 m³।"
+        },
+        {
+          "en": "Apply coefficient: 50 × 0.8.",
+          "hi": "गुणांक लगाएँ: 50 × 0.8।"
+        }
+      ],
+      "answer": {
+        "en": "40 m³ = 40,000 L; an illustrative estimate.",
+        "hi": "40 m³ = 40,000 L; उदाहरण का अनुमान।"
+      }
+    },
+    {
+      "title": {
+        "en": "Identify scarcity",
+        "hi": "दुर्लभता पहचानें"
+      },
+      "question": {
+        "en": "A town has a full polluted lake but no safe supply. Diagnose.",
+        "hi": "नगर की झील भरी पर प्रदूषित है और सुरक्षित आपूर्ति नहीं। समस्या पहचानें।"
+      },
+      "steps": [
+        {
+          "en": "Volume exists.",
+          "hi": "पानी की मात्रा मौजूद है।"
+        },
+        {
+          "en": "Quality and treatment limit use.",
+          "hi": "गुणवत्ता और उपचार उपयोग सीमित करते हैं।"
+        }
+      ],
+      "answer": {
+        "en": "Quality-related scarcity; prevent pollution and treat water appropriately.",
+        "hi": "गुणवत्ता की दुर्लभता; प्रदूषण रोकें और उचित उपचार करें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Evaluate a project",
+        "hi": "परियोजना का मूल्यांकन"
+      },
+      "question": {
+        "en": "A dam supplies a city but displaces farms. What must be compared?",
+        "hi": "बाँध शहर को आपूर्ति देता पर खेत डुबाता है। क्या तुलना हो?"
+      },
+      "steps": [
+        {
+          "en": "Identify beneficiaries and affected people.",
+          "hi": "लाभार्थी और प्रभावित लोग पहचानें।"
+        },
+        {
+          "en": "Compare benefits, livelihood losses and alternatives.",
+          "hi": "लाभ, आजीविका हानि और विकल्प देखें।"
+        }
+      ],
+      "answer": {
+        "en": "Evaluate distribution, rehabilitation and environmental effects alongside supply benefits.",
+        "hi": "आपूर्ति लाभ के साथ वितरण, पुनर्वास और पर्यावरण प्रभाव जाँचें।"
+      }
+    }
+  ],
+  "why": {
+    "en": "A map helps locate examples, but location alone does not explain a process. Compare environmental conditions, technology and human decisions. Markers are approximate teaching locations, not boundaries or complete distributions.",
+    "hi": "मानचित्र उदाहरणों की स्थिति बताता है, पर केवल स्थान प्रक्रिया नहीं समझाता। पर्यावरण, तकनीक और मानवीय निर्णय की तुलना करें। चिह्न लगभग शिक्षण स्थान हैं, सीमाएँ या पूरा वितरण नहीं।"
+  },
+  "missions": [
+    {
+      "label": {
+        "en": "Explore 3 different map features.",
+        "hi": "मानचित्र के 3 अलग स्थल देखें।"
+      },
+      "key": "visited",
+      "min": 3
+    },
+    {
+      "label": {
+        "en": "Zoom to 2× or more.",
+        "hi": "2× या अधिक ज़ूम करें।"
+      },
+      "key": "zoom",
+      "min": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II — Chapter 3, 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf"
+    },
+    {
+      "title": "UP Board Class 10 Social Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/932-Social-Science-Class-10.pdf"
+    }
+  ],
+  "scopeNote": {
+    "en": "Original bilingual study notes. Historical textbook data retain their dates. Map locations are schematic; use the prescribed atlas for assessed map work.",
+    "hi": "मौलिक द्विभाषी अध्ययन नोट्स। पाठ्यपुस्तक के पुराने आँकड़ों की तिथि महत्त्वपूर्ण है। मानचित्र स्थान सांकेतिक हैं; परीक्षा के मानचित्र कार्य में निर्धारित एटलस उपयोग करें।"
+  }
+}

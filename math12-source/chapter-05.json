@@ -1,0 +1,892 @@
+{
+  "id": 5,
+  "title": {
+    "en": "Continuity and Differentiability",
+    "hi": "सांतत्य तथा अवकलनीयता"
+  },
+  "goal": {
+    "en": "Connect limits, continuity and derivatives, and differentiate composite, implicit and parametric functions.",
+    "hi": "सीमा, सांतत्य और अवकलज जोड़ें तथा संयुक्त, अस्पष्ट और प्राचलिक फलनों का अवकलन करें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Continuity at a point",
+        "hi": "किसी बिंदु पर सांतत्य"
+      },
+      "body": {
+        "en": "Continuity at an interior point c requires the two-sided limit to exist and equal the defined value f(c). Check the left limit, right limit and actual value separately. Polynomial functions are continuous on R; rational functions are continuous wherever their denominator is nonzero. A removable hole is not filled merely because nearby values approach one number. A graph offers intuition, while a limit calculation supplies the conclusion.",
+        "hi": "सांतत्य (Continuity) का सहज अर्थ है कि छोटे निवेश परिवर्तन से फलन का मान बिना अचानक छलाँग के बदलता है। किसी आंतरिक बिंदु c पर f संतत है, यदि f(c) परिभाषित हो, lim x→c f(x) मौजूद हो और वह सीमा f(c) के बराबर हो। यहाँ 3 अलग जाँचें हैं; केवल चित्र में रेखा जुड़ी दिखना पर्याप्त तर्क नहीं है। पहले बाईं सीमा (Left-hand limit), फिर दाईं सीमा (Right-hand limit), फिर बिंदु का वास्तविक मान लिखें। उदाहरण के लिए f(x)=x² में c=2 पर दोनों सीमाएँ 4 और f(2)=4 हैं। इसलिए फलन वहाँ संतत है। बहुपद (Polynomial) सभी वास्तविक संख्याओं पर संतत होते हैं। परिमेय फलन वहाँ संतत होते हैं जहाँ हर शून्य न हो। यदि कोई बिंदु प्रांत में ही नहीं है, तो उस बिंदु पर फलन को संतत घोषित न करें। सीमित बंद अंतराल के अंतिम बिंदु पर भीतर की ओर से आने वाली एकपक्षीय सीमा का उपयोग होता है। उदाहरण और प्रति-उदाहरण साथ जाँचने से परिभाषा याद रखने के बजाय उसका अर्थ समझ आता है।"
+      },
+      "formula": "lim(x→c) f(x)=f(c)",
+      "question": {
+        "en": "Is f(x)=x² continuous at x=2?",
+        "hi": "क्या f(x)=x², x=2 पर संतत है?"
+      },
+      "answer": {
+        "en": "Yes; both limits and f(2) equal 4.",
+        "hi": "हाँ; दोनों सीमाएँ और f(2), सभी 4 हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Piecewise functions and removable gaps",
+        "hi": "खंडशः फलन और हटाने योग्य अंतराल"
+      },
+      "body": {
+        "en": "For a piecewise function, use the rule valid on the appropriate side. In f(x)=(x²−1)/(x−1) for x≠1 and f(1)=k, cancellation gives x+1 only for x≠1. The limiting value is 2, so continuity requires k=2. Equality of the side limits alone does not establish continuity if the assigned value differs. A jump cannot be repaired by changing only the value at one point.",
+        "hi": "खंडशः परिभाषित फलन (Piecewise function) में अलग अंतरालों पर अलग नियम लागू होते हैं। सीमा निकालते समय x किस ओर से आ रहा है, यही तय करता है कि कौन सा नियम चुनना है। मान लें x≠1 पर f(x)=(x²−1)/(x−1) और x=1 पर f(1)=k है। गुणनखंड करने से x≠1 के लिए f(x)=x+1 मिलता है। अतः बाईं और दाईं सीमा दोनों 2 हैं। सांतत्य के लिए k=2 लेना होगा। रद्द करने का कदम x=1 पर मूल भिन्न को अपने आप परिभाषित नहीं करता; उस बिंदु का मान अलग दिया गया है। इस तरह की कमी हटाने योग्य असांतत्य (Removable discontinuity) हो सकती है। यदि बाईं सीमा 2 और दाईं सीमा 5 हो, तो किसी 1 बिंदु का मान बदलकर संतत नहीं बनाया जा सकता, क्योंकि दोनों ओर का व्यवहार नहीं बदलता। ग्राफ पर खाली गोला छूटा मान और भरा गोला वास्तविक मान दिखा सकता है। पहले सूत्र की वैधता लिखना और अंत में बिंदु का मान मिलाना ऐसे प्रश्नों में सबसे उपयोगी आदत है।"
+      },
+      "formula": "f(1)=k; lim(x→1)(x²−1)/(x−1)=2 ⇒ k=2",
+      "question": {
+        "en": "What k makes this example continuous?",
+        "hi": "इस उदाहरण को कौन सा k संतत बनाता है?"
+      },
+      "answer": {
+        "en": "k=2.",
+        "hi": "k=2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Differentiability and one-sided slopes",
+        "hi": "अवकलनीयता और एकपक्षीय ढाल"
+      },
+      "body": {
+        "en": "The derivative is the limit of a difference quotient, not the quotient obtained by setting h=0. Geometrically it is a tangent slope when that finite limit exists. Differentiability implies continuity, but the converse fails. For |x| at 0 the left derivative is −1 and the right derivative is 1, so the continuous function has no derivative there. Check slopes separately at a join.",
+        "hi": "अवकलज (Derivative) किसी बिंदु पर परिवर्तन की तात्कालिक दर बताता है। परिभाषा f′(c)=lim h→0 [f(c+h)−f(c)]/h है, जब यह सीमा परिमित रूप में मौजूद हो। h=0 रखकर 0/0 लिखना अवकलज नहीं है; पहले h≠0 पर भागफल सरल करते हैं और फिर सीमा लेते हैं। ज्यामितीय रूप से अवकलज स्पर्शरेखा की ढाल (Tangent slope) है। अवकलनीयता (Differentiability) से सांतत्य मिलता है, पर संतत फलन हमेशा अवकलनीय नहीं होता। f(x)=|x| इसका महत्त्वपूर्ण उदाहरण है। 0 के बाएँ इसका नियम −x है, इसलिए बायाँ अवकलज −1 है। दाएँ नियम x है, इसलिए दायाँ अवकलज 1 है। दोनों बराबर नहीं, अतः 0 पर अवकलज नहीं है, जबकि |x| वहाँ संतत है। जोड़ वाले बिंदु पर केवल दोनों फलन मान मिलाने से अवकलनीयता साबित नहीं होती। पहले सांतत्य की जाँच करें, फिर एकपक्षीय अवकलज मिलाएँ। कोना, नुकीला मोड़ और खड़ी स्पर्शरेखा जैसे चित्र सावधान करते हैं, लेकिन अंतिम निष्कर्ष सीमा पर आधारित होना चाहिए।"
+      },
+      "formula": "f′(c)=lim(h→0)[f(c+h)−f(c)]/h",
+      "question": {
+        "en": "Is |x| differentiable at 0?",
+        "hi": "क्या |x|, 0 पर अवकलनीय है?"
+      },
+      "answer": {
+        "en": "No; its one-sided derivatives are −1 and 1.",
+        "hi": "नहीं; एकपक्षीय अवकलज −1 और 1 हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Chain rule and inverse trigonometric derivatives",
+        "hi": "श्रृंखला नियम और प्रतिलोम त्रिकोणमितीय अवकलज"
+      },
+      "body": {
+        "en": "For y=f(g(x)), differentiate the outer function at g(x) and multiply by g′(x). The chain rule gives d(sin x²)/dx=2x cos x². For principal inverse functions, d(arcsin x)/dx=1/√(1−x²) on (−1,1), d(arccos x)/dx=−1/√(1−x²), and d(arctan x)/dx=1/(1+x²). Restrict the domain before applying a formula. Trigonometric differentiation uses radians.",
+        "hi": "श्रृंखला नियम (Chain rule) संयुक्त फलन को अवकलित करने का तरीका है। यदि y=f(u) और u=g(x), तो dy/dx=(dy/du)(du/dx) होता है। पहले बाहरी फलन का अवकलज लें, भीतर का व्यंजक वैसा रखें, फिर भीतर का अवकलज गुणा करें। y=sin(x²) में बाहरी sin का अवकलज cos है और भीतर x² का अवकलज 2x; इसलिए उत्तर 2x cos(x²) है। केवल cos(x²) लिखना अधूरा है। प्रतिलोम त्रिकोणमितीय फलनों (Inverse trigonometric functions) में मुख्य शाखा और प्रांत याद रखना जरूरी है। arcsin x का अवकलज 1/√(1−x²) और arccos x का ऋणात्मक रूप केवल −1<x<1 पर परिमित है। arctan x का अवकलज 1/(1+x²) सभी वास्तविक x पर है। arcsin(2x) में श्रृंखला नियम से अंश 2 और हर √(1−4x²) आएगा; अवकलज का खुला प्रांत −1/2<x<1/2 है। त्रिकोणमितीय अवकलन में कोण रेडियन (Radian) में होते हैं। डिग्री वाले सूत्र बिना परिवर्तन उपयोग करने से स्थिर गुणक छूटता है।"
+      },
+      "formula": "df(g(x))/dx=f′(g(x))g′(x); d(arctan x)/dx=1/(1+x²)",
+      "question": {
+        "en": "Differentiate sin(x²).",
+        "hi": "sin(x²) का अवकलज निकालें।"
+      },
+      "answer": {
+        "en": "2x cos(x²).",
+        "hi": "2x cos(x²)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Exponential and logarithmic differentiation",
+        "hi": "चरघातांकी और लघुगणकीय अवकलन"
+      },
+      "body": {
+        "en": "The natural logarithm ln x is defined for x>0 and has derivative 1/x. For a>0, d(a^x)/dx=a^x ln a; the special case a=e gives e^x. A variable base with a variable exponent requires care: for y=x^x with x>0, take logarithms, obtaining ln y=x ln x. Then y′=x^x(ln x+1). Do not treat a variable exponent as a fixed integer.",
+        "hi": "चरघातांकी फलन (Exponential function) में चर घात में होता है। e^x का अवकलज e^x ही है। धनात्मक स्थिर a के लिए a^x का अवकलज a^x ln a होता है; a=1 पर यह 0 देता है। प्राकृतिक लघुगणक (Natural logarithm) ln x का वास्तविक प्रांत x>0 है और उसका अवकलज 1/x है। ln|x| का अवकलज भी 1/x है, पर उसके लिए x≠0 चाहिए। यदि आधार और घात दोनों चर हों, जैसे y=x^x, तो साधारण घात नियम सीधे लागू नहीं करें। x>0 लेकर ln y=x ln x लिखें। दोनों ओर अवकलन से y′/y=ln x+1 मिलता है। अब y=x^x वापस रखने पर y′=x^x(ln x+1) है। इसी प्रक्रिया को लघुगणकीय अवकलन (Logarithmic differentiation) कहते हैं। कई गुणनखंडों या भागफल में भी यह उपयोगी हो सकता है। हर कदम पर मूल फलन का प्रांत जाँचें; लघुगणक लेने से कोई ऋणात्मक वास्तविक व्यंजक अपने आप वैध नहीं बनता। उत्तर में सरल रूप के साथ प्रांत लिखना समाधान को पूरा करता है।"
+      },
+      "formula": "d(e^x)/dx=e^x; d(ln x)/dx=1/x; d(x^x)/dx=x^x(ln x+1), x>0",
+      "question": {
+        "en": "Differentiate 2^x.",
+        "hi": "2^x का अवकलज निकालें।"
+      },
+      "answer": {
+        "en": "2^x ln 2.",
+        "hi": "2^x ln 2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Implicit differentiation",
+        "hi": "अस्पष्ट फलनों का अवकलन"
+      },
+      "body": {
+        "en": "An equation F(x,y)=0 may define y locally without an explicit formula. Differentiate y-dependent expressions using the chain rule. From x²+y²=25 we get 2x+2y y′=0, hence y′=−x/y where y≠0. The restriction matters: at (±5,0), the circle has a vertical tangent and cannot have a finite dy/dx from this formula. A point must lie on the original curve before its slope is evaluated.",
+        "hi": "अस्पष्ट अवकलन (Implicit differentiation) तब उपयोगी है जब x और y किसी समीकरण में साथ जुड़े हों और y को अकेले लिखना कठिन या अनावश्यक हो। y को x का फलन मानकर हर y वाले पद पर श्रृंखला नियम लगाते हैं। x²+y²=25 का अवकलन 2x+2y(dy/dx)=0 है। इसलिए y≠0 पर dy/dx=−x/y मिलता है। 2y के साथ dy/dx लिखना जरूरी है; y को स्वतंत्र स्थिरांक मान लेना गलत होगा। (3,4) पर ढाल −3/4 है, क्योंकि बिंदु मूल वृत्त पर है। कोई भी दिया बिंदु रखने से पहले जाँचें कि वह समीकरण संतुष्ट करता है या नहीं। y=0 पर इस भागफल का हर शून्य है। वृत्त के (5,0) और (−5,0) पर स्पर्शरेखा खड़ी है; वहाँ परिमित dy/dx नहीं मिलता। इसी प्रकार xy का अवकलज y+x y′ है, केवल 1 नहीं। अस्पष्ट रूप में प्राप्त सूत्र सभी बिंदुओं पर लागू नहीं भी हो सकता; भाग करते समय जो शर्त बनी, उसे अंतिम उत्तर के साथ लिखें।"
+      },
+      "formula": "x²+y²=25 ⇒ dy/dx=−x/y (y≠0)",
+      "question": {
+        "en": "Find the slope at (3,4) on x²+y²=25.",
+        "hi": "x²+y²=25 पर (3,4) में ढाल निकालें।"
+      },
+      "answer": {
+        "en": "−3/4.",
+        "hi": "−3/4।"
+      }
+    },
+    {
+      "title": {
+        "en": "Parametric derivatives",
+        "hi": "प्राचलिक अवकलज"
+      },
+      "body": {
+        "en": "When x=f(t) and y=g(t), use dy/dx=(dy/dt)/(dx/dt) where dx/dt≠0. For x=t², y=t³ and t≠0 this is 3t/2. Parametric formulas describe a curve using a third variable, but this variable is not necessarily time. At a parameter where dx/dt=0 the quotient rule cannot decide the derivative without further analysis; a limiting argument may still work.",
+        "hi": "प्राचलिक रूप (Parametric form) में x और y दोनों किसी तीसरे चर t से दिए जाते हैं। t को प्राचल (Parameter) कहते हैं; वह समय हो सकता है, लेकिन हर प्रश्न में समय मानना आवश्यक नहीं है। यदि x=f(t) और y=g(t), तो dx/dt≠0 होने पर dy/dx=(dy/dt)/(dx/dt) होता है। उदाहरण के लिए x=t² और y=t³ में dx/dt=2t तथा dy/dt=3t² हैं। t≠0 पर ढाल 3t/2 है। पहले दोनों अलग अवकलज निकालें, फिर सही क्रम में भाग दें। dx/dy और dy/dx को उलट देने से उत्तर बदल जाता है। x=a cos t, y=a sin t में अनुपात −cot t मिलता है, जहाँ sin t≠0 है। यदि dx/dt=0 हो, तो भागफल का सूत्र सीधे मान नहीं देता। वहाँ मूल वक्र या सीमा को अलग जाँचना पड़ सकता है। विशेषकर 0/0 मिलने पर अवकलज को बिना जाँच न 0 कहें, न अनंत। प्राचल का स्वीकृत अंतराल भी आवश्यक है, क्योंकि वही वक्र का कौन सा भाग दिखता है, तय करता है।"
+      },
+      "formula": "dy/dx=(dy/dt)/(dx/dt), dx/dt≠0",
+      "question": {
+        "en": "For x=t²,y=t³, find dy/dx at t=2.",
+        "hi": "x=t²,y=t³ के लिए t=2 पर dy/dx निकालें।"
+      },
+      "answer": {
+        "en": "3.",
+        "hi": "3।"
+      }
+    },
+    {
+      "title": {
+        "en": "Second derivatives and a checking method",
+        "hi": "द्वितीय अवकलज और जाँच विधि"
+      },
+      "body": {
+        "en": "The second derivative differentiates the first derivative with respect to x. For y=x³, y′=3x² and y″=6x. In parametric form, y″=[d(dy/dx)/dt]/(dx/dt), so it is not generally (d²y/dt²)/(d²x/dt²). For a piecewise function check continuity before differentiability. Validate a result using its domain, a simple input and the expected sign; numerical slopes support but do not replace a proof.",
+        "hi": "द्वितीय अवकलज (Second derivative) पहले अवकलज का x के सापेक्ष अवकलज है। इसे d²y/dx² या y″ लिखते हैं। y=x³ में y′=3x² और y″=6x है। यह चिह्न (dy/dx)² से अलग है; ऊपर लिखा 2 अवकलन की कोटि बताता है, वर्ग नहीं। प्राचलिक रूप में पहले dy/dx निकालें, फिर उसका t के सापेक्ष अवकलज लेकर dx/dt से भाग दें। सामान्यतः d²y/dx², d²y/dt² और d²x/dt² का सीधा अनुपात नहीं होता। समाधान की जाँच का उपयोगी क्रम है: प्रांत लिखें, नियम पहचानें, पहला अवकलज साफ करें, फिर दूसरा निकालें। खंडशः फलन में जोड़ पर पहले सांतत्य और फिर एकपक्षीय अवकलज जाँचें। किसी सरल मान पर उत्तर रखकर संकेत जाँचना भूल पकड़ सकता है। यदि फलन आसपास बढ़ रहा है लेकिन मिला अवकलज लगातार ऋणात्मक है, तो गणना दोबारा देखें। संख्यात्मक ढाल या स्क्रीन का चिकना चित्र प्रमाण का स्थान नहीं लेते; वे सही परिभाषा और बीजगणित की जाँच में सहायक हैं।"
+      },
+      "formula": "y″=d(y′)/dx; parametric y″=[d(y′)/dt]/(dx/dt)",
+      "question": {
+        "en": "For y=x³, what is y″ at x=2?",
+        "hi": "y=x³ के लिए x=2 पर y″ क्या है?"
+      },
+      "answer": {
+        "en": "12.",
+        "hi": "12।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find k for continuity: f(x)=x+2 for x<1, f(1)=k, f(x)=3x for x>1.",
+        "hi": "सांतत्य हेतु k निकालें: x<1 पर x+2, x=1 पर k, x>1 पर 3x।"
+      },
+      "steps": [
+        {
+          "en": "Given: a join at x=1. Find k.",
+          "hi": "दिया: x=1 पर जोड़। ज्ञात करें: k।"
+        },
+        {
+          "en": "Left limit=1+2=3; right limit=3(1)=3.",
+          "hi": "बाईं सीमा=1+2=3; दाईं सीमा=3(1)=3।"
+        },
+        {
+          "en": "Continuity requires f(1)=the common limit.",
+          "hi": "सांतत्य के लिए f(1) समान सीमा हो।"
+        }
+      ],
+      "answer": {
+        "en": "k=3.",
+        "hi": "k=3।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Differentiate e^(3x)+ln x for x>0.",
+        "hi": "x>0 में e^(3x)+ln x का अवकलज निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Use the sum rule and chain rule.",
+          "hi": "योग नियम तथा श्रृंखला नियम लें।"
+        },
+        {
+          "en": "d(e^(3x))/dx=3e^(3x); d(ln x)/dx=1/x.",
+          "hi": "d(e^(3x))/dx=3e^(3x); d(ln x)/dx=1/x।"
+        },
+        {
+          "en": "Combine the two derivatives using linearity; both expressions are defined on x>0.",
+          "hi": "रैखिकता से दोनों अवकलज जोड़ें; x>0 पर दोनों व्यंजक परिभाषित हैं।"
+        }
+      ],
+      "answer": {
+        "en": "3e^(3x)+1/x, x>0.",
+        "hi": "3e^(3x)+1/x, x>0।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Differentiate arcsin(2x) and state its derivative domain.",
+        "hi": "arcsin(2x) का अवकलज और उसका प्रांत लिखें।"
+      },
+      "steps": [
+        {
+          "en": "The inner function is u=2x, with u′=2.",
+          "hi": "भीतरी फलन u=2x और u′=2 है।"
+        },
+        {
+          "en": "Use d(arcsin u)/dx=u′/√(1−u²).",
+          "hi": "d(arcsin u)/dx=u′/√(1−u²) लें।"
+        },
+        {
+          "en": "A finite real derivative requires 1−4x²>0.",
+          "hi": "परिमित वास्तविक अवकलज के लिए 1−4x²>0 चाहिए।"
+        }
+      ],
+      "answer": {
+        "en": "2/√(1−4x²), −1/2<x<1/2.",
+        "hi": "2/√(1−4x²), −1/2<x<1/2।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find dy/dx at (3,4) on x²+y²=25.",
+        "hi": "x²+y²=25 पर (3,4) में dy/dx निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given point is on the curve:9+16=25.",
+          "hi": "दिया बिंदु वक्र पर है:9+16=25।"
+        },
+        {
+          "en": "Differentiate implicitly:2x+2y y′=0.",
+          "hi": "अस्पष्ट अवकलन:2x+2y y′=0।"
+        },
+        {
+          "en": "At y≠0, y′=−x/y; substitute (3,4).",
+          "hi": "y≠0 पर y′=−x/y; (3,4) रखें।"
+        }
+      ],
+      "answer": {
+        "en": "dy/dx=−3/4.",
+        "hi": "dy/dx=−3/4।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "For x=t²,y=t³,t>0, find d²y/dx² at t=2.",
+        "hi": "x=t²,y=t³,t>0 में t=2 पर d²y/dx² निकालें।"
+      },
+      "steps": [
+        {
+          "en": "First derivative=(3t²)/(2t)=3t/2.",
+          "hi": "प्रथम अवकलज=(3t²)/(2t)=3t/2।"
+        },
+        {
+          "en": "Differentiate this with respect to t:3/2.",
+          "hi": "इसे t के सापेक्ष अवकलित करें:3/2।"
+        },
+        {
+          "en": "Divide by dx/dt=2t: y″=3/(4t).",
+          "hi": "dx/dt=2t से भाग दें: y″=3/(4t)।"
+        },
+        {
+          "en": "At t=2, y″=3/8.",
+          "hi": "t=2 पर y″=3/8।"
+        }
+      ],
+      "answer": {
+        "en": "3/8.",
+        "hi": "3/8।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Continuity at an interior point c requires",
+        "hi": "आंतरिक बिंदु c पर सांतत्य हेतु चाहिए"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "lim f(x)=f(c)",
+            "hi": "lim f(x)=f(c)"
+          },
+          "reason": {
+            "en": "The common two-sided limit must equal the defined value.",
+            "hi": "समान द्विपक्षीय सीमा परिभाषित मान के बराबर हो।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only f(c) exists",
+            "hi": "केवल f(c) मौजूद हो"
+          },
+          "reason": {
+            "en": "A defined value can still be a jump or isolated point.",
+            "hi": "परिभाषित मान के बावजूद छलाँग हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the left limit exists",
+            "hi": "केवल बाईं सीमा हो"
+          },
+          "reason": {
+            "en": "The right side and point value also matter.",
+            "hi": "दाईं ओर और बिंदु मान भी जरूरी हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "f(c)=0 always",
+            "hi": "सदा f(c)=0"
+          },
+          "reason": {
+            "en": "A continuous value need not be zero.",
+            "hi": "संतत मान शून्य होना जरूरी नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At x=0, |x| is",
+        "hi": "x=0 पर |x| है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Continuous but not differentiable",
+            "hi": "संतत पर अवकलनीय नहीं"
+          },
+          "reason": {
+            "en": "Side slopes −1 and 1 differ.",
+            "hi": "एकपक्षीय ढाल −1 और 1 अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Differentiable but not continuous",
+            "hi": "अवकलनीय पर असंतत"
+          },
+          "reason": {
+            "en": "Differentiability implies continuity.",
+            "hi": "अवकलनीयता से सांतत्य मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neither",
+            "hi": "दोनों नहीं"
+          },
+          "reason": {
+            "en": "Its limit and value are both 0.",
+            "hi": "इसकी सीमा और मान दोनों 0 हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Derivative 0",
+            "hi": "अवकलज 0"
+          },
+          "reason": {
+            "en": "A corner does not have a unique finite tangent slope.",
+            "hi": "कोने पर एक परिमित ढाल नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "d[sin(x²)]/dx equals",
+        "hi": "d[sin(x²)]/dx है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2x cos(x²)",
+            "hi": "2x cos(x²)"
+          },
+          "reason": {
+            "en": "Multiply the outer derivative by inner derivative 2x.",
+            "hi": "बाहरी अवकलज को भीतरी 2x से गुणा करें।"
+          }
+        },
+        {
+          "text": {
+            "en": "cos(x²)",
+            "hi": "cos(x²)"
+          },
+          "reason": {
+            "en": "The inner derivative 2x is missing.",
+            "hi": "भीतरी अवकलज 2x छूटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2x sin(x²)",
+            "hi": "2x sin(x²)"
+          },
+          "reason": {
+            "en": "The derivative of sin is cos.",
+            "hi": "sin का अवकलज cos है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cos(2x)",
+            "hi": "cos(2x)"
+          },
+          "reason": {
+            "en": "Do not replace the argument by its derivative.",
+            "hi": "कोण को उसके अवकलज से न बदलें।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "d(ln x)/dx is valid on",
+        "hi": "d(ln x)/dx का वास्तविक प्रांत है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x>0",
+            "hi": "x>0"
+          },
+          "reason": {
+            "en": "The real natural logarithm requires a positive argument.",
+            "hi": "वास्तविक ln को धनात्मक निवेश चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "All real x",
+            "hi": "सभी वास्तविक x"
+          },
+          "reason": {
+            "en": "ln x is not real-defined for x≤0.",
+            "hi": "x≤0 पर वास्तविक ln x परिभाषित नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "x=0 only",
+            "hi": "केवल x=0"
+          },
+          "reason": {
+            "en": "ln 0 is undefined.",
+            "hi": "ln 0 अपरिभाषित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x<0 only",
+            "hi": "केवल x<0"
+          },
+          "reason": {
+            "en": "ln|x| is a different expression.",
+            "hi": "ln|x| अलग व्यंजक है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "d(arctan x)/dx is",
+        "hi": "d(arctan x)/dx है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/(1+x²)",
+            "hi": "1/(1+x²)"
+          },
+          "reason": {
+            "en": "This is the standard principal inverse tangent derivative.",
+            "hi": "यह मुख्य प्रतिलोम स्पर्शज्या का अवकलज है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/√(1−x²)",
+            "hi": "1/√(1−x²)"
+          },
+          "reason": {
+            "en": "That belongs to arcsin x on (−1,1).",
+            "hi": "यह (−1,1) पर arcsin x का है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1/(1+x²)",
+            "hi": "−1/(1+x²)"
+          },
+          "reason": {
+            "en": "arctan is increasing; the sign is positive.",
+            "hi": "arctan वर्धमान है; चिह्न धनात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sec²x",
+            "hi": "sec²x"
+          },
+          "reason": {
+            "en": "That is the derivative of tan x.",
+            "hi": "यह tan x का अवकलज है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For x²+y²=25, dy/dx at y≠0 is",
+        "hi": "x²+y²=25 में y≠0 पर dy/dx है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−x/y",
+            "hi": "−x/y"
+          },
+          "reason": {
+            "en": "2x+2y y′=0.",
+            "hi": "2x+2y y′=0।"
+          }
+        },
+        {
+          "text": {
+            "en": "−y/x",
+            "hi": "−y/x"
+          },
+          "reason": {
+            "en": "That reverses dy/dx.",
+            "hi": "इसमें अनुपात उलटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x/y",
+            "hi": "x/y"
+          },
+          "reason": {
+            "en": "Moving 2x to the other side changes its sign.",
+            "hi": "2x दूसरी ओर ऋणात्मक होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "The circle does not have horizontal tangents everywhere.",
+            "hi": "वृत्त पर हर जगह क्षैतिज स्पर्शरेखा नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For x=t²,y=t³ and t≠0, dy/dx is",
+        "hi": "x=t²,y=t³,t≠0 में dy/dx है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3t/2",
+            "hi": "3t/2"
+          },
+          "reason": {
+            "en": "Divide 3t² by 2t.",
+            "hi": "3t² को 2t से भाग दें।"
+          }
+        },
+        {
+          "text": {
+            "en": "2/(3t)",
+            "hi": "2/(3t)"
+          },
+          "reason": {
+            "en": "This is dx/dy when defined.",
+            "hi": "यह परिभाषित होने पर dx/dy है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3t²",
+            "hi": "3t²"
+          },
+          "reason": {
+            "en": "That is dy/dt, not dy/dx.",
+            "hi": "यह dy/dt है, dy/dx नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "t",
+            "hi": "t"
+          },
+          "reason": {
+            "en": "The factors 3 and 2 must remain.",
+            "hi": "3 और 2 के गुणक रहते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For y=x³, y″ equals",
+        "hi": "y=x³ के लिए y″ है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "6x",
+            "hi": "6x"
+          },
+          "reason": {
+            "en": "Differentiate 3x² once more.",
+            "hi": "3x² का फिर अवकलन करें।"
+          }
+        },
+        {
+          "text": {
+            "en": "3x²",
+            "hi": "3x²"
+          },
+          "reason": {
+            "en": "That is the first derivative.",
+            "hi": "यह प्रथम अवकलज है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9x⁴",
+            "hi": "9x⁴"
+          },
+          "reason": {
+            "en": "That squares y′ instead of differentiating it.",
+            "hi": "यह y′ का वर्ग है, अवकलज नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "Differentiating 3x² leaves a factor x.",
+            "hi": "3x² के अवकलन में x बचता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For x>0, d(x^x)/dx is",
+        "hi": "x>0 में d(x^x)/dx है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x^x(ln x+1)",
+            "hi": "x^x(ln x+1)"
+          },
+          "reason": {
+            "en": "Logarithmic differentiation gives y′/y=ln x+1.",
+            "hi": "लघुगणकीय अवकलन से y′/y=ln x+1।"
+          }
+        },
+        {
+          "text": {
+            "en": "x x^(x−1)",
+            "hi": "x x^(x−1)"
+          },
+          "reason": {
+            "en": "This treats the variable exponent as constant.",
+            "hi": "यह चर घात को स्थिर मानता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x^x ln x",
+            "hi": "x^x ln x"
+          },
+          "reason": {
+            "en": "The derivative of x ln x also contains 1.",
+            "hi": "x ln x के अवकलज में 1 भी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x^(x−1)",
+            "hi": "x^(x−1)"
+          },
+          "reason": {
+            "en": "Both base and exponent vary.",
+            "hi": "आधार और घात दोनों चर हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "If f is differentiable at c, then it must be",
+        "hi": "f, c पर अवकलनीय है तो वह जरूर है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Continuous at c",
+            "hi": "c पर संतत"
+          },
+          "reason": {
+            "en": "A finite derivative implies a zero increment limit.",
+            "hi": "परिमित अवकलज से फलन वृद्धि की सीमा 0 मिलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Constant everywhere",
+            "hi": "हर जगह स्थिर"
+          },
+          "reason": {
+            "en": "x² is a counterexample.",
+            "hi": "x² प्रति-उदाहरण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Positive at c",
+            "hi": "c पर धनात्मक"
+          },
+          "reason": {
+            "en": "A derivative does not require a positive value.",
+            "hi": "अवकलनीयता धनात्मक मान नहीं माँगती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Twice differentiable at c",
+            "hi": "c पर द्वितीय अवकलनीय"
+          },
+          "reason": {
+            "en": "One derivative does not ensure the next one.",
+            "hi": "प्रथम अवकलज से दूसरा सुनिश्चित नहीं होता।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define continuity at an interior point.",
+        "hi": "आंतरिक बिंदु पर सांतत्य परिभाषित करें।"
+      },
+      "answer": {
+        "en": "f(c) exists and the two-sided limit equals f(c).",
+        "hi": "f(c) परिभाषित हो और द्विपक्षीय सीमा f(c) के बराबर हो।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is |x| not differentiable at 0?",
+        "hi": "|x|, 0 पर अवकलनीय क्यों नहीं?"
+      },
+      "answer": {
+        "en": "Its left derivative −1 differs from right derivative 1.",
+        "hi": "बायाँ अवकलज −1 और दायाँ अवकलज 1 अलग हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Differentiate ln(1+x²).",
+        "hi": "ln(1+x²) का अवकलन करें।"
+      },
+      "answer": {
+        "en": "2x/(1+x²), for all real x.",
+        "hi": "2x/(1+x²), सभी वास्तविक x पर।"
+      }
+    },
+    {
+      "question": {
+        "en": "Differentiate y=x^x for x>0.",
+        "hi": "x>0 पर y=x^x का अवकलन करें।"
+      },
+      "answer": {
+        "en": "ln y=x ln x ⇒ y′=x^x(ln x+1).",
+        "hi": "ln y=x ln x ⇒ y′=x^x(ln x+1)।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find y′ when xy=1.",
+        "hi": "xy=1 के लिए y′ निकालें।"
+      },
+      "answer": {
+        "en": "y+x y′=0 ⇒ y′=−y/x=−1/x², x≠0.",
+        "hi": "y+x y′=0 ⇒ y′=−y/x=−1/x², x≠0।"
+      }
+    },
+    {
+      "question": {
+        "en": "For x=t²,y=t³,t>0, find y″.",
+        "hi": "x=t²,y=t³,t>0 में y″ निकालें।"
+      },
+      "answer": {
+        "en": "y′=3t/2, so y″=(3/2)/(2t)=3/(4t).",
+        "hi": "y′=3t/2, अतः y″=(3/2)/(2t)=3/(4t)।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Continuity does not guarantee differentiability. Keep chain-rule factors and domain restrictions; y″ is not (y′)².",
+    "hi": "सांतत्य से अवकलनीयता सुनिश्चित नहीं। श्रृंखला नियम के गुणक और प्रांत न भूलें; y″, (y′)² नहीं है।"
+  },
+  "revision": [
+    {
+      "en": "Match limits to the point value.",
+      "hi": "सीमाएँ बिंदु मान से मिलाएँ।"
+    },
+    {
+      "en": "Differentiability implies continuity.",
+      "hi": "अवकलनीयता से सांतत्य मिलता है।"
+    },
+    {
+      "en": "A composite derivative needs the inner derivative.",
+      "hi": "संयुक्त अवकलज में भीतर का अवकलज जरूरी है।"
+    },
+    {
+      "en": "Use logarithms for x^x with x>0.",
+      "hi": "x>0 पर x^x के लिए लघुगणक लें।"
+    },
+    {
+      "en": "Differentiate y′ again to obtain y″.",
+      "hi": "y′ को फिर अवकलित कर y″ निकालें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Limits → continuity → one-sided derivatives → chain rule → implicit/parametric forms → second derivative.",
+    "hi": "सीमाएँ → सांतत्य → एकपक्षीय अवकलज → श्रृंखला नियम → अस्पष्ट/प्राचलिक रूप → द्वितीय अवकलज।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics XII Chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh105.pdf"
+    },
+    {
+      "title": "UPMSP Mathematics XII 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    }
+  ],
+  "engine": "twelve-math",
+  "scenes": []
+}

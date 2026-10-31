@@ -1,0 +1,890 @@
+{
+  "id": 8,
+  "title": {
+    "en": "Introduction to Trigonometry",
+    "hi": "त्रिकोणमिति का परिचय"
+  },
+  "goal": {
+    "en": "Identify sides relative to an angle, derive six ratios, use exact standard values and justify identities.",
+    "hi": "कोण के सापेक्ष भुजाएँ पहचानें, 6 अनुपात बनाएँ, मानक सटीक मान लें और सर्वसमिकाएँ समझाएँ।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Choose the reference angle first",
+        "hi": "पहले संदर्भ कोण चुनें"
+      },
+      "body": {
+        "en": "Trigonometry studies relationships between angles and side lengths. In this chapter, begin with a right triangle and choose one of its acute angles θ. The hypotenuse H is opposite the right angle and is the longest side. The opposite side O is across from θ, while the adjacent side A touches θ and is not the hypotenuse. These names depend on the chosen angle. If you choose the other acute angle, the two shorter sides exchange their roles, but the hypotenuse stays the same. Draw the right-angle mark and circle the reference angle before naming any ratio. Side names such as base and perpendicular can become misleading if the triangle is rotated; opposite, adjacent and hypotenuse remain tied to the angle. All ordinary side lengths are positive. A right triangle with acute θ has 0°<θ<90°, so it has no zero-length leg. Values at 0° and 90° are introduced through standard endpoint definitions, not by treating a collapsed drawing as an ordinary nondegenerate triangle. Keep these endpoint cases separate when a denominator becomes zero.",
+        "hi": "त्रिकोणमिति (Trigonometry) कोणों और भुजा लंबाइयों के संबंध पढ़ती है। इस अध्याय में पहले समकोण त्रिभुज लें और उसका एक न्यून कोण θ चुनें। समकोण के सामने की सबसे बड़ी भुजा कर्ण (Hypotenuse) H है। θ के सामने की भुजा सम्मुख भुजा (Opposite side) O और θ को छूने वाली, कर्ण के अलावा, भुजा आसन्न भुजा (Adjacent side) A है। ये नाम चुने हुए कोण पर निर्भर हैं। दूसरा न्यून कोण चुनने पर छोटी दोनों भुजाओं की भूमिकाएँ बदलती हैं, लेकिन कर्ण वही रहता है। अनुपात बनाने से पहले चित्र में समकोण चिह्न लगाएँ और संदर्भ कोण घेरें। चित्र घूमने पर आधार और लंब जैसे नाम भ्रम दे सकते हैं; सम्मुख तथा आसन्न हमेशा चुने कोण से जुड़े रहते हैं। सामान्य त्रिभुज की सभी लंबाइयाँ धनात्मक हैं। न्यून θ के लिए 0°<θ<90° है, इसलिए कोई भुजा शून्य नहीं होती। 0° और 90° के मान मानक अंतिम-स्थिति परिभाषाओं से आते हैं। दबे हुए चित्र को साधारण वास्तविक त्रिभुज मानकर शून्य हर से भाग न दें।"
+      },
+      "formula": "H²=O²+A²; 0°<θ<90° for an acute-angle right triangle",
+      "question": {
+        "en": "Does the hypotenuse change when the other acute angle is chosen?",
+        "hi": "दूसरा न्यून कोण चुनने पर क्या कर्ण बदलता है?"
+      },
+      "answer": {
+        "en": "No. Only opposite and adjacent exchange roles.",
+        "hi": "नहीं। केवल सम्मुख और आसन्न की भूमिकाएँ बदलती हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "The six trigonometric ratios",
+        "hi": "6 त्रिकोणमितीय अनुपात"
+      },
+      "body": {
+        "en": "Relative to a chosen acute angle, define sinθ=O/H, cosθ=A/H and tanθ=O/A. Their reciprocal ratios are cosecθ=H/O, secθ=H/A and cotθ=A/O. Each is a ratio of two lengths measured in the same unit, so the result has no length unit. A 3–4–5 triangle with opposite side 3 and adjacent side 4 gives sinθ=3/5, cosθ=4/5 and tanθ=3/4. The reciprocals are 5/3, 5/4 and 4/3. Since each leg is shorter than H, sine and cosine of an acute angle lie strictly between 0 and 1. Tangent need not be less than 1: when O>A, their ratio exceeds 1. The abbreviations are function names, not products of letters or quantities. In particular, cosec means cosecant, whereas cos means cosine; these are different ratios. Write the side-letter relation first, then substitute the measured values. This method works for a triangle in any orientation and prevents memorised patterns from being attached to the wrong angle.",
+        "hi": "चुने हुए न्यून कोण के लिए sinθ=O/H, cosθ=A/H तथा tanθ=O/A परिभाषित हैं। इनके व्युत्क्रम अनुपात cosecθ=H/O, secθ=H/A और cotθ=A/O हैं। हर अनुपात में दोनों लंबाइयाँ समान इकाई में हैं, इसलिए अनुपात की लंबाई इकाई नहीं होती। 3–4–5 त्रिभुज में सम्मुख भुजा 3 और आसन्न भुजा 4 लें। तब sinθ=3/5, cosθ=4/5, tanθ=3/4 और व्युत्क्रम 5/3, 5/4, 4/3 मिलते हैं। हर छोटी भुजा कर्ण से छोटी है, इसलिए न्यून कोण का sine और cosine दोनों 0 तथा 1 के बीच हैं। Tangent हमेशा 1 से छोटा नहीं होता। सम्मुख भुजा आसन्न से बड़ी हो, तो tanθ>1 होगा। ये संक्षेप फलनों के नाम हैं, अक्षरों का गुणनफल नहीं। विशेष ध्यान दें कि cosec का अर्थ cosecant है, जबकि cos का अर्थ cosine है; दोनों अलग अनुपात हैं। पहले भुजाओं वाला सूत्र लिखें, फिर संख्याएँ रखें। इससे किसी भी दिशा में बने त्रिभुज में गलत कोण के साथ अनुपात लगाने की गलती कम होती है।"
+      },
+      "formula": "sinθ=O/H; cosθ=A/H; tanθ=O/A; cosecθ=H/O; secθ=H/A; cotθ=A/O",
+      "question": {
+        "en": "If O=5 and H=13, what is sinθ?",
+        "hi": "O=5 और H=13 हों, तो sinθ क्या है?"
+      },
+      "answer": {
+        "en": "sinθ=5/13.",
+        "hi": "sinθ=5/13।"
+      }
+    },
+    {
+      "title": {
+        "en": "Why the ratios depend on angle, not size",
+        "hi": "अनुपात कोण पर निर्भर हैं, आकार पर नहीं"
+      },
+      "body": {
+        "en": "Two right triangles with the same acute angle are similar by AA: they share a right angle and the selected acute angle. Their corresponding sides are proportional, so opposite/hypotenuse, adjacent/hypotenuse and opposite/adjacent agree. This is why a trigonometric ratio can be assigned to an angle without specifying one particular triangle size. Enlarging a 3–4–5 triangle to a 6–8–10 triangle doubles each side but leaves 3/5=6/10 and 4/5=8/10 unchanged. Changing only one side while leaving the other leg fixed generally changes the acute angle, so it need not preserve those ratios. An interactive scale slider and angle slider should therefore have different effects. The scale control changes lengths together, whereas the angle control changes their proportions. Numerical measurements support this observation, and AA provides its exact geometric reason. All side values must use one length unit before forming ratios: 50 cm divided by 1 m is 1/2 after conversion, not 50. Similarity connects trigonometry to the previous triangle chapter rather than making it an unrelated collection of formulas.",
+        "hi": "एक ही न्यून कोण वाले 2 समकोण त्रिभुज AA से समरूप होंगे, क्योंकि एक जोड़ी समकोण और दूसरी चुने न्यून कोण की जोड़ी बराबर है। संगत भुजाएँ आनुपातिक होने से सम्मुख/कर्ण, आसन्न/कर्ण तथा सम्मुख/आसन्न समान रहेंगे। इसलिए किसी कोण का त्रिकोणमितीय अनुपात बताने के लिए त्रिभुज का निश्चित आकार देना जरूरी नहीं है। 3–4–5 त्रिभुज को 6–8–10 करने पर हर भुजा दुगुनी है, लेकिन 3/5=6/10 और 4/5=8/10 वही अनुपात हैं। केवल एक भुजा बदलकर दूसरी छोटी भुजा स्थिर रखने पर सामान्यतः कोण बदलता है; अनुपातों का स्थिर रहना जरूरी नहीं। इसलिए सजीव दृश्य में आकार स्लाइडर और कोण स्लाइडर के प्रभाव अलग होंगे। आकार स्लाइडर सभी लंबाइयाँ साथ बदलता है, जबकि कोण स्लाइडर उनके आपसी अनुपात बदलता है। संख्यात्मक दृश्य इसका संकेत देता है और AA ठीक ज्यामितीय कारण देता है। अनुपात से पहले सभी लंबाइयों की इकाई एक करें। 50 cm को 1 m से भाग देने पर, परिवर्तन के बाद, 1/2 मिलेगा; 50 नहीं। समरूपता पिछले अध्याय को त्रिकोणमिति से जोड़ती है।"
+      },
+      "formula": "O/H and A/H remain constant under uniform scaling",
+      "question": {
+        "en": "If O=6,H=10 are both doubled, does sinθ change?",
+        "hi": "O=6,H=10 दोनों दुगुने हों, तो sinθ बदलेगा?"
+      },
+      "answer": {
+        "en": "No; 6/10=12/20=3/5.",
+        "hi": "नहीं; 6/10=12/20=3/5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Exact values at 30°, 45° and 60°",
+        "hi": "30°, 45° और 60° के सटीक मान"
+      },
+      "body": {
+        "en": "For 45°, use an isosceles right triangle with legs a,a. Pythagoras gives hypotenuse a√2, so sin45°=cos45°=1/√2 and tan45°=1. For 30° and 60°, split an equilateral triangle of side 2a into two right triangles. The half-base is a and the altitude is a√3. Relative to 30°, opposite is a, adjacent is a√3 and hypotenuse is 2a. Hence sin30°=1/2, cos30°=√3/2 and tan30°=1/√3. Relative to 60°, those short-side roles interchange: sin60°=√3/2, cos60°=1/2 and tan60°=√3. Obtain secant, cosecant and cotangent by reciprocating the appropriate nonzero ratio. Keep the radical values exact when simplifying an expression; replacing √3 by 1.7 too early may create a visibly incorrect equality. Equivalent exact forms such as 1/√3 and √3/3 represent the same number. The geometric constructions explain the table rather than asking you to memorise fifteen unrelated values. Check each value against the expected range of the ratio.",
+        "hi": "45° के लिए दोनों छोटी भुजाएँ a,a वाला समद्विबाहु समकोण त्रिभुज लें। पाइथागोरस से कर्ण a√2 होगा। इसलिए sin45°=cos45°=1/√2 और tan45°=1 हैं। 30° तथा 60° के लिए 2a भुजा वाले समबाहु त्रिभुज को ऊँचाई से 2 समकोण त्रिभुजों में बाँटें। आधा आधार a और ऊँचाई a√3 है। 30° के सापेक्ष सम्मुख a, आसन्न a√3 और कर्ण 2a हैं। अतः sin30°=1/2, cos30°=√3/2, tan30°=1/√3 मिलता है। 60° के सापेक्ष छोटी भुजाओं की भूमिकाएँ बदलती हैं। इसलिए sin60°=√3/2, cos60°=1/2 और tan60°=√3 हैं। सही अशून्य अनुपात का व्युत्क्रम लेकर sec, cosec और cot निकालें। व्यंजक सरल करते समय करणी को सटीक रखें। √3 की जगह बहुत पहले 1.7 रखने से गलत बराबरी बन सकती है। 1/√3 तथा √3/3 जैसे रूप एक ही संख्या हैं। ये रचनाएँ मान सारणी का कारण समझाती हैं; 15 असंबंधित मान याद करने की आवश्यकता नहीं रहती। प्रत्येक मान को उसके अनुपात की उचित सीमा से भी जाँचें।"
+      },
+      "formula": "sin30°=1/2; cos30°=√3/2; tan45°=1; sin60°=√3/2",
+      "question": {
+        "en": "Find sec60° exactly.",
+        "hi": "sec60° का सटीक मान खोजें।"
+      },
+      "answer": {
+        "en": "sec60°=1/cos60°=2.",
+        "hi": "sec60°=1/cos60°=2।"
+      }
+    },
+    {
+      "title": {
+        "en": "Endpoint values and undefined ratios",
+        "hi": "अंतिम कोणों के मान और अपरिभाषित अनुपात"
+      },
+      "body": {
+        "en": "As an acute angle approaches 0°, the opposite leg becomes small relative to the hypotenuse, while adjacent and hypotenuse become nearly equal. The standard values are sin0°=0 and cos0°=1. At the other endpoint, sin90°=1 and cos90°=0. Use these values with the ratio definitions only when the denominator is nonzero. Thus tan0°=0 and sec0°=1, but cot0° and cosec0° are undefined. At 90°, cot90°=0 and cosec90°=1, but tan90° and sec90° are undefined. Undefined does not mean zero and is not a finite large number that should be substituted into an equation. A graph or calculator may display a very large tangent near 90° because its angle is only close to the endpoint. That approximation does not assign a real value to tan90°. When simplifying an identity with a reciprocal or quotient, record the relevant domain restriction before cancelling. Endpoint values are useful, but an ordinary right triangle with three positive sides cannot have an acute angle of exactly 0° or 90°.",
+        "hi": "न्यून कोण 0° के पास आने पर सम्मुख भुजा कर्ण की तुलना में छोटी होती जाती है, जबकि आसन्न भुजा और कर्ण लगभग बराबर होते हैं। मानक मान sin0°=0 और cos0°=1 हैं। दूसरे सिरे पर sin90°=1 और cos90°=0 हैं। इन मानों को अनुपात में रखते समय हर का अशून्य होना देखें। tan0°=0 और sec0°=1 हैं, लेकिन cot0° तथा cosec0° अपरिभाषित (Undefined) हैं। 90° पर cot90°=0 और cosec90°=1 हैं, पर tan90° तथा sec90° अपरिभाषित हैं। अपरिभाषित का अर्थ न तो 0 है और न कोई बड़ी सीमित संख्या जिसे समीकरण में रख दें। 90° के बहुत पास कैलकुलेटर या आलेख में tangent बहुत बड़ा दिख सकता है। इससे tan90° को वास्तविक संख्या का मान नहीं मिल जाता। व्युत्क्रम या भाग वाले व्यंजक को सरल करते समय हर की शर्त पहले लिखें। उसके बाद ही पद काटें। अंतिम कोणों के मान उपयोगी हैं, लेकिन 3 धनात्मक भुजाओं वाले सामान्य समकोण त्रिभुज में दूसरा न्यून कोण ठीक 0° या 90° नहीं होगा।"
+      },
+      "formula": "tan90°, sec90°, cot0°, cosec0° are undefined",
+      "question": {
+        "en": "Is tan90° equal to 0?",
+        "hi": "क्या tan90° का मान 0 है?"
+      },
+      "answer": {
+        "en": "No; tan90°=sin90°/cos90° would divide by zero, so it is undefined.",
+        "hi": "नहीं; sin90°/cos90° में 0 से भाग होता है, इसलिए यह अपरिभाषित है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Deriving the three central identities",
+        "hi": "3 मुख्य सर्वसमिकाओं की व्युत्पत्ति"
+      },
+      "body": {
+        "en": "An identity is an equality true for every angle in its stated domain, unlike an equation that may hold only for selected angles. From O²+A²=H², divide by H² to get (O/H)²+(A/H)²=1, hence sin²θ+cos²θ=1. The notation sin²θ means (sinθ)², not sin(θ²). Dividing the same Pythagoras equation by A² gives tan²θ+1=sec²θ where A is nonzero, or equivalently cosθ≠0. Dividing by O² gives 1+cot²θ=cosec²θ where sinθ≠0. These restrictions explain why not every reciprocal identity can be evaluated at both endpoints. Rearrangements such as 1−sin²θ=cos²θ are often more useful than the original form in a problem. Identities can convert an expression to one trigonometric function, but they do not permit invalid cancellation across addition. For example, a common factor of an entire numerator and denominator may be cancelled if nonzero; a single term inside a sum cannot simply disappear. Always keep the equality justified at each step.",
+        "hi": "सर्वसमिका (Identity) अपनी निर्धारित सीमा के हर कोण के लिए सही बराबरी है। इसके विपरीत कोई समीकरण केवल चुने कोणों के लिए सही हो सकता है। O²+A²=H² को H² से भाग दें। (O/H)²+(A/H)²=1, अर्थात sin²θ+cos²θ=1 मिलता है। sin²θ का अर्थ (sinθ)² है, sin(θ²) नहीं। उसी पाइथागोरस समीकरण को A² से भाग देने पर tan²θ+1=sec²θ मिलता है, जहाँ A अशून्य, अर्थात cosθ≠0 हो। O² से भाग देने पर 1+cot²θ=cosec²θ मिलता है, जहाँ sinθ≠0 चाहिए। इसी कारण हर व्युत्क्रम वाली सर्वसमिका को दोनों अंतिम कोणों पर नहीं रख सकते। कई प्रश्नों में 1−sin²θ=cos²θ जैसा बदला रूप अधिक उपयोगी है। सर्वसमिका व्यंजक को एक फलन में बदल सकती है, पर जोड़ के बीच मनमाने पद काटने की अनुमति नहीं देती। पूरे अंश और पूरे हर में अशून्य समान गुणक हो, तभी काट सकते हैं। किसी योग का अकेला पद ऐसे नहीं हटता। हर चरण में बराबरी का कारण बनाए रखना जरूरी है।"
+      },
+      "formula": "sin²θ+cos²θ=1; 1+tan²θ=sec²θ; 1+cot²θ=cosec²θ",
+      "question": {
+        "en": "Simplify 1−cos²θ.",
+        "hi": "1−cos²θ सरल करें।"
+      },
+      "answer": {
+        "en": "It equals sin²θ by the first identity.",
+        "hi": "पहली सर्वसमिका से यह sin²θ है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Recovering missing ratios from one ratio",
+        "hi": "एक अनुपात से दूसरे अनुपात निकालना"
+      },
+      "body": {
+        "en": "If a ratio of an acute angle is known, build a right triangle with convenient proportional side lengths. Suppose cosθ=5/13. Choose adjacent=5k and hypotenuse=13k for a positive scale k. Pythagoras gives opposite=√(169k²−25k²)=12k. Therefore sinθ=12/13, tanθ=12/5, secθ=13/5, cosecθ=13/12 and cotθ=5/12. The scale k cancels in every ratio; taking k=1 is merely convenient and does not claim that the original physical triangle had unit-based lengths. Positivity of the sides follows from the acute-angle setting. If you instead use the identity sin²θ=1−cos²θ, choose the positive square root for an acute angle. Do not attach an unnecessary ± sign to the final sine here. Check a proposed value before using it: sinθ=4/3 cannot describe an acute angle because opposite would exceed the hypotenuse. A known ratio alone must also be interpreted in its stated angle range; signs outside this introductory range need additional theory rather than an unsupported choice.",
+        "hi": "किसी न्यून कोण का एक अनुपात ज्ञात हो, तो सुविधाजनक आनुपातिक भुजाओं वाला समकोण त्रिभुज बनाएँ। cosθ=5/13 होने पर आसन्न=5k और कर्ण=13k लें, जहाँ k धनात्मक है। पाइथागोरस से सम्मुख=√(169k²−25k²)=12k होगा। इसलिए sinθ=12/13, tanθ=12/5, secθ=13/5, cosecθ=13/12 तथा cotθ=5/12 मिलते हैं। हर अनुपात में k कट जाता है। k=1 लेना केवल सुविधा है; इससे यह दावा नहीं होता कि मूल वस्तु की लंबाइयाँ वास्तव में 5 और 13 इकाई ही थीं। न्यून कोण होने से भुजाएँ धनात्मक हैं। सर्वसमिका sin²θ=1−cos²θ से हल करें, तो न्यून कोण के लिए धनात्मक वर्गमूल चुनें। अंतिम sine के आगे अनावश्यक ± न लिखें। किसी दिए अनुपात का उपयोग करने से पहले उसकी संभावना जाँचें। sinθ=4/3 न्यून कोण के लिए संभव नहीं, क्योंकि इससे सम्मुख भुजा कर्ण से बड़ी होगी। अनुपात को दी हुई कोण सीमा में ही समझें। इस प्रारंभिक सीमा के बाहर चिह्नों पर अतिरिक्त सिद्धांत चाहिए; बिना आधार चिह्न नहीं चुनना चाहिए।"
+      },
+      "formula": "cosθ=5/13, acute θ ⇒ O:A:H=12:5:13",
+      "question": {
+        "en": "For acute θ, sinθ=3/5. Find cosθ.",
+        "hi": "न्यून θ में sinθ=3/5 है। cosθ खोजें।"
+      },
+      "answer": {
+        "en": "cosθ=√(1−9/25)=4/5.",
+        "hi": "cosθ=√(1−9/25)=4/5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Using identities with a clear method",
+        "hi": "सर्वसमिकाओं का स्पष्ट विधि से उपयोग"
+      },
+      "body": {
+        "en": "For an exact-value question, identify standard angles first and substitute their exact ratios before combining fractions. For an identity proof, work from the more complicated side towards the simpler side, or simplify both separately to a common expression. Do not assume the result you are trying to prove and then merely repeat it. A useful first step is replacing sec, cosec, tan and cot by sine and cosine, while preserving nonzero denominators. Another useful step is recognising a difference of squares: (1−sinθ)(1+sinθ)=1−sin²θ=cos²θ. If cancellation uses cosθ, state that cosθ≠0. A numerical test at 30° may catch an error, but agreement at one angle cannot prove an identity for all allowed angles. In an app, live ratios usually round to a few decimal places, so their squared sum may display 0.999 or 1.001 if you square already rounded numbers. Exact algebra establishes the value 1; display precision explains the small numerical discrepancy. Finish by stating the simplified expression and the angle conditions under which the steps were valid.",
+        "hi": "सटीक मान वाले प्रश्न में पहले मानक कोण पहचानें और भिन्न जोड़ने से पहले उनके सही अनुपात रखें। सर्वसमिका सिद्ध करने में अधिक जटिल पक्ष को सरल पक्ष की ओर बदलें, या दोनों पक्ष अलग-अलग एक ही व्यंजक तक सरल करें। जिसे सिद्ध करना है, उसे पहले से सही मानकर केवल दोहराना प्रमाण नहीं है। कई बार sec, cosec, tan और cot को sine तथा cosine में लिखना उपयोगी पहला कदम होता है। हर के अशून्य रहने की शर्त बनाए रखें। वर्गों का अंतर भी पहचानें: (1−sinθ)(1+sinθ)=1−sin²θ=cos²θ। cosθ से पद काटें, तो cosθ≠0 लिखें। 30° पर संख्या रखकर जाँच करने से गलती पकड़ी जा सकती है, पर एक कोण पर बराबरी सभी कोणों का प्रमाण नहीं है। ऐप में अनुपात कुछ दशमलव तक पूर्णांकित दिखते हैं। उन्हीं पूर्णांकित मानों का वर्ग जोड़ने पर 0.999 या 1.001 दिख सकता है। सही बीजगणितीय मान 1 है; छोटा संख्यात्मक अंतर प्रदर्शन की सटीकता से आता है। अंत में सरल रूप और सभी प्रयुक्त कोण शर्तें लिखें।"
+      },
+      "formula": "(1−sinθ)(1+sinθ)=cos²θ",
+      "question": {
+        "en": "Does a check at θ=45° prove an identity for every allowed θ?",
+        "hi": "θ=45° पर जाँच से हर अनुमत θ की सर्वसमिका सिद्ध होती है?"
+      },
+      "answer": {
+        "en": "No; one numerical case is a check, while a general algebraic argument is needed for proof.",
+        "hi": "नहीं; 1 संख्यात्मक स्थिति केवल जाँच है। प्रमाण के लिए सामान्य बीजीय तर्क चाहिए।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "In a right triangle, opposite=8, adjacent=15 and hypotenuse=17 relative to θ. Find sinθ and tanθ.",
+        "hi": "θ के सापेक्ष सम्मुख=8, आसन्न=15, कर्ण=17 हैं। sinθ और tanθ खोजें।"
+      },
+      "steps": [
+        {
+          "en": "Use sinθ=opposite/hypotenuse.",
+          "hi": "sinθ=सम्मुख/कर्ण लें।"
+        },
+        {
+          "en": "Use tanθ=opposite/adjacent.",
+          "hi": "tanθ=सम्मुख/आसन्न लें।"
+        },
+        {
+          "en": "The ratios have no length unit.",
+          "hi": "अनुपात की लंबाई इकाई नहीं है।"
+        }
+      ],
+      "answer": {
+        "en": "sinθ=8/17, tanθ=8/15.",
+        "hi": "sinθ=8/17, tanθ=8/15।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Evaluate 2sin30°+cos60°.",
+        "hi": "2sin30°+cos60° का मान निकालें।"
+      },
+      "steps": [
+        {
+          "en": "sin30°=1/2 and cos60°=1/2.",
+          "hi": "sin30°=1/2 और cos60°=1/2।"
+        },
+        {
+          "en": "Substitute: 2×1/2+1/2=1+1/2.",
+          "hi": "रखें: 2×1/2+1/2=1+1/2।"
+        }
+      ],
+      "answer": {
+        "en": "3/2.",
+        "hi": "3/2।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "For acute θ, tanθ=3/4. Find the other five ratios.",
+        "hi": "न्यून θ के लिए tanθ=3/4 है। अन्य 5 अनुपात खोजें।"
+      },
+      "steps": [
+        {
+          "en": "Choose opposite=3k and adjacent=4k, k>0.",
+          "hi": "सम्मुख=3k और आसन्न=4k लें, k>0।"
+        },
+        {
+          "en": "Hypotenuse=√(9k²+16k²)=5k.",
+          "hi": "कर्ण=√(9k²+16k²)=5k।"
+        },
+        {
+          "en": "Use the six ratio definitions and cancel k.",
+          "hi": "6 अनुपातों की परिभाषा लें और k काटें।"
+        }
+      ],
+      "answer": {
+        "en": "sinθ=3/5, cosθ=4/5, cosecθ=5/3, secθ=5/4, cotθ=4/3.",
+        "hi": "sinθ=3/5, cosθ=4/5, cosecθ=5/3, secθ=5/4, cotθ=4/3।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Simplify (1−sin²θ)/cosθ when cosθ≠0.",
+        "hi": "cosθ≠0 में (1−sin²θ)/cosθ सरल करें।"
+      },
+      "steps": [
+        {
+          "en": "The identity gives 1−sin²θ=cos²θ.",
+          "hi": "सर्वसमिका से 1−sin²θ=cos²θ।"
+        },
+        {
+          "en": "The expression becomes cos²θ/cosθ.",
+          "hi": "व्यंजक cos²θ/cosθ बनता है।"
+        },
+        {
+          "en": "Cancel a nonzero cosθ factor.",
+          "hi": "अशून्य cosθ गुणक काटें।"
+        }
+      ],
+      "answer": {
+        "en": "cosθ, provided cosθ≠0.",
+        "hi": "cosθ, जहाँ cosθ≠0।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "For acute θ with sinθ=5/13, evaluate (secθ+tanθ)(secθ−tanθ), then justify without substituting θ.",
+        "hi": "न्यून θ में sinθ=5/13 है। (secθ+tanθ)(secθ−tanθ) का मान निकालें और θ रखे बिना कारण दें।"
+      },
+      "steps": [
+        {
+          "en": "Choose O=5k,H=13k, so A=12k.",
+          "hi": "O=5k,H=13k लें; तब A=12k।"
+        },
+        {
+          "en": "secθ=13/12, tanθ=5/12.",
+          "hi": "secθ=13/12, tanθ=5/12।"
+        },
+        {
+          "en": "Product=(18/12)(8/12)=144/144=1.",
+          "hi": "गुणनफल=(18/12)(8/12)=144/144=1।"
+        },
+        {
+          "en": "Generally, the product is sec²θ−tan²θ=1 by the identity.",
+          "hi": "सामान्यतः गुणनफल sec²θ−tan²θ=1 है।"
+        },
+        {
+          "en": "The acute-angle setting ensures cosθ is nonzero.",
+          "hi": "न्यून कोण होने से cosθ अशून्य है।"
+        }
+      ],
+      "answer": {
+        "en": "1.",
+        "hi": "1।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "For acute θ, sinθ equals:",
+        "hi": "न्यून θ के लिए sinθ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Adjacent/hypotenuse",
+            "hi": "आसन्न/कर्ण"
+          },
+          "reason": {
+            "en": "This is cosθ.",
+            "hi": "यह cosθ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Opposite/hypotenuse",
+            "hi": "सम्मुख/कर्ण"
+          },
+          "reason": {
+            "en": "This is the definition of sine.",
+            "hi": "यही sine की परिभाषा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Hypotenuse/opposite",
+            "hi": "कर्ण/सम्मुख"
+          },
+          "reason": {
+            "en": "This is cosecθ.",
+            "hi": "यह cosecθ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Opposite/adjacent",
+            "hi": "सम्मुख/आसन्न"
+          },
+          "reason": {
+            "en": "This is tanθ.",
+            "hi": "यह tanθ है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which side is always opposite the right angle?",
+        "hi": "कौन-सी भुजा हमेशा समकोण के सामने है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The chosen opposite leg",
+            "hi": "चुनी सम्मुख छोटी भुजा"
+          },
+          "reason": {
+            "en": "Opposite here refers to the selected acute angle.",
+            "hi": "यहाँ सम्मुख चुने न्यून कोण के सापेक्ष है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The adjacent leg",
+            "hi": "आसन्न छोटी भुजा"
+          },
+          "reason": {
+            "en": "This is not opposite the right angle.",
+            "hi": "यह समकोण के सामने नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Hypotenuse",
+            "hi": "कर्ण"
+          },
+          "reason": {
+            "en": "Its definition does not depend on the chosen acute angle.",
+            "hi": "इसकी परिभाषा चुने न्यून कोण पर निर्भर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "The shortest side",
+            "hi": "सबसे छोटी भुजा"
+          },
+          "reason": {
+            "en": "The hypotenuse is the longest.",
+            "hi": "कर्ण सबसे बड़ी है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "sin30° equals:",
+        "hi": "sin30° है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "√3/2",
+            "hi": "√3/2"
+          },
+          "reason": {
+            "en": "This is sin60°.",
+            "hi": "यह sin60° है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "This is sin90°.",
+            "hi": "यह sin90° है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "This is sin0°.",
+            "hi": "यह sin0° है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          "reason": {
+            "en": "The half-equilateral triangle gives opposite/hypotenuse=1/2.",
+            "hi": "आधे समबाहु त्रिभुज में सम्मुख/कर्ण=1/2 है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "tan45° equals:",
+        "hi": "tan45° है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "The two legs of an isosceles right triangle are equal.",
+            "hi": "समद्विबाहु समकोण त्रिभुज की छोटी दोनों भुजाएँ बराबर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/√2",
+            "hi": "1/√2"
+          },
+          "reason": {
+            "en": "This is sin45° or cos45°.",
+            "hi": "यह sin45° या cos45° है।"
+          }
+        },
+        {
+          "text": {
+            "en": "√3",
+            "hi": "√3"
+          },
+          "reason": {
+            "en": "This is tan60°.",
+            "hi": "यह tan60° है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "This is tan0°.",
+            "hi": "यह tan0° है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "tan90° is:",
+        "hi": "tan90° है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Zero is not the result of division by zero.",
+            "hi": "शून्य से भाग का परिणाम 0 नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित"
+          },
+          "reason": {
+            "en": "sin90°/cos90° has denominator 0.",
+            "hi": "sin90°/cos90° का हर 0 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "tan45° equals 1.",
+            "hi": "tan45° का मान 1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A finite very large number",
+            "hi": "कोई बहुत बड़ी सीमित संख्या"
+          },
+          "reason": {
+            "en": "Near-endpoint approximations do not define tan90°.",
+            "hi": "सिरे के पास का अनुमान tan90° परिभाषित नहीं करता।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The reciprocal of cosθ, where defined, is:",
+        "hi": "जहाँ परिभाषित हो, cosθ का व्युत्क्रम है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "cosecθ",
+            "hi": "cosecθ"
+          },
+          "reason": {
+            "en": "Cosecant is the reciprocal of sine.",
+            "hi": "cosecant, sine का व्युत्क्रम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cotθ",
+            "hi": "cotθ"
+          },
+          "reason": {
+            "en": "Cotangent is adjacent/opposite.",
+            "hi": "cotangent आसन्न/सम्मुख है।"
+          }
+        },
+        {
+          "text": {
+            "en": "secθ",
+            "hi": "secθ"
+          },
+          "reason": {
+            "en": "secθ=1/cosθ for nonzero cosθ.",
+            "hi": "अशून्य cosθ में secθ=1/cosθ।"
+          }
+        },
+        {
+          "text": {
+            "en": "sinθ",
+            "hi": "sinθ"
+          },
+          "reason": {
+            "en": "Sine is not generally the reciprocal of cosine.",
+            "hi": "sine सामान्यतः cosine का व्युत्क्रम नहीं है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which equality is an identity in its domain?",
+        "hi": "कौन-सी बराबरी अपनी सीमा में सर्वसमिका है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "sinθ+cosθ=1",
+            "hi": "sinθ+cosθ=1"
+          },
+          "reason": {
+            "en": "At 45° the sum is √2.",
+            "hi": "45° पर योग √2 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sec²θ+tan²θ=1",
+            "hi": "sec²θ+tan²θ=1"
+          },
+          "reason": {
+            "en": "The correct relation uses subtraction.",
+            "hi": "सही संबंध में घटाव है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sin²θ−cos²θ=1",
+            "hi": "sin²θ−cos²θ=1"
+          },
+          "reason": {
+            "en": "This is not true for every angle.",
+            "hi": "यह हर कोण पर सही नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sin²θ+cos²θ=1",
+            "hi": "sin²θ+cos²θ=1"
+          },
+          "reason": {
+            "en": "It follows by dividing Pythagoras by H².",
+            "hi": "यह पाइथागोरस को H² से भाग देने से मिलता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "For acute θ, cosθ=12/13 implies sinθ is:",
+        "hi": "न्यून θ में cosθ=12/13 हो, तो sinθ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5/13",
+            "hi": "5/13"
+          },
+          "reason": {
+            "en": "Positive √(1−144/169)=5/13.",
+            "hi": "धनात्मक √(1−144/169)=5/13।"
+          }
+        },
+        {
+          "text": {
+            "en": "−5/13",
+            "hi": "−5/13"
+          },
+          "reason": {
+            "en": "Sine is positive for an acute angle.",
+            "hi": "न्यून कोण का sine धनात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "13/5",
+            "hi": "13/5"
+          },
+          "reason": {
+            "en": "This is the reciprocal of the required sine.",
+            "hi": "यह आवश्यक sine का व्युत्क्रम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/13",
+            "hi": "1/13"
+          },
+          "reason": {
+            "en": "The remaining squared numerator is 25, not 1.",
+            "hi": "शेष वर्ग अंश 25 है, 1 नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Uniformly doubling all triangle sides changes sinθ to:",
+        "hi": "त्रिभुज की सभी भुजाएँ दुगुनी करने से sinθ:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Twice its value",
+            "hi": "दुगुना होगा"
+          },
+          "reason": {
+            "en": "The denominator also doubles.",
+            "hi": "हर भी दुगुना होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The same value",
+            "hi": "वही रहेगा"
+          },
+          "reason": {
+            "en": "Both numerator and denominator scale equally.",
+            "hi": "अंश और हर समान गुणक से बदलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Half its value",
+            "hi": "आधा होगा"
+          },
+          "reason": {
+            "en": "Both lengths, not only the denominator, changed.",
+            "hi": "केवल हर नहीं, दोनों लंबाइयाँ बदली हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित होगा"
+          },
+          "reason": {
+            "en": "Positive lengths remain positive.",
+            "hi": "धनात्मक लंबाइयाँ धनात्मक रहती हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The expression sin²θ means:",
+        "hi": "sin²θ का अर्थ है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "sin(θ²)",
+            "hi": "sin(θ²)"
+          },
+          "reason": {
+            "en": "That changes the angle before taking sine.",
+            "hi": "इसमें sine से पहले कोण बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2sinθ",
+            "hi": "2sinθ"
+          },
+          "reason": {
+            "en": "Doubling and squaring differ.",
+            "hi": "दुगुना और वर्ग अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "(sinθ)²",
+            "hi": "(sinθ)²"
+          },
+          "reason": {
+            "en": "The sine value is squared.",
+            "hi": "sine के मान का वर्ग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "sin2θ",
+            "hi": "sin2θ"
+          },
+          "reason": {
+            "en": "That is the sine of a doubled angle.",
+            "hi": "वह दुगुने कोण का sine है।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define sinθ, cosθ and tanθ in a right triangle.",
+        "hi": "समकोण त्रिभुज में sinθ, cosθ और tanθ परिभाषित करें।"
+      },
+      "answer": {
+        "en": "Relative to θ: sinθ=O/H, cosθ=A/H, tanθ=O/A.",
+        "hi": "θ के सापेक्ष: sinθ=O/H, cosθ=A/H, tanθ=O/A।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why ratios stay constant when a right triangle is enlarged uniformly.",
+        "hi": "समकोण त्रिभुज के समान अनुपात में विस्तार से अनुपात स्थिर क्यों हैं?"
+      },
+      "answer": {
+        "en": "AA similarity makes corresponding sides proportional; the common scale cancels in each ratio.",
+        "hi": "AA समरूपता से संगत भुजाएँ आनुपातिक हैं; हर अनुपात में समान पैमाना कटता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Evaluate sec60°+tan45°.",
+        "hi": "sec60°+tan45° का मान खोजें।"
+      },
+      "answer": {
+        "en": "sec60°=2 and tan45°=1, giving 3.",
+        "hi": "sec60°=2 और tan45°=1 से 3 मिलता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Derive sin²θ+cos²θ=1.",
+        "hi": "sin²θ+cos²θ=1 की व्युत्पत्ति दें।"
+      },
+      "answer": {
+        "en": "Divide O²+A²=H² by H² and identify the two ratios.",
+        "hi": "O²+A²=H² को H² से भाग दें और दोनों अनुपात पहचानें।"
+      }
+    },
+    {
+      "question": {
+        "en": "For acute θ, sinθ=8/17. Find cosθ.",
+        "hi": "न्यून θ में sinθ=8/17 है। cosθ खोजें।"
+      },
+      "answer": {
+        "en": "cosθ=√(1−64/289)=√225/17=15/17, using the positive root.",
+        "hi": "धनात्मक मूल लेकर cosθ=√(1−64/289)=√225/17=15/17।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is cosec0° undefined but cosec90° defined?",
+        "hi": "cosec0° अपरिभाषित और cosec90° परिभाषित क्यों है?"
+      },
+      "answer": {
+        "en": "cosecθ=1/sinθ. sin0°=0 makes division undefined; sin90°=1 gives cosec90°=1.",
+        "hi": "cosecθ=1/sinθ। sin0°=0 से भाग अपरिभाषित है; sin90°=1 से cosec90°=1 मिलता है।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Choose the reference angle before naming sides. Do not confuse cos with cosec, sin²θ with sin(θ²), or undefined endpoint ratios with zero. Keep identity denominators nonzero.",
+    "hi": "भुजा पहचान से पहले संदर्भ कोण चुनें। cos को cosec, sin²θ को sin(θ²), या अपरिभाषित अनुपात को 0 न मानें। सर्वसमिका में हर अशून्य रखें।"
+  },
+  "revision": [
+    {
+      "en": "Opposite and adjacent depend on the chosen acute angle; hypotenuse does not.",
+      "hi": "सम्मुख और आसन्न चुने न्यून कोण पर निर्भर हैं; कर्ण नहीं।"
+    },
+    {
+      "en": "Six ratios are dimensionless and linked by reciprocals and quotients.",
+      "hi": "6 अनुपात इकाईरहित हैं और व्युत्क्रम तथा भाग से जुड़े हैं।"
+    },
+    {
+      "en": "Use exact standard-angle values before decimal approximations.",
+      "hi": "दशमलव अनुमान से पहले मानक कोणों के सटीक मान लें।"
+    },
+    {
+      "en": "sin²θ+cos²θ=1 gives the other two identities with denominator restrictions.",
+      "hi": "sin²θ+cos²θ=1 से हर की शर्तों सहित दूसरी 2 सर्वसमिकाएँ मिलती हैं।"
+    },
+    {
+      "en": "A numerical check is useful evidence; a general identity requires valid algebra.",
+      "hi": "संख्यात्मक जाँच सहायक है; सामान्य सर्वसमिका के लिए सही बीजगणित चाहिए।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Right triangle + reference angle → similar triangles → six ratios → exact standard values → reciprocal/domain checks → identities → algebraic simplification",
+    "hi": "समकोण त्रिभुज + संदर्भ कोण → समरूप त्रिभुज → 6 अनुपात → मानक सटीक मान → व्युत्क्रम/सीमा जाँच → सर्वसमिकाएँ → बीजीय सरलीकरण"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, Chapter 8, Reprint 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh108.pdf"
+    },
+    {
+      "title": "UP Board Class 10 Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}

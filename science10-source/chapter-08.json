@@ -1,0 +1,1492 @@
+{
+  "id": "heredity",
+  "title": {
+    "en": "Heredity",
+    "hi": "आनुवंशिकता"
+  },
+  "unit": {
+    "en": "Biology",
+    "hi": "जीव विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "ten-monohybrid",
+      "title": {
+        "en": "Monohybrid cross",
+        "hi": "एकसंकर क्रॉस"
+      },
+      "kind": "ten-heredity",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Offspring sample",
+            "hi": "संतति का नमूना"
+          },
+          "min": 0,
+          "max": 3,
+          "step": 1,
+          "initial": 0,
+          "unit": "cell"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Read a Tt × Tt Punnett square as possible combinations.",
+        "hi": "Tt × Tt पनेट वर्ग को संभावित संयोजनों की तरह पढ़िए।"
+      },
+      "observe": {
+        "en": "Select TT, Tt, Tt and tt cells; compare genotype with visible height.",
+        "hi": "TT, Tt, Tt तथा tt खाने चुनिए; जीनप्ररूप को दृश्य ऊंचाई से मिलाइए।"
+      },
+      "modelNote": {
+        "en": "Four cells show equally likely possibilities, not four guaranteed real offspring; height is a simplified complete-dominance trait.",
+        "hi": "4 खाने समान संभावित परिणाम हैं, 4 निश्चित वास्तविक संतति नहीं; ऊंचाई सरल पूर्ण प्रभाविता वाला लक्षण है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Each Tt parent contributes T or t; pairing gives 1:2:1 genotypes and 3:1 phenotypes on average.",
+          "hi": "हर Tt जनक T या t देता है; मिलने से औसतन 1:2:1 जीनप्ररूप तथा 3:1 लक्षणप्ररूप मिलते हैं।"
+        }
+      },
+      "realLife": {
+        "en": "Plant breeders use inherited patterns, while actual counts fluctuate in samples.",
+        "hi": "पादप प्रजनक वंशागत नमूने लेते हैं, जबकि वास्तविक गिनती नमूनों में बदलती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which cell is short in this model?",
+          "hi": "इस मॉडल में कौन सा खाना बौना है?"
+        },
+        "options": [
+          {
+            "en": "TT",
+            "hi": "TT"
+          },
+          {
+            "en": "Tt",
+            "hi": "Tt"
+          },
+          {
+            "en": "tt",
+            "hi": "tt"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Only tt lacks dominant T in the complete-dominance model.",
+          "hi": "पूर्ण प्रभाविता मॉडल में केवल tt में प्रभावी T नहीं है।"
+        }
+      },
+      "legend": [
+        {
+          "color": "#f2c86b",
+          "label": {
+            "en": "Highlighted structure or current stage",
+            "hi": "प्रकाशित संरचना या वर्तमान चरण"
+          }
+        },
+        {
+          "color": "#63c9ba",
+          "label": {
+            "en": "Pathway or supporting structure",
+            "hi": "मार्ग या सहायक संरचना"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-monohybrid-start",
+          "label": {
+            "en": "Set the control to 0 cell.",
+            "hi": "नियंत्रक को 0 cell पर लाइए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-monohybrid-end",
+          "label": {
+            "en": "Explore 3 cell and compare.",
+            "hi": "3 cell तक जाकर तुलना कीजिए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 3
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2
+          },
+          "text": {
+            "en": "These selected cells contain at least one T and show the tall phenotype.",
+            "hi": "इन चुने खानों में कम से कम एक T है तथा लंबा लक्षण दिखता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 3
+          },
+          "text": {
+            "en": "Compare the final tt cell with the T-bearing cells; it shows the recessive phenotype.",
+            "hi": "अंतिम tt खाने को T वाले खानों से मिलाइए; इसमें अप्रभावी लक्षण दिखता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-independent",
+      "title": {
+        "en": "Independent assortment",
+        "hi": "स्वतंत्र अपव्यूहन"
+      },
+      "kind": "ten-heredity",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Gamete combination",
+            "hi": "युग्मक संयोजन"
+          },
+          "min": 0,
+          "max": 15,
+          "step": 1,
+          "initial": 0,
+          "unit": "cell"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 1,
+      "goal": {
+        "en": "Combine two independently assorting gene pairs.",
+        "hi": "स्वतंत्र बंटने वाली 2 जीन जोड़ियां मिलाइए।"
+      },
+      "observe": {
+        "en": "Read each row and column gamete, then combine one allele for each gene from each parent.",
+        "hi": "पंक्ति और स्तंभ का युग्मक पढ़कर प्रत्येक जनक से हर जीन का एक विकल्प मिलाइए।"
+      },
+      "modelNote": {
+        "en": "The 16-cell model assumes independent assortment and complete dominance; not all gene pairs obey these assumptions.",
+        "hi": "16 खाने का मॉडल स्वतंत्र अपव्यूहन तथा पूर्ण प्रभाविता मानता है; सभी जीन जोड़ियां ये मान्यताएं नहीं मानतीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "RY, Ry, rY and ry gametes combine into 16 possible cells; grouping both phenotypes gives 9:3:3:1.",
+          "hi": "RY, Ry, rY और ry युग्मक 16 संभावित खाने देते हैं; दोनों लक्षणों से समूह बनाकर 9:3:3:1 मिलता है।"
+        }
+      },
+      "realLife": {
+        "en": "Two traits can appear in combinations different from the original parents in suitable crosses.",
+        "hi": "उपयुक्त संकरण में 2 लक्षण मूल जनकों से अलग संयोजन में दिख सकते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Which is a valid gamete of RrYy here?",
+          "hi": "यहां RrYy का सही युग्मक कौन सा है?"
+        },
+        "options": [
+          {
+            "en": "Ry",
+            "hi": "Ry"
+          },
+          {
+            "en": "RrYy",
+            "hi": "RrYy"
+          },
+          {
+            "en": "RRyy",
+            "hi": "RRyy"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A gamete contains one allele from each pair, so Ry is valid.",
+          "hi": "युग्मक में हर जोड़ी से एक विकल्प है, इसलिए Ry सही है।"
+        }
+      },
+      "legend": [
+        {
+          "color": "#f2c86b",
+          "label": {
+            "en": "Highlighted structure or current stage",
+            "hi": "प्रकाशित संरचना या वर्तमान चरण"
+          }
+        },
+        {
+          "color": "#63c9ba",
+          "label": {
+            "en": "Pathway or supporting structure",
+            "hi": "मार्ग या सहायक संरचना"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-independent-start",
+          "label": {
+            "en": "Set the control to 0 cell.",
+            "hi": "नियंत्रक को 0 cell पर लाइए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-independent-end",
+          "label": {
+            "en": "Explore 15 cell and compare.",
+            "hi": "15 cell तक जाकर तुलना कीजिए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 15
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 8
+          },
+          "text": {
+            "en": "Compare the earlier grid rows and identify both trait combinations.",
+            "hi": "आरंभिक पंक्तियों में दोनों लक्षण संयोजन पहचानिए।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 9
+          },
+          "text": {
+            "en": "Later cells include recessive combinations; count all 16 to group phenotypes.",
+            "hi": "आगे अप्रभावी संयोजन भी हैं; समूह बनाने के लिए सभी 16 खाने गिनिए।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-sex",
+      "title": {
+        "en": "Chromosomal sex determination",
+        "hi": "गुणसूत्रीय लिंग निर्धारण"
+      },
+      "kind": "ten-heredity",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Paternal gamete",
+            "hi": "पिता का युग्मक"
+          },
+          "min": 0,
+          "max": 1,
+          "step": 1,
+          "initial": 0,
+          "unit": "index"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Understand the usual XX/XY contributions without blame.",
+        "hi": "दोष दिए बिना सामान्य XX/XY योगदान समझिए।"
+      },
+      "observe": {
+        "en": "Keep the egg contribution X and compare sperm X versus Y.",
+        "hi": "अंड कोशिका का X रखकर शुक्राणु X तथा Y की तुलना कीजिए।"
+      },
+      "modelNote": {
+        "en": "This is a simplified typical chromosome model, not a way to choose a child’s sex or a complete account of natural sex-development variation.",
+        "hi": "यह सामान्य गुणसूत्र का सरल मॉडल है, बच्चे का लिंग चुनने का तरीका या प्राकृतिक लैंगिक विकास विविधता का पूरा विवरण नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The fertilising sperm contributes X or Y by biological chance; the mother does not choose that contribution.",
+          "hi": "निषेचन वाला शुक्राणु जैविक संयोग से X या Y देता है; मां उसका योगदान नहीं चुनती।"
+        }
+      },
+      "realLife": {
+        "en": "Scientific understanding rejects blaming mothers and supports equal respect for every child.",
+        "hi": "वैज्ञानिक समझ मां को दोष देना अस्वीकार करती है और हर बच्चे को समान सम्मान देती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Who consciously chooses the fertilising sperm chromosome in this model?",
+          "hi": "इस मॉडल में निषेचन वाले शुक्राणु का गुणसूत्र सचेत होकर कौन चुनता है?"
+        },
+        "options": [
+          {
+            "en": "Mother",
+            "hi": "मां"
+          },
+          {
+            "en": "Neither parent",
+            "hi": "कोई जनक नहीं"
+          },
+          {
+            "en": "Father by wishing",
+            "hi": "इच्छा से पिता"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Neither parent consciously controls which sperm fertilises the egg.",
+          "hi": "कौन सा शुक्राणु निषेचन करे, यह कोई जनक सचेत होकर नियंत्रित नहीं करता।"
+        }
+      },
+      "legend": [
+        {
+          "color": "#f2c86b",
+          "label": {
+            "en": "Highlighted structure or current stage",
+            "hi": "प्रकाशित संरचना या वर्तमान चरण"
+          }
+        },
+        {
+          "color": "#63c9ba",
+          "label": {
+            "en": "Pathway or supporting structure",
+            "hi": "मार्ग या सहायक संरचना"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-sex-start",
+          "label": {
+            "en": "Set the control to 0 index.",
+            "hi": "नियंत्रक को 0 index पर लाइए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-sex-end",
+          "label": {
+            "en": "Explore 1 index and compare.",
+            "hi": "1 index तक जाकर तुलना कीजिए।"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 1
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          },
+          "text": {
+            "en": "X from the egg and X from the sperm form XX in the usual model.",
+            "hi": "सामान्य मॉडल में अंड कोशिका X और शुक्राणु X मिलकर XX बनाते हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 1
+          },
+          "text": {
+            "en": "X from the egg and Y from the sperm form XY in the usual model.",
+            "hi": "सामान्य मॉडल में अंड कोशिका X और शुक्राणु Y मिलकर XY बनाते हैं।"
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Mendel and a one-trait cross",
+        "hi": "मेंडल तथा एक लक्षण का संकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Heredity is the transmission of biological traits across generations. Mendel studied pea plants with clear contrasting features and controlled pollination, allowing him to compare parental and offspring patterns. For the height example, represent an allele associated with tallness by T and the contrasting allele by t. A true-breeding tall parent TT crossed with a true-breeding short parent tt produces F1 plants with genotype Tt. Under the complete-dominance model these plants are tall, even though each carries the recessive allele. The recessive contribution has not disappeared or been diluted out of existence.",
+          "hi": "आनुवंशिकता (Heredity) पीढ़ियों में जैविक लक्षणों का संचार है। मेंडल ने मटर के स्पष्ट विपरीत लक्षण तथा नियंत्रित परागण का उपयोग किया, जिससे जनक और संतति के नमूने तुलना योग्य बने। ऊंचाई के उदाहरण में लंबेपन से जुड़े विकल्पी जीन को T और विपरीत विकल्प को t लिखते हैं। शुद्ध लंबे TT और शुद्ध बौने tt जनक के संकरण से F1 में Tt पौधे बनते हैं। पूर्ण प्रभाविता के इस मॉडल में वे लंबे दिखते हैं, फिर भी हर पौधे में अप्रभावी विकल्प मौजूद है। अप्रभावी योगदान गायब या पतला होकर समाप्त नहीं होता।"
+        },
+        {
+          "en": "When two F1 plants Tt are crossed, each can contribute T or t. The four equally likely combinations are TT, Tt, tT and tt; tT and Tt describe the same genotype. Thus genotype classes occur in the expected ratio 1:2:1, while visible height classes occur in the expected ratio 3:1. These ratios describe probabilities, not a guarantee about any particular four plants.",
+          "hi": "दो Tt F1 पौधों के संकरण में प्रत्येक T या t दे सकता है। 4 समान संभावित संयोजन TT, Tt, tT और tt हैं। tT तथा Tt एक ही जीनप्ररूप हैं। इसलिए जीनप्ररूप का अपेक्षित अनुपात 1:2:1 तथा दिखाई देने वाली ऊंचाई का अनुपात 3:1 है। ये प्रायिकताओं के अनुपात हैं; किसी खास 4 पौधों में यही गिनती होना जरूरी नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Dominant means expressed in this heterozygote model; it does not mean stronger, better, more common or morally superior.",
+          "hi": "प्रभावी का अर्थ इस विषमयुग्मजी मॉडल में व्यक्त होना है; अधिक शक्तिशाली, अच्छा, सामान्य या श्रेष्ठ होना नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does a short plant reappear in F2?",
+          "hi": "F2 में बौना पौधा फिर क्यों मिलता है?"
+        },
+        "answer": {
+          "en": "The recessive allele remains in F1 plants; an offspring receiving t from both gametes has genotype tt and expresses shortness.",
+          "hi": "अप्रभावी विकल्प F1 में बना रहता है। दोनों युग्मकों से t पाने वाली tt संतति में बौनापन व्यक्त होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Two traits and independent assortment",
+        "hi": "दो लक्षण तथा स्वतंत्र अपव्यूहन"
+      },
+      "paragraphs": [
+        {
+          "en": "Consider seed shape R/r and seed colour Y/y in a simplified cross with complete dominance. An RrYy parent can produce RY, Ry, rY and ry gametes if the two gene pairs assort independently. A gamete receives one allele from each pair, not all four alleles. Crossing two such parents gives a 4 by 4 Punnett grid with 16 equally likely combinations under the stated assumptions. Count phenotype groups by checking both traits in every cell, rather than only the first capital letter.",
+          "hi": "सरल संकरण में बीज आकार के लिए R/r और रंग के लिए Y/y मानिए, जहां पूर्ण प्रभाविता है। यदि दोनों जीन जोड़ियां स्वतंत्र अपव्यूहन करती हैं, तो RrYy जनक से RY, Ry, rY तथा ry युग्मक बन सकते हैं। एक युग्मक हर जोड़ी से एक विकल्प लेता है, चारों नहीं। ऐसे 2 जनकों के संकरण से 4 गुणा 4 का पनेट वर्ग बनता है। दी गई मान्यताओं में 16 संयोजन समान संभावित हैं। हर खाने के दोनों लक्षण देखकर दृश्य समूह गिनिए; केवल पहला बड़ा अक्षर देखकर नहीं।"
+        },
+        {
+          "en": "The expected phenotype ratio is 9 round-yellow : 3 round-green : 3 wrinkled-yellow : 1 wrinkled-green when R and Y are dominant in this example. New combinations show that the two traits need not remain locked together exactly as in the original parents. Independent assortment is a model with conditions, not a promise that every pair of genes in every organism is independent. Genes linked closely on the same chromosome can behave differently beyond this introductory treatment.",
+          "hi": "इस उदाहरण में R तथा Y प्रभावी हों तो अपेक्षित दृश्य अनुपात 9 गोल पीले : 3 गोल हरे : 3 झुर्रीदार पीले : 1 झुर्रीदार हरा है। नए संयोजन बताते हैं कि 2 लक्षण हमेशा मूल जनकों की तरह साथ बंधे नहीं रहते। स्वतंत्र अपव्यूहन शर्तों वाला मॉडल है, हर जीव के हर जीन जोड़े के स्वतंत्र होने की गारंटी नहीं। एक गुणसूत्र पर पास स्थित सहलग्न जीन इस परिचयात्मक उदाहरण से अलग व्यवहार कर सकते हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Before using 9:3:3:1, state the parent genotypes, independent assortment and complete-dominance assumptions.",
+          "hi": "9:3:3:1 लगाने से पहले जनकों के जीनप्ररूप, स्वतंत्र अपव्यूहन और पूर्ण प्रभाविता की मान्यताएं बताइए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many gamete types does RrYy produce in the independent model?",
+          "hi": "स्वतंत्र मॉडल में RrYy कितने युग्मक प्रकार देता है?"
+        },
+        "answer": {
+          "en": "Four: RY, Ry, rY and ry, each containing one allele from each of the two pairs.",
+          "hi": "4: RY, Ry, rY और ry। प्रत्येक में दोनों जोड़ियों से एक एक विकल्प होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Chromosomes and human sex determination",
+        "hi": "गुणसूत्र तथा मानव लिंग निर्धारण"
+      },
+      "paragraphs": [
+        {
+          "en": "In the usual human XX/XY model, an egg contributes an X chromosome, while a sperm contributes either X or Y. Fertilisation by an X-bearing sperm gives an XX combination; fertilisation by a Y-bearing sperm gives XY. The alternative sperm contribution explains the two outcomes in this introductory model. The mother does not determine which sperm fertilises the egg, and neither parent consciously chooses the chromosome carried by a particular fertilising sperm. Blaming a mother for a child’s sex is scientifically wrong and discriminatory.",
+          "hi": "मानव के सामान्य XX/XY मॉडल में अंड कोशिका X गुणसूत्र देती है, जबकि शुक्राणु X या Y दे सकता है। X वाले शुक्राणु से निषेचन पर XX और Y वाले से XY संयोजन बनता है। इस परिचयात्मक मॉडल में शुक्राणु का वैकल्पिक योगदान 2 परिणाम समझाता है। मां यह तय नहीं करती कि कौन सा शुक्राणु अंड कोशिका को निषेचित करेगा। किसी खास निषेचन करने वाले शुक्राणु का गुणसूत्र कोई जनक सचेत होकर नहीं चुनता। बच्चे के लिंग के लिए मां को दोष देना वैज्ञानिक रूप से गलत तथा भेदभावपूर्ण है।"
+        },
+        {
+          "en": "The two outcomes are treated as approximately equally likely in the elementary model, not as an exact sequence that must alternate between births. A previous child’s sex does not force the opposite outcome next time. The model deliberately simplifies the biology; natural variations in chromosomes and sex development exist. It should explain inheritance without reducing a person’s identity, dignity or value to one chromosome label. No slider setting represents an ability to select a real child’s sex.",
+          "hi": "प्राथमिक मॉडल में दोनों परिणाम लगभग समान संभावित माने जाते हैं; इसका अर्थ जन्मों में बारी बारी से होना नहीं है। पहले बच्चे का लिंग अगले परिणाम को विपरीत होने के लिए बाध्य नहीं करता। मॉडल जीव विज्ञान को सरल करता है; गुणसूत्र तथा लैंगिक विकास में प्राकृतिक विविधताएं भी होती हैं। इसका उद्देश्य वंशागति समझाना है, व्यक्ति की पहचान, गरिमा या मूल्य को एक गुणसूत्र नाम में सीमित करना नहीं। नियंत्रक की दशा वास्तविक बच्चे का लिंग चुनने की क्षमता नहीं दर्शाती।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use the model to reject blame and sex discrimination, not to suggest selection methods or rank children by sex.",
+          "hi": "मॉडल से दोषारोपण और लैंगिक भेदभाव की गलती पहचानिए; चयन विधियां सुझाना या बच्चों का मूल्य लिंग से तय करना इसका उद्देश्य नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is wrong with saying that a mother “caused” the birth of a girl?",
+          "hi": "मां को लड़की के जन्म का दोष देने में क्या गलती है?"
+        },
+        "answer": {
+          "en": "In the usual model every egg carries X; the fertilising sperm contributes X or Y by biological chance, not the mother’s choice.",
+          "hi": "सामान्य मॉडल में हर अंड कोशिका X देती है। निषेचन करने वाला शुक्राणु जैविक संयोग से X या Y देता है, मां की पसंद से नहीं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Genes, DNA and expression",
+        "hi": "जीन, डीएनए तथा लक्षण अभिव्यक्ति"
+      },
+      "paragraphs": [
+        {
+          "en": "Chromosomes contain DNA, and a gene is a DNA segment with information contributing to a functional product or biological process. At school level, connect genes with the proteins they help specify. Proteins act as enzymes and structural components, so a change in genetic information can affect a pathway and thereby an observable trait. For example, a plant’s height can depend on an enzyme involved in growth-related chemical activity. This is a chain from information to cell function to visible outcome, not a tiny ready-made character hidden inside a chromosome.",
+          "hi": "गुणसूत्रों में डीएनए होता है। जीन डीएनए का ऐसा खंड है जिसकी सूचना किसी कार्यकारी उत्पाद या जैविक प्रक्रिया में योगदान देती है। विद्यालय स्तर पर जीन को उनके द्वारा निर्धारित प्रोटीन से जोड़िए। प्रोटीन एंजाइम तथा संरचनात्मक घटक बनते हैं, इसलिए आनुवंशिक सूचना का अंतर किसी मार्ग और फिर दिखाई देने वाले लक्षण को प्रभावित कर सकता है। उदाहरण के लिए पौधे की ऊंचाई वृद्धि संबंधी रासायनिक क्रिया के एंजाइम पर निर्भर हो सकती है। यह सूचना → कोशिकीय कार्य → दृश्य परिणाम का क्रम है; गुणसूत्र में पहले से तैयार छोटा लक्षण रखा नहीं होता।"
+        },
+        {
+          "en": "Alleles are alternative forms associated with the same gene location. Genotype describes the genetic combination being considered, such as TT or Tt; phenotype describes the observed feature, such as tallness under specified conditions. Two tall plants need not share the same genotype. Also, not all real traits follow one-gene complete dominance; the pea model is useful because it isolates a clear pattern.",
+          "hi": "विकल्पी जीन (Alleles) एक ही जीन स्थान के वैकल्पिक रूप हैं। जीनप्ररूप (Genotype) संबंधित आनुवंशिक संयोजन, जैसे TT या Tt, बताता है। लक्षणप्ररूप (Phenotype) निश्चित दशाओं में दिखने वाला लक्षण, जैसे लंबापन, है। 2 लंबे पौधों का जीनप्ररूप समान होना जरूरी नहीं। वास्तविक सभी लक्षण एक जीन की पूर्ण प्रभाविता नहीं दिखाते; मटर मॉडल उपयोगी है क्योंकि उसमें स्पष्ट नमूना अलग करके देखा जा सकता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Capital and small letters are a notation convention; writing a capital letter does not physically make an allele dominant.",
+          "hi": "बड़ा और छोटा अक्षर लिखने की परंपरा है; बड़ा अक्षर लिख देने से कोई विकल्प वास्तव में प्रभावी नहीं बन जाता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can TT and Tt have the same phenotype?",
+          "hi": "क्या TT और Tt का लक्षणप्ररूप समान हो सकता है?"
+        },
+        "answer": {
+          "en": "Yes, under complete dominance both can be tall, although their allele combinations and possible gametes differ.",
+          "hi": "हां, पूर्ण प्रभाविता में दोनों लंबे हो सकते हैं, हालांकि उनके विकल्पी संयोजन और संभावित युग्मक अलग हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Paired inheritance and segregation",
+        "hi": "जोड़ी में वंशागति तथा पृथक्करण"
+      },
+      "paragraphs": [
+        {
+          "en": "An individual receives one member of each relevant chromosome pair from each parent. During gamete formation the paired contributions are separated, so a gamete carries one allele at a gene position rather than the full pair. For Tt, the simple model gives T-bearing and t-bearing gametes in equal proportions. Fertilisation restores a pair by combining contributions from two gametes. This explains why inheritance does not work by blending both parental traits into an irreversible average. A recessive allele can remain unexpressed yet be transmitted.",
+          "hi": "जीव को संबंधित गुणसूत्र जोड़ी का एक सदस्य प्रत्येक जनक से मिलता है। युग्मक निर्माण में जोड़ी के योगदान अलग होते हैं, इसलिए युग्मक किसी जीन स्थान पर पूरा जोड़ा नहीं, एक विकल्प रखता है। Tt के सरल मॉडल में T वाले और t वाले युग्मक समान अनुपात में बनते हैं। निषेचन में 2 युग्मकों के योगदान से जोड़ी वापस बनती है। इससे समझ आता है कि वंशागति दोनों लक्षणों को हमेशा के लिए घोलकर औसत बना देना नहीं है। अप्रभावी विकल्प बिना व्यक्त हुए भी अगली पीढ़ी तक जा सकता है।"
+        },
+        {
+          "en": "To construct a Punnett square, first write parent genotypes, then list possible gametes, then combine one from each parent in each cell. Only after forming genotypes should you interpret phenotypes using the stated dominance rule. Reversing this order encourages guessing from appearance. A TT parent contributes only T at this gene position, while a tt parent contributes only t; neither produces a Tt gamete in this one-gene example.",
+          "hi": "पनेट वर्ग बनाते समय पहले जनकों के जीनप्ररूप लिखिए, फिर संभावित युग्मक, और हर खाने में प्रत्येक जनक का एक योगदान मिलाइए। जीनप्ररूप बनने के बाद ही दी गई प्रभाविता से लक्षणप्ररूप निकालिए। उलटे क्रम में करने पर केवल रूप देखकर अनुमान लगाने की गलती होती है। TT जनक इस जीन स्थान पर केवल T और tt केवल t देता है। इस एक जीन उदाहरण में कोई भी Tt युग्मक नहीं बनाता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Keep a gamete label separate from an offspring genotype. A gamete has one allele here; an offspring has a pair.",
+          "hi": "युग्मक के नाम को संतति जीनप्ररूप से अलग रखिए। यहां युग्मक में एक विकल्प और संतति में जोड़ी होती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What gametes can a TT parent produce at the height gene?",
+          "hi": "ऊंचाई जीन के लिए TT जनक कौन से युग्मक देता है?"
+        },
+        "answer": {
+          "en": "Only T-bearing gametes at that gene position, because both copies carry T; this does not imply every other gene is identical.",
+          "hi": "उस जीन स्थान पर केवल T वाले युग्मक, क्योंकि दोनों प्रतियों में T है। इससे बाकी सभी जीनों का समान होना नहीं निकलता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Inherited traits, environment and acquired change",
+        "hi": "वंशागत लक्षण, पर्यावरण तथा अर्जित परिवर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "A phenotype develops through genetic contributions operating in an environment. Adequate water, light and nutrients can affect the height of a plant with a given genotype. Observing one short plant therefore does not automatically prove genotype tt unless the question supplies the controlled Mendelian assumptions. Separating genetic and environmental influences requires fair comparison. Many human features are influenced by several genes and conditions, so simple classroom letter models should not be applied to every visible difference or used to stereotype groups.",
+          "hi": "लक्षणप्ररूप पर्यावरण में काम करते आनुवंशिक योगदान से विकसित होता है। एक ही जीनप्ररूप वाले पौधे की ऊंचाई पर जल, प्रकाश और पोषक पदार्थ असर डाल सकते हैं। इसलिए केवल एक छोटा पौधा देखकर उसका जीनप्ररूप tt तय नहीं किया जा सकता, जब तक प्रश्न नियंत्रित मेंडलीय मान्यताएं न दे। आनुवंशिक और पर्यावरणीय प्रभाव अलग करने के लिए निष्पक्ष तुलना जरूरी है। अनेक मानव विशेषताओं पर कई जीन तथा परिस्थितियां प्रभाव डालते हैं। सरल अक्षर मॉडल को हर दिखाई देने वाले अंतर पर लगाना या समूहों की रूढ़ छवि बनाना गलत है।"
+        },
+        {
+          "en": "A change acquired in body tissues during life, such as stronger trained muscles or loss of a leaf, does not ordinarily rewrite the inherited information in gametes. Such a change is not automatically passed to offspring as the same acquired feature. This distinction concerns the route of inheritance, not the importance of learning or exercise to the individual. Avoid claiming that all environmental effects are irrelevant to biology; the careful statement is about whether a particular change reaches the inherited genetic contribution.",
+          "hi": "जीवन में शरीर ऊतकों में अर्जित बदलाव, जैसे अभ्यास से मजबूत पेशियां या पत्ती का कटना, सामान्यतः युग्मकों की वंशागत सूचना को उसी तरह नहीं लिख देते। इसलिए वही अर्जित विशेषता अपने आप संतति को नहीं मिलती। यह अंतर वंशागति के मार्ग से जुड़ा है; सीखने या व्यायाम के व्यक्ति के लिए महत्व को नहीं नकारता। पर्यावरण का जीव विज्ञान में कोई महत्व नहीं कहना भी गलत है। सही कथन यह पूछता है कि संबंधित बदलाव वंशागत आनुवंशिक योगदान तक पहुंचा या नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Compare individuals under similar conditions before attributing a difference entirely to genes. Observation alone does not identify the cause.",
+          "hi": "किसी अंतर को पूरी तरह जीन से जोड़ने से पहले समान दशाओं में तुलना कीजिए। केवल दिखने से कारण तय नहीं होता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does cutting a plant’s leaves mean its seedlings must be leafless?",
+          "hi": "पौधे की पत्तियां काटने से क्या उसकी संतति पत्ती रहित होगी?"
+        },
+        "answer": {
+          "en": "No. Removing leaves changes body tissue but does not normally remove leaf-development information from the gametes.",
+          "hi": "नहीं। पत्तियां हटाना शरीर ऊतक बदलता है; सामान्यतः युग्मकों से पत्ती विकास की सूचना नहीं हटाता।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Probability, ratios and sample size",
+        "hi": "प्रायिकता, अनुपात तथा नमूना आकार"
+      },
+      "paragraphs": [
+        {
+          "en": "A Punnett square lists possible genetic combinations and their model probabilities. For Tt × Tt, P(tt) = 1/4 and P(tall) = 3/4 under complete dominance. In 40 offspring, the expected number of short plants is 40 × 1/4 = 10, but an observed count need not equal 10. Each fertilisation is a new event, so a run of tall offspring does not create a debt requiring the next plant to be short. Expected ratios become more stable across large samples, while small samples often vary noticeably.",
+          "hi": "पनेट वर्ग संभावित आनुवंशिक संयोजन और मॉडल की प्रायिकताएं देता है। पूर्ण प्रभाविता में Tt × Tt के लिए P(tt) = 1/4 और P(लंबा) = 3/4 है। 40 संतति में बौने पौधों की अपेक्षित संख्या 40 × 1/4 = 10 होगी, लेकिन वास्तविक गिनती ठीक 10 होना जरूरी नहीं। हर निषेचन नई घटना है। लगातार लंबे पौधे मिलने से अगले पौधे को बौना होने का कोई ऋण नहीं बनता। बड़े नमूने में अनुपात अधिक स्थिर होते हैं; छोटे नमूनों में स्पष्ट अंतर सामान्य है।"
+        },
+        {
+          "en": "Distinguish the probability of an individual outcome from the proportion observed in one experiment. A simulator selecting each grid cell in turn is demonstrating the combination table; it is not necessarily simulating random fertilisations. If randomness is used, compare repeated trials and report the total sample. An unexpected small-sample result is not sufficient evidence that Mendel’s model has failed. First check assumptions, counts and the size of the experiment.",
+          "hi": "एक परिणाम की प्रायिकता और एक प्रयोग में दिखे अनुपात में अंतर रखिए। हर खाना क्रम से चुनने वाला दृश्य संयोजन तालिका दिखाता है; वह जरूरी नहीं कि यादृच्छिक निषेचन कर रहा हो। संयोग वाला प्रयोग हो तो कई परीक्षणों की तुलना तथा कुल नमूना बताइए। छोटे नमूने का अनोखा परिणाम अपने आप में मेंडल मॉडल विफल होने का पर्याप्त प्रमाण नहीं। पहले मान्यताएं, गिनती और प्रयोग का आकार जांचिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Expected count = sample size × probability; it is an average prediction, not an exact promise.",
+          "hi": "अपेक्षित संख्या = नमूना आकार × प्रायिकता। यह औसत अनुमान है, निश्चित वादा नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Must exactly 1 of 4 offspring from Tt × Tt be short?",
+          "hi": "क्या Tt × Tt की ठीक 4 संतति में 1 का बौना होना जरूरी है?"
+        },
+        "answer": {
+          "en": "No. Each offspring has probability 1/4 of tt in the model, but four actual outcomes can have a different count.",
+          "hi": "नहीं। मॉडल में हर संतति के tt होने की प्रायिकता 1/4 है, पर 4 वास्तविक परिणामों की गिनती अलग हो सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Reading inheritance evidence responsibly",
+        "hi": "वंशागति के प्रमाण की जिम्मेदार व्याख्या"
+      },
+      "paragraphs": [
+        {
+          "en": "A good inheritance answer states its assumptions, distinguishes observations from inferred genotypes and gives a reasoned cross. If two tall plants produce a short offspring under the one-gene complete-dominance model, each parent must have supplied t. Both tall parents are therefore Tt in that model. If no short offspring appear in a small sample, however, that alone does not prove that both parents are TT. An absent outcome may simply not have occurred yet. Evidence supports conclusions with different strengths depending on sample size and alternatives.",
+          "hi": "अच्छे वंशागति उत्तर में मान्यताएं स्पष्ट, देखे लक्षण और अनुमानित जीनप्ररूप अलग, तथा संकरण कारण सहित होना चाहिए। एक जीन की पूर्ण प्रभाविता में 2 लंबे पौधों से बौनी संतति बने तो दोनों ने t दिया होगा। इसलिए उस मॉडल में दोनों लंबे जनक Tt हैं। लेकिन छोटे नमूने में बौनी संतति न मिले तो केवल उससे दोनों जनकों को TT नहीं कह सकते। संभव है वह परिणाम अभी न आया हो। नमूना आकार और अन्य संभावनाओं के अनुसार प्रमाण निष्कर्ष को अलग ताकत से समर्थन देता है।"
+        },
+        {
+          "en": "Use consistent symbols and label parental, F1 and F2 generations. Genotype ratios, phenotype ratios and probability statements answer different questions. Human families should never be treated as a classroom breeding experiment, and appearance should not be used to speculate about parentage. The purpose of heredity study is to understand biological continuity and variation with intellectual care and respect for people. Good scientific reasoning corrects social myths rather than giving them a new technical vocabulary.",
+          "hi": "प्रतीक समान रखिए तथा जनक, F1 और F2 पीढ़ियां स्पष्ट लिखिए। जीनप्ररूप अनुपात, लक्षणप्ररूप अनुपात और प्रायिकता अलग प्रश्नों के उत्तर हैं। मानव परिवारों को कक्षा का प्रजनन प्रयोग न मानिए और बाहरी रूप से माता पिता के बारे में अटकल न लगाइए। आनुवंशिकता पढ़ने का उद्देश्य सावधानी और मानवीय सम्मान के साथ जैविक निरंतरता तथा विविधता समझना है। अच्छा वैज्ञानिक तर्क सामाजिक मिथक सुधारता है, उन्हें केवल नए तकनीकी शब्द नहीं देता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A conclusion can be valid within a stated model without explaining every complex real-world trait. Keep that boundary explicit.",
+          "hi": "निष्कर्ष दी गई मान्यताओं में सही होकर भी हर जटिल वास्तविक लक्षण नहीं समझा सकता। यह सीमा स्पष्ट रखिए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does a short offspring reveal about two tall parents in this model?",
+          "hi": "इस मॉडल में बौनी संतति 2 लंबे जनकों के बारे में क्या बताती है?"
+        },
+        "answer": {
+          "en": "Each must carry and contribute t, so both tall parents are Tt under the stated one-gene complete-dominance assumptions.",
+          "hi": "दोनों में t होना और उसका योगदान जरूरी है। इसलिए दी गई एक जीन पूर्ण प्रभाविता मान्यता में दोनों लंबे जनक Tt हैं।"
+        }
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "List gametes from a Tt parent.",
+        "hi": "Tt जनक के युग्मक बताइए।"
+      },
+      "given": {
+        "en": "Parent genotype Tt.",
+        "hi": "जनक का जीनप्ररूप Tt है।"
+      },
+      "find": {
+        "en": "Alleles in possible gametes.",
+        "hi": "संभावित युग्मकों के विकल्प।"
+      },
+      "formula": {
+        "en": "One allele per gamete at this gene",
+        "hi": "इस जीन पर हर युग्मक में एक विकल्प"
+      },
+      "steps": [
+        {
+          "en": "Separate the paired alleles.",
+          "hi": "जोड़ी के विकल्प अलग कीजिए।"
+        },
+        {
+          "en": "Write T and t, not Tt as a gamete.",
+          "hi": "T तथा t लिखिए, युग्मक के रूप में Tt नहीं।"
+        }
+      ],
+      "answer": {
+        "en": "T and t, each with probability 1/2 in the model.",
+        "hi": "T तथा t, मॉडल में प्रत्येक की प्रायिकता 1/2।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Predict F1 from TT × tt.",
+        "hi": "TT × tt से F1 बताइए।"
+      },
+      "given": {
+        "en": "T is completely dominant.",
+        "hi": "T पूर्ण प्रभावी है।"
+      },
+      "find": {
+        "en": "F1 genotype and phenotype.",
+        "hi": "F1 जीनप्ररूप तथा लक्षणप्ररूप।"
+      },
+      "formula": {
+        "en": "T + t → Tt",
+        "hi": "T + t → Tt"
+      },
+      "steps": [
+        {
+          "en": "TT gives only T; tt gives only t.",
+          "hi": "TT केवल T तथा tt केवल t देता है।"
+        },
+        {
+          "en": "Every pair is Tt in this cross.",
+          "hi": "इस संकरण में हर जोड़ी Tt है।"
+        }
+      ],
+      "answer": {
+        "en": "All F1 are Tt and tall under the stated model.",
+        "hi": "दी गई मान्यता में सभी F1 Tt और लंबे हैं।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find expected short plants among 80 offspring of Tt × Tt.",
+        "hi": "Tt × Tt की 80 संतति में अपेक्षित बौने पौधे निकालिए।"
+      },
+      "given": {
+        "en": "N = 80; P(tt) = 1/4.",
+        "hi": "N = 80; P(tt) = 1/4।"
+      },
+      "find": {
+        "en": "Expected count, not guaranteed observed count.",
+        "hi": "अपेक्षित संख्या, निश्चित वास्तविक गिनती नहीं।"
+      },
+      "formula": {
+        "en": "Expected count = N × p",
+        "hi": "अपेक्षित संख्या = N × p"
+      },
+      "steps": [
+        {
+          "en": "List TT, Tt, Tt and tt.",
+          "hi": "TT, Tt, Tt तथा tt लिखिए।"
+        },
+        {
+          "en": "Calculate 80 × 1/4 = 20.",
+          "hi": "80 × 1/4 = 20 कीजिए।"
+        }
+      ],
+      "answer": {
+        "en": "20 short plants expected on average; an actual sample can differ.",
+        "hi": "औसतन 20 बौने अपेक्षित; वास्तविक नमूना अलग हो सकता है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the round-green phenotype probability in RrYy × RrYy.",
+        "hi": "RrYy × RrYy में गोल हरे लक्षण की प्रायिकता निकालिए।"
+      },
+      "given": {
+        "en": "Independent assortment; complete dominance; R = round, y = green when yy.",
+        "hi": "स्वतंत्र अपव्यूहन; पूर्ण प्रभाविता; R = गोल, yy पर हरा।"
+      },
+      "find": {
+        "en": "P(R_ yy).",
+        "hi": "P(R_ yy)।"
+      },
+      "formula": {
+        "en": "P(round) × P(green) = 3/4 × 1/4",
+        "hi": "P(गोल) × P(हरा) = 3/4 × 1/4"
+      },
+      "steps": [
+        {
+          "en": "Round has probability 3/4.",
+          "hi": "गोल की प्रायिकता 3/4 है।"
+        },
+        {
+          "en": "Green requires yy, probability 1/4; multiply under independence.",
+          "hi": "हरे के लिए yy चाहिए, प्रायिकता 1/4; स्वतंत्रता में गुणा कीजिए।"
+        }
+      ],
+      "answer": {
+        "en": "3/16, matching one of the 3 groups in 9:3:3:1.",
+        "hi": "3/16, जो 9:3:3:1 के एक 3 वाले समूह से मेल खाता है।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Two tall plants produce a short offspring. Infer their genotypes.",
+        "hi": "2 लंबे पौधे बौनी संतति देते हैं। जनकों के जीनप्ररूप निकालिए।"
+      },
+      "given": {
+        "en": "One-gene complete dominance; short = tt.",
+        "hi": "एक जीन पूर्ण प्रभाविता; बौना = tt।"
+      },
+      "find": {
+        "en": "Genotypes of both tall parents.",
+        "hi": "दोनों लंबे जनकों के जीनप्ररूप।"
+      },
+      "formula": {
+        "en": "tt offspring requires t from each parent.",
+        "hi": "tt संतति को हर जनक से t चाहिए।"
+      },
+      "steps": [
+        {
+          "en": "Each tall parent must carry T to be tall and t to contribute to the short offspring.",
+          "hi": "लंबा होने के लिए हर जनक में T और बौनी संतति को देने के लिए t जरूरी है।"
+        },
+        {
+          "en": "Combine the requirements for both parents.",
+          "hi": "दोनों आवश्यकताएं हर जनक के लिए जोड़िए।"
+        }
+      ],
+      "answer": {
+        "en": "Both parents are Tt within the stated model.",
+        "hi": "दी गई मान्यता में दोनों जनक Tt हैं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "What is an allele?",
+        "hi": "विकल्पी जीन क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "An alternative form at a gene location",
+            "hi": "जीन स्थान का वैकल्पिक रूप"
+          },
+          "reason": {
+            "en": "Alleles are alternative versions associated with the same gene position.",
+            "hi": "विकल्पी जीन एक ही जीन स्थान के वैकल्पिक रूप हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A whole organ",
+            "hi": "पूरा अंग"
+          },
+          "reason": {
+            "en": "An organ contains many cells and genes.",
+            "hi": "अंग में अनेक कोशिकाएं और जीन हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a food molecule",
+            "hi": "केवल भोजन अणु"
+          },
+          "reason": {
+            "en": "Food can affect phenotype but is not an allele.",
+            "hi": "भोजन लक्षण को प्रभावित कर सकता है, विकल्पी जीन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A random number",
+            "hi": "यादृच्छिक संख्या"
+          },
+          "reason": {
+            "en": "A number can label an outcome but is not genetic material.",
+            "hi": "संख्या परिणाम का नाम हो सकती है, आनुवंशिक पदार्थ नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which gametes arise from Tt in the simple model?",
+        "hi": "सरल मॉडल में Tt से कौन से युग्मक बनते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only Tt",
+            "hi": "केवल Tt"
+          },
+          "reason": {
+            "en": "A gamete carries one allele here, not the pair.",
+            "hi": "यहां युग्मक में एक विकल्प है, जोड़ी नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "T and t",
+            "hi": "T तथा t"
+          },
+          "reason": {
+            "en": "Paired alleles segregate into the two gamete types.",
+            "hi": "जोड़ी के विकल्प अलग होकर 2 युग्मक प्रकार देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only TT",
+            "hi": "केवल TT"
+          },
+          "reason": {
+            "en": "TT is a paired genotype, not this gamete.",
+            "hi": "TT जोड़ी वाला जीनप्ररूप है, यह युग्मक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "TT and tt gametes",
+            "hi": "TT तथा tt युग्मक"
+          },
+          "reason": {
+            "en": "Both labels incorrectly retain pairs.",
+            "hi": "दोनों नाम गलती से जोड़ी बनाए रखते हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "What is the genotype ratio for Tt × Tt?",
+        "hi": "Tt × Tt का जीनप्ररूप अनुपात क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3:1 only",
+            "hi": "केवल 3:1"
+          },
+          "reason": {
+            "en": "3:1 is the phenotype ratio under complete dominance.",
+            "hi": "पूर्ण प्रभाविता में 3:1 लक्षणप्ररूप अनुपात है।"
+          }
+        },
+        {
+          "text": {
+            "en": "9:3:3:1",
+            "hi": "9:3:3:1"
+          },
+          "reason": {
+            "en": "That belongs to the stated independent two-trait phenotype model.",
+            "hi": "यह दिए स्वतंत्र द्विलक्षण दृश्य मॉडल का अनुपात है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1:2:1",
+            "hi": "1:2:1"
+          },
+          "reason": {
+            "en": "TT:Tt:tt has expected ratio 1:2:1.",
+            "hi": "TT:Tt:tt का अपेक्षित अनुपात 1:2:1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All TT",
+            "hi": "सभी TT"
+          },
+          "reason": {
+            "en": "Each parent can also contribute t.",
+            "hi": "हर जनक t भी दे सकता है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "What does dominant mean in this model?",
+        "hi": "इस मॉडल में प्रभावी का अर्थ क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always most common",
+            "hi": "हमेशा सबसे सामान्य"
+          },
+          "reason": {
+            "en": "Frequency and dominance are different ideas.",
+            "hi": "आवृत्ति और प्रभाविता अलग विचार हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always beneficial",
+            "hi": "हमेशा लाभकारी"
+          },
+          "reason": {
+            "en": "Dominance does not rank usefulness.",
+            "hi": "प्रभाविता उपयोगिता का स्तर नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always inherited from father",
+            "hi": "हमेशा पिता से मिला"
+          },
+          "reason": {
+            "en": "Either parent can contribute a dominant allele.",
+            "hi": "कोई भी जनक प्रभावी विकल्प दे सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Expressed in the heterozygote",
+            "hi": "विषमयुग्मजी में व्यक्त"
+          },
+          "reason": {
+            "en": "The phenotype is expressed in the stated heterozygous combination.",
+            "hi": "दी गई विषमयुग्मजी जोड़ी में लक्षण व्यक्त होता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "How many gamete types can RrYy make under independence?",
+        "hi": "स्वतंत्रता में RrYy कितने युग्मक प्रकार बना सकता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "RY, Ry, rY and ry are the four types.",
+            "hi": "RY, Ry, rY तथा ry 4 प्रकार हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2, always Rr and Yy",
+            "hi": "2, हमेशा Rr तथा Yy"
+          },
+          "reason": {
+            "en": "Those labels fail to include one allele from each gene.",
+            "hi": "इन नामों में हर जीन से एक विकल्प नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "16",
+            "hi": "16"
+          },
+          "reason": {
+            "en": "16 is the number of offspring grid cells when two four-type parents are crossed.",
+            "hi": "4 प्रकार वाले 2 जनक मिलाने पर 16 संतति खाने हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "A fertile parent can form gametes.",
+            "hi": "जननक्षम जनक युग्मक बना सकता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is P(tt) in Tt × Tt?",
+        "hi": "Tt × Tt में P(tt) क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "TT and Tt are also possible.",
+            "hi": "TT और Tt भी संभव हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/4",
+            "hi": "1/4"
+          },
+          "reason": {
+            "en": "One of four equally likely grid combinations is tt.",
+            "hi": "4 समान संभावित संयोजनों में एक tt है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3/4",
+            "hi": "3/4"
+          },
+          "reason": {
+            "en": "That is the tall phenotype probability.",
+            "hi": "वह लंबे लक्षण की प्रायिकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Each parent can contribute t, so tt is possible.",
+            "hi": "दोनों t दे सकते हैं, इसलिए tt संभव है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which is correct for the usual human XX/XY model?",
+        "hi": "सामान्य मानव XX/XY मॉडल में क्या सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The mother chooses a Y-bearing egg.",
+            "hi": "मां Y वाली अंड कोशिका चुनती है।"
+          },
+          "reason": {
+            "en": "The usual egg carries X, and the event is not chosen that way.",
+            "hi": "सामान्य अंड कोशिका X देती है और ऐसा चयन नहीं होता।"
+          }
+        },
+        {
+          "text": {
+            "en": "The next child must have opposite sex.",
+            "hi": "अगले बच्चे का लिंग विपरीत होना चाहिए।"
+          },
+          "reason": {
+            "en": "Previous outcomes do not force the next one.",
+            "hi": "पहले परिणाम अगले को बाध्य नहीं करते।"
+          }
+        },
+        {
+          "text": {
+            "en": "The egg contributes X; sperm contributes X or Y.",
+            "hi": "अंड कोशिका X तथा शुक्राणु X या Y देता है।"
+          },
+          "reason": {
+            "en": "This is the elementary chromosome contribution model.",
+            "hi": "यह प्राथमिक गुणसूत्र योगदान मॉडल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Either parent consciously selects the fertilising sperm.",
+            "hi": "कोई जनक सचेत होकर निषेचन वाला शुक्राणु चुनता है।"
+          },
+          "reason": {
+            "en": "The chromosome contribution is not consciously chosen.",
+            "hi": "गुणसूत्र योगदान सचेत रूप से नहीं चुना जाता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Must 4 offspring of Tt × Tt include exactly 1 short plant?",
+        "hi": "क्या Tt × Tt की 4 संतति में ठीक 1 बौना जरूरी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Yes, always",
+            "hi": "हां, हमेशा"
+          },
+          "reason": {
+            "en": "Ratios are probabilities, not exact small-sample promises.",
+            "hi": "अनुपात प्रायिकताएं हैं, छोटे नमूने का निश्चित वादा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only if the first is tall",
+            "hi": "केवल पहला लंबा हो तो"
+          },
+          "reason": {
+            "en": "The first outcome does not fix later outcomes.",
+            "hi": "पहला परिणाम आगे का तय नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only if the father chooses",
+            "hi": "केवल पिता चुने तो"
+          },
+          "reason": {
+            "en": "Parents do not choose gamete combinations this way.",
+            "hi": "जनक इस तरह युग्मक संयोजन नहीं चुनते।"
+          }
+        },
+        {
+          "text": {
+            "en": "No, a small sample may differ from the expected ratio.",
+            "hi": "नहीं, छोटा नमूना अपेक्षित अनुपात से अलग हो सकता है।"
+          },
+          "reason": {
+            "en": "Random samples can contain different counts.",
+            "hi": "संयोग नमूनों में अलग गिनती हो सकती है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which pair can have the same tall phenotype under complete dominance?",
+        "hi": "पूर्ण प्रभाविता में कौन सी जोड़ी समान लंबा लक्षण दिखा सकती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "TT and Tt",
+            "hi": "TT तथा Tt"
+          },
+          "reason": {
+            "en": "Both have at least one dominant T allele.",
+            "hi": "दोनों में कम से कम एक प्रभावी T है।"
+          }
+        },
+        {
+          "text": {
+            "en": "TT and tt always",
+            "hi": "TT तथा tt हमेशा"
+          },
+          "reason": {
+            "en": "tt expresses shortness in this model.",
+            "hi": "इस मॉडल में tt बौनापन दिखाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only tt and tt are tall",
+            "hi": "केवल tt तथा tt लंबे हैं"
+          },
+          "reason": {
+            "en": "tt is short in the stated example.",
+            "hi": "दिए उदाहरण में tt बौना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No genotype can be tall",
+            "hi": "कोई जीनप्ररूप लंबा नहीं हो सकता"
+          },
+          "reason": {
+            "en": "TT and Tt can be tall.",
+            "hi": "TT और Tt लंबे हो सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why does leaf cutting not normally make offspring leafless?",
+        "hi": "पत्ती काटने से सामान्यतः संतति पत्ती रहित क्यों नहीं बनती?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Plants have no DNA.",
+            "hi": "पौधों में डीएनए नहीं।"
+          },
+          "reason": {
+            "en": "Plant cells contain DNA.",
+            "hi": "पादप कोशिकाओं में डीएनए है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The body-tissue change does not normally remove inherited leaf-development information from gametes.",
+            "hi": "शरीर ऊतक का बदलाव सामान्यतः युग्मकों की पत्ती विकास सूचना नहीं हटाता।"
+          },
+          "reason": {
+            "en": "The inheritance route is distinct from removal of a body part.",
+            "hi": "वंशागति मार्ग शरीर का भाग हटाने से अलग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every acquired change is inherited.",
+            "hi": "हर अर्जित बदलाव वंशागत है।"
+          },
+          "reason": {
+            "en": "Acquired tissue changes are not automatically inherited.",
+            "hi": "अर्जित ऊतक बदलाव अपने आप वंशागत नहीं होते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Leaves are chromosomes.",
+            "hi": "पत्तियां गुणसूत्र हैं।"
+          },
+          "reason": {
+            "en": "Leaves are organs containing many cells.",
+            "hi": "पत्तियां अनेक कोशिकाओं वाले अंग हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "marks": 2,
+      "question": {
+        "en": "Distinguish genotype and phenotype with an example.",
+        "hi": "उदाहरण सहित जीनप्ररूप तथा लक्षणप्ररूप अलग कीजिए।"
+      },
+      "answer": {
+        "en": "Genotype is the allele combination, such as TT or Tt. Phenotype is the observed feature; both combinations can be tall under complete dominance.",
+        "hi": "जीनप्ररूप विकल्पी संयोजन, जैसे TT या Tt है। लक्षणप्ररूप दिखाई देने वाला गुण है; पूर्ण प्रभाविता में दोनों लंबे हो सकते हैं।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Give genotype and phenotype ratios for Tt × Tt.",
+        "hi": "Tt × Tt के जीनप्ररूप तथा लक्षणप्ररूप अनुपात बताइए।"
+      },
+      "answer": {
+        "en": "Gametes T and t combine as TT, Tt, Tt and tt. Expected genotype ratio is 1:2:1 and tall:short phenotype ratio is 3:1 under complete dominance.",
+        "hi": "T तथा t युग्मक TT, Tt, Tt और tt देते हैं। अपेक्षित जीनप्ररूप अनुपात 1:2:1 और पूर्ण प्रभाविता में लंबा:बौना लक्षण अनुपात 3:1 है।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "State the assumptions behind 9:3:3:1.",
+        "hi": "9:3:3:1 की मान्यताएं बताइए।"
+      },
+      "answer": {
+        "en": "The cross is between two double heterozygotes such as RrYy. The two pairs assort independently, show complete dominance and the model treats gamete combinations as equally likely.",
+        "hi": "संकरण RrYy जैसे 2 द्विविषमयुग्मजियों में है। दोनों जोड़ियां स्वतंत्र बंटती हैं, पूर्ण प्रभाविता है और मॉडल में युग्मक संयोजन समान संभावित हैं।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Explain why blaming a mother for a child’s sex is incorrect.",
+        "hi": "बच्चे के लिंग के लिए मां को दोष देना गलत क्यों है?"
+      },
+      "answer": {
+        "en": "In the usual XX/XY model eggs contribute X, while sperm contribute X or Y. The fertilising sperm contribution is not selected by the mother; neither parent consciously chooses the outcome.",
+        "hi": "सामान्य XX/XY मॉडल में अंड कोशिकाएं X और शुक्राणु X या Y देते हैं। निषेचन करने वाले शुक्राणु का योगदान मां नहीं चुनती; कोई जनक सचेत होकर परिणाम नहीं चुनता।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Why can the observed count differ from a Punnett ratio?",
+        "hi": "वास्तविक गिनती पनेट अनुपात से अलग क्यों हो सकती है?"
+      },
+      "answer": {
+        "en": "The ratio gives probabilities and average expectations. Individual fertilisations are chance events, so especially small samples can show different counts without contradicting the model.",
+        "hi": "अनुपात प्रायिकता और औसत अपेक्षा देता है। अलग निषेचन संयोग घटनाएं हैं, इसलिए खासकर छोटे नमूने की अलग गिनती मॉडल का खंडन जरूरी नहीं करती।"
+      }
+    },
+    {
+      "marks": 2,
+      "question": {
+        "en": "Explain the link from a gene to a visible trait.",
+        "hi": "जीन से दिखाई देने वाले लक्षण का संबंध समझाइए।"
+      },
+      "answer": {
+        "en": "A gene carries information contributing to a protein or functional product. That product affects a cellular pathway, which can influence growth or another observable trait in the environment.",
+        "hi": "जीन प्रोटीन या कार्यकारी उत्पाद से जुड़ी सूचना रखता है। उत्पाद कोशिकीय मार्ग प्रभावित करता है, जिससे पर्यावरण में वृद्धि या दूसरा दृश्य लक्षण प्रभावित हो सकता है।"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT Science Class X: Heredity",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc108.pdf"
+    },
+    {
+      "title": "UPMSP Class 10 Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ],
+  "goal": {
+    "en": "Use genes, gametes and probability to explain inheritance without confusing dominance, certainty or personal blame.",
+    "hi": "जीन, युग्मक तथा प्रायिकता से वंशागति समझिए और प्रभाविता को निश्चितता या व्यक्तिगत दोष से न मिलाइए।"
+  },
+  "formulas": [
+    {
+      "expression": "Tt × Tt → TT : Tt : tt = 1 : 2 : 1",
+      "meaning": {
+        "en": "Expected genotype ratio; tall : short = 3 : 1 under complete dominance.",
+        "hi": "अपेक्षित जीनप्ररूप अनुपात; पूर्ण प्रभाविता में लंबा : बौना = 3 : 1।"
+      },
+      "units": {
+        "en": "Ratios and probabilities are dimensionless.",
+        "hi": "अनुपात तथा प्रायिकता विमाहीन हैं।"
+      }
+    },
+    {
+      "expression": "RrYy × RrYy → phenotype ratio 9 : 3 : 3 : 1",
+      "meaning": {
+        "en": "Applies to the independent, completely dominant two-trait model.",
+        "hi": "स्वतंत्र तथा पूर्ण प्रभावी दो लक्षण मॉडल पर लागू।"
+      },
+      "units": {
+        "en": "Dimensionless ratio, not an exact count in 16 real offspring.",
+        "hi": "विमाहीन अनुपात, 16 वास्तविक संतति की निश्चित गिनती नहीं।"
+      }
+    },
+    {
+      "expression": "Expected count = N × p",
+      "meaning": {
+        "en": "N is sample size; p is the outcome probability in the stated cross.",
+        "hi": "N नमूना आकार तथा p दिए संकरण में परिणाम की प्रायिकता है।"
+      },
+      "units": {
+        "en": "Expected count is a number of offspring; p has no unit.",
+        "hi": "अपेक्षित संख्या संतति की गिनती है; p की इकाई नहीं।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "A dominant allele is not necessarily common or better. A 3:1 ratio is an expectation, not a four-child rule. The usual XX/XY model gives no basis for blaming a mother or choosing a real child’s sex.",
+    "hi": "प्रभावी विकल्प जरूरी नहीं कि अधिक सामान्य या बेहतर हो। 3:1 अपेक्षित अनुपात है, 4 बच्चों का नियम नहीं। सामान्य XX/XY मॉडल मां को दोष देने या वास्तविक बच्चे का लिंग चुनने का आधार नहीं देता।"
+  },
+  "summary": [
+    {
+      "en": "Genes are DNA information units whose products contribute to traits.",
+      "hi": "जीन डीएनए की सूचना इकाइयां हैं जिनके उत्पाद लक्षणों में योगदान देते हैं।"
+    },
+    {
+      "en": "Genotype and phenotype are different descriptions.",
+      "hi": "जीनप्ररूप तथा लक्षणप्ररूप अलग विवरण हैं।"
+    },
+    {
+      "en": "Gametes separate paired alleles; fertilisation restores pairs.",
+      "hi": "युग्मक जोड़ी के विकल्प अलग करते हैं; निषेचन जोड़ी लौटाता है।"
+    },
+    {
+      "en": "Monohybrid and independent dihybrid ratios are probability models.",
+      "hi": "एकल संकरण तथा स्वतंत्र द्विलक्षण अनुपात प्रायिकता मॉडल हैं।"
+    },
+    {
+      "en": "Human sex determination is not a mother’s choice or fault; all children have equal worth.",
+      "hi": "मानव लिंग निर्धारण मां की पसंद या गलती नहीं; सभी बच्चों का समान मूल्य है।"
+    }
+  ],
+  "conceptMap": "डीएनए → जीन/विकल्प → प्रोटीन कार्य → लक्षण; जोड़ी → युग्मक पृथक्करण → निषेचन → नए संयोजन → प्रायिकता और विविधता",
+  "conceptMapEn": "DNA → genes/alleles → protein function → traits; pairs → gamete segregation → fertilisation → new combinations → probability and variation"
+}

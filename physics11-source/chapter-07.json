@@ -1,0 +1,1482 @@
+{
+  "number": 7,
+  "id": "physics11-07",
+  "title": {
+    "en": "Gravitation",
+    "hi": "गुरुत्वाकर्षण"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-07-1",
+      "title": {
+        "en": "Gravity with altitude",
+        "hi": "ऊँचाई के साथ गुरुत्व"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 18
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Height in Earth radii",
+            "hi": "पृथ्वी त्रिज्या में ऊँचाई"
+          },
+          "min": 0,
+          "max": 3,
+          "step": 0.25,
+          "initial": 1,
+          "unit": "R"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Compare gravity at different altitudes.",
+        "hi": "अलग ऊँचाइयों पर गुरुत्व तुलना करें।"
+      },
+      "observe": {
+        "en": "Use h/R from 0 to 3 and read g0/(1+h/R)².",
+        "hi": "h/R को 0 से 3 तक बदलकर g0/(1+h/R)² पढ़ें।"
+      },
+      "modelNote": {
+        "en": "Spherical nonrotating Earth; R = 6.37 × 10⁶ m and g0 = 9.8 m/s²; sizes are schematic.",
+        "hi": "गोल अघूर्णी पृथ्वी; R = 6.37 × 10⁶ m तथा g0 = 9.8 m/s²; आकार सांकेतिक हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The centre distance increases from R to R+h, weakening the inverse-square field.",
+          "hi": "केंद्र दूरी R से R+h बढ़ती है, इसलिए व्युत्क्रम वर्ग क्षेत्र कमजोर होता है।"
+        }
+      },
+      "realLife": {
+        "en": "High-altitude calculations must distinguish altitude from centre distance.",
+        "hi": "अधिक ऊँचाई की गणना में सतह की ऊँचाई और केंद्र की दूरी अलग रखें।"
+      },
+      "quick": {
+        "question": {
+          "en": "At h = R, g/g0 equals?",
+          "hi": "h = R पर g/g0?"
+        },
+        "options": [
+          {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          {
+            "en": "1/4",
+            "hi": "1/4"
+          },
+          {
+            "en": "0",
+            "hi": "0"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The centre distance is 2R.",
+          "hi": "केंद्र दूरी 2R है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-07-1-low",
+          "label": {
+            "en": "Set height in earth radii to 0 R.",
+            "hi": "पृथ्वी त्रिज्या में ऊँचाई 0 R करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0
+          }
+        },
+        {
+          "id": "phy11-07-1-high",
+          "label": {
+            "en": "Compare the maximum setting 3 R.",
+            "hi": "अधिकतम सेटिंग 3 R से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 3
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.5
+          },
+          "text": {
+            "en": "Gravity is strongest near the surface in this external-field range.",
+            "hi": "इस बाहरी क्षेत्र में सतह के पास गुरुत्व सबसे अधिक है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.5
+          },
+          "text": {
+            "en": "Greater altitude reduces g but does not make it suddenly zero.",
+            "hi": "ऊँचाई बढ़ने पर g घटता है, अचानक शून्य नहीं बनता।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Controlled quantity / reference",
+            "hi": "नियंत्रित राशि / संदर्भ"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Moving body / response",
+            "hi": "गतिशील पिंड / परिणाम"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-07-2",
+      "title": {
+        "en": "Circular orbit",
+        "hi": "वृत्तीय कक्षा"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 19
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Orbital radius",
+            "hi": "कक्षीय त्रिज्या"
+          },
+          "min": 1,
+          "max": 4,
+          "step": 0.25,
+          "initial": 2,
+          "unit": "R"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Relate orbit radius, speed and period.",
+        "hi": "कक्षीय त्रिज्या, चाल और आवर्तकाल जोड़ें।"
+      },
+      "observe": {
+        "en": "Change r/R; compare vc = √(g0R²/r) and period.",
+        "hi": "r/R बदलें; vc = √(g0R²/r) तथा आवर्तकाल तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Circular orbit, negligible satellite mass and no drag; animation time is schematic.",
+        "hi": "वृत्तीय कक्षा, नगण्य उपग्रह द्रव्यमान तथा घर्षण नहीं; दृश्य समय सांकेतिक है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Gravity supplies v²/r; larger-radius orbits are slower and take longer.",
+          "hi": "गुरुत्व v²/r देता है; बड़ी कक्षा धीमी होती और अधिक समय लेती है।"
+        }
+      },
+      "realLife": {
+        "en": "Different satellite altitudes have different orbital periods.",
+        "hi": "अलग ऊँचाई के उपग्रहों के कक्षीय आवर्तकाल अलग होते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Increasing r makes circular speed?",
+          "hi": "r बढ़ने से वृत्तीय चाल?"
+        },
+        "options": [
+          {
+            "en": "Increase",
+            "hi": "बढ़ती है"
+          },
+          {
+            "en": "Decrease",
+            "hi": "घटती है"
+          },
+          {
+            "en": "Stay fixed",
+            "hi": "नियत रहती है"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "vc ∝ r⁻¹ᐟ² for a fixed central mass.",
+          "hi": "नियत केंद्रीय द्रव्यमान में vc ∝ r⁻¹ᐟ²।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-07-2-low",
+          "label": {
+            "en": "Set orbital radius to 1 R.",
+            "hi": "कक्षीय त्रिज्या 1 R करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-07-2-high",
+          "label": {
+            "en": "Compare the maximum setting 4 R.",
+            "hi": "अधिकतम सेटिंग 4 R से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2.5
+          },
+          "text": {
+            "en": "Smaller-radius circular orbits need a higher speed.",
+            "hi": "छोटी त्रिज्या की वृत्तीय कक्षा में अधिक चाल चाहिए।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 2.5
+          },
+          "text": {
+            "en": "Larger-radius circular orbits have lower speed and longer period.",
+            "hi": "बड़ी त्रिज्या की कक्षा में कम चाल तथा अधिक आवर्तकाल है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Controlled quantity / reference",
+            "hi": "नियंत्रित राशि / संदर्भ"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Moving body / response",
+            "hi": "गतिशील पिंड / परिणाम"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-07-3",
+      "title": {
+        "en": "Escape speed",
+        "hi": "पलायन चाल"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 20
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Launch radius",
+            "hi": "प्रक्षेपण त्रिज्या"
+          },
+          "min": 1,
+          "max": 4,
+          "step": 0.25,
+          "initial": 1,
+          "unit": "R"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Compare the ideal escape-speed scale at different radii.",
+        "hi": "अलग त्रिज्याओं पर आदर्श पलायन चाल तुलना करें।"
+      },
+      "observe": {
+        "en": "Set launch radius r/R from 1 to 4; read √(2g0R²/r).",
+        "hi": "प्रक्षेपण त्रिज्या r/R को 1 से 4 तक रखें; √(2g0R²/r) पढ़ें।"
+      },
+      "modelNote": {
+        "en": "No atmosphere, rotation or later propulsion; this is an energy threshold, not a rocket flight plan.",
+        "hi": "वातावरण, घूर्णन तथा बाद का प्रणोदन नहीं; यह ऊर्जा सीमा है, रॉकेट उड़ान योजना नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Marginal escape has total energy zero with zero potential at infinity.",
+          "hi": "अनंत पर विभव शून्य लेने से सीमांत पलायन की कुल ऊर्जा शून्य है।"
+        }
+      },
+      "realLife": {
+        "en": "Space-mission energy budgets must also include real losses and propulsion.",
+        "hi": "अंतरिक्ष अभियान के ऊर्जा लेखे में वास्तविक हानियाँ तथा प्रणोदन भी चाहिए।"
+      },
+      "quick": {
+        "question": {
+          "en": "At fixed source and radius, escape speed depends on test mass?",
+          "hi": "नियत स्रोत तथा त्रिज्या पर पलायन चाल परीक्षण द्रव्यमान पर निर्भर?"
+        },
+        "options": [
+          {
+            "en": "Yes",
+            "hi": "हाँ"
+          },
+          {
+            "en": "No",
+            "hi": "नहीं"
+          },
+          {
+            "en": "Only on colour",
+            "hi": "केवल रंग पर"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "The test mass cancels in ½mve² = GMm/r.",
+          "hi": "½mve² = GMm/r में परीक्षण द्रव्यमान निरस्त है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-07-3-low",
+          "label": {
+            "en": "Set launch radius to 1 R.",
+            "hi": "प्रक्षेपण त्रिज्या 1 R करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-07-3-high",
+          "label": {
+            "en": "Compare the maximum setting 4 R.",
+            "hi": "अधिकतम सेटिंग 4 R से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 2.5
+          },
+          "text": {
+            "en": "Near the surface the ideal escape-speed scale is about 11.17 km/s.",
+            "hi": "सतह के पास आदर्श पलायन चाल का पैमाना लगभग 11.17 km/s है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 2.5
+          },
+          "text": {
+            "en": "Farther from Earth, less initial speed is needed for ideal marginal escape.",
+            "hi": "पृथ्वी से दूर आदर्श सीमांत पलायन को कम प्रारंभिक चाल चाहिए।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Controlled quantity / reference",
+            "hi": "नियंत्रित राशि / संदर्भ"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Moving body / response",
+            "hi": "गतिशील पिंड / परिणाम"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Understand gravitation using equations, conditions and evidence.",
+    "hi": "समीकरण, उनकी शर्तों और प्रेक्षण से गुरुत्वाकर्षण समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Universal gravitation and superposition",
+        "hi": "सार्वत्रिक गुरुत्वाकर्षण और अध्यारोपण"
+      },
+      "paragraphs": [
+        {
+          "en": "Newton's law states that two point masses attract one another with magnitude F = Gm1m2/r², where r is their separation. The forces have equal magnitude and opposite directions along the line joining the masses; their accelerations need not be equal because the masses may differ. G is the universal gravitational constant, not the local acceleration g. Gravity is an attractive long-range interaction in this Newtonian model. For several masses, calculate the vector force from each and add the vectors using superposition. Adding only magnitudes is valid only when all forces point along the same direction. The point-mass formula also gives the external field of a spherically symmetric mass distribution when its total mass is placed at the centre. This useful result does not mean every extended shape can be replaced by a central point. State spherical symmetry and use centre-to-centre distance rather than altitude alone when dealing with a planet.",
+          "hi": "न्यूटन का सार्वत्रिक गुरुत्वाकर्षण नियम दो बिंदु द्रव्यमानों के बीच आकर्षण का परिमाण F = Gm1m2/r² देता है। यहाँ r दोनों के बीच दूरी है। बल दोनों द्रव्यमानों को जोड़ने वाली रेखा पर समान परिमाण और विपरीत दिशा में लगते हैं। द्रव्यमान अलग हों तो त्वरण समान होना आवश्यक नहीं है। G सार्वत्रिक गुरुत्वाकर्षण नियतांक है, स्थानीय गुरुत्वीय त्वरण g नहीं। न्यूटनीय मॉडल में गुरुत्व आकर्षक तथा लंबी दूरी की अंतःक्रिया है। कई द्रव्यमान हों तो हर एक का सदिश बल निकालकर अध्यारोपण (Superposition) से सदिश जोड़ते हैं। केवल परिमाण तभी जोड़ सकते हैं जब सभी बल समान दिशा में हों। गोल सममित द्रव्यमान वितरण के बाहर का क्षेत्र भी ऐसा होता है जैसे उसका पूरा द्रव्यमान केंद्र पर हो। इसका अर्थ यह नहीं कि हर विस्तृत आकृति को केंद्रीय बिंदु बना सकते हैं। ग्रह के प्रश्न में गोल सममिति की शर्त लिखें तथा केवल सतह से ऊँचाई के स्थान पर केंद्र से दूरी लें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "G has SI unit N m²/kg², whereas g has unit m/s². They are physically different even though both occur in gravitational calculations.",
+          "hi": "G का SI मात्रक N m²/kg² तथा g का m/s² है। दोनों गुरुत्व की गणना में आते हैं, फिर भी उनका भौतिक अर्थ और इकाई अलग हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why must gravitational forces be added as vectors?",
+          "hi": "गुरुत्व बलों को सदिश की तरह क्यों जोड़ते हैं?"
+        },
+        "answer": {
+          "en": "Each force has a direction toward its attracting mass.",
+          "hi": "हर बल की दिशा आकर्षित करने वाले द्रव्यमान की ओर होती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Acceleration due to gravity and altitude",
+        "hi": "गुरुत्वीय त्वरण और ऊँचाई"
+      },
+      "paragraphs": [
+        {
+          "en": "For a spherical planet of mass M and radius R, surface gravity is g0 = GM/R². At altitude h outside the planet, g(h) = GM/(R+h)² = g0[R/(R+h)]². The distance from the centre is R+h, so using h directly in the denominator is incorrect. If h is much smaller than R, a first-order approximation gives g(h) ≈ g0(1 − 2h/R). This approximation is not suitable when altitude is comparable to the radius. At h = R the exact field is g0/4, not zero or g0/2. The scene uses R = 6.37 × 10⁶ m and g0 = 9.8 m/s², neglecting Earth's rotation and departures from spherical symmetry. A person's weight changes with local g while their mass remains unchanged. Weightlessness in an orbit does not mean gravity has vanished; it refers to the absence of a supporting force during free fall.",
+          "hi": "M द्रव्यमान और R त्रिज्या के गोल ग्रह की सतह पर g0 = GM/R² है। सतह से h ऊँचाई पर g(h) = GM/(R+h)² = g0[R/(R+h)]² होगा। ग्रह के केंद्र से दूरी R+h है; हर में केवल h लेना गलत है। h, R से बहुत छोटा हो तो प्रथम क्रम सन्निकटन g(h) ≈ g0(1 − 2h/R) मिलता है। ऊँचाई त्रिज्या के तुलनीय हो तो यह सन्निकटन उपयोगी नहीं। h = R पर सटीक मान g0/4 है, न शून्य और न g0/2। दृश्य में R = 6.37 × 10⁶ m और g0 = 9.8 m/s² लिए हैं। पृथ्वी का घूर्णन और गोल सममिति से विचलन छोड़े गए हैं। स्थानीय g बदलने पर व्यक्ति का भार बदलता है, उसका द्रव्यमान नहीं। कक्षा में भारहीनता का अर्थ गुरुत्व का समाप्त होना नहीं है। मुक्त पतन के दौरान सहारा बल न मिलने से व्यक्ति को भारहीनता अनुभव होती है। ये अलग अर्थ हैं, इसलिए दोनों को मिलाना नहीं चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Convert the slider value h/R into h only if needed; when h/R = 1, the centre distance is 2R and gravity is one quarter of surface gravity.",
+          "hi": "स्लाइडर h/R को आवश्यकता पर h में बदलें। h/R = 1 होने पर केंद्र की दूरी 2R है और गुरुत्व सतही मान का चौथाई है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is g at an altitude equal to Earth’s radius?",
+          "hi": "पृथ्वी त्रिज्या के बराबर ऊँचाई पर g कितना है?"
+        },
+        "answer": {
+          "en": "g0/4, using the spherical nonrotating model.",
+          "hi": "गोल, अघूर्णी मॉडल में g0/4।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Depth and rotation: separate approximations",
+        "hi": "गहराई और घूर्णन: अलग सन्निकटन"
+      },
+      "paragraphs": [
+        {
+          "en": "Inside a uniform-density spherical Earth, the mass enclosed within radius r is M(r/R)³. The shell outside r produces zero net gravitational field at that interior point, so ginside = g0 r/R. At depth d below the surface, r = R−d and g = g0(1−d/R). The field reaches zero at the centre by symmetry, not because gravity ceases to exist between particles. Real Earth is not uniform in density, so this straight-line depth law is an idealised result rather than an exact measured profile. Rotation changes apparent weight because a body fixed to Earth requires centripetal acceleration. At the equator a simple spherical approximation gives geffective = ggravitational − ω²R; the rotational reduction vanishes at a pole. Earth's non-spherical shape also affects measured gravity. Do not combine the uniform-density depth formula, altitude formula and rotational correction without identifying the assumptions and the region where each applies.",
+          "hi": "एकसमान घनत्व वाली गोल पृथ्वी के भीतर केंद्र से r दूरी तक द्रव्यमान M(r/R)³ है। r के बाहर की गोल परत का उस आंतरिक बिंदु पर परिणामी क्षेत्र शून्य होता है। इसलिए gभीतर = g0 r/R मिलता है। सतह से d गहराई पर r = R−d रखकर g = g0(1−d/R) होगा। केंद्र पर सममिति से क्षेत्र शून्य है; इसका अर्थ कणों के बीच गुरुत्व का समाप्त होना नहीं। वास्तविक पृथ्वी का घनत्व एकसमान नहीं है। इसलिए रैखिक गहराई संबंध आदर्श मॉडल है, वास्तविक मापे क्षेत्र का सटीक चित्र नहीं। पृथ्वी के साथ स्थिर पिंड को अभिकेंद्रीय त्वरण चाहिए, इसलिए घूर्णन आभासी भार बदलता है। गोल मॉडल में विषुवत रेखा पर geffective = ggravitational − ω²R है। ध्रुव पर यह घूर्णन जनित कमी शून्य होती है। पृथ्वी की चपटी आकृति भी मापे गुरुत्व को प्रभावित करती है। गहराई, ऊँचाई तथा घूर्णन के सूत्र मिलाने से पहले उनकी शर्तें और लागू क्षेत्र स्पष्ट करना आवश्यक है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The zero field inside a spherical shell does not mean zero potential there. Field is related to the spatial change of potential, not its chosen numerical level.",
+          "hi": "गोल खोल के भीतर क्षेत्र शून्य का अर्थ वहाँ विभव शून्य नहीं है। क्षेत्र विभव के स्थानिक परिवर्तन से जुड़ा है, चुने हुए संख्यात्मक स्तर से नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is g = g0(1−d/R) exact for the real Earth?",
+          "hi": "क्या वास्तविक पृथ्वी के लिए g = g0(1−d/R) सटीक है?"
+        },
+        "answer": {
+          "en": "No; it assumes a spherical Earth with uniform density.",
+          "hi": "नहीं; इसमें गोल तथा एकसमान घनत्व वाली पृथ्वी मानी है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Gravitational potential and potential energy",
+        "hi": "गुरुत्वीय विभव और स्थितिज ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "With the reference U = 0 at infinite separation, the potential energy of two point masses is U = −GMm/r. Gravitational potential is potential energy per unit test mass: V = −GM/r. The negative value expresses a bound attractive configuration relative to separated masses, not an absence of energy. Raising a body from r1 to r2 greater than r1 requires positive external work in a slow transfer; its potential energy becomes less negative. A chosen reference changes potential by an additive constant but does not change the gravitational force. The force relates to the spatial decrease of potential energy. Near the surface, for a small height change, the difference in the exact expression reduces approximately to mgh. Thus mgh and −GMm/r are not contradictory formulas: they use different approximations and often different zero references. Potential energy belongs to the interacting Earth–body system, whereas potential describes the gravitational environment per unit mass.",
+          "hi": "अनंत दूरी पर U = 0 चुनने से दो बिंदु द्रव्यमानों की स्थितिज ऊर्जा U = −GMm/r है। गुरुत्वीय विभव (Gravitational potential) प्रति इकाई परीक्षण द्रव्यमान की स्थितिज ऊर्जा V = −GM/r है। ऋणात्मक मान अलग किए द्रव्यमानों की तुलना में बँधी आकर्षक व्यवस्था बताता है; ऊर्जा का अभाव नहीं। पिंड को धीरे-धीरे r1 से बड़ी दूरी r2 तक उठाने के लिए बाहरी धनात्मक कार्य चाहिए। उसकी स्थितिज ऊर्जा कम ऋणात्मक होती है। संदर्भ बदलने से विभव में नियतांक जुड़ता है, गुरुत्व बल नहीं बदलता। बल स्थितिज ऊर्जा की स्थान के साथ कमी से जुड़ा है। सतह के पास बहुत छोटी ऊँचाई के अंतर पर सटीक ऊर्जा अंतर लगभग mgh बन जाता है। इसलिए mgh और −GMm/r विरोधी सूत्र नहीं; उनकी सन्निकटन शर्तें और शून्य संदर्भ अक्सर अलग हैं। स्थितिज ऊर्जा पृथ्वी–पिंड अंतःक्रिया वाले निकाय की है, जबकि विभव प्रति इकाई द्रव्यमान पर गुरुत्वीय वातावरण का वर्णन करता है। प्रश्न में किस राशि की माँग है, पहले पहचानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Potential has unit J/kg; potential energy has unit J. Multiplying V by the test mass m converts between them without changing the source mass M.",
+          "hi": "विभव का मात्रक J/kg और स्थितिज ऊर्जा का J है। V को परीक्षण द्रव्यमान m से गुणा करके U मिलता है; स्रोत द्रव्यमान M वही रहता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "As a body moves farther from Earth, does U increase or decrease?",
+          "hi": "पिंड पृथ्वी से दूर जाए तो U बढ़ती या घटती है?"
+        },
+        "answer": {
+          "en": "It increases toward zero from below when zero is chosen at infinity.",
+          "hi": "अनंत पर शून्य चुनने से यह ऋणात्मक मान से शून्य की ओर बढ़ती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Circular satellites and free fall",
+        "hi": "वृत्तीय उपग्रह और मुक्त पतन"
+      },
+      "paragraphs": [
+        {
+          "en": "A circular satellite requires inward acceleration v²/r. When gravity supplies this acceleration, GMm/r² = mv²/r and orbital speed is vc = √(GM/r). The satellite's mass cancels; at a given orbital radius different small satellites have the same ideal circular speed. The period is T = 2π√(r³/GM). Increasing orbital radius decreases speed but increases period because the path is larger and motion is slower. The radius is measured from the planet's centre, not its surface. A satellite is continuously falling: its sideways motion makes the surface curve away as it falls. Gravity is therefore essential to orbit, not absent from it. The circular model neglects air drag, other bodies, propulsion and orbital eccentricity. Near Earth, an orbit at r = R is a mathematical surface-speed limit, not a practical safe orbit through the atmosphere, terrain or buildings. Use real satellite altitudes only with appropriate modelling assumptions.",
+          "hi": "वृत्तीय उपग्रह को भीतर की ओर v²/r त्वरण चाहिए। गुरुत्व यह त्वरण दे तो GMm/r² = mv²/r से कक्षीय चाल vc = √(GM/r) मिलती है। उपग्रह का द्रव्यमान निरस्त हो जाता है। इसलिए एक ही कक्षीय त्रिज्या पर छोटे अलग उपग्रहों की आदर्श वृत्तीय चाल समान है। आवर्तकाल T = 2π√(r³/GM) है। त्रिज्या बढ़ने पर चाल घटती और आवर्तकाल बढ़ता है, क्योंकि रास्ता बड़ा तथा गति धीमी होती है। r ग्रह के केंद्र से दूरी है, सतह से ऊँचाई नहीं। उपग्रह लगातार मुक्त पतन में है। उसकी बगल की चाल के कारण गिरते समय पृथ्वी की सतह नीचे मुड़ती जाती है। इसलिए कक्षा के लिए गुरुत्व आवश्यक है, अनुपस्थित नहीं। वृत्तीय मॉडल में वायु घर्षण, अन्य पिंड, इंजन तथा कक्षा की उत्केंद्रता छोड़े हैं। r = R पर मिली चाल गणितीय सतही सीमा है; वातावरण, पहाड़ और इमारतों के बीच व्यावहारिक सुरक्षित कक्षा नहीं। वास्तविक उपग्रह की ऊँचाई पर इन शर्तों को ध्यान में रखकर ही तुलना करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Using g0R² = GM, a surface circular-speed scale is √(g0R) ≈ 7.90 km/s for the constants used here.",
+          "hi": "g0R² = GM रखने से सतही वृत्तीय चाल का पैमाना √(g0R) ≈ 7.90 km/s मिलता है। यह यहाँ लिए नियतांकों वाला आदर्श गणितीय मान है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a satellite need gravity while orbiting?",
+          "hi": "क्या कक्षा में उपग्रह को गुरुत्व चाहिए?"
+        },
+        "answer": {
+          "en": "Yes; gravity supplies the inward acceleration.",
+          "hi": "हाँ; गुरुत्व भीतर की ओर त्वरण देता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Energy of a circular orbit and escape",
+        "hi": "वृत्तीय कक्षा की ऊर्जा और पलायन"
+      },
+      "paragraphs": [
+        {
+          "en": "For a circular orbit, K = GMm/(2r), U = −GMm/r and total mechanical energy E = −GMm/(2r). A negative total energy indicates a bound orbit under the ideal isolated two-body gravitational model. Escape speed is the minimum initial speed that allows a body to reach infinity with zero final speed if no further propulsion or energy losses occur. Setting ½mve² − GMm/r = 0 gives ve = √(2GM/r). Thus ve is √2 times the circular speed at the same radius. It is independent of the escaping test mass. Escape does not mean that gravity becomes zero at a finite boundary; gravity continues to weaken with distance. Launch direction does not change the ideal energy threshold, but a path intersecting the planet is not a physically useful escape trajectory. Real launches also involve atmospheric drag, Earth's rotation and rocket propulsion, so this speed is a clearly defined ideal energy scale.",
+          "hi": "वृत्तीय कक्षा में K = GMm/(2r), U = −GMm/r और कुल यांत्रिक ऊर्जा E = −GMm/(2r) है। आदर्श विलग दो-पिंड गुरुत्व मॉडल में ऋणात्मक कुल ऊर्जा बँधी कक्षा बताती है। पलायन चाल (Escape speed) न्यूनतम प्रारंभिक चाल है जिससे बिना आगे प्रणोदन तथा ऊर्जा हानि के पिंड अनंत पर शून्य अंतिम चाल से पहुँच सके। ½mve² − GMm/r = 0 रखने से ve = √(2GM/r) मिलता है। इसलिए समान r पर पलायन चाल वृत्तीय चाल की √2 गुनी है। यह निकलते परीक्षण पिंड के द्रव्यमान पर निर्भर नहीं है। पलायन का अर्थ किसी निश्चित सीमा पर गुरुत्व का अचानक शून्य होना नहीं है। दूरी बढ़ने पर गुरुत्व लगातार कमजोर होता है। आदर्श ऊर्जा सीमा प्रक्षेपण दिशा से नहीं बदलती, लेकिन ग्रह से टकराने वाला मार्ग उपयोगी पलायन मार्ग नहीं होगा। वास्तविक प्रक्षेपण में वायु घर्षण, पृथ्वी का घूर्णन और रॉकेट का प्रणोदन भी शामिल हैं। इसलिए इस चाल को स्पष्ट शर्तों वाला आदर्श ऊर्जा पैमाना समझें, सीधे वास्तविक उड़ान निर्देश नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "With g0 = 9.8 m/s² and R = 6.37 × 10⁶ m, ve at the surface is about 11.17 km/s; show the unit conversion from m/s.",
+          "hi": "g0 = 9.8 m/s² तथा R = 6.37 × 10⁶ m पर सतह की ve लगभग 11.17 km/s है। m/s से km/s बदलने के लिए 1000 से भाग दें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is ve/vc at the same radius?",
+          "hi": "समान त्रिज्या पर ve/vc कितना है?"
+        },
+        "answer": {
+          "en": "√2 in the ideal gravitational model.",
+          "hi": "आदर्श गुरुत्व मॉडल में √2।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Kepler’s laws and orbital comparisons",
+        "hi": "केप्लर के नियम और कक्षीय तुलना"
+      },
+      "paragraphs": [
+        {
+          "en": "Kepler's first law describes a planet's orbit as an ellipse with the Sun at one focus. The second law states that the line joining planet and Sun sweeps equal areas in equal times. It implies faster motion near the Sun and slower motion farther away, consistent with angular-momentum conservation under a central force. The third law states that T² is proportional to a³ for bodies orbiting the same dominant central mass, where a is the ellipse's semimajor axis. For a circular orbit, a equals r and Newton's result gives T² = 4π²r³/(GM). Do not use surface altitude in place of a or compare systems with different central masses without including M. An orbit's drawing may exaggerate eccentricity to make the geometry visible. The Sun is at a focus, not at the geometric centre of a noncircular ellipse. These empirical laws and the inverse-square force provide mutually consistent descriptions within the Newtonian approximation.",
+          "hi": "केप्लर का पहला नियम ग्रह की कक्षा को दीर्घवृत्त बताता है, जिसके एक फोकस पर सूर्य है। दूसरे नियम में ग्रह तथा सूर्य को जोड़ने वाली रेखा समान समय में समान क्षेत्रफल झाड़ती है। इससे सूर्य के निकट तेज और दूर धीमी गति मिलती है। केंद्रीय बल में यह कोणीय संवेग संरक्षण के अनुरूप है। तीसरा नियम समान प्रमुख केंद्रीय द्रव्यमान के चारों ओर घूमते पिंडों के लिए T² ∝ a³ कहता है। यहाँ a दीर्घवृत्त का अर्ध-दीर्घ अक्ष है। वृत्तीय कक्षा में a = r और न्यूटन से T² = 4π²r³/(GM) मिलता है। a की जगह सतह से ऊँचाई न रखें। अलग केंद्रीय द्रव्यमानों की तुलना में M को छोड़ा नहीं जा सकता। दीर्घवृत्त का चित्र आकृति स्पष्ट करने के लिए उत्केंद्रता बढ़ाकर दिखा सकता है। गैरवृत्तीय दीर्घवृत्त में सूर्य फोकस पर है, ज्यामितीय केंद्र पर नहीं। ये अनुभवजन्य नियम और व्युत्क्रम वर्ग बल न्यूटनीय सन्निकटन में परस्पर संगत विवरण देते हैं। किसी तुलना से पहले दोनों कक्षाओं का केंद्रीय पिंड पहचानना जरूरी है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "If orbital radius doubles in a circular orbit around the same planet, the period becomes 2√2 times and the speed becomes 1/√2 times.",
+          "hi": "समान ग्रह की वृत्तीय कक्षा में त्रिज्या दुगुनी हो तो आवर्तकाल 2√2 गुना और चाल 1/√2 गुनी होती है। दोनों बदलाव अलग घातों से आते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Where is the Sun in Kepler’s first law?",
+          "hi": "केप्लर के पहले नियम में सूर्य कहाँ है?"
+        },
+        "answer": {
+          "en": "At one focus of the elliptical orbit.",
+          "hi": "दीर्घवृत्तीय कक्षा के एक फोकस पर।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Weightlessness and model checks",
+        "hi": "भारहीनता और मॉडल की जाँच"
+      },
+      "paragraphs": [
+        {
+          "en": "A weighing scale reads a supporting normal force, often called apparent weight, rather than measuring gravitational attraction directly in every situation. In a freely falling lift, the person and scale accelerate together; the normal force can become zero even while g remains appreciable. The same reasoning explains astronauts floating in an orbiting spacecraft. For calculations, write what distance is measured, which quantities are fixed and which approximations are used. Check limiting behaviour: the external gravitational field tends toward zero as r becomes very large, the chosen potential tends toward zero from negative values and the escape speed decreases. At Earth's centre the uniform-density model gives zero field, but not zero potential. Use consistent units before square roots and keep the source mass distinct from the orbiting mass. A numerical result should include an interpretation: a slower circular satellite at a larger radius takes longer to complete its larger orbit. A visually faster animation need not represent real orbital time unless the model explicitly sets that scale.",
+          "hi": "तौल मशीन सहारा देने वाला अभिलंब बल पढ़ती है, जिसे आभासी भार कहते हैं। हर स्थिति में वह सीधे गुरुत्व आकर्षण नहीं मापती। मुक्त गिरती लिफ्ट में व्यक्ति और मशीन साथ त्वरण पाते हैं। अभिलंब बल शून्य हो सकता है, भले g पर्याप्त हो। कक्षा के अंतरिक्ष यान में तैरते यात्रियों को भी यही तर्क समझाता है। गणना में लिखें कि दूरी कहाँ से मापी है, कौन-सी राशियाँ नियत तथा कौन-से सन्निकटन लिए हैं। सीमांत व्यवहार जाँचें। r बहुत बड़ा होने पर बाहरी गुरुत्व क्षेत्र शून्य की ओर जाता, चुना विभव ऋणात्मक मान से शून्य की ओर आता और पलायन चाल घटती है। एकसमान घनत्व मॉडल में पृथ्वी के केंद्र पर क्षेत्र शून्य है, विभव नहीं। वर्गमूल से पहले इकाइयाँ संगत करें और स्रोत द्रव्यमान को उपग्रह द्रव्यमान से अलग रखें। संख्या का अर्थ भी लिखें: बड़ी त्रिज्या वाला धीमा उपग्रह बड़ी कक्षा पूरी करने में अधिक समय लेता है। दृश्य में तेज घूमता बिंदु वास्तविक कक्षीय समय नहीं बताता, जब तक मॉडल स्पष्ट रूप से वही समय पैमाना न दे।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Schematic distances and accelerated time help visualisation. Read the numerical values and stated assumptions before treating a screen animation as a measured physical experiment.",
+          "hi": "सांकेतिक दूरी तथा तेज किया समय समझाने में मदद करते हैं। स्क्रीन दृश्य को मापा भौतिक प्रयोग मानने से पहले संख्यात्मक मान और मॉडल की शर्तें पढ़ें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can an orbiting astronaut feel weightless while gravity acts?",
+          "hi": "गुरुत्व होते हुए कक्षीय यात्री भारहीन क्यों लगता है?"
+        },
+        "answer": {
+          "en": "The astronaut and spacecraft are in free fall together, with negligible supporting force.",
+          "hi": "यात्री और यान साथ मुक्त पतन में हैं तथा सहारा बल नगण्य है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "F = GMm/r²; g = GM/r²",
+      "meaning": {
+        "en": "External field of a spherical source; r is centre distance.",
+        "hi": "गोल स्रोत का बाहरी क्षेत्र; r केंद्र से दूरी है।"
+      },
+      "units": {
+        "en": "F: N; g: m/s²; G: N m²/kg²",
+        "hi": "F: N; g: m/s²; G: N m²/kg²"
+      }
+    },
+    {
+      "expression": "g(h) = g0[R/(R+h)]²",
+      "meaning": {
+        "en": "Exact external spherical altitude dependence.",
+        "hi": "गोल बाहरी क्षेत्र में ऊँचाई पर निर्भरता।"
+      },
+      "units": {
+        "en": "h,R: m; g: m/s²",
+        "hi": "h,R: m; g: m/s²"
+      }
+    },
+    {
+      "expression": "U = −GMm/r; V = −GM/r",
+      "meaning": {
+        "en": "Zero energy/potential at infinity.",
+        "hi": "अनंत पर ऊर्जा/विभव शून्य।"
+      },
+      "units": {
+        "en": "U: J; V: J/kg",
+        "hi": "U: J; V: J/kg"
+      }
+    },
+    {
+      "expression": "vc = √(GM/r); T = 2π√(r³/GM)",
+      "meaning": {
+        "en": "Circular orbit with negligible satellite mass.",
+        "hi": "नगण्य उपग्रह द्रव्यमान वाली वृत्तीय कक्षा।"
+      },
+      "units": {
+        "en": "vc: m/s; T: s",
+        "hi": "vc: m/s; T: s"
+      }
+    },
+    {
+      "expression": "ve = √(2GM/r)",
+      "meaning": {
+        "en": "Minimum ideal escape speed; no losses or further propulsion.",
+        "hi": "न्यूनतम आदर्श पलायन चाल; हानि या आगे प्रणोदन नहीं।"
+      },
+      "units": {
+        "en": "ve: m/s",
+        "hi": "ve: m/s"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse altitude h with centre distance R+h, apparent weightlessness with zero gravity, or G with g.",
+    "hi": "ऊँचाई h को केंद्र दूरी R+h, आभासी भारहीनता को शून्य गुरुत्व तथा G को g न समझें।"
+  },
+  "summary": [
+    {
+      "en": "Gravity follows an inverse-square law for point or external spherical sources.",
+      "hi": "बिंदु या बाहरी गोल स्रोत का गुरुत्व व्युत्क्रम वर्ग नियम मानता है।"
+    },
+    {
+      "en": "Potential and potential energy use a chosen zero reference.",
+      "hi": "विभव तथा स्थितिज ऊर्जा का शून्य संदर्भ चुना जाता है।"
+    },
+    {
+      "en": "Gravity supplies satellite centripetal acceleration.",
+      "hi": "गुरुत्व उपग्रह का अभिकेंद्रीय त्वरण देता है।"
+    },
+    {
+      "en": "At one radius ve = √2 vc.",
+      "hi": "एक ही त्रिज्या पर ve = √2 vc है।"
+    },
+    {
+      "en": "Orbiting weightlessness is shared free fall.",
+      "hi": "कक्षीय भारहीनता साथ का मुक्त पतन है।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find g at h = R.",
+        "hi": "h = R पर g निकालें।"
+      },
+      "given": {
+        "en": "g0 = 9.8 m/s²; spherical Earth.",
+        "hi": "g0 = 9.8 m/s²; गोल पृथ्वी।"
+      },
+      "find": {
+        "en": "g at altitude R.",
+        "hi": "R ऊँचाई पर g।"
+      },
+      "formula": {
+        "en": "g = g0[R/(R+h)]²",
+        "hi": "g = g0[R/(R+h)]²"
+      },
+      "steps": [
+        {
+          "en": "R+h = 2R.",
+          "hi": "R+h = 2R।"
+        },
+        {
+          "en": "g = 9.8/4.",
+          "hi": "g = 9.8/4।"
+        }
+      ],
+      "answer": {
+        "en": "2.45 m/s².",
+        "hi": "2.45 m/s²।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find weight of a 60 kg astronaut where g = 2.45 m/s².",
+        "hi": "g = 2.45 m/s² पर 60 kg यात्री का गुरुत्वीय भार निकालें।"
+      },
+      "given": {
+        "en": "m = 60 kg; local g = 2.45 m/s².",
+        "hi": "m = 60 kg; स्थानीय g = 2.45 m/s²।"
+      },
+      "find": {
+        "en": "Gravitational force, not scale reading in free fall.",
+        "hi": "गुरुत्व बल, मुक्त पतन की मशीन रीडिंग नहीं।"
+      },
+      "formula": {
+        "en": "Fg = mg",
+        "hi": "Fg = mg"
+      },
+      "steps": [
+        {
+          "en": "Multiply 60 by 2.45.",
+          "hi": "60 को 2.45 से गुणा करें।"
+        },
+        {
+          "en": "Mass stays 60 kg.",
+          "hi": "द्रव्यमान 60 kg ही रहता है।"
+        }
+      ],
+      "answer": {
+        "en": "147 N gravitational force.",
+        "hi": "147 N गुरुत्व बल।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Estimate surface escape speed.",
+        "hi": "सतही पलायन चाल का अनुमान लें।"
+      },
+      "given": {
+        "en": "g0 = 9.8 m/s²; R = 6.37 × 10⁶ m; no atmosphere or rotation.",
+        "hi": "g0 = 9.8 m/s²; R = 6.37 × 10⁶ m; वातावरण तथा घूर्णन नहीं।"
+      },
+      "find": {
+        "en": "ve.",
+        "hi": "ve।"
+      },
+      "formula": {
+        "en": "ve = √(2g0R)",
+        "hi": "ve = √(2g0R)"
+      },
+      "steps": [
+        {
+          "en": "2g0R = 1.24852 × 10⁸ m²/s².",
+          "hi": "2g0R = 1.24852 × 10⁸ m²/s²।"
+        },
+        {
+          "en": "Take square root and divide m/s by 1000.",
+          "hi": "वर्गमूल लें और m/s को 1000 से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "About 1.117 × 10⁴ m/s = 11.17 km/s.",
+        "hi": "लगभग 1.117 × 10⁴ m/s = 11.17 km/s।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Compare circular speeds at R and 4R.",
+        "hi": "R तथा 4R पर वृत्तीय चाल तुलना करें।"
+      },
+      "given": {
+        "en": "Same spherical source, negligible satellite masses.",
+        "hi": "समान गोल स्रोत, नगण्य उपग्रह द्रव्यमान।"
+      },
+      "find": {
+        "en": "v(4R)/v(R).",
+        "hi": "v(4R)/v(R)।"
+      },
+      "formula": {
+        "en": "vc ∝ 1/√r",
+        "hi": "vc ∝ 1/√r"
+      },
+      "steps": [
+        {
+          "en": "The radius ratio is 4.",
+          "hi": "त्रिज्या अनुपात 4 है।"
+        },
+        {
+          "en": "Speed ratio = 1/√4.",
+          "hi": "चाल अनुपात = 1/√4।"
+        }
+      ],
+      "answer": {
+        "en": "½; the larger orbit has half the circular speed.",
+        "hi": "½; बड़ी कक्षा की वृत्तीय चाल आधी है।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find circular orbit energy and escape energy needed.",
+        "hi": "वृत्तीय कक्षा ऊर्जा तथा पलायन के लिए अतिरिक्त ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "GM = 4.0 × 10¹⁴ m³/s²; m = 1000 kg; r = 8.0 × 10⁶ m.",
+        "hi": "GM = 4.0 × 10¹⁴ m³/s²; m = 1000 kg; r = 8.0 × 10⁶ m।"
+      },
+      "find": {
+        "en": "K,U,E and minimum added energy to marginal escape.",
+        "hi": "K,U,E और सीमांत पलायन की न्यूनतम अतिरिक्त ऊर्जा।"
+      },
+      "formula": {
+        "en": "K = GMm/(2r); U = −GMm/r; E = −GMm/(2r)",
+        "hi": "K = GMm/(2r); U = −GMm/r; E = −GMm/(2r)"
+      },
+      "steps": [
+        {
+          "en": "GMm/r = 5.0 × 10¹⁰ J.",
+          "hi": "GMm/r = 5.0 × 10¹⁰ J।"
+        },
+        {
+          "en": "K = 2.5 × 10¹⁰ J; U = −5.0 × 10¹⁰ J.",
+          "hi": "K = 2.5 × 10¹⁰ J; U = −5.0 × 10¹⁰ J।"
+        },
+        {
+          "en": "E = −2.5 × 10¹⁰ J; raise total energy to 0 for marginal escape.",
+          "hi": "E = −2.5 × 10¹⁰ J; सीमांत पलायन में कुल ऊर्जा 0 तक बढ़ाएँ।"
+        }
+      ],
+      "answer": {
+        "en": "E = −2.5 × 10¹⁰ J; add 2.5 × 10¹⁰ J ideally.",
+        "hi": "E = −2.5 × 10¹⁰ J; आदर्शतः 2.5 × 10¹⁰ J जोड़ें।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "At altitude h = R, g equals?",
+        "hi": "h = R ऊँचाई पर g?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "g0/2",
+            "hi": "g0/2"
+          },
+          "reason": {
+            "en": "Distance is 2R and the dependence is squared.",
+            "hi": "दूरी 2R है और निर्भरता वर्ग में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "g0/4",
+            "hi": "g0/4"
+          },
+          "reason": {
+            "en": "g = g0(R/2R)².",
+            "hi": "g = g0(R/2R)²।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Gravity does not vanish there.",
+            "hi": "वहाँ गुरुत्व शून्य नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2g0",
+            "hi": "2g0"
+          },
+          "reason": {
+            "en": "Gravity decreases outward.",
+            "hi": "बाहर गुरुत्व घटता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "What is the distance r in GMm/r² for a spherical planet?",
+        "hi": "गोल ग्रह में GMm/r² का r क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Centre-to-centre distance",
+            "hi": "केंद्रों के बीच दूरी"
+          },
+          "reason": {
+            "en": "The external spherical field is equivalent to a central point mass.",
+            "hi": "बाहरी गोल क्षेत्र केंद्रीय बिंदु द्रव्यमान जैसा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Altitude only",
+            "hi": "केवल ऊँचाई"
+          },
+          "reason": {
+            "en": "It must be R+h.",
+            "hi": "यह R+h होना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Planet diameter always",
+            "hi": "हमेशा ग्रह का व्यास"
+          },
+          "reason": {
+            "en": "The body can be at many radii.",
+            "hi": "पिंड कई त्रिज्याओं पर हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Satellite diameter",
+            "hi": "उपग्रह का व्यास"
+          },
+          "reason": {
+            "en": "That does not set the orbital separation.",
+            "hi": "यह कक्षीय दूरी नहीं बताता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "With zero potential at infinity, V outside a planet is?",
+        "hi": "अनंत पर शून्य चुनने से ग्रह के बाहर V?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "+GM/r",
+            "hi": "+GM/r"
+          },
+          "reason": {
+            "en": "Attraction gives a negative potential relative to infinity.",
+            "hi": "अनंत की तुलना में आकर्षण का विभव ऋणात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "GM/r²",
+            "hi": "GM/r²"
+          },
+          "reason": {
+            "en": "This has acceleration units.",
+            "hi": "इसकी इकाई त्वरण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−GM/r",
+            "hi": "−GM/r"
+          },
+          "reason": {
+            "en": "V is potential energy per unit test mass.",
+            "hi": "V प्रति इकाई परीक्षण द्रव्यमान ऊर्जा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−GMm/r",
+            "hi": "−GMm/r"
+          },
+          "reason": {
+            "en": "This is potential energy, not potential.",
+            "hi": "यह स्थितिज ऊर्जा है, विभव नहीं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Circular orbital speed is?",
+        "hi": "वृत्तीय कक्षीय चाल?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "√(2GM/r)",
+            "hi": "√(2GM/r)"
+          },
+          "reason": {
+            "en": "That is escape speed.",
+            "hi": "यह पलायन चाल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "GM/r²",
+            "hi": "GM/r²"
+          },
+          "reason": {
+            "en": "That is gravitational acceleration.",
+            "hi": "यह गुरुत्व त्वरण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2πr",
+            "hi": "2πr"
+          },
+          "reason": {
+            "en": "That is circumference.",
+            "hi": "यह परिधि है।"
+          }
+        },
+        {
+          "text": {
+            "en": "√(GM/r)",
+            "hi": "√(GM/r)"
+          },
+          "reason": {
+            "en": "Gravity supplies mv²/r.",
+            "hi": "गुरुत्व mv²/r देता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "At the same radius, escape speed/circular speed is?",
+        "hi": "समान त्रिज्या पर पलायन चाल/वृत्तीय चाल?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "√2",
+            "hi": "√2"
+          },
+          "reason": {
+            "en": "The squared escape speed is twice the squared circular speed.",
+            "hi": "पलायन चाल का वर्ग वृत्तीय चाल के वर्ग का दुगुना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "The factor is inside the square root.",
+            "hi": "गुणक वर्गमूल के अंदर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "½",
+            "hi": "½"
+          },
+          "reason": {
+            "en": "Escape requires more speed.",
+            "hi": "पलायन को अधिक चाल चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "A circular orbit remains bound.",
+            "hi": "वृत्तीय कक्षा बँधी रहती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For equal orbital radius around the same planet, speed depends on satellite mass?",
+        "hi": "समान ग्रह और कक्षीय त्रिज्या में चाल उपग्रह द्रव्यमान पर निर्भर?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Yes, directly",
+            "hi": "हाँ, सीधे"
+          },
+          "reason": {
+            "en": "The test mass cancels from force and inertia.",
+            "hi": "परीक्षण द्रव्यमान बल और जड़त्व से निरस्त है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No in the small-satellite model",
+            "hi": "छोटे उपग्रह मॉडल में नहीं"
+          },
+          "reason": {
+            "en": "vc = √(GM/r) contains the source mass M.",
+            "hi": "vc = √(GM/r) में स्रोत द्रव्यमान M है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only on satellite colour",
+            "hi": "केवल उपग्रह के रंग पर"
+          },
+          "reason": {
+            "en": "Colour is not in this dynamical relation.",
+            "hi": "रंग इस गतिकीय संबंध में नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only on its volume",
+            "hi": "केवल उसके आयतन पर"
+          },
+          "reason": {
+            "en": "Volume is not the determining variable here.",
+            "hi": "यहाँ आयतन निर्णायक चर नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Kepler’s equal-area law means a planet moves faster?",
+        "hi": "केप्लर के समान क्षेत्रफल नियम में ग्रह तेज कब?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Farther from the Sun",
+            "hi": "सूर्य से दूर"
+          },
+          "reason": {
+            "en": "It moves more slowly there.",
+            "hi": "वहाँ धीमा चलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "At a fixed speed everywhere",
+            "hi": "हर जगह नियत चाल"
+          },
+          "reason": {
+            "en": "An elliptical orbit has changing speed.",
+            "hi": "दीर्घवृत्तीय कक्षा में चाल बदलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Nearer the Sun",
+            "hi": "सूर्य के निकट"
+          },
+          "reason": {
+            "en": "Equal areas in equal times require higher speed nearby.",
+            "hi": "निकट समान समय में समान क्षेत्रफल के लिए अधिक चाल चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only at midnight",
+            "hi": "केवल आधी रात"
+          },
+          "reason": {
+            "en": "Clock time does not determine orbital position.",
+            "hi": "घड़ी का समय कक्षीय स्थिति नहीं तय करता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "For circular orbits around the same source, T² ∝ ?",
+        "hi": "समान स्रोत की वृत्तीय कक्षाओं में T² ∝ ?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "r",
+            "hi": "r"
+          },
+          "reason": {
+            "en": "The dependence is cubic.",
+            "hi": "निर्भरता घन में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "r²",
+            "hi": "r²"
+          },
+          "reason": {
+            "en": "This is not Kepler’s third law.",
+            "hi": "यह केप्लर का तीसरा नियम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/r³",
+            "hi": "1/r³"
+          },
+          "reason": {
+            "en": "Larger orbits have longer periods.",
+            "hi": "बड़ी कक्षा का आवर्तकाल अधिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "r³",
+            "hi": "r³"
+          },
+          "reason": {
+            "en": "T² = 4π²r³/(GM).",
+            "hi": "T² = 4π²r³/(GM)।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Astronauts float in orbit mainly because?",
+        "hi": "कक्षा में यात्री मुख्यतः क्यों तैरते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "They and the spacecraft fall freely together",
+            "hi": "वे और यान साथ मुक्त पतन में हैं"
+          },
+          "reason": {
+            "en": "The supporting normal force is negligible.",
+            "hi": "सहारा देने वाला अभिलंब बल नगण्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Gravity is exactly zero",
+            "hi": "गुरुत्व बिल्कुल शून्य है"
+          },
+          "reason": {
+            "en": "Gravity supplies orbital acceleration.",
+            "hi": "गुरुत्व कक्षीय त्वरण देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Their mass vanishes",
+            "hi": "द्रव्यमान गायब है"
+          },
+          "reason": {
+            "en": "Mass remains.",
+            "hi": "द्रव्यमान रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Air always lifts them",
+            "hi": "हवा हमेशा उठाती है"
+          },
+          "reason": {
+            "en": "This is not the orbital mechanism.",
+            "hi": "यह कक्षीय कारण नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Inside a uniform-density spherical Earth, g at the centre is?",
+        "hi": "एकसमान घनत्व वाली गोल पृथ्वी के केंद्र पर g?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Infinite",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "Symmetry cancels the field.",
+            "hi": "सममिति से क्षेत्र निरस्त है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "g = g0 r/R gives zero at r = 0.",
+            "hi": "g = g0 r/R में r = 0 पर शून्य।"
+          }
+        },
+        {
+          "text": {
+            "en": "g0",
+            "hi": "g0"
+          },
+          "reason": {
+            "en": "That is the surface value.",
+            "hi": "यह सतह का मान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative mass",
+            "hi": "ऋणात्मक द्रव्यमान"
+          },
+          "reason": {
+            "en": "This is neither an acceleration nor a physical requirement.",
+            "hi": "यह न त्वरण है, न आवश्यक शर्त।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish G and g.",
+        "hi": "G तथा g में अंतर करें।"
+      },
+      "answer": {
+        "en": "G is universal with unit N m²/kg²; g is local acceleration with unit m/s².",
+        "hi": "G सार्वत्रिक नियतांक N m²/kg² में है; g स्थानीय त्वरण m/s² में है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why use R+h rather than h in altitude gravity?",
+        "hi": "ऊँचाई के गुरुत्व में h की जगह R+h क्यों?"
+      },
+      "answer": {
+        "en": "The inverse-square law uses distance from the source centre.",
+        "hi": "व्युत्क्रम वर्ग नियम स्रोत के केंद्र से दूरी लेता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Define escape speed with assumptions.",
+        "hi": "शर्तों सहित पलायन चाल परिभाषित करें।"
+      },
+      "answer": {
+        "en": "It is the minimum initial speed to reach infinity at zero final speed without later propulsion or energy losses.",
+        "hi": "बिना आगे प्रणोदन या ऊर्जा हानि के अनंत पर शून्य अंतिम चाल से पहुँचने की न्यूनतम प्रारंभिक चाल है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does a larger circular orbit have a longer period?",
+        "hi": "बड़ी वृत्तीय कक्षा का आवर्तकाल अधिक क्यों?"
+      },
+      "answer": {
+        "en": "Its circumference is greater and its circular speed is smaller; T ∝ r³ᐟ².",
+        "hi": "उसकी परिधि बड़ी तथा वृत्तीय चाल छोटी है; T ∝ r³ᐟ²।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain negative gravitational potential energy.",
+        "hi": "ऋणात्मक गुरुत्वीय स्थितिज ऊर्जा समझाएँ।"
+      },
+      "answer": {
+        "en": "With zero at infinity, energy must be supplied to separate an attracting bound pair.",
+        "hi": "अनंत पर शून्य लेने से बँधे आकर्षक युग्म को अलग करने के लिए ऊर्जा देनी पड़ती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Does zero g inside a shell imply zero potential?",
+        "hi": "खोल के भीतर g शून्य से विभव भी शून्य है?"
+      },
+      "answer": {
+        "en": "No; potential can be constant and nonzero while its spatial gradient is zero.",
+        "hi": "नहीं; विभव नियत तथा अशून्य हो सकता है, जबकि उसका स्थानिक परिवर्तन शून्य हो।"
+      }
+    }
+  ],
+  "conceptMap": "सार्वत्रिक आकर्षण → क्षेत्र और विभव → ऊँचाई/गहराई → वृत्तीय कक्षा → कक्षीय ऊर्जा → पलायन → केप्लर नियम",
+  "conceptMapEn": "Universal attraction → field and potential → altitude/depth → circular orbit → orbital energy → escape → Kepler laws",
+  "editionBasis": {
+    "en": "Original explanations aligned to NCERT Class 11 Physics and UP Board 2026–27; ideal models have stated assumptions.",
+    "hi": "NCERT कक्षा 11 भौतिकी तथा यूपी बोर्ड 2026–27 पर आधारित मौलिक व्याख्याएँ; आदर्श मॉडलों की शर्तें स्पष्ट हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part I · Chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keph107.pdf"
+    },
+    {
+      "title": "UP Board Class 11 Physics 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ]
+}

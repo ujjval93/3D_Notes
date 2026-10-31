@@ -1,0 +1,3 @@
+import {b,fmt,clamp,shells,heating,work,buoyancy,pendulum,falling} from '../math.js';
+import {C,reflect,read,particles,molecule,atom,cell,neuron,plants,organelles} from '../scene-utils.js';
+export default ({g,p})=>{let names=[b('Grass','घास'),b('Insect','कीट'),b('Frog','मेंढक'),b('Snake','साँप')];for(let i=0;i<4;i++){let x=-1.2+i*.8;g.sphere(x,0,0,.16,[C.green,C.gold,C.blue,C.pink][i],names[i]);if(i<3)g.arrow([x+.2,0,0],[x+.6,0,0],C.white)}return[read('Producer energy','उत्पादक ऊर्जा',p[0],'kJ'),read('Illustrative first consumer','सांकेतिक प्रथम उपभोक्ता',fmt(p[0]*.1),'kJ'),read('Illustrative second consumer','सांकेतिक द्वितीय उपभोक्ता',fmt(p[0]*.01),'kJ'),read('Illustrative third consumer','सांकेतिक तृतीय उपभोक्ता',fmt(p[0]*.001),'kJ')];};

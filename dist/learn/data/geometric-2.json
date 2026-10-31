@@ -1,0 +1,401 @@
+{
+  "id": "geometric-2",
+  "number": 2,
+  "title": {
+    "en": "Rangoli-style Design",
+    "hi": "रंगोली शैली का डिजाइन"
+  },
+  "engine": "geodraw",
+  "drawingKind": "rangoli",
+  "goal": {
+    "en": "Build a 6-part rangoli-inspired design while distinguishing guided geometry from the diversity of living traditions.",
+    "hi": "निर्देशित ज्यामिति को विविध जीवित परंपराओं से अलग समझते हुए 6 भाग का रंगोली प्रेरित डिजाइन बनाएँ।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Tradition and Classroom Study",
+        "hi": "परंपरा और कक्षा अध्ययन"
+      },
+      "body": {
+        "en": "Rangoli is one of several Indian floor-art traditions, with materials, names, meanings and methods that vary by region and community. This lesson is a classroom geometric design inspired by such practices, not a rule for every tradition. Begin with a paper or screen study using a six-part radial layout. A familiar local pattern can be discussed respectfully alongside it. Credit the person or community who shared an example instead of presenting every design as anonymous decoration. Set a small, achievable study on the page rather than filling every corner. Keep the first construction lines light enough to correct. Compare the largest measurements before committing to small details. Pause after this stage and name the single visual problem you want to solve in your study.",
+        "hi": "रंगोली भारत की कई धरातलीय कला परंपराओं में से है। क्षेत्र और समुदाय के अनुसार नाम, सामग्री, अर्थ तथा विधि बदलते हैं। यह पाठ उनसे प्रेरित कक्षा का ज्यामितीय डिजाइन है, हर परंपरा का नियम नहीं। कागज या स्क्रीन पर 6 भाग के चक्रीय विन्यास से शुरू करें। परिचित स्थानीय पैटर्न की सम्मानपूर्वक चर्चा भी करें। किसी उदाहरण को साझा करने वाले व्यक्ति या समुदाय का नाम दें; हर डिजाइन को अनाम सजावट मानकर प्रस्तुत न करें। पृष्ठ के हर कोने को भरने के बजाय एक छोटा और स्पष्ट अध्ययन चुनें। शुरुआती निर्माण रेखाएँ इतनी हल्की रखें कि उन्हें सुधारा जा सके। छोटे विवरण से पहले सबसे बड़े मापों की तुलना करें। इस चरण के बाद रुककर बताएँ कि आप अपने अध्ययन में कौन सी मुख्य दृश्य समस्या हल करना चाहते हैं।"
+      },
+      "question": {
+        "en": "Which visible relationship would you check at this stage? Explain using this study.",
+        "hi": "इस चरण में कौन सा दिखाई देने वाला संबंध जाँचेंगे? इसी अध्ययन के आधार पर समझाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Centre and Radial Planning",
+        "hi": "केंद्र और चक्रीय योजना"
+      },
+      "body": {
+        "en": "Choose a centre and leave space for an outer ring before enlarging the main flower. Light horizontal and vertical guides establish orientation. Draw a base circle and divide it into six equal parts using the fixed-radius method. The centre should stay fixed when constructing concentric rings. A design drifting sideways becomes hard to balance even if each petal is attractive. Decide which elements repeat and which small accents are deliberately varied. Use a ruler for comparisons when appropriate, but do not let measuring replace looking. A useful check is to compare both the occupied shapes and the empty spaces between them. Revise the structure while marks are pale; a polished finish cannot repair an unexamined foundation.",
+        "hi": "केंद्र चुनें और मुख्य फूल बड़ा करने से पहले बाहरी घेरे की जगह छोड़ें। हल्की क्षैतिज तथा खड़ी रेखाएँ दिशा देती हैं। मूल वृत्त बनाकर समान त्रिज्या विधि से 6 बराबर भाग लें। संकेंद्रीय घेरा बनाते समय केंद्र स्थिर रहे। एक ओर खिसकता डिजाइन संतुलित करना कठिन है, चाहे हर पंखुड़ी सुंदर हो। तय करें कि कौन सा तत्व दोहराएगा और कौन सा छोटा प्रमुख भाग जानबूझकर अलग होगा। सभी भागों की दूरी एक साथ देखें। जहाँ उचित हो तुलना के लिए पैमाना लें, लेकिन मापने के कारण ध्यान से देखना बंद न करें। भरे आकारों के साथ उनके बीच के खाली स्थानों की तुलना भी उपयोगी जाँच है। रेखाएँ हल्की रहते समय संरचना सुधारें। केवल सुंदर अंतिम रंग गलत नींव को ठीक नहीं कर सकता।"
+      },
+      "question": {
+        "en": "Which visible relationship would you check at this stage? Explain using this study.",
+        "hi": "इस चरण में कौन सा दिखाई देने वाला संबंध जाँचेंगे? इसी अध्ययन के आधार पर समझाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Petal Construction",
+        "hi": "पंखुड़ी निर्माण"
+      },
+      "body": {
+        "en": "Mark matching points on the six radial directions. Connect these with repeated curved petal shapes, keeping their tips on the intended ring. A petal is not required to copy a natural flower exactly; here it is a stylised design unit. Compare the negative gaps between adjacent petals, because uneven gaps reveal drift quickly. Do not repair a misplaced tip by thickening its whole outline. Return to the guide point and adjust the curve lightly. Work from the largest relationships towards the smaller ones. Make one deliberate change, then step back and judge its effect. Heavy outlines around every shape can destroy variety. Keep important edges clear while allowing less important edges to remain quieter, lighter or softer.",
+        "hi": "6 चक्रीय दिशाओं पर संगत बिंदु चिह्नित करें। उन्हें दोहराते वक्र पंखुड़ी रूप से जोड़ें और सिरे तय घेरे पर रखें। पंखुड़ी को वास्तविक फूल की हूबहू नकल होना जरूरी नहीं; यहाँ वह शैलीबद्ध डिजाइन इकाई है। पड़ोसी पंखुड़ियों के खाली अंतर मिलाएँ क्योंकि असमान अंतर से खिसकाव जल्दी दिखता है। गलत रखे सिरे को पूरी सीमा मोटी करके न सुधारें। सहायक बिंदु पर लौटें और वक्र हल्के हाथ से बदलें। बड़े संबंधों से शुरू करके छोटे संबंधों की ओर जाएँ। एक सोच समझकर परिवर्तन करें और फिर दूर से उसका प्रभाव देखें। हर आकार के चारों ओर मोटी सीमा बनाने से विविधता मिट सकती है। महत्त्वपूर्ण किनारे स्पष्ट रखें और कम महत्त्वपूर्ण किनारों को हल्का, शांत या नरम रहने दें।"
+      },
+      "question": {
+        "en": "Which visible relationship would you check at this stage? Explain using this study.",
+        "hi": "इस चरण में कौन सा दिखाई देने वाला संबंध जाँचेंगे? इसी अध्ययन के आधार पर समझाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Colour Families and Repetition",
+        "hi": "रंग समूह और दोहराव"
+      },
+      "body": {
+        "en": "Choose a restrained warm-and-cool palette, such as ochre, coral and teal. These are choices for this exercise, not compulsory traditional colours. Repeat corresponding colours around the centre to support radial rhythm. A small contrasting centre can focus attention, while a pale surrounding ground keeps the flower clear. In physical powder work, colour edges and textures differ from a digital fill. First learn the arrangement on paper before attempting a larger floor version. Test your chosen colours or pencil values on spare paper first. The appearance of a mark changes beside a darker or lighter neighbour. Build controlled layers instead of pressing harder to hide uncertainty. A restricted palette often teaches relationships more clearly than many unrelated colours.",
+        "hi": "गेरुआ, मूंगा लाल और नील हरित जैसी सीमित गरम ठंडी रंग योजना लें। ये अभ्यास के चुनाव हैं, अनिवार्य पारंपरिक रंग नहीं। केंद्र के चारों ओर संगत रंग दोहराकर चक्रीय लय बनाएँ। छोटा विरोधी केंद्र ध्यान खींच सकता है और हल्का आसपास फूल को स्पष्ट रखता है। वास्तविक चूर्ण के काम में किनारा तथा बनावट डिजिटल भराव से अलग होते हैं। बड़ा धरातलीय रूप बनाने से पहले कागज पर व्यवस्था सीखें। रंग की मात्रा से अधिक उसका संबंध जरूरी है। चुने रंग या पेंसिल की तान पहले अलग कागज पर जाँचें। गहरे या हल्के पड़ोसी रंग के साथ एक ही निशान अलग दिखाई दे सकता है। अनिश्चितता छिपाने के लिए अधिक दबाव देने के बजाय नियंत्रित परतें बनाएँ। सीमित रंग योजना कई असंबंधित रंगों की तुलना में संबंध अधिक स्पष्ट सिखाती है।"
+      },
+      "question": {
+        "en": "Which visible relationship would you check at this stage? Explain using this study.",
+        "hi": "इस चरण में कौन सा दिखाई देने वाला संबंध जाँचेंगे? इसी अध्ययन के आधार पर समझाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Dots, Border and Materials",
+        "hi": "बिंदु, सीमा और सामग्री"
+      },
+      "body": {
+        "en": "Use small dots or short marks as a finishing rhythm outside the petal ring. Count their placements so the border remains deliberate. The marks should support the main flower rather than becoming a second crowded pattern. If working physically, use safe, locally suitable materials with permission and keep the chosen surface usable. Do not collect flowers or powders wastefully merely to imitate the screen. A pencil-and-colour version can demonstrate the same geometric relationships. Leave some paper unworked so that the composition can breathe. Materials influence results: rough paper catches broken marks, while smoother paper supports cleaner edges. Use a clean scrap sheet under your drawing hand when needed. Keep tools simple and concentrate on the purpose of each mark.",
+        "hi": "पंखुड़ी घेरे के बाहर छोटे बिंदु या छोटे निशान अंतिम लय की तरह लें। उनकी जगह गिनें ताकि सीमा सोचकर बने। वे मुख्य फूल का साथ दें, दूसरा भीड़ वाला पैटर्न न बनें। वास्तविक काम में अनुमति से सुरक्षित स्थानीय सामग्री लें और धरातल उपयोग योग्य रखें। स्क्रीन की नकल के लिए फूल या चूर्ण व्यर्थ इकट्ठे न करें। पेंसिल और रंग का रूप भी वही ज्यामितीय संबंध दिखा सकता है। सामग्री का चुनाव स्थान तथा काम के उद्देश्य से जोड़ें। कुछ कागज खाली रहने दें ताकि संयोजन में खुलापन रहे। सामग्री परिणाम बदलती है। खुरदरे कागज पर टूटे निशान बनते हैं जबकि चिकने कागज पर साफ किनारे बनाना आसान होता है। जरूरत हो तो हाथ के नीचे साफ कागज रखें। साधन सरल रखें और हर निशान के उद्देश्य पर ध्यान दें।"
+      },
+      "question": {
+        "en": "Which visible relationship would you check at this stage? Explain using this study.",
+        "hi": "इस चरण में कौन सा दिखाई देने वाला संबंध जाँचेंगे? इसी अध्ययन के आधार पर समझाएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Describe and Personalise",
+        "hi": "वर्णन और अपना रूप"
+      },
+      "body": {
+        "en": "Review the design by identifying its centre, number of sectors, repeated shapes, empty spaces and colour order. Then make a personal variation: change the outer dots, the palette or the petal outline while keeping the construction clear. State what remained constant and what changed. A variation should not be dismissed merely because it differs from the example. Compare it with an authentic local practice through observation or conversation, acknowledging that artistic traditions are richer than this single classroom model. Review the work using visible evidence rather than calling it simply good or bad. Identify one strength, one problem and one precise next attempt. Keep the earlier study beside the revised one so progress can be compared. Artistic improvement depends on attentive decisions, not identical copies.",
+        "hi": "केंद्र, क्षेत्रों की संख्या, दोहराते आकार, खाली स्थान और रंग क्रम पहचानकर डिजाइन जाँचें। फिर अपना बदलाव बनाएँ: निर्माण स्पष्ट रखते हुए बाहरी बिंदु, रंग योजना या पंखुड़ी सीमा बदलें। बताएँ कि क्या समान रहा और क्या बदला। केवल उदाहरण से अलग होने के कारण नए रूप को गलत न मानें। निरीक्षण या बातचीत से किसी वास्तविक स्थानीय परंपरा से तुलना करें और स्वीकार करें कि कला परंपराएँ इस एक कक्षा मॉडल से अधिक समृद्ध हैं। केवल अच्छा या खराब कहने के बजाय दिखाई देने वाले प्रमाण से चित्र की समीक्षा करें। एक अच्छी बात, एक समस्या और अगले प्रयास का एक निश्चित सुधार पहचानें। पुराना अध्ययन नए अध्ययन के पास रखें ताकि प्रगति की तुलना हो सके। कला में सुधार ध्यानपूर्ण निर्णयों से आता है, सबकी एक जैसी नकल से नहीं।"
+      },
+      "question": {
+        "en": "Which visible relationship would you check at this stage? Explain using this study.",
+        "hi": "इस चरण में कौन सा दिखाई देने वाला संबंध जाँचेंगे? इसी अध्ययन के आधार पर समझाएँ।"
+      }
+    }
+  ],
+  "artStepTips": [
+    {
+      "title": {
+        "en": "Central point",
+        "hi": "केंद्रीय बिंदु"
+      },
+      "tip": {
+        "en": "Reserve space around the centre.",
+        "hi": "केंद्र के चारों ओर जगह रखें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Direction guides",
+        "hi": "दिशा रेखाएँ"
+      },
+      "tip": {
+        "en": "Set clear reference directions.",
+        "hi": "स्पष्ट संदर्भ दिशाएँ लें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Base circle",
+        "hi": "मूल वृत्त"
+      },
+      "tip": {
+        "en": "Establish the radial scale.",
+        "hi": "चक्रीय आकार का माप तय करें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Six guide points",
+        "hi": "6 सहायक बिंदु"
+      },
+      "tip": {
+        "en": "Mark matching positions.",
+        "hi": "संगत स्थान चिह्नित करें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Radial connections",
+        "hi": "चक्रीय जोड़"
+      },
+      "tip": {
+        "en": "Connect the central structure.",
+        "hi": "केंद्रीय ढाँचा जोड़ें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Stylised petals",
+        "hi": "शैलीबद्ध पंखुड़ियाँ"
+      },
+      "tip": {
+        "en": "Repeat petal curves evenly.",
+        "hi": "पंखुड़ी वक्र समान दोहराएँ।"
+      }
+    },
+    {
+      "title": {
+        "en": "Outer border and dots",
+        "hi": "बाहरी सीमा और बिंदु"
+      },
+      "tip": {
+        "en": "Add a restrained finishing rhythm.",
+        "hi": "संयमित अंतिम लय जोड़ें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Colour families",
+        "hi": "रंग समूह"
+      },
+      "tip": {
+        "en": "Apply the planned colour sequence.",
+        "hi": "नियोजित रंग क्रम भरें।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Beginner",
+      "title": {
+        "en": "Beginner study",
+        "hi": "प्रारंभिक अध्ययन"
+      },
+      "well": {
+        "en": "A central flower and outer ring are clear.",
+        "hi": "केंद्रीय फूल और बाहरी घेरा स्पष्ट है।"
+      },
+      "improve": {
+        "en": "Set the centre before enlarging the petals.",
+        "hi": "पंखुड़ी बड़ी करने से पहले केंद्र तय करें।"
+      }
+    },
+    {
+      "level": "Intermediate",
+      "title": {
+        "en": "Intermediate study",
+        "hi": "मध्यम अध्ययन"
+      },
+      "well": {
+        "en": "Repeated petals and deliberate colours create radial rhythm.",
+        "hi": "दोहराई पंखुड़ी और सोचे रंग चक्रीय लय देते हैं।"
+      },
+      "improve": {
+        "en": "Equalise unintended gaps and simplify the outer decoration.",
+        "hi": "अनचाहे अंतर बराबर करें और बाहरी सजावट सरल रखें।"
+      }
+    },
+    {
+      "level": "Good",
+      "title": {
+        "en": "Good study",
+        "hi": "अच्छा अध्ययन"
+      },
+      "well": {
+        "en": "Balanced empty spaces, a controlled dot ring and clear construction support personal expression.",
+        "hi": "संतुलित खाली स्थान, नियंत्रित बिंदु घेरा और साफ निर्माण अपना भाव रखते हैं।"
+      },
+      "improve": {
+        "en": "Explain the chosen variation while crediting any local inspiration.",
+        "hi": "स्थानीय प्रेरणा का नाम देकर अपना बदलाव समझाएँ।"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "question": {
+        "en": "How many repeated sectors organise this study?",
+        "hi": "इस अध्ययन को कितने दोहराते क्षेत्र व्यवस्थित करते हैं?"
+      },
+      "answer": {
+        "en": "6 sectors.",
+        "hi": "6 क्षेत्र।"
+      }
+    },
+    {
+      "question": {
+        "en": "What keeps the rings concentric?",
+        "hi": "घेरों को संकेंद्रीय क्या रखता है?"
+      },
+      "answer": {
+        "en": "A shared centre.",
+        "hi": "समान केंद्र।"
+      }
+    },
+    {
+      "question": {
+        "en": "What should the outer dots do?",
+        "hi": "बाहरी बिंदु क्या करें?"
+      },
+      "answer": {
+        "en": "Support the main flower with a finishing rhythm.",
+        "hi": "अंतिम लय देकर मुख्य फूल का साथ दें।"
+      }
+    },
+    {
+      "question": {
+        "en": "Are these colours compulsory in all rangoli traditions?",
+        "hi": "क्या सभी रंगोली परंपराओं में यही रंग जरूरी हैं?"
+      },
+      "answer": {
+        "en": "No. They are choices for this classroom study.",
+        "hi": "नहीं। ये इस कक्षा अध्ययन के चुनाव हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which stage adds the petals?",
+        "hi": "पंखुड़ियाँ किस चरण में बनती हैं?"
+      },
+      "answer": {
+        "en": "Step 6.",
+        "hi": "चरण 6।"
+      }
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "Why distinguish this exercise from every rangoli tradition?",
+        "hi": "इस अभ्यास को हर रंगोली परंपरा से अलग क्यों समझें?"
+      },
+      "answer": {
+        "en": "Regional floor-art traditions differ in materials, methods and meaning. One geometric example cannot represent all of them.",
+        "hi": "क्षेत्रीय धरातलीय कलाओं की सामग्री, विधि और अर्थ अलग हैं। एक ज्यामितीय उदाहरण सभी का प्रतिनिधित्व नहीं करता।"
+      }
+    },
+    {
+      "question": {
+        "en": "How can a personal variation remain organised?",
+        "hi": "अपना बदलाव व्यवस्थित कैसे रहे?"
+      },
+      "answer": {
+        "en": "Keep a clear centre and repeat rule while deliberately varying selected colours, dots or petal shapes.",
+        "hi": "केंद्र और दोहराव नियम स्पष्ट रखें तथा चुने रंग, बिंदु या पंखुड़ी को सोचकर बदलें।"
+      }
+    }
+  ],
+  "description": {
+    "question": {
+      "en": "Describe the finished study in 5 lines, mentioning structure, colour or tone, and the main design decisions.",
+      "hi": "पूरे अध्ययन का 5 पंक्तियों में वर्णन करें। संरचना, रंग या तान और मुख्य डिजाइन निर्णय बताएँ।"
+    },
+    "answer": {
+      "en": "1. The design radiates from one centre.\n2. Six sectors repeat stylised petals.\n3. Warm and cool colours alternate deliberately.\n4. Outer dots create a restrained finishing rhythm.\n5. It is a classroom design inspired by diverse floor-art traditions.",
+      "hi": "1. डिजाइन एक केंद्र से फैलता है।\n2. 6 क्षेत्रों में शैलीबद्ध पंखुड़ी दोहरती है।\n3. गरम और ठंडे रंग सोचकर बदलते हैं।\n4. बाहरी बिंदु संयमित अंतिम लय देते हैं।\n5. यह विविध धरातलीय परंपराओं से प्रेरित कक्षा डिजाइन है।"
+    }
+  },
+  "why": {
+    "en": "A clear centre and repeated spacing create radial order. Personal colour and motif choices can vary while the geometry remains readable. This model does not define every rangoli tradition.",
+    "hi": "स्पष्ट केंद्र और दोहराती दूरी चक्रीय क्रम बनाते हैं। ज्यामिति स्पष्ट रखते हुए अपने रंग और रूपांकन बदल सकते हैं। यह मॉडल हर रंगोली परंपरा की परिभाषा नहीं है।"
+  },
+  "palette": [
+    {
+      "name": {
+        "en": "Paper",
+        "hi": "कागज"
+      },
+      "color": "#F6EBD6"
+    },
+    {
+      "name": {
+        "en": "Ochre",
+        "hi": "गेरुआ"
+      },
+      "color": "#D0A24E"
+    },
+    {
+      "name": {
+        "en": "Coral",
+        "hi": "मूंगा लाल"
+      },
+      "color": "#C36856"
+    },
+    {
+      "name": {
+        "en": "Teal",
+        "hi": "नील हरित"
+      },
+      "color": "#417B7D"
+    },
+    {
+      "name": {
+        "en": "Dark border",
+        "hi": "गहरी सीमा"
+      },
+      "color": "#314D51"
+    }
+  ],
+  "commonMistakes": {
+    "en": "Avoid drifting ring centres, crowded outer dots and claiming that this one design represents every floor-art tradition. Separate deliberate variation from accidental misalignment.",
+    "hi": "घेरे का खिसकता केंद्र, बाहर बिंदुओं की भीड़ और एक डिजाइन को हर धरातलीय परंपरा का प्रतिनिधि कहना गलत है। सोचा बदलाव और अनजाना खिसकाव अलग रखें।"
+  },
+  "spotStep": {
+    "question": {
+      "en": "Which stage adds the outer dot-and-border rhythm?",
+      "hi": "बाहरी बिंदु और सीमा की लय कौन सा चरण जोड़ता है?"
+    },
+    "correct": 6,
+    "reason": {
+      "en": "Step 7 adds the outer boundary and repeated finishing marks.",
+      "hi": "चरण 7 बाहरी सीमा और दोहराते अंतिम निशान जोड़ता है।"
+    }
+  },
+  "missions": [
+    {
+      "label": {
+        "en": "Reach the final construction stage.",
+        "hi": "अंतिम निर्माण चरण तक जाएँ।"
+      },
+      "key": "step",
+      "min": 7
+    },
+    {
+      "label": {
+        "en": "Identify the requested step.",
+        "hi": "पूछा गया चरण पहचानें।"
+      },
+      "key": "spot",
+      "min": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT: Class IX Visual Art learning outcomes (official; fundamentals and process)",
+      "url": "https://www.ncert.nic.in/pdf/publication/otherpublications/learning_outcomes.pdf"
+    },
+    {
+      "title": "UPMSP: official syllabus listing, Class 9 Art (Drawing)",
+      "url": "https://upmsp.edu.in/Board_Syllabus.aspx"
+    }
+  ],
+  "scopeNote": {
+    "en": "This is a user-selected art teaching topic, not a claim that an NCERT or UP Board book assigns this exact chapter number. The finished example is one possible artistic solution.",
+    "hi": "यह उपयोगकर्ता द्वारा चुना कला शिक्षण विषय है। किसी एनसीईआरटी या यूपी बोर्ड पुस्तक में इसे यही अध्याय संख्या दिए जाने का दावा नहीं है। पूरा उदाहरण कई संभव कलात्मक समाधानों में से एक है।"
+  }
+}

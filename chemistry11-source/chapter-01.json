@@ -1,0 +1,1521 @@
+{
+  "number": 1,
+  "id": "chemistry11-01",
+  "title": {
+    "en": "Some Basic Concepts of Chemistry",
+    "hi": "रसायन विज्ञान की कुछ मूल अवधारणाएँ"
+  },
+  "unit": {
+    "en": "Chemistry",
+    "hi": "रसायन विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "chem11-01-1",
+      "title": {
+        "en": "Mass, mole and particles",
+        "hi": "द्रव्यमान, मोल और कण"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Water mass",
+            "hi": "जल का द्रव्यमान"
+          },
+          "min": 9,
+          "max": 72,
+          "step": 9,
+          "initial": 18,
+          "unit": "g"
+        }
+      ],
+      "noteIndex": 3,
+      "goal": {
+        "en": "Connect measured water mass with moles and molecule count.",
+        "hi": "मापे जल द्रव्यमान को मोल और अणु संख्या से जोड़ें।"
+      },
+      "observe": {
+        "en": "Increase mass while the rounded water molar mass stays 18 g mol^-1.",
+        "hi": "द्रव्यमान बढ़ाएँ; जल का पूर्णांकित मोलर द्रव्यमान 18 g mol^-1 स्थिर है।"
+      },
+      "modelNote": {
+        "en": "Few dots represent an enormous particle count; dot sizes are not molecular sizes. Water molar mass is rounded to 18 g mol^-1.",
+        "hi": "कुछ बिंदु विशाल कण संख्या बताते हैं; बिंदु का आकार अणु का वास्तविक आकार नहीं। जल का मोलर द्रव्यमान 18 g mol^-1 पूर्णांकित है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "n=m/M and N=nNA increase in direct proportion to mass.",
+          "hi": "n=m/M तथा N=nNA द्रव्यमान के सीधे अनुपात में बढ़ते हैं।"
+        }
+      },
+      "realLife": {
+        "en": "A balance provides mass before a chemist calculates chemical amount.",
+        "hi": "रसायनज्ञ पदार्थ मात्रा निकालने से पहले तुला से द्रव्यमान मापता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At 18 g, how much water is present?",
+          "hi": "18 g जल की मात्रा कितनी है?"
+        },
+        "options": [
+          {
+            "en": "0.5 mol",
+            "hi": "0.5 mol"
+          },
+          {
+            "en": "1 mol",
+            "hi": "1 mol"
+          },
+          {
+            "en": "18 mol",
+            "hi": "18 mol"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "18/18=1 mol.",
+          "hi": "18/18=1 mol।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-01-1-low",
+          "label": {
+            "en": "Set water mass to 9 g.",
+            "hi": "जल का द्रव्यमान 9 g करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 9.09
+          }
+        },
+        {
+          "id": "chem11-01-1-high",
+          "label": {
+            "en": "Compare the maximum setting 72 g.",
+            "hi": "अधिकतम सेटिंग 72 g से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 71.91
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 40.5
+          },
+          "text": {
+            "en": "A smaller mass still contains a very large number of molecules.",
+            "hi": "कम द्रव्यमान में भी अणुओं की संख्या बहुत बड़ी है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 40.5
+          },
+          "text": {
+            "en": "Increasing mass increases both moles and molecule count.",
+            "hi": "द्रव्यमान बढ़ने पर मोल और अणु संख्या दोनों बढ़ते हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected quantity or particle",
+            "hi": "चुनी राशि या कण"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference structure or graph",
+            "hi": "संदर्भ संरचना या आलेख"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-01-2",
+      "title": {
+        "en": "Limiting reagent",
+        "hi": "सीमांत अभिकर्मक"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Hydrogen amount",
+            "hi": "हाइड्रोजन की मात्रा"
+          },
+          "min": 0,
+          "max": 6,
+          "step": 0.5,
+          "initial": 2,
+          "unit": "mol"
+        }
+      ],
+      "noteIndex": 7,
+      "goal": {
+        "en": "Find the limiting reagent when oxygen is fixed at 2 mol.",
+        "hi": "ऑक्सीजन 2 mol स्थिर होने पर सीमांत अभिकर्मक खोजें।"
+      },
+      "observe": {
+        "en": "Move hydrogen through 4 mol and watch product formation stop increasing beyond that point.",
+        "hi": "हाइड्रोजन को 4 mol के पार ले जाएँ और उसके बाद उत्पाद का बढ़ना रुकता देखें।"
+      },
+      "modelNote": {
+        "en": "The equation is 2H2+O2→2H2O, assumed complete. Fractional moles represent bulk amounts, not fractional single molecules. No actual mixing experiment is proposed.",
+        "hi": "समीकरण 2H2+O2→2H2O को पूर्ण मानते हैं। भिन्नात्मक मोल बड़ी मात्रा हैं, अकेले अणु के टुकड़े नहीं। वास्तविक मिश्रण प्रयोग प्रस्तावित नहीं है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "2 mol O2 can consume at most 4 mol H2 and make 4 mol H2O.",
+          "hi": "2 mol O2 अधिकतम 4 mol H2 उपयोग कर 4 mol H2O बनाती है।"
+        }
+      },
+      "realLife": {
+        "en": "Reaction planning avoids unnecessary excess of a costly reactant.",
+        "hi": "अभिक्रिया योजना महँगे अभिकारक की अनावश्यक अधिकता से बचाती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "At 6 mol H2 and 2 mol O2, which limits?",
+          "hi": "6 mol H2 और 2 mol O2 में सीमांत कौन है?"
+        },
+        "options": [
+          {
+            "en": "O2",
+            "hi": "O2"
+          },
+          {
+            "en": "H2",
+            "hi": "H2"
+          },
+          {
+            "en": "Neither",
+            "hi": "कोई नहीं"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Oxygen is exhausted after 4 mol H2 reacts.",
+          "hi": "4 mol H2 की अभिक्रिया के बाद ऑक्सीजन समाप्त होती है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-01-2-low",
+          "label": {
+            "en": "Set hydrogen amount to 0 mol.",
+            "hi": "हाइड्रोजन की मात्रा 0 mol करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.005
+          }
+        },
+        {
+          "id": "chem11-01-2-high",
+          "label": {
+            "en": "Compare the maximum setting 6 mol.",
+            "hi": "अधिकतम सेटिंग 6 mol से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 5.995
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3.0
+          },
+          "text": {
+            "en": "At low hydrogen settings, hydrogen limits the reaction.",
+            "hi": "कम हाइड्रोजन पर हाइड्रोजन अभिक्रिया सीमित करती है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Check 4 mol: beyond the stoichiometric point, oxygen limits water formation.",
+            "hi": "4 mol जाँचें: स्टॉइकियोमितीय बिंदु के बाद ऑक्सीजन जल बनना सीमित करती है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected quantity or particle",
+            "hi": "चुनी राशि या कण"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference structure or graph",
+            "hi": "संदर्भ संरचना या आलेख"
+          }
+        }
+      ],
+      "selectors": []
+    },
+    {
+      "id": "chem11-01-3",
+      "title": {
+        "en": "Dilution",
+        "hi": "तनुकरण"
+      },
+      "kind": "eleven-chemistry",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Solution volume",
+            "hi": "विलयन का आयतन"
+          },
+          "min": 50,
+          "max": 500,
+          "step": 50,
+          "initial": 100,
+          "unit": "mL"
+        }
+      ],
+      "noteIndex": 5,
+      "goal": {
+        "en": "Observe molarity changing while 0.1 mol solute stays fixed.",
+        "hi": "0.1 mol विलेय स्थिर रखते हुए मोलरता बदलना देखें।"
+      },
+      "observe": {
+        "en": "Increase final solution volume, not just a labelled amount of added water.",
+        "hi": "अंतिम विलयन आयतन बढ़ाएँ, केवल जोड़े जल की मात्रा नहीं।"
+      },
+      "modelNote": {
+        "en": "The model assumes no solute loss or chemical reaction. Dot number is symbolic; final volume determines molarity.",
+        "hi": "मॉडल में विलेय की हानि या रासायनिक अभिक्रिया नहीं है। बिंदु संख्या सांकेतिक है; अंतिम आयतन मोलरता तय करता है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "M=n/V; fixed n divided by a larger V gives lower concentration.",
+          "hi": "M=n/V; स्थिर n को बड़े V से भाग देने पर सांद्रता घटती है।"
+        }
+      },
+      "realLife": {
+        "en": "Preparing a standard solution requires making up to the final calibration mark.",
+        "hi": "मानक विलयन बनाते समय अंतिम अंशांकन चिह्न तक आयतन पूरा करते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "At 100 mL, what is the molarity?",
+          "hi": "100 mL पर मोलरता कितनी है?"
+        },
+        "options": [
+          {
+            "en": "0.1 mol L^-1",
+            "hi": "0.1 mol L^-1"
+          },
+          {
+            "en": "1 mol L^-1",
+            "hi": "1 mol L^-1"
+          },
+          {
+            "en": "10 mol L^-1",
+            "hi": "10 mol L^-1"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "100 mL=0.1 L; 0.1/0.1=1.",
+          "hi": "100 mL=0.1 L; 0.1/0.1=1।"
+        }
+      },
+      "missions": [
+        {
+          "id": "chem11-01-3-low",
+          "label": {
+            "en": "Set solution volume to 50 mL.",
+            "hi": "विलयन का आयतन 50 mL करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 50.5
+          }
+        },
+        {
+          "id": "chem11-01-3-high",
+          "label": {
+            "en": "Compare the maximum setting 500 mL.",
+            "hi": "अधिकतम सेटिंग 500 mL से तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 499.5
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 275.0
+          },
+          "text": {
+            "en": "Small volume means more solute per litre.",
+            "hi": "कम आयतन में प्रति लीटर विलेय अधिक है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 275.0
+          },
+          "text": {
+            "en": "The solution is more dilute, but solute moles remain 0.1.",
+            "hi": "विलयन अधिक तनु है, लेकिन विलेय के मोल 0.1 ही हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Selected quantity or particle",
+            "hi": "चुनी राशि या कण"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference structure or graph",
+            "hi": "संदर्भ संरचना या आलेख"
+          }
+        }
+      ],
+      "selectors": []
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Matter, properties and measurement",
+        "hi": "द्रव्य, गुण और मापन"
+      },
+      "paragraphs": [
+        {
+          "en": "Chemistry connects the composition of matter with its properties and transformations. A sample can be described at the visible level, such as colour or melting point, and at the particle level, using atoms, molecules and ions. These descriptions support each other but are not identical photographs of reality. An element contains one kind of atom defined by its atomic number; a compound has chemically combined elements in a definite proportion. A mixture can have variable composition and its components may be separated by suitable physical methods. Physical properties can be measured without changing chemical identity, whereas chemical properties describe the ability to react. A measurement contains both a numerical value and a unit. Mass measures the amount of matter in the ordinary laboratory sense, while weight is a gravitational force. In chemistry, calculations commonly use grams, litres and kelvin, but unit conversions must be explicit. Density relates mass to volume and helps connect a measured sample to another quantitative property.",
+          "hi": "रसायन विज्ञान (Chemistry) द्रव्य के संघटन, गुण और रूपांतरण के संबंध का अध्ययन करता है। किसी नमूने को दिखाई देने वाले स्तर पर रंग, घनत्व या गलनांक से तथा कण स्तर पर परमाणु, अणु और आयन से समझ सकते हैं। दोनों वर्णन जुड़े हैं, लेकिन कण मॉडल वास्तविक वस्तु की फोटो नहीं है। तत्व (Element) में एक परमाणु क्रमांक वाले परमाणु होते हैं। यौगिक (Compound) में तत्व निश्चित अनुपात में रासायनिक रूप से जुड़े होते हैं। मिश्रण (Mixture) का संघटन बदल सकता है और उसके घटकों को उपयुक्त भौतिक विधि से अलग कर सकते हैं। भौतिक गुण (Physical property) मापने में रासायनिक पहचान नहीं बदलती, जबकि रासायनिक गुण पदार्थ की अभिक्रिया करने की क्षमता बताते हैं। हर मापन में संख्या के साथ मात्रक (Unit) आवश्यक है। प्रयोगशाला में द्रव्यमान को अक्सर ग्राम में लिखते हैं, पर भार गुरुत्वीय बल है और उसका SI मात्रक न्यूटन है। घनत्व द्रव्यमान और आयतन का अनुपात है। किसी विलयन या ठोस का प्रश्न हल करते समय पहले यह पहचानें कि कौन-सी राशि दी है, कौन-सी चाहिए और दोनों को जोड़ने वाला भौतिक संबंध क्या है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A homogeneous appearance does not prove that a sample is a pure compound.",
+          "hi": "एकसमान दिखाई देना नमूने के शुद्ध यौगिक होने का प्रमाण नहीं है।"
+        },
+        {
+          "en": "Density has units of mass divided by volume.",
+          "hi": "घनत्व का मात्रक द्रव्यमान को आयतन से भाग देने पर मिलता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why must 25 be accompanied by a unit in a laboratory record?",
+          "hi": "प्रयोगशाला रिकॉर्ड में 25 के साथ मात्रक क्यों चाहिए?"
+        },
+        "answer": {
+          "en": "The unit identifies the measured quantity and its scale; 25 g and 25 mL describe different quantities.",
+          "hi": "मात्रक राशि और पैमाना पहचानता है; 25 g और 25 mL अलग राशियाँ हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Reliable numbers and unit conversions",
+        "hi": "विश्वसनीय संख्याएँ और मात्रक परिवर्तन"
+      },
+      "paragraphs": [
+        {
+          "en": "A measured value has limited precision because every instrument has a finite resolution. Significant figures communicate the meaningful digits in that value rather than the number of digits a calculator displays. Leading zeros locate the decimal point and are not significant; zeros between non-zero digits are significant. Trailing zeros after a decimal point can express measured precision. Exact counts and defined unit conversions do not introduce measurement uncertainty in the same way. Addition and subtraction are reported to the least precise decimal place, while multiplication and division follow the least number of significant figures among measured inputs. Keep extra digits during intermediate work and round the final result. For an exact discarded half, the NCERT convention retains an even last digit. Dimensional conversion factors equal one, such as 1000 mL divided by 1 L, and can cancel unwanted units. Temperature in gas relations must be absolute temperature. A temperature difference of 1 K equals a difference of 1 °C, although their zero points differ.",
+          "hi": "मापित मान की परिशुद्धता (Precision) सीमित होती है, क्योंकि हर यंत्र का विभेदन सीमित है। सार्थक अंक (Significant figures) बताते हैं कि परिणाम में कौन-से अंक अर्थपूर्ण हैं; कैलकुलेटर के सभी अंक माप की गुणवत्ता नहीं बताते। शुरू के शून्य केवल दशमलव का स्थान बताते हैं, इसलिए सार्थक नहीं होते। अशून्य अंकों के बीच शून्य सार्थक होते हैं। दशमलव के बाद अंतिम शून्य माप की परिशुद्धता दिखा सकते हैं। गिनी गई वस्तुओं की ठीक संख्या और परिभाषित मात्रक परिवर्तन सामान्य माप जैसी अनिश्चितता नहीं जोड़ते। जोड़ और घटाव में कम परिशुद्ध दशमलव स्थान का ध्यान रखते हैं; गुणा और भाग में कम सार्थक अंकों वाले माप के अनुसार उत्तर लिखते हैं। बीच की गणना में अतिरिक्त अंक रखें और अंत में पूर्णांकन करें। ठीक आधा हटाने पर NCERT के सम अंक वाले नियम का प्रयोग करें। मात्रक परिवर्तन में ऐसे अनुपात लगाते हैं जिनका मान 1 है, जैसे 1000 mL/1 L। इससे अवांछित मात्रक कट जाते हैं। गैस संबंधों में ताप के लिए केल्विन (Kelvin) चाहिए। तापांतर 1 K और तापांतर 1 °C बराबर हैं, लेकिन दोनों पैमानों के शून्य अलग हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Units should cancel visibly in a conversion calculation.",
+          "hi": "परिवर्तन की गणना में मात्रक स्पष्ट रूप से कटने चाहिए।"
+        },
+        {
+          "en": "Rounding every intermediate step can distort the final answer.",
+          "hi": "हर बीच के चरण को पूर्णांकित करने से अंतिम उत्तर बिगड़ सकता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Convert 250 mL into litres.",
+          "hi": "250 mL को लीटर में बदलें।"
+        },
+        "answer": {
+          "en": "250 mL × 1 L/1000 mL = 0.250 L.",
+          "hi": "250 mL × 1 L/1000 mL = 0.250 L।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Laws of chemical combination",
+        "hi": "रासायनिक संयोजन के नियम"
+      },
+      "paragraphs": [
+        {
+          "en": "Quantitative laws helped establish the atomic interpretation of chemical reactions. The law of conservation of mass states that the total mass is conserved in a chemical reaction when all reactants and products are included. A gas escaping from an open vessel can make the measured remaining mass fall without violating this law. The law of definite proportions concerns a pure compound: its elements occur in a fixed mass ratio, irrespective of the source of the sample. The law of multiple proportions compares different compounds formed by the same two elements. For a fixed mass of one element, the masses of the other that combine with it form a ratio of small whole numbers. Gaseous volume relationships apply at the same temperature and pressure. Avogadro’s law connects equal gas volumes under those conditions with equal numbers of molecules. Dalton’s atomic theory explained many such regularities, but later discoveries required distinctions between atoms, subatomic particles and isotopes. Chemical equations conserve atoms of each element, not the number of molecules.",
+          "hi": "मात्रात्मक नियमों ने रासायनिक अभिक्रियाओं को परमाणुओं के आधार पर समझने में सहायता की। द्रव्यमान संरक्षण का नियम (Law of conservation of mass) कहता है कि सभी अभिकारक और उत्पाद शामिल करने पर कुल द्रव्यमान संरक्षित रहता है। खुले पात्र से गैस निकल जाने पर बचे पदार्थ का मापा द्रव्यमान कम हो सकता है; इससे नियम नहीं टूटता। निश्चित अनुपात का नियम (Law of definite proportions) शुद्ध यौगिक पर लागू है। उसमें तत्व निश्चित द्रव्यमान अनुपात में होते हैं, चाहे नमूना कहीं से मिला हो। गुणित अनुपात का नियम (Law of multiple proportions) उन्हीं दो तत्वों से बने अलग यौगिकों की तुलना करता है। एक तत्व का द्रव्यमान स्थिर रखने पर दूसरे के जुड़े द्रव्यमान छोटी पूर्ण संख्याओं के अनुपात में होते हैं। गैसीय आयतन की तुलना में ताप और दाब समान होना चाहिए। आवोगाद्रो का नियम (Avogadro’s law) इन परिस्थितियों में समान गैस आयतन में समान अणु संख्या बताता है। डाल्टन के सिद्धांत ने इन नियमितताओं को समझाया, लेकिन बाद में उपपरमाण्विक कणों और समस्थानिकों की खोज से उसकी कुछ धारणाएँ सुधरीं। संतुलित समीकरण हर तत्व के परमाणु बचाता है; दोनों ओर अणुओं की कुल संख्या बराबर होना जरूरी नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Definite proportions describe a pure compound, not every mixture.",
+          "hi": "निश्चित अनुपात शुद्ध यौगिक का गुण है, हर मिश्रण का नहीं।"
+        },
+        {
+          "en": "For CO and CO2, oxygen masses for fixed carbon are in ratio 1:2.",
+          "hi": "CO और CO2 में समान कार्बन के लिए ऑक्सीजन द्रव्यमान का अनुपात 1:2 है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can escaping gas explain an apparent loss of mass in an open reaction?",
+          "hi": "खुली अभिक्रिया में गैस निकलना दिखाई देने वाली द्रव्यमान हानि समझा सकता है?"
+        },
+        "answer": {
+          "en": "Yes. The gas must be included in the total product mass.",
+          "hi": "हाँ। कुल उत्पाद द्रव्यमान में निकली गैस को भी शामिल करना होगा।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Atomic mass, molecular mass and the mole",
+        "hi": "परमाणु द्रव्यमान, आण्विक द्रव्यमान और मोल"
+      },
+      "paragraphs": [
+        {
+          "en": "Relative atomic masses compare atoms with one twelfth of the mass of a carbon-12 atom. One unified atomic mass unit is denoted u. The atomic mass listed for an element can be an abundance-weighted mean of its naturally occurring isotopes, so it need not be a whole number. Molecular mass is found by adding the atomic masses in the molecular formula; formula mass is useful for ionic solids that do not consist of separate molecules. A mole contains exactly 6.02214076 × 10^23 specified elementary entities. Always state whether these entities are atoms, molecules, ions or another group. The Avogadro constant has unit mol^-1. Molar mass is mass per mole and is normally expressed as g mol^-1 in school calculations. The relation n=m/M converts mass into amount of substance, and N=nNA converts amount into particle count. For the visual model, water has the rounded school molar mass 18 g mol^-1. One mole of water molecules contains two moles of hydrogen atoms and one mole of oxygen atoms.",
+          "hi": "सापेक्ष परमाणु द्रव्यमान (Relative atomic mass) की तुलना कार्बन-12 परमाणु के द्रव्यमान के 1/12 से की जाती है। एक एकीकृत परमाणु द्रव्यमान मात्रक को u लिखते हैं। तत्व का दिया परमाणु द्रव्यमान उसके प्राकृतिक समस्थानिकों के प्रचुरता-भारित औसत पर आधारित हो सकता है, इसलिए उसका पूर्णांक होना जरूरी नहीं। आण्विक द्रव्यमान (Molecular mass) निकालने के लिए अणुसूत्र में सभी परमाणुओं के द्रव्यमान जोड़ते हैं। आयनिक ठोस में अलग अणु नहीं होते, इसलिए सूत्र द्रव्यमान (Formula mass) उपयोगी है। एक मोल (Mole) में ठीक 6.02214076 × 10^23 निर्दिष्ट मूल कण होते हैं। ये कण परमाणु, अणु या आयन हैं, यह बताना आवश्यक है। आवोगाद्रो नियतांक (Avogadro constant) का मात्रक mol^-1 है। मोलर द्रव्यमान (Molar mass) प्रति मोल द्रव्यमान है और विद्यालय की गणनाओं में g mol^-1 में लेते हैं। n=m/M से द्रव्यमान को पदार्थ की मात्रा में और N=nNA से मात्रा को कण संख्या में बदलते हैं। दृश्य में जल का पूर्णांकित मोलर द्रव्यमान 18 g mol^-1 है। जल के 1 mol अणुओं में हाइड्रोजन परमाणुओं के 2 mol और ऑक्सीजन परमाणुओं का 1 mol होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Relative atomic mass is dimensionless; atomic mass may be expressed in u.",
+          "hi": "सापेक्ष परमाणु द्रव्यमान विमाहीन है; परमाणु द्रव्यमान u में लिख सकते हैं।"
+        },
+        {
+          "en": "Molar mass and molecular mass are related numerically but have different meanings and units.",
+          "hi": "मोलर और आण्विक द्रव्यमान संख्यात्मक रूप से जुड़े हैं, पर अर्थ और मात्रक अलग हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many moles are present in 36 g of water using M=18 g mol^-1?",
+          "hi": "M=18 g mol^-1 लेने पर 36 g जल में कितने मोल हैं?"
+        },
+        "answer": {
+          "en": "n=36/18=2 mol of water molecules.",
+          "hi": "n=36/18=2 mol जल अणु।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Percentage composition and formula determination",
+        "hi": "प्रतिशत संघटन और सूत्र निर्धारण"
+      },
+      "paragraphs": [
+        {
+          "en": "A chemical formula encodes a ratio of atoms, while percentage composition expresses the corresponding mass shares. The mass percentage of an element equals its mass contribution in one formula unit divided by the total formula mass, multiplied by 100. Water, using H=1 and O=16, contains 2/18 × 100 percent hydrogen by mass, not 2/3 percent; atom fraction and mass fraction answer different questions. To find an empirical formula from percentage data, imagine a 100 g sample, convert each element’s mass to moles, divide by the smallest mole amount and obtain the simplest whole-number ratio. If the resulting ratios are close to halves or thirds, multiply all ratios together by a suitable small integer. A molecular formula is an integer multiple of the empirical formula. The multiplier equals molecular molar mass divided by empirical-formula molar mass. Experimental rounding and the precision of atomic masses should be considered before forcing an exact ratio. The empirical formula alone does not determine the actual number of atoms in one molecule.",
+          "hi": "रासायनिक सूत्र परमाणुओं का अनुपात बताता है, जबकि प्रतिशत संघटन (Percentage composition) उनके द्रव्यमान का हिस्सा बताता है। किसी तत्व का द्रव्यमान प्रतिशत निकालने के लिए एक सूत्र इकाई में उसके द्रव्यमान योगदान को कुल सूत्र द्रव्यमान से भाग देकर 100 से गुणा करते हैं। H=1 और O=16 लेने पर जल में हाइड्रोजन का प्रतिशत 2/18 × 100 है, 2/3 × 100 नहीं। परमाणु अंश और द्रव्यमान अंश अलग प्रश्नों के उत्तर देते हैं। प्रतिशत आँकड़ों से मूलानुपाती सूत्र (Empirical formula) निकालते समय 100 g नमूना मानना सुविधाजनक है। प्रत्येक तत्व के द्रव्यमान को मोल में बदलें, सबसे छोटी मोल मात्रा से सबको भाग दें और सरल पूर्णांक अनुपात प्राप्त करें। अनुपात में आधा या तिहाई आए तो सभी अनुपातों को एक साथ उपयुक्त छोटी संख्या से गुणा करें। अणुसूत्र (Molecular formula) मूलानुपाती सूत्र का पूर्णांक गुणज है। यह गुणक आण्विक मोलर द्रव्यमान को मूलानुपाती सूत्र के मोलर द्रव्यमान से भाग देने पर मिलता है। मापन और परमाणु द्रव्यमानों की परिशुद्धता का ध्यान रखें। केवल मूलानुपाती सूत्र से एक अणु के वास्तविक परमाणु नहीं गिन सकते।"
+        }
+      ],
+      "points": [
+        {
+          "en": "All empirical-formula ratios must be multiplied by the same factor.",
+          "hi": "मूलानुपाती सूत्र में सभी अनुपातों को एक ही गुणक से गुणा करें।"
+        },
+        {
+          "en": "Mass percentages of all elements should total approximately 100 percent.",
+          "hi": "सभी तत्वों के द्रव्यमान प्रतिशत का योग लगभग 100 प्रतिशत होना चाहिए।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is CH2 an empirical formula rather than necessarily a molecular formula?",
+          "hi": "CH2 मूलानुपाती सूत्र है, अनिवार्य अणुसूत्र क्यों नहीं?"
+        },
+        "answer": {
+          "en": "It gives only the simplest C:H ratio; actual molecules could have an integer multiple such as C2H4.",
+          "hi": "यह केवल सरल C:H अनुपात देता है; वास्तविक अणु C2H4 जैसे पूर्णांक गुणज हो सकते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Concentration and dilution",
+        "hi": "सांद्रता और तनुकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Concentration tells how much solute is present relative to a stated quantity of solution or solvent. Mass percentage uses solute mass divided by solution mass. Mole fraction uses the moles of one component divided by total moles of all components. Molarity is the amount of solute in moles divided by solution volume in litres, whereas molality uses the mass of solvent in kilograms. These denominators cannot be interchanged. Volume can change with temperature, so molarity can change even when the amount of solute is unchanged; molality does not depend on a volume measurement. In dilution, adding solvent increases the final solution volume while the solute amount remains fixed, provided no solute is lost or reacts. Therefore M1V1=M2V2 for that same solute. The visual model contains 0.1 mol of solute and varies final volume. At 100 mL, its molarity is 1 mol L^-1, and at 500 mL it is 0.2 mol L^-1. Dilution reduces particles per volume, not the total number of solute particles.",
+          "hi": "सांद्रता (Concentration) बताती है कि विलयन या विलायक की निर्दिष्ट मात्रा के सापेक्ष विलेय कितना है। द्रव्यमान प्रतिशत में विलेय का द्रव्यमान, विलयन के कुल द्रव्यमान से भाग दिया जाता है। मोल अंश (Mole fraction) में किसी घटक के मोल, सभी घटकों के कुल मोल से भाग देते हैं। मोलरता (Molarity) विलेय के मोल को विलयन के लीटर आयतन से भाग देने पर मिलती है। मोललता (Molality) में हर के रूप में विलायक का किलोग्राम द्रव्यमान होता है। इन हरों को आपस में नहीं बदल सकते। आयतन ताप के साथ बदल सकता है, इसलिए विलेय की मात्रा स्थिर रहने पर भी मोलरता बदल सकती है। मोललता में आयतन नहीं आता। तनुकरण (Dilution) में विलायक जोड़ने से अंतिम विलयन आयतन बढ़ता है, जबकि विलेय की मात्रा स्थिर रहती है, यदि विलेय न खोए और न अभिक्रिया करे। इसलिए उसी विलेय के लिए M1V1=M2V2 होता है। दृश्य में 0.1 mol विलेय है और अंतिम आयतन बदलता है। 100 mL पर मोलरता 1 mol L^-1 तथा 500 mL पर 0.2 mol L^-1 है। तनुकरण से प्रति आयतन कण घटते हैं, कुल विलेय कण नहीं घटते।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use final solution volume, not merely the added solvent volume, for molarity.",
+          "hi": "मोलरता में अंतिम विलयन आयतन लें, केवल जोड़े विलायक का आयतन नहीं।"
+        },
+        {
+          "en": "Convert mL to L before evaluating n/V in mol L^-1.",
+          "hi": "n/V को mol L^-1 में निकालने से पहले mL को L में बदलें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does adding pure water change the number of moles of a non-reacting solute?",
+          "hi": "शुद्ध जल जोड़ने से अभिक्रिया न करने वाले विलेय के मोल बदलते हैं?"
+        },
+        "answer": {
+          "en": "No; it changes solution volume and hence molarity.",
+          "hi": "नहीं; इससे विलयन का आयतन और इसलिए मोलरता बदलती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Stoichiometry from balanced equations",
+        "hi": "संतुलित समीकरण से स्टॉइकियोमितीय गणना"
+      },
+      "paragraphs": [
+        {
+          "en": "Stoichiometry uses a balanced chemical equation to connect amounts of reactants and products. Its coefficients give ratios of molecules or moles, not directly ratios of masses. For 2H2+O2→2H2O, two moles of hydrogen react with one mole of oxygen to form two moles of water. The corresponding mass relation, using rounded molar masses, is 4 g plus 32 g giving 36 g. A practical calculation follows a clear chain: convert the given mass to moles, apply the coefficient ratio and convert the required moles to the requested mass or particle count. Do not multiply by an atomic subscript as though it were a reaction coefficient. Physical state and the identity of the specified entity also matter. For gases at the same temperature and pressure, the coefficient ratio may also describe their reacting volumes when all substances considered are gases. A balanced equation describes a chemical possibility and proportional requirements; it does not by itself guarantee completion, rate or an experimental yield. State any assumption that the reaction proceeds fully.",
+          "hi": "स्टॉइकियोमिति (Stoichiometry) में संतुलित समीकरण से अभिकारकों और उत्पादों की मात्राएँ जोड़ते हैं। गुणांक अणुओं या मोल का अनुपात देते हैं, सीधे द्रव्यमान का अनुपात नहीं। 2H2+O2→2H2O में हाइड्रोजन के 2 mol, ऑक्सीजन के 1 mol से अभिक्रिया कर जल के 2 mol बनाते हैं। पूर्णांकित मोलर द्रव्यमानों से यही द्रव्यमान संबंध 4 g हाइड्रोजन और 32 g ऑक्सीजन से 36 g जल बनना है। सही गणना में पहले दिए द्रव्यमान को मोल में बदलें, फिर समीकरण के गुणांक का अनुपात लगाएँ और अंत में आवश्यक मोल को माँगे द्रव्यमान या कण संख्या में बदलें। सूत्र के नीचे लिखे परमाणु अंक को अभिक्रिया का गुणांक न मानें। पदार्थ की भौतिक अवस्था और निर्दिष्ट कण की पहचान भी महत्त्वपूर्ण है। समान ताप और दाब पर गैसों के गुणांक, उनके अभिक्रियाशील आयतन का अनुपात भी दे सकते हैं, यदि तुलना की सभी प्रजातियाँ गैस हों। संतुलित समीकरण केवल रासायनिक संभावना और अनुपाती आवश्यकता बताता है। उससे अपने आप अभिक्रिया की पूर्णता, चाल या प्रयोग की प्राप्ति निश्चित नहीं होती। प्रश्न में पूर्ण अभिक्रिया मानते समय इस धारणा को स्पष्ट लिखें और अंतिम उत्तर के साथ सही मात्रक दें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Balance atoms before using an equation for calculations.",
+          "hi": "गणना से पहले समीकरण में परमाणु संतुलित करें।"
+        },
+        {
+          "en": "Use a mole bridge to connect two different substances.",
+          "hi": "दो अलग पदार्थों को जोड़ने के लिए मोल का मध्य चरण प्रयोग करें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can 2:1:2 not be read as a hydrogen:oxygen:water mass ratio?",
+          "hi": "2:1:2 को हाइड्रोजन:ऑक्सीजन:जल द्रव्यमान अनुपात क्यों नहीं पढ़ सकते?"
+        },
+        "answer": {
+          "en": "Coefficients give mole ratios; different substances have different molar masses.",
+          "hi": "गुणांक मोल अनुपात देते हैं; अलग पदार्थों के मोलर द्रव्यमान अलग होते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Limiting reagent and theoretical yield",
+        "hi": "सीमांत अभिकर्मक और सैद्धांतिक प्राप्ति"
+      },
+      "paragraphs": [
+        {
+          "en": "When reactants are supplied in arbitrary amounts, one may run out before the other. The limiting reagent is identified by the amount of product it can support according to the balanced equation, not by which sample has the smaller mass. Divide each reactant amount in moles by its stoichiometric coefficient; the smallest value limits the reaction extent. Other reactants remain in excess once the limiting reagent is consumed. In the visual model, oxygen begins at 2 mol. It can consume at most 4 mol of hydrogen and form 4 mol of water. Below 4 mol hydrogen, hydrogen limits water formation; above 4 mol, oxygen limits it and additional hydrogen remains. At exactly 4 mol hydrogen, both are consumed in the stoichiometric ratio. Fractional moles describe macroscopic amounts and do not mean a reaction produces fractions of individual molecules. The calculated maximum product is the theoretical yield. Actual yield can be smaller because of incomplete conversion, side reactions and losses during isolation; percentage yield compares actual with theoretical product on the same basis.",
+          "hi": "अभिकारक मनमानी मात्रा में मिलाने पर उनमें से कोई एक पहले समाप्त हो सकता है। सीमांत अभिकर्मक (Limiting reagent) वह है जो संतुलित समीकरण के अनुसार बनने वाले उत्पाद को सीमित करता है। केवल कम द्रव्यमान वाला नमूना चुनना सही तरीका नहीं है। प्रत्येक अभिकारक के मोल को उसके स्टॉइकियोमितीय गुणांक से भाग दें। सबसे छोटा भागफल अभिक्रिया की सीमा तय करता है। सीमांत अभिकर्मक समाप्त होने पर दूसरे अभिकारक अधिकता में बच सकते हैं। दृश्य में ऑक्सीजन शुरू में 2 mol है। यह अधिकतम 4 mol हाइड्रोजन के साथ 4 mol जल बना सकती है। हाइड्रोजन 4 mol से कम हो तो हाइड्रोजन जल बनने को सीमित करती है। उससे अधिक होने पर ऑक्सीजन सीमांत होती है और अतिरिक्त हाइड्रोजन बचती है। ठीक 4 mol हाइड्रोजन पर दोनों स्टॉइकियोमितीय अनुपात में समाप्त होते हैं। भिन्नात्मक मोल बड़ी पदार्थ मात्रा बताते हैं; इसका अर्थ किसी अकेले अणु का टुकड़ा बनना नहीं है। गणना से अधिकतम उत्पाद सैद्धांतिक प्राप्ति (Theoretical yield) है। अपूर्ण परिवर्तन, अन्य अभिक्रियाओं और पृथक्करण में हानि से वास्तविक प्राप्ति कम हो सकती है। प्रतिशत प्राप्ति में दोनों उत्पाद मात्राओं की तुलना एक ही आधार पर करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The smaller mass is not automatically the limiting reagent.",
+          "hi": "कम द्रव्यमान वाला पदार्थ अपने आप सीमांत अभिकर्मक नहीं होता।"
+        },
+        {
+          "en": "Theoretical yield assumes the stated reaction and complete use of the limiting reagent.",
+          "hi": "सैद्धांतिक प्राप्ति में निर्दिष्ट अभिक्रिया और सीमांत अभिकर्मक का पूरा उपयोग मानते हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "With 5 mol H2 and 2 mol O2, which reactant remains?",
+          "hi": "5 mol H2 और 2 mol O2 लेने पर कौन-सा अभिकारक बचता है?"
+        },
+        "answer": {
+          "en": "O2 limits; 4 mol H2 reacts and 1 mol H2 remains.",
+          "hi": "O2 सीमांत है; 4 mol H2 अभिक्रिया करती है और 1 mol H2 बचती है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "n=m/M",
+      "meaning": {
+        "en": "n is amount in mol, m is mass and M is molar mass.",
+        "hi": "n पदार्थ की मात्रा, m द्रव्यमान और M मोलर द्रव्यमान है।"
+      },
+      "units": {
+        "en": "Use g and g mol^-1 to obtain mol.",
+        "hi": "g और g mol^-1 लेने पर mol मिलता है।"
+      }
+    },
+    {
+      "expression": "N=nNA",
+      "meaning": {
+        "en": "N counts specified particles; NA=6.02214076×10^23 mol^-1.",
+        "hi": "N निर्दिष्ट कणों की संख्या है; NA=6.02214076×10^23 mol^-1।"
+      },
+      "units": {
+        "en": "N is a count; n has unit mol.",
+        "hi": "N गिनती है; n का मात्रक mol है।"
+      }
+    },
+    {
+      "expression": "Molarity=n/V",
+      "meaning": {
+        "en": "V is final solution volume in litres.",
+        "hi": "V अंतिम विलयन का लीटर में आयतन है।"
+      },
+      "units": {
+        "en": "mol L^-1",
+        "hi": "mol L^-1"
+      }
+    },
+    {
+      "expression": "M1V1=M2V2",
+      "meaning": {
+        "en": "Solute amount is conserved during dilution without loss or reaction.",
+        "hi": "हानि या अभिक्रिया रहित तनुकरण में विलेय मात्रा संरक्षित है।"
+      },
+      "units": {
+        "en": "Use matching volume units on both sides.",
+        "hi": "दोनों ओर आयतन के समान मात्रक लें।"
+      }
+    },
+    {
+      "expression": "Mass percentage=(element mass/total mass)×100",
+      "meaning": {
+        "en": "The ratio refers to masses, not atom counts.",
+        "hi": "अनुपात द्रव्यमान का है, परमाणु गिनती का नहीं।"
+      },
+      "units": {
+        "en": "Percent; dimensionless ratio ×100.",
+        "hi": "प्रतिशत; विमाहीन अनुपात ×100।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find moles and molecules in 36 g water.",
+        "hi": "36 g जल में मोल और अणु निकालें।"
+      },
+      "given": {
+        "en": "m=36 g; M=18 g mol^-1.",
+        "hi": "m=36 g; M=18 g mol^-1।"
+      },
+      "find": {
+        "en": "Amount and molecule count.",
+        "hi": "पदार्थ मात्रा और अणु संख्या।"
+      },
+      "formula": {
+        "en": "n=m/M; N=nNA",
+        "hi": "n=m/M; N=nNA"
+      },
+      "steps": [
+        {
+          "en": "n=36/18=2 mol.",
+          "hi": "n=36/18=2 mol।"
+        },
+        {
+          "en": "N=2×6.02214076×10^23.",
+          "hi": "N=2×6.02214076×10^23।"
+        }
+      ],
+      "answer": {
+        "en": "2.0 mol; approximately 1.2×10^24 molecules to 2 significant figures.",
+        "hi": "2.0 mol;2 सार्थक अंकों में लगभग1.2×10^24 अणु।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find oxygen mass percentage in water.",
+        "hi": "जल में ऑक्सीजन का द्रव्यमान प्रतिशत निकालें।"
+      },
+      "given": {
+        "en": "H=1; O=16.",
+        "hi": "H=1; O=16।"
+      },
+      "find": {
+        "en": "Oxygen mass percentage.",
+        "hi": "ऑक्सीजन का द्रव्यमान प्रतिशत।"
+      },
+      "formula": {
+        "en": "Percentage=(element contribution/formula mass)×100",
+        "hi": "Percentage=(element contribution/formula mass)×100"
+      },
+      "steps": [
+        {
+          "en": "Formula mass=2×1+16=18.",
+          "hi": "सूत्र द्रव्यमान=2×1+16=18।"
+        },
+        {
+          "en": "Oxygen share=16/18×100.",
+          "hi": "ऑक्सीजन अंश=16/18×100।"
+        }
+      ],
+      "answer": {
+        "en": "88.9% oxygen by mass, approximately.",
+        "hi": "लगभग 88.9% द्रव्यमान ऑक्सीजन।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find molarity when 0.1 mol solute gives 250 mL solution.",
+        "hi": "0.1 mol विलेय से 250 mL विलयन बने तो मोलरता निकालें।"
+      },
+      "given": {
+        "en": "n=0.1 mol; V=250 mL.",
+        "hi": "n=0.1 mol; V=250 mL।"
+      },
+      "find": {
+        "en": "Molarity.",
+        "hi": "मोलरता।"
+      },
+      "formula": {
+        "en": "M=n/V",
+        "hi": "M=n/V"
+      },
+      "steps": [
+        {
+          "en": "250 mL=0.250 L.",
+          "hi": "250 mL=0.250 L।"
+        },
+        {
+          "en": "M=0.1/0.250.",
+          "hi": "M=0.1/0.250।"
+        }
+      ],
+      "answer": {
+        "en": "0.4 mol L^-1.",
+        "hi": "0.4 mol L^-1।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find empirical and molecular formula for 40.0% C, 6.7% H and 53.3% O; molar mass 180 g mol^-1.",
+        "hi": "40.0% C, 6.7% H और 53.3% O; मोलर द्रव्यमान 180 g mol^-1 हो तो मूलानुपाती और अणुसूत्र निकालें।"
+      },
+      "given": {
+        "en": "Use C=12, H=1, O=16 and a 100 g sample.",
+        "hi": "C=12, H=1, O=16 तथा 100 g नमूना लें।"
+      },
+      "find": {
+        "en": "Both formulas.",
+        "hi": "दोनों सूत्र।"
+      },
+      "formula": {
+        "en": "Atom ratio=(mass/atomic molar mass); multiplier=M/Memp",
+        "hi": "Atom ratio=(mass/atomic molar mass); multiplier=M/Memp"
+      },
+      "steps": [
+        {
+          "en": "Moles are approximately 3.33:6.7:3.33.",
+          "hi": "मोल लगभग 3.33:6.7:3.33 हैं।"
+        },
+        {
+          "en": "Divide by 3.33 to obtain 1:2:1, giving CH2O.",
+          "hi": "3.33 से भाग देने पर 1:2:1, इसलिए CH2O।"
+        },
+        {
+          "en": "Memp=30; multiplier=180/30=6.",
+          "hi": "Memp=30; गुणक=180/30=6।"
+        }
+      ],
+      "answer": {
+        "en": "Empirical CH2O; molecular C6H12O6.",
+        "hi": "मूलानुपाती CH2O; अणुसूत्र C6H12O6।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "For 5 mol H2 and 2 mol O2, find water and excess reactant after complete reaction.",
+        "hi": "5 mol H2 और 2 mol O2 की पूर्ण अभिक्रिया के बाद जल और बचा अभिकारक निकालें।"
+      },
+      "given": {
+        "en": "2H2+O2→2H2O.",
+        "hi": "2H2+O2→2H2O।"
+      },
+      "find": {
+        "en": "Water amount and remaining H2.",
+        "hi": "जल की मात्रा और बची H2।"
+      },
+      "formula": {
+        "en": "Reaction extent=min(nH2/2,nO2/1)",
+        "hi": "Reaction extent=min(nH2/2,nO2/1)"
+      },
+      "steps": [
+        {
+          "en": "5/2=2.5 and 2/1=2; oxygen limits.",
+          "hi": "5/2=2.5 तथा 2/1=2; ऑक्सीजन सीमांत है।"
+        },
+        {
+          "en": "Water=2×2=4 mol; H2 consumed=4 mol.",
+          "hi": "जल=2×2=4 mol; प्रयुक्त H2=4 mol।"
+        },
+        {
+          "en": "H2 left=5−4=1 mol. Water mass=4×18.",
+          "hi": "बची H2=5−4=1 mol। जल द्रव्यमान=4×18।"
+        }
+      ],
+      "answer": {
+        "en": "4 mol water (72 g); 1 mol H2 remains.",
+        "hi": "4 mol जल (72 g); 1 mol H2 बचती है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "What does one mole specify?",
+        "hi": "एक मोल क्या बताता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "6.02214076×10^23 specified entities",
+            "hi": "6.02214076×10^23 निर्दिष्ट कण"
+          },
+          "reason": {
+            "en": "This is the exact mole definition.",
+            "hi": "यह मोल की ठीक परिभाषा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always 1 g",
+            "hi": "हमेशा 1 g"
+          },
+          "reason": {
+            "en": "Mass per mole depends on the substance.",
+            "hi": "प्रति मोल द्रव्यमान पदार्थ पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always 1 L",
+            "hi": "हमेशा 1 L"
+          },
+          "reason": {
+            "en": "A mole is not a fixed volume.",
+            "hi": "मोल निश्चित आयतन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only electrons",
+            "hi": "केवल इलेक्ट्रॉन"
+          },
+          "reason": {
+            "en": "The specified entities may be atoms, molecules or ions.",
+            "hi": "निर्दिष्ट कण परमाणु, अणु या आयन भी हो सकते हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "36 g water with M=18 g mol^-1 contains how much water?",
+        "hi": "M=18 g mol^-1 वाले 36 g जल की मात्रा कितनी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2 mol",
+            "hi": "2 mol"
+          },
+          "reason": {
+            "en": "n=36/18.",
+            "hi": "n=36/18।"
+          }
+        },
+        {
+          "text": {
+            "en": "18 mol",
+            "hi": "18 mol"
+          },
+          "reason": {
+            "en": "18 is the molar mass value, not the result.",
+            "hi": "18 मोलर द्रव्यमान का मान है, परिणाम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "36 mol",
+            "hi": "36 mol"
+          },
+          "reason": {
+            "en": "Grams must be divided by molar mass.",
+            "hi": "ग्राम को मोलर द्रव्यमान से भाग देना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.5 mol",
+            "hi": "0.5 mol"
+          },
+          "reason": {
+            "en": "This reverses the needed ratio.",
+            "hi": "यह आवश्यक अनुपात उलटता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "The coefficients 2:1:2 in water formation primarily give which ratio?",
+        "hi": "जल बनने में 2:1:2 गुणांक मुख्यतः किसका अनुपात हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Moles of H2:O2:H2O",
+            "hi": "H2:O2:H2O के मोल"
+          },
+          "reason": {
+            "en": "Coefficients compare amounts of species.",
+            "hi": "गुणांक प्रजातियों की मोल मात्रा तुलना करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Masses in grams",
+            "hi": "ग्राम में द्रव्यमान"
+          },
+          "reason": {
+            "en": "Molar masses are needed to obtain masses.",
+            "hi": "द्रव्यमान के लिए मोलर द्रव्यमान चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Atomic numbers",
+            "hi": "परमाणु क्रमांक"
+          },
+          "reason": {
+            "en": "Atomic numbers identify elements.",
+            "hi": "परमाणु क्रमांक तत्व पहचानता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Densities",
+            "hi": "घनत्व"
+          },
+          "reason": {
+            "en": "Densities are separate physical properties.",
+            "hi": "घनत्व अलग भौतिक गुण हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which denominator defines molarity?",
+        "hi": "मोलरता में हर क्या होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Final solution volume in litres",
+            "hi": "अंतिम विलयन का लीटर आयतन"
+          },
+          "reason": {
+            "en": "Molarity=nsolute/Vsolution.",
+            "hi": "मोलरता=nविलेय/Vविलयन।"
+          }
+        },
+        {
+          "text": {
+            "en": "Solvent mass in kg",
+            "hi": "विलायक का kg द्रव्यमान"
+          },
+          "reason": {
+            "en": "This is used for molality.",
+            "hi": "यह मोललता में उपयोग होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Solute volume only",
+            "hi": "केवल विलेय का आयतन"
+          },
+          "reason": {
+            "en": "The entire solution volume is needed.",
+            "hi": "पूरे विलयन का आयतन चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Total particle mass in u",
+            "hi": "कुल कण द्रव्यमान u में"
+          },
+          "reason": {
+            "en": "This does not define solution molarity.",
+            "hi": "इससे विलयन मोलरता परिभाषित नहीं होती।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Diluting 0.1 mol solute to 500 mL gives what molarity?",
+        "hi": "0.1 mol विलेय को 500 mL तक तनु करने पर मोलरता?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "0.2 mol L^-1",
+            "hi": "0.2 mol L^-1"
+          },
+          "reason": {
+            "en": "0.1/0.5=0.2.",
+            "hi": "0.1/0.5=0.2।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 mol L^-1",
+            "hi": "2 mol L^-1"
+          },
+          "reason": {
+            "en": "This would require a smaller volume.",
+            "hi": "इसके लिए कम आयतन चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "50 mol L^-1",
+            "hi": "50 mol L^-1"
+          },
+          "reason": {
+            "en": "This multiplies instead of using n/V.",
+            "hi": "यह n/V की जगह गुणा करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.0002 mol L^-1",
+            "hi": "0.0002 mol L^-1"
+          },
+          "reason": {
+            "en": "500 mL must first become 0.5 L.",
+            "hi": "500 mL को पहले 0.5 L बनाना चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What remains constant in loss-free dilution of a non-reacting solute?",
+        "hi": "हानि रहित तनुकरण में अभिक्रिया न करने वाले विलेय की कौन-सी राशि स्थिर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Solute moles",
+            "hi": "विलेय के मोल"
+          },
+          "reason": {
+            "en": "Only solvent is added in this model.",
+            "hi": "इस मॉडल में केवल विलायक जोड़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Molarity",
+            "hi": "मोलरता"
+          },
+          "reason": {
+            "en": "Molarity falls when volume rises.",
+            "hi": "आयतन बढ़ने पर मोलरता घटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Solution volume",
+            "hi": "विलयन आयतन"
+          },
+          "reason": {
+            "en": "Volume increases during dilution.",
+            "hi": "तनुकरण में आयतन बढ़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Solvent mass",
+            "hi": "विलायक द्रव्यमान"
+          },
+          "reason": {
+            "en": "Added solvent increases this mass.",
+            "hi": "विलायक जोड़ने से यह द्रव्यमान बढ़ता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which law concerns a fixed elemental mass ratio in a pure compound?",
+        "hi": "शुद्ध यौगिक में निश्चित तत्व द्रव्यमान अनुपात किस नियम का विषय है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Law of definite proportions",
+            "hi": "निश्चित अनुपात का नियम"
+          },
+          "reason": {
+            "en": "The same compound has definite composition.",
+            "hi": "एक शुद्ध यौगिक का निश्चित संघटन होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Avogadro law",
+            "hi": "आवोगाद्रो नियम"
+          },
+          "reason": {
+            "en": "This relates gas volume and particle number.",
+            "hi": "यह गैस आयतन और कण संख्या जोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A rule about all mixtures",
+            "hi": "सभी मिश्रणों का नियम"
+          },
+          "reason": {
+            "en": "Mixtures may have variable composition.",
+            "hi": "मिश्रणों का संघटन बदल सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A statement that atoms cannot contain electrons",
+            "hi": "परमाणु में इलेक्ट्रॉन नहीं हो सकते"
+          },
+          "reason": {
+            "en": "This is not the composition law.",
+            "hi": "यह संघटन का नियम नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which is the empirical formula of C6H12O6?",
+        "hi": "C6H12O6 का मूलानुपाती सूत्र क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "CH2O",
+            "hi": "CH2O"
+          },
+          "reason": {
+            "en": "Divide all subscripts by 6.",
+            "hi": "सभी नीचे के अंकों को 6 से भाग दें।"
+          }
+        },
+        {
+          "text": {
+            "en": "C2H4O2",
+            "hi": "C2H4O2"
+          },
+          "reason": {
+            "en": "This ratio can still be simplified.",
+            "hi": "यह अनुपात अभी और सरल हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "CHO",
+            "hi": "CHO"
+          },
+          "reason": {
+            "en": "Hydrogen would have the wrong ratio.",
+            "hi": "हाइड्रोजन का अनुपात गलत होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "C6HO6",
+            "hi": "C6HO6"
+          },
+          "reason": {
+            "en": "Only one subscript cannot be divided.",
+            "hi": "केवल एक नीचे का अंक नहीं बदल सकते।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "For 5 mol H2 and 2 mol O2, which reactant limits water formation?",
+        "hi": "5 mol H2 और 2 mol O2 में जल बनने का सीमांत अभिकारक कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "O2",
+            "hi": "O2"
+          },
+          "reason": {
+            "en": "2 mol O2 consumes 4 mol H2.",
+            "hi": "2 mol O2, 4 mol H2 का उपयोग करती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "H2",
+            "hi": "H2"
+          },
+          "reason": {
+            "en": "1 mol H2 remains after oxygen is used.",
+            "hi": "ऑक्सीजन समाप्त होने पर 1 mol H2 बचती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both remain entirely unchanged",
+            "hi": "दोनों पूरी तरह अपरिवर्तित"
+          },
+          "reason": {
+            "en": "The assumed reaction consumes both partly or fully.",
+            "hi": "मानी अभिक्रिया में दोनों की कुछ या पूरी मात्रा प्रयुक्त होती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Whichever has lower mass without calculation",
+            "hi": "बिना गणना कम द्रव्यमान वाला"
+          },
+          "reason": {
+            "en": "Limitation depends on mole-to-coefficient ratios.",
+            "hi": "सीमा मोल और गुणांक के अनुपात से तय होती है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "How many significant figures are in 0.00520?",
+        "hi": "0.00520 में कितने सार्थक अंक हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "Leading zeros do not count; 5, 2 and final decimal zero do.",
+            "hi": "शुरू के शून्य नहीं; 5, 2 और अंतिम दशमलव शून्य सार्थक हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "This ignores the meaningful trailing decimal zero.",
+            "hi": "यह अर्थपूर्ण अंतिम दशमलव शून्य छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "Leading zeros merely locate the decimal.",
+            "hi": "शुरू के शून्य केवल दशमलव का स्थान बताते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "6",
+            "hi": "6"
+          },
+          "reason": {
+            "en": "Not every written digit is significant.",
+            "hi": "हर लिखा अंक सार्थक नहीं होता।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish molecular mass and molar mass.",
+        "hi": "आण्विक और मोलर द्रव्यमान में अंतर लिखें।"
+      },
+      "answer": {
+        "en": "Molecular mass is the mass of one molecule, often in u; molar mass is mass per mole in g mol^-1 or kg mol^-1.",
+        "hi": "आण्विक द्रव्यमान एक अणु का द्रव्यमान है, प्रायः u में; मोलर द्रव्यमान प्रति मोल द्रव्यमान है, g mol^-1 या kg mol^-1 में।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does molarity depend on temperature?",
+        "hi": "मोलरता ताप पर क्यों निर्भर है?"
+      },
+      "answer": {
+        "en": "It contains solution volume, which can change with temperature while solute moles remain fixed.",
+        "hi": "इसमें विलयन आयतन है, जो विलेय के मोल स्थिर रहने पर भी ताप से बदल सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the mole bridge in a mass-to-mass reaction calculation.",
+        "hi": "अभिक्रिया की द्रव्यमान से द्रव्यमान गणना में मोल का मध्य चरण समझाएँ।"
+      },
+      "answer": {
+        "en": "Convert given mass to moles, apply the balanced coefficient ratio and multiply required moles by the product molar mass.",
+        "hi": "दिए द्रव्यमान को मोल में बदलें, संतुलित गुणांक अनुपात लगाएँ और आवश्यक मोल को उत्पाद के मोलर द्रव्यमान से गुणा करें।"
+      }
+    },
+    {
+      "question": {
+        "en": "What does a limiting reagent control?",
+        "hi": "सीमांत अभिकर्मक क्या नियंत्रित करता है?"
+      },
+      "answer": {
+        "en": "It controls the maximum reaction extent and theoretical product amount for the stated equation.",
+        "hi": "यह निर्दिष्ट समीकरण के लिए अधिकतम अभिक्रिया सीमा और सैद्धांतिक उत्पाद मात्रा नियंत्रित करता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why can an isotope average atomic mass be non-integral?",
+        "hi": "समस्थानिकों का औसत परमाणु द्रव्यमान पूर्णांक क्यों नहीं हो सकता?"
+      },
+      "answer": {
+        "en": "It is weighted by isotope abundances, rather than being the mass number of one atom.",
+        "hi": "यह समस्थानिक प्रचुरता का भारित औसत है, किसी एक परमाणु की द्रव्यमान संख्या नहीं।"
+      }
+    },
+    {
+      "question": {
+        "en": "State what information is needed to turn an empirical formula into a molecular formula.",
+        "hi": "मूलानुपाती सूत्र से अणुसूत्र निकालने के लिए कौन-सी जानकारी चाहिए?"
+      },
+      "answer": {
+        "en": "The molecular molar mass gives the integer multiplier relative to empirical-formula molar mass.",
+        "hi": "आण्विक मोलर द्रव्यमान से मूलानुपाती सूत्र के मोलर द्रव्यमान के सापेक्ष पूर्णांक गुणक मिलता है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "A measurement needs both number and unit.",
+      "hi": "मापन में संख्या और मात्रक दोनों चाहिए।"
+    },
+    {
+      "en": "One mole contains NA specified entities.",
+      "hi": "एक मोल में NA निर्दिष्ट कण होते हैं।"
+    },
+    {
+      "en": "Convert masses to moles before applying reaction ratios.",
+      "hi": "अभिक्रिया अनुपात से पहले द्रव्यमान को मोल में बदलें।"
+    },
+    {
+      "en": "Molarity uses final solution volume in litres.",
+      "hi": "मोलरता में अंतिम विलयन का लीटर आयतन लें।"
+    },
+    {
+      "en": "The limiting reagent determines theoretical product.",
+      "hi": "सीमांत अभिकर्मक सैद्धांतिक उत्पाद तय करता है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse atom ratios with mass ratios, solvent mass with solution volume, or low mass with a limiting reagent.",
+    "hi": "परमाणु अनुपात को द्रव्यमान अनुपात, विलायक द्रव्यमान को विलयन आयतन या कम द्रव्यमान को सीमांत अभिकर्मक न समझें।"
+  },
+  "goal": {
+    "en": "Measure, count and compare substances using moles and balanced reactions.",
+    "hi": "मोल और संतुलित अभिक्रिया से पदार्थों को मापें, गिनें और तुलना करें।"
+  },
+  "conceptMap": "मापन → द्रव्यमान और मोलर द्रव्यमान → मोल → कण तथा संघटन → विलयन सांद्रता → स्टॉइकियोमिति → सीमांत अभिकर्मक",
+  "conceptMapEn": "Measurement → mass and molar mass → moles → particles and composition → solution concentration → stoichiometry → limiting reagent",
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Chemistry Class 11, reprint 2026–27, and the UP Board syllabus. Use the prescribed textbook and school practicals alongside.",
+    "hi": "NCERT रसायन विज्ञान कक्षा 11, पुनर्मुद्रण 2026–27 तथा यूपी बोर्ड पाठ्यक्रम पर आधारित मौलिक अध्ययन व्याख्याएँ। निर्धारित पुस्तक और विद्यालय के प्रयोग भी साथ पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Chemistry Part I, Chapter 1, 2026–27",
+      "url": "https://ncert.nic.in/textbook/pdf/kech101.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Chemistry syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/152-Chemistry-Class-11.pdf"
+    }
+  ]
+}

@@ -1,0 +1,872 @@
+{
+  "id": 7,
+  "title": {
+    "en": "Binomial Theorem",
+    "hi": "द्विपद प्रमेय"
+  },
+  "goal": {
+    "en": "Use combinations to expand powers and extract terms, coefficients and sums precisely.",
+    "hi": "संचय से घातों का प्रसार और पद,गुणांक तथा योग सटीक निकालें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "From products to the binomial theorem",
+        "hi": "गुणनफल से द्विपद प्रमेय तक"
+      },
+      "body": {
+        "en": "A binomial is a sum of two terms, such as a+b. For nonnegative integer n, the binomial theorem expands (a+b)^n as Σ from r=0 to n of ⁿCᵣa^(n−r)b^r. In multiplying n identical factors, choose b from r factors and a from the rest; ⁿCᵣ counts those choices. This explains the coefficients rather than treating them as a memorised list. The expansion has n+1 terms before collecting terms with equal variable powers. The first is a^n and the last b^n. The stated finite theorem uses nonnegative integer powers; it does not automatically provide a finite expansion for negative or fractional n.",
+        "hi": "द्विपद (Binomial) 2 पदों का योग है, जैसे a+b। गैरऋणात्मक पूर्णांक n के लिए द्विपद प्रमेय (Binomial theorem) (a+b)^n को r=0 से n तक ⁿCᵣa^(n−r)b^r के योग में बदलता है। n समान गुणनखंडों को गुणा करते समय r गुणनखंडों से b और बाकी से a चुनते हैं। ऐसे चुनाव ⁿCᵣ हैं, इसलिए वही गुणांक आता है। इस तर्क से गुणांक केवल याद की सूची नहीं रहते। प्रसार में समान घात वाले पद मिलाने से पहले n+1 पद होते हैं। पहला a^n और अंतिम b^n है। हर पद में a तथा b की घातों का योग n रहता है। यहाँ प्रमेय का सीमित प्रसार गैरऋणात्मक पूर्णांक घात के लिए है। ऋणात्मक या भिन्नात्मक n पर यही सीमित सूत्र स्वतः लागू नहीं होता। n=0 में प्रसार 1 है, जिसकी व्याख्या अनुमत आधारों के संदर्भ में करें। पूरे गुणनफल को लिखकर छोटे n=2 या3 पर जाँचना संयोजन आधारित प्रमाण की अच्छी शुरुआत है।"
+      },
+      "formula": "(a+b)^n=Σᵣ₌₀ⁿ ⁿCᵣ a^(n−r)b^r, n∈W",
+      "question": {
+        "en": "Why is the coefficient of a²b in (a+b)³ equal to3?",
+        "hi": "(a+b)³ में a²b का गुणांक3 क्यों है?"
+      },
+      "answer": {
+        "en": "Choose the one factor contributing b in3 ways.",
+        "hi": "b देने वाला1 गुणनखंड3 तरीकों से चुनते हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Pascal triangle and coefficient symmetry",
+        "hi": "पास्कल त्रिभुज और गुणांक सममिति"
+      },
+      "body": {
+        "en": "The coefficient rows begin1;1,1;1,2,1;1,3,3,1;1,4,6,4,1. These form Pascal triangle. Each interior entry is the sum of the two above, expressing ⁿCᵣ=ⁿ⁻¹Cᵣ+ⁿ⁻¹Cᵣ₋₁. Symmetry ⁿCᵣ=ⁿCₙ₋ᵣ makes a row read the same backwards. Index rows from0: row n belongs to power n and has n+1 entries. The triangle gives numerical coefficients, not signs or variable powers, which must still be inserted. For (a−b)^n the coefficients in absolute value are the same but signs alternate. Use factorial formulas for a distant coefficient rather than writing every preceding row.",
+        "hi": "गुणांकों की पंक्तियाँ 1;1,1;1,2,1;1,3,3,1;1,4,6,4,1 से शुरू होती हैं। ये पास्कल त्रिभुज (Pascal triangle) बनाती हैं। हर भीतरी प्रविष्टि ऊपर की 2 प्रविष्टियों का योग है। यह ⁿCᵣ=ⁿ⁻¹Cᵣ+ⁿ⁻¹Cᵣ₋₁ संबंध दिखाता है। सममिति ⁿCᵣ=ⁿCₙ₋ᵣ के कारण पंक्ति उलटी पढ़ने पर वही रहती है। पंक्ति गिनना 0 से शुरू करें: nवीं पंक्ति घात n की है और उसमें n+1 प्रविष्टियाँ हैं। त्रिभुज केवल संख्यात्मक गुणांक देता है। चर की घातें और ऋण चिह्न अलग लगाने होंगे। (a−b)^n में परिमाण वही रहते हैं, लेकिन संकेत बारी-बारी बदलते हैं। दूर का कोई 1 गुणांक चाहिए हो, तो सभी पुरानी पंक्तियाँ लिखने के बजाय संचय सूत्र उपयोग करें। हर पंक्ति के सिरों पर 1 होना पहले और अंतिम पद से मेल खाता है। अगली पंक्ति बनाने के बाद सममिति तथा प्रविष्टियों की संख्या जाँचना छोटी अंकगणितीय गलती पकड़ने का उपयोगी तरीका है।"
+      },
+      "formula": "ⁿCᵣ=ⁿCₙ₋ᵣ; ⁿCᵣ=ⁿ⁻¹Cᵣ+ⁿ⁻¹Cᵣ₋₁",
+      "question": {
+        "en": "What is the coefficient row for power4?",
+        "hi": "घात4 की गुणांक पंक्ति क्या है?"
+      },
+      "answer": {
+        "en": "1,4,6,4,1.",
+        "hi": "1,4,6,4,1।"
+      }
+    },
+    {
+      "title": {
+        "en": "The general term and term number",
+        "hi": "व्यापक पद और पद संख्या"
+      },
+      "body": {
+        "en": "The (r+1)th term is Tᵣ₊₁=ⁿCᵣa^(n−r)b^r, with r=0,...,n. The term number is one more than the index r. The fourth term therefore uses r=3, not4. If a or b contains a numerical coefficient, raise that coefficient to the indicated power too. In (2x+3)^5, T₄=⁵C₃(2x)²3³=1080x². Bracketed powers act on every factor inside. A general-term formula lets us find one requested term without expanding the entire expression. Write the index, substitute it, simplify coefficients, and only then combine variable powers. This sequence prevents the most common off-by-one error.",
+        "hi": "व्यापक पद (General term) Tᵣ₊₁=ⁿCᵣa^(n−r)b^r है, जहाँ r=0,...,n। पद संख्या r से 1 अधिक है। इसलिए चौथे पद के लिए r=3 रखना है,4 नहीं। a या b में संख्यात्मक गुणांक हो, तो उसकी भी संबंधित घात लेनी होगी। (2x+3)^5 में T₄=⁵C₃(2x)²3³=10×4x²×27=1080x² है। कोष्ठक की घात अंदर के हर गुणनखंड पर लगती है। केवल x² लिखकर 2² छोड़ देना गलत होगा। व्यापक पद से पूरा प्रसार किए बिना माँगा पद मिल जाता है। पहले पद संख्या से r निकालें, फिर सूत्र में रखें, फिर संख्यात्मक गुणांक सरल करें और अंत में चर की घातें मिलाएँ। r की सीमा 0 से n भी जाँचें। n+1 से बड़ी पद संख्या उस प्रसार में नहीं है। पहले पद के लिए r=0 रखने पर a^n मिलता है; इस आसान जाँच से व्यापक पद का लिखा क्रम सही है या नहीं, तुरंत पता चल सकता है।"
+      },
+      "formula": "Tᵣ₊₁=ⁿCᵣa^(n−r)b^r",
+      "question": {
+        "en": "Which r gives the sixth term?",
+        "hi": "छठे पद के लिए कौन-सा r होगा?"
+      },
+      "answer": {
+        "en": "r=5.",
+        "hi": "r=5।"
+      }
+    },
+    {
+      "title": {
+        "en": "Expanding with negative terms",
+        "hi": "ऋणात्मक पदों वाले प्रसार"
+      },
+      "body": {
+        "en": "For (a−b)^n substitute −b for the second term: Tᵣ₊₁=(−1)^rⁿCᵣa^(n−r)b^r. Terms with odd r are negative and even r positive. Thus (x−2)^3=x³−6x²+12x−8. A negative coefficient must be raised along with the variable. In (1−2x)^4 the coefficient of x³ is ⁴C₃(−2)³=−32. Keep the sign inside parentheses until the power is evaluated. The final sign can depend on other negative factors as well. Check a full expansion at x=0 and another simple value; one check confirms the constant term, while the other can reveal a missing sign or coefficient.",
+        "hi": "(a−b)^n में दूसरे पद के रूप में −b रखें। तब Tᵣ₊₁=(−1)^rⁿCᵣa^(n−r)b^r है। विषम r पर ऋणात्मक और सम r पर धनात्मक चिह्न आता है। उदाहरणतः (x−2)^3=x³−6x²+12x−8। ऋणात्मक गुणांक को चर के साथ कोष्ठक में रखकर घात दें। (1−2x)^4 में x³ का गुणांक ⁴C₃(−2)³=−32 है। पहले −2 की तीसरी घात निकालें, फिर 4 से गुणा करें। केवल द्विपद गुणांक 4 लिखना पूरा उत्तर नहीं है। किसी पद में अन्य ऋणात्मक गुणनखंड भी हों, तो अंतिम चिह्न सभी से तय होगा। पूरा प्रसार x=0 और किसी दूसरे सरल मान पर जाँचना उपयोगी है। पहली जाँच अचर पद और दूसरी गुणांकों या चिह्न की गलती दिखा सकती है। फिर भी कुछ मानों की जाँच सर्वसमिका का पूरा प्रमाण नहीं; प्रसार का तर्क द्विपद प्रमेय देता है। संकेतों की व्यवस्था समझने से याद पर निर्भरता घटती है।"
+      },
+      "formula": "(a−b)^n=Σᵣ₌₀ⁿ (−1)^rⁿCᵣa^(n−r)b^r",
+      "question": {
+        "en": "Find the coefficient of x² in (1−3x)³.",
+        "hi": "(1−3x)³ में x² का गुणांक निकालें।"
+      },
+      "answer": {
+        "en": "³C₂(−3)²=27.",
+        "hi": "³C₂(−3)²=27।"
+      }
+    },
+    {
+      "title": {
+        "en": "Coefficients of specified powers",
+        "hi": "विशिष्ट घातों के गुणांक"
+      },
+      "body": {
+        "en": "To find the coefficient of x^k, simplify the variable power in the general term, set its exponent equal to k, and solve for r. Check that r is an integer from0 to n. In (x²+1/x)^6, for x≠0, the general term has x-exponent2(6−r)−r=12−3r. A constant term needs12−3r=0, so r=4 and coefficient⁶C₄=15. If no allowed r solves the exponent equation, that power is absent and its coefficient is0. A constant term is not necessarily the last term. Negative powers in the input make domain restrictions important; simplifying a term does not allow x=0 in the original expression. For example the exponent equation in (x²+1/x)^6 can only produce powers12,9,6,3,0,−3,−6. This sequence provides a quick independent check of which powers can occur, while the general term still supplies their coefficients.",
+        "hi": "x^k का गुणांक निकालने के लिए व्यापक पद में x की कुल घात सरल करें, उसे k के बराबर रखें और r निकालें। r को 0 से n के बीच पूर्णांक होना चाहिए। (x²+1/x)^6 में x≠0 है। व्यापक पद की x-घात 2(6−r)−r=12−3r है। अचर पद (Constant term) के लिए 12−3r=0,अर्थात r=4 है। इसलिए अचर गुणांक ⁶C₄=15 मिलता है। कोई अनुमत पूर्णांक r न मिले, तो माँगी घात का पद नहीं है और उसका गुणांक 0 है। अचर पद हमेशा अंतिम पद नहीं होता। मूल व्यंजक में ऋणात्मक घात हो, तो प्रांत का प्रतिबंध बनाए रखें। किसी पद में x कट जाने से पूरे मूल व्यंजक में x=0 मान्य नहीं हो जाता। पहले घात का समीकरण हल करना और बाद में गुणांक निकालना गणना छोटा रखता है। हर पद की पूरी सूची लिखने की जरूरत नहीं, लेकिन सूचकांक की सीमा जाँच छोड़ने से ऐसे पद का गुणांक निकल सकता है जो वास्तव में मौजूद ही नहीं। उदाहरणतः (x²+1/x)^6 में घातें केवल12,9,6,3,0,−3,−6 हो सकती हैं। यह क्रम उपस्थित घातों की त्वरित स्वतंत्र जाँच देता है,जबकि उनके गुणांक व्यापक पद से ही निकलते हैं। किसी बीच की अनुपस्थित घात का गुणांक0 लिखना सही और पूर्ण उत्तर है।"
+      },
+      "formula": "For (xᵖ+xᑫ)^n, exponent=p(n−r)+qr",
+      "question": {
+        "en": "Does (x²+1/x)^4 contain an x term?",
+        "hi": "क्या (x²+1/x)^4 में x का पद है?"
+      },
+      "answer": {
+        "en": "8−3r=1 gives r=7/3, not an integer, so no.",
+        "hi": "8−3r=1 से r=7/3,पूर्णांक नहीं;इसलिए नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Middle terms and parity",
+        "hi": "मध्य पद और सम-विषमता"
+      },
+      "body": {
+        "en": "A power-n expansion has n+1 terms before collection. If n is even, there is one middle term at position n/2+1, corresponding to r=n/2. If n is odd, there are two middle terms at positions (n+1)/2 and (n+3)/2, with r=(n−1)/2 and (n+1)/2. For n=6 the middle is T₄; for n=5 the middle terms are T₃ and T₄. Position is not the same as the exponent of a chosen variable. Write the expansion order specified by the theorem before speaking of middle terms. Reversing the order gives the same central term or pair, although their displayed positions may be described differently. For an odd power, calculate the two terms separately because their coefficients may be equal but their variables and numerical factors can differ.",
+        "hi": "घात n के प्रसार में समान घात वाले पद मिलाने से पहले n+1 पद होते हैं। n सम हो, तो पदों की संख्या विषम और केवल 1 मध्य पद होता है। उसकी स्थिति n/2+1 और r=n/2 है। n विषम हो, तो पदों की संख्या सम और 2 मध्य पद होते हैं। उनकी स्थितियाँ (n+1)/2 तथा (n+3)/2 हैं; संबंधित r=(n−1)/2 और (n+1)/2 हैं। n=6 में मध्य T₄ और n=5 में मध्य T₃,T₄ हैं। पद की स्थिति चर की घात के बराबर नहीं होती। पहले n की सम-विषमता जाँचें, फिर पद संख्या और उसके बाद r लिखें। इस क्रम से मध्य पद में होने वाली 1 स्थान की गलती नहीं होगी। प्रसार को द्विपद प्रमेय के मानक क्रम में पढ़ें। क्रम उलटने पर वही मध्य पद या वही जोड़ी मिलती है। यदि आगे समान घात वाले पद मिलाने का प्रसंग हो, तो पद संख्या किस मूल सूची में गिनी जा रही है, यह स्पष्ट करना जरूरी है। विषम घात में दोनों मध्य पद अलग निकालें,क्योंकि गुणांक समान होने पर भी चर तथा संख्यात्मक गुणनखंड अलग हो सकते हैं।"
+      },
+      "formula": "n even:middle Tₙ/₂₊₁; n odd:middle T₍ₙ₊₁₎/₂ and T₍ₙ₊₃₎/₂",
+      "question": {
+        "en": "Which terms are middle terms for power7?",
+        "hi": "घात7 में मध्य पद कौन हैं?"
+      },
+      "answer": {
+        "en": "There are8 terms; T₄ and T₅.",
+        "hi": "8 पद हैं;T₄ तथा T₅।"
+      }
+    },
+    {
+      "title": {
+        "en": "Sums of coefficients and useful substitutions",
+        "hi": "गुणांकों के योग और उपयोगी प्रतिस्थापन"
+      },
+      "body": {
+        "en": "For (1+x)^n, substituting x=1 gives the sum of binomial coefficients2^n. Substituting x=−1 gives the alternating sum0 for n≥1. Thus sums of even-indexed and odd-indexed coefficients are each2^(n−1). More generally, the sum of coefficients of a polynomial P(x) is P(1); its alternating coefficient sum is P(−1). In (2+3x)^4, the coefficient sum is5⁴=625, not2⁴. Distinguish pure binomial coefficients ⁿCᵣ from the actual coefficients after scaling by numerical factors. These substitutions evaluate sums without separately calculating each coefficient. They rely on a polynomial with nonnegative integer exponents when interpreted as ordinary coefficient sums.",
+        "hi": "(1+x)^n में x=1 रखने पर द्विपद गुणांकों का योग 2^n मिलता है। x=−1 रखने पर n≥1 के लिए बारी-बारी चिह्न वाला योग 0 है। इसलिए सम सूचकांक और विषम सूचकांक वाले गुणांकों के योग अलग-अलग 2^(n−1) हैं। सामान्य बहुपद P(x) के गुणांकों का योग P(1) और वैकल्पिक चिह्न वाला योग P(−1) है। (2+3x)^4 में गुणांक योग 5⁴=625 है,2⁴ नहीं। शुद्ध द्विपद गुणांक ⁿCᵣ तथा संख्यात्मक गुणनखंडों के बाद वास्तविक गुणांक अलग हो सकते हैं। प्रश्न किसका योग पूछता है, यह पहले पढ़ें। प्रतिस्थापन से हर गुणांक अलग निकाले बिना पूरा योग मिल जाता है। साधारण बहुपद के गुणांक योग की व्याख्या में गैरऋणात्मक पूर्णांक घातें हैं। n=0 में वैकल्पिक योग 1 है,इसलिए n≥1 की शर्त न छोड़ें। दो सूत्र जोड़कर या घटाकर सम और विषम भाग अलग करना बीजगणित तथा संयोजन का सुंदर संबंध दिखाता है।"
+      },
+      "formula": "Σᵣ₌₀ⁿ ⁿCᵣ=2^n; Σᵣ₌₀ⁿ (−1)^rⁿCᵣ=0 for n≥1",
+      "question": {
+        "en": "Find the sum of coefficients of (1−2x)^5.",
+        "hi": "(1−2x)^5 के गुणांकों का योग निकालें।"
+      },
+      "answer": {
+        "en": "Set x=1:(−1)^5=−1.",
+        "hi": "x=1 रखें:(−1)^5=−1।"
+      }
+    },
+    {
+      "title": {
+        "en": "Exact calculations and controlled approximation",
+        "hi": "सटीक गणना और नियंत्रित सन्निकटन"
+      },
+      "body": {
+        "en": "The binomial theorem can calculate powers efficiently by choosing a nearby convenient base. For example101³=(100+1)³=1000000+30000+300+1=1030301. For a small h, (1+h)^n begins1+nh+ⁿC₂h², but discarding later terms is an approximation, not an identity. State which terms are omitted and whether an error estimate is required. With finite positive integer n the full sum is exact. Coefficient extraction, middle terms and substitutions are different tasks using the same general term. A good final check compares degree, leading term, constant term and a simple input. Do not confuse the greatest coefficient with the numerically greatest term, which also depends on the chosen variable value.",
+        "hi": "द्विपद प्रमेय से सुविधाजनक आधार चुनकर घात की सटीक गणना कर सकते हैं। 101³=(100+1)³=1000000+30000+300+1=1030301 है। h छोटा हो, तो (1+h)^n की शुरुआत 1+nh+ⁿC₂h² से होती है। लेकिन आगे के पद छोड़ना सन्निकटन (Approximation) है,सर्वसमिका नहीं। कौन पद छोड़े गए हैं और त्रुटि की सीमा चाहिए या नहीं,यह स्पष्ट होना चाहिए। धनात्मक पूर्णांक n पर पूरा सीमित योग सटीक है। गुणांक निकालना,मध्य पद ढूँढ़ना और विशेष प्रतिस्थापन से योग निकालना अलग प्रश्न हैं,लेकिन सबमें वही व्यापक पद काम आता है। अंतिम जाँच में घात,अग्र पद,अचर पद और कोई सरल निवेश देखें। सबसे बड़ा द्विपद गुणांक और संख्यात्मक रूप से सबसे बड़ा पद अलग बातें हैं। पद का मान चर के चुने मान पर भी निर्भर है। गणना को छोटा करने के लिए पास का आधार चुनें,लेकिन उसे बदलते समय कोष्ठक और चिह्न सुरक्षित रखें। सूत्र को परिस्थिति के अनुसार उपयोग करना ही इस अध्याय का मुख्य कौशल है।"
+      },
+      "formula": "(1+h)^n=1+nh+ⁿC₂h²+...+h^n",
+      "question": {
+        "en": "Is (1+h)^4=1+4h exact for every h?",
+        "hi": "क्या (1+h)^4=1+4h हर h पर सटीक है?"
+      },
+      "answer": {
+        "en": "No;6h²+4h³+h⁴ were omitted.",
+        "hi": "नहीं;6h²+4h³+h⁴ छोड़े गए हैं।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Expand (x+2)^3.",
+        "hi": "(x+2)^3 का प्रसार करें।"
+      },
+      "steps": [
+        {
+          "en": "Use coefficients1,3,3,1.",
+          "hi": "गुणांक1,3,3,1 लें।"
+        },
+        {
+          "en": "Terms are x³,3x²·2,3x·4,8.",
+          "hi": "पद x³,3x²×2,3x×4,8 हैं।"
+        }
+      ],
+      "answer": {
+        "en": "x³+6x²+12x+8.",
+        "hi": "x³+6x²+12x+8।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the third term of (a+b)^5.",
+        "hi": "(a+b)^5 का तीसरा पद निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Third term means r=2.",
+          "hi": "तीसरे पद में r=2।"
+        },
+        {
+          "en": "T₃=⁵C₂a³b².",
+          "hi": "T₃=⁵C₂a³b²।"
+        }
+      ],
+      "answer": {
+        "en": "10a³b².",
+        "hi": "10a³b²।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find coefficient of x³ in (2−x)^5.",
+        "hi": "(2−x)^5 में x³ का गुणांक निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Use r=3 because second term contributes x^r.",
+          "hi": "r=3 क्योंकि दूसरा पद x^r देता है।"
+        },
+        {
+          "en": "Coefficient=⁵C₃·2²·(−1)³.",
+          "hi": "गुणांक=⁵C₃×2²×(−1)³।"
+        }
+      ],
+      "answer": {
+        "en": "−40.",
+        "hi": "−40।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the middle term of (x+2)^6.",
+        "hi": "(x+2)^6 का मध्य पद निकालें।"
+      },
+      "steps": [
+        {
+          "en": "There are7 terms; middle is fourth,r=3.",
+          "hi": "7 पद हैं;मध्य चौथा,r=3।"
+        },
+        {
+          "en": "T₄=⁶C₃x³2³=20×8x³.",
+          "hi": "T₄=⁶C₃x³2³=20×8x³।"
+        }
+      ],
+      "answer": {
+        "en": "160x³.",
+        "hi": "160x³।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find the constant term of (2x²−1/x)^6, x≠0.",
+        "hi": "(2x²−1/x)^6,x≠0 में अचर पद निकालें।"
+      },
+      "steps": [
+        {
+          "en": "General term:⁶Cᵣ2^(6−r)(−1)^r x^(12−3r).",
+          "hi": "व्यापक पद:⁶Cᵣ2^(6−r)(−1)^r x^(12−3r)।"
+        },
+        {
+          "en": "Set12−3r=0, giving r=4.",
+          "hi": "12−3r=0 से r=4।"
+        },
+        {
+          "en": "Coefficient=⁶C₄·2²·1=15×4.",
+          "hi": "गुणांक=⁶C₄×2²×1=15×4।"
+        }
+      ],
+      "answer": {
+        "en": "60.",
+        "hi": "60।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Number of terms in (a+b)^8 before collection is",
+        "hi": "(a+b)^8 में पद मिलाने से पहले कुल पद हैं"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "64",
+            "hi": "64"
+          },
+          "reason": {
+            "en": "n² is not the term count.",
+            "hi": "n² पद संख्या नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "9",
+            "hi": "9"
+          },
+          "reason": {
+            "en": "The index r runs0 through8.",
+            "hi": "r,0 से8 तक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "8",
+            "hi": "8"
+          },
+          "reason": {
+            "en": "There is also the r=0 term.",
+            "hi": "r=0 वाला पद भी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "16",
+            "hi": "16"
+          },
+          "reason": {
+            "en": "The term count is n+1,not2n.",
+            "hi": "पद संख्या n+1 है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The fourth term uses which index?",
+        "hi": "चौथे पद के लिए कौन सूचकांक है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "r=3",
+            "hi": "r=3"
+          },
+          "reason": {
+            "en": "Term number is r+1.",
+            "hi": "पद संख्या r+1 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "r=4",
+            "hi": "r=4"
+          },
+          "reason": {
+            "en": "That gives the fifth term.",
+            "hi": "यह पाँचवाँ पद देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "r=2",
+            "hi": "r=2"
+          },
+          "reason": {
+            "en": "That gives the third term.",
+            "hi": "यह तीसरा पद देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "r=0",
+            "hi": "r=0"
+          },
+          "reason": {
+            "en": "That gives the first term.",
+            "hi": "यह पहला पद देता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Coefficient of x² in (1+x)^5 is",
+        "hi": "(1+x)^5 में x² का गुणांक है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "5 is the x coefficient.",
+            "hi": "5,x का गुणांक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "20",
+            "hi": "20"
+          },
+          "reason": {
+            "en": "Dividing5×4 by2! gives10.",
+            "hi": "5×4 को2! से भाग देने पर10।"
+          }
+        },
+        {
+          "text": {
+            "en": "25",
+            "hi": "25"
+          },
+          "reason": {
+            "en": "The coefficient is a combination,not5².",
+            "hi": "गुणांक संचय है,5² नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "10",
+            "hi": "10"
+          },
+          "reason": {
+            "en": "⁵C₂=10.",
+            "hi": "⁵C₂=10।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Coefficient of x in (2+x)^4 is",
+        "hi": "(2+x)^4 में x का गुणांक है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "8",
+            "hi": "8"
+          },
+          "reason": {
+            "en": "The factor⁴C₁ is missing.",
+            "hi": "⁴C₁ छूटा।"
+          }
+        },
+        {
+          "text": {
+            "en": "16",
+            "hi": "16"
+          },
+          "reason": {
+            "en": "16 is the constant term.",
+            "hi": "16 अचर पद है।"
+          }
+        },
+        {
+          "text": {
+            "en": "32",
+            "hi": "32"
+          },
+          "reason": {
+            "en": "⁴C₁2³=4×8.",
+            "hi": "⁴C₁2³=4×8।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "The factor2³ is missing.",
+            "hi": "2³ छूटा।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Coefficient of x³ in (1−x)^5 is",
+        "hi": "(1−x)^5 में x³ का गुणांक है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "Both magnitude and sign are incorrect.",
+            "hi": "परिमाण और चिह्न दोनों गलत।"
+          }
+        },
+        {
+          "text": {
+            "en": "−10",
+            "hi": "−10"
+          },
+          "reason": {
+            "en": "⁵C₃(−1)³=−10.",
+            "hi": "⁵C₃(−1)³=−10।"
+          }
+        },
+        {
+          "text": {
+            "en": "10",
+            "hi": "10"
+          },
+          "reason": {
+            "en": "Odd power keeps the minus sign.",
+            "hi": "विषम घात ऋण चिह्न रखती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−5",
+            "hi": "−5"
+          },
+          "reason": {
+            "en": "⁵C₃ is10,not5.",
+            "hi": "⁵C₃,10 है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Power6 has which middle term?",
+        "hi": "घात6 में कौन मध्य पद है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "T₄",
+            "hi": "T₄"
+          },
+          "reason": {
+            "en": "7 terms have fourth in the middle.",
+            "hi": "7 पदों में चौथा मध्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "T₃",
+            "hi": "T₃"
+          },
+          "reason": {
+            "en": "This confuses r=3 with term number.",
+            "hi": "r=3 को पद संख्या समझा।"
+          }
+        },
+        {
+          "text": {
+            "en": "T₃ and T₄",
+            "hi": "T₃ तथा T₄"
+          },
+          "reason": {
+            "en": "Even n gives one middle term.",
+            "hi": "सम n में1 मध्य पद।"
+          }
+        },
+        {
+          "text": {
+            "en": "T₆",
+            "hi": "T₆"
+          },
+          "reason": {
+            "en": "This is near the end,not centre.",
+            "hi": "यह अंत के पास है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Sum of coefficients of (1+x)^7 is",
+        "hi": "(1+x)^7 के गुणांकों का योग है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "7",
+            "hi": "7"
+          },
+          "reason": {
+            "en": "7 is the exponent,not sum.",
+            "hi": "7 घात है,योग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "0 is the alternating sum.",
+            "hi": "0 वैकल्पिक योग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "64",
+            "hi": "64"
+          },
+          "reason": {
+            "en": "64 is2⁶.",
+            "hi": "64,2⁶ है।"
+          }
+        },
+        {
+          "text": {
+            "en": "128",
+            "hi": "128"
+          },
+          "reason": {
+            "en": "Set x=1:2⁷.",
+            "hi": "x=1 रखें:2⁷।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Alternating sum of coefficients of (1+x)^4 is",
+        "hi": "(1+x)^4 के गुणांकों का वैकल्पिक योग है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "All terms must be included.",
+            "hi": "सभी पद लेने हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "This is not the substitution result.",
+            "hi": "यह प्रतिस्थापन का परिणाम नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "Set x=−1:(1−1)⁴=0.",
+            "hi": "x=−1:(1−1)⁴=0।"
+          }
+        },
+        {
+          "text": {
+            "en": "16",
+            "hi": "16"
+          },
+          "reason": {
+            "en": "16 is the ordinary sum.",
+            "hi": "16 साधारण योग है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "For (x²+1/x)^6, exponent of x in Tᵣ₊₁ is",
+        "hi": "(x²+1/x)^6 में Tᵣ₊₁ की x-घात है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12+3r",
+            "hi": "12+3r"
+          },
+          "reason": {
+            "en": "Both changing powers reduce the exponent.",
+            "hi": "दोनों परिवर्तन घात घटाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "12−3r",
+            "hi": "12−3r"
+          },
+          "reason": {
+            "en": "2(6−r)−r=12−3r.",
+            "hi": "2(6−r)−r=12−3r।"
+          }
+        },
+        {
+          "text": {
+            "en": "12−r",
+            "hi": "12−r"
+          },
+          "reason": {
+            "en": "The second term contributes−r too.",
+            "hi": "दूसरा पद भी−r देता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6−r",
+            "hi": "6−r"
+          },
+          "reason": {
+            "en": "The first base has x²,not x.",
+            "hi": "पहले आधार में x² है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The finite binomial theorem stated here applies to",
+        "hi": "यहाँ दिया सीमित द्विपद प्रमेय लागू है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Nonnegative integer n",
+            "hi": "गैरऋणात्मक पूर्णांक n"
+          },
+          "reason": {
+            "en": "This gives a finite n+1-term expansion.",
+            "hi": "इससे सीमित n+1 पदों का प्रसार है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every real n as a finite sum",
+            "hi": "हर वास्तविक n पर सीमित योग"
+          },
+          "reason": {
+            "en": "Fractional powers do not have this finite expansion.",
+            "hi": "भिन्नात्मक घात का यही सीमित प्रसार नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative n only",
+            "hi": "केवल ऋणात्मक n"
+          },
+          "reason": {
+            "en": "The stated theorem does not use negative integer powers.",
+            "hi": "दिया प्रमेय ऋण पूर्णांक घात नहीं लेता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only n=2",
+            "hi": "केवल n=2"
+          },
+          "reason": {
+            "en": "It applies to every nonnegative integer exponent.",
+            "hi": "यह हर गैरऋणात्मक पूर्णांक घात पर है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Expand (x−1)^4.",
+        "hi": "(x−1)^4 का प्रसार करें।"
+      },
+      "answer": {
+        "en": "x⁴−4x³+6x²−4x+1.",
+        "hi": "x⁴−4x³+6x²−4x+1।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find fifth term of (a+b)^7.",
+        "hi": "(a+b)^7 का पाँचवाँ पद निकालें।"
+      },
+      "answer": {
+        "en": "r=4:T₅=⁷C₄a³b⁴=35a³b⁴.",
+        "hi": "r=4:T₅=⁷C₄a³b⁴=35a³b⁴।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find coefficient of x² in (3+2x)^4.",
+        "hi": "(3+2x)^4 में x² का गुणांक निकालें।"
+      },
+      "answer": {
+        "en": "⁴C₂·3²·2²=6×9×4=216.",
+        "hi": "⁴C₂×3²×2²=6×9×4=216।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find middle terms of (1+x)^5.",
+        "hi": "(1+x)^5 के मध्य पद निकालें।"
+      },
+      "answer": {
+        "en": "T₃=10x²,T₄=10x³.",
+        "hi": "T₃=10x²,T₄=10x³।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find sum of coefficients of (2−3x)^4.",
+        "hi": "(2−3x)^4 के गुणांकों का योग निकालें।"
+      },
+      "answer": {
+        "en": "Set x=1:(−1)⁴=1.",
+        "hi": "x=1 रखें:(−1)⁴=1।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find constant term of (x−1/x)^4,x≠0.",
+        "hi": "(x−1/x)^4,x≠0 का अचर पद निकालें।"
+      },
+      "answer": {
+        "en": "Power4−2r=0 gives r=2; coefficient⁴C₂(−1)²=6.",
+        "hi": "घात4−2r=0 से r=2;गुणांक⁴C₂(−1)²=6।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Term number is r+1, not r. Raise numerical factors too; retain alternating signs, original domain restrictions and the integer range0≤r≤n.",
+    "hi": "पद संख्या r+1 है,r नहीं। संख्यात्मक गुणनखंडों की भी घात लें;वैकल्पिक चिह्न,मूल प्रांत और पूर्णांक सीमा0≤r≤n रखें।"
+  },
+  "revision": [
+    {
+      "en": "The coefficient ⁿCᵣ counts choices from n factors.",
+      "hi": "गुणांक ⁿCᵣ,n गुणनखंडों के चुनाव गिनता है।"
+    },
+    {
+      "en": "A power-n expansion has n+1 terms before collection.",
+      "hi": "घात n के प्रसार में मिलाने से पहले n+1 पद हैं।"
+    },
+    {
+      "en": "Tᵣ₊₁=ⁿCᵣa^(n−r)b^r.",
+      "hi": "Tᵣ₊₁=ⁿCᵣa^(n−r)b^r है।"
+    },
+    {
+      "en": "Solve the exponent equation before extracting a coefficient.",
+      "hi": "गुणांक से पहले घात का समीकरण हल करें।"
+    },
+    {
+      "en": "Substitute1 and−1 to sum coefficients and alternating coefficients.",
+      "hi": "गुणांक तथा वैकल्पिक गुणांक योग के लिए1 और−1 रखें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Counting choices → binomial coefficients → general term → signs/powers → coefficient and middle-term questions → substitutions.",
+    "hi": "चुनाव गणना → द्विपद गुणांक → व्यापक पद → चिह्न/घात → गुणांक और मध्य पद → प्रतिस्थापन।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class XI, Chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh107.pdf"
+    },
+    {
+      "title": "UPMSP Class11 Mathematics syllabus2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/131-Maths-Class-11.pdf"
+    }
+  ],
+  "engine": "eleven-math",
+  "scenes": []
+}

@@ -1,0 +1,875 @@
+{
+  "id": "ten-economics-2",
+  "classId": "10",
+  "number": 2,
+  "title": {
+    "en": "Sectors of the Indian Economy",
+    "hi": "भारतीय अर्थव्यवस्था के क्षेत्रक"
+  },
+  "engine": "chart",
+  "goal": {
+    "en": "Distinguish activity, employment conditions and ownership when classifying work.",
+    "hi": "काम का वर्गीकरण करते समय गतिविधि, रोजगार की शर्त तथा स्वामित्व अलग पहचानें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Primary, Secondary and Tertiary",
+        "hi": "प्राथमिक, द्वितीयक और तृतीयक"
+      },
+      "body": {
+        "en": "Primary activities use natural resources directly, such as farming, fishing and mining. Secondary activities transform materials, as in milling or manufacturing. Tertiary activities provide services, including transport, teaching and banking. Classify the activity being performed, not the social status of the worker. One product connects all three sectors: cotton is grown, cloth is manufactured, and garments are transported and sold. A sector is not an isolated island. A service can be essential even if it does not produce a visible object.\n\nClassification depends on the activity being performed, not simply on the name of a business. A farmer growing wheat performs a primary activity; a mill turning wheat into flour performs a secondary activity; a transporter carrying flour provides a tertiary service. The same product passes through several stages. Draw these links to explain interdependence. If one stage is disrupted, the others may lose supplies, customers or income even though they belong to different sectors.",
+        "hi": "आर्थिक गतिविधियों का वर्गीकरण उनके काम के स्वरूप के आधार पर किया जाता है। प्राथमिक क्षेत्रक (Primary Sector) में प्राकृतिक संसाधनों का सीधे उपयोग होता है, जैसे खेती, मछली पकड़ना और खनन। द्वितीयक क्षेत्रक (Secondary Sector) में कच्चे पदार्थ का रूप बदलकर नई वस्तु बनाई जाती है, जैसे गेहूँ से आटा और कपास से कपड़ा। तृतीयक क्षेत्रक (Tertiary Sector) सेवाएँ देता है, जैसे परिवहन, बैंकिंग, शिक्षा और चिकित्सा। किसी काम को उसके करने वाले की प्रतिष्ठा या आय से वर्गीकृत नहीं करें। किसान की कपास, मिल का कपड़ा और व्यापारी की बिक्री एक-दूसरे से जुड़ी हैं। शिक्षक कोई भौतिक वस्तु नहीं बनाता, फिर भी शिक्षा उपयोगी सेवा है। सेवा का अर्थ केवल व्यापार नहीं है। अभ्यास में किसी वस्तु को खेत या खदान से ग्राहक तक पहुँचने की कहानी लिखें। हर चरण के सामने गतिविधि का नाम तथा क्षेत्रक लिखने से तीनों के परस्पर संबंध स्पष्ट होंगे। एक संस्था कई प्रकार के काम कर सकती है, इसलिए प्रश्न में पूछी गतिविधि पर ध्यान दें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Final Goods and GDP",
+        "hi": "अंतिम वस्तुएँ और सकल घरेलू उत्पाद"
+      },
+      "body": {
+        "en": "Final goods are counted to avoid double counting intermediate inputs. If wheat worth ₹100 becomes flour worth ₹150 and then bread worth ₹250 sold to households, adding all sale values gives ₹500 and counts earlier inputs again. The final bread value is ₹250. Alternatively, value added is ₹100 + ₹50 + ₹100. GDP measures the value of final goods and services produced within a country during a specified year. It measures production, not every aspect of welfare or every transfer of money.\n\nThe value of final goods avoids counting the same production repeatedly. If flour is used by a bakery to make bread, adding both the entire flour value and the entire bread value would count part of production twice. Alternatively, one can add value created at each stage. At this level, explain the final product approach clearly and specify the period of production. Comparing sector totals requires the same price and time basis rather than unrelated figures.",
+        "hi": "अर्थव्यवस्था के उत्पादन को जोड़ते समय दोहरी गणना (Double Counting) से बचना जरूरी है। मान लें कि गेहूँ ₹100 में मिल को, आटा ₹150 में बेकरी को और तैयार ब्रेड ₹250 में परिवार को बिकती है। तीनों बिक्री जोड़ने पर ₹500 आएँगे, लेकिन गेहूँ तथा आटे का मूल्य ब्रेड में पहले से शामिल है। अंतिम वस्तु का मूल्य ₹250 गिनने से दोहराव बचता है। दूसरे तरीके से मूल्य संवर्धन (Value Added) ₹100 + ₹50 + ₹100 = ₹250 है। सकल घरेलू उत्पाद (Gross Domestic Product या GDP) निर्धारित वर्ष में देश के भीतर उत्पादित अंतिम वस्तुओं तथा सेवाओं का कुल मूल्य बताता है। अंतिम और मध्यवर्ती का निर्णय उपयोग पर निर्भर है; घर के लिए खरीदा आटा अंतिम उपभोग हो सकता है, बेकरी के लिए वही आटा साधन है। GDP को सभी लोगों की समान आय या संपूर्ण कल्याण का माप न मानें। तुलना में वर्ष तथा मूल्य आधार भी महत्त्वपूर्ण हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Changing Importance of Sectors",
+        "hi": "क्षेत्रकों का बदलता महत्त्व"
+      },
+      "body": {
+        "en": "As economies change, output and employment shares shift. Agriculture can remain important while industry and services grow. Services expand because production needs transport and finance, public services are required, higher incomes increase demand, and information technology creates opportunities. A large service sector includes both highly skilled work and insecure low-paid jobs. Do not assume all service workers are wealthy. Separate the share in production from the share in employment: the two percentages answer different questions and need not move together.\n\nA sector can expand because other sectors require more services. Growing farms and factories need transport, banking, communication and storage. Rising incomes can also increase demand for education, health and recreation. Government provides some essential services even when private profit is limited. These explanations can operate together. Avoid saying that every service job is highly skilled or highly paid: the sector includes both advanced professional work and many low earning everyday activities.",
+        "hi": "समय के साथ क्षेत्रकों का उत्पादन तथा रोजगार में योगदान बदलता है। कृषि के साथ उद्योग और सेवाओं का विस्तार होता है। परिवहन, भंडारण, बैंक और संचार कृषि तथा उद्योग दोनों को सहायता देते हैं। स्वास्थ्य, शिक्षा और प्रशासन जैसी मूलभूत सेवाओं की भी जरूरत होती है। कुछ लोगों की आय बढ़ने से पर्यटन तथा अन्य सेवाओं की माँग बढ़ सकती है। सूचना प्रौद्योगिकी नए काम पैदा करती है। फिर भी तृतीयक क्षेत्रक में सभी कर्मचारी अधिक आय वाले नहीं होते। इसी क्षेत्र में उच्च कौशल वाले विशेषज्ञ तथा असुरक्षित छोटे काम करने वाले व्यक्ति दोनों हैं। उत्पादन में हिस्सेदारी और रोजगार में हिस्सेदारी अलग माप हैं। यदि किसी क्षेत्रक में 20% उत्पादन पर 50% कामगार हों तो यह औसत उत्पादकता संबंधी प्रश्न उठाता है, लेकिन किसी व्यक्ति की क्षमता का सीधे निर्णय नहीं देता। हमारी गतिविधि में 100 उत्पादन इकाइयों तथा 100 कामगारों के अलग काल्पनिक आँकड़े हैं। दोनों समूह बदलकर प्रतिशतों की तुलना करें, पर उन्हें वास्तविक भारतीय सांख्यिकी न समझें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Disguised Unemployment",
+        "hi": "प्रच्छन्न बेरोजगारी"
+      },
+      "body": {
+        "en": "Disguised unemployment occurs when more workers are engaged than needed and some can leave without reducing total output. Five family members may work on a small plot although three could maintain the same harvest under the stated conditions. Two people appear employed but their contribution is not required for that output. This is different from open unemployment, where a person has no work despite seeking it. Underemployment also includes working fewer hours or below one’s capacity. Suitable additional employment can raise total production without lowering the farm harvest.\n\nProduction shares and employment shares answer different questions. A sector with many workers but a modest share of output may have low output per worker, although the reasons require further investigation. Do not subtract percentages from unrelated totals. Use a clearly dated table and describe what each axis represents. A shift in production need not be matched immediately by a shift in employment because skills, location and available opportunities can limit movement between sectors.",
+        "hi": "प्रच्छन्न बेरोजगारी (Disguised Unemployment) में किसी काम पर जरूरत से अधिक लोग लगे होते हैं। कुछ लोग हट जाएँ, फिर भी कुल उत्पादन कम न हो, तो यह स्थिति पहचान में आती है। काल्पनिक छोटे खेत पर 5 सदस्य काम करते हैं, जबकि समान साधन और परिस्थिति में 3 सदस्य उतनी ही उपज संभाल सकते हैं। शेष 2 व्यक्तियों को दूसरा उपयोगी काम मिले तो खेत का उत्पादन घटाए बिना कुल आय बढ़ सकती है। इसका अर्थ उन व्यक्तियों का आलसी होना नहीं है; समस्या पर्याप्त काम और अवसरों की कमी है। खुली बेरोजगारी में काम चाहने पर भी काम नहीं मिलता। अल्प रोजगार में व्यक्ति अपनी क्षमता या उपलब्ध समय के अनुसार पर्याप्त काम नहीं कर पाता। ग्रामीण तथा शहरी दोनों क्षेत्रों में ऐसी स्थिति हो सकती है। उदाहरण का निष्कर्ष निकालने से पहले मौसम, सिंचाई और काम के चरम समय की जरूरत देखें। हर खेत से मनमाने ढंग से मजदूर हटाना उचित समाधान नहीं है। बेहतर रोजगार के लिए स्थानीय आवश्यकता, कौशल और संसाधनों का मेल जरूरी है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Creating More Employment",
+        "hi": "अधिक रोजगार के उपाय"
+      },
+      "body": {
+        "en": "Employment can grow when irrigation, storage, transport, education, health services and local processing address real bottlenecks. A cold store may reduce waste and support horticulture; a road may connect producers to markets. Credit helps only when an enterprise also has skills, inputs and demand. Public employment programmes discussed in the textbook illustrate a role for government in supporting livelihoods. Programme names and rules can change, so identify the scheme and year when quoting details. The central economic idea is that public action can create useful work and improve productive assets.\n\nTo identify disguised unemployment, ask whether some workers could leave without reducing total output under the stated conditions. In a small family farm, several people may share work that fewer people could finish. Those workers are not necessarily idle throughout the day; their contribution may be less than their potential. Creating productive work elsewhere can raise total family income. This differs from open unemployment, where a person seeking work has no work available.",
+        "hi": "अधिक रोजगार के लिए केवल लोगों से अधिक मेहनत करने को कहना पर्याप्त नहीं है। सिंचाई से खेती के अधिक मौसम संभव हो सकते हैं। भंडारण तथा शीतगृह से फल-सब्जियों की हानि घट सकती है। सड़क और परिवहन उत्पादक को बाजार से जोड़ते हैं। खाद्य प्रसंस्करण, मरम्मत, हस्तशिल्प तथा स्थानीय सेवाएँ भी अवसर पैदा कर सकती हैं। विद्यालय और स्वास्थ्य केंद्र नए पद बनाते हैं और लोगों की क्षमताएँ बढ़ाते हैं। उद्यम के लिए ऋण उपयोगी है, लेकिन प्रशिक्षण, ग्राहक, कच्चा माल और विश्वसनीय बिजली भी चाहिए। उदाहरण में किसी गाँव के 20 युवाओं के लिए डेयरी खोलने का प्रस्ताव हो तो दूध की आपूर्ति, बाजार तथा शीतलन सुविधा पहले जाँचें। सरकारी रोजगार कार्यक्रम आजीविका सहायता तथा उपयोगी सार्वजनिक परिसंपत्ति निर्माण के साधन हो सकते हैं। पाठ्यपुस्तक में दिए कार्यक्रम का नाम तथा नियम उसके संदर्भ वर्ष के साथ पढ़ें; योजनाओं के नाम या प्रावधान बदल सकते हैं। उत्तर का मुख्य आर्थिक तर्क होना चाहिए कि सार्वजनिक निवेश और स्थानीय जरूरत का मेल स्थायी अवसर बढ़ा सकता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Organised and Unorganised Work",
+        "hi": "संगठित और असंगठित काम"
+      },
+      "body": {
+        "en": "Organised employment generally operates within registered establishments and formal rules on work and benefits. Unorganised work is often small-scale and irregular, with weak protection, though workers may still have legal rights. The distinction concerns employment conditions, not whether a person works hard or uses a machine. A factory can use informal workers, while some service organisations offer formal contracts. Workers need fair pay, safe conditions, leave and social security. Classification should not become an excuse to deny rights to those outside formal arrangements.\n\nEmployment creation can involve improving irrigation, rural roads, storage and access to credit. Such investment can support farming and generate associated work in processing or services. The effect depends on local needs and implementation, so an answer should explain a mechanism rather than list projects alone. Better education and health services also employ people while improving capabilities. Assess the quality and security of new work as well as the number of jobs announced.",
+        "hi": "संगठित क्षेत्रक (Organised Sector) में संस्थाएँ औपचारिक नियमों तथा पंजीकरण के अंतर्गत काम करती हैं। रोजगार की नियमित शर्तें, निश्चित कार्य समय और सामाजिक सुरक्षा जैसी व्यवस्थाएँ महत्त्वपूर्ण हैं। असंगठित क्षेत्रक (Unorganised Sector) में छोटे, बिखरे और अक्सर अनियमित रोजगार मिलते हैं। मजदूरी, छुट्टी तथा सुरक्षा कमजोर हो सकती है। इसका अर्थ यह नहीं कि ऐसे कामगार मेहनत नहीं करते या उनके कोई अधिकार नहीं हैं। भवन निर्माण मजदूर, छोटे विक्रेता तथा घरेलू कामगारों की स्थितियों को समझने के लिए काम की वास्तविक शर्तें देखनी चाहिए। केवल मशीन मौजूद होने से काम संगठित नहीं हो जाता। इसी तरह हर निजी नौकरी असंगठित नहीं है। कामगारों को उचित भुगतान, सुरक्षित कार्यस्थल और सामाजिक सुरक्षा की आवश्यकता होती है। कम आय वाले व्यक्ति बीमारी या काम रुकने पर अधिक संकट झेल सकते हैं। अच्छे उत्तर में संगठित-असंगठित का आधार रोजगार की व्यवस्था लिखें और प्राथमिक-द्वितीयक-तृतीयक से उसका अंतर स्पष्ट करें। वर्गीकरण लोगों को सम्मान देने या न देने का आधार नहीं है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Public and Private Ownership",
+        "hi": "सार्वजनिक और निजी स्वामित्व"
+      },
+      "body": {
+        "en": "Public-sector organisations are owned by government; private-sector organisations are owned by individuals or companies. Ownership differs from the activity classification. A government hospital is public and tertiary; a privately owned steel factory is private and secondary. Governments provide services and infrastructure where social benefits, accessibility or large investment matter. Private enterprises may seek profit, but public organisations also need sound management and accountability. Neither ownership label alone guarantees quality. Ask who owns the organisation, what it does, and how its workers are employed as three separate questions.\n\nFormal registration alone does not describe every worker’s experience. Organised employment is associated with regulations and employment protections, but actual compliance still needs attention. Unorganised workers often face irregular work, low earnings and limited protection. A person can work very hard and still lack security. Discuss measures such as fair payment, safer conditions and access to social protection without assuming that all workers in one category have identical needs or bargaining power.",
+        "hi": "सार्वजनिक क्षेत्रक (Public Sector) में स्वामित्व सरकार के पास होता है, जबकि निजी क्षेत्रक (Private Sector) में व्यक्ति या निजी कंपनी मालिक होती है। यह आधार काम के प्रकार से अलग है। सरकारी अस्पताल सार्वजनिक और तृतीयक है। निजी इस्पात कारखाना निजी और द्वितीयक है। किसी बैंक के लिए सरकारी या निजी होने का निर्णय स्वामित्व से होगा, सेवा होने का निर्णय उसकी गतिविधि से होगा। सरकार ऐसी सेवाएँ और आधारभूत संरचना प्रदान करती है जिनमें व्यापक सामाजिक लाभ, समान पहुँच या बड़ी पूँजी की जरूरत होती है। शिक्षा तथा स्वास्थ्य का महत्व केवल तत्काल लाभ कमाने तक सीमित नहीं है। निजी संस्था सामान्यतः लाभ के उद्देश्य से काम करती है, लेकिन सार्वजनिक संस्था में भी कुशल प्रबंधन तथा जवाबदेही जरूरी है। किसी नाम के आधार पर सेवा की गुणवत्ता निश्चित नहीं मानी जा सकती। परीक्षा में 3 अलग प्रश्न पूछें: संस्था क्या करती है, उसका मालिक कौन है, और कामगार की रोजगार शर्तें क्या हैं? इन आधारों को मिलाने से वर्गीकरण गलत हो सकता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Reading Sector Charts Carefully",
+        "hi": "क्षेत्रक आलेख सावधानी से पढ़ें"
+      },
+      "body": {
+        "en": "The activity provides invented sector shares for production and workers. Both total 100, making shares easy to compare. Production shares are 20, 30 and 50; worker shares are 50, 20 and 30. These are not official Indian estimates. A pie chart compares components of one total, while a bar chart makes differences easier to compare. A line joining sector names does not represent a time trend. Switching displays changes presentation, not the underlying evidence. Use the data table to verify totals and distinguish percentages from counts or currency.\n\nOwnership and the nature of activity are separate classifications. A publicly owned hospital and a private hospital both provide services, but their ownership differs. A public enterprise may manufacture goods, while a private business may farm or transport products. Therefore public sector does not mean tertiary sector. In a comparison question, state the criterion first and then give a fitting example. Explain why public responsibilities may extend beyond activities that immediately earn a profit.",
+        "hi": "गतिविधि में प्राथमिक, द्वितीयक तथा तृतीयक क्षेत्रकों की 2 काल्पनिक तालिकाएँ दी गई हैं। उत्पादन की 100 इकाइयों में हिस्से 20, 30 और 50 हैं; 100 कामगारों में संख्या 50, 20 और 30 है। ये वास्तविक भारत के नवीनतम आँकड़े नहीं हैं। पहला समूह उत्पादन का वितरण और दूसरा कामगारों का वितरण दिखाता है। दंड आलेख में ऊँचाइयों की तुलना आसान है। वृत्त आलेख एक ही कुल के हिस्से दिखाता है। क्षेत्रक नामों को जोड़ती रेखा समय के साथ परिवर्तन सिद्ध नहीं करती, क्योंकि क्षैतिज अक्ष पर वर्ष नहीं हैं। किसी श्रेणी को छिपाने पर दिखाई गई संख्याओं का कुल बदल जाएगा; मूल पूरी अर्थव्यवस्था का कुल नहीं बदलता। तालिका खोलकर संख्या तथा इकाई जाँचें। पुनरावृत्ति में याद रखें: गतिविधि के 3 क्षेत्रक हैं; अंतिम वस्तु से दोहरी गणना बचती है; उत्पादन और रोजगार हिस्से अलग हैं; काम की शर्त से संगठित-असंगठित का अंतर है; स्वामित्व से सार्वजनिक-निजी का अंतर है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "title": {
+        "en": "Easy · Classify a hospital",
+        "hi": "सरल · अस्पताल का वर्गीकरण"
+      },
+      "question": {
+        "en": "Classify a government hospital by activity and ownership.",
+        "hi": "सरकारी अस्पताल का गतिविधि तथा स्वामित्व से वर्गीकरण करें।"
+      },
+      "steps": [
+        {
+          "en": "Healthcare is a service.",
+          "hi": "स्वास्थ्य देखभाल सेवा है।"
+        },
+        {
+          "en": "Government ownership makes it public.",
+          "hi": "सरकारी स्वामित्व इसे सार्वजनिक बनाता है।"
+        }
+      ],
+      "answer": {
+        "en": "Tertiary and public.",
+        "hi": "तृतीयक तथा सार्वजनिक।"
+      }
+    },
+    {
+      "title": {
+        "en": "Medium · Avoid double counting",
+        "hi": "मध्यम · दोहरी गणना से बचें"
+      },
+      "question": {
+        "en": "Wheat ₹100 becomes flour ₹150 and final bread ₹250. Find final output value.",
+        "hi": "₹100 गेहूँ से ₹150 आटा और ₹250 अंतिम ब्रेड बनती है। अंतिम उत्पादन मूल्य निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Count final bread once.",
+          "hi": "अंतिम ब्रेड को एक बार गिनें।"
+        },
+        {
+          "en": "Value added also equals 100 + 50 + 100.",
+          "hi": "मूल्य संवर्धन भी 100 + 50 + 100 है।"
+        }
+      ],
+      "answer": {
+        "en": "₹250, not ₹500.",
+        "hi": "₹250, ₹500 नहीं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Challenge · Additional jobs",
+        "hi": "चुनौती · अतिरिक्त रोजगार"
+      },
+      "question": {
+        "en": "Five people produce 30 bags; three can produce the same output. Two find processing work. Explain.",
+        "hi": "5 लोग 30 बोरी बनाते हैं; 3 भी उतना उत्पादन कर सकते हैं। 2 को प्रसंस्करण का काम मिला। समझाएँ।"
+      },
+      "steps": [
+        {
+          "en": "The initial example contains disguised unemployment.",
+          "hi": "प्रारंभिक उदाहरण में प्रच्छन्न बेरोजगारी है।"
+        },
+        {
+          "en": "Farm output stays 30 bags under the stated assumption.",
+          "hi": "बताई शर्त में खेत उत्पादन 30 बोरी रहता है।"
+        },
+        {
+          "en": "Processing adds output and income elsewhere.",
+          "hi": "प्रसंस्करण अन्य उत्पादन तथा आय जोड़ता है।"
+        }
+      ],
+      "answer": {
+        "en": "Useful new work can increase total output without reducing the harvest.",
+        "hi": "उपयोगी नया काम फसल घटाए बिना कुल उत्पादन बढ़ा सकता है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which activity is primary?",
+        "hi": "प्राथमिक गतिविधि कौन-सी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Steel making",
+            "hi": "इस्पात निर्माण"
+          },
+          "reason": {
+            "en": "It transforms raw material.",
+            "hi": "यह कच्चे माल का रूप बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Teaching",
+            "hi": "शिक्षण"
+          },
+          "reason": {
+            "en": "It is a service.",
+            "hi": "यह सेवा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mining",
+            "hi": "खनन"
+          },
+          "reason": {
+            "en": "It directly extracts a natural resource.",
+            "hi": "यह प्राकृतिक संसाधन सीधे निकालता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Banking",
+            "hi": "बैंकिंग"
+          },
+          "reason": {
+            "en": "It is a service.",
+            "hi": "यह सेवा है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which is tertiary?",
+        "hi": "तृतीयक कौन-सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Wheat growing",
+            "hi": "गेहूँ उगाना"
+          },
+          "reason": {
+            "en": "This is primary.",
+            "hi": "यह प्राथमिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cloth weaving",
+            "hi": "कपड़ा बुनना"
+          },
+          "reason": {
+            "en": "This is secondary.",
+            "hi": "यह द्वितीयक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Iron ore mining",
+            "hi": "लौह अयस्क खनन"
+          },
+          "reason": {
+            "en": "This is primary.",
+            "hi": "यह प्राथमिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Transport",
+            "hi": "परिवहन"
+          },
+          "reason": {
+            "en": "It provides movement as a service.",
+            "hi": "यह आवागमन की सेवा देता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Why count final goods only?",
+        "hi": "अंतिम वस्तुएँ ही क्यों गिनते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Avoid repeated intermediate values",
+            "hi": "मध्यवर्ती मूल्य का दोहराव रोकना"
+          },
+          "reason": {
+            "en": "Final values already include inputs.",
+            "hi": "अंतिम मूल्य में साधन पहले शामिल हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ignore services",
+            "hi": "सेवाएँ अनदेखी करना"
+          },
+          "reason": {
+            "en": "GDP includes final services.",
+            "hi": "GDP में अंतिम सेवाएँ शामिल हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Make every price zero",
+            "hi": "हर मूल्य शून्य करना"
+          },
+          "reason": {
+            "en": "Counting does not remove prices.",
+            "hi": "गणना कीमत नहीं हटाती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Count only exports",
+            "hi": "केवल निर्यात गिनना"
+          },
+          "reason": {
+            "en": "Domestic final output also counts.",
+            "hi": "घरेलू अंतिम उत्पादन भी गिना जाता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What identifies disguised unemployment?",
+        "hi": "प्रच्छन्न बेरोजगारी की पहचान क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "All work is in factories",
+            "hi": "सभी काम कारखानों में हैं"
+          },
+          "reason": {
+            "en": "It can occur in several settings.",
+            "hi": "यह कई स्थितियों में हो सकती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Some workers can leave without reducing output",
+            "hi": "कुछ लोग हटें पर उत्पादन न घटे"
+          },
+          "reason": {
+            "en": "Extra workers are not required for that output.",
+            "hi": "उस उत्पादन के लिए अतिरिक्त लोग जरूरी नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Everyone has a high salary",
+            "hi": "सबका वेतन ऊँचा है"
+          },
+          "reason": {
+            "en": "Salary alone does not identify it.",
+            "hi": "वेतन अकेला पहचान नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No one wants a job",
+            "hi": "कोई काम नहीं चाहता"
+          },
+          "reason": {
+            "en": "The issue concerns insufficient useful work.",
+            "hi": "विषय पर्याप्त उपयोगी काम की कमी है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A public hospital belongs to which activity sector?",
+        "hi": "सार्वजनिक अस्पताल किस गतिविधि क्षेत्रक में है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Secondary",
+            "hi": "द्वितीयक"
+          },
+          "reason": {
+            "en": "Its main activity is not manufacturing.",
+            "hi": "मुख्य गतिविधि विनिर्माण नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Private",
+            "hi": "निजी"
+          },
+          "reason": {
+            "en": "This is an ownership label and is incorrect here.",
+            "hi": "यह स्वामित्व का नाम है और यहाँ गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Tertiary",
+            "hi": "तृतीयक"
+          },
+          "reason": {
+            "en": "Healthcare is a service.",
+            "hi": "स्वास्थ्य देखभाल सेवा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Primary",
+            "hi": "प्राथमिक"
+          },
+          "reason": {
+            "en": "It does not mainly extract natural resources.",
+            "hi": "यह मुख्यतः प्राकृतिक संसाधन नहीं निकालता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Private versus public is based on what?",
+        "hi": "निजी-सार्वजनिक का आधार क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Worker height",
+            "hi": "कामगार की लंबाई"
+          },
+          "reason": {
+            "en": "This is irrelevant.",
+            "hi": "यह असंबंधित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only product colour",
+            "hi": "केवल उत्पाद का रंग"
+          },
+          "reason": {
+            "en": "Colour does not identify ownership.",
+            "hi": "रंग स्वामित्व नहीं बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Weather",
+            "hi": "मौसम"
+          },
+          "reason": {
+            "en": "Weather is not the classification basis.",
+            "hi": "मौसम वर्गीकरण का आधार नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ownership",
+            "hi": "स्वामित्व"
+          },
+          "reason": {
+            "en": "It asks who owns the organisation.",
+            "hi": "यह पूछता है कि मालिक कौन है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which can help create rural jobs?",
+        "hi": "ग्रामीण रोजगार में क्या सहायक हो सकता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Irrigation with suitable local planning",
+            "hi": "उपयुक्त स्थानीय योजना सहित सिंचाई"
+          },
+          "reason": {
+            "en": "It can support additional crop cycles.",
+            "hi": "इससे अतिरिक्त फसल चक्र संभव हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Closing all roads",
+            "hi": "सभी सड़कें बंद करना"
+          },
+          "reason": {
+            "en": "This restricts market access.",
+            "hi": "इससे बाजार पहुँच घटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ignoring demand",
+            "hi": "माँग अनदेखी करना"
+          },
+          "reason": {
+            "en": "An enterprise needs customers.",
+            "hi": "उद्यम को ग्राहक चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Removing all storage",
+            "hi": "सारा भंडारण हटाना"
+          },
+          "reason": {
+            "en": "Storage can reduce losses.",
+            "hi": "भंडारण हानि घटा सकता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which statement about services is accurate?",
+        "hi": "सेवाओं के बारे में सही कथन कौन-सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only banks are services",
+            "hi": "केवल बैंक सेवा हैं"
+          },
+          "reason": {
+            "en": "Teaching and transport are also services.",
+            "hi": "शिक्षण तथा परिवहन भी सेवाएँ हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Services include both high-paid and insecure jobs",
+            "hi": "सेवाओं में ऊँची आय तथा असुरक्षित काम दोनों हैं"
+          },
+          "reason": {
+            "en": "The sector is diverse.",
+            "hi": "क्षेत्रक विविध है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every worker is wealthy",
+            "hi": "हर कामगार धनी है"
+          },
+          "reason": {
+            "en": "Many services are low-paid.",
+            "hi": "कई सेवाओं में कम भुगतान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Services have no economic value",
+            "hi": "सेवाओं का आर्थिक मूल्य नहीं"
+          },
+          "reason": {
+            "en": "Useful services contribute to output.",
+            "hi": "उपयोगी सेवाएँ उत्पादन में योगदान देती हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "A line joining sector names demonstrates what?",
+        "hi": "क्षेत्रक नाम जोड़ती रेखा क्या दिखाती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Every individual wage",
+            "hi": "हर व्यक्ति की मजदूरी"
+          },
+          "reason": {
+            "en": "Aggregate shares do not show individual wages.",
+            "hi": "कुल हिस्से व्यक्तिगत मजदूरी नहीं बताते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Official census accuracy",
+            "hi": "आधिकारिक जनगणना की सटीकता"
+          },
+          "reason": {
+            "en": "The activity data are illustrative.",
+            "hi": "गतिविधि के आँकड़े उदाहरण हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Displayed category values",
+            "hi": "दिखाई श्रेणियों के मूल्य"
+          },
+          "reason": {
+            "en": "The axis contains categories.",
+            "hi": "अक्ष पर श्रेणियाँ हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A time trend automatically",
+            "hi": "अपने आप समय प्रवृत्ति"
+          },
+          "reason": {
+            "en": "Years are not on the axis.",
+            "hi": "अक्ष पर वर्ष नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "GDP refers to what?",
+        "hi": "GDP किससे संबंधित है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only government taxes",
+            "hi": "केवल सरकारी कर"
+          },
+          "reason": {
+            "en": "Taxes are not total production.",
+            "hi": "कर कुल उत्पादन नहीं हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every person’s equal income",
+            "hi": "हर व्यक्ति की समान आय"
+          },
+          "reason": {
+            "en": "GDP does not imply equal distribution.",
+            "hi": "GDP समान वितरण नहीं बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only cash in banks",
+            "hi": "केवल बैंकों की नकदी"
+          },
+          "reason": {
+            "en": "Money holdings are not annual output.",
+            "hi": "धन भंडार वार्षिक उत्पादन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Final production within a country in a year",
+            "hi": "वर्ष में देश के भीतर अंतिम उत्पादन"
+          },
+          "reason": {
+            "en": "This identifies domestic output.",
+            "hi": "यह घरेलू उत्पादन पहचानता है।"
+          }
+        }
+      ],
+      "correct": 3
+    }
+  ],
+  "shortAnswers": [
+    {
+      "question": {
+        "en": "How are the three activity sectors connected?",
+        "hi": "गतिविधि के 3 क्षेत्रक कैसे जुड़े हैं?"
+      },
+      "answer": {
+        "en": "Farms supply raw material, factories transform it, and transport and trade connect producers to users.",
+        "hi": "खेत कच्चा माल देते हैं, कारखाने रूप बदलते हैं और परिवहन तथा व्यापार उत्पादक को उपयोगकर्ता से जोड़ते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why count final goods?",
+        "hi": "अंतिम वस्तु क्यों गिनते हैं?"
+      },
+      "answer": {
+        "en": "Their values include intermediate inputs; counting every stage would repeat those values.",
+        "hi": "उनके मूल्य में मध्यवर्ती साधन शामिल हैं; हर चरण जोड़ने से मूल्य दोहरेंगे।"
+      }
+    },
+    {
+      "question": {
+        "en": "Define disguised unemployment.",
+        "hi": "प्रच्छन्न बेरोजगारी परिभाषित करें।"
+      },
+      "answer": {
+        "en": "Some engaged workers can leave without lowering total output under the given conditions.",
+        "hi": "बताई परिस्थिति में कुछ लगे कामगार हट जाएँ फिर भी कुल उत्पादन कम न हो।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why protect unorganised workers?",
+        "hi": "असंगठित कामगारों की सुरक्षा क्यों जरूरी है?"
+      },
+      "answer": {
+        "en": "Irregular work, low pay and weak social protection expose them to insecurity and hardship.",
+        "hi": "अनियमित काम, कम भुगतान तथा कमजोर सामाजिक सुरक्षा उन्हें असुरक्षा और कठिनाई में डालती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish ownership from activity.",
+        "hi": "स्वामित्व और गतिविधि में अंतर करें।"
+      },
+      "answer": {
+        "en": "Public/private identifies the owner; primary/secondary/tertiary identifies the work performed.",
+        "hi": "सार्वजनिक-निजी मालिक बताता है; प्राथमिक-द्वितीयक-तृतीयक किए जाने वाला काम बताता है।"
+      }
+    }
+  ],
+  "missions": [
+    {
+      "label": {
+        "en": "Compare 2 chart types.",
+        "hi": "2 प्रकार के आलेख की तुलना करें।"
+      },
+      "key": "types",
+      "min": 2
+    },
+    {
+      "label": {
+        "en": "Switch the data set and explain the change.",
+        "hi": "आँकड़ा समूह बदलकर अंतर समझाएँ।"
+      },
+      "key": "changed",
+      "min": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "NCERT · Understanding Economic Development · Chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf"
+    },
+    {
+      "title": "UP Board · Class 10 Social Science · 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/932-Social-Science-Class-10.pdf"
+    }
+  ],
+  "charts": [
+    {
+      "title": {
+        "en": "Illustrative production shares",
+        "hi": "उदाहरण उत्पादन हिस्से"
+      },
+      "unit": {
+        "en": "Production units out of 100",
+        "hi": "100 में उत्पादन इकाइयाँ"
+      },
+      "rows": [
+        {
+          "label": {
+            "en": "Primary",
+            "hi": "प्राथमिक"
+          },
+          "value": 20
+        },
+        {
+          "label": {
+            "en": "Secondary",
+            "hi": "द्वितीयक"
+          },
+          "value": 30
+        },
+        {
+          "label": {
+            "en": "Tertiary",
+            "hi": "तृतीयक"
+          },
+          "value": 50
+        }
+      ],
+      "source": {
+        "en": "Original illustrative teaching data; not an official survey.",
+        "hi": "मौलिक उदाहरण के शिक्षण आँकड़े; आधिकारिक सर्वेक्षण नहीं।"
+      },
+      "note": {
+        "en": "Invented shares, not India’s GDP estimates; categories are not years.",
+        "hi": "काल्पनिक हिस्से; भारत के GDP अनुमान नहीं। श्रेणियाँ वर्ष नहीं हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Illustrative employment shares",
+        "hi": "उदाहरण रोजगार हिस्से"
+      },
+      "unit": {
+        "en": "Workers out of 100",
+        "hi": "100 में कामगार"
+      },
+      "rows": [
+        {
+          "label": {
+            "en": "Primary",
+            "hi": "प्राथमिक"
+          },
+          "value": 50
+        },
+        {
+          "label": {
+            "en": "Secondary",
+            "hi": "द्वितीयक"
+          },
+          "value": 20
+        },
+        {
+          "label": {
+            "en": "Tertiary",
+            "hi": "तृतीयक"
+          },
+          "value": 30
+        }
+      ],
+      "source": {
+        "en": "Original illustrative teaching data; not an official survey.",
+        "hi": "मौलिक उदाहरण के शिक्षण आँकड़े; आधिकारिक सर्वेक्षण नहीं।"
+      },
+      "note": {
+        "en": "Compare employment with production, using different units.",
+        "hi": "अलग इकाइयों को ध्यान में रखकर रोजगार तथा उत्पादन की तुलना करें।"
+      }
+    }
+  ],
+  "why": {
+    "en": "Production and employment shares measure different things. A large workforce share with a smaller output share can reveal underemployment, but the chart alone cannot establish each worker’s productivity.",
+    "hi": "उत्पादन तथा रोजगार हिस्से अलग बातें मापते हैं। अधिक कामगार और कम उत्पादन हिस्से से अल्प रोजगार का प्रश्न उठ सकता है, लेकिन आलेख प्रत्येक व्यक्ति की उत्पादकता सिद्ध नहीं करता।"
+  },
+  "chart": {
+    "title": {
+      "en": "Illustrative production shares",
+      "hi": "उदाहरण उत्पादन हिस्से"
+    },
+    "unit": {
+      "en": "Production units out of 100",
+      "hi": "100 में उत्पादन इकाइयाँ"
+    },
+    "rows": [
+      {
+        "label": {
+          "en": "Primary",
+          "hi": "प्राथमिक"
+        },
+        "value": 20
+      },
+      {
+        "label": {
+          "en": "Secondary",
+          "hi": "द्वितीयक"
+        },
+        "value": 30
+      },
+      {
+        "label": {
+          "en": "Tertiary",
+          "hi": "तृतीयक"
+        },
+        "value": 50
+      }
+    ],
+    "source": {
+      "en": "Original illustrative teaching data; not an official survey.",
+      "hi": "मौलिक उदाहरण के शिक्षण आँकड़े; आधिकारिक सर्वेक्षण नहीं।"
+    },
+    "note": {
+      "en": "Invented shares, not India’s GDP estimates; categories are not years.",
+      "hi": "काल्पनिक हिस्से; भारत के GDP अनुमान नहीं। श्रेणियाँ वर्ष नहीं हैं।"
+    }
+  }
+}

@@ -1,0 +1,1532 @@
+{
+  "id": "light",
+  "number": 9,
+  "title": {
+    "en": "Light – Reflection and Refraction",
+    "hi": "प्रकाश – परावर्तन तथा अपवर्तन"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "goal": {
+    "en": "Use ray diagrams, signs and equations to explain mirrors, lenses and refraction.",
+    "hi": "किरण चित्र, चिह्न और सूत्रों से दर्पण, लेंस तथा अपवर्तन समझें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Reflection, rays and image formation",
+        "hi": "परावर्तन, किरणें और प्रतिबिंब"
+      },
+      "paragraphs": [
+        {
+          "en": "We see a non-luminous object when light scattered or reflected by it reaches our eyes. A light ray is a line used to represent a direction of travel. In this chapter, transparent media are treated as uniform and surfaces as smooth, so a geometrical ray model is useful. At a reflecting surface draw a normal perpendicular to the surface at the point of incidence. Measure both angles from this normal, not from the surface. The incident ray, reflected ray and normal lie in one plane, and the angle of incidence equals the angle of reflection. A plane mirror produces an erect virtual image of the same size as the object. Its apparent position is equally far behind the mirror. Real images occur where rays actually converge and can be received on a screen; virtual images occur where backward extensions appear to meet. A virtual image can still be seen by an eye because actual rays enter the eye.",
+          "hi": "अदीप्त वस्तु (Non-luminous object) तब दिखाई देती है जब उससे परावर्तित या प्रकीर्णित प्रकाश हमारी आँखों तक पहुँचता है। प्रकाश किरण (Light ray) गति की दिशा दिखाने वाली रेखा है। इस अध्याय में माध्यम को समरूप और सतह को चिकना मानकर किरण मॉडल अपनाते हैं। आपतन बिंदु पर सतह के लंबवत अभिलंब (Normal) खींचिए। आपतन कोण और परावर्तन कोण इसी अभिलंब से मापते हैं, सतह से नहीं। आपतित किरण, परावर्तित किरण और अभिलंब एक तल में होते हैं तथा दोनों कोण बराबर होते हैं। समतल दर्पण समान आकार का सीधा, आभासी प्रतिबिंब बनाता है। प्रतिबिंब दर्पण के पीछे उतनी ही दूरी पर प्रतीत होता है जितनी दूरी पर वस्तु सामने है। वास्तविक प्रतिबिंब (Real image) में किरणें सचमुच मिलती हैं और पर्दे पर चित्र मिल सकता है। आभासी प्रतिबिंब (Virtual image) में पीछे बढ़ाई गई रेखाएँ मिलती प्रतीत होती हैं। आभासी चित्र दिखता है क्योंकि वास्तविक किरणें फिर भी आँख में आती हैं। दर्पण के पीछे रखे पर्दे पर वह चित्र प्राप्त नहीं होगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Draw arrowheads on rays and dashed lines on backward extensions.",
+          "hi": "किरण पर तीर तथा पीछे बढ़ाई रेखा पर बिंदुदार रेखा लगाएँ।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can a visible image be virtual?",
+          "hi": "क्या दिखाई देने वाला प्रतिबिंब आभासी हो सकता है?"
+        },
+        "answer": {
+          "en": "Yes. A plane-mirror image is visible, but rays only appear to originate behind the mirror.",
+          "hi": "हाँ। समतल दर्पण का चित्र दिखता है, लेकिन किरणें पीछे से आती हुई केवल प्रतीत होती हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Spherical mirrors and principal rays",
+        "hi": "गोलीय दर्पण और मुख्य किरणें"
+      },
+      "paragraphs": [
+        {
+          "en": "A spherical mirror is a small part of a spherical reflecting surface. A concave mirror reflects from the inward-curved side, while a convex mirror reflects from the outward-bulging side. The pole P is the middle of the reflecting surface; the centre of curvature C is the centre of the parent sphere. The line through P and C is the principal axis. Parallel rays close to this axis meet at the principal focus F of a concave mirror. For a convex mirror their backward extensions meet at a focus behind the mirror. For a small aperture, the magnitude of the radius of curvature is twice the focal length. To locate an image, choose two rays from the top of the object: a parallel ray reflects through or apparently from F, and a ray through C retraces its path. A ray incident at P also obeys equal angles. The reflected rays, rather than the original incident rays, determine the image.",
+          "hi": "गोलीय दर्पण (Spherical mirror) किसी गोले की परावर्तक सतह का छोटा भाग है। अवतल दर्पण (Concave mirror) की परावर्तक सतह अंदर मुड़ी होती है; उत्तल दर्पण (Convex mirror) की सतह बाहर उभरी होती है। ध्रुव P परावर्तक सतह का मध्य है और वक्रता केंद्र C मूल गोले का केंद्र है। P तथा C से गुजरने वाली रेखा मुख्य अक्ष (Principal axis) कहलाती है। मुख्य अक्ष के पास समांतर आने वाली किरणें अवतल दर्पण से परावर्तन के बाद मुख्य फोकस F पर मिलती हैं। उत्तल दर्पण में परावर्तित किरणों के पीछे बढ़ाए गए भाग फोकस से आते प्रतीत होते हैं। छोटे द्वारक वाले दर्पण के लिए वक्रता त्रिज्या का परिमाण फोकस दूरी का 2 गुना होता है। वस्तु के शीर्ष से 2 सुविधाजनक किरणें चुनिए। अक्ष के समांतर किरण फोकस की ओर परावर्तित होती है; C से गुजरती किरण उसी रास्ते लौटती है। ध्रुव पर आने वाली किरण के लिए दोनों कोण बराबर रखिए। प्रतिबिंब की जगह परावर्तित किरणों से मिलेगी, मूल आपतित किरणों को मिलाने से नहीं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The centre C is a point in space, not a second reflecting surface.",
+          "hi": "C अंतरिक्ष में बिंदु है, दूसरी परावर्तक सतह नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "For a concave mirror of radius 30 cm, what is the focal-length magnitude?",
+          "hi": "30 cm त्रिज्या के अवतल दर्पण की फोकस दूरी का परिमाण कितना है?"
+        },
+        "answer": {
+          "en": "15 cm, using R = 2f for a small-aperture spherical mirror.",
+          "hi": "छोटे द्वारक के गोलीय दर्पण में R = 2f से 15 cm।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Mirror images and the Cartesian convention",
+        "hi": "दर्पण के प्रतिबिंब और कार्तीय चिह्न"
+      },
+      "paragraphs": [
+        {
+          "en": "Take the pole as origin and the direction of incident light as positive. Distances opposite that direction are negative; heights above the axis are positive. A real object in front of the mirror therefore usually has u negative. A concave mirror has f negative, and a convex mirror has f positive. The mirror equation is 1/f = 1/v + 1/u and magnification is m = h_i/h_o = -v/u. For a concave mirror an object beyond C gives a reduced inverted real image between F and C; at C the image is equally sized at C. Between C and F the real image is enlarged beyond C. At F the emerging rays are parallel, so the ideal image is at infinity. Between F and P the image is erect, virtual and enlarged behind the mirror. A convex mirror always gives a reduced, erect virtual image for a real object, explaining its wide field of view in vehicle mirrors.",
+          "hi": "नव कार्तीय चिह्न परिपाटी (New Cartesian sign convention) में ध्रुव को मूल बिंदु और आपतित प्रकाश की दिशा को धनात्मक लेते हैं। विपरीत दिशा की दूरी ऋणात्मक तथा मुख्य अक्ष के ऊपर की ऊँचाई धनात्मक है। इसलिए सामने रखी वास्तविक वस्तु के लिए सामान्यतः u ऋणात्मक होता है। अवतल दर्पण में f ऋणात्मक और उत्तल में धनात्मक है। दर्पण सूत्र 1/f = 1/v + 1/u तथा आवर्धन m = h_i/h_o = -v/u है। अवतल दर्पण के C से दूर वस्तु का चित्र F और C के बीच छोटा, उलटा तथा वास्तविक बनता है। C पर वस्तु रखने पर समान आकार का चित्र C पर मिलता है। C और F के बीच वस्तु रखने पर बड़ा वास्तविक चित्र C से बाहर बनता है। F पर वस्तु हो तो परावर्तित किरणें समांतर हैं; आदर्श चित्र अनंत पर है। F तथा P के बीच वस्तु का चित्र पीछे सीधा, आभासी और बड़ा मिलता है। उत्तल दर्पण वास्तविक वस्तु का हमेशा छोटा, सीधा, आभासी चित्र बनाता है; इसलिए वाहन में विस्तृत क्षेत्र दिखता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Write signs before substitution; image nature follows the calculated position and magnification.",
+          "hi": "मान रखने से पहले चिह्न लिखें; v और m से चित्र की प्रकृति जाँचें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why does the mirror scene show infinity at an object distance of 15 cm?",
+          "hi": "15 cm वस्तु दूरी पर दर्पण दृश्य अनंत क्यों दिखाता है?"
+        },
+        "answer": {
+          "en": "The object is at the focus of the f = -15 cm mirror, so reflected paraxial rays are parallel.",
+          "hi": "f = -15 cm दर्पण में वस्तु फोकस पर है, इसलिए अक्ष के निकट किरणें समांतर लौटती हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Refraction and refractive index",
+        "hi": "अपवर्तन और अपवर्तनांक"
+      },
+      "paragraphs": [
+        {
+          "en": "When light passes obliquely between transparent media with different optical properties, its direction generally changes. This is refraction. The incident ray, refracted ray and normal lie in the same plane. For a given pair of media and colour, sin i/sin r is constant. This is the relative refractive index of the second medium with respect to the first. Absolute refractive index is n = c/v, where c is light speed in vacuum and v its speed in the medium. From air to glass, light slows and usually bends towards the normal; from glass to air it bends away. At normal incidence the direction remains unchanged even though the speed changes. Optical density concerns speed of light and must not be equated automatically with mass density. In the scene n_air = 1 and n_glass = 1.5, so an incidence angle of 30° gives a refraction angle about 19.47°. Angles must be measured from the same normal.",
+          "hi": "जब प्रकाश अलग प्रकाशीय गुणों वाले पारदर्शी माध्यमों की सीमा पर तिरछा पहुँचता है तो सामान्यतः उसकी दिशा बदलती है। यह अपवर्तन (Refraction) है। आपतित किरण, अपवर्तित किरण और अभिलंब एक तल में होते हैं। निश्चित माध्यमों और रंग के लिए sin i/sin r नियत रहता है। यह दूसरे माध्यम का पहले के सापेक्ष अपवर्तनांक (Relative refractive index) है। निरपेक्ष अपवर्तनांक n = c/v में c निर्वात में तथा v माध्यम में प्रकाश की चाल है। वायु से काँच में प्रकाश धीमा होकर अभिलंब की ओर मुड़ता है। काँच से वायु में अभिलंब से दूर मुड़ता है। लंबवत आपतन पर चाल बदल सकती है, लेकिन दिशा नहीं बदलती। प्रकाशीय सघनता (Optical density) प्रकाश की चाल से जुड़ी है; इसे पदार्थ के द्रव्यमान घनत्व के बराबर नहीं मानना चाहिए। दृश्य में वायु का अपवर्तनांक 1 और काँच का 1.5 है। 30° आपतन पर अपवर्तन कोण लगभग 19.47° मिलता है। दोनों कोण सीमा की सतह से नहीं, एक ही अभिलंब से मापिए। अलग रंगों के लिए सूक्ष्म अंतर इस सरल दृश्य में नहीं दिखाया गया है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Refractive index has no unit because it is a ratio of speeds or sines.",
+          "hi": "अपवर्तनांक चालों या ज्या का अनुपात है; इसकी इकाई नहीं होती।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does a normally incident ray necessarily keep the same speed?",
+          "hi": "क्या लंबवत आपतित किरण की चाल अवश्य समान रहती है?"
+        },
+        "answer": {
+          "en": "No. Its direction can remain unchanged while its speed changes on entering another medium.",
+          "hi": "नहीं। दूसरे माध्यम में दिशा बदले बिना भी उसकी चाल बदल सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Glass slabs and everyday observations",
+        "hi": "काँच की पट्टी और दैनिक अनुभव"
+      },
+      "paragraphs": [
+        {
+          "en": "A rectangular glass slab has two parallel refracting surfaces. A ray entering from air bends towards the normal at the first surface, then away from the normal at the second surface. When the surrounding medium is the same on both sides, the emergent ray is parallel to the incident ray but shifted sideways. This lateral displacement depends on thickness and incidence angle as well as refractive index. Do not draw an additional bend while the ray travels through uniform glass. A pencil partly immersed in water looks bent because rays from its submerged part change direction at the water-air boundary. Their backward extensions suggest an apparent position different from the true one. These appearances do not mean the object itself has broken or moved. When drawing an activity, trace the boundary first, mark incidence points, construct normals, and use arrowheads to indicate the actual light path from object towards observer.",
+          "hi": "आयताकार काँच की पट्टी (Glass slab) की 2 अपवर्तक सतहें समांतर होती हैं। वायु से प्रवेश करती किरण पहली सतह पर अभिलंब की ओर और दूसरी सतह से निकलते समय अभिलंब से दूर मुड़ती है। दोनों ओर एक ही माध्यम होने पर निर्गत किरण (Emergent ray) आपतित किरण के समांतर होती है, लेकिन बगल में खिसक जाती है। इसे पार्श्व विस्थापन (Lateral displacement) कहते हैं। यह पट्टी की मोटाई, आपतन कोण और अपवर्तनांक पर निर्भर है। समरूप काँच के भीतर चलते प्रकाश को बीच में फिर मोड़कर नहीं दिखाना चाहिए। जल में आंशिक डूबी पेंसिल टेढ़ी लगती है क्योंकि डूबे भाग से आने वाली किरणें जल-वायु सीमा पर दिशा बदलती हैं। उनके पीछे बढ़ाए भाग वस्तु की अलग आभासी स्थिति बताते हैं। इससे पेंसिल वास्तव में टूटती या अपनी जगह नहीं बदलती। चित्र बनाते समय पहले सीमा रेखाएँ, फिर आपतन बिंदु और अभिलंब बनाएँ। तीर वस्तु से प्रेक्षक की ओर वास्तविक प्रकाश पथ दिखाएँ। पट्टी के दोनों कोणों की तुलना के लिए उन्हें अलग-अलग अभिलंब से मापना आवश्यक है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Parallel emergence is a property of the parallel-sided slab, not every refracting object.",
+          "hi": "समांतर निर्गमन समांतर सतहों की पट्टी का गुण है; हर अपवर्तक वस्तु का नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is the emerging ray parallel to the original ray in an air-glass-air slab?",
+          "hi": "वायु-काँच-वायु पट्टी में निर्गत किरण मूल किरण के समांतर क्यों है?"
+        },
+        "answer": {
+          "en": "The parallel faces and identical outer media produce compensating angular changes at the two boundaries.",
+          "hi": "समांतर सतहों और समान बाहरी माध्यमों के कारण दोनों सीमाओं के कोणीय परिवर्तन एक-दूसरे की भरपाई करते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Lenses and construction of images",
+        "hi": "लेंस और प्रतिबिंब का निर्माण"
+      },
+      "paragraphs": [
+        {
+          "en": "A lens is a transparent optical element bounded by two surfaces, at least one curved. A convex lens is thicker at the centre and generally converges parallel rays in air. A concave lens is thinner at the centre and diverges them. The optical centre O is the reference point for a thin lens; a ray through it is treated as undeviated. A parallel ray passes through the far principal focus of a convex lens, whereas a ray through the near focus emerges parallel. These two rays locate the image. Beyond 2F an object produces a smaller real inverted image between F and 2F. At 2F the sizes are equal. Between F and 2F the image is larger, real and beyond 2F on the opposite side. At F the image is at infinity. Inside F the image is enlarged, erect and virtual on the object side. A concave lens gives a diminished erect virtual image for a real object.",
+          "hi": "लेंस (Lens) पारदर्शी पदार्थ का प्रकाशीय भाग है जिसकी कम से कम 1 सतह वक्र होती है। उत्तल लेंस (Convex lens) बीच में मोटा होता है और वायु में समांतर किरणों को सामान्यतः अभिसारित करता है। अवतल लेंस (Concave lens) बीच में पतला है और किरणों को अपसारित करता है। पतले लेंस का प्रकाशिक केंद्र O दूरी मापने का संदर्भ बिंदु है। इससे गुजरती किरण को लगभग अविचलित मानते हैं। उत्तल लेंस पर अक्ष के समांतर किरण दूसरी ओर के मुख्य फोकस से गुजरती है; पास के फोकस से आती किरण समांतर निकलती है। इन 2 किरणों से चित्र की जगह मिलती है। 2F से दूर वस्तु का चित्र दूसरी ओर F और 2F के बीच छोटा, वास्तविक और उलटा बनता है। 2F पर चित्र समान आकार का है। F तथा 2F के बीच वस्तु से दूसरी ओर 2F के बाहर बड़ा वास्तविक चित्र बनता है। F पर आदर्श चित्र अनंत पर है। F के भीतर वस्तु रखने पर उसी ओर बड़ा, सीधा, आभासी चित्र मिलता है। अवतल लेंस वास्तविक वस्तु का छोटा, सीधा, आभासी चित्र देता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "An image diagram requires at least two rays from the same point on the object.",
+          "hi": "चित्र के लिए वस्तु के एक ही बिंदु से कम से कम 2 किरणें लें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which lens acts as a simple magnifier for an object inside its focus?",
+          "hi": "फोकस के भीतर वस्तु के लिए कौन सा लेंस सरल आवर्धक बनता है?"
+        },
+        "answer": {
+          "en": "A convex lens gives an enlarged erect virtual image in this position.",
+          "hi": "उत्तल लेंस इस स्थिति में बड़ा, सीधा, आभासी प्रतिबिंब देता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Lens equation, magnification and power",
+        "hi": "लेंस सूत्र, आवर्धन और क्षमता"
+      },
+      "paragraphs": [
+        {
+          "en": "For a thin lens use 1/f = 1/v - 1/u, with all distances measured from the optical centre. With light travelling left to right, an object on the left has u negative. A convex lens has positive f and a concave lens negative f. A real image on the right has v positive, whereas a virtual image on the left has v negative. Lens magnification is m = v/u, different from the mirror expression with its extra minus sign. A negative magnification means inversion; its absolute value compares sizes. Power measures convergence or divergence: P = 1/f when f is in metres. Its unit is dioptre, D = m^-1. A shorter focal length gives a larger power magnitude. A +2 D lens has focal length +0.50 m, and a -2 D lens has focal length -0.50 m. Convert centimetres to metres before calculating power; leaving f in centimetres gives an error by a factor of 100.",
+          "hi": "पतले लेंस के लिए सूत्र 1/f = 1/v - 1/u है। सभी दूरियाँ प्रकाशिक केंद्र से मापते हैं। प्रकाश बाएँ से दाएँ जाए तो बाईं ओर रखी वस्तु के लिए u ऋणात्मक है। उत्तल लेंस की f धनात्मक और अवतल की ऋणात्मक है। दाईं ओर बनने वाले वास्तविक चित्र का v धनात्मक तथा बाईं ओर आभासी चित्र का v ऋणात्मक है। लेंस का आवर्धन (Magnification) m = v/u है; दर्पण के सूत्र में अतिरिक्त ऋण चिह्न आता है। ऋणात्मक आवर्धन उलटा चित्र बताता है और उसका परिमाण आकारों का अनुपात है। लेंस क्षमता (Power) अभिसरण या अपसरण का माप है। P = 1/f में f मीटर में रखना अनिवार्य है। इकाई डायोप्टर (Dioptre), D = m^-1 है। कम फोकस दूरी के परिमाण का लेंस अधिक क्षमता के परिमाण वाला होता है। +2 D लेंस की फोकस दूरी +0.50 m तथा -2 D की -0.50 m है। क्षमता निकालने से पहले cm को m में बदलें। cm में रखे मान का व्युत्क्रम लेने पर उत्तर में 100 गुना त्रुटि होगी।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Mirror: m = -v/u. Lens: m = v/u. Power always requires focal length in metres.",
+          "hi": "दर्पण: m = -v/u। लेंस: m = v/u। क्षमता में f मीटर में लें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the power of a convex lens with focal length 25 cm?",
+          "hi": "25 cm फोकस दूरी के उत्तल लेंस की क्षमता कितनी है?"
+        },
+        "answer": {
+          "en": "f = +0.25 m, so P = 1/0.25 = +4 D.",
+          "hi": "f = +0.25 m, इसलिए P = 1/0.25 = +4 D।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Using evidence, models and optical devices",
+        "hi": "प्रमाण, मॉडल और प्रकाशीय उपकरण"
+      },
+      "paragraphs": [
+        {
+          "en": "The image table, ray diagram and numerical equation are three descriptions of the same optical situation. Check them against one another rather than learning isolated answers. A concave mirror can provide an enlarged upright view when an object is within the focus, while a convex mirror sacrifices size for a larger field of view. A camera uses a converging lens to form a real image on a sensor. A simple magnifier is used with the object closer than its focal length. In the interactive models, move through the focus slowly and watch the image change sides; the infinity label is a limit, not a finite location just outside the canvas. Ideal thin lenses and small-aperture mirrors ignore surface imperfections and aberrations. A coloured line denotes a ray path, not a glowing material thread. Never view the Sun directly or concentrate sunlight towards an eye. For classroom observations use a lamp or a safe distant object with teacher supervision.",
+          "hi": "प्रतिबिंब तालिका, किरण चित्र और संख्यात्मक सूत्र एक ही प्रकाशीय स्थिति के 3 वर्णन हैं। अलग उत्तर रटने की जगह तीनों को मिलाकर जाँचें। अवतल दर्पण फोकस के भीतर की वस्तु का बड़ा सीधा दृश्य देता है। उत्तल दर्पण में चित्र छोटा होता है, लेकिन आसपास का अधिक क्षेत्र दिखाई देता है। कैमरे का अभिसारी लेंस संवेदक पर वास्तविक चित्र बनाता है। सरल आवर्धक में वस्तु फोकस दूरी से कम दूरी पर रखते हैं। संवादात्मक दृश्य में वस्तु को धीरे-धीरे फोकस के दोनों ओर ले जाएँ और देखें कि चित्र किस ओर बनता है। अनंत (Infinity) का संकेत पर्दे से थोड़ा बाहर की सीमित जगह नहीं है; वह समांतर निर्गत किरणों की आदर्श सीमा है। पतला लेंस और छोटे द्वारक का दर्पण सतह की कमियाँ तथा विपथन उपेक्षित करते हैं। रंगीन रेखा प्रकाश पथ का संकेत है, कोई चमकता पदार्थ का धागा नहीं। सूर्य को सीधे या दर्पण से आँख की ओर परावर्तित करके कभी न देखें। कक्षा में शिक्षक की निगरानी में दीपक या सुरक्षित दूर की वस्तु से निरीक्षण करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "An optical model should state its assumptions and still preserve correct signs and image character.",
+          "hi": "प्रकाशीय मॉडल की मान्यताएँ स्पष्ट हों और चिह्न तथा चित्र की प्रकृति सही रहें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How can you check an answer that predicts a positive lens magnification for a real inverted image?",
+          "hi": "वास्तविक उलटे चित्र के लिए धनात्मक लेंस आवर्धन मिलने पर क्या जाँचेंगे?"
+        },
+        "answer": {
+          "en": "Recheck signs: a real object has u < 0 and real lens image v > 0, so m must be negative.",
+          "hi": "चिह्न जाँचें: वास्तविक वस्तु का u < 0 और वास्तविक लेंस चित्र का v > 0 है; इसलिए m ऋणात्मक होगा।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "1/f = 1/v + 1/u",
+      "meaning": {
+        "en": "Spherical mirror: u object distance, v image distance, f focal length.",
+        "hi": "गोलीय दर्पण: u वस्तु दूरी, v प्रतिबिंब दूरी, f फोकस दूरी।"
+      },
+      "units": {
+        "en": "Use one common length unit with Cartesian signs.",
+        "hi": "एक समान लंबाई इकाई और कार्तीय चिह्न लें।"
+      }
+    },
+    {
+      "expression": "m_mirror = -v/u; m_lens = v/u",
+      "meaning": {
+        "en": "m is image height divided by object height.",
+        "hi": "m प्रतिबिंब ऊँचाई तथा वस्तु ऊँचाई का अनुपात है।"
+      },
+      "units": {
+        "en": "m has no unit.",
+        "hi": "m की इकाई नहीं है।"
+      }
+    },
+    {
+      "expression": "1/f = 1/v - 1/u",
+      "meaning": {
+        "en": "Thin lens with distances from the optical centre.",
+        "hi": "पतला लेंस; दूरियाँ प्रकाशिक केंद्र से।"
+      },
+      "units": {
+        "en": "u, v, f in the same length unit.",
+        "hi": "u, v, f एक ही लंबाई इकाई में।"
+      }
+    },
+    {
+      "expression": "n = c/v; n_21 = sin(i)/sin(r)",
+      "meaning": {
+        "en": "v here is speed in a medium, not image distance; relative index is for fixed media and colour.",
+        "hi": "यहाँ v माध्यम में चाल है, प्रतिबिंब दूरी नहीं; सापेक्ष अपवर्तनांक निश्चित माध्यमों और रंग के लिए है।"
+      },
+      "units": {
+        "en": "n is dimensionless; speeds in m/s; angles from the normal.",
+        "hi": "n इकाई रहित; चाल m/s; कोण अभिलंब से।"
+      }
+    },
+    {
+      "expression": "P = 1/f",
+      "meaning": {
+        "en": "P is lens power and f must be in metres.",
+        "hi": "P लेंस क्षमता और f अनिवार्यतः मीटर में है।"
+      },
+      "units": {
+        "en": "P: dioptre D = m^-1; f: m.",
+        "hi": "P: डायोप्टर D = m^-1; f: m।"
+      }
+    },
+    {
+      "expression": "R = 2f",
+      "meaning": {
+        "en": "Signed radius and focal length for a small-aperture spherical mirror.",
+        "hi": "छोटे द्वारक के गोलीय दर्पण की चिह्न सहित त्रिज्या और फोकस दूरी।"
+      },
+      "units": {
+        "en": "R and f in the same length unit.",
+        "hi": "R और f एक समान लंबाई इकाई में।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not swap mirror and lens equations. The slider gives a positive distance magnitude, while u is negative. Infinity is not zero distance.",
+    "hi": "दर्पण और लेंस सूत्र न बदलें। स्लाइडर धनात्मक दूरी परिमाण देता है, लेकिन u ऋणात्मक है। अनंत दूरी शून्य नहीं है।"
+  },
+  "summary": [
+    {
+      "en": "Reflection obeys equal angles from the normal.",
+      "hi": "परावर्तन में अभिलंब से दोनों कोण बराबर हैं।"
+    },
+    {
+      "en": "A concave mirror changes image type as the object crosses its focus.",
+      "hi": "अवतल दर्पण में फोकस पार करने पर चित्र की प्रकृति बदलती है।"
+    },
+    {
+      "en": "Refraction depends on relative optical speed.",
+      "hi": "अपवर्तन सापेक्ष प्रकाश चाल पर निर्भर है।"
+    },
+    {
+      "en": "Thin-lens and mirror formulas use different signs.",
+      "hi": "पतले लेंस और दर्पण के सूत्रों में अलग चिह्न हैं।"
+    },
+    {
+      "en": "Power uses focal length in metres and is measured in D.",
+      "hi": "क्षमता में फोकस दूरी मीटर में है और इकाई D है।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the image for a concave mirror with f = -15 cm and an object 30 cm in front.",
+        "hi": "f = -15 cm अवतल दर्पण के सामने 30 cm पर वस्तु का प्रतिबिंब ज्ञात करें।"
+      },
+      "given": {
+        "en": "f = -15 cm; u = -30 cm.",
+        "hi": "f = -15 cm; u = -30 cm।"
+      },
+      "find": {
+        "en": "v and m",
+        "hi": "v और m"
+      },
+      "formula": {
+        "en": "1/v = 1/f - 1/u; m = -v/u",
+        "hi": "1/v = 1/f - 1/u; m = -v/u"
+      },
+      "steps": [
+        {
+          "en": "1/v = -1/15 + 1/30 = -1/30 cm^-1.",
+          "hi": "1/v = -1/15 + 1/30 = -1/30 cm^-1।"
+        },
+        {
+          "en": "v = -30 cm.",
+          "hi": "v = -30 cm।"
+        },
+        {
+          "en": "m = -(-30)/(-30) = -1.",
+          "hi": "m = -(-30)/(-30) = -1।"
+        }
+      ],
+      "answer": {
+        "en": "30 cm in front; real, inverted, equal size.",
+        "hi": "सामने 30 cm; वास्तविक, उलटा, समान आकार।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the power of a concave lens with f = -50 cm.",
+        "hi": "f = -50 cm अवतल लेंस की क्षमता निकालें।"
+      },
+      "given": {
+        "en": "f = -50 cm = -0.50 m",
+        "hi": "f = -50 cm = -0.50 m"
+      },
+      "find": {
+        "en": "P",
+        "hi": "P"
+      },
+      "formula": {
+        "en": "P = 1/f",
+        "hi": "P = 1/f"
+      },
+      "steps": [
+        {
+          "en": "Convert cm to m.",
+          "hi": "cm को m में बदलें।"
+        },
+        {
+          "en": "P = 1/(-0.50).",
+          "hi": "P = 1/(-0.50)।"
+        }
+      ],
+      "answer": {
+        "en": "P = -2 D; diverging lens.",
+        "hi": "P = -2 D; अपसारी लेंस।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A convex lens of f = 15 cm has an object at 30 cm. Find image position and magnification.",
+        "hi": "f = 15 cm उत्तल लेंस से 30 cm दूर वस्तु का चित्र स्थान और आवर्धन निकालें।"
+      },
+      "given": {
+        "en": "f = +15 cm; u = -30 cm",
+        "hi": "f = +15 cm; u = -30 cm"
+      },
+      "find": {
+        "en": "v, m",
+        "hi": "v, m"
+      },
+      "formula": {
+        "en": "1/v = 1/f + 1/u; m = v/u",
+        "hi": "1/v = 1/f + 1/u; m = v/u"
+      },
+      "steps": [
+        {
+          "en": "1/v = 1/15 - 1/30 = 1/30.",
+          "hi": "1/v = 1/15 - 1/30 = 1/30।"
+        },
+        {
+          "en": "v = +30 cm.",
+          "hi": "v = +30 cm।"
+        },
+        {
+          "en": "m = 30/(-30) = -1.",
+          "hi": "m = 30/(-30) = -1।"
+        }
+      ],
+      "answer": {
+        "en": "Image 30 cm on the other side; real, inverted, same size.",
+        "hi": "दूसरी ओर 30 cm; वास्तविक, उलटा, समान आकार।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Light enters glass of index 1.5 from air at 30°. Find r.",
+        "hi": "वायु से 1.5 अपवर्तनांक के काँच में 30° पर प्रवेश करती किरण का r निकालें।"
+      },
+      "given": {
+        "en": "n_air = 1; n_glass = 1.5; i = 30°",
+        "hi": "n_air = 1; n_glass = 1.5; i = 30°"
+      },
+      "find": {
+        "en": "r",
+        "hi": "r"
+      },
+      "formula": {
+        "en": "sin(r) = sin(i)/1.5",
+        "hi": "sin(r) = sin(i)/1.5"
+      },
+      "steps": [
+        {
+          "en": "sin(r) = 0.5/1.5 = 1/3.",
+          "hi": "sin(r) = 0.5/1.5 = 1/3।"
+        },
+        {
+          "en": "r = arcsin(1/3) ≈ 19.47°.",
+          "hi": "r = arcsin(1/3) ≈ 19.47°।"
+        }
+      ],
+      "answer": {
+        "en": "r ≈ 19.47°, towards the normal.",
+        "hi": "r ≈ 19.47°, अभिलंब की ओर।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "An object is 10 cm before a convex lens of f = 15 cm. Find v and describe the image.",
+        "hi": "f = 15 cm उत्तल लेंस के सामने 10 cm पर वस्तु है। v और चित्र की प्रकृति निकालें।"
+      },
+      "given": {
+        "en": "u = -10 cm; f = +15 cm",
+        "hi": "u = -10 cm; f = +15 cm"
+      },
+      "find": {
+        "en": "v, m and nature",
+        "hi": "v, m और प्रकृति"
+      },
+      "formula": {
+        "en": "1/v = 1/f + 1/u; m = v/u",
+        "hi": "1/v = 1/f + 1/u; m = v/u"
+      },
+      "steps": [
+        {
+          "en": "1/v = 1/15 - 1/10 = -1/30.",
+          "hi": "1/v = 1/15 - 1/10 = -1/30।"
+        },
+        {
+          "en": "v = -30 cm, on the object side.",
+          "hi": "v = -30 cm, वस्तु वाली ओर।"
+        },
+        {
+          "en": "m = (-30)/(-10) = +3.",
+          "hi": "m = (-30)/(-10) = +3।"
+        }
+      ],
+      "answer": {
+        "en": "Virtual, erect image 30 cm on the object side, 3 times larger.",
+        "hi": "वस्तु वाली ओर 30 cm पर आभासी, सीधा, 3 गुना बड़ा चित्र।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Angles of reflection are measured from which line?",
+        "hi": "परावर्तन के कोण किस रेखा से मापते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Surface",
+            "hi": "सतह"
+          },
+          "reason": {
+            "en": "The surface gives the complementary angle.",
+            "hi": "सतह से पूरक कोण मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Normal",
+            "hi": "अभिलंब"
+          },
+          "reason": {
+            "en": "The normal is perpendicular to the local surface.",
+            "hi": "अभिलंब स्थानीय सतह के लंबवत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Principal axis always",
+            "hi": "हमेशा मुख्य अक्ष"
+          },
+          "reason": {
+            "en": "The axis is the normal only at the pole.",
+            "hi": "मुख्य अक्ष केवल ध्रुव पर अभिलंब है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Object height",
+            "hi": "वस्तु ऊँचाई"
+          },
+          "reason": {
+            "en": "Height is a length, not the angular reference.",
+            "hi": "ऊँचाई लंबाई है, कोण का संदर्भ नहीं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which image can be received directly on a screen?",
+        "hi": "कौन सा प्रतिबिंब सीधे पर्दे पर मिलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Real",
+            "hi": "वास्तविक"
+          },
+          "reason": {
+            "en": "Real rays actually converge at its position.",
+            "hi": "वास्तविक किरणें वहाँ मिलती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every virtual image",
+            "hi": "हर आभासी चित्र"
+          },
+          "reason": {
+            "en": "Virtual rays only appear to meet.",
+            "hi": "आभासी चित्र में किरणें मिलती प्रतीत होती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only erect images",
+            "hi": "केवल सीधे चित्र"
+          },
+          "reason": {
+            "en": "Orientation alone does not decide screen formation.",
+            "hi": "केवल सीधा होना पर्दे पर मिलना तय नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only enlarged images",
+            "hi": "केवल बड़े चित्र"
+          },
+          "reason": {
+            "en": "Size alone does not decide image reality.",
+            "hi": "केवल आकार वास्तविकता तय नहीं करता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A concave mirror has f = -15 cm. Where is an object at u = -15 cm imaged?",
+        "hi": "अवतल दर्पण में f = -15 cm तथा u = -15 cm है। चित्र कहाँ है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "At C",
+            "hi": "C पर"
+          },
+          "reason": {
+            "en": "At C requires the object at C.",
+            "hi": "C पर चित्र के लिए वस्तु C पर होगी।"
+          }
+        },
+        {
+          "text": {
+            "en": "At P",
+            "hi": "P पर"
+          },
+          "reason": {
+            "en": "Parallel reflected rays do not meet at P.",
+            "hi": "समांतर परावर्तित किरणें P पर नहीं मिलतीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "At infinity",
+            "hi": "अनंत पर"
+          },
+          "reason": {
+            "en": "1/v becomes zero, representing parallel rays.",
+            "hi": "1/v शून्य है; किरणें समांतर हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "15 cm behind",
+            "hi": "पीछे 15 cm"
+          },
+          "reason": {
+            "en": "The focal-position image is not a finite virtual image.",
+            "hi": "फोकस पर सीमित आभासी चित्र नहीं बनता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which mirror gives a diminished erect image for every real object position?",
+        "hi": "हर वास्तविक वस्तु स्थिति पर छोटा सीधा चित्र कौन देता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Concave mirror",
+            "hi": "अवतल दर्पण"
+          },
+          "reason": {
+            "en": "Concave images depend on object position.",
+            "hi": "अवतल का चित्र वस्तु स्थिति पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Plane mirror",
+            "hi": "समतल दर्पण"
+          },
+          "reason": {
+            "en": "Plane images have equal size.",
+            "hi": "समतल का आकार समान है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neither mirror",
+            "hi": "कोई दर्पण नहीं"
+          },
+          "reason": {
+            "en": "A convex mirror has the stated property.",
+            "hi": "उत्तल दर्पण में यह गुण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Convex mirror",
+            "hi": "उत्तल दर्पण"
+          },
+          "reason": {
+            "en": "Its image is virtual, erect and reduced.",
+            "hi": "इसका चित्र आभासी, सीधा और छोटा है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "What happens to light from air entering glass obliquely?",
+        "hi": "वायु से काँच में तिरछी किरण का क्या होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Bends towards the normal",
+            "hi": "अभिलंब की ओर मुड़ती है"
+          },
+          "reason": {
+            "en": "Glass has higher refractive index than air.",
+            "hi": "काँच का अपवर्तनांक वायु से अधिक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always becomes parallel to surface",
+            "hi": "हमेशा सतह के समांतर"
+          },
+          "reason": {
+            "en": "Snell’s law does not predict this generally.",
+            "hi": "स्नेल का नियम सामान्यतः ऐसा नहीं देता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Its speed increases",
+            "hi": "चाल बढ़ती है"
+          },
+          "reason": {
+            "en": "Speed decreases in glass.",
+            "hi": "काँच में चाल घटती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It cannot enter",
+            "hi": "प्रवेश नहीं कर सकती"
+          },
+          "reason": {
+            "en": "Transparent glass transmits light.",
+            "hi": "पारदर्शी काँच प्रकाश भेजता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which quantity has no unit?",
+        "hi": "किस राशि की इकाई नहीं है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Focal length",
+            "hi": "फोकस दूरी"
+          },
+          "reason": {
+            "en": "Focal length is a length.",
+            "hi": "फोकस दूरी लंबाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Refractive index",
+            "hi": "अपवर्तनांक"
+          },
+          "reason": {
+            "en": "It is a ratio of speeds.",
+            "hi": "यह चालों का अनुपात है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Lens power",
+            "hi": "लेंस क्षमता"
+          },
+          "reason": {
+            "en": "Power is measured in dioptres.",
+            "hi": "क्षमता डायोप्टर में है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Speed of light",
+            "hi": "प्रकाश चाल"
+          },
+          "reason": {
+            "en": "Speed has unit m/s.",
+            "hi": "चाल की इकाई m/s है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which is the thin-lens equation?",
+        "hi": "पतले लेंस का सूत्र कौन सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/f = 1/u + 1/v",
+            "hi": "1/f = 1/u + 1/v"
+          },
+          "reason": {
+            "en": "This is the mirror equation.",
+            "hi": "यह दर्पण सूत्र है।"
+          }
+        },
+        {
+          "text": {
+            "en": "m = -v/u always",
+            "hi": "हमेशा m = -v/u"
+          },
+          "reason": {
+            "en": "The minus-sign expression is for mirrors.",
+            "hi": "ऋण चिह्न वाला सूत्र दर्पण का है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/f = 1/v - 1/u",
+            "hi": "1/f = 1/v - 1/u"
+          },
+          "reason": {
+            "en": "This uses the Cartesian lens convention.",
+            "hi": "यह कार्तीय लेंस परिपाटी का सूत्र है।"
+          }
+        },
+        {
+          "text": {
+            "en": "P = f in metres",
+            "hi": "मीटर में P = f"
+          },
+          "reason": {
+            "en": "Power is the reciprocal of focal length.",
+            "hi": "क्षमता फोकस दूरी का व्युत्क्रम है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "A convex lens has f = 20 cm. Its power is:",
+        "hi": "उत्तल लेंस की f = 20 cm है। क्षमता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "+0.05 D",
+            "hi": "+0.05 D"
+          },
+          "reason": {
+            "en": "This incorrectly uses centimetres directly.",
+            "hi": "इसमें cm सीधे रखे गए हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "-5 D",
+            "hi": "-5 D"
+          },
+          "reason": {
+            "en": "A convex lens in air has positive power.",
+            "hi": "वायु में उत्तल लेंस की क्षमता धनात्मक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "+20 D",
+            "hi": "+20 D"
+          },
+          "reason": {
+            "en": "Focal length is not the power.",
+            "hi": "फोकस दूरी क्षमता नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "+5 D",
+            "hi": "+5 D"
+          },
+          "reason": {
+            "en": "1/(+0.20 m) = +5 D.",
+            "hi": "1/(+0.20 m) = +5 D।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "For a real inverted image formed by a lens, m is:",
+        "hi": "लेंस से वास्तविक उलटे चित्र का m है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Negative",
+            "hi": "ऋणात्मक"
+          },
+          "reason": {
+            "en": "Image height is opposite in sign to object height.",
+            "hi": "चित्र ऊँचाई का चिह्न वस्तु के विपरीत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always +1",
+            "hi": "हमेशा +1"
+          },
+          "reason": {
+            "en": "Equal size need not be erect; inversion gives -1.",
+            "hi": "समान आकार के उलटे चित्र में -1 मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always zero",
+            "hi": "हमेशा शून्य"
+          },
+          "reason": {
+            "en": "A finite visible image has nonzero height.",
+            "hi": "सीमित दृश्य चित्र की ऊँचाई शून्य नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always positive",
+            "hi": "हमेशा धनात्मक"
+          },
+          "reason": {
+            "en": "Positive magnification denotes an erect image.",
+            "hi": "धनात्मक आवर्धन सीधा चित्र बताता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "An air-glass-air parallel slab usually produces:",
+        "hi": "वायु-काँच-वायु समांतर पट्टी सामान्यतः देती है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A reflected ray only",
+            "hi": "केवल परावर्तित किरण"
+          },
+          "reason": {
+            "en": "Some light is transmitted through the slab.",
+            "hi": "कुछ प्रकाश पट्टी से गुजरता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Parallel but laterally displaced emergence",
+            "hi": "समांतर लेकिन पार्श्व विस्थापित निर्गमन"
+          },
+          "reason": {
+            "en": "Two parallel boundaries restore the direction.",
+            "hi": "दो समांतर सीमाएँ दिशा पुनः समान कर देती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "No refraction at either face",
+            "hi": "कहीं अपवर्तन नहीं"
+          },
+          "reason": {
+            "en": "Oblique rays refract at both boundaries.",
+            "hi": "तिरछी किरण दोनों सीमाओं पर अपवर्तित होती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A ray curved throughout uniform glass",
+            "hi": "समरूप काँच में लगातार वक्र किरण"
+          },
+          "reason": {
+            "en": "In a uniform medium the ray is straight.",
+            "hi": "समरूप माध्यम में किरण सीधी है।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State both laws of reflection.",
+        "hi": "परावर्तन के दोनों नियम लिखें।"
+      },
+      "answer": {
+        "en": "The two angles measured from the normal are equal. Incident ray, normal and reflected ray lie in one plane.",
+        "hi": "अभिलंब से मापे आपतन और परावर्तन कोण बराबर हैं। आपतित किरण, अभिलंब तथा परावर्तित किरण एक तल में हैं।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Why is a convex mirror useful on a vehicle? Give two properties.",
+        "hi": "वाहन में उत्तल दर्पण क्यों उपयोगी है? 2 गुण लिखें।"
+      },
+      "answer": {
+        "en": "It gives an erect virtual image and a wide field of view; the image is diminished.",
+        "hi": "यह सीधा आभासी चित्र और विस्तृत दृश्य क्षेत्र देता है; चित्र छोटा होता है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Distinguish a real image and a virtual image.",
+        "hi": "वास्तविक और आभासी प्रतिबिंब में अंतर लिखें।"
+      },
+      "answer": {
+        "en": "Real rays converge and the image can be caught on a screen. For a virtual image only backward extensions meet and it cannot be caught directly on a screen.",
+        "hi": "वास्तविक में किरणें सचमुच मिलती हैं और चित्र पर्दे पर मिलता है। आभासी में केवल पीछे बढ़ाए भाग मिलते हैं और चित्र सीधे पर्दे पर नहीं मिलता।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Define absolute refractive index and give its unit.",
+        "hi": "निरपेक्ष अपवर्तनांक की परिभाषा और इकाई लिखें।"
+      },
+      "answer": {
+        "en": "n = c/v, the ratio of vacuum speed to medium speed for the light. It has no unit.",
+        "hi": "n = c/v, निर्वात की चाल और माध्यम की चाल का अनुपात है। इसकी इकाई नहीं है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Find lens power for f = -25 cm.",
+        "hi": "f = -25 cm के लिए लेंस क्षमता निकालें।"
+      },
+      "answer": {
+        "en": "f = -0.25 m; P = 1/f = -4 D. The lens is diverging.",
+        "hi": "f = -0.25 m; P = 1/f = -4 D। लेंस अपसारी है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Where is the image of an object 30 cm before a convex lens of f = 15 cm?",
+        "hi": "f = 15 cm उत्तल लेंस से 30 cm पहले वस्तु का चित्र कहाँ है?"
+      },
+      "answer": {
+        "en": "u = -30 cm; 1/v = 1/15 - 1/30 = 1/30; v = +30 cm. It is real and inverted on the opposite side.",
+        "hi": "u = -30 cm; 1/v = 1/15 - 1/30 = 1/30; v = +30 cm। दूसरी ओर वास्तविक और उलटा चित्र है।"
+      },
+      "marks": 2
+    }
+  ],
+  "conceptMap": "प्रकाश → परावर्तन → दर्पण → प्रतिबिंब और चिह्न; प्रकाश → अपवर्तन → लेंस → चित्र स्थान → आवर्धन → क्षमता।",
+  "conceptMapEn": "Light → reflection → mirrors → images and signs; light → refraction → lenses → image position → magnification → power.",
+  "editionBasis": {
+    "en": "NCERT Science Class 10, reprint 2026–27; UPMSP Science syllabus 2026–27. Original explanations; supplementary model relations are identified.",
+    "hi": "NCERT कक्षा 10 विज्ञान, पुनर्मुद्रण 2026–27; UPMSP विज्ञान पाठ्यक्रम 2026–27। व्याख्याएँ मौलिक हैं; पूरक मॉडल संबंध अलग बताए गए हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Science Class 10, Chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc109.pdf"
+    },
+    {
+      "title": "UPMSP Class 10 Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "ten-mirror",
+      "title": {
+        "en": "Concave mirror images",
+        "hi": "अवतल दर्पण के प्रतिबिंब"
+      },
+      "kind": "ten-light",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Object distance magnitude",
+            "hi": "वस्तु दूरी का परिमाण"
+          },
+          "min": 5,
+          "max": 60,
+          "step": 1,
+          "initial": 30,
+          "unit": "cm"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Relate object position to a concave mirror image.",
+        "hi": "अवतल दर्पण में वस्तु स्थिति को चित्र से जोड़ें।"
+      },
+      "observe": {
+        "en": "Move across 30 cm and 15 cm; watch size, side and orientation.",
+        "hi": "30 cm तथा 15 cm के दोनों ओर जाएँ; आकार, ओर और दिशा देखें।"
+      },
+      "modelNote": {
+        "en": "Small-aperture ideal mirror, f = -15 cm; rays are symbolic. At 15 cm the image is at infinity.",
+        "hi": "छोटे द्वारक का आदर्श दर्पण, f = -15 cm; किरणें सांकेतिक। 15 cm पर चित्र अनंत पर है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "The mirror equation changes image position; inside the focus rays only appear to meet behind the mirror.",
+          "hi": "दर्पण सूत्र चित्र स्थान बदलता है; फोकस के भीतर किरणें पीछे मिलती प्रतीत होती हैं।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "At 30 cm, what is the image like?",
+          "hi": "30 cm पर चित्र कैसा है?"
+        },
+        "options": [
+          {
+            "en": "Equal size and inverted",
+            "hi": "समान आकार और उलटा"
+          },
+          {
+            "en": "Always erect",
+            "hi": "हमेशा सीधा"
+          },
+          {
+            "en": "At infinity",
+            "hi": "अनंत पर"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The object is at C = 2f in magnitude.",
+          "hi": "वस्तु परिमाण में C = 2f पर है।"
+        }
+      },
+      "realLife": {
+        "en": "A shaving mirror enlarges a face held within the focus.",
+        "hi": "फोकस के भीतर चेहरे का चित्र बड़ा दिखाने वाला शेविंग दर्पण।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-mirror-0",
+          "label": {
+            "en": "Set the object to 30 cm",
+            "hi": "वस्तु को 30 cm पर रखें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 30
+          }
+        },
+        {
+          "id": "ten-mirror-1",
+          "label": {
+            "en": "Move inside 15 cm",
+            "hi": "15 cm के भीतर जाएँ"
+          },
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 15
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 15
+          },
+          "text": {
+            "en": "Inside focus: erect virtual enlarged image.",
+            "hi": "फोकस के भीतर: सीधा आभासी बड़ा चित्र।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 15
+          },
+          "text": {
+            "en": "At focus: reflected rays parallel; image at infinity.",
+            "hi": "फोकस पर: किरणें समांतर; चित्र अनंत पर।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 15
+          },
+          "text": {
+            "en": "Beyond focus: real inverted image.",
+            "hi": "फोकस से बाहर: वास्तविक उलटा चित्र।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-lens",
+      "title": {
+        "en": "Convex lens images",
+        "hi": "उत्तल लेंस के प्रतिबिंब"
+      },
+      "kind": "ten-light",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Object distance magnitude",
+            "hi": "वस्तु दूरी का परिमाण"
+          },
+          "min": 5,
+          "max": 60,
+          "step": 1,
+          "initial": 30,
+          "unit": "cm"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 5,
+      "goal": {
+        "en": "Explore a convex lens without changing its focal length.",
+        "hi": "फोकस दूरी बदले बिना उत्तल लेंस खोजें।"
+      },
+      "observe": {
+        "en": "Compare object positions at 30 cm, 15 cm and below 15 cm.",
+        "hi": "30 cm, 15 cm और 15 cm से कम स्थितियों की तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Thin lens in air, f = +15 cm; finite canvas cannot show infinity as a point.",
+        "hi": "वायु में पतला लेंस, f = +15 cm; सीमित कैनवास अनंत को बिंदु नहीं दिखाता।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "For the lens, 1/f = 1/v - 1/u; moving inside focus makes v negative.",
+          "hi": "लेंस में 1/f = 1/v - 1/u; फोकस के भीतर v ऋणात्मक होता है।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "For an object inside the focus, the image is:",
+          "hi": "फोकस के भीतर वस्तु का चित्र है:"
+        },
+        "options": [
+          {
+            "en": "Real and small",
+            "hi": "वास्तविक छोटा"
+          },
+          {
+            "en": "Virtual and enlarged",
+            "hi": "आभासी बड़ा"
+          },
+          {
+            "en": "Always at infinity",
+            "hi": "हमेशा अनंत पर"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Emergent rays diverge; backward extensions meet on the object side.",
+          "hi": "निर्गत किरणें अपसारित हैं; पीछे बढ़ाए भाग वस्तु वाली ओर मिलते हैं।"
+        }
+      },
+      "realLife": {
+        "en": "A magnifying glass is a convex lens used within its focus.",
+        "hi": "आवर्धक काँच फोकस के भीतर उपयोग किया गया उत्तल लेंस है।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-lens-0",
+          "label": {
+            "en": "Set object distance to 30 cm",
+            "hi": "वस्तु दूरी 30 cm करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 30
+          }
+        },
+        {
+          "id": "ten-lens-1",
+          "label": {
+            "en": "Find the focal position at 15 cm",
+            "hi": "15 cm पर फोकस स्थिति खोजें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 15
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 15
+          },
+          "text": {
+            "en": "Virtual erect image on the object side.",
+            "hi": "वस्तु वाली ओर आभासी सीधा चित्र।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 15
+          },
+          "text": {
+            "en": "Image at infinity: emerging rays are parallel.",
+            "hi": "चित्र अनंत पर: निर्गत किरणें समांतर हैं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 15
+          },
+          "text": {
+            "en": "Real inverted image on the far side.",
+            "hi": "दूसरी ओर वास्तविक उलटा चित्र।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-refraction",
+      "title": {
+        "en": "Refraction at a boundary",
+        "hi": "सीमा पर अपवर्तन"
+      },
+      "kind": "ten-light",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Angle of incidence",
+            "hi": "आपतन कोण"
+          },
+          "min": 0,
+          "max": 75,
+          "step": 1,
+          "initial": 30,
+          "unit": "°"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 3,
+      "goal": {
+        "en": "Measure bending from air to glass.",
+        "hi": "वायु से काँच में मुड़ना मापें।"
+      },
+      "observe": {
+        "en": "Increase incidence and compare i with the smaller r, both from the normal.",
+        "hi": "आपतन बढ़ाएँ; अभिलंब से मापे i और छोटे r की तुलना करें।"
+      },
+      "modelNote": {
+        "en": "One flat boundary, n_air = 1 and n_glass = 1.5; colour dependence and reflected intensity omitted.",
+        "hi": "एक समतल सीमा; n_air = 1, n_glass = 1.5; रंग निर्भरता और परावर्तित तीव्रता उपेक्षित।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "sin r = sin i/1.5; a higher refractive index gives a smaller angle in glass.",
+          "hi": "sin r = sin i/1.5; अधिक अपवर्तनांक पर काँच में कोण छोटा है।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "At i = 0°, what is r?",
+          "hi": "i = 0° पर r कितना है?"
+        },
+        "options": [
+          {
+            "en": "90°",
+            "hi": "90°"
+          },
+          {
+            "en": "30°",
+            "hi": "30°"
+          },
+          {
+            "en": "0°",
+            "hi": "0°"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A normally incident ray changes speed but not direction.",
+          "hi": "लंबवत किरण की चाल बदलती है, दिशा नहीं।"
+        }
+      },
+      "realLife": {
+        "en": "A pencil appears displaced at the water-air boundary.",
+        "hi": "जल-वायु सीमा पर पेंसिल विस्थापित प्रतीत होती है।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-refraction-0",
+          "label": {
+            "en": "Try normal incidence at 0°",
+            "hi": "0° पर लंबवत आपतन देखें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-refraction-1",
+          "label": {
+            "en": "Set incidence to 60°",
+            "hi": "आपतन 60° करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 60
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          },
+          "text": {
+            "en": "No directional bending at normal incidence.",
+            "hi": "लंबवत आपतन पर दिशा नहीं मुड़ती।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0
+          },
+          "text": {
+            "en": "The glass ray bends towards the normal: r < i.",
+            "hi": "काँच में किरण अभिलंब की ओर है: r < i।"
+          }
+        }
+      ]
+    }
+  ]
+}

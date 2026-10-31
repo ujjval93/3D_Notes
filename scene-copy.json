@@ -1,0 +1,5370 @@
+{
+  "states": {
+    "goal": {
+      "en": "Connect particle motion and arrangement to the three states of matter.",
+      "hi": "कणों की गति और व्यवस्था को पदार्थ की तीन अवस्थाओं से जोड़ें।"
+    },
+    "observe": {
+      "en": "Compare the fixed neighbours in a solid, changing neighbours in a liquid and wider gaps in a gas. Raise motion energy and watch the particles move faster.",
+      "hi": "ठोस में लगभग निश्चित पड़ोसी, द्रव में बदलते पड़ोसी और गैस में बड़े रिक्त स्थान देखें। गति ऊर्जा बढ़ाकर कणों की तेज गति देखें।"
+    },
+    "modelNote": {
+      "en": "Particle sizes, colours and gaps are enlarged symbols. The chosen state stays fixed; the energy control does not simulate a real melting or boiling point.",
+      "hi": "कणों के आकार, रंग और दूरी बढ़ाकर दिखाए गए हैं। चुनी अवस्था स्थिर है; ऊर्जा नियंत्रण वास्तविक गलनांक या क्वथनांक नहीं दर्शाता।"
+    },
+    "prediction": {
+      "question": {
+        "en": "At the same chosen state, what should happen when particle motion energy increases?",
+        "hi": "चुनी हुई अवस्था समान रहे तो कणों की गति ऊर्जा बढ़ाने पर क्या होगा?"
+      },
+      "options": [
+        {
+          "en": "Particles move faster.",
+          "hi": "कण अधिक तेज चलेंगे।"
+        },
+        {
+          "en": "The particles become larger atoms.",
+          "hi": "कण बड़े परमाणु बन जाएँगे।"
+        },
+        {
+          "en": "All particle motion stops.",
+          "hi": "सभी कण रुक जाएँगे।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "More kinetic energy means faster particle motion on average; it does not make an atom larger.",
+        "hi": "अधिक गतिज ऊर्जा (Kinetic energy) से कणों की औसत गति बढ़ती है; परमाणु स्वयं बड़ा नहीं होता।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Why can a gas usually be compressed much more than a liquid?",
+        "hi": "गैस को द्रव से बहुत अधिक क्यों दबा सकते हैं?"
+      },
+      "options": [
+        {
+          "en": "Gas particles have no mass.",
+          "hi": "गैस के कणों का द्रव्यमान नहीं होता।"
+        },
+        {
+          "en": "There are much larger gaps between gas particles.",
+          "hi": "गैस के कणों के बीच अधिक रिक्त स्थान होता है।"
+        },
+        {
+          "en": "Gas particles disappear under pressure.",
+          "hi": "दाब से गैस के कण गायब होते हैं।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Compression mainly reduces the empty space between particles.",
+        "hi": "संपीडन (Compression) मुख्यतः कणों के बीच का रिक्त स्थान घटाता है।"
+      }
+    },
+    "realLife": {
+      "en": "Air in a sealed syringe compresses much more easily than water.",
+      "hi": "बन्द सिरिंज में वायु, जल की तुलना में आसानी से दबती है।"
+    },
+    "missions": [
+      {
+        "id": "states-1",
+        "label": {
+          "en": "Set motion energy to 0.5× and watch slower motion.",
+          "hi": "गति ऊर्जा 0.5× रखें और धीमी कण-गति देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0.5,
+          "control": 0
+        }
+      },
+      {
+        "id": "states-2",
+        "label": {
+          "en": "Set motion energy to 2× and compare particle motion.",
+          "hi": "गति ऊर्जा 2× रखें और कणों की गति की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 1
+        },
+        "text": {
+          "en": "At this energy setting, particle motion is no faster than at the 1× reference; the chosen state stays fixed.",
+          "hi": "इस ऊर्जा सेटिंग पर कण-गति 1× सन्दर्भ से अधिक तेज नहीं है; चुनी अवस्था स्थिर रहती है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 1
+        },
+        "text": {
+          "en": "More motion energy produces faster average particle motion; it does not make the particles larger.",
+          "hi": "अधिक गति ऊर्जा से कणों की औसत गति बढ़ती है; कणों का आकार नहीं बढ़ता।"
+        }
+      }
+    ]
+  },
+  "heating": {
+    "goal": {
+      "en": "Read the rising sections and flat sections of a heating curve.",
+      "hi": "तापन वक्र (Heating curve) के चढ़ते और समतल भाग समझें।"
+    },
+    "observe": {
+      "en": "Follow 10 g of ice from −20°C toward water and steam. Flat sections show energy entering while the temperature remains constant during a phase change.",
+      "hi": "−20°C की 10 g बर्फ से जल और भाप बनने का क्रम देखें। समतल भाग में अवस्था बदलने के लिए ऊर्जा मिलती है, पर ताप स्थिर रहता है।"
+    },
+    "modelNote": {
+      "en": "Ideal pure water at 1 atmosphere is assumed, with no heat loss. Melting occupies about 0.42–3.76 kJ and boiling begins near 7.94 kJ; real measurements need not be perfectly flat.",
+      "hi": "1 वायुमण्डलीय दाब पर शुद्ध जल और ऊष्मा-हानि शून्य मानी गई है। लगभग 0.42–3.76 kJ में गलन और 7.94 kJ से क्वथन होता है; वास्तविक मापन पूर्ण समतल नहीं भी हो सकते हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "While ice and water coexist in the melting plateau, what does added heat mainly do?",
+        "hi": "गलन के समतल भाग में बर्फ और जल साथ हों तो अतिरिक्त ऊष्मा मुख्यतः क्या करेगी?"
+      },
+      "options": [
+        {
+          "en": "Immediately raises temperature above 0°C.",
+          "hi": "ताप तुरन्त 0°C से ऊपर करेगी।"
+        },
+        {
+          "en": "Changes ice into water without raising temperature.",
+          "hi": "ताप बढ़ाए बिना बर्फ को जल में बदलेगी।"
+        },
+        {
+          "en": "Creates new oxygen atoms.",
+          "hi": "नए ऑक्सीजन परमाणु बनाएगी।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Latent heat changes the particle arrangement and the fraction melted; temperature stays at the melting point while both phases coexist at constant pressure.",
+        "hi": "गुप्त ऊष्मा (Latent heat) से कणों की व्यवस्था और पिघली मात्रा बदलती है। निश्चित दाब पर दोनों अवस्थाएँ साथ रहने तक ताप गलनांक पर रहता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which statement is correct during a phase-change plateau?",
+        "hi": "अवस्था-परिवर्तन के समतल भाग में कौन-सा कथन सही है?"
+      },
+      "options": [
+        {
+          "en": "Energy is still being absorbed.",
+          "hi": "ऊर्जा अभी भी अवशोषित होती है।"
+        },
+        {
+          "en": "No heat is supplied.",
+          "hi": "कोई ऊष्मा नहीं दी जाती।"
+        },
+        {
+          "en": "The thermometer must be broken.",
+          "hi": "तापमापी अवश्य खराब है।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "A constant temperature does not imply zero energy transfer.",
+        "hi": "स्थिर तापमान का अर्थ ऊर्जा का स्थानान्तरण शून्य होना नहीं है।"
+      }
+    },
+    "realLife": {
+      "en": "Ice in a drink absorbs extra energy as it melts.",
+      "hi": "पेय में बर्फ पिघलने के लिए अतिरिक्त ऊर्जा लेती है।"
+    },
+    "missions": [
+      {
+        "id": "heating-1",
+        "label": {
+          "en": "Supply 5 kJ and read the temperature of the warming water.",
+          "hi": "5 kJ ऊष्मा दें और गर्म होते जल का तापमान पढ़ें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 5,
+          "control": 0
+        }
+      },
+      {
+        "id": "heating-2",
+        "label": {
+          "en": "Supply 8 kJ and find the 100°C boiling plateau.",
+          "hi": "8 kJ ऊष्मा देकर 100°C का क्वथन समतल देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 8,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lt",
+          "value": 0.42
+        },
+        "text": {
+          "en": "The supplied heat is warming the ice from −20°C toward its melting point.",
+          "hi": "दी गई ऊष्मा (Heat) बर्फ का ताप −20°C से उसके गलनांक की ओर बढ़ा रही है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "lt",
+          "value": 3.76
+        },
+        "text": {
+          "en": "Ice is melting at 0°C: added heat changes the state rather than raising the temperature.",
+          "hi": "बर्फ 0°C पर पिघल रही है: अतिरिक्त ऊष्मा ताप बढ़ाने के बजाय अवस्था बदलती है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "lt",
+          "value": 7.94
+        },
+        "text": {
+          "en": "The ice has melted; added heat now raises the temperature of liquid water.",
+          "hi": "बर्फ पिघल चुकी है; अब अतिरिक्त ऊष्मा द्रव जल का तापमान बढ़ाती है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gte",
+          "value": 7.94
+        },
+        "text": {
+          "en": "At the model’s normal-pressure boiling point, water stays at 100°C while heat turns it into vapour.",
+          "hi": "मॉडल के सामान्य-दाब क्वथनांक पर जल 100°C पर रहता है और ऊष्मा उसे वाष्प में बदलती है।"
+        }
+      }
+    ]
+  },
+  "evaporation": {
+    "goal": {
+      "en": "Explain why increasing surface area can speed evaporation and cooling.",
+      "hi": "समझें कि सतह क्षेत्रफल बढ़ाने से वाष्पीकरण और शीतलन कैसे बढ़ सकते हैं।"
+    },
+    "observe": {
+      "en": "Watch particles escape from the liquid surface. Compare the escape rate at a small and a large exposed area while the other model conditions stay the same.",
+      "hi": "द्रव की सतह से निकलते कण देखें। अन्य परिस्थितियाँ समान रखकर कम और अधिक खुली सतह पर निकलने की दर की तुलना करें।"
+    },
+    "modelNote": {
+      "en": "The escape count and cooling are qualitative, not a measured drying time. Humidity, wind, temperature and energy supplied by the surroundings also matter.",
+      "hi": "कणों का निकलना और ठंडक गुणात्मक संकेत हैं, मापा हुआ सूखने का समय नहीं। आर्द्रता, हवा, ताप और आसपास से मिलने वाली ऊर्जा भी प्रभाव डालते हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "Keeping other conditions similar, what happens when the exposed surface area increases?",
+        "hi": "अन्य परिस्थितियाँ समान हों तो खुला सतह क्षेत्रफल बढ़ाने पर क्या होगा?"
+      },
+      "options": [
+        {
+          "en": "Evaporation must stop.",
+          "hi": "वाष्पीकरण रुक जाएगा।"
+        },
+        {
+          "en": "Each molecule changes into a different substance.",
+          "hi": "हर अणु नया पदार्थ बन जाएगा।"
+        },
+        {
+          "en": "More particles can escape per unit time.",
+          "hi": "प्रति समय अधिक कण निकल सकते हैं।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "A larger surface exposes more particles that can escape. Evaporation can take energy from the liquid and nearby surfaces.",
+        "hi": "बड़ी सतह अधिक कणों को बाहर निकलने का अवसर देती है। वाष्पीकरण (Evaporation) द्रव और आसपास की सतह से ऊर्जा ले सकता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Why does evaporating sweat help cool skin?",
+        "hi": "पसीने का वाष्पीकरण त्वचा को ठंडा क्यों करता है?"
+      },
+      "options": [
+        {
+          "en": "It absorbs energy from the skin.",
+          "hi": "वह त्वचा से ऊर्जा लेता है।"
+        },
+        {
+          "en": "It adds latent heat to the skin.",
+          "hi": "वह त्वचा को गुप्त ऊष्मा देता है।"
+        },
+        {
+          "en": "Sweat is always at 0°C.",
+          "hi": "पसीना हमेशा 0°C पर होता है।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Escaping water molecules need energy, some of which is supplied by the skin.",
+        "hi": "निकलते जल-अणुओं को ऊर्जा चाहिए, जिसका कुछ भाग त्वचा देती है।"
+      }
+    },
+    "realLife": {
+      "en": "Spreading wet clothes out usually helps them dry faster.",
+      "hi": "गीले कपड़े फैलाने से वे सामान्यतः जल्दी सूखते हैं।"
+    },
+    "missions": [
+      {
+        "id": "evaporation-1",
+        "label": {
+          "en": "Double the surface-area factor to 2×.",
+          "hi": "सतह क्षेत्रफल गुणक 2× करके क्षेत्रफल दोगुना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      },
+      {
+        "id": "evaporation-2",
+        "label": {
+          "en": "Set the surface-area factor to 5× and watch more escaping dots.",
+          "hi": "सतह क्षेत्रफल गुणक 5× रखें और अधिक कण निकलते देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 5,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 2
+        },
+        "text": {
+          "en": "A smaller exposed area gives fewer surface particles an opportunity to escape in this model.",
+          "hi": "कम खुली सतह पर इस मॉडल में कम कणों को निकलने का अवसर मिलता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 2
+        },
+        "text": {
+          "en": "A larger exposed surface increases evaporation when temperature, humidity and airflow are kept comparable.",
+          "hi": "तापमान, आर्द्रता और वायु-प्रवाह समान रखने पर अधिक खुली सतह वाष्पीकरण (Evaporation) बढ़ाती है।"
+        }
+      }
+    ]
+  },
+  "diffusion": {
+    "goal": {
+      "en": "Relate higher temperature to faster particle mixing.",
+      "hi": "अधिक ताप को कणों के तेज मिश्रण से जोड़ें।"
+    },
+    "observe": {
+      "en": "The coloured particles begin in separate regions and mix as they move. Compare mixing at two temperatures without adding stirring or bulk airflow.",
+      "hi": "अलग क्षेत्रों के रंगीन कण गति करते हुए मिलते हैं। बिना हिलाए या सामूहिक वायु-प्रवाह के दो तापों पर मिश्रण की तुलना करें।"
+    },
+    "modelNote": {
+      "en": "This is a qualitative mixing model; the displayed particles are vastly enlarged. It does not calculate a measured diffusion coefficient or the exact time for a smell to spread.",
+      "hi": "यह गुणात्मक मिश्रण प्रतिरूप है और कण बहुत बड़े दिखाए गए हैं। यह मापा हुआ विसरण गुणांक या गन्ध फैलने का सही समय नहीं निकालता।"
+    },
+    "prediction": {
+      "question": {
+        "en": "In this comparison, increasing temperature should generally make mixing…",
+        "hi": "इस तुलना में ताप बढ़ाने से मिश्रण सामान्यतः कैसा होगा?"
+      },
+      "options": [
+        {
+          "en": "Slower because particles stop.",
+          "hi": "धीमा, क्योंकि कण रुकते हैं।"
+        },
+        {
+          "en": "Faster because average particle motion increases.",
+          "hi": "तेज, क्योंकि औसत कण-गति बढ़ती है।"
+        },
+        {
+          "en": "Impossible without a spoon.",
+          "hi": "चम्मच के बिना असम्भव।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Higher temperature generally increases average kinetic energy. Random motion then promotes faster intermixing under comparable conditions.",
+        "hi": "अधिक ताप सामान्यतः औसत गतिज ऊर्जा बढ़ाता है। समान अन्य परिस्थितियों में अनियमित गति से विसरण (Diffusion) तेज हो सकता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Diffusion occurs because particles…",
+        "hi": "विसरण होता है क्योंकि कण…"
+      },
+      "options": [
+        {
+          "en": "Only move when stirred.",
+          "hi": "केवल हिलाने पर चलते हैं।"
+        },
+        {
+          "en": "Have no space around them.",
+          "hi": "उनके आसपास कोई जगह नहीं होती।"
+        },
+        {
+          "en": "Move randomly and continuously.",
+          "hi": "लगातार अनियमित गति करते हैं।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Random particle motion causes spontaneous intermixing; stirring is a different additional process.",
+        "hi": "अनियमित कण-गति से स्वतः मिश्रण होता है; हिलाना एक अतिरिक्त अलग प्रक्रिया है।"
+      }
+    },
+    "realLife": {
+      "en": "A drop of colour slowly spreads through still water.",
+      "hi": "स्थिर जल में रंग की बूँद धीरे-धीरे फैलती है।"
+    },
+    "missions": [
+      {
+        "id": "diffusion-1",
+        "label": {
+          "en": "Cool the model to 280 K and compare the mixing.",
+          "hi": "मॉडल का तापमान 280 K रखें और मिश्रण की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 280,
+          "control": 0
+        }
+      },
+      {
+        "id": "diffusion-2",
+        "label": {
+          "en": "Warm the model to 360 K and compare particle speed.",
+          "hi": "मॉडल का तापमान 360 K रखें और कणों की चाल की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 360,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 300
+        },
+        "text": {
+          "en": "At 300 K or below, the model’s particle speed is at or below its 300 K reference.",
+          "hi": "300 K या उससे कम पर मॉडल की कण-चाल 300 K सन्दर्भ के बराबर या कम है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 300
+        },
+        "text": {
+          "en": "Higher temperature increases average particle kinetic energy, so diffusion is usually faster.",
+          "hi": "अधिक तापमान से औसत कण-गतिज ऊर्जा बढ़ती है, इसलिए विसरण (Diffusion) सामान्यतः तेज होता है।"
+        }
+      }
+    ]
+  },
+  "solution": {
+    "goal": {
+      "en": "Calculate mass percentage using solute and total solution mass.",
+      "hi": "विलेय और कुल विलयन द्रव्यमान से द्रव्यमान प्रतिशत निकालें।"
+    },
+    "observe": {
+      "en": "Add solute while keeping the solvent at 90 g. The solute particles remain distributed, while the readout uses solute mass divided by solute plus solvent mass.",
+      "hi": "विलायक 90 g स्थिर रखकर विलेय बढ़ाएँ। कण वितरित रहते हैं; गणना में विलेय द्रव्यमान को विलेय और विलायक के कुल द्रव्यमान से भाग देते हैं।"
+    },
+    "modelNote": {
+      "en": "All added solute is assumed to dissolve at the chosen temperature. Particle icons do not represent individual grams; the model does not include a solubility limit.",
+      "hi": "चुने ताप पर पूरा विलेय घुलना माना गया है। कण-चिह्न एक-एक ग्राम नहीं दर्शाते; मॉडल में घुलनशीलता सीमा शामिल नहीं है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "With 90 g of solvent fixed, adding more dissolved solute makes the mass percentage…",
+        "hi": "विलायक 90 g स्थिर रखकर अधिक विलेय घोलने पर द्रव्यमान प्रतिशत…"
+      },
+      "options": [
+        {
+          "en": "Increase.",
+          "hi": "बढ़ेगा।"
+        },
+        {
+          "en": "Remain exactly the same.",
+          "hi": "बिल्कुल समान रहेगा।"
+        },
+        {
+          "en": "Become negative.",
+          "hi": "ऋणात्मक होगा।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "The fraction m_solute / (m_solute + 90 g) increases as dissolved solute is added.",
+        "hi": "विलेय बढ़ने पर m_विलेय / (m_विलेय + 90 g) का मान बढ़ता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "What is the mass percentage for 10 g solute and 90 g solvent?",
+        "hi": "10 g विलेय और 90 g विलायक में द्रव्यमान प्रतिशत क्या है?"
+      },
+      "options": [
+        {
+          "en": "9%",
+          "hi": "9%"
+        },
+        {
+          "en": "10%",
+          "hi": "10%"
+        },
+        {
+          "en": "90%",
+          "hi": "90%"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Total solution mass is 100 g; 10/100 × 100 = 10%.",
+        "hi": "कुल विलयन 100 g है; 10/100 × 100 = 10%।"
+      }
+    },
+    "realLife": {
+      "en": "A measured sugar solution is more concentrated when more sugar dissolves in the same water mass.",
+      "hi": "समान जल-द्रव्यमान में अधिक चीनी घुलने से विलयन अधिक सान्द्र होता है।"
+    },
+    "missions": [
+      {
+        "id": "solution-1",
+        "label": {
+          "en": "Dissolve 15 g of solute and read the total solution mass.",
+          "hi": "15 g विलेय घोलें और विलयन का कुल द्रव्यमान पढ़ें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 15,
+          "control": 0
+        }
+      },
+      {
+        "id": "solution-2",
+        "label": {
+          "en": "Set solute mass to 30 g and find the 25% mass concentration.",
+          "hi": "विलेय द्रव्यमान 30 g रखें और 25% द्रव्यमान सान्द्रता देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 30,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 15
+        },
+        "text": {
+          "en": "The solvent remains 90 g; calculate mass percentage using the total solution mass, not solvent mass alone.",
+          "hi": "विलायक 90 g ही है; द्रव्यमान प्रतिशत में हर के रूप में कुल विलयन द्रव्यमान लें, केवल विलायक नहीं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 15
+        },
+        "text": {
+          "en": "More dissolved solute raises the mass percentage here, while the 90 g solvent mass stays fixed.",
+          "hi": "यहाँ अधिक घुला विलेय द्रव्यमान प्रतिशत बढ़ाता है, जबकि विलायक द्रव्यमान 90 g स्थिर है।"
+        }
+      }
+    ]
+  },
+  "tyndall": {
+    "goal": {
+      "en": "Distinguish a true solution from a colloid using a visible light path.",
+      "hi": "प्रकाश-पथ से वास्तविक विलयन और कोलॉइड में अन्तर समझें।"
+    },
+    "observe": {
+      "en": "Switch from true-solution particles to colloidal particles. Look sideways at the beam: scattering makes its path visible in the colloid.",
+      "hi": "वास्तविक विलयन से कोलॉइडी कणों पर जाएँ। किरण को बगल से देखें: प्रकीर्णन के कारण कोलॉइड में प्रकाश-पथ दिखाई देता है।"
+    },
+    "modelNote": {
+      "en": "The beam and particle sizes are exaggerated to show scattering. Actual visibility depends on particle size, concentration, lighting and viewing direction.",
+      "hi": "प्रकीर्णन समझाने के लिए किरण और कण बढ़ाकर दिखाए गए हैं। वास्तविक दृश्यता आकार, सान्द्रता, प्रकाश और देखने की दिशा पर निर्भर है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "When a true solution is replaced by a suitable colloid, the beam path viewed from the side should…",
+        "hi": "वास्तविक विलयन के स्थान पर उपयुक्त कोलॉइड लेने पर बगल से देखा प्रकाश-पथ…"
+      },
+      "options": [
+        {
+          "en": "Be less visible because colloids never scatter.",
+          "hi": "कम दिखेगा, क्योंकि कोलॉइड कभी प्रकीर्णन नहीं करते।"
+        },
+        {
+          "en": "Prove that a new element formed.",
+          "hi": "नए तत्व का बनना सिद्ध करेगा।"
+        },
+        {
+          "en": "Become more visible through scattering.",
+          "hi": "प्रकीर्णन से अधिक स्पष्ट होगा।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Colloidal particles scatter visible light, producing the Tyndall effect; a true solution does not usually show the beam path.",
+        "hi": "कोलॉइडी कण दृश्य प्रकाश का प्रकीर्णन करते हैं; यह टिण्डल प्रभाव (Tyndall effect) है। वास्तविक विलयन में सामान्यतः किरण का पथ नहीं दिखता।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "The visible path of a light beam in a colloid is called…",
+        "hi": "कोलॉइड में प्रकाश किरण के दिखाई देने वाले पथ का प्रभाव कहलाता है…"
+      },
+      "options": [
+        {
+          "en": "Tyndall effect.",
+          "hi": "टिण्डल प्रभाव।"
+        },
+        {
+          "en": "Osmosis.",
+          "hi": "परासरण।"
+        },
+        {
+          "en": "Sublimation.",
+          "hi": "ऊर्ध्वपातन।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "The Tyndall effect is scattering by colloidal particles.",
+        "hi": "टिण्डल प्रभाव कोलॉइडी कणों द्वारा प्रकाश का प्रकीर्णन है।"
+      }
+    },
+    "realLife": {
+      "en": "Light beams can become visible in fog because droplets scatter light.",
+      "hi": "कोहरे की बूँदें प्रकाश का प्रकीर्णन करती हैं, इसलिए किरणें दिखाई दे सकती हैं।"
+    },
+    "missions": [
+      {
+        "id": "tyndall-1",
+        "label": {
+          "en": "Choose type 1, the colloid, and look for the beam path.",
+          "hi": "प्रकार 1, कोलॉइड (Colloid), चुनकर किरण-पथ खोजें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "tyndall-2",
+        "label": {
+          "en": "Return to type 0, a true solution, and compare scattering.",
+          "hi": "प्रकार 0, वास्तविक विलयन (True solution), पर लौटकर प्रकीर्णन की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "A true solution does not show a visible Tyndall beam path under these classroom conditions.",
+          "hi": "इन विद्यालयी परिस्थितियों में वास्तविक विलयन में टिण्डल प्रभाव (Tyndall effect) का किरण-पथ नहीं दिखता।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "Colloidal particles scatter light, making the beam path visible from the side.",
+          "hi": "कोलॉइडी कण प्रकाश का प्रकीर्णन (Scattering) करते हैं, इसलिए बगल से किरण-पथ दिखता है।"
+        }
+      }
+    ]
+  },
+  "suspension": {
+    "goal": {
+      "en": "Observe why suspended particles may settle on standing.",
+      "hi": "देखें कि निलम्बित कण स्थिर रखने पर नीचे क्यों बैठ सकते हैं।"
+    },
+    "observe": {
+      "en": "Follow the particles downward as time passes. Compare small and large particles of the same material in the same liquid.",
+      "hi": "समय के साथ कणों का नीचे जाना देखें। समान द्रव में समान पदार्थ के छोटे और बड़े कणों की तुलना करें।"
+    },
+    "modelNote": {
+      "en": "Settling is illustrative. Real speed depends on density, viscosity, shape and flow; the simple comparison assumes identical material and liquid and ignores aggregation.",
+      "hi": "अवसादन सांकेतिक है। वास्तविक गति घनत्व, श्यानता, आकार और प्रवाह पर निर्भर है; तुलना में पदार्थ और द्रव समान तथा गुच्छे बनना उपेक्षित है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "For this same-material comparison, increasing particle radius generally makes settling…",
+        "hi": "समान पदार्थ की इस तुलना में कण की त्रिज्या बढ़ाने से अवसादन सामान्यतः…"
+      },
+      "options": [
+        {
+          "en": "Stop completely.",
+          "hi": "पूरी तरह रुकता है।"
+        },
+        {
+          "en": "Faster.",
+          "hi": "तेज होता है।"
+        },
+        {
+          "en": "Turn into chemical decomposition.",
+          "hi": "रासायनिक अपघटन बन जाता है।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Larger dense particles generally settle faster under the simplified same-liquid conditions. A suspension is not as stable as a true solution.",
+        "hi": "सरल समान-द्रव परिस्थितियों में बड़े घने कण सामान्यतः जल्दी बैठते हैं। निलम्बन (Suspension) वास्तविक विलयन जैसा स्थायी नहीं होता।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which mixture commonly settles on standing?",
+        "hi": "कौन-सा मिश्रण स्थिर रखने पर प्रायः नीचे बैठता है?"
+      },
+      "options": [
+        {
+          "en": "Salt completely dissolved in water.",
+          "hi": "जल में पूरी तरह घुला नमक।"
+        },
+        {
+          "en": "A homogeneous sugar solution.",
+          "hi": "समांगी चीनी विलयन।"
+        },
+        {
+          "en": "Sand suspended in water.",
+          "hi": "जल में निलम्बित रेत।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Insoluble sand particles can separate by settling; dissolved solute does not settle in the same way.",
+        "hi": "अघुलनशील रेत अवसादन से अलग हो सकती है; घुला विलेय इस तरह नहीं बैठता।"
+      }
+    },
+    "realLife": {
+      "en": "Muddy water often becomes clearer above the sediment after standing.",
+      "hi": "मिट्टी वाला जल रखने पर तलछट के ऊपर का जल कुछ साफ हो सकता है।"
+    },
+    "missions": [
+      {
+        "id": "suspension-1",
+        "label": {
+          "en": "Double the radius factor to 2× and check the 4× ideal speed factor.",
+          "hi": "त्रिज्या गुणक 2× करें और 4× आदर्श गति गुणक देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      },
+      {
+        "id": "suspension-2",
+        "label": {
+          "en": "Set radius factor to 3× and compare the settling.",
+          "hi": "त्रिज्या गुणक 3× रखकर अवसादन की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 3,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 1.8
+        },
+        "text": {
+          "en": "Smaller suspended particles settle more slowly in the model’s ideal low-speed settling approximation.",
+          "hi": "मॉडल के आदर्श कम-गति सन्निकटन में छोटे निलम्बित कण धीरे बैठते हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 1.8
+        },
+        "text": {
+          "en": "In this ideal approximation, settling speed scales with radius squared; real settling also depends on fluid and particle properties.",
+          "hi": "इस आदर्श सन्निकटन में अवसादन चाल त्रिज्या के वर्ग के अनुसार बढ़ती है; वास्तविक चाल द्रव और कण के गुणों पर भी निर्भर है।"
+        }
+      }
+    ]
+  },
+  "separation": {
+    "goal": {
+      "en": "Choose a physical method that separates substances by their properties.",
+      "hi": "पदार्थों के गुणों के अनुसार भौतिक पृथक्करण विधि चुनें।"
+    },
+    "observe": {
+      "en": "Advance the separation and track which component is retained, transferred or recovered. Match the selected method to solubility, particle size or volatility.",
+      "hi": "पृथक्करण बढ़ाकर देखें कि कौन-सा घटक रुकता, आगे जाता या प्राप्त होता है। चुनी विधि को घुलनशीलता, कण आकार या वाष्पशीलता से जोड़ें।"
+    },
+    "modelNote": {
+      "en": "The progress slider controls a teaching sequence, not the actual time or efficiency of equipment. Heating and laboratory chemicals require teacher supervision.",
+      "hi": "प्रगति नियंत्रण शिक्षण का क्रम दिखाता है, उपकरण का वास्तविक समय या दक्षता नहीं। गरम करना और प्रयोगशाला के रसायन शिक्षक की देखरेख में प्रयोग करें।"
+    },
+    "prediction": {
+      "question": {
+        "en": "During filtration of sand and water, where should the sand go?",
+        "hi": "रेत और जल के निस्यंदन में रेत कहाँ जाएगी?"
+      },
+      "options": [
+        {
+          "en": "Remain as residue on the filter.",
+          "hi": "फिल्टर पर अवशेष के रूप में रुकेगी।"
+        },
+        {
+          "en": "Become dissolved salt.",
+          "hi": "घुला नमक बन जाएगी।"
+        },
+        {
+          "en": "Pass through exactly like dissolved sugar.",
+          "hi": "घुली चीनी की तरह पूरी निकल जाएगी।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "The filter retains sufficiently large insoluble particles, while water passes through. Dissolved salt needs another separation method.",
+        "hi": "फिल्टर पर्याप्त बड़े अघुलनशील कण रोकता है और जल निकलता है। घुले नमक के लिए दूसरी विधि चाहिए।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which method can recover dissolved salt from salt water?",
+        "hi": "नमक-जल से घुला नमक किस विधि से मिल सकता है?"
+      },
+      "options": [
+        {
+          "en": "Ordinary filtration alone.",
+          "hi": "केवल साधारण छानना।"
+        },
+        {
+          "en": "Evaporation or suitable crystallisation.",
+          "hi": "वाष्पीकरण या उपयुक्त क्रिस्टलीकरण।"
+        },
+        {
+          "en": "Removing the colour with a magnet.",
+          "hi": "चुम्बक से रंग हटाना।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Water is removed by evaporation, or crystals are formed under suitable conditions.",
+        "hi": "वाष्पीकरण से जल हटाते हैं या उपयुक्त दशाओं में क्रिस्टल बनाते हैं।"
+      }
+    },
+    "realLife": {
+      "en": "A kitchen strainer separates tea leaves from liquid tea.",
+      "hi": "रसोई की छलनी चाय की पत्तियाँ द्रव चाय से अलग करती है।"
+    },
+    "missions": [
+      {
+        "id": "separation-1",
+        "label": {
+          "en": "Move the separation process to 50% and inspect both containers.",
+          "hi": "पृथक्करण प्रक्रिया 50% पर ले जाकर दोनों पात्र देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 50,
+          "control": 0
+        }
+      },
+      {
+        "id": "separation-2",
+        "label": {
+          "en": "Complete the selected separation process at 100%.",
+          "hi": "चुनी हुई पृथक्करण प्रक्रिया 100% तक पूरी करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 100,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lt",
+          "value": 100
+        },
+        "text": {
+          "en": "Separation is in progress: track which component moves under the selected method.",
+          "hi": "पृथक्करण (Separation) चल रहा है: चुनी विधि में कौन-सा घटक जाता है, देखें।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 100
+        },
+        "text": {
+          "en": "The symbolic separation is complete; changing the method changes which property is used to separate the components.",
+          "hi": "सांकेतिक पृथक्करण पूरा है; विधि बदलने पर घटकों के अलग होने का आधार बदलता है।"
+        }
+      }
+    ]
+  },
+  "water": {
+    "goal": {
+      "en": "Count atoms in water molecules without changing the formula.",
+      "hi": "जल के अणुओं की संख्या बदलकर सूत्र और परमाणुओं की गिनती समझें।"
+    },
+    "observe": {
+      "en": "Each group has 2 hydrogen atoms and 1 oxygen atom. Increasing the number of molecules repeats the same group; the H:O atom ratio remains 2:1.",
+      "hi": "प्रत्येक समूह में 2 हाइड्रोजन और 1 ऑक्सीजन परमाणु हैं। अणु बढ़ाने पर वही समूह दोहरता है; H:O परमाणु अनुपात 2:1 रहता है।"
+    },
+    "modelNote": {
+      "en": "Ball sizes, colours and bond lengths are symbolic. The bent arrangement is a molecular model, not a photograph of rigid balls and rods.",
+      "hi": "गोलों के आकार, रंग और बन्ध लम्बाइयाँ सांकेतिक हैं। मुड़ी बनावट अणु का प्रतिरूप है, कठोर गोलों-छड़ों का वास्तविक फोटो नहीं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "If the number of H₂O molecules doubles, what happens to the number of hydrogen atoms?",
+        "hi": "H₂O अणुओं की संख्या दोगुनी करने पर हाइड्रोजन परमाणुओं की संख्या क्या होगी?"
+      },
+      "options": [
+        {
+          "en": "It stays unchanged.",
+          "hi": "वही रहेगी।"
+        },
+        {
+          "en": "It becomes half.",
+          "hi": "आधी होगी।"
+        },
+        {
+          "en": "It doubles.",
+          "hi": "दोगुनी होगी।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Every water molecule contributes 2 hydrogen atoms, so atom counts scale with molecule count while the formula remains H₂O.",
+        "hi": "प्रत्येक जल-अणु 2 हाइड्रोजन परमाणु देता है; अणु बढ़ने के साथ संख्या बढ़ती है, पर सूत्र H₂O रहता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "How many atoms are in 1 H₂O molecule?",
+        "hi": "1 H₂O अणु में कुल कितने परमाणु हैं?"
+      },
+      "options": [
+        {
+          "en": "2",
+          "hi": "2"
+        },
+        {
+          "en": "3",
+          "hi": "3"
+        },
+        {
+          "en": "4",
+          "hi": "4"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "There are 2 H atoms plus 1 O atom, making 3 atoms.",
+        "hi": "2 H और 1 O मिलाकर 3 परमाणु हैं।"
+      }
+    },
+    "realLife": {
+      "en": "Ice, liquid water and water vapour all contain water molecules.",
+      "hi": "बर्फ, द्रव जल और जलवाष्प में जल के अणु होते हैं।"
+    },
+    "missions": [
+      {
+        "id": "water-1",
+        "label": {
+          "en": "Show 2 H2O molecules and count 4 hydrogen atoms.",
+          "hi": "2 H2O अणु दिखाकर 4 हाइड्रोजन परमाणु गिनें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      },
+      {
+        "id": "water-2",
+        "label": {
+          "en": "Show 4 H2O molecules and count 4 oxygen atoms.",
+          "hi": "4 H2O अणु दिखाकर 4 ऑक्सीजन परमाणु गिनें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 4,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 2
+        },
+        "text": {
+          "en": "Every water molecule contains 2 hydrogen atoms and 1 oxygen atom; the formula stays H2O.",
+          "hi": "हर जल-अणु (Water molecule) में 2 हाइड्रोजन और 1 ऑक्सीजन परमाणु हैं; सूत्र H2O ही रहता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 2
+        },
+        "text": {
+          "en": "Increasing molecule count increases both atom counts in a fixed 2:1 number ratio.",
+          "hi": "अणुओं की संख्या बढ़ाने पर दोनों परमाणु-संख्याएँ 2:1 के निश्चित संख्या अनुपात में बढ़ती हैं।"
+        }
+      }
+    ]
+  },
+  "ammonia": {
+    "goal": {
+      "en": "Connect the NH₃ formula to atom counts and molecular mass.",
+      "hi": "NH₃ सूत्र को परमाणु संख्या और अणु द्रव्यमान से जोड़ें।"
+    },
+    "observe": {
+      "en": "Find the nitrogen atom and its 3 hydrogen neighbours. Changing molecule count changes the total atoms, not the composition of each molecule.",
+      "hi": "नाइट्रोजन और उसके 3 हाइड्रोजन पड़ोसी पहचानें। अणुओं की संख्या से कुल परमाणु बदलते हैं, हर अणु का संघटन नहीं।"
+    },
+    "modelNote": {
+      "en": "The pyramidal geometry and colours are simplified. This is not a safe invitation to prepare or smell ammonia; no chemical experiment is needed.",
+      "hi": "पिरामिडीय बनावट और रंग सरल किए गए हैं। अमोनिया बनाना या सूँघना आवश्यक नहीं; यह दृश्य रासायनिक प्रयोग का निर्देश नहीं है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "Increasing NH₃ molecules from 1 to 2 gives how many hydrogen atoms in total?",
+        "hi": "NH₃ अणु 1 से 2 करने पर कुल कितने हाइड्रोजन परमाणु होंगे?"
+      },
+      "options": [
+        {
+          "en": "6",
+          "hi": "6"
+        },
+        {
+          "en": "3",
+          "hi": "3"
+        },
+        {
+          "en": "2",
+          "hi": "2"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Each NH₃ molecule contains 3 H atoms; 2 × 3 = 6.",
+        "hi": "प्रत्येक NH₃ अणु में 3 H हैं; 2 × 3 = 6।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Using N = 14 u and H = 1 u, the mass of one NH₃ molecule is…",
+        "hi": "N = 14 u और H = 1 u से एक NH₃ अणु का द्रव्यमान है…"
+      },
+      "options": [
+        {
+          "en": "15 u",
+          "hi": "15 u"
+        },
+        {
+          "en": "18 u",
+          "hi": "18 u"
+        },
+        {
+          "en": "17 u",
+          "hi": "17 u"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "14 + 3 × 1 = 17 u.",
+        "hi": "14 + 3 × 1 = 17 u।"
+      }
+    },
+    "realLife": {
+      "en": "Ammonia is an industrial starting material for several nitrogen fertilisers.",
+      "hi": "अमोनिया कई नाइट्रोजन उर्वरकों के औद्योगिक निर्माण का प्रारम्भिक पदार्थ है।"
+    },
+    "missions": [
+      {
+        "id": "ammonia-1",
+        "label": {
+          "en": "Show 2 NH3 molecules and count 6 hydrogen atoms.",
+          "hi": "2 NH3 अणु दिखाकर 6 हाइड्रोजन परमाणु गिनें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      },
+      {
+        "id": "ammonia-2",
+        "label": {
+          "en": "Show 4 NH3 molecules and count 4 nitrogen atoms.",
+          "hi": "4 NH3 अणु दिखाकर 4 नाइट्रोजन परमाणु गिनें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 4,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 2
+        },
+        "text": {
+          "en": "Each ammonia molecule contains 1 nitrogen atom and 3 hydrogen atoms.",
+          "hi": "हर अमोनिया अणु (Ammonia molecule) में 1 नाइट्रोजन और 3 हाइड्रोजन परमाणु होते हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 2
+        },
+        "text": {
+          "en": "Adding NH3 molecules preserves the 1:3 nitrogen-to-hydrogen atom-number ratio.",
+          "hi": "NH3 अणु बढ़ाने पर नाइट्रोजन और हाइड्रोजन की परमाणु-संख्या का अनुपात 1:3 बना रहता है।"
+        }
+      }
+    ]
+  },
+  "carbon-dioxide": {
+    "goal": {
+      "en": "Interpret CO₂ as 1 carbon atom bonded to 2 oxygen atoms.",
+      "hi": "CO₂ को 1 कार्बन और 2 ऑक्सीजन परमाणुओं के समूह के रूप में समझें।"
+    },
+    "observe": {
+      "en": "Locate carbon between the oxygen atoms. Repeating molecules keeps the carbon-to-oxygen atom ratio at 1:2.",
+      "hi": "ऑक्सीजन परमाणुओं के बीच कार्बन पहचानें। अणु दोहराने पर कार्बन:ऑक्सीजन परमाणु अनुपात 1:2 रहता है।"
+    },
+    "modelNote": {
+      "en": "The straight molecule is represented with symbolic balls and bonds. Atom colours and apparent size are not visible properties of a real isolated molecule.",
+      "hi": "सीधी बनावट को सांकेतिक गोलों और बन्धों से दिखाया गया है। परमाणुओं के रंग और दिखते आकार वास्तविक अणु की दृश्य विशेषताएँ नहीं हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "When CO₂ molecule count increases, the C:O atom ratio…",
+        "hi": "CO₂ अणुओं की संख्या बढ़ाने पर C:O परमाणु अनुपात…"
+      },
+      "options": [
+        {
+          "en": "Changes to 2:1.",
+          "hi": "2:1 हो जाता है।"
+        },
+        {
+          "en": "Stays 1:2.",
+          "hi": "1:2 रहता है।"
+        },
+        {
+          "en": "Becomes zero.",
+          "hi": "शून्य हो जाता है।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "A chemical formula fixes the atom ratio within each molecule, independent of the sample size.",
+        "hi": "रासायनिक सूत्र (Chemical formula) प्रत्येक अणु का परमाणु अनुपात तय करता है; नमूने का आकार उसे नहीं बदलता।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Using C = 12 u and O = 16 u, what is the molecular mass of CO₂?",
+        "hi": "C = 12 u और O = 16 u से CO₂ का अणु द्रव्यमान क्या है?"
+      },
+      "options": [
+        {
+          "en": "44 u",
+          "hi": "44 u"
+        },
+        {
+          "en": "28 u",
+          "hi": "28 u"
+        },
+        {
+          "en": "32 u",
+          "hi": "32 u"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "12 + 2 × 16 = 44 u.",
+        "hi": "12 + 2 × 16 = 44 u।"
+      }
+    },
+    "realLife": {
+      "en": "Carbon dioxide forms bubbles when a fizzy drink is opened.",
+      "hi": "शीतल पेय खोलने पर कार्बन डाइऑक्साइड के बुलबुले निकलते हैं।"
+    },
+    "missions": [
+      {
+        "id": "carbon-dioxide-1",
+        "label": {
+          "en": "Show 2 CO2 molecules and count 4 oxygen atoms.",
+          "hi": "2 CO2 अणु दिखाकर 4 ऑक्सीजन परमाणु गिनें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      },
+      {
+        "id": "carbon-dioxide-2",
+        "label": {
+          "en": "Show 4 CO2 molecules and count 4 carbon atoms.",
+          "hi": "4 CO2 अणु दिखाकर 4 कार्बन परमाणु गिनें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 4,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 2
+        },
+        "text": {
+          "en": "Each carbon dioxide molecule contains 1 carbon atom and 2 oxygen atoms.",
+          "hi": "हर कार्बन डाइऑक्साइड अणु में 1 कार्बन और 2 ऑक्सीजन परमाणु होते हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 2
+        },
+        "text": {
+          "en": "More CO2 molecules mean more atoms, but the formula and the mass of one molecule remain unchanged.",
+          "hi": "अधिक CO2 अणुओं से कुल परमाणु बढ़ते हैं, पर सूत्र और 1 अणु का द्रव्यमान नहीं बदलते।"
+        }
+      }
+    ]
+  },
+  "salt": {
+    "goal": {
+      "en": "Understand sodium chloride as an ionic lattice, not separate NaCl molecules.",
+      "hi": "सोडियम क्लोराइड को अलग NaCl अणुओं के बजाय आयनिक जालक समझें।"
+    },
+    "observe": {
+      "en": "Look for alternating positive sodium and negative chloride ions. A larger lattice repeats the same overall 1:1 ion ratio.",
+      "hi": "बारी-बारी से धन सोडियम और ऋण क्लोराइड आयन देखें। बड़ा जालक वही कुल 1:1 आयन अनुपात दोहराता है।"
+    },
+    "modelNote": {
+      "en": "The finite grid is a simplified part of a much larger 3D crystal. Surface counts depend on the chosen cut; the selected even-sized grids preserve equal displayed ion counts.",
+      "hi": "सीमित ग्रिड बहुत बड़े त्रिविमीय क्रिस्टल का सरल हिस्सा है। कटे भाग के अनुसार सतह की गिनती बदल सकती है; चुने सम आकार के ग्रिड में दोनों आयन समान संख्या में दिखते हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "Increasing the displayed lattice size should change which property?",
+        "hi": "दिखाए जालक का आकार बढ़ाने पर कौन-सी बात बदलेगी?"
+      },
+      "options": [
+        {
+          "en": "The identity of sodium into carbon.",
+          "hi": "सोडियम की पहचान कार्बन हो जाएगी।"
+        },
+        {
+          "en": "The formula from NaCl to NaCl₂.",
+          "hi": "सूत्र NaCl से NaCl₂ होगा।"
+        },
+        {
+          "en": "The total number of displayed ions.",
+          "hi": "दिखाए आयनों की कुल संख्या।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Extending the lattice adds ions while retaining its repeating ionic composition.",
+        "hi": "जालक (Lattice) बढ़ाने से आयन जुड़ते हैं, लेकिन दोहराता आयनिक संघटन बना रहता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "What does NaCl express for a salt crystal?",
+        "hi": "नमक के क्रिस्टल में NaCl क्या बताता है?"
+      },
+      "options": [
+        {
+          "en": "One isolated molecule in every case.",
+          "hi": "हर स्थिति में एक अलग अणु।"
+        },
+        {
+          "en": "The simplest Na⁺:Cl⁻ ratio is 1:1.",
+          "hi": "सरलतम Na⁺:Cl⁻ अनुपात 1:1 है।"
+        },
+        {
+          "en": "Both ions have positive charge.",
+          "hi": "दोनों आयन धनावेशित हैं।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "NaCl is a formula unit giving the simplest ratio in the ionic lattice.",
+        "hi": "NaCl आयनिक जालक में सरलतम अनुपात देने वाली सूत्र इकाई (Formula unit) है।"
+      }
+    },
+    "realLife": {
+      "en": "A grain of table salt contains an enormous repeating array of ions.",
+      "hi": "खाने के नमक के एक दाने में बहुत बड़ा दोहराता आयन-जाल होता है।"
+    },
+    "missions": [
+      {
+        "id": "salt-1",
+        "label": {
+          "en": "Build the larger lattice and compare Na+ and Cl− counts.",
+          "hi": "बड़ा जालक बनाकर Na+ और Cl− आयनों की संख्या की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 4,
+          "control": 0
+        }
+      },
+      {
+        "id": "salt-2",
+        "label": {
+          "en": "Return to the smaller lattice and check the 1:1 ion ratio.",
+          "hi": "छोटे जालक पर लौटकर आयनों का 1:1 अनुपात जाँचें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 2
+        },
+        "text": {
+          "en": "This small symbolic lattice contains equal counts of Na+ and Cl− ions.",
+          "hi": "इस छोटे सांकेतिक जालक (Lattice) में Na+ और Cl− आयनों की संख्या बराबर है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 4
+        },
+        "text": {
+          "en": "The larger lattice has more ions, but NaCl still gives the simplest 1:1 ion ratio, not separate NaCl molecules.",
+          "hi": "बड़े जालक में अधिक आयन हैं, पर NaCl सरलतम 1:1 आयन अनुपात बताता है, अलग NaCl अणु नहीं।"
+        }
+      }
+    ]
+  },
+  "conservation": {
+    "goal": {
+      "en": "Follow the same atoms before and after a chemical reaction.",
+      "hi": "रासायनिक अभिक्रिया से पहले और बाद में वही परमाणु पहचानें।"
+    },
+    "observe": {
+      "en": "Advance 2H₂ + O₂ → 2H₂O. Count 4 hydrogen atoms and 2 oxygen atoms throughout; only their grouping changes.",
+      "hi": "2H₂ + O₂ → 2H₂O को आगे बढ़ाएँ। पूरे क्रम में 4 हाइड्रोजन और 2 ऑक्सीजन परमाणु गिनें; केवल उनका जुड़ना बदलता है।"
+    },
+    "modelNote": {
+      "en": "This animation rearranges fixed atoms; it does not model activation energy, reaction rate or heat release. Assume a closed system with no material escaping.",
+      "hi": "यह स्थिर परमाणुओं का पुनर्विन्यास है; सक्रियण ऊर्जा, अभिक्रिया दर या ऊष्मा-निर्गमन का अनुकरण नहीं। कोई पदार्थ बाहर न निकले ऐसा बन्द तन्त्र मानें।"
+    },
+    "prediction": {
+      "question": {
+        "en": "As the closed-system reaction progresses, the total mass should…",
+        "hi": "बन्द तन्त्र की अभिक्रिया आगे बढ़ने पर कुल द्रव्यमान…"
+      },
+      "options": [
+        {
+          "en": "Remain the same.",
+          "hi": "समान रहना चाहिए।"
+        },
+        {
+          "en": "Decrease because atoms disappear.",
+          "hi": "घटेगा, क्योंकि परमाणु गायब होंगे।"
+        },
+        {
+          "en": "Double when bonds form.",
+          "hi": "बन्ध बनते ही दोगुना होगा।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Atoms are rearranged rather than created or destroyed in an ordinary chemical reaction, so the total mass is conserved.",
+        "hi": "साधारण रासायनिक अभिक्रिया में परमाणु बनते या नष्ट नहीं होते, केवल पुनर्व्यवस्थित होते हैं; कुल द्रव्यमान संरक्षित रहता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "What changes in the reaction shown?",
+        "hi": "दिखाई अभिक्रिया में क्या बदलता है?"
+      },
+      "options": [
+        {
+          "en": "The total number of oxygen atoms.",
+          "hi": "ऑक्सीजन परमाणुओं की कुल संख्या।"
+        },
+        {
+          "en": "Hydrogen atoms turn into oxygen.",
+          "hi": "हाइड्रोजन ऑक्सीजन बनता है।"
+        },
+        {
+          "en": "The way atoms are bonded.",
+          "hi": "परमाणुओं के जुड़ने का तरीका।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "The same 6 atoms form different molecular groups.",
+        "hi": "वही 6 परमाणु अलग अणु-समूह बनाते हैं।"
+      }
+    },
+    "realLife": {
+      "en": "When a gas-producing reaction is weighed, escaping gas must be included in the mass balance.",
+      "hi": "गैस बनाने वाली अभिक्रिया का द्रव्यमान जाँचते समय निकली गैस को भी हिसाब में लें।"
+    },
+    "missions": [
+      {
+        "id": "conservation-1",
+        "label": {
+          "en": "Move the reaction to 50% and compare both mass bars.",
+          "hi": "अभिक्रिया 50% पर ले जाकर दोनों द्रव्यमान पट्टियाँ देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 50,
+          "control": 0
+        }
+      },
+      {
+        "id": "conservation-2",
+        "label": {
+          "en": "Finish the reaction and count the unchanged H and O totals.",
+          "hi": "अभिक्रिया पूरी करके H और O की अपरिवर्तित कुल संख्या गिनें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 100,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lt",
+          "value": 100
+        },
+        "text": {
+          "en": "Atoms are rearranging, not appearing or disappearing; the closed-system total mass remains 36 u.",
+          "hi": "परमाणु पुनर्व्यवस्थित हो रहे हैं, बन या मिट नहीं रहे; बन्द तन्त्र का कुल द्रव्यमान 36 u है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 100
+        },
+        "text": {
+          "en": "The products still contain 4 H atoms and 2 O atoms, so total mass is conserved.",
+          "hi": "उत्पादों में अभी भी 4 H और 2 O परमाणु हैं, इसलिए कुल द्रव्यमान संरक्षित है।"
+        }
+      }
+    ]
+  },
+  "sodium": {
+    "goal": {
+      "en": "Link sodium’s 2,8,1 electron arrangement to formation of Na⁺.",
+      "hi": "सोडियम के 2,8,1 इलेक्ट्रॉन-विन्यास को Na⁺ बनने से जोड़ें।"
+    },
+    "observe": {
+      "en": "Start with 11 protons and 11 electrons. Remove the outer electron: 10 electrons remain in the 2,8 arrangement while the nucleus stays unchanged.",
+      "hi": "11 प्रोटॉन और 11 इलेक्ट्रॉन से शुरू करें। बाहरी इलेक्ट्रॉन हटाने पर 2,8 विन्यास के 10 इलेक्ट्रॉन बचते हैं; नाभिक नहीं बदलता।"
+    },
+    "modelNote": {
+      "en": "The Bohr shells are a school-level model, not the exact paths of electrons. Nuclear size and shell distances are not to scale, and the slider does not supply a real ionisation energy.",
+      "hi": "बोर कक्षाएँ विद्यालयी प्रतिरूप हैं, इलेक्ट्रॉनों के सही रास्ते नहीं। नाभिक का आकार और कक्षाओं की दूरी अनुपात में नहीं; नियंत्रण वास्तविक आयनन ऊर्जा नहीं देता।"
+    },
+    "prediction": {
+      "question": {
+        "en": "When a neutral sodium atom loses 1 electron, its charge becomes…",
+        "hi": "उदासीन सोडियम 1 इलेक्ट्रॉन खोए तो उसका आवेश होगा…"
+      },
+      "options": [
+        {
+          "en": "−1",
+          "hi": "−1"
+        },
+        {
+          "en": "+1",
+          "hi": "+1"
+        },
+        {
+          "en": "0",
+          "hi": "0"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "11 positive protons and 10 negative electrons give a net charge of +1; the atomic number remains 11.",
+        "hi": "11 धन प्रोटॉन और 10 ऋण इलेक्ट्रॉन से शुद्ध आवेश +1 मिलता है; परमाणु क्रमांक (Atomic number) 11 रहता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "How many protons does Na⁺ have?",
+        "hi": "Na⁺ में कितने प्रोटॉन हैं?"
+      },
+      "options": [
+        {
+          "en": "10",
+          "hi": "10"
+        },
+        {
+          "en": "12",
+          "hi": "12"
+        },
+        {
+          "en": "11",
+          "hi": "11"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Ion formation changes electron count, not proton count.",
+        "hi": "आयन बनने पर इलेक्ट्रॉन बदलते हैं, प्रोटॉन नहीं।"
+      }
+    },
+    "realLife": {
+      "en": "Sodium occurs as Na⁺ ions in table salt.",
+      "hi": "खाने के नमक में सोडियम Na⁺ आयनों के रूप में होता है।"
+    },
+    "missions": [
+      {
+        "id": "sodium-1",
+        "label": {
+          "en": "Remove 1 electron to make Na+.",
+          "hi": "1 इलेक्ट्रॉन हटाकर Na+ बनाएँ।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "sodium-2",
+        "label": {
+          "en": "Return to neutral sodium with 11 electrons.",
+          "hi": "11 इलेक्ट्रॉनों वाले उदासीन सोडियम पर लौटें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "Neutral sodium has 11 protons and 11 electrons in the shell arrangement 2,8,1.",
+          "hi": "उदासीन सोडियम में 11 प्रोटॉन और 2,8,1 विन्यास वाले 11 इलेक्ट्रॉन हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "Na+ has 10 electrons in 2,8 shells; losing an electron does not change its 11 protons.",
+          "hi": "Na+ में 2,8 कक्षाओं में 10 इलेक्ट्रॉन हैं; इलेक्ट्रॉन खोने से उसके 11 प्रोटॉन नहीं बदलते।"
+        }
+      }
+    ]
+  },
+  "oxygen": {
+    "goal": {
+      "en": "Connect oxygen’s 2,6 arrangement with gaining 2 electrons.",
+      "hi": "ऑक्सीजन के 2,6 विन्यास को 2 इलेक्ट्रॉन प्राप्त करने से जोड़ें।"
+    },
+    "observe": {
+      "en": "The nucleus keeps 8 protons as electrons are added. With 2 extra electrons, the 2,8 arrangement has 10 electrons and a net charge of −2.",
+      "hi": "इलेक्ट्रॉन जुड़ने पर नाभिक में 8 प्रोटॉन ही रहते हैं। 2 अतिरिक्त इलेक्ट्रॉन से 2,8 विन्यास, कुल 10 इलेक्ट्रॉन और −2 आवेश मिलता है।"
+    },
+    "modelNote": {
+      "en": "This Bohr picture represents electron counts, not true orbital shapes or paths. The transfer steps are symbolic and do not model the chemistry needed to form an oxide ion.",
+      "hi": "बोर चित्र इलेक्ट्रॉनों की गिनती दिखाता है, वास्तविक कक्षकों के आकार या रास्ते नहीं। इलेक्ट्रॉन देना सांकेतिक है; ऑक्साइड आयन बनाने की पूरी रसायनिकी नहीं दिखाई गई।"
+    },
+    "prediction": {
+      "question": {
+        "en": "If neutral oxygen gains 2 electrons, its net charge will be…",
+        "hi": "उदासीन ऑक्सीजन 2 इलेक्ट्रॉन पाए तो शुद्ध आवेश होगा…"
+      },
+      "options": [
+        {
+          "en": "−2",
+          "hi": "−2"
+        },
+        {
+          "en": "+2",
+          "hi": "+2"
+        },
+        {
+          "en": "0",
+          "hi": "0"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "8 protons balance only 8 of the 10 electrons, leaving a net charge of −2.",
+        "hi": "8 प्रोटॉन, 10 इलेक्ट्रॉनों में से केवल 8 के आवेश संतुलित करते हैं; शुद्ध आवेश −2 बचता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "What is the electron arrangement of neutral oxygen?",
+        "hi": "उदासीन ऑक्सीजन का इलेक्ट्रॉन-विन्यास क्या है?"
+      },
+      "options": [
+        {
+          "en": "2,8",
+          "hi": "2,8"
+        },
+        {
+          "en": "2,6",
+          "hi": "2,6"
+        },
+        {
+          "en": "2,8,6",
+          "hi": "2,8,6"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Oxygen has atomic number 8, so its neutral atom has 8 electrons arranged as 2,6.",
+        "hi": "ऑक्सीजन का परमाणु क्रमांक 8 है; उदासीन परमाणु के 8 इलेक्ट्रॉन 2,6 में व्यवस्थित हैं।"
+      }
+    },
+    "realLife": {
+      "en": "Oxide ions occur in ionic compounds such as magnesium oxide.",
+      "hi": "मैग्नीशियम ऑक्साइड जैसे आयनिक यौगिकों में ऑक्साइड आयन होते हैं।"
+    },
+    "missions": [
+      {
+        "id": "oxygen-1",
+        "label": {
+          "en": "Add 1 electron and inspect the intermediate charge.",
+          "hi": "1 इलेक्ट्रॉन जोड़कर बीच की आवेश-अवस्था देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "oxygen-2",
+        "label": {
+          "en": "Add 2 electrons to make an oxide ion with charge −2.",
+          "hi": "2 इलेक्ट्रॉन जोड़कर −2 आवेश वाला ऑक्साइड आयन बनाएँ।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "Neutral oxygen has 8 electrons arranged 2,6 and 8 protons.",
+          "hi": "उदासीन ऑक्सीजन में 2,6 विन्यास वाले 8 इलेक्ट्रॉन और 8 प्रोटॉन हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "This intermediate model has 9 electrons and a −1 charge; it is not the usual oxide ion.",
+          "hi": "इस बीच के मॉडल में 9 इलेक्ट्रॉन और −1 आवेश हैं; यह सामान्य ऑक्साइड आयन नहीं है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 2
+        },
+        "text": {
+          "en": "The oxide ion has 10 electrons arranged 2,8 and charge −2; atomic number stays 8.",
+          "hi": "ऑक्साइड आयन में 2,8 विन्यास के 10 इलेक्ट्रॉन और −2 आवेश हैं; परमाणु क्रमांक (Atomic Number) 8 ही है।"
+        }
+      }
+    ]
+  },
+  "magnesium": {
+    "goal": {
+      "en": "Explain why magnesium can form Mg²⁺ by losing 2 electrons.",
+      "hi": "समझें कि मैग्नीशियम 2 इलेक्ट्रॉन खोकर Mg²⁺ कैसे बनाता है।"
+    },
+    "observe": {
+      "en": "Compare 2,8,2 with 2,8 after electron loss. The 12-proton nucleus remains the same in both the atom and ion.",
+      "hi": "इलेक्ट्रॉन खोने से पहले 2,8,2 और बाद में 2,8 की तुलना करें। परमाणु और आयन दोनों में 12 प्रोटॉन वाला नाभिक समान रहता है।"
+    },
+    "modelNote": {
+      "en": "Circular shells and orbiting dots are schematic Bohr-model symbols. Distances, speeds and transfer energy are not realistic measurements.",
+      "hi": "गोल कक्षाएँ और घूमते बिन्दु बोर प्रतिरूप के संकेत हैं। दूरी, गति और इलेक्ट्रॉन स्थानान्तरण ऊर्जा वास्तविक मापन नहीं हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "When magnesium loses both outer electrons, how many electrons remain?",
+        "hi": "मैग्नीशियम दोनों बाहरी इलेक्ट्रॉन खोए तो कितने इलेक्ट्रॉन बचेंगे?"
+      },
+      "options": [
+        {
+          "en": "12",
+          "hi": "12"
+        },
+        {
+          "en": "14",
+          "hi": "14"
+        },
+        {
+          "en": "10",
+          "hi": "10"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Neutral magnesium has 12 electrons; losing 2 leaves 10 and gives Mg²⁺.",
+        "hi": "उदासीन मैग्नीशियम में 12 इलेक्ट्रॉन हैं; 2 खोने पर 10 बचते हैं और Mg²⁺ बनता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which property stays unchanged when Mg becomes Mg²⁺?",
+        "hi": "Mg से Mg²⁺ बनते समय क्या समान रहता है?"
+      },
+      "options": [
+        {
+          "en": "Atomic number.",
+          "hi": "परमाणु क्रमांक।"
+        },
+        {
+          "en": "Electron count.",
+          "hi": "इलेक्ट्रॉन संख्या।"
+        },
+        {
+          "en": "Net charge.",
+          "hi": "शुद्ध आवेश।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "The nucleus still contains 12 protons, so the atomic number stays 12.",
+        "hi": "नाभिक में 12 प्रोटॉन रहते हैं, इसलिए परमाणु क्रमांक 12 ही रहता है।"
+      }
+    },
+    "realLife": {
+      "en": "Magnesium salts contain magnesium ions, not neutral magnesium metal atoms.",
+      "hi": "मैग्नीशियम लवणों में मैग्नीशियम आयन होते हैं, उदासीन धातु-परमाणु नहीं।"
+    },
+    "missions": [
+      {
+        "id": "magnesium-1",
+        "label": {
+          "en": "Remove 1 electron and inspect the intermediate charge.",
+          "hi": "1 इलेक्ट्रॉन हटाकर बीच की आवेश-अवस्था देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "magnesium-2",
+        "label": {
+          "en": "Remove 2 electrons to make Mg2+.",
+          "hi": "2 इलेक्ट्रॉन हटाकर Mg2+ बनाएँ।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "Neutral magnesium has 12 electrons arranged 2,8,2.",
+          "hi": "उदासीन मैग्नीशियम में 2,8,2 विन्यास वाले 12 इलेक्ट्रॉन हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "After losing 1 electron the model has a +1 charge; the usual magnesium ion forms after losing 2.",
+          "hi": "1 इलेक्ट्रॉन खोने पर मॉडल का आवेश +1 है; सामान्य मैग्नीशियम आयन 2 इलेक्ट्रॉन खोने पर बनता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 2
+        },
+        "text": {
+          "en": "Mg2+ has 10 electrons arranged 2,8 and still has 12 protons.",
+          "hi": "Mg2+ में 2,8 विन्यास वाले 10 इलेक्ट्रॉन हैं और प्रोटॉन अभी भी 12 हैं।"
+        }
+      }
+    ]
+  },
+  "chlorine": {
+    "goal": {
+      "en": "Connect chlorine’s 2,8,7 arrangement to the chloride ion.",
+      "hi": "क्लोरीन के 2,8,7 विन्यास को क्लोराइड आयन से जोड़ें।"
+    },
+    "observe": {
+      "en": "Add 1 electron to the outer shell. The resulting chloride ion has 18 electrons in a 2,8,8 arrangement but still has 17 protons.",
+      "hi": "बाहरी कक्षा में 1 इलेक्ट्रॉन जोड़ें। बने क्लोराइड में 2,8,8 विन्यास के 18 इलेक्ट्रॉन हैं, पर प्रोटॉन अभी भी 17 हैं।"
+    },
+    "modelNote": {
+      "en": "The model shows shell populations rather than real electron trajectories. Cl⁻ is an ion; it must not be confused with the Cl₂ molecule.",
+      "hi": "प्रतिरूप कक्षाओं की इलेक्ट्रॉन संख्या दिखाता है, वास्तविक पथ नहीं। Cl⁻ एक आयन है; उसे Cl₂ अणु न समझें।"
+    },
+    "prediction": {
+      "question": {
+        "en": "Adding 1 electron to a neutral chlorine atom produces…",
+        "hi": "उदासीन क्लोरीन में 1 इलेक्ट्रॉन जोड़ने पर क्या बनेगा?"
+      },
+      "options": [
+        {
+          "en": "Cl⁺",
+          "hi": "Cl⁺"
+        },
+        {
+          "en": "Cl⁻",
+          "hi": "Cl⁻"
+        },
+        {
+          "en": "A new element with 18 protons.",
+          "hi": "18 प्रोटॉन वाला नया तत्व।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "One extra negative electron gives a net charge of −1 while proton count stays 17.",
+        "hi": "एक अतिरिक्त ऋण इलेक्ट्रॉन से शुद्ध आवेश −1 होता है; प्रोटॉन संख्या 17 रहती है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "How many electrons does Cl⁻ contain?",
+        "hi": "Cl⁻ में कितने इलेक्ट्रॉन होते हैं?"
+      },
+      "options": [
+        {
+          "en": "16",
+          "hi": "16"
+        },
+        {
+          "en": "17",
+          "hi": "17"
+        },
+        {
+          "en": "18",
+          "hi": "18"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Chlorine has 17 protons; Cl⁻ has gained 1 electron, giving 18 electrons.",
+        "hi": "क्लोरीन में 17 प्रोटॉन हैं; Cl⁻ ने 1 इलेक्ट्रॉन पाया है, इसलिए 18 इलेक्ट्रॉन हैं।"
+      }
+    },
+    "realLife": {
+      "en": "Table salt contains chloride ions paired electrically with sodium ions.",
+      "hi": "खाने के नमक में क्लोराइड आयनों का ऋण आवेश सोडियम आयनों के धन आवेश से संतुलित होता है।"
+    },
+    "missions": [
+      {
+        "id": "chlorine-1",
+        "label": {
+          "en": "Add 1 electron to make Cl−.",
+          "hi": "1 इलेक्ट्रॉन जोड़कर Cl− बनाएँ।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "chlorine-2",
+        "label": {
+          "en": "Return to neutral chlorine with 17 electrons.",
+          "hi": "17 इलेक्ट्रॉनों वाले उदासीन क्लोरीन पर लौटें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "Neutral chlorine has 17 electrons in the arrangement 2,8,7.",
+          "hi": "उदासीन क्लोरीन में 2,8,7 विन्यास वाले 17 इलेक्ट्रॉन हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "Cl− has 18 electrons in 2,8,8 shells, while its proton count stays 17.",
+          "hi": "Cl− में 2,8,8 कक्षाओं के 18 इलेक्ट्रॉन हैं, जबकि प्रोटॉन संख्या 17 ही है।"
+        }
+      }
+    ]
+  },
+  "isotopes": {
+    "goal": {
+      "en": "See how neutron count changes isotope identity without changing the element.",
+      "hi": "देखें कि न्यूट्रॉन बदलने से समस्थानिक बदलता है, तत्व नहीं।"
+    },
+    "observe": {
+      "en": "Keep 6 protons and vary neutrons from 6 to 8. The mass number changes from 12 to 14 while neutral carbon still has 6 electrons.",
+      "hi": "6 प्रोटॉन स्थिर रखकर न्यूट्रॉन 6 से 8 करें। द्रव्यमान संख्या 12 से 14 बदलती है, जबकि उदासीन कार्बन में 6 इलेक्ट्रॉन ही हैं।"
+    },
+    "modelNote": {
+      "en": "Particle balls and shell paths are symbolic and not to scale. This slider compares nuclei; it does not show how isotopes are made or their radioactive decay.",
+      "hi": "कण और कक्षाएँ सांकेतिक हैं तथा वास्तविक अनुपात में नहीं। नियंत्रण नाभिकों की तुलना करता है, समस्थानिक बनना या रेडियोधर्मी क्षय नहीं दिखाता।"
+    },
+    "prediction": {
+      "question": {
+        "en": "If carbon gains 1 neutron while its proton count remains 6, what changes?",
+        "hi": "प्रोटॉन 6 रहें और कार्बन में 1 न्यूट्रॉन बढ़े तो क्या बदलेगा?"
+      },
+      "options": [
+        {
+          "en": "Mass number increases by 1.",
+          "hi": "द्रव्यमान संख्या 1 बढ़ेगी।"
+        },
+        {
+          "en": "Atomic number increases by 1.",
+          "hi": "परमाणु क्रमांक 1 बढ़ेगा।"
+        },
+        {
+          "en": "Carbon becomes nitrogen.",
+          "hi": "कार्बन नाइट्रोजन बनेगा।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Mass number A equals protons plus neutrons. Element identity is set by proton count, which did not change.",
+        "hi": "द्रव्यमान संख्या A = प्रोटॉन + न्यूट्रॉन। तत्व की पहचान प्रोटॉन संख्या तय करती है, जो नहीं बदली।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "What do isotopes of the same element share?",
+        "hi": "एक तत्व के समस्थानिकों में क्या समान होता है?"
+      },
+      "options": [
+        {
+          "en": "Neutron number.",
+          "hi": "न्यूट्रॉन संख्या।"
+        },
+        {
+          "en": "Atomic number.",
+          "hi": "परमाणु क्रमांक।"
+        },
+        {
+          "en": "Mass number in every case.",
+          "hi": "हर स्थिति में द्रव्यमान संख्या।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Isotopes have the same proton number but different neutron and mass numbers.",
+        "hi": "समस्थानिकों (Isotopes) में प्रोटॉन समान, लेकिन न्यूट्रॉन और द्रव्यमान संख्या अलग होती है।"
+      }
+    },
+    "realLife": {
+      "en": "Carbon-14 is used in dating suitable once-living materials.",
+      "hi": "कार्बन-14 का उपयोग उपयुक्त पुराने जैविक अवशेषों की आयु जानने में होता है।"
+    },
+    "missions": [
+      {
+        "id": "isotopes-1",
+        "label": {
+          "en": "Choose 7 neutrons to show carbon-13.",
+          "hi": "7 न्यूट्रॉन चुनकर कार्बन-13 दिखाएँ।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 7,
+          "control": 0
+        }
+      },
+      {
+        "id": "isotopes-2",
+        "label": {
+          "en": "Choose 8 neutrons to show carbon-14.",
+          "hi": "8 न्यूट्रॉन चुनकर कार्बन-14 दिखाएँ।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 8,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 6
+        },
+        "text": {
+          "en": "6 protons plus 6 neutrons give carbon-12; electron count is unchanged.",
+          "hi": "6 प्रोटॉन और 6 न्यूट्रॉन से कार्बन-12 बनता है; इलेक्ट्रॉन संख्या अपरिवर्तित है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 7
+        },
+        "text": {
+          "en": "Carbon-13 has 7 neutrons but the same atomic number 6.",
+          "hi": "कार्बन-13 में 7 न्यूट्रॉन हैं, पर परमाणु क्रमांक (Atomic Number) वही 6 है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 8
+        },
+        "text": {
+          "en": "Carbon-14 has 8 neutrons; isotopes differ in neutron count, not proton count.",
+          "hi": "कार्बन-14 में 8 न्यूट्रॉन हैं; समस्थानिक (Isotopes) न्यूट्रॉन संख्या में भिन्न होते हैं, प्रोटॉन संख्या में नहीं।"
+        }
+      }
+    ]
+  },
+  "cell-compare": {
+    "goal": {
+      "en": "Identify the shared structures and important differences between plant and animal cells.",
+      "hi": "पादप-जंतु कोशिकाओं की समान संरचनाएँ और मुख्य अन्तर पहचानें।"
+    },
+    "observe": {
+      "en": "Switch cell type and compare the outer boundary, vacuole and chloroplasts. Both types have a membrane, cytoplasm, nucleus and mitochondria in this typical-cell model.",
+      "hi": "कोशिका प्रकार बदलकर बाहरी सीमा, रिक्तिका और हरितलवक देखें। इस सामान्य प्रतिरूप में दोनों में झिल्ली, कोशिकाद्रव्य, केन्द्रक और माइटोकॉन्ड्रिया हैं।"
+    },
+    "modelNote": {
+      "en": "These are representative cell cutaways, not every cell type. Chloroplasts occur in photosynthetic plant cells, not all plant cells; organelle colours and proportions are symbolic.",
+      "hi": "ये सामान्य कोशिकाओं के कट-दृश्य हैं, हर कोशिका के नहीं। हरितलवक प्रकाश-संश्लेषी पादप कोशिकाओं में होते हैं, सभी में नहीं; रंग और अनुपात सांकेतिक हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "When switching from the typical animal cell to a photosynthetic plant cell, which extra outer structure should appear?",
+        "hi": "सामान्य जंतु से प्रकाश-संश्लेषी पादप कोशिका पर जाने से बाहर कौन-सी अतिरिक्त संरचना दिखेगी?"
+      },
+      "options": [
+        {
+          "en": "A second nucleus in every case.",
+          "hi": "हर बार दूसरा केन्द्रक।"
+        },
+        {
+          "en": "A cell wall outside the membrane.",
+          "hi": "झिल्ली के बाहर कोशिका भित्ति।"
+        },
+        {
+          "en": "A complete loss of mitochondria.",
+          "hi": "माइटोकॉन्ड्रिया का पूरा अभाव।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Plant cells typically have a cell wall outside the plasma membrane; animal cells do not. Plants still carry out cellular respiration.",
+        "hi": "पादप कोशिकाओं में सामान्यतः प्लाज्मा झिल्ली के बाहर कोशिका भित्ति (Cell wall) होती है; जंतु में नहीं। पौधे भी कोशिकीय श्वसन करते हैं।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which structure is present in both typical plant and animal cells?",
+        "hi": "सामान्य पादप और जंतु दोनों में कौन-सी संरचना होती है?"
+      },
+      "options": [
+        {
+          "en": "Cell wall.",
+          "hi": "कोशिका भित्ति।"
+        },
+        {
+          "en": "Chloroplast.",
+          "hi": "हरितलवक।"
+        },
+        {
+          "en": "Plasma membrane.",
+          "hi": "प्लाज्मा झिल्ली।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Both need a selectively permeable boundary that regulates movement of substances.",
+        "hi": "दोनों को पदार्थों का गमन नियंत्रित करने वाली चयनात्मक पारगम्य सीमा चाहिए।"
+      }
+    },
+    "realLife": {
+      "en": "Onion epidermis and cheek-cell preparations reveal different cell boundaries under a microscope.",
+      "hi": "सूक्ष्मदर्शी में प्याज की झिल्ली और गाल की कोशिकाओं की सीमाएँ अलग दिखती हैं।"
+    },
+    "missions": [
+      {
+        "id": "cell-compare-1",
+        "label": {
+          "en": "Choose the plant cell and locate its wall and large vacuole.",
+          "hi": "पादप कोशिका चुनकर उसकी भित्ति और बड़ी रिक्तिका खोजें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "cell-compare-2",
+        "label": {
+          "en": "Return to the animal cell and compare its boundary.",
+          "hi": "जंतु कोशिका पर लौटकर उसकी सीमा की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "The animal cell has a plasma membrane but no cell wall or chloroplasts.",
+          "hi": "जंतु कोशिका में प्लाज्मा झिल्ली (Plasma membrane) है, पर कोशिका भित्ति और हरितलवक नहीं हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "This green plant-cell model includes a wall, chloroplasts and a large vacuole; mitochondria occur in both cell types.",
+          "hi": "इस हरी पादप कोशिका के मॉडल में भित्ति, हरितलवक और बड़ी रिक्तिका हैं; माइटोकॉन्ड्रिया दोनों कोशिका प्रकारों में होते हैं।"
+        }
+      }
+    ]
+  },
+  "organelles": {
+    "goal": {
+      "en": "Connect an organelle’s structure with its main function.",
+      "hi": "कोशिकांग (Organelle) की संरचना को उसके मुख्य कार्य से जोड़ें।"
+    },
+    "observe": {
+      "en": "Move the focus between organelles or use the labelled hotspots. Locate the nucleus, energy-related mitochondria and structures that process cell materials.",
+      "hi": "नियंत्रण या नामांकित स्थानों से कोशिकांग चुनें। केन्द्रक, ऊर्जा से जुड़े माइटोकॉन्ड्रिया और पदार्थों का प्रसंस्करण करने वाली संरचनाएँ पहचानें।"
+    },
+    "modelNote": {
+      "en": "Organelles are enlarged and separated to make them visible. The focus control selects a structure; it does not create an organelle or change its real size.",
+      "hi": "स्पष्टता के लिए कोशिकांग बड़े और अलग दिखाए गए हैं। चयन नियंत्रण संरचना चुनता है; नया कोशिकांग बनाता या उसका वास्तविक आकार नहीं बदलता।"
+    },
+    "prediction": {
+      "question": {
+        "en": "If you move the focus to a mitochondrion, which function should its explanation highlight?",
+        "hi": "माइटोकॉन्ड्रिया पर ध्यान ले जाने पर कौन-सा कार्य प्रमुख दिखना चाहिए?"
+      },
+      "options": [
+        {
+          "en": "Making ATP available through cellular respiration.",
+          "hi": "कोशिकीय श्वसन से ATP उपलब्ध कराना।"
+        },
+        {
+          "en": "Replacing the cell wall with DNA.",
+          "hi": "भित्ति को DNA से बदलना।"
+        },
+        {
+          "en": "Performing all photosynthesis in animal cells.",
+          "hi": "जंतु कोशिका में सारा प्रकाश-संश्लेषण करना।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Mitochondria help convert energy from cellular respiration into ATP; other organelles have different specialised functions.",
+        "hi": "माइटोकॉन्ड्रिया (Mitochondria) श्वसन से ऊर्जा को ATP के रूप में उपलब्ध कराते हैं; अन्य कोशिकांगों के अलग विशेष कार्य हैं।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which structure contains most of the genetic information in a typical eukaryotic cell?",
+        "hi": "सामान्य यूकैरियोटी कोशिका की अधिकतर आनुवंशिक सूचना कहाँ होती है?"
+      },
+      "options": [
+        {
+          "en": "The cell wall.",
+          "hi": "कोशिका भित्ति।"
+        },
+        {
+          "en": "The nucleus.",
+          "hi": "केन्द्रक।"
+        },
+        {
+          "en": "Only the large vacuole.",
+          "hi": "केवल बड़ी रिक्तिका।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "The nucleus contains chromosomes made of DNA and proteins; some organelles also have their own DNA.",
+        "hi": "केन्द्रक (Nucleus) में DNA और प्रोटीन वाले गुणसूत्र होते हैं; कुछ कोशिकांगों में अपना DNA भी होता है।"
+      }
+    },
+    "realLife": {
+      "en": "Cells that secrete proteins rely on coordinated work by ribosomes, ER and the Golgi apparatus.",
+      "hi": "प्रोटीन स्राव करने वाली कोशिकाओं में राइबोसोम, जालिका और गॉल्जी मिलकर कार्य करते हैं।"
+    },
+    "missions": [
+      {
+        "id": "organelles-1",
+        "label": {
+          "en": "Select the mitochondrion and read its role in ATP production.",
+          "hi": "माइटोकॉन्ड्रिया चुनकर ATP निर्माण में उसका कार्य पढ़ें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "organelles-2",
+        "label": {
+          "en": "Select the cell membrane and read about selective transport.",
+          "hi": "कोशिका झिल्ली चुनकर चयनात्मक परिवहन के बारे में पढ़ें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 5,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "The nucleus contains genetic information and helps regulate cell activities.",
+          "hi": "केन्द्रक (Nucleus) में आनुवंशिक सूचना होती है और यह कोशिका की गतिविधियों के नियमन में सहायता करता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "Mitochondria are important sites of ATP production during cellular respiration.",
+          "hi": "माइटोकॉन्ड्रिया (Mitochondria) कोशिकीय श्वसन के दौरान ATP निर्माण के महत्त्वपूर्ण स्थल हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 2
+        },
+        "text": {
+          "en": "Chloroplasts carry out photosynthesis in green plant cells.",
+          "hi": "हरितलवक (Chloroplasts) हरी पादप कोशिकाओं में प्रकाश-संश्लेषण करते हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 3
+        },
+        "text": {
+          "en": "The large plant vacuole stores cell sap and helps maintain turgor.",
+          "hi": "बड़ी पादप रिक्तिका (Vacuole) कोशिका रस रखती है और स्फीति बनाए रखने में सहायता करती है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 4
+        },
+        "text": {
+          "en": "The Golgi apparatus modifies, packages and dispatches cellular materials.",
+          "hi": "गॉल्जी उपकरण (Golgi apparatus) कोशिकीय पदार्थों का संशोधन, पैकेजिंग और प्रेषण करता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 5
+        },
+        "text": {
+          "en": "The selectively permeable cell membrane regulates the passage of substances.",
+          "hi": "चयनात्मक पारगम्य कोशिका झिल्ली (Cell membrane) पदार्थों के आवागमन का नियमन करती है।"
+        }
+      }
+    ]
+  },
+  "osmosis": {
+    "goal": {
+      "en": "Predict the initial direction of water movement across a selective membrane.",
+      "hi": "चयनात्मक झिल्ली के पार जल के प्रारम्भिक गमन की दिशा का अनुमान करें।"
+    },
+    "observe": {
+      "en": "The inside initially contains 10 g/L of a non-penetrating solute. Compare it with the outside concentration and watch the indicated net water movement.",
+      "hi": "भीतर आरम्भ में झिल्ली पार न करने वाले विलेय की सान्द्रता 10 g/L है। बाहर की सान्द्रता से तुलना करके जल के शुद्ध गमन का संकेत देखें।"
+    },
+    "modelNote": {
+      "en": "The same solute and temperature are assumed on both sides. This shows the initial trend, not exact equilibrium volume, osmotic pressure or cell rupture.",
+      "hi": "दोनों ओर समान विलेय और ताप मानते हैं। यह प्रारम्भिक प्रवृत्ति है, संतुलन का सही आयतन, परासरण दाब या कोशिका फटना नहीं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "If the outside concentration rises above the initial inside value of 10 g/L, water initially moves mainly…",
+        "hi": "बाहर की सान्द्रता भीतर के आरम्भिक 10 g/L से अधिक हो तो जल शुरू में मुख्यतः…"
+      },
+      "options": [
+        {
+          "en": "Into the cell.",
+          "hi": "कोशिका में जाएगा।"
+        },
+        {
+          "en": "Nowhere, because all water stops.",
+          "hi": "कहीं नहीं, क्योंकि सारा जल रुकता है।"
+        },
+        {
+          "en": "Out of the cell.",
+          "hi": "कोशिका से बाहर जाएगा।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "With the same non-penetrating solute, the more concentrated outside solution has lower water availability, so net water movement is outward.",
+        "hi": "समान अप्रवेशी विलेय के लिए अधिक सान्द्र बाहरी विलयन में जल की उपलब्धता कम होती है, इसलिए शुद्ध गमन बाहर होता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "At equal solute concentrations on both sides, which statement is best?",
+        "hi": "दोनों ओर समान विलेय सान्द्रता हो तो कौन-सा कथन बेहतर है?"
+      },
+      "options": [
+        {
+          "en": "Water can move both ways, with no initial net flow.",
+          "hi": "जल दोनों ओर जा सकता है, पर प्रारम्भिक शुद्ध प्रवाह नहीं।"
+        },
+        {
+          "en": "All molecules stop moving.",
+          "hi": "सभी अणु रुक जाते हैं।"
+        },
+        {
+          "en": "The membrane necessarily dissolves.",
+          "hi": "झिल्ली अवश्य घुल जाती है।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Equal opposing movements can produce no net change; molecular motion continues.",
+        "hi": "दोनों दिशाओं का समान गमन शुद्ध परिवर्तन शून्य कर सकता है; अणुओं की गति जारी रहती है।"
+      }
+    },
+    "realLife": {
+      "en": "Raisins swell when water enters their tissues by osmosis.",
+      "hi": "परासरण (Osmosis) से जल प्रवेश करने पर किशमिश फूलती है।"
+    },
+    "missions": [
+      {
+        "id": "osmosis-1",
+        "label": {
+          "en": "Set outside concentration to 5 g/L and inspect net water movement.",
+          "hi": "बाहरी सान्द्रता 5 g/L रखकर जल का शुद्ध गमन देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 5,
+          "control": 0
+        }
+      },
+      {
+        "id": "osmosis-2",
+        "label": {
+          "en": "Set outside concentration to 15 g/L and compare the cell.",
+          "hi": "बाहरी सान्द्रता 15 g/L रखकर कोशिका की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 15,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lt",
+          "value": 10
+        },
+        "text": {
+          "en": "The outside solution is more dilute than the initial cell sap, so net water movement is inward.",
+          "hi": "बाहरी विलयन प्रारम्भिक कोशिका रस से तनु है, इसलिए परासरण (Osmosis) द्वारा जल का शुद्ध गमन अन्दर है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 10
+        },
+        "text": {
+          "en": "Equal initial solute concentrations give no net water movement, although water crosses in both directions.",
+          "hi": "समान प्रारम्भिक विलेय सान्द्रता पर जल का शुद्ध गमन नहीं है, यद्यपि जल दोनों दिशाओं में जाता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 10
+        },
+        "text": {
+          "en": "The outside solution is more concentrated, so water leaves and the protoplast shrinks away from the fixed wall.",
+          "hi": "बाहरी विलयन अधिक सान्द्र है, इसलिए जल बाहर जाता है और जीवद्रव्य स्थिर भित्ति से सिकुड़कर अलग होता है।"
+        }
+      }
+    ]
+  },
+  "plant-tissue": {
+    "goal": {
+      "en": "Use wall thickness and cell features to compare simple plant tissues.",
+      "hi": "भित्ति की मोटाई और कोशिका के गुणों से सरल पादप ऊतक तुलना करें।"
+    },
+    "observe": {
+      "en": "Switch between parenchyma, collenchyma and sclerenchyma. Notice thin walls, uneven corner thickening and thick lignified walls respectively.",
+      "hi": "पैरेन्काइमा, कॉलेन्काइमा और स्क्लेरेन्काइमा चुनें। क्रमशः पतली भित्ति, कोनों पर असमान मोटाई और मोटी लिग्निनयुक्त भित्ति देखें।"
+    },
+    "modelNote": {
+      "en": "The cross-sections are simplified diagrams, not stained microscope images. Wall thickness and cell spacing are exaggerated for comparison.",
+      "hi": "अनुप्रस्थ काट सरल आरेख हैं, अभिरंजित सूक्ष्मचित्र नहीं। तुलना के लिए भित्ति और रिक्त स्थान बढ़ाकर दिखाए हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "When moving from parenchyma to sclerenchyma, the model should mainly show…",
+        "hi": "पैरेन्काइमा से स्क्लेरेन्काइमा पर जाने से मुख्यतः क्या दिखना चाहिए?"
+      },
+      "options": [
+        {
+          "en": "Walls disappearing completely.",
+          "hi": "भित्तियाँ पूरी गायब।"
+        },
+        {
+          "en": "Thicker walls and a smaller inner cavity.",
+          "hi": "मोटी भित्ति और छोटा भीतरी स्थान।"
+        },
+        {
+          "en": "Free-floating gas molecules.",
+          "hi": "स्वतंत्र गैस-अणु।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Sclerenchyma typically has thick lignified walls and dead cells at maturity, providing mechanical strength.",
+        "hi": "स्क्लेरेन्काइमा (Sclerenchyma) में सामान्यतः मोटी लिग्निनयुक्त भित्ति और परिपक्वता पर मृत कोशिकाएँ होती हैं; ये मजबूती देती हैं।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which simple tissue provides flexible support in growing plant parts?",
+        "hi": "बढ़ते पादप भागों में लचीला सहारा कौन-सा सरल ऊतक देता है?"
+      },
+      "options": [
+        {
+          "en": "Collenchyma.",
+          "hi": "कॉलेन्काइमा।"
+        },
+        {
+          "en": "Only mature cork.",
+          "hi": "केवल परिपक्व कॉर्क।"
+        },
+        {
+          "en": "Blood.",
+          "hi": "रक्त।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Unevenly thickened living collenchyma cells allow support with flexibility.",
+        "hi": "असमान मोटी भित्ति वाली जीवित कॉलेन्काइमा कोशिकाएँ लचीला सहारा देती हैं।"
+      }
+    },
+    "realLife": {
+      "en": "Coconut fibre is tough because of its strengthening sclerenchyma tissue.",
+      "hi": "नारियल का रेशा स्क्लेरेन्काइमा ऊतक के कारण मजबूत होता है।"
+    },
+    "missions": [
+      {
+        "id": "plant-tissue-1",
+        "label": {
+          "en": "Choose collenchyma and inspect the thickened corners.",
+          "hi": "कॉलेन्काइमा चुनकर मोटे कोने देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "plant-tissue-2",
+        "label": {
+          "en": "Choose sclerenchyma and inspect its thick walls.",
+          "hi": "स्क्लेरेन्काइमा चुनकर उसकी मोटी भित्तियाँ देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "Parenchyma cells usually have thin walls and living contents.",
+          "hi": "पैरेन्काइमा (Parenchyma) कोशिकाओं की भित्तियाँ सामान्यतः पतली होती हैं और वे जीवित होती हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "Collenchyma has uneven thickening at the corners and provides flexible support.",
+          "hi": "कॉलेन्काइमा (Collenchyma) के कोनों पर असमान मोटाई होती है और यह लचीला सहारा देता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 2
+        },
+        "text": {
+          "en": "Sclerenchyma has thick lignified walls; mature cells are generally dead.",
+          "hi": "स्क्लेरेन्काइमा (Sclerenchyma) की भित्तियाँ मोटी और लिग्निनयुक्त हैं; परिपक्व कोशिकाएँ सामान्यतः मृत होती हैं।"
+        }
+      }
+    ]
+  },
+  "animal-tissue": {
+    "goal": {
+      "en": "Relate the four major animal tissue groups to their functions.",
+      "hi": "जंतु ऊतकों के चार प्रमुख समूहों को उनके कार्य से जोड़ें।"
+    },
+    "observe": {
+      "en": "Compare a close-packed epithelial sheet, connective material, muscle fibres and a branched neuron. The arrangement helps explain covering, support, contraction and communication.",
+      "hi": "सघन उपकला परत, संयोजी पदार्थ, पेशी तन्तु और शाखित न्यूरॉन की तुलना करें। व्यवस्था आवरण, सहारा, संकुचन और संचार समझाती है।"
+    },
+    "modelNote": {
+      "en": "Each drawing represents one typical feature, not all subtypes of a tissue. Cell counts, colours and dimensions are symbolic.",
+      "hi": "प्रत्येक चित्र ऊतक का एक सामान्य गुण दिखाता है, उसके सभी उपप्रकार नहीं। कोशिका संख्या, रंग और माप सांकेतिक हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "If you switch to nervous tissue, which structure-function pair should appear?",
+        "hi": "तंत्रिका ऊतक चुनने पर कौन-सी संरचना-कार्य जोड़ी दिखनी चाहिए?"
+      },
+      "options": [
+        {
+          "en": "A solid wall used only for food storage.",
+          "hi": "केवल भोजन जमा करने की ठोस दीवार।"
+        },
+        {
+          "en": "A leaf chloroplast making glucose.",
+          "hi": "ग्लूकोज बनाता पत्ती का हरितलवक।"
+        },
+        {
+          "en": "A branched neuron carrying signals.",
+          "hi": "संकेत पहुँचाता शाखित न्यूरॉन।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Neurons have processes specialised for receiving and transmitting information.",
+        "hi": "न्यूरॉन (Neuron) के प्रवर्ध सूचना प्राप्त करने और पहुँचाने के लिए विशेषीकृत होते हैं।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which major animal tissue group includes blood?",
+        "hi": "रक्त किस प्रमुख जंतु ऊतक समूह में आता है?"
+      },
+      "options": [
+        {
+          "en": "Epithelial.",
+          "hi": "उपकला।"
+        },
+        {
+          "en": "Connective.",
+          "hi": "संयोजी।"
+        },
+        {
+          "en": "Muscular.",
+          "hi": "पेशीय।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Blood is a connective tissue with cells suspended in a fluid matrix, plasma.",
+        "hi": "रक्त संयोजी ऊतक (Connective tissue) है; उसकी कोशिकाएँ द्रव आधात्री प्लाज्मा में होती हैं।"
+      }
+    },
+    "realLife": {
+      "en": "Your skin surface protects, muscles move and nerves coordinate responses.",
+      "hi": "त्वचा की सतह सुरक्षा, पेशियाँ गति और तंत्रिकाएँ प्रतिक्रियाओं का समन्वय करती हैं।"
+    },
+    "missions": [
+      {
+        "id": "animal-tissue-1",
+        "label": {
+          "en": "Choose muscle tissue and inspect the long fibres.",
+          "hi": "पेशी ऊतक चुनकर लम्बे तन्तु देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      },
+      {
+        "id": "animal-tissue-2",
+        "label": {
+          "en": "Choose nervous tissue and follow the axon.",
+          "hi": "तंत्रिका ऊतक चुनकर अक्षतन्तु का मार्ग देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 3,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "Epithelial tissue forms closely packed coverings or linings.",
+          "hi": "उपकला ऊतक (Epithelial tissue) पास-पास लगी कोशिकाओं से आवरण या अस्तर बनाता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "Connective-tissue cells are distributed within an extracellular matrix.",
+          "hi": "संयोजी ऊतक (Connective tissue) की कोशिकाएँ बाह्यकोशिकीय आधात्री में फैली होती हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 2
+        },
+        "text": {
+          "en": "Muscle fibres are specialised to contract and produce movement.",
+          "hi": "पेशी तन्तु (Muscle fibres) संकुचित होकर गति उत्पन्न करने के लिए विशिष्ट होते हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 3
+        },
+        "text": {
+          "en": "Nervous tissue receives and transmits information through nerve impulses.",
+          "hi": "तंत्रिका ऊतक (Nervous tissue) तंत्रिका आवेग द्वारा सूचना प्राप्त और संचारित करता है।"
+        }
+      }
+    ]
+  },
+  "muscle": {
+    "goal": {
+      "en": "Connect muscle contraction with shortening of a muscle fibre.",
+      "hi": "पेशी संकुचन (Muscle contraction) को पेशी तन्तु के छोटा होने से जोड़ें।"
+    },
+    "observe": {
+      "en": "Increase contraction and compare the length of the fibre with its relaxed state. A muscle pulls attached structures as it shortens; it does not actively push them.",
+      "hi": "संकुचन बढ़ाकर तन्तु की लम्बाई शिथिल अवस्था से तुलना करें। पेशी छोटी होकर जुड़ी संरचनाओं को खींचती है; स्वयं सक्रिय धक्का नहीं देती।"
+    },
+    "modelNote": {
+      "en": "The fibre is a schematic shape, not a detailed sarcomere simulation. The slider is an illustrative contraction setting, not a measured electrical stimulus or a safe exercise prescription.",
+      "hi": "तन्तु सांकेतिक आकार है, विस्तृत सार्कोमियर अनुकरण नहीं। नियंत्रण काल्पनिक संकुचन स्तर है, मापा विद्युत उद्दीपन या व्यायाम-निर्देश नहीं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "As the indicated contraction level increases, the displayed fibre should…",
+        "hi": "दिखाया संकुचन स्तर बढ़ने पर तन्तु…"
+      },
+      "options": [
+        {
+          "en": "Shorten compared with its relaxed length.",
+          "hi": "शिथिल लम्बाई की तुलना में छोटा होगा।"
+        },
+        {
+          "en": "Turn into a nerve cell.",
+          "hi": "तंत्रिका कोशिका बनेगा।"
+        },
+        {
+          "en": "Become a plant cell wall.",
+          "hi": "पादप भित्ति बनेगा।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Muscle contraction involves a reduction in the length of the contracting fibre; movement results from pulling on attached structures.",
+        "hi": "संकुचन में पेशी तन्तु की लम्बाई घटती है; जुड़ी संरचनाओं को खींचने से गति होती है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which tissue is both striated and involuntary?",
+        "hi": "कौन-सा ऊतक रेखित और अनैच्छिक दोनों है?"
+      },
+      "options": [
+        {
+          "en": "Typical skeletal muscle.",
+          "hi": "सामान्य कंकाली पेशी।"
+        },
+        {
+          "en": "Smooth muscle.",
+          "hi": "चिकनी पेशी।"
+        },
+        {
+          "en": "Cardiac muscle.",
+          "hi": "हृदय पेशी।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Cardiac muscle has striations but works without voluntary control.",
+        "hi": "हृदय पेशी (Cardiac muscle) में धारियाँ होती हैं, पर वह ऐच्छिक नियन्त्रण से नहीं चलती।"
+      }
+    },
+    "realLife": {
+      "en": "Bending your elbow involves muscle pull acting across the joint.",
+      "hi": "कोहनी मोड़ने में जोड़ के आर-पार पेशी का खिंचाव काम करता है।"
+    },
+    "missions": [
+      {
+        "id": "muscle-1",
+        "label": {
+          "en": "Set contraction to 30% and compare fibre length.",
+          "hi": "संकुचन 30% रखकर पेशी तन्तु की लम्बाई की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 30,
+          "control": 0
+        }
+      },
+      {
+        "id": "muscle-2",
+        "label": {
+          "en": "Set contraction to 60% and read the remaining-length factor.",
+          "hi": "संकुचन 60% रखकर शेष लम्बाई का गुणक पढ़ें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 60,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 30
+        },
+        "text": {
+          "en": "The symbolic fibre shortens as the contraction setting rises; it does not push by expanding.",
+          "hi": "संकुचन सेटिंग बढ़ाने पर सांकेतिक पेशी तन्तु छोटा होता है; यह फैलकर धक्का नहीं देता।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 30
+        },
+        "text": {
+          "en": "Stronger shortening in this diagram illustrates contraction, not a measured biological percentage for every muscle.",
+          "hi": "चित्र में अधिक छोटा होना संकुचन (Contraction) का संकेत है, हर पेशी का मापा हुआ जैविक प्रतिशत नहीं।"
+        }
+      }
+    ]
+  },
+  "neuron": {
+    "goal": {
+      "en": "Follow the direction and relative speed of a nerve signal.",
+      "hi": "तंत्रिका संकेत की दिशा और सापेक्ष गति देखें।"
+    },
+    "observe": {
+      "en": "Locate dendrites, the cell body and the axon. Increasing the speed factor reduces the time taken by the symbolic signal to travel along the same drawn axon.",
+      "hi": "द्रुमिकाएँ, कोशिकाकाय और अक्षतन्तु पहचानें। गति गुणक बढ़ाने पर सांकेतिक संकेत को उसी अक्षतन्तु पर कम समय लगता है।"
+    },
+    "modelNote": {
+      "en": "The moving dot marks signal propagation, not a particle carrying the message through the whole neuron. Real impulses are electrochemical and their speed depends on the nerve fibre.",
+      "hi": "चलता बिन्दु संकेत का प्रसार है, पूरे न्यूरॉन में संदेश लेकर दौड़ता कण नहीं। वास्तविक आवेग विद्युत-रासायनिक होते हैं; उनकी गति तन्तु पर निर्भर है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "For the same axon length, raising the signal-speed factor should make travel time…",
+        "hi": "अक्षतन्तु की लम्बाई समान हो तो संकेत-गति गुणक बढ़ाने से यात्रा समय…"
+      },
+      "options": [
+        {
+          "en": "Increase.",
+          "hi": "बढ़ेगा।"
+        },
+        {
+          "en": "Decrease.",
+          "hi": "घटेगा।"
+        },
+        {
+          "en": "Stay the same by definition.",
+          "hi": "परिभाषा से समान रहेगा।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "For a fixed distance, time equals distance divided by speed; a faster signal takes less time.",
+        "hi": "निश्चित दूरी पर समय = दूरी/गति; तेज संकेत कम समय लेता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which part carries a signal away from the cell body in the usual school diagram?",
+        "hi": "सामान्य विद्यालयी चित्र में कोशिकाकाय से दूर संकेत कौन ले जाता है?"
+      },
+      "options": [
+        {
+          "en": "Axon.",
+          "hi": "अक्षतन्तु।"
+        },
+        {
+          "en": "Only the nucleus.",
+          "hi": "केवल केन्द्रक।"
+        },
+        {
+          "en": "Cell wall.",
+          "hi": "कोशिका भित्ति।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "The axon conducts signals away from the cell body toward other cells.",
+        "hi": "अक्षतन्तु (Axon) कोशिकाकाय से अन्य कोशिकाओं की ओर संकेत ले जाता है।"
+      }
+    },
+    "realLife": {
+      "en": "Nerve pathways help coordinate the response when your hand touches a hot object.",
+      "hi": "गर्म वस्तु छूने पर हाथ की प्रतिक्रिया के समन्वय में तंत्रिका मार्ग काम करते हैं।"
+    },
+    "missions": [
+      {
+        "id": "neuron-1",
+        "label": {
+          "en": "Set the signal-speed factor to 0.5× and follow the impulse.",
+          "hi": "संकेत गति गुणक 0.5× रखकर आवेग का मार्ग देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0.5,
+          "control": 0
+        }
+      },
+      {
+        "id": "neuron-2",
+        "label": {
+          "en": "Set the signal-speed factor to 2× and compare travel time.",
+          "hi": "संकेत गति गुणक 2× रखकर गमन समय की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 1
+        },
+        "text": {
+          "en": "At this setting the symbolic impulse travels from the cell body along the axon.",
+          "hi": "इस सेटिंग पर सांकेतिक आवेग कोशिकाकाय से अक्षतन्तु (Axon) के साथ जाता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 1
+        },
+        "text": {
+          "en": "The impulse marker moves faster; it represents signal transmission, not a particle travelling through the whole neuron.",
+          "hi": "आवेग-चिह्न तेज जाता है; यह संकेत-संचरण दर्शाता है, पूरे न्यूरॉन में चलता कोई पदार्थ-कण नहीं।"
+        }
+      }
+    ]
+  },
+  "distance-time": {
+    "goal": {
+      "en": "Relate constant speed to the slope of a distance–time graph.",
+      "hi": "एकसमान चाल को दूरी–समय ग्राफ की ढाल से जोड़ें।"
+    },
+    "observe": {
+      "en": "Watch the object move while its graph grows. At constant speed, equal time intervals add equal distances; a higher speed gives a steeper line.",
+      "hi": "वस्तु की गति के साथ बनता ग्राफ देखें। एकसमान चाल पर बराबर समय में बराबर दूरी जुड़ती है; अधिक चाल से रेखा अधिक ढाल वाली होती है।"
+    },
+    "modelNote": {
+      "en": "The object follows a straight path without reversing. The graph uses calculated values; the object drawing and road are not life-size.",
+      "hi": "वस्तु बिना दिशा बदले सीधा चलती है। ग्राफ गणना के मान लेता है; वस्तु और रास्ता वास्तविक आकार में नहीं हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "At the same elapsed time, increasing the speed will make the travelled distance…",
+        "hi": "समान बीते समय पर चाल बढ़ाने से तय दूरी…"
+      },
+      "options": [
+        {
+          "en": "Increase.",
+          "hi": "बढ़ेगी।"
+        },
+        {
+          "en": "Decrease.",
+          "hi": "घटेगी।"
+        },
+        {
+          "en": "Always become zero.",
+          "hi": "हमेशा शून्य होगी।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "For constant speed, distance = speed × time. The distance–time slope equals speed.",
+        "hi": "एकसमान चाल पर दूरी = चाल × समय। दूरी–समय की ढाल चाल बताती है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "A horizontal distance–time graph indicates…",
+        "hi": "क्षैतिज दूरी–समय ग्राफ बताता है…"
+      },
+      "options": [
+        {
+          "en": "Constant non-zero speed.",
+          "hi": "स्थिर गैर-शून्य चाल।"
+        },
+        {
+          "en": "No additional distance is being travelled.",
+          "hi": "अतिरिक्त दूरी तय नहीं हो रही।"
+        },
+        {
+          "en": "Infinite speed.",
+          "hi": "अनन्त चाल।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "The distance does not increase as time passes, so the object is at rest in this model.",
+        "hi": "समय बीतने पर दूरी नहीं बढ़ती, इसलिए इस प्रतिरूप में वस्तु विराम पर है।"
+      }
+    },
+    "realLife": {
+      "en": "A walker covering equal distances each minute produces a straight distance–time line.",
+      "hi": "हर मिनट बराबर दूरी चलने वाले व्यक्ति का दूरी–समय ग्राफ सीधी रेखा देता है।"
+    },
+    "missions": [
+      {
+        "id": "distance-time-1",
+        "label": {
+          "en": "Set speed to 1 m/s and observe a shallow distance–time slope.",
+          "hi": "चाल 1 m/s रखकर दूरी–समय ग्राफ की कम ढाल देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "distance-time-2",
+        "label": {
+          "en": "Set speed to 10 m/s and compare the steeper slope.",
+          "hi": "चाल 10 m/s रखकर अधिक ढाल की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 10,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 5
+        },
+        "text": {
+          "en": "At this lower constant speed, distance increases linearly with a relatively shallow slope.",
+          "hi": "इस कम नियत चाल पर दूरी रैखिक रूप से बढ़ती है और ग्राफ की ढाल अपेक्षाकृत कम है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 5
+        },
+        "text": {
+          "en": "A higher constant speed gives a steeper distance–time graph, not a curved graph.",
+          "hi": "अधिक नियत चाल से दूरी–समय ग्राफ की ढाल बढ़ती है; ग्राफ वक्र नहीं बनता।"
+        }
+      }
+    ]
+  },
+  "velocity-time": {
+    "goal": {
+      "en": "Connect constant acceleration to velocity–time slope and displacement area.",
+      "hi": "एकसमान त्वरण को वेग–समय की ढाल और विस्थापन क्षेत्रफल से जोड़ें।"
+    },
+    "observe": {
+      "en": "Change acceleration and compare the rise in velocity over the same time. The graph slope gives acceleration; the signed area under it gives displacement.",
+      "hi": "त्वरण बदलकर समान समय में वेग की वृद्धि तुलना करें। ग्राफ की ढाल त्वरण और उसके नीचे का चिह्नयुक्त क्षेत्रफल विस्थापन देता है।"
+    },
+    "modelNote": {
+      "en": "Motion is along one straight line with constant acceleration during each run. The graph does not include friction or changing acceleration unless explicitly selected.",
+      "hi": "हर बार गति एक सीधी रेखा में स्थिर त्वरण से है। ग्राफ में घर्षण या बदलता त्वरण शामिल नहीं, जब तक स्पष्ट रूप से न चुना जाए।"
+    },
+    "prediction": {
+      "question": {
+        "en": "With the same initial velocity, increasing acceleration makes the velocity–time line…",
+        "hi": "प्रारम्भिक वेग समान रखकर त्वरण बढ़ाने से वेग–समय रेखा…"
+      },
+      "options": [
+        {
+          "en": "Less steep.",
+          "hi": "कम ढाल वाली होगी।"
+        },
+        {
+          "en": "Always horizontal.",
+          "hi": "हमेशा क्षैतिज होगी।"
+        },
+        {
+          "en": "Steeper.",
+          "hi": "अधिक ढाल वाली होगी।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "The slope is Δv/Δt = a. A greater acceleration adds more velocity in each second.",
+        "hi": "ढाल Δv/Δt = a है। अधिक त्वरण हर सेकण्ड अधिक वेग जोड़ता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "What does the signed area under a velocity–time graph represent?",
+        "hi": "वेग–समय ग्राफ के नीचे का चिह्नयुक्त क्षेत्रफल क्या बताता है?"
+      },
+      "options": [
+        {
+          "en": "Displacement.",
+          "hi": "विस्थापन।"
+        },
+        {
+          "en": "Mass.",
+          "hi": "द्रव्यमान।"
+        },
+        {
+          "en": "Force in every situation.",
+          "hi": "हर स्थिति में बल।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Velocity multiplied by a time interval gives displacement; adding intervals gives the graph area.",
+        "hi": "वेग और समयान्तराल का गुणन विस्थापन देता है; सभी अन्तरालों को जोड़ने पर ग्राफ का क्षेत्रफल मिलता है।"
+      }
+    },
+    "realLife": {
+      "en": "A steadily accelerating trolley has a sloping velocity–time graph.",
+      "hi": "स्थिर त्वरण वाली गाड़ी का वेग–समय ग्राफ ढाल वाला होता है।"
+    },
+    "missions": [
+      {
+        "id": "velocity-time-1",
+        "label": {
+          "en": "Set acceleration to 0 m/s² and inspect the horizontal velocity graph.",
+          "hi": "त्वरण 0 m/s² रखकर क्षैतिज वेग ग्राफ देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0,
+          "control": 0
+        }
+      },
+      {
+        "id": "velocity-time-2",
+        "label": {
+          "en": "Set acceleration to 5 m/s² and compare its slope.",
+          "hi": "त्वरण 5 m/s² रखकर ग्राफ की ढाल की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 5,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "Zero acceleration keeps the initial velocity at 2 m/s; the velocity–time graph is horizontal.",
+          "hi": "शून्य त्वरण पर प्रारम्भिक वेग 2 m/s बना रहता है; वेग–समय ग्राफ क्षैतिज है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 0
+        },
+        "text": {
+          "en": "Positive constant acceleration makes velocity rise linearly; the area under the graph gives displacement.",
+          "hi": "धनात्मक नियत त्वरण से वेग रैखिक रूप से बढ़ता है; ग्राफ के नीचे का क्षेत्रफल विस्थापन देता है।"
+        }
+      }
+    ]
+  },
+  "circular": {
+    "goal": {
+      "en": "Explain why constant speed around a circle still involves acceleration.",
+      "hi": "समझें कि वृत्त पर स्थिर चाल में भी त्वरण क्यों होता है।"
+    },
+    "observe": {
+      "en": "Follow the tangential velocity arrow as it changes direction. The inward arrow shows centripetal acceleration, which increases when speed rises at the same radius.",
+      "hi": "स्पर्शरेखीय वेग-तीर की बदलती दिशा देखें। भीतर का तीर अभिकेन्द्रीय त्वरण दिखाता है, जो समान त्रिज्या पर चाल बढ़ने से बढ़ता है।"
+    },
+    "modelNote": {
+      "en": "The circle is ideal and its radius is fixed for the comparison. Arrow lengths are visual aids; the object is assumed to remain on the circular path.",
+      "hi": "तुलना में वृत्त आदर्श और त्रिज्या स्थिर है। तीरों की लम्बाई दृश्य सहायता है; वस्तु का वृत्तीय पथ पर बने रहना मानते हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "At the same radius, doubling the speed makes centripetal acceleration…",
+        "hi": "समान त्रिज्या पर चाल दोगुनी करने से अभिकेन्द्रीय त्वरण…"
+      },
+      "options": [
+        {
+          "en": "Twice as large.",
+          "hi": "दोगुना होगा।"
+        },
+        {
+          "en": "Four times as large.",
+          "hi": "चार गुना होगा।"
+        },
+        {
+          "en": "Zero.",
+          "hi": "शून्य होगा।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "The relation a = v²/r means acceleration depends on the square of speed.",
+        "hi": "सम्बन्ध a = v²/r के अनुसार त्वरण चाल के वर्ग पर निर्भर है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "After one complete circle, the displacement is…",
+        "hi": "एक पूरा चक्कर लगाने पर विस्थापन है…"
+      },
+      "options": [
+        {
+          "en": "The full circumference.",
+          "hi": "पूरी परिधि।"
+        },
+        {
+          "en": "One radius.",
+          "hi": "एक त्रिज्या।"
+        },
+        {
+          "en": "Zero.",
+          "hi": "शून्य।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "The object returns to its initial position, although it has travelled a non-zero distance.",
+        "hi": "वस्तु प्रारम्भिक स्थान पर लौटती है, भले उसने गैर-शून्य दूरी तय की हो।"
+      }
+    },
+    "realLife": {
+      "en": "A runner on a circular track changes velocity direction even at steady speed.",
+      "hi": "गोल ट्रैक पर स्थिर चाल वाला धावक भी वेग की दिशा बदलता रहता है।"
+    },
+    "missions": [
+      {
+        "id": "circular-1",
+        "label": {
+          "en": "Set speed to 1 m/s and follow the changing velocity direction.",
+          "hi": "चाल 1 m/s रखकर बदलती वेग-दिशा देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "circular-2",
+        "label": {
+          "en": "Set speed to 5 m/s and compare centripetal acceleration.",
+          "hi": "चाल 5 m/s रखकर केन्द्राभिमुख त्वरण की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 5,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 2.5
+        },
+        "text": {
+          "en": "Even at constant speed, circular motion changes velocity because its direction keeps changing.",
+          "hi": "नियत चाल पर भी वृत्तीय गति में दिशा बदलती रहती है, इसलिए वेग बदलता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 2.5
+        },
+        "text": {
+          "en": "At fixed radius, centripetal acceleration increases with the square of speed.",
+          "hi": "नियत त्रिज्या पर केन्द्राभिमुख त्वरण (Centripetal acceleration) चाल के वर्ग के अनुसार बढ़ता है।"
+        }
+      }
+    ]
+  },
+  "trolley": {
+    "goal": {
+      "en": "Use F = ma to compare the acceleration of a trolley.",
+      "hi": "F = ma से गाड़ी के त्वरण की तुलना करें।"
+    },
+    "observe": {
+      "en": "Raise the net force while keeping mass fixed, then compare the acceleration. If mass is changed, use the new F/m ratio rather than judging only the animation.",
+      "hi": "द्रव्यमान स्थिर रखकर परिणामी बल बढ़ाएँ और त्वरण तुलना करें। द्रव्यमान भी बदलें तो केवल दृश्य नहीं, नया F/m अनुपात देखें।"
+    },
+    "modelNote": {
+      "en": "The control is net force, so friction and other forces have already been combined or neglected. The trolley moves along an ideal straight track with constant mass.",
+      "hi": "नियंत्रण परिणामी बल है, इसलिए घर्षण और अन्य बल पहले ही जोड़े या उपेक्षित हैं। गाड़ी आदर्श सीधे रास्ते पर स्थिर द्रव्यमान से चलती है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "With mass unchanged, doubling the net force makes acceleration…",
+        "hi": "द्रव्यमान समान रखकर परिणामी बल दोगुना करने से त्वरण…"
+      },
+      "options": [
+        {
+          "en": "Double.",
+          "hi": "दोगुना होगा।"
+        },
+        {
+          "en": "Half.",
+          "hi": "आधा होगा।"
+        },
+        {
+          "en": "Stay unchanged.",
+          "hi": "वही रहेगा।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Newton’s second law gives a = F/m, so acceleration is directly proportional to net force for fixed mass.",
+        "hi": "न्यूटन का द्वितीय नियम a = F/m देता है; स्थिर द्रव्यमान पर त्वरण परिणामी बल के समानुपाती है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "A 2 kg trolley under a net force of 6 N has acceleration…",
+        "hi": "2 kg गाड़ी पर 6 N परिणामी बल से त्वरण होगा…"
+      },
+      "options": [
+        {
+          "en": "12 m/s²",
+          "hi": "12 m/s²"
+        },
+        {
+          "en": "3 m/s²",
+          "hi": "3 m/s²"
+        },
+        {
+          "en": "0.33 m/s²",
+          "hi": "0.33 m/s²"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "a = F/m = 6/2 = 3 m/s².",
+        "hi": "a = F/m = 6/2 = 3 m/s²।"
+      }
+    },
+    "realLife": {
+      "en": "An empty shopping trolley is easier to accelerate than a full one with the same push.",
+      "hi": "समान धक्के से खाली खरीदारी गाड़ी को भरी गाड़ी से अधिक त्वरण देना आसान है।"
+    },
+    "missions": [
+      {
+        "id": "trolley-1",
+        "label": {
+          "en": "Set net force to 0 N and check that acceleration is zero.",
+          "hi": "परिणामी बल 0 N रखकर शून्य त्वरण जाँचें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0,
+          "control": 0
+        }
+      },
+      {
+        "id": "trolley-2",
+        "label": {
+          "en": "Set net force to 12 N and compare acceleration at the chosen mass.",
+          "hi": "परिणामी बल 12 N रखकर चुने द्रव्यमान पर त्वरण देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 12,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "With zero net force the trolley has zero acceleration; this model starts it from rest.",
+          "hi": "शून्य परिणामी बल पर गाड़ी का त्वरण शून्य है; यह मॉडल उसे विराम से शुरू करता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 0
+        },
+        "text": {
+          "en": "Acceleration equals net force divided by mass; changing mass also changes the response.",
+          "hi": "त्वरण (Acceleration) परिणामी बल को द्रव्यमान से भाग देने पर मिलता है; द्रव्यमान बदलने से प्रतिक्रिया भी बदलती है।"
+        }
+      }
+    ]
+  },
+  "momentum": {
+    "goal": {
+      "en": "Connect momentum to both mass and velocity.",
+      "hi": "संवेग (Momentum) को द्रव्यमान और वेग दोनों से जोड़ें।"
+    },
+    "observe": {
+      "en": "Keep velocity the same and change mass. The momentum readout grows in direct proportion to mass; its direction is the direction of velocity.",
+      "hi": "वेग समान रखकर द्रव्यमान बदलें। संवेग द्रव्यमान के समानुपात में बढ़ता है; उसकी दिशा वेग जैसी है।"
+    },
+    "modelNote": {
+      "en": "The displayed motion is ideal and does not simulate a real collision or injury. The calculation uses the chosen mass and velocity, with no external impulse in the comparison.",
+      "hi": "दृश्य आदर्श है और वास्तविक टक्कर या चोट का अनुकरण नहीं। तुलना में चुने द्रव्यमान-वेग से गणना होती है; बाहरी आवेग शामिल नहीं है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "At the same velocity, doubling mass makes momentum…",
+        "hi": "समान वेग पर द्रव्यमान दोगुना करने से संवेग…"
+      },
+      "options": [
+        {
+          "en": "Half.",
+          "hi": "आधा होगा।"
+        },
+        {
+          "en": "Unchanged.",
+          "hi": "वही रहेगा।"
+        },
+        {
+          "en": "Double.",
+          "hi": "दोगुना होगा।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Momentum p = mv, so multiplying mass by 2 multiplies momentum by 2 when velocity is fixed.",
+        "hi": "संवेग p = mv है; वेग स्थिर हो तो द्रव्यमान 2 गुना करने पर संवेग भी 2 गुना होता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "The SI unit of momentum is…",
+        "hi": "संवेग की SI इकाई है…"
+      },
+      "options": [
+        {
+          "en": "kg·m/s",
+          "hi": "kg·m/s"
+        },
+        {
+          "en": "N/m²",
+          "hi": "N/m²"
+        },
+        {
+          "en": "J/s",
+          "hi": "J/s"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Mass in kg multiplied by velocity in m/s gives kg·m/s.",
+        "hi": "kg में द्रव्यमान और m/s में वेग का गुणन kg·m/s देता है।"
+      }
+    },
+    "realLife": {
+      "en": "A heavy ball and a light ball at the same velocity carry different momenta.",
+      "hi": "समान वेग पर भारी और हल्की गेंदों के संवेग अलग होते हैं।"
+    },
+    "missions": [
+      {
+        "id": "momentum-1",
+        "label": {
+          "en": "Set mass to 1 kg and read momentum at the chosen velocity.",
+          "hi": "द्रव्यमान 1 kg रखकर चुने वेग पर संवेग पढ़ें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "momentum-2",
+        "label": {
+          "en": "Set mass to 5 kg and compare momentum at the same velocity.",
+          "hi": "द्रव्यमान 5 kg रखकर समान वेग पर संवेग की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 5,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 2.5
+        },
+        "text": {
+          "en": "Momentum depends on both mass and velocity; its SI unit is kg·m/s.",
+          "hi": "संवेग (Momentum) द्रव्यमान और वेग दोनों पर निर्भर है; इसका SI मात्रक kg·m/s है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 2.5
+        },
+        "text": {
+          "en": "At the same velocity, a greater mass gives greater momentum, even when the motion looks equally fast.",
+          "hi": "समान वेग पर अधिक द्रव्यमान से अधिक संवेग मिलता है, भले ही दोनों की चाल बराबर दिखे।"
+        }
+      }
+    ]
+  },
+  "inertia": {
+    "goal": {
+      "en": "Connect a short contact time with a small horizontal change in a coin’s motion.",
+      "hi": "कम सम्पर्क समय को सिक्के की कम क्षैतिज गति-परिवर्तन से जोड़ें।"
+    },
+    "observe": {
+      "en": "Compare a quick card pull with a longer contact. In the simplified friction model, a longer contact gives the coin a larger horizontal impulse.",
+      "hi": "कार्ड जल्दी खींचने और अधिक सम्पर्क की तुलना करें। सरल घर्षण प्रतिरूप में अधिक सम्पर्क समय सिक्के को अधिक क्षैतिज आवेग देता है।"
+    },
+    "modelNote": {
+      "en": "Friction is idealised and the drawing is not a reliable prediction of whether a real coin lands in a cup. Contact, card shape and pull direction matter. Use only a safe tabletop demonstration.",
+      "hi": "घर्षण आदर्श माना गया है; चित्र वास्तविक सिक्का कप में गिरेगा या नहीं इसका भरोसेमन्द अनुमान नहीं। सम्पर्क, कार्ड और खिंचाव-दिशा प्रभाव डालते हैं। सुरक्षित मेज पर ही गतिविधि करें।"
+    },
+    "prediction": {
+      "question": {
+        "en": "With the same average friction force, shortening contact time gives the coin…",
+        "hi": "औसत घर्षण बल समान हो तो सम्पर्क समय घटाने से सिक्के को…"
+      },
+      "options": [
+        {
+          "en": "A larger horizontal impulse.",
+          "hi": "अधिक क्षैतिज आवेग मिलेगा।"
+        },
+        {
+          "en": "A smaller horizontal impulse.",
+          "hi": "कम क्षैतिज आवेग मिलेगा।"
+        },
+        {
+          "en": "A new mass of zero.",
+          "hi": "नया शून्य द्रव्यमान मिलेगा।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Impulse equals average force × time. Shorter contact changes horizontal momentum less, so the coin better retains its initial horizontal state.",
+        "hi": "आवेग (Impulse) = औसत बल × समय। कम सम्पर्क से क्षैतिज संवेग कम बदलता है और सिक्का अपनी प्रारम्भिक क्षैतिज अवस्था अधिक बनाए रखता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which law describes the tendency to remain at rest without a net external force?",
+        "hi": "परिणामी बाहरी बल न होने पर विराम बनाए रखने की प्रवृत्ति कौन-सा नियम बताता है?"
+      },
+      "options": [
+        {
+          "en": "Only the law of reflection.",
+          "hi": "केवल परावर्तन का नियम।"
+        },
+        {
+          "en": "Only the law of gravitation.",
+          "hi": "केवल गुरुत्वाकर्षण का नियम।"
+        },
+        {
+          "en": "Newton’s first law.",
+          "hi": "न्यूटन का प्रथम नियम।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Newton’s first law describes inertia, the resistance to a change of motion state.",
+        "hi": "न्यूटन का प्रथम नियम जड़त्व (Inertia), अर्थात गति-अवस्था में बदलाव के प्रतिरोध को बताता है।"
+      }
+    },
+    "realLife": {
+      "en": "When a bus brakes, passengers tend to continue moving forward.",
+      "hi": "बस रुकने पर यात्रियों का शरीर आगे बढ़ते रहने की प्रवृत्ति रखता है।"
+    },
+    "missions": [
+      {
+        "id": "inertia-1",
+        "label": {
+          "en": "Set contact time to 0.10 s and watch the nearly vertical drop.",
+          "hi": "सम्पर्क समय 0.10 s रखकर लगभग ऊर्ध्वाधर गिरना देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0.1,
+          "control": 0
+        }
+      },
+      {
+        "id": "inertia-2",
+        "label": {
+          "en": "Set contact time to 1 s and compare horizontal motion.",
+          "hi": "सम्पर्क समय 1 s रखकर क्षैतिज गति की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lt",
+          "value": 0.3
+        },
+        "text": {
+          "en": "Shorter contact gives the illustrative friction force less time to change the coin’s horizontal velocity.",
+          "hi": "कम सम्पर्क समय में सांकेतिक घर्षण बल को सिक्के का क्षैतिज वेग बदलने के लिए कम समय मिलता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gte",
+          "value": 0.3
+        },
+        "text": {
+          "en": "Longer contact produces a larger horizontal impulse in this simplified model.",
+          "hi": "इस सरल मॉडल में अधिक सम्पर्क समय से अधिक क्षैतिज आवेग (Impulse) मिलता है।"
+        }
+      }
+    ]
+  },
+  "orbit": {
+    "goal": {
+      "en": "Relate orbital radius to speed for an ideal circular gravitational orbit.",
+      "hi": "आदर्श वृत्तीय गुरुत्वीय कक्षा में त्रिज्या को चाल से जोड़ें।"
+    },
+    "observe": {
+      "en": "Increase orbital radius around the same central mass. The circular-orbit speed decreases and the time for one revolution increases.",
+      "hi": "समान केन्द्रीय द्रव्यमान के चारों ओर कक्षीय त्रिज्या बढ़ाएँ। वृत्तीय कक्षा की चाल घटती और एक चक्कर का समय बढ़ता है।"
+    },
+    "modelNote": {
+      "en": "The orbit is a circular two-body approximation with a fixed central mass. Sizes and time are scaled; changing the slider selects another ideal orbit rather than showing a real spacecraft manoeuvre.",
+      "hi": "कक्षा स्थिर केन्द्रीय द्रव्यमान वाला सरल द्विपिण्ड प्रतिरूप है। आकार-समय मापित हैं; नियंत्रण दूसरी आदर्श कक्षा चुनता है, वास्तविक यान की कक्षा-बदलने की क्रिया नहीं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "For the same central mass, a larger circular-orbit radius requires…",
+        "hi": "समान केन्द्रीय द्रव्यमान पर बड़ी वृत्तीय कक्षीय त्रिज्या के लिए…"
+      },
+      "options": [
+        {
+          "en": "A lower circular-orbit speed.",
+          "hi": "कम वृत्तीय कक्षीय चाल चाहिए।"
+        },
+        {
+          "en": "A higher circular-orbit speed in every case.",
+          "hi": "हर बार अधिक चाल चाहिए।"
+        },
+        {
+          "en": "No gravitational force at all.",
+          "hi": "गुरुत्व बल बिल्कुल नहीं चाहिए।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "For a circular orbit, v = √(GM/r). A larger r gives a smaller required speed; gravity still provides inward acceleration.",
+        "hi": "वृत्तीय कक्षा में v = √(GM/r)। बड़ा r कम आवश्यक चाल देता है; गुरुत्व फिर भी भीतर की ओर त्वरण देता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Gravity in a circular orbit acts mainly…",
+        "hi": "वृत्तीय कक्षा में गुरुत्व मुख्यतः…"
+      },
+      "options": [
+        {
+          "en": "Along the tangent.",
+          "hi": "स्पर्शरेखा की दिशा में लगता है।"
+        },
+        {
+          "en": "Toward the central body.",
+          "hi": "केन्द्रीय पिण्ड की ओर लगता है।"
+        },
+        {
+          "en": "Away from the central body.",
+          "hi": "केन्द्रीय पिण्ड से दूर लगता है।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "The attractive gravitational force supplies centripetal acceleration.",
+        "hi": "आकर्षण वाला गुरुत्व बल अभिकेन्द्रीय त्वरण देता है।"
+      }
+    },
+    "realLife": {
+      "en": "The Moon continually falls toward Earth while its sideways motion keeps it in orbit.",
+      "hi": "चन्द्रमा पृथ्वी की ओर लगातार गिरता है, जबकि उसकी अनुप्रस्थ गति उसे कक्षा में बनाए रखती है।"
+    },
+    "missions": [
+      {
+        "id": "orbit-1",
+        "label": {
+          "en": "Double the radius factor and compare orbital speed and period.",
+          "hi": "त्रिज्या गुणक 2× करके कक्षीय चाल और परिक्रमण काल देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      },
+      {
+        "id": "orbit-2",
+        "label": {
+          "en": "Set radius factor to 3× and follow the slower circular orbit.",
+          "hi": "त्रिज्या गुणक 3× रखकर धीमी वृत्तीय कक्षा देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 3,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 1.8
+        },
+        "text": {
+          "en": "For the same central mass, a smaller circular orbit requires a higher orbital speed.",
+          "hi": "समान केन्द्रीय द्रव्यमान के लिए छोटी वृत्तीय कक्षा में अधिक कक्षीय चाल चाहिए।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 1.8
+        },
+        "text": {
+          "en": "A larger circular-orbit radius gives a lower speed and a longer period around the same central mass.",
+          "hi": "समान केन्द्रीय द्रव्यमान के चारों ओर बड़ी वृत्तीय त्रिज्या पर चाल कम और परिक्रमण काल अधिक होता है।"
+        }
+      }
+    ]
+  },
+  "free-fall": {
+    "goal": {
+      "en": "Compare free fall of different masses when air resistance is absent.",
+      "hi": "वायु प्रतिरोध न होने पर अलग द्रव्यमानों का मुक्त पतन तुलना करें।"
+    },
+    "observe": {
+      "en": "Release the two objects from the same height and initial rest. They fall together for any chosen g, while a larger g produces a faster fall over the same time.",
+      "hi": "दोनों वस्तुओं को समान ऊँचाई से विराम में छोड़ें। चुने g पर वे साथ गिरती हैं; अधिक g से समान समय में गिरने की गति अधिक होती है।"
+    },
+    "modelNote": {
+      "en": "Air resistance is neglected and g is constant during each short fall. Object sizes are illustrative and do not represent aerodynamic effects.",
+      "hi": "वायु प्रतिरोध उपेक्षित और छोटे पतन में g स्थिर है। वस्तुओं के आकार सांकेतिक हैं; उनके वायुगतिकीय प्रभाव शामिल नहीं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "At the same elapsed time after release from rest, increasing g makes the fall distance…",
+        "hi": "विराम से छोड़ने के बाद समान समय पर g बढ़ाने से गिरने की दूरी…"
+      },
+      "options": [
+        {
+          "en": "Smaller.",
+          "hi": "कम होगी।"
+        },
+        {
+          "en": "Independent of g.",
+          "hi": "g से स्वतंत्र होगी।"
+        },
+        {
+          "en": "Larger.",
+          "hi": "अधिक होगी।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "For ideal free fall from rest, s = ½gt². At fixed time, distance is proportional to g.",
+        "hi": "आदर्श मुक्त पतन में s = ½gt²। समय स्थिर हो तो दूरी g के समानुपाती है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "In a vacuum at one location, which falls faster from the same height and rest?",
+        "hi": "एक स्थान पर निर्वात में समान ऊँचाई से विराम में छोड़ने पर कौन तेज गिरेगा?"
+      },
+      "options": [
+        {
+          "en": "Both have the same acceleration.",
+          "hi": "दोनों का त्वरण समान होगा।"
+        },
+        {
+          "en": "Always the heavier object.",
+          "hi": "हमेशा भारी वस्तु।"
+        },
+        {
+          "en": "Always the lighter object.",
+          "hi": "हमेशा हल्की वस्तु।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Ignoring air resistance, gravitational acceleration is independent of the falling object’s mass.",
+        "hi": "वायु प्रतिरोध हटाने पर गुरुत्वीय त्वरण गिरती वस्तु के द्रव्यमान से स्वतंत्र है।"
+      }
+    },
+    "realLife": {
+      "en": "A feather and a ball fall together in a suitable evacuated chamber.",
+      "hi": "उपयुक्त निर्वात कक्ष में पंख और गेंद साथ गिर सकते हैं।"
+    },
+    "missions": [
+      {
+        "id": "free-fall-1",
+        "label": {
+          "en": "Set gravitational acceleration to 1.6 m/s² and compare both masses.",
+          "hi": "गुरुत्वीय त्वरण 1.6 m/s² रखकर दोनों द्रव्यमान देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1.6,
+          "control": 0
+        }
+      },
+      {
+        "id": "free-fall-2",
+        "label": {
+          "en": "Set gravitational acceleration to 10 m/s² and compare falling time.",
+          "hi": "गुरुत्वीय त्वरण 10 m/s² रखकर गिरने के समय की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 10,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 5
+        },
+        "text": {
+          "en": "At a lower g both masses fall more slowly, yet their acceleration is still equal when air resistance is ignored.",
+          "hi": "कम g पर दोनों पिण्ड धीमे गिरते हैं, फिर भी वायु प्रतिरोध न मानने पर उनका त्वरण समान है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 5
+        },
+        "text": {
+          "en": "A larger g shortens the falling time; it does not make the heavier object accelerate more than the lighter one.",
+          "hi": "अधिक g से गिरने का समय घटता है; भारी पिण्ड का त्वरण हल्के पिण्ड से अधिक नहीं हो जाता।"
+        }
+      }
+    ]
+  },
+  "earth-moon": {
+    "goal": {
+      "en": "Distinguish mass from weight by comparing Earth and Moon.",
+      "hi": "पृथ्वी-चन्द्रमा की तुलना से द्रव्यमान और भार अलग करें।"
+    },
+    "observe": {
+      "en": "Change the mass and compare the two weights. At any chosen mass, Earth’s larger g produces a larger weight; the object’s mass is the same on both worlds.",
+      "hi": "द्रव्यमान बदलकर दोनों भार तुलना करें। हर द्रव्यमान पर पृथ्वी का अधिक g अधिक भार देता है; वस्तु का द्रव्यमान दोनों जगह समान है।"
+    },
+    "modelNote": {
+      "en": "Use near-surface approximations g = 9.8 m/s² on Earth and about 1.62 m/s² on the Moon. Planet drawings, arrows and object sizes are not to scale.",
+      "hi": "सतह के पास पृथ्वी पर g = 9.8 m/s² और चन्द्रमा पर लगभग 1.62 m/s² मानते हैं। पिण्डों के चित्र, तीर और वस्तु का आकार अनुपात में नहीं हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "If the selected mass doubles, its weight on each world…",
+        "hi": "चुना द्रव्यमान दोगुना हो तो दोनों जगह उसका भार…"
+      },
+      "options": [
+        {
+          "en": "Becomes zero.",
+          "hi": "शून्य होगा।"
+        },
+        {
+          "en": "Doubles.",
+          "hi": "दोगुना होगा।"
+        },
+        {
+          "en": "Becomes equal on Earth and Moon.",
+          "hi": "पृथ्वी और चन्द्रमा पर बराबर हो जाएगा।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "W = mg: with each location’s g fixed, doubling m doubles W. The difference between the two g values remains.",
+        "hi": "W = mg में हर स्थान का g स्थिर हो तो m दोगुना करने से W दोगुना होता है। दोनों स्थानों के g का अन्तर बना रहता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which quantity remains the same when the object is taken from Earth to Moon?",
+        "hi": "वस्तु को पृथ्वी से चन्द्रमा ले जाने पर कौन-सी राशि समान रहती है?"
+      },
+      "options": [
+        {
+          "en": "Weight.",
+          "hi": "भार।"
+        },
+        {
+          "en": "Local g.",
+          "hi": "स्थानीय g।"
+        },
+        {
+          "en": "Mass.",
+          "hi": "द्रव्यमान।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Mass is unchanged; weight depends on the local gravitational acceleration.",
+        "hi": "द्रव्यमान (Mass) समान रहता है; भार (Weight) स्थानीय गुरुत्वीय त्वरण पर निर्भर है।"
+      }
+    },
+    "realLife": {
+      "en": "An astronaut is easier to lift on the Moon but has not lost most of their mass.",
+      "hi": "चन्द्रमा पर अन्तरिक्ष यात्री को उठाना आसान है, पर उसका अधिकांश द्रव्यमान कम नहीं हुआ।"
+    },
+    "missions": [
+      {
+        "id": "earth-moon-1",
+        "label": {
+          "en": "Set mass to 1 kg and read its weight at the selected location.",
+          "hi": "द्रव्यमान 1 kg रखकर चुने स्थान पर उसका भार पढ़ें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "earth-moon-2",
+        "label": {
+          "en": "Set mass to 50 kg and compare Earth and Moon using the location selector.",
+          "hi": "द्रव्यमान 50 kg रखकर स्थान विकल्प से पृथ्वी और चन्द्रमा की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 50,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 25
+        },
+        "text": {
+          "en": "Mass is measured in kg; weight is the gravitational force mg and is measured in N.",
+          "hi": "द्रव्यमान kg में मापा जाता है; भार (Weight) गुरुत्वीय बल mg है और N में मापा जाता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 25
+        },
+        "text": {
+          "en": "A larger mass increases weight at either location; the same mass has less weight on the Moon because its g is lower.",
+          "hi": "अधिक द्रव्यमान से दोनों स्थानों पर भार बढ़ता है; कम g के कारण समान द्रव्यमान का भार चन्द्रमा पर कम है।"
+        }
+      }
+    ]
+  },
+  "buoyancy": {
+    "goal": {
+      "en": "Use object density to explain floating, neutral buoyancy and sinking.",
+      "hi": "वस्तु के घनत्व से तैरना, उदासीन उत्प्लावन और डूबना समझें।"
+    },
+    "observe": {
+      "en": "Compare object density with water at 1000 kg/m³. A floating object adjusts its submerged volume until buoyant force balances its weight; a denser object tends to sink.",
+      "hi": "वस्तु के घनत्व को 1000 kg/m³ जल से तुलना करें। तैरती वस्तु का डूबा आयतन ऐसा होता है कि उत्प्लावन बल भार को संतुलित करे; अधिक घनी वस्तु डूबने की प्रवृत्ति रखती है।"
+    },
+    "modelNote": {
+      "en": "This is an ideal equilibrium comparison for a uniform object. It ignores surface tension, waves and water entering cavities; arrows show forces symbolically.",
+      "hi": "यह समान घनत्व वाली वस्तु का आदर्श संतुलन है। पृष्ठ तनाव, तरंगें और खोखले भाग में जल जाना उपेक्षित हैं; तीर बलों के संकेत हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "If a floating object’s average density rises above water’s density without changing its total volume, it tends to…",
+        "hi": "कुल आयतन समान रहते तैरती वस्तु का औसत घनत्व जल से अधिक हो जाए तो वह…"
+      },
+      "options": [
+        {
+          "en": "Sink.",
+          "hi": "डूबने की प्रवृत्ति रखेगी।"
+        },
+        {
+          "en": "Float higher.",
+          "hi": "और ऊपर तैरेगी।"
+        },
+        {
+          "en": "Lose gravity.",
+          "hi": "गुरुत्व खो देगी।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Its weight then exceeds the maximum buoyant force available from that fully submerged volume.",
+        "hi": "तब उसका भार पूरी डूबी वस्तु के उस आयतन से मिलने वाले अधिकतम उत्प्लावन बल से अधिक होता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "For a freely floating object at rest, buoyant force is…",
+        "hi": "स्वतंत्र रूप से स्थिर तैरती वस्तु पर उत्प्लावन बल…"
+      },
+      "options": [
+        {
+          "en": "Always zero.",
+          "hi": "हमेशा शून्य है।"
+        },
+        {
+          "en": "Equal to the object’s weight.",
+          "hi": "वस्तु के भार के बराबर है।"
+        },
+        {
+          "en": "Always greater than weight.",
+          "hi": "हमेशा भार से अधिक है।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Upward and downward forces balance in floating equilibrium.",
+        "hi": "तैरने के संतुलन में ऊपर और नीचे के बल बराबर होते हैं।"
+      }
+    },
+    "realLife": {
+      "en": "A hollow steel ship can float because its overall average density is low enough.",
+      "hi": "खोखला इस्पात का जहाज कम समग्र औसत घनत्व के कारण तैर सकता है।"
+    },
+    "missions": [
+      {
+        "id": "buoyancy-1",
+        "label": {
+          "en": "Set object density to 500 kg/m³ and inspect partial submergence.",
+          "hi": "वस्तु का घनत्व 500 kg/m³ रखकर आंशिक डूबना देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 500,
+          "control": 0
+        }
+      },
+      {
+        "id": "buoyancy-2",
+        "label": {
+          "en": "Set density to 1500 kg/m³ and compare weight with buoyant force.",
+          "hi": "घनत्व 1500 kg/m³ रखकर भार और उत्प्लावन बल की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1500,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lt",
+          "value": 1000
+        },
+        "text": {
+          "en": "An object less dense than water can float partly submerged when buoyant force balances its weight.",
+          "hi": "जल से कम घनत्व वाली वस्तु आंशिक रूप से डूबकर तैर सकती है, जब उत्प्लावन बल उसके भार को संतुलित करता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1000
+        },
+        "text": {
+          "en": "Equal object and water density gives neutral buoyancy for the fully submerged ideal object.",
+          "hi": "वस्तु और जल का घनत्व समान होने पर पूरी डूबी आदर्श वस्तु की उत्प्लावकता उदासीन होती है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 1000
+        },
+        "text": {
+          "en": "This object is denser than water, so its weight exceeds the maximum buoyant force shown here.",
+          "hi": "इस वस्तु का घनत्व जल से अधिक है, इसलिए इसका भार यहाँ दिखाए अधिकतम उत्प्लावन बल से अधिक है।"
+        }
+      }
+    ]
+  },
+  "pendulum": {
+    "goal": {
+      "en": "Track the exchange of potential and kinetic energy.",
+      "hi": "स्थितिज और गतिज ऊर्जा के आदान-प्रदान को देखें।"
+    },
+    "observe": {
+      "en": "At the highest point, potential energy is greatest. At the bottom, kinetic energy is greatest; the total stays constant.",
+      "hi": "सबसे ऊँचे बिन्दु पर स्थितिज ऊर्जा अधिक है। नीचे गतिज ऊर्जा अधिक होती है; कुल ऊर्जा स्थिर रहती है।"
+    },
+    "modelNote": {
+      "en": "Timing uses a small-angle approximation; the displayed ideal energies conserve energy exactly. Mass = 1 kg, length = 1.5 m, g = 9.8 m/s^2; drag is ignored.",
+      "hi": "समय-क्रम छोटे कोण का सन्निकटन है; दिखाई ऊर्जा आदर्श संरक्षण से निकाली गई है। द्रव्यमान 1 kg, लम्बाई 1.5 m, g = 9.8 m/s^2; घर्षण उपेक्षित है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "What happens to total mechanical energy if the release angle increases?",
+        "hi": "प्रारम्भिक कोण बढ़ाने पर कुल यान्त्रिक ऊर्जा क्या होगी?"
+      },
+      "options": [
+        {
+          "en": "It increases.",
+          "hi": "बढ़ेगी।"
+        },
+        {
+          "en": "It becomes zero.",
+          "hi": "शून्य होगी।"
+        },
+        {
+          "en": "It must decrease.",
+          "hi": "अवश्य घटेगी।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "A larger release angle raises the bob farther above its lowest point, increasing initial potential energy.",
+        "hi": "बड़े प्रारम्भिक कोण से लोलक निचले बिन्दु से अधिक ऊपर होता है, इसलिए प्रारम्भिक स्थितिज ऊर्जा बढ़ती है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Where is the ideal pendulum fastest?",
+        "hi": "आदर्श लोलक की चाल कहाँ सबसे अधिक है?"
+      },
+      "options": [
+        {
+          "en": "At either end",
+          "hi": "दोनों छोरों पर"
+        },
+        {
+          "en": "At the lowest point",
+          "hi": "सबसे नीचे"
+        },
+        {
+          "en": "Everywhere equally",
+          "hi": "हर स्थान पर समान"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "At the bottom, the most potential energy has converted to kinetic energy.",
+        "hi": "निचले बिन्दु पर अधिकतम स्थितिज ऊर्जा गतिज ऊर्जा में बदल चुकी होती है।"
+      }
+    },
+    "realLife": {
+      "en": "A playground swing exchanges height and speed.",
+      "hi": "झूले में ऊँचाई और चाल एक-दूसरे में बदलते हैं।"
+    },
+    "missions": [
+      {
+        "id": "pendulum-1",
+        "label": {
+          "en": "Release from 10° and watch kinetic and potential energy exchange.",
+          "hi": "10° से छोड़कर गतिज और स्थितिज ऊर्जा का परिवर्तन देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 10,
+          "control": 0
+        }
+      },
+      {
+        "id": "pendulum-2",
+        "label": {
+          "en": "Release from 45° and compare the total mechanical energy.",
+          "hi": "45° से छोड़कर कुल यान्त्रिक ऊर्जा की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 45,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 25
+        },
+        "text": {
+          "en": "At a smaller release angle, the pendulum starts with less gravitational potential energy.",
+          "hi": "कम प्रारम्भिक कोण पर लोलक में आरम्भिक गुरुत्वीय स्थितिज ऊर्जा कम होती है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 25
+        },
+        "text": {
+          "en": "A larger release angle increases starting energy; KE and PE exchange while their ideal total stays constant.",
+          "hi": "बड़ा प्रारम्भिक कोण आरम्भिक ऊर्जा बढ़ाता है; गतिज और स्थितिज ऊर्जा बदलती हैं, पर उनका आदर्श योग स्थिर रहता है।"
+        }
+      }
+    ]
+  },
+  "work": {
+    "goal": {
+      "en": "Relate force, displacement and angle to work.",
+      "hi": "बल, विस्थापन और कोण को कार्य से जोड़ें।"
+    },
+    "observe": {
+      "en": "The green arrow is the force and the blue arrow is displacement. Change force or angle and compare the sign and value of work.",
+      "hi": "हरा तीर बल और नीला विस्थापन है। बल या कोण बदलकर कार्य का मान तथा चिह्न देखें।"
+    },
+    "modelNote": {
+      "en": "A constant force acts through the stated displacement. The display shows positions, not the time history of acceleration.",
+      "hi": "बताए विस्थापन में स्थिर बल माना गया है। चित्र स्थिति दिखाता है, त्वरण का पूरा समय-क्रम नहीं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "With displacement and a 0° angle fixed, what does doubling force do to work?",
+        "hi": "विस्थापन और 0° कोण स्थिर हों तो बल दोगुना करने पर कार्य क्या होगा?"
+      },
+      "options": [
+        {
+          "en": "Work halves.",
+          "hi": "आधा होगा।"
+        },
+        {
+          "en": "Work doubles.",
+          "hi": "दोगुना होगा।"
+        },
+        {
+          "en": "Work stays zero.",
+          "hi": "शून्य रहेगा।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "At 0°, W = Fs; work is proportional to force for a fixed displacement.",
+        "hi": "0° पर W = Fs; स्थिर विस्थापन में कार्य बल के समानुपाती है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "What is work when force is perpendicular to displacement?",
+        "hi": "बल विस्थापन के लम्बवत हो तो कार्य कितना है?"
+      },
+      "options": [
+        {
+          "en": "Zero",
+          "hi": "शून्य"
+        },
+        {
+          "en": "Always positive",
+          "hi": "हमेशा धनात्मक"
+        },
+        {
+          "en": "Always negative",
+          "hi": "हमेशा ऋणात्मक"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "cos 90° = 0, so W = Fs cosθ = 0.",
+        "hi": "cos 90° = 0, इसलिए W = Fs cosθ = 0।"
+      }
+    },
+    "realLife": {
+      "en": "Pushing a moving trolley can do positive work; friction usually does negative work.",
+      "hi": "चलती गाड़ी को आगे धकेलना धनात्मक कार्य और घर्षण सामान्यतः ऋणात्मक कार्य करता है।"
+    },
+    "missions": [
+      {
+        "id": "work-1",
+        "label": {
+          "en": "Set force to 0 N and verify zero work.",
+          "hi": "बल 0 N रखकर शून्य कार्य जाँचें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0,
+          "control": 0
+        }
+      },
+      {
+        "id": "work-2",
+        "label": {
+          "en": "Set force to 20 N and compare work at different force angles.",
+          "hi": "बल 20 N रखकर अलग बल-कोणों पर कार्य की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 20,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "With zero force, the work by that force is zero for every displacement setting.",
+          "hi": "शून्य बल पर उस बल का कार्य (Work) हर विस्थापन सेटिंग पर शून्य है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 0
+        },
+        "text": {
+          "en": "Work is Fs cosθ: for nonzero displacement and force, parallel, perpendicular and opposite directions give positive, zero and negative work respectively.",
+          "hi": "कार्य Fs cosθ है: अशून्य विस्थापन और बल के लिए समान, लम्बवत और विपरीत दिशाएँ क्रमशः धनात्मक, शून्य और ऋणात्मक कार्य देती हैं।"
+        }
+      }
+    ]
+  },
+  "fall-energy": {
+    "goal": {
+      "en": "Follow energy conversion during a fall.",
+      "hi": "गिरते समय ऊर्जा परिवर्तन देखें।"
+    },
+    "observe": {
+      "en": "As height decreases, the potential-energy bar shrinks and the kinetic-energy bar grows. Their sum remains fixed for one chosen release height.",
+      "hi": "ऊँचाई घटने पर स्थितिज ऊर्जा का स्तम्भ घटता और गतिज का बढ़ता है। चुनी प्रारम्भिक ऊँचाई के लिए योग स्थिर है।"
+    },
+    "modelNote": {
+      "en": "Mass = 2 kg, g = 10 m/s^2, release from rest, no air resistance. The cycle restarts after landing.",
+      "hi": "द्रव्यमान 2 kg, g = 10 m/s^2, विराम से छोड़ा गया और वायु प्रतिरोध नहीं है। जमीन तक पहुँचने पर चक्र फिर शुरू होता है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "How does doubling release height affect initial potential energy?",
+        "hi": "प्रारम्भिक ऊँचाई दोगुनी करने से स्थितिज ऊर्जा पर क्या प्रभाव होगा?"
+      },
+      "options": [
+        {
+          "en": "It doubles.",
+          "hi": "दोगुनी होगी।"
+        },
+        {
+          "en": "It halves.",
+          "hi": "आधी होगी।"
+        },
+        {
+          "en": "It disappears.",
+          "hi": "समाप्त होगी।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "U = mgh, so with fixed m and g, potential energy is proportional to height.",
+        "hi": "U = mgh; m और g स्थिर हों तो स्थितिज ऊर्जा ऊँचाई के समानुपाती है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "If air resistance heats the air, is total energy destroyed?",
+        "hi": "वायु प्रतिरोध से हवा गरम हो तो क्या कुल ऊर्जा नष्ट होती है?"
+      },
+      "options": [
+        {
+          "en": "Yes",
+          "hi": "हाँ"
+        },
+        {
+          "en": "Only for heavy objects",
+          "hi": "केवल भारी वस्तु में"
+        },
+        {
+          "en": "No, it changes form.",
+          "hi": "नहीं, रूप बदलता है।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Mechanical energy can become thermal energy while total energy remains conserved.",
+        "hi": "यान्त्रिक ऊर्जा ऊष्मीय ऊर्जा बन सकती है, जबकि कुल ऊर्जा संरक्षित रहती है।"
+      }
+    },
+    "realLife": {
+      "en": "Water falling from a height can drive a turbine.",
+      "hi": "ऊँचाई से गिरता जल टरबाइन चला सकता है।"
+    },
+    "missions": [
+      {
+        "id": "fall-energy-1",
+        "label": {
+          "en": "Set initial height to 1 m and compare KE and PE during the fall.",
+          "hi": "प्रारम्भिक ऊँचाई 1 m रखकर गिरते समय गतिज और स्थितिज ऊर्जा देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "fall-energy-2",
+        "label": {
+          "en": "Set initial height to 5 m and check the 100 J total energy.",
+          "hi": "प्रारम्भिक ऊँचाई 5 m रखकर 100 J कुल ऊर्जा जाँचें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 5,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 3
+        },
+        "text": {
+          "en": "Gravitational potential energy changes to kinetic energy as this 2 kg object falls without air resistance.",
+          "hi": "वायु प्रतिरोध के बिना गिरते इस 2 kg पिण्ड की गुरुत्वीय स्थितिज ऊर्जा गतिज ऊर्जा में बदलती है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 3
+        },
+        "text": {
+          "en": "Greater release height gives more total mechanical energy; the sum of KE and PE remains constant during each ideal fall.",
+          "hi": "अधिक प्रारम्भिक ऊँचाई पर कुल यान्त्रिक ऊर्जा अधिक है; हर आदर्श पतन में गतिज और स्थितिज ऊर्जा का योग स्थिर है।"
+        }
+      }
+    ]
+  },
+  "string-wave": {
+    "goal": {
+      "en": "Distinguish transverse vibration from wave travel.",
+      "hi": "अनुप्रस्थ कंपन और तरंग संचरण में अन्तर समझें।"
+    },
+    "observe": {
+      "en": "The highlighted string point moves across the direction of travel. At fixed wave speed, a higher frequency produces shorter wavelengths.",
+      "hi": "चिन्हित बिन्दु तरंग संचरण के लम्बवत चलता है। चाल स्थिर होने पर अधिक आवृत्ति से तरंगदैर्ध्य घटता है।"
+    },
+    "modelNote": {
+      "en": "This is a transverse string wave, not the path of air particles in sound. Wave speed is set to 4 m/s and playback is slowed.",
+      "hi": "यह डोरी की अनुप्रस्थ तरंग है, हवा में ध्वनि के कणों का पथ नहीं। तरंग चाल 4 m/s और प्रदर्शन धीमा है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "At fixed wave speed, what happens to wavelength when frequency rises?",
+        "hi": "तरंग चाल स्थिर हो तो आवृत्ति बढ़ने पर तरंगदैर्ध्य क्या होगा?"
+      },
+      "options": [
+        {
+          "en": "It rises.",
+          "hi": "बढ़ेगा।"
+        },
+        {
+          "en": "It decreases.",
+          "hi": "घटेगा।"
+        },
+        {
+          "en": "It is always unchanged.",
+          "hi": "हमेशा समान रहेगा।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "λ = v/f. Increasing f at fixed v makes λ smaller.",
+        "hi": "λ = v/f; v स्थिर और f बढ़ने पर λ घटता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "In a transverse wave, particle vibration is…",
+        "hi": "अनुप्रस्थ तरंग में कणों का कंपन होता है…"
+      },
+      "options": [
+        {
+          "en": "Parallel to travel",
+          "hi": "संचरण के समानान्तर"
+        },
+        {
+          "en": "Perpendicular to travel",
+          "hi": "संचरण के लम्बवत"
+        },
+        {
+          "en": "Absent",
+          "hi": "अनुपस्थित"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "Transverse vibration is perpendicular to the propagation direction.",
+        "hi": "अनुप्रस्थ कंपन तरंग संचरण दिशा के लम्बवत होता है।"
+      }
+    },
+    "realLife": {
+      "en": "A disturbed rope shows a transverse pulse.",
+      "hi": "हिलाई गई रस्सी पर अनुप्रस्थ स्पन्द दिखता है।"
+    },
+    "missions": [
+      {
+        "id": "string-wave-1",
+        "label": {
+          "en": "Set frequency to 1 Hz and inspect the long wavelength.",
+          "hi": "आवृत्ति 1 Hz रखकर लम्बी तरंगदैर्ध्य देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "string-wave-2",
+        "label": {
+          "en": "Set frequency to 5 Hz and compare wavelength at 4 m/s.",
+          "hi": "आवृत्ति 5 Hz रखकर 4 m/s चाल पर तरंगदैर्ध्य की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 5,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 2.5
+        },
+        "text": {
+          "en": "At the fixed 4 m/s wave speed, lower frequency gives a longer wavelength.",
+          "hi": "नियत 4 m/s तरंग चाल पर कम आवृत्ति से अधिक तरंगदैर्ध्य (Wavelength) मिलता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 2.5
+        },
+        "text": {
+          "en": "Increasing frequency shortens wavelength because v = fλ; the string points oscillate across the wave direction.",
+          "hi": "v = fλ के अनुसार आवृत्ति बढ़ने पर तरंगदैर्ध्य घटता है; डोरी के बिन्दु तरंग-दिशा के लम्बवत दोलन करते हैं।"
+        }
+      }
+    ]
+  },
+  "air-wave": {
+    "goal": {
+      "en": "Separate frequency from amplitude in a sound model.",
+      "hi": "ध्वनि प्रतिरूप में आवृत्ति और आयाम अलग समझें।"
+    },
+    "observe": {
+      "en": "Particles oscillate back and forth while compressions travel. Frequency changes spacing; amplitude changes the amount of particle displacement.",
+      "hi": "संपीडन आगे बढ़ते हैं, जबकि कण आगे-पीछे दोलन करते हैं। आवृत्ति से दूरी और आयाम से विस्थापन का परिमाण बदलता है।"
+    },
+    "modelNote": {
+      "en": "Motion is greatly slowed and spacing is schematic. Wavelength uses v = 340 m/s. The slider does not play real audio.",
+      "hi": "कंपन बहुत धीमा और दूरी सांकेतिक है। तरंगदैर्ध्य के लिए v = 340 m/s है। नियंत्रण वास्तविक ध्वनि नहीं बजाता।"
+    },
+    "prediction": {
+      "question": {
+        "en": "If frequency increases while sound speed stays fixed, what should happen?",
+        "hi": "ध्वनि चाल स्थिर रखते हुए आवृत्ति बढ़े तो क्या होगा?"
+      },
+      "options": [
+        {
+          "en": "Pitch rises and wavelength decreases.",
+          "hi": "तारत्व बढ़ेगा और तरंगदैर्ध्य घटेगा।"
+        },
+        {
+          "en": "Pitch falls.",
+          "hi": "तारत्व घटेगा।"
+        },
+        {
+          "en": "Particles stop vibrating.",
+          "hi": "कण कंपन बन्द करेंगे।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Higher frequency means higher pitch; λ = v/f makes wavelength smaller.",
+        "hi": "अधिक आवृत्ति से तारत्व बढ़ता है; λ = v/f से तरंगदैर्ध्य घटता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Increasing amplitude mainly increases…",
+        "hi": "आयाम बढ़ाने से मुख्यतः बढ़ती है…"
+      },
+      "options": [
+        {
+          "en": "Pitch",
+          "hi": "तारत्व"
+        },
+        {
+          "en": "Frequency",
+          "hi": "आवृत्ति"
+        },
+        {
+          "en": "Loudness, usually",
+          "hi": "सामान्यतः प्रबलता"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Larger amplitude generally gives greater intensity and louder sound; it does not set pitch.",
+        "hi": "अधिक आयाम सामान्यतः अधिक तीव्रता और प्रबलता देता है; वह तारत्व नहीं तय करता।"
+      }
+    },
+    "realLife": {
+      "en": "A whistle is high-pitched; speaking louder need not change your pitch.",
+      "hi": "सीटी का तारत्व अधिक है; ऊँची आवाज में बोलने से तारत्व बदलना आवश्यक नहीं।"
+    },
+    "missions": [
+      {
+        "id": "air-wave-1",
+        "label": {
+          "en": "Set frequency to 100 Hz and compare the spacing of compressions.",
+          "hi": "आवृत्ति 100 Hz रखकर संपीडनों के बीच दूरी देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 100,
+          "control": 0
+        }
+      },
+      {
+        "id": "air-wave-2",
+        "label": {
+          "en": "Set frequency to 500 Hz and distinguish frequency from amplitude.",
+          "hi": "आवृत्ति 500 Hz रखकर आवृत्ति और आयाम का अन्तर देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 500,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 300
+        },
+        "text": {
+          "en": "At fixed sound speed, a lower frequency gives a longer wavelength; amplitude is controlled separately.",
+          "hi": "नियत ध्वनि चाल पर कम आवृत्ति से अधिक तरंगदैर्ध्य मिलता है; आयाम (Amplitude) अलग नियंत्रण से बदलता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 300
+        },
+        "text": {
+          "en": "Higher frequency means shorter wavelength at 340 m/s, while higher amplitude represents a stronger disturbance, not higher pitch.",
+          "hi": "340 m/s चाल पर अधिक आवृत्ति से तरंगदैर्ध्य कम होता है; अधिक आयाम अधिक प्रबल विक्षोभ दर्शाता है, अधिक तारत्व नहीं।"
+        }
+      }
+    ]
+  },
+  "echo": {
+    "goal": {
+      "en": "Use the return time to find reflector distance.",
+      "hi": "लौटने के समय से परावर्तक की दूरी समझें।"
+    },
+    "observe": {
+      "en": "The pulse travels to the wall and back. Doubling the one-way distance doubles the measured echo delay at the same sound speed.",
+      "hi": "स्पन्द दीवार तक जाकर लौटता है। समान चाल पर एक ओर की दूरी दोगुनी करने से प्रतिध्वनि समय दोगुना होता है।"
+    },
+    "modelNote": {
+      "en": "v = 340 m/s. Motion is played 3 times slower than the displayed physical time. Wall geometry and the pulse are symbolic.",
+      "hi": "v = 340 m/s है। गति बताए वास्तविक समय से 3 गुना धीमी है। दीवार और स्पन्द की आकृति सांकेतिक हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "At fixed sound speed, what happens to echo delay if distance doubles?",
+        "hi": "ध्वनि चाल स्थिर हो तो दूरी दोगुनी करने से प्रतिध्वनि समय क्या होगा?"
+      },
+      "options": [
+        {
+          "en": "It halves.",
+          "hi": "आधा होगा।"
+        },
+        {
+          "en": "It doubles.",
+          "hi": "दोगुना होगा।"
+        },
+        {
+          "en": "It becomes zero.",
+          "hi": "शून्य होगा।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "The sound travels 2d, so t = 2d/v grows in proportion to d.",
+        "hi": "ध्वनि 2d चलती है, इसलिए t = 2d/v दूरी के समानुपाती बढ़ता है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Why is reflector distance vt/2 rather than vt?",
+        "hi": "परावर्तक दूरी vt के बजाय vt/2 क्यों है?"
+      },
+      "options": [
+        {
+          "en": "The journey is out and back.",
+          "hi": "यात्रा जाने और लौटने दोनों की है।"
+        },
+        {
+          "en": "Sound only moves half the time.",
+          "hi": "ध्वनि आधे समय ही चलती है।"
+        },
+        {
+          "en": "The speed is zero.",
+          "hi": "चाल शून्य है।"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "The measured time includes both legs of the journey.",
+        "hi": "मापा समय यात्रा के दोनों भागों को शामिल करता है।"
+      }
+    },
+    "realLife": {
+      "en": "An echo can be heard from a sufficiently distant wall or cliff.",
+      "hi": "पर्याप्त दूर की दीवार या चट्टान से प्रतिध्वनि सुन सकते हैं।"
+    },
+    "missions": [
+      {
+        "id": "echo-1",
+        "label": {
+          "en": "Set the reflector 17 m away and find a 0.10 s round-trip delay.",
+          "hi": "परावर्तक 17 m दूर रखकर 0.10 s आने-जाने का समय देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 17,
+          "control": 0
+        }
+      },
+      {
+        "id": "echo-2",
+        "label": {
+          "en": "Set the reflector 170 m away and find a 1 s round-trip delay.",
+          "hi": "परावर्तक 170 m दूर रखकर 1 s आने-जाने का समय देखें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 170,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 85
+        },
+        "text": {
+          "en": "The echo delay includes travel to the reflector and back, so t = 2d/340 in this model.",
+          "hi": "प्रतिध्वनि समय में परावर्तक तक जाना और लौटना दोनों शामिल हैं, इसलिए इस मॉडल में t = 2d/340 है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 85
+        },
+        "text": {
+          "en": "A farther reflector increases the echo delay without changing the assumed 340 m/s sound speed.",
+          "hi": "दूर परावर्तक से प्रतिध्वनि का समय बढ़ता है; मानी गई 340 m/s ध्वनि चाल नहीं बदलती।"
+        }
+      }
+    ]
+  },
+  "crop-rotation": {
+    "goal": {
+      "en": "Understand changing crops across seasons.",
+      "hi": "अलग ऋतुओं में फसल बदलना समझें।"
+    },
+    "observe": {
+      "en": "Move through the seasons to alternate cereals and legumes. Legumes can support nitrogen fixation through suitable symbiotic bacteria.",
+      "hi": "ऋतुओं के क्रम में अनाज और दलहन का बदलाव देखें। उपयुक्त सहजीवी जीवाणुओं से दलहन नाइट्रोजन स्थिरीकरण में मदद कर सकते हैं।"
+    },
+    "modelNote": {
+      "en": "This sequence is illustrative, not a local planting calendar or yield forecast. Climate, soil, water and crop suitability must be considered.",
+      "hi": "यह उदाहरण है, स्थानीय बुआई कैलेंडर या उपज की भविष्यवाणी नहीं। जलवायु, मिट्टी, जल और फसल की उपयुक्तता देखनी होगी।"
+    },
+    "prediction": {
+      "question": {
+        "en": "Why can adding a legume phase help a cereal-based rotation?",
+        "hi": "अनाज के फसल चक्र में दलहन जोड़ना क्यों उपयोगी हो सकता है?"
+      },
+      "options": [
+        {
+          "en": "It creates unlimited nutrients.",
+          "hi": "असीम पोषक पैदा करता है।"
+        },
+        {
+          "en": "Every legume removes all pests.",
+          "hi": "हर दलहन सभी कीट मिटाता है।"
+        },
+        {
+          "en": "Symbiotic bacteria can fix nitrogen.",
+          "hi": "सहजीवी जीवाणु नाइट्रोजन स्थिरीकरण कर सकते हैं।"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Appropriate legume–bacteria associations can contribute fixed nitrogen; other management is still needed.",
+        "hi": "उपयुक्त दलहन-जीवाणु सहजीवन स्थिर नाइट्रोजन में योगदान दे सकता है; अन्य प्रबन्धन भी जरूरी है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Crop rotation means…",
+        "hi": "फसल चक्र का अर्थ है…"
+      },
+      "options": [
+        {
+          "en": "Growing different crops in sequence",
+          "hi": "क्रम से अलग फसलें लेना"
+        },
+        {
+          "en": "Always growing only one crop",
+          "hi": "हमेशा एक ही फसल लेना"
+        },
+        {
+          "en": "Only drying stored grain",
+          "hi": "केवल भण्डारित अनाज सुखाना"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Rotation changes the crop over successive seasons on the same land.",
+        "hi": "चक्र में एक भूमि पर क्रमिक ऋतुओं में फसल बदलती है।"
+      }
+    },
+    "realLife": {
+      "en": "A locally suitable cereal–pulse sequence can diversify farm production.",
+      "hi": "स्थानीय अनुकूल अनाज-दाल क्रम खेत का उत्पादन विविध कर सकता है।"
+    },
+    "missions": [
+      {
+        "id": "crop-rotation-1",
+        "label": {
+          "en": "Choose season 2 and identify the legume crop.",
+          "hi": "ऋतु क्रम 2 चुनकर दलहनी फसल पहचानें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 2,
+          "control": 0
+        }
+      },
+      {
+        "id": "crop-rotation-2",
+        "label": {
+          "en": "Choose season 3 and compare it with the previous legume season.",
+          "hi": "ऋतु क्रम 3 चुनकर पिछली दलहन ऋतु से तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 3,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "Rice begins this illustrative sequence; actual crop choices depend on local climate, soil and water.",
+          "hi": "इस उदाहरणात्मक क्रम में धान पहले है; वास्तविक फसल चयन स्थानीय जलवायु, मिट्टी और जल पर निर्भर करता है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 2
+        },
+        "text": {
+          "en": "A legume season can support nitrogen fixation through root-nodule bacteria; it does not supply every nutrient.",
+          "hi": "दलहन ऋतु में जड़-ग्रन्थि जीवाणु नाइट्रोजन स्थिरीकरण में सहायता कर सकते हैं; इससे सभी पोषक नहीं मिलते।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 3
+        },
+        "text": {
+          "en": "Wheat uses resources differently from the preceding legume, illustrating planned crop rotation.",
+          "hi": "गेहूँ पिछली दलहनी फसल से अलग ढंग से संसाधन लेता है; यह नियोजित फसल चक्र (Crop rotation) का उदाहरण है।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 4
+        },
+        "text": {
+          "en": "The next legume shows rotation across seasons, not mixed cropping within the same season.",
+          "hi": "अगली दलहनी फसल अलग ऋतुओं में फसल चक्र दिखाती है, एक ही ऋतु की मिश्रित खेती नहीं।"
+        }
+      }
+    ]
+  },
+  "manure": {
+    "goal": {
+      "en": "Compare organic matter with concentrated nutrient inputs.",
+      "hi": "जैविक पदार्थ और सान्द्र पोषक स्रोतों की तुलना करें।"
+    },
+    "observe": {
+      "en": "Manure adds organic matter and supports soil structure. Fertiliser supplies particular nutrients in concentrated form; both need thoughtful management.",
+      "hi": "खाद जैविक पदार्थ जोड़ती और मिट्टी संरचना सुधारती है। उर्वरक विशिष्ट पोषक सान्द्र रूप में देता है; दोनों का सही प्रबन्धन चाहिए।"
+    },
+    "modelNote": {
+      "en": "Colours and particles represent inputs, not measured yields. This is not a recommendation to apply a particular dose.",
+      "hi": "रंग और कण पोषण स्रोत दिखाते हैं, मापी उपज नहीं। यह किसी निश्चित मात्रा के प्रयोग की सलाह नहीं है।"
+    },
+    "prediction": {
+      "question": {
+        "en": "Which benefit is most associated with adding well-rotted manure?",
+        "hi": "अच्छी तरह सड़ी खाद जोड़ने का प्रमुख लाभ क्या है?"
+      },
+      "options": [
+        {
+          "en": "Adding organic matter to soil",
+          "hi": "मिट्टी में जैविक पदार्थ बढ़ाना"
+        },
+        {
+          "en": "Removing the need for water",
+          "hi": "जल की जरूरत समाप्त करना"
+        },
+        {
+          "en": "Guaranteeing no crop disease",
+          "hi": "कभी रोग न होने की गारंटी"
+        }
+      ],
+      "correct": 0,
+      "reason": {
+        "en": "Organic matter can improve structure and water retention; plants still need water and protection.",
+        "hi": "जैविक पदार्थ संरचना और जल-धारण सुधार सकता है; पौधे को जल तथा सुरक्षा फिर भी चाहिए।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Why should fertiliser use be balanced?",
+        "hi": "उर्वरक का संतुलित प्रयोग क्यों चाहिए?"
+      },
+      "options": [
+        {
+          "en": "More is always better.",
+          "hi": "अधिक मात्रा हमेशा बेहतर है।"
+        },
+        {
+          "en": "Excess can cause nutrient imbalance and pollution.",
+          "hi": "अधिक मात्रा पोषक असंतुलन और प्रदूषण दे सकती है।"
+        },
+        {
+          "en": "Fertiliser has no nutrients.",
+          "hi": "उर्वरक में पोषक नहीं होते।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "The right amount depends on crop and soil needs; excess may harm the system.",
+        "hi": "सही मात्रा फसल और मिट्टी की जरूरत पर निर्भर है; अतिरिक्त मात्रा नुकसान पहुँचा सकती है।"
+      }
+    },
+    "realLife": {
+      "en": "Compost can improve a garden bed; a soil test can guide nutrient planning.",
+      "hi": "कम्पोस्ट उद्यान की मिट्टी सुधार सकती है; मिट्टी परीक्षण पोषण योजना में मदद करता है।"
+    },
+    "missions": [
+      {
+        "id": "manure-1",
+        "label": {
+          "en": "Choose fertiliser and read its concentrated-nutrient role.",
+          "hi": "उर्वरक चुनकर सान्द्र पोषक देने का उसका कार्य पढ़ें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1,
+          "control": 0
+        }
+      },
+      {
+        "id": "manure-2",
+        "label": {
+          "en": "Return to manure and read its organic-matter benefit.",
+          "hi": "खाद पर लौटकर जैविक पदार्थ का उसका लाभ पढ़ें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 0,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 0
+        },
+        "text": {
+          "en": "Manure adds organic matter and helps soil structure, but its nutrient composition is less concentrated and variable.",
+          "hi": "खाद (Manure) जैविक पदार्थ देती है और मिट्टी संरचना सुधारती है, पर उसके पोषक कम सान्द्र और बदलते हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "eq",
+          "value": 1
+        },
+        "text": {
+          "en": "Fertiliser supplies specific nutrients in concentrated form; correct dose and timing matter for crops and the environment.",
+          "hi": "उर्वरक (Fertiliser) विशिष्ट पोषक सान्द्र रूप में देता है; फसल और पर्यावरण के लिए सही मात्रा व समय महत्त्वपूर्ण हैं।"
+        }
+      }
+    ]
+  },
+  "food-chain": {
+    "goal": {
+      "en": "Explore energy transfer between feeding levels.",
+      "hi": "पोषी स्तरों में ऊर्जा स्थानान्तरण समझें।"
+    },
+    "observe": {
+      "en": "Follow grass → insect → frog → snake. The readout uses an illustrative 10% transfer at each step, so less energy reaches higher levels.",
+      "hi": "घास → कीट → मेंढक → साँप देखें। प्रत्येक स्तर पर सांकेतिक 10% स्थानान्तरण से ऊपर कम ऊर्जा पहुँचती है।"
+    },
+    "modelNote": {
+      "en": "This is enrichment linked to food resources. The 10% figure is a teaching approximation, not a universal efficiency; real food webs are more complex.",
+      "hi": "यह खाद्य संसाधनों से जुड़ा पूरक अध्ययन है। 10% शिक्षण सन्निकटन है, सार्वत्रिक दक्षता नहीं; वास्तविक खाद्य जाल अधिक जटिल हैं।"
+    },
+    "prediction": {
+      "question": {
+        "en": "With the same illustrative transfer efficiency, doubling producer energy does what to later levels?",
+        "hi": "समान सांकेतिक दक्षता पर उत्पादक ऊर्जा दोगुनी करने से आगे के स्तरों पर क्या होगा?"
+      },
+      "options": [
+        {
+          "en": "Their energy becomes zero.",
+          "hi": "ऊर्जा शून्य होगी।"
+        },
+        {
+          "en": "Their calculated energy also doubles.",
+          "hi": "गणना की ऊर्जा भी दोगुनी होगी।"
+        },
+        {
+          "en": "Each level gets equal energy.",
+          "hi": "हर स्तर को समान ऊर्जा मिलेगी।"
+        }
+      ],
+      "correct": 1,
+      "reason": {
+        "en": "At a fixed fraction per step, each calculated level scales with the producer input.",
+        "hi": "हर चरण का अनुपात स्थिर हो तो प्रत्येक स्तर की गणना उत्पादक ऊर्जा के समान अनुपात में बदलती है।"
+      }
+    },
+    "quick": {
+      "question": {
+        "en": "Which group is the producer here?",
+        "hi": "यहाँ उत्पादक कौन है?"
+      },
+      "options": [
+        {
+          "en": "Frogs",
+          "hi": "मेंढक"
+        },
+        {
+          "en": "Snakes",
+          "hi": "साँप"
+        },
+        {
+          "en": "Grass",
+          "hi": "घास"
+        }
+      ],
+      "correct": 2,
+      "reason": {
+        "en": "Grass captures light energy through photosynthesis.",
+        "hi": "घास प्रकाश-संश्लेषण से प्रकाश ऊर्जा ग्रहण करती है।"
+      }
+    },
+    "realLife": {
+      "en": "Farm ecosystems include plants, herbivores and predators.",
+      "hi": "खेत के पारितन्त्र में पौधे, शाकाहारी और परभक्षी होते हैं।"
+    },
+    "missions": [
+      {
+        "id": "food-chain-1",
+        "label": {
+          "en": "Set producer energy to 100 kJ and read the consumer values.",
+          "hi": "उत्पादक ऊर्जा 100 kJ रखकर उपभोक्ताओं के मान पढ़ें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 100,
+          "control": 0
+        }
+      },
+      {
+        "id": "food-chain-2",
+        "label": {
+          "en": "Set producer energy to 1000 kJ and compare the three transfers.",
+          "hi": "उत्पादक ऊर्जा 1000 kJ रखकर 3 ऊर्जा स्थानान्तरणों की तुलना करें।"
+        },
+        "when": {
+          "op": "eq",
+          "value": 1000,
+          "control": 0
+        }
+      }
+    ],
+    "liveText": [
+      {
+        "when": {
+          "control": 0,
+          "op": "lte",
+          "value": 500
+        },
+        "text": {
+          "en": "This enrichment model passes an illustrative 10% of energy to each next level; real efficiencies vary.",
+          "hi": "इस पूरक मॉडल में हर अगले स्तर को उदाहरणार्थ 10% ऊर्जा दी गई है; वास्तविक दक्षताएँ बदलती हैं।"
+        }
+      },
+      {
+        "when": {
+          "control": 0,
+          "op": "gt",
+          "value": 500
+        },
+        "text": {
+          "en": "More producer energy raises each consumer value in the same illustrative ratio; it does not make energy transfer perfectly efficient.",
+          "hi": "अधिक उत्पादक ऊर्जा से हर उपभोक्ता का मान उसी सांकेतिक अनुपात में बढ़ता है; ऊर्जा स्थानान्तरण पूर्ण दक्ष नहीं होता।"
+        }
+      }
+    ]
+  }
+}

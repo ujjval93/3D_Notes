@@ -1,0 +1,1481 @@
+{
+  "number": 13,
+  "id": "physics11-13",
+  "title": {
+    "en": "Oscillations",
+    "hi": "दोलन"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-13-1",
+      "title": {
+        "en": "Mass and spring",
+        "hi": "द्रव्यमान और कमानी"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 36
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Mass",
+            "hi": "द्रव्यमान"
+          },
+          "min": 0.5,
+          "max": 5,
+          "step": 0.5,
+          "initial": 2,
+          "unit": "kg"
+        }
+      ],
+      "noteIndex": 0,
+      "selectors": [],
+      "goal": {
+        "en": "Compare spring periods as mass changes at fixed k = 20 N/m.",
+        "hi": "k = 20 N/m स्थिर रखकर द्रव्यमान से कमानी आवर्तकाल की तुलना करें।"
+      },
+      "observe": {
+        "en": "Amplitude stays 0.3 m; compare motion and period readout.",
+        "hi": "आयाम 0.3 m स्थिर है; गति और आवर्तकाल पढ़ें।"
+      },
+      "modelNote": {
+        "en": "Idealised teaching model; sizes, particle counts and animation speed are symbolic. Read physical values from the readouts, not screen distances.",
+        "hi": "यह आदर्श शिक्षण मॉडल है; आकार, कण संख्या और एनीमेशन चाल सांकेतिक हैं। भौतिक मान readout से पढ़ें, स्क्रीन की दूरी से नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "T = 2π√(m/k), so increasing mass slows the oscillation.",
+          "hi": "T = 2π√(m/k), इसलिए द्रव्यमान बढ़ने से दोलन धीमा है।"
+        }
+      },
+      "realLife": {
+        "en": "Suspension systems balance load and spring stiffness.",
+        "hi": "निलंबन प्रणाली भार और कमानी की दृढ़ता के बीच संतुलन बनाती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Quadrupling m at fixed k changes T to?",
+          "hi": "k स्थिर रखकर m को 4 गुना करें तो T?"
+        },
+        "options": [
+          {
+            "en": "2T",
+            "hi": "2T"
+          },
+          {
+            "en": "4T",
+            "hi": "4T"
+          },
+          {
+            "en": "T/2",
+            "hi": "T/2"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The mass enters under a square root.",
+          "hi": "द्रव्यमान वर्गमूल के भीतर है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-13-1-low",
+          "label": {
+            "en": "Set mass to 0.5 kg.",
+            "hi": "द्रव्यमान 0.5 kg करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.5
+          }
+        },
+        {
+          "id": "phy11-13-1-high",
+          "label": {
+            "en": "Compare at 5 kg.",
+            "hi": "5 kg पर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 4.95
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 2.75
+          },
+          "text": {
+            "en": "A lighter mass oscillates faster.",
+            "hi": "हल्का द्रव्यमान तेज दोलन करता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 2.75
+          },
+          "text": {
+            "en": "A heavier mass has a longer period.",
+            "hi": "भारी द्रव्यमान का आवर्तकाल अधिक है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Model object / particles",
+            "hi": "मॉडल वस्तु / कण"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Highlighted quantity / reference",
+            "hi": "प्रमुख राशि / संदर्भ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-13-2",
+      "title": {
+        "en": "Simple pendulum",
+        "hi": "सरल लोलक"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 37
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Length",
+            "hi": "लंबाई"
+          },
+          "min": 0.2,
+          "max": 2,
+          "step": 0.1,
+          "initial": 1,
+          "unit": "m"
+        }
+      ],
+      "noteIndex": 2,
+      "selectors": [],
+      "goal": {
+        "en": "Relate a small-angle pendulum period to length.",
+        "hi": "छोटे कोण लोलक के आवर्तकाल को लंबाई से जोड़ें।"
+      },
+      "observe": {
+        "en": "The amplitude is about 10° and g = 9.8 m/s²; only length changes.",
+        "hi": "आयाम लगभग 10° और g = 9.8 m/s² है; केवल लंबाई बदलती है।"
+      },
+      "modelNote": {
+        "en": "Idealised teaching model; sizes, particle counts and animation speed are symbolic. Read physical values from the readouts, not screen distances.",
+        "hi": "यह आदर्श शिक्षण मॉडल है; आकार, कण संख्या और एनीमेशन चाल सांकेतिक हैं। भौतिक मान readout से पढ़ें, स्क्रीन की दूरी से नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "T = 2π√(L/g); bob mass does not enter this ideal result.",
+          "hi": "T = 2π√(L/g); आदर्श परिणाम में गोलक का द्रव्यमान नहीं आता।"
+        }
+      },
+      "realLife": {
+        "en": "A pendulum clock depends on its effective length.",
+        "hi": "लोलक घड़ी अपनी प्रभावी लंबाई पर निर्भर है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Doubling T requires length to become?",
+          "hi": "T दोगुना करने के लिए लंबाई?"
+        },
+        "options": [
+          {
+            "en": "4L",
+            "hi": "4L"
+          },
+          {
+            "en": "2L",
+            "hi": "2L"
+          },
+          {
+            "en": "L/2",
+            "hi": "L/2"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "T is proportional to √L.",
+          "hi": "T का संबंध √L से है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-13-2-low",
+          "label": {
+            "en": "Set length to 0.2 m.",
+            "hi": "लंबाई 0.2 m करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.2
+          }
+        },
+        {
+          "id": "phy11-13-2-high",
+          "label": {
+            "en": "Compare at 2 m.",
+            "hi": "2 m पर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 1.99
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 1.1
+          },
+          "text": {
+            "en": "A shorter pendulum completes cycles sooner.",
+            "hi": "छोटा लोलक चक्र जल्दी पूरा करता है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 1.1
+          },
+          "text": {
+            "en": "Longer length increases period.",
+            "hi": "अधिक लंबाई से आवर्तकाल बढ़ता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Model object / particles",
+            "hi": "मॉडल वस्तु / कण"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Highlighted quantity / reference",
+            "hi": "प्रमुख राशि / संदर्भ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-13-3",
+      "title": {
+        "en": "SHM energy",
+        "hi": "सरल आवर्त गति की ऊर्जा"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 38
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Amplitude",
+            "hi": "आयाम"
+          },
+          "min": 0.1,
+          "max": 0.5,
+          "step": 0.05,
+          "initial": 0.3,
+          "unit": "m"
+        }
+      ],
+      "noteIndex": 4,
+      "selectors": [],
+      "goal": {
+        "en": "Observe energy exchange while changing SHM amplitude.",
+        "hi": "SHM आयाम बदलकर ऊर्जा विनिमय देखें।"
+      },
+      "observe": {
+        "en": "k = 20 N/m and m = 1 kg are fixed; read kinetic, potential and total energy.",
+        "hi": "k = 20 N/m और m = 1 kg स्थिर हैं; गतिज, स्थितिज और कुल ऊर्जा पढ़ें।"
+      },
+      "modelNote": {
+        "en": "Idealised teaching model; sizes, particle counts and animation speed are symbolic. Read physical values from the readouts, not screen distances.",
+        "hi": "यह आदर्श शिक्षण मॉडल है; आकार, कण संख्या और एनीमेशन चाल सांकेतिक हैं। भौतिक मान readout से पढ़ें, स्क्रीन की दूरी से नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "E = kA²/2; amplitude changes energy, not the ideal period.",
+          "hi": "E = kA²/2; आयाम ऊर्जा बदलता है, आदर्श आवर्तकाल नहीं।"
+        }
+      },
+      "realLife": {
+        "en": "A larger spring displacement stores more recoverable elastic energy.",
+        "hi": "कमानी का अधिक विस्थापन अधिक प्रत्यास्थ ऊर्जा रखता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Doubling A changes E to?",
+          "hi": "A दोगुना करने पर E?"
+        },
+        "options": [
+          {
+            "en": "4E",
+            "hi": "4E"
+          },
+          {
+            "en": "2E",
+            "hi": "2E"
+          },
+          {
+            "en": "E",
+            "hi": "E"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Energy depends on the square of amplitude.",
+          "hi": "ऊर्जा आयाम के वर्ग पर है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-13-3-low",
+          "label": {
+            "en": "Set amplitude to 0.1 m.",
+            "hi": "आयाम 0.1 m करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.1
+          }
+        },
+        {
+          "id": "phy11-13-3-high",
+          "label": {
+            "en": "Compare at 0.5 m.",
+            "hi": "0.5 m पर तुलना करें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 0.495
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lt",
+            "value": 0.3
+          },
+          "text": {
+            "en": "Smaller amplitude stores less total energy.",
+            "hi": "छोटे आयाम में कुल ऊर्जा कम है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 0.3
+          },
+          "text": {
+            "en": "Larger amplitude raises total energy quadratically.",
+            "hi": "बड़ा आयाम कुल ऊर्जा को वर्गानुसार बढ़ाता है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#7ec9f4",
+          "label": {
+            "en": "Model object / particles",
+            "hi": "मॉडल वस्तु / कण"
+          }
+        },
+        {
+          "color": "#f0c775",
+          "label": {
+            "en": "Highlighted quantity / reference",
+            "hi": "प्रमुख राशि / संदर्भ"
+          }
+        }
+      ]
+    }
+  ],
+  "goal": {
+    "en": "Link the restoring force, phase, period and energy of simple harmonic motion.",
+    "hi": "सरल आवर्त गति में प्रत्यावर्तन बल, कला, आवर्तकाल और ऊर्जा जोड़ें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Periodic and oscillatory motion",
+        "hi": "आवर्ती और दोलनी गति"
+      },
+      "paragraphs": [
+        {
+          "en": "Periodic motion repeats its state after a fixed time interval. Oscillatory motion is a repeated to-and-fro motion about an equilibrium position. A planet in a circular orbit is periodic but does not move to and fro along a line, whereas a mass on a spring oscillates. The time for one complete repetition is the period T. Frequency ν counts complete cycles per second, so ν = 1/T and its SI unit is hertz. The state includes both position and direction of motion: passing the centre once is not a complete cycle because the object returns through it in the opposite direction half a cycle later. Equilibrium is the position where the net restoring force vanishes. A small displacement may create a force tending to bring the object back, but not every such oscillation is simple harmonic. The precise relation between force and displacement determines the model.",
+          "hi": "आवर्ती गति (Periodic motion) में वस्तु की अवस्था एक निश्चित समय के बाद दोहराती है। दोलनी गति (Oscillatory motion) साम्य स्थिति के आसपास बार-बार आगे और पीछे होने वाली गति है। वृत्तीय कक्षा में ग्रह की गति आवर्ती है, लेकिन एक सीधी रेखा पर आगे-पीछे नहीं होती। कमानी से जुड़ा द्रव्यमान दोलन करता है। पूरी अवस्था की एक पुनरावृत्ति का समय आवर्तकाल (Period) T और प्रति सेकंड पूरे चक्रों की संख्या आवृत्ति (Frequency) ν है। इसलिए ν = 1/T और SI इकाई हर्ट्ज है। अवस्था में स्थिति के साथ गति की दिशा भी शामिल है। केवल मध्य बिंदु पार कर लेना पूरा चक्र नहीं, क्योंकि आधे चक्र बाद वस्तु उसी बिंदु से विपरीत दिशा में आती है। साम्य स्थिति पर परिणामी प्रत्यावर्तन बल शून्य होता है। छोटी दूरी हटाने पर यदि बल वापस लाने की ओर लगे तो दोलन संभव हो सकता है। फिर भी हर दोलन सरल आवर्त गति नहीं है। बल और विस्थापन के बीच सही संबंध से पता चलता है कि कौन-सा मॉडल लागू होगा।"
+        }
+      ],
+      "points": [
+        {
+          "en": "One full cycle returns both position and velocity direction to their starting values. Count many cycles to reduce timing error when estimating period experimentally.",
+          "hi": "पूरे चक्र के बाद स्थिति और वेग की दिशा दोनों प्रारंभिक अवस्था में आते हैं। प्रयोग में समय की त्रुटि घटाने के लिए अनेक चक्रों का समय लें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does each crossing of equilibrium count as a full oscillation?",
+          "hi": "क्या साम्य स्थिति को हर बार पार करना पूरा दोलन है?"
+        },
+        "answer": {
+          "en": "No. Two successive crossings have opposite velocities; a full cycle restores the initial state.",
+          "hi": "नहीं। लगातार 2 बार पार करने पर वेग विपरीत होते हैं; पूरे चक्र में प्रारंभिक अवस्था लौटती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Displacement and phase in SHM",
+        "hi": "सरल आवर्त गति में विस्थापन और कला"
+      },
+      "paragraphs": [
+        {
+          "en": "Simple harmonic motion, or SHM, can be written x(t) = A cos(ωt + φ). Displacement x is measured from equilibrium; amplitude A is the greatest magnitude of displacement. Angular frequency ω = 2π/T = 2πν is measured in radians per second. The quantity ωt + φ is phase, and the phase constant φ records the initial condition. Choosing sine instead of cosine describes the same type of motion with a shifted phase origin. Negative displacement tells which side of equilibrium the object occupies, not whether it is travelling left or right. Two oscillators with equal periods can still reach maxima at different times if their phases differ. In the animation a single point illustrates this mathematical motion; its screen size does not determine amplitude in metres. The initial phase must be supplied with amplitude and frequency if a unique position at a particular time is required.",
+          "hi": "सरल आवर्त गति (Simple harmonic motion, SHM) को x(t) = A cos(ωt + φ) से लिखते हैं। विस्थापन x साम्य स्थिति से मापा जाता है। आयाम (Amplitude) A विस्थापन का अधिकतम परिमाण है। कोणीय आवृत्ति (Angular frequency) ω = 2π/T = 2πν की इकाई rad/s है। ωt + φ गति की कला (Phase) और φ प्रारंभिक कला नियतांक है। कोसाइन के स्थान पर साइन लेना उसी तरह की गति को अलग कला मूल से लिखना है। ऋणात्मक विस्थापन बताता है कि वस्तु साम्य स्थिति के किस ओर है; इससे अकेले गति की दिशा तय नहीं होती। समान आवर्तकाल वाले 2 दोलक भी अलग-अलग समय पर चरम तक पहुँच सकते हैं, यदि उनकी कलाएँ भिन्न हों। स्क्रीन का बिंदु गणितीय गति का प्रतीक है। बिंदु का आकार मीटर में आयाम निर्धारित नहीं करता। किसी खास समय पर एक निश्चित स्थिति निकालने के लिए आयाम और आवृत्ति के साथ प्रारंभिक कला भी दी जानी चाहिए। प्रारंभिक शर्तों को अनदेखा करने से एक ही समय के लिए गलत स्थिति मिल सकती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Use radians in trigonometric calculations. A phase difference of π means opposite displacements, while 2π describes the same phase after one cycle.",
+          "hi": "त्रिकोणमितीय गणना में रेडियन लें। π का कलांतर विपरीत विस्थापन और 2π पूरे चक्र के बाद समान कला बताता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What does amplitude mean?",
+          "hi": "आयाम का अर्थ क्या है?"
+        },
+        "answer": {
+          "en": "The maximum magnitude of displacement from equilibrium.",
+          "hi": "साम्य स्थिति से विस्थापन का अधिकतम परिमाण।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Velocity and acceleration",
+        "hi": "वेग और त्वरण"
+      },
+      "paragraphs": [
+        {
+          "en": "Differentiating displacement gives v = −Aω sin(ωt + φ), and differentiating again gives a = −ω²x. Acceleration is proportional to displacement but directed towards equilibrium, which is the defining dynamical condition of SHM. Speed is greatest at the centre, where its maximum value is Aω. At either extreme the speed is instantaneously zero, yet acceleration has maximum magnitude ω²A and points inward. At equilibrium acceleration is zero even though speed is maximum. These facts are compatible because force controls change of velocity, not the existence of velocity. The useful relation v² = ω²(A² − x²) gives speed magnitude at a displacement but loses information about direction. Use the phase or a stated direction to choose the sign of v. Displacement, velocity and acceleration are all periodic; their maxima occur at different stages of the cycle.",
+          "hi": "विस्थापन का समय के सापेक्ष अवकलन करने पर v = −Aω sin(ωt + φ) मिलता है। फिर अवकलन से a = −ω²x मिलता है। त्वरण विस्थापन के समानुपाती है, लेकिन दिशा साम्य स्थिति की ओर है। यही सरल आवर्त गति की मुख्य गतिक शर्त है। मध्य स्थिति पर चाल अधिकतम Aω होती है। किसी चरम पर वेग क्षण भर के लिए शून्य है, फिर भी त्वरण का परिमाण अधिकतम ω²A है और वह भीतर की ओर लगता है। साम्य स्थिति पर त्वरण शून्य, लेकिन चाल अधिकतम होती है। इसमें विरोध नहीं, क्योंकि बल वेग में परिवर्तन नियंत्रित करता है, वेग का होना नहीं। संबंध v² = ω²(A² − x²) किसी विस्थापन पर चाल का परिमाण देता है, दिशा नहीं। वेग का चिह्न लेने के लिए कला या गति की बताई दिशा चाहिए। विस्थापन, वेग और त्वरण तीनों आवर्ती हैं, पर उनके अधिकतम मान एक ही क्षण पर नहीं आते। स्थिति और दिशा दोनों देखने से आलेख सही ढंग से समझ में आता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "At x = 0: a = 0 and |v| = Aω. At x = ±A: v = 0 and |a| = ω²A. A turning point is not a force-free point.",
+          "hi": "x = 0 पर a = 0 और |v| = Aω। x = ±A पर v = 0 और |a| = ω²A। दिशा बदलने वाला बिंदु बलरहित नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "At an extreme, is acceleration zero?",
+          "hi": "चरम पर त्वरण शून्य होता है क्या?"
+        },
+        "answer": {
+          "en": "No. Its magnitude is maximum and it points towards equilibrium.",
+          "hi": "नहीं। उसका परिमाण अधिकतम है और दिशा साम्य की ओर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Force law and the spring oscillator",
+        "hi": "बल नियम और कमानी दोलक"
+      },
+      "paragraphs": [
+        {
+          "en": "For a mass m attached to an ideal spring, Hooke’s law is F = −kx when x is measured from equilibrium and the spring remains in its elastic linear range. Combining this with F = ma gives ω = √(k/m) and T = 2π√(m/k). A larger mass responds more slowly and increases the period; a stiffer spring supplies a larger restoring force and reduces the period. In this ideal model period does not depend on amplitude. This is not true for arbitrary large deformations of a real spring. For a vertical spring, gravity shifts the equilibrium extension by mg/k, but small oscillations about that shifted position have the same period as the horizontal ideal system. The simulation fixes k = 20 N/m and compares masses. Its drawing compresses distances for visibility; use displayed quantities for calculations and never infer spring constant from the decorative coil shape.",
+          "hi": "आदर्श कमानी से जुड़े द्रव्यमान m के लिए हुक का नियम (Hooke’s law) F = −kx है। यहाँ x साम्य स्थिति से लिया जाता है और कमानी को रैखिक प्रत्यास्थ सीमा में रखना आवश्यक है। इसे F = ma से जोड़ने पर ω = √(k/m) तथा T = 2π√(m/k) मिलता है। अधिक द्रव्यमान धीरे प्रतिक्रिया देता है, इसलिए आवर्तकाल बढ़ता है। अधिक दृढ़ कमानी का प्रत्यावर्तन बल बड़ा होता है और आवर्तकाल घटता है। इस आदर्श मॉडल में आवर्तकाल आयाम पर निर्भर नहीं है। वास्तविक कमानी के बहुत बड़े विकार के लिए यह कथन सामान्यतः सही नहीं। ऊर्ध्वाधर कमानी में गुरुत्व साम्य प्रसार को mg/k से बदलता है। फिर भी नई साम्य स्थिति के आसपास छोटे दोलनों का आवर्तकाल क्षैतिज आदर्श प्रणाली जैसा ही होता है। अनुकरण में k = 20 N/m स्थिर रखकर द्रव्यमानों की तुलना होती है। दृश्यता के लिए चित्र में दूरियाँ बदली गई हैं। गणना में प्रदर्शित मान लें; सजावटी कुंडली के आकार को देखकर कमानी नियतांक निकालने का प्रयास न करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Keep mass in kilograms and k in N/m. Increasing m by a factor of 4 doubles T; increasing k by 4 halves T.",
+          "hi": "द्रव्यमान kg और k को N/m में रखें। m को 4 गुना करने से T दोगुना; k को 4 गुना करने से T आधा होता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If mass becomes four times, what happens to T?",
+          "hi": "द्रव्यमान 4 गुना हो तो T क्या होगा?"
+        },
+        "answer": {
+          "en": "It doubles when k stays fixed.",
+          "hi": "k स्थिर होने पर T दोगुना होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Energy exchange in SHM",
+        "hi": "सरल आवर्त गति में ऊर्जा विनिमय"
+      },
+      "paragraphs": [
+        {
+          "en": "A spring oscillator stores potential energy U = kx²/2 relative to equilibrium. Its kinetic energy is K = mv²/2 = k(A² − x²)/2. Their sum E = kA²/2 is constant for the ideal undamped system. At an extreme, all mechanical energy is potential and kinetic energy is zero. At the centre, potential energy is zero in this chosen reference and kinetic energy equals total energy. Doubling amplitude makes total energy four times as large, without changing the ideal spring period. A zero potential value at the centre is a choice of reference; it does not mean that the material has no microscopic internal energy. Energy bars in a simulation represent these mechanical contributions only. At intermediate positions both contributions are positive and their sum stays unchanged. This conservation check is often a simpler route to speed than following the phase through several trigonometric steps.",
+          "hi": "कमानी दोलक की साम्य स्थिति के सापेक्ष स्थितिज ऊर्जा U = kx²/2 है। गतिज ऊर्जा K = mv²/2 = k(A² − x²)/2 होती है। आदर्श अवमंदनरहित प्रणाली में कुल यांत्रिक ऊर्जा E = kA²/2 स्थिर रहती है। चरम पर सारी यांत्रिक ऊर्जा स्थितिज है और गतिज ऊर्जा शून्य होती है। मध्य स्थिति पर चुने हुए संदर्भ में स्थितिज ऊर्जा शून्य है तथा गतिज ऊर्जा कुल ऊर्जा के बराबर है। आयाम दोगुना करने से ऊर्जा 4 गुना हो जाती है, जबकि आदर्श कमानी का आवर्तकाल नहीं बदलता। साम्य पर स्थितिज ऊर्जा शून्य लेना संदर्भ का चुनाव है। इसका अर्थ यह नहीं कि पदार्थ की कोई सूक्ष्म आंतरिक ऊर्जा ही नहीं है। अनुकरण के ऊर्जा दंड केवल इन यांत्रिक अंशों को दिखाते हैं। बीच की स्थितियों पर दोनों अंश धनात्मक हैं और उनका योग स्थिर है। ऊर्जा संरक्षण की यह जाँच कई बार वेग निकालने का सरल तरीका है। हर बार कला के साथ अनेक त्रिकोणमितीय चरण करने की आवश्यकता नहीं होती, लेकिन गति की दिशा अलग से बतानी पड़ सकती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Energy depends on amplitude squared. If A halves, E becomes one quarter; if x = A/√2, kinetic and potential energies are equal.",
+          "hi": "ऊर्जा आयाम के वर्ग पर निर्भर है। A आधा हो तो E चौथाई; x = A/√2 पर गतिज तथा स्थितिज ऊर्जा समान होती हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What energy dominates at equilibrium?",
+          "hi": "साम्य स्थिति पर कौन-सी ऊर्जा अधिकतम होती है?"
+        },
+        "answer": {
+          "en": "Kinetic energy equals total mechanical energy in the chosen spring reference.",
+          "hi": "चुने कमानी संदर्भ में गतिज ऊर्जा कुल यांत्रिक ऊर्जा के बराबर है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Simple pendulum and small angles",
+        "hi": "सरल लोलक और छोटा कोण"
+      },
+      "paragraphs": [
+        {
+          "en": "A simple pendulum consists of a point-like bob suspended by a light inextensible string of length L from a fixed support. Gravity provides the restoring torque. The exact angular equation contains sinθ; for small angles measured in radians, sinθ ≈ θ. This approximation gives angular acceleration proportional and opposite to angular displacement, with ω = √(g/L) and T = 2π√(L/g). The period is independent of bob mass and approximately independent of small amplitude. At larger amplitudes the actual period is longer, so the formula must not be described as exact for every swing. The length runs from the suspension point to the bob’s centre of mass. The animation uses a small angular amplitude of about 10° and g = 9.8 m/s². Its bob and string are symbolic and do not represent a complete measurement of air resistance or support flexibility.",
+          "hi": "सरल लोलक (Simple pendulum) में एक बिंदु जैसा गोलक हल्की, न खिंचने वाली डोरी से स्थिर आधार पर लटकता है। लंबाई L निलंबन बिंदु से गोलक के द्रव्यमान केंद्र तक होती है। गुरुत्व का आघूर्ण गोलक को साम्य की ओर लौटाता है। सही कोणीय समीकरण में sinθ होता है। रेडियन में छोटे कोण के लिए sinθ ≈ θ लेने पर कोणीय त्वरण कोणीय विस्थापन के विपरीत और समानुपाती हो जाता है। इससे ω = √(g/L) तथा T = 2π√(L/g) मिलता है। आवर्तकाल गोलक के द्रव्यमान से स्वतंत्र और छोटे आयाम से लगभग स्वतंत्र है। बड़े आयाम पर वास्तविक आवर्तकाल बढ़ता है। इसलिए सूत्र को हर झूले के लिए पूरी तरह सही नहीं कहना चाहिए। अनुकरण में कोणीय आयाम लगभग 10° और g = 9.8 m/s² है। स्क्रीन की डोरी और गोलक सांकेतिक हैं। वे वायु प्रतिरोध, आधार के लचीलेपन या डोरी के अपने द्रव्यमान का पूर्ण मॉडल नहीं बनाते। प्रयोग में लंबाई का सही आरंभ और अंत चुनना आवर्तकाल की गणना के लिए बहुत महत्त्वपूर्ण है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Longer pendulums have longer periods. Quadrupling length doubles T; changing bob mass alone does not change the ideal small-angle result.",
+          "hi": "लंबा लोलक अधिक आवर्तकाल रखता है। लंबाई 4 गुना करने से T दोगुना है; केवल गोलक का द्रव्यमान बदलने से आदर्श छोटे-कोण परिणाम नहीं बदलता।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is the small-angle condition needed?",
+          "hi": "छोटे कोण की शर्त क्यों चाहिए?"
+        },
+        "answer": {
+          "en": "It makes sinθ approximately θ and produces the linear restoring relation required for SHM.",
+          "hi": "इससे sinθ लगभग θ होता है और SHM के लिए आवश्यक रैखिक प्रत्यावर्तन संबंध मिलता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Phase comparison and circular projection",
+        "hi": "कला तुलना और वृत्तीय प्रक्षेप"
+      },
+      "paragraphs": [
+        {
+          "en": "SHM can be understood as the projection of uniform circular motion on a diameter. A point moving uniformly around a circle of radius A has a coordinate A cosωt along one diameter, even though its actual path is circular. This construction explains the displacement equation and phase relationships without claiming that the spring mass really travels in a circle. When the circular point reaches the ends of the chosen diameter, its projected velocity is zero; at the diameter’s centre the projected speed is greatest. A phase change of π/2 corresponds to a quarter period and a phase change of π corresponds to a half period. Two points with the same displacement can have opposite velocities, so displacement alone cannot determine the complete state. Draw a time axis and mark the starting phase before comparing equations that use sine, cosine or negative signs.",
+          "hi": "सरल आवर्त गति को एकसमान वृत्तीय गति के किसी व्यास पर प्रक्षेप (Projection) से समझ सकते हैं। A त्रिज्या के वृत्त पर समान कोणीय चाल से चल रहे बिंदु का एक निर्देशांक A cosωt होता है। वास्तविक बिंदु वृत्त पर चलता है, लेकिन उसका चुने व्यास पर प्रक्षेप आगे-पीछे होता है। यह रचना विस्थापन समीकरण और कला संबंध समझाती है। इससे यह दावा नहीं होता कि कमानी का द्रव्यमान सचमुच वृत्त में घूमता है। वृत्त का बिंदु चुने व्यास के सिरों के पास हो तो प्रक्षेप का वेग शून्य होता है। प्रक्षेप मध्य में हो तो उसकी चाल अधिकतम है। π/2 का कला परिवर्तन चौथाई आवर्तकाल और π का परिवर्तन आधा आवर्तकाल दर्शाता है। समान विस्थापन वाले 2 क्षणों पर वेग विपरीत हो सकते हैं। इसलिए केवल विस्थापन से पूरी अवस्था तय नहीं होती। साइन, कोसाइन या ऋण चिह्न वाले समीकरणों की तुलना से पहले समय अक्ष बनाएँ और प्रारंभिक कला चिह्नित करें। इससे अनावश्यक चिह्न संबंधी गलतियाँ कम होती हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "The circular construction is a mathematical projection, not an extra physical force. Compare phase differences modulo 2π when deciding whether motions are in phase.",
+          "hi": "वृत्तीय रचना गणितीय प्रक्षेप है, कोई अतिरिक्त भौतिक बल नहीं। समान कला तय करने में 2π के पूर्ण गुणकों का अंतर समान अवस्था देता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What time interval corresponds to a phase advance π/2?",
+          "hi": "π/2 कला वृद्धि किस समय अंतराल के बराबर है?"
+        },
+        "answer": {
+          "en": "T/4, one quarter of a period.",
+          "hi": "T/4, अर्थात चौथाई आवर्तकाल।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Measurements and real oscillators",
+        "hi": "मापन और वास्तविक दोलक"
+      },
+      "paragraphs": [
+        {
+          "en": "To estimate period experimentally, choose a clear reference such as a centre crossing in one specified direction. Start timing there, count many complete cycles and divide total time by the cycle count. Repeating the measurement helps assess random timing error. For a pendulum, measure length to the bob centre and keep the initial displacement small; a push at release adds an unwanted initial velocity. For a spring, avoid large extensions beyond its linear elastic range. The ideal equations neglect friction and air resistance, while real oscillations gradually lose mechanical energy to their surroundings. A diminishing amplitude does not mean energy disappears; it becomes internal energy or is transferred away. These departures tell us when an ideal model stops being adequate. Revision should connect the restoring law, differential relation, period and energy picture, rather than treating four formulas as unrelated facts.",
+          "hi": "प्रयोग में आवर्तकाल निकालने के लिए स्पष्ट संदर्भ चुनें, जैसे वस्तु का किसी निश्चित दिशा में मध्य स्थिति को पार करना। वहीं से समय शुरू करें, कई पूरे चक्र गिनें और कुल समय को चक्रों की संख्या से भाग दें। मापन दोहराने से अनियमित समय त्रुटि का अंदाजा मिलता है। लोलक की लंबाई गोलक के केंद्र तक मापें और आरंभिक कोण छोटा रखें। छोड़ते समय धक्का देने से अनचाहा प्रारंभिक वेग जुड़ जाता है। कमानी को उसकी रैखिक प्रत्यास्थ सीमा से बाहर अधिक न खींचें। आदर्श समीकरण घर्षण और वायु प्रतिरोध की उपेक्षा करते हैं। वास्तविक दोलक धीरे-धीरे यांत्रिक ऊर्जा परिवेश को दे सकते हैं, इसलिए आयाम घटता है। इसका अर्थ ऊर्जा का नष्ट होना नहीं; वह आंतरिक ऊर्जा बनती है या बाहर स्थानांतरित होती है। आदर्श परिणाम से ये अंतर बताते हैं कि मॉडल कब पर्याप्त नहीं रहता। पुनरावृत्ति करते समय प्रत्यावर्तन बल, त्वरण संबंध, आवर्तकाल और ऊर्जा को एक साथ जोड़ें। इन्हें 4 अलग याद किए हुए सूत्र मानने से नई परिस्थिति में सही संबंध चुनना कठिन होता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Check units: ω in rad/s, T in s, ν in Hz, k in N/m and energy in J. State whether the model is undamped and whether small-angle or elastic limits apply.",
+          "hi": "इकाइयाँ जाँचें: ω rad/s, T s, ν Hz, k N/m और ऊर्जा J। बताएँ कि अवमंदन उपेक्षित है तथा छोटा कोण या प्रत्यास्थ सीमा लागू है या नहीं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why time many oscillations instead of only one?",
+          "hi": "केवल 1 के बजाय अनेक दोलनों का समय क्यों लेते हैं?"
+        },
+        "answer": {
+          "en": "The start-stop reaction error is spread over more cycles, reducing its relative effect on the estimated period.",
+          "hi": "शुरू-रोकने की प्रतिक्रिया त्रुटि अधिक चक्रों में बँटती है और अनुमानित आवर्तकाल पर उसका सापेक्ष प्रभाव घटता है।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "x = A cos(ωt + φ); ω = 2π/T",
+      "meaning": {
+        "en": "A amplitude, φ initial phase and ω angular frequency.",
+        "hi": "A आयाम, φ प्रारंभिक कला, ω कोणीय आवृत्ति।"
+      },
+      "units": {
+        "en": "x,A: m; ω: rad/s; T: s",
+        "hi": "x,A: m; ω: rad/s; T: s"
+      }
+    },
+    {
+      "expression": "a = −ω²x; v² = ω²(A² − x²)",
+      "meaning": {
+        "en": "Restoring acceleration; the speed equation does not fix direction.",
+        "hi": "प्रत्यावर्तन त्वरण; चाल समीकरण दिशा तय नहीं करता।"
+      },
+      "units": {
+        "en": "a: m/s²; v: m/s",
+        "hi": "a: m/s²; v: m/s"
+      }
+    },
+    {
+      "expression": "T = 2π√(m/k)",
+      "meaning": {
+        "en": "Ideal spring in its linear elastic range.",
+        "hi": "रैखिक प्रत्यास्थ सीमा की आदर्श कमानी।"
+      },
+      "units": {
+        "en": "m: kg; k: N/m; T: s",
+        "hi": "m: kg; k: N/m; T: s"
+      }
+    },
+    {
+      "expression": "T = 2π√(L/g)",
+      "meaning": {
+        "en": "Ideal simple pendulum, small angular amplitude.",
+        "hi": "आदर्श सरल लोलक, छोटा कोणीय आयाम।"
+      },
+      "units": {
+        "en": "L: m; g: m/s²; T: s",
+        "hi": "L: m; g: m/s²; T: s"
+      }
+    },
+    {
+      "expression": "U = kx²/2; K = k(A² − x²)/2; E = kA²/2",
+      "meaning": {
+        "en": "Undamped spring energy with potential zero at equilibrium.",
+        "hi": "साम्य पर स्थितिज शून्य वाला अवमंदनरहित कमानी ऊर्जा मॉडल।"
+      },
+      "units": {
+        "en": "Energy: J",
+        "hi": "ऊर्जा: J"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse zero velocity with zero acceleration, frequency with angular frequency, or the exact pendulum motion with its small-angle approximation.",
+    "hi": "शून्य वेग को शून्य त्वरण न मानें; आवृत्ति और कोणीय आवृत्ति अलग हैं; लोलक का सूत्र छोटे कोण का सन्निकटन है।"
+  },
+  "summary": [
+    {
+      "en": "A full oscillation repeats position and direction.",
+      "hi": "पूरा दोलन स्थिति तथा दिशा दोहराता है।"
+    },
+    {
+      "en": "SHM requires a = −ω²x.",
+      "hi": "SHM में a = −ω²x आवश्यक है।"
+    },
+    {
+      "en": "Spring period is 2π√(m/k).",
+      "hi": "कमानी आवर्तकाल 2π√(m/k) है।"
+    },
+    {
+      "en": "Small-angle pendulum period is 2π√(L/g).",
+      "hi": "छोटे कोण लोलक आवर्तकाल 2π√(L/g) है।"
+    },
+    {
+      "en": "Ideal total mechanical energy is constant and proportional to A².",
+      "hi": "आदर्श कुल यांत्रिक ऊर्जा स्थिर और A² के समानुपाती है।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A system completes 20 cycles in 40 s. Find T and ν.",
+        "hi": "प्रणाली 40 s में 20 चक्र करती है। T और ν निकालें।"
+      },
+      "given": {
+        "en": "20 cycles, total time 40 s",
+        "hi": "20 चक्र, कुल समय 40 s"
+      },
+      "find": {
+        "en": "Period and frequency",
+        "hi": "आवर्तकाल और आवृत्ति"
+      },
+      "formula": {
+        "en": "T = t/N; ν = 1/T",
+        "hi": "T = t/N; ν = 1/T"
+      },
+      "steps": [
+        {
+          "en": "Divide 40 by 20.",
+          "hi": "40 को 20 से भाग दें।"
+        },
+        {
+          "en": "Invert the period.",
+          "hi": "आवर्तकाल का व्युत्क्रम लें।"
+        }
+      ],
+      "answer": {
+        "en": "T = 2 s; ν = 0.5 Hz",
+        "hi": "T = 2 s; ν = 0.5 Hz"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "For x = 0.2 cos(4t), find A and ω.",
+        "hi": "x = 0.2 cos(4t) में A और ω निकालें।"
+      },
+      "given": {
+        "en": "x in m, t in s",
+        "hi": "x मीटर, t सेकंड"
+      },
+      "find": {
+        "en": "Amplitude and angular frequency",
+        "hi": "आयाम और कोणीय आवृत्ति"
+      },
+      "formula": {
+        "en": "x = A cos(ωt + φ)",
+        "hi": "x = A cos(ωt + φ)"
+      },
+      "steps": [
+        {
+          "en": "Compare the coefficient outside cosine.",
+          "hi": "कोसाइन के बाहर गुणांक तुलना करें।"
+        },
+        {
+          "en": "Compare the coefficient of time.",
+          "hi": "समय के गुणांक की तुलना करें।"
+        }
+      ],
+      "answer": {
+        "en": "A = 0.2 m; ω = 4 rad/s",
+        "hi": "A = 0.2 m; ω = 4 rad/s"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find period for m = 2 kg and k = 20 N/m.",
+        "hi": "m = 2 kg और k = 20 N/m का आवर्तकाल निकालें।"
+      },
+      "given": {
+        "en": "Ideal spring oscillator",
+        "hi": "आदर्श कमानी दोलक"
+      },
+      "find": {
+        "en": "T",
+        "hi": "T"
+      },
+      "formula": {
+        "en": "T = 2π√(m/k)",
+        "hi": "T = 2π√(m/k)"
+      },
+      "steps": [
+        {
+          "en": "m/k = 0.1 s².",
+          "hi": "m/k = 0.1 s²।"
+        },
+        {
+          "en": "Multiply √0.1 by 2π.",
+          "hi": "√0.1 को 2π से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "T ≈ 1.99 s",
+        "hi": "T ≈ 1.99 s"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the small-angle period of a 1 m pendulum.",
+        "hi": "1 m लोलक का छोटे कोण पर आवर्तकाल निकालें।"
+      },
+      "given": {
+        "en": "L = 1 m, g = 9.8 m/s²",
+        "hi": "L = 1 m, g = 9.8 m/s²"
+      },
+      "find": {
+        "en": "T",
+        "hi": "T"
+      },
+      "formula": {
+        "en": "T = 2π√(L/g)",
+        "hi": "T = 2π√(L/g)"
+      },
+      "steps": [
+        {
+          "en": "L/g = 1/9.8 s².",
+          "hi": "L/g = 1/9.8 s²।"
+        },
+        {
+          "en": "Take the square root and multiply by 2π.",
+          "hi": "वर्गमूल लेकर 2π से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "T ≈ 2.01 s",
+        "hi": "T ≈ 2.01 s"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "At x = A/2, find K/E and speed for A = 0.3 m, m = 1 kg, k = 20 N/m.",
+        "hi": "x = A/2 पर K/E और चाल निकालें; A = 0.3 m, m = 1 kg, k = 20 N/m।"
+      },
+      "given": {
+        "en": "Ideal undamped spring",
+        "hi": "आदर्श अवमंदनरहित कमानी"
+      },
+      "find": {
+        "en": "Energy fraction and speed magnitude",
+        "hi": "ऊर्जा अंश और चाल परिमाण"
+      },
+      "formula": {
+        "en": "K/E = 1 − x²/A²; v² = (k/m)(A² − x²)",
+        "hi": "K/E = 1 − x²/A²; v² = (k/m)(A² − x²)"
+      },
+      "steps": [
+        {
+          "en": "K/E = 1 − 1/4 = 3/4.",
+          "hi": "K/E = 1 − 1/4 = 3/4।"
+        },
+        {
+          "en": "v² = 20(0.09 − 0.0225) = 1.35 m²/s².",
+          "hi": "v² = 20(0.09 − 0.0225) = 1.35 m²/s²।"
+        }
+      ],
+      "answer": {
+        "en": "K/E = 0.75, unitless; |v| ≈ 1.16 m/s; direction needs phase.",
+        "hi": "K/E = 0.75, इकाईरहित; |v| ≈ 1.16 m/s; दिशा के लिए कला चाहिए।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which relation defines SHM acceleration?",
+        "hi": "SHM त्वरण का सही संबंध कौन-सा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "a = constant",
+            "hi": "a = constant"
+          },
+          "reason": {
+            "en": "SHM acceleration changes with position.",
+            "hi": "SHM त्वरण स्थिति से बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a = −ω²x",
+            "hi": "a = −ω²x"
+          },
+          "reason": {
+            "en": "Acceleration restores equilibrium linearly.",
+            "hi": "त्वरण रैखिक रूप से साम्य की ओर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a = +ω²x",
+            "hi": "a = +ω²x"
+          },
+          "reason": {
+            "en": "Positive sign drives away from equilibrium.",
+            "hi": "धन चिह्न साम्य से दूर ले जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a = −ωx²",
+            "hi": "a = −ωx²"
+          },
+          "reason": {
+            "en": "The displacement dependence and dimensions are wrong.",
+            "hi": "विस्थापन निर्भरता और विमा गलत हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "At equilibrium in spring SHM, speed is?",
+        "hi": "कमानी SHM में साम्य पर चाल?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always negative",
+            "hi": "हमेशा ऋणात्मक"
+          },
+          "reason": {
+            "en": "Speed is a nonnegative magnitude.",
+            "hi": "चाल ऋणेतर परिमाण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Undefined",
+            "hi": "अपरिभाषित"
+          },
+          "reason": {
+            "en": "The equations give finite speed.",
+            "hi": "समीकरण परिमित चाल देते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Maximum",
+            "hi": "अधिकतम"
+          },
+          "reason": {
+            "en": "Energy is all kinetic in this reference.",
+            "hi": "इस संदर्भ में सारी ऊर्जा गतिज है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "Zero speed occurs at extremes.",
+            "hi": "शून्य चाल चरम पर है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "At an extreme, acceleration magnitude is?",
+        "hi": "चरम पर त्वरण परिमाण?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Zero",
+            "hi": "शून्य"
+          },
+          "reason": {
+            "en": "Acceleration vanishes at equilibrium.",
+            "hi": "त्वरण साम्य पर शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Same as speed",
+            "hi": "चाल के समान"
+          },
+          "reason": {
+            "en": "Their units differ.",
+            "hi": "उनकी इकाइयाँ अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Independent of amplitude",
+            "hi": "आयाम से स्वतंत्र"
+          },
+          "reason": {
+            "en": "Maximum acceleration grows with A.",
+            "hi": "अधिकतम त्वरण A के साथ बढ़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Maximum",
+            "hi": "अधिकतम"
+          },
+          "reason": {
+            "en": "|a| = ω²A there.",
+            "hi": "वहाँ |a| = ω²A।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "If spring mass becomes 4m at fixed k, T becomes?",
+        "hi": "k स्थिर रखकर द्रव्यमान 4m करें तो T?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2T",
+            "hi": "2T"
+          },
+          "reason": {
+            "en": "T varies as √m.",
+            "hi": "T का संबंध √m से है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4T",
+            "hi": "4T"
+          },
+          "reason": {
+            "en": "It is not a linear relation.",
+            "hi": "यह रैखिक संबंध नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "T/2",
+            "hi": "T/2"
+          },
+          "reason": {
+            "en": "More mass increases period.",
+            "hi": "अधिक द्रव्यमान आवर्तकाल बढ़ाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "T",
+            "hi": "T"
+          },
+          "reason": {
+            "en": "Mass enters the period formula.",
+            "hi": "आवर्तकाल सूत्र में द्रव्यमान है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Doubling ideal spring amplitude changes total energy to?",
+        "hi": "आदर्श कमानी का आयाम दोगुना करने पर कुल ऊर्जा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "E/4",
+            "hi": "E/4"
+          },
+          "reason": {
+            "en": "Increasing amplitude increases energy.",
+            "hi": "आयाम बढ़ने से ऊर्जा बढ़ती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4E",
+            "hi": "4E"
+          },
+          "reason": {
+            "en": "E = kA²/2.",
+            "hi": "E = kA²/2।"
+          }
+        },
+        {
+          "text": {
+            "en": "2E",
+            "hi": "2E"
+          },
+          "reason": {
+            "en": "Energy is quadratic, not linear in A.",
+            "hi": "ऊर्जा A में द्विघाती है, रैखिक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "E",
+            "hi": "E"
+          },
+          "reason": {
+            "en": "Amplitude affects energy.",
+            "hi": "आयाम ऊर्जा बदलता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Simple pendulum period is approximately independent of?",
+        "hi": "सरल लोलक का आवर्तकाल लगभग किससे स्वतंत्र है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Gravity",
+            "hi": "गुरुत्व"
+          },
+          "reason": {
+            "en": "T varies as 1/√g.",
+            "hi": "T का संबंध 1/√g से है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All large amplitudes exactly",
+            "hi": "सभी बड़े आयाम से ठीक-ठीक"
+          },
+          "reason": {
+            "en": "Small-angle approximation has limits.",
+            "hi": "छोटे कोण सन्निकटन की सीमा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Bob mass",
+            "hi": "गोलक का द्रव्यमान"
+          },
+          "reason": {
+            "en": "Mass cancels from the ideal equation.",
+            "hi": "आदर्श समीकरण से द्रव्यमान कटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Length",
+            "hi": "लंबाई"
+          },
+          "reason": {
+            "en": "T varies as √L.",
+            "hi": "T का संबंध √L से है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which is angular frequency unit?",
+        "hi": "कोणीय आवृत्ति की इकाई?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "m/s",
+            "hi": "m/s"
+          },
+          "reason": {
+            "en": "This is speed.",
+            "hi": "यह चाल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "s",
+            "hi": "s"
+          },
+          "reason": {
+            "en": "This is period unit.",
+            "hi": "यह आवर्तकाल की इकाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "N/m",
+            "hi": "N/m"
+          },
+          "reason": {
+            "en": "This is spring constant unit.",
+            "hi": "यह कमानी नियतांक की इकाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "rad/s",
+            "hi": "rad/s"
+          },
+          "reason": {
+            "en": "Phase change per second uses rad/s.",
+            "hi": "प्रति सेकंड कला परिवर्तन rad/s है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "A phase change π is equivalent to?",
+        "hi": "π कला परिवर्तन किसके बराबर?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "T/2",
+            "hi": "T/2"
+          },
+          "reason": {
+            "en": "A full cycle has phase 2π.",
+            "hi": "पूरे चक्र की कला 2π है।"
+          }
+        },
+        {
+          "text": {
+            "en": "T/4",
+            "hi": "T/4"
+          },
+          "reason": {
+            "en": "T/4 corresponds to π/2.",
+            "hi": "T/4 के लिए π/2 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "T",
+            "hi": "T"
+          },
+          "reason": {
+            "en": "T corresponds to 2π.",
+            "hi": "T के लिए 2π है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2T",
+            "hi": "2T"
+          },
+          "reason": {
+            "en": "2T corresponds to 4π.",
+            "hi": "2T के लिए 4π है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In vertical spring SHM gravity mainly changes?",
+        "hi": "ऊर्ध्वाधर कमानी SHM में गुरुत्व मुख्यतः क्या बदलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Mass into frequency",
+            "hi": "द्रव्यमान को आवृत्ति"
+          },
+          "reason": {
+            "en": "These are distinct physical quantities.",
+            "hi": "ये अलग भौतिक राशियाँ हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Equilibrium position",
+            "hi": "साम्य स्थिति"
+          },
+          "reason": {
+            "en": "Equilibrium shifts by mg/k.",
+            "hi": "साम्य mg/k से खिसकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ideal period to zero",
+            "hi": "आदर्श आवर्तकाल शून्य"
+          },
+          "reason": {
+            "en": "T remains 2π√(m/k).",
+            "hi": "T = 2π√(m/k) रहता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Spring constant automatically",
+            "hi": "कमानी नियतांक अपने आप"
+          },
+          "reason": {
+            "en": "k is a spring property in this model.",
+            "hi": "इस मॉडल में k कमानी का गुण है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which statement about a turning point is correct?",
+        "hi": "दिशा बदलने वाले बिंदु पर क्या सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Kinetic energy maximum",
+            "hi": "गतिज ऊर्जा अधिकतम"
+          },
+          "reason": {
+            "en": "Kinetic energy is zero there.",
+            "hi": "वहाँ गतिज ऊर्जा शून्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Acceleration points away from equilibrium",
+            "hi": "त्वरण साम्य से दूर"
+          },
+          "reason": {
+            "en": "Restoring acceleration points inward.",
+            "hi": "प्रत्यावर्तन त्वरण भीतर की ओर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Velocity zero, restoring force nonzero",
+            "hi": "वेग शून्य, प्रत्यावर्तन बल अशून्य"
+          },
+          "reason": {
+            "en": "The nonzero inward force changes direction of motion.",
+            "hi": "अशून्य भीतर वाला बल दिशा बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both force and velocity zero",
+            "hi": "बल और वेग दोनों शून्य"
+          },
+          "reason": {
+            "en": "Force is greatest at an extreme in SHM.",
+            "hi": "SHM चरम पर बल अधिकतम है।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define amplitude and period.",
+        "hi": "आयाम और आवर्तकाल परिभाषित करें।"
+      },
+      "answer": {
+        "en": "Amplitude is maximum displacement magnitude; period is time for one complete state repetition.",
+        "hi": "आयाम अधिकतम विस्थापन परिमाण; आवर्तकाल पूरी अवस्था दोहराने का समय है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the negative sign in a = −ω²x.",
+        "hi": "a = −ω²x में ऋण चिह्न समझाएँ।"
+      },
+      "answer": {
+        "en": "Acceleration points opposite to displacement, towards equilibrium.",
+        "hi": "त्वरण विस्थापन के विपरीत, साम्य की ओर है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State speed and acceleration at the centre and extremes.",
+        "hi": "मध्य और चरम पर चाल तथा त्वरण बताएँ।"
+      },
+      "answer": {
+        "en": "Centre: maximum speed and zero acceleration. Extremes: zero speed and maximum inward acceleration.",
+        "hi": "मध्य: अधिकतम चाल, शून्य त्वरण। चरम: शून्य चाल, अधिकतम भीतर की ओर त्वरण।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why does a vertical spring have the same ideal period?",
+        "hi": "ऊर्ध्वाधर कमानी का आदर्श आवर्तकाल समान क्यों है?"
+      },
+      "answer": {
+        "en": "Gravity shifts equilibrium; displacement about that equilibrium still obeys mẍ = −kx.",
+        "hi": "गुरुत्व साम्य बदलता है; नए साम्य से विस्थापन अब भी mẍ = −kx मानता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why must a simple pendulum swing through small angles?",
+        "hi": "सरल लोलक में छोटा कोण क्यों लेते हैं?"
+      },
+      "answer": {
+        "en": "Only then sinθ ≈ θ and the restoring relation becomes linear.",
+        "hi": "तभी sinθ ≈ θ और प्रत्यावर्तन संबंध रैखिक होता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Describe energy exchange in ideal spring SHM.",
+        "hi": "आदर्श कमानी SHM में ऊर्जा विनिमय बताएँ।"
+      },
+      "answer": {
+        "en": "Kinetic and potential energies exchange while E = kA²/2 stays constant; centre is all kinetic and extremes all potential.",
+        "hi": "गतिज तथा स्थितिज अंश बदलते हैं, E = kA²/2 स्थिर; मध्य में पूरी गतिज, चरम में पूरी स्थितिज है।"
+      }
+    }
+  ],
+  "conceptMap": "साम्य → प्रत्यावर्तन बल → SHM समीकरण → कला और आवर्तकाल → वेग और त्वरण → कमानी/लोलक → ऊर्जा विनिमय",
+  "conceptMapEn": "Equilibrium → restoring force → SHM equation → phase and period → velocity and acceleration → spring/pendulum → energy exchange",
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Physics Class 11 and UP Board 2026–27. Simulations illustrate ideal models; use the prescribed textbook and supervised laboratory work alongside.",
+    "hi": "NCERT कक्षा 11 भौतिकी तथा यूपी बोर्ड 2026–27 पर आधारित मौलिक अध्ययन व्याख्याएँ। अनुकरण आदर्श मॉडल समझाते हैं; निर्धारित पुस्तक तथा शिक्षक की देखरेख में प्रयोग भी करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 13",
+      "url": "https://ncert.nic.in/textbook/pdf/keph206.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ]
+}

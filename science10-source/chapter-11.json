@@ -1,0 +1,1499 @@
+{
+  "id": "electricity",
+  "number": 11,
+  "title": {
+    "en": "Electricity",
+    "hi": "विद्युत"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "goal": {
+    "en": "Calculate current, resistance, circuit combinations, electrical power and energy with correct units.",
+    "hi": "सही इकाइयों से धारा, प्रतिरोध, संयोजन, विद्युत शक्ति और ऊर्जा निकालें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Charge, current and a complete circuit",
+        "hi": "आवेश, विद्युत धारा और पूर्ण परिपथ"
+      },
+      "paragraphs": [
+        {
+          "en": "Electric current is the rate at which net charge passes through a cross-section of a conductor. If charge Q passes in time t, average current is I = Q/t. One ampere means one coulomb per second. In a metal, mobile electrons carry charge; conventional current is defined in the direction positive charge would flow and is opposite to electron drift in the external circuit. A cell maintains the conditions for charge flow in a closed conducting path. An open switch interrupts that path, so a steady current stops. Do not say the cell creates electrons or that current gets used up by a bulb. Charge already exists in circuit materials, and energy is transferred from the source to devices. An ammeter measures current and is connected in series with the branch being measured. Use a low-voltage cell circuit for supervised activities; the diagrams and virtual sliders are not instructions for working on household mains.",
+          "hi": "विद्युत धारा (Electric current) चालक के अनुप्रस्थ काट से गुजरने वाले शुद्ध आवेश की दर है। t समय में Q आवेश गुजरे तो औसत धारा I = Q/t है। 1 ऐम्पियर का अर्थ प्रति सेकंड 1 कूलॉम है। धातु में चल सकने वाले इलेक्ट्रॉन आवेश ले जाते हैं। परंपरागत धारा (Conventional current) की दिशा धन आवेश की संभावित गति की दिशा मानी जाती है; बाहरी परिपथ में यह इलेक्ट्रॉन के अपवाह के विपरीत है। सेल बंद चालक पथ में आवेश प्रवाह के लिए आवश्यक स्थिति बनाए रखता है। खुला स्विच पथ तोड़ता है और स्थिर धारा रुकती है। ऐसा न कहें कि सेल इलेक्ट्रॉन बनाता है या बल्ब धारा खर्च कर देता है। आवेश पदार्थ में पहले से है; स्रोत से युक्ति तक ऊर्जा स्थानांतरित होती है। ऐमीटर (Ammeter) धारा मापता है और जिस शाखा की धारा चाहिए उसके श्रेणीक्रम में जोड़ा जाता है। निगरानी वाले प्रयोग में कम विभव का सेल परिपथ लें। चित्र और आभासी स्लाइडर घरेलू मेन पर काम करने के निर्देश नहीं हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Charge is measured in C, time in s and current in A; convert minutes before substitution.",
+          "hi": "आवेश C, समय s तथा धारा A में है; सूत्र से पहले मिनट को सेकंड में बदलें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What charge passes in 20 s when current is 0.5 A?",
+          "hi": "0.5 A धारा में 20 s में कितना आवेश गुजरता है?"
+        },
+        "answer": {
+          "en": "Q = It = 0.5 × 20 = 10 C.",
+          "hi": "Q = It = 0.5 × 20 = 10 C।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Potential difference, work and measurement",
+        "hi": "विभवांतर, कार्य और मापन"
+      },
+      "paragraphs": [
+        {
+          "en": "Potential difference tells us how much energy is transferred per unit charge between two points. If work W is done in moving charge Q, then V = W/Q. One volt is one joule per coulomb. Current describes charge flow per second, whereas voltage describes energy per coulomb; they are related in a circuit but are not the same quantity. A voltmeter is connected across the two points, in parallel with the component. A cell or battery can maintain a potential difference even when an external switch is open, although there is no steady current through the open path. In a circuit diagram the long line of a cell symbol marks its positive terminal. Draw connecting wires clearly and avoid assuming that every crossing is an electrical junction. When measuring a resistor, first identify the branch for the ammeter and the two endpoints for the voltmeter. Record both readings and their units; a number without a unit is incomplete experimental evidence.",
+          "hi": "विभवांतर (Potential difference) बताता है कि 2 बिंदुओं के बीच प्रति इकाई आवेश कितनी ऊर्जा स्थानांतरित होती है। Q आवेश को ले जाने में W कार्य हो तो V = W/Q है। 1 वोल्ट, 1 जूल प्रति कूलॉम है। धारा प्रति सेकंड आवेश प्रवाह बताती है, जबकि विभवांतर प्रति कूलॉम ऊर्जा बताता है। दोनों परिपथ में संबंधित हैं, लेकिन एक ही राशि नहीं हैं। वोल्टमीटर (Voltmeter) 2 बिंदुओं के बीच, घटक के पार्श्वक्रम में लगाया जाता है। बाहरी स्विच खुला होने पर भी सेल या बैटरी के सिरों पर विभवांतर हो सकता है, यद्यपि खुले पथ में स्थिर धारा नहीं बहती। सेल के संकेत में लंबी रेखा धन सिरा बताती है। संयोजक तार स्पष्ट बनाएँ; हर काटती रेखा को जुड़ा बिंदु न मानें। प्रतिरोधक मापते समय ऐमीटर की शाखा और वोल्टमीटर के 2 सिरे पहले पहचानें। दोनों पठन इकाइयों सहित लिखें। इकाई रहित संख्या अधूरा प्रयोग प्रमाण है। गलत संयोजन से निष्कर्ष और उपकरण दोनों प्रभावित हो सकते हैं, इसलिए कम विभव वाले शिक्षक-निर्देशित परिपथ में ही अभ्यास करें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Ammeter: series. Voltmeter: parallel across the component.",
+          "hi": "ऐमीटर: श्रेणीक्रम। वोल्टमीटर: घटक के सिरों पर पार्श्वक्रम।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How much work transfers 3 C through 4 V?",
+          "hi": "4 V विभवांतर से 3 C ले जाने में कितना कार्य है?"
+        },
+        "answer": {
+          "en": "W = VQ = 4 × 3 = 12 J.",
+          "hi": "W = VQ = 4 × 3 = 12 J।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Ohm’s law and the V–I graph",
+        "hi": "ओम का नियम और V–I आलेख"
+      },
+      "paragraphs": [
+        {
+          "en": "For a conductor maintained at constant temperature and other physical conditions, current is proportional to the potential difference across it. Thus V = IR, with resistance R constant for an ohmic conductor in those conditions. One ohm is the resistance for which one volt produces one ampere. On a graph with current I on the horizontal axis and voltage V on the vertical axis, an ohmic resistor gives a straight line through the origin; its slope is R. If the axes are reversed, the slope is 1/R instead. Always name the axes before interpreting steepness. A resistor does not obey a changing-resistance claim just because the voltage slider moves: in the scene R is fixed at 6 Ω, so V = 6 V gives I = 1 A and V = 12 V gives I = 2 A. Real devices can warm up and depart from the fixed-temperature approximation, so a straight-line model must state what is held constant.",
+          "hi": "तापमान तथा अन्य भौतिक स्थितियाँ स्थिर रहने पर किसी चालक की धारा उसके सिरों के विभवांतर के समानुपाती होती है। यह ओम का नियम (Ohm’s law) है: V = IR। इन स्थितियों में ओमीय चालक का प्रतिरोध R स्थिर है। 1 ओम वह प्रतिरोध है जिसमें 1 वोल्ट लगाने पर 1 ऐम्पियर धारा बहती है। क्षैतिज अक्ष पर धारा I और ऊर्ध्व अक्ष पर विभवांतर V हो तो ओमीय प्रतिरोधक का आलेख मूल बिंदु से गुजरती सरल रेखा है; इसकी ढाल R है। अक्ष बदल देने पर ढाल 1/R होगी। इसलिए रेखा की खड़ी स्थिति समझाने से पहले अक्षों के नाम पढ़ें। विभवांतर स्लाइडर चलने का अर्थ प्रतिरोध बदलना नहीं है। दृश्य में R = 6 Ω स्थिर है; V = 6 V पर I = 1 A और V = 12 V पर I = 2 A है। वास्तविक युक्ति गरम हो सकती है और स्थिर ताप की मान्यता से हट सकती है। इसलिए सरल रेखा वाला मॉडल यह स्पष्ट करे कि कौन सी स्थितियाँ स्थिर हैं।"
+        }
+      ],
+      "points": [
+        {
+          "en": "V/I is resistance for an ohmic resistor; at V = I = 0 use the known slope rather than divide 0 by 0.",
+          "hi": "ओमीय प्रतिरोधक में V/I प्रतिरोध है; V = I = 0 पर 0/0 न निकालें, ज्ञात ढाल लें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the slope of a V-versus-I graph for 6 Ω?",
+          "hi": "6 Ω के V बनाम I आलेख की ढाल कितनी है?"
+        },
+        "answer": {
+          "en": "6 V/A = 6 Ω.",
+          "hi": "6 V/A = 6 Ω।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Resistance, dimensions and resistivity",
+        "hi": "प्रतिरोध, आयाम और प्रतिरोधकता"
+      },
+      "paragraphs": [
+        {
+          "en": "Resistance depends on material, length, cross-sectional area and temperature. For a uniform wire at a fixed temperature, R = ρl/A. Increasing length while retaining area and material increases resistance; increasing area while retaining length decreases it. A thicker wire has more area, and area depends on the square of diameter, so doubling diameter gives four times the area and one-quarter the resistance under the stated conditions. Resistivity ρ is a material property at a specified temperature; it is not simply another name for the resistance of one particular wire. Its SI unit is Ω m, obtained from ρ = RA/l. Metals used for connection wires have relatively low resistivity, whereas heating elements use materials selected for suitable resistance and high-temperature performance. Compare samples fairly by changing one factor at a time. A large resistance may arise from a long thin wire even when its material is a good conductor. Do not infer material identity from resistance alone.",
+          "hi": "प्रतिरोध (Resistance) पदार्थ, लंबाई, अनुप्रस्थ काट क्षेत्रफल और तापमान पर निर्भर है। स्थिर ताप वाले एकसमान तार के लिए R = ρl/A है। पदार्थ और क्षेत्रफल समान रखते लंबाई बढ़ाने पर प्रतिरोध बढ़ता है। लंबाई समान रखते क्षेत्रफल बढ़ाने पर प्रतिरोध घटता है। मोटे तार का क्षेत्रफल अधिक है। क्षेत्रफल व्यास के वर्ग पर निर्भर होता है, इसलिए समान शर्तों में व्यास 2 गुना करने पर क्षेत्रफल 4 गुना और प्रतिरोध 1/4 होता है। प्रतिरोधकता (Resistivity) निश्चित ताप पर पदार्थ का गुण है; यह किसी विशेष तार के प्रतिरोध का दूसरा नाम नहीं है। ρ = RA/l से इसकी SI इकाई Ω m मिलती है। जोड़ने वाले तारों के धातु पदार्थों की प्रतिरोधकता अपेक्षाकृत कम होती है। तापक में उपयुक्त प्रतिरोध और उच्च ताप पर कार्य करने योग्य पदार्थ चुना जाता है। निष्पक्ष तुलना में 1 कारक बदलें और बाकी स्थिर रखें। अच्छा चालक पदार्थ भी बहुत लंबा तथा पतला होने पर अधिक प्रतिरोध दे सकता है। इसलिए केवल प्रतिरोध देखकर पदार्थ की पहचान नहीं करनी चाहिए; उसके आकार और ताप की सूचना भी चाहिए।"
+        }
+      ],
+      "points": [
+        {
+          "en": "For l in m and A in m², resistivity in Ω m gives resistance in Ω.",
+          "hi": "l को m और A को m² में लेने पर ρ की Ω m इकाई से R, Ω में मिलता है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "If a wire length doubles with area unchanged, what happens to R?",
+          "hi": "क्षेत्रफल स्थिर रखते तार की लंबाई दोगुनी हो तो R का क्या होगा?"
+        },
+        "answer": {
+          "en": "It doubles, provided material and temperature are unchanged.",
+          "hi": "पदार्थ और तापमान समान हों तो प्रतिरोध दोगुना होता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Resistors in series",
+        "hi": "श्रेणीक्रम में प्रतिरोधक"
+      },
+      "paragraphs": [
+        {
+          "en": "Resistors are in series when the same current passes through each in a single unbranched path. The total potential difference is the sum of individual drops: V = V1 + V2 + V3. Applying Ohm’s law gives R_s = R1 + R2 + R3. The equivalent resistance is larger than any one positive member. If one component breaks the only path, current through all of them stops. For R1 = 6 Ω and R2 = 6 Ω connected to 12 V, total resistance is 12 Ω and current is 1 A. Each equal resistor has a 6 V drop, not the full 12 V. Unequal resistors still carry the same current but have different drops, with larger resistance taking the larger voltage drop. In the scene increase R2 and observe total current decrease in series mode. The source voltage is held fixed; it does not rise automatically to keep the original current flowing. Identify junctions rather than deciding from components merely being drawn next to one another.",
+          "hi": "जब एक ही अविभाजित पथ में हर प्रतिरोधक से समान धारा गुजरती है, वे श्रेणीक्रम (Series) में हैं। कुल विभवांतर अलग-अलग पतनों का योग है: V = V1 + V2 + V3। ओम का नियम लगाने पर R_s = R1 + R2 + R3 मिलता है। तुल्य प्रतिरोध (Equivalent resistance) किसी भी एक धनात्मक प्रतिरोध से अधिक होता है। कोई घटक एकमात्र पथ तोड़ दे तो सभी में धारा रुकती है। R1 = 6 Ω और R2 = 6 Ω को 12 V से जोड़ने पर कुल प्रतिरोध 12 Ω तथा धारा 1 A है। दोनों समान प्रतिरोधकों पर 6 V का पतन है, प्रत्येक पर पूरा 12 V नहीं। असमान प्रतिरोधकों में भी धारा समान रहती है, लेकिन विभव पतन अलग हैं। अधिक प्रतिरोध पर अधिक पतन होता है। दृश्य के श्रेणीक्रम रूप में R2 बढ़ाकर कुल धारा घटना देखें। स्रोत विभवांतर स्थिर है; पुरानी धारा बनाए रखने के लिए वह अपने आप नहीं बढ़ता। केवल पास-पास खींचे घटकों से निर्णय न लें; शाखाएँ और जोड़ बिंदु पहचानें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Series: common current, divided voltage, added resistance.",
+          "hi": "श्रेणीक्रम: समान धारा, बँटा विभवांतर, जुड़ते प्रतिरोध।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the total resistance of 4 Ω and 8 Ω in series?",
+          "hi": "4 Ω और 8 Ω के श्रेणीक्रम का कुल प्रतिरोध कितना है?"
+        },
+        "answer": {
+          "en": "R_s = 4 + 8 = 12 Ω.",
+          "hi": "R_s = 4 + 8 = 12 Ω।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Parallel branches and household logic",
+        "hi": "पार्श्वक्रम शाखाएँ और घरेलू व्यवस्था"
+      },
+      "paragraphs": [
+        {
+          "en": "Resistors are in parallel when both ends connect to the same two junctions. Each branch has the same potential difference, while the total current equals the sum of branch currents. Therefore 1/R_p = 1/R1 + 1/R2 + 1/R3. For two resistors R_p = R1R2/(R1 + R2), which is smaller than the smaller positive branch resistance. With two 6 Ω branches on 12 V, each takes 2 A, so total current is 4 A and equivalent resistance is 3 Ω. Increasing R2 reduces its branch current; current in the unchanged R1 branch stays the same for the ideal fixed-voltage source. Total current falls, but never equals a false arithmetic average of branch resistances. Household appliances use parallel connections so that each receives the supply voltage and can be switched independently. This also means adding appliances increases total current demand. Parallel connection is not permission to exceed wiring ratings; safe installation belongs to trained personnel.",
+          "hi": "पार्श्वक्रम (Parallel) में प्रतिरोधकों के दोनों सिरे समान 2 जोड़ बिंदुओं से जुड़े होते हैं। हर शाखा पर समान विभवांतर होता है और कुल धारा शाखा धाराओं का योग है। इसलिए 1/R_p = 1/R1 + 1/R2 + 1/R3। 2 प्रतिरोधकों के लिए R_p = R1R2/(R1 + R2) है। यह छोटे धनात्मक शाखा प्रतिरोध से भी कम होता है। 12 V पर 6 Ω की 2 शाखाओं में प्रत्येक की धारा 2 A है; कुल धारा 4 A तथा तुल्य प्रतिरोध 3 Ω है। R2 बढ़ाने पर उसकी शाखा धारा घटती है। आदर्श स्थिर-विभव स्रोत में अपरिवर्तित R1 शाखा की धारा समान रहती है। कुल धारा घटती है, लेकिन तुल्य प्रतिरोध शाखाओं का साधारण औसत नहीं होता। घरेलू युक्तियाँ पार्श्वक्रम में जुड़ती हैं, जिससे हर युक्ति को आपूर्ति विभवांतर मिले और स्वतंत्र स्विच हो सके। इसका अर्थ यह भी है कि अधिक युक्तियाँ जोड़ने पर कुल धारा माँग बढ़ती है। पार्श्वक्रम जोड़ तार की सुरक्षित सीमा पार करने की अनुमति नहीं देता; वास्तविक स्थापना प्रशिक्षित व्यक्ति का काम है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Parallel: common voltage, divided current, reduced equivalent resistance.",
+          "hi": "पार्श्वक्रम: समान विभवांतर, बँटी धारा, घटा तुल्य प्रतिरोध।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does disconnecting one ideal parallel branch stop current in all others?",
+          "hi": "आदर्श पार्श्वक्रम की 1 शाखा हटाने पर क्या सभी शाखाओं की धारा रुकती है?"
+        },
+        "answer": {
+          "en": "No. Other branches still have complete paths across the source.",
+          "hi": "नहीं। अन्य शाखाओं के स्रोत से पूर्ण पथ बने रहते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Heating effect and electrical power",
+        "hi": "ऊष्मीय प्रभाव और विद्युत शक्ति"
+      },
+      "paragraphs": [
+        {
+          "en": "A resistor transfers electrical energy into thermal energy as charge moves through it. With steady current and constant resistance, Joule’s law gives H = I²Rt. Doubling current produces four times the heat in the same resistor over the same time. Doubling time doubles the energy if power remains constant. Electrical power is the rate of energy transfer: P = VI. Combining with V = IR gives P = I²R = V²/R for an ohmic resistor under the stated conditions. These equivalent expressions must be applied with attention to what is fixed. At fixed current a larger R increases power, but at fixed voltage a larger R decreases it. In the scene R = 5 Ω and t = 60 s. At I = 2 A, power is 20 W and energy is 1200 J. The warming colour is symbolic and is not a measured temperature: real temperature depends on heat capacity, surroundings and energy losses. A fuse uses heating to interrupt excessive current.",
+          "hi": "प्रतिरोधक में आवेश के प्रवाह के दौरान विद्युत ऊर्जा ऊष्मीय ऊर्जा में बदलती है। स्थिर धारा और प्रतिरोध के लिए जूल का ऊष्मीय नियम (Joule’s heating law) H = I²Rt है। समान प्रतिरोधक और समय में धारा दोगुनी करने पर ऊष्मा 4 गुनी होती है। शक्ति स्थिर हो तो समय दोगुना करने पर ऊर्जा दोगुनी होती है। विद्युत शक्ति (Electric power) ऊर्जा अंतरण की दर है: P = VI। V = IR मिलाने पर निर्धारित शर्तों में P = I²R = V²/R मिलता है। समतुल्य सूत्र लगाते समय स्थिर राशि का ध्यान रखें। धारा स्थिर हो तो अधिक R पर शक्ति अधिक, लेकिन विभवांतर स्थिर हो तो अधिक R पर शक्ति कम है। दृश्य में R = 5 Ω और t = 60 s है। I = 2 A पर शक्ति 20 W तथा ऊर्जा 1200 J है। गरमी का रंग सांकेतिक है; वास्तविक तापमान का माप नहीं। वास्तविक ताप ऊष्मा धारिता, आसपास के वातावरण और ऊष्मा हानि पर भी निर्भर है। फ्यूज अधिक धारा पर गर्म होकर परिपथ तोड़ने के सिद्धांत का उपयोग करता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Watt is power; joule is energy. A value in W is not an amount of heat.",
+          "hi": "वाट शक्ति की तथा जूल ऊर्जा की इकाई है। W का मान ऊष्मा की मात्रा नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to heating energy if current triples with R and t fixed?",
+          "hi": "R और t स्थिर हों तथा धारा 3 गुनी हो तो ऊष्मीय ऊर्जा कितनी होती है?"
+        },
+        "answer": {
+          "en": "It becomes 9 times as large because H is proportional to I².",
+          "hi": "H, I² के समानुपाती है, इसलिए ऊर्जा 9 गुनी होती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Energy bills, units and numerical checks",
+        "hi": "ऊर्जा बिल, इकाइयाँ और संख्यात्मक जाँच"
+      },
+      "paragraphs": [
+        {
+          "en": "Electrical energy E = Pt when power is constant. The SI combination W × s gives joules. Commercial meters commonly register kilowatt-hours: 1 kWh = 1000 W × 3600 s = 3.6 × 10^6 J. A kilowatt-hour is energy, not power, even though both words watt and hour appear in its name. A 100 W lamp running for 5 h uses 0.5 kWh; its rated power remains 100 W rather than becoming 500 W. For a cost problem multiply energy units by the stated rate and identify any assumptions about additional charges. For a circuit problem begin with the arrangement, then find equivalent resistance, source current and individual branch values. Check series voltage sums or parallel current sums at the end. Numerical answers should retain a suitable number of significant figures and their units. The website uses ideal sources, ohmic resistors and illustrative moving charges; it does not show the actual microscopic drift speed or predict a household electricity bill without input data.",
+          "hi": "शक्ति स्थिर हो तो विद्युत ऊर्जा E = Pt है। SI में W × s से जूल मिलता है। व्यापारिक मीटर प्रायः किलोवाट-घंटा (Kilowatt-hour) में ऊर्जा दर्ज करते हैं: 1 kWh = 1000 W × 3600 s = 3.6 × 10^6 J। किलोवाट-घंटा ऊर्जा है, शक्ति नहीं, भले ही नाम में वाट और घंटा दोनों आते हैं। 100 W का दीपक 5 h चले तो 0.5 kWh ऊर्जा लेता है। उसकी निर्धारित शक्ति 100 W ही रहती है, 500 W नहीं बनती। लागत प्रश्न में ऊर्जा इकाइयों को दी गई दर से गुणा करें और अतिरिक्त शुल्क की मान्यता लिखें। परिपथ प्रश्न में पहले व्यवस्था पहचानें, फिर तुल्य प्रतिरोध, स्रोत धारा और अलग शाखाओं के मान निकालें। अंत में श्रेणीक्रम विभवांतरों का योग या पार्श्वक्रम धाराओं का योग जाँचें। उत्तर में उपयुक्त सार्थक अंक तथा इकाई लिखें। वेबसाइट आदर्श स्रोत, ओमीय प्रतिरोधक और सांकेतिक चलते आवेश दिखाती है। यह इलेक्ट्रॉन की वास्तविक सूक्ष्म अपवाह चाल नहीं दिखाती और उपयोग की सूचना के बिना घर का वास्तविक बिल नहीं बता सकती।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Convert power to kW and time to h for kWh; use W and s for J.",
+          "hi": "kWh के लिए शक्ति kW, समय h में; J के लिए W और s लें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How much energy does a 2 kW heater use in 30 min?",
+          "hi": "2 kW तापक 30 min में कितनी ऊर्जा लेता है?"
+        },
+        "answer": {
+          "en": "30 min = 0.5 h, so E = 2 × 0.5 = 1 kWh.",
+          "hi": "30 min = 0.5 h, इसलिए E = 2 × 0.5 = 1 kWh।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "I = Q/t; V = W/Q",
+      "meaning": {
+        "en": "Current is charge per time; potential difference is work per charge.",
+        "hi": "धारा प्रति समय आवेश; विभवांतर प्रति आवेश कार्य है।"
+      },
+      "units": {
+        "en": "I: A; Q: C; t: s; V: V; W: J.",
+        "hi": "I: A; Q: C; t: s; V: V; W: J।"
+      }
+    },
+    {
+      "expression": "V = IR; R = ρl/A",
+      "meaning": {
+        "en": "Ohm’s law for fixed physical conditions; resistance of a uniform wire.",
+        "hi": "स्थिर भौतिक स्थितियों में ओम का नियम; एकसमान तार का प्रतिरोध।"
+      },
+      "units": {
+        "en": "R: Ω; ρ: Ω m; l: m; A: m².",
+        "hi": "R: Ω; ρ: Ω m; l: m; A: m²।"
+      }
+    },
+    {
+      "expression": "R_s = R1 + R2; 1/R_p = 1/R1 + 1/R2",
+      "meaning": {
+        "en": "Series resistances add; reciprocals add in parallel.",
+        "hi": "श्रेणीक्रम में प्रतिरोध; पार्श्वक्रम में व्युत्क्रम जुड़ते हैं।"
+      },
+      "units": {
+        "en": "All resistances: Ω.",
+        "hi": "सभी प्रतिरोध: Ω।"
+      }
+    },
+    {
+      "expression": "H = I²Rt; P = VI = I²R = V²/R",
+      "meaning": {
+        "en": "H is heat transferred in an ideal resistor; P is energy-transfer rate.",
+        "hi": "H आदर्श प्रतिरोधक में ऊष्मा ऊर्जा; P ऊर्जा अंतरण की दर है।"
+      },
+      "units": {
+        "en": "H: J; P: W; t: s; I: A; R: Ω; V: V.",
+        "hi": "H: J; P: W; t: s; I: A; R: Ω; V: V।"
+      }
+    },
+    {
+      "expression": "E = Pt; 1 kWh = 3.6 × 10^6 J",
+      "meaning": {
+        "en": "Energy equals constant power times time; kWh is a unit of energy.",
+        "hi": "ऊर्जा स्थिर शक्ति और समय का गुणनफल है; kWh ऊर्जा की इकाई है।"
+      },
+      "units": {
+        "en": "W × s → J; kW × h → kWh.",
+        "hi": "W × s → J; kW × h → kWh।"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Voltage is not current; power is not energy. Parallel resistance is not the arithmetic average. Keep the V–I graph axes explicit and convert minutes to seconds for joules.",
+    "hi": "विभवांतर धारा नहीं; शक्ति ऊर्जा नहीं। पार्श्व प्रतिरोध साधारण औसत नहीं है। V–I अक्ष स्पष्ट रखें और जूल के लिए मिनट को सेकंड करें।"
+  },
+  "summary": [
+    {
+      "en": "I = Q/t and V = W/Q describe different physical quantities.",
+      "hi": "I = Q/t तथा V = W/Q अलग भौतिक राशियाँ हैं।"
+    },
+    {
+      "en": "Ohm’s law requires unchanged physical conditions.",
+      "hi": "ओम के नियम में भौतिक स्थितियाँ स्थिर चाहिए।"
+    },
+    {
+      "en": "Wire resistance depends on length, area, material and temperature.",
+      "hi": "तार का प्रतिरोध लंबाई, क्षेत्रफल, पदार्थ और ताप पर निर्भर है।"
+    },
+    {
+      "en": "Series shares current; parallel shares voltage.",
+      "hi": "श्रेणीक्रम में धारा समान; पार्श्वक्रम में विभवांतर समान है।"
+    },
+    {
+      "en": "P = VI and E = Pt; 1 kWh = 3.6 × 10^6 J.",
+      "hi": "P = VI तथा E = Pt; 1 kWh = 3.6 × 10^6 J।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "A 6 Ω resistor has 9 V across it. Find the current.",
+        "hi": "6 Ω प्रतिरोधक पर 9 V है। धारा निकालें।"
+      },
+      "given": {
+        "en": "V = 9 V; R = 6 Ω",
+        "hi": "V = 9 V; R = 6 Ω"
+      },
+      "find": {
+        "en": "I",
+        "hi": "I"
+      },
+      "formula": {
+        "en": "I = V/R",
+        "hi": "I = V/R"
+      },
+      "steps": [
+        {
+          "en": "Substitute 9/6.",
+          "hi": "9/6 रखें।"
+        },
+        {
+          "en": "I = 1.5 A.",
+          "hi": "I = 1.5 A।"
+        }
+      ],
+      "answer": {
+        "en": "1.5 A.",
+        "hi": "1.5 A।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "How much charge flows in 2 min with current 0.25 A?",
+        "hi": "0.25 A धारा से 2 min में कितना आवेश बहता है?"
+      },
+      "given": {
+        "en": "I = 0.25 A; t = 2 min = 120 s",
+        "hi": "I = 0.25 A; t = 2 min = 120 s"
+      },
+      "find": {
+        "en": "Q",
+        "hi": "Q"
+      },
+      "formula": {
+        "en": "Q = It",
+        "hi": "Q = It"
+      },
+      "steps": [
+        {
+          "en": "Convert 2 min to 120 s.",
+          "hi": "2 min को 120 s में बदलें।"
+        },
+        {
+          "en": "Q = 0.25 × 120.",
+          "hi": "Q = 0.25 × 120।"
+        }
+      ],
+      "answer": {
+        "en": "30 C.",
+        "hi": "30 C।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find total resistance and source current for 6 Ω and 12 Ω in parallel on 12 V.",
+        "hi": "12 V पर 6 Ω तथा 12 Ω पार्श्वक्रम के कुल प्रतिरोध और स्रोत धारा निकालें।"
+      },
+      "given": {
+        "en": "R1 = 6 Ω; R2 = 12 Ω; V = 12 V",
+        "hi": "R1 = 6 Ω; R2 = 12 Ω; V = 12 V"
+      },
+      "find": {
+        "en": "R_p and I",
+        "hi": "R_p और I"
+      },
+      "formula": {
+        "en": "1/R_p = 1/R1 + 1/R2; I = V/R_p",
+        "hi": "1/R_p = 1/R1 + 1/R2; I = V/R_p"
+      },
+      "steps": [
+        {
+          "en": "1/R_p = 1/6 + 1/12 = 1/4.",
+          "hi": "1/R_p = 1/6 + 1/12 = 1/4।"
+        },
+        {
+          "en": "R_p = 4 Ω.",
+          "hi": "R_p = 4 Ω।"
+        },
+        {
+          "en": "I = 12/4 = 3 A; branches 2 A and 1 A.",
+          "hi": "I = 12/4 = 3 A; शाखाएँ 2 A और 1 A।"
+        }
+      ],
+      "answer": {
+        "en": "R_p = 4 Ω; I = 3 A.",
+        "hi": "R_p = 4 Ω; I = 3 A।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find heat in a 5 Ω resistor carrying 2 A for 60 s.",
+        "hi": "5 Ω प्रतिरोधक में 2 A धारा 60 s बहे तो ऊष्मा निकालें।"
+      },
+      "given": {
+        "en": "R = 5 Ω; I = 2 A; t = 60 s",
+        "hi": "R = 5 Ω; I = 2 A; t = 60 s"
+      },
+      "find": {
+        "en": "P and H",
+        "hi": "P और H"
+      },
+      "formula": {
+        "en": "P = I²R; H = Pt",
+        "hi": "P = I²R; H = Pt"
+      },
+      "steps": [
+        {
+          "en": "P = 2² × 5 = 20 W.",
+          "hi": "P = 2² × 5 = 20 W।"
+        },
+        {
+          "en": "H = 20 × 60.",
+          "hi": "H = 20 × 60।"
+        }
+      ],
+      "answer": {
+        "en": "P = 20 W; H = 1200 J.",
+        "hi": "P = 20 W; H = 1200 J।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Two 6 Ω resistors in parallel are in series with a 3 Ω resistor on 12 V. Find source and branch currents.",
+        "hi": "6 Ω के 2 पार्श्वक्रम प्रतिरोधक, 3 Ω के साथ श्रेणीक्रम में 12 V पर हैं। स्रोत और शाखा धाराएँ निकालें।"
+      },
+      "given": {
+        "en": "Parallel pair 6 Ω, 6 Ω; series 3 Ω; source 12 V.",
+        "hi": "पार्श्वक्रम जोड़ी 6 Ω, 6 Ω; श्रेणीक्रम 3 Ω; स्रोत 12 V।"
+      },
+      "find": {
+        "en": "Equivalent resistance, source current and each branch current",
+        "hi": "तुल्य प्रतिरोध, स्रोत धारा और प्रत्येक शाखा धारा"
+      },
+      "formula": {
+        "en": "R_pair = R1R2/(R1+R2); I = V/R_total",
+        "hi": "R_pair = R1R2/(R1+R2); I = V/R_total"
+      },
+      "steps": [
+        {
+          "en": "R_pair = 36/12 = 3 Ω.",
+          "hi": "R_pair = 36/12 = 3 Ω।"
+        },
+        {
+          "en": "R_total = 3 + 3 = 6 Ω; I = 12/6 = 2 A.",
+          "hi": "R_total = 3 + 3 = 6 Ω; I = 12/6 = 2 A।"
+        },
+        {
+          "en": "Series resistor drop = 2 × 3 = 6 V, leaving 6 V across the pair.",
+          "hi": "श्रेणी प्रतिरोधक पर पतन = 2 × 3 = 6 V; जोड़ी पर 6 V बचता है।"
+        },
+        {
+          "en": "Each branch current = 6/6 = 1 A; their sum is 2 A.",
+          "hi": "हर शाखा धारा = 6/6 = 1 A; योग 2 A है।"
+        }
+      ],
+      "answer": {
+        "en": "Total 6 Ω; source 2 A; each parallel branch 1 A.",
+        "hi": "कुल 6 Ω; स्रोत 2 A; हर पार्श्व शाखा 1 A।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "The SI unit of current is:",
+        "hi": "विद्युत धारा की SI इकाई है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Volt",
+            "hi": "वोल्ट"
+          },
+          "reason": {
+            "en": "Volt measures potential difference.",
+            "hi": "वोल्ट विभवांतर मापता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ampere",
+            "hi": "ऐम्पियर"
+          },
+          "reason": {
+            "en": "1 A = 1 C/s.",
+            "hi": "1 A = 1 C/s।"
+          }
+        },
+        {
+          "text": {
+            "en": "Coulomb",
+            "hi": "कूलॉम"
+          },
+          "reason": {
+            "en": "Coulomb measures charge, not its rate.",
+            "hi": "कूलॉम आवेश है, उसकी दर नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Joule",
+            "hi": "जूल"
+          },
+          "reason": {
+            "en": "Joule measures energy.",
+            "hi": "जूल ऊर्जा मापता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Where is an ammeter connected?",
+        "hi": "ऐमीटर कहाँ जोड़ा जाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "In series with the branch",
+            "hi": "शाखा के श्रेणीक्रम में"
+          },
+          "reason": {
+            "en": "The measured branch current passes through it.",
+            "hi": "मापी शाखा की धारा इससे गुजरती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always across the cell directly",
+            "hi": "हमेशा सीधे सेल के सिरों पर"
+          },
+          "reason": {
+            "en": "Direct connection across a source is unsuitable and can be damaging.",
+            "hi": "स्रोत पर सीधा जोड़ अनुचित और हानिकारक हो सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Without a circuit",
+            "hi": "बिना परिपथ"
+          },
+          "reason": {
+            "en": "Current requires a conducting path.",
+            "hi": "धारा के लिए चालक पथ चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Instead of every resistor",
+            "hi": "हर प्रतिरोधक के बदले"
+          },
+          "reason": {
+            "en": "It measures current; it does not replace circuit loads.",
+            "hi": "यह धारा मापता है, भार नहीं बदलता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A 6 Ω resistor on 12 V carries:",
+        "hi": "12 V पर 6 Ω प्रतिरोधक में धारा है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "72 A",
+            "hi": "72 A"
+          },
+          "reason": {
+            "en": "V × R is not current.",
+            "hi": "V × R धारा नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.5 A",
+            "hi": "0.5 A"
+          },
+          "reason": {
+            "en": "R/V is reciprocal current in these units.",
+            "hi": "R/V धारा का सही सूत्र नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 A",
+            "hi": "2 A"
+          },
+          "reason": {
+            "en": "I = V/R = 12/6 = 2 A.",
+            "hi": "I = V/R = 12/6 = 2 A।"
+          }
+        },
+        {
+          "text": {
+            "en": "18 A",
+            "hi": "18 A"
+          },
+          "reason": {
+            "en": "Adding V and R mixes unlike units.",
+            "hi": "V और R जोड़ने से अलग इकाइयाँ मिलती हैं।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "For a V vertical, I horizontal graph, slope equals:",
+        "hi": "ऊर्ध्व V और क्षैतिज I आलेख की ढाल है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Current",
+            "hi": "धारा"
+          },
+          "reason": {
+            "en": "Slope has units V/A, not A.",
+            "hi": "ढाल की इकाई V/A है, A नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Charge",
+            "hi": "आवेश"
+          },
+          "reason": {
+            "en": "Charge is not this graph ratio.",
+            "hi": "इस आलेख का अनुपात आवेश नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/R always",
+            "hi": "हमेशा 1/R"
+          },
+          "reason": {
+            "en": "1/R applies when I is vertical and V horizontal.",
+            "hi": "1/R तब होगा जब I ऊर्ध्व और V क्षैतिज है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Resistance R",
+            "hi": "प्रतिरोध R"
+          },
+          "reason": {
+            "en": "V/I = R for the ohmic line.",
+            "hi": "ओमीय रेखा में V/I = R।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Two 6 Ω resistors in series give:",
+        "hi": "6 Ω के 2 श्रेणी प्रतिरोधक देते हैं:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12 Ω",
+            "hi": "12 Ω"
+          },
+          "reason": {
+            "en": "Series values add: 6 + 6.",
+            "hi": "श्रेणीक्रम में 6 + 6 जुड़ते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3 Ω",
+            "hi": "3 Ω"
+          },
+          "reason": {
+            "en": "3 Ω is the parallel result.",
+            "hi": "3 Ω पार्श्वक्रम का उत्तर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "6 Ω",
+            "hi": "6 Ω"
+          },
+          "reason": {
+            "en": "One resistor value ignores the second.",
+            "hi": "एक प्रतिरोध का मान दूसरे को छोड़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "36 Ω",
+            "hi": "36 Ω"
+          },
+          "reason": {
+            "en": "The product alone is not series resistance.",
+            "hi": "केवल गुणनफल श्रेणी प्रतिरोध नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Two 6 Ω resistors in parallel give:",
+        "hi": "6 Ω के 2 पार्श्वक्रम प्रतिरोधक देते हैं:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12 Ω",
+            "hi": "12 Ω"
+          },
+          "reason": {
+            "en": "12 Ω is the series sum.",
+            "hi": "12 Ω श्रेणीक्रम का योग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3 Ω",
+            "hi": "3 Ω"
+          },
+          "reason": {
+            "en": "1/R = 1/6 + 1/6 = 1/3.",
+            "hi": "1/R = 1/6 + 1/6 = 1/3।"
+          }
+        },
+        {
+          "text": {
+            "en": "36 Ω",
+            "hi": "36 Ω"
+          },
+          "reason": {
+            "en": "A product needs division by the sum.",
+            "hi": "गुणनफल को योग से भाग देना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "0 Ω",
+            "hi": "0 Ω"
+          },
+          "reason": {
+            "en": "Positive finite resistors do not give zero here.",
+            "hi": "यहाँ धनात्मक सीमित प्रतिरोध शून्य नहीं देते।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Doubling current with R and time fixed changes heat by a factor of:",
+        "hi": "R और समय स्थिर रख धारा दोगुनी करें तो ऊष्मा का गुणक है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          "reason": {
+            "en": "Heating increases rather than halves.",
+            "hi": "ऊष्मा बढ़ती है, आधी नहीं होती।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "The current is squared, not linear.",
+            "hi": "धारा वर्ग में है, रैखिक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "H = I²Rt gives 2² = 4.",
+            "hi": "H = I²Rt से 2² = 4।"
+          }
+        },
+        {
+          "text": {
+            "en": "8",
+            "hi": "8"
+          },
+          "reason": {
+            "en": "There is no cubic current dependence.",
+            "hi": "धारा का घन निर्भरता नहीं है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which is a unit of energy?",
+        "hi": "ऊर्जा की इकाई कौन सी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "W",
+            "hi": "W"
+          },
+          "reason": {
+            "en": "W is power.",
+            "hi": "W शक्ति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A",
+            "hi": "A"
+          },
+          "reason": {
+            "en": "A is current.",
+            "hi": "A धारा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "V",
+            "hi": "V"
+          },
+          "reason": {
+            "en": "V is potential difference.",
+            "hi": "V विभवांतर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "kWh",
+            "hi": "kWh"
+          },
+          "reason": {
+            "en": "Power multiplied by time is energy.",
+            "hi": "शक्ति और समय का गुणनफल ऊर्जा है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Doubling wire length with area and temperature fixed makes R:",
+        "hi": "क्षेत्रफल और ताप स्थिर रख लंबाई दोगुनी करने पर R है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Twice as large",
+            "hi": "दोगुना"
+          },
+          "reason": {
+            "en": "R = ρl/A is proportional to length.",
+            "hi": "R = ρl/A लंबाई के समानुपाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          "reason": {
+            "en": "Half occurs when area doubles, not length.",
+            "hi": "आधा क्षेत्रफल दोगुना करने पर होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "समान"
+          },
+          "reason": {
+            "en": "Length is a factor in wire resistance.",
+            "hi": "लंबाई तार के प्रतिरोध का कारक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Four times",
+            "hi": "4 गुना"
+          },
+          "reason": {
+            "en": "Only length doubled gives a factor of 2.",
+            "hi": "केवल लंबाई दोगुनी होने से गुणक 2 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A 100 W lamp used for 5 h takes:",
+        "hi": "100 W दीपक 5 h में ऊर्जा लेता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "500 kWh",
+            "hi": "500 kWh"
+          },
+          "reason": {
+            "en": "Convert W to kW before multiplying hours.",
+            "hi": "घंटों से गुणा करने से पहले W को kW करें।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.5 kWh",
+            "hi": "0.5 kWh"
+          },
+          "reason": {
+            "en": "0.1 kW × 5 h = 0.5 kWh.",
+            "hi": "0.1 kW × 5 h = 0.5 kWh।"
+          }
+        },
+        {
+          "text": {
+            "en": "20 kWh",
+            "hi": "20 kWh"
+          },
+          "reason": {
+            "en": "Energy requires multiplication, not division.",
+            "hi": "ऊर्जा में गुणा चाहिए, भाग नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "0.02 kWh",
+            "hi": "0.02 kWh"
+          },
+          "reason": {
+            "en": "This reverses power and time.",
+            "hi": "यह शक्ति और समय का संबंध उलटता है।"
+          }
+        }
+      ],
+      "correct": 1
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define current and state its SI unit.",
+        "hi": "धारा परिभाषित कर SI इकाई लिखें।"
+      },
+      "answer": {
+        "en": "I = Q/t, the rate of charge flow through a cross-section. Its unit is ampere, A = C/s.",
+        "hi": "I = Q/t, अनुप्रस्थ काट से आवेश प्रवाह की दर है। इकाई ऐम्पियर, A = C/s है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "State Ohm’s law and its condition.",
+        "hi": "ओम का नियम और उसकी शर्त लिखें।"
+      },
+      "answer": {
+        "en": "V is proportional to I, so V = IR, for an ohmic conductor at constant temperature and other physical conditions.",
+        "hi": "तापमान और अन्य भौतिक स्थितियाँ स्थिर होने पर ओमीय चालक में V, I के समानुपाती है; V = IR।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Compare series and parallel connections in two points.",
+        "hi": "श्रेणी और पार्श्वक्रम के 2 अंतर लिखें।"
+      },
+      "answer": {
+        "en": "Series has common current and added voltage drops; parallel has common voltage and added branch currents.",
+        "hi": "श्रेणीक्रम में समान धारा तथा विभव पतनों का योग; पार्श्वक्रम में समान विभवांतर तथा शाखा धाराओं का योग है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Find the heat for I = 3 A, R = 2 Ω, t = 10 s.",
+        "hi": "I = 3 A, R = 2 Ω, t = 10 s की ऊष्मा निकालें।"
+      },
+      "answer": {
+        "en": "H = I²Rt = 9 × 2 × 10 = 180 J.",
+        "hi": "H = I²Rt = 9 × 2 × 10 = 180 J।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "What is resistivity? State its SI unit.",
+        "hi": "प्रतिरोधकता क्या है? SI इकाई लिखें।"
+      },
+      "answer": {
+        "en": "ρ = RA/l for a uniform conductor; it characterises the material at a specified temperature. SI unit Ω m.",
+        "hi": "एकसमान चालक में ρ = RA/l; निश्चित ताप पर पदार्थ का गुण है। SI इकाई Ω m है।"
+      },
+      "marks": 2
+    },
+    {
+      "question": {
+        "en": "Convert 2 kWh into joules.",
+        "hi": "2 kWh को जूल में बदलें।"
+      },
+      "answer": {
+        "en": "1 kWh = 3.6 × 10^6 J, so 2 kWh = 7.2 × 10^6 J.",
+        "hi": "1 kWh = 3.6 × 10^6 J, इसलिए 2 kWh = 7.2 × 10^6 J।"
+      },
+      "marks": 2
+    }
+  ],
+  "conceptMap": "आवेश प्रवाह → धारा; प्रति आवेश कार्य → विभवांतर → ओम का नियम → प्रतिरोध → श्रेणी/पार्श्वक्रम → शक्ति → ऊर्जा और ऊष्मा।",
+  "conceptMapEn": "Charge flow → current; work per charge → voltage → Ohm’s law → resistance → series/parallel → power → energy and heating.",
+  "editionBasis": {
+    "en": "NCERT Science Class 10, reprint 2026–27; UPMSP Science syllabus 2026–27. Original explanations; supplementary model relations are identified.",
+    "hi": "NCERT कक्षा 10 विज्ञान, पुनर्मुद्रण 2026–27; UPMSP विज्ञान पाठ्यक्रम 2026–27। व्याख्याएँ मौलिक हैं; पूरक मॉडल संबंध अलग बताए गए हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Science Class 10, Chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/jesc111.pdf"
+    },
+    {
+      "title": "UPMSP Class 10 Science syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/931-Science-Class-10.pdf"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "ten-ohm",
+      "title": {
+        "en": "Ohm’s law",
+        "hi": "ओम का नियम"
+      },
+      "kind": "ten-electricity",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Voltage",
+            "hi": "विभवांतर"
+          },
+          "min": 0,
+          "max": 12,
+          "step": 0.5,
+          "initial": 6,
+          "unit": "V"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Connect voltage, current and a fixed 6 Ω resistor.",
+        "hi": "विभवांतर, धारा तथा स्थिर 6 Ω प्रतिरोधक जोड़ें।"
+      },
+      "observe": {
+        "en": "Increase voltage and watch current rise linearly; read V and I axes before comparing slope.",
+        "hi": "विभवांतर बढ़ाएँ; धारा रैखिक बढ़ेगी। ढाल से पहले V और I अक्ष पढ़ें।"
+      },
+      "modelNote": {
+        "en": "Ideal ohmic resistor at fixed temperature, R = 6 Ω; moving markers do not show electron drift speed.",
+        "hi": "स्थिर ताप का आदर्श ओमीय प्रतिरोधक, R = 6 Ω; चलते संकेत इलेक्ट्रॉन की वास्तविक अपवाह चाल नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "I = V/6; a V-versus-I line has slope 6 Ω.",
+          "hi": "I = V/6; V बनाम I रेखा की ढाल 6 Ω है।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "At 12 V, current is:",
+          "hi": "12 V पर धारा है:"
+        },
+        "options": [
+          {
+            "en": "2 A",
+            "hi": "2 A"
+          },
+          {
+            "en": "6 A",
+            "hi": "6 A"
+          },
+          {
+            "en": "72 A",
+            "hi": "72 A"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "I = 12/6 = 2 A.",
+          "hi": "I = 12/6 = 2 A।"
+        }
+      },
+      "realLife": {
+        "en": "A fixed resistor can limit current in a low-voltage circuit.",
+        "hi": "कम विभव परिपथ में स्थिर प्रतिरोधक धारा सीमित कर सकता है।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-ohm-0",
+          "label": {
+            "en": "Set voltage to 0 V",
+            "hi": "विभवांतर 0 V करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          }
+        },
+        {
+          "id": "ten-ohm-1",
+          "label": {
+            "en": "Set voltage to 12 V",
+            "hi": "विभवांतर 12 V करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 12
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          },
+          "text": {
+            "en": "No source voltage: model current is 0 A.",
+            "hi": "स्रोत विभवांतर शून्य: मॉडल धारा 0 A।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0
+          },
+          "text": {
+            "en": "Current increases as I = V/6 while R stays fixed.",
+            "hi": "R स्थिर है; धारा I = V/6 के अनुसार बढ़ती है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-resistors",
+      "title": {
+        "en": "Series and parallel resistors",
+        "hi": "श्रेणी एवं पार्श्वक्रम प्रतिरोधक"
+      },
+      "kind": "ten-electricity",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Resistance R2",
+            "hi": "प्रतिरोध R2"
+          },
+          "min": 1,
+          "max": 20,
+          "step": 1,
+          "initial": 6,
+          "unit": "Ω"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Compare equivalent resistance in series and parallel.",
+        "hi": "श्रेणी तथा पार्श्वक्रम तुल्य प्रतिरोध की तुलना करें।"
+      },
+      "observe": {
+        "en": "Keep R1 = 6 Ω and voltage 12 V; change R2, then compare modes.",
+        "hi": "R1 = 6 Ω तथा विभवांतर 12 V स्थिर रखें; R2 और फिर व्यवस्था बदलें।"
+      },
+      "modelNote": {
+        "en": "Ideal source and wires; both resistors are ohmic, and displayed circuit paths are symbolic.",
+        "hi": "आदर्श स्रोत तथा तार; दोनों ओमीय प्रतिरोधक और पथ सांकेतिक हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Series adds resistances; parallel adds reciprocal resistances and keeps full voltage across each branch.",
+          "hi": "श्रेणीक्रम में प्रतिरोध जुड़ते हैं; पार्श्वक्रम में व्युत्क्रम जुड़ते हैं और हर शाखा पर पूरा विभवांतर है।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "Two 6 Ω resistors in parallel give:",
+          "hi": "6 Ω के 2 पार्श्वक्रम प्रतिरोधक देते हैं:"
+        },
+        "options": [
+          {
+            "en": "12 Ω",
+            "hi": "12 Ω"
+          },
+          {
+            "en": "3 Ω",
+            "hi": "3 Ω"
+          },
+          {
+            "en": "6 Ω",
+            "hi": "6 Ω"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "R_p = 6×6/(6+6) = 3 Ω.",
+          "hi": "R_p = 6×6/(6+6) = 3 Ω।"
+        }
+      },
+      "realLife": {
+        "en": "Parallel appliance branches permit independent switching.",
+        "hi": "पार्श्वक्रम युक्ति शाखाएँ स्वतंत्र स्विच संभव करती हैं।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-resistors-0",
+          "label": {
+            "en": "Set R2 equal to R1 at 6 Ω",
+            "hi": "R2 को R1 के बराबर 6 Ω करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 6
+          }
+        },
+        {
+          "id": "ten-resistors-1",
+          "label": {
+            "en": "Increase R2 to 18 Ω",
+            "hi": "R2 को 18 Ω करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 18
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 6
+          },
+          "text": {
+            "en": "R2 is at most R1; compare the two modes at the same value.",
+            "hi": "R2 अधिकतम R1 है; समान मान पर दोनों व्यवस्थाएँ तुलना करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 6
+          },
+          "text": {
+            "en": "R2 exceeds R1; its parallel branch takes less current than R1.",
+            "hi": "R2, R1 से अधिक है; इसकी पार्श्व शाखा की धारा कम होगी।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ten-power",
+      "title": {
+        "en": "Heating and electrical energy",
+        "hi": "ऊष्मीय प्रभाव और विद्युत ऊर्जा"
+      },
+      "kind": "ten-electricity",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Current",
+            "hi": "विद्युत धारा"
+          },
+          "min": 0,
+          "max": 5,
+          "step": 0.25,
+          "initial": 2,
+          "unit": "A"
+        }
+      ],
+      "selectors": [],
+      "noteIndex": 6,
+      "goal": {
+        "en": "Relate current to heating energy at fixed resistance and time.",
+        "hi": "स्थिर प्रतिरोध तथा समय पर धारा और ऊष्मा जोड़ें।"
+      },
+      "observe": {
+        "en": "Increase current: power and energy grow with its square.",
+        "hi": "धारा बढ़ाएँ: शक्ति और ऊर्जा उसके वर्ग के साथ बढ़ती हैं।"
+      },
+      "modelNote": {
+        "en": "R = 5 Ω and t = 60 s fixed; colour is symbolic heating, not calculated temperature.",
+        "hi": "R = 5 Ω तथा t = 60 s स्थिर; रंग सांकेतिक गरमी है, गणना किया ताप नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "P = I²R and H = I²Rt; doubling current gives four times the energy.",
+          "hi": "P = I²R और H = I²Rt; धारा दोगुनी तो ऊर्जा 4 गुनी।"
+        }
+      },
+      "quick": {
+        "question": {
+          "en": "At 2 A, what is H in 60 s?",
+          "hi": "2 A पर 60 s में H कितनी है?"
+        },
+        "options": [
+          {
+            "en": "20 J",
+            "hi": "20 J"
+          },
+          {
+            "en": "600 J",
+            "hi": "600 J"
+          },
+          {
+            "en": "1200 J",
+            "hi": "1200 J"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "2² × 5 × 60 = 1200 J; 20 is the power in W.",
+          "hi": "2² × 5 × 60 = 1200 J; 20, W में शक्ति है।"
+        }
+      },
+      "realLife": {
+        "en": "An electric heater converts electrical energy into thermal energy.",
+        "hi": "विद्युत तापक विद्युत ऊर्जा को ऊष्मीय ऊर्जा में बदलता है।"
+      },
+      "legend": [
+        {
+          "color": "#e9b949",
+          "label": {
+            "en": "Incident ray / current direction",
+            "hi": "आपतित किरण / धारा की दिशा"
+          }
+        },
+        {
+          "color": "#62c9e8",
+          "label": {
+            "en": "Refracted ray / field",
+            "hi": "अपवर्तित किरण / क्षेत्र"
+          }
+        }
+      ],
+      "missions": [
+        {
+          "id": "ten-power-0",
+          "label": {
+            "en": "Set current to 2 A",
+            "hi": "धारा 2 A करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 2
+          }
+        },
+        {
+          "id": "ten-power-1",
+          "label": {
+            "en": "Double it to 4 A",
+            "hi": "इसे दोगुना 4 A करें"
+          },
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 4
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "eq",
+            "value": 0
+          },
+          "text": {
+            "en": "No current: no Joule heating in the resistor.",
+            "hi": "धारा शून्य: प्रतिरोधक में जूल ऊष्मा नहीं।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 0
+          },
+          "text": {
+            "en": "Heating rises quadratically: H = 300I² J for this 60 s model.",
+            "hi": "ऊष्मा वर्गानुसार बढ़ती है: इस 60 s मॉडल में H = 300I² J।"
+          }
+        }
+      ]
+    }
+  ]
+}

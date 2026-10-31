@@ -1,0 +1,888 @@
+{
+  "id": 8,
+  "title": {
+    "en": "Applications of Integrals",
+    "hi": "समाकलनों के अनुप्रयोग"
+  },
+  "goal": {
+    "en": "Find exact plane areas by choosing boundaries and strips carefully.",
+    "hi": "सीमाएँ और पट्टियाँ सही चुनकर समतल क्षेत्रों का सटीक क्षेत्रफल निकालें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Area as accumulation",
+        "hi": "संचय के रूप में क्षेत्रफल"
+      },
+      "body": {
+        "en": "Area under a nonnegative continuous graph is the limit of sums of thin rectangles. Over [a,b], A=∫f(x)dx. Sketch the region, identify boundaries and report square units. A drawing suggests the region; the integral supplies the exact value.",
+        "hi": "समाकलनों के अनुप्रयोग (Applications of Integrals) में किसी वक्र और सीमाओं से घिरे समतल भाग का क्षेत्रफल निकालते हैं। साधारण आयत का क्षेत्रफल लंबाई और चौड़ाई के गुणनफल से मिलता है, पर वक्र के नीचे की ऊँचाई बदलती रहती है। इसलिए क्षेत्र को बहुत पतली ऊर्ध्वाधर पट्टियों में बाँटने की कल्पना करते हैं। प्रत्येक पट्टी की लगभग ऊँचाई f(x) और चौड़ाई Δx है। इनके क्षेत्रफलों का योग लेकर, अधिक पतली पट्टियों की सीमा में निश्चित समाकल मिलता है। यदि पूरे अंतराल [a,b] पर f(x) गैरऋणात्मक है, तो क्षेत्रफल A=∫a^b f(x) dx है। यहाँ a तथा b क्षैतिज सीमा हैं, पट्टी की ऊँचाई नहीं। वक्र का चित्र पहले बनाने से सही सीमाएँ और घिरा भाग पहचानना आसान होता है। कागज पर बना चित्र अनुमान देता है; अंतिम मान समाकल से तय करें। यदि दोनों अक्षों की इकाई cm है तो क्षेत्रफल cm² में होगा। केवल संख्या लिखने पर वर्ग इकाई लिखना न भूलें। प्रत्येक पट्टी घिरे क्षेत्र का हिस्सा होनी चाहिए, अतिरिक्त क्षेत्र शामिल नहीं होना चाहिए।"
+      },
+      "formula": "A=∫a^b f(x) dx, f(x)≥0",
+      "question": {
+        "en": "What is the area under y=2 on [1,4]?",
+        "hi": "[1,4] पर y=2 के नीचे कितना क्षेत्रफल है?"
+      },
+      "answer": {
+        "en": "2(4−1)=6 square units.",
+        "hi": "2(4−1)=6 वर्ग इकाई।"
+      }
+    },
+    {
+      "title": {
+        "en": "Signed integral and geometric area",
+        "hi": "चिह्नित समाकल और ज्यामितीय क्षेत्रफल"
+      },
+      "body": {
+        "en": "A definite integral is signed; geometric area is nonnegative. Split at zeros and add absolute contributions. For y=x on [−1,1], the signed integral is 0 but area is 1. Use A=∫|f|dx.",
+        "hi": "निश्चित समाकल (Definite integral) और ज्यामितीय क्षेत्रफल हमेशा एक ही संख्या नहीं होते। x-अक्ष के ऊपर f(x) का योगदान धनात्मक और नीचे ऋणात्मक होता है। इसलिए ∫a^b f(x) dx चिह्नित या बीजीय संचय देता है। ज्यामितीय क्षेत्रफल (Geometric area) किसी भाग के आकार की माप है और ऋणात्मक नहीं हो सकता। यदि वक्र पूरे अंतराल में नीचे है तो A=−∫a^b f(x) dx लें। यदि वक्र बीच में अक्ष काटता है, पहले f(x)=0 हल करके संकेत बदलने वाले बिंदु निकालें। अंतराल को इन बिंदुओं पर बाँटें और हर भाग का धनात्मक क्षेत्रफल जोड़ें। उदाहरणतः y=x को −1 से 1 तक समाकलित करने पर 0 मिलता है, लेकिन दोनों त्रिभुजों का कुल क्षेत्रफल 1 है। ऊपर और नीचे के भाग केवल चिह्नित समाकल में कटते हैं, वास्तविक क्षेत्र में नहीं। सुविधाजनक रूप में A=∫a^b |f(x)| dx लिखा जा सकता है। परिमाप और क्षेत्रफल को भी अलग रखें; सीमा की लंबाई के बजाय अंदर का भाग मापा जा रहा है। संकेत की जाँच के लिए प्रत्येक उपअंतराल में 1 परीक्षण मान रख सकते हैं।"
+      },
+      "formula": "A=∫a^b |f(x)| dx",
+      "question": {
+        "en": "Why is ∫−1^1 x dx=0 not the geometric area?",
+        "hi": "∫−1^1 x dx=0 ज्यामितीय क्षेत्रफल क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "Equal signed contributions cancel; two areas add to 1.",
+        "hi": "बराबर चिह्नित योगदान कटते हैं; दोनों क्षेत्रफल जुड़कर 1 होते हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Finding the actual boundaries",
+        "hi": "वास्तविक सीमाएँ पहचानना"
+      },
+      "body": {
+        "en": "Sketch all stated boundaries and solve intersections. Check which enclosed component is requested. For y=x² and y=4, x=±2; the first-quadrant part instead starts at x=0. Do not invent a missing boundary.",
+        "hi": "क्षेत्रफल के प्रश्न में सबसे महत्वपूर्ण काम घिरा क्षेत्र पहचानना है। सीमाएँ कोई वक्र, x-अक्ष, y-अक्ष या दी हुई सीधी रेखाएँ हो सकती हैं। केवल 1 समीकरण मिलने पर पूरा बंद क्षेत्र मान लेना गलत है। पहले सभी दी हुई सीमाएँ एक ही चित्र पर बनाएँ। वक्र का अक्ष से प्रतिच्छेद निकालने के लिए उचित निर्देशांक 0 रखें। दो वक्रों के प्रतिच्छेद (Intersection) के लिए उनके y के व्यंजक बराबर करें। मिले x मानों को वापस रखकर y भी जाँचें; केवल समीकरण का हल सही क्षेत्र होने की गारंटी नहीं है। यदि कई बंद क्षेत्र बनें तो प्रश्न में निर्दिष्ट भाग चुनें। उदाहरणतः y=x² और y=4 का प्रतिच्छेद x=−2 तथा 2 पर है। इनके बीच क्षैतिज रेखा ऊपर और परवलय नीचे रहता है। यदि केवल प्रथम चतुर्थांश का क्षेत्र चाहिए, तो x=0 से 2 लें, −2 से 2 नहीं। प्रतिच्छेदों को क्रम में लिखने से समाकल की निचली और ऊपरी सीमा सही मिलती है। किसी काल्पनिक सीमा को अपनी ओर से जोड़कर उत्तर न निकालें। आवश्यकता हो तो वक्र के कुछ आसान बिंदुओं की सारणी बनाएँ।"
+      },
+      "formula": "f(x)=g(x) gives candidate intersection abscissae",
+      "question": {
+        "en": "Find the intersections of y=x² and y=4.",
+        "hi": "y=x² और y=4 के प्रतिच्छेद निकालें।"
+      },
+      "answer": {
+        "en": "(−2,4) and (2,4).",
+        "hi": "(−2,4) तथा (2,4)।"
+      }
+    },
+    {
+      "title": {
+        "en": "Area between two curves",
+        "hi": "दो वक्रों के बीच क्षेत्रफल"
+      },
+      "body": {
+        "en": "Between f≥g on [a,b], integrate upper minus lower. This remains true below the x-axis. Determine the order rather than trusting equation order; split where the order changes. The height between y=x and y=x² on [0,1] is x−x².",
+        "hi": "दो वक्रों के बीच क्षेत्रफल (Area between curves) निकालते समय प्रत्येक ऊर्ध्वाधर पट्टी की ऊँचाई ऊपरी y से निचले y का अंतर है। यदि [a,b] पर f(x)≥g(x) हो तो A=∫a^b [f(x)−g(x)] dx मिलता है। यह सूत्र तब भी सही है जब दोनों वक्र x-अक्ष के नीचे हों, क्योंकि ऊँचाई उनके परस्पर अंतर से तय होती है। पहले तय करें कि कौन ऊपर है; केवल पहले लिखे समीकरण को ऊपर न मानें। एक मध्य बिंदु पर मान जाँचें और यदि क्रम बदलता हो तो प्रतिच्छेद पर अंतराल बाँटें। y=x और y=x² के लिए 0≤x≤1 में x≥x² है, इसलिए ऊँचाई x−x² है। y=2x और y=x² के लिए प्रतिच्छेद 0 तथा 2 हैं और ऊँचाई 2x−x² है। यदि समाकल से ऋणात्मक उत्तर निकले तो तुरंत उसका चिह्न बदलने के बजाय सीमाएँ और ऊपर-नीचे का चयन जाँचें। सही स्थापना में हर पट्टी की ऊँचाई गैरऋणात्मक रहती है। एक उपयोगी सामान्य रूप ∫|f−g|dx है, पर हिसाब करते समय संकेत के अनुसार टुकड़े आवश्यक हो सकते हैं।"
+      },
+      "formula": "A=∫a^b [upper(x)−lower(x)] dx",
+      "question": {
+        "en": "Which curve is above on 0<x<1: y=x or y=x²?",
+        "hi": "0<x<1 में y=x या y=x² में कौन ऊपर है?"
+      },
+      "answer": {
+        "en": "y=x.",
+        "hi": "y=x ऊपर है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Horizontal strips",
+        "hi": "क्षैतिज पट्टियों से समाकलन"
+      },
+      "body": {
+        "en": "Horizontal strips use right minus left and y-limits: A=∫[xright−xleft]dy. Choose the direction needing fewer pieces. For x=y² and x=4, integrate 4−y² from −2 to 2; do not use x-limits in a dy integral.",
+        "hi": "हर क्षेत्र के लिए ऊर्ध्वाधर पट्टियाँ सबसे सरल नहीं होतीं। यदि समीकरण x के बजाय y के रूप में आसानी से लिखे जा सकें, तो क्षैतिज पट्टी (Horizontal strip) चुनें। इसकी लंबाई दाहिने x से बाएँ x का अंतर और मोटाई dy है। यदि y की सीमाएँ c तथा d हैं तो A=∫c^d [xदायाँ(y)−xबायाँ(y)] dy होगा। उदाहरण के लिए x=y² और x=4 के बीच −2≤y≤2 पर दायाँ सिरा 4 और बायाँ सिरा y² है। यहाँ एक समाकल पर्याप्त है। उसी क्षेत्र को x से करने पर ऊपर और नीचे की शाखाओं ±√x को ध्यान में रखना होगा। दोनों सही तरीके समान उत्तर देते हैं, पर सरल दिशा चुनने से त्रुटि कम होती है। dy लिखने पर सीमाएँ y के मान होनी चाहिए; x के प्रतिच्छेद सीधे न रख दें। ऋणात्मक x होने से पट्टी की लंबाई ऋणात्मक नहीं बनती, जब तक दायाँ घटा बायाँ सही रखा है। पहले 1 नमूना पट्टी चित्र में बनाएँ, उसके दोनों सिरों के समीकरण लिखें और फिर समाकल बनाएँ। पट्टी की दिशा पूरे समाधान में स्पष्ट रखें।"
+      },
+      "formula": "A=∫c^d [right(y)−left(y)] dy",
+      "question": {
+        "en": "Write an area integral for x=y² and x=4.",
+        "hi": "x=y² तथा x=4 के क्षेत्रफल का समाकल लिखें।"
+      },
+      "answer": {
+        "en": "∫−2^2 (4−y²)dy.",
+        "hi": "∫−2^2 (4−y²)dy।"
+      }
+    },
+    {
+      "title": {
+        "en": "Symmetry, circles and ellipses",
+        "hi": "सममिति, वृत्त और दीर्घवृत्त"
+      },
+      "body": {
+        "en": "Use symmetry only when the complete region has it. A circle gives πr² and an ellipse with positive semiaxes a,b gives πab. An odd function may have zero signed integral without zero area. Branch signs matter for square roots.",
+        "hi": "सममिति (Symmetry) क्षेत्रफल की गणना को छोटा कर सकती है, लेकिन गुणा करने से पहले क्षेत्र की सीमाएँ भी सममित होनी चाहिए। मूल केंद्र वाले वृत्त x²+y²=r² का प्रथम चतुर्थांश y=√(r²−x²), 0≤x≤r से बनता है। इस भाग का क्षेत्रफल निकालकर 4 से गुणा करने पर πr² मिलता है। दीर्घवृत्त (Ellipse) x²/a²+y²/b²=1 के प्रथम चतुर्थांश में y=(b/a)√(a²−x²) है और कुल क्षेत्रफल πab मिलता है। यहाँ a तथा b दोनों धनात्मक अर्धअक्ष हैं, पूरे अक्षों की लंबाई नहीं। सममिति का उपयोग केवल वक्र की बनावट देखकर न करें; यदि अतिरिक्त रेखा केवल दाहिने भाग को काटती है तो बचा क्षेत्र सममित नहीं भी हो सकता है। सम फलन के लिए ∫−a^a f(x)dx=2∫0^a f(x)dx है। विषम फलन का चिह्नित समाकल 0 हो सकता है, पर उसका कुल क्षेत्रफल 0 नहीं मानना चाहिए। क्षेत्रफल की सममिति और चिह्नित समाकल की सममिति का यह अंतर हमेशा लिखकर समझें। वृत्त का ऊपरी अर्धभाग चुनते समय वर्गमूल का धनात्मक चिह्न सही रखें।"
+      },
+      "formula": "Acircle=πr²; Aellipse=πab",
+      "question": {
+        "en": "An ellipse has semiaxes 3 and 2. What is its area?",
+        "hi": "दीर्घवृत्त के अर्धअक्ष 3 तथा 2 हैं। क्षेत्रफल क्या है?"
+      },
+      "answer": {
+        "en": "6π square units.",
+        "hi": "6π वर्ग इकाई।"
+      }
+    },
+    {
+      "title": {
+        "en": "A reliable solution sequence",
+        "hi": "विश्वसनीय समाधान क्रम"
+      },
+      "body": {
+        "en": "Write boundaries, intersections, strip direction, strip length, integral, evaluation and square units. A containing rectangle supplies a reasonableness bound. Finite rectangle sums are approximations, whereas exact integration has no arbitrary constant in its final definite value.",
+        "hi": "क्षेत्रफल का समाधान व्यवस्थित क्रम से लिखने पर शिक्षक और विद्यार्थी दोनों हर निर्णय जाँच सकते हैं। पहले दिए समीकरण और मांगी हुई सीमा लिखें। दूसरा, प्रतिच्छेद निकालें तथा छोटा नामांकित रेखाचित्र बनाएँ। तीसरा, ऊर्ध्वाधर या क्षैतिज पट्टी चुनें। चौथा, पट्टी की ऊँचाई या लंबाई सही क्रम में लिखें। पाँचवाँ, सही चर की सीमाएँ लगाकर समाकल बनाएँ। छठा, प्रतिअवकलज निकालें और ऊपरी सीमा का मान घटा निचली सीमा का मान करें। अंतिम उत्तर के साथ वर्ग इकाई दें। अनुमान से भी जाँच करें: यदि किसी क्षेत्र की चौड़ाई 2 और अधिकतम ऊँचाई 4 है तो उसका क्षेत्रफल 8 से बड़ा नहीं हो सकता। यह सीमा पूरे क्षेत्र पर लागू होने पर ही उपयोगी है। चित्र का आकार अनिवार्यतः पैमाने पर नहीं होता, इसलिए आंख के अनुमान से सटीक तुलना न करें। गणना में कोई C बचना नहीं चाहिए, क्योंकि निश्चित समाकल में स्थिरांक कट जाता है। परवलय के नीचे आयतों का योग दृश्य समझ देता है; कुछ आयतों का परिणाम केवल सन्निकट है। उत्तर में सन्निकट और सटीक मानों को अलग चिह्नों से लिखें।"
+      },
+      "formula": "∫a^b h(x)dx=H(b)−H(a)",
+      "question": {
+        "en": "Can an area inside a 2 by 4 rectangle be 10?",
+        "hi": "2 गुणा 4 के आयत के भीतर क्षेत्रफल 10 हो सकता है?"
+      },
+      "answer": {
+        "en": "No; its area is at most 8 square units.",
+        "hi": "नहीं; क्षेत्रफल अधिकतम 8 वर्ग इकाई है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Crossing curves and final checks",
+        "hi": "कटते वक्र और अंतिम जाँच"
+      },
+      "body": {
+        "en": "When curves exchange order, split the area integral. For y=x and y=x³ on [−1,1], integrate x³−x on [−1,0] and x−x³ on [0,1], obtaining 1/2. Test both sides of an intersection; tangency need not reverse the order.",
+        "hi": "एक ही प्रश्न में ऊपर का वक्र बदल सकता है। ऐसी स्थिति में पूरे अंतराल पर केवल f−g समाकलित करने से कुछ क्षेत्र कट जाएगा। उदाहरणतः y=x तथा y=x³ को −1 से 1 तक देखें। प्रतिच्छेद −1,0,1 पर हैं। −1 से 0 में x³ ऊपर और x नीचे है; 0 से 1 में x ऊपर और x³ नीचे है। इसलिए A=∫−1^0 (x³−x)dx+∫0^1 (x−x³)dx लिखें। दोनों भाग बराबर हैं और कुल क्षेत्रफल 1/2 मिलता है। यहाँ विषम अंतर का पूरे अंतराल पर समाकल 0 आता, जो मांगा क्षेत्रफल नहीं है। हर उपअंतराल में संकेत जाँचने की आदत इस गलती से बचाती है। केवल जहां स्पर्श हो वहाँ ऊपर-नीचे क्रम बदलना जरूरी नहीं, इसलिए प्रतिच्छेद के दोनों ओर परीक्षण करें। समाधान पूरा होने पर जाँचें कि सभी बंद भाग शामिल हुए हैं, कोई भाग दो बार नहीं गिना गया और उत्तर गैरऋणात्मक है। क्षेत्रफल को लंबाई की इकाई में न लिखें। यदि प्रश्न केवल छायांकित भाग माँगता है तो बाकी हिस्सों को जोड़ने से उत्तर गलत होगा, चाहे गणना सही हो।"
+      },
+      "formula": "A=∫−1^0 (x³−x)dx+∫0^1 (x−x³)dx=1/2",
+      "question": {
+        "en": "Why split at x=0 for y=x and y=x³?",
+        "hi": "y=x तथा y=x³ में x=0 पर अंतराल क्यों बाँटें?"
+      },
+      "answer": {
+        "en": "Their vertical order reverses there.",
+        "hi": "वहाँ उनका ऊपर-नीचे क्रम बदलता है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the area under y=x² from x=0 to 2.",
+        "hi": "x=0 से 2 तक y=x² के नीचे क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given y=x²≥0 on [0,2]; find geometric area.",
+          "hi": "दिया y=x²≥0, अंतराल [0,2]; क्षेत्रफल चाहिए।"
+        },
+        {
+          "en": "Use A=∫0^2 x²dx=[x³/3]0^2.",
+          "hi": "A=∫0^2 x²dx=[x³/3]0^2 लें।"
+        },
+        {
+          "en": "Evaluate 8/3−0.",
+          "hi": "मान 8/3−0 है।"
+        }
+      ],
+      "answer": {
+        "en": "8/3 square units.",
+        "hi": "8/3 वर्ग इकाई।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the area between y=−x and the x-axis on [0,2].",
+        "hi": "[0,2] पर y=−x तथा x-अक्ष के बीच क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "The graph is below the x-axis.",
+          "hi": "आलेख x-अक्ष के नीचे है।"
+        },
+        {
+          "en": "Height=0−(−x)=x; A=∫0^2 x dx.",
+          "hi": "ऊँचाई=0−(−x)=x; A=∫0^2 x dx।"
+        },
+        {
+          "en": "A=[x²/2]0^2=2.",
+          "hi": "A=[x²/2]0^2=2।"
+        }
+      ],
+      "answer": {
+        "en": "2 square units.",
+        "hi": "2 वर्ग इकाई।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the area enclosed by y=2x and y=x².",
+        "hi": "y=2x तथा y=x² से घिरा क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Intersections: x²=2x gives x=0,2.",
+          "hi": "प्रतिच्छेद: x²=2x से x=0,2।"
+        },
+        {
+          "en": "On [0,2], upper−lower=2x−x².",
+          "hi": "[0,2] पर ऊपर−नीचे=2x−x²।"
+        },
+        {
+          "en": "A=∫0^2(2x−x²)dx=[x²−x³/3]0^2=4−8/3.",
+          "hi": "A=∫0^2(2x−x²)dx=[x²−x³/3]0^2=4−8/3।"
+        }
+      ],
+      "answer": {
+        "en": "4/3 square units.",
+        "hi": "4/3 वर्ग इकाई।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find the area enclosed by x=y² and x=4.",
+        "hi": "x=y² तथा x=4 से घिरा क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Intersections y=±2; use horizontal strips.",
+          "hi": "प्रतिच्छेद y=±2; क्षैतिज पट्टियाँ लें।"
+        },
+        {
+          "en": "A=∫−2^2(4−y²)dy.",
+          "hi": "A=∫−2^2(4−y²)dy।"
+        },
+        {
+          "en": "By symmetry A=2[4y−y³/3]0^2=2(8−8/3).",
+          "hi": "सममिति से A=2[4y−y³/3]0^2=2(8−8/3)।"
+        }
+      ],
+      "answer": {
+        "en": "32/3 square units.",
+        "hi": "32/3 वर्ग इकाई।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find the total area between y=x and y=x³ on [−1,1].",
+        "hi": "[−1,1] पर y=x तथा y=x³ के बीच कुल क्षेत्रफल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "They meet at −1,0,1 and reverse order at 0.",
+          "hi": "वे −1,0,1 पर मिलते हैं और 0 पर क्रम बदलते हैं।"
+        },
+        {
+          "en": "A=∫−1^0(x³−x)dx+∫0^1(x−x³)dx.",
+          "hi": "A=∫−1^0(x³−x)dx+∫0^1(x−x³)dx।"
+        },
+        {
+          "en": "By symmetry A=2[x²/2−x⁴/4]0^1=2(1/2−1/4).",
+          "hi": "सममिति से A=2[x²/2−x⁴/4]0^1=2(1/2−1/4)।"
+        }
+      ],
+      "answer": {
+        "en": "1/2 square units.",
+        "hi": "1/2 वर्ग इकाई।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which gives geometric area under f≥0 on [a,b]?",
+        "hi": "[a,b] पर f≥0 के नीचे ज्यामितीय क्षेत्रफल क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "∫a^b f(x)dx",
+            "hi": "∫a^b f(x)dx"
+          },
+          "reason": {
+            "en": "Nonnegative strip heights accumulate area.",
+            "hi": "गैरऋणात्मक पट्टी ऊँचाइयाँ क्षेत्रफल देती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "f(b)−f(a)",
+            "hi": "f(b)−f(a)"
+          },
+          "reason": {
+            "en": "This is a change in function value, not area.",
+            "hi": "यह फलन मान का परिवर्तन है, क्षेत्रफल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "f′(a)",
+            "hi": "f′(a)"
+          },
+          "reason": {
+            "en": "A derivative is a slope.",
+            "hi": "अवकलज ढाल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "a+b",
+            "hi": "a+b"
+          },
+          "reason": {
+            "en": "Adding endpoints ignores the curve.",
+            "hi": "सिरों का जोड़ वक्र को नहीं गिनता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is the total area between y=x and the axis on [−1,1]?",
+        "hi": "[−1,1] पर y=x तथा अक्ष के बीच कुल क्षेत्रफल क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "Two triangles each have area 1/2.",
+            "hi": "दोनों त्रिभुजों का क्षेत्रफल 1/2 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0",
+            "hi": "0"
+          },
+          "reason": {
+            "en": "0 is the signed integral, not total area.",
+            "hi": "0 चिह्नित समाकल है, कुल क्षेत्रफल नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "−1",
+            "hi": "−1"
+          },
+          "reason": {
+            "en": "Geometric area cannot be negative.",
+            "hi": "ज्यामितीय क्षेत्रफल ऋणात्मक नहीं होता।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "Each triangle is 1/2, not 1.",
+            "hi": "प्रत्येक त्रिभुज 1/2 है, 1 नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Between y=x and y=x² on [0,1], which height is correct?",
+        "hi": "[0,1] में y=x तथा y=x² के बीच सही ऊँचाई कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "x−x²",
+            "hi": "x−x²"
+          },
+          "reason": {
+            "en": "x is at least x² in this interval.",
+            "hi": "इस अंतराल में x कम से कम x² है।"
+          }
+        },
+        {
+          "text": {
+            "en": "x²−x",
+            "hi": "x²−x"
+          },
+          "reason": {
+            "en": "This reverses upper and lower.",
+            "hi": "इसमें ऊपर-नीचे उलट हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "x+x²",
+            "hi": "x+x²"
+          },
+          "reason": {
+            "en": "A difference, not a sum, gives separation.",
+            "hi": "दूरी अंतर से मिलती है, योग से नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "2x",
+            "hi": "2x"
+          },
+          "reason": {
+            "en": "The lower curve is not subtracted.",
+            "hi": "निचला वक्र नहीं घटाया गया।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Intersections of y=x² and y=4 have which x-values?",
+        "hi": "y=x² तथा y=4 के प्रतिच्छेदों के x मान क्या हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "−2,2",
+            "hi": "−2,2"
+          },
+          "reason": {
+            "en": "Both numbers square to 4.",
+            "hi": "दोनों का वर्ग 4 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "0,4",
+            "hi": "0,4"
+          },
+          "reason": {
+            "en": "Neither pair solves x²=4.",
+            "hi": "यह युग्म x²=4 हल नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 only",
+            "hi": "केवल 2"
+          },
+          "reason": {
+            "en": "The negative square root is also valid.",
+            "hi": "ऋणात्मक वर्गमूल भी मान्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "−4,4",
+            "hi": "−4,4"
+          },
+          "reason": {
+            "en": "Their squares are 16.",
+            "hi": "इनका वर्ग 16 है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What order is used with horizontal strips?",
+        "hi": "क्षैतिज पट्टियों में कौन सा क्रम लें?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Right−left",
+            "hi": "दायाँ−बायाँ"
+          },
+          "reason": {
+            "en": "This gives nonnegative horizontal length.",
+            "hi": "इससे गैरऋणात्मक क्षैतिज लंबाई मिलती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Left−right",
+            "hi": "बायाँ−दायाँ"
+          },
+          "reason": {
+            "en": "This produces the negative separation.",
+            "hi": "इससे ऋणात्मक अंतर मिलेगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "Top−bottom always",
+            "hi": "सदा ऊपर−नीचे"
+          },
+          "reason": {
+            "en": "That is for vertical strips.",
+            "hi": "वह ऊर्ध्वाधर पट्टी के लिए है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Right+left",
+            "hi": "दायाँ+बायाँ"
+          },
+          "reason": {
+            "en": "Adding coordinates is not length.",
+            "hi": "निर्देशांकों का योग लंबाई नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Area of an ellipse with semiaxes 4 and 3?",
+        "hi": "4 तथा 3 अर्धअक्ष वाले दीर्घवृत्त का क्षेत्रफल?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12π",
+            "hi": "12π"
+          },
+          "reason": {
+            "en": "πab=π×4×3.",
+            "hi": "πab=π×4×3।"
+          }
+        },
+        {
+          "text": {
+            "en": "7π",
+            "hi": "7π"
+          },
+          "reason": {
+            "en": "Semiaxes are multiplied, not added.",
+            "hi": "अर्धअक्षों का गुणन होता है, जोड़ नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "48π",
+            "hi": "48π"
+          },
+          "reason": {
+            "en": "Using full axes overcounts by 4.",
+            "hi": "पूरे अक्ष लेने से 4 गुना अधिक मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "25π",
+            "hi": "25π"
+          },
+          "reason": {
+            "en": "Sum of squares is not the ellipse area.",
+            "hi": "वर्गों का योग दीर्घवृत्त का क्षेत्रफल नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Area under y=3 on [1,5]?",
+        "hi": "[1,5] पर y=3 के नीचे क्षेत्रफल?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12",
+            "hi": "12"
+          },
+          "reason": {
+            "en": "Height 3 times width 4 gives 12.",
+            "hi": "ऊँचाई 3 गुणा चौड़ाई 4 से 12।"
+          }
+        },
+        {
+          "text": {
+            "en": "15",
+            "hi": "15"
+          },
+          "reason": {
+            "en": "The interval width is 4, not 5.",
+            "hi": "अंतराल की चौड़ाई 4 है, 5 नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "This is only the height.",
+            "hi": "यह केवल ऊँचाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "This is only the width.",
+            "hi": "यह केवल चौड़ाई है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "When the upper curve changes, what should be done?",
+        "hi": "ऊपरी वक्र बदलने पर क्या करें?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Split at the relevant intersections",
+            "hi": "संबंधित प्रतिच्छेदों पर बाँटें"
+          },
+          "reason": {
+            "en": "Each subinterval needs correct upper−lower.",
+            "hi": "हर उपअंतराल में सही ऊपर−नीचे चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Ignore the crossing",
+            "hi": "प्रतिच्छेद अनदेखा करें"
+          },
+          "reason": {
+            "en": "Signed cancellation can lose area.",
+            "hi": "चिह्नित कटाव से क्षेत्र छूट सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Differentiate both curves",
+            "hi": "दोनों का अवकलन करें"
+          },
+          "reason": {
+            "en": "Derivatives do not directly sum areas.",
+            "hi": "अवकलज सीधे क्षेत्रफल नहीं जोड़ते।"
+          }
+        },
+        {
+          "text": {
+            "en": "Take only one endpoint",
+            "hi": "केवल 1 सिरा लें"
+          },
+          "reason": {
+            "en": "An endpoint alone does not describe the region.",
+            "hi": "केवल सिरा पूरा क्षेत्र नहीं बताता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which unit fits area if both coordinates are in cm?",
+        "hi": "दोनों निर्देशांक cm में हों तो क्षेत्रफल की इकाई?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "cm²",
+            "hi": "cm²"
+          },
+          "reason": {
+            "en": "A product of two lengths has square units.",
+            "hi": "दो लंबाइयों के गुणन की वर्ग इकाई होती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cm",
+            "hi": "cm"
+          },
+          "reason": {
+            "en": "This measures length.",
+            "hi": "यह लंबाई की इकाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cm³",
+            "hi": "cm³"
+          },
+          "reason": {
+            "en": "This measures volume.",
+            "hi": "यह आयतन की इकाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "cm/s",
+            "hi": "cm/s"
+          },
+          "reason": {
+            "en": "This measures a speed.",
+            "hi": "यह चाल की इकाई है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Area enclosed by y=x², y=0, x=0 and x=1?",
+        "hi": "y=x², y=0, x=0 तथा x=1 से घिरा क्षेत्रफल?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "1/3",
+            "hi": "1/3"
+          },
+          "reason": {
+            "en": "∫0^1 x²dx=1/3.",
+            "hi": "∫0^1 x²dx=1/3।"
+          }
+        },
+        {
+          "text": {
+            "en": "1/2",
+            "hi": "1/2"
+          },
+          "reason": {
+            "en": "That is the area under y=x.",
+            "hi": "वह y=x के नीचे का क्षेत्रफल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1",
+            "hi": "1"
+          },
+          "reason": {
+            "en": "The containing unit square is larger.",
+            "hi": "घेरने वाला इकाई वर्ग बड़ा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "This exceeds the unit square.",
+            "hi": "यह इकाई वर्ग से भी अधिक है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Explain signed integral versus geometric area.",
+        "hi": "चिह्नित समाकल और ज्यामितीय क्षेत्रफल का अंतर समझाएँ।"
+      },
+      "answer": {
+        "en": "The integral adds signed heights; area adds nonnegative strip lengths. Split at sign changes and integrate |f|.",
+        "hi": "समाकल चिह्नित ऊँचाइयाँ जोड़ता है; क्षेत्रफल गैरऋणात्मक पट्टियाँ जोड़ता है। संकेत बदलने पर बाँटकर |f| समाकलित करें।"
+      }
+    },
+    {
+      "question": {
+        "en": "Set up the area between y=x² and y=9.",
+        "hi": "y=x² तथा y=9 के क्षेत्रफल का समाकल बनाएँ।"
+      },
+      "answer": {
+        "en": "A=∫−3^3(9−x²)dx=36 square units.",
+        "hi": "A=∫−3^3(9−x²)dx=36 वर्ग इकाई।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find area under y=2x+1 on [0,2].",
+        "hi": "[0,2] पर y=2x+1 के नीचे क्षेत्रफल निकालें।"
+      },
+      "answer": {
+        "en": "A=[x²+x]0^2=6 square units.",
+        "hi": "A=[x²+x]0^2=6 वर्ग इकाई।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why do dy integrals need y-limits?",
+        "hi": "dy समाकल में y की सीमाएँ क्यों चाहिए?"
+      },
+      "answer": {
+        "en": "The strips are accumulated as y varies; x-values cannot be used without conversion.",
+        "hi": "पट्टियाँ y बदलने पर जुड़ती हैं; x मान बिना परिवर्तन सीमा नहीं बनते।"
+      }
+    },
+    {
+      "question": {
+        "en": "Find the area inside x²+y²=4.",
+        "hi": "x²+y²=4 के अंदर का क्षेत्रफल निकालें।"
+      },
+      "answer": {
+        "en": "Radius 2; area π(2)²=4π square units.",
+        "hi": "त्रिज्या 2; क्षेत्रफल π(2)²=4π वर्ग इकाई।"
+      }
+    },
+    {
+      "question": {
+        "en": "Set up the area between y=x and y=x³ from −1 to 1.",
+        "hi": "−1 से 1 तक y=x तथा y=x³ के बीच क्षेत्रफल का समाकल लिखें।"
+      },
+      "answer": {
+        "en": "A=∫−1^0(x³−x)dx+∫0^1(x−x³)dx=1/2.",
+        "hi": "A=∫−1^0(x³−x)dx+∫0^1(x−x³)dx=1/2 वर्ग इकाई।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not confuse signed integral with area or use x-limits in a dy integral.",
+    "hi": "चिह्नित समाकल को क्षेत्रफल न मानें; dy में x की सीमाएँ न लगाएँ।"
+  },
+  "revision": [
+    {
+      "en": "Sketch all boundaries.",
+      "hi": "सभी सीमाएँ चित्र में बनाएँ।"
+    },
+    {
+      "en": "Find intersections before limits.",
+      "hi": "सीमाओं से पहले प्रतिच्छेद निकालें।"
+    },
+    {
+      "en": "Vertical strips use upper−lower.",
+      "hi": "ऊर्ध्वाधर पट्टी में ऊपर−नीचे लें।"
+    },
+    {
+      "en": "Horizontal strips use right−left.",
+      "hi": "क्षैतिज पट्टी में दायाँ−बायाँ लें।"
+    },
+    {
+      "en": "Split when order changes and give square units.",
+      "hi": "क्रम बदलने पर बाँटें और वर्ग इकाई दें।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Boundaries → intersections → strip direction → nonnegative height → definite integral → area.",
+    "hi": "सीमाएँ → प्रतिच्छेद → पट्टी दिशा → गैरऋणात्मक ऊँचाई → निश्चित समाकल → क्षेत्रफल।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class XII, Chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh202.pdf"
+    },
+    {
+      "title": "UPMSP Mathematics Class 12, 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/131-Maths-Class-12.pdf"
+    }
+  ],
+  "engine": "twelve-math",
+  "scenes": []
+}

@@ -1,0 +1,5434 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "Number Systems",
+      "hi": "संख्या पद्धति"
+    },
+    "engine": "graph",
+    "goal": {
+      "en": "Connect fractions, decimals and irrational lengths on one number line.",
+      "hi": "भिन्न, दशमलव और अपरिमेय लंबाइयों को एक संख्या रेखा पर समझें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Families of numbers",
+          "hi": "संख्याओं के परिवार"
+        },
+        "body": {
+          "en": "Natural numbers begin at 1. Whole numbers also include 0, and integers include negative whole numbers. Every integer is rational because it can be written with denominator 1. A rational number has the form p/q, where p and q are integers and q is nonzero.",
+          "hi": "प्राकृतिक संख्याएँ (Natural numbers) 1 से शुरू होती हैं। पूर्ण संख्याओं में 0 भी आता है। पूर्णांकों में ऋणात्मक पूर्ण संख्याएँ भी आती हैं। हर पूर्णांक परिमेय है, क्योंकि उसे 1 हर वाली भिन्न लिख सकते हैं। परिमेय संख्या (Rational number) p/q के रूप में होती है, जहाँ p और q पूर्णांक हैं तथा q शून्य नहीं है।"
+        },
+        "formula": "p/q, q ≠ 0",
+        "question": {
+          "en": "Is 0 rational? Explain.",
+          "hi": "क्या 0 परिमेय है? कारण दें।"
+        },
+        "answer": {
+          "en": "Yes: 0 = 0/1.",
+          "hi": "हाँ, 0 = 0/1 है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Decimal expansions",
+          "hi": "दशमलव प्रसार"
+        },
+        "body": {
+          "en": "A rational number has a terminating or nonterminating recurring decimal expansion. An irrational number has a nonterminating, nonrecurring expansion. Reduce a fraction before testing its denominator: a terminating expansion occurs exactly when the denominator has only prime factors 2 and 5.",
+          "hi": "परिमेय संख्या का दशमलव प्रसार (Decimal expansion) सांत या असांत आवर्ती होता है। अपरिमेय संख्या का प्रसार असांत और अनावर्ती होता है। भिन्न को पहले सरलतम रूप में लिखें। उसका हर केवल 2 और 5 के गुणनखंडों से बना हो, तभी दशमलव सांत होगा। हर में अन्य अभाज्य गुणनखंड होने पर प्रसार आवर्ती होगा।"
+        },
+        "formula": "q = 2ᵐ × 5ⁿ (lowest terms)",
+        "question": {
+          "en": "Does 7/40 terminate?",
+          "hi": "क्या 7/40 का दशमलव सांत है?"
+        },
+        "answer": {
+          "en": "Yes; 40 = 2³ × 5 and 7/40 = 0.175.",
+          "hi": "हाँ, 40 = 2³ × 5 तथा 7/40 = 0.175 है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Irrational lengths on a line",
+          "hi": "रेखा पर अपरिमेय लंबाइयाँ"
+        },
+        "body": {
+          "en": "Real numbers include rational and irrational numbers. Each real number corresponds to a unique point on a number line. A right triangle with legs 1 and 1 has hypotenuse √2. A compass transfers this exact length to the line. Screen coordinates are approximations; the geometric construction expresses an exact length.",
+          "hi": "वास्तविक संख्याओं (Real numbers) में परिमेय और अपरिमेय दोनों आती हैं। हर वास्तविक संख्या का संख्या रेखा पर एक निश्चित बिंदु होता है। 1 और 1 लंबाई वाली लंब भुजाओं के समकोण त्रिभुज का कर्ण √2 होता है। परकार से यह लंबाई संख्या रेखा पर उतारी जा सकती है। स्क्रीन का दशमलव अनुमान है; निर्माण की लंबाई सटीक है।"
+        },
+        "formula": "(√2)² = 1² + 1² = 2",
+        "question": {
+          "en": "How can √3 be constructed after √2?",
+          "hi": "√2 के बाद √3 कैसे बनाएँगे?"
+        },
+        "answer": {
+          "en": "Use perpendicular legs √2 and 1; the hypotenuse is √3.",
+          "hi": "√2 और 1 लंबाई की लंब भुजाएँ लें; नया कर्ण √3 होगा।"
+        }
+      },
+      {
+        "title": {
+          "en": "Laws of exponents and surds",
+          "hi": "घातांक के नियम और करणी"
+        },
+        "body": {
+          "en": "For positive real a and b, familiar exponent rules extend to rational exponents. Roots can be multiplied as √a√b = √(ab). Addition has no similar root rule. Rationalising a denominator multiplies numerator and denominator by a useful factor without changing the value of the fraction.",
+          "hi": "धनात्मक वास्तविक a और b के लिए घातांक (Exponent) के नियम परिमेय घातों पर भी लागू होते हैं। √a और √b का गुणनफल √(ab) है, पर जोड़ में ऐसा नियम नहीं है। हर का परिमेयीकरण (Rationalisation) करते समय अंश और हर को एक ही अशून्य गुणक से गुणा करते हैं। इससे भिन्न का मान नहीं बदलता।"
+        },
+        "formula": "aᵐ × aⁿ = aᵐ⁺ⁿ; 1/√a = √a/a",
+        "question": {
+          "en": "Simplify √8 + √2.",
+          "hi": "√8 + √2 सरल करें।"
+        },
+        "answer": {
+          "en": "√8 = 2√2, so the sum is 3√2.",
+          "hi": "√8 = 2√2, इसलिए योग 3√2 है।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Classify −4 as integer, rational and real.",
+          "hi": "−4 को पूर्णांक, परिमेय और वास्तविक के रूप में पहचानें।"
+        },
+        "steps": [
+          {
+            "en": "−4 is a negative integer.",
+            "hi": "−4 ऋणात्मक पूर्णांक है।"
+          },
+          {
+            "en": "Write −4 = −4/1; the denominator is nonzero.",
+            "hi": "−4 = −4/1 लिखें; हर अशून्य है।"
+          },
+          {
+            "en": "Every rational number is real.",
+            "hi": "हर परिमेय संख्या वास्तविक है।"
+          }
+        ],
+        "answer": {
+          "en": "It belongs to all 3 sets.",
+          "hi": "यह तीनों समुच्चयों में आता है।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "Rationalise 1/(√5 − 2).",
+          "hi": "1/(√5 − 2) का हर परिमेय करें।"
+        },
+        "steps": [
+          {
+            "en": "Multiply both numerator and denominator by √5 + 2.",
+            "hi": "अंश और हर को √5 + 2 से गुणा करें।"
+          },
+          {
+            "en": "(√5 − 2)(√5 + 2) = 5 − 4 = 1.",
+            "hi": "(√5 − 2)(√5 + 2) = 5 − 4 = 1 है।"
+          }
+        ],
+        "answer": {
+          "en": "√5 + 2",
+          "hi": "√5 + 2"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "Give an irrational number between 2 and 3 and justify it.",
+          "hi": "2 और 3 के बीच एक अपरिमेय संख्या लिखकर कारण दें।"
+        },
+        "steps": [
+          {
+            "en": "Choose √5; 5 is not a perfect square.",
+            "hi": "√5 चुनें; 5 पूर्ण वर्ग नहीं है।"
+          },
+          {
+            "en": "Since 4 < 5 < 9, taking positive roots gives 2 < √5 < 3.",
+            "hi": "4 < 5 < 9 से धनात्मक वर्गमूल लेने पर 2 < √5 < 3 मिलता है।"
+          }
+        ],
+        "answer": {
+          "en": "√5 is irrational and lies in the required interval.",
+          "hi": "√5 अपरिमेय है तथा दिए अंतराल में है।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which number is irrational?",
+          "hi": "कौन-सी संख्या अपरिमेय है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "√2",
+              "hi": "√2"
+            },
+            "reason": {
+              "en": "2 is not a perfect square.",
+              "hi": "2 पूर्ण वर्ग नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "0.75",
+              "hi": "0.75"
+            },
+            "reason": {
+              "en": "0.75 = 3/4 is rational.",
+              "hi": "0.75 = 3/4 परिमेय है।"
+            }
+          },
+          {
+            "text": {
+              "en": "−3",
+              "hi": "−3"
+            },
+            "reason": {
+              "en": "−3 = −3/1 is rational.",
+              "hi": "−3 = −3/1 परिमेय है।"
+            }
+          },
+          {
+            "text": {
+              "en": "√9",
+              "hi": "√9"
+            },
+            "reason": {
+              "en": "√9 = 3 is rational.",
+              "hi": "√9 = 3 परिमेय है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Which decimal represents a rational number?",
+          "hi": "कौन-सा दशमलव परिमेय संख्या दर्शाता है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "A nonterminating nonrecurring decimal",
+              "hi": "असांत अनावर्ती दशमलव"
+            },
+            "reason": {
+              "en": "This describes an irrational number.",
+              "hi": "यह अपरिमेय संख्या का गुण है।"
+            }
+          },
+          {
+            "text": {
+              "en": "0.333… (3 repeats)",
+              "hi": "0.333… (3 दोहरता है)"
+            },
+            "reason": {
+              "en": "A recurring decimal equals a fraction; this one is 1/3.",
+              "hi": "आवर्ती दशमलव भिन्न है; यह 1/3 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "The decimal expansion of √2",
+              "hi": "√2 का दशमलव प्रसार"
+            },
+            "reason": {
+              "en": "√2 is irrational.",
+              "hi": "√2 अपरिमेय है।"
+            }
+          },
+          {
+            "text": {
+              "en": "The decimal expansion of π",
+              "hi": "π का दशमलव प्रसार"
+            },
+            "reason": {
+              "en": "π is irrational.",
+              "hi": "π अपरिमेय है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "What is 2³ × 2²?",
+          "hi": "2³ × 2² का मान क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "2⁶",
+              "hi": "2⁶"
+            },
+            "reason": {
+              "en": "Add exponents when multiplying equal bases.",
+              "hi": "समान आधार के गुणन में घातांक जोड़ते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "4⁵",
+              "hi": "4⁵"
+            },
+            "reason": {
+              "en": "The base remains 2.",
+              "hi": "आधार 2 ही रहता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2⁵",
+              "hi": "2⁵"
+            },
+            "reason": {
+              "en": "3 + 2 = 5.",
+              "hi": "3 + 2 = 5 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2¹",
+              "hi": "2¹"
+            },
+            "reason": {
+              "en": "Subtracting exponents applies to division.",
+              "hi": "घातांक घटाना भाग का नियम है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Which fraction has a terminating decimal?",
+          "hi": "किस भिन्न का दशमलव सांत है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "1/3",
+              "hi": "1/3"
+            },
+            "reason": {
+              "en": "The denominator has prime factor 3.",
+              "hi": "हर में अभाज्य गुणनखंड 3 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2/7",
+              "hi": "2/7"
+            },
+            "reason": {
+              "en": "Prime factor 7 causes repetition.",
+              "hi": "गुणनखंड 7 के कारण आवर्ती प्रसार है।"
+            }
+          },
+          {
+            "text": {
+              "en": "5/6",
+              "hi": "5/6"
+            },
+            "reason": {
+              "en": "The reduced denominator contains 3.",
+              "hi": "सरलतम हर में 3 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "7/20",
+              "hi": "7/20"
+            },
+            "reason": {
+              "en": "20 = 2² × 5, so 7/20 = 0.35.",
+              "hi": "20 = 2² × 5, इसलिए 7/20 = 0.35 है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "What is √18 in simplest surd form?",
+          "hi": "√18 का सरलतम करणी रूप क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "3√2",
+              "hi": "3√2"
+            },
+            "reason": {
+              "en": "18 = 9 × 2.",
+              "hi": "18 = 9 × 2 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "9√2",
+              "hi": "9√2"
+            },
+            "reason": {
+              "en": "√9 = 3, not 9.",
+              "hi": "√9 = 3 है, 9 नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "2√3",
+              "hi": "2√3"
+            },
+            "reason": {
+              "en": "(2√3)² = 12.",
+              "hi": "(2√3)² = 12 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "√9 + √2",
+              "hi": "√9 + √2"
+            },
+            "reason": {
+              "en": "A root of a product is not a sum of roots.",
+              "hi": "गुणनफल का मूल, मूलों का योग नहीं है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Between any two distinct rational numbers, how many rational numbers lie?",
+          "hi": "दो अलग परिमेय संख्याओं के बीच कितनी परिमेय संख्याएँ होती हैं?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Exactly 1",
+              "hi": "ठीक 1"
+            },
+            "reason": {
+              "en": "The midpoint process can be repeated indefinitely.",
+              "hi": "मध्यबिंदु की प्रक्रिया बार-बार दोहरा सकते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Infinitely many",
+              "hi": "अनंत"
+            },
+            "reason": {
+              "en": "Repeated averages give more rational numbers in the interval.",
+              "hi": "बार-बार औसत लेने से और परिमेय संख्याएँ मिलती हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "None",
+              "hi": "कोई नहीं"
+            },
+            "reason": {
+              "en": "Their average is already one.",
+              "hi": "उनका औसत ही एक उदाहरण है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Exactly 10",
+              "hi": "ठीक 10"
+            },
+            "reason": {
+              "en": "There is no fixed finite limit.",
+              "hi": "कोई निश्चित परिमित सीमा नहीं है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "What is 1/√3 after rationalising?",
+          "hi": "1/√3 का परिमेयीकरण करने पर क्या मिलेगा?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "3√3",
+              "hi": "3√3"
+            },
+            "reason": {
+              "en": "This multiplies the original value by 9.",
+              "hi": "यह मूल मान का 9 गुना है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1/3",
+              "hi": "1/3"
+            },
+            "reason": {
+              "en": "The numerator must also be multiplied by √3.",
+              "hi": "अंश को भी √3 से गुणा करना होगा।"
+            }
+          },
+          {
+            "text": {
+              "en": "√3/3",
+              "hi": "√3/3"
+            },
+            "reason": {
+              "en": "Multiply numerator and denominator by √3.",
+              "hi": "अंश और हर को √3 से गुणा करें।"
+            }
+          },
+          {
+            "text": {
+              "en": "√3",
+              "hi": "√3"
+            },
+            "reason": {
+              "en": "The denominator becomes 3, not 1.",
+              "hi": "हर 3 बनता है, 1 नहीं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Which statement about 0 is true?",
+          "hi": "0 के बारे में कौन-सा कथन सही है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "It is irrational.",
+              "hi": "यह अपरिमेय है।"
+            },
+            "reason": {
+              "en": "0 = 0/1 is rational.",
+              "hi": "0 = 0/1 परिमेय है।"
+            }
+          },
+          {
+            "text": {
+              "en": "It is not an integer.",
+              "hi": "यह पूर्णांक नहीं है।"
+            },
+            "reason": {
+              "en": "The integers include 0.",
+              "hi": "पूर्णांकों में 0 शामिल है।"
+            }
+          },
+          {
+            "text": {
+              "en": "It cannot be written as a fraction.",
+              "hi": "इसे भिन्न नहीं लिख सकते।"
+            },
+            "reason": {
+              "en": "0/1 is a valid fraction.",
+              "hi": "0/1 एक मान्य भिन्न है।"
+            }
+          },
+          {
+            "text": {
+              "en": "It is both whole and rational.",
+              "hi": "यह पूर्ण और परिमेय दोनों है।"
+            },
+            "reason": {
+              "en": "Whole numbers include 0, and 0 = 0/1.",
+              "hi": "पूर्ण संख्याओं में 0 है तथा 0 = 0/1 है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "A right triangle has legs 1 and √2. Its hypotenuse is:",
+          "hi": "एक समकोण त्रिभुज की लंब भुजाएँ 1 और √2 हैं। कर्ण है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "√3",
+              "hi": "√3"
+            },
+            "reason": {
+              "en": "Its square is 1² + (√2)² = 3.",
+              "hi": "इसके वर्ग का मान 1² + (√2)² = 3 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "3",
+              "hi": "3"
+            },
+            "reason": {
+              "en": "The square of the hypotenuse is 3.",
+              "hi": "कर्ण का वर्ग 3 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1 + √2",
+              "hi": "1 + √2"
+            },
+            "reason": {
+              "en": "Pythagoras uses sums of squares.",
+              "hi": "पाइथागोरस में वर्गों का योग लेते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "√2 − 1",
+              "hi": "√2 − 1"
+            },
+            "reason": {
+              "en": "A hypotenuse is longer than either leg.",
+              "hi": "कर्ण दोनों लंब भुजाओं से बड़ा होता है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "What is 16^(1/2)?",
+          "hi": "16^(1/2) का मान क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "8",
+              "hi": "8"
+            },
+            "reason": {
+              "en": "Exponent 1/2 means square root, not division by 2.",
+              "hi": "घात 1/2 का अर्थ वर्गमूल है, 2 से भाग नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "4",
+              "hi": "4"
+            },
+            "reason": {
+              "en": "The positive square root of 16 is 4.",
+              "hi": "16 का धनात्मक वर्गमूल 4 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "256",
+              "hi": "256"
+            },
+            "reason": {
+              "en": "256 = 16².",
+              "hi": "256 = 16² है।"
+            }
+          },
+          {
+            "text": {
+              "en": "−4 only",
+              "hi": "केवल −4"
+            },
+            "reason": {
+              "en": "The principal square root is nonnegative.",
+              "hi": "मुख्य वर्गमूल ऋणेतर होता है।"
+            }
+          }
+        ],
+        "correct": 1
+      }
+    ],
+    "revision": [
+      {
+        "en": "Every integer is rational; the reverse need not hold.",
+        "hi": "हर पूर्णांक परिमेय है; इसका उलटा जरूरी नहीं।"
+      },
+      {
+        "en": "Terminating and recurring decimals are rational.",
+        "hi": "सांत और आवर्ती दशमलव परिमेय हैं।"
+      },
+      {
+        "en": "Nonterminating nonrecurring decimals are irrational.",
+        "hi": "असांत अनावर्ती दशमलव अपरिमेय हैं।"
+      },
+      {
+        "en": "√2 and √3 are exact lengths; decimal displays approximate them.",
+        "hi": "√2 और √3 सटीक लंबाइयाँ हैं; दशमलव प्रदर्शन अनुमान है।"
+      },
+      {
+        "en": "Use conjugate factors to rationalise suitable denominators.",
+        "hi": "उपयुक्त हर को परिमेय बनाने के लिए संयुग्मी गुणक लें।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Number families → rational/irrational → real line → surds → exponent laws",
+      "hi": "संख्या परिवार → परिमेय/अपरिमेय → वास्तविक रेखा → करणी → घातांक नियम"
+    }
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "Polynomials",
+      "hi": "बहुपद"
+    },
+    "engine": "graph",
+    "goal": {
+      "en": "Link a polynomial expression to its graph, zeroes and factors.",
+      "hi": "बहुपद के व्यंजक को उसके ग्राफ, शून्यकों और गुणनखंडों से जोड़ें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "What makes a polynomial?",
+          "hi": "बहुपद की पहचान"
+        },
+        "body": {
+          "en": "A polynomial in x is a finite sum of terms with nonnegative integer powers of x. Coefficients may be real. A nonzero constant polynomial has degree 0. The zero polynomial has no defined degree. Expressions containing x in a denominator or √x are not polynomials in x.",
+          "hi": "x में बहुपद (Polynomial), x की ऋणेतर पूर्णांक घातों वाले पदों का परिमित योग है। गुणांक वास्तविक हो सकते हैं। अशून्य अचर बहुपद की घात 0 होती है। शून्य बहुपद की घात परिभाषित नहीं होती। x हर में हो या √x हो, तो व्यंजक x में बहुपद नहीं है।"
+        },
+        "formula": "p(x) = ax³ + bx² + cx + d",
+        "question": {
+          "en": "Is x² + 1/x a polynomial in x?",
+          "hi": "क्या x² + 1/x, x में बहुपद है?"
+        },
+        "answer": {
+          "en": "No; 1/x = x⁻¹ has a negative exponent.",
+          "hi": "नहीं; 1/x = x⁻¹ की घात ऋणात्मक है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Values and zeroes",
+          "hi": "मान और शून्यक"
+        },
+        "body": {
+          "en": "To evaluate p(k), replace each x by k and simplify carefully. A zero is an input k for which p(k) = 0. On the graph y = p(x), real zeroes appear where the curve meets the x-axis. A repeated zero may touch the axis instead of crossing it.",
+          "hi": "p(k) निकालने के लिए हर x की जगह k रखें। जिस k के लिए p(k) = 0 हो, वह शून्यक (Zero) है। y = p(x) के ग्राफ में वास्तविक शून्यक x-अक्ष से मिलने वाले बिंदुओं के x-निर्देशांक हैं। बार-बार आने वाला शून्यक अक्ष को केवल छू सकता है। स्क्रीन पर केवल दिख रहे क्षेत्र के शून्यक मिलते हैं।"
+        },
+        "formula": "p(k) = 0",
+        "question": {
+          "en": "Find the zero of 2x − 6.",
+          "hi": "2x − 6 का शून्यक ज्ञात करें।"
+        },
+        "answer": {
+          "en": "2x − 6 = 0 gives x = 3.",
+          "hi": "2x − 6 = 0 से x = 3 है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Remainder and factor theorems",
+          "hi": "शेषफल और गुणनखंड प्रमेय"
+        },
+        "body": {
+          "en": "When p(x) is divided by x − a, the remainder is p(a). Therefore x − a is a factor exactly when p(a) = 0. For a linear divisor written x + b, substitute −b. Check factors by multiplying them back; a numerical plot alone does not prove exact factorisation.",
+          "hi": "p(x) को x − a से भाग देने पर शेषफल (Remainder) p(a) होता है। इसलिए p(a) = 0 होने पर और केवल तभी x − a गुणनखंड है। भाजक x + b हो तो −b रखें। गुणनखंडों की जाँच उनका गुणा करके करें। केवल ग्राफ का अनुमान सटीक गुणनखंडन का प्रमाण नहीं है।"
+        },
+        "formula": "p(x) = (x − a)q(x) + p(a)",
+        "question": {
+          "en": "What is the remainder when x² + 3x + 2 is divided by x + 1?",
+          "hi": "x² + 3x + 2 को x + 1 से भाग देने पर शेषफल क्या है?"
+        },
+        "answer": {
+          "en": "p(−1) = 1 − 3 + 2 = 0.",
+          "hi": "p(−1) = 1 − 3 + 2 = 0 है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Identities and factorisation",
+          "hi": "सर्वसमिकाएँ और गुणनखंडन"
+        },
+        "body": {
+          "en": "An identity is true for every permitted value of its variables. Expand brackets with distributivity and collect like terms. Reverse an identity to factorise. In a² − b² the minus sign is essential: a² + b² is not generally (a + b)(a − b).",
+          "hi": "सर्वसमिका (Identity) चर के हर अनुमत मान पर सत्य होती है। वितरण नियम से कोष्ठक खोलें और समान पद जोड़ें। इसी प्रक्रिया को उलटकर गुणनखंडन करते हैं। a² − b² में ऋण चिह्न जरूरी है। a² + b² को सामान्यतः (a + b)(a − b) नहीं लिख सकते। कोष्ठक खोलते समय हर पद का चिह्न ध्यान से देखें।"
+        },
+        "formula": "(a + b)² = a² + 2ab + b²; a² − b² = (a − b)(a + b)",
+        "question": {
+          "en": "Factorise x² − 25.",
+          "hi": "x² − 25 के गुणनखंड करें।"
+        },
+        "answer": {
+          "en": "(x − 5)(x + 5).",
+          "hi": "(x − 5)(x + 5)।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Evaluate p(−2) for p(x) = x² + 3x + 1.",
+          "hi": "p(x) = x² + 3x + 1 के लिए p(−2) निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Substitute −2 in every occurrence of x.",
+            "hi": "हर x की जगह −2 रखें।"
+          },
+          {
+            "en": "p(−2) = (−2)² + 3(−2) + 1 = 4 − 6 + 1.",
+            "hi": "p(−2) = (−2)² + 3(−2) + 1 = 4 − 6 + 1 है।"
+          }
+        ],
+        "answer": {
+          "en": "−1",
+          "hi": "−1"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "Factorise x² − 5x + 6.",
+          "hi": "x² − 5x + 6 के गुणनखंड करें।"
+        },
+        "steps": [
+          {
+            "en": "Find two numbers whose sum is −5 and product is 6: −2 and −3.",
+            "hi": "ऐसी 2 संख्याएँ लें जिनका योग −5 और गुणनफल 6 है: −2 और −3।"
+          },
+          {
+            "en": "Split the middle term: x² − 2x − 3x + 6.",
+            "hi": "मध्य पद तोड़ें: x² − 2x − 3x + 6।"
+          },
+          {
+            "en": "Group: x(x − 2) − 3(x − 2).",
+            "hi": "समूह बनाएँ: x(x − 2) − 3(x − 2)।"
+          }
+        ],
+        "answer": {
+          "en": "(x − 2)(x − 3); zeroes 2 and 3.",
+          "hi": "(x − 2)(x − 3); शून्यक 2 और 3 हैं।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "Find k if x + 2 is a factor of x³ + kx + 6.",
+          "hi": "यदि x + 2, x³ + kx + 6 का गुणनखंड है, तो k निकालें।"
+        },
+        "steps": [
+          {
+            "en": "The factor theorem requires p(−2) = 0.",
+            "hi": "गुणनखंड प्रमेय के अनुसार p(−2) = 0 होगा।"
+          },
+          {
+            "en": "−8 − 2k + 6 = 0, so −2 − 2k = 0.",
+            "hi": "−8 − 2k + 6 = 0, इसलिए −2 − 2k = 0।"
+          },
+          {
+            "en": "−2k = 2 gives k = −1.",
+            "hi": "−2k = 2 से k = −1 मिलता है।"
+          }
+        ],
+        "answer": {
+          "en": "k = −1",
+          "hi": "k = −1"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "What is the degree of 5x³ − 2x + 7?",
+          "hi": "5x³ − 2x + 7 की घात क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "3",
+              "hi": "3"
+            },
+            "reason": {
+              "en": "The highest nonzero power is 3.",
+              "hi": "सबसे बड़ी अशून्य घात 3 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "5",
+              "hi": "5"
+            },
+            "reason": {
+              "en": "5 is a coefficient.",
+              "hi": "5 गुणांक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "7",
+              "hi": "7"
+            },
+            "reason": {
+              "en": "7 is the constant term.",
+              "hi": "7 अचर पद है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1",
+              "hi": "1"
+            },
+            "reason": {
+              "en": "The term x³ has a higher power.",
+              "hi": "x³ की घात अधिक है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Which is not a polynomial in x?",
+          "hi": "कौन-सा x में बहुपद नहीं है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "x² + 2",
+              "hi": "x² + 2"
+            },
+            "reason": {
+              "en": "Its powers are nonnegative integers.",
+              "hi": "इसकी घातें ऋणेतर पूर्णांक हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "√x + 1",
+              "hi": "√x + 1"
+            },
+            "reason": {
+              "en": "x has exponent 1/2.",
+              "hi": "x की घात 1/2 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "3",
+              "hi": "3"
+            },
+            "reason": {
+              "en": "A constant is a polynomial.",
+              "hi": "अचर एक बहुपद है।"
+            }
+          },
+          {
+            "text": {
+              "en": "x³ − x",
+              "hi": "x³ − x"
+            },
+            "reason": {
+              "en": "Both powers are allowed.",
+              "hi": "दोनों घातें अनुमत हैं।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "The zero of 3x + 6 is:",
+          "hi": "3x + 6 का शून्यक है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "2",
+              "hi": "2"
+            },
+            "reason": {
+              "en": "3(2) + 6 = 12, not 0.",
+              "hi": "3(2) + 6 = 12 है, 0 नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "−6",
+              "hi": "−6"
+            },
+            "reason": {
+              "en": "3(−6) + 6 = −12.",
+              "hi": "3(−6) + 6 = −12 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "−2",
+              "hi": "−2"
+            },
+            "reason": {
+              "en": "3(−2) + 6 = 0.",
+              "hi": "3(−2) + 6 = 0 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "0",
+              "hi": "0"
+            },
+            "reason": {
+              "en": "At x = 0 the value is 6.",
+              "hi": "x = 0 पर मान 6 है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "The remainder on dividing p(x) by x − 4 equals:",
+          "hi": "p(x) को x − 4 से भाग देने पर शेषफल है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "p(0)",
+              "hi": "p(0)"
+            },
+            "reason": {
+              "en": "The divisor selects input 4.",
+              "hi": "भाजक के अनुसार 4 रखना है।"
+            }
+          },
+          {
+            "text": {
+              "en": "p(−4)",
+              "hi": "p(−4)"
+            },
+            "reason": {
+              "en": "−4 corresponds to divisor x + 4.",
+              "hi": "−4, x + 4 के लिए लेते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "4p(x)",
+              "hi": "4p(x)"
+            },
+            "reason": {
+              "en": "The remainder is a constant value.",
+              "hi": "शेषफल एक अचर मान होगा।"
+            }
+          },
+          {
+            "text": {
+              "en": "p(4)",
+              "hi": "p(4)"
+            },
+            "reason": {
+              "en": "This is the remainder theorem.",
+              "hi": "यही शेषफल प्रमेय है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "Which factorisation of x² − 9 is correct?",
+          "hi": "x² − 9 का सही गुणनखंडन क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "(x − 3)(x + 3)",
+              "hi": "(x − 3)(x + 3)"
+            },
+            "reason": {
+              "en": "Use a² − b².",
+              "hi": "a² − b² का नियम लें।"
+            }
+          },
+          {
+            "text": {
+              "en": "(x − 3)²",
+              "hi": "(x − 3)²"
+            },
+            "reason": {
+              "en": "This expands to x² − 6x + 9.",
+              "hi": "इससे x² − 6x + 9 मिलता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "(x + 9)(x − 1)",
+              "hi": "(x + 9)(x − 1)"
+            },
+            "reason": {
+              "en": "This introduces an 8x term.",
+              "hi": "इसमें 8x पद आता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "x(x − 9)",
+              "hi": "x(x − 9)"
+            },
+            "reason": {
+              "en": "This expands to x² − 9x.",
+              "hi": "इससे x² − 9x मिलता है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "What is the coefficient of x in (x + 2)²?",
+          "hi": "(x + 2)² में x का गुणांक क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "2",
+              "hi": "2"
+            },
+            "reason": {
+              "en": "The middle term is 2 × x × 2.",
+              "hi": "मध्य पद 2 × x × 2 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "4",
+              "hi": "4"
+            },
+            "reason": {
+              "en": "Expansion is x² + 4x + 4.",
+              "hi": "प्रसार x² + 4x + 4 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1",
+              "hi": "1"
+            },
+            "reason": {
+              "en": "1 is the coefficient of x².",
+              "hi": "1, x² का गुणांक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "0",
+              "hi": "0"
+            },
+            "reason": {
+              "en": "There is a nonzero linear term.",
+              "hi": "रैखिक पद अशून्य है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "If p(5) = 0, which factor must p(x) have?",
+          "hi": "p(5) = 0 हो तो p(x) का कौन-सा गुणनखंड होगा?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "x + 5",
+              "hi": "x + 5"
+            },
+            "reason": {
+              "en": "That requires p(−5) = 0.",
+              "hi": "इसके लिए p(−5) = 0 चाहिए।"
+            }
+          },
+          {
+            "text": {
+              "en": "5x",
+              "hi": "5x"
+            },
+            "reason": {
+              "en": "This would require a zero at 0.",
+              "hi": "इसके लिए 0 शून्यक होना चाहिए।"
+            }
+          },
+          {
+            "text": {
+              "en": "x − 5",
+              "hi": "x − 5"
+            },
+            "reason": {
+              "en": "Use the factor theorem.",
+              "hi": "गुणनखंड प्रमेय लागू करें।"
+            }
+          },
+          {
+            "text": {
+              "en": "x² + 5",
+              "hi": "x² + 5"
+            },
+            "reason": {
+              "en": "One zero does not imply this factor.",
+              "hi": "एक शून्यक से यह गुणनखंड नहीं मिलता।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "A nonzero constant polynomial has degree:",
+          "hi": "अशून्य अचर बहुपद की घात है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "1",
+              "hi": "1"
+            },
+            "reason": {
+              "en": "There is no x¹ term.",
+              "hi": "इसमें x¹ पद नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Undefined",
+              "hi": "अपरिभाषित"
+            },
+            "reason": {
+              "en": "That applies to the zero polynomial.",
+              "hi": "यह शून्य बहुपद के लिए है।"
+            }
+          },
+          {
+            "text": {
+              "en": "The constant itself",
+              "hi": "वही अचर"
+            },
+            "reason": {
+              "en": "Degree refers to a power, not a value.",
+              "hi": "घात चर की शक्ति है, अचर का मान नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "0",
+              "hi": "0"
+            },
+            "reason": {
+              "en": "A nonzero constant can be written as c x⁰.",
+              "hi": "अशून्य अचर को c x⁰ लिख सकते हैं।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "What is p(1) for p(x) = x³ − 2x + 4?",
+          "hi": "p(x) = x³ − 2x + 4 के लिए p(1) क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "3",
+              "hi": "3"
+            },
+            "reason": {
+              "en": "1 − 2 + 4 = 3.",
+              "hi": "1 − 2 + 4 = 3 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "7",
+              "hi": "7"
+            },
+            "reason": {
+              "en": "The −2x term is negative.",
+              "hi": "−2x पद ऋणात्मक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "4",
+              "hi": "4"
+            },
+            "reason": {
+              "en": "4 is p(0), not p(1).",
+              "hi": "4, p(0) है, p(1) नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "1",
+              "hi": "1"
+            },
+            "reason": {
+              "en": "Include all three terms.",
+              "hi": "तीनों पद जोड़ें।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "A curve y = p(x) touches the x-axis at x = 2. What follows?",
+          "hi": "y = p(x) का ग्राफ x = 2 पर x-अक्ष को छूता है। क्या निष्कर्ष है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "p(2) = 2",
+              "hi": "p(2) = 2"
+            },
+            "reason": {
+              "en": "On the x-axis the y-coordinate is 0.",
+              "hi": "x-अक्ष पर y-निर्देशांक 0 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2 is a zero of p.",
+              "hi": "2, p का शून्यक है।"
+            },
+            "reason": {
+              "en": "Touching the axis still means p(2) = 0.",
+              "hi": "अक्ष को छूने पर भी p(2) = 0 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "The polynomial has degree 2.",
+              "hi": "बहुपद की घात 2 है।"
+            },
+            "reason": {
+              "en": "The point alone does not determine the degree.",
+              "hi": "केवल इस बिंदु से घात तय नहीं होती।"
+            }
+          },
+          {
+            "text": {
+              "en": "The graph has no real zero.",
+              "hi": "ग्राफ का कोई वास्तविक शून्यक नहीं है।"
+            },
+            "reason": {
+              "en": "x = 2 is already a real zero.",
+              "hi": "x = 2 स्वयं वास्तविक शून्यक है।"
+            }
+          }
+        ],
+        "correct": 1
+      }
+    ],
+    "revision": [
+      {
+        "en": "Only nonnegative integer powers occur in a polynomial.",
+        "hi": "बहुपद में चर की घातें केवल ऋणेतर पूर्णांक होती हैं।"
+      },
+      {
+        "en": "Zeroes make the polynomial value 0.",
+        "hi": "शून्यकों पर बहुपद का मान 0 होता है।"
+      },
+      {
+        "en": "Real zeroes are x-axis intersections, including touches.",
+        "hi": "वास्तविक शून्यक x-अक्ष से मिलने या छूने पर मिलते हैं।"
+      },
+      {
+        "en": "Remainder for divisor x − a is p(a).",
+        "hi": "x − a से भाग का शेषफल p(a) है।"
+      },
+      {
+        "en": "Check every factorisation by expansion.",
+        "hi": "हर गुणनखंडन को प्रसार से जाँचें।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Expression → substitution → zeroes → remainder → factors → identities",
+      "hi": "व्यंजक → प्रतिस्थापन → शून्यक → शेषफल → गुणनखंड → सर्वसमिकाएँ"
+    }
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "Coordinate Geometry",
+      "hi": "निर्देशांक ज्यामिति"
+    },
+    "engine": "graph",
+    "goal": {
+      "en": "Read and plot ordered pairs; explore distances and midpoints as an extension.",
+      "hi": "क्रमित युग्म पढ़ें और बिंदु बनाएँ; विस्तार गतिविधि में दूरी और मध्यबिंदु देखें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "The Cartesian plane",
+          "hi": "कार्तीय तल"
+        },
+        "body": {
+          "en": "Two perpendicular number lines intersect at the origin O. The horizontal line is the x-axis and the vertical line is the y-axis. Use the same stated scale consistently. A point is named by an ordered pair (x, y): move horizontally first, then vertically. Changing the order generally changes the point.",
+          "hi": "दो लंब संख्या रेखाएँ मूल बिंदु (Origin) O पर मिलती हैं। क्षैतिज रेखा x-अक्ष और ऊर्ध्वाधर रेखा y-अक्ष है। निश्चित पैमाना पूरे चित्र में एकसमान रखें। बिंदु को क्रमित युग्म (Ordered pair) (x, y) से लिखते हैं। पहले क्षैतिज, फिर ऊर्ध्वाधर दूरी लें। निर्देशांकों का क्रम बदलने पर सामान्यतः बिंदु बदलता है।"
+        },
+        "formula": "O = (0, 0)",
+        "question": {
+          "en": "Which coordinate is read first?",
+          "hi": "कौन-सा निर्देशांक पहले पढ़ते हैं?"
+        },
+        "answer": {
+          "en": "The x-coordinate, or abscissa.",
+          "hi": "x-निर्देशांक अर्थात भुज पहले पढ़ते हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Quadrants and signs",
+          "hi": "चतुर्थांश और चिह्न"
+        },
+        "body": {
+          "en": "The axes divide the plane into 4 quadrants, numbered anticlockwise from the upper-right region. In order their sign pairs are (+,+), (−,+), (−,−), and (+,−). Points on an axis belong to no quadrant. A zero coordinate therefore needs separate attention.",
+          "hi": "अक्ष तल को 4 चतुर्थांशों (Quadrants) में बाँटते हैं। ऊपर-दाएँ से वामावर्त क्रम में उनके चिह्न (+,+), (−,+), (−,−), (+,−) हैं। किसी अक्ष पर स्थित बिंदु किसी चतुर्थांश में नहीं आता। इसलिए निर्देशांक में 0 हो तो उसे केवल धन या ऋण देखकर चतुर्थांश न दें।"
+        },
+        "formula": "I: (+,+); II: (−,+); III: (−,−); IV: (+,−)",
+        "question": {
+          "en": "Where does (−2, 5) lie?",
+          "hi": "(−2, 5) कहाँ स्थित है?"
+        },
+        "answer": {
+          "en": "In quadrant II.",
+          "hi": "द्वितीय चतुर्थांश में।"
+        }
+      },
+      {
+        "title": {
+          "en": "Points on axes",
+          "hi": "अक्षों पर बिंदु"
+        },
+        "body": {
+          "en": "On the x-axis every point has y = 0; on the y-axis every point has x = 0. The origin lies on both axes. The perpendicular distance of (x,y) from the x-axis is |y| and from the y-axis is |x|. Distances cannot be negative.",
+          "hi": "x-अक्ष पर हर बिंदु का y = 0 और y-अक्ष पर x = 0 होता है। मूल बिंदु दोनों अक्षों पर है। (x,y) की x-अक्ष से लंब दूरी |y| तथा y-अक्ष से |x| है। निर्देशांक ऋणात्मक हो सकता है, लेकिन दूरी ऋणात्मक नहीं होती। भुज और कोटि को दूरी से अलग पहचानें।"
+        },
+        "formula": "x-axis: (x, 0); y-axis: (0, y)",
+        "question": {
+          "en": "How far is (−3, 4) from the y-axis?",
+          "hi": "(−3, 4) की y-अक्ष से दूरी क्या है?"
+        },
+        "answer": {
+          "en": "3 units.",
+          "hi": "3 इकाई।"
+        }
+      },
+      {
+        "title": {
+          "en": "Distance and midpoint: visual extension",
+          "hi": "दूरी और मध्यबिंदु: दृश्य विस्तार"
+        },
+        "body": {
+          "en": "These formulas extend coordinate plotting and are included for the requested visual lab. For A(x1,y1) and B(x2,y2), horizontal and vertical differences form the legs of a right triangle. Pythagoras gives the distance. A midpoint averages the two x-values and the two y-values separately. Keep coordinate units consistent.",
+          "hi": "यह भाग निर्देशांक अंकन का विस्तार है और माँगी गई दृश्य प्रयोगशाला के लिए शामिल है। A(x1,y1), B(x2,y2) के क्षैतिज और ऊर्ध्वाधर अंतर एक समकोण त्रिभुज की लंब भुजाएँ हैं। पाइथागोरस से दूरी मिलती है। मध्यबिंदु (Midpoint) के लिए x और y का अलग-अलग औसत लें। दोनों अक्षों की इकाइयाँ समान रखें।"
+        },
+        "formula": "AB = √((x2 − x1)² + (y2 − y1)²); M = ((x1 + x2)/2, (y1 + y2)/2)",
+        "question": {
+          "en": "Find the midpoint of (0,0) and (4,6).",
+          "hi": "(0,0) और (4,6) का मध्यबिंदु निकालें।"
+        },
+        "answer": {
+          "en": "(2,3).",
+          "hi": "(2,3)।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Locate P(−3,2).",
+          "hi": "P(−3,2) को अंकित करें।"
+        },
+        "steps": [
+          {
+            "en": "From O move 3 units left.",
+            "hi": "O से 3 इकाई बाएँ जाएँ।"
+          },
+          {
+            "en": "Move 2 units upwards; mark P.",
+            "hi": "2 इकाई ऊपर जाकर P अंकित करें।"
+          }
+        ],
+        "answer": {
+          "en": "P lies in quadrant II.",
+          "hi": "P द्वितीय चतुर्थांश में है।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "Find the distances of A(−5,−2) from both axes.",
+          "hi": "A(−5,−2) की दोनों अक्षों से दूरियाँ निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Distance from the x-axis is the absolute y-coordinate.",
+            "hi": "x-अक्ष से दूरी y-निर्देशांक का निरपेक्ष मान है।"
+          },
+          {
+            "en": "Distance from the y-axis is the absolute x-coordinate.",
+            "hi": "y-अक्ष से दूरी x-निर्देशांक का निरपेक्ष मान है।"
+          }
+        ],
+        "answer": {
+          "en": "From x-axis: 2 units; from y-axis: 5 units.",
+          "hi": "x-अक्ष से 2 इकाई; y-अक्ष से 5 इकाई।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "Extension: find AB and its midpoint for A(1,1), B(4,5).",
+          "hi": "विस्तार: A(1,1), B(4,5) के लिए AB और मध्यबिंदु निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Differences are 4 − 1 = 3 and 5 − 1 = 4.",
+            "hi": "अंतर 4 − 1 = 3 तथा 5 − 1 = 4 हैं।"
+          },
+          {
+            "en": "AB = √(3² + 4²) = √25 = 5.",
+            "hi": "AB = √(3² + 4²) = √25 = 5।"
+          },
+          {
+            "en": "Average each coordinate: ((1+4)/2, (1+5)/2).",
+            "hi": "हर निर्देशांक का औसत लें: ((1+4)/2, (1+5)/2)।"
+          }
+        ],
+        "answer": {
+          "en": "AB = 5 units; midpoint (2.5,3).",
+          "hi": "AB = 5 इकाई; मध्यबिंदु (2.5,3)।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "The coordinates of the origin are:",
+          "hi": "मूल बिंदु के निर्देशांक हैं:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "(0,0)",
+              "hi": "(0,0)"
+            },
+            "reason": {
+              "en": "Both axes have zero at the origin.",
+              "hi": "मूल बिंदु पर दोनों निर्देशांक 0 हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "(1,0)",
+              "hi": "(1,0)"
+            },
+            "reason": {
+              "en": "This is 1 unit along the positive x-axis.",
+              "hi": "यह धनात्मक x-अक्ष पर 1 इकाई दूर है।"
+            }
+          },
+          {
+            "text": {
+              "en": "(0,1)",
+              "hi": "(0,1)"
+            },
+            "reason": {
+              "en": "This is 1 unit along the positive y-axis.",
+              "hi": "यह धनात्मक y-अक्ष पर 1 इकाई दूर है।"
+            }
+          },
+          {
+            "text": {
+              "en": "(1,1)",
+              "hi": "(1,1)"
+            },
+            "reason": {
+              "en": "This lies in quadrant I.",
+              "hi": "यह प्रथम चतुर्थांश में है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Which point is in quadrant II?",
+          "hi": "कौन-सा बिंदु द्वितीय चतुर्थांश में है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "(2,3)",
+              "hi": "(2,3)"
+            },
+            "reason": {
+              "en": "Both coordinates are positive: quadrant I.",
+              "hi": "दोनों निर्देशांक धनात्मक हैं: प्रथम चतुर्थांश।"
+            }
+          },
+          {
+            "text": {
+              "en": "(−2,3)",
+              "hi": "(−2,3)"
+            },
+            "reason": {
+              "en": "The sign pair is (−,+).",
+              "hi": "चिह्न (−,+) हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "(−2,−3)",
+              "hi": "(−2,−3)"
+            },
+            "reason": {
+              "en": "Both negative means quadrant III.",
+              "hi": "दोनों ऋणात्मक होने पर तृतीय चतुर्थांश है।"
+            }
+          },
+          {
+            "text": {
+              "en": "(2,−3)",
+              "hi": "(2,−3)"
+            },
+            "reason": {
+              "en": "The signs (+,−) give quadrant IV.",
+              "hi": "चिह्न (+,−) चतुर्थ चतुर्थांश देते हैं।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "A point on the x-axis must have:",
+          "hi": "x-अक्ष पर बिंदु के लिए क्या जरूरी है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "x = 0",
+              "hi": "x = 0"
+            },
+            "reason": {
+              "en": "This describes the y-axis.",
+              "hi": "यह y-अक्ष की शर्त है।"
+            }
+          },
+          {
+            "text": {
+              "en": "x = y",
+              "hi": "x = y"
+            },
+            "reason": {
+              "en": "Most x-axis points do not satisfy this.",
+              "hi": "x-अक्ष के अधिकतर बिंदु यह शर्त पूरी नहीं करते।"
+            }
+          },
+          {
+            "text": {
+              "en": "y = 0",
+              "hi": "y = 0"
+            },
+            "reason": {
+              "en": "There is no vertical displacement.",
+              "hi": "ऊर्ध्वाधर विस्थापन 0 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "y = 1",
+              "hi": "y = 1"
+            },
+            "reason": {
+              "en": "This is above the x-axis.",
+              "hi": "यह x-अक्ष के ऊपर है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "The abscissa of (−4,7) is:",
+          "hi": "(−4,7) का भुज क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "7",
+              "hi": "7"
+            },
+            "reason": {
+              "en": "7 is the ordinate.",
+              "hi": "7 कोटि है।"
+            }
+          },
+          {
+            "text": {
+              "en": "4",
+              "hi": "4"
+            },
+            "reason": {
+              "en": "The sign of the coordinate must be retained.",
+              "hi": "निर्देशांक का चिह्न बनाए रखें।"
+            }
+          },
+          {
+            "text": {
+              "en": "−7",
+              "hi": "−7"
+            },
+            "reason": {
+              "en": "This is neither of the given coordinates.",
+              "hi": "यह दिया हुआ कोई निर्देशांक नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "−4",
+              "hi": "−4"
+            },
+            "reason": {
+              "en": "Abscissa means x-coordinate.",
+              "hi": "भुज का अर्थ x-निर्देशांक है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "The ordinate of (6,−2) is:",
+          "hi": "(6,−2) की कोटि क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "−2",
+              "hi": "−2"
+            },
+            "reason": {
+              "en": "Ordinate means y-coordinate.",
+              "hi": "कोटि y-निर्देशांक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "6",
+              "hi": "6"
+            },
+            "reason": {
+              "en": "6 is the abscissa.",
+              "hi": "6 भुज है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2",
+              "hi": "2"
+            },
+            "reason": {
+              "en": "The negative sign matters.",
+              "hi": "ऋण चिह्न जरूरी है।"
+            }
+          },
+          {
+            "text": {
+              "en": "0",
+              "hi": "0"
+            },
+            "reason": {
+              "en": "The point is not on the x-axis.",
+              "hi": "यह बिंदु x-अक्ष पर नहीं है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Where does (0,−5) lie?",
+          "hi": "(0,−5) कहाँ स्थित है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Quadrant III",
+              "hi": "तृतीय चतुर्थांश"
+            },
+            "reason": {
+              "en": "An axis point belongs to no quadrant.",
+              "hi": "अक्ष पर बिंदु किसी चतुर्थांश में नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Negative y-axis",
+              "hi": "ऋणात्मक y-अक्ष"
+            },
+            "reason": {
+              "en": "x = 0 and y is negative.",
+              "hi": "x = 0 तथा y ऋणात्मक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Negative x-axis",
+              "hi": "ऋणात्मक x-अक्ष"
+            },
+            "reason": {
+              "en": "That would require y = 0.",
+              "hi": "इसके लिए y = 0 चाहिए।"
+            }
+          },
+          {
+            "text": {
+              "en": "Quadrant IV",
+              "hi": "चतुर्थ चतुर्थांश"
+            },
+            "reason": {
+              "en": "Quadrant IV needs x > 0.",
+              "hi": "चतुर्थ चतुर्थांश के लिए x > 0 चाहिए।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Distance of (−3,4) from the x-axis is:",
+          "hi": "(−3,4) की x-अक्ष से दूरी है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "−3 units",
+              "hi": "−3 इकाई"
+            },
+            "reason": {
+              "en": "Distance is nonnegative and uses y here.",
+              "hi": "दूरी ऋणेतर है तथा यहाँ y से मिलती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "3 units",
+              "hi": "3 इकाई"
+            },
+            "reason": {
+              "en": "This is distance from the y-axis.",
+              "hi": "यह y-अक्ष से दूरी है।"
+            }
+          },
+          {
+            "text": {
+              "en": "4 units",
+              "hi": "4 इकाई"
+            },
+            "reason": {
+              "en": "Use |y| = 4.",
+              "hi": "|y| = 4 लें।"
+            }
+          },
+          {
+            "text": {
+              "en": "−4 units",
+              "hi": "−4 इकाई"
+            },
+            "reason": {
+              "en": "A distance cannot be negative.",
+              "hi": "दूरी ऋणात्मक नहीं होती।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Which point is in quadrant IV?",
+          "hi": "कौन-सा बिंदु चतुर्थ चतुर्थांश में है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "(−1,−2)",
+              "hi": "(−1,−2)"
+            },
+            "reason": {
+              "en": "The signs (−,−) give quadrant III.",
+              "hi": "चिह्न (−,−) तृतीय चतुर्थांश देते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "(−1,2)",
+              "hi": "(−1,2)"
+            },
+            "reason": {
+              "en": "The signs (−,+) give quadrant II.",
+              "hi": "चिह्न (−,+) द्वितीय चतुर्थांश देते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "(1,2)",
+              "hi": "(1,2)"
+            },
+            "reason": {
+              "en": "The signs (+,+) give quadrant I.",
+              "hi": "चिह्न (+,+) प्रथम चतुर्थांश देते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "(1,−2)",
+              "hi": "(1,−2)"
+            },
+            "reason": {
+              "en": "Quadrant IV has signs (+,−).",
+              "hi": "चतुर्थ चतुर्थांश के चिह्न (+,−) हैं।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "Are (2,5) and (5,2) the same point?",
+          "hi": "क्या (2,5) और (5,2) एक ही बिंदु हैं?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "No; coordinate order matters.",
+              "hi": "नहीं; निर्देशांकों का क्रम महत्त्वपूर्ण है।"
+            },
+            "reason": {
+              "en": "Their horizontal and vertical positions differ.",
+              "hi": "उनकी क्षैतिज और ऊर्ध्वाधर स्थितियाँ अलग हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Yes; their sums are equal.",
+              "hi": "हाँ; उनके योग समान हैं।"
+            },
+            "reason": {
+              "en": "Equal sums do not mean equal ordered pairs.",
+              "hi": "समान योग का अर्थ समान क्रमित युग्म नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Yes; both lie in quadrant I.",
+              "hi": "हाँ; दोनों प्रथम चतुर्थांश में हैं।"
+            },
+            "reason": {
+              "en": "Many different points share a quadrant.",
+              "hi": "एक चतुर्थांश में कई अलग बिंदु होते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Yes; both coordinates are positive.",
+              "hi": "हाँ; दोनों निर्देशांक धनात्मक हैं।"
+            },
+            "reason": {
+              "en": "Signs alone do not specify a point.",
+              "hi": "केवल चिह्न से बिंदु तय नहीं होता।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Extension: the midpoint of (2,0) and (6,4) is:",
+          "hi": "विस्तार: (2,0) और (6,4) का मध्यबिंदु है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "(8,4)",
+              "hi": "(8,4)"
+            },
+            "reason": {
+              "en": "Coordinate sums must be divided by 2.",
+              "hi": "निर्देशांकों के योग को 2 से भाग दें।"
+            }
+          },
+          {
+            "text": {
+              "en": "(4,2)",
+              "hi": "(4,2)"
+            },
+            "reason": {
+              "en": "Average x-values and y-values separately.",
+              "hi": "x और y का अलग-अलग औसत लें।"
+            }
+          },
+          {
+            "text": {
+              "en": "(2,2)",
+              "hi": "(2,2)"
+            },
+            "reason": {
+              "en": "The x-coordinate should be (2+6)/2 = 4.",
+              "hi": "x-निर्देशांक (2+6)/2 = 4 होना चाहिए।"
+            }
+          },
+          {
+            "text": {
+              "en": "(4,4)",
+              "hi": "(4,4)"
+            },
+            "reason": {
+              "en": "The y-coordinate should be (0+4)/2 = 2.",
+              "hi": "y-निर्देशांक (0+4)/2 = 2 होना चाहिए।"
+            }
+          }
+        ],
+        "correct": 1
+      }
+    ],
+    "revision": [
+      {
+        "en": "Write a point as (x,y), in that order.",
+        "hi": "बिंदु को इसी क्रम में (x,y) लिखें।"
+      },
+      {
+        "en": "Abscissa is x; ordinate is y.",
+        "hi": "भुज x है; कोटि y है।"
+      },
+      {
+        "en": "Axis points do not belong to a quadrant.",
+        "hi": "अक्षों के बिंदु किसी चतुर्थांश में नहीं आते।"
+      },
+      {
+        "en": "Distance from an axis uses the other coordinate’s absolute value.",
+        "hi": "अक्ष से दूरी के लिए दूसरे निर्देशांक का निरपेक्ष मान लें।"
+      },
+      {
+        "en": "Midpoint and distance tools are marked as visual extensions.",
+        "hi": "मध्यबिंदु और दूरी के उपकरण दृश्य विस्तार के रूप में दिए हैं।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Axes → ordered pairs → quadrants → axis distances → midpoint/distance extension",
+      "hi": "अक्ष → क्रमित युग्म → चतुर्थांश → अक्ष से दूरी → मध्यबिंदु/दूरी विस्तार"
+    }
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "Linear Equations in Two Variables",
+      "hi": "दो चरों वाले रैखिक समीकरण"
+    },
+    "engine": "graph",
+    "goal": {
+      "en": "Build solution pairs and see why a linear equation gives a straight line.",
+      "hi": "हल के युग्म बनाएँ और देखें कि रैखिक समीकरण का ग्राफ सीधी रेखा क्यों है।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Meaning of a linear equation",
+          "hi": "रैखिक समीकरण का अर्थ"
+        },
+        "body": {
+          "en": "A linear equation in two variables can be written ax + by + c = 0, where a and b are not both zero. Each variable has degree at most 1. An ordered pair is a solution only if substitution makes the equation true. Different pairs may satisfy the same equation.",
+          "hi": "दो चरों का रैखिक समीकरण (Linear equation) ax + by + c = 0 के रूप में लिखा जा सकता है, जहाँ a और b दोनों एक साथ 0 नहीं हैं। हर चर की घात अधिकतम 1 है। क्रमित युग्म तभी हल है, जब उसे रखने पर समीकरण सत्य हो। एक समीकरण के अनेक अलग हल हो सकते हैं।"
+        },
+        "formula": "ax + by + c = 0; (a,b) ≠ (0,0)",
+        "question": {
+          "en": "Is (2,1) a solution of x + y = 3?",
+          "hi": "क्या (2,1), x + y = 3 का हल है?"
+        },
+        "answer": {
+          "en": "Yes; 2 + 1 = 3.",
+          "hi": "हाँ, 2 + 1 = 3 है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Making a table and graph",
+          "hi": "सारणी और ग्राफ बनाना"
+        },
+        "body": {
+          "en": "Choose a convenient x-value and calculate the corresponding y-value when b is nonzero. Two distinct solution points determine the line; a third is a useful check. All points on that line satisfy the equation. The line continues beyond the visible canvas in both directions.",
+          "hi": "b अशून्य हो तो x का सुविधाजनक मान चुनकर y निकालें। हल देने वाले 2 अलग बिंदु रेखा निर्धारित करते हैं; तीसरा बिंदु जाँच में उपयोगी है। रेखा का हर बिंदु समीकरण को संतुष्ट करता है। ग्राफ स्क्रीन के बाहर भी दोनों दिशाओं में चलता है। केवल पूर्णांक निर्देशांकों वाले बिंदु ही हल नहीं होते।"
+        },
+        "formula": "y = (−ax − c)/b, b ≠ 0",
+        "question": {
+          "en": "Give 2 solutions of x + y = 4.",
+          "hi": "x + y = 4 के 2 हल लिखें।"
+        },
+        "answer": {
+          "en": "For example (0,4) and (4,0).",
+          "hi": "उदाहरण के लिए (0,4) और (4,0)।"
+        }
+      },
+      {
+        "title": {
+          "en": "Horizontal and vertical lines",
+          "hi": "क्षैतिज और ऊर्ध्वाधर रेखाएँ"
+        },
+        "body": {
+          "en": "The graph of x = k is a vertical line because x stays fixed while y varies. The graph of y = k is horizontal. A vertical line cannot be written as y = mx + n with a finite slope. If both variable coefficients become 0, the equation describes either the entire plane or no point, not a unique line.",
+          "hi": "x = k का ग्राफ ऊर्ध्वाधर रेखा है, क्योंकि x निश्चित रहता है और y बदलता है। y = k क्षैतिज रेखा है। ऊर्ध्वाधर रेखा को परिमित ढाल के साथ y = mx + n नहीं लिख सकते। दोनों चर-गुणांक 0 करने पर या तो पूरा तल हल होगा या कोई बिंदु नहीं; ऐसी स्थिति एक अकेली रेखा नहीं है।"
+        },
+        "formula": "x = k: vertical; y = k: horizontal",
+        "question": {
+          "en": "What is the graph of y = −2?",
+          "hi": "y = −2 का ग्राफ कैसा होगा?"
+        },
+        "answer": {
+          "en": "A horizontal line 2 units below the x-axis.",
+          "hi": "x-अक्ष से 2 इकाई नीचे क्षैतिज रेखा।"
+        }
+      },
+      {
+        "title": {
+          "en": "Two-line exploration: extension",
+          "hi": "दो रेखाओं का अध्ययन: विस्तार"
+        },
+        "body": {
+          "en": "The requested two-line mode extends the single-equation chapter. A crossing point satisfies both equations. Distinct parallel lines have no common point. Coincident lines share every point. Dragging coefficients helps visualise these cases, but use substitution or elimination to confirm an exact intersection. Read graphical decimals as approximations.",
+          "hi": "माँगा गया दो-रेखा मोड इस अध्याय का विस्तार है। प्रतिच्छेद बिंदु (Intersection) दोनों समीकरणों का हल है। अलग समांतर रेखाओं में कोई साझा बिंदु नहीं होता। संपाती रेखाओं का हर बिंदु साझा है। गुणांक बदलकर ये स्थितियाँ देखें, लेकिन सटीक हल की पुष्टि प्रतिस्थापन या विलोपन से करें। ग्राफ का दशमलव अनुमान हो सकता है।"
+        },
+        "formula": "a1x + b1y + c1 = 0; a2x + b2y + c2 = 0",
+        "question": {
+          "en": "Find the crossing point of x + y = 4 and x − y = 0.",
+          "hi": "x + y = 4 और x − y = 0 का प्रतिच्छेद निकालें।"
+        },
+        "answer": {
+          "en": "(2,2).",
+          "hi": "(2,2)।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Check whether (3,2) solves 2x + y = 8.",
+          "hi": "जाँचें कि (3,2), 2x + y = 8 का हल है या नहीं।"
+        },
+        "steps": [
+          {
+            "en": "Substitute x = 3 and y = 2.",
+            "hi": "x = 3 तथा y = 2 रखें।"
+          },
+          {
+            "en": "Left side = 2(3) + 2 = 8, equal to the right side.",
+            "hi": "बायाँ पक्ष = 2(3) + 2 = 8 है, जो दाएँ पक्ष के बराबर है।"
+          }
+        ],
+        "answer": {
+          "en": "Yes, (3,2) is a solution.",
+          "hi": "हाँ, (3,2) एक हल है।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "Find 3 points on 2x + y = 6 and describe the graph.",
+          "hi": "2x + y = 6 पर 3 बिंदु निकालकर ग्राफ बताएँ।"
+        },
+        "steps": [
+          {
+            "en": "Rearrange as y = 6 − 2x.",
+            "hi": "y = 6 − 2x लिखें।"
+          },
+          {
+            "en": "For x = 0,1,3 the values of y are 6,4,0.",
+            "hi": "x = 0,1,3 पर y के मान 6,4,0 हैं।"
+          },
+          {
+            "en": "Plot the points and draw the straight line through them.",
+            "hi": "बिंदु अंकित करके उनसे गुजरती सीधी रेखा खींचें।"
+          }
+        ],
+        "answer": {
+          "en": "(0,6), (1,4), (3,0); one straight line.",
+          "hi": "(0,6), (1,4), (3,0); एक सीधी रेखा।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "Extension: find the intersection of x + y = 7 and x − y = 1.",
+          "hi": "विस्तार: x + y = 7 और x − y = 1 का प्रतिच्छेद निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Add the equations: 2x = 8.",
+            "hi": "समीकरण जोड़ें: 2x = 8।"
+          },
+          {
+            "en": "x = 4; substitute into x + y = 7.",
+            "hi": "x = 4; इसे x + y = 7 में रखें।"
+          },
+          {
+            "en": "4 + y = 7 gives y = 3; check both equations.",
+            "hi": "4 + y = 7 से y = 3; दोनों समीकरणों में जाँचें।"
+          }
+        ],
+        "answer": {
+          "en": "Intersection (4,3).",
+          "hi": "प्रतिच्छेद (4,3)।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which is linear in x and y?",
+          "hi": "कौन-सा x और y में रैखिक है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "2x + 3y = 6",
+              "hi": "2x + 3y = 6"
+            },
+            "reason": {
+              "en": "Both variables occur only to power 1.",
+              "hi": "दोनों चरों की घात केवल 1 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "x² + y = 6",
+              "hi": "x² + y = 6"
+            },
+            "reason": {
+              "en": "The x² term makes it non-linear.",
+              "hi": "x² पद इसे अरैखिक बनाता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "xy = 6",
+              "hi": "xy = 6"
+            },
+            "reason": {
+              "en": "A product of variables is not linear.",
+              "hi": "चरों का गुणनफल रैखिक नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1/x + y = 6",
+              "hi": "1/x + y = 6"
+            },
+            "reason": {
+              "en": "x in the denominator is not linear.",
+              "hi": "हर में x रैखिक रूप नहीं है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Which pair satisfies x + y = 5?",
+          "hi": "कौन-सा युग्म x + y = 5 को संतुष्ट करता है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "(2,2)",
+              "hi": "(2,2)"
+            },
+            "reason": {
+              "en": "2 + 2 = 4.",
+              "hi": "2 + 2 = 4 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "(2,3)",
+              "hi": "(2,3)"
+            },
+            "reason": {
+              "en": "2 + 3 = 5.",
+              "hi": "2 + 3 = 5 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "(5,5)",
+              "hi": "(5,5)"
+            },
+            "reason": {
+              "en": "5 + 5 = 10.",
+              "hi": "5 + 5 = 10 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "(0,0)",
+              "hi": "(0,0)"
+            },
+            "reason": {
+              "en": "0 + 0 = 0.",
+              "hi": "0 + 0 = 0 है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "The graph of y = 3 is:",
+          "hi": "y = 3 का ग्राफ है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "A vertical line",
+              "hi": "ऊर्ध्वाधर रेखा"
+            },
+            "reason": {
+              "en": "A fixed x gives a vertical line.",
+              "hi": "निश्चित x से ऊर्ध्वाधर रेखा बनती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only the point (0,3)",
+              "hi": "केवल बिंदु (0,3)"
+            },
+            "reason": {
+              "en": "Every real x is allowed.",
+              "hi": "x का हर वास्तविक मान संभव है।"
+            }
+          },
+          {
+            "text": {
+              "en": "A horizontal line",
+              "hi": "क्षैतिज रेखा"
+            },
+            "reason": {
+              "en": "The y-coordinate remains 3.",
+              "hi": "y-निर्देशांक 3 रहता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "The x-axis",
+              "hi": "x-अक्ष"
+            },
+            "reason": {
+              "en": "The x-axis is y = 0.",
+              "hi": "x-अक्ष y = 0 है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "The graph of x = −2 is:",
+          "hi": "x = −2 का ग्राफ है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "The y-axis",
+              "hi": "y-अक्ष"
+            },
+            "reason": {
+              "en": "The y-axis is x = 0.",
+              "hi": "y-अक्ष x = 0 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "A horizontal line",
+              "hi": "क्षैतिज रेखा"
+            },
+            "reason": {
+              "en": "Here x, not y, is fixed.",
+              "hi": "यहाँ x निश्चित है, y नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only (−2,0)",
+              "hi": "केवल (−2,0)"
+            },
+            "reason": {
+              "en": "All y-values are possible.",
+              "hi": "y के सभी मान संभव हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "A vertical line",
+              "hi": "ऊर्ध्वाधर रेखा"
+            },
+            "reason": {
+              "en": "Every point has x-coordinate −2.",
+              "hi": "हर बिंदु का x-निर्देशांक −2 है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "How many real solution pairs does x + y = 2 have?",
+          "hi": "x + y = 2 के कितने वास्तविक हल-युग्म हैं?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Infinitely many",
+              "hi": "अनंत"
+            },
+            "reason": {
+              "en": "Choose any real x and take y = 2 − x.",
+              "hi": "कोई भी वास्तविक x लें और y = 2 − x रखें।"
+            }
+          },
+          {
+            "text": {
+              "en": "Exactly 2",
+              "hi": "ठीक 2"
+            },
+            "reason": {
+              "en": "Solutions are not limited to axis intercepts.",
+              "hi": "हल केवल अक्ष-अंतःखंडों तक सीमित नहीं हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Exactly 1",
+              "hi": "ठीक 1"
+            },
+            "reason": {
+              "en": "A single equation represents an entire line.",
+              "hi": "एक समीकरण पूरी रेखा दर्शाता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "None",
+              "hi": "कोई नहीं"
+            },
+            "reason": {
+              "en": "For example (0,2) is a solution.",
+              "hi": "उदाहरण के लिए (0,2) एक हल है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "For 2x + y = 8, what is y when x = 3?",
+          "hi": "2x + y = 8 में x = 3 हो तो y क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "14",
+              "hi": "14"
+            },
+            "reason": {
+              "en": "Subtract 2x from 8.",
+              "hi": "8 में से 2x घटाएँ।"
+            }
+          },
+          {
+            "text": {
+              "en": "2",
+              "hi": "2"
+            },
+            "reason": {
+              "en": "y = 8 − 2(3) = 2.",
+              "hi": "y = 8 − 2(3) = 2 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "5",
+              "hi": "5"
+            },
+            "reason": {
+              "en": "The coefficient 2 must multiply x.",
+              "hi": "गुणांक 2 से x का गुणा करें।"
+            }
+          },
+          {
+            "text": {
+              "en": "6",
+              "hi": "6"
+            },
+            "reason": {
+              "en": "6 is 2x, not y.",
+              "hi": "6, 2x है, y नहीं।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "How many distinct points are enough to determine a straight line?",
+          "hi": "सीधी रेखा निर्धारित करने के लिए कितने अलग बिंदु पर्याप्त हैं?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "0",
+              "hi": "0"
+            },
+            "reason": {
+              "en": "With no points, no position is fixed.",
+              "hi": "कोई बिंदु न हो तो स्थिति निश्चित नहीं होती।"
+            }
+          },
+          {
+            "text": {
+              "en": "1",
+              "hi": "1"
+            },
+            "reason": {
+              "en": "Infinitely many lines pass through one point.",
+              "hi": "एक बिंदु से अनंत रेखाएँ गुजरती हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "2",
+              "hi": "2"
+            },
+            "reason": {
+              "en": "Exactly one line passes through 2 distinct points.",
+              "hi": "2 अलग बिंदुओं से ठीक 1 रेखा गुजरती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "5",
+              "hi": "5"
+            },
+            "reason": {
+              "en": "5 are unnecessary; 2 already determine it.",
+              "hi": "5 जरूरी नहीं; 2 से ही रेखा तय है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Which point is on the graph 3x + y = 6 and on the x-axis?",
+          "hi": "कौन-सा बिंदु 3x + y = 6 तथा x-अक्ष दोनों पर है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "(0,6)",
+              "hi": "(0,6)"
+            },
+            "reason": {
+              "en": "This is the y-axis intercept.",
+              "hi": "यह y-अक्ष पर अंतःखंड है।"
+            }
+          },
+          {
+            "text": {
+              "en": "(6,0)",
+              "hi": "(6,0)"
+            },
+            "reason": {
+              "en": "3(6) = 18, not 6.",
+              "hi": "3(6) = 18 है, 6 नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "(0,2)",
+              "hi": "(0,2)"
+            },
+            "reason": {
+              "en": "Its equation value is 2.",
+              "hi": "समीकरण का बायाँ पक्ष 2 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "(2,0)",
+              "hi": "(2,0)"
+            },
+            "reason": {
+              "en": "Set y = 0, then 3x = 6.",
+              "hi": "y = 0 रखें, तब 3x = 6 है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "Extension: two distinct parallel lines have how many common points?",
+          "hi": "विस्तार: दो अलग समांतर रेखाओं के कितने साझा बिंदु होते हैं?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "0",
+              "hi": "0"
+            },
+            "reason": {
+              "en": "Distinct parallel lines never meet.",
+              "hi": "अलग समांतर रेखाएँ कभी नहीं मिलतीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "1",
+              "hi": "1"
+            },
+            "reason": {
+              "en": "One common point means they intersect.",
+              "hi": "एक साझा बिंदु होने पर रेखाएँ प्रतिच्छेदी हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "2",
+              "hi": "2"
+            },
+            "reason": {
+              "en": "Two shared points would force the same line.",
+              "hi": "2 साझा बिंदु होने पर दोनों एक ही रेखा होंगी।"
+            }
+          },
+          {
+            "text": {
+              "en": "Infinitely many",
+              "hi": "अनंत"
+            },
+            "reason": {
+              "en": "That describes coincident lines.",
+              "hi": "यह संपाती रेखाओं के लिए है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Why must a and b not both be zero in ax + by + c = 0?",
+          "hi": "ax + by + c = 0 में a और b दोनों एक साथ 0 क्यों नहीं होने चाहिए?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Because negative coefficients are forbidden.",
+              "hi": "क्योंकि ऋणात्मक गुणांक निषिद्ध हैं।"
+            },
+            "reason": {
+              "en": "Negative coefficients are allowed.",
+              "hi": "ऋणात्मक गुणांक मान्य हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Otherwise it does not determine a line.",
+              "hi": "अन्यथा यह एक रेखा नहीं दर्शाता।"
+            },
+            "reason": {
+              "en": "0 = 0 gives the whole plane; c ≠ 0 gives no solution.",
+              "hi": "0 = 0 में पूरा तल हल है; c ≠ 0 में कोई हल नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Because c must be zero.",
+              "hi": "क्योंकि c को 0 होना चाहिए।"
+            },
+            "reason": {
+              "en": "c may be any real constant.",
+              "hi": "c कोई भी वास्तविक अचर हो सकता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Because all solutions must be integers.",
+              "hi": "क्योंकि सभी हल पूर्णांक होने चाहिए।"
+            },
+            "reason": {
+              "en": "Real noninteger solutions are allowed.",
+              "hi": "गैर-पूर्णांक वास्तविक हल भी मान्य हैं।"
+            }
+          }
+        ],
+        "correct": 1
+      }
+    ],
+    "revision": [
+      {
+        "en": "Check a solution by substitution.",
+        "hi": "प्रतिस्थापन से हल की जाँच करें।"
+      },
+      {
+        "en": "One linear equation gives infinitely many real pairs.",
+        "hi": "एक रैखिक समीकरण के अनंत वास्तविक युग्म होते हैं।"
+      },
+      {
+        "en": "Two distinct solution points determine its line.",
+        "hi": "हल देने वाले 2 अलग बिंदु इसकी रेखा तय करते हैं।"
+      },
+      {
+        "en": "x = k is vertical; y = k is horizontal.",
+        "hi": "x = k ऊर्ध्वाधर है; y = k क्षैतिज है।"
+      },
+      {
+        "en": "Two-line intersection is an additional visual exploration.",
+        "hi": "दो रेखाओं का प्रतिच्छेद अतिरिक्त दृश्य अध्ययन है।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Equation → solution pairs → table → straight line → intersections extension",
+      "hi": "समीकरण → हल-युग्म → सारणी → सीधी रेखा → प्रतिच्छेद विस्तार"
+    }
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "Introduction to Euclid's Geometry",
+      "hi": "यूक्लिड की ज्यामिति का परिचय"
+    },
+    "engine": "geometry",
+    "goal": {
+      "en": "Separate definitions, accepted statements and deductive proofs.",
+      "hi": "परिभाषा, स्वीकृत कथन और निगमनात्मक प्रमाण में अंतर समझें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Ideal objects and definitions",
+          "hi": "आदर्श आकृतियाँ और परिभाषाएँ"
+        },
+        "body": {
+          "en": "Geometry uses ideal objects: a point has position but no size; a line has length but no breadth; a surface has length and breadth but no thickness. A drawn dot or stroke is a model, not the ideal object. Definitions explain terms using other terms, so some basic ideas must remain undefined or intuitively understood.",
+          "hi": "ज्यामिति आदर्श वस्तुओं का अध्ययन है। बिंदु की स्थिति होती है, आकार नहीं; रेखा की लंबाई होती है, चौड़ाई नहीं; पृष्ठ की लंबाई और चौड़ाई होती है, मोटाई नहीं। कागज पर बिंदु या रेखा केवल मॉडल है। परिभाषाएँ दूसरे शब्दों से अर्थ समझाती हैं, इसलिए कुछ मूल विचार सहज रूप से स्वीकार करने पड़ते हैं।"
+        },
+        "formula": "Point → line → surface",
+        "question": {
+          "en": "Does the thickness of a drawn line belong to the ideal line?",
+          "hi": "क्या खींची गई रेखा की मोटाई आदर्श रेखा का गुण है?"
+        },
+        "answer": {
+          "en": "No; it is a feature of the drawing.",
+          "hi": "नहीं; यह चित्र का गुण है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Axioms and common notions",
+          "hi": "अभिगृहीत और सामान्य धारणाएँ"
+        },
+        "body": {
+          "en": "Axioms are accepted starting statements, not results proved using later theorems. Common notions include: things equal to the same thing are equal; adding equals to equals gives equals; subtracting equals from equals gives equals; the whole is greater than the part. Their conditions must be used precisely.",
+          "hi": "अभिगृहीत (Axiom) प्रमाण के लिए स्वीकृत आरंभिक कथन है। समान वस्तु के बराबर वस्तुएँ आपस में बराबर हैं। बराबर राशियों में बराबर जोड़ने या घटाने से बराबरी बनी रहती है। संपूर्ण अपने भाग से बड़ा होता है। इन कथनों को लागू करते समय समानता और भाग की शर्त ठीक से जाँचें।"
+        },
+        "formula": "a = b and b = c ⇒ a = c",
+        "question": {
+          "en": "If a = b, what follows after adding 5 to both?",
+          "hi": "a = b हो तो दोनों में 5 जोड़ने पर क्या होगा?"
+        },
+        "answer": {
+          "en": "a + 5 = b + 5.",
+          "hi": "a + 5 = b + 5।"
+        }
+      },
+      {
+        "title": {
+          "en": "Euclid’s postulates",
+          "hi": "यूक्लिड की अभिधारणाएँ"
+        },
+        "body": {
+          "en": "Postulates are geometric starting assumptions. A straight line segment can join any two points; a segment can be extended indefinitely; a circle can be drawn with any centre and positive radius; all right angles are equal. The fifth postulate concerns two lines cut by a transversal and the side where they will meet.",
+          "hi": "अभिधारणा (Postulate) ज्यामिति की स्वीकृत धारणा है। 2 बिंदुओं को सीधी रेखा के खंड से जोड़ सकते हैं। खंड को अनिश्चित रूप से बढ़ा सकते हैं। किसी केंद्र और धनात्मक त्रिज्या का वृत्त बना सकते हैं। सभी समकोण बराबर हैं। पाँचवीं अभिधारणा तिर्यक छेदक द्वारा काटी गई 2 रेखाओं और उनके मिलने की ओर से संबंधित है।"
+        },
+        "formula": "Right angle = 90°",
+        "question": {
+          "en": "Which postulate supports drawing a circle with a given centre and radius?",
+          "hi": "दिए केंद्र और त्रिज्या से वृत्त खींचने का आधार कौन-सी अभिधारणा है?"
+        },
+        "answer": {
+          "en": "Euclid’s third postulate.",
+          "hi": "यूक्लिड की तीसरी अभिधारणा।"
+        }
+      },
+      {
+        "title": {
+          "en": "From a statement to a proof",
+          "hi": "कथन से प्रमाण तक"
+        },
+        "body": {
+          "en": "A theorem follows from definitions, axioms, postulates and previously established results. A diagram suggests an idea; measurement of one picture does not prove a universal statement. The familiar parallel-line form of the fifth postulate says that through a point outside a line there is exactly one parallel to the line in the plane.",
+          "hi": "प्रमेय (Theorem) परिभाषाओं, अभिगृहीतों, अभिधारणाओं और पहले सिद्ध परिणामों से निकलता है। चित्र विचार सुझाता है, लेकिन एक चित्र का माप सर्वसाधारण प्रमाण नहीं है। पाँचवीं अभिधारणा का परिचित समतुल्य रूप है: तल में रेखा के बाहर दिए बिंदु से उस रेखा के समांतर ठीक 1 रेखा गुजरती है।"
+        },
+        "formula": "Given → accepted facts → justified steps → conclusion",
+        "question": {
+          "en": "Can several measurements alone prove a theorem for all cases?",
+          "hi": "क्या केवल कुछ माप सभी स्थितियों के लिए प्रमेय सिद्ध करते हैं?"
+        },
+        "answer": {
+          "en": "No; a deductive argument is needed.",
+          "hi": "नहीं; निगमनात्मक तर्क चाहिए।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "If AB = CD and CD = EF, compare AB and EF.",
+          "hi": "AB = CD और CD = EF हो तो AB तथा EF की तुलना करें।"
+        },
+        "steps": [
+          {
+            "en": "AB and EF are each equal to CD.",
+            "hi": "AB और EF दोनों CD के बराबर हैं।"
+          },
+          {
+            "en": "Use: things equal to the same thing are equal to one another.",
+            "hi": "जो एक ही राशि के बराबर हों, वे आपस में बराबर हैं।"
+          }
+        ],
+        "answer": {
+          "en": "AB = EF.",
+          "hi": "AB = EF।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "B lies between A and C. If AB = 4 cm and BC = 3 cm, find AC.",
+          "hi": "B, A और C के बीच है। AB = 4 cm और BC = 3 cm हो तो AC निकालें।"
+        },
+        "steps": [
+          {
+            "en": "The whole segment AC consists of adjacent parts AB and BC.",
+            "hi": "पूरा खंड AC, आसन्न भाग AB और BC से बना है।"
+          },
+          {
+            "en": "AC = AB + BC = 4 + 3.",
+            "hi": "AC = AB + BC = 4 + 3।"
+          }
+        ],
+        "answer": {
+          "en": "AC = 7 cm.",
+          "hi": "AC = 7 cm।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "On segment AB, suppose C and D are both midpoints. Show they cannot be distinct.",
+          "hi": "खंड AB पर C और D दोनों मध्यबिंदु हों, तो दिखाएँ कि वे अलग नहीं हो सकते।"
+        },
+        "steps": [
+          {
+            "en": "A midpoint has AC = AB/2; likewise AD = AB/2.",
+            "hi": "मध्यबिंदु के लिए AC = AB/2 तथा AD = AB/2 है।"
+          },
+          {
+            "en": "Thus AC = AD. If C and D were distinct along the same ray, one segment would be a proper part of the other.",
+            "hi": "अतः AC = AD। C और D एक ही किरण पर अलग हों तो एक खंड दूसरे का उचित भाग होगा।"
+          },
+          {
+            "en": "A whole is greater than its proper part, contradicting equality.",
+            "hi": "संपूर्ण अपने उचित भाग से बड़ा होता है, जो समानता का विरोध है।"
+          }
+        ],
+        "answer": {
+          "en": "C and D coincide; the midpoint is unique.",
+          "hi": "C और D एक ही हैं; मध्यबिंदु अद्वितीय है।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which ideal object has position but no size?",
+          "hi": "किस आदर्श वस्तु की स्थिति होती है, आकार नहीं?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Point",
+              "hi": "बिंदु"
+            },
+            "reason": {
+              "en": "A point specifies location without dimensions.",
+              "hi": "बिंदु बिना आयाम के स्थिति बताता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Line segment",
+              "hi": "रेखाखंड"
+            },
+            "reason": {
+              "en": "A segment has length.",
+              "hi": "रेखाखंड की लंबाई है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Surface",
+              "hi": "पृष्ठ"
+            },
+            "reason": {
+              "en": "A surface has length and breadth.",
+              "hi": "पृष्ठ की लंबाई और चौड़ाई है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Solid",
+              "hi": "ठोस"
+            },
+            "reason": {
+              "en": "A solid has 3 dimensions.",
+              "hi": "ठोस के 3 आयाम हैं।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "A statement accepted as a starting assumption is called:",
+          "hi": "प्रारंभिक रूप से स्वीकृत कथन कहलाता है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "A measured error",
+              "hi": "मापन त्रुटि"
+            },
+            "reason": {
+              "en": "An axiom is not an error measurement.",
+              "hi": "अभिगृहीत मापन की त्रुटि नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "An axiom",
+              "hi": "अभिगृहीत"
+            },
+            "reason": {
+              "en": "Axioms are accepted starting statements.",
+              "hi": "अभिगृहीत स्वीकृत आरंभिक कथन हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "A proved conclusion",
+              "hi": "सिद्ध निष्कर्ष"
+            },
+            "reason": {
+              "en": "That is a result of reasoning from assumptions.",
+              "hi": "वह धारणाओं से तर्क द्वारा निकला परिणाम है।"
+            }
+          },
+          {
+            "text": {
+              "en": "A numerical approximation",
+              "hi": "संख्यात्मक सन्निकटन"
+            },
+            "reason": {
+              "en": "An axiom is a logical starting point.",
+              "hi": "अभिगृहीत तर्क का आरंभ है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "If a = b and b = c, then:",
+          "hi": "a = b और b = c हो तो:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "a > c",
+              "hi": "a > c"
+            },
+            "reason": {
+              "en": "Both equal the same quantity.",
+              "hi": "दोनों एक ही राशि के बराबर हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "a < c",
+              "hi": "a < c"
+            },
+            "reason": {
+              "en": "Equality is preserved through b.",
+              "hi": "b के माध्यम से समानता बनी रहती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "a = c",
+              "hi": "a = c"
+            },
+            "reason": {
+              "en": "Things equal to the same thing are equal to one another.",
+              "hi": "एक ही राशि के बराबर राशियाँ आपस में बराबर हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "a + c = 0 always",
+              "hi": "a + c = 0 सदैव"
+            },
+            "reason": {
+              "en": "Their common value need not be 0.",
+              "hi": "उनका साझा मान 0 होना जरूरी नहीं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Which postulate allows a circle with any centre and radius?",
+          "hi": "किस अभिधारणा से किसी केंद्र और त्रिज्या का वृत्त बना सकते हैं?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "First",
+              "hi": "पहली"
+            },
+            "reason": {
+              "en": "The first joins two points with a straight segment.",
+              "hi": "पहली 2 बिंदुओं को सीधा जोड़ती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Second",
+              "hi": "दूसरी"
+            },
+            "reason": {
+              "en": "The second extends a segment.",
+              "hi": "दूसरी रेखाखंड बढ़ाने से संबंधित है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Fourth",
+              "hi": "चौथी"
+            },
+            "reason": {
+              "en": "The fourth states equality of right angles.",
+              "hi": "चौथी समकोणों की समानता बताती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Third",
+              "hi": "तीसरी"
+            },
+            "reason": {
+              "en": "The third is the circle postulate.",
+              "hi": "तीसरी वृत्त की अभिधारणा है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "All right angles are:",
+          "hi": "सभी समकोण:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Equal to one another",
+              "hi": "आपस में बराबर हैं"
+            },
+            "reason": {
+              "en": "This is Euclid’s fourth postulate.",
+              "hi": "यह यूक्लिड की चौथी अभिधारणा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Different in different triangles",
+              "hi": "अलग त्रिभुजों में अलग हैं"
+            },
+            "reason": {
+              "en": "Each right angle measures 90°.",
+              "hi": "हर समकोण 90° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always 180°",
+              "hi": "हमेशा 180° हैं"
+            },
+            "reason": {
+              "en": "180° is a straight angle.",
+              "hi": "180° सरल कोण है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Dependent on arm length",
+              "hi": "भुजाओं की लंबाई पर निर्भर हैं"
+            },
+            "reason": {
+              "en": "Changing arm length does not change an angle.",
+              "hi": "भुजा की लंबाई बदलने से कोण नहीं बदलता।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "If equals are subtracted from equals, the remainders are:",
+          "hi": "बराबर राशियों में से बराबर घटाने पर शेष:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Always zero",
+              "hi": "हमेशा शून्य है"
+            },
+            "reason": {
+              "en": "Equal remainders need not be 0.",
+              "hi": "बराबर शेष 0 होना जरूरी नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Equal",
+              "hi": "बराबर हैं"
+            },
+            "reason": {
+              "en": "This is a common notion about equality.",
+              "hi": "यह समानता का सामान्य अभिगृहीत है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always negative",
+              "hi": "हमेशा ऋणात्मक हैं"
+            },
+            "reason": {
+              "en": "Their sign depends on the given quantities.",
+              "hi": "चिह्न दी गई राशियों पर निर्भर है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Necessarily different",
+              "hi": "अवश्य अलग हैं"
+            },
+            "reason": {
+              "en": "The operation preserves equality.",
+              "hi": "यह क्रिया समानता बनाए रखती है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Through 2 distinct points, how many straight lines pass?",
+          "hi": "2 अलग बिंदुओं से कितनी सीधी रेखाएँ गुजरती हैं?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "0",
+              "hi": "0"
+            },
+            "reason": {
+              "en": "A straight segment can join them.",
+              "hi": "उन्हें सीधा खंड जोड़ सकता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2",
+              "hi": "2"
+            },
+            "reason": {
+              "en": "Distinct points determine only one line.",
+              "hi": "अलग बिंदु केवल 1 रेखा निर्धारित करते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "1",
+              "hi": "1"
+            },
+            "reason": {
+              "en": "A line is uniquely determined by two distinct points.",
+              "hi": "2 अलग बिंदु एक अद्वितीय रेखा तय करते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Infinitely many",
+              "hi": "अनंत"
+            },
+            "reason": {
+              "en": "Infinitely many lines pass through just one point.",
+              "hi": "केवल 1 बिंदु से अनंत रेखाएँ गुजरती हैं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "Which statement describes the whole and its proper part?",
+          "hi": "संपूर्ण और उसके उचित भाग के बारे में सही कथन है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "The whole is always smaller.",
+              "hi": "संपूर्ण हमेशा छोटा है।"
+            },
+            "reason": {
+              "en": "This reverses the common notion.",
+              "hi": "यह अभिगृहीत का उलटा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "They must always be equal.",
+              "hi": "दोनों हमेशा बराबर हैं।"
+            },
+            "reason": {
+              "en": "A proper part excludes something from the whole.",
+              "hi": "उचित भाग पूरे संपूर्ण को नहीं लेता।"
+            }
+          },
+          {
+            "text": {
+              "en": "They have no relation.",
+              "hi": "उनमें कोई संबंध नहीं है।"
+            },
+            "reason": {
+              "en": "A basic comparison is available.",
+              "hi": "इनकी मूल तुलना की जा सकती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "The whole is greater than the part.",
+              "hi": "संपूर्ण अपने भाग से बड़ा है।"
+            },
+            "reason": {
+              "en": "This is one of Euclid’s common notions.",
+              "hi": "यह यूक्लिड का एक सामान्य अभिगृहीत है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "Can a finite line segment be extended?",
+          "hi": "क्या परिमित रेखाखंड बढ़ाया जा सकता है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Yes, indefinitely along its straight line.",
+              "hi": "हाँ, उसी सीधी रेखा में अनिश्चित रूप से।"
+            },
+            "reason": {
+              "en": "Euclid’s second postulate permits this.",
+              "hi": "यूक्लिड की दूसरी अभिधारणा यह अनुमति देती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "No, never.",
+              "hi": "नहीं, कभी नहीं।"
+            },
+            "reason": {
+              "en": "The postulate explicitly allows extension.",
+              "hi": "अभिधारणा स्पष्ट रूप से बढ़ाने देती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only by curving it.",
+              "hi": "केवल मोड़कर।"
+            },
+            "reason": {
+              "en": "The extension remains straight.",
+              "hi": "विस्तार सीधा रहता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only to twice its length.",
+              "hi": "केवल दुगुनी लंबाई तक।"
+            },
+            "reason": {
+              "en": "There is no such finite upper limit.",
+              "hi": "ऐसी परिमित अधिकतम सीमा नहीं है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "What is required for a theorem to hold beyond one drawing?",
+          "hi": "प्रमेय को एक चित्र से आगे सभी स्थितियों में मान्य करने के लिए क्या चाहिए?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "A thicker outline",
+              "hi": "मोटी रेखा"
+            },
+            "reason": {
+              "en": "Drawing thickness is irrelevant to logical validity.",
+              "hi": "चित्र की मोटाई तर्क की सत्यता नहीं तय करती।"
+            }
+          },
+          {
+            "text": {
+              "en": "A deductive proof from accepted facts",
+              "hi": "स्वीकृत तथ्यों से निगमनात्मक प्रमाण"
+            },
+            "reason": {
+              "en": "A proof establishes the general conclusion.",
+              "hi": "प्रमाण सामान्य निष्कर्ष स्थापित करता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only one accurate measurement",
+              "hi": "केवल 1 सही माप"
+            },
+            "reason": {
+              "en": "One case cannot establish a universal statement.",
+              "hi": "एक उदाहरण सर्वसाधारण कथन सिद्ध नहीं करता।"
+            }
+          },
+          {
+            "text": {
+              "en": "Changing the colour",
+              "hi": "रंग बदलना"
+            },
+            "reason": {
+              "en": "Colour does not establish a theorem.",
+              "hi": "रंग से प्रमेय सिद्ध नहीं होता।"
+            }
+          }
+        ],
+        "correct": 1
+      }
+    ],
+    "revision": [
+      {
+        "en": "A dot models a point but has visible size.",
+        "hi": "बिंदु का बनाया चिह्न मॉडल है और उसका दृश्य आकार होता है।"
+      },
+      {
+        "en": "Axioms and postulates begin a deductive system.",
+        "hi": "अभिगृहीत और अभिधारणाएँ निगमनात्मक प्रणाली की शुरुआत हैं।"
+      },
+      {
+        "en": "Theorems require justified steps.",
+        "hi": "प्रमेयों में हर चरण का कारण चाहिए।"
+      },
+      {
+        "en": "Two distinct points determine one line.",
+        "hi": "2 अलग बिंदु 1 रेखा तय करते हैं।"
+      },
+      {
+        "en": "A measured picture supports intuition, not a universal proof.",
+        "hi": "मापा हुआ चित्र समझ में सहायता करता है, सर्वसाधारण प्रमाण नहीं है।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Ideal objects → definitions → axioms/postulates → reasoning → theorem",
+      "hi": "आदर्श वस्तुएँ → परिभाषाएँ → अभिगृहीत/अभिधारणाएँ → तर्क → प्रमेय"
+    }
+  },
+  {
+    "id": 6,
+    "title": {
+      "en": "Lines and Angles",
+      "hi": "रेखाएँ और कोण"
+    },
+    "engine": "geometry",
+    "goal": {
+      "en": "Use intersecting and parallel lines to explain angle relationships.",
+      "hi": "प्रतिच्छेदी और समांतर रेखाओं से कोणों के संबंध समझें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Angle pairs at a point",
+          "hi": "बिंदु पर कोणों के युग्म"
+        },
+        "body": {
+          "en": "Adjacent angles share a vertex and an arm, without overlapping interiors. A linear pair has noncommon arms forming a straight line, so its sum is 180°. Around a point the angles total 360°. Complementary angles total 90° and supplementary angles total 180°; they need not be adjacent.",
+          "hi": "आसन्न कोणों (Adjacent angles) का शीर्ष और एक भुजा साझा है तथा उनके अंदरूनी भाग नहीं मिलते। रैखिक युग्म (Linear pair) की असाझा भुजाएँ सीधी रेखा बनाती हैं, इसलिए योग 180° है। बिंदु के चारों ओर योग 360° है। पूरक कोणों का योग 90° और संपूरक कोणों का 180° है; उनका आसन्न होना जरूरी नहीं।"
+        },
+        "formula": "Linear pair: A + B = 180°",
+        "question": {
+          "en": "An angle in a linear pair is 65°. Find the other.",
+          "hi": "रैखिक युग्म का एक कोण 65° है। दूसरा निकालें।"
+        },
+        "answer": {
+          "en": "115°.",
+          "hi": "115°।"
+        }
+      },
+      {
+        "title": {
+          "en": "Vertically opposite angles",
+          "hi": "शीर्षाभिमुख कोण"
+        },
+        "body": {
+          "en": "When two straight lines intersect, opposite angle pairs are equal. Each opposite pair can be compared by subtracting the same adjacent angle from 180°. Equality of opposite angles is a theorem, not an assumption that the picture merely looks symmetric. The adjacent pair is usually not equal unless the lines are perpendicular.",
+          "hi": "2 सीधी रेखाएँ प्रतिच्छेद करें तो शीर्षाभिमुख कोण (Vertically opposite angles) बराबर होते हैं। दोनों को 180° में से एक ही आसन्न कोण घटाकर सिद्ध कर सकते हैं। केवल चित्र की सममिति देखकर समानता नहीं मानते। आसन्न कोण सामान्यतः बराबर नहीं होते; वे बराबर हों तो प्रत्येक 90° होता है।"
+        },
+        "formula": "Opposite angles: A = C, B = D",
+        "question": {
+          "en": "If one angle is 42°, what is its vertically opposite angle?",
+          "hi": "एक कोण 42° हो तो शीर्षाभिमुख कोण क्या होगा?"
+        },
+        "answer": {
+          "en": "42°.",
+          "hi": "42°।"
+        }
+      },
+      {
+        "title": {
+          "en": "A transversal across parallel lines",
+          "hi": "समांतर रेखाओं का तिर्यक छेदक"
+        },
+        "body": {
+          "en": "A transversal intersects 2 or more lines at distinct points. With parallel lines, corresponding angles are equal, alternate interior angles are equal, and same-side interior angles add to 180°. Name pairs by their positions, not colour alone. A transversal produces 8 angles when it cuts two distinct lines.",
+          "hi": "तिर्यक छेदक (Transversal) 2 या अधिक रेखाओं को अलग बिंदुओं पर काटता है। रेखाएँ समांतर हों तो संगत कोण बराबर, एकांतर अंतःकोण बराबर और एक ही ओर के अंतःकोणों का योग 180° होता है। कोण-युग्म को उनकी स्थिति से पहचानें, केवल रंग से नहीं। 2 रेखाओं को काटने पर कुल 8 कोण बनते हैं।"
+        },
+        "formula": "Corresponding = equal; alternate interior = equal; co-interior sum = 180°",
+        "question": {
+          "en": "One corresponding angle is 70°. Find its partner for parallel lines.",
+          "hi": "एक संगत कोण 70° है। समांतर रेखाओं में उसका साथी क्या होगा?"
+        },
+        "answer": {
+          "en": "70°.",
+          "hi": "70°।"
+        }
+      },
+      {
+        "title": {
+          "en": "Converse tests and triangles",
+          "hi": "विलोम जाँच और त्रिभुज"
+        },
+        "body": {
+          "en": "The angle relationships also test parallelism: equal corresponding or alternate interior angles imply that the two lines are parallel. A triangle’s interior angle sum is 180°. An exterior angle formed by extending a side equals the sum of the two interior opposite angles. Identify which angles are opposite before adding.",
+          "hi": "कोण संबंधों के विलोम से समांतरता जाँचते हैं। संगत या एकांतर अंतःकोण बराबर हों तो रेखाएँ समांतर हैं। त्रिभुज के अंतःकोणों का योग 180° है। भुजा बढ़ाने से बना बहिष्कोण (Exterior angle), दो अंतःसम्मुख कोणों के योग के बराबर है। जोड़ने से पहले सही सम्मुख कोण पहचानें।"
+        },
+        "formula": "A + B + C = 180°; exterior at C = A + B",
+        "question": {
+          "en": "A triangle has angles 50° and 60°. Find the third.",
+          "hi": "त्रिभुज के 2 कोण 50° और 60° हैं। तीसरा निकालें।"
+        },
+        "answer": {
+          "en": "70°.",
+          "hi": "70°।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Two angles form a linear pair. One is 128°. Find the other.",
+          "hi": "2 कोण रैखिक युग्म हैं। एक 128° है, दूसरा निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Their sum is 180°.",
+            "hi": "उनका योग 180° है।"
+          },
+          {
+            "en": "Other angle = 180° − 128°.",
+            "hi": "दूसरा कोण = 180° − 128°।"
+          }
+        ],
+        "answer": {
+          "en": "52°.",
+          "hi": "52°।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "Parallel lines are cut by a transversal. One interior angle is 110°. Find the interior angle on the same side and its alternate interior angle.",
+          "hi": "समांतर रेखाओं को तिर्यक छेदक काटता है। एक अंतःकोण 110° है। उसी ओर का अंतःकोण और एकांतर अंतःकोण निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Same-side interior angles are supplementary.",
+            "hi": "एक ही ओर के अंतःकोण संपूरक हैं।"
+          },
+          {
+            "en": "Same-side partner = 180° − 110° = 70°.",
+            "hi": "उसी ओर का साथी = 180° − 110° = 70°।"
+          },
+          {
+            "en": "Alternate interior angles are equal.",
+            "hi": "एकांतर अंतःकोण बराबर हैं।"
+          }
+        ],
+        "answer": {
+          "en": "Same-side partner 70°; alternate interior partner 110°.",
+          "hi": "उसी ओर का साथी 70°; एकांतर अंतःकोण 110°।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "A triangle’s exterior angle is 125°. Its two interior opposite angles are x and x + 15°. Find all interior angles.",
+          "hi": "त्रिभुज का बहिष्कोण 125° है। दोनों अंतःसम्मुख कोण x तथा x + 15° हैं। सभी अंतःकोण निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Exterior angle = sum of the opposite interior angles.",
+            "hi": "बहिष्कोण = अंतःसम्मुख कोणों का योग।"
+          },
+          {
+            "en": "2x + 15° = 125° gives x = 55°.",
+            "hi": "2x + 15° = 125° से x = 55°।"
+          },
+          {
+            "en": "The other opposite angle is 70°; the adjacent interior angle is 180° − 125° = 55°.",
+            "hi": "दूसरा सम्मुख कोण 70° है; आसन्न अंतःकोण 180° − 125° = 55° है।"
+          }
+        ],
+        "answer": {
+          "en": "55°, 70°, 55°.",
+          "hi": "55°, 70°, 55°।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "The sum of a linear pair is:",
+          "hi": "रैखिक युग्म का योग है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "180°",
+              "hi": "180°"
+            },
+            "reason": {
+              "en": "Its outer arms form a straight angle.",
+              "hi": "इसकी बाहरी भुजाएँ सरल कोण बनाती हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "90°",
+              "hi": "90°"
+            },
+            "reason": {
+              "en": "90° is the sum for complementary angles.",
+              "hi": "90° पूरक कोणों का योग है।"
+            }
+          },
+          {
+            "text": {
+              "en": "360°",
+              "hi": "360°"
+            },
+            "reason": {
+              "en": "360° is the angle sum around a point.",
+              "hi": "360° बिंदु के चारों ओर कोणों का योग है।"
+            }
+          },
+          {
+            "text": {
+              "en": "60°",
+              "hi": "60°"
+            },
+            "reason": {
+              "en": "A linear pair is not fixed at 60°.",
+              "hi": "रैखिक युग्म का योग 60° नहीं है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Vertically opposite angles are:",
+          "hi": "शीर्षाभिमुख कोण होते हैं:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Always supplementary",
+              "hi": "हमेशा संपूरक"
+            },
+            "reason": {
+              "en": "They add to 180° only in a special case.",
+              "hi": "विशेष स्थिति में ही उनका योग 180° होता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Equal",
+              "hi": "बराबर"
+            },
+            "reason": {
+              "en": "Subtract a common adjacent angle from 180°.",
+              "hi": "180° से साझा आसन्न कोण घटाने पर समानता मिलती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always acute",
+              "hi": "हमेशा न्यून"
+            },
+            "reason": {
+              "en": "They can also be obtuse or right.",
+              "hi": "वे अधिक या समकोण भी हो सकते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always adjacent",
+              "hi": "हमेशा आसन्न"
+            },
+            "reason": {
+              "en": "They lie opposite each other.",
+              "hi": "वे एक-दूसरे के सामने होते हैं।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "A 38° angle has a complementary angle of:",
+          "hi": "38° का पूरक कोण है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "142°",
+              "hi": "142°"
+            },
+            "reason": {
+              "en": "142° is its supplement.",
+              "hi": "142° इसका संपूरक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "38°",
+              "hi": "38°"
+            },
+            "reason": {
+              "en": "38° + 38° is not 90°.",
+              "hi": "38° + 38°, 90° नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "52°",
+              "hi": "52°"
+            },
+            "reason": {
+              "en": "90° − 38° = 52°.",
+              "hi": "90° − 38° = 52° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "322°",
+              "hi": "322°"
+            },
+            "reason": {
+              "en": "This completes a full turn, not 90°.",
+              "hi": "यह पूरा चक्कर बनाता है, 90° नहीं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "For parallel lines, corresponding angles are:",
+          "hi": "समांतर रेखाओं के संगत कोण होते हैं:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Always 90°",
+              "hi": "हमेशा 90°"
+            },
+            "reason": {
+              "en": "Their common value depends on the transversal.",
+              "hi": "उनका मान तिर्यक छेदक पर निर्भर है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always supplementary",
+              "hi": "हमेशा संपूरक"
+            },
+            "reason": {
+              "en": "Equality is the general relation.",
+              "hi": "सामान्य संबंध समानता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Unrelated",
+              "hi": "असंबंधित"
+            },
+            "reason": {
+              "en": "Parallelism creates a definite relation.",
+              "hi": "समांतरता निश्चित संबंध देती है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Equal",
+              "hi": "बराबर"
+            },
+            "reason": {
+              "en": "This is the corresponding-angle relation.",
+              "hi": "यही संगत कोणों का संबंध है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "Same-side interior angles for parallel lines sum to:",
+          "hi": "समांतर रेखाओं के एक ही ओर के अंतःकोणों का योग है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "180°",
+              "hi": "180°"
+            },
+            "reason": {
+              "en": "They are supplementary.",
+              "hi": "वे संपूरक हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "90°",
+              "hi": "90°"
+            },
+            "reason": {
+              "en": "They need not be complementary.",
+              "hi": "उनका पूरक होना जरूरी नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "360°",
+              "hi": "360°"
+            },
+            "reason": {
+              "en": "This is not a full set around a point.",
+              "hi": "यह बिंदु के चारों ओर पूरा समूह नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "0°",
+              "hi": "0°"
+            },
+            "reason": {
+              "en": "Ordinary interior angles are positive.",
+              "hi": "सामान्य अंतःकोण धनात्मक होते हैं।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Two triangle angles are 45° and 65°. The third is:",
+          "hi": "त्रिभुज के 2 कोण 45° और 65° हैं। तीसरा है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "110°",
+              "hi": "110°"
+            },
+            "reason": {
+              "en": "110° is the sum of the given angles.",
+              "hi": "110° दिए दोनों कोणों का योग है।"
+            }
+          },
+          {
+            "text": {
+              "en": "70°",
+              "hi": "70°"
+            },
+            "reason": {
+              "en": "180° − 45° − 65° = 70°.",
+              "hi": "180° − 45° − 65° = 70° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "80°",
+              "hi": "80°"
+            },
+            "reason": {
+              "en": "45° + 65° + 80° = 190°.",
+              "hi": "45° + 65° + 80° = 190° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "20°",
+              "hi": "20°"
+            },
+            "reason": {
+              "en": "20° is their difference, not the missing angle.",
+              "hi": "20° उनका अंतर है, तीसरा कोण नहीं।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "A triangle’s exterior angle equals:",
+          "hi": "त्रिभुज का बहिष्कोण बराबर होता है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Its adjacent interior angle always",
+              "hi": "हमेशा आसन्न अंतःकोण के"
+            },
+            "reason": {
+              "en": "They form a linear pair, not necessarily equal angles.",
+              "hi": "वे रैखिक युग्म हैं, जरूरी नहीं बराबर हों।"
+            }
+          },
+          {
+            "text": {
+              "en": "The sum of all 3 interior angles",
+              "hi": "तीनों अंतःकोणों के योग के"
+            },
+            "reason": {
+              "en": "That sum is always 180°.",
+              "hi": "वह योग हमेशा 180° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "The sum of 2 interior opposite angles",
+              "hi": "दो अंतःसम्मुख कोणों के योग के"
+            },
+            "reason": {
+              "en": "This is the exterior-angle theorem.",
+              "hi": "यही बहिष्कोण प्रमेय है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Half the adjacent angle",
+              "hi": "आसन्न कोण के आधे के"
+            },
+            "reason": {
+              "en": "There is no such general relation.",
+              "hi": "ऐसा सामान्य संबंध नहीं है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "If alternate interior angles are equal, the two lines are:",
+          "hi": "एकांतर अंतःकोण बराबर हों तो दोनों रेखाएँ:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Always perpendicular",
+              "hi": "हमेशा लंब हैं"
+            },
+            "reason": {
+              "en": "Equality here tests parallelism.",
+              "hi": "यह समानता समांतरता की जाँच है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always coincident",
+              "hi": "हमेशा संपाती हैं"
+            },
+            "reason": {
+              "en": "A transversal meets them at distinct points.",
+              "hi": "तिर्यक छेदक उन्हें अलग बिंदुओं पर काटता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Necessarily curved",
+              "hi": "अवश्य वक्र हैं"
+            },
+            "reason": {
+              "en": "The relation concerns straight lines.",
+              "hi": "यह संबंध सीधी रेखाओं का है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Parallel",
+              "hi": "समांतर हैं"
+            },
+            "reason": {
+              "en": "Use the converse alternate-angle theorem.",
+              "hi": "एकांतर कोण प्रमेय का विलोम लें।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "Two intersecting lines make one angle 120°. An adjacent angle is:",
+          "hi": "2 प्रतिच्छेदी रेखाओं का एक कोण 120° है। आसन्न कोण है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "60°",
+              "hi": "60°"
+            },
+            "reason": {
+              "en": "A linear pair totals 180°.",
+              "hi": "रैखिक युग्म का योग 180° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "120°",
+              "hi": "120°"
+            },
+            "reason": {
+              "en": "120° is the vertically opposite angle.",
+              "hi": "120° शीर्षाभिमुख कोण है।"
+            }
+          },
+          {
+            "text": {
+              "en": "240°",
+              "hi": "240°"
+            },
+            "reason": {
+              "en": "An ordinary angle between these rays is below 180°.",
+              "hi": "इन किरणों का सामान्य कोण 180° से कम है।"
+            }
+          },
+          {
+            "text": {
+              "en": "30°",
+              "hi": "30°"
+            },
+            "reason": {
+              "en": "120° + 30° does not make a straight angle.",
+              "hi": "120° + 30° सरल कोण नहीं बनाता।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "How many angles are formed when a transversal cuts 2 distinct lines at distinct points?",
+          "hi": "तिर्यक छेदक 2 अलग रेखाओं को अलग बिंदुओं पर काटे तो कितने कोण बनते हैं?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "4",
+              "hi": "4"
+            },
+            "reason": {
+              "en": "There are 4 at each of 2 intersections.",
+              "hi": "2 प्रतिच्छेदों में हर एक पर 4 कोण हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "8",
+              "hi": "8"
+            },
+            "reason": {
+              "en": "2 intersections × 4 angles = 8.",
+              "hi": "2 प्रतिच्छेद × 4 कोण = 8।"
+            }
+          },
+          {
+            "text": {
+              "en": "6",
+              "hi": "6"
+            },
+            "reason": {
+              "en": "Each intersection contributes 4.",
+              "hi": "हर प्रतिच्छेद 4 कोण देता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2",
+              "hi": "2"
+            },
+            "reason": {
+              "en": "This counts intersections, not all angles.",
+              "hi": "यह प्रतिच्छेदों की गिनती है, कोणों की नहीं।"
+            }
+          }
+        ],
+        "correct": 1
+      }
+    ],
+    "revision": [
+      {
+        "en": "Linear pair: 180°; full turn: 360°.",
+        "hi": "रैखिक युग्म: 180°; पूरा चक्कर: 360°।"
+      },
+      {
+        "en": "Vertically opposite angles are equal.",
+        "hi": "शीर्षाभिमुख कोण बराबर हैं।"
+      },
+      {
+        "en": "Parallel lines give equal corresponding and alternate interior angles.",
+        "hi": "समांतर रेखाओं के संगत और एकांतर अंतःकोण बराबर हैं।"
+      },
+      {
+        "en": "Co-interior angles of parallel lines are supplementary.",
+        "hi": "समांतर रेखाओं के एक ही ओर के अंतःकोण संपूरक हैं।"
+      },
+      {
+        "en": "Triangle angles sum to 180°.",
+        "hi": "त्रिभुज के कोणों का योग 180° है।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Angle pairs → intersecting lines → transversal → parallel tests → triangle angle sum",
+      "hi": "कोण युग्म → प्रतिच्छेदी रेखाएँ → तिर्यक छेदक → समांतरता जाँच → त्रिभुज कोण योग"
+    }
+  },
+  {
+    "id": 7,
+    "title": {
+      "en": "Triangles",
+      "hi": "त्रिभुज"
+    },
+    "engine": "geometry",
+    "goal": {
+      "en": "Connect side and angle measurements to congruence and triangle inequalities.",
+      "hi": "भुजाओं और कोणों के माप को सर्वांगसमता तथा त्रिभुज असमताओं से जोड़ें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Measurements and existence",
+          "hi": "माप और त्रिभुज का अस्तित्व"
+        },
+        "body": {
+          "en": "A triangle has 3 sides and 3 interior angles. Their sum is 180°, but the individual angles change when vertices move. Side lengths are distances between vertices. The sum of any 2 side lengths must be strictly greater than the third; equality produces a straight, degenerate figure, not a triangle.",
+          "hi": "त्रिभुज (Triangle) की 3 भुजाएँ और 3 अंतःकोण हैं। कोणों का योग 180° है, लेकिन शीर्ष बदलने पर अलग-अलग कोण बदलते हैं। भुजा की लंबाई शीर्षों के बीच दूरी है। किसी भी 2 भुजाओं का योग तीसरी से अधिक होना चाहिए। बराबर होने पर शीर्ष एक सीधी रेखा में आते हैं; वह त्रिभुज नहीं है।"
+        },
+        "formula": "a + b > c; b + c > a; c + a > b",
+        "question": {
+          "en": "Can lengths 2, 3 and 5 form a triangle?",
+          "hi": "क्या 2, 3 और 5 लंबाइयाँ त्रिभुज बनाती हैं?"
+        },
+        "answer": {
+          "en": "No; 2 + 3 = 5 is not greater than 5.",
+          "hi": "नहीं; 2 + 3 = 5 है, 5 से अधिक नहीं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Congruence and correspondence",
+          "hi": "सर्वांगसमता और संगति"
+        },
+        "body": {
+          "en": "Congruent triangles have the same shape and size. They may be rotated, reflected or translated. In △ABC ≅ △PQR, the order states A ↔ P, B ↔ Q and C ↔ R. Match sides and angles according to that order before using corresponding parts of congruent triangles. Equal area alone is not enough.",
+          "hi": "सर्वांगसम त्रिभुजों (Congruent triangles) का आकार और माप समान होता है। उन्हें घुमा, पलट या खिसका सकते हैं। △ABC ≅ △PQR में क्रम A ↔ P, B ↔ Q, C ↔ R बताता है। पहले संगति तय करें, फिर संगत भुजाएँ या कोण बराबर लिखें। केवल समान क्षेत्रफल सर्वांगसमता के लिए पर्याप्त नहीं है।"
+        },
+        "formula": "△ABC ≅ △PQR ⇒ AB = PQ, BC = QR, CA = RP",
+        "question": {
+          "en": "If △ABC ≅ △PQR, which angle matches B?",
+          "hi": "△ABC ≅ △PQR में B का संगत कोण कौन-सा है?"
+        },
+        "answer": {
+          "en": "Angle Q.",
+          "hi": "कोण Q।"
+        }
+      },
+      {
+        "title": {
+          "en": "Sufficient congruence criteria",
+          "hi": "पर्याप्त सर्वांगसमता कसौटियाँ"
+        },
+        "body": {
+          "en": "SSS uses all 3 corresponding sides. SAS uses 2 sides and their included angle. ASA uses 2 angles and their included side; AAS also works because the third angle is determined. RHS applies to right triangles with equal hypotenuse and one corresponding leg. AAA fixes shape, not size; arbitrary SSA is not a general criterion.",
+          "hi": "SSS में 3 संगत भुजाएँ लेते हैं। SAS में 2 भुजाएँ और उनके बीच का कोण लेते हैं। ASA में 2 कोण और उनके बीच की भुजा लेते हैं। AAS भी पर्याप्त है, क्योंकि तीसरा कोण तय हो जाता है। RHS समकोण त्रिभुज में कर्ण और एक संगत लंब भुजा पर लागू है। AAA केवल आकृति तय करता है; सामान्य SSA पर्याप्त नहीं है।"
+        },
+        "formula": "SSS; SAS; ASA; AAS; RHS",
+        "question": {
+          "en": "Are 3 equal angles sufficient for congruence?",
+          "hi": "क्या 3 बराबर कोण सर्वांगसमता के लिए पर्याप्त हैं?"
+        },
+        "answer": {
+          "en": "No; different-sized triangles can have the same angles.",
+          "hi": "नहीं; अलग आकार के त्रिभुजों के कोण समान हो सकते हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Isosceles triangles and comparisons",
+          "hi": "समद्विबाहु त्रिभुज और तुलना"
+        },
+        "body": {
+          "en": "Equal sides of a triangle have equal opposite angles, and equal angles have equal opposite sides. A larger side has the larger opposite angle; the converse also holds. In an isosceles triangle, drawing the segment from the vertex to the midpoint of the base produces two congruent triangles and explains several useful symmetry properties.",
+          "hi": "त्रिभुज की बराबर भुजाओं के सम्मुख कोण बराबर होते हैं और बराबर कोणों के सम्मुख भुजाएँ बराबर होती हैं। बड़ी भुजा के सम्मुख बड़ा कोण होता है; इसका विलोम भी सत्य है। समद्विबाहु त्रिभुज (Isosceles triangle) में शीर्ष को आधार के मध्यबिंदु से जोड़ने पर 2 सर्वांगसम त्रिभुज बनते हैं। इससे लंब, माध्यिका और कोण समद्विभाजक का संबंध समझ आता है।"
+        },
+        "formula": "AB = AC ⇒ ∠B = ∠C; area = (base × height)/2",
+        "question": {
+          "en": "In △ABC, AB = AC and ∠A = 40°. Find ∠B.",
+          "hi": "△ABC में AB = AC तथा ∠A = 40° है। ∠B निकालें।"
+        },
+        "answer": {
+          "en": "(180° − 40°)/2 = 70°.",
+          "hi": "(180° − 40°)/2 = 70°।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "An isosceles triangle has equal base angles and vertex angle 80°. Find the base angles.",
+          "hi": "समद्विबाहु त्रिभुज का शीर्ष कोण 80° है। बराबर आधार कोण निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Let each base angle be x.",
+            "hi": "हर आधार कोण x मानें।"
+          },
+          {
+            "en": "x + x + 80° = 180° gives 2x = 100°.",
+            "hi": "x + x + 80° = 180° से 2x = 100°।"
+          }
+        ],
+        "answer": {
+          "en": "Each base angle is 50°.",
+          "hi": "हर आधार कोण 50° है।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "In triangles ABC and PQR, AB = PQ = 5 cm, AC = PR = 7 cm and ∠A = ∠P = 60°. State congruence and the matching third side.",
+          "hi": "त्रिभुज ABC और PQR में AB = PQ = 5 cm, AC = PR = 7 cm तथा ∠A = ∠P = 60° है। सर्वांगसमता और तीसरी भुजा का संबंध लिखें।"
+        },
+        "steps": [
+          {
+            "en": "The given angle lies between the two given sides in each triangle.",
+            "hi": "दिया कोण दोनों दी भुजाओं के बीच है।"
+          },
+          {
+            "en": "Use SAS with A ↔ P, B ↔ Q and C ↔ R.",
+            "hi": "A ↔ P, B ↔ Q, C ↔ R के साथ SAS लें।"
+          }
+        ],
+        "answer": {
+          "en": "△ABC ≅ △PQR; BC = QR.",
+          "hi": "△ABC ≅ △PQR; BC = QR।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "AB = AC and D is the midpoint of BC. Prove AD is perpendicular to BC.",
+          "hi": "AB = AC तथा D, BC का मध्यबिंदु है। सिद्ध करें कि AD, BC पर लंब है।"
+        },
+        "steps": [
+          {
+            "en": "In △ABD and △ACD, AB = AC, BD = DC and AD is common.",
+            "hi": "△ABD तथा △ACD में AB = AC, BD = DC और AD साझा है।"
+          },
+          {
+            "en": "By SSS, the triangles are congruent, so ∠ADB = ∠ADC.",
+            "hi": "SSS से त्रिभुज सर्वांगसम हैं, अतः ∠ADB = ∠ADC।"
+          },
+          {
+            "en": "These equal angles form a linear pair, so each is 90°.",
+            "hi": "ये बराबर कोण रैखिक युग्म हैं, इसलिए प्रत्येक 90° है।"
+          }
+        ],
+        "answer": {
+          "en": "AD ⟂ BC.",
+          "hi": "AD ⟂ BC।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which set of lengths can form a triangle?",
+          "hi": "कौन-सी लंबाइयाँ त्रिभुज बना सकती हैं?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "3, 4, 5",
+              "hi": "3, 4, 5"
+            },
+            "reason": {
+              "en": "Each pair has sum greater than the third.",
+              "hi": "हर 2 का योग तीसरी से अधिक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1, 2, 3",
+              "hi": "1, 2, 3"
+            },
+            "reason": {
+              "en": "1 + 2 = 3 gives a degenerate figure.",
+              "hi": "1 + 2 = 3 से अपभ्रष्ट आकृति है।"
+            }
+          },
+          {
+            "text": {
+              "en": "2, 2, 5",
+              "hi": "2, 2, 5"
+            },
+            "reason": {
+              "en": "2 + 2 < 5.",
+              "hi": "2 + 2 < 5 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "1, 1, 4",
+              "hi": "1, 1, 4"
+            },
+            "reason": {
+              "en": "1 + 1 < 4.",
+              "hi": "1 + 1 < 4 है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "In SAS, the equal angle must be:",
+          "hi": "SAS में बराबर कोण होना चाहिए:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Any angle",
+              "hi": "कोई भी कोण"
+            },
+            "reason": {
+              "en": "A nonincluded angle gives SSA, which is not generally sufficient.",
+              "hi": "बीच का न होने पर SSA बन सकता है, जो सामान्यतः पर्याप्त नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Included between the equal sides",
+              "hi": "बराबर दी भुजाओं के बीच"
+            },
+            "reason": {
+              "en": "The included angle is essential to SAS.",
+              "hi": "SAS में बीच का कोण आवश्यक है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Always 90°",
+              "hi": "हमेशा 90°"
+            },
+            "reason": {
+              "en": "SAS works for nonright triangles too.",
+              "hi": "SAS गैर-समकोण त्रिभुजों के लिए भी है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Outside the triangle",
+              "hi": "त्रिभुज के बाहर"
+            },
+            "reason": {
+              "en": "SAS uses an interior included angle.",
+              "hi": "SAS में बीच का अंतःकोण लिया जाता है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "Which is not sufficient by itself for congruence?",
+          "hi": "अकेले कौन-सी शर्त सर्वांगसमता के लिए पर्याप्त नहीं है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "SSS",
+              "hi": "SSS"
+            },
+            "reason": {
+              "en": "Three corresponding sides determine size and shape.",
+              "hi": "3 संगत भुजाएँ आकार और माप तय करती हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "SAS",
+              "hi": "SAS"
+            },
+            "reason": {
+              "en": "Two sides and the included angle suffice.",
+              "hi": "2 भुजाएँ और बीच का कोण पर्याप्त हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "AAA",
+              "hi": "AAA"
+            },
+            "reason": {
+              "en": "The same angles can occur at different sizes.",
+              "hi": "समान कोण अलग आकारों में हो सकते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "ASA",
+              "hi": "ASA"
+            },
+            "reason": {
+              "en": "Two angles and the included side suffice.",
+              "hi": "2 कोण और बीच की भुजा पर्याप्त हैं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "RHS congruence applies to:",
+          "hi": "RHS सर्वांगसमता लागू है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "All triangles with one equal angle",
+              "hi": "एक बराबर कोण वाले सभी त्रिभुजों पर"
+            },
+            "reason": {
+              "en": "One angle does not give RHS.",
+              "hi": "केवल एक कोण से RHS नहीं मिलता।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only equilateral triangles",
+              "hi": "केवल समबाहु त्रिभुजों पर"
+            },
+            "reason": {
+              "en": "Equilateral triangles have no right angle.",
+              "hi": "समबाहु त्रिभुज में समकोण नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Any two equal-area triangles",
+              "hi": "किन्हीं दो समान क्षेत्रफल वाले त्रिभुजों पर"
+            },
+            "reason": {
+              "en": "Area equality is not the RHS condition.",
+              "hi": "क्षेत्रफल की समानता RHS की शर्त नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Right triangles with equal hypotenuse and one matching leg",
+              "hi": "बराबर कर्ण और एक संगत लंब भुजा वाले समकोण त्रिभुजों पर"
+            },
+            "reason": {
+              "en": "These are the required RHS conditions.",
+              "hi": "यही RHS की आवश्यक शर्तें हैं।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "If AB = AC in △ABC, then:",
+          "hi": "△ABC में AB = AC हो तो:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "∠B = ∠C",
+              "hi": "∠B = ∠C"
+            },
+            "reason": {
+              "en": "Equal sides have equal opposite angles.",
+              "hi": "बराबर भुजाओं के सम्मुख कोण बराबर हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "∠A = ∠B always",
+              "hi": "∠A = ∠B सदैव"
+            },
+            "reason": {
+              "en": "That would additionally force BC = AC.",
+              "hi": "उसके लिए BC = AC भी चाहिए।"
+            }
+          },
+          {
+            "text": {
+              "en": "BC = AB always",
+              "hi": "BC = AB सदैव"
+            },
+            "reason": {
+              "en": "An isosceles triangle need not be equilateral.",
+              "hi": "समद्विबाहु त्रिभुज का समबाहु होना जरूरी नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "∠B + ∠C = 90° always",
+              "hi": "∠B + ∠C = 90° सदैव"
+            },
+            "reason": {
+              "en": "This requires ∠A = 90°, not merely equal sides.",
+              "hi": "इसके लिए ∠A = 90° चाहिए; केवल बराबर भुजाएँ पर्याप्त नहीं।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "If △ABC ≅ △PQR, side BC matches:",
+          "hi": "△ABC ≅ △PQR हो तो BC की संगत भुजा है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "PQ",
+              "hi": "PQ"
+            },
+            "reason": {
+              "en": "PQ matches AB.",
+              "hi": "PQ, AB की संगत है।"
+            }
+          },
+          {
+            "text": {
+              "en": "QR",
+              "hi": "QR"
+            },
+            "reason": {
+              "en": "B ↔ Q and C ↔ R.",
+              "hi": "B ↔ Q तथा C ↔ R है।"
+            }
+          },
+          {
+            "text": {
+              "en": "PR",
+              "hi": "PR"
+            },
+            "reason": {
+              "en": "PR matches AC.",
+              "hi": "PR, AC की संगत है।"
+            }
+          },
+          {
+            "text": {
+              "en": "AB",
+              "hi": "AB"
+            },
+            "reason": {
+              "en": "AB belongs to the first triangle.",
+              "hi": "AB पहले त्रिभुज की भुजा है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "An isosceles triangle has vertex angle 40°. Each base angle is:",
+          "hi": "समद्विबाहु त्रिभुज का शीर्ष कोण 40° है। हर आधार कोण है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "40°",
+              "hi": "40°"
+            },
+            "reason": {
+              "en": "The base angles must share the remaining 140°.",
+              "hi": "आधार कोणों में शेष 140° बँटता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "140°",
+              "hi": "140°"
+            },
+            "reason": {
+              "en": "140° is the sum of both base angles.",
+              "hi": "140° दोनों आधार कोणों का योग है।"
+            }
+          },
+          {
+            "text": {
+              "en": "70°",
+              "hi": "70°"
+            },
+            "reason": {
+              "en": "(180° − 40°)/2 = 70°.",
+              "hi": "(180° − 40°)/2 = 70° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "90°",
+              "hi": "90°"
+            },
+            "reason": {
+              "en": "Two right angles leave no positive third angle.",
+              "hi": "2 समकोण होने पर धनात्मक तीसरा कोण नहीं बचता।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "In a triangle, the largest angle lies opposite the:",
+          "hi": "त्रिभुज में सबसे बड़ा कोण किसके सम्मुख है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Smallest side",
+              "hi": "सबसे छोटी भुजा"
+            },
+            "reason": {
+              "en": "This reverses the side-angle comparison.",
+              "hi": "यह भुजा-कोण तुलना का उलटा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Median always",
+              "hi": "हमेशा माध्यिका"
+            },
+            "reason": {
+              "en": "A median is not one of the triangle’s sides.",
+              "hi": "माध्यिका त्रिभुज की भुजा नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Shortest altitude always",
+              "hi": "हमेशा सबसे छोटे शीर्षलंब"
+            },
+            "reason": {
+              "en": "The theorem directly compares opposite sides and angles.",
+              "hi": "प्रमेय सीधे सम्मुख भुजा और कोण की तुलना करता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Largest side",
+              "hi": "सबसे बड़ी भुजा"
+            },
+            "reason": {
+              "en": "Larger sides have larger opposite angles.",
+              "hi": "बड़ी भुजा के सम्मुख बड़ा कोण है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "What is the area of a triangle with base 8 cm and perpendicular height 3 cm?",
+          "hi": "8 cm आधार और 3 cm लंब ऊँचाई वाले त्रिभुज का क्षेत्रफल क्या है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "12 cm²",
+              "hi": "12 cm²"
+            },
+            "reason": {
+              "en": "Area = 8 × 3 / 2 = 12 cm².",
+              "hi": "क्षेत्रफल = 8 × 3 / 2 = 12 cm² है।"
+            }
+          },
+          {
+            "text": {
+              "en": "24 cm²",
+              "hi": "24 cm²"
+            },
+            "reason": {
+              "en": "This omits the factor 1/2.",
+              "hi": "इसमें 1/2 का गुणक छूट गया है।"
+            }
+          },
+          {
+            "text": {
+              "en": "11 cm²",
+              "hi": "11 cm²"
+            },
+            "reason": {
+              "en": "Adding base and height is not the area formula.",
+              "hi": "आधार और ऊँचाई जोड़ना क्षेत्रफल का सूत्र नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "12 cm",
+              "hi": "12 cm"
+            },
+            "reason": {
+              "en": "The magnitude is correct but the unit must be square centimetres.",
+              "hi": "मान सही है, पर इकाई वर्ग सेंटीमीटर होगी।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "If two angles of one triangle equal two of another, what extra information can establish congruence?",
+          "hi": "2 त्रिभुजों के 2-2 कोण बराबर हों तो कौन-सी अतिरिक्त सूचना सर्वांगसमता स्थापित कर सकती है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Only equal colour",
+              "hi": "केवल समान रंग"
+            },
+            "reason": {
+              "en": "Colour has no geometric role.",
+              "hi": "रंग का ज्यामितीय महत्त्व नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "One pair of corresponding sides equal",
+              "hi": "संगत भुजाओं का एक युग्म बराबर"
+            },
+            "reason": {
+              "en": "ASA or AAS then fixes the size.",
+              "hi": "ASA या AAS से माप भी निश्चित हो जाता है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only their third angles equal",
+              "hi": "केवल तीसरे कोण बराबर"
+            },
+            "reason": {
+              "en": "AAA still allows different sizes.",
+              "hi": "AAA में भी अलग आकार संभव हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Both drawn on the same page",
+              "hi": "दोनों एक ही पृष्ठ पर बने हों"
+            },
+            "reason": {
+              "en": "Position on a page says nothing about size.",
+              "hi": "पृष्ठ की स्थिति आकार नहीं बताती।"
+            }
+          }
+        ],
+        "correct": 1
+      }
+    ],
+    "revision": [
+      {
+        "en": "Triangle angle sum is 180°.",
+        "hi": "त्रिभुज का कोण योग 180° है।"
+      },
+      {
+        "en": "Check all triangle inequalities strictly.",
+        "hi": "सभी त्रिभुज असमताएँ सख्त रूप से जाँचें।"
+      },
+      {
+        "en": "Congruence requires matching shape and size.",
+        "hi": "सर्वांगसमता में आकृति और माप दोनों समान हैं।"
+      },
+      {
+        "en": "SAS requires the included angle; RHS requires right triangles.",
+        "hi": "SAS में बीच का कोण; RHS में समकोण त्रिभुज चाहिए।"
+      },
+      {
+        "en": "State the correspondence before using equal parts.",
+        "hi": "बराबर भाग लिखने से पहले संगति बताएँ।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Side/angle measurements → existence → correspondence → congruence → equal parts",
+      "hi": "भुजा/कोण माप → अस्तित्व → संगति → सर्वांगसमता → बराबर भाग"
+    }
+  },
+  {
+    "id": 8,
+    "title": {
+      "en": "Quadrilaterals",
+      "hi": "चतुर्भुज"
+    },
+    "engine": "geometry",
+    "goal": {
+      "en": "Explore angle sums and the defining properties of special quadrilaterals.",
+      "hi": "कोण योग और विशेष चतुर्भुजों के निर्णायक गुण समझें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Four sides and the angle sum",
+          "hi": "चार भुजाएँ और कोण योग"
+        },
+        "body": {
+          "en": "A simple quadrilateral has 4 sides and 4 vertices. A diagonal divides a convex quadrilateral into 2 triangles, so its interior angles sum to 360°. In the visual lab keep vertices in boundary order; a self-crossing figure is not the simple quadrilateral for this theorem. A concave quadrilateral has one reflex interior angle.",
+          "hi": "सरल चतुर्भुज (Simple quadrilateral) की 4 भुजाएँ और 4 शीर्ष हैं। उत्तल चतुर्भुज को विकर्ण से 2 त्रिभुजों में बाँटने पर अंतःकोणों का योग 360° मिलता है। दृश्य प्रयोग में शीर्षों को सीमा के क्रम में रखें। स्वयं को काटती आकृति पर यह साधारण नियम उसी तरह लागू नहीं होता। अवतल चतुर्भुज में एक प्रतिवर्ती अंतःकोण होता है।"
+        },
+        "formula": "A + B + C + D = 360°",
+        "question": {
+          "en": "Three angles are 80°, 90°, 100°. Find the fourth.",
+          "hi": "3 कोण 80°, 90°, 100° हैं। चौथा निकालें।"
+        },
+        "answer": {
+          "en": "90°.",
+          "hi": "90°।"
+        }
+      },
+      {
+        "title": {
+          "en": "Parallelogram properties",
+          "hi": "समांतर चतुर्भुज के गुण"
+        },
+        "body": {
+          "en": "A parallelogram has both pairs of opposite sides parallel. Opposite sides and opposite angles are equal; consecutive angles are supplementary. A diagonal forms 2 congruent triangles. Its diagonals bisect each other, but they need not be equal or perpendicular. A slanted appearance alone does not define a parallelogram.",
+          "hi": "समांतर चतुर्भुज (Parallelogram) में सम्मुख भुजाओं के दोनों युग्म समांतर हैं। सम्मुख भुजाएँ और कोण बराबर हैं; आसन्न कोण संपूरक हैं। विकर्ण 2 सर्वांगसम त्रिभुज बनाता है। विकर्ण एक-दूसरे को समद्विभाजित करते हैं, लेकिन जरूरी नहीं कि बराबर या लंब हों। केवल तिरछा दिखना इसकी परिभाषा नहीं है।"
+        },
+        "formula": "AB ∥ CD, BC ∥ AD; A = C; A + B = 180°",
+        "question": {
+          "en": "A parallelogram has ∠A = 65°. Find ∠B.",
+          "hi": "समांतर चतुर्भुज में ∠A = 65° है। ∠B निकालें।"
+        },
+        "answer": {
+          "en": "115°.",
+          "hi": "115°।"
+        }
+      },
+      {
+        "title": {
+          "en": "Rectangle, rhombus and square",
+          "hi": "आयत, समचतुर्भुज और वर्ग"
+        },
+        "body": {
+          "en": "A rectangle is a parallelogram with right angles; its diagonals are equal. A rhombus is a parallelogram with all sides equal; its diagonals are perpendicular and bisect opposite angles. A square satisfies both sets of conditions. Thus every square is a rectangle and a rhombus, while the converses are not generally true.",
+          "hi": "आयत (Rectangle) समकोण वाला समांतर चतुर्भुज है; इसके विकर्ण बराबर हैं। समचतुर्भुज (Rhombus) की सभी भुजाएँ बराबर हैं; इसके विकर्ण लंब हैं और सम्मुख कोणों को समद्विभाजित करते हैं। वर्ग (Square) में दोनों के गुण हैं। इसलिए हर वर्ग आयत और समचतुर्भुज है, लेकिन हर आयत या समचतुर्भुज वर्ग नहीं है।"
+        },
+        "formula": "Square = rectangle + rhombus",
+        "question": {
+          "en": "Must a rectangle have all 4 sides equal?",
+          "hi": "क्या आयत की चारों भुजाएँ बराबर होना जरूरी है?"
+        },
+        "answer": {
+          "en": "No; only opposite sides must be equal.",
+          "hi": "नहीं; केवल सम्मुख भुजाओं की समानता जरूरी है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Tests and the midpoint theorem",
+          "hi": "पहचान की कसौटियाँ और मध्यबिंदु प्रमेय"
+        },
+        "body": {
+          "en": "A quadrilateral is a parallelogram if both pairs of opposite sides are equal, or its diagonals bisect each other, or one pair of opposite sides is both parallel and equal. In a triangle, the segment joining the midpoints of 2 sides is parallel to the third side and half its length. Use the converse to locate another midpoint.",
+          "hi": "चतुर्भुज में सम्मुख भुजाओं के दोनों युग्म बराबर हों, या विकर्ण एक-दूसरे को समद्विभाजित करें, या एक सम्मुख युग्म बराबर और समांतर दोनों हो, तो वह समांतर चतुर्भुज है। त्रिभुज में 2 भुजाओं के मध्यबिंदुओं को जोड़ने वाला खंड तीसरी भुजा के समांतर और उसकी आधी लंबाई का है। इसके विलोम से दूसरा मध्यबिंदु भी पहचान सकते हैं।"
+        },
+        "formula": "D midpoint of AB, E midpoint of AC ⇒ DE ∥ BC and DE = BC/2",
+        "question": {
+          "en": "If BC = 12 cm, what is the midpoint segment DE?",
+          "hi": "BC = 12 cm हो तो मध्यबिंदु खंड DE कितना है?"
+        },
+        "answer": {
+          "en": "6 cm.",
+          "hi": "6 cm।"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "level": "Easy",
+        "question": {
+          "en": "Find the fourth angle of a quadrilateral if the others are 75°, 85° and 110°.",
+          "hi": "चतुर्भुज के 3 कोण 75°, 85°, 110° हों तो चौथा निकालें।"
+        },
+        "steps": [
+          {
+            "en": "The total interior angle sum is 360°.",
+            "hi": "अंतःकोणों का कुल योग 360° है।"
+          },
+          {
+            "en": "Fourth = 360° − (75° + 85° + 110°) = 360° − 270°.",
+            "hi": "चौथा = 360° − (75° + 85° + 110°) = 360° − 270°।"
+          }
+        ],
+        "answer": {
+          "en": "90°.",
+          "hi": "90°।"
+        }
+      },
+      {
+        "level": "Medium",
+        "question": {
+          "en": "A parallelogram has adjacent angles in the ratio 2:3. Find all angles.",
+          "hi": "समांतर चतुर्भुज के आसन्न कोणों का अनुपात 2:3 है। सभी कोण निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Let the adjacent angles be 2x and 3x.",
+            "hi": "आसन्न कोण 2x और 3x मानें।"
+          },
+          {
+            "en": "2x + 3x = 180°, so x = 36°.",
+            "hi": "2x + 3x = 180°, इसलिए x = 36°।"
+          },
+          {
+            "en": "Opposite angles are equal.",
+            "hi": "सम्मुख कोण बराबर हैं।"
+          }
+        ],
+        "answer": {
+          "en": "72°, 108°, 72°, 108° in boundary order.",
+          "hi": "सीमा के क्रम में 72°, 108°, 72°, 108°।"
+        }
+      },
+      {
+        "level": "Challenge",
+        "question": {
+          "en": "D, E and F are midpoints of the sides of a triangle with perimeter 30 cm. Find the perimeter of △DEF.",
+          "hi": "30 cm परिमाप वाले त्रिभुज की भुजाओं के मध्यबिंदु D, E, F हैं। △DEF का परिमाप निकालें।"
+        },
+        "steps": [
+          {
+            "en": "Each midpoint segment is half its corresponding third side.",
+            "hi": "हर मध्यबिंदु खंड संगत तीसरी भुजा का आधा है।"
+          },
+          {
+            "en": "Add the three equalities: DE + EF + FD = (AB + BC + CA)/2.",
+            "hi": "तीनों संबंध जोड़ें: DE + EF + FD = (AB + BC + CA)/2।"
+          },
+          {
+            "en": "Perimeter = 30/2.",
+            "hi": "परिमाप = 30/2।"
+          }
+        ],
+        "answer": {
+          "en": "15 cm.",
+          "hi": "15 cm।"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "The angle sum of a simple quadrilateral is:",
+          "hi": "सरल चतुर्भुज के अंतःकोणों का योग है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "360°",
+              "hi": "360°"
+            },
+            "reason": {
+              "en": "A diagonal gives 2 triangles: 2 × 180°.",
+              "hi": "विकर्ण से 2 त्रिभुज मिलते हैं: 2 × 180°।"
+            }
+          },
+          {
+            "text": {
+              "en": "180°",
+              "hi": "180°"
+            },
+            "reason": {
+              "en": "180° is the sum for one triangle.",
+              "hi": "180° एक त्रिभुज का योग है।"
+            }
+          },
+          {
+            "text": {
+              "en": "270°",
+              "hi": "270°"
+            },
+            "reason": {
+              "en": "Four right angles already total 360°.",
+              "hi": "4 समकोणों का योग ही 360° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "540°",
+              "hi": "540°"
+            },
+            "reason": {
+              "en": "540° is a pentagon’s interior angle sum.",
+              "hi": "540° पंचभुज का अंतःकोण योग है।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "A parallelogram must have:",
+          "hi": "समांतर चतुर्भुज में जरूरी है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "All angles 90°",
+              "hi": "सभी कोण 90°"
+            },
+            "reason": {
+              "en": "That is a rectangle-specific condition.",
+              "hi": "यह आयत की विशेष शर्त है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Both pairs of opposite sides parallel",
+              "hi": "सम्मुख भुजाओं के दोनों युग्म समांतर"
+            },
+            "reason": {
+              "en": "This is its defining property.",
+              "hi": "यह इसका निर्णायक गुण है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Only 1 pair of equal sides",
+              "hi": "केवल 1 बराबर भुजा-युग्म"
+            },
+            "reason": {
+              "en": "Opposite sides are equal in both pairs.",
+              "hi": "दोनों सम्मुख युग्मों की भुजाएँ बराबर हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "All sides unequal",
+              "hi": "सभी भुजाएँ अलग"
+            },
+            "reason": {
+              "en": "Opposite sides must be equal.",
+              "hi": "सम्मुख भुजाएँ बराबर होनी चाहिए।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "A parallelogram has one angle 70°. An adjacent angle is:",
+          "hi": "समांतर चतुर्भुज का एक कोण 70° है। आसन्न कोण है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "70°",
+              "hi": "70°"
+            },
+            "reason": {
+              "en": "70° is the opposite angle.",
+              "hi": "70° सम्मुख कोण है।"
+            }
+          },
+          {
+            "text": {
+              "en": "20°",
+              "hi": "20°"
+            },
+            "reason": {
+              "en": "Adjacent angles are supplementary, not complementary.",
+              "hi": "आसन्न कोण संपूरक हैं, पूरक नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "110°",
+              "hi": "110°"
+            },
+            "reason": {
+              "en": "180° − 70° = 110°.",
+              "hi": "180° − 70° = 110° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "290°",
+              "hi": "290°"
+            },
+            "reason": {
+              "en": "An ordinary parallelogram is convex.",
+              "hi": "सामान्य समांतर चतुर्भुज उत्तल है।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "In every parallelogram, the diagonals:",
+          "hi": "हर समांतर चतुर्भुज के विकर्ण:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Are equal",
+              "hi": "बराबर हैं"
+            },
+            "reason": {
+              "en": "Equality is not true for every parallelogram.",
+              "hi": "हर समांतर चतुर्भुज में बराबरी जरूरी नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Are perpendicular",
+              "hi": "लंब हैं"
+            },
+            "reason": {
+              "en": "Perpendicularity is a rhombus property.",
+              "hi": "लंबता समचतुर्भुज का गुण है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Bisect all angles",
+              "hi": "सभी कोण समद्विभाजित करते हैं"
+            },
+            "reason": {
+              "en": "That is not a general parallelogram property.",
+              "hi": "यह सामान्य समांतर चतुर्भुज का गुण नहीं है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Bisect each other",
+              "hi": "एक-दूसरे को समद्विभाजित करते हैं"
+            },
+            "reason": {
+              "en": "Each diagonal passes through the midpoint of the other.",
+              "hi": "हर विकर्ण दूसरे के मध्यबिंदु से गुजरता है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "Which statement is always true?",
+          "hi": "कौन-सा कथन हमेशा सही है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Every square is a rectangle.",
+              "hi": "हर वर्ग आयत है।"
+            },
+            "reason": {
+              "en": "A square is a parallelogram with right angles.",
+              "hi": "वर्ग समकोण वाला समांतर चतुर्भुज है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Every rectangle is a square.",
+              "hi": "हर आयत वर्ग है।"
+            },
+            "reason": {
+              "en": "A rectangle may have unequal adjacent sides.",
+              "hi": "आयत की आसन्न भुजाएँ अलग हो सकती हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Every rhombus is a square.",
+              "hi": "हर समचतुर्भुज वर्ग है।"
+            },
+            "reason": {
+              "en": "A rhombus need not have right angles.",
+              "hi": "समचतुर्भुज में समकोण होना जरूरी नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Every quadrilateral is a parallelogram.",
+              "hi": "हर चतुर्भुज समांतर चतुर्भुज है।"
+            },
+            "reason": {
+              "en": "Opposite sides need not be parallel.",
+              "hi": "सम्मुख भुजाओं का समांतर होना जरूरी नहीं।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "Which extra property distinguishes a rectangle among parallelograms?",
+          "hi": "समांतर चतुर्भुजों में आयत की पहचान कौन-सा अतिरिक्त गुण करता है?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Opposite sides equal",
+              "hi": "सम्मुख भुजाएँ बराबर"
+            },
+            "reason": {
+              "en": "Every parallelogram already has this.",
+              "hi": "हर समांतर चतुर्भुज में यह पहले से है।"
+            }
+          },
+          {
+            "text": {
+              "en": "One angle is a right angle",
+              "hi": "एक कोण समकोण है"
+            },
+            "reason": {
+              "en": "Then adjacent and opposite angle relations make all 4 right.",
+              "hi": "तब आसन्न और सम्मुख संबंध से चारों कोण समकोण हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Diagonals bisect each other",
+              "hi": "विकर्ण एक-दूसरे को समद्विभाजित करते हैं"
+            },
+            "reason": {
+              "en": "This holds in every parallelogram.",
+              "hi": "यह हर समांतर चतुर्भुज में है।"
+            }
+          },
+          {
+            "text": {
+              "en": "A pair of opposite angles equal",
+              "hi": "सम्मुख कोणों का एक युग्म बराबर"
+            },
+            "reason": {
+              "en": "This is already true for every parallelogram.",
+              "hi": "यह हर समांतर चतुर्भुज में पहले से सत्य है।"
+            }
+          }
+        ],
+        "correct": 1
+      },
+      {
+        "question": {
+          "en": "A rhombus necessarily has:",
+          "hi": "समचतुर्भुज में अवश्य होता है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Equal diagonals",
+              "hi": "बराबर विकर्ण"
+            },
+            "reason": {
+              "en": "A nonsquare rhombus has unequal diagonals.",
+              "hi": "जो वर्ग नहीं है, उसके विकर्ण असमान होते हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "All angles 90°",
+              "hi": "सभी कोण 90°"
+            },
+            "reason": {
+              "en": "This would make it a square.",
+              "hi": "इससे वह वर्ग बन जाएगा।"
+            }
+          },
+          {
+            "text": {
+              "en": "All sides equal",
+              "hi": "सभी भुजाएँ बराबर"
+            },
+            "reason": {
+              "en": "Equal sides define the rhombus among parallelograms.",
+              "hi": "समांतर चतुर्भुज में बराबर भुजाएँ समचतुर्भुज की पहचान हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "No parallel sides",
+              "hi": "कोई समांतर भुजा नहीं"
+            },
+            "reason": {
+              "en": "Its opposite sides are parallel.",
+              "hi": "इसकी सम्मुख भुजाएँ समांतर हैं।"
+            }
+          }
+        ],
+        "correct": 2
+      },
+      {
+        "question": {
+          "en": "The segment joining midpoints of 2 triangle sides equals:",
+          "hi": "त्रिभुज की 2 भुजाओं के मध्यबिंदुओं को जोड़ने वाला खंड बराबर है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "The full third side",
+              "hi": "तीसरी पूरी भुजा के"
+            },
+            "reason": {
+              "en": "The theorem gives half, not the whole.",
+              "hi": "प्रमेय आधी लंबाई देता है, पूरी नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Twice the third side",
+              "hi": "तीसरी भुजा के दुगुने के"
+            },
+            "reason": {
+              "en": "This reverses the factor 1/2.",
+              "hi": "यह 1/2 के गुणक का उलटा है।"
+            }
+          },
+          {
+            "text": {
+              "en": "One-third of the third side",
+              "hi": "तीसरी भुजा के एक-तिहाई के"
+            },
+            "reason": {
+              "en": "The correct ratio is 1:2.",
+              "hi": "सही अनुपात 1:2 है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Half the third side",
+              "hi": "तीसरी भुजा के आधे के"
+            },
+            "reason": {
+              "en": "This is the midpoint theorem.",
+              "hi": "यही मध्यबिंदु प्रमेय है।"
+            }
+          }
+        ],
+        "correct": 3
+      },
+      {
+        "question": {
+          "en": "If a quadrilateral’s diagonals bisect each other, it is a:",
+          "hi": "चतुर्भुज के विकर्ण एक-दूसरे को समद्विभाजित करें तो वह है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Parallelogram",
+              "hi": "समांतर चतुर्भुज"
+            },
+            "reason": {
+              "en": "This is a sufficient test for a parallelogram.",
+              "hi": "यह समांतर चतुर्भुज की पर्याप्त कसौटी है।"
+            }
+          },
+          {
+            "text": {
+              "en": "Square necessarily",
+              "hi": "अवश्य वर्ग"
+            },
+            "reason": {
+              "en": "Right angles and equal sides are not guaranteed.",
+              "hi": "समकोण और बराबर भुजाएँ सुनिश्चित नहीं हैं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Rhombus necessarily",
+              "hi": "अवश्य समचतुर्भुज"
+            },
+            "reason": {
+              "en": "All sides need not be equal.",
+              "hi": "सभी भुजाएँ बराबर होना जरूरी नहीं।"
+            }
+          },
+          {
+            "text": {
+              "en": "Rectangle necessarily",
+              "hi": "अवश्य आयत"
+            },
+            "reason": {
+              "en": "The angles need not be 90°.",
+              "hi": "कोण 90° होना जरूरी नहीं।"
+            }
+          }
+        ],
+        "correct": 0
+      },
+      {
+        "question": {
+          "en": "In a convex quadrilateral, three angles are 90°, 80°, 100°. The fourth is:",
+          "hi": "उत्तल चतुर्भुज के 3 कोण 90°, 80°, 100° हैं। चौथा है:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "80°",
+              "hi": "80°"
+            },
+            "reason": {
+              "en": "That gives a total of 350°.",
+              "hi": "उससे कुल 350° होगा।"
+            }
+          },
+          {
+            "text": {
+              "en": "90°",
+              "hi": "90°"
+            },
+            "reason": {
+              "en": "360° − 270° = 90°.",
+              "hi": "360° − 270° = 90° है।"
+            }
+          },
+          {
+            "text": {
+              "en": "100°",
+              "hi": "100°"
+            },
+            "reason": {
+              "en": "That gives a total of 370°.",
+              "hi": "उससे कुल 370° होगा।"
+            }
+          },
+          {
+            "text": {
+              "en": "180°",
+              "hi": "180°"
+            },
+            "reason": {
+              "en": "That is not the remaining 90°.",
+              "hi": "शेष 90° है, 180° नहीं।"
+            }
+          }
+        ],
+        "correct": 1
+      }
+    ],
+    "revision": [
+      {
+        "en": "A simple quadrilateral has angle sum 360°.",
+        "hi": "सरल चतुर्भुज का कोण योग 360° है।"
+      },
+      {
+        "en": "A parallelogram has opposite sides parallel and equal.",
+        "hi": "समांतर चतुर्भुज की सम्मुख भुजाएँ समांतर और बराबर हैं।"
+      },
+      {
+        "en": "Its diagonals bisect each other.",
+        "hi": "इसके विकर्ण एक-दूसरे को समद्विभाजित करते हैं।"
+      },
+      {
+        "en": "A square is both a rectangle and a rhombus.",
+        "hi": "वर्ग आयत और समचतुर्भुज दोनों है।"
+      },
+      {
+        "en": "A midpoint segment is parallel to and half the third side.",
+        "hi": "मध्यबिंदु खंड तीसरी भुजा के समांतर और आधा है।"
+      }
+    ],
+    "conceptMap": {
+      "en": "Quadrilateral → angle sum → parallelogram → rectangle/rhombus → square → midpoint theorem",
+      "hi": "चतुर्भुज → कोण योग → समांतर चतुर्भुज → आयत/समचतुर्भुज → वर्ग → मध्यबिंदु प्रमेय"
+    }
+  }
+]

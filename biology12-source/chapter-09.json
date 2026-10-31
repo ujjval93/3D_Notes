@@ -1,0 +1,1043 @@
+{
+  "number": 9,
+  "id": "biology12-09",
+  "title": {
+    "en": "Biotechnology: Principles and Processes",
+    "hi": "जैव प्रौद्योगिकी: सिद्धांत व प्रक्रम"
+  },
+  "unit": {
+    "en": "Biology",
+    "hi": "जीव विज्ञान"
+  },
+  "scenes": [],
+  "notes": [
+    {
+      "title": {
+        "en": "Two foundations of biotechnology",
+        "hi": "जैव प्रौद्योगिकी के 2 आधार"
+      },
+      "paragraphs": [
+        {
+          "en": "Modern biotechnology combines genetic engineering with controlled bioprocessing. Recombinant DNA joins DNA from different sources, but obtaining a useful product also requires a suitable host and expression conditions.",
+          "hi": "जैव प्रौद्योगिकी (Biotechnology) में जीवों, कोशिकाओं या जैव अणुओं की सहायता से उपयोगी उत्पाद और प्रक्रियाएँ विकसित की जाती हैं। आधुनिक जैव प्रौद्योगिकी के 2 मुख्य आधार आनुवंशिक अभियांत्रिकी (Genetic engineering) तथा नियंत्रित जैव प्रक्रम हैं। पहले में DNA की सूचना या संगठन को इच्छित ढंग से बदला जाता है। दूसरे में उपयुक्त संस्कृति और दशाएँ रखकर कोशिकाओं से उपयोगी कार्य कराया जाता है। पुनर्योगज DNA (Recombinant DNA) में अलग स्रोतों के DNA भाग जोड़े जा सकते हैं। केवल DNA जोड़ देने से हर जीव में इच्छित प्रोटीन अपने आप नहीं बन जाता। सूचना को उपयुक्त पोषक कोशिका तक पहुँचाना, बनाए रखना और अभिव्यक्त कराना अलग आवश्यकताएँ हैं। बाहरी संदूषण नियंत्रित करना भी जरूरी है, क्योंकि अनचाहे सूक्ष्मजीव पोषण उपयोग कर सकते हैं या उत्पाद बदल सकते हैं। परंपरागत किण्वन और आधुनिक DNA तकनीक में कुछ साझा जैव सिद्धांत हैं, लेकिन दोनों को पूर्णतः समान प्रक्रिया न कहें। लक्ष्य, जैविक प्रणाली और उपयोगी परिणाम की श्रृंखला स्पष्ट लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A modified DNA molecule, a transformed host and a purified product are different stages.",
+          "hi": "बदला DNA अणु, रूपांतरित पोषक कोशिका और शुद्ध उत्पाद अलग चरण हैं; किसी 1 चरण की सफलता पूरी प्रक्रिया की सफलता नहीं है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does joining a gene to a vector guarantee its expression?",
+          "hi": "क्या जीन को संवाहक से जोड़ना उसकी अभिव्यक्ति की गारंटी है?"
+        },
+        "answer": {
+          "en": "No; compatible host and expression controls are also needed.",
+          "hi": "नहीं; उपयुक्त पोषक और अभिव्यक्ति नियंत्रण भी चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Restriction enzymes and ligase",
+        "hi": "प्रतिबंध एंजाइम और लाइगेज"
+      },
+      "paragraphs": [
+        {
+          "en": "Restriction endonucleases recognise particular DNA sequences and cut within DNA. Ligase joins compatible DNA ends by forming phosphodiester bonds; recognition and joining are distinct functions.",
+          "hi": "प्रतिबंध एंडोन्यूक्लिएज (Restriction endonuclease) DNA के विशेष पहचान अनुक्रम को पहचानकर भीतर काटता है। एक्सोन्यूक्लिएज सिरों से न्यूक्लियोटाइड हटाते हैं; दोनों नामों का अर्थ समान नहीं है। अनेक प्रतिबंध एंजाइम पैलिन्ड्रोमिक अनुक्रम पहचानते हैं। DNA पैलिन्ड्रोम को दोनों पूरक रज्जुकों पर समान 5′ से 3′ दिशा में पढ़कर जाँचते हैं, केवल लिखी पंक्ति उलटकर नहीं। EcoRI का परिचित पहचान अनुक्रम 5′-GAATTC-3′ है और उसका पूरक रज्जुक विपरीत दिशा में है। असममित कट से एकल रज्जु वाले चिपचिपे सिरे (Sticky ends) बन सकते हैं। संगत सिरे पूरक क्षार युग्मन कर सकते हैं, पर इससे शर्करा फॉस्फेट रीढ़ का हर बंध स्वतः पूरा नहीं होता। DNA लाइगेज (Ligase) उपयुक्त सिरों के बीच फॉस्फोडाइएस्टर बंध बनाता है। इच्छित DNA और संवाहक में संगत सिरों की आवश्यकता जोड़ने में सहायक है। हर प्रतिबंध एंजाइम समान अनुक्रम नहीं पहचानता और हर कट समान प्रकार का सिरा नहीं देता।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Base pairing aligns compatible ends; ligase seals the backbone.",
+          "hi": "पूरक क्षार युग्मन संगत सिरों को पास लाता है; लाइगेज रीढ़ का सहसंयोजक बंध पूरा करता है, इसलिए दोनों भूमिकाएँ अलग हैं।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How is a DNA palindrome read?",
+          "hi": "DNA पैलिन्ड्रोम कैसे पढ़ते हैं?"
+        },
+        "answer": {
+          "en": "Compare both strands in the same 5′→3′ direction.",
+          "hi": "दोनों रज्जुकों को समान 5′→3′ दिशा में पढ़कर मिलाएँ।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Cloning-vector features",
+        "hi": "क्लोनिंग संवाहक के लक्षण"
+      },
+      "paragraphs": [
+        {
+          "en": "A cloning vector needs an origin of replication, a selectable marker and suitable cloning sites. These features address maintenance, recognition of transformants and insertion of foreign DNA.",
+          "hi": "क्लोनिंग संवाहक (Cloning vector) इच्छित DNA को पोषक तक ले जाने और बनाए रखने का साधन है। प्लास्मिड छोटे वृत्ताकार DNA के परिचित उदाहरण हैं। प्रतिकृतिकरण उद्गम (Origin of replication, ori) वह क्षेत्र है जहाँ से DNA प्रतिकृति आरंभ होती है। यह जुड़े DNA की प्रतिकृति और प्रतिलिपि संख्या को प्रभावित कर सकता है। चयन योग्य चिह्नक (Selectable marker) रूपांतरित कोशिकाओं को अपरिवर्तित कोशिकाओं से अलग पहचानने में सहायक है। प्रतिजैविक प्रतिरोध जीन पाठ्यपुस्तकीय उदाहरण है, लेकिन प्रतिरोध का मिलना अकेले इच्छित insert की पुष्टि नहीं करता। उपयुक्त क्लोनिंग स्थल (Cloning site) में विदेशी DNA जोड़ा जाता है। बहुत अधिक अनचाहे कट संवाहक को छोटे टुकड़ों में बाँट सकते हैं, इसलिए विशेष तथा उपयुक्त पहचान स्थल जरूरी हैं। निवेशी निष्क्रियकरण (Insertional inactivation) में insert किसी चिह्नक का कार्य बाधित करता है और पहचान में मदद देता है। संवाहक की प्रत्येक विशेषता का अलग उद्देश्य है; ori को प्रतिरोध जीन या प्रतिरोध जीन को प्रोटीन निर्माण स्थल न लिखें।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Selection of transformants and identification of recombinant clones are related but different tests.",
+          "hi": "रूपांतरित कोशिकाओं का चयन और इच्छित पुनर्योगज क्लोन की पहचान संबंधित पर अलग जाँचें हैं; दोनों परिणाम एक ही दावा नहीं करते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the main role of ori?",
+          "hi": "ori की मुख्य भूमिका क्या है?"
+        },
+        "answer": {
+          "en": "It permits initiation of replication of the vector DNA in a compatible system.",
+          "hi": "उपयुक्त तंत्र में संवाहक DNA की प्रतिकृति आरंभ होने देना।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "DNA isolation and fragment separation",
+        "hi": "DNA पृथक्करण और खंडों का अलगाव"
+      },
+      "paragraphs": [
+        {
+          "en": "DNA must be released from cells and separated from proteins, RNA and other material. Gel electrophoresis separates DNA fragments mainly by size under specified conditions.",
+          "hi": "कोशिका से DNA प्राप्त करने के लिए उसकी बाहरी संरचनाएँ और झिल्लियाँ खोलनी पड़ती हैं। जीवाणु, पादप और कवक की कोशिका भित्तियाँ अलग होती हैं; इसलिए उपयुक्त एंजाइम भी अलग हो सकते हैं। लाइसोजाइम, सेल्युलेज और काइटिनेज इस संदर्भ के उदाहरण हैं। मुक्त मिश्रण में DNA के साथ प्रोटीन और RNA होते हैं; उनके अलगाव से अपेक्षाकृत शुद्ध DNA मिलता है। DNA की फॉस्फेट रीढ़ के कारण सामान्य वैद्युतकणसंचलन दशाओं में ऋणात्मक आवेश होता है। जैल वैद्युतकणसंचलन (Gel electrophoresis) में DNA धनात्मक इलेक्ट्रोड की ओर जाता है। जैल आण्विक छलनी की तरह बाधा देता है, इसलिए तुलनीय रैखिक DNA खंडों में छोटे खंड सामान्यतः अधिक दूर जाते हैं। पट्टी (Band) में समान आकार के अनेक DNA अणु हो सकते हैं; 1 पट्टी का अर्थ केवल 1 अणु नहीं है। उचित अभिरंजन से पट्टियाँ देखी जाती हैं। इच्छित खंड का अलगाव आगे जोड़ने या विश्लेषण में सहायक हो सकता है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Migration depends on the gel system and DNA form; compare like fragments under the same conditions.",
+          "hi": "गति जैल तंत्र और DNA रूप पर निर्भर करती है; आकार की तुलना में समान दशाओं वाले तुलनीय खंड ही मिलाएँ।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which electrode attracts DNA in a typical gel?",
+          "hi": "सामान्य जैल में DNA किस इलेक्ट्रोड की ओर जाता है?"
+        },
+        "answer": {
+          "en": "The positive electrode, or anode.",
+          "hi": "धनात्मक इलेक्ट्रोड, अर्थात एनोड की ओर।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "PCR and ideal amplification",
+        "hi": "PCR और आदर्श प्रवर्धन"
+      },
+      "paragraphs": [
+        {
+          "en": "PCR cycles through strand separation, primer annealing and polymerase extension. Ideal doubling gives N=N0×2^n, but actual reactions have finite efficiency and eventually plateau.",
+          "hi": "पॉलीमरेज श्रृंखला अभिक्रिया (Polymerase chain reaction, PCR) चुने DNA क्षेत्र की अनेक प्रतियाँ बनाने की तकनीक है। पहले द्विरज्जु DNA के रज्जुक अलग किए जाते हैं; इसे विकृतीकरण (Denaturation) कहते हैं। फिर उपयुक्त प्राइमर पूरक अनुक्रमों से जुड़ते हैं; यह अनीलन (Annealing) है। DNA पॉलीमरेज प्राइमर से नए रज्जुक का विस्तार (Extension) करता है। प्राइमर लक्ष्य क्षेत्र की सीमाएँ निर्धारित करने में सहायक हैं। ताप स्थिर Taq पॉलीमरेज बार-बार होने वाले ताप परिवर्तनों में उपयोगी है। यह Thermus aquaticus से जुड़ा पाठ्यपुस्तकीय उदाहरण है। आदर्श पूर्ण दक्षता पर हर चक्र में कुल प्रतियाँ दुगुनी मानें तो n चक्र के बाद N=N0×2^n मिलता है। यह किसी वास्तविक नमूने का निश्चित परिणाम नहीं है। प्राइमर, एंजाइम, पोषण और अन्य सीमाओं से वास्तविक दक्षता कम हो सकती है तथा अंत में वृद्धि रुक सकती है। PCR DNA बढ़ाता है; वह अपने आप प्रोटीन नहीं बनाता और पूरे जीव की संख्या दुगुनी करने की प्रक्रिया नहीं है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "State ideal efficiency before using 2^n; keep cycle number dimensionless and distinguish copies from concentration.",
+          "hi": "2^n लगाने से पहले आदर्श दक्षता लिखें; चक्र संख्या विमाहीन है और प्रतियों की संख्या को सांद्रता से अलग रखें।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many ideal copies arise from 1 starting molecule after 3 cycles?",
+          "hi": "1 आरंभिक अणु से 3 आदर्श चक्र बाद कितनी प्रतियाँ मिलेंगी?"
+        },
+        "answer": {
+          "en": "1×2³=8 copies.",
+          "hi": "1×2³=8 प्रतियाँ।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Host entry, selection and expression",
+        "hi": "पोषक में प्रवेश, चयन और अभिव्यक्ति"
+      },
+      "paragraphs": [
+        {
+          "en": "Transformation introduces DNA into a host cell. Selection enriches cells carrying a marker, while further screening checks the intended insert and expression.",
+          "hi": "रूपांतरण (Transformation) में बाहरी DNA पोषक कोशिका तक पहुँचाया जाता है। सभी कोशिकाएँ DNA आसानी से ग्रहण नहीं करतीं; ग्रहण योग्यता (Competence) और प्रवेश विधि महत्त्वपूर्ण हैं। पाठ्यपुस्तक में जीवाणु कोशिकाओं की तैयारी, सूक्ष्म अंतःक्षेपण और पादप कोशिकाओं के लिए कण विधि जैसे उदाहरण मिलते हैं। ये अवधारणात्मक परिचय हैं, हर जीव के लिए समान विधि नहीं। प्रवेश के बाद चयन योग्य चिह्नक वाली कोशिकाएँ उपयुक्त चयन में पहचानी जा सकती हैं। फिर भी कोई कोशिका बिना insert वाला संवाहक भी ग्रहण कर सकती है। इसलिए रूपांतरित, पुनर्योगज और इच्छित अभिव्यक्ति देने वाला क्लोन 3 अलग स्थितियाँ हैं। उपयुक्त नियंत्रण अनुक्रम, सही जीन और पोषक की जैविक क्षमता अभिव्यक्ति को प्रभावित करते हैं। प्रोटीन बनाने के लिए DNA की सूचना का RNA और फिर अनुवादन से जुड़ना आवश्यक है। जीन की उपस्थिति का प्रमाण और कार्यशील उत्पाद मिलने का प्रमाण अलग-अलग जाँच से मिलते हैं। प्रयोग के निष्कर्ष में वही दावा लिखें जिसे वास्तव में जाँचा गया है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "A surviving selected colony is not automatically proof of the correct recombinant product.",
+          "hi": "चयन में बची कॉलोनी अपने आप सही पुनर्योगज उत्पाद का प्रमाण नहीं है; अतिरिक्त पहचान तथा कार्य जाँच आवश्यक हो सकती है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can marker-positive cells contain a vector without the desired insert?",
+          "hi": "क्या चिह्नक धनात्मक कोशिका में इच्छित insert बिना संवाहक हो सकता है?"
+        },
+        "answer": {
+          "en": "Yes; further screening is needed to identify the intended recombinant.",
+          "hi": "हाँ; इच्छित पुनर्योगज पहचानने के लिए आगे जाँच चाहिए।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Bioreactors and controlled growth",
+        "hi": "जैव अभिक्रियक और नियंत्रित वृद्धि"
+      },
+      "paragraphs": [
+        {
+          "en": "Bioreactors provide controlled environments for producing useful biological material. Mixing, aeration where required, temperature, pH and nutrient supply influence growth and product formation.",
+          "hi": "जैव अभिक्रियक (Bioreactor) वह नियंत्रित पात्र या तंत्र है जिसमें कोशिका, सूक्ष्मजीव या एंजाइम से उपयोगी उत्पाद बनवाया जाता है। प्रयोगशाला की छोटी संस्कृति को बड़े स्तर पर ले जाने में केवल पात्र बड़ा करना पर्याप्त नहीं है। मिश्रण, ताप, pH, पोषण और गैसों की उपलब्धता अलग-अलग स्थानों पर उपयुक्त रहनी चाहिए। हिलाए टैंक (Stirred-tank) प्रकार में घुमाव मिश्रण में सहायक है और आवश्यक हो तो वातन ऑक्सीजन पहुँचाता है। हर जैव प्रक्रिया को अधिकतम ऑक्सीजन देना सही नहीं; जीव और उत्पाद की जरूरत अलग होती है। फेन नियंत्रण तथा नमूना लेने की व्यवस्था भी संचालन में उपयोगी हो सकती है। अधिक कोशिका संख्या और अधिक इच्छित उत्पाद हमेशा सीधे अनुपात में नहीं होते। कुछ उत्पाद विशेष वृद्धि अवस्था में अधिक बनते हैं या कोशिकाओं के बाहर निकलते हैं। संदूषण से प्रतिस्पर्धा और उत्पाद की गुणवत्ता बदल सकती है। इसलिए उत्पादन का वैज्ञानिक उद्देश्य अधिकतम जीव वृद्धि मात्र नहीं, सही गुणवत्ता और उपयोगी उत्पाद की नियंत्रित प्राप्ति है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Control variables must suit the chosen organism and process, not an imagined universal optimum.",
+          "hi": "नियंत्रण प्राचल चुने जीव और प्रक्रिया के अनुकूल होने चाहिए; हर उत्पादन के लिए एक ही सर्वोत्तम दशा मानना गलत है।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is mixing useful in a stirred-tank bioreactor?",
+          "hi": "हिलाए टैंक जैव अभिक्रियक में मिश्रण उपयोगी क्यों है?"
+        },
+        "answer": {
+          "en": "It helps distribute nutrients and suitable environmental conditions through the culture.",
+          "hi": "यह संस्कृति में पोषण और उपयुक्त पर्यावरणीय दशाएँ वितरित करने में सहायक है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Downstream processing and evidence",
+        "hi": "अनुप्रवाह प्रसंस्करण और प्रमाण"
+      },
+      "paragraphs": [
+        {
+          "en": "Product separation, purification and quality testing follow production. Molecular confirmation, biological function and safe product quality are separate evidence requirements.",
+          "hi": "उत्पाद बन जाने के बाद उसे जैव अभिक्रियक के मिश्रण से अलग करना पड़ता है। अनुप्रवाह प्रसंस्करण (Downstream processing) में पृथक्करण, शुद्धीकरण और आवश्यकता के अनुसार रूप देना शामिल हैं। उत्पाद कोशिका के भीतर है या बाहर, इससे अलगाव की विधि प्रभावित होती है। शेष कोशिकाएँ, अवांछित प्रोटीन और अन्य पदार्थ हटाना गुणवत्ता के लिए जरूरी हो सकता है। किसी औषधीय उत्पाद के लिए कार्यशीलता और गुणवत्ता की कठोर जाँच आवश्यक होती है। केवल अपेक्षित आकार की DNA पट्टी मिलना तैयार औषधि की शुद्धता साबित नहीं करता। इसी प्रकार प्रोटीन का नाम लिख देने से उसकी सही संरचना या सक्रियता सिद्ध नहीं होती। पूरी प्रक्रिया को लक्ष्य DNA की पहचान, जोड़ना, पोषक में प्रवेश, चयन, अभिव्यक्ति और उत्पाद की पुष्टि की श्रृंखला में देखें। उपयुक्त तुलना तथा नियंत्रण निष्कर्ष की शक्ति बढ़ाते हैं। परिणाम और अनुमान अलग लिखना जैव प्रौद्योगिकी में भी उतना ही जरूरी है जितना किसी अन्य वैज्ञानिक प्रयोग में है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Check identity, quantity, function and quality as separate questions.",
+          "hi": "पहचान, मात्रा, कार्य और गुणवत्ता को अलग प्रश्न मानकर जाँचें; किसी 1 माप से चारों उत्तर स्वतः नहीं मिल जाते।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is a DNA band alone proof of a pure active protein?",
+          "hi": "क्या केवल DNA पट्टी शुद्ध सक्रिय प्रोटीन का प्रमाण है?"
+        },
+        "answer": {
+          "en": "No; DNA identity and protein purity or activity require different evidence.",
+          "hi": "नहीं; DNA पहचान और प्रोटीन शुद्धता या सक्रियता के लिए अलग प्रमाण चाहिए।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "N=N0×2^n",
+      "meaning": {
+        "en": "N0 starting DNA molecules; n ideal complete doubling cycles; N total final copies. Actual efficiency may fall.",
+        "hi": "N0 आरंभिक DNA अणु; n आदर्श पूर्ण दुगुने चक्र; N अंतिम कुल प्रतियाँ। वास्तविक दक्षता घट सकती है।"
+      },
+      "units": {
+        "en": "Copy counts; cycle number is dimensionless.",
+        "hi": "प्रतियों की गिनती; चक्र संख्या विमाहीन है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Identify the joining enzyme.",
+        "hi": "जोड़ने वाला एंजाइम पहचानें।"
+      },
+      "given": {
+        "en": "Compatible insert and vector ends are aligned.",
+        "hi": "संगत insert और संवाहक सिरे पास हैं।"
+      },
+      "find": {
+        "en": "Which enzyme seals the backbone?",
+        "hi": "रीढ़ का बंध कौन पूरा करता है?"
+      },
+      "formula": {
+        "en": "Ligase forms phosphodiester bonds.",
+        "hi": "लाइगेज फॉस्फोडाइएस्टर बंध बनाता है।"
+      },
+      "steps": [
+        {
+          "en": "Separate recognition and cutting from joining.",
+          "hi": "पहचान और काटने को जोड़ने से अलग करें।"
+        },
+        {
+          "en": "Base pairing can align compatible ends.",
+          "hi": "क्षार युग्मन संगत सिरे पास ला सकता है।"
+        },
+        {
+          "en": "DNA ligase seals suitable backbone ends.",
+          "hi": "DNA लाइगेज उपयुक्त रीढ़ सिरे जोड़ता है।"
+        }
+      ],
+      "answer": {
+        "en": "DNA ligase.",
+        "hi": "DNA लाइगेज।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Predict gel migration.",
+        "hi": "जैल में गति का अनुमान लगाएँ।"
+      },
+      "given": {
+        "en": "Linear fragments of 200 and 1000 base pairs run under comparable conditions.",
+        "hi": "200 और 1000 क्षार युग्म के रैखिक खंड समान दशाओं में चलते हैं।"
+      },
+      "find": {
+        "en": "Which travels farther?",
+        "hi": "कौन अधिक दूर जाएगा?"
+      },
+      "formula": {
+        "en": "Smaller comparable DNA fragments usually move farther through a gel.",
+        "hi": "तुलनीय छोटे DNA खंड सामान्यतः जैल में अधिक दूर जाते हैं।"
+      },
+      "steps": [
+        {
+          "en": "Both fragments carry negative phosphate-backbone charge.",
+          "hi": "दोनों में ऋणात्मक फॉस्फेट रीढ़ आवेश है।"
+        },
+        {
+          "en": "Both move towards the positive electrode.",
+          "hi": "दोनों धनात्मक इलेक्ट्रोड की ओर जाते हैं।"
+        },
+        {
+          "en": "The smaller 200 bp fragment faces less sieving resistance.",
+          "hi": "छोटे 200 bp खंड पर छलनी प्रतिरोध कम पड़ता है।"
+        }
+      ],
+      "answer": {
+        "en": "The 200 bp fragment usually travels farther.",
+        "hi": "200 bp खंड सामान्यतः अधिक दूर जाता है।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Calculate ideal PCR copies.",
+        "hi": "आदर्श PCR प्रतियाँ निकालें।"
+      },
+      "given": {
+        "en": "N0=5 molecules; n=4 complete doubling cycles.",
+        "hi": "N0=5 अणु; n=4 पूर्ण दुगुने चक्र।"
+      },
+      "find": {
+        "en": "Total copies.",
+        "hi": "कुल प्रतियाँ।"
+      },
+      "formula": {
+        "en": "N=N0×2^n.",
+        "hi": "N=N0×2^n।"
+      },
+      "steps": [
+        {
+          "en": "State the ideal 100% doubling assumption.",
+          "hi": "आदर्श 100% दुगुने होने की मान्यता लिखें।"
+        },
+        {
+          "en": "Compute 2⁴=16.",
+          "hi": "2⁴=16 निकालें।"
+        },
+        {
+          "en": "Multiply 5×16=80.",
+          "hi": "5×16=80 करें।"
+        }
+      ],
+      "answer": {
+        "en": "80 ideal copies, not a guaranteed experimental yield.",
+        "hi": "80 आदर्श प्रतियाँ; निश्चित प्रायोगिक उपज नहीं।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Check a DNA palindrome.",
+        "hi": "DNA पैलिन्ड्रोम जाँचें।"
+      },
+      "given": {
+        "en": "Top 5′-GAATTC-3′; bottom 3′-CTTAAG-5′.",
+        "hi": "ऊपर 5′-GAATTC-3′; नीचे 3′-CTTAAG-5′।"
+      },
+      "find": {
+        "en": "Read both in one direction.",
+        "hi": "दोनों को एक दिशा में पढ़ें।"
+      },
+      "formula": {
+        "en": "Compare 5′→3′ on both strands.",
+        "hi": "दोनों रज्जुकों पर 5′→3′ मिलाएँ।"
+      },
+      "steps": [
+        {
+          "en": "Read the top from left to right: GAATTC.",
+          "hi": "ऊपर बाएँ से दाएँ GAATTC पढ़ें।"
+        },
+        {
+          "en": "Read the bottom from its 5′ end, right to left: GAATTC.",
+          "hi": "नीचे उसके 5′ सिरे से दाएँ से बाएँ GAATTC पढ़ें।"
+        },
+        {
+          "en": "The same directed sequence confirms the palindrome.",
+          "hi": "समान दिशात्मक अनुक्रम पैलिन्ड्रोम की पुष्टि करता है।"
+        }
+      ],
+      "answer": {
+        "en": "Both read GAATTC in the 5′→3′ direction.",
+        "hi": "दोनों 5′→3′ दिशा में GAATTC पढ़े जाते हैं।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Evaluate marker-based selection.",
+        "hi": "चिह्नक आधारित चयन का मूल्यांकन करें।"
+      },
+      "given": {
+        "en": "A colony survives antibiotic selection after plasmid entry.",
+        "hi": "प्लास्मिड प्रवेश के बाद कॉलोनी प्रतिजैविक चयन में बचती है।"
+      },
+      "find": {
+        "en": "Does it prove the intended insert and active product?",
+        "hi": "क्या इससे इच्छित insert और सक्रिय उत्पाद सिद्ध होते हैं?"
+      },
+      "formula": {
+        "en": "Marker selection ≠ insert confirmation ≠ product activity.",
+        "hi": "चिह्नक चयन ≠ insert पुष्टि ≠ उत्पाद सक्रियता।"
+      },
+      "steps": [
+        {
+          "en": "Survival is consistent with a functional selection marker.",
+          "hi": "बचना कार्यशील चयन चिह्नक के अनुरूप है।"
+        },
+        {
+          "en": "A non-recombinant vector can also carry that marker.",
+          "hi": "बिना insert वाला संवाहक भी वह चिह्नक रख सकता है।"
+        },
+        {
+          "en": "Screening is required to identify the intended insert.",
+          "hi": "इच्छित insert पहचानने के लिए आगे जाँच चाहिए।"
+        },
+        {
+          "en": "Expression and product activity require further evidence.",
+          "hi": "अभिव्यक्ति और उत्पाद सक्रियता के लिए अतिरिक्त प्रमाण चाहिए।"
+        }
+      ],
+      "answer": {
+        "en": "No; the result supports selection, not every later claim.",
+        "hi": "नहीं; परिणाम चयन का समर्थन करता है, हर अगले दावे का नहीं।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which enzyme joins compatible DNA ends?",
+        "hi": "संगत DNA सिरे कौन जोड़ता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "DNA ligase",
+            "hi": "DNA लाइगेज"
+          },
+          "reason": {
+            "en": "It seals phosphodiester bonds in the backbone.",
+            "hi": "यह रीढ़ में फॉस्फोडाइएस्टर बंध पूरा करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Restriction endonuclease",
+            "hi": "प्रतिबंध एंडोन्यूक्लिएज"
+          },
+          "reason": {
+            "en": "It recognises and cuts particular sites.",
+            "hi": "यह विशेष स्थल पहचानकर काटता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cellulase",
+            "hi": "सेल्युलेज"
+          },
+          "reason": {
+            "en": "It breaks down cellulose.",
+            "hi": "यह सेल्यूलोस का विघटन करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Protease",
+            "hi": "प्रोटीएज"
+          },
+          "reason": {
+            "en": "It breaks down proteins.",
+            "hi": "यह प्रोटीन का विघटन करता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What is the main function of ori?",
+        "hi": "ori का मुख्य कार्य क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Initiation of DNA replication",
+            "hi": "DNA प्रतिकृति का आरंभ"
+          },
+          "reason": {
+            "en": "It allows vector replication in a compatible system.",
+            "hi": "यह उपयुक्त तंत्र में संवाहक प्रतिकृति आरंभ कराता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Making all cells antibiotic-resistant automatically",
+            "hi": "हर कोशिका को स्वतः प्रतिरोधी बनाना"
+          },
+          "reason": {
+            "en": "A separate marker is required.",
+            "hi": "अलग चिह्नक आवश्यक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Digesting the cell wall",
+            "hi": "कोशिका भित्ति पचाना"
+          },
+          "reason": {
+            "en": "That is an enzyme-mediated isolation function.",
+            "hi": "यह एंजाइम द्वारा पृथक्करण का कार्य है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Staining a gel band",
+            "hi": "जैल पट्टी रँगना"
+          },
+          "reason": {
+            "en": "ori is a DNA region, not a stain.",
+            "hi": "ori DNA क्षेत्र है, अभिरंजक नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "DNA generally migrates towards which electrode in a gel?",
+        "hi": "जैल में DNA सामान्यतः किस इलेक्ट्रोड की ओर जाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Positive anode",
+            "hi": "धनात्मक एनोड"
+          },
+          "reason": {
+            "en": "Its phosphate backbone is negatively charged.",
+            "hi": "इसकी फॉस्फेट रीढ़ ऋणात्मक आवेशित है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Negative cathode",
+            "hi": "ऋणात्मक कैथोड"
+          },
+          "reason": {
+            "en": "Negative DNA is attracted towards the positive side.",
+            "hi": "ऋणात्मक DNA धनात्मक पक्ष की ओर आकर्षित होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Neither, because DNA has no charge",
+            "hi": "किसी की ओर नहीं, क्योंकि DNA अनावेशित है"
+          },
+          "reason": {
+            "en": "DNA carries phosphate-associated negative charge.",
+            "hi": "DNA में फॉस्फेट से जुड़ा ऋणात्मक आवेश है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Whichever electrode is nearer",
+            "hi": "जो इलेक्ट्रोड अधिक पास हो"
+          },
+          "reason": {
+            "en": "Charge and polarity determine direction, not proximity.",
+            "hi": "आवेश और ध्रुवता दिशा तय करते हैं, केवल निकटता नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which PCR step pairs primers with target sequences?",
+        "hi": "PCR का कौन-सा चरण प्राइमर को लक्ष्य अनुक्रम से जोड़ता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Annealing",
+            "hi": "अनीलन"
+          },
+          "reason": {
+            "en": "Primers base-pair with complementary sequences.",
+            "hi": "प्राइमर पूरक अनुक्रमों से क्षार युग्मन करते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Denaturation",
+            "hi": "विकृतीकरण"
+          },
+          "reason": {
+            "en": "This separates the template strands.",
+            "hi": "यह साँचा रज्जुकों को अलग करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Protein translation",
+            "hi": "प्रोटीन अनुवादन"
+          },
+          "reason": {
+            "en": "PCR amplifies DNA, not protein.",
+            "hi": "PCR DNA बढ़ाता है, प्रोटीन नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Downstream purification",
+            "hi": "अनुप्रवाह शुद्धीकरण"
+          },
+          "reason": {
+            "en": "That is a product-processing stage.",
+            "hi": "यह उत्पाद प्रसंस्करण का चरण है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "One ideal starting DNA molecule after 5 doubling cycles gives:",
+        "hi": "1 आरंभिक DNA अणु 5 आदर्श दुगुने चक्र बाद देता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "32 copies",
+            "hi": "32 प्रतियाँ"
+          },
+          "reason": {
+            "en": "2⁵=32 under ideal doubling.",
+            "hi": "आदर्श दुगुने में 2⁵=32।"
+          }
+        },
+        {
+          "text": {
+            "en": "5 copies",
+            "hi": "5 प्रतियाँ"
+          },
+          "reason": {
+            "en": "Cycles are not simply added to starting copies.",
+            "hi": "चक्रों को आरंभिक प्रतियों में सीधे नहीं जोड़ते।"
+          }
+        },
+        {
+          "text": {
+            "en": "10 copies",
+            "hi": "10 प्रतियाँ"
+          },
+          "reason": {
+            "en": "Doubling occurs each cycle, not just once.",
+            "hi": "दुगुना हर चक्र में होता है, केवल 1 बार नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "25 copies",
+            "hi": "25 प्रतियाँ"
+          },
+          "reason": {
+            "en": "The law is 2^n, not n².",
+            "hi": "संबंध 2^n है, n² नहीं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Why is Taq polymerase useful in PCR?",
+        "hi": "PCR में Taq पॉलीमरेज उपयोगी क्यों है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It is thermostable",
+            "hi": "यह ताप स्थिर है"
+          },
+          "reason": {
+            "en": "It tolerates repeated high-temperature cycling.",
+            "hi": "यह बार-बार ऊँचे ताप वाले चक्र सह सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It is a restriction enzyme",
+            "hi": "यह प्रतिबंध एंजाइम है"
+          },
+          "reason": {
+            "en": "It extends DNA rather than recognising restriction cuts.",
+            "hi": "यह DNA विस्तार करता है, प्रतिबंध कट नहीं पहचानता।"
+          }
+        },
+        {
+          "text": {
+            "en": "It translates RNA into protein",
+            "hi": "यह RNA से प्रोटीन बनाता है"
+          },
+          "reason": {
+            "en": "Polymerase synthesises DNA here.",
+            "hi": "यहाँ पॉलीमरेज DNA बनाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "It forms a cell membrane",
+            "hi": "यह कोशिका झिल्ली बनाता है"
+          },
+          "reason": {
+            "en": "That is not its enzymatic function.",
+            "hi": "यह इसका एंजाइमी कार्य नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "What does a selectable marker chiefly help identify?",
+        "hi": "चयन योग्य चिह्नक मुख्यतः किस पहचान में सहायक है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Cells carrying a relevant marker",
+            "hi": "संबंधित चिह्नक रखने वाली कोशिकाएँ"
+          },
+          "reason": {
+            "en": "Selection distinguishes them under appropriate conditions.",
+            "hi": "उपयुक्त दशाओं में चयन इन्हें अलग करता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every correctly folded product without testing",
+            "hi": "हर सही वलित उत्पाद बिना जाँच"
+          },
+          "reason": {
+            "en": "Marker survival does not prove protein folding.",
+            "hi": "चिह्नक से बचना प्रोटीन वलन साबित नहीं करता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the smallest DNA fragments",
+            "hi": "केवल सबसे छोटे DNA खंड"
+          },
+          "reason": {
+            "en": "Gel separation addresses fragment sizes.",
+            "hi": "जैल पृथक्करण खंड आकार से जुड़ा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The amount of dissolved oxygen automatically",
+            "hi": "घुलित ऑक्सीजन की मात्रा स्वतः"
+          },
+          "reason": {
+            "en": "The marker is not an oxygen meter.",
+            "hi": "चिह्नक ऑक्सीजन मापक नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which statement about sticky ends is correct?",
+        "hi": "चिपचिपे सिरों पर सही कथन कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Compatible overhangs can base-pair",
+            "hi": "संगत बाहर निकले भाग क्षार युग्मन कर सकते हैं"
+          },
+          "reason": {
+            "en": "Complementarity helps align DNA ends.",
+            "hi": "पूरकता DNA सिरे पास लाने में सहायक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every restriction enzyme makes identical ends",
+            "hi": "हर प्रतिबंध एंजाइम समान सिरे बनाता है"
+          },
+          "reason": {
+            "en": "Recognition and cut patterns differ.",
+            "hi": "पहचान और कट के ढंग अलग होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Base pairing alone seals every backbone bond",
+            "hi": "केवल क्षार युग्मन हर रीढ़ बंध पूरा करता है"
+          },
+          "reason": {
+            "en": "Ligase is needed to seal suitable phosphodiester bonds.",
+            "hi": "उपयुक्त फॉस्फोडाइएस्टर बंध पूरा करने में लाइगेज चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "They are amino-acid chains",
+            "hi": "वे अमीनो अम्ल श्रृंखलाएँ हैं"
+          },
+          "reason": {
+            "en": "They are DNA strand overhangs.",
+            "hi": "वे DNA रज्जुक के बाहर निकले भाग हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Which operation is downstream processing?",
+        "hi": "अनुप्रवाह प्रसंस्करण कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Product separation and purification",
+            "hi": "उत्पाद पृथक्करण और शुद्धीकरण"
+          },
+          "reason": {
+            "en": "These follow production.",
+            "hi": "ये उत्पादन के बाद होते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the first DNA cut",
+            "hi": "केवल पहला DNA कट"
+          },
+          "reason": {
+            "en": "Cutting is an earlier molecular step.",
+            "hi": "काटना पहले का आणविक चरण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only seed germination",
+            "hi": "केवल बीज अंकुरण"
+          },
+          "reason": {
+            "en": "That is not the described product-processing stage.",
+            "hi": "यह वर्णित उत्पाद प्रसंस्करण चरण नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only identifying a chromosome number",
+            "hi": "केवल गुणसूत्र संख्या पहचानना"
+          },
+          "reason": {
+            "en": "That is a different biological analysis.",
+            "hi": "यह अलग जैविक विश्लेषण है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A DNA palindrome is compared by reading:",
+        "hi": "DNA पैलिन्ड्रोम की तुलना किस तरह पढ़कर करते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Both strands 5′→3′",
+            "hi": "दोनों रज्जुक 5′→3′"
+          },
+          "reason": {
+            "en": "The directed sequences match.",
+            "hi": "दिशात्मक अनुक्रम मिलते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Both rows only left-to-right regardless of ends",
+            "hi": "सिरे देखे बिना दोनों पंक्तियाँ केवल बाएँ से दाएँ"
+          },
+          "reason": {
+            "en": "The strands are antiparallel, so direction labels matter.",
+            "hi": "रज्जुक प्रतिसमांतर हैं, इसलिए दिशाएँ महत्त्वपूर्ण हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only amino acids",
+            "hi": "केवल अमीनो अम्ल"
+          },
+          "reason": {
+            "en": "The recognition site is DNA sequence.",
+            "hi": "पहचान स्थल DNA अनुक्रम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only the count of hydrogen atoms",
+            "hi": "केवल हाइड्रोजन परमाणुओं की गिनती"
+          },
+          "reason": {
+            "en": "That does not define the sequence palindrome.",
+            "hi": "इससे अनुक्रम पैलिन्ड्रोम परिभाषित नहीं होता।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "State three important cloning-vector features and their roles.",
+        "hi": "क्लोनिंग संवाहक के 3 महत्वपूर्ण लक्षण और कार्य लिखें।"
+      },
+      "answer": {
+        "en": "Ori supports replication; a selectable marker identifies cells carrying it; suitable cloning sites permit insertion of foreign DNA.",
+        "hi": "ori प्रतिकृति में सहायक है; चयन योग्य चिह्नक उसे रखने वाली कोशिकाओं की पहचान करता है; उपयुक्त क्लोनिंग स्थल विदेशी DNA जोड़ने देते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Distinguish restriction endonuclease and ligase.",
+        "hi": "प्रतिबंध एंडोन्यूक्लिएज और लाइगेज में अंतर करें।"
+      },
+      "answer": {
+        "en": "Restriction endonuclease recognises particular DNA sites and cuts; ligase joins suitable DNA backbone ends by phosphodiester bonds.",
+        "hi": "प्रतिबंध एंडोन्यूक्लिएज विशेष DNA स्थल पहचानकर काटता है; लाइगेज उपयुक्त DNA रीढ़ सिरे फॉस्फोडाइएस्टर बंध से जोड़ता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Describe the three broad PCR stages.",
+        "hi": "PCR के 3 मुख्य चरण बताएँ।"
+      },
+      "answer": {
+        "en": "Denaturation separates strands, annealing pairs primers with targets, and polymerase extension synthesises new strands. Repeated cycles amplify the selected region.",
+        "hi": "विकृतीकरण रज्जुक अलग करता है, अनीलन में प्राइमर लक्ष्य से जुड़ते हैं और पॉलीमरेज विस्तार नए रज्जुक बनाता है। दोहराए चक्र चुना क्षेत्र बढ़ाते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why do smaller comparable DNA fragments usually travel farther in a gel?",
+        "hi": "तुलनीय छोटे DNA खंड जैल में सामान्यतः अधिक दूर क्यों जाते हैं?"
+      },
+      "answer": {
+        "en": "The gel acts as a molecular sieve; smaller linear fragments pass through with less obstruction under the same conditions.",
+        "hi": "जैल आण्विक छलनी है; समान दशाओं में छोटे रैखिक खंड कम बाधा से आगे जाते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is selection not final proof of the desired recombinant?",
+        "hi": "चयन इच्छित पुनर्योगज का अंतिम प्रमाण क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "A non-recombinant vector may also carry the selection marker. Further screening must establish the intended insert, and expression or function needs additional evidence.",
+        "hi": "बिना insert वाला संवाहक भी चयन चिह्नक रख सकता है। आगे जाँच से इच्छित insert सिद्ध करना है; अभिव्यक्ति या कार्य के लिए अतिरिक्त प्रमाण चाहिए।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain why production and downstream processing are distinct.",
+        "hi": "उत्पादन और अनुप्रवाह प्रसंस्करण अलग क्यों हैं?"
+      },
+      "answer": {
+        "en": "Production generates material in a biological system; downstream processing separates, purifies and prepares the product while checking identity, function and quality.",
+        "hi": "उत्पादन जैविक तंत्र में पदार्थ बनाता है; अनुप्रवाह प्रसंस्करण उत्पाद अलग, शुद्ध और तैयार करता है तथा पहचान, कार्य और गुणवत्ता जाँचता है।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "Restriction enzymes cut; ligase joins compatible DNA.",
+      "hi": "प्रतिबंध एंजाइम काटते हैं; लाइगेज संगत DNA जोड़ता है।"
+    },
+    {
+      "en": "Vectors need replication and selection features.",
+      "hi": "संवाहक में प्रतिकृति और चयन लक्षण चाहिए।"
+    },
+    {
+      "en": "PCR amplifies selected DNA, ideally by repeated doubling.",
+      "hi": "PCR चुना DNA बढ़ाता है, आदर्शतः बार-बार दुगुना करके।"
+    },
+    {
+      "en": "Selection, insert identity and product function are separate claims.",
+      "hi": "चयन, insert पहचान और उत्पाद कार्य अलग दावे हैं।"
+    },
+    {
+      "en": "Downstream processing and quality checks follow production.",
+      "hi": "उत्पादन के बाद अनुप्रवाह प्रसंस्करण और गुणवत्ता जाँच होती है।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not assume every resistant colony is the intended recombinant or every PCR cycle doubles perfectly in practice.",
+    "hi": "हर प्रतिरोधी कॉलोनी को इच्छित पुनर्योगज और हर वास्तविक PCR चक्र को पूर्ण दुगुना न मानें।"
+  },
+  "goal": {
+    "en": "Follow a gene from identification and cloning to controlled production and verified product.",
+    "hi": "जीन की पहचान और क्लोनिंग से नियंत्रित उत्पादन तथा प्रमाणित उत्पाद तक की श्रृंखला समझें।"
+  },
+  "conceptMap": "DNA पहचान → काटना और जोड़ना → संवाहक और पोषक → चयन → अभिव्यक्ति → शुद्धीकरण",
+  "conceptMapEn": "DNA identification → cutting and ligation → vector and host → selection → expression → purification",
+  "editionBasis": {
+    "en": "Original study explanations for the current NCERT Class 12 Biology sequence and UP Board 2026–27; use the prescribed textbook and school practicals too.",
+    "hi": "वर्तमान NCERT कक्षा 12 जीव विज्ञान क्रम और यूपी बोर्ड 2026–27 के लिए मौलिक अध्ययन व्याख्याएँ; निर्धारित पाठ्यपुस्तक और विद्यालयी प्रयोग भी साथ करें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Biology XII Chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/lebo109.pdf"
+    },
+    {
+      "title": "UPMSP Biology Class 12 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class12/153-Biology-Class-12.pdf"
+    }
+  ]
+}

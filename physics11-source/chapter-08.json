@@ -1,0 +1,1415 @@
+{
+  "number": 8,
+  "id": "physics11-08",
+  "title": {
+    "en": "Mechanical Properties of Solids",
+    "hi": "ठोसों के यांत्रिक गुण"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-08-1",
+      "title": {
+        "en": "Stress and strain",
+        "hi": "प्रतिबल और विकृति"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 21
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Force",
+            "hi": "बल"
+          },
+          "min": 100,
+          "max": 1000,
+          "step": 100,
+          "initial": 500,
+          "unit": "N"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Compare force, stress and strain for a fixed wire.",
+        "hi": "नियत तार में बल, प्रतिबल और विकृति अनुपात की तुलना करें।"
+      },
+      "observe": {
+        "en": "Force changes; A=1 mm², L=2 m and Y=2 × 10¹¹ Pa stay fixed.",
+        "hi": "बल बदलता है; A=1 mm², L=2 m और Y=2 × 10¹¹ Pa नियत हैं।"
+      },
+      "modelNote": {
+        "en": "Extension is visually exaggerated; all settings use a linear elastic material.",
+        "hi": "प्रसार चित्र में बढ़ाया है; सभी मान रैखिक प्रत्यास्थ पदार्थ के हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Stress F/A and strain F/(AY) both rise linearly with force.",
+          "hi": "प्रतिबल F/A और विकृति अनुपात F/(AY) दोनों बल के साथ रैखिक बढ़ते हैं।"
+        }
+      },
+      "realLife": {
+        "en": "A loaded suspension wire stretches slightly.",
+        "hi": "भार वाला लटकता तार थोड़ा खिंचता है।"
+      },
+      "quick": {
+        "question": {
+          "en": "Doubling force in this model does what to strain?",
+          "hi": "इस मॉडल में बल दोगुना करने पर विकृति अनुपात?"
+        },
+        "options": [
+          {
+            "en": "Doubles",
+            "hi": "दोगुना"
+          },
+          {
+            "en": "Halves",
+            "hi": "आधा"
+          },
+          {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Stress F/A and strain F/(AY) both rise linearly with force.",
+          "hi": "प्रतिबल F/A और विकृति अनुपात F/(AY) दोनों बल के साथ रैखिक बढ़ते हैं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-08-1-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 100
+          }
+        },
+        {
+          "id": "phy11-08-1-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 1000
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 550.0
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 550.0
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-08-2",
+      "title": {
+        "en": "Stretching a wire",
+        "hi": "तार का प्रसार"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 22
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Cross-sectional area",
+            "hi": "अनुप्रस्थ क्षेत्रफल"
+          },
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "initial": 2,
+          "unit": "mm²"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "See why a thicker wire stretches less.",
+        "hi": "मोटा तार कम क्यों खिंचता है, देखें।"
+      },
+      "observe": {
+        "en": "Area changes at F=500 N, L=2 m, Y=2 × 10¹¹ Pa.",
+        "hi": "F=500 N, L=2 m, Y=2 × 10¹¹ Pa पर क्षेत्रफल बदलता है।"
+      },
+      "modelNote": {
+        "en": "A uniform straight wire is assumed; thickness and extension are schematic.",
+        "hi": "समान सीधा तार माना है; मोटाई और प्रसार सांकेतिक हैं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "ΔL=FL/(AY), so increasing area reduces extension.",
+          "hi": "ΔL=FL/(AY), इसलिए क्षेत्रफल बढ़ाने से प्रसार घटता है।"
+        }
+      },
+      "realLife": {
+        "en": "Thicker load-bearing cables reduce stress for the same force.",
+        "hi": "मोटे भार-सहायक केबल समान बल में प्रतिबल घटाते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "Doubling area changes extension to:",
+          "hi": "क्षेत्रफल दोगुना हो तो प्रसार:"
+        },
+        "options": [
+          {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          {
+            "en": "Double",
+            "hi": "दोगुना"
+          },
+          {
+            "en": "Four times",
+            "hi": "4 गुना"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "ΔL=FL/(AY), so increasing area reduces extension.",
+          "hi": "ΔL=FL/(AY), इसलिए क्षेत्रफल बढ़ाने से प्रसार घटता है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-08-2-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-08-2-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 5
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 3.0
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-08-3",
+      "title": {
+        "en": "Bulk compression",
+        "hi": "आयतन संपीड़न"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 23
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Pressure increase",
+            "hi": "दाब वृद्धि"
+          },
+          "min": 10,
+          "max": 100,
+          "step": 10,
+          "initial": 50,
+          "unit": "MPa"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Relate pressure rise to volume compression.",
+        "hi": "दाब वृद्धि को आयतन संपीड़न से जोड़ें।"
+      },
+      "observe": {
+        "en": "Pressure changes while B=2 × 10⁹ Pa is held fixed.",
+        "hi": "B=2 × 10⁹ Pa नियत रखते हुए दाब बदलें।"
+      },
+      "modelNote": {
+        "en": "Small-strain bulk model; the drawn volume change is exaggerated.",
+        "hi": "छोटी विकृति का आयतनी मॉडल; चित्र में परिवर्तन बढ़ाया है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "ΔV/V=−Δp/B; a positive pressure rise reduces volume.",
+          "hi": "ΔV/V=−Δp/B; धनात्मक दाब वृद्धि आयतन घटाती है।"
+        }
+      },
+      "realLife": {
+        "en": "Liquids in hydraulic systems are slightly compressible.",
+        "hi": "द्रवचालित प्रणालियों के द्रव थोड़े संपीड्य हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "A positive pressure rise gives which signed volume change?",
+          "hi": "धनात्मक दाब वृद्धि में चिह्न सहित आयतन परिवर्तन?"
+        },
+        "options": [
+          {
+            "en": "Negative",
+            "hi": "ऋणात्मक"
+          },
+          {
+            "en": "Positive",
+            "hi": "धनात्मक"
+          },
+          {
+            "en": "Always zero",
+            "hi": "हमेशा शून्य"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "ΔV/V=−Δp/B; a positive pressure rise reduces volume.",
+          "hi": "ΔV/V=−Δp/B; धनात्मक दाब वृद्धि आयतन घटाती है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-08-3-low",
+          "label": {
+            "en": "Explore the minimum setting.",
+            "hi": "न्यूनतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 10
+          }
+        },
+        {
+          "id": "phy11-08-3-high",
+          "label": {
+            "en": "Explore the maximum setting.",
+            "hi": "अधिकतम मान पर संबंध देखें।"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 100
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 55.0
+          },
+          "text": {
+            "en": "Compare this lower setting with the displayed formula and units.",
+            "hi": "इस छोटे मान की तुलना दिखाई गई गणना और मात्रकों से करें।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 55.0
+          },
+          "text": {
+            "en": "Compare this higher setting with the same fixed quantities.",
+            "hi": "इस बड़े मान की तुलना उन्हीं नियत राशियों के साथ करें।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#edc16b",
+          "label": {
+            "en": "Applied control or moving marker",
+            "hi": "लगाया नियंत्रण या गतिशील चिह्न"
+          }
+        },
+        {
+          "color": "#a5dfa5",
+          "label": {
+            "en": "Material or reference system",
+            "hi": "पदार्थ या संदर्भ निकाय"
+          }
+        }
+      ]
+    }
+  ],
+  "editionBasis": {
+    "en": "Original Class 11 Physics study companion aligned to NCERT and UP Board 2026–27. Models explain idealised relationships, not measured laboratory data.",
+    "hi": "NCERT और यूपी बोर्ड 2026–27 पर आधारित कक्षा 11 भौतिकी की मौलिक अध्ययन सामग्री। मॉडल आदर्श संबंध समझाते हैं, प्रयोगशाला के मापे आँकड़े नहीं हैं।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part II, Chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keph201.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ],
+  "goal": {
+    "en": "Relate deformation to stress, strain, elastic moduli and stored energy while checking the limits of each model.",
+    "hi": "विकृति को प्रतिबल, विकृति अनुपात, प्रत्यास्थता गुणांकों और संचित ऊर्जा से जोड़ें तथा हर मॉडल की सीमा जाँचें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "Elasticity and deformation",
+        "hi": "प्रत्यास्थता और विरूपण"
+      },
+      "paragraphs": [
+        {
+          "en": "A solid seems rigid because its particles remain near stable relative positions, but an applied force can change its shape or size. Elasticity is the tendency to regain the original configuration when the deforming force is removed. The restoring force comes from changes in interparticle separations and orientations. It is not a new external force acting on the whole body. Stretch a spring gently, release it, and compare its length before and after loading. If the original length returns, that trial lies in the elastic regime. A permanent change is plastic deformation. The same object may behave elastically for small loading and plastically or fracture under larger loading. Therefore elasticity is a statement about a material under specified conditions, not a promise that any load is safe. Temperature, loading rate and previous treatment can change the response. Steel is often described as more elastic than rubber because a greater stress is required for the same small strain; that comparison uses elastic modulus rather than maximum visible stretch.",
+          "hi": "ठोस के कण अपनी स्थिर सापेक्ष स्थितियों के पास रहते हैं, इसलिए वह कठोर दिखाई देता है। फिर भी बाहरी बल उसकी आकृति या आकार बदल सकता है। विरूपक बल हटाने पर मूल अवस्था में लौटने की प्रवृत्ति प्रत्यास्थता (Elasticity) है। कणों की दूरी और व्यवस्था बदलने पर उनके बीच पुनःस्थापन प्रभाव पैदा होता है। यह पूरे पिंड पर अलग से लगा नया बाहरी बल नहीं है। किसी कमानी को थोड़ा खींचकर छोड़ें और पहले तथा बाद की लंबाई की तुलना करें। मूल लंबाई लौट आए तो वह परीक्षण प्रत्यास्थ क्षेत्र में था। बल हटाने पर भी परिवर्तन बचा रहे तो सुघट्य विरूपण (Plastic deformation) हुआ है। एक ही वस्तु छोटे भार पर प्रत्यास्थ रह सकती है, जबकि अधिक भार पर स्थायी रूप से बदल या टूट सकती है। इसलिए केवल पदार्थ का नाम सुनकर हर भार को सुरक्षित नहीं मान सकते। ताप, भार लगाने की गति और पिछले उपचार से व्यवहार बदलता है। इस्पात को रबड़ से अधिक प्रत्यास्थ कहना छोटे समान विकृति अनुपात के लिए अधिक प्रतिबल की आवश्यकता से संबंधित है। इसका अर्थ यह नहीं कि इस्पात अधिक दूरी तक खिंचता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why can the same wire show elastic and plastic behaviour?",
+          "hi": "एक ही तार प्रत्यास्थ और सुघट्य व्यवहार कैसे दिखा सकता है?"
+        },
+        "answer": {
+          "en": "Its response depends on the applied loading range; small deformation may recover while excessive loading leaves permanent strain.",
+          "hi": "व्यवहार भार के परास पर निर्भर है; छोटा विरूपण लौट सकता है, अधिक भार स्थायी विकृति छोड़ सकता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Stress: force distributed over area",
+        "hi": "प्रतिबल: क्षेत्रफल पर वितरित बल"
+      },
+      "paragraphs": [
+        {
+          "en": "Stress describes the internal restoring force per unit area associated with a deformation. In a uniform tensile experiment its magnitude equals the applied axial force divided by the original cross-sectional area: stress = F/A. Its SI unit is N/m², called pascal, and its dimensions are [M L⁻¹ T⁻²]. A force alone does not describe the severity of loading: the same force creates a larger stress in a thinner wire. Longitudinal stress acts normal to a section and changes length; tensile loading stretches while compressive loading shortens. Tangential or shearing stress acts parallel to a surface and changes shape. Bulk or hydraulic stress applies pressure from all directions and mainly changes volume. The elementary formulas assume an approximately uniform stress distribution. Near holes, sharp corners or damaged sections, local stresses can be much larger than the average. Always convert area before division: 1 mm² equals 10⁻⁶ m², not 10⁻³ m². The numerical unit of pressure and stress is the same, but their physical descriptions need not be identical.",
+          "hi": "प्रतिबल (Stress) विरूपण से संबंधित आंतरिक पुनःस्थापन बल का प्रति इकाई क्षेत्रफल मान है। समान खिंचाव वाले तार में इसका परिमाण लगाए गए अक्षीय बल को मूल अनुप्रस्थ क्षेत्रफल से भाग देने पर मिलता है: प्रतिबल = F/A। इसका SI मात्रक N/m² अर्थात पास्कल (Pascal) और विमा [M L⁻¹ T⁻²] है। केवल बल का मान भार की तीव्रता नहीं बताता। एक ही बल पतले तार में अधिक प्रतिबल उत्पन्न करता है। अनुदैर्ध्य प्रतिबल अनुप्रस्थ काट पर लंबवत लगता है और लंबाई बदलता है। तनन से लंबाई बढ़ती तथा संपीड़न से घटती है। अपरूपण प्रतिबल (Shearing stress) सतह के समानांतर होता है और आकृति बदलता है। सभी दिशाओं से लगाया दाब मुख्यतः आयतन बदलता है; इसे आयतनी या द्रवस्थैतिक प्रतिबल से जोड़ते हैं। सरल सूत्र लगभग समान प्रतिबल वितरण मानते हैं। छेद, नुकीले कोने और क्षतिग्रस्त भाग में स्थानीय प्रतिबल औसत से अधिक हो सकता है। क्षेत्रफल का मात्रक पहले बदलें: 1 mm² = 10⁻⁶ m² होता है, 10⁻³ m² नहीं। दाब और प्रतिबल का मात्रक समान होने पर भी उनका भौतिक वर्णन हर स्थिति में एक जैसा नहीं है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What happens to tensile stress if area is doubled at fixed force?",
+          "hi": "नियत बल पर क्षेत्रफल दोगुना हो तो तनन प्रतिबल क्या होगा?"
+        },
+        "answer": {
+          "en": "It becomes half because stress is F/A.",
+          "hi": "प्रतिबल F/A है, इसलिए आधा होगा।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Strain and its three forms",
+        "hi": "विकृति अनुपात और उसके प्रकार"
+      },
+      "paragraphs": [
+        {
+          "en": "Strain measures deformation relative to the original dimensions, so it is dimensionless. Longitudinal strain is ΔL/L, where L is the original length and ΔL is the extension or compression. A 1 mm extension has different significance for a 1 m wire and a 10 m wire; dividing by original length makes the comparison meaningful. Volume strain is ΔV/V. Under compression ΔV is negative if signed changes are used. Shearing strain is the relative sideways displacement divided by the separation of the relevant faces, approximately equal to the small shear angle in radians. A radian is a ratio of lengths, which explains why this strain also has no physical dimension. Do not confuse strain with extension, which has a length unit. A measured strain of 0.002 means a fractional change of 0.002 or 0.2%, not a change of 0.002 m in every specimen. The small-deformation formulas use the original dimensions; large deformation requires more careful definitions and is outside this introductory model.",
+          "hi": "विकृति अनुपात (Strain) मूल माप की तुलना में सापेक्ष परिवर्तन बताता है, इसलिए यह विमाहीन है। अनुदैर्ध्य विकृति अनुपात ΔL/L है। यहाँ L मूल लंबाई और ΔL लंबाई का परिवर्तन है। 1 m और 10 m लंबे तार में समान 1 mm प्रसार का प्रभाव बराबर नहीं माना जाएगा। मूल लंबाई से भाग देने पर उपयोगी तुलना मिलती है। आयतनी विकृति अनुपात ΔV/V है। चिह्न सहित परिवर्तन लिखने पर संपीड़न में ΔV ऋणात्मक होता है। अपरूपण विकृति अनुपात किसी फलक के पार्श्व विस्थापन और संबंधित फलकों की दूरी का अनुपात है। छोटे कोण के लिए यह रेडियन में अपरूपण कोण के लगभग बराबर होता है। रेडियन स्वयं लंबाइयों का अनुपात है, इसलिए इसकी भी भौतिक विमा नहीं होती। विकृति अनुपात और प्रसार में अंतर रखें; प्रसार का मात्रक लंबाई है। विकृति अनुपात 0.002 का अर्थ 0.002 आंशिक या 0.2% परिवर्तन है, हर नमूने में 0.002 m परिवर्तन नहीं। छोटे विरूपण के सूत्र मूल मापों का उपयोग करते हैं। बड़े विरूपण में परिभाषा और विश्लेषण अधिक सावधानी से करना पड़ता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Is a strain of 0.01 equal to an extension of 0.01 m?",
+          "hi": "क्या विकृति अनुपात 0.01 का अर्थ प्रसार 0.01 m है?"
+        },
+        "answer": {
+          "en": "No. Extension is 0.01 times the original length.",
+          "hi": "नहीं। प्रसार मूल लंबाई का 0.01 गुना है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Hooke’s law and Young’s modulus",
+        "hi": "हुक का नियम और यंग गुणांक"
+      },
+      "paragraphs": [
+        {
+          "en": "Within the proportional limit, stress is proportional to strain. The proportionality constant depends on the kind of deformation and on the material. For longitudinal deformation, Young’s modulus is Y = (F/A)/(ΔL/L), giving ΔL = FL/(AY). A larger Y means a smaller strain for a specified stress. Young’s modulus has the same unit and dimensions as stress because strain is dimensionless. For a given wire in this regime, doubling force doubles extension, doubling original length doubles extension, and doubling area halves extension. Changing a wire’s geometry does not change the material’s Young’s modulus at fixed conditions. The wire behaves like a spring with effective force constant k = AY/L. That relation explains why two wires of the same material may have different stiffness. Keep Hooke’s law for a spring, F = kx, distinct from the material relation stress = Y × strain. Both are linear approximations, and neither should be extrapolated beyond the appropriate small-deformation range without experimental evidence.",
+          "hi": "समानुपाती सीमा के भीतर प्रतिबल विकृति अनुपात के समानुपाती होता है। यही हुक का नियम (Hooke’s law) है। समानुपात नियतांक पदार्थ और विरूपण के प्रकार पर निर्भर करता है। अनुदैर्ध्य विरूपण के लिए यंग गुणांक (Young’s modulus) Y = (F/A)/(ΔL/L) है। इससे ΔL = FL/(AY) मिलता है। किसी निश्चित प्रतिबल पर अधिक Y वाला पदार्थ कम विकृत होता है। विकृति अनुपात विमाहीन होने से Y का मात्रक तथा विमा प्रतिबल के समान हैं। इस क्षेत्र में किसी तार पर बल दोगुना करने से प्रसार दोगुना, मूल लंबाई दोगुनी करने से प्रसार दोगुना और क्षेत्रफल दोगुना करने से प्रसार आधा होता है। तार की ज्यामिति बदलने से समान दशाओं में पदार्थ का यंग गुणांक नहीं बदलता। तार का प्रभावी कमानी नियतांक k = AY/L है। इसलिए समान पदार्थ के अलग लंबाई या मोटाई वाले तारों की कठोरता अलग हो सकती है। कमानी का F = kx संबंध और पदार्थ का प्रतिबल = Y × विकृति अनुपात संबंध अलग रूप हैं। दोनों रैखिक सन्निकटन हैं; प्रमाण के बिना इन्हें बड़े विरूपण तक लागू नहीं करना चाहिए।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which wire stretches more: equal material and length but half the area?",
+          "hi": "समान पदार्थ और लंबाई में आधे क्षेत्रफल वाला तार कितना खिंचेगा?"
+        },
+        "answer": {
+          "en": "At the same force its extension is doubled, within the linear range.",
+          "hi": "समान बल और रैखिक क्षेत्र में उसका प्रसार दोगुना होगा।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Reading a stress–strain curve",
+        "hi": "प्रतिबल–विकृति वक्र पढ़ना"
+      },
+      "paragraphs": [
+        {
+          "en": "A stress–strain graph records the material’s response as loading increases. In the initial straight part the slope gives Young’s modulus when stress is plotted vertically against longitudinal strain horizontally. The proportional limit marks the end of direct proportionality; the elastic limit concerns recovery after unloading. These ideas are related but not identical. Beyond the elastic region, unloading can leave a permanent set. Ductile materials can undergo considerable plastic deformation before fracture, whereas brittle materials break after comparatively little plastic deformation. A high breaking stress does not automatically mean a high Young’s modulus: strength and stiffness describe different features. Nor does a large breaking extension mean that all earlier deformation will recover. Actual curves depend on the material and experimental conditions, so a schematic curve is not a universal numerical chart. In a school problem, identify which region the question uses before applying a formula. To estimate elastic energy density, use the area under the loading curve only with the stated assumptions; for the straight elastic region it is a triangle.",
+          "hi": "प्रतिबल–विकृति वक्र भार बढ़ाने पर पदार्थ की प्रतिक्रिया दिखाता है। यदि ऊर्ध्व अक्ष पर प्रतिबल और क्षैतिज अक्ष पर अनुदैर्ध्य विकृति अनुपात हो, तो प्रारंभिक सीधी रेखा की ढाल यंग गुणांक देती है। समानुपाती सीमा सीधी समानुपातिता का अंत बताती है। प्रत्यास्थ सीमा बल हटने के बाद मूल अवस्था लौटने से संबंधित है। दोनों विचार जुड़े हैं, पर एक ही परिभाषा नहीं हैं। प्रत्यास्थ क्षेत्र के आगे भार हटाने पर स्थायी विकृति बच सकती है। तन्य पदार्थ (Ductile material) टूटने से पहले काफी सुघट्य परिवर्तन सह सकता है, जबकि भंगुर पदार्थ (Brittle material) कम सुघट्य परिवर्तन के बाद टूट जाता है। अधिक भंजन प्रतिबल का अर्थ आवश्यक रूप से अधिक यंग गुणांक नहीं है। सामर्थ्य और कठोरता पदार्थ की अलग विशेषताएँ हैं। इसी प्रकार अधिक भंजन प्रसार का अर्थ यह नहीं कि उससे पहले का पूरा प्रसार लौट आएगा। वास्तविक वक्र पदार्थ और प्रयोग की दशाओं पर निर्भर है; सांकेतिक वक्र सब पदार्थों के लिए संख्यात्मक तालिका नहीं है। पहले क्षेत्र पहचानें, फिर सूत्र चुनें। रैखिक प्रत्यास्थ भाग में ऊर्जा घनत्व वक्र के नीचे त्रिभुज के क्षेत्रफल से मिलता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does high stiffness necessarily mean high breaking strength?",
+          "hi": "क्या अधिक कठोरता का अर्थ हमेशा अधिक भंजन सामर्थ्य है?"
+        },
+        "answer": {
+          "en": "No. Modulus measures elastic slope, while breaking strength concerns failure stress.",
+          "hi": "नहीं। गुणांक प्रत्यास्थ ढाल बताता है, भंजन सामर्थ्य टूटने का प्रतिबल।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Bulk and shear moduli",
+        "hi": "आयतन और अपरूपण गुणांक"
+      },
+      "paragraphs": [
+        {
+          "en": "A uniform pressure increase tends to reduce volume. The bulk modulus is B = −Δp/(ΔV/V); the minus sign makes B positive because a positive pressure increase produces a negative volume change. Compressibility is 1/B. A large B means a small fractional volume reduction for a given pressure increase. Liquids resist volume compression strongly even though they flow under sustained shear, so rigidity and resistance to compression are different ideas. The shear modulus G is shearing stress divided by shearing strain in the linear regime. A solid may maintain a static shearing stress, while an ordinary fluid at rest cannot. When using formulas, separate the surface force direction from the deformation that is measured. A pressure may have the same SI unit as a longitudinal stress, but the corresponding modulus is selected by the strain type. Moduli generally depend on temperature and material structure. School numerical values are approximate properties at stated or assumed conditions, not exact constants valid for every temperature or pressure.",
+          "hi": "सभी दिशाओं से समान दाब वृद्धि लगाने पर सामान्यतः आयतन घटता है। आयतन प्रत्यास्थता गुणांक (Bulk modulus) B = −Δp/(ΔV/V) है। धनात्मक दाब वृद्धि में ΔV ऋणात्मक होने से बाहर लगा ऋण चिह्न B को धनात्मक बनाता है। संपीड्यता (Compressibility) का मान 1/B है। अधिक B का अर्थ समान दाब वृद्धि पर कम आंशिक आयतन कमी है। द्रव बह सकता है, फिर भी आयतन संपीड़न का काफी विरोध कर सकता है। इसलिए आकार की दृढ़ता और संपीड़न का प्रतिरोध अलग विचार हैं। अपरूपण गुणांक (Shear modulus) G रैखिक क्षेत्र में अपरूपण प्रतिबल और अपरूपण विकृति अनुपात का अनुपात है। ठोस स्थिर अपरूपण प्रतिबल सह सकता है, लेकिन सामान्य विरामावस्था वाला तरल ऐसा नहीं कर सकता। सूत्र लगाते समय सतह पर बल की दिशा और मापे गए विरूपण को अलग पहचानें। दाब तथा अनुदैर्ध्य प्रतिबल का SI मात्रक समान है, लेकिन गुणांक का चुनाव संबंधित विकृति अनुपात से होगा। गुणांक ताप और पदार्थ की संरचना पर निर्भर हो सकते हैं। प्रश्न में दिए मान बताई या मानी गई दशाओं के लगभग गुण हैं, हर ताप और दाब के लिए अचल संख्याएँ नहीं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is there a minus sign in the bulk modulus formula?",
+          "hi": "आयतन गुणांक के सूत्र में ऋण चिह्न क्यों है?"
+        },
+        "answer": {
+          "en": "It accounts for negative volume change under positive pressure increase, giving a positive modulus.",
+          "hi": "धनात्मक दाब वृद्धि में आयतन परिवर्तन ऋणात्मक होता है; ऋण चिह्न गुणांक को धनात्मक रखता है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Poisson ratio and stored elastic energy",
+        "hi": "प्वासों अनुपात और संचित प्रत्यास्थ ऊर्जा"
+      },
+      "paragraphs": [
+        {
+          "en": "A stretched wire usually becomes slightly thinner. Poisson ratio is the magnitude of transverse strain divided by longitudinal strain in a simple uniaxial elastic experiment; with signed strains it is −transverse strain/longitudinal strain. It is dimensionless. The transverse change should not be confused with the axial extension. Work is required to build up the restoring force during gradual loading. For a linearly elastic wire loaded from zero to final force F and extension x, the average force is F/2 and stored energy is U = Fx/2. Equivalently U = YAx²/(2L), and energy per original volume is ½ × stress × strain. These expressions assume quasistatic loading without energy loss and a straight stress–strain relation. Using Fx instead of Fx/2 treats the final force as if it acted throughout the extension and doubles the energy incorrectly. On release, stored energy can become kinetic energy or other forms; a real material may dissipate some energy through internal friction and heating.",
+          "hi": "खींचे गए तार की मोटाई सामान्यतः थोड़ी घटती है। सरल एक-अक्षीय प्रत्यास्थ प्रयोग में प्वासों अनुपात (Poisson ratio) पार्श्व विकृति अनुपात के परिमाण और अनुदैर्ध्य विकृति अनुपात का अनुपात है। चिह्न सहित लिखने पर यह −पार्श्व विकृति अनुपात/अनुदैर्ध्य विकृति अनुपात होता है। यह विमाहीन राशि है। पार्श्व परिवर्तन को अक्षीय प्रसार नहीं समझना चाहिए। धीरे-धीरे भार बढ़ाने में पुनःस्थापन बल के विरुद्ध कार्य करना पड़ता है। रैखिक प्रत्यास्थ तार में बल शून्य से अंतिम F तक बढ़ता है और प्रसार x होता है। औसत बल F/2 होने से संचित ऊर्जा U = Fx/2 मिलती है। इसी को U = YAx²/(2L) तथा मूल आयतन पर ऊर्जा घनत्व = ½ × प्रतिबल × विकृति अनुपात लिख सकते हैं। ये संबंध लगभग स्थैतिक, हानिरहित भार लगाने और सीधी प्रतिबल–विकृति रेखा के लिए हैं। केवल Fx लिखने से अंतिम बल को पूरे प्रसार के दौरान नियत मान लिया जाता है और ऊर्जा दोगुनी गलत मिलती है। छोड़ने पर ऊर्जा गतिज या अन्य रूपों में बदल सकती है। वास्तविक पदार्थ में आंतरिक घर्षण और ऊष्मन से कुछ ऊर्जा का क्षय हो सकता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is elastic energy Fx/2 rather than Fx?",
+          "hi": "प्रत्यास्थ ऊर्जा Fx/2 क्यों है, Fx क्यों नहीं?"
+        },
+        "answer": {
+          "en": "The force rises linearly from zero, so its average during extension is F/2.",
+          "hi": "बल शून्य से रैखिक रूप में बढ़ता है, इसलिए प्रसार के दौरान औसत बल F/2 है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Applications and a reliable calculation method",
+        "hi": "अनुप्रयोग और सही गणना विधि"
+      },
+      "paragraphs": [
+        {
+          "en": "Elastic properties matter in bridges, cranes, springs and measuring instruments. A suspension wire must support its load without excessive extension or stress, and design uses safety margins because actual conditions differ from an ideal uniform test. Wider supports reduce average stress, while suitable cross-sectional shapes can resist bending efficiently without simply adding a solid block of material. This chapter’s axial formula alone cannot calculate every beam’s bending or buckling response. In a numerical problem, first sketch the load and identify original length, area and force. Convert millimetres, square millimetres and megapascals explicitly. Write the stress and strain separately before combining them into a modulus. Keep the sign convention clear for compression. Finally inspect dimensions and trend: an area increase should not increase extension at fixed load in the simple wire model. Report an appropriate number of significant figures, since material data are approximate. The screen simulation exaggerates tiny extensions so that the relationship can be seen; its illustrated geometry should never be measured with a ruler to infer an actual strain.",
+          "hi": "पुल, क्रेन, कमानी और मापक उपकरणों में प्रत्यास्थ गुण उपयोगी हैं। लटकाने वाला तार भार सहते समय बहुत अधिक न खिंचे और न उसकी सीमा से अधिक प्रतिबल हो। वास्तविक दशाएँ आदर्श समान तार से अलग होने के कारण अभिकल्पना में सुरक्षा अंतर रखा जाता है। चौड़ा सहारा औसत प्रतिबल घटाता है। उपयुक्त अनुप्रस्थ आकृति बिना बहुत पदार्थ जोड़ने के झुकाव का विरोध कर सकती है। इस अध्याय का अक्षीय प्रसार सूत्र अकेला हर धरन के झुकने या लंबे खंभे के मुड़ने की गणना नहीं करता। संख्यात्मक प्रश्न में पहले बल की दिशा का रेखाचित्र बनाएँ और मूल लंबाई, क्षेत्रफल तथा बल पहचानें। mm, mm² और MPa को स्पष्ट रूप से बदलें। प्रतिबल और विकृति अनुपात अलग लिखें, फिर गुणांक निकालें। संपीड़न के लिए चिह्न परंपरा साफ रखें। अंत में विमा और रुझान जाँचें: सरल तार मॉडल में नियत भार पर क्षेत्रफल बढ़ाने से प्रसार बढ़ना नहीं चाहिए। पदार्थ के दिए गुण लगभग होने के कारण उचित सार्थक अंक लिखें। स्क्रीन का चित्र छोटे प्रसार को बढ़ाकर दिखाता है। उसके आकार को पटरी से मापकर वास्तविक विकृति अनुपात निकालना सही नहीं है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the first unit conversion for an area of 2 mm²?",
+          "hi": "2 mm² क्षेत्रफल का सही SI परिवर्तन क्या है?"
+        },
+        "answer": {
+          "en": "2 mm² = 2 × 10⁻⁶ m².",
+          "hi": "2 mm² = 2 × 10⁻⁶ m²।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "σ = F/A",
+      "meaning": {
+        "en": "Axial stress; F force, A original area.",
+        "hi": "अक्षीय प्रतिबल; F बल, A मूल क्षेत्रफल।"
+      },
+      "units": {
+        "en": "Pa = N/m²",
+        "hi": "Pa = N/m²"
+      }
+    },
+    {
+      "expression": "ε = ΔL/L; Y = σ/ε",
+      "meaning": {
+        "en": "Longitudinal strain and Young modulus.",
+        "hi": "अनुदैर्ध्य विकृति अनुपात और यंग गुणांक।"
+      },
+      "units": {
+        "en": "ε dimensionless; Y in Pa",
+        "hi": "ε विमाहीन; Y का मात्रक Pa"
+      }
+    },
+    {
+      "expression": "B = −Δp/(ΔV/V)",
+      "meaning": {
+        "en": "Bulk modulus for small compression.",
+        "hi": "छोटे संपीड़न के लिए आयतन गुणांक।"
+      },
+      "units": {
+        "en": "Pa",
+        "hi": "Pa"
+      }
+    },
+    {
+      "expression": "U = FΔL/2",
+      "meaning": {
+        "en": "Elastic energy for linear quasistatic loading.",
+        "hi": "रैखिक लगभग स्थैतिक भार में प्रत्यास्थ ऊर्जा।"
+      },
+      "units": {
+        "en": "J",
+        "hi": "J"
+      }
+    }
+  ],
+  "mistake": {
+    "en": "Do not treat extension as strain, use final force throughout loading, or confuse stiffness with breaking strength.",
+    "hi": "प्रसार को विकृति अनुपात न मानें, अंतिम बल को पूरे प्रसार में नियत न लें और कठोरता को भंजन सामर्थ्य न समझें।"
+  },
+  "summary": [
+    {
+      "en": "Elastic deformation recovers after unloading within its range.",
+      "hi": "अपनी सीमा में प्रत्यास्थ विरूपण भार हटने पर लौटता है।"
+    },
+    {
+      "en": "Stress is force per area; strain is a fractional change.",
+      "hi": "प्रतिबल प्रति क्षेत्रफल बल, विकृति अनुपात सापेक्ष परिवर्तन है।"
+    },
+    {
+      "en": "Young, bulk and shear moduli correspond to different deformations.",
+      "hi": "यंग, आयतन और अपरूपण गुणांक अलग विरूपणों के लिए हैं।"
+    },
+    {
+      "en": "Hooke’s law is limited to the proportional regime.",
+      "hi": "हुक का नियम समानुपाती क्षेत्र तक सीमित है।"
+    },
+    {
+      "en": "Linear elastic energy density is half stress times strain.",
+      "hi": "रैखिक प्रत्यास्थ ऊर्जा घनत्व आधा प्रतिबल गुणा विकृति अनुपात है।"
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find stress for 500 N on 1 mm².",
+        "hi": "1 mm² पर 500 N से प्रतिबल निकालें।"
+      },
+      "given": {
+        "en": "F = 500 N; A = 10⁻⁶ m².",
+        "hi": "F = 500 N; A = 10⁻⁶ m²।"
+      },
+      "find": {
+        "en": "Stress.",
+        "hi": "प्रतिबल।"
+      },
+      "formula": {
+        "en": "σ = F/A",
+        "hi": "σ = F/A"
+      },
+      "steps": [
+        {
+          "en": "Divide 500 by 10⁻⁶.",
+          "hi": "500 को 10⁻⁶ से भाग दें।"
+        }
+      ],
+      "answer": {
+        "en": "5 × 10⁸ Pa.",
+        "hi": "5 × 10⁸ Pa।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find strain for 1 mm extension of a 2 m wire.",
+        "hi": "2 m तार में 1 mm प्रसार का विकृति अनुपात निकालें।"
+      },
+      "given": {
+        "en": "ΔL = 0.001 m; L = 2 m.",
+        "hi": "ΔL = 0.001 m; L = 2 m।"
+      },
+      "find": {
+        "en": "Longitudinal strain.",
+        "hi": "अनुदैर्ध्य विकृति अनुपात।"
+      },
+      "formula": {
+        "en": "ε = ΔL/L",
+        "hi": "ε = ΔL/L"
+      },
+      "steps": [
+        {
+          "en": "Use 0.001/2.",
+          "hi": "0.001/2 करें।"
+        }
+      ],
+      "answer": {
+        "en": "5 × 10⁻⁴, dimensionless.",
+        "hi": "5 × 10⁻⁴, विमाहीन।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find extension for F=500 N, L=2 m, A=1 mm² and Y=2 × 10¹¹ Pa.",
+        "hi": "F=500 N, L=2 m, A=1 mm² और Y=2 × 10¹¹ Pa में प्रसार निकालें।"
+      },
+      "given": {
+        "en": "All quantities are in the linear elastic range.",
+        "hi": "सभी मान रैखिक प्रत्यास्थ क्षेत्र में हैं।"
+      },
+      "find": {
+        "en": "ΔL.",
+        "hi": "ΔL।"
+      },
+      "formula": {
+        "en": "ΔL = FL/(AY)",
+        "hi": "ΔL = FL/(AY)"
+      },
+      "steps": [
+        {
+          "en": "A = 10⁻⁶ m².",
+          "hi": "A = 10⁻⁶ m²।"
+        },
+        {
+          "en": "Compute 1000/(2 × 10⁵).",
+          "hi": "1000/(2 × 10⁵) निकालें।"
+        }
+      ],
+      "answer": {
+        "en": "0.005 m = 5 mm.",
+        "hi": "0.005 m = 5 mm।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "A pressure rise of 50 MPa acts on a material with B=2 GPa. Find fractional compression.",
+        "hi": "B=2 GPa वाले पदार्थ पर दाब 50 MPa बढ़े तो आयतन परिवर्तन अनुपात निकालें।"
+      },
+      "given": {
+        "en": "Δp=50 × 10⁶ Pa; B=2 × 10⁹ Pa.",
+        "hi": "Δp=50 × 10⁶ Pa; B=2 × 10⁹ Pa।"
+      },
+      "find": {
+        "en": "ΔV/V.",
+        "hi": "ΔV/V।"
+      },
+      "formula": {
+        "en": "ΔV/V = −Δp/B",
+        "hi": "ΔV/V = −Δp/B"
+      },
+      "steps": [
+        {
+          "en": "Divide pressure rise by modulus and add the compression sign.",
+          "hi": "दाब वृद्धि को गुणांक से भाग दें और संपीड़न का चिह्न लगाएँ।"
+        }
+      ],
+      "answer": {
+        "en": "−0.025, or 2.5% volume decrease.",
+        "hi": "−0.025, अर्थात आयतन में 2.5% कमी।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Find stored energy when a linear wire reaches 500 N and 5 mm extension.",
+        "hi": "रैखिक तार में 500 N और 5 mm प्रसार पर संचित ऊर्जा निकालें।"
+      },
+      "given": {
+        "en": "F=500 N; x=0.005 m.",
+        "hi": "F=500 N; x=0.005 m।"
+      },
+      "find": {
+        "en": "Stored elastic energy.",
+        "hi": "संचित प्रत्यास्थ ऊर्जा।"
+      },
+      "formula": {
+        "en": "U=Fx/2",
+        "hi": "U=Fx/2"
+      },
+      "steps": [
+        {
+          "en": "The average force is 250 N.",
+          "hi": "औसत बल 250 N है।"
+        },
+        {
+          "en": "Multiply 250 by 0.005.",
+          "hi": "250 को 0.005 से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "1.25 J.",
+        "hi": "1.25 J।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Stress has which SI unit?",
+        "hi": "प्रतिबल का SI मात्रक कौन है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Pa",
+            "hi": "Pa"
+          },
+          "reason": {
+            "en": "Stress is force divided by area.",
+            "hi": "प्रतिबल बल/क्षेत्रफल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "m",
+            "hi": "m"
+          },
+          "reason": {
+            "en": "This measures length.",
+            "hi": "यह लंबाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "J",
+            "hi": "J"
+          },
+          "reason": {
+            "en": "This measures energy.",
+            "hi": "यह ऊर्जा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "kg",
+            "hi": "kg"
+          },
+          "reason": {
+            "en": "This measures mass.",
+            "hi": "यह द्रव्यमान है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Longitudinal strain equals:",
+        "hi": "अनुदैर्ध्य विकृति अनुपात है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ΔL/L",
+            "hi": "ΔL/L"
+          },
+          "reason": {
+            "en": "It is change divided by original length.",
+            "hi": "परिवर्तन/मूल लंबाई है।"
+          }
+        },
+        {
+          "text": {
+            "en": "F/A",
+            "hi": "F/A"
+          },
+          "reason": {
+            "en": "This is stress.",
+            "hi": "यह प्रतिबल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "FL",
+            "hi": "FL"
+          },
+          "reason": {
+            "en": "This is not a fractional deformation.",
+            "hi": "यह सापेक्ष विरूपण नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "L/ΔL",
+            "hi": "L/ΔL"
+          },
+          "reason": {
+            "en": "This reverses the strain ratio.",
+            "hi": "यह अनुपात उल्टा है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "At fixed force, doubling area makes extension:",
+        "hi": "नियत बल पर क्षेत्रफल दोगुना हो तो प्रसार:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          "reason": {
+            "en": "Extension is inversely proportional to area.",
+            "hi": "प्रसार क्षेत्रफल के व्युत्क्रमानुपाती है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Double",
+            "hi": "दोगुना"
+          },
+          "reason": {
+            "en": "This reverses the dependence.",
+            "hi": "निर्भरता उल्टी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Four times",
+            "hi": "4 गुना"
+          },
+          "reason": {
+            "en": "Area does not enter squared.",
+            "hi": "क्षेत्रफल का वर्ग नहीं आता।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Area affects wire stiffness.",
+            "hi": "क्षेत्रफल कठोरता बदलता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Young modulus is the ratio of:",
+        "hi": "यंग गुणांक किसका अनुपात है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Longitudinal stress to longitudinal strain",
+            "hi": "अनुदैर्ध्य प्रतिबल/अनुदैर्ध्य विकृति अनुपात"
+          },
+          "reason": {
+            "en": "This defines Y.",
+            "hi": "यही Y की परिभाषा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Force to mass",
+            "hi": "बल/द्रव्यमान"
+          },
+          "reason": {
+            "en": "This is acceleration.",
+            "hi": "यह त्वरण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Pressure to time",
+            "hi": "दाब/समय"
+          },
+          "reason": {
+            "en": "This does not define an elastic modulus.",
+            "hi": "यह प्रत्यास्थ गुणांक नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Energy to speed",
+            "hi": "ऊर्जा/चाल"
+          },
+          "reason": {
+            "en": "This has unrelated dimensions.",
+            "hi": "इसकी विमा अलग है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Hooke’s law is applied within:",
+        "hi": "हुक का नियम कहाँ लागू है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The proportional range",
+            "hi": "समानुपाती क्षेत्र"
+          },
+          "reason": {
+            "en": "Stress and strain are proportional here.",
+            "hi": "यहाँ प्रतिबल और विकृति अनुपात समानुपाती हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every loading range",
+            "hi": "हर भार परास"
+          },
+          "reason": {
+            "en": "Large loads may cause plasticity or failure.",
+            "hi": "बड़ा भार स्थायी विकृति या भंजन कर सकता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only after fracture",
+            "hi": "केवल टूटने के बाद"
+          },
+          "reason": {
+            "en": "The wire has already failed.",
+            "hi": "तार टूट चुका है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only liquids at rest in shear",
+            "hi": "केवल अपरूपण में स्थिर द्रव"
+          },
+          "reason": {
+            "en": "Ordinary fluids cannot sustain static shear.",
+            "hi": "सामान्य द्रव स्थिर अपरूपण नहीं सहते।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "1 mm² equals:",
+        "hi": "1 mm² बराबर है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "10⁻⁶ m²",
+            "hi": "10⁻⁶ m²"
+          },
+          "reason": {
+            "en": "The length conversion factor must be squared.",
+            "hi": "लंबाई परिवर्तन गुणक का वर्ग करना है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10⁻³ m²",
+            "hi": "10⁻³ m²"
+          },
+          "reason": {
+            "en": "This is the unsquared length factor.",
+            "hi": "यह लंबाई का बिना वर्ग गुणक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10⁶ m²",
+            "hi": "10⁶ m²"
+          },
+          "reason": {
+            "en": "The direction of conversion is wrong.",
+            "hi": "परिवर्तन की दिशा गलत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "1 m²",
+            "hi": "1 m²"
+          },
+          "reason": {
+            "en": "Millimetres and metres differ.",
+            "hi": "mm और m अलग हैं।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "A large bulk modulus indicates:",
+        "hi": "बड़ा आयतन गुणांक बताता है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Low compressibility",
+            "hi": "कम संपीड्यता"
+          },
+          "reason": {
+            "en": "Compressibility is 1/B.",
+            "hi": "संपीड्यता 1/B है।"
+          }
+        },
+        {
+          "text": {
+            "en": "High compressibility",
+            "hi": "अधिक संपीड्यता"
+          },
+          "reason": {
+            "en": "This is opposite to 1/B.",
+            "hi": "यह 1/B के विपरीत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Zero mass",
+            "hi": "शून्य द्रव्यमान"
+          },
+          "reason": {
+            "en": "Modulus does not specify mass.",
+            "hi": "गुणांक द्रव्यमान नहीं बताता।"
+          }
+        },
+        {
+          "text": {
+            "en": "No volume",
+            "hi": "कोई आयतन नहीं"
+          },
+          "reason": {
+            "en": "The definition uses an existing volume.",
+            "hi": "परिभाषा में आयतन मौजूद है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Energy for linear loading from zero is:",
+        "hi": "शून्य से रैखिक भार लगाने में ऊर्जा है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "FΔL/2",
+            "hi": "FΔL/2"
+          },
+          "reason": {
+            "en": "Average force is F/2.",
+            "hi": "औसत बल F/2 है।"
+          }
+        },
+        {
+          "text": {
+            "en": "FΔL",
+            "hi": "FΔL"
+          },
+          "reason": {
+            "en": "This incorrectly assumes full final force throughout.",
+            "hi": "यह पूरे समय अंतिम बल मानता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "F/ΔL",
+            "hi": "F/ΔL"
+          },
+          "reason": {
+            "en": "This is stiffness, not energy.",
+            "hi": "यह कठोरता है, ऊर्जा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "ΔL/F",
+            "hi": "ΔL/F"
+          },
+          "reason": {
+            "en": "This has inverse-stiffness dimensions.",
+            "hi": "इसकी विमा कठोरता के व्युत्क्रम की है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Permanent deformation after unloading is:",
+        "hi": "भार हटने पर स्थायी विरूपण है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Plastic deformation",
+            "hi": "सुघट्य विरूपण"
+          },
+          "reason": {
+            "en": "The original shape is not fully recovered.",
+            "hi": "मूल आकृति पूरी नहीं लौटती।"
+          }
+        },
+        {
+          "text": {
+            "en": "Perfect elastic recovery",
+            "hi": "पूर्ण प्रत्यास्थ पुनर्प्राप्ति"
+          },
+          "reason": {
+            "en": "That would leave no permanent set.",
+            "hi": "उसमें स्थायी विकृति नहीं बचती।"
+          }
+        },
+        {
+          "text": {
+            "en": "No strain",
+            "hi": "कोई विकृति अनुपात नहीं"
+          },
+          "reason": {
+            "en": "Permanent deformation implies residual strain.",
+            "hi": "स्थायी विरूपण में अवशिष्ट विकृति है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only a unit change",
+            "hi": "केवल मात्रक परिवर्तन"
+          },
+          "reason": {
+            "en": "A physical change has occurred.",
+            "hi": "भौतिक परिवर्तन हुआ है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Poisson ratio is:",
+        "hi": "प्वासों अनुपात है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Dimensionless",
+            "hi": "विमाहीन"
+          },
+          "reason": {
+            "en": "It is a ratio of two strains.",
+            "hi": "यह 2 विकृति अनुपातों का अनुपात है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Measured in Pa",
+            "hi": "Pa में"
+          },
+          "reason": {
+            "en": "Stress and moduli use Pa, not this ratio.",
+            "hi": "Pa प्रतिबल और गुणांक का मात्रक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Measured in m",
+            "hi": "m में"
+          },
+          "reason": {
+            "en": "It is not an absolute length.",
+            "hi": "यह निरपेक्ष लंबाई नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always equal to Y",
+            "hi": "हमेशा Y के बराबर"
+          },
+          "reason": {
+            "en": "Y has pressure dimensions.",
+            "hi": "Y की विमा दाब की है।"
+          }
+        }
+      ],
+      "correct": 0
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Why can the same wire show elastic and plastic behaviour?",
+        "hi": "एक ही तार प्रत्यास्थ और सुघट्य व्यवहार कैसे दिखा सकता है?"
+      },
+      "answer": {
+        "en": "Its response depends on the applied loading range; small deformation may recover while excessive loading leaves permanent strain.",
+        "hi": "व्यवहार भार के परास पर निर्भर है; छोटा विरूपण लौट सकता है, अधिक भार स्थायी विकृति छोड़ सकता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "What happens to tensile stress if area is doubled at fixed force?",
+        "hi": "नियत बल पर क्षेत्रफल दोगुना हो तो तनन प्रतिबल क्या होगा?"
+      },
+      "answer": {
+        "en": "It becomes half because stress is F/A.",
+        "hi": "प्रतिबल F/A है, इसलिए आधा होगा।"
+      }
+    },
+    {
+      "question": {
+        "en": "Is a strain of 0.01 equal to an extension of 0.01 m?",
+        "hi": "क्या विकृति अनुपात 0.01 का अर्थ प्रसार 0.01 m है?"
+      },
+      "answer": {
+        "en": "No. Extension is 0.01 times the original length.",
+        "hi": "नहीं। प्रसार मूल लंबाई का 0.01 गुना है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which wire stretches more: equal material and length but half the area?",
+        "hi": "समान पदार्थ और लंबाई में आधे क्षेत्रफल वाला तार कितना खिंचेगा?"
+      },
+      "answer": {
+        "en": "At the same force its extension is doubled, within the linear range.",
+        "hi": "समान बल और रैखिक क्षेत्र में उसका प्रसार दोगुना होगा।"
+      }
+    },
+    {
+      "question": {
+        "en": "Does high stiffness necessarily mean high breaking strength?",
+        "hi": "क्या अधिक कठोरता का अर्थ हमेशा अधिक भंजन सामर्थ्य है?"
+      },
+      "answer": {
+        "en": "No. Modulus measures elastic slope, while breaking strength concerns failure stress.",
+        "hi": "नहीं। गुणांक प्रत्यास्थ ढाल बताता है, भंजन सामर्थ्य टूटने का प्रतिबल।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why is there a minus sign in the bulk modulus formula?",
+        "hi": "आयतन गुणांक के सूत्र में ऋण चिह्न क्यों है?"
+      },
+      "answer": {
+        "en": "It accounts for negative volume change under positive pressure increase, giving a positive modulus.",
+        "hi": "धनात्मक दाब वृद्धि में आयतन परिवर्तन ऋणात्मक होता है; ऋण चिह्न गुणांक को धनात्मक रखता है।"
+      }
+    }
+  ],
+  "conceptMapEn": "Force and geometry → stress → fractional strain → Hooke’s law → elastic moduli → energy → limits and applications",
+  "conceptMap": "बल और ज्यामिति → प्रतिबल → सापेक्ष विकृति → हुक का नियम → प्रत्यास्थ गुणांक → ऊर्जा → सीमाएँ और अनुप्रयोग"
+}

@@ -1,0 +1,3282 @@
+[
+  {
+    "id": "lkg-world-01",
+    "classId": "LKG",
+    "subject": "world",
+    "title": {
+      "en": "My Body and Senses",
+      "hi": "मेरा शरीर और इंद्रियाँ"
+    },
+    "goal": {
+      "en": "Name familiar body parts and notice what they help us do.",
+      "hi": "परिचित अंगों के नाम और उनके काम पहचानें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Look, listen and notice",
+          "hi": "देखें, सुनें और पहचानें"
+        },
+        "body": {
+          "en": "Eyes help us see; ears help us hear. The nose helps us smell, the tongue helps us taste, and skin helps us feel touch. We often use several senses together.",
+          "hi": "हम आँखों से चित्र, रंग और आकार देखते हैं। कान घंटी या बातचीत सुनने में मदद करते हैं। नाक गंध पहचानती है। जीभ परिचित भोजन का स्वाद पहचानने में मदद करती है। त्वचा से स्पर्श महसूस होता है। कई कामों में हम एक साथ अनेक इंद्रियों का उपयोग करते हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Move and do",
+          "hi": "हिलें और काम करें"
+        },
+        "body": {
+          "en": "Hands help us hold things. Legs and feet help many people stand and move. Point to a body part on a picture, then name it. Make a small movement that is comfortable for you.",
+          "hi": "हाथ पुस्तक पकड़ने और वस्तु खिसकाने में सहायक हैं। टाँगें और पैर कई लोगों को खड़े होने और चलने में मदद करते हैं। चित्र में कोई अंग दिखाकर उसका नाम बोलें। फिर अपनी सुविधा के अनुसार छोटी गति करें। बैठे-बैठे हाथ हिलाना भी भाग लेने का अच्छा तरीका है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Every body matters",
+          "hi": "हर शरीर महत्त्वपूर्ण है"
+        },
+        "body": {
+          "en": "People look, move and communicate in different ways. Some use glasses, hearing devices or mobility aids. Respect personal space and adapt a game so everyone can join.",
+          "hi": "हर व्यक्ति का शरीर और काम करने का तरीका एक जैसा नहीं होता। कोई चश्मा, सुनने का उपकरण या चलने में सहायक साधन उपयोग कर सकता है। किसी का मजाक न बनाएँ। छूने से पहले पूछें और जगह दें। खेल को बदलकर सभी मित्रों को साथ शामिल करें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "Eyes",
+        "label": {
+          "en": "Eyes",
+          "hi": "आँखें"
+        },
+        "picture": "👀",
+        "say": {
+          "en": "Eyes help us see.",
+          "hi": "आँखें देखने में मदद करती हैं।"
+        }
+      },
+      {
+        "symbol": "Ear",
+        "label": {
+          "en": "Ear",
+          "hi": "कान"
+        },
+        "picture": "👂",
+        "say": {
+          "en": "Ears help us hear.",
+          "hi": "कान सुनने में मदद करते हैं।"
+        }
+      },
+      {
+        "symbol": "Nose",
+        "label": {
+          "en": "Nose",
+          "hi": "नाक"
+        },
+        "picture": "👃",
+        "say": {
+          "en": "The nose helps us smell.",
+          "hi": "नाक गंध पहचानने में मदद करती है।"
+        }
+      },
+      {
+        "symbol": "Tongue",
+        "label": {
+          "en": "Tongue",
+          "hi": "जीभ"
+        },
+        "picture": "👅",
+        "say": {
+          "en": "The tongue helps us taste.",
+          "hi": "जीभ स्वाद पहचानने में मदद करती है।"
+        }
+      },
+      {
+        "symbol": "Hand",
+        "label": {
+          "en": "Hand",
+          "hi": "हाथ"
+        },
+        "picture": "✋",
+        "say": {
+          "en": "Hands help us hold things.",
+          "hi": "हाथ वस्तुएँ पकड़ने में मदद करते हैं।"
+        }
+      },
+      {
+        "symbol": "Foot",
+        "label": {
+          "en": "Foot",
+          "hi": "पैर"
+        },
+        "picture": "🦶",
+        "say": {
+          "en": "Feet support many movements.",
+          "hi": "पैर कई गतियों में सहायक हैं।"
+        }
+      },
+      {
+        "symbol": "Arm",
+        "label": {
+          "en": "Arm",
+          "hi": "बाँह"
+        },
+        "picture": "💪",
+        "say": {
+          "en": "Bend an arm gently if comfortable.",
+          "hi": "सुविधा हो तो बाँह धीरे मोड़ें।"
+        }
+      },
+      {
+        "symbol": "Body",
+        "label": {
+          "en": "Body",
+          "hi": "शरीर"
+        },
+        "picture": "🧍",
+        "say": {
+          "en": "We respect every body.",
+          "hi": "हम हर शरीर का सम्मान करते हैं।"
+        }
+      }
+    ],
+    "trace": "",
+    "play": [
+      {
+        "en": "Point to the eyes on a picture.",
+        "hi": "चित्र में आँखें दिखाएँ।"
+      },
+      {
+        "en": "Make a gentle movement that feels comfortable.",
+        "hi": "अपनी सुविधा से कोमल गति करें।"
+      },
+      {
+        "en": "Tell an adult one thing you can hear.",
+        "hi": "किसी बड़े को 1 सुनाई देने वाली चीज बताएँ।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which body part helps us see a picture?",
+          "hi": "चित्र देखने में शरीर का कौन-सा भाग मदद करता है?"
+        },
+        "options": [
+          {
+            "en": "Eyes",
+            "hi": "आँखें"
+          },
+          {
+            "en": "Knees",
+            "hi": "घुटने"
+          },
+          {
+            "en": "Elbows",
+            "hi": "कोहनियाँ"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Eyes help us see light, shapes and colours.",
+          "hi": "आँखें प्रकाश, आकार और रंग देखने में मदद करती हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which body part helps us hear a bell?",
+          "hi": "घंटी सुनने में कौन-सा भाग मदद करता है?"
+        },
+        "options": [
+          {
+            "en": "Chin",
+            "hi": "ठोड़ी"
+          },
+          {
+            "en": "Ears",
+            "hi": "कान"
+          },
+          {
+            "en": "Toes",
+            "hi": "पैर की उँगलियाँ"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Ears help us hear sounds.",
+          "hi": "कान आवाज सुनने में मदद करते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which body part helps us smell a flower?",
+          "hi": "फूल की गंध पहचानने में कौन-सा भाग मदद करता है?"
+        },
+        "options": [
+          {
+            "en": "Ankle",
+            "hi": "टखना"
+          },
+          {
+            "en": "Knee",
+            "hi": "घुटना"
+          },
+          {
+            "en": "Nose",
+            "hi": "नाक"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "The nose helps us smell. Look at a picture or a familiar safe flower.",
+          "hi": "नाक गंध पहचानने में मदद करती है। चित्र या परिचित सुरक्षित फूल देखें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which body part helps us taste food?",
+          "hi": "भोजन का स्वाद पहचानने में कौन-सा भाग मदद करता है?"
+        },
+        "options": [
+          {
+            "en": "Tongue",
+            "hi": "जीभ"
+          },
+          {
+            "en": "Hair",
+            "hi": "बाल"
+          },
+          {
+            "en": "Elbow",
+            "hi": "कोहनी"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "The tongue helps us notice tastes in familiar food.",
+          "hi": "जीभ परिचित भोजन का स्वाद पहचानने में मदद करती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which part covers much of our body and helps us feel touch?",
+          "hi": "शरीर का बड़ा भाग ढककर स्पर्श महसूस कराने वाला भाग कौन है?"
+        },
+        "options": [
+          {
+            "en": "Hat",
+            "hi": "टोपी"
+          },
+          {
+            "en": "Skin",
+            "hi": "त्वचा"
+          },
+          {
+            "en": "School bag",
+            "hi": "बस्ता"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Skin helps us notice touch and other sensations.",
+          "hi": "त्वचा स्पर्श और दूसरी अनुभूतियाँ पहचानने में मदद करती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which parts help us hold a book?",
+          "hi": "पुस्तक पकड़ने में कौन-से भाग मदद करते हैं?"
+        },
+        "options": [
+          {
+            "en": "Ears",
+            "hi": "कान"
+          },
+          {
+            "en": "Hair",
+            "hi": "बाल"
+          },
+          {
+            "en": "Hands",
+            "hi": "हाथ"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Our hands can hold and move objects.",
+          "hi": "हम हाथों से वस्तु पकड़ और खिसका सकते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which parts usually help us stand and walk?",
+          "hi": "खड़े होने और चलने में सामान्यतः कौन-से भाग मदद करते हैं?"
+        },
+        "options": [
+          {
+            "en": "Legs and feet",
+            "hi": "टाँगें और पैर"
+          },
+          {
+            "en": "Eyebrows",
+            "hi": "भौंहें"
+          },
+          {
+            "en": "Tongue",
+            "hi": "जीभ"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Legs and feet support many movements; people may also use mobility aids.",
+          "hi": "टाँगें और पैर कई गतियों में सहायक हैं; कुछ लोग सहायक उपकरण भी उपयोग करते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is a gentle way to handle a classmate?",
+          "hi": "सहपाठी के साथ कोमल व्यवहार कौन-सा है?"
+        },
+        "options": [
+          {
+            "en": "Pull their hair",
+            "hi": "बाल खींचें"
+          },
+          {
+            "en": "Give space and ask before touching",
+            "hi": "जगह दें और छूने से पहले पूछें"
+          },
+          {
+            "en": "Push them",
+            "hi": "धक्का दें"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Respecting another person’s space is kind.",
+          "hi": "दूसरे व्यक्ति की जगह का सम्मान करना अच्छा व्यवहार है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which pair belongs together?",
+          "hi": "कौन-सा जोड़ा सही है?"
+        },
+        "options": [
+          {
+            "en": "Nose — walking",
+            "hi": "नाक — चलना"
+          },
+          {
+            "en": "Knees — smelling",
+            "hi": "घुटने — सूँघना"
+          },
+          {
+            "en": "Eyes — seeing",
+            "hi": "आँखें — देखना"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Eyes help us see.",
+          "hi": "आँखें देखने में मदद करती हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What can we do if a game is difficult for a friend?",
+          "hi": "मित्र के लिए खेल कठिन हो तो क्या कर सकते हैं?"
+        },
+        "options": [
+          {
+            "en": "Change the game so they can join",
+            "hi": "खेल बदलकर उन्हें शामिल करें"
+          },
+          {
+            "en": "Leave them out",
+            "hi": "उन्हें बाहर रखें"
+          },
+          {
+            "en": "Laugh at them",
+            "hi": "उन पर हँसें"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Bodies and abilities differ; we can include one another.",
+          "hi": "शरीर और क्षमताएँ अलग हो सकती हैं; हम सबको शामिल कर सकते हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-world-02",
+    "classId": "LKG",
+    "subject": "world",
+    "title": {
+      "en": "My Home and Caring People",
+      "hi": "मेरा घर और देखभाल करने वाले लोग"
+    },
+    "goal": {
+      "en": "Recognise care, sharing and familiar places at home.",
+      "hi": "देखभाल, मिल-बाँटकर रहना और घर की परिचित जगहें पहचानें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "A place to belong",
+          "hi": "अपनापन वाली जगह"
+        },
+        "body": {
+          "en": "A home is a place where people may rest, receive care and spend time together. Homes can look different. Notice familiar objects without comparing whose home is bigger.",
+          "hi": "घर वह जगह हो सकती है जहाँ हम आराम करते, देखभाल पाते और साथ समय बिताते हैं। घरों का आकार और बनावट अलग हो सकती है। चित्र में दरवाजा, खिड़की और बैठने की जगह खोजें। किसी का घर बड़ा या छोटा होने से उस व्यक्ति का महत्त्व नहीं बदलता।"
+        }
+      },
+      {
+        "title": {
+          "en": "Families are different",
+          "hi": "परिवार अलग होते हैं"
+        },
+        "body": {
+          "en": "Families may include parents, grandparents, siblings, guardians or other caring people. Some families are small and some are large. Ask children who cares for them without demanding private details.",
+          "hi": "परिवार में माता-पिता, दादा-दादी, भाई-बहन, अभिभावक या देखभाल करने वाले दूसरे लोग हो सकते हैं। कुछ परिवार छोटे और कुछ बड़े होते हैं। सबके परिवार एक जैसे होना जरूरी नहीं है। साथ रहने, सुनने और मदद करने से अपनापन बढ़ता है। निजी जानकारी बताए बिना भी हम देखभाल की बात कर सकते हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "We help one another",
+          "hi": "हम एक-दूसरे की मदद करते हैं"
+        },
+        "body": {
+          "en": "People can share simple household jobs. Children may put a book in its place or take turns with a toy. Thank a helper and ask a trusted adult when something is difficult.",
+          "hi": "घर के छोटे काम मिलकर किए जा सकते हैं। पुस्तक तय जगह रखना या खिलौने से बारी लेना सरल उदाहरण हैं। कोई काम केवल लड़कों या केवल लड़कियों का नहीं होता। मदद मिले तो धन्यवाद कहें। कोई बात कठिन या परेशान करने वाली लगे तो पास के विश्वसनीय बड़े से सहायता माँगें।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "Home",
+        "label": {
+          "en": "Home",
+          "hi": "घर"
+        },
+        "picture": "🏠",
+        "say": {
+          "en": "Homes can look different.",
+          "hi": "घर अलग-अलग दिख सकते हैं।"
+        }
+      },
+      {
+        "symbol": "Family",
+        "label": {
+          "en": "Caring people",
+          "hi": "देखभाल करने वाले लोग"
+        },
+        "picture": "🧑‍🤝‍🧑",
+        "say": {
+          "en": "Families can have different members.",
+          "hi": "परिवारों में अलग सदस्य हो सकते हैं।"
+        }
+      },
+      {
+        "symbol": "Bed",
+        "label": {
+          "en": "Bed",
+          "hi": "बिस्तर"
+        },
+        "picture": "🛏️",
+        "say": {
+          "en": "A bed is for resting.",
+          "hi": "बिस्तर आराम करने के लिए है।"
+        }
+      },
+      {
+        "symbol": "Chair",
+        "label": {
+          "en": "Chair",
+          "hi": "कुर्सी"
+        },
+        "picture": "🪑",
+        "say": {
+          "en": "A chair is a place to sit.",
+          "hi": "कुर्सी बैठने की जगह है।"
+        }
+      },
+      {
+        "symbol": "Door",
+        "label": {
+          "en": "Door",
+          "hi": "दरवाजा"
+        },
+        "picture": "🚪",
+        "say": {
+          "en": "Keep the doorway clear.",
+          "hi": "दरवाजे का रास्ता खुला रखें।"
+        }
+      },
+      {
+        "symbol": "Book",
+        "label": {
+          "en": "Book",
+          "hi": "पुस्तक"
+        },
+        "picture": "📚",
+        "say": {
+          "en": "Put a book in its chosen place.",
+          "hi": "पुस्तक उसकी तय जगह रखें।"
+        }
+      },
+      {
+        "symbol": "Toy",
+        "label": {
+          "en": "Toy",
+          "hi": "खिलौना"
+        },
+        "picture": "🧸",
+        "say": {
+          "en": "Take turns with a toy.",
+          "hi": "खिलौने से बारी-बारी खेलें।"
+        }
+      },
+      {
+        "symbol": "Thanks",
+        "label": {
+          "en": "Thank you",
+          "hi": "धन्यवाद"
+        },
+        "picture": "💛",
+        "say": {
+          "en": "Say thank you for help.",
+          "hi": "मदद के लिए धन्यवाद कहें।"
+        }
+      }
+    ],
+    "trace": "",
+    "play": [
+      {
+        "en": "Name a familiar object in a home picture.",
+        "hi": "घर के चित्र में 1 परिचित वस्तु का नाम लें।"
+      },
+      {
+        "en": "Practise taking turns in an imaginary game.",
+        "hi": "कल्पना के खेल में बारी लेने का अभ्यास करें।"
+      },
+      {
+        "en": "Tell a caring person thank you.",
+        "hi": "देखभाल करने वाले व्यक्ति को धन्यवाद कहें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "What can a home give us?",
+          "hi": "घर हमें क्या दे सकता है?"
+        },
+        "options": [
+          {
+            "en": "A place to rest and receive care",
+            "hi": "आराम और देखभाल की जगह"
+          },
+          {
+            "en": "A place only for cars",
+            "hi": "केवल कारों की जगह"
+          },
+          {
+            "en": "A place only for fish",
+            "hi": "केवल मछलियों की जगह"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A home can provide rest, care and belonging.",
+          "hi": "घर आराम, देखभाल और अपनापन दे सकता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Can families have different members?",
+          "hi": "क्या परिवारों के सदस्य अलग-अलग हो सकते हैं?"
+        },
+        "options": [
+          {
+            "en": "Only in storybooks",
+            "hi": "केवल कहानी की पुस्तकों में"
+          },
+          {
+            "en": "Yes",
+            "hi": "हाँ"
+          },
+          {
+            "en": "No, every family must be identical",
+            "hi": "नहीं, हर परिवार बिल्कुल समान होना चाहिए"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Families can be small or large and include different caring people.",
+          "hi": "परिवार छोटे या बड़े हो सकते हैं और देखभाल करने वाले लोग अलग हो सकते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Who can help tidy toys?",
+          "hi": "खिलौने समेटने में कौन मदद कर सकता है?"
+        },
+        "options": [
+          {
+            "en": "Only women",
+            "hi": "केवल महिलाएँ"
+          },
+          {
+            "en": "Only men",
+            "hi": "केवल पुरुष"
+          },
+          {
+            "en": "Different family members together",
+            "hi": "परिवार के अलग सदस्य मिलकर"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Household jobs can be shared without fixed roles for boys or girls.",
+          "hi": "घर के काम लड़के-लड़की के तय बँटवारे के बिना साझा किए जा सकते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Where do we usually place a book after reading?",
+          "hi": "पढ़ने के बाद पुस्तक सामान्यतः कहाँ रखें?"
+        },
+        "options": [
+          {
+            "en": "Its chosen shelf or place",
+            "hi": "उसकी तय शेल्फ या जगह"
+          },
+          {
+            "en": "In a water bucket",
+            "hi": "पानी की बाल्टी में"
+          },
+          {
+            "en": "Across a doorway",
+            "hi": "दरवाजे के रास्ते में"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A chosen place keeps books tidy and the path clear.",
+          "hi": "तय जगह रखने से पुस्तक सलीके में और रास्ता खुला रहता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What can we say when someone helps us?",
+          "hi": "कोई मदद करे तो क्या कह सकते हैं?"
+        },
+        "options": [
+          {
+            "en": "Nothing, and push them",
+            "hi": "कुछ नहीं, और धक्का दें"
+          },
+          {
+            "en": "Thank you",
+            "hi": "धन्यवाद"
+          },
+          {
+            "en": "Go away",
+            "hi": "चले जाओ"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Thanking someone is a kind way to notice their help.",
+          "hi": "धन्यवाद कहना मदद का सम्मान करने का अच्छा तरीका है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which action shows sharing?",
+          "hi": "कौन-सा काम साझा करना दिखाता है?"
+        },
+        "options": [
+          {
+            "en": "Grabbing every toy",
+            "hi": "सभी खिलौने छीन लेना"
+          },
+          {
+            "en": "Hiding a friend’s book",
+            "hi": "मित्र की पुस्तक छिपाना"
+          },
+          {
+            "en": "Taking turns with a toy",
+            "hi": "खिलौने से बारी-बारी खेलना"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Taking turns lets more than one person enjoy a toy.",
+          "hi": "बारी लेने से कई लोग खिलौने का आनंद ले सकते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What helps a person who is speaking?",
+          "hi": "बात कर रहे व्यक्ति के लिए क्या सहायक है?"
+        },
+        "options": [
+          {
+            "en": "Listening and waiting for a turn",
+            "hi": "सुनना और अपनी बारी का इंतजार"
+          },
+          {
+            "en": "Always shouting over them",
+            "hi": "हर बार ऊपर से चिल्लाना"
+          },
+          {
+            "en": "Pulling their clothes",
+            "hi": "कपड़े खींचना"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Listening gives everyone a chance to communicate.",
+          "hi": "सुनने से सबको अपनी बात कहने का अवसर मिलता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What can you do when you need help?",
+          "hi": "मदद चाहिए तो क्या कर सकते हैं?"
+        },
+        "options": [
+          {
+            "en": "Push another child",
+            "hi": "दूसरे बच्चे को धक्का दें"
+          },
+          {
+            "en": "Ask a trusted adult nearby",
+            "hi": "पास के विश्वसनीय बड़े से कहें"
+          },
+          {
+            "en": "Keep every worry secret",
+            "hi": "हर चिंता छिपाएँ"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "A trusted adult can listen and help.",
+          "hi": "विश्वसनीय बड़ा सुनकर मदद कर सकता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which object is for resting?",
+          "hi": "आराम करने के लिए कौन-सी वस्तु है?"
+        },
+        "options": [
+          {
+            "en": "Traffic light",
+            "hi": "यातायात बत्ती"
+          },
+          {
+            "en": "School bell",
+            "hi": "विद्यालय की घंटी"
+          },
+          {
+            "en": "Bed",
+            "hi": "बिस्तर"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A bed is a familiar place to rest.",
+          "hi": "बिस्तर आराम करने की परिचित जगह है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is a caring action?",
+          "hi": "देखभाल वाला काम कौन है?"
+        },
+        "options": [
+          {
+            "en": "Making room for someone to sit",
+            "hi": "किसी को बैठने की जगह देना"
+          },
+          {
+            "en": "Teasing a family member",
+            "hi": "परिवार के सदस्य को चिढ़ाना"
+          },
+          {
+            "en": "Blocking a doorway",
+            "hi": "दरवाजा रोकना"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Making room considers another person’s needs.",
+          "hi": "जगह देना दूसरे की जरूरत का ध्यान रखना है।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-world-03",
+    "classId": "LKG",
+    "subject": "world",
+    "title": {
+      "en": "Animals and Plants Around Us",
+      "hi": "आसपास के जानवर और पौधे"
+    },
+    "goal": {
+      "en": "Name familiar living things and observe them gently.",
+      "hi": "परिचित जीवों के नाम लें और उन्हें कोमलता से देखें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Different animals",
+          "hi": "अलग-अलग जानवर"
+        },
+        "body": {
+          "en": "Cats, dogs, cows, fish and birds are animals. Their bodies and movements differ. Compare a fish’s fins with a bird’s feathers using pictures.",
+          "hi": "बिल्ली, कुत्ता, गाय, मछली और पक्षी जानवर हैं। उनके आकार, शरीर और चलने के तरीके अलग होते हैं। चित्र में मछली के फिन और पक्षी के पंख देखें। किसी की आवाज पहचानें या उसके चलने की आरामदायक नकल करें। सभी जानवर एक ही तरह नहीं रहते या भोजन करते।"
+        }
+      },
+      {
+        "title": {
+          "en": "Notice a plant",
+          "hi": "पौधे को पहचानें"
+        },
+        "body": {
+          "en": "Trees and small garden plants are plants. Many have roots, stems and leaves. Flowers and fruits appear in some plants at particular stages. Plants need suitable conditions to grow.",
+          "hi": "पेड़ और बगीचे के छोटे पौधे, पौधे हैं। कई पौधों में जड़, तना और पत्ती पहचान सकते हैं। कुछ अवस्थाओं में फूल और फल दिखाई देते हैं। कई पत्तियाँ हरी होती हैं, पर दूसरे रंग भी हो सकते हैं। पौधों को बढ़ने के लिए उपयुक्त पानी, प्रकाश और दूसरी दशाएँ चाहिए।"
+        }
+      },
+      {
+        "title": {
+          "en": "Observe with care",
+          "hi": "देखभाल के साथ देखें"
+        },
+        "body": {
+          "en": "Use pictures or observe from a suitable distance with an adult. Avoid pulling leaves, chasing animals or handling unfamiliar creatures. Caring observation helps us notice more.",
+          "hi": "चित्र से या किसी बड़े के साथ उपयुक्त दूरी से देखें। पत्ती खींचना, शाखा तोड़ना या जानवर का पीछा करना अच्छा अवलोकन नहीं है। अपरिचित जीव को न पकड़ें। उसके लिए जगह छोड़ें। कोई पौधा या जानवर कैसा दिखता है, यह बताना सीखना है; उसे छूना जरूरी नहीं है।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "Cat",
+        "label": {
+          "en": "Cat",
+          "hi": "बिल्ली"
+        },
+        "picture": "🐈",
+        "say": {
+          "en": "A cat is an animal.",
+          "hi": "बिल्ली एक जानवर है।"
+        }
+      },
+      {
+        "symbol": "Dog",
+        "label": {
+          "en": "Dog",
+          "hi": "कुत्ता"
+        },
+        "picture": "🐕",
+        "say": {
+          "en": "A dog is an animal.",
+          "hi": "कुत्ता एक जानवर है।"
+        }
+      },
+      {
+        "symbol": "Cow",
+        "label": {
+          "en": "Cow",
+          "hi": "गाय"
+        },
+        "picture": "🐄",
+        "say": {
+          "en": "A cow is an animal.",
+          "hi": "गाय एक जानवर है।"
+        }
+      },
+      {
+        "symbol": "Fish",
+        "label": {
+          "en": "Fish",
+          "hi": "मछली"
+        },
+        "picture": "🐟",
+        "say": {
+          "en": "A fish swims using its body and fins.",
+          "hi": "मछली शरीर और फिन की मदद से तैरती है।"
+        }
+      },
+      {
+        "symbol": "Elephant",
+        "label": {
+          "en": "Elephant",
+          "hi": "हाथी"
+        },
+        "picture": "🐘",
+        "say": {
+          "en": "An elephant has a trunk.",
+          "hi": "हाथी की सूँड़ होती है।"
+        }
+      },
+      {
+        "symbol": "Parrot",
+        "label": {
+          "en": "Parrot",
+          "hi": "तोता"
+        },
+        "picture": "🦜",
+        "say": {
+          "en": "A parrot is a bird.",
+          "hi": "तोता एक पक्षी है।"
+        }
+      },
+      {
+        "symbol": "Tree",
+        "label": {
+          "en": "Tree",
+          "hi": "पेड़"
+        },
+        "picture": "🌳",
+        "say": {
+          "en": "A tree is a plant.",
+          "hi": "पेड़ एक पौधा है।"
+        }
+      },
+      {
+        "symbol": "Leaf",
+        "label": {
+          "en": "Leaf",
+          "hi": "पत्ती"
+        },
+        "picture": "🍃",
+        "say": {
+          "en": "Many leaves are green.",
+          "hi": "कई पत्तियाँ हरी होती हैं।"
+        }
+      }
+    ],
+    "trace": "",
+    "play": [
+      {
+        "en": "Find an animal with feathers in the cards.",
+        "hi": "कार्डों में पंख वाला जानवर खोजें।"
+      },
+      {
+        "en": "Point to the leaf in a plant picture.",
+        "hi": "पौधे के चित्र में पत्ती दिखाएँ।"
+      },
+      {
+        "en": "Describe an animal without touching it.",
+        "hi": "जानवर को छुए बिना उसके बारे में बताएँ।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which animal says meow?",
+          "hi": "कौन-सा जानवर म्याऊँ करता है?"
+        },
+        "options": [
+          {
+            "en": "Cat",
+            "hi": "बिल्ली"
+          },
+          {
+            "en": "Cow",
+            "hi": "गाय"
+          },
+          {
+            "en": "Fish",
+            "hi": "मछली"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Meow is a familiar cat sound.",
+          "hi": "म्याऊँ बिल्ली की परिचित आवाज है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which animal has fins and swims in water?",
+          "hi": "किस जानवर के पंख जैसे फिन होते हैं और वह पानी में तैरता है?"
+        },
+        "options": [
+          {
+            "en": "Goat",
+            "hi": "बकरी"
+          },
+          {
+            "en": "Fish",
+            "hi": "मछली"
+          },
+          {
+            "en": "Cat",
+            "hi": "बिल्ली"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Fish use fins for movement and balance in water.",
+          "hi": "मछलियाँ पानी में गति और संतुलन के लिए फिन उपयोग करती हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which part of many plants is green?",
+          "hi": "कई पौधों का कौन-सा भाग हरा होता है?"
+        },
+        "options": [
+          {
+            "en": "School bag",
+            "hi": "बस्ता"
+          },
+          {
+            "en": "Shoe",
+            "hi": "जूता"
+          },
+          {
+            "en": "Leaf",
+            "hi": "पत्ती"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Many leaves are green, though leaves can have other colours too.",
+          "hi": "कई पत्तियाँ हरी होती हैं, हालांकि अन्य रंग भी होते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What helps many plants grow?",
+          "hi": "कई पौधों को बढ़ने में क्या सहायक है?"
+        },
+        "options": [
+          {
+            "en": "Water and suitable light",
+            "hi": "पानी और उपयुक्त प्रकाश"
+          },
+          {
+            "en": "Only plastic toys",
+            "hi": "केवल प्लास्टिक खिलौने"
+          },
+          {
+            "en": "A closed empty box forever",
+            "hi": "हमेशा बंद खाली डिब्बा"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Plants need suitable water, light and other conditions.",
+          "hi": "पौधों को उपयुक्त पानी, प्रकाश और अन्य दशाएँ चाहिए।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which animal has a trunk?",
+          "hi": "किस जानवर की सूँड़ होती है?"
+        },
+        "options": [
+          {
+            "en": "Cat",
+            "hi": "बिल्ली"
+          },
+          {
+            "en": "Elephant",
+            "hi": "हाथी"
+          },
+          {
+            "en": "Rabbit",
+            "hi": "खरगोश"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "An elephant has a long trunk.",
+          "hi": "हाथी की लंबी सूँड़ होती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which plant part is usually below the soil?",
+          "hi": "पौधे का कौन-सा भाग सामान्यतः मिट्टी के नीचे होता है?"
+        },
+        "options": [
+          {
+            "en": "Flower",
+            "hi": "फूल"
+          },
+          {
+            "en": "Fruit",
+            "hi": "फल"
+          },
+          {
+            "en": "Root",
+            "hi": "जड़"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Roots usually grow in the soil and take up water.",
+          "hi": "जड़ें सामान्यतः मिट्टी में बढ़ती और पानी लेती हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which action is kind to plants?",
+          "hi": "पौधों के लिए कौन-सा काम अच्छा है?"
+        },
+        "options": [
+          {
+            "en": "Look without pulling leaves",
+            "hi": "पत्तियाँ खींचे बिना देखें"
+          },
+          {
+            "en": "Break every branch",
+            "hi": "हर शाखा तोड़ें"
+          },
+          {
+            "en": "Stamp on a seedling",
+            "hi": "नन्हे पौधे पर पैर रखें"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Gentle observation avoids damaging the plant.",
+          "hi": "कोमलता से देखने पर पौधे को नुकसान नहीं होता।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which animal is a bird?",
+          "hi": "कौन-सा जानवर पक्षी है?"
+        },
+        "options": [
+          {
+            "en": "Dog",
+            "hi": "कुत्ता"
+          },
+          {
+            "en": "Parrot",
+            "hi": "तोता"
+          },
+          {
+            "en": "Cow",
+            "hi": "गाय"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "A parrot is a bird with feathers.",
+          "hi": "तोता पंखों वाला पक्षी है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is a tree?",
+          "hi": "पेड़ क्या है?"
+        },
+        "options": [
+          {
+            "en": "A toy car",
+            "hi": "खिलौना कार"
+          },
+          {
+            "en": "A shoe",
+            "hi": "जूता"
+          },
+          {
+            "en": "A plant",
+            "hi": "एक पौधा"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A tree is a plant, usually with a woody stem.",
+          "hi": "पेड़ सामान्यतः काष्ठीय तने वाला पौधा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What should we do with an unfamiliar animal?",
+          "hi": "अपरिचित जानवर के साथ क्या करें?"
+        },
+        "options": [
+          {
+            "en": "Watch from a distance with an adult",
+            "hi": "बड़े के साथ दूर से देखें"
+          },
+          {
+            "en": "Pull its tail",
+            "hi": "पूँछ खींचें"
+          },
+          {
+            "en": "Chase and catch it",
+            "hi": "पीछा करके पकड़ें"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Giving an animal space protects it and the observer.",
+          "hi": "दूरी रखने से जानवर और देखने वाला दोनों सुरक्षित रहते हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lkg-world-04",
+    "classId": "LKG",
+    "subject": "world",
+    "title": {
+      "en": "Daily Care and Weather",
+      "hi": "रोज की देखभाल और मौसम"
+    },
+    "goal": {
+      "en": "Recognise simple care routines and familiar weather pictures.",
+      "hi": "सरल देखभाल की आदतें और मौसम के परिचित चित्र पहचानें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Care each day",
+          "hi": "हर दिन देखभाल"
+        },
+        "body": {
+          "en": "Washing hands with soap and water and brushing teeth are familiar care routines. An adult can help when needed. We also need play, meals and rest.",
+          "hi": "साबुन और पानी से हाथ धोना तथा दाँत साफ करना रोज की देखभाल के उदाहरण हैं। जरूरत हो तो बड़ा मदद कर सकता है। दिन में भोजन, खेल और आराम भी आते हैं। चित्र देखकर बताएं कि कौन-सी वस्तु किस काम आती है। धीरे-धीरे अपनी जरूरत पहचानना भी सीखना है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Notice the weather",
+          "hi": "मौसम को देखें"
+        },
+        "body": {
+          "en": "Weather can be sunny, rainy, cloudy, windy or cold. Look through a window or at a picture. Clothes and shelter can help us feel comfortable in different conditions.",
+          "hi": "मौसम में धूप, वर्षा, बादल, हवा या ठंड महसूस हो सकती है। खिड़की से या चित्र में मौसम देखें। आज क्या दिखाई देता है, यह बताएँ। अलग दशाओं में कपड़े और आश्रय आराम देते हैं। बारिश का चित्र देखने के लिए बाहर भीगना या सूरज को सीधे देखना जरूरी नहीं है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Care for shared places",
+          "hi": "साझी जगह की देखभाल"
+        },
+        "body": {
+          "en": "Put litter in a suitable bin and close a tap when finished. Tell a caring adult if you need help or rest. Small thoughtful actions help everyone use a space.",
+          "hi": "कागज का रैपर उपयुक्त कूड़ेदान में रखें और काम पूरा होने पर नल बंद करें। साझा जगह में दूसरों के लिए रास्ता छोड़ें। थकान या परेशानी हो तो देखभाल करने वाले बड़े से कहें। हम छोटी बातों का ध्यान रखकर अपने और दूसरों के लिए जगह को आरामदायक बना सकते हैं।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "Soap",
+        "label": {
+          "en": "Soap",
+          "hi": "साबुन"
+        },
+        "picture": "🧼",
+        "say": {
+          "en": "Soap is used with water to wash hands.",
+          "hi": "साबुन पानी के साथ हाथ धोने में उपयोग होता है।"
+        }
+      },
+      {
+        "symbol": "Brush",
+        "label": {
+          "en": "Toothbrush",
+          "hi": "टूथब्रश"
+        },
+        "picture": "🪥",
+        "say": {
+          "en": "A toothbrush helps clean teeth.",
+          "hi": "टूथब्रश दाँत साफ करने में सहायक है।"
+        }
+      },
+      {
+        "symbol": "Water",
+        "label": {
+          "en": "Water",
+          "hi": "पानी"
+        },
+        "picture": "💧",
+        "say": {
+          "en": "Use water carefully.",
+          "hi": "पानी सोच-समझकर उपयोग करें।"
+        }
+      },
+      {
+        "symbol": "Bin",
+        "label": {
+          "en": "Bin",
+          "hi": "कूड़ेदान"
+        },
+        "picture": "🗑️",
+        "say": {
+          "en": "Use a suitable bin for litter.",
+          "hi": "कूड़े के लिए उपयुक्त कूड़ेदान उपयोग करें।"
+        }
+      },
+      {
+        "symbol": "Sun",
+        "label": {
+          "en": "Sun",
+          "hi": "सूरज"
+        },
+        "picture": "☀️",
+        "say": {
+          "en": "A sun picture can show sunny weather.",
+          "hi": "सूरज का चित्र धूप वाला मौसम दिखा सकता है।"
+        }
+      },
+      {
+        "symbol": "Rain",
+        "label": {
+          "en": "Rain",
+          "hi": "वर्षा"
+        },
+        "picture": "🌧️",
+        "say": {
+          "en": "Rain falls as water drops.",
+          "hi": "वर्षा में पानी की बूँदें गिरती हैं।"
+        }
+      },
+      {
+        "symbol": "Umbrella",
+        "label": {
+          "en": "Umbrella",
+          "hi": "छाता"
+        },
+        "picture": "☂️",
+        "say": {
+          "en": "An umbrella can keep us dry.",
+          "hi": "छाता सूखा रहने में मदद कर सकता है।"
+        }
+      },
+      {
+        "symbol": "Rest",
+        "label": {
+          "en": "Rest",
+          "hi": "आराम"
+        },
+        "picture": "🛏️",
+        "say": {
+          "en": "Rest is part of our day.",
+          "hi": "आराम हमारे दिन का हिस्सा है।"
+        }
+      }
+    ],
+    "trace": "",
+    "play": [
+      {
+        "en": "Choose a card for today’s weather.",
+        "hi": "आज के मौसम का कार्ड चुनें।"
+      },
+      {
+        "en": "Mime closing a tap after use.",
+        "hi": "उपयोग के बाद नल बंद करने की नकल करें।"
+      },
+      {
+        "en": "Arrange pretend play, meal and rest cards.",
+        "hi": "खेल, भोजन और आराम के कल्पना वाले कार्ड सजाएँ।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "What can we use to clean our hands?",
+          "hi": "हाथ साफ करने में क्या उपयोग कर सकते हैं?"
+        },
+        "options": [
+          {
+            "en": "Soap and water",
+            "hi": "साबुन और पानी"
+          },
+          {
+            "en": "Dry mud",
+            "hi": "सूखी मिट्टी"
+          },
+          {
+            "en": "Paint",
+            "hi": "रंग"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Soap and water are used for handwashing.",
+          "hi": "हाथ धोने के लिए साबुन और पानी उपयोग होते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What do we use to brush our teeth?",
+          "hi": "दाँत साफ करने में क्या उपयोग होता है?"
+        },
+        "options": [
+          {
+            "en": "Pencil",
+            "hi": "पेंसिल"
+          },
+          {
+            "en": "Toothbrush",
+            "hi": "टूथब्रश"
+          },
+          {
+            "en": "Shoe brush",
+            "hi": "जूते का ब्रश"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "A toothbrush is made for cleaning teeth.",
+          "hi": "टूथब्रश दाँत साफ करने के लिए बना है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Where should a used wrapper go?",
+          "hi": "इस्तेमाल किया रैपर कहाँ डालें?"
+        },
+        "options": [
+          {
+            "en": "The floor",
+            "hi": "फर्श पर"
+          },
+          {
+            "en": "A pond",
+            "hi": "तालाब में"
+          },
+          {
+            "en": "A suitable bin",
+            "hi": "उपयुक्त कूड़ेदान"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A suitable bin keeps the place tidy.",
+          "hi": "उपयुक्त कूड़ेदान जगह साफ रखने में मदद करता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which weather picture shows rain?",
+          "hi": "कौन-सा चित्र वर्षा दिखाता है?"
+        },
+        "options": [
+          {
+            "en": "Cloud with falling drops",
+            "hi": "गिरती बूँदों वाला बादल"
+          },
+          {
+            "en": "Only a dry shoe",
+            "hi": "केवल सूखा जूता"
+          },
+          {
+            "en": "A closed book",
+            "hi": "बंद पुस्तक"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Falling water drops show rain.",
+          "hi": "गिरती पानी की बूँदें वर्षा दिखाती हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which item can help keep us dry in rain?",
+          "hi": "वर्षा में कौन-सी वस्तु सूखा रहने में मदद करती है?"
+        },
+        "options": [
+          {
+            "en": "Ball",
+            "hi": "गेंद"
+          },
+          {
+            "en": "Umbrella",
+            "hi": "छाता"
+          },
+          {
+            "en": "Spoon",
+            "hi": "चम्मच"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "An umbrella can shelter us from rain.",
+          "hi": "छाता वर्षा से बचाव दे सकता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What do we need after active play?",
+          "hi": "सक्रिय खेल के बाद हमें क्या भी चाहिए?"
+        },
+        "options": [
+          {
+            "en": "Endless running without a break",
+            "hi": "बिना रुके लगातार दौड़ना"
+          },
+          {
+            "en": "More wrappers on the floor",
+            "hi": "फर्श पर और रैपर"
+          },
+          {
+            "en": "Rest",
+            "hi": "आराम"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Rest is part of a balanced day.",
+          "hi": "आराम संतुलित दिन का हिस्सा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which action uses water carefully?",
+          "hi": "कौन-सा काम पानी सोच-समझकर उपयोग करता है?"
+        },
+        "options": [
+          {
+            "en": "Close the tap when finished",
+            "hi": "काम पूरा होने पर नल बंद करें"
+          },
+          {
+            "en": "Leave it running for no reason",
+            "hi": "बिना कारण बहने दें"
+          },
+          {
+            "en": "Pour drinking water on the floor",
+            "hi": "पीने का पानी फर्श पर डालें"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Closing a tap avoids unnecessary water loss.",
+          "hi": "नल बंद करने से पानी बिना जरूरत नहीं बहता।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which picture suggests sunny weather?",
+          "hi": "कौन-सा चित्र धूप वाला मौसम दिखाता है?"
+        },
+        "options": [
+          {
+            "en": "Bed",
+            "hi": "बिस्तर"
+          },
+          {
+            "en": "Sun",
+            "hi": "सूरज"
+          },
+          {
+            "en": "Soap",
+            "hi": "साबुन"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "A sun picture commonly represents sunny weather.",
+          "hi": "सूरज का चित्र सामान्यतः धूप वाला मौसम दर्शाता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which item helps keep us warm in cold weather?",
+          "hi": "ठंड में कौन-सी वस्तु गरम रहने में मदद करती है?"
+        },
+        "options": [
+          {
+            "en": "Open umbrella only",
+            "hi": "केवल खुला छाता"
+          },
+          {
+            "en": "Empty plate",
+            "hi": "खाली प्लेट"
+          },
+          {
+            "en": "Warm sweater",
+            "hi": "गरम स्वेटर"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A warm sweater can help retain body warmth.",
+          "hi": "गरम स्वेटर शरीर की गरमी बनाए रखने में सहायक है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What can we say when we need a break?",
+          "hi": "विराम चाहिए तो क्या कह सकते हैं?"
+        },
+        "options": [
+          {
+            "en": "I need some rest",
+            "hi": "मुझे थोड़ा आराम चाहिए"
+          },
+          {
+            "en": "I must never stop",
+            "hi": "मुझे कभी नहीं रुकना चाहिए"
+          },
+          {
+            "en": "I will push someone",
+            "hi": "मैं किसी को धक्का दूँगा"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "We can tell a caring adult when we need rest.",
+          "hi": "आराम चाहिए तो देखभाल करने वाले बड़े को बता सकते हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-world-01",
+    "classId": "UKG",
+    "subject": "world",
+    "title": {
+      "en": "Living Things and Plant Needs",
+      "hi": "जीवित चीजें और पौधों की जरूरतें"
+    },
+    "goal": {
+      "en": "Compare living and non-living things using several observations.",
+      "hi": "कई प्रेक्षणों से जीवित और निर्जीव चीजों की तुलना करें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "More than movement",
+          "hi": "केवल गति से अधिक"
+        },
+        "body": {
+          "en": "Animals and plants are living things. They carry out life processes and grow in suitable conditions. A rolling toy moves but is non-living. Use several observations instead of only movement or colour.",
+          "hi": "जानवर और पौधे जीवित हैं। वे जीवन की क्रियाएँ करते और उपयुक्त दशाओं में बढ़ते हैं। खिलौना लुढ़क सकता है, पर केवल चलना उसे जीवित नहीं बनाता। पौधा जगह बदलकर न चले, फिर भी जीवित है। इसलिए केवल गति, आकार या रंग के आधार पर निर्णय न करें। कई बातें मिलाकर देखें।"
+        }
+      },
+      {
+        "title": {
+          "en": "A plant has parts",
+          "hi": "पौधे के भाग होते हैं"
+        },
+        "body": {
+          "en": "Roots usually take up water from soil. A stem supports leaves and other parts. Many green leaves use light in making food. Pictures help us compare these parts without uprooting a plant.",
+          "hi": "जड़ें सामान्यतः मिट्टी से पानी लेती हैं। तना पत्तियों और दूसरे भागों को सहारा देता है। कई हरी पत्तियाँ प्रकाश का उपयोग करके भोजन बनाती हैं। चित्र में जड़, तना और पत्ती खोजें। भाग देखने के लिए पौधा उखाड़ना जरूरी नहीं है। अलग पौधों की पत्तियाँ और तने अलग दिख सकते हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Suitable conditions",
+          "hi": "उपयुक्त दशाएँ"
+        },
+        "body": {
+          "en": "Plants need suitable water, air, light and nutrients. Too much water can also be unhelpful. Notice a plant over time and describe changes rather than expecting every plant to grow at the same speed.",
+          "hi": "पौधों को उपयुक्त पानी, हवा, प्रकाश और पोषक चाहिए। बहुत अधिक पानी देना भी हमेशा अच्छा नहीं है। किसी बड़े के साथ समय-समय पर पौधे को देखें और नई पत्ती जैसे बदलाव बताएँ। सभी पौधे एक जैसी गति से नहीं बढ़ते। सही देखभाल पौधे की जरूरत और आसपास की दशाओं पर निर्भर करती है।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "Tree",
+        "label": {
+          "en": "Tree",
+          "hi": "पेड़"
+        },
+        "picture": "🌳",
+        "say": {
+          "en": "A tree is living.",
+          "hi": "पेड़ जीवित है।"
+        }
+      },
+      {
+        "symbol": "Cat",
+        "label": {
+          "en": "Cat",
+          "hi": "बिल्ली"
+        },
+        "picture": "🐈",
+        "say": {
+          "en": "A cat is living.",
+          "hi": "बिल्ली जीवित है।"
+        }
+      },
+      {
+        "symbol": "Seedling",
+        "label": {
+          "en": "Seedling",
+          "hi": "नन्हा पौधा"
+        },
+        "picture": "🌱",
+        "say": {
+          "en": "A seedling can grow new parts.",
+          "hi": "नन्हे पौधे में नए भाग बन सकते हैं।"
+        }
+      },
+      {
+        "symbol": "Chair",
+        "label": {
+          "en": "Chair",
+          "hi": "कुर्सी"
+        },
+        "picture": "🪑",
+        "say": {
+          "en": "A chair is non-living.",
+          "hi": "कुर्सी निर्जीव है।"
+        }
+      },
+      {
+        "symbol": "Toy car",
+        "label": {
+          "en": "Toy car",
+          "hi": "खिलौना कार"
+        },
+        "picture": "🚗",
+        "say": {
+          "en": "A toy car is non-living even when it rolls.",
+          "hi": "खिलौना कार लुढ़कते हुए भी निर्जीव है।"
+        }
+      },
+      {
+        "symbol": "Leaf",
+        "label": {
+          "en": "Leaf",
+          "hi": "पत्ती"
+        },
+        "picture": "🍃",
+        "say": {
+          "en": "Leaves are plant parts.",
+          "hi": "पत्तियाँ पौधे के भाग हैं।"
+        }
+      },
+      {
+        "symbol": "Water",
+        "label": {
+          "en": "Water",
+          "hi": "पानी"
+        },
+        "picture": "💧",
+        "say": {
+          "en": "Plants need suitable water.",
+          "hi": "पौधों को उपयुक्त पानी चाहिए।"
+        }
+      },
+      {
+        "symbol": "Light",
+        "label": {
+          "en": "Light",
+          "hi": "प्रकाश"
+        },
+        "picture": "☀️",
+        "say": {
+          "en": "Many plants use light to make food.",
+          "hi": "कई पौधे भोजन बनाने में प्रकाश उपयोग करते हैं।"
+        }
+      }
+    ],
+    "trace": "",
+    "play": [
+      {
+        "en": "Sort picture cards into living and non-living.",
+        "hi": "चित्र कार्ड जीवित और निर्जीव समूहों में रखें।"
+      },
+      {
+        "en": "Name a plant part in a picture.",
+        "hi": "चित्र में पौधे के 1 भाग का नाम लें।"
+      },
+      {
+        "en": "Describe one change in a familiar plant.",
+        "hi": "परिचित पौधे में 1 बदलाव बताएँ।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which is a living thing?",
+          "hi": "कौन-सी चीज जीवित है?"
+        },
+        "options": [
+          {
+            "en": "Tree",
+            "hi": "पेड़"
+          },
+          {
+            "en": "Stone",
+            "hi": "पत्थर"
+          },
+          {
+            "en": "Toy car",
+            "hi": "खिलौना कार"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A tree is a living plant.",
+          "hi": "पेड़ एक जीवित पौधा है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is non-living?",
+          "hi": "कौन-सी चीज निर्जीव है?"
+        },
+        "options": [
+          {
+            "en": "Seedling",
+            "hi": "नन्हा पौधा"
+          },
+          {
+            "en": "Chair",
+            "hi": "कुर्सी"
+          },
+          {
+            "en": "Cat",
+            "hi": "बिल्ली"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "A chair does not grow or carry out life processes by itself.",
+          "hi": "कुर्सी अपने आप बढ़ती या जीवन की क्रियाएँ नहीं करती।"
+        }
+      },
+      {
+        "question": {
+          "en": "Does a toy become living just because it rolls?",
+          "hi": "केवल लुढ़कने से क्या खिलौना जीवित हो जाता है?"
+        },
+        "options": [
+          {
+            "en": "Yes, every moving object is living",
+            "hi": "हाँ, हर चलती वस्तु जीवित है"
+          },
+          {
+            "en": "Only if it is red",
+            "hi": "केवल लाल होने पर"
+          },
+          {
+            "en": "No",
+            "hi": "नहीं"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Movement alone does not decide whether something is living.",
+          "hi": "केवल गति से जीवित होना तय नहीं होता।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which plant part usually takes up water from soil?",
+          "hi": "पौधे का कौन-सा भाग सामान्यतः मिट्टी से पानी लेता है?"
+        },
+        "options": [
+          {
+            "en": "Roots",
+            "hi": "जड़ें"
+          },
+          {
+            "en": "Petals",
+            "hi": "पंखुड़ियाँ"
+          },
+          {
+            "en": "Fruit skin",
+            "hi": "फल का छिलका"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Roots usually absorb water from soil.",
+          "hi": "जड़ें सामान्यतः मिट्टी से पानी सोखती हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What does a seedling need to grow well?",
+          "hi": "नन्हे पौधे को अच्छी वृद्धि के लिए क्या चाहिए?"
+        },
+        "options": [
+          {
+            "en": "No air at all",
+            "hi": "बिल्कुल हवा नहीं"
+          },
+          {
+            "en": "Suitable water, air and light",
+            "hi": "उपयुक्त पानी, हवा और प्रकाश"
+          },
+          {
+            "en": "Only a plastic box",
+            "hi": "केवल प्लास्टिक डिब्बा"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Plants need suitable growing conditions; more of everything is not always better.",
+          "hi": "पौधे को उपयुक्त दशाएँ चाहिए; हर चीज बहुत अधिक देना बेहतर नहीं होता।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which change shows growth?",
+          "hi": "कौन-सा बदलाव वृद्धि दिखाता है?"
+        },
+        "options": [
+          {
+            "en": "A stone moved by a hand",
+            "hi": "हाथ से पत्थर खिसकाना"
+          },
+          {
+            "en": "A toy rolling downhill",
+            "hi": "खिलौना ढलान पर लुढ़कना"
+          },
+          {
+            "en": "A seedling making new leaves",
+            "hi": "नन्हे पौधे में नई पत्तियाँ आना"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "New plant parts are evidence of growth.",
+          "hi": "नए पादप भाग बनना वृद्धि का प्रमाण है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is a plant part?",
+          "hi": "पौधे का भाग कौन है?"
+        },
+        "options": [
+          {
+            "en": "Stem",
+            "hi": "तना"
+          },
+          {
+            "en": "Wheel",
+            "hi": "पहिया"
+          },
+          {
+            "en": "Handlebar",
+            "hi": "हैंडल"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A stem supports plant parts and transports materials.",
+          "hi": "तना पादप भागों को सहारा देता और पदार्थ पहुँचाता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Can a plant be living while staying in one place?",
+          "hi": "क्या एक जगह रहकर भी पौधा जीवित हो सकता है?"
+        },
+        "options": [
+          {
+            "en": "Only when a person carries it",
+            "hi": "केवल किसी के उठाने पर"
+          },
+          {
+            "en": "Yes",
+            "hi": "हाँ"
+          },
+          {
+            "en": "No, it must walk",
+            "hi": "नहीं, उसे चलना चाहिए"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Plants are living even though they usually do not move from place to place.",
+          "hi": "पौधे जीवित हैं, भले वे सामान्यतः जगह बदलकर न चलते हों।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which object was made for sitting?",
+          "hi": "बैठने के लिए कौन-सी वस्तु बनाई गई है?"
+        },
+        "options": [
+          {
+            "en": "Butterfly",
+            "hi": "तितली"
+          },
+          {
+            "en": "Leaf",
+            "hi": "पत्ती"
+          },
+          {
+            "en": "Chair",
+            "hi": "कुर्सी"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A chair is a made non-living object.",
+          "hi": "कुर्सी बनाई हुई निर्जीव वस्तु है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is a good way to compare living things?",
+          "hi": "जीवों की तुलना का अच्छा तरीका कौन है?"
+        },
+        "options": [
+          {
+            "en": "Observe several features over time",
+            "hi": "समय के साथ कई लक्षण देखें"
+          },
+          {
+            "en": "Use only colour",
+            "hi": "केवल रंग देखें"
+          },
+          {
+            "en": "Assume anything round is alive",
+            "hi": "हर गोल चीज को जीवित मानें"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Several observations are more useful than one feature alone.",
+          "hi": "अकेले 1 लक्षण से अधिक उपयोगी कई प्रेक्षण हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-world-02",
+    "classId": "UKG",
+    "subject": "world",
+    "title": {
+      "en": "Helpers and Ways to Travel",
+      "hi": "मददगार लोग और आने-जाने के साधन"
+    },
+    "goal": {
+      "en": "Connect familiar jobs and vehicles with what they do.",
+      "hi": "परिचित काम और वाहनों को उनके उपयोग से जोड़ें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "People help a community",
+          "hi": "लोग समुदाय की मदद करते हैं"
+        },
+        "body": {
+          "en": "Teachers, farmers, postal workers, drivers and health workers do different useful jobs. Many people work together behind each service. Jobs can be done by people of different genders.",
+          "hi": "शिक्षक, किसान, डाककर्मी, चालक और स्वास्थ्यकर्मी अलग उपयोगी काम करते हैं। एक सेवा के पीछे कई लोग मिलकर काम कर सकते हैं। चित्र देखकर काम का नाम और उसका उपयोग बताएँ। कोई काम केवल पुरुष या केवल महिला का नहीं है। कौशल, सीखना और अभ्यास काम करने में महत्त्वपूर्ण हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Land, water and air",
+          "hi": "थल, जल और वायु"
+        },
+        "body": {
+          "en": "Buses and bicycles travel on roads. Trains use rails, boats travel on water, and aeroplanes fly through the air. Compare their usual routes and uses rather than choosing one vehicle for every journey.",
+          "hi": "बस और साइकिल सड़क पर चलती हैं। रेलगाड़ी पटरियों का उपयोग करती है। नाव पानी पर चलती और विमान हवा में उड़ता है। चित्रों को थल, जल और वायु के समूहों में रखें। हर यात्रा में एक ही वाहन उपयोग नहीं होता। दूरी, रास्ता और जरूरत देखकर लोग आने-जाने का साधन चुनते हैं।"
+        }
+      },
+      {
+        "title": {
+          "en": "Travel with care",
+          "hi": "ध्यान से यात्रा करें"
+        },
+        "body": {
+          "en": "A child should stay with a trusted adult near roads. Use suitable crossings and follow actual signals and adult guidance. Thank the people who help a journey happen.",
+          "hi": "सड़क के पास बच्चे को विश्वसनीय बड़े के साथ रहना चाहिए। उपयुक्त पारपथ और वास्तविक यातायात संकेतों का उपयोग करें। लाल बत्ती सामान्यतः रुकने का संकेत देती है। केवल चित्र देखकर अकेले सड़क पार करने की कोशिश न करें। दूसरों के लिए जगह देना और मदद करने वाले लोगों को धन्यवाद कहना यात्रा को सम्मानपूर्ण बनाता है।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "Teacher",
+        "label": {
+          "en": "Teacher",
+          "hi": "शिक्षक"
+        },
+        "picture": "🧑‍🏫",
+        "say": {
+          "en": "A teacher helps us learn.",
+          "hi": "शिक्षक सीखने में मदद करता है।"
+        }
+      },
+      {
+        "symbol": "Farmer",
+        "label": {
+          "en": "Farmer",
+          "hi": "किसान"
+        },
+        "picture": "🧑‍🌾",
+        "say": {
+          "en": "A farmer helps grow crops.",
+          "hi": "किसान फसल उगाने में काम करता है।"
+        }
+      },
+      {
+        "symbol": "Health worker",
+        "label": {
+          "en": "Health worker",
+          "hi": "स्वास्थ्यकर्मी"
+        },
+        "picture": "🧑‍⚕️",
+        "say": {
+          "en": "Health workers care for people.",
+          "hi": "स्वास्थ्यकर्मी लोगों की देखभाल करते हैं।"
+        }
+      },
+      {
+        "symbol": "Mail",
+        "label": {
+          "en": "Postal work",
+          "hi": "डाक का काम"
+        },
+        "picture": "✉️",
+        "say": {
+          "en": "Postal workers help deliver letters.",
+          "hi": "डाककर्मी पत्र पहुँचाने में मदद करते हैं।"
+        }
+      },
+      {
+        "symbol": "Bus",
+        "label": {
+          "en": "Bus",
+          "hi": "बस"
+        },
+        "picture": "🚌",
+        "say": {
+          "en": "A bus travels on roads.",
+          "hi": "बस सड़क पर चलती है।"
+        }
+      },
+      {
+        "symbol": "Train",
+        "label": {
+          "en": "Train",
+          "hi": "रेलगाड़ी"
+        },
+        "picture": "🚆",
+        "say": {
+          "en": "A train runs on rails.",
+          "hi": "रेलगाड़ी पटरियों पर चलती है।"
+        }
+      },
+      {
+        "symbol": "Boat",
+        "label": {
+          "en": "Boat",
+          "hi": "नाव"
+        },
+        "picture": "⛵",
+        "say": {
+          "en": "A boat travels on water.",
+          "hi": "नाव पानी पर चलती है।"
+        }
+      },
+      {
+        "symbol": "Plane",
+        "label": {
+          "en": "Aeroplane",
+          "hi": "विमान"
+        },
+        "picture": "✈️",
+        "say": {
+          "en": "An aeroplane travels through air.",
+          "hi": "विमान हवा में उड़ता है।"
+        }
+      }
+    ],
+    "trace": "",
+    "play": [
+      {
+        "en": "Match a helper card with a job you can describe.",
+        "hi": "मददगार के कार्ड को बताए जा सकने वाले काम से जोड़ें।"
+      },
+      {
+        "en": "Sort vehicles by land, water or air.",
+        "hi": "वाहन थल, जल और वायु समूहों में रखें।"
+      },
+      {
+        "en": "Practise saying thank you to a helper.",
+        "hi": "मददगार को धन्यवाद कहने का अभ्यास करें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Who helps children learn in a classroom?",
+          "hi": "कक्षा में बच्चों को सीखने में कौन मदद करता है?"
+        },
+        "options": [
+          {
+            "en": "Teacher",
+            "hi": "शिक्षक"
+          },
+          {
+            "en": "Bus",
+            "hi": "बस"
+          },
+          {
+            "en": "Traffic light",
+            "hi": "यातायात बत्ती"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A teacher supports learning.",
+          "hi": "शिक्षक सीखने में सहायता करता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Who helps grow crops?",
+          "hi": "फसल उगाने में कौन काम करता है?"
+        },
+        "options": [
+          {
+            "en": "Postbox",
+            "hi": "डाकपेटी"
+          },
+          {
+            "en": "Farmer",
+            "hi": "किसान"
+          },
+          {
+            "en": "Pilot only",
+            "hi": "केवल पायलट"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Farmers grow crops using knowledge and work.",
+          "hi": "किसान ज्ञान और मेहनत से फसल उगाते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Who brings letters or parcels as part of postal work?",
+          "hi": "डाक के काम में पत्र या पार्सल कौन पहुँचाता है?"
+        },
+        "options": [
+          {
+            "en": "Dentist",
+            "hi": "दंत चिकित्सक"
+          },
+          {
+            "en": "Tree",
+            "hi": "पेड़"
+          },
+          {
+            "en": "Postal worker",
+            "hi": "डाककर्मी"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Postal workers help deliver mail.",
+          "hi": "डाककर्मी डाक पहुँचाने में मदद करते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which vehicle runs on rails?",
+          "hi": "कौन-सा वाहन पटरियों पर चलता है?"
+        },
+        "options": [
+          {
+            "en": "Train",
+            "hi": "रेलगाड़ी"
+          },
+          {
+            "en": "Bicycle",
+            "hi": "साइकिल"
+          },
+          {
+            "en": "Boat",
+            "hi": "नाव"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A train travels on rails.",
+          "hi": "रेलगाड़ी पटरियों पर चलती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which vehicle travels on water?",
+          "hi": "कौन-सा वाहन पानी पर चलता है?"
+        },
+        "options": [
+          {
+            "en": "Train",
+            "hi": "रेलगाड़ी"
+          },
+          {
+            "en": "Boat",
+            "hi": "नाव"
+          },
+          {
+            "en": "Bus",
+            "hi": "बस"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "A boat is water transport.",
+          "hi": "नाव जल परिवहन है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which vehicle can carry many people on a road?",
+          "hi": "सड़क पर कई लोगों को कौन-सा वाहन ले जा सकता है?"
+        },
+        "options": [
+          {
+            "en": "Spoon",
+            "hi": "चम्मच"
+          },
+          {
+            "en": "School desk",
+            "hi": "विद्यालय की मेज"
+          },
+          {
+            "en": "Bus",
+            "hi": "बस"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A bus is a road vehicle for passengers.",
+          "hi": "बस यात्रियों को ले जाने वाला सड़क वाहन है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What should a child do before crossing a road?",
+          "hi": "सड़क पार करने से पहले बच्चे को क्या करना चाहिए?"
+        },
+        "options": [
+          {
+            "en": "Stay with a trusted adult and use a suitable crossing",
+            "hi": "विश्वसनीय बड़े के साथ उपयुक्त पारपथ उपयोग करें"
+          },
+          {
+            "en": "Run without looking",
+            "hi": "देखे बिना दौड़ें"
+          },
+          {
+            "en": "Play in traffic",
+            "hi": "यातायात में खेलें"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "An adult helps choose and use a suitable crossing safely.",
+          "hi": "बड़ा उपयुक्त पारपथ चुनने और सही ढंग से उपयोग करने में मदद करता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which traffic signal colour usually means stop?",
+          "hi": "यातायात संकेत में सामान्यतः कौन-सा रंग रुकने को कहता है?"
+        },
+        "options": [
+          {
+            "en": "Pink",
+            "hi": "गुलाबी"
+          },
+          {
+            "en": "Red",
+            "hi": "लाल"
+          },
+          {
+            "en": "Purple",
+            "hi": "बैंगनी"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Red commonly indicates stop; follow the adult and actual signals.",
+          "hi": "लाल सामान्यतः रुकने का संकेत है; बड़े और वास्तविक संकेतों का पालन करें।"
+        }
+      },
+      {
+        "question": {
+          "en": "Can people of different genders do helping jobs?",
+          "hi": "क्या अलग-अलग लिंग के लोग मदद वाले काम कर सकते हैं?"
+        },
+        "options": [
+          {
+            "en": "No, only men can be drivers",
+            "hi": "नहीं, केवल पुरुष चालक बन सकते हैं"
+          },
+          {
+            "en": "No, only women can teach",
+            "hi": "नहीं, केवल महिलाएँ पढ़ा सकती हैं"
+          },
+          {
+            "en": "Yes",
+            "hi": "हाँ"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Jobs depend on skills and training, not a fixed gender role.",
+          "hi": "काम कौशल और प्रशिक्षण से जुड़ा है, तय लैंगिक भूमिका से नहीं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Who helps care for people when they are unwell?",
+          "hi": "अस्वस्थ लोगों की देखभाल में कौन मदद करता है?"
+        },
+        "options": [
+          {
+            "en": "Health workers",
+            "hi": "स्वास्थ्यकर्मी"
+          },
+          {
+            "en": "Toy sellers only",
+            "hi": "केवल खिलौने बेचने वाले"
+          },
+          {
+            "en": "Traffic cones",
+            "hi": "यातायात शंकु"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Health workers provide appropriate professional care.",
+          "hi": "स्वास्थ्यकर्मी उपयुक्त पेशेवर देखभाल देते हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-world-03",
+    "classId": "UKG",
+    "subject": "world",
+    "title": {
+      "en": "Food, Water and Clean Habits",
+      "hi": "भोजन, पानी और साफ आदतें"
+    },
+    "goal": {
+      "en": "Recognise food variety, safe drinking water and thoughtful cleanliness.",
+      "hi": "भोजन की विविधता, सुरक्षित पानी और सोच-समझकर सफाई पहचानें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Different foods help us",
+          "hi": "अलग भोजन हमारे काम आता है"
+        },
+        "body": {
+          "en": "Different foods provide different nutrients. Meals can include familiar grains, vegetables, fruits and other suitable foods. People’s meals differ, and we should not tease someone about a meal.",
+          "hi": "अलग भोजन से अलग पोषक मिलते हैं। भोजन में परिचित अनाज, सब्जियाँ, फल और दूसरी उपयुक्त चीजें शामिल हो सकती हैं। केवल 1 भोजन हमेशा सब कुछ नहीं देता। परिवारों की भोजन पसंद और जरूरतें अलग हो सकती हैं। किसी की थाली का मजाक न बनाएँ और किसी मित्र को अपनी चीज खाने को मजबूर न करें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Water meant for drinking",
+          "hi": "पीने के लिए पानी"
+        },
+        "body": {
+          "en": "Use safe drinking water and a clean container. Water used for painting or washing is not drinking water. Tell a caring adult when you need water or help with a container.",
+          "hi": "पीने के लिए सुरक्षित पानी और साफ बर्तन उपयोग करते हैं। रंग मिलाने या सफाई में उपयोग हुआ पानी पीने का पानी नहीं है। प्यास या बर्तन सँभालने में मदद चाहिए तो देखभाल करने वाले बड़े को बताएँ। काम पूरा होने पर नल बंद करें। पानी की हर उपयोगी मात्रा का ध्यान रखना अच्छी आदत है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Keep food spaces clean",
+          "hi": "भोजन की जगह साफ रखें"
+        },
+        "body": {
+          "en": "Wash hands with soap and water before eating. Take suitable portions, notice whether more is needed and use a suitable bin for waste. These habits support clean shared spaces without turning meals into a competition.",
+          "hi": "खाने से पहले साबुन और पानी से हाथ धोना उपयोगी है। जरूरत के अनुसार भोजन लें और ध्यान दें कि और चाहिए या नहीं। बची गंदगी उपयुक्त कूड़ेदान में रखें। सफाई और कम बर्बादी साझा जगह की देखभाल हैं। सबसे तेज खाने या दूसरों से अधिक लेने की प्रतियोगिता बनाना जरूरी नहीं है।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "Banana",
+        "label": {
+          "en": "Banana",
+          "hi": "केला"
+        },
+        "picture": "🍌",
+        "say": {
+          "en": "A banana is a fruit.",
+          "hi": "केला एक फल है।"
+        }
+      },
+      {
+        "symbol": "Carrot",
+        "label": {
+          "en": "Carrot",
+          "hi": "गाजर"
+        },
+        "picture": "🥕",
+        "say": {
+          "en": "A carrot is commonly eaten as a vegetable.",
+          "hi": "गाजर सामान्यतः सब्जी की तरह खाई जाती है।"
+        }
+      },
+      {
+        "symbol": "Rice",
+        "label": {
+          "en": "Rice",
+          "hi": "चावल"
+        },
+        "picture": "🍚",
+        "say": {
+          "en": "Rice is a grain food.",
+          "hi": "चावल अनाज का भोजन है।"
+        }
+      },
+      {
+        "symbol": "Pulses",
+        "label": {
+          "en": "Pulses",
+          "hi": "दालें"
+        },
+        "picture": "🫘",
+        "say": {
+          "en": "Pulses are one kind of food.",
+          "hi": "दालें भोजन का 1 प्रकार हैं।"
+        }
+      },
+      {
+        "symbol": "Water",
+        "label": {
+          "en": "Drinking water",
+          "hi": "पीने का पानी"
+        },
+        "picture": "💧",
+        "say": {
+          "en": "Use safe drinking water.",
+          "hi": "सुरक्षित पीने का पानी उपयोग करें।"
+        }
+      },
+      {
+        "symbol": "Soap",
+        "label": {
+          "en": "Soap",
+          "hi": "साबुन"
+        },
+        "picture": "🧼",
+        "say": {
+          "en": "Soap is for cleaning, not eating.",
+          "hi": "साबुन सफाई के लिए है, खाने के लिए नहीं।"
+        }
+      },
+      {
+        "symbol": "Hands",
+        "label": {
+          "en": "Clean hands",
+          "hi": "साफ हाथ"
+        },
+        "picture": "👐",
+        "say": {
+          "en": "Wash hands before eating.",
+          "hi": "खाने से पहले हाथ धोएँ।"
+        }
+      },
+      {
+        "symbol": "Tap",
+        "label": {
+          "en": "Tap",
+          "hi": "नल"
+        },
+        "picture": "🚰",
+        "say": {
+          "en": "Close the tap when finished.",
+          "hi": "काम पूरा होने पर नल बंद करें।"
+        }
+      }
+    ],
+    "trace": "",
+    "play": [
+      {
+        "en": "Name 3 different foods in the cards.",
+        "hi": "कार्डों में 3 अलग भोजन के नाम लें।"
+      },
+      {
+        "en": "Explain which water is meant for drinking.",
+        "hi": "बताएँ कि कौन-सा पानी पीने के लिए है।"
+      },
+      {
+        "en": "Mime handwashing with soap and water.",
+        "hi": "साबुन और पानी से हाथ धोने की नकल करें।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "Which drink helps meet our need for water?",
+          "hi": "कौन-सा पेय पानी की जरूरत पूरी करने में मदद करता है?"
+        },
+        "options": [
+          {
+            "en": "Safe drinking water",
+            "hi": "सुरक्षित पीने का पानी"
+          },
+          {
+            "en": "Paint water",
+            "hi": "रंग मिला पानी"
+          },
+          {
+            "en": "Soapy water",
+            "hi": "साबुन वाला पानी"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Safe drinking water is meant for drinking.",
+          "hi": "सुरक्षित पीने का पानी पीने के लिए होता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which habit is useful before eating?",
+          "hi": "खाने से पहले कौन-सी आदत उपयोगी है?"
+        },
+        "options": [
+          {
+            "en": "Touch every shoe",
+            "hi": "हर जूता छूना"
+          },
+          {
+            "en": "Wash hands with soap and water",
+            "hi": "साबुन और पानी से हाथ धोना"
+          },
+          {
+            "en": "Rub hands in dirt",
+            "hi": "हाथ मिट्टी में रगड़ना"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Clean hands help reduce dirt and germs reaching food.",
+          "hi": "साफ हाथ भोजन तक गंदगी और रोगाणु पहुँचने को घटाने में सहायक हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is a fruit?",
+          "hi": "फल कौन है?"
+        },
+        "options": [
+          {
+            "en": "Toothbrush",
+            "hi": "टूथब्रश"
+          },
+          {
+            "en": "Soap",
+            "hi": "साबुन"
+          },
+          {
+            "en": "Banana",
+            "hi": "केला"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A banana is a fruit.",
+          "hi": "केला एक फल है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is a vegetable we commonly eat?",
+          "hi": "सामान्यतः खाई जाने वाली सब्जी कौन है?"
+        },
+        "options": [
+          {
+            "en": "Carrot",
+            "hi": "गाजर"
+          },
+          {
+            "en": "Plastic cup",
+            "hi": "प्लास्टिक कप"
+          },
+          {
+            "en": "Pencil",
+            "hi": "पेंसिल"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A carrot is an edible plant part used as a vegetable.",
+          "hi": "गाजर पौधे का खाने योग्य भाग है जिसे सब्जी की तरह उपयोग करते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Why eat different suitable foods?",
+          "hi": "अलग-अलग उपयुक्त भोजन क्यों खाएँ?"
+        },
+        "options": [
+          {
+            "en": "Colours alone make every food identical",
+            "hi": "केवल रंग हर भोजन को समान बनाते हैं"
+          },
+          {
+            "en": "They provide different nutrients",
+            "hi": "वे अलग पोषक देते हैं"
+          },
+          {
+            "en": "One food always provides everything",
+            "hi": "1 भोजन हमेशा सब कुछ देता है"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Food variety can provide a range of nutrients.",
+          "hi": "भोजन की विविधता से कई तरह के पोषक मिल सकते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What can we do before taking another serving?",
+          "hi": "और भोजन लेने से पहले क्या कर सकते हैं?"
+        },
+        "options": [
+          {
+            "en": "Throw the first serving away",
+            "hi": "पहला भोजन फेंक दें"
+          },
+          {
+            "en": "Take food only to waste it",
+            "hi": "केवल बर्बाद करने के लिए लें"
+          },
+          {
+            "en": "Notice whether we want more",
+            "hi": "ध्यान दें कि और चाहिए या नहीं"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Noticing our needs and taking suitable portions can reduce waste.",
+          "hi": "अपनी जरूरत देखकर उपयुक्त मात्रा लेने से बर्बादी घट सकती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which action helps keep drinking water clean?",
+          "hi": "पीने का पानी साफ रखने में कौन-सा काम सहायक है?"
+        },
+        "options": [
+          {
+            "en": "Use a clean container",
+            "hi": "साफ बर्तन उपयोग करें"
+          },
+          {
+            "en": "Drop litter into it",
+            "hi": "उसमें कूड़ा डालें"
+          },
+          {
+            "en": "Mix it with soap for drinking",
+            "hi": "पीने के लिए साबुन मिलाएँ"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "A clean container helps protect drinking water.",
+          "hi": "साफ बर्तन पीने के पानी की रक्षा में सहायक है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which item is used for cleaning hands rather than eating?",
+          "hi": "खाने के बजाय हाथ साफ करने में कौन-सी वस्तु उपयोग होती है?"
+        },
+        "options": [
+          {
+            "en": "Banana",
+            "hi": "केला"
+          },
+          {
+            "en": "Soap",
+            "hi": "साबुन"
+          },
+          {
+            "en": "Rice",
+            "hi": "चावल"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Soap is a cleaning material, not food.",
+          "hi": "साबुन सफाई की सामग्री है, भोजन नहीं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What should we do when finished with a tap?",
+          "hi": "नल का काम पूरा होने पर क्या करें?"
+        },
+        "options": [
+          {
+            "en": "Leave it running",
+            "hi": "बहता छोड़ें"
+          },
+          {
+            "en": "Break it",
+            "hi": "तोड़ दें"
+          },
+          {
+            "en": "Close it",
+            "hi": "बंद करें"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Closing it avoids unnecessary use of water.",
+          "hi": "बंद करने से पानी बिना जरूरत उपयोग नहीं होता।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which action respects different food choices?",
+          "hi": "अलग भोजन पसंद का सम्मान कौन-सा काम करता है?"
+        },
+        "options": [
+          {
+            "en": "Do not tease someone about their meal",
+            "hi": "किसी के भोजन का मजाक न बनाएँ"
+          },
+          {
+            "en": "Mock every different meal",
+            "hi": "हर अलग भोजन का मजाक बनाएँ"
+          },
+          {
+            "en": "Force a friend to eat your food",
+            "hi": "मित्र को अपना भोजन खाने के लिए मजबूर करें"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "People eat differently; respectful words make shared meals welcoming.",
+          "hi": "लोग अलग भोजन खाते हैं; सम्मानपूर्ण शब्द साथ खाने को सहज बनाते हैं।"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ukg-world-04",
+    "classId": "UKG",
+    "subject": "world",
+    "title": {
+      "en": "Weather and Caring for Nature",
+      "hi": "मौसम और प्रकृति की देखभाल"
+    },
+    "goal": {
+      "en": "Observe weather and choose small caring actions for shared surroundings.",
+      "hi": "मौसम देखें और साझा आसपास के लिए छोटे देखभाल वाले काम चुनें।"
+    },
+    "notes": [
+      {
+        "title": {
+          "en": "Observe today",
+          "hi": "आज देखें"
+        },
+        "body": {
+          "en": "Weather describes conditions such as sunshine, clouds, rain, wind and warmth at a time. Look safely through a window or at a picture. Different places can have different weather on the same day.",
+          "hi": "किसी समय धूप, बादल, वर्षा, हवा और गरमी जैसी दशाएँ मौसम बताती हैं। खिड़की से सुरक्षित ढंग से या चित्र में देखें। आज की दशा का नाम लें, केवल अनुमान न लगाएँ। एक ही दिन अलग जगहों पर अलग मौसम हो सकता है। धूप की बात करने के लिए सूरज को सीधे देखना जरूरी नहीं है।"
+        }
+      },
+      {
+        "title": {
+          "en": "Patterns through a year",
+          "hi": "वर्ष भर के क्रम"
+        },
+        "body": {
+          "en": "Seasons are parts of a year with usual weather patterns. The exact pattern differs across places, and a season does not make every day identical. Clothes, shelter and activities can change with conditions.",
+          "hi": "ऋतु वर्ष का वह भाग है जिसमें सामान्य मौसम का कोई क्रम दिखाई देता है। अलग जगहों पर यह क्रम अलग हो सकता है। किसी ऋतु में भी हर दिन बिल्कुल समान नहीं होता। वर्षा में रेनकोट या छाता और ठंड में गरम कपड़े सहायक हो सकते हैं। चुनाव करते समय वास्तविक दशा और बड़े के मार्गदर्शन का ध्यान रखें।"
+        }
+      },
+      {
+        "title": {
+          "en": "Small caring choices",
+          "hi": "देखभाल के छोटे चुनाव"
+        },
+        "body": {
+          "en": "Keep litter away from water and gardens. Use suitable paper again and avoid unnecessary water loss. Observe wildlife without disturbing it. People can care for surroundings together without needing expensive materials.",
+          "hi": "कूड़ा पानी और बगीचे से दूर उपयुक्त कूड़ेदान में रखें। उपयुक्त कागज की दूसरी ओर उपयोग करें और पानी बिना जरूरत न बहने दें। वन्य जीव को परेशान किए बिना दूर से देखें। आसपास की देखभाल मिलकर की जा सकती है। इसके लिए महँगी सामग्री जरूरी नहीं; सोच-समझकर किए छोटे काम भी उपयोगी हैं।"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "symbol": "Sunny",
+        "label": {
+          "en": "Sunny",
+          "hi": "धूप वाला"
+        },
+        "picture": "☀️",
+        "say": {
+          "en": "Sunny describes one weather condition.",
+          "hi": "धूप वाला मौसम की 1 दशा है।"
+        }
+      },
+      {
+        "symbol": "Cloudy",
+        "label": {
+          "en": "Cloudy",
+          "hi": "बादल वाला"
+        },
+        "picture": "☁️",
+        "say": {
+          "en": "Clouds may cover part of the sky.",
+          "hi": "बादल आकाश के किसी भाग को ढक सकते हैं।"
+        }
+      },
+      {
+        "symbol": "Rainy",
+        "label": {
+          "en": "Rainy",
+          "hi": "वर्षा वाला"
+        },
+        "picture": "🌧️",
+        "say": {
+          "en": "Rain falls as water drops.",
+          "hi": "वर्षा में पानी की बूँदें गिरती हैं।"
+        }
+      },
+      {
+        "symbol": "Windy",
+        "label": {
+          "en": "Windy",
+          "hi": "हवा वाला"
+        },
+        "picture": "🍃",
+        "say": {
+          "en": "Wind can move leaves.",
+          "hi": "हवा पत्तियाँ हिला सकती है।"
+        }
+      },
+      {
+        "symbol": "Cold",
+        "label": {
+          "en": "Cold weather",
+          "hi": "ठंडा मौसम"
+        },
+        "picture": "🧥",
+        "say": {
+          "en": "Warm clothes can help in cold weather.",
+          "hi": "ठंड में गरम कपड़े मदद कर सकते हैं।"
+        }
+      },
+      {
+        "symbol": "Garden",
+        "label": {
+          "en": "Garden",
+          "hi": "बगीचा"
+        },
+        "picture": "🌻",
+        "say": {
+          "en": "Care for shared gardens.",
+          "hi": "साझे बगीचे की देखभाल करें।"
+        }
+      },
+      {
+        "symbol": "Paper",
+        "label": {
+          "en": "Reuse suitable paper",
+          "hi": "उपयुक्त कागज फिर उपयोग करें"
+        },
+        "picture": "📄",
+        "say": {
+          "en": "Use suitable paper again.",
+          "hi": "उपयुक्त कागज फिर उपयोग करें।"
+        }
+      },
+      {
+        "symbol": "Water",
+        "label": {
+          "en": "Care for water",
+          "hi": "पानी की देखभाल"
+        },
+        "picture": "💧",
+        "say": {
+          "en": "Do not waste water.",
+          "hi": "पानी बर्बाद न करें।"
+        }
+      }
+    ],
+    "trace": "",
+    "play": [
+      {
+        "en": "Choose words for the weather in a picture.",
+        "hi": "चित्र के मौसम के लिए शब्द चुनें।"
+      },
+      {
+        "en": "Sort 3 pictures into caring and uncaring actions.",
+        "hi": "3 चित्र देखभाल वाले और बिना देखभाल वाले कामों में रखें।"
+      },
+      {
+        "en": "Tell one small way to care for a shared place.",
+        "hi": "साझी जगह की देखभाल का 1 छोटा तरीका बताएँ।"
+      }
+    ],
+    "quiz": [
+      {
+        "question": {
+          "en": "What is weather?",
+          "hi": "मौसम क्या है?"
+        },
+        "options": [
+          {
+            "en": "The condition of air around us at a time",
+            "hi": "किसी समय आसपास की हवा की दशा"
+          },
+          {
+            "en": "Only the number of toys",
+            "hi": "केवल खिलौनों की संख्या"
+          },
+          {
+            "en": "A type of shoe",
+            "hi": "जूते का प्रकार"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Weather describes conditions such as rain, wind and warmth.",
+          "hi": "मौसम वर्षा, हवा और गरमी जैसी दशाएँ बताता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which picture shows windy weather?",
+          "hi": "कौन-सा चित्र हवा वाला मौसम दिखाता है?"
+        },
+        "options": [
+          {
+            "en": "A still spoon",
+            "hi": "स्थिर चम्मच"
+          },
+          {
+            "en": "Leaves blowing",
+            "hi": "उड़ती पत्तियाँ"
+          },
+          {
+            "en": "A closed cupboard",
+            "hi": "बंद अलमारी"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Moving leaves can show the effect of wind.",
+          "hi": "हिलती या उड़ती पत्तियाँ हवा का प्रभाव दिखा सकती हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "What can a raincoat help with?",
+          "hi": "रेनकोट किसमें मदद कर सकता है?"
+        },
+        "options": [
+          {
+            "en": "Making food",
+            "hi": "भोजन बनाने में"
+          },
+          {
+            "en": "Growing wheels",
+            "hi": "पहिए उगाने में"
+          },
+          {
+            "en": "Keeping us drier in rain",
+            "hi": "वर्षा में अधिक सूखा रहने में"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A raincoat can keep rain off the body.",
+          "hi": "रेनकोट वर्षा का पानी शरीर से दूर रखने में सहायक है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Do all places have the same weather at the same time?",
+          "hi": "क्या हर जगह एक समय पर समान मौसम होता है?"
+        },
+        "options": [
+          {
+            "en": "No",
+            "hi": "नहीं"
+          },
+          {
+            "en": "Yes, always",
+            "hi": "हाँ, हमेशा"
+          },
+          {
+            "en": "Only places with trees do",
+            "hi": "केवल पेड़ वाली जगहों में होता है"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Weather can differ from place to place.",
+          "hi": "मौसम जगह-जगह अलग हो सकता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What is a season?",
+          "hi": "ऋतु क्या है?"
+        },
+        "options": [
+          {
+            "en": "A toy box",
+            "hi": "खिलौनों का डिब्बा"
+          },
+          {
+            "en": "A part of the year with a usual weather pattern",
+            "hi": "वर्ष का सामान्य मौसम-क्रम वाला भाग"
+          },
+          {
+            "en": "A single pencil",
+            "hi": "1 पेंसिल"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Seasonal patterns extend over a part of the year, though local weather varies.",
+          "hi": "ऋतु का क्रम वर्ष के एक भाग में दिखता है, हालांकि स्थानीय मौसम बदलता है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which action cares for a shared garden?",
+          "hi": "साझे बगीचे की देखभाल कौन-सा काम करता है?"
+        },
+        "options": [
+          {
+            "en": "Break branches for fun",
+            "hi": "मजे के लिए शाखाएँ तोड़ें"
+          },
+          {
+            "en": "Leave plastic around plants",
+            "hi": "पौधों के पास प्लास्टिक छोड़ें"
+          },
+          {
+            "en": "Keep litter out and follow plant-care guidance",
+            "hi": "कूड़ा दूर रखें और पौधों की देखभाल का निर्देश मानें"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "A tidy garden and suitable care support living things.",
+          "hi": "साफ बगीचा और उपयुक्त देखभाल जीवों को सहारा देते हैं।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which action can save paper?",
+          "hi": "कौन-सा काम कागज बचा सकता है?"
+        },
+        "options": [
+          {
+            "en": "Use the other suitable side before discarding",
+            "hi": "फेंकने से पहले उपयुक्त दूसरी ओर उपयोग करें"
+          },
+          {
+            "en": "Throw away every unused sheet",
+            "hi": "हर खाली पन्ना फेंक दें"
+          },
+          {
+            "en": "Tear books for no reason",
+            "hi": "बिना कारण पुस्तक फाड़ें"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Using suitable paper again can reduce waste.",
+          "hi": "उपयुक्त कागज फिर उपयोग करने से बर्बादी घट सकती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "What should we do with an unfamiliar wild animal?",
+          "hi": "अपरिचित वन्य जीव के साथ क्या करें?"
+        },
+        "options": [
+          {
+            "en": "Try to pick it up",
+            "hi": "उठाने का प्रयास करें"
+          },
+          {
+            "en": "Observe from a suitable distance with an adult",
+            "hi": "बड़े के साथ उपयुक्त दूरी से देखें"
+          },
+          {
+            "en": "Chase it",
+            "hi": "पीछा करें"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "Space helps protect wildlife and people.",
+          "hi": "दूरी वन्य जीव और लोगों की रक्षा में सहायक है।"
+        }
+      },
+      {
+        "question": {
+          "en": "Which is one way to use water thoughtfully?",
+          "hi": "पानी सोच-समझकर उपयोग करने का 1 तरीका कौन है?"
+        },
+        "options": [
+          {
+            "en": "Let clean water run away needlessly",
+            "hi": "साफ पानी बिना जरूरत बहाएँ"
+          },
+          {
+            "en": "Drop wrappers in a stream",
+            "hi": "धारा में रैपर डालें"
+          },
+          {
+            "en": "Close an unused tap",
+            "hi": "अनुपयोगी खुला नल बंद करें"
+          }
+        ],
+        "correct": 2,
+        "reason": {
+          "en": "Closing an unused tap avoids waste.",
+          "hi": "अनुपयोगी नल बंद करने से बर्बादी घटती है।"
+        }
+      },
+      {
+        "question": {
+          "en": "How can we describe today’s weather?",
+          "hi": "आज के मौसम का वर्णन कैसे करें?"
+        },
+        "options": [
+          {
+            "en": "Look at safe observations and use words like cloudy or sunny",
+            "hi": "सुरक्षित प्रेक्षण देखकर बादल या धूप जैसे शब्द कहें"
+          },
+          {
+            "en": "Guess only from a favourite colour",
+            "hi": "केवल पसंदीदा रंग से अनुमान लगाएँ"
+          },
+          {
+            "en": "Assume every day is identical",
+            "hi": "हर दिन समान मानें"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "Observation helps us describe actual conditions.",
+          "hi": "प्रेक्षण से वास्तविक दशाओं का वर्णन करने में मदद मिलती है।"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,1417 @@
+{
+  "number": 1,
+  "id": "physics11-01",
+  "title": {
+    "en": "Units and Measurements",
+    "hi": "मात्रक और मापन"
+  },
+  "unit": {
+    "en": "Physics",
+    "hi": "भौतिक विज्ञान"
+  },
+  "scenes": [
+    {
+      "id": "phy11-01-1",
+      "title": {
+        "en": "Significant figures",
+        "hi": "सार्थक अंक"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 0
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Measured length",
+            "hi": "मापी लंबाई"
+          },
+          "min": 1,
+          "max": 99.99,
+          "step": 0.01,
+          "initial": 12.34,
+          "unit": "cm"
+        }
+      ],
+      "noteIndex": 0,
+      "goal": {
+        "en": "Compare a length rounded to 3 significant figures.",
+        "hi": "3 सार्थक अंकों में लंबाई का सन्निकटन तुलना करें।"
+      },
+      "observe": {
+        "en": "Move the measured length and compare its 3-significant-figure report with the separately labelled 1-decimal-place report. These use different rules.",
+        "hi": "मापी लंबाई बदलकर 3 सार्थक अंकों वाला परिणाम और अलग नामित दशमलव के 1 स्थान वाला परिणाम तुलना करें। दोनों के नियम अलग हैं।"
+      },
+      "modelNote": {
+        "en": "The slider is a number-reporting exercise, not an actual calibrated instrument.",
+        "hi": "स्लाइडर संख्या लिखने का अभ्यास है, वास्तविक अंशांकित यंत्र नहीं।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "Leading zeros locate the decimal; meaningful digits determine the retained precision.",
+          "hi": "प्रारंभिक शून्य दशमलव स्थान बताते हैं; अर्थपूर्ण अंक रखी परिशुद्धता तय करते हैं।"
+        }
+      },
+      "realLife": {
+        "en": "A laboratory notebook should not report unsupported digits.",
+        "hi": "प्रयोगशाला कॉपी में अनुचित अतिरिक्त अंक नहीं लिखने चाहिए।"
+      },
+      "quick": {
+        "question": {
+          "en": "How many significant figures are in 12.3?",
+          "hi": "12.3 में कितने सार्थक अंक हैं?"
+        },
+        "options": [
+          {
+            "en": "2",
+            "hi": "2"
+          },
+          {
+            "en": "3",
+            "hi": "3"
+          },
+          {
+            "en": "4",
+            "hi": "4"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "All 3 digits are meaningful.",
+          "hi": "तीनों अंक अर्थपूर्ण हैं।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-01-1-low",
+          "label": {
+            "en": "Explore the lower setting: 1 cm",
+            "hi": "निचली सेटिंग देखें: 1 cm"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1
+          }
+        },
+        {
+          "id": "phy11-01-1-high",
+          "label": {
+            "en": "Compare the upper setting: 99.99 cm",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 99.99 cm"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 99.99
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 50.495
+          },
+          "text": {
+            "en": "Small values still require the same reporting rule.",
+            "hi": "छोटे मान में भी वही नियम लागू है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 50.495
+          },
+          "text": {
+            "en": "More digits on screen do not imply a better instrument.",
+            "hi": "स्क्रीन पर अधिक अंक बेहतर यंत्र नहीं बताते।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-01-2",
+      "title": {
+        "en": "Unit conversion",
+        "hi": "मात्रक परिवर्तन"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 1
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Length",
+            "hi": "लंबाई"
+          },
+          "min": 10,
+          "max": 200,
+          "step": 10,
+          "initial": 100,
+          "unit": "cm"
+        }
+      ],
+      "noteIndex": 2,
+      "goal": {
+        "en": "Convert centimetres into metres.",
+        "hi": "सेंटीमीटर को मीटर में बदलें।"
+      },
+      "observe": {
+        "en": "Watch the same length expressed in two units.",
+        "hi": "एक लंबाई को 2 मात्रकों में देखें।"
+      },
+      "modelNote": {
+        "en": "Drawing sizes are symbolic; the number conversion is exact.",
+        "hi": "चित्र आकार सांकेतिक है; संख्यात्मक परिवर्तन ठीक है।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "One metre contains 100 centimetres, so divide the centimetre value by 100.",
+          "hi": "1 मीटर में 100 सेंटीमीटर हैं, इसलिए cm मान को 100 से भाग दें।"
+        }
+      },
+      "realLife": {
+        "en": "Tailors and laboratories use different convenient length units.",
+        "hi": "दर्जी और प्रयोगशाला सुविधाजनक अलग लंबाई मात्रक उपयोग करते हैं।"
+      },
+      "quick": {
+        "question": {
+          "en": "100 cm equals:",
+          "hi": "100 cm बराबर है:"
+        },
+        "options": [
+          {
+            "en": "1 m",
+            "hi": "1 m"
+          },
+          {
+            "en": "10 m",
+            "hi": "10 m"
+          },
+          {
+            "en": "0.01 m",
+            "hi": "0.01 m"
+          }
+        ],
+        "correct": 0,
+        "reason": {
+          "en": "100/100 = 1.",
+          "hi": "100/100 = 1।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-01-2-low",
+          "label": {
+            "en": "Explore the lower setting: 10 cm",
+            "hi": "निचली सेटिंग देखें: 10 cm"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 10
+          }
+        },
+        {
+          "id": "phy11-01-2-high",
+          "label": {
+            "en": "Compare the upper setting: 200 cm",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 200 cm"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 200
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 105.0
+          },
+          "text": {
+            "en": "The metre value is smaller than the centimetre value.",
+            "hi": "मीटर का संख्यात्मक मान सेंटीमीटर से छोटा है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 105.0
+          },
+          "text": {
+            "en": "The object is longer, but converting still divides by 100.",
+            "hi": "वस्तु लंबी है, लेकिन परिवर्तन में फिर भी 100 से भाग देते हैं।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phy11-01-3",
+      "title": {
+        "en": "Dimensions and period",
+        "hi": "विमा और आवर्तकाल"
+      },
+      "kind": "eleven-physics",
+      "parameters": {
+        "mode": 2
+      },
+      "controls": [
+        {
+          "label": {
+            "en": "Pendulum length",
+            "hi": "लोलक की लंबाई"
+          },
+          "min": 0.2,
+          "max": 2,
+          "step": 0.1,
+          "initial": 1,
+          "unit": "m"
+        }
+      ],
+      "noteIndex": 4,
+      "goal": {
+        "en": "Connect pendulum length to a time scale.",
+        "hi": "लोलक लंबाई को समय पैमाने से जोड़ें।"
+      },
+      "observe": {
+        "en": "Increase length and compare the small-angle period.",
+        "hi": "लंबाई बढ़ाकर छोटे कोण का आवर्तकाल तुलना करें।"
+      },
+      "modelNote": {
+        "en": "Ideal small-angle pendulum; bob size and swing are schematic, g = 9.8 m/s².",
+        "hi": "आदर्श छोटे कोण का लोलक; गोलक और झूला सांकेतिक, g = 9.8 m/s²।"
+      },
+      "prediction": {
+        "reason": {
+          "en": "√(L/g) has dimensions of time; the actual ideal period includes 2π.",
+          "hi": "√(L/g) की विमा समय है; आदर्श आवर्तकाल में 2π भी आता है।"
+        }
+      },
+      "realLife": {
+        "en": "A longer pendulum clock swings more slowly.",
+        "hi": "लंबे लोलक वाली घड़ी धीरे झूलती है।"
+      },
+      "quick": {
+        "question": {
+          "en": "The dimensions of √(L/g) are:",
+          "hi": "√(L/g) की विमा है:"
+        },
+        "options": [
+          {
+            "en": "Length",
+            "hi": "लंबाई"
+          },
+          {
+            "en": "Time",
+            "hi": "समय"
+          },
+          {
+            "en": "Speed",
+            "hi": "चाल"
+          }
+        ],
+        "correct": 1,
+        "reason": {
+          "en": "L/g has dimensions T².",
+          "hi": "L/g की विमा T² है।"
+        }
+      },
+      "missions": [
+        {
+          "id": "phy11-01-3-low",
+          "label": {
+            "en": "Explore the lower setting: 0.2 m",
+            "hi": "निचली सेटिंग देखें: 0.2 m"
+          },
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 0.2
+          }
+        },
+        {
+          "id": "phy11-01-3-high",
+          "label": {
+            "en": "Compare the upper setting: 2 m",
+            "hi": "ऊपरी सेटिंग से तुलना करें: 2 m"
+          },
+          "when": {
+            "control": 0,
+            "op": "gte",
+            "value": 2
+          }
+        }
+      ],
+      "liveText": [
+        {
+          "when": {
+            "control": 0,
+            "op": "lte",
+            "value": 1.1
+          },
+          "text": {
+            "en": "A shorter length gives a shorter ideal period.",
+            "hi": "छोटी लंबाई पर आदर्श आवर्तकाल छोटा है।"
+          }
+        },
+        {
+          "when": {
+            "control": 0,
+            "op": "gt",
+            "value": 1.1
+          },
+          "text": {
+            "en": "A longer length gives a longer ideal period.",
+            "hi": "बड़ी लंबाई पर आदर्श आवर्तकाल बड़ा है।"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "color": "#f1c46b",
+          "label": {
+            "en": "Measured or moving object",
+            "hi": "मापी या गतिशील वस्तु"
+          }
+        },
+        {
+          "color": "#9edaa4",
+          "label": {
+            "en": "Reference and graph",
+            "hi": "संदर्भ तथा आलेख"
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "title": {
+        "en": "Measurement and physical quantities",
+        "hi": "मापन और भौतिक राशियाँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Physics connects observations with quantities that can be compared by measurement. A measurement contains a numerical value and a unit: writing a table length as 2.4 m tells us how many standard metres fit the length. The number alone is incomplete. Changing the unit changes the numerical value, while the physical length remains the same. A quantity may be fundamental, such as length, mass or time, or derived through a relation, such as speed. Before measuring, identify exactly what is required: the diameter of a wire is not its length, and the interval between two events is not the reading of one clock. Select a suitable instrument, arrange the object properly and record the result with its unit. An estimate helps detect an unreasonable answer. Measurement is not a claim of unlimited exactness; every actual instrument has limitations that must influence the way the result is written.",
+          "hi": "भौतिकी (Physics) में प्रेक्षणों को ऐसी राशियों से जोड़ते हैं जिन्हें मापकर तुलना की जा सके। किसी मेज की लंबाई 2.4 m लिखने का अर्थ है कि मानक मीटर के 2.4 गुने के बराबर लंबाई है। केवल संख्या लिखना पर्याप्त नहीं होता। मात्रक बदलने पर संख्या बदलती है, लेकिन मेज की वास्तविक लंबाई नहीं बदलती। लंबाई, द्रव्यमान और समय मूल राशियाँ हैं; चाल जैसी राशि अन्य राशियों के संबंध से व्युत्पन्न होती है। मापने से पहले स्पष्ट करें कि कौन सी राशि चाहिए। तार का व्यास उसकी लंबाई नहीं है और दो घटनाओं के बीच का समय अंतराल केवल एक घड़ी का पाठ्यांक नहीं है। उपयुक्त यंत्र चुनें, वस्तु सही रखें और परिणाम के साथ मात्रक लिखें। पहले मोटा अनुमान लगाने से बहुत असंगत उत्तर पहचान सकते हैं। वास्तविक मापन में यंत्र की सीमा रहती है, इसलिए किसी परिणाम को अनंत रूप से यथार्थ नहीं मान सकते। यही सीमा परिणाम लिखने के तरीके को प्रभावित करती है।"
+        }
+      ],
+      "points": [
+        {
+          "en": "Always define the measured object, the start and end points, and the reference standard. Two observers cannot compare results reliably if they have measured different lengths or used unstated units.",
+          "hi": "मापी जाने वाली वस्तु, आरंभ और अंत बिंदु तथा संदर्भ मानक स्पष्ट करें। अलग लंबाई मापने या मात्रक न बताने पर 2 प्रेक्षकों के परिणाम की विश्वसनीय तुलना नहीं होती।"
+        }
+      ],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is 2.4 alone an incomplete length?",
+          "hi": "केवल 2.4 लिखना लंबाई का पूरा मापन क्यों नहीं है?"
+        },
+        "answer": {
+          "en": "The unit is missing, so the reference standard is unknown.",
+          "hi": "मात्रक नहीं दिया है, इसलिए संदर्भ मानक ज्ञात नहीं है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "SI base units and derived units",
+        "hi": "SI मूल और व्युत्पन्न मात्रक"
+      },
+      "paragraphs": [
+        {
+          "en": "The International System of Units gives a common language for measurements. Its seven base units are metre for length, kilogram for mass, second for time, ampere for electric current, kelvin for thermodynamic temperature, mole for amount of substance and candela for luminous intensity. Derived units combine these according to defining equations. Velocity uses metre per second, acceleration metre per second squared, and force kilogram metre per second squared, called the newton. Unit symbols are not ordinary abbreviations: write kg rather than kgs and m rather than mts. Leave a space between a numerical value and its unit. Prefixes represent powers of ten, such as kilo for 10³ and milli for 10⁻³. A prefix applies before a power is taken: 1 cm² is the square of 0.01 m, so it equals 10⁻⁴ m². The names of quantities, their symbols and their units play different roles and should not be confused.",
+          "hi": "अंतरराष्ट्रीय मात्रक पद्धति (SI) मापन की एक साझा भाषा देती है। इसके 7 मूल मात्रक हैं: लंबाई के लिए मीटर, द्रव्यमान के लिए किलोग्राम, समय के लिए सेकंड, विद्युत धारा के लिए ऐम्पियर, ऊष्मागतिक ताप के लिए केल्विन, पदार्थ की मात्रा के लिए मोल और ज्योति तीव्रता के लिए कैंडेला। परिभाषित समीकरणों से इनके संयोजन बनाकर व्युत्पन्न मात्रक मिलते हैं। वेग का मात्रक m/s, त्वरण का m/s² और बल का kg m/s² होता है; बल के इस मात्रक को न्यूटन कहते हैं। मात्रक के प्रतीक सामान्य संक्षिप्त शब्द नहीं हैं। इसलिए किलोग्राम का प्रतीक kg लिखें, kgs नहीं। संख्या और मात्रक के बीच स्थान रखें। उपसर्ग (Prefix) दस की घात दिखाते हैं, जैसे किलो का अर्थ 10³ और मिली का अर्थ 10⁻³ है। क्षेत्रफल में उपसर्ग को भी वर्ग करना पड़ता है: 1 cm² का अर्थ 0.01 m का वर्ग है, अर्थात 10⁻⁴ m²। राशि का नाम, उसका प्रतीक और उसका मात्रक अलग बातें हैं; उन्हें एक दूसरे का स्थान न दें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many SI base units are there?",
+          "hi": "SI में कितने मूल मात्रक हैं?"
+        },
+        "answer": {
+          "en": "There are 7 base units.",
+          "hi": "7 मूल मात्रक हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Accuracy, precision and uncertainty",
+        "hi": "यथार्थता, परिशुद्धता और अनिश्चितता"
+      },
+      "paragraphs": [
+        {
+          "en": "Accuracy describes closeness to the accepted or true value, whereas precision describes how close repeated results are to one another. A balance with an incorrect zero can repeatedly give similar readings and still be inaccurate. Random variations may arise from changing conditions or limitations in judging a reading. Systematic effects shift measurements in a consistent way; examples include an incorrect calibration or a zero error. Repeating observations helps assess scatter, but repetition alone does not remove a systematic error. Check the zero, use the instrument as intended and control conditions where possible. The least count is the smallest step that an instrument can directly resolve; it is not a guarantee that every reading is correct to that amount. Looking at a scale from an oblique direction can cause parallax. Record observations honestly before calculating. A final result should communicate reasonable uncertainty rather than display every digit produced by a calculator.",
+          "hi": "यथार्थता (Accuracy) बताती है कि माप स्वीकार किए गए या वास्तविक मान के कितने पास है। परिशुद्धता (Precision) बताती है कि बार बार किए गए मापन आपस में कितने पास हैं। किसी तुला का शून्य गलत हो तो उससे लगभग एक जैसे परिणाम बार बार मिल सकते हैं, फिर भी वे यथार्थ नहीं होंगे। परिस्थितियों में बदलाव या पाठ्यांक पहचानने की सीमा से यादृच्छिक परिवर्तन हो सकते हैं। व्यवस्थित प्रभाव परिणाम को लगातार एक दिशा में हटाते हैं; गलत अंशांकन और शून्य त्रुटि इसके उदाहरण हैं। दोहराव से मापों का फैलाव समझ सकते हैं, लेकिन केवल दोहराने से व्यवस्थित त्रुटि नहीं हटती। मापन से पहले शून्य जाँचें, यंत्र का सही उपयोग करें और संभव हो तो परिस्थितियाँ नियंत्रित रखें। अल्पतमांक (Least count) वह सबसे छोटा अंतर है जिसे यंत्र सीधे दिखाता है; इससे हर पाठ्यांक के उतना ही सही होने की गारंटी नहीं मिलती। तिरछी नजर से पैमाना पढ़ने पर लंबन हो सकता है। पहले मूल प्रेक्षण ईमानदारी से लिखें। अंतिम उत्तर में कैलकुलेटर के सभी अंक लिखने के बजाय उचित अनिश्चितता व्यक्त करें।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Can measurements be precise but inaccurate?",
+          "hi": "क्या माप परिशुद्ध होकर भी अयथार्थ हो सकते हैं?"
+        },
+        "answer": {
+          "en": "Yes; a systematic zero error can shift closely grouped readings.",
+          "hi": "हाँ; व्यवस्थित शून्य त्रुटि पास पास के पाठ्यांकों को वास्तविक मान से हटा सकती है।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Significant figures",
+        "hi": "सार्थक अंक"
+      },
+      "paragraphs": [
+        {
+          "en": "Significant figures indicate the meaningful digits retained in a measured value. All nonzero digits are significant. Zeros between nonzero digits are significant, while zeros used only to locate the decimal point before the first nonzero digit are not. Thus 0.00450 has 3 significant figures: 4, 5 and the final 0. The final zero communicates the precision of the stated measurement. Scientific notation removes ambiguity in trailing zeros: 1.20 × 10³ has 3 significant figures, while 1.2 × 10³ has 2. Exact counting numbers and defined conversion factors do not limit the precision of a calculation. A calculator may display many digits even when the original data justify only a few. Keep some guard digits during intermediate calculations, and round the final answer appropriately. Significant figures describe reporting precision; they do not by themselves prove that the instrument was calibrated or the method was free of systematic effects.",
+          "hi": "सार्थक अंक (Significant figures) वे अर्थपूर्ण अंक हैं जिन्हें मापन में रखा गया है। शून्य के अलावा सभी अंक सार्थक होते हैं। दो अशून्य अंकों के बीच के शून्य भी सार्थक होते हैं। पहले अशून्य अंक से पहले केवल दशमलव का स्थान बताने वाले शून्य सार्थक नहीं होते। इसलिए 0.00450 में 3 सार्थक अंक हैं: 4, 5 और अंतिम 0। अंतिम शून्य लिखने से मापन की बताई गई परिशुद्धता व्यक्त होती है। वैज्ञानिक संकेतन से अंतिम शून्यों की अस्पष्टता दूर करते हैं। 1.20 × 10³ में 3, जबकि 1.2 × 10³ में 2 सार्थक अंक हैं। वस्तुओं की ठीक गिनी संख्या और परिभाषित परिवर्तन गुणांक गणना की परिशुद्धता सीमित नहीं करते। कैलकुलेटर कई अंक दिखा सकता है, जबकि प्रारंभिक माप इतने अंक सही नहीं ठहराते। बीच की गणना में कुछ अतिरिक्त अंक बचाएँ और अंतिम उत्तर उचित रूप से सन्निकट करें। केवल सार्थक अंकों की संख्या देखकर यह नहीं मान सकते कि यंत्र सही अंशांकित था या विधि व्यवस्थित प्रभावों से मुक्त थी।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "How many significant figures occur in 0.00450?",
+          "hi": "0.00450 में कितने सार्थक अंक हैं?"
+        },
+        "answer": {
+          "en": "3 significant figures.",
+          "hi": "3 सार्थक अंक।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Rounding and calculations",
+        "hi": "सन्निकटन और गणना"
+      },
+      "paragraphs": [
+        {
+          "en": "In multiplication or division, the reported result normally retains as many significant figures as the least precise measured factor. For example, 2.5 × 1.24 gives 3.10 before rounding and is reported as 3.1. In addition or subtraction, compare decimal places rather than the total number of significant figures. The sum 12.3 + 0.45 is 12.75, reported to one decimal place as 12.8. Round once at the end when possible, because repeated early rounding can accumulate errors. When the first discarded digit is below 5, leave the retained digit unchanged; when above 5, increase it. In the exact halfway case with 5 followed only by zeros, the usual NCERT convention makes the retained digit even. State how many digits are requested when practising rounding. Unit conversion should not manufacture precision: converting 2.5 m to centimetres does not create additional experimental knowledge about the original length.",
+          "hi": "गुणा या भाग में परिणाम के सार्थक अंक सामान्यतः सबसे कम सार्थक अंक वाले माप के अनुसार रखते हैं। जैसे 2.5 × 1.24 का असन्निकट गुणनफल 3.10 है, लेकिन उत्तर 2 सार्थक अंकों में 3.1 लिखते हैं। जोड़ और घटाव में कुल सार्थक अंकों के बजाय दशमलव स्थानों की तुलना करते हैं। 12.3 + 0.45 का योग 12.75 है, जिसे दशमलव के 1 स्थान तक 12.8 लिखते हैं। संभव हो तो अंत में एक बार सन्निकटन करें, क्योंकि बीच बीच में अंक हटाने से अतिरिक्त अंतर जमा हो सकता है। हटाया जाने वाला पहला अंक 5 से कम हो तो रखा हुआ अंक नहीं बदलता; 5 से अधिक हो तो उसे बढ़ाते हैं। ठीक आधे के मामले में, जब 5 के बाद केवल शून्य हों, सामान्य NCERT नियम रखा हुआ अंक सम बनाता है। अभ्यास में स्पष्ट करें कि कितने अंक रखने हैं। मात्रक परिवर्तन से नई प्रयोगात्मक परिशुद्धता नहीं आती; 2.5 m को सेंटीमीटर में बदलना मूल लंबाई की अतिरिक्त जानकारी नहीं देता।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Which rule applies to addition: decimal places or significant figures?",
+          "hi": "जोड़ में दशमलव स्थान देखते हैं या कुल सार्थक अंक?"
+        },
+        "answer": {
+          "en": "The least precise decimal place determines the reported sum.",
+          "hi": "सबसे कम परिशुद्ध दशमलव स्थान के अनुसार योग लिखते हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Dimensions of quantities",
+        "hi": "भौतिक राशियों की विमाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Dimensions express a physical quantity through powers of base quantities. Length, mass and time are denoted L, M and T in dimensional formulae. Velocity has dimensions [L T⁻¹], acceleration [L T⁻²], and force [M L T⁻²]. Work is force multiplied by displacement, so its dimensions are [M L² T⁻²]. Dimensions are independent of the chosen unit system: speed may be written in m/s or km/h but has the same dimensional formula. A pure number is dimensionless. Angles measured in radians are ratios of two lengths and are dimensionless, although the unit name radian remains useful for meaning. Different quantities can share dimensions, as torque and work do; their physical definitions still differ. Write dimensions by substituting the defining relation step by step, not by guessing from a familiar unit symbol. This habit also helps distinguish a coefficient with units from an ordinary numerical constant.",
+          "hi": "विमा (Dimension) किसी राशि को मूल राशियों की घातों से व्यक्त करती है। विमीय सूत्र में लंबाई, द्रव्यमान और समय को क्रमशः L, M और T से दर्शाते हैं। वेग की विमा [L T⁻¹], त्वरण की [L T⁻²] और बल की [M L T⁻²] है। कार्य बल और विस्थापन के गुणनफल से संबंधित है, इसलिए उसकी विमा [M L² T⁻²] है। विमा चुनी हुई मात्रक पद्धति पर निर्भर नहीं करती। चाल को m/s या km/h में लिखें, दोनों की विमा समान रहती है। शुद्ध संख्या विमाहीन होती है। रेडियन में कोण 2 लंबाइयों का अनुपात है, इसलिए विमाहीन है, फिर भी अर्थ स्पष्ट करने के लिए रेडियन नाम उपयोगी है। अलग राशियों की विमाएँ समान हो सकती हैं, जैसे बल आघूर्ण और कार्य; इससे उनकी भौतिक परिभाषाएँ समान नहीं हो जातीं। परिचित मात्रक देखकर अनुमान लगाने के बजाय परिभाषित संबंध में मूल राशियाँ रखकर विमीय सूत्र बनाएँ। इससे इकाई वाले गुणांक और साधारण संख्यात्मक नियतांक में अंतर समझने में भी सहायता मिलती है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "What is the dimensional formula of work?",
+          "hi": "कार्य का विमीय सूत्र क्या है?"
+        },
+        "answer": {
+          "en": "[M L² T⁻²].",
+          "hi": "[M L² T⁻²]।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Dimensional consistency and its limits",
+        "hi": "विमीय समरूपता और सीमाएँ"
+      },
+      "paragraphs": [
+        {
+          "en": "Every term added or subtracted in a physically meaningful equation must have the same dimensions. In s = ut + ½at², both ut and at² have dimensions of length. A proposed equation s = u + at is dimensionally wrong because the right side has the dimensions of velocity. Passing this test is necessary but not sufficient: s = ut + at² is dimensionally consistent but gives an incorrect coefficient for constant acceleration from a specified initial position. Dimensional analysis cannot usually determine pure numerical constants, the sign of a term, or the complete form of relations involving trigonometric, exponential or logarithmic functions. Arguments of these functions must be dimensionless. The method is valuable for rejecting impossible equations and checking algebra, but a physical derivation or experiment is still required. When using dimensional analysis to propose a power law, list all assumed relevant variables; omitting one can make the proposed result incomplete.",
+          "hi": "किसी भौतिक रूप से अर्थपूर्ण समीकरण में जोड़े या घटाए जाने वाले सभी पदों की विमाएँ समान होनी चाहिए। s = ut + ½at² में ut और at² दोनों लंबाई की विमा रखते हैं। यदि s = u + at लिखें तो समीकरण गलत है, क्योंकि दाईं ओर वेग की विमा बनती है। विमीय जाँच में सफल होना आवश्यक है, लेकिन उससे समीकरण निश्चित रूप से सही नहीं हो जाता। s = ut + at² विमीय रूप से सही है, फिर भी एकसमान त्वरण के लिए दूसरे पद का गुणांक गलत है। विमीय विश्लेषण सामान्यतः शुद्ध संख्यात्मक नियतांक, किसी पद का चिह्न या त्रिकोणमितीय, चरघातांकी तथा लघुगणकीय संबंध का पूरा रूप नहीं बताता। इन फलनों का स्वतंत्र चर विमाहीन होना चाहिए। यह विधि असंभव समीकरण हटाने और बीजगणित जाँचने में बहुत उपयोगी है, लेकिन भौतिक व्युत्पत्ति या प्रयोग का स्थान नहीं लेती। घात संबंध का अनुमान लगाते समय सभी प्रासंगिक मानी गई राशियाँ लिखें; किसी आवश्यक चर को छोड़ देने से प्रस्तावित परिणाम अधूरा हो सकता है।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Does dimensional consistency prove an equation correct?",
+          "hi": "क्या विमीय समरूपता समीकरण को सही सिद्ध करती है?"
+        },
+        "answer": {
+          "en": "No; numerical factors and physical assumptions may still be wrong.",
+          "hi": "नहीं; संख्यात्मक गुणांक और भौतिक मान्यताएँ फिर भी गलत हो सकती हैं।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Applying units and building a solution",
+        "hi": "मात्रकों का उपयोग और हल की रचना"
+      },
+      "paragraphs": [
+        {
+          "en": "A reliable numerical solution starts with the given quantities, required result and a relation valid for the stated conditions. Convert compatible quantities to a common system before substitution. For density, use mass divided by volume and remember that a centimetre-to-metre conversion is cubed for volume. The relation 1 g/cm³ = 1000 kg/m³ follows from 1 g = 10⁻³ kg and 1 cm³ = 10⁻⁶ m³. Keep units in intermediate steps so unwanted units cancel visibly. Estimate the order of magnitude, check dimensions, and then report an appropriately rounded answer. For a small-amplitude simple pendulum, dimensional reasoning suggests a time scale proportional to √(L/g), but the factor 2π and the conditions require further physics. Increasing length by a factor of 4 doubles this period. Such comparisons show why unit algebra, dimensional reasoning and measurement interpretation are complementary tools rather than separate memorised tricks.",
+          "hi": "अच्छे संख्यात्मक हल में पहले दी गई राशियाँ, निकालने वाली राशि और बताई गई परिस्थितियों में लागू संबंध लिखते हैं। मान रखने से पहले संबंधित राशियों को एक ही पद्धति में बदलें। घनत्व के लिए द्रव्यमान को आयतन से भाग देते हैं और ध्यान रखते हैं कि आयतन बदलते समय सेंटीमीटर से मीटर का परिवर्तन गुणांक घन होता है। 1 g/cm³ = 1000 kg/m³ इसलिए है क्योंकि 1 g = 10⁻³ kg और 1 cm³ = 10⁻⁶ m³ है। बीच के चरणों में मात्रक लिखने से अनावश्यक मात्रक कटते हुए दिखते हैं। उत्तर का परिमाण मोटे रूप में जाँचें, विमा देखें और उचित सन्निकटन के बाद अंतिम मान लिखें। छोटे आयाम वाले सरल लोलक के लिए विमीय तर्क समय का पैमाना √(L/g) के समानुपाती बताता है, लेकिन 2π गुणांक और लागू शर्तें आगे की भौतिकी से आती हैं। लंबाई 4 गुनी करने पर आवर्तकाल 2 गुना होता है। ऐसे उदाहरण दिखाते हैं कि मात्रक गणना, विमीय तर्क और मापन की व्याख्या अलग रटी हुई तरकीबें नहीं, बल्कि एक दूसरे की सहायक विधियाँ हैं।"
+        }
+      ],
+      "points": [],
+      "inTextQuestion": {
+        "question": {
+          "en": "Why is a length conversion factor cubed for volume?",
+          "hi": "आयतन में लंबाई परिवर्तन गुणांक का घन क्यों लेते हैं?"
+        },
+        "answer": {
+          "en": "Volume contains three factors of length.",
+          "hi": "आयतन में लंबाई के 3 गुणक होते हैं।"
+        }
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "expression": "v = s/t",
+      "meaning": {
+        "en": "Speed is distance per time.",
+        "hi": "चाल दूरी प्रति समय है।"
+      },
+      "units": {
+        "en": "m/s; [L T⁻¹]",
+        "hi": "m/s; [L T⁻¹]"
+      }
+    },
+    {
+      "expression": "ρ = m/V",
+      "meaning": {
+        "en": "Density is mass per volume.",
+        "hi": "घनत्व द्रव्यमान प्रति आयतन है।"
+      },
+      "units": {
+        "en": "kg/m³; [M L⁻³]",
+        "hi": "kg/m³; [M L⁻³]"
+      }
+    },
+    {
+      "expression": "T = 2π√(L/g)",
+      "meaning": {
+        "en": "Small-amplitude ideal pendulum period.",
+        "hi": "छोटे आयाम के आदर्श लोलक का आवर्तकाल।"
+      },
+      "units": {
+        "en": "T in s, L in m, g in m/s²",
+        "hi": "T सेकंड में, L मीटर में, g m/s² में"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Convert 150 cm to metres.",
+        "hi": "150 cm को मीटर में बदलें।"
+      },
+      "given": {
+        "en": "Length = 150 cm.",
+        "hi": "लंबाई = 150 cm।"
+      },
+      "find": {
+        "en": "Length in m.",
+        "hi": "m में लंबाई।"
+      },
+      "formula": {
+        "en": "1 cm = 0.01 m",
+        "hi": "1 cm = 0.01 m"
+      },
+      "steps": [
+        {
+          "en": "Multiply 150 by 0.01.",
+          "hi": "150 को 0.01 से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "1.50 m when the stated value has 3 significant figures.",
+        "hi": "दिया मान 3 सार्थक अंकों का हो तो 1.50 m।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Count significant figures in 0.00720.",
+        "hi": "0.00720 में सार्थक अंक गिनें।"
+      },
+      "given": {
+        "en": "A reported measurement 0.00720.",
+        "hi": "बताया माप 0.00720।"
+      },
+      "find": {
+        "en": "Significant-figure count.",
+        "hi": "सार्थक अंकों की संख्या।"
+      },
+      "formula": {
+        "en": "Leading zeros are not significant.",
+        "hi": "प्रारंभिक शून्य सार्थक नहीं होते।"
+      },
+      "steps": [
+        {
+          "en": "Ignore the zeros before 7.",
+          "hi": "7 से पहले शून्य छोड़ें।"
+        },
+        {
+          "en": "Count 7, 2 and the final 0.",
+          "hi": "7, 2 और अंतिम 0 गिनें।"
+        }
+      ],
+      "answer": {
+        "en": "3 significant figures; unitless count.",
+        "hi": "3 सार्थक अंक; गिनती इकाईरहित।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Convert 2 g/cm³ to SI density.",
+        "hi": "2 g/cm³ को SI घनत्व में बदलें।"
+      },
+      "given": {
+        "en": "ρ = 2 g/cm³.",
+        "hi": "ρ = 2 g/cm³।"
+      },
+      "find": {
+        "en": "Density in kg/m³.",
+        "hi": "kg/m³ में घनत्व।"
+      },
+      "formula": {
+        "en": "1 g/cm³ = 10³ kg/m³",
+        "hi": "1 g/cm³ = 10³ kg/m³"
+      },
+      "steps": [
+        {
+          "en": "Use 10⁻³ kg per g and 10⁻⁶ m³ per cm³.",
+          "hi": "1 g के लिए 10⁻³ kg और 1 cm³ के लिए 10⁻⁶ m³ लें।"
+        },
+        {
+          "en": "Multiply 2 by 10³.",
+          "hi": "2 को 10³ से गुणा करें।"
+        }
+      ],
+      "answer": {
+        "en": "2 × 10³ kg/m³.",
+        "hi": "2 × 10³ kg/m³।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Check s = ut + ½at² dimensionally.",
+        "hi": "s = ut + ½at² की विमीय जाँच करें।"
+      },
+      "given": {
+        "en": "[u] = L T⁻¹; [a] = L T⁻².",
+        "hi": "[u] = L T⁻¹; [a] = L T⁻²।"
+      },
+      "find": {
+        "en": "Dimensions of all terms.",
+        "hi": "सभी पदों की विमाएँ।"
+      },
+      "formula": {
+        "en": "[ut] = [u][t]; [at²] = [a][t]²",
+        "hi": "[ut] = [u][t]; [at²] = [a][t]²"
+      },
+      "steps": [
+        {
+          "en": "[ut] = L.",
+          "hi": "[ut] = L।"
+        },
+        {
+          "en": "[at²] = L; ½ is dimensionless.",
+          "hi": "[at²] = L; ½ विमाहीन है।"
+        }
+      ],
+      "answer": {
+        "en": "Dimensionally consistent; this alone is not a complete proof.",
+        "hi": "विमीय रूप से समरूप; केवल यह पूर्ण प्रमाण नहीं है।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "A pendulum length becomes 4L. Compare its small-angle period.",
+        "hi": "लोलक की लंबाई 4L हो जाए तो छोटे कोण का आवर्तकाल तुलना करें।"
+      },
+      "given": {
+        "en": "Same g and small amplitude.",
+        "hi": "g समान और आयाम छोटा है।"
+      },
+      "find": {
+        "en": "T₂/T₁.",
+        "hi": "T₂/T₁।"
+      },
+      "formula": {
+        "en": "T ∝ √L",
+        "hi": "T ∝ √L"
+      },
+      "steps": [
+        {
+          "en": "Take √(4L/L).",
+          "hi": "√(4L/L) लें।"
+        },
+        {
+          "en": "The ratio is 2.",
+          "hi": "अनुपात 2 है।"
+        }
+      ],
+      "answer": {
+        "en": "T₂ = 2T₁; ratio is unitless.",
+        "hi": "T₂ = 2T₁; अनुपात इकाईरहित है।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "Which is an SI base unit?",
+        "hi": "कौन SI मूल मात्रक है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "newton",
+            "hi": "न्यूटन"
+          },
+          "reason": {
+            "en": "Force unit is derived.",
+            "hi": "बल का मात्रक व्युत्पन्न है।"
+          }
+        },
+        {
+          "text": {
+            "en": "metre",
+            "hi": "मीटर"
+          },
+          "reason": {
+            "en": "Metre is the base unit of length.",
+            "hi": "मीटर लंबाई का मूल मात्रक है।"
+          }
+        },
+        {
+          "text": {
+            "en": "joule",
+            "hi": "जूल"
+          },
+          "reason": {
+            "en": "Energy unit is derived.",
+            "hi": "ऊर्जा का मात्रक व्युत्पन्न है।"
+          }
+        },
+        {
+          "text": {
+            "en": "pascal",
+            "hi": "पास्कल"
+          },
+          "reason": {
+            "en": "Pressure unit is derived.",
+            "hi": "दाब का मात्रक व्युत्पन्न है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "How many significant figures are in 0.00450?",
+        "hi": "0.00450 में कितने सार्थक अंक हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "2",
+            "hi": "2"
+          },
+          "reason": {
+            "en": "The final zero is meaningful.",
+            "hi": "अंतिम शून्य अर्थपूर्ण है।"
+          }
+        },
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "4, 5 and the final 0 count.",
+            "hi": "4, 5 और अंतिम 0 गिनते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "4",
+            "hi": "4"
+          },
+          "reason": {
+            "en": "Leading zeros do not count.",
+            "hi": "प्रारंभिक शून्य नहीं गिनते।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "Leading zeros do not count.",
+            "hi": "प्रारंभिक शून्य नहीं गिनते।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The dimensions of acceleration are:",
+        "hi": "त्वरण की विमा है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "L T⁻¹",
+            "hi": "L T⁻¹"
+          },
+          "reason": {
+            "en": "This is velocity.",
+            "hi": "यह वेग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "L T⁻²",
+            "hi": "L T⁻²"
+          },
+          "reason": {
+            "en": "Acceleration is velocity change per time.",
+            "hi": "त्वरण वेग परिवर्तन प्रति समय है।"
+          }
+        },
+        {
+          "text": {
+            "en": "M L T⁻²",
+            "hi": "M L T⁻²"
+          },
+          "reason": {
+            "en": "This is force.",
+            "hi": "यह बल है।"
+          }
+        },
+        {
+          "text": {
+            "en": "L² T⁻²",
+            "hi": "L² T⁻²"
+          },
+          "reason": {
+            "en": "This is speed squared.",
+            "hi": "यह चाल का वर्ग है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "1 cm² equals:",
+        "hi": "1 cm² बराबर है:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "10⁻² m²",
+            "hi": "10⁻² m²"
+          },
+          "reason": {
+            "en": "The conversion must be squared.",
+            "hi": "परिवर्तन का वर्ग लेना होगा।"
+          }
+        },
+        {
+          "text": {
+            "en": "10⁻⁴ m²",
+            "hi": "10⁻⁴ m²"
+          },
+          "reason": {
+            "en": "(10⁻² m)² = 10⁻⁴ m².",
+            "hi": "(10⁻² m)² = 10⁻⁴ m²।"
+          }
+        },
+        {
+          "text": {
+            "en": "10² m²",
+            "hi": "10² m²"
+          },
+          "reason": {
+            "en": "Centimetres are smaller than metres.",
+            "hi": "सेंटीमीटर मीटर से छोटा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10⁻⁶ m²",
+            "hi": "10⁻⁶ m²"
+          },
+          "reason": {
+            "en": "This factor applies to cubic centimetres.",
+            "hi": "यह गुणांक घन सेंटीमीटर में आता है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which may be precise but inaccurate?",
+        "hi": "कौन परिशुद्ध लेकिन अयथार्थ हो सकता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Repeated readings with an uncorrected instrument zero offset",
+            "hi": "यंत्र की असुधारित शून्य त्रुटि के साथ बार बार लिए गए पाठ्यांक"
+          },
+          "reason": {
+            "en": "Closely grouped readings can all be shifted.",
+            "hi": "पास पास पाठ्यांक सभी हटे हो सकते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "A unit definition",
+            "hi": "मात्रक की परिभाषा"
+          },
+          "reason": {
+            "en": "This is not a set of measured readings.",
+            "hi": "यह मापे पाठ्यांकों का समूह नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A counted exact integer",
+            "hi": "ठीक गिना पूर्णांक"
+          },
+          "reason": {
+            "en": "Exact counting is not this calibration example.",
+            "hi": "ठीक गिनती अंशांकन का यह उदाहरण नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A dimensionless constant",
+            "hi": "विमाहीन नियतांक"
+          },
+          "reason": {
+            "en": "A constant is not the repeated measurement example.",
+            "hi": "नियतांक दोहराए मापन का उदाहरण नहीं है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Does dimensional correctness determine a factor 2π?",
+        "hi": "क्या विमीय शुद्धता 2π गुणांक निर्धारित करती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Always",
+            "hi": "हमेशा"
+          },
+          "reason": {
+            "en": "Pure numerical factors are not fixed this way.",
+            "hi": "शुद्ध संख्यात्मक गुणांक ऐसे तय नहीं होते।"
+          }
+        },
+        {
+          "text": {
+            "en": "No",
+            "hi": "नहीं"
+          },
+          "reason": {
+            "en": "Dimensionless numerical factors need additional physics.",
+            "hi": "विमाहीन गुणांक के लिए अतिरिक्त भौतिकी चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only in SI",
+            "hi": "केवल SI में"
+          },
+          "reason": {
+            "en": "The limitation does not depend on SI.",
+            "hi": "यह सीमा SI पर निर्भर नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only with length",
+            "hi": "केवल लंबाई के साथ"
+          },
+          "reason": {
+            "en": "Adding length does not fix numerical factors.",
+            "hi": "लंबाई होने से गुणांक तय नहीं होता।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "12.3 + 0.45 should be reported as:",
+        "hi": "12.3 + 0.45 का परिणाम लिखेंगे:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "12.75",
+            "hi": "12.75"
+          },
+          "reason": {
+            "en": "The last decimal is not justified.",
+            "hi": "अंतिम दशमलव उचित नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "12.8",
+            "hi": "12.8"
+          },
+          "reason": {
+            "en": "Retain one decimal place.",
+            "hi": "दशमलव का 1 स्थान रखें।"
+          }
+        },
+        {
+          "text": {
+            "en": "13",
+            "hi": "13"
+          },
+          "reason": {
+            "en": "This rounds too much.",
+            "hi": "यह बहुत अधिक सन्निकटन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "12.750",
+            "hi": "12.750"
+          },
+          "reason": {
+            "en": "Extra zeros claim unjustified precision.",
+            "hi": "अतिरिक्त शून्य अनुचित परिशुद्धता बताते हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which pair shares dimensions?",
+        "hi": "किस जोड़ी की विमाएँ समान हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Work and torque",
+            "hi": "कार्य और बल आघूर्ण"
+          },
+          "reason": {
+            "en": "Both have dimensions M L² T⁻², but different meanings.",
+            "hi": "दोनों M L² T⁻² हैं, पर अर्थ अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Force and power",
+            "hi": "बल और शक्ति"
+          },
+          "reason": {
+            "en": "Their time and length powers differ.",
+            "hi": "समय और लंबाई की घातें अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Speed and acceleration",
+            "hi": "चाल और त्वरण"
+          },
+          "reason": {
+            "en": "Their time powers differ.",
+            "hi": "समय की घातें अलग हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Mass and density",
+            "hi": "द्रव्यमान और घनत्व"
+          },
+          "reason": {
+            "en": "Density includes inverse volume.",
+            "hi": "घनत्व में व्युत्क्रम आयतन आता है।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "How does a pendulum period change when length becomes 4 times?",
+        "hi": "लंबाई 4 गुनी होने पर लोलक का आवर्तकाल कैसे बदलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "4 times",
+            "hi": "4 गुना"
+          },
+          "reason": {
+            "en": "Period depends on square root of length.",
+            "hi": "आवर्तकाल लंबाई के वर्गमूल पर निर्भर है।"
+          }
+        },
+        {
+          "text": {
+            "en": "2 times",
+            "hi": "2 गुना"
+          },
+          "reason": {
+            "en": "√4 = 2 at fixed g and small angle.",
+            "hi": "समान g और छोटे कोण पर √4 = 2।"
+          }
+        },
+        {
+          "text": {
+            "en": "Half",
+            "hi": "आधा"
+          },
+          "reason": {
+            "en": "Increasing length increases the period.",
+            "hi": "लंबाई बढ़ने पर आवर्तकाल बढ़ता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Unchanged",
+            "hi": "अपरिवर्तित"
+          },
+          "reason": {
+            "en": "Length affects the period.",
+            "hi": "लंबाई आवर्तकाल को प्रभावित करती है।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "Which unit symbol is correct?",
+        "hi": "कौन सा मात्रक प्रतीक सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "kgs",
+            "hi": "kgs"
+          },
+          "reason": {
+            "en": "Unit symbols do not take a plural s.",
+            "hi": "मात्रक प्रतीक में बहुवचन s नहीं लगाते।"
+          }
+        },
+        {
+          "text": {
+            "en": "mts",
+            "hi": "mts"
+          },
+          "reason": {
+            "en": "The metre symbol is m.",
+            "hi": "मीटर का प्रतीक m है।"
+          }
+        },
+        {
+          "text": {
+            "en": "kg",
+            "hi": "kg"
+          },
+          "reason": {
+            "en": "The kilogram symbol is kg.",
+            "hi": "किलोग्राम का प्रतीक kg है।"
+          }
+        },
+        {
+          "text": {
+            "en": "secs",
+            "hi": "secs"
+          },
+          "reason": {
+            "en": "The second symbol is s.",
+            "hi": "सेकंड का प्रतीक s है।"
+          }
+        }
+      ],
+      "correct": 2
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Distinguish accuracy and precision.",
+        "hi": "यथार्थता और परिशुद्धता में अंतर दें।"
+      },
+      "answer": {
+        "en": "Accuracy is closeness to an accepted value; precision is closeness among repeated measurements.",
+        "hi": "यथार्थता स्वीकार मान के पास होना है; परिशुद्धता दोहराए मापों का आपस में पास होना है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why retain units during calculation?",
+        "hi": "गणना में मात्रक क्यों रखें?"
+      },
+      "answer": {
+        "en": "They reveal conversion mistakes and allow dimensional checks and visible cancellation.",
+        "hi": "इनसे परिवर्तन की गलतियाँ, विमीय जाँच और मात्रकों का कटना स्पष्ट होता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the final zero in 2.50 m.",
+        "hi": "2.50 m में अंतिम शून्य समझाएँ।"
+      },
+      "answer": {
+        "en": "It communicates that the stated measurement is retained to the hundredth of a metre.",
+        "hi": "यह बताता है कि बताया माप मीटर के दशमलव के 2 स्थान तक रखा गया है।"
+      }
+    },
+    {
+      "question": {
+        "en": "State two limits of dimensional analysis.",
+        "hi": "विमीय विश्लेषण की 2 सीमाएँ लिखें।"
+      },
+      "answer": {
+        "en": "It does not determine pure numerical factors or generally establish the complete functional form.",
+        "hi": "यह शुद्ध संख्यात्मक गुणांक तथा सामान्यतः फलन का पूरा रूप निर्धारित नहीं करता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Convert 72 km/h to m/s.",
+        "hi": "72 km/h को m/s में बदलें।"
+      },
+      "answer": {
+        "en": "72 × 1000/3600 = 20 m/s.",
+        "hi": "72 × 1000/3600 = 20 m/s।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why repeat observations?",
+        "hi": "प्रेक्षण क्यों दोहराते हैं?"
+      },
+      "answer": {
+        "en": "Repetition reveals scatter and helps assess random variation, but does not alone remove systematic errors.",
+        "hi": "दोहराव से फैलाव और यादृच्छिक परिवर्तन समझते हैं, लेकिन केवल इससे व्यवस्थित त्रुटि नहीं हटती।"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "en": "A measurement needs a number and unit.",
+      "hi": "मापन में संख्या और मात्रक दोनों चाहिए।"
+    },
+    {
+      "en": "SI has 7 base units.",
+      "hi": "SI में 7 मूल मात्रक हैं।"
+    },
+    {
+      "en": "Precision and accuracy are different.",
+      "hi": "परिशुद्धता और यथार्थता अलग हैं।"
+    },
+    {
+      "en": "Report only justified significant figures.",
+      "hi": "केवल उचित सार्थक अंक लिखें।"
+    },
+    {
+      "en": "Dimensional consistency is necessary, not a complete proof.",
+      "hi": "विमीय समरूपता आवश्यक है, पूर्ण प्रमाण नहीं।"
+    }
+  ],
+  "mistake": {
+    "en": "Do not confuse dimensions with units or decimal places with significant figures.",
+    "hi": "विमा को मात्रक तथा दशमलव स्थान को सार्थक अंकों से न मिलाएँ।"
+  },
+  "goal": {
+    "en": "Measure, report and check physical quantities using units and dimensions.",
+    "hi": "मात्रक और विमाओं से भौतिक राशियाँ मापें, लिखें और जाँचें।"
+  },
+  "conceptMap": "मापन और भौतिक राशियाँ → SI मूल और व्युत्पन्न मात्रक → यथार्थता, परिशुद्धता और अनिश्चितता → सार्थक अंक → सन्निकटन और गणना → भौतिक राशियों की विमाएँ → विमीय समरूपता और सीमाएँ → मात्रकों का उपयोग और हल की रचना",
+  "conceptMapEn": "Measurement and physical quantities → SI base units and derived units → Accuracy, precision and uncertainty → Significant figures → Rounding and calculations → Dimensions of quantities → Dimensional consistency and its limits → Applying units and building a solution",
+  "editionBasis": {
+    "en": "Original study explanations aligned to NCERT Class 11 Physics and the UP Board 2026–27 syllabus. Use the prescribed textbook alongside these models.",
+    "hi": "NCERT कक्षा 11 भौतिकी तथा यूपी बोर्ड 2026–27 पाठ्यक्रम पर आधारित मौलिक अध्ययन व्याख्याएँ। इन मॉडलों के साथ निर्धारित पाठ्यपुस्तक भी पढ़ें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Physics Part I · Chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keph101.pdf"
+    },
+    {
+      "title": "UPMSP Class 11 Physics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class11/151-Physics-Class-11.pdf"
+    }
+  ]
+}

@@ -1,0 +1,894 @@
+{
+  "id": 13,
+  "title": {
+    "en": "Statistics",
+    "hi": "सांख्यिकी"
+  },
+  "goal": {
+    "en": "Organise grouped data and calculate meaningful estimates of mean, median and mode.",
+    "hi": "वर्गीकृत आँकड़े व्यवस्थित करके माध्य, माध्यिका और बहुलक के सार्थक अनुमान निकालें।"
+  },
+  "notes": [
+    {
+      "title": {
+        "en": "From observations to a grouped table",
+        "hi": "प्रेक्षणों से वर्गीकृत सारणी तक"
+      },
+      "body": {
+        "en": "Statistics begins with observations collected for a clear purpose. A frequency tells how many observations belong to a value or class; it is not the class value itself. Large data sets are often grouped into intervals such as 0–10, 10–20 and 20–30. A consistent boundary convention is needed, for example including the lower boundary and excluding the upper boundary. Then an observation exactly equal to 10 belongs to 10–20, not to both adjacent classes. Class width is the difference between the upper and lower boundaries. The class mark is their midpoint. It represents the class in the grouped mean calculation, but it is not a claim that every observation actually equals that midpoint. Write the measured quantity and unit beside the table. Frequencies should be nonnegative whole numbers when they count people or objects. Adding them gives N, the total number of observations. Grouping preserves useful patterns while losing the exact positions of individual observations within each class.",
+        "hi": "सांख्यिकी (Statistics) में किसी स्पष्ट उद्देश्य के लिए प्रेक्षण जुटाए जाते हैं। बारंबारता (Frequency) बताती है कि किसी मान या वर्ग में कितने प्रेक्षण हैं। वह स्वयं वर्ग का मान नहीं है। बड़े आँकड़ों को 0–10, 10–20 और 20–30 जैसे वर्गों में बाँट सकते हैं। सीमाओं का एक जैसा नियम जरूरी है। उदाहरण के लिए निचली सीमा शामिल और ऊपरी सीमा बाहर रखें। तब ठीक 10 का मान 10–20 में जाएगा, दोनों वर्गों में नहीं। वर्ग की चौड़ाई ऊपरी और निचली सीमाओं का अंतर है। वर्ग चिह्न (Class mark) दोनों सीमाओं का मध्यबिंदु है। वर्गीकृत माध्य में वह पूरे वर्ग का प्रतिनिधित्व करता है। इसका अर्थ यह नहीं कि हर वास्तविक प्रेक्षण मध्यबिंदु के बराबर था। सारणी के साथ मापी गई राशि और उसकी इकाई लिखें। लोगों या वस्तुओं की संख्या वाली बारंबारता ऋणात्मक या भिन्न नहीं हो सकती। सभी बारंबारताओं का योग N कुल प्रेक्षण देता है। वर्गीकरण से सामान्य स्वरूप बचता है, लेकिन हर वर्ग के भीतर वास्तविक मानों की ठीक स्थिति खो जाती है। इसलिए आगे निकले अनुमान को मूल आँकड़ों का सटीक विवरण न मानें।"
+      },
+      "formula": "xi = (lower boundary + upper boundary)/2; N = Σfi",
+      "question": {
+        "en": "In classes 0–10 and 10–20 with lower boundary included, where does 10 belong?",
+        "hi": "निचली सीमा शामिल वाले 0–10 तथा 10–20 वर्गों में 10 कहाँ आएगा?"
+      },
+      "answer": {
+        "en": "In 10–20 only.",
+        "hi": "केवल 10–20 में।"
+      }
+    },
+    {
+      "title": {
+        "en": "Mean by the direct method",
+        "hi": "प्रत्यक्ष विधि से माध्य"
+      },
+      "body": {
+        "en": "The mean is an average that uses all observations. For a grouped distribution, take the midpoint xi of each class as its representative value. Multiply this midpoint by the corresponding frequency fi, add the products, and divide by N = Σfi. The frequency acts as a weight: a class containing 12 observations influences the mean more than a class containing 2. Do not simply average the class marks unless all frequencies are equal. A table with columns for class, xi, fi and fixi keeps the arithmetic visible. For classes 0–10, 10–20 and 20–30 with frequencies 2, 5 and 3, the midpoints are 5, 15 and 25. The weighted sum is 10 + 75 + 75 = 160, and N is 10, so the estimated mean is 16. It carries the same unit as the original measurement. This grouped estimate replaces unknown within-class positions with midpoints, so it need not equal the exact mean of the ungrouped observations.",
+        "hi": "माध्य (Mean) ऐसा औसत है जिसमें सभी प्रेक्षणों का योगदान होता है। वर्गीकृत आँकड़ों में हर वर्ग का मध्यबिंदु xi उसका प्रतिनिधि मान लेते हैं। उसे संबंधित बारंबारता fi से गुणा करें। सभी गुणनफल जोड़कर N = Σfi से भाग दें। बारंबारता भार की तरह काम करती है। 12 प्रेक्षण वाले वर्ग का प्रभाव 2 प्रेक्षण वाले वर्ग से अधिक होता है। केवल वर्ग चिह्नों का साधारण औसत न लें, जब तक सभी बारंबारताएँ समान न हों। वर्ग, xi, fi तथा fixi के स्तंभ बनाने से गणना साफ रहती है। 0–10, 10–20 और 20–30 वर्गों की बारंबारताएँ 2, 5 और 3 हों, तो वर्ग चिह्न 5, 15 तथा 25 होंगे। भारित योग 10 + 75 + 75 = 160 और कुल संख्या 10 है। इसलिए अनुमानित माध्य 16 है। इसकी इकाई मूल माप वाली ही होती है। इस विधि में वर्ग के भीतर अज्ञात वास्तविक मानों की जगह मध्यबिंदु रखे जाते हैं। इसलिए समूह से मिला माध्य असमूहित मूल आँकड़ों के सटीक माध्य के बराबर होना जरूरी नहीं है।"
+      },
+      "formula": "Mean = Σ(fi xi)/Σfi",
+      "question": {
+        "en": "Why can we not average the three class marks without frequencies?",
+        "hi": "बारंबारता के बिना केवल 3 वर्ग चिह्नों का औसत क्यों नहीं ले सकते?"
+      },
+      "answer": {
+        "en": "Classes can contain different numbers of observations, so their weights differ.",
+        "hi": "वर्गों में प्रेक्षणों की संख्या अलग हो सकती है, इसलिए उनके भार अलग हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Assumed mean reduces arithmetic",
+        "hi": "कल्पित माध्य से गणना सरल करें"
+      },
+      "body": {
+        "en": "When class marks are large, subtracting a convenient reference value can make the arithmetic shorter. Choose an assumed mean a, preferably a class mark near the middle of the table. Define deviations di = xi − a. Positive deviations lie above the chosen reference and negative deviations lie below it. Multiply each deviation by its frequency and add the results. The required mean is a + Σfidi/N. The word assumed does not mean the final answer is guessed: this is an algebraic rearrangement of the direct formula and gives the same grouped mean. Choosing a different a changes the intermediate deviations but not the result, provided arithmetic is correct. If the weighted deviation sum is positive, the mean lies above a; if negative, it lies below a. This sign check is useful before calculating a decimal. Keep the units of a and di the same as those of xi. The method does not restore information lost by grouping; it only simplifies an equivalent calculation.",
+        "hi": "वर्ग चिह्न बड़े हों, तो किसी सुविधाजनक संदर्भ मान को घटाने से गणना छोटी हो जाती है। कल्पित माध्य (Assumed mean) a चुनें। अक्सर सारणी के बीच का कोई वर्ग चिह्न लेना सुविधाजनक होता है। विचलन di = xi − a लिखें। संदर्भ से बड़े मानों के विचलन धनात्मक और छोटे मानों के ऋणात्मक होंगे। हर विचलन को उसकी बारंबारता से गुणा करके जोड़ें। माध्य a + Σfidi/N होगा। कल्पित शब्द का अर्थ अंतिम उत्तर अंदाज से लेना नहीं है। यह प्रत्यक्ष सूत्र का बीजगणितीय पुनर्लेखन है और उसी वर्गीकृत माध्य का मान देता है। दूसरा a लेने पर बीच के विचलन बदलेंगे, लेकिन सही गणना में अंतिम उत्तर नहीं बदलेगा। भारित विचलन का योग धनात्मक हो, तो माध्य a से ऊपर होगा। योग ऋणात्मक हो, तो माध्य नीचे होगा। दशमलव निकालने से पहले यह चिह्न जाँचना उपयोगी है। a और di की इकाइयाँ xi जैसी ही रखें। यह विधि वर्गीकरण में खोई जानकारी वापस नहीं लाती। यह केवल उसी औसत की गणना को सरल बनाती है।"
+      },
+      "formula": "di = xi − a; Mean = a + Σ(fi di)/N",
+      "question": {
+        "en": "If a = 25 and Σfidi/N = −3, what is the mean?",
+        "hi": "a = 25 और Σfidi/N = −3 हो, तो माध्य कितना है?"
+      },
+      "answer": {
+        "en": "22, because the mean is 3 below the assumed mean.",
+        "hi": "22, क्योंकि माध्य कल्पित माध्य से 3 कम है।"
+      }
+    },
+    {
+      "title": {
+        "en": "Step deviation and equal class widths",
+        "hi": "पद-विचलन और समान वर्ग चौड़ाई"
+      },
+      "body": {
+        "en": "The step-deviation method goes one step further by dividing deviations by a convenient common factor h. For equal-width classes, h is usually their common width. Define ui = (xi − a)/h, so the mean becomes a + hΣfiui/N. Consecutive class marks then often lead to small integers such as −2, −1, 0, 1 and 2. The smaller products are easier to add, but the final multiplication by h must not be forgotten. The variables ui are scaled deviations and are dimensionless when h has the same unit as xi. For class marks 15, 25 and 35, choose a = 25 and h = 10. The ui values are −1, 0 and 1. With frequencies 2, 3 and 5, the weighted sum is −2 + 0 + 5 = 3 and N = 10. The mean is 25 + 10 × 3/10 = 28. Direct, assumed-mean and step-deviation methods must agree for the same grouped table.",
+        "hi": "पद-विचलन विधि (Step-deviation method) में विचलनों को एक सुविधाजनक समान गुणक h से भाग देते हैं। समान चौड़ाई वाले वर्गों में h सामान्यतः वही वर्ग चौड़ाई होती है। ui = (xi − a)/h लिखने पर माध्य a + hΣfiui/N मिलता है। लगातार वर्ग चिह्नों के लिए ui अक्सर −2, −1, 0, 1 और 2 जैसे छोटे पूर्णांक होते हैं। छोटे गुणनफलों का योग आसान है, लेकिन अंत में h से गुणा करना नहीं भूलना चाहिए। ui मापित विचलन है। h तथा xi की इकाई समान होने पर ui की कोई इकाई नहीं रहती। 15, 25 और 35 वर्ग चिह्नों के लिए a = 25 और h = 10 लें। तब ui के मान −1, 0 और 1 हैं। बारंबारताएँ 2, 3 और 5 हों, तो भारित योग −2 + 0 + 5 = 3 तथा N = 10 होगा। माध्य 25 + 10 × 3/10 = 28 है। एक ही वर्गीकृत सारणी में प्रत्यक्ष, कल्पित माध्य और पद-विचलन तीनों विधियों के उत्तर समान आने चाहिए। अंतर आए, तो चिह्न, गुणनफल और कुल संख्या फिर जाँचें।"
+      },
+      "formula": "ui = (xi − a)/h; Mean = a + h × Σ(fi ui)/N",
+      "question": {
+        "en": "With a = 25, h = 10, N = 10 and Σfiui = 3, find the mean.",
+        "hi": "a = 25, h = 10, N = 10 और Σfiui = 3 हों, तो माध्य निकालें।"
+      },
+      "answer": {
+        "en": "28.",
+        "hi": "28।"
+      }
+    },
+    {
+      "title": {
+        "en": "Median locates the middle of grouped data",
+        "hi": "वर्गीकृत आँकड़ों की माध्यिका"
+      },
+      "body": {
+        "en": "The median divides an ordered distribution into two equal parts. For grouped data, first form cumulative frequencies by adding class frequencies from the lowest class upward. Locate N/2 in this running total. The class containing that position is the median class. Write its lower boundary l, its frequency f, its width h, and the cumulative frequency cf before it. The grouped estimate is l + [(N/2 − cf)/f]h. The fraction describes how far into the median class the middle position falls under a uniform-within-class interpolation model. It is not the same as taking the midpoint of the median class automatically. For frequencies 2, 5 and 3 in 0–10, 10–20 and 20–30, the cumulative frequencies are 2, 7 and 10. The middle position 5 lies in 10–20; hence the median estimate is 10 + (5 − 2) × 10/5 = 16. Use the preceding cumulative frequency, not the cumulative frequency including the median class.",
+        "hi": "माध्यिका (Median) क्रम में रखे वितरण को 2 बराबर भागों में बाँटती है। वर्गीकृत आँकड़ों में पहले सबसे छोटे वर्ग से बारंबारताएँ जोड़कर संचयी बारंबारता (Cumulative frequency) बनाएँ। फिर इस बढ़ते योग में N/2 का स्थान खोजें। जिस वर्ग में यह स्थान आता है, वह माध्यिका वर्ग है। उसकी निचली सीमा l, बारंबारता f, चौड़ाई h और उसके पहले की संचयी बारंबारता cf लिखें। वर्गीकृत अनुमान l + [(N/2 − cf)/f]h है। कोष्ठक वाला भिन्न बताता है कि वर्ग में मध्य स्थान कितना आगे है। इसमें वर्ग के भीतर समान फैलाव मानकर अंतर्वेशन किया जाता है। हर बार माध्यिका वर्ग का मध्यबिंदु लेना सही नहीं है। 0–10, 10–20 और 20–30 की बारंबारताएँ 2, 5 और 3 हों, तो संचयी मान 2, 7 और 10 हैं। मध्य स्थान 5, वर्ग 10–20 में है। इसलिए माध्यिका 10 + (5 − 2) × 10/5 = 16 होगी। cf में माध्यिका वर्ग की अपनी बारंबारता शामिल न करें। यह उसके पहले तक का योग है।"
+      },
+      "formula": "Median = l + [(N/2 − cf)/f]h",
+      "question": {
+        "en": "For frequencies 2, 5, 3, what cumulative frequency precedes the median class?",
+        "hi": "2, 5, 3 बारंबारताओं में माध्यिका वर्ग के पहले संचयी बारंबारता कितनी है?"
+      },
+      "answer": {
+        "en": "2, not 7.",
+        "hi": "2, न कि 7।"
+      }
+    },
+    {
+      "title": {
+        "en": "Mode estimates the most concentrated region",
+        "hi": "बहुलक और सबसे घना वर्ग"
+      },
+      "body": {
+        "en": "The mode describes the most frequent or most concentrated region of a distribution. In equal-width grouped data, the class with greatest frequency is called the modal class. Its midpoint alone is not generally the mode estimate. Let l be its lower boundary, h its width, f1 its frequency, f0 the preceding frequency and f2 the following frequency. The interpolation formula is l + [(f1 − f0)/(2f1 − f0 − f2)]h. It uses how sharply the frequency rises into the modal class and falls after it. For frequencies 2, 5 and 3 over equal-width classes beginning at 0, 10 and 20, the estimate is 10 + (5 − 2) × 10/(10 − 2 − 3) = 16. Identify neighbours in their original order. Do not sort the frequencies separately. Tied highest frequencies or a zero denominator require interpretation rather than a forced unique answer. Unequal-width histograms require frequency-density reasoning; the simple equal-width modal-class rule should not be applied blindly.",
+        "hi": "बहुलक (Mode) वितरण के सबसे अधिक बार आने वाले या सबसे घने भाग को बताता है। समान चौड़ाई के वर्गों में सबसे बड़ी बारंबारता वाला वर्ग बहुलक वर्ग (Modal class) कहलाता है। केवल उसका मध्यबिंदु बहुलक का सामान्य सूत्र नहीं है। उसकी निचली सीमा l, चौड़ाई h, अपनी बारंबारता f1, पिछले वर्ग की f0 और अगले वर्ग की f2 लें। अंतर्वेशन सूत्र l + [(f1 − f0)/(2f1 − f0 − f2)]h है। इसमें देखा जाता है कि बहुलक वर्ग तक बारंबारता कितनी बढ़ती और उसके बाद कितनी घटती है। 0, 10 तथा 20 से शुरू समान चौड़ाई के वर्गों की बारंबारताएँ 2, 5 और 3 हों, तो बहुलक 10 + (5 − 2) × 10/(10 − 2 − 3) = 16 होगा। पड़ोसी वर्गों को मूल क्रम में पहचानें। बारंबारताओं को अलग से छोटे-बड़े क्रम में न लगाएँ। अधिकतम बारंबारता बराबर हो या हर शून्य हो, तो जबरदस्ती एक अद्वितीय उत्तर नहीं निकालना चाहिए। असमान चौड़ाई के आयतचित्र में बारंबारता घनत्व की समझ जरूरी है। समान चौड़ाई वाला सरल नियम वहाँ बिना विचार न लगाएँ।"
+      },
+      "formula": "Mode = l + [(f1 − f0)/(2f1 − f0 − f2)]h",
+      "question": {
+        "en": "Why do we need the frequencies before and after the modal class?",
+        "hi": "बहुलक वर्ग के पहले और बाद की बारंबारताएँ क्यों चाहिए?"
+      },
+      "answer": {
+        "en": "They estimate the concentration peak within the modal class.",
+        "hi": "वे बहुलक वर्ग के भीतर घनत्व के शिखर का अनुमान लगाने में काम आती हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Choose the measure and interpret its limits",
+        "hi": "उपयुक्त माप और उसकी सीमाएँ"
+      },
+      "body": {
+        "en": "Mean, median and mode describe different features, so there is no rule that they must be equal. The mean is affected by all values and can shift when a few observations are unusually large. The median is about order and the middle position. The mode concerns concentration or commonness. For a symmetric, single-peaked distribution the three estimates may be close, but this is a feature of the data rather than a universal identity. In some classroom situations the approximate relation mode ≈ 3 median − 2 mean is discussed; it is empirical and cannot replace the defining formulas for an arbitrary table. Grouping introduces uncertainty because individual values inside each class are unknown. Changing class widths or boundaries can change grouped estimates even when the underlying raw data are unchanged. A graph helps reveal the shape, but always label axes and frequencies. A frequency of 8 means eight observations, not a measurement value of 8. State the measurement unit when reporting the calculated central value.",
+        "hi": "माध्य, माध्यिका और बहुलक अलग विशेषताएँ बताते हैं, इसलिए उनका बराबर होना कोई अनिवार्य नियम नहीं है। माध्य पर सभी मानों का असर होता है। कुछ बहुत बड़े प्रेक्षण उसे खिसका सकते हैं। माध्यिका क्रम और बीच के स्थान से संबंधित है। बहुलक सबसे अधिक बार आने वाले या घने भाग से संबंधित है। सममित और एक शिखर वाले वितरण में तीनों अनुमान पास आ सकते हैं। यह आँकड़ों की विशेषता है, सार्वभौमिक सर्वसमिका नहीं। कुछ कक्षा स्थितियों में बहुलक ≈ 3 माध्यिका − 2 माध्य का संबंध बताया जाता है। वह आनुभविक है और मनमानी सारणी में मूल सूत्रों की जगह नहीं ले सकता। वर्गीकरण से अनिश्चितता आती है, क्योंकि हर वर्ग के भीतर वास्तविक प्रेक्षण अज्ञात हैं। मूल आँकड़े वही रहें, फिर भी वर्ग चौड़ाई या सीमाएँ बदलने से वर्गीकृत अनुमान बदल सकते हैं। आलेख से वितरण का आकार दिखता है, लेकिन अक्ष और बारंबारताएँ स्पष्ट लिखें। 8 की बारंबारता का अर्थ 8 प्रेक्षण है, 8 का माप नहीं। केंद्रीय मान के उत्तर में मूल माप की इकाई दें। केवल बड़ा औसत देखकर किसी समूह की हर वस्तु को बड़ा नहीं मानना चाहिए।"
+      },
+      "formula": "Mean ≠ median ≠ mode in general",
+      "question": {
+        "en": "Must the three measures be equal for every distribution?",
+        "hi": "क्या हर वितरण में तीनों केंद्रीय माप बराबर होंगे?"
+      },
+      "answer": {
+        "en": "No. They describe different features and can differ.",
+        "hi": "नहीं। वे अलग विशेषताएँ बताते हैं और अलग हो सकते हैं।"
+      }
+    },
+    {
+      "title": {
+        "en": "Validate a table and present the calculation",
+        "hi": "सारणी जाँचें और हल प्रस्तुत करें"
+      },
+      "body": {
+        "en": "Before calculating, check that classes are ordered, boundaries are consistent and the same observation cannot be counted twice. Frequencies used as counts must be whole numbers at least zero. If every frequency is zero, N = 0 and mean, median and mode are not defined for the empty data set. Do not display a numerical answer obtained by dividing by zero. For the median, choose a class with positive frequency before dividing by f. For the usual grouped-mode formula, check both the required neighbours and the denominator. In a written solution, list the chosen class and all its symbols before substitution. Verify that the median estimate lies within its selected class, and that the grouped mean lies between the smallest and largest class marks when all weights are nonnegative. If a calculator gives a value outside these bounds, recheck the table rather than accepting the display. Interactive classroom tables should be described as invented data unless real collection and its source are provided. Good statistics combines correct arithmetic with honest interpretation.",
+        "hi": "गणना से पहले जाँचें कि वर्ग क्रम में हैं, सीमाओं का नियम एक जैसा है और एक प्रेक्षण 2 बार नहीं गिना जाएगा। संख्या बताने वाली बारंबारताएँ शून्य या धनात्मक पूर्णांक होनी चाहिए। सभी बारंबारताएँ शून्य हों, तो N = 0 है। ऐसे खाली आँकड़ों में माध्य, माध्यिका और बहुलक परिभाषित नहीं हैं। शून्य से भाग देकर कोई संख्यात्मक उत्तर न दिखाएँ। माध्यिका में f से भाग देने से पहले धनात्मक बारंबारता वाला सही वर्ग चुनें। बहुलक के सामान्य सूत्र में पड़ोसी वर्ग और हर की जाँच करें। लिखित हल में मान रखने से पहले चुना गया वर्ग और सभी प्रतीक लिखें। जाँचें कि अनुमानित माध्यिका अपने वर्ग की सीमाओं के बीच है। सभी भार ऋणेतर हों, तो वर्गीकृत माध्य सबसे छोटे और सबसे बड़े वर्ग चिह्नों के बीच होना चाहिए। कैलकुलेटर बाहर का उत्तर दे, तो उसे तुरंत सही न मानें; सारणी फिर जाँचें। कक्षा की इंटरैक्टिव सारणी को काल्पनिक आँकड़ा बताएँ, जब तक वास्तविक संग्रह और स्रोत न दिया हो। अच्छी सांख्यिकी में सही गणना के साथ ईमानदार अर्थ बताना भी आवश्यक है।"
+      },
+      "formula": "Check N > 0, f > 0 and every denominator before division",
+      "question": {
+        "en": "What should be reported when every frequency is zero?",
+        "hi": "सभी बारंबारताएँ शून्य हों, तो क्या बताएँ?"
+      },
+      "answer": {
+        "en": "The data set is empty; no numerical central-value estimate is defined.",
+        "hi": "आँकड़ा खाली है; कोई संख्यात्मक केंद्रीय अनुमान परिभाषित नहीं है।"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "level": "Easy",
+      "question": {
+        "en": "Find the class mark of 20–30 and the total frequency of 3, 4, 5.",
+        "hi": "20–30 का वर्ग चिह्न और 3, 4, 5 बारंबारताओं का कुल निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Given class boundaries 20 and 30; frequencies 3, 4, 5.",
+          "hi": "वर्ग सीमाएँ 20 और 30; बारंबारताएँ 3, 4, 5 हैं।"
+        },
+        {
+          "en": "Class mark = (20 + 30)/2 = 25.",
+          "hi": "वर्ग चिह्न = (20 + 30)/2 = 25।"
+        },
+        {
+          "en": "N = 3 + 4 + 5 = 12.",
+          "hi": "N = 3 + 4 + 5 = 12।"
+        }
+      ],
+      "answer": {
+        "en": "Class mark 25; total N = 12.",
+        "hi": "वर्ग चिह्न 25; कुल N = 12।"
+      }
+    },
+    {
+      "level": "Easy",
+      "question": {
+        "en": "For classes 0–10, 10–20, 20–30 with frequencies 2, 5, 3, find the grouped mean.",
+        "hi": "0–10, 10–20, 20–30 की बारंबारताएँ 2, 5, 3 हैं। वर्गीकृत माध्य निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Find class marks: 5, 15 and 25. Total N = 10.",
+          "hi": "वर्ग चिह्न 5, 15 और 25 हैं। कुल N = 10।"
+        },
+        {
+          "en": "Σfixi = 2 × 5 + 5 × 15 + 3 × 25 = 160.",
+          "hi": "Σfixi = 2 × 5 + 5 × 15 + 3 × 25 = 160।"
+        },
+        {
+          "en": "Mean = 160/10.",
+          "hi": "माध्य = 160/10।"
+        }
+      ],
+      "answer": {
+        "en": "Estimated mean 16.",
+        "hi": "अनुमानित माध्य 16।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Use step deviation for class marks 15, 25, 35 with frequencies 2, 3, 5.",
+        "hi": "15, 25, 35 वर्ग चिह्नों और 2, 3, 5 बारंबारताओं का माध्य पद-विचलन से निकालें।"
+      },
+      "steps": [
+        {
+          "en": "Choose a = 25 and h = 10; ui = −1, 0, 1.",
+          "hi": "a = 25 तथा h = 10 लें; ui = −1, 0, 1।"
+        },
+        {
+          "en": "Σfiui = −2 + 0 + 5 = 3; N = 10.",
+          "hi": "Σfiui = −2 + 0 + 5 = 3; N = 10।"
+        },
+        {
+          "en": "Mean = a + hΣfiui/N = 25 + 10 × 3/10.",
+          "hi": "माध्य = a + hΣfiui/N = 25 + 10 × 3/10।"
+        }
+      ],
+      "answer": {
+        "en": "Estimated mean 28.",
+        "hi": "अनुमानित माध्य 28।"
+      }
+    },
+    {
+      "level": "Medium",
+      "question": {
+        "en": "Find median and mode for classes 0–10, 10–20, 20–30 with frequencies 2, 5, 3.",
+        "hi": "0–10, 10–20, 20–30 तथा बारंबारताएँ 2, 5, 3 हों, तो माध्यिका और बहुलक निकालें।"
+      },
+      "steps": [
+        {
+          "en": "N = 10; cumulative frequencies are 2, 7, 10. Median class is 10–20.",
+          "hi": "N = 10; संचयी बारंबारताएँ 2, 7, 10 हैं। माध्यिका वर्ग 10–20 है।"
+        },
+        {
+          "en": "Median = 10 + [(5 − 2)/5] × 10 = 16.",
+          "hi": "माध्यिका = 10 + [(5 − 2)/5] × 10 = 16।"
+        },
+        {
+          "en": "Modal class is also 10–20: f1 = 5, f0 = 2, f2 = 3.",
+          "hi": "बहुलक वर्ग भी 10–20 है: f1 = 5, f0 = 2, f2 = 3।"
+        },
+        {
+          "en": "Mode = 10 + [(5 − 2)/(10 − 2 − 3)] × 10 = 16.",
+          "hi": "बहुलक = 10 + [(5 − 2)/(10 − 2 − 3)] × 10 = 16।"
+        }
+      ],
+      "answer": {
+        "en": "Grouped median estimate 16; mode estimate 16.",
+        "hi": "वर्गीकृत माध्यिका का अनुमान 16; बहुलक का अनुमान 16।"
+      }
+    },
+    {
+      "level": "Challenge",
+      "question": {
+        "en": "Classes 0–10, 10–20, 20–30 have frequencies 2, k, 4. Their grouped mean is 17. Find k.",
+        "hi": "0–10, 10–20, 20–30 की बारंबारताएँ 2, k, 4 हैं। वर्गीकृत माध्य 17 है। k ज्ञात करें।"
+      },
+      "steps": [
+        {
+          "en": "Class marks are 5, 15, 25; N = 6 + k.",
+          "hi": "वर्ग चिह्न 5, 15, 25 हैं; N = 6 + k।"
+        },
+        {
+          "en": "The weighted sum is 2 × 5 + 15k + 4 × 25 = 110 + 15k.",
+          "hi": "भारित योग 2 × 5 + 15k + 4 × 25 = 110 + 15k है।"
+        },
+        {
+          "en": "(110 + 15k)/(6 + k) = 17 gives 110 + 15k = 102 + 17k.",
+          "hi": "(110 + 15k)/(6 + k) = 17 से 110 + 15k = 102 + 17k मिलता है।"
+        },
+        {
+          "en": "Thus 8 = 2k and k = 4. Check: 170/10 = 17.",
+          "hi": "अतः 8 = 2k और k = 4। जाँच: 170/10 = 17।"
+        }
+      ],
+      "answer": {
+        "en": "k = 4 observations.",
+        "hi": "k = 4 प्रेक्षण।"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": {
+        "en": "What is the class mark of 10–20?",
+        "hi": "10–20 का वर्ग चिह्न क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "10",
+            "hi": "10"
+          },
+          "reason": {
+            "en": "This is the lower boundary.",
+            "hi": "यह निचली सीमा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "15",
+            "hi": "15"
+          },
+          "reason": {
+            "en": "(10 + 20)/2 = 15.",
+            "hi": "(10 + 20)/2 = 15।"
+          }
+        },
+        {
+          "text": {
+            "en": "20",
+            "hi": "20"
+          },
+          "reason": {
+            "en": "This is the upper boundary.",
+            "hi": "यह ऊपरी सीमा है।"
+          }
+        },
+        {
+          "text": {
+            "en": "30",
+            "hi": "30"
+          },
+          "reason": {
+            "en": "This adds the boundaries without dividing by 2.",
+            "hi": "इसमें सीमाएँ जोड़कर 2 से भाग नहीं दिया गया।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "For frequencies 2, 5 and 3, what is N?",
+        "hi": "2, 5 और 3 बारंबारताओं में N क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "3",
+            "hi": "3"
+          },
+          "reason": {
+            "en": "This counts classes, not observations.",
+            "hi": "यह वर्गों की संख्या है, प्रेक्षणों की नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "5",
+            "hi": "5"
+          },
+          "reason": {
+            "en": "This is only the largest single frequency.",
+            "hi": "यह केवल सबसे बड़ी एक बारंबारता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "30",
+            "hi": "30"
+          },
+          "reason": {
+            "en": "The frequencies must be added, not multiplied.",
+            "hi": "बारंबारताएँ जोड़नी हैं, गुणा नहीं।"
+          }
+        },
+        {
+          "text": {
+            "en": "10",
+            "hi": "10"
+          },
+          "reason": {
+            "en": "2 + 5 + 3 = 10.",
+            "hi": "2 + 5 + 3 = 10।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "Which formula gives the direct grouped mean?",
+        "hi": "प्रत्यक्ष वर्गीकृत माध्य का सूत्र कौन-सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Σfixi / Σfi",
+            "hi": "Σfixi / Σfi"
+          },
+          "reason": {
+            "en": "Class marks are weighted by their frequencies.",
+            "hi": "वर्ग चिह्नों को बारंबारता का भार दिया जाता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Σxi / Σfi",
+            "hi": "Σxi / Σfi"
+          },
+          "reason": {
+            "en": "The numerator omits frequency weights.",
+            "hi": "अंश में बारंबारता का भार नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Σfi / Σxi",
+            "hi": "Σfi / Σxi"
+          },
+          "reason": {
+            "en": "This reverses unrelated totals.",
+            "hi": "इसमें अलग राशियों के योग उलटे लिए गए हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Σfixi",
+            "hi": "Σfixi"
+          },
+          "reason": {
+            "en": "The total must be divided by N.",
+            "hi": "इस कुल को N से भाग देना चाहिए।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "In the median formula, what does cf mean?",
+        "hi": "माध्यिका के सूत्र में cf का अर्थ क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Frequency of the median class",
+            "hi": "माध्यिका वर्ग की बारंबारता"
+          },
+          "reason": {
+            "en": "That is f.",
+            "hi": "वह f है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Total N",
+            "hi": "कुल N"
+          },
+          "reason": {
+            "en": "N includes every class.",
+            "hi": "N में सभी वर्ग आते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Cumulative frequency before the median class",
+            "hi": "माध्यिका वर्ग के पहले की संचयी बारंबारता"
+          },
+          "reason": {
+            "en": "Only earlier observations are removed from N/2.",
+            "hi": "N/2 से पहले के प्रेक्षणों की संख्या हटाते हैं।"
+          }
+        },
+        {
+          "text": {
+            "en": "Width of the median class",
+            "hi": "माध्यिका वर्ग की चौड़ाई"
+          },
+          "reason": {
+            "en": "That is h.",
+            "hi": "वह h है।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Which class is modal for equal-width frequencies 2, 7, 4?",
+        "hi": "समान चौड़ाई में बारंबारताएँ 2, 7, 4 हों, तो बहुलक वर्ग कौन-सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "First class",
+            "hi": "पहला वर्ग"
+          },
+          "reason": {
+            "en": "Its frequency 2 is not greatest.",
+            "hi": "उसकी बारंबारता 2 सबसे बड़ी नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Second class",
+            "hi": "दूसरा वर्ग"
+          },
+          "reason": {
+            "en": "It has the highest frequency 7.",
+            "hi": "उसकी बारंबारता 7 सबसे बड़ी है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Third class",
+            "hi": "तीसरा वर्ग"
+          },
+          "reason": {
+            "en": "Its frequency 4 is below 7.",
+            "hi": "उसकी बारंबारता 4, मान 7 से कम है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Every class",
+            "hi": "हर वर्ग"
+          },
+          "reason": {
+            "en": "The frequencies are not tied.",
+            "hi": "सभी बारंबारताएँ बराबर नहीं हैं।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "What is ui in step deviation?",
+        "hi": "पद-विचलन में ui क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "xi + a",
+            "hi": "xi + a"
+          },
+          "reason": {
+            "en": "A deviation uses subtraction.",
+            "hi": "विचलन में घटाव होता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "xi / a",
+            "hi": "xi / a"
+          },
+          "reason": {
+            "en": "This does not measure a scaled deviation from a.",
+            "hi": "यह a से मापित विचलन नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "h(xi − a)",
+            "hi": "h(xi − a)"
+          },
+          "reason": {
+            "en": "The deviation must be divided by h.",
+            "hi": "विचलन को h से भाग देना चाहिए।"
+          }
+        },
+        {
+          "text": {
+            "en": "(xi − a)/h",
+            "hi": "(xi − a)/h"
+          },
+          "reason": {
+            "en": "This scales the deviation by common step h.",
+            "hi": "यह विचलन को समान पद h से मापता है।"
+          }
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "question": {
+        "en": "If every frequency is zero, what is the mean?",
+        "hi": "सभी बारंबारताएँ शून्य हों, तो माध्य क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Undefined for the empty data set",
+            "hi": "खाली आँकड़ों में अपरिभाषित"
+          },
+          "reason": {
+            "en": "N = 0 makes division invalid.",
+            "hi": "N = 0 होने पर भाग मान्य नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always 0",
+            "hi": "हमेशा 0"
+          },
+          "reason": {
+            "en": "No observations does not establish a mean of 0.",
+            "hi": "प्रेक्षण न होना माध्य 0 होना नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Always 1",
+            "hi": "हमेशा 1"
+          },
+          "reason": {
+            "en": "There is no basis for a numerical mean.",
+            "hi": "संख्यात्मक माध्य का आधार नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Infinity",
+            "hi": "अनंत"
+          },
+          "reason": {
+            "en": "Division by zero is not a defined mean.",
+            "hi": "शून्य से भाग कोई परिभाषित माध्य नहीं देता।"
+          }
+        }
+      ],
+      "correct": 0
+    },
+    {
+      "question": {
+        "en": "Does changing the assumed mean change the correctly calculated grouped mean?",
+        "hi": "कल्पित माध्य बदलने से सही गणना वाला वर्गीकृत माध्य बदलता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Yes, by the change in a",
+            "hi": "हाँ, a के अंतर जितना"
+          },
+          "reason": {
+            "en": "The deviation correction changes too.",
+            "hi": "विचलन सुधार भी बदलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Yes, by N",
+            "hi": "हाँ, N जितना"
+          },
+          "reason": {
+            "en": "N remains the same and is not an added correction.",
+            "hi": "N वही रहता है और जोड़ा जाने वाला सुधार नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "No",
+            "hi": "नहीं"
+          },
+          "reason": {
+            "en": "It is an equivalent rearrangement of the direct formula.",
+            "hi": "यह प्रत्यक्ष सूत्र का समानार्थी पुनर्लेखन है।"
+          }
+        },
+        {
+          "text": {
+            "en": "Only for odd N",
+            "hi": "केवल विषम N में"
+          },
+          "reason": {
+            "en": "Parity does not affect this identity.",
+            "hi": "सम या विषम होना इस सर्वसमिका को नहीं बदलता।"
+          }
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "question": {
+        "en": "Grouped median interpolation assumes what inside the selected class?",
+        "hi": "चुने वर्ग के भीतर माध्यिका अंतर्वेशन में क्या मानते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Every value is exactly the midpoint",
+            "hi": "हर मान ठीक मध्यबिंदु है"
+          },
+          "reason": {
+            "en": "That is not the interpolation model.",
+            "hi": "यह अंतर्वेशन की मान्यता नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "A uniform spread for estimating position",
+            "hi": "स्थान के अनुमान के लिए समान फैलाव"
+          },
+          "reason": {
+            "en": "This lets a fraction of class width estimate the middle position.",
+            "hi": "इससे वर्ग चौड़ाई के भाग से मध्य स्थान का अनुमान मिलता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "All values are zero",
+            "hi": "सभी मान शून्य हैं"
+          },
+          "reason": {
+            "en": "Class values need not be zero.",
+            "hi": "वर्ग के मान शून्य होना जरूरी नहीं है।"
+          }
+        },
+        {
+          "text": {
+            "en": "The frequency is negative",
+            "hi": "बारंबारता ऋणात्मक है"
+          },
+          "reason": {
+            "en": "Counts cannot be negative.",
+            "hi": "गिनती ऋणात्मक नहीं हो सकती।"
+          }
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "question": {
+        "en": "The mean of class marks 5, 15, 25 with frequencies 2, 5, 3 is what?",
+        "hi": "5, 15, 25 वर्ग चिह्नों और 2, 5, 3 बारंबारताओं का माध्य क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "15",
+            "hi": "15"
+          },
+          "reason": {
+            "en": "That is the unweighted average of the marks.",
+            "hi": "यह वर्ग चिह्नों का अभारित औसत है।"
+          }
+        },
+        {
+          "text": {
+            "en": "160",
+            "hi": "160"
+          },
+          "reason": {
+            "en": "This is the weighted sum before division.",
+            "hi": "यह भाग देने से पहले का भारित योग है।"
+          }
+        },
+        {
+          "text": {
+            "en": "10",
+            "hi": "10"
+          },
+          "reason": {
+            "en": "This is the total frequency.",
+            "hi": "यह कुल बारंबारता है।"
+          }
+        },
+        {
+          "text": {
+            "en": "16",
+            "hi": "16"
+          },
+          "reason": {
+            "en": "(10 + 75 + 75)/10 = 16.",
+            "hi": "(10 + 75 + 75)/10 = 16।"
+          }
+        }
+      ],
+      "correct": 3
+    }
+  ],
+  "written": [
+    {
+      "question": {
+        "en": "Define class mark and cumulative frequency.",
+        "hi": "वर्ग चिह्न और संचयी बारंबारता परिभाषित करें।"
+      },
+      "answer": {
+        "en": "Class mark is the midpoint of class boundaries. Cumulative frequency is the running sum of frequencies up to a class.",
+        "hi": "वर्ग चिह्न वर्ग सीमाओं का मध्यबिंदु है। संचयी बारंबारता किसी वर्ग तक की बारंबारताओं का बढ़ता योग है।"
+      }
+    },
+    {
+      "question": {
+        "en": "For classes 0–10, 10–20 with frequencies 3, 7, find the grouped mean.",
+        "hi": "0–10 और 10–20 की बारंबारताएँ 3, 7 हैं। वर्गीकृत माध्य निकालें।"
+      },
+      "answer": {
+        "en": "Mean = (3 × 5 + 7 × 15)/10 = 12.",
+        "hi": "माध्य = (3 × 5 + 7 × 15)/10 = 12।"
+      }
+    },
+    {
+      "question": {
+        "en": "Explain the symbols l, f, cf, h in grouped median.",
+        "hi": "वर्गीकृत माध्यिका में l, f, cf, h समझाएँ।"
+      },
+      "answer": {
+        "en": "They are median-class lower boundary, its frequency, preceding cumulative frequency, and class width.",
+        "hi": "ये माध्यिका वर्ग की निचली सीमा, उसकी बारंबारता, उसके पहले की संचयी बारंबारता और वर्ग चौड़ाई हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Use a = 20, h = 5, N = 10, Σfiui = −4 to find mean.",
+        "hi": "a = 20, h = 5, N = 10, Σfiui = −4 से माध्य निकालें।"
+      },
+      "answer": {
+        "en": "Mean = 20 + 5 × (−4)/10 = 18.",
+        "hi": "माध्य = 20 + 5 × (−4)/10 = 18।"
+      }
+    },
+    {
+      "question": {
+        "en": "Why are grouped estimates not necessarily exact statistics of raw data?",
+        "hi": "वर्गीकृत अनुमान मूल आँकड़ों के सटीक माप होना जरूरी क्यों नहीं है?"
+      },
+      "answer": {
+        "en": "Individual locations within classes are unknown; midpoint replacement and interpolation impose simplifying assumptions.",
+        "hi": "वर्गों के भीतर व्यक्तिगत मानों की स्थिति अज्ञात है। मध्यबिंदु रखने और अंतर्वेशन में सरल मान्यताएँ लगती हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "For equal-width classes, explain how to choose the modal class and when a unique mode should not be forced.",
+        "hi": "समान चौड़ाई में बहुलक वर्ग चुनना और अद्वितीय बहुलक न थोपने की स्थिति बताएँ।"
+      },
+      "answer": {
+        "en": "Choose a greatest-frequency class. Tied peaks or a zero interpolation denominator need interpretation rather than a forced numerical answer.",
+        "hi": "अधिकतम बारंबारता वाला वर्ग चुनें। बराबर शिखरों या अंतर्वेशन के शून्य हर में विचार आवश्यक है, जबरन संख्यात्मक उत्तर नहीं।"
+      }
+    }
+  ],
+  "commonMistake": {
+    "en": "Do not average class marks without weights, use the median-class cumulative frequency in place of its preceding cf, swap mode neighbours, forget h, or claim grouped interpolation is exact raw-data recovery.",
+    "hi": "बारंबारता के बिना वर्ग चिह्नों का औसत न लें। माध्यिका में पहले की cf की जगह अपने वर्ग तक का योग न रखें। बहुलक के पड़ोसी न बदलें। h न भूलें। वर्गीकृत अंतर्वेशन को मूल आँकड़ों की सटीक पुनःप्राप्ति न कहें।"
+  },
+  "revision": [
+    {
+      "en": "N = Σfi; a class mark is a midpoint.",
+      "hi": "N = Σfi; वर्ग चिह्न मध्यबिंदु है।"
+    },
+    {
+      "en": "Grouped mean uses weighted class marks.",
+      "hi": "वर्गीकृत माध्य में भारित वर्ग चिह्न आते हैं।"
+    },
+    {
+      "en": "The assumed-mean and step-deviation methods are equivalent.",
+      "hi": "कल्पित माध्य और पद-विचलन समतुल्य विधियाँ हैं।"
+    },
+    {
+      "en": "Median uses N/2 and the preceding cumulative frequency.",
+      "hi": "माध्यिका में N/2 तथा पहले की संचयी बारंबारता लगती है।"
+    },
+    {
+      "en": "Mode uses the peak and its neighbours; report estimates honestly.",
+      "hi": "बहुलक में शिखर तथा पड़ोसी लगते हैं; अनुमानों का अर्थ स्पष्ट बताएँ।"
+    }
+  ],
+  "conceptMap": {
+    "en": "Observations → classes and frequencies → class marks / cumulative frequencies → mean, median, mode → validate assumptions and interpret estimates.",
+    "hi": "प्रेक्षण → वर्ग और बारंबारता → वर्ग चिह्न / संचयी बारंबारता → माध्य, माध्यिका, बहुलक → मान्यताएँ जाँचें और अनुमान समझें।"
+  },
+  "sources": [
+    {
+      "title": "NCERT Mathematics Class X, Chapter 13",
+      "url": "https://ncert.nic.in/textbook/pdf/jemh113.pdf"
+    },
+    {
+      "title": "UP Board Mathematics syllabus 2026–27",
+      "url": "https://upmsp.edu.in/Downloads/Syllabus/Class10/928-Maths-Class-10.pdf"
+    }
+  ]
+}
