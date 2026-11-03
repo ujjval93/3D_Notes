@@ -2,7 +2,7 @@
 // Position is signed relative to the origin; it is not total distance travelled.
 export function drawRoad(g,{position=0,halfRange=24,halfLength=1.8,y=1.08}={}){
  const extent=Math.max(1,halfRange),toX=value=>value/extent*halfLength;
- g.box(0,y+.08,0,halfLength+.16,.08,.55,'#47565a',{solid:true});
+ g.box(0,y+.08,0,halfLength+.16,.08,.55,'#47565a',{solid:true,ground:true});
  for(const z of[-.48,.48])g.line([-halfLength,y-.006,z],[halfLength,y-.006,z],'#f1eee0',2);
  for(let i=0;i<11;i++){const x=-halfLength+i*halfLength/5.5;g.line([x,y-.012,0],[x+.19,y-.012,0],'#f3db91',2)}
  // Ruler along the near curb, in the same coordinate system as the vehicle.
